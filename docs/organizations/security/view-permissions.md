@@ -3,7 +3,7 @@ title: View permissions for yourself or others
 titleSuffix: Azure DevOps
 description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
 ms.assetid:  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE

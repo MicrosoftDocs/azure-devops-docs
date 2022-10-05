@@ -186,7 +186,7 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
   inputs:
     command: 'test'
     arguments: '-v'
-    workingDirectory: '$(modulePath)'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
 ```
 
 When you're ready, Commit a new _azure-pipelines.yml_ file to your repository and update the commit message. Select **Save and run**.

@@ -3,7 +3,7 @@ title: Define the hyperlink for a work item
 titleSuffix: Azure Boards
 description: Learn how to construct a URL for a work item for Azure Boards and Azure DevOps.
 ms.custom: work-items, seodec18
-ms.technology: devops-agile   
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: how-to

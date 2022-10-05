@@ -3,7 +3,7 @@ title: Import migrate process from on-premises to Azure DevOps
 titleSuffix: Azure DevOps
 description: How to guide for preparing an on-premises collection to importing it to the cloud
 ms.topic: how-to
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: kaelli
 author: KathrynEE

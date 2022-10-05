@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to share code within a Git repo and new project
 ms.assetid: 
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
 ms.date: 11/13/2020

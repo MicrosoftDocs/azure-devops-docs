@@ -3,7 +3,7 @@ title: Query by account, user, workflow, or board changes in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to list work items based on changes made to their assignment, state, or Kanban board column or swimlane in Azure Boards. 
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.author: kaelli
 author: KathrynEE

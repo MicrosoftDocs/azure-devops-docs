@@ -3,10 +3,11 @@ title: Undo TFVC command
 titleSuffix: Azure Repos
 description: Use the undo command to discard one or more pending changes to files or folders.
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

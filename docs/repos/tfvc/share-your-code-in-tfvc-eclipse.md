@@ -3,10 +3,11 @@ title: Share your code in TFVC using Eclipse
 titleSuffix: Azure Repos
 description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

@@ -3,7 +3,7 @@ title: Set personal or team favorites
 titleSuffix: Azure DevOps
 description: Quickly access views or artifacts by favoriting them in Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
-ms.technology: devops-collab
+ms.subservice: azure-devops-projects
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.author: kaelli
 author: KathrynEE

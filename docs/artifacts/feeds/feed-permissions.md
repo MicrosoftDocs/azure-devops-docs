@@ -2,7 +2,7 @@
 title: Set up permissions
 description: Configure Artifacts permissions for feeds, views, and pipelines
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/28/2022
 monikerRange: '<= azure-devops'

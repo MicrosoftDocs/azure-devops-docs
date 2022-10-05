@@ -3,10 +3,11 @@ title: Remove Check-In Policies
 titleSuffix: Azure Repos
 description: Remove Check-In Policies
 ms.assetid: fb4b62ef-e413-4f03-81fe-ae560c9f60ff
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

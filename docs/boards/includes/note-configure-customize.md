@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.manager: mijacobs
 ms.author: kaelli

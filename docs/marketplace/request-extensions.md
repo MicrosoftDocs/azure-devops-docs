@@ -2,7 +2,7 @@
 title: Request and approve extensions for Azure DevOps
 description: Request extensions and approve extension requests for a project or project collection in Azure DevOps
 ms.topic: quickstart
-ms.technology: devops-marketplace
+ms.subservice: azure-devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.author: chcomley
 author: chcomley

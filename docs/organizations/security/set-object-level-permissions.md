@@ -2,7 +2,7 @@
 title: Set object-level permissions
 titleSuffix: Azure DevOps
 description: How to grant permission and access at the object-level - repos, pipelines, work items, area paths, queries, wikis, dashboards, and more.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: chcomley
 author: chcomley

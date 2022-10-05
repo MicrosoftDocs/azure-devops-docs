@@ -1,7 +1,7 @@
 ---
 title: View Artifacts storage
 description: View Azure Artifacts storage consumption at organization and project levels.
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2021
 ms.author: rabououn

@@ -2,7 +2,7 @@
 title: Permissions and role lookup guide 
 titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE

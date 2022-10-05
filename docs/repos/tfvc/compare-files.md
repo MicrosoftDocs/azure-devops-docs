@@ -3,11 +3,12 @@ title: Compare files using Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Learn how to compare files using Team Foundation Version Control. You can compare server folders and local folders and view the differences.
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 06/30/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Compare files using Team Foundation Version Control

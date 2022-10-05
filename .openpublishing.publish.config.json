@@ -79,6 +79,12 @@
       "url": "https://github.com/Azure/azure-quickstart-templates",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "reusable-content",
+      "url": "https://github.com/MicrosoftDocs/reusable-content",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {

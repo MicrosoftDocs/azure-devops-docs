@@ -2,7 +2,6 @@
 title: Kubernetes integration with Azure Pipelines - Microsoft Build Announcements
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 05/10/2019
 description: The Microsoft Build conference was held on May 6 - 8 in Seattle.
 ---

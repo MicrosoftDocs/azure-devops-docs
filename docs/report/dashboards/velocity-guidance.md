@@ -3,7 +3,7 @@ title: Velocity metrics and usage guidance
 titleSuffix: Azure DevOps 
 description: Learn about working with velocity charts generated for an Azure DevOps team or project.
 ms.custom: dashboards
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE

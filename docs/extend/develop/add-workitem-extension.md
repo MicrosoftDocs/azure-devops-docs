@@ -2,7 +2,7 @@
 title: Extend the work item form | Extensions for Azure DevOps
 description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

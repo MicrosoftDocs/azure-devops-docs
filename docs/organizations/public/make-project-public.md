@@ -2,7 +2,7 @@
 title: Make your project public or private 
 titleSuffix: Azure DevOps Services Public Project 
 description: Switch your project from private to public or from public to private 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
 ms.author: chcomley

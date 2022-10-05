@@ -56,7 +56,7 @@ For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hoste
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/xcode
 pool:
   vmImage: 'macOS-latest'
 ```

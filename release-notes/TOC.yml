@@ -4,6 +4,8 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/sprint-210-update.md
     - name: September 12
       href: 2022/sprint-209-update.md
     - name: August 12
@@ -195,6 +197,8 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/boards/sprint-210-update.md
     - name: September 12
       href: 2022/boards/sprint-209-update.md
     - name: July 14
@@ -344,6 +348,8 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/pipelines/sprint-210-update.md
     - name: September 12
       href: 2022/pipelines/sprint-209-update.md
     - name: August 12
@@ -498,6 +504,8 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/artifacts/sprint-210-update.md
     - name: July 29
       href: 2022/artifacts/sprint-207-update.md
     - name: May 4
@@ -555,6 +563,8 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/general/sprint-210-update.md
     - name: June 27
       href: 2022/general/sprint-205-update.md
     - name: April 20

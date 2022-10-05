@@ -2,7 +2,7 @@
 title: View organization-level notifications statistics
 titleSuffix: Azure DevOps
 description: View organization-level notifications statistics in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

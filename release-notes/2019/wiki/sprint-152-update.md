@@ -3,7 +3,6 @@ title: Wiki - Sprint 152 Update
 description: See the Sprint 152 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 05/20/2019
 ---
 

@@ -2,7 +2,7 @@
 title: Resource limits & constraints  
 titleSuffix: Azure DevOps 
 description: Limits on the resources individual users can consume in Azure DevOps, and the number of work item tracking requests they can make 
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley

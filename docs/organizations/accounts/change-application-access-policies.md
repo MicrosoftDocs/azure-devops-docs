@@ -3,7 +3,7 @@ title: Change application access, security policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Manage security policies for accessing organization resources, like conditional access, OAuth, SSH, and personal access tokens (PATs).
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
 ms.author: chcomley
