@@ -14,33 +14,43 @@ hide_comments: true
  
 ### Maintain backlog hierarchy when filters are applied
 
-As a Boards user, I want to maintain my tree view even when I filter my backlog so that I don't lose context of the work I'm trying to organize.
+As a user, I want to maintain my tree view even when I filter my backlog so that I don't lose context of the work I'm trying to organize.
 
 > [!div class="mx-imgBorder"]
 > ![Maintain backlog hierarchy when filters are applied](media/boards-2022q4-01.png)
 
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+
+[Suggestion Ticket](https://developercommunity.visualstudio.com/t/boards-backlogs-please-keep-displaying-the-hierarc/366475)
+
 ### Emoji support in work item tags
 
-Provider emoji support on work item tags (🤞🎉)
+As a user, I want to be able to add emoji's (🤞🎉) in my tags.
 
 > [!div class="mx-imgBorder"]
 > ![Emoji support in work item tags](media/boards-2022q4-02.png)
 
 ### Ability to change link type from Web UI
 
-Add the ability to change link types from the web ui. 
+As a user, it takes me 5 steps to change a link type. I want to change a link type in the UI with in only one step.
+
+> [!div class="mx-imgBorder"]
+> ![Emoji support in work item tags](media/boards-2022q4-04.gif)
+
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
 
 ### Save Comment Improvements
 
-* Users can give read-only users permissions to just add comments​
-* When adding a new comment, if the comment “Save” button is used, just the comment will be saved without running rules​
-* Comment “Save” and standard work item save can both be used
+In my project, there are some users who only need to contribute to discussions. They should not be able to update any other fields. 
+
+As a user, when I save a discussion, I should not have to save the entire work item (and run work item rules).
 
 > [!div class="mx-imgBorder"]
 > ![Save Comment Improvements](media/boards-2022q4-03.png)
 
-https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819
-https://developercommunity.visualstudio.com/t/make-it-possible-to-disable-the-discussion-for-a-g/710375
+[Suggestion Ticket](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819)
 
 ## Pipelines
 
