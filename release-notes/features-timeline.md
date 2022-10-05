@@ -274,7 +274,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Ability to change link type from Web UI](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#ability-to-change-link-type-from-web-ui)  
+      [Ability to change link type from Web UI](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#ability-to-change-link-type-from-web-ui)  
    :::column-end:::
    :::column span="":::
       Boards
@@ -293,7 +293,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Save Comment Improvements](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#save-comment-improvements)  
+      [Save Comment Improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#save-comment-improvements)  
    :::column-end:::
    :::column span="":::
       Boards
@@ -312,7 +312,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Credential-free pipelines](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#credential-free-pipelines)  
+      [Credential-free pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#credential-free-pipelines)  
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -331,7 +331,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Deprecate Node 10 from agent and tasks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-node-10-from-agent-and-tasks)  
+      [Deprecate Node 10 from agent and tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-node-10-from-agent-and-tasks)  
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -350,7 +350,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Pull Request widget to allow for the selection of many repos](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#pull-request-widget-to-allow-for-the-selection-of-many-repos)  
+      [Pull Request widget to allow for the selection of many repos](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#pull-request-widget-to-allow-for-the-selection-of-many-repos)  
    :::column-end:::
    :::column span="":::
       Reporting
@@ -369,7 +369,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Rollup columns for query results](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#rollup-columns-for-query-results)  
+      [Rollup columns for query results](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#rollup-columns-for-query-results)  
    :::column-end:::
    :::column span="":::
       Reporting
@@ -388,7 +388,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Show Link with Parent Name in Query Results Widget](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#show-link-with-parent-name-in-query-results-widget)  
+      [Show Link with Parent Name in Query Results Widget](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#show-link-with-parent-name-in-query-results-widget)  
    :::column-end:::
    :::column span="":::
       Reporting
@@ -407,7 +407,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Support Azure Managed Identities and Service Principals](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals)  
+      [Support Azure Managed Identities and Service Principals](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals)  
    :::column-end:::
    :::column span="":::
       Platform
@@ -426,7 +426,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Auditing GA](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#auditing-ga)  
+      [Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#auditing-ga)  
    :::column-end:::
    :::column span="":::
       Platform
@@ -445,7 +445,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Conditional Access Policy support for device state](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)  
+      [Conditional Access Policy support for device state](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)  
    :::column-end:::
    :::column span="":::
       Platform
@@ -464,7 +464,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#access-events-for-pat-ssh-will-be-available-in-the-auditing-log)  
+      [Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#access-events-for-pat-ssh-will-be-available-in-the-auditing-log)  
    :::column-end:::
    :::column span="":::
       Platform
@@ -483,7 +483,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Package promote task in Azure Pipelines](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#package-promote-task-in-azure-pipelines)  
+      [Package promote task in Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#package-promote-task-in-azure-pipelines)  
    :::column-end:::
    :::column span="":::
       Artifacts
@@ -502,7 +502,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#deprecate-old-azure-artifacts-tasks-in-azure-pipelines-and-default-to-new-auth-only-tasks)  
+      [Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#deprecate-old-azure-artifacts-tasks-in-azure-pipelines-and-default-to-new-auth-only-tasks)  
    :::column-end:::
    :::column span="":::
       Artifacts
@@ -521,7 +521,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Improve GitHub Connection Experience](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#improve-github-connection-experience)  
+      [Improve GitHub Connection Experience](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#improve-github-connection-experience)  
    :::column-end:::
    :::column span="":::
       Boards
@@ -540,7 +540,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)  
+      [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)  
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -559,7 +559,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)  
+      [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)  
    :::column-end:::
    :::column span="":::
       Pipelines
