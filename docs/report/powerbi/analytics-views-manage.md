@@ -2,7 +2,7 @@
 title: Manage Analytics views
 titleSuffix: Azure DevOps
 description: Learn how to view, edit, and delete an Analytics view for Azure DevOps
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -104,7 +104,7 @@ To delete a view, select the :::image type="icon" source="../media/icons/actions
 - [Grant permissions to access Analytics](./analytics-security.md)
 - [Power BI integration overview](overview.md)
 - [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md)
-- [Work tracking properties reference](analytics-fields-reference.md) 
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
 
 
 ## Related resources 

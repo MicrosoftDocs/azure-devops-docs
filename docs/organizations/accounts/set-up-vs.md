@@ -3,7 +3,7 @@ title: Set up Visual Studio with Azure DevOps Services
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to set up and connect Visual Studio via Azure DevOps Services.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.topic: conceptual
 ms.author: chcomley

@@ -2,7 +2,7 @@
 title: Publish, select, or unpublish a wiki version
 titleSuffix: Azure DevOps  
 description: Publish or unpublish files in a Git code repository to a wiki in Azure DevOps 
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:

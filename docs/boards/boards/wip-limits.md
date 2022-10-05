@@ -3,7 +3,7 @@ title: Configure WIP limits for Kanban board
 titleSuffix: Azure Boards
 description: Learn how to set Work In Progress Limits on the Kanban board in Azure Boards.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: kaelli
 author: KathrynEE

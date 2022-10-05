@@ -3,7 +3,7 @@ title: Troubleshoot migration import to Azure DevOps Services
 titleSuffix: Azure DevOps
 description: Resolve common DataMigratorTool validation errors 
 ms.topic: troubleshooting
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.author: kaelli
 author: KathrynEE

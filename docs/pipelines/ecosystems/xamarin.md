@@ -71,7 +71,7 @@ For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hos
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 pool:
   vmImage: 'macOS-10.15' # For Windows, use 'windows-2019'
 ```
@@ -175,7 +175,7 @@ You can build and test your Xamarin.Android app, Xamarin.iOS app, and related ap
 # Xamarin.Android and Xamarin.iOS
 # Build a Xamarin.Android and Xamarin.iOS app.
 # Add steps that test, sign, and distribute the app, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 
 jobs:
 

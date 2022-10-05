@@ -2,7 +2,7 @@
 title: Manage personal access tokens using policies
 titleSuffix: Azure DevOps
 description: Learn how to turn on policies that restrict the scope and lifespan of newly created user PATs, turn off automatic revocation of leaked PATs.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

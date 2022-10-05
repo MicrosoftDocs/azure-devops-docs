@@ -3,10 +3,11 @@ title: Optimize your workspace
 titleSuffix: Azure Repos
 description: Optimize your workspace
 ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

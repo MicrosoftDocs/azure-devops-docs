@@ -2,7 +2,7 @@
 title: Look up a project collection administrator 
 titleSuffix: Azure DevOps
 description: How-to guide to learn who is a member of the Project Collection Administrators group in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE

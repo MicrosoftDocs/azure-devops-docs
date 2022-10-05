@@ -2,7 +2,6 @@
 title:  Azure DevOps Release Notes - Configure Deployment Strategies from Azure portal
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 05/04/2020
 description: With this **sprint 168**, we are enabling users to choose their deployment strategies directly from within the Azure portal, and we are rolling out several improvements to the Pipelines and Repos user experience."
 ---

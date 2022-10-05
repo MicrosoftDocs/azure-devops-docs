@@ -2,7 +2,7 @@
 title: Upstream sources overview
 description: Understand upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/16/2022
 monikerRange: '<= azure-devops'

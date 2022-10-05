@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Auth and Security | Extensions for Azure DevOps 
 description: Learn about authentication and security for Azure DevOps extensions.
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508

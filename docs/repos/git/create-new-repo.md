@@ -3,10 +3,11 @@ title: Create a new Git repo in your project
 titleSuffix: Azure Repos
 description: Create a new Git repo in an Azure DevOps Services or Team Foundation Server Project
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.date: 05/24/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Create a new Git repo in your project

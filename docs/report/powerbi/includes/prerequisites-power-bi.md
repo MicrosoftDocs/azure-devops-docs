@@ -1,8 +1,7 @@
 ---
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
-ms.prod: devops
 ms.date: 12/18/2020
 ms.topic: include
 ---

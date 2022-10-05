@@ -2,7 +2,7 @@
 title: Change your preferred notification email address
 titleSuffix: Azure DevOps
 description: Change the email address used to receive alerts or email  notifications managed in Azure DevOps  
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley

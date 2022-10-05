@@ -2,7 +2,7 @@
 title: Progress report, test plans
 description: Learn how to use the Test Plans Progress report  
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

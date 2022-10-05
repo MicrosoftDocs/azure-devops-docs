@@ -2,7 +2,6 @@
 title: New enhancements to Delivery Plans 2.0 – sprint 181
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 01/14/2021
 description: In this sprint, we're enhancing Delivery Plans 2.0 with new condensed views and rollup information. We're also introducing Manual Validation and a new `uses` statement for pre-declaring resources in YAML pipelines.
 ---

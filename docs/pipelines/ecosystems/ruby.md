@@ -53,7 +53,7 @@ For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted
 Add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v0) task to set the version of Ruby used in your pipeline. This snippet adds Ruby 2.4 or later to the path and sets subsequent pipeline tasks to use it.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/ruby
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/ruby
 pool:
   vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
 

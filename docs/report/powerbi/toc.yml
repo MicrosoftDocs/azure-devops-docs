@@ -162,8 +162,16 @@ items:
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Analytics OData metadata
     href: ../extend-analytics/analytics-metadata.md
-  - name: Work tracking properties reference   
-    href: ../powerbi/analytics-fields-reference.md
+  - name: Entity and properties reference
+    items:
+    - name: Date, Project, and User
+      href: ../analytics/entity-reference-general.md
+    - name: Work tracking (Azure Boards)  
+      href: ../analytics/entity-reference-boards.md
+    - name: Pipelines (Azure Pipelines)
+      href: ../analytics/entity-reference-pipelines.md
+    - name: Testing (Azure Test Plans)  
+      href: ../analytics/entity-reference-test-plans.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md
   - name: Filters applied to historical data

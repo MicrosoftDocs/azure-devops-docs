@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: overview
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

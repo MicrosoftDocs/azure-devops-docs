@@ -3,10 +3,11 @@ title: View the branch hierarchy of a project
 titleSuffix: Azure Repos
 description: View the branch hierarchy of a project
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

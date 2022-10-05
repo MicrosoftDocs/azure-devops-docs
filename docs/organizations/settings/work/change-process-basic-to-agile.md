@@ -3,7 +3,7 @@ title: Change process from Basic to Agile
 titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Basic to Agile
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.assetid:
 ms.author: kaelli

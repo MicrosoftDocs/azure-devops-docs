@@ -3,7 +3,7 @@ title: Upload, download, or delete a process template
 titleSuffix: Azure DevOps
 description: Learn how to upload, download, delete, or make default a process template for a project collection in Azure Boards.
 ms.custom: work-items
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: how-to
 ms.author: kaelli

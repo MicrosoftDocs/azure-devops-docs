@@ -3,10 +3,11 @@ title: Rename Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Rename Command (Team Foundation Version Control)
 ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

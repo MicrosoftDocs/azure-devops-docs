@@ -3,7 +3,7 @@ title: Analytics best practices
 titleSuffix: Azure DevOps  
 description: Learn about the best practices to use when querying Analytics for Azure DevOps.
 ms.custom: analytics 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -44,7 +44,7 @@ Query the Analytics metadata to gain familiarity with the entity types, entity s
 
 In addition, you can review select information from these resources: 
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md)
-- [Work tracking properties reference](../powerbi/analytics-fields-reference.md)
+- [Entities and properties reference for Azure Boards](entity-reference-boards.md)
 
 
 ## Structure your query to return the data you need 
@@ -105,7 +105,7 @@ You specify columns of data to return using the `$select` clause. With customiza
 
 For example, to return the ID, Work Item Type, Title, and State fields for a filtered set of work items, specify the following `$select` clause: `$select=WorkItemId, WorkItemType, Title, State`.  
 
-To look up the list of properties and their corresponding field names, see [Work tracking properties reference](../powerbi/analytics-fields-reference.md). 
+To look up the list of properties and their corresponding field names, see [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md). 
 
 <!--- General info 
 Analytics is built on top of a Columnstore Index technology. That means that data is both storage and query processing is column-based. So, the more properties that a query references, the more expensive it's to process. 
@@ -186,12 +186,13 @@ You can review usage for the service and for individuals by going to **Organizat
 <a id="limit-records-returned" />
 
 ### Limit the number of records returned 
+
 GET https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems HTTP/1.1
 User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
-Host: {OrganizationName}.analytics.visualstudio.com
+Host: analytics.dev.azure.com/{OrganizationName}
 
 
 

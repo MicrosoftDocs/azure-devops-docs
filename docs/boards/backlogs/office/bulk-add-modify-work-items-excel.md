@@ -2,7 +2,7 @@
 title: Modify Azure Boards work items in bulk with Microsoft Excel
 titleSuffix: Azure Boards  
 description: Use the Excel plugin in Azure DevOps to bulk add or modify Azure Boards work items, such as tasks, bugs, backlog items, or issues. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
 author: KathrynEE

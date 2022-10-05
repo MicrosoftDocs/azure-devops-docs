@@ -1,7 +1,7 @@
 ---
 title: Use Azure Artifacts feeds as a private PowerShell repository
 description: How to use Azure Artifacts feeds as a private PowerShell repository
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/19/2022
@@ -111,13 +111,13 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     - Org-scoped feed:
     
         ```powershell
-        nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
+        nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
         ```
 
     - Project-scoped feed:
     
         ```powershell
-        nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
+        nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
         ```
     
 1. Publish the package to your feed.
@@ -150,13 +150,13 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     - Project-scoped feed:
 
         ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
     - Org-scoped feed:
 
         ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
     If you're still using the older `visualstudio.com` URLs, use the following command instead:
@@ -164,13 +164,13 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     - Project-scoped feed:
 
         ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
     - Org-scoped feed:
 
         ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v3" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v3" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
         ```
 
     > [!TIP]
@@ -181,13 +181,13 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     - Project-scoped feed:
 
         ```powershell
-        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
+        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
         ```
 
     - Org-scoped feed:
 
         ```powershell
-        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
+        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
         ```
 
 1. Run the following command to confirm if the repository was registered successfully. This command gets all the registered repositories for the current user:
@@ -211,7 +211,7 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 If the *Install-Module* command is returning the following error: *Unable to resolve package source*, run the `Register-PackageSource` cmdlet again with the `Trusted` flag as follows:
 
 ```powershell
-Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
+Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
 ```
 
 ## Connect to feed with Azure Pipelines
@@ -220,7 +220,7 @@ The following example shows how to authenticate and install a PowerShell Module 
 
 ```yaml
 variables:
-  PackageFeedEndpoint: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3 # For Project-scoped feed use this endpoint url: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3 
+  PackageFeedEndpoint: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2 # For Project-scoped feed use this endpoint url: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2 
   
   # Construct a JSON object that contains the endpoint URL and the personal access token to pass them to Azure Artifacts credential provider. 
   PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"OPTIONAL", "password":"ACCESS TOKEN"}]}'

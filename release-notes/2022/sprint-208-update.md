@@ -2,7 +2,6 @@
 title: Updates to hosted pipelines images.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 8/12/2022
 description: With this update, we are announcing updates to hosted pipelines images.  
 ---

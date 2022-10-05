@@ -7,8 +7,7 @@ metadata:
   title: Azure Boards Configuration & Customization documentation
   titleSuffix: Azure DevOps 
   description: Configure and customize Azure Boards including area paths, iteration paths, projects, and processes.
-  ms.prod: devops 
-  ms.technology: devops-agile
+  ms.service: azure-devops-boards
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

@@ -2,9 +2,9 @@
 title: Set up your client's npmrc
 description: How to set up your project and authenticate to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 03/16/2022
+ms.date: 09/27/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -84,7 +84,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
     ```json
     "scripts": {
-        "refreshVSToken" : "vsts-npm-auth -config .npmrc"
+        "refreshVSToken" : "vsts-npm-auth -config ".\.npmrc\" -TargetConfig "$HOME\.npmrc\""
     }
     ```
 

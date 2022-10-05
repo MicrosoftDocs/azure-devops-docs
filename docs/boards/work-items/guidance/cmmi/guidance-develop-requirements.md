@@ -2,7 +2,7 @@
 title: Create requirements for product development
 titleSuffix: Azure Boards
 description: Learn about what requirements stakeholders expect from the product. Develop the requirements in a way that allows them to be easily discussed with the business stakeholders.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
 ms.author: kaelli

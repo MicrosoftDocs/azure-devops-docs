@@ -7,9 +7,8 @@ brand: azure
 metadata:
   title: Azure DevOps documentation
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
-  ms.prod: devops 
   ms.topic: hub-page 
-  ms.technology: devops-collab
+  ms.subservice: azure-devops-projects
   author: KathrynEE 
   ms.author: kaelli 
   ms.date: 02/18/2022

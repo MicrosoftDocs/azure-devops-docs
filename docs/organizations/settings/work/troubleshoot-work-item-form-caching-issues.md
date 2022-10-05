@@ -2,7 +2,7 @@
 title: Troubleshoot work item form caching issues
 titleSuffix: Azure Boards
 description: Resolve work item cache rules that cause delay in server-side rule evaluations  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
