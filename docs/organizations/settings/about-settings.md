@@ -2,7 +2,7 @@
 title: Settings overview for Azure DevOps
 titleSuffix: Azure DevOps
 description: Overview of settings available to administrators for your team, project, collection, and organization in Azure DevOps.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE

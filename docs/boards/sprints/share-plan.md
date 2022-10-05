@@ -2,7 +2,7 @@
 title: Share your team's sprint plan with your team in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to share sprint plan working with Scrum methods.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

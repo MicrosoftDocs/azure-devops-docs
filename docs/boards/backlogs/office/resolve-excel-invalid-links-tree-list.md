@@ -2,7 +2,7 @@
 title: Resolve invalid links when publishing to Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to resolve invalid link error messages that occur when publishing an Excel tree list to Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: f2250e37-5150-4546-81b8-4ec8023046c2
 ms.author: kaelli
 author: KathrynEE

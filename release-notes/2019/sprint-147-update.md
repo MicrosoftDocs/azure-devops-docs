@@ -2,7 +2,6 @@
 title: NuGet, npm, and other Artifacts tasks support proxies - Sprint 147 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 02/13/2019
 description: In the Sprint 147 Update of Azure DevOps, we added proxy support across Azure Artifacts for build and package related tasks - Sprint 147 Update.
 ---

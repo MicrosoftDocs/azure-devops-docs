@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Working with URLs in extensions | Azure DevOps Services
 description: Learn about best practices for working with URLs in Azure DevOps extensions and integrations.
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe

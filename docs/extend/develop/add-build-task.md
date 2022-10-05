@@ -2,7 +2,7 @@
 title: Add a build or release task in an extension 
 description: Add a custom build or release task in an extension for Azure DevOps.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

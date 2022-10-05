@@ -1,7 +1,6 @@
 ---
 title: Build and publish Artifacts using Gradle
-description: How to build and publish artifact with Gradle and Azure Pipelines
-ms.technology: devops-artifacts
+description: How to build and publish artifact with Gradle and Azure Pipelines 
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 08/18/2022
@@ -106,7 +105,7 @@ Run the following command to build your project. Your build output should return
 gradle build
 ```
 
-## Use Gradle in Azure Pipeline
+## Use Gradle in Azure Pipelines
 
 1. Run the following command to create the Gradle wrapper **gradlew**. 
 

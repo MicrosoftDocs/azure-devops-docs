@@ -4,11 +4,12 @@ titleSuffix: Azure Repos
 description: Learn how to share code in Team Foundation Version Control (TFVC) using Visual Studio. TFVC offers a centralized system.
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.date: 07/14/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Develop and share your code in Team Foundation Version Control using Visual Studio

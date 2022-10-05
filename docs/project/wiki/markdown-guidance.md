@@ -2,7 +2,7 @@
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.author: chcomley
 author: chcomley
@@ -520,8 +520,6 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 <br/>
 
 **Result:**
-
-![Illustration of linked image](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
 
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 

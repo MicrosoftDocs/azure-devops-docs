@@ -3,7 +3,7 @@ title: Project Summary, vision, & view project activity
 titleSuffix: Azure DevOps 
 description: View or update your project Summary to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
-ms.technology: devops-collab
+ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley

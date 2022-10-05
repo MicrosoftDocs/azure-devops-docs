@@ -3,7 +3,7 @@ title: Add built-in charts to a team dashboard
 titleSuffix: Azure DevOps
 description: Learn how to add system-generated charts or query-based charts to a team dashboard in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE

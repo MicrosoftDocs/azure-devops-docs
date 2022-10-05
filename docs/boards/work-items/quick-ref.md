@@ -3,7 +3,7 @@ title: Quick reference for concepts related to work item tasks
 titleSuffix: Azure Boards
 description: Learn about query operators, macros, and sample queries used to list work items for Azure Boards and Azure DevOps.
 ms.custom: boards-work-items  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE

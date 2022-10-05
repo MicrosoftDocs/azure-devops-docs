@@ -3,7 +3,7 @@ title: Create your product backlog in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards and Azure DevOps.   
 ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: kaelli
 author: KathrynEE

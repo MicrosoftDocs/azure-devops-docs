@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

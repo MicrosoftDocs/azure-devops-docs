@@ -2,7 +2,7 @@
 title: Add users or groups to an access level 
 titleSuffix: Azure DevOps 
 description: Learn how to set the access level for a user or group based on their license 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: quickstart
 ms.reviewer:  

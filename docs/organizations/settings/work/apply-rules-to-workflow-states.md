@@ -3,7 +3,7 @@ title: Restrict workflow transitions, apply rules to workflow states
 titleSuffix: Azure DevOps Services
 description: Apply rules to workflow states to restrict transitions 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

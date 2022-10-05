@@ -3,7 +3,7 @@ title: Example reports for Power BI Data Connector
 titleSuffix: Azure DevOps   
 description: Learn how to develop reports based on examples when using the Power BI Data Connector and Analytics for Azure DevOps.
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.topic: sample
 ms.author: kaelli
 author: KathrynEE

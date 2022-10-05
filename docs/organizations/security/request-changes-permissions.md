@@ -2,7 +2,7 @@
 title: Request an increase in permission levels
 titleSuffix: Azure DevOps
 description: How-to guide for finding and increasing permission levels needed to perform select tasks in Azure DevOps.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE

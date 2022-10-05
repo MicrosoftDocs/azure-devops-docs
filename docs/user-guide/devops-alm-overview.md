@@ -3,7 +3,7 @@ title: DevOps tools overview for Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18  
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Azure DevOps Server
-ms.technology: devops-new-user  
+ms.subservice: azure-devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.author: kaelli
 author: KathrynEE 

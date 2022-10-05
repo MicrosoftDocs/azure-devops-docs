@@ -3,10 +3,11 @@ title: Create a pull request status server with Node.js
 titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 

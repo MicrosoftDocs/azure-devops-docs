@@ -2,7 +2,7 @@
 title: Aggregate work tracking data 
 titleSuffix: Azure DevOps
 description: Learn how to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -7,8 +7,7 @@ metadata:
   title: Analytics & Reporting
   titleSuffix: Azure DevOps 
   description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
-  ms.prod: devops 
-  ms.technology: devops-analytics
+  ms.subservice: azure-devops-analytics
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

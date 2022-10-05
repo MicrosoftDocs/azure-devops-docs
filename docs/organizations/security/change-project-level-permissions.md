@@ -2,7 +2,7 @@
 title: Change project-level permissions or group membership
 titleSuffix: Azure DevOps
 description: Quickstart guide to change project-level permissions or group membership in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE
