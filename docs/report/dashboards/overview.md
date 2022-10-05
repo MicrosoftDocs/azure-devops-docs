@@ -4,12 +4,12 @@ titleSuffix: Azure DevOps
 description: Learn about OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps.
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 08/03/2022
 ---
 
 # About dashboards, charts, reports, & widgets
@@ -50,7 +50,7 @@ The following features provide support for viewing Azure DevOps data using Power
 ::: moniker-end  
 
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops-2022"
 
 ### SQL Server reports 
 
@@ -58,12 +58,12 @@ SQL Server Reporting is the legacy reporting solution available with Azure DevOp
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 - **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
 ::: moniker-end  
  
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 - **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
 ::: moniker-end   

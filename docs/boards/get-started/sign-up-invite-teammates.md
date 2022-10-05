@@ -3,7 +3,7 @@ title: Sign up for and invite teammates to use projects in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to sign up for and invite others to join a team project in Azure Boards.
 ms.custom: boards-get-started
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE

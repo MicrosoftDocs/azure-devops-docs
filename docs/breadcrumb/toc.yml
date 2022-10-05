@@ -49,9 +49,6 @@
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
-    - name: Status & security 
-      tocHref: /azure/devops/user-guide/
-      topicHref: /azure/devops/user-guide/service-status-info
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index

@@ -1,8 +1,8 @@
 ---
-ms.technology: devops-code-git
-ms.prod: devops
+ms.service: azure-devops-repos
 ms.topic: include
 ms.date: 02/03/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 ::: moniker range="azure-devops"

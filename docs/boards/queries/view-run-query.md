@@ -3,7 +3,7 @@ title: View or run a query in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to view, run, or favorite a query in Azure Boards and Azure DevOps. 
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

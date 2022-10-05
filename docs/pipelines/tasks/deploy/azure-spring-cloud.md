@@ -64,6 +64,9 @@ steps:
 
 The following example deploys to the default production deployment in Azure Spring Cloud. This is the only possible deployment scenario when using the Basic SKU:
 
+> [!NOTE]
+> The package search pattern should only return exactly one package. If the build task produces multiple JAR packages such as *sources.jar* and *javadoc.jar*, you need to refine the search pattern so that it only matches the application binary artifact.
+
 ```yml
 variables:
   azureSubscription: Contoso

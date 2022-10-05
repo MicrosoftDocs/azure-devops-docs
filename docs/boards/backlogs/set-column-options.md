@@ -2,7 +2,7 @@
 title: Add or remove columns within a work item list in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add column fields to show and sort fields for a backlog or query in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.author: kaelli
 author: KathrynEE

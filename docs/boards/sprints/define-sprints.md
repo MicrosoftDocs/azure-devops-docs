@@ -3,7 +3,7 @@ title: Manage sprint timelines while working in Scrum
 titleSuffix: Azure Boards  
 description: Learn how to add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards. 
 ms.custom: boards-sprints
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.author: kaelli
 author: KathrynEE

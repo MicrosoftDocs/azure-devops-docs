@@ -2,7 +2,7 @@
 title: Create a project wiki to share information
 titleSuffix: Azure DevOps
 description: Share information with your team and increase collaboration using a built-in team project wiki in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli, devdivchpfy22
 ms.topic: quickstart
 ms.assetid: 
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 07/06/2022
+ms.date: 08/03/2022
 ---
 
 # Create a wiki for your project
@@ -46,7 +46,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range=" <= azure-devops-2020"
+::: moniker range=" < azure-devops"
 
 * You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
 * You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 

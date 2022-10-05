@@ -2,7 +2,7 @@
 title: Learn about requesting and providing feedback about your software applications
 titleSuffix: Azure DevOps 
 description: Learn about requesting and providing feedback about your software applications in Azure DevOps 
-ms.technology: devops-collab
+ms.subservice: azure-devops-feedback
 ms.topic: overview
 ms.assetid:  
 ms.author: kaelli

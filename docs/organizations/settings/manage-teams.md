@@ -2,12 +2,12 @@
 title: Manage teams, configure team tools 
 titleSuffix: Azure DevOps
 description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
-ms.technology: devops-settings 
+ms.subservice: azure-devops-settings
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 08/03/2022
 ---
 
 # Manage and configure team tools
@@ -94,12 +94,9 @@ Team administrators can also choose which days are non-working days for the team
 
 You can configure most of your team settings from the common configuration dialog. 
 
-> [!NOTE]
-> The common configuration Settings dialog is available for TFS 2015.1 and later versions.  
-
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 1. Check that you selected the correct project, and then choose **Boards** > **Boards**, and select the correct team from the team selector dropdown menu. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md).
    :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the kanban board.":::
@@ -114,7 +111,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 
 1. Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
@@ -234,8 +231,6 @@ Similar to Kanban boards, each sprint Taskboard can be customized to support inf
 
 ## Add and manage team dashboards   
 
-
-
 ::: moniker range=">= azure-devops-2019"
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
 ::: moniker-end  
@@ -250,19 +245,12 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ## Update team name, description, and image
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB.
 
-:::image type="content" source="media/update-team-profile-cloud.png" alt-text="Screenshot of team details and profile pic update screen.":::
 
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB.
-
-![Update team profile picture](media/team-defaults/update-team-profile-pic-preview.png)
+![Screenshot to Update team profile picture.](media/team-defaults/update-team-profile-pic-preview.png)
 
 ::: moniker-end
 

@@ -2,7 +2,7 @@
 title: WebpageControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: archive-candidate
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
 ms.author: kaelli

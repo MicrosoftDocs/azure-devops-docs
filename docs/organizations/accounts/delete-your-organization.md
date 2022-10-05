@@ -3,7 +3,7 @@ title: Delete or remove an organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to delete your organization, and what happens to users when you do.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.topic: conceptual
 ms.author: chcomley
@@ -35,7 +35,7 @@ To delete your organization, you need Project Collection Administrator permissio
 
 ## Prerequisites
 
-If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-subscription) before you can delete your organization in Azure DevOps.
+If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before you can delete your organization in Azure DevOps.
 
 ## Delete organization
 
@@ -46,7 +46,7 @@ permissions. [How do I find the Project Collection Administrators?](../security/
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 
 3. Select **Overview** > **Delete**.

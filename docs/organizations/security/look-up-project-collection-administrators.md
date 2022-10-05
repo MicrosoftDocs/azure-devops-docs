@@ -2,7 +2,7 @@
 title: Look up a project collection administrator 
 titleSuffix: Azure DevOps
 description: How-to guide to learn who is a member of the Project Collection Administrators group in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE
@@ -81,7 +81,7 @@ To find out who is a member of the **Project Collection Administrators** group, 
 
 ::: moniker-end   
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 To find out who is a member, check the **Security** settings at the collection level. 
 

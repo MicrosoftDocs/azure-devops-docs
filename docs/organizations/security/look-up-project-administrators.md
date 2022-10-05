@@ -2,7 +2,7 @@
 title: Find a project administrator
 titleSuffix: Azure DevOps
 description: Quickstart guide to learn who is a member of the Project Administrators group in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE
@@ -88,7 +88,7 @@ Choose the **Project Administrators** group from the **Project Settings > Permis
 ::: moniker-end    
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 

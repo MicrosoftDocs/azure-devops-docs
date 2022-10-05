@@ -2,7 +2,7 @@
 title: Install extensions
 description: Learn how to install extensions and assign extensions for Azure DevOps
 ms.topic: quickstart
-ms.technology: devops-marketplace
+ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
@@ -20,7 +20,7 @@ To learn about building your own Azure DevOps extensions, see [developing](../ex
 
 ## Prerequisites
 
-* Only [Project Collection Administrators or organization Owners](faq-extensions.yml) can install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
+* Only [Project Collection Administrators](faq-extensions.yml) can install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 * Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 <a id="install-extension" /> 

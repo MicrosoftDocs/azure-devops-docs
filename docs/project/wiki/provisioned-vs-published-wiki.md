@@ -2,7 +2,7 @@
 title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps. 
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
@@ -118,7 +118,7 @@ To learn more, see [Version, select, or unpublish a published wiki](wiki-select-
 1. Get the wiki corresponding to the wiki ID or wiki name provided. For more information, see [Wikis - Get REST API](/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-6.0&preserve-view=true).
 
 
-GET https://dev.azure.com/{organization}/{projec``t}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0
+GET `https://dev.azure.com/{organization}/{projec``t}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0`
 
 
    You can also get all wikis in a project or collection. For more information, see [Wikis - List REST API](/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-6.0&preserve-view=true)

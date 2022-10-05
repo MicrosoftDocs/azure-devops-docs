@@ -2,7 +2,7 @@
 title: Set up permissions
 description: Configure Artifacts permissions for feeds, views, and pipelines
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/28/2022
 monikerRange: '<= azure-devops'
@@ -76,6 +76,9 @@ In the edit feed dialog:
 
 ::: moniker-end
 
+> [!NOTE]
+> The *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are set to **Collaborator** by default.
+
 ## Permissions table
 
 In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
@@ -124,7 +127,7 @@ After restricting your view's visibility to `specific people`, the access permis
 
 ## Pipelines permissions
 
-To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** role set to *Contributor*. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor. 
+To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** role set to **Collaborator**. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor.
 
 The project-level build identity is named as follows: `[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
 

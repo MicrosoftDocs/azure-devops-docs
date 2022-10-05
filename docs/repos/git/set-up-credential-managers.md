@@ -3,10 +3,11 @@ title: Connect to your Git repos using credential managers
 titleSuffix: Azure Repos
 description: Authenticate to Azure Repos and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 11/13/2020
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Use Git Credential Manager to authenticate to Azure Repos

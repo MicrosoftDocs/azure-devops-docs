@@ -3,7 +3,6 @@ title: General - Sprint 155 Update
 description: See the Sprint 155 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 07/22/2019
 ---
 

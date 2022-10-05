@@ -1,7 +1,7 @@
 ---
 title: Delete and recover packages
 description: Learn how to delete packages manually and with retention policies, and how to recover deleted packages from the Recycle Bin.
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2, contperf-fy22q1
 ms.topic: conceptual

@@ -3,13 +3,13 @@ title: Set Kanban board card reordering
 titleSuffix: Azure Boards
 description: Learn how to use the Kanban board, process, and tools reorder Kanban board cards in Azure Boards and Team Foundation Server.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.author: kaelli
 author: KathrynEE
-ms.topic: how-to
+ms.topic: how-to  
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/26/2022
 ---
 
 
@@ -23,7 +23,7 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 In addition to the dynamic card reordering, you can also move a card to a specific column position.  
 ::: moniker-end
@@ -37,7 +37,7 @@ In addition to the dynamic card reordering, you can also move a card to a specif
 
 <a id="move-to-column-position"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ## Move a card to a specific column position
 

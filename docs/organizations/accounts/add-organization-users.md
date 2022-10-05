@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18, devx-track-azurecli
 description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: how-to
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
@@ -56,7 +56,7 @@ To give other users access to your organization, add their email addresses.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
 
@@ -158,7 +158,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
@@ -265,7 +265,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 4. Open **Organizations Settings**, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 5. Open **Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to.
 

@@ -60,7 +60,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
     > This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
     > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
-  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/javascript.md#run-unit-tests)
+  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/customize-javascript.md#run-unit-tests)
   - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
 
 * **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)

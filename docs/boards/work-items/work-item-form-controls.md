@@ -3,7 +3,7 @@ title: Use work item form controls in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to use work item form controls to update status, link work items, and more in Azure Boards.
 ms.custom: work-items, seodec18  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: conceptual
 ms.author: kaelli

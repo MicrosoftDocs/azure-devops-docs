@@ -4,11 +4,11 @@ titleSuffix: Azure Boards
 description: Learn how to use the Kanban board to plan and track work in Azure Boards. 
 ms.custom: boards-kanban 
 ms.topic: quickstart
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 08/03/2022
 ---
 
 # Start using your Kanban board
@@ -122,10 +122,10 @@ As work completes in one stage, update the status of an item by dragging it to a
 
 [!INCLUDE [temp](../includes/note-closed-items.md)]
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops-2022"
 
 > [!NOTE]   
-> Users assigned Stakeholder access aren't about to use the drag-and-drop feature to update status. 
+> Users assigned Stakeholder access aren't able to use the drag-and-drop feature to update status. 
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 
 All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Browser URL for the Kanban board](media/quickstart/kanban-board-url-s155.png)

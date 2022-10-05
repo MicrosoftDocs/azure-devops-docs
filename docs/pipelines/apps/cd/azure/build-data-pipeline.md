@@ -3,9 +3,9 @@ title: Build a data pipeline by using Azure Pipelines
 description: Learn how to use an Azure CI/CD data pipeline to ingest, process, and share data.
 ms.author: jukullam
 author: JuliaKM
-ms.technology: devops-cicd-apps
+ms.subservice: azure-devops-pipelines-apps
 ms.date: 10/28/2021
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
 

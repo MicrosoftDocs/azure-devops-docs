@@ -1,8 +1,8 @@
-﻿---
+---
 title: Create a bug using .NET client libraries in Azure DevOps
 description: Use .NET client libraries to create a bug in Azure DevOps Services.
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

@@ -2,7 +2,7 @@
 title: Implement Agile practices that scale for working in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn about scaling Agile recommended practices for working in Azure Boards and Azure DevOps.   
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.author: kaelli
 author: KathrynEE
@@ -121,7 +121,7 @@ Along with the above practices, you'll find more guidance around scaling your Ag
 
 ### Industry resources
 - [Agile manifesto](https://agilemanifesto.org)
-- [Agile Alliance](http://guide.agilealliance.org/)  
+- [Agile Alliance](https://www.agilealliance.org/)  
 - [Scaled Agile Lean Development - The Principles](http://scaledprinciples.org/)  
 
 ### Practices that don't scale

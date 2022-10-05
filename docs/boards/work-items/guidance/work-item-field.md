@@ -3,7 +3,7 @@ title: Learn default and system work item field descriptions
 titleSuffix: Azure Boards
 description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: conceptual  
 ms.author: kaelli
@@ -192,9 +192,10 @@ Values in parenthesis indicate the following criteria:
    - [Resolved By](../../queries/query-by-workflow-changes.md#fields)
    - [Resolved Date](../../queries/query-by-workflow-changes.md#fields)
    - [Resolved Reason](../../queries/query-by-workflow-changes.md#fields)
+   - [Rev](../../queries/history-and-auditing.md#fields) (System)
    - [Reviewed By](guidance-code-review-feedback-field-reference.md#fields)
    - [Reviewed Date](guidance-code-review-feedback-field-reference.md#fields)
-   - [Rev](../../queries/history-and-auditing.md#fields) (System)
+   - [Revised Date](../../queries/history-and-auditing.md#fields) (System, TCM)
    - [Risk](../../queries/planning-ranking-priorities.md#fields) (Agile)
    - [Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    

@@ -3,10 +3,11 @@ title: What is Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
@@ -103,7 +104,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 <a id="command-line-only" />
 
-## Operations available only from the tf ommand-Line  
+## Operations available only from the tf command line  
 
 The following table lists tasks for Team Foundation version control that you can perform only at a command prompt using the **tf** command line tool.
 

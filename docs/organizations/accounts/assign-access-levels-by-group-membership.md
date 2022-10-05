@@ -3,7 +3,7 @@ title: Add group rule to assign access levels
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign access levels with group rules in Azure Active Directory and Azure DevOps.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -32,7 +32,7 @@ When users leave the group, the licenses get freed and returned to your pool. Yo
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Permissions**, and then verify that you're a member of the **Project Collection Administrators** group.
 
@@ -86,7 +86,7 @@ To manage a user's resources only by the groups that they're in, remove their di
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab.
 

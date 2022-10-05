@@ -2,7 +2,6 @@
 title: Sprint 175
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 09/10/2020
 description: In the past couple of months, we released the scale-set agents for preview. And we're now excited to announce its general availability.
 ---

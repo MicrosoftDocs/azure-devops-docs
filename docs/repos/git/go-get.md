@@ -2,10 +2,11 @@
 title: Go get support
 titleSuffix: Azure Repos
 description: Learn how to use Go get command with Azure Repos Git
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/15/2021
 monikerRange: '>= azure-devops-2019'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Go get command support in Azure Repos Git

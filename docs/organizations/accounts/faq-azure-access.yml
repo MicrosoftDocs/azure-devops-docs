@@ -3,7 +3,7 @@ metadata:
   title: Access via Azure AD FAQs
   ms.custom: seodec18, fasttrack-edit
   description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, add users, connect to, disconnect from, or switch your directory.
-  ms.technology: devops-accounts
+  ms.subservice: azure-devops-organizations
   ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
   ms.topic: faq
   ms.author: chcomley
@@ -36,7 +36,7 @@ sections:
           In both applications, you must have
           [Azure Service Administrator or Coadministrator](/azure/billing-add-change-azure-subscription-administrator) 
           permissions for the Azure subscription that's linked to your organization in Azure DevOps.
-          Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization Owner permissions.
+          Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization owner permissions.
           
       - question: |
           I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
@@ -77,7 +77,7 @@ sections:
       - question: |
           What happens if my Azure subscription is disabled?
         answer: |
-          If you're the organization Owner or 
+          If you're the organization owner or 
           [Azure subscription Account Administrator](/azure/billing/billing-add-change-azure-subscription-administrator), 
           check your subscription status in the [Account Center](https://account.windowsazure.com/), 
           then try to [fix your subscription](/azure/billing-subscription-become-disable). 
@@ -366,7 +366,7 @@ sections:
         answer: |
           You might not see the directory for any of the following circumstances:
           
-          * You aren't recognized as the [**Organization owner**](../security/look-up-organization-owner.md) to manage directory connections.
+          * You aren't recognized as the [**organization Owner**](../security/look-up-organization-owner.md) to manage directory connections.
           
           * Talk to your Azure AD organization administrator and ask them to make you a member of the organization. It's possible that you're not  part of the organization.
           
@@ -375,7 +375,7 @@ sections:
       - question: |
           Why is my organization already connected to a directory? Can I change that directory?
         answer: |
-          Your organization was connected to a directory when the organization Owner created the organization, or sometime afterward. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. Yes, you can [switch directories](#switch-directory). You might have to migrate some users.
+          Your organization was connected to a directory when the organization owner created the organization, or sometime afterward. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. Yes, you can [switch directories](#switch-directory). You might have to migrate some users.
           
           <a name="switch-directory"></a>
           
