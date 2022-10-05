@@ -210,14 +210,14 @@ Your first project is automatically created using the Basic process and a Git re
 1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page, and then select **New project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/projects-hub-select-new-project.png)  
+   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/select-new-project.png)  
 
 2. Fill out the form, expand **Advanced** to choose the options available for [**Version control**](../../repos/tfvc/comparison-git-tfvc.md) and [**Work item process**](../work-items/guidance/choose-process.md). 
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of create project with Agile process.](media/sign-up/create-agile-git-project.png)  
 
-2. Choose **Create** to complete the action.
+3. Choose **Create** to complete the action.
 
 
 <a id="invite-others" />
