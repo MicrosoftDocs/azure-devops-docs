@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 11/05/2021
+ms.date: 10/05/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -265,7 +265,7 @@ You can also create your own [custom service connections](../../extend/develop/s
 
 Azure Pipelines supports the following service connection types by default:
 
-[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [Bitbucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
+[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [Bitbucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [Other Git](#other-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
 
 ### Azure Classic service connection
 
@@ -306,7 +306,7 @@ For more information, see [Authenticate access with personal access tokens for A
 ### Azure Resource Manager service connection
 
 Use the following parameters to define and secure a connection to a Microsoft Azure subscription
-using Service Principal Authentication (SPA) or an Azure-Managed Service Identity.
+using Service Principal Authentication (SPA) or an Azure managed Service Identity.
 The dialog offers two main modes:
 
 * **Automated subscription detection**. In this mode, Azure Pipelines queries Azure for all of the subscriptions and instances to which you have access. They use the credentials you're currently signed in with in Azure Pipelines (including Microsoft accounts and School or Work accounts).
@@ -424,15 +424,16 @@ Use the following parameters to define a connection to a container registry for 
 | Password | Required. The password for the account user identified above. (Docker Hub requires a PAT instead of a password.) |
 | Email | Optional. An email address to receive notifications. |
 
-### External Git service connection
+### Other Git service connection
 
-Use the following parameters to define and secure a connection to a Git repository server.
+Use the following parameters to define and secure a connection to an external Git repository server.
 There's a specific service connection for [GitHub](#github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection).
 
 | Parameter | Description |
 | --------- | ----------- |
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the Git repository server. |
+| Attempt accessing this Git server from Azure Pipelines | When checked, Azure Pipelines attempts to connect to the repository before queuing a pipeline run. You can disable this setting to improve performance when working with repositories that are not publicly accessible. Note that [CI triggers](../repos/pipeline-options-for-git.md#trigger-options-for-other-git) will not work in when an **Other Git** repository is not publicly accessible. You can only start manual or scheduled pipeline runs. |
 | User name | Required. The username to connect to the Git repository server. |
 | Password/Token key | Required. The password or access token for the specified username. |
 
@@ -454,7 +455,7 @@ Use the following parameters to define and secure a connection to any generic ty
 Use the following parameters to define a connection to a GitHub repository.
 
 > [!TIP]
-> There's a specific service connection for [External Git servers](#external-git-service-connection) and [GitHub Enterprise Server connections](#github-enterprise-server-service-connection).
+> There's a specific service connection for [Other Git servers](#other-git-service-connection) and [GitHub Enterprise Server connections](#github-enterprise-server-service-connection).
 
 |      Parameter       |                                                                                                                                  Description                                                                                                                                   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -479,7 +480,7 @@ For more information, see [Artifact sources - version control](../release/artifa
 Use the following parameters to define a connection to a GitHub repository.
 
 > [!TIP]
-> There's a specific service connection for [External Git servers](#external-git-service-connection) and [standard GitHub service connections](#github-service-connection).
+> There's a specific service connection for [Other Git servers](#other-git-service-connection) and [standard GitHub service connections](#github-service-connection).
 
 |                 Parameter                  |                                                                                                                                  Description                                                                                                                                   |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
