@@ -3,7 +3,7 @@ title: Customize cards on a Kanban board
 titleSuffix: Azure Boards
 description: Learn how to customize cards to provide at-a-glance information of interest to your team in Azure Boards and Azure DevOps. 
 ms.custom: boards-kanban, contperf-fy21q3
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.author: kaelli
 author: KathrynEE

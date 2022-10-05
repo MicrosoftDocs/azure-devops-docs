@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.date: 02/24/2022
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```yml

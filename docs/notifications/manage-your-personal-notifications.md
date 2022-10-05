@@ -2,7 +2,7 @@
 title: Manage personal notification settings
 titleSuffix: Azure DevOps
 description: Get personally notified, when changes occur to source code, git, work items, and builds in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.custom: contperf-fy22q1, cross-project
 ms.topic: how-to

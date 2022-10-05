@@ -2,7 +2,7 @@
 title: Define pick lists 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and Usage for the ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES elements to enumerate the drop-down menu for a field - Team Foundation Server (TFS)
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 309c8545-249a-4d7a-8c91-fc10227fa0ba
 ms.author: kaelli

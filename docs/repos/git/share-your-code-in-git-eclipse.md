@@ -3,10 +3,11 @@ title: Share your Eclipse project with Git
 titleSuffix: Azure Repos
 description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.date: 05/13/2019
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 

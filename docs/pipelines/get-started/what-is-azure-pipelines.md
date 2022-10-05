@@ -78,7 +78,7 @@ For more information, see [Pricing for Azure DevOps Services](https://azure.micr
 
 #### Azure DevOps Server
 
-If you have five or less active users, [Azure DevOps Express](https://visualstudio.microsoft.com/downloads/) is free, simple to set up, and installs on both client and server operating systems. It supports all the same features as Azure DevOps Server 2019. 
+If you have five or less active users, [Azure DevOps Express](https://azure.microsoft.com/services/devops/server/) is free, simple to set up, and installs on both client and server operating systems. It supports all the same features as Azure DevOps Server 2019. 
 
 For more information, see [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 

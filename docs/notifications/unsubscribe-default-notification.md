@@ -2,7 +2,7 @@
 title: View subscribed notifications
 titleSuffix: Azure DevOps
 description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.custom: quarterly-update
 ms.topic: conceptual
 ms.author: chcomley

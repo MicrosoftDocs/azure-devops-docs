@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Create a service hook for Grafana
 description: Annotate Grafana dashboards upon completion of deployments in Azure Pipelines

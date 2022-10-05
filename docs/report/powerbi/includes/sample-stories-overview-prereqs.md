@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE

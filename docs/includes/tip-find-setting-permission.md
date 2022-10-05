@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

@@ -7,8 +7,7 @@ metadata:
   title: Get started with Azure DevOps documentation
   titleSuffix: Azure DevOps  
   description: Learn how to start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
-  ms.prod: devops 
-  ms.technology: devops-new-user
+  ms.subservice: azure-devops-new-user
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

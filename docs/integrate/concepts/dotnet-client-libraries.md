@@ -2,7 +2,7 @@
 title: .NET Client Libraries
 description: Easily integrate with Azure DevOps from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

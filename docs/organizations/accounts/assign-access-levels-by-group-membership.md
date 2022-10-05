@@ -3,7 +3,7 @@ title: Add group rule to assign access levels
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign access levels with group rules in Azure Active Directory and Azure DevOps.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley

@@ -2,7 +2,7 @@
 title: Enable remote audio capture
 titleSuffix: Azure DevOps Services & TFS
 description: Configures audio redirection settings on a remote machine that is running Microsoft Feedback Client, Test Runner, or Exploratory Testing window 
-ms.technology: devops-collab
+ms.subservice: azure-devops-feedback
 ms.topic: how-to
 ms.assetid: 98e82b7a-768a-4fee-8259-0d8a578c0026
 ms.author: kaelli

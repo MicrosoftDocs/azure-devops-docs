@@ -2,8 +2,7 @@
 title: Index to project and team tasks and concepts
 titleSuffix: Azure DevOps
 description: Find project and team tasks and related concepts 
-ms.technology: devops-settings
-ms.prod: devops
+ms.subservice: azure-devops-projects
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE

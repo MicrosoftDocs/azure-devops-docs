@@ -1,7 +1,7 @@
 ---
 title: Install Maven Artifacts 
 description: How to install Maven Artifacts
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: jenp
 ms.topic: conceptual

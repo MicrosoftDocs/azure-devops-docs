@@ -3,10 +3,11 @@ title: Compare folders
 titleSuffix: Azure Repos
 description: Compare folders
 ms.assetid: 9c894c51-c34c-4c03-a840-5e485dbbc55d
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

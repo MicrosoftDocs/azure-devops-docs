@@ -2,7 +2,7 @@
 title: Troubleshoot a GitHub repo connection to an Azure Boards project
 titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE

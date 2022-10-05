@@ -3,7 +3,7 @@ title: Adjust work to fit sprint capacity
 titleSuffix: Azure Boards
 description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
 ms.custom: boards-sprints
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

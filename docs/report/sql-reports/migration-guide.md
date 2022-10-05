@@ -2,7 +2,7 @@
 title: Migrate to Analytics from SQL Reporting Services 
 titleSuffix: Azure DevOps 
 description: Learn how to migrate from using the legacy SQL Reporting Services reports to using Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -87,8 +87,8 @@ In addition, users can set permissions for individual shared Analytics views the
 - [Power BI Desktop download page](/power-bi/desktop-what-is-desktop)
 
 **Learn resources**:  
-- [Run quality tests in your build pipeline by using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline)
-- [Run functional tests in Azure DevOps](/learn/modules/run-functional-tests-azure-pipelines) 
+- [Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline)
+- [Run functional tests in Azure DevOps](/training/modules/run-functional-tests-azure-pipelines) 
 
 ## Next steps
 > [!div class="nextstepaction"]

@@ -3,7 +3,7 @@ title: Use semantic searches in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards and Azure DevOps.  
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: kaelli
 author: KathrynEE

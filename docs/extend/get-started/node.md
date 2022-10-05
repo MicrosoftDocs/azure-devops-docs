@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Develop a web extension for Azure DevOps
 description: Tutorial for creating your first web extension for Azure DevOps.
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
