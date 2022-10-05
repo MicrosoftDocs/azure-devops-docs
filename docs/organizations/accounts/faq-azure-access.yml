@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/04/2022
+  ms.date: 10/05/2022
   monikerRange: 'azure-devops'
 title: Access via Azure AD FAQs
 summary: |
@@ -34,7 +34,7 @@ sections:
           Why don't I see my organization in the Azure portal?
         answer: |
           In both applications, you must have
-          [Azure Service Administrator or Coadministrator](/azure/billing-add-change-azure-subscription-administrator) 
+          [Azure Service Administrator or Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
           permissions for the Azure subscription that's linked to your organization in Azure DevOps.
           Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization owner permissions.
           
