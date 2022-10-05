@@ -21,7 +21,7 @@ However, some of our public APIs are currently unassociated with a PAT scope and
 
 ### Get Attachment URL link
 
-As a user, I want to be able to go to an attachment, click on the context menu and get the url. This will allow me to cut and paste the url into discussions or descriptions so that I can have a discussion about a specific attachment. Readers can download that attachment directly from the link. When I paste the url it should show the name of the file (filename.txt) and that would be a link back to the attachment.  
+As a user, I want to be able to go to an attachment, click on the context menu and get the url. This will allow me to cut and paste the url into discussions or descriptions so that I can have a conversation about a specific attachment. Readers can download that attachment directly from the link. When I paste the url it should show the name of the file (filename.txt) that links back to the attachment.  
 
 > [!div class="mx-imgBorder"]
 > ![Get Attachment URL link](media/boards-2022q3-01.png)
@@ -33,7 +33,7 @@ As a user, I want to be able to go to an attachment, click on the context menu a
 
 ### Adding Assigned To avatar to child items on cards
 
-As a user, I want to see the assigned to avatar next to the tasks on the board cards. This would me to see what tasks are assigned to whom. I should also be assign the tasks directly from the action menu.
+As a user, I want to see the **Assigned To** avatar next to the tasks on the board cards. This would me to see what tasks are assigned to whom. I should also be assign the tasks directly from the action menu.
 
 > [!div class="mx-imgBorder"]
 > ![Adding Assigned To avatar to child items on cards](media/boards-2022q3-02.png)
@@ -45,7 +45,7 @@ As a user, I want to see the assigned to avatar next to the tasks on the board c
 
 ### Filter to work item history
 
-As a user, when looking at the work item history, it is difficult to see who made changes to what fields. I want to be able to filter down revisions on the history tab. Filter by text, person who made the revision, and the fields being revised.
+As a user, when looking at the work item history, it is difficult to see who made changes to what fields. I want to be able to filter out the history by text, person who made the revision, and the fields being revised.
 
 > [!div class="mx-imgBorder"]
 > ![Filter to work item history](media/boards-2022q3-03.png)

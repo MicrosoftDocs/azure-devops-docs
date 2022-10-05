@@ -43,9 +43,9 @@ As a user, it takes me 5 steps to change a link type. I want to change a link ty
 
 ### Save Comment Improvements
 
-In my project, there are some users who only need to contribute to discussions. They should not be able to update any other fields. 
+In my project, there are some users who only need to contribute to discussions. They should not update any other fields. 
 
-As a user, when I save a discussion, I should not have to save the entire work item (and run work item rules).
+As a user, when I save a discussion, the entire work item (and run work item rules) should not be saved.
 
 > [!div class="mx-imgBorder"]
 > ![Save Comment Improvements](media/boards-2022q4-03.png)
