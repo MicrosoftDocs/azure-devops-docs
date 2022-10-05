@@ -1,14 +1,14 @@
 ---
 title: Switch to another Azure Active Directory
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
+ms.custom: seodec18, engagement-fy23
 description: Learn how to change or switch your organization connection to a different Azure Active Directory.
 ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 08/25/2022
+ms.date: 10/04/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-If you need to switch your organization connection from one Azure Active Directory (Azure AD) to another, complete the following steps.
+Learn how to switch your organization connection from one Azure Active Directory (Azure AD) to another. When you change directories, your project resources remain.
 
 For more information about using Azure AD with Azure DevOps, see the [Conceptual overview](access-with-azure-ad.md).
 
@@ -26,7 +26,7 @@ Before you switch your organization directory, make sure the following statement
 
 - You're in the Project Collection Administrator group for the organization.
 - You're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, you can change the Azure AD tenant that's connected to your organization, but [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users and map them to their Azure AD identities in the new tenant.
+- There are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Azure AD identities in the new tenant.
 
 Do the following task:
 
@@ -38,7 +38,7 @@ Do the following task:
 
 ## Change the Azure AD connection
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign into your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -51,7 +51,7 @@ Do the following task:
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
    ![Select your Azure AD, and then Connect](media/shared/select-directory-connect.png)
-   If you can't find your directory, contact your Azure AD administrator and request that they add you as a member to the Azure AD.
+   If you can't find your directory, contact your Azure AD administrator to request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
 

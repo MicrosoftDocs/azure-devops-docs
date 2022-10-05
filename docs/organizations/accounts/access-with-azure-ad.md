@@ -2,7 +2,7 @@
 title: Access your organization with Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, engagement-fy23
-description: About authenticating users and controlling conditional access to your organization with your Azure Active Directory tenant.
+description: About user authentication and controlling conditional access to your organization with your Azure Active Directory tenant.
 ms.subservice: azure-devops-organizations
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: conceptual
@@ -34,9 +34,10 @@ Only specific [Azure AD administrators](/azure/active-directory/roles/permission
 
 Without Azure AD, you're solely responsible for controlling organization access. All users must sign in with Microsoft accounts.
 
+For more information, see [Frequently asked questions about Azure access](faq-azure-access.yml)
+
 ## Related articles
 
-* [Frequently asked questions about Azure access](faq-azure-access.yml)
 * [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md)
 * [Disconnect your organization from Azure AD](./disconnect-organization-from-azure-ad.md)
