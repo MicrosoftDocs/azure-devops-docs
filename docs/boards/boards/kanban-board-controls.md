@@ -3,7 +3,7 @@ title: Enable interface features with Kanban board controls
 titleSuffix: Azure Boards
 description: Learn how to use the board controls available with your Kanban board in Azure Boards and Azure DevOps.
 ms.custom: boards-kanban  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
 ms.author: kaelli
 author: KathrynEE

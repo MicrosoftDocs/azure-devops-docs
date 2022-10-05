@@ -2,7 +2,7 @@
 title: OData Analytics query guidelines 
 titleSuffix: Azure DevOps
 description: Learn how to write good OData queries that access Analytics for Azure DevOps.
-ms.technology: devops-analytics 
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -774,7 +774,7 @@ User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
-Host: {OrganizationName}.analytics.visualstudio.com
+Host: analytics.dev.azure.com/{OrganizationName}
 ```
 If the dataset exceeds the limit of 1000 records, the query will immediately fail with the following error.
 

@@ -3,7 +3,7 @@ title: Query Analytics
 titleSuffix: Azure DevOps  
 description: Learn how to query the Analytics service to return metadata or filter data for an EntityType.  
 ms.custom: "analytics" 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -24,7 +24,7 @@ You can query Analytics from any [supported web browser](/azure/devops/server/co
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-
+<!--- NEED to specify when to query an entity type versus an entity set -->
 
 
 <a id="query-metadata" />
@@ -103,7 +103,7 @@ Analytics returns an XML file of the data model.
 > [!TIP] 
 > Depending on the browser you're using, this file may or may not be formatted in a readable manner. If it isn't formatted, you can find a free online XML formatter through a web browser search. 
 
-The core components of the metadata response are `EntityType` and `EntityContainer`. For more information, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).   
+The two main schemas defined in the Analytics metadata are `Microsoft.VisualStudio.Services.Analytics.Model`, which defines the entity types and enumerated types and their members, and the `Default` schema, which defines the entity containers and entity sets and supported OData filter, transformation, and custom aggregation functions. For more information, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).   
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -120,7 +120,9 @@ The core components of the metadata response are `EntityType` and `EntityContain
 > </edmx:Edmx>
 > ```
 
-## Query the Analytics service for Entity data 
+To query Analytics data and build reports, you typically query an entity type.  
+
+## Query the Analytics service for entity data 
 
 The following URL is used to query a specific EntityType, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.  For a list of all supported EntityTypes, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
    

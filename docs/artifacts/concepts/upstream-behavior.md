@@ -1,7 +1,7 @@
 ---
 title: Configure upstream behavior
 description: How to allow external package versions.
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 05/26/2022
 ms.author: rabououn

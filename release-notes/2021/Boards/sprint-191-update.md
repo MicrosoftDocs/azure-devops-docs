@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Boards Sprint 191 Update
 description: See the Sprint 191 feature updates for Azure Boards, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 08/19/2021
 ---
 

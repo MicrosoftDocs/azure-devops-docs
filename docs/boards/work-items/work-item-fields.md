@@ -3,7 +3,7 @@ title: List work item fields and attributes in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
 ms.custom: work-items
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE

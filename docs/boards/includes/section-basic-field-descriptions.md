@@ -1,6 +1,5 @@
 ---
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE

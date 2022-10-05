@@ -2,7 +2,7 @@
 title: Resolve validation errors
 titleSuffix: Azure DevOps Services  
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.topic: troubleshooting
 ms.author: kaelli

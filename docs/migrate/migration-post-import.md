@@ -3,7 +3,7 @@ title: Post migration import steps to validate and configure an organization
 titleSuffix: Azure DevOps
 description: Guidance on how to validate and configure an organization after it has been imported to Azure DevOps Services.
 ms.topic: conceptual
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: kaelli
 author: KathrynEE

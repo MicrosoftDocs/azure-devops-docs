@@ -1,7 +1,7 @@
 ---
 title: Get started with Python packages in Azure Artifacts
 description: Quickly start hosting python packages with Azure Artifacts
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 02/26/2021
 monikerRange: '<= azure-devops'

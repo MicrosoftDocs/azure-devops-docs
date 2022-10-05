@@ -8,8 +8,7 @@ metadata:
   title: Settings & Usage documentation
   titleSuffix: Azure DevOps
   description: Configure resources and manage settings for an organization, project, team, or user.  
-  ms.prod: devops 
-  ms.technology: devops-settings
+  ms.subservice: azure-devops-settings
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

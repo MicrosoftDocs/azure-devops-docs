@@ -6,8 +6,7 @@ metadata:
   title: Cross-service, Azure, and GitHub integration 
   titleSuffix: Azure DevOps 
   description: Work across Azure DevOps Services and projects, integrate with Azure, GitHub, and other resources, and create and manage public projects.
-  ms.prod: devops 
-  ms.technology: devops-collab
+  ms.subservice: azure-devops-cross-service
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

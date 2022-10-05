@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18, contperf-fy21q3
 description: Delete or remove a project from your organization in Azure DevOps.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley

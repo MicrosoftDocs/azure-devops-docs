@@ -2,7 +2,6 @@
 title: Microsoft-hosted Linux and macOS agents generally available – VSTS Sprint 137 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 7/10/2018
 description: In the Sprint 137 Update of Visual Studio Team Services (VSTS), we remove the "Preview" moniker from our Linux and macOS Microsoft-hosted CI/CD agents and make them generally available.
 ---
