@@ -3,7 +3,7 @@ title: Search across Azure DevOps
 titleSuffix: Azure DevOps
 description: Quickly search within Azure DevOps, across all your code, wiki, packages, and work items.
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
-ms.technology: devops-collab
+ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
@@ -26,7 +26,7 @@ Take an at-a-glance look at all of the [search features](#search-features-usage-
 - When searching across the organization or collection, only results for which a project member has access are listed.
 - Stakeholder wiki search results are limited to provisioned wikis. Because published wikis require access to regular repositories, which Stakeholders don't have access to, results for published wikis don't appear in the search results. Similarly, Code search results don't appear for Stakeholders.
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 > [!IMPORTANT]
 > For Code search, a Collection Administrator must [Install and configure search](install-configure-search.md).

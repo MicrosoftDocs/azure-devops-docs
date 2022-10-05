@@ -63,7 +63,7 @@ You have a working YAML file (`azure-pipelines.yml`) in your repository that's r
 Gradle is a common build tool used for building Android projects. For more information about your options, see the [Gradle](../tasks/build/gradle.md) task.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/android
 pool:
   vmImage: 'macOS-latest'
 

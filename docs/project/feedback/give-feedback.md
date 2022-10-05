@@ -2,7 +2,7 @@
 title: Give feedback using Microsoft Feedback Client 
 titleSuffix: Azure DevOps Services & TFS  
 description: Respond to a request for feedback using the Microsoft Feedback Client in Azure DevOps Services & Team Foundation Server   
-ms.technology: devops-collab
+ms.subservice: azure-devops-feedback
 ms.topic: how-to
 ms.assetid: 9C3231E4-FD2F-4F22-BEA0-C1AA0DE294C6  
 ms.author: kaelli

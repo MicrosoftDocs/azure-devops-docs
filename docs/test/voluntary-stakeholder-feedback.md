@@ -2,7 +2,7 @@
 title: Voluntarily provide stakeholder feedback
 description: Voluntarily provide stakeholder feedback in Azure DevOps using the Exploratory Testing browser extension when you want to test your applications
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

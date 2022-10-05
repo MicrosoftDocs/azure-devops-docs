@@ -3,7 +3,7 @@ title: Troubleshoot access, permission issues
 titleSuffix: Azure DevOps
 description: Find helpful troubleshooting information for resolving access and permission issues in Azure DevOps.  
 ms.assetid: 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
@@ -119,7 +119,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
 

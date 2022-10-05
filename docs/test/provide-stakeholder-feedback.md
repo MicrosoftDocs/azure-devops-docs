@@ -2,7 +2,7 @@
 title: Give feedback with Test & Feedback extension
 description: Provide feedback in Azure DevOps using the Exploratory Testing browser extension
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

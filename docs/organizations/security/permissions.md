@@ -2,7 +2,7 @@
 title: Permissions, security groups, and service accounts reference
 titleSuffix: Azure DevOps
 description: Reference guide of security groups, service accounts, and permissions for Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: conceptual
@@ -68,7 +68,7 @@ ms.date: 04/04/2022
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md)  
   ::: moniker-end
-  ::: moniker range="azure-devops-2019 || azure-devops-2020"
+  ::: moniker range=">= azure-devops-2019 < azure-devops"
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md) 
@@ -137,7 +137,7 @@ ms.date: 04/04/2022
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Azure DevOps Security group dialog.](media/permissions/server-level-groups-azdo-2019-update1.png) 

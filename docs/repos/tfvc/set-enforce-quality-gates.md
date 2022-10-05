@@ -3,10 +3,11 @@ title: Set and enforce quality gates
 titleSuffix: Azure Repos
 description: Learn how to set and enforce quality gates for TFVC
 ms.assetid: bdc5666e-6cf0-45b2-a0a1-133c3f61e852
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

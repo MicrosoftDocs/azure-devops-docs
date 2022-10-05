@@ -2,11 +2,12 @@
 title: Branch policies
 titleSuffix: Azure Repos    
 description: Learn about branch policies in Azure DevOps Services & TFS  
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.topic: overview
 ms.date: 06/01/2020
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # About branches and branch policies
@@ -57,7 +58,7 @@ The following table summarizes the policies you can define to customize a branch
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Encourage traceability by checking for linked work items on pull requests
+      Encourage traceability by checking for linked work items on pull requests.
    :::column-end:::
 :::row-end:::
 

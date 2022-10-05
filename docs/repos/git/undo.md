@@ -2,10 +2,11 @@
 title: Undo changes in your Git repo
 titleSuffix: Azure Repos
 description: Learn how to discard uncommitted changes, revert changes in shared commits, reset a branch to a previous state, and generally undo changes in a Git repo.
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 05/11/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Undo changes

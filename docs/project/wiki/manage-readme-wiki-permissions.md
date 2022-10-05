@@ -2,7 +2,7 @@
 title: Manage permissions for READMEs and wiki pages
 titleSuffix: Azure DevOps
 description: Learn how to set permissions to grant or secure access to README files and your team project built-in wiki.
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid: 
@@ -47,9 +47,9 @@ If you don't have access to create a wiki page, you need to contact an administr
 
 ### Private projects
 
-Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read **project** wiki pages and view revisions, however they can't do any edit operations. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read [**provisioned**](provisioned-vs-published-wiki.md) wiki pages and view revisions, however they can't do any edit operations. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
 
-Stakeholders have zero access to read or edit **code** wiki pages in private projects. For more information, see the [Stakeholder access quick reference for project and code wikis](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
+Stakeholders have zero access to read or edit [**published code**](provisioned-vs-published-wiki.md) wiki pages in private projects. For more information, see the [Stakeholder access quick reference for project and code wikis](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
 
 ### Public projects
 

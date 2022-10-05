@@ -3,7 +3,7 @@ title: System or basic work item field reference for Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to use this index to look up a description of a field used to track an issue, task, or epic.
 ms.custom: work-items, seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.topic: conceptual
 ms.author: kaelli

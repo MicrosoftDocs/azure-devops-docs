@@ -2,7 +2,7 @@
 title: Create or add a team
 titleSuffix: Azure DevOps 
 description: Learn how to create or add a team to a project to scale Azure DevOps.  
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
 author: KathrynEE
@@ -390,7 +390,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
-::: moniker range="<= azure-devops-2020" 
+::: moniker range="< azure-devops-2022" 
 
 If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 

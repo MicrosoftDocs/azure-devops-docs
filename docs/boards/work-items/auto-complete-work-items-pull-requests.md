@@ -2,7 +2,7 @@
 title: Automate work item completion with pull requests in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to automate work item creation and state transition of work items.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: cross-service
 ms.author: kaelli
 ms.topic: how-to

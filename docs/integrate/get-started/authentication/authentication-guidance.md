@@ -3,7 +3,7 @@ title: Guidance for authentication
 titleSuffix: Azure DevOps  
 description: Guidance for authentication with Azure DevOps  
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: conceptual 
 monikerRange: '<= azure-devops'
 ms.author: chcomley
@@ -30,7 +30,7 @@ For applications that interface with Azure DevOps Services, you must authenticat
 | [Azure DevOps Services Extension](../../../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walk through](../../../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
-> The Azure DevOps API doesn't support non-interactive service access via service principals.
+> The Azure DevOps API doesn't support non-interactive service access via service principals yet, although it is on the [roadmap](/azure/devops/release-notes/features-timeline). If you need to call the Azure DevOps API from a non-interactive application (where an end user cannot authenticate interactively, such as a background job), it should use a personal access token (PAT). Since this is a security credential, the PAT should be stored in secure storage such as [Azure Key Vault](/azure/key-vault/general/). If possible, the non-interactive application should then [use a managed identity to access Key Vault](/azure/key-vault/general/authentication), so that the application never needs to store any secrets or credentials.
 
 To learn more about how security and identity are managed, see [About security and identity](../../../organizations/security/about-security-identity.md).
 

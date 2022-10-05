@@ -3,7 +3,7 @@ metadata:
   title: FAQs about getting extensions for Azure DevOps
   description: Frequently asked questions about getting and paying for extensions for Azure DevOps 
   titleSuffix: Azure DevOps
-  ms.technology: devops-marketplace
+  ms.subservice: azure-devops-marketplace
   ms.author: chcomley
   author: chcomley
   ms.topic: faq

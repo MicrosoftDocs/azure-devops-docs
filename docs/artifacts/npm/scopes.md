@@ -2,7 +2,7 @@
 title: Use npm scopes
 description: How to use npm scopes in Azure Artifacts 
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/08/2022
 monikerRange: '<= azure-devops'

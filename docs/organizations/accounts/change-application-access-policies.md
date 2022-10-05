@@ -3,7 +3,7 @@ title: Change application access, security policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Manage security policies for accessing organization resources, like conditional access, OAuth, SSH, and personal access tokens (PATs).
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
 ms.author: chcomley
@@ -20,8 +20,7 @@ Learn how to manage your organization's security policies that determine how app
 
 ## Prerequisites
 
-To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](/azure/devops/organizations/security/request-changes-permissions)
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 

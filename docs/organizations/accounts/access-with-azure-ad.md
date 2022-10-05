@@ -1,9 +1,9 @@
-﻿---
+---
 title: Access your organization with Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: About authenticating users and controlling conditional access to your organization with your Azure Active Directory tenant.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: conceptual
 ms.author: chcomley

@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Add a chart | Extensions for Azure DevOps Services
 description: Add a chart to your extension in Azure DevOps Services
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21

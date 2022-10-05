@@ -14,13 +14,13 @@ ms.topic: quickstart
 
 Get started using [GitHub Actions](https://docs.github.com/en/actions) with Azure Pipelines. GitHub Actions help you automate your software development workflows from within GitHub. You can deploy workflows in the same place where you store code and collaborate on pull requests and issues. 
 
-If you have both Azure Pipelines and GitHub Actions workflows, you might want to trigger a pipeline run from within a GitHub action. For example, you might have a specific set of pipeline tasks that you want to trigger from your GitHub Actions workflow. You can trigger a pipeline run with the [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action).  
+If you have both Azure Pipelines and GitHub Actions workflows, you might want to trigger a pipeline run from within a GitHub action. For example, you might have a specific set of pipeline tasks that you want to trigger from your GitHub Actions workflow. You can trigger a pipeline run with the [Azure Pipelines action](https://github.com/marketplace/actions/azure-pipelines-action).  
 
 ## Prerequisites
 
 - A working Azure pipeline. [Create your first pipeline](../create-first-pipeline.md). 
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
-- An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- An Azure DevOps personal access token (PAT) to use with GitHub Actions. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Authenticate with Azure Pipelines
 

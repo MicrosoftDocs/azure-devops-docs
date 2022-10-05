@@ -1,7 +1,7 @@
 ---
 title: Overview of CI/CD data pipelines on Microsoft Azure 
 description: Learn why to use a CI/CD data pipeline to ingest, process, and share data
-ms.technology: devops-cicd-apps
+ms.subservice: azure-devops-pipelines-apps
 ms.topic: conceptual
 ms.author: jukullam
 author: JuliaKM

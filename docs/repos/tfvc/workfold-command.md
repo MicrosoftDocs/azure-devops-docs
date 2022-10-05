@@ -3,10 +3,11 @@ title: Workfold TFVC command
 titleSuffix: Azure Repos
 description: Workfold command creates, modifies, or displays information about the mappings between your workspace folders and the folders on the server.
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

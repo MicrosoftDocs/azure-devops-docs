@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-collab
+ms.subservice: azure-devops-integration
 title: Azure Pipelines with Slack
 ms.manager: bijuv
 ms.author: atinb

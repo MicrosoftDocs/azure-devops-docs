@@ -1,7 +1,7 @@
 ---
 title: Get started with Maven packages
 description: learn how to publish and download Maven artifacts
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 05/06/2022
@@ -17,7 +17,7 @@ This quickstart will guide you through setting up your Maven project to connect 
 ### Prerequisites
 
 - An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
-- [Install Maven Apache](https://maven.apache.org/download.cgi).
+- [Install Apache Maven](https://maven.apache.org/download.cgi).
 - An Azure Artifacts feed. [Create a feed](./concepts/feeds.md#create-public-feeds.) if you don't have one already.
 
 ## Set up authentication

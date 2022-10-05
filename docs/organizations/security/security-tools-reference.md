@@ -2,7 +2,7 @@
 title: Security and permission management tools 
 titleSuffix: Azure DevOps 
 description: Learn about the available tools to manage security and permissions for Azure DevOps 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -124,7 +124,7 @@ You can use the tools listed in the following table to set permissions. Links in
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2020"  
+::: moniker range="< azure-devops"  
 
 ## Setting permissions for SQL Server reports 
 

@@ -222,8 +222,6 @@
           href: ecosystems/java-webapp.md
         - name: Java to web app with MicroProfile
           href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-        - name: Java to Azure Function
-          href: ecosystems/java-function.md
     - name: Android
       href: ecosystems/android.md
       displayName: android sdk, xamarin, android sdk platform tools
@@ -388,7 +386,7 @@
     - name: Azure App Service (Web Apps)
       items:
         - name: App Service
-          href: targets/webapp.md
+          href: /azure/app-service/deploy-azure-pipelines
         - name: Azure Web App for Containers
           href: apps/cd/deploy-docker-webapp.md
           displayName: containers, docker, azure web app
@@ -411,13 +409,13 @@
         - name: Build a data pipeline
           href: apps/cd/azure/build-data-pipeline.md
     - name: Azure Machine Learning
-      href: targets/azure-machine-learning.md
+      href: /azure/machine-learning/how-to-devops-machine-learning
     - name: Azure Databases
       items:
        - name: Azure SQL database
          href: targets/azure-sqldb.md
        - name: Azure MySQL database
-         href: targets/azure-mysql.md
+         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
     - name: Azure Virtual Machine Scale Set
       items:
       - name: Deploy a virtual machine scale set
@@ -491,9 +489,9 @@
     - name: npm
       href: artifacts/npm.md
       displayName: npm, package
-    - name: Maven
+    - name: Gradle
       href: artifacts/pull-package-gradle.md
-      displayName: maven, package
+      displayName: Gradle, package
     - name: Python
       href: artifacts/pypi.md
       displayName: python, package
@@ -605,6 +603,8 @@
           displayName: template permissions, repositories
         - name: Secure repositories
           href: security/repos.md
+        - name: Secure access to Azure repositories from pipelines
+          href: security/secure-access-to-repos.md
           displayName: forks, branches, access token
         - name: Pipeline resources
           href: security/resources.md
@@ -794,12 +794,6 @@
           href: tasks/test/app-center-test.md
         - name: Azure Load Testing
           href: tasks/test/azure-load-testing.md
-        - name: Cloud-based Apache JMeter Load Test
-          href: tasks/test/run-jmeter-load-test.md
-        - name: Cloud-based Load Test
-          href: tasks/test/cloud-based-load-test.md
-        - name: Cloud-based Web Performance Test
-          href: tasks/test/cloud-based-web-performance-test.md
         - name: Container Structure Test Task
           href: tasks/test/container-structure-test-task.md
         - name: Publish Code Coverage Results
@@ -986,7 +980,7 @@
     - name: Use deployment rings
       href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Use feature flags
-      href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fpipelines%2ftoc.json
+      href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb/toc.json&toc=/azure%2fdevops%2fpipelines/toc.json
       displayName: feature-flags
     - name: Legacy content
       items:
@@ -1011,12 +1005,12 @@
     - name: Microsoft Learn
       items:
         - name: Create a build pipeline
-          href: /learn/modules/create-a-build-pipeline/
+          href: /training/modules/create-a-build-pipeline/
         - name: Implement a code workflow in your build pipeline by using Git and GitHub
-          href: /learn/modules/implement-code-workflow/index
+          href: /training/modules/implement-code-workflow/index
         - name: Run quality tests in your build pipeline
-          href: /learn/modules/run-quality-tests-build-pipeline/index
+          href: /training/modules/run-quality-tests-build-pipeline/index
         - name: Manage build dependencies with Azure Artifacts
-          href: /learn/modules/manage-build-dependencies/index
+          href: /training/modules/manage-build-dependencies/index
     - name: Automated testing
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management

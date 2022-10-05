@@ -24,7 +24,6 @@ Use this task to build and deploy an Azure Static Web App.
 | `output_location`<br/>Output location | (Optional) String. Directory location of the compiled application code after building. |
 | `api_location`<br/>API location | (Optional) String. Directory location of the Azure Functions source code relative to working directory. |
 | `api_build_command`<br/>API build command | (Optional) String. Custom command for Oryx to run when building Azure Functions source code. |
-| `config_file_location`<br/>API build command | (Optional) String. Custom command for Oryx to run when building Azure Functions source code. |
 | `routes_location`<br/>Routes location | (Optional) String. Directory location where the routes.json file can be found, relative to working directory. Use `staticwebapp.config.json`. |
 | `config_file_location`<br/>Config file location | (Optional) String. Directory location where the `staticwebapp.config.json` file can be found, relative to working directory. |
 | `skip_app_build`<br/>Skip app build | (Optional) Boolean. Skips Oryx build for app folder.|

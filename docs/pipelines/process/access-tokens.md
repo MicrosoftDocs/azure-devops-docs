@@ -246,35 +246,66 @@ To update the permissions of the job access token:
 
 :::moniker range=">=azure-devops-2019"
 
-### Example - Configure permissions to access another repo in the same project project collection
+<a id="configure-external-project"></a>
+
+### Configure permissions for a project to access another project in the same project collection
+
+In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access the `fabrikam-tailspin/FabrikamFiber` project.
+
+1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
+
+    ![Screenshot of how to configure project settings.](media/access-tokens/project-permissions.png)
+
+2. Create a new Group named *External Projects* and add the **SpaceGameWeb Build Service** account.
+:::image type="content" source="media/access-tokens/create-new-security-group.png" alt-text="Screenshot of creating a new security group.":::
+
+3.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
+
+    ![Screenshot of selecting SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
+
+4. Grant the *View project-level information* permission for that user.
+
+    ![Screenshot of how to grant the View project-level information permission for a user.](media/access-tokens/grant-view-project-permissions.png)
+
+<a id="configure-repo-access"></a>
+
+### Example - Configure permissions to access another repo in the same project collection
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
 
-1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
+1. Follow the steps to [grant the `SpaceGameWeb` project-scoped build identity permission to access the `FabrikamFiber` project](#configure-external-project).
+
+2. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
 
     ![Configure repository access.](media/access-tokens/allow-repo-access.png)
 
-2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019 <= azure-devops-2020"
+3.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
     ![Add user for repository access.](media/access-tokens/add-build-service-user.png)
+:::moniker-end
 
-3. Configure the desired permissions for that user.
+:::moniker range=">azure-devops-2020"
+3.  Start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Configure repository permissions.](media/access-tokens/set-repo-permissions.png)
+    ![Screenshot of how to add a user for repository access.](media/access-tokens/search-for-user.png)
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019"
+
+4. Grant *Read* permissions for that user.
+
+    ![Screenshot of how to configure repository permissions.](media/access-tokens/grant-read-permission-on-repo.png)
 
 ### Example - Configure permissions to access other resources in the same project collection
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access other resources in the `fabrikam-tailspin/FabrikamFiber` project.
 
-1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
+1. Follow the steps to [grant the `SpaceGameWeb` project-scoped build identity permission to access the `FabrikamFiber` project](#configure-external-project).
 
-    ![Configure project settings.](media/access-tokens/project-permissions.png)
-
-2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
-
-    ![Select SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
-
-3. Configure the desired permissions for that user.
+2. Configure the desired permissions for that user.
 
     ![Configure user permissions.](media/access-tokens/set-project-permissions.png)
 

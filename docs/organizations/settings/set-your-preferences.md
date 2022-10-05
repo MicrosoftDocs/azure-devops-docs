@@ -3,13 +3,13 @@ title: Set user preferences
 titleSuffix: Azure DevOps
 ms.custom: contperf-fy22q4
 description: Learn how to change a user's picture, preferred email, and other user preferences from the user's Azure DevOps profile.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 05/23/2022
+ms.date: 07/27/2022
 ---
 
 # Set user preferences
@@ -36,7 +36,7 @@ See the following articles for setting other user preferences:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 On the Azure DevOps user profile page, you can change the user picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
 
@@ -71,7 +71,7 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. To change the user preferences, open the user profile menu, and then select **My profile**.
 

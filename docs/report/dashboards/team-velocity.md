@@ -3,7 +3,7 @@ title: View and configure team velocity
 titleSuffix: Azure DevOps 
 description: Learn how to calculate and track team velocity across sprints using the in-context Analytics report or velocity widget chart in Azure DevOps Services.
 ms.custom: dashboards   
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.author: kaelli
@@ -32,7 +32,7 @@ Teams track their velocity to help them determine how much work they can do spri
 ![Screenshot of velocity widget showing 6 sprints worth of data.](media/team-velocity-six-iterations.png) 
 
 > [!NOTE]
-> The Velocity widget is based on Analytics data. Analytics is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking data store](#velocity-chart).
+> The Velocity widget is based on Analytics data. Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. Analytics is in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking data store](#velocity-chart).
 
 ::: moniker-end  
 

@@ -2,7 +2,7 @@
 title: Query work tracking data using Analytics 
 titleSuffix: Azure DevOps  
 description: Learn how to create queries of work item tracking from Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.author: kaelli
 author: KathrynEE
@@ -20,7 +20,7 @@ Analytics. You can adapt most of these queries to meet your needs.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-For prerequisites and other information for getting started, see [Query your work tracking data using OData Analytics](wit-analytics.md) and [Analytics work item fields reference](../powerbi/analytics-fields-reference.md). All examples are scoped to a project on Azure DevOps. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md). 
+For prerequisites and other information for getting started, see [Query your work tracking data using OData Analytics](wit-analytics.md) and [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md). All examples are scoped to a project on Azure DevOps. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md). 
 
 ::: moniker range="azure-devops"
 > [!TIP] 
@@ -389,4 +389,4 @@ The response returns two work items.
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md) 
-- [Query guidelines for Analytics with OData](odata-query-guidelines.md)
+- [OData Analytics query guidelines](odata-query-guidelines.md)

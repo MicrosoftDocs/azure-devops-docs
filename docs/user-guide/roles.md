@@ -3,7 +3,7 @@ title: Supported roles for software development
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand how Azure DevOps tools support various software development roles
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.author: chcomley
 author: chcomley
@@ -132,8 +132,9 @@ Responsible for configuring project-level resources, including:
 
 ::: moniker range="azure-devops"
 
-### Organization Owners and Project Collection Administrators
+### Organization owners and Project Collection Administrators
 
+Organization owners are automatically members of the Project Collection Administrators group.
 Responsible for configuring organization-level resources, including the following tasks:
 
 - Manage billing  

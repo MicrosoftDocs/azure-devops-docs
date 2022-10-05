@@ -3,7 +3,7 @@ title: Understand how to use work items to track user stories & more
 titleSuffix: Azure Boards
 description: How to use Azure Boards work items to plan, track, & collaborate with others when developing software apps in Azure DevOps. 
 ms.custom: work-items, seodec18, contperf-fy20q4
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE

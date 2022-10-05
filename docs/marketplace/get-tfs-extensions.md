@@ -2,7 +2,7 @@
 title: Install extensions for on-premises servers
 description: Find and install extensions for Azure DevOps Server from the Azure DevOps Marketplace.
 ms.topic: conceptual
-ms.technology: devops-marketplace
+ms.subservice: azure-devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.author: chcomley
 author: chcomley
@@ -21,7 +21,7 @@ To add new features and capabilities to your Azure DevOps Server, install extens
 
 ## Prerequisites
 
-- To install an extension, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. For more information, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).  
+- To install an extension, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. Organization owners are automatically members of this group. For more information, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).  
 - If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 > [!NOTE]

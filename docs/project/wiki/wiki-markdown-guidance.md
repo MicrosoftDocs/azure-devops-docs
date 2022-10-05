@@ -2,14 +2,13 @@
 title: Markdown syntax for wikis in Azure DevOps
 titleSuffix: Azure DevOps
 description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
-ms.technology: devops-collab
-ms.assetid:
+ms.subservice: azure-devops-wiki
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/02/2022  
+ms.date: 08/03/2022  
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -47,19 +46,29 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ## Add Mermaid diagrams to a Wiki page
 
-Mermaid lets you create diagrams and visualizations using text and code. Wiki supports the following Mermaid diagram types:
+Mermaid lets you create diagrams and visualizations using text and code. 
+
+> [!NOTE]
+> Not all syntax in the content linked below for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
+
+Wiki supports the following Mermaid diagram types:
 
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
 - [Gantt charts](https://mermaid-js.github.io/mermaid/#/gantt)
 - [Flowcharts](http://mermaid-js.github.io/mermaid/#/flowchart)
+- Pie charts
+- Requirement diagrams
+- State diagrams
+- User Journey
+
+For more information, see the [Mermaid release notes](https://github.com/mermaid-js/mermaid/releases).
 
 > [!NOTE]
-> - Not all syntax in the previously linked content for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, or LongArrow `---->`. 
-> - Mermaid isn't supported in the Internet Explorer browser.
+> Mermaid isn't supported in the Internet Explorer browser.
 
 To add a Mermaid diagram to a wiki page, use the following syntax:
 
@@ -75,9 +84,9 @@ A sequence diagram is an interaction diagram that shows how processes operate wi
 ```markdown
 ::: mermaid
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+    Christie->>Josh: Hello Josh, how are you?
+    Josh-->>Christie: Great!
+    Christie->>Josh: See you later!
 :::
 ```
 

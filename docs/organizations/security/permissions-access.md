@@ -2,7 +2,7 @@
 title: Default permissions quick reference
 titleSuffix: Azure DevOps 
 description: Default permissions and access to common user tasks for Azure DevOps 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.author: kaelli
@@ -159,7 +159,7 @@ You can define and manage your builds and releases from the web portal **Pipelin
 
 ::: moniker-end  
   
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### Build  
 
@@ -224,7 +224,7 @@ You can manage feeds from the web portal, **Artifacts**. Users granted Stakehold
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 You can manage feeds from the web portal, **Artifacts**. Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
 

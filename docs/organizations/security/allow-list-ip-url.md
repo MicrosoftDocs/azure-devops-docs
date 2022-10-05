@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Add IP addresses and domain URLs to the allowlist for Azure DevOps and troubleshoot network connections. 
 ms.topic: reference
 ms.custom: contperf-fy21q4
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
@@ -34,15 +34,11 @@ The following section includes the most common domain URLs to support sign in an
 
 ```CommonDomainURLs
 
+https://dev.azure.com
 https://*.dev.azure.com
-https://*.vsassets.io
-https://*gallerycdn.vsassets.io
-https://*vstmrblob.vsassets.io
-https://aadcdn.msauth.net
-https://aadcdn.msftauth.net
 https://aex.dev.azure.com
 https://aexprodea1.vsaex.visualstudio.com
-https://amcdn.msftauth.net
+https://*vstmrblob.vsassets.io
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
@@ -50,13 +46,8 @@ https://*.vsblob.visualstudio.com
 https://*.vssps.visualstudio.com
 https://*.vstmr.visualstudio.com
 https://azure.microsoft.com
-https://azurecomcdn.azureedge.net
-https://cdn.vsassets.io
-https://dev.azure.com
 https://go.microsoft.com
 https://graph.microsoft.com
-https://live.com
-https://login.live.com
 https://login.microsoftonline.com
 https://management.azure.com
 https://management.core.windows.net
@@ -73,19 +64,43 @@ https://{organization_name}.vsrm.visualstudio.com
 https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
+
+Azure DevOps uses content delivery network (CDN) to serve static content. The following URLs are part of that. 
+https://cdn.vsassets.io
+https://*.vsassets.io
+https://*gallerycdn.vsassets.io
+https://aadcdn.msauth.net
+https://aadcdn.msftauth.net
+https://amcdn.msftauth.net
+https://azurecomcdn.azureedge.net
+
+The following endpoints are used to authenticate Azure DevOps organizations using a Microsoft Account (MSA). 
+These are only needed for Azure DevOps organizations backed by Microsoft Accounts (MSA). 
+Azure DevOps organizations backed an Azure Active Directory tenant does not need the following URLs.
+https://live.com 
+https://login.live.com 
+
+The following URLs are required if youa re migrating from Azure DevOps server to the cloud service using our data migration tool.
+https://dataimport.dev.azure.com
+
 ```
 
-<details>
 <summary>Various domain URL descriptions</summary>
 <br>
 <ul>
+ <li>https://login.microsoftonline.com: authentication and sign-in related</li>
+ <li>https://app.vssps.visualstudio.com: authentication and sign-in related</li>
+ <li>https://*.vssps.visualstudio.com: authentication and sign-in related</li>
  <li>https://*gallerycdn.vsassets.io: hosts Azure DevOps extensions</li>
  <li>https://*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
  <li>https://cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
  <li>https://static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
- <li>https://vsrm.dev.azure.com: hosts package feeds</li>
-</ul>
-</details>
+ <li>https://vsrm.dev.azure.com: hosts releases</li>
+ <li>https://vstsagentpackage.azureedge.net: required to setup self-hosted agent in machines within your network</li>
+ <li>https://amp.azure.net: needed for deploying to Azure app service</li>
+ <li>https://go.microsoft.com: access go links</li>
+ </ul>
+
 
 We recommend you open port `443` to all traffic on these IP addresses and domains. We also recommend you open port `22` to a smaller subset of targeted IP addresses.
 

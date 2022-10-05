@@ -1,14 +1,14 @@
 ---
 title: Use personal access tokens
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contperf-fy20q4, contperf-fy22q3
-description: Use personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
-ms.technology: devops-security
+ms.custom: contperf-fy20q4, contperf-fy22q3
+description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
+ms.subservice: azure-devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2022
+ms.date: 09/12/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -43,6 +43,10 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 
 ## FAQs
 
+### Q: What happens to a PAT if a user account is disabled?
+
+A: Once a user's removed from Azure DevOps, the PAT is invalidated within 1 hour. If your organization is connected to Azure Active Directory (Azure AD), the PAT is also invalidated in Azure AD, as it belongs to the user. We recommend that the user rotate their PAT to another user or service account to keep services running.
+
 ### Q: Is there a way to renew a PAT via REST API?
 
 A: Yes, there's a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md). For more information, see [Manage PATs using REST API](manage-personal-access-tokens-via-api.md) and our [FAQ](manage-personal-access-tokens-via-api.md#q-how-can-i-regeneraterotate-pats-through-the-api-i-saw-that-option-in-the-ui-but-i-dont-see-a-similar-method-in-the-api).
@@ -59,7 +63,7 @@ There's a policy for managing leaked PATs! For more information, see [Revoke lea
 
 ### Q: Can I use a personal access token as an ApiKey to publish NuGet packages to an Azure Artifacts feed using the dotnet/nuget.exe command line?
 
-A: No. Azure Artifacts does not support passing a personal access token as an ApiKey. When using a local development environment, it is recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. See the following examples for more details: [dotnet](../../artifacts/nuget/dotnet-exe.md), [NuGet.exe](../../artifacts/nuget/publish.md).
+A: No. Azure Artifacts doesn't support passing a personal access token as an ApiKey. When using a local development environment, we recommend you install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. For more information, see [dotnet](../../artifacts/nuget/dotnet-exe.md) and [NuGet.exe](../../artifacts/nuget/publish.md).
 If you want to publish your packages using Azure Pipelines, use the [NuGet Authenticate](../../pipelines/tasks/package/nuget-authenticate.md) task to authenticate with your feed [example](../../pipelines/artifacts/nuget.md#publish-a-package).
 
 ::: moniker-end
