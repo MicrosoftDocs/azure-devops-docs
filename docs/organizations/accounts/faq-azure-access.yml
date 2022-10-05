@@ -159,13 +159,13 @@ sections:
         answer: |
           Select from the following two options:
           
-          * Have the Azure AD administrator(s) remove you from the Azure AD and readd you, making you an Azure AD *member*, rather than a *guest*. For more information, see [Can Azure AD B2B users be added as members instead of guests](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
+          * Have the Azure AD administrator(s) remove you from the Azure AD and readd you, making you an Azure AD *member*, rather than a *guest*. For more information, see [Can Azure AD B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
           * [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Azure AD from the Azure DevOps organization.
 
           #### Convert Azure AD UserType from guest to member using Azure AD PowerShell
 
           > [!WARNING]
-          > This is an advanced process and [isn't advised](/azure/active-directory/external-identities/user-properties#convert-usertype), but it allows the user to query Azure AD from the Azure DevOps organization thereafter.
+          > This process is advanced, which [we don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype), but it allows the user to query Azure AD from the Azure DevOps organization.
 
           **Prerequisites**
 
@@ -175,7 +175,7 @@ sections:
           * Global administrator permissions
 
           > [!IMPORTANT]
-          > We recommend that you create a brand new (native) Azure AD user who is a global admin in the Azure AD, and then complete the following steps with that user. This new user should eliminate the possibility of connecting to the wrong Azure AD. You can delete the new user when you're done.
+          > We recommend that you create a brand new (native) Azure AD user who's a global admin in the Azure AD. Then, complete the following steps with that user. This new user should eliminate the possibility of connecting to the wrong Azure AD. You can delete the new user when you're done.
 
           **Process**
 
@@ -231,7 +231,7 @@ sections:
           > If you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
           
       - question: |
-          Why doesn't Users show all Azure AD group members?
+          Why doesn't the Users list show all Azure AD group members?
         answer: |
           These users have to sign in to your organization before they appear in Users.
           
@@ -279,7 +279,7 @@ sections:
       - question: |
           Can I use Azure AD groups to query work items by using the "In Group" clause?
         answer: |
-          No, querying on Azure AD groups isn't supported.
+          No, we don't support querying on Azure AD groups.
           
       - question: |
           Can I use Azure AD groups to set up field rules in my work item templates?
