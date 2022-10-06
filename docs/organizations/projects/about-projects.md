@@ -17,15 +17,18 @@ ms.date: 10/05/2022
 
 A project in Azure DevOps provides a place for users to plan, track progress, and collaborate on building software solutions. A project represents a fundamental container where you can store data and source code.
 
-When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, it may be necessary to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md) and [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+When you create your project, Azure DevOps automatically creates a team of the same name, which is sufficient for small organizations. For enterprise-level organizations, it may be necessary to scale up and create more teams and projects. You can have up to 1000 projects within an organization in Azure DevOps. 
+
+The following diagram shows one project and team versus multiple projects and teams in an organization or collection. This structure allows teams to configure the tools in ways that work for them and complete administrative tasks at the appropriate levels. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
+
 
 ---
 :::row:::
    :::column span="2":::
-      **One project + team in an organization or collection**
+      **One project + team**
    :::column-end:::
    :::column span="2":::
-      **Multiple projects + teams in an organization or collection**
+      **Multiple projects + teams**
    :::column-end:::
 :::row-end:::
 ---
@@ -39,7 +42,7 @@ When you create your project, Azure DevOps automatically creates a team of the s
 :::row-end:::
 ---
 
-The collection-project-team structure allows teams to configure tools in ways that work for them. This structure also supports administrative tasks to occur at the appropriate levels. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
+For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md) and [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
 <a id="scale">  </a>
 <a id="collection-project-team-structure">  </a>
@@ -101,7 +104,7 @@ For more information, see [Create a project](create-project.md).
 
 ::: moniker range="azure-devops"
 
-## Limit user visibility for projects using the Project-scoped user group 
+## Limit visibility of projects
 
 By default, users added to an organization can view all organization and project information and settings.  
 
@@ -115,7 +118,7 @@ The **Limit user visibility and collaboration to specific projects** preview fea
 
 ### Limit access to organization settings 
 
-To limit access to organization settings, [enable the preview feature, **Limit user visibility and collaboration to specific projects**](../../project/navigation/preview-features.md#account-level). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they've been added. 
+To limit access to organization settings, [enable the **Limit user visibility and collaboration to specific projects** preview feature](../../project/navigation/preview-features.md#account-level). Users and groups in the "Project-scoped users group" can't access organization settings. They can only see the **Overview** and **Projects** pages and those projects to which they've been added. 
 
 [!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
 
@@ -134,7 +137,7 @@ As shown in the following image, start to enter a user in the people picker box 
 > [!WARNING]   
 > When you enable the **Limit user visibility and collaboration to specific projects** preview feature, project-scoped users can't search for users who were added to the organization through Azure AD group membership, rather than through an explicit user invitation. We're working on a solution to this behavior. As a work around, you can disable the **Limit user visibility and collaboration to specific projects** preview feature.  
 
-Users and groups within the **Project-scoped users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+Users and groups within the **Project-scoped users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ### View historical data
 
