@@ -1,14 +1,15 @@
 ### YamlMime:FAQ
 metadata:
   title: FAQs about getting extensions for Azure DevOps
-  description: Frequently asked questions about getting and paying for extensions for Azure DevOps 
+  description: Frequently asked questions about getting and paying for extensions for Azure DevOps. 
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-marketplace
   ms.author: chcomley
   author: chcomley
   ms.topic: faq
+  ms.custom: engagement-fy23
   monikerRange: '<= azure-devops'
-  ms.date: 03/15/2021
+  ms.date: 10/06/2022
 
 
 title: FAQs for acquiring Azure DevOps extensions 
@@ -33,7 +34,7 @@ sections:
         answer: |
           See [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).  
   
-      - question: Why don't I see my organization from the Marketplace install page? 
+      - question: Why don't I see my organization from the Marketplace installation page? 
         answer: |
           If you don't see your organization when buying from the Azure DevOps Marketplace, try these steps:
 
@@ -44,14 +45,13 @@ sections:
           1. Sign in to the Visual Studio Marketplace. Use the identity of a user in the organization that you want.
 
           > [!TIP]
-          > If you're asked to choose "work or school account" or "personal account", then you used an email address that's the same for a Microsoft account and a "work or school account" that's managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions.
-          > 
+          > If you're asked to choose between "work or school account" or "personal account", then you used an email address that's the same for a Microsoft account and a "work or school account" that's managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions.
           > Choose the identity for the user in the organization that you want to select.
  
       - question: Why can't I install an extension?
         answer: |
           You can't install extensions for one of the following reasons.  
-          - You must a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
+          - You must be a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
           - If you get an "already installed or requested" error check with your Project Collection Administrator, and ask them to assign the extension to you.  
 
       - question: Why can't users access extension features?
@@ -60,7 +60,7 @@ sections:
           - Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web), but you'll get different capabilities based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more details, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
           - If you're using an organization, and you started a free extension trial, your trial might have expired. To check whether your trial expired:
-              1. On your organization toolbar, go to **Users**.
+              1. On your organization toolbar, select **Users**.
               2. Go to the extension pane.
               3. Check for an expiration message to find if or when your extension expired.
 
@@ -69,13 +69,11 @@ sections:
               2. Go to the extension pane.
               3. Check whether the extension is assigned to the user. If it is not, assign the extension to the user.
 
-          Learn more about [assigning extensions to users](../marketplace/install-extension.md).
-
-
+          For more information, see [Assign extensions to users](../marketplace/install-extension.md).
 
       - question: What happened to my preview extension?
         answer: |
-          Your extension imay have been moved out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period may be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
+          Your extension may have been moved out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period may be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
 
   - name: Install extension on-premises
 
