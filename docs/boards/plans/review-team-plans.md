@@ -2,7 +2,7 @@
 title: Review team delivery plans in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add, edit, and use delivery plans in Azure Boards to review multiple-team deliverables, rollups, and dependencies  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: kaelli
 author: KathrynEE

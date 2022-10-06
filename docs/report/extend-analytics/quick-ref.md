@@ -2,7 +2,7 @@
 title: Sample reports and quick reference index for the Analytics service
 titleSuffix: Azure DevOps  
 description: An index of articles that explain how to generate results using OData backed Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE

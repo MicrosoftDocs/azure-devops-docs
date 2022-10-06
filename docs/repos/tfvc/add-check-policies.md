@@ -3,10 +3,11 @@ title: Add Check-In Policies
 titleSuffix: Azure Repos
 description: Add Check-In Policies
 ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

@@ -90,7 +90,7 @@
     - name: Maven quickstart
       href: get-started-maven.md
       displayName: maven, maven introduction 
-    - name: Set up authentication
+    - name: Project setup
       href: maven/pom-and-settings.md
       displayName: maven pom, maven artifacts, maven packages, maven authentication
     - name: Install a Maven artifact

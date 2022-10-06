@@ -3,10 +3,11 @@ title: Checkout (or Edit) command
 titleSuffix: Azure Repos
 description: Checkout (or Edit) command
 ms.assetid: 377fec8a-bdc5-4e3c-ac8c-79ee85eef4ce
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

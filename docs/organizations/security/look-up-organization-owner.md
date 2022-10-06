@@ -2,7 +2,7 @@
 title: Find or lookup the organization owner 
 titleSuffix: Azure DevOps
 description: How-to guide to learn who is the owner of your organization   
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE

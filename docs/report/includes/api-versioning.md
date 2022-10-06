@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE

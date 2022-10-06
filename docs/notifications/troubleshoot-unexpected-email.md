@@ -2,7 +2,7 @@
 title: Why did I get this email
 titleSuffix: Azure DevOps 
 description: Troubleshoot why you're receiving automatic notification emails from Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley 
 author: chcomley

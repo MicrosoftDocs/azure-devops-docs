@@ -1,7 +1,7 @@
 ---
 title: Use Azure Artifacts feeds as a private PowerShell repository
 description: How to use Azure Artifacts feeds as a private PowerShell repository
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/19/2022
@@ -106,7 +106,7 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     nuget pack Get-Hello.nuspec
     ```
 
-1. Run the following command to add your feed source URL.
+1. Run the following command to add your feed source URL. NuGet v3 is not supported, make sure you use v2 in your feed source URL.
 
     - Org-scoped feed:
     
@@ -174,7 +174,7 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
         ```
 
     > [!TIP]
-    > If you encounter the following warning `Unable to resolve package source`, restart your PowerShell session.
+    > Certain versions of PowerShell require restarting a new session after executing the `Register-PSRepository` cmdlet to avoid the *Unable to resolve package source* warning.
 
 1. Register your package source:
 

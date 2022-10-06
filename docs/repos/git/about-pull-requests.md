@@ -3,12 +3,13 @@ title: About pull requests and permissions
 titleSuffix: Azure Repos
 description: Learn about pull request guidelines, management, and considerations when working in an Azure Repos Git repository.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
 ms.date: 11/05/2021
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # About pull requests

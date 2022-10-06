@@ -3,7 +3,7 @@ title: Subscribe to Azure DevOps events from another service
 description: Use service hooks to set up actions to take when specific events occur in Azure DevOps.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley

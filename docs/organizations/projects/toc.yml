@@ -67,12 +67,6 @@
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
     displayname: scope, group, organization, project, collection
-- name: FAQs
-  items:
-  - name: Create a project
-    href: faq-create-project.yml
-  - name: Rename a project
-    href: faq-rename-project.yml
 - name: Public projects
   href: ../public/about-public-projects.md
   displayname: share, code, continuous, integration, deployment, services, migrate

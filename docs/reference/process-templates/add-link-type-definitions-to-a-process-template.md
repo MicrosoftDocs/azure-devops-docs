@@ -2,7 +2,7 @@
 title: Add link type definitions to a process template 
 titleSuffix: TFS
 description: Define additional types of links that team members can create between work items for a project for Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
 ms.author: kaelli
 ms.topic: reference

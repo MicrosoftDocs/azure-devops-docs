@@ -2,7 +2,7 @@
 title: Resolve data validation errors in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to address rule errors that occur when publishing a list from Excel to Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
 ms.author: kaelli
 author: KathrynEE

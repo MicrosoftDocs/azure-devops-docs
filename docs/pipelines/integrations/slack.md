@@ -1,5 +1,6 @@
 ---
-ms.technology: devops-collab
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
 ms.topic: how-to
 title: Azure Pipelines with Slack
 description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 

@@ -2,7 +2,7 @@
 title: Change request field reference
 titleSuffix: Azure Boards
 description: Track change requests for Capability Maturity Model Integration (CMMI) work items, provide description and reference name.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1b95abfa-a1cb-4ebd-aff2-843cf6eec333
 ms.topic: reference
 ms.author: kaelli

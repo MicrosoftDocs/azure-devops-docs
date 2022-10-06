@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="< azure-devops-2019"
 
-This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+This article describes the licensing model for Azure Pipelines in Team Foundation Server 2018 (TFS 2018) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
 

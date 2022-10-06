@@ -2,7 +2,7 @@
 title: Default Analytics views
 titleSuffix: Azure DevOps
 description: Learned about a filtered set of data based on Analytics for Azure DevOps that supports creating Power BI reports.  
-ms.technology: devops-analytics 
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -1,5 +1,4 @@
 ---
-ms.prod: devops
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

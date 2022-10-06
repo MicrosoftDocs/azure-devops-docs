@@ -3,7 +3,7 @@ title: Analytics query tools
 titleSuffix: Azure DevOps  
 description: Learn about the tools you can use to query the Analytics service.
 ms.custom: "analytics" 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

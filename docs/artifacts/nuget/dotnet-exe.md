@@ -2,7 +2,7 @@
 title: Publish and restore packages with dotnet CLI
 description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/28/2022
 monikerRange: '<= azure-devops'

@@ -2,7 +2,7 @@
 title: Permissions, licensing, and access for manual testing
 description: Default permissions and access levels in Azure DevOps and TFS for manual and exploratory testing topics and problems
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: reference
 ms.author: sdanie
 author: steved0x

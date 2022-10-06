@@ -3,7 +3,7 @@ title: Create manual test cases
 titleSuffix: Azure Test Plans
 description: Create manual test cases to test your deliverables and assign testers. Use Excel and manage your test cases.  
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x

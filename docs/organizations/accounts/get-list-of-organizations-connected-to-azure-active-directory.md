@@ -3,7 +3,7 @@ title: Get list of organizations connected to Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to download a complete list of organizations backed by or connected to Azure Active Directory (Azure AD).
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley

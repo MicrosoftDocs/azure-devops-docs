@@ -1,9 +1,8 @@
 ---
 title: Permissions and prerequisites to access Analytics
 titleSuffix: Azure DevOps  
-description: Understand the permissions and prerequisites to meet to access and generate reports with Analytics.
-ms.custom: "analytics" 
-ms.technology: devops-analytics
+description: Understand the permissions and prerequisites to meet to access and generate reports with Analytics. 
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

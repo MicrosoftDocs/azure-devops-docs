@@ -2,7 +2,7 @@
 title: Manual test execution trend sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate an execution trend of manual tests.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
 ms.custom: powerbisample

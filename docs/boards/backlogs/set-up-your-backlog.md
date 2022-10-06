@@ -3,7 +3,7 @@ title: Manage your project's backlogs and boards in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to configure your project's backlogs and boards. Also, learn to display user stories, issues, tasks, or other work items that your team wants to track.  
 ms.custom: boards-backlogs    
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
