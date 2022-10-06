@@ -64,7 +64,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
    ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
 
    > [!NOTE]
-   > If you are configuring a deployment group agent, or f you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
+   > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
    > :::image type="content" source="../../media/prepare-permissions-pat-scope.png" alt-text="Screenshot of setting PAT scope to all accessible organizations.":::
 
 
