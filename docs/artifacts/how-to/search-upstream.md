@@ -23,7 +23,7 @@ Using upstream sources enable developers to consume packages from different feed
 
 1. Select **Public source**, and then select the **Public source**. (Example *NuGet gallery (https://api.nuget.org/v3/index.json)*)
 
-1. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
 :::image type="content" source="../media/enable-upstream.png" alt-text="A screenshot showing how to add the NuGet upstream.":::
 
@@ -39,7 +39,7 @@ Using upstream sources enable developers to consume packages from different feed
 
 1. Select the **Package type** and type your **Package Name**. (The package name is case sensitive and must be an exact match).
 
-1. Select **Search** when you are done.
+1. Select **Search** when you're done.
 
     :::image type="content" source="../media/search-upstreams.png" alt-text="A screenshot showing how to search for a package in upstream sources.":::
 
@@ -62,4 +62,10 @@ Using upstream sources enable developers to consume packages from different feed
 
 1. The saved versions will have the `In this feed` tag.
 
-    ::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the donwloaded versions.":::
+    ::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the downloaded versions.":::
+
+## Related articles
+
+- [Set up upstream sources](./set-up-upstream-sources.md)
+- [Configure upstream behavior](../concepts/upstream-behavior.md)
+- [Configure feed permissions](../feeds/feed-permissions.md)
