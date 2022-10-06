@@ -46,3 +46,20 @@ Using upstream sources enable developers to consume packages from different feed
 1. A list of package versions will be displayed as follows:
 
     :::image type="content" source="../media/upstream-packages.png" alt-text="A screenshot showing package versions from upstream.":::
+
+## Save packages
+
+> [!NOTE]
+> Saving packages to your feed is only supported for NuGet, Npm, and Universal Packages.
+
+1. To save a package, select the ellipsis button and then select  **Save to feed**.
+
+    ::image type="content" source="../media/save-from-upstream.png" alt-text="A screenshot showing how to save a package from upstream source.":::
+
+1. Select **Save** to save the package to your feed.
+
+    ::image type="content" source="../media/save-confirmation.png" alt-text="A screenshot showing the save confirmation message.":::
+
+1. The saved versions will have the `In this feed` tag.
+
+    ::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the donwloaded versions.":::
