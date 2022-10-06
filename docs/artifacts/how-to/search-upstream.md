@@ -13,7 +13,7 @@ Using upstream sources enable developers to consume packages from different feed
 
 ## Enable upstream sources
 
-1. Navigate to your project, and then select **Artifacts**. 
+1. Navigate to your project, and then select **Artifacts**.
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed Settings**.
 
@@ -41,6 +41,8 @@ Using upstream sources enable developers to consume packages from different feed
 
 1. Select **Search** when you are done.
 
-    :::image type="content" source="../media/search-package-upstream.png" alt-text="A screenshot showing how to search for a package in upstream sources.":::
+    :::image type="content" source="../media/search-upstreams.png" alt-text="A screenshot showing how to search for a package in upstream sources.":::
 
 1. A list of package versions will be displayed as follows:
+
+    :::image type="content" source="../media/upstream-packages.png" alt-text="A screenshot showing package versions from upstream.":::
