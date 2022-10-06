@@ -1,7 +1,7 @@
 ---
 title: Search for packages in upstream sources
 description: How to search for packages in upstream sources
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/29/2022
 monikerRange: '<= azure-devops'
