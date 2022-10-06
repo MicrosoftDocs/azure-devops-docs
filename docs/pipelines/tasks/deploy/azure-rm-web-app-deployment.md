@@ -194,7 +194,7 @@ If not mentioned, <code>webApp</code> is taken as the default value.
 
 
 * The task works with the [Azure Resource Manager APIs](/rest/api/resources/) only.
-* To ignore SSL errors, define a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` with value `true` in the pipeline. If you are deploying to a slot configured to auto-swap, the swap will fail unless you set `SCM_SKIP_SSL_VALIDATION` or 'SCM_SKIP_ASE_SSL_VALIDATION' to `1` in te app services configuration settings.
+* To ignore SSL errors, define a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` with value `true` in the pipeline. If you are deploying to a slot configured to auto-swap, the swap will fail unless you set `SCM_SKIP_SSL_VALIDATION` or 'SCM_SKIP_ASE_SSL_VALIDATION' to `1` in the app services configuration settings.
 * For .NET apps targeting Web App on Windows, avoid deployment failure with the error `ERROR_FILE_IN_USE` by ensuring that
   **Rename locked files** and **Take App Offline** settings are enabled. For zero downtime deployment, use the slot swap option.
 * When deploying to an App Service that has Application Insights configured, and you have enabled **Remove additional files at destination**,
@@ -376,7 +376,7 @@ If you are using web deploy to deploy your app, in some error scenarios Web Depl
 * If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
 * If you are using TFS/Azure DevOps Server deployed in a Virtual Network, the agent can be completely isolated.
 * Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
-* If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary. If you are deploying to a slot configured to auto-swap, the swap will fail unless you set `SCM_SKIP_SSL_VALIDATION` or 'SCM_SKIP_ASE_SSL_VALIDATION' to `1` in te app services configuration settings. 
+* If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary. If you are deploying to a slot configured to auto-swap, the swap will fail unless you set `SCM_SKIP_SSL_VALIDATION` or 'SCM_SKIP_ASE_SSL_VALIDATION' to `1` in the app services configuration settings. 
 
 ## FAQs
 
