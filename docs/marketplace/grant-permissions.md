@@ -26,9 +26,10 @@ Learn how to manage permissions for users or groups, so they can manage extensio
 ::: moniker range="< azure-devops"
 - You must be a member of the Project Collection Administrators group or have "Edit collection-level information" permissions to manage permissions for users or groups. Organization owners are automatically members of the Project Collection Administrators group.
 ::: moniker-end
-::: moniker range="azure-devops"
 
 ## Manage permissions
+
+::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.

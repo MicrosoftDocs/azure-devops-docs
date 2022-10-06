@@ -192,8 +192,9 @@ version: 5.0.1.34507
    Tell your team about this extension, so they can start using its capabilities too. 
    :::image type="content" source="media/get-tfs-extensions/connected/assign-extension-to-users.png" alt-text="Screenshot showing installed extension confirmation.":::
 
+::: moniker-end
 
-
+::: moniker range=" tfs-2018"
 ### Install extensions when disconnected
 
 When you're disconnected from Azure DevOps Server, you can install free and preview extensions. First, you [download the extension](#download-from-the-marketplace), then [upload it to Azure DevOps Server](#upload-extension-to-azure-devops), and then [install it in a project collection](#install-extension-in-your-project-collection).
