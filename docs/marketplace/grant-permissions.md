@@ -13,14 +13,14 @@ monikerRange: '<= azure-devops'
 
 # Manage extension permissions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to manage permissions for users or groups, so they can manage extensions.
 
 ## Prerequisites
 ::: moniker range="azure-devops"
 - You must be a member of the Project Collection Administrators group to manage permissions for users or groups. Organization owners are automatically members of this group.
-- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../../extend/publish/overview.md#upload) for information on how to share private extensions.
+- Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -31,21 +31,21 @@ Learn how to manage permissions for users or groups, so they can manage extensio
 ## Manage permissions
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
 
 3. Select **Extensions**.
 
-    ![Extension settings hub](../media/manage-permissions/extensions-settings.png)
+    ![Extension settings hub](media/manage-permissions/extensions-settings.png)
 
 4. Select **Security**.
 
-    ![Extension security page](../media/manage-permissions/extensions-security-button.png)
+    ![Extension security page](media/manage-permissions/extensions-security-button.png)
 
 5. Add users or update permission settings.
 
-    ![Extension security permission setting](../media/manage-permissions/extensions-security.png)
+    ![Extension security permission setting](media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
 
@@ -53,17 +53,17 @@ Learn how to manage permissions for users or groups, so they can manage extensio
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../media/icons/gear-icon.png) **Admin settings**.
 
-    ![Open Admin settings](../../media/settings/open-admin-settings-server.png)
+    ![Open Admin settings](../media/settings/open-admin-settings-server.png)
 
 3. Select **Extensions**, and then select **Security**.
 
-    ![Select Extensions, and then select Security.](../media/select-extensions-and-security.png)
+    ![Select Extensions, and then select Security.](media/select-extensions-and-security.png)
 
 4. Add users or update permission settings.
 
-    ![Extension security](../media/manage-permissions/extensions-security.png)
+    ![Extension security](media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ When you update or delete an extension, it affects all the project collections t
 
 ## Related articles
 
-- [Install extensions](../install-extension.md)
-- [Request extensions](../request-extensions.md)
-- [Uninstall or disable extensions](../uninstall-disable-extensions.md)
-- [About permissions](../../organizations/security/about-permissions.md)
+- [Install extensions](install-extension.md)
+- [Request extensions](request-extensions.md)
+- [Uninstall or disable extensions](uninstall-disable-extensions.md)
+- [About permissions](../organizations/security/about-permissions.md)

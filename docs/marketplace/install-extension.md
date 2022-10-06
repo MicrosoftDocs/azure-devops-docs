@@ -140,12 +140,12 @@ scopes: null
 serviceInstanceType: null
 version: 5.0.1.34507
 ```
-::: moniker-end
-[!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
+::: moniker-end
 
 ::: moniker range="> tfs-2018 < azure-devops"
+
 1. Open your Azure DevOps Server home page (`https://{server}:DefaultCollection`).
 
 2. Open the extensions menu and choose **Browse Marketplace**.
@@ -173,6 +173,8 @@ version: 5.0.1.34507
 
    ![Installation done](media/get-devops-extensions/install-devops-extension-07.png)
 
+::: moniker-end
+
 ::: moniker range=" tfs-2018"
 
 1. From your Azure DevOps Server home page (```https://{server}:8080/tfs/```), 
@@ -189,6 +191,8 @@ version: 5.0.1.34507
    Otherwise, you can go to your project collection to use your extension. 
    Tell your team about this extension, so they can start using its capabilities too. 
    :::image type="content" source="media/get-tfs-extensions/connected/assign-extension-to-users.png" alt-text="Screenshot showing installed extension confirmation.":::
+
+
 
 ### Install extensions when disconnected
 
