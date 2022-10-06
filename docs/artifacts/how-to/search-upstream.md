@@ -25,7 +25,7 @@ Using upstream sources enable developers to consume packages from different feed
 
 1. Select **Save** when you're done.
 
-:::image type="content" source="../media/enable-upstream.png" alt-text="A screenshot showing how to add the NuGet upstream.":::
+    :::image type="content" source="../media/enable-upstream.png" alt-text="A screenshot showing how to add the NuGet upstream.":::
 
 ## Search upstream sources
 
@@ -54,15 +54,15 @@ Using upstream sources enable developers to consume packages from different feed
 
 1. To save a package, select the ellipsis button and then select  **Save to feed**.
 
-    ::image type="content" source="../media/save-from-upstream.png" alt-text="A screenshot showing how to save a package from upstream source.":::
+    :::image type="content" source="../media/save-from-upstream.png" alt-text="A screenshot showing how to save a package from upstream source.":::
 
 1. Select **Save** to save the package to your feed.
 
-    ::image type="content" source="../media/save-confirmation.png" alt-text="A screenshot showing the save confirmation message.":::
+    :::image type="content" source="../media/save-confirmation.png" alt-text="A screenshot showing the save confirmation message.":::
 
 1. The saved versions will have the `In this feed` tag.
 
-    ::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the downloaded versions.":::
+    :::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the downloaded versions.":::
 
 ## Related articles
 
