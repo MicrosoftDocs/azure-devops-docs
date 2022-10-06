@@ -3,7 +3,7 @@ title: Choose a process for your Azure DevOps project
 titleSuffix: Azure Boards
 description: Learn how to choose a process or process template based on the process model you use in Azure Boards and Azure DevOps. 
 ms.custom: work-items 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: overview
 ms.author: kaelli

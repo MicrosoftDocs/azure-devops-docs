@@ -2,7 +2,6 @@
 title: Opt-in to receive notifications related to personal access tokens found in a GitHub public repository.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 6/27/2022
 description: Opt-in to receive notifications related to personal access tokens found in a GitHub public repository.  
 ---

@@ -2,7 +2,7 @@
 title: Monitor usage of Azure DevOps Services
 titleSuffix: Azure DevOps Services
 description: How to investigate delayed or unfulfilled user requests in Azure DevOps Services.
-ms.technology: devops-accounts 
+ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

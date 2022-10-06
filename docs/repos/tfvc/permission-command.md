@@ -3,10 +3,11 @@ title: Permission Command
 titleSuffix: Azure Repos
 description: Permission Command
 ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Permission command  (Team Foundation Version Control)

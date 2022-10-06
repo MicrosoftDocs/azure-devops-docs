@@ -3,7 +3,7 @@ title: Default permissions and access for Azure Boards
 titleSuffix: Azure Boards & TFS 
 description: Learn about default permissions and access levels in Azure Boards. The permissions and access levels help you support work-tracking tasks in Azure DevOps Services.
 ms.custom: boards-get-started
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

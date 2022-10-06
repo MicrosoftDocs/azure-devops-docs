@@ -2,7 +2,7 @@
 title: Add or remove users or groups
 titleSuffix: Azure DevOps
 description: How-to guide to add or remove users or groups to security groups and manage security groups in Azure DevOps.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE

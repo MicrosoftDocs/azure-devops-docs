@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley

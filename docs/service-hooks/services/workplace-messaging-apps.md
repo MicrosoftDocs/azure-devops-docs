@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Workplace Messaging Apps with Azure DevOps 
 description: Integrate workplace messaging apps like Microsoft Teams and Slack with your Azure DevOps organization

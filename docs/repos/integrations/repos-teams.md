@@ -2,7 +2,8 @@
 title: Azure Repos with Microsoft Teams
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Microsoft Teams
-ms.technology: devops-code-git
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
 ms.topic: how-to 
 ms.custom: cross-service
 ms.author: kaelli

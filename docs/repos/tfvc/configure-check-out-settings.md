@@ -3,10 +3,11 @@ title: Configure Check-Out Settings
 titleSuffix: Azure Repos
 description: Learn how to configure check-out settings for a TFVC repository.
 ms.assetid: 9f4eb366-7e99-49f9-899d-cf3209c0ff72
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

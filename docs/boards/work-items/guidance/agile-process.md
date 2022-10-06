@@ -3,7 +3,7 @@ title: Use agile process template artifacts
 titleSuffix: Azure Boards  
 description: Learn how you can use agile process artifacts to plan and track work, monitor progress, and trends when connecting to Azure Boards and Azure DevOps.
 ms.custom: work-items
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
 ms.author: kaelli

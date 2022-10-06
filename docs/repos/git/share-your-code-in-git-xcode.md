@@ -3,10 +3,11 @@ title: Share your Xcode project with Git
 titleSuffix: Azure Repos
 description: "Share code in Git using Xcode"
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.date: 09/10/2018
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 

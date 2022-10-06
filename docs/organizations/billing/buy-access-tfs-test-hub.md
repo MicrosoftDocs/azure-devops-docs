@@ -3,7 +3,7 @@ title: Buy access to Azure Test Plans
 titleSuffix: Azure DevOps Server
 ms.custom: seodec18, freshness-fy22q1
 description: Steps for how to buy monthly access to Azure Test Plans. 
-ms.technology: devops-billing
+ms.subservice: azure-devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.topic: conceptual
 ms.author: chcomley

@@ -3,7 +3,7 @@ title: Get support and provide feedback
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps.
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.author: chcomley
 author: chcomley

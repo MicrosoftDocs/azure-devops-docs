@@ -3,7 +3,7 @@ title: Learn default and system work item field descriptions
 titleSuffix: Azure Boards
 description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: conceptual  
 ms.author: kaelli

@@ -3,8 +3,7 @@ title: Use the Epic Roadmap to provide a calendar view
 titleSuffix: Azure DevOps
 description: Learn how to view progress by using the Epic Roadmap to provide a calendar view of a single epic and its child features.
 ms.custom: extensions
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.manager: mijacobs
 ms.author: kaelli

@@ -2,7 +2,7 @@
 title: Cumulative Flow Diagram (CFD) sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a Cumulative Flow Diagram (CFD) Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE

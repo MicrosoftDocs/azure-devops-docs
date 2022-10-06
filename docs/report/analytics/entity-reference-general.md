@@ -2,7 +2,7 @@
 title: Calendar date, Project, and User metadata reference for Analytics
 titleSuffix: Azure DevOps
 description: CalendarDate, Project, and User properties and enumerated members metadata for the Analytics service  
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

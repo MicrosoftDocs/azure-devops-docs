@@ -3,7 +3,7 @@ title: Analytics best practices
 titleSuffix: Azure DevOps  
 description: Learn about the best practices to use when querying Analytics for Azure DevOps.
 ms.custom: analytics 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

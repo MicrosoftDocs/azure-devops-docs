@@ -3,10 +3,11 @@ title: Sync your changes to a remote Git repo
 titleSuffix: Azure Repos
 description: Learn how to share your commits on a branch of your local Git repo by uploading them to a remote Git repo.
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 03/21/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Share code with push

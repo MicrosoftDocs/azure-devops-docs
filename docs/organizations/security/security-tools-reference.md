@@ -2,7 +2,7 @@
 title: Security and permission management tools 
 titleSuffix: Azure DevOps 
 description: Learn about the available tools to manage security and permissions for Azure DevOps 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

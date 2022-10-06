@@ -2,7 +2,7 @@
 title: Add or remove GitHub repositories 
 titleSuffix: Azure Boards
 description: Learn how to or remove GitHub repositories or remove GitHub connection in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE

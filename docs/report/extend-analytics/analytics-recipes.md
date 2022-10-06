@@ -2,7 +2,7 @@
 title: Query work tracking data using Analytics 
 titleSuffix: Azure DevOps  
 description: Learn how to create queries of work item tracking from Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.author: kaelli
 author: KathrynEE

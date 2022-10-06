@@ -3,10 +3,11 @@ title: Git preferences and settings
 titleSuffix: Azure Repos
 description: Learn how to view and configure many Git-related settings and preferences, and how to work with Git configuration files in Visual Studio.
 ms.assetid:
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 07/15/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Git preferences and settings in Visual Studio

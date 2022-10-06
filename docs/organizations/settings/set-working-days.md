@@ -2,7 +2,7 @@
 title: Set working days off
 titleSuffix: Azure DevOps
 description: Learn how to choose your team's working days for capacity planning purposes in Azure Boards.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.author: kaelli
 author: KathrynEE

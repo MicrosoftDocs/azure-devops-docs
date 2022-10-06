@@ -1,7 +1,7 @@
 ---
 title: Use npm audit with Azure Artifacts
 description: Use npm audit to scan for security vulnerabilities
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 08/29/2022
 monikerRange: 'azure-devops'

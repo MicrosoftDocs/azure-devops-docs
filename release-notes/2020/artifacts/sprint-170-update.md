@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Artifacts Sprint 170 Update
 description: See the Sprint 170 feature updates for Azure Artifacts, including next steps.
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 05/28/2020
 ---
 

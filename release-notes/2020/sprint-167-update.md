@@ -2,7 +2,6 @@
 title: Azure DevOps Release Notes - Increase productivity & reduce latency
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 4/13/2020
 description: In **Sprint 167**, we are including enhancements to pull request actionability, pipeline security and compliance, and npm API performance.
 ---
