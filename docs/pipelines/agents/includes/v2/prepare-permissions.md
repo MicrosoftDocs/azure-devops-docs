@@ -43,7 +43,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker range=" >= azure-devops-2019 < azure-devops"
 
-1. Sign in with the user account you plan to use in you Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
+1. Sign in with the user account you plan to use in your Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
 
 ::: moniker-end
 
@@ -109,7 +109,7 @@ Otherwise:
 
 1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
-   If it's a [deployment group](../../../release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
+   If it's a [deployment group](../../../release/deployment-groups/index.md) agent, the administrator can be a deployment group administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
    You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page in **Azure Pipelines**.
 
