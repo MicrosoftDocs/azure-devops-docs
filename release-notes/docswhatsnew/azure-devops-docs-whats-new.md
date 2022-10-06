@@ -34,6 +34,19 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2022 through Se
 - [Quickstart: Build a container image to deploy apps using Azure Pipelines](/azure/devops/pipelines/ecosystems/containers/build-image)
 - [Deploy to a Linux Virtual Machine](/azure/devops/pipelines/ecosystems/deploy-linux-vm)
 
+## Report
+
+### New articles
+
+- [Metadata reference for Azure Boards Analytics](/azure/devops/report/analytics/entity-reference-boards)
+- [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](/azure/devops/report/analytics/entity-reference-general)
+- [Metadata reference for Azure Pipelines Analytics](/azure/devops/report/analytics/entity-reference-pipelines)
+- [Test metadata reference for Azure DevOps](/azure/devops/report/analytics/entity-reference-test-plans)
+
+### Updated articles
+
+- [Data model for Analytics](/azure/devops/report/extend-analytics/data-model-analytics-service)
+
 ## User guide
 
 ### New articles
