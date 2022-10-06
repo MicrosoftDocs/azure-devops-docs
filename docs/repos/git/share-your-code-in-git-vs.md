@@ -54,7 +54,7 @@ The first step to sharing your Visual Studio solution with others using Git is t
 
 2. This step only applies to the Visual Studio Git version control experience: in the **Create a Git repository** window, choose **Local only**, verify the local path is correct, and then choose **Create**.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-window-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/git-experience/create-git-repository-window-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-window-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-window-expanded.png":::
 
    **Team Explorer** doesn't launch the **Create a Git repository** window, and assumes you want a local Git repo.
 
@@ -110,7 +110,7 @@ You can share your work with others by publishing your local Git repo to an **Az
 
 1. Connect to an Azure DevOps repo by right-clicking the solution name in **Solution Explorer**, and then selecting **Push to Git service** to launch the **Create a Git repository** window.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/git-experience/push-to-git-service-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-expanded.png":::
 
    Or, choose **Git > Push to Git service** from the menu bar to launch the **Create a Git repository** window.
 
@@ -218,7 +218,7 @@ It's good practice to review the code changes in your commit before publishing. 
 
 1. In the **Commit** window, you can right-click on any file and select **Compare with Previous** to view the file changes made by the commit.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/git-details-window-inline.png" border="true" alt-text="Screenshot of the 'Compare with Previous' option in the Commit pane in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/git-experience/git-details-window-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/git-details-window-inline.png" border="true" alt-text="Screenshot of the 'Compare with Previous' option in the Commit pane in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/git-details-window-expanded.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
