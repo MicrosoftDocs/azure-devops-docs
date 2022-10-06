@@ -2,12 +2,13 @@
 title: Uninstall disable extensions in Azure DevOps
 titleSuffix: Azure DevOps
 description: Uninstall, disable, or remove extensions for Azure DevOps
-ms.topic: conceptual
+ms.topic: how-to
+ms.custom: engagement-fy23
 ms.subservice: azure-devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.author: chcomley
 author: chcomley
-ms.date: 04/04/2022
+ms.date: 10/06/2022
 monikerRange: '<= azure-devops'
 ---
  
@@ -22,15 +23,12 @@ Learn how to uninstall or disable an extension that you don't need.
 
 ## Prerequisites
 
-- To uninstall or disable extensions, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. To learn more see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). 
-
-
+- To uninstall or disable extensions, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. For more information, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). 
 
 ## Uninstall or disable extensions  
 
-#### [Browser](#tab/browser)
-
 ::: moniker range="azure-devops"
+#### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
@@ -45,37 +43,7 @@ Learn how to uninstall or disable an extension that you don't need.
 
    ![Disable or uninstall extension](media/disable-or-uninstall-extension.png)
 
-::: moniker-end
-
-
-::: moniker range="< azure-devops"
-
-To uninstall extensions from the local gallery in Azure DevOps on-premises server, perform the following steps. 
-
-1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
-
-2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
-
-   ![Remove extension](media/remove-extension-TFS.png)
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-To uninstall extensions in a collection, perform the following steps. 
-
-1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
-
-2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
-
-   ![Remove extension](media/remove-extension-TFS.png)
-
-::: moniker-end
-
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
-
-::: moniker range="azure-devops"
 
 [Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
 
@@ -141,10 +109,32 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 [!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
- 
+
+::: moniker range="< azure-devops"
+
+To uninstall extensions from the local gallery in Azure DevOps on-premises server, perform the following steps. 
+
+1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
+
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
+
+   ![Remove extension](media/remove-extension-TFS.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+To uninstall extensions in a collection, perform the following steps. 
+
+1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
+
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
+
+   ![Remove extension](media/remove-extension-TFS.png)
+
+::: moniker-end 
 
 ::: moniker range="azure-devops"
-
 ## Enable or list extensions through the command line
 
 You can enable an extension with the [az devops extension enable](/cli/azure/devops/extension#az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
@@ -252,4 +242,4 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 - [Install extensions](install-extension.md)
 - [Request extensions](request-extensions.md)
-- [Manage extension permissions](how-to/grant-permissions.md)
+- [Manage extension permissions](grant-permissions.md)

@@ -358,7 +358,7 @@ A new window opens that shows the inheritance information for that permission.
 With Role-based permissions, you assign user accounts or security groups to a role, with each role assigned one or more permissions. Here are the primary roles and links to learn more.   
 
 - [Artifact or package feed security roles](../../artifacts/feeds/feed-permissions.md): Roles support various permission levels to edit and manage package feeds.   
-- [Marketplace extension Manager role](../../marketplace/how-to/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
+- [Marketplace extension Manager role](../../marketplace/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
 - [Pipeline security roles](about-security-roles.md): Several roles are used to manage library resources, project-level and collection-level pipeline resources. 
 - [Team administrator role](../settings/manage-teams.md)  Team administrators are able to manage all team tools.   
 

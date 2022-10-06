@@ -745,7 +745,7 @@ The following table describes the security namespaces and permissions used to ma
       `ManageSecurity`    
    :::column-end:::
    :::column span="2":::
-      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/how-to/grant-permissions.md).    
+      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/grant-permissions.md).    
       <br/>
       **ID:** `5d6d7b80-3c63-4ab0-b699-b6a5910f8029`  
    :::column-end:::

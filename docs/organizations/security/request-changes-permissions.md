@@ -38,7 +38,7 @@ The following tasks require membership in the **Project Collection Administrator
 - **Collection-level configurations**
 	- Create projects: Requires elevated permissions at the [collection level](change-organization-collection-level-permissions.md).  
 	- Add, edit, or manage a process: Requires elevated permissions at the collection level or [process-level permissions](set-permissions-access-work-tracking.md#process-permissions).
-	- Install, uninstall, or disable extensions: Requires addition to the [Manager role](../../marketplace/how-to/grant-permissions.md) for extensions. 
+	- Install, uninstall, or disable extensions: Requires addition to the [Manager role](../../marketplace/grant-permissions.md) for extensions. 
  
 For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md). 
 
