@@ -25,7 +25,7 @@ You can select the exact versions of operating systems, tools, and dependencies 
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
-You cannot have nested containers. Containers are not supported when an agent is already running inside a container. 
+You can't have nested containers. Containers aren't supported when an agent is already running inside a container. 
 
 ::: moniker range="> azure-devops-2019"
 If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) allow you to choose container or host for each step.
@@ -39,17 +39,17 @@ The Azure Pipelines system requires a few things in Linux-based containers:
 - Bash
 - glibc-based
 - Can run Node.js (which the agent provides)
-- Does not define an `ENTRYPOINT`
+- Doesn't define an `ENTRYPOINT`
 - `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
 - Ensure Docker is installed
 - The agent must have permission to access the Docker daemon
 
-Be sure your container has each of these tools available. Some of the extremely stripped-down
+Be sure your container has each of these tools available. Some of the stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
 minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure Pipelines
-will `docker create` an awaiting container and `docker exec` a series of commands which expect
+will `docker create` an awaiting container and `docker exec` a series of commands, which expect
 the container is always up and running.
 
 
@@ -69,7 +69,7 @@ A base Windows Nano Server container is missing dependencies required to run Nod
 ### Hosted agents
 
 Only `windows-2019` and `ubuntu-*` images support running containers.
-The macOS image does not support running containers.
+The macOS image doesn't support running containers.
 
 ## Single job
 
@@ -159,7 +159,7 @@ steps:
 ```
 
 Other container registries may also work.
-Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
+Amazon ECR doesn't currently work, as there are other client tools required to convert AWS credentials into something Docker can use to authenticate.
 
 
 > [!NOTE]
@@ -232,7 +232,7 @@ Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines 
 bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
-You are responsible for adding a Node binary to your container.
+You're responsible for adding a Node binary to your container.
 Node 14 is a safe choice.
 You can start from the `node:14-alpine` image.
 
