@@ -4,7 +4,8 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
 ms.topic: article
-ms.technology: devops-release-notes
+ms.service: azure-devops
+ms.subservice: azure-devops-release-notes
 description: Azure DevOps feature roadmap
 hide_comments: true
 ---
@@ -126,7 +127,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2022/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
    :::column-end:::
    :::column span="":::
       Platform
