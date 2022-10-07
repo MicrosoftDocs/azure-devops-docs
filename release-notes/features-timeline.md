@@ -127,13 +127,13 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="2":::
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2022/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Associate all public APIs with PAT scopes](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
    :::column-end:::
    :::column span="":::
       Platform
    :::column-end:::
    :::column span="":::
-      CY2022 Q4
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q4
    :::column-end:::
    :::column span="":::
       Azure DevOps Server 2022 Update 1
@@ -146,7 +146,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Managed Identity and Service Principal support**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals) 
+      [**Managed Identity and Service Principal support**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities?branch=users%2Fglmorale%2Fnewroadmap) 
    :::column-end:::
    :::column span="":::
       Platform
@@ -166,7 +166,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#credential-free-pipelines)  
+      [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines?branch=users%2Fglmorale%2Fnewroadmap)  
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -186,7 +186,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Full support for Conditional Access Policies**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)   
+      [**Full support for Conditional Access Policies**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy?branch=users%2Fglmorale%2Fnewroadmap)   
    :::column-end:::
    :::column span="":::
       Platform

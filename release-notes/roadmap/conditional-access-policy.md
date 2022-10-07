@@ -12,4 +12,4 @@ hide_comments: true
 
 # Conditional Access Policy support for device state
 
-Azure DevOps to honor any conditional access policies that include [devihttps://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-conditions#device-state-previewce state]conditions.
+Azure DevOps to honor any conditional access policies that include [device state](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-conditions#device-state-preview) conditions.
