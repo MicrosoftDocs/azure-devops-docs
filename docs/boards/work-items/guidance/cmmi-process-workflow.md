@@ -29,7 +29,7 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 To support other CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you're new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
 
   
-[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)] 
+ 
 
 ## Define requirements 
 

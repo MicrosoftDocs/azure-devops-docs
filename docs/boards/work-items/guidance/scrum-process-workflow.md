@@ -26,7 +26,7 @@ To plan a software project and track software defects using Scrum, teams use the
 Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues. 
 
 
-[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)]   
+ 
 
 ## Define PBIs and bugs  
 
@@ -219,9 +219,9 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 ### Track impediments
 
-Use the impediment WIT to track events that may block progress or ship a PBI. Use the Bug WIT exclusively to track code defects.  
+Use the Impediment work item type to track events that may block progress or ship a PBI. Use the Bug work item type exclusively to track code defects.  
 
-You can add an impediment from the [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards/dashboards.md), or from the **New** menu on the Queries page. 
+You can add an impediment from the [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards/dashboards.md), or from the **New** menu on the **Queries** page. 
 
 ![Add work item from a New work item widget](media/scrum-new-work-item-widget.png)  
 
@@ -232,189 +232,4 @@ Work items you add from the widget are automatically scoped to your team's defau
 
 The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
-
-
-
-
-### Links control, client work item form 
-
-Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
-
-:::row:::
-   :::column span="1":::
-   **Tab name**
-   :::column-end:::
-   :::column span="3":::
-   **Work item type**
-   :::column-end:::
-   :::column span="3":::
-   **Link restrictions**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-   **All Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Feedback Request
-
-   Feedback Response
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - No restrictions.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Product Backlog Item
-
-   Bug
-
-   Impediment
-
-   Shared steps
-
-   Task
-
-   Test Case
-
-   
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - No restrictions.
-
-   
-   
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Code Review Request
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links to Code Review Response work items.
-
-   - Excludes links to work items in other projects.
-
-   
-   
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Stories**
-
-   :::column-end:::
-   :::column span="3":::
-   Feedback Response
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Related** links.
-
-   - Allows links to Bug and Product Backlog Items.
-
-   - Excludes links to work items in other projects.
-
-   
-   
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Storyboards**
-
-   :::column-end:::
-   :::column span="3":::
-   Product Backlog Item
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Storyboard** links.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Tasks**
-
-   :::column-end:::
-   :::column span="3":::
-   Product Backlog Item
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Child** links to Tasks.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Test Cases**
-
-   :::column-end:::
-   :::column span="3":::
-   Product Backlog Item
-
-   Bug
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tested By** links.
-
-   - Allows links only to test cases.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Tested Backlog Items**
-
-   :::column-end:::
-   :::column span="3":::
-   Test case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tests** links.
-
-   - Allows links to Bug and Product Backlog Items.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
+  
