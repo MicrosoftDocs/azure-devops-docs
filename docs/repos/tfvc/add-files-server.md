@@ -47,7 +47,7 @@ You can create a new Visual Studio project and add it to version control so that
 1. On the **Additional information** screen, change any settings as needed, and then select **Create**.
 1. Once the project is created, view it in **Solution Explorer**, which you can open by pressing Ctrl+Alt+L.
 
-   ![Screenshot of a new code project in Solution Explorer](media/add-files-server/IC612253.png)
+   ![Screenshot of a new code project in Solution Explorer](media/add-files-server/solution-explorer.png)
 
 1. Right-click the solution in **Solution Explorer**, and select **Add Solution to Source Control**.
 1. In the **Team Explorer** window, select **Check in** to [submit your pending changes](check-your-work-team-codebase.md).
@@ -172,14 +172,14 @@ ProjA\*.cpp
 
 ### Create and use a .tfignore file
 
-You can manually create a *.tfignore* text file that uses the preceding rules, or you can automatically generate a *.tfignore* file when the **Pending Changes** page detects a change.
+You can manually create a *.tfignore* text file that uses the preceding rules, or you can automatically generate a *.tfignore* file when the **Pending Changes** page detects an excluded change.
 
 1. In **Team Explorer**, on the **Pending Changes** page, select the **Detected** link in the **Excluded Changes** section.
-1. In the **Promote Candidate Changes** dialog box, right-click a file and select **Ignore this local item**, **Ignore by extension**, **Ignore by file name**, or **Ignore by folder** from the context menu.
-1. Select **OK**.
+1. In the **Promote Candidate Changes** dialog box, to ignore a file, right-click the file and select **Ignore this local item**, **Ignore by extension**, **Ignore by file name**, or **Ignore by folder** from the context menu.
+1. Select **Cancel** to close the dialog box.
 1. A *.tfignore* file appears in the **Included Changes** section of the **Pending Changes** page. You can open this file and modify it to meet your needs.
 
-The *.tfignore* file is automatically added as an included pending change, so the rules you've created will apply to anyone who gets the file.
+The *.tfignore* file is automatically added as an included pending change, so the rules you create automatically apply to anyone who gets the file.
 
 ## Related articles
 

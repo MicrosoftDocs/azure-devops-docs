@@ -33,14 +33,14 @@ tf add itemspec [/lock:(none|checkin|checkout)] [/encoding:filetype]
 
 ## Parameters
 
-|           **Parameter**            | **Description**|
-|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     **/encoding**: *filetype*      |Ignore this parameter.|
-|             *itemspec*             |Specifies the scope of the items to add. You can specify more than one *itemspec* argument. |
-|             **/lock**              |   Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). | |
-|           **/noignore**            | By default, version control ignores certain types of files, such as *.dll* files. You can configure which kinds of files are ignored by using a *.tfignore* file. See [Add files: .tfignore file](add-files-server.md#tfignore). The rules in a *.tfignore* file apply to the `add` command when you specify a wildcard in your *itemspec*.<br><br>To override these rules, specify **/noignore**.|
-|           **/noprompt**            |     Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).  |
-|           **/recursive**           |  Recursively adds items in the specified directory and any subdirectories.|
+|Parameter|Description|
+|------------------------------------|----------------|
+|     `/encoding: <filetype>`      |Ignore this parameter.|
+|             `itemspec`             |Specifies the scope of the items to add. You can specify more than one *itemspec* argument. |
+|             `/lock`              |   Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
+|           `/noignore`            | By default, version control ignores certain types of files, such as *.dll* files. You can configure which kinds of files are ignored by using a *.tfignore* file. See [Add files: .tfignore file](add-files-server.md#tfignore). The rules in a *.tfignore* file apply to the `add` command when you specify a wildcard in your `itemspec`.<br><br>To override these rules, specify **/noignore**.|
+|           `/noprompt`            | Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).|
+|           **/recursive**           |Recursively adds items in the specified directory and any subdirectories.|
 
 ## Examples
 
