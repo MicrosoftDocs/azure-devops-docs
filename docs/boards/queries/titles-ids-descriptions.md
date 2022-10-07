@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 10/06/2022
 ---
 
 # Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
@@ -40,16 +40,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **Multi-line text strings (PlainText)**
    :::column-end::: 
    :::column span="3":::
-      Contains Words, Does Not Contain Words, Is Empty (Note 1), Is Not Empty(Note 1)
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Multi-line text strings (PlainText)**
-   :::column-end::: 
-   :::column span="3":::
-      **Supported operators and macros**
+      `Contains Words`, `Does Not Contain Words`, `Is Empty`<sup>1</sup>, `Is Not Empty`<sup>1</sup>
    :::column-end:::
 :::row-end:::
 ---
@@ -58,20 +49,19 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **Single text (String)**
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
-      **Macros**: **[Any]**, valid with the **Work Item Type** field  
-      **@Project** (Note 2), valid with the **Team Project** field 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+      **Macros**: `[Any]`, valid with the **Work Item Type** field and `@Project`<sup>2</sup>, valid with the **Team Project** field. 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      **GUID**
+      **ID**
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , In, Not In  
-      **Macros**: **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** valid with the **ID** field and **In** and **Not In** operators 
-      **@Project** (Note 2), valid with the **Team Project** field 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
+      **Macros**: `@Follows`, `@MyRecentActivity`, `@RecentMentions`, `@RecentProjectActivity` valid with the **ID** field and `In` and `Not In` operators 
+     `@Project`<sup>2</sup>, valid with the **Team Project** field. 
    :::column-end:::
 :::row-end:::
 ---
@@ -80,16 +70,16 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **State** and **Work Item Type** fields
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever   
-      **Macros**: **[Any]** valid with both fields 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`   
+      **Macros**: `[Any]` valid with both fields. 
    :::column-end:::
 :::row-end:::
 ---
  
 
 > [!NOTE]  
-> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 2. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
 ## Use `Contains words` for string matches
@@ -321,10 +311,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Team Project
    :::column-end:::
    :::column span="2":::
-   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. 
-
-   > [!NOTE]
-   > &#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). 
+   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. To learn more, see [Example queries, query across projects](using-queries.md#across-projects).   
 
    Reference name=System.TeamProject, Data type=String
    :::column-end:::

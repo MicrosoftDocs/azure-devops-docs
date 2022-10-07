@@ -32,26 +32,26 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 > [!div class="mx-tdCol2BreakAll"]  
 > |Operator     | Use when you want to...| 
 > |-------------|--------------|
-> | **=**           | Specify one specific area or iteration path  |
-> | **<>**          | Filter out one, specific area or iteration path. |
-> | **In**          | Filter for a set of area or iteration paths.  |
-> | **Not In**      | Exclude items that are assigned to a set of area or iteration paths. |
-> | **Under**       | Specify all paths under a select area or iteration path. |
-> | **Not Under**   | Exclude items assigned under a specific area or iteration path.  |
+> | `=`           | Specify one specific area or iteration path  |
+> | `<>`          | Filter out one, specific area or iteration path. |
+> | `In`          | Filter for a set of area or iteration paths.  |
+> | `Not In`      | Exclude items that are assigned to a set of area or iteration paths. |
+> | `Under`       | Specify all paths under a select area or iteration path. |
+> | `Not Under`   | Exclude items assigned under a specific area or iteration path.  |
 
 
 Along with these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
-> |                     Macro                     |                                          Use when you want to...                                           |
-> |-----------------------------------------------|------------------------------------------------------------------------------------------------------------|
-> |      <strong>@CurrentIteration</strong>       |                  Specify the current iteration associated with the selected team context.                  |
-> | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp; | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
-> |          <strong>@TeamAreas</strong>          |                      Filter items based on area path(s) assigned to a specific team.                       |
+> |            Macro      |               Use when you want to...                              |
+|-------------------------|---------------------------------------------------------------|
+> |  `@CurrentIteration`  |                  Specify the current iteration associated with the selected team context.                  |
+> | `@CurrentIteration +/- n` | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
+> | `@TeamAreas`       |        Filter items based on area path(s) assigned to a specific team.                       |
 
 > [!NOTE]
-> The **@CurrentIteration** macro is supported for TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 ## Area path queries 
 

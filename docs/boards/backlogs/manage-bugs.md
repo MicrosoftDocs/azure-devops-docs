@@ -49,7 +49,7 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-![Bug work item type, form for Scrum process, Azure DevOps Server 2019 and earlier versions to TFS 2017.](media/manage-bugs-scrum-bug-from-ts.png)
+![Screenshot of Bug work item type, form for Scrum process, Azure DevOps Server 2019 and TFS 2018.](media/manage-bugs-scrum-bug-from-ts.png)
 ::: moniker-end
 
 
@@ -212,11 +212,11 @@ If your team chose to *manage bugs with requirements*, you can define bugs from 
 
 - **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
-	> ![From product backlog, Add bug.](media/manage-bugs/add-bug-from-backlog.png)  
+	> ![Screenshot to add a bug from product backlog, Add bug.](media/manage-bugs/add-bug-from-backlog.png)  
 
 - **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
-	> ![From Kanban board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
+	> ![Screenshot to add a bug from  Kanban board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
 
 > [!TIP]    
 > When you add a bug from your product backlog or Kanban board, the bug is automatically assigned the default Area Path and Iteration Path defined for the team. To learn more, see [Team defaults referenced by backlogs and boards](../../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
@@ -229,12 +229,12 @@ If your team chose to *manage bugs with tasks*, you can define bugs from your Ka
 - **Add a linked child bug from the Kanban board**  
     You add a bug in the same way you add a task to a backlog item. To learn more, see [Add tasks or child items as checklists](../boards/add-task-checklists.md). 
 	> [!div class="mx-imgBorder"]  
-	> ![From Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
+	> ![Screenshot to add a bug from Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
 
 - **Add a linked child bug from the Sprint Backlog**  
 	You add a bug in the same way you add a task to a Sprint backlog. To learn more, see [Add tasks to backlog items](../sprints/add-tasks.md). 
 	> [!div class="mx-imgBorder"]  
-	> ![From Sprint backlog, Add child bug to backlog item.](media/manage-bugs/add-bug-sprint-backlog.png) 
+	> ![Screenshot to add a bug from Sprint backlog, Add child bug to backlog item.](media/manage-bugs/add-bug-sprint-backlog.png) 
 
 ### Create a bug from a testing tool 
 
@@ -242,10 +242,10 @@ The two testing tools you can use to add bugs while testing include the web port
 
 - **Test Runner**: When running manual tests, you can choose to **Create bug**. To learn more, see [Run manual tests](../../test/run-manual-tests.md).  
 	> [!div class="mx-imgBorder"]  
-	> ![Test Runner, Create bug feature.](media/manage-bugs/test-runner-create-bug.png)
+	> ![Screenshot to add a bug from Test Runner, Create bug feature.](media/manage-bugs/test-runner-create-bug.png)
 
 - **Test & Feedback extension**: When running exploratory tests, you can choose to **Create bug** or **Create task**. To learn more, see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) 
-	![Test & Feedback extension, Create bug or task feature.](../../test/media/connected-mode-exploratory-testing/create-bugs-02.png)  
+	![Screenshot to add a bug from Test & Feedback extension, Create bug or task feature.](../../test/media/connected-mode-exploratory-testing/create-bugs-02.png)  
 
 
 

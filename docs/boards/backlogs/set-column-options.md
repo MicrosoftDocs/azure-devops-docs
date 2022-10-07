@@ -14,7 +14,7 @@ ms.date: 04/01/2022
 # Manage columns in a work item list in Azure Boards 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 <a id="column-options">  </a>
 
