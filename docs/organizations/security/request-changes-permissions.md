@@ -69,7 +69,7 @@ To request a change or increase in your permission levels, take the following ac
 
 1. Identify a person in your organization who can grant you the permissions you need. For example: 
 	- To get permissions to manage team settings, [identify the team administrator for your team](../settings/add-team-administrator.md) or a [member of the Project Administrators group](look-up-project-administrators.md). 
-	- To change an object-level permissions, identify the owner of the object or a member of the **Project Administrators** group. To learn how, see [Set object-level permissions](set-object-level-permissions.md).
+	- To change an object-level permission, identify the owner of the object or a member of the **Project Administrators** group. To learn how, see [Set object-level permissions](set-object-level-permissions.md).
 	- To change a project-level permission, identify a member of the **Project Administrators** group. See [Look up a project administrator](look-up-project-administrators.md). 
 	- To change a project collection-level permission, identify a member of the **Project Collection Administrators** group. See [Look up a project collection administrator](look-up-project-collection-administrators.md).
 

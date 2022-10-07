@@ -34,7 +34,7 @@ When it comes to accessing an Azure DevOps feature, it's helpful to understand t
 ::: moniker range="azure-devops"
 - **[About preview features](#preview-features)**: 
 	- As new features are introduced, users can enable or disable them through **Preview features** to access them. 
-	- A small subset of new features are managed at the organization level and enabled or disabled by organization owners.  
+	- A small subset of new features is managed at the organization level and enabled or disabled by organization owners.  
 ::: moniker-end
 
  
