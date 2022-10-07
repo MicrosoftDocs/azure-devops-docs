@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Use this task in a pipeline to publish your artifacts(note that publishing is NOT supported in release pipelines. It's supported in multi-stage pipelines, build pipelines, and yaml pipelines).
+Use this task in a pipeline to publish your artifacts (note that publishing is **NOT** supported in release pipelines. It's supported in multi-stage pipelines, build pipelines, and yaml pipelines).
 
 > [!TIP]
 > Looking to get started with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
