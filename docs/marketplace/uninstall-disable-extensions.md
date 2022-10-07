@@ -45,9 +45,7 @@ Learn how to uninstall or disable an extension that you don't need.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-[Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
-
-<a id="uninstall-extension" />
+[Uninstall extension](#uninstall-an-extension) | [Disable extension](#disable-extension)
 
 ### Uninstall an extension
 

@@ -788,7 +788,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage service connections. Role memberships for individual items are automatically inherited from those defined at the project-level.  By default, the following roles are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to to members of the Endpoint Creators service security group.  
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
       Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).<br/><br/>
       **ID:** `49b48001-ca20-4adc-8111-5b60c903a50c`
