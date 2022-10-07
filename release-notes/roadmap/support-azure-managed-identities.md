@@ -17,7 +17,7 @@ Allow apps hosted on Azure to use managed identities and service principals to i
 **Important Milestones (last updated 08/29/22):**
 
 * **September 2022:** Internal testing for select Microsoft customers with approved use cases.
-* **FY22Q4:** Private Preview for Microsoft-only parties. Email [@Angel Wong](wonga@microsoft.com) with the survey questions below completed.
+* **FY22Q4:** Private Preview for Microsoft-only parties. Email [Angel Wong](mailto:wonga@microsoft.com) with the survey questions below completed.
 * **FY23Q1 (TBC):** Public Preview to all internal and external customers
 * **TBD:** Managed Identities and Service Principal support GA
 
@@ -25,7 +25,7 @@ For any other questions do not hesitate to reach out to me over email.
 
 --
 
-If you'd like to be considered as part of the private preview, please share your answer to these questions to wonga@microsoft.com.
+If you'd like to be considered as part of the private preview, please share your answer to these questions to [Angel Wong](mailto:wonga@microsoft.com).
 
 1. What company/organization are you a part of?
 2. Could you please provide a brief description of the tools/services you use today that need to authenticate against ADO? What authentication mechanism(s) are you using today? 
