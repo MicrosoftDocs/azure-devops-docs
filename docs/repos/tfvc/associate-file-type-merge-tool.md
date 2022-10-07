@@ -31,15 +31,15 @@ To associate a file type with a merge tool, you can start from the developer com
 ### Developer command prompt
 
 1. In Windows, select **Start** and then type *Developer Command Prompt*. From the search results, select the developer command prompt for your Visual Studio version, such as **Developer Command Prompt for Visual Studio 2022**.
-1. In the command prompt window, enter *tf diff /configure*.
-1. Follow the instructions in [Configure the tool](#configure-the-tool).
+1. In the command prompt window, enter `tf diff /configure`.
+1. Follow the instructions to [configure the tool](#configure-the-tool).
 
 ### Visual Studio
 
 1. In Visual Studio, select **Tools** > **Options**.
 1. In the **Options** dialog box, expand **Source Control**, and then select **Visual Studio Team Foundation Server**.
 1. Select **Configure User Tools**.
-1. Follow the instructions in [Configure the tool](#configure-the-tool).
+1. Follow the instructions to [configure the tool](#configure-the-tool).
 
 ### Configure the tool
 
@@ -49,7 +49,7 @@ To associate a file type with a merge tool, you can start from the developer com
 1. In the **Command** text box, either enter the path and name of your merge tool, or choose the ellipsis to browse to and select the tool.
 1. In the **Arguments** text box, enter any arguments that your tool requires.
 
-   Choose the arrow next to the **Arguments** box to select from a list of variables that the diff/merge command fills in before passing to the tool. Any other text in the argument box passes to the tool directly.
+   Choose the arrow next to the **Arguments** box to select from a list of variables that the diff/merge command populates and passes to the tool. Any other text in the argument box passes to the tool directly.
 
 1. Select **OK**.
 1. Select **OK** again, or select **Add** to add more file extensions. When you're finished adding extensions, select **OK**.

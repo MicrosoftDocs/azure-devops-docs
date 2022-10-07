@@ -16,15 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Team Foundation Version Control administrators can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control. For example, a user can be required to associate a work item with a changeset. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md). By default, the following check-in policy types are available:
-
-- **Builds** requires that the last build was successful before any new changes can be checked in.
-- **Changeset Comments Policy** requires users to provide check-in comments.
-- **Code Analysis** requires that code analysis be run before code can be checked in.
-- **Custom Path Policy** scopes the other policies to specific folders or file types.
-- **Forbidden Patterns Policy** prevents check-ins with files that have forbidden filename patterns.
-- **Work Item Query Policy** specifies a work item query whose results are the only legal work items to associate with a check-in.
-- **Work Items** requires that one or more work items be associated with every check-in.
+Team Foundation Version Control administrators can add check-in policy requirements. These check-in policies require users to take actions when they conduct a check-in to source control. For example, a user can be required to associate a work item with a changeset. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
 > [!NOTE]
 > Visual Studio check-in policies must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio on your computer. If you have multiple installations of Visual Studio, you need to set the check-in policy on each installation.
@@ -51,7 +43,9 @@ Team Foundation Version Control administrators can add check-in policy requireme
 
    - **Enforce check-in to include only files that are part of current solution**
    - **Enforce C/C++ Code Analysis (/analyze)**
-   - **Enforce Code Analysis For Managed Code**. If you select this option, select the desired rule set under **Rule settings for Managed Code Analysis**.
+   - **Enforce Code Analysis For Managed Code**.
+
+     If you select this option, select the desired rule set under **Rule settings for Managed Code Analysis**.
 
    For more information about how to use code analysis tools, see [Create Code Analysis Check-In Policies](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).
    
