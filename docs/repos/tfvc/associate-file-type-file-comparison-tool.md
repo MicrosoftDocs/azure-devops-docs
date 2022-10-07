@@ -29,24 +29,24 @@ To associate a file type with a file-comparison tool, you can start from a devel
 ### Developer command prompt
 
 1. In Windows, select **Start** and then type *Developer Command Prompt*. From the search results, select the developer command prompt for your Visual Studio version, such as **Developer Command Prompt for Visual Studio 2022**.
-1. In the command prompt window, enter *tf diff /configure*.
-1. Follow the instructions in [Configure the tool](#configure-the-tool).
+1. In the command prompt window, enter `tf diff /configure`.
+1. Follow the instructions to [configure the tool](#configure-the-tool).
 
 ### Visual Studio
 
 1. In Visual Studio, select **Tools** > **Options**.
 1. In the **Options** dialog box, expand **Source Control**, and then select **Visual Studio Team Foundation Server**.
 1. Select **Configure User Tools**.
-1. Follow the instructions in [Configure the tool](#configure-the-tool).
+1. Follow the instructions to [configure the tool](#configure-the-tool).
 
 ### Configure the tool
 
 1. In the **Configure User Tools** dialog box, select **Add**.
 1. In the **Configure Tool** dialog box, in the **Extension** field, enter the file extension you want to associate, such as *.cpp*, or *\** for all files.
 1. For **Operation**, expand the dropdown list and select **Compare**.
-1. In the **Command** text box, either enter the path and name of your merge tool, or choose the ellipsis **...** to browse to and select the tool. For example, enter *C:\\Program Files\\OtherDiff\\otherdiff.exe*.
+1. In the **Command** text box, either enter the path and name of your comparison tool, or choose the ellipsis **...** to browse to and select the tool. For example, enter or browse to *C:\\Program Files\\OtherDiff\\otherdiff.exe*.
 1. In the **Arguments** text box, enter any arguments that your tool requires.
-1. Choose the arrow next to the **Arguments** box to select from a list of variables that the diff command fills in before passing to the tool. Any other text in the argument box passes to the tool directly.
+1. Choose the arrow next to the **Arguments** box to select from a list of variables that the diff command populates and passes to the tool. Any other text in the argument box passes to the tool directly.
 1. Select **OK**.
 1. Select **OK** again, or select **Add** to add more file extensions. When you're finished adding extensions, select **OK**.
 
@@ -54,21 +54,21 @@ To associate a file type with a file-comparison tool, you can start from a devel
 
 When you specify arguments for the diff tool, use the following syntax:
 
-- Use white space to delimit arguments. For example, you can specify the following syntax to compare two files: `%1 %2`.
+- Use white space to delimit arguments. For example, you can specify the following syntax to compare two files:<br><br>`%1 %2`.
 
 - Use quotation marks to pass white space or quotation marks to the tool. If an argument includes one or more spaces, enclose the argument in quotation marks, for example `"an argument"`. If an argument contains quotation marks, add another quotation mark immediately after the quotation mark in the argument. For example, you could specify the following argument: `"This "" embeds a double quote"`.
 
 The following tokens designate variables to pass to the diff tool:
 
-- **%1** is the path to the source file.
-- **%2** is the path to the target file.
-- **%5** is a string of options that you specify by using `/option` with the `difference` command. For more information, see [Difference Command](difference-command.md).
-- **%6** is a friendly name label for the source file.
-- **%7** is a friendly name label for the target file.
+- `%1` is the path to the source file.
+- `%2` is the path to the target file.
+- `%5` is a string of options that you specify by using `/option` with the `difference` command. For more information, see [Difference Command](difference-command.md).
+- `%6` is a friendly-name label for the source file.
+- `%7` is a friendly-name label for the target file.
 
-Pass friendly name labels to the tool if possible. If your tool supports displaying friendly name labels, such as `c:\workspace\test\MyWindow.xaml.cs;C5 (server) 4/26/2010 1:32 PM`, you can include the `%6` and `%7` tokens to pass the label values to the tool. If you don't specify these tokens, the tool may show names of temporary files, which can be difficult to read.
+Pass friendly-name labels to the tool if possible. If your tool supports displaying friendly-name labels, such as `c:\workspace\test\MyWindow.xaml.cs;C5 (server) 4/26/2010 1:32 PM`, you can include the `%6` and `%7` tokens to pass the label values to the tool. If you don't specify these tokens, the tool may show names of temporary files, which can be difficult to read.
 
-For example, you might specify the following syntax to display labels: `%1 /title1=%6 %2 /title2=%7`.
+For example, you might specify the following syntax to display friendly-name labels:<br><br>`%1 /title1=%6 %2 /title2=%7`.
 
 > [!NOTE]
 > The friendly-name label capability isn't related to version-control labels, which you apply to specific versions of items in version control. For more information about version-control labels, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).

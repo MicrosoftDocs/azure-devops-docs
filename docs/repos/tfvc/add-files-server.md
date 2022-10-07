@@ -1,7 +1,7 @@
 ---
-title: Add files to the server
+title: Add files to version control server
 titleSuffix: Azure Repos
-description: See how to use Visual Studio to add files to the TFVC server.
+description: See how to use Visual Studio to add files to the Team Foundation Version Control server.
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.service: azure-devops-repos
 ms.topic: conceptual
@@ -10,12 +10,12 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
-# Add files to Team Foundation Version Control
+# Add files to the version control server
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Adding files to version control is often automatic when you use Visual Studio **Solution Explorer** and your project is under version control. However, in some cases, you have to take some extra steps to add files and projects to version control.
+Adding files to version control is often automatic when you use Visual Studio **Solution Explorer** and your project is under version control. However, in some cases, you have to take extra steps to add files and projects to version control.
 
 ## Prerequisite
 
@@ -23,10 +23,6 @@ Before you can add files to version control in Visual Studio, [set up the worksp
 
 > [!IMPORTANT]
 > These procedures apply only when you use a [local workspace](decide-between-using-local-server-workspace.md). When you use a local workspace, new files are automatically detected as pending changes. Files you save in a server workspace add and check in without showing as pending changes.
-
-## Work from the command prompt
-
-For automated processes or if you want to use a command prompt, you can use the [Add command](add-command.md) instead of the following procedures. This command uploads files from a workspace on a local machine to the server.
 
 ## Create a new code project and solution under version control
 
@@ -57,15 +53,25 @@ You can create a new Visual Studio project and add it to version control so that
 To add an existing solution to version control, move all the solution files into your workspace, and then add them in Visual Studio.
 
 1. In Visual Studio, [connect to your Azure DevOps project](../../organizations/projects/connect-to-projects.md).
+
 1. Choose **View** > **Other Windows** > **Source Control Explorer**.
+
 1. In **Source Control Explorer**, navigate to a logical parent folder for your solution, such as *$/SiteApp/Main*, where SiteApp is the name of your project. To find out more about naming local folders, see [Optimize your folder names](optimize-your-workspace.md#optimize-your-folder-names).
+
 1. Select the link at the top of the window next to **Local Path** to open the parent folder in Windows File Explorer. If the link says **Not mapped**, see [Create and work with workspaces](create-work-workspaces.md).
+
 1. In File Explorer, move the folder that contains your solution into the parent folder.
+
 1. In Visual Studio, choose **File** > **Open Project**, and navigate to and open your project or solution.
+
 1. In **Solution Explorer**, right-click the solution, and then select **Add Solution to Source Control** from the context menu.
+
 1. Right-click the solution again and select **Check In** from the context menu.
+
 1. On the **Pending Changes** page in **Team Explorer**, if you see a **Detected** link in the **Excluded Changes** section, select the link.
-1. The **Promote Candidate Changes** dialog box lists files that aren't referenced by any code projects in your solution. Select any of these files that you or your team need, and then select **Promote** to move the files into **Included Changes**.
+
+1. The **Promote Candidate Changes** dialog box lists files that aren't referenced by any code projects in your solution. Select any of these files that you want to check in, deselect any of the files that you don't want to check in, and then select **Promote** to move the selected files into **Included Changes**. If you don't want any of the listed files, select **Cancel** to close the dialog box.
+
 1. Select **Check In**.
 
 For more information, see [submit your pending changes](check-your-work-team-codebase.md).
@@ -77,13 +83,19 @@ When you add a file to your code project in Visual Studio **Solution Explorer**,
 ### Automatically add one or more files to version control
 
 1. In Visual Studio, [connect to your Azure DevOps project](../../organizations/projects/connect-to-projects.md).
+
 1. Choose **View** > **Other Windows** > **Source Control Explorer**.
+
 1. In **Source Control Explorer**, navigate to the folder where you want to add the files or folder.
-1. Select the link at the top of the window next to **Local Path** to open the target folder in Windows File Explorer. If the link says **Not mapped**, see [Create and work with workspaces](create-work-workspaces.md).
-1. Move your files or folders into this folder.
-1. In Visual Studio **Team Explorer**, choose **Pending Changes**.
-1. On the **Pending Changes** page, in the **Excluded Changes** section, select the  **Detected** link.
-1. In the **Promote Candidate Changes** dialog box, make sure that only files that you want to check in are selected, and then select **Promote**.
+
+1. Select the link at the top of the window next to **Local Path** to open the target folder in Windows File Explorer. If the link says **Not mapped**, refer to [Create and work with workspaces](create-work-workspaces.md).
+
+1. In File Explorer, move your files or folders into the target folder.
+
+1. In Visual Studio **Team Explorer**, on the **Pending Changes** page, select the  **Detected** link if you see one in the **Excluded Changes** section.
+
+1. In the **Promote Candidate Changes** dialog box, make sure that only files that you want to check in are selected, and then select **Promote**, or select **Cancel** if you don't want any of the files.
+
 1. Select **Check In**.
 
 For more information, see [submit your pending changes](check-your-work-team-codebase.md).
@@ -124,7 +136,7 @@ If your team needs to isolate separate efforts that require different versions o
 
 ### Use a workspace to map the binaries
 
-Some companies must manage more complicated dependencies on external libraries. For example, multiple projects contain solutions that have different dependencies on a common set of libraries. In these cases, you can store external libraries in a dedicated project. Contributors to the various projects map in the folders that contain the libraries they need.
+Some companies must manage more complicated dependencies on external libraries. For example, multiple projects might contain solutions that have different dependencies on a common set of libraries. In these cases, you can store external libraries in a dedicated project. Contributors to the various projects map in the folders that contain the libraries they need.
 
 For example, FabrikamFiber puts the following project, branch, and folder structure in place:
 
@@ -175,11 +187,15 @@ ProjA\*.cpp
 You can manually create a *.tfignore* text file that uses the preceding rules, or you can automatically generate a *.tfignore* file when the **Pending Changes** page detects an excluded change.
 
 1. In **Team Explorer**, on the **Pending Changes** page, select the **Detected** link in the **Excluded Changes** section.
-1. In the **Promote Candidate Changes** dialog box, to ignore a file, right-click the file and select **Ignore this local item**, **Ignore by extension**, **Ignore by file name**, or **Ignore by folder** from the context menu.
+1. In the **Promote Candidate Changes** dialog box, right-click a file you want to ignore and select **Ignore this local item**, **Ignore by extension**, **Ignore by file name**, or **Ignore by folder** from the context menu.
 1. Select **Cancel** to close the dialog box.
 1. A *.tfignore* file appears in the **Included Changes** section of the **Pending Changes** page. You can open this file and modify it to meet your needs.
 
-The *.tfignore* file is automatically added as an included pending change, so the rules you create automatically apply to anyone who gets the file.
+The *.tfignore* file is added as an included pending change, so the rules you create automatically apply to anyone who gets the file.
+
+## Work from the command prompt
+
+For automated processes or if you want to use a command prompt, you can use the tf.exe [add command](add-command.md) instead of the procedures in this article. The `add` command uploads files from a workspace on a local machine to the server.
 
 ## Related articles
 

@@ -36,11 +36,11 @@ tf add itemspec [/lock:(none|checkin|checkout)] [/encoding:filetype]
 |Parameter|Description|
 |------------------------------------|----------------|
 |     `/encoding: <filetype>`      |Ignore this parameter.|
-|             `itemspec`             |Specifies the scope of the items to add. You can specify more than one *itemspec* argument. |
+|             `itemspec`             |Specifies the scope of the items to add. You can specify more than one `itemspec` argument. |
 |             `/lock`              |   Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
-|           `/noignore`            | By default, version control ignores certain types of files, such as *.dll* files. You can configure which kinds of files are ignored by using a *.tfignore* file. See [Add files: .tfignore file](add-files-server.md#tfignore). The rules in a *.tfignore* file apply to the `add` command when you specify a wildcard in your `itemspec`.<br><br>To override these rules, specify **/noignore**.|
+|           `/noignore`            | By default, version control ignores certain types of files, such as *.dll* files. You can configure which kinds of files to ignore by using a *.tfignore* file. See [Customize which files version control ignores](add-files-server.md#tfignore). The rules in a *.tfignore* file apply to the `add` command when you specify a wildcard in your `itemspec`.<br><br>To override these rules, specify `/noignore`.|
 |           `/noprompt`            | Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).|
-|           **/recursive**           |Recursively adds items in the specified directory and any subdirectories.|
+|           `/recursive`           |Recursively adds items in the specified directory and any subdirectories.|
 
 ## Examples
 
@@ -57,18 +57,17 @@ c:\code\SiteApp\Main\SolutionA\Project1>tf add
 ```
 
 
-The following command adds the latest versions of all items, even those designated as ignored, in a local workspace.
+The following command adds the latest versions of all items, even items designated as ignored, in a local workspace.
 ```
 c:\code\SiteApp\Main\SolutionA\Project1>tf add /noignore
 ```
 
 ### Add individual items
+The following command adds the files *program1.cs* and *program2.cs*.
 
 ```
 c:\code\SiteApp\Main>tf add program1.cs program2.cs
 ```
-
-The following command adds the files *program1.cs* and *program2.cs*.
 
 ### Recursively add all items of a specific type
 
@@ -84,7 +83,7 @@ c:\code\SiteApp\Main>tf add *.cs /recursive
 
 ## Tips
 
-- The results of the `add` command are queued as pending changes and don't take effect on the server until you check in. See [Checkin command](checkin-command.md).  
+- The results of the `add` command are queued as pending changes and don't take effect on the server until you check them in. See [Checkin command](checkin-command.md).  
 - To set aside changes or clean your workspace for another task, use the [Shelve command](shelve-command.md).
 
 ## Related articles
