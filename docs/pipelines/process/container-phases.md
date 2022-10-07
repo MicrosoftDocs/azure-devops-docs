@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 06/02/2021
+ms.date: 10/07/2022
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -77,7 +77,7 @@ A simple example:
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 
 container: ubuntu:18.04
 
@@ -113,16 +113,16 @@ In the following example, the same steps run in multiple versions of Ubuntu Linu
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 
 strategy:
   matrix:
-    ubuntu14:
-      containerImage: ubuntu:14.04
     ubuntu16:
       containerImage: ubuntu:16.04
     ubuntu18:
       containerImage: ubuntu:18.04
+    ubuntu20:
+      containerImage: ubuntu:20.04
 
 container: $[ variables['containerImage'] ]
 
@@ -140,7 +140,7 @@ private registry. Then you can reference it in a container spec:
 
 ```yaml
 container:
-  image: registry:ubuntu1604
+  image: registry:ubuntu1804
   endpoint: private_dockerhub_connection
 
 steps:
@@ -189,28 +189,28 @@ Each container is then referenced later, by referring to its assigned alias.
 ```yaml
 resources:
   containers:
-  - container: u14
-    image: ubuntu:14.04
-
   - container: u16
     image: ubuntu:16.04
 
   - container: u18
     image: ubuntu:18.04
 
+  - container: u20
+    image: ubuntu:20.04
+
 jobs:
 - job: RunInContainer
   pool:
-    vmImage: 'ubuntu-18.04'
+    vmImage: 'ubuntu-latest'
 
   strategy:
     matrix:
       ubuntu14:
-        containerResource: u14
-      ubuntu16:
         containerResource: u16
-      ubuntu18:
+      ubuntu16:
         containerResource: u18
+      ubuntu18:
+        containerResource: u20
 
   container: $[ variables['containerResource'] ]
 
