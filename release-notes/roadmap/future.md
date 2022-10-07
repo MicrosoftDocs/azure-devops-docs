@@ -20,7 +20,7 @@ Allow apps hosted on Azure to use managed identities and service principals to i
 **Important Milestones (last updated 08/29/22):**
 
 * **September 2022:** Internal testing for select Microsoft customers with approved use cases.
-* **FY22Q4:** Private Preview for Microsoft-only parties. Email [@Angel Wong](wonga@microsoft.com) with the survey questions below completed.
+* **FY22Q4:** Private Preview for Microsoft-only parties. Email [Angel Wong](mailto:wonga@microsoft.com) with the survey questions below completed.
 * **FY23Q1 (TBC):** Public Preview to all internal and external customers
 * **TBD:** Managed Identities and Service Principal support GA
 
