@@ -14,6 +14,8 @@ items:
     href: ../analytics/analytics-query-tools.md  
   - name: Best practices  
     href: ../analytics/analytics-best-practices.md  
+  - name: Project & organization-scoped queries
+    href: ../extend-analytics/account-scoped-queries.md
   - name: Permissions and prerequisites  
     href: ../analytics/analytics-permissions-prerequisites.md  
   - name: Set Analytics permissions (Security)  
@@ -55,8 +57,6 @@ items:
   items:
   - name: Query work item data
     href: ../extend-analytics/wit-analytics.md
-  - name: Project & organization-scoped queries
-    href: ../extend-analytics/account-scoped-queries.md
   - name: Query aggregate data
     href: ../extend-analytics/aggregated-data-analytics.md
   - name: Query trend data
