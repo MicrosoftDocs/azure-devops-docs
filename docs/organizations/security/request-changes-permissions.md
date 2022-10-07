@@ -38,7 +38,7 @@ The following tasks require membership in the **Project Collection Administrator
 - **Collection-level configurations**
 	- Create projects: Requires elevated permissions at the [collection level](change-organization-collection-level-permissions.md).  
 	- Add, edit, or manage a process: Requires elevated permissions at the collection level or [process-level permissions](set-permissions-access-work-tracking.md#process-permissions).
-	- Install, uninstall, or disable extensions: Requires addition to the [Manager role](../../marketplace/how-to/grant-permissions.md) for extensions. 
+	- Install, uninstall, or disable extensions: Requires addition to the [Manager role](../../marketplace/grant-permissions.md) for extensions. 
  
 For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md). 
 
@@ -69,7 +69,7 @@ To request a change or increase in your permission levels, take the following ac
 
 1. Identify a person in your organization who can grant you the permissions you need. For example: 
 	- To get permissions to manage team settings, [identify the team administrator for your team](../settings/add-team-administrator.md) or a [member of the Project Administrators group](look-up-project-administrators.md). 
-	- To change an object-level permissions, identify the owner of the object or a member of the **Project Administrators** group. To learn how, see [Set object-level permissions](set-object-level-permissions.md).
+	- To change an object-level permission, identify the owner of the object or a member of the **Project Administrators** group. To learn how, see [Set object-level permissions](set-object-level-permissions.md).
 	- To change a project-level permission, identify a member of the **Project Administrators** group. See [Look up a project administrator](look-up-project-administrators.md). 
 	- To change a project collection-level permission, identify a member of the **Project Collection Administrators** group. See [Look up a project collection administrator](look-up-project-collection-administrators.md).
 
