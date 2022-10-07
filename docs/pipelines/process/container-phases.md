@@ -205,11 +205,11 @@ jobs:
 
   strategy:
     matrix:
-      ubuntu14:
-        containerResource: u16
       ubuntu16:
-        containerResource: u18
+        containerResource: u16
       ubuntu18:
+        containerResource: u18
+      ubuntu20:
         containerResource: u20
 
   container: $[ variables['containerResource'] ]
