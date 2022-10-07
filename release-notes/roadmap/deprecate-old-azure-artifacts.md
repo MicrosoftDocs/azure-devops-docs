@@ -10,7 +10,7 @@ description: Deprecate old Azure Artifacts tasks in Azure Pipelines and default 
 hide_comments: true
 ---
 
-### Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks
+# Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks
 
 We get a lot of support requests and feedback from our current Azure Artifacts tasks in Azure Pipelines (NuGet, npm, Maven, etc.). Having these large, bulky tasks with built-in versions of command-line tools can create a lot of problems:
 1. When something fails, it's hard to know if it's the command-line tools, the authentication, the restore/publish, etc.

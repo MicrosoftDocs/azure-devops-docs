@@ -10,7 +10,7 @@ description: Rollup columns for query results
 hide_comments: true
 ---
 
-### Rollup columns for query results
+# Rollup columns for query results
 
 Like backlogs, I want to be able to add rollup columns to query results.
 

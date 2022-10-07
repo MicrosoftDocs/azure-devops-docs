@@ -10,6 +10,6 @@ description: Improve GitHub Connection Experience
 hide_comments: true
 ---
 
-### Improve GitHub Connection Experience
+# Improve GitHub Connection Experience
 
 Improve the GitHub connection experience for Enterprise customers by supporting thousands instead of hundreds of repos and making it easier to add and delete repos to the connection.

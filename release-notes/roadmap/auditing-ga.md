@@ -10,6 +10,6 @@ description: Auditing GA
 hide_comments: true
 ---
 
-### Auditing GA
+# Auditing GA
 
 Auditing service available in all geographies and to all customers.

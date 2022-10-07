@@ -10,7 +10,7 @@ description: Pull Request widget to allow for the selection of many repos
 hide_comments: true
 ---
 
-### Pull Request widget to allow for the selection of many repos
+# Pull Request widget to allow for the selection of many repos
 
 As a user, when I use the [Pull Request widget](https://docs.microsoft.com/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request), I should be allowed to select many repositories. 
 

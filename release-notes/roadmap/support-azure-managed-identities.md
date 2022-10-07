@@ -10,7 +10,7 @@ description: Support Azure Managed Identities and Service Principals
 hide_comments: true
 ---
 
-### Support Azure Managed Identities and Service Principals
+# Support Azure Managed Identities and Service Principals
 
 Allow apps hosted on Azure to use managed identities and service principals to integrate with Azure DevOps through REST APIs and client libraries. 
 

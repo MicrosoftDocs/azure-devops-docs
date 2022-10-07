@@ -10,6 +10,6 @@ description: Package promote task in Azure Pipelines
 hide_comments: true
 ---
 
-### Package promote task in Azure Pipelines
+# Package promote task in Azure Pipelines
 
 Package promote task in Azure Pipelines. 

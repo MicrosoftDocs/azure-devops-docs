@@ -10,7 +10,7 @@ description: Emoji support in work item tags
 hide_comments: true
 ---
  
-### Emoji support in work item tags
+# Emoji support in work item tags
 
 As a user, I want to be able to add emoji's (🤞🎉) in my tags.
 
