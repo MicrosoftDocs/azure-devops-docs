@@ -35,23 +35,23 @@ Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other
 > [!NOTE]  
 > To generate status and trend reports on test-specific work item types, query the `WorkItems` and `WorkItemSnapshot` entity types and filter based on the work item type. For information on test runs, test results, or other test data, query the `TestRuns`, `TestPoints`, `TestResultsDaily`, `TestSuite` or `TestPointHistorySnapshot` entity types. To learn more, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
 
-|EntityType  | EntitySet  | Description | 
+|EntitySet  | EntityType  | Description | 
 |------------|-------------|-------------|  
-|[**Area**](#area-path-properties) | **Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
-|[**CalendarDate**](entity-reference-general.md#calendar-date-properties)|**Dates**|The dates used to filter and group other entities using relationships.| 
-|[**Iteration**](#iteration-path-properties) | **Iterations** |The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |
-|[**BoardLocation**](#kanban-board-properties-fields) |**BoardLocations**|  The Kanban board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| 
-|[**Process**](#process-properties) |**Processes** | Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). Supported for Analytics v2.0 version and later. | 
-|[**Project**](entity-reference-general.md#project-properties)|**Projects** |All projects defined for an organization (cloud) or project collection (on-premises). | 
-|[**Tag**](#tag-properties) | **Tags** |All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | 
-|[**Team**](#team-properties) | **Teams** |All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | 
-|[**User**](entity-reference-general.md#user-properties)|**Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | 
+|[**Areas**](#area-path-properties) | **Area** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
+|[**Dates**](entity-reference-general.md#calendar-date-properties)|**CalendarDate**|The dates used to filter and group other entities using relationships.| 
+|[**Iterations**](#iteration-path-properties) | **Iteration** |The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |
+|[**BoardLocations**](#kanban-board-properties-fields) |**BoardLocation**|  The Kanban board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| 
+|[**Processes**](#process-properties) |**Process** | Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). Supported for Analytics v2.0 version and later. | 
+|[**Projects**](entity-reference-general.md#project-properties)|**Project** |All projects defined for an organization (cloud) or project collection (on-premises). | 
+|[**Tags**](#tag-properties) | **Tag** |All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | 
+|[**Teams**](#team-properties) | **Team** |All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | 
+|[**Users**](entity-reference-general.md#user-properties)|**User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | 
 |[**WorkItemBoardSnapshot**](#kanban-board-properties-fields) |**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | 
-|[**WorkItemLink**](#workitemlink-properties)| **WorkItemLinks** |The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | 
-|[**WorkItemRevision**](#property-names-fields) |**WorkItemRevisions** |All historic work item revisions, including the current revision. Doesn't include deleted work items. |  
+|[**WorkItemLinks**](#workitemlink-properties)| **WorkItemLink** |The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | 
+|[**WorkItemRevisions**](#property-names-fields) |**WorkItemRevision** |All historic work item revisions, including the current revision. Doesn't include deleted work items. |  
 |[**WorkItemSnapshot**](#property-names-fields) |**WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, used to support trend reporting. For a sample report, see [Bug trends sample report](../powerbi/sample-boards-bugtrend.md).  |   
-|[**WorkItem**](#property-names-fields) |**WorkItems** |The current state of work items. Used to support status reports. For a sample report, see [Rollup child work item values to parent sample report](../powerbi/sample-boards-rollup.md). | 
-|[**WorkItemTypeField**](#work-item-type-field-properties)|**WorkItemTypeFields** |The work item properties for each work item type and process. Used to support building reports. |   
+|[**WorkItems**](#property-names-fields) |**WorkItem** |The current state of work items. Used to support status reports. For a sample report, see [Rollup child work item values to parent sample report](../powerbi/sample-boards-rollup.md). | 
+|[**WorkItemTypeFields**](#work-item-type-field-properties)|**WorkItemTypeField** |The work item properties for each work item type and process. Used to support building reports. |   
 
 ### About snapshots 
 

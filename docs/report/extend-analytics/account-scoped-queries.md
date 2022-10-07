@@ -21,26 +21,7 @@ Project-scope queries help answer questions about a single project whereas organ
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-
-## Prerequisites
-
-::: moniker range="azure-devops"
-
-- You'll need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). 
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
-- You'll have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
-
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
-- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
-- You'll have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ::: moniker-end
 

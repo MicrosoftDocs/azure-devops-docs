@@ -16,7 +16,10 @@ ms.date: 09/30/2020
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
-Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
+Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser. 
+
+This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
+
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -45,22 +48,7 @@ In this article, the base root URL is scoped to a project as shown:
 All other URL parts are specified as an extra part of the query string.
 
 
-## Prerequisites
-
-::: moniker range="azure-devops"
-- You'll need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). 
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
-- You'll have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.  
-- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
-- You'll have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
-::: moniker-end
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="basic-query" />
 
@@ -88,7 +76,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 
 ### Query a single entity set
 
-To query a single entity set, such as Work Items or Areas or Projects, add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for Analytics](data-model-analytics-service.md).
+To query a single entity set&mdash;such as **Areas**, **Projects**, or **WorkItems**&mdash;add the name of the entity set: `/Areas`, `/Projects`,  or `/WorkItems`. For a full list of entity sets for work tracking, see [Metadata reference for Azure Boards Analytics](entity-reference-boards.md).
 
 For example, you query Areas by adding `/Areas`. The full URL is:
 
@@ -97,7 +85,7 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/Areas 
 > ```
 
-It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10000 work items, [server-side paging will be enforced](#server-force-paging).
+It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10,000 work items, [server-side paging is enforced](#server-force-paging).
 
 
  
@@ -107,7 +95,7 @@ It's equivalent to performing a select statement on the entity set and returning
 
 Return specific field data by adding a ```$select``` clause. 
 
-For example, to return only the Work Item ID, Work Item Type, Title, and State of work items, add this clause to your query:  
+For example, to return only the Work Item ID, Work Item Type, Title, and State of work items, add the following clause to your query which specifies the corresponding field properties.   
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State`	
 
@@ -116,16 +104,17 @@ For example, to return only the Work Item ID, Work Item Type, Title, and State o
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State
 > ```
 
-It's equivalent to selecting all rows in the entity, but returning only these specific fields.  
+This query is equivalent to selecting all rows in the entity set, but returning only these specific fields.  
 
 > [!NOTE]  
-> Field names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing.   
+> Property names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing. To understand how custom field properties are labeled, see [Metadata reference for Azure Boards, Custom properties](entity-reference-boards.md#custom-properties).
+.  
 
 <a id="filter-data" />
 
 ## Filter your data 
 
-You can filter data by providing a query filter clause. Building on the last query, you would add the following filter clause to only return those work items to return the state "In Progress". 
+You can filter data by providing a query filter clause. Building on the last query, you can add the following filter clause to only return those work items to return the state "In Progress". 
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'`
 
@@ -186,32 +175,63 @@ The following example returns work items whose **Changed Date** occurs during th
 
 ## Filter using related entities
 
-Querying work items is helpful, but you'll eventually want to filter by other data such as the Iteration Path, Area Path, or project. To do so, you need to understand the navigation properties of the entity model. You can get metadata using `/$metadata` URL. For details, see [Explore Analytics OData metadata](analytics-metadata.md) 
+Querying work items is helpful, but you'll eventually want to filter by other data such as the Iteration Path, Area Path, or project. To do so, you need to understand the navigation properties of the entity model. 
 
-Here's a partial view of the metadata for the Work Items entity:
+All entity types are associated with properties and navigation properties. You can filter your queries of entity sets using both these types of properties.  
+
+You can get metadata using `/$metadata` URL as described in [Explore Analytics OData metadata](analytics-metadata.md) or reviewing the  [Metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
+
+A partial view of the metadata for the `WorkItem` entity is provided in the following code snippet. Properties correspond to a work item field as well as specific data captured by Analytics, such as `LeadTimeDays` and `CycleTimeDays`. Navigation properties correspond to other entity sets, entity types, or specific Analytics data captured for the entity type.   
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
->     <Property ...>
->     <Property Name="RequirementType" Type="Edm.String"/>
->     <Property Name="RequiresReview" Type="Edm.String"/>
->     <Property Name="RequiresTest" Type="Edm.String"/>
->     <Property Name="RootCause" Type="Edm.String"/>
->     <Property Name="SubjectMatterExpert1" Type="Edm.String"/>
->     <Property Name="SubjectMatterExpert2" Type="Edm.String"/>
->     <Property Name="SubjectMatterExpert3" Type="Edm.String"/>
->     <Property Name="TargetResolveDate" Type="Edm.DateTimeOffset"/>
->     <Property Name="TaskType" Type="Edm.String"/>
->     <Property Name="UserAcceptanceTest" Type="Edm.String"/>
->     <Property Name="Count" Nullable="false" Type="Edm.Int32"/>
->     <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
->     <NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
->     <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project"/>
->     <NavigationProperty Name="Area" Type="Microsoft.VisualStudio.Services.Analytics.Model.Area"/>
->     <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.Model.Iteration"/>
+<Key>
+   <PropertyRef Name="WorkItemId"/>
+</Key>
+<Property Name="WorkItemId" Type="Edm.Int32" Nullable="false">
+   <Annotation Term="Ref.ReferenceName" String="System.Id"/>
+   <Annotation Term="Display.DisplayName" String="Work Item Id"/>
+</Property>
+<Property Name="InProgressDate" Type="Edm.DateTimeOffset">
+   <Annotation Term="Display.DisplayName" String="InProgress Date"/>
+   </Property>
+<Property Name="CompletedDate" Type="Edm.DateTimeOffset">
+   <Annotation Term="Display.DisplayName" String="Completed Date"/>
+   </Property>
+<Property Name="LeadTimeDays" Type="Edm.Double">
+   <Annotation Term="Display.DisplayName" String="Lead Time Days"/>
+</Property>
+<Property Name="CycleTimeDays" Type="Edm.Double">
+   <Annotation Term="Display.DisplayName" String="Cycle Time Days"/>
+</Property>
+<Property Name="InProgressDateSK" Type="Edm.Int32"/>
+<Property Name="CompletedDateSK" Type="Edm.Int32"/>
+<Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
+<Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
+<Property Name="WorkItemRevisionSK" Type="Edm.Int32" Nullable="false"/>
+...
+<NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
+<NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
+<NavigationProperty Name="InProgressOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
+<ReferentialConstraint Property="InProgressDateSK" ReferencedProperty="DateSK"/>
+</NavigationProperty>
+<NavigationProperty Name="CompletedOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
+<ReferentialConstraint Property="CompletedDateSK" ReferencedProperty="DateSK"/>
+</NavigationProperty>
+<NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
+<NavigationProperty Name="Links" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemLink)"/>
+<NavigationProperty Name="Children" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
+<NavigationProperty Name="Parent" Type="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
+<ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
+</NavigationProperty>
+<NavigationProperty Name="Processes" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Process)"/>
+<NavigationProperty Name="Descendants" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
+<NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project" Nullable="false">
+<ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
+<Annotation Term="Display.DisplayName" String="Project"/>
+...
 > ```
-
-The navigation properties appear towards the bottom of the metadata, which includes `Revisions`, `BoardLocations` (Kanban metadata), `Project`, `Area`, and `Iteration`. 
+ 
 
 <a id="filter-navigation" />
 
@@ -237,7 +257,7 @@ In this example, `Iteration` is the navigation property name and `IterationPath`
 
 How do you use navigation properties to select related fields?
 
-The username for Custom fields based on an Identity isn't directly accessible using a `$select` statement. The following query uses a `$expand` statement to retrieve the user name:
+The user name for custom fields based on an Identity field type isn't directly accessible using a `$select` statement. The following query uses a `$expand` statement to retrieve the user name:
 
 `/WorkItems?$expand=MyIdentityField($select=UserName)`
 
@@ -248,7 +268,7 @@ The previous filtering example for the Iteration Path doesn't return the iterati
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration`
 
-It returns the following JSON:
+It returns the following JSON code.
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -304,6 +324,8 @@ It returns the following JSON:
 >   ]
 > }
 > ```
+
+### Nest expand statements
 
 In OData, you can nest `$expand` statements. For example, you can write the previous query statement to display the project the iteration is part of:
 
