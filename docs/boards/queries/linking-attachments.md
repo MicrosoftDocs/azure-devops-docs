@@ -284,8 +284,6 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    The number of comments added to the **Discussion** section of the work item.  
    Reference Name=System.CommentCount, Data type=Integer  
-   > [!NOTE]
-   > Available for TFS 2017 with the new work item form which supports the **Discussion** section and later versions. 
    :::column-end:::
    :::column span="1":::
    All
