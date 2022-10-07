@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
-description: Learn how to to create a release pipeline using Azure DevOps CLI 
+description: Learn how to create a release pipeline using Azure DevOps CLI 
 ms.topic: how-to
 ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
