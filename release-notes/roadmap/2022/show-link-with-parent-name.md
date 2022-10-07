@@ -10,7 +10,7 @@ description: Show Link with Parent Name in Query Results Widget
 hide_comments: true
 ---
 
-### Show Link with Parent Name in Query Results Widget
+# Show Link with Parent Name in Query Results Widget
 
 The Query Results Widget should a show a link to the parent item is displayed with an icon showing the work item type
 

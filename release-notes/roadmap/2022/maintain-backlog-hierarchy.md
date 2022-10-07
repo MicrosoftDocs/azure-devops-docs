@@ -10,7 +10,7 @@ description: Maintain backlog hierarchy when filters are applied
 hide_comments: true
 ---
  
-### Maintain backlog hierarchy when filters are applied
+# Maintain backlog hierarchy when filters are applied
 
 As a user, I want to maintain my tree view even when I filter my backlog so that I don't lose context of the work I'm trying to organize.
 

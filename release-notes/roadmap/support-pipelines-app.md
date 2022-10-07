@@ -10,7 +10,7 @@ description: Support Pipelines App with GitHub Enterprise
 hide_comments: true
 ---
 
-### Support Pipelines App with GitHub Enterprise
+# Support Pipelines App with GitHub Enterprise
 
 The integration between Azure Pipelines and GitHub is facilitated by a [GitHub App](https://github.com/marketplace/azure-pipelines). This app makes it easy to set up pipelines for a GitHub repository and to deliver events (CI, PR, Comment, etc) from GitHub to Azure Pipelines. The app also enhances the security of pull requests using [comment triggers](https://github.com/marketplace/azure-pipelines).
 

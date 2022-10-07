@@ -10,7 +10,7 @@ description: Ability to change link type from Web UI
 hide_comments: true
 ---
 
-### Ability to change link type from Web UI
+# Ability to change link type from Web UI
 
 As a user, it takes me 5 steps to change a link type. I want to change a link type in the UI with in only one step.
 

@@ -10,6 +10,6 @@ description: Work Item support for Markdown editing
 hide_comments: true
 ---
 
-### Work Item support for Markdown editing
+# Work Item support for Markdown editing
 
 All long text fields (Description, Repo Steps, etc.) and the Work Item discussion will support Markdown editing.
