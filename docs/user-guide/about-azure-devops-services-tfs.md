@@ -40,7 +40,8 @@ When you're choosing which platform you want, or if you're considering a move fr
 - [User access management](#manage-user-access)
 - [Security and data protection](#security-and-data-protection)
 
-**Differences in specific feature areas**  
+**Differences in specific feature areas**
+
 Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between features. Some Azure DevOps Server features aren't supported in Azure DevOps Services. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting.
 
 **Differences in support**
@@ -55,6 +56,7 @@ If you're using Azure DevOps Server and considering a move to Azure DevOps Servi
 As your business grows, you may need to scale up your Azure DevOps instance. 
 
 **Azure DevOps Services**
+
 Azure DevOps Services offer two options for scoping and scaling data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always have exactly one project collection. Organizations can have many projects within a collection.
 
 <!--- Commenting out forward looking content for now 
@@ -73,6 +75,7 @@ We recommend that you create organizations in Azure DevOps Services wherever you
 For more information, see [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md).
 
 **Azure DevOps Server**
+
 Azure DevOps Server offers the following three options for scoping and scaling data: deployments,
 project collections, and projects. In the simplest case, deployments are just servers.
 
@@ -87,6 +90,7 @@ Finally, projects are used to encapsulate the assets of individual software proj
 ## Authentication
 
 **Azure DevOps Services**
+
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
 [Azure AD](/azure/active-directory/active-directory-whatis) 
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
@@ -97,16 +101,19 @@ Microsoft accounts. This method provides a better experience in many scenarios a
 For more information, see [About accessing Azure DevOps Services with Azure AD](../organizations/accounts/access-with-azure-ad.md).
 
 **Azure DevOps Server**
+
 With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. This process is transparent and you never see any kind of sign-in experience.
 
 ## Manage users and groups
 
 **Azure DevOps Services**
+
 In Azure DevOps Services, you can use a similar mechanism to
 [provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups.md). You can add Azure AD groups to Azure DevOps Services groups. If you use Microsoft Accounts instead of Azure AD, you have to
 [add users](../organizations/accounts/add-organization-users.md) one at a time.
 
 **Azure DevOps Server**
+
 In Azure DevOps Server, you provide users access to deployments by adding Active Directory (AD) groups to various Azure DevOps groups
 (for example, the Contributors group for an individual  project). The AD group memberships are kept in sync.
 As users are added and removed in AD, they also gain and lose access to Azure DevOps Server.
@@ -115,6 +122,7 @@ As users are added and removed in AD, they also gain and lose access to Azure De
 In both Azure DevOps Services and Azure DevOps Server, you manage access to features by assigning users to an [access level](../organizations/security/access-levels.md). All users must be assigned to a single access level. In both the cloud and on-premises offerings, you can give free access to work item features to an unlimited number of Stakeholders. Also, an unlimited number of Visual Studio subscribers can have access to all Basic features at no extra charge. You pay only for other users who need access.
 
 **Azure DevOps Services**
+
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
 
@@ -124,6 +132,7 @@ Otherwise, all other users get Stakeholder access.
 Azure AD groups give access to groups of users. Access levels are automatically assigned at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.
 
 **Azure DevOps Server**
+
 In Azure DevOps Server, all use is on the honor system. To set access levels for users based on their licenses, specify their
 [access levels](../organizations/security/change-access-levels.md) on the administration page. For example, assign unlicensed users Stakeholder access only.
 
@@ -140,9 +149,11 @@ Many entities want to know more about data protection when they consider moving 
 You can customize the work-tracking experience in different ways, depending on the supported process model:
 
 **Azure DevOps Services**
+
 Azure DevOps Service uses the **Inheritance** process model, which supports WYSIWYG customization.
 
 **Azure DevOps Server**
+
 With Azure DevOps Server, you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
 Azure DevOps Server 2018 and earlier versions only has access to the **On-premises XML** process model.
 Although the **On-premises XML** process model option is powerful, it can cause various issues. The main issue is that processes for existing projects aren't automatically updated.
@@ -166,12 +177,14 @@ For more information, see [Customize your work-tracking experience](../reference
 Azure DevOps Services and Azure DevOps Server offer the following tools that give you insight into the progress and quality of your software projects:
 
 **Azure DevOps Server 2019 to Azure DevOps Services**
+
 - [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 - [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
 - [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization. To learn more about the Analytics service, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 
 **2018**
+
 - [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 - [SQL Server Reporting Services (SSRS) reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports) are available when Azure DevOps Server is configured with SQL Server Analysis Services.   
 
