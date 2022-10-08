@@ -8,7 +8,7 @@ ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 10/07/2022
 ---
 
 # Query for linked work items 

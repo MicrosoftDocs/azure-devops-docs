@@ -57,12 +57,12 @@ items:
   items:
   - name: Query work item data
     href: ../extend-analytics/wit-analytics.md
-  - name: Query aggregate data
-    href: ../extend-analytics/aggregated-data-analytics.md
-  - name: Query trend data
-    href: ../extend-analytics/querying-for-trend-data.md
   - name: Query work item links
     href: ../extend-analytics/work-item-links.md
+  - name: Query trend data
+    href: ../extend-analytics/querying-for-trend-data.md
+  - name: Query aggregate data
+    href: ../extend-analytics/aggregated-data-analytics.md
   - name: Basic work tracking queries
     href: ../extend-analytics/analytics-recipes.md
 - name: Sample reports, Analytics views
