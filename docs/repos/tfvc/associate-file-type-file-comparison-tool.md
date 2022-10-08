@@ -68,7 +68,7 @@ The following tokens designate variables to pass to the diff tool:
 
 Pass friendly-name labels to the tool if possible. If your tool supports displaying friendly-name labels, such as `c:\workspace\test\MyWindow.xaml.cs;C5 (server) 4/26/2010 1:32 PM`, you can include the `%6` and `%7` tokens to pass the label values to the tool. If you don't specify these tokens, the tool may show names of temporary files, which can be difficult to read.
 
-For example, you might specify the following syntax to display friendly-name labels:<br><br>`%1 /title1=%6 %2 /title2=%7`.
+For example, you might specify the following syntax to display friendly-name labels:<br>`%1 /title1=%6 %2 /title2=%7`.
 
 > [!NOTE]
 > The friendly-name label capability isn't related to version-control labels, which you apply to specific versions of items in version control. For more information about version-control labels, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
