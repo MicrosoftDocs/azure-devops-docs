@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can compare text files by using the [Diff window](compare-files.md), the default file-comparison tool integrated with Visual Studio. You can also enable a different file-comparison tool to use for file types that you specify. You can use any comparison tool that supports the full paths of the two files that you want to compare, as command-line arguments.
+You can compare text files by using the [Diff window](compare-files.md), the default file-comparison tool integrated with Visual Studio. You can also enable a different file-comparison tool to use for file types that you specify. You can use any comparison tool that supports as command-line arguments the full paths of the two files that you want to compare.
 
 ## Prerequisites
 
@@ -54,9 +54,9 @@ To associate a file type with a file-comparison tool, you can start from a devel
 
 When you specify arguments for the diff tool, use the following syntax:
 
-- Use white space to delimit arguments. For example, you can specify the following syntax to compare two files:<br><br>`%1 %2`.
+- Use white space to delimit arguments. For example, you can specify the following syntax to compare two files:<br>`%1 %2`.
 
-- Use quotation marks to pass white space or quotation marks to the tool. If an argument includes one or more spaces, enclose the argument in quotation marks, for example `"an argument"`. If an argument contains quotation marks, add another quotation mark immediately after the quotation mark in the argument. For example, you could specify the following argument: `"This "" embeds a double quote"`.
+- Use quotation marks to pass white space or quotation marks to the tool. If an argument includes one or more spaces, enclose the argument in quotation marks, for example `"an argument"`. If an argument contains quotation marks, add another quotation mark immediately after the quotation mark in the argument. For example, you could specify the following argument: `"This character "" is a double quote mark"`.
 
 The following tokens designate variables to pass to the diff tool:
 

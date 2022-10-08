@@ -33,7 +33,7 @@ Team Foundation Version Control administrators can add check-in policy requireme
    - **Changeset Comments Policy** requires users to provide check-in comments.
    - **Code Analysis** requires that code analysis be run before code can be checked in.
    - **Custom Path Policy** scopes the other policies to specific folders or file types.
-   - **Forbidden Patterns Policy** prevents check-ins with files that have forbidden filename patterns.
+   - **Forbidden Patterns Policy** prevents check-ins that have files with forbidden filename patterns.
    - **Work Item Query Policy** specifies a work item query whose results are the only legal work items to associate with a check-in.
    - **Work Items** requires that one or more work items be associated with every check-in.
 
@@ -43,9 +43,7 @@ Team Foundation Version Control administrators can add check-in policy requireme
 
    - **Enforce check-in to include only files that are part of current solution**
    - **Enforce C/C++ Code Analysis (/analyze)**
-   - **Enforce Code Analysis For Managed Code**.
-
-     If you select this option, select the desired rule set under **Rule settings for Managed Code Analysis**.
+   - **Enforce Code Analysis For Managed Code**. If you select this option, select the desired rule set under **Rule settings for Managed Code Analysis**.
 
    For more information about how to use code analysis tools, see [Create Code Analysis Check-In Policies](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).
    
