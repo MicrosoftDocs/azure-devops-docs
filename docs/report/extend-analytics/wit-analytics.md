@@ -8,7 +8,7 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 10/07/2022
 ---
 
 # Query your work tracking data using OData Analytics
@@ -85,7 +85,7 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/Areas 
 > ```
 
-It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10,000 work items, [server-side paging is enforced](#server-force-paging).
+It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10,000 work items, [server-side paging is enforced](../analytics/analytics-query-parts.md#server-force-paging).
 
 
  
@@ -429,28 +429,6 @@ You can sort in ascending or descending order using keywords `asc` or `desc` cor
 And, you can order by multiple items:
 
 `/WorkItems?$orderby=WorkItemType,State`
-
-<a id="server-force-paging"></a>
-
-## Enforce server-side paging
-
-Analytics forces paging when query results exceed 10000 records. In that case, you'll get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
-
-
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->   "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems",
->   "value":[
->    // 10000 values here
->   ],
->   "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$skiptoken=10000"
-> }
-> ``` 
-> 
-> [!NOTE]
-> When pulling data into client tools such as Power BI Desktop or Excel, tools will automatically follow next link and load all required records. 
-
 
 
 ## Next steps

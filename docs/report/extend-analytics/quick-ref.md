@@ -212,7 +212,7 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
       - [Construct a basic query](wit-analytics.md#basic-query)  
       - [Create an Analytics widget](example-analytics-widget.md)  
       <br/>
-      - [Enforce server-side paging](wit-analytics.md#server-force-paging)  
+      - [Enforce server-side paging](../analytics/analytics-query-parts.md#server-force-paging)  
       - [Filter aggregated results](aggregated-data-analytics.md#filter-aggregate)  
       - [Filter by Area Path](wit-analytics.md#filter-related-entities)  
       - [Filter by Changed Date](wit-analytics.md#date-range-queries)  

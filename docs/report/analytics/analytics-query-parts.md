@@ -220,6 +220,28 @@ Analytics returns the project names of those projects defined for the *fabrikam*
 > ```
 
 
+<a id="server-force-paging"></a>
+
+## Enforce server-side paging
+
+Analytics forces paging when query results exceed 10000 records. In that case, you'll get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
+
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> {
+>   "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems",
+>   "value":[
+>    // 10000 values here
+>   ],
+>   "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$skiptoken=10000"
+> }
+> ``` 
+> 
+> [!NOTE]
+> When pulling data into client tools such as Power BI Desktop or Excel, tools will automatically follow next link and load all required records. 
+
+
 
 ## Related articles
 
