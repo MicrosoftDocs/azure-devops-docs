@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 The Team Foundation Version Control diff/merge tool opens when you try to compare two files or two versions of a file, or when you try to do a manual merge of a file that has conflicting changes.
 
-The tool is compatible with text and XML based files, but to associate a specific file type or use a third-party merge or diff tool, use the following procedure.
+The tool is compatible with text and XML based files, but to associate a specific file type or set up a third-party merge or diff tool, you can use the following procedure.
 
 ## Prerequisites
 

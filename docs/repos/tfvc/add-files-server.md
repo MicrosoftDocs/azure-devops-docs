@@ -22,7 +22,7 @@ Adding files to version control is often automatic when you use Visual Studio **
 Before you can add files to version control in Visual Studio, [set up the workspace on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).
 
 > [!IMPORTANT]
-> These procedures apply only when you use a [local workspace](decide-between-using-local-server-workspace.md). When you use a local workspace, new files are automatically detected as pending changes. Files you save in a server workspace add and check in without showing as pending changes.
+> These procedures apply only when you use a [local workspace](decide-between-using-local-server-workspace.md). When you use a local workspace, new files are automatically detected as pending changes. Conversely, files you save in a server workspace add and check in without showing as pending changes.
 
 ## Create a new code project and solution under version control
 
@@ -45,8 +45,8 @@ You can create a new Visual Studio project and add it to version control so that
 
    ![Screenshot of a new code project in Solution Explorer](media/add-files-server/solution-explorer.png)
 
-1. Right-click the solution in **Solution Explorer**, and select **Add Solution to Source Control**.
-1. In the **Team Explorer** window, select **Check in** to [submit your pending changes](check-your-work-team-codebase.md).
+1. Right-click the solution name in **Solution Explorer**, and select **Add Solution to Source Control** from the context menu.
+1. Switch to the **Team Explorer** window and select **Check in** to [check in the project to source control](check-your-work-team-codebase.md).
 
 ## Place existing solutions and code projects under version control
 
@@ -58,19 +58,19 @@ To add an existing solution to version control, move all the solution files into
 
 1. In **Source Control Explorer**, navigate to a logical parent folder for your solution, such as *$/SiteApp/Main*, where SiteApp is the name of your project. To find out more about naming local folders, see [Optimize your folder names](optimize-your-workspace.md#optimize-your-folder-names).
 
-1. Select the link at the top of the window next to **Local Path** to open the parent folder in Windows File Explorer. If the link says **Not mapped**, see [Create and work with workspaces](create-work-workspaces.md).
+1. Select the link at the top of the window next to **Local Path** to open the parent folder in Windows File Explorer. If the link says **Not mapped**, see [Create and work with workspaces](create-work-workspaces.md) for information about mapping your workspace.
 
 1. In File Explorer, move the folder that contains your solution into the parent folder.
 
-1. In Visual Studio, choose **File** > **Open Project**, and navigate to and open your project or solution.
+1. In Visual Studio, choose **File** > **Open Project**, and navigate to and open the solution.
 
-1. In **Solution Explorer**, right-click the solution, and then select **Add Solution to Source Control** from the context menu.
+1. In **Solution Explorer**, right-click the solution name, and then select **Add Solution to Source Control** from the context menu.
 
-1. Right-click the solution again and select **Check In** from the context menu.
+1. Right-click the solution name again and select **Check In** from the context menu.
 
 1. On the **Pending Changes** page in **Team Explorer**, if you see a **Detected** link in the **Excluded Changes** section, select the link.
 
-1. The **Promote Candidate Changes** dialog box lists files that aren't referenced by any code projects in your solution. Select any of these files that you want to check in, deselect any of the files that you don't want to check in, and then select **Promote** to move the selected files into **Included Changes**. If you don't want any of the listed files, select **Cancel** to close the dialog box.
+1. The **Promote Candidate Changes** dialog box lists files that aren't referenced by any code projects in your solution. Select any of these files that you want to check in, deselect any of the files that you don't want to check in, and then select **Promote** to move the selected files into **Included Changes**. If you don't want to check in any of the listed files, select **Cancel** to close the dialog box.
 
 1. Select **Check In**.
 
@@ -88,13 +88,13 @@ When you add a file to your code project in Visual Studio **Solution Explorer**,
 
 1. In **Source Control Explorer**, navigate to the folder where you want to add the files or folder.
 
-1. Select the link at the top of the window next to **Local Path** to open the target folder in Windows File Explorer. If the link says **Not mapped**, refer to [Create and work with workspaces](create-work-workspaces.md).
+1. Select the link next to **Local Path** at the top of the **Source Control Explorer** window to open the target folder in Windows File Explorer. If the link says **Not mapped**, see to [Create and work with workspaces](create-work-workspaces.md) for more information.
 
 1. In File Explorer, move your files or folders into the target folder.
 
-1. In Visual Studio **Team Explorer**, on the **Pending Changes** page, select the  **Detected** link if you see one in the **Excluded Changes** section.
+1. In Visual Studio, on the **Pending Changes** page in **Team Explorer**, if you see a **Detected** link in the **Excluded Changes** section, select the link.
 
-1. In the **Promote Candidate Changes** dialog box, make sure that only files that you want to check in are selected, and then select **Promote**, or select **Cancel** if you don't want any of the files.
+1. In the **Promote Candidate Changes** dialog box, select only files that you want to check in, and then select **Promote**. Select **Cancel** if you don't want to check in any of the listed files.
 
 1. Select **Check In**.
 
@@ -110,7 +110,7 @@ You can also manually add files to version control.
    > [!IMPORTANT]
    > Make sure this folder is checked in. If you create a new folder, right-click it and select **Check In**, then check in the new folder before proceeding.
 
-1. Drag the files from Windows File Explorer into the folder in **Source Control Explorer**.
+1. Drag the files from Windows File Explorer into the Visual Studio **Source Control Explorer** window.
 1. On the **Pending Changes** page in **Team Explorer**, make sure that **Included items** lists all the files you want to add, and then select **Check In**.
 
 ## Use binaries that your code doesn't include
@@ -142,7 +142,7 @@ For example, FabrikamFiber puts the following project, branch, and folder struct
 
 ![Diagram that shows libraries stored in a dedicated project.](media/add-files-server/IC579087.png)  
 
-You can set up dev machines with two workspaces for two different efforts, each of which maps in the libraries it needs:
+Developers can set up dev machines with two workspaces for two different efforts, each of which maps in the libraries it needs:
 
 ![Diagram that shows how workspaces map in the libraries.](media/add-files-server/workspaces.png)
 
