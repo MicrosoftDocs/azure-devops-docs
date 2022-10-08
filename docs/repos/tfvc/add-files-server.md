@@ -88,11 +88,11 @@ When you add a file to your code project in Visual Studio **Solution Explorer**,
 
 1. In **Source Control Explorer**, navigate to the folder where you want to add the files or folder.
 
-1. Select the link next to **Local Path** at the top of the **Source Control Explorer** window to open the target folder in Windows File Explorer. If the link says **Not mapped**, see to [Create and work with workspaces](create-work-workspaces.md) for more information.
+1. Select the link next to **Local Path** at the top of the **Source Control Explorer** window to open the target folder in Windows File Explorer. If the link says **Not mapped**, see [Create and work with workspaces](create-work-workspaces.md) and map your workspace.
 
 1. In File Explorer, move your files or folders into the target folder.
 
-1. In Visual Studio, on the **Pending Changes** page in **Team Explorer**, if you see a **Detected** link in the **Excluded Changes** section, select the link.
+1. In Visual Studio **Team Explorer**, on the **Pending Changes** page, if you see a **Detected** link under **Excluded Changes**, select the link.
 
 1. In the **Promote Candidate Changes** dialog box, select only files that you want to check in, and then select **Promote**. Select **Cancel** if you don't want to check in any of the listed files.
 
@@ -191,7 +191,7 @@ You can manually create a *.tfignore* text file that uses the preceding rules, o
 1. Select **Cancel** to close the dialog box.
 1. A *.tfignore* file appears in the **Included Changes** section of the **Pending Changes** page. You can open this file and modify it to meet your needs.
 
-The *.tfignore* file is added as an included pending change, so the rules you create automatically apply to anyone who gets the file.
+The *.tfignore* file is added as an included pending change, so the rules you create automatically apply for whoever gets the file.
 
 ## Work from the command prompt
 
