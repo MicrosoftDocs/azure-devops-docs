@@ -24,15 +24,20 @@ Azure DevOps delivers services through a client/server model. You can use most o
 Access Azure DevOps through the left navigational bar, as shown in the following image. 
 For more information, see the following associated articles.
 
-|---------|------|
-|:::image type="content" source="../organizations/projects/media/about-projects/services-hub-vert.png" alt-text="Screenshot of services on the left navigational menu.":::   |
+:::row:::
+   :::column span="1":::  
+      :::image type="content" source="../organizations/projects/media/about-projects/services-hubs-vert.png" alt-text="Screenshot of services on the left navigational menu.":::
+   :::column-end:::
+   :::column span="1":::
 - [Dashboards](../report/dashboards/overview.md) 
 - [Wiki](../project/wiki/about-readme-wiki.md)
 - [Boards](../boards/get-started/what-is-azure-boards.md)
 - [Repos](..//repos/get-started/what-is-repos.md)
 - [Pipelines](../pipelines/get-started/pipelines-get-started.md)
 - [Test Plans](../test/overview.md)
-- [Artifacts](../artifacts/start-using-azure-artifacts.md)|
+- [Artifacts](../artifacts/start-using-azure-artifacts.md)
+:::row-end:::
+:::column-end:::
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
