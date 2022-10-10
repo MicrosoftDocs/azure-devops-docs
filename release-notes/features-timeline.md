@@ -32,8 +32,8 @@ Each feature is linked to an article where you can learn more about a particular
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. Many of these mechanisms are problematic from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
 To minimize the risks of credential theft, we have work in flight covering three distinct areas:
-- Reducing the potential impact of Personal Access Token (PAT) theft by enabling administrators to automate PAT lifecycles and set policies on their lifetimes and scopes.
-- Reducing the need for PATs and other stealable secrets by supporting more secure alternatives.
+- Strengthen protections and reduce the potential impact of Personal Access Token (PAT) theft by enabling administrators to take advantage of PAT control plane policies.
+- Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives.
 - Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
 
 We expect this work to be a major focus of our efforts for multiple quarters. 
@@ -72,14 +72,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
-      **Personal Access Token (PAT) control plane and policies**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-   :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       PAT lifecycle APIs
    :::column-end:::
    :::column span="":::
@@ -107,40 +100,8 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
-   :::column-end:::
-   :::column span="":::
-     AAD Tenant Scoped Policies 
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q2
-   :::column-end:::
-   :::column span="":::
-      N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-   :::column-end:::
-   :::column span="":::
-      [Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
+      [**Associate all public APIs with PAT scopes**](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
    :::column-end:::
    :::column span="":::
       Platform
@@ -187,6 +148,49 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column span="":::
       CY2023 Q2 (Preview)</br>
       CY2023 H2 (GA) 
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Granular scopes for Azure Active Directory OAuth**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)  
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      CY2023 Q1
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Policies to disable alternate authentication credentials**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)  
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      Future
    :::column-end:::
    :::column span="":::
       N/A
@@ -362,9 +366,9 @@ On top of that, we are investing all new features to land in the New Boards Hub.
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="13"><strong>2022 Q4</strong></td>
+<tr><td rowspan="12"><strong>2022 Q4</strong></td>
     <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[copy work item attachment url](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment url</a></td><td>Boards</td><td>Future</td>
+    <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[copy work item attachment url](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment url</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support data-raw-source="[Emoji support in work item tags](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support)">Emoji support in work item tags</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/save-comment-improvements data-raw-source="[Save Comment Improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save Comment Improvements</a></td><td>Boards</td><td>Future</td>      
