@@ -24,7 +24,9 @@ With NuGet Package Restore you can install all your project's dependency without
 - [Create your first pipeline](../create-first-pipeline.md).
 - [Set up permissions for your pipelines](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
-## Restore packages with NuGet restore
+## Restore NuGet packages
+
+### [Classic](#tab/classic/)
 
 1. Navigate to your classic pipeline definition, and then select **Edit**.
 
@@ -43,7 +45,20 @@ With NuGet Package Restore you can install all your project's dependency without
 > [!NOTE]
 > Classic NuGet restore uses the [NuGetCommand@2](../tasks/package/nuget.md) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](../tasks/tool/nuget.md) if you want to use a different NuGet version.
 
-## Restore packages with NuGet CLI
+### [YAML](#tab/yaml/)
+
+```YAML
+- task: DotNetCoreCLI@2
+  displayName: dotnet restore
+  inputs:
+    command: restore                      ## The dotnet command to run. Options: build, push, pack, restore, run, test, and custom.
+    projects: '**/*.csproj'               ## Path to your csproj file
+    feedsToUse: 'select'                  ## Options: select, config
+    vstsFeed: '<projectName>/<feedName>'  ## Required when feedsToUse == Select
+    includeNuGetOrg: true                 ## Use packages from NuGet.org
+```
+
+### [NuGet CLI](#tab/cli/)
 
 Place your `nuget.config` in the same folder as your `.csproj` or `.sln`file. Your config file should look similar to the following example:
 
@@ -67,18 +82,7 @@ To restore your NuGet packages, run the following command in your project direct
 nuget.exe restore
 ```
 
-## Restore packages with the .NET Core CLI task
-
-```YAML
-- task: DotNetCoreCLI@2
-  displayName: dotnet restore
-  inputs:
-    command: restore                      ## The dotnet command to run. Options: build, push, pack, restore, run, test, and custom.
-    projects: '**/*.csproj'               ## Path to your csproj file
-    feedsToUse: 'select'                  ## Options: select, config
-    vstsFeed: '<projectName>/<feedName>'  ## Required when feedsToUse == Select
-    includeNuGetOrg: true                 ## Use packages from NuGet.org
-```
+* * *
 
 ## Restore packages from feeds in a different organization
 
