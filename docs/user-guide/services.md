@@ -1,7 +1,7 @@
 ---
 title: Overview of services
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18, engagement-fy23
 description: Understand the services provided in Azure DevOps. 
 ms.subservice: azure-devops-new-user
 ms.topic: overview
@@ -21,6 +21,7 @@ Azure DevOps provides an integrated set of services and tools to manage your sof
 Azure DevOps delivers services through a client/server model. You can use most of the services via the web interface, which you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
 ::: moniker range=">= azure-devops-2019"
+
 Access Azure DevOps through the left navigational bar, as shown in the following image. 
 For more information, see the following associated articles.
 
@@ -29,6 +30,8 @@ For more information, see the following associated articles.
       :::image type="content" source="../organizations/projects/media/about-projects/services-hubs-vert.png" alt-text="Screenshot of services on the left navigational menu.":::
    :::column-end:::
    :::column span="1":::
+
+
 - [Dashboards](../report/dashboards/overview.md) 
 - [Wiki](../project/wiki/about-readme-wiki.md)
 - [Boards](../boards/get-started/what-is-azure-boards.md)
@@ -38,6 +41,7 @@ For more information, see the following associated articles.
 - [Artifacts](../artifacts/start-using-azure-artifacts.md)
 :::row-end:::
 :::column-end:::
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -80,7 +84,7 @@ Source or version control systems allow developers to collaborate on code and tr
 
 Our systems support two types of source control: [Git](../repos/git/index.yml) or [Team Foundation Version Control (TFVC)](../repos/tfvc/index.yml). You can check in files and organize files within folders, branches, and repositories in both systems.
 
-**Git**
+### Git repos
 
 With Git, each developer has a copy on their dev machine of the source repository, including all branch and history information. Each developer works directly with their own local repository and changes are shared between repositories as a separate step.
 
@@ -89,11 +93,11 @@ Developers commit each set of changes and do version control operations like his
 > [!NOTE]
 > Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
 
-**TFVC**
+### TFVC
 
 With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-**Access Git and TFVC**
+### Access Git and TFVC**
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -107,7 +111,7 @@ From **Repos**, you gain access to your source control Git-based or Team Foundat
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
-<img src="media/services/code-git-hub.png" alt="Code, Git, files page" />
+:::image type="content" source="media/code-git-hub.png" alt-text="Screenshot of the Code, Git, files page.":::
 
 ::: moniker-end
 
@@ -189,12 +193,12 @@ Use pipelines to implement continuous integration and continuous delivery.
     - Track your releases as they're deployed to various environments
 
 For more information, see [Continuous integration on any platform](../pipelines/get-started/what-is-azure-pipelines.md).
+
 ## Test Plans
 
-Test features support manual, exploratory, and continuous testing.  
-
 ::: moniker range=">= azure-devops-2019"
-**Test Plans** supports creating and managing manual tests.
+
+**Test Plans** supports creating and managing manual, exploratory, and continuous tests.
 
 ![Test Plans](media/test-plans-vert.png)
 ::: moniker-end
@@ -217,6 +221,7 @@ With test features, you gain access to the following features:
 - Real-time charts for tracking test activity
 
 For more information, see [Azure Test Plans documentation](../test/index.yml).
+
 ## Collaboration services
 
 Azure DevOps also provides the following collaboration services.
@@ -260,14 +265,6 @@ For continuous delivery to Azure from Azure DevOps, see [Automatically build and
 ## Administrative services
 
 There are features and tasks associated with administering a collaborative software development environment. You can complete most of these tasks through the web portal. For more information, see [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md).
-
-::: moniker range=">= azure-devops-2019"
-:::image type="content" source="media/project-settings.png" alt-text="Screenshot of project settings.":::
-::: moniker-end
-
-::: moniker range="tfs-2018"
-:::image type="content" source="media/tour-admin-project-level.png" alt-text="Screenshot of product backlog.":::
-::: moniker-end
 
 ## Related articles
 
