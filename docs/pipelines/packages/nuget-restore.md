@@ -7,7 +7,7 @@ ms.reviewer: rabououn
 author: ramiMSFT
 ms.custom: "seodec18, contperf-fy21q1"
 ms.topic: conceptual
-ms.date: 10/29/2021
+ms.date: 10/10/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -84,29 +84,33 @@ nuget.exe restore
 
 To restore NuGet packages from feeds in a different Azure DevOps organization, you must use a personal access token to authenticate.
 
+#### Create a personal access token
+
 1. Navigate to your Azure DevOps organization, and then select **User settings** > **Personal Access Tokens**.
 
     :::image type="content" source="media/pat.png" alt-text="Screenshot showing how to create a personal access token.":::
 
 1. Create a personal access token with **Packaging (read)** scope and copy your PAT to the clipboard.
 
+#### Restore packages
+
 ### [Classic](#tab/classic/)
 
-1. Navigate to your pipeline definition and select the **NuGet restore** task. Make sure you're using version 2 or greater.
+1. Navigate to your pipeline definition and select the **NuGet restore** task. Make sure you're using version 2 of the task.
 
     :::image type="content" source="media/nuget-v-2.png" alt-text="Screenshot showing the NuGet restore task version.":::
 
-1. Select the **Feeds and authentication** section, and then select **Feeds in my NuGet.config** option.
-1. Enter the path to your NuGet.config file.
+1. Select **Feeds and authentication**, and then select **Feeds in my NuGet.config**.
+1. Select the path of your *NuGet.config* file.
 1. Select **New** to add **Credentials for feeds outside this organization/collection**.
 
     :::image type="content" source="media/feeds-and-authentication.png" alt-text="Screenshot showing how to configure the NuGet restore task.":::
 
-1. Select **External Azure DevOps Server**, and then enter your feed URL (make sure it matches what's in your NuGet.config), a service connection name, and the personal access token you created earlier. Select **Save** when you are done.
+1. Select **External Azure DevOps Server**, and then enter your feed URL (make sure it matches what's in your NuGet.config), your service connection name, and the personal access token you created earlier. Select **Save** when you're done.
 
-    :::image type="content" source="media/external-server-service-connection.png" alt-text="Screenshot showing how to add a NuGet service connection.":::
+    :::image type="content" source="media/external-server-service-connection.png" alt-text="Screenshot showing how to add a new service connection.":::
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 ### [YAML](#tab/yaml/)
 
