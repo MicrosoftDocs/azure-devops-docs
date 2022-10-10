@@ -35,6 +35,7 @@ To minimize the risks of credential theft, we have work in flight covering three
 - Reducing the potential impact of Personal Access Token (PAT) theft by enabling administrators to automate PAT lifecycles and set policies on their lifetimes and scopes.
 - Reducing the need for PATs and other stealable secrets by supporting more secure alternatives.
 - Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
+
 We expect this work to be a major focus of our efforts for multiple quarters. 
 
 :::row:::
@@ -76,8 +77,10 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAT lifecycle APIs
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+      PAT lifecycle APIs
    :::column-end:::
    :::column span="":::
       Platform
@@ -104,8 +107,10 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAD Tenant Scoped Policies 
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+     AAD Tenant Scoped Policies 
    :::column-end:::
    :::column span="":::
       Platform
