@@ -281,7 +281,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Copy work item attachment URL](../release-notes//roadmap//2022/get-attachment-url)
+      [Copy work item attachment URL](../release-notes//roadmap/2022/get-attachment-url)
    :::column-end:::
    :::column span="":::
       Boards
