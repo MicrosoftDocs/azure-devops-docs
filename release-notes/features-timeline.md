@@ -137,8 +137,10 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+      [Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
    :::column-end:::
    :::column span="":::
       Platform
