@@ -26,7 +26,7 @@ Access Azure DevOps through the left navigational bar, as shown in the following
 For more information, see the following associated articles.
 
 :::row:::
-   :::column span="1":::  
+   :::column span="2":::  
       :::image type="content" source="../organizations/projects/media/about-projects/services-hubs-vert.png" alt-text="Screenshot of services on the left navigational menu.":::
    :::column-end:::
    :::column span="1":::
@@ -78,6 +78,7 @@ You can do the following tasks in **Dashboards**:
 - Go to different areas of your project quickly
 
 For more information, see [Dashboards](../report/dashboards/dashboards.md).
+
 ## Repos
 
 Source or version control systems allow developers to collaborate on code and track changes made to the code base. Source control is an essential tool for multi-developer projects.
@@ -97,7 +98,7 @@ Developers commit each set of changes and do version control operations like his
 
 With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-### Access Git and TFVC**
+### Access Git and TFVC
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -142,13 +143,7 @@ From **Work**, you gain access to Agile tools to support planning and tracking w
 
 ::: moniker-end
 
-Our systems provide several types of work items that you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that can be updated, as progress is made.
-
-For planning purposes, you have access to several types of backlogs and boards to support the main Agile methods—Scrum, Kanban, or Scrumban.
-
-Project managers and developers share information by tracking work items on the backlogs and boards. Useful charts and dashboards complete the picture and help teams monitor progress and trends.
-
-You can do the following tasks:
+You can do the following tasks with boards.
 
 - Add and update work items
 - Define work item queries, and create status and trend charts based on those queries
@@ -158,6 +153,12 @@ You can do the following tasks:
 - Visualize the workflow and update the status by using Kanban boards
 - Manage portfolios by grouping stories under features and grouping features under epics
 - Use task boards during daily Scrum meetings to review work that's completed, remaining, or blocked
+
+Our systems provide several types of work items that you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that can be updated, as progress is made.
+
+For planning purposes, you have access to several types of backlogs and boards to support the main Agile methods—Scrum, Kanban, or Scrumban.
+
+Project managers and developers share information by tracking work items on the backlogs and boards. Useful charts and dashboards complete the picture and help teams monitor progress and trends.
 
 See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) for an overview of each.
 
