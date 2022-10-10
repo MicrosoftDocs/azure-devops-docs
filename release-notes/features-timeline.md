@@ -287,7 +287,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
       Boards
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q4
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
    :::column-end:::
    :::column span="":::
       Future
