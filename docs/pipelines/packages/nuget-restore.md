@@ -16,15 +16,15 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With NuGet Package Restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines.
+With NuGet Package Restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both Classic and YAML Pipelines.
 
 ### Prerequisites
 
-- [Set up your solution](../../artifacts/nuget/consume.md) to consume packages from Azure Artifacts feed.
+- [Set up your project](../../artifacts/nuget/consume.md) to consume packages from Azure Artifacts feed.
 - [Create your first pipeline](../create-first-pipeline.md).
 - [Set up permissions for your pipelines](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
-## Restore NuGet packages
+## Restore NuGet packages from a feed
 
 ### [Classic](#tab/classic/)
 
@@ -58,7 +58,9 @@ With NuGet Package Restore you can install all your project's dependency without
     includeNuGetOrg: true                 ## Use packages from NuGet.org
 ```
 
-### [NuGet CLI](#tab/cli/)
+* * *
+
+## Restore NuGet packages locally
 
 Place your `nuget.config` in the same folder as your `.csproj` or `.sln`file. Your config file should look similar to the following example:
 
@@ -82,9 +84,7 @@ To restore your NuGet packages, run the following command in your project direct
 nuget.exe restore
 ```
 
-* * *
-
-## Restore packages from feeds in a different organization
+## Restore NuGet packages from feeds in a different organization
 
 To restore NuGet packages from feeds in a different Azure DevOps organization, you must use a personal access token to authenticate.
 
