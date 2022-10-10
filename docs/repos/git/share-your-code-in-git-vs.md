@@ -116,11 +116,11 @@ You can share your work with others by publishing your local Git repo to an **Az
 
    :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-git-menu-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2022 menu." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-git-menu-expanded.png":::
 
-1. In the Create a Git repository dialog, select **GitHub**. Enter any required values under **Create a new GitHub repository**. Then select **Push**.
+1. In the **Create a Git repository** dialog, select **GitHub**. Enter any required values under **Create a new GitHub repository**. Then select **Push**.
 
-:::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-new-git-repository-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' dialog for Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-new-git-repository-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-new-git-repository-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' dialog for Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-new-git-repository-expanded.png":::
 
-You can verify that the repo is created by going to GitHub and searching for your repo name in your account.
+   You can verify that the repo is created by going to GitHub and searching for your repo name in your account.
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -208,7 +208,7 @@ It's good practice to review the code changes in your commit before publishing. 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. To see what's changed in a commit, select **Git** > **Manage Branches** to open the **Git Repository** window.\
+1. To see what's changed in a commit, select **Git** > **Manage Branches** to open the **Git Repository** window.
 
    :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/manage-branches-git-menu-inline.png" border="true" alt-text="Screenshot of 'Manage Branches' menu item in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/manage-branches-git-menu-expanded.png":::
 
