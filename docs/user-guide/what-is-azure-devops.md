@@ -21,13 +21,13 @@ You can work in the cloud using [Azure DevOps Services](services.md) or on-premi
 
 Azure DevOps provides integrated features that you can access through your web browser or IDE client. You can use all the services included with Azure DevOps, or choose just what you need to complement your existing workflows.
 
-|Standalone service |Description  |
-|---------|---------|
+|Standalone service   |Description  |
+|---------------------|-------------|
 |[Azure Boards](https://azure.microsoft.com/services/devops/boards/)| Delivers a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods. For more information about Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md).      |
 |[Azure Repos](https://azure.microsoft.com/services/devops/repos/)| Provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code. For more information about Azure Repos, see [What is Azure Repos?](../repos/get-started/what-is-repos.md).          |
 |[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)| Provides build and release services to support continuous integration and delivery of your applications. For more information about Azure Pipelines, see [What is Azure Pipelines?](../pipelines/get-started/what-is-azure-pipelines.md).        |
-|Azure Test Plans     | Provides several tools to test your apps, including manual/exploratory testing and continuous testing. For more information about Azure Test Plans, see [Overview of Azure Test Plans](../test/overview.md).       |
-|Azure Artifacts  | Allows teams to share packages such as Maven, npm, NuGet, and more from public and private sources and integrate package sharing into your pipelines. For more information about Azure Artifacts, see [Overview of Azure Artifacts](../pipelines/artifacts/artifacts-overview.md).        |
+|[Azure Test Plans](https://azure.microsoft.com/products/devops/test-plans/)   | Provides several tools to test your apps, including manual/exploratory testing and continuous testing. For more information about Azure Test Plans, see [Overview of Azure Test Plans](../test/overview.md).       |
+|[Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts/)  | Allows teams to share packages such as Maven, npm, NuGet, and more from public and private sources and integrate package sharing into your pipelines. For more information about Azure Artifacts, see [Overview of Azure Artifacts](../pipelines/artifacts/artifacts-overview.md).        |
 
 Azure DevOps supports adding extensions and integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
