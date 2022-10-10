@@ -150,14 +150,14 @@ You can customize the work-tracking experience in different ways, depending on t
 
 **Azure DevOps Services**
 
-Azure DevOps Service uses the **Inheritance** process model, which supports WYSIWYG customization.
+Azure DevOps Services uses the **Inheritance** process model, which supports WYSIWYG customization.
 
 **Azure DevOps Server**
 
 With Azure DevOps Server, you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
 Azure DevOps Server 2018 and earlier versions only has access to the **On-premises XML** process model.
 Although the **On-premises XML** process model option is powerful, it can cause various issues. The main issue is that processes for existing projects aren't automatically updated.
-<!--> 
+<!--
 commenting out, since we no longer address versions before 2018
 Azure DevOps Server 2013, for example, introduced several new features that depended on new work-item types and other process template
 changes. When you upgrade from 2012 to 2013, each project collection gets new versions of each of the
@@ -183,7 +183,7 @@ Azure DevOps Services and Azure DevOps Server offer the following tools that giv
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
 - [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization. To learn more about the Analytics service, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 
-**2018**
+**Azure DevOps Server 2018**
 
 - [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 - [SQL Server Reporting Services (SSRS) reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports) are available when Azure DevOps Server is configured with SQL Server Analysis Services.   
