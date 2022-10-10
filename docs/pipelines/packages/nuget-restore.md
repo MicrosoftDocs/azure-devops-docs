@@ -20,9 +20,10 @@ With NuGet Package Restore you can install all your project's dependency without
 
 ### Prerequisites
 
-- [Set up your project](../../artifacts/nuget/consume.md) to consume packages from Azure Artifacts feed.
-- [Create your first pipeline](../create-first-pipeline.md).
-- [Set up permissions for your pipelines](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
+- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
+- [Set up your project](../../artifacts/nuget/nuget-exe.md).
+- [Set up your pipeline permissions](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
 ## Restore NuGet packages from a feed
 
@@ -38,7 +39,7 @@ With NuGet Package Restore you can install all your project's dependency without
 
 1. If you want to include packages from NuGet.org, check the **Use packages from NuGet.org** checkbox.
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
     :::image type="content" source="media/nuget-restore-classic.png" alt-text="Screenshot that shows how to configure the NuGet restore task.":::
 
