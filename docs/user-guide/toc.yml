@@ -1,7 +1,7 @@
 - name: What is Azure DevOps?
   href: what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: Overview of services
-  href: services.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+  href: services.md
 - name: Compare Azure DevOps hosted vs. on-premises
   href: about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: Get started for end users
