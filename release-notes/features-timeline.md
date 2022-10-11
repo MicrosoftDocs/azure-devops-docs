@@ -174,16 +174,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="2":::
       [**Policies to disable alternate authentication credentials**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)  
    :::column-end:::
@@ -246,27 +236,13 @@ Finally, most of the new features will only be available in the New Boards Hub. 
 :::row-end:::
 :::row:::
    :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Swimlane rules on Kanban board](../release-notes/roadmap/2023/work-item-team-rules)
+      [Automated team work item rules](../release-notes/roadmap/2023/work-item-team-rules)
    :::column-end:::
    :::column span="":::
       Boards
    :::column-end:::
    :::column span="":::
-      2023 Q1/Q2
+      2023 Q2
    :::column-end:::
    :::column span="":::
       Future
