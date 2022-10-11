@@ -320,16 +320,16 @@ Host ssh.dev.azure.com vs-ssh.visualstudio.com
 
 ### Q: I use [PuTTY](https://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
-**A:** Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
+**A:** Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**.
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
 Copy your public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
 
 ### Q: How can I verify that the public key I uploaded is the same key as my local key?
 
 **A:** You can verify the fingerprint of the public key uploaded with the one displayed in your profile through the following `ssh-keygen` command run against your public key using
-  the `bash` command line. You'll need to change the path and the public key filename if you aren't using the defaults.
-  
-```
+  the command line. You'll need to change the path and the public key filename if you aren't using the defaults.
+
+```sh
 ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
 ```
 
@@ -337,65 +337,63 @@ You can then compare the MD5 signature to the one in your profile. This check is
 pasting in the public key into the **Key Data** field when adding the key to Azure DevOps.
 
 <a name="migrate"></a>
- 
+
 ### Q: How can I start using SSH in a repository where I'm currently using HTTPS?
- 
+
 **A:** You'll need to update the `origin` remote in Git to change over from an HTTPS to SSH URL. Once you have the [SSH clone URL](#step-3-clone-the-git-repository-with-ssh), run the following command:
 
 ```
-git remote set-url origin git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
+git remote set-url origin <SSH URL to your repository>
 ```
 
-You can now run any Git command that connects to `origin`.
+Git commands accessing the remote called `origin` will now use SSH.
 
 <a name="newkeys"></a>
 
 ### Q: I'm using Git LFS with Azure DevOps Services and I get errors when pulling files tracked by Git LFS.
 
 **A:** Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
- 
+
+<a name="non-default-keys"></a>
+
 ### Q: How can I use a non-default key location, that is, not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
 
-**A:** To use keys created with `ssh-keygen` in a different place than the default, perform these two tasks:
+**A:** To use a key stored in a different place than the default, perform these two tasks:
 
 1. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH won't use the keys.
-2. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
+2. You must let SSH know the location of the keykey, e.g. by specifying it as an "Identity" in the SSH config:
 
-```
-ssh-add /home/jamal/.ssh/id_jamal.rsa
-```
+   ```
+   Host ssh.dev.azure.com
+     IdentityFile ~/.ssh/id_rsa_azure
+     IdentitiesOnly yes
+   ```
 
-On Windows, before running `ssh-add`, you'll need to run the following command from included in Git for Windows:
+The `IdentitiesOnly yes` setting ensures that SSH will not use any other available identity to authenticate. This is particular important if more than one identity is available.
 
-```
-start-ssh-agent.cmd
-```
+### Q: I have multiple SSH keys. How do I use the correct SSH key for Azure DevOps?
 
-This command runs in both PowerShell and the Command Prompt. If you're using Git Bash, the command you need to use is:
+**A:** Generally, if you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
 
-```
-eval `ssh-agent`
-```
+However, this doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured. Azure DevOps will blindly accept the first key that the client provides during authentication. If that key is invalid for the requested repository, the request will fail without attempting other available keys due to the following error:
 
-You can find `ssh-add` as part of the Git for Windows distribution and also run it in any shell environment on Windows. 
+> ```
+> remote: Public key authentication failed.
+> fatal: Could not read from remote repository.
+> ```
 
-On macOS and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
-takes care of starting `ssh-agent` for you.
+For Azure DevOps, you'll need to configure SSH to explicitly use a specific key file. The procedure is the same as when using a key stored in a [non-default location](use-ssh-keys-to-authenticate.md#non-default-keys). Simply tell SSH to use the correct SSH key for the Azure DevOps host.
 
-### Q: I have multiple SSH keys. How do I use different SSH keys for different SSH servers or repos?
+### Q: How do I use different SSH keys for different organisations on Azure DevOps?
 
-**A:** If you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
-
-But, this process doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured.  Azure DevOps blindly accepts the first key that the client provides during authentication.  If that key is invalid for the requested repo, the request fails with the following error:
+**A:** Azure DevOps will blindly accept the first key that the client provides during authentication. If that key is invalid for the requested repository, the request will fail with the following error:
 
 ```
 remote: Public key authentication failed.
 fatal: Could not read from remote repository.
 ```
 
-For Azure DevOps, configure SSH to explicitly use a specific key file. One way to do so is to edit your `~/.ssh/config` file (for example, `/home/jamal/.ssh` or `C:\Users\jamal\.ssh`) as follows:
-
-::: moniker range="= azure-devops"
+However, you can modify your SSH config to differentiate between different organisations and provide different keys for each. To do this you will need to use host aliases to create separate `Host` sections in your SSH configuration. This is because all hosted Azure DevOps URLs have the same hostname (`ssh.dev.azure.com`), so SSH has no way to distinguish them by default.
 
 ```
 # The settings in each Host section are applied to any Git SSH remote URL with a
@@ -408,31 +406,6 @@ For Azure DevOps, configure SSH to explicitly use a specific key file. One way t
 # * On Windows, ~/.ssh/your_private_key maps to %USERPROFILE%\.ssh\your_private_key,
 #   e.g. C:\Users\<username>\.ssh\your_private_key.
 
-# Most common scenario: to use the same key across all hosted Azure DevOps
-# organizations, add a Host entry like this:
-Host ssh.dev.azure.com
-  IdentityFile ~/.ssh/your_private_key
-  IdentitiesOnly yes
-
-# This model also works if you still use the older SSH URLs with a
-# hostname of vs-ssh.visualstudio.com:
-Host vs-ssh.visualstudio.com
-  IdentityFile ~/.ssh/your_private_key
-  IdentitiesOnly yes
-
-# OpenSSH 8.7 has DEPRECATED RSA. IF using OpenSSH version > 8.6 you need to 
-# add the 'HostkeyAlgorithms' and 'PubkeyAcceptedAlgorithms' entries below. You can 
-# check the version of OpenSSH you're using by running the command 'ssh -v localhost'    
-Host ssh.dev.azure.com
-  IdentityFile ~/.ssh/id_rsa
-  HostkeyAlgorithms +ssh-rsa
-  PubkeyAcceptedAlgorithms +ssh-rsa   
-
-# Less common scenario: if you need different keys for different organizations,
-# you'll need to use host aliases to create separate Host sections.
-# This is because all hosted Azure DevOps URLs have the same hostname
-# (ssh.dev.azure.com), so SSH has no way to distinguish them by default.
-#
 # Imagine that we have the following two SSH URLs:
 # * git@ssh.dev.azure.com:v3/Fabrikam/Project1/fab_repo
 #   * For this, we want to use `fabrikamkey`, so we'll create `devops_fabrikam` as
@@ -447,23 +420,14 @@ Host devops_fabrikam
   HostName ssh.dev.azure.com
   IdentityFile ~/.ssh/private_key_for_fabrikam
   IdentitiesOnly yes
+
 Host devops_contoso
   HostName ssh.dev.azure.com
   IdentityFile ~/.ssh/private_key_for_contoso
   IdentitiesOnly yes
-#
-# Then, instead of using the real URLs, tell Git you want to use these URLs:
-# * git@devops_fabrikam:v3/Fabrikam/Project1/fab_repo
-# * git@devops_contoso:v3/Contoso/Project2/con_repo
-#
-
-# At the end of the file, you can put global defaults for other SSH hosts you
-# may connect to.  Note that "*" also matches any hosts that match the sections
-# above, and remember that SSH uses the first matching line for each parameter name.
-Host *
 ```
 
-::: moniker-end
+Afterwards, instead of using the real URLs, tell Git you want to use these URLs for each repository as remote by replacing the hostname in the existing remotes with `devops_fabrikam` and `devops_contoso` respectively. For example `git@ssh.dev.azure.com:v3/Fabrikam/Project1/fab_repo` would become `git@devops_fabrikam:v3/Fabrikam/Project1/fab_repo`.
 
 ### Q: What notifications may I receive about my SSH keys?
 
@@ -473,19 +437,20 @@ Host *
 
 ### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
 
-**A:** If you receive a notification of an SSH key being registered and you didn't manually upload it to the service, your credentials may have been compromised. 
+**A:** If you receive a notification of an SSH key being registered and you didn't manually upload it to the service, your credentials may have been compromised.
 
-The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.
+The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you're an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.
 
-### Q: What do I do if I'm still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm`?
+### Q: What do I do if I'm still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm` or `corresponding algo not in PubkeyAcceptedAlgorithms`?
 
 **A:** Some Linux distributions, such as Fedora Linux, have crypto policies that require stronger SSH signature algorithms than Azure DevOps supports (as of January 2021). There's an open [feature request](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html) to add this support.
 
 You can work around the issue by adding the following code to your SSH configuration (`~/.ssh/config`):
 
-```sshconfig
-Host ssh.dev.azure.com
-  PubkeyAcceptedKeyTypes=ssh-rsa
+```
+Host ssh.dev.azure.com vs-ssh.visualstudio.com
+  PubkeyAcceptedKeyTypes +ssh-rsa
 ```
 
-Replace `ssh.dev.azure.com` with the correct host name if you use Azure DevOps Server.
+> [!TIP]
+> For self-hosted instances of Azure DevOps Server and TFS use the appropriate hostname in the `Host` line instead of `ssh.dev.azure.com vs-ssh.visualstudio.com`.
