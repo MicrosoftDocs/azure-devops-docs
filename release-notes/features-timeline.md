@@ -49,13 +49,13 @@ We expect this work to be a major focus of our efforts for multiple quarters.
     </thead>
     <tbody>
       <tr>
-         <td>PAT lifecycle APIs</td>
+         <td><a href=https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability data-raw-source="[PAT lifecycle APIs](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability)">PAT lifecycle APIs</a></td>
          <td>Platform</td>
-         <td><img src="roadmap/2023/media/checkmark.png">2022 Q1</td>
-         <td><img src="roadmap/2023/media/checkmark.png">Azure DevOps Server 2022</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q4</td>
+         <td>2022.1</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Associate all public APIs with PAT scopes</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Control plane for personal access tokens (PAT)](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Control plane for personal access tokens (PAT)</a></td>
          <td>Platform</td>
          <td><img src="roadmap/2023/media/checkmark.png">2022 Q4</td>
          <td>2022.1</td>
