@@ -268,31 +268,55 @@ Associate the public key generated in the previous step with your user ID.
 
 ## Questions and troubleshooting
 
-<a name="rememberpassphrase"></a>
+### Q: SSH cannot establish a connection. What should I do?
 
-### Q: After I run `git clone`, I get the following error. What should I do?
+**A:** There are multiple different problems that you may experience:
 
-```
-Host key verification failed. 
-fatal: Could not read from remote repository.
-```
-
-**A:** Manually record the SSH key by running:
-`ssh-keyscan -t rsa ssh.dev.azure.com >> ~/.ssh/known_hosts`
-
-### Q: How can I have Git remember the passphrase for my key on Windows?
-
-**A:** Run the following command included in Git for Windows to start up the `ssh-agent` process in PowerShell or the Windows Command Prompt. `ssh-agent` caches your passphrase so you don't have to provide it every time you connect to your repo.
-
-```
-start-ssh-agent.cmd
+```Output
+Unable to negotiate with <IP> port 22: no matching host key type found. Their offer: ssh-rsa
 ```
 
-If you're using the Bash shell (including Git Bash), start ssh-agent with:
+Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
 
 ```
-eval `ssh-agent`
+Host ssh.dev.azure.com vs-ssh.visualstudio.com
+  HostkeyAlgorithms +ssh-rsa
 ```
+
+> [!IMPORTANT]
+> OpenSSH deprecated the `ssh-rsa` public key signature algorithm in [version 8.2](https://www.openssh.com/txt/release-8.2) and disabled it by default in [version 8.8](https://www.openssh.com/txt/release-8.8).
+
+```Output
+Unable to negotiate with <IP> port 22: no matching MAC found. Their offer: hmac-sha2-256,hmac-sha2-512
+```
+
+Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+
+```
+Host ssh.dev.azure.com vs-ssh.visualstudio.com
+  MACs +hmac-sha2-512,+hmac-sha2-256
+```
+
+```Output
+Unable to negotiate with <IP> 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256
+```
+
+Modify your SSH config to downgrade your security settings for Azure DevOps by adding the following to your `~/.ssh/config` (`%UserProfile%\.ssh\config` on Windows) file:
+
+```
+Host ssh.dev.azure.com vs-ssh.visualstudio.com
+  KexAlgorithms +diffie-hellman-group-exchange-sha256,+diffie-hellman-group14-sha1,+diffie-hellman-group1-sha1
+```
+
+> [!IMPORTANT]
+> The key exchange algorithm `diffie-hellman-group1-sha1` has been disabled by default in [version 6.9](https://www.openssh.com/txt/release-6.9) of OpenSSH and `diffie-hellman-group14-sha1` in [version 8.2](https://www.openssh.com/txt/release-8.2).
+
+> [!TIP]
+> For self-hosted instances of Azure DevOps Server and TFS use the appropriate hostname in the `Host` line instead of `ssh.dev.azure.com vs-ssh.visualstudio.com`.
+
+### Q: How can I have Git remember the passphrase for my key?
+
+**A:** You can use an SSH Agent for that. Linux, macOS, and Windows (starting with [Windows 10 (build 1809)](/windows-server/administration/openssh/openssh_overview) or by using Git for Windows with Git Bash) all ship with an SSH Agent. The SSH Agent can be used to cache your SSH keys for repeated use. Please consult your SSH vendor's manual for details on how to use it.
 
 ### Q: I use [PuTTY](https://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
@@ -438,51 +462,6 @@ Host devops_contoso
 # above, and remember that SSH uses the first matching line for each parameter name.
 Host *
 ```
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-```
-# The settings in each Host section are applied to any Git SSH remote URL with a
-# matching hostname.
-# Generally:
-# * SSH uses the first matching line for each parameter name, e.g. if there's
-#   multiple values for a parameter across multiple matching Host sections
-# * "IdentitiesOnly yes" prevents keys cached in ssh-agent from being tried before
-#   the IdentityFile values we explicitly set.
-# * On Windows, ~/.ssh/your_private_key maps to %USERPROFILE%\.ssh\your_private_key,
-#   e.g. C:\Users\<username>\.ssh\your_private_key.
-
-# Say your on-premises Azure DevOps Server instance has SSH URLs like this:
-#   ssh://someHost:22/someCollection/some_project/_git/some_repo
-# Add the following Host section:
-Host someHost
-  IdentityFile ~/.ssh/your_private_key
-  IdentitiesOnly yes
-
-# At the end of the file, you can put global defaults for other SSH hosts you
-# may connect to.  Note that "*" also matches any hosts that match the sections
-# above, and remember that SSH uses the first matching line for each parameter name.
-Host *
-```
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
-### Q: How do I fix errors that mention "no matching key exchange method found"?
-
-**A:** Git for Windows 2.25.1 shipped with a new version of OpenSSH, which removed some key exchange protocols by default.
-Specifically, `diffie-hellman-group14-sha1` has been identified as problematic for some customers.
-You can work around the problem by adding the following to your SSH configuration (`~/.ssh/config`):
-
-```
-Host <your-azure-devops-host>
-    KexAlgorithms +diffie-hellman-group14-sha1
-```
-
-Replace `<your-azure-devops-host>` with the hostname of your server, like `tfs.mycompany.com`.
 
 ::: moniker-end
 
