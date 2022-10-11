@@ -47,15 +47,13 @@ The following steps cover configuration of SSH key authentication on the followi
 ### Step 1: Create your SSH keys
 
 >[!NOTE]
-> If you've already created SSH keys on your system, skip this step and [configure your SSH keys](use-ssh-keys-to-authenticate.md#configuration).   
+> If you've already created RSA SSH keys on your system, skip this step and [configure your SSH keys](use-ssh-keys-to-authenticate.md#configuration).
+> To verify this go to your home directory and look into the `.ssh` folder (`%UserProfile%\.ssh\` on Windows or `~/.ssh/` on Linux, macOS, and Windows with Git Bash). If you see two files named `id_rsa` and `id_rsa.pub` respectively continue with [configuring your SSH keys](use-ssh-keys-to-authenticate.md#configuration).
 
-These commands let you create new default SSH keys, which overwrite existing default keys. Before you continue, check your 
-`~/.ssh` folder (for example, /home/jamal/.ssh or C:\Users\jamal\\.ssh) and look for the following files:
+To use key-based authentication, you first need to generate public/private key pairs for your client. ssh-keygen.exe is used to generate key files and the algorithms DSA, RSA, ECDSA, or Ed25519 can be specified. If no algorithm is specified, RSA is used.
 
-- _id_rsa_
-- _id_rsa.pub_
-
-If these files exist, then you already created SSH keys. You can overwrite the keys with the following commands, or skip this step and [configure your SSH keys](use-ssh-keys-to-authenticate.md#configuration) to reuse these keys.
+>[!NOTE]
+> The only SSH key type supported by Azure DevOps is _RSA_.
 
 Create your SSH keys with the `ssh-keygen` command from the `bash` prompt. This command creates a 3072-bit RSA key for use with SSH. You can give a passphrase for your private key when prompted&mdash;this passphrase provides another layer of security for your private key. 
 If you give a passphrase, be sure to [configure the SSH agent](use-ssh-keys-to-authenticate.md#rememberpassphrase) to cache your passphrase so you don't have to enter it every time you connect.
