@@ -17,9 +17,9 @@ Azure Artifacts enable developers to store and manage their packages and control
 ## Publish Artifacts
 
 > [!NOTE]
-> Publish Artifacts is not supported in release pipelines. It is only supported in build pipelines, yaml pipelines, and multi-stage pipelines.
+> Publish pipeline artifacts is not supported in release pipelines. It is only supported in build pipelines, multi-stage pipelines, and yaml pipelines.
 
-You can publish your Artifacts at any stage of your pipeline using YAML or the classic editor. If you want to publish your Artifacts manually, you can use the Azure CLI to run the `az pipelines runs artifact` command. You will not be billed for storing your Pipeline Artifacts or Pipeline caching.
+You can publish your Artifacts at any stage of your pipeline using YAML or the classic editor. You will not be billed for storing your Pipeline Artifacts or using Pipeline caching.
 
 # [YAML](#tab/yaml)
 
@@ -34,10 +34,7 @@ steps:
 
 - **targetPath**: Path to the folder or file you want to publish. (Required)
 - **artifactType**: Artifacts publish location. (Required). Options: pipeline, filepath. Default value: pipeline.
-- **artifactName**: Name of your Artifact. (Optional)
-
-> [!NOTE]
-> The `PublishBuildArtifacts@1` task is deprecated, we recommend that you use the `PublishPipelineArtifact@1` task for faster performance.
+- **artifactName**: Name of your Artifact. (Optional).
 
 # [Classic](#tab/classic)
 
