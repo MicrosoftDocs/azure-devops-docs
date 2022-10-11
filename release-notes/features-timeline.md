@@ -780,7 +780,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="2"><strong>2023 Q2</strong></td>
+        <td rowspan="3"><strong>2023 Q2</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[OpenID Connect for secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">OpenID Connect for secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -789,6 +789,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
         <td>Platform</td>
         <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automate rules for updating work items](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td>Boards</td>
+        <td>Future</td>
       </tr>
       <tr>
         <td rowspan="10"><strong>Future</strong></td>
