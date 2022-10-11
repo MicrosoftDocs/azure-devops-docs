@@ -1,12 +1,12 @@
 ---
-title: Pause and resume manual test execution.
+title: Sort test plans by any column
 author: aaronhallberg
 ms.author: aaronha
 ms.date: 10/10/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Pause and resume manual test execution in Azure Test Plans
+description: Sort test plans by any column
 hide_comments: true
 ---
 
