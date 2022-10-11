@@ -55,37 +55,55 @@ To use key-based authentication, you first need to generate public/private key p
 >[!NOTE]
 > The only SSH key type supported by Azure DevOps is _RSA_.
 
-Create your SSH keys with the `ssh-keygen` command from the `bash` prompt. This command creates a 3072-bit RSA key for use with SSH. You can give a passphrase for your private key when prompted&mdash;this passphrase provides another layer of security for your private key. 
-If you give a passphrase, be sure to [configure the SSH agent](use-ssh-keys-to-authenticate.md#rememberpassphrase) to cache your passphrase so you don't have to enter it every time you connect.
+To generate key files using the RSA algorithm, run the following command from a PowerShell or another shell such as `bash` on your client:
 
+```sh
+ssh-keygen
 ```
-$ ssh-keygen -C "jamal@fabrikam.com"
+
+The output from the command should display the following output (where "username" is replaced by your username):
+
+```Output
 Generating public/private rsa key pair.
-Enter file in which to save the key (/c/Users/jamal/.ssh/id_rsa):
+Enter file in which to save the key (C:\Users\username/.ssh/id_rsa):
+```
+
+You can press Enter to accept the default, or specify a path and/or filename where you would like your keys to be generated.
+At this point, you'll be prompted to use a passphrase to encrypt your private key files. The passphrase can be empty but it's not recommended.
+The passphrase works with the key file to provide two-factor authentication.
+
+```Output
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in /c/Users/jamal/.ssh/id_rsa.
-Your public key has been saved in /c/Users/jamal/.ssh/id_rsa.pub.
+Your identification has been saved in C:\Users\username/.ssh/id_rsa.
+Your public key has been saved in C:\Users\username/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:******************************************* jamal@fabrikam.com
+SHA256:FHK6WjcUkcfQjdorarzlak1Ob/x7AmqQmmx5ryYYV+8 username@LOCAL-HOSTNAME
 The key's randomart image is:
 +---[RSA 3072]----+
-|+.   +yX*o .     |
-|... ..E+*=o      |
-|  ..o.=E=.o      |
-|   . * =.o .     |
-|    . S o o..    |
-|       + .oo     |
-|        S+.  .   |
-|        ..+.+    |
-|          o*..   |
+|      . ** o     |
+|       +.o= .    |
+|      . o+       |
+|      .+. .      |
+|     .ooS  .     |
+|  . .oo.=.o      |
+|   =.= O.= .     |
+|  . B BoE + . .  |
+|   . *+*o. .o+   |
 +----[SHA256]-----+
 ```
 
-This command produces the two keys needed for SSH authentication: your private key ( _id_rsa_ ) and the public key ( _id_rsa.pub_ ). 
+Now you have a public/private rsa key pair in the location specified. The .pub files are public keys, and files without an extension are private keys:
+
+```Output
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/11/2022   6:29 PM           2610 id_rsa
+-a----        10/11/2022   6:29 PM            578 id_rsa.pub
+```
 
 > [!IMPORTANT]
-> Never share the contents of your private key. If the private key is compromised, attackers can use it to trick servers into thinking the connection is coming from you.
+> Never share the contents of your private key. If the private key is compromised, attackers can use it to trick servers into thinking the connection is coming from you. Private key files are the equivalent of a password and should be protected the same way.
 
 <a name="configuration"></a>
 
