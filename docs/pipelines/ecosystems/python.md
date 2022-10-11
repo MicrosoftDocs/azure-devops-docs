@@ -3,7 +3,7 @@ title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 02/23/2022
+ms.date: 10/11/2022
 monikerRange: '>=azure-devops-2019'
 ms.custom: devx-track-python, freshness-fy22q2
 ---
