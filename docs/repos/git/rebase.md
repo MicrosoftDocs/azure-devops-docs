@@ -26,7 +26,6 @@ This article discusses when to use a rebase instead of a no-fast-forward merge, 
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
-
 ## Rebase your local branch
 
 Git [rebase](https://git-scm.com/docs/git-rebase) integrates commits from a source branch into your current local branch (target branch). The source branch remains unchanged. For comparison, Git rebase and other merge types are shown in the following diagram.
@@ -37,7 +36,6 @@ Git rebase resequences the commit history of the target branch so that it contai
 
 During a rebase, if a source branch change conflicts with a target branch change, Git will prompt you to [resolve the merge conflict](merging.md). You can resolve merge conflicts during a rebase in the same way that you resolve merge conflicts during a merge.
 
-
 ### Rebase vs. no-fast-forward merge
 
 Git rebase results in a simpler but less exact commit history than a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge, otherwise known as a _three-way_ or _true_ merge. When you want a record of a merge in the commit history, use a no-fast-forward merge.
@@ -45,7 +43,6 @@ Git rebase results in a simpler but less exact commit history than a [no-fast-fo
 If you're the only person working on a feature or bugfix branch, consider using a rebase to periodically integrate recent `main` branch work into it. That strategy helps ensure that you stay aware of recent work by others and promptly resolve any merge conflicts that arise. By rebasing, you implement your new feature on top of the most recent `main` branch work, which helps maintain a linear commit history.
 
 For more information on Git rebase and when to use it, see [Rebase vs merge](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_vs_merge).
-
 
 ### Rebase and force-push guidelines
 
@@ -60,8 +57,29 @@ Git rebase and force push are powerful tools, but keep these guidelines in mind 
 > [!TIP]
 > For a collaborative review process, use a [pull request](pull-requests.md) to merge new work into the default branch of a remote repo.
 
-
 ### How to rebase
+
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+1. Choose **Git > Manage Branches** to open the **Git Repository** window.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+
+1. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+
+1. Right-click the source branch, and select **Rebase \<target-branch\> onto \<source-branch\>**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window.png" border="true" alt-text="Screenshot of the Rebase option in the branch context menu in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window-lrg.png":::
+
+1. Visual Studio will display a confirmation message after a successful rebase.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
+
+   If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -124,33 +142,23 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
   :::column-end:::
 :::row-end:::
 
-
-#### [Visual Studio 2017](#tab/visual-studio-2017)
-
-In Team Explorer, go to the **Branches** view. Click  **Rebase**. You'll see a prompt to rebase the changes from your current branch, and then a drop-down to specify which branch the changes in the current branch should be replayed on top of. If there's a conflict, resolve it just like you resolve [merge conflicts](merging.md) in Visual Studio.
-
-:::image type="content" source="media/vs-rebasing.gif" border="false" alt-text="Rebasing with Git in Visual Studio.":::
-
-
 #### [Git Command Line](#tab/git-command-line)
 
 To integrate source branch commits into a target branch, run the `git rebase` command:
 
-```cmd
+```console
 git rebase <source branch name> <target branch name>
 ```
 
 If your current local branch is the target branch, you can simplify the rebase command to:
 
-```cmd
+```console
 git rebase <source branch name>
 ```
 
 Git will notify you if there are conflicts during the rebase. You can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
 
-
 ---
-
 
 ## Force push your local branch after a rebase
 
@@ -159,17 +167,35 @@ If you rebase a local branch that you've previously pushed, a subsequent default
 > [!WARNING]
 > Never force push a branch that others are working on. For more information, see [Rebase and force push guidelines](#rebase-and-force-push-guidelines).
 
+To force push in Visual Studio, you must first enable the force push option:
+
+1. Go to **Tools** > **Options** > **Source Control** > **Git Global Settings**.
+
+1. Select the **Enable push --force-with-lease** option.
+
+The Git push `--force-with-lease` flag is safer than the `--force` flag because it won't overwrite a remote branch that has commits that aren't integrated within the local branch you're force pushing.
+
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+1. In the **Git Changes** window, select the push button to push your commit.
+
+   :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the Git Changes window of Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
+
+   Or, you can select **Push** from the **Git** menu.
+
+   :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
+
+1. If the default Git push operation fails, Visual Studio launches the **Git-Push failed** dialog. Choose **Force Push**.
+
+   :::image type="content" source="media/rebase/visual-studio-2019/common/push-failed-dialog.png" border="true" alt-text="Screenshot of the Git-push failed dialog in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/common/push-failed-dialog-lrg.png":::
+
+1. Visual Studio will display a confirmation message after a successful push.
+
+   :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-confirmation.png" border="true" alt-text="Screenshot of the push confirmation message in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-confirmation-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to force push a local branch.
-
-> [!TIP]
-> To force push in Visual Studio, you must first enable the force push option:
-> 1. From the Git menu, go to **Tools** > **Options** > **Source Control** > **Git Global Settings**.
-> 1. Set the **Enable push --force-with-lease** option to `True`.
->
-> The Git push `--force-with-lease` flag is safer than the `--force` flag because it won't overwrite a remote branch that has commits that aren't integrated within the local branch you're force pushing.
 
 :::row:::
   :::column span="":::
@@ -216,12 +242,6 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
   :::column-end:::
 :::row-end:::
 
-
-#### [Visual Studio 2017](#tab/visual-studio-2017)
-
-Visual Studio 2017 doesn't support Git push with the `--force-with-lease` or  `--force` flag. Use the Git command line instead.
-
-
 #### [Git Command Line](#tab/git-command-line)
 
 > [!TIP]
@@ -229,25 +249,25 @@ Visual Studio 2017 doesn't support Git push with the `--force-with-lease` or  `-
 
 To force push new commits from your local branch to a same-named remote branch:
 
-```cmd
+```console
 git push --force-with-lease <remote> <local branch name>
 ```
 
 If the branch you want to push is your checked out branch, you can simplify the force push command to:
 
-```cmd
+```console
 git push --force-with-lease <remote>
 ```
 
 When you clone a remote repo, Git assigns the alias `origin` as shorthand for the URL of the remote repo that you cloned. Run `git remote -v` to check the `origin` alias value. To add the `origin` alias manually, run `git remote add origin <remote repo url>`. With the `origin` alias, you can further simplify the force push command:
 
-```cmd
+```console
 git push --force-with-lease origin
 ```
 
 If your current local branch tracks a remote branch on `origin`, you can fully abbreviate the force push command:
 
-```cmd
+```console
 git push --force-with-lease
 ```
 
@@ -255,21 +275,21 @@ However, the fully abbreviated push command will fail if your local branch doesn
 
 ---
 
-
 ## Interactive rebase to squash local commits
 
 Typically, as you work on a new feature in your local feature branch, you'll create multiple commits. When you're ready to publish the new feature, you might want to consolidate those commits into a single commit to simplify the commit history. You can use an interactive rebase to _squash_ multiple commits into a single commit.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio 2017 doesn't support interactive rebasing. Use the Git command line instead.
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
 Visual Studio 2019 doesn't support interactive rebasing. Use the Git command line instead.
 
-
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
 Visual Studio 2017 doesn't support interactive rebasing. Use the Git command line instead.
-
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -279,7 +299,7 @@ Visual Studio 2017 doesn't support interactive rebasing. Use the Git command lin
 
 1. Estimate how far back in the commit history you want to go. You don't have to be exact as you'll get to pick out specific commits to squash when you run the interactive rebase command. For example, if you want to squash commits within the last five commits, run:
 
-    ```cmd
+    ```console
     git rebase -i HEAD~5
     ```
 
