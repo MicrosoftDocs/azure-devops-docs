@@ -434,6 +434,28 @@ steps:
     - ${{ each env in split(variables.environments, ',')}}:
       - script: ./deploy.sh --environment ${{ env }}
   ```
+* Example of using split() with replace():
+  ```yml
+  parameters:
+  - name: resourceIds
+    type: object
+    default:
+    - /subscriptions/mysubscription/resourceGroups/myResourceGroup/providers/Microsoft.Network/loadBalancers/kubernetes-internal
+    - /subscriptions/mysubscription02/resourceGroups/myResourceGroup02/providers/Microsoft.Network/loadBalancers/kubernetes
+  - name: environments
+    type: object
+    default: 
+    - prod1
+    - prod2
+
+  trigger:
+  - main
+    
+  steps:
+  - ${{ each env in parameters.environments }}:
+    - ${{ each resourceId in parameters.resourceIds }}:
+        - script: echo ${{ replace(split(resourceId, '/')[8], '-', '_') }}_${{ env }}
+  ```
 
 ::: moniker-end
 
