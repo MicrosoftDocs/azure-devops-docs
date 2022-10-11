@@ -12,4 +12,4 @@ hide_comments: true
 
 # Stop shipping Node 6 and Node 10 agent
 
-After a series of changes described on the roadmap, starting with shipping two versions of our agent, we will finally stop shipping the agent with end-of-life versions of Node. At this point, self-hosted pools and Microsoft-hosted pools will only use agents with Node task runner on the currently supported versions.
+After a series of changes described on the roadmap, starting with shipping two versions of our agent, we will finally stop shipping the agent with end-of-life versions of Node. At this point, self-hosted pools and Microsoft-hosted pools will only use agents with Node task runners on the currently supported versions.
