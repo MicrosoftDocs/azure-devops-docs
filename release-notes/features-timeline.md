@@ -392,6 +392,8 @@ On top of that, we are investing all new features to land in the New Boards Hub.
     <tr><td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (Preview)</a></td><td>Platform</td><td>N/A</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans 
     data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td><td>Test Plans</td><td>Azure DevOps Server 2022 Update 1</td></tr>
+    <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements 
+    data-raw-source="[Code coverage improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements)">Improved support for code coverage publishing within Azure Pipelines</a></td><td>Test Plans</td><td>Future</td></tr>
 </tr>
 <tr><td rowspan="3"><strong>2023 Q2</strong></td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[OpenID Connect for secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">OpenID Connect for secret-free deployments from Azure Pipelines (Preview)</a></td><td>Pipelines</td><td>Future</td>
