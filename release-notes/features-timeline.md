@@ -59,15 +59,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
    :::column span="":::
       ----------------------------
    :::column-end:::
@@ -88,20 +79,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
       [**Associate all public APIs with PAT scopes**](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
    :::column-end:::
    :::column span="":::
@@ -111,12 +88,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q4
    :::column-end:::
    :::column span="":::
-      Azure DevOps Server 2022 Update 1
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
+      2022.1
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -135,11 +107,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="2":::
       [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)  
    :::column-end:::
@@ -152,11 +119,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
    :::column span="":::
       N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -174,16 +136,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="2":::
       [**Policies to disable alternate authentication credentials**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)  
    :::column-end:::
@@ -195,11 +147,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
    :::column span="":::
       N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -221,7 +168,9 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 
 The Azure Boards Hub has been updated to provide a faster user interface, consistency with other parts of the product, and improved accessibility. While the functionality remains the same, but you can expect a new modern design, responsive reflows, improved performance, and accessibility compliance. 
 
-On top of that, we are investing all new features to land in the New Boards Hub. The features include:
+[Learn more](../release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) on enabling the New Boards Hub and providing us with feedback.
+
+Finally, most of the new features will only be available in the New Boards Hub. These investments include:
 
 :::row:::
    :::column span="":::
@@ -243,17 +192,50 @@ On top of that, we are investing all new features to land in the New Boards Hub.
    :::column-end:::
 :::row-end:::
 :::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="2":::
-      ----------------------------
+      [Automated team work item rules](../release-notes/roadmap/2023/work-item-team-rules)
    :::column-end:::
    :::column span="":::
-      ----------------------------
+      Boards
    :::column-end:::
    :::column span="":::
-      ----------------------------
+      2023 Q2
    :::column-end:::
    :::column span="":::
-      ----------------------------
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Swimlane rules on Kanban board](../release-notes/roadmap/2023/swimlane-rules)
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Work item markdown support](../release-notes/roadmap/2023/work-item-support-for-markdown)
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -378,6 +360,11 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
    :::column-end:::
    :::column span="":::
       **Server Timeframe**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -531,6 +518,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
    :::column-end:::
 :::row-end:::
 :::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="2":::
       Checks scalability
    :::column-end:::
@@ -615,7 +607,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
    :::column-end:::
 :::row-end:::
 
----
 ## All features
 <table>
     <thead>
@@ -628,7 +619,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
     </thead>
     <tbody>
       <tr>
-        <td rowspan="15"><strong>2022 Q4</strong></td>
+        <td rowspan="14"><strong>2022 Q4</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -676,7 +667,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Associate all public APIs with PAT scopes</a></td>
         <td>Platform</td>
-        <td>Azure DevOps Server 2022 Update 1</td>
+        <td>2022.1</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget data-raw-source="[Pull Request widget to allow for the selection of many repos](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
@@ -696,10 +687,10 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td>
         <td>Test Plans</td>
-        <td>Azure DevOps Server 2022 Update 1</td>
+        <td>2022.1</td>
       </tr>
       <tr>
-        <td rowspan="7"><strong>2023 Q1</strong></td>
+        <td rowspan="9"><strong>2023 Q1</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks data-raw-source="[Improvements in Pipelines checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks)">Improvements in Pipelines checks</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -727,7 +718,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
         <td>Test Plans</td>
-        <td>Azure DevOps Server 2022 Update 1</td>
+        <td>2022.1</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements data-raw-source="[Code coverage improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements)">Improved support for code coverage publishing within Azure Pipelines</a></td>
@@ -735,7 +726,17 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="2"><strong>2023 Q2</strong></td>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown data-raw-source="[Work Item support for Markdown editing](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work Item support for Markdown editing</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[swimlane rules on kanban board](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td rowspan="3"><strong>2023 Q2</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[OpenID Connect for secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">OpenID Connect for secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -744,6 +745,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
         <td>Platform</td>
         <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automate rules for updating work items](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td>Boards</td>
+        <td>Future</td>
       </tr>
       <tr>
         <td rowspan="10"><strong>Future</strong></td>
@@ -769,18 +775,13 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/package-promote-task data-raw-source="[Package promote task in Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
         <td>Artifacts</td>
-        <td>TBD</td>
+        <td>Future</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td>
         <td>Artifacts</td>
-        <td>TBD</td>   
-      </tr>
-      <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/work-item-support-for-markdown data-raw-source="[Work Item support for Markdown editing](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/work-item-support-for-markdown)">Work Item support for Markdown editing</a></td>
-        <td>Boards</td>
-        <td>TBD</td>
-      </tr>
+        <td>Future</td>   
+      </tr>      
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improve-github-connection-experience data-raw-source="[Improve GitHub Connection Experience](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improve-github-connection-experience)">Improve GitHub Connection Experience</a></td>
         <td>Boards</td>
@@ -789,12 +790,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
         <td>Pipelines</td>
-        <td>TBD</td>
+        <td>Future</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-pipelines-app data-raw-source="[Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
         <td>Pipelines</td>
-        <td>TBD</td>
+        <td>Future</td>
       </tr>
     </tbody>
 </table>
