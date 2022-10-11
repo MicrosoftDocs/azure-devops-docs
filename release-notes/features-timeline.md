@@ -24,15 +24,15 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. At the top you will find a list of our large multi-quarter initiatives and the features that they break down into. Further down you will find the full list of significant features we have planned. 
 
-Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The year and quarter tabs reflect when we expect the feature to be available on Azure DevOps Services.
+Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available on Azure DevOps Services; the Server columns reflect when we expect the feature to ship in Azure DevOps Server. 
 
 ## Initiatives
 ### Minimizing the risks associated with credential theft
 
-Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. Many of these mechanisms are problematic from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
+Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equal from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
 To minimize the risks of credential theft, we have work in flight covering three distinct areas:
-- Strengthen protections and reduce the potential impact of Personal Access Token (PAT) theft by enabling administrators to take advantage of PAT control plane policies.
+- Strengthening protections and reducing the potential impact of Personal Access Token (PAT) theft by enabling administrators to take advantage of PAT control plane policies.
 - Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives.
 - Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
 
