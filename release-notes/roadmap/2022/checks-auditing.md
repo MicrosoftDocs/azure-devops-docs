@@ -12,4 +12,4 @@ hide_comments: true
 
 # Auditing for checks
 
-Since checks are critical for production deployments, their passing or failing must be included in the audit logs as evidence for compliance. Many of the events related to checks are already present in audit logs. However, some are not. For instance, when an approval check on a pipeline run is reassigned to a different approver, that information is not audited. We will go through various scenarios related to checks and ensure that you have all the information you need in the audit logs.
+Since checks are critical for production deployments, their passing or failing must be included in the audit logs as evidence for compliance. Many of the events related to checks are already present in audit logs, but some are not. For instance, when an approval check on a pipeline run is reassigned to a different approver, that information is not audited. We will go through various scenarios related to checks and ensure that all the information needed for compliance is present in the audit logs.
