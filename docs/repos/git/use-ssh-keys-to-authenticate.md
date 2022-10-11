@@ -236,44 +236,35 @@ Associate the public key generated in the previous step with your user ID.
 ### Step 3: Clone the Git repository with SSH
 
 >[!NOTE]
-> To connect with SSH from an existing cloned repo, see [update your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
+> To use SSH with a repository previously cloned via HTTPS, see [update your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
 1. Copy the SSH clone URL from the web portal. In this example, the SSH clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
    ![Screenshot showing Azure Repos SSH cloned URL](media/use-ssh-authentication/ssh_clone_URL.png)
 
    [!INCLUDE [project-urls](../../includes/project-urls.md)]
- 
-2. Run `git clone` from the command prompt. 
 
-   ```
+2. Run `git clone` from the command prompt.
+
+   ```sh
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
    ```
 
-SSH may display the server's SSH fingerprint and ask you to verify it.
-Verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
+   You should now be prompted to enter your passphrase for your SSH key before you can continue unless it is managed by an SSH Agent:
 
-SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](/previous-versions/windows/it-pro/windows-2000-server/cc959354(v=technet.10)).
-Once you accept the host's fingerprint, SSH won't prompt you again unless the fingerprint changes. 
+   ```Output
+   Cloning into 'FabrikamFiber'...
+   Enter passphrase for key '/c/Users/username/.ssh/id_rsa':
+   remote: Azure Repos
+   remote: Found 127 objects to send. (50 ms)
+   Receiving objects: 100% (127/127), 56.67 KiB | 2.58 MiB/s, done.
+   Resolving deltas: 100% (15/15), done.
+   ```
 
-```
-$ git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
-Cloning into 'FabrikamFiber'...
-The authenticity of host 'ssh.dev.azure.com (65.52.8.37)' can't be established.
-RSA key fingerprint is SHA256:********************************************
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'ssh.dev.azure.com,65.52.8.37' (RSA) to the list of known hosts.
-Enter passphrase for key '/c/Users/jamal/.ssh/id_rsa':
-remote: Azure Repos
-remote: Found 127 objects to send. (50 ms)
-Receiving objects: 100% (127/127), 56.67 KiB | 2.58 MiB/s, done.
-Resolving deltas: 100% (15/15), done.
-```
-
-When you're asked if you want to continue connecting, enter `yes`. Git clones the repo and sets up the `origin` remote to connect with SSH for future Git commands. 
+   If you are instead prompted to verify a fingerprint, please read [Step 2: Add the public key to Azure DevOps](use-ssh-keys-to-authenticate.md#step-2-add-the-public-key-to-azure-devops) again. For other problems read the section on [Questions and troubleshooting](use-ssh-keys-to-authenticate.md#questions-and-troubleshooting).
 
 > [!TIP]
-> To prevent problems, Windows users should [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase. 
+> To make the most of SSH it is common to use an SSH Agent to manage your SSH key(s). Setting up an agent is beyond the scope of this article, though.
 
 ## Questions and troubleshooting
 
