@@ -32,7 +32,7 @@ Each feature is linked to an article where you can learn more about a particular
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equal from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
 To minimize the risks of credential theft, we have work in flight covering four distinct areas:
-- Strengthening protections and reducing the potential impact of Personal Access Token (PAT) theft by enabling administrators to take advantage of PAT control plane policies.
+- Enable administrators to improve authentication security through control plane policies.
 - Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives.
 - Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
 - Avoiding the need to store production secrets in Azure Pipelines service connections.
