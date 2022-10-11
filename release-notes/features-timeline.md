@@ -366,7 +366,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="13"><strong>2022 Q4</strong></td>
+<tr><td rowspan="14"><strong>2022 Q4</strong></td>
     <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
     <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[copy work item attachment url](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment url</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support data-raw-source="[Emoji support in work item tags](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support)">Emoji support in work item tags</a></td><td>Boards</td><td>Future</td>
@@ -383,6 +383,8 @@ On top of that, we are investing all new features to land in the New Boards Hub.
 </tr>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution 
     data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td><td>Test Plans</td><td>Azure DevOps Server 2022 Update 1</td></tr>
+    <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans 
+    data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td><td>Test Plans</td><td>Azure DevOps Server 2022 Update 1</td></tr>
 <tr><td rowspan="3"><strong>2023 Q1</strong></td>
     <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks data-raw-source="[Improvements in Pipelines checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks)">Improvements in Pipelines checks</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings data-raw-source="[In-product recommendations for secure settings](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td><td>Pipelines</td><td>Future</td>
