@@ -14,5 +14,5 @@ hide_comments: true
 
 As we bring in support for secure alternatives (e.g., managed identities) that reduce the need for PATs and other stealable secrets, administrators need new control plane policies to improve authentication security and reduce the usage of less secure authentication methods gradually. 
 
-We will introduce new control policies that administrators can use to reduce or turn off using less secure authentication methods like basic auth (plain text user name and password), personal access tokens (PATs) and SSH keys. These policies will come with an exception list that allows admins to gradually reduce the use of these less secure methods without disrupting their critical business processes.
+We will introduce new control plane policies that administrators can use to reduce or turn off using less secure authentication methods like basic auth (plain text user name and password), personal access tokens (PATs) and SSH keys. These policies will come with an exception list that allows admins to gradually reduce the use of these less secure methods without disrupting their critical business processes.
 
