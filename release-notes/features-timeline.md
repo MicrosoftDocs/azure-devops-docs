@@ -31,10 +31,11 @@ Each feature is linked to an article where you can learn more about a particular
 
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equal from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
-To minimize the risks of credential theft, we have work in flight covering three distinct areas:
+To minimize the risks of credential theft, we have work in flight covering four distinct areas:
 - Strengthening protections and reducing the potential impact of Personal Access Token (PAT) theft by enabling administrators to take advantage of PAT control plane policies.
 - Reducing the need for PATs and other stealable secrets by adding support for more secure alternatives.
 - Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
+- Avoiding the need to store production secrets in Azure Pipelines service connections.
 
 We expect this work to be a major focus of our efforts for multiple quarters. 
 
@@ -348,6 +349,252 @@ On top of that, we are investing all new features to land in the New Boards Hub.
    :::column-end:::
    :::column span="":::
       :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q2
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+
+### Pipelines Agent Node Lifecycle
+
+Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a regular cadence of releases with Node 16 being the LTS and Node 18 being the current version at the time of this roadmap update. However, the Node runner in the pipelines agent has not kept up with the Node releases. 
+
+As a first step towards that, we recently released a new [Node 16 task runner](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for the task authors to keep up with Node updates. We do not expect all tasks in the Marketplace to be updated to run on the new version of Node. So, before we deprecate Node 6 and 10 completely on Microsoft hosted and self-hosted pools, we will provide some tools for customers to run the non-upgraded tasks.
+
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      **Feature**
+   :::column-end:::
+   :::column span="":::
+      **Area**
+   :::column-end:::
+   :::column span="":::
+      **Service Timeframe**
+   :::column-end:::
+   :::column span="":::
+      **Server Timeframe**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Node 16 runner along with other runners](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Tasks can express compatibility with multiple Node runners](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md)
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [All in-the-box tasks run on Node 16](2022/in-the-box-tasks-on-16.md)
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2022 Q4
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](2022/node-16-agent.md)
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2022 Q4
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Ability to download and install old runners on self-hosted agents
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Ability to run tasks on next available Node version, if targeted version is not available
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Removal of Node 6 and 10 from Microsoft hosted pools
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Stop shipping Node 6 and Node 10 runners with the agent
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+
+### Pipelines checks
+
+Customers prefer YAML pipelines over classic for builds (CI). However, for CD, we still have a large number of customers that use classic release management instead of YAML. The primary reason for this is the lack of parity in various CD features between the two. Over the next year and more, we will invest in bridging this gap. As a first step, we will focus on **checks** in the next 6 months. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. Here are the improvements that we will be making in this area:
+
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      **Feature**
+   :::column-end:::
+   :::column span="":::
+      **Area**
+   :::column-end:::
+   :::column span="":::
+      **Service Timeframe**
+   :::column-end:::
+   :::column span="":::
+      **Server Timeframe**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Checks scalability
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2022 Q4
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Auditing for checks  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2022 Q4
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Sequencing approvals and other checks  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Custom variables in checks  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Service connections in checks  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      2023 Q1
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Checks extensibility  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      Future
    :::column-end:::
    :::column span="":::
       Future
