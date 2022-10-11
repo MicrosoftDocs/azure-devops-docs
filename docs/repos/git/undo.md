@@ -29,7 +29,6 @@ In this article you learn how to:
 > * Revert a branch to a prior state
 > * Undo the changes made by a shared commit
 
-
 ## Discard uncommitted changes to a file
 
 If you've made changes to a file but haven't committed those changes, you can use Git [checkout](https://git-scm.com/docs/git-checkout) to quickly discard the changes and revert the file to its last committed version.
@@ -39,6 +38,17 @@ Git `checkout` can also revert a file to any committed version, when you specify
 > [!WARNING]
 > If there's a chance you might want to reapply the changes that Git `checkout` would discard, consider [stashing](howto.yml#i-ve-done-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) those changes instead.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio supports discarding uncommitted changes to a file by reverting the file to its last committed version.
+
+In the **Git Changes** window, identify the file with the changes that you want to discard. If the file is in the **Staged Changes** section, right-click it and choose **Unstage**. Unstaged files show up in the **Changes** section.
+
+:::image type="content" source="media/undo/visual-studio-2019/git-experience/unstage.png" border="true" alt-text="Screenshot of the context menu options for staged files in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/unstage-lrg.png":::
+
+If the file is in the **Changes** section, right-click it and choose **Undo Changes** to discard all changes to the file since the last commit.
+
+:::image type="content" source="media/undo/visual-studio-2019/git-experience/undo-changes.png" border="true" alt-text="Screenshot of the context menu options for changed files in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/undo-changes-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -73,23 +83,11 @@ Visual Studio supports discarding uncommitted changes to a file by reverting the
   :::column-end:::
 :::row-end:::
 
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-Visual Studio supports discarding all uncommitted changes to a file by reverting the file to its version in the last commit.
-
-1. Open up the **Changes** view in Team Explorer.
-1. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
-1. Right-click that file and select **Undo Changes**.
-
-     :::image type="content" source="media/vs_reset_single_file.gif" border="false" alt-text="Screenshot showing how to reset a single file with Git in Visual Studio.":::
-
-
 #### [Git Command Line](#tab/git-command-line)
 
 You can use the Git `checkout` command to discard uncommitted changes to a file by reverting the file to its last committed version:
 
-```cmd
+```console
 git checkout <file>
 ```
 
@@ -97,7 +95,7 @@ For example, `git checkout README.md` discards uncommitted changes to the `READM
 
 Git `checkout` also supports reverting a file to a previously committed version when you specify a partial or full commit ID that uniquely identifies a commit:
 
-```cmd
+```console
 git checkout <commit ID> <file>
 ```
 
@@ -106,9 +104,7 @@ For more information about finding a commit ID, see [Find a commit ID](#find-a-c
 > [!NOTE]
 > The use of the Git `checkout` command to revert a file differs from its typical use, which is to switch between [branches](./create-branch.md). The `checkout` command output tells you whether it's switching between branches or updating a file, and warns if it's unclear which one you're trying to do.
 
-
-* * *
-
+---
 
 ## Revert a branch to a prior state
 
@@ -119,6 +115,15 @@ Git `reset` has a few options. The default option is to revert the branch to a p
 > [!WARNING]
 > Don't reset a branch to a commit prior to the last commit if the last commit has been pushed and shared with others. Doing so will result in your local branch history no longer matching the remote branch history. For shared branches, see [Undo the changes made by a shared commit](#undo-the-changes-made-by-a-shared-commit).
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
+
+   :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
+
+1. In the **History** tab for the current branch, right-click the commit you want to reset, and then choose **Reset > Delete Changes (--hard)** to reset the branch to the selected commit and delete all changes to all branch files since that commit. Or, choose **Reset > Keep Changes (--mixed)** to reset the branch to the selected commit and retain all subsequent changes as unstaged changes.
+
+   :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -147,17 +152,6 @@ Git `reset` has a few options. The default option is to revert the branch to a p
 
      :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
 
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-1. Open up the **Changes** view in Team Explorer. 
-1. Select **Actions** and choose **View History** from the drop-down. 
-1. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
-1. Choose **Reset and delete changes...**.
-
-    :::image type="content" source="media/vs_reset_branch.png" border="false" alt-text="Screenshot showing how to reset a branch in Visual Studio.":::
-
-
 #### [Git Command Line](#tab/git-command-line)
 
 You can use Git `reset` to revert a branch to its state in a previous commit. The Git `reset` command can be used with various flags:
@@ -168,21 +162,19 @@ You can use Git `reset` to revert a branch to its state in a previous commit. Th
 
 A common use of Git `reset` is with the `--hard` option to discard all uncommitted changes in all files since the last commit:
 
-```cmd
+```console
 git reset --hard
 ```
 
 To hard reset a branch to a different commit than the last commit, specify the commit ID or a partial commit ID that uniquely identifies the commit:
 
-```cmd
+```console
 git reset --hard <commit ID> 
 ```
 
 For more information about finding a commit ID, see [Find a commit ID](#find-a-commit-id).
 
-
-* * *
-
+---
 
 <a name="revert"></a>
 
@@ -190,6 +182,15 @@ For more information about finding a commit ID, see [Find a commit ID](#find-a-c
 
 You can undo the changes made by a commit by using Git [revert](https://git-scm.com/docs/git-revert) to create a new commit that reverses those changes. Git `revert` doesn't delete the original commit. This approach is suitable for undoing the changes made by a shared commit because Git `revert` won't alter the previous commit history, and so local and remote branch histories continue to match.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
+
+   :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
+
+1. In the **History** tab for the current branch, right-click the commit you want to revert and choose **Revert** to create a new commit that undoes the changes made by the selected commit.
+
+   :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -218,19 +219,11 @@ You can undo the changes made by a commit by using Git [revert](https://git-scm.
 
      :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
 
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and select **Revert** from the context menu.
-
-:::image type="content" source="media/vs_revert_changes.png" border="false" alt-text="Screenshot showing how to revert changes in Visual Studio.":::
-
-
 #### [Git Command Line](#tab/git-command-line)
 
 You can use the Git `revert` command to undo the changes made by a commit and create a new commit with the reversed changes. The commit whose changes were reversed remains in Git history.
 
-```cmd
+```console
 git revert <commit ID>
 ```
 
@@ -238,12 +231,11 @@ If the revert operation was successful, Git will open an editor window that prom
 
 Git will notify you if there are conflicts during the revert operation. You can either resolve the conflicts and then run `git revert --continue`, or run `git revert --abort` to undo the revert operation.
 
-
 #### Find a commit ID
 
 You can use the Git `log` command to get the ID of a commit. The `--oneline` flag abbreviates the output.
 
-```cmd
+```console
 git log --oneline <branch>
 ```
 
@@ -256,9 +248,7 @@ e745d06 (HEAD -> main) Add a test initialization class
 32e3946 Add project files.
 ```
 
-
-* * *
-
+---
 
 ## Next steps
 
