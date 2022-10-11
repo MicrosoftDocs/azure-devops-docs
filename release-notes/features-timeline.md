@@ -318,7 +318,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="14"><strong>2022 Q4</strong></td>
+        <td rowspan="21"><strong>2022 Q4</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
