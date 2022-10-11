@@ -60,20 +60,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
       PAT lifecycle APIs
    :::column-end:::
    :::column span="":::
@@ -88,20 +74,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
       [**Associate all public APIs with PAT scopes**](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
    :::column-end:::
    :::column span="":::
@@ -112,11 +84,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
    :::column span="":::
       2022.1
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -135,11 +102,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="4":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="2":::
       [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)  
    :::column-end:::
@@ -152,11 +114,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
    :::column span="":::
       N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -185,11 +142,6 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
    :::column span="":::
       N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
