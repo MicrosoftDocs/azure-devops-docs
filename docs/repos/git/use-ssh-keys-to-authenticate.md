@@ -18,14 +18,13 @@ You can connect to your Git repos through SSH on macOS, Linux, or Windows to sec
 
 > [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs continue to work. If you've already set up SSH, update your remote URLs to the new format:
-> 
-> - Verify which remotes are using SSH. Run ```git remote -v``` in your Git client. 
+>
+> Up to date SSH URLs start with `ssh.dev.azure.com`. The previous URLs use `vs-ssh.visualstudio.com`.
+>
+> - Verify which remotes are using SSH. Run `git remote -v` in your shell or use a GUI client instead.
 > - Visit your repository on the web and select **Clone**.
 > - Select **SSH** and copy the new SSH URL.
-> - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to [Repository Settings](git-config.md#remotes), and edit your remotes.
-
->[!NOTE]
-> As of Visual Studio 2017, you can use SSH to connect to Azure DevOps Git repos.
+> - In your shell run `git remote set-url <remote name> <new SSH URL>` for each remote of a repository you wish to update. Alternatively, use a GUI client to update the remote URLs.
 
 ## How SSH key authentication works
 
