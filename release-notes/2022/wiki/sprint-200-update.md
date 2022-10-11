@@ -1,17 +1,17 @@
 ---
-title: Wiki - Sprint 211 Update
-description: See the Sprint 211 feature updates for Wiki, including next steps.
+title: Wiki - Sprint 200 Update
+description: See the Sprint 200 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/11/2022
+ms.date: 2/28/2022
 ---
 
-# Wiki - Sprint 211 Update
+# Wiki - Sprint 200 Update
 
 ## Features
 
-[!INCLUDE [sprint-211-update-links](../includes/wiki/sprint-211-update-links.md)]
+[!INCLUDE [sprint-200-update-links](../includes/wiki/sprint-200-update-links.md)]
 
-[!INCLUDE [sprint-211-update](../includes/wiki/sprint-211-update.md)]
+[!INCLUDE [sprint-200-update](../includes/wiki/sprint-200-update.md)]
 
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]

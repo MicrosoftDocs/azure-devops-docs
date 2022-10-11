@@ -6,12 +6,12 @@ ms.author: glmorale
 ms.date: 10/11/2022
 ---
 
-# Azure Boards - Sprint 211 Update
+# Reporting - Sprint 211 Update
 
 ## Features
 
-[!INCLUDE [sprint-211-update-links](../includes/boards/sprint-211-update-links.md)]
+[!INCLUDE [sprint-211-update-links](../includes/reporting/sprint-211-update-links.md)]
 
-[!INCLUDE [sprint-211-update](../includes/boards/sprint-211-update.md)]
+[!INCLUDE [sprint-211-update](../includes/reporting/sprint-211-update.md)]
 
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]
