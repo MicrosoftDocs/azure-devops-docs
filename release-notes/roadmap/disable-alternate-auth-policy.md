@@ -12,8 +12,7 @@ hide_comments: true
 
 # Policies to disable alternate authentication credentials
 
-As we work on building out secure forms of authentication, you may want to limit the ability of users within your organization to use one or more authentication mechanisms that have not been approved within your organizations. 
+As we bring in support for secure alternatives (e.g., managed identities) that reduce the need for PATs and other stealable secrets, administrators need new control plane policies to improve authentication security and reduce the usage of less secure authentication methods gradually. 
 
-We are hoping to add policies for tenants to choose whether they want users to access Azure DevOps through alternate authentication methods, like plain text username and password, personal access tokens (PATs) and SSH keys. 
+We will introduce new control policies that administrators can use to reduce or turn off using less secure authentication methods like basic auth (plain text user name and password), personal access tokens (PATs) and SSH keys. These policies will come with an exception list that allows admins to gradually reduce the use of these less secure methods without disrupting their critical business processes.
 
-You will also be able to define if you want a selected list of users or groups within your tenant to have access to these authentication mechanisms, even if these policies are disabled for the rest of the tenant. This ensures that you can still grant access to trusted individuals who may need to use these with critical services in workflows that only support certain authentication methods today, i.e. using PATs in self-hosted agent registration.
