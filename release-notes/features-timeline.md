@@ -382,6 +382,20 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
       [Node 16 runner along with other runners](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)
    :::column-end:::
    :::column span="":::
@@ -410,7 +424,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [All in-the-box tasks run on Node 16](2022/in-the-box-tasks-on-16)
+      [All in-the-box tasks run on Node 16](roadmap/2022/in-the-box-tasks-on-16)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -424,7 +438,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](2022/node-16-agent)
+      [Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](roadmap/2022/node-16-agent)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -438,7 +452,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Ability to download and install old runners on self-hosted agents](2022/install-old-runner)
+      [Ability to download and install old runners on self-hosted agents](roadmap/2022/install-old-runner)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -452,7 +466,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Ability to run tasks on next available Node version, if targeted version is not available](2022/pick-next-runner)
+      [Ability to run tasks on next available Node version, if targeted version is not available](roadmap/2022/pick-next-runner)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -466,7 +480,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Removal of Node 6 and 10 from Microsoft hosted pools](2022/no-node-6-on-hosted-agents)
+      [Removal of Node 6 and 10 from Microsoft hosted pools](roadmap/2022/no-node-6-on-hosted-agents)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -480,7 +494,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Stop shipping Node 6 and Node 10 runners with the agent](2022/remove-node-6)
+      [Stop shipping Node 6 and Node 10 runners with the agent](roadmap/2022/remove-node-6)
    :::column-end:::
    :::column span="":::
       Pipelines
