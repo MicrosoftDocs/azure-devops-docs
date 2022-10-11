@@ -410,7 +410,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [All in-the-box tasks run on Node 16](2022/in-the-box-tasks-on-16.md)
+      [All in-the-box tasks run on Node 16](2022/in-the-box-tasks-on-16)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -424,7 +424,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](2022/node-16-agent.md)
+      [Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](2022/node-16-agent)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -438,7 +438,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Ability to download and install old runners on self-hosted agents
+      [Ability to download and install old runners on self-hosted agents](2022/install-old-runner)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -452,7 +452,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Ability to run tasks on next available Node version, if targeted version is not available
+      [Ability to run tasks on next available Node version, if targeted version is not available](2022/pick-next-runner)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -466,7 +466,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Removal of Node 6 and 10 from Microsoft hosted pools
+      [Removal of Node 6 and 10 from Microsoft hosted pools](2022/no-node-6-on-hosted-agents)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -480,7 +480,7 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Stop shipping Node 6 and Node 10 runners with the agent
+      [Stop shipping Node 6 and Node 10 runners with the agent](2022/remove-node-6)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -643,11 +643,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[Credential-free pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">Credential-free pipelines</a></td>
         <td>Pipelines</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/deprecate-node-10 data-raw-source="[Deprecate Node 10 from agent and tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/deprecate-node-10)">Deprecate Node 10 from agent and tasks</a></td>
-        <td>Pipelines</td>
-        <td>N/A</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection data-raw-source="[Improvements in service connection usage history](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection)">Improvements in service connection usage history</a></td>
