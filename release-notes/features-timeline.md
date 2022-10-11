@@ -164,9 +164,9 @@ We expect this work to be a major focus of our efforts for multiple quarters.
    :::column-end:::
 :::row-end:::
 
-### New Boards Hub
+### New Boards hub
 
-The Azure Boards Hub has been updated to provide a faster user interface, consistency with other parts of the product, and improved accessibility. While the functionality remains the same, but you can expect a new modern design, responsive reflows, improved performance, and accessibility compliance. 
+The Azure Boards hub has been updated to provide a faster user interface, consistency with other parts of the product, and improved accessibility. While the functionality remains the same, but you can expect a new modern design, responsive reflows, improved performance, and accessibility compliance. 
 
 [Learn more](../release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) on enabling the New Boards Hub and providing us with feedback.
 
@@ -337,11 +337,11 @@ Finally, most of the new features will only be available in the New Boards Hub. 
    :::column-end:::
 :::row-end:::
 
-### Pipelines Agent Node Lifecycle
+### Pipelines agent Node lifecycle
 
-Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a regular cadence of releases with Node 16 being the LTS and Node 18 being the current version at the time of this roadmap update. However, the Node task runner in the pipelines agent has not kept up with the Node releases. There can be security vulnerabilities in old versions of Node. Furthermore, customers often run security scans on their infrastructure and these scans flag Azure Pipelines agent software for its dependency on Node 6 and Node 10 - both of which have reached their end-of-life.
+Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, unfortunately, and therefore we have not been able to keep up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing the overhead for task and pipeline authors. 
 
-As a first step towards that, we recently released a new [Node 16 task runner](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for the task authors to keep up with Node updates. We do not expect all tasks in the Marketplace to be updated to run on the new version of Node. So, before we deprecate Node 6 and 10 completely on Microsoft hosted and self-hosted pools, we will provide some tools for customers to run the non-upgraded tasks.
+As a first step towards that, we recently released a new [Node 16 task runner](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for task authors to keep up with Node updates. Because not all tasks in the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) will be continuously updated to run on the latest versions of Node, we will also provide pipeline authors the ability to opt into using older versions of Node to run non-upgraded tasks. Once all these features are available, we'll remove end-of-life versions of Node from Microsoft hosted agents and self-hosted agent images. 
 
 :::row:::
    :::column span="":::
