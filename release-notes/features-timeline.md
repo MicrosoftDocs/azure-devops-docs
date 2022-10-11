@@ -295,7 +295,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Move to Column and Move to Swimlane](../2022/sprint-210-update#move-to-column-and-move-to-swimlane)
+      [Move to Column and Move to Swimlane](https://learn.microsoft.com/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane)
    :::column-end:::
    :::column span="":::
       Boards
