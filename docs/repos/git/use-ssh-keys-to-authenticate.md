@@ -32,17 +32,14 @@ SSH public key authentication works with an asymmetric pair of generated encrypt
 
 ## Set up SSH key authentication
 
-The following steps cover configuration of SSH key authentication on the following platforms:
+The following steps cover configuration of SSH key authentication on the following platforms using the command line (also called `shell`):
 
----
 - Linux
-- macOS running at least Leopard (10.5)
-- Windows systems running  [Git for Windows](https://www.git-scm.com/download/win)   
+- macOS
+- Windows systems running [Git for Windows](https://www.git-scm.com/download/win)
 
----
-
-Configure SSH using the command line. `bash` is the common shell on Linux and macOS and the Git for Windows installation adds a shortcut to Git Bash in the Start menu.
-Other shell environments work, but aren't covered in this article.
+>[!NOTE]
+> As of Visual Studio 2017, SSH can be used to connect to Azure DevOps Git repositories.
 
 > [!TIP]
 > On Windows, we recommended the use of [Git Credential Manager](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
