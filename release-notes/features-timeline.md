@@ -108,7 +108,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**OpenID Connect for credential-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)  
+      [**Secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)  
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -740,7 +740,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
       </tr>
       <tr>
         <td rowspan="3"><strong>2023 Q2</strong></td>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[OpenID Connect for secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">OpenID Connect for secret-free deployments from Azure Pipelines (Preview)</a></td>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
