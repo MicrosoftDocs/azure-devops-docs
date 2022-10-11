@@ -384,7 +384,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
 </tr>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution 
     data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td><td>Test Plans</td><td>Azure DevOps Server 2022 Update 1</td></tr>
-<tr><td rowspan="6"><strong>2023 Q1</strong></td>
+<tr><td rowspan="7"><strong>2023 Q1</strong></td>
     <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks data-raw-source="[Improvements in Pipelines checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks)">Improvements in Pipelines checks</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings data-raw-source="[In-product recommendations for secure settings](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning data-raw-source="[Track repo cloning](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td><td>Pipelines</td><td>Future</td>
