@@ -37,132 +37,61 @@ To minimize the risks of credential theft, we have work in flight covering four 
 - Deepening Azure DevOps' integration with Azure Active Directory to better support its various security features.
 - Avoiding the need to store production secrets in Azure Pipelines service connections.
 
-We expect this work to be a major focus of our efforts for multiple quarters. 
-
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      **Feature**
-   :::column-end:::
-   :::column span="":::
-      **Area**
-   :::column-end:::
-   :::column span="":::
-      **Service Timeframe**
-   :::column-end:::
-   :::column span="":::
-      **Server Timeframe**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      PAT lifecycle APIs
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q1
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: Azure DevOps Server 2022
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [**Associate all public APIs with PAT scopes**](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q4
-   :::column-end:::
-   :::column span="":::
-      2022.1
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [**Managed Identity and Service Principal support**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities) 
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      CY2023 Q1 (Preview)</br>
-      CY2023 H2 (GA) 
-   :::column-end:::
-   :::column span="":::
-      N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)  
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      CY2023 Q2 (Preview)</br>
-      CY2023 H2 (GA) 
-   :::column-end:::
-   :::column span="":::
-      N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [**Granular scopes for Azure Active Directory OAuth**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)  
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      CY2023 Q1
-   :::column-end:::
-   :::column span="":::
-      N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [**Policies to disable alternate authentication credentials**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)  
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-   :::column span="":::
-      N/A
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [**Full support for Conditional Access Policies**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)   
-   :::column-end:::
-   :::column span="":::
-      Platform
-   :::column-end:::
-   :::column span="":::
-      Future 
-   :::column-end:::
-   :::column span="":::
-      N/A
-   :::column-end:::
-:::row-end:::
+We expect this work to be a major focus of our efforts for multiple quarters.
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td>PAT lifecycle APIs</td>
+         <td>Platform</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png">Azure DevOps Server 2022</td>
+      </tr>
+      <tr>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Associate all public APIs with PAT scopes</a></td>
+         <td>Platform</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q4</td>
+         <td>2022.1</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support</a></td>
+         <td>Platform</td>
+         <td>2023 Q1 (Preview)</br> 2023 H2 (GA)</td>
+         <td>N/A</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[OpenID Connect for secret-free deployments from Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">OpenID Connect for secret-free deployments from Azure Pipelines</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q2 (Preview)</br> 2023 H2 (GA)</td>
+         <td>N/A</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
+         <td>Platform</td>
+         <td>2023 Q1</td>
+         <td>N/A</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy data-raw-source="[Policies to disable alternate authentication credentials](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+         <td>Platform</td>
+         <td>Future</td>
+         <td>N/A</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy data-raw-source="[Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
+         <td>Platform</td>
+         <td>Future</td>
+         <td>N/A</td>
+      </tr>
+   </tbody>
+</table>
 
 ### New Boards Hub
 
@@ -172,170 +101,78 @@ The Azure Boards Hub has been updated to provide a faster user interface, consis
 
 Finally, most of the new features will only be available in the New Boards Hub. These investments include:
 
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      **Feature**
-   :::column-end:::
-   :::column span="":::
-      **Area**
-   :::column-end:::
-   :::column span="":::
-      **Service Timeframe**
-   :::column-end:::
-   :::column span="":::
-      **Server Timeframe**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Automated team work item rules](../release-notes/roadmap/2023/work-item-team-rules)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      2023 Q2
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Swimlane rules on Kanban board](../release-notes/roadmap/2023/swimlane-rules)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Work item markdown support](../release-notes/roadmap/2023/work-item-support-for-markdown)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Ability to change link type from Web UI](../release-notes/roadmap/2022/ability-to-change-link)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      2022 Q4
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Maintain backlog hierarchy when filters are applied](../release-notes/roadmap/2022/maintain-backlog-hierarchy)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q4
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Copy work item attachment URL](../release-notes//roadmap/2022/get-attachment-url)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Move to Column and Move to Swimlane](https://learn.microsoft.com/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Filter to work item history](../release-notes/2022/sprint-206-update#filter-on-work-item-history)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Adding Assigned To avatar to child items on cards](../release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Move to position](../release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board)
-   :::column-end:::
-   :::column span="":::
-      Boards
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q2
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/work-item-team-rules?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Automated team work item rules](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/work-item-team-rules?branch=users%2Fglmorale%2Fnewroadmap)">Automated team work item rules</a></td>
+         <td>Boards</td>
+         <td>2023 Q2</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/swimlane-rules?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Swimlane rules on Kanban board](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/swimlane-rules?branch=users%2Fglmorale%2Fnewroadmap)">Swimlane rules on Kanban board</a></td>
+         <td>Boards</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Work item markdown support](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown?branch=users%2Fglmorale%2Fnewroadmap)">Work item markdown support</a></td>
+         <td>Boards</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/ability-to-change-link?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Ability to change link type from Web UI](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/ability-to-change-link?branch=users%2Fglmorale%2Fnewroadmap)">Ability to change link type from Web UI</a></td>
+         <td>Boards</td>
+         <td>2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy?branch=users%2Fglmorale%2Fnewroadmap)">Maintain backlog hierarchy when filters are applied</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/get-attachment-url?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Copy work item attachment URL](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/get-attachment-url?branch=users%2Fglmorale%2Fnewroadmap)">Copy work item attachment URL</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane data-raw-source="[Move to Column and Move to Swimlane](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane)">Move to Column and Move to Swimlane</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-206-update?branch=users%2Fglmorale%2Fnewroadmap#filter-on-work-item-history data-raw-source="[Filter to work item history](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-206-update?branch=users%2Fglmorale%2Fnewroadmap#filter-on-work-item-history)">Filter to work item history</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-205-update?branch=users%2Fglmorale%2Fnewroadmap#assigned-to-children-in-kanban-cards data-raw-source="[Adding Assigned To avatar to child items on cards](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-205-update?branch=users%2Fglmorale%2Fnewroadmap#assigned-to-children-in-kanban-cards)">Adding Assigned To avatar to child items on cards</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q2</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-203-update?branch=users%2Fglmorale%2Fnewroadmap#move-to-column-position-on-kanban-board data-raw-source="[Move to position](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-203-update?branch=users%2Fglmorale%2Fnewroadmap#move-to-column-position-on-kanban-board)">Move to position</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q2</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
 
 ### Pipelines Agent Node Lifecycle
 
@@ -343,269 +180,119 @@ Azure Pipelines tasks can be authored either in Node or Powershell, and they use
 
 As a first step towards that, we recently released a new [Node 16 task runner](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for the task authors to keep up with Node updates. We do not expect all tasks in the Marketplace to be updated to run on the new version of Node. So, before we deprecate Node 6 and 10 completely on Microsoft hosted and self-hosted pools, we will provide some tools for customers to run the non-upgraded tasks.
 
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      **Feature**
-   :::column-end:::
-   :::column span="":::
-      **Area**
-   :::column-end:::
-   :::column span="":::
-      **Service Timeframe**
-   :::column-end:::
-   :::column span="":::
-      **Server Timeframe**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Node 16 runner along with other runners](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Tasks can express compatibility with multiple Node runners](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: 2022 Q3
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [All in-the-box tasks run on Node 16](roadmap/2022/in-the-box-tasks-on-16)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2022 Q4
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](roadmap/2022/node-16-agent)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2022 Q4
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Ability to download and install old runners on self-hosted agents](roadmap/2022/install-old-runner)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Ability to run tasks on next available Node version, if targeted version is not available](roadmap/2022/pick-next-runner)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Removal of Node 6 and 10 from Microsoft hosted pools](roadmap/2022/no-node-6-on-hosted-agents)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Stop shipping Node 6 and Node 10 runners with the agent](roadmap/2022/remove-node-6)
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-210-update?branch=users%2Fglmorale%2Fnewroadmap#node-16-task-runner-in-pipeline-agent data-raw-source="[Node 16 runner along with other runners](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-210-update?branch=users%2Fglmorale%2Fnewroadmap#node-16-task-runner-in-pipeline-agent)">Node 16 runner along with other runners</a></td>
+         <td>Pipelines</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md data-raw-source="[Tasks can express compatibility with multiple Node runners](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md)">Tasks can express compatibility with multiple Node runners</a></td>
+         <td>Pipelines</td>
+         <td><img src="roadmap/2023/media/checkmark.png">2022 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[All in-the-box tasks run on Node 16](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16?branch=users%2Fglmorale%2Fnewroadmap)">All in-the-box tasks run on Node 16</a></td>
+         <td>Pipelines</td>
+         <td>2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/node-16-agent?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/node-16-agent?branch=users%2Fglmorale%2Fnewroadmap)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+         <td>Pipelines</td>
+         <td>2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/install-old-runner?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Ability to download and install old runners on self-hosted agents](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/install-old-runner?branch=users%2Fglmorale%2Fnewroadmap)">Ability to download and install old runners on self-hosted agents</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/pick-next-runner?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/pick-next-runner?branch=users%2Fglmorale%2Fnewroadmap)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents?branch=users%2Fglmorale%2Fnewroadmap)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/remove-node-6?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/remove-node-6?branch=users%2Fglmorale%2Fnewroadmap)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
 
 ### Pipelines checks
 
 Customers prefer YAML pipelines over classic for builds (CI). However, for CD, we still have a large number of customers that use classic release management instead of YAML. The primary reason for this is the lack of parity in various CD features between the two. Over the next year and more, we will invest in bridging this gap. As a first step, we will focus on **checks** in the next 6 months. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. Here are the improvements that we will be making in this area:
 
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      **Feature**
-   :::column-end:::
-   :::column span="":::
-      **Area**
-   :::column-end:::
-   :::column span="":::
-      **Service Timeframe**
-   :::column-end:::
-   :::column span="":::
-      **Server Timeframe**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      ----------------------------
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Checks scalability
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2022 Q4
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Auditing for checks  
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2022 Q4
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Sequencing approvals and other checks  
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Custom variables in checks  
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Service connections in checks  
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      2023 Q1
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Checks extensibility  
-   :::column-end:::
-   :::column span="":::
-      Pipelines
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-   :::column span="":::
-      Future
-   :::column-end:::
-:::row-end:::
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Service</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-scalability?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Checks scalability](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-scalability?branch=users%2Fglmorale%2Fnewroadmap)">Checks scalability</a></td>
+         <td>Pipelines</td>
+         <td>2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-auditing?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Auditing for checks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-auditing?branch=users%2Fglmorale%2Fnewroadmap)">Auditing for checks</a></td>
+         <td>Pipelines</td>
+         <td>2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-sequencing?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Sequencing approvals and other checks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-sequencing?branch=users%2Fglmorale%2Fnewroadmap)">Sequencing approvals and other checks</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Custom variables in checks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks?branch=users%2Fglmorale%2Fnewroadmap)">Custom variables in checks</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/service-connections-in-checks?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Service connections in checks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/service-connections-in-checks?branch=users%2Fglmorale%2Fnewroadmap)">Service connections in checks</a></td>
+         <td>Pipelines</td>
+         <td>2023 Q1</td>
+         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-extensibility?branch=users%2Fglmorale%2Fnewroadmap data-raw-source="[Checks extensibility](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2022/checks-extensibility?branch=users%2Fglmorale%2Fnewroadmap)">Checks extensibility</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+         <td>Future</td>
+      </tr>
+    </tbody>
+</table>
 
 ## All features
 <table>
