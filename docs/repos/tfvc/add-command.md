@@ -37,7 +37,7 @@ tf add itemspec [/lock:(none|checkin|checkout)] [/encoding:filetype]
 |------------------------------------|----------------|
 |     `/encoding: <filetype>`      |Ignore this parameter.|
 |             `itemspec`             |Specifies the scope of the items to add. You can specify more than one `itemspec` argument. |
-|             `/lock`              |   Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
+|             `/lock`              |   Applies or removes a lock. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md). |
 |           `/noignore`            | By default, version control ignores certain types of files, such as *.dll* files. You can configure which kinds of files to ignore by using a *.tfignore* file. See [Customize which files version control ignores](add-files-server.md#tfignore). The rules in a *.tfignore* file apply to the `add` command when you specify a wildcard in your `itemspec`. To override these rules, specify `/noignore`.|
 |           `/noprompt`            | Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).|
 |           `/recursive`           |Recursively adds items in the specified directory and any subdirectories.|
@@ -88,5 +88,5 @@ c:\code\SiteApp\Main>tf add *.cs /recursive
 
 ## Related articles
 
-- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md)
 - [Status command](status-command.md)
