@@ -187,6 +187,11 @@ Finally, most of the new features will only be available in the New Boards Hub. 
    :::column-end:::
 :::row-end:::
 :::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="2":::
       [Automated team work item rules](../release-notes/roadmap/2023/work-item-team-rules)
    :::column-end:::
@@ -353,6 +358,11 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
    :::column-end:::
 :::row-end:::
 :::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="2":::
       [Node 16 runner along with other runners](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)
    :::column-end:::
@@ -486,6 +496,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
    :::column-end:::
    :::column span="":::
       **Server Timeframe**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
