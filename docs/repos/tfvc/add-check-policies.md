@@ -19,7 +19,7 @@ ms.subservice: azure-devops-repos-tfvc
 Team Foundation Version Control administrators can add check-in policy requirements. These check-in policies require users to take actions when they conduct a check-in to source control. For example, a user can be required to associate a work item with a changeset. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
 > [!NOTE]
-> Visual Studio check-in policies must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio on your computer. If you have multiple installations of Visual Studio, you need to set the check-in policy on each installation.
+> You can set Visual Studio check-in policies through Team Explorer as documented in this article, the [tf.exe configure command](configure-command.md), or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio on your computer. If you have multiple installations of Visual Studio, you need to set the check-in policy on each installation.
 
 ## Create a check-in policy
 

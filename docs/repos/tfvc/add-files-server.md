@@ -1,7 +1,7 @@
 ---
 title: Add files to version control server
 titleSuffix: Azure Repos
-description: See how to use Visual Studio to add files to the Team Foundation Version Control server.
+description: See how to use Visual Studio to add files to Team Foundation Version Control.
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.service: azure-devops-repos
 ms.topic: conceptual
