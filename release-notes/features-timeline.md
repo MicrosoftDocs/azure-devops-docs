@@ -108,7 +108,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)  
+      [**OpenID Connect for credential-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)  
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -659,11 +659,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td>Future</td>      
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[Credential-free pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">Credential-free pipelines</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection data-raw-source="[Improvements in service connection usage history](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection)">Improvements in service connection usage history</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -702,12 +697,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td>
         <td>Test Plans</td>
         <td>2022.1</td>
-      </tr>
-      <tr>
-        <td rowspan="9"><strong>2023 Q1</strong></td>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks data-raw-source="[Improvements in Pipelines checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improvements-in-pipelines-checks)">Improvements in Pipelines checks</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings data-raw-source="[In-product recommendations for secure settings](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
