@@ -357,7 +357,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
 
 ### Pipelines Agent Node Lifecycle
 
-Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a regular cadence of releases with Node 16 being the LTS and Node 18 being the current version at the time of this roadmap update. However, the Node runner in the pipelines agent has not kept up with the Node releases. 
+Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a regular cadence of releases with Node 16 being the LTS and Node 18 being the current version at the time of this roadmap update. However, the Node task runner in the pipelines agent has not kept up with the Node releases. There can be security vulnerabilities in old versions of Node. Furthermore, customers often run security scans on their infrastructure and these scans flag Azure Pipelines agent software for its dependency on Node 6 and Node 10 - both of which have reached their end-of-life.
 
 As a first step towards that, we recently released a new [Node 16 task runner](../release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for the task authors to keep up with Node updates. We do not expect all tasks in the Marketplace to be updated to run on the new version of Node. So, before we deprecate Node 6 and 10 completely on Microsoft hosted and self-hosted pools, we will provide some tools for customers to run the non-upgraded tasks.
 
