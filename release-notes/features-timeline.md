@@ -479,7 +479,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="3"><strong>2023 Q2</strong></td>
+        <td rowspan="2"><strong>2023 Q2</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines data-raw-source="[OpenID Connect for secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/credential-free-pipelines)">OpenID Connect for secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -490,7 +490,7 @@ On top of that, we are investing all new features to land in the New Boards Hub.
         <td>N/A</td>
       </tr>
       <tr>
-        <td rowspan="13"><strong>Future</strong></td>
+        <td rowspan="10"><strong>Future</strong></td>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>Platform</td>
         <td>N/A</td>
