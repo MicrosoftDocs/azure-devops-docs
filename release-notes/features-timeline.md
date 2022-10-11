@@ -496,9 +496,23 @@ As a first step towards that, we recently released a new [Node 16 task runner](.
 
 ### Pipelines checks
 
-Customers prefer YAML pipelines over classic for builds (CI). However, for CD, we still have a large number of customers that use classic release management instead of YAML. The primary reason for this is the lack of parity in various CD features between the two. Over the next year and more, we will invest in bridging this gap. As a first step, we will focus on **checks** in the next 6 months. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. Here are the improvements that we will be making in this area:
+Customers prefer YAML pipelines over classic for builds (CI). However, for CD, we still have a large number of customers that use classic release management instead of YAML. The primary reason for this is the lack of parity in various CD features between the two solutions. Over the next year and more, we will invest in bridging this gap. As a first step, we will focus on **checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. Here are the improvements that we will be making in this area:
 
 :::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
    :::column span="":::
       ----------------------------
    :::column-end:::
@@ -524,7 +538,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Checks scalability
+      [Checks scalability](roadmap/2022/checks-scalability)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -538,7 +552,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Auditing for checks  
+      [Auditing for checks](roadmap/2022/checks-auditing)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -552,7 +566,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Sequencing approvals and other checks  
+      [Sequencing approvals and other checks](roadmap/2022/checks-sequencing)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -566,7 +580,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Custom variables in checks  
+      [Custom variables in checks](roadmap/2022/custom-vars-in-checks)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -580,7 +594,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Service connections in checks  
+      [Service connections in checks](roadmap/2022/service-connections-in-checks)
    :::column-end:::
    :::column span="":::
       Pipelines
@@ -594,7 +608,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Checks extensibility  
+      [Checks extensibility](roadmap/2022/checks-extensibility)
    :::column-end:::
    :::column span="":::
       Pipelines
