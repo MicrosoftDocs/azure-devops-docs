@@ -377,6 +377,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for CD, w
         <td>Future</td>
       </tr>
       <tr>
+        <td rowspan="7"><strong>2023 Q1</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning data-raw-source="[Track repo cloning](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
