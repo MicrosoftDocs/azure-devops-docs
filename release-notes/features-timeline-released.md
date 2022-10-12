@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/12/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2022/sprint-211-update.md" data-raw-source="[11 October 2022](2022/sprint-211-update.md)"> 11 October 2022</a></td>
+    <td>Create personal access tokens to deploy to the Marketplace</td><td>Platform</td><td>Future</td></tr>
+    <td>Option to maintain hierarchy with filters</td><td>Boards</td><td>Future</td></tr>
+    <td>Copy work item attachment URL</td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline Agent supports Group Managed Service Accounts as service account</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Show Parent in Query Results Widget</td><td>Reporting</td><td>Future</td></tr>
+</tr>
     <td rowspan="8"><a href="2022/sprint-209-update.md" data-raw-source="[12 September 2022](2022/sprint-209-update.md)"> 12 September 2022</a></td>
     <td>Increase Delivery Plans team limit from 15 to 20</td><td>Boards</td><td>Future</td></tr>
     <td>Fixed bug in Reporting Work Item Links Get API</td><td>Boards</td><td>Future</td></tr>
