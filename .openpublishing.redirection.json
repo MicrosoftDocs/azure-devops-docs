@@ -49,6 +49,21 @@
       "source_path": "docs/organizations/projects/faq-rename-project.yml",
       "redirect_url": "/azure/devops/organizations/projects/rename-project",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/get-tfs-extensions.md",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/trust.md",
+      "redirect_url": "/azure/devops/marketplace/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/how-to/grant-permissions.md",
+      "redirect_url": "/azure/devops/marketplace/grant-permissions",
+      "redirect_document_id": false
     }
   ]
 }

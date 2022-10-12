@@ -216,7 +216,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Edit work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Enumerate tag definition (Project)](permissions.md#work-item-tags) 
    - [Events (Collection)](change-organization-collection-level-permissions.md)
-   - [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
+   - [Extensions (Collection, Role)](../../marketplace/grant-permissions.md)
    ::: moniker-end
    ::: moniker range="tfs-2018"
    - [Edit build definition (Object)](../../pipelines/policies/permissions.md)
@@ -229,7 +229,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Edit task group (Object)](../../pipelines/policies/permissions.md)
    - [Edit work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Events (Collection)](change-organization-collection-level-permissions.md)
-   - [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
+   - [Extensions (Collection, Role)](../../marketplace/grant-permissions.md)
    ::: moniker-end
    
    ### F-L
@@ -277,7 +277,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Manage test configurations (Project)](change-project-level-permissions.md)
    - [Manage test environments (Project)](change-project-level-permissions.md)
    - [Manage test controllers (Collection)](change-organization-collection-level-permissions.md)
-   - [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
+   - [Marketplace extensions (Collection, Role)](../../marketplace/grant-permissions.md)
    - [Merge, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Move work items out of this project (Project)](change-project-level-permissions.md)
    - [Notes, Git (Object)](../../repos/git/branch-permissions.md)
@@ -300,7 +300,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Manage test configurations (Project)](change-project-level-permissions.md)
    - [Manage test environments (Project)](change-project-level-permissions.md)
    - [Manage test controllers (Collection)](change-organization-collection-level-permissions.md)
-   - [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
+   - [Marketplace extensions (Collection, Role)](../../marketplace/grant-permissions.md)
    - [Merge, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Move work items out of this project (Project)](change-project-level-permissions.md)
    - [Notes, Git (Object)](../../repos/git/branch-permissions.md)

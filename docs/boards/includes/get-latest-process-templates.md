@@ -10,7 +10,7 @@ ms.date: 01/22/2021
 > - **For Inherited process model**: Open the Process page from organizations settings. To learn more, see [Manage processes](../../organizations/settings/work/manage-process.md).
 > - **For the On-premises XML process model**:   
 >    - [Install or upgrade to the latest version of Azure DevOps Server](https://visualstudio.microsoft.com/downloads/) 
->    - Download the zipped template file using the <a href="../work-items/guidance/manage-process-templates.md">Process Template Manager</a>. You'll need to use a version of Visual Studio that is at the same version level as TFS. You can install the latest version of <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio Community</a> for free.</li>
+>    - Download the zipped template file using the [Process Template Manager](../work-items/guidance/manage-process-templates.md). You'll need to use a version of Visual Studio that is at the same version level as Azure DevOps Server. You can install the latest version of [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) for free. 
 >    - You can access the latest versions of the default process templates installed on Azure DevOps Server, for example: `%programfiles%/Azure DevOps Server 2020/Tools/Deploy/ProcessTemplateManagerFiles/1033`. For descriptions of each file and folder, see [Overview of process template files](../../reference/process-templates/overview-process-template-files.md).
 
 ::: moniker-end
@@ -22,6 +22,6 @@ ms.date: 01/22/2021
 > To access the latest versions of the default process templates: 
 > - [Install or upgrade to the latest version of TFS](https://visualstudio.microsoft.com/downloads/). 
 > - Download the zipped template file using the [Process Template Manager](../work-items/guidance/manage-process-templates.md). You'll need to use a version of Visual Studio that is at the same version level as TFS. You can install the latest version of [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) for free. 
-> - You can access the latest versions of the default process templates installed on TFS 2017 here:` %programfiles%/TFS 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033` (for TFS 2015, the main folder is TFS 14.0). For descriptions of each file and folder, see [Overview of process template files](../../reference/process-templates/overview-process-template-files.md). 
+> - You can access the latest versions of the default process templates installed on TFS 2018 here:` %programfiles%/TFS 16.0/Tools/Deploy/ProcessTemplateManagerFiles/1033`. For descriptions of each file and folder, see [Overview of process template files](../../reference/process-templates/overview-process-template-files.md). 
 
 ::: moniker-end
