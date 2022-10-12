@@ -1,16 +1,16 @@
 ---
-title: Install older Node runners
+title: Ability to download and install old runners on self-hosted agents
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Install older Node runners
+description: Ability to download and install old runners on self-hosted agents
 hide_comments: true
 ---
 
-# Install older Node runners
+# Ability to download and install old runners on self-hosted agents
 
 In addition to the built-in tasks, you can use tasks from the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) or your own custom tasks in Azure Pipelines. We are in the process of [updating the built-in Node tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16) to use the new Node 16 runner. We [published guidance](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode16.md) for external task authors to update their tasks. While we expect a majority of tasks in the Marketplace to be updated, we also expect that some of them will not be updated and will continue to depend on older Node runners. It is also likely that you will take some time to update your custom tasks, if you have those. Initially, we will be shipping two agents - one with Node 6, 10, and 16 runners, and one with the Node 16 runner only. Depending on what tasks your pipelines use, you will have the choice to use either of those agents in your self-hosted pools. We will keep  Microsoft-hosted agents on the version with all  three Node runners for some time.
 

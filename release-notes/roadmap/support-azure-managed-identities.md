@@ -1,16 +1,16 @@
 ---
-title: Support Azure Managed Identities and Service Principals
+title: Managed Identities and Service Principal support
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Support Azure Managed Identities and Service Principals
+description: Managed Identities and Service Principal support
 hide_comments: true
 ---
 
-# Support Azure Managed Identities and Service Principals
+# Managed Identities and Service Principal support
 
 We are working on enabling applications to use managed identities and service principals to integrate with Azure DevOps through REST APIs and client libraries. 
 

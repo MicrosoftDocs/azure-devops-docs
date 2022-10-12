@@ -318,7 +318,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="14"><strong>2022 Q4</strong></td>
+        <td rowspan="16"><strong>2022 Q4</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -358,6 +358,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
+       <tr>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16 data-raw-source="[All in-the-box tasks run on Node 16](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Associate all public APIs with PAT scopes</a></td>
         <td>Platform</td>
@@ -389,8 +399,27 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="8"><strong>2023 Q1</strong></td>
+        <td rowspan="12"><strong>2023 Q1</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning data-raw-source="[Track repo cloning](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner data-raw-source="[Ability to download and install old runners on self-hosted agents](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      <tr>
+        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
