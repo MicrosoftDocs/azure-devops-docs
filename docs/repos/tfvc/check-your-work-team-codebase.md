@@ -84,7 +84,7 @@ One of the following outcomes occurs:
 
 If you want to be notified when someone checks in code in your TFVC project, you can [subscribe](../../notifications/manage-your-personal-notifications.md) to receive email alerts. In your TFVC project **User settings**, select **Notifications**. Select **New subscription**, and then choose from and customize the **Check in** templates for **Code (TFVC)**.
 
-![Screenshot that shows the alerts page for a TFVC project in web portal.](media/check-your-work-team-codebase/IC720120.png)
+![Screenshot that shows the alerts page for a TFVC project in web portal.](media/check-your-work-team-codebase/notifications.png)
 
 ## Work from the command prompt
 
