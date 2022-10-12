@@ -107,7 +107,7 @@ You can share your work with others by publishing your local Git repo to an **Az
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the [Visual Studio 2019 tab](#tab/visual-studio-2019).
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
 
 1. Connect to an Azure DevOps repo by right-clicking the solution name in **Solution Explorer**, and then selecting **Push to Git service** to launch the **Create a Git repository** window.
 
