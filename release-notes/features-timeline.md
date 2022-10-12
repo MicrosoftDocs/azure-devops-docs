@@ -75,7 +75,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
          <td>Platform</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>N/A</td>
       </tr>
       <tr>
@@ -399,7 +399,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="12"><strong>2023 Q1</strong></td>
+        <td rowspan="11"><strong>2023 Q1</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning data-raw-source="[Track repo cloning](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -422,11 +422,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
         <td>Pipelines</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
-        <td>Platform</td>
-        <td>N/A</td>
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (Preview)</a></td>
@@ -459,13 +454,18 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="3"><strong>2023 Q2</strong></td>
+        <td rowspan="4"><strong>2023 Q2</strong></td>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
+        <td>Platform</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>Platform</td>
         <td>N/A</td>
       </tr>

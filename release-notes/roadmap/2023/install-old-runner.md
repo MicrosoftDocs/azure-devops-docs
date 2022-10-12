@@ -15,5 +15,5 @@ In addition to the built-in tasks, you can use tasks from the [Marketplace](http
 
 At some point in 2023 Q1, we will stop shipping the agent with end-of-life Node runners. However, we still want to give you a way to run tasks that have not been upgraded. One way we will support this is by making the old Node runners available as a separate download. You can install these on your agent, and continue to work with the tasks that were not upgraded. 
 
-[!NOTE]
-Running non-upgraded tasks on *Microsoft-hosted* agents after 2023 Q1 may not be supported.
+> [!NOTE]
+> Running non-upgraded tasks on *Microsoft-hosted* agents after 2023 Q1 may not be supported.
