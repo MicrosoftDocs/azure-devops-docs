@@ -190,12 +190,12 @@ The menu options available to you change depending on the platform you work from
    :::column span="1":::
    **Backlog menu**  
    
-   ![Backlog multi-select menu](media/bulk-m-backlog-menu-options-ts.png)
+   ![Screenshot of Backlog multi-select menu.](media/bulk-m-backlog-menu-options-ts.png)
    :::column-end:::
    :::column span="1":::
    **Query results multi-select menu**  
    
-   ![Query results multi-select menu](media/bulk-m-query-results-menu-options-ts.png)
+   ![Screenshot of Query results multi-select menu.](media/bulk-m-query-results-menu-options-ts.png)
    :::column-end:::
 :::row-end:::
 
@@ -212,13 +212,13 @@ Here, we use the context menu to move several non-sequential items to the curren
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Product backlog, Open context menu, Move several backlog items to a different iteration](media/bulk-modify/move-iteration.png)
+> ![Screenshot of Product backlog, Open context menu, Move several backlog items to a different iteration.](media/bulk-modify/move-iteration.png)
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
 
-![Backlog page, multi-select items, Open context menu, Move to iteration](media/bulk-modify-multi-select-ts.png)
+![Screenshot of Backlog page, multi-select items, Open context menu, Move to iteration.](media/bulk-modify-multi-select-ts.png)
 
 ::: moniker-end
 
@@ -234,7 +234,7 @@ Here, we use the context menu to move several non-sequential items to the curren
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing reassigning them, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](media/bulk-modify/assign-from-query.png)  
+> ![Screenshot of Queries Results page, bulk modify, Assign to selection from More actions menu.](media/bulk-modify/assign-from-query.png)  
 
 To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
@@ -249,12 +249,12 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Edit work items dialog](media/bulk-modify/edit-work-items-new-text-editor.png)  
+	> ![Screeenshot of Edit work items dialog.](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
 
     > [!div class="mx-imgBorder"]  
-    > ![Query results page, save bulk modified items](media/bulk-modify/query-results-bulk-save-items.png) 
+    > ![Screenshot of Query results page, save bulk modified items.](media/bulk-modify/query-results-bulk-save-items.png) 
 
 ::: moniker-end
 
@@ -262,11 +262,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-    ![TFS 2017, Query results page, bulk edit fields](media/bulk-modify-edit-fields-ts.png)  
+    !Screenshot of Query results page, bulk edit fields.](media/bulk-modify-edit-fields-ts.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  
 
-    ![Azure Boards and TFS 2017, Query results page, save bulk modified items](media/bulk-modify-save-ts.png)
+    ![Screenshot of Query results page, save bulk modified items, TFS 2018.](media/bulk-modify-save-ts.png)
 
 ::: moniker-end
 
@@ -293,7 +293,7 @@ From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.
 Here we choose to add the *Service* tag to the selected work items. 
 
 > [!div class="mx-imgBorder"]
-> ![Edit work items dialog, Add tags](media/bulk-modify/edit-tags-dialog.png)
+> ![Screenshot of Edit work items dialog, Add tags.](media/bulk-modify/edit-tags-dialog.png)
 
 
 ## Related articles
