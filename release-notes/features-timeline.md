@@ -107,9 +107,9 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 
 ### Updated Boards experience
 
-The Azure Boards user experience is being updated from the ground up. While the functionality remains the same, you can expect a more modern design, responsive reflows, improved performance, and accessibility compliance. 
+The Azure Boards user experience is being updated from the ground up. While the functionality remains the same, you can expect a more modern design, responsive reflows, improved performance, and improved accessibility. 
 
-[Learn more](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update?) on enabling the New Boards Hub and providing us with feedback.
+[Learn more](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) about how to enable the New Boards Hub and provide us with feedback.
 
 Note that most new features we are shipping in Boards are only available in the New Boards Hub. These investments include:
 
@@ -136,12 +136,6 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[Copy work item attachment URL](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment URL</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
-         <td>Future</td>
-      </tr>
-      <tr>
          <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane data-raw-source="[Move to Column and Move to Swimlane](https://learn.microsoft.com/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane)">Move to Column and Move to Swimlane</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
@@ -154,9 +148,15 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
+         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[Copy work item attachment URL](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment URL</a></td>
+         <td>Boards</td>
+         <td>2022 Q4</td>
+         <td>Future</td>
+      </tr>
+      <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
          <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
+         <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -188,9 +188,9 @@ Note that most new features we are shipping in Boards are only available in the 
 
 ### Pipelines agent Node lifecycle
 
-Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result we have not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
+Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
 
-As a first step, we recently released a new [Node 16 task runner](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for task authors to keep up with Node updates. Because not all tasks in the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) will be continuously updated to run on the latest versions of Node, we will also provide pipeline authors the ability to opt into using older versions of Node to run non-upgraded tasks. Once all these features are available, we'll remove end-of-life versions of Node from Microsoft hosted agents and self-hosted agent images. 
+As a first step, we recently released a new [Node 16 task runner](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for task authors to keep up with Node updates. Because not all tasks in the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) will be continuously updated to run on the latest versions of Node, we will also provide pipeline authors the ability to continue using non-upgraded tasks. Once all these features are available, we'll remove end-of-life versions of Node from Microsoft hosted agents and self-hosted agent images. 
 
 <table>
     <thead>
