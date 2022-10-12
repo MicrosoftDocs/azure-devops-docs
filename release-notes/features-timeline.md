@@ -50,19 +50,19 @@ We expect this work to be a major focus of our efforts for multiple quarters.
     <tbody>
       <tr>
          <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability data-raw-source="[PAT lifecycle APIs](https://learn.microsoft.com/azure/devops/release-notes/2021/sprint-186-update#pat-lifecycle-management-api-general-availability)">PAT lifecycle APIs</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>2022.1</td>
       </tr>
       <tr>
          <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Control plane for personal access tokens (PAT)](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Control plane for personal access tokens (PAT)</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>2022.1</td>
       </tr>
       <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (preview)</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td>2023 Q1</td>
          <td>N/A</td>
       </tr>
@@ -74,13 +74,13 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       </tr>
       <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td>2023 Q2</td>
          <td>N/A</td>
       </tr>
       <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (GA)</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td>2023 H2</td>
          <td>N/A</td>
       </tr>
@@ -92,13 +92,13 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       </tr>
       <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy data-raw-source="[Policies to disable alternate authentication credentials](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td>Future</td>
          <td>N/A</td>
       </tr>
       <tr>
          <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy data-raw-source="[Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
-         <td>Platform</td>
+         <td>General</td>
          <td>Future</td>
          <td>N/A</td>
       </tr>
@@ -370,7 +370,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes data-raw-source="[Associate all public APIs with PAT scopes](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Associate all public APIs with PAT scopes</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>2022.1</td>
       </tr>
       <tr>
@@ -425,7 +425,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (Preview)</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
@@ -461,12 +461,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
@@ -477,22 +477,22 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td rowspan="9"><strong>Future</strong></td>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>Future</td>
       </tr>
       <tr>
         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/access-events-for-pat data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/access-events-for-pat)">Access events for PAT, SSH will be available in the Auditing Log</a></td>
-        <td>Platform</td>
+        <td>General</td>
         <td>Future</td>
       </tr>
       <tr>
