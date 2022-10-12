@@ -10,6 +10,8 @@
       items:
         - name: "2022"
           items:
+          - name: October 11
+            href: 2022/sprint-211-update.md
           - name: October 4
             href: 2022/sprint-210-update.md
           - name: September 12
