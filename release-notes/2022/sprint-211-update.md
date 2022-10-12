@@ -7,7 +7,7 @@ description: With this update, we included multiple updated to Azure Boards.
 ---
 # Maintain backlog hierarchy when filtering
 
-With this update, we included multiple updates to Azure Board. In backlogs, we've added the option for you to maintain the hierarchy when filtering. In addition, you can now copy the URL for a work item attachment so you can cut and paste in the description and discussion sections of the work item. 
+With this update, we included multiple updates to Azure Boards. In backlogs, we've added the option for you to maintain the hierarchy when filtering. In addition, you can now copy the URL for a work item attachment so you can cut and paste in the description and discussion sections of the work item. 
 
 Check out the release notes for details.
 
