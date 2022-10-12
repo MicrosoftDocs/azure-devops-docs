@@ -61,43 +61,43 @@ We expect this work to be a major focus of our efforts for multiple quarters.
          <td>2022.1</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (preview)</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (preview)</a></td>
          <td>General</td>
          <td>2023 Q1</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Secret-free deployments from Azure Pipelines (preview)</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments">Secret-free deployments from Azure Pipelines (preview)</a></td>
          <td>Pipelines</td>
          <td>2023 Q2</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
          <td>General</td>
          <td>2023 Q2</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (GA)</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities data-raw-source="[Managed Identity and Service Principal support](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (GA)</a></td>
          <td>General</td>
          <td>2023 H2</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (GA)</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (GA)</a></td>
          <td>Pipelines</td>
          <td>2023 H2</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy data-raw-source="[Policies to disable alternate authentication credentials](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy data-raw-source="[Policies to disable alternate authentication credentials](https://learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
          <td>General</td>
          <td>Future</td>
          <td>N/A</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy data-raw-source="[Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy data-raw-source="[Full support for Conditional Access Policies](https://learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
          <td>General</td>
          <td>Future</td>
          <td>N/A</td>
@@ -109,7 +109,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
 
 The Azure Boards user experience is being updated from the ground up. While the functionality remains the same, you can expect a more modern design, responsive reflows, improved performance, and improved accessibility. 
 
-[Learn more](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) about how to enable the New Boards Hub and provide us with feedback.
+[Learn more](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) about how to enable the New Boards Hub and provide us with feedback.
 
 Note that most new features we are shipping in Boards are only available in the New Boards Hub. These investments include:
 
@@ -124,13 +124,13 @@ Note that most new features we are shipping in Boards are only available in the 
     </thead>
     <tbody>
        <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board data-raw-source="[Move to position](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board)">Move to position</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board data-raw-source="[Move to position](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-203-update#move-to-column-position-on-kanban-board)">Move to position</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards data-raw-source="[Adding Assigned To avatar to child items on cards](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards)">Adding Assigned To avatar to child items on cards</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards data-raw-source="[Adding Assigned To avatar to child items on cards](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards)">Adding Assigned To avatar to child items on cards</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q2</td>
          <td>Future</td>
@@ -142,43 +142,43 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-206-update#filter-on-work-item-history data-raw-source="[Filter to work item history](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-206-update#filter-on-work-item-history)">Filter to work item history</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-206-update#filter-on-work-item-history data-raw-source="[Filter to work item history](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-206-update#filter-on-work-item-history)">Filter to work item history</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[Copy work item attachment URL](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment URL</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[Copy work item attachment URL](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment URL</a></td>
          <td>Boards</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
          <td>Boards</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
          <td>Boards</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[Swimlane rules on Kanban board](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[Swimlane rules on Kanban board](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
          <td>Boards</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown data-raw-source="[Work item markdown support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work item markdown support</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown data-raw-source="[Work item markdown support](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work item markdown support</a></td>
          <td>Boards</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automated team work item rules](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automated team work item rules](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
          <td>Boards</td>
          <td>2023 Q2</td>
          <td>Future</td>
@@ -203,7 +203,7 @@ As a first step, we recently released a new [Node 16 task runner](https://learn.
     </thead>
     <tbody>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent data-raw-source="[Node 16 runner along with other runners](https://review.learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)">Node 16 runner along with other runners</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent data-raw-source="[Node 16 runner along with other runners](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent)">Node 16 runner along with other runners</a></td>
          <td>Pipelines</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
          <td>Future</td>
@@ -215,37 +215,37 @@ As a first step, we recently released a new [Node 16 task runner](https://learn.
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16 data-raw-source="[All in-the-box tasks run on Node 16](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16 data-raw-source="[All in-the-box tasks run on Node 16](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
          <td>Pipelines</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
          <td>Pipelines</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner data-raw-source="[Ability to download and install old runners on self-hosted agents](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner data-raw-source="[Ability to download and install old runners on self-hosted agents](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6 data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6 data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
@@ -268,37 +268,37 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-scalability data-raw-source="[Checks scalability](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-scalability)">Checks scalability</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-scalability data-raw-source="[Checks scalability](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-scalability)">Checks scalability</a></td>
          <td>Pipelines</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing data-raw-source="[Auditing for checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing)">Auditing for checks</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing data-raw-source="[Auditing for checks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing)">Auditing for checks</a></td>
          <td>Pipelines</td>
          <td>2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-sequencing data-raw-source="[Sequencing approvals and other checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-sequencing data-raw-source="[Sequencing approvals and other checks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks data-raw-source="[Custom variables in checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks)">Custom variables in checks</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks data-raw-source="[Custom variables in checks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/custom-vars-in-checks)">Custom variables in checks</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/service-connections-in-checks data-raw-source="[Service connections in checks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/service-connections-in-checks data-raw-source="[Service connections in checks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
          <td>2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-extensibility data-raw-source="[Checks extensibility](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-extensibility data-raw-source="[Checks extensibility](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
          <td>Pipelines</td>
          <td>Future</td>
          <td>Future</td>
@@ -319,52 +319,52 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
         <td rowspan="16"><strong>2022 Q4</strong></td>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/maintain-backlog-hierarchy)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[copy work item attachment url](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment url</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url data-raw-source="[copy work item attachment url](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/get-attachment-url)">Copy work item attachment url</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support data-raw-source="[Emoji support in work item tags](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support)">Emoji support in work item tags</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support data-raw-source="[Emoji support in work item tags](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support)">Emoji support in work item tags</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/save-comment-improvements data-raw-source="[Save Comment Improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save Comment Improvements</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/save-comment-improvements data-raw-source="[Save Comment Improvements](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save Comment Improvements</a></td>
         <td>Boards</td>
         <td>Future</td>      
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection data-raw-source="[Improvements in service connection usage history](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection)">Improvements in service connection usage history</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection data-raw-source="[Improvements in service connection usage history](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection)">Improvements in service connection usage history</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/net6agent-replace-core31 data-raw-source="[.NET 6 agent to replace .NET Core 3.1 agent](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/net6agent-replace-core31)">.NET 6 agent to replace .NET Core 3.1 agent</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/net6agent-replace-core31 data-raw-source="[.NET 6 agent to replace .NET Core 3.1 agent](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/net6agent-replace-core31)">.NET 6 agent to replace .NET Core 3.1 agent</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/toggle-to-disable-classic-pipelines data-raw-source="[Toggle to disable classic pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/toggle-to-disable-classic-pipelines)">Toggle to disable classic pipelines</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/toggle-to-disable-classic-pipelines data-raw-source="[Toggle to disable classic pipelines](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/toggle-to-disable-classic-pipelines)">Toggle to disable classic pipelines</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
        <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16 data-raw-source="[All in-the-box tasks run on Node 16](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16 data-raw-source="[All in-the-box tasks run on Node 16](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
@@ -374,149 +374,149 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>2022.1</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget data-raw-source="[Pull Request widget to allow for the selection of many repos](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget data-raw-source="[Pull Request widget to allow for the selection of many repos](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query data-raw-source="[Rollup columns for query results](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query data-raw-source="[Rollup columns for query results](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/show-link-with-parent-name" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/show-link-with-parent-name)">Show Link with Parent Name in Query Results Widget</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/show-link-with-parent-name" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/show-link-with-parent-name)">Show Link with Parent Name in Query Results Widget</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution data-raw-source="[Pause and resume manual test execution](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/resume-test-execution)">Pause and resume manual test execution</a></td>
         <td>Test Plans</td>
         <td>2022.1</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings data-raw-source="[In-product recommendations for secure settings](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings data-raw-source="[In-product recommendations for secure settings](https://learn.microsoft.com/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
         <td rowspan="11"><strong>2023 Q1</strong></td>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning data-raw-source="[Track repo cloning](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning data-raw-source="[Track repo cloning](https://learn.microsoft.com/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner data-raw-source="[Ability to download and install old runners on self-hosted agents](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner data-raw-source="[Ability to download and install old runners on self-hosted agents](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
          <td>Pipelines</td>
          <td>Future</td>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (Preview)</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (Preview)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (Preview)</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-for-cargo-package" data-raw-source="[Support for Cargo package manager for Rust](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-for-cargo-package)">Support for Cargo package manager for Rust</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-for-cargo-package" data-raw-source="[Support for Cargo package manager for Rust](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-for-cargo-package)">Support for Cargo package manager for Rust</a></td>
         <td>Artifacts</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans data-raw-source="[Pause and resume manual test execution](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans data-raw-source="[Pause and resume manual test execution](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
         <td>Test Plans</td>
         <td>2022.1</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements data-raw-source="[Code coverage improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements)">Improved support for code coverage publishing within Azure Pipelines</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements data-raw-source="[Code coverage improvements](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/code-coverage-improvements)">Improved support for code coverage publishing within Azure Pipelines</a></td>
         <td>Test Plans</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown data-raw-source="[Work Item support for Markdown editing](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work Item support for Markdown editing</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown data-raw-source="[Work Item support for Markdown editing](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work Item support for Markdown editing</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[swimlane rules on kanban board](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[swimlane rules on kanban board](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
         <td rowspan="3"><strong>2023 Q2</strong></td>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](https://learn.microsoft.com/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automate rules for updating work items](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automate rules for updating work items](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
         <td rowspan="10"><strong>Future</strong></td>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](https://learn.microsoft.com/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable alternate authentication credentials](https://learn.microsoft.com/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable alternate authentication credentials</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy" data-raw-source="[Full support for Conditional Access Policies](https://learn.microsoft.com/azure/devops/release-notes/roadmap/conditional-access-policy)">Full support for Conditional Access Policies</a></td>
         <td>General</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/access-events-for-pat data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/access-events-for-pat)">Access events for PAT, SSH will be available in the Auditing Log</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/access-events-for-pat data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://learn.microsoft.com/azure/devops/release-notes/roadmap/access-events-for-pat)">Access events for PAT, SSH will be available in the Auditing Log</a></td>
         <td>General</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (GA)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (GA)</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/package-promote-task data-raw-source="[Package promote task in Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/package-promote-task data-raw-source="[Package promote task in Azure Pipelines](https://learn.microsoft.com/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
         <td>Artifacts</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/deprecate-old-azure-artifacts)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td>
         <td>Artifacts</td>
         <td>Future</td>   
       </tr>      
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improve-github-connection-experience data-raw-source="[Improve GitHub Connection Experience](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/improve-github-connection-experience)">Improve GitHub Connection Experience</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/improve-github-connection-experience data-raw-source="[Improve GitHub Connection Experience](https://learn.microsoft.com/azure/devops/release-notes/roadmap/improve-github-connection-experience)">Improve GitHub Connection Experience</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-pipelines-app data-raw-source="[Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-pipelines-app data-raw-source="[Support Pipelines App with GitHub Enterprise](https://learn.microsoft.com/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
         <td>Pipelines</td>
         <td>Future</td>
       </tr>
