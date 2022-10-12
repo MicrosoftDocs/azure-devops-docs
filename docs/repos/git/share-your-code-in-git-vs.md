@@ -6,7 +6,7 @@ ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.service: azure-devops-repos
 toc: show
 ms.topic: tutorial
-ms.date: 01/16/2022
+ms.date: 10/14/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -14,7 +14,7 @@ ms.subservice: azure-devops-repos-git
 # Share your code with Azure Repos and Visual Studio
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures for the following tasks:
 
@@ -46,11 +46,11 @@ The first step to sharing your Visual Studio solution with others using Git is t
 
 1. Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer**, and then selecting **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-inline.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
 
    Or, choose **Git > Create Git Repository** from the menu bar to launch the **Create a Git repository** window. If you don't see this option, then your code is already in a Git repo.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-git-menu-inline.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-git-menu-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
 
 2. This step only applies to the Visual Studio Git version control experience: in the **Create a Git repository** window, choose **Local only**, verify the local path is correct, and then choose **Create**.
 
@@ -61,7 +61,6 @@ The first step to sharing your Visual Studio solution with others using Git is t
 You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and Git resources.
 
 :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
-
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -108,13 +107,15 @@ You can share your work with others by publishing your local Git repo to an **Az
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the [Visual Studio 2019 tab](#tab/visual-studio-2019).
+
 1. Connect to an Azure DevOps repo by right-clicking the solution name in **Solution Explorer**, and then selecting **Push to Git service** to launch the **Create a Git repository** window.
 
    :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-expanded.png":::
 
    Or, choose **Git > Push to Git service** from the menu bar to launch the **Create a Git repository** window.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-git-menu-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2022 menu." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-git-menu-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-menu.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2022 context menu." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-menu-lrg.png":::
 
 1. In the **Create a Git repository** dialog, select **GitHub**. Enter any required values under **Create a new GitHub repository**. Then select **Push**.
 
@@ -210,15 +211,15 @@ It's good practice to review the code changes in your commit before publishing. 
 
 1. To see what's changed in a commit, select **Git** > **Manage Branches** to open the **Git Repository** window.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/manage-branches-git-menu-inline.png" border="true" alt-text="Screenshot of 'Manage Branches' menu item in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/manage-branches-git-menu-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
 
 1. In the **Git Repository** window, select your branch, right-click the commit, and then choose **View Commit Details** to open the **Commit** window.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/git-repository-window-inline.png" border="true" alt-text="Screenshot of the 'View Commit Details' menu option for a commit in the 'Git Repository' window in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/git-repository-window-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/git-repository-window.png" border="true" alt-text="Screenshot of the 'View Commit Details' menu option for a commit in the 'Git Repository' window in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/git-repository-window-lrg.png":::
 
 1. In the **Commit** window, you can right-click on any file and select **Compare with Previous** to view the file changes made by the commit.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/git-details-window-inline.png" border="true" alt-text="Screenshot of the 'Compare with Previous' option in the Commit pane in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/git-details-window-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/git-details-window.png" border="true" alt-text="Screenshot of the 'Compare with Previous' option in the Commit pane in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/git-details-window-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -268,7 +269,6 @@ To show a diff view of the last commit in your current branch, run the following
 
 <a id="link-work-items" />
 
-
 ## Link work items to your commits
 
 As you develop your software, you can capture which commits support the completion of work items like Azure DevOps tasks or bug fixes. The audit trail of work items linked to commits lets your team understand how tasks and bugs were resolved.
@@ -280,7 +280,7 @@ As you develop your software, you can capture which commits support the completi
 
 You can link work items to commits by adding _#ID_ into the commit message. For example, the commit message "*Fix bug #12 Missing icons in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**.
 
-:::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/add-related-work-item-git-inline.png" border="true" alt-text="Screenshot of a work item linked to a commit in the 'Git Changes' window in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/add-related-work-item-git-expanded.png":::
+:::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/add-related-work-item-git.png" border="true" alt-text="Screenshot of a work item linked to a commit in the 'Git Changes' window in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/add-related-work-item-git-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -327,19 +327,19 @@ As you write your code, your changes are automatically tracked by Visual Studio.
 
 1. In the **Git Changes** window, enter a message that describes the changes, and then choose **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section of the **Git Changes** window.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/commit-changes-inline.png" border="true" alt-text="Screenshot of the 'Commit All' button in the 'Git Changes' window in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/commit-changes-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/commit-changes.png" border="true" alt-text="Screenshot of the 'Commit All' button in the 'Git Changes' window in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/commit-changes-lrg.png":::
 
 2. To push your commit to **Azure Repos**, select the up-arrow push button.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-commit-git-changes-window-inline.png" border="true" alt-text="Screenshot of the up-arrow push button in the 'Git Changes' window of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-commit-git-changes-window-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the 'Git Changes' window of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
 
    Or, you can push your commit from the **Git Repository** window. To open the **Git Repository** window, select the **outgoing / incoming** link in the **Git Changes** window.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-commit-git-repositories-window-inline.png" border="true" alt-text="Screenshot of the 'outgoing / incoming' link in the 'Git Changes' window of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-commit-git-repositories-window-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-commit-git-repositories-window.png" border="true" alt-text="Screenshot of the 'outgoing / incoming' link in the 'Git Changes' window, and the Push link in the 'Git Repository' window of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-commit-git-repositories-window-lrg.png":::
 
    Or, you can choose **Git > Push** from the menu bar.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-commit-git-menu-inline.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-commit-git-menu-expanded.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -412,7 +412,7 @@ You can keep your local branches in sync with their remote counterparts by pulli
 
 1. In the **Git Changes** window, you can check for the latest commits on the remote branch by using the down-arrow fetch link, then selecting the **outgoing / incoming** link to open the **Git Repository** window. **Fetch** downloads remote commits that aren't in your local branch, but won't merge them into your local branch. Fetched commits show up in the **Incoming Commits** section of the **Git Repository** window. You can double-click a fetched commit to view its file changes.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-fetch-git-repositories-window-inline.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync buttons in the 'Git Changes' window of Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-fetch-git-repositories-window-extended.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-fetch-git-repositories-window.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync buttons in the 'Git Changes' window of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-fetch-git-repositories-window-lrg.png":::
   
 2. Choose **Pull** to merge the fetched remote commits into your local repo. **Pull** performs a fetch and then merges the downloaded commits into your local branch.
 
@@ -474,9 +474,7 @@ To download _and_ merge new commits from the **Azure Repos** Git repo into the c
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-
 [!INCLUDE [temp](includes/open-team-project-in-vs-qa.md)]
-
 
 #### Q: Can I use the Git command prompt with Visual Studio?
 
