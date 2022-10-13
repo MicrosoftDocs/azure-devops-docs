@@ -16,19 +16,19 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
+Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you're ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 
-In some cases, you might want to modify your workspace or create multiple workspaces to isolate and switch among the changes you are making in different [branches](./branching-strategies-with-tfvc.md).
+In some cases, you might want to modify your workspace or create multiple workspaces to isolate and switch among the changes you're making in different [branches](./branching-strategies-with-tfvc.md).
 
 ## Add, edit, or remove a workspace
 
-After you [connect to the project](../../organizations/projects/connect-to-projects.md) or press Ctrl+0, C, you can manage your workspaces.
+In Visual Studio, after you [connect to your project](../../organizations/projects/connect-to-projects.md) or press Ctrl+0, C, you can manage your workspaces.
 
 From the **Home** page in **Team Explorer** or Ctrl+0, H, select the arrow next to **Workspace**, and select **Manage workspaces**.
 
 ![Screenshot showing Manage workspaces in Team Explorer.](media/create-work-workspaces/manage-workspaces.png)
 
-From [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select the arrow next to **Workspace**, and select **Workspaces**.
+Or, from [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select the arrow next to **Workspace**, and select **Workspaces**.
 
 ![Screenshot showing Workspaces in Source Control Explorer.](media/create-work-workspaces/explorer-workspaces.png)
 
@@ -59,12 +59,12 @@ You can create and manage your workspaces from the command prompt. You can also 
  
 #### Q: Why would I need to change the working folders? How should I do it?
 
-**A:** In general, you should map your entire project to a single local folder under *c:\\Users\\\YourName\\Source\\Workspaces\\ProjectName*.
+**A:** In general, you should map your entire project to a single local folder under *c:\\Users\\\<YourName>\\Source\\Workspaces\\|<ProjectName>*.
 
 Some tips on effective folder names:
 
 - Keep all folder, subfolder, and filenames short to simplify your work and avoid potential long-path issues that can occur with some types of code projects.
-- Avoid whitespace if you want make command-line operations a little easier to perform.
+- Avoid whitespace if you want to make command-line operations a little easier to perform.
 
 If your team has a large and complex codebase or if you want your workspace to contain only the files you need to improve performance, you can [optimize your workspace](optimize-your-workspace.md).
 
@@ -89,11 +89,11 @@ If your team has a large and complex codebase or if you want your workspace to c
   > [!TIP]
   > Instead of changing the owner of your workspace when someone else needs to continue your work, you can [suspend (or shelve)](suspend-your-work-manage-your-shelvesets.md) your work and then share the shelveset with them.
 
--   **Computer**: This box identifies the dev machine where the workspace exists, and it is read-only. You can't move a workspace from one computer to another. However, if the name of your dev machine has changed and you want that change to appear in this field, run [tf workspaces /updatecomputername](workspaces-command.md).
+- **Computer**: This field identifies the dev machine where the workspace exists, and it's read-only. You can't move a workspace from one computer to another. However, if the name of your dev machine has changed and you want that change to appear in this field, run [tf workspaces /updatecomputername](workspaces-command.md).
 
--   **Location**: **Local** is the best choice in most cases. See [Decide between using a local or a server workspace](decide-between-using-local-server-workspace.md).
+- **Location**: **Local** is the best choice in most cases. See [Decide between using a local or a server workspace](decide-between-using-local-server-workspace.md).
 
--   **File Time**:
+- **File Time**:
 
   - Choose **Checkin** if you want the date and time stamp of each file to generally match the stamp of the changeset of the version in your workspace. A few issues and exceptions are:
 
@@ -111,7 +111,7 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: How do I add code, get code, develop my app, and check in?
 
-[Add files to the server](add-files-server.md), [download files from the server](develop-your-app-team-foundation-version-control.md), [develop your app](develop-your-app-team-foundation-version-control.md), and [check in](check-your-work-team-codebase.md).
+**A:** [Add files to the server](add-files-server.md), [download files from the server](develop-your-app-team-foundation-version-control.md), [develop your app](develop-your-app-team-foundation-version-control.md), and [check in](check-your-work-team-codebase.md).
 
 #### Q: I work at a remote site. Is there any way I can save bandwidth?
 

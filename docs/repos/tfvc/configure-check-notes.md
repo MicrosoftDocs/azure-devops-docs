@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Team Foundation Version Control administrators can add, configure, and remove check-in notes. You configure check-in notes in the **Settings** for **Source Control** in Visual Studio **Team Explorer**. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
+Team Foundation Version Control administrators can add, configure, and remove check-in notes by using the **Settings** for **Source Control** in Visual Studio **Team Explorer**. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
 ## Prerequisites  
 
@@ -53,7 +53,7 @@ You must have the **Edit project-level information** permission set to **Allow**
 1. On the **Settings** page, in the **Team Project** section, select **Source Control**.
 1. In the **Source Control Settings** dialog box, select the **Check-in Notes** tab.
 1. Select the check-in note for which you want to change the order.
-1. Use the up and down arrow buttons at lower-right to move the note to the desired order.
+1. Use the up and down arrow buttons at lower right to move the note to the desired order.
 1. Select more check-in notes and move them up and down until the check-in notes are in the order you desire.
 1. Select **OK**.
 

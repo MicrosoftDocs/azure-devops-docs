@@ -17,11 +17,11 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 You can use branches to accomplish the following goals:  
--   Manage concurrent work by multiple teams on the same codebase  
--   Isolate risks that are introduced by different sets of changes to the codebase  
--   Take snapshots and then support subsequent isolated changes (for example, to create a release branch)  
+-   Manage concurrent work by multiple teams on the same codebase.
+-   Isolate risks that are introduced by different sets of changes to the codebase.
+-   Take snapshots and then support subsequent isolated changes (for example, to create a release branch).
 
-For example, the following illustration shows how the DinnerNow company developed a branch structure to meet its business needs. The following screenshot shows the DinnerNow branch structure.
+For example, the following illustration shows the branch structure that the DinnerNow company developed to meet its business needs.
 
 ![Diagram that shows a branch structure.](media/branch-folders-files/IC452318.png)  
 
@@ -29,7 +29,7 @@ Feature Team A and Feature Team B each do their work in separate branches. When 
 
 As each version is released, the Main branch is branched into a new version branch, such as the Version1 branch and the Version2 branch. By following this strategy, the company can enhance or fix each past version of the product separately if necessary.
 
-You can perform a branching operation by using either **Source Control Explorer**, as this article demonstrates, or the `branch` command at a command prompt. For more information, see [Branch Command](branch-command.md).
+You can perform a branching operation by using either Visual Studio **Source Control Explorer**, as this article demonstrates, or the `branch` command at a command prompt. For more information, see [Branch Command](branch-command.md).
 
 > [!TIP]
 > Branching is an important and powerful technique for creating a parallel set of versions of your files. However, using branches can add complexity and cost to your project. For example, when you merge two branches, you may have to resolve conflicts.  
@@ -50,13 +50,13 @@ Branches are different from folders. The following illustration shows the top le
 
 ![Illustration showing the folder structure in Source Control Explorer.](media/branch-folders-files/folder-structure.png)  
 
-As the illustration shows, you can still use folders to organize branches within a project's version control hierarchy. However, folders and branches have a different appearance and different capabilities. When you right-click a folder or branch and select **Properties**, you display different information and different functionality.
+As the illustration shows, you can still use folders to organize branches within a project's version control hierarchy. However, folders and branches have a different appearance and different capabilities. When you right-click a folder or branch and select **Advanced** > **Properties**, you display different information and different functionality.
 
 When you perform branch operations, branches have important advantages over folders. Branches support version control features that provide extra visibility into your branch structure and into where your changesets have merged.
 Although you can still branch and merge among folders, the best practice for your team is to branch and merge only among branches. The following procedure explains how to convert a folder to a branch.
 
 > [!IMPORTANT]
-> Make sure the folder you want to convert exists on the server. If the pending addition icon ![TFSC Pending Addition Status Icon](media/branch-folders-files/IC106108.gif) appears next to the folder in **Source Control Explorer**, right-click the folder and select **Check In Pending Changes**.
+> Make sure the folder you want to convert exists on the server. If the pending addition icon ![TFSC Pending Addition Status Icon](media/branch-folders-files/plus.png) appears next to the folder in **Source Control Explorer**, right-click the folder and select **Check In Pending Changes**.
 
 1. In **Source Control Explorer**, right-click the folder you want to convert and select **Branching and Merging** > **Convert to Branch**.
 
@@ -86,13 +86,13 @@ After you convert a folder to a branch, you can then create other branches from 
 
 1. In **Source Control Explorer**, right-click the branch that you want to branch and select **Branching and Merging** > **Branch**.
 
-1. In the **Branch from \<Branch name>** dialog box, under **Branch from Version**, optionally drop down and select a different option from the **By** list:
+1. In the **Branch from \<Branch name>** dialog box, under **Branch from Version**, optionally drop down and select an option from the **By** list:
 
    - **Latest Version** creates the branch for the most recent version in version control.
-   - **Changeset** lets you specify the number of a changeset in the **Changeset** box, or select the ellipsis **...** to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
-   - **Date** lets you specify or select a date in the **Date** box.
-   - **Label** lets you specify or find a label. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
-   - **Workspace Version** lets you create the branch for a version in a different workspace .
+   - **Changeset** lets you enter the number of a changeset in the **Changeset** box, or select the ellipsis **...** to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Date** lets you enter or select a date in the **Date** box.
+   - **Label** lets you enter or find a label. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+   - **Workspace Version** lets you create the branch for a version in a different workspace.
 
 1. Under **Target Branch Name**, specify or browse to and select the path of the new branch.
 
@@ -111,13 +111,13 @@ But if you have a special need to branch a folder or file, you can use the follo
 
 1. In the **Branch** dialog box, under **Target** box, modify the location and name for the new branch, or select **Browse** to browse to and select a target.
 
-1. Under **Branch from version**, optionally drop down and select a different option from the **By** list:
+1. Under **Branch from version**, optionally drop down and select an option from the **By** list:
 
    - **Latest Version** creates the branch for the most recent version in version control.
-   - **Changeset** lets you specify the number of a changeset in the **Changeset** box, or select the ellipsis **...** to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
-   - **Date** lets you specify or select a date in the **Date** box.
-   - **Label** lets you specify or find a label. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
-   - **Workspace Version** lets you create the branch for a version in a different workspace .
+   - **Changeset** lets you enter the number of a changeset in the **Changeset** box, or select the ellipsis **...** to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Date** lets you enter or select a date in the **Date** box.
+   - **Label** lets you enter or find a label. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+   - **Workspace Version** lets you create the branch for a version in a different workspace.
 
 1. Optionally select **Download the target item to your workspace** to create a copy of the version-controlled item on the local workspace. Clear the checkbox if you don't need a local copy and you want to improve performance by not downloading many items to your computer.
 

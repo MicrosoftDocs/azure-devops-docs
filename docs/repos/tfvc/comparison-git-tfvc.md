@@ -84,7 +84,7 @@ Need more help to make a choice? These charts might help.
    :::column span="2":::
    Team members can concurrently change files on their dev machines. You create commits on your dev machine independently of contributing them to the team. When you're ready, you must pull the latest commits before you upload (push) yours to the server. When you pull, you might be interrupted by conflicts.
 
-   You can amend the latest local commit. You cannot change older commits. You can link commits to work items and associate them with completed builds.
+   You can amend the latest local commit. You can't change older commits. You can link commits to work items and associate them with completed builds.
 
    You can modify and combine local commits from the command prompt.
    :::column-end:::
@@ -94,7 +94,7 @@ Need more help to make a choice? These charts might help.
    Branching
    :::column-end:::
    :::column span="2":::
-   Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.
+   Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up a different workspace for each branch they work on.
 
    Changes in each branch are independent from each other, so you don't have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merge.
    
@@ -103,7 +103,7 @@ Need more help to make a choice? These charts might help.
    See [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
    :::column-end:::
    :::column span="2":::
-   Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you're ready.  
+   Branching is lightweight and path independent. Many developers create a branch for each new feature they're coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you're ready.  
    You must commit, branch, stash, or undo changes before switching branches. Merging is simple and independent of the commit that the branch is based on.
    You can compare branches to see which commits exist on which branches.  
 
@@ -240,10 +240,10 @@ Need more help to make a choice? These charts might help.
    Code reviews
    :::column-end:::
    :::column span="2":::
-   Yes. See [Day in the life of an devops Developer: Suspend work, fix a bug, and conduct a code review](share-your-code-in-tfvc-vs.md). For more lightweight discussions, you can also comment on and send email about a changeset from the web portal.
+   See [Day in the life of a devops developer: Suspend work, fix a bug, and conduct a code review](share-your-code-in-tfvc-vs.md). For more lightweight discussions, you can also comment on and send email about a changeset from the web portal.
    :::column-end:::
    :::column span="2":::
-   Yes. See [Conduct a pull request](../../repos/git/pull-requests.md). For more lightweight discussions, you can also comment on and send email about a commit from the web portal.
+   See [Review pull requests](../git/review-pull-requests.md). For more lightweight discussions, you can also comment on and send email about a commit from the web portal.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -300,7 +300,7 @@ Need more help to make a choice? These charts might help.
    Client software
    :::column-end:::
    :::column span="2":::
-   Visual Studio, Eclipse with [Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in
+   Visual Studio, Eclipse with [Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
    :::column-end:::
    :::column span="2":::
    Visual Studio, Visual Studio Code, Eclipse, and other third-party tools
@@ -322,7 +322,7 @@ Need more help to make a choice? These charts might help.
    Manage work on your dev machine
    :::column-end:::
    :::column span="2":::
-   [Pending Changes](develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) and [My Work](develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work) pages.
+   [Pending Changes](develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) and [My Work](develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work) pages in Visual Studio **Team Explorer**.
    :::column-end:::
    :::column span="2":::
    Changes, commits, and branches pages.
