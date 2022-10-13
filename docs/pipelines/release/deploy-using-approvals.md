@@ -117,38 +117,38 @@ jobs:
 
 ## View deployment logs
 
-Deployment logs can be very useful when debugging deployment issues. You can also use the logs to audit the run and verify approvals and how they were granted and by whom. 
+Deployment logs are useful to debug deployment issues but you can also use them to audit your pipeline runs and verify approvals and how they were granted and by whom. 
 
-1. Select **Releases**, and then select your release pipeline.
+1. Select **Pipelines** > **Releases**, and then select your release pipeline.
 
-    :::image type="content" source="media/deploy-using-approvals/open-summary.png" alt-text="Release summary":::
+    :::image type="content" source="media/deploy-using-approvals/open-summary.png" alt-text="A screenshot showing a list of release definitions.":::
 
 1. This view will show you a live status of each stage in your pipeline. The QA stage in this example is pending intervention. Select **Resume**. 
 
-    :::image type="content" source="media/deploy-using-approvals/view-log-03.png" alt-text="Stage pending intervention":::
+    :::image type="content" source="media/deploy-using-approvals/view-log-03.png" alt-text="A screenshot showing the QA stage pending intervention.":::
 
-1. Enter your comment, and then select **Resume**
+1. Enter your comment, and then select **Resume**.
 
-    :::image type="content" source="media/deploy-using-approvals/view-log-01.png" alt-text="Resume task":::
+    :::image type="content" source="media/deploy-using-approvals/view-log-01.png" alt-text="A screenshot showing how to respond to a pending manual intervention request.":::
 
-1. Return to your release pipeline. The **QA** stage deployment succeeded and the pre-deployment approvals are triggered for the **Production** stage.
+1. The **QA** stage deployment succeeded and the pre-deployment approvals are triggered for the **Production** stage.
 
-    :::image type="content" source="media/deploy-using-approvals/view-log-05.png" alt-text="Pre-deployment approval triggered for next stage":::
+    :::image type="content" source="media/deploy-using-approvals/view-log-05.png" alt-text="A screenshot showing pre-deployment approval triggered for the next stage.":::
 
-1. Select **Approve** and enter your comment and then select **Approve** to continue deployment.
+1. Select **Approve**, enter your comment and then select **Approve** to continue deployment.
 
-    :::image type="content" source="media/deploy-using-approvals/view-log-06.png" alt-text="Approve deployment":::
+    :::image type="content" source="media/deploy-using-approvals/view-log-06.png" alt-text="A screenshot showing how to respond to a pending approval request.":::
 
-1. Return to your release pipeline. The live status indicates that the gates are being processed for the **Production** stage before the release continues.  
+1. The live status indicates that the gates are being processed for the **Production** stage before the release continues.  
 
-    :::image type="content" source="media/deploy-using-approvals/view-log-04.png" alt-text="status: processing gates":::
+    :::image type="content" source="media/deploy-using-approvals/view-log-04.png" alt-text="A screenshot showing production processing gates.":::
 
-1. Return to your release pipeline, and hover over the stage you want to audit and then select **Logs** to view the logs. 
+1. Return to your release pipeline, hover over your stage and then select **Logs** to view the deployment logs. 
 
-    :::image type="content" source="media/deploy-using-approvals/view-logs.png" alt-text="View logs":::
+    :::image type="content" source="media/deploy-using-approvals/view-logs.png" alt-text="A screenshot showing how access deployment logs.":::
 
-## Next step
+## Related articles
 
-> [!div class="nextstepaction"]
-> [Integrate with ServiceNow](approvals/servicenow.md)
-> [Integrate with Jenkins (Classic)](integrate-jenkins-pipelines-cicd.md)
+- [Release triggers](../triggers.md)
+- [Deploy pull request Artifacts](deploy-pull-request-builds.md)
+- [Add stages, dependencies, & conditions](../process/stages.md)
