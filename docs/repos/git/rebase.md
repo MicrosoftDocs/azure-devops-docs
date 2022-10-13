@@ -38,7 +38,7 @@ During a rebase, if a source branch change conflicts with a target branch change
 
 ### Rebase vs. no-fast-forward merge
 
-Git rebase results in a simpler but less exact commit history than a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge, otherwise known as a _three-way_ or _true_ merge. When you want a record of a merge in the commit history, use a no-fast-forward merge.
+Git rebasing results in a simpler but less exact commit history than a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge, otherwise known as a _three-way_ or _true_ merge. When you want a record of a merge in the commit history, use a no-fast-forward merge.
 
 If you're the only person working on a feature or bugfix branch, consider using a rebase to periodically integrate recent `main` branch work into it. That strategy helps ensure that you stay aware of recent work by others and promptly resolve any merge conflicts that arise. By rebasing, you implement your new feature on top of the most recent `main` branch work, which helps maintain a linear commit history.
 
@@ -289,13 +289,9 @@ Visual Studio 2017 doesn't support interactive rebasing. Use the Git command lin
 
 Visual Studio 2019 doesn't support interactive rebasing. Use the Git command line instead.
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
-
-Visual Studio 2017 doesn't support interactive rebasing. Use the Git command line instead.
-
 #### [Git Command Line](#tab/git-command-line)
 
-1. Checkout the local branch that you want to perform an interactive rebase on.
+1. Check out the local branch that you want to perform an interactive rebase on.
 
 1. [Commit](/azure/devops/repos/git/commits), stash, or discard any uncommitted changes.
 

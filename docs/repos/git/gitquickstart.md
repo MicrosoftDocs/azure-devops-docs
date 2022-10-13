@@ -256,7 +256,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 
    You can also use the `checkout` command to start working on a branch that other team members are already working in.
 
-1. Make changes using your favorite tools on the code.
+1. Make changes by using your favorite tools on the code.
 
 1. When you're satisfied with the changes, even if you aren't ready to share the work, save them in Git using a commit. Your changes won't be shared until you push them, as described in the following section.
 
