@@ -563,7 +563,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "v0.x"
           - task: Npm@1
             inputs:
               command: 'install'
@@ -590,7 +590,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "0.x"
           - task: Npm@1
             inputs:
               command: 'install'
@@ -602,21 +602,21 @@ stages:
               script: |
                 cd TaskDirectory # Update to the name of the directory of your task
                 tsc
-          - task: QueryAzureDevOpsExtensionVersion@3
+          - task: QueryAzureDevOpsExtensionVersion@4
+            name: QueryVersion
             inputs:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
-              outputVariable: 'Task.Extension.Version'
           - task: PackageAzureDevOpsExtension@3
             inputs:
               rootFolder: '$(System.DefaultWorkingDirectory)'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
-              extensionVersion: '$(Task.Extension.Version)'
+              extensionVersion: '$(QueryVersion.Extension.Version)'
               updateTasksVersion: true
               updateTasksVersionType: 'patch'
               extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
@@ -637,7 +637,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "v0.x"
           - task: DownloadBuildArtifacts@0
             inputs:
               buildType: "current"
