@@ -143,7 +143,7 @@ Provides one or more check-in notes to associate with the changeset using one of
 - `<NoteFieldName>=<NoteFieldValue>`: Sets the value of the check-in note field. You can provide multiple, semicolon-separated `field=value` expressions.
 - `@<NoteFile>`: The user-provided path of a file on disk that contains check-in note field names and values in the format of `field=value`. A semicolon separated note tile can span multiple lines, for example:
 
-  `<Field1>=<Value1>;`<br>`<Field2>=<First line of Value2>;`<br>`<Second line of Value2>;`<br>`<Field3>=<Value3>;`
+    `<Field1>=<Value1>;`<br>`<Field2>=<First line of Value2>;`<br>`<Second line of Value2>;`<br>`<Field3>=<Value3>;`
 :::column-end:::
 :::row-end:::
 :::row:::
@@ -175,7 +175,7 @@ Provides one or more check-in notes to associate with the changeset using one of
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `/shelveset:<shelvesetname[<;<owner>]`
+   `/shelveset:<shelvesetname[;<owner>]`
    :::column-end:::
    :::column span="3":::
    Specifies a shelveset to check in. The optional `owner` argument specifies a shelveset that the current user doesn't own.
@@ -199,7 +199,7 @@ Provides one or more check-in notes to associate with the changeset using one of
 
 ## Examples
 
-The following examples assume that `c:\code\SiteApp\Main\` is the main folder mapped to the project collection in the user's workspace.
+The following examples assume that `c:\code\SiteApp\Main` is the main folder mapped to the project collection in the user's workspace.
 
 ### Check in all pending changes in the current workspace
 

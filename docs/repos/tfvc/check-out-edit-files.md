@@ -38,7 +38,7 @@ You must be one of the **Contributors** for your project. To learn more, see [De
 
    > [!NOTE]
    > The **Lock type** menu isn't available if:
-   
+   >
    > - Another team member has locked the file. If other users have locked any of the specified files, the lock operation fails. For more information, see [Lock and unlock folders or files](lock-unlock-folders-files.md).
    > - The **Enable multiple check-out** option has been disabled by a project administrator, which isn't recommended. Administrators can configure this option by selecting **Team** > **Team Project Settings** > **Source Control** from the Visual Studio menu bar.
 
