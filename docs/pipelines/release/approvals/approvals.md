@@ -89,7 +89,7 @@ where the user can approve or reject the release.
 ## Related articles
 
 * [Approvals and gates overview](index.md)
-* [Manual intervention](../deploy-using-approvals.md#configure-maninter)
+* [Manual intervention](../deploy-using-approvals.md#set-up-manual-intervention)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 

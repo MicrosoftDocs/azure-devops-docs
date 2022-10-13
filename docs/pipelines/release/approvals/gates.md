@@ -32,11 +32,11 @@ Most of the health parameters vary over time, regularly changing their status fr
 
 ## Define a gate for a stage
 
-You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#configure-gate) for more details.
+You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#set-up-manual-intervention) for more details.
 
 The **Delay before evaluation** is a time delay at the beginning of the gate evaluation process that allows the gates to initialize, stabilize, and begin providing accurate results for the current deployment. see [Gate evaluation flows](#gate-evaluation-flow-examples) for more details.
 
-:::image type="content" source="../media/deploy-using-approvals/gates-02.png" alt-text="A screenshot showing the delay before evaluation feature in gates.":::
+:::image type="content" source="../media/deploy-using-approvals/set-delay-time-gates" alt-text="A screenshot showing the delay before evaluation feature in gates.":::
 
 - For **pre-deployment gates**, the delay would be the time required for all bugs to be logged against the artifacts being deployed.  
 - For **post-deployment gates**, the delay would be the maximum of the time taken for the deployed app to reach a steady operational state, the time taken for execution of all the required tests on the deployed stage, and the time it takes for incidents to be logged after the deployment.
