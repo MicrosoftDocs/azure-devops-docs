@@ -169,14 +169,6 @@ Here are the relevant documentations about the git diff commands: [three-dot-and
 > [!NOTE]
 > When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
 
-
-
-
- 
-
-
-
-
 ### Review updates
 
 Review previous versions of the code from the **All updates** drop-down list.
