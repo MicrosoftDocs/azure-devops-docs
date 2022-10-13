@@ -58,7 +58,7 @@ You can use gates to ensure that the release pipeline meets specific criteria be
 
     :::image type="content" source="media/deploy-using-approvals/set-evaluation-options-gates.png" alt-text="A screenshot showing how to configure the evaluation options for the query work items task.":::
 
-1. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
     :::image type="content" source="media/deploy-using-approvals/save-release.png" alt-text="A screenshot showing how to save a release pipeline.":::
    
