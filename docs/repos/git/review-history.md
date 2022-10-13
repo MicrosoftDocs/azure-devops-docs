@@ -6,14 +6,14 @@ ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/03/2022
+ms.date: 10/14/2022
 ms.subservice: azure-devops-repos-git
 ---
 
 # Review history
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Git uses [commit metadata](commits.md#whats-in-a-commit) like parent links, author details, and timestamps to track the history of changes in a repo. You can review the Git history to find out when files changed, who changed them, and what changes were made.
 
@@ -48,6 +48,8 @@ The Azure DevOps team project site lets you compare two versions of the same fil
 > GitHub lets you compare two versions of the same file from different commits across different branches. To compare, append `/compare/<commit1>..<commit2>` to your GitHub repo URL to navigate to the comparison page. The comparison page contains a diff view of each file that differs. For more information on commit comparison in GitHub, see [Comparing commits](https://docs.github.com/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits#comparing-commits).
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
 
 Visual Studio lets you compare two versions of the same file in the same branch, but doesn't support comparing file versions across branches.
 

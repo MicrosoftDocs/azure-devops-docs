@@ -5,7 +5,7 @@ description: Learn how to get started developing your code with Azure Repos, Vis
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 12/10/2021
+ms.date: 10/14/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,7 +13,7 @@ ms.subservice: azure-devops-repos-git
 # Get started with Git in Azure Repos
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 Get started with developing your code using Azure Repos and Git repositories. You can use Visual Studio or Git commands to clone a repository, define local branches, commit and push changes, and sync with others. If you need to create or import a repository, see [Create a new Git repo in your project](create-new-repo.md) or [Import a Git repository](import-git-repository.md).
 
@@ -43,6 +43,8 @@ You can [clone](clone.md) a remote Git repository to create a local copy of it. 
 If you prefer to create a local repository without cloning, see [Create a new Git repo](creatingrepo.md). After creating your local repository you can proceed to [commit](#commit), [share](#push), and [sync](#pull) your work.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
 
 1. From the **Git** menu on the menu bar, choose **Clone Repository...**
 

@@ -5,7 +5,7 @@ description: Learn when and how to rebase to update a local branch, force push t
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 04/14/2022
+ms.date: 10/14/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,7 +13,7 @@ ms.subservice: azure-devops-repos-git
 # Apply changes with rebase
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Git automatically maintains a [history](/devops/develop/git/understand-git-history) of development on a [branch](branch-policies-overview.md) by linking each new [commit](commits.md) to its predecessor. When you [merge](merging.md) one branch into another, the history can become less straightforward. For example, a [no-fast-forward merge](https://git-scm.com/docs/git-merge#_true_merge) combines divergent lines of development by creating a merge commit with multiple predecessors. Conversely, a Git [rebase](https://git-scm.com/docs/git-rebase) combines divergent lines of development without creating a merge commit, which results in a simpler commit history but loses information about the merge. Your choice of [merge type](pulling.md#update-branches-with-merge-or-rebase) is likely influenced by whether you want to preserve a record of the merge or simplify the commit history.
 
@@ -60,6 +60,8 @@ Git rebase and force push are powerful tools, but keep these guidelines in mind 
 ### How to rebase
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
 
 1. Choose **Git > Manage Branches** to open the **Git Repository** window.
 

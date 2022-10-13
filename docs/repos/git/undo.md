@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to discard uncommitted changes, revert changes in shared commits, reset a branch to a previous state, and generally undo changes in a Git repo.
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 05/11/2022
+ms.date: 10/14/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -12,7 +12,7 @@ ms.subservice: azure-devops-repos-git
 # Undo changes
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 When you want to undo changes in a Git repo, first decide what type of changes you want to undo. For example, you might want to:
 
@@ -39,6 +39,8 @@ Git `checkout` can also revert a file to any committed version, when you specify
 > If there's a chance you might want to reapply the changes that Git `checkout` would discard, consider [stashing](howto.yml#i-ve-done-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) those changes instead.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
 
 Visual Studio supports discarding uncommitted changes to a file by reverting the file to its last committed version.
 
