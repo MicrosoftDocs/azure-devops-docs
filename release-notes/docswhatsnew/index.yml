@@ -38,4 +38,4 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Azure DevOps
-            url: ../features-timeline.md#released-features
+            url: ../features-timeline-released.md#released-features

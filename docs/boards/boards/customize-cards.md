@@ -470,7 +470,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
-	![Settings dialog, Tests tab (Kanban), TFS 2015.](media/c-cards-test-settings.png)   
+	![Screenshot of Settings dialog, Tests tab (Kanban).](media/c-cards-test-settings.png)   
 
 4. Save your changes. 
 

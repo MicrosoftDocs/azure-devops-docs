@@ -262,8 +262,12 @@ Make sure that **Push matches fetch** is checked and select **Save**.
 
     > [!div class="tabbedCodeSnippets"]
     ```Git CLI
-    > git remote add origin <clone URL>
-    > git push -u origin main
+    > git init 
+    > git remote add origin <clone URL> 
+    > git add .
+    > git status   
+    > git commit -m "initial commit"  
+    > git push -u origin main 
     ```
 
    Your code is now published to the `main` branch of then **Azure Repos** Git repo.

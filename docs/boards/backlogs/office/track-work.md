@@ -41,7 +41,7 @@ In this article you'll learn about the following items:
 
 ## Supported Office clients and Azure DevOps versions
 
-The following table indicates the Office clients supported for each Azure DevOps version starting with Team Foundation Server 2013 (TFS 2013).
+The following table indicates the Office clients supported for each Azure DevOps version.
 
 > [!NOTE]
 > macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.
@@ -137,7 +137,7 @@ Connection from an Office client to an Azure Boards project requires that you've
 
 - To connect Project to Azure Boards, you must have installed Office Project 2010 or later version, including Office Project 365.
 
-- To connect PowerPoint to Azure Boards, you must have installed [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.
+- To connect PowerPoint to Azure Boards, you must have installed [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400).  
 
 - Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 
