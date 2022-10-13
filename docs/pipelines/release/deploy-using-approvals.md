@@ -36,31 +36,31 @@ You can use gates to ensure that the release pipeline meets specific criteria be
 
 1. Select **Pipelines** > **Releases**, and then select your release pipeline. Select **Edit** to open the pipeline editor.
 
-    :::image type="content" source="media/deploy-using-approvals/open-pipeline.png" alt-text="Edit the release pipeline":::
+    :::image type="content" source="media/deploy-using-approvals/open-pipeline.png" alt-text="A screenshot showing the edit button for release pipelines.":::
 
 1. Select the pre-deployment icon for your stage, and then select the toggle button to enable **Gates**.   
 
-    :::image type="content" source="media/deploy-using-approvals/gates-01.png" alt-text="Enable gates":::
+    :::image type="content" source="media/deploy-using-approvals/enable-gates.png" alt-text="A screenshot showing how to enable gates.":::
 
 1. Specify the delay time before the added gates are evaluated. This time is to allow gate functions to initialize and stabilize before returning results.
 
-    :::image type="content" source="media/deploy-using-approvals/gates-02.png" alt-text="Gates delay time":::
+    :::image type="content" source="media/deploy-using-approvals/set-delay-time-gates.png" alt-text="A screenshot showing how to set the delay time for pre-deployment gates.":::
 
 1. Select **Add**, and then select **Query Work Items**.
 
-    :::image type="content" source="media/deploy-using-approvals/query-work-items-gate.png" alt-text="Adding Query work items task":::
+    :::image type="content" source="media/deploy-using-approvals/query-work-items-gate.png" alt-text="A screenshot showing how to add a Query work items task.":::
 
 1. Select an existing work item query from the dropdown menu. Depending on how many work items you expect the query to return, set your maximum and minimum thresholds.
 
-    :::image type="content" source="media/deploy-using-approvals/configure-gate.png" alt-text="Configuring the Query Work Items task":::
+    :::image type="content" source="media/deploy-using-approvals/configure-gate.png" alt-text="A screenshot showing how to configure the Query Work Items task.":::
 
 1. Select the **Evaluation options** section, and then specify the timeout and sampling interval. The minimum values you can specify are 6-minutes timeout and 5-minutes sampling interval.
 
-    :::image type="content" source="media/deploy-using-approvals/gates-05.png" alt-text="Evaluation options setup":::
+    :::image type="content" source="media/deploy-using-approvals/set-evaluation-options-gates.png" alt-text="A screenshot showing how to configure the evaluation options for the query work items task.":::
 
 1. Select **Save** when you are done.
 
-    :::image type="content" source="media/deploy-using-approvals/gates-06.png" alt-text="Save a release pipeline":::
+    :::image type="content" source="media/deploy-using-approvals/save-release.png" alt-text="A screenshot showing how to save a release pipeline.":::
    
 ## Set up manual intervention 
 
