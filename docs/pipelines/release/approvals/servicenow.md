@@ -185,7 +185,7 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 - [Release gates and approvals](index.md)
 - [Define approvals and checks](../../process/approvals.md)
-- [Set up manual intervention](../deploy-using-approvals.md#configure-maninter)
+- [Set up manual intervention](../deploy-using-approvals.md#set-up-manual-intervention)
 - [Use gates and approvals to control your deployment](../../release/deploy-using-approvals.md)
 - [Add stages, dependencies, & conditions](../../process/stages.md)
 - [Release triggers](../triggers.md)
