@@ -66,37 +66,34 @@ You can use gates to ensure that the release pipeline meets specific criteria be
 
 Depending on the scenario, sometimes you may need to add manual intervention to your release pipeline. You can do this by adding the **Manual Intervention** task to your pipeline.
 
-1. Select your release pipeline, and then select **Tasks** and choose your stage.
+1. Select **Pipelines** > **Releases**. Select your release pipeline, and then select **Tasks** and choose your stage.
 
-    :::image type="content" source="media/deploy-using-approvals/open-qa-tasks.png" alt-text="Stage tasks":::
+    :::image type="content" source="media/deploy-using-approvals/open-qa-tasks.png" alt-text="A screenshot showing how to navigate to stage tasks in a release pipeline.":::
 
-1. Select the ellipses (**...**) from your stage definition, and then select **Add agentless job**.
+1. Select the ellipses (...), and then select **Add an agentless job**.
 
-    :::image type="content" source="media/deploy-using-approvals/add-agentless-phase.png" alt-text="Add agentless job":::
+    :::image type="content" source="media/deploy-using-approvals/add-agentless-phase.png" alt-text="A screenshot showing how to add an agentless job.":::
 
-   > [!NOTE]
-   > The **Manual Intervention** task can only be used in an [agentless job](../process/phases.md#server-jobs).
+1. Drag and drop the agentless job to the top of your deployment process. Select the (+) sign, and then select **Add** the Manual Intervention task.
 
-1. Drag and drop the agentless job to the start of the deployment process. Select the **+** sign, and then select **Add** the Manual Intervention task.
+    :::image type="content" source="media/deploy-using-approvals/add-manual-intervention-task.png" alt-text="A screenshot showing how to add the manual intervention task.":::
 
-    :::image type="content" source="media/deploy-using-approvals/add-maninter-task.png" alt-text="Add a Manual Intervention task":::
+1. Enter a **Display name** and the instructions that will be displayed when the task is triggered. You can also specify a list of users to be notified and a timeout action (reject or resume) if no intervention occurred within the timeout period.
 
-1. Configure the task by entering the Instructions to be displayed when it the task is triggered.
+    :::image type="content" source="media/deploy-using-approvals/manual-intervention-task.png" alt-text="A screenshot showing how to configure the Manual Intervention task.":::
 
-    :::image type="content" source="media/deploy-using-approvals/manual-intervention-task.png" alt-text="Configure the Manual Intervention task":::
+1. Select **Save** when you're done.
 
-   You can specify a list of users to be notified when the deployment is pending manual approval. You can also specify a timeout and the action (approve or reject)
-   that occur if no intervention within the timeout period. See the [Manual Intervention](../tasks/utility/manual-intervention.md) task for more details.
-
-1. Select **Save** when you are done.
+> [!NOTE]
+> The [Manual Intervention](../tasks/utility/manual-intervention.md) task can only be used in an [agentless job](../process/phases.md#server-jobs).
 
 ## Set up manual validation 
 
-You can use the [manual validation](../tasks/utility/manual-validation.md) task in your YAML to pause the pipeline run and wait for manual approval. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build packages before starting a computation-intensive job.
+You can use the [Manual Validation](../tasks/utility/manual-validation.md) task in your YAML pipeline to pause and wait for manual approval. Manual validation is especially useful in scenarios where you want to validate configuration settings or build packages before starting a computation-intensive job.
 
-The `waitForValidation` job pauses the run and triggers a prompt within the Pipeline UI to review and validate the task. The email addresses listed in `notifyUsers` receive a notification to approve or deny the pipeline run. 
+The `waitForValidation` job pauses the run and triggers a UI prompt to review and validate the task. The email addresses listed in `notifyUsers` receive a notification to approve or deny the pipeline run. 
 
-:::image type="content" source="media/needs-validation-prompt.png" alt-text="Add validation for the pipeline to continue.":::
+:::image type="content" source="media/needs-validation-prompt.png" alt-text="A screenshot showing the manual validation prompt.":::
     
 
 ```YAML
