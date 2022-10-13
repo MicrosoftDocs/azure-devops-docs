@@ -40,11 +40,11 @@ tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] it
 
 ## Examples
 
-The following examples assume that `c:\code\SiteApp\Main\` maps to `$/SiteApp/Main/` in the workspace.
+The following examples assume that `c:\code\SiteApp\Main\` is the main folder mapped to the project collection in the user's workspace.
 
 ### Check out a single item
 
-The following command checks out *program.cs*:
+The following example checks out *program.cs*:
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program.cs
@@ -52,7 +52,7 @@ c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program.cs
 
 ### Check out two items
 
-The following command checks out *program.cs* and *program2.cs*:
+The following example checks out *program.cs* and *program2.cs*:
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.cs

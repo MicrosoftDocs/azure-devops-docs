@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-In Visual Studio **Team Explorer**, use the **Pending Changes** page to check in your code to a new changeset. On your keyboard, press Ctrl+O, P.
+In Visual Studio **Team Explorer**, open the **Pending Changes** page to check in your code to a new changeset. You can press Ctrl+O, P on your keyboard.
 
 ![Screenshot shows Pending Changes pane with a comment and Check In button.](media/check-your-work-team-codebase/pending-changes.png)
 

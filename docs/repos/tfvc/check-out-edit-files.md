@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 When you want to edit a file, you can open it from Visual Studio **Solution Explorer** or **Source Control Explorer**. When you begin editing a file, it's automatically checked out to you.
 
-In rare situations, for example if you want to check out and lock the file to make sure your changes are checked in before changes from other team members), you might need to manually check out and optionally lock a file.
+In rare situations, for example if you want to check out and lock the file to make sure your changes are checked in before changes from other team members, you might need to manually check out and optionally lock a file.
 
 > [!IMPORTANT]
 > As a best practice, use the **Lock type** option with discretion, and notify your teammates why you are locking an item and when you plan to remove the lock.
@@ -36,13 +36,13 @@ You must be one of the **Contributors** for your project. To learn more, see [De
    - **Unchanged - Keep any existing lock**
    - **Check In - Allow other users to check out but prevent them from checking in**
 
+   > [!NOTE]
+   > The **Lock type** menu isn't available if:
+   
+   > - Another team member has locked the file. If other users have locked any of the specified files, the lock operation fails. For more information, see [Lock and unlock folders or files](lock-unlock-folders-files.md).
+   > - The **Enable multiple check-out** option has been disabled by a project administrator, which isn't recommended. Administrators can configure this option by selecting **Team** > **Team Project Settings** > **Source Control** from the Visual Studio menu bar.
+
 1. Choose **Check Out**.
-
-> [!NOTE]
-> The **Lock type** menu isn't available if:
-
-> - Another team member has locked the file. If other users have locked any of the specified files, the lock operation fails. For more information, see [Lock and unlock folders or files](lock-unlock-folders-files.md).
-> - The **Enable multiple check-out** option has been disabled by a project administrator, which isn't recommended. Administrators can configure this option by selecting **Team** > **Team Project Settings** > **Source Control** from the Visual Studio menu bar.
 
 In **Solution Explorer** and in **Source Control Explorer**, a check mark ![TFSC Checked-Out Status Icon](media/check-out-edit-files/IC51402.gif) appears next to the items that you have checked out. In **Team Explorer**, the files show under **Included Changes** on the **Pending Changes** page. In **Source Control Explorer**, a pending **edit** change is visible to you and to members of your team.
 

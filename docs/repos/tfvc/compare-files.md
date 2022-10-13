@@ -55,9 +55,9 @@ Compare your work with the latest version on Azure DevOps Server while continuin
      > [!TIP]
      >  You can also press **Shift** and then double-click the file.
 
-1. Right-click the file and select **Compare with Latest Version** to compare your changes to the latest version of the file on Azure DevOps Server.
+   Or, right-click the file and select **Compare with Latest Version** to compare your changes to the latest version of the file on Azure DevOps Server.
 
-The **Diff** window appears. You can continue to make changes to the file in this window.
+   The **Diff** window appears. You can continue to make changes to the file in this window.
 
 > [!TIP]
 > You can also use **Solution Explorer** or **Source Control Explorer** to compare a file in your workspace with a version of the file on the server. Right-click a file and select **Compare**. When the **Compare** dialog box appears, select **OK**.
@@ -87,8 +87,8 @@ In the **Diff** window:
 ![Screenshot shows a comparison of two versions of a file.](media/compare-files/diff-window.png)
 
 - Select the arrow icons at the upper-left of the **Diff** window, or press F8, to skip back and forth between diffs.
-- To go back and forth in the file, select places on the visual summary scroll bars.
-- Select arrow next to the **Settings** icon at the top of the **Diff** window to change the view. **Side-by-side mode** is more effective in most cases, but you can also use **Inline mode**, or view the **Left file only** or **Right file only**.
+- To go back and forth in the files, select places on the visual summary scroll bars.
+- Select the arrow next to the **Settings** icon at the top of the **Diff** window to change the view. **Side-by-side mode** is more effective in most cases, but you can also use **Inline mode**, or view the **Left file only** or **Right file only**.
 
   The following screenshot shows inline view:
   

@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 The TFVC `checkin` command checks in your pending file and folder changes to the server.
 
-Almost every change that you make to the files on your dev machine is stored in your workspace as a [pending change](develop-code-manage-pending-changes.md) until you check it in. When you check in your changes, they are stored as a [changeset](find-view-changesets.md) on the server. The `checkin` command runs fundamentally the same process as in Visual Studio. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
+Almost every change that you make to the files on your dev machine is stored in your workspace as a [pending change](develop-code-manage-pending-changes.md) until you check it in. When you check in your changes, they're stored as a [changeset](find-view-changesets.md) on the server. The `checkin` command provides a different user interface to do the same processes documented for Visual Studio in [Check in your work to the team's codebase](check-your-work-team-codebase.md).
  
 ## Prerequisites
 
@@ -54,7 +54,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="3":::
    Identifies the author of the pending changes so that a user can check in changes on behalf of another user.
 
-   Requires the **CheckinOther** permission. See [Permissions and groups reference](../../organizations/security/permissions.md)
+   Requires the **CheckinOther** permission. See [Permissions and groups reference](../../organizations/security/permissions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -67,10 +67,10 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `/collection:<TeamProjectCollectionUrl>`
+   `/collection:<ProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   If you use the `shelveset` option, the `/collection` option specifies the URL of the project collection that contains the shelveset. For example:`http://myserver:8080/tfs/DefaultCollection`.
+   If you use the `shelveset` option, the `/collection` option specifies the URL of the project collection that contains the shelveset. For example: `http://myserver:8080/tfs/DefaultCollection`.
 
    By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.
    :::column-end:::
@@ -82,7 +82,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="3":::
    Associates a comment with the changeset using one of the following arguments:
    - `"<comment>"`: A user-provided comment about the check-in.
-   - `"@<comment file>`: The path to a file on disk that contains the comment for the check-in.
+   - `@<comment file>`: The path to a file on disk that contains the comment for the check-in.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -103,7 +103,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `/login:<username>,[<password>]`
+   `/login:<username>[,<password>]`
    :::column-end:::
    :::column span="3":::
    Specifies the user account to run the command. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).
@@ -122,7 +122,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    `/noautoresolve`
    :::column-end:::
    :::column span="3":::
-   By default, the system automatically attempts to **AutoResolve All** conflicts. Specify this option to disable this default behavior. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
+   By default, the system automatically attempts to `AutoResolve All` conflicts. Specify this option to disable this default behavior. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -143,10 +143,7 @@ Provides one or more check-in notes to associate with the changeset using one of
 - `<NoteFieldName>=<NoteFieldValue>`: Sets the value of the check-in note field. You can provide multiple, semicolon-separated `field=value` expressions.
 - `@<NoteFile>`: The user-provided path of a file on disk that contains check-in note field names and values in the format of `field=value`. A semicolon separated note tile can span multiple lines, for example:
 
-  `<Field1>=<Value1>;`
-  `<Field2>=<First line of Value2>;`
-  `<Second line of Value2>;`
-  `<Field3>=<Value3>;`
+  `<Field1>=<Value1>;`<br>`<Field2>=<First line of Value2>;`<br>`<Second line of Value2>;`<br>`<Field3>=<Value3>;`
 :::column-end:::
 :::row-end:::
 :::row:::
@@ -156,8 +153,8 @@ Provides one or more check-in notes to associate with the changeset using one of
    :::column span="3":::
    Overrides a check-in policy using one of the following arguments:
 
-  - `<reason>`: A user-provided reason why the check-in policy is being ignored.
-  - `@<ReasonFile>`: The path to a file that contains a user-provided description of the reason why the check-in policy is being ignored.
+  - `reason`: A user-provided reason why the check-in policy is being ignored.
+  - `reasonfile`: The path to a file that contains a user-provided description of the reason why the check-in policy is being ignored.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -195,18 +192,18 @@ Provides one or more check-in notes to associate with the changeset using one of
    Tests whether the check in would succeed, without checking in the files. The system evaluates check-in policies, check-in notes, and lists conflicts.
 
    > [!Note]
-   > If you don't specify the `/noprompt` option, you must select the **Check In** button on the **Check In** dialog box to validate the check in. After you select this button, the system doesn't check in the files.
+   > If you don't specify the `/noprompt` option, you must select the **Check In** button on the **Check In** dialog box to validate the check-in. After you select this button, the system doesn't check in the files.
    :::column-end:::
 :::row-end:::
 
 
 ## Examples
 
-The following examples assume that `c:\code\SiteApp\Main\` maps to `$/SiteApp/Main/` in the workspace.
+The following examples assume that `c:\code\SiteApp\Main\` is the main folder mapped to the project collection in the user's workspace.
 
 ### Check in all pending changes in the current workspace
 
-The following code displays the **Check In** dialog box, which displays all pending changes in the current workspace. You can use the **Check In** dialog box to select or clear the pending changes you want to check in, add a comment, associate work items, and do other tasks, and then choose the **Check In** button when you're ready to proceed.
+The following command displays the **Check In** dialog box, which displays all pending changes in the current workspace. You can use the **Check In** dialog box to select or clear the pending changes you want to check in, add a comment, associate work items, and do other tasks, and then choose the **Check In** button when you're ready to proceed.
 
 ```
 c:\code\SiteApp\Main>tf checkin
@@ -214,7 +211,7 @@ c:\code\SiteApp\Main>tf checkin
 
 ### Check in all pending changes with a comment
 
-The following code checks in all pending changes in the current workspace and provides a comment to help your teammates understand the purpose of your changes.
+The following example checks in all pending changes in the current workspace and provides a comment to help your teammates understand the purpose of your changes.
 
 ```
 c:\code\SiteApp\Main>tf checkin /comment:"Re-implemented Pi calculator"
@@ -222,7 +219,7 @@ c:\code\SiteApp\Main>tf checkin /comment:"Re-implemented Pi calculator"
 
 ### Check in a change to a single item without using the Check In dialog box
 
-The following code checks in your pending changes to *program.cs*. The **Check In** dialog box isn't displayed, and if any conflicts block the check in, the system doesn't display the conflicts window.
+The following example checks in pending changes to *program.cs*. The **Check In** dialog box isn't displayed, and if any conflicts block the check-in, the system doesn't display the conflicts window.
 
 ```
 c:\code\SiteApp\Main>tf checkin program.cs /noprompt
