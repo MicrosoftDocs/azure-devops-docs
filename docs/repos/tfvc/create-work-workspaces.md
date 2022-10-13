@@ -59,7 +59,7 @@ You can create and manage your workspaces from the command prompt. You can also 
  
 #### Q: Why would I need to change the working folders? How should I do it?
 
-**A:** In general, you should map your entire project to a single local folder under *c:\\Users\\\<YourName>\\Source\\Workspaces\\|<ProjectName>*.
+**A:** In general, you should map your entire project to a single local folder under<br>*c:\\Users\\\<YourName>\\Source\\Workspaces\\\<ProjectName>*.
 
 Some tips on effective folder names:
 
