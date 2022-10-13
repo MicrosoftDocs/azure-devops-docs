@@ -149,7 +149,7 @@ The following table describes the work item link types you can specify to scope 
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **Duplicate-Duplicate of** <sup>1</sup>   
+   **Duplicate-Duplicate of** 
    ![Duplicate of tree forward.](media/link-work-items-support-traceability/duplicate-tree-forward.png) 
    ![Duplicate of tree reverse.](media/link-work-items-support-traceability/duplicate-of-tree-reverse.png) 
    :::column-end:::
@@ -272,10 +272,6 @@ The following table describes the work item link types you can specify to scope 
 
    :::column-end:::
 :::row-end:::
-
-> [!NOTE]  
-> 1. Available from TFS 2017 and later versions. 
-
 
 <a id="hyperlink">  </a>
 

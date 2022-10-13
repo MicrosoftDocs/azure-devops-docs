@@ -39,7 +39,7 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 | `properties`<br/>Custom properties | (Optional) Enter custom properties to associate with the artifact. Valid JSON string expected with all keys having the prefix 'user-'. |
 
 > [!TIP]
-> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to to control which files will be published.
+> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to control which files will be published.
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->

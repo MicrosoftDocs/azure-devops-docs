@@ -61,8 +61,8 @@ The PowerShell task also has two shortcuts in YAML:
 ```
 
 Both of these shortcuts resolve to the `PowerShell@2` task.
-`powershell` runs Windows PowerShell and will only work on a Windows agent.
-`pwsh` runs PowerShell Core, which must be installed on the agent or container.
+`powershell` devops task will execute either Windows PowerShell or `pwsh` depending on the operating system that is currently running and works for Windows, Linux  agents or containers.
+`pwsh` runs PowerShell Core, the cross-platform edition of PowerShell built on .NET Core.
 
 > [!NOTE]
 > Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
