@@ -149,6 +149,6 @@ Deployment logs are useful to debug deployment issues but you can also use them 
 
 ## Related articles
 
-- [Release triggers](../triggers.md)
+- [Release triggers](triggers.md)
 - [Deploy pull request Artifacts](deploy-pull-request-builds.md)
 - [Add stages, dependencies, & conditions](../process/stages.md)
