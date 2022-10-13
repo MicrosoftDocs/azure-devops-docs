@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 02/28/2022
+ms.date: 10/13/2022
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -59,7 +59,7 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
 > [!NOTE]
-> Please note that there is no support of 'set -x' command being executed before logging command on Linux and macOS.
+> Please note that you can't use the `set -x` command before a logging command when you are using Linux or macOS. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended), to learn how to disable `set -x` temporarily for Bash.
 
 ## Formatting commands
 
