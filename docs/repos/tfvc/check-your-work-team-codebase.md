@@ -20,6 +20,9 @@ In Visual Studio **Team Explorer**, use the **Pending Changes** page to check in
 
 ![Screenshot shows Pending Changes pane with a comment and Check In button.](media/check-your-work-team-codebase/pending-changes.png)
 
+>[!TIP]
+> You can select the undock icon :::image type="icon" source="media/check-your-work-team-codebase/IC667296.png"::: to undock the **Pending Changes** page from **Team Explorer** and show it in a separate window.
+
 <a name="include_exclude"></a>
 
 ## Choose the files you want to check in
@@ -43,7 +46,11 @@ When you check in changes, you should associate work items with the changes. Thi
 - A team member who [reviews the history of a file](view-manage-past-versions.md) you changed can view the changeset and see the work items that were the justification for the change.
 - You might build your changes in your automated build system, for example with a [CI Build](../../pipelines/build/triggers.md), or a [Gated Check-in Build](../../pipelines/repos/index.md). Your team members can see in which completed build the task was completed or the bug was fixed.
 
-To associate work items with your changes, select **Add Work Item by ID** in the **Related Work Items** section of the **Pending Changes** page. Enter the work item ID and select **Add**.
+To associate work items with your changes, you can either:
+
+- Select **Add Work Item by ID** in the **Related Work Items** section of the **Pending Changes** page. Enter the work item ID and select **Add**.
+
+- Drag a work item from the **Work Item** page of **Team Explorer** into the **Related Work Items** section of the **Pending Changes** page.
 
 After you add a work item, you can select the link next to the item to choose how the item should be related to your changes: **Associate** or **Resolve**. These options are available only if the work item isn't already in a state that precludes this relationship, such as **Resolved**, **Done**, or **Closed**.
 
@@ -91,8 +98,6 @@ If you want to be notified when someone checks in code in your TFVC project, you
 - The [Checkin command](checkin-command.md) lets you view pending changes and check in files.
 
 ## Tips
-
-- You can :::image type="icon" source="media/check-your-work-team-codebase/IC667296.png"::: undock the **Pending Changes** page from **Team Explorer** and open it in a new window.
 
 - You can toggle between list and tree views by selecting **View Options** from the **Included Items** or **Excluded Items** sections of the **Pending Changes** page.
 
