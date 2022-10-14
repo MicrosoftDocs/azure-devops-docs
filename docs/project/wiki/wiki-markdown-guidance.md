@@ -162,16 +162,12 @@ To embed videos from YouTube and Microsoft Streams in a wiki page, use the follo
 
 ```markdown
 ::: video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_EXAMPLE_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 :::
 ```
 The IFrame is the embed IFrame block of the YouTube or Microsoft Streams video.
 
-**Result:**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-(The ending ":::" is required to prevent a break in the page)
+The ending ":::" is required to prevent a break in the page.
 
 ## Embed Azure Boards query results in wiki
 
