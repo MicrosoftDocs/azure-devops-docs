@@ -1,29 +1,29 @@
 ---
-title: Markdown syntax for wikis in Azure DevOps
+title: Markdown syntax for wikis
 titleSuffix: Azure DevOps
-description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
+description: Learn how to share information and add tables & mathematical notation using Markdown in  within wikis.
 ms.subservice: azure-devops-wiki
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/03/2022  
+ms.date: 10/13/2022  
 ---
 
-# Syntax guidance for Markdown usage in Wiki
+# Markdown syntax for wikis
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-In this article, find some Wiki-specific Markdown syntax guidance for use in Azure DevOps.
+In this article, find some wiki-specific Markdown syntax guidance for use in Azure DevOps.
 
 ::: moniker range=">= azure-devops-2019"
 
 <a id="toc-wiki" > </a>
 
-## Table of contents (TOC) for Wiki pages
+## Table of contents (TOC) for wiki pages
 
 To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag gets added and there's at least one heading on the page.
 
@@ -48,7 +48,7 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker range=">= azure-devops-2022"
 
-## Add Mermaid diagrams to a Wiki page
+## Add Mermaid diagrams to a wiki page
 
 Mermaid lets you create diagrams and visualizations using text and code. 
 
@@ -60,12 +60,8 @@ Wiki supports the following Mermaid diagram types:
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
 - [Gantt charts](https://mermaid-js.github.io/mermaid/#/gantt)
 - [Flowcharts](http://mermaid-js.github.io/mermaid/#/flowchart)
-- Pie charts
-- Requirement diagrams
-- State diagrams
-- User Journey
 
-For more information, see the [Mermaid release notes](https://github.com/mermaid-js/mermaid/releases).
+For more information, see the [Mermaid release notes](https://github.com/mermaid-js/mermaid/releases) and [active requests in the Developer Community](https://developercommunity.visualstudio.com/search?space=21&q=mermaid&stateGroup=active).
 
 > [!NOTE]
 > Mermaid isn't supported in the Internet Explorer browser.
@@ -160,7 +156,7 @@ Make sure to add an empty line in the following areas:
 - after the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
 - after the closing `</details>` tag if you have multiple collapsible sections
 
-## Embed videos in a Wiki page
+## Embed videos in a wiki page
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
 
@@ -169,7 +165,7 @@ To embed videos from YouTube and Microsoft Streams in a wiki page, use the follo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 :::
 ```
-The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
+The IFrame is the embed IFrame block of the YouTube or Microsoft Streams video.
 
 **Result:**
 
@@ -177,7 +173,7 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 
 (The ending ":::" is required to prevent a break in the page)
 
-## Embed Azure Boards query results in Wiki
+## Embed Azure Boards query results in wiki
 
 To embed Azure Boards query results in a wiki page as a table, use the following syntax:
 
@@ -232,7 +228,7 @@ Use the batch API `pagesBatch` to see the daily quantity of visits to all pages 
 
 <a id="link-work-items">  </a>
 
-## Link to work items from a Wiki page
+## Link to work items from a wiki page
 
 Enter the pound sign (`#`), and then enter a work item ID.
 
