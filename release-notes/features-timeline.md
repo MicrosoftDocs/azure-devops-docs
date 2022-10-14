@@ -148,13 +148,13 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url data-raw-source="[Copy work item attachment URL](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment URL</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url data-raw-source="[Copy work item attachment URL](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment URL</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>Future</td>
@@ -319,12 +319,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
         <td rowspan="16"><strong>2022 Q4</strong></td>
-        <td><a href=https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href=https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url data-raw-source="[copy work item attachment url](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment url</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url data-raw-source="[copy work item attachment url](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment url</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -384,7 +384,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#show-parent-in-query-results-widget" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-211-update#show-parent-in-query-results-widget)">Show Link with Parent Name in Query Results Widget</a></td>
+        <td><a href="https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#show-parent-in-query-results-widget" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#show-parent-in-query-results-widget)">Show Link with Parent Name in Query Results Widget</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
