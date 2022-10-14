@@ -33,10 +33,6 @@ landingContent:
             url: ../marketplace/install-extension.md
   - title: Develop extensions
     linkLists:
-      - linkListType: video
-        links:
-          - text: Develop an Azure DevOps Services extension with continuous delivery pipeline
-            url: https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3
       - linkListType: quickstart
         links:
           - text: Develop a web extension
