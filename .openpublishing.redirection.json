@@ -64,6 +64,21 @@
       "source_path": "docs/marketplace/how-to/grant-permissions.md",
       "redirect_url": "/azure/devops/marketplace/grant-permissions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/develop/install.md",
+      "redirect_url": "/azure/devops/extend/get-started/node?view=azure-devops#install-your-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/overview.md",
+      "redirect_url": "/azure/devops/extend/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/faq-extensions.yml",
+      "redirect_url": "/azure/devops/marketplace/install-extension#frequently-asked-questions-faqs",
+      "redirect_document_id": false
     }
   ]
 }

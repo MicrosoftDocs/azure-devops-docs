@@ -1,9 +1,7 @@
 - name: Marketplace & extensibility
   href: index.yml
-- name: What are extensions?
+- name: Extensions overview
   href: ../extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-- name: Marketplace extensions
-  href: ../marketplace/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Get started
   href: ../marketplace/toc.yml
 - name: Authenticate
@@ -58,13 +56,13 @@
     href: /previous-versions/azure/devops/integrate/previous-apis/overview
 - name: Marketplace extensions
   items:
-  - name: Extensions for Azure DevOps >>
+  - name: Extensions for Azure DevOps
     href: https://marketplace.visualstudio.com/azuredevops
   - name: Azure Boards extensions developed by Microsoft
     href: ../boards/extensions/index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-  - name: Find and use Visual Studio extensions >>
+  - name: Find and use Visual Studio extensions
     href: /visualstudio/ide/finding-and-using-visual-studio-extensions
-  - name: Install Visual Studio Code extensions >>
+  - name: Install Visual Studio Code extensions
     href: https://code.visualstudio.com/docs/editor/extension-gallery
 - name: Resources
   items:

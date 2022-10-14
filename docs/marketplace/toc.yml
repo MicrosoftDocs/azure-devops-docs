@@ -10,6 +10,3 @@
 - name: Manage extension permissions
   displayName: grant, publish, update, settings, admin
   href: grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-- name: FAQs about extensions
-  displayName: get, install, request, assign, access
-  href: faq-extensions.yml?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
