@@ -145,10 +145,7 @@ For more information about building extensions, see the following articles:
 - [Package, publish, and install your extension](./publish/overview.md)
 - [Package and publish your integration with an external app or service](./publish/integration.md)
 - [Share your work publicly with the entire community](./publish/publicize.md)
-- You can develop an extension for your continuous delivery pipeline as described in the following video.
-
-<a href="https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3" target="_blank"><img src="media/develop-extension-video.png" alt="Develop Extensions" width="200" /></a>
-
+ 
 ## Next steps
 
 > [!div class="nextstepaction"]
