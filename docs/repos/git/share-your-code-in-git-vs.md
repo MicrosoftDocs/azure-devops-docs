@@ -206,11 +206,11 @@ It's good practice to review the code changes in your commit before publishing. 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-[!INCLUDE [Review commit changes](include/share-code-review-commit-changes.md)]
+[!INCLUDE [Review commit changes](includes/share-code-review-commit-changes.md)]
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-[!INCLUDE [Review commit changes](include/share-code-review-commit-changes.md)]
+[!INCLUDE [Review commit changes](includes/share-code-review-commit-changes.md)]
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
@@ -244,11 +244,11 @@ As you develop your software, you can capture which commits support the completi
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-[!INCLUDE [Link work items to your commits](include/share-code-link-work-items.md)]
+[!INCLUDE [Link work items to your commits](includes/share-code-link-work-items.md)]
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-[!INCLUDE [Link work items to your commits](include/share-code-link-work-items.md)]
+[!INCLUDE [Link work items to your commits](includes/share-code-link-work-items.md)]
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
@@ -274,11 +274,11 @@ You can link work items to commits by adding _#ID_ into the commit message. For 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-[!INCLUDE [Push commit changes](include/share-code-push-commit-changes.md)]
+[!INCLUDE [Push commit changes](includes/share-code-push-commit-changes.md)]
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-[!INCLUDE [Push commit changes](include/share-code-push-commit-changes.md)]
+[!INCLUDE [Push commit changes](includes/share-code-push-commit-changes.md)]
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
