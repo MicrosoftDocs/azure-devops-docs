@@ -23,6 +23,6 @@ ms.subservice: azure-devops-repos-git
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio." lightbox="../media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
 
-   If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+   If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](../merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio." lightbox="../media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
