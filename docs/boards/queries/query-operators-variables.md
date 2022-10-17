@@ -40,11 +40,10 @@ The value you specify for a field must conform to the data type for that field. 
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **Boolean**<sup>1</sup> 
+   **Boolean** 
    :::column-end:::
    :::column span="3":::
    Specifies a field that takes on a True/False value. 
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -115,7 +114,7 @@ The value you specify for a field must conform to the data type for that field. 
 :::row-end:::
 :::row:::
    :::column span="1":::
-    **picklistDouble**<sup>2</sup>
+    **picklistDouble**<sup>1</sup>
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of Decimal values.
@@ -123,7 +122,7 @@ The value you specify for a field must conform to the data type for that field. 
 :::row-end:::
 :::row:::
    :::column span="1":::
-    **picklistInteger**<sup>2</sup>
+    **picklistInteger**<sup>1</sup>
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of Integer values.
@@ -131,7 +130,7 @@ The value you specify for a field must conform to the data type for that field. 
 :::row-end:::
 :::row:::
    :::column span="1":::
-    **picklistString**<sup>2</sup>
+    **picklistString**<sup>1</sup>
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of short text string (255 characters or less) values.
@@ -158,8 +157,7 @@ The value you specify for a field must conform to the data type for that field. 
 :::row-end:::
 
 > [!NOTE]
-> 1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
-> 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
+> 1. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -182,7 +180,6 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    **Applicable data types**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **=**
@@ -190,12 +187,9 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    :::column-end:::
    :::column span="3":::
    Matches the value in the clause.
-
    :::column-end:::
    :::column span="3":::
    **Number**&mdash;which includes **Double**, **GUID**, **Integer**&mdash;and **String**, **DateTime**, and **TreePath**
-
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -590,7 +584,7 @@ You can use the macros described in the following table to filter your queries b
    :::column-end:::
    :::column span="3":::
       Use with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
-      The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+      The **@CurrentIteration** macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
    :::column-end:::
 :::row-end:::
 ---
@@ -610,7 +604,7 @@ You can use the macros described in the following table to filter your queries b
    :::column-end:::
    :::column span="3":::
       Use with the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
-      The **@Follows** macro is supported for Azure Boards and TFS 2017 and later versions, and only when run from the web portal.
+      The **@Follows** macro is supported only when run from the web portal.
    :::column-end:::
 :::row-end:::
 ---
@@ -637,8 +631,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>.  
-      The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
 ---

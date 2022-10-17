@@ -23,12 +23,6 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
-<br/> 
-
-> [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
-
-<br/> 
-
 ::: moniker range="tfs-2018"
 > [!NOTE]  
 > The built-in wiki is available with TFS 2018 and later versions. To download Azure DevOps Server, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
@@ -98,7 +92,7 @@ Many teams document their code using Markdown and check in these files along wit
 - Content versioning isn't supported.
 - Searching through content relies on searching the codes rather than a search experience optimized for searching content.
 
-With the publish code as a wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your content alongside your code base, band lets you selectively publish and update your content to a wiki.  
+With the publish code as a wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your content alongside your code base, and lets you selectively publish and update your content to a wiki.  
 
 There are significant differences between how you manage the content for a wiki that you provision for a team project versus wiki pages that you publish from a Git repository. For details, see [Publish a Git repo to a wiki](publish-repo-to-wiki.md).
 

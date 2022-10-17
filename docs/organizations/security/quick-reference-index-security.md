@@ -164,7 +164,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Change organization-level permissions](change-organization-collection-level-permissions.md)   
        - [Change project collection-level permissions](change-organization-collection-level-permissions.md)   
        - [Change process permissions](set-permissions-access-work-tracking.md#process-permissions) 
-       - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Set permissions to manage extensions](../../marketplace/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Enable Project-Scoped Users Group](../../user-guide/manage-organization-collection.md#project-scoped-user-group) 
       
       
@@ -204,7 +204,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        **Set collection and server instance permissions**  
        - [Change project collection-level permissions](change-organization-collection-level-permissions.md)   
        - [Change process permissions](set-permissions-access-work-tracking.md#process-permissions) 
-       - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Set permissions to manage extensions](../../marketplace/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Add server administrators](/azure/devops/server/admin/add-administrator)  
    :::column-end:::
    :::column span="1":::
