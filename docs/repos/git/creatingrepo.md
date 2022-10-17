@@ -5,15 +5,15 @@ description: Learn how to create a new Git repo using Visual Studio or Git comma
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 03/31/2022
+ms.date: 10/14/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-#  Create a new Git repo
+# Create a new Git repo
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 A Git repository, or repo, tracks changes to files within a folder. You can create any number of local Git repos on your computer, each stored in its own folder. Each Git repo that you create is independent of other Git repos, so changes you make in one repo won't affect the others.
 
@@ -40,33 +40,43 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 Create a local Git repo when you create a new Visual Studio solution.
 
-#### [Visual Studio 2019](#tab/visual-studio-2019/)
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+Visual Studio 2022 doesn't support creating a new Git repo when creating a solution. Instead, create your Visual Studio solution, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 Visual Studio 2019 doesn't support creating a new Git repo when creating a solution. Instead, create your Visual Studio solution, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
-
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier/)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]  
-
-Create a new Git repo for your new Visual Studio solution by selecting **Create new Git repository** when creating the solution:
-
-![Select Create new Git repository when creating a new solution](media/vscreategitrepo.png) 
-
 
 #### [Git Command Line](#tab/command-line)
 
 Git command line doesn't support creating a new Visual Studio solution. Instead, create your new solution using Visual Studio, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
 
-
-***
-
+---
 
 ## Create a local Git repo from an existing solution
 
 Create a local Git repo to track file changes in your existing Visual Studio solution.
 
-#### [Visual Studio 2019](#tab/visual-studio-2019/)
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+1. In **Solution Explorer**, right-click the solution name, or right-click any item in the **Folder** view of **Solution Explorer**, and then select **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
+
+   Or, choose **Git > Create Git Repository** from the menu bar to launch the **Create a Git repository** window. If you don't see this option, then your code is already in a Git repo.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
+
+2. This step only applies to the Visual Studio Git version control experience: in the **Create a Git repository** window, choose **Local only**, verify the local path is correct, and then choose **Create**.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2022/create-git-repository-window-expanded.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2022/create-git-repository-window-expanded.png":::
+
+You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and Git resources.
+
+:::image type="content" source="media/creatingrepo/visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/creatingrepo/visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 1. In **Solution Explorer**, right-click the solution name, or right-click any item in the **Folder** view of **Solution Explorer**, and then select **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
 
@@ -86,16 +96,6 @@ You've now created a local Git repo in the Visual Studio solution folder and com
 
 :::image type="content" source="media/creatingrepo/visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/creatingrepo/visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier/)
-
-To create a repo from an existing solution not in version control, select the **Publish** button in the bottom-right of the lower status bar ![Visual Studio publish button](media/share-your-code-in-git-vs/visual-studio-2013-2015/publish-status-bar.png).
-This creates a new Git repo in the same directory as your solution and opens up the **Publish** view in Team Explorer so you can [push](pushing.md) your code to Azure Repos or 
-another remote Git repository.
-
-![Publishing a solution to a new remote Git repository in Visual Studio Team Explorer](media/vspublish.gif)
-
-
 #### [Git Command Line](#tab/command-line)
 
 1. If you haven't already, [download and install Git](http://git-scm.com/download). When prompted during the install, enable [Git Credential Manager](set-up-credential-managers.md).
@@ -103,21 +103,24 @@ another remote Git repository.
 1. At the command prompt, go to the root folder that contains your existing Visual Studio solution and run the following commands. These commands create a local Git repo in the Visual Studio solution folder and commit your code into that repo.
 
     > [!div class="tabbedCodeSnippets"]
-    ```Git CLI
+    ```console
     > git init
     > git add .
     > git commit -m "first commit"
     > git branch -m main
     ```
 
-
-***
-
+---
 
 ## Create a local Git repo in an empty folder
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019/)
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+
+Visual Studio 2022 doesn't support creating a new local repo by using **Team Explorer**.
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 You can create a new local repo in an empty folder from **Team Explorer**.
 
@@ -137,48 +140,55 @@ You can create a new local repo in an empty folder from **Team Explorer**.
 
    :::image type="content" source="media/creatingrepo/visual-studio-2019/team-explorer/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the new repository folder in Windows File explorer showing a .git folder, a .gitignore file, and a .gitattributes file." lightbox="media/creatingrepo/visual-studio-2019/team-explorer/file-explorer-git-folder-lrg.png":::
 
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier/)
-
-1. Open the **Connect** view in Team Explorer by choosing **Projects** then **Manage Connections** from the context menu. 
-2. Under **Local Git Repositories**, select **New** and enter a folder where the repo will be created. This directory must be empty.  
-3. Select **Create** to create the repo.
-
-   ![Creating a new local Git repository in Visual Studio Team Explorer](media/CreateNewRepoVS.png)</ol>
-
-
-#### [Git Command Line](#tab/command-line/)
+#### [Git Command Line](#tab/command-line)
 
 1. If you haven't already, [download and install Git](http://git-scm.com/download). When prompted during the install, enable [Git Credential Manager](set-up-credential-managers.md).
 
 1. At the command prompt, go to the empty folder and run the following command to create a new local Git repo.
 
     > [!div class="tabbedCodeSnippets"]
-    ```Git CLI
+    ```console
     > git init
     ```
 
 1. When you've added files to the folder, add them to the Git repo by running the following commands.
 
     > [!div class="tabbedCodeSnippets"]
-    ```Git CLI
+    ```console
     > git add .
     > git commit -m "first commit"
     > git branch -m main
     ```
 
-
-***
-
+---
 
 <a name="remotes"></a>
 
-## Connect a local Git repo to an **Azure Repos** Git repo
+## Connect a local Git repo to an Azure Repos Git repo
 
 You can share your code with others by connecting your local Git repo to an **Azure Repos** Git repo.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019/)
+1. In **Solution Explorer**, right-click the solution name, or right-click any item in the **Folder** view of **Solution Explorer** and then select **Push to Git service** to launch the **Create a Git repository** window.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2022/push-git-service-solution-explorer-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2022 context menu." lightbox="media/creatingrepo/visual-studio-2022/push-git-service-solution-explorer-expanded.png":::
+
+   Or, choose **Git > Push to Git service** from the menu bar to launch the **Create a Git repository** window.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/git-experience/push-to-git-service-git-menu.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Git menu on the menu bar in Visual Studio 2022." lightbox="media/creatingrepo/visual-studio-2019/git-experience/push-to-git-service-git-menu-lrg.png":::
+
+1. Open a browser and navigate to your **Azure DevOps** project by using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+
+1. In your **Azure DevOps** project, [create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/common/azure-clone-repo-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site." lightbox="media/creatingrepo/visual-studio-2019/common/azure-clone-repo-popup-lrg.png":::
+
+1. In the **Create a Git repository** window, choose **Existing remote** and enter the repo clone URL from the previous step, and then choose **Push**. For more information on how to create a new **Azure DevOps** repo, see [Create a new Git repo in your project](/azure/devops/repos/git/create-new-repo?view=azure-devops&preserve-view=true).
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2022/create-git-repo-window-remote-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window, with the URL of an empty Azure repo, in Visual Studio 2022." lightbox="media/creatingrepo/visual-studio-2022/create-git-repo-window-remote-expanded.png":::
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison for publishing your work to an **Azure Repos** Git repo.
 
@@ -230,21 +240,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [project-urls](../../includes/project-urls.md)]
-
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier/)
-
-To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.
-Under **Remotes**, select **Add**.
-
-![Add a remote for a repo in Visual Studio Team Explorer](media/add_remote_vs.png)
-
-Enter `origin` in the **Name** field and enter the [clone URL](clone.md#clone_url) for your repo in the **Fetch** field. 
-Make sure that **Push matches fetch** is checked and select **Save**. 
-
-
-#### [Git Command Line](#tab/command-line/)
+#### [Git Command Line](#tab/command-line)
 
 ::: moniker range="azure-devops"
 > [!NOTE]
@@ -261,7 +257,7 @@ Make sure that **Push matches fetch** is checked and select **Save**.
 1. To publish your local commit to **Azure repos**, run the following commands at the command prompt in your local git repo folder, using the clone URL from the previous step.
 
     > [!div class="tabbedCodeSnippets"]
-    ```Git CLI
+    ```console
     > git init 
     > git remote add origin <clone URL> 
     > git add .
@@ -272,18 +268,31 @@ Make sure that **Push matches fetch** is checked and select **Save**.
 
    Your code is now published to the `main` branch of then **Azure Repos** Git repo.
 
+---
+
 [!INCLUDE [project-urls](../../includes/project-urls.md)]
-
-
-* * *
-
 
 ## Connect a local Git repo to a **GitHub** repo
 
 You can also share your code with others by connecting your local Git repo to a **GitHub** repo.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019/)
+1. In **Solution Explorer**, right-click the solution name, or right-click any item in the **Folder** view of **Solution Explorer**, and then select **Push to Git service** to launch the **Create a Git repository** window.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2022/push-git-service-solution-explorer-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2022 context menu." lightbox="media/creatingrepo/visual-studio-2022/push-git-service-solution-explorer-expanded.png":::
+
+   Or, choose **Git > Push to Git service** from the menu bar to launch the **Create a Git repository** window.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/git-experience/push-to-git-service-git-menu.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Git menu on the menu bar in Visual Studio 2022." lightbox="media/creatingrepo/visual-studio-2019/git-experience/push-to-git-service-git-menu-lrg.png":::
+
+1. In the **Create a Git repository** window, choose **GitHub**, select your **GitHub** account, owner name, and a new repo name, and then choose **Push**.
+
+   :::image type="content" source="media/creatingrepo/visual-studio-2022/create-new-git-repository-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window, with the URL of an empty GitHub repo, in Visual Studio 2022." lightbox="media/creatingrepo/visual-studio-2022/create-new-git-repository-expanded.png":::
+
+   This step creates a new repo in your **GitHub** account with content from your local repo.
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison for publishing your work to a **GitHub** repo.
 
@@ -320,19 +329,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
    :::column-end:::
 :::row-end:::
 
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier/)
-
-To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.
-Under **Remotes**, select **Add**.
-
-![Add a remote for a repo in Visual Studio 2017 Team Explorer](media/creatingrepo/visual-studio-2017/team-explorer/add-remote-repo.png)
-
-Enter `origin` in the **Name** field and enter the [clone URL](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) for your repo in the **Fetch** field. 
-Make sure that **Push matches fetch** is checked and select **Save**. 
-
-
-#### [Git Command Line](#tab/command-line/)
+#### [Git Command Line](#tab/command-line)
 
 > [!NOTE]
 > You can also create a **GitHub** repo from the command line by using the [GitHub CLI](https://cli.github.com/manual/gh_repo_create).
@@ -346,22 +343,19 @@ Make sure that **Push matches fetch** is checked and select **Save**.
 1. To publish your local commit to **GitHub**, run the following commands at the command prompt in your local git repo folder, using the clone URL from the previous step.
 
     > [!div class="tabbedCodeSnippets"]
-    ```Git CLI
+    ```console
     > git remote add origin <clone URL>
     > git push -u origin main
     ```
 
    Your code is now published to the `main` branch of your **GitHub** repo.
 
-
-* * *
-
+---
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Save work with commits](commits.md)
-
 
 ## Related articles
 
