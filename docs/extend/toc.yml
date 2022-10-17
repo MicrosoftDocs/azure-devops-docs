@@ -6,7 +6,7 @@
   - name: Extensibility points
     href: reference/targets/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Contribution model
-    displayName: plug, hub, action, build, task
+    displayName: plug, hub, action, build, task, type, target
     href: develop/contributions-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Create a custom pipelines task
     displayName: extension, manifest, package, publish, install, Marketplace
