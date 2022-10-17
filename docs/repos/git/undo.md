@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to discard uncommitted changes, revert changes in shared commits, reset a branch to a previous state, and generally undo changes in a Git repo.
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 10/18/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -40,50 +40,27 @@ Git `checkout` can also revert a file to any committed version, when you specify
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
+
+[!INCLUDE [Discard uncommitted changes](includes/undo-discard-uncommited-changes.md)]
+
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
+
+[!INCLUDE [Discard uncommitted changes](includes/undo-discard-uncommited-changes.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio supports discarding uncommitted changes to a file by reverting the file to its last committed version.
 
-In the **Git Changes** window, identify the file with the changes that you want to discard. If the file is in the **Staged Changes** section, right-click it and choose **Unstage**. Unstaged files show up in the **Changes** section.
+In the **Changes** view of **Team Explorer**, identify the file with the changes that you want to discard. If the file is in the **Staged Changes** section, right-click it and choose **Unstage**. Unstaged files show up in the **Changes** section
 
-:::image type="content" source="media/undo/visual-studio-2019/git-experience/unstage.png" border="true" alt-text="Screenshot of the context menu options for staged files in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/unstage-lrg.png":::
+:::image type="content" source="media/undo/visual-studio-2019/team-explorer/unstage.png" border="true" alt-text="Screenshot of the context menu options for staged files in Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/unstage-lrg.png":::
 
 If the file is in the **Changes** section, right-click it and choose **Undo Changes** to discard all changes to the file since the last commit.
 
-:::image type="content" source="media/undo/visual-studio-2019/git-experience/undo-changes.png" border="true" alt-text="Screenshot of the context menu options for changed files in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/undo-changes-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio supports discarding uncommitted changes to a file by reverting the file to its last committed version.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    In the **Git Changes** window, identify the file with the changes that you want to discard. If the file is in the **Staged Changes** section, right-click it and choose **Unstage**. Unstaged files show up in the **Changes** section.
-
-      :::image type="content" source="media/undo/visual-studio-2019/git-experience/unstage.png" border="true" alt-text="Screenshot of the context menu options for staged files in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/git-experience/unstage-lrg.png":::
-
-    If the file is in the **Changes** section, right-click it and choose **Undo Changes** to discard all changes to the file since the last commit.
-
-      :::image type="content" source="media/undo/visual-studio-2019/git-experience/undo-changes.png" border="true" alt-text="Screenshot of the context menu options for changed files in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/git-experience/undo-changes-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In the **Changes** view of **Team Explorer**, identify the file with the changes that you want to discard. If the file is in the **Staged Changes** section, right-click it and choose **Unstage**. Unstaged files show up in the **Changes** section
-
-      :::image type="content" source="media/undo/visual-studio-2019/team-explorer/unstage.png" border="true" alt-text="Screenshot of the context menu options for staged files in Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/unstage-lrg.png":::
-
-    If the file is in the **Changes** section, right-click it and choose **Undo Changes** to discard all changes to the file since the last commit.
-
-      :::image type="content" source="media/undo/visual-studio-2019/team-explorer/undo-changes.png" border="true" alt-text="Screenshot of the context menu options for changed files in Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/undo-changes-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/undo/visual-studio-2019/team-explorer/undo-changes.png" border="true" alt-text="Screenshot of the context menu options for changed files in Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/undo-changes-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -119,40 +96,21 @@ Git `reset` has a few options. The default option is to revert the branch to a p
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
+[!INCLUDE [Revert a branch](includes/undo-revert-branch.md)]
 
-   :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+[!INCLUDE [Revert a branch](includes/undo-revert-branch.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+1. In the **Changes** view of **Team Explorer**, choose **Actions > View History** to open the **History** tab for the current branch.
+
+   :::image type="content" source="media/undo/visual-studio-2019/team-explorer/view-history.png" border="true" alt-text="Screenshot of the View History option in the Action menu in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/view-history-lrg.png":::
 
 1. In the **History** tab for the current branch, right-click the commit you want to reset, and then choose **Reset > Delete Changes (--hard)** to reset the branch to the selected commit and delete all changes to all branch files since that commit. Or, choose **Reset > Keep Changes (--mixed)** to reset the branch to the selected commit and retain all subsequent changes as unstaged changes.
 
-   :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
-
-         :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In the **Changes** view of **Team Explorer**, choose **Actions > View History** to open the **History** tab for the current branch.
-
-         :::image type="content" source="media/undo/visual-studio-2019/team-explorer/view-history.png" border="true" alt-text="Screenshot of the View History option in the Action menu in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/view-history-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
-
-2. In the **History** tab for the current branch, right-click the commit you want to reset, and then choose **Reset > Delete Changes (--hard)** to reset the branch to the selected commit and delete all changes to all branch files since that commit. Or, choose **Reset > Keep Changes (--mixed)** to reset the branch to the selected commit and retain all subsequent changes as unstaged changes.
-
-     :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
+   :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -186,40 +144,21 @@ You can undo the changes made by a commit by using Git [revert](https://git-scm.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
+[!INCLUDE [Undo changes in shared commit](includes/undo-changes-shared-commit.md)]
 
-   :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **History** tab for the current branch, right-click the commit you want to revert and choose **Revert** to create a new commit that undoes the changes made by the selected commit.
+[!INCLUDE [Undo changes in shared commit](includes/undo-changes-shared-commit.md)]
 
-   :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2022." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+1. In the **Changes** view of **Team Explorer**, choose **Actions > View History** to open the **History** tab for the current branch.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
-
-         :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In the **Changes** view of **Team Explorer**, choose **Actions > View History** to open the **History** tab for the current branch.
-
-         :::image type="content" source="media/undo/visual-studio-2019/team-explorer/view-history.png" border="true" alt-text="Screenshot of the View History option in the Action menu in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/view-history-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/undo/visual-studio-2019/team-explorer/view-history.png" border="true" alt-text="Screenshot of the View History option in the Action menu in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/view-history-lrg.png":::
 
 2. In the **History** tab for the current branch, right-click the commit you want to revert and choose **Revert** to create a new commit that undoes the changes made by the selected commit.
 
-     :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
+   :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -256,7 +195,6 @@ e745d06 (HEAD -> main) Add a test initialization class
 
 > [!div class="nextstepaction"]
 > [Review history](review-history.md)
-
 
 ## Related articles
 

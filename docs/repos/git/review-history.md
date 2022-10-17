@@ -6,7 +6,7 @@ ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2022
+ms.date: 10/18/2022
 ms.subservice: azure-devops-repos-git
 ---
 
@@ -49,45 +49,19 @@ The Azure DevOps team project site lets you compare two versions of the same fil
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-Visual Studio lets you compare two versions of the same file in the same branch, but doesn't support comparing file versions across branches.
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
-1. In **Solution Explorer**, select a file and choose **Git > View History** from the file's context menu to open the **Git History** tab for the selected file.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-    :::image type="content" source="media/review-history/visual-studio-2019/common/view-file-history-option.png" border="true" alt-text="Screenshot of the View History option in the file context menu in Solution Explorer in Visual Studio 2022." lightbox="media/review-history/visual-studio-2019/common/view-file-history-option-lrg.png":::
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-1. In the **Git History** tab, choose **Compare with Previous** from a commit's context menu to open a **Diff** tab that compares the selected commit with the preceding commit.
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
-    :::image type="content" source="media/review-history/visual-studio-2019/common/compare-with-previous-option.png" border="true" alt-text="Screenshot of the Compare with Previous option in the commit context menu in the commit History view in Visual Studio 2022." lightbox="media/review-history/visual-studio-2019/common/compare-with-previous-option-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-    Or, select two commits and choose **Compare** from either commit's context menu to open a **Diff** tab that compares the two selected commits.
-
-    :::image type="content" source="media/review-history/visual-studio-2019/common/compare-option.png" border="true" alt-text="Screenshot of the Compare Commits option in the commit context menu in the commit History view in Visual Studio 2022." lightbox="media/review-history/visual-studio-2019/common/compare-option-lrg.png":::
-
-    The **Diff** tab shows new, deleted, or modified file lines.
-
-    :::image type="content" source="media/review-history/visual-studio-2019/common/commits-diff.png" border="true" alt-text="Screenshot of the file diff view in Visual Studio 2022.":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio lets you compare two versions of the same file in the same branch, but doesn't support comparing file versions across branches.
-
-1. In **Solution Explorer**, select a file and choose **Git > View History** from the file's context menu to open the **Git History** tab for the selected file.
-
-    :::image type="content" source="media/review-history/visual-studio-2019/common/view-file-history-option.png" border="true" alt-text="Screenshot of the View History option in the file context menu in Solution Explorer in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/view-file-history-option-lrg.png":::
-
-1. In the **Git History** tab, choose **Compare with Previous** from a commit's context menu to open a **Diff** tab that compares the selected commit with the preceding commit.
-
-    :::image type="content" source="media/review-history/visual-studio-2019/common/compare-with-previous-option.png" border="true" alt-text="Screenshot of the Compare with Previous option in the commit context menu in the commit History view in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/compare-with-previous-option-lrg.png":::
-
-    Or, select two commits and choose **Compare** from either commit's context menu to open a **Diff** tab that compares the two selected commits.
-
-    :::image type="content" source="media/review-history/visual-studio-2019/common/compare-option.png" border="true" alt-text="Screenshot of the Compare Commits option in the commit context menu in the commit History view in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/compare-option-lrg.png":::
-
-    The **Diff** tab shows new, deleted, or modified file lines.
-
-    :::image type="content" source="media/review-history/visual-studio-2019/common/commits-diff.png" border="true" alt-text="Screenshot of the file diff view in Visual Studio 2019.":::
+Team Explorer doesn't provide support for this feature.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -170,21 +144,15 @@ The Azure DevOps team project site lets you revert all changes made by a specifi
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. In **Solution Explorer**, select a file and choose **Git > View History** from the file's context menu to open a **Git History** tab for the selected file.
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
-   :::image type="content" source="media/review-history/visual-studio-2019/common/view-file-history-option.png" border="true" alt-text="Screenshot of the View History option in the file context menu in Solution Explorer in Visual Studio 2022." lightbox="media/review-history/visual-studio-2019/common/view-file-history-option-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Git History** tab, select a commit and choose **View Commit Details** from the commit's context menu to open the **Commit Details** view.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/review-history/visual-studio-2019/common/view-commit-details-option.png" border="true" alt-text="Screenshot of the View Commit Details option in the commit context menu in the commit History view in Visual Studio 2022." lightbox="media/review-history/visual-studio-2019/common/view-commit-details-option-lrg.png":::
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
-1. In the **Commit Details** view, select the file and choose **Open** from the file's context menu to open the previous version of the file in a new tab.
-
-   :::image type="content" source="media/review-history/visual-studio-2019/git-experience/open-file-option.png" border="true" alt-text="Screenshot of the Open option in the file context menu in the Commit Details view in Visual Studio 2022." lightbox="media/review-history/visual-studio-2019/git-experience/open-file-option-lrg.png":::
-
-1. Choose **File > Save As** from the menu bar to save the restored version of the file.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Where applicable, we provide a side-by-side comparison of how to restore a specific file version from your repo's Git history.
 
@@ -198,22 +166,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 1. In the **Commit Details** view, select the file and choose **Open** from the file's context menu to open the previous version of the file in a new tab.
 
-    :::row:::
-      :::column span="":::
-    
-      **Visual Studio Git**
-    
-      :::image type="content" source="media/review-history/visual-studio-2019/git-experience/open-file-option.png" border="true" alt-text="Screenshot of the Open option in the file context menu in the Commit Details view in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/git-experience/open-file-option-lrg.png":::
-    
-      :::column-end:::
-      :::column span="":::
-    
-      **Visual Studio Team Explorer**
-    
-      :::image type="content" source="media/review-history/visual-studio-2019/team-explorer/open-file-option.png" border="true" alt-text="Screenshot of the Open option in the file context menu in the Commit Details view of Team Explorer in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/team-explorer/open-file-option-lrg.png":::
-    
-      :::column-end:::
-    :::row-end:::
+   :::image type="content" source="media/review-history/visual-studio-2019/team-explorer/open-file-option.png" border="true" alt-text="Screenshot of the Open option in the file context menu in the Commit Details view of Team Explorer in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/team-explorer/open-file-option-lrg.png":::
 
 1. Choose **File > Save As** from the menu bar to save the restored version of the file.
 
@@ -267,7 +220,16 @@ To compare a branch with the current branch, right-click a branch in the **Branc
 
 :::image type="content" source="media/review-history/visual-studio-2022/branch-context-menu-inline.png" border="true" alt-text="Screenshot of the branch context menu in the Branches area of Visual Studio 2022." lightbox="media/review-history/visual-studio-2022/branch-context-menu-expanded.png":::
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+Visual Studio 2019 doesn't support branch comparison. However, you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub.
+
+>[!TIP]
+>You can access the web portal from the Team Explorer **Home** view by choosing **Web Portal**.
+>
+>:::image type="content" source="media/review-history/visual-studio-2019/team-explorer/web-portal-link.png" border="true" alt-text="Screenshot showing the Web Portal link in the Home view of Team Explorer in Visual Studio 2019."::: 
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 doesn't support branch comparison. However, you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub.
 

@@ -5,7 +5,7 @@ description: Learn how to get started developing your code with Azure Repos, Vis
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 10/14/2022
+ms.date: 10/18/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -24,7 +24,6 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-
 <a name="prerequisites"></a>
 
 ## Prerequisites
@@ -32,7 +31,6 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
-
 
 <a name="clone"></a>
 
@@ -44,63 +42,34 @@ If you prefer to create a local repository without cloning, see [Create a new Gi
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. From the **Git** menu on the menu bar, choose **Clone Repository...**
-
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/clone-repo-lrg.png":::
-
-1. In the **Clone a repository** window, enter the remote repo location and the folder path for the cloned repo. If you don't know the remote repo location, select **Azure DevOps** from **Browse a repository** options.
-
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/specify-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' window in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/specify-repo-lrg.png":::
-
-1. Select **Clone**. After you’ve cloned a Git repository, Visual Studio detects the repository and adds it to your list of Local Repositories in the Git menu.
-
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/local-repositories-lrg.png":::
-
+[!INCLUDE [Get your code](includes/git-quickstart-get-code.md)]
 [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
+
+[!INCLUDE [Get your code](includes/git-quickstart-get-code.md)]
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for cloning a repository.
 
 > [!NOTE]
 > One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
-:::row:::
-  :::column span="":::
+1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
 
-    **Visual Studio Git** <br><br>
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/manage-connections.png" border="true" alt-text="Screenshot of the 'Connect to a Project' link in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/manage-connections-lrg.png":::
 
-    1. From the **Git** menu on the menu bar, choose **Clone Repository...**
+1. In the **Connect to a Project** window, choose the repo you want to clone and select **Clone**. If you don't see your repo, select **Add Azure DevOps Server** to add a server that hosts a repo. You can filter the list to find your repo.
 
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/clone-repo-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
 
-    2. In the **Clone a repository** window, enter the remote repo location and the folder path for the cloned repo. If you don't know the remote repo location, select **Azure DevOps** from **Browse a repository** options.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/specify-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/specify-repo-lrg.png":::
-
-    3. Select **Clone**. After you’ve cloned a Git repository, Visual Studio detects the repository and adds it to your list of Local Repositories in the Git menu.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/local-repositories-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/manage-connections.png" border="true" alt-text="Screenshot of the 'Connect to a Project' link in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/manage-connections-lrg.png":::
-
-    2. In the **Connect to a Project** window, choose the repo you want to clone and select **Clone**. If you don't see your repo, select **Add Azure DevOps Server** to add a server that hosts a repo. You can filter the list to find your repo.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
-
-    3. Verify the location for the cloned repo on your computer, and then select **Clone**.
-
-   :::column-end:::
-:::row-end:::
+1. Verify the location for the cloned repo on your computer, and then select **Clone**.
 
 [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
@@ -138,103 +107,41 @@ You make [commits](commits.md) in your local Git repository to save your changes
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the **Git** menu on the menu bar, choose **New Branch...** to open the **Create a new branch** window.
+[!INCLUDE [Commit your work](includes/git-quickstart-commit-work.md)]
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/branches.png" border="true" alt-text="Screenshot of the 'New Branch' option in the Git menu in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/branches-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Create a new branch** window, enter a descriptive branch name to let others know what work the branch contains. By default, Visual Studio creates your new branch from the current branch. The **Checkout branch** checkbox automatically switches you to the newly created branch. Select **Create**.
+[!INCLUDE [Commit your work](includes/git-quickstart-commit-work.md)]
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/new-local-branch.png" border="true" alt-text="Screenshot of the 'Create a new branch' window in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/new-local-branch-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. Add a README.md file to your cloned repo. In Solution Explorer, you can browse the repo contents using **Folder View** or open Visual Studio solutions in the repo. Git tracks changes made both inside and outside of Visual Studio.
+1. In **Team Explorer**, select the **Home** button and choose **Branches**.
 
-1. When you're satisfied with your changes, save them in Git using a commit. In the **Git Changes** window, enter a message that describes the changes, and then select **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section in the **Git Changes** window.
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot showing the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/branches-lrg.png":::
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/changes.png" border="true" alt-text="Screenshot of the 'Commit All' button in the 'Git Changes' window in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/changes-lrg.png":::
+1. Right-click the default branch, often named `main`, and then choose **New Local Branch From...**
 
-   Select the commit information link to get further details about the commit.
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch-menu.png" border="true" alt-text="Screenshot of the 'New Local Branch From' menu option in the context menu of the main branch in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch-menu-lrg.png":::
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/commit-created-locally.png" border="true" alt-text="Screenshot showing the commit information link in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/commit-created-locally-lrg.png":::
+1. Enter a descriptive branch name to let others know what work the branch contains. Select **Create Branch**.
+
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch.png" border="true" alt-text="Screenshot of the branch name text and 'Create Branch' button in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch-lrg.png":::
+
+1. Add an README.md file to your cloned repo. From the **Home** view of **Team Explorer**, you can browse the repo contents using **Show Folder View** or open Visual Studio solutions in the repo. Git tracks changes made both inside and outside of Visual Studio.
+
+1. When you're satisfied with your changes, save them in Git using a commit. Open the **Changes** view of **Team Explorer** by selecting the **Home** button and choosing **Changes**.
+
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/changes.png" border="true" alt-text="Screenshot of the Changes option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/changes-lrg.png":::
+
+1. Enter a message that describes the commit, and then select **Commit All**.
+
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/commit-all.png" border="true" alt-text="Screenshot of commit message text and 'Commit All' button in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/commit-all-lrg.png":::
 
 > [!NOTE]
 > If you have multiple files and you don't want to commit them all, you can right-click each file and choose **Stage**. When you've staged all the files you'd like to commit, select **Commit Staged**. **Commit Staged** replaces **Commit All** when you manually stage your changes.
 >
-> :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/stage-changes.png" border="true" alt-text="Screenshot of the Stage option in the 'Git Changes' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/stage-changes-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. From the **Git** menu on the menu bar, choose **New Branch...** to open the **Create a new branch** window.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/branches.png" border="true" alt-text="Screenshot of the 'New Branch' option in the Git menu in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/branches-lrg.png":::
-
-    2. In the **Create a new branch** window, enter a descriptive branch name to let others know what work the branch contains. By default, Visual Studio creates your new branch from the current branch. The **Checkout branch** checkbox automatically switches you to the newly created branch. Select **Create**.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/new-local-branch.png" border="true" alt-text="Screenshot of the 'Create a new branch' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/new-local-branch-lrg.png":::
-
-    3. Add a README.md file to your cloned repo. In Solution Explorer, you can browse the repo contents using **Folder View** or open Visual Studio solutions in the repo. Git tracks changes made both inside and outside of Visual Studio.
-
-    4. When you're satisfied with your changes, save them in Git using a commit. In the **Git Changes** window, enter a message that describes the changes, and then select **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section in the **Git Changes** window.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/changes.png" border="true" alt-text="Screenshot of the 'Commit All' button in the 'Git Changes' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/changes-lrg.png":::
-
-      Select the commit information link to get further details about the commit.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/commit-created-locally.png" border="true" alt-text="Screenshot showing the commit information link in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/commit-created-locally-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select the **Home** button and choose **Branches**.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot showing the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/branches-lrg.png":::
-
-    2. Right-click the default branch, often named `main`, and then choose **New Local Branch From...**
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch-menu.png" border="true" alt-text="Screenshot of the 'New Local Branch From' menu option in the context menu of the main branch in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch-menu-lrg.png":::
-
-    3. Enter a descriptive branch name to let others know what work the branch contains. Select **Create Branch**.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch.png" border="true" alt-text="Screenshot of the branch name text and 'Create Branch' button in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/new-local-branch-lrg.png":::
-
-    4. Add an README.md file to your cloned repo. From the **Home** view of **Team Explorer**, you can browse the repo contents using **Show Folder View** or open Visual Studio solutions in the repo. Git tracks changes made both inside and outside of Visual Studio.
-    
-    5. When you're satisfied with your changes, save them in Git using a commit. Open the **Changes** view of **Team Explorer** by selecting the **Home** button and choosing **Changes**.
-    
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/changes.png" border="true" alt-text="Screenshot of the Changes option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/changes-lrg.png":::
-
-    6. Enter a message that describes the commit, and then select **Commit All**.
-
-      :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/commit-all.png" border="true" alt-text="Screenshot of commit message text and 'Commit All' button in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/commit-all-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
-
->[!NOTE]
->If you have multiple files and you don't want to commit them all, you can right-click each file and choose **Stage**. When you've staged all the files you'd like to commit, select **Commit Staged**. **Commit Staged** replaces **Commit All** when you manually stage your changes.
 >
->:::row:::
->  :::column span="":::
->
->    **Visual Studio Git** <br>
->
->    :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/stage-changes.png" border="true" alt-text="Screenshot of the Stage option in the 'Git Changes' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/stage-changes-lrg.png":::
->
->  :::column-end:::
->  :::column span="":::
->
->    **Visual Studio Team Explorer** <br>
->
->    :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/stage-changes.png" border="true" alt-text="Screenshot of the Stage option in the changed-file context menu in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/stage-changes-lrg.png":::
->
->  :::column-end:::
->:::row-end:::
+> :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/stage-changes.png" border="true" alt-text="Screenshot of the Stage option in the changed-file context menu in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/stage-changes-lrg.png":::
 
 #### [Git Command Line](#tab/command-line)
 
@@ -278,95 +185,34 @@ Once you've pushed your commits, you can create a [pull request](pull-requests.m
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. In the **Git Changes** window, select the up-arrow push button to push your commit.
+[!INCLUDE [Commit your work](includes/git-quickstart-share-changes.md)]
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the 'Git Changes' window of Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   Or, you can push your changes from the **Git Repository** window. To open the **Git Repository** window, select the outgoing / incoming link in the **Git Changes** window.
+[!INCLUDE [Commit your work](includes/git-quickstart-share-changes.md)]
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window.png" border="true" alt-text="Screenshot of the 'outgoing / incoming' link in the 'Git Changes' window, and the Push link in the 'Git Repository' window of Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-   Or, you can push your changes from the **Git** menu on the menu bar.
+1. In **Team Explorer**, select **Home** and then choose **Sync** to open **Synchronization**.
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/sync-lrg.png":::
 
-1. Create a pull request so that others can review your changes. If you've just pushed your changes from the **Git Changes** window, you can select the **Create a Pull Request** link to open a web browser where you can create a new pull request in the Azure Repos web portal.
+   You can also go to the **Synchronization** view from **Changes** by choosing **Sync** immediately after making a commit.
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-changes-window.png" border="true" alt-text="Screenshot of the 'Create a Pull Request' link in the 'Git Changes' window in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-changes-window-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally.png" border="true" alt-text="Screenshot of the Sync link that appears after making a commit in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally-lrg.png":::
 
-   Or, if you've just pushed your changes from the **Git Repository** window, you can select the **Create a Pull Request link** at the top of that window.
+1. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Pull Request' link in the 'Git Repository' window in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-repository-window-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin-lrg.png":::
 
-   Or, you can right-click any branch in the **Git Repository** window and select **Create Pull Request**.
+1. Create a pull request so that others can review your changes. Open **Pull Requests** in **Team Explorer** by selecting **Home** and choosing **Pull Requests**.
 
-   :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-from-branch-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Pull Request' menu option from the branch context menu in the 'Git Repository' window in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-from-branch-git-repository-window-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/pull-requests.png" border="true" alt-text="Screenshot of the 'Pull Requests' option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/pull-requests-lrg.png":::
 
-When the pull request opens in the Azure Repos web portal, verify your source and destination branches. In this example, we want to merge commits from the `add-readme-file` branch into the `main` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and then select **Create**.
+1. In **Pull Requests**, you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open a web browser where you can create a new pull request in the Azure Repos web portal.
 
-:::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/create-pull-request.png" border="true" alt-text="Screenshot of the 'New Pull Request' form in the Azure Repos web portal.":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/new-pull-request.png" border="true" alt-text="Screenshot of the 'New Pull Request' link in the Pull Requests view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/new-pull-request-lrg.png":::
 
-For more information on pull requests, see the [Pull request](pull-requests.md) tutorial.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. In the **Git Changes** window, select the up-arrow push button to push your commit.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the 'Git Changes' window of Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
-
-       Or, you can push your changes from the **Git Repository** window. To open the **Git Repository** window, select the outgoing / incoming link in the **Git Changes** window.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window.png" border="true" alt-text="Screenshot of the 'outgoing / incoming' link in the 'Git Changes' window, and the Push link in the 'Git Repository' window of Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window-lrg.png":::
-
-       Or, you can push your changes from the **Git** menu on the menu bar.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
-
-    2. Create a pull request so that others can review your changes. If you've just pushed your changes from the **Git Changes** window, you can select the **Create a Pull Request** link to open a web browser where you can create a new pull request in the Azure Repos web portal.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-changes-window.png" border="true" alt-text="Screenshot of the 'Create a Pull Request' link in the 'Git Changes' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-changes-window-lrg.png":::
-       
-       Or, if you've just pushed your changes from the **Git Repository** window, you can select the **Create a Pull Request link** at the top of that window.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Pull Request' link in the 'Git Repository' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-git-repository-window-lrg.png":::
-       
-       Or, you can right-click any branch in the **Git Repository** window and select **Create Pull Request**.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-from-branch-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Pull Request' menu option from the branch context menu in the 'Git Repository' window in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/create-pull-request-from-branch-git-repository-window-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and then choose **Sync** to open **Synchronization**.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/sync-lrg.png":::
-    
-       You can also go to the **Synchronization** view from **Changes** by choosing **Sync** immediately after making a commit.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally.png" border="true" alt-text="Screenshot of the Sync link that appears after making a commit in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally-lrg.png":::
-    
-    2. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin-lrg.png":::
-
-    3. Create a pull request so that others can review your changes. Open **Pull Requests** in **Team Explorer** by selecting **Home** and choosing **Pull Requests**.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/pull-requests.png" border="true" alt-text="Screenshot of the 'Pull Requests' option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/pull-requests-lrg.png":::
-    
-    4. In **Pull Requests**, you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open a web browser where you can create a new pull request in the Azure Repos web portal.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/new-pull-request.png" border="true" alt-text="Screenshot of the 'New Pull Request' link in the Pull Requests view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/new-pull-request-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
-    
 When the pull request opens in the Azure Repos web portal, verify your source and destination branches. In this example, we want to merge commits from the `add-readme-file` branch into the `main` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and then select **Create**.
 
 :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/create-pull-request.png" border="true" alt-text="Screenshot of the 'New Pull Request' form in the Azure Repos web portal.":::
@@ -405,58 +251,21 @@ You can keep your local branches in sync with their remote counterparts by [pull
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-In the **Git Changes** window, you can keep your local branch current with its remote counterpart by using the **Fetch**, **Pull**, **Push**, and **Sync** buttons.
+[!INCLUDE [Commit your work](includes/git-quickstart-sync-others.md)]
 
-:::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/sync-git-changes-window.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync buttons in the 'Git Changes' window of Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/sync-git-changes-window-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-From left to right in the previous screenshot, the button controls are:
+[!INCLUDE [Commit your work](includes/git-quickstart-sync-others.md)]
 
-- **Fetch** downloads remote commits that aren't in your local branch, but doesn't merge them.
-- **Pull** performs a fetch and then merges the downloaded commits into your local branch.
-- **Push** uploads your unpushed commits to the remote repository, which adds them to the corresponding remote branch.
-- **Sync** performs a **Pull** then a **Push**.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-You can also select **Fetch**, **Pull**, **Push**, and **Sync** from the Git menu.
+1. In **Team Explorer**, select **Home** and choose **Sync** to open **Synchronization**.
 
-:::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/sync-git-menu.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync options in the Git menu in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/sync-git-menu-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in 'Team Explorer' in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/sync-lrg.png":::
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+1. You can download the latest changes to your branch using the **Pull** link. There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either because they both do the same thing.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    In the **Git Changes** window, you can keep your local branch current with its remote counterpart by using the **Fetch**, **Pull**, **Push**, and **Sync** buttons.
-
-    :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/sync-git-changes-window.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync buttons in the 'Git Changes' window of Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/sync-git-changes-window-lrg.png":::
-
-    From left to right in the previous screenshot, the button controls are:
-
-    - **Fetch** downloads remote commits that aren't in your local branch, but doesn't merge them.
-    - **Pull** performs a fetch and then merges the downloaded commits into your local branch.
-    - **Push** uploads your unpushed commits to the remote repository, which adds them to the corresponding remote branch.
-    - **Sync** performs a **Pull** then a **Push**.
-
-    You can also select **Fetch**, **Pull**, **Push**, and **Sync** from the Git menu.
-
-    :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/sync-git-menu.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync options in the Git menu in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/sync-git-menu-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and choose **Sync** to open **Synchronization**.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in 'Team Explorer' in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/sync-lrg.png":::
-
-    2. You can download the latest changes to your branch using the **Pull** link. There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either because they both do the same thing.
-
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/incoming-commits.png" border="true" alt-text="Screenshot of the Pull link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/incoming-commits-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/incoming-commits.png" border="true" alt-text="Screenshot of the Pull link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/incoming-commits-lrg.png":::
 
 #### [Git Command Line](#tab/command-line)
 

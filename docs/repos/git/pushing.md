@@ -5,7 +5,7 @@ description: Learn how to share your commits on a branch of your local Git repo 
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 10/18/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -33,60 +33,31 @@ For the Git push command to work, your local repo must be connected to a remote 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-In the **Git Changes** window, select the up-arrow push button to push your commit.
+[!INCLUDE [Push your code](includes/push-code.md)]
 
-:::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the 'Git Changes' window of Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Or, you can push your changes from the **Git Repository** window. To open the **Git Repository** window, select the outgoing / incoming link in the **Git Changes** window.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-:::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window.png" border="true" alt-text="Screenshot of the 'outgoing / incoming' link in the 'Git Changes' window, and the Push link in the 'Git Repository' window of Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window-lrg.png":::
+[!INCLUDE [Push your code](includes/push-code.md)]
 
-Or, you can push your changes from the **Git** menu on the menu bar.
-
-:::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2022." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to push your code.
 
-:::row:::
-  :::column span="":::
+1. In **Team Explorer**, select **Home** and then choose **Sync** to open **Synchronization**.
 
-    **Visual Studio Git** <br><br>
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/sync-lrg.png":::
 
-    In the **Git Changes** window, select the up-arrow push button to push your commit.
+   You can also go to the **Synchronization** view from **Changes** by choosing **Sync** immediately after making a commit.
 
-    :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the 'Git Changes' window of Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally.png" border="true" alt-text="Screenshot of the Sync link that appears after making a commit in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally-lrg.png":::
 
-    Or, you can push your changes from the **Git Repository** window. To open the **Git Repository** window, select the outgoing / incoming link in the **Git Changes** window.
+1. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
 
-    :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window.png" border="true" alt-text="Screenshot of the 'outgoing / incoming' link in the 'Git Changes' window, and the Push link in the 'Git Repository' window of Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-repositories-window-lrg.png":::
-
-    Or, you can push your changes from the **Git** menu on the menu bar.
-
-    :::image type="content" source="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and then choose **Sync** to open **Synchronization**.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/sync-lrg.png":::
-    
-       You can also go to the **Synchronization** view from **Changes** by choosing **Sync** immediately after making a commit.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally.png" border="true" alt-text="Screenshot of the Sync link that appears after making a commit in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/commit-created-locally-lrg.png":::
-    
-    2. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
-    
-       :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart/visual-studio-2019/team-explorer/push-to-origin-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
