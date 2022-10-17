@@ -14,11 +14,12 @@ monikerRange: '<= azure-devops'
 
 Feed views are a way to enable users to share some packages while keeping other packages private. Views filter the feed to a subset of packages that meet a set of criteria defined by that view.
 
-By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages as well as all the packages saved from an upstream source. All views support NuGet, npm, Maven, Python, and Universal packages.
+By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages and all the packages saved from upstream sources. All views support NuGet, npm, Maven, Python, and Universal packages.
+
+> [!Note]
+> Publishing and restoring packages directly to/from a view is not supported in Azure Artifacts.
 
 ## Promote packages
-
-With Azure Artifacts, you can promote packages to a specific to only share a subset of packages with your customers. Note that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view as follows.
 
 1. Select **Artifacts**.
 
@@ -43,7 +44,7 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
 
 Use the actual user-facing name and version of the package for the `{packageName}` and `{packageVersion}` fields, respectively. If your feed is organization-scoped, omit the `{project}` field.
 
-The body of the request is a [JSON Patch](https://jsonpatch.com/) document adding the view to the end of the `views` array.
+The body of the request is a [JSON Patch](https://jsonpatch.com/) document adding the view to the end of the `views` array. See [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) for more information on how to interact with Azure DevOps REST API.
 
 - **NuGet**:
 
@@ -100,9 +101,6 @@ Content-Type: application/json-patch+json
 }
 ```
 
-> [!TIP]
-> Check out the [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) to learn how to interact with Azure DevOps REST API.
-
 ## Manage views
 
 You can create your own views or rename and delete existing ones from your feed's settings.
@@ -124,7 +122,7 @@ You can create your own views or rename and delete existing ones from your feed'
 
 1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
 
-1. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
 > [!IMPORTANT]
 > For public feeds, if you change the access permissions of a certain view to **Specific people** your view will not be available as an upstream source.
