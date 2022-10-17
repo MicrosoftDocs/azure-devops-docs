@@ -10,6 +10,8 @@ items:
     href: data-available-in-analytics.md  
   - name: Query Analytics 
     href: ../analytics/analytics-query-parts.md  
+  - name: Construct basic queries
+    href: ../extend-analytics/wit-analytics.md
   - name: Query tools  
     href: ../analytics/analytics-query-tools.md  
   - name: Best practices  
@@ -55,16 +57,14 @@ items:
     href: data-connector-functions.md
 - name: Sample queries, Work tracking
   items:
-  - name: Query work item data
-    href: ../extend-analytics/wit-analytics.md
-  - name: Query work item links
+  - name: Retrieve work item data
+    href: ../extend-analytics/analytics-recipes.md
+  - name: Retrieve work item links
     href: ../extend-analytics/work-item-links.md
-  - name: Query trend data
-    href: ../extend-analytics/querying-for-trend-data.md
   - name: Query aggregate data
     href: ../extend-analytics/aggregated-data-analytics.md
-  - name: Basic work tracking queries
-    href: ../extend-analytics/analytics-recipes.md
+  - name: Query trend data
+    href: ../extend-analytics/querying-for-trend-data.md
 - name: Sample reports, Analytics views
   items:
   - name: Active bugs report
