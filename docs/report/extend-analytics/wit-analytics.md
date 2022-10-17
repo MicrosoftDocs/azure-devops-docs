@@ -8,17 +8,17 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/07/2022
+ms.date: 10/17/2022
 ---
 
-# Query your work tracking data using OData Analytics
+# Construct basic queries using OData Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
-Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser. 
+Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser. 
 
-This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
+This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries are focused on retrieving work item data, however, the principles applies for querying other entity sets.
 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
@@ -76,7 +76,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 
 ### Query a single entity set
 
-To query a single entity set&mdash;such as **Areas**, **Projects**, or **WorkItems**&mdash;add the name of the entity set: `/Areas`, `/Projects`,  or `/WorkItems`. For a full list of entity sets for work tracking, see [Metadata reference for Azure Boards Analytics](entity-reference-boards.md).
+To query a single entity set&mdash;such as **Areas**, **Projects**, **WorkItems**, or **WorkItemSnapshot**&mdash;add the name of the entity set within the URL: `/Areas`, `/Projects`, `/WorkItems` or `/WorkItemSnapshot`. 
 
 For example, you query Areas by adding `/Areas`. The full URL is:
 
@@ -87,7 +87,7 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 
 It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10,000 work items, [server-side paging is enforced](../analytics/analytics-query-parts.md#server-force-paging).
 
-
+For a full list of entity sets for work tracking, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
  
 <a id="select-columns" />
 
@@ -107,7 +107,7 @@ For example, to return only the Work Item ID, Work Item Type, Title, and State o
 This query is equivalent to selecting all rows in the entity set, but returning only these specific fields.  
 
 > [!NOTE]  
-> Property names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing. To understand how custom field properties are labeled, see [Metadata reference for Azure Boards, Custom properties](entity-reference-boards.md#custom-properties).
+> Property names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing. To understand how custom field properties are labeled, see [Metadata reference for Azure Boards, Custom properties](../analytics/entity-reference-boards.md#custom-properties).
 .  
 
 <a id="filter-data" />
@@ -179,57 +179,57 @@ Querying work items is helpful, but you'll eventually want to filter by other da
 
 All entity types are associated with properties and navigation properties. You can filter your queries of entity sets using both these types of properties.  
 
-You can get metadata using `/$metadata` URL as described in [Explore Analytics OData metadata](analytics-metadata.md) or reviewing the  [Metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
+You can get metadata using `/$metadata` URL as described in [Explore Analytics OData metadata](analytics-metadata.md) or reviewing the  [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). 
 
 A partial view of the metadata for the `WorkItem` entity is provided in the following code snippet. Properties correspond to a work item field as well as specific data captured by Analytics, such as `LeadTimeDays` and `CycleTimeDays`. Navigation properties correspond to other entity sets, entity types, or specific Analytics data captured for the entity type.   
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
-<Key>
-   <PropertyRef Name="WorkItemId"/>
-</Key>
-<Property Name="WorkItemId" Type="Edm.Int32" Nullable="false">
-   <Annotation Term="Ref.ReferenceName" String="System.Id"/>
-   <Annotation Term="Display.DisplayName" String="Work Item Id"/>
-</Property>
-<Property Name="InProgressDate" Type="Edm.DateTimeOffset">
-   <Annotation Term="Display.DisplayName" String="InProgress Date"/>
-   </Property>
-<Property Name="CompletedDate" Type="Edm.DateTimeOffset">
-   <Annotation Term="Display.DisplayName" String="Completed Date"/>
-   </Property>
-<Property Name="LeadTimeDays" Type="Edm.Double">
-   <Annotation Term="Display.DisplayName" String="Lead Time Days"/>
-</Property>
-<Property Name="CycleTimeDays" Type="Edm.Double">
-   <Annotation Term="Display.DisplayName" String="Cycle Time Days"/>
-</Property>
-<Property Name="InProgressDateSK" Type="Edm.Int32"/>
-<Property Name="CompletedDateSK" Type="Edm.Int32"/>
-<Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
-<Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
-<Property Name="WorkItemRevisionSK" Type="Edm.Int32" Nullable="false"/>
-...
-<NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
-<NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
-<NavigationProperty Name="InProgressOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
-<ReferentialConstraint Property="InProgressDateSK" ReferencedProperty="DateSK"/>
-</NavigationProperty>
-<NavigationProperty Name="CompletedOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
-<ReferentialConstraint Property="CompletedDateSK" ReferencedProperty="DateSK"/>
-</NavigationProperty>
-<NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
-<NavigationProperty Name="Links" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemLink)"/>
-<NavigationProperty Name="Children" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
-<NavigationProperty Name="Parent" Type="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
-<ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
-</NavigationProperty>
-<NavigationProperty Name="Processes" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Process)"/>
-<NavigationProperty Name="Descendants" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
-<NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project" Nullable="false">
-<ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
-<Annotation Term="Display.DisplayName" String="Project"/>
-...
+> <Key>
+>    <PropertyRef Name="WorkItemId"/>
+> </Key>
+> <Property Name="WorkItemId" Type="Edm.Int32" Nullable="false">
+>    <Annotation Term="Ref.ReferenceName" String="System.Id"/>
+>    <Annotation Term="Display.DisplayName" String="Work Item Id"/>
+> </Property>
+> <Property Name="InProgressDate" Type="Edm.DateTimeOffset">
+>    <Annotation Term="Display.DisplayName" String="InProgress Date"/>
+>    </Property>
+> <Property Name="CompletedDate" Type="Edm.DateTimeOffset">
+>    <Annotation Term="Display.DisplayName" String="Completed Date"/>
+>    </Property>
+> <Property Name="LeadTimeDays" Type="Edm.Double">
+>    <Annotation Term="Display.DisplayName" String="Lead Time Days"/>
+> </Property>
+> <Property Name="CycleTimeDays" Type="Edm.Double">
+>    <Annotation Term="Display.DisplayName" String="Cycle Time Days"/>
+> </Property>
+> <Property Name="InProgressDateSK" Type="Edm.Int32"/>
+> <Property Name="CompletedDateSK" Type="Edm.Int32"/>
+> <Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
+> <Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
+> <Property Name="WorkItemRevisionSK" Type="Edm.Int32" Nullable="false"/>
+> ...
+> <NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
+> <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
+> <NavigationProperty Name="InProgressOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
+> <ReferentialConstraint Property="InProgressDateSK" ReferencedProperty="DateSK"/>
+> </NavigationProperty>
+> <NavigationProperty Name="CompletedOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
+> <ReferentialConstraint Property="CompletedDateSK" ReferencedProperty="DateSK"/>
+> </NavigationProperty>
+> <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
+> <NavigationProperty Name="Links" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemLink)"/>
+> <NavigationProperty Name="Children" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
+> <NavigationProperty Name="Parent" Type="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
+> <ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
+> </NavigationProperty>
+> <NavigationProperty Name="Processes" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Process)"/>
+> <NavigationProperty Name="Descendants" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
+> <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project" Nullable="false">
+> <ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
+> <Annotation Term="Display.DisplayName" String="Project"/>
+> ...
 > ```
  
 
