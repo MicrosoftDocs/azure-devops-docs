@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 06/29/2022
+ms.date: 10/06/2022
 ---
 
 # Query by date or current iteration in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To list work items based on when they were created, closed, resolved, or changed&mdash;you can specify a date or use a supported macro. Use the **\@Today** macro and specify a plus or minus number of days for relative dates. For queries that list work items based on their assignment to a team's current sprint, use **\@CurrentIteration**. 
+To list work items based on when they were created, closed, resolved, or changed&mdash;you can specify a date or use a supported macro. Use the `@Today` macro and specify a plus or minus number of days for relative dates. For queries that list work items based on their assignment to a team's current sprint, use `@CurrentIteration`. 
 
 For example, you can find work items that were modified in the last three days with the following query.
 
@@ -27,7 +27,7 @@ For example, you can find work items that were modified in the last three days w
 ![Screenshot of query editor, filter based on recent changes.](media/query-by-date-example.png)  
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
-Also, you can use  the **@CurrentIteration +/- _n_** macro to create queries based on a sliding window of team iterations. 
+Also, you can use  the `CurrentIteration +/- _n_` macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
 
 
@@ -52,11 +52,10 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
       **DateTime**   
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever.  
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
 
-      **Macros**:  **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, **@StartOfYear**, and **@Today**.  
-
-      You can use the **+/- _n_** with each of the supported macros.  
+      **Macros**: `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, `@StartOfYear`, and `@Today`.  
+      You can use +/- _n_ with each of the supported macros.  
    :::column-end:::
 :::row-end:::
  ---
@@ -66,8 +65,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
    :::column-end::: 
    :::column span="3":::
       = , <> , Under, Not Under  
-
-      **Macros**: **@CurrentIteration**<sup>2</sup> and **@CurrentIteration +/- n**<sup>3</sup> valid with the **Iteration Path** field.
+      **Macros**: `@CurrentIteration`<sup>2</sup> and `@CurrentIteration +/- n`<sup>3</sup> valid with the **Iteration Path** field.
    :::column-end:::
 :::row-end:::
 ---
@@ -78,8 +76,8 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
       **DateTime**   
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  
-      **Macros**: **@Today** which you can specify with ** +/- _n_** integer.
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
+      **Macros**: **@Today** which you can specify with +/- _n_ integer.
    :::column-end:::
 :::row-end:::
  ---
@@ -88,8 +86,8 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
       **TreePath**
    :::column-end::: 
    :::column span="3":::
-      = , <> , Under, Not Under
-      **Macros**: **@CurrentIteration**<sup>2</sup> is valid with the **Iteration Path** field
+     `=`, `<>` , `Under`, `Not Under`
+      **Macros**: `@CurrentIteration`<sup>2</sup> is valid with the **Iteration Path** field
    :::column-end:::
 :::row-end:::
 ---
@@ -98,13 +96,11 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 
 
 #### Notes:
-
-1. The  **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, **@StartOfYear**  macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
-2. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+1. The  `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, `@StartOfYear`  macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
+2. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 > [!TIP]    
-> The **WasEver** operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md#asof-historical-queries).
+> The `WasEver` operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md#asof-historical-queries).
  
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
@@ -115,17 +111,16 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 
 ## Client restrictions on the use of the `@CurrentIteration` macros 
 
-You can use the **@CurrentIteration** in a query from the following clients:
+You can use the `@CurrentIteration` macro in a query from the following clients:
 
-- Web portal that connects to Azure Boards 
-- Web portal that connects to an on-premises Azure DevOps 2015 or later version 
-- Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions. 
-- Using the REST API
+- Web portal that connects to Azure Boards
+- Visual Studio 2019 or later versions connected to Azure Boards 
+- Using the REST API.
 
-You can use the **@CurrentIteration +/- _n_** macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
-An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
 
 ## Date-based queries  
