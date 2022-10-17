@@ -21,7 +21,7 @@ monikerRange: '<= azure-devops'
 When a release is created from a release pipeline that defines
 approvals, the deployment stops at each point where approval is required
 until the specified approver grants approval or rejects the release (or
-re-assigns the approval to another user).
+reassigns the approval to another user).
 You can enable manual deployment approvals for each stage in a release pipeline.
 
 ## Define a deployment approval
@@ -43,16 +43,16 @@ These approvers can be individual users or groups of users. These users must hav
 When a group is specified as an approver, only one of the users in that group needs to approve
 for the deployment to occur or the release to move forward.
 
-   * If you are using **Azure Pipelines**, you
+   * If you're using **Azure Pipelines**, you
      can use local groups managed in Azure Pipelines or
-     Azure Active Directory (Azure AD) groups if they have been
+     Azure Active Directory (Azure AD) groups if they've been
      added into Azure Pipelines.
-   * If you are using **Team Foundation Server** (TFS),
+   * If you're using **Team Foundation Server** (TFS),
      you can use local groups managed in TFS or Active
-     Directory (AD) groups if they have been added into TFS.
+     Directory (AD) groups if they've been added into TFS.
 
 The creator of a deployment is considered to be a separate user
-role for deployments. For more details,
+role for deployments. For more information,
 see [Release permissions](../../policies/permissions.md#set-release-permissions).
 Either the release creator or the deployment creator can be restricted from approving deployments.
 
@@ -60,8 +60,8 @@ If no approval is granted within the **Timeout** specified for the approval, the
 
 Use the **Approval policies** to:
 
-   * Specify that the user who requested (initiated or created) the release cannot approve it.
-     If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
+   * Specify that the user who requested (initiated or created) the release can't approve it.
+     If you're experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
      For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
    * Force a revalidation of the user identity to take into account recently changed permissions.
    * Reduce user workload by automatically approving subsequent prompts if the specified
@@ -89,7 +89,7 @@ where the user can approve or reject the release.
 ## Related articles
 
 * [Approvals and gates overview](index.md)
-* [Manual intervention](../deploy-using-approvals.md#configure-maninter)
+* [Manual intervention](../deploy-using-approvals.md#set-up-manual-intervention)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 

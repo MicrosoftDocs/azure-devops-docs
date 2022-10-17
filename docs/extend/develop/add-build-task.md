@@ -62,7 +62,7 @@ If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with
 
 <a name="createtask"></a>
 
-## Step 1: Create a custom task
+## 1. Create a custom task
 
 Set up your task. Do every part of Step 1 within the `buildandreleasetask` folder.
 
@@ -199,7 +199,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks. For more information, see [How can I restrict Visual Studio Codespaces commands usage for task?](#how-can-i-restrict-visual-studio-codespaces-commands-usage-for-task)|
+| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 |
 
 >[!NOTE]
@@ -270,7 +270,7 @@ This time, the task succeeded because `samplestring` was supplied, and it correc
 
 <a name="testscripts"></a>
 
-## Step 2: Unit test your task scripts
+## 2. Unit test your task scripts
 
 We unit test to quickly test the task script, and not the external tools that it's calling. We want to test all aspects of both success and failure paths.
 
@@ -415,7 +415,7 @@ $env:TASK_TEST_TRACE=1
 
 <a name="extensionmanifest"></a>
 
-## Step 3: Create the extension manifest file
+## 3. Create the extension manifest file
 
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
@@ -447,7 +447,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 
 <a name="packageext"></a>
 
-## Step 4: Package your extension
+## 4. Package your extension
 
 After you've written your extension, the next step toward getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension.
@@ -467,7 +467,7 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 
 <a name="publishext"></a>
 
-## Step 5: Publish your extension
+## 5. Publish your extension
 
 <a name="createpublisher"></a>
 
@@ -516,7 +516,7 @@ Now that your extension is in the Marketplace and shared, anyone who wants to us
 
 <a name="createbuildrelease"></a>
 
-## Step 6: Create a build and release pipeline to publish the extension to Marketplace
+## 6. Create a build and release pipeline to publish the extension to Marketplace
 
 Create a build and release pipeline on Azure DevOps to help maintain the custom task on the Marketplace.
 
@@ -563,7 +563,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "v0.x"
           - task: Npm@1
             inputs:
               command: 'install'
@@ -590,7 +590,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "0.x"
           - task: Npm@1
             inputs:
               command: 'install'
@@ -602,21 +602,21 @@ stages:
               script: |
                 cd TaskDirectory # Update to the name of the directory of your task
                 tsc
-          - task: QueryAzureDevOpsExtensionVersion@3
+          - task: QueryAzureDevOpsExtensionVersion@4
+            name: QueryVersion
             inputs:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
-              outputVariable: 'Task.Extension.Version'
           - task: PackageAzureDevOpsExtension@3
             inputs:
               rootFolder: '$(System.DefaultWorkingDirectory)'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
-              extensionVersion: '$(Task.Extension.Version)'
+              extensionVersion: '$(QueryVersion.Extension.Version)'
               updateTasksVersion: true
               updateTasksVersionType: 'patch'
               extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
@@ -637,7 +637,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "v0.x"
           - task: DownloadBuildArtifacts@0
             inputs:
               buildType: "current"
@@ -766,9 +766,9 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 
 To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
-## FAQ
+## FAQs
 
-## How can I restrict Visual Studio Codespaces commands usage for task?
+### Q: How can I restrict Visual Studio Codespaces commands usage for task?
 
 You can restrict Visual Studio Codespaces commands usage and variables, which can be set by task.
 This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
@@ -804,17 +804,17 @@ If "restricted" value is specified for "mode" - you can only execute the followi
 
 Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
 
-### How is cancellation signal being handled by a task?
+### Q: How is cancellation signal being handled by a task?
 
 The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
 
-### How can I remove the task from project collection?
+### Q: How can I remove the task from project collection?
 
 We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
-### How can I migrate task to Node 10?
+### Q: How can I migrate task to Node 10?
 
-You can find guideline [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
+You can find guidelines [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
 
 ## Related articles
 
