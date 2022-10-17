@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Catalog of the built-in tasks on Azure Pipelines and Team Foundation Server
 ms.topic: reference
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
-ms.date: 10/14/2022
+ms.date: 05/03/2018
 monikerRange: '<= azure-devops'
 ---
 
