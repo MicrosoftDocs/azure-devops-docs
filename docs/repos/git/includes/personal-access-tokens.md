@@ -187,9 +187,7 @@ Otherwise, run the following command.
 
 ### Use a PAT in your code
 
-You can use a PAT in your code, however note the following warning.
-
-[!INCLUDE [warning-api-scopes](../../../organizations/accounts/includes/warning-api-scopes.md)]
+You can use a PAT in your code.
 
 #### [Windows](#tab/Windows/)
 

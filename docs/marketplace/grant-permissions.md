@@ -7,7 +7,7 @@ ms.subservice: azure-devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2022
+ms.date: 10/12/2022
 monikerRange: '<= azure-devops'
 ---
 
