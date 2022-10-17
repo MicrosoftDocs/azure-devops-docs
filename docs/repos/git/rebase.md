@@ -5,7 +5,7 @@ description: Learn when and how to rebase to update a local branch, force push t
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 10/14/2022
+ms.date: 10/18/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -61,88 +61,43 @@ Git rebase and force push are powerful tools, but keep these guidelines in mind 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. Choose **Git > Manage Branches** to open the **Git Repository** window.
+[!INCLUDE [How to rebase](includes/rebase-how.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+[!INCLUDE [How to rebase](includes/rebase-how.md)]
 
-1. Right-click the source branch, and select **Rebase \<target-branch\> onto \<source-branch\>**.
-
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window.png" border="true" alt-text="Screenshot of the Rebase option in the branch context menu in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window-lrg.png":::
-
-1. Visual Studio will display a confirmation message after a successful rebase.
-
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
-
-   If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
-
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git rebase.
 
-:::row:::
-  :::column span="":::
+1. In **Team Explorer**, select **Home** and choose **Branches**.
 
-    **Visual Studio Git** <br><br>
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
 
-    1. Choose **Git > Manage Branches** to open the **Git Repository** window.
+1. In the **Branches** view, right-click the target branch and select **Checkout**.
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
 
-    2. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+1. Right-click the source branch, and select **Rebase Onto**.
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase.png" border="true" alt-text="Screenshot of the Rebase Onto option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-lrg.png":::
 
-    3. Right-click the source branch, and select **Rebase \<target-branch\> onto \<source-branch\>**.
+1. Verify the rebase options and then click **Rebase**.
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window.png" border="true" alt-text="Screenshot of the Rebase option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window-lrg.png":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details.png" border="true" alt-text="Screenshot of the rebase details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details-lrg.png":::
 
-    4. Visual Studio will display a confirmation message after a successful rebase.
+1. Visual Studio will display a confirmation message after a successful rebase.
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
 
-       If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+   If there are conflicts during the rebase, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and choose **Branches**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
-
-    2. In the **Branches** view, right-click the target branch and select **Checkout**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
-
-    3. Right-click the source branch, and select **Rebase Onto**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase.png" border="true" alt-text="Screenshot of the Rebase Onto option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-lrg.png":::
-
-    4. Verify the rebase options and then click **Rebase**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details.png" border="true" alt-text="Screenshot of the rebase details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details-lrg.png":::
-
-    5. Visual Studio will display a confirmation message after a successful rebase.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
-
-       If there are conflicts during the rebase, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -179,70 +134,31 @@ The Git push `--force-with-lease` flag is safer than the `--force` flag because 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. In the **Git Changes** window, select the push button to push your commit.
+[!INCLUDE [Force push local branch](includes/rebase-force-push.md)]
 
-   :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the Git Changes window of Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   Or, you can select **Push** from the **Git** menu.
+[!INCLUDE [Force push local branch](includes/rebase-force-push.md)]
 
-   :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
-
-1. If the default Git push operation fails, Visual Studio launches the **Git-Push failed** dialog. Choose **Force Push**.
-
-   :::image type="content" source="media/rebase/visual-studio-2019/common/push-failed-dialog.png" border="true" alt-text="Screenshot of the Git-push failed dialog in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/common/push-failed-dialog-lrg.png":::
-
-1. Visual Studio will display a confirmation message after a successful push.
-
-   :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-confirmation.png" border="true" alt-text="Screenshot of the push confirmation message in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-confirmation-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to force push a local branch.
 
-:::row:::
-  :::column span="":::
+1. In **Team Explorer**, select **Home** and then choose **Sync** to open the **Synchronization** view.
 
-    **Visual Studio Git** <br><br>
+   :::image type="content" source="media/rebase/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/team-explorer/sync-lrg.png":::
 
-    1. In the **Git Changes** window, select the push button to push your commit.
+1. In the **Synchronization** view, choose **Push** to upload your changes to the remote repo.
 
-       :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-commit-git-changes-window.png" border="true" alt-text="Screenshot of the up-arrow push button in the Git Changes window of Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-commit-git-changes-window-lrg.png":::
+   :::image type="content" source="media/rebase/visual-studio-2019/team-explorer/sync-push-option.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/team-explorer/sync-push-option-lrg.png":::
 
-       Or, you can select **Push** from the **Git** menu.
+1. If the default Git push operation fails, Visual Studio launches the **Git-Push failed** dialog. Choose **Force Push**.
 
-       :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-commit-git-menu.png" border="true" alt-text="Screenshot of the Push option from the Git menu in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-commit-git-menu-lrg.png":::
+   :::image type="content" source="media/rebase/visual-studio-2019/common/push-failed-dialog.png" border="true" alt-text="Screenshot of the Git-Push failed dialog in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/common/push-failed-dialog-lrg.png":::
 
-    2. If the default Git push operation fails, Visual Studio launches the **Git-Push failed** dialog. Choose **Force Push**.
+1. Visual Studio will display a confirmation message after a successful push.
 
-       :::image type="content" source="media/rebase/visual-studio-2019/common/push-failed-dialog.png" border="true" alt-text="Screenshot of the Git-push failed dialog in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/common/push-failed-dialog-lrg.png":::
-
-    3. Visual Studio will display a confirmation message after a successful push.
-
-       :::image type="content" source="media/rebase/visual-studio-2019/git-experience/push-confirmation.png" border="true" alt-text="Screenshot of the push confirmation message in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/git-experience/push-confirmation-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and then choose **Sync** to open the **Synchronization** view.
-
-       :::image type="content" source="media/rebase/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/team-explorer/sync-lrg.png":::
-
-    2. In the **Synchronization** view, choose **Push** to upload your changes to the remote repo.
-
-       :::image type="content" source="media/rebase/visual-studio-2019/team-explorer/sync-push-option.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/team-explorer/sync-push-option-lrg.png":::
-
-    3. If the default Git push operation fails, Visual Studio launches the **Git-Push failed** dialog. Choose **Force Push**.
-
-       :::image type="content" source="media/rebase/visual-studio-2019/common/push-failed-dialog.png" border="true" alt-text="Screenshot of the Git-Push failed dialog in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/common/push-failed-dialog-lrg.png":::
-
-    4. Visual Studio will display a confirmation message after a successful push.
-
-       :::image type="content" source="media/rebase/visual-studio-2019/team-explorer/push-confirmation.png" border="true" alt-text="Screenshot of the push confirmation message in Team Explorer in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/team-explorer/push-confirmation-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/rebase/visual-studio-2019/team-explorer/push-confirmation.png" border="true" alt-text="Screenshot of the push confirmation message in Team Explorer in Visual Studio 2019." lightbox="media/rebase/visual-studio-2019/team-explorer/push-confirmation-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -285,7 +201,11 @@ Typically, as you work on a new feature in your local feature branch, you'll cre
 
 Visual Studio 2017 doesn't support interactive rebasing. Use the Git command line instead.
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+Visual Studio 2019 doesn't support interactive rebasing. Use the Git command line instead.
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 Visual Studio 2019 doesn't support interactive rebasing. Use the Git command line instead.
 
