@@ -35,4 +35,4 @@ When the pull request opens in the Azure Repos web portal, verify your source an
 
 :::image type="content" source="../media/gitquickstart/visual-studio-2019/team-explorer/create-pull-request.png" border="true" alt-text="Screenshot of the 'New Pull Request' form in the Azure Repos web portal.":::
 
-For more information on pull requests, see the [Pull request](pull-requests.md) tutorial.
+For more information on pull requests, see the [Pull request](../pull-requests.md) tutorial.
