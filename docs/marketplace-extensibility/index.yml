@@ -24,7 +24,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: About Azure DevOps Marketplace
-            url: ../marketplace/overview.md
+            url: /azure/devops/extend/overview
       - linkListType: quickstart
         links:
           - text: Request extensions
