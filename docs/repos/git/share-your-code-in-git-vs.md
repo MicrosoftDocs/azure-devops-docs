@@ -162,11 +162,11 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
    :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-team-explorer.png" border="true" alt-text="Screenshot of the 'Push' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-team-explorer-lrg.png":::
 
-1. Choose your Azure DevOps account, organization, and repo name, and then select **Publish Repository**.
+1. Choose your Azure DevOps organization and repo name, and then select **Publish Repository**.
 
-   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the Azure DevOps account, organization, and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the organization and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
 
-   This step creates a new project in your Azure DevOps account with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.<br><br>
+   This step creates a new project with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.<br><br>
 
 1. Your code is now in a **Azure Repos** Git repository. You can view your code on the web by selecting **See it on the web**.
 
