@@ -43,40 +43,13 @@ Azure Pipelines runs the following steps as part of every deployment:
 
 :::image type="content" source="media/what-is-release-management/understand-rm-05.png" alt-text="A screenshot showing how release pipelines work.":::
 
-## How do I use a release pipeline?
+## Deployment model
 
-You start using Azure Pipelines releases by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release pipeline**.
+Azure release pipelines supports a wide range of [artifact sources](artifacts.md#sources) such as pipelines build, Jenkins, and Team City. The following example illustrates a deployment model using Azure release pipelines:
 
-An **artifact** is a deployable component of your application. It's typically produced through a Continuous Integration or a build pipeline. Azure Pipelines releases can deploy artifacts produced by a [wide range of artifact sources](artifacts.md#sources). such as Azure Pipelines build, Jenkins, or Team City.
+:::image type="content" source="media/definition-01.png" alt-text="A screenshot showing the deployment model.":::
 
-Define the **release pipeline** using [stages](../process/stages.md) and restrict deployments into or out of a stage using [approvals](approvals/index.md). Define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). Use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
-
-See the following example of a release pipeline that can be modeled through a release pipeline:
-
-> [!div class="mx-imgBorder"] 
-> ![release definition](media/definition-01.png)
-
-In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Production ring 1 and then to Production ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the world.
-
-See the following example of how deployment automation can be modeled within a stage:
-
-> [!div class="mx-imgBorder"] 
-> ![deployment definition](media/definition-02.png)
-
-In this example, a [job](../process/phases.md) is used to deploy the app to websites across the world in parallel within production ring 1. After all those deployments are successful, a second job is used to switch traffic from the previous version to the newer version.
-
-**Next:**
-
-Check out the following articles to learn how to:
-
-* [Create your first pipeline](../create-first-pipeline.md).
-
-* [Set up a multi-stage managed release pipeline](define-multistage-release-process.md).
-    
-* [Manage deployments by using approvals and gates](deploy-using-approvals.md).
-
-
-<a name="draftrelease"></a>
+In this example, the pipeline is composed of two build artifacts from two different build pipelines. The application is first deployed to the *Dev* stage and then forked to two QA stages. If deployment succeeds in both QA stages, the application will be deployed to Production ring 1 and then to Production ring 2. Each production ring represents multiple instances of the same website deployed to various locations around the world.
 
 ## What is a draft release?
 
