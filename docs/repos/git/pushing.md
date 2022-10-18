@@ -45,7 +45,7 @@ Visual Studio 2019 provides a Git version control experience by using the **Git*
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to push your code.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
 1. In **Team Explorer**, select **Home** and then choose **Sync** to open **Synchronization**.
 

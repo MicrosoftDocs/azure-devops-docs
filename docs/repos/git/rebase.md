@@ -73,7 +73,7 @@ Visual Studio 2019 provides a Git version control experience by using the **Git*
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git rebase.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
 1. In **Team Explorer**, select **Home** and choose **Branches**.
 
@@ -142,7 +142,7 @@ The Git push `--force-with-lease` flag is safer than the `--force` flag because 
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to force push a local branch.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
 1. In **Team Explorer**, select **Home** and then choose **Sync** to open the **Synchronization** view.
 
@@ -199,7 +199,7 @@ Typically, as you work on a new feature in your local feature branch, you'll cre
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2017 doesn't support interactive rebasing. Use the Git command line instead.
+Visual Studio 2022 doesn't support interactive rebasing. Use the Git command line instead.
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
