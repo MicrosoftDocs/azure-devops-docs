@@ -125,7 +125,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    **/noautoresolve**
    :::column-end:::
    :::column span="3":::
-   By default, the system automatically attempts to **AutoResolve All** (see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md)). Specify this option to disable this default behavior.
+   By default, the system automatically attempts to **AutoResolve All** (see [Resolve Team Foundation version control conflicts](resolve-team-foundation-version-control-conflicts.md)). Specify this option to disable this default behavior.
    :::column-end:::
 :::row-end:::
 :::row:::
