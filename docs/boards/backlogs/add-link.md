@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/18/2022
 ---
 
 # Link user stories, issues, bugs, and other work items in Azure Boards  
@@ -267,7 +267,9 @@ From the Add link dialog, you can open a secondary dialog to help you choose one
 
 
 ::: moniker range=">= azure-devops-2020"
+
 ## Set work item state in pull request
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
@@ -299,6 +301,8 @@ Other features you can use to quickly link or change links that use the parent-c
 ## Add, remove, and show links using azure cli 
 
 You can add, remove, and show details of links made to a work item using link types supported by your organization with the [az boards work-item relation](/cli/azure/boards/work-item/relation) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+
+Link types include work link types, remote link types, hyperlinks, and attached files. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command. 
 
 ```azurecli
 az boards work-item relation add
@@ -350,11 +354,11 @@ Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c86375
 ```
 To view the information for the linked work items, enter one of the URLs listed in your browser. 
 
-### Remove a link
+### Remove work item links
 
 To remove one or more linked work items from a single work item, enter the [az boards work-item relation remove](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-remove) command.
 
-Required parameters include the ID of the work item to remove the link from and the link type. You can only remove links to work items defined in the same organization. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command. You can specify any of the supported link types except except remote link types. 
+Required parameters include the ID of the work item to remove the link from and the link type. You can only remove links to work items defined in the same organization. You can specify any of the supported link types except except remote link types. 
 
 You must specify the target work item ID. You can specify multiple values by separating IDs or URLs with a comma.
 
@@ -403,26 +407,22 @@ az boards work-item relation show --id
 
 #### Example
 
-The following command lists the details of links defined for work item *ID=2794* in the *fabrikam* organization in table format.
+The following command lists the details of links defined for work item *ID=2931* in the *fabrikam* organization in table format.
 
 ```azurecli
-az boards work-item relation show --id 2794 --output table
+az boards work-item relation show --id 2931 --output table
 Relation Type    Url
----------------  -------------------------------------------------------------------------------------------------
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2850
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2808
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2820
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2856 
-Parent           https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2811
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2876
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2801
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2877
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2805
-Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2856 
+---------------  -----------------------------------------------------------------------------------------------------------------------------------
+Related          https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2932
+Successor        https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2932
+Remote Related   https://dev.azure.com/fabrikam-fiber5/847568d2-6541-4a99-a240-228510ccbff7/_apis/wit/workItems/1777
+Parent           https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2930
+Predecessor      https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2933
+Attached File    https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/attachments/1cc6c026-b4ed-420c-bfe6-065be726cba7
 ```
 
-To view the information for the linked work items, enter one of the URLs listed in your browser. 
- 
+To view the information for the linked work items, enter one of the URLs listed in your browser. Choose the URL for an attached file to download the attachment. 
+  
 ::: moniker-end
 
 ## Related articles

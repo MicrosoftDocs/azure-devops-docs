@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 05/20/2022
+ms.date: 10/18/2022
 ---
 
 # Index to Azure DevOps CLI examples 
