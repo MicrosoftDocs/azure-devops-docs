@@ -58,7 +58,7 @@ in just a couple of commands.
 
 ## Git and TFVC capabilities
 
-Need more help to make a choice? These charts might help.
+The following table provides a summary of how TFVC and Git support the main capabilities of version control.
 
 :::row:::
    :::column span="1":::
@@ -179,6 +179,8 @@ Need more help to make a choice? These charts might help.
 
 ### Server 
 
+The following table summarizes the features available with the supported servers for each of the version control systems.
+
 :::row:::
    :::column span="1":::
    **Capability**
@@ -278,10 +280,9 @@ Need more help to make a choice? These charts might help.
    :::column-end:::
 :::row-end:::
 
-
-
- 
 ### Client
+
+The following table summarizes the client supported features available depending on the version control system you select.
 
 :::row:::
    :::column span="1":::
@@ -362,29 +363,14 @@ Need more help to make a choice? These charts might help.
    :::column-end:::
 :::row-end:::
 
+## Migration
 
-### Integration and migration
+To learn how to migrate from TFVC to Git, see [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git).
 
-:::row:::
-   :::column span="1":::
-   **Capability**
-   :::column-end:::
-   :::column span="1":::
-   **TFVC**
-   :::column-end:::
-   :::column span="1":::
-   **Git**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-   Migration path
-   :::column-end:::
-   :::column span="1":::
-   [Git-TFS](https://github.com/git-tfs/git-tfs)
-   :::column-end:::
-   :::column span="1":::
-   [Git-TFS](https://github.com/git-tfs/git-tfs)
-   :::column-end:::
-:::row-end:::
+## Related articles
+
+- [Develop modern software with DevOps](/devops/develop/developing-modern-software-with-devops)
+- [Select a development environment](/devops/develop/selecting-development-environment)
+- [Migrate to Git from centralized version control](/devops/develop/git/centralized-to-git)
+- [What is Git?](/devops/develop/git/what-is-git)
+
