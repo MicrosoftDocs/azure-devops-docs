@@ -1,7 +1,7 @@
 ---
-title: Release pipelines
+title: Classic release pipelines
 ms.custom: seodec18
-description: What are release pipelines in Azure Pipelines?
+description: What are classic release pipelines in Azure Pipelines
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.topic: conceptual
 ms.author: ronai
@@ -10,68 +10,38 @@ ms.date: 08/11/2021
 monikerRange: '<= azure-devops'
 ---
 
-# Release pipelines
+# Classic release pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
+With classic release pipelines, developers can easily and safely deploy their applications to multiple environments. Developers can fully automate testing and deployment to multiple stages or set up semi-automated processes with approvals and on-demand deployments.
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-> [!NOTE] 
-> This article covers classic release pipelines. If you want to use YAML to author CI/CD pipelines, then see [Create your first pipeline](../create-first-pipeline.md).
-::: moniker-end
-
-**Release pipelines** in Azure Pipelines help your team **continuously deliver** software to your customers at a faster pace and with lower risk. You can **fully automate** the testing and delivery of your software in multiple stages all the way to production. Or, set up
-semi-automated processes with **approvals** and **on-demand deployments**.
-
-> [!div class="mx-imgBorder"]  
-> ![Release pipeline overview](media/what-is-release-management/understand-rm-01.1.png)
-
-See [Releases in Azure Pipelines](releases.md) to understand releases and deployments and watch the following video to see release pipelines in action.
-
-  > [!VIDEO https://learn.microsoft.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
-
-<a name="howrmworks"></a>
-
-## How do release pipelines work?
-
-Release pipelines store the data for your pipelines, stages, tasks, releases, and deployments in Azure Pipelines.
-
-> [!div class="mx-imgBorder"] 
-> ![Azure release pipeline components](media/what-is-release-management/understand-rm-05.png)
+## How do release pipelines work
 
 Azure Pipelines runs the following steps as part of every deployment:
 
 1. **Pre-deployment approval**:
    When a new deployment request is triggered, Azure Pipelines checks whether a pre-deployment approval is required before deploying a release to a stage. If it's required, it sends out email notifications to the appropriate approvers.
 
-2. **Queue deployment job**:
-   Azure Pipelines schedules the deployment job on an available [automation agent](../agents/agents.md). An agent is a piece of software that can run tasks in the deployment.
+1. **Queue deployment job**:
+   Azure Pipelines schedules the deployment job on an available [Agent](../agents/agents.md).
 
-3. **Agent selection**:
-   An automation agent picks up the job. The agents for release pipelines are exactly the same as the agents that run your builds in Azure Pipelines. A release pipeline can contain settings to select an appropriate agent at runtime.
+1. **Agent selection**:
+   An agent picks up the job. A release pipeline can be configured to select an appropriate agent at runtime.
 
-4. **Download artifacts**:
-   The agent downloads all the artifacts specified in that release, provided you haven't opted to skip the download. The agent currently understands two types of artifacts: Azure Pipelines artifacts and Jenkins artifacts.
+1. **Download artifacts**:
+   The agent downloads all the artifacts specified in that release. The agent currently supports two types of artifacts: Azure Pipelines artifacts and Jenkins artifacts.
 
-5. **Run the deployment tasks**:
-   The agent then runs all the tasks in the deployment job to deploy the app to the target servers for a stage.
+1. **Run the deployment tasks**:
+   The agent runs all the tasks in the deployment job.
 
-6. **Generate progress logs**:
-   The agent creates detailed logs for each step while running the deployment, and pushes these logs back to Azure Pipelines.
+1. **Generate progress logs**:
+   The agent creates detailed logs for each step of deployment and pushes these logs back to Azure Pipelines.
 
-7. **Post-deployment approval**:
+1. **Post-deployment approval**:
    When deployment to a stage is complete, Azure Pipelines checks if there's a post-deployment approval required for that stage. If no approval is required, or upon completion of a required approval, it proceeds to trigger deployment to the next stage.
 
-::: moniker range="< azure-devops-2019"
-
-Release pipelines and build pipelines have separate UIs. The main differences in the pipelines are the support in release pipelines for different types of triggers, and the support for approvals and gates.
-
-::: moniker-end
+:::image type="content" source="media/what-is-release-management/understand-rm-05.png" alt-text="A screenshot showing how release pipelines work.":::
 
 ## How do I use a release pipeline?
 
