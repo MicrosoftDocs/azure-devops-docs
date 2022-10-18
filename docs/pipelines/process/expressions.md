@@ -583,6 +583,8 @@ steps:
 ```
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
+
 ## Each keyword
 
 You can use the `each` keyword to loop through parameters with the object type. 
