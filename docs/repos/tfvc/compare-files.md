@@ -5,7 +5,7 @@ description: Learn how to compare files using Team Foundation Version Control. Y
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/12/2022
+ms.date: 10/17/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
@@ -19,6 +19,8 @@ ms.subservice: azure-devops-repos-tfvc
 This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [Compare files](../../repos/git/review-history.md#compare-files).
 
 You can compare server folders and local folders to each other, and view the differences between the contents of each folder. You can compare two server files, two local files, or a server file against a local file, and view the differences between the files.
+
+You can merge changes between two versions by copying and pasting changes from the diff view into your workspace version to quickly bring in updates from one version to another.
 
 > [!NOTE]
 > Even if you're not using version control, you can use the **Diff** window in Visual Studio to compare any two files on your computer. Use the [devenv.exe tool with the /diff option](/visualstudio/ide/reference/diff) from the Developer Command Prompt to open the Visual Studio **Diff** window to compare the files.

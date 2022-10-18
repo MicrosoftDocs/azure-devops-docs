@@ -5,7 +5,7 @@ description: Checkin command
 ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
 ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 10/11/2022
+ms.date: 10/17/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -20,6 +20,14 @@ The TFVC `checkin` command checks in your pending file and folder changes to the
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a [pending change](develop-code-manage-pending-changes.md) until you check it in. When you check in your changes, they're stored as a [changeset](find-view-changesets.md) on the server. The `checkin` command provides a different user interface to do the same processes documented for Visual Studio in [Check in your work to the team's codebase](check-your-work-team-codebase.md).
  
+## Tips
+
+- To set aside changes or clean your workspace for another task, use the [Shelve Command](shelve-command.md).
+
+- If conflicts block your check-in, you can use the [Resolve Command](resolve-command.md) to resolve them.
+
+- If a machine and user account don't have a workspace mapped to the project collection that contains the shelveset, you can use the `/shelveset` and `/collection` options to check in a shelveset.
+
 ## Prerequisites
 
 - [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)
@@ -98,7 +106,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    `<itemspec>`
    :::column-end:::
    :::column span="3":::
-   Specifies the scope of the items to check in from the user's workspace. You can specify more than one `itemspec` argument. For syntax, see [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).
+   Specifies the scope of the items to check in from the user's workspace. You can specify more than one `itemspec` argument. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -106,7 +114,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    `/login:<username>[,<password>]`
    :::column-end:::
    :::column span="3":::
-   Specifies the user account to run the command. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).
+   Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -130,7 +138,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    `/noprompt`
    :::column-end:::
    :::column span="3":::
-   Suppresses the display of windows and dialog boxes, such as the **Check In** dialog box, and redirects output data to the command prompt. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).
+   Suppresses the display of windows and dialog boxes, such as the **Check In** dialog box, and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -223,14 +231,3 @@ The following example checks in pending changes to *program.cs*. The **Check In*
 c:\code\SiteApp\Main>tf checkin program.cs /noprompt
 ```
 
-## Work in Visual Studio
-
-- You can also use Visual Studio to [Check in your work to the team's codebase](check-your-work-team-codebase.md).
-
-## Tips
-
-- To set aside changes or clean your workspace for another task, use the [Shelve Command](shelve-command.md).
-
-- If conflicts block your check-in, you can use the [Resolve Command](resolve-command.md) to resolve them.
-
-- If a machine and user account don't have a workspace mapped to the project collection that contains the shelveset, you can use the `/shelveset` and `/collection` options to check in a shelveset.
