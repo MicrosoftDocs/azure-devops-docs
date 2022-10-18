@@ -16,7 +16,7 @@ ms.date: 10/17/2022
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
-Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser. 
+Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser, or within Power BI. 
 
 This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries are focused on retrieving work item data, however, the principles applies for querying other entity sets.
 
@@ -74,7 +74,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 
 <a id="single-entity" />
 
-### Query a single entity set
+## Query a single entity set
 
 To query a single entity set&mdash;such as **Areas**, **Projects**, **WorkItems**, or **WorkItemSnapshot**&mdash;add the name of the entity set within the URL: `/Areas`, `/Projects`, `/WorkItems` or `/WorkItemSnapshot`. 
 
@@ -91,7 +91,7 @@ For a full list of entity sets for work tracking, see [Metadata reference for Az
  
 <a id="select-columns" />
 
-### Select specific columns or fields 
+## Select specific columns or fields 
 
 Return specific field data by adding a ```$select``` clause. 
 
@@ -151,7 +151,7 @@ Additionally, you can apply various functions such as `contains`, `startswith`, 
 
 <a id="date-range-queries" /> 
 
-## Date range queries
+## Query a date range
 
 The following example returns work items whose **Changed Date** is greater than equal to January 1, 2021. 
 
@@ -325,7 +325,7 @@ It returns the following JSON:
 > }
 > ```
 
-### Nest expand statements
+## Nest expand statements
 
 In OData, you can nest `$expand` statements. For example, you can write the previous query statement to display the project the iteration is part of:
 
@@ -439,7 +439,9 @@ And, you can order by multiple items:
  
 ## Related articles
 
-- [Query guidelines](odata-query-guidelines.md) 
+- [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md)
+- [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md)
+- [Best practices to use when querying Analytics](/analytics/analytics-best-practices.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)

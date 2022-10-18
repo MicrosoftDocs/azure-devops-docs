@@ -24,7 +24,7 @@ items:
     href: analytics-security.md  
   - name: Enable or install Analytics  
     href: ../dashboards/analytics-extension.md  
-  - name: Quick reference index  
+  - name: Analytics quick reference 
     href: ../extend-analytics/quick-ref.md  
 - name: Analytics views  
   items:  
