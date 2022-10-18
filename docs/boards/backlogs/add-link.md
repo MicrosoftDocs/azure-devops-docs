@@ -292,6 +292,135 @@ Other features you can use to quickly link or change links that use the parent-c
 
 [!INCLUDE [temp](../includes/view-linked-objects.md)]
 
+<a id="azure-cli" />
+
+::: moniker range="azure-devops" 
+
+## Add, remove, and show links using azure cli 
+
+You can add, remove, and show details of links made to a work item using  link types supported by your organization with the [az boards work-item relation](/cli/azure/boards/work-item/relation) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+
+```azurecli
+az boards work-item relation add
+az boards work-item relation remove
+az boards work-item relation show
+```
+
+In the following examples, the organization is *fabrikam* and the project ID corresponds to *cebd7ef5-4282-448b-9701-88c8637581b7*. The table format is used to show the output. For other formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).  
+
+
+### Link work items 
+
+To link one or more work item to a single work item, enter the [az boards work-item relation add](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-add) command. 
+
+#### Syntax 
+
+Required parameters include the ID of the work item to link to and the link type. Supported link types include *Parent*, *Child*, *Related*, *Remmote Related*. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command. 
+
+For work items defined within the same organization, you must specify the work item ID or target URL. For work items defined in a remote organization, you must specify the target URL. You can specify multiple values by separating IDs or URLs with a comma.
+
+```azurecli
+az boards work-item relation add --id
+                                 --relation-type
+                                 [--detect {false, true}]
+                                 [--org]
+                                 [--target-id]
+                                 [--target-url]
+```
+
+#### Example
+
+The following command links work item *ID=2807* to work item *ID=2794* with the *Child* link type. The command returns a list of all links currently defined for the work item. 
+
+```azurecli
+az boards work-item relation add --id 2794 --relation-type Child --target-id 2856 --output table
+Are you sure you want to remove this relation(s)? (y/n): y
+Relation Type    Url
+---------------  -------------------------------------------------------------------------------------------------
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2850
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2808
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2820
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2856
+Parent           https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2811
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2876
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2801
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2877
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2805
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2807
+```
+To view the information for the linked work items, enter one of the URLs listed in your browser. 
+
+### Remove a link
+
+To remove a linked work item from a single work item, enter the [az boards work-item relation remove](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-remove) command.
+
+#### Syntax 
+```azurecli
+az boards work-item relation remove --id
+                                    --relation-type
+                                    --target-id
+                                    [--detect {false, true}]
+                                    [--org]
+                                    [--yes]
+```
+
+#### Example
+
+The following command removes the link to work item *ID=2794* from work item *ID=2856* to work item  with the *Child* link type. The command returns a list of all links currently defined for the work item. 
+
+```azurecli
+az boards work-item relation remove --id 2794 --relation-type Child --target-id 2807 --output table
+Are you sure you want to remove this relation(s)? (y/n): y
+Relation Type    Url
+---------------  -------------------------------------------------------------------------------------------------
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2850
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2808
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2820
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2856
+Parent           https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2811
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2876
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2801
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2877
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2805 
+```
+To view the information for the linked work items, enter one of the URLs listed in your browser. 
+
+
+### Show details of links made for a single work item 
+
+To view the work items linked to a single work item, enter the  [az boards work-item relation show](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-show) command. For a list of all link types that can be returned, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
+
+#### Syntax 
+```azurecli
+az boards work-item relation show --id
+                                  [--detect {false, true}]
+                                  [--org]
+```
+
+#### Example
+
+The following command lists the details of links defined for work item *ID=2794* in the *fabrikam* organization in table format.
+
+```azurecli
+az boards work-item relation show --id 2794 --output table
+Relation Type    Url
+---------------  -------------------------------------------------------------------------------------------------
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2850
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2808
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2820
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2856 
+Parent           https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2811
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2876
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2801
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2877
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2805
+Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c8637581b7/_apis/wit/workItems/2856 
+```
+
+To view the information for the linked work items, enter one of the URLs listed in your browser. 
+
+::: moniker-end
+
 ## Related articles
 
 ::: moniker range=">= azure-devops-2020"
