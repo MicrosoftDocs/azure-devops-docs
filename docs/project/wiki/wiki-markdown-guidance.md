@@ -213,6 +213,8 @@ journey
 :::
 ```
 
+:::image type="content" source="media/wiki/wiki-mermaid-user-journey.png" alt-text="Screenshot of rendering of User Journey mermaid diagram.":::
+
 ### Pie chart example
 
 The pie chart diagram is used to visualize the percentages in a circled graph. 
