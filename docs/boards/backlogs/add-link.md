@@ -298,7 +298,7 @@ Other features you can use to quickly link or change links that use the parent-c
 
 ## Add, remove, and show links using azure cli 
 
-You can add, remove, and show details of links made to a work item using  link types supported by your organization with the [az boards work-item relation](/cli/azure/boards/work-item/relation) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can add, remove, and show details of links made to a work item using link types supported by your organization with the [az boards work-item relation](/cli/azure/boards/work-item/relation) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation add
@@ -352,7 +352,11 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 ### Remove a link
 
-To remove a linked work item from a single work item, enter the [az boards work-item relation remove](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-remove) command.
+To remove one or more linked work items from a single work item, enter the [az boards work-item relation remove](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-remove) command.
+
+Required parameters include the ID of the work item to remove the link from and the link type. You can only remove links to work items defined in the same organization. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command. You can specify any of the supported link types except except remote link types. 
+
+You must specify the target work item ID. You can specify multiple values by separating IDs or URLs with a comma.
 
 #### Syntax 
 ```azurecli
@@ -418,7 +422,7 @@ Child            https://dev.azure.com/fabrikam/cebd7ef5-4282-448b-9701-88c86375
 ```
 
 To view the information for the linked work items, enter one of the URLs listed in your browser. 
-
+ 
 ::: moniker-end
 
 ## Related articles
