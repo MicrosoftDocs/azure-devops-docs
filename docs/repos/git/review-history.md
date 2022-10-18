@@ -148,13 +148,11 @@ The Azure DevOps team project site lets you revert all changes made by a specifi
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
-
 [!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Where applicable, we provide a side-by-side comparison of how to restore a specific file version from your repo's Git history.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar.
 
 1. In **Solution Explorer**, select a file and choose **Git > View History** from the file's context menu to open a **Git History** tab for the selected file.
 
@@ -288,7 +286,6 @@ For example, `git diff users/frank/feature origin/main index.html` will only gen
 
 >[!div class="nextstepaction"]
 >[Understand Git history](history.md)
-
 
 ## Related articles
 

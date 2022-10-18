@@ -13,7 +13,7 @@ ms.subservice: azure-devops-repos-git
 # Get started with Git in Azure Repos
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
-[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 Get started with developing your code using Azure Repos and Git repositories. You can use Visual Studio or Git commands to clone a repository, define local branches, commit and push changes, and sync with others. If you need to create or import a repository, see [Create a new Git repo in your project](create-new-repo.md) or [Import a Git repository](import-git-repository.md).
 
@@ -56,7 +56,7 @@ Visual Studio 2019 provides a Git version control experience by using the **Git*
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for cloning a repository.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. You can exercise Git features from either interface interchangeably.
 
 > [!NOTE]
 > One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
