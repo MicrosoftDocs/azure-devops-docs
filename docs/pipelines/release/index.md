@@ -51,38 +51,6 @@ Azure release pipelines supports a wide range of [artifact sources](artifacts.md
 
 In this example, the pipeline is composed of two build artifacts from two different build pipelines. The application is first deployed to the *Dev* stage and then forked to two QA stages. If deployment succeeds in both QA stages, the application will be deployed to Production ring 1 and then to Production ring 2. Each production ring represents multiple instances of the same website deployed to various locations around the world.
 
-## What is a draft release?
-
-::: moniker range="azure-devops"
-
-Draft releases are deprecated in Azure Pipelines because you can change variables while you're [creating the release](#editvariables).
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
-Creating a draft release allows you to edit some settings for the release and tasks, depending on your role permissions before you start the deployment.
-The changes apply only to that release, and don't affect the settings of the original pipeline.
-
-Create a draft release using the "..." ellipses link in the list of releases:
-
-> [!div class="mx-imgBorder"]
-> ![Create a draft release in the list of releases](media/what-is-release-management/draft-release.png)
-
-... or the **Release** drop-down in the pipeline definition page: 
-
-> [!div class="mx-imgBorder"]
-> ![Create a draft release in the pipeline definition page](media/what-is-release-management/new-draft-release.png)
-
-After you finish editing the draft release, choose **Start** from the draft release toolbar. 
-
-> [!div class="mx-imgBorder"]
-> ![Start a draft release](media/what-is-release-management/start-draft.png)
-
-::: moniker-end
-
-<a name="editvariables"></a>
-
 ## How do I specify variables I want to edit when a release is created?
 
 In the **Variables** tab of a release pipeline, when you add new variables, set **Settable at release time** for the variables that you want to edit when a release gets created and queued.
