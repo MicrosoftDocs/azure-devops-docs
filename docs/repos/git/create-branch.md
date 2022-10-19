@@ -103,52 +103,31 @@ The main page of your repo now shows the files in your new branch.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. From the **Git** menu on the menu bar, choose **New Branch** to open the **Create a new branch** window.
+[!INCLUDE [Create branch](includes/create-branch-create-branch.md)]
 
-   :::image type="content" source="media/create-branch/visual-studio-2019/git-experience/branches.png" border="true" alt-text="Screenshot of the 'New Branch' option in the Git menu in Visual Studio 2022." lightbox="media/create-branch/visual-studio-2019/git-experience/branches-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Create a new branch** window, enter a descriptive branch name to let others know what work the branch contains. By default, Visual Studio creates your new branch from the current branch. The **Checkout branch** checkbox automatically switches you to the newly created branch. Select **Create**.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/create-branch/visual-studio-2019/git-experience/new-local-branch.png" border="true" alt-text="Screenshot of the 'Create a new branch' window in Visual Studio 2022." lightbox="media/create-branch/visual-studio-2019/git-experience/new-local-branch-lrg.png":::
+[!INCLUDE [Create branch](includes/create-branch-create-branch.md)]
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to create a branch.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-:::row:::
-  :::column span="":::
+1. In **Team Explorer**, select the **Home** button and choose **Branches**.
 
-    **Visual Studio Git** <br><br>
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot showing the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/branches-lrg.png":::
 
-    1. From the **Git** menu on the menu bar, choose **New Branch** to open the **Create a new branch** window.
+1. Right-click the default branch, often named `main`, and then choose **New Local Branch From**
 
-      :::image type="content" source="media/create-branch/visual-studio-2019/git-experience/branches.png" border="true" alt-text="Screenshot of the 'New Branch' option in the Git menu in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/git-experience/branches-lrg.png":::
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu.png" border="true" alt-text="Screenshot of the 'New Local Branch From' menu option in the context menu of the main branch in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu-lrg.png":::
 
-    2. In the **Create a new branch** window, enter a descriptive branch name to let others know what work the branch contains. By default, Visual Studio creates your new branch from the current branch. The **Checkout branch** checkbox automatically switches you to the newly created branch. Select **Create**.
+1. Enter a descriptive branch name to let others know what work the branch contains. Select **Create Branch**.
 
-      :::image type="content" source="media/create-branch/visual-studio-2019/git-experience/new-local-branch.png" border="true" alt-text="Screenshot of the 'Create a new branch' window in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/git-experience/new-local-branch-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select the **Home** button and choose **Branches**.
-
-      :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot showing the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/branches-lrg.png":::
-
-    2. Right-click the default branch, often named `main`, and then choose **New Local Branch From**
-
-      :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu.png" border="true" alt-text="Screenshot of the 'New Local Branch From' menu option in the context menu of the main branch in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu-lrg.png":::
-
-    3. Enter a descriptive branch name to let others know what work the branch contains. Select **Create Branch**.
-
-      :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch.png" border="true" alt-text="Screenshot of the branch name text and 'Create Branch' button in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch.png" border="true" alt-text="Screenshot of the branch name text and 'Create Branch' button in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 

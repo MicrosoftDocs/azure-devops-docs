@@ -71,7 +71,7 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
 
-## Clone an **Azure Repos** Git repo
+## Clone an Azure Repos Git repo
 
 By signing in as a member of an Azure DevOps project, you can clone private repos that are accessible to you, and public repos. Visual Studio supports search, clone, and sync operations on repos that are accessible through authentication.
 
@@ -80,64 +80,39 @@ By signing in as a member of an Azure DevOps project, you can clone private repo
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window.
+[!INCLUDE [Clone an Azure Repos Git repo](includes/clone-azure-repos-git.md)]
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/clone-repo-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Clone a repository** window, select **Azure DevOps** under **Browse a repository** to open the **Connect to a Project** window.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-azure-devops-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' window in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/clone-azure-devops-repo-lrg.png":::
+[!INCLUDE [Clone an Azure Repos Git repo](includes/clone-azure-repos-git.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
+
+1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
+
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/manage-connections.png" border="true" alt-text="Screenshot of the 'Connect to a Project' link in Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/manage-connections-lrg.png":::
 
 1. In the **Connect to a Project** window, sign in to Azure DevOps and choose the remote repo you want to clone. You can use the search box to filter the list of remote repos. If you don't see the remote repo, select **Add Azure DevOps Server** to add the server that hosts the repo. Verify the local folder path where you want the local clone to be created, and then select **Clone**.
 
-   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison for cloning an **Azure Repos** Git repo.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window.
-
-       :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/clone-repo-lrg.png":::
-
-    2. In the **Clone a repository** window, select **Azure DevOps** under **Browse a repository** to open the **Connect to a Project** window.
-
-       :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-azure-devops-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/clone-azure-devops-repo-lrg.png":::
-
-    3. In the **Connect to a Project** window, sign in to Azure DevOps and choose the remote repo you want to clone. You can use the search box to filter the list of remote repos. If you don't see the remote repo, select **Add Azure DevOps Server** to add the server that hosts the repo. Verify the local folder path where you want the local clone to be created, and then select **Clone**.
-
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
-
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/manage-connections.png" border="true" alt-text="Screenshot of the 'Connect to a Project' link in Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/manage-connections-lrg.png":::
-
-    2. In the **Connect to a Project** window, sign in to Azure DevOps and choose the remote repo you want to clone. You can use the search box to filter the list of remote repos. If you don't see the remote repo, select **Add Azure DevOps Server** to add the server that hosts the repo. Verify the local folder path where you want the local clone to be created, and then select **Clone**.
-
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
-
-   :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
 
 After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
 
 :::image type="content" source="media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
 
+#### [Git Command Line](#tab/git-command-line)
+
+To clone an **Azure Repos** Git repo from the command line, see [Clone any Git repo](#clone-any-git-repo).
+
 ---
 
-## Clone a **GitHub** repo
+## Clone a GitHub repo
 
 By signing into **GitHub** or using SSH authentication, you can clone private repos that are accessible to you, and public repos. Visual Studio supports search, clone, and sync operations on repos that are accessible through authentication.
 
@@ -146,41 +121,15 @@ By signing into **GitHub** or using SSH authentication, you can clone private re
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window.
+[!INCLUDE [Clone a GitHub repo](includes/clone-github-repo.md)]
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/clone-repo-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Clone a repository** window, select **GitHub** under **Browse a repository** to open the **Open from GitHub** window.
+[!INCLUDE [Clone a GitHub repo](includes/clone-github-repo.md)]
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-github-repo.png" border="true" alt-text="Screenshot of the GitHub option in the 'Clone Repository' window in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/clone-github-repo-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. In the **Open from GitHub** window, sign in to **GitHub** and choose the remote repo you want to clone. You can use the search box to filter the list of remote repos. Verify the local folder path where you want the local clone to be created, and then choose **Clone**.
-
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/open-from-github.png" border="true" alt-text="Screenshot of the 'Open from GitHub' window in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/open-from-github-lrg.png":::
-
-After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
-
-:::image type="content" source="media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu of Visual Studio 2022." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provide a Git version control experience that supports search, clone, and sync operations on **GitHub** repos that are accessible through authentication. To clone a **GitHub** repo using **Team Explorer**, see [Clone any Git repo](#clone-any-git-repo). The following steps apply to the Git version control experience.
-
-1. From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window.
-
-    :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/clone-repo-lrg.png":::
-
-1. In the **Clone a repository** window, select **GitHub** under **Browse a repository** to open the **Open from GitHub** window.
-
-    :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-github-repo.png" border="true" alt-text="Screenshot of the GitHub option in the 'Clone Repository' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/clone-github-repo-lrg.png":::
-
-1. In the **Open from GitHub** window, sign in to **GitHub** and choose the remote repo you want to clone. You can use the search box to filter the list of remote repos. Verify the local folder path where you want the local clone to be created, and then choose **Clone**.
-
-    :::image type="content" source="media/clone/visual-studio-2019/git-experience/open-from-github.png" border="true" alt-text="Screenshot of the 'Open from GitHub' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/open-from-github-lrg.png":::
-
-After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
-
-:::image type="content" source="media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu of Visual Studio 2019." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
+To clone a **GitHub** repo using **Team Explorer**, see [Clone any Git repo](#clone-any-git-repo).
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -197,50 +146,21 @@ You can clone any Git repo that's accessible to you by using the clone URL of th
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window.
+[!INCLUDE [Clone any Git repo](includes/clone-any-git-repo.md)]
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/clone-repo-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Clone a repository** window, enter the clone URL of the remote Git repo that you want to clone, verify the local folder path where you want to create the local clone, and then choose **Clone**.
+[!INCLUDE [Clone any Git repo](includes/clone-any-git-repo.md)]
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/specify-repo.png" border="true" alt-text="Screenshot of the 'Clone a repository' window in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/specify-repo-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
+1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Clone** under **Local Git Repositories**.
 
-:::image type="content" source="media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option from the Git menu in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-clone.png" border="true" alt-text="Screenshot of the Clone link in the  Connect view of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-clone-lrg.png":::
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+1. Enter the clone URL of the remote Git repo that you want to clone, verify the local folder path where you want to create the local clone, and then choose **Clone**. To clone the remote Git repo _and_ any Git repos that are nested within it, leave **Recursively Clone Submodules** checked.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison for cloning any Git repo.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window.
-
-       :::image type="content" source="media/clone/visual-studio-2019/git-experience/clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' option in the Git menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/clone-repo-lrg.png":::
-
-    2. In the **Clone a repository** window, enter the clone URL of the remote Git repo that you want to clone, verify the local folder path where you want to create the local clone, and then choose **Clone**.
-
-       :::image type="content" source="media/clone/visual-studio-2019/git-experience/specify-repo.png" border="true" alt-text="Screenshot of the 'Clone a repository' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/specify-repo-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Clone** under **Local Git Repositories**.
-
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-clone.png" border="true" alt-text="Screenshot of the Clone link in the  Connect view of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-clone-lrg.png":::
-
-    2. Enter the clone URL of the remote Git repo that you want to clone, verify the local folder path where you want to create the local clone, and then choose **Clone**. To clone the remote Git repo _and_ any Git repos that are nested within it, leave **Recursively Clone Submodules** checked.
-
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/clone-remote-repo.png" border="true" alt-text="Screenshot of the Clone options in the 'Local Git Repositories' section of the 'Team Explorer' Connect view in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/clone-remote-repo-lrg.png":::
-
-   :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/clone-remote-repo.png" border="true" alt-text="Screenshot of the Clone options in the 'Local Git Repositories' section of the 'Team Explorer' Connect view in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/clone-remote-repo-lrg.png":::
 
 After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
 
@@ -277,50 +197,25 @@ git clone <clone URL> --branch <branch name> --single-branch
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. Choose the **File > Open > Project/Solution** from the menu bar, and select the solution file to open.
+[!INCLUDE [Open a Visual Studio solution from a cloned repo](includes/clone-open-solution-cloned-repo.md)]
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/open-solution.png" border="true" alt-text="Screenshot of the Open Solution option in the File menu in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/open-solution-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+[!INCLUDE [Open a Visual Studio solution from a cloned repo](includes/clone-open-solution-cloned-repo.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+1. Right-click on a repository in the **Connect** view of **Team Explorer** and choose **Open**.
+
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/open-cloned-repo.png" border="true" alt-text="Screenshot of cloned repos in the 'Local Git Repositories' section of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/open-cloned-repo-lrg.png":::
+
+1. In the **Home** view of **Team Explorer**, double-click your solution file under **Solutions**.
+
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/open-solution-from-cloned-repo.png" border="true" alt-text="Screenshot of the solution file in the Solutions section of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/open-solution-from-cloned-repo-lrg.png":::
 
 1. The Visual Studio solution that you selected is now open in **Solution Explorer**.
 
-   :::image type="content" source="media/clone/visual-studio-2019/git-experience/open-solution-explorer.png" border="true" alt-text="Screenshot of an open solution in 'Solution Explorer' in Visual Studio 2022." lightbox="media/clone/visual-studio-2019/git-experience/open-solution-explorer-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison for opening a Visual Studio solution from a cloned repo.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. Choose the **File > Open > Project/Solution** from the menu bar, and select the solution file to open.
-
-       :::image type="content" source="media/clone/visual-studio-2019/git-experience/open-solution.png" border="true" alt-text="Screenshot of the Open Solution option in the File menu in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/open-solution-lrg.png":::
-
-    2. The Visual Studio solution that you selected is now open in **Solution Explorer**.
-
-       :::image type="content" source="media/clone/visual-studio-2019/git-experience/open-solution-explorer.png" border="true" alt-text="Screenshot of an open solution in 'Solution Explorer' in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/git-experience/open-solution-explorer-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. Right-click on a repository in the **Connect** view of **Team Explorer** and choose **Open**.
-    
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/open-cloned-repo.png" border="true" alt-text="Screenshot of cloned repos in the 'Local Git Repositories' section of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/open-cloned-repo-lrg.png":::
-
-    2. In the **Home** view of **Team Explorer**, double-click your solution file under **Solutions**.
-    
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/open-solution-from-cloned-repo.png" border="true" alt-text="Screenshot of the solution file in the Solutions section of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/open-solution-from-cloned-repo-lrg.png":::
-
-    3. The Visual Studio solution that you selected is now open in **Solution Explorer**.
-        
-       :::image type="content" source="media/clone/visual-studio-2019/team-explorer/open-solution-explorer.png" border="true" alt-text="Screenshot of an open solution within 'Solution Explorer' in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/open-solution-explorer-lrg.png":::
-
-   :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/clone/visual-studio-2019/team-explorer/open-solution-explorer.png" border="true" alt-text="Screenshot of an open solution within 'Solution Explorer' in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/open-solution-explorer-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 

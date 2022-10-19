@@ -47,78 +47,37 @@ The GitHub web interface doesn't support cherry-picking, but [GitHub Desktop](ht
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. Choose **Git > Manage Branches** to open the **Git Repository** window.
+[!INCLUDE [GitHub](includes/cherry-pick-github.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2022." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Git Repository** window, right-click the target branch and choose **Checkout**.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/cherry-pick/visual-studio-2019/git-experience/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window in Visual Studio 2022." lightbox="media/cherry-pick/visual-studio-2019/git-experience/branch-checkout-lrg.png":::
+[!INCLUDE [GitHub](includes/cherry-pick-github.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
+
+1. In **Team Explorer**, select the **Home** button and choose **Branches**.
+
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/branches-lrg.png":::
+
+1. In the **Branches** view, right-click the target branch and choose **Checkout**.
+
+   :::image type="content" source="media/cherry-pick/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
 
 1. In the **Branches** view, right-click the source branch and choose **View History** to open a commit **History** tab.
 
-   :::image type="content" source="media/cherry-pick/visual-studio-2019/git-experience/view-branch-history.png" border="true" alt-text="Screenshot of the View History option in the Branches view of the Git Repository window in Visual Studio 2022." lightbox="media/cherry-pick/visual-studio-2019/git-experience/view-branch-history-lrg.png":::
+   :::image type="content" source="media/cherry-pick/visual-studio-2019/team-explorer/view-branch-history.png" border="true" alt-text="Screenshot of the View History option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/team-explorer/view-branch-history-lrg.png":::
 
 1. In the **History** tab, right-click the commit you want to cherry-pick and choose **Cherry-Pick**. Visual Studio doesn't support cherry-picking more than one commit at a time, so you'll need to repeat this step for each commit that you want to cherry-pick.
 
-   :::image type="content" source="media/cherry-pick/visual-studio-2019/git-experience/cherry-pick-commit.png" border="true" alt-text="Screenshot of the Cherry-Pick option within the commit context menu in the Git Repository window in Visual Studio 2022." lightbox="media/cherry-pick/visual-studio-2019/git-experience/cherry-pick-commit-lrg.png":::
+   :::image type="content" source="media/cherry-pick/visual-studio-2019/team-explorer/cherry-pick-commit.png" border="true" alt-text="Screenshot of the Cherry-Pick option within the commit context menu in the History tab in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/team-explorer/cherry-pick-commit-lrg.png":::
 
    Visual Studio creates a new target branch commit that contains the changes from the cherry-picked commit. If the cherry-pick operation doesn't complete successfully, Visual Studio will notify you.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to cherry-pick to copy changes from a source branch to a target branch.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. Choose **Git > Manage Branches** to open the **Git Repository** window.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
-
-    2. In the **Git Repository** window, right-click the target branch and choose **Checkout**.
-
-       :::image type="content" source="media/cherry-pick/visual-studio-2019/git-experience/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/git-experience/branch-checkout-lrg.png":::
-
-    3. In the **Branches** view, right-click the source branch and choose **View History** to open a commit **History** tab.
-
-       :::image type="content" source="media/cherry-pick/visual-studio-2019/git-experience/view-branch-history.png" border="true" alt-text="Screenshot of the View History option in the Branches view of the Git Repository window in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/git-experience/view-branch-history-lrg.png":::
-
-    4. In the **History** tab, right-click the commit you want to cherry-pick and choose **Cherry-Pick**. Visual Studio doesn't support cherry-picking more than one commit at a time, so you'll need to repeat this step for each commit that you want to cherry-pick.
-
-       :::image type="content" source="media/cherry-pick/visual-studio-2019/git-experience/cherry-pick-commit.png" border="true" alt-text="Screenshot of the Cherry-Pick option within the commit context menu in the Git Repository window in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/git-experience/cherry-pick-commit-lrg.png":::
-
-       Visual Studio creates a new target branch commit that contains the changes from the cherry-picked commit. If the cherry-pick operation doesn't complete successfully, Visual Studio will notify you.
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select the **Home** button and choose **Branches**.
-
-       :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/branches-lrg.png":::
-
-    2. In the **Branches** view, right-click the target branch and choose **Checkout**.
-
-       :::image type="content" source="media/cherry-pick/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
-
-    3. In the **Branches** view, right-click the source branch and choose **View History** to open a commit **History** tab.
-
-       :::image type="content" source="media/cherry-pick/visual-studio-2019/team-explorer/view-branch-history.png" border="true" alt-text="Screenshot of the View History option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/team-explorer/view-branch-history-lrg.png":::
-
-    4. In the **History** tab, right-click the commit you want to cherry-pick and choose **Cherry-Pick**. Visual Studio doesn't support cherry-picking more than one commit at a time, so you'll need to repeat this step for each commit that you want to cherry-pick.
-
-       :::image type="content" source="media/cherry-pick/visual-studio-2019/team-explorer/cherry-pick-commit.png" border="true" alt-text="Screenshot of the Cherry-Pick option within the commit context menu in the History tab in Visual Studio 2019." lightbox="media/cherry-pick/visual-studio-2019/team-explorer/cherry-pick-commit-lrg.png":::
-
-       Visual Studio creates a new target branch commit that contains the changes from the cherry-picked commit. If the cherry-pick operation doesn't complete successfully, Visual Studio will notify you.
-
-  :::column-end:::
-:::row-end:::
 
 #### [Git Command Line](#tab/git-command-line)
 
