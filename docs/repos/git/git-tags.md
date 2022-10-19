@@ -323,7 +323,7 @@ Right-click the tag to delete and choose **Delete Locally**
 
    ![New branch from tag, Visual Studio.](media/git-tags/branch-from-tag-vs.png)
 
-2. Specify a branch name, verify the desired tag, and choose **Create Branch**. To checkout the new branch after it is created, choose **Checkout branch**.
+2. Specify a branch name, verify the desired tag, and choose **Create Branch**. To check out the new branch after it is created, choose **Checkout branch**.
 
    ![Choose Create Branch, Visual Studio.](media/git-tags/branch-from-tag-create-vs.png)
 
