@@ -100,7 +100,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 1. Make a note of the ID of the commit that you want to cherry-pick.
 
-1. Checkout the target branch, if it isn't already checked out.
+1. Check out the target branch, if it isn't already checked out.
 
     ```console
     git checkout <target branch> 
