@@ -141,7 +141,7 @@ Visual Studio 2022 doesn't support creating a new local repo by using **Team Exp
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Visual Studio 2022 doesn't support creating a new local repo by using **Team Explorer**. Use **Git Command Line**.
+Use the procedure in the **Visual Studio 2019 - Team Explorer** or use **Git Command Line**.
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
@@ -319,9 +319,9 @@ You can also share your code with others by connecting your local Git repo to a 
 
 1. In the **Publish to GitHub** section of the **Synchronization** view in **Team Explorer**, select your **GitHub** account, owner name, and a new repo name, and then choose **Publish**.
 
-:::image type="content" source="media/creatingrepo/visual-studio-2019/team-explorer/publish-github-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the GitHub account, name, and repo name options and the 'Publish' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2019/team-explorer/publish-github-repo-details-team-explorer-lrg.png":::
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/team-explorer/publish-github-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the GitHub account, name, and repo name options and the 'Publish' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2019/team-explorer/publish-github-repo-details-team-explorer-lrg.png":::
 
-This step creates a new repo in your **GitHub** account with content from your local repo.
+   This step creates a new repo in your **GitHub** account with content from your local repo.
 
 #### [Git Command Line](#tab/command-line)
 

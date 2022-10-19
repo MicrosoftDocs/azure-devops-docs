@@ -145,8 +145,6 @@ For more information about these commands, see the [tutorial command reference](
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
-
 1. In the **Changes** view of **Team Explorer**, enter a message that describes your staged changes and then select **Commit Staged**.
 
    :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-staged.png" border="true" alt-text="Screenshot of commit message text and 'Commit Staged' button in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-all-lrg.png":::
