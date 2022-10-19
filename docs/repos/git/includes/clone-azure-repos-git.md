@@ -21,4 +21,4 @@ ms.subservice: azure-devops-repos-git
 
 After you've cloned a remote Git repo, Visual Studio detects the local clone and adds it to the list of **Local Repositories** in the **Git** menu.
 
-:::image type="content" source="../media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu in Visual Studio." lightbox="media/clone/visual-studio-2019/common/local-repositories-lrg.png":::
+:::image type="content" source="../media/clone/visual-studio-2019/common/local-repositories.png" border="true" alt-text="Screenshot of the 'Local Repositories' option in the Git menu in Visual Studio." lightbox="../media/clone/visual-studio-2019/common/local-repositories-lrg.png":::

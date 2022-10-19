@@ -239,7 +239,7 @@ You can share your code with others by connecting your local Git repo to an **Az
 
 1. Choose your **Azure DevOps** account, organization, and a repo name, and then select **Publish Repository**.
 
-   :::image type="content" source="media/creatingrepo/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the Azure DevOps account, organization, and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
+   :::image type="content" source="media/creatingrepo/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the Azure DevOps organization and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
 
    This step creates a new project in your **Azure DevOps** account with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.
 
