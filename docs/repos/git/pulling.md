@@ -156,8 +156,6 @@ For more information on merge options and strategies, see the [Git reference man
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
-
 1. In **Team Explorer**, select **Home** and choose **Branches**.
 
    :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
@@ -215,7 +213,6 @@ If you're the only person working on your feature or bugfix branch, consider usi
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
 1. In **Team Explorer**, select **Home** and choose **Branches**.
 
@@ -281,8 +278,6 @@ Unlike Git fetch, Git pull will update your current local branch immediately aft
 [!INCLUDE [Download changes and update branches with pull](includes/pulling-update-branches.md)]
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
 1. In **Team Explorer**, select **Home** and choose **Sync** to open the **Synchronization** view.
 

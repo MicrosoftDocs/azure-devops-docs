@@ -13,7 +13,7 @@ The **Credential helper** setting corresponds to the `git config credential.help
 
 1. Set **Credential helper** to the desired value, and select **OK** to save.
 
-:::image type="content" source="../media/git-config/visual-studio-2019/git-experience/credential-helper-setting.png" alt-text="Screenshot of the credential helper setting in the Options dialog box in Visual Studio." lightbox="../media/git-config/visual-studio-2019/git-experience/credential-helper-setting-lrg.png":::
+   :::image type="content" source="../media/git-config/visual-studio-2019/git-experience/credential-helper-setting.png" alt-text="Screenshot of the credential helper setting in the Options dialog box in Visual Studio." lightbox="../media/git-config/visual-studio-2019/git-experience/credential-helper-setting-lrg.png":::
 
 Valid values are:
 
