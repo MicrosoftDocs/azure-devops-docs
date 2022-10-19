@@ -56,7 +56,7 @@ When you perform branch operations, branches have important advantages over fold
 Although you can still branch and merge among folders, the best practice for your team is to branch and merge only among branches. The following procedure explains how to convert a folder to a branch.
 
 > [!IMPORTANT]
-> Make sure the folder you want to convert exists on the server. If the pending addition icon ![TFSC Pending Addition Status Icon](media/branch-folders-files/plus.png) appears next to the folder in **Source Control Explorer**, right-click the folder and select **Check In Pending Changes**.
+> Make sure the folder you want to convert exists on the server. If the pending addition icon ![TFSC Pending Addition Status Icon.](media/branch-folders-files/plus.png) appears next to the folder in **Source Control Explorer**, right-click the folder and select **Check In Pending Changes**.
 
 1. In **Source Control Explorer**, right-click the folder you want to convert and select **Branching and Merging** > **Convert to Branch**.
 
