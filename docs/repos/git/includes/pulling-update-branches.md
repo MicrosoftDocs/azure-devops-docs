@@ -11,7 +11,7 @@
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window.png" border="true" alt-text="Screenshot of the pull confirmation message in the Git Changes window in Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window-lrg.png":::
 
-   If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+   If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](../merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Git Changes window in Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/branch-pull-conflict-lrg.png":::
 
