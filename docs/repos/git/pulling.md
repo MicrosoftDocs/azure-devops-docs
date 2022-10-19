@@ -43,73 +43,39 @@ Git fetch downloads remote branch commits and referenced file objects that don't
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. In the **Git Changes** window, choose **Fetch**. Then select **outgoing/incoming** to open the **Git Repository** window.
+[!INCLUDE [Download changes with fetch](includes/pulling-download-changes-fetch.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window.png" border="true" alt-text="Screenshot of the Fetch buttons and Incoming link in the Git Changes window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   You can also choose **Fetch** from the Git menu.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-menu.png" border="true" alt-text="Screenshot of the Fetch option in the Git menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-menu-lrg.png":::
+[!INCLUDE [Download changes with fetch](includes/pulling-download-changes-fetch.md)]
 
-1. In the **Git Repository** window, fetched commits appear in the **Incoming** section. Select a fetched commit to see the list of changed files in that commit. Select a changed file to see a diff view of changed content.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-repository-window.png" border="true" alt-text="Screenshot of the Git Repository menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-repository-window-lrg.png":::
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-> [!TIP]
-> **Fetch** won't delete remote-tracking branches in your local repo cache that no longer have a remote counterpart. To configure Visual Studio to [prune](https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt---prune) stale remote-tracking branches during a **Fetch**:
-> - Select **Tools** > **Options** > **Source Control** > **Git Global Settings**.
-> - Set the **Prune remote branches during fetch** option to `True`.
+1. In **Team Explorer**, select **Home** and then choose **Sync** to open the **Synchronization** view.
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option within Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/sync-lrg.png":::
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git fetch.
+1. In the **Synchronization** view, choose **Fetch**. Both **Fetch** buttons do the same thing. When downloaded, fetched commits will appear in the **Incoming Commits** section.
 
-:::row:::
-  :::column span="":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetch-synchronization-view.png" border="true" alt-text="Screenshot of the Fetch button in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetch-synchronization-view-lrg.png":::
 
-    **Visual Studio Git** <br><br>
+1. In the **Incoming Commits** section, right-click a commit and then choose **View Commit Details** to see the changed files.
 
-    1. In the **Git Changes** window, choose **Fetch**. Then select **outgoing/incoming** to open the **Git Repository** window.
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetched-synchronization-view.png" border="true" alt-text="Screenshot of the context menu for incoming commits in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetched-synchronization-view-lrg.png":::
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window.png" border="true" alt-text="Screenshot of the Fetch buttons and Incoming link in the Git Changes window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window-lrg.png":::
+1. In the **Commit Details** window, the changed files are listed in the **Changes** section.
 
-       You can also choose **Fetch** from the Git menu.
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetch-commit-details-window.png" border="true" alt-text="Screenshot of the Commit Details window within Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetch-commit-details-window-lrg.png":::
 
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-menu.png" border="true" alt-text="Screenshot of the Fetch option in the Git menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-menu-lrg.png":::
+   Double-click a changed file to open a diff view of changed content.
 
-    2. In the **Git Repository** window, fetched commits appear in the **Incoming** section. Select a fetched commit to see the list of changed files in that commit. Select a changed file to see a diff view of changed content.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-repository-window.png" border="true" alt-text="Screenshot of the Git Repository menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-repository-window-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and then choose **Sync** to open the **Synchronization** view.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option within Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/sync-lrg.png":::
-
-    2. In the **Synchronization** view, choose **Fetch**. Both **Fetch** buttons do the same thing. When downloaded, fetched commits will appear in the **Incoming Commits** section.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetch-synchronization-view.png" border="true" alt-text="Screenshot of the Fetch button in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetch-synchronization-view-lrg.png":::
-
-    3. In the **Incoming Commits** section, right-click a commit and then choose **View Commit Details** to see the changed files.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetched-synchronization-view.png" border="true" alt-text="Screenshot of the context menu for incoming commits in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetched-synchronization-view-lrg.png":::
-
-    4. In the **Commit Details** window, the changed files are listed in the **Changes** section.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetch-commit-details-window.png" border="true" alt-text="Screenshot of the Commit Details window within Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetch-commit-details-window-lrg.png":::
-
-       Double-click a changed file to open a diff view of changed content.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/file-diff.png" border="true" alt-text="Screenshot of a file diff window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/file-diff-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/file-diff.png" border="true" alt-text="Screenshot of a file diff window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/file-diff-lrg.png":::
 
 > [!TIP]
 > **Fetch** won't delete remote-tracking branches in your local repo cache that no longer have a remote counterpart. To configure Visual Studio to [prune](https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt---prune) stale remote-tracking branches during a **Fetch**:
@@ -182,86 +148,39 @@ For more information on merge options and strategies, see the [Git reference man
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. Choose **Git > Manage Branches** from the menu bar to open the **Git Repository** window.
+[!INCLUDE [Merge](includes/pulling-merge.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+[!INCLUDE [Merge](includes/pulling-merge.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. Right-click the source branch, and select **Merge \<source-branch\> into \<target-branch\>**.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-git-repository-window.png" border="true" alt-text="Screenshot of the Merge option in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-git-repository-window-lrg.png":::
+1. In **Team Explorer**, select **Home** and choose **Branches**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
+
+1. In the **Branches** view, right-click the target branch and select **Checkout**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
+
+1. Right-click the source branch, and select **Merge From**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge.png" border="true" alt-text="Screenshot of the Merge From option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-lrg.png":::
+
+1. Verify the merge options and then click **Merge**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-details.png" border="true" alt-text="Screenshot of the merge details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-details-lrg.png":::
 
 1. Visual Studio will display a confirmation message after a successful merge.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation-lrg.png":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation-lrg.png":::
 
-   If the merge is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+   If there are conflicts during the merge, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git merge.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. Choose **Git > Manage Branches** from the menu bar to open the **Git Repository** window.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
-
-    2. In the **Git Repository** window, right-click the target branch and select **Checkout**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
-
-    3. Right-click the source branch, and select **Merge \<source-branch\> into \<target-branch\>**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-git-repository-window.png" border="true" alt-text="Screenshot of the Merge option in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-git-repository-window-lrg.png":::
-
-    4. Visual Studio will display a confirmation message after a successful merge.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation-lrg.png":::
-
-       If the merge is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict-lrg.png":::
-    
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and choose **Branches**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
-
-    2. In the **Branches** view, right-click the target branch and select **Checkout**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
-
-    3. Right-click the source branch, and select **Merge From**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge.png" border="true" alt-text="Screenshot of the Merge From option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-lrg.png":::
-
-    4. Verify the merge options and then click **Merge**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-details.png" border="true" alt-text="Screenshot of the merge details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-details-lrg.png":::
-
-    5. Visual Studio will display a confirmation message after a successful merge.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation-lrg.png":::
-
-       If there are conflicts during the merge, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -288,86 +207,39 @@ If you're the only person working on your feature or bugfix branch, consider usi
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. Choose **Git > Manage Branches** to open the **Git Repository** window.
+[!INCLUDE [Rebase](includes/pulling-rebase.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+[!INCLUDE [Rebase](includes/pulling-rebase.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. Right-click the source branch, and select **Rebase \<target-branch\> onto \<source-branch\>**.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window.png" border="true" alt-text="Screenshot of the Rebase option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window-lrg.png":::
+1. In **Team Explorer**, select **Home** and choose **Branches**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
+
+1. In the **Branches** view, right-click the target branch and select **Checkout**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
+
+1. Right-click the source branch, and select **Rebase Onto**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase.png" border="true" alt-text="Screenshot of the Rebase Onto option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-lrg.png":::
+
+1. Verify the rebase options and then click **Rebase**.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details.png" border="true" alt-text="Screenshot of the rebase details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details-lrg.png":::
 
 1. Visual Studio will display a confirmation message after a successful rebase.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
 
-   If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+   If there are conflicts during the rebase, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git rebase.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. Choose **Git > Manage Branches** to open the **Git Repository** window.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
-
-    2. In the **Git Repository** window, right-click the target branch and select **Checkout**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
-
-    3. Right-click the source branch, and select **Rebase \<target-branch\> onto \<source-branch\>**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window.png" border="true" alt-text="Screenshot of the Rebase option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window-lrg.png":::
-
-    4. Visual Studio will display a confirmation message after a successful rebase.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
-
-       If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and choose **Branches**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
-
-    2. In the **Branches** view, right-click the target branch and select **Checkout**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
-
-    3. Right-click the source branch, and select **Rebase Onto**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase.png" border="true" alt-text="Screenshot of the Rebase Onto option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-lrg.png":::
-
-    4. Verify the rebase options and then click **Rebase**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details.png" border="true" alt-text="Screenshot of the rebase details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details-lrg.png":::
-
-    5. Visual Studio will display a confirmation message after a successful rebase.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
-
-       If there are conflicts during the rebase, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -402,73 +274,31 @@ Unlike Git fetch, Git pull will update your current local branch immediately aft
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. In the **Git Changes** window, choose **Pull**.
+[!INCLUDE [Download changes and update branches with pull](includes/pulling-update-branches.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-git-changes-window.png" border="true" alt-text="Screenshot of the Pull button in the Git Changes window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-git-changes-window-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   You can also choose **Pull** from the Git menu.
+[!INCLUDE [Download changes and update branches with pull](includes/pulling-update-branches.md)]
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-git-menu.png" border="true" alt-text="Screenshot of the Pull option in the Git menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-git-menu-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. A confirmation message displays when the pull operation completes.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window.png" border="true" alt-text="Screenshot of the pull confirmation message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window-lrg.png":::
+1. In **Team Explorer**, select **Home** and choose **Sync** to open the **Synchronization** view.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/sync-lrg.png":::
+
+1. In the **Synchronization** view, choose **Pull**. Both **Pull** buttons do the same thing.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-synchronization-view.png" border="true" alt-text="Screenshot of the Pull options in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-synchronization-view-lrg.png":::
+
+1. Visual Studio will display a confirmation message when the pull operation completes.
+
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view.png" border="true" alt-text="Screenshot of the pull confirmation message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view-lrg.png":::
 
    If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
-   :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict-lrg.png":::
-
-> [!NOTE]
-> In Visual Studio, **Sync** performs a **Pull** then a **Push** to synchronize a local and remote branch. For more information on **Sync**, see [Use git fetch, pull, push and sync for version control in Visual Studio](/visualstudio/version-control/git-fetch-pull-sync).
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git pull.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git** <br><br>
-
-    1. In the **Git Changes** window, choose **Pull**.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-git-changes-window.png" border="true" alt-text="Screenshot of the Pull button in the Git Changes window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-git-changes-window-lrg.png":::
-
-       You can also choose **Pull** from the Git menu.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-git-menu.png" border="true" alt-text="Screenshot of the Pull option in the Git menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-git-menu-lrg.png":::
-
-    2. A confirmation message displays when the pull operation completes.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window.png" border="true" alt-text="Screenshot of the pull confirmation message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window-lrg.png":::
-
-       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    1. In **Team Explorer**, select **Home** and choose **Sync** to open the **Synchronization** view.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/sync-lrg.png":::
-
-    2. In the **Synchronization** view, choose **Pull**. Both **Pull** buttons do the same thing.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-synchronization-view.png" border="true" alt-text="Screenshot of the Pull options in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-synchronization-view-lrg.png":::
-
-    3.  Visual Studio will display a confirmation message when the pull operation completes.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view.png" border="true" alt-text="Screenshot of the pull confirmation message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view-lrg.png":::
-
-       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
-
-       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict-lrg.png":::
 
 > [!NOTE]
 > In Visual Studio, **Sync** performs a **Pull** then a **Push** to synchronize a local and remote branch. For more information on **Sync**, see [Use git fetch, pull, push and sync for version control in Visual Studio](/visualstudio/version-control/git-fetch-pull-sync).

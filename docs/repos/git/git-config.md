@@ -46,56 +46,27 @@ In this article you learn how to:
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-1. To configure Git settings in Visual Studio, choose **Git > Settings** from the menu bar to open the **Options** view.
+[!INCLUDE [Explore Git settings](includes/git-config-explore-settings.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-menu-settings.png" border="true" alt-text="Screenshot of the Settings option in the menu bar of Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/git-menu-settings-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. In the **Options** view, choose **Git Global Settings** to view settings that apply to all your repos.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-global-settings.png" border="true" alt-text="Screenshot of Git Global Settings in the Options dialog of Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/git-global-settings-lrg.png":::
+[!INCLUDE [Explore Git settings](includes/git-config-explore-settings.md)]
 
-   Or, in the **Options** view, choose **Git Repository Settings > General** to view settings that only apply to the current Visual Studio project repo.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-repo-settings.png" border="true" alt-text="Screenshot of Git Repository Settings in the Options dialog of Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/git-repo-settings-lrg.png":::
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer to open the **Settings** view.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to explore Git settings.
+   :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/git-menu-settings.png" border="true" alt-text="Screenshot of the Settings option in the Team Explorer Home view." lightbox="media/git-config/visual-studio-2019/team-explorer/git-menu-settings-lrg.png":::
 
-:::row:::
-  :::column span="":::
+1. In the **Settings** view, choose **Global Settings** to view settings that apply to all your repos, or choose **Repository Settings** to view the settings that apply to the current Visual Studio project repo.
 
-    **Visual Studio Git**
-
-    1. To configure Git settings in Visual Studio, choose **Git > Settings** from the menu bar to open the **Options** view.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-menu-settings.png" border="true" alt-text="Screenshot of the Settings option in the menu bar of Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/git-menu-settings-lrg.png":::
-
-    2. In the **Options** view, choose **Git Global Settings** to view settings that apply to all your repos.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-global-settings.png" border="true" alt-text="Screenshot of Git Global Settings in the Options dialog of Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/git-global-settings-lrg.png":::
-
-       Or, in the **Options** view, choose **Git Repository Settings > General** to view settings that only apply to the current Visual Studio project repo.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-repo-settings.png" border="true" alt-text="Screenshot of Git Repository Settings in the Options dialog of Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/git-repo-settings-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer to open the **Settings** view.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/git-menu-settings.png" border="true" alt-text="Screenshot of the Settings option in the Team Explorer Home view." lightbox="media/git-config/visual-studio-2019/team-explorer/git-menu-settings-lrg.png":::
-
-    2. In the **Settings** view, choose **Global Settings** to view settings that apply to all your repos, or choose **Repository Settings** to view the settings that apply to the current Visual Studio project repo.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/git-settings.png" border="true" alt-text="Screenshot of Global Settings link and the Repository Settings link in the Settings view of Team Explorer." lightbox="media/git-config/visual-studio-2019/team-explorer/git-settings-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+   :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/git-settings.png" border="true" alt-text="Screenshot of Global Settings link and the Repository Settings link in the Settings view of Team Explorer." lightbox="media/git-config/visual-studio-2019/team-explorer/git-settings-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -148,40 +119,19 @@ Name and email settings are available at the global or repo scope.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the name and email settings for the current user.
+[!INCLUDE [Name and email](includes/git-config-name-email.md)]
 
-:::image type="content" source="media/git-config/visual-studio-2019/git-experience/name-email-setting.png" border="true" alt-text="Screenshot of the name and email settings in Git Global Settings in the Options dialog of Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/name-email-setting-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Or, choose **Git Repository Settings > General** to edit the name and email settings for the current Visual Studio project repo.
+[!INCLUDE [Name and email](includes/git-config-name-email.md)]
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the name and email settings.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the name and email settings for the current user.
 
-:::row:::
-  :::column span="":::
+   :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/name-email-setting.png" border="true" alt-text="Screenshot of the name and email settings in Global Settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/name-email-setting-lrg.png":::
 
-    **Visual Studio Git**
-
-    From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the name and email settings for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/git-experience/name-email-setting.png" border="true" alt-text="Screenshot of the name and email settings in Git Global Settings in the Options dialog of Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/name-email-setting-lrg.png":::
-
-    Or, choose **Git Repository Settings > General** to edit the name and email settings for the current Visual Studio project repo.
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the name and email settings for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/name-email-setting.png" border="true" alt-text="Screenshot of the name and email settings in Global Settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/name-email-setting-lrg.png":::
-
-    Or, choose **Repository Settings** to edit the name and email settings for the current Visual Studio project repo.
-
-  :::column-end:::
-:::row-end:::
+   Or, choose **Repository Settings** to edit the name and email settings for the current Visual Studio project repo.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -207,48 +157,21 @@ You can tell Git to prune remote branches during every fetch to remove stale rem
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Prune remote branches during fetch** option for the current user.
+[!INCLUDE [Prune remote branches during fetch](includes/git-config-prune-remote-branches.md)]
 
-:::image type="content" source="media/git-config/visual-studio-2019/git-experience/prune-setting.png" alt-text="Screenshot of the Prune remote branches during fetch setting in Git Global Settings in the Options dialog of Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/prune-setting-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Or, choose **Git Repository Settings > General** to edit the **Prune remote branches during fetch** setting for the current Visual Studio project repo.
+[!INCLUDE [Prune remote branches during fetch](includes/git-config-prune-remote-branches.md)]
 
-Valid values are:
-
-- `True` (recommended)
-- `False`
-- `Unset` (default)
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Prune remote branches during fetch** setting corresponds to the `git config fetch.prune` command. You can specify this setting at the global or repo scope. To keep remote tracking branch lists clean and up to date for all your repos, we recommend that you enable this option at the global level.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the prune setting.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the **Prune remote branches during fetch** option for the current user.
 
-:::row:::
-  :::column span="":::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/prune-setting.png" border="true" alt-text="Screenshot of the **Prune remote branches during fetch** setting in Global Settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/prune-setting-lrg.png":::
 
-    **Visual Studio Git**
-
-    From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Prune remote branches during fetch** option for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/git-experience/prune-setting.png" alt-text="Screenshot of the Prune remote branches during fetch setting in Git Global Settings in the Options dialog of Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/prune-setting-lrg.png":::
-
-    Or, choose **Git Repository Settings > General** to edit the **Prune remote branches during fetch** setting for the current Visual Studio project repo.
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the **Prune remote branches during fetch** option for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/prune-setting.png" border="true" alt-text="Screenshot of the **Prune remote branches during fetch** setting in Global Settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/prune-setting-lrg.png":::
-
-    Or, choose **Repository Settings** to edit the **Prune remote branches during fetch** setting for the current Visual Studio project repo.
-
-  :::column-end:::
-:::row-end:::
+Or, choose **Repository Settings** to edit the **Prune remote branches during fetch** setting for the current Visual Studio project repo.
 
 Valid values are:
 
@@ -277,51 +200,21 @@ You can choose to [rebase](rebase.md) your local branch when pulling to replay t
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Rebase local branch when pulling** setting corresponds to the `git config pull.rebase` command. You can specify this setting at the global or repo scope.
+[!INCLUDE [Rebase local branch when pulling](includes/git-config-rebase-local-branch.md)]
 
-From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Rebase local branch when pulling** option for the current user.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-:::image type="content" source="media/git-config/visual-studio-2019/git-experience/rebase-setting.png" alt-text="Screenshot of the rebase setting in Git Global Settings in the Options dialog of Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/rebase-setting-lrg.png":::
+[!INCLUDE [Rebase local branch when pulling](includes/git-config-rebase-local-branch.md)]
 
-Or, choose **Git Repository Settings > General** to edit the **Rebase local branch when pulling** option for the current Visual Studio project repo.
-
-Valid values are:
-
-- `True`: rebase the current branch on top of the remote branch after fetch.
-- `False`: merge the remote branch into the current branch.
-- `Merges`: rebase without flattening locally created merge commits.
-- `Unset` (default): unless specified otherwise in a Git configuration file, merge the remote branch into the current branch.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Rebase local branch when pulling** setting corresponds to the `git config pull.rebase` command. You can specify this setting at the global or repo scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the rebase setting.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the **Rebase local branch when pulling** option for the current user.
 
-:::row:::
-  :::column span="":::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/rebase-setting.png" border="true" alt-text="Screenshot of the rebase setting in Global Settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/rebase-setting-lrg.png":::
 
-    **Visual Studio Git**
-
-    From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Rebase local branch when pulling** option for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/git-experience/rebase-setting.png" alt-text="Screenshot of the rebase setting in Git Global Settings in the Options dialog of Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/rebase-setting-lrg.png":::
-
-    Or, choose **Git Repository Settings > General** to edit the **Rebase local branch when pulling** option for the current Visual Studio project repo.
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the **Rebase local branch when pulling** option for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/rebase-setting.png" border="true" alt-text="Screenshot of the rebase setting in Global Settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/rebase-setting-lrg.png":::
-
-    Or, choose **Repository Settings** to edit the **Rebase local branch when pulling** option for the current Visual Studio project repo.
-
-  :::column-end:::
-:::row-end:::
+Or, choose **Repository Settings** to edit the **Rebase local branch when pulling** option for the current Visual Studio project repo.
 
 Valid values are:
 
@@ -353,44 +246,19 @@ You can specify the cryptographic network provider as the TLS/SSL backend that G
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Cryptographic network provider** setting corresponds to the `git config http.sslBackend` command. This setting is only available at the global scope.
+[!INCLUDE [Cryptographic network provider](includes/git-config-cryptographic-provider.md)]
 
-From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Cryptographic network provider** option for the current user.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-:::image type="content" source="media/git-config/visual-studio-2019/git-experience/network-provider-setting.png" alt-text="Screenshot of the Cryptographic network provider setting with OpenSSL selected in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/network-provider-setting-lrg.png":::
+[!INCLUDE [Cryptographic network provider](includes/git-config-cryptographic-provider.md)]
 
-Valid values are:
-
-- `OpenSSL`: use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
-- `Secure Channel`: use [Secure Channel](/windows/win32/secauthn/secure-channel) for TLS and SSL protocols. Secure Channel is the native Windows solution that contains a set of security protocols that provide identity authentication and secure, private communication through encryption.
-- `Unset` (default): if this setting is unset, the Cryptographic network provider defaults to OpenSSL.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Cryptographic network provider** setting corresponds to the `git config http.sslBackend` command. This setting is only available at the global scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the cryptographic network provider setting.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the **Cryptographic network provider** option for the current user.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Cryptographic network provider** option for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/git-experience/network-provider-setting.png" alt-text="Screenshot of the Cryptographic network provider setting with OpenSSL selected in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/network-provider-setting-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the **Cryptographic network provider** option for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/network-provider-setting.png" alt-text="Screenshot of the Cryptographic network provider setting with OpenSSL selected in Team Explorer in Visual Studio 2017." lightbox="media/git-config/visual-studio-2019/team-explorer/network-provider-setting-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/network-provider-setting.png" alt-text="Screenshot of the Cryptographic network provider setting with OpenSSL selected in Team Explorer in Visual Studio 2017." lightbox="media/git-config/visual-studio-2019/team-explorer/network-provider-setting-lrg.png":::
 
 Valid values are:
 
@@ -419,35 +287,15 @@ When Visual Studio performs a remote Git operation, the remote endpoint might re
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Credential helper** setting corresponds to the `git config credential.helper` command. This setting is only available at the global scope.
+[!INCLUDE [Credential helper](includes/git-config-credential-helper.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Set **Credential helper** to the desired value, and select **OK** to save.
+[!INCLUDE [Credential helper](includes/git-config-credential-helper.md)]
 
-:::image type="content" source="media/git-config/visual-studio-2019/git-experience/credential-helper-setting.png" alt-text="Screenshot of the credential helper setting in the Options dialog box in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/credential-helper-setting-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Valid values are:
-
-- `GCM for Windows`: use [Git Credential Manager for Windows](https://github.com/microsoft/Git-Credential-Manager-for-Windows) as the helper.
-- `GCM Core`: use [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) as the helper.
-- `Unset` (default): if this setting is unset, the credential helper set in the system config is used. As of Git for Windows 2.29, the default credential helper is `GCM Core`.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-The **Credential helper** setting corresponds to the `git config credential.helper` command. This setting is only available at the global scope.
-
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
-
-1. Set **Credential helper** to the desired value, and select **OK** to save.
-
-:::image type="content" source="media/git-config/visual-studio-2019/git-experience/credential-helper-setting.png" alt-text="Screenshot of the credential helper setting in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/credential-helper-setting-lrg.png":::
-
-Valid values are:
-
-- `GCM for Windows`: use [Git Credential Manager for Windows](https://github.com/microsoft/Git-Credential-Manager-for-Windows) as the helper.
-- `GCM Core`: use [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) as the helper.
-- `Unset` (default): if this setting is unset, the credential helper set in the system config is used. As of Git for Windows 2.29, the default credential helper is `GCM Core`.
+Use the **Visual Studio 2019 - Git menu** procedure.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -472,55 +320,21 @@ You can specify which tools Git will use to display diffs or merge conflicts.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The diff and merge tool settings correspond to the `git config diff.tool` and `git config merge.tool` commands. You can set Visual Studio as the merge or diff tool, or configure other diff and merge tools from the [Git command line](git-config.md?tabs=git-command-line). You can specify diff and merge tool settings at the global or repository scope.
+[!INCLUDE [Diff and merge tools](includes/git-config-diff-merge-tools.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the diff and merge tool settings.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Set the diff and merge tool settings to the desired value, and select **OK** to save.
+[!INCLUDE [Diff and merge tools](includes/git-config-diff-merge-tools.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/tools-setting.png" alt-text="Screenshot showing the diff and merge tool settings in the Options dialog box in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/tools-setting-lrg.png":::
-
-   Or, choose **Git Repository Settings > General** to edit the diff and merge tool settings for the current Visual Studio project repo.
-
-Valid diff and merge tools are:
-
-- `Visual Studio`
-- `None` (default)
-
-To configure other diff and merge tool settings, use the [Git command line](git-config.md?tabs=git-command-line).
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The diff and merge tool settings correspond to the `git config diff.tool` and `git config merge.tool` commands. You can set Visual Studio as the merge or diff tool, or configure other diff and merge tools from the [Git command line](git-config.md?tabs=git-command-line). You can specify diff and merge tool settings at the global or repository scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit diff and merge tool settings.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the diff and merge tool settings for the current user.
 
-:::row:::
-  :::column span="":::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/tools-setting.png" alt-text="Screenshot showing the diff and merge tool settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/tools-setting-lrg.png":::
 
-    **Visual Studio Git**
-
-    1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the diff and merge tool settings.
-
-    2. Set the diff and merge tool settings to the desired value, and select **OK** to save.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/tools-setting.png" alt-text="Screenshot showing the diff and merge tool settings in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/tools-setting-lrg.png":::
-
-       Or, choose **Git Repository Settings > General** to edit the diff and merge tool settings for the current Visual Studio project repo.
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to edit the diff and merge tool settings for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/tools-setting.png" alt-text="Screenshot showing the diff and merge tool settings in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/tools-setting-lrg.png":::
-
-    Or, choose **Repository Settings** to edit the diff and merge tool settings for the current Visual Studio project repo.
-
-  :::column-end:::
-:::row-end:::
+Or, choose **Repository Settings** to edit the diff and merge tool settings for the current Visual Studio project repo.
 
 Valid diff and merge tools are:
 
@@ -553,27 +367,15 @@ When you clone a remote repo, Git assigns the alias `origin` as shorthand for th
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-To add an `upstream` alias in Visual Studio, follow these steps:
+[!INCLUDE [Remotes](includes/git-config-remotes.md)]
 
-1. Choose **Tools > Options** from the menu bar to open the **Options** window. Select **Source Control > Git Repository Settings > Remotes**, and then choose **Add** to open the **Add Remote** dialog.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-    :::image type="content" source="media/forks/visual-studio-2019/git-remote-settings.png" border="true" alt-text="Screenshot of the Add button in the Remotes pane of the Git Repository Settings submenu of the Source Control menu in Visual Studio 2022." lightbox="media/forks/visual-studio-2019/git-remote-settings-lrg.png":::
+[!INCLUDE [Remotes](includes/git-config-remotes.md)]
 
-1. In the **Add Remote** dialog, add a new remote called `upstream` and enter the Git [clone URL](clone.md#get-the-clone-url-of-an-azure-repos-git-repo) of the repo you forked. Then, choose **Save**.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-    :::image type="content" source="media/forks/visual-studio-2019/git-add-remote-dialog.png" border="true" alt-text="Screenshot of the Add Remote dialog box in Visual Studio 2022." lightbox="media/forks/visual-studio-2019/git-add-remote-dialog-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-To add an `upstream` alias in Visual Studio, follow these steps:
-
-1. Choose **Tools > Options** from the menu bar to open the **Options** window. Select **Source Control > Git Repository Settings > Remotes**, and then choose **Add** to open the **Add Remote** dialog.
-
-    :::image type="content" source="media/forks/visual-studio-2019/git-remote-settings.png" border="true" alt-text="Screenshot of the Add button in the Remotes pane of the Git Repository Settings submenu of the Source Control menu in Visual Studio 2019." lightbox="media/forks/visual-studio-2019/git-remote-settings-lrg.png":::
-
-1. In the **Add Remote** dialog, add a new remote called `upstream` and enter the Git [clone URL](clone.md#get-the-clone-url-of-an-azure-repos-git-repo) of the repo you forked. Then, choose **Save**.
-
-    :::image type="content" source="media/forks/visual-studio-2019/git-add-remote-dialog.png" border="true" alt-text="Screenshot of the Add Remote dialog box in Visual Studio 2019." lightbox="media/forks/visual-studio-2019/git-add-remote-dialog-lrg.png":::
+Use the **Visual Studio 2019 - Git menu** procedure.
 
 #### [Command Line](#tab/git-command-line)
 
@@ -626,42 +428,19 @@ You can set the default repository folder in which Visual Studio will clone repo
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Default repository location** setting is only available at the global scope.
+[!INCLUDE [Default repository location](includes/git-config-repository-location.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Default repository location** setting.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Set the default repository location, and select **OK** to save.
+[!INCLUDE [Default repository location](includes/git-config-repository-location.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/default-location-setting.png" alt-text="Screenshot showing the default location field in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/default-location-setting-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Default repository location** setting is only available at the global scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the default repository location setting.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to set the default repository location for the current user.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Default repository location** setting.
-
-    2. Set the default repository location, and select **OK** to save.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/default-location-setting.png" alt-text="Screenshot showing the default location field in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/default-location-setting-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to set the default repository location for the current user.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/default-location-setting.png" alt-text="Screenshot showing the default location field in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/default-location-setting-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/default-location-setting.png" alt-text="Screenshot showing the default location field in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/default-location-setting-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -678,35 +457,17 @@ By default, Visual Studio closes any open solution or folder in a Git repo when 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Close open solutions not under Git when opening a repository** setting is only available at the global scope.
+[!INCLUDE [Close open solutions not under Git when opening a repository](includes/git-config-close-solutions.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Set the default repository location, and select **OK** to save.
+[!INCLUDE [Close open solutions not under Git when opening a repository](includes/git-config-close-solutions.md)]
 
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/close-sln-setting.png" alt-text="Screenshot showing the Close open solutions not under Git when opening a repository setting in the Options dialog box in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/close-sln-setting-lrg.png":::
-
-Valid values are:
-
-- `Yes`: when you switch repo, Visual Studio closes any open solution.
-- `No`: when you switch repo and the current solution or folder isn't under Git, Visual Studio will keep the solution or folder open.
-- `Always ask` (default): when you switch repo and the current solution or folder isn't under Git, Visual Studio will ask whether you want to keep the current solution open.
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Close open solutions not under Git when opening a repository** setting is only available at the global scope.
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
-
-1. Set the default repository location, and select **OK** to save.
-
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/close-sln-setting.png" alt-text="Screenshot showing the Close open solutions not under Git when opening a repository setting in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/close-sln-setting-lrg.png":::
-
-Valid values are:
-
-- `Yes`: when you switch repo, Visual Studio closes any open solution.
-- `No`: when you switch repo and the current solution or folder isn't under Git, Visual Studio will keep the solution or folder open.
-- `Always ask` (default): when you switch repo and the current solution or folder isn't under Git, Visual Studio will ask whether you want to keep the current solution open.
+Use the **Visual Studio 2019 - Git menu** procedure.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -723,42 +484,19 @@ When enabled, Visual Studio will download an author image from the [Gravatar ima
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Enable download of author images from third-party sources** setting is only available at the global scope.
+[!INCLUDE [Enable download of author images from third-party sources](includes/git-config-enable-download.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Enable download of author images from third-party sources** setting.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Choose whether to enable download of author images from third-party sources, and select **OK** to save.
+[!INCLUDE [Enable download of author images from third-party sources](includes/git-config-enable-download.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/download-image-setting.png" alt-text="Screenshot showing the checkbox to enable download of author images from third-party source in the Options dialog box in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/download-image-setting-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Enable download of author images from third-party sources** setting is only available at the global scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to enable download of author images from third-party sources.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to enable download of author images from third-party sources.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Enable download of author images from third-party sources** setting.
-
-    2. Choose whether to enable download of author images from third-party sources, and select **OK** to save.
-     
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/download-image-setting.png" alt-text="Screenshot showing the checkbox to enable download of author images from third-party source in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/download-image-setting-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to enable download of author images from third-party sources.
-
-    :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/download-image-setting.png" alt-text="Screenshot showing the checkbox to enable download of author images from third-party source in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/download-image-setting-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/download-image-setting.png" alt-text="Screenshot showing the checkbox to enable download of author images from third-party source in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/download-image-setting-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -777,42 +515,19 @@ For more information on these merge options, see [--commit and --no-commit](http
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Commit changes after merge by default** setting is only available at the global scope.
+[!INCLUDE [Commit changes after merge by default](includes/git-config-commit-changes.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Commit changes after merge by default** setting.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Choose whether to commit changes after merge by default, and select **OK** to save.
+[!INCLUDE [Commit changes after merge by default](includes/git-config-commit-changes.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/merge-commit-setting.png" alt-text="Screenshot showing the checkbox to commit changes after merge by default in the Options dialog box in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/merge-commit-setting-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The **Commit changes after merge by default** setting is only available at the global scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the **Commit changes after merge by default** setting.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to commit changes after merge by default.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Commit changes after merge by default** setting.
-
-    2. Choose whether to commit changes after merge by default, and select **OK** to save.
-
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/merge-commit-setting.png" alt-text="Screenshot showing the checkbox to commit changes after merge by default in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/merge-commit-setting-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to commit changes after merge by default.
-
-    :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/merge-commit-setting.png" alt-text="Screenshot showing the checkbox to commit changes after merge by default in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/merge-commit-setting-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/merge-commit-setting.png" alt-text="Screenshot showing the checkbox to commit changes after merge by default in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/merge-commit-setting-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -826,44 +541,19 @@ With this setting enabled, you can push changes that overwrite work in a remote 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The **Enable push --force-with-lease** option corresponds to the `push --force-with-lease` command. This setting is only available at the global scope. By default, **Enable push --force-with-lease** is disabled.
+[!INCLUDE [Enable push --force-with-lease](includes/git-config-enable-push.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Enable push --force-with-lease** setting.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Choose whether to enable `push --force-with-lease`, and select **OK** to save.
+[!INCLUDE [Enable push --force-with-lease](includes/git-config-enable-push.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/push-force-setting.png" alt-text="Screenshot showing the checkbox to enable push force with lease in the Options dialog box in Visual Studio 202219." lightbox="media/git-config/visual-studio-2019/git-experience/push-force-setting-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+The **Enable push --force** option corresponds to the `push --force` command. This setting is only available at the global scope. By default, this setting is disabled.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to edit the **Enable push --force-with-lease** setting.
+In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to enable `push --force`.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    The **Enable push --force-with-lease** option corresponds to the `push --force-with-lease` command. This setting is only available at the global scope. By default, **Enable push --force-with-lease** is disabled.
-
-    1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Enable push --force-with-lease** setting.
-
-    2. Choose whether to enable `push --force-with-lease`, and select **OK** to save.
-     
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/push-force-setting.png" alt-text="Screenshot showing the checkbox to enable push force with lease in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/push-force-setting-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    The **Enable push --force** option corresponds to the `push --force` command. This setting is only available at the global scope. By default, this setting is disabled.
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to enable `push --force`.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/push-force-setting.png" alt-text="Screenshot showing the checkbox to enable push force with lease in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/push-force-setting-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/push-force-setting.png" alt-text="Screenshot showing the checkbox to enable push force with lease in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/push-force-setting-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -879,19 +569,15 @@ When disabled and you open a Git repo in Visual Studio, Visual Studio won't open
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+[!INCLUDE [Open folder in Solution Explorer when opening a Git repository](includes/git-config-open-folder.md)]
 
-1. Choose whether to enable **Open folder in Solution Explorer when opening a Git repository**, and select **OK** to save.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/open-folder-setting.png" alt-text="Screenshot showing the checkbox to open folder when opening a Git repository in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/open-folder-setting-lrg.png":::
+[!INCLUDE [Open folder in Solution Explorer when opening a Git repository](includes/git-config-open-folder.md)]
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
-
-1. Choose whether to enable **Open folder in Solution Explorer when opening a Git repository**, and select **OK** to save.
-
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/open-folder-setting.png" alt-text="Screenshot showing the checkbox to open folder when opening a Git repository in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/open-folder-setting-lrg.png":::
+Use the **Visual Studio 2019 - Git menu** procedure.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -906,19 +592,15 @@ The **Automatically load the solution when opening a Git repository** setting is
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+[!INCLUDE [Automatically load the solution when opening a Git repository](includes/git-config-load-solution.md)]
 
-1. Choose whether to enable **Automatically load the solution when opening a Git repository**, and select **OK** to save.
-  
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/load-solution-setting.png" alt-text="Screenshot showing the checkbox to automatically load the solution when opening a Git repository in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/load-solution-setting-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+[!INCLUDE [Automatically load the solution when opening a Git repository](includes/git-config-load-solution.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. Choose whether to enable **Automatically load the solution when opening a Git repository**, and select **OK** to save.
-  
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/load-solution-setting.png" alt-text="Screenshot showing the checkbox to automatically load the solution when opening a Git repository in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/load-solution-setting-lrg.png":::
+Use the **Visual Studio 2019 - Git menu** procedure.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -932,19 +614,15 @@ The Git Repository window has a list of branches displayed in a tree structure. 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+[!INCLUDE [Automatically check out branches with double-click or the Enter key](includes/git-config-check-branches.md)]
 
-1. Choose whether to enable **Automatically check out branches with double-click or the Enter key**, and select **OK** to save.
-  
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/check-out-branch-setting.png" alt-text="Screenshot showing the checkbox to check out branches with double-click or Enter key in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/check-out-branch-setting-lrg.png":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+[!INCLUDE [Automatically check out branches with double-click or the Enter key](includes/git-config-check-branches.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and then select the **Git Global Settings** view to configure this setting.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-1. Choose whether to enable **Automatically check out branches with double-click or the Enter key**, and select **OK** to save.
-  
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/check-out-branch-setting.png" alt-text="Screenshot showing the checkbox to check out branches with double-click or Enter key in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/check-out-branch-setting-lrg.png":::
+Use the **Visual Studio 2019 - Git menu** procedure.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -958,42 +636,19 @@ Visual Studio provides a quick way to add or edit [gitignore](https://git-scm.co
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-The option to add or edit a `gitignore` or `gitattributes` file is only available at the repository scope.
+[!INCLUDE [Edit Git ignore and attributes files](includes/git-config-ignore-attributes.md)]
 
-1. From the **Git** menu, choose **Git > Settings** and choose the **Git Repository Settings > General** view. That view contains options to edit `gitignore` or `gitattributes` files.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-1. Choose **Edit** to open the ignore or attribute file in a Visual Studio editor window.
+[!INCLUDE [Edit Git ignore and attributes files](includes/git-config-ignore-attributes.md)]
 
-   :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-files-setting.png" alt-text="Screenshot showing the Edit button for the ignore or attribute files in Visual Studio 2022." lightbox="media/git-config/visual-studio-2019/git-experience/git-files-setting-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
 The option to add or edit a `gitignore` or `gitattributes` file is only available at the repository scope.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to open `.gitignore` and `.gitattributes` files for editing.
+In Team Explorer, choose **Settings** to open the **Settings** view. In that view, select **Repository** and choose **Edit** to open the ignore or attribute file for the current project repo in a Visual Studio editor window.
 
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-    1. From the **Git** menu, choose **Git > Settings** and choose the **Git Repository Settings > General** view. That view contains options to edit `gitignore` or `gitattributes` files.
-
-    2. Choose **Edit** to open the ignore or attribute file in a Visual Studio editor window.
-
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/git-files-setting.png" alt-text="Screenshot showing the Edit button for the ignore or attribute files in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/git-files-setting-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-    In Team Explorer, choose **Settings** to open the **Settings** view. In that view, select **Repository** and choose **Edit** to open the ignore or attribute file for the current project repo in a Visual Studio editor window.
-
-     :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/git-files-setting.png" border="false" alt-text="Screenshot showing the Edit buttons for the ignore or attribute files in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/git-files-setting-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/git-config/visual-studio-2019/team-explorer/git-files-setting.png" border="false" alt-text="Screenshot showing the Edit buttons for the ignore or attribute files in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/git-files-setting-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 

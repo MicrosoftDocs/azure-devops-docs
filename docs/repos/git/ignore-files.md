@@ -41,36 +41,23 @@ You can manually create a `.gitignore` file and add file pattern entries to it, 
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the Visual Studio 2019 tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-In the **Git Changes** window, right-click any changed file that you want Git to ignore and choose **Ignore this local item** or **Ignore this extension**. Those menu options don't exist for tracked files.
+[!INCLUDE [Use a gitignore file](includes/ignore-files-gitignore.md)]
+
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
+
+[!INCLUDE [Use a gitignore file](includes/ignore-files-gitignore.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
+
+In the **Changes** view of **Team Explorer**, right-click any changed file that you want Git to ignore and choose **Ignore this local item** or **Ignore this extension**. Those menu options don't exist for tracked files.
   
-:::image type="content" source="media/ignore-files/visual-studio-2019/git-experience/git-ignore.png" border="true" alt-text="Screenshot of the context menu options for changed files in the Git Changes window in Visual Studio 2019." lightbox="media/ignore-files/visual-studio-2019/git-experience/git-ignore-lrg.png":::
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to create and add entries to a `.gitignore` file.
-
-:::row:::
-  :::column span="":::
-
-    **Visual Studio Git**
-
-      In the **Git Changes** window, right-click any changed file that you want Git to ignore and choose **Ignore this local item** or **Ignore this extension**. Those menu options don't exist for tracked files.
-  
-      :::image type="content" source="media/ignore-files/visual-studio-2019/git-experience/git-ignore.png" border="true" alt-text="Screenshot of the context menu options for changed files in the Git Changes window in Visual Studio 2019." lightbox="media/ignore-files/visual-studio-2019/git-experience/git-ignore-lrg.png":::
-  
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer**
-
-      In the **Changes** view of **Team Explorer**, right-click any changed file that you want Git to ignore and choose **Ignore this local item** or **Ignore this extension**. Those menu options don't exist for tracked files.
-  
-      :::image type="content" source="media/ignore-files/visual-studio-2019/team-explorer/git-ignore.png" border="true" alt-text="Screenshot of the context menu options for changed files in Team Explorer in Visual Studio 2019." lightbox="media/ignore-files/visual-studio-2019/team-explorer/git-ignore-lrg.png":::
-  
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="media/ignore-files/visual-studio-2019/team-explorer/git-ignore.png" border="true" alt-text="Screenshot of the context menu options for changed files in Team Explorer in Visual Studio 2019." lightbox="media/ignore-files/visual-studio-2019/team-explorer/git-ignore-lrg.png":::
 
 ---
 
