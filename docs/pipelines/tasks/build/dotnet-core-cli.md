@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 ms.topic: reference
 ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
-ms.author: puagarw
-author: pulkitaggarwl
+ms.author: sdanie
+author: steved0x
 ms.date: 10/30/2019
 monikerRange: '<= azure-devops'
 ---

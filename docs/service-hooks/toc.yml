@@ -24,7 +24,7 @@
   - name: Microsoft Teams
     displayName: integrate, boards, pipelines, repos, connector, configure, project, activity
     href: services/teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-- name: Web Hooks
+- name: Webhooks
   displayName: JSON, subscription, configure, event, endpoint
   href: services/webhooks.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Authorize other services
