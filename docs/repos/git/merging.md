@@ -5,7 +5,7 @@ description: Learn how to resolve merge conflicts stemming from a Git merge or a
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 10/14/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
