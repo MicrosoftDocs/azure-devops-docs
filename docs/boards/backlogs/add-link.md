@@ -298,7 +298,7 @@ Other features you can use to quickly link or change links that use the parent-c
 
 ::: moniker range="azure-devops" 
 
-## Add, remove, and show links using azure cli 
+## Add, remove, and show links using Azure CLI
 
 You can add, remove, and show details of links made to a work item using link types supported by your organization with the [az boards work-item relation](/cli/azure/boards/work-item/relation) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -319,7 +319,7 @@ To link one or more work item to a single work item, enter the [az boards work-i
 
 #### Syntax 
 
-Required parameters include the ID of the work item to link to and the link type. Supported link types include *Parent*, *Child*, *Related*, *Remmote Related*. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command. 
+Required parameters include the ID of the work item to link to and the link type. Supported link types include *Parent*, *Child*, *Related*, *Remote Related*. For a list of all link types that you can specify, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command. 
 
 For work items defined within the same organization, you must specify the work item ID or target URL. For work items defined in a remote organization, you must specify the target URL. You can specify multiple values by separating IDs or URLs with a comma.
 
