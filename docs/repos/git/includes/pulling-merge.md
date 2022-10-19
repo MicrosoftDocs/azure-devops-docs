@@ -15,6 +15,6 @@
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Git Repository window of Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation-lrg.png":::
 
-   If the merge is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+   If the merge is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](../merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
    :::image type="content" source="../media/pulling/visual-studio-2019/git-experience/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="../media/pulling/visual-studio-2019/git-experience/branch-merge-conflict-lrg.png":::
