@@ -25,9 +25,9 @@ The task works for ASP.NET, ASP.NET Core, PHP, Java, Python, Go and Node.js base
 |`appName`<br/>App name|(Required) Name of an existing App Service|
 |`resourceGroupName`<br/>Resource group|(Optional) Name of the resource group|
 |`slotName`<br/>Slot|(Optional) Name of the slot<br/>Default value: `production`|
-|`appSettings`<br/>App settings|(Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
-|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. See the [App Service SiteConfig object documentation](/azure/templates/microsoft.web/sites#siteconfig-object) for the available properties.|
-|`connectionStrings`<br/>Connection settings|(Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
+|`appSettings`<br/>App settings|(Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. The appSettings can be found in the configuration of your AppService under `Configuration > Application Settings tab > Application Settings`. |
+|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. GeneralSettings are the settings of your AppService and they can be used to enable or disable features like ARR, Websockets, etc. . Values containing spaces should be enclosed in double quotes. See the [App Service SiteConfig object documentation](/azure/templates/microsoft.web/sites#siteconfig-object) for the available properties. The generalSettings can be found in the configuration of your AppService under the `Configuration > General Settings` tab. |
+|`connectionStrings`<br/>Connection settings|(Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. The connectionStrings can be found in the configuration of your AppService under `Configuration > Application Settings > Connection Strings`. |
 
 Following is an example YAML snippet to deploy web application to the Azure Web App service running on windows.
 
