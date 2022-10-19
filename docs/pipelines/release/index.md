@@ -63,94 +63,17 @@ Then, when you create a new release, you can edit the values of those variables.
 
 :::image type="content" source="media/what-is-release-management/populate-release-edit-variables.png" alt-text="A screenshot showing how to edit variables at release time.":::
 
-## How do I integrate and report release status?
+#### Q: When should I edit a release instead of the pipeline that defines it?
 
-With release pipelines integrations, you can report your deployment status to multiple sources such as your repository host, your work items (links or deployments), or to Jira issues.
+A: You can edit the approvals, tasks, and variables of a release instance. However, these edits will only apply to that instance. If you want your changes to apply to all future releases, edit the release pipeline instead.
 
-To configure your release pipeline integrations, select the **Options** tab, and then select **Integrations** from your release pipeline definition.
+#### Q: When and why would I abandon a release?
 
-:::image type="content" source="media/release-integrations.png" alt-text="Screenshot showing how to access release integrations in your release pipeline.":::
+After you create a release, you can redeploy your artifacts to any stages defined in your release. This is useful if you want to do regular manual releases or set up [stage triggers](triggers.md#env-triggers) that redeploys your artifacts to a specific stage.
 
-**Report deployment status to the repository host**
+If you don't plan to reuse the release, or want to prevent it from being used, you can abandon the release as follows **Pipelines** > (...) > **Abandon**. You can't abandon a release when a deployment is in progress, you must cancel the deployment first.
 
-If your source code is in Azure Repos, this option displays a status badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. By default, a deployment status is posted for all stages of your release pipeline. You can also select specific stages to display the deployment status.
-
-The deployment status is displayed in the following areas of Azure Repos:
-
-- **Files**: indicates the status of the latest deployment for the selected branch.
-
-     :::image type="content" source="media/pipeline-status-files.png" alt-text="Screenshot showing the pipeline status for Files.":::
-
-- **Commits**: indicates the deployment status for each commit (requires the continuous integration trigger to be enabled).
-
-    :::image type="content" source="media/pipeline-status-commits.png" alt-text="Screenshot showing the pipeline status for Commits.":::
-
-- **Branches**: indicates the status of the latest deployment for each branch.
-
-    :::image type="content" source="media/pipeline-status-branches.png" alt-text="Screenshot showing the pipeline status for Branches.":::
-
-> [!NOTE]
-> If your source code is not in Azure Repos, you can use the **Enable the Deployment status badge** feature to display your deployment status in external repositories.
-
-**Report deployment status to Work**
-
-Select this option if you want to link your release pipeline to your work items. The deployment status will be displayed in the **Links** tab of your work item. 
-
-:::image type="content" source="media/release-status-work.png" alt-text="Screenshot showing linked releases in the task tab of a work item.":::
-
-**Report deployment status to Boards**
-
-Select this option if you want to link your release pipeline to your work items and display the deployment status in the **Details** tab of your work item.
-
-:::image type="content" source="media/release-status-boards.png" alt-text="Screenshot showing linked releases in the details tab of a work item.":::
-
-**Enable the deployment status badge**
-
-Select this option if you want to display the deployment status on an external website. You can copy the stage badge and add it to your website to have a visualization of your deployment status:
-
-1.	Select **Enable the deployment status badge**.
-
-1.	Select the stages for which you want to display the status. By default, all the stages are selected.
-
-1.	Copy the badge URL and add it to your website or GitHub Readme file to display the deployment status.
-
-    :::image type="content" source="media/release-badge.svg" alt-text="Screenshot showing the release status badge.":::
-
-**Report deployment status to Jira**
-
-Select this option if you want to link your release pipeline to Jira issues. You must install [Azure Pipelines for Jira](https://github.com/Microsoft/azure-pipelines-jira) and connect your Azure DevOps organization with your Jira account. Check out the [Jira integration](https://devblogs.microsoft.com/devops/azure-pipelines-integration-with-jira-software/) tutorial for more details.
-
-<a name="editrelease"></a>
-
-## When should I edit a release instead of the pipeline that defines it?
-
-You can edit the approvals, tasks, and variables of a previously deployed release. Do so instead of editing these values in the pipeline from which the release was created. However, these edits apply to only the release generated when you redeploy the artifacts. If you want your edits apply to all future releases and deployments, choose the option to edit the release pipeline instead.
-
-<a name="abandonrelease"></a>
-
-## When and why would I abandon a release?
-
-After you create a [release](releases.md), you can redeploy the artifacts to any stages that are defined in that release. This is useful if you want to do regular manual releases, or set up a continuous integration [stage trigger](triggers.md#env-triggers) that redeploys the artifacts using this release.
-
-If you don't plan to reuse the release, or want to prevent it being used to redeploy the artifacts, you can abandon the release using the shortcut menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline.
-
-> [!div class="mx-imgBorder"]
-> ![Abandoning a release](media/what-is-release-management/abandon-release.png)
-
-You can't abandon a release when a deployment is in progress, you must cancel the deployment first.
-
-<a name="sendemail"></a>
-
-## How do I send release summaries by email?
-
-After a release is triggered and completed, you may want to email the summary to stakeholders. Use the **Send email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
-
-> [!div class="mx-imgBorder"]
-> ![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
-
-In the **Send release summary mail** window, you can further customize the information sent in the email by selecting only certain sections of the release summary.
-
-<a name="numbering"></a>
+:::image type="content" source="media/what-is-release-management/abandon-release.png" alt-text="A screenshot showing how to abandon a release.":::
 
 ## How do I manage the names for new releases?
 
@@ -180,25 +103,6 @@ You can customize how long releases of this pipeline must be retained. For more 
 ## How do I use and manage release history?
 
 Every time you save a release pipeline, Azure Pipelines keeps a copy of the changes. This copy allows you to compare the changes at a later point, especially when you're debugging a deployment failure.
-
-## How do I set it up to automatically link new work in a build?
-
-When we establish traceability between work items and builds/releases, there are the following two aspects:
-
-- List the work items that were newly built as part of a build. You can find this when you're looking at a build instance.
-- List the builds that this work item was built in. You can find the list in the "Development" section in a work item form.
-The setting to "Automatically link new work in this build" has nothing to do with how we compute the first bulleted item. It only influences how we compute the second bulleted item.
-
-The computation for the first bullet is as follows for a build: 
-Let's say, for example, that you started a new build. Whatever the setting, we compute a list of new commits for the build. We do the following tasks:
-
-- We find the commit c2 that is being built now.
-- We find the commit c1 that was built in the last successful build of the same branch (Build.SourceBranch).
-- We find all the commits between c1 and c2 (in the commit tree).
-
-It could happen that there's no last known successful build on the same branch. For example, when you run a build for the first time on a branch, or when all the previous builds on a branch have been deleted (possibly through retention policies). The list could be long in these cases.
-
-Once we have the list of commits, we enumerate all the work items associated with each of those commits. This is the list that you see in a build.
 
 <a name="getstartednow"></a>
 
