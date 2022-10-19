@@ -51,19 +51,17 @@ Azure release pipelines supports a wide range of [artifact sources](artifacts.md
 
 In this example, the pipeline is composed of two build artifacts from two different build pipelines. The application is first deployed to the *Dev* stage and then forked to two QA stages. If deployment succeeds in both QA stages, the application will be deployed to Production ring 1 and then to Production ring 2. Each production ring represents multiple instances of the same website deployed to various locations around the world.
 
-## How do I specify variables I want to edit when a release is created?
+## FAQ 
 
-In the **Variables** tab of a release pipeline, when you add new variables, set **Settable at release time** for the variables that you want to edit when a release gets created and queued.
+#### Q: How can I edit variables at release time?
 
-> [!div class="mx-imgBorder"]
-> ![Specifying variables to be edited when a release is created and queued](media/what-is-release-management/define-release-edit-variables.png)
+A: In the **Variables** tab of your release pipeline, check the **Settable at release time** option for the variables that you want to edit when a release gets queued.
 
-Then, when you create a new release, you can edit the values for these variables.
+:::image type="content" source="media/what-is-release-management/define-release-edit-variables.png" alt-text="A screenshot showing how to enable settable at release time variables.":::
 
-> [!div class="mx-imgBorder"]
-> ![Editing variables when a release is created and queued](media/what-is-release-management/populate-release-edit-variables.png)
+Then, when you create a new release, you can edit the values of those variables.
 
-<a name="reportstatus"></a>
+:::image type="content" source="media/what-is-release-management/populate-release-edit-variables.png" alt-text="A screenshot showing how to edit variables at release time.":::
 
 ## How do I integrate and report release status?
 
