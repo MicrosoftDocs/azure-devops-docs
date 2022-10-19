@@ -25,7 +25,7 @@ Let's start with a common scenario:
 
 Git commit history is a tree. Sometimes, the chronological history is not the same as the actual file tree history. This occurs most often when a merge commit reverts a file back to its original state. In that case, the default history view *won't actually show you all changes*, because technically the file didn't change. In this scenario, Git realizes it can simplify the history and the "changes" you are most likely looking for are removed from the log.
 
-Unless you have run into it before, you may become frustrated, wondering *Where the heck did my changes go?*
+Unless you have run into it before, you may become frustrated, wondering, *Where the heck did my changes go?*
 
 ## History simplification: On by Default
 
