@@ -5,7 +5,7 @@ description: Learn how to isolate experimental or risky code using a forking wor
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---

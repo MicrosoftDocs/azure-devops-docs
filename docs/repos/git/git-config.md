@@ -5,7 +5,7 @@ description: Learn how to view and configure many Git-related settings and prefe
 ms.assetid:
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---

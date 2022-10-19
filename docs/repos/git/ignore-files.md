@@ -5,7 +5,7 @@ description: Learn how to exclude files from Git version control by using gitign
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---

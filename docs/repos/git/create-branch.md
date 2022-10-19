@@ -5,7 +5,7 @@ description: Learn about Git branches and how to create a new branch in your loc
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
