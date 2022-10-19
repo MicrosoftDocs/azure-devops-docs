@@ -1,12 +1,12 @@
 ---
 title: Classic release pipelines
 ms.custom: seodec18
-description: What are classic release pipelines in Azure Pipelines
+description: What are classic release pipelines
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/11/2021
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -45,7 +45,7 @@ Azure Pipelines runs the following steps as part of every deployment:
 
 ## Deployment model
 
-Azure release pipelines supports a wide range of [artifact sources](artifacts.md#sources) such as pipelines build, Jenkins, and Team City. The following example illustrates a deployment model using Azure release pipelines:
+Azure release pipelines support a wide range of [artifact sources](artifacts.md#sources) such as pipelines build, Jenkins, and Team City. The following example illustrates a deployment model using Azure release pipelines:
 
 :::image type="content" source="media/definition-01.png" alt-text="A screenshot showing the deployment model.":::
 
@@ -69,17 +69,17 @@ A: You can edit the approvals, tasks, and variables of a release instance. Howev
 
 #### Q: When and why would I abandon a release?
 
-After you create a release, you can redeploy your artifacts to any stages defined in your release. This is useful if you want to do regular manual releases or set up [stage triggers](triggers.md#env-triggers) that redeploys your artifacts to a specific stage.
+A: After you create a release, you can redeploy your artifacts to any stages defined in your release. This is useful if you want to do regular manual releases or set up [stage triggers](triggers.md#env-triggers) that redeploys your artifacts to a specific stage.
 
 If you don't plan to reuse the release, or want to prevent it from being used, you can abandon the release as follows **Pipelines** > (...) > **Abandon**. You can't abandon a release when a deployment is in progress, you must cancel the deployment first.
 
 :::image type="content" source="media/what-is-release-management/abandon-release.png" alt-text="A screenshot showing how to abandon a release.":::
 
-## How do I manage the names for new releases?
+#### Q: How do I manage the names for new releases?
 
-The names of releases for a release pipeline are, by default, sequentially numbered. The first release is named **Release-1**, the next release is **Release-2**, and so on. You can change this naming scheme by editing the release name format mask. In the **Options** tab of a release pipeline, edit the **Release name format** property in the **General** page.
+A: By default, release pipelines are sequentially numbered. The first release is named **Release-1**, the next release is **Release-2**, and so on. You can change this naming scheme by editing the release name format mask. From the **Options** tab of your release pipeline, change the **Release name format** property in the **General** page.
 
-When specifying the format mask, you can use the following predefined variables.
+When specifying the format mask, you can use the following predefined variables:
 
 | Variable | Description |
 |----------|-------------|
@@ -94,29 +94,14 @@ When specifying the format mask, you can use the following predefined variables.
 | **Build.SourceBranch** | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **main** if the branch is **refs/heads/main**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
 | **Custom variable** | The value of a global configuration property defined in the release pipeline. You can update the release name with custom variables using the [Release logging commands](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/authoring/commands.md#release-logging-commands) |
 
-For example, the release name format `Release $(Rev:rrr) for build $(Build.BuildNumber) $(Build.DefinitionName)` creates releases with names such as **Release 002 for build 20170213.2 MySampleAppBuild**.
+Example: The following release name format: *Release $(Rev:rrr) for build $(Build.BuildNumber) $(Build.DefinitionName)* will create the following release: *Release 002 for build 20170213.2 MySampleAppBuild*.
 
-## How do I specify the retention period for releases?
+#### Q: How do I specify the retention period for my releases?
 
-You can customize how long releases of this pipeline must be retained. For more information, see [release retention](../policies/retention.md).
+A: See [retention policies](../policies/retention.md) to learn how to set up retention policies for your release pipelines.
 
-## How do I use and manage release history?
+## Next steps
 
-Every time you save a release pipeline, Azure Pipelines keeps a copy of the changes. This copy allows you to compare the changes at a later point, especially when you're debugging a deployment failure.
-
-<a name="getstartednow"></a>
-
-## Get started now!
-
-Complete the following steps:
-
-1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
-    
-1. **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
-
-## Related articles
-
-- [Link work items to deployments](../../boards/work-items/work-item-deployments-control.md)
-- [Deploy pull request Artifacts](./deploy-pull-request-builds.md)
-- [Stage templates](./env-templates.md)
-- [Deploy from multiple branches](./deploy-multiple-branches.md)
+> [!div class="nextstepaction"]
+> [Set up a multi-stage release pipeline](define-multistage-release-process.md)
+> [Use gates and approvals to control your deployment](deploy-using-approvals.md)
