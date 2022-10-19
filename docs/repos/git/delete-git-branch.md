@@ -14,7 +14,7 @@ ms.subservice: azure-devops-repos-git
 # Delete a Git branch
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 This article describes how to delete a Git branch by using two different methods: in Visual Studio and from the command line.
 
