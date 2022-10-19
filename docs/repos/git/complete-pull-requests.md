@@ -15,7 +15,7 @@ ms.subservice: azure-devops-repos-git
 # Complete, abandon, or revert pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and [complete the PR](#complete-a-pull-request). Or if you decide not to proceed with the changes in the PR, you can [abandon the PR](#abandon-the-pr).
 

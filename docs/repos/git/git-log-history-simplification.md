@@ -12,7 +12,7 @@ ms.subservice: azure-devops-repos-git
 # Understand Git history simplification
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
  
 Git history simplification can be a confusing beast. 99% of the time you won't even know it exists, but occasionally it will jump out of the dark corners of Git and bite you. In this article, we'll explore what history simplification is and how it can cause confusion when looking at file history.
 
