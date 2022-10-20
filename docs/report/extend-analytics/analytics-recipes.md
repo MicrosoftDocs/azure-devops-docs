@@ -8,15 +8,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/15/2022
+ms.date: 10/17/2022
 ---
 
 # Query work tracking data using Analytics  
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of 
-Analytics. You can adapt most of these queries to meet your needs.
+You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of Analytics. You can adapt most of these queries to meet your needs.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -31,7 +30,7 @@ For prerequisites and other information for getting started, see [Query your wor
 
 ## Retrieve items changed within the last 180 days   
 
-You query the `WorkItem` entity set to list work items that meet your field criteria. 
+You query the `WorkItems` entity set to list work items that meet your field criteria. 
 
 The following query returns Product Backlog Items, Bugs, and Features that have a **Changed Date** greater than December 12, 2021.
 
@@ -80,7 +79,7 @@ And the response returns data for the four revisions:
 > [!div class="tabbedCodeSnippets"]
 ```OData
 {
-   "@odata.context":"https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItemRevisions(WorkItemId,Title,State,Iteration(IterationPath))",
+   "@odata.context":"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItemRevisions(WorkItemId,Title,State,Iteration(IterationPath))",
    "value":[
       {
          "WorkItemId":1145,
