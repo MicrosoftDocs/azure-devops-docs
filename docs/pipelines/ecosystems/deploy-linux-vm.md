@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.custom: seodec18, freshness-fy22q2
 ms.author: ushan
 author: N-usha
-ms.date: 09/29/2022
+ms.date: 10/03/2022
 monikerRange: 'azure-devops' 
 ---
 
@@ -118,7 +118,7 @@ You need a CI build pipeline that publishes your web app. You also need a deploy
       - job: Build
         displayName: Build Maven Project
         steps:
-        - task: Maven@3
+        - task: Maven@4
           displayName: 'Maven Package'
           inputs:
             mavenPomFile: 'pom.xml'
