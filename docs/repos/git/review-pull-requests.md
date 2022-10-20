@@ -148,6 +148,22 @@ On the PR **Overview** tab, you can review the PR description and comments to un
 
 Select the PR **Files** tab to view the actual changes made to the source branch next to the target branch of the pull request.
 
+> [!NOTE]
+> The different changes between Azure DevOps Pull request and Azure DevOps Branch compare is caused by the different comparison methods.
+
+There are two comparison methods for the git diff command. Two-dot (```git diff A..B```) and three-dot (```git diff A...B```). By default, pull requests show a three-dot diff while the Branch Comparison instead shows a two-dot diff.
+
+For example:
+```
+      C---D---E branch
+     /
+A---B---F---G   master
+```
+
+```git diff branch..master``` will retrieve C, D, E, F, G commits. While ```git diff branch...master``` will produce only F, G.
+
+Here are the relevant documentations about the git diff commands: [three-dot-and-two-dot-git-diff-comparisons](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests#three-dot-and-two-dot-git-diff-comparisons) & [git diff](https://git-scm.com/docs/git-diff)
+
 :::image type="content" source="media/review-pull-requests/2020/pull-request-files.png" alt-text="Screenshot of a file diff view in the Files tab of an Azure Repos PR.":::
 
 > [!NOTE]
