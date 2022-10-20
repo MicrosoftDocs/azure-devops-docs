@@ -57,7 +57,7 @@ If a pipeline in this project is important and runs should be retained for longe
             scriptType: 'bash'
             scriptLocation: 'inlineScript'
             inlineScript: |
-              curl -X POST "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1" -H 'Content-type: application/json' -H 'Authorization: bearer $(system.AccessToken)' -d '[{ daysValid: 365, definitionId: $(System.DefinitionId), ownerId: "User:$(Build.RequestedForId)", protectPipeline: false, runId: $(Build.BuildId) }]' 
+              curl -X POST "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1" -H 'Content-type: application/json' -H 'Authorization: bearer $(system.AccessToken)' -d '[{ "daysValid": 365, "definitionId": $(System.DefinitionId), "ownerId": "User:$(Build.RequestedForId)", "protectPipeline": false, "runId": $(Build.BuildId) }]' 
 ``` 
 # [REST API Task](#tab/task)
 ```
