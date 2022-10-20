@@ -46,19 +46,27 @@ If a pipeline in this project is important and runs should be retained for longe
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
 ```
 
-# [Azure CLI/ Bash](#tab/cli)
-```  
- - task: AzureCLI@2
-          condition: and(succeeded(), not(canceled()))
-          name: RetainOnSuccess
-          displayName: Retain on Success
-          inputs:
-            azureSubscription: 'Your Service Connection'
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              curl -X POST "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1" -H 'Content-type: application/json' -H 'Authorization: bearer $(system.AccessToken)' -d '[{ "daysValid": 730, "definitionId": $(System.DefinitionId), "ownerId": "User:$(Build.RequestedForId)", "protectPipeline": false, "runId": $(Build.BuildId) }]' 
-``` 
+# [Bash](#tab/cli)
+```
+- bash: |
+    curl \
+      -X POST \
+      -H 'Authorization: Bearer $(System.AccessToken)' \
+      -H 'Content-Type: application/json' \
+      -d '[
+            {
+              "daysValid": 730,
+              "definitionId": $(System.DefinitionId),
+              "ownerId": "User:$(Build.RequestedForId)",
+              "protectPipeline": false,
+              "runId": $(Build.BuildId)
+            }
+          ]' \
+      "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1"
+  condition: and(succeeded(), not(canceled()))
+  name: RetainOnSuccess
+  displayName: Retain on Success
+```
 # [REST API Task](#tab/task)
 ```
 - task: InvokeRESTAPI@1
