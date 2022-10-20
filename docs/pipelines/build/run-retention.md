@@ -29,7 +29,7 @@ If a pipeline in this project is important and runs should be retained for longe
 
 # [PowerShell](#tab/powershell)
 
-```
+```yaml
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()))
   name: RetainOnSuccess
@@ -47,7 +47,8 @@ If a pipeline in this project is important and runs should be retained for longe
 ```
 
 # [Bash](#tab/cli)
-```
+
+```yaml
 - bash: |
     curl \
       -X POST \
@@ -67,8 +68,10 @@ If a pipeline in this project is important and runs should be retained for longe
   name: RetainOnSuccess
   displayName: Retain on Success
 ```
+
 # [REST API Task](#tab/task)
-```
+
+```yaml
 - task: InvokeRESTAPI@1
           displayName: 'Retain on Success'
           inputs:
@@ -100,7 +103,7 @@ No, leases don't work in the reverse. If a project is configured to retain for t
 
 This is similar to above, only the condition needs to change:
 
-```
+```yaml
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()), startsWith(variables['Build.SourceBranchName'], 'releases/'))
   name: RetainReleaseBuildOnSuccess
@@ -123,7 +126,7 @@ Consider a two-stage pipeline that first runs a build and then a release. When s
 
 The `Build` stage can retain the pipeline as in the above examples, but with one addition: by saving the new lease's `Id` in an output variable, the lease can be updated later when the release stage runs.
 
-```
+```yaml
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()))
   name: RetainOnSuccess
@@ -144,7 +147,7 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
 
 To [_update_ a retention lease](/rest/api/azure/devops/build/leases/update) requires a different REST API call.
 
-```
+```yaml
 - stage: Release
   dependsOn: Build
   jobs:
