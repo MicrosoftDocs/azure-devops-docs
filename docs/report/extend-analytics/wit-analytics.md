@@ -16,9 +16,9 @@ ms.date: 10/17/2022
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
-Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser, or within Power BI. 
+Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser or within Power BI. 
 
-This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries are focused on retrieving work item data, however, the principles applies for querying other entity sets.
+This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries is this article are focused on retrieving work item data, however, the principles applies for querying other entity sets.
 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
