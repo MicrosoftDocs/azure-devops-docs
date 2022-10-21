@@ -19,10 +19,6 @@ ms.subservice: azure-devops-repos-git
 
 Pull requests (PRs) are a way to change, review, and merge code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-The following video shows the general pull request process. Some terminology and user interface elements might not apply to your Azure DevOps version.
-
-> [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
-
 This article describes pull request guidelines and management considerations. For instructions on how to create, view, review, and complete pull requests, see the following articles:
 
 - [Create pull requests](pull-requests.md)
