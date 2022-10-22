@@ -5,7 +5,7 @@ description: Day in the life of a devops developer. Suspend work, fix a bug, and
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 07/07/2022
+ms.date: 10/18/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,62 +14,56 @@ ms.subservice: azure-devops-repos-tfvc
 # Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-**My Work** and **Code Review** features support context switching from one thread of work to another. Also, team members can easily exchange messages about proposed changes to the code. This article illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
+The Visual Studio **My Work** and **Code Review** features support context switching from one thread of work to another. Also, team members can easily exchange messages about proposed changes to the code. This article illustrates these features, continuing the tutorial from [Day in the life of a devops developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
 
 [!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
 
-[Peter has been busy writing some code to fulfill a backlog item task.](day-life-alm-developer-write-new-code-user-story.md) However, [his colleagues have found a bug](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) that is blocking them, and he wants to fix it immediately. He suspends the work that he's doing and fixes the bug. He asks Julia to review the fix and, after the review, checks in the fix and resumes work on his original task.
-
- 
+This tutorial describes how a developer can suspend work on a current task to immediately fix a bug that's blocking teammates in another work item. After fixing the bug, the developer can ask colleagues to review the fix, and after the review passes, check in the fix and resume work on the original task.
 
 ## Suspend current work
 
-As Peter works on a backlog item, Julia comes to discuss a bug that is blocking her. It is in an area with which Peter is familiar, so he creates a task to fix the bug and assigns it to himself. He decides to start work on the fix immediately.
+While you're working on a backlog item, you might find out about a bug in another item that's blocking teammates. If it's an area you're familiar with, you can create a task to fix the bug and assign it to yourself to work on immediately.
 
-Before he starts to work on the new bug, Peter wants to make sure that his current work is set aside in a safe place on the team's server. On the **My Work** page, Peter chooses **Suspend** to save (on Team Foundation Server):
+Before you start work on the new bug, you want to make sure that your current work is set aside in a safe place on the team's server. In Visual Studio **Team Explorer**, on the **My Work** page, choose **Suspend** to save on the server:
 
--   All the work he has done, including changes to code, tests, and other files.
+-   All the work you've done, including changes to code, tests, and other files.
 
 -   Open solutions, windows, breakpoints, watch window variables, and other bits of Visual Studio state.
 
-Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He's ready to research and write the fix.
+Now that your workspace is clean, drag the new task from **Available Work Items** to **In Progress Work**. You're ready to research and write the fix.
 
 > [!NOTE]
-> Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
+> Your working context is linked to the work items that show as **In Progress** on the **My Work** page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
 
 ### To suspend current work and begin work on a different task
 
- ![Screenshot of Suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
-1.  **Connect:** If you are not already connected to the project that you want to work in, then [connect to the project](../../organizations/projects/connect-to-projects.md):
+Switch your work context:
 
-    1.  In **Team Explorer**, choose ![Home icon](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC547418.png) **Home**, and then choose ![My Work icon](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC588354.png) **My Work**.
+![Screenshot of suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
+ 
+1. If you're not already connected to the project that you want to work in, [connect to the project](../../organizations/projects/connect-to-projects.md).
 
-2.  **Suspend** your current task:
+1. From the **Home** page of **Team Explorer**, choose **My Work**.
 
-    1.  In the **In Progress Work** section, choose **Suspend**.
+1. On the **My Work** page, in the **In Progress Work** section, choose **Suspend**.
 
-    2.  In the box that appears, specify the name that you want to give this set of suspended work, and then choose the **Suspend** button. The default name is your currently in progress work item.
+1. In the box that appears, optionally change the name that you want to give this set of suspended work, and then select **Suspend**. The item appears under **Suspended Work**.
 
-3.  **Start work on a new task**, bug, or other work item:
+1. If the work item you want to assign yourself doesn't appear under **Available Work Items**, you can:
 
-    1.  Before selecting a work item, you might want to:
+   - Create a new task or other work item by choosing **New**.
+   - Select a different query by selecting **Open Query**.
 
-        -   Create a new task or other work item by choosing **New** under **Available Work Items**; or
-
-        -   Select a different query under **Available Work Items**.
-
-    2.  Drag a work item from **Available Work Items** to **In Progress Work**.
-
-        Alternatively, you can switch to a work item that you previously suspended by dragging it from under **Suspended Work**.
+1. Drag a work item from **Available Work Items** to **In Progress Work**. Or, you can switch to a work item that you previously suspended by dragging it from **Suspended Work**.
 
 > [!TIP]
-> The currently In Progress work items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the In Progress state when you switch from one task to another.
+> The **In Progress Work** items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the **In Progress Work** state when you switch from one task to another.
 
 ## Investigate the bug
 
-Peter opens and reads the bug work item. According to the description that has been written by a member of the test team, a paid invoice is sometimes incorrectly flagged as unpaid. There is a lab environment snapshot attached to the bug work item. Peter is able to open the virtual machines on which the test was run, see the incorrect invoice, and step back through the IntelliTrace log. He traces the fault to the following method:
+Open the bug and read the description. In this example, the description by a member of the test team states that a paid invoice is sometimes incorrectly flagged as unpaid. A lab environment snapshot is attached to the bug work item. You open the virtual machine (VM) on which the test was run, see the incorrect invoice, and step back through the IntelliTrace log. You can trace the fault to the following method:
 
 ```csharp
 public class LocalMath
@@ -80,10 +74,11 @@ public class LocalMath
     }
 ```
 
-From the IntelliTrace log, Peter sees that sometimes the method returns false because the parameters differ by an extremely small amount. Peter knows that rounding errors of this kind are unavoidable in floating point arithmetic, and that it is bad practice to test floating point numbers for equality.
+From the IntelliTrace log, you see that sometimes the method returns false because the parameters differ by an extremely small amount. You know that rounding errors of this kind are unavoidable in floating point arithmetic, and that it's bad practice to test floating point numbers for equality.
 
 ## Augment the tests to show the error
-When a bug is found, it shows that there was a gap in the unit tests, or that the test did not match the users' actual needs. Therefore, before fixing the bug, Peter adds a test that will demonstrate the presence of this error.
+
+When a bug is found, it shows that there was a gap in the unit tests, or that the test didn't match the users' actual needs. Therefore, before fixing the bug, add a test that demonstrates the presence of this error:
 
 ```csharp
 // Added 2012-02-02 for bug 654321:
@@ -94,7 +89,7 @@ When a bug is found, it shows that there was a gap in the unit tests, or that th
 [TestMethod]
 public void TestDoublesEqual()
 {
-    // We allow a rounding error of 1 in 1000000:
+    // Allow a rounding error of 1 in 1000000:
     TestEqual(1, 1e-7, true); // Less than allowed error
     TestEqual(1, 1e-5, false); // More than allowed error
     TestEqual(1000, 1e-7, true); // Less than allowed error
@@ -110,12 +105,13 @@ private void TestEqual(double value, double error, bool result)
 }
 ```
 
-He runs the test and it fails as expected.
+Run the test, and it fails as expected.
 
 ![Screenshot of Unit Test Explorer showing failed test for equal.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675827.png)
 
 ## Make the tests pass
-Peter fixes the code:
+
+Fix the code:
 
 ```csharp
 public static bool EqualTo(double a, double b)
@@ -134,11 +130,12 @@ The test now passes:
 
 ## Request a code review
 
-Peter is satisfied with his fix for the bug, but he does not check in his work yet. His team uses code reviews to increase overall code quality and reduce the risk of creating more bugs, so Peter uses Team Explorer to request a code review from his teammates Julia and Adam.
+When you're satisfied with your fix for the bug, don't check in your work yet. Teams use code reviews to increase overall code quality and reduce the risk of creating more bugs. Use **Team Explorer** to request code reviews from teammates.
 
 ### To request a code review
 
  ![My Work page - Request Review link. New Code Review page - Enter the name of a reviewer dropdown, Enter a description (optional) textbox, Submit Request button.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592394.png)
+
 1.  In **Team Explorer**, on the **My Work** page, choose **Request Review**.
 
     The **New Code Review** page appears.
