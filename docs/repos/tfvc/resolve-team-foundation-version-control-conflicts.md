@@ -1,18 +1,21 @@
-﻿---
+---
 title: Resolve Team Foundation Version Control conflicts
 titleSuffix: Azure Repos
 description: Resolve Team Foundation Version Control conflicts
 ms.assetid: 61cae295-0864-4ae9-8327-9bd1dd14cae9
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Resolve Team Foundation Version Control conflicts
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 An advantage of using Team Foundation version control to manage your files is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts before you can get, check in, unshelve, merge, or roll back your files.
 
@@ -123,7 +126,7 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
    **Then select this check box...**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Non-conflicting content changes were made in each version of a file

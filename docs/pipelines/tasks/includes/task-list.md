@@ -3,8 +3,7 @@ ms.topic: include
 ms.date: 05/03/2018
 author: steved0x
 ms.author: sdanie
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ## Build
@@ -43,6 +42,7 @@ ms.technology: devops-cicd-tasks
 |--------|-----------|
 | :::image type="icon" source="../utility/media/archive-files.png" border="false"::: [Archive Files task](../utility/archive-files.md) - Use an archive file to then create a source folder | Azure Pipelines, TFS 2017 and newer |
 | :::image type="icon" source="../utility/media/azurenlbmanagement.png" border="false"::: [Azure Network Load Balancer task](../utility/azure-nlb-management.md) - Connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool | Azure Pipelines |
+| :::image type="icon" source="../deploy/media/azure-static-app.png" border="false"::: [Azure Static Web App task](../utility/azure-static-web-app.md) - Build and deploy an [Azure Static Web App](/azure/static-web-apps/overview). | Azure Pipelines |
 | :::image type="icon" source="../utility/media/bash.png" border="false"::: [Bash task](../utility/bash.md) - Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
 | :::image type="icon" source="../utility/media/batch-script.png" border="false"::: [Batch Script task](../utility/batch-script.md) - Execute .bat or .cmd scripts when building your code | Azure Pipelines, TFS 2015 RTM and newer |
 | [Cache task](../utility/cache.md) - Improve build performance by caching files, like dependencies, between pipeline runs. | Azure Pipelines, TFS 2017 and newer |
@@ -88,9 +88,6 @@ ms.technology: devops-cicd-tasks
 | Task   | Versions  |
 |--------|-----------|
 | :::image type="icon" source="../test/media/appcentertest.png" border="false"::: [App Center Test task](../test/app-center-test.md) - Test app packages with Visual Studio App Center. | Azure Pipelines, TFS 2017 and newer |
-| :::image type="icon" source="../test/media/run-jmeter-load-test.png" border="false"::: [Cloud-based Apache JMeter Load Test task (Deprecated)](../test/run-jmeter-load-test.md) - Runs the Apache JMeter load test in cloud | Azure Pipelines |
-| :::image type="icon" source="../test/media/cloud-based-load-test-icon.png" border="false"::: [Cloud-based Load Test task (Deprecated)](../test/cloud-based-load-test.md) - Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| :::image type="icon" source="../test/media/cloud-based-web-performance-test.png" border="false"::: [Cloud-based Web Performance Test task (Deprecated)](../test/cloud-based-web-performance-test.md) - Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive | Azure Pipelines, TFS 2015 RTM and newer |
 | :::image type="icon" source="../test/media/container-structure-test-task.png" border="false"::: [Container Structure Test Task](../test/container-structure-test-task.md) - Test container structure by container task and integrate test reporting into your build and release pipelines | Azure Pipelines |
 | :::image type="icon" source="../test/media/publish-code-coverage-results-icon.png" border="false"::: [Publish Code Coverage Results task](../test/publish-code-coverage-results.md) - Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build | Azure Pipelines, TFS 2015 RTM and newer |
 | :::image type="icon" source="../test/media/publish-test-results-icon.png" border="false"::: [Publish Test Results task](../test/publish-test-results.md) - Publish Test Results to integrate test reporting into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |

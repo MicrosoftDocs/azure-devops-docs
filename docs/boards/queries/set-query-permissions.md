@@ -3,19 +3,19 @@ title: Set query permissions in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to set permissions on work item queries and folders when working in Azure Boards and Azure DevOps.
 ms.custom: "boards-queries, linked-from-support"
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
 # Set permissions on queries and query folders in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As with most project objects, you can control access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
@@ -27,9 +27,9 @@ By creating folders under Shared Queries, you can grant permissions to users for
 
 ## Prerequisites
 
-- To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with **Basic** or higher access level. 
-- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow**  and be granted **Basic** or higher access level. 
-- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted **Basic** or higher access level. 
+- To create or edit a shared query or manage permissions, you must be a member of the **Project Administrators** groups with **Basic** or higher access level. Or, you must have your **Contribute** permission set to **Allow** for the shared query folder. To get added to this group, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)
+- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow** for the query folder and be granted **Basic** or higher access level. 
+- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** for the query folder and be granted **Basic** or higher access level. 
 
 Users with Stakeholder access can't create or save queries in a Shared folder. To learn more about access levels, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
 
@@ -38,7 +38,7 @@ Users with Stakeholder access can't create or save queries in a Shared folder. T
 
 ## Default query permissions
 
-A ✔️ in the following table indicates that the corresponding access level or security group has access to a feature by default. 
+A ✔️ in the following table indicates that the corresponding security group has permission to exercise the task by default. 
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 
@@ -46,7 +46,6 @@ A ✔️ in the following table indicates that the corresponding access level or
 
 You set permissions from the web portal. To open **Queries**, see [View, run, or email a query](view-run-query.md).
 
-If you're not a member of the project administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Contribute** permission set to **Allow** for the Shared query folder.  
 
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to.
@@ -121,7 +120,7 @@ If you're not a member of the project administrators group, [get added](../../or
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Add a query folder under **Shared queries** or a subfolder. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder and choose **New query folder**.  
 
@@ -166,7 +165,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon and select **Security**. 
 

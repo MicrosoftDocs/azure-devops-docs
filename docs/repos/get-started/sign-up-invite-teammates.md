@@ -2,7 +2,7 @@
 title: Sign up and invite teammates
 titleSuffix: Azure DevOps   
 description: Quickstart guide to signing up and inviting others to join a team project in Azure DevOps Services 
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: quickstart
 ms.date: 03/18/2021
 monikerRange: 'azure-devops'
@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Sign up for free and invite others to collaborate on your project
 
-[!INCLUDE [acquisition-intro-devops](../../includes/acquisition-intro-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 <a name="MicrosoftAccount"></a>
 

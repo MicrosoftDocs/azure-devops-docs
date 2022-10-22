@@ -3,16 +3,17 @@ title: Use Git tags
 titleSuffix: Azure Repos
 description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 09/28/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Use Git tags
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Azure DevOps supports both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can create annotated tags using the web portal, and starting with Visual Studio 2017 Update 6, you can create both lightweight and annotated tags from within Visual Studio. For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
 
@@ -51,7 +52,7 @@ To view tags for a specific branch in the **Commits** view, navigate to your rep
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
 
@@ -119,6 +120,9 @@ You can also view tags in the **History** view, for example by navigating to the
 
 To create a tag, you must have the [Create Tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
 
+> [!NOTE]
+> Tag names can't contain ASCII control characters, such as spaces, tildes, and colons. It's common practice to use lowercase characters and to separate words with a hyphen. Tag name length shouldn't exceed 250 ASCII characters. To avoid ambiguity between tag names and commit hashes, don't use tag names that consist of 40 hexadecimal characters. For more information on tag naming, see [git-check-ref-format](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html).
+
 #### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
@@ -150,7 +154,7 @@ To create a tag directly from the commits view, right-click the desired tag and 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view.
 
@@ -240,7 +244,7 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Delete a tag in the remote repo
 
@@ -295,7 +299,7 @@ Right-click the tag to delete and choose **Delete Locally**
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To create a branch from a tag, select the ellipsis to the right of the tag name and choose **New branch**.
 
@@ -349,7 +353,7 @@ Right-click the tag to delete and choose **Delete Locally**
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To view the history for a tag, select the ellipsis to the right of the tag name and choose **View history**.
 

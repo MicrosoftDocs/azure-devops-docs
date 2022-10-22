@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
@@ -7,13 +7,9 @@ ms.topic: include
 ms.date: 07/19/2021
 ---
 
-::: moniker range=">= tfs-2017"
-
 ## Unsubscribe or opt out of a team or out-of-box (OOB) notification subscription
 
 You can choose to not receive notifications for certain team notification subscriptions by opting out.
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 

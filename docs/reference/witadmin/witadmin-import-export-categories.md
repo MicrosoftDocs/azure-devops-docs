@@ -1,21 +1,21 @@
 ---
 title: Import and export categories
-titleSuffix: Azure DevOps Server 
-description: Import and export categories defined for an Azure DevOps  project 
-ms.technology: devops-agile
+titleSuffix: Azure DevOps  
+description: Import and export categories defined for an Azure DevOps project 
+ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 
 # Import and export categories
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]  
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 You can import and export categories defined for a project by using the following **witadmin** commands:   
 -   **exportcategories**:  Exports the XML definition of categories defined for a project.   
@@ -33,7 +33,7 @@ For the project for which the categories are defined, you must have the followin
 -   To export categories of work item types, you must have your **View project-level information** permission set to **Allow**.   
 -   To import categories of work item types, you must be a member of the **Project Administrators** security group or have the **Edit project-level information** permission set to **Allow**.  
   
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). 
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 ## Syntax  
   

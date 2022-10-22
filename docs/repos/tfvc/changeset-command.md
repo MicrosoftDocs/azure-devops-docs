@@ -3,22 +3,29 @@ title: Changeset Command
 titleSuffix: Azure Repos
 description: Changeset Command
 ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 06/30/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
-
 
 # Changeset Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 Displays information about and lets you change the attributes, such as comments and check-in notes, that are associated with a changeset.
+ 
 
-**Required Permissions**
+## Prerequisites
 
-To use the **changeset** command you must have the **Read** permission set to **Allow** for any files or folders in the changeset for which you wish to display full information. The only users who can modify the notes and comments that are associated with a changeset are the users who created the changeset or a user who has the Revise other user's changes global permission. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **changeset** command you must have the **Read** permission set to **Allow** for any files or folders in the changeset for which you wish to display full information. The only users who can modify the notes and comments that are associated with a changeset are the users who created the changeset or a user who has the Revise other user's changes global permission. 
+
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf changeset [/comment:("comment"|@commentfile)] 
@@ -50,16 +57,16 @@ tf changeset [/comment:("comment"|@commentfile)]
 | **/latest** | Specifies the most recent changeset. Cannot be used with *changesetnumber.* |
 | **/noprompt** | Suppresses any prompts for input from you. |
 | **/collection** | Specifies the project collection. |
-| **/login** | Specifies the user name and the password to authenticate the user with Visual Studio Team Foundation Server. |
+| **/login** | Specifies the user name and the password to authenticate the user with Azure DevOps. |
 
 ## Remarks
 A *changeset* is a set of file and folder revisions that were committed to the Team Foundation version control server as part of the same check-in event. For more information, see [Working with Changesets](find-view-changesets.md).
 
 You can use the **changeset** command to view the attributes of a changeset and modify its properties. You can use the History command to determine which changeset you want to obtain information about. For more information, see [History Command](history-command.md).
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -142,24 +149,11 @@ Check-in Notes:
     Security Reviewer: ShellM
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Checkin Command](checkin-command.md)
-
-[Checkout and Edit Commands](checkout-or-edit-command.md)
-
-[Shelve Command](shelve-command.md)
-
-[History Command](history-command.md)
-
-[Configure Command](configure-command.md)
-
-#### Concepts
-
-[Working with Changesets](find-view-changesets.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Checkin Command](checkin-command.md)
+- [Checkout and Edit Commands](checkout-or-edit-command.md)
+- [Shelve Command](shelve-command.md)
+- [History Command](history-command.md)
+- [Configure Command](configure-command.md)
+- [Working with Changesets](find-view-changesets.md)

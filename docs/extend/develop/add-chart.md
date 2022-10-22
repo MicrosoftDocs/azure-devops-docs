@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Add a chart | Extensions for Azure DevOps Services
 description: Add a chart to your extension in Azure DevOps Services
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Add a chart
 
-[!INCLUDE [ ](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Learn how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
 

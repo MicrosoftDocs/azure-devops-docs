@@ -2,7 +2,7 @@
 title: Clone a Git repository in a public project
 titleSuffix: Azure DevOps Services Public Project
 description: Create a local copy of a repo using Visual Studio or command line clone 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.author: sdanie
 author: steved0x 
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Clone a Git repository in a public project
 
-[!INCLUDE [temp](includes/version-public-projects.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can create a complete local copy of a Git repository from a public project by cloning it. 
 Cloning a repo downloads all commits and branches in the repo and sets up a named relationship with the existing repo you cloned. If you are signed in as a member of the project, you can use this relationship to interact with the existing repo, pushing and pulling changes to share code with the public project team.

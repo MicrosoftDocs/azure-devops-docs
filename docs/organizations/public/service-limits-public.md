@@ -2,7 +2,7 @@
 title: Rate and service limits 
 titleSuffix: Azure DevOps Services Public Project
 description: Terms of service  
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Review rate and service limits 
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn which service limits and rate that your public projects are subject to. 
 

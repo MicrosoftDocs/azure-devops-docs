@@ -1,54 +1,105 @@
-﻿---
-title: Get started with NuGet packages
-description: Use Azure Artifacts to publish and consume NuGet packages
-ms.technology: devops-artifacts
+---
+title: Get started with NuGet packages and Azure Artifacts
+description: Use Azure Artifacts to publish and download NuGet packages to and from Artifacts feeds
+ms.service: azure-devops-artifacts
 ms.custom: contperf-fy21q3
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 03/23/2021
-monikerRange: '>= tfs-2017'
+ms.date: 02/18/2022
+monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
-# Get started with NuGet packages
+# Get started with NuGet packages in Azure Artifacts
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Developers can use Azure Artifacts to publish and consume NuGet packages both to and from feeds and public registries. A feed is an organizational construct that hosts packages. You can create public and private feeds, and you can control who can access your packages by modifying feed permissions.
+Azure Artifacts enables developers to publish, and download NuGet packages from different sources such as feeds and public registries. Artifact feeds can be private to share your packages with your team and specific users, or public to share them publicly with anyone on the internet.
+
+In this article, you'll learn:
+
+> [!div class="checklist"]    
+> * How to create a new feed  
+> * How to set up your project and connect to your feed  
+> * How to publish NuGet packages to your feed
+> * How to download NuGet packages from your feed  
 
 ## Prerequisites
 
+- An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
 - [Install NuGet client tools](/nuget/install-nuget-client-tools)
-- [Project and org permissions](../organizations/security/lookup-organization-owner-admin.md) to use Azure Artifacts.
-
-::: moniker range=">=tfs-2017 <= tfs-2018"
-
-This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](start-using-azure-artifacts.md).
-
-::: moniker-end
-
-::: moniker range=">=tfs-2017 < azure-devops"
-
-> [!NOTE]
-> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your organization, you can install it from the [Azure Artifacts Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-::: moniker-end
-
-<a name="create-a-feed"></a>
 
 ## Create a feed
 
-With Azure Artifacts, you can create two types of feeds: project-scoped and organization-scoped feeds. All public feeds are project-scoped and they inherit the hosting project's visibility settings. By default, any feed that's created by using the web UI is a project-scoped feed.
+You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scoped-vs-organization-scoped-feeds): project-scoped and organization-scoped feeds. All public feeds are scoped to their hosting project and they inherit its visibility settings.
 
 [!INCLUDE [](includes/create-feed.md)]
 
-<a name="publish-a-package"></a>
+## Connect to feed
 
-## Connect to feed and publish packages
+::: moniker range=">= azure-devops-2019"
 
-[!INCLUDE [](includes/nuget/publish.md)]
+1. From within your project, select **Artifacts**, and then select your feed.
 
-<a name="consume-in-visual-studio"></a>
+1. Select **Connect to feed**.
 
-## Consume packages in Visual Studio
+    :::image type="content" source="./media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
+
+1. Select **NuGet.exe**.
+
+    :::image type="content" source="./media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
+
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to:
+
+    1. Install the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+1. Follow the instructions in the **Project setup** to add a nuget .config file.
+
+    :::image type="content" source="./media/project-setup.png" alt-text="Project setup":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release** > **Packages**.
+
+1. Select your feed from the dropdown menu.
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="./media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
+
+1. Select **NuGet** and follow the instruction to connect to your feed.
+
+    :::image type="content" source="./media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
+
+::: moniker-end
+
+## Publish NuGet packages  
+
+Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed. See [nuget sources](/nuget/reference/cli-reference/cli-ref-sources), and [nuget push](/nuget/reference/cli-reference/cli-ref-push) for more details:
+
+```Command
+nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
+nuget push -Source <SourceName> -ApiKey key <PackagePath>
+```
+
+If you don't have a NuGet package but want to try publishing packages to your feed, you can install the _HelloWorld_ sample package as follows:
+   
+```Command
+nuget install HelloWorld -ExcludeVersion
+```
+
+## Download NuGet packages
 
 [!INCLUDE [](includes/nuget/consume.md)]
+
+> [!NOTE]
+> Searching for packages in upstreams with NuGet Package Explorer is not supported.
+
+## Related articles
+
+- [Publish NuGet packages with Azure Pipelines](../pipelines/artifacts/nuget.md)
+- [Publish packages to NuGet.org](./nuget/publish-to-nuget-org.md)
+- [NuGet.org upstream source](./nuget/upstream-sources.md)

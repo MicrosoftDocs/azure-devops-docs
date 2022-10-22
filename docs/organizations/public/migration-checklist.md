@@ -2,7 +2,7 @@
 title: Migration checklist
 titleSuffix: Azure DevOps Services Public Project 
 description: Best practices when changing a private project to a public project 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Private-to-public migration checklist
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 In this article, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 

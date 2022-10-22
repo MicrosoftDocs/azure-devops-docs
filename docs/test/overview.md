@@ -2,17 +2,17 @@
 title: What is Azure Test Plans? Manual, exploratory, and automated test tools. 
 description: Learn about the test tools and capabilities that Azure Test Plans provides to drive quality and collaboration throughout the development process. 
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 12/13/2021
 ---
 
 # What is Azure Test Plans?  
 
-**Azure Test Plans | Azure DevOps Server 2020**
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Test Plans provides rich and powerful
 tools everyone in the team can use to drive quality and collaboration
@@ -47,7 +47,7 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 
 
 > [!NOTE]   
-> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
+> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/azure/load-testing/overview-what-is-azure-load-testing).
 
 
 ### Key benefits 
@@ -346,7 +346,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 ### Requirements quality widget 
 
-The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate **for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
+The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate** for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
 
 :::image type="content" source="../pipelines/test/media/requirements-traceability/requirements-quality-widget.png" alt-text="Screenshot of Requirements traceability widget added to dashboard.":::
 

@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 02/18/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Release gates and approvals overview
 
-[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -33,12 +33,12 @@ By using gates, approvals, and manual intervention you can take full control of 
 | Scenario | Feature(s) to use |
 | --- | --- |
 | A user must manually validate the change request and approve the deployment to a certain stage. | [Pre-deployment approvals](approvals.md) |
-| A user must manually sign out after deployment before the release is triggered to other stages. | [Post-deployment approvals](approvals.md) |
+| A user must manually sign off after deployment before the release is triggered to other stages. | [Post-deployment approvals](approvals.md) |
 | A team wants to ensure there are no active issues in the work item or problem management system before deploying a build to a stage.  | [Pre-deployment gates](gates.md) |
 | A team wants to ensure there are no reported incidents after deployment, before triggering a release. | [Post-deployment gates](gates.md) |
-| After deployment, a team wants to wait for a specified time before prompting users to sign out. | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
-| During deployment, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation)| 
-| During deployment, a team wants to prompt users to enter a value for a parameter used by the deployment tasks, or allow users to edit the release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation) | 
+| After deployment, a team wants to wait for a specified time before prompting users to sign off. | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
+| During deployment, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#set-up-manual-intervention) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation)| 
+| During deployment, a team wants to prompt users to enter a value for a parameter used by the deployment tasks, or allow users to edit the release. | [Manual Intervention](../deploy-using-approvals.md#set-up-manual-intervention) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation) | 
 | During deployment, a team wants to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
 You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
@@ -63,7 +63,7 @@ jobs:
 
 - [Release deployment control using approvals](approvals.md)
 - [Release deployment control using gates](gates.md)
-- [Configure a manual intervention](../deploy-using-approvals.md#configure-maninter)
+- [Configure a manual intervention](../deploy-using-approvals.md#set-up-manual-intervention)
 - [Add stages, dependencies, & conditions](../../process/stages.md)
 - [Release triggers](../triggers.md)
 - [Releases in Azure Pipelines](../releases.md)

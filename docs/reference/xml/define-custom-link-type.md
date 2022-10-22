@@ -2,19 +2,19 @@
 title: Define a custom link type 
 titleSuffix: TFS
 description: Add a custom link type to meet your project tracking requirements in Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 0d0d51f7-b8d0-4e5d-82b9-766ee12690ba
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: how-to
 monikerRange: '< azure-devops'
 ms.date: 02/10/2017
 ---
 
 # Define a custom link type
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for On-premises XML process models. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
@@ -38,7 +38,7 @@ With the `witadmin` command-line utility, you can deactivate, delete, export, im
   
 Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md).  
   
-In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
+In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true).  
   
 ## Related articles  
 - [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)

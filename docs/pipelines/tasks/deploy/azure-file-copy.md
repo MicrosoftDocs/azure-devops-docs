@@ -7,12 +7,12 @@ ms.custom: seodec18, fasttrack-edit
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure File Copy task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
@@ -20,7 +20,7 @@ Microsoft Azure storage blobs or virtual machines (VMs).
 > [!NOTE]
 > This task is written in PowerShell and thus works **only** when run on Windows agents. If your pipelines require Linux agents and need to copy files to an Azure Storage Account, consider running `az storage blob` commands in the [Azure CLI task](./azure-cli.md) as an alternative.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -72,7 +72,7 @@ The task supports authentication based on Azure Active Directory. Authentication
 
 | Argument | Description |
 |------------------------------------------|----------------------------------------|
-| `sourcePath` - **Source** | Required. The source of the files to copy. YAML Pipelines and Classic Release support [pre-defined system variables](../../build/variables.md?tabs=yaml) like *Build.Repository.LocalPath* as well. [Release variables](../../release/variables.md?tabs=batch) are supported only in classic releases. Wild card symbol (\*) is supported anywhere in the file path or file name. |
+| `sourcePath` - **Source** | Required. The source of the files to copy. YAML Pipelines and Classic Release support [predefined system variables](../../build/variables.md?tabs=yaml) like *Build.Repository.LocalPath* as well. [Release variables](../../release/variables.md?tabs=batch) are supported only in classic releases. Wild card symbol (\*) is supported anywhere in the file path or file name. |
 | `connectedServiceNameARM` or `azureSubscription` - **Azure Subscription** | Required. The name of an [Azure Resource Manager service connection](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview) for more details. |
 | `destination` - **Destination Type** | Required. The type of target destination for the files. Choose **Azure Blob** or **Azure VMs**. |
 | `storageAccountRM` or `storage` - **RM Storage Account** | Required. The name of an existing storage account within the Azure subscription. |
@@ -116,7 +116,9 @@ to obtain this.
 The task uses Windows Remote Management (WinRM) HTTPS protocol to
 copy the files from the storage blob container to the Azure VMs.
 This requires the WinRM HTTPS service to be configured on the VMs,
-and a suitable certificate installed. [Configure WinRM after virtual machine creation](/azure/marketplace/cloud-partner-portal/virtual-machine/cpp-configure-winrm-after-vm-creation)
+and a suitable certificate installed. 
+
+##### Configure WinRM after virtual machine creation
 
 If the VMs have been created without opening the 
 WinRM HTTPS ports, follow these steps:
@@ -156,7 +158,7 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

@@ -3,17 +3,17 @@ title: Velocity metrics and usage guidance
 titleSuffix: Azure DevOps 
 description: Learn about working with velocity charts generated for an Azure DevOps team or project.
 ms.custom: dashboards
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 09/28/2021
+ms.date: 04/04/2022
 ---
 
 # Velocity metrics and usage guidance  
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 Velocity metrics provide useful information to support the following team and product management activities:  
 - Sprint planning  
@@ -37,6 +37,8 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 - **Completed Late**  - calculated based on the amount of work assigned to the sprint before the start of the sprint but was completed after the end of the sprint.  
 - **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint before the start of the sprint and hasn't been set to completed. 
 
+To open the Velocity chart or add the Velocity widget to a dashboard, see [View or configure team velocity](team-velocity.md).
+
 #### [In-context Velocity chart](#tab/in-context)
 
 ![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](media/velocity/analytics-velocity-azure-devops.png)
@@ -45,7 +47,7 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 
 ![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
 
----
+***
 
 
 You can configure each chart in the following ways: 
@@ -87,7 +89,7 @@ Both of these charts support visualizing team velocity for several sprints. The 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 The in-context Velocity charts are based on the sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) assigned to backlog items. These charts are similar to the one shown in the following image. 
 
@@ -113,18 +115,6 @@ By minimizing the size variability of your backlog items, you help strengthen th
 While velocity provides a measure of a team's ability to deliver work, you shouldn't confuse it as a key performance indicator for the team. 
 
 Velocity simply provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request will mostly likely lead to "Story points inflation" and lead to less desirable outcomes. 
-
-::: moniker range="<= tfs-2017"
-
-## Other types of velocity charts
-
-While the velocity chart provides a measure of Effort, Story Points, or Size that gets completed sprint-over-sprint, there may be other types of velocity that you may want to track. You can create similar charts by creating a work item query and [chart the count of or sum of items](../dashboards/charts.md).  
-
-For example, you can create a chart of the number of Product backlog items and bugs completed for the last several sprints. For examples on creating this type of chart, see [Query by numeric fields](../../boards/queries/query-numeric.md).
-
-![Velocity count of backlog items and bugs](media/ALM_VF_VelocityCountItems.png) 
-
-::: moniker-end
 
 ## Next steps
 

@@ -2,7 +2,7 @@
 title: Release Burndown sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a release burndown Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Release burndown sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to display the burndown of User Stories for a release based on work items tagged with a release tag. The following image shows a burndown both by Story Points and User Stories count.
  

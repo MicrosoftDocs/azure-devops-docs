@@ -3,19 +3,19 @@ title: Use semantic searches in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards and Azure DevOps.  
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
 # Run a semantic work item search in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="search-box"/>
 
@@ -28,11 +28,10 @@ You can find work items by using shortcut filters or by specifying keywords or p
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-You can run a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
+You can run a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or for on-premises deployments when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
+ 
 
-For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can run [semantic searches](#start-an-improvised-search-and-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!TIP]   
 > If semantic search has been configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
 > 
@@ -75,7 +74,7 @@ Free text search easily searches across all work item fields, including custom f
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -100,11 +99,6 @@ Free text search easily searches across all work item fields, including custom f
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-::: moniker-end
-
-::: moniker range=">= tfs-2013  <= tfs-2015" 
-
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -148,7 +142,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -178,51 +172,21 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    and states, by using the drop-down selector lists at the top of the results page.
 ::: moniker-end
 
-::: moniker range="<= tfs-2015" 
-
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
-::: moniker-end
-
-::: moniker range="<= tfs-2017" 
-
-## Start an improvised search and use shortcut filters
-
-For TFS 2017.1 and earlier versions, you can run improvised searches from the web portal or from Visual Studio Team Explorer. Improvised searches automatically scope to the items defined to the project you're currently connected to.  
-
-You can enter or select one or more of the following shortcut identifiers:
-
--   `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`)
--   `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`)
--   `S` for = **S**tate, (for example, `S=New`)
--   `T` for = Work Item **T**ype, (for example, `T=Task`).
-
-Use the `@Me` and `@Today` macros to specify your user name or today's date.
-
-Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
-
-::: moniker-end
-
+<a id="start-an-improvised-search-and-use-shortcut-filters" />
+ 
 ### From the web portal 
 
 ::: moniker range="azure-devops"
 Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
 
 ::: moniker-end
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)   
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
-
-> [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)    
-
-::: moniker-end
 
 ### From Visual Studio Team Explorer
 
@@ -341,8 +305,6 @@ The <strong>@Me</strong> macro expands to the full name of the current user in a
    :::column-end:::
 :::row-end:::
 ---
-
-
 
 ## Use Equals, Contains, and Not operators
 

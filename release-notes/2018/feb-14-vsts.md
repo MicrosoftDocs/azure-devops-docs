@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 2/14/2018
 ms.topic: article
-ms.technology: devops-release-notes
 ms.manager: jillfra
 description: In the Sprint 130 Update of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline.
 hide_comments: true
@@ -132,7 +131,7 @@ On the package list, you can now see the view(s) of each package version to quic
 
 ### Link to packages from anywhere
 
-Although you could share the URL to a package found in the **Packages** hub in the past, it was often difficult to use because you needed to include a project in the URL, which may or may not apply to those using the link. With this Update, you can now share packages using an account-level URL that will automatically select a project the recipient has access to. The URL format is: `https://<account>.visualstudio.com/_packaging?feed=<feed>&package=<package>&version=<version>&protocolType=<NuGet|Npm|Maven>&_a=package` All parameters except `<account>` are optional, but if you provide a package, you must provide the protocol type.
+Although you could share the URL to a package found in the **Packages** hub in the past, it was often difficult to use because you needed to include a project in the URL, which may or may not apply to those using the link. With this Update, you can now share packages using an account-level URL that will automatically select a project the recipient has access to. The URL format is: `https://<account>.visualstudio.com/_packaging?feed=<feed>&package=<package>&version=<version>&protocolType=<NuGet|npm|Maven>&_a=package` All parameters except `<account>` are optional, but if you provide a package, you must provide the protocol type.
 
 ### Share your packages using a badge
 

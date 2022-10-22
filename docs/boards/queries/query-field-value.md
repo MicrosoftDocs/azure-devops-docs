@@ -3,7 +3,7 @@ title: Query by field values in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to create a query by filtering on field values that are compared to other field values in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
@@ -13,7 +13,7 @@ ms.date: 10/25/2021
 
 # Query by field value comparisons in Azure Boards and Azure DevOps  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can create queries based on how one field's value compares to another using the comparison field operators. This query is useful to filter work items based on: 
 - Is the person who created the work item the same as or different than the person assigned to it? Or, who closed it

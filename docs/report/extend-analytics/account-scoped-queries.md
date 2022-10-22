@@ -2,8 +2,7 @@
 title: Organization and project-scoped queries
 titleSuffix: Azure DevOps 
 description: Learn how to query OData Analytics for an organization or at the project-level in Azure DevOps.
-ms.technology: devops-analytics
-ms.reviewer: kokosins
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -13,7 +12,7 @@ ms.date: 09/30/2021
 
 # Project and organization-scoped queries
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Using Analytics for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
 
@@ -37,7 +36,7 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
+- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
@@ -87,7 +86,7 @@ In the examples provided, make the following replacements:
 For example, the following project-scoped query will return the count of work items for a specific project:  
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/WorkItems/$count
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/WorkItems/$count
 ```
 
 
@@ -99,14 +98,14 @@ https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/WorkItem
 Likewise, the following query string will return the areas for a specific project:
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/Areas
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/Areas
 ```
 
 It's equivalent to the following filter on an organization-scoped query:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
-  $filter=Project/ProjectName eq 'ProjectA'
+  $filter=Project/ProjectName eq '{ProjectName}'
 ```
 
 <a id="expand-option" />
@@ -118,7 +117,7 @@ When using a project-scoped query with an `$expand` option, you aren't required 
 For example, the following project-scoped filter:
 
 ``` odata
-https://analytics.dev.azure.com/{OrganizationName}/ProjectA/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v1.0/WorkItems?
   $expand=Parent
 ```
 
@@ -126,8 +125,8 @@ is filtered automatically to enforce security:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectName eq 'ProjectA'
-  &$expand=Parent($filter=ProjectName eq 'ProjectA')
+  $filter=ProjectName eq '{ProjectName}'
+  &$expand=Parent($filter=ProjectName eq '{ProjectName}')
 ```
 
 <a id="org-scope" />
@@ -146,7 +145,7 @@ For example, the following organization-scoped query, which uses an `$expand` to
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Project/ProjectName eq 'ProjectA'
+  $filter=Project/ProjectName eq '{ProjectName}'
   &$expand=Children
 ```
 
@@ -154,8 +153,8 @@ It requires another filter to verify the children are limited to the specified p
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Project/ProjectName eq 'ProjectA'
-  &$expand=Children($filter=Project/ProjectName eq 'ProjectA')
+  $filter=Project/ProjectName eq '{ProjectName}'
+  &$expand=Children($filter=Project/ProjectName eq '{ProjectName}')
 ```
 
 <a id="parent-work-items" />
@@ -166,7 +165,7 @@ The following query, which uses an `$expand` option to retrieve the parent of al
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Project/ProjectName eq 'ProjectA'
+  $filter=Project/ProjectName eq '{ProjectName}'
   &$expand=Parent
 ```
 
@@ -174,8 +173,8 @@ It requires another filter to verify the parent is limited to the specified proj
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Project/ProjectName eq 'ProjectA'
-  &$expand=Parent($filter=Project/ProjectName eq 'ProjectA')
+  $filter=Project/ProjectName eq '{ProjectName}'
+  &$expand=Parent($filter=Project/ProjectName eq '{ProjectName}')
 ```
 
 Without the other filter, the request will fail if the parent of any work item references work items in a project that you don't have read access to.
@@ -192,15 +191,15 @@ For example, the following query:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectName eq 'ProjectA'
-  &$expand=Children($filter=Project/ProjectName eq 'ProjectA')
+  $filter=ProjectName eq '{ProjectName}'
+  &$expand=Children($filter=Project/ProjectName eq '{ProjectName}')
 ```
 
 Is interpreted as:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectName eq 'ProjectA'
+  $filter=ProjectName eq '{ProjectName}'
   &$expand=Children
 ```
 
@@ -210,7 +209,7 @@ To work around the restriction, you need to add an extra expression in the `$fil
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')
+  $filter=ProjectName eq '{ProjectName}' and Children/any(r: r/ProjectName eq '{ProjectName}')
   &$expand=Children
 ```
 
@@ -218,7 +217,7 @@ Using `$level` is only supported if you have access to all projects in the colle
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
+  $expand=Children($levels=2;$filter=ProjectName eq '{ProjectName}')
 ```
 
 Analytics doesn't support any cross-level reference for projects using $it alias. As an example, the following query references the root work item's ProjectName using $it alias, which isn't supported:

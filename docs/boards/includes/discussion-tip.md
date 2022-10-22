@@ -1,6 +1,5 @@
 ---
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
@@ -10,23 +9,20 @@ ms.date: 11/19/2021
 <a id="discussion" />
 <a id="capture-comments-in-the-discussion-section" />
 
-::: moniker range=">= tfs-2017" 
 
 ## Capture comments in the Discussion section 
 
 Use the **Discussion** section to add and review comments made about the work being performed. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section within a work item form](/azure/devops/boards/backlogs/media/discussion-section.png)   
-
-::: moniker-end 
+> ![Discussion section within a work item form](../backlogs/media/discussion-section.png)   
 
 ::: moniker range=">= azure-devops-2019"
 
 The rich text editor tool bar displays below the text entry area. It appears when you click your cursor within each text box that supports text formatting. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/discussion-rich-text-editor-toolbar.png) 
+> ![Discussion section, New Rich Text Editor toolbar](../queries/media/share-plans/discussion-rich-text-editor-toolbar.png) 
 
 > [!NOTE]  
 > There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
@@ -40,18 +36,16 @@ Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/
 
 ::: moniker-end
 
-
-
 ::: moniker range=">= azure-devops-2019"  
 
 Type a name, or enter a number and the menu list will filter to match your entry. Choose the entry you want to add. You can bring a group into the discussion by typing **@** and the group name, such as a team or security group. 
 
 ### Edit or delete a comment 
 
-If you need to edit or delete any of your discussion comments, choose :::image type="icon" source="/azure/devops/media/icons/edit.png" border="false"::: <strong>Edit</strong> or choose the :::image type="icon" source="/azure/devops/media/icons/actions-icon.png" border="false"::: actions icon and then choose **Delete**. 
+If you need to edit or delete any of your discussion comments, choose :::image type="icon" source="../../media/icons/edit.png" border="false"::: <strong>Edit</strong> or choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and then choose **Delete**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, Edit, Delete actions](/azure/devops/boards/media/discussion-edit-delete.png)  
+> ![Discussion section, Edit, Delete actions](../media/discussion-edit-delete.png)  
 
 ::: moniker-end
 
@@ -68,7 +62,7 @@ A full audit trail of all  edited and deleted comments is maintained in the **Hi
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
@@ -78,7 +72,7 @@ You can't edit or delete comments once you've entered them.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020" 
+::: moniker range="< azure-devops" 
 
 > [!IMPORTANT]  
 > For on-premises Azure DevOps Server, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.

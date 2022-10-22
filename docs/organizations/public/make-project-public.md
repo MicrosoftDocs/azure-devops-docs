@@ -2,7 +2,7 @@
 title: Make your project public or private 
 titleSuffix: Azure DevOps Services Public Project 
 description: Switch your project from private to public or from public to private 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
 ms.author: chcomley
@@ -14,7 +14,7 @@ ms.date: 02/03/2020
 
 # Change the project visibility, public or private
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to change the visibility of your project to and from public or private. Users who aren't signed in to your organization have read-only access to public projects on Azure DevOps. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services.
 You can easily switch a private project to a public project, and vice-versa.  Before you do so, review the notes provided in [Private-to-public migration checklist](migration-checklist.md). 
@@ -26,7 +26,7 @@ You can easily switch a private project to a public project, and vice-versa.  Be
 ## Prerequisites
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
-- As an organization owner, you can change policies and change project information. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level).
+- You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Enable anonymous access to projects for your organization
 
@@ -37,7 +37,7 @@ Before you can change a private project, to a public project, you must enable an
 2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then choose **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
 
 3. Choose the **Policies** page, and select **On** for **Allow public projects**.
 

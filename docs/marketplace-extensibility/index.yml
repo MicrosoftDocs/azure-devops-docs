@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
-title: Marketplace & extensibility documentation
+title: Marketplace & Extensibility documentation 
 summary: Discover, manage, develop extensions and widgets for integration with Azure DevOps. 
 
 metadata:
   title: Marketplace & extensibility documentation
+  titleSuffix: Azure DevOps 
   description: Discover, manage, and develop extensions and widgets for integration with Azure DevOps. 
-  ms.prod: devops 
-  ms.technology: devops-marketplace
+  ms.subservice: azure-devops-marketplace
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
@@ -21,26 +21,18 @@ landingContent:
   # Card (optional)
   - title: Discover & manage Marketplace extensions
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: About Azure DevOps Marketplace
-            url: ../marketplace/overview.md
+            url: /azure/devops/extend/overview
       - linkListType: quickstart
         links:
-          - text: Discover extensions
-            url: ../marketplace/overview.md
           - text: Request extensions
             url: ../marketplace/request-extensions.md
           - text: Install extensions
             url: ../marketplace/install-extension.md
-          - text: Assign paid extensions
-            url: ../marketplace/install-extension.md
   - title: Develop extensions
     linkLists:
-      - linkListType: video
-        links:
-          - text: Develop an Azure DevOps Services extension with continuous delivery pipeline
-            url: https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3
       - linkListType: quickstart
         links:
           - text: Develop a web extension
@@ -48,7 +40,7 @@ landingContent:
           - text: Extension samples
             url: ../extend/develop/samples-overview.md
           - text: Extensibility points
-            url: /previous-versions/azure/devops/extend/reference/targets/overview
+            url: ../extend/reference/targets/overview.md
       - linkListType: tutorial
         links:
           - text: Create a custom pipelines task

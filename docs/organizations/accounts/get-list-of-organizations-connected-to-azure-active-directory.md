@@ -3,7 +3,7 @@ title: Get list of organizations connected to Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to download a complete list of organizations backed by or connected to Azure Active Directory (Azure AD).
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Get list of organizations backed by Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to download a complete list of organizations backed by an Azure Active Directory (Azure AD) tenant. 
 On this list, you can find the following information:
@@ -35,7 +35,7 @@ Using any organization backed by your Azure AD, complete the following steps. If
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then **Download**.
 

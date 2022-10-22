@@ -2,9 +2,9 @@
 title: Extension Report | Azure DevOps
 description: Use the Reports feature to track and analyze how your extension is doing and take required actions. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 11/12/2019
@@ -12,7 +12,7 @@ ms.date: 11/12/2019
 
 # Extension reporting hub
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Once your extension is available in the [Visual Studio Marketplace]() you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.

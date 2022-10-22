@@ -1,16 +1,18 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Troubleshoot your service hooks integrations | Azure DevOps Services
 description: Troubleshoot problems with the services you have integrated with your Azure DevOps Services organization
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
-monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
+ms.date: 04/25/2022
 ---
 
 # Troubleshoot a service hooks issue
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ## View activity and debug problems
 
@@ -35,7 +37,7 @@ and event payload data, select a subscription in the table and select **History*
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. To view the activity and status of your subscriptions,
 go to the Service Hooks page. 
@@ -106,9 +108,14 @@ After 7 retries, the subscription status gets set to _DisabledBySystem_ if notif
 
 <!-- BEGINSECTION class="m-qanda" -->
 
+#### Q: What is the payload limit of a service-hook? 
+
+**A:** The payload limit is 2 MB. Larger payloads cause degradation in performance and reliability. As a best practice, service-hooks should limit the payload to 2 MB or less. 
+
+
 #### Q: What does the status Enabled (restricted) mean? 
 
-A: A subscription becomes restricted if too many failures occur. Enabled (restricted) is the same as being on probation.
+**A:** A subscription becomes restricted if too many failures occur. Enabled (restricted) is the same as being on probation.
 
 #### Q: What does the status Disabled (due to failures) mean?
 
@@ -119,12 +126,12 @@ A: A subscription is automatically disabled after a series of consecutive failur
 
 #### Q: What does the status Disabled (user left project) mean?
 
-A: The user who created the subscription is no longer a member of the team.
+**A:** The user who created the subscription is no longer a member of the team.
 
 
 #### Q: What should I try if a service hook isn't working? 
 
-A: Check these things:
+**A:** Check these things:
 
 - Confirm the subscription is enabled.
 
@@ -134,10 +141,10 @@ A: Check these things:
 
 #### Q: Can I grant a regular project user the ability to view and manage service hook subscriptions for a project? 
 
-A: By default, only project administrators have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
+**A:** By default, only project administrators have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
 #### Q: Can I programmatically create subscriptions? 
 
-A: Yes, use [REST APIs](./create-subscription.md).
+**A:** Yes, use [REST APIs](./create-subscription.md).
 
 <!-- ENDSECTION -->

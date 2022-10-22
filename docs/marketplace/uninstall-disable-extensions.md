@@ -2,29 +2,32 @@
 title: Uninstall disable extensions in Azure DevOps
 titleSuffix: Azure DevOps
 description: Uninstall, disable, or remove extensions for Azure DevOps
-ms.topic: conceptual
-ms.technology: devops-marketplace
+ms.topic: how-to
+ms.custom: engagement-fy23
+ms.subservice: azure-devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+ms.date: 10/06/2022
+monikerRange: '<= azure-devops'
 ---
  
-# Uninstall or disable extensions
+# Uninstall or disable extensions for Azure DevOps
 
-[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to uninstall or disable an extension that you don't need.
 
+> [!NOTE]
+> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](install-extension.md). 
+
 ## Prerequisites
 
-You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) to uninstall or disable extensions.
+- To uninstall or disable extensions, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. For more information, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). 
+
+## Uninstall or disable extensions  
 
 ::: moniker range="azure-devops"
-
-## Uninstall or disable extensions in Azure DevOps Services
-
 #### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -42,13 +45,11 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-[Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
-
-<a id="uninstall-extension" />
+[Uninstall extension](#uninstall-an-extension) | [Disable extension](#disable-extension)
 
 ### Uninstall an extension
 
-You can uninstall an extension with the [az devops extension uninstall](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-uninstall) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can uninstall an extension with the [az devops extension uninstall](/cli/azure/devops/extension#az-devops-extension-uninstall) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension uninstall --extension-name
@@ -75,7 +76,7 @@ az devops extension uninstall --extension-name Timetracker --publisher-name 7pac
 
 ### Disable an extension
 
-You can disable an extension with the [az devops extension disable](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-disable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can disable an extension with the [az devops extension disable](/cli/azure/devops/extension#az-devops-extension-disable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension disable --extension-name
@@ -101,15 +102,15 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 7pace           Timetracker     Timetracker  5.0.1.34507  2019-11-13       disabled
 ```
 
+::: moniker-end
+
 [!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
 
-::: moniker-end
+::: moniker range="< azure-devops"
 
-::: moniker range=">= tfs-2015 < azure-devops"
-
-## Uninstall extensions from the local gallery in TFS or Azure DevOps Server
+To uninstall extensions from the local gallery in Azure DevOps on-premises server, perform the following steps. 
 
 1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
 
@@ -119,9 +120,9 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 
-## Uninstall extensions in a collection
+To uninstall extensions in a collection, perform the following steps. 
 
 1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
 
@@ -129,13 +130,12 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
    ![Remove extension](media/remove-extension-TFS.png)
 
-::: moniker-end
+::: moniker-end 
 
 ::: moniker range="azure-devops"
+## Enable or list extensions through the command line
 
-## Enable an extension
-
-You can enable an extension with the [az devops extension enable](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can enable an extension with the [az devops extension enable](/cli/azure/devops/extension#az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension enable --extension-name
@@ -163,7 +163,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ## List extensions
 
-You can list the extensions that are installed in your organization with the [az devops extension list](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-list) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can list the extensions that are installed in your organization with the [az devops extension list](/cli/azure/devops/extension#az-devops-extension-list) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli
 az devops extension list [--include-built-in {false, true}]
@@ -208,7 +208,7 @@ ms-devlabs      WorkItemVisualizatio...  Work Item Visualizat...  1.4.64        
 
 ## List extension information
 
-You can list the details about an extension with the [az devops extension show](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can list the details about an extension with the [az devops extension show](/cli/azure/devops/extension#az-devops-extension-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension show --extension-name
@@ -240,4 +240,4 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 - [Install extensions](install-extension.md)
 - [Request extensions](request-extensions.md)
-- [Manage extension permissions](how-to/grant-permissions.md)
+- [Manage extension permissions](grant-permissions.md)

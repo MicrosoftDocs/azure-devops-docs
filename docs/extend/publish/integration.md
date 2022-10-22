@@ -1,10 +1,10 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Package and Publish an Integration
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/29/2016
@@ -12,7 +12,7 @@ ms.date: 08/29/2016
 
 # Package and publish an integration to the Marketplace
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Do you have a tool, service, or product that integrates with Azure DevOps or Team Foundation Server (TFS)?
 If so, help users find it by publishing it on the Visual Studio Marketplace.
@@ -60,7 +60,7 @@ Before you package your integration as an extension, you'll need to create a `ho
     * Screenshots (1366x768 pixels)
 2. Create a file called `overview.md`
     * Describe your integration here
-    * To learn more about markdown, see [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+    * To learn more about Markdown, see [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 3. Create a file called `vss-integration.json`
     * This file is your Marketplace listing's manifest file, it contains many properties to describe your extension in your Marketplace listing. You can browse the [extension manifest reference here](../develop/manifest.md)
 

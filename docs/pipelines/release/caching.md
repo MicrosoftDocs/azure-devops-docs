@@ -4,11 +4,13 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 12/03/2021
+ms.date: 10/03/2022
 monikerRange: azure-devops
 ---
 
 # Pipeline caching
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Pipeline caching can help reduce build time by allowing the outputs or downloaded dependencies from one run to be reused in later runs, thereby reducing or avoiding the cost to recreate or redownload the same files again. Caching is especially useful in scenarios where the same dependencies are downloaded over and over at the start of each run. This is often a time consuming process involving hundreds or thousands of network calls.
 
@@ -18,46 +20,45 @@ Caching is currently supported in CI and deployment jobs, but not classic releas
 
 ### When to use artifacts versus caching
 
-Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) perform similar functions but are designed for different scenarios and should not be used interchangeably. In general:
+Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) perform similar functions but are designed for different scenarios and shouldn't be used interchangeably.
 
 * **Use pipeline artifacts** when you need to take specific files produced in one job and share them with other jobs (and these other jobs will likely fail without them).
 
-* **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
+* **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files won't impact the job's ability to run).
 
 > [!NOTE]
-> Caching is currently free, and caches are stored in Azure blob storage.
+> Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
-## Use Cache task
+## Cache task
 
-Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
+Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that wasn't skipped. This step is responsible for saving the cache.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
 
-### Configure Cache task
+### Configure the Cache task
 
-The `Cache` task has two required inputs: `key` and `path`. 
+The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* and *path*:
 
-#### Path input
+- **path**: the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
-`path` the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`. You can use predefined variables however wildcards are not supported.
+> [!NOTE]
+> You can use [predefined variables](../build/variables.md) to store the path to the folder you want to cache, however wildcards are not supported.
 
-#### Key input
-
-`key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
+- **key**: should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
 * **Strings**: <br>
-fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
+Fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
 * **File paths**: <br>
-path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
+Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" doesn't exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
 * **File patterns**: <br>
-comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+Comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
@@ -67,7 +68,7 @@ Relative file paths or file patterns are resolved against `$(System.DefaultWorki
 
 **Example**:
 
-Here is an example showing how to cache dependencies installed by Yarn:
+Here's an example showing how to cache dependencies installed by Yarn:
 
 ```yaml
 variables:
@@ -88,11 +89,14 @@ steps:
 
 In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file that uniquely identifies the set of dependencies in the cache.
 
-On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key does not exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key doesn't exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+
+> [!NOTE]
+> `Pipeline.Workspace` is the local path on the agent running your pipeline where all directories are created. This variable has the same value as `Agent.BuildDirectory`.
 
 #### Restore keys
 
-`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
+`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fall back to another key in the case that a `key` doesn't yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
 
 #### Required software on self-hosted agent
 
@@ -102,12 +106,11 @@ On the first run after the task is added, the cache step will report a "cache mi
 |BSD Tar | No | No | Required |
 |7-Zip    | Recommended | No | No |
 
-The above executables need to be in a folder listed in the PATH environment variable.
-Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
+The above executables need to be in a folder listed in the PATH environment variable. Keep in mind that the hosted agents come with the software included, this is only applicable for self-hosted agents.
 
 **Example**:
 
-Here is an example on how to use restore keys by Yarn:
+Here's an example of how to use restore keys by Yarn:
 
 ```yaml
 variables:
@@ -126,10 +129,10 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-In this example, the cache task will attempt to find if the key exists in the cache. If the key does not exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
+In this example, the cache task will attempt to find if the key exists in the cache. If the key doesn't exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
 This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
 For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
-If there is a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
+If there's a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
 
 > [!NOTE]
 > A pipeline can have one or more caching task(s). There is no limit on the caching storage capacity, and jobs and tasks from the same pipeline can access and share the same cache.
@@ -169,7 +172,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 
 ## Conditioning on cache restoration
 
-In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there is a cache hit, `inexact` on a restore key cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
+In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there's a cache hit, `inexact` on a restore key cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
 
 In the following example, the `install-deps.sh` step is skipped when the cache is restored:
 
@@ -190,7 +193,7 @@ steps:
 
 ## Bundler
 
-For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v0.9/bundle_install.html) will look for Gems in.
+For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v2.3/man/bundle-config.1.html) will look for Gems in.
 
 **Example**:
 
@@ -200,15 +203,13 @@ variables:
 
 steps:
 - task: Cache@2
+  displayName: Bundler caching
   inputs:
-    key: 'gems | "$(Agent.OS)" | my.gemspec'
+    key: 'gems | "$(Agent.OS)" | Gemfile.lock'
     restoreKeys: | 
       gems | "$(Agent.OS)"
       gems
     path: $(BUNDLE_PATH)
-  displayName: Cache gems
-
-- script: bundle install
 ```
 
 ## Ccache (C/C++)
@@ -243,8 +244,13 @@ See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_confi
 Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
 ```yaml
+variables:
+  repository: 'myDockerImage'
+  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+  tag: '$(Build.BuildId)'
+
 pool:
-  vmImage: 'Ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 steps:
   - task: Cache@2
     displayName: Cache task
@@ -258,9 +264,18 @@ steps:
     displayName: Docker restore
     condition: and(not(canceled()), eq(variables.CACHE_RESTORED, 'true'))
 
+  - task: Docker@2
+    displayName: 'Build Docker'
+    inputs:
+      command: 'build'
+      repository: '$(repository)'
+      dockerfile: '$(dockerfilePath)'
+      tags: |
+        '$(tag)'
+
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar $(repository):$(tag)
     displayName: Docker save
     condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
 ```
@@ -351,10 +366,10 @@ steps:
 - script: mvn install -B -e
 ```
 
-If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
+If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
 
 ```yaml
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m $(MAVEN_OPTS)'
@@ -363,6 +378,7 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 ## .NET/NuGet
 
 If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to lock dependencies.
+If you want to use multiple packages.lock.json, you can still use the following example without making any changes. The content of all the packages.lock.json files will be hashed and if one of the files is changed, a new cache key will be generated.
 
 **Example**:
 
@@ -405,7 +421,7 @@ steps:
 - script: npm ci
 ```
 
-If your project does not have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
+If your project doesn't have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
 
 > [!TIP]
 > Because `npm ci` deletes the `node_modules` folder to ensure that a consistent, repeatable set of modules is used, you should avoid caching `node_modules` when calling `npm ci`.
@@ -435,13 +451,13 @@ steps:
 
 ## Python/Anaconda
 
-Set up your pipeline caching with Anaconda environments 
+Set up your pipeline caching with Anaconda environments:
 
 ### Example
 
 ```yaml
 variables:
-  CONDA_CACHE_DIR: $(Pipeline.Workspace)/.condarc
+  CONDA_CACHE_DIR: /usr/share/miniconda/envs
 
 # Add conda to system path
 steps:
@@ -462,6 +478,24 @@ steps:
   displayName: Create Anaconda environment
   condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
 ```
+
+- **Windows**
+
+    ```yaml
+    - task: Cache@2
+      displayName: Cache Anaconda
+      inputs:
+        key: 'conda | "$(Agent.OS)" | environment.yml'
+        restoreKeys: | 
+          python | "$(Agent.OS)"
+          python
+        path: $(CONDA)/envs
+        cacheHitVar: CONDA_CACHE_RESTORED
+    
+    - script: conda env create --quiet --file environment.yml
+      displayName: Create environment
+      condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
+    ```
 
 ## PHP/Composer
 
@@ -512,5 +546,4 @@ A: Caches expire after seven days of no activity.
 
 ### Q: Is there a limit on the size of a cache?
 
-A: There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
-
+A: There's no enforced limit on the size of individual caches or the total size of all caches in an organization.

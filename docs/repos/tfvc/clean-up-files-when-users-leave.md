@@ -1,26 +1,27 @@
 ---
-title: Clean Up Files When Users Leave
+title: Clean up files when users leave
 titleSuffix: Azure Repos
-description: Clean Up Files When Users Leave
+description: Learn how to clean up TFVC files when users leave.
 ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 06/30/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Clean Up Files When Users Leave
+# Clean up files when users leave
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When a member leaves a team, version control administrators must correctly dispose of that member's files.
 
-**Required Permissions**
+## Prerequisites
 
-To perform these procedures, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To perform these procedures, you must be a member of the **Azure DevOps Administrators** or **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-### To clean up version-controlled files after a team member leaves
+## Clean up version-controlled files after a team member leaves
 
 1.  Check in any files that are checked out to the team member who has left.
 
@@ -31,8 +32,6 @@ To perform these procedures, you must be a member of the **Team Foundation Admin
 
     This operation can be performed only from the command line. For more information, see [Workspace Command](workspace-command.md).
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Remove a User From a Project or Project Collection](/previous-versions/visualstudio/visual-studio-2010/ms253182(v=vs.100))
+- [Remove user accounts](../../organizations/security/remove-users-prohibit-access.md)

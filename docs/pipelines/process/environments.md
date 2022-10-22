@@ -3,13 +3,13 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 10/16/2021
+ms.date: 04/26/2022
 monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
@@ -23,6 +23,8 @@ Environments provide the following benefits.
 | **Security**                            | Secure environments by specifying which users and pipelines are allowed to target an environment.                                                                                                                                                                                                           |
 
 While an environment is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
+
+When you author a YAML pipeline and refer to an environment that does not exist, Azure Pipelines automatically creates the environment when the user performing the operation is known and permissions can be assigned. When Azure Pipelines does not have information about the user creating the environment (example: a YAML update from an external code editor), your pipeline will fail if the environment does not already exist. 
 
 <a name="creation"></a>
 
@@ -118,12 +120,18 @@ The deployment history view within environments provides the following advantage
 - View jobs from all pipelines that target a specific environment. For example, two micro-services, each having its own pipeline, are deploying to the same environment. The deployment history listing helps identify all pipelines that affect this environment and also helps visualize the sequence of deployments by each pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![Deployment history](media/environments-deployment-history.png)
+   > ![Screenshot of deployment history listing.](media/environments-deployment-history.png)
 
-- Drill down into the job details to see the list of commits and work items that were newly deployed to the environment.
+- Drill down into the job details to see the list of commits and work items that were deployed to the environment. The list of commits and work items are the new items between deployments. Your first listing will include all of the commits and the following listings will just include changes. If multiple commits are tied to the same pull request, you'll see multiple results on the work items and changes tabs.
 
    > [!div class="mx-imgBorder"]
-   > ![Commits under deployment history](media/environments-deployment-history-commits.png)
+   > ![Screenshot of commits under deployment history.](media/environment-deployment-history-changes.png)
+
+- If multiple work items are tied to the same pull request, you'll see multiple results on the work items  tab.
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of work items under deployment history.](media/environment-deployment-history-workitems.png)
+
 
 ## Security
 
@@ -136,10 +144,6 @@ Control who can create, view, use, and manage the environments with user permiss
 1. Select **User permissions** > **+Add** > **User or group**, and then select a suitable role.
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
-
-> [!NOTE]
->
-> - If you create an environment through the UI, only the creator is granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
 
 ### Pipeline permissions
 
@@ -168,7 +172,7 @@ A: These are some of the possible reasons of the failure:
 
   * In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment  that does not exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
 
-  * If you are using [runtime parameters](./runtime-parameters.md?tabs=script&view=azure-devops) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops) to create the environment.
+  * If you are using [runtime parameters](./runtime-parameters.md?tabs=script&view=azure-devops&preserve-view=true) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment.
 
   * A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
   

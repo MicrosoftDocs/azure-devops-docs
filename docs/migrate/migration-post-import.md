@@ -3,7 +3,7 @@ title: Post migration import steps to validate and configure an organization
 titleSuffix: Azure DevOps
 description: Guidance on how to validate and configure an organization after it has been imported to Azure DevOps Services.
 ms.topic: conceptual
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 09/22/2021
 
 # Post import
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 An organization is ready for use once an import has completed successfully. However, there are common tasks that you should perform before opening the organization up to all of your users. Below is a list of the most common after import tasks that should be completed. Tasks are listed in recommended order of completion. 
@@ -52,7 +52,7 @@ If you plan on using your existing on-premises private build agents, there is on
 
 ## Release management
 
-If you used Release Management in Azure DevOps Server then your release pipelines and history data will be included with your import. However, like builds, you'll need to reonfigure your [agents](../pipelines/agents/agents.md) and pools against the new organization. 
+If you used Release Management in Azure DevOps Server then your release pipelines and history data will be included with your import. However, like builds, you'll need to reconfigure your [agents](../pipelines/agents/agents.md) and pools against the new organization. 
 
 ## Azure Artifacts
 

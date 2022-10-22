@@ -2,8 +2,7 @@
 title: Plan and track SAFe® projects in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to plan and track epics, release trains, and multiple backlogs in Azure Boards to support SAFe® practices.
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -14,7 +13,7 @@ ms.date: 10/20/2021
 
 # Plan and track SAFe® programs and portfolios in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Once you've configured your Agile tools to support SAFe®, trace relationships can be created from Stories all the way up to Epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 

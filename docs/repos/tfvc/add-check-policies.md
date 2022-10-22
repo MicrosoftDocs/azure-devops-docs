@@ -1,62 +1,67 @@
 ---
-title: Add Check-In Policies
+title: Add check-in policies
 titleSuffix: Azure Repos
-description: Add Check-In Policies
+description: See how to add Team Foundation Version Control check-in policies in Visual Studio Team Explorer.
 ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/18/2016
-monikerRange: '>= tfs-2015'
+ms.date: 10/06/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Add Check-In Policies
+# Add check-in policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)). By default, the following check-in policy types are available:
+Team Foundation Version Control administrators can add check-in policy requirements. These check-in policies require users to take actions when they conduct a check-in to source control. For example, a user can be required to associate a work item with a changeset. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
--   **Builds**   Requires that the last build was successful before a check-in.
+> [!NOTE]
+> You can set Visual Studio check-in policies through Team Explorer as documented in this article, the [tf.exe configure command](configure-command.md), or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio on your computer. If you have multiple installations of Visual Studio, you need to set the check-in policy on each installation.
 
--   **Code Analysis**   Requires that code analysis is run before check-in.
+## Create a check-in policy
 
--   **Work Items**   Requires that one or more work items be associated with the check-in.
+1. From Visual Studio Team Explorer, select **Settings**, and then select  **Source Control** under **Team Project**.
+1. In the **Source Control Settings** dialog box, select the **Check-in Policy** tab, and then select **Add**.
+1. In the **Add Check-in Policy** dialog box, select the policy types you want, and then select **OK**.
 
-> Visual Studio 2017 : Check-in policies in Visual Studio 2017 must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio 2017 on your computer. If you have multiple installations of Visual Studio 2017, you'll need to set the check-in policy on each installation. [Learn more](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
+   You can select from the following policies:
 
+   - **Builds** requires that the last build was successful before any new changes can be checked in.
+   - **Changeset Comments Policy** requires users to provide check-in comments.
+   - **Code Analysis** requires that code analysis be run before code can be checked in.
+   - **Custom Path Policy** scopes the other policies to specific folders or file types.
+   - **Forbidden Patterns Policy** prevents check-ins that have files with forbidden filename patterns.
+   - **Work Item Query Policy** specifies a work item query whose results are the only legal work items to associate with a check-in.
+   - **Work Items** requires that one or more work items be associated with every check-in.
 
-## Procedure
+1. If you select **Code Analysis**, in the **Code Analysis Policy Editor**, select the checkboxes for the types of code analysis that you want, and then select **OK**.
 
-### To create a check-in policy
+   Options are:
 
-1.  From Team Explorer, select the **Settings** page, then select  **Source Control** under the **Project** section.
+   - **Enforce check-in to include only files that are part of current solution**
+   - **Enforce C/C++ Code Analysis (/analyze)**
+   - **Enforce Code Analysis For Managed Code**. If you select this option, select the desired rule set under **Rule settings for Managed Code Analysis**.
 
-    The **Source Control Settings** dialog box appears.
+   For more information about how to use code analysis tools, see [Create Code Analysis Check-In Policies](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).
+   
+1. If you select **Custom Path Policy**, in the **Custom Path Policy** dialog box, select a child policy to operate on, and enter one or more values in **Source Control Path Filter (RegEx)** to specify allowed paths. Select **Add** for each value, and then select **OK**.
 
-2.  Click the **Check-in Policy** tab and then click **Add**.
+   Apply a separate **Custom Path Policy** for each child policy that you want to use custom paths.
 
-    The **Add Check-in Policy** dialog box appears.
+   > [!NOTE]
+   > If you apply this policy to an enabled child policy, you get a message that **The selected policy is currently enabled. It should be disabled or it will end up running twice.** You can remove or disable the original policy from the **Check-in Policy** screen.
+   
+1. If you select **Forbidden Patterns Policy**, in the **Forbidden Patterns** dialog box, list the pattern or patterns to forbid, and then select **OK**.
 
-3.  In the Check-in Policy list, select the policy type you want and then click OK.
+1. If you select **Work Items Query Policy**, in the **Query Policy** dialog box, navigate to and select a saved shared work item query, and then select **OK**.
 
-    The list includes the following selections:
-
-    -   Select **Builds** if you want to require that a previous build was successful before any new changes can be checked in.
-
-    -   Select **Code Analysis** if you want to require that code analysis is run before code can be checked in. The **Code Analysis Policy Editor** dialog box appears.
-
-        Select the check boxes for the types of code analysis that you want performed. Options are Enforce check-in to only contain files that are part of current solution, **Enforce C/C++ Code Analysis (/analyze)**, and **Enforce Code Analysis For Managed Code**. If you select the **Enforce Code Analysis For Managed Code** check box, select the desired rule settings under **Rule settings for Managed Code Analysis**.
-
-        For more information about how to use code analysis tools, see [Create Code Analysis Check-In Policies](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).
-
-        When you are finished, click **OK**.
-
-    -   If you selected **Work Items**, the policy is added to the list that a work item must be associated with the check in.
-
-4.  When you are satisfied with the settings for the check-in policies, click **OK**; the new check-in policy now displays with future check-ins.
+1. When you're satisfied with the check-in policies settings, select **OK**. The new check-in policy displays with future check-ins.
 
 ## Related articles 
 
-- [Configure Command](configure-command.md)
-- [Set and Enforce Quality Gates](set-enforce-quality-gates.md)
-- [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))
+- [Configure command](configure-command.md)
+- [Set and enforce quality gates](set-enforce-quality-gates.md)
+- [Walkthrough: Customizing checkin policies and notes](/previous-versions/ms181281(v=vs.100))

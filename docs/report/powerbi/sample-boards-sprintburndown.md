@@ -2,7 +2,7 @@
 title: Sprint Burndown sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a sprint burndown Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Sprint burndown sample reports
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to display the current sprint's burndown of User Stories. The following example shows a burndown of both a sum of Story Points and a count of User Stories.
 

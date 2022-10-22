@@ -2,17 +2,17 @@
 title: Run automated tests from test plans
 description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual 
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Run automated tests from test plans
 
-[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Automate test cases in your test plans and run them directly from **Azure Test Plans** . Automated tests provide you with the following benefits:
 

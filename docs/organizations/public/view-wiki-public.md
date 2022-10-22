@@ -2,7 +2,7 @@
 title: View and filter project wiki pages 
 titleSuffix: Azure DevOps Services Public Project
 description: View public project wikis 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # View and filter wiki pages
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to view public project wikis. If you're a contributor, you can also [add and edit pages](../../project/wiki/add-edit-wiki.md).
 

@@ -2,16 +2,18 @@
 title: Test objects and terms
 titleSuffix: Azure Test Plans
 description: Understand the different test objects and terms that support manual or automated testing.
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---
 
 
 # Test objects and terms
+
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Read this article to gain an understanding of the objects and terms used in manual and exploratory testing. 
 
@@ -53,7 +55,7 @@ The following table describes the work item types used to support the Azure DevO
       Group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. When creating a test suite, you can specify one of three types: 
       - **Static test suites**: Used to group test cases under a single test suite. 
       - [**Requirement-based suites**](create-a-test-plan.md#backlog): Select one or more requirements from a query which are then linked to the test suite. 
-      - [**Query-based suites**](reference-qa.md#query-based-suites): Select one or more test cases which are then linked to the test suite.    
+      - [**Query-based suites**](reference-qa.yml#query-based-suites): Select one or more test cases which are then linked to the test suite.    
       > [!TIP]
       > The [**Test Suite Type**](../boards/queries/build-test-integration.md) read-only field indicates the type of suite selected. To add test suites, see [Create test plans and test suites](create-a-test-plan.md). 
    :::column-end:::
@@ -277,7 +279,6 @@ There are a number of permissions that control select features for viewing, modi
      Add new tags to test-based work items.
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
       **Delete and restore work items**  
@@ -289,8 +290,6 @@ There are a number of permissions that control select features for viewing, modi
      Delete test-specific work items and restore them from the Recycle bin.
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
       **Permanently delete work items**  
@@ -302,7 +301,6 @@ There are a number of permissions that control select features for viewing, modi
      Permanently delete test-specific work items from the data store.
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="2":::
       **View work items in this node**  
@@ -339,7 +337,7 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 
 
-To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Set permissions at the project- or collection-level](../organizations/security/set-project-collection-level-permissions.md). 
+To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Change project-level permissions](../organizations/security/change-project-level-permissions.md). 
 
 ## Export, import, and bulk update of test-specific work items 
 

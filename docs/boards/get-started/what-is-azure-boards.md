@@ -3,7 +3,7 @@ title: What is Azure Boards? Tools to manage software development projects.
 titleSuffix: Azure Boards
 description: Learn about the Agile tools Azure Boards provides. 
 ms.custom: boards-get-started, contperf-fy22q2
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 12/01/2021
 
 # What is Azure Boards?
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. It provides a rich set of capabilities including native support for Agile, Scrum, and Kanban processes, calendar views, configurable dashboards, and integrated reporting. These tools scale as your business grows. 
   
@@ -143,7 +143,7 @@ Azure Boards is designed to support software development processes through the d
 :::row::: 
    :::column span="2":::
    [**Capability Maturity Model Integration** (CMMI)](../work-items/guidance/cmmi-process.md) supports a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.
-   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts). 
+   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md). 
    :::column-end:::
    :::column span="2":::
    :::image type="content" source="../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="CMMI work item types":::  

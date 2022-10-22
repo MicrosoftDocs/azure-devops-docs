@@ -3,16 +3,16 @@ title: Review test results
 description: Review continuous test results with a build or release pipeline in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
 ms.topic: conceptual
-ms.custom: "continuous-test, seodec18"
+ms.custom: "continuous-test, seodec18, cross-service"
 ms.author: vinojos
 author: vinodjo
 ms.date: 10/06/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Review test results
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
@@ -37,7 +37,7 @@ Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -60,7 +60,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
     > This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
     > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
-  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/javascript.md#run-unit-tests)
+  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/customize-javascript.md#run-unit-tests)
   - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
 
 * **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)

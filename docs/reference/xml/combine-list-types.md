@@ -2,19 +2,19 @@
 title: Combine pick list types 
 titleSuffix: Azure DevOps & TFS 
 description: Examples that show how to create pick lists or drop-down menus by combining different types. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 04f1daff-fe12-4c1f-8625-e884f0fb2c7c
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 04/05/2017
 ---
 
 # Combine list types
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]  
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
   

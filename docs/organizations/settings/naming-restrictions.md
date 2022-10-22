@@ -3,18 +3,18 @@ title: Restrictions and conventions for naming objects
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Requirements for consistency in labeling objects like organizations, projects, tags, templates, and more, by length, uniqueness, and special characters. 
-ms.technology: devops-settings
-ms.topic: reference
+ms.subservice: azure-devops-settings
+ms.topic: conceptual
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 09/17/2021
+ms.date: 05/24/2022
 ---
 
 # Naming restrictions and conventions  
 
-[!INCLUDE [temp](../../includes/version-all.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
@@ -29,6 +29,58 @@ Common restrictions include not exceeding the character length for a name, not c
 The length restrictions in this article are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count as two characters against the length restriction. For details, see [About Unicode and Character Sets](/windows/win32/intl/about-unicode-and-character-sets). 
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
+
+<a id="reserved" />
+
+### System reserved names 
+
+Most names you assign should avoid inclusion of system reserved names. These names correspond to: 
+
+- AUX 
+- COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10
+- CON 
+- DefaultCollection
+- LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9
+- NUL  
+- PRN 
+- SERVER, SignalR 
+- Web or WEB 
+ 
+
+For more information about reserved names, see [File Names, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
+   
+
+## Azure Artifacts
+
+Universal packages must conform to the following restrictions.
+
+:::row:::
+   :::column span="1":::
+      **Restriction type**
+   :::column-end:::
+   :::column span="3":::
+      **Restriction**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Package name
+   :::column-end:::
+   :::column span="3":::
+      - Must be lowercase.
+      - Must start and end with letters or numbers.
+      - Must only contain letters, numbers, and non-consecutive dashes, underscore, or periods.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Package version
+   :::column-end:::
+   :::column span="3":::
+      - Must be lowercase without build metadata.
+   :::column-end:::
+:::row-end:::
 
 ## Azure Boards 
 
@@ -503,7 +555,7 @@ Azure pipeline definitions must conform to the following restrictions. To learn 
 
 ## Azure Repos (Git)
 
-Each Azure DevOps project can contain multiple Git repos. The names you assign to Git repos must conform to the following restrictions. To learn more, see [Azure Repos Git documentation](../../repos/git/index.yml).For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format). 
+Each Azure DevOps project can contain multiple Git repositories. The names you assign to Git repositories must conform to the following restrictions. To learn more, see [Azure Repos Git documentation](../../repos/git/index.yml).For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format). 
 
 > [!IMPORTANT]
 > Although you can include spaces within repo names, we don't recommend that you do so.
@@ -542,6 +594,7 @@ Each Azure DevOps project can contain multiple Git repos. The names you assign t
       - Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`
       - Must not start with an underscore (&#95;)
       - Must not start or end with a period (.)
+      - Must not be a [system reserved name](#reserved)
    :::column-end:::
 :::row-end:::
 ---
@@ -850,8 +903,7 @@ Names you assign to project collections must conform to the following restrictio
       Reserved names
    :::column-end:::
    :::column span="3":::
-      - Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, Web, or WEB
-      For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>
+      - Must not be a [system reserved name](#reserved)  
    :::column-end:::
 :::row-end:::
 ---
@@ -911,9 +963,8 @@ Names you assign to projects that you create must conform to the following restr
       Reserved names
    :::column-end:::
    :::column span="3":::
-      - Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, SERVER, SignalR, DefaultCollection, or Web
-      - Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.
-      For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">Naming Files, Paths, and Namespaces</a>.
+      - Must not be a [system reserved name](#reserved)   
+      - Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config. 
    :::column-end:::
 :::row-end:::
 ---
@@ -975,7 +1026,7 @@ Security groups that you add must conform to the following restrictions.
    :::column-end:::
    :::column span="3":::
       - Must not be named with a $NAMESPACE at either the project or the server level
-   :::column-end:::
+   :::column-end::: 
 :::row-end:::
 ---
 :::row:::
@@ -1002,7 +1053,7 @@ Team Foundation Build lets you manage all the aspects of the build process on a 
 
 ### Build computer 
 
-Team Foundation Build is a separate installation from the TFS application tier, data tier, or Visual Studio client. You may choose a separate computer. Otherwise, you can install the build side by side on the client computer or on the servers.  
+Team Foundation Build is a separate installation from the Azure DevOps Server application tier, data tier, or Visual Studio client. You may choose a separate computer. Otherwise, you can install the build side by side on the client computer or on the servers.  
 
 Your on-premises build computer must conform to the following restrictions.
 
@@ -1178,8 +1229,7 @@ Team names must conform to the following restrictions.
       Reserved names
    :::column-end:::
    :::column span="3":::
-      - Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX
-      For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>.
+       - Must not be a [system reserved name](#reserved)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1260,6 +1310,7 @@ User accounts that you add to an organization or collection must conform to the 
 
 
 ## Related articles
+
 - [Azure Artifacts count and size limits](../../artifacts/reference/limits.md)
 - [Work tracking, process, and project limits](./work/object-limits.md)
 - [Customize work tracking objects to support your team's processes](../../reference/customize-work.md)

@@ -1,3 +1,11 @@
+---
+ms.subservice: azure-devops-ecosystem
+ms.author: chcomley
+author: chcomley
+ms.topic: include
+ms.date: 02/24/2022
+---
+
 1. Add a hub group to your app's manifest file in contributions, like this.
 
     ```json
@@ -17,7 +25,7 @@
      ]
     ```
 
-	Look at the contribution targets reference to see the [available hub groups that can be contributed to](/previous-versions/azure/devops/extend/reference/targets/overview#targets).
+	Look at the contribution targets reference to see the [available hub groups that can be contributed to](../../reference/targets/overview.md#targets).
 
 2. Change the hub contribution so that it's in the samples hub group that you just created. Just update the targets to the relative contribution ID of the hub group you just added.
 
@@ -41,4 +49,4 @@
 
    Now your hub appears under your Samples hub group.
 
-   ![Hello hub in the Samples hub group](../../media-procedures/create-hub-group/hub-group.png)
+   ![Hello hub in the Samples hub group](../../media/create-hub-group/hub-group.png)

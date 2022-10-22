@@ -1,21 +1,21 @@
 ---
 title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
-description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
-ms.technology: devops-collab
-ms.custom: wiki
+description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps. 
+ms.subservice: azure-devops-wiki
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
-ms.date: 06/07/2021  
+monikerRange: '<= azure-devops'
+ms.date: 07/06/2022  
 ---
 
 # Provisioned wikis vs. published code as a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
@@ -33,17 +33,17 @@ While both options maintain the wiki content in Git repositories, the way you ad
 
 With a *provisioned wiki*, you add and edit pages directly within the **Wiki**. All content updates to a *provisioned wiki* occur within the **Wiki**.
 
-With a publish code as wiki, you add, edit, and update content from **Repos** or **Code**.
+With a *publish code as wiki*, you add, edit, and update content from **Repos** or **Code**.
 
 The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 
 **Provisioned wiki**
 
-:::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Provisioned wiki page menu options"::: 
+:::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Provisioned wiki page menu options.":::
 
 **Publish code as wiki**
 
-:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options":::
+:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options.":::
 
 For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki get automatically published to the wiki.
 
@@ -87,11 +87,11 @@ For a *provisioned wiki* or *publish code as wiki*, select **New page** or **Add
 
 The *provisioned wiki* manages the page sequence and page list automatically as you add or move pages within the navigation pane.
 
-To structure the list of pages in the navigation pane for a *publish code as wiki*, define the **.order** file at the root, and for each subfolder or parent page that contains subpages.
+To structure the list of pages in the navigation pane for a *publish code as wiki*, define the *.order* file at the root, and for each subfolder or parent page that contains subpages.
 
 Both types of wikis follow the same file structure, it's just that the publish code as wiki requires you to maintain the page sequence manually.
 
-To learn more about working with **.order** files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
+To learn more about working with *.order* files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
 
 <a id="revisions"></a>
 
@@ -114,23 +114,20 @@ To learn more, see [Version, select, or unpublish a published wiki](wiki-select-
 
 ## Delete project wiki
 
-Deleting a project wiki isn't supported with wiki APIs, but you can delete the wiki repository by completing the following steps.
 
-1. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
+1. Get the wiki corresponding to the wiki ID or wiki name provided. For more information, see [Wikis - Get REST API](/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-6.0&preserve-view=true).
 
-   :::image type="content" source="media/wiki/clone-wiki.png" alt-text="Clone the wiki repository":::
 
-2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+GET `https://dev.azure.com/{organization}/{projec``t}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0`
+
+
+   You can also get all wikis in a project or collection. For more information, see [Wikis - List REST API](/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-6.0&preserve-view=true)
    
-   For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
-   This returns all the wikis in the project, "sampleProject". Here you can get the repository ID of the wiki that you want to delete.
+2. Delete the wiki corresponding to the wiki ID or wiki name provided. For more information, see [Wikis - Delete REST API](/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-6.0&preserve-view=true).
 
-   :::image type="content" source="media/wiki/clone-repository.png" alt-text="Clone the wiki repository, copy the URL":::
-
-3. Use the following REST API to delete the git repository.
-	
-    For example: DELETE https://dev.azure.com/fabrikam/_apis/git/repositories/{repositoryId}?api-version=4.1
-	Use the repository ID of the project wiki found using the previous step. Ensure that the repository ID matches the project wiki that you want to remove.
+```HTTP
+DELETE https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0
+```
 
 ## Update a wiki by working offline
 

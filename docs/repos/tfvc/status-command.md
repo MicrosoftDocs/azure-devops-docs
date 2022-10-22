@@ -3,23 +3,31 @@ title: Status command
 titleSuffix: Azure Repos
 description: Status command
 ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Status command
+# Status command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 Displays information both about pending changes to files and folders and pending change candidates in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
 
 > [!NOTE]
 > A pending changes candidate is a file in the workspace's folder or sub folder that wasn't added to version control. To view all pending changes candidates in Visual Studio, go to **Team Explorer** > **Pending Changes** > **Excluded Changes**, and then select **Detected**.  
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+
+## Prerequisites
+
+To use the **branch** command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
@@ -165,9 +173,7 @@ c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
 
 Lists pending changes to all items in the SolutionA folder, including those in its subfolders).
 
-## Work in Visual Studio
 
--    [Develop code and manage pending changes](develop-code-manage-pending-changes.md)  Use Visual Studio to view and manage pending changes.
 
 ## Tips
 
@@ -175,3 +181,8 @@ Lists pending changes to all items in the SolutionA folder, including those in i
 -   You can use the [Difference Command](difference-command.md) to get details about edit changes (changes to the content) in a file.  
 -   If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md). For more information about shelvesets, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).  
 -   When you are ready to check in changes to the server, use the [Checkin command](checkin-command.md).
+
+## Related articles
+
+- [Develop code and manage pending changes](develop-code-manage-pending-changes.md) 
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)

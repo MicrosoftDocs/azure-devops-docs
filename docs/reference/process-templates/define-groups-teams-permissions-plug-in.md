@@ -2,25 +2,27 @@
 title: Define groups, teams, and permissions 
 titleSuffix: TFS
 description: Customize the Groups and Permission plug-in to preconfigure groups, teams, and user permissions
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '< azure-devops-2019'
-ms.date: 09/08/2017
+monikerRange: 'tfs-2018' 
+ms.date: 04/04/2022
 ---
 
 # Define groups, teams, and permissions using the Groups and Permissions Plug-in
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-eq-2018](../../includes/version-eq-2018.md)]
 
 You can define security groups to control access to functional areas within a project. In addition to the [default security groups](../../organizations/security/permissions.md), you can configure a project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
   
 This topic describes the syntax structure of the **groups**, **iterationPath**, **members**, **permissions**, and **teamsettings** elements that are used in the file for the Groups and Permissions plug-in. For more information about how to use these elements, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md).  
   
-<a name="name"></a> 
-## Name and location of Groups plug-in  
+<a name="name"></a>
+
+## Name and location of Groups plug-in 
+ 
 The Groups and Permission plug-in is defined by the GroupsandPermissions.xml plug-in file, which must conform to the schema definition that is defined in the Gss.xsd file.   
   
 The file, folder, and plug-in names are:
@@ -30,12 +32,15 @@ The file, folder, and plug-in names are:
 **Plug-in name**:| Microsoft.ProjectCreationWizard.Groups   
   
 > [!NOTE]  
->  You can change the names of the XML file and the folder but not the plug-in. TFS doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
+>  You can change the names of the XML file and the folder but not the plug-in. TFS doesn't 
+>  include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
   
  In the Groups and Permissions plug-in, you specify one or more tasks and their dependencies within the `taskXml` element. Generally, you specify one task per security group to create for your process. For more information about how to specify tasks, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).  
   
 <a name="groups"></a> 
+
 ## Define groups  
+
  You use the **group** element to specify a new security group in Team Foundation Server.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -65,6 +70,7 @@ The following example shows how to create a group that is named Reader:
 > ```  
   
 <a name="members"></a> 
+
 ## Define members  
  You use the **member** element to assign a group as a member of a security group in Team Foundation Server.  
   
@@ -103,7 +109,9 @@ The following example shows how to create a group that is named Reader:
 > ```  
   
 <a name="team_settings"></a> 
+
 ## Define teams and team settings  
+
  Within the default Groups and Permissions plug-in file, the `@defaultTeam` macro creates the default team at the root area path. You can change this structure by including additional area paths within the Classification plug-in file. By using the **teamsettings** element, you can pre-configure the iterations assigned to a team. The plug-in uses the following code snippet. In this example, three iterations are defined for the default team.  
   
 > [!IMPORTANT]
@@ -150,7 +158,9 @@ The following example shows how to create a group that is named Reader:
 > ```  
   
 <a name="permissions"></a> 
+
 ## Define permissions  
+
 You must specify permissions for each group that you create. You use the **permission** element for this purpose.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -172,7 +182,9 @@ You must specify permissions for each group that you create. You use the **permi
 > ```  
   
 <a name="elements"></a> 
+
 ## Groups element reference  
+
  The following table describes the elements that you use to define the initial groups and permissions for a project. You specify these elements within a `taskXml` container element in the Groups and Permissions plug-in file. For information about this element, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).  
   
 > [!WARNING]
@@ -193,8 +205,9 @@ You must specify permissions for each group that you create. You use the **permi
 |**teamsettings**|Optional child element of **group**. Configures the project as the default team, and optionally specifies team milestones with the **iterationPath** element. <br /> `<teamSettings areaPath="Area">`<br />      `. . .`<br />`</teamSettings>`|  
   
 ## Related articles
+
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)   
 -  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)
--  [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)  
+-  [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)  
 -  [Customize a process](customize-process.md)

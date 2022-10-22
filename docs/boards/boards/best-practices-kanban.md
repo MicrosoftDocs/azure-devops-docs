@@ -3,7 +3,7 @@ title: Best Practices for implementing Kanban in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about best practices when implementing Kanban in Azure Boards.  
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 10/15/2021
 
 # Use best practices when implementing Kanban in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Having worked through the four configuration steps that were provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.

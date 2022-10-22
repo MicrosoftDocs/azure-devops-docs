@@ -1,18 +1,18 @@
 ---
 title: Repeat a test with different data
-description: Learn about manual and exploratory testing. Repeat a test with different data in Azure Test Plan and Team Foundation Server.
+description: Learn about manual and exploratory testing. Repeat a test with different data in Azure Test Plans and Team Foundation Server.
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Repeat a test with different data
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 You add parameters to your [manual test](create-test-cases.md) to repeat the test with different test data.
 For example, you can test adding different quantities to a shopping cart from quantities of 1, 5, 10, or 200.
@@ -235,7 +235,7 @@ For details, see [Supported configurations and platforms for coded UI tests and 
 
 ## Related articles
 
-* [FAQs for manual testing](reference-qa.md#repeatdifferent)
+* [FAQs for manual testing](reference-qa.yml#repeatdifferent)
 * [Overview of manual and exploratory testing](index.yml)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)

@@ -3,18 +3,18 @@ title: Quick reference index to Azure Boards settings
 titleSuffix: Azure Boards
 description: Index to concepts and tasks for configuring and customizing Azure Boards.
 ms.custom: quick-reference-index
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 04/04/2022
 ---
 
 # Quick reference index for Azure Boards settings 
 
-[!INCLUDE [temp](../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 
@@ -246,7 +246,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -296,7 +296,7 @@ With the On-premises XML process model, you modify the XML definition of work it
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  

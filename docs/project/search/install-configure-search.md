@@ -3,17 +3,17 @@ title: Install, configure Search
 titleSuffix: Azure DevOps 
 description: Find installation and setup instructions for Code, Wiki & Work Item Search in Azure DevOps Server.
 ms.assetid: 
-ms.technology: devops-collab
+ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017 <= azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 04/26/2021
 ---
 
 # Install and configure Search
 
-[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to do the following actions for the Search extension for Code, Wiki, and Work item searches in Azure DevOps Server.
 - [Configure Search](#configure-search)
@@ -247,7 +247,7 @@ However, there might be cases where you no longer want to use Search or you want
    ![Screenshot of checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    ![Screenshot of Checking the extension is installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
@@ -281,7 +281,7 @@ However, there might be cases where you no longer want to use Search or you want
    ![Screenshot Checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
-   ::: moniker range="< azure-devops-2019"
+   ::: moniker range="tfs-2018"
    ![Screenshot of Checking that the extension's installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 

@@ -2,7 +2,7 @@
 title: Define dependencies for task groups & tasks 
 titleSuffix: TFS
 description: Add a task group or a task to a plug-in file process template to declare dependencies in Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 02/24/2017
 
 # Define dependencies for task groups and tasks in plug-in files
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 
 When you add a task group or a task to a plug-in file, you must add them in the correct sequence and declare any dependencies that the group or task has on the successful completion of other task groups or tasks. A task can depend on other tasks, requiring other tasks to complete before primary task can run. For example, the task to create work item queries cannot run until all the tasks to create work item types have successfully completed. Therefore, the task to upload work item queries depends on the task to upload the types of work items.  

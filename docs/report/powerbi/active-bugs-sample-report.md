@@ -2,17 +2,17 @@
 title: Create an Active bugs Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI.
-ms.technology: devops-analytics
-ms.reviewer: romik
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
-ms.date: 10/01/2021
+monikerRange: '>= azure-devops-2019'
+ms.date: 07/26/2022
 ---
 
 # Create an active bugs report in Power BI based on a custom Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Using Power BI connected to [Analytics views](what-are-analytics-views.md), you can create reports on your work items. Reports can show your current work data and also historical revisions of the work items.
 

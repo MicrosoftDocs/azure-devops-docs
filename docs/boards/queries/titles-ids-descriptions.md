@@ -3,18 +3,18 @@ title: Query by title, ID, or rich-text fields in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 10/06/2022
 ---
 
 # Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -40,16 +40,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **Multi-line text strings (PlainText)**
    :::column-end::: 
    :::column span="3":::
-      Contains Words, Does Not Contain Words, Is Empty (Note 1), Is Not Empty(Note 1)
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Multi-line text strings (PlainText)**
-   :::column-end::: 
-   :::column span="3":::
-      **Supported operators and macros**
+      `Contains Words`, `Does Not Contain Words`, `Is Empty`<sup>1</sup>, `Is Not Empty`<sup>1</sup>
    :::column-end:::
 :::row-end:::
 ---
@@ -58,20 +49,19 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **Single text (String)**
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
-      **Macros**: **[Any]**, valid with the **Work Item Type** field  
-      **@Project** (Note 2), valid with the **Team Project** field 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+      **Macros**: `[Any]`, valid with the **Work Item Type** field and `@Project`<sup>2</sup>, valid with the **Team Project** field. 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      **GUID**
+      **ID**
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , In, Not In  
-      **Macros**: **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** valid with the **ID** field and **In** and **Not In** operators 
-      **@Project** (Note 2), valid with the **Team Project** field 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
+      **Macros**: `@Follows`, `@MyRecentActivity`, `@RecentMentions`, `@RecentProjectActivity` valid with the **ID** field and `In` and `Not In` operators 
+     `@Project`<sup>2</sup>, valid with the **Team Project** field. 
    :::column-end:::
 :::row-end:::
 ---
@@ -80,16 +70,16 @@ Query clauses that specify a text or rich-text field can use the operators and m
       **State** and **Work Item Type** fields
    :::column-end::: 
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever   
-      **Macros**: **[Any]** valid with both fields 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`   
+      **Macros**: `[Any]` valid with both fields. 
    :::column-end:::
 :::row-end:::
 ---
  
 
 > [!NOTE]  
-> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+> 1. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 2. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
 ## Use `Contains words` for string matches
@@ -105,14 +95,14 @@ While the `Contains` operator runs a table scan, which isn't only slower, but al
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
-![Editor for flat list query for filtering key words](media/example-work-item-queries/IC675039.png)   
+![Editor for flat list query for filtering key words.](media/example-work-item-queries/IC675039.png)   
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, *. These operators use the full-text search index.
 
 For example, specify **Contains Words** and **inform&#42;** to filter on a text field that contains *inform* or *information* or *informational*. 
 
 > [!div class="mx-imgBorder"] 
-> ![Use wild card with Contains Words](media/text-queries/contains-word-wildcard.png)
+> ![Use wild card with Contains Words.](media/text-queries/contains-word-wildcard.png)
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
@@ -185,8 +175,6 @@ Each team can determine if the Bug work item type appears in either the Requirem
 
 <a id="following" />
 
-::: moniker range=">= tfs-2017"
-
 ## Query for work items that you're following
 
 You can use the **@Follows** macro to filter a list based on work items you're following along with other query filters. 
@@ -196,18 +184,16 @@ For example, the following query shows how to query across all projects for acti
 
 :::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
-::: moniker-end 
 
 <a id="recent-macros" />
 
-::: moniker range=">= tfs-2018"
 
 ## Query for recent work item activity
 
 You can use the following macros to list work items based on recent activity: 
 
-- **@MyRecentActivity**: List items you've recently viewed or modified
-- **@RecentMentions**: List items you were added to via an **@mention** in the last 30 days
+- **@MyRecentActivity**: List items you've recently viewed or modified.
+- **@RecentMentions**: List items you were added to via an **@mention** in the last 30 days.
 - **@RecentProjectActivity**: List items that have been recently created or modified in your project.
 
 Specify the **ID** field and either the **In** or **Not In** operators.  
@@ -216,7 +202,6 @@ For example, the following query shows how to query for work items that you've r
 
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
-::: moniker-end 
 
 <a id="fields" />
 
@@ -326,10 +311,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Team Project
    :::column-end:::
    :::column span="2":::
-   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. 
-
-   > [!NOTE]
-   > &#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). 
+   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. To learn more, see [Example queries, query across projects](using-queries.md#across-projects).   
 
    Reference name=System.TeamProject, Data type=String
    :::column-end:::

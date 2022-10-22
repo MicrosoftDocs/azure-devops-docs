@@ -2,18 +2,17 @@
 title: Default Analytics views
 titleSuffix: Azure DevOps
 description: Learned about a filtered set of data based on Analytics for Azure DevOps that supports creating Power BI reports.  
-ms.technology: devops-analytics
-ms.reviewer: angurusw
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 05/12/2022
 ---
 
 # Default Analytics views
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 An Analytics view filters Azure DevOps data derived from Analytics. You use views to quickly load the data of interest in Power BI to generate reports. 
 
@@ -29,14 +28,14 @@ A default set of Analytics views is provided, as shown below.
 ::: moniker-end
 
 > [!div class="mx-imgBorder"] 
-> ![Default Analytics views](./media/default-views/default-views.png)
+> ![Screenshot of default Analytics views.](./media/default-views/default-views.png)
 
 [!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
 These views are immediately available from Power BI, as shown in the Navigator dialog illustrated below, and are a great way to get started.
 
 > [!div class="mx-imgBorder"] 
-> ![Azure DevOps Power BI Data Connector - Default Analytics views](media/default-views/navigator-dialog-default-views.png)
+> ![Screenshot of Azure DevOps Power BI Data Connector showing access to Analytics views](media/default-views/navigator-dialog-default-views.png)
 
 
 Each default Analytics view provides a combination of options for work item types and historical data. The following tables describe each set of options. 
@@ -62,9 +61,10 @@ Each default Analytics view provides a combination of options for work item type
 > | All history by month | Loads all work item history, on a monthly interval |
 
 ## Common reportable fields  
+
 Default views automatically include the most common fields for the included work item types used for reporting. All custom fields are included. 
 
-For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
+For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) or [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
 > ![Analytics views common fields](media/editable-views/common-fields.png)
@@ -84,3 +84,9 @@ In these cases, you can [create a custom Analytics view](analytics-views-create.
 - [Data available from Analytics](data-available-in-analytics.md)
 - [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)
 - [Grant permissions to access Analytics](./analytics-security.md)
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
+
+
+## Related resources 
+
+- [Wiql to OData Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)

@@ -3,16 +3,17 @@ title: Require branches to be created in folders
 titleSuffix: Azure Repos
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/02/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Require branches to be created in folders
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.

@@ -1,19 +1,20 @@
 ---
 title: Link type element reference
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 02/14/2018  
 ---
 
 # LinkTypes elements reference 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic provides a reference of link types defined for Azure DevOps Services and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
@@ -160,7 +161,7 @@ Using the web portal or Test Manager, you can view which test cases are defined 
 
 ## Customize the links control 
 
-In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
+In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true).  
 
 ## Related articles  
 -  [Link type reference](../../boards/queries/link-type-reference.md)

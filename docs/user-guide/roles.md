@@ -3,7 +3,7 @@ title: Supported roles for software development
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand how Azure DevOps tools support various software development roles
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.author: chcomley
 author: chcomley
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Software development roles supported by Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 If you're a sole developer or work in a small setting, you track issues, plan features, code, test, build, and deploy.  
 
@@ -43,7 +43,7 @@ To get started with using Git, see one of the following resources:
 - [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
 - [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 - [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
-- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
 - [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
   
 To get started with using TFVC, see one of the following resources:
@@ -121,7 +121,7 @@ Responsible for configuring project-level resources, including:
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
@@ -132,8 +132,9 @@ Responsible for configuring project-level resources, including:
 
 ::: moniker range="azure-devops"
 
-### Organization Owners and Project Collection Administrators
+### Organization owners and Project Collection Administrators
 
+Organization owners are automatically members of the Project Collection Administrators group.
 Responsible for configuring organization-level resources, including the following tasks:
 
 - Manage billing  
@@ -145,7 +146,7 @@ Responsible for configuring organization-level resources, including the followin
 To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Project Collection Administrators
 

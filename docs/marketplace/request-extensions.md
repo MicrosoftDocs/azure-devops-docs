@@ -1,26 +1,22 @@
 ---
 title: Request and approve extensions for Azure DevOps
 description: Request extensions and approve extension requests for a project or project collection in Azure DevOps
-ms.topic: quickstart
-ms.technology: devops-marketplace
+ms.custom: engagement-fy23
+ms.topic: how-to 
+ms.subservice: azure-devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+ms.date: 10/06/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Request and approve extensions
 
-[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. Learn how to do the following tasks:
-
-- [Request and approve extensions](#request-and-approve-extensions)
-  - [Prerequisites](#prerequisites)
-  - [Request an extension](#request-an-extension)
-  - [Approve extension requests](#approve-extension-requests)
-  - [Related articles](#related-articles)
+If you don't have permissions to install extensions, you can request extensions instead. 
+Project Collection Administrators receive an email when another project member requests an extension. Azure DevOps automatically installs the extension once it's approved.
 
 ## Prerequisites
 
@@ -75,7 +71,7 @@ Your requests appear on the **Extensions** page, **Requested** tab.
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select an extension from the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 
@@ -91,15 +87,13 @@ Your requests appear on your **Manage extensions** page.
 
 To approve extensions, you must have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
-## Approve extension requests
+## Approve an extension request
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your Azure DevOps home page, and then go to your project:
+1. Go to your Azure DevOps project, ```https://dev.azure.com/{organization}/{project}```.
 
-- Azure DevOps:```https://dev.azure.com/{organization}/{project}```
-
-1. Select the shopping bag, and then **Manage extensions**.
+1. Select the shopping bag icon, and then **Manage extensions**.
 
    ![Manage extensions](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions.png)
 
@@ -114,13 +108,11 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
-1. Go to your FS home page, then go to your project:
+1. Go to your project, ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```.
 
-- TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
-
-1. Select the shopping bag, and then **Manage extensions**.
+1. Select the shopping bag icon, and then **Manage extensions**.
 
    ![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted)](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
 
@@ -129,7 +121,7 @@ To approve extensions, you must have [**edit collection-level information** perm
    > [!div class="mx-imgBorder"] 
    > ![Extensions tab, requested extensions](media/get-tfs-extensions/connected/approve-request-tfs.png)
 
-   After you approve extension requests, the extensions are automatically installed.
+   After you approve extension requests, the extensions automatically get installed.
 
 3. [Assign those extensions](./install-extension.md) to users who need access.
 
@@ -142,5 +134,4 @@ Tell your team about installed extensions, so they can start using their capabil
 - [FAQs](faq-extensions.yml)
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-- [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
 - [Assign access levels by group membership](../organizations/accounts/assign-access-levels-by-group-membership.md)

@@ -2,7 +2,7 @@
 title: Arrange requirements in a product plan
 titleSuffix: Azure Boards
 description: Learn how to generate a product plan from a set of requirements by using the backlog in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
 ms.topic: conceptual
 ms.author: kaelli  
@@ -13,7 +13,7 @@ ms.date: 10/27/2021
 
 # Arrange requirements into a product plan in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 After you analyze your customer requirements sufficiently to understand what the product should do, you must work out a plan to implement the product. Or, for an existing product, you must work out what functionality is missing and work out a plan for making the changes. But the requirements don't automatically tell you the plan.  
   

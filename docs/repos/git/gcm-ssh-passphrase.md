@@ -1,18 +1,20 @@
 ---
 title: Understand SSH passphrases
 titleSuffix: Azure Repos
-description: Understand what an SSH passphrase is.
+description: Learn the benefits and downside of using SSH passphrases.
+ms.custom: kr2b-contr-experiment
 ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 11/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # SSH passphrases
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 SSH uses private/public key pairs to protect your communication with the server. 
 SSH passphrases protect your private key from being used by someone who doesn't know the passphrase. 

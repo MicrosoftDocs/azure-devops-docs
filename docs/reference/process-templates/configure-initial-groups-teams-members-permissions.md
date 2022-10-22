@@ -2,7 +2,7 @@
 title: Configure initial security settings 
 titleSuffix: Azure DevOps & TFS
 description: Configure the initial security settings for a project using the plug-in file
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Configure initial groups, teams, members, and permissions
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   

@@ -1,24 +1,19 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Create service endpoints | Extensions for Azure DevOps
 description: Browse through the places where your extension can extend GitHub Codespaces for Azure DevOps.
+ms.custom: engagment-fy23
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/27/2021
+ms.date: 10/14/2022
 ---
 
 # Create a service endpoint
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-::: moniker range="<= tfs-2018"
-> [!NOTE]
-> _Service endpoints_ are called _service connections_ in TFS 2018 and in older versions.
-> _Pipelines_ are called _definitions_ in TFS 2018 and older versions.
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Service endpoints are a way for Azure DevOps to connect to external systems or services. They're a bundle of properties securely stored by Azure DevOps, which includes but isn't limited to the following properties:
 
@@ -27,9 +22,15 @@ Service endpoints are a way for Azure DevOps to connect to external systems or s
 - Server URL
 - Certificates or tokens
 - User names and passwords
+
+::: moniker range="tfs-2018"
+> [!NOTE]
+> _Service endpoints_ are called _service connections_ in TFS 2018 and earlier versions.
+> _Pipelines_ are called _build definitions_ in TFS 2018 and and earlier versions.
+::: moniker-end
   
 Extensions are then able to use the service endpoint to acquire the stored details to do the necessary operations on that service. 
-Follow this guide to create a new Service Point contribution and use it in your extension.
+Follow this guide to create a new service endpoint contribution and use it in your extension.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -40,7 +41,7 @@ You can develop a service endpoint by creating an example extension for Azure De
 - A build task, which defines two properties: The service endpoint & a picklist, which has values populated from the REST endpoint data source.
 
 > [!NOTE]
-> Service endpoints created by users are created at the project level, not the organization level.
+> When you create a service endpoints, it's at the project level, not the organization level.
 
 The steps involved in completing this task are:
 - [1. Create the extension manifest file](#step1)
@@ -57,11 +58,17 @@ The [manifest file](./manifest.md) defines the custom endpoint and links to the 
 
 In this article, the manifest file creation is separated into the following three parts:
 
-- [Create the basic manifest file](#createbasic)
-- [Add a custom endpoint contribution](#customendpoint)
-- [Add a build task](#buildtask)
-
-<a name="createbasic" />
+- [Create a service endpoint](#create-a-service-endpoint)
+  - [Task overview](#task-overview)
+  - [Create the manifest file: `vss-extension.json`](#create-the-manifest-file-vss-extensionjson)
+    - [Create basic manifest file](#create-basic-manifest-file)
+    - [Add the custom endpoint contribution](#add-the-custom-endpoint-contribution)
+    - [Add the build task contribution](#add-the-build-task-contribution)
+  - [Create the build task](#create-the-build-task)
+    - [task.json components](#taskjson-components)
+  - [Authentication](#authentication)
+  - [Next steps](#next-steps)
+  - [Related articles](#related-articles)
 
 ### Create basic manifest file
 
@@ -89,17 +96,13 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 ```
 
 > [!NOTE]
-> You need to update the `publisher` property. And "BuildTaskFolder" is the path where we'll eventually place our build task pipeline.
-
-<a name="customendpoint" />
-
+> Update the `publisher` property. The `BuildTaskFolder` is the path where we'll eventually place our build task pipeline.
 ### Add the custom endpoint contribution
 
 Add the following `contributions` array underneath the `targets` array of the basic manifest content.
 
 > [!IMPORTANT]
->
-> - Service connection parameters must be fetched by service connection ID.
+> Service connection parameters must be fetched by service connection ID.
 
 ```json
   "contributions": [
@@ -171,8 +174,6 @@ Create a service endpoint using the Fabrikam endpoint.
 > [!TIP]
 > You can add inputDescriptors without authenticationSchemes. For more information, see [InputDescriptor interface](/javascript/api/azure-devops-extension-api/inputdescriptor).
 
-<a name="buildtask" />
-
 ### Add the build task contribution
 
 Inside the `contributions` array from the previous step, add the following object to the end.
@@ -189,7 +190,7 @@ Inside the `contributions` array from the previous step, add the following objec
     }
 ```
 
-The dataSource endpoint URL gets computed from the URL of the endpoint (or a fixed URL), and some other values.
+The dataSource endpoint URL gets computed from the URL of the endpoint or a fixed URL, and some other values.
 For this tutorial, this REST call returns nothing and is meant to be replaced by any REST calls you wish to make to your service.
 
 It's possible to use other parameters than the endpoint URL for the REST URL, for instance some endpoint properties.
@@ -202,7 +203,10 @@ For instance, assuming that we had a property in the endpoint named subscription
 The `task.json` file describes your build task.
 
 > [!NOTE]
-> Take a look at the [build task reference](./integrate-build-task.md) to find the schema for the build task json file. 
+> For more information, check out the following articles:
+> - [Build task reference](./integrate-build-task.md) to find the schema for the build task json file
+> - [Add a custom pipelines task extension](add-build-task.md)
+> - [Integrate build task](integrate-build-task.md)
 
 Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't created this folder yet, do so now. 
 
@@ -213,7 +217,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
   "friendlyName": "Build Task that uses the service endpoint",
   "description": "Task with a dynamic property getting data from an endpoint REST data source",
   "author": "francistotten",
-  "helpMarkDown": "Replace with markdown to show in help",
+  "helpMarkDown": "Replace with Markdown to show in help",
   "category": "Build",
   "visibility": [
     "Build",
@@ -251,7 +255,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
     {
       "target": "project",
       "endpointId": "$(FabrikamService)",
-      "dataSourceName": "Fabfrikam Projects"
+      "dataSourceName": "Fabrikam Projects"
     }
   ],
   "execution": {
@@ -285,21 +289,13 @@ This field is second. It's a picklist.
 
 If you've added the Build Task successfully, you should now see the Build Task when you're adding tasks to a build pipeline.
 
-::: moniker range="tfs-2017"
-
 :::image type="content" source="media/service-endpoint-build-task-selector.png" alt-text="Service endpoint build task selector image.":::
-
-::: moniker-end
 
 Once you've added the Build Task to your pipeline, confirm that it can see the Fabrikam endpoint you created.
 The projects dropdown in this tutorial is blank since we aren't using a real service.
 Once you replace Fabrikam with your service, replace the Projects call with your own REST API call to use dynamic data inside your build task.
 
-::: moniker range="tfs-2017"
-
 :::image type="content" source="media/service-endpoint-build-task-setup.png" alt-text="Service endpoint build task setup image.":::
-
-::: moniker-end
 
 ## Authentication
 

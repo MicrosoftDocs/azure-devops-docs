@@ -2,7 +2,7 @@
 title: Get work items programmatically from Azure DevOps Services
 description: Use REST APIs to get work items from Azure DevOps Services with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
@@ -12,7 +12,7 @@ ms.date: 06/27/2017
 
 # Fetch work items with queries programmatically 
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A common scenario in Azure DevOps Services is to fetch work items using queries. This article details how to implement that scenario programmatically using our REST APIs or .NET client libraries.
 
@@ -26,13 +26,13 @@ You must have the following items:
 
 ## Create a C# project in Visual Studio
 
-To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
+To learn about C# programming within Visual Studio, see the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/).
 
 ## C# code content
 
-There are a few things happening in the following code sample:
+The following tasks occur in the following code sample:
 
-1. Authenticating
+1. Authenticate
    1. Create credentials using your PAT
    2. Generate the client
 2. Get the work items
@@ -67,7 +67,7 @@ public class QueryExecutor
     /// </param>
     /// <param name="personalAccessToken">
     ///     A Personal Access Token, find out how to create one:
-    ///     <see href="https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
+    ///     <see href="/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
     /// </param>
     public QueryExecutor(string orgName, string personalAccessToken)
     {
@@ -113,7 +113,7 @@ public class QueryExecutor
             var fields = new[] { "System.Id", "System.Title", "System.State" };
 
             // get work items for the ids found in query
-            return await httpClient.GetWorkItemsBatchAsync(ids, fields, result.AsOf).ConfigureAwait(false);
+            return await httpClient.GetWorkItemsAsync(ids, fields, result.AsOf).ConfigureAwait(false);
         }
     }
 

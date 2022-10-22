@@ -2,7 +2,7 @@
 title: Add a time-in-state measure to a Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to add a time-in-state measure to an existing Power BI report based on Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -12,7 +12,7 @@ ms date: 10/04/2021
 
 # Calculate time-in-state for an existing Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The time a work item spends in a specific state or series of states is an important aspect for understanding efficiency. The [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md) Analytics widgets provide some measures of time-in-state. However, these widgets may not have the level of detail that you want. 
 

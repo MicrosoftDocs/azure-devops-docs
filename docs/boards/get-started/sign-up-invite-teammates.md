@@ -3,7 +3,7 @@ title: Sign up for and invite teammates to use projects in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to sign up for and invite others to join a team project in Azure Boards.
 ms.custom: boards-get-started
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
@@ -15,7 +15,7 @@ ms.date: 09/15/2021
 
 # Sign up for free and invite others to collaborate in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
 - Create a private or public project with Azure Boards enabled services  
@@ -210,14 +210,14 @@ Your first project is automatically created using the Basic process and a Git re
 1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page, and then select **New project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/projects-hub-select-new-project.png)  
+   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/select-new-project.png)  
 
 2. Fill out the form, expand **Advanced** to choose the options available for [**Version control**](../../repos/tfvc/comparison-git-tfvc.md) and [**Work item process**](../work-items/guidance/choose-process.md). 
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of create project with Agile process.](media/sign-up/create-agile-git-project.png)  
 
-2. Choose **Create** to complete the action.
+3. Choose **Create** to complete the action.
 
 
 <a id="invite-others" />

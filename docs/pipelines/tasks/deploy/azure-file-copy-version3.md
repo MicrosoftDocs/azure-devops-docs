@@ -2,25 +2,23 @@
 title: Azure File Copy task version 3 or earlier
 description: Use Azure Pipelines and Team Foundation Server Azure File Copy build task version 3 or earlier to copy files to Azure storage blobs or VMs.
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure File Copy task version 3 or earlier
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -204,7 +202,7 @@ A suitable account can be easily created for use in a service connection:
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

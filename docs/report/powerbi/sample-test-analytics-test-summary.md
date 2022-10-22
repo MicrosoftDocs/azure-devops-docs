@@ -2,8 +2,7 @@
 title: Pipeline test summary sample Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a test summary Power BI report for a given pipeline in the project.
-ms.prod: devops
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.manager: mijacobs
 ms.author: kaghai
@@ -16,7 +15,7 @@ ms.date: 09/21/2021
 
 # Test summary sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to get the number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**.
 

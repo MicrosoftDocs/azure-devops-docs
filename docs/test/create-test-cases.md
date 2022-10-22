@@ -3,18 +3,18 @@ title: Create manual test cases
 titleSuffix: Azure Test Plans
 description: Create manual test cases to test your deliverables and assign testers. Use Excel and manage your test cases.  
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
 ---
 
 
 # Create manual test cases
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 <a name="test-cases"></a>
 
@@ -27,7 +27,7 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
 > [!NOTE]
 > Test iterations are designed to support data-driven scenarios, not workflow-driven scenarios.
   From a best practice perspective, if you have two test scenarios where the workflows are
-  different, consider creating separate test cases. Also see [FAQs for manual testing](reference-qa.md#testcases).
+  different, consider creating separate test cases. Also see [FAQs for manual testing](reference-qa.yml#testcases).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
@@ -381,7 +381,7 @@ To delete test plans and test suites, you must be a member of the Project Admini
 
 - [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md)
 - [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md)
-- [FAQs for manual testing](reference-qa.md#testcases)
+- [FAQs for manual testing](reference-qa.yml#testcases)
 - [Repeat a test with different data](repeat-test-with-different-data.md)
 - [Share steps between test cases](share-steps-between-test-cases.md)
 - [Test different configurations](test-different-configurations.md)

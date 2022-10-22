@@ -2,7 +2,6 @@
 title: Microsoft-hosted Linux and macOS agents generally available – VSTS Sprint 137 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 7/10/2018
 description: In the Sprint 137 Update of Visual Studio Team Services (VSTS), we remove the "Preview" moniker from our Linux and macOS Microsoft-hosted CI/CD agents and make them generally available.
 ---
@@ -140,7 +139,7 @@ Release gates enable automatic evaluation of health criteria before a release is
 
 ### Azure DevOps Projects now generally available
 
-Back in [November](../2017/nov-28-vsts.md#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
+Back in [November](/previous-versions/azure/devops/2017/nov-28-vsts#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
 
 ## Package
 

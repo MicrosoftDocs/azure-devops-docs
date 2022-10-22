@@ -3,22 +3,26 @@ title: Difference Command
 titleSuffix: Azure Repos
 description: Difference Command
 ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 06/30/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Difference Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Compares, and if it is possible, displays differences between two files, files in two folders, or a shelveset and a local or a server file.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**.  For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf diff[erence] itemspec [/version:versionspec] [/type:filetype] 
@@ -61,7 +65,7 @@ tf diff[erence] /configure
    :::column span="3":::
    Required. Specifies the item to be compared. If no version or path is specified, the *current workspace version *is assumed. Accepts both local and Team Foundation version control server paths.
 
-   For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    The **difference** command does not support wildcard characters.
 
@@ -109,7 +113,7 @@ tf diff[erence] /configure
    *Versionspec*
    :::column-end:::
    :::column span="3":::
-   The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -282,7 +286,7 @@ If you pass only one *itemspec* to the difference command:
 
 -   If you specify a range of versions such as **/version:C1~C4**, the versions of the file at the two end points of the range are compared.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### Output Format types
 
@@ -308,7 +312,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 - **SS**
 
-  **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<https://go.microsoft.com/fwlink/?LinkId=99139>).
+  **SS** is default difference output format for Visual SourceSafe. For more information, see [Diff (Command Line)](/previous-versions/9a7z21t6(v=vs.80)).
 
 - **SS\_SideBySide**
 
@@ -390,22 +394,10 @@ The following example displays the differences between all files in the PeerCode
 c:\projects> tf difference /shelveset:PeerCodeReview2
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Merge Command](merge-command.md)
-
-[Checkin Command](checkin-command.md)
-
-[Shelvesets Command](shelvesets-command.md)
-
-#### Concepts
-
-[Managing File Types](/azure/devops/server/admin/manage-file-types)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Comparing Folders and Files](./compare-files.md)
+- [Merge Command](merge-command.md)
+- [Checkin Command](checkin-command.md)
+- [Shelvesets Command](shelvesets-command.md)
+- [Managing File Types](/azure/devops/server/admin/manage-file-types)
+- [Comparing Folders and Files](./compare-files.md)

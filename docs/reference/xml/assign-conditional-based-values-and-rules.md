@@ -2,7 +2,7 @@
 title: Assign conditional-based values and rules
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define conditional rules and values
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
 ms.author: kaelli
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Assign conditional-based values and rules
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can define rules that are run conditionally by using the **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED** elements. You use these rules to define which elements are run when the defined clause is `True`. You can define conditions that are based on what value is assigned to a specific field or whether a user modifies a specific field. For example, you can create a dependent pick list to provide detailed security or custom behavior.  
 
@@ -45,24 +45,16 @@ The following table describes conditional rules that you can specify as child el
 -   `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.    
 
 :::row:::
-   :::column span="1":::
-   **Element**
+   :::column span="2":::
+   **Element and syntax**
    :::column-end:::
    :::column span="2":::
-   **Syntax**
-   :::column-end:::
-   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
-   :::column span="1":::
-   **WHEN**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHEN**  
    ```
    <WHEN field="fieldReferenceName" value="value">
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -83,20 +75,15 @@ The following table describes conditional rules that you can specify as child el
    </WHEN>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies one or more rules to apply to the current field when another field has a specific value. The parent element defines the current field.  
    
    When the specified field has the specified value, the rules in this element are applied to the current field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **WHENNOT**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHENNOT**  
    ```
    <WHENNOT field="fieldReferenceName" value="value">
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -111,25 +98,21 @@ The following table describes conditional rules that you can specify as child el
        <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
        <READONLY> . . . </READONLY>
        <REQUIRED> . . . </REQUIRED>
-       <SERVERDEFAULT> . . . </SERVERDEFAULT><br/><SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
        <VALIDUSER> . . . </VALIDUSER>
    </WHENNOT>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field changes. The parent element defines the current field.  
    
    When the specified field does not contain the specified value, the rules in this element are applied to the current field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **WHENCHANGED**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHENCHANGED**
    ```
    <WHENCHANGED field="fieldReferenceName" >
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -150,18 +133,13 @@ The following table describes conditional rules that you can specify as child el
    </WHENCHANGED>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is changed in a revision to a work item. The parent element defines the current field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **WHENNOTCHANGED**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHENNOTCHANGED**
    ```
    <WHENNOTCHANGED field="fieldReferenceName">
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -182,7 +160,7 @@ The following table describes conditional rules that you can specify as child el
    </WHENNOTCHANGED>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.
    :::column-end:::
 :::row-end:::

@@ -3,18 +3,19 @@ title: Test Impact for partially mapped TFVC repositories in TFS/Azure DevOps
 description: Test Impact for partially mapped TFVC repositories in TFS/Azure DevOps Services 
 ms.assetid: 31825137-1d76-4bf5-a30b-35502c59e44c
 ms.topic: article
-ms.technology: devops-code-tfvc
-ms.date: 03/08/2018
-monikerRange: '>= tfs-2017'
+ms.service: azure-devops-repos
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Test Impact for partially mapped TFVC repositories in TFS/Azure DevOps Services
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Test Impact Analysis (TIA) has been part of VSTest task starting with version 2. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Accelerated Continuous Testing with Test Impact Analysis - Part 1](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/). 
+Test Impact Analysis (TIA) has been part of the **VSTest** task starting with version 2 of the task. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Speed up testing by using Test Impact Analysis (TIA)](../../pipelines/test/test-impact-analysis.md). 
 
-In addition to supporting GitHub and Git in TFS/Azure DevOps Services, TIA also supports TFVC. This article describes a known limitation about TIA in build/release pipelines based on TFVC and a work around to get past this limitation. 
+In addition to supporting GitHub and Git in Azure DevOps, TIA also supports TFVC. This article describes a known limitation about TIA in build/release pipelines based on TFVC and a work around to get past this limitation. 
 
 ## Issue with partially mapped TFVC repositories 
 
@@ -38,6 +39,7 @@ When a TFVC repository is partially enlisted, TIA fails to find the impacted tes
 
 
 ## Workaround 
+
 To work around this issue, you can map your partial repository to the complete code structure on the server, so that the full path of the files on your local enlistment match the full server path. To do this, you can specify a **Local path** that matches the server path, as shown in the following example.
 
 ![Partially mapped repository fix](./media/test-impact-for-partially-mapped-tfvc-repositories/partially-mapped-repository-fix.png)
@@ -45,3 +47,6 @@ To work around this issue, you can map your partial repository to the complete c
 This ensures that the server path matches the path collected by the collector and impacted tests are correctly listed. 
 
  
+## Related articles
+
+- [Speed up testing by using Test Impact Analysis (TIA)](../../pipelines/test/test-impact-analysis.md) 

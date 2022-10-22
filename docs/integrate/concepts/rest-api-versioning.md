@@ -2,7 +2,7 @@
 title: REST API versioning for Azure DevOps
 description: Learn how versioning works for REST APIs for Azure DevOps.
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
@@ -12,7 +12,7 @@ ms.date: 09/29/2020
 
 # REST API versioning
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
@@ -34,10 +34,12 @@ HTTP request header:
 Accept: application/json;api-version=1.0
 ```
 
-Query parameter:
+Uri:
 
 ```no-highlight
-GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
+[scheme"://"][host[':'port]]"/v" major-version '/'namespace '/'resource ('/'resource)* '?' query
+
+i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
 ```
 
 ### Supported versions

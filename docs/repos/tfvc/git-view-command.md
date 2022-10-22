@@ -3,20 +3,27 @@ title: Git view command
 titleSuffix: Azure Repos
 description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 01/07/2019
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Git view command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Retrieves a file from a Git repository to a temporary location on your computer and displays it.         
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+**Requirements:** See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)
+
+## Prerequisites
+
+To view permissions, you must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository (and branch if you are viewing branch permissions). 
+For more information, see  [Default Git permissions](../../organizations/security/default-git-permissions.md).
 
 ```
 tf git view /collection:TeamProjectCollectionUrl

@@ -2,8 +2,8 @@
 title: Manage change, Agile methods
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage change when using Agile methods  
-ms.technology: devops-agile 
-ms.topic: overview
+ms.subservice: azure-devops-cross-service
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -13,7 +13,7 @@ ms.date: 03/30/2021
 
 # Manage change 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Managing change is an aspect of managing your project plan, your requirements, and your sprints. In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change?
 

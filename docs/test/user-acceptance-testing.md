@@ -2,17 +2,17 @@
 title: Assign tests for user acceptance testing
 description: Create and run user acceptance tests in Azure Test Plans. Test to verify that each of the deliverables meets your users' needs.
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/06/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Assign tests for user acceptance testing
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based
@@ -99,4 +99,4 @@ For details see [this blog post](https://devblogs.microsoft.com/devops/visual-st
 - [Test objects and terms](test-objects-overview.md)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
-- [FAQs for manual testing](reference-qa.md)
+- [FAQs for manual testing](reference-qa.yml)

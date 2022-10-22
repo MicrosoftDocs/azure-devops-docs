@@ -3,7 +3,7 @@ title: Quickstart guide for customizing your Kanban boards
 titleSuffix: Azure Boards 
 description: Learn how to customize your Kanban board to show fields, add columns, and change card color.
 ms.custom: boards-get-started
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -13,7 +13,7 @@ ms.date: 09/15/2021
 
 # Customize your Kanban boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 

@@ -2,7 +2,7 @@
 title: Capability Maturity Model Integration (CMMI), background notes
 titleSuffix: Azure Boards
 description: Background notes on the Capability Maturity Model Integration (CMMI) for Development 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
 ms.author: kaelli 
@@ -13,7 +13,7 @@ ms.date: 11/03/2021
 
 # Background to Capability Maturity Model Integration (CMMI)
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 The definitive guide to the Capability Maturity Model Integration (CMMI) for Development is published by the Software Engineering Institute as "CMMI: Guidelines for Process Integration and Product Improvement." This book specifically describes the CMMI for Development (CMMI-DEV) version 1.3, which is one of the models within the CMMI product suite. You may also find "CMMI Distilled: A Practical Introduction to Integrated Process Improvement" to be a useful and accessible book about CMMI. 
 

@@ -2,20 +2,21 @@
 title: TRANSITION XML element 
 titleSuffix: TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
-ms.date: 10/27/2017
+ms.date: 04/04/2022
 ---
 
 
 
 # TRANSITION XML element  
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You use the **TRANSITION** element to specify a valid progression or regression from one state to another for a type of work item. The **TRANSITION** element is a required child element of the **TRANSITIONS** element.  
   
@@ -100,8 +101,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > <TRANSITION from="Resolved" to="Complete" for="[project]\AllTesters" not="[project]\NewTesters">  
 > </TRANSITION>  
 > ```  
-  
-::: moniker range=">= tfs-2018" 
+
 
 ## Auto completion of work items with pull requests  
 
@@ -111,8 +111,6 @@ When you link a work item to a pull request (PR), you have the option to automat
 > **Feature availability**: The **Complete linked work items after merging** option is available in TFS 2018 and later versions. 
 
 To learn more, see [Workflow states & state categories](../../boards/work-items/workflow-and-state-categories.md).
-
-::: moniker-end  
 
 
 ## Related articles 

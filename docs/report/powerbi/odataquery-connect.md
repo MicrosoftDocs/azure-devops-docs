@@ -2,7 +2,7 @@
 title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Learn how to write and test OData queries for use in Power BI integration.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -12,7 +12,7 @@ ms.date: 10/05/2021
 
 # Connect with data by using Power BI and OData queries
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Using OData queries is the recommended approach for pulling data into Power BI. OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
 

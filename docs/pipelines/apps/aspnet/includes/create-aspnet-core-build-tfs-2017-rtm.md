@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
@@ -20,4 +20,4 @@ ms.date: 02/13/2020
 You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes. Select **Save & queue** to queue your new build when you're done.
 
 > [!NOTE]
-> Microsoft-hosted agents are only available with Azure DevOps Services. For TFS and Azure DevOps server, you must use the [self-hosted agents](../../../agents/agents.md).
+> Microsoft-hosted agents are only available with Azure DevOps Services. For TFS and Azure DevOps Server, you must use the [self-hosted agents](../../../agents/agents.md).

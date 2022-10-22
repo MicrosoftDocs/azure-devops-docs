@@ -2,7 +2,7 @@
 title: Apply pattern matching to a string field 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the MATCH element to force values in a field of String type to follow specified pattern - Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 1134a153-0133-4404-8690-d25e934a45f7
 ms.author: kaelli
@@ -14,7 +14,7 @@ ms.date: 02/10/2017
 
 # Apply pattern matching to a string field
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can use the **MATCH** element to force values in a field of String type to follow a pattern that you specify. If you define multiple **MATCH** elements, the value will be valid if it matches any of the patterns that you specify for the field. If at least one element succeeds, the field has a valid value.  
   

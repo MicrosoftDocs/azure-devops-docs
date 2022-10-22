@@ -3,25 +3,23 @@ title: Customize cards on a Kanban board
 titleSuffix: Azure Boards
 description: Learn how to customize cards to provide at-a-glance information of interest to your team in Azure Boards and Azure DevOps. 
 ms.custom: boards-kanban, contperf-fy21q3
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
-ms.date: 10/15/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
  
 # Customize cards on a Kanban board  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Kanban boards display work items as cards. Each card corresponds to a work item that you use to share information, track status, and assign work. Information rich cards provide at-a-glance info of interest to you and your team and allow you to update a field without opening the work item. With style rules, you can highlight cards and tasks based on the criteria you set.  
 
-
-::: moniker range=">= tfs-2017"
 When you enable annotations, you gain quick access to linked work items and other features. If you're new to working with the Kanban board, see [Kanban basics](../../boards/boards/kanban-basics.md). 
-::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -37,7 +35,7 @@ In the card shown below, the following options have been set for the bug work it
 ::: moniker-end
 
 
-::: moniker range="tfs-2017 || tfs-2018"
+::: moniker range="tfs-2018"
 
 In the card shown below, the following options have been set for the bug work item type:
 - Show all core fields: ID, Assigned To, Story Points, Tags
@@ -48,15 +46,6 @@ In the card shown below, the following options have been set for the bug work it
 
 > [!div class="mx-imgBorder"]  
 > ![Card customize to show additional fields, tags, style rule, and two annotations.](media/customize-cards/card-style-task-test-annotated.png)  
-::: moniker-end
-
-
-
-::: moniker range="< tfs-2017"
-
-The bug work item type in this example shows all the core fields, three more fields, and tags. Also, to make severity 1 bugs stand out, a styling rule causes the card to display as yellow.  
-
-![Card customize to show additional fields, tags, and style rule ](media/card-customize-example-bug-with-callouts.png)
 ::: moniker-end
 
 > [!NOTE] 
@@ -78,7 +67,7 @@ Your best bet is to show fields on cards based on what your team frequently refe
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 > [!NOTE]  
 > You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
@@ -138,7 +127,6 @@ Once you open the Settings dialog for the Kanban board, choose one of the follow
       Specify a tag color, and enable or disable a tag color. 
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       **[Annotations](#annotations)** 
@@ -155,7 +143,6 @@ Once you open the Settings dialog for the Kanban board, choose one of the follow
       Configure how you want tests to appear and behave on the cards.
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
       **[Card reordering](reorder-cards.md)** 
@@ -209,7 +196,7 @@ You can customize cards that appear on the Kanban board for your product backlog
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open your Kanban board](kanban-quickstart.md).  
 
@@ -247,7 +234,7 @@ Here we change the Assigned To field.
 As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 < azure-devops-2019"  
+::: moniker range="< azure-devops-2019"  
 As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the work item type definition](../../reference/add-modify-field.md).  
 ::: moniker-end  
 
@@ -279,7 +266,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 > To show the **Title** of the parent work item, choose the **Parent** field. Choosing the **Parent** title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your board based on parent work items, whether the **Parent** field is added to cards or not.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. From the Settings dialog, choose **Fields**  and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
 
@@ -300,31 +287,6 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 ::: moniker-end  
 
-::: moniker range="tfs-2015"  
-
-1. From the Settings dialog, choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
-
-	Here we choose User Story. Your choices will vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
-
-	**TFS 2015.1 options:**      
-	![TFS 2015.1 Kanban board, card customization dialog](media/vso-kanban-card-customize.png)  
-
-	**TFS 2015 options:**      
-	![Kanban board, card customization dialog](media/ALM_CC_KBCardOptions.png)  
-
-1. Place a check mark in the check box for those fields you want to have appear on the board. 
-
-	If you want work estimates to show, check **Show Effort** or **Show Cost**. These options will cause the following fields to appear based on the respective process: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
-
-1. To add a field, choose the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon and enter the name of a field you want to add. 
-
-1. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
-
-1. When done with your changes, choose **Save**.
-
-::: moniker-end  
-
-
 <a id="styles" > </a>
 
 <a id="style-rule" > </a>  
@@ -333,17 +295,9 @@ As a first step, you'll see that you can determine which fields appear on each c
  
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
 
-::: moniker range="tfs-2015"
-This feature requires TFS 2015.1 or later versions.
-::: moniker-end
-
 ::: moniker range=">= tfs-2018"
 ![Styling rule applied to bugs with Severity=1](media/customize-cards/card-style-s155-solo.png)
 ::: moniker-end
-::: moniker range=">= tfs-2015 <= tfs-2017"
-![Styling rule applied to bugs with Severity=1](media/kanban-board-card-style-rule-example.png)
-::: moniker-end
-
 
 ### Examples of styling rules 
 
@@ -390,7 +344,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the Settings dialog, choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
@@ -422,22 +376,12 @@ You can apply style rules to change the color of cards on Kanban boards and task
 ## Assign a color to a tag   
 
 Before setting tag colors, [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.   
- 
-::: moniker range="tfs-2015"  
-Requires TFS 2015.1 or later version.  
-::: moniker-end   
 
 1. From the Settings dialog, choose **Tag colors** and then choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
 
-   ::: moniker range=">= tfs-2017"
    > [!div class="mx-imgBorder"]  
    > ![Settings, Tag colors dialog (Kanban).](media/customize-cards/settings-tag-colors.png) 
-   ::: moniker-end   
 
-   ::: moniker range="tfs-2015"  
-   >  ![Settings, Tag colors dialog (Kanban), TFS 2015.](media/kanban-card-customize-tag-colors.png)  
-   ::: moniker-end   
-   
    > [!TIP]
    > If tags don't display on the cards, choose **Fields** and make sure that you've checked **Show Tags**. 
 
@@ -447,7 +391,6 @@ Requires TFS 2015.1 or later version.
 <a id="annotations" > </a>
 <a id="enable-annotations" > </a>
 
-::: moniker range=">= tfs-2017"  
 
 ## Enable or disable an annotation
 
@@ -463,8 +406,6 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > |![Task annotations enabled.](media/annotate-task.png) | ![Test annotations enabled.](media/annotate-test.png) | ![Annotations disabled.](media/annotate-none.png) | 
 
 To learn more about using these features, see [Add tasks or child items as checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
-
-::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
@@ -487,7 +428,7 @@ To learn more about using these features, see [Add tasks or child items as check
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open the Settings dialog for the Kanban board you want to customize and choose **Annotations**
 2. Check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
@@ -500,13 +441,9 @@ To learn more about using these features, see [Add tasks or child items as check
 
 <a id="tests" > </a>
 
-::: moniker range=">= tfs-2017"  
-
 ## Configure inline tests 
 
 You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add. Or, add all new tests to a selected test plan. 
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -525,7 +462,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the Settings dialog for the Kanban board (product backlog only) you want to customize. 
 
@@ -533,22 +470,18 @@ You can control the test plan under which inline tests you add through the Kanba
 
 3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
-	![Settings dialog, Tests tab (Kanban), TFS 2015.](media/c-cards-test-settings.png)   
+	![Screenshot of Settings dialog, Tests tab (Kanban).](media/c-cards-test-settings.png)   
 
 4. Save your changes. 
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017"
-
 ### Open the test plan, test suite from a card
 
 From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the :::image type="icon" source="../../media/icons/open-icon.png" border="false"::: open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
 
 <img src="media/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" />  
-
-::: moniker-end
 
 ## Related articles
 
@@ -564,7 +497,7 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Card reordering](reorder-cards.md)  
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)

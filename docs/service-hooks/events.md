@@ -1,19 +1,20 @@
 ---
-title: Service hooks event reference
+title: Service hooks events
 titleSuffix: Azure DevOps  
-description: Service hook events supported by Azure DevOps 
+description: Reference for service hook events supported by Azure DevOps. 
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
-ms.technology: devops-collab
+ms.custom: engagement-fy23
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/14/2022
 ---
 
-# Azure DevOps Services service hooks events
+# Service hooks events
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ## Available event types
 
@@ -48,14 +49,8 @@ ms.date: 07/27/2020
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
 
-::: moniker range="<= tfs-2017"
-**Deprecated event types**:
-
-* [Team room message posted](#message.posted)
-::: moniker-end
-
 > [!NOTE]
-> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving Webhooks from Azure DevOps.
 
 ## Build and release
 
@@ -63,13 +58,14 @@ ms.date: 07/27/2020
 
 ### Build completed
 
-A build completes
+Event: A build completes.
 
 * Publisher ID: `tfs`
 * Event ID: `build.complete`
 * Resource Name: `build`
 
 #### Settings
+
  * `definitionName`: Filter events to include only completed builds for the specified pipeline
  * `buildStatus`: Filter events to include only completed builds for the specified completion status
    * Valid values: 
@@ -99,7 +95,7 @@ A build completes
     "uri": "vstfs:///Build/Build/2",
     "id": 2,
     "buildNumber": "ConsumerAddressModule_20150407.1",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Builds/2",
     "startTime": "2015-04-07T18:04:06.83Z",
     "finishTime": "2015-04-07T18:06:10.69Z",
     "reason": "manual",
@@ -132,18 +128,18 @@ A build completes
       "definitionType": "xaml",
       "id": 2,
       "name": "ConsumerAddressModule",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Definitions/2"
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Definitions/2"
     },
     "queue": {
       "queueType": "buildController",
       "id": 4,
       "name": "Hosted Build Controller",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build-release/Queues/4"
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build/Queues/4"
     },
     "requests": [
       {
         "id": 1,
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Requests/1",
+        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Requests/1",
         "requestedFor": {
           "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
           "displayName": "Normal Paulk",
@@ -171,18 +167,21 @@ A build completes
 ```
 
 <a name="ms.vss-release.release-abandoned-event"></a>
+
 ### Release abandoned
 
-A release was abandoned
+Event: A release was abandoned.
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-abandoned-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
+
 ```json
 {
   "id": "b0497ad3-50c9-4722-96da-a8fa5b80d77f",
@@ -332,18 +331,21 @@ A release was abandoned
 ```
 
 <a name="ms.vss-release.release-created-event"></a>
+
 ### Release created
 
-A release was created
+Event: A release was created.
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-created-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
+
 ```json
 {
   "id": "d4d69db4-18d4-413e-bc43-07f56b531160",
@@ -493,15 +495,17 @@ A release was created
 ```
 
 <a name="ms.vss-release.deployment-approval-completed-event"></a>
+
 ### Release deployment approval completed
 
-A deployment approval has been completed
+Event: A deployment approval is completed.
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-completed-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
    * Valid values: 
       * `2` - Approved
@@ -514,6 +518,7 @@ A deployment approval has been completed
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
+
 ```json
 {
   "id": "106acb39-c61e-4efd-995e-a9f5e71ba3cd",
@@ -698,15 +703,17 @@ A deployment approval has been completed
 ```
 
 <a name="ms.vss-release.deployment-approval-pending-event"></a>
+
 ### Release deployment approval pending
 
-A deployment approval has been requested
+Event: A deployment approval is requested.
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-pending-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
    * Valid values: 
       * `1` - Pre-deployment
@@ -715,6 +722,7 @@ A deployment approval has been requested
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
+
 ```json
 {
   "id": "a73e7272-e96d-4249-93ac-7404eacd6801",
@@ -895,15 +903,17 @@ A deployment approval has been requested
 ```
 
 <a name="ms.vss-release.deployment-completed-event"></a>
+
 ### Release deployment completed
 
-A deployment completed
+Event: A deployment completed.
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-completed-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
  * `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
@@ -914,6 +924,7 @@ A deployment completed
       * `128` - Partially Succeeded
 
 #### Sample payload
+
 ```json
 "environment": {
             "id": 5,
@@ -1049,19 +1060,22 @@ A deployment completed
 ```
 
 <a name="ms.vss-release.deployment-started-event"></a>
+
 ### Release deployment started
 
-A deployment was started
+Event: A deployment started.
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-started-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
+
 ```json
 {
     "id": "1f04688d-98bb-4206-850f-43389f4c8cb4",
@@ -1198,17 +1212,16 @@ A deployment was started
 ```
 
 ::: moniker range=">= azure-devops-2020"
-
 ## Pipelines
 
 > [!NOTE]
-> [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md) preview feature needs to be enabled for these events.
+> Enable the preview feature, [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md), for these events.
 
 <a name="run.statechanged"></a>
 
 ### Run state changed
 
-Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
+Event: Overall statuses of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.run-state-changed-event`
@@ -1294,15 +1307,17 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
 ```
 
 <a name="run.stagestatechanged"></a>
+
 ### Run stage state changed
 
-A new stage has started, or a stage has transitioned to canceling, canceled, failed, partially succeeded or succeeded.
+Event: A new stage has started, or a stage has transitioned to canceling, canceled, failed, partially succeeded, or succeeded.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.stage-state-changed-event`
 * Resource Name: `resource`
 
 #### Settings
+
  * `PipelineId`: Filter to include only events for the specified pipeline
  * `stageNameId`: Filter events to a specific stage name
  * `stageStateId`: Filter events based on the new state of the stage
@@ -1313,6 +1328,7 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
       * `Completed`
 
 #### Sample payload
+
 ```json
 {
   "id": "ac1dd6da-af30-43cb-8434-e1005864b0a3",
@@ -1384,20 +1400,23 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
 ```
 
 <a name="run.stageapprovalpending"></a>
+
 ### Run stage waiting for approval
 
-An approval is created for a run stage
+Event: An approval is created for a run stage.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-pending`
 * Resource Name: `resource`
 
 #### Settings
+
  * `PipelineId`: Filter to include only events for the specified pipeline
  * `stageName`: Filter events to a specific stage name
  * `environmentName`: Filter events to approvals for deployments to a specified environment
  
 #### Sample payload
+
 ```json
 {
   "id": "55382df7-24fa-453c-9173-3369b2417a5b",
@@ -1467,20 +1486,23 @@ An approval is created for a run stage
 ```
 
 <a name="run.stageapprovalcompleted"></a>
+
 ### Run stage approval completed
 
-An approval completed for a run stage
+Event: An approval completed for a run stage.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-completed`
 * Resource Name: `resource`
 
 #### Settings
+
  * `PipelineId`: Filter to include only events for the specified pipeline
  * `stageName`: Filter events to a specific stage name
  * `environmentName`: Filter events to approvals for deployments to a specified environment
  
 #### Sample payload
+
 ```json
 {
   "id": "5810cce3-55e9-46dc-ad4f-681c57cf620e",
@@ -1553,19 +1575,22 @@ An approval completed for a run stage
 ## Code
 
 <a name="tfvc.checkin"></a>
+
 ### Code checked in
 
-A changeset is checked into TFVC.
+Event: A changeset is checked into TFVC.
 
 * Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`
 * Resource Name: `changeset`
 
 #### Settings
+
  * `path`: Filter to checkins that change one or more files under the specified path
    * Required
 
 #### Sample payload
+
 ```json
 {
   "id": "f9b4c23e-88dd-4516-b04d-849787304e32",
@@ -1612,21 +1637,24 @@ A changeset is checked into TFVC.
 ```
 
 <a name="git.push"></a>
+
 ### Code pushed
 
-Code is pushed to a Git repository
+Event: Code was pushed to a Git repository.
 
 * Publisher ID: `tfs`
 * Event ID: `git.push`
 * Resource Name: `push`
 
 #### Settings
+
  * `branch`: The branch that code was pushed into
- * `pushedBy`: A group which has the pusher as its member
+ * `pushedBy`: A group that has the pusher as its member
  * `repository`: The repository that code was pushed to
    * Data type: `guid`
 
 #### Sample payload
+
 ```json
 {
   "id": "03c164c2-8912-4d5e-8009-3707d5f83734",
@@ -1707,22 +1735,25 @@ Code is pushed to a Git repository
 ```
 
 <a name="git.pullrequest.created"></a>
+
 ### Pull request created
 
-Pull request is created in a Git repository
+Event: A pull request is created in a Git repository.
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.created`
 * Resource Name: `pullrequest`
 
 #### Settings
+
  * `repository`: The repository that code was pushed to
    * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
+ * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
  * `branch`: The target branch of the pull request
 
 #### Sample payload
+
 ```json
 {
   "id": "2ab4e3d3-b7a6-425e-92b1-5a9982c1269e",
@@ -1812,22 +1843,25 @@ Pull request is created in a Git repository
 ```
 
 <a name="git.pullrequest.merged"></a>
+
 ### Pull request merge commit created
 
-Pull request - Created merge commit
+Event: A merge commit was created on a pull request.
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.merged`
 * Resource Name: `pullrequest`
 
 #### Settings
+
  * `repository`: The repository that code was pushed to
    * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
+ * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
  * `branch`: The target branch of the pull request
 
 #### Sample payload
+
 ```json
 {
   "id": "6872ee8c-b333-4eff-bfb9-0d5274943566",
@@ -1918,15 +1952,17 @@ Pull request - Created merge commit
 ```
 
 <a name="git.pullrequest.updated"></a>
+
 ### Pull request updated
 
-Pull request is updated; status, review list, reviewer vote changed or the source branch is updated with a push
+Event: A pull request is updated; status, review list, reviewer vote changed, or the source branch is updated with a push.
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.updated`
 * Resource Name: `pullrequest`
 
 #### Settings
+
  * `notificationType`: The type of pull request change
    * Valid values: 
       * `PushNotification` - Source branch updated
@@ -1935,11 +1971,12 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
       * `ReviewerVoteNotification` - Votes score changed
  * `repository`: The repository that code was pushed to
    * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
+ * `pullrequestCreatedBy`: A group that has the requester as a member
  * `pullrequestReviewersContains`: A group included in the reviewers list
  * `branch`: The target branch of the pull request
 
 #### Sample payload
+
 ```json
 {
   "id": "af07be1b-f3ad-44c8-a7f1-c4835f2df06b",
@@ -2038,6 +2075,7 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 ## Work item
 
 <a name="workitem.created"></a>
+
 ### Work item created
 
 Filter events to include only newly created work items.
@@ -2047,10 +2085,12 @@ Filter events to include only newly created work items.
 * Resource Name: `workitem`
 
 #### Settings
+
  * `areaPath`: Filter events to include only work items under the specified area path.
  * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "d2d46fb1-dba5-403c-9373-427583f19e8c",
@@ -2121,6 +2161,7 @@ Filter events to include only newly created work items.
 ```
 
 <a name="workitem.deleted"></a>
+
 ### Work item deleted
 
 Filter events to include only newly deleted work items.
@@ -2130,10 +2171,12 @@ Filter events to include only newly deleted work items.
 * Resource Name: `resource`
 
 #### Settings
+
  * `areaPath`: Filter events to include only work items under the specified area path.
  * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "72da0ade-0709-40ee-beb7-104287bf7e84",
@@ -2198,6 +2241,7 @@ Filter events to include only newly deleted work items.
 ```
 
 <a name="workitem.restored"></a>
+
 ### Work item restored
 
 Filter events to include only newly restored work items.
@@ -2207,10 +2251,12 @@ Filter events to include only newly restored work items.
 * Resource Name: `resource`
 
 #### Settings
+
  * `areaPath`: Filter events to include only work items under the specified area path.
  * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "1ca023d6-6cff-49dd-b3d1-302b69311810",
@@ -2287,6 +2333,7 @@ Filter events to include only newly restored work items.
 ```
 
 <a name="workitem.updated"></a>
+
 ### Work item updated
 
 Filter events to include only changed work items.
@@ -2296,121 +2343,96 @@ Filter events to include only changed work items.
 * Resource Name: `workitem`
 
 #### Settings
+
  * `areaPath`: Filter events to include only work items under the specified area path.
  * `changedFields`: Filter events to include only work items with the specified field(s) changed.
  * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
-  "id": "27646e0e-b520-4d2b-9411-bba7524947cd",
-  "eventType": "workitem.updated",
-  "publisherId": "tfs",
-  "scope": "all",
-  "message": {
-    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett."
-  },
-  "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- New State: Approved\r\n",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.<ul>\r\n<li>New State: Approved</li></ul>",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett.\r\n\r\n* New State: Approved\r\n"
-  },
-  "resource": {
-    "id": 2,
-    "workItemId": 0,
-    "rev": 2,
-    "revisedBy": null,
-    "revisedDate": "0001-01-01T00:00:00",
-    "fields": {
-      "System.Rev": {
-        "oldValue": "1",
-        "newValue": "2"
-      },
-      "System.AuthorizedDate": {
-        "oldValue": "2014-07-15T16:48:44.663Z",
-        "newValue": "2014-07-15T17:42:44.663Z"
-      },
-      "System.RevisedDate": {
-        "oldValue": "2014-07-15T17:42:44.663Z",
-        "newValue": "9999-01-01T00:00:00Z"
-      },
-      "System.State": {
-        "oldValue": "New",
-        "newValue": "Approved"
-      },
-      "System.Reason": {
-        "oldValue": "New defect reported",
-        "newValue": "Approved by the Product Owner"
-      },
-      "System.AssignedTo": {
-        "newValue": "Jamal Hartnet"
-      },
-      "System.ChangedDate": {
-        "oldValue": "2014-07-15T16:48:44.663Z",
-        "newValue": "2014-07-15T17:42:44.663Z"
-      },
-      "System.Watermark": {
-        "oldValue": "2",
-        "newValue": "5"
-      },
-      "Microsoft.Azure DevOps Services.Common.Severity": {
-        "oldValue": "3 - Medium",
-        "newValue": "2 - High"
-      }
+    "id": "03c164c2-8912-4d5e-8009-3707d5f83734",
+    "eventType": "git.push",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Jamal Hartnett pushed updates to Fabrikam-Fiber-Git:master.",
+        "html": "Jamal Hartnett pushed updates to Fabrikam-Fiber-Git:master.",
+        "markdown": "Jamal Hartnett pushed updates to `Fabrikam-Fiber-Git`:`master`."
     },
-    "_links": {
-      "self": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2"
-      },
-      "parent": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
-      },
-      "workItemUpdates": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
-      }
+    "detailedMessage": {
+        "text": "Jamal Hartnett pushed a commit to Fabrikam-Fiber-Git:master.\n - Fixed bug in web.config file 33b55f7c",
+        "html": "Jamal Hartnett pushed a commit to <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>:<a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster\">master</a>.\n<ul>\n<li>Fixed bug in web.config file <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74\">33b55f7c</a>\n</ul>",
+        "markdown": "Jamal Hartnett pushed a commit to [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/):[master](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster).\n* Fixed bug in web.config file [33b55f7c](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74)"
     },
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2",
-    "revision": {
-      "id": 5,
-      "rev": 2,
-      "fields": {
-        "System.AreaPath": "FabrikamCloud",
-        "System.TeamProject": "FabrikamCloud",
-        "System.IterationPath": "FabrikamCloud\\Release 1\\Sprint 1",
-        "System.WorkItemType": "Bug",
-        "System.State": "New",
-        "System.Reason": "New defect reported",
-        "System.CreatedDate": "2014-07-15T16:48:44.663Z",
-        "System.CreatedBy": "Jamal Hartnett",
-        "System.ChangedDate": "2014-07-15T16:48:44.663Z",
-        "System.ChangedBy": "Jamal Hartnett",
-        "System.Title": "Some great new idea!",
-        "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
-        "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
-      },
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions/2"
-    }
-  },
-  "resourceVersion": "1.0",
-  "resourceContainers": {
-    "collection": {
-      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    "resource": {
+        "commits": [
+            {
+                "commitId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74",
+                "author": {
+                    "name": "Jamal Hartnett",
+                    "email": "fabrikamfiber4@hotmail.com",
+                    "date": "2015-02-25T19:01:00Z"
+                },
+                "committer": {
+                    "name": "Jamal Hartnett",
+                    "email": "fabrikamfiber4@hotmail.com",
+                    "date": "2015-02-25T19:01:00Z"
+                },
+                "comment": "Fixed bug in web.config file",
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+            }
+        ],
+        "refUpdates": [
+            {
+                "name": "refs/heads/master",
+                "oldObjectId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
+                "newObjectId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+            }
+        ],
+        "repository": {
+            "id": "278d5cd2-584d-4b63-824a-2ba458937249",
+            "name": "Fabrikam-Fiber-Git",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+            "project": {
+                "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                "name": "Fabrikam-Fiber-Git",
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+                "state": "wellFormed",
+                "visibility": "unchanged",
+                "lastUpdateTime": "0001-01-01T00:00:00"
+            },
+            "defaultBranch": "refs/heads/master",
+            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git"
+        },
+        "pushedBy": {
+            "displayName": "Jamal Hartnett",
+            "id": "00067FFED5C7AF52@Live.com",
+            "uniqueName": "fabrikamfiber4@hotmail.com"
+        },
+        "pushId": 14,
+        "date": "2014-05-02T19:17:13.3309587Z",
+        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/14"
     },
-    "account": {
-      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    "resourceVersion": "1.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+        },
+        "account": {
+            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+        },
+        "project": {
+            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+        }
     },
-    "project": {
-      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
-    }
-  },
-  "createdDate": "2016-09-19T13:03:30.6438544Z"
+    "createdDate": "2020-10-16T22:14:07.267Z"
 }
 ```
 
 
 <a name="workitem.commented"></a>
+
 ### Work item commented on
 
 Filter events to include only work items commented on.
@@ -2420,11 +2442,13 @@ Filter events to include only work items commented on.
 * Resource Name: `workitem`
 
 #### Settings
+
  * `areaPath`: Filter events to include only work items under the specified area path.
  * `commentPattern`: The string that must be found in the comment.
  * `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "fb2617ed-60df-4518-81fa-749faa6c5cd6",
@@ -2494,77 +2518,8 @@ Filter events to include only work items commented on.
   "createdDate": "2016-09-19T13:03:28.9695265Z"
 }
 ```
-
-::: moniker range="<= tfs-2017"
-
-## Deprecated event types
-
-<a name="message.posted"></a>
-### Team room message posted
-
-Triggers when a message is posted to a team room
-
-* Publisher ID: `tfs`
-* Event ID: `message.posted`
-* Resource Name: `messageposted`
-
-#### Settings
- * `messagePattern`: The string that must be found in the message
- * `roomId`: Filter events to include only messages sent to the specified Team room
-   * Data type: `number`
-   * Required
-
-#### Sample payload
-```json
-{
-  "id": "daae438c-296b-4512-b08e-571910874e9b",
-  "eventType": "message.posted",
-  "publisherId": "tfs",
-  "scope": "all",
-  "message": {
-    "text": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "html": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "markdown": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
-  },
-  "detailedMessage": {
-    "text": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "html": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room<p>Hello</p>",
-    "markdown": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
-  },
-  "resource": {
-    "id": 0,
-    "content": "Hello",
-    "messageType": "normal",
-    "postedTime": "2014-05-02T19:17:13.3309587Z",
-    "postedRoomId": 1,
-    "postedBy": {
-      "id": "00067FFED5C7AF52@Live.com",
-      "displayName": "Jamal Hartnett",
-      "uniqueName": "Windows Live ID\\fabrikamfiber4@hotmail.com"
-    }
-  },
-  "resourceVersion": "1.0",
-  "resourceContainers": {
-    "collection": {
-      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
-    },
-    "account": {
-      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
-    },
-    "project": {
-      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
-    }
-  },
-  "createdDate": "2016-09-19T13:03:29.2506967Z"
-}
-```
-
-::: moniker-end
-
 ## Resource containers
 
-The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. This URL can be used to create a connection to the container in order to make REST API calls.
+The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. 
 
-* **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
-* **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
-* **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
+Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. You can use this URL to create a connection to the container to make REST API calls.

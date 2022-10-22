@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 08/03/2020
 ms.topic: include
 ---
@@ -33,7 +32,7 @@ You can specify multiple repositories in one YAML file and cause a pipeline to t
 - You consume a tool or a library from a different repository. You want to run tests for your application whenever the tool or library is updated.
 - You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
-With this update, multi-repo triggers will only work for Git repositories in Azure Repos. They don't work for GitHub or BitBucket repository resources.
+With this update, multi-repo triggers will only work for Git repositories in Azure Repos. They don't work for GitHub or Bitbucket repository resources.
 
 Here is an example that shows how to define multiple repository resources in a pipeline and how to configure triggers on all of them.
 

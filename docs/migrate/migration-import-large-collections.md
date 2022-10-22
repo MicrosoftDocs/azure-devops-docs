@@ -3,7 +3,7 @@ title: Import process for large collections from Azure DevOps on-premises
 titleSuffix: Azure DevOps
 description: How to guide for importing a large collection to the cloud
 ms.topic: how-to
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -12,7 +12,7 @@ ms.date: 10/07/2021
 
 # Import large collections 
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 <a id="import-large-collections"></a>
 

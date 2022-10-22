@@ -3,21 +3,25 @@ title: Workspaces Command
 titleSuffix: Azure Repos
 description: Workspaces Command
 ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
+# Workspaces command (Team Foundation Version Control)
 
-# Workspaces Command
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+The **workspaces** command displays information about workspaces in the system and updates cached information about a user name or computer name change on an Azure DevOps server.
 
-Displays information about workspaces in the system and updates cached information about a user name or computer name change on the server that is running Visual Studio Team Foundation Server.
+## Prerequisites
 
-**Required Permissions**  
-To use the **workspaces** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **workspaces** command, you must have the **Read** permission set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf workspaces [/owner:ownername] [/computer:computername] 
@@ -179,12 +183,15 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 
 
 ## Remarks
+
 The **workspaces** command of the **tf** command-line utility displays information about [workspaces](create-work-workspaces.md) on the current computer, owned by a specified user, or for all workspaces associated with a specific Team Foundation Server. For each workspace, Team Foundation displays the name, owner, comment, and computer name. With detailed output, it also shows the workspace mappings. Unless you provide a filter such as owner, computer or workspace name, Team Foundation only displays information about the workspaces that you have created.
 
 For more information about how to edit workspace properties, see [Workspace Command](workspace-command.md).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
 ## Examples
+
 The following example displays a list of all workspaces for the current user on the current computer.
 
 ```
@@ -215,17 +222,10 @@ The following example removes all cached workspaces from the cache in the projec
 c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection
 ```
 
-## See Also
+## Related articles
 
-### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
-[Workspace Command](workspace-command.md)  
-[Workfold Command](workfold-command.md)  
-### Concepts
-
-[Create a Workspace to Work with your Project](create-work-workspaces.md)  
-### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)  
+- [Workspace Command](workspace-command.md)  
+- [Workfold Command](workfold-command.md)  
+- [Create and work with workspaces](create-work-workspaces.md)  
+- [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

@@ -3,15 +3,16 @@ title: Use Visual Studio with Git
 titleSuffix: Azure Repos
 description: Use Visual Studio with Git
 ms.assetid: 32f46ecd-1b03-4ef0-a9c4-8a120da2b03f
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Use Visual Studio with Git
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 See [the Git overview](../../repos/git/index.yml).

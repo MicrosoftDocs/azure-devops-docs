@@ -2,19 +2,19 @@
 title: How to enable subscription logging
 titleSuffix: Azure DevOps 
 description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/22/2020  
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 
 # How to enable subscription logging for troubleshooting
 
-[!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
@@ -25,7 +25,7 @@ Subscription logging is a valuable tool for troubleshooting.  It provides diagno
 ## Enabling subscription logging
 
 > [!IMPORTANT] 
-> There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
+> There's a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
 
 Complete the following steps to enable subscription logging:
 

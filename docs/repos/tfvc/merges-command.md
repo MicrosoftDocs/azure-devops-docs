@@ -3,21 +3,27 @@ title: Merges Command
 titleSuffix: Azure Repos
 description: Merges Command
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Merges Command
+# Merges command  (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Displays detailed information about past merges between the specified source and destination branches.
+The **merges** command displays detailed information about past merges between the specified source and destination branches.
 
-**Required Permissions**  
-To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. 
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
@@ -117,7 +123,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -139,9 +145,9 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 
 ## Remarks
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -166,9 +172,7 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
 ## Related articles
 
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)  
 - [Merge Command](merge-command.md)  
 - [Branch Command](branch-command.md)  
-- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
 - [Branching and Merging](./branching-strategies-with-tfvc.md)

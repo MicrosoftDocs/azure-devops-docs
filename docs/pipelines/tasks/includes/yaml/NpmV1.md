@@ -2,25 +2,27 @@
 ms.topic: include
 author: vijayma
 ms.author: vijayma
-ms.date: 07/05/2017
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.date: 02/24/2022
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML
-# npm
+# npm v1
 # Install and publish npm packages, or run an npm command. Supports npmjs.com and authenticated registries like Azure Artifacts.
 - task: Npm@1
   inputs:
-    #command: 'install' # Options: install, publish, custom
-    #workingDir: # Optional
-    #verbose: # Optional
-    #customCommand: # Required when command == Custom
-    #customRegistry: 'useNpmrc' # Optional. Options: useNpmrc, useFeed
-    #customFeed: # Required when customRegistry == UseFeed
-    #customEndpoint: # Optional
-    #publishRegistry: 'useExternalRegistry' # Optional. Options: useExternalRegistry, useFeed
-    #publishFeed: # Required when publishRegistry == UseFeed
-    #publishPackageMetadata: true # Optional
-    #publishEndpoint: # Required when publishRegistry == UseExternalRegistry
+    command: ci | install | publish | custom # Required. Command. Default: install
+    workingDir: string # Working folder that contains package.json. 
+    customCommand: string # Required when command = custom. Command and arguments. 
+  # Advanced
+    verbose: boolean # Verbose logging. 
+    publishPackageMetadata: boolean # Optional. Use when command = publish && publishRegistry = useFeed. Publish pipeline metadata. Default: True
+  # Custom registries and authentication
+    customRegistry: useNpmrc | useFeed # Registries to use. Default: useNpmrc
+    customFeed: string # Required when customRegistry = useFeed. Use packages from this Azure Artifacts/TFS registry. 
+    customEndpoint: string # Optional. Use when customRegistry = useNpmrc. Credentials for registries outside this organization/collection. 
+  # Destination registry and authentication
+    publishRegistry: useExternalRegistry | useFeed # Registry location. Default: useExternalRegistry
+    publishFeed: string # Required when publishRegistry = useFeed. Target registry. 
+    publishEndpoint: string # Required when publishRegistry = useExternalRegistry. External Registry. 
 ```

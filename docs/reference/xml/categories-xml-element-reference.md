@@ -1,22 +1,22 @@
 ---
 title: Categories XML element reference 
-titleSuffix: TFS
-description: Default work item type categories used by Team Foundation Server  
-ms.technology: devops-agile
+titleSuffix: Azure DevOps  
+description: Learn about the syntax and default work item type categories used Azure DevOps.
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '< azure-devops'
-ms.date: 02/14/2017
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Categories XML element reference
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You use the `CATEGORIES` element to group work item types (WITs). [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories used by Team Foundation Server (TFS).  
+You use the `CATEGORIES` element to group work item types. [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories.  
   
 ## Syntax  
   
@@ -60,24 +60,26 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
   
   Category friendly names are not localized and cannot be made into a token, whereas the names for work item types are localized and can be made into a token.  
   
-## Agile tools, category requirements, and restrictions  
- When assigning WITs to categories, consider the following operational notes:  
+## Azure Boards tools, category requirements, and restrictions  
+
+ When assigning work item types to categories, consider the following operational notes:  
   
--   To use the [backlog](../../boards/backlogs/create-your-backlog.md) and [task](../../boards/sprints/assign-work-sprint.md) boards, you must assign at least one WIT to the Requirements Category and one WIT to the Task Category.  
+-   To use the [backlog](../../boards/backlogs/create-your-backlog.md) and [task](../../boards/sprints/assign-work-sprint.md) boards, you must assign at least one work item type to the Requirements Category and one work item type to the Task Category.  
   
--   You cannot assign the same WIT to both the Requirements Category and to the Task Category.   
--   If you include more than one WIT in the Requirements Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.   
--   WITs that belong to a category which defines a backlog in the ProcessConfiguration file must have start, closing, and at least one intermediate  workflow state napped to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).   
--   WITs that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](../../organizations/settings/show-bugs-on-backlog.md). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
+-   You cannot assign the same work item type to both the Requirements Category and to the Task Category.   
+-   If you include more than one work item type in the Requirements Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Azure Boards backlog and board pages.   
+-   Work item types that belong to a category which defines a backlog in the ProcessConfiguration file must have start, closing, and at least one intermediate  workflow state napped to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).   
+-   Work item types that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](../../organizations/settings/show-bugs-on-backlog.md). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
   
 ## Example  
+
  The following example lists the default categories XML file for the Scrum process template.  
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <?xml version="1.0" encoding="utf-8"?>  
 > <cat:CATEGORIES xmlns:cat="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/categories">  
->   <!-- Usage: for resilience in Test system. Even if WITs have different name, they can be referred to by the category -->  
+>   <!-- Usage: for resilience in Test system. Even if work item types have different name, they can be referred to by the category -->  
 >   <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
 >     <DEFAULTWORKITEMTYPE name="Bug" />  
 >   </CATEGORY>  
@@ -135,6 +137,8 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 > ```  
   
 ## Related articles 
+
+- [Import and export categories](../witadmin/witadmin-import-export-categories.md)
 - [Customize your work tracking experience](../customize-work.md)
 - [Change the workflow for a work item type](change-workflow-wit.md)  
 - [ProcessConfiguration XML element reference](process-configuration-xml-element.md)  

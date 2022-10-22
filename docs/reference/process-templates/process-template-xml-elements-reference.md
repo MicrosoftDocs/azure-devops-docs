@@ -2,7 +2,7 @@
 title: Process template XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Processes the template for adding or removing plug-in files.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 68ae0569-a8b6-48c8-ba91-0c18372a2c64
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 02/24/2017
 
 # Process template XML elements reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can customize the root file for a process template to add or remove plug-in files. The root file defines all the plug-ins and tasks used to create a project in Azure DevOps Services or an on-premises Team Foundation Server (TFS). The root file, named ProcessTemplate, is located in the container folder for the process template files. For more information, see [Overview of process template files](overview-process-template-files.md).  
   

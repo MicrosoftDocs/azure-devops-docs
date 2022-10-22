@@ -3,17 +3,18 @@ title: Delete a Git branch
 titleSuffix: Azure Repos
 description: "Learn how to delete a Git branch by using two different methods: in Visual Studio and from the command line."
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 02/22/2018
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Delete a Git branch
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 This article describes how to delete a Git branch by using two different methods: in Visual Studio and from the command line.
 

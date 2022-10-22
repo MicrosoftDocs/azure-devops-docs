@@ -3,7 +3,7 @@ title: Validation of process templates for migration import
 titleSuffix: Azure DevOps
 description: Guidance for fixing common data migration tool process template issues.
 ms.topic: troubleshooting
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 04/01/2021
 
 # Validate and resolve errors related to process templates
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 As part of the migration import process, the data migration tool checks the process used by the projects in the collection. Fix any errors that get flagged.  
 

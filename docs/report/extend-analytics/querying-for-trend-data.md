@@ -2,7 +2,7 @@
 title: Query trend data
 titleSuffix: Azure DevOps 
 description: Learn how to query Analytics trend data and consume it in a client tool when working from Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 
 # Query trend data
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. Analytics supports these capabilities.
 

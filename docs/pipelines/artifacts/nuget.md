@@ -6,12 +6,12 @@ services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: conceptual
 ms.date: 09/13/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish NuGet packages with Azure Pipelines (YAML/Classic) 
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In Azure Pipelines, you can use the classic editor or the YAML tasks to publish your NuGet packages within your pipeline, to your Azure Artifacts feed, or to public registries such as *nuget.org*.
 
@@ -37,7 +37,7 @@ To create a NuGet package, add the following snippet to your pipeline YAML file.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -97,7 +97,7 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -152,7 +152,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
 ```yaml
 - task: NuGetAuthenticate@0
   inputs:
-    nuGetServiceConnections: '<NAME_OF_YOUR_NUGET_SERVICE_CONNECTION>'
+    nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -160,9 +160,39 @@ To publish a package to an external NuGet feed, add the following snippet to you
     versioningScheme: byEnvVar
     versionEnvVar: <VERSION_ENVIRONMENT_VARIABLE>
 ```
+
+**Example using the** [Command line task](../tasks/utility/command-line.md) (NuGet.exe):
+
+```yaml
+  - task: NuGetAuthenticate@1
+    inputs:
+      nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+      
+  - script: |
+      nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+    displayName: "Push"          
+```
+
+**Example using the** [Command line task](../tasks/utility/command-line.md) (dotnet):
+
+  ```yaml
+    - task: NuGetAuthenticate@1
+      inputs:
+        nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+        
+    - script: |
+        dotnet build <CSPROJ_PATH> --configuration <CONFIGURATION>
+        dotnet pack <CSPROJ_PATH> -p:PackageVersion=<YOUR_PACKAGE_VERSION> --output <OUTPUT_DIRECTORY> --configuration <CONFIGURATION>
+        dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
+      displayName: "Build, pack and push"          
+  ```
+
+> [!NOTE]
+> The `ApiKey` is only used as a placeholder.
+
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -177,7 +207,7 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 - **Target feed location**: You can publish to your current organization or an external NuGet server.
 - **Target feed**: Select the feed that you want to publish to.
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]
 > If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option. You must use the **Generic** service connection.

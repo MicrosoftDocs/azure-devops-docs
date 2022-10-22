@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Package: npm Authenticate task (for task runners)
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to provide npm credentials to an `.npmrc` file in your repository for the scope of the build. This enables npm, as well as npm task runners like gulp and Grunt, to authenticate with private registries.
 

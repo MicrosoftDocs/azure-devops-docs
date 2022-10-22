@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # IIS Web App Manage task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to create or update a Website, Web App, Virtual Directory, or Application Pool.
 

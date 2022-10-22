@@ -1,9 +1,9 @@
 ---
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 08/18/2021
+ms.date: 01/05/2022
 ---
 
 :::row:::
@@ -41,7 +41,7 @@ ms.date: 08/18/2021
       Create and save managed My queries, query charts
    :::column-end:::
    :::column span="1":::
-       
+      
    :::column-end:::
    :::column span="1":::
       ✔️

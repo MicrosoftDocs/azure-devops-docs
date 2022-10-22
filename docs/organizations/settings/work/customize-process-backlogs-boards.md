@@ -3,18 +3,18 @@ title: Customize backlogs and boards
 titleSuffix: Azure Boards 
 description: Learn how to add and edit backlog levels for the Inheritance process model 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/07/2021 
 ---
 
 # Customize your backlogs or boards (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]    
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]    
 
 You can customize your backlogs to add more levels or add custom work item types to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* work item type, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  

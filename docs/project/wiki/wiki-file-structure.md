@@ -1,21 +1,20 @@
-﻿---
+---
 title: Wiki files, structure, and conventions
 titleSuffix: Azure DevOps 
 description: Understand the file conventions of the Git repository and project wikis in Azure DevOps.
-ms.technology: devops-collab
-ms.custom: wiki, contperf-fy21q4
-ms.topic: conceptual
-ms.assetid:
+ms.subservice: azure-devops-wiki
+ms.custom: wiki, devdivchpfy22
+ms.topic: conceptual 
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 05/27/2021  
+ms.date: 06/13/2022  
 ---
 
 # Wiki files and file structure
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn about the files and file structure for project wikis and code wikis. The following guidance might specify code wikis, however it applies to both types of wiki.
 
@@ -42,7 +41,7 @@ The wiki repository has the following files and folders:
 
 ## File naming conventions
 
-Each file requires using dashes instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name gets added to the URL, ensuring that links you share remain intact as the wiki changes over time.
+Each file requires using hyphens instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name gets added to the URL, ensuring that links you share remain intact as the wiki changes over time.
 
 [!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
@@ -52,7 +51,7 @@ The *.order* file defines the sequence of pages within the wiki. The following v
 
 | **Wiki TOC**     | ***.order* file**                                                                  |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Wiki TOC example screenshot."::: | :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Wiki example .order file screenshot."::: |
+| :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Screenshot of wiki TOC example."::: | :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Screenshot of Wiki example .order file."::: |
 
 The default hierarchy is in alphabetical sequence, however you can change this hierarchy in the *.order* file. For more information about how to reorder wiki pages, see [Add and edit wiki pages, Reorder a wiki page](add-edit-wiki.md#reorder-a-wiki-page).
 
@@ -67,7 +66,7 @@ When there's no *.order* file the pages get sorted alphabetically. To revert to 
 
 ## Related articles
 
-- [Provision wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
+- [Set up wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
 - [Update wiki pages offline](wiki-update-offline.md)

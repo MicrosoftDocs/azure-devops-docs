@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
@@ -29,13 +29,13 @@ must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
 Learn more about [how agents communicate](../../agents.md#communication).
 
-::: moniker range=">= tfs-2017"
+::: moniker range="<= azure-devops"
 
 #### Authenticate with a personal access token (PAT)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Sign in with the user account you plan to use in your Team Foundation Server web portal (`https://{your-server}:8080/tfs/`).
 
@@ -43,7 +43,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker range=" >= azure-devops-2019 < azure-devops"
 
-1. Sign in with the user account you plan to use in you Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
+1. Sign in with the user account you plan to use in your Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 2. From your home page, open your profile. Go to your security details.
 
@@ -62,6 +62,11 @@ Learn more about [how agents communicate](../../agents.md#communication).
 3. [Create a personal access token](../../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
    ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
+
+   > [!NOTE]
+   > If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**. 
+   > :::image type="content" source="../../media/prepare-permissions-pat-scope.png" alt-text="Screenshot of setting PAT scope to all accessible organizations.":::
+
 
 ::: moniker-end
 
@@ -77,7 +82,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops"
+::: moniker range="<= azure-devops"
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](../../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
@@ -85,18 +90,6 @@ Learn more about [how agents communicate](../../agents.md#communication).
    Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
 
 5. Copy the token. You'll use this token when you configure the agent.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-#### Authenticate as a Windows user (TFS 2015 and TFS 2017)
-
-As an alternative, on TFS 2017, you can use either a domain user or a
-local Windows user on each of your TFS application tiers.
-
-On TFS 2015, for macOS and Linux only, 
-we recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
 ::: moniker-end
 
@@ -116,7 +109,7 @@ Otherwise:
 
 1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
-   If it's a [deployment group](../../../release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
+   If it's a [deployment group](../../../release/deployment-groups/index.md) agent, the administrator can be a deployment group administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
    You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page in **Azure Pipelines**.
 

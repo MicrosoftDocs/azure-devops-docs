@@ -8,6 +8,8 @@ monikerRange: 'azure-devops'
 
 # Build Subversion repositories
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 You can integrate your on-premises Subversion server with Azure Pipelines. The Subversion server must be accessible to Azure Pipelines.
 
 > [!NOTE] 

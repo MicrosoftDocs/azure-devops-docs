@@ -3,25 +3,26 @@ title: Import a Git repo into your project
 titleSuffix: Azure Repos
 description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.date: 10/14/2020
 monikerRange: '<= azure-devops'
+ms.date: 02/23/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Import a Git repo
 
-[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
+This article shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 >[!IMPORTANT]
 >The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
 
 There are several workarounds to this issue:
-* You can import a GitHub repo into TFS using the steps in [Manually import a repo](#manually-import-a-repo).
+* You can import a GitHub repo into Azure Devops using the steps provided later in this article, [Manually import a repo using git CLI](#manual-import-git-cli).
 * You can set a machine-wide .NET registry key on your Application Tier servers to enable them to use all available TLS protocol versions. After setting these registry keys, you will need to recycle the TFS application pools (or restart the servers) for the settings to be activated. Open an elevated command prompt and run the following commands to set the registry keys.
  
      ```
@@ -37,14 +38,23 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
-* To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
+::: moniker range="azure-devops"
+- An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+- To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
+- To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo using git CLI](#manual-import-git-cli).
+- If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+::: moniker-end
 
-::: moniker range=">= tfs-2017"  
+::: moniker range="< azure-devops"
+- An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+- To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
+- To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo using git CLI](#manual-import-git-cli).
+::: moniker-end
 
 ## Import into a new repo  
-::: moniker-end  
+ 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -58,13 +68,13 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
+   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo using git CLI](#manual-import-git-cli).
 
    ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From the repo drop-down, select **Import repository**.
 
@@ -72,25 +82,126 @@ From the repo drop-down, select **Import repository**.
 
 If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
+If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo using git CLI](#manual-import-git-cli).
 
 ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
 
-## Import into an existing empty repo
+## Import into an existing empty repo 
 
 On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). You will need to provide credentials if the source repository requires authentication. 
 
 ![Import Repository into an existing repository](media/Import-Repo/ImportRepofromEmptyRepo.png)
 
->[!NOTE]
->The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
+> [!NOTE]
+> The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
+ 
 
-::: moniker range=">= tfs-2013"
+::: moniker range="azure-devops"
 
-## Manually import a repo
+## Manually import a repo using az repos CLI
+
+You can use [az repos import](/cli/azure/repos/import#az-repos-import-create) to import a repository to your Azure DevOps project.  
+
+> [!NOTE]
+> You must first create the repository in Azure DevOps before you can import a Git repository. Also, the repository you create must be empty. To create a repo, see [Create your Git repo in Azure Repos](share-your-code-in-git-cmdline.md#create-your-git-repo-in-azure-repos).
+
+```azurecli
+az repos import create --git-source-url
+                       [--detect {false, true}]
+                       [--git-service-endpoint-id]
+                       [--org]
+                       [--project]
+                       [--repository]
+                       [--requires-authorization]
+                       [--subscription]
+                       [--user-name]
+```
+
+**Parameters**
+
+|Parameter|Description|
+|---------|-----------|
+|`git-source-url`| Required. URL of the source git repository to import.  |
+|`detect`| Optional. Automatically detect organization. Accepted values: `false`, `true`.|
+|`git-service-endpoint-id`| Optional.  Service Endpoint for connection to external endpoint.  |
+|`org`, `organization`| Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config. 
+|`repository`| Name or ID of the repository to create the import request in.  |
+|`requires-authorization`| Flag to indicate if the source git repository is private. If you require authentication, then generate an authentication token on the source repo and set the environment variable `AZURE_DEVOPS_EXT_GIT_SOURCE_PASSWORD_OR_PAT` to the value of the token. Then the import request will include authentication. |
+|`subscription`| Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`user-name`| User name to specify when the git repository is private.|
+  
+
+
+**Example**
+
+The following command imports the public repo *fabrikam-open-source* to the empty Git repo *fabrikam-open-source* for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+
+```azurecli
+az repos import create --git-source-url https://github.com/fabrikamprime/fabrikam-open-source --repository fabrikam-open-source
+{
+  "detailedStatus": {
+    "allSteps": [
+      "Processing request",
+      "Analyzing repository objects",
+      "Storing objects",
+      "Storing index file",
+      "Updating references",
+      "Import completed successfully"
+    ],
+    "currentStep": 6,
+    "errorMessage": null
+  },
+  "importRequestId": 8,
+  "parameters": {
+    "deleteServiceEndpointAfterImportIsDone": null,
+    "gitSource": {
+      "overwrite": false,
+      "url": "https://github.com/fabrikamprime/fabrikam-open-source"
+    },
+    "serviceEndpointId": null,
+    "tfvcSource": null
+  },
+  "repository": {
+    "defaultBranch": null,
+    "id": "0f6919cd-a4db-4f34-a73f-2354114a66c4",
+    "isDisabled": false,
+    "isFork": null,
+    "name": "new-empty-repo",
+    "parentRepository": null,
+    "project": {
+      "abbreviation": null,
+      "defaultTeamImageUrl": null,
+      "description": "Guidance and source control to foster a vibrant ecosystem for Fabrikam Fiber applications and extensions.",
+      "id": "56af920d-393b-4236-9a07-24439ccaa85c",
+      "lastUpdateTime": "2021-05-24T21:52:14.95Z",
+      "name": "Fabrikam Fiber",
+      "revision": 438023732,
+      "state": "wellFormed",
+      "url": "https://dev.azure.com/fabrikamprime/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c",
+      "visibility": "private"
+    },
+    "remoteUrl": "https://fabrikamprime@dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_git/fabrikam-open-source",
+    "size": 12477,
+    "sshUrl": "git@ssh.dev.azure.com:v3/kelliott/Fabrikam%20Fiber/new-empty-repo",
+    "url": "https://dev.azure.com/fabrikamprime/56af920d-393b-4236-9a07-24439ccaa85c/_apis/git/repositories/0f6919cd-a4db-4f34-a73f-2354114a66c4",
+    "validRemoteUrls": null,
+    "webUrl": "https://dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_git/fabrikam-open-source"
+  },
+  "status": "completed",
+  "url": "https://dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_apis/git/repositories/0f6919cd-a4db-4f34-a73f-2354114a66c4/importRequests/8"
+}
+```
+
+::: moniker-end
+
+<a id="manual-import-git-cli" /> 
+
+## Manually import a repo using git CLI
 
 The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM or earlier, you can use the following steps to manually import a repo into TFS. You can also follow these steps to manually import a repo into an Azure DevOps Services repo by replacing TFS with Azure Repos in the following steps.
 
@@ -124,12 +235,10 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd ..
     rm -rf old-contoso-repo.git
     ```
-
-::: moniker-end
+ 
 
 ## Frequently asked questions
 
-::: moniker range=">= tfs-2017"
 
 Although most of the time the import is successful, the following conditions can cause problems.
 
@@ -153,18 +262,16 @@ The import service uses the [multi_ack](https://git-scm.com/book/en/v2/Git-Inter
 If the source repository does not provide this capability, the import service can fail to import from the given source.
 This failure can happen when creating import request or while import is in progress.
 
-::: moniker-end
 
-::: moniker range=">= tfs-2013"
+
 
 ### Can I import from previous versions of Team Foundation Server?
 
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
 This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
+ 
 
-::: moniker-end
 
-::: moniker range=">= tfs-2017"
 
 ### Can I use MSA-based credentials?
 
@@ -210,7 +317,7 @@ git fetch upstream --tags
 git push origin --all
 ```
 
-::: moniker-end
+
 
 ## Next steps
 

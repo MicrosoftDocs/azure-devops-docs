@@ -2,7 +2,7 @@
 title: Pipeline stage wise failures sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline stage wise failure Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
 ms.custom: powerbisample
@@ -14,7 +14,7 @@ ms.date: 10/12/2021
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 

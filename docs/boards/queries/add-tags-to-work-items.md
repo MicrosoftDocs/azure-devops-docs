@@ -3,18 +3,18 @@ title: Add tags to work items to categorize lists and boards
 titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/13/2021
+ms.date: 07/07/2022
 ---
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 
@@ -42,18 +42,14 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
 
-::: moniker range=">= tfs-2017"
+> [!TIP]
+> We recommend that you don't use the `@` character in a tag. Tags that start with the `@` character can't be used in a work item query. The `@` character signifies a macro within a query and therefore the tag isn't recognized as a tag.  
+
+
 From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
 > [!div class="mx-imgBorder"]
 > ![Add one or more tags to a work item](media/add-tags/add-tag-vsts.png)
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-From the web portal, open a work item and add a tag. Choose **Add** and type your keyword. Or, select from the list of previously assigned tags.  
-
-![Add one or more tags to a work item](media/add-tags-to-work-items-vso-tfs.png)  
-::: moniker-end
 
 To add several tags at one time, type a comma between tags. Tags are case sensitive.  
 
@@ -65,7 +61,7 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+> more, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 ::: moniker-end	
 
 
@@ -73,24 +69,14 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 
 ## Bulk add or remove tags 
 
-::: moniker range=">= tfs-2017"
-
 You can bulk update work items to add or remove tags from the web portal.
 You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
 
 > [!div class="mx-imgBorder"]
 > ![Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
 
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-[Use Excel to bulk modify tags](../backlogs/office/bulk-add-modify-work-items-excel.md).
-
-::: moniker-end
-
 > [!NOTE]   
-> Bulk modify of tags from the Visual Studio client isn't supported. 
+> Bulk modify of tags from the Visual Studio or other supported clients isn't supported. 
 
 
 <a id="query"></a>
@@ -99,13 +85,8 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
 
-::: moniker range="tfs-2013"
-> [!Note]    
-> Adding tags to a query is supported from TFS 2013.2 and later versions.
-::: moniker-end
-
 > [!TIP]    
-> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+> You can use the **Contains** or **Does Not Contain** operators. Tags that start with the `@` character can't be used in a work item query as the query editor interprets the `@` character as a macro.  To learn more about queries, see [Create managed queries](using-queries.md). 
 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
@@ -124,7 +105,6 @@ For example, here we query for all work items that are tagged either ```Web``` o
 
 ## Show tags in your backlog or query results
 
-::: moniker range=">= tfs-2017"
 Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
@@ -134,29 +114,12 @@ All tags that have been added to the listed work items appear.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of product backlog, View with Tags column added.](media/add-tags/backlog-with-tags.png) 
- 
-::: moniker-end
-  
-
-::: moniker range="<= tfs-2015"
-
-1. Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: to select it from the menu of options. 
-
-	![Column options dialog, Add Tags to the selected columns to display, TFS-2015 and earlier versions.](media/add-tags-to-query-results.png)
-
-2. All tags that are assigned to the listed work items appear.
-
-	![Product backlog view with Tags column added, TFS-2015 and earlier versions.](media/query-results-with-tags-listed.png) 
- 
-::: moniker-end
 
 <a id="filter"></a>
 
 ## Filter lists using tags  
 
 From the web portal, you can filter backlogs, boards, and query results using tags. 
- 
-::: moniker range=">= tfs-2017"
 
 Begin by choosing **Filter** :::image type="icon" source="../media/icons/filter-icon.png" border="false":::. 
 
@@ -166,54 +129,22 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 > ![View with Tags column added](media/add-tags/filter-backlog-tags.png) 
 
 
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-1. Turn on filtering and choose a tag.  
-
-	![Choose a tag to filter the list by that tag](media/filter-a-list-using-tags.png)  
-
-	The list refreshes. Only those work items with the selected tag are displayed. Filtering the list disables add-a-backlog-item panel, stack ranking, and forecasting.  
-
-	![Filtered list disables other features](media/filtered-list-based-on-tags.png)  
-
-2. To apply a subfilter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
-
-3. To show all items, choose All or choose the Tag filter image on backlog and queries pages filter icon to turn filtering off.   
-
-::: moniker-end
-
 ## Delete, remove, or manage tags 
 
 You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after three days of disuse.  
 
 If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within three days.  
 
-::: moniker range=">= tfs-2018" 
-
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
-::: moniker-end
 
-::: moniker range=">=tfs-2015"
   
 ## Color-code tags on boards
 
 You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
-::: moniker-end   
-
-::: moniker range="tfs-2015"  
-Requires TFS 2015.1 or later version.  
-::: moniker-end   
-
-::: moniker range=">=tfs-2015"  
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Settings>Tag colors dialog](media/add-tags/color-code-tags.png)
-
-::: moniker-end   
-
 
 <a id="group-by-tags"></a> 
 ::: moniker range="azure-devops"
@@ -237,6 +168,10 @@ To group a **Chart for Work Items** widget by tags, complete the same steps prov
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
+### Marketplace extension
+
+- [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2)
+
 ### Limits on the number of tags
 
 While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
@@ -256,6 +191,6 @@ Limit queries to fewer than 25 tags. More than that amount and the query will li
 
 ### Add tags to the default column view on the product backlog 
 
-To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+To add the **Tags** field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end

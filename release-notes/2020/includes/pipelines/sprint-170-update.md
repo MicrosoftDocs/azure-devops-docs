@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 06/01/2020
 ms.topic: include
 ---
@@ -33,9 +32,9 @@ resources:
   packages:
     - package: myPackageAlias # alias for the package resource
       type: Npm # type of the package NuGet/npm
-      connection: GitHubConn # Github service connection of type PAT
+      connection: GitHubConn # GitHub service connection of type PAT
       name: nugetTest/nodeapp # <Repository>/<Name of the package>
-      version: 1.0.9 # Version of the packge to consume; Optional; Defaults to latest
+      version: 1.0.9 # Version of the package to consume; Optional; Defaults to latest
       trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
 ```
 

@@ -2,8 +2,7 @@
 title: Scaled Agile Framework (SAFe®) and Azure Boards  
 titleSuffix: Azure Boards
 description: Learn how Scaled Agile Framework concepts map to Azure Boards artifacts.
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -14,7 +13,7 @@ ms.date: 10/20/2021
 
 # How SAFe&reg; concepts map to Azure Boards artifacts 
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you're interested in using Scaled Agile Framework (SAFe®), you can configure your Azure Boards project to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on Epics that span releases. 
 
@@ -112,7 +111,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 ## Iteration goals and objectives 
 
-SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support markdown to add and format information. 
+SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support Markdown to add and format information. 
 
 To learn more, see [Share information](#share-information) later in this article. 
 
@@ -146,7 +145,7 @@ To add custom fields, see [Customize Azure Boards, Add a custom field](safe-cust
 
 ## Use the project wiki to support your portfolio vision and strategic themes
 
-Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using markdown and a WYSIWYG editor. It versions each page so that it's easy to track who made changes and recover past versions.   
+Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using Markdown and a WYSIWYG editor. It versions each page so that it's easy to track who made changes and recover past versions.   
 
 Use your project wiki to support sharing the following SAFe® artifacts: 
 
@@ -241,7 +240,7 @@ For details on supported Markdown features, see the following articles.
 
 <!---
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![SAFe® roles map to a hierarchy of teams](media/safe-roles-to-vso-roles.png)  
 
@@ -260,7 +259,7 @@ For details on supported Markdown features, see the following articles.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]  
 > The [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) is supported on TFS 2018 and later versions. 
@@ -268,7 +267,7 @@ For details on supported Markdown features, see the following articles.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > The Project Wiki is available with TFS 2018 and later versions. 
 ::: moniker-end

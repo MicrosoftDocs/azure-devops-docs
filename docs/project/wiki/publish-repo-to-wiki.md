@@ -1,26 +1,26 @@
 ---
 title: Publish Markdown files from Git repository to wiki
 titleSuffix: Azure DevOps  
-description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
-ms.technology: devops-collab
-ms.custom: wiki, devx-track-azurecli
+description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps.
+ms.subservice: azure-devops-wiki
+ms.custom: wiki, devx-track-azurecli, devdivchpfy22
 ms.topic: quickstart
 ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
-ms.date: 10/26/2021  
+monikerRange: '<= azure-devops'
+ms.date: 07/06/2022 
 ---
 
 # Publish a Git repository to a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 In this quickstart, learn how to do the following tasks:
 
 > [!div class="checklist"]
-> * Open Wiki
+> * Open wiki
 > * Publish a Git repo to a wiki
 > * Edit pages of a published wiki
 > * Add pages to a published wiki
@@ -31,11 +31,11 @@ Content that you already maintain in a Git repository can be published to a wiki
 
 By publishing your Markdown files to a wiki, you gain the following benefits:
 
-- Organize the content into a hierarchical page structure
-- Table of contents that readers can browse and filter
-- Publish new versions of the content
-- Manage content in the same way you manage your code base
-- Readers can search the wiki easily using the Wiki search feature
+- Organize the content into a hierarchical page structure.
+- Table of contents that readers can browse and filter.
+- Publish new versions of the content.
+- Manage content in the same way you manage your code base.
+- Readers can search the wiki easily using the Wiki search feature.
 
 For information about managing the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
@@ -118,7 +118,7 @@ For the Wiki that's provisioned with the Markdown files you've added, you can no
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
@@ -137,17 +137,17 @@ az devops wiki create [--mapped-path]
 
 #### Parameters 
 
-- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository. 
+- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify '/' to publish from the root of the repository. 
 - **name**: Name of the new wiki.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **org**: Azure DevOps organization URL. You can configure the default organization using the `az devops configure -d organization=ORG_URL`command. Required if not configured as default or picked up using the `git config`command. For example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using the `az devops configure -d project=NAME_OR_ID` command. Required if not configured as default or picked up using the `git config`command.
 - **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
 - **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
 - **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 #### Example 
 
@@ -170,7 +170,7 @@ ID                                    Name         Type
 
 ## Edit, rename, or delete pages  
 
-1. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**.
+1. To edit, rename, or delete a page, open **Repos > Files** or **Code > Files**.
 
 2. Choose the page you want, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions**, and then choose the operation that you want.
 
@@ -184,7 +184,7 @@ ID                                    Name         Type
 
 You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](./markdown-guidance.md).  
 
-1. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
+1. When finished with your updates, choose **Commit**, and then fill in the **Commit** dialog form.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Commit dialog](media/wiki/publish-wiki-commit-changes.png)
@@ -195,11 +195,11 @@ You can use the links available in edit mode to preview your changes or highligh
     > ![Create a pull request link](media/wiki/publish-wiki-create-pr.png)
 
 > [!TIP]
-> When you change the name or case of a file, you'll want to update the **.order** file to reflect the change. To learn more, jump to [Change the page sequence, add or update a .order file](#page-sequence).
+> When you change the name or case of a file, you'll want to update the *.order* file to reflect the change. To learn more, jump to [Change the page sequence, add or update a .order file](#page-sequence).
 
 ### Rename a page
 
-All pages that you want to appear in the TOC must have **.md** as their file type. Choose **Rename** to rename the file accordingly.
+All pages that you want to appear in the TOC must have *.md* as their file type. Choose **Rename** to rename the file accordingly.
 
 For example, here we rename *new-home-page.md* to *New-Home-Page.md*. This page appears in the TOC with the label, "New Home Page".
 
@@ -210,7 +210,7 @@ Page titles are case-sensitive and must be unique within the folder, and 235 cha
 
 ### Delete a page
 
-Any Markdown files that you don't want to appear in the wiki, you can delete from the published folder. If you've included the file in an **.order** file, then delete its entry from the **.order** file. To learn more, jump to [Change the page sequence, add, or update an .order file](#page-sequence).
+Any Markdown files that you don't want to appear in the wiki, you can delete from the published folder. If you've included the file in an *.order* file, then delete its entry from the *.order* file. To learn more, jump to [Change the page sequence, add, or update an .order file](#page-sequence).
 
 <a id="add-page" />
 
@@ -222,16 +222,16 @@ You can add pages to your published wiki as follows:
 - Upload files to a root folder or subfolder
 - Add or update a .order file to specify the page sequence in the wiki TOC.
 
-Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
+Each update you make requires you commit your changes to the repository. You can then refresh your Wiki for your published repo to review the changes.  
 
 ### Add a page from the web portal
 
-1. From **Repos>Files** or **Code>Files** for the published repo, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions**, and then choose **File**.
+1. From **Repos > Files** or **Code > Files** for the published repo, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions**, and then choose **File**.
 
     > [!div class="mx-imgBorder"]  
     > ![Add a page to the wiki from the web portal](media/wiki/publish-code-add-edit-files-folder.png)
 
-2. Enter a name for the page, make sure to specify the **.md** file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Page title naming restrictions](wiki-file-structure.md#file-naming-conventions).
+2. Enter a name for the page, make sure to specify the *.md* file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Page title naming restrictions](wiki-file-structure.md#file-naming-conventions).
 
     For example, to add a page that appears in the TOC as *Page 4*, add a file named *Page-4.md*.
 
@@ -240,7 +240,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
-4. When done, choose **Commit**, and then fill in the Commit dialog form.
+4. When done, choose **Commit**, and then fill in the **Commit** dialog form.
 
 ### Upload files to a folder
 
@@ -249,7 +249,7 @@ Each update you make requires you commit your changes to the repository. You can
     > [!div class="mx-imgBorder"]  
     > ![Upload files to a folder option](media/wiki/publish-wiki-upload-files.png)
 
-2. Fill in the Commit dialog form, selecting the folder and files you want to upload.
+2. Fill in the **Commit** dialog form, selecting the folder and files you want to upload.
 
     > [!div class="mx-imgBorder"]  
     > ![Commit dialog for uploading files](media/wiki/publish-wiki-upload-files-dialog.png)
@@ -258,7 +258,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 To add a parent page, you'll first add a Markdown file at the root folder level and then add a folder with the same label.
 
-1. To add a folder, choose **Folder**, and then fill in the New folder dialog form. Specify at least one file to correspond to a subpage in the folder.
+1. To add a folder, choose **Folder**, and then fill in the **New Folder** dialog form. Specify at least one file to correspond to a subpage in the folder.
 
     > [!div class="mx-imgBorder"]  
     > ![Create folder dialog](media/wiki/publish-wiki-create-folder.png)
@@ -267,17 +267,17 @@ To add a parent page, you'll first add a Markdown file at the root folder level 
 
 ### Add or update a .order file
 
-The last step when you're adding files or folders to the wiki repo is to add or update the **.order** file of the updated folders. This action reflects the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence). Any files that aren't listed in the .order file get added to the end of the alphabetical list, as their order is set to int.MaxValue.
+The last step when you're adding files or folders to the wiki repo is to add or update the *.order* file of the updated folders. This action reflects the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence). Any files that aren't listed in the .order file get added to the end of the alphabetical list, as their order is set to int.MaxValue.
 
 <a id="page-sequence" />
 
 ## Change the page sequence, add, or update a .order file
 
-Each **.order** file defines the sequence of pages contained within a folder. The root **.order** file specifies the sequence of pages defined at the root level. And for each folder, a **.order** file defines the sequence of subpages added to a parent page.
+Each *.order* file defines the sequence of pages contained within a folder. The root *.order* file specifies the sequence of pages defined at the root level. And for each folder, a *.order* file defines the sequence of subpages added to a parent page.
 
-You can add a **.order** file in the same way as you add any file from the **Code>Files** page. Name the file *.order*.
+You can add a *.order* file in the same way as you add any file from the **Code > Files** page. Name the file *.order*.
 
-Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name but without the **.md** file type. Titles are case-sensitive, so the entry should match the case used in the file name.
+Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name but without the *.md* file type. Titles are case-sensitive, so the entry should match the case used in the file name.
 
 For example:  
 
@@ -308,9 +308,9 @@ Misc content
 
 ## Promote folder to page
 
-For a folder to be a page as well, there should be a markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
+For a folder to be a page as well, there should be a Markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the *.md* file of the same name should lie next to each other.
 
-Displayed in the following example, Test has both a folder and an md file, which creates a hierarchy within the Wiki tree.
+As displayed in the following example, Test has both a folder and a *.md* file, which creates a hierarchy within the Wiki tree.
 
 ![Promote a folder to a page](media/promote-folder.png)
 

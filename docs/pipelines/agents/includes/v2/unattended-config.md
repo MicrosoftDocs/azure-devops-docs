@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
@@ -18,7 +18,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 - `--unattended` - agent setup will not prompt for information, and all settings must be provided on the command line
 - `--url <url>` - URL of the server. For example: https://dev.azure.com/myorganization or http://my-azure-devops-server:8080/tfs
 - `--auth <type>` - authentication type. Valid values are:
-  - `pat` (Personal access token)
+  - `pat` (Personal access token) - PAT is the only scheme that works with Azure DevOps Services.
   - `negotiate` (Kerberos or NTLM)
   - `alt` (Basic authentication)
   - `integrated` (Windows default credentials)
@@ -27,6 +27,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 
 - If you chose `--auth pat`:
   - `--token <token>` - specifies your personal access token
+  -  PAT is the only scheme that works with Azure DevOps Services.
 - If you chose `--auth negotiate` or `--auth alt`:
   - `--userName <userName>` - specifies a Windows username in the format `domain\userName` or `userName@domain.com`
   - `--password <password>` - specifies a password
@@ -48,7 +49,7 @@ agent and should not be shared between multiple agents.
 - `--runAsAutoLogon` - configure auto-logon and run the agent on startup (requires administrator permission)
 - `--windowsLogonAccount <account>` - used with `--runAsService` or `--runAsAutoLogon` to specify the Windows user
 name in the format `domain\userName` or `userName@domain.com`
-- `--windowsLogonPassword <password>` - used with `--runAsService` or `--runAsAutoLogon` to specify Windows logon password
+- `--windowsLogonPassword <password>` - used with `--runAsService` or `--runAsAutoLogon` to specify Windows logon password (not required for [Group Managed Service Accounts](https://aka.ms/gmsa) and Windows built in accounts such as 'NT AUTHORITY\NETWORK SERVICE')
 - `--overwriteAutoLogon` - used with `--runAsAutoLogon` to overwrite the existing auto logon on the machine
 - `--noRestart` - used with `--runAsAutoLogon` to stop the host from restarting after agent configuration completes
 

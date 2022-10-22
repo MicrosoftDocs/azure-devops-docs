@@ -2,7 +2,7 @@
 title: Elements of Agile culture
 titleSuffix: Azure Boards 
 description: Create an Agile culture of autonomous teams and an aligned enterprise. Create the culture by using Agile tools when working in Azure Boards and Azure DevOps.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 10/20/2021
 
 # Promote an Agile culture within your team  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture](/devops/plan/adopting-agile) and [Scaling Agile to Large Teams](/devops/plan/scaling-agile).

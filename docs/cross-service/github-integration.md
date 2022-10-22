@@ -2,7 +2,7 @@
 title: GitHub integration overview
 titleSuffix: Azure DevOps
 description: Learn about Azure DevOps integration with GitHub.
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
 ms.author: kaelli
@@ -14,7 +14,7 @@ ms.date: 08/31/2021
 
 # Azure DevOps and GitHub integration overview
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
 
 Azure Boards and Azure Pipelines provide several integration points with GitHub and GitHub Enterprise. 
  

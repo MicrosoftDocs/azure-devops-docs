@@ -4,20 +4,19 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: atulmal
-ms.date: 10/11/2021
-monikerRange: azure-devops
+ms.date: 03/23/2022
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Environment - Kubernetes resource
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 The Kubernetes resource view provides a glimpse into the status of objects within the namespace that's mapped to the resource. This view also overlays pipeline traceability so you can trace back from a Kubernetes object to the pipeline, and then back to the commit.
 
-Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider.
+Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider. 
 
-To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
+You can use Kubernetes resources with public or private clusters. To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 ## Overview
 
@@ -146,14 +145,14 @@ stages:
     - upload: manifests
       artifact: manifests
 
-- stage: Deploy
+- stage: Production
   displayName: Deploy stage
   dependsOn: Build
 
   jobs:
-  - deployment: Deploy
+  - deployment: Production
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
-    displayName: Deploy
+    displayName: Production
     pool:
       vmImage: $(vmImageName)
     environment: $(envName).$(resourceName)

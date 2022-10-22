@@ -1,14 +1,16 @@
 ---
 title: Best practices when working with Azure Artifacts
 description: Best practices to publish and consume packages from Artifacts feeds
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 08/20/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Azure Artifacts: best practices
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure Artifacts.
 

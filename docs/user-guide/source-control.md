@@ -3,7 +3,7 @@ title: Understand source control
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: What is source control or version control in Azure DevOps?  
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.author: chcomley
 author: chcomley
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # What is source control?
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 A source control system, also called a *version control* system, allows developers to collaborate on code and track changes. Source control is an essential tool for multi-developer projects.  
 

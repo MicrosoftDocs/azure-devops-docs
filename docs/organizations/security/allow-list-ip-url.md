@@ -4,19 +4,19 @@ titleSuffix: Azure DevOps
 description: Add IP addresses and domain URLs to the allowlist for Azure DevOps and troubleshoot network connections. 
 ms.topic: reference
 ms.custom: contperf-fy21q4
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
-ms.date: 06/14/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/25/2022
 ---
 
 # Allowed IP addresses and domain URLs
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
+If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 
 - [Domain URLs to allow](#domain-urls-to-allow)
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
@@ -34,15 +34,11 @@ The following section includes the most common domain URLs to support sign in an
 
 ```CommonDomainURLs
 
+https://dev.azure.com
 https://*.dev.azure.com
-https://*.vsassets.io
-https://*gallerycdn.vsassets.io
-https://*vstmrblob.vsassets.io
-https://aadcdn.msauth.net
-https://aadcdn.msftauth.net
 https://aex.dev.azure.com
 https://aexprodea1.vsaex.visualstudio.com
-https://amcdn.msftauth.net
+https://*vstmrblob.vsassets.io
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
@@ -50,13 +46,8 @@ https://*.vsblob.visualstudio.com
 https://*.vssps.visualstudio.com
 https://*.vstmr.visualstudio.com
 https://azure.microsoft.com
-https://azurecomcdn.azureedge.net
-https://cdn.vsassets.io
-https://dev.azure.com
 https://go.microsoft.com
 https://graph.microsoft.com
-https://live.com
-https://login.live.com
 https://login.microsoftonline.com
 https://management.azure.com
 https://management.core.windows.net
@@ -66,27 +57,50 @@ https://static2.sharepointonline.com
 https://visualstudio.com
 https://vsrm.dev.azure.com
 https://vstsagentpackage.azureedge.net
-https://windows.net
-https://login.microsoftonline.com
+https://*.windows.net
 https://app.vssps.visualstudio.com 
 https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com
 https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
+
+Azure DevOps uses content delivery network (CDN) to serve static content. The following URLs are part of that. 
+https://cdn.vsassets.io
+https://*.vsassets.io
+https://*gallerycdn.vsassets.io
+https://aadcdn.msauth.net
+https://aadcdn.msftauth.net
+https://amcdn.msftauth.net
+https://azurecomcdn.azureedge.net
+
+The following endpoints are used to authenticate Azure DevOps organizations using a Microsoft Account (MSA). 
+These are only needed for Azure DevOps organizations backed by Microsoft Accounts (MSA). 
+Azure DevOps organizations backed an Azure Active Directory tenant does not need the following URLs.
+https://live.com 
+https://login.live.com 
+
+The following URLs are required if youa re migrating from Azure DevOps server to the cloud service using our data migration tool.
+https://dataimport.dev.azure.com
+
 ```
 
-<details>
 <summary>Various domain URL descriptions</summary>
 <br>
 <ul>
+ <li>https://login.microsoftonline.com: authentication and sign-in related</li>
+ <li>https://app.vssps.visualstudio.com: authentication and sign-in related</li>
+ <li>https://*.vssps.visualstudio.com: authentication and sign-in related</li>
  <li>https://*gallerycdn.vsassets.io: hosts Azure DevOps extensions</li>
  <li>https://*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
  <li>https://cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
  <li>https://static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
- <li>https://vsrm.dev.azure.com: hosts package feeds</li>
-</ul>
-</details>
+ <li>https://vsrm.dev.azure.com: hosts releases</li>
+ <li>https://vstsagentpackage.azureedge.net: required to setup self-hosted agent in machines within your network</li>
+ <li>https://amp.azure.net: needed for deploying to Azure app service</li>
+ <li>https://go.microsoft.com: access go links</li>
+ </ul>
+
 
 We recommend you open port `443` to all traffic on these IP addresses and domains. We also recommend you open port `22` to a smaller subset of targeted IP addresses.
 
@@ -109,7 +123,7 @@ https://*.blob.core.windows.net
 https://*.visualstudio.com
 ```
 
-Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly) : [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
+Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
 
 ### NuGet connections
 
@@ -191,7 +205,7 @@ _Inbound connections_ originate from Azure DevOps and target resources within yo
 
 - Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)  
 - Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)  
-- Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
+- Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [Bitbucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
 - Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-premises or cloud-based Splunk
 
 Ensure the following IP addresses are allowed for inbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.

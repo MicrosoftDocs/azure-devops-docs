@@ -2,7 +2,7 @@
 title: Implement development tasks to build software functionality
 titleSuffix: Azure Boards
 description:  Learn how to implement a development task to design and add new functionality to your software in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: e3345668-394d-419a-b813-8fa68b6b1bfc
 ms.topic: conceptual
 ms.author: kaelli
@@ -13,7 +13,7 @@ ms.date: 11/08/2021
 
 # Implement development tasks in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 A development task is a small piece of development work that stems from a requirement. Implementing a development task involves adding the appropriate new functionality to your software. After you complete a development task, it should be unit tested, reviewed, code analyzed, and integrated into the existing code base.  
    

@@ -2,7 +2,7 @@
 title: Define the classification plug-in 
 titleSuffix: Azure DevOps & TFS
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 09/08/2017
 
 # Define the classification plug-in
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Classifications facilitate tracking, grouping, and reporting on work based on useful categories, such as related product features and project milestones. You define areas to organize work items into logical, physical, or functional categories. You define iterations to group work items into milestones or time cycle categories. For example, a team could organize the product work into a client area, a server area, and an extensibility area. Iterations that you define determine how many times the team will repeat a particular set of major activities, such as plan, develop, and test.  
 

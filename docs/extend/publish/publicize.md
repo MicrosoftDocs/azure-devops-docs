@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Make Your Extension or Integration Public | Extensions for Azure DevOps
 description: Guideline for making an integration or extension publicly visible on the Visual Studio Marketplace
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a
@@ -12,7 +12,7 @@ ms.date: 05/08/2019
 
 # Make your extension or integration public
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 > **Developing for Visual Studio or Visual Studio Code?** If so, you do not need to request verification. Verification is only required for Azure DevOps integrations or extensions.
 

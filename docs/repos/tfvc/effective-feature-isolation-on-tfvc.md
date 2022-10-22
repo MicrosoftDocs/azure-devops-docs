@@ -3,15 +3,16 @@ title: Manage feature isolation in TFVC
 description: Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
 ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
 ms.topic: article
-ms.technology: devops-code-tfvc
-ms.date: 04/25/2018
+ms.service: azure-devops-repos
+ms.date: 07/13/2022
 author: wpschaub
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Explore the feature isolation strategy  
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Are you planning to implement [Team Foundation Version Control](./what-is-tfvc.md)'s feature isolation strategy in Azure DevOps? You probably have a few questions, such as:
 

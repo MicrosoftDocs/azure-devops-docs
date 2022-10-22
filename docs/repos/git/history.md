@@ -3,16 +3,17 @@ title: History in Git
 titleSuffix: Azure Repos
 description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/30/2018
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Understand Git history
 
-[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git stores history as a graph of snapshots &mdash; called commits &mdash; of the entire repository.
 Each commit also contains a pointer to one or more previous commits.

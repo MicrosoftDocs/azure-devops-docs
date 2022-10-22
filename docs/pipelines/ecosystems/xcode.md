@@ -6,12 +6,12 @@ ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
 ms.author: vijayma
 author: vijayma
 ms.date: 10/27/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build, test, and deploy Xcode apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to build and deploy Xcode projects with Azure Pipelines. 
 
@@ -56,7 +56,7 @@ For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hoste
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/xcode
 pool:
   vmImage: 'macOS-latest'
 ```

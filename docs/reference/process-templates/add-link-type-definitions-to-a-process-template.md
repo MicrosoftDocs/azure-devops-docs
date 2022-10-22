@@ -2,7 +2,7 @@
 title: Add link type definitions to a process template 
 titleSuffix: TFS
 description: Define additional types of links that team members can create between work items for a project for Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
 ms.author: kaelli
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Add link type definitions to a process template
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can define additional link types that team members can create between work items for a project. A link type defines the labels and rules that govern the relationships or links between work items of that type. The link types that you specify supplement the default types for hierarchical, dependent, and related links. 
 

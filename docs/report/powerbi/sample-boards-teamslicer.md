@@ -2,7 +2,7 @@
 title: Add a Team slicer to a Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to add a team slicer to a Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 10/05/2021
 
 # Add a team slicer to a Power BI report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Often Power BI reports include data from multiple teams for aggregation and comparison. This article shows you how to add a Team slicer to an existing Power BI report. The Team slicer allows you to filter the report data by Teams, rather than Area Path.
 

@@ -1,10 +1,10 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Custom build/release task reference | Extensions for Azure DevOps
 description: Reference for creating and integrating custom build or release tasks with an extension in Azure DevOps.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/23/2020
@@ -12,7 +12,7 @@ ms.date: 09/23/2020
 
 # Reference - integrate custom build tasks into extensions
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this reference when you want to create and integrate custom build pipeline tasks with extensions in Azure DevOps.
 

@@ -1,54 +1,50 @@
 ---
-title: Subscribe to Azure DevOps events from another service
+title: Create a service hook subscription programmatically
 description: Use service hooks to set up actions to take when specific events occur in Azure DevOps.
-toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
-ms.technology: devops-collab
+ms.custom: engagement-fy23
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
+ms.date: 10/14/2022
 ---
 
-# Create a service hooks subscription programmatically
+# Create a service hook subscription programmatically
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-
-Using the [Subscriptions](/rest/api/vsts/hooks/) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions REST APIs](/rest/api/azure/devops/hooks/) , you can programmatically create a subscription that performs an action on an external/consumer service when a specific event occurs in an Azure DevOps project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
-- build completed
-- code pushed (for Git projects)
-- pull request create or updated (for Git projects)
-- code checked in (TFVC projects)
-- work item created, updated, deleted, restored or commented on
+- Build completed
+- Code pushed (for Git projects)
+- Pull request create or updated (for Git projects)
+- Code checked in (TFVC projects)
+- Work item created, updated, deleted, restored or commented on
 
-You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](./events.md).
+You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [Event reference](./events.md).
 
-For a complete set of supported consumer services and actions, see the [consumer reference](./consumers.md).
+For a complete set of supported consumer services and actions, see the [Consumer reference](./consumers.md).
 
 
-## Create a subscription for a project
-
-To create a subscription for an event, choose which consumer to use and the action you want to take. Create an HTTP POST 
-request to the subscriptions URL for the Azure DevOps organization with the event, consumer, and action to 
-take for the subscription.
-
-### Before you begin
+## Prerequisites
 
 To create a subscription, the following data is required:
 
-- project ID (use the [Project REST API](/rest/api/vsts/core/projects) to get the project ID)
-- event ID and settings (see the [event reference](./events.md))
-- consumer and action IDs and settings (see the [consumer reference](./consumers.md))
+- Project ID. Use the [Project REST API](/rest/api/azure/devops/core/projects) to get the project ID.
+- Event ID and settings. See the [Event reference](./events.md).
+- Consumer and action IDs and settings. See the [Consumer reference](./consumers.md).
 
-### Create the request
+## Create the request
 
-Construct the body of the HTTP POST request to create the subscription based on the project ID, event, consumer and action. 
+Construct the body of the HTTP POST request to create the subscription based on the project ID, event, consumer, and action. 
 
-Here's an example request for creating a subscription that causes a build event to be POSTed to `https://myservice/event` when the build `WebSite.CI` fails. 
+See the following example request for creating a subscription that causes a build event to POST to `https://myservice/event` when the build `WebSite.CI` fails. 
 
+**Request**
 ```js
 {
     "publisherId": "tfs",
@@ -67,9 +63,11 @@ Here's an example request for creating a subscription that causes a build event 
 }
 
 ```
-Secure HTTPS URLs are highly recommended for the security of the private data in the JSON object.
+We highly recommend using secure HTTPS URLs for the security of the private data in the JSON object.
 
-Here is the response to the request to create the subscription:
+**Response**
+See the following response to the request to create the subscription:
+
 ```js
 {
     "id": "74aeeed0-bf5d-48dc-893f-f862b80987e9",
@@ -101,30 +99,27 @@ Here is the response to the request to create the subscription:
 
 ```
 
-If the subscription request fails, an HTTP response code of 400 gets returned with a message that has further details.
+If the subscription request fails, you get an HTTP response code of 400 with a message that has further details.
 
 ### What happens when the event occurs?
 
-When an event occurs, all enabled subscription in the project are evaluated, and the consumer action is performed for all matching subscriptions.
- 
+When an event occurs, all enabled subscriptions in the project are evaluated, and the consumer action is performed for all matching subscriptions.
+
 ### Resource versions (advanced)
 
 Resource versioning is applicable when an API is in preview. For most scenarios, specifying `1.0` as the resource version is the safest route.
 
-The event payload sent to certain consumers (like Web hooks, Azure Service Bus, Azure Storage) includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms (or versions). 
+The event payload sent to certain consumers, like Webhooks, Azure Service Bus, and Azure Storage, includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms or versions. 
+
 You can specify the version of the resource that you want to have sent to the consumer service via the `resourceVersion` field on the subscription.
-The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). Not specifying a resource version means "latest released". You should always specify a resource version - this ensures a consistent event payload over time.
+The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). Not specifying a resource version means "latest released". You should always specify a resource version, which ensures a consistent event payload over time.
 
+## FAQs
+### Q: Are there services that I can subscribe to manually?
 
-## Q&A
+A: Yes. For more information about the services that you can subscribe to from the administration page for a project, see the [Overview](./overview.md).
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Are there services that I can subscribe to manually?
-
-A: Yes. [Here](./overview.md) are the services that you can subscribe to from the administration page for a project.
-
-#### Q: Are there C# libraries that I can use to create subscriptions?
+### Q: Are there C# libraries that I can use to create subscriptions?
 
 A: No, but here's a sample to help you get started.
 
@@ -164,9 +159,6 @@ namespace Microsoft.Samples.VisualStudioOnline
                 return String.Empty;
 
             var result = fields.Single(s => s.Field.RefName == key);
-
-            if (result == null)
-                return String.Empty;
 
             return result.Value;
         }
@@ -219,4 +211,9 @@ namespace Microsoft.Samples.VisualStudioOnline
 }
 ```
 
-<!-- ENDSECTION -->
+## Related articles
+
+- [Authorize service hooks](authorize.md)
+- [Consumers](consumers.md)
+- [Events](events.md)
+- [Troubleshooting and FAQs](troubleshoot.md)

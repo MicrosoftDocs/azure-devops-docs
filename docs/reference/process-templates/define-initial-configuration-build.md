@@ -2,7 +2,7 @@
 title: Define build initial configuration
 titleSuffix: Azure Pipelines & TFS
 description: Customize the security permissions for build activities of all projects that are created with the same process template for Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 93d86d59-dd49-43de-9bab-f4a9e17071a1
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 10/11/2017
 
 # Define the initial configuration of Team Foundation Build
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can customize a project's initial build permissions that are used by Team Foundation Build. The build.xml plug-in file specifies the security permissions for build activities of all projects that are created with the same process template. The following template files are uploaded to the project database:  
   

@@ -3,24 +3,23 @@ title: Use the Epic Roadmap to provide a calendar view
 titleSuffix: Azure DevOps
 description: Learn how to view progress by using the Epic Roadmap to provide a calendar view of a single epic and its child features.
 ms.custom: extensions
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
-ms.date: 10/01/2021
+monikerRange: '<= azure-devops'
+ms.date: 06/02/2022
 ---
 
 # View progress using the Epic Roadmap 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Similar to the Feature Timeline, the Epic Roadmap supports portfolio management. It provides a calendar view of a single epic and its child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.  
 
 > [!div class="mx-imgBorder"]  
-> ![Epic Roadmap initial view](media/epic-roadmap/intro.png)
+> ![Screenshot of Epic Roadmap.](media/epic-roadmap/intro.png)
 > 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page.  
@@ -35,7 +34,7 @@ Use the Epic Roadmap to focus on a single epic and to support the following task
 
 
 > [!NOTE]   
-> The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
+> You can install the Feature Timeline and Epic Roadmap extension from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 
 ## Minimum Viable Product (MVP) overview
@@ -102,14 +101,14 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 1. Choose **Epic Roadmap** and then choose the Epic you want to view. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Epic Roadmap from Azure Boards](media/epic-roadmap/open-epic-roadmap.png)
+	> ![Screenshot of Choose Epic Roadmap from Azure Boards.](media/epic-roadmap/open-epic-roadmap.png)
 
 	If you don't see the **Epic Road** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request to have it installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
 
 2. Choose the Epic you want to view from the drop-down menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Epic from drop-down menu](media/epic-roadmap/choose-epic-drop-down-menu.png)
+	> ![Screenshot of Choose Epic from drop-down menu.](media/epic-roadmap/choose-epic-drop-down-menu.png)
 	
 4. Customize your view. 
  
@@ -125,19 +124,19 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 1. To view the requirements linked to a feature, choose the  info :::image type="icon" source="../media/icons/info.png" border="false":::  icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
+	> ![Screenshot of Feature, Info icon.](media/feature-timeline/drill-down-1.png)
 
 	A dialog opens showing the child items of the feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature Timeline controls](media/feature-timeline/drill-down-2.png)
+	> ![Screenshot of child items of the feature.](media/feature-timeline/drill-down-2.png)
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop-down path. 
 
 1. To view the dependency linked to a feature, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: link icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Epic Roadmap, Feature, linked icon](media/epic-roadmap/view-dependency.png)
+	> ![Screenshot of Epic Roadmap, Feature, linked icon.](media/epic-roadmap/view-dependency.png)
 
 ::: moniker range="azure-devops"
 
@@ -149,7 +148,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 - [Review team delivery plans](../plans/review-team-plans.md)
 - [View portfolio progress with the Feature Timeline](feature-timeline.md) 
-- [Plan and track dependencies using the Dependency Tracker](dependency-tracker.md)
+- [Track dependencies by using Delivery Plans](../plans/track-dependencies.md)
 
 
 ## Related Marketplace extensions

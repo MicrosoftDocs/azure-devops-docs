@@ -1,14 +1,16 @@
-﻿---
+---
 title: Key concepts and terminology used for Azure Repos
 titleSuffix: Azure Repos  
 description: Key definitions for objects and items used to code with Azure Repos
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: reference
-monikerRange: '>=tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 09/10/2018  
 ---
 
 # Key concepts
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Here you'll find definitions of key concepts and artifacts used in Azure Repos.
 

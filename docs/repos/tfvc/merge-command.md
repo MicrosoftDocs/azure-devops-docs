@@ -3,25 +3,28 @@ title: Merge Command
 titleSuffix: Azure Repos
 description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 10/18/2021
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Merge Command
+# Merge command  (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The **merge** command applies changes from one branch into another.
 
 > [!NOTE]
-> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
-**Required Permissions**
+To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. 
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Syntax
 
 ```
 tf merge [/recursive] [/force] [/candidate] [/discard] 
@@ -35,7 +38,7 @@ tf merge [/recursive] [/force] [/candidate] [/discard]
 
 |**Argument**|**Description**|
 |---|---|
-|*versionspec*|Provides a value such as C2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).|
+|*versionspec*|Provides a value such as C2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
 |*source*|Specifies the file or folder to act as the source of the merge.|
 |*destination*|Specifies the file or folder to act as the destination of the merge.|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
@@ -181,7 +184,7 @@ tf merge [/recursive] [/force] [/candidate] [/discard]
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 
@@ -190,7 +193,7 @@ You can use the **merge** command of the **tf** command-line utility to apply ch
 
 The **merge** command also lets you query for changes in a source branch which have not been migrated to the target branch. Additionally, it lets you indicate that certain changes will never be merged from the source to the destination and should no longer be displayed as candidates for a merge operation.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### Baseless Merge
 
@@ -244,9 +247,8 @@ c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
 
 ## Related articles
 
-- [Resolve Conflicts between Two Files](/previous-versions/visualstudio/visual-studio-2010/ms181433(v=vs.100))
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
 - [Branch Command](branch-command.md)
 - [Merges Command](merges-command.md)
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-- [Branching and Merging](./branching-strategies-with-tfvc.md)
+- [Branching and Merging](branching-strategies-with-tfvc.md)

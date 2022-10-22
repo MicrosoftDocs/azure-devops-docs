@@ -3,19 +3,19 @@ title: Collaborate with others by managing work items in Azure Boards
 titleSuffix: Azure Boards
 description: Use the web portal to support Kanban, plan and track work. Also, learn to monitor progress in Azure Boards and Azure DevOps.   
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 11/17/2021
+ms.date: 05/20/2022
 ---
 
 
 # Add, review, and update work items in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
@@ -39,7 +39,7 @@ Boards present work items as cards and support quick status updates through drag
 
 To get started, you'll want to follow the steps outlined below. 
 
-[![Configure Kanban board](../backlogs/media/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/media/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/media/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
+[![Configure Kanban board.](../backlogs/media/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board.](../backlogs/media/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress.](../backlogs/media/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 > [!NOTE]  
 > A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
@@ -52,24 +52,18 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 ::: moniker range=">= azure-devops-2019"
 
-![Kanban board, Agile template](../work-items/media/about-agile/view-boards-agile.png)   
+![Screenshot of Kanban board, Agile template.](../work-items/media/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-![Kanban board, Agile template](media/kanban-basics-intro.png)     
+::: moniker range="tfs-2018"
+![Screenshot of Kanban board, Kanban board, Agile template, TFS 2018.](media/kanban-basics-intro.png)     
 ::: moniker-end  
  
-::: moniker range=">= tfs-2013 <= tfs-2015"    
-> [!div class="mx-imgBorder"]  
-> ![TFS 2015, Kanban board, Agile template](media/overview/kanban-basics-intro-tfs.png)       
-::: moniker-end   
-
 ## Configure and customize your Kanban board
 
 Your Kanban board is highly configurable to support your team's workflow. Each team can configure each board in the following areas:
 
-::: moniker range=">= tfs-2017"
 - Configure boards:
 	- [Add columns](add-columns.md)  
 	- [Set WIP limits](wip-limits.md)  
@@ -85,31 +79,6 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
 	- [Enable/disable annotations](customize-cards.md#annotations)
 	- [Define inline test behavior on cards](customize-cards.md#tests) 
 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-- Configure boards:
-	- [Add columns](add-columns.md)
-	- [Set WIP limits](wip-limits.md)  
-	- [Set Definition of Done](definition-of-done.md)  
-	- [Add swimlanes](expedite-work.md)
-	- [Define card reordering](reorder-cards.md)
-	- [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md)
-	- [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
-- Configure card displays:
-	- [Add or remove fields from cards](customize-cards.md)
-	- [Define card styles](customize-cards.md#style-rule)
-	- [Apply tag colors](customize-cards.md#color-tags)
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-- [Add columns](add-columns.md)  
-- [Set WIP limits](wip-limits.md)  
-- [Set Definition of Done](definition-of-done.md)
-- [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
-::: moniker-end
-
 Along with these team configurations, you can [customize a project](#customize) by adding or modifying work item types, the workflow, and add customized portfolio backlogs and boards. 
 
 
@@ -123,17 +92,9 @@ Along with these team configurations, you can [customize a project](#customize) 
 
 ## Update work item status
 
-::: moniker range=">= tfs-2015"
-
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
-![Reorder cards while changing columns](media/8_7_02.gif)
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. 
-::: moniker-end
+![Git showing how to reorder cards while changing columns.](media/8_7_02.gif)
 
 ## Use the Cumulative Flow Diagram to monitor metrics
 
@@ -142,7 +103,7 @@ The Cumulative Flow Diagram (CFD) is an in-context report available for both pro
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Open CFD Analytics](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
+> ![Screenshot of Analytics report, Cumulative Flow Diagram.](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
 The Average work in progress value excludes completed work items. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. 
 
@@ -150,7 +111,7 @@ The Average work in progress value excludes completed work items. Use the intera
 
 ::: moniker range="<= azure-devops-2019"
 
-<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" />   
+<img src="media/ALM_KB_CumulativeFlow.png" alt="Screenshot of Kanban board, cumulative flow diagram." />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
@@ -197,7 +158,7 @@ By design, the team with the longest area path wins the conflict and determines 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
 ::: moniker-end
  
@@ -231,6 +192,13 @@ You can also add or modify the fields defined for a work item type (WIT), add a 
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+
+## Can I view a Kanban board of work items defined by a query?  
+
+The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension supports viewing a flat-list query of work items as a Kanban board. The query can contain different work item types and work items defined in different projects.  
+::: moniker-end
+
 
 ## Try this next  
 
@@ -246,6 +214,7 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
+- [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
 - [What is Agile?](/devops/plan/what-is-agile)   
 - [What is Agile development?](/devops/plan/what-is-agile-development)  
  

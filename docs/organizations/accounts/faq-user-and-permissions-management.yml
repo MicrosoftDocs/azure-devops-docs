@@ -4,17 +4,16 @@ metadata:
   titleSuffix: Azure DevOps
   ms.custom: seodec18
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
-  ms.technology: devops-accounts
+  ms.subservice: azure-devops-organizations
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 07/24/2020
   monikerRange: '<= azure-devops'
-    
 title: User and permissions management FAQs
 summary: |
-  [!INCLUDE [temp](../../includes/version-all.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
   Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
   - [General permissions](#general-permissions)
@@ -39,37 +38,37 @@ sections:
       - question: |
           Q: Why can't I manage users?
         answer: |
-          A: You must be a Project Collection Administrator or [organization Owner](../security/lookup-organization-owner-admin.md) to manage users at the organization level. To get added, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md)
+          A: You must be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
           
           <a name="find-owner"></a>
           
       - question: |
-          Q: How do I find the organization Owner?
+          Q: How do I find the organization owner?
         answer: |
           A: If you have at least Basic access, you can find the current owner in your organization settings.
           
           1. Go to your **Organization settings**.
           
-             ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
+             ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
           
           2. Find the current owner.
           
-             ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
+             ![Find the current owner in organization information](../../media/find-organization-owner.png)
           
       - question: |
           Q: How do I find a Project Collection Administrator?
         answer: |
-          A: If you have at least Basic access, you can find your [Project Collection Administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
+          A: If you have at least **Basic** access, you can find a member of the **Project Collection Administrators** group in your organization's or collection's settings.
           
           ::: moniker range=">= azure-devops-2019"
           
-          For more information, see [Show members of the Project Collection Administrators group](../security/lookup-organization-owner-admin.md#show-members-of-the-project-collection-administrators-group).
+          For more information, see [Look up a project collection administrator](../security/look-up-project-collection-administrators.md).
           
           ::: moniker-end
           
           ::: moniker range="<= tfs-2018"  
           
-          For more information, see [Show members of the Project Administrators group](../security/lookup-organization-owner-admin.md#show-members-of-the-project-administrators-group).
+          For more information, see [Look up a project administrator](../security/look-up-project-administrators.md).
           
           ::: moniker-end
           

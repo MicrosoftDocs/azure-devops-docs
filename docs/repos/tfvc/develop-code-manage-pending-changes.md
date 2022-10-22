@@ -3,7 +3,7 @@ title: Develop code and manage pending changes
 titleSuffix: Azure Repos
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 f1_keywords:
 - vs.tfc.sourcecontrol.DialogOpenFromScc
 - vs.tfc.sourcecontrol.ToolWindowPendingCheckins
@@ -12,14 +12,16 @@ f1_keywords:
 - vs.tfc.sourcecontrol.DialogPromoteCandidates
 - vs.tfc.sourcecontrol.DialogUndoPendingChanges
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 06/30/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Develop code and manage pending changes
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 
@@ -37,9 +39,12 @@ If you're working in a solution that contains a lot of files, you'll probably fi
 
 ## Use the My Work page to manage your work
 
-If you're using Visual Studio Premium or Visual Studio Ultimate, you can use the My Work (Keyboard: Ctrl + 0, M) page in the team explorer to manage your work.
+You can use the **My Work** (Keyboard: Ctrl + 0, M)  in Team Explorer to manage your work.
 
-![To Do List on My Work Page in Team Navigator](media/develop-code-manage-pending-changes/IC591023.png)  
+[!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
+ 
+
+![Screenshot of To Do List on My Work Page in Team Navigator.](media/develop-code-manage-pending-changes/IC591023.png)  
 You can use My Work to:  
 -   Track your work against [work items](../../boards/queries/link-work-items-support-traceability.md)    
 -   Suspend and later resume your work (including file changes, associated work items, and Visual Studio state such as window positions and breakpoints)  
@@ -57,7 +62,7 @@ For a step-by-step example, see [Day in the life of an devops Developer: Write n
 
 You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explorer to manage your work.
 
-![Checking in the pending changes](media/develop-code-manage-pending-changes/IC591276.png)
+![Screenshot of Checking in the pending changes.](media/develop-code-manage-pending-changes/IC591276.png)
 
 > [!TIP]
 > -  You can :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: undock the Pending Changes page from the team explorer and open it in a new window.

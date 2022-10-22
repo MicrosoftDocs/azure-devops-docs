@@ -2,7 +2,7 @@
 title: Organize project activities in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to reduce the risks to your project that stem from shifting requirements and implementation costs by organizing your project activities in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 078d2b8e-e0a7-4c17-8f00-e830c78d338c
 ms.topic: conceptual
 ms.author: kaelli
@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Manage project activities in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 To make the most effective use of MSF for [CMMI Process Improvement](guidance-background-to-cmmi.md), you should organize your project into a series of iterations, typically between four and eight weeks long. This organization helps you reduce the risks to your project that stem from shifting requirements and implementation costs. Iterative project structure is an important contribution to meeting the risk management requirements of CMMI.  
   

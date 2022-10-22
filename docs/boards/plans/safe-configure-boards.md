@@ -2,8 +2,7 @@
 title: Configure Azure Boards to support SAFe®
 titleSuffix: Azure Boards
 description: Learn how to configure Azure Boards to support epics, release trains, and multiple backlogs to support SAFe® practices.
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +13,7 @@ ms.date: 10/20/2021
 
 # Configure Azure Boards to support SAFe® programs and portfolios
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support Scaled Agile Framework (SAFe®) programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by completing the following tasks: 
 
@@ -387,9 +386,9 @@ For teams that support several other teams, such as a UX Design team, configure 
 
 You can use Azure DevOps command-line tools to add or update the following artifacts:
 
-- **Teams**: [Azure DevOps team create](/cli/azure/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
-- **Area Paths**: [Azure DevOps area project create](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-create)
-- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create) 
+- **Teams**: [Azure DevOps team create](/cli/azure/boards/iteration/team#az-boards-iteration-team-add) 
+- **Area Paths**: [Azure DevOps area project create](/cli/azure/boards/area/project#az-boards-area-project-create)
+- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/boards/iteration/project#az-boards-iteration-project-create) 
 
 ::: moniker-end
 

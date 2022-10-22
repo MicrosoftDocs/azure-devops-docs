@@ -4,17 +4,13 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 11/18/2021
-monikerRange: '>= tfs-2017'
+ms.date: 10/11/2022
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Expressions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3**
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2019.md)]
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
@@ -168,6 +164,29 @@ The following built-in functions can be used in expressions.
 > This function is of limited use in general pipelines.
 > It's intended for use in the [pipeline decorator context](../../extend/develop/pipeline-decorator-context.md) with system-provided arrays such as the list of steps.
 
+You can use the `containsValue` expression to find a matching value in an object. Here is an example that demonstrates looking in list of source branches for a match for `Build.SourceBranch`. 
+
+```yaml
+parameters:
+- name: branchOptions
+  displayName: Source branch options
+  type: object
+  default:
+    - refs/heads/main
+    - refs/heads/test
+
+jobs:
+  - job: A1 
+    steps:
+    - ${{ each value in parameters.branchOptions }}:
+      - script: echo ${{ value }}
+
+  - job: B1 
+    condition: ${{ containsValue(parameters.branchOptions, variables['Build.SourceBranch']) }}
+    steps:
+      - script: echo "Matching branch found"
+```
+
 ::: moniker range=">= azure-devops-2019"
 
 ### convertToJson
@@ -187,17 +206,20 @@ parameters:
  
 steps:
 - script: |
-    echo "${{ convertToJson(parameters.listOfValues) }}"
+    echo "${MY_JSON}"
+  env:
+    MY_JSON: ${{ convertToJson(parameters.listOfValues) }}
 ```
 
+Script output:
+
 ```json
-# Example output
 {
-  this_is: {
-    a_complex: object,
-    with: [
-      one,
-      two
+  "this_is": {
+    "a_complex": "object",
+    "with": [
+      "one",
+      "two"
     ]
   }
 }
@@ -395,6 +417,47 @@ steps:
 * Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
 ::: moniker-end
 
+::: moniker range=">= azure-devops"
+
+### split
+* Splits a string into substrings based on the specified delimiting characters 
+* Min parameters: 2. Max parameters: 2
+* The first parameter is the string to split
+* The second parameter is the delimiting characters
+* Returns an array of substrings. The array includes empty strings when the delimiting characters appear consecutively or at the end of the string
+* Example: 
+  ```yml
+  variables:
+  - name: environments
+    value: prod1,prod2 
+  steps:  
+    - ${{ each env in split(variables.environments, ',')}}:
+      - script: ./deploy.sh --environment ${{ env }}
+  ```
+* Example of using split() with replace():
+  ```yml
+  parameters:
+  - name: resourceIds
+    type: object
+    default:
+    - /subscriptions/mysubscription/resourceGroups/myResourceGroup/providers/Microsoft.Network/loadBalancers/kubernetes-internal
+    - /subscriptions/mysubscription02/resourceGroups/myResourceGroup02/providers/Microsoft.Network/loadBalancers/kubernetes
+  - name: environments
+    type: object
+    default: 
+    - prod1
+    - prod2
+
+  trigger:
+  - main
+    
+  steps:
+  - ${{ each env in parameters.environments }}:
+    - ${{ each resourceId in parameters.resourceIds }}:
+        - script: echo ${{ replace(split(resourceId, '/')[8], '-', '_') }}_${{ env }}
+  ```
+
+::: moniker-end
 
 ### startsWith
 * Evaluates `True` if left parameter string starts with right parameter
@@ -438,9 +501,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
+* Use with `dependsOn` when working with jobs and you want to evaluate whether a previous job was successful. Jobs are designed to run in parallel while stages run sequentially. 
 * For a job:
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
-  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
@@ -454,7 +517,13 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
+::: moniker range=">=azure-devops-2022"
 You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+::: moniker-end
+
+::: moniker range="< azure-devops-2022"
+You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+::: moniker-end
 
 Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
 
@@ -472,6 +541,8 @@ pool:
 steps:
 - script: echo ${{variables.stageName}}
 ```
+
+::: moniker range=">=azure-devops-2022"
 
 ### Conditionally set a task input
 ```yml
@@ -491,10 +562,12 @@ steps:
 
 ### Conditionally run a step
 
+If there is no variable set, or the value of `foo` does not match the `if` conditions, the `else` statement will run. Here the value of `foo` returns true in the `elseif` condition. 
+
 ```yaml
 variables:
   - name: foo
-    value: fabrikam # triggers else condition
+    value: contoso # triggers elseif condition
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -503,11 +576,14 @@ steps:
 - script: echo "start"
 - ${{ if eq(variables.foo, 'adaptum') }}:
   - script: echo "this is adaptum"
-- ${{ elseif eq(variables.foo, 'contoso') }}:
-  - script: echo "this is contoso"
+- ${{ elseif eq(variables.foo, 'contoso') }}: # true
+  - script: echo "this is contoso" 
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## Each keyword
 
@@ -669,7 +745,7 @@ jobs:
   - script: echo hello from B
 ```
 
-
+::: moniker-end
 ::: moniker range=">=azure-devops-2020"
 
 ### Job to job dependencies across stages
@@ -696,7 +772,7 @@ This requires using the `stageDependencies` context.
 }
 ```
 
-In this example, job B1 will run whether job A1 is successful or skipped.
+In this example, job B1 will run if job A1 is skipped.
 Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
@@ -719,7 +795,7 @@ stages:
   dependsOn: A
   jobs:
   - job: B1
-    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    condition: in(stageDependencies.A.A1.result, 'Skipped') # change condition to `Succeeded and stage will be skipped`
     steps:
     - script: echo hello from Job B1
   - job: B2
@@ -727,6 +803,42 @@ stages:
     steps:
      - script: echo hello from Job B2
 
+```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+
+If a job depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the job `run_tests` runs if the `build_job` deployment job set `runTests` to `true`. Notice that the key used for the `outputs` dictionary is `build_job.setRunTests.runTests`.
+
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: Production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  jobs:  
+    - job: run_tests
+      condition: eq(stageDependencies.build.build_job.outputs['build_job.setRunTests.runTests'], 'true')
+      steps:
+        ...
 ```
 
 ::: moniker-end
@@ -756,6 +868,36 @@ stages:
   - job: part_b
     steps:
     - bash: echo "BA"
+```
+
+If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: Production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
+  jobs:
+    ...
 ```
 
 ::: moniker-end

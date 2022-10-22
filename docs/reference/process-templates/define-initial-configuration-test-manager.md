@@ -2,7 +2,7 @@
 title: Define Test Manager initial configuration
 titleSuffix: Azure DevOps & TFS
 description: Use the plug-in for Microsoft Test Manager to define the project's initial test management setup 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: a72625e1-afa2-4707-9a20-bb7927a0aeaf
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 09/08/2017
 
 # Define the initial configuration of Test Manager
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By using the plug-in for Microsoft Test Manager, you can define a project's initial test management setup. You can define settings such as test variables and test configurations that combine test variables. For example, you can define the hardware platform, the operating system, the browser version, or another type of hardware or software to be used for testing, and then you can define test configurations that combine these variables. In addition, you can customize the default test settings and the list of valid test resolution states. After you create a project, you can modify each test configuration through Microsoft Test Manager except for test resolution states.  
   

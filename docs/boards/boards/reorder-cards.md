@@ -3,30 +3,54 @@ title: Set Kanban board card reordering
 titleSuffix: Azure Boards
 description: Learn how to use the Kanban board, process, and tools reorder Kanban board cards in Azure Boards and Team Foundation Server.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.author: kaelli
 author: KathrynEE
-ms.topic: how-to
-monikerRange: '>= tfs-2015'
-ms.date: 10/15/2021
+ms.topic: how-to  
+monikerRange: '<= azure-devops'
+ms.date: 07/26/2022
 ---
 
 
 # Reorder cards on your Kanban board  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
+
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
 
+::: moniker range=">= azure-devops-2022"
+
+In addition to the dynamic card reordering, you can also move a card to a specific column position.  
+::: moniker-end
+
 <a id="card-reorder-note"></a>
 
-The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.  
+> [!NOTE]   
+> The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.  
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
+
+<a id="move-to-column-position"></a>
+
+::: moniker range=">= azure-devops-2022"
+
+## Move a card to a specific column position
+
+You can re-order the work items within a Kanban board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
+
+> [!NOTE]   
+> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+ 
+Specify a value within the range listed, which corresponds to the number of items currently in the column. 
+
+:::image type="content" source="media/reorder/move-to-position.png" alt-text="Screenshot of Boards, Move to column position dialog.":::
+
+::: moniker-end
 
 
 <a id="card-reorder-setting"></a>
@@ -56,12 +80,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 ::: moniker-end 
 
 
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> Reordering cards is supported on TFS 2015.1 and later versions.  
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 

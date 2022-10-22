@@ -2,7 +2,7 @@
 title: Pipeline outcome summary for all pipelines sample report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline outcome summary Power BI report for all pipelines in the project.  
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
 ms.custom: powerbisample
@@ -14,7 +14,7 @@ ms.date: 10/12/2021
 
 # Pipeline outcome summary for all pipelines sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 You may want to see pipeline metrics such as pass rate, number of failures, duration, and so on. for all the pipelines together, in a single report. This article shows you how to get pipeline outcome summary, for all the pipelines in a project. You can take a similar approach to get other metrics like pipeline duration and number of failures for all pipelines of the project in a single report.
 

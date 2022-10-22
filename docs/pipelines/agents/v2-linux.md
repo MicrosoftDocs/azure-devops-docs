@@ -5,14 +5,14 @@ description: Learn how you can easily deploy a self-hosted agent on Linux for Az
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 09/20/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted Linux agents
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -43,6 +43,7 @@ We support the following subset of .NET Core supported distributions:
   - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 20.04, 18.04, 16.04
+  - CBL-Mariner 1.0 (see note 3)
 - ARM32 (see note 2)
   - Debian 9
   - Ubuntu 18.04
@@ -57,11 +58,12 @@ We support the following subset of .NET Core supported distributions:
 > Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
 > Run `uname -a` to see your Linux distro's instruction set.
 
+> [!NOTE]
+> Mariner OS distribution currently has partial support from the Azure DevOps Agent.
+> We are providing a mechanism for detection of this OS distribution in `installdependencies.sh` script, but due to lack of support from the [.Net Core](https://github.com/dotnet/core/issues/6379) side, we couldn't guarantee full operability of all agent functions when running on this OS distribution.
+
 Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
-
-If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
-(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
 > [!NOTE]
 > The agent installer knows how to check for other dependencies.
@@ -71,12 +73,12 @@ You can install those dependencies on supported Linux platforms by running `./bi
 >
 > Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
 > 
-> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for futher support.
+> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for further support.
 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
 We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
@@ -95,6 +97,26 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
+
+### TFVC
+
+If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
+
+[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
+It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+
+Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
+
+> [!NOTE]
+> Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+
+If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
+1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
+2. Download TEE-CLC version 14.135.0 manually from [Team Explorer Everywhere GitHub releases](https://github.com/microsoft/team-explorer-everywhere/releases).
+3. Extract the contents of `TEE-CLC-14.135.0` folder to `<agent_directory>/externals/tee`.
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -151,9 +173,9 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
@@ -173,21 +195,6 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-### TFS 2015
-
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
-
-1. Follow the instructions on that page to download the agent.
-
-1. Configure the agent.
-
-   ```
-   ./config.sh
-   ```
-
-::: moniker-end
 
 ### Server URL
 
@@ -203,17 +210,12 @@ Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
-TFS 2017 and newer: `https://{your_server}/tfs`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-TFS 2015: `http://{your_server}:8080/tfs`
+TFS 2018: `https://{your_server}/tfs`
 
 ::: moniker-end
+
 
 ### Authentication type
 

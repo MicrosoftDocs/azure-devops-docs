@@ -3,17 +3,17 @@ title: Move work items and change the work item type in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to change the work item type or bulk move work items to another project in Azure Boards.
 ms.custom: "boards-backlogs, seodec18, cross-project" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/19/2021
+ms.date: 06/27/2022
 ---
 
 # Bulk move work items and change the work item type in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Often you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
@@ -40,7 +40,7 @@ In this article you'll learn:
 * You must be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 * To change the work item type, you must be granted **Stakeholder** access or higher. 
-* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users granted **Stakeholder** access don't have access to this feature. 
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -51,16 +51,17 @@ In this article you'll learn:
 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To move work items to another project, the project must use an Inherited process model.  
-* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
 * To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+* To move work items to another project, the project must use an Inherited process model.  
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users granted **Stakeholder** access don't have access to this feature. 
+
 
 	> [!IMPORTANT]  
-	> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../report/admin/disable-data-warehouse.md). 
+	> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/previous-versions/azure/devops/report/admin/disable-data-warehouse). 
 
 ::: moniker-end 
 
-To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
 
 ::: moniker range="azure-devops"
 
@@ -101,20 +102,20 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> ![Backlog, multi-select, open actions menu, choose Change type option](media/move-change-delete/change-type-new-nav.png)  
 
 	> [!IMPORTANT]   
-	> From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
+	> From the **Query Results page**, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
 
 1. Select the type and optionally enter a comment.  
 
 	![Change work item type dialog](media/move-change-delete/change-work-item-type-dialog.png)    
 
-	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
+	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
 2. Save the work item(s) to complete the change.  
  
 	> [!NOTE]     
-	> The system automatically resets the State and Reason fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the State or Reason field to a value supported by the changed-to work item type.
+	> The system automatically resets the **State** and **Reason** fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the **State** or **Reason** field to a value supported by the changed-to work item type.
 
-	From the Query results page, save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+	From the **Query Results** page, save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
 
 <a id="move"> </a>  
 
@@ -127,6 +128,7 @@ Note the following:
 - You can only move work items whose type exists in the project you're moving it to. For example, you can't move User Stories to a project based on the Scrum process that doesn't contain User Story as a work item type. 
 - You can't move work items associated with test management. 
 - To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
+- Users granted **Stakeholder** access don't have access to this feature even if granted permission.  
 
 1. Open the work item and choose the ![Move work item icon](../media/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../media/icons/actions-icon.png) Actions menu.    
 
@@ -145,7 +147,10 @@ Note the following:
 	![Move work item type dialog, on-premises.](media/move-change-delete/move-work-item-dialog.png)
 	::: moniker-end
 
-	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
+	> [!NOTE]
+	> Child work items are not moved. They remain in the origin project, but the Parent-Child links remain in place.
+
+	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
 
 ## Related articles   

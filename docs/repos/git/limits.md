@@ -3,16 +3,17 @@ title: Git limits
 titleSuffix: Azure Repos
 description: Resource limits applied to Git operations
 ms.assetid: 
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 05/26/2021
 monikerRange: 'azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Git limits
 
-[!INCLUDE [version-azure-devops](../includes/version-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 We impose a few resource limits on Git repositories in Azure Repos.
 Our goal is to ensure reliability and availability for all customers.
@@ -23,8 +24,8 @@ In addition, we impose limits on the total size of repositories and pushes.
 
 ## Repository size
 
-Repositories should generally be no larger than 10GB.
-You can run `git count-objects -vH` in a command prompt, and look for the entry called "size-pack" to determine how large your repository is:
+Repositories should be no larger than 250GB. 
+To retrieve the size of your repository, execute "git count-objects -vH" in a command prompt, and look for the entry called "size-pack":
 
 ```
 D:\my-repo>git count-objects -vH
@@ -39,10 +40,13 @@ garbage: 0
 size-garbage: 0 bytes
 ```
 
-In uncommon circumstances, repositories may be larger than 10GB.
-For instance, the Windows repository is at least 300GB.
-For that reason, we do not have a hard block in place.
-If your repository grows beyond 10GB, consider using [Git-LFS](manage-large-files.md), [Scalar](https://github.com/microsoft/Scalar), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
+We recommend keeping your repository below 10GB for optimal operation. 
+If your repository exceeds this size consider using [Git-LFS](manage-large-files.md), [Scalar](https://github.com/microsoft/Scalar), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
+
+Azure DevOps continuously reduces the overall size and increases the efficiency of Git repositories by consolidating similar files into packs. 
+For repositories nearing 250 GB, the internal limit on pack files can be reached before the optimization process completes.
+Any user attempting to write to the repository will see the following error message: “The Git pack file limit has been reached, write operations are temporarily unavailable while the repository is updated.“ 
+Write operations will be restored immediately after the job completes.
 
 ## Push size
 

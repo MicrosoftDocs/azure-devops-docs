@@ -2,18 +2,18 @@
 title: Set working days off
 titleSuffix: Azure DevOps
 description: Learn how to choose your team's working days for capacity planning purposes in Azure Boards.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/03/2020
+ms.date: 04/04/2022
 ---
 
 # Configure working days  
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Configure the days that your team works. Your team's working days aid in capacity planning purposes and when you're using sprint and scrum methods in Azure Boards. Each team's sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked.
 
@@ -42,7 +42,7 @@ Configure the days that your team works. Your team's working days aid in capacit
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 1. From Azure Boards, select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
@@ -51,24 +51,6 @@ Configure the days that your team works. Your team's working days aid in capacit
 2. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
    Your team's working days are updated.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"   
-
-<a  id="tfs-2015-work-days" />  
-
-Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days.
-
-   ![Team settings page for default working days](../../boards/plans/media/ALM_DS_WorkingDaysOff.png)  
-
-   Your changes are automatically saved.
-
-::: moniker-end
-
-::: moniker range="tfs-2013" 
-
-To set non-working days, modify the **ProcessConfiguration** file. For details, see [Process configuration XML element reference, Set non-working days](../../reference/xml/process-configuration-xml-element.md#weekend_days). 
 
 ::: moniker-end
 

@@ -1,19 +1,19 @@
 ---
 title: Service status 
 titleSuffix: Azure DevOps 
-description: Understand how Azure DevOps Services status is monitored and available to users 
+description: Understand how Azure DevOps Services status is monitored and available to users. 
 ms.topic: conceptual
-ms.technology: devops-accounts 
+ms.subservice: azure-devops-organizations
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/15/2021
+ms.date: 03/02/2022
 ---
 
 # Azure DevOps Services status
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 We have a team of engineers around the world who look after the 
 health of Azure DevOps 24 hours a day. Their primary goal is to ensure 
@@ -21,7 +21,7 @@ that our customers are always productive and successful with our service.
 From time to time, like any online service, our service experiences performance 
 slowdowns and stability issues. In these cases, we aim to respond quickly to 
 restore the service. It's our top priority to communicate the incident 
-status and our next steps to mitigate the issue. We do this through the
+status and our next steps to mitigate the issue. We do so through the
 [Azure DevOps Services status portal](https://status.dev.azure.com).
 
 If you're experiencing a problem with any of our Azure DevOps Services, you can check the 
@@ -47,13 +47,13 @@ we communicate impact of each of these services by geographic region in the serv
 
 ## Service health indicators 
 
-The Azure DevOps Services status portal indicates the status of Azure DevOps services according to the following indicators. These indicators reflect the severity of a service health event based on the number of customers affected by the issue. Typically, the highest severity events impact a large percentage of our customers and render some parts of the product unusable. 
+The Azure DevOps Services status portal indicates the status of Azure DevOps Services according to the following indicators. These indicators reflect the severity of a service health event based on the number of customers affected by the issue. Typically, the highest severity events impact a large percentage of our customers and render some parts of the product unusable. 
  
 :::image type="content" source="media/services-status/status-indicators.png" alt-text="Service status indicators"::: 
 
 - **Healthy**: Indicates the service is broadly available. 
 - **Degraded**: Indicates a lower-severity event that affects the performance of a service feature, but doesn't impact broad service availability. 
-- **Unhealthy**: Indicates a high-severity event that affects the performance of a service and it's broad availability. 
+- **Unhealthy**: Indicates a high-severity event that affects the performance of a service and its broad availability. 
 - **Advisory**: Indicates that a service is under investigation to determine the  performance and availability impact. 
 
 
@@ -67,11 +67,9 @@ In addition, you can use the REST API build automated alerting solutions to help
 
 ## When and how to report availability issues 
 
-If you're experiencing an issue with Azure DevOps and see a corresponding event that's communicated on the service health portal, we're already working to restore normal operations of the service. You don't need to take any further 
-action to notify us. 
+If you're experiencing an issue with Azure DevOps and see a corresponding event that's communicated on the service health portal, we're already working to restore normal operations of the service. You don't need to do anything else to notify us. 
 
-However, if you don't see your issue reported on the Azure DevOps Services health page, you can report your issue using 
-the Report a Service Availability Issue form. Or, you can ask a question through the [Azure DevOps Services virtual support agent](https://azure.microsoft.com/support/devops/). 
+However, if you don't see your issue reported on the Azure DevOps Services health page, you can ask a question through the [Azure DevOps Services virtual support agent](https://azure.microsoft.com/support/devops/). 
 
 For issues not related to availability, refer to our [Developer Community portal](https://developercommunity.visualstudio.com/report?space=21&entry=problem). 
 

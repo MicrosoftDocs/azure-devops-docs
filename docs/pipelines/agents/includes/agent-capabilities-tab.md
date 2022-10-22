@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
@@ -31,14 +31,3 @@ ms.date: 08/07/2020
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-[!INCLUDE [agent-capabilities](agent-capabilities-tab/agent-capabilities-tab-tfs-2017.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-[!INCLUDE [agent-capabilities](agent-capabilities-tab/agent-capabilities-tab-tfs-2015.md)]
-
-::: moniker-end

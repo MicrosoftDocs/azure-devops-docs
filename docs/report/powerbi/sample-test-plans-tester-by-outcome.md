@@ -2,7 +2,7 @@
 title: Manual test Tester by Outcome matrix sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate a tester by outcome matrix report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
 ms.custom: powerbisample
@@ -14,7 +14,7 @@ ms.date: 10/13/2021
 
 # Tester by outcome matrix sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
 
@@ -189,4 +189,4 @@ Your report should look similar to the following image.
 
 - [Overview of sample reports using OData queries](./sample-odata-overview.md)
 - [Connect using Power BI and OData queries](./odataquery-connect.md)
-- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)
+- [Sample reports and quick reference index](../extend-analytics/quick-ref.md)

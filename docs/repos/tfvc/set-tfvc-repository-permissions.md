@@ -3,19 +3,20 @@ title: Set TFVC repository permissions
 titleSuffix: Azure Repos
 description: Steps for how to grant or restrict access to a Team Foundation Version Control repository feature or function
 ms.assetid:  
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/14/2021
+ms.date: 07/13/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Set TFVC repository permissions 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
-
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You grant or restrict access to a TFVC repository to lock down who can contribute to your source code. There is only one TFVC repository per project.   
 
@@ -23,8 +24,8 @@ For guidance on who to provide greater permission levels, see [Grant or restrict
 
 ## Prerequisites
 
-* You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).
-* You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for the TFVC repository.  
+* You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises Azure DevOps](../../organizations/projects/create-project.md).
+* You must be a member of the [**Project Administrators** Group](../../organizations/security/change-project-level-permissions.md) or have your **Manage permissions** set to **Allow** for the TFVC repository.  
 
 ::: moniker range="azure-devops"
 
@@ -52,7 +53,7 @@ By default, members of the project Contributors group have permissions to contri
 
 ## Open TFVC repository Security
 
-To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md#project-level)
+To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project-level](../../organizations/security/change-project-level-permissions.md)
 
 ::: moniker range="azure-devops"
 
@@ -86,7 +87,7 @@ To set permissions for a custom security group, you must have defined that group
 ::: moniker-end    
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
@@ -104,7 +105,7 @@ To set permissions for a custom security group, you must have defined that group
 
 ::: moniker-end    
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal, open the admin context by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: **Settings** and choose **Version Control**.
 

@@ -2,17 +2,17 @@
 title: Test different configurations
 description: Learn about manual and exploratory testing. You can test different configurations with Azure Test Plans and Team Foundation Server.
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
-ms.date: 09/14/2021
+monikerRange: '<= azure-devops'
+ms.date: 12/20/2021
 ---
 
 # Test different configurations
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Your users will probably install or run your app 
 on a wide variety of configurations, such as different 
@@ -31,13 +31,69 @@ You might draw a schematic matrix of the combinations that you want to test:
 
 Then you can:
 
-* [Create the configurations and variables](#create-configs)
+* [View available configurations and variables](#view-configs)
+* [Create configurations and variables](#create-configs)
 * [Assign the configurations to test plans and test suites](#assign-configs)
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
- 
- 
-[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+
+## Prerequisites
+
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/user-guide/sign-up-invite-teammates).
+- You must be added to a project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To view or add test configurations, you must have **Basic** access or higher.
+- To add test configurations, you must have the project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.
+
+To learn more, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)]
+
+<a name="view-configs"></a>
+
+## View configurations and variables
+
+You often want to see the configurations that are already available to run your tests.
+
+# [Browser](#tab/browser)
+
+You can view a list of test configurations and configuration variables from the **Configurations** page.
+
+While in your project, select **Test Plans** > **Configurations** from the left navigation area. Here you'll see all of the test configurations and variables currently available for your test plans.
+
+:::image type="content" source="media/testing-configurations/viewing-test-configurations.png" alt-text="Screenshot of Query Editor, Query test plans.":::
+
+Select a configuration or variable to see more information about it in the window to the right.
+
+# [TCM CLI](#tab/tcm-cli)
+
+Use `tcm configs /list` to view the configurations available for the test plans and test suites in your project. When no optional parameters are specified, all test configurations are listed for the team project.
+
+```tcm
+tcm configs /list [/querytext:query] /collection:teamprojectcollectionurl
+            /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/querytext**:`query`| Optional. Specifies the query to use to list a subset of test configurations.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command lists the test configurations available in the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The **ID** corresponds to the configuration **Name**. For example, configuration ID *9* is aligned with the *Google Chrome on Windows 10* test configuration.
+
+```tcm
+tcm configs /list /collection:https://dev.azure.com/fabrikamprime /teamproject:"Fabrikam Fiber"
+
+Id        Name
+--------- ----------------------------------------------------------------
+2         Windows 8
+7         Windows 7
+9         Google Chrome on Windows 10
+```
+
+***
 
 <a name="create-configs"></a>
 

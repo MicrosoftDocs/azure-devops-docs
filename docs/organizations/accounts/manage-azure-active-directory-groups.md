@@ -3,7 +3,7 @@ title: Manage access with Azure Active Directory groups
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to control who can access Azure DevOps with Azure Active Directory groups
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
 ms.author: chcomley
@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Access with Azure Active Directory groups
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Do you want an easier way to control who can access your team's critical resources and key business assets in Azure DevOps Services?
 If you already use Microsoft services like Microsoft 365 or [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/), you can use the same identities with your organization.
@@ -29,7 +29,7 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Prerequisites
 
 * Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.yml#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
-* You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
+* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
 
@@ -46,7 +46,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Permissions**, and then select the group you want to add a member to.
 
@@ -70,7 +70,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 

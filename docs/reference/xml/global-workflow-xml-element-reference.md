@@ -1,23 +1,23 @@
 ---
 title: Global Workflow XML element reference 
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Syntax and usage of the global workflow elements to define data fields and global lists to be shared across several projects  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '< azure-devops'
-ms.date: 09/10/2017
+ms.date: 01/11/2022
 ---
 
 # Global workflow XML element reference
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
-> This topic applies to project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
+> This article applies to project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
 
 
 By using global workflow, you can minimize the work that is required to define and update work item fields and global lists that many types of work items and projects share. With global workflow, you can define and update fields and global lists that apply to all types of work items in a project or a project collection.  
@@ -54,7 +54,9 @@ By using global workflow, you can minimize the work that is required to define a
 > ```  
   
 <a name="FIELD"></a> 
+
 ##  FIELD (Definition) element  
+
  You use the following syntax to define the data fields within a global workflow. This syntax shows the **FIELD** (Definition) element format and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md) and [All FIELD elements](all-field-xml-elements-reference.md).  
   
 > [!NOTE]
@@ -88,14 +90,18 @@ By using global workflow, you can minimize the work that is required to define a
   
  
  <a name="LISTElements"></a>  
+
 ##  GLOBALLIST and LISTITEM Child Elements  
+
  The following table describes the **GLOBALLIST** and **LISTITEM** elements. You specify these elements as child elements of the `GLOBALWORKFLOW` element. You can use these elements to enumerate a list of values that appears to the user as a pick list or a drop-down menu of items. For more information, see [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md).  
   
-|Element|Description and Syntax|  
+|Element|Description and syntax|  
 |-------------|----------------------------|  
 |**GLOBALIST**|Defines a set of **LISTITEM** elements that are stored for a project collection or a project.<br /><br /> *globalListName*: A string of text that contains between 1 and 255 characters.<br /><br /> `<GLOBALLIST name="` *globalListName* `">`<br /><br /> `<LISTITEM> . . . </LISTITEM>`<br /><br /> `</GLOBALLIST>`<br /><br /> **GLOBALLIST** is a required child element of the **GLOBALLISTS** element.|  
 |**LISTITEM**|Defines a valid value that appears in the list.<br /><br /> `<LISTITEM value="` *listName* `" />`<br /><br /> **LISTITEM** is a required child element of **GLOBALLIST**.|  
   
 ## Related articles  
+
+-  [GLOBALLIST XML element reference](define-global-lists.md)
 -  [FIELD (Definition) element reference](field-definition-element-reference.md)   
 -  [Customize your work tracking experience](../customize-work.md)  

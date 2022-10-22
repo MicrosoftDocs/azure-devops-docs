@@ -2,15 +2,16 @@
 title: Kerberos and Git LFS
 titleSuffix: Azure Repos
 description: Using Git LFS versions older than 2.4.0 with TFS
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2015 < azure-devops'
+monikerRange: '< azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Kerberos authentication
 
-[!INCLUDE [version-tfs-all-versions](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 If you use Azure DevOps to manage your Git repository, Git may be using the Kerberos protocol to authenticate. 
 (This doesn't apply to Azure DevOps Services, which uses a different form of authentication.)

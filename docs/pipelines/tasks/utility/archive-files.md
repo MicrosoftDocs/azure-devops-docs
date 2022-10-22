@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.custom: seodec18
 ms.date: 02/10/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Archive Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to create an archive file from a source folder.
 A range of standard archive formats are supported including .zip, .jar, .war, .ear, .tar, .7z, and more.

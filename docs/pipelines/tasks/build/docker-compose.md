@@ -1,6 +1,6 @@
 ---
 title: Docker Compose task
-description: Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
+description: Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container Registry.
 ms.topic: reference
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.author: atulmal
@@ -11,7 +11,7 @@ monikerRange: '> tfs-2018'
 
 # Docker Compose task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.

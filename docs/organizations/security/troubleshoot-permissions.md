@@ -3,17 +3,17 @@ title: Troubleshoot access, permission issues
 titleSuffix: Azure DevOps
 description: Find helpful troubleshooting information for resolving access and permission issues in Azure DevOps.  
 ms.assetid: 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 04/04/2022
 --- 
 
 # Troubleshoot access and permission issues
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps security and permission structure is extensive, so you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
 
@@ -84,7 +84,7 @@ For more information about permissions, see [Permissions and groups](permissions
 
 ## Trace a permission
 
-Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Change individual permissions](change-individual-permissions.md).
+Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Request an increase in permission levels](request-changes-permissions.md).
 
 
 ::: moniker range=" azure-devops"
@@ -107,54 +107,58 @@ Complete the following steps so administrators can understand where exactly thos
 
 1. Select **Project settings** > **Permissions** > **Users**, and then select the user.
 
-   :::image type="content" source="media/permissions-page-enter-user-name.png" alt-text="Enter user name into filter box":::
+   :::image type="content" source="media/permissions-page-enter-user-name.png" alt-text="Screenshot of filter box, enter user name.":::
 
    You should now have a user-specific view that shows what permissions they have.
 
 2.  To trace why a user does or doesn't have any of the listed permissions, select the information icon next to the permission in question.
 
-   :::image type="content" source="media/select-information-icon.png" alt-text="Select the information icon next to the permission in question":::
+   :::image type="content" source="media/select-information-icon.png" alt-text="Screenshot of select the information icon next to the permission in question.":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups that they're in.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
 
-   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into the filter box":::
+   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Screenshot of enter user name into the filter box, Azure DevOps Server 2019.":::
 
    You should now have a user-specific view that shows what permissions they have.
 
 2. Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
-   :::image type="content" source="media/permissions-list-view-project-level-information-2019.png" alt-text="Choose Why in permissions list view for project level information":::
+   :::image type="content" source="media/permissions-list-view-project-level-information-2019.png" alt-text="Screenshot of Choose Why in permissions list view for project level information, Azure DevOps Server 2019.":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
 
-   :::image type="content" source="media/trace-permission-group-member-inheritance-2019.png" alt-text="Trace showing inherited permissions":::
+   :::image type="content" source="media/trace-permission-group-member-inheritance-2019.png" alt-text="Screenshot of Trace showing inherited permissions, Azure DevOps Server 2019.":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1.	Go to the Security page for the project that the user is having access problems.
 2.	Enter their name into the box in the upper left-hand corner.
    
-    :::image type="content" source="media/security-page-enter-user-name.png" alt-text="Enter user name to view permissions.":::
+    :::image type="content" source="media/security-page-enter-user-name.png" alt-text="Screenshot of Enter user name to view permissions, TFS 2018.":::
 
     You should have a user-specific view that shows what permissions they have.
 
 3.	Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
-    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
+    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Screenshot of Select Why to trace the permissions, TFS 2018.":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions provided to the groups they're in.
 
 ::: moniker-end
 
-For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Change individual permissions](change-individual-permissions.md).
+For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
+
+<a id="refresh-permissions" />
+
+
 
 ## Refresh or reevaluate permissions
 
@@ -178,9 +182,9 @@ Users get added to an Azure DevOps group. This action grants inherited access to
 
 ::: moniker range=" <= azure-devops"
 
-Within **User settings**, on the **Permissions** page, you can select **Reevaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
+Within **User settings**, on the **Permissions** page, you can select **Re-evaluate permissions**. This function re-evaluates your group memberships and permissions, and then any recent changes take effect immediately.
 
-:::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Reevaluate permissions control":::
+:::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Screenshot of Re-evaluate permissions control.":::
 
 ::: moniker-end
 
@@ -196,7 +200,7 @@ For more information about work item type rules that apply toward restricting op
 
 ## Hide organization settings from users
 
-If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility for projects** preview feature. 
+If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility and collaboration to specific projects** preview feature. 
 
 ::: moniker range=" azure-devops"
 
@@ -211,7 +215,7 @@ Examples of restricted users include Stakeholders, or members of a security grou
 
 ::: moniker-end
 
-For more information about hiding organization settings from users, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
+For more information about hiding organization settings from users, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 ::: moniker range=" azure-devops"
 
@@ -306,8 +310,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 ## Related articles
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
-- [Change individual or group permissions](change-individual-permissions.md)
-- [Security and permission management tools](security-tools-reference.md)  
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
-- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
+- [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)
+- [Security best practices](security-best-practices.md)
+- [Security and permission management tools](security-tools-reference.md)    
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)

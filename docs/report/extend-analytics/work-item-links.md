@@ -2,8 +2,8 @@
 title: Query for linked work items 
 titleSuffix: Azure DevOps 
 description: Learn how to create a query for linked work items using Analytics for Azure DevOps.
-ms.technology: devops-analytics
-ms.topic: conceptual
+ms.subservice: azure-devops-analytics
+ms.topic: tutorial
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there's some extra complexity.
 

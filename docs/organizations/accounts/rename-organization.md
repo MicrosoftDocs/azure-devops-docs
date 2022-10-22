@@ -2,8 +2,8 @@
 title: Rename your organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Find your organization Owner to change your organization URL or provide a new name. What to do before and after renaming your organization.
-ms.technology: devops-accounts
+description: Find your organization owner to change your organization URL or provide a new name. What to do before and after renaming your organization.
+ms.subservice: azure-devops-organizations
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.topic: conceptual
 ms.author: chcomley
@@ -14,17 +14,17 @@ monikerRange: 'azure-devops'
 
 # Rename your organization in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can change your organization name (URL) at any time in Azure DevOps. This article shows you how.
 
-> [!Caution]
+> [!CAUTION]
 > The rename operation affects your organization's connections and individuals who are currently working with your organization. Before you start, find out [what to do before and after renaming your organization](https://support.microsoft.com/kb/2793597).
 
 ## Prerequisites
 
-To change your organization URL, you need at least Basic access and organization Owner permissions.
-[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+To change your organization URL, you need at least Basic access and organization owner permissions.
+[How do I find the organization owner?](../security/look-up-organization-owner.md)
 
 > [!NOTE]
 > You can't rename an organization within one hour of the most recent rename operation.
@@ -37,7 +37,7 @@ To change your organization URL, you need at least Basic access and organization
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if you want.
 

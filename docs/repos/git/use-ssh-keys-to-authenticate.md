@@ -3,17 +3,18 @@ title: Connect to your Git repos with SSH
 titleSuffix: Azure Repos
 description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 12/03/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Use SSH key authentication
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 > [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
@@ -140,6 +141,11 @@ Associate the public key generated in the previous step with your user ID.
    
 3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
 
+   >[!NOTE]
+   > You can use the command `$ cat ~/.ssh/id_rsa.pub` to print the contents of the id_rsa.pub file in the terminal, then copy this to your clipboard.
+   > If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+   > Alternatively, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.
+   
    >[!IMPORTANT]
    >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
@@ -209,7 +215,7 @@ fatal: Could not read from remote repository.
 ```
 
 **A:** Manually record the SSH key by running:
-`ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
+`ssh-keyscan -t rsa ssh.dev.azure.com >> ~/.ssh/known_hosts`
 
 ### Q: How can I have Git remember the passphrase for my key on Windows?
 
@@ -326,6 +332,14 @@ Host ssh.dev.azure.com
 Host vs-ssh.visualstudio.com
   IdentityFile ~/.ssh/your_private_key
   IdentitiesOnly yes
+
+# OpenSSL 8.7 has DEPRECATED RSA. IF using OpenSSL version > 8.6 you will need to 
+# add the 'HostkeyAlgorithms' and 'PubkeyAcceptedAlgorithms' entries below. You can 
+# check the version of OpenSSL/OpenSSH you're using by running the command 'ssh -v localhost'    
+Host ssh.dev.azure.com
+  IdentityFile ~/.ssh/id_rsa
+  HostkeyAlgorithms +ssh-rsa
+  PubkeyAcceptedAlgorithms +ssh-rsa   
 
 # Less common scenario: if you need different keys for different organizations,
 # you'll need to use host aliases to create separate Host sections.

@@ -1,39 +1,42 @@
 ---
 title: Import and export global workflow using witadmin
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps  
 description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple projects and types of work items share 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Import and export global workflow
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 By using global workflow, you can minimize the work required to define and update work item fields and global lists that multiple projects and types of work items share. With global workflow, you can define and update fields and global lists. You can manage the global workflow for a project collection or a project by using the following commands in the **witadmin** command-line tool:  
   
 -   **exportglobalworkflow**:  Exports the global workflow to an XML file or the Command Prompt window.   
 -   **importglobalworkflow**:  Imports global workflow from an XML file.  
+
+To learn about global workflow, see [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md).   
+
   
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
   
  **Requirements**  
   
--   To export a global workflow, you must be a valid user of the project or project collection.    
--   To import a global workflow to a project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.    
--   To import a global workflow to a project collection, you must be a member of either the **Team Foundation Administrators** or **Project Collection Administrators**.  
+- To export a global workflow, you must be a valid user of the project or project collection.    
+- To import a global workflow to a project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.    
+- To import a global workflow to a project collection, you must be a member of either the **Team Foundation Administrators** or **Project Collection Administrators**.  
   
-See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
+See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]    
->Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
+> Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
 ## Syntax  
   
@@ -87,4 +90,6 @@ witadmin importglobalworkflow /collection:http://AdventureWorksServer:8080/tfs/D
 ```  
   
 ## Related articles 
+
+- [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md)
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

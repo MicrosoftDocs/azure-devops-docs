@@ -1,7 +1,7 @@
 ---
 title: Manage risk in Azure Boards
 description: Learn how to strategically minimize the variance between the outcome that you want and the actual outcome by managing risk in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 8df2e7de-3a67-4f3d-9abb-3067fa3ddd75
 ms.topic: conceptual
 ms.author: kaelli
@@ -12,7 +12,7 @@ ms.date: 11/07/2021
 
 # Manage risks with the Capability Maturity Model Integration (CMMI) process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 Risk implies that actual outcomes may vary, sometimes significantly, from expected outcomes. Both the probability of this variance and the degree of variance between actual and expected outcomes is encapsulated in the term "risk." When you manage risk, you strategically minimize the variance between the outcome that you want and the actual outcome.  
   

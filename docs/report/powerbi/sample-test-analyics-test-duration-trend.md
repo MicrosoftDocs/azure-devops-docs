@@ -2,8 +2,7 @@
 title: Pipeline test duration trend sample Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a test duration trend Power BI report for a given pipeline in the project.
-ms.prod: devops
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.manager: mijacobs
 ms.author: kaghai
@@ -16,7 +15,7 @@ ms.date: 10/13/2021
 
 # Test duration trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows the day wise trend of the average time taken to execute a test for a selected time range.
 

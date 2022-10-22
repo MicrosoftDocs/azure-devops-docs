@@ -2,19 +2,19 @@
 title: Change the workflow for a work item type
 titleSuffix: Azure DevOps & TFS 
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
-ms.technology: devops-agile
-ms.custom: process
+ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 03/31/2017
 ---
 
 # Change the workflow for a work item type
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of work&mdash;requirements, tasks, code defects&mdash;to support software development.  
 
@@ -308,7 +308,7 @@ When the value of the **State** field for a work item is set to Active and the w
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize-work.md)  
 - [Query by assignment, workflow or Kanban board changes](../../boards/queries/query-by-workflow-changes.md)  
-- [Design the work item form](design-work-item-form.md)    
+- [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)    
 - [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
 
 

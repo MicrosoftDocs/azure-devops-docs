@@ -2,23 +2,21 @@
 title: Set up your client's npmrc
 description: How to set up your project and authenticate to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 11/10/2021
-monikerRange: '>= tfs-2017'
+ms.date: 10/11/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Set up your project and connect to Azure Artifacts
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com.
-
-To authenticate with Azure Artifacts, we must first set up our config file. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com. To authenticate with Azure Artifacts, we must first set up our config file. Npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ## Project setup
 
-We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials. This enables you to share your project's **.npmrc** while keeping your credentials secure.
+We recommend using two config files, the first one you should use to authenticate to Azure Artifacts, and the second one should be kept locally to store your credentials. On your development machine, place the second *.npmrc* file in your home directory. This second file should contain all your registries' credentials. The following steps will help set up your other config file:
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -28,7 +26,7 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Packages**, and then select **Connect to feed**.
 
@@ -38,33 +36,34 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 2. Select **npm** from the list of package types.
 
-3. If this is the first time using Azure Artifacts with npm, select **Get the tools** button and follow the instructions to install the prerequisites. 
+3. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
 
-::: moniker range=">= azure-devops"   
+::: moniker range="azure-devops"   
 
-4. Follow the instructions under the **Project setup** section to set up your project.
+4. Follow the instructions in **Project setup** to set up your config file.
 
     :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
 
 ::: moniker-end
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-4. Follow the instructions in the **Project setup** section to set up your project.
+4. Follow the instructions in **Project setup** to set up your config file.
 
    :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 4. Follow the instructions to set up your project.
 
     :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
 
 ::: moniker-end
-        
-On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This *.npmrc* file should contain all your registries' credentials. 
+
+> [!NOTE]
+> if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for more details.
 
 ## Credentials setup
 
@@ -73,7 +72,7 @@ On your development machine, place the second *.npmrc* file in your *$HOME* for 
 
 ### [Windows](#tab/windows/)
 
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
+If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
 
 - Install vsts-npm-auth globally:
 
@@ -85,7 +84,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
     ```json
     "scripts": {
-        "refreshVSToken" : "vsts-npm-auth -config .npmrc"
+        "refreshVSToken" : "vsts-npm-auth -config ".\.npmrc\" -TargetConfig "$HOME\.npmrc\""
     }
     ```
 
@@ -93,7 +92,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 `vsts-npm-auth` is not supported in Linux/Mac. Follow the steps below to set up your credentials:
 
-1. Copy the following snippet into your .npmrc file.
+1. Copy the following snippet into your npmrc file.
 
     - **Organization-scoped feed**:
 
@@ -107,7 +106,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
         //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
         ; end auth token
         ```
-    
+
     - **Project-scoped feed**:
 
         ```Command
@@ -126,16 +125,16 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 1. Encode your newly generated personal access token as follows:
 
     1. Run the following command in an elevated command prompt window, and then paste your personal access token when prompted:
-        
+
         ```Command
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
-        You can also use the following command to convert your personal access token to Base64:
+        You can also use the following command to convert your personal access token to Base64. Use `-w 0` to disable line wrapping.
 
         - **LinuxMac**:
             ```Command
-            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
+            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64 -w 0
             ```
     1. Copy the Base64 encoded value.
 
@@ -146,89 +145,11 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-## Set up authentication in your pipeline
+## Pipeline authentication
 
-There are two options for setting up authentication in your pipeline:
+Azure Artifacts recommend using the [npm authenticate task](../../pipelines/tasks/package/npm-authenticate.md) to authenticate with your pipeline. When using a task runner such as gulp or Grunt, you'll need to add the npm authenticate task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
 
-- [Without a task runner](#without-a-task-runner).
-- [With a task runner](#with-a-task-runner) (e.g. gulp).
-
-### Without a Task Runner
-
-To authenticate with Azure Artifacts from your pipeline without a task runner, follow the steps below: 
-
-::: moniker range=">= azure-devops-2019"
-
-1. Select **Azure Pipelines**, and then select your pipeline definition.
-
-1. Select **Edit** to modify your pipeline.
-
-1. Select `+` to add a task to your pipeline.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing how to add the npm task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
-
-1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
-
-1. Select the folder that contains your package.json.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing where to add the path to your package.json](../media/build-definition/build-definition-npm-install-newnav.png)
-
-1. Expand the **Custom registries and authentication** section, and then select **Registry I select here**. Select your feed from the dropdown menu.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Registries to use](../media/build-definition/registry-i-select-here.png)
-
-      > [!NOTE]
-      > When you select this option, the task will create a temporary *.npmrc* for the feed you selected here and override the project's *.npmrc*.
-   
-1. Select **Save & queue** when you are done.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2019"
-
-1. Select **Build and Release**, and then select **Builds**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing how to access builds in TFS](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
-
-1. Select your pipeline, and then select **Edit**.
-
-1. Select `+` to add a task to your pipeline.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to add a task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
-
-1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing the npm task added to the pipeline](../media/build-definition/build-definition-npm-install.png)
-
-1. Select the folder that contains your package.json.
-
-1. Expand the **Custom registries and authentication** section, and then select **Registry I select here**. Select your feed from the dropdown menu. 
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to use packages from a specific feed](../media/build-definition/registry-i-select-here.png)
-
-   > [!NOTE]
-   > When you select this option, the task will create a temporary *.npmrc* for the feed you selected here and override the project's *.npmrc*.
-   
-1. Select **Save & queue** when you are done.
-
-::: moniker-end
-
-> [!TIP]
-> To allow your pipeline to access your feed, make sure you set the build service to a contributor in your feed's settings. Azure Artifacts -> Select your feed -> Settings -> Permissions -> set the build service role to **Contributor**.
-
-> [!div class="mx-imgBorder"]
-> ![tip screenshot](../media/project-collection-contributor.png)
-
-### With a Task Runner
-
-When using a task runner, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
+### [Classic](#tab/classic)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -251,11 +172,11 @@ When using a task runner, you'll need to add the **npm Authenticate** task at th
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing how to add your .npmrc file](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build and Release**, and then select **Builds**.
 
@@ -279,32 +200,72 @@ When using a task runner, you'll need to add the **npm Authenticate** task at th
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing how to add your .npmrc file to the npm authenticate task](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 ::: moniker-end
 
-## Troubleshooting
+### [YAML](#tab/yaml)
 
-- Command is not recognized:
+```yaml
+- task: npmAuthenticate@0
+  inputs:
+    workingFile: .npmrc                ## Path to the npmrc file
+    customEndpoint: #Optional          ## Comma-separated list of npm service connection names for registries from external organizations. For registries in your org, leave this blank
+```
 
-    If you are running into the following error:
-    
-    - Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
-    - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
-    
-    Then it's likely that the npm modules folder is not in your path. To fix this issue, rerun the Node.js setup and make sure that the `Add to PATH` options are selected.
-    
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to set up node.js](./media/node-setup.png)
-    
-    Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
+* * *
 
-- Unable to authenticate:
+> [!NOTE]
+> To grant permissions to your pipeline, make sure you set the build service role to **Contributor** in your feed settings.
 
-    If you are running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with the **-F** flag to reauthenticate.
+:::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
 
-    ```Command
-    vsts-npm-auth -config .npmrc -F
+## Troubleshoot
+
+#### vsts-npm-auth is not recognized
+
+If you're running into the following error:
+
+- Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
+- PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
+
+Then it's likely that the npm modules folder is not in your path. To fix this issue, rerun the Node.js setup and make sure that the `Add to PATH` options are selected.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing how to set up node.js](./media/node-setup.png)
+
+Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
+
+#### Unable to authenticate
+
+If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
+
+```Command
+vsts-npm-auth -config .npmrc -F
+```
+
+#### Reset vsts-npm-auth
+
+Follow the steps below to modify/reset your vsts-npm-auth credentials:
+
+- Uninstall vsts-npm-auth.
+
+    ```command
+    npm uninstall -g vsts-npm-auth
+    ```
+
+- Clear your npm cache.
+
+    ```command
+    npm cache clean --force
+    ```
+
+- Delete your .npmrc file.
+
+- Reinstall vsts-npm-auth.
+
+    ```command
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
     ```
 
 ## Related articles
@@ -312,4 +273,3 @@ When using a task runner, you'll need to add the **npm Authenticate** task at th
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
 - [Use npm scopes](./scopes.md)
 - [Use npm audit](./npm-audit.md)
-

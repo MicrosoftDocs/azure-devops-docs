@@ -7,13 +7,13 @@ ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # CMake task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build with the CMake cross-platform build system.
 
@@ -44,12 +44,12 @@ cmake
       </tr>
    </thead>
    <tr>
-      <td><code>cwd</code><br/>Working Directory</td>
+      <td><code>workingDirectory</code><br/>Working Directory</td>
       <td>
          <p>(Optional) Working directory when CMake is run. The default value is <code>build</code>.</p>
          <p>If you specify a relative path, then it is relative to your repo. For example, if you specify <code>build</code>, the result is the same as if you specified <code>$(Build.SourcesDirectory)\build</code>.</p>
          <p>You can also specify a full path outside the repo, and you can use <a href="../../build/variables.md" data-raw-source="[variables](../../build/variables.md)">variables</a>. For example: <code>$(Build.ArtifactStagingDirectory)\build</code></p>
-         <p>If the path you specify does not exist, CMake creates it.</p><br/>Default value: build<br/>Argument aliases: <code>workingDirectory</code>
+         <p>If the path you specify does not exist, CMake creates it.</p><br/>Default value: build<br/>Argument aliases: <code>cwd</code>
       </td>
    </tr>
    <tr>

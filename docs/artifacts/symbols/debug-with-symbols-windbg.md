@@ -3,13 +3,15 @@ title: Debug with symbols in WinDbg
 description: Use WinDbg to consume symbols and debug your application
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
 ms.custom: contperf-fy22q1
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 07/26/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Debug with WinDbg
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
  Azure Artifacts offers a dedicated symbols server to publish your symbols. You can connect a debugger to automatically retrieve the correct symbol files and debug your application. Using WinDbg, you can load an executable or attach the debugger to a running process, consume your symbols, set up breakpoints, and step through and analyze your code.
 

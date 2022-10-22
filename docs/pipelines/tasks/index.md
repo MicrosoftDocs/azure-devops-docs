@@ -5,18 +5,28 @@ description: Catalog of the built-in tasks on Azure Pipelines and Team Foundatio
 ms.topic: reference
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.date: 05/03/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build and release tasks
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/ms400688(v=vs.120))**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 This article provides an index of built-in tasks. To learn more about tasks, including creating custom tasks, custom extensions, and finding tasks on the Visual Studio Marketplace, see [Tasks concepts](../process/tasks.md).
+
+> [!NOTE]
+> Azure Pipelines is building a new task reference experience with the following improvements.
+> * Task input names and aliases are generated from the task source so they are always up to date.
+> * YAML syntax blocks are generated from the task source so they are up to date.
+> * Supports community contributions with integrated user content such as enhanced task input descriptions, remarks and examples.
+> * Provides task coverage for all supported Azure DevOps versions.
+> * Updated every sprint to cover the latest updates.
+>
+> For a preview, see [Azure Pipelines task index - preview](/azure/devops/pipelines/tasks/reference).
 
 [!INCLUDE [task-list](includes/task-list.md)]
 

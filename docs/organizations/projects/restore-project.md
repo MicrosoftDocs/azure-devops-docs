@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 ms.custom: seodec18, contperf-fy21q4
 description: Restore a recently deleted project in Azure DevOps.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.technology: devops-accounts
+ms.subservice: azure-devops-projects
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -14,7 +14,7 @@ ms.date: 06/07/2021
 
 # Restore a project
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Sometimes we might delete a project in Azure DevOps by mistake. You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
 
@@ -22,9 +22,9 @@ Sometimes we might delete a project in Azure DevOps by mistake. You can restore 
 
 ::: moniker range="azure-devops"
 
-To restore a project, you must have Project Collection Administrator or organization Owner permissions in Azure DevOps.
+* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
-You must also have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
+* You must also have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
 ::: moniker-end
 

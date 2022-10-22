@@ -2,7 +2,7 @@
 title: Differences and limitations 
 titleSuffix: Azure DevOps Services Public Project
 description: Differences and limitations for non-members
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.reviewer:
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # How access to services are limited for non-members of a public project
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 In a public project, most features work the same for members and non-members.
 Today, non-members get read-only access to public projects and members get access based on their access level and permissions. Over time, we give non-members more features, for example commenting on work items.

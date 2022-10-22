@@ -3,22 +3,27 @@ title: Resolve Command
 titleSuffix: Azure Repos
 description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Resolve Command
+# Resolve command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Lets you resolve conflicts between changed items in your workspace and the latest or destination versions of items on the server.
 
-**Required Permissions**
+The **resolve** command lets you resolve conflicts between changed items in your workspace and the latest or destination versions of items on the server.
 
-To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf resolve [itemspec] 
@@ -39,14 +44,12 @@ tf resolve [itemspec]
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    *Itemspec*
    :::column-end:::
    :::column span="3":::
-   Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
-
+   Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
    :::column-end:::
@@ -94,15 +97,12 @@ tf resolve [itemspec]
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **/auto**
    :::column-end:::
    :::column span="3":::
-   Resolves outstanding conflicts between different versions of specified items in the current workspace using one of the following options:
-
-   
+   Resolves outstanding conflicts between different versions of specified items in the current workspace using one of the following options:  
    - **AutoMerge**   Automatically reconciles non-overlapping content differences between the specified workspace version of an item and the latest server version.
 
      If differences cannot be reconciled automatically, either because the file is binary or because the workspace and server versions contain overlapping content changes, the conflict remains unresolved pending the selection of one of the following manual merge options.
@@ -116,8 +116,6 @@ tf resolve [itemspec]
    - The **DeleteConflict** option removes a conflict from the conflict table, and the option/description table.
 
    - The **KeepYoursRenameTheirs** option accepts the contents and name of your file and renames their file to a new name that the user specifies. This option requires a single-item filespec, and the **/newname** option must also be included.
-
-   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -184,12 +182,15 @@ tf resolve [itemspec]
 :::row-end:::
 
 ## Remarks
+
 You can use the **Resolve** command to select a resolution for pending changes that conflict with the server version.
 
 If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
 ## Examples
+
 The following example invokes the **Resolve Conflicts** dialog box so that you can tell Team Foundation Server how to deal with pending changes that conflict with the server version.
 
 ```
@@ -202,28 +203,13 @@ The following example attempts to resolve all conflicts by automatically merging
 tf resolve /auto:automerge
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Merge Command](merge-command.md)
-
-[Get Command](get-command.md)
-
-[Checkin Command](checkin-command.md)
-
-[Difference Command](difference-command.md)
-
-#### Concepts
-
-[Managing File Types](/azure/devops/server/admin/manage-file-types)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Resolving Folder Differences and File Conflicts](resolve-team-foundation-version-control-conflicts.md)
-
-[Comparing Folders and Files](./compare-files.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Merge Command](merge-command.md)
+- [Get Command](get-command.md)
+- [Checkin Command](checkin-command.md)
+- [Difference Command](difference-command.md)
+- [Managing File Types](/azure/devops/server/admin/manage-file-types)
+- [Resolving Folder Differences and File Conflicts](resolve-team-foundation-version-control-conflicts.md)
+- [Comparing Folders and Files](./compare-files.md)

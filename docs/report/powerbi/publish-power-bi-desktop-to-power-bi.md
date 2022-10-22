@@ -2,8 +2,8 @@
 title: Publish a Power BI Desktop file to Power BI  
 titleSuffix: Azure DevOps 
 description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps. 
-ms.technology: devops-analytics
-ms.topic: conceptual
+ms.subservice: azure-devops-analytics
+ms.topic: how-to
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.author: kaelli
 monikerRange: '>=azure-devops-2019'
@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Publish a Power BI Desktop file to Power BI 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures, and charts, you can share them with others by creating a dashboard on Power BI. This article shows you how.   
 

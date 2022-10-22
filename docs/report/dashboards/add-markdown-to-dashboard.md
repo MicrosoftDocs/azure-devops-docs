@@ -3,17 +3,17 @@ title: Add Markdown content to a team dashboard
 titleSuffix: Azure DevOps
 description: Learn how to add and configure the Markdown widget you add to a team dashboard in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
-ms.topic: quickstart
+ms.subservice: azure-devops-analytics
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
-ms.date: 09/27/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Add Markdown to a dashboard
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 <a id="markdown-widget">  </a> 
@@ -70,7 +70,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Open a web browser, connect to your project, and  select **Dashboards**. 
 
@@ -83,11 +83,6 @@ If you need to switch to a different project, select the :::image type="icon" so
 
 ## Add the Markdown widget
 If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboards.md).  
-
-::: moniker range="tfs-2015"
-> [!NOTE]   
-> Requires TFS 2015.1 or later version.   
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 To add the Markdown widget to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  
@@ -131,7 +126,7 @@ To add the Markdown widget to the dashboard, select :::image type="icon" source=
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard.  
 
@@ -153,7 +148,7 @@ To add the Markdown widget to the dashboard, select :::image type="icon" source=
 
 	Here we show some simple text with a bulleted list of four links
 
-	<img src="media/add-markdown-configure.png" alt="Configure markdown" /> 
+	<img src="media/add-markdown-configure.png" alt="Configure Markdown" /> 
 
 	To link to a wiki page, repository file, or page within the project, use this format: 
 
@@ -177,7 +172,8 @@ To add the Markdown widget to the dashboard, select :::image type="icon" source=
 8. If you want to reposition the Markdown widget or other widgets on the dashboard, do that now while you're still in dashboard edit mode. 
 
 9. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
-    ::: moniker-end
+
+::: moniker-end
 
 
 ## Related articles

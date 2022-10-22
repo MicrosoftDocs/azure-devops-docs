@@ -1,24 +1,29 @@
 ---
-title: Retrieve a file using the TFVC View Command
+title: Retrieve a file using the TFVC View command
 titleSuffix: Azure Repos
 description: Retrieve a file using the TFVC View Command for Azure DevOps Services or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# View Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+# View command (Team Foundation Version Control)
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The **view** command retrieves a specific version of a file to a temporary folder on your computer and displays it.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
@@ -61,7 +66,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
    *Itemspec*
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder to retrieve. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+   Identifies the file or folder to retrieve. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument. 
@@ -72,7 +77,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
    *Versionspec*
    :::column-end:::
    :::column span="3":::
-   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -157,7 +162,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -176,7 +181,7 @@ The **view** command does not retrieve files into your workspace or check them o
 
 You can use the [Difference Command](difference-command.md) to view the differences between two versions of a file.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### Output Options
 
@@ -210,18 +215,9 @@ The following example displays the latest version of each file that matches the 
 c:\projects>tf view *.cs
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Checkout and Edit Commands](checkout-or-edit-command.md)
-
-[Get Command](get-command.md)
-
-[Difference Command](difference-command.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Checkout and Edit Commands](checkout-or-edit-command.md)
+- [Get Command](get-command.md)
+- [Difference Command](difference-command.md)

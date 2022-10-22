@@ -2,7 +2,7 @@
 title: Manual test execution trend sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate an execution trend of manual tests.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
 ms.custom: powerbisample
@@ -14,7 +14,7 @@ ms.date: 10/13/2021
 
 # Manual test execution trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
@@ -214,4 +214,4 @@ Your report should look similar to the following image.
 
 - [Overview of sample reports using OData queries](./sample-odata-overview.md)
 - [Connect using Power BI and OData queries](./odataquery-connect.md)
-- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)
+- [Sample reports and quick reference index](../extend-analytics/quick-ref.md)

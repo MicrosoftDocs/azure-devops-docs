@@ -1,9 +1,9 @@
-﻿---
+---
 title: Customizations when cloning a Hosted XML process 
 titleSuffix: Azure DevOps Services
 description: Describes the set of customizations that are preserved versus those that are ignored when upgrading a Hosted XML process to Inheritance 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
@@ -15,7 +15,7 @@ ms.date: 05/30/2018
 
 # Supported operations when moving from Hosted XML to an inherited process   
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 <a id="hosted-xml-process-model">  </a>
 

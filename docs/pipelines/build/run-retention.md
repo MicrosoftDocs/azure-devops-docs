@@ -10,7 +10,9 @@ monikerRange: ">= azure-devops-2020"
 
 # Pipeline Run Retention
 
-Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are a some examples of tasks that you can add to your yaml pipeline that will cause a run to retain itself.
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
+Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are some examples of tasks that you can add to your yaml pipeline that will cause a run to retain itself.
 
 ## Prerequisites
 
@@ -25,6 +27,8 @@ In this example, the project is configured to delete pipeline runs after only th
 
 If a pipeline in this project is important and runs should be retained for longer than thirty days, this task ensures the run will be valid for two years by [adding a new retention lease](/rest/api/azure/devops/build/leases/add).
 
+# [PowerShell](#tab/powershell)
+
 ```
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()))
@@ -36,15 +40,53 @@ If a pipeline in this project is important and runs should be retained for longe
     script: |
       $contentType = "application/json";
       $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-      $rawRequest = @{ daysValid = 365 * 2; definitionId = 1; ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+      $rawRequest = @{ daysValid = 365 * 2; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
       $request = ConvertTo-Json @($rawRequest);
       $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
 ```
 
+# [Azure CLI/ Bash](#tab/cli)
+```  
+ - task: AzureCLI@2
+          condition: and(succeeded(), not(canceled()))
+          name: RetainOnSuccess
+          displayName: Retain on Success
+          inputs:
+            azureSubscription: 'Your Service Connection'
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              curl -X POST $(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1 -H 'Content-type: application/json' -H 'Authorization: bearer $(system.AccessToken)' -d '[{ daysValid: 365, definitionId: $(System.DefinitionId), ownerId: "User:$(Build.RequestedForId)", protectPipeline: false, runId: $(Build.BuildId) }]' 
+``` 
+# [REST API Task](#tab/task)
+```
+- task: InvokeRESTAPI@1
+          displayName: 'Retain on Success'
+          inputs:
+            connectionType: connectedServiceName
+            serviceConnection: Your Service Connection
+            method: POST
+            headers: |
+              {
+                "Content-type": "application/json",
+                "Authorization": "bearer $(system.AccessToken)"
+              }
+            body: |
+              [{
+                "daysValid": 365,
+                "definitionId": $(System.DefinitionId),
+                "ownerId": "User:$(Build.RequestedForId)",
+                "protectPipeline": false,
+                "runId": $(Build.BuildId)
+              }]
+            waitForCompletion: 'false'
+```
+* * *
+
 #### Question: can a pipeline be retained for _less_ than the configured project values?
 
-No, leases do not work in the reverse. If a project is configured to retain for two years, pipeline runs will not be cleaned up by the system for two years. To delete these runs earlier, manually delete them or use the equivalent REST API.
+No, leases don't work in the reverse. If a project is configured to retain for two years, pipeline runs won't be cleaned up by the system for two years. To delete these runs earlier, manually delete them or use the equivalent REST API.
 
 ## Example: Only runs on branches named `releases/*` should be retained for a long time
 
@@ -84,7 +126,7 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
   script: |
     $contentType = "application/json";
     $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-    $rawRequest = @{ daysValid = 3; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+    $rawRequest = @{ daysValid = 365; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
     $request = ConvertTo-Json @($rawRequest);
     $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
     $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;

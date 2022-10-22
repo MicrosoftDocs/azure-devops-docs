@@ -2,7 +2,6 @@
 title: GitHub Enterprise support and automatic GitHub service connections in build pipelines - Sprint 146 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 01/14/2019
 description: In the Sprint 146 Update of Azure DevOps, we added more functionality to support GitHub integration
 ---

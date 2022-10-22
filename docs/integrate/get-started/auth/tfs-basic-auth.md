@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 title: Use the Cross-platform CLI for Azure DevOps 
 description: Use the Cross-platform CLI for Azure DevOps, using personal access tokens (PATs).
@@ -12,7 +12,7 @@ ms.date: 10/20/2020
 
 # Use the Cross-platform CLI for Azure DevOps using personal access tokens (PATs)
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 - You can download the latest version of **Node.js source code**, from the [Node.js source code downloads page](https://nodejs.org/en/download/)
 - Install the **Cross-platform CLI for Azure DevOps**

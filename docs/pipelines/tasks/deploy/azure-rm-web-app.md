@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Azure Web App task
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy web applications to Azure App Service.
 
@@ -117,7 +117,7 @@ This may be because web.config is not present in your app. You can either add a 
 ### Web app deployment on App Service Environment (ASE) is not working
 * Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
 * If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
-* If you are using TFS/Azure DevOps server deployed in a Virtual Network, the agent can be completely isolated.
+* If you are using TFS/Azure DevOps Server deployed in a Virtual Network, the agent can be completely isolated.
 * Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
 * If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary.
 

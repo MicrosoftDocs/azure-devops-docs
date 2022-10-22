@@ -2,8 +2,7 @@
 title: Implement Scaled Agile Framework® (SAFe) in Azure Boards
 titleSuffix: Azure Boards
 description: How to implement the Scaled Agile Framework® to support epics, release trains, and multiple backlogs in Azure Boards. 
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.author: kaelli
 author: KathrynEE
@@ -15,7 +14,7 @@ ms.date: 10/20/2021
 
 # Implement Scaled Agile Framework&reg; in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Many enterprises benefit from individual Agile teams. Greater interest grows to scale Agile practices as the organization grows. The need for enterprises to view progress of many Agile teams and across a portfolio continues to increase. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
@@ -359,12 +358,8 @@ Each of the following articles within this suite of tutorials provide details on
 - [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
 - [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
-- [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
-
-<!---
-[Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
--->
+ 
 
 ### About the authors
 
@@ -390,7 +385,7 @@ The articles in this series were updated from a previous white paper developed i
 
 
 <!---
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 ![SAFe® architectural overview &copy; D. Leffingwell](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
 

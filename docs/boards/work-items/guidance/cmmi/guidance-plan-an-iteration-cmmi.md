@@ -2,7 +2,7 @@
 title: Plan an iteration in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to divide your work into incremental stages such that you have software with progressively more working features at the end of each iteration. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
 ms.author: kaelli
@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Plan an iteration with the Capability Maturity Model Integration (CMMI) process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 Developing software in iterations means you divide your work into incremental stages such that you have software with progressively more working features at the end of each iteration. Ideally, you have something to show the customer after the first iteration. Iterations let you receive feedback early so you can make course corrections early.  
   

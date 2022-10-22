@@ -3,7 +3,7 @@ title: Key concepts for Sprints and Scrum tools in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards.
 ms.custom: boards-sprints
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 09/20/2021
 
 #  Sprints and Scrum key concepts in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also: 

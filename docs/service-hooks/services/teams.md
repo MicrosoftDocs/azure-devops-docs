@@ -1,16 +1,16 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
-monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020 
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Create a service hook for Azure DevOps with Microsoft Teams 
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 See activity about your Azure DevOps Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates
@@ -38,7 +38,7 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range="<= azure-devops"
 
 ## Configure a new connector for Azure DevOps Server
 
@@ -92,6 +92,8 @@ Activity from your project begins appearing in your Teams channel.
 2. Once you've authenticated, your Kanban board or dashboard appears.
    
 
+::: moniker-end
+
 ## Frequently asked questions (FAQs)
 
 <!-- BEGINSECTION class="m-qanda" -->
@@ -106,8 +108,8 @@ create two additional subscriptions.
 
 A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
 
-Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.yml#q--why-is-my-organization-already-connected-to-a-directory--can-i-change-that-directory-).
+Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Access via Azure AD FAQs, Why is my organization already connected to a directory?](../../organizations/accounts/faq-azure-access.yml#AlreadyConnected).
 
 <!-- ENDSECTION -->
 
-::: moniker-end
+

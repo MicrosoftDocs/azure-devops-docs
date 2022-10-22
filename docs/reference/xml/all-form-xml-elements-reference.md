@@ -2,7 +2,7 @@
 title: All FORM XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
 ms.author: kaelli
@@ -14,14 +14,14 @@ ms.date: 03/02/2017
 
 # All FORM XML elements reference (TFS 2015)
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
-You can use the information in this topic as a quick reference to all the elements and main attributes that control the form for a type of work item. You specify these elements in the `FORM` element container, the third and final major section of the definition of a type of work item. Many elements are nested within others to form groups, sections, or tabs in a work item form. For more information about how to group these elements, see [Design the work item form](design-work-item-form.md).  
+You can use the information in this topic as a quick reference to all the elements and main attributes that control the form for a type of work item. You specify these elements in the `FORM` element container, the third and final major section of the definition of a type of work item. Many elements are nested within others to form groups, sections, or tabs in a work item form. For more information about how to group these elements, see [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true).  
 
 
 <a name="FORM"></a> 
@@ -134,7 +134,7 @@ You can specify how information and work item fields are grouped and appear in a
    ReadOnly="True | False" MinimumSize="(Width,Height)"  
    Name="InstanceName" />
    ```
-   For more information, see [Control XML element reference](control-xml-element-reference.md).
+   For more information, see [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).
 
    :::column-end:::
    :::column span="1":::
@@ -274,7 +274,7 @@ You can specify how information and work item fields are grouped and appear in a
 
 <a name="FormAttributes"></a> 
 ## Attributes that are used to format FORM elements  
-You can control the spacing and size of many elements on a work item form by specifying the attributes that the following table describes. For more information, see [Design the work item form](design-work-item-form.md).  
+You can control the spacing and size of many elements on a work item form by specifying the attributes that the following table describes. For more information, see [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true).  
 
 |**Attribute**|**Description**|**Applicable Elements**|  
 |-------------------|---------------------|-----------------------------|  
@@ -290,7 +290,7 @@ You can control the spacing and size of many elements on a work item form by spe
 |`PercentWidth`|Optional. The column width as a percentage of the containing element's width. `PercentWidth` and `FixedWidth` are mutually exclusive.|`Column`|  
 |`ReadOnly`|Optional. You can display a read-only field in a control. Different controls respond to this attribute in slightly different ways.|`Control`|  
 |`Target`|Optional. String that specifies to which client this layout applies. Visual Studio displays this work item type in this layout if the `Target` attribute is omitted or set to Windows Forms. External clients can specify additional layouts by using custom `Target` attributes that Visual Studio ignores.<br /> The following values are valid:<br /> `WinForms`: Applies the form to Team Explorer and Team Explorer Everywhere.<br /> `Web`: Applies the form to the web portal.|`Layout`|  
-|`Type`|Required. The type of the control. For more information, see [Control](control-xml-element-reference.md).|`Control`|  
+|`Type`|Required. The type of the control. For more information, see [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).|`Control`|  
 
 <a name="LabelElements"></a> 
 ## Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
@@ -340,7 +340,7 @@ You can control the spacing and size of many elements on a work item form by spe
 > </LinksControlOptions>  
 > ```  
 
- Specifically, you use the elements that are summarized in the following table. For more information about how to use these elements, see [Define link controls to restrict link relationships](define-link-controls.md) and [LinksControlOptions](linkscontroloptions-xml-elements.md).  
+ Specifically, you use the elements that are summarized in the following table. For more information about how to use these elements, see [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true) and [LinksControlOptions](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true).  
 
 |Element|Required?|Description|  
 |-------------|---------------|-----------------|  
@@ -355,4 +355,4 @@ You can control the spacing and size of many elements on a work item form by spe
 
 ## Related articles
 -  [Customize the work tracking experience](../customize-work.md)  
--  [Design the work item form](design-work-item-form.md)     
+-  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)     

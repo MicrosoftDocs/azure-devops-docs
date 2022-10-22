@@ -2,24 +2,26 @@
 title: Add a build or release task in an extension 
 description: Add a custom build or release task in an extension for Azure DevOps.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
+ms.custom: freshness-fy22q3
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/04/2021
+date: 03/07/2022
 ---
 
 # Add a custom pipelines task extension
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
+
 These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
 ![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
 
-To learn more about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md).
+For more information about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md).
 
 > [!NOTE]
 > This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, check out the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
@@ -31,7 +33,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
-  The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
+  The production environment uses only Node10 or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
 - TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
@@ -60,7 +62,7 @@ If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with
 
 <a name="createtask"></a>
 
-## Step 1: Create a custom task
+## 1. Create a custom task
 
 Set up your task. Do every part of Step 1 within the `buildandreleasetask` folder.
 
@@ -91,34 +93,41 @@ npm install azure-pipelines-task-lib --save
 
 #### Add typings for external dependencies
 
-Ensure that TypeScript typings are installed for external dependencies.
+- Ensure that TypeScript typings are installed for external dependencies.
 
-```
-npm install @types/node --save-dev
-npm install @types/q --save-dev
-```
+   ```
+   npm install @types/node --save-dev
+   npm install @types/q --save-dev
+   ```
 
-Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install`
-so that node_modules are built each time and don't need to be checked in.
+- Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install` so that node_modules are built each time and don't need to be checked in.
 
-```
-echo node_modules > .gitignore
-```
+   ```
+   echo node_modules > .gitignore
+   ```
 
-#### Choose typescript version
+- Install Mocha as a development dependency:
 
-Tasks can use typescript versions 2.3.4 or 4.0.2. 
+   ```
+   npm install mocha --save-dev -g
+   npm install sync-request --save-dev
+   npm install @types/mocha --save-dev
+   ```
+
+#### Choose TypeScript version
+
+Tasks can use TypeScript versions 2.3.4 or 4.0.2. 
 
 >[!NOTE]
 >To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment.
 
-You can install the chosen typescript version using this command:
+You can install the chosen TypeScript version using this command:
 
 ```
 npm install typescript@4.0.2 -g --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
 
 
 #### Create tsconfig.json compiler options
@@ -190,7 +199,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task regarding [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restriction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
+| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 |
 
 >[!NOTE]
@@ -261,10 +270,9 @@ This time, the task succeeded because `samplestring` was supplied, and it correc
 
 <a name="testscripts"></a>
 
-## Step 2: Unit test your task scripts
+## 2. Unit test your task scripts
 
-The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to test all aspects
-of both success and failure paths.
+We unit test to quickly test the task script, and not the external tools that it's calling. We want to test all aspects of both success and failure paths.
 
 ### Install test tools
 
@@ -407,7 +415,7 @@ $env:TASK_TEST_TRACE=1
 
 <a name="extensionmanifest"></a>
 
-## Step 3: Create the extension manifest file
+## 3. Create the extension manifest file
 
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
@@ -439,7 +447,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 
 <a name="packageext"></a>
 
-## Step 4: Package your extension
+## 4. Package your extension
 
 After you've written your extension, the next step toward getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension.
@@ -459,7 +467,7 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 
 <a name="publishext"></a>
 
-## Step 5: Publish your extension
+## 5. Publish your extension
 
 <a name="createpublisher"></a>
 
@@ -508,7 +516,7 @@ Now that your extension is in the Marketplace and shared, anyone who wants to us
 
 <a name="createbuildrelease"></a>
 
-## Step 6: Create a build and release pipeline to publish the extension to Marketplace
+## 6. Create a build and release pipeline to publish the extension to Marketplace
 
 Create a build and release pipeline on Azure DevOps to help maintain the custom task on the Marketplace.
 
@@ -516,6 +524,8 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 - A project in your organization. For more information, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
+  1. Go to [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)
+  2. Choose **Get it free** and install the extension into your organization.
 
 Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
@@ -532,7 +542,9 @@ Create a new Visual Studio Marketplace service connection and grant access permi
 
 ![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)
 
-Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](../../pipelines/yaml-schema.md?tabs=schema%2Cparameter-schema).
+:::moniker range=">=azure-devops-2019"
+
+Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
 
 ```yaml
 trigger: 
@@ -551,7 +563,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "v0.x"
           - task: Npm@1
             inputs:
               command: 'install'
@@ -578,7 +590,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "0.x"
           - task: Npm@1
             inputs:
               command: 'install'
@@ -590,21 +602,21 @@ stages:
               script: |
                 cd TaskDirectory # Update to the name of the directory of your task
                 tsc
-          - task: QueryAzureDevOpsExtensionVersion@3
+          - task: QueryAzureDevOpsExtensionVersion@4
+            name: QueryVersion
             inputs:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
-              outputVariable: 'Task.Extension.Version'
           - task: PackageAzureDevOpsExtension@3
             inputs:
               rootFolder: '$(System.DefaultWorkingDirectory)'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
-              extensionVersion: '$(Task.Extension.Version)'
+              extensionVersion: '$(QueryVersion.Extension.Version)'
               updateTasksVersion: true
               updateTasksVersionType: 'patch'
               extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
@@ -625,7 +637,7 @@ stages:
         steps:
           - task: TfxInstaller@3
             inputs:
-              version: "v0.7.x"
+              version: "v0.x"
           - task: DownloadBuildArtifacts@0
             inputs:
               buildType: "current"
@@ -637,7 +649,7 @@ stages:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               fileType: 'vsix'
-              vsixFile: '/Publisher.*.vsix'
+              vsixFile: '$(PublisherID).$(ExtensionName)/$(PublisherID)..vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
@@ -645,6 +657,8 @@ stages:
               extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
 ```
+
+:::moniker-end
 
 For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
@@ -752,11 +766,12 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 
 To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
-## FAQ
+## FAQs
 
-## How can I restrict vso commands usage for task?
-You can restrict vso commands usage and variables which can be set by task.
-This could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. It is recommended to set it up for new tasks.
+### Q: How can I restrict Visual Studio Codespaces commands usage for task?
+
+You can restrict Visual Studio Codespaces commands usage and variables, which can be set by task.
+This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
 To apply - you may need to add the following statement to your task.json file:
 
 ```json
@@ -770,7 +785,8 @@ To apply - you may need to add the following statement to your task.json file:
 }
 ```
 
-If "restricted" value is specified for "mode" - only the following commands are allowed to be executed by task:
+If "restricted" value is specified for "mode" - you can only execute the following commands by the task:
+
 - `logdetail`
 - `logissue`
 - `complete`
@@ -782,23 +798,23 @@ If "restricted" value is specified for "mode" - only the following commands are 
 - `prependpath`
 - `publish`
 
-"settableVariables" restrictions allow you to pass in an allowlist of variables which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allowlist was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables are allowed to be changed by task.
+"settableVariables" restrictions allow you to pass in an allowlist of variables, which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allowlist was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables can be changed by task.
 
-"commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction is not applied.
+"commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction isn't applied.
 
 Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
 
-### How is cancellation signal being handled by a task?
+### Q: How is cancellation signal being handled by a task?
 
 The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
 
-### How can I remove the task from project collection?
+### Q: How can I remove the task from project collection?
 
 We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
-### How can I migrate task to Node 10?
+### Q: How can I migrate task to Node 10?
 
-You can find guideline [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
+You can find guidelines [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
 
 ## Related articles
 

@@ -2,7 +2,7 @@
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate feature progress rollup by Story Points Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Feature progress rollup sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
 This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. An example is shown in the following image. 
 

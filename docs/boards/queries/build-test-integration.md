@@ -2,19 +2,20 @@
 title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Learn how to track work by creating queries based on build and test integration fields in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
+ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 04/01/2022
 ---
 
 
 # Create a query based on build and test integration fields
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -32,29 +33,20 @@ Most build and test integration fields have a data type of String, PlainText, or
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Supported operators and macros**
-
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
-    **Rich-text (HTML)** 
-
+    **Rich-text (HTML)** and  
+    **Multi-line text strings (PlainText)** 
    :::column-end:::
    :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Multi-line text strings (PlainText)** 
-   :::column-end:::
-   :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
+   `Contains Words`, `Does Not Contain Words`, `Is Empty`, `Is Not Empty`.   
+   The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -62,17 +54,11 @@ Most build and test integration fields have a data type of String, PlainText, or
    **Single text (String)** 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
-   **Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **Project**<sup>2</sup>, valid with the **Team Project** field
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`, `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`  
+   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
-
-
-> [!NOTE]  
-> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-
+ 
 
 ## Useful filters 
 
@@ -202,7 +188,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Parameters<sup> 3</sup>  
+   Parameters 
    :::column-end:::
    :::column span="2":::
    Contains the parameters to use when running a manual test.  
@@ -250,7 +236,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Test Suite Type<sup> 1,4</sup>
+   Test Suite Type<sup> 1</sup>
    :::column-end:::
    :::column span="2":::
    The test suite category. Allowed values are:  
@@ -267,10 +253,9 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 
 
 > [!NOTE]  
-> 1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
+> 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
 > 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
-> 3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
-> 4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
+
 
 ## Other fields
 
@@ -388,7 +373,7 @@ The following fields don't appear on work item forms, but these fields are track
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Test Suite Audit <sup> 1</sup>
+   Test Suite Audit
 
    :::column-end:::
    :::column span="2":::
@@ -404,7 +389,7 @@ The following fields don't appear on work item forms, but these fields are track
 
 :::row:::
    :::column span="1":::
-   Test Suite Type ID <sup>1, 2</sup>
+   Test Suite Type ID <sup>1</sup>
 
    :::column-end:::
    :::column span="2":::
@@ -428,8 +413,7 @@ The following fields don't appear on work item forms, but these fields are track
 
 
 > [!NOTE]  
-> 1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
-> 2.  Do not customize the picklist for these fields. The system accepts only those values listed.
+> 1.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
 
 
@@ -527,17 +511,3 @@ For more information about Actions, see [Automate field assignments based on Sta
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)  
 - [Link and attachment queries](linking-attachments.md)
-
-::: moniker range="tfs-2013"  
-
-### Availability of test work item types 
-
-Test Manager and the test work item types (WITs) use the following fields to track test plans, progress, and results. The availability of the WITs is based on the version of TFS installed on your application-tier. To learn more about using these WITs, see [Create a test plan](../../test/create-a-test-plan.md).
-
-|TFS 2013.0|TFS 2013.2|TFS 2013.3 and later versions|
-|---|---|---|
-|<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
-
-To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
-
-::: moniker-end  

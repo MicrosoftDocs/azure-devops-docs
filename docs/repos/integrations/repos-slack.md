@@ -2,8 +2,10 @@
 title: Azure Repos with Slack
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Slack
-ms.technology: devops-code-git
-ms.topic: conceptual
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
+ms.topic: how-to
+ms.custom: cross-service
 ms.manager: bijuv
 ms.author: Divais
 author: Divais
@@ -13,7 +15,9 @@ ms.date: 10/21/2019
 
 # Azure Repos with Slack
 
-If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installreposapp) to easily monitor your Azure repositories. You 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installreposapp) to easily monitor your Azure Repos repositories. You 
 can set up and manage subscriptions to receive notifications in your channel whenever code is pushed/checked 
 in and whenever a pull request (PR) is created, updated or a merge is attempted. This app supports both Git and 
 Team Foundation Version Control (TFVC) events.
@@ -33,8 +37,7 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group or Team Administrators group. 
-To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions in a Slack channel for repository-related events, you must be a member of the **Project Administrators** group, or a team administrator. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. See [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 

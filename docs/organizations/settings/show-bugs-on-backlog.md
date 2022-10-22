@@ -2,17 +2,18 @@
 title: Make bugs visible on backlogs and boards
 titleSuffix: Azure DevOps 
 description: Choose how to get bugs and user stories to appear on Agile tools in Azure Boards and Azure DevOps.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 04/30/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Show bugs on backlogs and boards  
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. Or, they can schedule bugs to be fixed within a sprint along with other tasks.  
 When you *track bugs as requirements*, they appear on the product Backlogs and Kanban Boards. When you *track bugs as tasks*, the bugs appear on the Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
@@ -57,7 +58,7 @@ You can change the setting from a backlog or board view, or from **Project Setti
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -77,23 +78,6 @@ You can change the setting from a backlog or board view, or from **Project Setti
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-Requires TFS 2013.4 or later version. 
-
-1. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
-
-2. Choose ![gear icon](../../media/icons/gear-icon.png) to open the administration page.  
-
-	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)
-
-3. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
-
-	<img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" />  
-
-4. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
-
-::: moniker-end
 
 ## Nested items  
 
@@ -119,7 +103,7 @@ You can add other work item types&#8212;such as change requests, issues, or impe
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"    
+::: moniker range="tfs-2018"    
 
 You can add other work item types&#8212;such as change requests, issues, or impediments—by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 

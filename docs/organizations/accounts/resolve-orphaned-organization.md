@@ -3,7 +3,7 @@ title: Resolve inactive organization owner and project collection administrator
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign a new owner to an organization when the current owner's inactive.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Assign owner to orphaned organization
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When the Owner and all Project Collection Administrators are inactive, the organization is considered orphaned. An orphaned organization doesn't have an administrator, so there's no way of transferring administrator rights to another user.
 
@@ -25,10 +25,8 @@ For organizations connected to Azure AD, if the Owner and all other Project Coll
 
 ## Prerequisites
 
-- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. It isn't a requirement to be a Project Collection Administrator.
-- The Azure DevOps Administrator role can only claim ownership of organizations in the following instances:
-  - when the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD
-  - when individual users, rather than groups, are assigned to the Azure DevOps Administrator role
+- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. If you are using [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure?msclkid=303229fdc6c111ecaf0f666b2dd9cd6f) then the Azure DevOps Administrator must be of type [Active](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?msclkid=5cdc55f5c6c011eca737e344cbe17b42). It isn't a requirement to be a Project Collection Administrator.
+- The Azure DevOps Administrator role can only claim ownership of organizations when the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD
 
 ### Find your Azure DevOps Administrator
 
@@ -82,7 +80,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
    A notification of the ownership transfer with your provided justification is sent to all Azure DevOps Administrators in your Azure AD.
 
-   You're redirected to the organization overview page. If you want to transfer ownership to another user, see [Change organization Owner](change-organization-ownership.md).
+   You're redirected to the organization overview page. If you want to transfer ownership to another user, see [Change organization owner](change-organization-ownership.md).
 
 ## Related articles
 

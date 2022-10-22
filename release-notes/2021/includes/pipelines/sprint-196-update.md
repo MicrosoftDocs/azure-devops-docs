@@ -1,7 +1,6 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 12/6/2021
 ms.topic: include
 ---
@@ -12,7 +11,7 @@ Azure Pipelines is removing macOS 10.14 Mojave images (`macOS-1014`) from our ho
 
 ### Brownout schedule for Windows 2016 hosted images
 
-Windows 2016 `vs2017-win2016` images are [deprecated](https://docs.microsoft.com/azure/devops/release-notes/2021/pipelines/sprint-194-update#announcing-a-deprecation-schedule-for-windows-2016-hosted-images) since November 15. The complete retirement of this image is planned for March 2022. This is an image used by many, and to help you better identify which pipelines are using the `vs2017-win2016` image, we are doing the following:
+Windows 2016 `vs2017-win2016` images are [deprecated](/azure/devops/release-notes/2021/pipelines/sprint-194-update#announcing-a-deprecation-schedule-for-windows-2016-hosted-images) since November 15. The complete retirement of this image is planned for March 2022. This is an image used by many, and to help you better identify which pipelines are using the `vs2017-win2016` image, we are doing the following:
 
 - Warning messages are displayed on pipeline runs using the `vs2017-win2016` image
 - A [script](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#finding-impacted-pipelines) is available to help you find pipelines using deprecated images, including `vs2017-win2016`

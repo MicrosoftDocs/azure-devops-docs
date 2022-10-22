@@ -3,7 +3,7 @@ title: Configure the Test Results Trend (Advanced) widget
 titleSuffix: Azure DevOps 
 description: Learn how to monitor test trends and gain insights about pipeline test efforts using Analytics Test Results Trend (Advanced) widget in Azure DevOps.
 ms.custom: dashboards   
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.assetid: 
 ms.topic: tutorial 
 ms.author: kaelli
@@ -14,7 +14,7 @@ ms.date: 09/27/2021
 
 # Configure the Test Results Trend (Advanced) widget
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Teams track their test collateral health to ensure effective continuous testing in a pipeline. For example, teams might track:
 - Test pass percentage
@@ -66,7 +66,7 @@ To configure the Test Results Trend widget:
 
 - You must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 -  Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-- Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
+- Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions.
 - To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin.
 - Enable **Pipelines**. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 

@@ -1,18 +1,18 @@
 ---
-title: Configure repros and branches to integrate with work tracking
+title: Configure repos and branches to integrate with work tracking
 titleSuffix: Azure DevOps
 description: Learn how to configure Azure Repos to support integration with Azure Boards and work tracking 
-ms.technology: devops-agile 
+ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 08/02/2021
 ---
  
 # Configure repositories and branches to integrate with work tracking  
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To support traceability of your Git code with work tracking, you can exercise one or more features and configure several options.  
  

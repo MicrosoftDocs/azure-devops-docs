@@ -1,21 +1,21 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 08/17/2021
+ms.date: 02/11/2022
 ---
 
-Now create the service connection:
+## Create the service connection
 
-1. From your project dashboard, select **Project settings** on the bottom left.
+1. From your project dashboard, select **Project settings**. If you don't have a project, [create a project](../../../organizations/projects/create-project.md) now.
 
 2. On the settings page, select **Pipelines** > **Service connections**, select **New service connection**, and then select **Azure Resource Manager**.
 
 3. Select **Service principal (automatic)** and **Next**.
 
-3. The **Add an Azure Resource Manager service connection** dialog box appears. 
+4. The **Add an Azure Resource Manager service connection** dialog box appears. 
    * **Scope** Select **Subscription**.
    * **Subscription** Select your Azure portal subscription.
    * **Resource Group** Select the resource group you created earlier.

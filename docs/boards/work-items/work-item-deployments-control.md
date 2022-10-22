@@ -3,17 +3,17 @@ title: Link work items to deployments and other objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to other objects to improve traceability and simplify navigation to those objects in Azure Boards.
 ms.custom: boards-work-items, contperf-fy22q1  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 11/07/2021
+ms.date: 08/26/2022
 --- 
 
 # Link work items to builds and deployments in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 One of the main ways Azure DevOps supports traceability is by linking objects. Work items link to Git branches, commits, pull requests, builds, and more. Work item forms provide two controls to show and quickly navigate to development objects. The **Deployment** control is described in this article, and the **Development** control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 

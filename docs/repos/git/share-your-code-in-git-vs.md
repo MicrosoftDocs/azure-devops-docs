@@ -1,399 +1,366 @@
 ---
 title: Share your code with Git using Visual Studio 2015
 titleSuffix: Azure Repos
-description: Share code in Git using Visual Studio
+description: Learn how to share your Visual Studio solution with others by hosting your code in a Git repository in Azure Repos.
 ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 toc: show
-ms.topic: quickstart
-ms.date: 08/29/2017
-monikerRange: '>= tfs-2015'
+ms.topic: tutorial
+ms.date: 10/14/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
-
 
 # Share your code with Azure Repos and Visual Studio
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2013-vs-2019](../includes/version-vs-2013-vs-2019.md)]
- 
-   
-This article walks you through the steps to get a Visual Studio solution on your PC into an Azure DevOps Git repo you can share with others. If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
- 
+Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures for the following tasks:
+
+> [!div class="checklist"]
+> * Add a project or solution to a local Git repository
+> * Publish your code to an **Azure Repos** Git repository or GitHub repository
+> * Review your code changes before publishing
+> * Link work items to your commits
+> * Commit and push updates
+> * Pull changes from the main branch of your repository
+
+To clone a GitHub repository, get the clone URL as described in [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository).
+
+For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
-- To view or contribute to code, you must be a member of an Azure DevOps project with **Basic** access or higher.
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-	> [!NOTE]
-	> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
-::: moniker-end
-::: moniker range=">= azure-devops-2019 < azure-devops"
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-- To view code, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-::: moniker-end
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-::: moniker range="< azure-devops-2019"
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-- To view code, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-::: moniker-end
+## Add a project or solution to a new local Git repository
 
+The first step to sharing your Visual Studio solution with others using Git is to create a local Git repo for your code. If it's your first time using Visual Studio to connect to **Azure Repos**, see [Connect to a project from Visual Studio](/azure/devops/organizations/projects/connect-to-projects#connect-from-visual-studio-or-team-explorer) for details.
 
-##  Create a local Git repo for your project
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
+1. Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer**, and then selecting **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
 
-Create a new local Git repo for your project by selecting ![Add to Source Control](media/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar in the lower right hand corner of Visual Studio.
-This will create a new repo in the folder the solution is in and commit your code into that repo. You can also right-click your solution in **Solution Explorer** and choose **Add Solution to Source Control**.
+   Or, choose **Git > Create Git Repository** from the menu bar to launch the **Create a Git repository** window. If you don't see this option, then your code is already in a Git repo.
 
-> [!NOTE]   
-> The ![Add to Source Control](media/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) button in the status bar was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
-> 
-> If you are in a previous version of Visual Studio, create a local Git repo for your project by selecting the **Create new Git repository** option in the **New Project** window when you create a new project. You can create a local Git repo for an existing solution by right-clicking your project in the **Solution Explorer** and selecting **Add Solution to Source Control**.
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
 
-Once you have a local repo, select items in the status bar to quickly navigate between Git tasks in Team Explorer.
+2. This step only applies to the Visual Studio Git version control experience: in the **Create a Git repository** window, choose **Local only**, verify the local path is correct, and then choose **Create**.
 
-![Visual Studio Git status bar](media/share-your-code-in-git-vs-2017/vs-status-bar.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-window-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-git-repository-window-expanded.png":::
 
-- ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) shows the number of unpublished commits in your local branch. Selecting this opens the **Synchronization** view in Team Explorer.
-- ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-pending-changes.png) shows the number of uncommitted file changes. Selecting this opens the **Changes** view in Team Explorer.
-- ![Visual Studio Repo Status Bar icon](media/share-your-code-in-git-vs-2017/vs-current-repo.png) shows the current Git repo. Selecting this opens the **Connect** view in Team Explorer.
-- ![Visual Studio branch status bar icon](media/share-your-code-in-git-vs-2017/vs-branch-picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.   
+You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and Git resources.
 
->[!NOTE]
->If you don't see any icons such as ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) or ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-pending-changes.png), ensure that you have a project open that is part of a Git repo. If your project is brand new or not yet added to a repo, you can add it to one by selecting ![Add to Source Control](media/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar, or by right-clicking your solution in **Solution Explorer** and choosing **Add Solution to Source Control**.
-#### [Visual Studio 2015.2](#tab/visual-studio-2015)
+:::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
-Create a new local Git repo for your project by selecting ![Publish to Git from the Visual Studio Status bar](media/share-your-code-in-git-vs/publish_status_bar.png) on the status bar in the lower right hand corner of Visual Studio.
-This will create a new repo in the folder the solution is in and commit your code into that repo.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Once you have a local repo, select items in the status bar to quickly navigate between Git tasks in Team Explorer.
+1. Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer**, and then selecting **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
 
-![Visual Studio Git status bar](media/share-your-code-in-git-vs/vs-status-bar.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
 
-- ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs/vs_unpublished_changes.png) shows the number of unpublished commits in your local branch. Selecting this will open the **Sync** view in Team Explorer.
-- ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs/vs_pending_changes.png) shows the number of uncommitted file changes. Selecting this will open the **Changes** view in Team Explorer.
-- ![Visual Studio Repo Status Bar icon](media/share-your-code-in-git-vs/vs_current_repo.png) shows the current Git repo. Selecting this will open the **Connect** view in Team Explorer.
-- ![Visual Studio branch status bar icon](media/share-your-code-in-git-vs/vs_branch_picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.   
- 
+   Or, choose **Git > Create Git Repository** from the menu bar to launch the **Create a Git repository** window. If you don't see this option, then your code is already in a Git repo.
 
-#### [Visual Studio 2013](#tab/visual-studio-2013) 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
 
-[!INCLUDE [temp](includes/open-team-project-in-vs.md)]
+2. This step only applies to the Visual Studio Git version control experience: in the **Create a Git repository** window, choose **Local only**, verify the local path is correct, and then choose **Create**.
 
-### Clone your repository
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/create-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/create-git-repository-window-lrg.png":::
 
-1. Clone the repository onto your dev machine.
+You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and Git resources.
 
-   ![Choose Clone Repository](media/share-your-code-in-git-vs/IC684063.png)
+:::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
-2. Store the repository locally.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-   ![Choose Clone to store the repository locally](media/share-your-code-in-git-vs/IC682931.png)
+These tasks are not supported through Team Explorer.
 
-### Create a new app
+#### [Git Command Line](#tab/command-line)
 
-If you don't already have an app in the repo, create one.
+1. [Download and install Git](http://git-scm.com/download). When prompted during the install, enable [Git Credential Manager](set-up-credential-managers.md).
 
-1. Create a new project.
+1. At the command prompt, go to the root folder that contains your Visual Studio solution and run the following commands. These commands create a local Git repo in the Visual Studio solution folder and commit your code into that repo.
 
-   ![New solution from team explorer](media/share-your-code-in-git-vs/team-explorer-git-new-solution.png)
+    > [!div class="tabbedCodeSnippets"]
+    ```console
+    > git init
+    > git commit -am "first commit"
+    > git branch -m main
+    ```
 
-2. Choose a template and add the new code project to version control.
+   Your local Git repo now contains both your Visual Studio solution and Git resources.
 
-   ![Choose a template](media/create-your-app-vs/IC687148.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/git-cli/file-explorer-git-solution-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer.":::
 
-### Confirm your settings and add the app
+---
 
-1. On the changes page (Keyboard: Ctrl + 0, G), if you haven't already done it,
-   confirm your user name and email address.
+## Publish your code
 
-   ![Configure settings from the changes page](media/share-your-code-in-git-vs/confirm-git-settings-from-changes-page.png)
+You can share your work with others by publishing your local Git repo to an **Azure Repos** Git repo.
 
-   ![Confirm the default settings](media/share-your-code-in-git-vs/git-initial-settings-with-default-values.png)
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-2. Add a comment and commit your app to version control.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-   ![Add app to version control on Changes page](media/share-your-code-in-git-vs/team-explorer-git-changes-add-app.png)
+1. Connect to an Azure DevOps repo by right-clicking the solution name in **Solution Explorer**, and then selecting **Push to Git service** to launch the **Create a Git repository** window.
 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-inline.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Solution Explorer context menu in Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/push-to-git-service-expanded.png":::
 
-***
+   Or, choose **Git > Push to Git service** from the menu bar to launch the **Create a Git repository** window.
 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-menu.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2022 context menu." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-menu-lrg.png":::
 
+1. In the **Create a Git repository** dialog, select **GitHub**. Enter any required values under **Create a new GitHub repository**. Then select **Push**.
 
-## Publish your code to Azure Repos
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2022/create-new-git-repository-inline.png" border="true" alt-text="Screenshot of the 'Create a Git repository' dialog for Visual Studio 2022." lightbox="media/share-your-code-in-git-vs/visual-studio-2022/create-new-git-repository-expanded.png":::
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
+   You can verify that the repo is created by going to GitHub and searching for your repo name in your account.
 
-1. Navigate to the **Push** view in Team Explorer by choosing the ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) icon in the status bar. You can also select **Sync** from the **Home** view in Team Explorer.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-2. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio Team Services**.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-   ![Publish your code from VS directly into Azure Repos](media/share-your-code-in-git-vs-2017/publish-git-repo.png)
+1. Connect to an Azure DevOps repo by right-clicking the solution name in **Solution Explorer**, and then selecting **Push to Git service** to launch the **Create a Git repository** window.
 
-3. Verify your email and select your account in the **Team Services Domain** drop-down. 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-solution-explorer.png" border="true" alt-text="Screenshot of the 'Push to Git service' menu option in the Git menu on the menu bar in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-solution-explorer-lrg.png":::
 
-4. Enter your repository name and select **Publish repository**. 
+   Or, choose **Git > Push to Git service** from the menu bar to launch the **Create a Git repository** window.
 
-   ![Publish your VS project to a new Git repo in Azure Repos](media/share-your-code-in-git-vs-2017/vsts-publish-repo.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-menu.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2019 context menu." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-menu-lrg.png":::
 
-   This creates a new project in your account with the same name as the repository. To create the repo in an existing project, click **Advanced** next to **Repository name** and select a project.
+1. Open a browser and navigate to your Azure DevOps project by using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 
-5. Your code is now in a Git repo in Azure Repos. You can view your code on the web by selecting **See it on the web** .
-  
-   ![View your Azure Repos/TFS Git repo on the Web](media/share-your-code-in-git-vs-2017/vsts-view-on-web.png)
+1. In your Azure DevOps project, [Create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
 
-#### [Visual Studio 2015.2](#tab/visual-studio-2015) 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/clone-repository-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/common/clone-repository-popup-lrg.png":::
 
-1. In the **Sync** view in Team Explorer, select the **Publish Git Repo** button under **Publish to Azure Repos**.
+1. In the **Create a Git repository** window, choose **Existing remote** and enter the repo clone URL from the previous step, and then choose **Push**. For more information on how to create a new Azure DevOps repo, see [Create a new Git repo in your project](/azure/devops/repos/git/create-new-repo?view=azure-devops&preserve-view=true).
 
-   ![Publish your code from VS directly into Azure Repos](media/share-your-code-in-git-vs/vsts_get_started_te.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/create-git-repository-window-remote.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window, with the URL of an empty Azure repo, in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/create-git-repository-window-remote-lrg.png":::
 
-2. Verify your email and select your account in the **Account Url** drop down. 
+1. The **Git Changes** window shows a confirmation message that your code is now in an Azure DevOps repo.
 
-3. Enter your repository name and select **Publish Repository**. 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-changes.png" border="true" alt-text="Screenshot of the 'Git Changes' window, with a confirmation message that your code is in 'Azure DevOps' repo, in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/git-experience/push-to-git-service-git-changes-lrg.png":::
 
-   ![Publish your VS project to a new Git repo in Azure Repos](media/share-your-code-in-git-vs/vsts_publish_repo.png)
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
-   This creates a new Project in your account with the same name as the repository. To create the repo in an existing Project, click **Advanced** 
-   next to **Repository name** and select a project.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-	> [!NOTE]
-	> The **Publish** link in the status bar ( ![Publish to Git from the Visual Studio Status bar](media/share-your-code-in-git-vs/publish_status_bar.png) ) was added in Visual Studio 2015 Update 2 and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Publish** button in the status bar, but the information from your local repo instead.  
-	> 
-	> If you are in a previous version of Visual Studio, create a local Git repo for your project by selecting the **Create new Git repository** option in the **New Project** window when you create a new project. You can create a local Git repo for an existing solution by right-clicking your project in the Solution Explorer and selecting **Add Solution to Source Control**.
- 
-4. Your code is now in a Git repo in Azure Repos. You can view your code on the web by selecting **See it on the web**.
-  
-  ![View your Azure Repos/TFS Git repo on the Web](media/share-your-code-in-git-vs/vsts_view_on_web.png)
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for publishing your code.
 
+> [!NOTE]
+> One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
-#### [Visual Studio 2013](#tab/visual-studio-2013) 
+1. In the **Push to Azure Dev Ops Services** section of the **Synchronization** view in **Team Explorer**, select the **Publish Git Repo** button.
 
-When the code you've written on your dev machine is ready, you can push your changes from your local Git repository to the project. 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-team-explorer.png" border="true" alt-text="Screenshot of the 'Push' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-team-explorer-lrg.png":::
 
-1. From the changes page (Keyboard: Ctrl + 0, G), make sure you've committed your changes.
+1. Choose your Azure DevOps organization and repo name, and then select **Publish Repository**.
 
-   ![Committing from the Changes page](media/share-your-code-in-git-vs/IC682975.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the organization and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
 
-2. Go to the commits page (Keyboard: Ctrl + 0, C).
+   This step creates a new project with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.<br><br>
 
-   ![Go to the commits page.](media/share-your-code-in-git-vs/IC682976.png)
+1. Your code is now in a **Azure Repos** Git repository. You can view your code on the web by selecting **See it on the web**.
 
-3. Push your changes.
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/view-git-repo-on-web.png" border="true" alt-text="Screenshot of the 'See it on the web' link in the 'Home' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/view-git-repo-on-web-lrg.png":::
 
-   ![Push changes](media/share-your-code-in-git-vs/IC682977.png)
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
-***
+#### [Git Command Line](#tab/command-line)
 
-## Review commit changes before publishing
+1. Open a browser and navigate to your Azure DevOps project using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
+1. In your Azure DevOps project, [create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
 
-- To see what's changed in a commit, go to the **Synchronization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
-You can then right-click on any file modified by the commit and select **Compare with Previous...** to view the changes compared to the previous 
-version of the file.
+    :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/common/clone-repository-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site.":::
 
-	![Choose Compare with Previous from the context menu](media/share-your-code-in-git-vs-2017/compare-with-previous.png)
+1. To publish your local commit to **Azure repos**, run the following commands at the command prompt in your local git repo folder, using the clone URL from the previous step.
 
+    > [!div class="tabbedCodeSnippets"]
+    ```console
+    > git remote add origin <clone URL>
+    > git push -u origin main
+    ```
 
-#### [Visual Studio 2015.2](#tab/visual-studio-2015)
- 
-- To see what's changed in a commit, go to the **Synchronization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
-You can then right-click on any file modified by the commit and select **Compare with Previous...** to view the changes compared to the previous 
-version of the file.
+   Your code is now published to the `main` branch of an **Azure Repos** Git repository.
+    
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
-	![Choose Compare with Previous from the context menu](media/share-your-code-in-git-vs/vs_compare_with_previous.png)
+---
 
+## Review commit changes
 
-#### [Visual Studio 2013](#tab/visual-studio-2013) 
+It's good practice to review the code changes in your commit before publishing. Visual Studio provides a diff view that helps you see all the changes you've made since the previous commit.
 
-- To see what you've changed, compare your changes with the last commit.
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-	![Choose Compare with Unmodified from the context menu](media/share-your-code-in-git-vs/IC685270.png)
+[!INCLUDE [Review commit changes](includes/share-code-review-commit-changes.md)]
 
-- To review information about the commits from your team before you pull them:
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-	![Choose View Commit Details](media/share-your-code-in-git-vs/IC682940.png)
+[!INCLUDE [Review commit changes](includes/share-code-review-commit-changes.md)]
 
-- To get details on the changes to each file.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-	![Choose Compare with Previous from the context menu](media/share-your-code-in-git-vs/IC685291.png)
+1. To see what's changed in a commit, go to the **Synchronization** page in **Team Explorer**, right-click on any commit, and then choose **View Commit Details** to open the **Git Details** window.
 
-***
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/commit-sync-team-explorer.png" border="true" alt-text="Screenshot of a commit in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/commit-sync-team-explorer-lrg.png":::
+
+1. In the **Commit Details** window, you can right-click on any file and select **Compare with Previous** to view the file changes made by the commit.
+
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/git-details-window.png" border="true" alt-text="Screenshot of the 'Compare with Previous' option in the 'Commit Details' window in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/git-details-window-lrg.png":::
+
+#### [Git Command Line](#tab/command-line)
+
+To show a diff view of the last commit in your current branch, run the following command at the command prompt in your local git repo folder.
+
+> [!div class="tabbedCodeSnippets"]
+```console
+> git show
+```
+
+---
 
 <a id="link-work-items" />
 
-
 ## Link work items to your commits
 
+As you develop your software, you can capture which commits support the completion of work items like Azure DevOps tasks or bug fixes. The audit trail of work items linked to commits lets your team understand how tasks and bugs were resolved.
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
+> [!NOTE]
+> The _#ID_ syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
-- You can include work items in your commits through **Related Work Items** in the **Changes** page in Team Explorer. 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-	![Adding work items to changes](media/share-your-code-in-git-vs/vs_linked_work_items.png)
+[!INCLUDE [Link work items to your commits](includes/share-code-link-work-items.md)]
 
-	Also, you can include work items in commits by adding #_ID_ into the commit message. For example, "Fixing bug #23 in the reporting tools" would link work item 23 to the commit. The work item is linked when the commit is pushed to Azure Repos.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-#### [Visual Studio 2015.2](#tab/visual-studio-2015)
+[!INCLUDE [Link work items to your commits](includes/share-code-link-work-items.md)]
 
-- You can include work items in your commits through **Related Work Items** in the **Changes** page in Team Explorer. 
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-	![Adding work items to changes](media/share-your-code-in-git-vs/vs_linked_work_items.png)
+You can include work items in your commits through **Related Work Items** in the **Changes** view of **Team Explorer**.
 
-	Also, you can include work items in commits by adding #_ID_ into the commit message. For example, "Fixing bug #23 in the reporting tools" would link work item 23 to the commit. The work item is linked when the commit is pushed to Azure Repos.
+:::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/add-related-work-item-team-explorer.png" border="true" alt-text="Screenshot of a work item linked to a commit in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/add-related-work-item-team-explorer-lrg.png":::
 
-#### [Visual Studio 2013](#tab/visual-studio-2013) 
+You can also link work items to commits by adding _#ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**.
 
-- From the changes page you can run a query, and then drag a work item into the list of related work items.
+#### [Git Command Line](#tab/command-line)
 
-	![Associating a work item on the Changes page](media/share-your-code-in-git-vs/IC685315.png)
+You can link work items to commits by adding _#ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**. To test, make some code changes and run the following commands at the command prompt in your local git repo folder.
 
-***
+> [!div class="tabbedCodeSnippets"]
+```console
+> git commit -am "Fix bug #<work item ID>"
+> git push
+```
 
-## Commit and push updates
+---
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
+## Push commit changes
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-1. As you write your code, your changes are automatically tracked by Visual Studio. 
-   You can [commit](commits.md) changes to your local Git repository by selecting the pending changes icon ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-pending-changes.png) from the status bar.
+[!INCLUDE [Push commit changes](includes/share-code-push-commit-changes.md)]
 
-2. On the **Changes** view in Team Explorer, add a message describing your update and commit your changes.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   ![Add a comment and choose Commit](media/share-your-code-in-git-vs-2017/vs-commit-changes.png)
+[!INCLUDE [Push commit changes](includes/share-code-push-commit-changes.md)]
 
-3. Select the unpublished changes status bar icon ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) (or select **Sync** from the **Home** view in Team Explorer). Select **Push** to 
-   update your code in Azure DevOps Services/TFS.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-   ![Push your changes](media/share-your-code-in-git-vs-2017/vs-push-commits.png)
+As you write your code, your changes are automatically tracked by Visual Studio. When you're satisfied with your changes, you can save them in Git using a commit, and then push your commit to **Azure Repos**.
 
-#### [Visual Studio 2015.2](#tab/visual-studio-2015)
+1. Open the **Changes** view of **Team Explorer** by selecting the **Home** button and choosing **Changes**. Or, select the pending changes icon ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs/visual-studio-2019/common/pending-changes-icon.png) on the status bar.
 
-1. As you write your code, your changes are automatically tracked by Visual Studio. 
-   You can [commit](commits.md) changes to your local Git repository by selecting the pending changes icon ( ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs/vs_pending_changes.png) ) from the status bar.
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/changes.png" border="true" alt-text="Screenshot of the Changes option in Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/changes-lrg.png":::
 
-2. On the **Changes** view in Team Explorer, add a message describing your update and commit your changes.
+1. In the **Git Changes** window, enter a message that describes the changes, and then choose **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section in the **Git Changes** window.
 
-   ![Add a comment and choose Commit](media/share-your-code-in-git-vs/vs_commit_te.png)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/commit-changes.png" border="true" alt-text="Screenshot of the 'Screenshot of commit message text and 'Commit All' button in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/commit-changes-lrg.png":::
 
-3. Select the unpublished changes status bar icon ( ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs/vs_unpublished_changes.png) ) or the **Sync** view in Team Explorer. Select **Push** to 
-   update your code in Azure DevOps Services/TFS.
+1. To push one or more commits to **Azure Repos**, select **Home** and then choose **Sync** to open the **Synchronization** view in **Team Explorer**. Or, select the unpublished changes status bar icon (![Visual Studio unpublished changes status bar icon](media/share-your-code-in-git-vs/visual-studio-2019/common/unpublished-changes-icon.png) on the status bar.
 
-   ![Push your changes](media/vspush.gif)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/sync-lrg.png":::
 
+1. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
 
-#### [Visual Studio 2013](#tab/visual-studio-2013)
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/push-commit.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/push-commit-lrg.png":::
 
-With your code project stored in a local Git repository on your dev machine, 
-you can commit as early and as often as you like.
+#### [Git Command Line](#tab/command-line)
 
-1. As you write your code, your changes are automatically tracked by Visual Studio. 
-   You can commit one or more specific changes to your local repository from Solution Explorer
-   (Keyboard: Ctrl + Alt + L).
+To publish new commits from your current local branch to the corresponding branch in the **Azure Repos** Git repo, run the following command at the command prompt in your local git repo folder.
 
-   ![When your changes are ready, select Commit](media/share-your-code-in-git-vs/IC683030.png)
+> [!div class="tabbedCodeSnippets"]
+```console
+> git push
+```
 
-2. On the Changes page, add a comment and then commit your changes.
+---
 
-   ![Add a comment and choose Commit](media/share-your-code-in-git-vs/IC683031.png)
+## Pull changes
 
-   These changes are now committed.
+You can keep your local branches in sync with their remote counterparts by pulling commits created by others. While you're working on your feature branch, it's a good idea to periodically switch to your `main` branch and pull new commits to keep it current with the remote `main` branch.
 
-   ![Your changes are now committed](media/share-your-code-in-git-vs/IC683032.png)
+> [!NOTE]
+> In Visual Studio, **Fetch** and **Pull** links can be found in different views and in the Git menu on the menu bar. Those links all do the same thing&mdash;fetch or pull from the remote repo to the current branch of the local repo.
 
-1. When the code you've written on your dev machine is ready, you can push your changes from your local Git repository to the project. From the changes page (Keyboard: Ctrl + 0, G), make sure you've committed your changes.
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-   ![Committing from the Changes page](media/share-your-code-in-git-vs/IC682975.png)
+[!INCLUDE [Pull changes](includes/share-code-pull-changes.md)]
 
-2. Go to the commits page (Keyboard: Ctrl + 0, C).
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-   ![Go to the commits page.](media/share-your-code-in-git-vs/IC682976.png)
+[!INCLUDE [Pull changes](includes/share-code-pull-changes.md)]
 
-3. Push your changes.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-   ![Push changes](media/share-your-code-in-git-vs/IC682977.png)
+1. In **Team Explorer**, select **Home** and choose **Sync** to open the **Synchronization** view.
 
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/sync-lrg.png":::
 
-***
+1. In the **Synchronization** view, you can preview the latest changes on the remote branch by using the **Fetch** link. **Fetch** downloads remote commits that aren't in your local branch, but doesn't merge them. Fetched commits show up in the **Incoming Commits** section of the **Synchronization** view. You can double-click a commit to view its file changes.
 
-## Pull changes from your team
+   :::image type="content" source="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/incoming-commits.png" border="true" alt-text="Screenshot of the Pull link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-vs/visual-studio-2019/team-explorer/incoming-commits-lrg.png":::
 
+1. Choose **Pull** to merge the fetched remote commits into your local repo. **Pull** performs a fetch and then merges the downloaded commits into your local branch.
 
-#### [Visual Studio 2017](#tab/visual-studio-2017)
+#### [Git Command Line](#tab/command-line)
 
-Sync your local repo with changes from your team as they make updates.
+To download new commits from the **Azure Repos** Git repo without merging them into your local repo, run the following command at the command prompt in your local git repo folder.
 
-1. From the **Synchronization** view in Team Explorer, fetch the [commits](commits.md) that your team has made. 
-   Double-click a commit to view its file changes.
+> [!div class="tabbedCodeSnippets"]
+```console
+> git fetch
+```
 
-   ![Choose Fetch to see any changes that your team has made](media/share-your-code-in-git-vs-2017/fetch-commits.png)
+To download _and_ merge new commits from the **Azure Repos** Git repo into the current branch of your local repo, run the following command.
 
-2. Select **Sync** to merge the fetched commits into your local repo and then [push](pushing.md) any unpublished changes to Azure Repos.
+> [!div class="tabbedCodeSnippets"]
+```console
+> git pull
+```
 
-   ![Choose Pull to get these commits locally](media/share-your-code-in-git-vs-2017/sync-commits.png)
+---
 
-3. The changes from your team are now in your local repo and visible in Visual Studio.
- 
-#### [Visual Studio 2015.2](#tab/visual-studio-2015)
-
-Sync your local repo with changes from your team as they make updates.
-
-1. From the **Sync** view in Team Explorer, fetch the [commits](commits.md) that your team has made. 
-   Double-click a commit to view its file changes.
-
-   ![Choose Fetch to see any changes that your team has made](media/share-your-code-in-git-vs/vs_fetch_commits.png)
-
-2. Select **Sync** to merge the fetched commits into your local repo and then [push](pushing.md) any unpublished changes to Azure Repos.
-
-   ![Choose Pull to get these commits locally](media/share-your-code-in-git-vs/vs_sync_commits.png)
-
-3. The changes from your team are now in your local repo and visible in Visual Studio.
-
-   ![The changes are now in your local repo](media/share-your-code-in-git-vs/vs_pull_complete.png)
-
-#### [Visual Studio 2013](#tab/visual-studio-2013) 
-
-Pull changes on a regular basis to ensure your code integrates well with the latest code from the team.
-
-1. From the commits page (Keyboard: Ctrl + 0, O), fetch the commits to see any changes that your team has made.
-
-   ![Choose Fetch to see any changes that your team has made](media/share-your-code-in-git-vs/IC682939.png)
-
-2. When you're ready, pull these commits into your local repository.
-
-   ![Choose Pull to get these commits locally](media/share-your-code-in-git-vs/IC682942.png)
-
-3. The changes from your team are now integrated in your local repository.
-
-   ![The changes are now integrated](media/share-your-code-in-git-vs/IC682943.png)
-
-***
-
-## Troubleshooting
+## FAQs
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-
 [!INCLUDE [temp](includes/open-team-project-in-vs-qa.md)]
 
-[!INCLUDE [temp](includes/qa-vs-launch-fail.md)]
+#### Q: Can I use the Git command prompt with Visual Studio?
 
-
-### Can I use the Git command prompt with Visual Studio?
-
-**A:** Visual Studio's Team Explorer and the Git command line work great together. Changes to your repos made in either tool will be reflected in the other. 
+**A:** Visual Studio's Team Explorer and the Git command-line work great together. Changes to your repos made in either tool will be reflected in the other. 
 Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your Azure DevOps Services/TFS repos.
 
 See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
@@ -403,11 +370,9 @@ See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](c
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
+> [Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md)
+> [Azure Repos Git tutorial](gitworkflow.md)
 
 ## Related articles
 
 - [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
-- [Git workflow](gitquickstart.md)
-
-

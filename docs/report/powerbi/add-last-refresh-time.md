@@ -2,16 +2,17 @@
 title: Add last refresh date to a Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to add a field showing the last refresh date to an existing Power BI report based on Analytics.  
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
+monikerRange: '>= azure-devops-2019'
 ms.date: 10/01/2021
 ---
 
 # Create a column in Power BI for last refresh date
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 After [creating a report](create-quick-report.md) and [publishing it to Power BI](publish-power-bi-desktop-to-power-bi.md), one of the most common requests is a way to determine the last time the data was refreshed.  
 

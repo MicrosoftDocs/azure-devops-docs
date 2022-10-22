@@ -6,13 +6,13 @@ ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.author: jukullam
 author: juliakm
 ms.date: 08/17/2021
-ms.type: reference
-monikerRange: '>= tfs-2015'
+ms.topic: overview
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to Azure
 
-[!INCLUDE [version-tfs-2015-rtm](includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
  Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you do not have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CD process with most Azure services. 
 
@@ -54,11 +54,11 @@ If you're just getting started, we recommend you review and get started with the
       [DevOps solutions on Azure](https://azure.microsoft.com/solutions/devops/#products)
    :::column-end::: 
    :::column span="3":::
-      Use end-to-end solutions on Azure to implement DevOps practices throughout application planning, development, delivery, and operations. Apply the right combination of DevOps technologies, culture, and processes to enable continual software delivery and better value for customers. Get started with the following learn modules: 
-      - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)  
-      - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)  
-      - [Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines](/learn/modules/cna-deploy-maintain/)
-      - [Load test Azure web apps by using Azure DevOps](/learn/modules/load-test-web-app-azure-devops/)
+      Use end-to-end solutions on Azure to implement DevOps practices throughout application planning, development, delivery, and operations. Apply the right combination of DevOps technologies, culture, and processes to enable continual software delivery and better value for customers. Get started with the following Learn modules: 
+      - [Deploy applications with Azure DevOps](/training/paths/deploy-applications-with-azure-devops/)  
+      - [Build applications with Azure DevOps](/training/paths/build-applications-with-azure-devops/)  
+      - [Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines](/training/modules/cna-deploy-maintain/)
+      - [Load test Azure web apps by using Azure DevOps](/training/modules/load-test-web-app-azure-devops/)
    :::column-end:::
 :::row-end:::
 ---
@@ -82,8 +82,7 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column span="3":::
        An HTTP-based service for hosting web applications, REST APIs, and mobile back ends; the Azure App Service employs Azure Pipelines to deliver CI/CD. To learn more, see:  
       - [App Service overview](/azure/app-service/overview)
-      - [Deploy an Azure Web App](targets/webapp.md)
-      - [Deploy a web app to Azure App Service (Classic)](apps/cd/deploy-webdeploy-webapps.md)
+      - [Deploy an Azure Web App](/azure/app-service/deploy-azure-pipelines)
       - [Use CI/CD to deploy a Python web app to Azure App Service on Linux](ecosystems/python-webapp.md)
       - [Continuously deploy from a Jenkins build](release/integrate-jenkins-pipelines-cicd.md)
       - [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md)
@@ -144,7 +143,7 @@ Follow the links provided in the following table to learn more about the Azure s
       - [Deploy to Azure SQL Database](targets/azure-sqldb.md)
       - [Azure SQL Database Deployment task](tasks/deploy/sql-azure-dacpac-deployment.md)
       - [Azure Database for MySQL Deployment task](tasks/deploy/azure-mysql-deployment.md)
-      - [Quickstart: Deploy to Azure MySQL](targets/azure-mysql.md)
+      - [Quickstart: Deploy to Azure MySQL](/azure/mysql/single-server/azure-pipelines-mysql-deploy)
       - [Set up a CI/CD pipeline with the Azure Cosmos DB Emulator build task in Azure DevOps](/azure/cosmos-db/tutorial-setup-ci-cd)
    :::column-end:::
 :::row-end:::
@@ -159,7 +158,7 @@ Follow the links provided in the following table to learn more about the Azure s
       Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. Create an Azure Pipeline that builds and deploys a machine learning model as a web service and to automate the machine learning lifecycle. To learn more, see the following resources: 
       - [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning; Configure Azure Databricks and Azure Data Factory](apps/cd/azure/build-data-pipeline.md#configure-azure-databricks-and-azure-data-factory)
       - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks)
-      - [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](targets/azure-machine-learning.md).
+      - [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](/azure/machine-learning/how-to-devops-machine-learning).
    :::column-end:::
 :::row-end:::
 --- 
@@ -304,9 +303,8 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column-end::: 
    :::column span="3":::
       Use publish profile to deploy Azure WebApps for Windows from the Deployment Center. To learn more, see the following articles:   
-     - [Deploy an Azure Web App](./targets/webapp.md)
-     - [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md)
-     - [Deploy to Azure App Service using Visual Studio Code](targets/deploy-to-azure-vscode.md)
+     - [Deploy an Azure Web App](/azure/app-service/deploy-azure-pipelines)
+     - [Deploy an Azure Web App Container](apps/cd/deploy-docker-webapp.md)
      - [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md)
      - [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md)
      - [Azure App Service Settings task](tasks/deploy/azure-app-service-settings.md) 
@@ -321,7 +319,7 @@ Follow the links provided in the following table to learn more about the Azure s
 
 | Service                                             | Description                                                                                                                                           | Resources                                                    |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Azure Web App Service / App Service for Containers  | A managed service for hosting web apps, mobile app back ends, RESTful APIs, or automated business processes                                           | [Deploy an Azure Web App](./targets/webapp.md), [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md), [Deploy to Azure App Service using Visual Studio Code](targets/deploy-to-azure-vscode.md), [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md), [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md), [Azure App Service Settings task](tasks/deploy/azure-app-service-settings.md) |
+| Azure Web App Service / App Service for Containers  | A managed service for hosting web apps, mobile app back ends, RESTful APIs, or automated business processes                                           | [Deploy an Azure Web App](/azure/app-service/deploy-azure-pipelines), [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md), [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md), [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md), [Azure App Service Settings task](tasks/deploy/azure-app-service-settings.md) |
 | Azure Static Web Apps                               | Automatically builds and deploys full stack web apps to Azure from a code repository                                                                  | [Tutorial: Publish Azure Static Web Apps with Azure DevOps](/azure/static-web-apps/publish-devops)                                                           |
 | Azure Functions                                     | Serverless solution for hosting applications                                                                                                          |  [Deploy an Azure Function](targets/azure-functions.md), [Azure Function App task](tasks/deploy/azure-function-app.md), [Azure Function App for Containers task](tasks/deploy/azure-rm-functionapp-containers.md) |
 | Azure Databases (SQL, MySQL)              | Managed database solutions | [Deploy to Azure SQL Database](targets/azure-sqldb.md), [Azure SQL Database Deployment task](tasks/deploy/sql-azure-dacpac-deployment.md), [Azure Database for MySQL Deployment task](tasks/deploy/azure-mysql-deployment.md), [Quickstart: Deploy to Azure MySQL](targets/azure-mysql.md)
@@ -329,7 +327,7 @@ Follow the links provided in the following table to learn more about the Azure s
 | Azure App Configuration   | Service to centrally manage application settings and feature flags | [Push settings to App Configuration with Azure Pipelines](/azure/azure-app-configuration/push-kv-devops-pipeline), [Pull settings to App Configuration with Azure Pipelines](/azure/azure-app-configuration/pull-key-value-devops-pipeline)                                                            |
 | Azure Blob Storage                                  | Object storage solution for storing large amounts of unstructured data in the cloud  |     [Azure File Copy task](tasks/deploy/azure-file-copy.md)                                                         | 
 | Azure Kubernetes Service                            | Managed Kubernetes service for running containerized applications |  [Build and deploy to Azure Kubernetes Service](ecosystems/kubernetes/aks-template.md)  |
-| Azure Machine Learning                              | Cloud-based environment for working with machine learning models |  [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](targets/azure-machine-learning.md)                                                            |
+| Azure Machine Learning                              | Cloud-based environment for working with machine learning models |  [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](/azure/machine-learning/how-to-devops-machine-learning.md)                                                            |
 | Azure Resource Manager                              | Deployment and management service for Azure. Azure Resource Manager templates (ARM templates) are a way of quickly deploying infrastructure as code.  |    [Integrate ARM templates with Azure Pipelines](/azure/azure-resource-manager/templates/add-template-to-azure-pipelines), [Quickstart: Use an ARM template to deploy a Linux web app to Azure](apps/cd/azure/deploy-arm-template.md) |
 | Azure Container Registry                            | Managed, private Docker registry service   |  [Build and push Docker images to Azure Container Registry](ecosystems/containers/acr-template.md)    |
 | Azure Service Fabric                                | Distributed systems platform that can run in many environments, including Azure or on premises   |    [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts), [Service Fabric Application Deployment task](tasks/deploy/service-fabric-deploy.md)                                                         |

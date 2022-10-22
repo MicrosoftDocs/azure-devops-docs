@@ -3,12 +3,15 @@ title: Manage branching strategies in TFVC for DevOps
 description: Learn to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.topic: conceptual
-ms.technology: devops-code-tfvc
-ms.date: 04/25/2018
-monikerRange: '>= tfs-2015'
+ms.service: azure-devops-repos
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Choose a branching strategies with a DevOps mindset  
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Azure DevOps? You probably have a few questions, such as:
 
@@ -113,12 +116,11 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 - Avoid using **cherry-picking** to get your code to production
 - Do not attempt to solve **people** or **process** problems with tools
 
-## Reference information
+## Related articles 
 
 - [Continuous Integration](/devops/develop/what-is-continuous-integration)
-- [Team Foundation Version Control (TFVC)](./what-is-tfvc.md)
-- [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)
-- [What is DevOps - Sticker](https://www.stickermule.com/marketplace/9107-devops-donovan-brown)
+- [Team Foundation Version Control (TFVC)](what-is-tfvc.md)
+- [What is DevOps?](/devops/what-is-devops)
 
 <!--- 
 > Authors: Sergio A Romero | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)

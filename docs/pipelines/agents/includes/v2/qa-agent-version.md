@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.author: sdanie
 ms.manager: mijacobs
 author: steved0x

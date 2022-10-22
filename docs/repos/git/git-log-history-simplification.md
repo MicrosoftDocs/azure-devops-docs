@@ -1,17 +1,18 @@
 ---
 title: Understand Git history simplification
-description: Learn ho git log history simplification works
+description: Learn how git log history simplification works
 ms.topic: conceptual
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
 ms.date: 09/28/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Understand Git history simplification
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
  
 Git history simplification can be a confusing beast. 99% of the time you won't even know it exists, but occasionally it will jump out of the dark corners of Git and bite you. In this article, we'll explore what history simplification is and how it can cause confusion when looking at file history.
 

@@ -2,17 +2,20 @@
 title: WebpageControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
-ms.technology: devops-agile
-ms.custom: process
+ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
 ms.author: kaelli
 author: KathrynEE
-ms.date: 04/05/2017
+ms.topic: reference
+monikerRange: '< azure-devops'
+ms.date: 03/01/2022
 ---
 
 # WebpageControlOptions XML elements reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can display content defined for a Web page or within a CDATA tag on a work item form by using the `WebpageControlOptions` element. You can include either the **Link** or the **Content** child elements to specify either a URL or HTML for the content to appear in the form.  
   
@@ -36,7 +39,8 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
 > ```  
   
 ## Attributes and elements  
- The following sections describe attributes, child elements, and parent elements.  
+
+The following sections describe attributes, child elements, and parent elements.  
   
 ### Child elements and attributes  
   
@@ -52,10 +56,11 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
   
 |Element|Description|  
 |-------------|-----------------|  
-|[Control](control-xml-element-reference.md)|Required parent element. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
+|[Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)|Required parent element. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
 |[Text](labeltext-and-text-xml-elements-reference.md)|Optional `LabelText` element.<br /> Container element for the information or label to appear on the work item form.<br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
   
-## Remarks  
+## Remarks
+  
 The `Link` and `Content` elements are mutually exclusive.  
   
 The `AllowScript` and `ReloadOnParamChange` attributes are not allowed when you use the `Content` element.  
@@ -72,7 +77,8 @@ In addition, if the Web page to be loaded contains untrusted content, then the i
 
 The `WebpageControlOptions` element is only recognized by clients that are running the latest version of Team Explorer. For previous versions, a red area is displayed and a message appears indicating that the control could not be found. For more information, see [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md).  
   
-### Example  
+### Example
+  
 The following example shows how to load a work item form with HTML defined in a CDATA tag.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -86,6 +92,7 @@ The following example shows how to load a work item form with HTML defined in a 
 > ```
   
 ## Related articles
+
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)   
--  [Design the work item form](design-work-item-form.md)
+-  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)

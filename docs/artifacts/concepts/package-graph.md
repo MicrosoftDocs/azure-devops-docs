@@ -2,13 +2,16 @@
 title: Constructing a complete package graph
 description: Package graphs in Azure Artifacts
 ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.reviewer: amullans
+monikerRange: '<= azure-devops'
 ms.date: 2/6/2018
 ---
 
 # Constructing a complete package graph
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > Check your [package type](../start-using-azure-artifacts.md#feature-availability) to ensure compatibility with Azure DevOps Services or on-premises. 

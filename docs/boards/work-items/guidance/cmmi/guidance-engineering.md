@@ -2,7 +2,7 @@
 title: Engineering process areas for designing software in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about the value-added activities for discovering information required to design and build software products in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 53c52c0e-da53-4f9c-afc4-6c6260d32ccc
 ms.topic: conceptual
 ms.author: kaelli
@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 # Engineering processing areas in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 The Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities. These activities are for discovering the information that is required to design and build software products. The Engineering grouping of process areas in the CMMI includes:
 

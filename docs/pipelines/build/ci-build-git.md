@@ -1,18 +1,17 @@
 ---
 title: Building multiple branches
 description: Build multiple branches using Azure Pipelines or TFS
-ms.author: mlearned
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 04/02/2019
-monikerRange: '>=tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build multiple branches
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -38,7 +37,7 @@ A common workflow with Git is to create temporary branches from your main branch
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
+Unless you specify a [trigger](/azure/devops/pipelines/yaml-schema/trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
 
 ```yaml
 trigger:
@@ -176,6 +175,15 @@ YAML builds are not yet available on TFS.
 
 Once the work is completed in the topic branch and merged to main, you can delete your topic branch.  You can then create additional feature or bug fix branches as necessary.
 
+::: moniker range="azure-devops-2022"
+
+> [!IMPORTANT]
+> Azure Pipelines no longer supports per-pipeline retention policies. We recommend using project-level retention rules.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 ## Use retention policies to clean up your completed builds
 
 Retention policies allow you to control and automate the cleanup of your various builds.  For shorter-lived branches like topic branches, you may want to retain less history to reduce clutter and storage costs.  If you create CI builds on multiple related branches, it will become less important to keep builds for all of your branches.  
@@ -192,6 +200,8 @@ Retention policies allow you to control and automate the cleanup of your various
 7.  Select the **Save & queue** menu and then Select **Save**.  
 
 Policies are evaluated in order, applying the first matching policy to each build. The default rule at the bottom matches all builds.  The retention policy will clean up build resources each day.  You retain at least one build at all times.  You can also choose to keep any particular build for an indefinite amount of time.
+
+::: moniker-end
 
 ## Next steps
 

@@ -4,17 +4,18 @@ titleSuffix: Azure Repos
 description: View Git commit history in Visual Studio
 ms.assetid: f1ceefae-192f-49ee-af52-b9a29852bf85
 toc: show
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Commit history
 
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ## Commit history view
 

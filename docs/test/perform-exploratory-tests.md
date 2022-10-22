@@ -2,17 +2,17 @@
 title: Exploratory test your web app
 description: Test tools - Exploratory test your web app in Azure DevOps from your web browser with the Microsoft Test & Feedback extension
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Install the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 
@@ -118,16 +118,16 @@ update it automatically.
    - Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
  
    **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
+   Available to everyone. No connection to Azure DevOps is required. Take notes and screenshots with
    inline annotations to capture issues. Create bugs and export
    a session report to share findings.
  
-If you have problems connecting to Azure DevOps or TFS, you may find
+If you have problems connecting to Azure DevOps, you may find
 the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-connect-tfs.md) useful.
 
 ## Related articles
 
-*  [FAQs for manual testing](reference-qa.md#tandfext)
+*  [FAQs for manual testing](reference-qa.yml#tandfext)
 
 ## Next step
 

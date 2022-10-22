@@ -2,7 +2,6 @@
 title:  Azure DevOps Release Notes - Enhancements to YAML Pipelines
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 05/11/2020
 description: With this **sprint 169**, we are excited to announce the general availability of Azure Pipelines YAML CD features.
 ---
@@ -28,7 +27,7 @@ With this sprint, we are excited to announce the general availability of Azure P
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"] 
-> [go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## How to provide feedback
 

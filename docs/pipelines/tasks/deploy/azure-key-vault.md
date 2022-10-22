@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Azure Key Vault task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 ### Overview
 
@@ -131,8 +131,8 @@ This occurs if the required permissions are missing in the Azure key vault. To r
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-### I can't connect with Key Vault from Azure DevOps.
+### I can't connect with Key Vault from Azure DevOps
 
-This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allowed.
+This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Azure DevOps Service itself can access the key vault. To do this, ensure that [Azure DevOps IP Ranges for your Org's region](/azure/devops/organizations/security/allow-list-ip-url) are allowed, as well as [agent IP ranges for Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted#agent-ip-ranges) are allowed if using MS Hosted agents.
 
 <!-- ENDSECTION -->

@@ -1,17 +1,16 @@
-﻿---
+---
 title: Deploy ASP.NET Core app to Linux, Docker, & ACR (Classic)
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using Azure Pipelines
-ms.author: mlearned
-author: mlearned
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.custom: "mvc, seodec18"
 ms.date: 09/17/2021
+ms.topic: how-to
 monikerRange: 'azure-devops'
 ---
 
 # Deploy your ASP.NET Core app as a container
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Azure App Service Custom Containers using Docker and [Azure Container Registry](/azure/container-registry/).
 

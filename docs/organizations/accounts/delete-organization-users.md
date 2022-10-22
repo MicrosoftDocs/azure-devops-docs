@@ -3,7 +3,7 @@ title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
@@ -14,24 +14,17 @@ monikerRange: '>= azure-devops-2019'
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 If users no longer require access to a team, project, or your organization, you can remove their access. Work items that are assigned to the users aren't affected by removing user access.
 
 ## Prerequisites  
 
-- You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+- To remove users, you must be a member of the **Project Collection Administrators** group.  See [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ## Remove users from your organization
 
-::: moniker range=">= azure-devops-2020"
-
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [Preview page](#tab/preview-page) 
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -39,7 +32,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
@@ -55,7 +48,7 @@ If users no longer require access to a team, project, or your organization, you 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
@@ -66,17 +59,13 @@ If users no longer require access to a team, project, or your organization, you 
 
 ::: moniker-end
 
-Choose the **Current page** tab for instructions. 
-
-#### [Current page](#tab/current-page)
-
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range="azure-devops-2019"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
@@ -92,7 +81,7 @@ Choose the **Current page** tab for instructions.
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
@@ -102,11 +91,11 @@ Choose the **Current page** tab for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
+The **Users** page isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=" azure-devops"
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
@@ -114,7 +103,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Remove a user 
 
-You can remove a user from an organization by using the [az devops user remove](/cli/azure/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can remove a user from an organization by using the [az devops user remove](/cli/azure/devops/user#az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user remove --user
@@ -150,8 +139,8 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 ## Related articles
 
-- [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
-- [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)  
+-[Request an increase in permission levels](../../organizations/security/request-changes-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.yml)
 - [Export a list of users and their access levels](../security/export-users-audit-log.md)

@@ -9,10 +9,13 @@ monikerRange: '> azure-devops-2019'
 
 # Pipeline resources
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Azure Pipelines offers security mechanisms beyond just protecting the YAML file and source code.
-When pipelines run, access to resources goes through a system called [checks](../process/approvals.md).
+When YAML pipelines run, access to resources goes through a system called [checks](../process/approvals.md).
 Checks can suspend or even fail a pipeline run in order to keep resources safe.
 A pipeline can access two types of resources, protected and open. 
+
 ## Protected resources
 
 Your pipelines often have access to secrets.
@@ -20,16 +23,16 @@ For instance, to sign your build, you need a signing certificate.
 To deploy to a production environment, you need a credential to that environment.
 In Azure Pipelines, all of the following are considered *protected* resources:
 - [agent pools](../agents/agents.md)
-- [variable groups](../library/variable-groups.md)
+- [secret variables in variable groups](../library/variable-groups.md)
 - [secure files](../library/secure-files.md)
 - [service connections](../library/service-endpoints.md)
 - [environments](../process/environments.md)
 - [repositories](../process/repository-resource.md)
 
 "Protected" means:
-- They can be made accessible to specific users and specific pipelines within the project.
-They cannot be accessed by users and pipelines outside of a project.
-- You can run additional manual or automated checks every time a pipeline uses one of these resources. To learn more about protected resources, see [About pipeline resources](../process/about-resources.md). 
+- They can be made accessible to specific users and specific pipelines within the project. They cannot be accessed by users and pipelines outside of a project.
+- You can run additional manual or automated checks every time a YAML pipeline uses one of these resources. To learn more about protected resources, see [About pipeline resources](../process/about-resources.md). 
+
 
 ## Protecting repository resources
 Repositories can optionally be protected.

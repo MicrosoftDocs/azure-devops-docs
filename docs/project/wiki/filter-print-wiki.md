@@ -2,20 +2,20 @@
 title: Filter a wiki TOC or print a wiki page
 titleSuffix: Azure DevOps 
 description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps 
-ms.technology: devops-collab
-ms.custom: wiki
+ms.subservice: azure-devops-wiki
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
-ms.date: 11/19/2018  
+monikerRange: '<= azure-devops'
+ms.date: 06/13/2022  
 ---
 
 # Filter the contents of a wiki or print a page
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 To focus on a single page or several pages, use the *Filter pages* feature in the table of contents (TOC). Or, to find pages containing a phrase or keyword, you can use the [search function](../search/get-started-search.md).
 
@@ -23,7 +23,7 @@ To print a wiki page, you can select a page and then print it.
 
 ## Filter wiki pages
 
-Enter a title, keyword, or character string into the **Filter pages** box to quickly find pages whose title contains the keyword.
+Enter a title, keyword, or character string into the **Filter pages by title** box to quickly find pages whose title contains the keyword.
 
 > [!div class="mx-imgBorder"]  
 > ![Filter page by title](media/wiki/filter-box.png)

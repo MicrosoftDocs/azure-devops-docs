@@ -3,15 +3,16 @@ title: Merge strategies and squash merge
 titleSuffix: Azure Repos
 description: Squash merge pull requests to keep a linear Git history. Learn about multiple merge base issues and prevention.
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 11/05/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Merge strategies and squash merge
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you complete a [pull request](pull-requests.md), you merge the topic branch into your default branch, usually `main`. This merge adds the commits of the topic branch to your main branch and creates a merge commit to reconcile any conflicts between the default and topic branch. The comments and discussion in the pull request give additional context for the changes made in the topic branch.
 
@@ -48,7 +49,7 @@ Choose **Squash commit** under **Merge type** in the **Complete pull request** d
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 ### Complete pull requests with squash merge
 
 You can choose to squash merge when completing a pull request in Azure Repos.
@@ -80,7 +81,7 @@ Multiple merge base detection is part of security awareness. If there are multip
 
 ### How to resolve the multiple merge bases issue
 
-Having multiple merge bases isn't necessarily bad, but you should double-check that everything is fine. To get rid of multiple merge bases, tie branches to a single common ancestor. Either rebase your branch on target, or merge target into main. Those actions get rid of the warning message and help you check if the actual changes are fine.
+Having multiple merge bases isn't necessarily bad, but you should double-check that everything is fine. To get rid of multiple merge bases, tie the branches to a single common ancestor by either rebasing your branch on target, or merging target into your branch. Those actions get rid of the warning message and help you check if the actual changes are fine.
 
 One approach is to soft reset and stash your progress before rebasing or merging. You can then create a new branch or rebase an empty one, and apply your changes from a clear point. This process might require a force push to remote if your changes are already there.
 

@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
 ms.custom: seodec18
 ms.date: 06/08/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Copy Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy files from a source folder to a target folder using match patterns.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -48,7 +48,7 @@ None
 ## Notes
 
 If no files are matched, the task will still report success.
-If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
+If a matched file already exists in the target folder, the task will report a warning and continue execution unless Overwrite parameter is set to true.
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 

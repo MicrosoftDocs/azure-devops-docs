@@ -2,7 +2,7 @@
 title: Work Items with Direct Links sample report
 titleSuffix: Azure DevOps
 description: Learn how to generate Power BI reports based on Work Items with Direct Links.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Work items with direct links sample reports
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to list a given set of User Stories and their linked User Stories. An example is shown in the following image. 
 

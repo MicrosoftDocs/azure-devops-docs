@@ -4,11 +4,13 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 04/13/2022
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
 # Template types & usage
+
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -50,7 +52,7 @@ steps:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
   template: simple-param.yml
@@ -135,7 +137,7 @@ stages:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
   template: start.yml
@@ -174,14 +176,78 @@ resources:
     source: sourcePipeline
 
 steps:
- - script: echo "Testing resource template"
+- script: echo "Testing resource template"
 ```
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Use templateContext to pass properties to templates
+
+You can use `templateContext` to pass additional properties to stages, steps, and jobs that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
+  
+In this example, the parameter `testSet` in `testing-template.yml` has the data type `jobList`. The template `testing-template.yml` creates a new variable `testJob` using the [each keyword](expressions.md#each-keyword). The template then references the `testJob.templateContext.expectedHTTPResponseCode`, which gets set in `azure-pipeline.yml` and passed to the template. 
+
+When response code is 200, the template makes a REST request. When the response code is 500, the template outputs all of the environment variables for debugging. 
+
+`templateContext` can contain properties. 
+
+```yaml
+#testing-template.yml
+
+parameters: 
+- name: testSet
+  type: jobList
+
+jobs:
+- ${{ each testJob in parameters.testSet }}:
+  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 200) }}:
+    - job:
+      steps: 
+      - powershell: 'Invoke-RestMethod -Uri https://blogs.msdn.microsoft.com/powershell/feed/ | Format-Table -Property Title, pubDate'
+      - ${{ testJob.steps }}    
+  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 500) }}:
+    - job:
+      steps:
+      - powershell: 'Get-ChildItem -Path Env:\'
+      - ${{ testJob.steps }}
+```
+
+```yaml
+#azure-pipeline.yml
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+extends:
+  template: testing-template.yml
+  parameters:
+    testSet:
+    - job: positive_test
+      templateContext:
+        expectedHTTPResponseCode: 200
+      steps:
+      - script: echo "Run positive test" 
+    - job: negative_test
+      templateContext:
+        expectedHTTPResponseCode: 500
+      steps:
+      - script: echo "Run negative test" 
+```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## Insert a template
 
 You can copy content from one YAML and reuse it in a different YAML. Copying content from one YAML to another saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
-Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
+> [!NOTE]
+> Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
+
+
 
 ```yaml
 # File: templates/include-npm-steps.yml
@@ -283,7 +349,7 @@ jobs:
   steps:
   - bash: echo "Hello Ubuntu"
 
-- job: Windows
+- job:
   pool:
     vmImage: 'windows-latest'
   steps:
@@ -326,7 +392,7 @@ stages:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -471,6 +537,49 @@ variables:
 steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
+### Variable templates with parameter
+
+You can pass parameters to variables with templates. In this example, you're passing the `DIRECTORY` parameter to a `RELEASE_COMMAND` variable. 
+
+```yaml
+# File: templates/package-release-with-params.yml
+
+parameters:
+- name: DIRECTORY 
+  type: string
+  default: "." # defaults for any parameters that specified with "." (current directory)
+
+variables:
+- name: RELEASE_COMMAND
+  value: grep version ${{ parameters.DIRECTORY }}/package.json | awk -F \" '{print $4}'  
+```
+
+When you consume the template in your pipeline, specify values for
+the template parameters.
+
+```yaml
+# File: azure-pipelines.yml
+
+variables: # Global variables
+  - template: package-release-with-params.yml # Template reference
+    parameters:
+      DIRECTORY: "azure/checker"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Release_Stage 
+  displayName: Release Version
+  variables: # Stage variables
+  - template: package-release-with-params.yml  # Template reference
+    parameters:
+      DIRECTORY: "azure/todo-list"
+  jobs: 
+  - job: A
+    steps: 
+    - bash: $(RELEASE_COMMAND) #output release command
+```
 
 ## Reference template paths
 
@@ -592,7 +701,7 @@ The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
 > [!NOTE]
-> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
+> If no `ref` is specified, the pipeline will default to using `refs/heads/main`.
 
 You may also use `@self` to refer to the repository where the main pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.

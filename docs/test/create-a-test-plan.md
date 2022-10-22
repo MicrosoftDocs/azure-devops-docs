@@ -2,21 +2,21 @@
 title: Create test plans and suites
 description: Learn about Test tools. Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your needs.
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 11/02/2021
 ---
 
 # Create test plans and test suites
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
-For more information about manual testing, see [What is Azure Test Plans?](overview.md) and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
+For more information about manual testing, see [What is Azure Test Plans?](overview.md).
 
 ## Share work items across your test experience
 
@@ -34,10 +34,10 @@ You repeat this development-test-release cycle by importing the same test cases 
 The great thing is that, because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
 
 In the next version of the product, you can reuse the existing test cases.
-However, a better option may be to [copy or clone the test cases](reference-qa.md#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+However, a better option may be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
 
 > [!TIP]
-> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
+> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).
 
 
 
@@ -247,5 +247,5 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
 ## Related articles
 
 * [Test objects and terms](test-objects-overview.md) 
-* [FAQs for manual testing](reference-qa.md#testplans)
+* [FAQs for manual testing](reference-qa.yml#testplans)
 * [End-to-end traceability](../cross-service/end-to-end-traceability.md)

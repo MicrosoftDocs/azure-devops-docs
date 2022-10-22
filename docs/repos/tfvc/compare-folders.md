@@ -3,24 +3,27 @@ title: Compare folders
 titleSuffix: Azure Repos
 description: Compare folders
 ms.assetid: 9c894c51-c34c-4c03-a840-5e485dbbc55d
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 06/30/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Compare folders
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can compare the differences between two server folders, two local folders, or a server folder and a local folder.
 
-**Required Permissions**  
-To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites  
+
+To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 > [!NOTE]
-> To compare two local folders, you do not need Team Foundation Server permissions.
+> To compare two local folders, you do not need any Azure DevOps permissions.
 
 ### To compare folders by using Folder Difference
 
@@ -55,10 +58,8 @@ To perform these procedures, you must have the **Read** permission set to **Allo
     -   You can compare the differences between two versions of a file by opening its shortcut menu and choosing **Compare**. The [Diff window](compare-files.md) appears.  
     -   If there are differences between a server folder and your local folder, you can [reconcile them](reconcile-differences-between-two-folders.md).
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Folder comparison filters](folder-comparison-filters.md)  
- [Compare files](compare-files.md)  
- [Reconcile differences between two folders](reconcile-differences-between-two-folders.md) 
+-  [Folder comparison filters](folder-comparison-filters.md)  
+-  [Compare files](compare-files.md)  
+-  [Reconcile differences between two folders](reconcile-differences-between-two-folders.md) 

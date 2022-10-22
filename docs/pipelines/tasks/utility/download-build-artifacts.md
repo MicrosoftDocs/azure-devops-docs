@@ -6,26 +6,22 @@ ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/12/2020
-monikerRange: 'azure-devops'
+ms.date: 06/02/2022
+monikerRange: '> tfs-2018'
 ---
 
 # Download Build Artifacts task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 > [!NOTE]
-> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](../../artifacts/pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
+> We recommend upgrading from **build artifacts** to **[Pipeline Artifacts](../../artifacts/pipeline-artifacts.md)** for faster performance.
 
 Use this task to download build artifacts.
-
-::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/DownloadBuildArtifactsV0.md)]
-
-::: moniker-end
 
 ## Arguments
 
@@ -46,6 +42,7 @@ Use this task to download build artifacts.
 |`downloadPath`<br/>Destination directory|(Required) Path on the agent machine where the artifacts will be downloaded <br/>Default value: `$(System.ArtifactsDirectory)`|
 |`cleanDestinationFolder`<br/>Clean destination folder|(Optional) Delete all existing files in destination folder before artifacts are downloaded <br/>Default value: `false`|
 |`parallelizationLimit`<br/>Parallelization limit|(Optional) Number of files to download simultaneously <br/>Default value: `8`|
+|`extractTars`<br/>Extract all files that are stored inside tar archives|(Optional) Extract all `.tar` files. Enabling `StoreAsTar` option in [PublishBuildArtifacts](./publish-build-artifacts.md) task will store artifacts as `.tar` files automatically. This option allows you to preserve Unix file permissions. **Ignored on Windows**. <br/>Default value: `false`|
 
 ## Open source
 

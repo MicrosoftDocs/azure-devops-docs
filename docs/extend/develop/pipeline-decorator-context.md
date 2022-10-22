@@ -2,15 +2,17 @@
 title: Pipeline decorator context
 description: Contextual data available to pipeline decorators
 ms.topic: reference
-ms.technology: devops-cicd
+ms.subservice: azure-devops-ecosystem
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
+ms.author: chcomley
+author: chcomley
 ms.date: 07/20/2021
 monikerRange: 'azure-devops'
 ---
 
 # Pipeline decorator expression context
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
 As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.

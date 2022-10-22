@@ -1,24 +1,31 @@
 ---
-title: Workfold Command
+title: Workfold TFVC command
 titleSuffix: Azure Repos
-description: Workfold Command
+description: Workfold command creates, modifies, or displays information about the mappings between your workspace folders and the folders on the server.
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Workfold Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+# Workfold command (Team Foundation Version Control)
 
-Creates, modifies, or displays information about the mappings between your workspace folders and the folders on the server for Team Foundation version control.
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-**Required Permissions**
 
-To use the **workfold** command, you must be the owner of the specified or implied workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+The **workfold** command creates, modifies, or displays information about the mappings between your workspace folders and the folders on the Azure DevOps server for TFVC.
+
+## Prerequisites
+
+To use the **workfold** command, you must be the owner of the specified or implied workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+ 
+
+## Syntax
 
 ```
 tf workfold localfolder [/login:username,[password]]
@@ -171,7 +178,7 @@ tf workfold /decloak serverfolder
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 
@@ -181,7 +188,7 @@ You can use the **workfold** command of the **tf** command-line utility to creat
 
 You can also specify an asterisk (\*) wildcard to map a Team Foundation Server folder and its immediate items to your local workspace. This is often referred to as single folder mapping.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### Options for Workspace Mapping
 
@@ -236,24 +243,10 @@ The following example maps the folder C:\\DifferentWorkfold to the Team Foundati
 c:\projects>tf workfold $/projects/project_one C:\DifferentWorkfold
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Cloak and Uncloak Folders in a Workspace](optimize-your-workspace.md)
-
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Workspace Command](workspace-command.md)
-
-#### Concepts
-
-[Create a Workspace to Work with your Project](create-work-workspaces.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Optimize your workspace](optimize-your-workspace.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Workspace Command](workspace-command.md)
+- [Create and work with workspaces](create-work-workspaces.md)
+- [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

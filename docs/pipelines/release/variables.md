@@ -7,14 +7,14 @@ ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
 ms.custom: seodec18, contperf-fy20q4
 ms.date: 10/18/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Classic release and artifacts variables
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -87,7 +87,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
 | Release.Environments.{stage-name}.status | The deployment status of the stage.<br/><br />Example: `InProgress` |
 | Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
-| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
+| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Schedule` - the release started from a schedule. | 
 | Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
 | Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
 | Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |

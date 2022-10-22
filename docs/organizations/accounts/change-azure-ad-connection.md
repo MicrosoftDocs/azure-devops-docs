@@ -1,22 +1,22 @@
 ---
 title: Switch to another Azure Active Directory
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
+ms.custom: seodec18, engagement-fy23
 description: Learn how to change or switch your organization connection to a different Azure Active Directory.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2021
+ms.date: 10/05/2022
 monikerRange: 'azure-devops'
 ---
 
 # Change your organization connection to a different Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-If you need to switch your organization connection from one Azure Active Directory (Azure AD) to another, complete the following steps.
+Learn how to switch your organization connection from one Azure Active Directory (Azure AD) to another. When you change directories, your project resources remain, as there's no impact to them.
 
 For more information about using Azure AD with Azure DevOps, see the [Conceptual overview](access-with-azure-ad.md).
 
@@ -26,7 +26,7 @@ Before you switch your organization directory, make sure the following statement
 
 - You're in the Project Collection Administrator group for the organization.
 - You're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with changing your Azure AD.
+- There are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Azure AD identities in the new tenant.
 
 Do the following task:
 
@@ -38,11 +38,11 @@ Do the following task:
 
 ## Change the Azure AD connection
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign into your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then **Switch directory**.
 
@@ -51,7 +51,7 @@ Do the following task:
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
    ![Select your Azure AD, and then Connect](media/shared/select-directory-connect.png)
-   If you can't find your directory, contact your Azure AD administrator and request that they add you as a member to the Azure AD.
+   If you can't find your directory, contact your Azure AD administrator to request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
 
@@ -69,18 +69,7 @@ Do the following task:
 
 ## Inform users of the completed change
 
-When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
-
-- [Change your organization connection to a different Azure AD](#change-your-organization-connection-to-a-different-azure-ad)
-  - [Prerequisites](#prerequisites)
-  - [Change the Azure AD connection](#change-the-azure-ad-connection)
-  - [Inform users of the completed change](#inform-users-of-the-completed-change)
-    - [Clear cache for Git Credential Manager](#clear-cache-for-git-credential-manager)
-    - [Regenerate new PATs](#regenerate-new-pats)
-    - [Recreate SSH keys](#recreate-ssh-keys)
-    - [Rename your MSA](#rename-your-msa)
-    - [Adjust your VS subscription](#adjust-your-vs-subscription)
-  - [Related articles](#related-articles)
+When you inform your users of the completed change, include the following tasks for each user in the organization to complete.
 
 ### Clear cache for Git Credential Manager
 
@@ -88,21 +77,7 @@ If you use Visual Studio or the Git command-line too, clear the cache for the [G
 
 ### Regenerate new PATs
 
-Complete the following steps to [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md).
-
-1. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
-
-   ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
-
-2. Select **Personal access tokens**, and then select **New Token**.
-
-   ![Select New Token to create](media/shared/select-personal-access-tokens-new-token.png)
-
-3. Complete the form, and then select **Create**.
-
-   ![Create new token](media/shared/create-new-personal-access-token.png)
-
-4. Copy your token and put it in a safe place, as it can't be viewed again.
+Complete the steps in [Use personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
 ### Recreate SSH keys
 
@@ -132,8 +107,8 @@ If the UPN used inside your organization changed, adjust your Visual Studio subs
 
 ## Related articles
 
+- [Rename a project](../projects/rename-project.md)
+- [Rename an organization](rename-organization.md)
 - [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
-- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
-- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](./faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)

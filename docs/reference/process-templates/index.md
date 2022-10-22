@@ -2,7 +2,7 @@
 title: Process templates overview
 titleSuffix: Azure DevOps  
 description: Learn about process templates for Azure DevOps  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 11/04/2021
 
 # Process templates overview  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../../includes/choose-process-introduction.md)]
 

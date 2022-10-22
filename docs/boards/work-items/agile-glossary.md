@@ -2,7 +2,7 @@
 title: Learn key concepts & terms to support Agile tools
 titleSuffix: Azure Boards
 description: Learn about the key terms and concepts to understand the objects and items used to track work in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: seodec18
 ms.assetid:  
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Terms and concepts used when tracking work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Azure Boards. More terms are defined in the following articles: 
 - [Kanban key concepts](../boards/kanban-key-concepts.md)  

@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
-title: Get started documentation
+title: Get started with Azure DevOps documentation 
 summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
 
 metadata:
-  title: Learn how to start using Azure DevOps
-  description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
-  ms.prod: devops 
-  ms.technology: devops-new-user
+  title: Get started with Azure DevOps documentation
+  titleSuffix: Azure DevOps  
+  description: Learn how to start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
+  ms.subservice: azure-devops-new-user
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
@@ -25,15 +25,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure DevOps?
-            url: ../user-guide/what-is-azure-devops.md
+            url: ../user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json 
           - text: What is Azure Boards?
-            url: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../boards/get-started/what-is-azure-boards.md 
           - text: What is Azure Repos?
-            url: ../repos/get-started/what-is-repos.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../repos/get-started/what-is-repos.md 
           - text: What is Azure Pipelines?
-            url: ../pipelines/get-started/what-is-azure-pipelines.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../pipelines/get-started/what-is-azure-pipelines.md 
           - text: Get started as a Stakeholder
-            url: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/security/get-started-stakeholder.md 
   - title: Sign up for free
     linkLists:
       - linkListType: quickstart
@@ -58,8 +58,10 @@ landingContent:
             url: ../user-guide/project-admin-tutorial.md
           - text: Add users to a team or project
             url: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
-          - text: Add administrators
-            url: ../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+          - text: Add a project administrator
+            url: ../organizations/security/change-project-level-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+          - text: Add a project collection administrator
+            url: ../organizations/security/change-organization-collection-level-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
       - linkListType: concept
         links:
           - text: Default permissions and access
@@ -95,7 +97,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: YAML Schema
-            url: ../pipelines/yaml-schema.md
+            url: /azure/devops/pipelines/yaml-schema/
   - title: Set your preferences
     linkLists:
       - linkListType: quickstart

@@ -3,24 +3,28 @@ title: Label Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Label Command (Team Foundation Version Control)
+# Label command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
-
-Updated: October 2011
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+ 
 
 Attaches a label to or removes a label from a version of a file or folder in the server for Team Foundation version control.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**.
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf label labelname[@scope] [/owner:ownername] 
@@ -75,10 +79,10 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
    *itemspec*
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    > [!Note]  
-   > You can specify more than one *Itemspec* argument.
+   > You can specify more than one *itemspec* argument.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -86,7 +90,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
    *versionspec*
    :::column-end:::
    :::column span="3":::
-   Provides a value such as c2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Provides a value such as c2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -132,7 +136,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 | **/child** | Not documented. |
 | **/recursive** | Labels all items in the directory that matches your *itemspec* and *versionspec*. Cannot be used with the **/delete** option. |
 | **/delete** | Removes the label. |
-| **/login** | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server. |
+| **/login** | Specifies the user name and password to authenticate the user with Azure DevOps. |
 | **/collection** | Specifies the project collection. |
 
 
@@ -159,7 +163,7 @@ Labels are version-specific, that is, you can only attach a label to one version
 
 A label is not a versioned object; therefore, the label history of files is not tracked. Additionally, a label operation does not create a pending change in your workspace. When you issue the **label** command, the update is immediately reflected in the Team Foundation version control server.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### Removing and Deleting Labels
 
@@ -209,10 +213,10 @@ c:\projects>tf label goodbuild@$/TeamProject1 314.cs
 
 ## Related articles
 
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
 - [Labels Command](labels-command.md)
 - [Unlabel Command](unlabel-command.md)
 - [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
 - [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+
  

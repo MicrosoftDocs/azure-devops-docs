@@ -3,7 +3,7 @@ title: Default permissions and access for Azure Boards
 titleSuffix: Azure Boards & TFS 
 description: Learn about default permissions and access levels in Azure Boards. The permissions and access levels help you support work-tracking tasks in Azure DevOps Services.
 ms.custom: boards-get-started
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +14,7 @@ ms.date: 09/15/2021
 
 # Default permissions and access levels for Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As a member of an Azure Boards project, you can use most features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash;and team administrator role grant permissions to specific features. 
 
@@ -23,7 +23,7 @@ In the tables provided in this article, a ✔️ indicates that the correspondin
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. 
 
-For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). If you need to [grant specific users select permissions](../../organizations/security/change-individual-permissions.md), you can do so.
+For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). If you need to [grant specific users select permissions](../../organizations/security/request-changes-permissions.md), you can do so.
 
 ## Work item feature access
 

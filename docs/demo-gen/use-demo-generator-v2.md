@@ -1,8 +1,7 @@
 ---
 title: Use Azure DevOps Demo Generator
 description: Use the Azure DevOps Services Demo Generator V2 to create and populate a demo project
-ms.prod: devops  
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.author: sdanie
 ms.topic: conceptual
 monikerRange: 'azure-devops'
@@ -10,6 +9,8 @@ ms.date: 10/10/2019
 ---
 
 # Get started creating and populating demo Azure DevOps Services projects
+
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by selecting the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 

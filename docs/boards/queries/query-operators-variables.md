@@ -3,19 +3,19 @@ title: Query fields, operators, macros, and variables
 titleSuffix: Azure Boards
 description: Learn about field data types, operators, and macros/variables used by the Query Editor in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2021
+ms.date: 06/29/2022
 ---
 
 
-# Query fields, operators, and macros in Azure Boards and Azure DevOps
+# Query fields, operators, and macros in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
@@ -33,28 +33,22 @@ The value you specify for a field must conform to the data type for that field. 
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Description**
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   **Boolean**<sup>1</sup> 
-
+   **Boolean** 
    :::column-end:::
    :::column span="3":::
    Specifies a field that takes on a True/False value. 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **DateTime** or  **Date/Time**
-
    :::column-end:::
    :::column span="3":::
    A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md).  
@@ -65,117 +59,94 @@ The value you specify for a field must conform to the data type for that field. 
 :::row:::
    :::column span="1":::
    **Double** or **Decimal**
-
    :::column-end:::
    :::column span="3":::
    A real number, such as 0.2 or 3.5. For query examples, see [Query by numeric fields](query-numeric.md). 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **GUID** 
-
    :::column-end:::
    :::column span="3":::
    A character string that represents a unique ID.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **History** 
-
    :::column-end:::
    :::column span="3":::
    Custom formatted field used to track historical information. This data type is only used to support the **History** field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article.  For query examples, see [History and auditing](history-and-auditing.md). 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **HTML** 
-
    :::column-end:::
    :::column span="3":::
    Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **Identity** 
-
    :::column-end:::
    :::column span="3":::
    Short text string that identifies a user identity. 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **Integer** 
-
    :::column-end:::
    :::column span="3":::
    A 32-bit integer that is signed, such as 0, 1, 2, 34.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **PlainText** or  **Text field (multi-line)**
-
    :::column-end:::
    :::column span="3":::
    Text strings that support long descriptions, such as the **Application Start Information** field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-    **picklistDouble**<sup>2</sup>
-
+    **picklistDouble**<sup>1</sup>
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of Decimal values.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-    **picklistInteger**<sup>2</sup>
-
+    **picklistInteger**<sup>1</sup>
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of Integer values.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-    **picklistString**<sup>2</sup>
-
+    **picklistString**<sup>1</sup>
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of short text string (255 characters or less) values.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **String** or  **Text field (single line)**
-
    :::column-end:::
    :::column span="3":::
    Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **TreePath** 
-
    :::column-end:::
    :::column span="3":::
    A branching tree structure, such as an Area Path or Iteration path. Choose an item from a list of valid values. Find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team.
@@ -186,8 +157,7 @@ The value you specify for a field must conform to the data type for that field. 
 :::row-end:::
 
 > [!NOTE]
-> 1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
-> 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
+> 1. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -210,7 +180,6 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    **Applicable data types**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **=**
@@ -218,12 +187,9 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
    :::column-end:::
    :::column span="3":::
    Matches the value in the clause.
-
    :::column-end:::
    :::column span="3":::
    **Number**&mdash;which includes **Double**, **GUID**, **Integer**&mdash;and **String**, **DateTime**, and **TreePath**
-
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -514,7 +480,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    
    > [!NOTE]
-   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (AAD) when your Azure Boards account is backed by AAD, or Active Directory (AD) when your on-premises server instance is backed by Active Directory.  
+   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
    For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&amp;bc=/azure/devops/reference/breadcrumb/toc.json).
 
@@ -533,7 +499,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
     **String**  that matches the name of a user group in Team Foundation Server or a category group defined for a project.
 
    > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD.     
+   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure AD when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.     
 
    :::column-end:::
 :::row-end:::
@@ -618,7 +584,7 @@ You can use the macros described in the following table to filter your queries b
    :::column-end:::
    :::column span="3":::
       Use with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
-      The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+      The **@CurrentIteration** macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
    :::column-end:::
 :::row-end:::
 ---
@@ -638,7 +604,7 @@ You can use the macros described in the following table to filter your queries b
    :::column-end:::
    :::column span="3":::
       Use with the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
-      The **@Follows** macro is supported for Azure Boards and TFS 2017 and later versions, and only when run from the web portal.
+      The **@Follows** macro is supported only when run from the web portal.
    :::column-end:::
 :::row-end:::
 ---
@@ -665,8 +631,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>.  
-      The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
 ---
@@ -681,11 +646,10 @@ You can use the macros described in the following table to filter your queries b
 ---
 :::row:::
    :::column span="1":::
-      **@RecentProjectActivity**  
+      **@RecentProjectActivity** <sup>1</sup>  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md).  
-      The **@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
+      Use with the **ID** field and **In** operator to list work items that have been recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro will list work items that have been updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
    :::column-end:::
 :::row-end:::
 ---
@@ -747,7 +711,7 @@ You can use the macros described in the following table to filter your queries b
  
 
 > [!NOTE]  
-> 1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+> 1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for TFS 2018.2 and later versions.  
 > 2. The **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, and **@StartOfYear** macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
 
 

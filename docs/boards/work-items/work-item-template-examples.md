@@ -2,18 +2,18 @@
 title: View sample work item templates that show usage in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn about sample work item templates you can use to pre-populate fields and provide guidance in work item forms. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2017'
-ms.date: 11/07/2021 
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # View sample work item templates in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following goals:
 
@@ -103,7 +103,7 @@ An often requested feature is to allow the creation of a work item that automati
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Customize the work item web form 
 

@@ -2,8 +2,7 @@
 title: Pipeline failed test sample Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a list of failed tests Power BI report for a given pipeline in the project.
-ms.prod: devops
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
 ms.custom: powerbisample
@@ -15,7 +14,7 @@ ms.date: 10/13/2021
 
 # Failed tests sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows the list of failed tests for a pipeline.
 

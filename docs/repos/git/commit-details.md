@@ -4,17 +4,18 @@ titleSuffix: Azure Repos
 description: View Git commit details in Visual Studio
 ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Commit details
 
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 
 The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->
@@ -25,10 +26,7 @@ The commit details view provides information regarding all the changes made as p
 ::: moniker range="<= azure-devops-2019"
 ![Commit details page](media/commit-details/1Commitdetails.png)
 ::: moniker-end
-::: moniker range="tfs-2017"
-> [!NOTE]
-> The feature documented in this article requires TFS 2017 Update 1 or later version.  
-::: moniker-end
+
 
 ## What information do you see on the commit details page?
 

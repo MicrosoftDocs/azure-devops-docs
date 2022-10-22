@@ -3,16 +3,18 @@ title: View the branch hierarchy of a project
 titleSuffix: Azure Repos
 description: View the branch hierarchy of a project
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # View the branch hierarchy of a project
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 As a project grows, typically the branch structure also grows and becomes more complex. Your team members, especially those who are new, will require answers to simple questions such as the following:
 
@@ -24,7 +26,7 @@ As a project grows, typically the branch structure also grows and becomes more c
 
 The following procedures explain how to use Team Foundation version control to answer these types of questions.
 
-## To View and Work with Your Branches
+## View and work with your branches
 
 You can use the **Hierarchy** window to perform the following tasks:
 
@@ -41,13 +43,13 @@ You can use the **Hierarchy** window to perform the following tasks:
 >
 > For more information, see [Branch folders and files](branch-folders-files.md).
 
-### Display the Hierarchy Window from Source Control Explorer
+## Display the hierarchy window from Source Control Explorer
 
 1.  In **Source Control Explorer**, click the branch from which you want to begin to explore your branch structure.
 
 2.  Click the **File** menu, point to **Source Control**, point to **Branching and Merging**, and then click **View Hierarchy**.
 
-### Adjust the View to Show the Data You Need
+## Adjust the view to show the data you want
 
 When you first display the **Hierarchy** window, by default, the branch that is shown is the branch from which you started the window, including its ancestors and its descendants.
 
@@ -79,7 +81,7 @@ The options that you can use to modify the view in this window are explained in 
 
   -   Click the plus (+) symbol (or press INSERT while the branch is selected) to select or de-select which child branches you want to display.
 
-### View Properties and Take Actions
+## View properties and take actions
 
 After you view the branch hierarchy, you may need more information, or you may be ready to take some action. You can right-click any branch in the **Hierarchy** window and perform any one of the following steps:
 

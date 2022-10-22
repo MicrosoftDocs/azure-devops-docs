@@ -3,15 +3,16 @@ title: Manage branches in your Git repo
 titleSuffix: Azure Repos
 description: Find your work and search for branches using the branches page in Azure DevOps Services/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 07/10/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
+ms.date: 02/23/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Manage branches
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
@@ -24,7 +25,7 @@ View your repo's branches by selecting **Repos**, **Branches** while viewing you
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 View your repo's branches by selecting **Branches** while viewing your repo on the web.
 
@@ -34,7 +35,7 @@ View your repo's branches by selecting **Branches** while viewing your repo on t
 
 ## Organize your branches
 
-The default **Mine** tab on the branches page shows branches you've created, pushed changes to, or set as a favorite, along with the default branch for the repo, such as `master`. The **All** tab lists all branches in the repo, and the **Stale** tab lists branches in the repo that haven't had any commits in three months or longer.
+The default **Mine** tab on the branches page shows branches you've created, pushed changes to, or set as a favorite, along with the default branch for the repo, such as `main`. The **All** tab lists all branches in the repo, and the **Stale** tab lists branches in the repo that haven't had any commits in three months or longer.
 
 ![My branches](media/branches/my-branches.png)
 
@@ -91,4 +92,4 @@ browse the files based on the most recent commit on the branch. **View history**
 [!INCLUDE [](includes/change-default-branch-instructions.md)]
 
 There are other aspects you should consider before making this change.
-Learn about them in the topic on [changing your default branch](change-default-branch.md).
+Learn about them in this article on [changing your default branch](change-default-branch.md).

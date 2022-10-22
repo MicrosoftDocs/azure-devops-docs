@@ -2,7 +2,7 @@
 title: Plan a project in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to plan a project so you can analyze design, develop, test, and eventually deliver your product.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
 ms.author: kaelli
@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Plan a project using the Capability Maturity Model Integration (CMMI) process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 The expected outcome of planning a project is a plan that includes a scope, a schedule, a budget, a risk management plan, and a commitment and approval from all stakeholders. With an agreed-upon project plan, you want to progress with analysis, design, development, testing, and eventually delivery.  
   

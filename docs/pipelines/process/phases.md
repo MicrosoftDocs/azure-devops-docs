@@ -4,15 +4,15 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 09/23/2021
-monikerRange: '>= tfs-2017'
+ms.date: 10/13/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Specify jobs in your pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -32,16 +32,6 @@ In other words, a job is the smallest unit of work that can be scheduled to run.
 
 > [!NOTE]
 > You must install TFS 2018.2 to use jobs in build processes. In TFS 2018 RTM you can use jobs in release deployment processes.
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-You can organize your release pipeline into jobs. Every release pipeline has at least one job. Jobs are not supported in a build pipeline in this version of TFS.
-
-> [!NOTE]
-> You must install Update 2 to use jobs in a release pipeline in TFS 2017.
-> Jobs in build pipelines are available in Azure Pipelines, TFS 2018.2, and newer versions.
 
 ::: moniker-end
 
@@ -197,8 +187,8 @@ Although you can add steps for deployment tasks in a `job`, we recommend that yo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-YAML is not supported in this version of TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -256,13 +246,6 @@ Jobs can be of different types, depending on where they run.
 
 ::: moniker-end
 
-
-::: moniker range="tfs-2017"
-
-* **Agent pool jobs** run on an agent in the agent pool. These jobs are only available release pipelines.
-
-::: moniker-end
-
 ### Agent pool jobs
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
@@ -300,8 +283,8 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -355,18 +338,12 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-::: moniker range="> tfs-2017"
 You add a server job in the editor by selecting '...' on the **Pipeline** channel in the **Tasks** tab of a pipeline. The properties for the server job are displayed when you select the job in the editor.
-::: moniker-end
-
-::: moniker range="tfs-2017"
-Server jobs are not supported in this version of TFS.
-::: moniker-end
 
 ---
 
@@ -460,8 +437,8 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -475,7 +452,7 @@ When you specify multiple jobs in a build pipeline, they run in parallel by defa
 Multiple jobs you add to a build or a release pipeline run in sequence. You cannot configure the order of dependencies between jobs in this version of TFS.
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 Multiple jobs you add to a release pipeline run in sequence. You cannot configure the order of dependencies between jobs in this version of TFS. You cannot also use jobs with build pipelines.
 ::: moniker-end
 
@@ -579,8 +556,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 
@@ -594,7 +571,7 @@ Use the **Run this job** option on an agent or server job to run the tasks
   expressions can access variables available in the release pipeline.
 
 ::: moniker-end
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 Conditions are not supported in this version of TFS.
 ::: moniker-end
 
@@ -625,8 +602,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -713,7 +690,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -780,8 +757,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -815,8 +792,8 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -868,7 +845,7 @@ When you specify one of the `clean` options, they are interpreted as follows:
 
 ```yaml
   jobs:
-  - deployment: deploy
+  - deployment: MyDeploy
     pool:
       vmImage: 'ubuntu-latest'
     workspace:
@@ -879,7 +856,7 @@ When you specify one of the `clean` options, they are interpreted as follows:
 > [!NOTE]
 > Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
 
-In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline. To configure the **Clean** setting:
+In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step in your pipeline. When you specify `clean: true`, you'll run `git clean -ffdx` followed by `git reset --hard HEAD` before git fetching. To configure the **Clean** setting:
 
 1. Edit your pipeline, choose **...**, and select **Triggers**.
 
@@ -890,8 +867,8 @@ In addition to workspace clean, you can also configure cleaning by configuring t
     :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -941,8 +918,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -986,8 +963,8 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)

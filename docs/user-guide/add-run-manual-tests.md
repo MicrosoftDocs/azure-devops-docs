@@ -3,18 +3,18 @@ title: Add, run, update inline tests
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to add, run, and quickly update manual test cases
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.date: 04/23/2019
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Add, run, update inline tests
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 
@@ -26,7 +26,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
@@ -38,9 +38,9 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
-1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 
@@ -80,7 +80,7 @@ Before you run the test, you must add details.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To add tests, open the menu for the work item.
 
@@ -121,7 +121,7 @@ Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run test** from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu for the inline test.  
 
@@ -142,7 +142,7 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can update the status of the test from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu.
 
@@ -166,7 +166,7 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 When you first open the Kanban board, you'll see an unexpanded view of checklists.
 

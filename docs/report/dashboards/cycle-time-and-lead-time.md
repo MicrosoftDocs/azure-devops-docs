@@ -2,9 +2,8 @@
 title: Cycle Time and Lead Time control charts
 titleSuffix: Azure DevOps Services
 description: Learn how to configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes.
-ms.custom: dashboards
-ms.prod: devops  
-ms.technology: devops-analytics  
+ms.custom: dashboards 
+ms.subservice: azure-devops-analytics
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
 ms.author: kaelli
@@ -16,7 +15,7 @@ ms.date: 09/28/2021
 
 # Lead Time and Cycle Time widgets
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
 Both lead time and cycle time widgets are useful to teams. They both indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
@@ -133,8 +132,8 @@ The chart dots represent completed work items where their position on the horizo
 
 ### Summary elements 
 
-- Days on average (average lead time or cycle time) for the main work item types configured for the chart 
-- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
+- Days on average (average lead time or cycle time) for the main work item types configured for the chart. This number may not be equal to the average cycle/lead time of all work items. It depends on configurations used for widgets. The average number is calculated based on each day the team takes time for work item. 
+- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for **Other**  
 - The black trend line indicates the moving average 
 - The band around the trend line shows the standard deviation.
 

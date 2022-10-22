@@ -3,19 +3,19 @@ title: Configure WIP limits for Kanban board
 titleSuffix: Azure Boards
 description: Learn how to set Work In Progress Limits on the Kanban board in Azure Boards.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2021
+ms.date: 04/01/2022
 ---
 
 
 # Set Work in Progress limits in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
@@ -127,7 +127,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -145,55 +145,11 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015" 
-1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
-
-	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
-
-	**TFS 2015.1 and later versions**  
-3. Choose **Columns** and then a column tab to set the WIP limit for that column.  
-	
-	![Settings, Columns, set WIP limits](media/wip-columns-settings.png)  
-
-4. When done with your changes, choose **Save**.  
-
-	**TFS 2015**     
-5. Set the WIP limits for each intermediate column.     
-	![Customize WIP limits](media/WIP_5.png)    
-   ::: moniker-end  
-   ::: moniker range="tfs-2013"    
-6. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-7. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
-
-	![Open configuration settings](media/columns/open-settings-2013.png)    
-
-8. Set the WIP limits for each intermediate column.           
-
-	![Customize WIP limits](media/WIP_5.png)   
-
-	> [!NOTE]   
-	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
-
-::: moniker-end
-
 ## Related articles
 
-::: moniker range=">= tfs-2015"
 
 - [Split columns](split-columns.md)  
 - [Speed up work](expedite-work.md)  
 - [Definition of Done](definition-of-done.md)  
 - [Customize cards](../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
-
-::: moniker-end
-
-
-::: moniker range="tfs-2013"
-- [Definition of Done](definition-of-done.md)  
-- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
-
-::: moniker-end

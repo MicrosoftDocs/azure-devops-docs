@@ -2,7 +2,7 @@
 title: All FIELD XML elements reference 
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements for the FIELD element for Team Foundation Server (TFS)
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 552c2ada-2186-4b89-848c-34f54dfe0823
 ms.author: kaelli
@@ -14,7 +14,7 @@ ms.date: 06/16/2017
 
 # All FIELD XML elements reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Use this topic to look up the syntax of the `FIELD` element or one of its child elements.  
 

@@ -3,7 +3,7 @@ title: Import or update work items in bulk by using CSV files
 titleSuffix: Azure Boards
 description: Learn how to import or update work items in bulk from a CSV formatted file. 
 ms.custom: "boards-queries, linked-from-support"
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
@@ -13,7 +13,7 @@ ms.date: 10/21/2021
 
 # Import or update work items in bulk by using CSV files in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range="> azure-devops-2019"
 

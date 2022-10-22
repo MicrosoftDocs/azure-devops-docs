@@ -3,17 +3,17 @@ title: Quick reference for concepts related to work item tasks
 titleSuffix: Azure Boards
 description: Learn about query operators, macros, and sample queries used to list work items for Azure Boards and Azure DevOps.
 ms.custom: boards-work-items  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 07/13/2022
 ---
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -51,6 +51,7 @@ Use this index to quickly access concepts related to work items and information 
       - [Link types](../queries/link-type-reference.md)  
       - [Linking and traceability](../queries/link-work-items-support-traceability.md)  
       - [Mobile browser ](../..//project/navigation/mobile-work.md)  
+      - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
       - [New work item widget ](../../report/dashboards/widget-catalog.md#new-work-item)  
       - [On-premises XML process model](../../reference/on-premises-xml-process-model.md)  
       - [Permissions and access](../../organizations/security/permissions-access-work-tracking.md)  
@@ -87,6 +88,7 @@ Use this index to quickly access concepts related to work items and information 
    :::column span="1":::
       - [Tags](../queries/add-tags-to-work-items.md)  
       - [Track bugs as requirements or tasks](about-work-items.md#track)  
+      - [Track dependencies](../plans/track-dependencies.md)  
       <br/> 
       - [Visual Studio work item experience](set-work-item-experience-vs.md)  
       <br/> 
@@ -149,6 +151,8 @@ Tasks listed below are available to users with Contributor permissions and Basic
    :::column span="1":::
       - [Email work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
+      - [Filter a backlog, board, or plan](../backlogs/filter-backlogs-boards-plans.md)  
+      - [Filter the History tab](../queries/history-and-auditing.md#filter-history)  
       - [Follow a work item](follow-work-items.md)  
       - [Forecast work items](../sprints/forecast.md)  
       - [Get notified of work item changes](../../notifications/manage-your-personal-notifications.md)  
@@ -182,6 +186,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)  
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  
+      - [Track dependencies](../plans/track-dependencies.md)  
       - [Triage work items](../queries/triage-work-items.md)  
       <br/>
       - [Update status of tasks (Taskboard)](../sprints/task-board.md)  
@@ -312,7 +317,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### On-premises XML process model
 
@@ -325,7 +330,7 @@ You customize work item types using the On-premises XML process model. For more 
 ---
 :::row:::
    :::column span="1":::
-      - [Add a checkbox (Boolean) field (TFS 2017.2)](../../reference/add-modify-field.md)  
+      - [Add a checkbox (Boolean) field](../../reference/add-modify-field.md)  
       - [Add a custom field](../../reference/add-modify-field.md)  
       - [Add a custom pick list](../../reference/add-modify-field.md#picklist)  
       - [Add or modify a field](../../reference/add-modify-field.md)  
@@ -341,7 +346,7 @@ You customize work item types using the On-premises XML process model. For more 
       - [Define Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md)    
       - [Define global lists](../../reference/xml/define-global-lists.md)    
       - [Delete a field](../../reference/add-modify-field.md#delete-field)    
-      - [Modify a pre-defined pick list](../../reference/add-modify-field.md#picklist)  
+      - [Modify a predefined pick list](../../reference/add-modify-field.md#picklist)  
       - [Remove a field from a form](../../reference/add-modify-field.md#change-label)  
    :::column-end:::
 :::row-end:::
