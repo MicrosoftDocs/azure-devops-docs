@@ -25,7 +25,7 @@ The TFVC `branch` command copies an item or set of items, including metadata and
 
 ## Prerequisites
 
-To use the `branch` command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `branch` command, you must have the **Read** permission for the source item, and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
@@ -73,7 +73,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
 
    If no version is provided, TFVC uses the following logic to decide which version of the item to copy to the new branch:
 
-   - If a Azure DevOps Server path is specified, then TFVC branches the item at the latest Azure DevOps Server version. For example, `tf branch $/projects/help.cs` uses the server version.
+   - If an Azure DevOps Server path is specified, then TFVC branches the item at the latest Azure DevOps Server version. For example, `tf branch $/projects/help.cs` uses the server version.
    - If a local path is specified for the source, TFVC uses the local, workspace version to create the new branch. For example, `tf branch C:\314.cs` uses the local workspace version.
    
    If you branch a file whose workspace version is older than the latest version in the Azure DevOps server, the file is branched at the older version.
@@ -89,9 +89,9 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    Lock options:
    
    - `none`  
-   Default. No lock is applied. If a lock exists on the file that you are creating a branch for, this option removes it.
+   Default. No lock is applied. If a lock exists on the file that you're creating a branch for, this option removes it.
    - `checkin`  
-   Other users can check out the specified items but they can't check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+   Other users can check out the specified items, but they can't check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    - `checkout`  
    Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    :::column-end:::
@@ -120,7 +120,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    `/silent`
    :::column-end:::
    :::column span="3":::
-   Implies `/noget` and specifies that output isn't written to the command prompt window when you create a branch.
+   Implies `/noget`, and specifies that output isn't written to the command prompt window when you create a branch.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -152,7 +152,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    `/recursive`
    :::column-end:::
    :::column span="3":::
-   For folders branch all files inside, too.
+   For folders, branch all files inside too.
    :::column-end:::
 :::row-end:::
 
