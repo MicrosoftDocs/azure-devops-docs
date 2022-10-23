@@ -1,7 +1,7 @@
 ---
 title: Write new code for a user story
 titleSuffix: Azure Repos
-description: A day in the life of an devops developer. Write new code for a user story.
+description: A day in the life of a devops developer. Write new code for a user story.
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.service: azure-devops-repos
 ms.topic: conceptual
@@ -28,32 +28,31 @@ The Visual Studio **My Work** and **Code Review** tools help developers manage t
 
 ## Review work items and prepare to begin work
 
-In Visual Studio **Team Explorer**, open the **My Work** page. The team has agreed that, during the current sprint, Peter will work on **Evaluate invoice status**, a top-priority item in the product backlog. Peter decides to start with **Implement math functions**, a child task of the top-priority backlog item. He drags this task from the **Available Work Items** list into the **In Progress Work Items & Changes** list.
+In Visual Studio **Team Explorer**, open the **My Work** page. The team has agreed that, during the current sprint, you'll work on **Evaluate invoice status**, a top-priority item in the product backlog. You decide to start with **Implement math functions**, a child task of the top-priority backlog item. You drag this task from the **Available Work Items** list into the **In Progress Work** list.
 
 ### To review personal backlog and prepare tasks to begin work
   
  ![Screenshot of To Do List on My Work Page in Team Navigator.](media/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
 
-1.  In **Team Explorer**:  
-    1.  If you are not already connected to the project that you want to work in, then [connect to the project](../../organizations/projects/connect-to-projects.md).  
-    2.  Choose ![Home icon](media/day-life-alm-developer-write-new-code-user-story/IC547418.png) **Home**, and then choose ![My Work icon](media/day-life-alm-developer-write-new-code-user-story/IC588354.png) **My Work**.  
-2.  On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work Items** section.
+1. In **Team Explorer**, if you aren't already connected to the project that you want to work in, [connect to the project](../../organizations/projects/connect-to-projects.md).
+1. From the **Home** page, select **My Work**.
+1. On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work Items** section.
 
-    You can also select a task in the **Available Work Items** list and then choose **Start**.
+   You can also select a task in the **Available Work Items** list and then select **Start**.
 
 ### Draft incremental work plan
 
-You develop code in a series of small steps. Each step typically takes no longer than an hour, and might take as little as ten minutes. In each step, you write a new unit test and change the code you're developing so that it passes the new test, in addition to the tests you've already written. Sometimes you writes the new test before changing the code, and sometimes you change the code before writing the test. Sometimes you refactor. That is, you just improve the code without adding new tests. You never change a test that passes, unless you decide that it didn't correctly represent a requirement.
+You develop code in a series of small steps. Each step typically takes no longer than an hour, and might take as little as 10 minutes. In each step, you write a new unit test and change the code you're developing so that it passes the new test, in addition to the tests you've already written. Sometimes you write the new test before changing the code, and sometimes you change the code before writing the test. Sometimes you refactor. That is, you just improve the code without adding new tests. You never change a test that passes, unless you decide that it didn't correctly represent a requirement.
 
 At the end of every small step, you run all the unit tests that are relevant to this area of the code. You don't consider the step complete until every test passes.
 
-You don't check the code in to Azure DevOps Server until you finish the entire task.
+You don't check in the code to Azure DevOps Server until you finish the entire task.
 
 You can write down a rough plan for this sequence of small steps. You know that the exact details and order of the later ones will probably change as you work. Here's the initial list of steps for this particular task:
 
 1.  Create test method stub-that is, just the signature of the method.
 2.  Satisfy one specific typical case.
-3.  Test broad range. Make sure that the code responds correctly to a large range of values.
+3.  Test a broad range. Make sure that the code responds correctly to a large range of values.
 4.  Exception on negative. Deal gracefully with incorrect parameters.
 5.  [Code coverage](day-life-alm-developer-write-new-code-user-story.md#coverage). Make sure that at least 80% of the code is exercised by the unit tests.
 
@@ -135,7 +134,7 @@ This procedure uses the Visual Studio Unit Test Framework, but you can also use 
     Assert.AreEqual(expectedResult, actualResult)
     ```
 
--   Your test methods can call other ordinary methods that do not have the `TestMethod` attribute.  
+-   Your test methods can call other ordinary methods that don't have the `TestMethod` attribute.  
 -   You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
 
     ```csharp
@@ -175,7 +174,7 @@ First, create the project where you want to add the new class, unless it already
 #### To generate a class
 
 1. Place the cursor on an example of the class you want to generate, for example, `LocalMath`. On the shortcut menu, choose **Generate Code**, **New Type**.  
-2. In the **New Type** dialog box, set **Project** to the class library project. In this example, it is **Fabrikam.Math**.
+2. In the **New Type** dialog box, set **Project** to the class library project. In this example, it's **Fabrikam.Math**.
 
 #### To generate a method
 
@@ -413,7 +412,7 @@ public double SquareRoot(double x)
 
 ### Regression
   
-The new test passes, but there is a regression. A test that used to pass now fails:
+The new test passes, but there's a regression. A test that used to pass now fails:
 
 ![Screenshot of Unit Test failed which previously passed.](media/day-life-alm-developer-write-new-code-user-story/IC675832.png)  
 
@@ -458,7 +457,7 @@ To verify that a specific test reaches into specific branches of the code, you c
 You continue to update the code in small steps until you're satisfied that:
 - All the available unit tests pass.
 
-  In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows developers to run a minimal set of unit tests on their own machines, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/repos/index.md).
+  In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it's merged into the source tree. The check-in is rejected if the run fails. This allows developers to run a minimal set of unit tests on their own machines, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/repos/index.md).
 -   Code coverage meets the team's standard. 75% is a typical project requirement.
 -   Your unit tests simulate every aspect of the behavior that's required, including both typical and exceptional inputs.
 -   Your code is easy to understand and extend.

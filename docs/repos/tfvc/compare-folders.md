@@ -45,7 +45,7 @@ To do these procedures, you must have the **Read** permission set to **Allow**. 
     -   **Show items that exist only in source path**
     -   **Show items that exist only in target path**
     -   **Show items that are different**
-    -   **Show items that are the same
+    -   **Show items that are the same**
 
 8.  Choose **OK**.
 

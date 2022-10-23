@@ -11,7 +11,7 @@ ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
+# Day in the life of a devops developer: Suspend work, fix a bug, and conduct a code review
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
@@ -20,7 +20,7 @@ The Visual Studio **My Work** and **Code Review** features support context switc
 
 [!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
 
-This tutorial describes how a developer can suspend work on a current task to immediately fix a bug that's blocking teammates in another work item. After fixing the bug, the developer can ask colleagues to review the fix, and after the review passes, check in the fix and resume work on the original task.
+This tutorial describes how you can suspend work on a current task to immediately fix a bug that's blocking teammates in another work item. After fixing the bug, you can ask colleagues to review the fix, and after the review passes, check in the fix and resume work on the original task.
 
 ## Suspend current work
 
@@ -150,15 +150,15 @@ When you're satisfied with your fix for the bug, don't check in your work yet. T
 
 6.  Choose **Submit Request**.
 
-The reviewers will be notified of the request by email.
+The reviewers are notified of the request by email.
 
 You can also request a code review of suspended work, a shelveset, or a changeset. To see a list of changesets, open **Source Control Explorer** and choose the **History** button.
 
-## Accept or decline a code review
+## Do a code review
 
-Julia receives the code review request and accepts it. She reviews the code, writes some comments at the file- and code-block levels, and then sends the code review back to Peter. Adam is too busy to review the code and declines.
+One reviewer receives the code review request and accepts it. The reviewer reviews the code, writes some comments at the file- and code-block levels, and then sends the code review back to you. Another reviewer is too busy to review the code and declines.
 
-In her comments, Julia points out that the test is wrong. The allowable error should be a specified fraction of the input values, not a constant quantity. So the test should multiply the error by the value.
+In the comments, the reviewer points out that the test is wrong. The allowable error should be a specified fraction of the input values, not a constant quantity. So the test should multiply the error by the value.
 
 ```csharp
 // We allow a rounding error of 1 in 1000000
@@ -170,18 +170,18 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 ```
 
 > [!TIP]
-> Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
+> The team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
 
-## To perform a code review  
+## To do a code review  
 ![Screenshot of My Work page - code review item. Code Review page - Decline link, Comment, Decline button.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591278.png)  
 ![Screenshot of Diff window. Code Review page - Accept link, Overall comment, code block comment.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592880.png)
 1.  In **Team Explorer**, on the **My Work** page, go to the **My Code Reviews & Requests** section and open the request.
 
 2.  On the **Code Review** page, you can:
 
-    -   Choose **Accept** or **Decline** to notify the author whether you will perform the review.
+    -   Choose **Accept** or **Decline** to notify the author whether you'll do the review.
 
-    -   Choose **Add Reviewer** to add other reviewers to the code-review request.
+    -   Choose **Add Reviewer** to add other reviewers to the code review request.
 
     -   View the changes to each file that has been updated for this work item.
 
@@ -201,11 +201,11 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 
 ## Respond to a code review
 
-Peter receives and responds to the code review from Julia.
+You receive and respond to the code review from the reviewer.
 
 ### To respond to a code review
 
-The reviewers and author of the code can exchange comments as often as they like. The review ends when the author closes it. With each contribution to the discussion, the other participants will be notified by email.
+You and the reviewers can exchange comments as often as you like. The review ends when you close it. With each contribution to the discussion, the other participants are notified by email.
 
 ![Screenshot of My Work page - code review item. Code Review page - Overall comment, file comment, Close Review link.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592517.png)
 1.  In **Team Explorer**, on the **My Work** page, go to the **Code Reviews & Request** section and double-click the request.
@@ -214,21 +214,21 @@ The reviewers and author of the code can exchange comments as often as they like
 
 2.  Read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**. To send your comments, choose **Send Comments**.
 
-3.  To view a file and see the code-blocks that have comments, or to edit a file, go to the **Comments** section. In the **Files** sub-section, open the shortcut menu for the file and choose either **Compare (Read-Only)** or **Edit File**.
+3.  To view a file and see the code-blocks that have comments, or to edit a file, go to the **Comments** section. In the **Files** subsection, open the shortcut menu for the file and choose either **Compare (Read-Only)** or **Edit File**.
 
-4.  When you and the other reviewers finish responding to each other's comments and you are ready to close the review, click **Close Review**, and then choose either:
+4.  When you and the other reviewers finish responding to each other's comments and you're ready to close the review, select **Close Review**, and then choose either:
 
     -   **Complete** to indicate that the review is finished.
 
     -   -or-
 
-    -   **Abandon** to indicate you are canceling the review.
+    -   **Abandon** to indicate you're canceling the review.
 
 ## Fix the test and the code
 
-Having read Julia's comments, Peter fixes his unit test as she suggests. The test now fails. This shows that the code is not yet correct.
+After reading the review comments, you can fix your unit test as suggested. The test now fails. This shows that the code isn't yet correct.
 
-Peter fixes the code:
+You fix the code:
 
 ```csharp
 /// <summary>
@@ -250,11 +250,11 @@ The test passes once again:
 > [!TIP]
 > To fix a bug, follow the same practice as in code development. Write a test that fails and then make the test pass. Check in the code and the tests only when the tests pass.
 
-Peter now turns his attention to the test case in which the bug was discovered. The steps to reproduce the bug are clearly described in the test case work item. He follows the steps and discovers that the invoices are correctly listed.
+You now turn your attention to the test case in which the bug was discovered. The steps to reproduce the bug are clearly described in the test case work item. You follow the steps and discover that the invoices are correctly listed.
 
 ## Check in the fix
 
-Peter checks in the fixed code and the unit tests. The state of the bug is automatically set to **Resolved**, and the **Assigned To** value is automatically reassigned to the member of the test team who discovered the bug. That team member will verify that the bug has been fixed and close the work item.
+You check in the fixed code and the unit tests. The state of the bug is automatically set to **Resolved**, and the **Assigned To** value is automatically reassigned to the member of the test team who discovered the bug. That team member will verify that the bug has been fixed and close the work item.
 
 ### To check in the fix
 
@@ -273,7 +273,7 @@ Peter checks in the fixed code and the unit tests. The state of the bug is autom
 
 ## Resume work on a task
 
-Peter resumes work on his task. He is able to get back to work quickly because all his code changes are restored to his workspace along with important bits of state such as open windows, breakpoints, and watch window variables.
+Resume work on your original task. You're able to get back to work quickly because all your code changes are restored to your workspace along with important bits of state such as open windows, breakpoints, and watch window variables.
 
 ### To resume work on a task
 

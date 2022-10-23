@@ -11,7 +11,7 @@ ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Check in to a folder controlled by gated check-in
+# Check in to a folder controlled by a gated check-in
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
@@ -70,7 +70,7 @@ After the build completes:
 
 ### Delete the latest changes in your workspace after a gated check-in
 
-If you want to proceed with gated check-in and you don't plan to continue working with your changes, you can delete the changes in your workspace. Your changes are preserved in a shelveset and built. If the build completes, then your changes are checked in. If the build fails, then you can unshelve the shelveset to get the changes back into your workspace.
+If you want to proceed with gated check-in and you don't plan to continue working with your changes, you can delete the changes in your workspace. Your changes are preserved in a shelveset. If the build completes, then your changes are checked in. If the build fails, then you can unshelve the shelveset to get the changes back into your workspace.
 
 1. When you check in, in the **Gated Check-in** dialog box, choose **Show Options**. Clear the **Preserve my pending changes locally** checkbox, and then choose **Build Changes**.
 

@@ -21,7 +21,7 @@ Displays information about and lets you change the attributes, such as comments 
 
 ## Prerequisites
 
-To use the `changeset` command you must have the **Read** permission set to **Allow** for any files or folders in the changeset for which you wish to display full information. The only users who can modify the notes and comments that are associated with a changeset are the users who created the changeset or a user who has the **Revise other user's changes** global permission. 
+To use the `changeset` command, you must have the **Read** permission set to **Allow** for any files or folders in the changeset for which you wish to display full information. The only users who can modify the notes and comments that are associated with a changeset are the users who created the changeset or a user who has the **Revise other user's changes** global permission. 
 
 For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
@@ -96,27 +96,9 @@ The following example associates the check-in notes included in the file *notes.
 c:\projects>tf changeset /notes:@notes.txt 8675309
 ```
 
-Where the *notes.txt* can be in following format:
+Where the *notes.txt* can be in the following format:
 
-```
-field1=value1;
-```
-
-```
-field2=value that
-```
-
-```
-spans multiple
-```
-
-```
-lines;
-```
-
-```
-field3 = value3;
-```
+`field1=value1;`<br>`field2=value that`<br>`spans multiple`<br>`lines;`<br>`field3 = value3;`
 
 The following example replaces the existing comment for changeset 8675309 and displays information about the changeset in the command prompt window. This example doesn't open the Visual Studio **Changeset** dialog box.
 
