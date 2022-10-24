@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
 ---
 
-
 # Add tasks or child items as checklist items
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -97,10 +96,10 @@ When you complete a task or other checklist item, choose the checkbox to change 
 <img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" />
 ::: moniker-end
 
-The State of the work item is updated from **Active** to **Closed** for Agile and CMMI projects and from **To Do** to **Done** for Scrum projects, and 
+The **State** of the work item is updated from *Active* to *Closed* for projects based on an Agile or CMMI process, and from *To Do* to *Done* for projects based on a Scrum or Basic process. 
 
 > [!TIP]  
-> No matter the number of workflow states a checklist item has, checking it moves it to its closed state.      
+> No matter the number of workflow states a checklist item has, checking it moves it to its closed or completed state.      
 
 ## Expand or collapse a checklist on a Kanban board
 
@@ -162,3 +161,4 @@ To configure or change the layout of the Kanban board, see [Customize your board
 
 ### REST API resources
 To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work-items/create).
+

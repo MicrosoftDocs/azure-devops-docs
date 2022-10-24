@@ -9,7 +9,7 @@ ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A
 ms.author: kaelli  
 author: KathrynEE  
 monikerRange: '<= azure-devops'
-ms.date: 06/29/2022
+ms.date: 10/18/2022
 ---
  
 
@@ -117,11 +117,22 @@ ASOF '02-11-2020'
 Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
 
 ```WIQL
-WHERE [System.ResolvedDate] >= '01-18-2019 GMT' and [Resolved Date/Time] < '01-09-2019 GMT'
-WHERE [Resolved Date] >= '01-18-2019 14:30:01'
+WHERE 
+   AND [System.ChangedDate] >= '01-18-2019 GMT'
+   AND ([Closed Date] < '01-09-2022 GMT'
+   OR [Resolved Date] >= '01-18-2019 14:30:01')  
 ```
+
 When the time is omitted in a DateTime literal and the dayPrecision parameter equals false, the time is assumed to be zero (midnight). The default setting for the dayPrecision parameter is false.
 
+Or, you can specify ISO 8601 format which is valid no matter the locale. ISO 8601 represents date and time by starting with the year, followed by the month, the day, the hour, the minutes, seconds and milliseconds. For example, 2021-12-10 15:00:00.000, represents the 10th of December 2021 at 3 p.m. in local time. An example of using ISO 8601 format is as follows. 
+
+```WIQL
+WHERE 
+   AND [System.ChangedDate] >= '2019-01-18T00:00:00.0000000'
+   AND ([Closed Date] < '2022-01-09T00:00:00.0000000'
+   OR [Resolved Date] >= '2019-01-18T00:00:00.0000000')  
+```
 
 
 ### Custom fields
@@ -516,7 +527,7 @@ WHERE
     AND [System.WorkItemType] <> ''
     AND ([System.IterationPath] UNDER 'Fabrikam Fiber\Release 1'
     AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>') 
-    ASOF  '01-05-2022T00:00:00.0000000'
+    ASOF  '01-05-2022 00:00:00.0000000'
 ```
 
 > [!NOTE]  

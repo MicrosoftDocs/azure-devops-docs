@@ -95,7 +95,7 @@ https://dataimport.dev.azure.com
  <li>https://*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
  <li>https://cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
  <li>https://static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
- <li>https://vsrm.dev.azure.com: hosts package feeds</li>
+ <li>https://vsrm.dev.azure.com: hosts releases</li>
  <li>https://vstsagentpackage.azureedge.net: required to setup self-hosted agent in machines within your network</li>
  <li>https://amp.azure.net: needed for deploying to Azure app service</li>
  <li>https://go.microsoft.com: access go links</li>

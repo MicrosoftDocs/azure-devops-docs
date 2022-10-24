@@ -16,12 +16,13 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: August 2022
+          - text: September 2022
             url: azure-devops-docs-whats-new.md
+          - text: August 2022
+            url: azure-devops-docs-2022-08.md
           - text: July 2022
             url: azure-devops-docs-2022-07.md
-          - text: June 2022
-            url: azure-devops-docs-2022-06.md
+
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:
@@ -37,4 +38,4 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Azure DevOps
-            url: ../features-timeline.md#released-features
+            url: ../features-timeline-released.md#released-features

@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2022
+ms.date: 10/05/2022
 ---
 
 # Define a work item query in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
 ::: moniker range=">= azure-devops-2020"
@@ -458,6 +458,36 @@ To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungr
 To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
 
 * * *
+
+
+<a id="query-results-widget-dashboard" /> 
+
+## View query results in a dashboard 
+
+The following two widgets display query results. You can open work items directly from these widgets.  
+- **Work assigned to me**: Lists all proposed or active work items assigned to the signed-in user. Lists the ID, State, and Title fields. 
+- **Query results widget**: Displays the results of a flat, tree, or direct-links query. You can configure the fields displayed through the widget, resize the column fields, and expand and collapse tree and direct-links query. 
+
+To learn more about adding widgets to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+
+
+<a id="query-results-widget-parent-titles" /> 
+
+::: moniker range="azure-devops"
+
+### View query results widget with Parent titles
+
+You can view the results of a query with the **Parent** title displayed. To do so, perform these steps: 
+1. Create the query that filters the work items of interest. The query can be a flat-list, tree, or direct-links query. 
+2. Add the **Parent** field as a column. 
+3. Save the query as a Shared query or Team favorite. 
+3. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
+
+The following image illustrates a query results widget that displays the **Parent** field. 
+
+:::image type="content" source="media/using-queries/query-results-widget-with-parent-column-field.png" alt-text="Screenshot of query results widget showing a Parent column field.":::
+
+::: moniker-end
 
 ## Related articles
 

@@ -3,10 +3,9 @@ title: Build and deploy Python web apps
 description: Use CI/CD with Azure Pipelines to automatically build, test, and deploy Python web apps to Azure App Service on Linux.
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
-ms.manager: barbkess
 ms.author: jukullam
 author: juliakm
-ms.date: 12/23/2021
+ms.date: 10/17/2022
 monikerRange: 'azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
 ---
@@ -34,7 +33,7 @@ To test the example app locally, from the folder containing the code, run the fo
 sudo apt-get install python3-venv  # If needed
 python3 -m venv .env
 source .env/bin/activate
-pip install -r requirements.txt
+pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
 export set FLASK_APP=hello_app.webapp
 python3 -m flask run
 ```
@@ -43,7 +42,7 @@ python3 -m flask run
 # Windows
 py -3 -m venv .env
 .env\scripts\activate
-pip install -r requirements.txt
+pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
 $env:FLASK_APP = "hello_app.webapp"
 python -m flask run
 ```
@@ -218,7 +217,7 @@ Then we have script-based task that creates a virtual environment and installs d
            source antenv/bin/activate
            python -m pip install --upgrade pip
            pip install setup
-           pip install -r requirements.txt
+           pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
          workingDirectory: $(projectRoot)
          displayName: "Install requirements"
    ```
@@ -274,6 +273,7 @@ Then we have script-based task that creates a virtual environment and installs d
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              deploymentMethod: zipDeploy
 
               # The following parameter is specific to the Flask example code. You may
               # or may not need a startup command for your app.
@@ -334,7 +334,7 @@ As described in [Configure Python app on App Service - Container startup process
 When using Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can add `startUpCommand` with post-deployment script for this purpose:
 
 ```yaml
-startUpCommand:  python3.6 manage.py migrate
+startUpCommand:  python3.7 manage.py migrate
 ```
 
 ## Run tests on the build agent
@@ -345,10 +345,10 @@ As part of your build process, you may want to run tests on your app code. Tests
 # The | symbol is a continuation character, indicating a multi-line script.
 # A single-line script can immediately follow "- script:".
 - script: |
-    python3.6 -m venv .env
+    python3.7 -m venv .env
     source .env/bin/activate
-    pip3.6 install setuptools
-    pip3.6 install -r requirements.txt
+    pip3.7 install setuptools
+    pip3.7 install -r requirements.txt
 
   # The displayName shows in the pipeline UI when a build runs
   displayName: 'Install dependencies on build agent'
@@ -398,7 +398,7 @@ The following steps do the equivalent of the `az webapp up` command:
    > If you want to deploy your code at the same time you create the app service, you can use the `--deployment-source-url` and `--deployment-source-branch` arguments with the `az webapp create` command. For more information, see [az webapp create](/cli/azure/webapp?view=azure-cli-latest&preserve-view=true#az-webapp-create).
 
    ```azurecli
-   az webapp create -g <your-resource-group> -p <your-appservice-plan> -n <your-appservice> --runtime "Python|3.6"
+   az webapp create -g <your-resource-group> -p <your-appservice-plan> -n <your-appservice> --runtime "Python|3.7"
    ```
 
    > [!TIP]

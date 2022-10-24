@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 07/27/2022
+ms.date: 10/11/2022
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -434,6 +434,28 @@ steps:
     - ${{ each env in split(variables.environments, ',')}}:
       - script: ./deploy.sh --environment ${{ env }}
   ```
+* Example of using split() with replace():
+  ```yml
+  parameters:
+  - name: resourceIds
+    type: object
+    default:
+    - /subscriptions/mysubscription/resourceGroups/myResourceGroup/providers/Microsoft.Network/loadBalancers/kubernetes-internal
+    - /subscriptions/mysubscription02/resourceGroups/myResourceGroup02/providers/Microsoft.Network/loadBalancers/kubernetes
+  - name: environments
+    type: object
+    default: 
+    - prod1
+    - prod2
+
+  trigger:
+  - main
+    
+  steps:
+  - ${{ each env in parameters.environments }}:
+    - ${{ each resourceId in parameters.resourceIds }}:
+        - script: echo ${{ replace(split(resourceId, '/')[8], '-', '_') }}_${{ env }}
+  ```
 
 ::: moniker-end
 
@@ -559,7 +581,9 @@ steps:
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
-::moniker-end
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## Each keyword
 

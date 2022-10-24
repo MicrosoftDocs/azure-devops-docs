@@ -80,25 +80,25 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 ## Configure Key Vault access permissions
 
-Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Follow the steps in the following how-to to [Create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) and then continue with the next steps.
+Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Complete the steps in [Create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal), and then continue with the next steps.
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
-1. Select the key vault you created in the previous step.
+2. Select the key vault you created in the previous step.
 
-1. Select **Access policies**.
+3. Select **Access policies**.
 
     :::image type="content" source="media/access-policies.png" alt-text="configure access policies":::
 
-1. Select **Add Access Policy** to add a new policy.
+4. Select **Add Access Policy** to add a new policy.
 
-1. Add a **Get** and **List** to **Secret permissions**.
+5. Add a **Get** and **List** to **Secret permissions**.
 
     :::image type="content" source="media/get-list-permissions.png" alt-text="Add get and list permissions":::
 
-1. Under **Select principal**, select to add a service principal and choose the one you created earlier.
+6. Under **Select principal**, select to add a service principal and choose the one you created earlier.
 
-1. Select **Save** when you are done.
+7. Select **Save** when you are done.
 
 ## Query and use secrets in your pipeline
 
