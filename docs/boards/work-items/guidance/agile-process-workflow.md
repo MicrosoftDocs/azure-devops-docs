@@ -24,7 +24,7 @@ To gain insight into a portfolio of features, scenarios, or user experiences, pr
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
-[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)]  
+
 
 ## Define user stories
 

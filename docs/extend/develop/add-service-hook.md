@@ -1,17 +1,17 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Create a consumer service for service hooks | Extensions for Azure DevOps 
+title: Add a service hook
 description: Learn how to create a custom consumer service for service hooks in Azure DevOps.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
-ms.custom: freshness-fy22q2
+ms.custom: engagement-fy23
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/27/2021
+ms.date: 10/14/2022
 ---
 
-# Create a consumer service for service hooks
+# Add a service hook
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -80,12 +80,12 @@ It's displayed in the Marketplace and when someone installs your extension. You 
 > Make sure to update the `publisher` property.
 > Valid values for categories are: `Azure Repos`, `Azure Boards`, `Azure Pipelines`, `Azure Test Plans`, and `Azure Artifacts`.
 
-For a consumer service, the following properties are required:
+The following properties are required for a consumer service.
 
 | Property           | Description
 |--------------------|-----------------------|
 | manifestVersion    | Number corresponding to the version of the manifest format.  |
-| id                 | Unique ID for your consumer service.       |
+| ID                 | Unique ID for your consumer service.       |
 | version            | String specifying the version of the consumer service.
 | name               | Name of the consumer service.    |
 | publisher          | Identifier of the publisher.  |
@@ -99,4 +99,7 @@ For a consumer service, the following properties are required:
 
 ## Related articles
 
-- [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
+- [Service hook consumers](../../service-hooks/consumers.md)
+- [Available services for service hooks](../../service-hooks/overview.md#available-services)
+- [Create a service hook subscription programmatically](../../service-hooks/create-subscription.md)
+- [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)

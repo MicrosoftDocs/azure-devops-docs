@@ -141,7 +141,7 @@
     displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
     href: change-organization-collection-level-permissions.md
   - name: Set permissions to manage extensions
-    href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+    href: ../../marketplace/grant-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
     displayName: Marketplace, access, settings, users
   - name: Manage access policies (cloud)
     items:

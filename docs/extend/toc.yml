@@ -1,12 +1,12 @@
 - name: Get started
   items:
   - name: Develop a web extension
-    displayName: package, publish, install, debug, dashboard, widget, build, task
+    displayName: build, create, develop, extension, web
     href: get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Extensibility points
     href: reference/targets/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Contribution model
-    displayName: plug, hub, action, build, task
+    displayName: plug, hub, action, build, task, type, target
     href: develop/contributions-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Create a custom pipelines task
     displayName: extension, manifest, package, publish, install, Marketplace
@@ -86,7 +86,7 @@
 - name: Package and publish
   items:
   - name: Package and publish extensions
-    displayName: install, Marketplace, public
+    displayName: upload, install, Marketplace, public, private
     href: publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Package and publish integrations
     displayName: extend, enhance, tool, service, product, manifest, publisher

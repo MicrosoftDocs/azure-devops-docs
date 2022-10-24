@@ -311,7 +311,7 @@ additionalContent:
         - title: Marketplace & Extensibility
           links:
             - text: Discover extensions
-              url: ./marketplace/overview.md
+              url: /azure/devops/extend/overview
             - text: Develop extensions
               url: ./extend/get-started/node.md
             - text: Integrate applications

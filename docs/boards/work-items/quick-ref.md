@@ -330,7 +330,7 @@ You customize work item types using the On-premises XML process model. For more 
 ---
 :::row:::
    :::column span="1":::
-      - [Add a checkbox (Boolean) field (TFS 2017.2)](../../reference/add-modify-field.md)  
+      - [Add a checkbox (Boolean) field](../../reference/add-modify-field.md)  
       - [Add a custom field](../../reference/add-modify-field.md)  
       - [Add a custom pick list](../../reference/add-modify-field.md#picklist)  
       - [Add or modify a field](../../reference/add-modify-field.md)  

@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 04/01/2022
+ms.date: 10/03/2022
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -40,7 +40,7 @@ Examine the contents of the YAML file.
       vmImage: 'ubuntu-latest'
 
     steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: 'pom.xml'
         mavenOptions: '-Xmx3072m'
@@ -191,7 +191,7 @@ To build a project using different versions of that language, you can use a `mat
       vmImage: $(imageName)
 
     steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: "pom.xml"
         mavenOptions: "-Xmx3072m"
