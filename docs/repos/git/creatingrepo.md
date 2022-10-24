@@ -38,21 +38,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 ## Create a local Git repo from a new solution
 
-Create a local Git repo when you create a new Visual Studio solution.
-
-#### [Visual Studio 2022](#tab/visual-studio-2022)
-
-Visual Studio 2022 doesn't support creating a new Git repo when creating a solution. Instead, create your Visual Studio solution, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
-
-#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
-
-Visual Studio 2019 doesn't support creating a new Git repo when creating a solution. Instead, create your Visual Studio solution, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
-
-#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
-
-Visual Studio 2019 doesn't support creating a new Git repo when creating a solution. Instead, create your Visual Studio solution, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
-
-#### [Git Command Line](#tab/command-line)
+Visual Studio doesn't support creating a local Git repo when you create a new solution. Instead, create your Visual Studio solution, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
 
 Git command line doesn't support creating a new Visual Studio solution. Instead, create your new solution using Visual Studio, then follow the steps in [Create a local Git repo from an existing solution](#create-a-local-git-repo-from-an-existing-solution).
 
