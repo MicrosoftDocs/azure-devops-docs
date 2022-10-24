@@ -55,7 +55,7 @@ Mermaid lets you create diagrams and visualizations using text and code.
 > [!NOTE]
 > - Not all syntax in the content linked below for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
 > - Mermaid isn't supported in the Internet Explorer browser.
-> - If you experience an "Unsupported diagram type", the feature likely hasn't rolled out to your instance yet.
+> - If you experience an "Unsupported diagram type", the functionality may not be yet available in your org due to usual deployment scheme.
 
 Wiki supports the following Mermaid diagram types:
 
