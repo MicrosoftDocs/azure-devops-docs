@@ -70,7 +70,7 @@ Parameter     | Type   | Notes
 --------------|--------|----------------------------
 client_id     | GUID   | The ID assigned to your app when it was registered.
 response_type | string | `Assertion`
-state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization. request.
+state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 
