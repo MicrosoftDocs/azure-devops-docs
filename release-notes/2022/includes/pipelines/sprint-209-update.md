@@ -131,13 +131,13 @@ The [checkout task](https://learn.microsoft.com/azure/devops/pipelines/yaml-sche
 
 This behavior can either be controlled from the YAML file or from the UI.
 
-To opt-out from syncing the tags through YAML file, add the `noTags: true` to the checkout step. When the `noTags` option is not specified, it's the same as if `noTags: false` is used.
+To opt-out from syncing the tags through YAML file, add the `fetchTags: false` to the checkout step. When the `fetchTags` option is not specified, it's the same as if `fetchTags: true` is used.
 
 ```yaml 
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # whether to fetch clean each time
-  noTags: boolean # whether to prevent sync of tags
+  fetchTags: boolean # whether to sync the tags
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
   submodules: boolean | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
@@ -158,7 +158,7 @@ To opt-out from syncing the tags, uncheck the Sync tags checkbox in the get sour
 
 ---
 
-For all new pipelines you create (YAML or Classic), tags won't be synced by default. This option does not change the behavior of existing pipelines. Tags will still be synced in those pipelines unless you explicitly change the option as described above.
+For all new pipelines you create (YAML or Classic), tags are still synced by default. This option does not change the behavior of existing pipelines. Tags will still be synced in those pipelines unless you explicitly change the option as described above.
 
 ### Updated brownout schedule for Ubuntu 18.04 images
 
