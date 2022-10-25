@@ -3,7 +3,7 @@ title: Trigger an Azure Pipelines run from GitHub Actions
 description: Start an Azure DevOps pipeline run from within a GitHub action
 ms.author: jukullam
 ms.custom: github-actions-azure, contperf-fy21q4, freshness-fy22q2
-ms.date: 05/03/2022
+ms.date: 10/25/2022
 monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
