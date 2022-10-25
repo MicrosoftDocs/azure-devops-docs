@@ -926,126 +926,91 @@ Event: A deployment completed.
 #### Sample payload
 
 ```json
-"environment": {
-            "id": 5,
-            "releaseId": 0,
-            "name": "Dev",
-            "status": "succeeded",
-            "variables": {},
-            "variableGroups": [],
-            "preDeployApprovals": [],
-            "postDeployApprovals": [],
-            "preApprovalsSnapshot": {
-                "approvals": [],
-                "approvalOptions": {
-                    "requiredApproverCount": 0,
-                    "releaseCreatorCanBeApprover": true,
-                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
-                    "enforceIdentityRevalidation": false,
-                    "timeoutInMinutes": 0,
-                    "executionOrder": "beforeGates"
-                }
-            },
-            "postApprovalsSnapshot": {
-                "approvals": []
-            },
-            "deploySteps": [],
-            "rank": 1,
-            "definitionEnvironmentId": 1,
-            "queueId": 1,
-            "environmentOptions": {
-                "emailNotificationType": "OnlyOnFailure",
-                "emailRecipients": "release.environment.owner;release.creator",
-                "skipArtifactsDownload": false,
-                "timeoutInMinutes": 0,
-                "enableAccessToken": false,
-                "publishDeploymentStatus": false,
-                "badgeEnabled": false,
-                "autoLinkWorkItems": false,
-                "pullRequestDeploymentEnabled": false
-            },
-            "demands": [],
-            "conditions": [],
-            "modifiedOn": "2016-01-21T08:19:17.26Z",
-            "workflowTasks": [],
-            "deployPhasesSnapshot": [],
-            "owner": {
-                "displayName": "Chuck Reinhart",
-                "id": "4247c988-4060-4712-abca-ff44681dd78a"
-            },
-            "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-            "schedules": [],
-            "release": {
-                "id": 1,
-                "name": "Release-1",
-                "_links": {
-                    "web": {
-                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
-                    }
-                }
-            },
-            "releaseDefinition": {
-                "id": 1,
-                "name": "Fabrikam.CD",
-                "projectReference": null,
-                "_links": {}
-            },
-            "preDeploymentGatesSnapshot": {
-                "id": 0,
-                "gatesOptions": null,
-                "gates": []
-            },
-            "postDeploymentGatesSnapshot": {
-                "id": 0,
-                "gatesOptions": null,
-                "gates": []
-            }
-        },
-        "project": {
-            "id": "00000000-0000-0000-0000-000000000000",
-            "name": "Fabrikam"
-        },
-        "deployment": {
-            "id": 0,
-            "release": {
-                "id": 1,
-                "name": "Release-1",
-                "artifacts": [],
-                "_links": {
-                    "web": {
-                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
-                    }
-                }
-            },
-            "releaseDefinition": null,
-            "releaseEnvironment": {
-                "id": 5,
-                "name": "Dev",
-                "_links": {
-                    "web": {
-                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
-                    }
-                }
-            },
-            "projectReference": null,
-            "definitionEnvironmentId": 0,
-            "attempt": 1,
-            "reason": "none",
-            "deploymentStatus": "succeeded",
-            "operationStatus": "Undefined",
-            "requestedBy": null,
-            "startedOn": "2016-01-21T08:19:17.26Z",
-            "completedOn": "2016-01-21T08:25:17.26Z",
-            "lastModifiedOn": "0001-01-01T00:00:00",
-            "lastModifiedBy": null,
-            "conditions": [],
-            "preDeployApprovals": [],
-            "postDeployApprovals": [],
-            "_links": {}
-        },
-        "comment": null,
-        "data": {}
+{
+  "id": "c3e52c57-187a-45c4-abe2-184a48291bad",
+  "eventType": "ms.vss-release.deployment-completed-event",
+  "publisherId": "rm",
+  "scope": "all",
+  "message": {
+    "text": "Deployment of release Release-1 on environment Dev Succeeded.",
+    "html": "Deployment on environment <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded.",
+    "markdown": "Deployment on environment [Dev](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded."
+  },
+  "detailedMessage": {
+    "text": "Deployment of release Release-1 on environment Dev Succeeded. Time to deploy: 0.11 minutes.",
+    "html": "Deployment on environment <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded. Time to deploy: 0.11 minutes.",
+    "markdown": "Deployment on environment [Dev](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded. Time to deploy: 0.11 minutes."
+  },
+  "resource": {
+    "environment": {
+      "id": 5,
+      "releaseId": 0,
+      "name": "Dev",
+      "status": "succeeded",
+      "variables": {},
+      "preDeployApprovals": [],
+      "postDeployApprovals": [],
+      "preApprovalsSnapshot": {
+        "approvals": [],
+        "approvalOptions": {
+          "requiredApproverCount": 0,
+          "releaseCreatorCanBeApprover": true
+        }
+      },
+      "postApprovalsSnapshot": {
+        "approvals": []
+      },
+      "deploySteps": [],
+      "rank": 1,
+      "definitionEnvironmentId": 1,
+      "queueId": 1,
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false
+      },
+      "demands": [],
+      "conditions": [],
+      "modifiedOn": "2016-01-21T08:19:17.26Z",
+      "workflowTasks": [
+        {
+          "taskId": "00000000-0000-0000-0000-000000000000",
+          "version": "*",
+          "name": "Deploy Website to Azure",
+          "enabled": true,
+          "alwaysRun": false,
+          "continueOnError": false,
+          "timeoutInMinutes": 0,
+          "definitionType": null,
+          "inputs": {
+            "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
+            "WebSiteName": "$(webAppName)",
+            "WebSiteLocation": "Southeast Asia",
+            "Slot": "",
+            "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
+          }
+        }
+      ],
+      "deployPhasesSnapshot": [],
+      "owner": {
+        "id": "4247c988-4060-4712-abca-ff44681dd78a",
+        "displayName": "Chuck Reinhart"
+      },
+      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
+      "schedules": [],
+      "release": {
+        "id": 1,
+        "name": "Release-1",
+        "url": "http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
+      }
     },
+    "project": {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "Fabrikam"
+    }
+  },
   "resourceVersion": "3.0-preview.1",
   "resourceContainers": {
     "collection": {
