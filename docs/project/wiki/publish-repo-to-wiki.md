@@ -71,7 +71,7 @@ If you need to switch projects, select :::image type="icon" source="../../media/
 
 ::: moniker-end
 
-## Publish a Git repo to a wiki
+## Publish a Git repository to a wiki
 
 #### [Browser](#tab/browser) 
 
@@ -118,7 +118,7 @@ The head of the Git repo branch is mapped to the wiki. Any changes made within t
 > [!NOTE]
 > You can publish up to 10 branches per published code wiki.
 
-For the provisioned wiki with the additional Markdown files, you can add or edit pages in the same way that you maintain code in your Git repo.  
+For the provisioned wiki with the extra Markdown files, you can add or edit pages in the same way that you maintain code in your Git repo.  
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
@@ -227,7 +227,7 @@ You can add the following pages to your published wiki:
 
 - Add a file to a root folder or subfolder from the web portal
 - Upload files to a root folder or subfolder
-- Add or update an .order file to specify the page sequence in the wiki TOC
+- Add or update an `.order` file to specify the page sequence in the wiki TOC
 
 Each update requires you to commit your changes to the repo. You can then refresh your wiki for your published repo to review the changes.  
 
@@ -300,7 +300,7 @@ Misc content
 
 By default, the first file that appears at the root within alphabetical order is set as the wiki home page. When you select **Wiki** in the web portal, the home page opens.
 
-1. Change the home page by setting the page sequence within the root *`.order`* file.
+1. Change the home page by setting the page sequence within the root `.order` file.
 
 For example, enter the page name into the first line:  
 
