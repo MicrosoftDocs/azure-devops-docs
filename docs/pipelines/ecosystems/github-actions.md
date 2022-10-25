@@ -3,7 +3,7 @@ title: Trigger an Azure Pipelines run from GitHub Actions
 description: Start an Azure DevOps pipeline run from within a GitHub action
 ms.author: jukullam
 ms.custom: github-actions-azure, contperf-fy21q4, freshness-fy22q2
-ms.date: 05/03/2022
+ms.date: 10/25/2022
 monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
@@ -24,21 +24,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you might want to
 
 ## Authenticate with Azure Pipelines
 
-Use a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) to connect your GitHub account to Azure DevOps. You can generate a PAT from within Azure DevOps and then store it as a GitHub secret. Within your GitHub workflow, reference the secret so that your GitHub action can authenticate with your Azure DevOps project. 
-
-1. Open your GitHub repository and go to **Settings**.
-
-    :::image type="content" source="media/github-repo-settings.png" alt-text="Select Settings in GitHub":::
-
-
-2. Select **Secrets** and then **New repository secret**.
-
-    :::image type="content" source="media/select-secrets.png" alt-text="Choose to add a secret":::
-
-3. Paste in your PAT and give it the name `AZURE_DEVOPS_TOKEN`. 
-
-4. Save by selecting **Add secret**.
-
+[!INCLUDE [include](~/../docs/reusable-content/github-actions/authenticate-with-pat.md)]
 
 ## Create a GitHub workflow that triggers a pipeline
 
