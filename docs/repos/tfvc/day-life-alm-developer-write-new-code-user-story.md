@@ -5,7 +5,7 @@ description: A day in the life of a devops developer. Write new code for a user 
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 10/14/2022
+ms.date: 10/24/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -16,9 +16,9 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-This tutorial walks through how you and your team can get maximum benefit from the most recent versions of Azure DevOps and Visual Studio to build your app. The tutorial provides examples of how you can use Visual Studio and Azure DevOps to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and do other tasks.
+This tutorial walks through how you and your team can get maximum benefit from the most recent versions of Team Foundation Version Control (TFVC) and Visual Studio to build your app. The tutorial provides examples of how you can use Visual Studio and TFVC to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and do other tasks.
 
-When a team adopts Visual Studio and Azure DevOps to manage their code, they set up their server and client machines, create a backlog, plan an iteration, and complete other planning necessary to begin developing their app.
+When a team adopts Visual Studio and TFVC to manage their code, they set up their server and client machines, create a backlog, plan an iteration, and complete other planning necessary to begin developing their app.
 
 Developers review their backlogs to select tasks to work on. They write unit tests for the code they plan to develop. Typically, they run the tests several times in an hour, gradually writing more detailed tests and then writing the code that makes them pass. Developers often discuss their code interfaces with colleagues who will use the method they're writing.
 
@@ -32,13 +32,13 @@ In Visual Studio **Team Explorer**, open the **My Work** page. The team has agre
 
 ### To review personal backlog and prepare tasks to begin work
   
- ![Screenshot of To Do List on My Work Page in Team Navigator.](media/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
+ ![Screenshot of the My Work page.](media/day-life-alm-developer-write-new-code-user-story/my-work.png)  
 
 1. In **Team Explorer**, if you aren't already connected to the project that you want to work in, [connect to the project](../../organizations/projects/connect-to-projects.md).
 1. From the **Home** page, select **My Work**.
-1. On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work Items** section.
+1. On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work** section.
 
-   You can also select a task in the **Available Work Items** list and then select **Start**.
+   You can also select the task in the **Available Work Items** list and then select **Start**.
 
 ### Draft incremental work plan
 
@@ -60,13 +60,17 @@ Some developers write this kind of plan in comments in their test code. Others j
 
 ## Create the first unit test
 
-Begin by creating a unit test. Begins with the unit test because you want to write an example of code that uses your new class.
+Begin by creating a unit test. Begin with the unit test because you want to write an example of code that uses your new class.
 
-This is the first unit test for the class library that you're testing, so you create a new unit test project. Open the **New Project** dialog box and choose **Visual C\#**, **Test**, and then **Unit Test Project**.
+This is the first unit test for the class library that you're testing, so you create a new unit test project.
 
-![Screenshot of Unit Test selected in New Project dialog.](media/day-life-alm-developer-write-new-code-user-story/IC591729.png)  
+1. Select **File** > **New Project**.
+1. In the **Create a new project** dialog box, select the arrow next to **All languages** and select **C#**, select the arrow next to **All project types** and choose **Test**, and then select **MSTest Test Project**.
+1. Select **Next**, and then select **Create**.
 
-The unit test project provides a C# file into which you can write your example. At this stage, you just want to illustrate how one of your new methods will be invoked:
+![Screenshot of Unit Test selected in the Create a new project dialog box.](media/day-life-alm-developer-write-new-code-user-story/create-unit-test.png)  
+
+In the code editor, replace the contents of *UnitTest1.cs* with the following code. At this stage, you just want to illustrate how one of your new methods will be invoked:
 
 ```csharp
 using System;
@@ -101,62 +105,61 @@ You write the example in a test method because, by the time you write your code,
 
 ### To create a unit test project and methods
 
-Usually you would create a new test project for each project that's being tested. If a test project already exists, you can just add new test methods and classes.
+Usually you create a new test project for each project that's being tested. If a test project already exists, you can just add new test methods and classes.
 
-This procedure uses the Visual Studio Unit Test Framework, but you can also use frameworks from other providers. Test Explorer works equally well with other frameworks, provided you install the appropriate adapter.
+This tutorial uses the Visual Studio Unit Test Framework, but you can also use frameworks from other providers. Test Explorer works equally well with other frameworks, provided you install the appropriate adapter.
 
--   Create a Test project, if it doesn't already exist.  
-    -   In the **New Project** dialog box, choose a language such as **Visual Basic**, **Visual C++** or **Visual C\#**. Choose **Test** and then **Unit Test Project**.  
--   Add your tests to the test class that is provided. Each unit test is one method.
+1. Create a Test project by using the preceding steps. You can choose languages such as **C#**, **F#**, and **Visual Basic**.
+2. Add your tests to the test class that is provided. Each unit test is one method.
 
-    Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
+   Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
 
-    ```csharp
-    [TestMethod]
-    public void SignatureTest()
-    {...}
-    ```
+   ```csharp
+   [TestMethod]
+   public void SignatureTest()
+   {...}
+   ```
 
-    ```vb
-    <TestMethod()>
-    Public Sub SignatureTest()
-    ...
-    End Sub
-    ```
+   ```vb
+   <TestMethod()>
+   Public Sub SignatureTest()
+   ...
+   End Sub
+   ```
 
--   Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
+   - Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
 
-    ```csharp
-    Assert.AreEqual(expectedResult, actualResult);
-    ```
+     ```csharp
+     Assert.AreEqual(expectedResult, actualResult);
+     ```
 
-    ```vb
-    Assert.AreEqual(expectedResult, actualResult)
-    ```
+     ```vb
+     Assert.AreEqual(expectedResult, actualResult)
+     ```
 
--   Your test methods can call other ordinary methods that don't have the `TestMethod` attribute.  
--   You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
+   - Your test methods can call other ordinary methods that don't have the `TestMethod` attribute.  
+   - You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
 
-    ```csharp
-    [TestClass]
-    public class UnitTest1
-    { ... }
-    ```
+     ```csharp
+     [TestClass]
+     public class UnitTest1
+     { ... }
+     ```
 
-    ```vb
-    <TestClass()>
-    Public Class UnitTest1
-    ...
-    End Class
-    ```
+     ```vb
+     <TestClass()>
+     Public Class UnitTest1
+     ...
+     End Class
+     ```
 
 For information about how to write unit tests in C++, see [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).
 
 ## Create a stub for the new code
 
-Next, you create a class library project for your new code. There's now a project for the code under development and a project for the unit tests. You add a project reference from the test project to the code under development.
+Next, reate a class library project for your new code. There's now a project for the code under development and a project for the unit tests. You add a project reference from the test project to the code under development.
 
-![Screenshot of Solution Explorer with Test and Class projects.](media/day-life-alm-developer-write-new-code-user-story/IC612257.png)  
+![Screenshot of Solution Explorer with Test and Class projects.](media/day-life-alm-developer-write-new-code-user-story/math-solution-explorer.png)  
 
 In the new project, you add the new class and a minimal version of the method that will at least allow the test to build successfully. The quickest way to do that is to generate a class and method stub from the invocation in the test.
 
@@ -173,18 +176,20 @@ First, create the project where you want to add the new class, unless it already
 
 #### To generate a class
 
-1. Place the cursor on an example of the class you want to generate, for example, `LocalMath`. On the shortcut menu, choose **Generate Code**, **New Type**.  
-2. In the **New Type** dialog box, set **Project** to the class library project. In this example, it's **Fabrikam.Math**.
+1. Place the cursor on an example of the class you want to generate, for example, `LocalMath`, and select **Quick Actions and Refactorings**.
+1. On the shortcut menu, choose **Generate new type**.  
+2. In the **Generate Type** dialog box, set **Project** to the class library project. In this example, it's **Fabrikam.Math**.
 
 #### To generate a method
 
-- Place the cursor on a call to the method, for example, `SquareRoot`. On the shortcut menu, choose **Generate Code**, **Method Stub**.
+1. Place the cursor on a call to the method, for example, `SquareRoot`, and select **Quick Actions and Refactorings**.
+1. On the shortcut menu, choose **Generate method 'SquareRoot'**.
 
 ## Run the first test
 
-Build and run the test by pressing CTRL+R, T. The test result shows a red **Failed** indicator and the test appears under the list of **Failed Tests**.
+Build and run the test. The test result shows a red **Failed** indicator and the test appears under the list of **Failed Tests**.
 
-![Screenshot of Unit Test Explorer showing one failed test.](media/day-life-alm-developer-write-new-code-user-story/IC675817.png)  
+![Screenshot of Test Explorer showing one failed test.](media/day-life-alm-developer-write-new-code-user-story/first-fail.png)  
 
 Make a simple change to the code:
 
@@ -195,9 +200,9 @@ public double SquareRoot(double p)
 }
 ```
 
-Runs the test again and it passes.
+Run the test again and it passes.
 
-![Screenshot of Unit Test Explorer with one passed test.](media/day-life-alm-developer-write-new-code-user-story/IC675818.png)  
+![Screenshot of Unit Test Explorer with one passed test.](media/day-life-alm-developer-write-new-code-user-story/first-pass.png)  
 
 ### To run unit tests
 
@@ -205,22 +210,20 @@ Runs the test again and it passes.
 
 To run unit tests:
 
-- Select **Test** > **Run** > **All Tests**
-- Or, if **Test Explorer** is open, choose **Run All**.
-- Or, place the cursor in a test code file and press CTRL+R, T.
+- Select **Test** > **Run All Tests**
+- Or, if **Test Explorer** is open, choose **Run** or **Run All Tests In View**.
 
+If a test appears under **Failed Tests**, open the test, for example, by double-clicking the name. The point at which the test failed is displayed in the code editor.
 
-If a test appears under **Failed Tests**, open the test, for example, by double-clicking the name. The point at which the test failed is displayed.
-
-- To see a full list of tests, choose **Show All**. To return to the summary, select the **Home** icon.
+- To see a full list of tests, choose **Show All**.
 
 - To see the details of a test result, select the test in **Test Explorer**.
 
 - To navigate to the code of a test, double-click the test in **Test Explorer**, or choose **Open Test** on the shortcut menu.
 
-- To debug a test, open the shortcut menu for one or more tests, and then choose **Debug Selected Tests**.
+- To debug a test, open the shortcut menu for one or more tests, and then choose **Debug**.
 
-- To run tests in the background whenever you build the solution, toggle **Run Tests after Build**. Tests that previously failed are run first.
+- To run tests in the background whenever you build the solution, select the arrow next to the **Settings** icon, and then select **Run Tests After Build**. Tests that previously failed are run first.
 
 ## Agree on the interface
 
@@ -258,11 +261,11 @@ Follow a cycle in which you repeatedly write a test and confirm that it fails, w
 
 ### Red
 
-Press CTRL+R, T to run the new test that you created. After you write any test, always run it to make sure that it fails before you write the code that makes it pass. For example, if you forget to place assertions in some tests you write, seeing the **Fail** result gives you confidence that when you make it pass, the test result correctly indicates that a requirement has been satisfied.
+Run all tests, including the new test that you created. After you write any test, always run it to make sure that it fails before you write the code that makes it pass. For example, if you forget to place assertions in some tests you write, seeing the **Fail** result gives you confidence that when you make it pass, the test result correctly indicates that a requirement has been satisfied.
 
-Another useful practice is to set **Run Tests after Build**. This option runs the tests in the background every time you build the solution, so that you have a continual report of the test status of your code. You might be concerned that this practice might make Visual Studio slow to respond, but this rarely happens.
+Another useful practice is to set **Run Tests After Build**. This option runs the tests in the background every time you build the solution, so that you have a continual report of the test status of your code. You might be concerned that this practice might make Visual Studio slow to respond, but this rarely happens.
 
-![Screenshot of Unit Test Explorer with one failed test.](media/day-life-alm-developer-write-new-code-user-story/IC675829.png)
+![Screenshot of Test Explorer with one failed test.](media/day-life-alm-developer-write-new-code-user-story/one-pass-one-fail.png)
 
 ### Green
   
@@ -284,10 +287,9 @@ public class LocalMath
     }
 ```
 
-
 Run the tests again, and all the tests pass.
 
-![Screenshot of Unit Test Explorer with two passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
+![Screenshot of Unit Test Explorer with two passed tests.](media/day-life-alm-developer-write-new-code-user-story/both-pass.png)
 
 ### Refactor
   
@@ -312,19 +314,18 @@ public class LocalMath
 
 Verify that the tests still pass.
 
-![Screenshot of Unit Test Explorer with two passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
+#### Tips
 
-> [!TIP]
-> Every change you make while you are developing the code should be either a refactoring or an extension:
->
-> - Refactoring means that you don't change the tests because you're not adding new functionality.
-> - Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.
->
-> If you're updating existing code to requirements that have changed, you also delete old tests that no longer represent the current requirements.
->
-> Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.
->
-> Run the tests after every change.
+- Every change you make while you are developing the code should be either a refactoring or an extension:
+
+  - Refactoring means that you don't change the tests because you're not adding new functionality.
+  - Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.
+
+- If you're updating existing code to requirements that have changed, you also delete old tests that no longer represent the current requirements.
+
+- Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.
+
+- Run the tests after every change.
 
 ### ... and repeat
   
@@ -354,8 +355,7 @@ private void VerifyOneRootValue(LocalMath math, double expectedResult)
 
 This test passes the first time it runs.
 
-![Screenshot of Unit Test Explorer with three passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675831.png)  
-
+![Screenshot of Test Explorer with three passed tests.](media/day-life-alm-developer-write-new-code-user-story/all-pass.png
 Just to make sure this result isn't a mistake, you can temporarily introduce a small error into your test to make it fail. After seeing the failure, you can fix it again.
 
 > [!TIP]
@@ -414,7 +414,7 @@ public double SquareRoot(double x)
   
 The new test passes, but there's a regression. A test that used to pass now fails:
 
-![Screenshot of Unit Test failed which previously passed.](media/day-life-alm-developer-write-new-code-user-story/IC675832.png)  
+![Screenshot of Unit Test failed which previously passed.](media/day-life-alm-developer-write-new-code-user-story/regression.png)  
 
 Find and fix the mistake:
 
@@ -429,7 +429,7 @@ public double SquareRoot(double x)
 
 After it's fixed, all the tests pass:
 
-![Screenshot of Unit Test Explorer with four passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675833.png)
+![Screenshot of Unit Test Explorer with four passed tests.](media/day-life-alm-developer-write-new-code-user-story/four-pass.png)
 
 > [!TIP]
 > Make sure every tests passes after every change that you make to the code.
@@ -444,11 +444,13 @@ Your team aims for coverage of at least 80%. They relax this requirement for gen
 
 Good coverage isn't a guarantee that the full functionality of the component has been tested, and it doesn't guarantee that the code will work for every range of input values. Nevertheless, there's a fairly close correlation between coverage of code lines and coverage of the behavioral space of a component. Therefore, good coverage strengthens the team's confidence that they're testing most of the behavior that they should.
 
-To get a code coverage report, on the **Tests** menu, choose **Run**, **Analyze Code Coverage for All Tests**. Then run all the tests again.
+To get a code coverage report, on the **Tests** menu, select **Analyze Code Coverage for All Tests**. All the tests run again.
 
-![Screenshot of Code Coverage result and Show Color button.](media/day-life-alm-developer-write-new-code-user-story/IC592882.png)  
+![Screenshot of Code Coverage result and Show Color button.](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png)
 
-You get a total coverage of 86%. When you expand the total in the report, it shows that the code you're developing has coverage of 100%. This is very satisfactory, because the important score is for the code under test. The uncovered sections are actually in the tests themselves. By toggling the **Show Code Coverage Coloring** button, you can see which parts of the test code haven't been exercised. However, you decide that these sections are unimportant for coverage because they're in the test code and would be used only if an error is detected.
+When you expand the total in the report, it shows that the code you're developing has complete coverage. This is very satisfactory, because the important score is for the code under test. The uncovered sections are actually in the tests themselves.
+
+By toggling the **Show Code Coverage Coloring** button, you can see which parts of the test code haven't been exercised. Code that wasn't used in the tests is highlighted in orange. However, these sections are unimportant for coverage because they're in the test code and would be used only if an error is detected.
 
 To verify that a specific test reaches into specific branches of the code, you can set **Show Code Coverage Coloring** and then run the single test by using the **Run** command on its shortcut menu.
 
@@ -484,32 +486,30 @@ You're notified when the build is completed. In the build results window, you se
 
 ### To check in the changes
 
-![Screenshot of Checking in the pending changes.](media/day-life-alm-developer-write-new-code-user-story/IC591276.png)  
+1.  On the **My Work** page in **Team Explorer**, select **Check in**.
 
-1.  On the menu bar, choose **View**, **Team Explorer**.
+![Screenshot of checking in from My Work.](media/day-life-alm-developer-write-new-code-user-story/check-in.png)  
 
-2.  In **Team Explorer**, select **My Work**.
-
-3.  On the **My Work** page, choose **Check In**.
-
-4.  Review the contents of the **Pending Changes** page to make sure that:
+1.  On the **Pending Changes** page, make sure that:
 
    - All relevant changes are listed in **Included Changes**.
-
    - All relevant work items are listed in **Related Work Items**.
 
-5. Specify a **Comment** to help your team understand the purpose of these changes when they look at the version control history of the changed files and folders.
+1. Enter a **Comment** to help your team understand the purpose of these changes when they look at the version control history of the changed files and folders.
 
-6. Choose **Check In**.
+1. Choose **Check In**.
+
+![Screenshot of checking in the Pending Changes.](media/day-life-alm-developer-write-new-code-user-story/pending-changes.png)  
 
 ### To continuously integrate the code
 
 For more information about how to define a continuous integration build process, see [Set up a CI build](../../pipelines/build/triggers.md). After you set up this build process, you can choose to be notified about the results of team builds.
 
-![Screenshot of notification that CI Build succeeded.](media/day-life-alm-developer-write-new-code-user-story/IC558300.png)
-
-![Screenshot of CI Build results.](media/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
+![Screenshot of the My Builds page with a successful build.](media/day-life-alm-developer-write-new-code-user-story/build-success.png)  
 
 For more information, see [Run, monitor, and manage builds](../../pipelines/get-started/what-is-azure-pipelines.md).
- 
-[Next (Suspend work, fix a bug, and conduct a code review)](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
