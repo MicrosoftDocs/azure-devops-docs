@@ -71,7 +71,7 @@ In the examples provided, make the following replacements:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 <a id="work-item-count" />
 

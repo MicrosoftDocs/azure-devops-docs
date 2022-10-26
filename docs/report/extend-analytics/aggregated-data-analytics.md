@@ -73,7 +73,7 @@ Where the full OData query is:
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
 > ``` 
-> [!INCLUDE [temp](../includes/api-versioning.md)]
+> 
 
 For comparison, using the OData aggregation extension, you add this string to your query:
 

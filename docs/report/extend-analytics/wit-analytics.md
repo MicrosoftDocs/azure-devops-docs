@@ -70,7 +70,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 ::: moniker-end
 
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 <a id="single-entity" />
 

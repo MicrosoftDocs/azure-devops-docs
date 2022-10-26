@@ -36,7 +36,7 @@ Entity sets are named collections of entities. For example, **WorkItems** is an 
 
 Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. To learn how, see [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md).
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 
 ### Composite entities
