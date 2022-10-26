@@ -31,7 +31,7 @@ To do these procedures, you must have the **Read** permission set to **Allow**. 
 
 2.  In **Source Control Explorer**, right-click the source folder you want to compare and choose **Compare**.
 
-    The **Compare** dialog box appears with the version control path of the folder that you selected in the **Source Path** box.
+    The **Compare** dialog box appears with the server path of the folder that you selected in the **Source Path** box.
 
 3.  Under **Source Version**, select the **Type** you want to use for comparison: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
 
