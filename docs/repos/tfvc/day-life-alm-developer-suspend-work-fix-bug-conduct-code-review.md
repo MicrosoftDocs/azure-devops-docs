@@ -41,22 +41,22 @@ Now that your workspace is clean, drag the new task from **Available Work Items*
 
 Switch your work context:
 
-![Screenshot of suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/suspend.png)
- 
 1. If you're not already connected to the project that you want to work in, [connect to the project](../../organizations/projects/connect-to-projects.md).
 
 1. From the **Home** page of **Team Explorer**, choose **My Work**.
+
+   ![Screenshot of suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/suspend.png)
 
 1. On the **My Work** page, in the **In Progress Work** section, choose **Suspend**.
 
 1. In the box that appears, optionally change the name that you want to give this set of suspended work, and then select **Suspend**. The item appears under **Suspended Work**.
 
-1. If the work item you want to assign yourself doesn't appear under **Available Work Items**, you can:
+1. Drag a work item from **Available Work Items** to **In Progress Work**. Or, you can switch to a work item that you previously suspended by dragging it from **Suspended Work**.
+
+   If the work item you want to assign yourself doesn't appear under **Available Work Items**, you can:
 
    - Create a new task or other work item by choosing **New**.
    - Select a different query by selecting **Open Query**.
-
-1. Drag a work item from **Available Work Items** to **In Progress Work**. Or, you can switch to a work item that you previously suspended by dragging it from **Suspended Work**.
 
 > [!TIP]
 > The **In Progress Work** items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the **In Progress Work** state when you switch from one task to another.
@@ -136,13 +136,13 @@ When you're satisfied with your fix for the bug, don't check in your work yet. T
 
 1. In **Team Explorer**, on the **My Work** page under **In Progress Work**, choose **Request Review**.
 
-   ![Screenshot that shows the Request Code Review page.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/request-review.png)
-
    The **New Code Review** page appears.
+
+   ![Screenshot that shows the Request Code Review page.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/request-review.png)
 
    - In the **Enter the name of a reviewer** field, specify one or more reviewers, and press Enter after each selection.
    - In the next field, change the name of the review if you want to.
-   - In the next field, change the area path if you want to.
+   - In the next field, make sure the correct area path appears.
    - In the next field, type an optional description.
    
 1. Choose **Submit Request**.
@@ -169,9 +169,11 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 > [!TIP]
 > The team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
 
-## To do a code review  
+### To do a code review  
 
 1. On the **My Work** page in **Team Explorer**, right-click the code review in the **Code Reviews** section and select **Open**.
+
+   The **Code Review** page appears.
 
    ![Screenshot of the Code Review page.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/code-review.png)
 
@@ -179,24 +181,28 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 
    - Choose **Add Reviewer** to add other reviewers to the code review request.
    - Select each file link to see the changes to the files that were updated for this work item.
-   - Expand **Comments** to discuss the changes with the author and other reviewers.
+   - Use **Comments** to discuss the changes with the author and other reviewers.
 
-     1. Choose **Add Overall Comment**, or select a line or block of code, right-click, and select **Add comment**.
-     1. Enter each comment, and then select **Save** or press Ctrl+Enter.
+     To add comments:
+
+     - Choose **Add Overall Comment** to add an overall comment to the review.
+     - When viewing a file, select a line or block of code, right-click, and select **Add comment**.
+
+     After adding each comment, select **Save** or press Ctrl+Enter.
 
 1. When you're finished entering comments, select **Send Comments** at the top of the page to make your contributions visible to the author and other reviewers.
 
-1. Select **Close Review**, and then select **Complete** to indicate that the work item is finished, or **Abandon** to indicate that the work item isn't yet finished.
-
 ## Respond to a code review
 
-You receive and respond to the code review from the reviewer. You and the reviewers can exchange comments as often as you like. The review ends when you close it. With each contribution to the discussion, the other participants are notified by email.
+You receive and respond to the code review from the reviewers. You and the reviewers can exchange comments as often as you like. The review ends when you close it.
 
 ### To respond to a code review
 
 1. In **Team Explorer**, on the **My Work** page, go to the **Code Reviews** section and double-click the request, or right-click the request and choose **Open**.
 
-1. Read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**. To send your comments, choose **Send Comments**.
+   ![Screenshot of responding to a code review.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/code-review.png)
+
+1. On the **Code Review** page, read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**.
 
 1. To view a file and see the code blocks that have comments, or to edit a file, go to the **Comments** section.
 
@@ -206,7 +212,7 @@ You receive and respond to the code review from the reviewer. You and the review
    - **Edit Local File**, or
    - **Add File Comment**
 
-   You can also select the checkbox next to an item to indicate that the item is finished.
+1. To send your comments, choose **Send Comments**. You can also select the checkbox next to a comment to indicate that the comment is addressed.
 
 1. When you and the other reviewers finish responding to each other's comments and you're ready to close the review, select **Close Review** at the top of the page, and then select:
 
@@ -247,7 +253,7 @@ You check in the fixed code and the unit tests. The state of the bug is automati
 
 1. In **Team Explorer**, on the **My Work** page, choose **Check In**.
 
-![Screenshot of Checking in an update to fix a bug.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/checkin-resolve.png)
+   ![Screenshot of Checking in an update to fix a bug.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/checkin-resolve.png)
 
 1. On the **Pending Changes** page, make sure that:
 
@@ -269,7 +275,7 @@ Resume work on your original task. You can get back to work quickly because all 
 
   ![Screenshot of Resuming a task.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/resume.png)
 
-  Or, if you want to merge your suspended work with pending changes already in your workspace, choose **Merge with In Progress**.
+  Or, if you want to merge your suspended work with pending changes in your workspace, choose **Merge with In Progress**.
 
 When you resume your work, Visual Studio restores:
 -   Your open solution

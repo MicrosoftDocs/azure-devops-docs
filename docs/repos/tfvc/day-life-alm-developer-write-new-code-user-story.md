@@ -28,7 +28,9 @@ The Visual Studio **My Work** and **Code Review** tools help developers manage t
 
 ## Review work items and prepare to begin work
 
-In Visual Studio **Team Explorer**, open the **My Work** page. The team has agreed that, during the current sprint, you'll work on **Evaluate invoice status**, a top-priority item in the product backlog. You decide to start with **Implement math functions**, a child task of the top-priority backlog item. You drag this task from the **Available Work Items** list into the **In Progress Work** list.
+The team has agreed that, during the current sprint, you'll work on **Evaluate invoice status**, a top-priority item in the product backlog. You decide to start with **Implement math functions**, a child task of the top-priority backlog item.
+
+In Visual Studio **Team Explorer**, on the **My Work** page, you drag this task from the **Available Work Items** list into the **In Progress Work** list.
 
 ### To review personal backlog and prepare tasks to begin work
   
@@ -112,20 +114,20 @@ This tutorial uses the Visual Studio Unit Test Framework, but you can also use f
 1. Create a Test project by using the preceding steps. You can choose languages such as **C#**, **F#**, and **Visual Basic**.
 2. Add your tests to the test class that is provided. Each unit test is one method.
 
-   Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
+   - Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
 
-   ```csharp
-   [TestMethod]
-   public void SignatureTest()
-   {...}
-   ```
+     ```csharp
+     [TestMethod]
+     public void SignatureTest()
+     {...}
+     ```
 
-   ```vb
-   <TestMethod()>
-   Public Sub SignatureTest()
-   ...
-   End Sub
-   ```
+     ```vb
+     <TestMethod()>
+     Public Sub SignatureTest()
+     ...
+     End Sub
+     ```
 
    - Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
 
@@ -157,7 +159,7 @@ For information about how to write unit tests in C++, see [Writing Unit tests fo
 
 ## Create a stub for the new code
 
-Next, reate a class library project for your new code. There's now a project for the code under development and a project for the unit tests. You add a project reference from the test project to the code under development.
+Next, create a class library project for your new code. There's now a project for the code under development and a project for the unit tests. Add a project reference from the test project to the code under development.
 
 ![Screenshot of Solution Explorer with Test and Class projects.](media/day-life-alm-developer-write-new-code-user-story/math-solution-explorer.png)  
 
@@ -206,12 +208,12 @@ Run the test again and it passes.
 
 ### To run unit tests
 
-![Screenshot of Test Explorer showing Run All button.](media/day-life-alm-developer-write-new-code-user-story/IC675819.png)  
-
 To run unit tests:
 
 - Select **Test** > **Run All Tests**
 - Or, if **Test Explorer** is open, choose **Run** or **Run All Tests In View**.
+
+![Screenshot of Test Explorer showing Run All button.](media/day-life-alm-developer-write-new-code-user-story/run-tests.png)  
 
 If a test appears under **Failed Tests**, open the test, for example, by double-clicking the name. The point at which the test failed is displayed in the code editor.
 
