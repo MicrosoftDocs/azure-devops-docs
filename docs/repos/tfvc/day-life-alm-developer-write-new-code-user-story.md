@@ -32,7 +32,7 @@ The team has agreed that, during the current sprint, you'll work on **Evaluate i
 
 In Visual Studio **Team Explorer**, on the **My Work** page, you drag this task from the **Available Work Items** list into the **In Progress Work** list.
 
-### To review personal backlog and prepare tasks to begin work
+### To review your backlog and prepare tasks to begin work
   
  ![Screenshot of the My Work page.](media/day-life-alm-developer-write-new-code-user-story/my-work.png)  
 
@@ -357,7 +357,8 @@ private void VerifyOneRootValue(LocalMath math, double expectedResult)
 
 This test passes the first time it runs.
 
-![Screenshot of Test Explorer with three passed tests.](media/day-life-alm-developer-write-new-code-user-story/all-pass.png
+![Screenshot of Test Explorer with three passed tests.](media/day-life-alm-developer-write-new-code-user-story/all-pass.png)
+
 Just to make sure this result isn't a mistake, you can temporarily introduce a small error into your test to make it fail. After seeing the failure, you can fix it again.
 
 > [!TIP]
@@ -446,9 +447,10 @@ Your team aims for coverage of at least 80%. They relax this requirement for gen
 
 Good coverage isn't a guarantee that the full functionality of the component has been tested, and it doesn't guarantee that the code will work for every range of input values. Nevertheless, there's a fairly close correlation between coverage of code lines and coverage of the behavioral space of a component. Therefore, good coverage strengthens the team's confidence that they're testing most of the behavior that they should.
 
-To get a code coverage report, on the **Tests** menu, select **Analyze Code Coverage for All Tests**. All the tests run again.
+To get a code coverage report, in the Visual Studio **Test** menu, select **Analyze Code Coverage for All Tests**. All the tests run again.
 
-![Screenshot of Code Coverage result and Show Color button.](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png)
+![](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png)
+[ ![Screenshot of Code Coverage result and Show Color button.](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png) ](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png#lightbox)
 
 When you expand the total in the report, it shows that the code you're developing has complete coverage. This is very satisfactory, because the important score is for the code under test. The uncovered sections are actually in the tests themselves.
 
@@ -490,7 +492,7 @@ You're notified when the build is completed. In the build results window, you se
 
 1.  On the **My Work** page in **Team Explorer**, select **Check in**.
 
-![Screenshot of checking in from My Work.](media/day-life-alm-developer-write-new-code-user-story/check-in.png)  
+   ![Screenshot of checking in from My Work.](media/day-life-alm-developer-write-new-code-user-story/check-in.png)  
 
 1.  On the **Pending Changes** page, make sure that:
 
@@ -501,7 +503,7 @@ You're notified when the build is completed. In the build results window, you se
 
 1. Choose **Check In**.
 
-![Screenshot of checking in the Pending Changes.](media/day-life-alm-developer-write-new-code-user-story/pending-changes.png)  
+   ![Screenshot of checking in the Pending Changes.](media/day-life-alm-developer-write-new-code-user-story/pending-changes.png)  
 
 ### To continuously integrate the code
 

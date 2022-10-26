@@ -45,11 +45,11 @@ Switch your work context:
 
 1. From the **Home** page of **Team Explorer**, choose **My Work**.
 
-   ![Screenshot of suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/suspend.png)
-
 1. On the **My Work** page, in the **In Progress Work** section, choose **Suspend**.
 
 1. In the box that appears, optionally change the name that you want to give this set of suspended work, and then select **Suspend**. The item appears under **Suspended Work**.
+
+   ![Screenshot of suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/suspend.png)
 
 1. Drag a work item from **Available Work Items** to **In Progress Work**. Or, you can switch to a work item that you previously suspended by dragging it from **Suspended Work**.
 
@@ -190,7 +190,7 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 
      After adding each comment, select **Save** or press Ctrl+Enter.
 
-1. When you're finished entering comments, select **Send Comments** at the top of the page to make your contributions visible to the author and other reviewers.
+1. When you're finished entering comments, select **Send Comments** to make your contributions visible to the author and other reviewers.
 
 ## Respond to a code review
 
@@ -200,7 +200,7 @@ You receive and respond to the code review from the reviewers. You and the revie
 
 1. In **Team Explorer**, on the **My Work** page, go to the **Code Reviews** section and double-click the request, or right-click the request and choose **Open**.
 
-   ![Screenshot of responding to a code review.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/code-review.png)
+   ![Screenshot of responding to a code review.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/respond.png)
 
 1. On the **Code Review** page, read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**.
 
@@ -214,7 +214,7 @@ You receive and respond to the code review from the reviewers. You and the revie
 
 1. To send your comments, choose **Send Comments**. You can also select the checkbox next to a comment to indicate that the comment is addressed.
 
-1. When you and the other reviewers finish responding to each other's comments and you're ready to close the review, select **Close Review** at the top of the page, and then select:
+1. When you and the other reviewers finish responding to each other's comments and you're ready to close the review, select **Close Review**, and then select:
 
    - **Complete** to indicate that the review is finished, or
    - **Abandon** to indicate you're canceling the review.
@@ -238,7 +238,7 @@ public static bool EqualTo(double a, double b)
 }
 ```
 
-The test passes once again:
+The test passes once again.
 
 > [!TIP]
 > To fix a bug, follow the same practice as in code development. Write a test that fails and then make the test pass. Check in the code and the tests only when the tests pass.
@@ -251,7 +251,7 @@ You check in the fixed code and the unit tests. The state of the bug is automati
 
 ### To check in the fix
 
-1. In **Team Explorer**, on the **My Work** page, choose **Check In**.
+1. In **Team Explorer**, on the **My Work** page, choose **Check In** to open the **Pending Changes** page.
 
    ![Screenshot of Checking in an update to fix a bug.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/checkin-resolve.png)
 
