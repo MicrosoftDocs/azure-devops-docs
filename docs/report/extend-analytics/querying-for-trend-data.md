@@ -43,7 +43,7 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 <a id="trend-data" />
 

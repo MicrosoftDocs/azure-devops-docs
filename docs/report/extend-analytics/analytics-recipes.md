@@ -118,7 +118,7 @@ And the response returns data for the four revisions:
 ```
 
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 <a id="iteration" />
 

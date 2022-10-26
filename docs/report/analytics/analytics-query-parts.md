@@ -81,7 +81,7 @@ https://{ServerName}/{CollectionName}/{ProjectName}/_odata/version/$metadata
      On-premises server, collection, project         OData version  return metadata
 ```
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 Here's an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
 
