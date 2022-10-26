@@ -5,7 +5,7 @@ description: Learn about Git branches and how to create a new branch in your loc
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,12 +13,11 @@ ms.subservice: azure-devops-repos-git
 # Create a new Git branch
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 The first commit in a new Git repo is the start of the `main` branch. As you work in the `main` branch, you make commits to record your work in that branch. Branching in Git occurs when you create a new line of development that diverges from a prior branch. You might choose to create a new branch to develop and test a new feature before adding it to your `main` branch. The recommended [Git workflow](gitworkflow.md) is to use a new branch for every feature or bugfix. When you switch between branches, Git almost instantly switches the version of your repo files to match the branch you selected. Your [commits](commits.md) are always saved to the current branch, and are isolated from commits in other branches.
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
-
 
 ## Create a new branch
 
@@ -102,88 +101,63 @@ The main page of your repo now shows the files in your new branch.
 > `git fetch`<br>
 > `git switch <remote branch name>`
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to create a branch.
+[!INCLUDE [Create branch](includes/create-branch-create-branch.md)]
 
-:::row:::
-  :::column span="":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-    **Visual Studio Git** <br><br>
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-    1. From the **Git** menu on the menu bar, choose **New Branch** to open the **Create a new branch** window.
+[!INCLUDE [Create branch](includes/create-branch-create-branch.md)]
 
-      :::image type="content" source="media/create-branch/visual-studio-2019/git-experience/branches.png" border="true" alt-text="Screenshot of the 'New Branch' option in the Git menu in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/git-experience/branches-lrg.png":::
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-    2. In the **Create a new branch** window, enter a descriptive branch name to let others know what work the branch contains. By default, Visual Studio creates your new branch from the current branch. The **Checkout branch** checkbox automatically switches you to the newly created branch. Select **Create**.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-      :::image type="content" source="media/create-branch/visual-studio-2019/git-experience/new-local-branch.png" border="true" alt-text="Screenshot of the 'Create a new branch' window in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/git-experience/new-local-branch-lrg.png":::
+1. In **Team Explorer**, select the **Home** button and choose **Branches**.
 
-  :::column-end:::
-  :::column span="":::
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot showing the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/branches-lrg.png":::
 
-    **Visual Studio Team Explorer** <br><br>
+1. Right-click the default branch, often named `main`, and then choose **New Local Branch From**
 
-    1. In **Team Explorer**, select the **Home** button and choose **Branches**.
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu.png" border="true" alt-text="Screenshot of the 'New Local Branch From' menu option in the context menu of the main branch in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu-lrg.png":::
 
-      :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot showing the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/branches-lrg.png":::
+1. Enter a descriptive branch name to let others know what work the branch contains. Select **Create Branch**.
 
-    2. Right-click the default branch, often named `main`, and then choose **New Local Branch From**
-
-      :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu.png" border="true" alt-text="Screenshot of the 'New Local Branch From' menu option in the context menu of the main branch in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-menu-lrg.png":::
-
-    3. Enter a descriptive branch name to let others know what work the branch contains. Select **Create Branch**.
-
-      :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch.png" border="true" alt-text="Screenshot of the branch name text and 'Create Branch' button in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
-
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio)
-
-**Visual Studio 2015 & 2017**
-
-1. Open up Team Explorer and go to the **Branches** view.
-1. Right-click the parent branch (usually `main`) to base your changes and choose **New Local Branch From...**. 
-1. Supply a branch name in the required field and select **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
-   
-      :::image type="content" source="media/vsbranch.gif" border="false" alt-text="Creating Git Branches in Visual Studio.":::   
-
+   :::image type="content" source="media/create-branch/visual-studio-2019/team-explorer/new-local-branch.png" border="true" alt-text="Screenshot of the branch name text and 'Create Branch' button in Visual Studio 2019." lightbox="media/create-branch/visual-studio-2019/team-explorer/new-local-branch-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
 To create a new branch, use the `git branch` command. This command doesn't switch your current branch to the new branch.
 
-```Git CLI
+```console
 git branch <new branch name>
 ```
 
 To switch to a branch, use the `git checkout` command.
 
-```Git CLI
+```console
 git checkout <existing branch name>
 ```
 
 To create and switch to a branch in one command, use the `git checkout` command with the `-b` flag.
 
-```Git CLI
+```console
 git checkout -b <new branch name>
 ```
 
 > [!TIP]
 > You can also use `git switch <existing branch name>` to switch to a new branch. Or, to create and switch to a new branch in one command, use `git switch -c <new branch name>`.
 
-
-* * *
-
+---
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Share code with push](./pushing.md)
-
 
 ## Related articles
 

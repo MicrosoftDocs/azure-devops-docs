@@ -157,5 +157,3 @@ Cherry-pick bug fixes in the deployment branch back to the main branch. Use the 
 An exception to this recommendation is if you're using a form of continuous deployment.
 Use [Azure Pipelines](../../pipelines/index.yml) when working with continuous deployment to promote builds from your main branch to your deployment targets.
 
-## Videos
-> [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]
