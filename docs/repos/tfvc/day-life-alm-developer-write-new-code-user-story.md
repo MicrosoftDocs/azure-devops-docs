@@ -161,7 +161,7 @@ For information about how to write unit tests in C++, see [Writing Unit tests fo
 
 Next, create a class library project for your new code. There's now a project for the code under development and a project for the unit tests. Add a project reference from the test project to the code under development.
 
-![Screenshot of Solution Explorer with Test and Class projects.](media/day-life-alm-developer-write-new-code-user-story/math-solution-explorer.png)  
+![Screenshot of Solution Explorer with Test and Class projects.](media/day-life-alm-developer-write-new-code-user-story/math-solution-explorer.png)
 
 In the new project, you add the new class and a minimal version of the method that will at least allow the test to build successfully. The quickest way to do that is to generate a class and method stub from the invocation in the test.
 
@@ -449,7 +449,6 @@ Good coverage isn't a guarantee that the full functionality of the component has
 
 To get a code coverage report, in the Visual Studio **Test** menu, select **Analyze Code Coverage for All Tests**. All the tests run again.
 
-![](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png)
 [ ![Screenshot of Code Coverage result and Show Color button.](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png) ](media/day-life-alm-developer-write-new-code-user-story/code-coverage.png#lightbox)
 
 When you expand the total in the report, it shows that the code you're developing has complete coverage. This is very satisfactory, because the important score is for the code under test. The uncovered sections are actually in the tests themselves.
@@ -490,11 +489,11 @@ You're notified when the build is completed. In the build results window, you se
 
 ### To check in the changes
 
-1.  On the **My Work** page in **Team Explorer**, select **Check in**.
+1. On the **My Work** page in **Team Explorer**, select **Check in**.
 
    ![Screenshot of checking in from My Work.](media/day-life-alm-developer-write-new-code-user-story/check-in.png)  
 
-1.  On the **Pending Changes** page, make sure that:
+1. On the **Pending Changes** page, make sure that:
 
    - All relevant changes are listed in **Included Changes**.
    - All relevant work items are listed in **Related Work Items**.

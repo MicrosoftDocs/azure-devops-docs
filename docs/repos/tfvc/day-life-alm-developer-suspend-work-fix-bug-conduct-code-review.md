@@ -200,19 +200,21 @@ You receive and respond to the code review from the reviewers. You and the revie
 
 1. In **Team Explorer**, on the **My Work** page, go to the **Code Reviews** section and double-click the request, or right-click the request and choose **Open**.
 
+   The **Code Review** page appears.
+
    ![Screenshot of responding to a code review.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/respond.png)
 
-1. On the **Code Review** page, read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**.
+1. Under the **Comments** section, read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**.
 
-1. To view a file and see the code blocks that have comments, or to edit a file, go to the **Comments** section.
-
-1. In the **Files** subsection, right-click the file and choose either:
+1. To view a file and see the code blocks that have comments, or to edit or comment on a file, go to the **Files** subsection. Right-click the file, and choose either:
 
    - **Compare (Read-Only)**
    - **Edit Local File**, or
    - **Add File Comment**
+   
+   You can also select the checkbox next to a comment to indicate that the comment has been addressed.
 
-1. To send your comments, choose **Send Comments**. You can also select the checkbox next to a comment to indicate that the comment is addressed.
+1. To send your comments, choose **Send Comments**. 
 
 1. When you and the other reviewers finish responding to each other's comments and you're ready to close the review, select **Close Review**, and then select:
 
