@@ -148,6 +148,8 @@ To manage organizational access with Azure AD, refer to the following articles:
 * [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.yml) 
 
+Azure DevOps registers changes made to an Azure AD group within an hour of that change happening in Azure AD, and refresh any permissions inherited via membership to that group. In addition, any Azure DevOps user can trigger a refresh of their Azure AD membership, along with the inherited permissions in Azure DevOps by signing out and signing in back again, or by triggering a [refresh to re-evaluate your permission](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).  
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -160,6 +162,7 @@ To set up Active Directory for use with Azure DevOps Server, see the following a
 Typically, you should install Active Directory prior to installing Azure DevOps Server.
 
 ::: moniker-end
+
 
  
 <a name="validusers"></a>
@@ -305,7 +308,7 @@ To understand why a permission is inherited, you can pause over a permission set
 ::: moniker range="= azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 

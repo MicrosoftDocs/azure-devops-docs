@@ -80,7 +80,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      AnalyticsViews
+      <a id="analytic-views-namespace" />  AnalyticsViews
    :::column-end:::
    :::column span="1":::
       `Read`                
@@ -156,7 +156,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      DashboardsPrivileges  
+      <a id="dashboard-previleges-namespace" />  DashboardsPrivileges  
    :::column-end:::
    :::column span="1":::
       `Read`              
@@ -175,7 +175,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      Git Repositories <a id="git-repositories" />    
+      GitRepositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
@@ -404,7 +404,7 @@ The following table describes the namespaces that manage project-level permissio
 ---
 :::row:::
    :::column span="1":::
-      Tagging
+      <a id="tagging" />Tagging
    :::column-end:::
    :::column span="1":::
       `Enumerate`   
@@ -510,6 +510,7 @@ The following table describes the namespaces that manage organization-level perm
       `ManageBuildResources`                 
       `UseBuildResources`                    
       `AdministerBuildResourcePermissions`   
+      `ManagePipelinePolicies`  
    :::column-end:::
    :::column span="2":::
       [Manages access to view, manage, use, or administer permissions for build resources](permissions.md#collection-level).  
