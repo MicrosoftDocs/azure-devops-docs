@@ -131,13 +131,13 @@ The [checkout task](https://learn.microsoft.com/azure/devops/pipelines/yaml-sche
 
 This behavior can either be controlled from the YAML file or from the UI.
 
-To opt-out from syncing the tags through YAML file, add the `noTags: true` to the checkout step. When the `noTags` option is not specified, it's the same as if `noTags: false` is used.
+To opt-out from syncing the tags through YAML file, add the `fetchTags: false` to the checkout step. When the `fetchTags` option is not specified, it's the same as if `fetchTags: true` is used.
 
 ```yaml 
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # whether to fetch clean each time
-  noTags: boolean # whether to prevent sync of tags
+  fetchTags: boolean # whether to sync the tags
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
   submodules: boolean | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
@@ -158,7 +158,7 @@ To opt-out from syncing the tags, uncheck the Sync tags checkbox in the get sour
 
 ---
 
-For all new pipelines you create (YAML or Classic), tags won't be synced by default. This option does not change the behavior of existing pipelines. Tags will still be synced in those pipelines unless you explicitly change the option as described above.
+For all new pipelines you create (YAML or Classic), tags are still synced by default. This option does not change the behavior of existing pipelines. Tags will still be synced in those pipelines unless you explicitly change the option as described above.
 
 ### Updated brownout schedule for Ubuntu 18.04 images
 
@@ -169,11 +169,20 @@ To help you better identify which pipelines are using the ubuntu-18.04 image, we
 * A [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages) is available to help you find pipelines using deprecated images, including ubuntu-18.04
 * We are scheduling short "brownouts". Any ubuntu-18.04 runs will fail during the brownout period. Therefore, it is recommended to migrate your pipelines prior to the brownouts.
 #### Brownout schedule (updated)
-* October 7, 10:00 UTC - October 7, 16:00 UTC
-* October 14, 12:00 UTC - October 14, 18:00 UTC
-* October 21, 14:00 UTC - October 21, 20:00 UTC
-* October 28, 16:00 UTC - October 28, 22:00 UTC
-* November 4, 22:00 UTC - November 5, 04:00 UTC
-* November 11, 04:00 UTC - November 11, 10:00 UTC
-* November 18, 06:00 UTC - November 18, 12:00 UTC
-* November 25, 08:00 UTC - November 25, 14:00 UTC
+* October 3, 12:00 UTC - October 3, 14:00 UTC
+* October 18, 14:00 UTC - October 18, 16:00 UTC
+* November 15, 18:00 UTC - November 15, 20:00 UTC
+* November 30, 20:00 UTC - November 30, 22:00 UTC
+* December 15, 20:00 UTC - December 16 00:00 UTC
+* January 5, 10.00 UTC - January 5, 14.00 UTC
+* January 13, 12.00 UTC - January 13, 16.00 UTC
+* January 18, 14.00 UTC - January 18, 18.00 UTC
+* January 24, 16.00 UTC - January 24, 20.00 UTC
+* February 1, 18.00 UTC - February 1, 22.00 UTC
+* February 7, 16.00 UTC - February 7, 22.00 UTC
+* February 13, 14.00 UTC - February 13, 22.00 UTC
+* February 21, 10.00 UTC - February 21, 22.00 UTC
+* February 28, 10.00 UTC - February 28, 22.00 UTC
+* March 6, 00.00 UTC - March 7, 00.00 UTC
+* March 13, 00.00 UTC - March 14, 00.00 UTC
+* March 21, 00.00 UTC - March 22, 00.00 UTC    

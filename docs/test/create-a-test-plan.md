@@ -16,7 +16,7 @@ ms.date: 11/02/2021
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
-For more information about manual testing, see [What is Azure Test Plans?](overview.md) and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
+For more information about manual testing, see [What is Azure Test Plans?](overview.md).
 
 ## Share work items across your test experience
 
