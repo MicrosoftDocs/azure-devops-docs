@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 10/26/2022
 ---
 
 # Progress status sample report 
@@ -67,7 +67,7 @@ For the report to generate useful data, the team must carry out the following ac
 ```
 let 
     Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?" 
-        &"$apply=filter(( TestSuite/TestPlanTitle eq '{testPlanTitle}' ))" 
+        &"$apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')" 
         &"/aggregate(" 
             &"$count as TotalCount," 
             &"cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed," 
@@ -90,9 +90,7 @@ in
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
-$apply=filter( 
-    (TestSuite/TestPlanTitle eq '{testPlanTitle}')
-) 
+$apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')
 /aggregate( 
     $count as TotalCount,  
     cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,  
