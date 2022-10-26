@@ -281,4 +281,6 @@ You may also be interested in a particular type of link between items. Specify t
 ## Related articles
 
 - [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md)  
-- [Construct basic queries using OData Analytics](../extend-analytics/wit-analytics.md)
+- [Construct basic queries using OData Analytics](wit-analytics.md)
+- [Work items with direct links sample reports](../powerbi/sample-boards-directlinks.md)
+- [Requirements tracking sample report](../powerbi/sample-stories-overview.md)
