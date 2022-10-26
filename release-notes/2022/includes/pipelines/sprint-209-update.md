@@ -169,20 +169,20 @@ To help you better identify which pipelines are using the ubuntu-18.04 image, we
 * A [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages) is available to help you find pipelines using deprecated images, including ubuntu-18.04
 * We are scheduling short "brownouts". Any ubuntu-18.04 runs will fail during the brownout period. Therefore, it is recommended to migrate your pipelines prior to the brownouts.
 #### Brownout schedule (updated)
-October 3, 12:00 UTC - October 3, 14:00 UTC
-October 18, 14:00 UTC - October 18, 16:00 UTC
-November 15, 18:00 UTC - November 15, 20:00 UTC
-November 30, 20:00 UTC - November 30, 22:00 UTC
-December 15, 20:00 UTC - December 16 00:00 UTC
-January 5, 10.00 UTC - January 5, 14.00 UTC
-January 13, 12.00 UTC - January 13, 16.00 UTC
-January 18, 14.00 UTC - January 18, 18.00 UTC
-January 24, 16.00 UTC - January 24, 20.00 UTC
-February 1, 18.00 UTC - February 1, 22.00 UTC
-February 7, 16.00 UTC - February 7, 22.00 UTC
-February 13, 14.00 UTC - February 13, 22.00 UTC
-February 21, 10.00 UTC - February 21, 22.00 UTC
-February 28, 10.00 UTC - February 28, 22.00 UTC
-March 6, 00.00 UTC - March 7, 00.00 UTC
-March 13, 00.00 UTC - March 14, 00.00 UTC
-March 21, 00.00 UTC - March 22, 00.00 UTC
+* October 3, 12:00 UTC - October 3, 14:00 UTC
+* October 18, 14:00 UTC - October 18, 16:00 UTC
+* November 15, 18:00 UTC - November 15, 20:00 UTC
+* November 30, 20:00 UTC - November 30, 22:00 UTC
+* December 15, 20:00 UTC - December 16 00:00 UTC
+* January 5, 10.00 UTC - January 5, 14.00 UTC
+* January 13, 12.00 UTC - January 13, 16.00 UTC
+* January 18, 14.00 UTC - January 18, 18.00 UTC
+* January 24, 16.00 UTC - January 24, 20.00 UTC
+* February 1, 18.00 UTC - February 1, 22.00 UTC
+* February 7, 16.00 UTC - February 7, 22.00 UTC
+* February 13, 14.00 UTC - February 13, 22.00 UTC
+* February 21, 10.00 UTC - February 21, 22.00 UTC
+* February 28, 10.00 UTC - February 28, 22.00 UTC
+* March 6, 00.00 UTC - March 7, 00.00 UTC
+* March 13, 00.00 UTC - March 14, 00.00 UTC
+* March 21, 00.00 UTC - March 22, 00.00 UTC    
