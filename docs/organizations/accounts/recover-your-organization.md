@@ -8,7 +8,7 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2022
+ms.date: 10/25/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -21,10 +21,13 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 ## Prerequisites
 
 * An organization deleted within the last 28 days.
-* Organization owner permissions to restore your organization. [How do I find the organization owner?](../security/look-up-organization-owner.md). For more information about specific scenarios, see the following instructions:
+* Organization owner permissions. [How do I find the organization owner?](../security/look-up-organization-owner.md). For more information about specific scenarios, see the following instructions:
   * [When you don't have an Azure DevOps Administrator](resolve-orphaned-organization.md#when-you-dont-have-an-azure-devops-administrator)
   * [Resolve orphaned organization when your Azure DevOps Administrator *is* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-is-a-member-of-the-target-organization)
   * [Resolve orphaned organization when your Azure DevOps Administrator *isn't* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-isnt-a-member-of-the-target-organization)
+
+> [!NOTE]
+>  If there's no owner for the deleted organization and you're an active Project Collection Administrator (PCA) and a member of the deleted organization, you still can't access **Organization settings** to assign a new owner. If this is your scenario, [contact Support](https://developercommunity.visualstudio.com/AzureDevOps).
 
 ## Recover organization
 
