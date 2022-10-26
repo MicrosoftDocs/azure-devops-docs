@@ -20,17 +20,19 @@ ms.subservice: azure-devops-repos-git
 <a name="set_up"></a>
 <a name="pat"></a>
 
-Visual Studio's [Team Explorer](../../user-guide/work-team-explorer.md) lets you do most common Git tasks that you'll need for your daily work. 
+In Visual Studio 2019, [Team Explorer](../../user-guide/work-team-explorer.md) lets you do most common Git tasks that you'll need for your daily work. 
 From the Visual Studio **View** menu, open Team Explorer or use the **Ctrl+\, Ctrl+M** hotkey. 
 
-Team Explorer and the Git command-line work great together. When you make updates and run commands through one interface, you'll see those changes reflected in the other.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+Visual Studio and the Git command-line work great together. When you make updates and run commands through one interface, you'll see those changes reflected in the other.
 
 [Git Installation instructions](/devops/develop/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, install [Git for Windows](https://git-scm.com/download/win) to set up the [Git Credential Manager](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
 
-While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click your local repo and select **Open Command Prompt**
+While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click your local repo and select **Open Command Prompt**.
    
 ![Open a command prompt to a repo from inside Visual Studio](media/command-prompt/open_cmd_prompt_repo_vs.png)
 
@@ -48,7 +50,10 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -62,6 +67,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Select the **Connect** button ( ![Team Explorer plug icon to open the Connect page](media/command-prompt/te_connect_icon.png) ) in Team Explorer to open the **Connect** view, then select **New** under **Local Git repositories**  
    :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
 :::row-end::: 
 ---
 :::row:::
@@ -73,6 +81,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column-end:::
    :::column span="1":::
      Create the repo from the command line, then open Team Explorer's **Connect** view and select **Add** under **Local Git repositories**  
+   :::column-end:::
+   :::column span="1":::
+
    :::column-end:::
 :::row-end:::
 ---
@@ -86,6 +97,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/visual-studio-2013-2015/publish-status-bar.png)  ) from the status bar in the lower right.  
    :::column-end:::
+   :::column span="1":::
+     Choose **Git** > **Create Git Repository** from the menu bar to launch the **Create a Git repository** window.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -97,6 +111,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column-end:::
    :::column span="1":::
      From the web, select **Repos** (or **Code** if you haven't enabled the new navigation preview), then select the drop-down next to the current repo name and choose **New Repository...**  
+   :::column-end:::
+   :::column span="1":::
+     Choose **Git** > **Create Git Repository** from the menu bar to launch the **Create a Git repository** window
    :::column-end:::
 :::row-end:::
 ---
@@ -110,6 +127,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Select **Clone** under **Local Git repositories** in Team Explorer's **Connect** view  
    :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
 :::row-end::: 
 ---
 :::row:::
@@ -121,6 +141,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column-end:::
    :::column span="1":::
      Open the **Connect** view in Team Explorer and right-click the Git repo in your Project under the account name. Select **Clone...**  
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window
    :::column-end:::
 :::row-end:::
 ---
@@ -134,6 +157,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Open the solution file in Visual Studio (this will automatically add the repo to Team Explorer) or select **Add** under **Local Git repositories** in the **Connect** view  
    :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -143,7 +169,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Delete the hidden .git folder created at the root of the repo
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      Delete the hidden .git folder created at the root of the repo from Windows Explorer or the command line  
    :::column-end:::
 :::row-end:::
@@ -155,8 +181,8 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Delete the folder containing your repo from your computer's filesystem
    :::column-end:::
-   :::column span="1":::
-     Close any open solutions using files in the repo, then delete the folder containing your repo from your computer's filesystem. 
+   :::column span="2":::
+     Close any open solutions using files in the repo, then delete the folder containing your repo from your computer's filesystem
    :::column-end:::
 :::row-end::: 
 ---
@@ -167,7 +193,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Not applicable
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      Not applicable, instead see [Delete an existing repo](delete-existing-repo.md)  
    :::column-end:::
 :::row-end:::
@@ -182,6 +208,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column span="1":::
      Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Add** under **Remotes**  
    :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -193,6 +222,9 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
    :::column-end:::
    :::column span="1":::
      Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Edit** under **Remotes**
+   :::column-end:::
+   :::column span="1":::
+
    :::column-end:::
 :::row-end:::
 ---
@@ -217,7 +249,10 @@ For additional information, see the following resources:
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -231,6 +266,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Open the **Branches** view in Team Explorer, then right-click a branch and choose **New Local Branch From...**  
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a branch and choose **New Local Branch From...**  
+   :::column-end:::
 :::row-end:::  
 ---
 :::row:::
@@ -241,7 +279,10 @@ For additional information, see the following resources:
      `git checkout` *branchname*
    :::column-end:::
    :::column span="1":::
-     Open the **Branches** view in Team Explorer, then double click a local branch. Alternatively, click the current branch name from the status bar and select a different branch. 
+     Open the **Branches** view in Team Explorer, then double click a local branch. Alternatively, click the current branch name from the status bar and select a different branch
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a branch and select **Checkout**
    :::column-end:::
 :::row-end:::
 ---
@@ -255,6 +296,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Open the **Branches** view in Team Explorer, then right-click a branch and choose **New Local Branch From...** 
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a branch and choose **New Local Branch From...** and select **Checkout branch**
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -266,6 +310,9 @@ For additional information, see the following resources:
    :::column-end:::
    :::column span="1":::
      Open the **Branches** view in Team Explorer, then right-click the branch and select **Delete**. You must be checked out to a different branch than the one you want to delete. 
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a branch and select **Delete**
    :::column-end:::
 :::row-end:::
 ---
@@ -279,6 +326,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Open the **Branches** view in Team Explorer, expand the remote that has the branch you want to delete. Right-click the remote and select **Delete Branch from Remote** 
    :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -288,7 +338,7 @@ For additional information, see the following resources:
    :::column span="1":::
      Not applicable.
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Lock**. Unlock the branch with **Unlock**.
    :::column-end:::
 :::row-end:::
@@ -300,7 +350,7 @@ For additional information, see the following resources:
    :::column span="1":::
      Not applicable.
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      Select the settings icon on the web ( ![Gear icon on the top navigation bar in Azure DevOps Services](media/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch**. 
    :::column-end:::
 :::row-end:::
@@ -312,7 +362,7 @@ For additional information, see the following resources:
    :::column span="1":::
      Not applicable.
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch**.
    :::column-end:::
 :::row-end:::
@@ -336,7 +386,10 @@ For additional information, see the following resources:
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -350,6 +403,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Open the **Changes** view in Team Explorer. Stage changes by right-clicking on the modified files and selecting **Stage**. Enter a commit message and select **Commit Staged**. 
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Stage changes by right-clicking on the modified files and selecting **Stage**. Enter a commit message and select **Commit Staged**. 
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -361,6 +417,9 @@ For additional information, see the following resources:
    :::column-end:::
    :::column span="1":::
      Open the **Changes** view in Team Explorer, stage your changes, then select **Amend Previous Commit** from the **Actions** drop-down. 
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. stage one or more files, enter a commit message, select **Amend**, and then choose **Commit Staged**.
    :::column-end:::
 :::row-end:::
 ---
@@ -374,6 +433,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Open the **Changes** view in Team Explorer. Select the **+** icon in the **Changes** list to stage all changes for the next commit. 
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Select the **+** icon in the **Changes** list to stage all changes for the next commit.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -385,6 +447,9 @@ For additional information, see the following resources:
    :::column-end:::
    :::column span="1":::
      Open the **Changes** view in Team Explorer. Stage changes by right-clicking on the changed file and selecting **Stage**. 
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Stage changes by right-clicking on the changed file and selecting **Stage**.
    :::column-end:::
 :::row-end:::
 ---
@@ -398,6 +463,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Open the **Changes** view in Team Explorer. Unstaged changes are listed under **Changes** section. 
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Unstaged changes are listed under **Changes** section.
+   :::column-end:::
 :::row-end::: 
 ---
 :::row:::
@@ -410,6 +478,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Delete the file through Solution Explorer, the command line, or any other means. Right-click the deleted file in Team Explorer's **Changes** view and select **Stage**. Select **Commit Staged** to commit the deletion. 
    :::column-end:::
+   :::column span="1":::
+     Delete the file through Solution Explorer, the command line, or any other means.  From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes** and select **Stage**. Select **Commit Staged** to commit the deletion.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -420,7 +491,10 @@ For additional information, see the following resources:
      `git mv` *filename*<br>`git commit -m` "Moved *filename*"
    :::column-end:::
    :::column span="1":::
-     Move a file from one location to another in your repo through Solution Explorer, the command line, or any other means. Right-click the moved file in Team Explorer's **Changes** view and select **Stage** . Select **Commit Staged** to commit the move. 
+     Move a file from one location to another in your repo through Solution Explorer, the command line, or any other means. Right-click the moved file in Team Explorer's **Changes** view and select **Stage**. Select **Commit Staged** to commit the move. 
+   :::column-end:::
+   :::column span="1":::
+     Move a file from one location to another in your repo through Solution Explorer, the command line, or any other means. From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Select **Commit Staged** to commit the move.
    :::column-end:::
 :::row-end:::
 ---
@@ -433,6 +507,9 @@ For additional information, see the following resources:
    :::column-end:::
    :::column span="1":::
      Open the **Changes** view in Team Explorer, then choose **View history..."** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Create Tag**
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a branch and select **View History**.  Locate the commit in the History view, then right-click and select **New Tag**
    :::column-end:::
 :::row-end:::
 --- 
@@ -451,7 +528,10 @@ To learn more, see [Save your work with commits](commits.md).
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -465,6 +545,9 @@ To learn more, see [Save your work with commits](commits.md).
    :::column span="1":::
      Right-click the change in the **Changes** view in Team Explorer and select **Compare with unmodified**.  
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Right-click the change and select **Compare with unmodified**.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -474,7 +557,7 @@ To learn more, see [Save your work with commits](commits.md).
    :::column span="1":::
      `git diff` *branchname*
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      Right-click a file in Solution Explorer and select **View History...**, then select both on the latest commit on your current branch and the latest commit on the remote branch. Right-click and select **Compare** 
    :::column-end:::
 :::row-end:::
@@ -486,8 +569,8 @@ To learn more, see [Save your work with commits](commits.md).
    :::column span="1":::
      `git diff` *branchname1* *branchname2*
    :::column-end:::
-   :::column span="1":::
-     Right-click a file in Solution Explorer and select **View History...**, then select the most recent commits for both branches. Right-click and select **Compare**
+   :::column span="2":::
+     Right-click a file in Solution Explorer and select **View History...**, then select the most recent commits for both branches. Right-click and select **Compare**.
    :::column-end:::
 :::row-end:::
 ---
@@ -506,7 +589,10 @@ To learn more, see [Compare versions and review history](review-history.md).
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -520,6 +606,9 @@ To learn more, see [Compare versions and review history](review-history.md).
    :::column span="1":::
      Open the **Sync** view from Team Explorer and select **Fetch**. 
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Select the **Fetch** arrow.
+   :::column-end:::
 :::row-end::: 
 ---
 :::row:::
@@ -531,6 +620,9 @@ To learn more, see [Compare versions and review history](review-history.md).
    :::column-end:::
    :::column span="1":::
      While working on the branch in your local repo, open the **Sync** view in Team Explorer, then select **Pull**.  
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Select the **Pull** arrow.
    :::column-end:::
 :::row-end::: 
 ---
@@ -544,6 +636,9 @@ To learn more, see [Compare versions and review history](review-history.md).
    :::column span="1":::
      Open the **Sync** view in Team Explorer and select **Publish** under **Outgoing Commits**. 
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Select the **Push** arrow.
+   :::column-end:::
 :::row-end::: 
 ---
 :::row:::
@@ -556,6 +651,9 @@ To learn more, see [Compare versions and review history](review-history.md).
    :::column span="1":::
      Open the **Sync** view in Team Explorer. Select **Sync**.  
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to view **Git Changes**. Select the **Sync** icon.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -566,7 +664,10 @@ To learn more, see [Compare versions and review history](review-history.md).
      `git push --force -u origin` *remote_branchname*
    :::column-end:::
    :::column span="1":::
-     Use command line 
+     Use command line
+   :::column-end:::
+   :::column span="1":::
+     Use command line
    :::column-end:::
 :::row-end:::
 ---
@@ -589,7 +690,10 @@ For additional information, see the following resources:
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -603,6 +707,9 @@ For additional information, see the following resources:
    :::column span="1":::
      In the Team Explorer **Branches** view, right-click the branch you want to merge and select **Merge From..**. Verify the options set and select **Merge**.
    :::column-end:::
+   :::column span="1":::
+      From the **Git** menu on the menu bar, select **Manage Branches**, right-click the branch you want to merge and select **Merge \<local branch> into \<current branch>**.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -614,6 +721,9 @@ For additional information, see the following resources:
    :::column-end:::
    :::column span="1":::
       In the Team Explorer **Branches** view, right-click the remote branch you want to merge and select **Merge From..**. Verify the options set and select **Merge**.
+   :::column-end:::
+   :::column span="1":::
+      From the **Git** menu on the menu bar, select **Manage Branches**, right-click the remote branch you want to merge and select **Merge \<remote branch> into \<current branch>**.
    :::column-end:::
 :::row-end:::
 ---
@@ -627,6 +737,9 @@ For additional information, see the following resources:
    :::column span="1":::
      In the Team Explorer **Branches** view, right-click the branch you want to rebase your current branch changes onto and select **Rebase Onto...**
    :::column-end:::
+   :::column span="1":::
+      From the **Git** menu on the menu bar, select **Manage Branches**, right-click the remote branch you want to rebase and select **Rebase \<current branch> onto \<selected branch>**.
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -639,26 +752,32 @@ For additional information, see the following resources:
    :::column span="1":::
      Not applicable
    :::column-end:::
+   :::column span="1":::
+     Not applicable
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      Cherry-pick a commit into the current branch
+     Cherry-pick a commit into the current branch
    :::column-end:::
    :::column span="1":::
      `git cherry-pick` *commitID*
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer, then choose **View history...** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Cherry-pick** 
+     Open the **Changes** view in Team Explorer, then choose **View history...** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Cherry-pick**.
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, locate the History view, then right-click and select **Cherry-pick**.
    :::column-end:::
 :::row-end:::
 ---
    
 For additional information, see the following resources: 
 
-- [Resolve merge conflicts](merging.md)   
-[Catch up and replay changes with rebase](rebase.md)   
-[Copy changes with cherry-pick](cherry-pick.md)
+- [Resolve merge conflicts](merging.md)
+- [Catch up and replay changes with rebase](rebase.md)
+- [Copy changes with cherry-pick](cherry-pick.md)
 
 ## Undo
 
@@ -675,7 +794,10 @@ For additional information, see the following resources:
      **Git command-line**
    :::column-end:::
    :::column span="1":::
-     **Visual Studio**
+     **Visual Studio Team Explorer**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio Git menu**
    :::column-end:::
 :::row-end:::
 ---
@@ -687,7 +809,10 @@ For additional information, see the following resources:
      `git reset --hard HEAD`
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** 
+     Open the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....**.
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, right-click the commit where the branch is currently located, and select **Reset** > **Delete Changes (--hard)**.
    :::column-end:::
 :::row-end:::
 ---   
@@ -699,7 +824,10 @@ For additional information, see the following resources:
      `git reset --mixed HEAD`
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**
+     Open the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, right-click the commit where the branch is currently located, and select **Reset** > **Keep Changes (--mixed)**.
    :::column-end:::
 :::row-end:::
 ---   
@@ -713,6 +841,9 @@ For additional information, see the following resources:
    :::column span="1":::
      In the **Changes** view in Team Explorer, right-click the files to remove under **Changes** marked with **[add]** and select **Delete**.  
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Commit or Stash** to open **Git Changes**, ight-click the files to remove under **Changes** marked with **A** and select **Delete**.  
+   :::column-end:::
 :::row-end:::
 ---   
 :::row:::
@@ -725,6 +856,9 @@ For additional information, see the following resources:
    :::column span="1":::
      Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**  
    :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, right-click the branch, and select **Reset** > **Delete Changes (--hard)**.
+   :::column-end:::
 :::row-end:::
 ---   
 :::row:::
@@ -735,7 +869,10 @@ For additional information, see the following resources:
      `git revert` *commitID*
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit to revert and select **Revert**. 
+     Open the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. Right-click the commit to revert and select **Revert**. 
+   :::column-end:::
+   :::column span="1":::
+     From the **Git** menu on the menu bar, select **Manage Branches**, right-click a commit in the history, and select **Revert**
    :::column-end:::
 :::row-end:::
 --- 
