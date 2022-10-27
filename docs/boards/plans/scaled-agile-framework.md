@@ -358,7 +358,6 @@ Each of the following articles within this suite of tutorials provide details on
 - [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
 - [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
-- [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
  
 

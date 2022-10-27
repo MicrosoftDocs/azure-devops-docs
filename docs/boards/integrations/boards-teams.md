@@ -10,7 +10,7 @@ ms.reviewer: karrg
 ms.author: karrg
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/20/2021
+ms.date: 10/26/2022
 ---
  
 # Use the Azure Boards app in Microsoft Teams
@@ -41,8 +41,10 @@ Read this article to learn how to:
 
 
 > [!NOTE]
-> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services. 
-
+> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services.  
+>
+> Also, Azure Boards and Microsoft Teams integration isn't supported if you are an O365 Government Community Cloud (GCC) customer that uses an Azure Commercial subscription in conjunction with your GCC tenant. 
+ 
 
 ## Prerequisites
 

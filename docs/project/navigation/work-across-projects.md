@@ -38,6 +38,9 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 ::: moniker-end
 
+> [!NOTE]
+> This feature only retrieves artifacts defined in projects for a single collection or organization. Retrieval of artifacts in projects across organizations isn't supported. 
+
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 
 For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.yml). 

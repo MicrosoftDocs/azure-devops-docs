@@ -415,31 +415,6 @@ Values in parenthesis indicate what level the permission is managed:
    :::column-end:::
 :::row-end:::
 
- 
-
-## Edit project-level information
-
-The **Edit project-level information** permission is set through the [Project settings](change-project-level-permissions.md) page. It includes the ability to perform the following tasks for the selected project defined in an organization or collection.
-
-- [Edit the project description](../projects/project-vision-status.md)
-- [Modify project services visibility](../settings/set-services.md).
- 
-> [!NOTE]
-> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the **Project Administrator**s group. It isn't controlled by a permissions surfaced within the user interface. 
-
-
-## Edit instance-level or collection-level information
-
-The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Organizations settings or Collection settings](change-organization-collection-level-permissions.md) page. It includes the ability to perform the following tasks 
-for all projects defined in the organization or collection:
-                
-- Add and administer teams and all team-related features
-- Edit collection-level permissions for users and groups in the collection
-- Add or remove collection-level security groups from the collection
-- Implicitly allows the user to modify version control permissions 
-- Edit project level and collection level permission ACLs
-- Edit event subscriptions or alerts for teams, projects, or collection level events.
-
 
 ## Related articles
 

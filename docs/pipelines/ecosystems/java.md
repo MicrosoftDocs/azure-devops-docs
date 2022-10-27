@@ -5,7 +5,7 @@ ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
 ms.custom: freshness-fy22q2, devdivchpfy22
 ms.topic: quickstart
-ms.date: 05/26/2022
+ms.date: 10/03/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -123,7 +123,7 @@ With your Maven build, the following snippet gets added to your `azure-pipelines
 
 ```yaml
 steps:
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'

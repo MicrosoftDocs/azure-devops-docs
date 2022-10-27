@@ -332,13 +332,6 @@ In Azure Pipelines, you can, however, [select which artifacts you want to downlo
 
 Azure Pipelines exposes a set of predefined variables that you can access and use in tasks and scripts; for example, when executing PowerShell scripts in deployment jobs. When there are multiple artifact sources linked to a release pipeline, you can access information about each of these. For a list of all predefined artifact variables, see [variables](variables.md#artifact-variables).
 
-## Additional information
-
-* [Code repo sources in Azure Pipelines](https://www.youtube.com/watch?v=-JDlE_MHl1s)
-* [Jenkins artifacts in Azure Pipelines](https://www.youtube.com/watch?v=ZC4hWYqdP_o)
-* [TeamCity extension for Continuous Integration](https://www.youtube.com/watch?v=zDZRvc_6UiU)
-* [External TFS extension for Release Management](https://www.youtube.com/watch?v=cR8NzcEmstw)
-
 ## Related articles
 
 * [Release pipelines](index.md)

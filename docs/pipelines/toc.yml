@@ -35,7 +35,7 @@
           displayName: ci, pr, pull request, triggers, self, batching, batched CI, github app, oauth, pat, open source, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, clone, fetch, get sources, checks, clean, label sources, tag sources, checkout path, submodules, shallow fetch
         - name: GitHub Enterprise Server
           href: repos/github-enterprise.md
-          displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, classic, yaml, ip address range
+          displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, allow list, exception, rule, other git, external git, service connection, classic, yaml, ip address range
         - name: Pipeline options for Git repositories
           href: repos/pipeline-options-for-git.md
         - name: Bitbucket Cloud
@@ -43,13 +43,13 @@
           displayName: ci, pr, pull request, triggers, self, batching, batched CI, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
         - name: Bitbucket Server
           href: repos/on-premises-bitbucket.md
-          displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, ip address range
+          displayName: ci, triggers, checkout, firewall, allow list, exception, rule, other git, external git, service connection, ip address range
         - name: TFVC
           href: repos/tfvc.md
           displayName: tfvc, version control, workspace, ci, gated, checkin, mappings, scroch, triggers, path filter, clean
         - name: Subversion
           href: repos/subversion.md
-          displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, service connection, ip address range
+          displayName: ci, triggers, checkout, firewall, allow list, exception, rule, service connection, ip address range
         - name: Multiple repositories
           href: repos/multi-repo-checkout.md
           displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, self
@@ -489,6 +489,9 @@
     - name: npm
       href: artifacts/npm.md
       displayName: npm, package
+    - name: Maven
+      href: artifacts/publish-maven-artifacts.md
+      displayName: Maven, package
     - name: Gradle
       href: artifacts/pull-package-gradle.md
       displayName: Gradle, package
