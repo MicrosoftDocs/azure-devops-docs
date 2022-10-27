@@ -127,7 +127,7 @@ To update your remote:
 
    :::image type="content" source="media/repo-rename/options-rename-remote.png" border="true" alt-text="Screenshot shows the Options dialog with the option to edit remotes." :::
 
-1. Edit the fetch and push remote references and paste the URL that you [copied from the remote repo](#copy_remote_repo_url).
+1. Replace the fetch and push remote references with the URL that you [copied from the remote repo](#copy_remote_repo_url).
 
 1. Select **Save** and then **OK** to close the **Options** dialog.
 

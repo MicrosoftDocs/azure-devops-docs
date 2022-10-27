@@ -239,6 +239,7 @@ You can also type a string into the Search field to show matching results from t
 To filter pull requests from Visual Studio:
 
 1. In the **Git** menu, select **\<your Git service>** > **View Pull Requests**.
+
 1. Filter by **Author**, **Label**, or other attributes.
 
 From the Team Explorer **Pull Requests** view:
