@@ -124,7 +124,7 @@ You can use the tools listed in the following table to set permissions. Links in
 ::: moniker-end
 
 
-::: moniker range="< azure-devops"  
+::: moniker range="<= azure-devops-2020"  
 
 ## Setting permissions for SQL Server reports 
 

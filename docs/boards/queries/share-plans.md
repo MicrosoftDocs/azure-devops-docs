@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/26/2022
 ---
 
 
@@ -217,6 +217,17 @@ To open the menu options to download or delete several attachments, choose one o
 
 
 * * *
+
+<a id="copy-url-attached-file"></a>
+
+::: moniker range="azure-devops"
+
+## Copy URL of attached file 
+
+To quickly copy the URL of an attachment, you can select **Copy attachment link** option from the attachment's :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** menu.
+
+:::image type="content" source="media/share-plans/copy-url-attachment-menu-option.png" alt-text="Screenshot of work item form, Attachments tab, Copy attachment link  attachment menu option."::: 
+::: moniker-end 
 
 <a id="storyboard" />
 
