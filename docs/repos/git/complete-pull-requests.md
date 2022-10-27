@@ -455,12 +455,14 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
 
 To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
-<a id="abandon-pr"></a>
 
+<a id="abandon-pr"></a>
 
 # [Visual Studio](#tab/visual-studio)
 
-In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Abandon**.
+Open a pull request in the web portal. On the Overview page, select **Abandon**.
+
+To open the PR in the web portal, use the procedure from [Complete a pull request](#complete-a-pull-request).
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -475,7 +477,6 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 ***
 
 <a name="revert-a-completed-pr"></a>
-
 
 ## Revert a completed pull request
 

@@ -25,11 +25,11 @@ Let's start with a common scenario:
 
 Git commit history is a tree. Sometimes, the chronological history is not the same as the actual file tree history. This occurs most often when a merge commit reverts a file back to its original state. In that case, the default history view *won't actually show you all changes*, because technically the file didn't change. In this scenario, Git realizes it can simplify the history and the "changes" you are most likely looking for are removed from the log.
 
-Unless you have run into it before, you may become frustrated, wondering, *Where the heck did my changes go?*
+Unless you have run into it before, you may become frustrated, wondering, *where the heck did my changes go?*
 
 ## History simplification: On by Default
 
-By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output. For additional information, see [git log man page](https://git-scm.com/docs/git-log#_history_simplification).
+By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output. For more information, see [git log man page](https://git-scm.com/docs/git-log#_history_simplification).
 
 What adds to the confusion is that history simplification does *not* occur if you just run `git log`, because you are looking at all changes there is nothing to simplify.
 
