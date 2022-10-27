@@ -68,7 +68,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      Select the **Connect** button ( ![Team Explorer plug icon to open the Connect page](media/command-prompt/te_connect_icon.png) ) in Team Explorer to open the **Connect** view, then select **New** under **Local Git repositories**  
    :::column-end:::
    :::column span="1":::
-     
+     Use the command line
    :::column-end:::
 :::row-end::: 
 ---
@@ -83,7 +83,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      Create the repo from the command line, then open Team Explorer's **Connect** view and select **Add** under **Local Git repositories**  
    :::column-end:::
    :::column span="1":::
-
+     Use the command line
    :::column-end:::
 :::row-end:::
 ---
@@ -128,7 +128,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      Select **Clone** under **Local Git repositories** in Team Explorer's **Connect** view  
    :::column-end:::
    :::column span="1":::
-
+     From the **Git** menu on the menu bar, choose **Clone Repository** to open the **Clone a repository** window
    :::column-end:::
 :::row-end::: 
 ---
@@ -158,7 +158,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      Open the solution file in Visual Studio (this will automatically add the repo to Team Explorer) or select **Add** under **Local Git repositories** in the **Connect** view  
    :::column-end:::
    :::column span="1":::
-     
+     Choose **Git** > **Local Repositories** > **Open Local Repository** from the menu bar.
    :::column-end:::
 :::row-end:::
 ---
@@ -209,7 +209,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Add** under **Remotes**  
    :::column-end:::
    :::column span="1":::
-
+     From the **Git** menu on the menu bar, select **Push to Git service** to open the **Create a Git repository** dialog
    :::column-end:::
 :::row-end:::
 ---
@@ -224,7 +224,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Edit** under **Remotes**
    :::column-end:::
    :::column span="1":::
-
+     From the **Git** menu on the menu bar, select **Manage Remotes**, and make changes in the **Options** dialog.
    :::column-end:::
 :::row-end:::
 ---
@@ -327,7 +327,7 @@ For additional information, see the following resources:
      Open the **Branches** view in Team Explorer, expand the remote that has the branch you want to delete. Right-click the remote and select **Delete Branch from Remote** 
    :::column-end:::
    :::column span="1":::
-
+     From the **Git** menu on the menu bar, select **Manage Branches**, then right-click a remote branch and select **Delete**
    :::column-end:::
 :::row-end:::
 ---

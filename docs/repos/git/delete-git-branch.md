@@ -38,7 +38,10 @@ This article describes how to delete a Git branch by using two different methods
 
 #### [Visual Studio](#tab/visual-studio/)
 
-**Visual Studio 2015 & 2017**
+1. From the **Git** menu on the menu bar, choose **Manage Branches**.
+1. Under **Branches**, right-click a branch and select **Delete**. If you have unpublished changes, Visual Studio asks if you're sure you want to delete the branch.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
 
 1. Open up Team Explorer and go to the **Branches** view.
 2. Locate the branch you want to delete. Remember that you can't delete a branch you're currently working in.
