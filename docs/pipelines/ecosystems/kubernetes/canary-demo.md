@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 05/03/2022
+ms.date: 10/19/2022
 ms.custom: fasttrack-edit
 monikerRange: 'azure-devops'
 ---
@@ -22,8 +22,8 @@ This step-by-step guide covers how to use the [Kubernetes manifest task's](../..
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-* An [Azure Container Registry](/azure/container-registry/container-registry-intro), a Google Container Registry, or a Docker Hub registry with push privileges. [Create an Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
-* A Kubernetes cluster (such as Azure Kubernetes Service, Google Kubernetes Engine, or Amazon Elastic Kubernetes Service). [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster).
+* An [Azure Container Registry](/azure/container-registry/container-registry-intro)with push privileges. [Create an Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+* A Kubernetes cluster. [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 ## Sample code
 
@@ -42,7 +42,7 @@ Here's a brief overview of the files in the repository that are used during this
     - *service.yml* - Creates the `sampleapp` service. This service routes requests to the pods spun up by the deployments (stable, baseline, and canary) mentioned previously.
 - *./misc*
     - *service-monitor.yml* - Used to set up a [ServiceMonitor](https://github.com/coreos/prometheus-operator#customresourcedefinitions) object. This object sets up Prometheus metric scraping.
-    - *fortio-deploy.yml* - Used to set up a fortio deployment. This deployment is later used as a load-testing tool, to send a stream of requests to the `sampleapp` service deployed earlier. The stream of requests sent to `sampleapp` get routed to pods under all three deployments (stable, baseline, and canary).
+    - *fortio-deploy.yml* - Used to set up a fortio deployment. This deployment is later used as a load-testing tool, to send a stream of requests to the `sampleapp` service deployed earlier. The stream of requests sent to `sampleapp` are routed to pods under all three deployments (stable, baseline, and canary).
 
 > [!NOTE]
 > In this guide, you use [Prometheus](https://prometheus.io/) for code instrumentation and monitoring. Any equivalent solution, like [Azure Application Insights](/azure/azure-monitor/learn/nodejs-quick-start), can be used as an alternative.
@@ -99,7 +99,7 @@ The following sections provide steps for setting up continuous deployment, inclu
 
 ### Deploy canary stage
 
-You can deploy by using YAML, or by using the classic deployment model.
+You can deploy with YAML or Classic.
 
 #### [YAML](#tab/yaml/)
 
@@ -114,7 +114,7 @@ You can deploy by using YAML, or by using the classic deployment model.
     - **Namespace**: Create a new namespace, with the name *canarydemo*.
 1. Select **Validate and Create**.
 1. Go to **Pipelines**. Select the pipeline you created, and select **Edit**. 
-1. Change the step you created previously to now use a stage. Add two more steps to copy the manifests and *misc* directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables, for easier usage later in your pipeline. Your complete YAML should now look like the following:
+1. Change the step you created previously to now use a stage. Add two more steps to copy the manifests and *misc* directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables, for easier usage later in your pipeline. Your complete YAML should now look like this.
 
     ```YAML
     trigger:
@@ -208,7 +208,7 @@ You can deploy by using YAML, or by using the classic deployment model.
 1. In the subsequent model for selecting a template for Stage 1, choose **Empty job**. Name the stage as *Deploy canary*.
 1. Select **Add an artifact**, and choose **GitHub**.
     - Choose an existing Git service connection, or create a new one through which the forked repository can be accessed. Then choose the same in the **Source (repository)** dropdown list.
-    - **Default branch**: *master*
+    - **Default branch**: *main*
     - **Default version**: Choose the latest from the default branch.
     - **Source alias**: *azure-pipelines-canary-k8s*
     - Confirm your inputs by choosing **Add**.
@@ -245,7 +245,7 @@ You can deploy by using YAML, or by using the classic deployment model.
 
 ### Manual intervention for promoting or rejecting canary
 
-You can intervene manually by using YAML, or by using the classic deployment model.
+You can intervene manually with YAML or Classic.
 
 #### [YAML](#tab/yaml/)
 
@@ -265,7 +265,7 @@ You can intervene manually by using YAML, or by using the classic deployment mod
     - **Approvers**: Add your own user account.
     - **Advanced**: Make sure that the **Allow approvers to approve their own runs** box is selected.
 1. Select **Create**.
-1. Go to **Pipelines**, and select the pipeline that you just created. Then select **Edit**.
+1. Go to **Pipelines**, and select the pipeline that you created. Then select **Edit**.
 1. Add another stage, `PromoteRejectCanary`, at the end of your YAML file, to promote the changes. 
 
     ```YAML
@@ -357,11 +357,11 @@ You can intervene manually by using YAML, or by using the classic deployment mod
 
 ## Deploy a stable version
 
-You can deploy a stable version by using YAML, or by using the classic deployment model.
+You can deploy a stable version with YAML or Classic.
 
 ### [YAML](#tab/yaml/)
 
-Currently, for the first run of the pipeline, neither the stable version of the workloads, nor their baseline or canary version, exist in the cluster. To deploy the stable version:
+For the first run of the pipeline the stable version of the workloads, and their baseline or canary versions don't exist in the cluster. To deploy the stable version:
 
 1. In *app/app.py*, change `success_rate = 5` to `success_rate = 10`. This change triggers the pipeline, leading to a build and push of the image to the container registry. It will also trigger the `DeployCanary` stage. 
 1. Because you configured an approval on the `akspromote` environment, the release will wait before running that stage. 
@@ -369,7 +369,7 @@ Currently, for the first run of the pipeline, neither the stable version of the 
 
 ### [Classic](#tab/classic/)
 
-Currently, for the first run of the pipeline, neither the stable version of the workloads, nor their baseline or canary version, exist in the cluster. To deploy the stable version:
+For the first run of the pipeline the stable version of the workloads, and their baseline or canary versions don't exist in the cluster. To deploy the stable version:
 
 1. In *app/app.py*, change `success_rate = 5` to `success_rate = 10`. This change triggers the  pipeline, leading to a build and push of the image to the container registry. The continuous deployment trigger, set up earlier on the image push event, results in triggering the release pipeline.
 1. In the **CanaryK8sDemo** release pipeline, select the **Promote/reject canary** stage of the release, where it's waiting on manual intervention.
@@ -416,7 +416,7 @@ kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-er
 1. On the **General** tab, change the name of this panel to **All sampleapp pods**.
 1. In the overview bar at the top of the page, change the duration range to **Last 5 minutes** or **Last 15 minutes**.
 1. To save this panel, select the save icon in the overview bar.
-1. The preceding panel visualizes success rate metrics from all the variants. These include stable (from the `sampleapp` deployment), baseline (from the `sampleapp-baseline` deployment), and canary (from the `sampleapp-canary` deployment). Note that you can visualize just the baseline and canary metrics by adding another panel, with the following configuration: 
+1. The preceding panel visualizes success rate metrics from all the variants. These include stable (from the `sampleapp` deployment), baseline (from the `sampleapp-baseline` deployment), and canary (from the `sampleapp-canary` deployment). You can visualize just the baseline and canary metrics by adding another panel, with the following configuration: 
     - On the **General** tab, for **Title**, select **sampleapp baseline and canary**.
     - On the **Metrics** tab, use the following query: 
     ```

@@ -318,7 +318,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="16"><strong>2022 Q4</strong></td>
+        <td rowspan="15"><strong>2022 Q4</strong></td>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -327,12 +327,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url data-raw-source="[copy work item attachment url](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment url</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support data-raw-source="[Emoji support in work item tags](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support)">Emoji support in work item tags</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>
+      </tr>     
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
         <td>Boards</td>

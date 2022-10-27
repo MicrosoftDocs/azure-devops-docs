@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 01/19/2022
+ms.date: 10/03/2022
 monikerRange: azure-devops
 ---
 
@@ -369,7 +369,7 @@ steps:
 If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
 
 ```yaml
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m $(MAVEN_OPTS)'
@@ -378,7 +378,7 @@ If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass 
 ## .NET/NuGet
 
 If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to lock dependencies.
-If you want to use multiple packages.lock.json, you can still use the following example without making any changes. The content of all the packages.lock.json files will be hashed and if one of the files are changed, a new cache key will be generated.
+If you want to use multiple packages.lock.json, you can still use the following example without making any changes. The content of all the packages.lock.json files will be hashed and if one of the files is changed, a new cache key will be generated.
 
 **Example**:
 

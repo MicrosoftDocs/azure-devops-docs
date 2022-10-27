@@ -48,6 +48,8 @@
     href: decide-between-using-local-server-workspace.md
   - name: Add check-in policies
     href: add-check-policies.md
+  - name: Configure check-in notes
+    href: configure-check-notes.md
   - name: Test impact for partially mapped repositories
     href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: Work with files

@@ -544,7 +544,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 ::: moniker-end 
 
 <a id="project-permissions" />

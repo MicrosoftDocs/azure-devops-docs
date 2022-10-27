@@ -395,9 +395,6 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
 
-## Videos 
-> [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
-
 <!-- ENDSECTION -->
 
 ::: moniker-end
