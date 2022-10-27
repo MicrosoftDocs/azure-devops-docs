@@ -268,7 +268,7 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-The steps in this procedure show you how to delete a tag in the local repo using Visual Studio 2017 Update 6.
+The steps in this procedure show you how to delete a tag in the local repo using Visual Studio Team Explorer.
 
 Right-click the tag to delete and choose **Delete Locally**
 

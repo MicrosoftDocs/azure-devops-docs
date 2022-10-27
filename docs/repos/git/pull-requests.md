@@ -134,7 +134,17 @@ The link takes you to a page where you can [enter your PR details](pull-requests
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can create PRs from Visual Studio Team Explorer:
+To create a pull request:
+
+1. In the **Git** menu, select **Manage Branches**.
+
+1. Right-click a branch and select **Create Pull Request**.
+
+1. Edit the source and target branches as needed, enter a title and optional description, and select **Create**.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To create PRs from Visual Studio Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -308,7 +318,10 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 # [Visual Studio](#tab/visual-studio)
 
-To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**. 
+To set a PR to draft, open the PR and select **Mark as draft**.
+
+- To open a pull request from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+- To open a pull request from Visual Studio Team Explorer, from the **Pull Requests** view, right-click the PR and select **Open in browser**.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -373,8 +386,7 @@ Edit the PR description by selecting the **Edit** icon in the **Description** se
 
 When you create a PR in Visual Studio, enter a title and detailed description of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
 
-To edit the title, description, or any other details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
-
+To edit the title, description, or any other details in an existing PR, open the PR in your browser.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 

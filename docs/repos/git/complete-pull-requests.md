@@ -80,7 +80,13 @@ On the PR Overview page, branch policy requirements have an :::image type="icon"
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
+You can open a PR in Visual Studio and then review branch policies as described in the Browser tab.
+
+To open a PR from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To access PRs from Visual Studio Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -249,7 +255,11 @@ Linked work items are also updated showing the PR completion.
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
+To complete a PR, open the PR in the browser, and on the **Overview** page, select **Complete** or set other options.
+
+To open a PR from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+
+To access PRs from Visual Studio 2019 Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -258,8 +268,6 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
 
 1. To open a PR in the web portal, right-click the PR and select **Open in browser**.
-
-To complete a PR, open the PR in the browser, and on the **Overview** page, select **Complete** or set other options.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -406,7 +414,19 @@ A PR set to autocomplete displays an **Auto-complete** badge on the **Pull reque
 
 # [Visual Studio](#tab/visual-studio)
 
-In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Set auto-complete**.
+Open a pull request in the web portal. On the **Overview** page, select **Set auto-complete**.
+
+To open a PR from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+
+To access PRs from Visual Studio 2019 Team Explorer:
+
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+
+1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
+
+1. To open a PR in the web portal and view the policies in effect, right-click the PR and select **Open in browser**.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
