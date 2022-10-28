@@ -68,8 +68,10 @@ Every target server in the deployment group requires a deployment agent. You can
 
 - By using the [ARM template deployment task](./howto-provision-deployment-group-agents.md#use-the-arm-template-deployment-task) in your release pipeline to create a deployment group dynamically.
 
-You can force the agents on the target servers to be upgraded to the latest version without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut menu for a deployment group.  
- 
+You can force the agents on the target servers to be upgraded to the latest version without needing to redeploy them by selecting **Update targets** from your deployment groups page.  
+
+:::image type="content" source="media/update-targets-deployment-groups.png" alt-text="A screenshot showing how to update targets in deployment groups.":::
+
 ## Monitor release status for deployment groups
 
 When a release pipeline is executing, you can view the live logs for each target server in your deployment group. When the deployment is completed, you can download the log files for every server to examine the deployments and debug any issues.
