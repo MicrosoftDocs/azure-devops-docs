@@ -56,8 +56,8 @@ landingContent:
       - linkListType: reference
         links:
           - text: Syntax guidance for basic Markdown usage
-            url: ./wiki/markdown-guidance.md
-          - text: Syntax guidance for Markdown usage in Wiki
+            url : ./wiki/markdown-guidance.md
+          - النص : إرشادات لغوية لاستخدام Markdown في Wiki
             url: ./wiki/wiki-markdown-guidance.md
   - title: Search
     linkLists:
