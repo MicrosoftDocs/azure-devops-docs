@@ -108,7 +108,7 @@ sections:
       - question: |
           What happens to current users?
         answer: |
-          Your work in Azure DevOps Services is associated with your credentials for Azure AD. After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory. If users' addresses don't appear, you must [add those users to your directory](/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
+          Your work in Azure DevOps Services is associated with your credentials for Azure AD. After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory. If users' addresses don't appear, you must [add those users to your directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
       
       - question: |
           How do I find out whether my organization uses Azure AD to control access?
@@ -152,7 +152,7 @@ sections:
       - question: |
           What if I accidentally delete a user in Azure AD?
         answer: |
-          [Restore the user](/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
+          [Restore the user](/azure/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
       
       - question: |
           How can I convert an Azure AD guest into a member?
