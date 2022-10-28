@@ -6,7 +6,7 @@ ms.custom: "analytics"
 ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/12/2022
 ---
@@ -14,13 +14,21 @@ ms.date: 08/12/2022
 # Query Analytics in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
- 
-If you're new to Analytics and OData, you can get familiar with the data model and query process by exercising simple queries from your web browser. This article provides the URL to use when exercising an OData query against a cloud organization or project, or an on-premises collection or project.
 
-You can quickly query the metadata or a filtered set of data. Query options are summarized as well as the recommended sequence in which to specify them. 
+Azure DevOps Analytics supports OData queries of its metadata as well as its entity set data. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. The OData Protocol is an application-level protocol for interacting with data via RESTful interfaces, where REST=Representational State Transfer. It supports the description of data models and editing and querying of data according to those models. For an overview of OData, see [Welcome to OData](/odata/overview). 
+
+By exercising simple queries from your web browser, you can  get familiar with the data model and query process.  
+
+In this article you'll learn how to:  
+
+> [!div class="checklist"]  
+> * Construct an Analytics OData query for the cloud or on-premises
+> * Query Analytics metadata
+> * Query Analytics OData for an entity set 
+> * Which query options are supported 
+> * When server-side paging is enforced 
 
 You can query Analytics from any [supported web browser](/azure/devops/server/compatibility#supported-browsers).
-
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -29,7 +37,7 @@ You can query Analytics from any [supported web browser](/azure/devops/server/co
 
 <a id="query-metadata" />
 
-## Query the Analytics service for metadata
+## Query Analytics metadata
 
 Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending `$metadata` to the service root URL. Analytics provides service roots for a project or an entire organization in Azure DevOps.
 
@@ -44,9 +52,7 @@ You can look up any of the following data elements by querying the metadata.
 - Supported aggregations (`Org.OData.Aggregation.V1.ApplySupported`)
 - Batch support (`Org.OData.Capabilities.V1.BatchSupportType`)
  
-
-
-### Query the metadata for a cloud-hosted project  
+# [**Cloud** (Azure DevOps Services](#tab/cloud)
 
 To query the metadata for an organization or project hosted in the cloud, enter the URL syntax as shown below in a web browser. Replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. To return all metadata for the organization, don't specify the project name.  
 
@@ -68,8 +74,7 @@ Here's an example for the *fabrikam* organization that is hosted on Azure DevOps
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata  
 ```
 
-
-### Query the metadata for an on-premises project  
+# [**On-premises** (Azure DevOps Server](#tab/on-premises)
 
 To query the metadata for an on-premises server, enter the URL syntax as shown below in a web browser.  Replace `{ServerName}`, `{CollectionName}` and `{ProjectName}` with your on-premises names.  To return all metadata for the collection, don't specify the project name. 
 
@@ -82,7 +87,6 @@ https://{ServerName}/{CollectionName}/{ProjectName}/_odata/version/$metadata
 ```
 
 
-
 Here's an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
 
 > [!div class="tabbedCodeSnippets"]
@@ -93,6 +97,9 @@ https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata
 > [!NOTE]
 > The remaining examples shown in this article are based on an Azure DevOps Services URL. Make the substitutions needed to support your on-premises queries.  
  
+
+***
+
 <a id="metadata-response" />
 
 ### Interpret the metadata response
@@ -122,10 +129,11 @@ The two main schemas defined in the Analytics metadata are `Microsoft.VisualStud
 
 To query Analytics data and build reports, you typically query an entity type.  
 
-## Query the Analytics service for entity data 
+## Query an Analytics entity set for data 
 
 The following URL is used to query a specific EntityType, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.  For a list of all supported EntityTypes, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
    
+# [**Cloud** (Azure DevOps Services](#tab/cloud)
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -148,13 +156,39 @@ The example return 1399 work items.
 {
 "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(Count)",
 "value": [
-{
-"@odata.id": null,
-"Count": 1399
-}
-]
+   {
+   "@odata.id": null,
+   "Count": 1399
+   }
+ ]
 }
 ```
+ 
+
+# [**On-premises** (Azure DevOps Server](#tab/on-premises)
+
+Here's an example for the *fabrikam* server, *DefaultCollection*, that returns the count of work items defined for the *Fabrikam*  project.  
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://fabrikam/DefaultCollection/Fabrikam/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
+```
+The example return 1399 work items. 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+{
+"@odata.context": "http://fabrikam/DefaultCollection/Fabrikam/_odata/v4.0-preview/$metadata#WorkItems(Count)",
+"value": [
+   {
+      "@odata.id": null,
+      "Count": 44
+   }
+ ]
+}
+```
+
+***
 
 > [!NOTE] 
 > If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10,000 work items, [server-driven paging is enforced](../extend-analytics/odata-query-guidelines.md#perf-paging).  
@@ -180,9 +214,11 @@ Query options should be specified in the order listed in the following table.
 > [!TIP]    
 > Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you have two options: (1) use a `$filter` clause or (2) use a `$apply=filter()` combination clause. Each one of these options works great on its own, but combining them together might lead to some unexpected results.
 
-## Query a single entity set
+## Query a specific entity set
 
-To query a single entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
+To query a specific entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity set: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
+
+# [**Cloud** (Azure DevOps Services](#tab/cloud)
 
 For example, you can get a list of projects defined for your organization by querying `/Projects` and selecting to return the `ProjectName` property. For the fabrikam organization, the URL is as shown below.
 
@@ -190,7 +226,6 @@ For example, you can get a list of projects defined for your organization by que
 > ```OData
 > 	https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/Projects?$select=ProjectName
 > ```
-
 
 Analytics returns the project names of those projects defined for the *fabrikam* organization.
 
@@ -200,24 +235,54 @@ Analytics returns the project names of those projects defined for the *fabrikam*
 > @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
 > 
 > "value": [
-> {
-> "ProjectName": "Basic Fabrikam"
-> },
-> {
-> "ProjectName": "Fabrikam Fiber"
-> },
-> {
-> "ProjectName": "MyFirstProject"
-> },
-> {
-> "ProjectName": "Fabrikam Test"
-> },
-> {
-> "ProjectName": "MyPublicProject"
-> }
-> ]
+>    {
+>       "ProjectName": "Basic Fabrikam"
+>    },
+>    {
+>       "ProjectName": "Fabrikam Fiber"
+>    },
+>    {
+>       "ProjectName": "MyFirstProject"
+>    },
+>    {
+>       "ProjectName": "Fabrikam Test"
+>    },
+>    {
+>       "ProjectName": "MyPublicProject"
+>    }
+>  ]
 > }
 > ```
+
+# [**On-premises** (Azure DevOps Server](#tab/on-premises)
+
+Here's an example that queries the `Projects` entity set to return  the names of all projects defined on the *DefaultCollection* on the *fabrikam* server,
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://fabrikam/DefaultCollection/_odata/v4.0-preview/Projects?$select=ProjectName
+```
+The example return three project names. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> {
+> "@odata.context": "http://fabrikam/DefaultCollection/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
+> "value": [
+>    {
+>       "ProjectName": "Fabrikam Fiber"
+>    },
+>    {
+>       "ProjectName": "Fabrikam"
+>    },
+>    {
+>       "ProjectName": "Fabrikam Florida"
+>    }
+>  ]
+> }
+> ```
+***
+
 
 
 <a id="server-force-paging"></a>
