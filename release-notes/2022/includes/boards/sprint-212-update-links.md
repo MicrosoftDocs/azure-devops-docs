@@ -8,4 +8,4 @@ ms.topic: include
 - [Edit work item link types](#edit-work-item-link-types)
 - [Create temporary query REST endpoint](#create-temporary-query-rest-endpoint)
 - [Batch delete API (Private Preview)](#batch-delete-api-private-preview)
-- [@CurrentIteration macro in Delivery Plans](#@currentiteration-macro-in-delivery-plans)
+- [@CurrentIteration macro in Delivery Plans](#-macro-in-delivery-plans)
