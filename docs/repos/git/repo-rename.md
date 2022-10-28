@@ -121,7 +121,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 To update your remote:
 
-1. To open a PR from Visual Studio, in the **Git** menu, select **Manage Remotes**.
+1. In the **Git** menu from the menu bar, select **Manage Remotes**.
 
 1. In the **Options** dialog, select the remote to edit, then select **Edit**.
 
