@@ -14,7 +14,6 @@ ms.subservice: azure-devops-repos-git
 #  Git index.lock file
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 ## What is a Git index.lock file?
 
