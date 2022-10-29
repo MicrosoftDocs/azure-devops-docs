@@ -1,23 +1,21 @@
 ---
-title: Query Analytics  
+title: Construct OData queries for Analytics 
 titleSuffix: Azure DevOps  
-description: Learn how to query the Analytics service to return metadata or filter data for an EntityType.  
+description: Learn how to query Analytics OData metadata, entities, entity sets.  
 ms.custom: "analytics" 
 ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/12/2022
+ms.date: 10/29/2022
 ---
 
-# Query Analytics in Azure DevOps
+# Construct OData queries for Analytics in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure DevOps Analytics supports OData queries of its metadata as well as its entity set data. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. The OData Protocol is an application-level protocol for interacting with data via RESTful interfaces, where REST=Representational State Transfer. It supports the description of data models and editing and querying of data according to those models. For an overview of OData, see [Welcome to OData](/odata/overview). 
-
-By exercising simple queries from your web browser, you can  get familiar with the data model and query process.  
+Analytics, the reporting platform for Azure DevOps, can answer quantitative questions about the past or present state of your projects. Analytics supports OData queries of its metadata and entity set data. By exercising simple queries from your web browser, you can  get familiar with the data model and query process.  
 
 In this article you'll learn how to:  
 
@@ -28,16 +26,16 @@ In this article you'll learn how to:
 > * Which query options are supported 
 > * When server-side paging is enforced 
 
-You can query Analytics from any [supported web browser](/azure/devops/server/compatibility#supported-browsers).
+You can query Analytics from any [supported web browser](/azure/devops/server/compatibility#supported-browsers). For other tools you can use to query Analytics, see [Analytics query tools](analytics-query-tools.md).
+
+> [!NOTE]   
+> OData, an application-level protocol for interacting with data via RESTful (where REST=Representational State Transfer) interfaces), supports the description of data models as well as editing and querying of data according to those models. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. For an overview of OData, see [Welcome to OData](/odata/overview). 
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-<!--- NEED to specify when to query an entity type versus an entity set -->
-
-
 <a id="query-metadata" />
 
-## Query Analytics metadata
+## URL components to query the metadata
 
 Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending `$metadata` to the service root URL. Analytics provides service roots for a project or an entire organization in Azure DevOps.
 
@@ -51,6 +49,8 @@ You can look up any of the following data elements by querying the metadata.
 - Filter functions (`Org.OData.Capabilities.V1.FilterFunctions`)
 - Supported aggregations (`Org.OData.Aggregation.V1.ApplySupported`)
 - Batch support (`Org.OData.Capabilities.V1.BatchSupportType`)
+
+The URL you use depends on whether you are querying data for Azure DevOps Services (cloud) or an on-premises Azure DevOps Server. 
  
 # [**Cloud** (Azure DevOps Services](#tab/cloud)
 
@@ -63,6 +63,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/version/
                |                                 |                       |           |
     Analytics service root URL         Organization/Project        OData version  return metadata
 ```
+
 
 > [!NOTE] 
 > The latest Analytics OData version is **v4.0-preview**. You can use this version for all queries against the hosted service. For more information on Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
@@ -86,6 +87,9 @@ https://{ServerName}/{CollectionName}/{ProjectName}/_odata/version/$metadata
      On-premises server, collection, project         OData version  return metadata
 ```
 
+> [!NOTE] 
+> The latest Analytics OData version is **v4.0-preview**. You can use this version for all queries against the hosted service. For more information on Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+
 
 Here's an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
 
@@ -93,10 +97,6 @@ Here's an example for the server named `fabrikam-devops` and the `DefaultCollect
 ```OData
 https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata  
 ```
- 
-> [!NOTE]
-> The remaining examples shown in this article are based on an Azure DevOps Services URL. Make the substitutions needed to support your on-premises queries.  
- 
 
 ***
 
@@ -104,7 +104,7 @@ https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata
 
 ### Interpret the metadata response
 
-Analytics returns an XML file of the data model. 
+Analytics returns an XML file of the data model. Use your browser search function to find information specific to the entity of interest. 
 
 
 > [!TIP] 
@@ -127,11 +127,11 @@ The two main schemas defined in the Analytics metadata are `Microsoft.VisualStud
 > </edmx:Edmx>
 > ```
 
-To query Analytics data and build reports, you typically query an entity type.  
+## URL components to query entities 
 
-## Query an Analytics entity set for data 
+To query Analytics data and build reports, you typically query an entity set. For an overview of supported entities, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
 
-The following URL is used to query a specific EntityType, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.  For a list of all supported EntityTypes, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
+The following URL is used to query a specific `EntitySet`, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.   
    
 # [**Cloud** (Azure DevOps Services](#tab/cloud)
 
@@ -192,7 +192,15 @@ The example return 1399 work items.
 
 > [!NOTE] 
 > If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10,000 work items, [server-driven paging is enforced](../extend-analytics/odata-query-guidelines.md#perf-paging).  
+> 
 > To avoid running into usage limits, always include a `$select` or `$apply` clause.
+
+For entity metadata property and relationship information, see the following articles: 
+
+- [Calendar date, Project, and User metadata reference](entity-reference-general.md)
+- [Metadata reference for Azure Boards](entity-reference-boards.md)
+- [Metadata reference for Azure Pipelines](entity-reference-pipelines.md)
+- [Metadata reference for Test Plans](entity-reference-test-plans.md)
 
 ## Query options
 
@@ -202,19 +210,19 @@ Query options should be specified in the order listed in the following table.
 
 | Query option	|Notes|
 |------------------|-------------------|  
-|`$apply`|Set of transformations that you can apply to a query, such as: `filter`, `groupby`, `aggregate`, `compute`, `expand,` `concat`|
+|`$apply`| Set of transformations that you can apply to a query, such as: `filter`, `groupby`, `aggregate`, `compute`, `expand,` `concat`<br/>For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
 |`$compute`| A supported OData function that you can specify to define computed properties that can be used in a `$select`,`$filter`, or `$orderby` expression. |  	
-|`$filter`| Use to filter the list of resources that are returned. The expression specified with `$filter` is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.  |  		
-|`$orderby`| Use to specify the sequence in which records should be returned.  |  		
-|`$top`/`$skip`| Use to limit the number of records returned.   |  		
-|`$select`/`$expand`|Use `$select` to specify the columns you need to build your report. Use `$expand` to nest other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>Semicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`.|
+|`$filter`| Use to filter the list of resources that are returned. The expression specified with `$filter` is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.<br/>For examples, see [Query work tracking data using Analytics ](../extend-analytics/wit-analytics.md).   |  		
+|`$orderby`| Use to specify the sequence in which records should be returned. <br/>For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).  |  		
+|`$top`/`$skip`| Use to limit the number of records returned.<br/>For examples, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).  |  		
+|`$select`/`$expand`|Use `$select` to specify the columns you need to build your report. Use `$expand` to nest other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>Semicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`.<br/>For examples, see [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md).|
 |`$skiptoken`| Use to skip a specified number of records.  |	
-|`$count` or `$count=true`	 |  Enter `$count` to only return the number of records. Enter `$count=true`to return both a count of the record and the queried data. |  
+|`$count` or `$count=true`|  Enter `$count` to only return the number of records. Enter `$count=true`to return both a count of the record and the queried data. <br/>For examples,  see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|  
  
 > [!TIP]    
 > Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you have two options: (1) use a `$filter` clause or (2) use a `$apply=filter()` combination clause. Each one of these options works great on its own, but combining them together might lead to some unexpected results.
 
-## Query a specific entity set
+## Example: Query a specific entity set
 
 To query a specific entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity set: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 

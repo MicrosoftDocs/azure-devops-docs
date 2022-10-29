@@ -11,7 +11,7 @@ ms.date: 09/30/2022
 ---
 
 
-# Test metadata reference for Azure DevOps  
+# Metadata reference for Test Plans Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
