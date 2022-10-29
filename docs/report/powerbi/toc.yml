@@ -8,7 +8,7 @@ items:
   items:
   - name: Data available and versioning  
     href: data-available-in-analytics.md  
-  - name: Query Analytics 
+  - name: Construct OData queries  
     href: ../analytics/analytics-query-parts.md  
   - name: Construct basic queries
     href: ../extend-analytics/wit-analytics.md
