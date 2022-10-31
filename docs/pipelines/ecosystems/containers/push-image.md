@@ -21,24 +21,11 @@ To learn how to build a container image to deploy with Azure Pipelines, see [Bui
 
 ## About the Docker task
 
-You can use the [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build or push Docker images, login or logout, start or stop containers, or run a Docker command.
+You'll use the [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2) to build or push Docker images, login or logout, start or stop containers, or run a Docker command.
 
 The task uses a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to log in and push to a container registry. The process for creating a Docker registry service connection differs depending on your registry. 
 
 The Docker registry service connection stores credentials to the container registry before pushing the image. You can also directly reference service connections in Docker without an additional script task.   
-
-```YAML
-- task: Docker@2
-  displayName: Push image
-  inputs:
-    containerRegistry: |
-      $(dockerHub)
-    repository: $(imageName)
-    command: push
-    tags: |
-      test1
-      test2
-```
 
 ## Create a Docker service connection
 
