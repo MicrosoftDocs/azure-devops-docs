@@ -4,12 +4,6 @@ ms.author: glmorale
 ms.date: 11/1/2022
 ms.topic: include
 ---
-
-### Task library exposes Agent hosting model
-
-Task Authors that want to determine whether an agent is running in Microsoft-hosted pools or not can now use Task Library function `getAgentMode()` to determine the hosting model. This is beneficial in scenarios where a task wants to influence behavior based on having access to a customer's network or not. A task may try to reach an Azure service over a private endpoint if it is executed from a self-hosted agent or scale-set agents that reside in a customer's network.
-See [task reference](https://github.com/microsoft/azure-pipelines-task-lib/blob/master/node/docs/azure-pipelines-task-lib.md#taskgetAgentMode).
-
 ### Template Expressions in Repository Resource Definition
 
 We've added support for template expressions when defining the `ref` property of a `repository` resource in a YAML pipeline. This was a [highly-requested feature by our Developer Community](https://developercommunity.visualstudio.com/t/allow-variables-at-resourcesrepositoriesrepository/816606).
@@ -192,3 +186,8 @@ The log entry will show up in the Audit UI as well as following.
 
 > [!div class="mx-imgBorder"]
 > ![Log entry in Audit UI](../../media/212-pipelines-01.png)
+
+### Task library exposes Agent hosting model
+
+Task Authors that want to determine whether an agent is running in Microsoft-hosted pools or not can now use Task Library function `getAgentMode()` to determine the hosting model. This is beneficial in scenarios where a task wants to influence behavior based on having access to a customer's network or not. A task may try to reach an Azure service over a private endpoint if it is executed from a self-hosted agent or scale-set agents that reside in a customer's network.
+See [task reference](https://github.com/microsoft/azure-pipelines-task-lib/blob/master/node/docs/azure-pipelines-task-lib.md#taskgetAgentMode).
