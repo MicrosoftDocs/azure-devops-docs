@@ -123,6 +123,8 @@
     href: commit-history.md
   - name: Commit details
     href: commit-details.md
+  - name: Git index.lock file
+    href: git-index-lock.md
 - name: Pull requests
   items:
   - name: About pull requests
