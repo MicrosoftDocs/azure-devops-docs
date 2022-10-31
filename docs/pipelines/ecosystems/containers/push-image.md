@@ -39,7 +39,7 @@ When you create a new pipeline for a repository that contains a Dockerfile, Azur
 
 1. From the **Configure** tab, select the **Docker - Build and push an image to Azure Container Registry** task.
 
-    :::image type="content" source="../media/docker-task.png" alt-text="Build and push Docker images to Azure Container Registry":::
+    :::image type="content" source="../media/docker-task.png" alt-text="Screenshot of Build and push Docker images to Azure Container Registry.":::
 
 1. Select your **Azure Subscription**, and then select **Continue**.
 
@@ -47,7 +47,7 @@ When you create a new pipeline for a repository that contains a Dockerfile, Azur
 
 1. Select **Validate and configure** when you are done.
     
-    :::image type="content" source="../media/docker-container-registry.png" alt-text="A screenshot showing how to configure a docker pipeline to build and publish an image to Azure Container Registry":::
+    :::image type="content" source="../media/docker-container-registry.png" alt-text="A screenshot showing how to configure a docker pipeline to build and publish an image to Azure Container Registry.":::
 
     As Azure Pipelines creates your pipeline, it will:
     
