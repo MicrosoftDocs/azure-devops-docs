@@ -1,13 +1,13 @@
 ---
-title: Placeholder for title.
+title: Support for template expressions in repository and container resource definitions. 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/1/2022
-description: With this update, placeholder.
+description: With this update, we included support for template expressions in repository and container resource definitions.
 ---
-# TBD
+# Support for template expressions in repository and container resource definitions
 
-With this update, 
+With this update, we included support for template expressions in repository and container resource definitions. Now you can use template expressions when defining the `ref` property of a `repository` resource in a YAML pipeline to choose the branch of a repository resource. In addition, we've added support for template expressions when defining the `endpoint`, `volumes`,  `ports`, and `options` properties of a `container` resource in a YAML pipeline.
 
 Check out the release notes for details.
 
@@ -20,11 +20,6 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-212-update-links](includes/pipelines/sprint-212-update-links.md)]
 
-### Wiki
-
-[!INCLUDE [sprint-212-update-links](includes/wiki/sprint-212-update-links.md)]
-
-
 ## Azure Boards
 
 [!INCLUDE [sprint-212-update](includes/boards/sprint-212-update.md)]
@@ -32,11 +27,6 @@ Check out the release notes for details.
 ## Azure Pipelines
 
 [!INCLUDE [sprint-212-update](includes/pipelines/sprint-212-update.md)]
-
-## Wiki
-
-[!INCLUDE [sprint-212-update](includes/wiki/sprint-212-update.md)]
-
 
 ## Next steps
 
