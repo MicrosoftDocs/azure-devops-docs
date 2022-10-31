@@ -5,7 +5,7 @@ description: Decide between using a local or a server workspace
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 10/27/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,47 +14,43 @@ ms.subservice: azure-devops-repos-tfvc
 # Decide between using a local or a server workspace
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. 
+When you [create or edit a workspace](create-work-workspaces.md) in Visual Studio, you can specify whether its location is **Local** or **Server**.
 
 <a name="local"></a>
 
 ## When should I use a local workspace?
 
-Use a local workspace if there is not a reliable connection between your computer and the Azure DevOps instance you are connected to, and there will be less than 100,000 items in the workspace. It may also be preferable to you if you do not need to work as part of a team and strongly prefer working with the filesystem in a manner similar to Git.
+Use a local workspace if there isn't a reliable connection between your computer and the Azure DevOps instance you're connected to, and there will be less than 100,000 items in the workspace. You might also prefer a local workspace if you don't need to work as part of a team and you strongly prefer working with the file system in a manner similar to Git.
 
 > [!IMPORTANT]
-> Using a local workspace can have performance degrade as the number of items approaches or exceeds 100,000. This is because local workspaces keep multiple copies of the same file to enable some version control actions locally due to the DevOps Server connection not being reliably available. This also means there is more room taken up on disk. 
+> Using a local workspace can have performance degrade as the number of items approaches or exceeds 100,000. Local workspaces keep multiple copies of the same file to enable some version control actions locally, due to the DevOps Server connection not being reliably available. Multiple copies also take up more room on disk.
 
 ## When might I need to use a server workspace?
 
-Use a server workspace when the specific conditions are not met for using a local workspace, or if...
-
--   You want to use Visual Studio 2010 or earlier versions to work with the workspace.
-
--   You need to use the **Enable get latest on check-out** option.
+Use a server workspace when the specific conditions aren't met for using a local workspace, or if you use the **Enable get latest on check-out** option.
 
 ### Working in a server workspace while disconnected
 
-You can still work in a server workspace if temporarily disconnected from the DevOps instance by taking a solution "offline". Later when the connection is available, you can take the solution "online" to return to the connected behavior. Visual Studio will detect the disconnected condition and take the solution offline automatically, but if you wish to do so manually, these are the steps.
+You can still work in a server workspace if temporarily disconnected from the Azure DevOps instance by taking a solution "offline". Later when the connection is available, you can take the solution "online" to return to the connected behavior. Visual Studio detects the disconnected condition and takes the solution offline automatically, but if you wish to do so manually, these are the steps.
 
 > [!TIP]
-> If working offline is important to you, then you should consider using a local workspace instead of a server workspace See [Local Workspaces](decide-between-using-local-server-workspace.md#local) earlier in this topic.
+> If working offline is important to you, you should consider using a local workspace instead of a server workspace. See [Local Workspaces](decide-between-using-local-server-workspace.md#local).
 
 ### To take a solution offline
 
-1.  From your local working folder, open the solution that you want to work on.
+1. In Visual Studio **Source Control Explorer**, from your local working folder, open the solution you want to work on.
 
-    If the server is offline, the **Go Offline** dialog box appears.
+   If the server is offline, the **Go Offline** dialog box appears.
 
-2.  Choose **OK**
+2. Choose **OK**
 
-When saving edits to files in your solution, you may be prompted with the **Save of Read-Only File** dialog box. This is expected. Choose **Overwrite** to remove the write-protection from the file. It should only ask once per file while offline.
+When saving edits to files in your solution, you may be prompted with the **Save of Read-Only File** dialog box. This prompt is expected once per file while offline. Choose **Overwrite** to remove the write protection from the file.
 
-Visual Studio does not put the solution back online automatically, the user must do that using the following steps.
+Visual Studio doesn't put the solution back online automatically. You must do that by using the following steps.
 
-### To bring your changes online when the DevOps service is available
+### To bring your changes online when the Azure DevOps service is available
 
 1.  In **Solution Explorer**, open the context menu for the solution or file, and then choose **Go Online**.
     - or - 
