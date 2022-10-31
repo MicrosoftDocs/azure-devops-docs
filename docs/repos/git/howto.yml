@@ -11,7 +11,7 @@ metadata:
   ms.subservice: azure-devops-repos-git
 title:  Frequently Asked Git Questions
 summary: | 
-  **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018-TFS 2015** 
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 sections:
   - name: Ignored
