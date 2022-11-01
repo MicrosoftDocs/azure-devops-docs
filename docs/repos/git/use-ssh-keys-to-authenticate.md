@@ -333,9 +333,9 @@ Host vs-ssh.visualstudio.com
   IdentityFile ~/.ssh/your_private_key
   IdentitiesOnly yes
 
-# OpenSSL 8.7 has DEPRECATED RSA. IF using OpenSSL version > 8.6 you will need to 
+# OpenSSH 8.7 has DEPRECATED RSA. IF using OpenSSH version > 8.6 you will need to 
 # add the 'HostkeyAlgorithms' and 'PubkeyAcceptedAlgorithms' entries below. You can 
-# check the version of OpenSSL/OpenSSH you're using by running the command 'ssh -v localhost'    
+# check the version of OpenSSH you're using by running the command 'ssh -v localhost'    
 Host ssh.dev.azure.com
   IdentityFile ~/.ssh/id_rsa
   HostkeyAlgorithms +ssh-rsa
