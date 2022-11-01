@@ -11,7 +11,7 @@ metadata:
   ms.subservice: azure-devops-repos-git
 title:  Frequently Asked Git Questions
 summary: | 
-  **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018-TFS 2015** 
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 sections:
   - name: Ignored
@@ -19,12 +19,12 @@ sections:
       - question: |
           How can I easily get a remote branch downloaded to my local repository?
         answer: |
-          First, make sure you have an `origin` repository configured. You should have such a repository if you cloned [`git clone`](clone.md)) your repo.  When you check out a branch that doesn't exist locally, Git determines if there is a remote branch with the same name. If there is, Git creates a local branch with a reference to the remote branch of that name. Use `git pull` to download the commits and have Git catch up on the branch history locally.
+          First, make sure you have an `origin` repository configured. You should have such a repository if you cloned [`git clone`](clone.md)) your repo.  When you check out a branch that doesn't exist locally, Git determines if there's a remote branch with the same name. If there is, Git creates a local branch with a reference to the remote branch of that name. Use `git pull` to download the commits and have Git catch up on the branch history locally.
           
       - question: |
-          How can I find out which branch I am working in?
+          How can I find out which branch I'm working in?
         answer: |
-          `git branch` with no arguments shows the local branches and highlights the ones you have checked out. In Visual Studio, the status bar also displays the current branch when you are working with a project stored in a local Git repository. 
+          `git branch` with no arguments shows the local branches and highlights the ones you've checked out. In Visual Studio, the status bar also displays the current branch when you're working with a project stored in a local Git repository. 
 
       - question: |
           When should I make Git commits?
@@ -37,12 +37,12 @@ sections:
         answer: |
           Large projects with many commits and a range of contributors can result in commit histories for the `main` branch that represents 
           the development history of the topic branches merged into `main` more than the development history of the overall project. 
-          Git provides a facility for condensing commits on branches through [squashing commits and rebasing](rebase.md). Squashing commits makes the commit history on a branch less verbose and makes for a simpler commit history on the main branch once merged.
+          Git provides a facility for condensing commits on branches through [squashing commits and rebasing](rebase.md). When you squash commits, the commit history on a branch becomes less verbose, which makes for a simpler commit history on the main branch once merged.
           
       - question: |
           How can I find out who made a specific change to a file?
         answer: |
-          Use the `git blame` command to find out who made a particular change to a file. From your local repository, you can run `git blame` with the `-L` parameter, specifying which lines of interest. `Blame` produces formatted output showing the commit that last updated the line as well as the name of the person who made the commit. 
+          Use the `git blame` command to find out who made a particular change to a file. From your local repository, you can run `git blame` with the `-L` parameter, specifying which lines of interest. `Blame` produces formatted output showing the commit that last updated the line and the name of the person who made the commit. 
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
@@ -54,13 +54,13 @@ sections:
           ```
           
           `Blame` searches the commit history for you. You can also review  a file's history in the web portal to determine
-          who made a change and when. Open Code Explorer for your repository and branch, then click on the file of interest. Azure Repos will show a complete
+          who made a change and when. Open Code Explorer for your repository and branch, then select the file of interest. Azure Repos will show a complete
           commit history for that file on the current branch.
           
       - question: |
           I've made changes to some files and now I can't check out to a different branch or rebase my work.
         answer: |
-          Checking out to a different branch in Git will affect the state of files on your file system. Git uses the commit history to make sure you are working with the files that represent the state of your branch. If you try to change branches while you have uncommitted changes, those changes would be overwritten during check out. Because Git doesn't want you to accidentally lose your changes, it prevents the check out from happening. You have two options:
+          Checking out to a different branch in Git will affect the state of files on your file system. Git uses the commit history to make sure you're working with the files that represent the state of your branch. If you try to change branches while you have uncommitted changes, those changes would be overwritten during checkout. Because Git doesn't want you to accidentally lose your changes, it prevents the checkout from happening. You have two options:
           
           - Abandon the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.  
           - Commit the changes. See [saving your work in Git with commits](commits.md). 
@@ -69,7 +69,7 @@ sections:
       - question: | 
           I've done some work but need to switch to something else. How can I save my work for later without committing the changes?
         answer: |
-          Sometimes you want to keep the changes, but not commit them because they are not at a point where you are comfortable doing so. Use Git `stash`. Stash takes the current staged and unstaged changes in your branch and saves the work, then returns your branch back to the state of the last commit. You can change to the other branch, do your work, then when you return to this branch run `stash apply` to restore your changes.
+          Sometimes you want to keep the changes, but not commit them because they aren't at a point where you're comfortable doing so. Use Git `stash`. Stash takes the current staged and unstaged changes in your branch and saves the work, then returns your branch back to the state of the last commit. You can change to the other branch, do your work, then when you return to this branch run `stash apply` to restore your changes.
          
           
           > [!div class="tabbedCodeSnippets"]
@@ -79,9 +79,9 @@ sections:
           HEAD is now at be26067
           ```
           
-          When you run `git stash apply` the most recently stashed changes will be applied to your current branch. If there is a conflict applying the stashed changes, `stash` will restore the changes for the files that do not conflict and create conflict markers in the files that do conflict for you to resolve. You should [merge](merging.md) the changes manually in this case.
+          When you run `git stash apply`, the most recently stashed changes will be applied to your current branch. If there's a conflict applying the stashed changes, `stash` will restore the changes for the files that don't conflict and create conflict markers in the files that do conflict for you to resolve. You should [merge](merging.md) the changes manually in this case.
           
-          Once you are done with the stash, delete it with `git stash drop` This command removes the last set of stashed changes.
+          Once you're done with the stash, delete it with `git stash drop` This command removes the last set of stashed changes.
           
           You can have multiple stashes, but doing so requires more manual manipulation as you have to explicitly apply and drop stashes. Learn more from [Git Stash documentation](https://git-scm.com/book/en/v1/Git-Tools-Stashing).
           
@@ -104,7 +104,7 @@ sections:
           > git config core.editor notepad
           ```
           
-          Which will configure Windows' Notepad to edit Git information as needed and properly pass through the text from Git to Notepad. You can also specify 
+          This command configures Windows Notepad to edit Git information as needed and properly pass through the text from Git to Notepad. You can also specify 
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
@@ -117,7 +117,7 @@ sections:
           How can I change the username and email displayed in my commits?
         answer: |
           Git puts a user name and email address information inside each commit, and Azure Repos uses this information when viewing commits and when working with pull requests.
-          If you are working on the command line, you can update the name and email information displayed using the `git config` command:
+          If you're working on the command line, you can update the name and email information displayed using the `git config` command:
           
           > [!div class="tabbedCodeSnippets"]
           ```Git CLI
@@ -128,4 +128,8 @@ sections:
           The `--global` option will set the email and name included in commits for all Git repositories on this system. If you want to change the settings for a single
           repository, you must change to the directory where the Git repository is located and run the above commands without the `--global` flag.
           
-          You can also change the name and email settings from Visual Studio. In Team Explorer, choose **Settings** and under **Git**, click the **Global Settings** or **Repository Settings** link.  
+          You can also change the name and email settings from Visual Studio. From the **Git** menu, select **Settings** In the **Options** dialog, select **Git Global Settings** or **Git Repository Settings** > **General**.
+
+          Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+          
+          In Team Explorer, choose **Settings** and under **Git**, select the **Global Settings** or **Repository Settings** link.  
