@@ -41,11 +41,15 @@ Similar to a workspace in TFVC you `clone` the Git repository to a folder on you
 
 # [Command Line](#tab/command-line)
 
-```
+```console
 git clone https://dev.azure.com/demo-fabrikam/Fabrikam/_git/Mapping-TFVC-actions-to-Git
 ```
 
 # [Visual Studio](#tab/visual-studio)
+
+Visual Studio provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
+
+[!INCLUDE [Clone an Azure Repos Git repo](includes/clone-azure-repos-git.md)]
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
@@ -74,7 +78,7 @@ Create and switch to a local topic branch, named *francis/demo-feature*. It is g
 
 # [Command Line](#tab/command-line)
 
-```
+```console
 git checkout -b francis/demo-feature
 ```
 
@@ -82,6 +86,8 @@ git checkout -b francis/demo-feature
 
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [Create branch](includes/create-branch-create-branch.md)]
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
@@ -97,27 +103,28 @@ Similar to the TFVC experience, new files in the working folder are not automati
 
 # [Command Line](#tab/command-line)
 
-```
+```console
 git add <file>
 ``` 
 
 or  
 
-```
+```console
 git add --all
 ```
 
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [How to stage your changes](includes/commits-stage-your-changes.md)]
+
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-In Visual Studio, choose **Team Explorer > Changes > Untracked Files > add individual files or add all**
+In Visual Studio, choose **Team Explorer** > **Changes** > **Untracked Files** > **add individual files** or **add all**.
 
 ![Viewing Tracked and Untracked Changes in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-untracked.png)
 
 ---
-
 
 Using the pre-baked sample, you will have 13 new files that have been included and staged in the local repository.
 
@@ -127,7 +134,7 @@ Wondering what changes are now sitting in your working environment? As before, t
 
 # [Command Line](#tab/command-line)
 
-```
+```console
 git status
 ```
 
@@ -135,9 +142,11 @@ git status
 
 # [Visual Studio](#tab/visual-studio)
 
+In Visual Studio, select **Git** >  **Commit or Stash** to open **Git Changes**, where you can see current changes.
+
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-In Visual Studio, choose **Team Explorer > Changes > Included Changes**
+In Visual Studio Team Explorer, choose **Changes** > **Included Changes**.
 
 ![Using Visual Studio Team Explorer to show staged changes](./media/mapping-my-tfvc-actions-to-git/actionmap-status-vs2.png)
 
@@ -151,12 +160,14 @@ You commit the changes to your local repository using `git commit`, similar to a
 
 # [Command Line](#tab/command-line)
 
-```
+```console
 git commit
 ```
 
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [How to create a commit](includes/commits-create-commit.md)]
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
@@ -172,16 +183,18 @@ First you need to publish your local francis/demo-feature branch to the remote s
 
 # [Command Line](#tab/command-line)
 
-```
+```console
 git push --set-upstream origin francis/demo-feature
 ```
 
 
 # [Visual Studio](#tab/visual-studio)
 
+In Visual Studio, select **Git** > **Push** to push the current branch.
+
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-In Visual Studio, choose **Team Explorer > Branches > right-click on local branch > Publish Branch**
+In Visual Studio Team Explorer, choose **Branches**, then right-click on a local branch, and select **Publish Branch**.
 
 ![Pushing a branch to remote with Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-publishbranch.png)
 
@@ -201,13 +214,13 @@ To see the commit, you just created you can review the local history.
 
 For a compact history, use:
 
-```
+```console
 git log --oneline
 ```
 
 For a detailed, view, use:
 
-```
+```console
 git log
 ```
 
@@ -217,9 +230,9 @@ As shown above, `git log` lists the author, email, date written, and the commit 
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
+You can retrieve a history view of the **local** repository in the Visual Studio IDE. Select **Git** > **Manage Branches**. Under **Branches**, select a branch to view its history.
 
-You can retrieve a history view of the **local** repository in the Visual Studio IDE.
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 In Visual Studio, choose **Team Explorer > Branches | Changes | Sync > Actions > View History**
 
@@ -245,7 +258,7 @@ When working with Git, you do not change branches by switching to separate folde
 
 ### Command line
 
-```
+```console
 git checkout <branch>
 ```
 
@@ -259,19 +272,19 @@ There are lots of reasons to want to get updates. For example, when you need to 
 
 ### Command line
 
-```
+```console
 git pull
 ```
 
 or 
 
-```
+```console
 git fetch
 ``` 
 
 followed by 
 
-```
+```console
 git merge FETCH_HEAD
 ```
 
@@ -283,17 +296,17 @@ There may be a valid reason to revert all revisions you made in your local repos
 
 ### Command line
 
-```
+```console
 git reset --hard HEAD
 ```
 
 followed by 
-```
+```console
 git pull origin
 ``` 
 
 followed by 
-```
+```console
 git clean -xdf
 ```
 
@@ -313,6 +326,10 @@ There are a lot more actions and options available to Git users. Here are some u
 ### What about sync?
 
 "*Does the Visual Studio IDE `Commit and Sync` not magically do all this?*", you may be asking yourself.
+
+Select **Git** > **Commit or Stash** to open **Git Changes**. Select the **Commit All** dropdown menu, then select **Commit All and Sync**.
+
+Or, in Team Explorer, select the **Commit** dropdown menu and then **Command and Sync**.
 
 ![Commit and sync in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-sync.png)
 
