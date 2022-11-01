@@ -15,7 +15,7 @@ ms.subservice: azure-devops-repos-git
 # View, filter, and open pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 You create pull requests (PRs) to [review](review-pull-requests.md) and [merge](complete-pull-requests.md) code changes in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Team members and stakeholders can review changes and give feedback before merging the code into the target branch. Reviewers can also comment on changes and vote to approve or reject the code.
 
@@ -99,7 +99,11 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer.
+To list pull requests from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To access PRs from Visual Studio Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -110,7 +114,6 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 1. To view the PR list in the Azure DevOps web portal, select **Actions** and then select **Open in browser**.
 
    ![Screenshot of the P R list in Visual Studio Team Explorer.](./media/view-pull-requests/list-prs.png)
-
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -233,6 +236,12 @@ You can also type a string into the Search field to show matching results from t
 
 # [Visual Studio](#tab/visual-studio)
 
+To filter pull requests from Visual Studio:
+
+1. In the **Git** menu, select **\<your Git service>** > **View Pull Requests**.
+
+1. Filter by **Author**, **Label**, or other attributes.
+
 From the Team Explorer **Pull Requests** view:
 - Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
 - Or, type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
@@ -274,11 +283,13 @@ On the PR **Files** tab, you can review the actual changes in the PR files. On t
 
 # [Visual Studio](#tab/visual-studio)
 
-From the Team Explorer **Pull Requests** view, right-click the PR and select **Open in browser** to open the PR in the web portal.
+To open a pull request from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, then select a pull request to open it.
+
+Or, from the Team Explorer **Pull Requests** view, right-click the PR and select **Open in browser** to open the PR in the web portal.
 
 ### Check out a branch
 
-Starting with Visual Studio 2017 Update 6, you can check out a PR's source branch directly from the **Pull Requests** view. Right-click a PR, and choose **Checkout Source Branch**.
+In Visual Studio 2019, you can check out a PR's source branch directly from the **Pull Requests** view. Right-click a PR, and choose **Checkout Source Branch**.
 
 ![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
 
