@@ -684,8 +684,6 @@
         items:
         - name: "2022"
           items:
-          - name: November 1
-            href: 2022/wiki/sprint-212-update.md
           - name: February 28
             href: 2022/wiki/sprint-200-update.md
           expanded: false
