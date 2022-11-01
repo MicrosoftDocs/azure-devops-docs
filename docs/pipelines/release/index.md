@@ -4,6 +4,7 @@ ms.custom: seodec18
 description: What are classic release pipelines
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.topic: conceptual
+ms.custom: engagement-fy23
 ms.author: ronai
 author: RoopeshNair
 ms.date: 10/19/2022
