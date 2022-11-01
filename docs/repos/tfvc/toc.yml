@@ -10,6 +10,8 @@
     href: share-your-code-in-tfvc-eclipse.md
   - name: Xcode
     href: share-your-code-in-tfvc-xcode.md
+  - name: Develop an app
+    href: develop-your-app-team-foundation-version-control.md
   - name: Write new code 
     href: day-life-alm-developer-write-new-code-user-story.md
   - name: Suspend work using My Work
@@ -127,7 +129,7 @@
   - name: Clean up files when users leave
     href: clean-up-files-when-users-leave.md
   - name: Destroy version controlled files
-    href: configure-check-out-settings.md
+    href: destroy-version-controlled-files.md
   - name: Migrate from Visual SourceSafe
     href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
   - name: Download permissions report
