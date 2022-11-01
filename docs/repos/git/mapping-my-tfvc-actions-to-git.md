@@ -6,7 +6,7 @@ ms.service: azure-devops-repos
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/24/2022
+ms.date: 11/03/2022
 ms.subservice: azure-devops-repos-git
 ---
 
@@ -14,6 +14,7 @@ ms.subservice: azure-devops-repos-git
 # Understand how Team Foundation Version Control (TFVC) commands map to Git workflows 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
