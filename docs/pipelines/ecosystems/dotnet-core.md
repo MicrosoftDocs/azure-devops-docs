@@ -83,7 +83,7 @@ Read further to learn some of the more common ways to customize your pipeline.
 
 ```yaml
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -186,13 +186,13 @@ NuGet is a popular way to depend on code that you don't build. You can download 
 
 ::: moniker range=">= tfs-2018"
 
-You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds.
+You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds. If your feed is in the same project as your pipeline, you do not need to authenticate. 
 
 This pipeline uses an artifact feed for `dotnet restore` in the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md). 
 
 ```yaml
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'windows-latest'
