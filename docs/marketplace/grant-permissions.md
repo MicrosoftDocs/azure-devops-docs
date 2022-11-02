@@ -109,5 +109,5 @@ When you update or delete an extension, it affects all the project collections t
 
 - [Install extensions](install-extension.md)
 - [Request extensions](request-extensions.md)
-- [Uninstall or disable extensions](uninstall-disable-extensions.md)
+- [Uninstall or disable extensions](install-extension.md#uninstall-an-extension)
 - [About permissions](../organizations/security/about-permissions.md)

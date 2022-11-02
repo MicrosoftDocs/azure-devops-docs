@@ -142,7 +142,7 @@ If you've installed a group or page contribution, refresh your browser, and then
 
 ## Action-level contributions
 
-Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/uninstall-disable-extensions.md).  
+Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/install-extension.md#uninstall-disable-extension).  
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
