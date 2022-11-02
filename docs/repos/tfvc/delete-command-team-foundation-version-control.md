@@ -48,7 +48,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    `<itemspec>`
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder to delete from the Azure DevOps server. For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   Identifies the file or folder to delete from the Azure DevOps server. For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
 
    > [!Note]  
    > You can specify more than one `itemspec` argument.
@@ -80,15 +80,15 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="3":::
    Prevents other users from checking in or checking out the specified items. For more information, see [Understanding Lock Types](understand-lock-types.md).
    
-   Lock Options:
+   Lock options:
 
-   - `none`
+   - `none`  
      Default. No lock is applied. If you have placed a lock on the specified file, this option removes it. It doesn't remove a lock placed by someone else.
    
    - `checkin`  
      Other users can check out the specified items, but they can't check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    
-   - `checkout`
+   - `checkout`  
      Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    :::column-end:::
 :::row-end:::
@@ -100,7 +100,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    Deletes all files and/or folders and subfolders that match the `itemspec` from the specified directory.
 
    - `tf delete <folder1>\<folder2> /recursive` deletes all the files and subdirectories contained by *\<folder1>\\\<folder2>*, and *\<folder1>\\\<folder2>* itself.
-   - `tf delete <folder1>\<folder2> <filespec> /recursive` deletes all files and subdirectories matching `<filespec>` contained in *\<folder1>\\\<folder2>* and each of its subdirectories, as well as all files and subdirectories contained within any directory that matches the `filespec`.
+   - `tf delete <folder1>\<folder2> <filespec> /recursive` deletes all files and subdirectories matching the `filespec` contained in *\<folder1>\\\<folder2>* and each of its subdirectories, as well as all files and subdirectories contained within any directory that matches the `filespec`.
    
      For example, in a workspace containing:
    
@@ -121,7 +121,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
 :::row-end:::
 
 ## Remarks
-The `delete` command records a pending change of type "delete" in your workspace for the items that you specify. When you commit a pending change of type `delete` to the Azure DevOps server by using the `checkin` command, TFVC removes the item from the Azure DevOps server but doesn't delete it permanently. You can locate deleted items in the Azure DevOps server by using the `dir` command, and you can restore deleted items by using the [Undelete command](undelete-command.md).
+The `delete` command records a pending change of type `delete` in your workspace for the items that you specify. When you commit a pending change of type `delete` to the Azure DevOps server by using the `checkin` command, TFVC removes the item from the Azure DevOps server but doesn't delete it permanently. You can locate deleted items in the Azure DevOps server by using the `dir` command, and you can restore deleted items by using the [Undelete command](undelete-command.md).
 
 If you've deleted an item in your workspace but haven't checked in the change, you can restore the item to your workspace and remove the deletion from your list of pending changes by using the [Undo command](undo-command.md).
 
@@ -143,7 +143,7 @@ tf delete 314.cs
 
 ## Related articles
 
-- [Move, Rename, and Delete Version-Controlled Files and Folders](rename-move-files-folders.md)
-- [Undelete Command](undelete-command.md)
-- [Undo Command](undo-command.md)
-- [Dir Command](dir-command.md)
+- [Move, rename, and delete version-controlled files and folders](rename-move-files-folders.md)
+- [Undelete command](undelete-command.md)
+- [Undo command](undo-command.md)
+- [Dir command](dir-command.md)

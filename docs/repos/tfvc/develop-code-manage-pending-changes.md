@@ -25,7 +25,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 
-## Work in Team Explorer
+## Work in Visual Studio
 
 From the Visual Studio **Team Explorer** home page, which you can open by pressing Ctrl+0, H, you can begin coding in a new or existing solution.
 
@@ -59,17 +59,19 @@ For step-by-step examples, see [Day in the life of a DevOps developer: Write new
 ### Tips
 
 - You can control the kinds of work items that appear in the **Available Work Items** section. Choose one of the default options or any queries that are contained in the root **Shared Queries** folder. To work with these queries, use the **Work Items** page in **Team Explorer**.
+
 - When you move a work item to **Available Work Items**, **In Progress Work**, or **Suspended Work**, the work item state or comments update so your team can be automatically advised on the status of your work. For example, the task board for your team updates to show your status. See [Track work with Visual Studio](/previous-versions/visualstudio/visual-studio-2013/dd286619(v=vs.120)).
+
 - If your project contains customized work item type definitions, you might have problems using **My Work**, unless an administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../boards/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template).
 
 ## Use the Pending Changes page to manage work
 
-You can use the **Pending Changes** page in **Team Explorer** to manage your work. Select **Check In** under **In Progress Work** on the **My Work** page, or press Ctrl+0, P.
+You can use the **Pending Changes** page in **Team Explorer** to manage your work. To open **Pending Changes**, select **Check In** under **In Progress Work** on the **My Work** page, or press Ctrl+0, P.
 
 ![Screenshot of the Pending Changes page in Team Explorer.](media/develop-code-manage-pending-changes/pending.png)
 
 > [!TIP]
-> -  You can :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: undock the Pending Changes page from **Team Explorer** and open it in a new window.
+> -  You can undock :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: the **Pending Changes** page from **Team Explorer** and open it in a new window.
 > -  You can toggle between list and tree views from the **View Options** link under **Included Changes**.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in. Changes include:  
@@ -87,7 +89,9 @@ Almost every change that you make to the files on your dev machine is stored in 
 
 If you're working in a [local workspace](decide-between-using-local-server-workspace.md), Visual Studio can detect changes that you make outside the system. If you edit a file outside Visual Studio, for example in Notepad, the change automatically appears under **Included Changes** on the **Pending Changes** page.
 
-If you add or remove a file outside Visual Studio, for example in File Explorer, the file appears under the **Detected** link in the **Excluded Changes** section. If you want to include these changes, select the **Detected** link. The **Promote Candidate Changes** dialog box appears. You can right click items and choose **Browse in Windows Explorer** to display them, or **Delete from disk** to delete them. Select items and then select **Promote** to add the items to **Included Changes**.
+If you add or remove a file outside Visual Studio, for example in File Explorer, the file appears under the **Detected** link in the **Excluded Changes** section. If you want to include these changes, select the **Detected** link.
+
+The **Promote Candidate Changes** dialog box appears. You can right-click items and choose **Browse in Windows Explorer** to display them, or **Delete from disk** to delete them. Select items and then select **Promote** to add the items to **Included Changes**.
 
 > [!NOTE]
 > Empty folders won't appear.
@@ -106,9 +110,10 @@ You can review what you've changed in a file.
 
 ### Use Pending Changes to view what you changed
 
--   On the **Pending Changes** page, right-click the item and choose:  
-    -   **Compare with Workspace Version** to see what you've changed from the version in your workspace.  
-    -   **Compare with Latest Version** to see how your changes compare to the latest version of the file in your team's codebase.
+On the **Pending Changes** page, right-click the item and choose:
+
+-   **Compare with Workspace Version** to see what you've changed from the version in your workspace.
+-   **Compare with Latest Version** to see how your changes compare to the latest version of the file in your team's codebase.
 
 ### Use Solution Explorer or Source Control Explorer to view what you changed
 
@@ -147,12 +152,12 @@ You can discard one, some, or all of the pending changes in your workspace.
 
 ### To undo all your pending changes
 
-- On the **Pending Changes** page in **Team Explorer**, select the **Actions** link, and then choose **Undo All**.
+On the **Pending Changes** page in **Team Explorer**, select the **Actions** link, and then choose **Undo All**.
 
 ## Use the command prompt
 
-- The [Status command](status-command.md) displays pending changes in the command prompt.  
-- The [Checkin command](checkin-command.md) opens pending changes in the **Check In** dialog box.  
+- The [Status command](status-command.md) displays pending changes in the command prompt.
+- The [Checkin command](checkin-command.md) opens pending changes in the **Check In** dialog box.
 - The [Undo command](undo-command.md) undoes pending changes.
 
   > [!TIP]
@@ -164,12 +169,16 @@ You can discard one, some, or all of the pending changes in your workspace.
 
 When you're finished making your changes:
 
-- To request a code review of your pending changes, on the **Pending Changes** page, under **Actions**, choose **Request Review**. For more information, see [Day in the life of a DevOps developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
-- If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).  
+- To request a code review of your pending changes, on the **Pending Changes** page, under **Actions**, choose **Request Review**. For more information, see [Day in the life of a DevOps developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
+
+- If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
+
 - To check in and add your changes to the team's codebase, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
 ## Tips
 
--   If you're new to developing an app with Visual Studio and TFVC, see [[Day in the life of a developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).  
--   When you begin a new work item, it's a good idea to [download the latest files from the server](download-get-files-from-server.md) before you check out files and begin your work.  
--   Use [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to manage your files in version control.
+- If you're new to developing an app with Visual Studio and TFVC, see [Day in the life of a DevOps developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
+
+- When you begin a new work item, it's a good idea to [download the latest files from the server](download-get-files-from-server.md) before you check out files and begin your work.
+
+- Use [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to manage your files in version control.
