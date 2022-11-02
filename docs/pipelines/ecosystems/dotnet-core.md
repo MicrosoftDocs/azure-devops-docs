@@ -4,8 +4,8 @@ description: Use .NET Core to build apps with Azure Pipelines, Azure DevOps, & T
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 12/27/2021
-ms.custom: contperf-fy20q4, freshness-fy22q2
+ms.date: 11/02/2022
+ms.custom: contperf-fy20q4, freshness-fy22q2, content-freshness
 monikerRange: '<= azure-devops'
 ---
 
@@ -134,11 +134,11 @@ Read further to learn some of the more common ways to customize your pipeline.
 
 Use Azure Pipelines to build your .NET Core projects. Build your projects on Windows, Linux, or macOS without the need to set up infrastructure. The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines include several preinstalled versions of the .NET Core SDKs.
 
-Ubuntu 18.04 is set here in the YAML file.  
+Ubuntu is set here in the YAML file.  
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'windows-2019'
+  vmImage: 'ubuntu-latest' 
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema/pool) for further examples.
@@ -152,7 +152,7 @@ To install 6.0.x SDK for building, add the following snippet:
 steps:
 - task: UseDotNet@2
   inputs:
-    version: '6.0.x'
+    version: '6.x'
 ```
 
 Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` in the following snippet: 
@@ -162,7 +162,7 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: 5.0.x
+    version: 6.x
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
 ```
@@ -452,12 +452,12 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
 * Add the following snippet to your `azure-pipelines.yml` file:
 
 
-# [.NET 5](#tab/dotnetfive)
+# [.NET >= 5](#tab/dotnetfive)
 
   ```yaml
   - task: UseDotNet@2
     inputs:
-      version: '5.0.x'
+      version: '6.x'
       includePreviewVersions: true # Required for preview versions
     
   - task: DotNetCoreCLI@2
