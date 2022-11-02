@@ -2,7 +2,7 @@
 title: Support for template expressions in repository and container resource definitions. 
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/1/2022
+ms.date: 11/2/2022
 description: With this update, we included support for template expressions in repository and container resource definitions.
 ---
 # Support for template expressions in repository and container resource definitions
