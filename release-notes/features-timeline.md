@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/11/2022
+ms.date: 11/2/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -160,9 +160,9 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types)">Ability to change link type from Web UI</a></td>
          <td>Boards</td>
-         <td>2022 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -329,7 +329,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>     
       <tr>
-        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types)">Ability to change link type from Web UI</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>

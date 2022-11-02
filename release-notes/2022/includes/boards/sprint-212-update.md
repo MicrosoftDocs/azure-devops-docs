@@ -14,6 +14,8 @@ We solved the problem by allowing you to edit and change the link type directly.
 > [!div class="mx-imgBorder"]
 > ![Gif to demo edit work item link types.](../../media/212-boards-01.gif "gif to demo edit work item link types")
 
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
 ### Create temporary query REST endpoint
 
 We have seen several instances of extension authors attempting to run unsaved queries by passing the Work Item Query Language (WIQL) statement through the querystring. This works fine unless you have a large WIQL statement that reaches the browser limits on querystring length. To solve this, we have created a new REST endpoint to allow tool authors to generate a temporary query. Using the id from the response to pass via querystring eliminates this problem.
