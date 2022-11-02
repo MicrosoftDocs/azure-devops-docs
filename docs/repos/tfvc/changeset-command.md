@@ -98,7 +98,13 @@ c:\projects>tf changeset /notes:@notes.txt 8675309
 
 Where the *notes.txt* can be in the following format:
 
-`field1=value1;`<br>`field2=value that`<br>`spans multiple`<br>`lines;`<br>`field3 = value3;`
+```
+field1=value1;
+field2=value that
+spans multiple
+lines;
+field3 = value3;
+```
 
 The following example replaces the existing comment for changeset 8675309 and displays information about the changeset in the command prompt window. This example doesn't open the Visual Studio **Changeset** dialog box.
 
