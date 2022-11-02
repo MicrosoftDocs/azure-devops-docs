@@ -3,7 +3,7 @@ title: Email or print user stories and other work items
 titleSuffix: Azure Boards
 description: Learn how to email or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
 ms.custom: work-items, seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: how-to
 ms.author: kaelli

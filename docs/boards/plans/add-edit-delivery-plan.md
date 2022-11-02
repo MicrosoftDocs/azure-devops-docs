@@ -2,7 +2,7 @@
 title: Add or edit a Delivery Plan in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add or edit a Delivery Plan in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.custom: cross-project  
@@ -60,7 +60,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 |Page         | Use to... |
 |-------------|-------------------|
 |**Overview**|Edit the plan **Name** or **Description**. |
-|**[Teams](#teams)** |Add or remove a team backlog. You can add up to 15 backlog levels. You can add a mix of backlog levels and teams from any project defined for the organization.  |
+|**[Teams](#teams)** |Add or remove a team backlog. You can add up to 20 backlog levels for Azure DevOps Services or 15 backlog levels for Azure DevOps Server 2022. You can add a mix of backlog levels and teams from any project defined for the organization.  |
 |**[Field criteria](#field-criteria)**|Specify field criteria to filter work item types displayed on the plan. All criteria is evaluated as an AND statement.  If no fields are specified, then all work item types that appear on the teams backlog level appear on the delivery plan.  |
 |**[Markers](#markers)** |Add up to 30 milestone markers to the plan. Specify a label and select a color.  |  
 |**[Fields](#fields)** |Add or remove fields from cards to display on the plan, similar to how you [customize them for your Kanban board](../../boards/boards/customize-cards.md). You can't add rich-text (HTML) fields, such as the Description field, to a card even if it appears in the list. These field types represent too many challenges to format on a card.    |

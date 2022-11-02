@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Extension Manifest Reference| Extensions for Azure DevOps
 description: How to create a manifest for your extension to Azure DevOps
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
@@ -14,7 +14,7 @@ ms.date: 03/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Every extension has a JSON manifest file that defines basic info about the extension. The file also defines how it can extend and enhance the experience. This article shows you how to create a manifest for your extension to Azure DevOps.
+Every extension has a JSON manifest file that defines basic information about the extension. The file also defines how it can extend and enhance the experience. This article shows you how to create a manifest for your extension to Azure DevOps.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -125,7 +125,7 @@ Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an exte
 }          
 ```
 
-You also need to add a new section in your extension manifest to override paid licensing. In the future, we'll remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
+You also need to add a new section in your extension manifest to override paid licensing. In the future, we'll remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “ID” and a “behavior.” The “ID” must match the ID of the contributions defined in the manifest.
 ```json
 "licensing": {
 
@@ -251,7 +251,7 @@ An administrator can then review and authorize the new set of scopes:
 
 ## Installation targets
 
-As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps and TFS 2015 Update 2 and later.
+As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps.
 
 The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
 
@@ -261,7 +261,7 @@ Supported identifiers for **extensions**:
 * `Microsoft.TeamFoundation.Server`: installs into TFS
 * `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
-Supported identifiers for **integrations** (tools or services that integrate with Azure DevOps or TFS):
+Supported identifiers for **integrations**:
 
 * `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with TFS
@@ -333,7 +333,7 @@ The version or version range is specified via the `version` field on the install
   * `(`: minimum version exclusive
   * `)`: maximum version exclusive
 
-Version numbers for Team Foundation Server and Azure DevOps Server:
+Version numbers for Azure DevOps Server:
 
 | Release      | Releases        | Version                             |
 |--------------|-----------------|-------------------------------------|
@@ -348,7 +348,7 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
 
 ### Examples showing versions
 
-#### Example: Extension that works with Azure DevOps and TFS 2017 and later
+#### Example: Extension that works with Azure DevOps
 
 ```json
 {
@@ -363,8 +363,8 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
     ]
 }
 ```
-
-#### Example: Integration that works with TFS 2015 and later
+<!--
+#### Example: Integration that works with 2015 and later
 
 ```json
 {
@@ -377,7 +377,7 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
 }
 ```
 
-#### Example: Integration that works with TFS 2013 and 2015
+#### Example: Integration that works with 2013 and 2015
 
 ```json
 {
@@ -389,10 +389,10 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
     ]
 }
 ```
-
+-->
 ### Shortcuts
 
-`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps and TFS 2015 Update 2 and later. 
+`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps. 
 
 ```json
 {
@@ -422,7 +422,7 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps and TFS 2017 RTM and later. 
+Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
 
 > [!TIP]
 > For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops).
@@ -471,7 +471,7 @@ Resolves to the following installation targets:
 
 Demands let you specify capabilities and other features required by your extension. You can use these demands to limit where your extension can be published or installed.
 
-In the future, demands get used by the Visual Studio Marketplace to list the products and environments your extension is compatible with. This helps customers understand whether your extension works with their version of TFS, for example.
+Demands get used by the Visual Studio Marketplace to list the products and environments your extension is compatible with, which helps customers understand whether your extension works with their version of Azure DevOps, for example.
 
 See the following example of how demands get specified in the extension manifest.
 
@@ -484,7 +484,7 @@ See the following example of how demands get specified in the extension manifest
 }
 ```
 
-In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps or TFS 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
+In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
 
 ### Supported demands
 
@@ -624,6 +624,6 @@ If you want to show a badge from another service, contact *vsmarketplace@microso
 
 ## Example manifest
 
-This extension contributes an action to the completed builds context menu and a hub to the Build hub group:
+The following extension contributes an action to the completed builds context menu and a hub to the Build hub group:
 
 [!code-json[](../_data/extension.json)]

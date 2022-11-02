@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.global_help.title: Triage work items
 description: Review and update work items by using the triage mode from the query results view in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: tutorial
 ms.author: kaelli
@@ -47,17 +47,17 @@ In this article you'll learn how to:
 
 The buttons to move up or down within the query results list are outside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**. 
 
-![Web portal, choose Boards>Queries](media/triage-queries/triage-buttons-new-exp.png)
+![Screenshot of  Web portal, Queries Results page, move up or down in the list controls.](media/triage-queries/triage-buttons-new-exp.png)
 
 
 You can save each work item as you change it. Or, you can update multiple work items and save them all at once with  :::image type="icon" source="../media/icons/save-items.png" border="false"::: **Save Items**. 
 
-:::image type="content" source="media/triage-queries/save-items-web-portal.png" alt-text="Screenshot of Web portal, View Results, and Save Items.":::
+:::image type="content" source="media/triage-queries/save-items-web-portal.png" alt-text="Screenshot of Web portal, Queries Results, and Save Items.":::
 
 If you don't see :::image type="icon" source="../media/icons/save-items.png" border="false"::: **Save Items**, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More commands**   and select the **Save Items** option.
 
 > [!div class="mx-imgBorder"]  
-> ![Query results page, save bulk modified items](../backlogs/media/bulk-modify/query-results-bulk-save-items.png) 
+> ![Screenshot of Query results page, save bulk modified items.](../backlogs/media/bulk-modify/query-results-bulk-save-items.png) 
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ If you don't see :::image type="icon" source="../media/icons/save-items.png" bor
 
 The buttons to move up or down within the query results list are inside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**.
 
-![Triage query results ](media/triage-queries/scrum-active-bug-triage-mode-co.png)
+![Screenshot of Triage query results, TFS 2018 version.](media/triage-queries/scrum-active-bug-triage-mode-co.png)
 
 
 You can save each work item as you change it. Or, you can update multiple work items and save them all at once with  :::image type="icon" source="../media/icons/save-items.png" border="false"::: **Save Items**. 
@@ -84,12 +84,12 @@ When you choose **View Results** for a query, it opens in triage mode displaying
 
 Choose **Previous** or **Next** to move up or down within the query results list.
 
-:::image type="content" source="media/triage-queries/triage-mode-visual-studio-2019.png" alt-text="Screenshot of View Results and triage mode.":::
+:::image type="content" source="media/triage-queries/triage-mode-visual-studio-2019.png" alt-text="Screenshot of View Results and triage mode, Visual Studio.":::
  
 After making several changes to work items, choose **Save Results** to save all changes. 
 
 
-:::image type="content" source="media/triage-queries/triage-mode-save-results-visual-studio-2019.png" alt-text="Screenshot of Save Results for triage mode.":::
+:::image type="content" source="media/triage-queries/triage-mode-save-results-visual-studio-2019.png" alt-text="Screenshot of Save Results for triage mode, Visual Studio.":::
 
 * * * 
 
@@ -102,7 +102,7 @@ From the web portal, you can update several work items through the triage proces
 
 Multi-select the work items you want to update, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More commands**, and then select the option you want from the menu of options.
 
-![Query results multi-select menu](../backlogs/media/bulk-m-query-results-menu-options-ts.png) 
+![Screenshot of Web portal, Query results multi-select menu.](../backlogs/media/bulk-m-query-results-menu-options-ts.png) 
 
 
 Work items shown in bold text indicate that local changes haven't yet been saved to the data store.   
@@ -110,7 +110,7 @@ Work items shown in bold text indicate that local changes haven't yet been saved
 ::: moniker range=">= azure-devops-2019"
 Choose **Save items** to save all work items you've modified. 
 
-<img src="media/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" /> 
+![Screenshot of Choose Save work items to save all modified work items](media/triage-queries/save-work-items-new-exp.png)
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Choose **Save items** to save all work items you've modified.
 
 Choose the ![double-save-icon](../media/icons/icon-double-save.png) double-save icon to save all work items you've modified.
 
-![Azure Boards and TFS 2017, Query results page, save bulk modified items](../backlogs/media/bulk-modify-save-ts.png)  
+![Screenshot of Web portal, Query results page, save bulk modified items, TFS 2018 version.](../backlogs/media/bulk-modify-save-ts.png)  
 
 ::: moniker-end
 

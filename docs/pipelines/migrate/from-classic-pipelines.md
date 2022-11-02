@@ -2,7 +2,7 @@
 title: Migrate from Classic to YAML pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Classic pipelines to YAML.
-ms.technology: devops-cicd-migrate
+ms.subservice: azure-devops-pipelines-migrate
 ms.topic: quickstart
 ms.date: 01/28/2022
 monikerRange: azure-devops

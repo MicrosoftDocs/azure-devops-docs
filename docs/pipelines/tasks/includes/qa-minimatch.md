@@ -3,8 +3,7 @@ ms.topic: include
 author: shashban
 ms.author: shashban
 ms.date: 12/07/2018
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ### Where can I learn more about file matching patterns?

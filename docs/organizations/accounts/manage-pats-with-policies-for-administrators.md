@@ -2,11 +2,11 @@
 title: Manage personal access tokens using policies
 titleSuffix: Azure DevOps
 description: Learn how to turn on policies that restrict the scope and lifespan of newly created user PATs, turn off automatic revocation of leaked PATs.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/18/2022
+ms.date: 10/13/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -43,8 +43,6 @@ The Azure DevOps Administrator in Azure AD restricts users from creating global 
 ## Restrict creation of full-scoped PATs
 
 The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means new PATs must be limited to a specific custom defined set of scopes. By default, this policy is set to *off*.
-
-[!INCLUDE [warning-api-scopes](includes/warning-api-scopes.md)]
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

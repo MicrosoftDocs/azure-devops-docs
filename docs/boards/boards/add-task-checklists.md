@@ -3,7 +3,7 @@ title: Add tasks or other child work items to checklists
 titleSuffix: Azure Boards
 description: Add tasks, subtasks, to do lists, bugs, or other child work items as checklists to your Kanban board for lightweight tracking in Azure Board and Azure DevOps.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.author: kaelli
 author: KathrynEE
@@ -11,7 +11,6 @@ ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
 ---
-
 
 # Add tasks or child items as checklist items
 
@@ -44,7 +43,7 @@ Checklists are a feature of all Kanban boards, both product and portfolio backlo
 - Adding a checklist item automatically adds a parent-child link between the parent work item and the checklist item. 
 - For the product-level board:
 	- When **Bugs are managed with tasks**, they're available to add and track within a checklist. 
-	- When **Bugs are managed with requirements**, you can add tasks to bugs that are tracked on the board. Teams make this choice via Board settings, [**Working with bugs**](../../organizations/settings/show-bugs-on-backlog.md).** 
+	- When **Bugs are managed with requirements**, you can add tasks to bugs that are tracked on the board. Teams make this choice via Board settings, [**Working with bugs**](../../organizations/settings/show-bugs-on-backlog.md).
 - Marking any checklist item as "done" moves the work item **State** to done, closed, or completed.  
 - Teams can remove select checklist features by disabling them on the [**Annotations** tab of the Board settings](customize-cards.md#annotations).
 - Tasks or other child items that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
@@ -97,10 +96,10 @@ When you complete a task or other checklist item, choose the checkbox to change 
 <img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" />
 ::: moniker-end
 
-The State of the work item is updated from **Active** to **Closed** for Agile and CMMI projects and from **To Do** to **Done** for Scrum projects, and 
+The **State** of the work item is updated from *Active* to *Closed* for projects based on an Agile or CMMI process, and from *To Do* to *Done* for projects based on a Scrum or Basic process. 
 
 > [!TIP]  
-> No matter the number of workflow states a checklist item has, checking it moves it to its closed state.      
+> No matter the number of workflow states a checklist item has, checking it moves it to its closed or completed state.      
 
 ## Expand or collapse a checklist on a Kanban board
 
@@ -162,3 +161,4 @@ To configure or change the layout of the Kanban board, see [Customize your board
 
 ### REST API resources
 To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work-items/create).
+

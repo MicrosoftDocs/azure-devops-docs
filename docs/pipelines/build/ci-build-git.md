@@ -1,7 +1,7 @@
 ---
 title: Building multiple branches
 description: Build multiple branches using Azure Pipelines or TFS
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 04/02/2019
 monikerRange: '<= azure-devops'

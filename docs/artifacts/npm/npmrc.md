@@ -2,9 +2,9 @@
 title: Set up your client's npmrc
 description: How to set up your project and authenticate to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 03/16/2022
+ms.date: 10/11/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -84,7 +84,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
     ```json
     "scripts": {
-        "refreshVSToken" : "vsts-npm-auth -config .npmrc"
+        "refreshVSToken" : "vsts-npm-auth -config ".\.npmrc\" -TargetConfig "$HOME\.npmrc\""
     }
     ```
 
@@ -130,11 +130,11 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
         ```
 
-        You can also use the following command to convert your personal access token to Base64:
+        You can also use the following command to convert your personal access token to Base64. Use `-w 0` to disable line wrapping.
 
         - **LinuxMac**:
             ```Command
-            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64
+            echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64 -w 0
             ```
     1. Copy the Base64 encoded value.
 

@@ -3,10 +3,11 @@ title: View where and when changesets have been merged
 titleSuffix: Azure Repos
 description: View where and when changesets have been merged
 ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

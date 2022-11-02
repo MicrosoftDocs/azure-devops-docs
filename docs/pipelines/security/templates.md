@@ -16,7 +16,13 @@ Checks work no matter the structure - the stages and jobs - of your pipeline.
 If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](../process/templates.md).
 
 Azure Pipelines offers two kinds of templates: **includes** and **extends**.
-Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it.
+Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it. For example, here an includes template (`include-npm-steps.yml`) is inserted into `steps`. 
+
+```yaml
+  steps:
+  - template: templates/include-npm-steps.yml 
+```
+
 To continue the C++ metaphor, `extends` templates are more like inheritance: the template provides the outer structure of the pipeline and a set of places where the template consumer can make targeted alterations.
 
 ## Use extends templates

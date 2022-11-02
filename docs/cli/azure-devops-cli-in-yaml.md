@@ -3,8 +3,7 @@ title: Azure DevOps CLI in Azure Pipeline YAML
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Azure Pipeline YAML
 ms.topic: how-to
-ms.prod: devops 
-ms.technology: devops-reference
+ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
@@ -82,7 +81,7 @@ The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure Dev
 
 ## Hosted agent Azure CLI version
 
-Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/virtual-environments#updates-to-virtual-environments) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific version(s). 
+Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/runner-images#image-releases) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific version(s). 
 
 * To check the included software and their versions for Microsoft-hosted agents, including the installed version of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 * To check the current version for Azure CLI, see [How to install the Azure CLI](/cli/azure/install-azure-cli).

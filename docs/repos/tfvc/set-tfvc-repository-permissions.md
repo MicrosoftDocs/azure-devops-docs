@@ -3,12 +3,13 @@ title: Set TFVC repository permissions
 titleSuffix: Azure Repos
 description: Steps for how to grant or restrict access to a Team Foundation Version Control repository feature or function
 ms.assetid:  
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 07/13/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 

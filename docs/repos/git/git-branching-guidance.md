@@ -3,10 +3,11 @@ title: Git branching guidance
 titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 09/18/2020
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Adopt a Git branching strategy
@@ -156,5 +157,3 @@ Cherry-pick bug fixes in the deployment branch back to the main branch. Use the 
 An exception to this recommendation is if you're using a form of continuous deployment.
 Use [Azure Pipelines](../../pipelines/index.yml) when working with continuous deployment to promote builds from your main branch to your deployment targets.
 
-## Videos
-> [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]

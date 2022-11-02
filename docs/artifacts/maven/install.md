@@ -1,7 +1,7 @@
 ---
 title: Install Maven Artifacts 
 description: How to install Maven Artifacts
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: jenp
 ms.topic: conceptual
@@ -38,11 +38,11 @@ With Azure Artifacts, you can publish and restore Maven packages to/from your Az
     1. [Download Maven](https://maven.apache.org/download.cgi).
     1. [Install Maven](https://maven.apache.org/install.html).
 
-1. Follow the instructions in the **Project setup** section to set up your config files and generate a new personal access token.
+1. Follow the instructions in the **Project setup** section to set up your config files and generate a new personal access token. If your *settings.xml* file is shared within your team, you can use Maven to [encrypt your passwords](https://maven.apache.org/guides/mini/guide-encryption.html).
 
     :::image type="content" source="../media/maven-project-setup.png" alt-text="Screenshot showing how to set up Maven projects.":::
 
-> [!NOTE]
+> [!TIP]
 > The `<id>` tags in your *settings.xml* and *pom.xml* files must be the same.
 
 ## Restore Maven packages

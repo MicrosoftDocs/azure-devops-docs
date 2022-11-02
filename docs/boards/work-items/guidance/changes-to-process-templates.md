@@ -2,7 +2,7 @@
 title: Understand the process for changing process templates
 titleSuffix: Azure Boards  
 description: Learn how changes are made to the core system processes with updates made to Azure DevOps Services and on-premises Azure DevOps Server.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: conceptual
 ms.author: kaelli

@@ -2,9 +2,10 @@
 title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
 ms.topic: article
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 monikerRange: '<= azure-devops'
 ms.date: 02/24/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Learn how to migrate from Subversion (SVN) to Git, including history

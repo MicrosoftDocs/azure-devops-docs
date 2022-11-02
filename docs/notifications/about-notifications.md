@@ -1,7 +1,7 @@
 ---
 title: Get started with notifications in Azure DevOps
 description: Understand how notifications or alerts are managed in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 toc: show
 ms.custom: quarterly-update
 ms.author: chcomley

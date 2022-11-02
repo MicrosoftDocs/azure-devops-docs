@@ -1,25 +1,30 @@
 ---
-title: Extension Points
+title: Extensibility points
 titleSuffix: Azure DevOps
 description: Browse through the places where your extension can extend Azure DevOps.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
+ms.custom: engagement-fy23
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 10/12/2022
 ---
 
 # Extensibility points
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Extensions enhance the Azure DevOps user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target. To learn more about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md) for an overview.
+Extensions enhance the Azure DevOps user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target. For more information about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md).
 
 The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension. Install this extension into your organization. Once it's installed, you see the extensibility points that are available. We recommend you install this extension into a personal or test organization. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available. 
 Also, find a sample of a repository creation extension point in this [GitHub pull request](https://github.com/microsoft/azure-devops-extension-sample/pull/18).
 
+For more information, see the following references:
+- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/)
+- [installed extension api](/rest/api/azure/devops/extensionmanagement/installed-extensions?view=azure-devops-rest-6.0&preserve-view=true)
+- [azure-devops-extension-sdk](/javascript/api/azure-devops-extension-sdk/)
 
 <a name="hubs"></a>
 
@@ -27,14 +32,9 @@ Also, find a sample of a repository creation extension point in this [GitHub pul
 
 Hubs and hub groups are the primary navigation elements in Azure DevOps. **Files**, **Releases**, **Backlogs**, and **Queries** are examples of hubs. A hub belongs to a hub group. The **Files** hub, for example, belongs to the project-level **Azure Repos** hub group. Hub groups can exist at the organization or collection level or the project level. Most extensions contribute to the project level.
 
-### Targetable hub groups
-
-<a name="targets"></a>
-
 The following table describes the most common hub groups in Azure DevOps that you can contribute hubs to.  
 
 ::: moniker range=">= azure-devops-2019"
-
 
 | Name                | ID                                         | Level                    | Preview image| 
 | --------------------|--------------------------------------------|--------------------------|----------------------------- |          
@@ -61,7 +61,7 @@ The following table describes the most common hub groups in Azure DevOps that yo
 
 ### Example
 
-This example shows how to contribute a hub to the Code hub group:
+The following example shows how to contribute a hub to the Code hub group:
 
 ```json
 {
@@ -88,14 +88,9 @@ This example shows how to contribute a hub to the Code hub group:
 
 <a name="menus"></a>
 
-## Menus and toolbars
+## Add an icon to your menu or toolbar
 
-
-See [how to add an action](../../develop/add-action.md) for details on contributing an action to a menu or toolbar.
-
-### Add an icon
-
-Add an icon properties, so it can be used directly by name.
+Add an icon property, so it can be used directly by name.
 
 We recommend providing your own icon.
 Using your own icon example:
@@ -119,7 +114,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 ```
 
 
-### Settings
+## Settings for menus and toolbars
 
 | Name                              | Target ID                                           |  
 | ----------------------------------|-----------------------------------------------------| 
@@ -128,16 +123,11 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    | 
 | Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  | 
 
-
-
-
-
-
 <a name="menus_work"></a> 
 
 ::: moniker range=">= azure-devops-2019"
 
-### Azure Boards
+## Azure Boards menu and toolbar
 
 | Name                            | Target ID                                         | Preview image | 
 | --------------------------------|---------------------------------------------------|------------------- |
@@ -156,13 +146,11 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![Product Backlog Custom Pane](../../media/backlog-pane/product-backlog-pane.png)| 
 | Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![Iteration Backlog Custom Pane](../../media/backlog-pane/iteration-backlog-pane.png)| 
 
-
 ::: moniker-end
-
 
 ::: moniker range="< azure-devops-2019"
 
-### Work
+## Work menu and toolbar
 
 | Name                            | Target ID                                         | Preview image | 
 | --------------------------------|---------------------------------------------------|-------------------| 
@@ -184,19 +172,9 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-
-
-
-
-
-
-
-<a name="menus_build"></a>
-<a name="menu_release"></a>
-
 ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
-### Azure Pipelines
+## Azure Pipelines menu and toolbar
 
 | Name                      | Target ID                                   | Preview | 
 | --------------------------|---------------------------------------------|-------------------| 
@@ -213,7 +191,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker range="azure-devops"
 
-### Azure Pipelines
+## Azure Pipelines menu and toolbar
 
 | Name                      | Target ID                                   | Preview | 
 | --------------------------|---------------------------------------------|-------------------| 
@@ -228,11 +206,18 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`            | ![Release Summary Section](media/release/releaseSummarySection.png)| 
 | Pipeline details view, header button                  | `ms.vss-build-web.pipelines-header-menu`            | ![Pipeline details view, header menu](media/build/header-menu.png)| 
 | Pipeline details view, folder context menu                  | `ms.vss-build-web.pipelines-folder-menu`            | ![Pipeline details view, folder context menu](media/build/folder-menu.png)| 
+
+<a name="buildtasks"></a>
+
+### Azure Pipelines tasks
+
+Tasks perform work in a build or release. For more information, learn how to [contribute a build or release task](../../develop/add-build-task.md).
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-### Build
+## Build menu and toolbar
 
 | Name                      | Target ID                                   | Preview image| 
 | --------------------------|---------------------------------------------|-------------------| 
@@ -243,10 +228,9 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops-2019"
 
-### Release
+## Release menu and toolbar
 
 | Name                                     | Target ID                                                              | Preview | 
 | -----------------------------------------|-------------------------------------------------------------------------|-------------------| 
@@ -258,13 +242,11 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-
 <a name="menus_code"></a>
-
 
 ::: moniker range=">= azure-devops-2019"
 
-### Azure Repos
+## Azure Repos menu and toolbar
 
 | Name                                | Target ID                                        | Preview image | 
 | ------------------------------------|--------------------------------------------------|-------------------| 
@@ -281,10 +263,8 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops-2019"
-
-### Code
+## Code menu and toolbar
 
 |Name                                | Target ID                                        | Preview image |
 |------------------------------------|--------------------------------------------------|-------------------|
@@ -305,7 +285,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 
 ::: moniker range=">= azure-devops-2019"
 
-### Azure Test Plans
+## Azure Test Plans menu and toolbar
 
 | Name                       | Target ID                                   | Preview image | 
 | ---------------------------|---------------------------------------------|-------------------| 
@@ -313,12 +293,10 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` | | 
 | Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![Test Hub Pivot Tab](media/test/test-plan-hub-pivot-tab-preview.png)| 
 
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-
-### Test
+## Test menu and toolbar
 
 | Name                       | Target ID                                   | Preview image  | 
 | ---------------------------|---------------------------------------------|-------------------| 
@@ -326,48 +304,23 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` |  | 
 | Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![Test Hub Pivot Tab, TFS versions](media/test/test-plan-hub-pivot-tab-preview.png)| 
 
-
-
 ::: moniker-end
-
 
 <a name="dashboard"></a>
 
-## Dashboards
+## Other extensibility points
 
-An extension can contribute a new type of widget that can be added by users to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
-
-<a name="witform"></a>
-
-## Work item form
-
-The work item form is enhanced by extensions with new sections, tabs, actions, and custom field renderers. For more information, learn how to 
+- **Dashboard widget**: An extension can contribute a new type of widget that can be added by users to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
+- **Work item form**: The work item form is enhanced by extensions with new sections, tabs, actions, and custom field renderers. For more information, learn how to 
  [extend the work item form](../../develop/add-workitem-extension.md).
-
-<a name="buildtasks"></a>
-
-## Azure Pipelines tasks
-
-Tasks perform work in a build or release. For more information, learn how to [contribute a build or release task](../../develop/add-build-task.md).
-
-<a name="serviceHooks"></a>
-
-## Service hooks
-
-A "consumer" is the service that events are sent to in Service Hooks. An extension can contribute consumer services. These services are configured by a user (or programmatically), to send events to that service. For more information, see [contribute a service hooks consumer](../../develop/add-service-hook.md).
-
-## Features
-
+- **Service hooks**: A "consumer" is the service that events are sent to in Service Hooks. An extension can contribute consumer services. These services get configured by a user (or programmatically), to send events to that service. For more information, see [contribute a service hooks consumer](../../develop/add-service-hook.md).
+- **Features**:
 ::: moniker range="azure-devops"
-
-**Name:** Preview feature (hosted only)  
-**Target ID:** ms.vss-web.managed-features  
-
+   **Name:** Preview feature (hosted only)  
+   **Target ID:** ms.vss-web.managed-features  
 ::: moniker-end
  
 ::: moniker range="< azure-devops"
-
-**Name:** Feature (on-prem only)  
-**Target ID:** ms.vss-web.managed-features-onprem  
-
+   **Name:** Feature (on-premises only)  
+   **Target ID:** ms.vss-web.managed-features-onprem  
 ::: moniker-end

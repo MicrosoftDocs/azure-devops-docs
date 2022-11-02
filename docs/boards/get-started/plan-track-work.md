@@ -3,7 +3,7 @@ title: Plan and track work in Azure Boards with Basic or Agile processes
 titleSuffix: Azure Boards 
 description: Learn how to plan and track work in your new Kanban team project in Azure Boards.
 ms.custom: boards-get-started
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

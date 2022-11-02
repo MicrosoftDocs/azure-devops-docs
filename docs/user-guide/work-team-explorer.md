@@ -3,7 +3,7 @@ title: Navigate in Visual Studio Team Explorer
 titleSuffix: Azure DevOps 
 description: Learn how to download Azure DevOps clients and navigate in Team Explorer 
 keywords: Download Azure DevOps clients 
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: kaelli
 author: KathrynEE
@@ -19,7 +19,7 @@ ms.date: 03/03/2022
 You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
 
 > [!TIP]
-> You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
+> You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
 > 
 > Additional options for connecting to Azure DevOps Services or TFS include:  
 > - [Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)

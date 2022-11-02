@@ -3,10 +3,11 @@ title: Delete a branch in your Git repo
 titleSuffix: Azure Repos
 description: Use the branches page to delete a Git branch in Azure DevOps Services or Team Foundation Server
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Delete a Git branch from the web portal

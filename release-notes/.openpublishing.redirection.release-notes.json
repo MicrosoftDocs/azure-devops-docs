@@ -533,6 +533,18 @@
     {
       "source_path_from_root": "/release-notes/index.md",
       "redirect_url": "/azure/devops/release-notes/features-timeline"
+    },    
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-06.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-05.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     },
     {
       "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-03.md",

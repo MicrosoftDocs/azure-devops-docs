@@ -2,7 +2,7 @@
 title: Define build initial configuration
 titleSuffix: Azure Pipelines & TFS
 description: Customize the security permissions for build activities of all projects that are created with the same process template for Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 93d86d59-dd49-43de-9bab-f4a9e17071a1
 ms.author: kaelli
 author: KathrynEE

@@ -4,11 +4,11 @@ titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
 ms.custom: freshness-fy22
 ms.topic: article
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 03/25/2022
+ms.date: 10/14/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -80,9 +80,12 @@ For Azure Blob Storage, customer data gets replicated three times within a singl
 
 To protect against accidental deletion of data, Microsoft also takes point-in-time backups of both the blobs in Azure Blob Storage, and the databases in Azure SQL Database. There's a separate copy of all blobs, and changes are appended to each storage account. Because this data is immutable, you don't need to rewrite any existing storage as part of the backup procedures. 
 
-Backups are a standard part of Azure SQL Database, and Azure DevOps makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
+Backups are a standard part of Azure SQL Database, and Azure DevOps makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that we recover from a regional outage. 
 
-A further protection is that Microsoft can recover entire organizations for up to 28 days after deletion. This is because we perform a "soft delete" for organization deletion operations.
+A further protection is that customers can recover their deleted organizations or projects for up to 28 days after deletion. Deleted organizations and projects are in a "soft deleted" stage for 28 days allowing customers to recover as needed. After 28 days they are permanently deleted and cannot be restored.
+
+>[!IMPORTANT]
+> Accidental deletion here refers to scenarios that arise as a result of an incident on our services and doesn't include accidental deletion of assets (e.g., repositories, work items, attachments, artifacts) by customers.  We do not support restoring assets that are accidently deleted by customers as these backups are meant for business continuity and aid recovery from outage or disaster scenarios only. 
 
 ### Practice is critical
 
@@ -112,7 +115,7 @@ Live site management in Azure DevOps has three distinct tracks: telemetry, incid
 
 The operations team also monitors the availability metrics for individual organizations. These metrics provide insights into specific conditions that might affect only some of our customers. Investigations into this data can often result in targeted improvements to address customer-specific issues. In some cases, Microsoft might even contact you directly to understand your experience and work with you to improve the service.
 
-Microsoft publishes a service-level agreement (SLA) and provides a financial guarantee to ensure that we meet this agreement each month. For more information, see [SLA for Azure DevOps](https://azure.microsoft.com/support/legal/sla/azure-devops/v2_0/).
+Microsoft publishes a service-level agreement (SLA) and provides a financial guarantee to ensure that we meet this agreement each month. For more information, see [SLA for Azure DevOps](https://azure.microsoft.com/support/legal/sla/azure-devops/v2_1/).
 
 Sometimes partner teams or dependencies have incidents that affect Azure DevOps. All partner teams follow similar approaches to identifying, resolving, and learning from these service outages.
 

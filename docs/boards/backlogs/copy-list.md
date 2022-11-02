@@ -3,7 +3,7 @@ title: Copy a list of stories, issues, or other work items in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to copy a list of user stories, issues, bugs, tasks, or other work items from a backlog or query in Azure Boards.
 ms.custom: seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

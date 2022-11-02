@@ -3,7 +3,7 @@ title: Keyboard shortcuts for Azure Boards
 titleSuffix: Azure Boards
 description: Learn about keyboard shortcuts for the web portal for Azure Boards and Team Explorer.
 ms.custom: Navigation
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
@@ -41,11 +41,8 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 
 ## Web portal, global shortcuts
 
-Type **?** to access the Global and page-specific shortcuts.   
-
-> [!NOTE]  
-> The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
-
+Enter **?** to access the Global and page-specific shortcuts.   
+ 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.

@@ -3,7 +3,7 @@ ms.topic: how-to
 title: Authorize access to REST APIs with OAuth 2.0
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -70,7 +70,7 @@ Parameter     | Type   | Notes
 --------------|--------|----------------------------
 client_id     | GUID   | The ID assigned to your app when it was registered.
 response_type | string | `Assertion`
-state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization. request.
+state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 

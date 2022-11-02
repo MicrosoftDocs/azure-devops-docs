@@ -1,11 +1,10 @@
 ---
 title: Use Azure Artifacts feeds as a private PowerShell repository
 description: How to use Azure Artifacts feeds as a private PowerShell repository
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
-ms.reviewer: amullans
-ms.date: 07/18/2022
+ms.date: 08/19/2022
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -47,7 +46,7 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 
 1. Select **Custom defined**, and then select **Packaging** > **Read, write & manage**.
 
-1. Select **Create** when you are done. Copy and store your PAT in a safe location.
+1. Select **Create** when you're done. Copy and store your PAT in a safe location.
 
     :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot showing how to set up a new personal access token.":::
 
@@ -90,14 +89,12 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 1. Find the `FileList` section, and add the following list of files that should be packaged with your module.
 
     ```powershell
-    FileList = @('PSModule.psm1',
-                 'PSGet.Format.ps1xml',
-                 'PSGet.Resource.psd1')
+    FileList = @('./Get-Hello.psm1')
     ```
 
 ## Pack and publish module
 
-1. Create a *.nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to pack the module.
+1. Create *nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to pack the module.
 
     ```powershell
     nuget spec Get-Hello
@@ -109,12 +106,20 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     nuget pack Get-Hello.nuspec
     ```
 
-1. Run the following command to add your feed source URL.
+1. Run the following command to add your feed source URL. NuGet v3 is not supported, make sure you use v2 in your feed source URL.
 
-    ```powershell
-    nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
-    ```
+    - Org-scoped feed:
+    
+        ```powershell
+        nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
+        ```
 
+    - Project-scoped feed:
+    
+        ```powershell
+        nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
+        ```
+    
 1. Publish the package to your feed.
 
     ```powershell
@@ -123,13 +128,10 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 
     :::image type="content" source="../../repos/git/media/artifact-package-powershell.png" alt-text="A screenshot showing the published package.":::
 
-> [!NOTE]
-> The version number in the Module Manifest (.psd1) and the .nuspec file must match.
+> [!IMPORTANT]
+> The version number in your Module Manifest (.psd1) and the .nuspec file must match.
 
 ## Connect to feed as a PowerShell repository
-
-> [!IMPORTANT]
-> PowerShell does not support version 3 of NuGet.
 
 1. Open an elevated PowerShell prompt window.
 
@@ -147,46 +149,46 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 
     - Project-scoped feed:
 
-    ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
-    ```
+        ```powershell
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        ```
 
     - Org-scoped feed:
 
-    ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
-    ```
+        ```powershell
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        ```
 
     If you're still using the older `visualstudio.com` URLs, use the following command instead:
 
     - Project-scoped feed:
 
-    ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
-    ```
+        ```powershell
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        ```
 
     - Org-scoped feed:
 
-    ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
-    ```
+        ```powershell
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -PublishLocation "https://<ORGANIZATION_NAME>.pkgs.visualstudio.com/_packaging/<FEED_NAME>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        ```
 
     > [!TIP]
-    > If you encounter the following warning `Unable to resolve package source`, restart your PowerShell session.
+    > Certain versions of PowerShell require restarting a new session after executing the `Register-PSRepository` cmdlet to avoid the *Unable to resolve package source* warning.
 
 1. Register your package source:
 
     - Project-scoped feed:
 
-    ```powershell
-    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
-    ```
+        ```powershell
+        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
+        ```
 
     - Org-scoped feed:
 
-    ```powershell
-    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
-    ```
+        ```powershell
+        Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
+        ```
 
 1. Run the following command to confirm if the repository was registered successfully. This command gets all the registered repositories for the current user:
 

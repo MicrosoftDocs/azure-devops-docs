@@ -2,7 +2,7 @@
 title: Namespace reference  
 titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: quarterly-review
 ms.topic: reference
 ms.author: kaelli
@@ -80,7 +80,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      AnalyticsViews
+      <a id="analytic-views-namespace" />  AnalyticsViews
    :::column-end:::
    :::column span="1":::
       `Read`                
@@ -156,7 +156,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      DashboardsPrivileges  
+      <a id="dashboard-previleges-namespace" />  DashboardsPrivileges  
    :::column-end:::
    :::column span="1":::
       `Read`              
@@ -175,7 +175,7 @@ The following table describes the namespaces that manage object-level permission
 ---
 :::row:::
    :::column span="1":::
-      Git Repositories <a id="git-repositories" />    
+      GitRepositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
@@ -404,7 +404,7 @@ The following table describes the namespaces that manage project-level permissio
 ---
 :::row:::
    :::column span="1":::
-      Tagging
+      <a id="tagging" />Tagging
    :::column-end:::
    :::column span="1":::
       `Enumerate`   
@@ -510,6 +510,7 @@ The following table describes the namespaces that manage organization-level perm
       `ManageBuildResources`                 
       `UseBuildResources`                    
       `AdministerBuildResourcePermissions`   
+      `ManagePipelinePolicies`  
    :::column-end:::
    :::column span="2":::
       [Manages access to view, manage, use, or administer permissions for build resources](permissions.md#collection-level).  
@@ -745,7 +746,7 @@ The following table describes the security namespaces and permissions used to ma
       `ManageSecurity`    
    :::column-end:::
    :::column span="2":::
-      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/how-to/grant-permissions.md).    
+      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/grant-permissions.md).    
       <br/>
       **ID:** `5d6d7b80-3c63-4ab0-b699-b6a5910f8029`  
    :::column-end:::
@@ -788,7 +789,7 @@ The following table describes the security namespaces and permissions used to ma
    :::column span="2":::
       Manages permissions to create and manage service connections. Role memberships for individual items are automatically inherited from those defined at the project-level.  By default, the following roles are assigned: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to to members of the Endpoint Creators service security group.  
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
       Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).<br/><br/>
       **ID:** `49b48001-ca20-4adc-8111-5b60c903a50c`

@@ -6,7 +6,7 @@ ms.custom: boards-work-items, devx-track-azurecli, contperf-fy20q4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: kaelli
 author: KathrynEE

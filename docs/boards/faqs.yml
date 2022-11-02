@@ -3,7 +3,7 @@ metadata:
   title: Azure Boards FAQs 
   description: Answers to frequently asked questions about Azure Boards 
   titleSuffix: Azure Boards
-  ms.technology: devops-agile
+  ms.service: azure-devops-boards
   ms.author: kaelli
   author: KathrynEE
   ms.topic: faq

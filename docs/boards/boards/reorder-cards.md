@@ -3,7 +3,7 @@ title: Set Kanban board card reordering
 titleSuffix: Azure Boards
 description: Learn how to use the Kanban board, process, and tools reorder Kanban board cards in Azure Boards and Team Foundation Server.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.author: kaelli
 author: KathrynEE

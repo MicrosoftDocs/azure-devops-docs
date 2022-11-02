@@ -3,7 +3,7 @@ title: View of features and epics on the Feature Timeline
 titleSuffix: Azure DevOps
 description: Learn how to manage portfolios with a calendar view of features and epics on the Feature Timeline. 
 ms.custom: extensions
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
@@ -33,7 +33,7 @@ Use the Feature Timeline to support the following tasks:
 - Adjust sprint assignments to child work items  
 
 > [!NOTE]   
-> The Feature Timeline and Epic Roadmap extension is available on TFS 2017 Update 2 and later versions. You can install it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
+> You can install the Feature Timeline and Epic Roadmap extension from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 [!INCLUDE [section-portfolio-backlog-requirements](../includes/section-portfolio-backlog-requirements.md)]
 
@@ -101,12 +101,12 @@ Here we open Boards.
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile.png)  
+	> ![Screehshot to Open your Kanban board.](../boards/media/quickstart/open-kanban-board-agile.png)  
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select another team's board](../boards/media/quickstart/select-kanban-team-board.png) 
+	> ![Screehshot to Select another team's board.](../boards/media/quickstart/select-kanban-team-board.png) 
 
 ::: moniker-end
 
@@ -116,12 +116,12 @@ Here we open Boards.
 1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
+	> ![Screehshot to Open Portfolio Kanban board, features.](../boards/media/quickstart/open-kanban-board.png)
 
 	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
+	> ![Screehshot to Open Work when screen size is reduced.](../boards/media/kanban-quickstart-reduced-screensize.png)   
 
 1. To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
 
@@ -131,7 +131,7 @@ Here we open Boards.
    Your Kanban board appears. 
 	  
 	> [!div class="mx-imgBorder"]  
-	> ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)   
+	> ![Screehshot of Kanban board, Agile process.](../boards/media/kanban-basics-intro.png)   
 
 ::: moniker-end   
 
@@ -151,7 +151,7 @@ If you don't see the **Feature Timeline** link, then the [Feature Timeline and E
 You can customize your view of the Feature Timeline with the controls shown in the following image:
 
 > [!div class="mx-imgBorder"]  
-> ![Feature Timeline controls](media/feature-timeline/controls.png)  
+> ![Screehshot of Feature Timeline controls.](media/feature-timeline/controls.png)  
 
 - **View Sprints**: Enter the number of iterations to show. The maximum number is 11. 
 	> [!NOTE]  
@@ -173,19 +173,19 @@ You can customize your view of the Feature Timeline with the controls shown in t
 1. To view the requirements linked to a feature, choose the  :::image type="icon" source="../media/icons/info.png" border="false":::  info icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
+	> ![Screehshot of Feature, Info icon.](media/feature-timeline/drill-down-1.png)
 
 	A dialog opens showing the child items of the feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dialog showing the child items of the feature.](media/feature-timeline/drill-down-2.png)
+	> ![Screehshot of Dialog showing the child items of the feature.](media/feature-timeline/drill-down-2.png)
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop-down path. 
 
 1.	Or, you can also drag and drop a child item to a new iteration. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Drag and drop a child item to a new iteration.](media/feature-timeline/drill-down-3.png)
+	> ![Screehshot of Drag and drop a child item to a new iteration.](media/feature-timeline/drill-down-3.png)
 
 
 ## Q & A

@@ -3,10 +3,10 @@ title: Progressively expose your releases using deployment rings
 description: Learn how to progressively expose your Azure DevOps extension releases in production to validate, before affecting all users.
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.topic: conceptual
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.date: 09/23/2021
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azure-devops'
 ---
 

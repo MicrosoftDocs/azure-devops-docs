@@ -3,7 +3,7 @@ title: Understand and implement Kanban practices and tools
 titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track your team's work in Azure Boards.
 ms.custom: boards-kanban  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

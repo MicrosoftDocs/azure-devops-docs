@@ -2,7 +2,7 @@
 title: Link work items to support traceability in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to support an auto trail of changes and enable quick navigation by linking work items together.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: "boards-queries, cross-project, cross-service"
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
@@ -177,9 +177,9 @@ The following image shows the full set of link types used in linking test manage
 
 For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases). 
 
-**Test case work item form (TFS 2015)**
+:::image type="content" source="media/link-work-items-support-traceability/test-case-work-item-form.png" alt-text="Screenshot of test work item form showing steps.":::
 
-![Create shared steps](media/IC666631.png) 
+:::image type="content" source="media/link-work-items-support-traceability/insert-shared-steps.png" alt-text="Screenshot of Insert Shared Steps dialog. ":::
 
 From **Test** you can add test plans, test suites, and test cases&mdash;which are linked, but not through a specific link type. Also, the test system creates and manages the associations of test results to test cases and test plans. 
 

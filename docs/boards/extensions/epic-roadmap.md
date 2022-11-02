@@ -3,8 +3,7 @@ title: Use the Epic Roadmap to provide a calendar view
 titleSuffix: Azure DevOps
 description: Learn how to view progress by using the Epic Roadmap to provide a calendar view of a single epic and its child features.
 ms.custom: extensions
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.manager: mijacobs
 ms.author: kaelli
@@ -35,7 +34,7 @@ Use the Epic Roadmap to focus on a single epic and to support the following task
 
 
 > [!NOTE]   
-> The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
+> You can install the Feature Timeline and Epic Roadmap extension from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 
 ## Minimum Viable Product (MVP) overview

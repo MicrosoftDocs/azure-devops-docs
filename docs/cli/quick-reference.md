@@ -3,13 +3,12 @@ title: Index to Azure DevOps CLI examples
 titleSuffix: Azure DevOps
 description: Find examples that showcase use of Azure DevOps CLI. 
 ms.topic: conceptual
-ms.prod: devops 
-ms.technology: devops-reference
+ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 05/20/2022
+ms.date: 10/18/2022
 ---
 
 # Index to Azure DevOps CLI examples 
@@ -55,10 +54,12 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       #### Work items
       - [Add work items](../boards/work-items/view-add-work-items.md) 
+      - [Add or remove work item links](../boards/backlogs/add-link.md#azure-cli) 
       - [Delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       - [List supported link types](../boards/queries/link-type-reference.md#list-link-types)
       - [Move work items](../boards/work-items/move-work-items.md#move-work-items) 
       - [Show work item details](../boards/backlogs/add-work-items.md#show-work-item) 
+      - [Show work item link details](../boards/backlogs/add-link.md#azure-cli)
       - [Update work items](../boards/backlogs/add-work-items.md#update-work-item) 
    :::column-end:::
 :::row-end:::

@@ -3,12 +3,12 @@ title: Configure your backlog view in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to set your backlog level, view options, and column options to support your project management tasks in Azure Boards and Azure DevOps.   
 ms.custom: boards-backlogs
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/28/2022
+ms.date: 10/27/2022
 ---
 
 # Configure your backlog view in Azure Boards
@@ -86,8 +86,32 @@ For information on team configuration of backlog levels, see [Select backlog nav
 
 The :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** menu controls the following options. 
 
+::: moniker range="azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
+      :::image type="content" source="media/configure-view-options/view-options-menu-cloud.png" alt-text="Screenshot of View options menu, Azure DevOps Services."::: 
+   :::column-end:::
+   :::column span="3":::
+      - **Parents**: Show the hierarchical grouping of parent-child work items. Useful when adding child work items, reparenting a work item, or displaying rollup columns.  
+
+      - **Forecasting**: Show the **Forecast** tool and forecast lines. The **Forecast** option only appears for the first-level backlog and depends on the assignment of **Story Points**, **Effort**, or **Size**.   
+
+      - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
+
+      - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column. 
+          
+      - **Keep hierarchy with filters**: Maintain the backlog hierarchy when filtering.   
+
+      - **Mapping**: Shows the **Mapping** pane to support drag-and-drop linking of work items to parent items. The **Mapping** option doesn't appear when you've selected the highest backlog level configured for your team. 
+
+      - **Planning**: Shows the **Planning** pane to support drag-and-drop of work items to **Iteration Paths**.  
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="2":::
       :::image type="content" source="media/configure-view-options/view-options-menu.png" alt-text="Screenshot of View options menu."::: 
    :::column-end:::
    :::column span="3":::
@@ -97,14 +121,14 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
 
       - **In Progress Items**: Show items whose workflow **State** corresponds to an *In Progress* workflow state category. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or a custom workflow state defined in the In Progress state category won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
-      - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column.  
+      - **Completed Child Items**: Show child items that have been completed. Typically you turn this **On** when reviewing reviewing a rollup column. 
 
       - **Mapping**: Shows the **Mapping** pane to support drag-and-drop linking of work items to parent items. The **Mapping** option doesn't appear when you've selected the highest backlog level configured for your team. 
 
       - **Planning**: Shows the **Planning** pane to support drag-and-drop of work items to **Iteration Paths**.  
    :::column-end:::
 :::row-end:::
-
+::: moniker-end
 
 ### Filter bar 
 
@@ -115,6 +139,18 @@ Turn on filtering when you want to find one or more work items based on a keywor
 Filtering displays a flat list of all items in the hierarchy when you have selected to show **Parents**. The hierarchical grouping is restored once you dismiss the filter toolbar. The filter toolbar persists until you dismiss it.  
 
 To learn more, see [Filter backlogs, boards, and plans](filter-backlogs-boards-plans.md).   
+
+::: moniker range="azure-devops"
+
+## Filter your backlog and maintain the hierarchy 
+ 
+You can filter your backlog and maintain the hierarchy of work by choosing show **Parents** and **Keep hierarchy with filters** from the **View Options** menu. 
+
+:::image type="content" source="media/filter/keep-hierarchy-with-filters.png" alt-text="Screenshot of View options menu, Keep hierarchy with filters selected."::: 
+
+Use these options when you want to show work items assigned to one or more team members, work item types, area or iteration paths, or combination of these and keywords. The hierarchy is maintained and work items that match the filter criteria are shown in bold text.  
+
+::: moniker-end
 
 ## Define backlog items
 
@@ -129,7 +165,7 @@ To quickly define many items to a backlog, perform the following steps.
 1. Choose :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **New Work Item**, enter a title, choose **Add to top** or **Add to bottom**, and then press **Enter**. We recommend you add items to the bottom of the backlog if your team has a process for prioritizing backlog items. 
  
     > [!div class="mx-imgBorder"]
-    > ![Add the work item.](media/configure-view-options/add-backlog-item.png) 
+    > ![Screenshot to Add a work item.](media/configure-view-options/add-backlog-item.png) 
     
 	Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team.  
 
@@ -149,7 +185,7 @@ If your team follows Agile or Scrum methods, they'll want to prioritize the back
 1. Drag the work items up or down within the backlog. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 
 	> [!div class="mx-imgBorder"]
-	> ![Reorder work items.](media/configure-view-options/reorder-backlog.png)
+	> ![Screenshot showing Reorder work items.](media/configure-view-options/reorder-backlog.png)
 
 	To reorder a backlog, you must have **Basic** or higher level access. If you have Stakeholder access, you can't reorder backlog items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
@@ -210,8 +246,8 @@ To learn more, see [Organize your backlog and map child work items to parents](o
 
 ## Add child items to a portfolio backlog item  
 
-2. Select the portfolio backlog level, such as **Features**, that you want to add items to. 
-3. Choose :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: **Add User Story, Bug** for the feature you want to add the child item to as shown in the following image. Your labels may differ based on process and customizations. 
+1. Select the portfolio backlog level, such as **Features**, that you want to add items to. 
+1. Choose :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: **Add User Story, Bug** for the feature you want to add the child item to as shown in the following image. Your labels may differ based on process and customizations. 
 
 1. In the work item form that appears, enter a **Title** and any other required fields or details. Save the work item to close it. 
  

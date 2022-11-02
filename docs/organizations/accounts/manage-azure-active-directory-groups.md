@@ -3,7 +3,7 @@ title: Manage access with Azure Active Directory groups
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to control who can access Azure DevOps with Azure Active Directory groups
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
 ms.author: chcomley
@@ -29,7 +29,7 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Prerequisites
 
 * Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.yml#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
-* You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
+* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
 

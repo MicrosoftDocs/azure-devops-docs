@@ -2,7 +2,7 @@
 title: Set the team sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: boards-sprints
 ms.assetid: 
 ms.author: kaelli
@@ -174,7 +174,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Set individual capacity, TFS 2017 and later versions.](media/capacity/capacity-planning-set-capacity-tfs-15.png)
+	> ![Screenshot of Set individual capacity, TFS 2018 version.](media/capacity/capacity-planning-set-capacity-tfs-15.png)
 
 ::: moniker-end  
 
@@ -184,9 +184,6 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 ## Copy capacity planning from the previous sprint 
 
 By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.  
-
-> [!NOTE]    
-> This feature is available from TFS 2015.1 and later versions.
 
 Notice that only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
 

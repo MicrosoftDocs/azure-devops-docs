@@ -6,7 +6,7 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/26/2022
+ms.date: 08/12/2022
 monikerRange: azure-devops
 ---
 
@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Use this task in a pipeline to publish your artifacts(note that publishing is NOT supported in release pipelines. It is supported in multi-stage pipelines, build pipelines, and yaml pipelines).
+Use this task in a pipeline to publish your artifacts(note that publishing is NOT supported in release pipelines. It's supported in multi-stage pipelines, build pipelines, and yaml pipelines).
 
 > [!TIP]
 > Looking to get started with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
@@ -24,21 +24,22 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 [!INCLUDE [temp](../includes/yaml/PublishPipelineArtifactV1.md)]
 
 > [!NOTE]
-> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [Download](/azure/devops/pipelines/yaml-schema/steps-download) in the YAML schema.
+> The `publish` and `download` keywords are shortcuts for the PublishPipelineArtifact@1 and DownloadPipelineArtifact@2 tasks. See [steps.publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [steps.download](/azure/devops/pipelines/yaml-schema/steps-download) for more details.
 
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | (Required) Path to the folder or file you want to publish. Wildcards are not supported. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
-| artifactName | (Optional) Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
-| artifactType | (Required) Artifacts publish location. Choose whether to publish your file as a pipeline artifact, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline |
-| fileSharePath | (Optional) The file share path that the artifact will be published to. This can include variables. Required when `artifactType` = `filepath`. E.g: `\server\folderName` |
-| parallel | (Optional) Select whether to copy files in parallel using multiple threads. If this setting is not enabled, one thread will be used. Default value: false| 
-| parallelCount | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. | 
+| `path`<br/>File or directory path | (Required) Path to the folder or file you want to publish. Wildcards aren't supported. The path must be a fully qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
+| `artifactName`<br/>Artifact name | (Optional) Specify the name of the artifact that you want to create. It can be whatever you want. For example: *drop* |
+| `artifactType`<br/>Artifact publish location | (Required) Artifacts publish location. Choose whether to publish your file as a pipeline artifact, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline |
+| `fileSharePath`<br/>File share path | (Optional) The file share path that the artifact will be published to. This can include variables. Required when `artifactType` = `filepath`. For example: `\server\folderName` |
+| `parallel`<br/>Parallel copy | (Optional) Select whether to copy files in parallel using multiple threads. If this setting isn't enabled, one thread will be used. Default value: false|
+| `parallelCount`<br/>Parallel count | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. |
+| `properties`<br/>Custom properties | (Optional) Enter custom properties to associate with the artifact. Valid JSON string expected with all keys having the prefix 'user-'. |
 
 > [!TIP]
-> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to to control which files will be published.
+> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to control which files will be published.
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->

@@ -2,7 +2,7 @@
 title: Manage requirements, Agile methods
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage requirements 
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
