@@ -43,7 +43,7 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 
 ## Example
 
-```yml
+```yaml
 pool:
   name: Azure Pipelines
   demands: maven
