@@ -6,7 +6,7 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 08/12/2022
+ms.date: 11/02/2022
 monikerRange: azure-devops
 ---
 
@@ -39,7 +39,36 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 | `properties`<br/>Custom properties | (Optional) Enter custom properties to associate with the artifact. Valid JSON string expected with all keys having the prefix 'user-'. |
 
 > [!TIP]
-> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to control which files will be published.
+> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to control which files should be published.
+
+## Example
+
+```yml
+pool:
+  name: Azure Pipelines
+  demands: maven
+
+steps:
+- task: Maven@3
+  displayName: 'Maven my-app/pom.xml'
+  inputs:
+    mavenPomFile: 'my-app/pom.xml'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**/*.jar'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
+
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    artifact: drop
+    properties: '{ "user-1": "testProp"}'
+```
+
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
