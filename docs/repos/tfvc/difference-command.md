@@ -65,7 +65,7 @@ tf diff[erence] /configure
    :::column span="3":::
    Required. Specifies the item to be compared. If no version or path is specified, the current workspace version is assumed. Accepts both local and Azure DevOps server paths.
 
-   For more information about how TFVC parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   For more information about how TFVC parses the `itemspec` to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    The `difference` command doesn't support wildcard characters.
 
@@ -222,7 +222,7 @@ tf diff[erence] /configure
    `/options`
    :::column-end:::
    :::column span="1":::
-   Specifies an option string for the tool to be invoked by `diff`. For more information, see [Associate a file type with a difference tool](associate-file-type-file-comparison-tool.md) and [Associate a file type with a merge tool](associate-file-type-merge-tool.md).
+   Specifies an option string for the tool to be invoked by `difference`. For more information, see [Associate a file type with a difference tool](associate-file-type-file-comparison-tool.md) and [Associate a file type with a merge tool](associate-file-type-merge-tool.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -280,7 +280,7 @@ Binary files can be compared but can't be merged. When you pass one or more bina
 
 If you specify two file names, the two files are compared. Instead of using the **/version** flag, you can specify versions by appending a semicolon and version specifier to the end of each file name.
 
-If you pass only one *itemspec* to the difference command:
+If you pass only one `itemspec` to the difference command:
 
 -   If you don't provide a `versionspec`, your current workspace version of the item is compared to the base workspace version, by default. For example, `tf difference header.h` compares the current version of *header.h* to the version upon which *header.h* is based.
 
@@ -292,7 +292,7 @@ For more information on how to use the `tf` command-line utility, see [Use Team 
 
 ### Output format types
 
-The `format` parameter, used with the `/format` option, specifies many different output formats. The available output types are:
+The `format` parameter, used with the `/format` option, specifies many different output formats. The following output types are available:
 
 - `Visual` format type opens an external difference application. By default, *diffmerge.exe* is launched.
 
@@ -300,7 +300,7 @@ The `format` parameter, used with the `/format` option, specifies many different
 
 - `Context` format provides lines of context for the differences in the files. This format is derived from the UNIX-based `diff -c` output format.
 
-- `RCS` format is similar to `/format:unix`, except context lines are not supplied. No special handing for a missing end of line marker at the end of the file is provided.
+- `RCS` format is similar to `/format:unix`, except context lines aren't supplied. No special handing for a missing end of line marker at the end of the file is provided.
 
 - `SS` is the default difference output format for Visual SourceSafe. For more information, see [Diff (command line)](/previous-versions/9a7z21t6(v=vs.80)).
 
@@ -308,11 +308,11 @@ The `format` parameter, used with the `/format` option, specifies many different
 
 - `SS_Unix` is similar to the `/format:unix` output format, but `/format:ss_unix` includes context lines and `/format:unix` doesn't.
 
-- `Unified` format is derived from the UNIX-based `diff -u` output format. `/format:context` repeats identical context lines between the difference strings although `/format:unified` doesn't.
+- `Unified` format is derived from the UNIX-based `diff -u` output format. `/format:context` repeats identical context lines between the difference strings but `/format:unified` doesn't.
 
   `Unified` format produces a new unified difference string (`@@ ... @@`) line only when the distance to the next difference string is larger than the number of context lines. 
 
-- `Unix` output type is derived from the UNIX based `diff` command output format.
+- `Unix` output type is derived from the UNIX-based `diff` command output format.
 
   The `Unix` output format is constructed in the following way:
 
@@ -336,7 +336,7 @@ The `format` parameter, used with the `/format` option, specifies many different
     ```
 
 ## Examples
-The following example displays the differences between the local version of *314.cs* and the workspace version of *314.cs* that is the version of the file that was checked out from the Azure DevOps server.
+The following example displays the differences between the local version of *314.cs* and the workspace version of *314.cs* that's the version of the file that was checked out from the Azure DevOps server.
 
 `c:\projects>tf difference 314.cs`
 

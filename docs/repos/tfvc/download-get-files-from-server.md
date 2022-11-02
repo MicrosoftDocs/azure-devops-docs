@@ -39,7 +39,7 @@ In special cases, for example to fix a regression bug, you might need to get and
 > [!NOTE]
 > Keep in mind that if you get an older version of a file, make changes to it, and then try to check it in, there's an increased chance that you'll need to [resolve conflicts](resolve-team-foundation-version-control-conflicts.md) before you can complete the check-in.
 
-### To get a specific version of some files from the History window
+### To get a specific version of files from the History window
 
 1.  In **Team Explorer** or **Source Control Explorer**, browse to the folder or file, right-click it, and choose **View History**.
 

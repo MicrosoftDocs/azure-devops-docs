@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 Team Foundation Version Control (TFVC) administrators can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control. For example, a user can be required to associate a work item with a changeset. For more information on check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
-Before editing a check-in policy, you must first create one. For more information, see [Add check-in policies](add-check-policies.md). The default available check-in policy types include:
+Before editing a check-in policy, you must first create one. For more information, see [Add check-in policies](add-check-policies.md). The following default check-in policy types are available:
 
 - **Builds** requires that the last build was successful before any new changes can be checked in.
 - **Changeset Comments Policy** requires users to provide check-in comments.
