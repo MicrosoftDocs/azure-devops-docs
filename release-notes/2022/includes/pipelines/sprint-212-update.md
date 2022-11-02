@@ -1,7 +1,7 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/1/2022
+ms.date: 11/2/2022
 ms.topic: include
 ---
 ### Template Expressions in Repository Resource Definition
@@ -78,7 +78,7 @@ extends:
 ```
 By doing so, your pipeline will extend the template in the same branch as the branch on which the pipeline runs, so you can make sure your pipeline's and template's branches always match. That is, if you run your pipeline on a branch `dev`, it will extend the template specified by the `template.yml` file in the `dev` branch of the `templates` repository.
 
-Or, you can choose, at build queue-time, which template repository branch to use, by writing the following YAML code.
+Or you can choose, at build queue-time, which template repository branch to use, by writing the following YAML code.
 ```yml
 parameters:
   - name: branch
@@ -104,7 +104,7 @@ Now, you can have your pipeline on branch `main` extend a template from branch `
 
 When specifying a template expression for the `ref` property of a repository resource, you can use `parameters` and system predefined variables, but you cannot use YAML or Pipelines UI-defined variables.
 
-## Template Expressions in Container Resource Definition
+### Template Expressions in Container Resource Definition
 
 We've added support for template expressions when defining the `endpoint`, `volumes`,  `ports`, and `options` properties of a `container` resource in a YAML pipeline. This was a [highly-requested feature by our Developer Community](https://developercommunity.visualstudio.com/t/allow-variables-at-resourcesrepositoriesrepository/816606).
 
@@ -182,7 +182,7 @@ The Audit logs will contain an entry similar to the following.
 
 ```
 
-The log entry will show up in the Audit UI as well as following.
+In addition, it will show up in the Audit UI.
 
 > [!div class="mx-imgBorder"]
 > ![Log entry in Audit UI](../../media/212-pipelines-01.png)
