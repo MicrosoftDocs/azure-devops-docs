@@ -26,8 +26,8 @@ If you're a new user of Visual Studio, Azure DevOps, and TFVC, see how you and y
 
 Take a few minutes to walk step-by-step through a day in the life of developers at Fabrikam Fiber, a fictitious company that provides cable television and related services. Their team recently adopted Visual Studio, Azure DevOps Server, and TFVC to manage their code. You see examples of how to check out and update your code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
-- [Day in the life of a developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md) 
-- [Day in the life of a developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) 
+- [Day in the life of a DevOps developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md) 
+- [Day in the life of a DevOps developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) 
 
 ## Next steps
 

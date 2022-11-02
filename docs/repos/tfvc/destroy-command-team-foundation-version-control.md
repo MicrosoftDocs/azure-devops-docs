@@ -109,7 +109,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    
    Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.
    
-   The default version for `/stopat` is `tip (T)` for the latest checked-in version of an item.
+   The default version for `/stopat` is `tip` (T) for the latest checked-in version of an item.
    
    You can't use label or workspace `versionspec` values to specify an item for the `/stopat` option.
    :::column-end:::
@@ -130,7 +130,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    `/startcleanup`
    :::column-end:::
    :::column span="3":::
-   Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user doesn't specify `/startcleanup`, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Azure DevOps Server. By default, the clean-up is scheduled to run every five days. Seven days after the TFVC metadata are cleaned up, the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.
+   Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user doesn't specify `/startcleanup`, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Azure DevOps Server. By default, the clean-up is scheduled to run every five days. Seven days after the TFVC metadata are cleaned up, the content is deleted by another clean-up process. By default, this content clean-up process runs once each day.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -172,7 +172,11 @@ When you use `tf destroy` to destroy version-control files, the application tier
 
 After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Azure DevOps Server is cleaned up. You can also specify the `/startcleanup` option to clean up the files immediately after `tf destroy` runs.
 
-If you run `tf destroy` without specifying `/i` and `/preview`, the system displays a console **Yes** or **No** prompt for each `filespec` value. Otherwise, you can specify **Yes to all**. If you don't specify `/keephistory`, you are prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to `/preview` if you want more information about the changes. If you specify `/keephistory`, you're also prompted by **Yes**, **No**, or **All** text. If you select **Yes** or **All**, the destruction process starts, and the server paths to the destroyed items appear in the command prompt window.
+If you run `tf destroy` without specifying `/i` and `/preview`, the system displays a console **Yes** or **No** prompt for each `filespec` value. Otherwise, you can specify **Yes to all**. 
+
+- If you don't specify `/keephistory`, you're prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to `/preview` if you want more information about the changes.
+
+- If you specify `/keephistory`, you're also prompted by **Yes**, **No**, or **Yes to All** text. If you select **Yes** or **Yes to All**, the destruction process starts, and the server paths to the destroyed items appear in the command prompt window.
 
 ```output
 Destroyed: <serverItem1>
@@ -180,9 +184,9 @@ Destroyed: <serverItem2>
 Destroyed: ...
 ```
 
-If you specified the `versionspec` value as a tip, the server paths displayed in the command prompt window include deletion IDs. For example, **X123** might appear in the command prompt window.
+If you specified the `versionspec` value as `tip`, the server paths displayed in the command prompt window include deletion IDs. For example, `X123` might appear in the command prompt window.
 
-If you use the `/preview` option, the files are not destroyed, but the command-line text displays the files that would be destroyed. For example, if you enter `tf destroy /preview $/Test1/MyProject/MyProject/Program.cs` at the command-line, the command window displays this text:
+If you use the `/preview` option, the files aren't destroyed, but the command-line text displays the files that would be destroyed. For example, if you enter `tf destroy /preview $/Test1/MyProject/MyProject/Program.cs` at the command-line, the command window displays this text:
 
 **Destroyed: $/Test1/MyProject/MyProject/Program.cs**
 
@@ -191,7 +195,7 @@ However, the file is actually not destroyed because you used the **/preview** op
 For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 
-### Effects of /keephistory on Other version control operations
+### Effects of /keephistory on other version control operations
 
 If you specify the `/keephistory` option to retain the history of destroyed files, the files are treated as destroyed by the following TFVC operations:
 
@@ -205,7 +209,7 @@ If an item has already been deleted, a deletion ID is attached to it and results
 
 ### Effects of tf destroy on TFVC repo code search
 
-Code search doesn't handle `tf destroy` notifications, and so using `tf destroy` for TFVC repos won't automatically delete files in the search index. As a result, these files appear in the code search results. To avoid these ghost files scenarios, delete files before the `tf destroy` operation.
+Code search doesn't handle `tf destroy` notifications, so using `tf destroy` for TFVC repos won't automatically delete files in the search index. As a result, these files appear in the code search results. To avoid these ghost files scenarios, delete files before the `tf destroy` operation.
 
 ## Examples
 

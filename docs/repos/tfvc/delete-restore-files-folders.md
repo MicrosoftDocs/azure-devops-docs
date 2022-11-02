@@ -24,11 +24,11 @@ See [Default TFVC permissions](../../organizations/security/default-tfvc-permiss
 
 ## Delete an item
 
-Before you delete a file, look for a check mark icon [check mark icon](check.png) next to the file, which indicates pending edits in the file. If there are pending edits, view them by right-clicking the file and choosing **Compare**. Make sure that you don't need the edits. If you think you might need the edits in the future, consider checking in the file before you delete it.
+Before you delete a file, look for a [check mark icon](media/delete-restore-files-folders/check.png) next to the file, which indicates pending edits in the file. If there are pending edits, view them by right-clicking the file and choosing **Compare**. Make sure that you don't need the edits. If you think you might need the edits in the future, consider checking in the file before you delete it.
 
 > [!IMPORTANT]
 > - If you delete a folder, the system pends delete actions for any folders and files that the folder contains.
-> - If you delete a file on which other files have dependencies, the system automatically pends delete actions for those files. For example, if you delete a form file, the code and resource file are also pended for deletion.
+> - If you delete a file on which other files have dependencies, the system automatically pends delete actions for those files. For example, if you delete a form file, the code and resource files are also pended for deletion.
 
 ### To delete an item
 
@@ -77,10 +77,10 @@ You might need to restore an item you deleted outside Visual Studio, possibly by
 When you use a local workspace, Visual Studio detects and enables you to resolve changes you made outside the system.
 
 1. On the **Pending Changes** page in **Team Explorer**, under **Excluded Changes**, select **Detected**.
-1. In the **Promote Candidate Changes** dialog box, right-click the item, which has **delete** appears in the **Change** column, and select **Restore this item**.
+1. In the **Promote Candidate Changes** dialog box, right-click the item, which has **delete** in the **Change** column, and select **Restore this item**.
 1. Select **Promote**.
 
-If you accidentally delete an item outside Visual Studio and you're using a server workspace, when you try to open the item in Visual Studio you might see an error message such as: **TF10187: Could not open document \<filename>. The system cannot find the file specified.**. You can restore the item by getting it from the server.
+If you accidentally delete an item outside Visual Studio and you're using a server workspace, when you try to open the item in Visual Studio you might see an error message such as: **TF10187: Could not open document \<filename>. The system cannot find the file specified**. You can restore the item by getting it from the server.
 
 1. In **Source Control Explorer**, browse to the folder that contains the deleted items.
 1. Right-click the folder and choose **Advanced** > **Get Specific Version**.
@@ -94,8 +94,8 @@ If you accidentally delete an item outside Visual Studio and you're using a serv
 
 You can use the following [tf command-line utility](use-team-foundation-version-control-commands.md) commands to delete, destroy, restore, and get files.
 
--  [Delete command](delete-command-team-foundation-version-control.md) deletes a file from the server.
--  [Destroy command](destroy-command-team-foundation-version-control.md) permanently destroys an item.
--  [Undelete command](undelete-command.md) restores a file deleted from the server.
--  [Undo command](undo-command.md) undoes pending changes.
--  [Get command](get-command.md gets files from the server.
+- The [Delete command](delete-command-team-foundation-version-control.md) deletes a file from the server.
+- The [Destroy command](destroy-command-team-foundation-version-control.md) permanently destroys an item.
+- The [Undelete command](undelete-command.md) restores a file deleted from the server.
+- The [Undo command](undo-command.md) undoes pending changes.
+- The [Get command](get-command.md) gets files from the server.

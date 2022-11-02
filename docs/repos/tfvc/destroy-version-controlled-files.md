@@ -50,7 +50,7 @@ In Windows, select **Start** and then type *Developer Command Prompt*. From the 
   tf destroy /i $/MyTeamProject/aFile.cs
   ```
 
-  This command displays information about possible pending changes and shelvesets in the command prompt window. Because you specified `/i` or non-interactive, you aren't  prompted with a **Yes**, **No**, or **Yes to all** dialog before the files are permanently removed.
+  This command displays information about possible pending changes and shelvesets in the command prompt window. Because you specified `/i` or non-interactive, you aren't  prompted with a **Yes**, **No**, or **Yes to All** dialog before the files are permanently removed.
 
 - To destroy all the files in *aFolder* and at the same time retain their history, enter:
 
@@ -63,7 +63,7 @@ In Windows, select **Start** and then type *Developer Command Prompt*. From the 
 
   This action retains the historical information about all the files in *aFolder*. You can use the `tf history` command to view the history of a file. You can also view the history in **Source Control Explorer** in Visual Studio. For more information, see [History command](history-command.md) and [Get the history of an item](get-history-item.md).
 
-- Use the `/stopat` option to retain the historical information up to and including a `versionspec` value. The `versionapec` value can be the latest version, a specific changeset, or a date. For more information about `versionspec` values, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+- Use the `/stopat` option to retain the historical information up to and including a `versionspec` value. The `versionspec` value can be the latest version, a specific changeset, or a date. For more information about `versionspec` values, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
   To destroy all the files in the project MyTeamProject, and at the same time retain the history for the files up to and including 10/23/2005, enter:
 
