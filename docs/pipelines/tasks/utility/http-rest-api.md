@@ -73,7 +73,7 @@ Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-task
 
 ### What base URLs are used when invoking Azure Management APIs?
 
-Azure management APIs are invoked using *ResourceManagerEndpoint* of the selected environment. For example `https://management.Azure.com` is used when the subscription is in **AzureCloud** environment.
+Azure management APIs are invoked using *ResourceManagerEndpoint* of the selected environment. For example `https://management.azure.com` is used when the subscription is in **AzureCloud** environment.
 
 ### Where should a task signal completion when **Callback** is chosen as the completion event?
 
