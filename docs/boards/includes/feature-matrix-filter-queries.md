@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
@@ -113,7 +113,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items in one or more projects in an organization or collection. Default is the current project. Use the **Team Project** field to query on two or more projects.
    :::column-end:::
    :::column span="1":::
-      TFS 2015-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
@@ -152,7 +152,7 @@ The following table summarizes the query filter functions supported by each Azur
       **Supported operators**: `Is Empty, Is Not Empty`
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -164,7 +164,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
    :::column-end:::
    :::column span="1":::
-      TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -176,7 +176,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on boolean field value. 
    :::column-end:::
    :::column span="1":::
-      TFS 2017-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -188,7 +188,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on key words or phrases added through the Discussion. 
    :::column-end:::
    :::column span="1":::
-      TFS 2017.2-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -200,7 +200,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on their Kanban column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -212,7 +212,7 @@ The following table summarizes the query filter functions supported by each Azur
       Filter query results based on a key word or select fields. 
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---

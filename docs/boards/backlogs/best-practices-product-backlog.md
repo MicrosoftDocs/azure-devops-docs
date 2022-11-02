@@ -3,7 +3,7 @@ title: Best practices for backlog management in Azure Boards
 titleSuffix: Azure Boards
 description: Learn best practices to manage and refine your product backlog in Azure Boards. 
 ms.custom: "boards-backlogs, seodec18"  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.author: kaelli
 author: KathrynEE

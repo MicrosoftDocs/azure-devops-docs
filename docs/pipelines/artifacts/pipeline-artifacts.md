@@ -278,7 +278,7 @@ Not available.
 
 ## Artifacts in release and deployment jobs
 
-Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `System.ArtifactsDirectory`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
+Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `$(Pipeline.Workspace)`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
 In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
 
 ```yaml
@@ -374,6 +374,10 @@ A: Not currently, but this feature is planned.
 #### Q: Can I delete pipeline artifacts when re-running failed jobs?
 
 A: Pipeline artifacts are not deletable or overwritable. If you want to regenerate artifacts when you re-run a failed job, you can include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
+
+#### Q: How can I access Artifacts feeds behind a firewall?
+
+A: If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Related articles
 

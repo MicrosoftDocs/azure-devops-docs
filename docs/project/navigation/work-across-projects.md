@@ -3,7 +3,7 @@ title: Work across projects
 titleSuffix: Azure DevOps
 description: How to access work items, pull requests, team projects, and more using your account home page in Azure DevOps
 ms.custom: navigation, cross-project
-ms.technology: devops-collab
+ms.subservice: azure-devops-projects
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: quickstart
 ms.author: kaelli   
@@ -37,6 +37,9 @@ For example, you can quickly access and navigate to the following artifacts defi
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in   
 
 ::: moniker-end
+
+> [!NOTE]
+> This feature only retrieves artifacts defined in projects for a single collection or organization. Retrieval of artifacts in projects across organizations isn't supported. 
 
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 

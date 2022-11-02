@@ -2,7 +2,7 @@
 title: Quickstart guide to configure and manage your project  
 titleSuffix: Azure Boards 
 description: Learn concepts in Azure Boards that help you understand how to manage your project.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: boards-get-started
 ms.author: kaelli
 author: KathrynEE

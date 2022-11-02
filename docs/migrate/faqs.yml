@@ -3,7 +3,7 @@ metadata:
   title: Migration and process model FAQs 
   description: Answers to frequently asked questions about process models post migration
   titleSuffix: Azure DevOps
-  ms.technology: devops-migrate
+  ms.subservice: azure-devops-migrate
   ms.author: kaelli
   author: KathrynEE
   ms.topic: faq

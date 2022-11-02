@@ -1,7 +1,7 @@
 ---
 title: Allow Pipelines to access project-scoped feeds that are scoped to a different project
 description: How to set permissions to access a project-scoped feed in a different project
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 08/05/2020
 monikerRange: '<= azure-devops'

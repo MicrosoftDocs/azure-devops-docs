@@ -3,7 +3,7 @@ title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
 ms.custom: "inherited-process, linked-from-support, cross-project"
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
 author: KathrynEE
@@ -82,6 +82,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Dashboards per project | 500 |
 | Teams | 5,000 per organization |
 | Work item tags | 150,000 tag definitions per organization or collection |
+| Delivery plans per project | 1,000 |
 
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
@@ -144,7 +145,7 @@ The following table lists the maximum number of objects that you can define for 
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |
 | Fields defined for a work item type                 |        1024 |       1024 |
-| Picklists defined for an organization or collection |        1024 |          - |
+| Picklists defined for an organization or collection |        2048 |          - |
 | Picklist items defined for a list                   |        2048 |       2048 |
 | Picklist item character length                      |         256 |          - |
 | Workflow states defined for a work item type        |          32 |         16 |

@@ -3,13 +3,13 @@ title: Share information in work items and social tools in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to easily share information about work items, queries, and more in Azure Boards.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/26/2022
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 04/01/2022
 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -217,6 +217,17 @@ To open the menu options to download or delete several attachments, choose one o
 
 
 * * *
+
+<a id="copy-url-attached-file"></a>
+
+::: moniker range="azure-devops"
+
+## Copy URL of attached file 
+
+To quickly copy the URL of an attachment, you can select **Copy attachment link** option from the attachment's :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** menu.
+
+:::image type="content" source="media/share-plans/copy-url-attachment-menu-option.png" alt-text="Screenshot of work item form, Attachments tab, Copy attachment link  attachment menu option."::: 
+::: moniker-end 
 
 <a id="storyboard" />
 

@@ -2,7 +2,7 @@
 title: Add AD/Azure AD groups to security groups 
 titleSuffix: Azure DevOps
 description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
@@ -55,7 +55,7 @@ The method for adding a user or group to a built-in security group is the same, 
 > To manage the permissions of an Azure AD group in Azure DevOps, you must first add the Azure AD group to a built-in security group. Once you complete this task, you can then manage your Azure AD group permissions throughout Azure DevOps.
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 

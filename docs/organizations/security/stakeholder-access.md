@@ -2,7 +2,7 @@
 title: Stakeholder access quick reference
 titleSuffix: Azure DevOps 
 description: Stakeholder access to common user tasks for Azure DevOps 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 toc: show
 ms.author: kaelli
 author: KathrynEE

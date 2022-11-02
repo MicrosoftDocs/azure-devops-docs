@@ -2,8 +2,7 @@
 title: Plan and track SAFe® projects in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to plan and track epics, release trains, and multiple backlogs in Azure Boards to support SAFe® practices.
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -2,7 +2,7 @@
 title: Link and Param XML elements reference
 titleSuffix: Azure DevOps & TFS 
 description: Adds a hyperlink to a field or a standalone label on a work item form by using the Link element, Team Foundation Server
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 6651e599-52d4-4edc-87cf-264d64befbac
 ms.author: kaelli

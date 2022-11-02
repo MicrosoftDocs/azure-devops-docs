@@ -1,7 +1,7 @@
 ---
 title: Universal Packages upstream sources
 description: How to add Universal Packages upstream sources
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 05/12/2022
 monikerRange: '<= azure-devops'

@@ -3,7 +3,7 @@ title: Learn default and system work item field descriptions
 titleSuffix: Azure Boards
 description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: conceptual  
 ms.author: kaelli
@@ -90,9 +90,9 @@ Values in parenthesis indicate the following criteria:
    ### B
    - [Backlog Priority](../../queries/planning-ranking-priorities.md#fields) (Scrum)
    - [Blocked](../../queries/planning-ranking-priorities.md#fields)
-   - [Board Column<sup>1</sup>](../../queries/query-by-workflow-changes.md#fields)
-   - [Board Column Done<sup>1</sup>](../../queries/query-by-workflow-changes.md#fields)
-   - [Board Lane<sup>1</sup>](../../queries/query-by-workflow-changes.md#fields)
+   - [Board Column](../../queries/query-by-workflow-changes.md#fields)
+   - [Board Column Done](../../queries/query-by-workflow-changes.md#fields)
+   - [Board Lane](../../queries/query-by-workflow-changes.md#fields)
    - [Business Value](../../queries/query-numeric.md#fields)
    
    ### C
@@ -105,7 +105,7 @@ Values in parenthesis indicate the following criteria:
    - [Closed Status](guidance-code-review-feedback-field-reference.md#fields)
    - [Closed Status Code](guidance-code-review-feedback-field-reference.md#fields)
    - [Closing Comment](guidance-code-review-feedback-field-reference.md#fields)
-   - [Comment Count<sup>2</sup>](../../queries/linking-attachments.md#fields)
+   - [Comment Count](../../queries/linking-attachments.md#fields)
    - [Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
    - [Committed](../../queries/planning-ranking-priorities.md#fields) (CMMI)
    - [Completed Work](../../queries/query-numeric.md#fields)
@@ -167,7 +167,7 @@ Values in parenthesis indicate the following criteria:
    - [Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
    - [Original Estimate](../../queries/query-numeric.md#fields)
    - [Parameters](../../queries/build-test-integration.md#fields) (TCM)
-   - [Parent<sup>3</sup>](../../queries/linking-attachments.md#parent)
+   - [Parent<sup>1</sup>](../../queries/linking-attachments.md#parent)
    - [Priority](../../queries/planning-ranking-priorities.md#fields) 
    - [Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
@@ -182,7 +182,7 @@ Values in parenthesis indicate the following criteria:
    - [Reason](../../queries/query-by-workflow-changes.md#fields) (System)
    - [Related Link Count](../../queries/linking-attachments.md#fields) (System)
    - [Remaining Work](../../queries/query-numeric.md#fields) 
-   - [Remote Link Count<sup>4</sup>](../../queries/linking-attachments.md#remote-link-count) (System)
+   - [Remote Link Count<sup>2</sup>](../../queries/linking-attachments.md#remote-link-count) (System)
    - [Repro Steps](../../queries/titles-ids-descriptions.md#fields)
    - [Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
    - [Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
@@ -192,9 +192,10 @@ Values in parenthesis indicate the following criteria:
    - [Resolved By](../../queries/query-by-workflow-changes.md#fields)
    - [Resolved Date](../../queries/query-by-workflow-changes.md#fields)
    - [Resolved Reason](../../queries/query-by-workflow-changes.md#fields)
+   - [Rev](../../queries/history-and-auditing.md#fields) (System)
    - [Reviewed By](guidance-code-review-feedback-field-reference.md#fields)
    - [Reviewed Date](guidance-code-review-feedback-field-reference.md#fields)
-   - [Rev](../../queries/history-and-auditing.md#fields) (System)
+   - [Revised Date](../../queries/history-and-auditing.md#fields) (System, TCM)
    - [Risk](../../queries/planning-ranking-priorities.md#fields) (Agile)
    - [Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    
@@ -239,10 +240,8 @@ Values in parenthesis indicate the following criteria:
 :::row-end:::
 
 > [!NOTE]  
-> 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
-> 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
-> 3. These fields are available from Azure DevOps Services and Azure DevOps Server 2020.
-> 4. These fields are available from Azure DevOps Services only.
+> 1. This field is available from Azure DevOps Services and Azure DevOps Server 2020.
+> 2. This fields is available from Azure DevOps Services only.
 
 By using the system fields or other fields you've added to your project collection, you can enable meaningful cross-project reports and queries. Also, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 

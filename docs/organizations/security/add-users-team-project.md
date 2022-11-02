@@ -2,7 +2,7 @@
 title: Add users or groups to a team or project
 description: How to guide to add users or groups to a team or project 
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: contperf-fy21q4
 ms.author: kaelli
 author: KathrynEE
@@ -544,7 +544,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 ::: moniker-end 
 
 <a id="project-permissions" />

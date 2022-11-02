@@ -1,8 +1,8 @@
-﻿---
+---
 title: Add privacy policy URL to comply with the GDPR
 titleSuffix: Azure DevOps Services
 description: Learn how to add your Organization's privacy policy URL for your public project, which describes how you handle internal and external guest data privacy.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -21,7 +21,7 @@ A privacy policy is a legal requirement for all websites and apps that collect o
 
 ## Prerequisites
 
-You must be [an organization owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md) to add a privacy policy URL.
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Add your privacy policy URL in Azure DevOps
 

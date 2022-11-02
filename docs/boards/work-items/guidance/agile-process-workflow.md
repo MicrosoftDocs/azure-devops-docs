@@ -3,7 +3,7 @@ title: Agile process work item types & workflow in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to use the Agile process to track work using its work item types working in Azure Boards.
 ms.custom: work-items, seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
 ms.author: kaelli
@@ -24,7 +24,7 @@ To gain insight into a portfolio of features, scenarios, or user experiences, pr
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
-[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)]  
+
 
 ## Define user stories
 

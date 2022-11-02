@@ -2,7 +2,7 @@
 title: Organize project activities in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to reduce the risks to your project that stem from shifting requirements and implementation costs by organizing your project activities in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 078d2b8e-e0a7-4c17-8f00-e830c78d338c
 ms.topic: conceptual
 ms.author: kaelli

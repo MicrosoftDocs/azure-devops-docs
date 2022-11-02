@@ -3,7 +3,7 @@ title: Define the hyperlink for a work item
 titleSuffix: Azure Boards
 description: Learn how to construct a URL for a work item for Azure Boards and Azure DevOps.
 ms.custom: work-items, seodec18
-ms.technology: devops-agile   
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: how-to
@@ -66,7 +66,7 @@ http://*ServerName:Port/CollectionName/ProjectName*/<b>_workitems?id=</b>*WorkIt
 http://fabrikamprime:8080/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
 ```  
 
-## Azure DevOps Server 2019, TFS 2018 through TFS 2015 
+## Azure DevOps Server 2019 and TFS 2018
 
 
 http://*ServerName:Port*/**tfs**/*CollectionName/ProjectName*/**_workitems?id**=*WorkItemNumber***&_a=edit** 
@@ -76,27 +76,6 @@ http://*ServerName:Port*/**tfs**/*CollectionName/ProjectName*/**_workitems?id**=
 http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
 ```  
 
-## TFS 2013.2
-
-<b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/ProjectName*/<b>_workitems/edit/</b>*WorkItemNumber*
-
-**Example:**
-
-```
-http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/edit/133
-```
-
-## TFS 2013.1 and earlier versions
-
-```  
-http://ServerName:Port/tfs/CollectionName/TeamProjectName_workitems#_a=edit&id=WorkItemNumber  
-```  
-
-**Example:**
-
-```
-http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems#_a=edit&id=133
-```
 
 ::: moniker range=">= azure-devops-2020"  
 

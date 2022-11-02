@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Modal Dialog | Extensions for Azure DevOps
 description: Use the modal dialog provided by the host for Azure DevOps.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010

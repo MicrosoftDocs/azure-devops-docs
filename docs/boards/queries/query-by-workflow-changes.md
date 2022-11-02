@@ -3,7 +3,7 @@ title: Query by account, user, workflow, or board changes in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to list work items based on changes made to their assignment, state, or Kanban board column or swimlane in Azure Boards. 
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.author: kaelli
 author: KathrynEE
@@ -54,7 +54,7 @@ Query clauses that specify an identity or workflow-associated field can use the 
       **Boolean** <sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      = , &lt;&gt; , =[Field] , &lt;&gt;[Field]
+      `= , <> , =[Field] , <>[Field]`
    :::column-end:::
 :::row-end:::
 ---
@@ -63,8 +63,8 @@ Query clauses that specify an identity or workflow-associated field can use the 
       **DateTime**
    :::column-end:::
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  
-      **Macros**: **@Today**, **@Today +/- n** valid with any DateTime field 
+     `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`    
+      **Macros**: `@Today`, `@Today +/- n` valid with any DateTime field 
    :::column-end:::
 :::row-end:::
 ---
@@ -73,8 +73,8 @@ Query clauses that specify an identity or workflow-associated field can use the 
       **Identity**
    :::column-end:::
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
-      **Macros**: **@me** valid for all Identity fields 
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever` 
+      **Macros**: `@Me` valid for all Identity fields 
    :::column-end:::
 :::row-end:::
 ---
@@ -83,18 +83,12 @@ Query clauses that specify an identity or workflow-associated field can use the 
      **Single text (String)** <sup>2</sup>
    :::column-end:::
    :::column span="3":::
-      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+      `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever` 
    :::column-end:::
 :::row-end:::
 ---
- 
 
-> [!NOTE]  
-> 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
-> 2. The **Was Ever** operator is only valid for Kanban board columns for Azure DevOps Services at this time.  
-
-
-Use the **In** and **Not In** operators to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group or  security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
+Use the `In` and `Not In` operators to filter for or exclude two or more pick list entries or a delimited set of items. Use the `In Group` or `Not In Group` operators to filter for items that belong or don't belong within a category group or security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
@@ -107,7 +101,7 @@ Use the **In** and **Not In** operators to filter for or exclude two or more pic
 
 Use the search box or query editor to quickly find work items based on an assignment made to an **Identity** field. Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further, which can help with performance. 
 
-Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and **@Me** to scope to your user identity. 
+Use `=` to find current assignments, `Was Ever` to list items based on past assignments, and `@Me` to scope to your user identity. 
 
 :::row:::
      :::column span="1":::

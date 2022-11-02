@@ -3,7 +3,7 @@ title: Plan your organizational structure
 titleSuffix: Azure DevOps
 ms.custom: seodec18, contperf-fy22q3
 description: Begin to plan your organizational structure, including projects, teams, repos, version control, and more.
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

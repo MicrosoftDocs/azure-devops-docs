@@ -3,7 +3,7 @@ title: Customize cards on a Kanban board
 titleSuffix: Azure Boards
 description: Learn how to customize cards to provide at-a-glance information of interest to your team in Azure Boards and Azure DevOps. 
 ms.custom: boards-kanban, contperf-fy21q3
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.author: kaelli
 author: KathrynEE
@@ -470,7 +470,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
-	![Settings dialog, Tests tab (Kanban), TFS 2015.](media/c-cards-test-settings.png)   
+	![Screenshot of Settings dialog, Tests tab (Kanban).](media/c-cards-test-settings.png)   
 
 4. Save your changes. 
 

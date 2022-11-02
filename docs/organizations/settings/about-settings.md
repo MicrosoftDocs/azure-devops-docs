@@ -2,7 +2,7 @@
 title: Settings overview for Azure DevOps
 titleSuffix: Azure DevOps
 description: Overview of settings available to administrators for your team, project, collection, and organization in Azure DevOps.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
@@ -714,7 +714,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column span="2":::
       - [Install and manage Marketplace extensions](../../marketplace/install-extension.md)
       - [Approve extensions](../../marketplace/request-extensions.md)
-      - [Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)
+      - [Grant permissions to manage extensions](../../marketplace/grant-permissions.md)
       - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
    :::column-end:::
    :::column span="2":::
@@ -752,7 +752,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
       - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
       - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
-      - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)
+      - [Set permissions to manage extensions](../../marketplace/grant-permissions.md)
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
    :::column span="2":::

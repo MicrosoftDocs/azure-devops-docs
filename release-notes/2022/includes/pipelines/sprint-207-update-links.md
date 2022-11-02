@@ -1,8 +1,7 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ms.topic: include
 ---
 
@@ -13,4 +12,4 @@ ms.topic: include
 - [Change in the default scope of access tokens in classic build pipelines](#change-in-the-default-scope-of-access-tokens-in-classic-build-pipelines)
 - [Azure Pipelines support for San Diego release of ServiceNow](#azure-pipelines-support-for-san-diego-release-of-servicenow)
 - [Announcing retirement of Windows 2016 image](#announcing-retirement-of-windows-2016-image)
-- [Announcing deprecation of macOS 10.15 Catalina images](#announcing-deprecation-of-macos-1015-catalina-images)
+- [Announcing deprecation of macOS 10.15 Catalina images (updated)](#announcing-deprecation-of-macos-1015-catalina-images-updated)

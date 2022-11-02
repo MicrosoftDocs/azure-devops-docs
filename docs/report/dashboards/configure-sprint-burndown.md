@@ -3,7 +3,7 @@ title: View and configure sprint burndown
 titleSuffix: Azure DevOps   
 description: Learn how to configure the sprint burndown in-context chart or widget to track team progress in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -65,6 +65,8 @@ Use this article to learn about:
 > * How to configure the Sprint Burndown widgets  
 > * How to view current and past sprint burndowns 
 
+For an overview of all burndown/burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -81,6 +83,7 @@ Use this article to learn about:
 
 > [!NOTE]  
 > Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
+
 
 
 ## The in-context Burndown Trend report
@@ -548,7 +551,7 @@ Teams may find it useful to review these reports periodically during their sprin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Burndown guidance](burndown-guidance.md) 
+> [Burndown and burnup guidance](burndown-guidance.md) 
 
 In addition to the sprint burndown chart, teams can review the [velocity](team-velocity.md) at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint. You can use your team velocity as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 

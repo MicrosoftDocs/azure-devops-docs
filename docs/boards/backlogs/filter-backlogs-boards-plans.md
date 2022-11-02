@@ -3,12 +3,12 @@ title: Apply filters to backlogs, boards, queries, and plans in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to apply filters to backlogs, boards, queries, and plans in Azure Boards  
 ms.custom: "boards-backlogs, boards-kanban, seodec18, contperf-fy21q3"    
-ms.technology: devops-agile  
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 08/03/2022
+ms.date: 10/27/2022
 ---
 
 # Interactively filter backlogs, boards, queries, and plans in Azure Boards
@@ -65,7 +65,7 @@ Supported options are indicated with a ✔️ or listed.
       <br/>**Tool** 
    :::column-end:::
    :::column span="1":::
-      **Keywords** or **ID**
+      **Keywords**<br/>or **ID**
    :::column-end:::
    :::column span="2":::
       <br/>**Fields**
@@ -113,6 +113,7 @@ Supported options are indicated with a ✔️ or listed.
       - Work Item Type
       - States
       - Area Path
+      - Iteration Path
    :::column-end:::
    :::column span="1.5":::
       ✔️   
@@ -134,6 +135,7 @@ Supported options are indicated with a ✔️ or listed.
       - Work Item Type  
       - States  
       - Area Path  
+      - Iteration Path
    :::column-end:::
    :::column span="1.5":::
       Note 1
@@ -287,8 +289,8 @@ Supported options are indicated with a ✔️ or listed.
 
 **Notes**
 
-1. While the **Parent Work Item** isn't a filter function for Backlogs or Query Results, you can add the **Parent** field as a column and then do a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
-2. The **Parent Work Item** filter is supported for Sprint Backlogs and Taskboards for Azure DevOps Server 2020 and later versions. 
+1. While the **Parent Work Item** isn't a filter function for **Backlogs** or **Query Results**, you can add the **Parent** field as a column and then do a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
+2. The **Parent Work Item** filter is supported for **Sprint Backlogs** and **Taskboards** for Azure DevOps Server 2020 and later versions. 
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -698,11 +700,11 @@ Along with the standard filter functions summarized in the previous table, the f
 
 
 **Notes**
-1. The Work items page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). Boards and backlogs are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md).  Completed and In Progress work items are determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#state-categories). 
+1. The **Work items** page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). **Boards** and **Backlogs** are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md).  Completed and In Progress work items are determined based on the state categories assigned to the workflow state as described in [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md#state-categories). 
 2. Grouping is supported through portfolio backlogs and boards, parent-child links, and tree hierarchy. Tree hierarchies are flattened when filtering is applied and reinstated when filtering is cleared.  
-3. Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
-4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
-5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
+3. **Backlogs** and **Sprint Backlogs** support reordering. However, when filtering is enabled, reordering isn't supported.
+4. **Taskboards** provides a **Group by** function based on **People** or **Stories**.  
+5. **Query Results** supports [multi-column sort](set-column-options.md#sort-on-a-column).
 6. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
 7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
@@ -817,9 +819,17 @@ To add columns or fields, see the following articles:
 
 ### Inactive functions
  
+::: moniker range="azure-devops"
+When filtering is applied, the following functions are disabled or altered. 
+- For backlogs, the add-a-backlog-item panel, reordering (stack ranking), and forecasting tools are disabled. 
+- For backlogs set to **Show Parents**, the tree hierarchy is flattened, unless you enable the **Keep hierarchy with filters** from the **View Options** menu. See [Filter your backlog and maintain the hierarchy](#keep hierarchy) provided later in this article. 
+::: moniker-end
+
+::: moniker range="< azure-devops"
 When filtering is applied, the following functions are disabled or altered. 
 - For backlogs, the add-a-backlog-item panel, reordering (stack ranking), and forecasting tools are disabled. 
 - For backlogs set to **Show Parents**, the tree hierarchy is flattened. 
+::: moniker-end
 
 ### Clear or dismiss filtering
 
@@ -828,6 +838,18 @@ To clear and dismiss filtering, choose **Clear and dismiss filtering** :::image 
 Filters remain in place until you explicitly clear them.  When you refresh your backlog, board, or other tool, or sign in from another browser, filters remain set to your previous values.
 
 Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
+
+<a id="keep hierarchy" /> 
+
+::: moniker range="azure-devops"
+
+## Filter your backlog and maintain the hierarchy 
+ 
+You can filter your backlog and maintain the hierarchy of work by choosing show **Parents** and **Keep hierarchy with filters** from the **View Options** menu. Use these options when you want to show work items assigned to one or more team members, work item types, area or iteration paths, or combination of these and keywords. The hierarchy is maintained and work items that match the filter criteria are shown in bold text.  
+
+:::image type="content" source="media/filter/keep-hierarchy-with-filters.png" alt-text="Screenshot of View options menu, Keep hierarchy with filters selected."::: 
+
+::: moniker-end
 
 
 ## Filter logic and Boolean operators

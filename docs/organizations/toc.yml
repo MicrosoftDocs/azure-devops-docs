@@ -1,19 +1,19 @@
-- name: Settings & Usage
+- name: Settings & usage
   href: index.yml
 - name: Get started
   items:
   - name: About settings
     displayName: configure, role, administrator, manage
-    href: ./settings/about-settings.md
+    href: ./settings/about-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Get started as an administrator
     displayName: add, grant, restrict, user, permission, policies, define, customize, review, update
     href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Search administrative settings
     displayName: organization, keyword, notification
-    href: ./settings/search-settings.md
+    href: ./settings/search-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Time zone settings
     displayName: timezone, organization
-    href: ./settings/timezone-settings-usage.md
+    href: ./settings/timezone-settings-usage.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   expanded: true
 - name: User preferences
   items:
@@ -30,7 +30,7 @@
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Use personal access tokens
     displayName: alternate, password, create, modify, revoke
-    href: ./accounts/use-personal-access-tokens-to-authenticate.md
+    href: ./accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: SSH public keys
     displayName: Git, repo, repository, encription, public, private, configure
     href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -115,37 +115,37 @@
   items:
   - name: Install extensions
     displayName: Marketplace, organization, features, private
-    href: ../marketplace/install-extension.md 
+    href: ../marketplace/install-extension.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Request and approve extensions
     displayName: contributor, administrator, permission, assign
-    href: ../marketplace/request-extensions.md 
+    href: ../marketplace/request-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Naming restrictions
-    href: settings/naming-restrictions.md
+    href: settings/naming-restrictions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Work tracking object limits
-    href: settings/work/object-limits.md
+    href: settings/work/object-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Notifications
-    href: /rest/api/azure/devops/notification
+    href: /rest/api/azure/devops/notification?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Service hooks
-    href: /rest/api/azure/devops/hooks
+    href: /rest/api/azure/devops/hooks?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Projects
-    href: /rest/api/azure/devops/core/projects
+    href: /rest/api/azure/devops/core/projects?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Teams
-    href: /rest/api/vsts/core/teams
+    href: /rest/api/vsts/core/teams?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Get started
-    href: ../get-started/index.yml
+    href: ../get-started/index.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Security, Permissions, & Access
-    href: security/index.yml
-  - name: Azure Boards Customization
-    href: ../reference/index.yml
-  - name: Service Hooks
-    href: ../service-hooks/overview.md
-  - name: Marketplace & Extensibility
-    href: ../marketplace-extensibility/index.yml
+    href: security/index.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Azure Boards customization
+    href: ../reference/index.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Service hooks
+    href: ../service-hooks/overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Marketplace & extensibility
+    href: ../marketplace-extensibility/index.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Get extensions for Visual Studio
     href: /visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019&preserve-view=true#install-or-uninstall-visual-studio-extensions

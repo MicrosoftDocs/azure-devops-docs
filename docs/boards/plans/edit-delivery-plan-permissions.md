@@ -2,7 +2,7 @@
 title: Manage Delivery Plan permissions in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to edit or change permissions for a Delivery Plan in Azure Boards.    
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

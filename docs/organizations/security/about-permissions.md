@@ -2,7 +2,7 @@
 title: Get started with permissions, access levels, and security groups 
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
 toc: show
 ms.topic: conceptual
@@ -34,7 +34,7 @@ When it comes to accessing an Azure DevOps feature, it's helpful to understand t
 ::: moniker range="azure-devops"
 - **[About preview features](#preview-features)**: 
 	- As new features are introduced, users can enable or disable them through **Preview features** to access them. 
-	- A small subset of new features are managed at the organization level and enabled or disabled by organization owners.  
+	- A small subset of new features is managed at the organization level and enabled or disabled by organization owners.  
 ::: moniker-end
 
  
@@ -148,6 +148,8 @@ To manage organizational access with Azure AD, refer to the following articles:
 * [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.yml) 
 
+Azure DevOps registers changes made to an Azure AD group within an hour of that change happening in Azure AD, and refresh any permissions inherited via membership to that group. In addition, any Azure DevOps user can trigger a refresh of their Azure AD membership, along with the inherited permissions in Azure DevOps by signing out and signing in back again, or by triggering a [refresh to re-evaluate your permission](request-changes-permissions.md#refresh-or-re-evaluate-your-permissions).  
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -160,6 +162,7 @@ To set up Active Directory for use with Azure DevOps Server, see the following a
 Typically, you should install Active Directory prior to installing Azure DevOps Server.
 
 ::: moniker-end
+
 
  
 <a name="validusers"></a>
@@ -305,7 +308,7 @@ To understand why a permission is inherited, you can pause over a permission set
 ::: moniker range="= azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 
@@ -358,7 +361,7 @@ A new window opens that shows the inheritance information for that permission.
 With Role-based permissions, you assign user accounts or security groups to a role, with each role assigned one or more permissions. Here are the primary roles and links to learn more.   
 
 - [Artifact or package feed security roles](../../artifacts/feeds/feed-permissions.md): Roles support various permission levels to edit and manage package feeds.   
-- [Marketplace extension Manager role](../../marketplace/how-to/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
+- [Marketplace extension Manager role](../../marketplace/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
 - [Pipeline security roles](about-security-roles.md): Several roles are used to manage library resources, project-level and collection-level pipeline resources. 
 - [Team administrator role](../settings/manage-teams.md)  Team administrators are able to manage all team tools.   
 

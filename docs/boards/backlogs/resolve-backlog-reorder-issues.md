@@ -3,7 +3,7 @@ title: Resolve Azure Boards nest, display, and reorder issues for work items
 titleSuffix: Azure Boards
 description: Learn how to resolve error messages caused by nesting and reordering issues that occur in Azure Boards.  
 ms.custom: "boards-backlogs, seodec18"  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
 ms.author: kaelli

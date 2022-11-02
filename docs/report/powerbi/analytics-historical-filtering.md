@@ -2,7 +2,7 @@
 title: Filtering on historical data from Analytics
 titleSuffix: Azure DevOps
 description: Learn how filters are applied to historical Analytics data for work tracking.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -84,5 +84,5 @@ To restate, when reporting on historical data, all filters are applied to the wo
 
 ## Related articles
 
-- [Analytics work item fields reference](analytics-fields-reference.md)
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

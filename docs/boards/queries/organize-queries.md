@@ -3,20 +3,20 @@ title: Manage and organize your queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
 description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
 ms.custom: boards-queries 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 10/05/2022
 ---
 
 
 # Manage and organize queries in Azure Boards and Azure DevOps  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -221,11 +221,15 @@ All changes you make to your query folder structure in Visual Studio appear in t
 1. To move queries into a folder, drag-and-drop a query onto the folder.  You can select multiple queries and drag them into a folder or from one folder into another folder.   
 
 * * * 
+ 
+
 
 <a id="favorite-query">  </a>
 
 
-## Add a query to the dashboard or share it with your team 
+## Save a query as a team favorite
+
+To save a shared query as a team favorite, you must be a member of the team.
 
 To add a query to a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
@@ -233,8 +237,34 @@ Share queries with your team by adding them to a folder under the **Shared Queri
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
- 
+1. To save a query as a team favorite, open :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** or :::image type="icon" source="media/22.png" border="false"::: the context menu for the query from  the **Queries** page. 
 
+1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you are a member are listed.
+
+	:::image type="content" source="media/organize-queries/save-query-team-favorite.png" alt-text="Screenshot of Save query as a team favorite.":::
+
+
+<a id="add-query-dashboard">  </a>
+
+## Add a query tile to a dashboard  
+
+A query tile displays a count of the work items in a query. You can also quickly open the query from the dashboard. You can add a query tile to a dashboard from the **Queries** page using the following steps, or by following the steps outlined in [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+ 
+> [!NOTE]   
+> You can only add a shared query to a dashboard. And, to add or edit a widget of a team dashboard, you must be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
+
+1. To add a query to a dashboard from the **Queries** page, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query.
+
+	:::image type="content" source="media/organize-queries/save-query-dashboard.png" alt-text="Screenshot of More actions menu, select Add to dashboard.":::
+
+1. From the **Select a dashboard** dialog, choose the dashboard you want to add the query to. 
+
+	:::image type="content" source="media/organize-queries/select-dashboard.png" alt-text="Screenshot of Select a dashboard dialog.":::
+
+1. Open the dashboard, and verify the query tile was added. You can configure the query tile to change the default color and to specify the color for the tile based on a conditional rule you specify.  
+
+	:::image type="content" source="media/organize-queries/configure-query-tile-widget.png" alt-text="Screenshot of Configure dialog for query tile widget.":::
+ 
 ## Related articles
 
 - [Query FAQs](query-faqs.yml)  

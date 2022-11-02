@@ -2,7 +2,7 @@
 title: Search packages
 titleSuffix: Azure Artifacts
 description: How to search for packages across all your feeds in an Azure DevOps organization.
-ms.technology: devops-collab
+ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley

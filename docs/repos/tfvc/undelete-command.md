@@ -3,10 +3,11 @@ title: Undelete Command
 titleSuffix: Azure Repos
 description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

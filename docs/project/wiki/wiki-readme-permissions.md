@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps. 
 ms.technology: devops-collab
 ms.custom: wiki, devdivchpfy22
+ms.subservice: azure-devops-wiki
 ms.assetid:  
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 07/13/2022  
+ms.date: 11/02/2022  
 monikerRange: '<= azure-devops'
 ---
 

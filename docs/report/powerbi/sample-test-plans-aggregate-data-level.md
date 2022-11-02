@@ -2,7 +2,7 @@
 title: Aggregated view for test suites sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate aggregated view for test suites.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
 ms.custom: powerbisample
@@ -235,4 +235,4 @@ Your report should look similar to the following image.
 
 - [Overview of sample reports using OData queries](./sample-odata-overview.md)
 - [Connect using Power BI and OData queries](./odataquery-connect.md)
-- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)
+- [Sample reports and quick reference index](../extend-analytics/quick-ref.md)

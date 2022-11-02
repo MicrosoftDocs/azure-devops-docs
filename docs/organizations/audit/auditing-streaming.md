@@ -2,7 +2,7 @@
 title: Create audit streaming for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Get started sending your audit data to other locations for further processing for Azure DevOps, by creating and enabling a stream.  
-ms.technology: devops-audit
+ms.subservice: azure-devops-audit
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
@@ -56,7 +56,7 @@ These permissions can be given to any users or groups you wish to have manage yo
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
 
 > [!NOTE]
-> If you don't see *Auditing* in Organization Settings, then auditing is not currently enabled for your organization. Someone in the Organization Owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You will then be able to see events on the Auditing page if you have the appropriate permissions.
+> If you don't see *Auditing* in Organization Settings, then auditing is not currently enabled for your organization. Someone in the organization owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You will then be able to see events on the Auditing page if you have the appropriate permissions.
 
 4. Go to the **Streams** tab, and then select **New stream**. 
 
