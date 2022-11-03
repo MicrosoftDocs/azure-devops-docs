@@ -48,6 +48,8 @@ In addition, you can install an extension that integrates with *ServiceNow* to h
 > [!NOTE]
 > The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
 
+# [YAML](#tab/yaml)
+
 ```YAML
 # Delay further execution of a workflow by a fixed time
 pool: server
@@ -57,6 +59,20 @@ steps:
   inputs:
     delayForMinutes: 5
 ```
+
+# [Classic](#tab/classic)
+
+1. From your pipeline definition, select the ellipsis button (...), and then select **Add an agentless job**.
+
+1. In your new agentless job, select the `+` sign to add a new task.
+
+1. Search for the **Delay** task. Select **Add** to add it to your agentless job.
+
+1. Enter the **Delay Time**  in minutes.
+
+1. Select **Save & queue** when you are done.
+
+---
 
 > [!NOTE]
 > The [delay task](../../tasks/utility/delay.md) can only be used in an [agentless job](../../process/phases.md#server-jobs).
