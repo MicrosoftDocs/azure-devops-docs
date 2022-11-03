@@ -1412,6 +1412,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/docs/marketplace/uninstall-disable-vsts-extensions.md",
+      "redirect_url": "/azure/devops/marketplace/uninstall-disable-extensions",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/marketplace/how-to/approve-tfs-extensions.md",
       "redirect_url": "/azure/devops/marketplace/request-extensions",
       "redirect_document_id": false
