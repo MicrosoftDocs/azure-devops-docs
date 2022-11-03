@@ -82,7 +82,7 @@
     },
     {
       "source_path": "docs/marketplace/uninstall-disable-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/install-extensions#uninstall-disable-extension",
+      "redirect_url": "/azure/devops/marketplace/install-extensions",
       "redirect_document_id": false
     }
   ]
