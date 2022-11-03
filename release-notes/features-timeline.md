@@ -274,7 +274,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing data-raw-source="[Auditing for checks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing)">Auditing for checks</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#audit-events-for-changes-to-approvals data-raw-source="[Auditing for checks](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#audit-events-for-changes-to-approvals)">Auditing for checks</a></td>
          <td>Pipelines</td>
          <td>2022 Q4</td>
          <td>Future</td>
