@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.author: vijayma
 author: vijayma
-ms.date: 04/28/2022
+ms.date: 10/03/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -27,7 +27,7 @@ The build agent must have the following capability:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/MavenV3.md)]
+[!INCLUDE [temp](../includes/yaml/MavenV4.md)]
 
 ::: moniker-end
 
@@ -103,6 +103,10 @@ The build agent must have the following capability:
        <td>(Optional) Fail the build if code coverage did not produce any results to publish. <br/>Default value: false <br/>Argument aliases: <code>codeCoverageFailIfEmpty</code></td>
     </tr>
     <tr>
+       <td><code>restoreOriginalPomXml</code><br/>"Restore original pom.xml after task execution</td>
+       <td>(Optional) Code coverage modifies pom.xml to produce results. Use this option if you need to keep original pom.xml. <br/>Default value: false <br/>Argument aliases: <code>codeCoverageRestoreOriginalPomXml</code></td>
+    </tr>
+    <tr>
        <td><code>javaHomeSelection</code><br/>Set JAVA_HOME by</td>
        <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. Please note that if you already have java installed on agent machine - you can specify it by setting up 'javaHomeOption' as 'path', and 'jdkDirectory' - as a path to jdk installed directory. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
     </tr>
@@ -147,6 +151,10 @@ The build agent must have the following capability:
        <td>(Required) This option has changed from version 1 of the Maven task to use the <a href="https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube" data-raw-source="[SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube)">SonarQube</a> and <a href="https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud" data-raw-source="[SonarCloud](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud)">SonarCloud</a> marketplace extensions.  Enable this option to run <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html" data-raw-source="[SonarQube or SonarCloud analysis](https://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html)">SonarQube or SonarCloud analysis</a> after executing goals in the <strong>Goals</strong> field. The <strong>install</strong> or <strong>package</strong> goal should run first. You must also add a <strong>Prepare Analysis Configuration</strong> task from one of the extensions to the build pipeline before this Maven task. <br/>Default value: false <br/>Argument aliases: <code>sonarQubeRunAnalysis</code></td>
     </tr>
     <tr>
+       <td><code>isJacocoCoverageReportXML</code><br/>Use XML Jacoco reports for SonarQube analysis</td>
+       <td>(Optional) Use XML Jacoco reports for SonarQube analysis. [More info](https://docs.sonarqube.org/latest/analysis/coverage/). <br/>Default value: false</td>
+    </tr>
+    <tr>
        <td><code>sqMavenPluginVersionChoice</code><>SonarQube scanner for Maven version</td>
        <td>(Required) The SonarQube Maven plugin version to use. You can use latest version, or rely on the version in your pom.xml. <br/>Default value: latest</td>
     </tr>
@@ -161,6 +169,22 @@ The build agent must have the following capability:
     <tr>
        <td><code>findbugsAnalysisEnabled</code><br/>Run FindBugs</td>
        <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code></td>
+    </tr>
+    <tr>
+       <td><code>spotBugsAnalysisEnabled</code><br/>Run SpotBugs analysis</td>
+       <td>(Optional) Enable this option to run spotBugs code analysis plugin. [More info](https://spotbugs.github.io/spotbugs-maven-plugin). <br/>Default value: false <br/>Argument aliases: <code>spotBugsRunAnalysis</code></td>
+    </tr>
+    <tr>
+       <td><code>spotBugsMavenPluginVersion</code><br/>SpotBugs version number</td>
+       <td>(Optional) Refer to https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-maven-plugin for all available versions. <br/>Default value: 4.5.3.0 <br/>Argument aliases: <code>spotBugsVersion</code></td>
+    </tr>
+    <tr>
+       <td><code>spotBugsGoal</code><br/>The goal for the spotbugs plugin</td>
+       <td>(Optional) Select the goal of the plugin. Refer https://spotbugs.readthedocs.io/en/stable/maven.html#goals-of-spotbugs-maven-plugin to for more detailed description. <br/>Default value: spotbugs <br/>Argument aliases: <code>spotBugsVersion</code></td>
+    </tr>
+    <tr>
+       <td><code>spotBugsFailWhenBugsFound</code><br/>Fail when bugs are found with spotbugs:check</td>
+       <td>(Optional) Fail when the bugs found when check goal specified. Refers to https://spotbugs.github.io/spotbugs-maven-plugin/check-mojo.html#failonerror for more detailed description. <br/>Default value: true <br/>Argument aliases: <code>failWhenBugsFound sbFailWhenBugsFound</code></td>
     </tr>
 </table>
 

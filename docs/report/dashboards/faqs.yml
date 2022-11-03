@@ -80,10 +80,10 @@ sections:
 
       - question: Can I copy a dashboard? 
         answer: |
-          ::: moniker range="azure-devops"
-          **Yes**. You can copy a project or team dashboard to another dashboard, project or team. To learn how, see [Copy a dashboard](copy-dashboard.md). 
+          ::: moniker range=">= azure-devops-2022"
+          **Yes**. You can copy a project or team dashboard to another dashboard, project or team. To learn how, see [Copy a dashboard](copy-dashboard.md). If you copy a dashboard to a team dashboard, you must be a member of the team to edit it. Also, when you copy a dashboard with widgets that reference queries, you must choose a **Shared Queries** folder where you have permissions to contribute.
           ::: moniker-end
-          ::: moniker range="< azure-devops"
+          ::: moniker range="< azure-devops-2022"
           **No**. This feature is currently available for Azure DevOps Services only at this time. It should be available in later versions of Azure DevOps Server in the future.      
           ::: moniker-end
 

@@ -581,7 +581,9 @@ steps:
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
-::moniker-end
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## Each keyword
 

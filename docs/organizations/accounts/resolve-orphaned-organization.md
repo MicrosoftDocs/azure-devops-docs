@@ -1,5 +1,5 @@
 ---
-title: Resolve inactive organization owner and project collection administrator
+title: Assign an owner to an orphaned organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign a new owner to an organization when the current owner's inactive.
@@ -8,25 +8,25 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/30/2021
+ms.date: 10/24/2022
 monikerRange: 'azure-devops'
 ---
 
-# Assign owner to orphaned organization
+# Assign an owner to an orphaned organization
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-When the Owner and all Project Collection Administrators are inactive, the organization is considered orphaned. An orphaned organization doesn't have an administrator, so there's no way of transferring administrator rights to another user.
+When the organization owner and all project collection administrators are inactive, the organization is considered orphaned. An orphaned organization doesn't have an administrator, so there's no way of transferring administrator rights to another user.
 
-For organizations connected to Azure AD, if the Owner and all other Project Collection Administrators are inactive in Azure AD, you can transfer ownership to another user.
+But, organizations that are connected to Azure AD can transfer ownership to an active user.
 
 > [!NOTE]
 > If your organization isn't considered orphaned and you want to change the owner, then see [Change organization owner](change-organization-ownership.md).
 
 ## Prerequisites
 
-- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. If you are using [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure?msclkid=303229fdc6c111ecaf0f666b2dd9cd6f) then the Azure DevOps Administrator must be of type [Active](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?msclkid=5cdc55f5c6c011eca737e344cbe17b42). It isn't a requirement to be a Project Collection Administrator.
-- The Azure DevOps Administrator role can only claim ownership of organizations when the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD
+- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. If you're using [Privileged Identity Management,](/azure/active-directory/privileged-identity-management/pim-configure?msclkid=303229fdc6c111ecaf0f666b2dd9cd6f) then the Azure DevOps Administrator must be of type [Active](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?msclkid=5cdc55f5c6c011eca737e344cbe17b42). It isn't a requirement to be a Project Collection Administrator.
+- The Azure DevOps Administrator role can only claim ownership of organizations when the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD.
 
 ### Find your Azure DevOps Administrator
 
@@ -49,7 +49,7 @@ When your Azure AD tenant hasn't assigned an Azure DevOps Administrator, complet
 
 ## When your Azure DevOps Administrator is a member of the target organization
 
-Complete the following steps when your Azure DevOps Administrator in Azure AD is a member of the target Azure DevOps organization.
+Complete the following steps when your Azure DevOps Administrator in Azure AD *is* a member of the target Azure DevOps organization.
 
 1. As the Azure DevOps Administrator, sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -63,11 +63,11 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
     ![Change the organization owner](media/change-organization-ownership/change-organization-owner.png)
 
-A notification of the ownership transfer with your provided justification is sent to all Azure DevOps Administrators in your Azure AD.
+A notification of the ownership transfer with your provided justification gets sent to all Azure DevOps Administrators in your Azure AD.
 
 ## When your Azure DevOps Administrator isn't a member of the target organization
 
-Complete the following steps when your Azure DevOps Administrator in Azure AD isn't a member of the target Azure DevOps organization.
+Complete the following steps when your Azure DevOps Administrator in Azure AD *isn't* a member of the target Azure DevOps organization.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) using the credentials granted to the Azure DevOps Administrator role in Azure AD.
     An error page appears where you can Claim Ownership.

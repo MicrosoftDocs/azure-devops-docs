@@ -8,7 +8,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/13/2022  
+ms.date: 10/24/2022  
 ---
 
 # Markdown syntax for wikis
@@ -53,18 +53,22 @@ Consistency is maintained in the formatting in TOC.
 Mermaid lets you create diagrams and visualizations using text and code. 
 
 > [!NOTE]
-> Not all syntax in the content linked below for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
+> - Not all syntax in the content linked below for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
+> - Mermaid isn't supported in the Internet Explorer browser.
+> - If you experience an "Unsupported diagram type", the functionality may not be yet available in your org due to usual deployment scheme.
 
 Wiki supports the following Mermaid diagram types:
 
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
 - [Gantt charts](https://mermaid-js.github.io/mermaid/#/gantt)
 - [Flowcharts](http://mermaid-js.github.io/mermaid/#/flowchart)
+- [Class diagram](https://mermaid-js.github.io/mermaid/#/classDiagram)
+- [State diagram](https://mermaid-js.github.io/mermaid/#/stateDiagram)
+- [User journey](https://mermaid-js.github.io/mermaid/#/user-journey)
+- [Pie chart](https://mermaid-js.github.io/mermaid/#/pie)
+- [Requirements diagram](https://mermaid-js.github.io/mermaid/#/requirementDiagram)
 
 For more information, see the [Mermaid release notes](https://github.com/mermaid-js/mermaid/releases) and [active requests in the Developer Community](https://developercommunity.visualstudio.com/search?space=21&q=mermaid&stateGroup=active).
-
-> [!NOTE]
-> Mermaid isn't supported in the Internet Explorer browser.
 
 To add a Mermaid diagram to a wiki page, use the following syntax:
 
@@ -127,6 +131,125 @@ graph LR;
 ```
 
 :::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="image showing the Mermaid Live Editor with code and preview for flowchart.":::
+
+### Class diagram example
+
+The class diagram is main part of object-oriented modeling. The diagram describes objects, their attributes, methods, and inheritance between them. 
+
+```
+:::mermaid
+classDiagram
+    Creature <|-- Superman
+    Creature <|-- Vampire
+    Creature <|-- Diavolo
+    Creature: +int size
+    Creature: +int weight
+    Creature: +isBenign()
+    Creature: +power()
+    class Superman{
+        +String currentName
+        +fly()
+        +heal()
+    }
+    class Vampire{
+        -int age
+        -canBite()
+    }
+    class Diavolo{
+        +bool is_serving
+        +heat()
+    }
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-class-diagram.png" alt-text="image showing the Mermaid Live Editor with code and preview for Class diagram.":::
+
+### State diagram example
+
+The state diagram is used to describe how the system states can change from one to another. 
+
+```
+:::mermaid
+stateDiagram-v2
+    [*] --> Active
+    state Active {
+        [*] --> NumLockOff
+        NumLockOff --> NumLockOn : EvNumLockPressed
+        NumLockOn --> NumLockOff : EvNumLockPressed
+        --
+        [*] --> CapsLockOff
+        CapsLockOff --> CapsLockOn : EvCapsLockPressed
+        CapsLockOn --> CapsLockOff : EvCapsLockPressed
+        --
+        [*] --> ScrollLockOff
+        ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+        ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+    }
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-state-diagram.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for State diagram." lightbox="media/wiki/wiki-mermaid-state-diagram.png" :::
+
+### User journey example
+
+The user journey diagram describes what steps are required to complete certain higher level action or task. 
+
+```
+:::mermaid
+journey
+    title Home office day
+    section Go to work
+      Wake up: 1: Me, Dog
+      Take shower: 2: Me
+      Go downstairs: 3: Me, Dog
+      Make coffee: 4: Me
+      Have a breakfast: 5: Me, Dog
+      Go upstairs: 3: Me, Dog
+      Do work: 1: Me, Dog
+    section Go home
+      Go downstairs: 3: Me, Dog
+      Sit down: 5: Me
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-user-journey.png" alt-text="Screenshot of rendering of User Journey mermaid diagram.":::
+
+### Pie chart example
+
+The pie chart diagram is used to visualize the percentages in a circled graph. 
+
+```
+:::mermaid
+pie title Fishermans in countries
+    "Norway" : 684
+    "Sweeden" : 234
+    "Switzerland" : 10
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-pie-chart.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for Pie chart." lightbox="media/wiki/wiki-mermaid-pie-chart.png":::
+
+### Requirements diagram example
+
+The requirements diagram visualize the requirements and connections between those.
+
+```
+:::mermaid
+requirementDiagram
+    requirement development_req {
+    id: 1
+    text: requirements spec.
+    risk: medium
+    verifymethod: test
+    }
+    element test_suite {
+    type: manual test
+    }
+    test_suite - verifies -> development_req
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-requirements-diagram.png" alt-text="Screenshot showing the Mermaid Live Editor with code and preview for Requirements diagram." lightbox="media/wiki/wiki-mermaid-requirements-diagram.png":::
 
 ::: moniker-end
 

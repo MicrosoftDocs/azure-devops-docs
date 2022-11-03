@@ -283,7 +283,7 @@ Any item assigned to a sprint that corresponds to the current iteration path for
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or **@CurrentIteration +/- _n_** macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the @CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
+> ![Query filter using the CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
 
 > [!TIP]  
 > If the **@CurrentIteration** macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
@@ -300,7 +300,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 Before creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the @CurrentIteration macro](media/query-date-iteration/at-current-no-team-specified.png)  
+> ![Query filter using the CurrentIteration macro](media/query-date-iteration/at-current-no-team-specified.png)  
 
 ::: moniker-end
 

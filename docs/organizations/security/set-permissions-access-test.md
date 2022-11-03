@@ -130,7 +130,7 @@ As a project admin you can grant a user, team group, or other group you've creat
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 In this example, we grant members assigned to the Team Admin group permissions to create and view test runs and manage test configurations and environments.   
 
@@ -169,7 +169,7 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for Organization Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
  
 
 #### [Preview page](#tab/preview-page) 

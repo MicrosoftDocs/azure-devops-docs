@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 07/13/2022
+ms.date: 10/26/2022
 ---
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
@@ -129,9 +129,10 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)  
       - [Change work item type](../backlogs/move-change-type.md#change-the-work-item-type)  
       - [Copy or clone a work item](../backlogs/copy-clone-work-items.md)  
-      - [Copy work item URL](work-item-form-controls.md#copy-the-url)    
+      - [Copy work item URL](work-item-form-controls.md#copy-the-url)  
+      - [Copy URL of attachment](../queries/share-plans.md#copy-url-attached-file)       
       - [Copy list of work items](../backlogs/copy-list.md)  
-      - [Create a branch ](../backlogs/connect-work-items-to-git-dev-ops.md)  
+      - [Create a branch](../backlogs/connect-work-items-to-git-dev-ops.md)  
       - [Create a work tracking chart](../../report/dashboards/charts.md)  
       <br/>
       ::: moniker range=">= azure-devops-2020"
@@ -199,11 +200,11 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [View work items (mobile)](../../project/navigation/mobile-work.md)  
       - [View work items (web)](view-add-work-items.md)  
       - [View work assigned to me](view-add-work-items.md)  
-      - [View work I&#39;m following](view-add-work-items.md)  
-      - [View work I&#39;ve recently viewed or updated](view-add-work-items.md)  
+      - [View work I'm following](view-add-work-items.md)  
+      - [View work I've recently viewed or updated](view-add-work-items.md)  
       - [View work recently completed](view-add-work-items.md)  
       - [View work recently created](view-add-work-items.md)  
-      - [View work where I&#39;m mentioned](view-add-work-items.md)  
+      - [View work where I'm mentioned](view-add-work-items.md)  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020"
       - [View history](../queries/history-and-auditing.md#view-history)  
