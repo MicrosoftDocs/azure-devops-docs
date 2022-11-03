@@ -50,15 +50,17 @@ In addition, you can install an extension that integrates with *ServiceNow* to h
 
 ```YAML
 # Delay further execution of a workflow by a fixed time
-jobs:
-- job: RunsOnServer
-  pool: Server
-  steps:
-  - task: Delay@1
-    inputs:
-      delayForMinutes: '0'
+pool: server
+steps:
+- task: Delay@1
+  displayName: 'Delay by 5 minutes'
+  inputs:
+    delayForMinutes: 5
 ```
 
+> [!NOTE]
+> The [delay task](../../tasks/utility/delay.md) can only be used in an [agentless job](../../process/phases.md#server-jobs).
+ 
 ## Related articles
 
 - [Release deployment control using approvals](approvals.md)
