@@ -72,6 +72,8 @@ steps:
 
 1. Select **Save & queue** when you are done.
 
+:::image type="content" source="media/delay-task-classic.png" alt-text="A screenshot showing how to add a delay task to an agentless job.":::
+
 ---
 
 > [!NOTE]
