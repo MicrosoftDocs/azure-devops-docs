@@ -26,14 +26,6 @@ If you don't see the policy section in Azure DevOps, then you aren't an administ
 
 ![Check Azure AD roles and administrators](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
 
-> [!NOTE]
-> Currently, an Azure DevOps Administrator can restrict new organization creation only for individual users, and not for groups. 
-
-You can also check your role using the Azure AD PowerShell module.
-![Azure AD PowerShell to enable policy](media/azure-ad-tenant-policy/azure-ad-powershell.png)
-
-For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-
 ## Turn on the policy
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
