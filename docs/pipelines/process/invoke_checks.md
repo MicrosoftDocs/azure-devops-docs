@@ -24,11 +24,11 @@ In asynchronous mode, Azure DevOps makes a call to the Azure Function / REST API
 
 ### Recommended Implementation of Asynchronous Checks
 
-The asynchronous mode has two communication steps:
+The recommended asynchronous mode has two communication steps:
 1. **Deliver the check payload**. For this, Azure Pipelines makes an HTTP call to your Azure Function / REST API. The purpose of the call is to deliver the check payload, but _not_ to receive a decision on the spot. Your function should just acknowledge receipt of the information.
-1. **Receive access decision through a callback**. Your check should reach a decision asynchronously, after acknowledging check payload receipt, and communicate it to Azure Pipelines. 
+1. **Receive access decision through a callback**. Your check should reach a decision asynchronously, _after_ acknowledging check payload receipt, and communicate it to Azure Pipelines. The check's decision is final. 
 
-A check's decision is final. That is, if a check passes, then the pipeline is allowed access to a protected resource and stage deployment can proceed. If a check fails, then the stage fails. If there are multiple checks in a single stage, all need to pass before access and stage deployment are allowed, but a single failure is enough to fail the stage.
+If a check passes, then the pipeline is allowed access to a protected resource and stage deployment can proceed. If a check fails, then the stage fails. If there are multiple checks in a single stage, all need to pass before access and stage deployment are allowed, but a single failure is enough to fail the stage.
 
 The recommended implementation of the async mode for a single Azure Function check is depicted in the following diagram.
 
