@@ -715,7 +715,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Install and manage Marketplace extensions](../../marketplace/install-extension.md)
       - [Approve extensions](../../marketplace/request-extensions.md)
       - [Grant permissions to manage extensions](../../marketplace/grant-permissions.md)
-      - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
+      - [Uninstall or disable extensions](../../marketplace/install-extension.md#uninstall-an-extension)
    :::column-end:::
    :::column span="2":::
       An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, and so on; build and release flows; code testing and tracking; and collaboration among team members.
