@@ -185,7 +185,7 @@ The Audit logs will contain an entry similar to the following.
 In addition, it will show up in the Audit UI.
 
 > [!div class="mx-imgBorder"]
-> ![Log entry in Audit UI](../../media/212-pipelines-01.png)
+> ![Log entry in Audit UI](../../media/212-pipelines-02.png)
 
 ### Task library exposes Agent hosting model
 
