@@ -24,39 +24,41 @@ landingContent:
       - linkListType: concept
         links:
           - text: About Azure DevOps Marketplace
-            url: /azure/devops/extend/overview
-      - linkListType: quickstart
+            url: ../extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+      - linkListType: how-to-guide
         links:
           - text: Request extensions
-            url: ../marketplace/request-extensions.md
+            url: ../marketplace/request-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
           - text: Install extensions
-            url: ../marketplace/install-extension.md
+            url: ../marketplace/install-extension.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+          - text: Manage extension permissions
+            url: ../marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - title: Develop extensions
     linkLists:
       - linkListType: quickstart
         links:
           - text: Develop a web extension
-            url: ../extend/get-started/node.md
+            url: ../extend/get-started/node.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
           - text: Extension samples
-            url: ../extend/develop/samples-overview.md
+            url: ../extend/develop/samples-overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
           - text: Extensibility points
-            url: ../extend/reference/targets/overview.md
+            url: ../extend/reference/targets/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
       - linkListType: tutorial
         links:
           - text: Create a custom pipelines task
-            url: ../extend/develop/add-build-task.md
+            url: ../extend/develop/add-build-task.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - title: Integrate applications
     linkLists:
       - linkListType: overview
         links:
           - text: Integration overview
-            url: ../integrate/index.md
+            url: ../integrate/index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
       - linkListType: how-to-guide
         links:
           - text: Authorize access to REST APIs with OAuth 2.0
-            url: ../integrate/get-started/authentication/oauth.md
+            url: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
           - text: Authenticate access with personal access tokens
-            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
+            url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
       - linkListType: reference
         links:
           - text: .NET client libraries
