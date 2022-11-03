@@ -135,7 +135,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 ## Group-level and page-level contributions
 
-When you add group-level and page-level contributions, they are automatically added to all WITs defined for all processes, both inherited and custom. You can choose to [hide these contributions from appearing on the form](customize-process-field.md#show-hide-field) for a specific WIT, or move it within the form from it's default location. 
+When you add group-level and page-level contributions, they are automatically added to all WITs defined for all processes, both inherited and custom. You can choose to [hide these contributions from appearing on the form](customize-process-field.md#show-hide-field) for a specific WIT, or move it within the form from the default location. 
 
 If you've installed a group or page contribution, refresh your browser, and then open a work item to view the placement of the contribution on the form. To move or hide the contribution, [follow the guidance provided for the Layout tab](customize-process-form.md).  
 
