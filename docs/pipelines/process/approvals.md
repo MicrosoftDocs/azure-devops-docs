@@ -86,8 +86,9 @@ Given the high flexibility, Azure functions provide a great way to author your o
 The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
 
 > [!NOTE]
-> User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
+[Read more about the recommended way to use Invoke Azure Function checks](invoke_checks.md).
 
 ## Invoke REST API
 
@@ -96,7 +97,9 @@ Invoke REST API check enables you to integrate with any of your existing service
 The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](../tasks/utility/http-rest-api.md) for more details.
 
 > [!NOTE]
-> User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
+
+[Read more about the recommended way to use Invoke REST API checks](invoke_checks.md).
 
 ## Query Azure Monitor Alerts
 Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
