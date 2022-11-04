@@ -20,7 +20,7 @@ When you're viewing a public project, you're able to browse and download the cod
 > [!NOTE]
 > By default you have read-only access to the code in the repository. To perform operations such as forking, creating branches, and making pull requests, you must be [invited to contribute](invite-users-public.md).
 
-[!INCLUDE [temp](includes/anon-user.md)]
+[!INCLUDE [temp](../projects/includes/anon-user.md)]
 
 ## Open Repos > Files or Code > Files
 
