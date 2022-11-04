@@ -113,4 +113,4 @@ landingContent:
           - text: Invite users to your public project
             url: ../organizations/public/invite-users-public.md
           - text: Make a private project public
-            url: ../organizations/public/make-project-public.md
+            url: ../organizations/projects/make-project-public.md

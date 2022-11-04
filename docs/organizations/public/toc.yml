@@ -1,13 +1,11 @@
 - name: What is a public project?
-  href: about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  href: about-projects.md
 - name: Get started
   items:
   - name: Create a public project
     href: create-public-project.md
   - name: Invite users to contribute
     href: invite-users-public.md
-  - name: Make a project public
-    href: make-project-public.md
   - name: Clone a repository
     href: clone-git-repo-public.md
   - name: Build OSS repositories

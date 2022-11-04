@@ -143,7 +143,7 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
       Analytics and dashboards
    :::column-end:::
    :::column span="2":::
-       Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
+       Consider building a dashboard intended for the public. Some [widgets are unavailable](about-projects.md#dashboard-widget-support) to non-members, so don't rely on these.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -200,7 +200,7 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 #### Analytics and dashboards
 
-* Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
+* Consider building a dashboard intended for the public. Some [widgets are unavailable](about-projects.md#dashboard-widget-support) to non-members, so don't rely on these.
 
 #### Artifacts
 
@@ -322,5 +322,5 @@ Before you can change a private project to a public project, you must enable ano
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Download code](browse-code-public.md)
+> [Code with Git](../../user-guide/code-with-git.md)
 
