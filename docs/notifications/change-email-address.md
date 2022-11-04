@@ -40,7 +40,7 @@ You can change your preferred email address for notifications from your organiza
 
    ![Open profile user settings](media/open-profile-newnav.png)
 
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+2. From the **About** page, you can change your profile picture, change your display name, contact information, and country/region. Select **Save**.
 
    ![Edit the About page, current view.](../organizations/settings/media/edit-about-page.png)
 
