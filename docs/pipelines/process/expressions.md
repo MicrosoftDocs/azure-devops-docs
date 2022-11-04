@@ -524,7 +524,7 @@ You can use `if`, `elseif`, and `else` clauses to conditionally assign variable 
 ::: moniker range="< azure-devops-2022"
 You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
 
-The `elseif` and `else` clauses are are available starting in Azure DevOps 2022 and are not available for Azure DevOps Server 2020.
+The `elseif` and `else` clauses are are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
 
 ::: moniker-end
 
