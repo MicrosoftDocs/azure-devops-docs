@@ -20,30 +20,19 @@ Using Analytics for Azure DevOps, you can construct basic and filtered queries t
 
 This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries is this article are focused on retrieving work item data, however, the principles apply for querying other entity sets.
 
-In this article you'll learn the following:  
+In this article you'll learn how to define queries that return the following data:  
 
 > [!div class="checklist"]  
-> * How to construct an Analytics OData query for the cloud or on-premises
-> * How to query Analytics metadata
-> * How to query Analytics OData for an entity set 
-> * Which query options are supported and the recommended sequence
-> * When server-side paging is enforced 
-
-
-Return a count of items with no other data
-Return a count of items along with selected data 
-
-Return a list of Areas defined for a project 
-Query a single entity set
-Specify a filter based on work item state  
-Select specific columns or fields to return
-Return user information 
-Query a date range
-Filter using related entities
-Filter by a navigation property
-Return data from related entities
-Nest expand statements
-
+> - Count of items (no other data)
+> - Count of items and data
+> - Selected columns or fields
+> - Filtered data  
+> - Return data for Identity, Area Path, and Iteration Path fields
+> - Filter by a navigation property
+> - Query a date range
+> - Nest expand statements
+> - Sort results, orderby option
+ 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -51,7 +40,7 @@ Nest expand statements
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 > [!NOTE]  
-> In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
+> In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md). We encourage you to adjust the queries provided for your organization and project to get familiar with querying OData using your browser. 
 
 
 <a id="return-count-items" />
@@ -224,25 +213,29 @@ For example, the following query specifies to return work items of type *User St
 
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
 
-<a id="date-range-queries" /> 
 
-## Query a date range
+<a id="return-identity-fields" />
 
-The following example returns work items whose **Changed Date** is greater than equal to January 1, 2021. 
-
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
-> ```
-
-
-The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30, 2021.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```JSON
-> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
-> ```
+## Return data for Identity, Area Path, and Iteration Path fields
  
+Select properties are associated with navigational properties and aren't directly accessible using the `$select` statement. You must use an `$expand` statement to return the data of interest. These properties are often associated with several properties of their own. For example, with Identity fields, you can specify to return the user name or the user email. 
+
+The following table provides examples of how to expand several of these properties. 
+
+| Type fields | Referenced property | Example clauses to include |
+|-------------|-------------------|-------------------|
+| DateTime  | `DateSK`      | `$expand=CreatedDate($select=Date)` or<br/>`$expand=CreatedDate($select=WeekStartingDate)`  | 
+| Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
+| Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
+| Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
+| Project	| `ProjectSK`   | `$expand=AssignedTo($select=ProjectName)` | 
+| Team 	    | `TeamSK`      | `$expand=AssignedTo($select=TeamName)` | 
+
+To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
+
+`$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
+
+
 
 <a id="filter-navigation" />
 
@@ -355,7 +348,7 @@ To return less data, add a `$select` statement against the iteration as well:
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration($select=Name,IterationPath)`
 
-It returns the following JSON:
+It then returns the following data.
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -377,27 +370,26 @@ It returns the following JSON:
 > ```
 
 
-<a id="return-identity-fields" />
 
-## Return data for Identity, Area Path, and Iteration Path fields
+<a id="date-range-queries" /> 
+
+## Query a date range
+
+The following example returns work items whose **Changed Date** is greater than equal to January 1, 2021. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
+> ```
+
+
+The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30, 2021.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
+> ```
  
-Select properties are associated with navigational properties and aren't directly accessible using the `$select` statement. You must use an `$expand` statement to return the data of interest. These properties are often associated with several properties of their own. For example, with Identity fields, you can specify to return the user name or the user email. 
-
-The following table provides examples of how to expand several of these properties. 
-
-| Type fields | Referenced property | Example clauses to include |
-|-------------|-------------------|-------------------|
-| DateTime  | `DateSK`      | `$expand=CreatedDate($select=Date)` or<br/>`$expand=CreatedDate($select=WeekStartingDate)`  | 
-| Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
-| Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
-| Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
-| Project	| `ProjectSK`   | `$expand=AssignedTo($select=ProjectName)` | 
-| Team 	    | `TeamSK`      | `$expand=AssignedTo($select=TeamName)` | 
-
-To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
-
-`$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
-
 
 ## Nest expand statements
 

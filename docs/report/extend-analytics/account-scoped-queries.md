@@ -1,7 +1,7 @@
 ---
-title: Organization and project-scoped queries
+title: Project and organization or collection-scoped OData queries
 titleSuffix: Azure DevOps 
-description: Learn how to query OData Analytics for an organization or at the project-level in Azure DevOps.
+description: Learn how to query OData Analytics for a project or an organization or collection in Azure DevOps.
 ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
@@ -17,13 +17,11 @@ ms.date: 09/30/2021
 ::: moniker range="azure-devops"
 Using Analytics for Azure DevOps, you can construct project or organization-scoped queries to return work items or other data of interest. You can run these queries directly in your browser or within Power BI. 
 
-
 Project-scope queries help answer questions about a single project whereas organization-scope queries allow you to answer questions that cross project boundaries. Organization-scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
 ::: moniker-end
 
-::: moniker range< "azure-devops"
+::: moniker range"< azure-devops"
 Using Analytics for Azure DevOps, you can construct project or collection-scoped queries to return work items or other data of interest. You can run these queries directly in your browser or within Power BI. 
-
 
 Project-scope queries help answer questions about a single project whereas collection-scope queries allow you to answer questions that cross project boundaries. Collection-scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
 
@@ -33,7 +31,7 @@ Project-scope queries help answer questions about a single project whereas colle
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you don't have access to all projects in an organization, it is recommended that you apply a project filter to all of your queries. When pulling data into client tools such as Power BI or Excel, using the project path syntax is the best way to ensure that all your data is constrained by the given project. We recommend you use organization-scoped or collection-scoped queries only when you need to report on two or more projects.
 
 
@@ -45,32 +43,30 @@ You construct a query by entering the OData URL into a [supported web browser](/
 
 The base URL for a project-level OData query is as shown in the following syntax. 
 
-::: moniker range="azure-devops"
+
+# [**Cloud** (Azure DevOps Services](#tab/cloud)
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ```
 In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your names of your organization and project that you want to query. 
 
-::: moniker-end
-
-
-::: moniker range< "azure-devops"
+# [**On-premises** (Azure DevOps Server](#tab/on-premises)
 
 ```OData
 https://{servername}:{port}/tfs/{CollectionName}/{ProjectName}/_odata/{version}/
 ```
-
-> [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
 
 In the examples provided, make the following replacements:
 - `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
 - `{CollectionName}` with your project collection name (default is `DefaultCollection`) 
 - `{ProjectName}` with the name of the project that you want to query. 
 
-::: moniker-end
+***
 
+
+> [!NOTE]
+> The remaining examples provided in this article are based on a Azure DevOps Services URL. You will need to substitute in your Azure DevOps Server URL to exercise the examples.  
 
 
 <a id="work-item-count" />
@@ -225,7 +221,7 @@ Without the other filter, the request will fail if the parent of any work item r
 
 Analytics has a few more restrictions on query syntax related to project level security.
 
-The `any` or `all` filters apply to the base Entity on an `$expand`.  For filters based on a Project, we explicitly ignore the filter when using an `$expand`:
+The `any` or `all` filters apply to the base entity on an `$expand`.  For filters based on a project, we explicitly ignore the filter when using an `$expand`:
 
 For example, the following query:
 
@@ -260,7 +256,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq '{ProjectName}')
 ```
 
-Analytics doesn't support any cross-level reference for projects using $it alias. As an example, the following query references the root work item's ProjectName using $it alias, which isn't supported:
+Analytics doesn't support any cross-level reference for projects using the `$it` clause. As an example, the following query references the root work item's `ProjectName` using `$it` alias, which isn't supported:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
