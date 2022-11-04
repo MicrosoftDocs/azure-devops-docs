@@ -197,9 +197,7 @@ Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't 
 
 The following dashboard widgets won't display any useful information for non-members.
 
-[!INCLUDE [temp](includes/unavailable-widgets.md)]  
-
-To add or modify code, work items, pipelines, or more, [add the user as a member of the project](invite-users-public.md).
+[!INCLUDE [temp](includes/unavailable-widgets.md)]
 
 ::: moniker-end
 

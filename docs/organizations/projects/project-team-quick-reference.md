@@ -164,7 +164,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project-level permissions](../security/change-project-level-permissions.md) 
-- [Set project visibility](../public/make-project-public.md)  
+- [Set project visibility](../projects/make-project-public.md)  
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::

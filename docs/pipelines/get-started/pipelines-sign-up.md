@@ -155,7 +155,7 @@ You can rename your project or change its visibility. To learn more about managi
 
 - [Manage projects](../../organizations/projects/about-projects.md)
 - [Rename a project](../../organizations/projects/rename-project.md)
-- [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
+- [Change the project visibility, public or private](../../organizations/projects/make-project-public.md)
 
 ## Next steps  
 

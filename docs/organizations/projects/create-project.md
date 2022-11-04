@@ -48,7 +48,7 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]  
-> To create a public project or to make a private project public, see [Create a public project in your organization](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). You must enable additional policy settings to work with public projects.
+> To create a public project or to make a private project public, see [Create a public project in your organization](../public/create-public-project.md) or [Change the project visibility, public or private](../projects/make-project-public.md). You must enable additional policy settings to work with public projects.
 
 ::: moniker-end
 
