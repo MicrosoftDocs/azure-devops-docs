@@ -87,7 +87,7 @@ steps:
 
 In this example, the task succeeded when the response matched our `successCriteria`: *eq(root[''count''], ''1425'')*.
 
-:::image type="content" source="invoke-rest-api-success.png" alt-text="A screenshot showing the pipeline status.":::
+:::image type="content" source="media/invoke-rest-api-success.png" alt-text="A screenshot showing the pipeline status.":::
 
 ---
 
