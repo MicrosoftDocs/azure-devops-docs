@@ -285,7 +285,7 @@ Let us look at an example. Imagine your YAML pipeline has a stage that uses a Se
 1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks_timeline.png" alt-text="The timeline of the checks' executions.":::
+:::image type="content" source="media/checks/checks_timeline.png" alt-text="The timeline of an synchronous and a synchronous checks' executions.":::
 
 In this execution:
 - Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
@@ -297,7 +297,7 @@ Let us look at another example, involving two synchronous checks. Assume your YA
 1. A synchronous check, named _Sync Check 2_, for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks_timeline_sync.png" alt-text="The timeline of the checks' executions.":::
+:::image type="content" source="media/checks/checks_timeline_sync.png" alt-text="The timeline of two synchronous checks' executions.":::
 
 In this execution:
 - Both checks, _Sync Check 1_ and _Sync Check 2_, are invoked at the same time. _Sync Check 1_ passes, but it will be retried, because _Sync Check 2_ fails. 
