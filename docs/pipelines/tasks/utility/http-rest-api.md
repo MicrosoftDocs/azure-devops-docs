@@ -71,6 +71,22 @@ steps:
     successCriteria: 'eq(root[''count''], ''1425'')'
 ```
 
+# [Classic](#tab/classic)
+
+1. From your pipeline definition, select the ellipsis button (...), and then select **Add an agentless job**.
+
+1. In your new agentless job, select the `+` sign to add a new task.
+
+1. Search for the **Invoke REST API** task. Select **Add** to add it to your agentless job.
+
+1. Select your **Connection type** and your **Service connection**. Select the HTTP **Method** that you want to use, and then select a **Completion event**. You can also define a success a criteria to pass the task.
+
+1. Select **Save & queue** when you are done.
+
+    :::image type="content" source="media/invoke-rest-api-classic.png" alt-text="A screenshot showing how to set up the invoke REST API task.":::
+
+---
+
 ## Open source
 
 The [InvokeRESTAPI](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1) task is open source on GitHub. Feedback and contributions are welcome.
