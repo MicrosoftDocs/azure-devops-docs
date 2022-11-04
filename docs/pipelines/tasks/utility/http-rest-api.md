@@ -57,17 +57,43 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 
 Succeeds if the API returns success and the response body parsing is successful, or when the API updates the timeline record with success.
 
-The **Invoke REST API task** does not perform deployment actions directly.
-Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed.
+The **Invoke REST API task** does not perform deployment actions directly. Instead, it allows you to invoke any generic HTTP REST API as part of the automated pipeline and, optionally, wait for it to be completed.
 
-![Configuring an Invoke REST API task](media/invoke-rest-api-task.png)
+# [YAML](#tab/yaml)
 
-For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
+```yml
+steps:
+- task: InvokeRESTAPI@1
+  displayName: 'Invoke REST API: GET'
+  inputs:
+    serviceConnection: 'generic_demo'
+    method: GET
+    successCriteria: 'eq(root[''count''], ''1425'')'
+```
+
+# [Classic](#tab/classic)
+
+1. From your pipeline definition, select the ellipsis button (...), and then select **Add an agentless job**.
+
+1. In your new agentless job, select the `+` sign to add a new task.
+
+1. Search for the **Invoke REST API** task. Select **Add** to add it to your agentless job.
+
+1. Select your **Connection type** and your **Service connection**. Select the HTTP **Method** that you want to use, and then select a **Completion event**. You can also define a success a criteria to pass the task.
+
+1. Select **Save & queue** when you are done.
+
+    :::image type="content" source="media/invoke-rest-api-classic.png" alt-text="A screenshot showing how to set up the invoke REST API task.":::
+
+In this example, the task succeeded when the response matched our `successCriteria`: *eq(root[''count''], ''1425'')*.
+
+:::image type="content" source="media/invoke-rest-api-success.png" alt-text="A screenshot showing the pipeline status.":::
+
+---
 
 ## Open source
 
-Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
+The [InvokeRESTAPI](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1) task is open source on GitHub. Feedback and contributions are welcome.
 
 ## FAQ
 
