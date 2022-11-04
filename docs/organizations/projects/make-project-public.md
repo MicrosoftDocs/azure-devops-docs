@@ -1,7 +1,7 @@
 ---
-title: Change your private project to public
+title: Make your private project public
 titleSuffix: Azure DevOps Services Public Project 
-description: Change your project visibility from private to public or from public to private. 
+description: Change your project visibility from private to public and learn about access levels and feature restrictions for public projects. 
 ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
@@ -12,39 +12,40 @@ monikerRange: 'azure-devops'
 ms.date: 11/04/2022
 ---
 
-# Change your private project to public
+# Make your private project public
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
-When you choose to make a project public, all of its contents are included. You can't choose specific repositories, area paths, or build folders to keep private. Access is limited when the user isn't signed in. These users are also referred to as anonymous users or public users. Also, there are users, ones who are signed in to Azure DevOps, but aren't members of a project. Both of these types of users are granted limited, read-only access as indicated in the following table.
+When you choose to make a project public, all of its contents are included. You can't choose specific repositories, area paths, or build folders to keep private. 
 
-All members of the project experience the following effects:
+Access is limited when the user isn't signed in. These users are also referred to as anonymous users or public users. Also, there are users, ones who are signed in to Azure DevOps, but aren't members of a project. Both of these types of users are granted limited, read-only access as indicated in the following table.
+
+All members of the project experience the following effects when a private project is made public:
 
 * Permissions marked **Deny** aren't honored. The permissions automatically granted to a non-member act as a "floor" on the capabilities that can be assigned to any member in the project.
 * If a build pipeline specifies a Project Collection scope, it runs with Project scope instead, which reduces the risks of a malicious user obtaining the build service's authentication token.
+* Stakeholders have full access to **Repos** or **Code** features in public projects, but they have no access in private projects.
+* Stakeholders have full access to **Boards** or **Work** in public projects, but they have partial access in private projects. For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md).
+* Basic + Test Plans users can view and run tests from **Test Plans** or **Test**. Basic users need to upgrade their access level to Basic + Test Plans to get full access, which includes capability to create test plans and add test cases.
 
-|Hub or Settings |Non-member access |Stakeholder access |Basic access|Readers |Contributors  |Project Administrators  |
+|Hub / Settings |Non-member access |Stakeholder access |Basic access|Reader access |Contributor access  |Project Admin access  |
 |---------|---------|---------|---------|
-|**Dashboards** | Read(1) | Partial  | Full | Read | Read-Write | Read-Write-Administer |
-|**Wiki**     | Read   | Full | Full | Read | Read-Write | Read-Write-Administer        |
-|**Boards (Work)** |  Read | Partial | Full | Read | Read-Write | Read-Write-Administer |
-|**Repos (Code)**  | Read | Full | Full | Read | Read-Write |  Read-Write-Administer   |
-|**Pipelines (Build and Release)**  | Read  | Full | Full | Read    | Read-Write | Read-Write-Administer |
-|**Test Plans**  | No access | No access | Partial access (4) | Read  |Read-Write | Read-Write-Administer |
-|**Notifications**  | No access | Full | Full | Read | Read-Write | Read-Write-Administer |
-|**Search**   | Full| Full | Full | Full | Full | Full |
+|**Dashboards** | read (many widgets aren't available) | partial  | full | read | read-write | read-write-administer |
+|**Wiki**     | read   | full | full | read | read-write | read-write-administer        |
+|**Boards (Work)** |  read | partial | full | read | read-write | read-write-administer |
+|**Repos (Code)**  | read | full | full | read | read-write |  read-write-administer   |
+|**Pipelines (Build and Release)**  | read  | full | full | read    | read-write | Read-Write-Administer |
+|**Test Plans**  | no access | no access | partial access (see last bullet above table) | read  |read-write | Read-Write-Administer |
+|**Notifications**  | no access | Full | Full | Read | read-write | read-write-administer |
+|**Search**   | full| full | full | full | full | full |
 |**Settings**   | No access| Full | Full | Read | Read | Read-Write-Administer |
-
-> [!NOTE]
-> - Several widgets aren't available to non-members.
-> - Stakeholders have full access to **Repos** or **Code** features in public projects, but they have no access in private projects.
-> - Stakeholders have full access to **Boards** or **Work** in public projects, but they have partial access in private projects. For more information, see [Stakeholder access quick reference](../security/stakeholder-access.md).
-> - Basic + Test Plans users can view and run tests from **Test Plans** or **Test**. Basic users need to upgrade their access level to Basic + Test Plans to get full access, which includes capability to create test plans and add test cases.
 
 ## Prerequisites
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
+- Understand [access levels and unavailable features for public projects].(#access-levels-and-unavailable-features-for-public-projects).
+- Be aware of [partial migration options](#partial-migration).
 - Review items in the [migration checklist](#migration-checklist). 
 
 ### Migration checklist
@@ -63,10 +64,10 @@ The following checklist indicates those items you may want to review before maki
 :::row-end:::
 :::row:::
    :::column span="1":::
-Organization identities and settings
+**Organization identities and settings**
    :::column-end:::
    :::column span="2":::
-Understand that a user gains access to the following resources and details about the organization:
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Understand that a user gains access to the following resources and details about the organization:
 - Identities: List of all members added to the organization and email address for each member.
 - Settings: Read-only view of all organization and project settings.
 - Process metadata: All picklist values in all projects in the organization.
@@ -76,79 +77,112 @@ Understand that a user gains access to the following resources and details about
 :::row-end:::
 :::row:::
    :::column span="1":::
-Cross-project object links
+**Cross-project object links**
    :::column-end:::
    :::column span="2":::
-Check whether links exist between projects, as details about the linked artifact in the private project are visible within the public project. You can use the following link types: branch, build, changeset, commit, found in build, integrated in build, pull request, and versioned item. Titles and names are exposed in the following links types: versioned item, branch, wiki page, pull request, and work item.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Check whether links exist between projects, as details about the linked artifact in the private project are visible within the public project. You can use the following link types: branch, build, changeset, commit, found in build, integrated in build, pull request, and versioned item. Titles and names are exposed in the following links types: versioned item, branch, wiki page, pull request, and work item.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-Agile tools and work items
+**Agile tools and work items**
    :::column-end:::
    :::column span="2"::: 
-Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data. Work-items maintain their history when they're migrated from a private to public project. All discussions and descriptions are available. Check that none contains problematic speech.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data. Work-items maintain their history when they're migrated from a private to public project. All discussions and descriptions are available. Check that none contains problematic speech.
 
-Confirm that none of your area paths have special, locked-down security settings. Denied permissions aren't enforced in a public project, so restricted area paths become public. If you aren't comfortable exposing the whole work item database, there are migration options.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of your area paths have special, locked-down security settings. Denied permissions aren't enforced in a public project, so restricted area paths become public. If you aren't comfortable exposing the whole work item database, there are migration options.
 For more information, see [Instructions for moving work items](#move-work-items).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Code
+      **Code**
    :::column-end:::
    :::column span="2":::
-Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
 
-Be aware that all file contents and commit messages are available. Check that none contains problematic speech. If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Be aware that all file contents and commit messages are available. Check that none contains problematic speech. If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
 For more information, see [Instructions for a tip migration](#migrate-git-tip-only).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Build and release
+      **Build and release**
    :::column-end:::
    :::column span="2":::
-Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
 
-Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members can't. If you need to migrate build pipelines to a new project, you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members can't. If you need to migrate build pipelines to a new project, you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-Test
+**Test**
    :::column-end:::
    :::column span="2":::
-Understand that manual and cloud load testing features aren't available to non-members in a public project.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Understand that manual and cloud load testing features aren't available to non-members in a public project.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-Analytics and dashboards
+**Analytics and dashboards**
    :::column-end:::
    :::column span="2":::
-Consider building a dashboard intended for the public. Some [widgets are unavailable](about-projects.md#dashboard-widget-support) to non-members.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Consider building a dashboard intended for the public. Some [widgets are unavailable](about-projects.md#dashboard-widget-support) to non-members.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-Artifacts
+**Artifacts**
    :::column-end:::
    :::column span="2":::
-Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public. Public feeds can't have upstream sources. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public. Public feeds can't have upstream sources. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-Extensions
+**Extensions**
    :::column-end:::
    :::column span="2":::
-Confirm whether there are any extensions vital to your project's experience. For instance, do you have a control on your work item form that renders data in a particular way? Are there custom extensions that expose important details?
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm whether there are any extensions vital to your project's experience. For instance, do you have a control on your work item form that renders data in a particular way? Are there custom extensions that expose important details?
 
-Confirm that each extension's author has made it available for non-members by testing it.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that each extension's author has made it available for non-members by testing it.
 If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md).
    :::column-end:::
 :::row-end:::
+
+## 1. Enable anonymous access to projects
+
+Before you can change a private project to a public project, you must enable anonymous access for your organization.
+
+1. From your web browser, sign in to Azure DevOps. You must be signed in to create a public project.
+
+2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then choose **Organization settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
+
+3. Choose the **Policies** page, and select **On** for **Allow public projects**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot showing Organization settings, Policy page, Security policies flow.](media/create-public-project/org-policies-change-anon.png)
+
+## 2. Make a private project public
+
+1. Choose **Project Settings** in the sidebar.
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot showing highlighted Project settings button.](media/open-project-settings-public-vert-brn.png)  
+
+2. Choose **Overview**.  
+
+3. To switch from private to public, choose **Public** from the **Visibility** menu of options.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot showing Project Settings, Overview, Visibility flow.](media/switch-to-public.png) 
+
+	To switch from public to private, choose **Private** from the **Visibility** menu of options.
+
+4. Choose **Save**.   
 
 ## Access levels and unavailable features for public projects
 
@@ -263,38 +297,6 @@ Create the new repository in a project that you don't mind making public.
 7. Add the new repository as your origin remote: `git remote add origin <new_clone_URL>`
 8. Push up your new repository: `git push --set-upstream origin main`
 
-## 1. Enable anonymous access to projects
-
-Before you can change a private project to a public project, you must enable anonymous access for your organization.
-
-1. From your web browser, sign in to Azure DevOps. You must be signed in to create a public project.
-
-2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then choose **Organization settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
-
-3. Choose the **Policies** page, and select **On** for **Allow public projects**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Organization settings, Policy page, Security policies flow.](media/create-public-project/org-policies-change-anon.png)
-
-## 2. Make a private project public
-
-1. Choose **Project Settings** in the sidebar.
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing highlighted Project settings button.](media/open-project-settings-public-vert-brn.png)  
-
-2. Choose **Overview**.  
-
-3. To switch from private to public, choose **Public** from the **Visibility** menu of options.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot showing Project Settings, Overview, Visibility flow.](media/switch-to-public.png) 
-
-	To switch from public to private, choose **Private** from the **Visibility** menu of options.
-
-4. Choose **Save**.   
 
 ## Next steps
 
