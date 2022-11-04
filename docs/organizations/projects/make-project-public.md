@@ -45,7 +45,7 @@ All members of the project experience the following effects:
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- View the migration checklist for 
+- Review items in the [migration checklist](#migration-checklist). 
 
 ### Migration checklist
 
@@ -79,7 +79,7 @@ Understand that a user gains access to the following resources and details about
 Cross-project object links
    :::column-end:::
    :::column span="2":::
-- Check whether links exist between projects, as details about the linked artifact in the private project are visible within the public project. You can use the following link types: branch, build, changeset, commit, found in build, integrated in build, pull request, and versioned item. Titles and names are exposed in the following links types: versioned item, branch, wiki page, pull request, and work item.
+Check whether links exist between projects, as details about the linked artifact in the private project are visible within the public project. You can use the following link types: branch, build, changeset, commit, found in build, integrated in build, pull request, and versioned item. Titles and names are exposed in the following links types: versioned item, branch, wiki page, pull request, and work item.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -87,9 +87,9 @@ Cross-project object links
 Agile tools and work items
    :::column-end:::
    :::column span="2"::: 
-- Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data. Work-items maintain their history when they're migrated from a private to public project.
-- Be aware that all discussions and descriptions are available. Check that none contains problematic speech.
-- Confirm that none of your area paths have special, locked-down security settings. Denied permissions aren't enforced in a public project, so restricted area paths become public. If you aren't comfortable exposing the whole work item database, there are migration options.
+Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data. Work-items maintain their history when they're migrated from a private to public project. All discussions and descriptions are available. Check that none contains problematic speech.
+
+Confirm that none of your area paths have special, locked-down security settings. Denied permissions aren't enforced in a public project, so restricted area paths become public. If you aren't comfortable exposing the whole work item database, there are migration options.
 For more information, see [Instructions for moving work items](#move-work-items).
    :::column-end:::
 :::row-end:::
@@ -98,9 +98,10 @@ For more information, see [Instructions for moving work items](#move-work-items)
       Code
    :::column-end:::
    :::column span="2":::
-- Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
-- Be aware that all file contents and commit messages are available. Check that none contains problematic speech. If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
-For more information, see [Instructions for a tip migration](#git-tip-only-migration).
+Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
+
+Be aware that all file contents and commit messages are available. Check that none contains problematic speech. If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
+For more information, see [Instructions for a tip migration](#migrate-git-tip-only).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -108,8 +109,9 @@ For more information, see [Instructions for a tip migration](#git-tip-only-migra
       Build and release
    :::column-end:::
    :::column span="2":::
-- Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
-- Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members can't. If you need to migrate build pipelines to a new project, you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
+Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
+
+Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members can't. If you need to migrate build pipelines to a new project, you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,8 +143,9 @@ Confirm that none of the packages in any of the feeds that are scoped to the pro
 Extensions
    :::column-end:::
    :::column span="2":::
-- Confirm whether there are any extensions vital to your project's experience. For instance, do you have a control on your work item form that renders data in a particular way? Are there custom extensions that expose important details?
-- Confirm that each extension's author has made it available for non-members by testing it.
+Confirm whether there are any extensions vital to your project's experience. For instance, do you have a control on your work item form that renders data in a particular way? Are there custom extensions that expose important details?
+
+Confirm that each extension's author has made it available for non-members by testing it.
 If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md).
    :::column-end:::
 :::row-end:::
@@ -156,21 +159,67 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 
 The following user interface elements are hidden for non-members.
 
-|**Service** |**Hidden UI elements** |
-|---------|---------|
-|**Boards**    |Work items are available, but Backlogs, Boards, Sprints, Queries, and Plans are hidden.          |
-|**Repos**    | Team Foundation Version Control (TFVC) repositories are hidden.         |
-|**Pipelines**    | Builds and Releases are available, but Library, Task Groups, Deployment Groups, Packages, and XAML build system are hidden.
-	* Pipeline and task editors for build and release pipelines are unavailable  
-	* Only the new Releases page, which is in Public preview, is available.        |
-|**Test Plans**    |Test Plans and the associated manual and cloud load testing features are hidden.         |
-|**Analytics**    | Analytics Views is hidden, and the Analytics OData feed isn't supported for non-members. Power BI integration in general isn't supported.        |
-|**Settings**    | Settings and administrative pages are hidden.        |
+:::row:::
+   :::column span="1":::
+      **Service**
+   :::column-end:::
+   :::column span="2":::
+       **Hidden UI elements**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Boards
+   :::column-end:::
+   :::column span="2":::
+      Work items are available, but Backlogs, Boards, Sprints, Queries, and Plans are hidden. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Repos
+   :::column-end:::
+   :::column span="2":::
+      Team Foundation Version Control (TFVC) repositories are hidden.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Pipelines
+   :::column-end:::
+   :::column span="2":::
+      Builds and Releases are available, but Library, Task Groups, Deployment Groups, Packages, and XAML build system are hidden. Pipeline and task editors for build and release pipelines are unavailable. Only the new Releases page, which is in Public preview, is available.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Plans
+   :::column-end:::
+   :::column span="2":::
+      Test Plans and the associated manual and cloud load testing features are hidden.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Analytics
+   :::column-end:::
+   :::column span="2":::
+      Analytics Views is hidden, and the Analytics OData feed isn't supported for non-members. Power BI integration in general isn't supported.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Settings
+   :::column-end:::
+   :::column span="2":::
+      Settings and administrative pages are hidden.
+   :::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > When you enable the **Free access to Pipelines for Stakeholders** preview feature for the organization, Stakeholders get access to all **Pipeline** features. Without this feature enabled, Stakeholders can only view and approve releases. For more information, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
 
-In addition, non-members can't do the following tasks:
+Also, non-members can't do the following tasks:
 
 * Edit or create artifacts, such as files, work items, and pipelines.
 * Favorite and follow existing artifacts.
