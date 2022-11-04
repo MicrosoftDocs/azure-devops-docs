@@ -24,7 +24,7 @@ See [Default TFVC permissions](../../organizations/security/default-tfvc-permiss
 
 ## Delete an item
 
-Before you delete a file, look for a [check mark icon](media/delete-restore-files-folders/check.png) next to the file, which indicates pending edits in the file. If there are pending edits, view them by right-clicking the file and choosing **Compare**. Make sure that you don't need the edits. If you think you might need the edits in the future, consider checking in the file before you delete it.
+Before you delete a file, look for a ![check mark icon](media/delete-restore-files-folders/check.png) next to the file, which indicates pending edits in the file. If there are pending edits, view them by right-clicking the file and choosing **Compare**. Make sure that you don't need the edits. If you think you might need the edits in the future, consider checking in the file before you delete it.
 
 > [!IMPORTANT]
 > - If you delete a folder, the system pends delete actions for any folders and files that the folder contains.
@@ -63,7 +63,7 @@ Files not under version control that you deleted through **Solution Explorer** a
 
 ### Restore a deleted item from the server
 
-If you've already checked in the deletion of an item in TFVC, you can restore the deleted item from the server long as no one on your team has [destroyed](destroy-command-team-foundation-version-control.md) it.
+If you've already checked in the deletion of an item in TFVC, you can restore the deleted item from the server as long as no one on your team has [destroyed](destroy-command-team-foundation-version-control.md) it.
 
 1. From the Visual Studio menu bar, choose **Tools** > **Options**.
 1. In the **Options** dialog box, navigate to **Source Control**> **Visual Studio Team Foundation Server**.

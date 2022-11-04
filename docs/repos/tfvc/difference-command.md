@@ -308,7 +308,7 @@ The `format` parameter, used with the `/format` option, specifies many different
 
 - `SS_Unix` is similar to the `/format:unix` output format, but `/format:ss_unix` includes context lines and `/format:unix` doesn't.
 
-- `Unified` format is derived from the UNIX-based `diff -u` output format. `/format:context` repeats identical context lines between the difference strings but `/format:unified` doesn't.
+- `Unified` format is derived from the UNIX-based `diff -u` output format. `/format:context` repeats identical context lines between the difference strings, but `/format:unified` doesn't.
 
   `Unified` format produces a new unified difference string (`@@ ... @@`) line only when the distance to the next difference string is larger than the number of context lines. 
 
@@ -340,7 +340,7 @@ The following example displays the differences between the local version of *314
 
 `c:\projects>tf difference 314.cs`
 
-The following example displays all files that have been changed in the *src* folder, but doesn't display files that have been changed in subfolders of src.
+The following example displays all files that have been changed in the *src* folder, but doesn't display files that have been changed in subfolders of *src*.
 
 ```
 c:\projects>tf difference src /format:visual

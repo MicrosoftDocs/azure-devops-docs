@@ -16,13 +16,13 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Use the `tf destroy` command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
+Use the `tf destroy` command to destroy, or permanently delete, version-controlled files from Team Foundation Version Control (TFVC).
 
-The destroy action can't be reversed. Don't destroy files that are still needed. Sometimes you have to clean up version control systems. For example, if some files are infected with a computer virus, you have to remove them permanently from version control.
+Sometimes you have to clean up version control systems. For example, if some files are infected with a computer virus, you have to remove them permanently from version control. Don't destroy files that are still needed. The destroy action can't be reversed.
 
 Before you run `tf destroy` without the `/keephistory` option, first delete the files you want to destroy. For more information, see [Delete files and folders from version control](delete-restore-files-folders.md).
 
-After you delete the files, you can synchronize the TFVC warehouse. Otherwise, the warehouse will not be synchronized with the destroyed items.
+After you delete the files, you can synchronize the TFVC warehouse. Otherwise, the warehouse won't be synchronized with the destroyed items.
 
 ## Prerequisites
 
@@ -172,7 +172,7 @@ When you use `tf destroy` to destroy version-control files, the application tier
 
 After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Azure DevOps Server is cleaned up. You can also specify the `/startcleanup` option to clean up the files immediately after `tf destroy` runs.
 
-If you run `tf destroy` without specifying `/i` and `/preview`, the system displays a console **Yes** or **No** prompt for each `filespec` value. Otherwise, you can specify **Yes to all**. 
+If you run `tf destroy` without specifying `/i` and `/preview`, the system displays a console **Yes** or **No** prompt for each `filespec` value. Otherwise, you can specify **Yes to All**. 
 
 - If you don't specify `/keephistory`, you're prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to `/preview` if you want more information about the changes.
 
@@ -184,13 +184,13 @@ Destroyed: <serverItem2>
 Destroyed: ...
 ```
 
-If you specified the `versionspec` value as `tip`, the server paths displayed in the command prompt window include deletion IDs. For example, `X123` might appear in the command prompt window.
+If you specified the `versionspec` value as `tip`, the server paths displayed in the command prompt window include deletion IDs. For example, `Destroyed: $/Test1/MyProject;X123` might appear in the command prompt window.
 
 If you use the `/preview` option, the files aren't destroyed, but the command-line text displays the files that would be destroyed. For example, if you enter `tf destroy /preview $/Test1/MyProject/MyProject/Program.cs` at the command-line, the command window displays this text:
 
-**Destroyed: $/Test1/MyProject/MyProject/Program.cs**
+`Destroyed: $/Test1/MyProject/MyProject/Program.cs`
 
-However, the file is actually not destroyed because you used the **/preview** option.
+However, the file is actually not destroyed because you used the `/preview` option.
 
 For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
@@ -209,7 +209,7 @@ If an item has already been deleted, a deletion ID is attached to it and results
 
 ### Effects of tf destroy on TFVC repo code search
 
-Code search doesn't handle `tf destroy` notifications, so using `tf destroy` for TFVC repos won't automatically delete files in the search index. As a result, these files appear in the code search results. To avoid these ghost files scenarios, delete files before the `tf destroy` operation.
+Code search doesn't handle `tf destroy` notifications, so using `tf destroy` for TFVC repos won't automatically delete files from the search index. As a result, these files appear in the code search results. To avoid these ghost files scenarios, delete files before the `tf destroy` operation.
 
 ## Examples
 

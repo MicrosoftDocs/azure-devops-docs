@@ -149,13 +149,13 @@ The following example displays a list of files, folders, subfolders, and files i
 c:\projects>tf dir /recursive
 ```
 
-The following example displays all Azure DevOps server files at that path. The *314dir* subfolder doesn't have to exist in the local folder.
+The following example displays all Azure DevOps server files at the *314dir* path. The *314dir* subfolder doesn't have to exist in the local folder.
 
 ```
 c:\projects>tf dir 314dir
 ```
 
-The following example displays the version of files labeled `My label` in that Azure DevOps server path. The *314dir* subfolder doesn't have to exist in the local folder.
+The following example displays the version of files labeled `My label` in the *314dir* Azure DevOps server path. The *314dir* subfolder doesn't have to exist in the local folder.
 
 ```
 c:\projects>tf dir /version:L"My label" 314dir
@@ -173,7 +173,7 @@ The following example lists every file and folder in the Azure DevOps server.
 c:\projects>tf dir /recursive $/
 ```
 
-The following example lists all items and deleted items in the current folder together with their deletion IDs.
+The following example lists all items in the current folder, including deleted items with their deletion IDs.
 
 ```
 c:\projects>tf dir /deleted

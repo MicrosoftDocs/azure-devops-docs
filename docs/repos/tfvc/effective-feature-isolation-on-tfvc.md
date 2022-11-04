@@ -15,13 +15,13 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Are you planning to implement the [Team Foundation Version Control (TFVC](./what-is-tfvc.md) feature isolation strategy in Azure DevOps? You probably have a few questions, such as:
+Are you planning to implement the [Team Foundation Version Control (TFVC)](./what-is-tfvc.md) feature isolation strategy in Azure DevOps? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
 - What's the proper lifetime of isolated feature branches? 
 
-This article aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. For guidance on TFVC branch strategies overall, read [Branching strategies with TFVC](effective-tfvc-branching-strategies-for-devops.md).) 
+This article aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. For guidance on TFVC branch strategies overall, read [Branching strategies with TFVC](effective-tfvc-branching-strategies-for-devops.md).
 
 > [!NOTE]
 > 
@@ -37,13 +37,13 @@ The feature isolation strategy allows you to work on features or fix bugs in *fe
 
 > [!NOTE]
 > 
-> The reference to *feature* is unrelated to the Feature work item type. This strategy can be used with Epic, Feature, Program Backlog Item, User Story, or whatever work item type you've defined in your process. 
+> This use of *feature* is unrelated to the Feature work item type. This strategy can be used with Epic, Feature, Program Backlog Item, User Story, or whatever work item type you've defined in your process. 
 
 It's typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low-risk features. 
 
 ![Diagram that shows basic feature isolation.](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
 
-Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped and therefore not as lightweight. To work around this, limit the number of and the lifetime of your TFVC feature branches. [Optimize your workspace](optimize-your-workspace.md) using explicit, implicit, cloaked, and non-recursive folder mappings, to improve performance and to reduce required disk space on your machine.
+Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped and therefore not as lightweight. To work around this, limit the number and the lifetime of your TFVC feature branches. [Optimize your workspace](optimize-your-workspace.md) by using explicit, implicit, cloaked, and non-recursive folder mappings, to improve performance and to reduce required disk space on your machine.
 
 > [!TIP]
 > 
@@ -72,11 +72,11 @@ This strategy also keeps features from getting out of sync with the parent branc
 
 > [!TIP]
 >
-> Keep your feature branch short-lived.
+> Keep your feature branches short-lived.
 > 
-> Unlike main or other central branches, feature branches have a limited lifetime. They're scoped to features, bugs, and hot fixes, which are typically developed within a sprint or iteration. Consider removing your feature branch once your feature has met your team's definition of done [DoD](/archive/blogs/visualstudioalmrangers/?p=2395) and changes have been merged with the parent branch.
+> Unlike main or other central branches, feature branches have a limited lifetime. They're scoped to features, bugs, and hot fixes, which are typically developed within a sprint or iteration. Consider removing your feature branch once your feature has met your team's definition of done ([DoD](/archive/blogs/visualstudioalmrangers/?p=2395)) and changes have been merged with the parent branch.
 
-As the number of your feature branches increase, your storage requirements and branch hierarchy visualization noise increases. With only five feature branches, the diagram is already noisy and rapidly losing its monitoring qualities. Can you imagine the impact of your team creating hundreds of feature branches?
+As the number of your feature branches increases, your storage requirements and branch hierarchy visualization noise increases. With only five feature branches, the diagram is already noisy and rapidly losing its monitoring qualities. Can you imagine the impact of your team creating hundreds of feature branches?
  
 ![Diagram that shows feature isolation noise.](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise.png)
 
@@ -86,7 +86,7 @@ Similarly, the Visual Studio **Source Control Explorer** view becomes noisy and 
 
 > [!TIP]
 >
-> **Delete** your feature branch when you're done.
+> Delete your feature branches when you're done.
 
 
 ## Impact of deleting a feature branch
@@ -95,7 +95,7 @@ By [deleting](delete-restore-files-folders.md#delete-an-item) feature branches, 
 
 ![Screenshots that show dDelete feature branches](./media/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
 
-Remember it's a soft delete and your history isn't lost. Deleted branches can be unhidden:
+Remember it's a soft delete and your history isn't lost. Deleted branches can be unhidden.
 
 1. Select **Tools** > **Options** > **Visual Studio Team Foundation Server**.
 1. Select **Show deleted items in the Source Control Explorer**.
@@ -108,13 +108,13 @@ If needed, you can also [restore](delete-restore-files-folders.md#restore-items-
 
 ![Screenshot that shows deleted feature branches and their changesets.](./media/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches-show.png)
 
-If no one in your team has destroyed a branch using the [destroy](destroy-command-team-foundation-version-control.md) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
+If no one in your team has destroyed a branch by using the [destroy](destroy-command-team-foundation-version-control.md) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
 
 > [!NOTE]
 >
-> Use the [destroy](destroy-command-team-foundation-version-control.md) command with caution. It's a permanent deletion.
+> Use the `destroy` command with caution. It's a permanent deletion.
 
-By keeping your branches short-lived and adopting a consistent naming convention, the feature isolation strategy is effective for small and large teams. 
+By keeping your branches short-lived and adopting a consistent naming convention, you can keep the feature isolation strategy effective for small and large teams. 
 
 Now that you're using feature isolation, you should explore continuous integration, feature toggles, and other complementary strategies.
 

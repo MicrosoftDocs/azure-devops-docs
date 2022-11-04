@@ -108,7 +108,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    
      `tf delete Folder1 AVer* /recursive`
    
-     deletes *Folder1\\Folder2\\AVeryImportantFile.txt* because it matches the wildcard character.
+     deletes *Folder1\\AVeryLongDirectoryName* and all its files, and deletes *Folder1\\Folder2\\AVeryImportantFile.txt* because it matches the wildcard character.
    :::column-end:::
 :::row-end:::
 :::row:::

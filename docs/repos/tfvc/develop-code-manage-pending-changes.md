@@ -41,7 +41,7 @@ If you're working in a solution that contains a lot of files, you'll probably fi
 
 ## Use the My Work page to manage work
 
-You can use the **My Work** page in **Team Explorer** or press Ctrl+0, M to manage your work.
+You can open the **My Work** page in **Team Explorer** or press Ctrl+0, M to manage your work.
 
 [!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
  
@@ -71,7 +71,7 @@ You can use the **Pending Changes** page in **Team Explorer** to manage your wor
 ![Screenshot of the Pending Changes page in Team Explorer.](media/develop-code-manage-pending-changes/pending.png)
 
 > [!TIP]
-> -  You can undock :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: the **Pending Changes** page from **Team Explorer** and open it in a new window.
+> -  You can undock :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: the **Pending Changes** page from **Team Explorer** to open it in a new window.
 > -  You can toggle between list and tree views from the **View Options** link under **Included Changes**.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in. Changes include:  
@@ -98,7 +98,7 @@ The **Promote Candidate Changes** dialog box appears. You can right-click items 
 
 If items that you don't need to check in appear regularly in the **Promote Candidate Changes** dialog box, you can right-click the item and choose **Ignore this local item** to ignore the item. You can also choose **Ignore by extension**, **Ignore by file name**, or **Ignore by folder** to create a file that will cause Visual Studio to systematically ignore this kind of file. For more information on *.tfignore* files, see [Add files to the server](add-files-server.md).
 
-To exclude changes, see [Specify the files you want to check in](check-your-work-team-codebase.md#include_exclude).
+To exclude changes, see [Choose the files you want to check in](check-your-work-team-codebase.md#include_exclude).
 
 ### Associate work items
 
@@ -146,7 +146,7 @@ You can discard one, some, or all of the pending changes in your workspace.
    - In **Source Control Explorer**, right-click the items and choose **Undo Pending Changes**.
 
    > [!TIP]
-   > To undo all changes you've made in your solution or a code project, open the context menu for the solution or project, and then choose **Undo Pending Changes**.
+   > To undo all changes you've made in your solution or a code project, right-click the solution or project, and then choose **Undo Pending Changes**.
 
 1. In the **Undo Pending Changes** dialog box, make sure the changes you want to undo are selected, and then choose **Undo Changes**.
 

@@ -16,9 +16,9 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Team Foundation Version Control (TFVC) administrators can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control. For example a user can be required to associate a work item with a changeset. 
+Team Foundation Version Control (TFVC) administrators can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control. For example, users can be required to associate work items with changesets. 
 
-Prior to enabling or disabling check-in policies, you must first create a check-in policy. For more information, see [Add check-in policies](add-check-policies.md). The following procedure describes how to enable or disable check-in policies for your project.
+Prior to enabling or disabling check-in policies, you must first create the check-in policies. For more information, see [Add check-in policies](add-check-policies.md). The following procedure describes how to enable or disable check-in policies for your project.
 
 ## Prerequisites
 

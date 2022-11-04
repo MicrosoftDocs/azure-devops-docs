@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-In general, you should get the latest files from the server on a regular basis so that the code you develop is compatible with the code developed by others on your team and to minimize the risk of creating bugs when you check in your code. You can download the latest version or a previous version of one or more files from your Azure DevOps server to your workspace on your dev machine.
+In general, you should get the latest files from the server on a regular basis so that the code you develop is compatible with the code developed by others on your team, and to minimize the risk of creating bugs when you check in your code. You can download the latest version or a previous version of one or more files from your Azure DevOps server to your workspace on your dev machine.
 
 ## Prerequisites
 
