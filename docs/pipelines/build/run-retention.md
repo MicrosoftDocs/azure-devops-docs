@@ -156,7 +156,7 @@ To [_update_ a retention lease](/rest/api/azure/devops/build/leases/update) requ
           $contentType = "application/json";
           $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
           $rawRequest = @{ daysValid = 365 };
-          $request = ConvertTo-Json @($rawRequest);
+          $request = ConvertTo-Json $rawRequest;
           $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases/$newLeaseId?api-version=7.1-preview.2";
           Invoke-RestMethod -uri $uri -method PATCH -Headers $headers -ContentType $contentType -Body $request;
 ```
