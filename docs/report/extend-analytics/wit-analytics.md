@@ -1,93 +1,135 @@
 ---
-title: Query work tracking data using OData 
+title: Sample OData queries 
 titleSuffix: Azure DevOps
-description: Learn how to generate work item tracking reports for Azure DevOps using OData Analytics.
+description: Learn how to construct basic queries for Azure DevOps using OData Analytics.
 ms.subservice: azure-devops-analytics
-ms.topic: how-to
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.author: kaelli
 author: KathrynEE
+ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/17/2022
+ms.date: 11/04/2022
 ---
 
-# Construct basic queries using OData Analytics
+# Define basic queries using OData Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser or within Power BI. 
 
-This article builds off information provided in [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries is this article are focused on retrieving work item data, however, the principles applies for querying other entity sets.
+This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries is this article are focused on retrieving work item data, however, the principles apply for querying other entity sets.
+
+In this article you'll learn the following:  
+
+> [!div class="checklist"]  
+> * How to construct an Analytics OData query for the cloud or on-premises
+> * How to query Analytics metadata
+> * How to query Analytics OData for an entity set 
+> * Which query options are supported and the recommended sequence
+> * When server-side paging is enforced 
+
+
+Return a count of items with no other data
+Return a count of items along with selected data 
+
+Return a list of Areas defined for a project 
+Query a single entity set
+Specify a filter based on work item state  
+Select specific columns or fields to return
+Return user information 
+Query a date range
+Filter using related entities
+Filter by a navigation property
+Return data from related entities
+Nest expand statements
+
+> [!NOTE]  
+> In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-In this article, the base root URL is scoped to a project as shown:  
-
-::: moniker range="azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}
-> ``` 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://{ServerName}:{Port}/tfs/{CollectionName}/{ProjectName}/_odata/{version}
-> ```
-> [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-
-::: moniker-end
-
-All other URL parts are specified as an extra part of the query string.
-
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-<a id="basic-query" />
 
-## Construct a basic query 
+<a id="return-count-items" />
 
-::: moniker range="azure-devops"
+## Return a count of items (no other data)  
 
-You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
-- `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
-- `{OrganizationName}` with your project collection name (default is DefaultCollection) 
-- `{ProjectName}` with the name of the project that you want to query. 
-
-::: moniker-end
-
-
-
-
-<a id="single-entity" />
-
-## Query a single entity set
-
-To query a single entity set&mdash;such as **Areas**, **Projects**, **WorkItems**, or **WorkItemSnapshot**&mdash;add the name of the entity set within the URL: `/Areas`, `/Projects`, `/WorkItems` or `/WorkItemSnapshot`. 
-
-For example, you query Areas by adding `/Areas`. The full URL is:
+To learn about the number of items or entities defined in an organization or project, specify `$apply=aggregate($count as Count)` query option. For example, the following queries return the number of projects, work items, Area Paths, and users defined for an organization. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/Areas 
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Projects?$apply=aggregate($count as Count)
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/WorkItems?$apply=aggregate($count as Count)
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Areas?$apply=aggregate($count as Count)
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Users?$apply=aggregate($count as Count)
+> ```
+ 
+### Project count
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(Count)"
+> value	
+>    0	
+>      @odata.id	null
+>      Count	    28
 > ```
 
-It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10,000 work items, [server-side paging is enforced](../analytics/analytics-query-parts.md#server-force-paging).
+### Work item count
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#WorkItems(Count)"
+> value	
+>   0	
+>      @odata.id	null
+>      Count	    1166
+> ```
 
-For a full list of entity sets for work tracking, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
+### Area count
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Areas(Count)"
+> value	
+>   0	
+>      @odata.id	null
+>      Count	    70
+> ```
+
+
+### User count
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> @odata.context	"https://analytics.dev.azure.com/kelliott/_odata/v4.0-preview/$metadata#Areas(Count)"
+> value	
+>   0	
+>      @odata.id	null
+>      Count	    16
+> ```
+
+
+<a id="return-count-items-with-data" />
+
+## Return a count of items and data 
+
+To return a count of items along with select data for the items, specify the `$count=true` query option. For example, the following queries return a counts of work items, Area Paths, and users defined for a project along with the specified properties. 
+
+> [!TIP]  
+> If you don't specify the properties to return, Analytics will return all properties defined for the specified entity type. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData 
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/WorkItems?$count=true&$select=WorkItemId,Title,WorkItemType 
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Areas?$count=true&$select=AreaName,AreaPath 
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
+> ```
+ 
+For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
+
  
 <a id="select-columns" />
 
@@ -169,136 +211,112 @@ The following example returns work items whose **Changed Date** occurs during th
 > ```
  
 
-
-
-<a id="filter-related-entities" />
-
-## Filter using related entities
-
-Querying work items is helpful, but you'll eventually want to filter by other data such as the Iteration Path, Area Path, or project. To do so, you need to understand the navigation properties of the entity model. 
-
-All entity types are associated with properties and navigation properties. You can filter your queries of entity sets using both these types of properties.  
-
-You can get metadata using `/$metadata` URL as described in [Explore Analytics OData metadata](analytics-metadata.md) or reviewing the  [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). 
-
-A partial view of the metadata for the `WorkItem` entity is provided in the following code snippet. Properties correspond to a work item field as well as specific data captured by Analytics, such as `LeadTimeDays` and `CycleTimeDays`. Navigation properties correspond to other entity sets, entity types, or specific Analytics data captured for the entity type.   
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <Key>
->    <PropertyRef Name="WorkItemId"/>
-> </Key>
-> <Property Name="WorkItemId" Type="Edm.Int32" Nullable="false">
->    <Annotation Term="Ref.ReferenceName" String="System.Id"/>
->    <Annotation Term="Display.DisplayName" String="Work Item Id"/>
-> </Property>
-> <Property Name="InProgressDate" Type="Edm.DateTimeOffset">
->    <Annotation Term="Display.DisplayName" String="InProgress Date"/>
->    </Property>
-> <Property Name="CompletedDate" Type="Edm.DateTimeOffset">
->    <Annotation Term="Display.DisplayName" String="Completed Date"/>
->    </Property>
-> <Property Name="LeadTimeDays" Type="Edm.Double">
->    <Annotation Term="Display.DisplayName" String="Lead Time Days"/>
-> </Property>
-> <Property Name="CycleTimeDays" Type="Edm.Double">
->    <Annotation Term="Display.DisplayName" String="Cycle Time Days"/>
-> </Property>
-> <Property Name="InProgressDateSK" Type="Edm.Int32"/>
-> <Property Name="CompletedDateSK" Type="Edm.Int32"/>
-> <Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
-> <Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
-> <Property Name="WorkItemRevisionSK" Type="Edm.Int32" Nullable="false"/>
-> ...
-> <NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
-> <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
-> <NavigationProperty Name="InProgressOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
-> <ReferentialConstraint Property="InProgressDateSK" ReferencedProperty="DateSK"/>
-> </NavigationProperty>
-> <NavigationProperty Name="CompletedOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
-> <ReferentialConstraint Property="CompletedDateSK" ReferencedProperty="DateSK"/>
-> </NavigationProperty>
-> <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
-> <NavigationProperty Name="Links" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemLink)"/>
-> <NavigationProperty Name="Children" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
-> <NavigationProperty Name="Parent" Type="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
-> <ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
-> </NavigationProperty>
-> <NavigationProperty Name="Processes" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Process)"/>
-> <NavigationProperty Name="Descendants" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
-> <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project" Nullable="false">
-> <ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
-> <Annotation Term="Display.DisplayName" String="Project"/>
-> ...
-> ```
- 
-
 <a id="filter-navigation" />
 
 ## Filter by a navigation property
 
-How do you use navigation properties to filter results? 
+When you specify a navigation property as part of your filter criteria, you must specify it in the required format.  
 
-Use the following clause to filter work items based on a specific iteration, for example Iteration 1: 
+For example, the following clause specifies to filter work items based on *Iteration 1* defined for the project. 
 
 `/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'`
 
-With the full OData query:
+In this example, `Iteration` is the navigation property name and `IterationPath` corresponds to the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
+
+And, here is the full OData query:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'
 > ```
 
-In this example, `Iteration` is the navigation property name and `IterationPath` corresponds to the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
+Here is another example that requests the top 5 work items under the *Fabrikam Fiber\Service Delivery\Voice* Area Path are returned. 
+
+> [!div class="tabbedCodeSnippets"]
+> ``` OData
+> https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$top=5&$filter=Area/AreaPath eq 'Fabrikam Fiber\Service Delivery\Voice'&$select=WorkItemId, WorkItemType, Title, State&$orderby=WorkItemId asc
+> 
+> @odata.context	"https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)"
+> value	
+>   0	
+>      WorkItemId	361
+>      Title        "Hello World Web Site"
+>      WorkItemType	"Product Backlog Item"
+>      State        "Removed"
+>   1	
+>      WorkItemId	362
+>      Title        "Resume"
+>      WorkItemType	"Product Backlog Item"
+>      State        "New"
+>   2	
+>      WorkItemId	363
+>      Title        "Welcome back page"
+>      WorkItemType	"Product Backlog Item"
+>      State        "Done"
+>   3	
+>      WorkItemId	365
+>      Title        "Pause"
+>      WorkItemType	"Feature"
+>      State        "New"
+>   4	
+>      WorkItemId	374
+>      Title        "Fix performance issues"
+>      WorkItemType	"Task"
+>      State        "To Do"
+>```
+
 <a id="return-related" />
 
-## Return data from related entities
 
-How do you use navigation properties to select related fields?
-
-The user name for custom fields based on an Identity field type isn't directly accessible using a `$select` statement. The following query uses a `$expand` statement to retrieve the user name:
-
-`/WorkItems?$expand=MyIdentityField($select=UserName)`
-
-> [!NOTE]  
-> You can't use the navigation property directly in a `$select` statement. Instead, you will need to use `$expand`.  
+> [!TIP]  
+> You can't use the navigation property directly in a `$select` statement. Instead, you need to use `$expand`.  
 
 The previous filtering example for the Iteration Path doesn't return the iteration path  in the results because it's contained in a related entity. To return data in a related entity, add an `$expand` statement:
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration`
 
-It returns the following JSON code.
+And here is an example that returns information assigned to work item ID *480*. 
 
 > [!div class="tabbedCodeSnippets"]
-> ```JSON
-> {
->   "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
->   "value":[
->     {
->       "WorkItemId":10000,
->       "WorkItemType":"Task",
->       "Title":"Some title",
->       "State":"Completed",
->       "Iteration":{
->         "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46",
->         "Name":"Sprint 55",
->         "Number":13021,
->         "IterationPath":"Fabrikam\\Sprints\\Sprint 55",
->         "StartDate":"2013-09-23T00:00:00Z",
->         "EndDate":"2013-10-11T00:00:00Z",
->         "IterationLevel1":"Fabrikam",
->         "IterationLevel2":"Sprints",
->         "IterationLevel3":"Sprint 55",
->         "Level":2,
->         "IsDeleted":false
->       }
->     }
->   ]
-> }
+> ``` OData
+> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&&$expand=Iteration
+>	
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)"
+	> value	
+		> 0	
+		> WorkItemId           480
+		> Title                "Customer Phone - Phase 1"
+		> WorkItemType	       "Feature"
+		> State	               "In Progress"
+		> Iteration	
+		>    ProjectSK	       "56af920d-393b-4236-9a07-24439ccaa85c"
+		>    IterationSK	   "c7063041-ff3a-4d7f-bb46-c433c7030d59"
+		>    IterationId	   "c7063041-ff3a-4d7f-bb46-c433c7030d59"
+		>    IterationName	   "Sprint 1"
+		>    Number	            55297
+		>    IterationPath	    "Fabrikam Fiber\\Release 1\\Sprint 1"
+		>    StartDate	        "2022-01-17T00:00:00-08:00"
+		>    EndDate	        "2022-02-04T23:59:59.999-08:00"
+		>    IterationLevel1	"Fabrikam Fiber"
+		>    IterationLevel2	"Release 1"
+		>    IterationLevel3	"Sprint 1"
+		>    IterationLevel4	null
+		>    IterationLevel5	null
+		>    IterationLevel6	null
+		>    IterationLevel7	null
+		>    IterationLevel8	null
+		>    IterationLevel9	null
+		>    IterationLevel10	null
+		>    IterationLevel11	null
+		>    IterationLevel12	null
+		>    IterationLevel13	null
+		>    IterationLevel14	null
+		>    Depth	            2
+		>    IsEnded	        true
+		> AnalyticsUpdatedDate	"2022-01-18T22:18:58.17Z"
 > ```
 
-As you can see, the Iteration Path is expanded in the JSON result and all of the iteration data is returned. It's probably more data than you want.  
+As you can see, the Iteration Path is expanded in the result and all of the iteration data is returned. It's probably more data than you want.  
 
 To return less data, add a `$select` statement against the iteration as well:
 
@@ -324,6 +342,18 @@ It returns the following JSON:
 >   ]
 > }
 > ```
+
+
+<a id="return-identity-fields" />
+
+## Return data for Identity fields
+ 
+The user name for fields based on an Identity data type isn't directly accessible using a `$select` statement. The following queries use an `$expand` statement to retrieve the user name or user email for the account contained within the `Custom_MyIdentityField` property.
+
+
+`/WorkItems?$expand=Custom_MyIdentityField($select=UserName)`
+`/WorkItems?$expand=Custom_MyIdentityField($select=UserEmail)`
+
 
 ## Nest expand statements
 
@@ -439,9 +469,54 @@ And, you can order by multiple items:
  
 ## Related articles
 
-- [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md)
+- [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md)
 - [Best practices to use when querying Analytics](/analytics/analytics-best-practices.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
+
+
+
+
+
+<!--- 
+<a id="basic-query" />
+
+## Construct a basic query 
+
+::: moniker range="azure-devops"
+
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
+- `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
+- `{OrganizationName}` with your project collection name (default is DefaultCollection) 
+- `{ProjectName}` with the name of the project that you want to query. 
+
+::: moniker-end
+
+
+<a id="single-entity" />
+
+## Query a single entity set
+
+To query a single entity set&mdash;such as **Areas**, **Projects**, **WorkItems**, or **WorkItemSnapshot**&mdash;add the name of the entity set within the URL: `/Areas`, `/Projects`, `/WorkItems` or `/WorkItemSnapshot`. 
+
+For example, you query Areas by adding `/Areas`. The full URL is:
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/Areas 
+> ```
+
+It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10,000 work items, [server-side paging is enforced](../analytics/analytics-query-parts.md#server-force-paging).
+
+For a full list of entity sets for work tracking, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
+
+
+-->

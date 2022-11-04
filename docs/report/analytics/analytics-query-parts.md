@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/29/2022
+ms.date: 11/04/2022
 ---
 
 # Construct OData queries for Analytics in Azure DevOps
@@ -17,13 +17,13 @@ ms.date: 10/29/2022
 
 Analytics, the reporting platform for Azure DevOps, can answer quantitative questions about the past or present state of your projects. Analytics supports OData queries of its metadata and entity set data. By exercising simple queries from your web browser, you can  get familiar with the data model and query process.  
 
-In this article you'll learn how to:  
+In this article you'll learn the following:  
 
 > [!div class="checklist"]  
-> * Construct an Analytics OData query for the cloud or on-premises
-> * Query Analytics metadata
-> * Query Analytics OData for an entity set 
-> * Which query options are supported 
+> * How to construct an Analytics OData query for the cloud or on-premises
+> * How to query Analytics metadata 
+> * How to query Analytics OData for an entity set 
+> * Which query options are supported and the recommended sequence
 > * When server-side paging is enforced 
 
 You can query Analytics from any [supported web browser](/azure/devops/server/compatibility#supported-browsers). For other tools you can use to query Analytics, see [Analytics query tools](analytics-query-tools.md).
@@ -126,6 +126,64 @@ The two main schemas defined in the Analytics metadata are `Microsoft.VisualStud
 >     </edmx:DataServices>
 > </edmx:Edmx>
 > ```
+
+<a id="metadata-response" />
+
+### Related entities and navigation properties
+
+All entity types are associated with properties and navigation properties. You can filter your queries of entity sets using both these types of properties. These are listed in the metadata under the `EntityType` as a `Property` or `NavigationalProperty`. You use related entities to specify additional filters, such as Iteration Paths, Area Paths, or Teams.  
+
+The following code snippet provides a partial view of the metadata for the `WorkItem` entity. Properties correspond to a work item field as well as specific data captured by Analytics, such as `LeadTimeDays` and `CycleTimeDays`. Navigation properties correspond to other entity sets, or specific Analytics data captured for the entity type, such as `Revisions`, `Links`, `Children`, and `Parent`.   
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <Key>
+>    <PropertyRef Name="WorkItemId"/>
+> </Key>
+> <Property Name="WorkItemId" Type="Edm.Int32" Nullable="false">
+>    <Annotation Term="Ref.ReferenceName" String="System.Id"/>
+>    <Annotation Term="Display.DisplayName" String="Work Item Id"/>
+> </Property>
+> <Property Name="InProgressDate" Type="Edm.DateTimeOffset">
+>    <Annotation Term="Display.DisplayName" String="InProgress Date"/>
+>    </Property>
+> <Property Name="CompletedDate" Type="Edm.DateTimeOffset">
+>    <Annotation Term="Display.DisplayName" String="Completed Date"/>
+>    </Property>
+> <Property Name="LeadTimeDays" Type="Edm.Double">
+>    <Annotation Term="Display.DisplayName" String="Lead Time Days"/>
+> </Property>
+> <Property Name="CycleTimeDays" Type="Edm.Double">
+>    <Annotation Term="Display.DisplayName" String="Cycle Time Days"/>
+> </Property>
+> <Property Name="InProgressDateSK" Type="Edm.Int32"/>
+> <Property Name="CompletedDateSK" Type="Edm.Int32"/>
+> <Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
+> <Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
+> <Property Name="WorkItemRevisionSK" Type="Edm.Int32" Nullable="false"/>
+> ...
+> <NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
+> <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
+> <NavigationProperty Name="InProgressOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
+> <ReferentialConstraint Property="InProgressDateSK" ReferencedProperty="DateSK"/>
+> </NavigationProperty>
+> <NavigationProperty Name="CompletedOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
+> <ReferentialConstraint Property="CompletedDateSK" ReferencedProperty="DateSK"/>
+> </NavigationProperty>
+> <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
+> <NavigationProperty Name="Links" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemLink)"/>
+> <NavigationProperty Name="Children" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
+> <NavigationProperty Name="Parent" Type="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
+> <ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
+> </NavigationProperty>
+> <NavigationProperty Name="Processes" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Process)"/>
+> <NavigationProperty Name="Descendants" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
+> <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project" Nullable="false">
+> <ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
+> <Annotation Term="Display.DisplayName" String="Project"/>
+> ...
+> ```
+ 
 
 ## URL components to query entities 
 
@@ -314,7 +372,9 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 > [!NOTE]
 > When pulling data into client tools such as Power BI Desktop or Excel, tools will automatically follow next link and load all required records. 
 
-
+## Next steps
+> [!div class="nextstepaction"]
+> [Construct basic queries using OData Analytics](../extend-analytics/wit-analytics.md)
 
 ## Related articles
 
