@@ -44,14 +44,14 @@ Filter by a navigation property
 Return data from related entities
 Nest expand statements
 
-> [!NOTE]  
-> In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
-
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+> [!NOTE]  
+> In this article, the OData query URL is defined for Azure DevOps Services. To construct a similar query for an on-premises server, see the guidance provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
 
 
 <a id="return-count-items" />
@@ -104,7 +104,7 @@ To learn about the number of items or entities defined in an organization or pro
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> @odata.context	"https://analytics.dev.azure.com/kelliott/_odata/v4.0-preview/$metadata#Areas(Count)"
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Areas(Count)"
 > value	
 >   0	
 >      @odata.id	null
@@ -116,7 +116,7 @@ To learn about the number of items or entities defined in an organization or pro
 
 ## Return a count of items and data 
 
-To return a count of items along with select data for the items, specify the `$count=true` query option. For example, the following queries return a counts of work items, Area Paths, and users defined for a project along with the specified properties. 
+To return a count of items along with select data for the items, specify the `$count=true` query option. For example, the following queries return a counts of work items, Area Paths, and users defined for a project along with the specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
 
 > [!TIP]  
 > If you don't specify the properties to return, Analytics will return all properties defined for the specified entity type. 
@@ -127,67 +127,100 @@ To return a count of items along with select data for the items, specify the `$c
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Areas?$count=true&$select=AreaName,AreaPath 
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
 > ```
- 
-For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
-
+  
  
 <a id="select-columns" />
 
 ## Select specific columns or fields 
 
-Return specific field data by adding a ```$select``` clause. 
+To return specific properties or work item fields, add a `$select` clause that specifies the property names. 
 
-For example, to return only the Work Item ID, Work Item Type, Title, and State of work items, add the following clause to your query which specifies the corresponding field properties.   
-
-`/WorkItems?$select=WorkItemId,WorkItemType,Title,State`	
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State
-> ```
-
-This query is equivalent to selecting all rows in the entity set, but returning only these specific fields.  
+For example, to return the **Work Item ID**, **Work Item Type**, **Title**, and **State** of work items, add the following clause to your query which specifies the corresponding field properties.  
 
 > [!NOTE]  
 > Property names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing. To understand how custom field properties are labeled, see [Metadata reference for Azure Boards, Custom properties](../analytics/entity-reference-boards.md#custom-properties).
+
+Here we specify to return the top three work items. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$top=3
+> ```
+
+Analytics returns the following data. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)"
+> value	
+>    0	
+>       WorkItemId    462
+>       Title         "Test case"
+>       WorkItemType  "Test Case"
+>       State         "Design"
+>    1	
+>       WorkItemId	   491
+>       Title          "Change color settings"
+>       WorkItemType   "Shared Steps"
+>       State          "Active"
+>    2	
+>       WorkItemId	   461
+>       Title          "Test impediment"
+>       WorkItemType   "Impediment"
+>       State          "Open"
+> ```
 .  
 
 <a id="filter-data" />
 
 ## Filter your data 
 
-You can filter data by providing a query filter clause. Building on the last query, you can add the following filter clause to only return those work items to return the state "In Progress". 
+
+To filter an entity set to return select items, specify a `$filter` clause that specifies the criteria the items must meet. Building on the last query, here we add a filter clause to only return *Feature* work item types that are in the  *In Progress* state.
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'`
 
-With the full OData query:
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemType eq 'Feature' and State eq 'In Progress'&$select=WorkItemId,Title,AssignedTo,State
+> ```
+
+Analytics returns the following data. 
+
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'
+> 	
+> @odata.context	"https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,Title,State)"
+> value	
+>   0	
+>       WorkItemId	380
+>       Title	"Refresh web look, feel, performance factors"
+>       State	"In Progress"
+>   1	
+>       WorkItemId	480
+>       Title	"Customer Phone - Phase 1"
+>       State	"In Progress"
+>   2	
+>       WorkItemId	493
+>       Title	"Change initial view"
+>       State	"In Progress"
+>   3	
+>       WorkItemId	479
+>       Title	"Customer Web - Phase 1"
+>       State	"In Progress"
+>   4	
+>       WorkItemId	551
+>       Title	"Mobile feedback"
+>       State	"In Progress"
 > ```
 
-Instead, you can exclude the ```$select``` clause altogether and just filter the results as follows:
 
-`/WorkItems?$filter=State eq 'In Progress'`
+## Specify several filter clauses
 
-With the full OData query:
+You can use `AND` and `OR` to specify several filter clauses. 
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=State eq 'In Progress'
-> ```
-
-You can also apply multiple filters by concatenating two or more filters. Here, we filter for In Progress tasks:
-
-`/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'`
-
-With the full OData query:
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
-> ```
+For example, the following query specifies to return work items of type *User Story*, *Bug*, and *Backlog Work* (a custom work item type) that are in the *New*, *Committed*, or *Active* states. Use parenthesis to group filter clauses as needed. 
 
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
 
@@ -234,9 +267,9 @@ Here is another example that requests the top 5 work items under the *Fabrikam F
 
 > [!div class="tabbedCodeSnippets"]
 > ``` OData
-> https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$top=5&$filter=Area/AreaPath eq 'Fabrikam Fiber\Service Delivery\Voice'&$select=WorkItemId, WorkItemType, Title, State&$orderby=WorkItemId asc
+> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$top=5&$filter=Area/AreaPath eq 'Fabrikam Fiber\Service Delivery\Voice'&$select=WorkItemId, WorkItemType, Title, State&$orderby=WorkItemId asc
 > 
-> @odata.context	"https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)"
+> @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State)"
 > value	
 >   0	
 >      WorkItemId	361
@@ -346,13 +379,24 @@ It returns the following JSON:
 
 <a id="return-identity-fields" />
 
-## Return data for Identity fields
+## Return data for Identity, Area Path, and Iteration Path fields
  
-The user name for fields based on an Identity data type isn't directly accessible using a `$select` statement. The following queries use an `$expand` statement to retrieve the user name or user email for the account contained within the `Custom_MyIdentityField` property.
+Select properties are associated with navigational properties and aren't directly accessible using the `$select` statement. You must use an `$expand` statement to return the data of interest. These properties are often associated with several properties of their own. For example, with Identity fields, you can specify to return the user name or the user email. 
 
+The following table provides examples of how to expand several of these properties. 
 
-`/WorkItems?$expand=Custom_MyIdentityField($select=UserName)`
-`/WorkItems?$expand=Custom_MyIdentityField($select=UserEmail)`
+| Type fields | Referenced property | Example clauses to include |
+|-------------|-------------------|-------------------|
+| DateTime  | `DateSK`      | `$expand=CreatedDate($select=Date)` or<br/>`$expand=CreatedDate($select=WeekStartingDate)`  | 
+| Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
+| Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
+| Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
+| Project	| `ProjectSK`   | `$expand=AssignedTo($select=ProjectName)` | 
+| Team 	    | `TeamSK`      | `$expand=AssignedTo($select=TeamName)` | 
+
+To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
+
+`$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)`
 
 
 ## Nest expand statements
@@ -446,20 +490,16 @@ Notice that the result here shows only the IterationId and IterationPath and tha
 
 <a id="sort-results" />
 
-## Sort results
+## Sort results, `orderby` option
 
-You can sort OData results using the `$orderby` clause. You can apply this clause to any OData query as shown:
+Specify the `$orderby` option to sort your results or specify the sequence in which results are returned. You can sort in ascending or descending order using keywords `asc` or `desc`, respectively. Some examples are shown  
 
-`/WorkItems?$orderby=WorkItemId`
-
-You can sort in ascending or descending order using keywords `asc` or `desc` correspondingly:
-
-`/WorkItems?&$orderby=WorkItemId desc`
-
-And, you can order by multiple items:
-
-`/WorkItems?$orderby=WorkItemType,State`
-
+| Sort by | Clause to include |
+|---------|-------------------|
+| Work item ID |`/WorkItems?$orderby=WorkItemId` | 
+| Work item ID descending |`/WorkItems?$orderby=WorkItemId desc` |  
+| Work item type and State | `/WorkItems?$orderby=WorkItemType,State` |
+ 
 
 ## Next steps
 
@@ -518,5 +558,31 @@ It's equivalent to performing a select statement on the entity set and returning
 
 For a full list of entity sets for work tracking, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md).
 
+  
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/msft-skilling/Content/_odata/v1.0/WorkItems?$filter=(WorkItemType eq 'User Story' or WorkItemType eq 'Bug' or WorkItemType eq 'Backlog Work') AND (State eq 'New' or State eq 'Committed' or State eq 'Active')&$select=WorkItemId, WorkItemType, Title, State 
+
+Instead, you can exclude the ```$select``` clause altogether and just filter the results as follows:
+
+`/WorkItems?$filter=State eq 'In Progress'`
+
+With the full OData query:
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=State eq 'In Progress'
+> ```
+
+You apply multiple filters by concatenating two or more filters. For example, here we filter for features and tasks that are in the 
+
+`/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'`
+
+With the full OData query:
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
+> ```
 
 -->

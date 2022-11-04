@@ -249,7 +249,7 @@ The example return 1399 work items.
 ***
 
 > [!NOTE] 
-> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10,000 work items, [server-driven paging is enforced](../extend-analytics/odata-query-guidelines.md#perf-paging).  
+> If you don't include a `$select` or `$apply` clause, you'll receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10,000 work items, [server-driven paging is enforced](../extend-analytics/odata-query-guidelines.md#perf-paging).  
 > 
 > To avoid running into usage limits, always include a `$select` or `$apply` clause.
 
@@ -260,27 +260,8 @@ For entity metadata property and relationship information, see the following art
 - [Metadata reference for Azure Pipelines](entity-reference-pipelines.md)
 - [Metadata reference for Test Plans](entity-reference-test-plans.md)
 
-## Query options
 
-A query option is a set of query string parameters applied to a resource that can help control the amount of data being returned for the resource in the URL. 
-
-Query options should be specified in the order listed in the following table. 
-
-| Query option	|Notes|
-|------------------|-------------------|  
-|`$apply`| Set of transformations that you can apply to a query, such as: `filter`, `groupby`, `aggregate`, `compute`, `expand,` `concat`<br/>For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
-|`$compute`| A supported OData function that you can specify to define computed properties that can be used in a `$select`,`$filter`, or `$orderby` expression. |  	
-|`$filter`| Use to filter the list of resources that are returned. The expression specified with `$filter` is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.<br/>For examples, see [Query work tracking data using Analytics ](../extend-analytics/wit-analytics.md).   |  		
-|`$orderby`| Use to specify the sequence in which records should be returned. <br/>For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).  |  		
-|`$top`/`$skip`| Use to limit the number of records returned.<br/>For examples, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).  |  		
-|`$select`/`$expand`|Use `$select` to specify the columns you need to build your report. Use `$expand` to nest other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>Semicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`.<br/>For examples, see [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md).|
-|`$skiptoken`| Use to skip a specified number of records.  |	
-|`$count` or `$count=true`|  Enter `$count` to only return the number of records. Enter `$count=true`to return both a count of the record and the queried data. <br/>For examples,  see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|  
- 
-> [!TIP]    
-> Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you have two options: (1) use a `$filter` clause or (2) use a `$apply=filter()` combination clause. Each one of these options works great on its own, but combining them together might lead to some unexpected results.
-
-## Example: Query a specific entity set
+### Example: Query a specific entity set
 
 To query a specific entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity set: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
@@ -349,6 +330,27 @@ The example return three project names.
 > ```
 ***
 
+
+
+## Query options
+
+A query option is a set of query string parameters applied to a resource that can help control the amount of data being returned for the resource in the URL. 
+
+Query options should be specified in the order listed in the following table. 
+
+| Query option	|Notes|
+|------------------|-------------------|  
+|`$apply`| Set of transformations that you can apply to a query, such as: `filter`, `groupby`, `aggregate`, `compute`, `expand,` `concat`<br/>For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
+|`$compute`| A supported OData function that you can specify to define computed properties that can be used in a `$select`,`$filter`, or `$orderby` expression. |  	
+|`$filter`| Use to filter the list of resources that are returned. The expression specified with `$filter` is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.<br/>For examples, see [Query work tracking data using Analytics ](../extend-analytics/wit-analytics.md).   |  		
+|`$orderby`| Use to specify the sequence in which records should be returned. <br/>For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).  |  		
+|`$top`/`$skip`| Use to limit the number of records returned.<br/>For examples, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).  |  		
+|`$select`/`$expand`|Use `$select` to specify the columns you need to build your report. Use `$expand` to nest other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>Semicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`.<br/>For examples, see [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md).|
+|`$skiptoken`| Use to skip a specified number of records.  |	
+|`$count` or `$count=true`|  Enter `$count` to only return the number of records. Enter `$count=true`to return both a count of the record and the queried data. <br/>For examples,  see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|  
+ 
+> [!TIP]    
+> Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you have two options: (1) use a `$filter` clause or (2) use a `$apply=filter()` combination clause. Each one of these options works great on its own, but combining them together might lead to some unexpected results.
 
 
 <a id="server-force-paging"></a>

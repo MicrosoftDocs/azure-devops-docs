@@ -18,11 +18,11 @@ ms.date: 09/30/2022
 The entity types and entity sets listed in the following table can be used to filter and build reports based on Analytics data. 
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |EntityType|  EntitySet | Description |  
+> |EntitySet|  EntityType | Description |  
 > |----------------------|-------------|-------------|  
-> |[**CalendarDate**](#calendar-date-properties)|  **Dates** | The dates used to filter and group other entities using relationships.  |  
-> |[**Project**](#project-properties)|  **Projects** |Projects defined for an organization (cloud) or project collection (on-premises). |  
-> |[**User**](#user-properties)|  **Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
+> | [**Dates*](#calendar-date-properties) |[**CalendarDate**](#calendar-date-properties) | The dates used to filter and group other entities using relationships.  |  
+> |[**Projects**](#project-properties)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
+> |[**Users**](#user-properties)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
 
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
@@ -85,17 +85,16 @@ The following members are defined for the `Period` enumerated type that you can 
 |`All`                   | 2047         | All                     |      
 
 
-## Project properties
+## Projects properties
 
-The following properties are valid for the **Project** entity type and its surrogate key `ProjectSK`. When generating an organization scoped query, you can focus on one or more projects by specifying  one or more **Project Names**. To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md). 
+The following properties are valid for the **Projects** entity set and its surrogate key `ProjectSK`. When generating an organization scoped query, you can focus on one or more projects by specifying  one or more **Project Names**. To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md). 
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
 |    | `AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated.  | 
 |**Project Id** | `ProjectId` | GUID | Unique identifier assigned to a project when it's created.  | 
 |**Project Name** | `ProjectName` | String | Name assigned to a project when it's created.  | 
-|**Project Visibility** | `ProjectVisibility` | Enumerated | Indicates if the project is public or private. Valid values are listed below for [ProjectVisibility](#projectvisibility-enumerated-type-members).   | 
-|**Project Id** | `ProjectId` | GUID | Unique identifier assigned to a project when it's created.  | 
+|**Project Visibility** | `ProjectVisibility` | Enumerated | Indicates if the project is public or private. Valid values are listed below for [ProjectVisibility](#projectvisibility-enumerated-type-members).   |  
 
 ### Navigation properties 
 
@@ -117,9 +116,9 @@ The following members are defined for the `ProjectVisibility` enumerated type.  
 
 
 
-## User properties
+## Users properties
 
-The following properties are valid for the **User** entity type and **Users** entity set with surrogate key `UserSK`.
+The following properties are valid for the **Users** entity set and **User** entity type with surrogate key `UserSK`.
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
