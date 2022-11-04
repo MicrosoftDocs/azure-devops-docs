@@ -177,11 +177,29 @@ You may want to add another project in following instances:
 
 ## Use private and public projects
 
-You can add public and private projects to your organization. You can also [change the visibility of a project from private to public](../public/make-project-public.md).
+You can have both private and public projects. You can also [change the visibility of a project from private to public](make-project-public.md).
 
 **Private projects** require that you add and manage user access. Users must sign in to gain access to a project, even if it's read-only access. All project members have access to the project and organization information. For more information, see [Resources granted to project members](resources-granted-to-project-members.md).
 
-**Public projects** don't require users to sign in to gain read-only access to many of the services. Public projects provide support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open-source software. For more information, see [What is a public project?](../public/about-public-projects.md).
+**Public projects** don't require users to sign in to gain read-only access to many of the following services. Public projects provide support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open-source software.
+
+For more information about features and access levels for public projects, see [.....](make-project-public.md)
+
+## Version control support
+
+Git repositories can be browsed and cloned, but only via HTTPS.
+SSH and GVFS endpoints are unavailable.
+Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
+
+<a id="dashboard-widget-support" />
+
+## Dashboard widget support
+
+The following dashboard widgets won't display any useful information for non-members.
+
+[!INCLUDE [temp](includes/unavailable-widgets.md)]  
+
+To add or modify code, work items, pipelines, or more, [add the user as a member of the project](invite-users-public.md).
 
 ::: moniker-end
 
