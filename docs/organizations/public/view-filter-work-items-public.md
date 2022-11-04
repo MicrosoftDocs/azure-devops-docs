@@ -18,7 +18,6 @@ ms.date: 05/24/2022
 
 Learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
-[!INCLUDE [temp](includes/anon-user.md)]
 
 ## View work items
 

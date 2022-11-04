@@ -18,7 +18,6 @@ monikerRange: 'azure-devops'
 
 Learn how to view public project wikis. If you're a contributor, you can also [add and edit pages](../../project/wiki/add-edit-wiki.md).
 
-[!INCLUDE [temp](includes/anon-user.md)]
 
 ## Open Wiki
 
