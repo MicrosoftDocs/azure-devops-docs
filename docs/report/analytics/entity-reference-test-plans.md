@@ -28,8 +28,7 @@ The metadata information provided in this article describes the entities, proper
 
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
-
-## Entity types and entity sets
+## Entity sets and entity types
 
 To query Analytics for Test Plan data, use one or more of the entity types and entity sets described in the following table.  
 
@@ -37,19 +36,19 @@ To query Analytics for Test Plan data, use one or more of the entity types and e
 > Analytics for Azure DevOps testing is supported with **v3.0-preview** and **v4.0-preview** versions.  
 > Analytics stores all test-related work items as work items. You can query and generate reports on this data using the work tracking entities described in [Work tracking metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
 
-|EntityType | EntitySet | Description | 
+|EntitySet | Entitytype | Description | 
 |-----------|-------------|-----------|-------------|
-|[**Test**](#test-properties)| **Tests** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | 
-|[**TestConfiguration**](#testconfiguration-properties) | **TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md).  | 
-|[**TestPoint**](#testpoint-properties) | **TestPoints** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | 
-|[**TestPointHistorySnapshot**](#testpointhistorysnapshot-properties) | **TestPointHistorySnapshots** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md).| 
-|[**TestResult**](#testresult-properties) | **TestResults** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  
-|[**TestResultsDaily**](#testresultsdaily-properties) | **TestResultsDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun). For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). | 
-|[**TestRun**](#testrun-properties) | **TestRuns** | Execution information for tests run under a pipeline with aggregated test results. |  
-|[**TestSuite**](#testsuite-properties) | **TestSuites**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
+|[**Tests**](#test-properties)| **Test** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | 
+|[**TestConfiguratiosn**](#testconfiguration-properties) | **TestConfiguration** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md).  | 
+|[**TestPoints**](#testpoint-properties) | **TestPoint** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | 
+|[**TestPointHistorySnapshot**](#testpointhistorysnapshot-properties) | **TestPointHistorySnapshot** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md).| 
+|[**TestResults**](#testresult-properties) | **TestResult** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  
+|[**TestResultsDaily**](#testresultsdaily-properties) | **TestResultDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun). For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). | 
+|[**TestRuns**](#testrun-properties) | **TestRun** | Execution information for tests run under a pipeline with aggregated test results. |  
+|[**TestSuites**](#testsuite-properties) | **TestSuite**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
 
 
-## Test properties
+## Tests
 
 The following properties are valid for the **Test** entity type and **Tests** entity set. Surrogate key is `TestSK`.  
 
@@ -65,7 +64,7 @@ Navigational properties include [`Project`](entity-reference-general.md#project-
 |**Test Name** | `TestName` | String | The name of the test. |  
 |**Test Owner** | `TestOwner` | String | Owner of a test or test run. The test owner is typically specified as an attribute in the test code. See [Publish Test Results task](../../pipelines/tasks/test/publish-test-results.md) to view the mapping of the Owner attribute for supported test result formats. |  
 
-## TestConfiguration properties
+## TestConfigurations
 
 Test configurations specify different environments in which you'll run tests as described in [Test different configurations](../../test/test-different-configurations.md).
 
@@ -81,7 +80,7 @@ The following properties are valid for the **TestConfiguration** entity type and
 Navigational properties include [`Project`](entity-reference-general.md#project-properties) and it's referential constraint `ProjectSK`.
  
 
-## TestPoint properties
+## TestPoints
 
  A test point is a unique combination of test case, test suite, configuration, and tester. The following properties are valid for the **TestPoint** EntityType and **TestPoints** EntitySet. Surrogate key is `TestPointSK`. 
 
@@ -152,10 +151,10 @@ The 15 outcomes for a test are listed in the following table and are the members
 |`NotImpacted`           | 14         | Not Impacted         | Test not impacted by the code change that triggered the pipeline. |     
 
 
-## TestPointHistorySnapshot properties
+## TestPointHistorySnapshot  
 
 
-The following properties are valid for the **TestPointHistorySnapshot** entity type and **TestPointHistorySnapshot** entity set. Surrogate keys include `TestPointSK` and `DateSK`.
+The following properties are valid for the **TestPointHistorySnapshot** entity set. Surrogate keys include `TestPointSK` and `DateSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -189,14 +188,14 @@ The following table lists those navigation properties for the **TestPointHistory
 
 
 
-## TestResult properties 
+## TestResults   
 
 A test result corresponds to a single instance of execution of a test case with a specific outcome and details. 
 
 
 Test runs occur when you manually run a test or include test tasks within a pipeline definition as described in [Build, test, and deploy .NET Core apps, Run your tests](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).  
 
-The following properties are valid for the **TestResult** entity type and **TestResults** entity set. Surrogate key is `TestResultSK`.
+The following properties are valid for the **TestResults** entity set. Surrogate key is `TestResultSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -217,7 +216,7 @@ The following properties are valid for the **TestResult** entity type and **Test
  
 ### Navigation properties
 
-The following table lists the navigation properties valid for the **TestResult** entity type. 
+The following table lists the navigation properties valid for a **TestResult** entity type. 
 
 |**Name**        |**Referential constraint**  |**Referenced property** |
 |----------------|----------------------------|---------------------------|
@@ -254,10 +253,10 @@ The following table lists the members defined for the `SourceWorkflow` enumerate
 
 
 
-## TestResultsDaily properties
+## TestResultsDaily  
 
 
-The following properties are valid for the **TestResultsDaily** entity type and **TestResultsDaily** entity set. Surrogate key is`TestResultsDailySK`.
+The following properties are valid for the **TestResultsDaily** entity set. Surrogate key is`TestResultsDailySK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -287,7 +286,7 @@ The following properties are valid for the **TestResultsDaily** entity type and 
 
 ### Navigation properties
 
-The following table lists the navigation properties that are valid for the **TestResultsDaily** entity type and **TestResultsDaily** entity set.
+The following table lists the navigation properties that are valid for a **TestResultDaily** entity type.
 
 |**Name**        |**Referential constraint**  |**Referenced property** |
 |----------------|----------------------------|---------------------------|
@@ -297,11 +296,11 @@ The following table lists the navigation properties that are valid for the **Tes
 |`Project`       | `ProjectSK` | `ProjectSK` | 
 |`Test`          | `TestSK` | `TestSK` | 
 
-## TestRun properties
+## TestRuns  
 
 Test runs occur when you manually run a test or include test tasks within a pipeline definition. To learn more, see [Build, test, and deploy .NET Core apps, Run your tests](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).  
 
-The following properties are valid for the **TestRun** EntityType and its surrogate key `TestRunSK`.
+The following properties are valid for **TestRuns** and its surrogate key `TestRunSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
@@ -338,7 +337,7 @@ The following properties are valid for the **TestRun** EntityType and its surrog
 
 ### Navigation properties
 
-The following table lists the navigation properties that are valid for the **TestRun** entity type and **TestRuns** entity set.
+The following table lists the navigation properties that are valid for a **TestRun** entity type.
 
 |**Name**        |**Referential constraint**  |**Referenced property** |
 |----------------|----------------------------|---------------------------|
@@ -349,11 +348,11 @@ The following table lists the navigation properties that are valid for the **Tes
 |`Project`       | `ProjectSK` | `ProjectSK` | 
 | `StartedOn`    | `StartedDateSK` | `DateSK` | 
  
-## TestSuite properties
+## TestSuites 
 
 Test suites are defined for test plans and specify the tests to run. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md).
 
-The following properties are valid for the **TestSuite** entity type and **TestSuites** entity set and its surrogate key `TestSuiteSK`.
+The following properties are valid for  **TestSuites** and its surrogate key `TestSuiteSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -373,7 +372,7 @@ The following properties are valid for the **TestSuite** entity type and **TestS
 
 ### Navigation properties
  
-The following table lists the navigation properties that are valid for the **TestSuite** entity type and **TestSuites** entity set.
+The following table lists the navigation properties that are valid for a **TestSuite** entity type.
 
 |**Display Name** |**Name**        |**Referential constraint**  |**Referenced property** |
 |-----------------|----------------|----------------------------|---------------------------|

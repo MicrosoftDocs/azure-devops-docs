@@ -20,26 +20,26 @@ The Analytics service collects pipeline and test activity generated via Azure Pi
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
 
-## Entity types and snapshots
+## Entity sets and entity types
 
 The following table summarizes the entity types and entity sets that support Azure Pipelines. All entity types/entity sets are available with Analytics **v4.0 preview** version. Analytics version **v3.0-preview** doesn't support snapshots.   
 
-|EntityType | EntitySet | Description |  
+|EntitySet | EntityType | Description |  
 |-----------|-------------|-------------| 
-|[**Branch**](#branch-properties)|**Branches** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  
+|[**Branches**](#branch-properties)|**Branch** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  
 |[**ParallelPipelineJobsSnapshot**](#parallelpipelinejobssnapshot-properties)|**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   
-|[**Pipeline**](#pipeline-properties) | **Pipelines**| Properties for a pipeline. |   
-|[**PipelineJob**](#pipelinejob-properties)|**PipelineJobs** |Individual execution results for a specific Test associated with a TestRun |  
-|[**PipelineRun**](#pipelinerun-properties)|**PipelineRuns** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  
-|[**PipelineRunActivityResult**](#pipelinerunactivityresult-properties)|**PipelineRunActivityResults** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |    
-|[**PipelineTask**](#pipelinetask-properties)|**PipelineTasks** | Properties for tasks that are used within a pipeline.  |   
-|[**TaskAgentPoolSizeSnapshot**](#taskagentpoolsizesnapshot-properties)|**TaskAgentPoolSizeSnapshots** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |    
-|[**TaskAgentRequestSnapshot**](#taskagentrequestsnapshot-properties)|**TaskAgentRequestSnapshots** |(Composite) Supports reporting on task agent requests.   |  
+|[**Pipelines**](#pipeline-properties) | **Pipeline**| Properties for a pipeline. |   
+|[**PipelineJobs**](#pipelinejob-properties)|**PipelineJob** |Individual execution results for a specific Test associated with a TestRun |  
+|[**PipelineRuns**](#pipelinerun-properties)|**PipelineRun** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  
+|[**PipelineRunActivityResults**](#pipelinerunactivityresult-properties)|**PipelineRunActivityResult** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |    
+|[**PipelineTasks**](#pipelinetask-properties)|**PipelineTask** | Properties for tasks that are used within a pipeline.  |   
+|[**TaskAgentPoolSizeSnapshots**](#taskagentpoolsizesnapshot-properties)|**TaskAgentPoolSizeSnapshot** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |    
+|[**TaskAgentRequestSnapshots**](#taskagentrequestsnapshot-properties)|**TaskAgentRequestSnapshot** |(Composite) Supports reporting on task agent requests.   |  
 
 
-## Branch properties
+## Branches 
 
-The following properties are valid for the **Branch** entity type. Surrogate keys associated with **Branch** include `BranchSK` and `ProjectSK`. 
+The following properties are valid for the **Branches** entity set. Surrogate keys associated with **Branch** include `BranchSK` and `ProjectSK`. 
 
 |**Display name** |**Name**  | **Data type** | **Description**  | 
 |---------------|----------------|---------------|--------------------------------------|
@@ -52,9 +52,9 @@ The following properties are valid for the **Branch** entity type. Surrogate key
 
 Navigational properties include [`Project`](entity-reference-general.md#project-properties) and its referential constraint `ProjectSK`.
  
-## ParallelPipelineJobsSnapshot properties
+## ParallelPipelineJobsSnapshot 
 
-The following properties are valid for the **ParallelPipelineJobsSnapshot** entity type. Reference keys include:  
+The following properties are valid for the **ParallelPipelineJobsSnapshot** entity set. Reference keys include:  
 - `IsHosted`
 - `ParallelismTag`
 - `SamplingDate`
@@ -72,9 +72,9 @@ The following properties are valid for the **ParallelPipelineJobsSnapshot** enti
 
  
 
-## Pipeline properties
+## Pipelines 
 
-The following properties are valid for the **Pipeline** entity type and its surrogate key `PipelineSK`.
+The following properties are valid for **Pipelines** and its surrogate key `PipelineSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -97,11 +97,11 @@ The following members are defined for the `PipelineProcessType` enumerated type 
 |`Docker`              | 3            | Docker pipeline definition.   |
 
 
-## PipelineJob properties
+## PipelineJobs  
 
 A pipeline job is a series of steps that run sequentially as a unit. A job is the smallest unit of work that you can schedule to run. Pipelines are organized around jobs, and each pipeline has at least one job. To learn more, see [Specify jobs in your pipeline](../../pipelines/process/phases.md).
 
-The following properties are valid for the **PipelineJob** entity type and its `PipelineJobSK` surrogate key.
+The following properties are valid for  **PipelineJobs** and its `PipelineJobSK` surrogate key.
 
 |**Display name** |**Name**  | **Data type** | **Description**  | 
 |---------------|----------------|---------------|--------------------------------------|
@@ -117,7 +117,7 @@ Navigational properties include [`Project`](entity-reference-general.md#project-
 
 For a sample report that queries the **PipelineJob** entity type, see [Pipeline stage wise failures sample report](../powerbi/sample-pipelines-stagewise-failures.md).
 
-## PipelineRun properties
+## PipelineRuns  
 
 A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. A pipeline run includes jobs, steps, and tasks. To learn more, see [Pipeline run sequence](../../pipelines/process/runs.md).
 
@@ -184,9 +184,9 @@ The following members are defined for the `PipelineRunOutcome` enumerated type t
 |`Canceled`            | 32           | Canceled            |    
 
 
-## PipelineRunActivityResult properties
+## PipelineRunActivityResults  
 
-The following properties are valid for the **PipelineRunActivityResult** entity type and its `PipelineRunActivityResultSK` surrogate key. 
+The following properties are valid for the **PipelineRunActivityResults** entity set and its `PipelineRunActivityResultSK` surrogate key. 
 
 Many properties are date-based or user-based. These properties are associated with the **CalendarDate** and **User** entity sets described in [Calendar date, Project, and User metadata reference](entity-reference-general.md). 
 
@@ -242,9 +242,9 @@ The following members are defined for the `PipelineActivityType` enumerated type
 |`AgentWait`           | 2            | Agent Wait          |  
  
 
-## PipelineTask properties
+## PipelineTasks properties
 
-The following properties are valid for the **PipelineTask** entity type and its surrogate key `PipelineTaskSK`.
+The following properties are valid for the **PipelineTasks** entity set and its surrogate key `PipelineTaskSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -254,9 +254,9 @@ The following properties are valid for the **PipelineTask** entity type and its 
 Navigational properties include [`Project`](entity-reference-general.md#project-properties) and its referential constraint `ProjectSK`.
 
 
-## TaskAgentPoolSizeSnapshot properties
+## TaskAgentPoolSizeSnapshots  
 
-The following properties are valid for the **TaskAgentPoolSizeSnapshot** entity type and its surrogate key `SamplingDate`.
+The following properties are valid for the **TaskAgentPoolSizeSnapshots** entity set and its surrogate key `SamplingDate`.
 
 |**Display name** |  **Property name**  | **Data type** | **Description**  | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -267,9 +267,9 @@ The following properties are valid for the **TaskAgentPoolSizeSnapshot** entity 
 
 For a sample report built off of the **TaskAgentPoolSizeSnapshot** entity, see [Historical graph for agent pools (Preview)](../../pipelines/agents/pool-consumption-report.md).
 
-## TaskAgentRequestSnapshot properties
+## TaskAgentRequestSnapshots  
 
-Agent pools are allocated when a task is executed. The **TaskAgentRequestSnapshot** entity type captures data related to the task agent requests.
+Agent pools are allocated when a task is executed. The **TaskAgentRequestSnapshots** entity set captures data related to the task agent requests.
 
 The following properties are valid for the **TaskAgentRequestSnapshot** entity type and its surrogate keys `SamplingTime` and `SamplingDateSK`. 
 
