@@ -35,14 +35,14 @@ The following procedure shows you how to destroy files and folders by using the 
 
 In Windows, select **Start** and then type *Developer Command Prompt*. From the search results, select the developer command prompt for your Visual Studio version, such as **Developer Command Prompt for Visual Studio 2022**.
 
-- To preview the file *aFile.cs* without destroying it, enter at the command prompt:
+- To preview destroying the file *aFile.cs* without destroying it, enter at the command prompt:
 
   ```
   tf destroy /preview /i $/MyTeamProject/aFile.cs
   ```
 
   > [!NOTE]
-  > The text in the command prompt window displays **Destroyed: $/MyTeamProject/aFile.cs**, but the file isn't actually destroyed when you use the `/preview` option.
+  > The text in the command prompt window displays `Destroyed: $/MyTeamProject/aFile.cs`, but the file isn't actually destroyed when you use the `/preview` option.
 
 - To destroy the file *aFile.cs*, enter at the command prompt:
 
@@ -50,7 +50,7 @@ In Windows, select **Start** and then type *Developer Command Prompt*. From the 
   tf destroy /i $/MyTeamProject/aFile.cs
   ```
 
-  This command displays information about possible pending changes and shelvesets in the command prompt window. Because you specified `/i` or non-interactive, you aren't  prompted with a **Yes**, **No**, or **Yes to All** dialog before the files are permanently removed.
+  This command displays information about possible pending changes and shelvesets in the command prompt window. If you specify `/i` or non-interactive, you aren't  prompted with a **Yes**, **No**, or **Yes to All** dialog before files are permanently removed.
 
 - To destroy all the files in *aFolder* and at the same time retain their history, enter:
 
