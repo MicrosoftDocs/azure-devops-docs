@@ -20,7 +20,7 @@ Learn how to view the project homepage, which typically provides information abo
 
 If you're a contributor, you can also [edit README files for a project](../projects/project-vision-status.md) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
 
-[!INCLUDE [temp](includes/anon-user.md)]
+[!INCLUDE [temp](../projects/includes/anon-user.md)]
 
 ## Open the project home page
 
@@ -52,7 +52,7 @@ Anonymous users won't be able to view or interact with select widgets. In place 
 
 The following dashboard widgets aren't available to anonymous users:
 
-[!INCLUDE [temp](includes/unavailable-widgets.md)]  
+[!INCLUDE [temp](../projects/includes/unavailable-widgets.md)]  
 
 ## Next steps
 
