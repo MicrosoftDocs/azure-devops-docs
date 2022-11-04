@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The `difference` command compares, and if possible displays, differences between two files, files in two folders, or a shelveset and a local or a server file.
+The Team Foundation Version Control (TFVC) `difference` command compares, and if possible displays, differences between two files, files in two folders, or a shelveset and a local or a server file.
 
 ## Prerequisites
 

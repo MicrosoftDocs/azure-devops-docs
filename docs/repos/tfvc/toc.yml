@@ -50,6 +50,10 @@
     href: decide-between-using-local-server-workspace.md
   - name: Add check-in policies
     href: add-check-policies.md
+  - name: Edit check-in policies
+    href: edit-check-policies.md
+  - name: Enable or disable check-in policies
+    href: enable-disable-check-policies.md
   - name: Configure check-in notes
     href: configure-check-notes.md
   - name: Test impact for partially mapped repositories
