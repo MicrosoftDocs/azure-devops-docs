@@ -124,6 +124,7 @@ The following properties are valid for the **User** entity type and **Users** en
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
 |    | `AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated.  | 
+|**User Email** | `UserEmail` | String | Email associated with a user account identity.  | 
 |**User Id** | `UserId` | GUID | Unique identifier assigned to a user account identity.  | 
 |**User Name** | `UserName` | String | Name assigned to a user when the user account identity is created.  |  
 |**GitHub User Id** | `GitHubUserId` | String | GitHub user ID associated with the user account.    | 

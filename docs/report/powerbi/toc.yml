@@ -10,7 +10,7 @@ items:
     href: data-available-in-analytics.md  
   - name: Construct OData queries  
     href: ../analytics/analytics-query-parts.md  
-  - name: Construct basic queries
+  - name: Sample basic queries
     href: ../extend-analytics/wit-analytics.md
   - name: Query tools  
     href: ../analytics/analytics-query-tools.md  
