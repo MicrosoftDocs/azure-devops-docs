@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 11/04/2022
 ---
 
 # Aggregate work tracking data using Analytics

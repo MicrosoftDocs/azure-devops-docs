@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 09/30/2022
+ms.date: 11/04/2022
 ---
 
 
@@ -38,21 +38,21 @@ To query Analytics for Test Plan data, use one or more of the entity types and e
 
 |EntitySet | Entitytype | Description | 
 |-----------|-------------|-----------|-------------|
-|[**Tests**](#test-properties)| **Test** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | 
-|[**TestConfiguratiosn**](#testconfiguration-properties) | **TestConfiguration** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md).  | 
-|[**TestPoints**](#testpoint-properties) | **TestPoint** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | 
+|[**Tests**](#tests)| **Test** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | 
+|[**TestConfigurations**](#testconfigurations) | **TestConfiguration** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md).  | 
+|[**TestPoints**](#testpoints) | **TestPoint** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | 
 |[**TestPointHistorySnapshot**](#testpointhistorysnapshot-properties) | **TestPointHistorySnapshot** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md).| 
-|[**TestResults**](#testresult-properties) | **TestResult** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  
-|[**TestResultsDaily**](#testresultsdaily-properties) | **TestResultDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun). For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). | 
-|[**TestRuns**](#testrun-properties) | **TestRun** | Execution information for tests run under a pipeline with aggregated test results. |  
-|[**TestSuites**](#testsuite-properties) | **TestSuite**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
+|[**TestResults**](#testresults) | **TestResult** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  
+|[**TestResultsDaily**](#testresultsdaily) | **TestResultDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun). For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). | 
+|[**TestRuns**](#testruns) | **TestRun** | Execution information for tests run under a pipeline with aggregated test results. |  
+|[**TestSuites**](#testsuites) | **TestSuite**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
 
 
 ## Tests
 
 The following properties are valid for the **Test** entity type and **Tests** entity set. Surrogate key is `TestSK`.  
 
-Navigational properties include [`Project`](entity-reference-general.md#project-properties) and it's referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and it's referential constraint `ProjectSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -77,7 +77,7 @@ The following properties are valid for the **TestConfiguration** entity type and
 |**Test Configuration State** | `State` | String | The state of the test configuration, either Active or Inactive.   |  
 
 
-Navigational properties include [`Project`](entity-reference-general.md#project-properties) and it's referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and it's referential constraint `ProjectSK`.
  
 
 ## TestPoints

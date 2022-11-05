@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 09/30/2022
+ms.date: 11/04/2022
 ---
 
 
@@ -26,15 +26,15 @@ The following table summarizes the entity types and entity sets that support Azu
 
 |EntitySet | EntityType | Description |  
 |-----------|-------------|-------------| 
-|[**Branches**](#branch-properties)|**Branch** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  
-|[**ParallelPipelineJobsSnapshot**](#parallelpipelinejobssnapshot-properties)|**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   
-|[**Pipelines**](#pipeline-properties) | **Pipeline**| Properties for a pipeline. |   
-|[**PipelineJobs**](#pipelinejob-properties)|**PipelineJob** |Individual execution results for a specific Test associated with a TestRun |  
-|[**PipelineRuns**](#pipelinerun-properties)|**PipelineRun** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  
-|[**PipelineRunActivityResults**](#pipelinerunactivityresult-properties)|**PipelineRunActivityResult** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |    
-|[**PipelineTasks**](#pipelinetask-properties)|**PipelineTask** | Properties for tasks that are used within a pipeline.  |   
-|[**TaskAgentPoolSizeSnapshots**](#taskagentpoolsizesnapshot-properties)|**TaskAgentPoolSizeSnapshot** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |    
-|[**TaskAgentRequestSnapshots**](#taskagentrequestsnapshot-properties)|**TaskAgentRequestSnapshot** |(Composite) Supports reporting on task agent requests.   |  
+|[**Branches**](#branches)|**Branch** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  
+|[**ParallelPipelineJobsSnapshot**](#parallelpipelinejobssnapshot)|**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   
+|[**Pipelines**](#pipelines) | **Pipeline**| Properties for a pipeline. |   
+|[**PipelineJobs**](#pipelinejobs)|**PipelineJob** |Individual execution results for a specific Test associated with a TestRun |  
+|[**PipelineRuns**](#pipelineruns)|**PipelineRun** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  
+|[**PipelineRunActivityResults**](#pipelinerunactivityresults)|**PipelineRunActivityResult** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |    
+|[**PipelineTasks**](#pipelinetasks)|**PipelineTask** | Properties for tasks that are used within a pipeline.  |   
+|[**TaskAgentPoolSizeSnapshots**](#taskagentpoolsizesnapshots)|**TaskAgentPoolSizeSnapshot** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |    
+|[**TaskAgentRequestSnapshots**](#taskagentrequestsnapshots)|**TaskAgentRequestSnapshot** |(Composite) Supports reporting on task agent requests.   |  
 
 
 ## Branches 
@@ -50,7 +50,7 @@ The following properties are valid for the **Branches** entity set. Surrogate ke
 |**RepositoryUrl**|`RepositoryUrl` | String | The URL defined for a repository when it's created.  | 
  
 
-Navigational properties include [`Project`](entity-reference-general.md#project-properties) and its referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
  
 ## ParallelPipelineJobsSnapshot 
 
@@ -84,7 +84,7 @@ The following properties are valid for **Pipelines** and its surrogate key `Pipe
 |**Pipeline Process Type** | `PipelineProcessType` | Enumerated | The type of pipeline definition. Valid values are listed below for [PipelineProcessType](#pipelineprocesstype-enumerated-type-members). |  
 
 
-Navigational properties include [`Project`](entity-reference-general.md#project-properties) and its referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
 ### PipelineProcessType enumerated type members
 
@@ -113,7 +113,7 @@ The following properties are valid for  **PipelineJobs** and its `PipelineJobSK`
 |**Pipeline Job Strategy Attributes** |`StrategyAttributes` | String | The attributes defined for the pipeline job.   | 
 |**Stage Identifier** |`StageId` | String | The stage identifier associated with the pipeline job.   | 
 
-Navigational properties include [`Project`](entity-reference-general.md#project-properties) and its referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
 For a sample report that queries the **PipelineJob** entity type, see [Pipeline stage wise failures sample report](../powerbi/sample-pipelines-stagewise-failures.md).
 
@@ -152,7 +152,7 @@ The following navigational properties are supported.
 | **Queued On**    | `QueuedOn`   |`QueuedDateSK`|`DateSK`           | 
 | **Started On**   | `StartedOn`  |`QueuedDateSK`|`DateSK`           | 
 | **Pipeline**     | `Pipeline`   |`PipelineSK`|`PipelineSK`      |  
-| [**Project**](entity-reference-general.md#project-properties)  | `Project`|  `ProjectSK`| `ProjectSK` | 
+| [**Project**](entity-reference-general.md#projects)  | `Project`|  `ProjectSK`| `ProjectSK` | 
 
 ### PipelineRunReason enumerated type members
 
@@ -228,7 +228,7 @@ Navigation properties include those listed in the following table.
 |**Pipeline Run Started On** | `PipelineRunStartedOn` | `PipelineRunStartedDateSK` | `DateSK` |
 |**Pipeline Run Completed On** | `PipelineRunCompletedOn` | `PipelineRunCompletedDateSK` |`DateSK` | 
 |**Pipeline Run Started On** | `PipelineRunStartedOn` | `PipelineRunStartedDateSK` | `DateSK` | 
-| [**Project**](entity-reference-general.md#project-properties)  | `Project`|  `ProjectSK`| `ProjectSK` |  
+| [**Project**](entity-reference-general.md#projects)  | `Project`|  `ProjectSK`| `ProjectSK` |  
  
 
 ### PipelineActivityType enumerated type members
@@ -242,7 +242,7 @@ The following members are defined for the `PipelineActivityType` enumerated type
 |`AgentWait`           | 2            | Agent Wait          |  
  
 
-## PipelineTasks properties
+## PipelineTasks 
 
 The following properties are valid for the **PipelineTasks** entity set and its surrogate key `PipelineTaskSK`.
 
@@ -251,7 +251,7 @@ The following properties are valid for the **PipelineTasks** entity set and its 
 |**Task Definition Id** | `TaskDefinitionId` | GUID | The GUID assigned to a pipeline task.  | 
 |**Task Definition Version** | `TaskDefinitionVersion` | String | The version assigned to a pipeline task.  |  
 
-Navigational properties include [`Project`](entity-reference-general.md#project-properties) and its referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
 
 ## TaskAgentPoolSizeSnapshots  
@@ -300,7 +300,7 @@ Navigation properties include those listed in the following table.
 | **Job End Time** | `FinishedOn` | `FinishedDateSK` |  `DateSK` |  
 | **Queued On**    | `QueuedOn`   |`QueuedDateSK`|`DateSK`           | 
 | **Pipeline**     | `Pipeline`   |`PipelineSK`|`PipelineSK`      |  
-| [**Project**](entity-reference-general.md#project-properties)  | `Project`|  `ProjectSK`| `ProjectSK` | 
+| [**Project**](entity-reference-general.md#projects)  | `Project`|  `ProjectSK`| `ProjectSK` | 
 | **Started On**   | `StartedOn`  |`QueuedDateSK`|`DateSK`           | 
 
 
@@ -313,27 +313,4 @@ Navigation properties include those listed in the following table.
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)  
 
 
-
-<!--- 
-## Navigation properties 
-
-The following table indicates the navigational properties, their referential constraints, and the entity types for which they are valid. 
-
-| Display name | Name<br/>Referential constraint<br/>Referenced property| Type   |  Valid for Entity Types |  
-|--------------|-----------------|-----------------------|--------------------|--------|-------------------------|  
-| **Project**  | `Project`<br/>`ProjectSK`<br/>`ProjectSK`       | Custom |   `Branch`, `PipelineJob`, `PipelineRun`, `PipelineRunActivityResult`, `PipelineTask`, `TaskAgentRequestSnapshot`| 
-| **Pipeline** | `Pipeline`<br/>`PipelineSK`<br/>`PipelineSK`      | Custom |  `PipelineJob`, `PipelineRun`, `PipelineRunActivityResult`, `PipelineTask`, `TaskAgentRequestSnapshot`| 
-|              | `PipelineSK`<br/>`PipelineSK`  | Custom |   `PipelineTask`| 
-|              | `PipelineTask`<br/>`PipelineTaskSK`<br/>`PipelineTaskSK`  | Custom |   `PipelineTask`,`PipelineRunActivityResult` |
-| **Branch**   | `Branch`<br/>`BranchSK`<br/>`BranchSK`        |  Int32 |  `Branch`, `PipelineRun`, | 
-| **Queued On** | `QueuedOn`<br/>`QueuedDateSK`<br/>`DateSK`           | Calendar Date   |   `PipelineRun`, `TaskAgentRequestSnapshot` | 
-| **Started On** | `StartedOn`<br/>`QueuedDateSK`<br/>`DateSK`           | Calendar Date  |   `PipelineRun`, `TaskAgentRequestSnapshot` | 
-| **Job End Time** | `FinishedOn`<br/>`FinishedDateSK`<br/>`DateSK`            | Calendar Date |   `PipelineRun`, `TaskAgentRequestSnapshot` | 
-| **Completed On** | `CompletedOn`<br/>`CompletedDateSK`<br/>`DateSK`          |  Calendar Date |   `PipelineRun`, |  
-| **Pipeline Job**| `PipelineJob`<br/>`PipelineJobSK`<br/>`PipelineJobSK`        | Custom |   `PipelineJob`, `PipelineRunActivityResult` |
-| **Pipeline Run Queued On** | `PipelineRunQueuedOn`<br/>`PipelineRunQueuedDateSK`<br/>`DateSK` | Calendar Date |    `PipelineRunActivityResult` |
-| **Pipeline Run Started On** | `PipelineRunStartedOn`<br/>`PipelineRunStartedDateSK`<br/>`DateSK` | Calendar Date |    `PipelineRunActivityResult` |
-| **Pipeline Run Completed On** | `PipelineRunCompletedOn`   | `PipelineRunCompletedDateSK` |`DateSK` |  Calendar Date |    `PipelineRunActivityResult` |
-| **Activity Started On** | `ActivityStartedOn` <br/>`ActivityStartedDateSK`<br/>`DateSK` |  Calendar Date |    `PipelineRunActivityResult` |
-| **Activity Completed On** | `ActivityCompletedOn`<br/>`ActivityCompletedDateSK`<br/>`DateSK` |  Calendar Date |    `PipelineRunActivityResult` |
---> 
+ 
