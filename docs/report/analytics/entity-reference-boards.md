@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2022
+ms.date: 11/04/2022
 ---
 
 
@@ -37,21 +37,21 @@ Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other
 
 |EntitySet  | EntityType  | Description | 
 |------------|-------------|-------------|  
-|[**Areas**](#area-path-properties) | **Area** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
-|[**Dates**](entity-reference-general.md#calendar-date-properties)|**CalendarDate**|The dates used to filter and group other entities using relationships.| 
-|[**Iterations**](#iteration-path-properties) | **Iteration** |The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |
+|[**Areas**](#areas) | **Area** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
+|[**Dates**](entity-reference-general.md#dates)|**CalendarDate**|The dates used to filter and group other entities using relationships.| 
+|[**Iterations**](#iterations) | **Iteration** |The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |
 |[**BoardLocations**](#kanban-board-properties-fields) |**BoardLocation**|  The Kanban board cell locations, as identified by board column, swimlane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| 
-|[**Processes**](#process-properties) |**Process** | Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). Supported for Analytics v2.0 version and later. | 
-|[**Projects**](entity-reference-general.md#project-properties)|**Project** |All projects defined for an organization (cloud) or project collection (on-premises). | 
-|[**Tags**](#tag-properties) | **Tag** |All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | 
-|[**Teams**](#team-properties) | **Team** |All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | 
-|[**Users**](entity-reference-general.md#user-properties)|**User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | 
+|[**Processes**](#processes) |**Process** | Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). Supported for Analytics v2.0 version and later. | 
+|[**Projects**](entity-reference-general.md#projects)|**Project** |All projects defined for an organization (cloud) or project collection (on-premises). | 
+|[**Tags**](#tags) | **Tag** |All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | 
+|[**Teams**](#teams) | **Team** |All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | 
+|[**Users**](entity-reference-general.md#users)|**User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | 
 |[**WorkItemBoardSnapshot**](#kanban-board-properties-fields) |**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | 
-|[**WorkItemLinks**](#workitemlink-properties)| **WorkItemLink** |The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | 
+|[**WorkItemLinks**](#workitemlinks)| **WorkItemLink** |The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | 
 |[**WorkItemRevisions**](#property-names-fields) |**WorkItemRevision** |All historic work item revisions, including the current revision. Doesn't include deleted work items. |  
 |[**WorkItemSnapshot**](#property-names-fields) |**WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, used to support trend reporting. For a sample report, see [Bug trends sample report](../powerbi/sample-boards-bugtrend.md).  |   
 |[**WorkItems**](#property-names-fields) |**WorkItem** |The current state of work items. Used to support status reports. For a sample report, see [Rollup child work item values to parent sample report](../powerbi/sample-boards-rollup.md). | 
-|[**WorkItemTypeFields**](#work-item-type-field-properties)|**WorkItemTypeField** |The work item properties for each work item type and process. Used to support building reports. |   
+|[**WorkItemTypeFields**](#workitemtypefields)|**WorkItemTypeField** |The work item properties for each work item type and process. Used to support building reports. |   
 
 ### About snapshots 
 
@@ -140,7 +140,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Original Estimate**<br/>`OriginalEstimate` | Double | A measure of the amount of work that is required to complete a task. <br/>`Microsoft.VSTS.Scheduling.OriginalEstimate`   | 
 |**Parent Work Item Id** <br/>`ParentWorkItemId` | Int32 | The unique ID that identifies the work item linked to as a parent. Useful for generating rollup reports. The **Parent** field is available from Azure DevOps Server 2020 and later versions. Valid for these entity types: `WorkItemRevision` and `WorkItem`. <br/>`System.Parent`   |  
 |**Priority**<br/>`Priority` | Int32 | A subjective rating of the bug, issue, task, or test case as it relates to the business. Values include: - **1**, **2**, or **3**. <br/> `Microsoft.VSTS.Common.Priority` |  
-|**Project Name**<br/>`ProjectName` | Navigation | Name of the project to which the work item belongs. For details, see [Calendar date, Project, and User metadata reference, Project properties](entity-reference-general.md#project-properties).<br/>`System.TeamProject`  | 
+|**Project Name**<br/>`ProjectName` | Navigation | Name of the project to which the work item belongs. For details, see [Calendar date, Project, and User metadata reference, Project properties](entity-reference-general.md#projects).<br/>`System.TeamProject`  | 
 |`ProjectSK`  | GUID | GUID assigned to the project to which the work item belongs.  | 
 |**Rating** <br/>`Reason` | String | The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response) The number is stored in the system and written as follows:- **0 - Not Rated**, **1 - Poor**, **2 - Fair**, **3 - Good**, **4 - Very Good**, and **5 - Excellent**.  Valid for these entity types: `WorkItemRevision` and `WorkItem`.<br/>`Microsoft.VSTS.Common.Rating`  | 
 | **Reason** <br/>`Reason` | String | The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason. <br/>`System.Reason`  | 
@@ -225,7 +225,7 @@ The following two functions are supported for the **WorkItem** entity. These fun
 <a id="kanban-board-properties-fields" /> 
 
 
-## Board location and snapshot properties  
+## BoardLocation and WorkItemBoardSnapshot    
 
 Properties listed and described in the following table are defined for the following entity types, unless specifically noted. With these fields, you can filter work item data based on the status of a work item within a team's Kanban board column, swimlane, or backlog level. 
 
@@ -269,7 +269,7 @@ To learn more about board columns for a team, see the following articles:
 - [Add columns to your Kanban board to manage your workflow](../../boards/boards/add-columns.md)
 - [Split columns on your Kanban board to show work in progress](../../boards/boards/split-columns.md) 
 
-## Area path properties
+## Areas 
 
 The following properties are valid for the **Area** entity type and **Areas** entity set, which are associated with the **Area Path** field. Surrogate keys associated with **Area** include `AreaSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on Area Path assignments. 
  
@@ -290,7 +290,7 @@ To learn more about **Area Paths**, see the following articles:
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) 
 
-## Iteration path properties 
+## Iterations
 
 The following properties are valid for the **Iteration** entity type and **Iterations** entity set, which are associated with the **Iteration Path** field. Surrogate keys associated with **Iteration** include `IterationSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on Iteration Path assignments. 
 
@@ -314,7 +314,7 @@ To learn more about **Iteration Paths**, see the following articles:
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
 - [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 
-## Process properties
+## Processes
 
 The following properties are valid for the **Process** entity type and **Processes** entity set. Surrogate keys associated with **Process** include `ProcessSK`, `ProjectSK`, and `TeamSK`. You can use these properties to filter or report on work tracking data based on work item types used by a project or team. 
 
@@ -350,9 +350,9 @@ Data for custom work item types are automatically added to the Analytics service
 A custom category is created when a custom work item type and backlog level are defined. `Custom_` is prepended to the category GUID. For example, for the **Portfolio** custom work item type with a Portfolios backlog, a GUID is assigned to the custom category, such as `Custom.49b81c4e-9c4f-4c04-94fd-d660cbf3a000`. 
 
 
-## Tag properties
+## Tags
 
-The following properties are valid for the **Tag** entity type and **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#project-properties) and it's referential constraint `ProjectSK`.
+The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and it's referential constraint `ProjectSK`.
 
 You can use these properties to filter or report on work tracking data. 
 
@@ -362,7 +362,7 @@ You can use these properties to filter or report on work tracking data.
 |**Tag Name** | `TagName` | String | The tag name.  |   
  
 
-## Team properties
+## Teams
 
 The following properties are valid for the **Team** entity type and **Teams** entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on adding a team, see [Create or add a team](../../organizations/settings/add-teams.md).
 
@@ -376,7 +376,7 @@ The following properties are valid for the **Team** entity type and **Teams** en
 Navigation properties for the **Team** entity type and **Teams**  entity set include `Project`, `Areas`, and `Iterations`.
 
 
-## WorkItemLink properties
+## WorkItemLinks
 
 The following properties are valid for the **WorkItemLink** entity type and **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. 
 Query the **WorkItemLink** to report on parent/child, related, predecessor/successor or other link types. 
@@ -408,9 +408,9 @@ To learn more about links and link types, see the following articles:
 <a id="work-item-type-field-properties" /> 
 
 
-## WorkItemTypeField properties 
+## WorkItemTypeFields
  
-The following properties are valid for the **WorkItemTypeField** entity type and **WorkItemTypeFields** entity set. The property reference keys are `FieldName`, `ProjectSK`, and `WorkItemType`. 
+The following properties are valid for the **WorkItemTypeFields** entity set. The property reference keys are `FieldName`, `ProjectSK`, and `WorkItemType`. 
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -438,10 +438,7 @@ Custom fields are automatically added to the Analytics service as a custom prope
 <Annotation Term="Display.Description" String="Risk Reduction | Opportunity Enablement Value. Enter a value from 1 to 5. 5 represents high risk reduction or high opportunity enablement."/>
 </Property>
 ```
-
-
-
-
+ 
 
 <!--- CMMI specific fields not added to navigation properties --> 
 

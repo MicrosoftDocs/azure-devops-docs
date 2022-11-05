@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2022
+ms.date: 11/04/2022
 ---
 
 
@@ -20,15 +20,15 @@ The entity types and entity sets listed in the following table can be used to fi
 > [!div class="mx-tdCol2BreakAll"]  
 > |EntitySet|  EntityType | Description |  
 > |----------------------|-------------|-------------|  
-> | [**Dates*](#calendar-date-properties) |[**CalendarDate**](#calendar-date-properties) | The dates used to filter and group other entities using relationships.  |  
-> |[**Projects**](#project-properties)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
-> |[**Users**](#user-properties)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
+> | [**Dates**](#dates) |**CalendarDate** | The dates used to filter and group other entities using relationships.  |  
+> |[**Projects**](#projects)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
+> |[**Users**](#users)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
 
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
 
 
-## Calendar date properties 
+## Dates 
 
 The following properties are valid for the **CalendarDate** entity type. The surrogate key associated with **CalendarDate** is `DateSK`. You can specify calendar date properties to filter and structure reports.  
 
@@ -85,7 +85,7 @@ The following members are defined for the `Period` enumerated type that you can 
 |`All`                   | 2047         | All                     |      
 
 
-## Projects properties
+## Projects
 
 The following properties are valid for the **Projects** entity set and its surrogate key `ProjectSK`. When generating an organization scoped query, you can focus on one or more projects by specifying  one or more **Project Names**. To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md). 
 
@@ -116,7 +116,7 @@ The following members are defined for the `ProjectVisibility` enumerated type.  
 
 
 
-## Users properties
+## Users
 
 The following properties are valid for the **Users** entity set and **User** entity type with surrogate key `UserSK`.
 
