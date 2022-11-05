@@ -57,6 +57,9 @@ To learn about the number of items or entities defined in an organization or pro
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/Users?$apply=aggregate($count as Count)
 > ```
  
+> [!TIP] 
+> Cross-project queries fail when the user running the query doesn't have access to all the projects. Read more about requirements in [Project and organization-scoped queries](account-scoped-queries.md).
+
 ### Project count
 
 > [!div class="tabbedCodeSnippets"]
