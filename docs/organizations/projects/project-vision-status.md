@@ -54,7 +54,7 @@ Each project provides a **Summary** or home page to share information and showca
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   
-> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
+> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../projects/about-projects.md)
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 

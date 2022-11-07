@@ -43,7 +43,7 @@ Use this index to quickly access concepts and tasks related to managing projects
    :::column span="":::
 - [Project and process object limits](../settings/work/object-limits.md)  
 - [Projects page](../../project/navigation/work-across-projects.md)  
-- [Public vs private projects](../public/about-public-projects.md)  
+- [Public vs private projects](about-projects.md)  
 - [Security groups](../security/about-permissions.md)  
 - [Service hooks](../../service-hooks/overview.md)  
 - [Service visibility](../settings/set-services.md)  
