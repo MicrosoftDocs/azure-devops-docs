@@ -530,7 +530,7 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 * Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
 
 > [!IMPORTANT]
-> The UTC time zones in YAML scheduled triggers don't account for daylight savings time.
+> The UTC time zones in YAML scheduled triggers don't account for daylight saving time.
 
 > [!TIP]
 > When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`
