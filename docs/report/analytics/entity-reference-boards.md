@@ -17,7 +17,7 @@ ms.date: 11/04/2022
 
 The Analytics service collects all work tracking activity defined and updated through Azure Boards.  Analytics stores as properties all work tracking fields, except for HTML/rich-text and History fields. Custom properties for custom fields are automatically added to  Analytics. 
 
-This article describes the majority of properties that you can use to generate an Analytics report for work tracking. You use a combination of properties to filter a query, aggregate data, or build a report. You can run these queries directly in your browser. To learn more, see [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md). If you're new to work tracking and Azure Boards, we recommend you review the following articles: 
+This article describes the majority of properties that you can use to generate an Analytics report for work tracking. You use a combination of properties to filter a query, aggregate data, or build a report. You can run these queries directly in your browser. To learn more, see [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md). If you're new to work tracking and Azure Boards, we recommend you review the following articles: 
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Track user stories, issues, bugs, and other work items in Azure Boards](../../boards/work-items/about-work-items.md)   
 

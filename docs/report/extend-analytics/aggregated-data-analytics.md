@@ -278,7 +278,7 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 
 ## Related articles 
 
-- [Query your work tracking data using OData Analytics](wit-analytics.md)  
+- [Define basic queries using OData Analytics](wit-analytics.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 <!--- REMOVING THIS CONTENT AS IT IS NOW DUPLICATED 

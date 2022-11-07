@@ -56,7 +56,7 @@ By default, all the snapshot tables are modeled as *daily snapshot fact* tables.
 When you aggregate data for a snapshot entity, you should include the `DateSK` or a `DateValue` column in a `groupby` clause as described in the [OData query guidelines](../extend-analytics/odata-query-guidelines.md#restrict-aggregate-snapshot). For example reports that specify a date filter, see the following articles: 
  
 - [Query trend data](../extend-analytics/querying-for-trend-data.md)
-- [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md)
+- [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md)
 - [Calculate time-in-state for an existing Analytics view](../powerbi/create-timeinstate-report.md) 
 - [Bug trends sample report](../powerbi/sample-boards-bugtrend.md)
 - [Lead time and Cycle time sample report](../powerbi/sample-boards-leadcycletime.md)
@@ -113,7 +113,6 @@ The following members are defined for the `ProjectVisibility` enumerated type.  
 |`Private`             | 0            | Private                |  
 |`Organization`        | 1            | Organization           |   
 |`Public`              | 2            | Public                 |     
-
 
 
 ## Users
