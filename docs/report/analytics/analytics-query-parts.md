@@ -184,6 +184,7 @@ The following code snippet provides a partial view of the metadata for the `Work
 > ...
 > ```
  
+<a id="construct-basic-query" />
 
 ## URL components to query entities 
 
@@ -260,6 +261,8 @@ For entity metadata property and relationship information, see the following art
 - [Metadata reference for Azure Pipelines](entity-reference-pipelines.md)
 - [Metadata reference for Test Plans](entity-reference-test-plans.md)
 
+
+<a id="query-entity-set" />
 
 ### Example: Query a specific entity set
 

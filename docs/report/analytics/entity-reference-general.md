@@ -17,12 +17,12 @@ ms.date: 11/04/2022
 
 The entity types and entity sets listed in the following table can be used to filter and build reports based on Analytics data. 
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |EntitySet|  EntityType | Description |  
-> |----------------------|-------------|-------------|  
-> | [**Dates**](#dates) |**CalendarDate** | The dates used to filter and group other entities using relationships.  |  
-> |[**Projects**](#projects)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
-> |[**Users**](#users)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
+
+|EntitySet|  EntityType | Description |  
+|----------------------|-------------|-------------|  
+| [**Dates**](#dates) |**CalendarDate** | The dates used to filter and group other entities using relationships.  |  
+|[**Projects**](#projects)|  **Project** |Projects defined for an organization (cloud) or project collection (on-premises). |  
+|[**Users**](#users)|  **User** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. |  
 
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
@@ -100,9 +100,9 @@ The following properties are valid for the **Projects** entity set and its surro
 
 The following navigation properties are valid for the **Project** entity type.
 
-- [Areas](entity-reference-boards.md#area-path-properties)
-- [Iterations](entity-reference-boards.md#iteration-path-properties)
-- [Teams](entity-reference-boards.md#team-properties)
+- [Areas](entity-reference-boards.md#areas)
+- [Iterations](entity-reference-boards.md#iterations)
+- [Teams](entity-reference-boards.md#teams)
 
 ### ProjectVisibility enumerated type members 
 

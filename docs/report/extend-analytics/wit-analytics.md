@@ -123,7 +123,7 @@ To return a count of items along with select data for the items, specify the `$c
  
 <a id="select-columns" />
 
-## Select specific columns or fields 
+## Return specific properties or fields 
 
 To return specific properties or work item fields, add a `$select` clause that specifies the property names. 
 
@@ -217,7 +217,7 @@ For example, the following query specifies to return work items of type *User St
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
 
 
-<a id="return-identity-fields" />
+<a id="filter-navigation-field" />
 
 ## Return data for Identity, Area Path, and Iteration Path fields
  
@@ -311,38 +311,38 @@ And here is an example that returns information assigned to work item ID *480*.
 > https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?$filter=WorkItemId eq 480&$select=WorkItemId,WorkItemType,Title,State&&$expand=Iteration
 >	
 > @odata.context	"https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)"
-	> value	
-		> 0	
-		> WorkItemId           480
-		> Title                "Customer Phone - Phase 1"
-		> WorkItemType	       "Feature"
-		> State	               "In Progress"
-		> Iteration	
-		>    ProjectSK	       "56af920d-393b-4236-9a07-24439ccaa85c"
-		>    IterationSK	   "c7063041-ff3a-4d7f-bb46-c433c7030d59"
-		>    IterationId	   "c7063041-ff3a-4d7f-bb46-c433c7030d59"
-		>    IterationName	   "Sprint 1"
-		>    Number	            55297
-		>    IterationPath	    "Fabrikam Fiber\\Release 1\\Sprint 1"
-		>    StartDate	        "2022-01-17T00:00:00-08:00"
-		>    EndDate	        "2022-02-04T23:59:59.999-08:00"
-		>    IterationLevel1	"Fabrikam Fiber"
-		>    IterationLevel2	"Release 1"
-		>    IterationLevel3	"Sprint 1"
-		>    IterationLevel4	null
-		>    IterationLevel5	null
-		>    IterationLevel6	null
-		>    IterationLevel7	null
-		>    IterationLevel8	null
-		>    IterationLevel9	null
-		>    IterationLevel10	null
-		>    IterationLevel11	null
-		>    IterationLevel12	null
-		>    IterationLevel13	null
-		>    IterationLevel14	null
-		>    Depth	            2
-		>    IsEnded	        true
-		> AnalyticsUpdatedDate	"2022-01-18T22:18:58.17Z"
+> value	
+>   0	
+>       WorkItemId           480
+>       Title                "Customer Phone - Phase 1"
+>       WorkItemType	       "Feature"
+>       State	               "In Progress"
+>       Iteration	
+>           ProjectSK	       "56af920d-393b-4236-9a07-24439ccaa85c"
+>           IterationSK	       "c7063041-ff3a-4d7f-bb46-c433c7030d59"
+>           IterationId	       "c7063041-ff3a-4d7f-bb46-c433c7030d59"
+>           IterationName	   "Sprint 1"
+>           Number	            55297
+>           IterationPath	    "Fabrikam Fiber\\Release 1\\Sprint 1"
+>           StartDate	        "2022-01-17T00:00:00-08:00"
+>           EndDate	            "2022-02-04T23:59:59.999-08:00"
+>           IterationLevel1	    "Fabrikam Fiber"
+>           IterationLevel2	    "Release 1"
+>           IterationLevel3	    "Sprint 1"
+>           IterationLevel4	    null
+>           IterationLevel5	    null
+>           IterationLevel6	    null
+>           IterationLevel7	    null
+>           IterationLevel8	    null
+>           IterationLevel9	    null
+>           IterationLevel10	null
+>           IterationLevel11	null
+>           IterationLevel12	null
+>           IterationLevel13	null
+>           IterationLevel14	null
+>           Depth	            2
+>           IsEnded	        	true
+>       AnalyticsUpdatedDate	"2022-01-18T22:18:58.17Z"
 > ```
 
 As you can see, the Iteration Path is expanded in the result and all of the iteration data is returned. It's probably more data than you want.  
