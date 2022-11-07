@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/04/2022
+ms.date: 11/07/2022
 ---
 
 # Make your private project public
