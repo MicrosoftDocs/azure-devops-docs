@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 11/04/2022
+ms.date: 11/07/2022
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 11/04/2022
 
 The Analytics service collects all data for all Azure DevOps test activities. Azure Test Plans supports the definition and execution of planned and exploratory tests. And with Azure Pipelines, you can also execute automated tests with Continuous Integration/Continuous Deployment (CI/CD) workflows. 
 
-If you are new to Azure DevOps testing, we recommend you review the following articles: 
+If you're new to Azure DevOps testing, we recommend you review the following articles: 
 - [What is Azure Test Plans?](../../test/overview.md)
 - [Test objects and terms](../../test/test-objects-overview.md)  
 - [About pipeline tests](../../pipelines/test/test-glossary.md)
@@ -36,7 +36,7 @@ To query Analytics for Test Plan data, use one or more of the entity types and e
 > Analytics for Azure DevOps testing is supported with **v3.0-preview** and **v4.0-preview** versions.  
 > Analytics stores all test-related work items as work items. You can query and generate reports on this data using the work tracking entities described in [Work tracking metadata reference for Azure Boards Analytics](entity-reference-boards.md). 
 
-|EntitySet | Entitytype | Description | 
+|`EntitySet` | `EntityType` | Description | 
 |-----------|-------------|-----------|-------------|
 |[**Tests**](#tests)| **Test** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | 
 |[**TestConfigurations**](#testconfigurations) | **TestConfiguration** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md).  | 
@@ -44,7 +44,7 @@ To query Analytics for Test Plan data, use one or more of the entity types and e
 |[**TestPointHistorySnapshot**](#testpointhistorysnapshot) | **TestPointHistorySnapshot** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md).| 
 |[**TestResults**](#testresults) | **TestResult** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  
 |[**TestResultsDaily**](#testresultsdaily) | **TestResultDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun). For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). | 
-|[**TestRuns**](#testruns) | **TestRun** | Execution information for tests run under a pipeline with aggregated test results. |  
+|[**TestRuns**](#testruns) | **TestRun** | Execution information with aggregated test results for tests that are run under a pipeline. |  
 |[**TestSuites**](#testsuites) | **TestSuite**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
 
 
@@ -52,7 +52,7 @@ To query Analytics for Test Plan data, use one or more of the entity types and e
 
 The following properties are valid for the **Test** entity type and **Tests** entity set. Surrogate key is `TestSK`.  
 
-Navigational properties include [`Project`](entity-reference-general.md#projects) and it's referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -73,11 +73,11 @@ The following properties are valid for the **TestConfiguration** entity type and
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
 |**Test Configuration Id** | `TestConfigurationId` | Int32 | The number (not the ID) assigned to a test case.  | 
-|**Test Configuration Name** | `Name`  | String | Name assigned to the test configuraton.   |  
+|**Test Configuration Name** | `Name`  | String | Name assigned to the test configuration.   |  
 |**Test Configuration State** | `State` | String | The state of the test configuration, either Active or Inactive.   |  
 
 
-Navigational properties include [`Project`](entity-reference-general.md#projects) and it's referential constraint `ProjectSK`.
+Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
  
 
 ## TestPoints
@@ -210,7 +210,7 @@ The following properties are valid for the **TestResults** entity set. Surrogate
 |**Started Date** | `StartedDate`  | DateTime |The date-time when the test result started execution.  |    
 |**Test Result Id** | `TestResultId` | Int32 | The number assigned to a test result.  |   
 |**Test Run Id** | `TestRunId` | Int32 | The number assigned to a test run.  |   
-|**Test Run Type** | `TestRunType` | Enumerated | Indicates if it is a manual or automated test type. Valid values are listed below for [TestRunType](#testruntype-enumerated-type-members). |     
+|**Test Run Type** | `TestRunType` | Enumerated | Indicates if it's a manual or automated test type. Valid values are listed below for [TestRunType](#testruntype-enumerated-type-members). |     
 |**Test Outcome** | `Outcome` | Enumerated | The  test run outcome. There are 15 possible outcomes for a test result: Aborted, Blocked, Error, Failed, Inconclusive, In progress, None, Not applicable, Not executed, Not impacted, Passed, Paused, Timeout, Unspecified, and Warning. Valid values are listed below for [TestOutcome](#testoutcome-enumerated-type-members).   |     
 |**Workflow** | `Workflow` | Enumerated  | The pipeline workflow type. Valid values are listed below for [SourceWorkflow](#sourceworkflow-enumerated-type-members).   | 
  
@@ -280,7 +280,7 @@ The following properties are valid for the **TestResultsDaily** entity set. Surr
 |**Result Not Impacted Count** | `ResultNotImpactedCount` | Int32 | The number of test outcomes reported as *Not Impacted* for the test result daily.    |  
 |**Result Duration Seconds** | `ResultDurationSeconds` | Decimal | The number of seconds it took for the test result to complete.   |    
 |**Started Date** | `StartedDate`  | String | The date-time of the start of the test result.    |   
-|**Test Run Type** | `TestRunType` |  Enumerated | Indicates if it is a manual or automated test type. Valid values are listed under [TestRunType](#testruntype-enumerated-type-members). |
+|**Test Run Type** | `TestRunType` |  Enumerated | Indicates if it's a manual or automated test type. Valid values are listed under [TestRunType](#testruntype-enumerated-type-members). |
 |**Workflow** | `Workflow` | Enumerated |  The pipeline workflow type. Valid values are listed under [SourceWorkflow](#sourceworkflow-enumerated-type-members). |
 
 
@@ -309,9 +309,9 @@ The following properties are valid for **TestRuns** and its surrogate key `TestR
 |**Is Automated** | `IsAutomated` | Boolean | Indicates whether details are provided for the test run (True) or not (False).   | 
 |**Priority**     | `Priority` | Int32 | The version assigned to a pipeline task.  |    
 |**Completed Date** | `CompletedDate` | DateTime | The date-time of the completion of the test run or test result.  | 
-|**Release Id**   | `ReleaseId` | Int32 | The snumber assigned to the associated release definition.     |  
+|**Release Id**   | `ReleaseId` | Int32 | The number assigned to the associated release definition.     |  
 |**Release Environment Id** | `ReleaseEnvironmentId` | Int32 | The number assigned to the associated release environment.   |  
-|**Release Pipeline Id** | `ReleasePipelineId` | Int32 | The number assigned to the associated releasepipeline.   |  
+|**Release Pipeline Id** | `ReleasePipelineId` | Int32 | The number assigned to the associated release pipeline.   |  
 |**Release Stage Id** | `ReleaseStageId` | Int32 | The number assigned to the associated release pipeline stage.   |  
 |**Result Aborted Count** | `ResultAbortedCount` | Int32 | The number of test outcomes reported as *Aborted* for the test run or test result daily.   |  
 |**Result Blocked Count** | `ResultBlockedCount` | Int32 | The number of test outcomes reported as *Blocked* for the test run or test result daily.    |        
@@ -319,7 +319,7 @@ The following properties are valid for **TestRuns** and its surrogate key `TestR
 |**Result Duration Seconds** | `ResultDurationSeconds` | Decimal | The number of seconds that the test run required to execute.   |   
 |**Result Error Count** | `ResultErrorCount` | Int32 | The number of test outcomes reported as *Error* for the test run or test result daily.   |  
 |**Result Fail Count** | `ResultFailCount` | Int32 | The number of test outcomes reported as *Failed* for the test run or test result daily. |  
-|**Result Flaky Count** | `ResultFlakyCount` | Int32 | The number of test outcomes marked as flacky. A flaky Test is a test that intermittently fails for no apparent reason, such as a change to the code or test.  For more information, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md).    |    
+|**Result Flaky Count** | `ResultFlakyCount` | Int32 | The number of test outcomes marked as flaky. A flaky test is a test that intermittently fails for no apparent reason, such as a change to the code or test.  For more information, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md).    |    
 |**Result Inconclusive Count** | `ResultInconclusiveCount` | String |  The number of test outcomes reported as *Inconclusive* for the test run or test result daily.   |  
 |**Result Pass Count** | `ResultPassCount` | Int32 | The number of test outcomes reported as *Passed* for the test run or test result daily.  |   
 |**Result Timeout Count** | `ResultTimeoutCount` | Int32 | The number of test outcomes reported as *Timeout* for the test run or test result daily.  |  
@@ -330,7 +330,7 @@ The following properties are valid for **TestRuns** and its surrogate key `TestR
 |**Run Duration Seconds** | `RunDurationSeconds` | Decimal | The state of the test configuration, either Active or Inactive.   
 |**Started Date** | `StartedDate`  | DateTime | The date-time of the start of the test run.    |   
 |**Test Run Id** | `TestRunId` | Int32 | The number assigned to a test run.  |  
-|**Test Run Type** | `TestRunType` |  Enumerated | Indicates if it is a manual or automated test type. Valid values are listed under [TestRunType](#testruntype-enumerated-type-members). |
+|**Test Run Type** | `TestRunType` |  Enumerated | Indicates if it's a manual or automated test type. Valid values are listed under [TestRunType](#testruntype-enumerated-type-members). |
 |**Title** | `Title` | String | The GUID assigned to a pipeline task.  | 
 |**Workflow** | `Workflow` | Enumerated |  The pipeline workflow type. Valid values are listed under [SourceWorkflow](#sourceworkflow-enumerated-type-members). |
 
@@ -358,12 +358,12 @@ The following properties are valid for  **TestSuites** and its surrogate key `Te
 |-----------------|--------------------|---------------|--------------------------------------|  
 |  |`AnalyticsUpdatedDate` | DateTime | Watermark that indicates the last time the Analytics data was updated.  | 
 |**Test Plan Id** | `TestPlanId` | Int32 | The number (not the ID) assigned to a test case.  | 
-|**Test Suite Id** | `TestSuiteId`  | Int32 | Name assigned to the test configuraton.   |  
+|**Test Suite Id** | `TestSuiteId`  | Int32 | Name assigned to the test configuration.   |  
 |**Test Plan Title** | `TestPlanTitle` | String | The state of the test configuration, either Active or Inactive.   |  
 |**Test Suite Title** | `Title` | Int32 | The number (not the ID) assigned to a test case.  | 
-|**OrderId** | `OrderId`  | Int32 | Name assigned to the test configuraton.   |  
-|**Test Suite Level 1 Id** thru **Test Suite Level 14 Id** | `IdLevel1` thru`IdLevel14` | Int32 | The level of a nested test suite.   |  
-|**Test Suite Level 1 Title** thru **Test Suite Level 14 Title** | `TitleLevel1` thru `TitleLevel14` | String | The name of the nested test suite level.   | 
+|**OrderId** | `OrderId`  | Int32 | Name assigned to the test configuration.   |  
+|**Test Suite Level 1 Id** through **Test Suite Level 14 Id** | `IdLevel1` through`IdLevel14` | Int32 | The level of a nested test suite.   |  
+|**Test Suite Level 1 Title** through **Test Suite Level 14 Title** | `TitleLevel1` through `TitleLevel14` | String | The name of the nested test suite level.   | 
 |**Test Suite Depth** | `Depth`  | Byte | The nested level of a test suite within a test plan.   |  
 |**Test Suite Type** | `Type` | Enumerated | Specifies the type of test suite. Valid values are listed for [TestSuiteType](#testsuitetype-enumerated-type-members) enumerated type.|  
 |**Test Plan Id** | `TestPlanId` | Int32 | The number (not the ID) assigned to a test plan.  | 

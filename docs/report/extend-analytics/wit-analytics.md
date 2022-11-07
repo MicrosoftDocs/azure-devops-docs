@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/04/2022
+ms.date: 11/07/2022
 ---
 
 # Define basic queries using OData Analytics
@@ -18,7 +18,7 @@ ms.date: 11/04/2022
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return data of interest. You can run these queries directly in your browser or within Power BI. 
 
-This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries is this article are focused on retrieving work item data, however, the principles apply for querying other entity sets.
+This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md). Also, the queries in this article are focused on retrieving work tracking entity sets, however, the principles apply for querying other entity sets.
 
 In this article you'll learn how to define queries that return the following data:  
 
@@ -108,7 +108,7 @@ To learn about the number of items or entities defined in an organization or pro
 
 ## Return a count of items and data 
 
-To return a count of items along with select data for the items, specify the `$count=true` query option. For example, the following queries return a counts of work items, Area Paths, and users defined for a project along with the specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
+To return a count of items along with select data for the items, specify the `$count=true` query option. For example, the following queries return a count of work items, Area Paths, and users defined for a project along with the specified properties. For valid properties, see [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) and [Calendar date, Project, and User metadata reference for Azure DevOps Analytics](../analytics/entity-reference-general.md).
 
 > [!TIP]  
 > If you don't specify the properties to return, Analytics will return all properties defined for the specified entity type. 
@@ -127,7 +127,7 @@ To return a count of items along with select data for the items, specify the `$c
 
 To return specific properties or work item fields, add a `$select` clause that specifies the property names. 
 
-For example, to return the **Work Item ID**, **Work Item Type**, **Title**, and **State** of work items, add the following clause to your query which specifies the corresponding field properties.  
+For example, to return the **Work Item ID**, **Work Item Type**, **Title**, and **State** of work items, add the following clause to your query. This clause specifies the properties that correspond to the named fields.  
 
 > [!NOTE]  
 > Property names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing. To understand how custom field properties are labeled, see [Metadata reference for Azure Boards, Custom properties](../analytics/entity-reference-boards.md#custom-properties).
@@ -252,14 +252,14 @@ For example, the following clause specifies to filter work items based on *Itera
 
 In this example, `Iteration` is the navigation property name and `IterationPath` corresponds to the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
 
-And, here is the full OData query:
+And, here's the full OData query:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'
 > ```
 
-Here is another example that requests the top 5 work items under the *Fabrikam Fiber\Service Delivery\Voice* Area Path are returned. 
+Here's another example that requests the top five work items under the *Fabrikam Fiber\Service Delivery\Voice* Area Path are returned. 
 
 > [!div class="tabbedCodeSnippets"]
 > ``` OData
@@ -300,11 +300,11 @@ Here is another example that requests the top 5 work items under the *Fabrikam F
 > [!TIP]  
 > You can't use the navigation property directly in a `$select` statement. Instead, you need to use `$expand`.  
 
-The previous filtering example for the Iteration Path doesn't return the iteration path  in the results because it's contained in a related entity. To return data in a related entity, add an `$expand` statement:
+The previous filtering example for the Iteration Path doesn't return the iteration path because it's contained in a related entity. To return data in a related entity, add an `$expand` statement:
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration`
 
-And here is an example that returns information assigned to work item ID *480*. 
+And here's an example that returns information assigned to work item ID *480*. 
 
 > [!div class="tabbedCodeSnippets"]
 > ``` OData

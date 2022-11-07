@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/04/2022
+ms.date: 11/07/2022
 ---
 
 
@@ -35,7 +35,7 @@ Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other
 > [!NOTE]  
 > To generate status and trend reports on test-specific work item types, query the `WorkItems` and `WorkItemSnapshot` entity types and filter based on the work item type. For information on test runs, test results, or other test data, query the `TestRuns`, `TestPoints`, `TestResultsDaily`, `TestSuite` or `TestPointHistorySnapshot` entity types. To learn more, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
 
-|EntitySet  | EntityType  | Description | 
+|`EntitySet`  | `EntityType`  | Description | 
 |------------|-------------|-------------|  
 |[**Areas**](#areas) | **Area** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | 
 |[**Dates**](entity-reference-general.md#dates)|**CalendarDate**|The dates used to filter and group other entities using relationships.| 
@@ -271,7 +271,7 @@ To learn more about board columns for a team, see the following articles:
 
 ## Areas 
 
-The following properties are valid for the **Area** entity type and **Areas** entity set, which are associated with the **Area Path** field. Surrogate keys associated with **Area** include `AreaSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on Area Path assignments. 
+The following properties are valid for the **Areas** entity set, which is associated with the **Area Path** field. Surrogate keys associated with **Area** include `AreaSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on Area Path assignments. 
  
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -292,7 +292,7 @@ To learn more about **Area Paths**, see the following articles:
 
 ## Iterations
 
-The following properties are valid for the **Iteration** entity type and **Iterations** entity set, which are associated with the **Iteration Path** field. Surrogate keys associated with **Iteration** include `IterationSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on Iteration Path assignments. 
+The following properties are valid for the **Iterations** entity set, which is associated with the **Iteration Path** field. Surrogate keys associated with **Iteration** include `IterationSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on Iteration Path assignments. 
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -303,7 +303,7 @@ The following properties are valid for the **Iteration** entity type and **Itera
 |**IsEnded** | `IsEnded` | Boolean | When set to True, indicates that the Iteration Path End Date is in the past.   |   
 |**Iteration Id** | `IterationId` | GUID | Unique identifier assigned to an Iteration Path when it's created.  | 
 |**Iteration Level 1** through<br/>**Iteration Level 14** | `IterationLevel1` through<br/>`IterationLevel14`  | String | The name associated with the node level of an iteration path. Up to 14 nested levels are supported. For example, the Iteration Level 1 always corresponds to the root node and the project name.   | 
-|**Iteration Name** | `IterationName` | String | Name defined for the an Iteration Path when it's created.  | 
+|**Iteration Name** | `IterationName` | String | Name defined for an Iteration Path when it's created.  | 
 |**Iteration Path** | `IterationPath` | String |  Full path of the Iteration Path starting with the root node. The iteration must be a valid node in the project hierarchy.  <br/>`System.IterationPath`    | 
 |**Start Date** | `StartDate` | DateTime | Start date defined for the Iteration Path.   |  
 
@@ -332,7 +332,7 @@ You can use these properties to filter on work tracking data based on a backlog 
 |**Backlog Name** | `BacklogName` | Boolean | The reference name assigned to the backlog associated with the work item type  |   
 |**Backlog Type** | `BacklogType` | GUID | Unique identifier assigned to an Iteration Path when it's created.  | 
 |**Backlog Level** | `BacklogLevel`  | String | Specifies the backlog level associated with the work item type<!---, where 1 corresponds to the top-level portfolio backlog-->. If the work item type isn't associated with a backlog level, the value returned is `null`.  | 
-|**Work Item Type** | `WorkItemType` | String | Name defined for the a work item type.  | 
+|**Work Item Type** | `WorkItemType` | String | Name defined for a work item type.  | 
 |**Has Backlog** | `HasBacklog` | String |  Indicates if the work item type belongs to a backlog.      | 
 |**Is Hidden Type** | `IsHiddenType` | Boolean | Indicates if the work item type has been disabled.   |  
 |**Is Bug Type** | `IsBugType` | Boolean | Indicates if the work item type belongs to the Bug category.   | 
@@ -352,7 +352,7 @@ A custom category is created when a custom work item type and backlog level are 
 
 ## Tags
 
-The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and it's referential constraint `ProjectSK`.
+The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
 You can use these properties to filter or report on work tracking data. 
 
