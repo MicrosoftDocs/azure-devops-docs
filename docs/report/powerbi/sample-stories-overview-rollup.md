@@ -37,7 +37,7 @@ An example is shown in the following image.
 
 ### Query area and iteration paths
 
-In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
+In order to scope your report to a particular Area or Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/analytics-recipes.md#area) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
 
 ### Query for percentage of hours completion for requirements
 
