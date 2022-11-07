@@ -75,7 +75,7 @@ To sign up for Azure DevOps with a GitHub account, complete the following steps.
 
     For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
-6. Fill in your name, email address, and country.
+6. Fill in your name, email address, and country/region.
     
     ![Fill in name, email address, and country](media/fill-in-details-devops-github.png)
 

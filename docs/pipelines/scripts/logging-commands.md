@@ -19,9 +19,9 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 |Type  |Commands  |
 |---------|---------|
-|Task commands     |    [LogIssue](#logissue-log-an-error-or-warning), [SetProgress](#setprogress-show-percentage-completed),  [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [AddAttachment](#addattachment-attach-a-file-to-the-build), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable) |
+|Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
-|Build commands     |  [UploadLog](#uploadlog-upload-a-log), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [AddBuildTag](#addbuildtag-add-a-tag-to-the-build) |
+|Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
 
 
