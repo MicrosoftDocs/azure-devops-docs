@@ -16,8 +16,8 @@ monikerRange: azure-devops
 
 Use this task in a pipeline to publish your artifacts(note that publishing is NOT supported in release pipelines. It's supported in multi-stage pipelines, build pipelines, and yaml pipelines).
 
-> [!TIP]
-> Looking to get started with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
+> [!NOTE]
+> Publish Pipeline Artifacts is not supported in on-premises. Please use [Publish Build Artifacts](./publish-build-artifacts.md) if you're using Azure DevOps Server or TFS 2018.
 
 ## YAML snippet
 
