@@ -117,7 +117,7 @@ To learn more, see [What are Analytics views?](what-are-analytics-views.md).
 
 ## Metadata & OData queries
 
-Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. To learn how, see [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md).
+Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. To learn how, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
  
 If you would like to prepare custom queries and tooling with our OData API, review [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
 
