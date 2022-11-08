@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2022
+ms.date: 11/08/2022
 ---
 
 # Link user stories, issues, bugs, and other work items in Azure Boards  
@@ -162,6 +162,30 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 You'll need to bulk save the work items you've modified. 
 
 * * *
+
+<a id="change-link-type" />  
+
+::: moniker range="azure-devops"
+
+
+## Change the link type of an existing link
+
+> [!NOTE]   
+> The **Edit link** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+ 
+1. Open the work item whose link you want to edit, and choose the **Links** tab.  
+
+1. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** for the link you want to change, and then choose the **Edit link** option.
+
+	:::image type="content" source="media/add-link/change-link-type.png" alt-text="Screenshot of Links tab, open More actions, choose Edit link option.":::
+
+1. Choose the link type to change to, and then choose **Save**.
+
+	:::image type="content" source="media/add-link/edit-link-dialog.png" alt-text="Screenshot of Edit link dialog. ":::
+
+1. Save the work item to complete the action.
+
+::: moniker-end
 
 
 ## Link to a new work item   
