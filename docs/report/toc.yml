@@ -5,7 +5,7 @@
   displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
 - name: Get started
   items:
-  - name: Quick reference
+  - name: Dashboards quick reference
     href: dashboards/quick-ref.md
   - name: Add, rename, & delete dashboards
     href: dashboards/dashboards.md

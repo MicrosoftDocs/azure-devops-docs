@@ -59,7 +59,7 @@
     href: ../settings/set-services.md
     displayname: project, settings, disable, pipeline, repository
   - name: Set project visibility
-    href: ../public/make-project-public.md
+    href: ../projects/make-project-public.md
     displayname: make, change, vs, repo, repository,
   - name: Save project data
     href: save-project-data.md
@@ -68,5 +68,10 @@
     href: resources-granted-to-project-members.md
     displayname: scope, group, organization, project, collection
 - name: Public projects
-  href: ../public/about-public-projects.md
-  displayname: share, code, continuous, integration, deployment, services, migrate
+  items:
+  - name: About public projects
+    href: about-projects.md#use-private-and-public-projects
+    displayname: public, project, private, feature, access
+  - name: Change project to public or private
+    href: make-project-public.md
+    displayname: public, project, private, visibility, access

@@ -318,7 +318,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="15"><strong>2022 Q4</strong></td>
+        <td rowspan="14"><strong>2022 Q4</strong></td>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -370,11 +370,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget data-raw-source="[Pull Request widget to allow for the selection of many repos](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query data-raw-source="[Rollup columns for query results](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
@@ -447,9 +442,9 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[swimlane rules on kanban board](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
+      </tr>     
       <tr>
-        <td rowspan="3"><strong>2023 Q2</strong></td>
+        <td rowspan="4"><strong>2023 Q2</strong></td>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -462,6 +457,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automate rules for updating work items](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
+        <td>Future</td>
+      </tr>
+       <tr>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query data-raw-source="[Rollup columns for query results](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
