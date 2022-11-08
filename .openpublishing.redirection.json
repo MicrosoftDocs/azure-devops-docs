@@ -81,8 +81,93 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/organizations/public/about-public-projects.md",
+      "redirect_url": "/azure/devops/organizations/projects/about-projects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/public/browse-code-public.md",
+      "redirect_url": "/azure/devops/repos/git/find-a-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/clone-git-repo-public.md",
+      "redirect_url": "/azure/devops/repos/git/clone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/code-search-public.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/create-public-project.md",
+      "redirect_url": "/azure/devops/organizations/projects/create-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/default-roles-access-public.md",
+      "redirect_url": "/azure/devops/organizations/security/permissions-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/feature-differences.md",
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/glossary-public.md",
+      "redirect_url": "/azure/devops/organizations/projects/about-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/invite-users-public.md",
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/migration-checklist.md",
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public#migration-checklist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/service-limits-public.md",
+      "redirect_url": "/azure/devops/user-guide/service-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/view-build-release-public.md",
+      "redirect_url": "/azure/devops/pipelines/release/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/view-filter-work-items-public.md",
+      "redirect_url": "/azure/devops/boards/work-items/quick-ref",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/view-project-dashboard-public.md",
+      "redirect_url": "/azure/devops/report/dashboards/dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/view-wiki-public.md",
+      "redirect_url": "/azure/devops/project/wiki/wiki-create-repo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/work-item-search-public.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/marketplace/uninstall-disable-extensions.md",
       "redirect_url": "/azure/devops/marketplace/install-extension#uninstall-disable-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/make-project-public.md",
+      "redirect_url": "/azure/devops/organizations/projects/make-project-public",
       "redirect_document_id": false
     }
   ]

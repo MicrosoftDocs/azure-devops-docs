@@ -285,7 +285,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - Set project description
-      - [Change the project visibility, public or private](../public/make-project-public.md)
+      - [Change the project visibility, public or private](../projects/make-project-public.md)
    :::column-end:::
    :::column span="2":::
       Update the project description or change its visibility.

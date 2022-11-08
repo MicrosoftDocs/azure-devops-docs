@@ -59,7 +59,7 @@ For more information about managing the different wiki types, see [Provisioned v
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), open your project, and then select **Overview** > **Wiki**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot showing selection of wiki tab.](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
+   > ![Screenshot showing selection of wiki tab.](media/open-wiki-vert-brn.png)
 
 If you need to switch projects, select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to [browse all projects](../navigation/work-across-projects.md).  
 
