@@ -14,17 +14,17 @@ ms.subservice: azure-devops-repos-tfvc
 # What is Team Foundation Version Control?
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
-Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/index.yml), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
+Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/index.yml), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using TFVC. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
 
 ## Why use version control?
 
-Without version control, you're tempted to keep multiple copies of code on your computer. This is dangerous, as it's easy to change or delete a file in the wrong copy of code, potentially losing work. Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
+Without version control, you're tempted to keep multiple copies of code on your computer. This is dangerous, because it's easy to change or delete a file in the wrong copy of code, potentially losing work. Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
 
 Version control systems provide the following benefits:
 
@@ -38,7 +38,7 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 ## Team Foundation Version Control
 
-Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
+TFVC is a centralized version control system. Typically, team members have only one version of each file on their development machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Team Foundation Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
 
@@ -60,9 +60,9 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 ## What do you want to do?
 
-- [Set up your dev machine and get started](set-up-team-foundation-version-control-your-dev-machine.md)    
+- [Set up your development machine and get started](set-up-team-foundation-version-control-your-dev-machine.md)    
 
-  Spend a few minutes to set up your dev machine to take advantage of all the benefits of a version-controlled codebase.
+  Spend a few minutes to set up your development machine to take advantage of all the benefits of a version-controlled codebase.
 
 - [Choose your workflow model - server or local workspaces](decide-between-using-local-server-workspace.md)
 
