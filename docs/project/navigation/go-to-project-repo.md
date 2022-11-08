@@ -102,7 +102,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 1. Choose **Repos>Files**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Screenshot showing Open Code, new nav](../../organizations/projects/media/browse-code/open-code-vert-brn.png) 
+	> ![Screenshot showing Open Code, new nav.](../../organizations/projects/media/browse-code/open-code-vert-brn.png) 
 
 1. Select the repository of interest from the repository selector.  
 	> [!div class="mx-imgBorder"]
