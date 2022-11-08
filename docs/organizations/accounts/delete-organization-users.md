@@ -19,7 +19,7 @@ monikerRange: '>= azure-devops-2019'
 If users no longer require access to a team, project, or organization, you can remove their access. 
 
 > [!IMPORTANT]
-> - [Removing a user from a project](#remove-users-from-a-team-or-project) doesn’t remove the user from the organization.
+> - [Removing a user from a team or project](#remove-users-from-a-team-or-project) doesn’t remove the user from the organization.
 > - Work items that are assigned to the user aren't affected by removing user access.
 > - Azure Active Directory (Azure AD)-backed organizations: 
 >    - After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
