@@ -34,9 +34,9 @@ Entity types are named structured types with a key. They define the named proper
 
 Entity sets are named collections of entities. For example, **WorkItems** is an entity set containing **WorkItem** entities. An entity's key uniquely identifies the entity within an entity set. If multiple entity sets use the same entity type, the same combination of key values can appear in more than one entity set and identifies different entities, one per entity set where this key combination appears. Each of these entities has a different entity-id. Entity sets provide entry points into the data model.
 
-Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. To learn how, see [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md).
+Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. To learn how, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
 
-[!INCLUDE [temp](../includes/api-versioning.md)]
+
 
 
 ### Composite entities

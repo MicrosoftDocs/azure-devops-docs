@@ -176,7 +176,7 @@ You can review usage for the service and for individuals by going to **Organizat
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
-- [Query the Analytics service in Azure DevOps](analytics-query-parts.md)
+- [Construct OData queries for Analytics](analytics-query-parts.md)
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md) 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 

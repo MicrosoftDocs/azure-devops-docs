@@ -35,7 +35,7 @@ sections:
       - question: How can non-contributors view or modify work items?  
         answer: |
           ::: moniker range="azure-devops"
-          For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [About public projects](../organizations/public/about-public-projects.md).   
+          For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [Make a private project public](../organizations/projects/make-project-public.md).   
           Also, if your organization uses Azure Active Directory to manage user access, you can [add external users to your organization](../organizations/accounts/add-external-user.md).
           ::: moniker-end
 
