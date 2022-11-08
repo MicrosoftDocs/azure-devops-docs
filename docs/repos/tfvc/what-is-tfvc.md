@@ -1,11 +1,11 @@
 ---
 title: What is Team Foundation Version Control
 titleSuffix: Azure Repos
-description: Use Team Foundation Version Control
+description: Find out how to get started with Team Foundation Version Control (TFVC), a centralized version control system. Understand the benefits of using version control.
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 07/13/2022
+ms.date: 11/08/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -40,7 +40,7 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 TFVC is a centralized version control system. Typically, team members have only one version of each file on their development machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Team Foundation Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
+TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Azure DevOps Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md), you can identify the exact changes that they made.
 
 
 ### Quickstarts 
@@ -53,9 +53,9 @@ Get started by creating a project, configuring your workspace, and reviewing and
 
 ### Step-by-step tutorials  
 
-Learn the basics of working in TFVC with the following tutorial which shows a day in the life of a devops developer using Visual Studio and TFVC.
+Learn the basics of working in TFVC with the following tutorial, which shows a day in the life of a DevOps developer using Visual Studio and TFVC.
 
-* [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+* [Day in the life of a DevOps developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
 * [Visual Studio: Review Code](get-code-reviewed-vs.md)
 
 ## What do you want to do?
@@ -94,7 +94,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   You can compare server folders and local folders to each other, and view the differences between the contents of each folder.
 
-- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
+- [Resolve TFVC conflicts](resolve-team-foundation-version-control-conflicts.md) 
 
   A big advantage of using version control is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts. Although it can be frustrating to encounter conflicts, the system provides information and tools to help you understand and resolve conflicts.
 
@@ -102,21 +102,19 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   When you need to prevent a file or folder from being checked out and altered, you can lock it.
 
-<a id="command-line-only" />
-
 ## Operations available only from the tf command line  
 
-The following table lists tasks for Team Foundation version control that you can perform only at a command prompt using the **tf** command line tool.
+The following table lists tasks for TFVC that you can perform only at a command prompt by using the `tf` command line tool.
 
-| Task| Command  | 
+| Task | Command | 
 |-------------------------------|-------------------|
-| Delete another user's workspace.| Workspace Command with the /delete option. | 
-| Undo another user's check-out.|  Undo command| 
-| Remove another user's lock.| Lock  command|  
-| Define label scope.| Label  command| 
-| Perform a baseless merge.| Merge  command| 
-| Permanently destroy content.| Destroy  command| 
-| Roll back the effect of one or more changesets.| Rollback  command| 
+| Delete another user's workspace.| `workspace` with the `/delete` option | 
+| Undo another user's check-out.|  `undo`| 
+| Remove another user's lock.| `lock`|  
+| Define label scope.| `label`| 
+| Perform a baseless merge.| `merge`| 
+| Permanently destroy content.| `destroy`| 
+| Roll back the effect of one or more changesets.| `rollback`| 
 
 ## Related articles 
 
