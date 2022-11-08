@@ -8,15 +8,27 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2022
+ms.date: 11/08/2022
 ---
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
+Use this index to quickly access concepts and tasks related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> The following features require that you enable the **New Boards Hub** preview feature. These features are only available for Azure DevOps Services at this time. To enable the **New Boards Hub**, see [Manage or enable features](../../project/navigation/preview-features.md).
+ 
+> - [Change the link type of an existing link](../backlogs/add-link.md#change-link-type)
+> - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
+> - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
+> - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position)
+
+::: moniker-end
 
 
 <a id="concepts" />
@@ -105,7 +117,7 @@ Use this index to quickly access concepts related to work items and information 
 
 ## Work item user tasks
 
-Tasks listed below are available to users with Contributor permissions and Basic access.  
+Tasks listed below are available to users with **Contributor** permissions and **Basic** access.  
 
 ---
 :::row:::
@@ -127,6 +139,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [Bulk modify work items (Web)](../backlogs/bulk-modify-work-items.md)  
       <br/>
       - [Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)  
+      - [Change the link type](../backlogs/add-link.md#change-link-type)
       - [Change work item type](../backlogs/move-change-type.md#change-the-work-item-type)  
       - [Copy or clone a work item](../backlogs/copy-clone-work-items.md)  
       - [Copy work item URL](work-item-form-controls.md#copy-the-url)  
@@ -170,7 +183,8 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [Manage bugs](../backlogs/manage-bugs.md)  
       - [Manage issues or impediments](../backlogs/manage-issues-impediments.md)
       - [Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
-      - [Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)  
+      - [Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) 
+      - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position) 
       - [Move work items to a sprint](../sprints/assign-work-sprint.md)  
       - [Move work items to another project](../backlogs/move-change-type.md#move)  
       <br/>
@@ -181,6 +195,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [Query for work items](../queries/using-queries.md)  
    :::column-end:::
    :::column span="1":::
+      - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
       - [Reassign work items](../backlogs/bulk-modify-work-items.md#reassign-work-items)
       - [Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)  
       - [Request feedback ](../../project/feedback/get-feedback.md)  

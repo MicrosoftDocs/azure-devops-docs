@@ -132,7 +132,7 @@ Tasks or other child items you add as checklists are automatically assigned to t
 
 <a id="checklist-actions" /> 
 
-::: moniker range=">= azure-devops-2022"
+::: moniker range="azure-devops"
 
 ## Reassign a checklist item 
 
