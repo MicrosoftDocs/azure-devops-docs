@@ -81,9 +81,9 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/organizations/public/about-public-projects",
+      "source_path": "docs/organizations/public/about-public-projects.md",
       "redirect_url": "/azure/devops/organizations/projects/about-projects",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/public/browse-code-public.md",
@@ -111,7 +111,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/organizations/public/feature-differences",
+      "source_path": "docs/organizations/public/feature-differences.md",
       "redirect_url": "/azure/devops/organizations/projects/make-project-public#access-levels-and-unavailable-features-for-public-projects",
       "redirect_document_id": true
     },
