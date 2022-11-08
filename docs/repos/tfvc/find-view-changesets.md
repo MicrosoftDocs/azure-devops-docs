@@ -92,7 +92,7 @@ The **Changeset Details** page in **Team Explorer** has links to do the followin
 
    The **Details for Changeset** dialog box appears.
 
-   ![Screenshot of the Details for Changeset dialog box.](media/find-view-changesets/IC615597.png)
+   ![Screenshot of the Details for Changeset dialog box.](media/find-view-changesets/details-for-changeset.png)
 
 1. In the **Details for Changeset** dialog box, view the changes and change types, and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
 
