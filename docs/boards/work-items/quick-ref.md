@@ -22,7 +22,6 @@ Use this index to quickly access concepts and tasks related to work items and in
 
 > [!NOTE]   
 > The following features require that you enable the **New Boards Hub** preview feature. These features are only available for Azure DevOps Services at this time. To enable the **New Boards Hub**, see [Manage or enable features](../../project/navigation/preview-features.md).
- 
 > - [Change the link type of an existing link](../backlogs/add-link.md#change-link-type)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
@@ -161,10 +160,11 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       ::: moniker-end
-   :::column-end:::
-   :::column span="1":::
+      <br/>
       - [Email work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
+   :::column-end:::
+   :::column span="1":::
       - [Filter a backlog, board, or plan](../backlogs/filter-backlogs-boards-plans.md)  
       - [Filter the History tab](../queries/history-and-auditing.md#filter-history)  
       - [Follow a work item](follow-work-items.md)  
@@ -253,7 +253,7 @@ You customize work item types using either the Inheritance process model or On-p
 ::: moniker range=">= azure-devops-2020"
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add a checkbox (Boolean) field](../../organizations/settings/work/customize-process-field.md#boolean-field)  
       - [Add a custom field](../../organizations/settings/work/customize-process-field.md)  
       - [Add a custom work item type](../../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
@@ -297,7 +297,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add a custom field](../../organizations/settings/work/customize-process-field.md)  
       - [Add a custom work item type (WIT)](../../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields from a WIT](../../organizations/settings/work/customize-process-field.md)  
@@ -345,7 +345,7 @@ You customize work item types using the On-premises XML process model. For more 
 
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add a checkbox (Boolean) field](../../reference/add-modify-field.md)  
       - [Add a custom field](../../reference/add-modify-field.md)  
       - [Add a custom pick list](../../reference/add-modify-field.md#picklist)  
