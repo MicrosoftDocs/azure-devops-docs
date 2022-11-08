@@ -83,5 +83,5 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
 - [Move, Rename, and Delete Version-Controlled Files and Folders](rename-move-files-folders.md)
 - [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)
-- [What is TFVC?, Operations available only from the tf command-line](what-is-tfvc.md#command-line-only)
+- [What is TFVC?, Operations available only from the tf command-line](what-is-tfvc.md#operations-available-only-from-the-tf-command-line)
 - [Team Foundation Version Control Command-Line Reference](use-team-foundation-version-control-commands.md)

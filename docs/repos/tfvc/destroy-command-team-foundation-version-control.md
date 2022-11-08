@@ -246,6 +246,6 @@ Where x123 is the deletion ID.
 ## Related articles
 
 - [Destroy Version Controlled Files](destroy-version-controlled-files.md)
-- [What is TFVC?, Operations available only from the tf command-line](what-is-tfvc.md#command-line-only)
+- [What is TFVC?, Operations available only from the tf command-line](what-is-tfvc.md#operations-available-only-from-the-tf-command-line)
 
 
