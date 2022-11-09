@@ -60,9 +60,9 @@ The **Changeset Details** page in **Team Explorer** has links to do the followin
 
 - **Track** determines which branches have and haven't received a set of changes. See [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
 
-- Under **Actions**, **Request Review** requests a code review.
+- **Request Review** under **Actions** requests a code review.
 
-- Under **Actions**, **Open in Browser** opens the changeset in your browser. For example, you can copy the URL into an email to discuss the change with your team.
+- **Open in Browser** under **Actions** opens the changeset in your browser. For example, you could copy the URL into an email to discuss the change with your team.
 
 ## Search for changesets
 
@@ -80,11 +80,11 @@ The **Changeset Details** page in **Team Explorer** has links to do the followin
 
    - Under **Range**, optionally choose one of the following ranges:
 
-   - **All changes** retrieves all changesets that were applied to that file or folder.
+     - **All changes** retrieves all changesets that were applied to that file or folder.
 
-   - **Changeset number** retrieves changesets from a range of numbers. In the **From** and **To** boxes, type the range.
+     - **Changeset number** retrieves changesets from a range of numbers. In the **From** and **To** boxes, type the range.
 
-   - **Created date** retrieves changesets from a range of dates. In the **Between** and **And** boxes, specify start and end dates.
+     - **Created date** retrieves changesets from a range of dates. In the **Between** and **And** boxes, specify start and end dates.
 
 1. Select **Find**. Changesets that match your criteria appear in the **Results** list.
 
@@ -94,7 +94,7 @@ The **Changeset Details** page in **Team Explorer** has links to do the followin
 
    ![Screenshot of the Details for Changeset dialog box.](media/find-view-changesets/details-for-changeset.png)
 
-1. In the **Details for Changeset** dialog box, view the changes and change types, and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
+   In the **Details for Changeset** dialog box, you can view the changes and change types, and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
 
 1. Close the **Details for Changeset** and **Find Changesets** dialog boxes.
 
@@ -106,4 +106,4 @@ To find a changeset from the [command prompt](use-team-foundation-version-contro
 
 - To download the version of a file in a changeset, see [Download (get) files from the server](download-get-files-from-server.md).
 
-- To add a link between a changeset and one or more work items, see [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
+- To add a link between a changeset and one or more work items, see [Use links to view dependencies and track related work](../../boards/queries/link-work-items-support-traceability.md).

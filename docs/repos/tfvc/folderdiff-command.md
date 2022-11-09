@@ -63,7 +63,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    `<filter>`
    :::column-end:::
    :::column span="3":::
-   Specifies a semicolon-delimited list of inclusion and exclusion filter masks for the `/filter` option. The default is `*`, or include all. See [Remarks](#remarks) for a detailed description of filters and masks.
+   A semicolon-delimited list of inclusion and exclusion filter masks for the `/filter` option. The default is `*`, or include all. See [Remarks](#remarks) for a detailed description of filters and masks.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -71,7 +71,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection that contains the files for which you want to display and compare the differences, for example`http://myserver:8080/tfs/DefaultCollection`.
+   The URL of the project collection that contains the files for which you want to display and compare the differences, for example `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -162,7 +162,9 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
 :::row-end:::
 
 ## Remarks
-The command prompt window displays the output if you specify `/noprompt`. Otherwise, the Visual Studio **Folder Difference** window displays the output. When the system compares the local mapped folder to the server folder it's mapped to, the output in the **Folder Difference** window includes a list of pending changes. Also, the output in the **Folder Difference** window tells you whether or not the local folder contains the latest copy.
+The command prompt window displays the output if you specify `/noprompt`. Otherwise, the Visual Studio **Folder Difference** window displays the output.
+
+When the system compares the local mapped folder to the server folder it's mapped to, the output in the **Folder Difference** window includes a list of pending changes. Also, the output in the **Folder Difference** window tells you whether or not the local folder contains the latest copy.
 
 The output displayed in the command prompt window lists all the files in the folders in the following five sections:
 
@@ -170,12 +172,13 @@ The output displayed in the command prompt window lists all the files in the fol
 -   Items that exist only in the local folder.
 -   Items that have different contents.
 -   Items that have identical contents. You must specify the `same` argument with the `/view` option.
-
 -   Summary.
 
 ### File and folder filters
 
-A filter is an ordered list of name masks used to match the name of files and folders to be compared. Each mask can contain the question mark `?` wildcard character to match exactly one character and the asterisk `*` wildcard character to match zero or more characters. You delimit the masks in a filter by using semicolons `;`. Folder masks must end in a backslash `\`. To specify an exclusion mask, prefix the mask with an exclamation mark `!`.
+A filter is an ordered list of name masks used to match the name of files and folders to be compared. Masks can contain the question mark `?` wildcard character to match exactly one character, and the asterisk `*` wildcard character to match zero or more characters.
+
+You delimit the masks in a filter by using semicolons `;`. Folder masks must end in a backslash `\`. To specify an exclusion mask, prefix the mask with an exclamation mark `!`.
 
 The filter applies to the file and folder names by using the following rules:
 
@@ -204,7 +207,7 @@ The following table lists filter examples.
 
 |**Filter**|**Description**|
 |---|---|
-|`*.cs;!objd\;!obj\;!bin\` | Matches all C# files except those in *objd*, *obj*, or *bin* folders.|
+|`*.cs;!objd\;!obj\;!bin\` | Matches all C# files except the ones in *objd*, *obj*, or *bin* folders.|
 |`!*.resx;!*.ini;!resources\;!*junk*\` | Excludes all *.resx* and *.ini* files, all files in the *resources* folder, and all files in any folder that has a name that includes the word *junk*.|
 
 For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
@@ -216,7 +219,7 @@ The following example compares the files in the server folder and a local folder
 tf folderdiff $/<serverFolder> F:\<localFolder> /recursive /noprompt
 ```
 
-## Related articles
+## Next steps
 
 - [Compare folders](compare-folders.md)
 - [View file changes using annotate](view-file-changes-using-annotate.md)
