@@ -19,6 +19,21 @@ This article explains how filters are applied to historical revisions of the wor
 
 Both [Analytics Views](./what-are-analytics-views.md) and the [Burndown and Burnup widgets](../dashboards/configure-burndown-burnup-widgets.md) let you configure filters that scope the data set to your needs. Filters can scope the data to specific teams, work item types, or backlogs. Filters may also include the ability to filter on any field and a corresponding value. For example, you could filter work items to "Bugs" belonging to team "Admirals" that have the tag "Customer".
 
+<!---
+
+Snapshot entity types
+WorkItemRevisions 
+Revision property
+How filters are applied 
+Example reports that support historical reporting 
+Disabling analytics - deletes historical data. 
+RevisedDateSK 
+
+
+-->
+
+
+
 ## How filters are applied to historical data
 
 Filters are applied to each revision of a work item. For example, let's say we have a work item that has the following revisions:
