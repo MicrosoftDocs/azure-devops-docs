@@ -25,7 +25,7 @@ monikerRange: 'azure-devops'
 
 ## Create a project 
 
-If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/projects/about-projects.md). 
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 

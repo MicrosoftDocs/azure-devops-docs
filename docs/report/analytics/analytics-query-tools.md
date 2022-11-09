@@ -31,7 +31,7 @@ To help you get started, use the guidance provided in the following table to det
 
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
-- [Query the Analytics service in Azure DevOps](analytics-query-parts.md)
+- [Construct OData queries for Analytics](analytics-query-parts.md)
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md) 
 
 

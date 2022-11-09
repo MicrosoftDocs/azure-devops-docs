@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
-# Choose a branching strategies with a DevOps mindset  
+# Choose a branching strategy with a DevOps mindset  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -110,7 +110,7 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 
 **Lessons from the field - things to avoid**
 
-- Avoid going branch crazy!
+- Avoid having too many branches!
 	- **merging** changes comes with complexity and a cost
 	- there's no need to have a separate branch per environment
 - Avoid using **cherry-picking** to get your code to production

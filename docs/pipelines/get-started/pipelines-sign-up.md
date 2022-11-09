@@ -75,7 +75,7 @@ To sign up for Azure DevOps with a GitHub account, complete the following steps.
 
     For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
-6. Fill in your name, email address, and country.
+6. Fill in your name, email address, and country/region.
     
     ![Fill in name, email address, and country](media/fill-in-details-devops-github.png)
 
@@ -96,7 +96,7 @@ You're now prompted to create a project.
 
 ## Create a project
 
-You can create public or private projects. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md).
+You can create public or private projects. To learn more about public projects, see [What is a public project?](../../organizations/projects/about-projects.md).
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**.
 
@@ -155,7 +155,7 @@ You can rename your project or change its visibility. To learn more about managi
 
 - [Manage projects](../../organizations/projects/about-projects.md)
 - [Rename a project](../../organizations/projects/rename-project.md)
-- [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
+- [Change the project visibility, public or private](../../organizations/projects/make-project-public.md)
 
 ## Next steps  
 

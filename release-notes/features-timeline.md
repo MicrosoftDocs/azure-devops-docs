@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/11/2022
+ms.date: 11/2/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -160,9 +160,9 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types)">Ability to change link type from Web UI</a></td>
          <td>Boards</td>
-         <td>2022 Q4</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -274,7 +274,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing data-raw-source="[Auditing for checks](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/checks-auditing)">Auditing for checks</a></td>
+         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#audit-events-for-changes-to-approvals data-raw-source="[Auditing for checks](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#audit-events-for-changes-to-approvals)">Auditing for checks</a></td>
          <td>Pipelines</td>
          <td>2022 Q4</td>
          <td>Future</td>
@@ -318,7 +318,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="16"><strong>2022 Q4</strong></td>
+        <td rowspan="14"><strong>2022 Q4</strong></td>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters data-raw-source="[Maintain backlog hierarchy when filters are applied](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -327,14 +327,9 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url data-raw-source="[copy work item attachment url](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment url</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
+      </tr>     
       <tr>
-        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support data-raw-source="[Emoji support in work item tags](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/work-item-emoji-support)">Emoji support in work item tags</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/ability-to-change-link)">Ability to change link type from Web UI</a></td>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types data-raw-source="[Ability to change link type from Web UI](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types)">Ability to change link type from Web UI</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -375,11 +370,6 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget data-raw-source="[Pull Request widget to allow for the selection of many repos](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query data-raw-source="[Rollup columns for query results](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
@@ -452,9 +442,9 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules data-raw-source="[swimlane rules on kanban board](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
+      </tr>     
       <tr>
-        <td rowspan="3"><strong>2023 Q2</strong></td>
+        <td rowspan="4"><strong>2023 Q2</strong></td>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -467,6 +457,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules data-raw-source="[Automate rules for updating work items](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
+        <td>Future</td>
+      </tr>
+       <tr>
+        <td><a href=https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query data-raw-source="[Rollup columns for query results](https://learn.microsoft.com/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>

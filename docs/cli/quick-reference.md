@@ -77,11 +77,10 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Update a banner](../organizations/settings/manage-banners.md#update-a-banner)
       #### Extensions
       - [Install an extension](../marketplace/install-extension.md) 
-      - [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
-      - [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
+      - [List extensions](../marketplace/install-extension.md#list-extensions)
+      - [List extension information](../marketplace/install-extension.md#list-extension-information)
       - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
-      - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
-      - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
+      - [Uninstall/disable an extension](../marketplace/install-extension.md#uninstall-disable-extension) 
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
