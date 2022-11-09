@@ -97,9 +97,11 @@ Pull requests let designated reviewers examine, discuss, and vote on proposed ch
 1. From your web browser, open the team project for your Azure DevOps organization. Choose **Repo > Pull requests** to list the PRs. A newly opened PR defaults to the **Overview** tab.
 
 1. The **Overview** tab of a PR shows the title, description, reviewers, linked worked items, history, status, and comments. Read the PR description to see the proposed changes. View the comments to understand the issues raised by other reviewers.
-
+    >[!NOTE]
+    >Each file is estimated for a number of modifications and is marked with a "+" sign or a "rename, edit" label next to its name. When a file has more than 50% changes, it is considered *renamed*. This is the default threshold for git repositories that cannot be changed.
+    
     :::image type="content" source="media/review-pull-requests/2022/overview-tab.png" border="true" alt-text="Screenshot of the Azure Repos PR overview tab.":::
-
+    
 1. Select the **Files** tab to review all content changes in the PR's source branch. The initial view shows a summary view of all file changes. Choose the **View** button next to a file to view only that file's changes. If the file was modified, the **View** button opens a diff view. If the file was added or deleted, the **View** button opens a content pane.
 
     :::image type="content" source="media/review-pull-requests/2022/files-tab.png" border="true" alt-text="Screenshot of a change summary view in the Files tab of a P R." lightbox="media/review-pull-requests/2022/files-tab-lrg.png":::
@@ -151,7 +153,7 @@ Select the PR **Files** tab to view the actual changes made to the source branch
 > [!NOTE]
 > The different changes between Azure DevOps Pull request and Azure DevOps Branch compare is caused by the different comparison methods.
 
-There are two comparison methods for the git diff command. Two-dot (```git diff A..B```) and three-dot (```git diff A...B```). By default, pull requests show a three-dot diff while the Branch Comparison instead shows a two-dot diff.
+There are two comparison methods for git diff command: Two-dot (```git diff A..B```) and three-dot (```git diff A...B```). By default, Pull Requests show a three-dot diff while the Branch Comparison instead shows a two-dot diff.
 
 For example:
 ```
@@ -160,9 +162,10 @@ For example:
 A---B---F---G   master
 ```
 
-```git diff branch..master``` will retrieve C, D, E, F, G commits. While ```git diff branch...master``` will produce only F, G.
+Pull Requests: ```git diff branch...master``` will produce only F, G commits. 
+Branch Compare: ```git diff branch..master``` will produce C, D, E, F, G commits.
 
-Here are the relevant documentations about the git diff commands: [three-dot-and-two-dot-git-diff-comparisons](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests#three-dot-and-two-dot-git-diff-comparisons) & [git diff](https://git-scm.com/docs/git-diff)
+Here are the link for a relevant documentation with more detail: [three-dot-and-two-dot-git-diff-comparisons](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests#three-dot-and-two-dot-git-diff-comparisons) and [git diff](https://git-scm.com/docs/git-diff)
 
 :::image type="content" source="media/review-pull-requests/2020/pull-request-files.png" alt-text="Screenshot of a file diff view in the Files tab of an Azure Repos PR.":::
 
