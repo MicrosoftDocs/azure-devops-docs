@@ -55,7 +55,7 @@ When you query Analytics, you always specify an Analytics version. The latest ve
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md)
+> [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 
 ## Related articles
 

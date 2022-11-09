@@ -27,7 +27,7 @@ Guidelines are organized as simple recommendations prefixed with the terms **DO*
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
-> [!INCLUDE [temp](../includes/api-versioning.md)]
+> 
 
 
 

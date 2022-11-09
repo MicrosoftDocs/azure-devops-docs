@@ -5,7 +5,7 @@ description: Learn how to use Git commits to save your work into Git version con
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 03/04/2022
+ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,7 +13,7 @@ ms.subservice: azure-devops-repos-git
 # Save your work with commits
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Git doesn't automatically take snapshots of your work as you modify files in your repo. You tell Git what file changes you want to capture in a snapshot by staging specific changes. After staging, you save the snapshot by making a commit.
 
@@ -27,7 +27,6 @@ This article provides procedures for the following tasks:
 > * How to update your last commit
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
-
 
 ## How Git tracks changes
 
@@ -43,7 +42,6 @@ When you create a commit, only staged files and unmodified files are used for th
 
 Commits are created in your local Git repo. Each commit doesn't have to be perfect, and it might take several commits to accomplish an intended change. Create commits as you work, and when you're done you can [push](pushing.md) your commits to a remote repo to share your work with others.
 
-
 ## What's in a commit
 
 Each [commit](https://docs.github.com/en/rest/reference/git#commits) includes the following information:
@@ -53,7 +51,6 @@ Each [commit](https://docs.github.com/en/rest/reference/git#commits) includes th
 - A message describing the changes in the commit. You enter the message when you create the commit.
 
 Git uses the snapshot and parent reference(s) of each commit to maintain a complete record of development in the repo. To investigate changes in your code, you can review the [Git history](history.md) of your repo.
-
 
 <a name="stage-your-changes-and-commit"></a>
 
@@ -69,82 +66,57 @@ To exclude temp files, log files, or other files from your snapshot, you can con
 > [!NOTE]
 > Git supports interactive staging of edited files so you can choose to stage specific changes within a file. This is a useful feature when you want different file edits in different commits.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to stage file changes.
+[!INCLUDE [How to stage your changes](includes/commits-stage-your-changes.md)]
 
-:::row:::
-  :::column span="":::
+> [!NOTE]
+> Starting with Visual Studio 2022 version 17.3, Visual Studio supports staging partial changes within a file. For more information, see [Stage lines of code in Visual Studio](/visualstudio/version-control/git-line-staging?view=vs-2022&preserve-view=true).
 
-    **Visual Studio Git** <br><br>
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-    1. In the **Git Changes** window, right-click a file in the **Changes** section and choose **Stage** to add it into the **Staged Changes** section.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-       :::image type="content" source="media/commits/visual-studio-2019/git-experience/stage-files.png" border="true" alt-text="Screenshot of the Changes option in the 'Git Changes' window in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/git-experience/stage-files-lrg.png":::
+[!INCLUDE [How to stage your changes](includes/commits-stage-your-changes.md)]
 
-       Or, you can stage a changed file by selecting the plus sign next to the file. To stage all changed files in a folder, select the plus sign next to the folder. To stage all changed files in your repo, select the plus sign in the top-right corner of the **Changes** section.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-  :::column-end:::
-  :::column span="":::
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
 
-    **Visual Studio Team Explorer** <br><br>
+1. In **Team Explorer**, select the **Home** button and choose **Changes**.
 
-    1. In **Team Explorer**, select the **Home** button and choose **Changes**.
+   :::image type="content" source="media/commits/visual-studio-2019/team-explorer/changes.png" border="true" alt-text="Screenshot of the Changes option in Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/changes-lrg.png":::
 
-       :::image type="content" source="media/commits/visual-studio-2019/team-explorer/changes.png" border="true" alt-text="Screenshot of the Changes option in Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/changes-lrg.png":::
+1. In the **Changes** view, right-click a file in the **Changes** section and choose **Stage** to add it into the **Staged Changes** section.
 
-    2. In the **Changes** view, right-click a file in the **Changes** section and choose **Stage** to add it into the **Staged Changes** section.
+   :::image type="content" source="media/commits/visual-studio-2019/team-explorer/stage-files.png" border="true" alt-text="Screenshot of context menu with the 'Stage' option for files in the 'Change' view of Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/stage-files-lrg.png":::
 
-       :::image type="content" source="media/commits/visual-studio-2019/team-explorer/stage-files.png" border="true" alt-text="Screenshot of context menu with the 'Stage' option for files in the 'Change' view of Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/stage-files-lrg.png":::
-
-       Or, you can stage a changed file by dragging it from the **Changes** section to the **Staged Changes** section. To stage all changed files in a folder, right-click the folder and choose **Stage**. To stage all changed files in your repo, select the plus sign in the top-right corner of the **Changes** section.
-
-  :::column-end:::
-:::row-end:::
+   Or, you can stage a changed file by dragging it from the **Changes** section to the **Staged Changes** section. To stage all changed files in a folder, right-click the folder and choose **Stage**. To stage all changed files in your repo, select the plus sign in the top-right corner of the **Changes** section.
 
 You can tell Git to ignore a file by right-clicking it and selecting **Ignore this local item** or **Ignore this extension**. Either command creates a **.gitignore** file in your repo if it doesn't exist, and adds an entry to it. Ignored files won't appear in the **Changes** section in Visual Studio. However, the **.gitignore** file has no effect on tracked files. For information on how to configure Git to ignore tracked files, see [Ignore files](ignore-files.md). To save time, you can download **.gitignore** templates for various development environments from the GitHub [gitignore](https://github.com/github/gitignore) repo.
 
 > [!NOTE]
-> Visual Studio 2019 doesn't support staging partial changes within a file. Visual Studio 2022 introduces that feature.
-
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)] 
-
-Visual Studio keeps track of file changes to your project as you do your work. When you're ready to stage changes, open up the **Changes** view in Team Explorer.
-
-Stage individual file changes by right-clicking a file in the **Change** view and selecting **Stage**.
-Staging a change creates a **Staged Changes** section in Team Explorer. Only changes in the **Staged Changes** section are added to the next commit.
-
-:::image type="content" source="media/vs-stage-files.gif" border="false" alt-text="Stage files for your next commit using Team Explorer.":::
-
-> [!NOTE]
-> The Team Explorer **Changes** view had **Included Files** and **Excluded Files** sections before Visual Studio 2015 Update 2. The **Changes** view was updated in Visual Studio 2015 Update 2 for better compatibility with other Git tools.
-
-Stage multiple files or folders by selecting them then right-clicking and choosing **Stage** or by dragging and dropping files from the **Changes** list into the **Staged Changes** list.
-
-Ignore files by right-clicking and selecting **Ignore this local item** or **Ignore this extension**. This adds an entry to the **.gitignore** file in your local repo. If the ignored file was added to your repo in an earlier commit, ignoring the file won't remove it from the **Changes** list. See [excluding and ignoring files section](ignore-files.md) for more information on how to ignore files already tracked by Git.
-
+> Visual Studio 2019 doesn't support staging partial changes within a file.
 
 #### [Git Command Line](#tab/git-command-line)
 
 To stage all tracked and untracked files in your repo that have changed since the last commit, use the  `git add` command with the `--all` flag. However, the `--all` flag won't stage files that you've configured Git to [ignore](ignore-files.md).
 
-```
+```console
 git add --all
 ```
 
 You can stage changes to specific files with the following command.
 
-```
+```console
 git add <file path>
 ```
 
 You can [interactively stage](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---patch) parts of a changed file by using the `--patch` option.
 
-```
+```console
 git add --patch <file path>
 ```
 
@@ -159,98 +131,45 @@ For more information about these commands, see the [tutorial command reference](
 > [!TIP]
 > After you've staged files, review your staged and unstaged changes by running `git status`.
 
-
-* * *
-
+---
 
 ## How to create a commit
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to create a commit.
+[!INCLUDE [How to create a commit](includes/commits-create-commit.md)]
 
-:::row:::
-  :::column span="":::
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-    **Visual Studio Git** <br><br>
+[!INCLUDE [How to create a commit](includes/commits-create-commit.md)]
 
-    In the **Git Changes** window, enter a message that describes your staged changes and then select **Commit Staged**.
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-    :::image type="content" source="media/commits/visual-studio-2019/git-experience/commit-staged.png" border="true" alt-text="Screenshot showing the commit information link in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/git-experience/commit-all-lrg.png":::
+1. In the **Changes** view of **Team Explorer**, enter a message that describes your staged changes and then select **Commit Staged**.
 
-    Select the commit link for commit details.
+   :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-staged.png" border="true" alt-text="Screenshot of commit message text and 'Commit Staged' button in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-all-lrg.png":::
 
-    :::image type="content" source="media/commits/visual-studio-2019/git-experience/commit-confirmation.png" border="true" alt-text="Screenshot showing the commit details link the 'Git Changes' window in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/git-experience/commit-confirmation-lrg.png":::
+1. Select the commit link for commit details.
 
-  :::column-end:::
-  :::column span="":::
+   :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-confirmation.png" border="true" alt-text="Screenshot showing the commit details link in 'Team Explorer' in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-confirmation-lrg.png":::
 
-    **Visual Studio Team Explorer** <br><br>
-
-    In the **Changes** view of **Team Explorer**, enter a message that describes your staged changes and then select **Commit Staged**.
-
-    :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-staged.png" border="true" alt-text="Screenshot of commit message text and 'Commit Staged' button in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-all-lrg.png":::
-
-    Select the commit link for commit details.
-
-    :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-confirmation.png" border="true" alt-text="Screenshot showing the commit details link in 'Team Explorer' in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-confirmation-lrg.png":::
-
-  :::column-end:::
-:::row-end:::
-
->[!NOTE]
->If all your changes are unstaged, you can skip staging and directly commit by choosing **Commit All**.
->
->:::row:::
->  :::column span="":::
->
->    **Visual Studio Git** <br>
->
->    :::image type="content" source="media/commits/visual-studio-2019/git-experience/commit-all.png" border="true" alt-text="Screenshot of the 'Commit All' option in the 'Git Changes' window in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/git-experience/commit-all-lrg.png":::
->
->  :::column-end:::
->  :::column span="":::
->
->    **Visual Studio Team Explorer** <br>
->
->    :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-all.png" border="true" alt-text="Screenshot of the 'Commit All' option in the  'Changes' view of Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-all-lrg.png":::
->
->  :::column-end:::
->:::row-end:::
-
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
-Open the **Changes** view in Team Explorer.
-
-Enter a commit message describing your changes and select **Commit Staged** to create a new commit that includes the changes listed in the **Staged Changes** section.
-
-:::image type="content" source="media/vscommit.gif" border="false" alt-text="Create a commit from staged items in Visual Studio."::: 
-
-Skip staging files if you just want to commit all changes listed by entering a commit message and selecting **Commit All** when you have no staged changes.
-
-:::image type="content" source="media/vscommitall.gif" border="false" alt-text="Commit all changes without staging them first in Visual Studio.":::
-
-When you commit in Visual Studio you can [push](pushing.md) the commit and [sync](pulling.md) the branch with a remote repo.
-These options are available in the drop-down on the **Commit** button.
-
+   > [!NOTE]
+   > If all your changes are unstaged, you can skip staging and directly commit by choosing **Commit All**.
+   >
+   > :::image type="content" source="media/commits/visual-studio-2019/team-explorer/commit-all.png" border="true" alt-text="Screenshot of the 'Commit All' option in the  'Changes' view of Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/commit-all-lrg.png":::
 
 #### [Git Command Line](#tab/git-command-line)
 
 You can create a commit using the `git commit` command with the `-m` flag to specify a commit message. If you don't provide a commit message, Git will open up an editor so you can provide one.
 
-```
+```console
 git commit -m "<commit message>"
 ```
 
 > [!TIP]
 > Before making a commit, review your staged and unstaged changes by running `git status`.
 
-
-* * *
-
+---
 
 ## How to update your last commit
 
@@ -261,44 +180,21 @@ Git supports changing the staged files or message of your last commit. This oper
 > - Create and push another commit that fixes the issues caused by the prior commit.
 > - Undo the prior commit that was pushed, by using `git revert` to create a new commit that [reverts](undo.md) all changes made by the prior commit. Then push the new commit.
 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-#### [Visual Studio 2019](#tab/visual-studio-2019)
+[!INCLUDE [How to update your last commit](includes/commits-update-last-commit.md)]
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to amend a commit.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-:::row:::
-  :::column span="":::
+[!INCLUDE [How to update your last commit](includes/commits-update-last-commit.md)]
 
-    **Visual Studio Git** <br><br>
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-    In the **Git Changes** window, optionally stage one or more files, enter a commit message, select **Amend**, and then choose **Commit Staged**.
+In the **Changes** view of **Team Explorer**, stage one or more files, enter a commit message, and then choose **Actions > Amend Previous Commit**.
 
-     :::image type="content" source="media/commits/visual-studio-2019/git-experience/amend-commit.png" border="true" alt-text="Screenshot showing the 'Amend Previous Commit' option in the 'Git Changes' window of Visual Studio 2019." lightbox="media/commits/visual-studio-2019/git-experience/amend-commit-lrg.png":::
+:::image type="content" source="media/commits/visual-studio-2019/team-explorer/amend-commit.png" border="true" alt-text="Screenshot showing the 'Amend Previous Commit' option in the 'Changes' view of Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/amend-commit-lrg.png":::
 
-     The **Git Changes** window supports amending either the commit message, staged files, or both. When you select **Amend**, the identifier SHA for the previous commit is displayed.
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br><br>
-
-    In the **Changes** view of **Team Explorer**, stage one or more files, enter a commit message, and then choose **Actions > Amend Previous Commit**.
-
-     :::image type="content" source="media/commits/visual-studio-2019/team-explorer/amend-commit.png" border="true" alt-text="Screenshot showing the 'Amend Previous Commit' option in the 'Changes' view of Team Explorer in Visual Studio 2019." lightbox="media/commits/visual-studio-2019/team-explorer/amend-commit-lrg.png":::
-    
-     **Team Explorer** doesn't support amending the commit message without also amending one or more staged files.
-
-  :::column-end:::
-:::row-end:::
-
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-1. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
-2. Enter the updated commit message and select **Amend Previous Commit** from the **Actions** drop-down.
-
- :::image type="content" source="media/vs_amend_commit.png" border="false" alt-text="Amend a commit in Visual Studio.":::
-
+**Team Explorer** doesn't support amending the commit message without also amending one or more staged files.
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -306,18 +202,16 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 1. Use the `git commit` command with the `--amend` option and the `-m` flag to specify the new commit message.
 
-```
+```console
 git commit --amend -m "<new message>"
 ```
 
-* * *
-
+---
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Create work in branches](./create-branch.md)
-
 
 ## Related articles
 

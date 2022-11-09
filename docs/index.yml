@@ -209,7 +209,7 @@ additionalContent:
             - text: Projects
               url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Public projects
-              url: ./organizations/public/about-public-projects.md
+              url: ./organizations/projects/about-projects.md
             - text: Organizations
               url: ./organizations/accounts/organization-management.md
             - text: Pipeline agent pools & queues 

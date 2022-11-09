@@ -105,12 +105,8 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is a public project?
-            url: ../organizations/public/about-public-projects.md
+            url: ../organizations/projects/about-projects.md#use-private-and-public-projects
       - linkListType: quickstart
         links:
-          - text: Create a public project
-            url: ../organizations/public/create-public-project.md
-          - text: Invite users to your public project
-            url: ../organizations/public/invite-users-public.md
           - text: Make a private project public
-            url: ../organizations/public/make-project-public.md
+            url: ../organizations/projects/make-project-public.md

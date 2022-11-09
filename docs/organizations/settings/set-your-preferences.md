@@ -65,7 +65,7 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
 
    ![Screenshot to open Azure DevOps profile.](../../media/open-user-settings-profile-preview.png)
 
-2. From the **Profile** page, you can change the profile picture, display name, contact information, and country. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
+2. From the **Profile** page, you can change the profile picture, display name, contact information, and country/region. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI theme.
 
    ![Screenshot to choose and edit the Profile page.](media/edit-about-page-preview.png)
 
