@@ -71,7 +71,7 @@ For an overview of how links are used to support traceability, see [End-to-end t
 For an overview of which link types to use and link-related capabilities, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). In general, we recommend you follow these guidelines:
 
 - For work items that appear on your backlogs, both product and portfolio, use the **Parent** and **Child** link types to create a hierarchy and group work. To quickly link many backlog work items within a hierarchy, see [Organize your backlog, map child work items to parents](organize-backlog.md).
-- When linking work items with **Parent** and **Child** link types, avoid nesting work items of the same type. While the system allows you to nest work items of the same type&mdash;such as, linking bugs to bugs or bugs to user stories when tracking both types on your product backlog&mdash;it can cause problems. For example, drag-and-drop of work items on a backlog or display of items on a Kanban board may not work. To learn more, see [Fix display, reordering, and nesting issues](resolve-backlog-reorder-issues.md). 
+- When linking work items with **Parent** and **Child** link types, avoid nesting work items of the same type. While the system allows you to nest work items of the same type--such as, linking bugs to bugs or bugs to user stories when tracking both types on your product backlog--it can cause problems. For example, drag-and-drop of work items on a backlog or display of items on a Kanban board may not work. To learn more, see [Fix display, reordering, and nesting issues](resolve-backlog-reorder-issues.md). 
 - To track dependencies of work items, use the **Predecessor** and **Successor** link types.  
 - For all other general tracking purposes, use the **Related** link type. 
 
@@ -103,9 +103,9 @@ The following link relationships are restricted:
 When you link work items, you select a link type. In general, use the following link types as indicated. To learn more about each link type, see [Link type reference](../queries/link-type-reference.md). 
 
 - Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active  
-- Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
+- Use the **Parent/Child** link types when you want to break down work items into smaller items--for example, break down features into stories, or stories into tasks
 - Use  **Predecessor-Successor** link types when you want to track tasks that must be completed before others can be started; this link type is most often used when you plan work using Project 
-- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
+- Use the **Related** link type when the work items being linked are at the same level--such as two user stories that define features that overlap one another--or to link work items that are defined in different projects or managed by different teams.
 
 
 #### [Browser](#tab/browser/)
@@ -382,7 +382,7 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 To remove one or more linked work items from a single work item, enter the [az boards work-item relation remove](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-remove) command.
 
-Required parameters include the ID of the work item to remove the link from and the link type. You can only remove links to work items defined in the same organization. You can specify any of the supported link types except except remote link types. 
+Required parameters include the ID of the work item to remove the link from and the link type. You can only remove links to work items defined in the same organization. You can specify any of the supported link types except remote link types. 
 
 You must specify the target work item ID. You can specify multiple values by separating IDs or URLs with a comma.
 
