@@ -63,7 +63,7 @@ Requested reviewers see the code review request in **Team Explorer**, look at th
 
    ![Screenshot of the file link on the Code Review page.](media/get-code-reviewed-vs/code-review.png)
 
-1. In the difference window, you can press Ctrl+Shift+K and add comments.
+1. To add comments, in the difference window, select the code to comment on, right-click, and select **Add comment**. You can also press Ctrl+Shift+K.
 
    ![Screenshot showing a comment added and the Send Comments button.](media/get-code-reviewed-vs/comment.png)
 
