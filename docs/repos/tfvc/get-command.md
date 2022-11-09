@@ -1,7 +1,7 @@
 ---
 title: Get command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Get files or folders that are under TFVC version control by using the tf get command.
+description: Get files or folders that are under TFVC version control by using the get command.
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.service: azure-devops-repos
 ms.topic: reference
@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The Team Foundation Version Control (TFVC) `get` command gets, or downloads, either the latest version or a specified version of one or more files or folders from Azure DevOps Server to the workspace. The `get` command provides a different user interface than Visual Studio, but the process is fundamentally the same. For more information about using Visual Studio to get files and folders, see [Download (get) files from the server](download-get-files-from-server.md).
+The Team Foundation Version Control (TFVC) `get` command gets, or downloads, either the latest version or a specified version of one or more files or folders from Azure DevOps Server to the workspace. The `tf get` command provides a different user interface than Visual Studio, but the process is fundamentally the same. For more information about using Visual Studio to get files and folders, see [Download (get) files from the server](download-get-files-from-server.md).
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="3":::
    You can use this option to restore an item that you've accidentally deleted from a server workspace. If you use a [local workspace](decide-between-using-local-server-workspace.md), which is recommended, it's unlikely that you'll have to use this option.
    
-   TFVC maintains an internal record of all the items the workspace contains, including the version of each. By default, when you get files, if the internal record on the server indicates the workspace already has the version you're getting, it does not retrieve the item. This option gets all items regardless of the data the internal record contains.
+   TFVC maintains an internal record of all the items the workspace contains, including the version of each. By default, when you get files, if the internal record on the server indicates the workspace already has the version you're getting, it doesn't retrieve the item. This option gets all items regardless of the data the internal record contains.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -82,7 +82,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    `/noautoresolve`
    :::column-end:::
    :::column span="3":::
-   By default, the system automatically attempts to `AutoResolve All`. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md). Specify this option to disable this default behavior.
+   By default, the system automatically attempts to **AutoResolve All** conflicts. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md). Specify this option to disable this default behavior.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -90,7 +90,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    `/noprompt`
    :::column-end:::
    :::column span="3":::
-   Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   Suppresses the display of Visual Studio windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -98,7 +98,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    `/overwrite`
    :::column-end:::
    :::column span="3":::
-   By default, the system doesn't retrieve an item if it's writable, that is, its read-only attribute is cleared, on the client machine. This option overrides the default behavior and overwrites a writable item, unless the item is checked out. If you use a [local workspace](decide-between-using-local-server-workspace.md) as recommended, it's unlikely that you'll have to use this option.
+   By default, the system doesn't retrieve an item if it's writable, that is its read-only attribute is cleared, on the client machine. This option overrides the default behavior and overwrites a writable item, unless the item is checked out. If you use a [local workspace](decide-between-using-local-server-workspace.md) as recommended, it's unlikely that you'll have to use this option.
 
    
    :::column-end:::
@@ -137,6 +137,18 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
+
+## Remarks
+
+- If you're beginning a new task, it's probably a good idea to run `tf get` to download the latest files from the server before you check out files and begin your work. You can run `tf get` from any folder in your workspace.
+
+- As needed, `tf get` creates folders on disk to contain the child items that the command downloads.
+
+- You can view information about the history of an item by using the [History command](history-command.md) and the [Changeset command](changeset-command.md).
+
+- If you're concerned about what changes might occur to the files in the workspace, you can use the `/preview` option to see the changes that would occur without actually implementing them.
+
+- Conflicts could block your `get`. A typical cause of conflicts is trying to get an item on which you have pending changes. You can use the [Resolve command](resolve-command.md) to resolve these conflicts.
 
 ## Examples
 
@@ -196,7 +208,7 @@ c:\code\SiteApp\Main>tf get /v:15
 
 ### Synchronize a workspace to match a labeled version of the team's codebase
 
-The following example synchronizes the workspace to match the items in the codebase that are [labeled](use-labels-take-snapshot-your-files.md) **LastKnownGood**:
+The following example synchronizes the workspace to match the items in the codebase that are [labeled](use-labels-take-snapshot-your-files.md) `LastKnownGood`:
 
 ```
 c:\code\SiteApp\Main>tf get /v:LLastKnownGood
@@ -204,16 +216,5 @@ c:\code\SiteApp\Main>tf get /v:LLastKnownGood
 
 - The name and content of every labeled item in the workspace is changed to match the state it was in on the server.
 - Labeled items that were deleted are restored to the workspace.
-- Items that are not labeled on the server are deleted from the workspace.
+- Items that aren't labeled on the server are deleted from the workspace.
 
-## Tips
-
-- If you're beginning a new task, it's probably a good idea for you to run `tf get` to download the latest files from the server before you check out files and begin your work. You can run `tf get` from any folder in your workspace.
-
-- As needed, `tf get` creates folders on disk to contain the child items that the command downloads.
-
-- You can view information about the history of an item by using the [History command](history-command.md) and the [Changeset command](changeset-command.md).
-
-- If you're concerned about what changes might occur to the files in the workspace, you can use the `/preview` option to see the changes that would occur without actually implementing them.
-
-- Conflicts could block your `get`. A typical cause of conflicts is trying to get an item on which you have pending changes. You can use the [Resolve command](resolve-command.md) to resolve these conflicts.

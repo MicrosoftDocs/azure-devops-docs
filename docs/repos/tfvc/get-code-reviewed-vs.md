@@ -59,15 +59,15 @@ Requested reviewers see the code review request in **Team Explorer**, look at th
 
 1. To open the code review, double-click the request, or right-click it and select **Open**.
 
-1. From the **Code Review** page, you can open the changed file to review it.
+1. From the **Code Review** page, you can select the changed files to review the differences.
 
    ![Screenshot of the file link on the Code Review page.](media/get-code-reviewed-vs/code-review.png)
 
-1. In the difference window, you can press Ctrl+Shift+K to add comments.
-
-1. Select **Send Comments** to send the comments.
+1. In the difference window, you can press Ctrl+Shift+K and add comments.
 
    ![Screenshot showing a comment added and the Send Comments button.](media/get-code-reviewed-vs/comment.png)
+
+1. Select **Send Comments** to send the comments.
 
 You can get email alerts for code reviews, too. To sign up, select **Project Alerts** under **Team Project** on the **Settings** page in **Team Explorer**.
 
@@ -83,7 +83,7 @@ When you get the code review results, you can resume work on the project.
 
    Your changes are unshelved and the windows you had opened are restored, so you can incorporate the review feedback.
 
-1. You can close the review by selecting **Close Review** and then selecting **Complete** if the review is finished, or **Abandon** if you don't plan to finish it.
+1. On the **Code Review** page, you can close the review by selecting **Close Review** and then selecting **Complete** if the review is finished, or **Abandon** if you don't plan to finish it.
 
 ## Next steps
 

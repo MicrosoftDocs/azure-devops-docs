@@ -10,7 +10,6 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
-
 # Folder comparison filters
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -18,7 +17,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 The folder comparison filter is an ordered list of filters that match the names of files or folders when you [compare folders](compare-folders.md) in Team Foundation Version Control (TFVC).
 
-To evaluate file or folder names against the name filters, you enter the filters in the **Filter** field of the **Compare** dialog box in Visual Studio. You can also specify filters by using the [tf folderdiff command](folderdiff-command.md). As soon as the file or folder name matches a filter, the name is a match and it isn't compared against the remaining filters.
+To evaluate file or folder names against the name filters, you enter the filters in the **Filter** field of the **Compare** dialog box in Visual Studio. You can also specify filters by using the [tf folderdiff command](folderdiff-command.md).
 
 The default name filters are as follows:
 
@@ -39,7 +38,7 @@ The following wildcard characters have special meaning when they're used in a na
 
 The name filters are applied to the file and folder names by using the following rules:
 
--   When **Compare** evaluates a file or folder name, it compares the name to each filter in the order that you specified the filters. As soon as the file or folder name matches a filter, the name is a match and it isn't compared against the remaining filters.
+-   When **Compare** evaluates a file or folder name, it compares the name to each filter in the order that you specified the filters. As soon as the file or folder name matches a filter, the name is a match, and it isn't compared against the remaining filters.
 
 -   A folder filter must end with the `\` wildcard character.
 
@@ -49,7 +48,7 @@ The name filters are applied to the file and folder names by using the following
 
 -   For an exclusion filter, the results include all files or folders that don't match the exclusion filter.
 
--   If you want to exclude a subset of file or folder names, you must first specify the filter for the file or folder name that you want to match, and then specify the exclusion filter.
+-   If you want to exclude a subset of file or folder names, you must first specify the filter for the file or folder name that you want to match. Then specify the exclusion filter.
 
 ## Examples
 
@@ -66,10 +65,10 @@ The following table lists filter examples.
 
 |**Filter**|**Description**|
 |---|---|
-|`*.cs;!objd\;!obj\;!bin\` | Matches all C# files except those in *objd*, *obj*, or *bin* folders.|
+|`*.cs;!objd\;!obj\;!bin\` | Matches all C# files except the ones in *objd*, *obj*, or *bin* folders.|
 |`!*.resx;!*.ini;!resources\;!*junk*\` | Excludes all *.resx* and *.ini* files, all files in the *resources* folder, and all files in any folder that has a name that includes the word *junk*.|
 
-## Related articles
+## Next steps
 
 -  [Compare folders](compare-folders.md) 
 -  [Reconcile differences between two folders](reconcile-differences-between-two-folders.md) 
