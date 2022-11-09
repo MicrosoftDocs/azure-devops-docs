@@ -32,6 +32,21 @@ RevisedDateSK
 
 -->
 
+## Entity sets that support historical reporting
+
+The following table describes the entity sets that you can use to create historical reports. 
+
+|`EntitySet`  |   **Description** | **Sample report** |
+|------------|-------------|-------------|  
+|[**WorkItemBoardSnapshot**](../analytics/entity-reference-boards.md#kanban-board-properties-fields) |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports. | [Cumulative Flow Diagram (CFD) sample report](sample-boards-cfd.md). |
+|[**WorkItemRevisions**](../analytics/entity-reference-boards.md#property-names-fields)|All historic work item revisions, including the current revision. Doesn't include deleted work items. |  TBD | 
+|[**WorkItemSnapshot**](../analytics/entity-reference-boards.md#property-names-fields)|(Composite) The state of each work item on each calendar date, used to support trend reporting. |[Bug trends sample report](sample-boards-bugtrend.md).  |   
+|[**ParallelPipelineJobsSnapshot**](../analytics/entity-reference-pipelines.md#parallelpipelinejobssnapshot)|(Composite) Supports understanding of parallel pipeline consumption.  |  TBD | 
+|[**TaskAgentPoolSizeSnapshots**](../analytics/entity-reference-pipelines.md#taskagentpoolsizesnapshots)|(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. | [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md)  |    
+|[**TaskAgentRequestSnapshots**](../analytics/entity-reference-pipelines.md#taskagentrequestsnapshots)|(Composite) Supports reporting on task agent requests.   |  TBD | 
+|[**TestPointHistorySnapshot**](#testpointhistorysnapshot) | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. |[Manual test execution trend sample report](sample-test-plans-execution-trend.md).| 
+|[**TestResultsDaily**](#testresultsdaily) | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun).|[Test summary trend sample report](../powerbi/sample-test-summary-trend.md).| 
+
 
 
 ## How filters are applied to historical data
