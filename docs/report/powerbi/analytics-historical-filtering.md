@@ -117,7 +117,7 @@ The filters would only match revision 3 and 4 of the work item, and would only i
 
 ## What does this mean for Burndown or Burnup?
 
-When you configure a Burndown (or Burnup) widget that filters for a given **Tag **(for example, "Customer"), work items won't appear in your burndown until the date the **Tag** is defined for the work item. If at any point, the **Tag** is removed from the work item, that work item will be omitted from the burndown after the date the **Tag** was removed. 
+When you configure a Burndown  or Burnup widget that filters for a given **Tag** (for example, "Customer"), work items won't appear in your burndown until the date the **Tag** is defined for the work item. If at any point the **Tag** is removed from the work item, then the work item is from the burndown after the date the **Tag** was removed. 
 
 Some have assumed that if the current version of a work item has the **Tag**, then it will be included in the burndown retroactively from the start. For example, if the current version of the work item has the tag "Customer", it was assumed that work item would be included in the burndown from the point the work item was created.
 
@@ -132,12 +132,12 @@ It isn't how historical filtering works. If filters were only applied based on t
 
 Pausing Analytics preserves your data but stops staging jobs from updating your data. You can resume the service later and your data is then updated. 
 
-Disabling Analytics or removing the Analytics extension (2019), turns off all Analytics staging jobs and deletes the Analytics data stored in the Analytics tables. All Analytics data that captures historical trends is lost. It doesn't delete any other data stored in your collection. You can't undo this action. Once historical data and trending data is deleted, you can't restore it. Re-enabling Analytics won't restore the historical data. 
+If an administrator disables Analytics, then all Analytics staging jobs are disabled and Analytics data stored in the Analytics tables is deleted. All Analytics data that captures historical trends is lost. It doesn't delete any other data stored in your collection. You can't undo this action. Once historical data and trending data is deleted, you can't restore it. Re-enabling Analytics won't restore the historical data. 
 
 With Analytics disabled or removed, the following actions occur: 
 
 - No staging jobs are run, and the Analytics tables won't have updated information.  
-- Table data is deleted, and if Analytics is re-enabled, all data will have to be repopulated from scratch.
+- Table data is deleted, and if Analytics is re-enabled, all data will be repopulated from scratch.
 
 To learn more, see [Install or enable the Analytics service](../dashboards/analytics-extension.md).
 
