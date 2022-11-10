@@ -27,7 +27,7 @@ To use the `workspaces` command, you must have the **Read** permission set to **
 tf workspaces [/owner:<owner-name>] [/computer:<computer-name>] 
 [/collection:<team-project-collection-url>] [/format:(brief|detailed|xml)] 
 [/updateUserName:<old-user-name>] [/updateComputerName:<old-computer-name>] 
-[<workspace-name>][/login:<username>,[password]]
+[<workspace-name>][/login:<username>,[<password>]]
 ```
 
 ```
@@ -71,7 +71,7 @@ The following sections describe arguments and options of the `workspaces` comman
    `<workspace-name>`
    :::column-end:::
    :::column span="3":::
-   Specifies the name of a workspace to display information about. If a value isn't specified, information is displayed about all the workspaces in a server. You can also use the wildcard (\*) character to display information about all workspaces for a server.
+   Specifies the name of a workspace to display information about. If a value isn't specified, information is displayed about all the workspaces in a server. You can also use an asterisk (\*) wildcard character to display information about all workspaces for a server.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -95,7 +95,7 @@ The following sections describe arguments and options of the `workspaces` comman
    `<team-project-collection-url>`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection that contains the workspaces about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).
+   The URL of the project collection that contains the workspaces about which you want to display information, for example, `https://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -104,6 +104,14 @@ The following sections describe arguments and options of the `workspaces` comman
    :::column-end:::
    :::column span="3":::
    Provides a value to the `/login` option. You can specify this value as either `DOMAIN\<username>` or `<username>`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `<password>`
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the `/login` option.
    :::column-end:::
 :::row-end:::
 
@@ -194,34 +202,34 @@ For more information about how to use the `tf` command-line utility, see [Use Te
 
 ## Examples
 
-The following example displays a list of all workspaces for the current user on the current computer.
+The following example displays a list of all workspaces for the current user on the current computer:
 
 ```
 c:\projects>tf workspaces
 ```
 
-The following example displays a list of all workspaces for all users on all computers that have been created in the following project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
+The following example displays a list of all workspaces for all users on all computers that have been created in the following project collection at the address `https://myserver:8080/tfs/DefaultCollection`:
 
 ```
-c:\projects>tf workspaces /owner:* /computer:* /collection:http://myserver:8080/tfs/DefaultCollection
+c:\projects>tf workspaces /owner:* /computer:* /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example displays detailed information about all workspaces that the current user has created in the project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
+The following example displays detailed information about all workspaces that the current user has created in the project collection at the address `https://myserver:8080/tfs/DefaultCollection`:
 
 ```
-c:\projects>tf workspaces /computer:* /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection
+c:\projects>tf workspaces /computer:* /format:detailed /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example displays detailed information about the workspace "WS1," which is owned by the current user and is located on the current computer. The displayed information includes a list of workspace mappings.
+The following example displays detailed information about the workspace **WS1**, which is owned by the current user and is located on the current computer. The displayed information includes a list of workspace mappings.
 
 ```
-c:\projects>tf workspaces /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection WS1
+c:\projects>tf workspaces /format:detailed /collection:https://myserver:8080/tfs/DefaultCollection WS1
 ```
 
-The following example removes all cached workspaces from the cache in the project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
+The following example removes all cached workspaces from the cache in the project collection at the address `https://myserver:8080/tfs/DefaultCollection`:
 
 ```
-c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection
+c:\projects>tf workspaces /remove:* /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
 ## Related articles
