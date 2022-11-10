@@ -78,7 +78,7 @@ The following sections describe arguments and options of the `workfold` command.
    `<workspace-name>`
    :::column-end:::
    :::column span="3":::
-   Specifies the name of the workspace that the command operates on with the **/workspace** option.
+   Specifies the name of the workspace that the command operates on with the `/workspace` option.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,7 +110,7 @@ The following sections describe arguments and options of the `workfold` command.
    `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify this value as either `DOMAIN\<username>` or `<username>`.
+   Provides a value to the `/login` option. You can specify this value as either `DOMAIN\<username>` or `<username>`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -118,7 +118,7 @@ The following sections describe arguments and options of the `workfold` command.
    `<password>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option.
+   Provides a value to the `/login` option.
    :::column-end:::
 :::row-end:::
 
@@ -261,4 +261,4 @@ c:\projects>tf workfold $/projects/project_one C:\DifferentWorkfold
 - [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
 - [Workspace command](workspace-command.md)
 - [Create and work with workspaces](create-work-workspaces.md)
-- [Create a workspace and get files for the first time](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)
