@@ -354,7 +354,7 @@ A custom category is created when a custom work item type and backlog level are 
 
 ## Tags
 
-The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
+The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. To learn more about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
 You can use these properties to filter or report on work tracking data. 
 
@@ -362,11 +362,11 @@ You can use these properties to filter or report on work tracking data.
 |-----------------|--------------------|---------------|--------------------------------------|   
 |**Tag Id** | `TagId` | GUID | The unique ID assigned to the tag when it's created.    |  
 |**Tag Name** | `TagName` | String | The tag name.  |   
- 
+
 
 ## Teams
 
-The following properties are valid for the **Team** entity type and **Teams** entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on adding a team, see [Create or add a team](../../organizations/settings/add-teams.md).
+The following properties are valid for the **Team** entity type and **Teams** entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on using and adding teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [Create or add a team](../../organizations/settings/add-teams.md).
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -375,13 +375,12 @@ The following properties are valid for the **Team** entity type and **Teams** en
 |**Team Name** | `TeamName` | String | The team name.  |   
 
 
-Navigation properties for the **Team** entity type and **Teams**  entity set include `Project`, `Areas`, and `Iterations`.
-
+Navigation properties for the **Teams** entity set include `Projects`, `Areas`, and `Iterations`.
 
 ## WorkItemLinks
 
-The following properties are valid for the **WorkItemLink** entity type and **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. 
-Query the **WorkItemLink** to report on parent/child, related, predecessor/successor or other link types. 
+The following properties are valid for the **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. 
+Query **WorkItemLinks** to report on parent/child, related, predecessor/successor or other link types. 
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -399,13 +398,12 @@ Query the **WorkItemLink** to report on parent/child, related, predecessor/succe
 |**Target Work Item Id** | `TargetWorkItemId` | Int32 | The ID assigned to the target work item linked to.    |    
 
 
-Navigation properties for the **WorkItemLink** entity type and **WorkItemLinks** entity set include `Project`, `SourceWorkItem`, and `TargetWorkItem`.
+Navigation properties for the **WorkItemLink** entity type include `Projects`, `SourceWorkItem`, and `TargetWorkItem`.
 
 To learn more about links and link types, see the following articles:  
 - [Use links to view dependencies and track related work](../../boards/queries/link-work-items-support-traceability.md)
 - [Link user stories, issues, bugs, and other work items in Azure Boards](../../boards/backlogs/add-link.md)
 - [Reference guide for link types used in Azure DevOps](../../boards/queries/link-type-reference.md)
-
 
 <a id="work-item-type-field-properties" /> 
 
@@ -447,16 +445,13 @@ Custom fields are automatically added to the Analytics service as a custom prope
  
 ## Related articles
 
+- [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
-- [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-- [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
-- [Add teams](../../organizations/settings/add-teams.md)
-- [Link type reference](../../boards/queries/link-type-reference.md)
+
  
 <!--- 
 ## About data types and data models 

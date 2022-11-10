@@ -307,6 +307,7 @@ Navigation properties include those listed in the following table.
 
 ## Related articles
 
+- [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Use Azure Pipelines](../../pipelines/get-started/pipelines-get-started.md)
 - [About pipeline tests](../../pipelines/test/test-glossary.md)

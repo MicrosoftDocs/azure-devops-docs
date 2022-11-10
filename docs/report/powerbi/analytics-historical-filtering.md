@@ -36,7 +36,22 @@ The following table describes the entity sets that you can use to create histori
 A snapshot provides a record of the values defined for the entity type each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
 
 
-## About work item revisions
+## Periodic snapshot fact tables
+
+Analytics models historical data as a **periodic snapshot fact table**. The fact table contains one row created at midnight for each work item or entity type at the end of each period. For example, history on a daily period is modeled as one row at midnight for each day, while a weekly period would be one row at midnight of the last day of the week. If the week hasn't completed, the snapshot value for the week is based on the current value.
+
+The grain of this table is the period, not the individual work item. It means that **a single Work Item will appear multiple times**, once for each historical period. Selecting the last 30 days of history will result in a single work item appearing 30 times in the data model. If the work item hasn't changed within the last 30 days, the most recent revision of the work item is replicated on each day.
+
+When working with the Power BI Data Connector and historical data, we recommend using the `Date` field.  **If the dataset contains historical data, but only the current values are needed, this can be setup by filtering `Is Current`**.  
+
+For example, if you want to show a table of work items and values for the associated fields you would use `Is Current` as a filter that is set to **True**. If you wanted to show a trend of work items based on state instead, you'd include the **Date** column on the Axis of the visualization.  
+
+> [!TIP]  
+> Always use the **Date** option when using the Date column. The Date field is not intended to support default hierarchies in Power BI.
+
+![Power BI Date menu of options](./media/data-connector-date.png)
+
+## Work item revisions
 
  Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has null for active or incomplete revisions. 
 
