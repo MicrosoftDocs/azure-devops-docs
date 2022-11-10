@@ -57,14 +57,16 @@ Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other
 
 There are two work tracking snapshot entity sets: `WorkItemSnapshot` and `WorkItemBoardSnapshot`.
 
-A snapshot provides a record of the values defined for a work item each day. The record is written to the Analytics service once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
+A snapshot provides a record of the values defined for a work item each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
 
 To learn more, see [OData query guidelines, Do use weekly or monthly snapshots for trend queries that span a long time period](../extend-analytics/odata-query-guidelines.md#-do-use-weekly-or-monthly-snapshots-for-trend-queries-that-span-a-long-time-period). 
 
 
 ### About work item revisions
 
- Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has null for active or incomplete revisions. If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
+ Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has null for active or incomplete revisions. 
+
+If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
 
 `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`  
 
