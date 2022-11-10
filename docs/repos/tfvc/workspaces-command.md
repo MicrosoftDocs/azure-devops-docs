@@ -5,7 +5,7 @@ description: Use the Team Foundation Version Control workspaces command to see i
 ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
 ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 11/08/2022
+ms.date: 11/10/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---

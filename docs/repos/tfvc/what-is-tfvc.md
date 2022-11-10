@@ -5,7 +5,7 @@ description: Find out how to get started with Team Foundation Version Control (T
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 11/08/2022
+ms.date: 11/10/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -94,7 +94,7 @@ Learn the basics of working in TFVC with the following tutorial, which shows a d
 
   You can compare server folders and local folders to each other, and view the differences between the contents of each folder.
 
-- [Resolve TFVC conflicts](resolve-team-foundation-version-control-conflicts.md) 
+- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
 
   A big advantage of using version control is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts. Although it can be frustrating to encounter conflicts, the system provides information and tools to help you understand and resolve conflicts.
 
