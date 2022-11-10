@@ -238,4 +238,4 @@ c:\projects>tf workspaces /remove:* /collection:https://myserver:8080/tfs/Defaul
 - [Workspace command](workspace-command.md)  
 - [Workfold command](workfold-command.md)  
 - [Create and work with workspaces](create-work-workspaces.md)  
-- [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)

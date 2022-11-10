@@ -89,7 +89,7 @@ For more information about how to use the `tf` command-line utility, see [Use Te
 
 ### Create a workspace
 
-Before you can add files to the version control server or check out items on the server, you must create a workspace or associate an existing one with the current directory. For more information, see [Create a workspace and get files for the first time](set-up-team-foundation-version-control-your-dev-machine.md).
+Before you can add files to the version control server or check out items on the server, you must create a workspace or associate an existing one with the current directory. For more information, see [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).
 
 To make the current directory a working folder for an existing workspace on your computer, follow these steps:
 
@@ -132,7 +132,7 @@ The following example opens the **Add Workspace** dialog box and creates a new w
 c:\projects>tf workspace /new /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example creates a new workspace called **Beta1** and assigns **jenh** as the workspace owner. You must have the **AdminWorkspaces** permission to assign ownership of a new workspace to another user. For more information about security permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)
+The following example creates a new workspace called **Beta1** and assigns **jenh** as the workspace owner. You must have the **AdminWorkspaces** permission to assign ownership of a new workspace to another user. For more information about security permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ```
 c:\projects>tf workspace /new Beta1;jenh
@@ -168,4 +168,4 @@ c:\projects> tf workspace Beta1;jenh
 - [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)  
 - [Workspaces command](workspaces-command.md)  
 - [Create and work with workspaces](create-work-workspaces.md)  
-- [Create a workspace and get files for the first time](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)

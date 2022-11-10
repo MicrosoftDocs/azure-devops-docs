@@ -17,7 +17,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
-Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
+Version control systems consist of software that helps you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
 Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/index.yml), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using TFVC. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
@@ -56,7 +56,7 @@ Get started by creating a project, configuring your workspace, and reviewing and
 Learn the basics of working in TFVC with the following tutorial, which shows a day in the life of a DevOps developer using Visual Studio and TFVC.
 
 * [Day in the life of a DevOps developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
-* [Visual Studio: Review Code](get-code-reviewed-vs.md)
+* [Visual Studio: Review code](get-code-reviewed-vs.md)
 
 ## What do you want to do?
 
