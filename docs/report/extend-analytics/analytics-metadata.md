@@ -37,9 +37,9 @@ For detailed descriptions for all OData elements, see [OData model](/odata/conce
 Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `Projects` is an entity set containing `Project` entities. An entity can be a member of at most one entity set.
 
 
-`EntitySets` and `EntityTypes` define each of the entities in the Analytics model including properties and relationships.Entity types define the named properties and relationships of an entity. Entity types may derive by single inheritance from other entity types. The key of an entity type is formed from a subset of its primitive properties. 
+`EntitySets` and `EntityTypes` define each of the entities in the Analytics model including properties and relationships. Entity types define the named properties and relationships of an entity. Entity types may derive by single inheritance from other entity types. The key of an entity type is formed from a subset of its primitive properties. 
 
-he following example shows the metadata associated with the `Project` entity type.  
+The following example shows the metadata associated with the `Project` entity type.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
