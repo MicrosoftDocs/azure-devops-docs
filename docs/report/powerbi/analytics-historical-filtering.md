@@ -13,7 +13,7 @@ ms.date: 11/08/2022
 
 # Historical data representation in Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]. 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]  
 
 You specify specific entity sets to report on historical data or create trend reports. Understanding how Analytics records historical data is important to ensure you can track and report the data of interest.  
 
@@ -135,7 +135,7 @@ To restate, when reporting on historical data, all filters are applied to the wo
 
 ## Related articles
 
-- [OData Analytics query guidelines](odata-query-guidelines.md)
+- [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 
