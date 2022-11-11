@@ -38,9 +38,9 @@ You can also import/get a Go package in a subfolder of a repo by appending
 the subfolder names, as shown in the following examples.
 
 ```
-go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1
+go get dev.azure.com/<organization>/<project>/<repo>/subfolder1
 
-go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
+go get dev.azure.com/<organization>/<project>/<repo>/subfolder1/subfolder2
 ```
 
 ## Go get with private projects
@@ -77,7 +77,7 @@ To use HTTPS with `go get`, you must create a PAT as described in [Authenticate 
 After you create the PAT, add this entry to your .gitconfig file:
 
 ```
-[url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
+[url "https://<user>:<token>@dev.azure.com/<organization>/<project>/<repo>"]
     insteadOf = https://dev.azure.com/<organization>/<project>/<repo>
 ```
 
@@ -89,15 +89,15 @@ With this entry and a specific URL format, you can now use `go get`.
 > Be sure to use `.git` after the repo name.
 
 ```
-go get dev.azure.com/<organization>/<project>/_git/<repo>.git
+go get dev.azure.com/<organization>/<project>/<repo>.git
 ```
 
 You can also import/get a Go package in a subfolder of a repo by appending the subfolder 
 names, as shown in the following examples.
 
 ```
-go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1
+go get dev.azure.com/<organization>/<project>/<repo>.git/subfolder1
 
-go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1/subfolder2
+go get dev.azure.com/<organization>/<project>/<repo>.git/subfolder1/subfolder2
 ```
 
