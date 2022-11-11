@@ -20,7 +20,7 @@ ms.date: 04/04/2022
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, manage build and release pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. For a quick overview of the features available to Stakeholders, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 > [!NOTE]   
-> For public projects, Stakeholder access gives users greater access to features. To learn more, see [Default roles and access for public projects](../public/default-roles-access-public.md#pipelinesbuild-and-release). For information about working with pipelines, see these articles: [Build your GitHub repository](../../pipelines/create-first-pipeline.md) and [Build OSS repositories](../../pipelines/repos/index.md).
+> For public projects, Stakeholder access gives users greater access to features. To learn more, see [Default roles and access for public projects](../security/permissions-access.md). For information about working with pipelines, see these articles: [Build your GitHub repository](../../pipelines/create-first-pipeline.md) and [Build OSS repositories](../../pipelines/repos/index.md).
 
 ::: moniker-end  
 
