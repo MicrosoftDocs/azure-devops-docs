@@ -326,7 +326,7 @@ jobs:
     maxParallel: number
     matrix: { string: { string: string } }
 
-  pool: server
+  pool: server # note: the value 'server' is a reserved keyword which indicates this is an agentless job
 ```
 
 You can also use the simplified syntax:
@@ -334,7 +334,7 @@ You can also use the simplified syntax:
 ```yaml
 jobs:
 - job: string
-  pool: server
+  pool: server # note: the value 'server' is a reserved keyword which indicates this is an agentless job
 ```
 
 ::: moniker-end
