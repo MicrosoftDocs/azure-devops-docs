@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ---
 # Determine recipients of notification emails
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Many factors determine the recipients of an email notification when an event matches a subscription. If you're unaware, these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
@@ -179,4 +179,4 @@ Let's look at a few scenarios. We use the following symbols to denote the types 
 
 - [Manage notifications for a team, group, global organization](manage-team-group-global-organization-notifications.md)
 - [Default and supported notifications](oob-built-in-notifications.md)
-- [Permissions, security groups, and service accounts reference](../organizations/security/permissions.md)
+- [Permissions, security groups, and service accounts reference](../../organizations/security/permissions.md)

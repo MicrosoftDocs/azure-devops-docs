@@ -301,7 +301,7 @@ From the Add link dialog, you can open a secondary dialog to help you choose one
 
 ::: moniker range=">= azure-devops-2020"
 
-To learn more about this feature, see [Link to work items from other objects](../../notifications/add-links-to-work-items.md#set-work-item-state-in-pull-request).
+To learn more about this feature, see [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md#set-work-item-state-in-pull-request).
 
 ::: moniker-end
 
@@ -464,7 +464,7 @@ To view the information for the linked work items, enter one of the URLs listed 
 ::: moniker range="<= azure-devops-2019"
 
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)

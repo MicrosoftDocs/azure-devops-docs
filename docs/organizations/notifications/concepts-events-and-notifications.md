@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Events, subscriptions, and notifications
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes the different actions or operations that generate email notifications. 
 
@@ -35,7 +35,7 @@ Individual users can choose to opt out of any default subscription while other t
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md). To learn more about querying with group clauses, see [Create managed queries](../boards/queries/using-queries.md#group-clauses).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md). To learn more about querying with group clauses, see [Create managed queries](../../boards/queries/using-queries.md#group-clauses).
 
 Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 

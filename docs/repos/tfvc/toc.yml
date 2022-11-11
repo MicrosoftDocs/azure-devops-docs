@@ -107,7 +107,7 @@
 - name: Manage TFVC
   items:
   - name: Default TFVC permissions (Security)
-    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json
   - name: Set TFVC permissions (Security)
     href: set-tfvc-repository-permissions.md
   - name: Control access to TFVC

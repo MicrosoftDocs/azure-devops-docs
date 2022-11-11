@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Emails from subscriptions or notifications are delayed
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You might not receive an expected notification email. Learn how to check the notification statistics.
 

@@ -339,7 +339,7 @@ Users granted **Stakeholder** access can perform the following tasks related to 
 
 ## Dashboards, notifications, READMEs, and wikis 
 
-The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
+The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../organizations/notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   

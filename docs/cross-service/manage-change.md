@@ -245,9 +245,9 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Notifications
 
-- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
-- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-- [Manage notifications for a team or group](../notifications/manage-team-group-global-organization-notifications.md)
+- [Default and supported notifications](../organizations/notifications/oob-built-in-notifications.md) 
+- [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+- [Manage notifications for a team or group](../organizations/notifications/manage-team-group-global-organization-notifications.md)
   
  
 #### Maintain specifications and share information 

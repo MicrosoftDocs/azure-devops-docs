@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Manage your personal notifications
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can manage your personal notifications in the following ways:
 
@@ -56,7 +56,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-1. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
+1. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
 
    :::image type="content" source="media/personal-notifications-preview.png" alt-text="Preview page of personal notifications.":::
 
@@ -241,9 +241,9 @@ With custom personal notification subscriptions, you can define precise criteria
 ## Related articles
 
 - [Manage your personal notifications](manage-your-personal-notifications.md)
-- [Set your preferences](../organizations/settings/set-your-preferences.md)
+- [Set your preferences](../../organizations/settings/set-your-preferences.md)
 - [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
+- [Follow a specific work item](../../boards/work-items/follow-work-items.md)  
 - [Change your preferred email address](change-email-address.md)
 
 ### Limitations

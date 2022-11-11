@@ -32,7 +32,7 @@ landingContent:
           - text: What is Azure Repos?
             url: ../get-started/what-is-repos.md
           - text: Connect to a project or repository
-            url: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+            url: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json
           - text: Authentication
             url: ./auth-overview.md
   - title: Get started with Git or GitHub and Visual Studio
