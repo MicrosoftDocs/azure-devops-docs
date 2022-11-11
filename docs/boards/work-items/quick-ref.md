@@ -169,7 +169,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Filter the History tab](../queries/history-and-auditing.md#filter-history)  
       - [Follow a work item](follow-work-items.md)  
       - [Forecast work items](../sprints/forecast.md)  
-      - [Get notified of work item changes](../../notifications/manage-your-personal-notifications.md)  
+      - [Get notified of work item changes](../../organizations/notifications/manage-your-personal-notifications.md)  
       - [Group work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)  
       <br/>
       - [Link to cross-organization work items](../backlogs/add-link.md)  
@@ -207,8 +207,8 @@ Tasks listed below are available to users with **Contributor** permissions and *
       <br/>
       - [Update status of tasks (Taskboard)](../sprints/task-board.md)  
       - [Update status of work items (Kanban board)](../boards/kanban-quickstart.md)  
-      - [Use #ID to link](../../notifications/add-links-to-work-items.md)  
-      - [Use @mentions](../../notifications/at-mentions.md)  
+      - [Use #ID to link](../../organizations/notifications/add-links-to-work-items.md)  
+      - [Use @mentions](../../organizations/notifications/at-mentions.md)  
       <br/>
       ::: moniker range=">= azure-devops-2020"
       - [View history](../queries/history-and-auditing.md#view-history)  

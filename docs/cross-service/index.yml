@@ -55,7 +55,7 @@ landingContent:
           - text: Link work items to builds and deployments
             url: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
           - text: Link objects to work items
-            url: ../notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
           - text: Configure pipelines to support work tracking 
             url: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
   - title: Integrate with GitHub

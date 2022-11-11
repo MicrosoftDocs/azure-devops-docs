@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Manage notifications for a team, project, or organization
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Your team, project, or organization can receive email notifications as changes occur to the following items in Azure DevOps:
 - work items 
@@ -32,7 +32,7 @@ For example, when a high priority work item is assigned to your team's area path
 	- A member of the **Project Administrators** group to create or modify subscriptions for a project.  
 	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization or collection.  
 
-	If you're not an administrator, get added as one. See [Add a team administrator](../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
+	If you're not an administrator, get added as one. See [Add a team administrator](../../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
@@ -206,14 +206,14 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 ::: moniker range="azure-devops"
 
 > [!TIP]
-> We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. Also, you can generate a banner with the [**az devops banner command**](../organizations/settings/manage-banners.md) that all users see when they sign in.
+> We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. Also, you can generate a banner with the [**az devops banner command**](../../organizations/settings/manage-banners.md) that all users see when they sign in.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
 
 > [!TIP]
-> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). Also, you can generate a banner with the [**az devops banner command**](../organizations/settings/manage-banners.md) that all users see when they sign in.
+> You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). Also, you can generate a banner with the [**az devops banner command**](../../organizations/settings/manage-banners.md) that all users see when they sign in.
 
 ::: moniker-end
 
@@ -226,9 +226,9 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 ::: moniker range="tfs-2018"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
  
-   ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
 
@@ -264,7 +264,7 @@ Your team delivery settings are updated for notifications.
 ## Related articles
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
-- [Set your preferences](../organizations/settings/set-your-preferences.md)
+- [Set your preferences](../../organizations/settings/set-your-preferences.md)
 - [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
+- [Follow a specific work item](../../boards/work-items/follow-work-items.md)  
 - [Change your preferred email address](change-email-address.md)

@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Why did I get this email
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 If you receive a notification email that you didn't expect, it could be for one of the following reasons:

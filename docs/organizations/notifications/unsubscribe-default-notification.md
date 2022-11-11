@@ -13,19 +13,19 @@ monikerRange: '<= azure-devops'
 
 # View your subscriptions, opt-out as needed
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md).  
 
-Start by opening your personal notification settings from your home page. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
+Start by opening your personal notification settings from your home page. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
 
 ## View subscriptions
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your home page, select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**.
+1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**.
 
-   ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
+   ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 
    The notifications you're subscribed to are indicated with the the blue toggle under State. 
 

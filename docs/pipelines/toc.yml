@@ -83,9 +83,9 @@
           href: process/templates.md
           displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
         - name: Add a custom task extension
-          href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+          href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json
         - name: Upload tasks to project collection
-          href: ../extend/develop/upload-tasks.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+          href: ../extend/develop/upload-tasks.md?toc=/azure/devops/pipelines/toc.json
     - name: Jobs & stages
       items:
         - name: Specify jobs in your pipeline
@@ -100,9 +100,9 @@
           href: process/deployment-jobs.md
           displayName: pipeline decorator, deployment strategy, lifecycle hooks, rolling, canary
         - name: Author a custom pipeline decorator
-          href: ../extend/develop/add-pipeline-decorator.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+          href: ../extend/develop/add-pipeline-decorator.md?toc=/azure/devops/pipelines/toc.json
         - name: Pipeline decorator context
-          href: ../extend/develop/pipeline-decorator-context.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+          href: ../extend/develop/pipeline-decorator-context.md?toc=/azure/devops/pipelines/toc.json
         - name: Specify conditions
           href: process/conditions.md
         - name: Specify demands
@@ -171,9 +171,9 @@
         - name: View pipeline reports
           href: reports/pipelinereport.md
         - name: Add widgets to a dashboard
-          href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+          href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json
         - name: Test Results Trend (Advanced)
-          href: ../report/dashboards/analytics-widgets.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json#test-results-trend-advanced
+          href: ../report/dashboards/analytics-widgets.md?toc=/azure/devops/pipelines/toc.json#test-results-trend-advanced
     - name: Manage pipelines with Azure CLI
       href: get-started/manage-pipelines-with-azure-cli.md
     - name: Clone or import a pipeline
@@ -221,7 +221,7 @@
         - name: Java to web App
           href: ecosystems/java-webapp.md
         - name: Java to web app with MicroProfile
-          href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+          href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json
     - name: Android
       href: ecosystems/android.md
       displayName: android sdk, xamarin, android sdk platform tools
@@ -981,7 +981,7 @@
 - name: Case studies & best practices
   items:
     - name: Use deployment rings
-      href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+      href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json
     - name: Use feature flags
       href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb/toc.json&toc=/azure%2fdevops%2fpipelines/toc.json
       displayName: feature-flags

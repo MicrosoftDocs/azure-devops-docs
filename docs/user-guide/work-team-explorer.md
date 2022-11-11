@@ -265,7 +265,7 @@ From the **Settings** page, you can configure administrative features for either
       - [Work Item Areas](../organizations/settings/set-area-paths.md)  
       - [Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Portal Settings](../project/configure-or-add-a-project-portal.md)  
-      - [Project Alerts](../notifications/manage-team-group-global-organization-notifications.md)  
+      - [Project Alerts](../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 
    :::column-end:::
    :::column span="":::

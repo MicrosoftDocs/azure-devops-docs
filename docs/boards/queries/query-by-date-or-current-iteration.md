@@ -120,7 +120,7 @@ You can use the `@CurrentIteration` macro in a query from the following clients:
 You can use the `@CurrentIteration +/- n` macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
-An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+An error occurs if you open a query that contains the `@CurrentIteration` macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../organizations/notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
 
 ## Date-based queries  
