@@ -15,7 +15,7 @@ Azure Artifacts provides an easy way to share packages to users outside your org
 ## Prerequisites
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- A public project. [Create a public project](../../organizations/public/create-public-project.md) if you don't have one already.
+- A public project. [Create a public project](../../organizations/projects/create-project.md) if you don't have one already.
 
 ## Create a public feed
 
