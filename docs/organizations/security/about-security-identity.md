@@ -224,11 +224,11 @@ To secure your organization and code, you can set a number of policies. Specific
 - Use the Azure Active Directory (Azure AD) tenant policy to restrict creating new organizations to desired users only. This policy is turned off by default and only valid when the organization is backed by Azure Active Directory. Check [restrict organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md) for more details.
 
 These policies determine the access you want to give users and applications to your organizations:
-- [Third-party application access via OAuth](../accounts/change-application-access-policies.md#application-connection-policies)
-- [SSH authentication access](../accounts/change-application-access-policies.md#application-connection-policies)
-- **Allow public projects**: When enabled, users can create public projects which allow non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../projects/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization). 
+- [Third-party application access via OAuth](../accounts/change-application-access-policies.md#application-connection-policies).
+- [SSH authentication access](../accounts/change-application-access-policies.md#application-connection-policies).
+- **Allow public projects**: When enabled, users can create public projects which allow non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../projects/make-project-public.md). 
 - **Log Audit events** - Turn on the ability to track [Auditing events and streams](../audit/azure-devops-auditing.md) for your organization.
-- [Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#conditional-access-policies)
+- [Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#conditional-access-policies).
 
 ### User policies 
 - **External guest access** (*Only valid when the organization is backed by Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
