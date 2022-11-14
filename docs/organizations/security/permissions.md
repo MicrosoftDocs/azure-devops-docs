@@ -1346,7 +1346,7 @@ You manage project-level permissions through the [web portal admin context](chan
 :::row:::
    :::column span="4":::
    > [!NOTE] 
-   > All users granted Stakeholder access for a private project can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. To learn more, see [Stakeholder access quick reference](/stakeholder-access.md).  
+   > All users granted Stakeholder access for a private project can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).  
   > Although the **Create tag definition**  permission appears
   > in the security settings at the project-level,
   > tagging permissions are actually collection level permissions that are scoped
