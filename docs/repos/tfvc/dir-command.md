@@ -117,7 +117,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    `/deleted`
    :::column-end:::
    :::column span="3":::
-   Displays deleted items and existing items. The deleted items are followed with `;Xn` where `n` is the deletion id.
+   Displays deleted items and existing items. The deleted items are followed with `;Xn` where `n` is the deletion ID.
    :::column-end:::
 :::row-end:::
 :::row:::

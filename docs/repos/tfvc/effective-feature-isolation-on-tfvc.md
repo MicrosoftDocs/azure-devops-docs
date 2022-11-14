@@ -93,7 +93,7 @@ Similarly, the Visual Studio **Source Control Explorer** view becomes noisy and 
 
 By [deleting](delete-restore-files-folders.md#delete-an-item) feature branches, you minimize noise and focus on active feature development. 
 
-![Screenshots that show dDelete feature branches](./media/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
+![Screenshot that shows deleted feature branches.](./media/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
 
 Remember it's a soft delete and your history isn't lost. Deleted branches can be unhidden.
 
