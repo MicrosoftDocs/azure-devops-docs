@@ -24,7 +24,7 @@ The default branch is an accurate representation of the history of each topic br
 
 ## Squash merge
 
-Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. Squash merge commit doesn't have reference to topic branch, it is absolutely new commit containing all the changes. Furthermore it is recommended to delete topic branch to prevent confusion with it.
+Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. Squash merge commit doesn't have a reference to the topic branch, it will produce a **new commit**, that contains all changes from the topic branch. Furthermore it is recommended to delete the topic branch to prevent any confusion.
 
 ![Diagram of squash merging in pull requests in Azure Repos.](media/merging-with-squash/squash-branch-merge.png)
 
