@@ -1,102 +1,90 @@
 ---
-title: Get your code reviewed with Visual Studio
+title: TFVC code review in Visual Studio
 titleSuffix: Azure Repos
-description: Get a code review from your team using Visual Studio
+description: Request code review, respond to review requests, and suspend and resume work for Team Foundation Version Control (TFVC) in Visual Studio.
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 07/13/2022
+ms.date: 11/08/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Get your code reviewed with Visual Studio
+# TFVC code review in Visual Studio
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in their Team Explorer, in the **My Work** page.
+You can use Visual Studio to request code reviews, respond to review requests, and suspend and resume work for Team Foundation Version Control (TFVC). 
 
-To ask for a code review, make sure you have [shared your code in TFVC](share-your-code-in-tfvc-vs.md).
-
-(Are you using Git to share your code? If so, then use a [pull request](../../repos/git/pull-requests.md).)
+If you're using Git source control instead of TFVC, use a [pull request](../../repos/git/pull-requests.md) for code reviews.
 
 [!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
 
+## Prerequisites
+
+Before you ask for a code review, make sure you've [shared your code in TFVC](share-your-code-in-tfvc-vs.md).
+
 ## Request a code review
 
-Jamal has changed the border color in the Hello World app, and he asks Johnnie to review the change.
+Before you check in code, you can use Visual Studio to ask someone else from your team to review it. Your request appears in the recipient's **Team Explorer** window on the **My Work** page.
 
-1. Before he checks in the change, Jamal goes to the **My Work** page.
+To request a code review, before you check in a change:
 
-   ![Screenshot of My Work from the Team Explorer home page.](media/get-code-reviewed-vs/IC682169.png) 
+1. Go to the **My Work** page in **Team Explorer**.
 
-2. He requests a review.
+   ![Screenshot of My Work from the Team Explorer home page.](media/get-code-reviewed-vs/team-explorer.png) 
 
-   ![Screenshot of Request code review link from the Team Explorer My Work page.](media/get-code-reviewed-vs/IC682170.png)
+1. On the **My Work** page, select **Request Review**.
 
-3. He submits a request to Johnnie.
+   ![Screenshot of Request Review link from the Team Explorer My Work page.](media/get-code-reviewed-vs/my-work.png)
 
-   ![Submit request button on the filled out new code review page in the teamexplorer.](media/get-code-reviewed-vs/IC682171.png)
+1. On the **New Code Review** page, enter the reviewer name or names and a subject for the code review, and then select **Submit Request**.
 
-4. Jamal suspends his work on Hello World so that he can work on something else while he waits to hear back from Johnnie.
+   ![Screenshot of the Submit Request button and filled out New Code Review page in Team Explorer.](media/get-code-reviewed-vs/new-code-review.png)
 
-   ![Suspend link in the my work page of the Team Explorer.](media/get-code-reviewed-vs/IC682757.png)
+1. You can suspend your work so you can work on something else while you wait to hear back from the code review. On the **My Work** page of **Team Explorer**, select **Suspend** in the **In Progress Work** section, optionally enter a different name for the suspended work, and then select **Suspend**.
+
+   ![Screenshot of the Suspend link on the My Work page of Team Explorer.](media/get-code-reviewed-vs/suspend.png)
 
 ## Respond to the code review request
 
-Johnnie will see the code review request in the Team Explorer, look at the changes, and give Jamal his feedback.
+Requested reviewers see the code review request in **Team Explorer**, look at the changes, and give their feedback. To respond to a review request:
 
-1. Johnnie opens the my work page.
+1. On the **My Work** page of **Team Explorer**, locate the review request.
 
-   ![My work in the Team Explorer home page.](media/get-code-reviewed-vs/IC682758.png)
+   ![Screenshot of a review request on the My Work page of Team Explorer.](media/get-code-reviewed-vs/review-request.png)
 
-2. He sees Jamal's code review request.
+1. To open the code review, double-click the request, or right-click it and select **Open**.
 
-   ![The code review request in the my work page.](media/get-code-reviewed-vs/IC683034.png)
+1. From the **Code Review** page, you can select the changed files to review the differences.
 
-   You can get email alerts for code reviews, too. 
-   If you aren't getting them, you can sign up in the Team Explorer settings page.
+   ![Screenshot of the file link on the Code Review page.](media/get-code-reviewed-vs/code-review.png)
 
-   ![Project alerts link in the settings page of the Team Explorer.](media/get-code-reviewed-vs/IC682760.png)
+1. To add comments, in the difference window, select the code to comment on, right-click, and select **Add comment**. You can also press Ctrl+Shift+K.
 
-3. Johnnie opens the code review request.
+   ![Screenshot showing a comment added and the Send Comments button.](media/get-code-reviewed-vs/comment.png)
 
-   ![Open the review from the context menu on the review request.](media/get-code-reviewed-vs/IC683035.png)
+1. Select **Send Comments** to send the comments.
 
-4. He accepts the review.
+You can get email alerts for code reviews, too. To sign up, select **Project Alerts** under **Team Project** on the **Settings** page in **Team Explorer**.
 
-   ![Accept the code review request.](media/get-code-reviewed-vs/IC683036.png)
-
-5. He opens the file that Jamal changed.
-
-   ![The file link (Site.css) in the code review page.](media/get-code-reviewed-vs/IC683037.png)
-
-6. Johnnie sees that Jamal changed the color to #ddd. He selects the code in the difference window and adds a comment (Keyboard: Ctrl + Shift + K).
-
-   ![Comment added to Site.css using the difference window toolbar button.](media/get-code-reviewed-vs/IC682763.png)
-
-7. He suggests a different color instead and sends the comment to Jamal.
-
-   ![Comment added and sent using the send comments button in the code review page in Team Explorer.](media/get-code-reviewed-vs/IC682764.png)
-
-8. Johnnie completes the review by selecting **Send & Finish**.
+![Screenshot showing the Project Alerts link on the Settings page of Team Explorer.](media/get-code-reviewed-vs/settings.png)
 
 ## Update the code based on the review feedback
 
-1. When Jamal gets a response from Johnnie, he resumes the work on Hello World.
+When you get the code review results, you can resume work on the project.
 
-   ![Resume link in the my work page of the Team Explorer.](media/get-code-reviewed-vs/IC683038.png)
+1. On the **My Work** page in **Team Explorer**, select **Resume** under **Suspended Work**.
 
-2. His changes are unshelved and the windows he had opened are restored, so he can incorporate the review feedback.
+   ![Screenshot showing the Resume link on the My Work page of Team Explorer.](media/get-code-reviewed-vs/resume.png)
 
-   ![Work environment restored after resuming work.](media/get-code-reviewed-vs/IC683039.png)
+   Your changes are unshelved and the windows you had opened are restored, so you can incorporate the review feedback.
 
-3. Jamal closes the review by selecting **Close Review**.
+1. On the **Code Review** page, you can close the review by selecting **Close Review** and then selecting **Complete** if the review is finished, or **Abandon** if you don't plan to finish it.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Create your backlog](../../boards/backlogs/create-your-backlog.md)
+- [Create your backlog](../../boards/backlogs/create-your-backlog.md)
