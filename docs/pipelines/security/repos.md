@@ -98,3 +98,4 @@ This can apply to a public project (with a separate private repo) as well as a n
 ## Next steps
 
 Next, learn about the more protection offered by checks on [protected resources](resources.md).
+
