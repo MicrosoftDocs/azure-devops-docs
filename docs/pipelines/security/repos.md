@@ -73,7 +73,7 @@ Use Microsoft-hosted agents whenever possible. For your self-hosted agent, use s
 
 Before you run your pipeline on a forked pull-request, carefully review the proposed changes, and make sure you're comfortable running it.
 
-The version of the YAML pipeline you'll run is the one from the pull request. Thus, pay special attention to changes to the YAML code.
+The version of the YAML pipeline you'll run is the one from the pull request. Thus, pay special attention to changes to the YAML code and to the code that runs when the pipeline runs, such as command line scripts or unit tests.
 
 ### GitHub Token Scope Limitation
 
