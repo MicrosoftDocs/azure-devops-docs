@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Exclude yourself from notification emails of events you started
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you create a team role-based notification subscription, you can choose the option, _Skip initiator_. The initiator of the event that triggers the email doesn't receive the notification.
 
@@ -29,6 +29,6 @@ This option is good for users who don't want notifications of events that they t
 #### Related articles
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
-- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
+- [Follow a specific work item](../../boards/work-items/follow-work-items.md)  
 - [Manage notifications for a team](./manage-team-group-global-organization-notifications.md)  
 - [Change your preferred email address](change-email-address.md)

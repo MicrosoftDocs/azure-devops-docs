@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 11/08/2022
 ---
 
 # Create an Analytics view in Azure DevOps 
@@ -31,7 +31,7 @@ Use this article to learn how to:
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
-[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 

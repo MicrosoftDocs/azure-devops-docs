@@ -189,7 +189,7 @@ version: 5.0.1.34507
 
 4. Select the extension, and then **Install**.
 
-5. Confirm the project collection where you want to install this extension.
+5. Confirm the project collection that you want to install this extension to.
    
    :::image type="content" source="media/get-tfs-extensions/connected/select-team-project-collection.png" alt-text="Selection showing Project collection.":::
 
@@ -392,21 +392,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
-
 * * *
-
-::: moniker range="< azure-devops"
-
-To uninstall extensions from the local gallery in Azure DevOps on-premises server, perform the following steps. 
-
-1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
-
-2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
-
-   ![Remove extension](media/remove-extension-TFS.png)
-
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 

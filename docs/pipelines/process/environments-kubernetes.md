@@ -230,7 +230,7 @@ stages:
               arguments: svc
               outputFormat: jsonpath='http://{.items[0].status.loadBalancer.ingress[0].ip}:{.items[0].spec.ports[0].port}'
 
-          # Getting the IP of the deployed service and writing it to a variable for posing comment
+          # Getting the IP of the deployed service and writing it to a variable for posting comment
           - script: |
               url="$(get.KubectlOutput)"
               message="Your review app has been deployed"

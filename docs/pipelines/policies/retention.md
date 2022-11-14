@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 11/02/2021
+ms.date: 11/08/2022
 ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
 monikerRange: '<= azure-devops'
 ---
@@ -346,7 +346,7 @@ To clean up automated test results that are left over from deleted builds or tes
 
 You can set artifact retention policies for pipeline runs in the Pipeline settings. 
 
-1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
+1. Sign in to your project, For Azure DevOps Services, the URL path is `https://dev.azure.com/{yourorganization}/{yourproject}`.
 
 2. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 

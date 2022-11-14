@@ -14,7 +14,7 @@ ms.date: 12/07/2020
 
 # Access notification settings
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn about navigating the notifications user interface.
 
@@ -35,11 +35,11 @@ You can set notifications at the following four levels:
 ## Prerequisites
 
 * Each user can manage their personal notifications
-* To manage team notifications, you must be added as a [team administrator](../organizations/settings/add-team-administrator.md) or be a member of [**Project Administrators** group](../organizations/security/change-project-level-permissions.md)
-* To manage project-level notifications, you must be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md)
-* To manage organization or collection-level notifications, you must be a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md). 
+* To manage team notifications, you must be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or be a member of [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md)
+* To manage project-level notifications, you must be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md)
+* To manage organization or collection-level notifications, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). 
 
-For additional permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../organizations/security/permissions.md#notifications-or-alerts).
+For additional permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../../organizations/security/permissions.md#notifications-or-alerts).
 
 
 <a id="open-person-level" />
@@ -48,9 +48,9 @@ For additional permission settings regarding notifications, see [Permissions and
  
 ::: moniker range="azure-devops"
 
-Open your :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**. 
+Open your :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**. 
 
-The profile menu appears based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../project/navigation/preview-features.md).  
+The profile menu appears based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../../project/navigation/preview-features.md).  
 
 :::row:::
    :::column span="2":::
@@ -111,9 +111,9 @@ For more information, see [Manage notifications for a team or group](manage-team
 	https://dev.azure.com/OrganizationName/_settings/notifications
 	```
 
-	Or, choose :::image type="icon" source="../media/icons/project-icon.png" border="false"::: **Azure DevOps**,  and then choose **Organization settings**. 
+	Or, choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps**,  and then choose **Organization settings**. 
 
-	:::image type="content" source="../media/settings/open-org-settings-s172.png" alt-text="Open Organization settings":::
+	:::image type="content" source="../../media/settings/open-org-settings-s172.png" alt-text="Open Organization settings":::
 
 2. Choose **Global Notifications**.  
 
@@ -131,9 +131,9 @@ Enter the following URL to reach the organization-level notifications page, repl
 	http://ServerName/CollectionName/_settings/notifications?view=defaultSubscriptions
 	```
 
-	Or, choose :::image type="icon" source="../media/icons/project-icon.png" border="false"::: **Azure DevOps**, and then choose **Collection settings**. 
+	Or, choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps**, and then choose **Collection settings**. 
 
-	:::image type="content" source="../media/settings/open-collection-settings-2020.png" alt-text="Open Collection settings":::
+	:::image type="content" source="../../media/settings/open-collection-settings-2020.png" alt-text="Open Collection settings":::
 
 2. Choose **Global Notifications**.  
 
@@ -161,6 +161,6 @@ For more information, see [Manage team and Global notifications](manage-team-gro
 ## Related articles
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
-- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
+- [Follow a specific work item](../../boards/work-items/follow-work-items.md)  
 - [Manage notifications for a team](./manage-team-group-global-organization-notifications.md)  
 - [Change your preferred email address](change-email-address.md)

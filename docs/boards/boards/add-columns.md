@@ -270,7 +270,7 @@ To hand off work to another team member, reassign it directly from the board.
 
 ![Screenshot that shows assigning an item from a Kanban board.](media/ALM_AC_Reassign.png)
 
-Team members who receive the handoff can [set alerts](../../notifications/manage-your-personal-notifications.md) to get immediate email notifications of their newly assigned work. 
+Team members who receive the handoff can [set alerts](../../organizations/notifications/manage-your-personal-notifications.md) to get immediate email notifications of their newly assigned work. 
  
 
 <a id="change-priorities"> </a>

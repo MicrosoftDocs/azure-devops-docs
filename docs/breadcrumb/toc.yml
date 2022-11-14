@@ -19,10 +19,10 @@
       tocHref: /azure/devops/boards/work-items/
       topicHref: /azure/devops/boards/work-items/about-work-items
     - name: Boards 
-      tocHref: /azure/devops/boards/boards
+      tocHref: /azure/devops/boards/boards/
       topicHref: /azure/devops/boards/boards/kanban-overview
     - name: Backlogs
-      tocHref: /azure/devops/boards/backlogs
+      tocHref: /azure/devops/boards/backlogs/
       topicHref: /azure/devops/boards/backlogs/backlogs-overview
     - name: Sprints
       tocHref: /azure/devops/boards/sprints/
@@ -30,11 +30,11 @@
     - name: Queries
       tocHref: /azure/devops/boards/queries/
       topicHref: /azure/devops/boards/queries/example-queries
-    - name: Plans & Agile at Scale
+    - name: Plans & portfolios
       tocHref: /azure/devops/boards/plans/
       topicHref: /azure/devops/boards/plans/index
     - name: Excel, Project, PowerPoint
-      tocHref: /azure/devops/boards/backlogs/office/track-work
+      tocHref: /azure/devops/boards/backlogs/office/
       topicHref: /azure/devops/boards/backlogs/office/track-work
     - name: Integrations & extensions
       tocHref: /azure/devops/boards/extensions/
@@ -78,7 +78,7 @@
       tocHref: /azure/devops/organizations/audit/ 
       topicHref: /azure/devops/organizations/audit/azure-devops-auditing 
     - name: Notifications
-      tocHref: /azure/devops/notifications
+      tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/about-notifications
   - name: Security, Permissions, & Access 
     tocHref: /azure/devops/organizations/security/
@@ -98,7 +98,7 @@
       tocHref: /azure/devops/reference/xml/ 
       topicHref: /azure/devops/reference/on-premises-xml-process-model
     - name: Hosted XML process
-      tocHref: /azure/devops/organizations/settings/work/hosted 
+      tocHref: /azure/devops/organizations/settings/work/hosted/ 
       topicHref: /azure/devops/reference/on-premises-xml-process-model
     - name: Process templates
       tocHref: /azure/devops/reference/process-templates/ 
@@ -126,12 +126,6 @@
     tocHref: /azure/devops/cross-service/
     topicHref: /azure/devops/cross-service/index
     items:
-    - name: Cross-service
-      tocHref: /azure/devops/cross-service/
-      topicHref: /azure/devops/cross-service/cross-service-overview
-    - name: Public projects
-      tocHref: /azure/devops/organizations/public/
-      topicHref: /azure/devops/organizations/projects/about-projects
     - name: Work across projects
       tocHref: /azure/devops/project/
       topicHref: /azure/devops/project/work-across-projects-faqs 
