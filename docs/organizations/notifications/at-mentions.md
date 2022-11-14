@@ -14,13 +14,13 @@ ms.date: 07/15/2022
 
 # Use &#64;mentions in work items and pull requests
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker of the **@mention** control, you can select a project member or group from the search list, and they'll receive an email notifying them of your comment. 
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not only those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit  identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection).  
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not only those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).  
 
 > [!NOTE]
 > You can post an @mention via API. [Get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0), and then add the following html code:
@@ -72,7 +72,7 @@ When you leave a code comment in a pull request, enter **\@** to trigger the **\
 ::: moniker range="azure-devops"
 
 > [!WARNING]
-> If you have permission to invite users to the organization, regardless of whether the **Restrict invitations** policy is disabled, you can **@mention** a user who isn't part of your organization. This action invites that user to your organization. For more information, see [Restrict new user invitations from project and team administrators](../organizations/security/restrict-invitations.md). 
+> If you have permission to invite users to the organization, regardless of whether the **Restrict invitations** policy is disabled, you can **@mention** a user who isn't part of your organization. This action invites that user to your organization. For more information, see [Restrict new user invitations from project and team administrators](../../organizations/security/restrict-invitations.md). 
 
 To filter the list, enter the user name or alias until you've found a match.
  
@@ -83,7 +83,7 @@ To filter the list, enter the user name or alias until you've found a match.
 
 ::: moniker range=">= azure-devops-2020"
 
-You can also use group mentions. Enter the name of a team or a security group, choose :::image type="icon" source="../media/icons/search-icon.png" border="false"::: **Search**, and then select from the options listed.
+You can also use group mentions. Enter the name of a team or a security group, choose :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: **Search**, and then select from the options listed.
 
 ::: moniker-end
 
@@ -132,11 +132,11 @@ When the **Limit user visibility and collaboration to specific projects** previe
 - Users added to the **Project-Scoped Users** group are only able to select from an identity list that contains users and groups added explicitly to the project they're connected to. 
 - If all project members are added to the **Project-Scoped Users** group, then people pickers are limited to only those users and groups added to the project. All project members can only select identities that match users and groups added explicitly to the project they're connected to. 
   
-To learn how, see [Manage your organization, Limit  identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection). 
+To learn how, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ::: moniker-end
 
 ## Related articles
 
-- [Work item form controls](../boards/work-items/work-item-form-controls.md)  
-- [Pull requests](../repos/git/pull-requests.md)
+- [Work item form controls](../../boards/work-items/work-item-form-controls.md)  
+- [Pull requests](../../repos/git/pull-requests.md)

@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Supported event types
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn the supported event types for notification subscriptions in Azure DevOps.
 

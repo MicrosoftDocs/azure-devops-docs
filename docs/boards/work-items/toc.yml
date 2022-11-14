@@ -34,7 +34,7 @@
     href: follow-work-items.md
     displayname: query
   - name: Use @mentions in discussions
-    href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../organizations/notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayname: people picker
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md

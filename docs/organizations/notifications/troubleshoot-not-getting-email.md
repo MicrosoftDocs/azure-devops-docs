@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Not getting emails from subscriptions or notifications
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An email is sent when an [event](oob-supported-event-types.md) occurs that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
@@ -68,7 +68,7 @@ If the team or group defines a delivery setting for **Deliver to individual memb
 
 ## Check your configured email address
 
-Check if your preferred email address is set to the address you're expecting the email, which is a user profile setting. Hover over :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: **your profile** to view your preferred email address. [Learn how to view the configured email address.](../organizations/settings/set-your-preferences.md).
+Check if your preferred email address is set to the address you're expecting the email, which is a user profile setting. Hover over :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **your profile** to view your preferred email address. [Learn how to view the configured email address.](../../organizations/settings/set-your-preferences.md).
 
 ## Is this a team subscription, which contains a "@Me" filter clause?
 

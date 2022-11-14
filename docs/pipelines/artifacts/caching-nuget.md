@@ -43,6 +43,9 @@ variables:
   displayName: Cache
   inputs:
     key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
+    restoreKeys: |
+       nuget | "$(Agent.OS)"
+       nuget
     path: '$(NUGET_PACKAGES)'
     cacheHitVar: 'CACHE_RESTORED'
 ```
@@ -85,6 +88,9 @@ steps:
   displayName: 'NuGet Cache'
   inputs:
     key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
+    restoreKeys: |
+       nuget | "$(Agent.OS)"
+       nuget
     path: '$(NUGET_PACKAGES)'
     cacheHitVar: 'CACHE_RESTORED'
 

@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # How to enable subscription logging for troubleshooting
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 

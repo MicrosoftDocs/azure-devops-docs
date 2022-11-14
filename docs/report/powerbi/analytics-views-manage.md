@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/28/2022
+ms.date: 11/08/2022
 ---
 
 # Manage Analytics views 
@@ -32,7 +32,7 @@ Use this article to learn how to:
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
-[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 

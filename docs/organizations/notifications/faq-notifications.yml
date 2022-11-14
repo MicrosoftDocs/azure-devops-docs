@@ -12,7 +12,7 @@ metadata:
   monikerRange: '<= azure-devops'
 title: Notifications FAQS
 summary: |
-  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
 
 sections:
