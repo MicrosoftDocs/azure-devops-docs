@@ -49,7 +49,7 @@
 - name: Audit
   href: audit/toc.yml
 - name: Notifications
-  href: ../notifications/toc.yml
+  href: notifications/toc.yml
 - name: Usage
   items:
   - name: Usage & rate limits

@@ -131,7 +131,7 @@ Organizations that are connected to Azure Active Directory (Azure AD) can use pe
 As shown in the following image, start to enter a user in the people picker box until you find a match to the user name or security group.
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker.](../../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of people picker.](../../organizations/notifications/media/at-mention/identity-selector.png)  
 
 > [!WARNING]   
 > When you enable the **Limit user visibility and collaboration to specific projects** preview feature, project-scoped users can't search for users who were added to the organization through Azure AD group membership, rather than through an explicit user invitation. We're working on a solution to this behavior. As a work around, you can disable the **Limit user visibility and collaboration to specific projects** preview feature.  
@@ -212,7 +212,7 @@ Use the following elements to structure your project to support your business ne
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Each team you create automatically creates a security group for that team, which you can use to manage permissions for a team. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md).
 - [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
 - [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
-- [Define or modify notifications](../../notifications/about-notifications.md) set at the project level.
+- [Define or modify notifications](../../organizations/notifications/about-notifications.md) set at the project level.
 
 ## Customize and configure your project
 

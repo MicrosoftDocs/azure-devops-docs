@@ -214,7 +214,7 @@ The following table provides information about setting permissions at the object
 
 ### Tips
 
-For [**Team members by role**](../../notifications/manage-team-group-global-organization-notifications.md), the following two roles are explained.
+For [**Team members by role**](../../organizations/notifications/manage-team-group-global-organization-notifications.md), the following two roles are explained.
    - **Changed reviewers** applies to any reviewer that's added or deleted, because of policies defined for the set of files. For example, a push to a pull request (PR) can introduce a change to File1.cs. If a policy says Person A needs to review changes to File1.cs, they're in the Changed reviewers role for that iteration of the PR.
    - The **Reset reviewers** role is related to the “reset votes” policy. For example, the repo has configured the policy, “Reset votes on new pushes”. Person B, who was required on the PR, has already approved this PR. Because of the "reset votes policy", their vote gets reset. So, they're in the Reset reviewers role for that iteration.
 
@@ -292,7 +292,7 @@ Notifications can be set at the user, team, project, and organization/collection
 
 Here are some additional tips for managing notifications.
 
-- If you don't want to receive a notification for an event that you started, you can turn on the option, **Skip initiator**. For more information, see [Exclude yourself from notification emails for events that you start](../../notifications/exclude-self-from-email.md).
+- If you don't want to receive a notification for an event that you started, you can turn on the option, **Skip initiator**. For more information, see [Exclude yourself from notification emails for events that you start](../../organizations/notifications/exclude-self-from-email.md).
 - We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. Also, you can generate a banner with the `az devops banner` command that all users see when they sign in.
 
 ## Related articles

@@ -195,7 +195,7 @@ Or, you can select it from the **Links** :::image type="icon" source="media/icon
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
 ### Associated work items in build 
 

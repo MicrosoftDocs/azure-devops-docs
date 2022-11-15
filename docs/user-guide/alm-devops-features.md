@@ -709,7 +709,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../notifications/manage-your-personal-notifications.md)">personal notifications</a> or <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team notifications](../notifications/manage-team-group-global-organization-notifications.md)">team notifications</a>.</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/organizations/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../organizations/notifications/manage-your-personal-notifications.md)">personal notifications</a> or <a href="/azure/devops/organizations/notifications/manage-team-group-notifications" data-raw-source="[team notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md)">team notifications</a>.</p>
 <img src="media/features/features-notifications-option.png" alt="Open Notifications from Organization menu"/><br/><br/>
 
 <p><b>Share queries and sprint plans</b></p>
@@ -791,7 +791,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><a href="../repos/git/share-your-code-in-git-eclipse.md" data-raw-source="[Work with Git repositories](../repos/git/share-your-code-in-git-eclipse.md)">Work with Git repositories</a> using the Team Explorer Everywhere IDE for Eclipse.  </p>
 
 <p><b>Add reviewers to get feedback </b></p>
-<p>Use the <a href="../notifications/at-mentions.md" data-raw-source="[**@mention** control to add reviewers](../notifications/at-mentions.md)"><strong>@mention</strong> control to add reviewers</a> to your pull request to get their feedback about your changes.  </p>
+<p>Use the <a href="../organizations/notifications/at-mentions.md" data-raw-source="[**@mention** control to add reviewers](../organizations/notifications/at-mentions.md)"><strong>@mention</strong> control to add reviewers</a> to your pull request to get their feedback about your changes.  </p>
 <img src="media/features/alm-feature-at-mention-control_305.png" alt="@mentions control sends email to team members with links"/><br/><br/>
 
 
@@ -827,7 +827,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Quickly link work items to pull requests </b></p>
-<p>Use the <a href="../notifications/add-links-to-work-items.md" data-raw-source="[**#ID** control to link work items](../notifications/add-links-to-work-items.md)"><strong>#ID</strong> control to link work items</a> to your pull request to support tracking work.    </p>
+<p>Use the <a href="../organizations/notifications/add-links-to-work-items.md" data-raw-source="[**#ID** control to link work items](../organizations/notifications/add-links-to-work-items.md)"><strong>#ID</strong> control to link work items</a> to your pull request to support tracking work.    </p>
 
 <p><b>Get started using Xcode </b></p>
 <p><a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[Work with Git repositories](../repos/git/share-your-code-in-git-xcode.md)">Work with Git repositories</a> using the Xcode IDE.  </p>
@@ -1971,7 +1971,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly go to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>. </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
+<p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../organizations/notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../organizations/notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
 <img src="media/features/alm-index-my-profile-menu.png" alt="My Profile menu."/><br/><br/>
 
 <p><b>Switch team context</b></p>
@@ -2561,7 +2561,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team alerts</b></p>
-<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
+<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../organizations/notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../organizations/notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
 
 
 <p><b>Team groups</b></p>

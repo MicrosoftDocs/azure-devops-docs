@@ -271,3 +271,18 @@ Then, in a future stage, map the output variable `myStageVal` to a stage, job, o
 
 ---
 
+In case your value contains newlines, you can escape them and the agent will automatically unescape it:
+
+```yaml
+steps:
+    - bash: |
+        escape_data() {
+          local data=$1
+          data="${data//'%'/'%AZP25'}"
+          data="${data//$'\n'/'%0A'}"
+          data="${data//$'\r'/'%0D'}"
+          echo "$data"
+        }
+        echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
+      name: MyOutputVar
+```

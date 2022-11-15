@@ -13,7 +13,7 @@
     href: concepts/best-practices.md
     displayName: best practices, concepts
   - name: Search packages
-    href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+    href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json
     displayName: search, packages
 - name: Packages
   items:
@@ -49,7 +49,7 @@
       href: nuget/publish-to-nuget-org.md
       displayName: publish package, nuget package, nuget.org
     - name: Publish to a NuGet feed (YAML/Classic)
-      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
     - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
@@ -68,7 +68,7 @@
       href: get-started-npm.md
       displayName: npm, npm introduction
     - name: Publish npm packages (YAML/Classic)
-      href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+      href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json
       displayName: publish npm, npm packages, npm feed 
     - name: Publish npm packages (CLI)
       href: npm/publish.md
@@ -131,7 +131,7 @@
       href: universal-packages/universal-packages-upstream.md
       displayName: universal packages, upstream sources, upstreams
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
-      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+      href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json 
       displayName: universal packages yaml, universal packages classic 
 - name: Feeds, views, and upstream sources
   items:

@@ -57,14 +57,16 @@ Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other
 
 There are two work tracking snapshot entity sets: `WorkItemSnapshot` and `WorkItemBoardSnapshot`.
 
-A snapshot provides a record of the values defined for a work item each day. The record is written to the Analytics service once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
+A snapshot provides a record of the values defined for a work item each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
 
 To learn more, see [OData query guidelines, Do use weekly or monthly snapshots for trend queries that span a long time period](../extend-analytics/odata-query-guidelines.md#-do-use-weekly-or-monthly-snapshots-for-trend-queries-that-span-a-long-time-period). 
 
 
 ### About work item revisions
 
- Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has null for active or incomplete revisions. If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
+ Each time you update a work item, the system creates a new revision and records this action in the `System.RevisedDate` field, which makes it useful for specifying a history filter. The revised date is represented by `RevisedDate` (DateTime) and `RevisedDateSK` (Int32) properties. For best performance, use the latter date surrogate key. It represents the date when a revision was created or it has null for active or incomplete revisions. 
+
+If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
 
 `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`  
 
@@ -352,7 +354,7 @@ A custom category is created when a custom work item type and backlog level are 
 
 ## Tags
 
-The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
+The following properties are valid for the **Tags** entity set. Surrogate keys associated with **Tag** include `TagSK` and `ProjectSK`. Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`. To learn more about using tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
 You can use these properties to filter or report on work tracking data. 
 
@@ -360,11 +362,11 @@ You can use these properties to filter or report on work tracking data.
 |-----------------|--------------------|---------------|--------------------------------------|   
 |**Tag Id** | `TagId` | GUID | The unique ID assigned to the tag when it's created.    |  
 |**Tag Name** | `TagName` | String | The tag name.  |   
- 
+
 
 ## Teams
 
-The following properties are valid for the **Team** entity type and **Teams** entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on adding a team, see [Create or add a team](../../organizations/settings/add-teams.md).
+The following properties are valid for the **Team** entity type and **Teams** entity set.  Surrogate keys associated with **Team** include `TeamSK` and `ProjectSK`. You can use these properties to filter or report on work tracking data based on team assignments. For information on using and adding teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [Create or add a team](../../organizations/settings/add-teams.md).
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -373,13 +375,12 @@ The following properties are valid for the **Team** entity type and **Teams** en
 |**Team Name** | `TeamName` | String | The team name.  |   
 
 
-Navigation properties for the **Team** entity type and **Teams**  entity set include `Project`, `Areas`, and `Iterations`.
-
+Navigation properties for the **Teams** entity set include `Projects`, `Areas`, and `Iterations`.
 
 ## WorkItemLinks
 
-The following properties are valid for the **WorkItemLink** entity type and **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. 
-Query the **WorkItemLink** to report on parent/child, related, predecessor/successor or other link types. 
+The following properties are valid for the **WorkItemLinks** entity set. The property reference surrogate key is `WorkItemLinkSK`. 
+Query **WorkItemLinks** to report on parent/child, related, predecessor/successor or other link types. 
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|  
@@ -397,13 +398,12 @@ Query the **WorkItemLink** to report on parent/child, related, predecessor/succe
 |**Target Work Item Id** | `TargetWorkItemId` | Int32 | The ID assigned to the target work item linked to.    |    
 
 
-Navigation properties for the **WorkItemLink** entity type and **WorkItemLinks** entity set include `Project`, `SourceWorkItem`, and `TargetWorkItem`.
+Navigation properties for the **WorkItemLink** entity type include `Projects`, `SourceWorkItem`, and `TargetWorkItem`.
 
 To learn more about links and link types, see the following articles:  
 - [Use links to view dependencies and track related work](../../boards/queries/link-work-items-support-traceability.md)
 - [Link user stories, issues, bugs, and other work items in Azure Boards](../../boards/backlogs/add-link.md)
 - [Reference guide for link types used in Azure DevOps](../../boards/queries/link-type-reference.md)
-
 
 <a id="work-item-type-field-properties" /> 
 
@@ -445,16 +445,13 @@ Custom fields are automatically added to the Analytics service as a custom prope
  
 ## Related articles
 
+- [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
-- [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-- [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
-- [Add teams](../../organizations/settings/add-teams.md)
-- [Link type reference](../../boards/queries/link-type-reference.md)
+
  
 <!--- 
 ## About data types and data models 

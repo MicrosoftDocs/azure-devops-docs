@@ -54,9 +54,9 @@ and more.
   
 To learn more, see the following articles:  
 
-- [Install the Test & Feedback extension](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json)
-- [Request stakeholder feedback](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json)
-- [Provide stakeholder feedback](../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json)  
+- [Install the Test & Feedback extension](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)
+- [Request stakeholder feedback](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)
+- [Provide stakeholder feedback](../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)  
 
 
 ## Microsoft Feedback client 
@@ -72,5 +72,5 @@ To learn more, see the following articles:
 ## Related articles
 
 - [Give reviewers permissions to provide feedback](give-permissions-feedback.md)
-- [Default permissions and access set for collaboration tools](../wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/notifications/project/feedback/toc.json) 
+- [Default permissions and access set for collaboration tools](../wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/organizations/notifications/project/feedback/toc.json) 
 - [Give us feedback, get support](../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json) 

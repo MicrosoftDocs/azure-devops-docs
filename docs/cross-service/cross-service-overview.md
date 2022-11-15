@@ -41,7 +41,7 @@ Collaborating within and across teams is supported with many of the features sum
       `@mentions` (add to discussions and comments)
    :::column-end::: 
    :::column span="3":::
-      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../notifications/at-mentions.md).  
+      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../organizations/notifications/at-mentions.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -50,7 +50,7 @@ Collaborating within and across teams is supported with many of the features sum
       `#ID` (link to a work item) 
    :::column-end::: 
    :::column span="3":::
-      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../notifications/add-links-to-work-items.md).  
+      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../organizations/notifications/add-links-to-work-items.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -62,8 +62,8 @@ Collaborating within and across teams is supported with many of the features sum
       Each team gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. To learn more, see:  
       - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
       - [Set personal or team favorites](../project/navigation/set-favorites.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+      - [Unsubscribe from default notification](../organizations/notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -73,10 +73,10 @@ Collaborating within and across teams is supported with many of the features sum
    :::column-end::: 
    :::column span="3":::
       Configure or opt out of personal, team, project, or organization-level alerts. Subscribe to email alerts when changes occur to work items, code reviews, pull requests, source control files, builds and more. To learn more, see:  
-      - [About notifications](../notifications/about-notifications.md)
-      - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+      - [About notifications](../organizations/notifications/about-notifications.md)
+      - [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+      - [Unsubscribe from default notification](../organizations/notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -106,7 +106,7 @@ Collaborating within and across teams is supported with many of the features sum
 
 ## Azure Boards - Azure Repos 
 
-The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links).
+The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../organizations/notifications/add-links-to-work-items.md#view-list-links).
 
 :::image type="content" source="media/overview/concept-link-types-repos.png" alt-text="Conceptual image of link types that link work items to Azure Repos objects."::: 
 
@@ -264,7 +264,7 @@ The following table summarizes the integration points between Azure Boards and A
       View list of build or release objects a single work item is linked to 
    :::column-end::: 
    :::column span="2":::
-      You can link work items to builds and releases&mdash;providing an audit trail of how a feature has been built and deployed. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links). 
+      You can link work items to builds and releases&mdash;providing an audit trail of how a feature has been built and deployed. To learn more, see [Link to work items from other objects, View list of linked objects](../organizations/notifications/add-links-to-work-items.md#view-list-links). 
    :::column-end:::
 :::row-end:::
 --- 

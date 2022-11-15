@@ -192,7 +192,7 @@ Many properties are date-based or user-based. These properties are associated wi
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|----------|---------------|--------------------------------------| 
-|**Abandoned Count**|`AbandonedCount`                   | Int32 | The count of pipeline runs that were marked as abondoned.    |  
+|**Abandoned Count**|`AbandonedCount`                   | Int32 | The count of pipeline runs that were marked as abandoned.    |  
 |**Activity Completed Date**|`ActivityCompletedDate`    | DateTime | The date and time when the pipeline run completes execution.  | 
 |**Activity Duration Seconds**|`ActivityDurationSeconds`| Decimal | The total number of seconds the pipeline was in the queue and run.  | 
 |**Activity Started Date**|`ActivityStartedDate`        | DateTime | The date-time when the pipeline run started.  | 
@@ -307,6 +307,7 @@ Navigation properties include those listed in the following table.
 
 ## Related articles
 
+- [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Use Azure Pipelines](../../pipelines/get-started/pipelines-get-started.md)
 - [About pipeline tests](../../pipelines/test/test-glossary.md)
