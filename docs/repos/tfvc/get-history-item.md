@@ -40,8 +40,8 @@ You must be one of the **Contributors** for your project. To learn more, see [De
 
 To open the **History** window from Visual Studio, right-click an item in [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) and then choose **View History**.
 
-	> [!TIP]
-	> You can customize the position of the window by right-clicking the title and then choosing **Float**, **Dock**, or **Set Tab Layout**.
+> [!TIP]
+> You can customize the position of the window by right-clicking the title and then choosing **Float**, **Dock**, or **Set Tab Layout**.
 
 You can also use the command-line [History command](history-command.md) to open the window in Visual Studio.
 
