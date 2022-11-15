@@ -174,7 +174,7 @@ items:
       href: ../analytics/entity-reference-test-plans.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md
-  - name: Filters applied to historical data
+  - name: Historical data representation
     href: analytics-historical-filtering.md
   - name: Supported functions & clauses
     href: ../extend-analytics/odata-supported-features.md

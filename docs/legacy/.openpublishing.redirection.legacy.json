@@ -833,12 +833,12 @@
     },
     {
       "source_path_from_root": "/docs/notifications/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -1603,7 +1603,7 @@
     },
     {
       "source_path_from_root": "/docs/collaborate/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
@@ -3708,12 +3708,12 @@
     },
     {
       "source_path_from_root": "/docs/service-hooks/services/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -8258,7 +8258,7 @@
     },
     {
       "source_path_from_root": "/docs/collaborate/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -11258,7 +11258,7 @@
     },
     {
       "source_path_from_root": "/docs/work/track/alerts-and-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications?view=tfs-2015",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications?view=tfs-2015",
       "redirect_document_id": false
     },
     {
@@ -11753,7 +11753,7 @@
     },
     {
       "source_path_from_root": "/docs/organizations/notifications/navigating-the-ux.md",
-      "redirect_url": "/azure/devops/notifications/navigating-the-ui",
+      "redirect_url": "/azure/devops/organizations/notifications/navigating-the-ui",
       "redirect_document_id": false
     },
     {
@@ -12431,7 +12431,7 @@
     },
     {
       "source_path_from_root": "/docs/notifications/index.md",
-      "redirect_url": "/azure/devops/notifications/about-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
       "redirect_document_id": false
     },
     {
@@ -12511,42 +12511,42 @@
     },
     {
       "source_path_from_root": "/docs/notifications/howto-manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-manage-team-notifications-settings.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-manage-organization-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-organization-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-organization-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-use-subscription-logging.md",
-      "redirect_url": "/azure/devops/notifications/use-subscription-logging",
+      "redirect_url": "/azure/devops/organizations/notifications/use-subscription-logging",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-view-organization-notification-statistics.md",
-      "redirect_url": "/azure/devops/notifications/view-organization-notification-statistics",
+      "redirect_url": "/azure/devops/organizations/notifications/view-organization-notification-statistics",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-integrate-third-party-services.md",
-      "redirect_url": "/azure/devops/notifications/integrate-third-party-services",
+      "redirect_url": "/azure/devops/organizations/notifications/integrate-third-party-services",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/howto-exclude-self-from-email.md",
-      "redirect_url": "/azure/devops/notifications/exclude-self-from-email",
+      "redirect_url": "/azure/devops/organizations/notifications/exclude-self-from-email",
       "redirect_document_id": false
     },
     {
@@ -12571,7 +12571,7 @@
     },
     {
       "source_path_from_root": "/docs/boards/queries/alerts-and-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications?view=tfs-2015",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-your-personal-notifications?view=tfs-2015",
       "redirect_document_id": false
     },
     {
@@ -17000,17 +17000,17 @@
     },
     {
       "source_path_from_root": "/docs/notifications/manage-team-group-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/manage-organization-notification-settings.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/manage-organization-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {

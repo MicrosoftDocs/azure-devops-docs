@@ -28,7 +28,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Events, notifications, subscriptions](../../organizations/notifications/concepts-events-and-notifications.md)  
 - [GitHub connections](../../boards/github/connect-to-github.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
@@ -63,7 +63,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Events, notifications, subscriptions](../../organizations/notifications/concepts-events-and-notifications.md)  
 - [GitHub connections](../../boards/github/connect-to-github.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
@@ -99,7 +99,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Events, notifications, subscriptions](../../organizations/notifications/concepts-events-and-notifications.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
    :::column span="":::
@@ -149,7 +149,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Enable/disable project services](../settings/set-services.md)  
 - [Export list of projects](create-project.md#list-and-connect-to-projects)  
 - [Export list of teams](../settings/add-teams.md#list-teams)  
-- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -193,7 +193,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
 - [Enable/disable project services](../settings/set-services.md)  
-- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -232,7 +232,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Edit project Summary](project-vision-status.md)
-- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
+- [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
