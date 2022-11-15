@@ -154,3 +154,6 @@ tf git permission /allow:CreateBranch
                   /repository:FabrikamRepo 
                   /branch:main
 ```
+## Related articles
+
+- [Git view command](git-view-command.md)

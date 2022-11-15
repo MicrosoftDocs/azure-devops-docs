@@ -1,7 +1,7 @@
 ---
-title: Help Command (Team Foundation Version Control)
+title: Help command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Help Command (Team Foundation Version Control)
+description: See how to use the tf help command to get information about syntax for a TFVC command.
 ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
 ms.service: azure-devops-repos
 ms.topic: reference
@@ -14,18 +14,18 @@ ms.subservice: azure-devops-repos-tfvc
 # Help command (Team Foundation Version Control)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The **help** command displays information about syntax for a Team Foundation version control command.
+The `tf help` command displays information about syntax for a Team Foundation Version Control (TFVC) command.
 
 ## Prerequisites
 
-Requires installation of a version of Visual Studio on your local computer.  
+- [Visual Studio](https://visualstudio.microsoft.com/downloads) installed on your local computer.
 
 ## Syntax
 
 ```
-tf help commandname
+tf help <commandname>
 ```
 
 ## Parameters
@@ -43,21 +43,21 @@ tf help commandname
 
 :::row:::
    :::column span="1":::
-   *commandname*
+   `<commandname>`
    :::column-end:::
    :::column span="3":::
-   Specifies a Team Foundation command for which to display help about the syntax.
+   Specifies a TFVC command for which to display help about the syntax.
    :::column-end:::
 :::row-end:::
 
 ## Remarks
-If you do not know which command you need, type **tf help** for a list of all commands.
+- If you don't know which command you need, type **tf help** for a list of all commands.
 
-If you specify the *commandname* parameter, the command line displays information about the arguments and options for that command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it cannot find any matching command, alias, or short name, you will get an error.
+- If you specify the `commandname` parameter, the command line displays information about the arguments and options for that command. If the system can't find a match for the `commandname`, it searches for aliases and short names. If it can't find any matching command, alias, or short name, you get an error.
 
-The option **/?** is an alias for **help**. If you use the **/?** option together with a command, the system invokes the **help** command and it displays information about syntax.
+- The option `/?` is an alias for `help`. If you use the `/?` option together with a command, the system invokes the `help` command and displays syntax information for the command you entered.
 
-For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+- For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -65,24 +65,21 @@ For more information on how to find the **tf** command-line utility, see [Use Te
 
 The following example displays a list of the version control commands.
 
-> [!div class="tabbedCodeSnippets"]
 ```tf
 >tf vc help
 Microsoft (R) TF - Team Foundation Version Control Tool, Version 16.171.31930.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Type tf vc help <command name> for command line description.
-Type tf msdn <command name> for full documentation in Microsoft Document
-Explorer.
+Type tf msdn <command name> for full documentation in https://learn.microsoft.com.
 
 Commands:
 tf vc add            Adds new files and folders from a local file system
-                     location to Team Foundation version control.
+                     location to TFVC.
 
 tf vc branch         Copies an item or set of items, including metadata and
                      version control history, from one location to another on
-                     the Team Foundation version control server and in the
-                     workspace.
+                     the Azure DevOps server and in the workspace.
 
 tf vc branches       Displays the history of a branch for a specified file
                      or folder.
@@ -91,12 +88,11 @@ tf vc changeset      Displays information about a changeset and lets you
                      change the associated attributes, such as comments and
                      check-in notes.
 
-tf vc checkin        Commits pending changes in the current workspace to Team
-                     Foundation version control.
+tf vc checkin        Commits pending changes in the current workspace to TFVC.
 
 tf vc checkout       Makes the local file writable and changes its pending
                      Change status to "edit" in the workspace. Edit is an
-                     alias for the Checkout command.
+                     alias for the checkout command.
 
 tf vc certificates   Configures how client authentication certificates are
                      used when connecting to Azure DevOps through a secure connection.
@@ -108,18 +104,17 @@ tf vc configure      Enables an administrator to view and change the following
                      - Check-in policies
                      - Check-in notes
 
-tf vc delete         Removes files and folders from Team Foundation version
-                     control and deletes them from the disk.
+tf vc delete         Removes files and folders from TFVC
+                     and deletes them from the disk.
 
 tf vc destroy        Destroys, or permanently deletes, version-controlled
-                     files from Team Foundation version control.
+                     files from TFVC.
 
 tf vc diff           Compares, and if it is possible, displays differences
                      between two files, files in two folders, or a shelveset
                      and a local or server file.
 
-tf vc dir            Displays all or part of the contents of Team Foundation
-                     version control.
+tf vc dir            Displays all or part of the contents of TFVC.
 
 tf vc folderdiff     Display a visual representation of the differences between
                      files in two server folders, in a server folder and a
@@ -135,10 +130,9 @@ tf vc history        Displays the revision history for one or more files and
 tf vc info           Displays information about items under version control.
 
 tf vc label          Attaches a label to or removes a label from a version of a
-                     file or folder in Team Foundation version control.
+                     file or folder in TFVC.
 
-tf vc labels         Displays the list of labels in Team Foundation version
-                     control.
+tf vc labels         Displays the list of labels in TFVC.
 
 tf vc localversions  Displays the version of one or more items in a workspace.
 
@@ -152,8 +146,8 @@ tf vc merge          Applies changes from one branch into another.
 tf vc merges         Displays detailed information about past merges between
                      the specified source and destination branches.
 
-tf vc msdn           Launches the Microsoft Document Explorer to the
-                     documentation page for the command.
+tf vc msdn           Displays the https://learn.microsoft.com documentation
+                     page for the command.
 
 tf vc permission     Modifies the user access control list (ACL) and displays
                      authorization settings for an item under version control.
@@ -166,7 +160,7 @@ tf vc reconcile      Compares the current state of the workspace on disk with
                      promote unpended local changes.
 
 tf vc rename         Changes the name or the path of a file or folder. You
-                     can use the rename command or the alias move, to move a
+                     can use the rename command or the alias Move to move a
                      file or folder to a new location.
 
 tf vc resolve        Resolves conflicts between changed items in your
@@ -203,8 +197,8 @@ tf vc view           Retrieves a specific version of a file to a temporary
                      folder on your computer and displays it.
 
 tf vc workfold       Creates, modifies, or displays information about the
-                     mappings between your workspace folders and the Team
-                     Foundation version control folders.
+                     mappings between your workspace folders and the TFVC
+                     folders.
 
 tf vc workspace      Creates, deletes, displays, or modifies properties and
                      mappings associated with a workspace.
@@ -216,9 +210,8 @@ tf vc workspaces     Displays information about workspaces in the system and
 
 ### View help for tf view command
 
-The following example displays help information for the **view** command.
+The following example displays help information for the `view` command.
 
-> [!div class="tabbedCodeSnippets"]
 ```tf
 >tf view /help
 Microsoft (R) TF - Team Foundation Version Control Tool, Version 16.171.31930.1
@@ -243,9 +236,8 @@ Versionspec:
 
 ### View help for workspace command
 
-The following example displays information about syntax for the **workspace** command.
+The following example displays information about syntax for the `workspace` command.
 
-> [!div class="tabbedCodeSnippets"]
 ```tf
 >tf workspace /help 
 Microsoft (R) TF - Team Foundation Version Control Tool, Version 16.171.31930.1
@@ -277,10 +269,10 @@ tf vc workspace [/collection:TeamProjectCollectionUrl]
                 [/login:username,[password]]
 ```
 
-The following example also displays the same information about syntax for the **workspace** command.
+The following example also displays the same information about syntax for the `workspace` command.
 
 ```
-c:\projects>tf workspace /?
+tf workspace /?
 ```
 
 ## Related articles
