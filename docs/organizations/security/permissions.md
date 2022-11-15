@@ -1298,7 +1298,7 @@ You manage project-level permissions through the [web portal admin context](chan
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
-   Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
+   Can [change the project visibility](../projects/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1729,7 +1729,7 @@ You manage project-level permissions through the [web portal admin context](chan
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
-   Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
+   Can [change the project visibility](../projects/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3172,10 +3172,10 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
 ## Notifications or alerts 
 
 ::: moniker range=">= azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../notifications/manage-your-personal-notifications.md). Instead, they you can manage them using [az devops security permission](manage-tokens-namespaces.md) or [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools.
+There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, they you can manage them using [az devops security permission](manage-tokens-namespaces.md) or [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools.
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../notifications/manage-your-personal-notifications.md). Instead, they you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
+There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, they you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
 ::: moniker-end
 
 

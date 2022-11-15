@@ -3,7 +3,7 @@ ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 07/26/2022
+ms.date: 11/08/2022
 ---
 
 <a id="open-analytics">  </a>
@@ -25,7 +25,7 @@ If you don't see **Analytics**, check that it's enabled for the project collecti
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of expand Boards and choose Analytics views.](/azure/devops/report/powerbi/media/analytics-views/open-analytics-2020.png)  
+> ![Screenshot of expand Boards and choose Analytics views.](../powerbi/media/analytics-views/open-analytics-2020.png)  
 
 ::: moniker-end 
 

@@ -141,7 +141,7 @@ For organizations that manage users and groups using Azure Active Directory (Azu
 As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of people picker](../organizations/notifications/media/at-mention/identity-selector.png)  
 
 > [!WARNING]   
 > When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility and collaboration to specific projects** preview feature for the organization.  
@@ -278,7 +278,7 @@ You can quickly communicate with your Azure DevOps users through information ban
 
 ## Review and update notifications
 
-A number of notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../notifications/manage-team-group-global-organization-notifications.md).  
+A number of notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
  
 :::image type="content" source="../media/global-notifications.png" alt-text="Screenshot of Azure DevOps global notifications.":::
  

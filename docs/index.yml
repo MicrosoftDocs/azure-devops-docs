@@ -21,11 +21,11 @@ highlightedContent:
     # Card
     - title: What is Azure DevOps?
       itemType: overview
-      url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+      url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json
     # Card
     - title: Azure DevOps Services vs. Azure DevOps Server
       itemType: overview
-      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
@@ -37,7 +37,7 @@ highlightedContent:
     # Card
     - title: Get started for free
       itemType: get-started
-      url: ./user-guide/sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+      url: ./user-guide/sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json
     # Card
     - title: Create your first pipeline
       itemType: get-started
@@ -209,7 +209,7 @@ additionalContent:
             - text: Projects
               url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Public projects
-              url: ./organizations/public/about-public-projects.md
+              url: ./organizations/projects/about-projects.md
             - text: Organizations
               url: ./organizations/accounts/organization-management.md
             - text: Pipeline agent pools & queues 
@@ -251,9 +251,7 @@ additionalContent:
             - text: Deploy to Azure
               url: ./pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json 
             - text: Work across projects
-              url: ./project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json 
-            - text: Create a public project
-              url: ./organizations/public/create-public-project.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json    
+              url: ./project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json    
             - text: Azure Boards & GitHub
               url: ./boards/github/connect-to-github.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
             - text: See more >

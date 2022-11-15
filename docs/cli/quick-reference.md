@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/18/2022
+ms.date: 11/08/2022
 ---
 
 # Index to Azure DevOps CLI examples 
@@ -245,12 +245,18 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Update a security group](../organizations/security/add-manage-security-groups.md) 
 
-## Service endpoints
+<a id="service-endpoints" />
+
+## Service endpoints or service connections
 
 - [Create a GitHub service endpoint](service-endpoint.md)
 - [Create an Azure RM service endpoint](service-endpoint.md)
 - [Create service endpoint using a configuration file](service-endpoint.md)
- 
+- [List service endpoints](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-list)
+- [Delete a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-delete)
+- [Manage GitHub service endpoints](/cli/azure/devops/service-endpoint/github)
+- [Show details of a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-show)
+- [Update a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-update)
 
 ## Related articles
  

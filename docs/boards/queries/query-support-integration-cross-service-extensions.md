@@ -39,7 +39,7 @@ Notifications support query filter criteria so that you can customize when you'l
 
 :::image type="content" source="media/about-queries/query-filter-notifications.png" alt-text="Screenshot of query filters in a notification subscription.":::
 
-To learn more, see [Manage your personal notifications](../../notifications/manage-your-personal-notifications.md) 
+To learn more, see [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) 
 
 <a id="wiql" />
 

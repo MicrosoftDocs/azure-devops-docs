@@ -1,4 +1,4 @@
-﻿---
+---
 title: Default Wiki and social tool permissions
 titleSuffix: Azure DevOps 
 description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps 
@@ -27,13 +27,13 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 
 To manage permissions for a collaboration tool, see the following articles:
 
-- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
-- [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/wiki/project/feedback/toc.json )
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json)
+- [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json)
 
 To manage notifications, see the following articles:
 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json)
-- [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json)
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+- [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 
 >[!NOTE]
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).

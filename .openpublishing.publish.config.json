@@ -103,6 +103,7 @@
     ".openpublishing.redirection.archive.2015.json",
     ".openpublishing.redirection.archive.2017.json",
     "docs/legacy/.openpublishing.redirection.legacy.json",
+    "docs/organizations/.openpublishing.redirection.notifications.json",
     "docs/pipelines/.openpublishing.redirection.pipelines.json",
     "docs/report/.openpublishing.redirection.report.json",
     "docs/artifacts/.openpublishing.redirection.artifacts.json",

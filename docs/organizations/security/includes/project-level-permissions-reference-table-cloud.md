@@ -213,7 +213,7 @@ ms.date: 10/19/2022
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
-   Can [change the project visibility](../../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
+   Can [change the project visibility](../../projects/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
 :::row:::

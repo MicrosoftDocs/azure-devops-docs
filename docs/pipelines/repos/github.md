@@ -436,7 +436,7 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 
 ### Contributions from external sources
 
-If your GitHub repository is open source, you can make your Azure DevOps project [public](../../organizations/public/create-public-project.md) so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
+If your GitHub repository is open source, you can [make your Azure DevOps project public](../../organizations/projects/make-project-public.md) so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
 
 You should keep in mind the following considerations when using Azure Pipelines in a public project when accepting contributions from external sources.
 

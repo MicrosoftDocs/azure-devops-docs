@@ -12,7 +12,7 @@ ms.date: 02/13/2020
 
 If you signed up for Azure DevOps with a newly created Microsoft account (MSA), your project is automatically created and named based on your sign-in.
 
-If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../organizations/projects/about-projects.md). 
 
 1. Enter information into the form provided, which includes a project name, description, visibility selection, initial source control type, and work item process.
  
