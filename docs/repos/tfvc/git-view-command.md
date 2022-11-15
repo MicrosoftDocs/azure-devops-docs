@@ -86,3 +86,7 @@ tf git view /collection:https://dev.azure.com/fabrikam-fiber
             /output:Global.asax.cs 
             /login:FabrikamUser@hotmail.com,FabrikamPassword
 ```
+
+## Related articles
+
+- [Git permission command](git-permission-command.md)
