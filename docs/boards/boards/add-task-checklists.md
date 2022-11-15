@@ -132,11 +132,11 @@ Tasks or other child items you add as checklists are automatically assigned to t
 
 <a id="checklist-actions" /> 
 
-::: moniker range=">= azure-devops-2022"
+::: moniker range="azure-devops"
 
 ## Reassign a checklist item 
 
-Checklist items show the avatars of those assigned to the item. You can view the avatar assignment of checklist items, or reassign a checklist item by choosing the item's &hellip;**Work items action menu** and selecting **Assigned to**.  
+Checklist items show the avatars of those team members assigned to the item. You can view the avatar assignment of checklist items, or reassign a checklist item by choosing the item's &hellip;**Work items action menu** and selecting **Assigned to**.  
 
 > [!NOTE]   
 > Avatar images and the **Assign to** menu option requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).

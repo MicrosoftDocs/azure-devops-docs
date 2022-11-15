@@ -55,7 +55,7 @@ landingContent:
           - text: Link work items to builds and deployments
             url: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
           - text: Link objects to work items
-            url: ../notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            url: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
           - text: Configure pipelines to support work tracking 
             url: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
   - title: Integrate with GitHub
@@ -105,12 +105,8 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is a public project?
-            url: ../organizations/public/about-public-projects.md
+            url: ../organizations/projects/about-projects.md#use-private-and-public-projects
       - linkListType: quickstart
         links:
-          - text: Create a public project
-            url: ../organizations/public/create-public-project.md
-          - text: Invite users to your public project
-            url: ../organizations/public/invite-users-public.md
           - text: Make a private project public
-            url: ../organizations/public/make-project-public.md
+            url: ../organizations/projects/make-project-public.md

@@ -232,7 +232,7 @@ For organizations that manage their users and groups using Azure Active Director
 As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of people picker](../../organizations/notifications/media/at-mention/identity-selector.png)  
 
 Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
 
