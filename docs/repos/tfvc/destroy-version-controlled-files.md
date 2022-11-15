@@ -83,5 +83,5 @@ In Windows, select **Start** and then type *Developer Command Prompt*. From the 
 
 - [Move, rename, and delete version-controlled files and folders](rename-move-files-folders.md)
 - [Destroy command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)
-- [Operations available only from the tf command line](what-is-tfvc.md#command-line-only)
+- [Operations available only from the tf command line](what-is-tfvc.md#operations-available-only-from-the-tf-command-line)
 - [Team Foundation Version Control command-line reference](use-team-foundation-version-control-commands.md)
