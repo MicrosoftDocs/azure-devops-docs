@@ -65,7 +65,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the `/login` option. You can specify a username value as either `DOMAIN\username` or `username`.
+   Provides a value to the `/login` option. You can specify a `username` value as either `DOMAIN\username` or `username`.
    :::column-end:::
 :::row-end:::
 :::row:::

@@ -74,7 +74,7 @@ tf localversions ItemSpec
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `<TeamProjectCollectionUrl>~
+   `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
    The URL of the project collection that contains one or more items for which you want to display the version, for example, `http://myserver:8080/tfs/DefaultCollection`.

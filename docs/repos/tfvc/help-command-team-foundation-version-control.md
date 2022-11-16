@@ -1,7 +1,7 @@
 ---
 title: Help command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: See how to use the tf help command to get information about syntax for a TFVC command.
+description: See how to use the tf help command to get information about syntax for tf command-line utility commands.
 ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
 ms.service: azure-devops-repos
 ms.topic: reference
@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The `tf help` command displays information about syntax for a Team Foundation Version Control (TFVC) command.
+The `tf help` command displays information about syntax for `tf` command-line utility commands.
 
 ## Prerequisites
 
@@ -51,11 +51,15 @@ tf help <commandname>
 :::row-end:::
 
 ## Remarks
-- If you don't know which command you need, type **tf help** for a list of all commands.
+- If you don't know which command you need, enter:
+
+  - `tf vc help` for a list of supported TFVC commands.
+  - `tf git help` for a list of supported Git commands.
+  - `tf settings help` for a list of supported server settings commands.
 
 - If you specify the `commandname` parameter, the command line displays information about the arguments and options for that command. If the system can't find a match for the `commandname`, it searches for aliases and short names. If it can't find any matching command, alias, or short name, you get an error.
 
-- The option `/?` is an alias for `help`. If you use the `/?` option together with a command, the system invokes the `help` command and displays syntax information for the command you entered.
+- The option `/?` is an alias for `help`. If you use the `/?` option with a command, the system invokes the `help` command and displays syntax information for the command you entered.
 
 - For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
