@@ -161,6 +161,16 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column-end:::
 :::row-end:::
 
+## Remarks
+
+- To get more detailed information about a changeset, for example to see associated work items:
+
+  - In the Visual Studio **History** window, double-click or right-click the changeset and choose **Changeset Details**.
+
+  - From the command prompt, use the [Changeset command](changeset-command.md).
+
+- The `/collection` option is useful for running this command from a machine and user account that doesn't have a workspace mapped to the project collection that contains the items.
+
 ## Examples
 
 The following examples assume that *c:\\code\\SiteApp\\Main* maps to the main folder in the workspace.
@@ -347,17 +357,6 @@ The following example displays the most recent change to the *SolutionA* folder 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history . /noprompt
 ```
-
-## Tips
-
-
-- To get more detailed information about a changeset, for example to see associated work items:
-
-  - In the Visual Studio **History** window, double-click or right-click the changeset and choose **Changeset Details**.
-
-  - From the command prompt, use the [Changeset command](changeset-command.md).
-
-- The `/collection` option is useful for running this command from a machine and user account that doesn't have a workspace mapped to the project collection that contains the items.
 
 
 ## Related articles
