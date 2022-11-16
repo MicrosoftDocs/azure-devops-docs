@@ -60,7 +60,6 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column-end:::
    :::column span="3":::
    Specifies how much detail to display about each changeset when the `/noprompt` option is specified:
-
    
    - `Brief` (default): Displays one line about each changeset that includes: ID number, changes made, user who made the changes, date, and comment. Some of the data may be truncated.
 
