@@ -113,10 +113,7 @@ By using the **Changesets** tab, you can do the following tasks:
    :::column span="3":::
    - **Compare a past version with the current version:** Right-click a changeset and then select **Compare**.
    
-   - **Compare a past version with another past version:**
-   
-                1. Select two changesets by using Ctrl+Select.
-                1. Right-click one of the changesets and select **Compare**.
+   - **Compare a past version with another past version:** Select two changesets by using Ctrl+Select, then right-click one of the changesets and select **Compare**.
    
    :::column-end:::
    :::column span="1":::
