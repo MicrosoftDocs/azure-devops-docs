@@ -53,7 +53,7 @@ The following example displays an article that lists all the version control com
 c:\projects>tf msdn
 ```
 
-The following example displays a help topic about the `workspace` command.
+The following example displays an article about the `workspace` command.
 
 ```
 c:\projects>tf msdn workspace

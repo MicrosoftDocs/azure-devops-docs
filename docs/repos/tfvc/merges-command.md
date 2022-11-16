@@ -148,7 +148,7 @@ For more information on how to use the `tf` command-line utility, see [Use Team 
 
 ## Examples
 
-The following example displays information about all merge operations performed between *Beta1_branch* and *RTM_branch*.
+The following example displays information about all merge operations done between the *Beta1_branch* and the *RTM_branch*.
 
 ```
 c:\projects>tf merges /recursive Beta1_branch RTM_branch
@@ -165,7 +165,6 @@ Changeset  Merged in Changeset   Author   Date
 ```
 
 The asterisk `*` next to changeset 147 indicates that only some of the changes in that changeset #147 were merged into changeset #167.
-
 
 ## Related articles
 

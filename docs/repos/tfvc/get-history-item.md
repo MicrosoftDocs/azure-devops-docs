@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation Version Control (TFVC) maintains historical data related to every version of every file that's ever been checked in.
 
-Often when you look over the history of a file, folder, or branch, you're trying to solve a problem or answer a question. By using the TFVC **History** window in Visual Studio, you can more easily resolve questions and situations such as the following:
+Often when you look over the history of a file, folder, or branch, you're trying to solve a problem or answer a question. By using the **History** window in Visual Studio, you can more easily resolve questions and situations such as the following:
 
 -   What changes have been made in the past weeks or months?
 
@@ -101,9 +101,9 @@ By using the **Changesets** tab, you can do the following tasks:
    :::column span="3":::
    - **Get more details about a changeset:** Right-click a changeset and then select **Changeset Details** to get information such as:
 
-   - Other source files that are part of the changeset.
-   - Work items associated with the changeset.
-   - Any check-in notes left for reviewers.
+     - Other source files that are part of the changeset.
+     - Work items associated with the changeset.
+     - Any check-in notes left for reviewers.
    :::column-end:::
    :::column span="1":::
    [Find and view changesets](find-view-changesets.md) 
@@ -117,7 +117,7 @@ By using the **Changesets** tab, you can do the following tasks:
    
      1. Select two changesets by using Ctrl+Select.
      1. Right-click one of the changesets and select **Compare**.
-
+   
    :::column-end:::
    :::column span="1":::
    [Compare files](compare-files.md), [Compare folders](compare-folders.md) 
