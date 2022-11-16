@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-tfvc
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that's forked into various branches in Team Foundation Version Control (TFVC). If you use branches, eventually your team must integrate the work that's been completed on different branches during certain phases of your project. For example, when you're ready to test a full version of your software, you need the changes made on different feature team branches to be merged together.
 
-The procedures in this article explain how you can use the Visual Studio graphical user interface to merge together changes made in different branches. For information about how to perform merges at the command prompt, see [Merge command](merge-command.md).
+The procedures in this article explain how you can use the Visual Studio graphical user interface to merge together changes made in different branches. For information about how to do merges at the command prompt, see [Merge command](merge-command.md).
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ While you can still branch and merge among folders, the best practice for your t
 
 ## Initiate a merge from the Tracking Changeset window
 
-You can use the **Tracking Changeset** window to view information such as where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset hasn't been merged are also highlighted. If you see a branch where the changeset is needed but is missing, drag it in.
+You can use the **Tracking Changeset** window to view information such as where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset hasn't been merged are also highlighted. If you see a branch where the changeset is needed but is missing, you can drag it in.
 
 > [!IMPORTANT]
 > You can do this procedure only for changesets that affect a branch. For more information, see [Branch folders and files](branch-folders-files.md).

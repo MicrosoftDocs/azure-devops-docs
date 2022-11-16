@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The Team Foundation Version Control (TFVC) `tf labels` command displays the list of labels in the Azure DevOps server for TFVC.
+The Team Foundation Version Control (TFVC) `tf labels` command displays the list of labels in the TFVC server.
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ tf labels [/owner:ownername] [/format:(brief|detailed)]
    `<labelname>`
    :::column-end:::
    :::column span="3":::
-   Specifies a string that should be used to filter the list of labels. If this parameter is omitted, the label name field will not be filtered.
+   Specifies a string that should be used to filter the list of labels. If this parameter is omitted, the label name field won't be filtered.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -62,7 +62,7 @@ tf labels [/owner:ownername] [/format:(brief|detailed)]
    `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection for which you want to display the list of labels, for example`http://myserver:8080/tfs/DefaultCollection`.
+   The URL of the project collection for which you want to display the list of labels, for example `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -122,7 +122,7 @@ tf labels [/owner:ownername] [/format:(brief|detailed)]
 
 ## Remarks
 
-- The `labels` command displays information about labels in the Azure DevOps server. If you don't specify an Azure DevOps server, the TFVC tries to determine the Azure DevOps server by using the current directory. If the current directory isn't mapped to an Azure DevOps server, you must specify one by using the `/s` option.
+- The `labels` command displays information about labels in the TFVC server. If you don't specify a TFVC server, TFVC tries to determine the TFVC server by using the current directory. If the current directory isn't mapped to a TFVC server, you must specify one by using the `/s` option.
 
 - By default, the results display the label name, owner and creation date for each label. If the format is changed to `detailed`, comments and the list of files and folders associated with each label are also displayed.
 
@@ -136,13 +136,13 @@ The following example displays the list of labels created by user `jasonj`.
 c:\projects> tf labels /owner:jasonj
 ```
 
-The following example displays information about the `build1033` label and lists the files and folders to which the label has been applied in the Azure DevOps server.
+The following example displays information about the `build1033` label and lists the files and folders to which the label has been applied in the TFVC server.
 
 ```
 c:\projects> tf labels /format:detailed build1033
 ```
 
-The following example displays all labels in the Azure DevOps server that have a `labelname` that begins with `build` and are owned by the account executing the `labels` command.
+The following example displays all labels in the TFVC server that have a `labelname` that begins with `build` and are owned by the account executing the `labels` command.
 
 ```
 c:\projects> tf labels build*

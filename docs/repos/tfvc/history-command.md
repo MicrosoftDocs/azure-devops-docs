@@ -87,9 +87,9 @@ tf hist[ory] itemspec [/version:versionspec]
    `/noprompt`
    :::column-end:::
    :::column span="3":::
-   - Suppresses the display of windows and dialog boxes, such as the **History** window, and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   Suppresses the display of windows and dialog boxes, such as the **History** window, and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
-   - Doesn't display the history of revisions that occurred before an item was moved, renamed, branched, or merged.
+   Doesn't display the history of revisions that occurred before an item was moved, renamed, branched, or merged.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -258,13 +258,15 @@ Changeset User              Date       Comment
 20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
 ```
 
-### Get history from version x to version y
+### Get history from a range of dates
 
 The following example displays changes made to all items in *SolutionA*, including those in subfolders, between 4/12/2012 and 4/23/2012, in the command prompt window:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
 ```
+
+Output:
 
 ```
 Changeset User              Date       Comment

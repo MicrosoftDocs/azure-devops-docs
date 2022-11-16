@@ -45,17 +45,17 @@ tf git view /collection:TeamProjectCollectionUrl
 |   `/repository:<RepositoryIdentifier>`   |                                                                    Specifies the name of the repo that contains the file to view. This parameter is required.                                                                     |
 |            `/blobId:<blobId>`            |                                          Specifies the ID of a blob to retrieve. This option can't be used with the `path` parameter. One of either `path` or `blob` is required.                                          |
 |            `/path:<path>`            |                                              Specifies the path of the file. This option can't be used with the `blob` parameter. One of either `path` or `blob` is required.                                              |
-|          `/commitId:<commitId>`          | Specifies the commit that contains the file to open for viewing. If you omit this option, view retrieves the latest version from the default branch, typically `main`. This parameter can only be used with the `path` option. |
+|          `/commitId:<commitId>`          | Specifies the commit that contains the file to open for viewing. If you omit this option, `git view` retrieves the latest version from the default branch, typically `main`. This parameter can only be used with the `path` option. |
 |          `/output:<localfile>`           |                                                         The path and name under which to save the retrieved file. If not supplied, the file is saved in *%Temp%\\TFSTemp*.                                                         |
 |                   `/console`                    |         Specifies that the file output should be directed to the console. This parameter is useful if you want to write the file out to disk using console redirection, with a different name or location than the versioned item.         |
 |      `/login:<username>[,<password>]`      |                                        Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).                                        |
 
 ## Examples
 
-The following example retrieves a file from the default branch, typically `main`, and saves it to the current folder, and prompts the user for their credentials.
-
 >[!NOTE]
 >The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into Notepad or another tool and edit them so the commands are contained on a single line.
+
+The following example retrieves a file from the default branch, typically `main`, saves it to the current folder, and prompts the user for their credentials.
 
 ```
 tf git view /collection:https://dev.azure.com/fabrikam-fiber /teamproject:FabrikamProject 

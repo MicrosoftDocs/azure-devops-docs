@@ -17,7 +17,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 
-You can use Visual Studio Source Control Explorer to lock or unlock a folder or file tracked by Team Foundation Version Control (TFVC). Lock or unlock files or folders to deny or restore a user's privileges such as checking out an item for edit into a different workspace or checking in pending changes to an item from a different workspace. For more information, see [Create and work with workspaces](create-work-workspaces.md).
+You can use Visual Studio **Source Control Explorer** to lock or unlock a folder or file tracked by Team Foundation Version Control (TFVC). Lock or unlock files or folders to deny or restore a user's privileges such as checking out an item for edit into a different workspace or checking in pending changes to an item from a different workspace. For more information, see [Create and work with workspaces](create-work-workspaces.md).
 
 > [!NOTE]
 > This article applies to locking or unlocking files managed by TFVC. For help unlocking files that show in use by programs on your PC, use the [Handle](/sysinternals/downloads/handle) and [Process Explorer](/sysinternals/downloads/process-explorer) tools to help you find which program is locking your files.
@@ -44,10 +44,10 @@ See [Default TFVC permissions](../../organizations/security/default-tfvc-permiss
 
 3.  In the **Lock** dialog box, make sure the file or folder you want to lock is selected, select either the **Check Out** or **Check In** lock type, and then select **Lock**. For more information, see [Understand lock types](understand-lock-types.md).
 
-    Next to the file, under **Pending Change**, Source Control Explorer displays the status **lock**. The next time your pending changes are checked into the workspace, the lock is removed. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
+**Source Control Explorer** displays the status **lock** next to the file under **Pending Change**. The next time your pending changes are checked into the workspace, the lock is removed. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
-    > [!NOTE]
-    >  You can also lock folders and files from the command line. For more information, see [Lock command](lock-command.md).
+> [!NOTE]
+>  You can also lock folders and files from the command line. For more information, see [Lock command](lock-command.md).
 
 ## Unlock a folder or file
 

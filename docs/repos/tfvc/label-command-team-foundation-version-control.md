@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The Team Foundation Version Control (TFVC) `tf label` command attaches a label to or removes a label from a version of a file or folder in the server for Team Foundation Version Control (TFVC).
+The Team Foundation Version Control (TFVC) `tf label` command attaches a label to or removes a label from a version of a file or folder in the TFVC server.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
    `@<scope>`
    :::column-end:::
    :::column span="3":::
-   Specifies am Azure DevOps Server directory within which the `labelname` is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the Azure DevOps server.
+   Specifies a TFVC server directory within which the `labelname` is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the TFVC server.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -104,7 +104,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
    `@<commentfile>`
    :::column-end:::
    :::column span="3":::
-   The user-provided path of a file on disk that contains the comment to use for the check-in.
+   The user-provided path of a file on disk that contains the comment to use for the label.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -120,7 +120,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
    `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label, for example`http://myserver:8080/tfs/DefaultCollection`.
+   The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label, for example `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 
@@ -202,7 +202,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 :::row-end:::
 
 ## Remarks
-A label is a marker that you can attach to a set of unrelated files and folders in the Azure DevOps server. Use the label to simplify their retrieval to a workspace for either development or build purposes. Therefore, a label is like a changeset or date/time to which and from which you can arbitrarily add and remove files and folders or change the versions of the items therein. A label is a version specification that can be passed to the following TFVC commands:
+A label is a marker that you can attach to a set of otherwise unrelated files and folders in the TFVC server. Use the label to simplify file and folder retrieval to a workspace for either development or build purposes. A label is like a changeset or date/time to which and from which you can arbitrarily add and remove files and folders or change the versions of the items therein. A label is a version specification that can be passed to the following TFVC commands:
 
 -   [Branch command](branch-command.md)
 -   [Difference command](difference-command.md)
@@ -216,7 +216,7 @@ Common types of labels are milestone labels such as `M1`, `Beta2`, or `Release C
 
 Labels are version-specific. That is, you can only attach a label to one version of a file or folder. Each version of an item can support multiple labels.
 
-A label isn't a versioned object. Therefore, the label history of files isn't tracked. Also, a label operation doesn't create a pending change in your workspace. When you issue the `label` command, the update is immediately reflected in the Azure DevOps server.
+A label isn't a versioned object. Therefore, the label history of files isn't tracked. Also, a label operation doesn't create a pending change in your workspace. When you issue the `label` command, the update is immediately reflected in the TFVC server.
 
 For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
@@ -230,11 +230,11 @@ For information about an existing label that includes a list of the items to whi
 
 Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the `@scope` parameter is the project, for example, *$/TeamProject1*.
 
-If another team or user adds a common label such as `M3` to a set of version-controlled files in a different part of the Azure DevOps server, you can apply the `M3` label to version-controlled files in your project as long as the root project folders are in different directories. For example, if files in the *$/math* directory are labeled `M3`, you can apply the `M3` label to files in your *$/projects* directory.
+If another team or user adds a common label such as `M3` to a set of version-controlled files in a different part of the TFVC server, you can apply the `M3` label to version-controlled files in your project as long as the root project folders are in different directories. For example, if files in the *$/math* directory are labeled `M3`, you can also apply the `M3` label to files in your *$/projects* directory.
 
 To get, remove a label, or otherwise manage your `M3`-labeled items, you should specify the `@scope` parameter to tell TFVC which `M3` label you want to work with.
 
-You can prevent other users from "overloading" a label such as `M3` in different parts of the Azure DevOps server by either creating your label at the root *$/* of the Team Foundation version control server or by adjusting Label permissions for certain folders.
+You can prevent other users from "overloading" a label such as `M3` in different parts of the TFVC server by either creating your label at the root *$/* of the Team Foundation version control server or by adjusting **Label** permissions for certain folders.
 
 ## Examples
 The following example attaches the `goodbuild` label to the workspace version of the *docs* folder and the files and folders it contains.
@@ -249,13 +249,13 @@ The following example attaches the `goodbuild` label to the *docs* folder but no
 c:\projects>tf label goodbuild docs
 ```
 
-The following example attaches the `goodbuild` label to version 3 of *314.cs* in the Azure DevOps server.
+The following example attaches the `goodbuild` label to version 3 of *314.cs* in the TFVC server.
 
 ```
 c:\projects>tf label goodbuild /version:3 $/src/314.cs
 ```
 
-The following example deletes the `badbuild` label from all items in the Azure DevOps server.
+The following example deletes the `badbuild` label from all items in the TFVC server.
 
 ```
 c:\projects>tf label /delete badbuild

@@ -23,7 +23,7 @@ The `tf git permission` command modifies the user access control list (ACL) and 
 
 - To manage permissions, you must have **Manage permissions** for the desired artifact.  
 
-For more information, see  [Default Git permissions](../../organizations/security/default-git-permissions.md).
+For more information, see [Default Git permissions](../../organizations/security/default-git-permissions.md).
 
 ## Syntax
 
@@ -46,9 +46,9 @@ tf git permission [/allow:(* |perm1[,perm2,...]]
 |---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       `/allow:(* |<perm1>[,<perm2>,...])`       |                                                                                                                                                   The permissions to allow.                                                                                                                                                    |
 |       `/deny:(* |<perm1>[,<perm2>,...])`        |                                                                                                                                                    The permissions to deny.                                                                                                                                                    |
-|      `/remove:(* |<perm1>[,<perm2>,...])`       | The permissions to remove, sometimes referred to as not set. You can use all three of `/allow`, `/deny`, and `/remove` in the same invocation. For more information on how allow, deny, and remove settings interact, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings). |
-|   `/user:<username1>[,<username2>,...]`    |                                                                                                              The user or users for which to allow, deny, or remove. You must specify at least one user or group.                                                                                                               |
-|  `/group:<groupname1>[,<groupname2>,...]`  |                                                                                      The groups or groups for which to allow, deny, or remove. You must specify at least one user or group. Groups and individuals can be used together.                                                                                       |
+|      `/remove:(* |<perm1>[,<perm2>,...])`       | The permissions to remove, sometimes referred to as not set. You can use all three of `/allow`, `/deny`, and `/remove` in the same invocation. For more information on how the allow, deny, and remove settings interact, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings). |
+|   `/user:<username1>[,<username2>,...]`    |                                                                                                              The user or users for which to allow, deny, or remove permissions. You must specify at least one user or group.                                                                                                               |
+|  `/group:<groupname1>[,<groupname2>,...]`  |                                                                                      The groups or groups for which to allow, deny, or remove permissions. You must specify at least one user or group. Groups and individuals can be used together.                                                                                       |
 | `/collection:<TeamProjectCollectionUrl>` |                                                 Specifies the URL of the project collection that contains the permissions to view or modify. For example: `http://myserver:8080/tfs/DefaultCollection` or `https://fabrikam-fiber.visualstudio.com`. This parameter is required.                                                 |
 |  `/teamproject:<TeamProjectIdentifier>`  |                                                                                                                       Specifies the name of the project that contains the permissions to view or modify.                                                                                                                       |
 |   `/repository:<RepositoryIdentifier>`   |                                                                                                                        Specifies the name of the repo that contains the permissions to view or modify.                                                                                                                         |
@@ -64,7 +64,7 @@ See [Git repository permission namespaces](../../organizations/security/namespac
 
 ### View collection level permissions
 
-The following examples lists the permissions for the `fabrikam-fiber` collection.
+The following example lists the permissions for the `fabrikam-fiber` collection.
 
 ```
 tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
@@ -73,7 +73,7 @@ tf git permission /collection:https://dev.azure.com/fabrikam-fiber
 
 ### View project level permissions
 
-The following examples lists the project level permissions for the `FabrikamFiber` project, which is in the `fabrikam-fiber` collection.
+The following example lists the project level permissions for the `FabrikamFiber` project, which is in the `fabrikam-fiber` collection.
 
 ```
 tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
@@ -83,7 +83,7 @@ tf git permission /collection:https://dev.azure.com/fabrikam-fiber
 
 ### View repository level permissions
 
-The following examples lists the project level permissions for the `FabrikamFiber` repository, which is in the `FabrikamFiber` project.
+The following example lists the project level permissions for the `FabrikamFiber` repository, which is in the `FabrikamFiber` project.
 
 ```
 tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
