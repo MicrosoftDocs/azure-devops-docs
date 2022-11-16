@@ -40,7 +40,7 @@ tf msdn commandname
 
 ## Remarks
 
-When you need a command and aren't sure which one to use, enter `tf msdn` to see command reference articles and links to more resources. If you use the `msdn` command without specifying a `commandname` parameter, the article [Use Team Foundation version control commands](https://learn.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc31bk2e(v=vs.120)) opens.
+When you need a command and aren't sure which one to use, enter `tf msdn` to see command reference articles and links to more resources. If you use the `msdn` command without specifying a `commandname` parameter, the article [Use Team Foundation version control commands](/previous-versions/visualstudio/visual-studio-2013/cc31bk2e(v=vs.120)) opens.
 
 When you specify the `commandname` parameter, the documentation for that specific command opens. If the system can't find a match for the `commandname`, it searches for aliases and short names. If it doesn't find a matching command, alias, or short name, you get an error message.
 

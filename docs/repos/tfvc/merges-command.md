@@ -156,15 +156,15 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
 Sample output:
 
-    ```
-	Changeset  Merged in Changeset   Author   Date
-	--------------------------------------------------------
-	135         162                   Justin     10/31/2003
-	146         162                   Justin      10/31/2003
-	147*        167                   Bill       11/02/2003
-    ```
+```
+Changeset  Merged in Changeset   Author   Date
+--------------------------------------------------------
+135         162                   Justin     10/31/2003
+146         162                   Justin      10/31/2003
+147*        167                   Bill       11/02/2003
+```
 
-    The asterisk `*` next to changeset 147 indicates that only some of the changes in that changeset #147 were merged into changeset #167.
+The asterisk `*` next to changeset 147 indicates that only some of the changes in that changeset #147 were merged into changeset #167.
 
 
 ## Related articles

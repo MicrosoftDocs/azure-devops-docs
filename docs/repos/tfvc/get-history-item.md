@@ -72,7 +72,7 @@ Files also display data in the following columns:
 -   **Path**:  The path to the file.
 
 > [!NOTE]
-> If you open the **History** window by using the `tf history` command, and you display data about a project, branch, or folder, then the history of child items like files contained in a folder appears only if you use the `/recursive` option.
+> If you open the **History** window by using the `tf history` command, and you display data about a project, branch, or folder, the history of child items like files contained in a folder appears only if you use the `/recursive` option.
 
 > [!TIP]
 > Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Changesets** tab, right-click them, select **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
@@ -91,7 +91,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View the item as it existed when the changeset was checked in:** Double-click or right-click the changeset, and then select **View**. This command is available only if the item is a file.
+   - **View the item as it existed when the changeset was checked in:** Double-click or right-click the changeset, and then select **View**. This command is available only if the item is a file.
    :::column-end:::
    :::column span="1":::
    None
@@ -99,7 +99,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Get more details about a changeset:** Right-click a changeset and then select **Changeset Details** to get information such as:
+   - **Get more details about a changeset:** Right-click a changeset and then select **Changeset Details** to get information such as:
 
    - Other source files that are part of the changeset.
    - Work items associated with the changeset.
@@ -111,23 +111,21 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Compare a past version with the current version:** Right-click a changeset and then select **Compare**.
+   - **Compare a past version with the current version:** Right-click a changeset and then select **Compare**.
    
-   **Compare a past version with another past version:**
+   - **Compare a past version with another past version:**
    
-   1. Select two changesets by using Ctrl+Select.
-   1. Right-click one of the changesets and select **Compare**.
+     1. Select two changesets by using Ctrl+Select.
+     1. Right-click one of the changesets and select **Compare**.
 
    :::column-end:::
    :::column span="1":::
-   [Compare files](compare-files.md) 
-   
-   [Compare folders](compare-folders.md) 
+   [Compare files](compare-files.md), [Compare folders](compare-folders.md) 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Get a past version of the item:** Right-click a changeset and then select **Get This Version** to download the past version of the item to your workspace.
+   - **Get a past version of the item:** Right-click a changeset and then select **Get This Version** to download the past version of the item to your workspace.
    :::column-end:::
    :::column span="1":::
    [Download (get) files from the server](download-get-files-from-server.md) 
@@ -135,7 +133,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View which users made specific changes within a file:** Right-click a changeset and then select **Annotate**. This command is available only if the item is a file.
+   - **View which users made specific changes within a file:** Right-click a changeset and then select **Annotate**. This command is available only if the item is a file.
    :::column-end:::
    :::column span="1":::
    [View file changes using annotate](view-file-changes-using-annotate.md) 
@@ -143,7 +141,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Get more details about a merge:** If the changeset resulted from a **merge**, you can expand this item to display the changesets that were merged into this item from another branch. This command is available only if the item is a file.
+   - **Get more details about a merge:** If the changeset resulted from a **merge**, you can expand this item to display the changesets that were merged into this item from another branch. This command is available only if the item is a file.
    :::column-end:::
    :::column span="1":::
    None
@@ -151,7 +149,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Get more details about changes that were made before a rename change:** If the changeset includes a **rename**, you can expand this item to display the changesets that occurred before the **rename** change was made.
+   - **Get more details about changes that were made before a rename change:** If the changeset includes a **rename**, you can expand this item to display the changesets that occurred before the **rename** change was made.
    :::column-end:::
    :::column span="1":::
    None
@@ -159,7 +157,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View other branches to which this changeset has been merged:** Right-click the changeset and select **Track Changeset**.
+   - **View other branches to which this changeset has been merged:** Right-click the changeset and select **Track Changeset**.
    :::column-end:::
    :::column span="1":::
    [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) 
@@ -167,7 +165,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Roll back changes from one changeset:** Select a single changeset and choose **Rollback Entire Changeset**.
+   - **Roll back changes from one changeset:** Select a single changeset and choose **Rollback Entire Changeset**.
    :::column-end:::
    :::column span="1":::
    [Roll back changesets](roll-back-changesets.md) 
@@ -175,7 +173,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Roll back changes from two or more consecutive changesets:** Select a set of consecutive changesets and choose **Rollback**.
+   - **Roll back changes from two or more consecutive changesets:** Select a set of consecutive changesets and choose **Rollback**.
    :::column-end:::
    :::column span="1":::
    [Roll back changesets](roll-back-changesets.md) 
@@ -183,7 +181,7 @@ By using the **Changesets** tab, you can do the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Display non-recursive history of a folder:** You can get this data only from the command prompt.
+   - **Display non-recursive history of a folder:** You can get this data only from the command prompt.
    :::column-end:::
    :::column span="1":::
    [History command](history-command.md)
@@ -224,7 +222,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View the item as it existed when the labeled changeset was checked in:** Right-click a label and then select **View**. This command is available only if the item is a file.
+   - **View the item as it existed when the labeled changeset was checked in:** Right-click a label and then select **View**. This command is available only if the item is a file.
    :::column-end:::
    :::column span="1":::
    None
@@ -232,7 +230,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Edit the label:** Right-click the label and select **Edit Label**.
+   - **Edit the label:** Right-click the label and select **Edit Label**.
    :::column-end:::
    :::column span="1":::
    [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md)
@@ -240,7 +238,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Delete the label:** Right-click the label and select **Delete Label**.
+   - **Delete the label:** Right-click the label and select **Delete Label**.
    :::column-end:::
    :::column span="1":::
    [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md)
@@ -248,7 +246,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Compare a past version of the item with the current version:** Right-click a label and then select **Compare** to compare a past version of the item with the current version.
+   - **Compare a past version of the item with the current version:** Right-click a label and then select **Compare** to compare a past version of the item with the current version.
    :::column-end:::
    :::column span="1":::
    [Compare files](compare-files.md), [Compare folders](compare-folders.md)
@@ -256,7 +254,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Get a past version of the item:** Right-click a label and then select **Get This Version** to download the past version of the item to your workspace.
+   - **Get a past version of the item:** Right-click a label and then select **Get This Version** to download the past version of the item to your workspace.
    :::column-end:::
    :::column span="1":::
    [Download (get) files from the Server](download-get-files-from-server.md)
@@ -264,7 +262,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View other branches to which the labeled changeset has merged:** Right-click the label and select **Track Changeset**. This command is available only if the item is a file.
+   - **View other branches to which the labeled changeset has merged:** Right-click the label and select **Track Changeset**. This command is available only if the item is a file.
    :::column-end:::
    :::column span="1":::
    [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md)
@@ -272,7 +270,7 @@ All labels that have been applied to the item are listed in a table that include
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View which users made specific changes within the labeled version of a file:** Right-click a changeset and then select **Annotate**. This command is available only if the item is a file.
+   - **View which users made specific changes within the labeled version of a file:** Right-click a changeset and then select **Annotate**. This command is available only if the item is a file.
    :::column-end:::
    :::column span="1":::
    [View file changes using annotate](view-file-changes-using-annotate.md)

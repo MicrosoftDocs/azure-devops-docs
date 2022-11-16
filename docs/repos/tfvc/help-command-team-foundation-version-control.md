@@ -61,11 +61,11 @@ tf help <commandname>
 
 - The option `/?` is an alias for `help`. If you use the `/?` option with a command, the system invokes the `help` command and displays syntax information for the command you entered.
 
-- For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
-### List tf commands 
+### List tf vc commands
 
 The following example displays a list of the version control commands.
 
@@ -212,7 +212,7 @@ tf vc workspaces     Displays information about workspaces in the system and
                      name change on Azure DevOps Server.
 ```
 
-### View help for tf view command
+### View help for the view command
 
 The following example displays help information for the `view` command.
 
@@ -238,7 +238,7 @@ Versionspec:
     Workspace         Wworkspacename;workspaceowner
 ```
 
-### View help for workspace command
+### View help for the workspace command
 
 The following example displays information about syntax for the `workspace` command.
 
@@ -273,7 +273,7 @@ tf vc workspace [/collection:TeamProjectCollectionUrl]
                 [/login:username,[password]]
 ```
 
-The following example also displays the same information about syntax for the `workspace` command.
+The following example displays the same information about syntax for the `workspace` command.
 
 ```
 tf workspace /?

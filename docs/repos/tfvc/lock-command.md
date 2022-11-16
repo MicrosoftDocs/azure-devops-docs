@@ -128,7 +128,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
 :::row-end:::
 
 ## Remarks
-You can use the lock command to temporarily freeze the Azure DevOps Server version of an item so that you can check in a pending change without having to resolve any merge conflicts. If you want to permanently prevent access to an item in the Azure DevOps server, you should use the [Permission command](permission-command.md) instead.
+You can use the lock command to temporarily freeze the TFVC server version of an item so that you can check in a pending change without having to resolve any merge conflicts. If you want to permanently prevent access to an item in the TFVC server, you should use the [Permission command](permission-command.md) instead.
 
 > [!NOTE]
 > As a courtesy to your teammates, notify them when you apply a lock to an item, explain why you are doing this, and estimate when you plan to remove the lock, if you can.
@@ -155,7 +155,7 @@ TFVC provides two types of locks: `checkin` and `checkout`.
 
 A check-in lock is less restrictive than a check-out lock. When you apply a check-in lock, users can continue to make local changes to the item in other workspaces. The changes can't be checked in until you explicitly remove the check-in lock from the workspace.
 
-A check-out lock is more restrictive than a check-in lock. When you apply a check-out lock to a version-controlled file or folder, users can neither check out the file for edit nor check in pre-existing pending changes. You can't acquire a check-out lock if there are currently any pending changes to an item.
+A check-out lock is more restrictive than a check-in lock. When you apply a check-out lock to a version-controlled file or folder, users can neither check out the item for edit nor check in pre-existing pending changes. You can't acquire a check-out lock if there are currently any pending changes to an item.
 
 For more information about when to apply a check-out lock and when to apply a check-in lock, see [Understand lock types](understand-lock-types.md).
 
@@ -169,7 +169,7 @@ Locks on folders are implicitly recursive. If you lock a folder, you don't have 
 
 You can unlock a locked item by using the `none` option. TFVC also unlocks an item automatically when you check in pending changes in the workspace.
 
-You can determine which files are locked in the Azure DevOps server and by whom the files were locked by using the [Status command](status-command.md).
+You can determine which files are locked in the TFVC server and by whom the files were locked by using the [Status command](status-command.md).
 
 ## Examples
 
@@ -185,24 +185,24 @@ The following example prevents other users from checking in changes to *1256.cs*
 c:\projects>tf lock /lock:checkin 1256.cs
 ```
 
-The following example prevents other users from pending changes to any items in the *src/* folder in the Azure DevOps server.
+The following example prevents other users from pending changes to any items in the *$/src* folder in the TFVC server.
 
 ```
 c:\projects>tf lock /lock:checkout $/src
 ```
 
-The following example unlocks and makes all files in the *src/* Azure DevOps server folder available for check-out and check-in by other users.
+The following example unlocks and makes all files in the *$/src* TFVC server folder available for check-out and check-in by other users.
 
 ```
-c:\projects>tf lock /lock:none src/
+c:\projects>tf lock /lock:none $/src
 ```
 
 
 ## Related articles
 
 - [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
-- [Checkout and Edit Commands](checkout-or-edit-command.md)
-- [Status Command](status-command.md)
-- [Understanding Lock Types](understand-lock-types.md)
+- [Checkout and edit commands](checkout-or-edit-command.md)
+- [Status command](status-command.md)
+- [Understand lock types](understand-lock-types.md)
 - [Create and work with workspaces](create-work-workspaces.md)
 - [Work with version control locks](work-version-control-locks.md)

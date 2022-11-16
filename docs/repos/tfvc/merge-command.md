@@ -23,7 +23,7 @@ The `tf merge` command applies changes from one branch into another in Team Foun
 
 ## Prerequisites
 
-To use the `merge` command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the `destination` and you must have the **Read** permission set to **Allow** for the workspace folder that contains the `source`. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `merge` command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the `destination`, and you must have the **Read** permission set to **Allow** for the workspace folder that contains the `source`. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
@@ -231,7 +231,7 @@ For more information on how to use the `tf` command-line utility, see [Use Team 
 
 Use baseless merge to merge items that aren't directly branched from each other. To do a baseless merge, you must use the `tf merge` command. When you do a baseless merge, TFVC doesn't have any information about the relationship of the files in the branches. In a baseless merge, you must do manual conflict resolutions. After you do the baseless merge and resolve any conflicts, TFVC records the merge history and establishes a relationship between the folders and files.
 
-When you run `tf merge`, TFVC does an implicit baseless merge between items that have the same relative name in two previously related version-controlled trees. For example, you might want to merge the related branches `$SRC` and `$TGT`. Both branches contain an unrelated file that is named *a.txt*. When you run `tf merge`, TFVC establishes a relationship between the two *a.txt* files if the two files are the same, if FIPS-compliant encryption is disabled, and if the source file isn't related to any other file in the target.
+When you run `tf merge`, TFVC does an implicit baseless merge between items that have the same relative name in two previously related version-controlled trees. For example, you might want to merge the related branches `$SRC` and `$TGT`. Both branches contain an unrelated file that is named *a.txt*. When you run `tf merge`, TFVC establishes a relationship between the two *a.txt* files if the two files are the same, FIPS-compliant encryption is disabled, and the source file isn't related to any other file in the target.
 
 If you run `tf merge` with the `/noimplicitbaseless` option set, when TFVC tries to merge the two branches, the two *a.txt* files create a namespace conflict when you try to check in the changes. To resolve the conflict, you must rename one of the files.
 
