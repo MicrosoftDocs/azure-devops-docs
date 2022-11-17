@@ -198,7 +198,7 @@ The following table describes the namespaces that manage object-level permission
    :::column span="2":::
       [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
       <br/>
-      The `Administer` permission was divided into several more granular permissions [in 2017](https://learn.microsoft.com/en-us/previous-versions/azure/devops/2017/jan-25-team-services?view=tfs-2017#repo-admin-permission-changes), and should not be used.
+      The `Administer` permission was divided into several more granular permissions [in 2017](/previous-versions/azure/devops/2017/jan-25-team-services#repo-admin-permission-changes), and should not be used.
       <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
       You need to append `RepositoryID` to update repository-level permissions.  
