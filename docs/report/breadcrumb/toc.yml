@@ -1,0 +1,12 @@
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Azure DevOps
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/index
+    items:
+    - name: Reporting & Analytics
+      tocHref: /azure/devops/report/
+      topicHref: /azure/devops/report/index
+ 
