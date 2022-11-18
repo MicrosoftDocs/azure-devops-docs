@@ -79,8 +79,8 @@ Use the following options to modify your view of the hierarchy:
 
   The **Select Branches** dialog appears.
 
-  - In the **Branches** list, select or clear the checkboxes of the branches that you want to show or hide. As you select or clear checkboxes, a preview of your selections appears on the right side of the dialog.
-  - If your team has many branches, use the buttons above the preview to easily specify the branches that you want to see. Hover over a button to display information about what it does.
+  - In the **Branches** list, select or clear the branches that you want to show or hide. As you select or clear branches, a preview of your selections appears on the right side of the dialog.
+  - If your team has many branches, use the buttons above the preview to easily specify the branches that you want to see. Hover over a button to get information about what it does.
 
 - To fine-tune the details of your diagram, select a specific branch and then select one of the following controls:
 
