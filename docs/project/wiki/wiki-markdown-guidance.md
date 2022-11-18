@@ -2,7 +2,6 @@
 title: Markdown syntax for wikis
 titleSuffix: Azure DevOps
 description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
-ms.technology: devops-collab
 ms.custom: wiki, devdivchpfy22
 ms.subservice: azure-devops-wiki
 ms.author: chcomley
@@ -10,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/02/2022  
+ms.date: 11/18/2022  
 ---
 
 # Markdown syntax for wikis
