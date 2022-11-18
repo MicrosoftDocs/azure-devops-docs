@@ -133,7 +133,7 @@ If there are any failures, a warning message will be displayed. Selecting the fa
 :::image type="content" source="media/upstream-last-sync-details.png" alt-text="A screenshot showing details about the sync up failure.":::
 
 > [!NOTE]
-> For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download. This delay depends on job timing and data propagation. There is no latency when the upstream source is an Azure Artifacts feed.
+> For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download. This delay depends on job timing and data propagation. When the upstream source is an Azure Artifacts feed, the latency is typically no more than a few minutes.
 
 ## Offline upstream sources
 
