@@ -91,7 +91,7 @@ sequenceDiagram
 :::
 ```
 
-:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text="screenshot of mermaid sequence":::
+:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text="Screenshot of mermaid sequence.":::
 
 ### Gantt chart example
 
