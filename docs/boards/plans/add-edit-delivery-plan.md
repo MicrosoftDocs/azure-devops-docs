@@ -181,7 +181,7 @@ With styling rules, you can cause cards to change color when their corresponding
 
 ### Set color for an Iteration Path
 
-You can highlight work items for a team's current **Iteration Path** by specifying the `@CurrentIteration` macro in the **Styles** tab as shown in the following image. For more information on using the `@CurrentIteration` macros, see [Query by date or current iteration, Create queries for your team's current iteration](../queries/query-by-date-or-current-iteration.ms#create-queries-for-your-teams-current-iteration).
+You can highlight work items for a team's current **Iteration Path** by specifying the `@CurrentIteration` macro in the **Styles** tab as shown in the following image. For more information on using the `@CurrentIteration` macros, see [Query by date or current iteration, Create queries for your team's current iteration](../queries/query-by-date-or-current-iteration.md#create-queries-for-your-teams-current-iteration).
 
 :::image type="content" source="media/plans/styles-current-iteration.png" border="true" alt-text="Plans settings, Styles tab, set style using the current iteration macro for the Iteration Path.":::   
 
