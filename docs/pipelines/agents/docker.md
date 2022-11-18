@@ -350,6 +350,10 @@ Next, create the Dockerfile.
 
     source ./env.sh
 
+    trap 'cleanup; exit 0' EXIT
+    trap 'cleanup; exit 130' INT
+    trap 'cleanup; exit 143' TERM
+
     print_header "3. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
@@ -363,10 +367,6 @@ Next, create the Dockerfile.
       --acceptTeeEula & wait $!
 
     print_header "4. Running Azure Pipelines agent..."
-
-    trap 'cleanup; exit 0' EXIT
-    trap 'cleanup; exit 130' INT
-    trap 'cleanup; exit 143' TERM
 
     chmod +x ./run-docker.sh
 
