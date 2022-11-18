@@ -75,7 +75,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**
 
-<img src="media/markdown-guidance/mrkdown-headers.png" alt="Screenshot of Web portal, Headers 1 through 5" />        
+:::image type="content" source="media/markdown-guidance/mrkdown-headers.png" alt-text="Screenshot of Web portal, headers 1 through 5.":::     
 
 ## Paragraphs and line breaks
 
