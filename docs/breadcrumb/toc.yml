@@ -99,16 +99,16 @@
       items: 
       - name: Install extensions
         tocHref: /azure/devops/marketplace/
-        topicHref: /azure/devops/marketplace/overview
+        topicHref: /azure/devops/marketplace/overview?toc=/azure/devops/marketplace-extensibility/toc.json
       - name: Develop extensions
         tocHref: /azure/devops/extend/
-        topicHref: /azure/devops/extend/overview
+        topicHref: /azure/devops/extend/overview?toc=/azure/devops/marketplace-extensibility/toc.json
       - name: Integrate applications
         tocHref: /azure/devops/integrate/
-        topicHref: /azure/devops/integrate/index
+        topicHref: /azure/devops/integrate/index?toc=/azure/devops/marketplace-extensibility/toc.json
       - name: Service Hooks
         tocHref: /azure/devops/service-hooks/
-        topicHref: /azure/devops/service-hooks/overview
+        topicHref: /azure/devops/service-hooks/overview?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Azure Boards customization 
       tocHref: /azure/devops/reference/
       topicHref: /azure/devops/reference/index
@@ -124,7 +124,7 @@
         topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
       - name: Inherited process
         tocHref: /azure/devops/organizations/settings/work/ 
-        topicHref: /azure/devops/organizations/settings/work/inheritance-process-model
+        topicHref: /azure/devops/organizations/settings/work/inheritance-process-model?toc=/azure/devops/reference/toc.json
       - name: Hosted XML process
         tocHref: /azure/devops/organizations/settings/work/hosted/ 
-        topicHref: /azure/devops/organizations/settings/work/hosted-xml-process-model
+        topicHref: /azure/devops/organizations/settings/work/hosted-xml-process-model?toc=/azure/devops/reference/toc.json
