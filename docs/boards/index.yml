@@ -26,10 +26,6 @@ landingContent:
             url: ./get-started/what-is-azure-boards.md
           - text: About work items
             url: ./work-items/about-work-items.md
-      - linkListType: video
-        links:
-          - text: What is Azure Boards?
-            url: https://sec.ch9.ms/ch9/6f7f/424c1d79-4896-4b8e-9034-0aa80ecb6f7f/AzureBoards_high.mp4
       - linkListType: concept
         links:
           - text: Choose a process
