@@ -8,7 +8,7 @@ author: KathrynEE
 ms.custom: cross-project  
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'
-ms.date: 08/09/2022
+ms.date: 11/18/2022
 ---
 
  
@@ -177,6 +177,15 @@ With styling rules, you can cause cards to change color when their corresponding
 	> [!NOTE]   
 	> Some fields aren't supported for selection, such as the **Title** field, **Description** and other rich-text fields, **Assigned To** and other identity fields. Also, you may be able to select a field but not be able to specify a value or the value you want. For example, you can't specify **Tags** that are *Empty* or *Not Empty*. 
 
+::: moniker range="azure-devops"
+
+### Set color for an Iteration Path
+
+You can highlight work items for a team's current **Iteration Path** by specifying the `@CurrentIteration` macro in the **Styles** tab as shown in the following image. For more information on using the `@CurrentIteration` macros, see [Query by date or current iteration, Create queries for your team's current iteration](../queries/query-by-date-or-current-iteration.ms#create-queries-for-your-teams-current-iteration).
+
+:::image type="content" source="media/plans/styles-current-iteration.png" border="true" alt-text="Plans settings, Styles tab, set style using the current iteration macro for the Iteration Path.":::   
+
+::: moniker-end
 
 <a id="tag-colors" />
 
