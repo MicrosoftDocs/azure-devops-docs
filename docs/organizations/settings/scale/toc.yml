@@ -10,7 +10,7 @@
 - name: Add users to a team
   href: ../../security/add-users-team-project.md
 - name: Set team favorites
-  href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json
 - name: Rename or delete a team
   href: ../rename-remove-team.md
 - name: Configure team settings
@@ -26,8 +26,8 @@
 - name: Enterprise teams
   items:
   - name: Portfolio management
-    href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/toc.json
   - name: Configure a hierarchy of teams
-    href: ../../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/toc.json
   - name: Review team delivery plans
-    href: ../../../boards/plans/review-team-plans.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../../../boards/plans/review-team-plans.md?toc=/azure/devops/organizations/toc.json

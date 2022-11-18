@@ -46,8 +46,8 @@ sections:
       - question: How can I restrict viewing or modifying select work items?  
         answer: |
           You can restrict access by setting permissions for an area path. To learn more, see the following articles: 
-          - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-          - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
+          - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json)
+          - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json) 
 
       - question: Can caching impact rules applied to work items?  
         answer: | 

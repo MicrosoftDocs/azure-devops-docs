@@ -178,6 +178,8 @@ items:
     href: analytics-historical-filtering.md
   - name: Supported functions & clauses
     href: ../extend-analytics/odata-supported-features.md
+  - name: OData batch support
+    href: ../extend-analytics/odata-batch.md
   - name: API versioning
     href: ../extend-analytics/odata-api-version.md
 - name: Troubleshooting

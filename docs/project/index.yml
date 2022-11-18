@@ -30,13 +30,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set your preferences
-            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json
           - text: Enable or disable preview features
             url: ./navigation/preview-features.md
           - text: Set personal or team favorites
-            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json
           - text: Connect to a project
-            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json
   - title: Add and manage wikis
     linkLists:
       - linkListType: overview
@@ -102,9 +102,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Request feedback, Test & Feedback extension
-            url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
           - text: Request feedback, Microsoft Feedback Client
             url: ./feedback/get-feedback.md
           - text: Track feedback
-            url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+            url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
  
