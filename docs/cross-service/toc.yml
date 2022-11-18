@@ -7,7 +7,7 @@
   - name: GitHub integration
     href: github-integration.md
   - name: Deploy to Azure
-    href: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json
   expanded: true
 - name: Traceability
   items:

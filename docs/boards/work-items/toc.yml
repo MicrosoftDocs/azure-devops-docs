@@ -34,7 +34,7 @@
     href: follow-work-items.md
     displayname: query
   - name: Use @mentions in discussions
-    href: ../../organizations/notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../organizations/notifications/at-mentions.md?toc=/azure/devops/boards/toc.json
     displayname: people picker
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md
@@ -78,4 +78,4 @@
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
 - name: Go mobile
-  href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json
