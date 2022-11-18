@@ -187,11 +187,11 @@ Your synchronous check must return within 3 seconds.
 
 To use the synchronous mode for the Azure Function / REST API, in the check configuration panel, make sure you:
 - Selected _ApiResponse_ for the _Completion event_ under _Advanced_.
-- Defined the _Success criteria_ that defines when to pass the check based on the check's response body.
+- Specified the _Success criteria_ that define when to pass the check based on the check's response body.
 - Set _Time between evaluations_ to _0_ under _Control options_.
 - Set _Timeout_ to how long you wish to wait for a check to succeed. If there's no positive decision and _Timeout_ is reached, the corresponding pipeline stage will be skipped.
 
-The _Time between evaluations_ setting defines how long the check's decision is valid. A value of 0 means the decision is valid. A non-zero value means the check will be retried after the configured interval, when its decision is negative. When [multiple Approvals and Checks](#multiple-approvals-and-checks) are running, the check will be retried regardless of decision.
+The _Time between evaluations_ setting defines how long the check's decision is valid. A value of 0 means the decision is valid. A non-zero value means the check will be retried after the configured interval, when its decision is negative. When [multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) are running, the check will be retried regardless of decision.
 
 > [!NOTE]
 > In the near future, Azure Pipelines will enforce that there be at most X check evaluations, based on the  _Time between evaluations_ and _Timeout_ values.
@@ -269,49 +269,17 @@ Say you have a Service Connection to a production environment resource, and you 
     - Azure Pipelines calls your check function.
     - If the reason is other than `Manual`, the check fails, and the pipeline run fails.
 
+## Multiple Checks
 
-## Multiple Approvals and Checks
+Before Azure Pipelines deploys a stage in a pipeline run, multiple Checks may need to pass. A protected resource may have one or more Checks associated to it. A stage may use multiple protected resources. Azure Pipelines collects all the Checks associated to each protected resource used in a stage and evaluates them concurrently.
 
-Before Azure Pipelines deploys a stage in a pipeline run, multiple Approvals and Checks (not only Invoke Azure Function / REST API checks) may need to pass. A protected resource may have one or more Approvals and Checks associated to it. A stage may use multiple protected resources. Azure Pipelines collects all the Approvals and Checks associated to each protected resource used in a stage and evaluates them concurrently.
+A pipeline run is allowed to deploy to a stage only when _all_ Checks pass at the same time. A single final negative decision causes the pipeline to be denied access and the stage to fail.
 
-A pipeline run is allowed to deploy to a stage only when _all_ Approvals and Checks pass at the same time. A single final negative decision causes the pipeline to be denied access and the stage to fail. The decisions of all Approvals and Checks except for Invoke Azure Function / REST API and [Exclusive lock](approvals.md#exclusive-lock) are final.
+When you use checks in the recommended way (asynchronous, with final states) makes their access decisions final, and eases understanding the state of the system.
 
-When using Invoke Azure Function / REST API checks in the recommended way, their access decisions are also final.
-
-When you specify _Time between evaluations_ to be non-zero, the check's decision is non-final. This scenario is worth exploring.
-
-Let us look at an example. Imagine your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
-1. An asynchronous check, named _External Approval Granted_, that verifies that [an external approval is given](#external-approval-must-be-granted) and is configured in the recommended way.
-1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
-
-A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks_timeline.png" alt-text="The timeline of an synchronous and a synchronous checks' executions.":::
-
-In this execution:
-- Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
-- At minute 7, _Deployment Reason Valid_ is retried and this time it passes. 
-- At minute 15, _External Approval Granted_ calls back into Azure Pipelines with a successful decision. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
-
-Let us look at another example, involving two synchronous checks. Assume your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
-1. A synchronous check, named _Sync Check 1_, for which you set the _Time between evaluations_ to 5 minutes.
-1. A synchronous check, named _Sync Check 2_, for which you set the _Time between evaluations_ to 7 minutes.
-
-A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks_timeline_sync.png" alt-text="The timeline of two synchronous checks' executions.":::
-
-In this execution:
-- Both checks, _Sync Check 1_ and _Sync Check 2_, are invoked at the same time. _Sync Check 1_ passes, but it will be retried, because _Sync Check 2_ fails. 
-- At minute 5, _Sync Check 1_ is retried but fails, so it will be retried.
-- At minute 7, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
-- At minute 10, _Sync Check 1_ is retried but fails, so it will be retried.
-- At minute 14, _Sync Check 2_ is retried and succeeds. The pass decision is valid for 7 minutes. If _Sync Check 1_ doesn't pass in this time interval, _Sync Check 2_ will be retried.
-- At minute 15, _Sync Check 1_ is retried and succeeds. Now, both checks pass, so the pipeline is allowed to continue to deploy the stage.
-
-Let us look at an example that involves an Approval and a synchronous check. Imagine you configured a synchronous check and an Approval for a Service Connection with a _Time between evaluations_ of 5 minutes. Until the approval is given, your check will run every 5 minutes, regardless of decision.
-
-In conclusion, using checks the recommended way (asynchronous, with final states) makes understanding the state of the system easier, especially when there are multiple Approvals and Checks.
+Check out the [Multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) section for examples.
 
 ## Learn More
-- [Approvals and checks](approvals.md)
+- [Approvals and Checks](approvals.md)
 - [Invoke Azure Function Task](../tasks/deploy/azure-function-app.md)
 - [Invoke REST API Task](../tasks/utility/http-rest-api.md)
