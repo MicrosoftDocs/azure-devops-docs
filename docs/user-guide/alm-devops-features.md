@@ -22,7 +22,6 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 
 > [!NOTE]  
 > Some features are platform-dependent, based on the following two platforms:
-> 
 >- **Azure DevOps Services** - cloud service
 >- **Azure DevOps Server** - on-premises
 
@@ -77,6 +76,68 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
+:::row:::
+   :::column span="1":::
+      **Browsers**
+      [Connect to the web portal](../organizations/projects/connect-to-projects.md) from the latest versions of these supported browsers:  
+      - Chrome  
+      - Microsoft Edge  
+      - Firefox  
+      - Internet Explorer  
+      - Safari (Mac)
+   :::column-end:::
+   :::column span="1":::
+      **Integrated Development Environments (IDE)**
+        Track work and integrate with your code, build, and test environments from the following clients:  
+        - [Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
+        - [Visual Studio](https://visualstudio.microsoft.com/downloads/)  
+        - [Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
+        - [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
+        - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
+        For more information, see [Connect to a project](../organizations/projects/connect-to-projects.md).
+   :::column-end:::
+   :::column span="1":::
+      **Office integration clients**
+        Use features supported by these familiar clients to manage your project and illustrate your requirements.  
+      - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Manage users and groups**
+        Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).
+   :::column-end:::
+   :::column span="1":::
+      **Add team members**
+        To share and contribute to your project, add users to [Azure DevOps Services](../organizations/security/add-users-team-project.md) or your [Azure DevOps Server](../organizations/settings/add-teams.md#add-team-members).
+        ![Manage users, add team members](media/features/alm-feature-manage-members.png)  
+   :::column-end:::
+   :::column span="1":::
+      **Azure Active Directory (Azure AD) (Azure DevOps Services)**
+        Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Access levels**
+        All users that you add to your Azure DevOps organization or to your Azure DevOps Server project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in Azure DevOps Server.
+        - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md) 
+        - [Change access levels (Azure DevOps Server)](../organizations/security/change-access-levels.md)  
+   :::column-end:::
+   :::column span="1":::
+      **Permissions**
+        Control access to specific features by setting permissions for a user or group.
+      - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
+      - [Build & Release](../pipelines/policies/set-permissions.md)  
+      - [Git](../repos/git/set-git-repository-permissions.md)  
+      - [TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)  
+      - [Dashboards](/azure/devops/report/dashboards/dashboard-permissions)  
+      - [Queries](../boards/queries/set-query-permissions.md)  
+      - [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
+      - [Test](../organizations/security/change-project-level-permissions.md)  
+      - [Work item tags](../organizations/security/permissions.md#tags)
+   :::column-end:::
+:::row-end:::
 
 <a id="agile-tools"></a>
 
@@ -709,7 +770,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/organizations/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../organizations/notifications/manage-your-personal-notifications.md)">personal notifications</a> or <a href="/azure/devops/organizations/notifications/manage-team-group-notifications" data-raw-source="[team notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md)">team notifications</a>.</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/organizations/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../organizations/notifications/manage-your-personal-notifications.md)">personal notifications</a> or [team notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).</p>
 <img src="media/features/features-notifications-option.png" alt="Open Notifications from Organization menu"/><br/><br/>
 
 <p><b>Share queries and sprint plans</b></p>
