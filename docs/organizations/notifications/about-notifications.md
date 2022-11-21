@@ -17,11 +17,11 @@ monikerRange: '<= azure-devops'
 
 Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. You can get notified when changes occur to the following items:
 
-- work items
-- code reviews
-- pull requests
-- source control files
-- builds
+- Work items
+- Code reviews
+- Pull requests
+- Source control files
+- Builds
 
 For example, you can get notified whenever you or your team resolves a bug or are assigned a work item.
 

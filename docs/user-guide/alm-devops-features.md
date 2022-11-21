@@ -76,6 +76,43 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
+
+|**Access**  |**Column2**  |
+|---------|---------|
+|**Browsers**    |  [Connect to the web portal](../organizations/projects/connect-to-projects.md) from the latest versions of the following browsers:  
+      - Chrome  
+      - Microsoft Edge  
+      - Firefox  
+      - Internet Explorer  
+      - Safari (Mac)       |
+|**Integrated Development Environments (IDE)** | Track work and integrate with your code, build, and test environments from the following clients:  
+        - [Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
+        - [Visual Studio](https://visualstudio.microsoft.com/downloads/)  
+        - [Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
+        - [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
+        - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
+        For more information, see [Connect to a project](../organizations/projects/connect-to-projects.md).        |
+|**Permissions**    | Control access to specific features by setting permissions for a user or group.
+      - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
+      - [Build & Release](../pipelines/policies/set-permissions.md)  
+      - [Git](../repos/git/set-git-repository-permissions.md)  
+      - [TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)  
+      - [Dashboards](/azure/devops/report/dashboards/dashboard-permissions)  
+      - [Queries](../boards/queries/set-query-permissions.md)  
+      - [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
+      - [Test](../organizations/security/change-project-level-permissions.md)  
+      - [Work item tags](../organizations/security/permissions.md#tags)        |
+|**Manage users and groups**    | Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).        |
+|**Add team members**   | To share and contribute to your project, add users to [Azure DevOps Services](../organizations/security/add-users-team-project.md) or your [Azure DevOps Server](../organizations/settings/add-teams.md#add-team-members).
+        ![Manage users, add team members](media/features/alm-feature-manage-members.png)          |
+|**Azure Active Directory (Azure AD) for Azure DevOps Services**    |Control who can access your team's critical resources and key business assets by [managing access with Azure AD groups](../organizations/accounts/manage-azure-active-directory-groups.md).        |
+|Access levels   | All users that you add to your Azure DevOps organization or to your Azure DevOps Server project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in Azure DevOps Server.
+        - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md) 
+        - [Change access levels (Azure DevOps Server)](../organizations/security/change-access-levels.md)          |
+|**Office integration clients**   | Use features supported by these familiar clients to manage your project and illustrate your requirements.  
+      - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)        |
+
+
 :::row:::
    :::column span="1":::
       **Browsers**
@@ -97,9 +134,17 @@ Use features supported by these familiar clients to manage your project and illu
         For more information, see [Connect to a project](../organizations/projects/connect-to-projects.md).
    :::column-end:::
    :::column span="1":::
-      **Office integration clients**
-        Use features supported by these familiar clients to manage your project and illustrate your requirements.  
-      - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+      **Permissions**
+        Control access to specific features by setting permissions for a user or group.
+      - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
+      - [Build & Release](../pipelines/policies/set-permissions.md)  
+      - [Git](../repos/git/set-git-repository-permissions.md)  
+      - [TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)  
+      - [Dashboards](/azure/devops/report/dashboards/dashboard-permissions)  
+      - [Queries](../boards/queries/set-query-permissions.md)  
+      - [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
+      - [Test](../organizations/security/change-project-level-permissions.md)  
+      - [Work item tags](../organizations/security/permissions.md#tags)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -125,17 +170,9 @@ Use features supported by these familiar clients to manage your project and illu
         - [Change access levels (Azure DevOps Server)](../organizations/security/change-access-levels.md)  
    :::column-end:::
    :::column span="1":::
-      **Permissions**
-        Control access to specific features by setting permissions for a user or group.
-      - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
-      - [Build & Release](../pipelines/policies/set-permissions.md)  
-      - [Git](../repos/git/set-git-repository-permissions.md)  
-      - [TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)  
-      - [Dashboards](/azure/devops/report/dashboards/dashboard-permissions)  
-      - [Queries](../boards/queries/set-query-permissions.md)  
-      - [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
-      - [Test](../organizations/security/change-project-level-permissions.md)  
-      - [Work item tags](../organizations/security/permissions.md#tags)
+      **Office integration clients**
+        Use features supported by these familiar clients to manage your project and illustrate your requirements.  
+      - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
    :::column-end:::
 :::row-end:::
 
