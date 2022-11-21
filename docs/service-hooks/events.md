@@ -27,12 +27,27 @@ ms.date: 10/14/2022
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
-::: moniker range=">= azure-devops-2020"
+
+
+::: moniker range=">= azure-devops-2020 < azure-devops"
+
 * **Pipelines**
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020 < azure-devops"
+
+* **Pipelines**
+  * [Run state changed](#run.statechanged)
+  *	[Run stage state changed](#run.stagestatechanged)
+  * [Run stage waiting for approval](#run.stageapprovalpending)
+  * [Run stage approval completed](#run.stageapprovalcompleted)
+  * [Run job state changed](#run.jobstatechanged)
+
 ::: moniker-end
 
 * **Code**
@@ -1535,6 +1550,182 @@ Event: An approval completed for a run stage.
   "createdDate": "2019-12-13T06:18:22.487Z"
 }
 ```
+::: moniker-end
+
+
+::: moniker range="=azure-devops"
+
+<a href="run.jobstatechanged"></a>
+
+### Run job state changed
+
+Event: A new job is running, or it has completed, or it has not started, or is waiting for an agent.
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelines.job-state-changed-event`
+* Resource Name: `resource`
+
+#### Settings
+
+ * `pipelineId`: Filter to include only events for the specified pipeline
+ * `stageNameId`: Filter events to a specific stage name
+ * `jobNameId`: Filter events to a specific job name
+ * `jobStateId`: Filter events based on the new state of the job
+   * Valid values: 
+      * `NotStarted` 
+      * `Waiting` 
+      * `Running`
+      * `Completed`
+ * `jobResultId`: Filter events based on the result of the job
+   * Valid values:
+      * `Succeeded`
+      * `Skipped`
+      * `Rejected`
+      * `Failed`
+      * `Canceled`
+
+#### Sample payload
+
+```json
+{
+    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "notificationId": 3,
+    "id": "ac1dd6da-af30-43cb-8434-e1005864b0a3",
+    "eventType": "ms.vss-pipelines.job-state-changed-event",
+    "publisherId": "pipelines",
+    "message":
+    {
+        "text": "Run 20221121.5 stage Build job Compile succeeded.",
+        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+    },
+    "detailedMessage":
+    {
+        "text": "Run 20221121.5 stage Build job Compile succeeded.",
+        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+    },
+    "resource":
+    {
+        "job":
+        {
+            "_links":
+            {
+                "web":
+                {
+                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2"
+                },
+                "pipeline.web":
+                {
+                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/definition?definitionId=2"
+                }
+            },
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "__default",
+            "state": "completed",
+            "result": "succeeded",
+            "startTime": "2022-11-21T16:42:52.7761408Z",
+            "finishTime": "2022-11-21T16:42:52.7761408Z"
+        },
+        "stage":
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "__default",
+            "displayName": null,
+            "state": "completed",
+            "result": "succeeded",
+            "startTime": null,
+            "finishTime": null
+        },
+        "run":
+        {
+            "pipeline":
+            {
+                "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+                "id": 2,
+                "revision": 2,
+                "name": "TEST-CI",
+                "folder": "\\"
+            },
+            "state": "completed",
+            "result": "succeeded",
+            "createdDate": "2022-11-21T16:42:52.7761408Z",
+            "finishedDate": "2022-11-21T16:42:52.7761408Z",
+            "id": 2,
+            "name": "2"
+        },
+        "pipeline":
+        {
+            "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+            "id": 2,
+            "revision": 2,
+            "name": "TEST-CI",
+            "folder": "\\"
+        },
+        "repositories":
+        [
+            {
+                "type": "Git",
+                "change":
+                {
+                    "author":
+                    {
+                        "name": "Fabrikam John",
+                        "email": "john@fabrikamfiber.com",
+                        "date": "2022-11-11T15:09:21Z"
+                    },
+                    "committer":
+                    {
+                        "name": "Fabrikam John",
+                        "email": "john@fabrikamfiber.com",
+                        "date": "2022-11-11T15:09:21Z"
+                    },
+                    "message": "Added Viva support"
+                },
+                "url": "https://fabrikamfiber@dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_git/fabrikamfiber"
+            },
+            {
+                "type": "GitHub",
+                "change":
+                {
+                    "author":
+                    {
+                        "name": "Fabrikam John",
+                        "email": "john@github.com",
+                        "date": "2022-08-11T15:05:20Z"
+                    },
+                    "committer":
+                    {
+                        "name": "Fabrikam John",
+                        "email": "john@github.com",
+                        "date": "2022-08-11T15:05:20Z"
+                    },
+                    "message": "Added Viva open source REST API library"
+                },
+                "url": "https://api.github.com/repos/FabrikamFiber/Viva"
+            }
+        ]
+    },
+    "resourceVersion": "5.1-preview.1",
+    "resourceContainers":
+    {
+        "collection":
+        {
+            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+        },
+        "account":
+        {
+            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+        },
+        "project":
+        {
+            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+        }
+    },
+    "createdDate": "2022-11-21T16:42:53.5254422Z"
+}
+```
+
 ::: moniker-end
 
 ## Code
