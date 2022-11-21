@@ -39,14 +39,14 @@ ms.date: 10/14/2022
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="=azure-devops"
 
 * **Pipelines**
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
-  * [Run job state changed](#run.jobstatechanged)
+  * [Run job state changed](#run-job-state-changed)
 
 ::: moniker-end
 
