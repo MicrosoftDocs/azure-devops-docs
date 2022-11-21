@@ -58,7 +58,11 @@ For more information about permissions, see [Default TFVC permissions](../../org
 
 ### View the Tracking Changeset window from a work item that's linked to a changeset
 
-1. Open a work item that's linked to one or more changesets, and then select :::image type="icon" source="media/view-where-when-changesets-have-been-merged/IC267918.gif"::: **Track Work Item**. The **Select Branches** dialog appears.
+1. Open a work item that's linked to one or more changesets, and then select the **Track Work Item** button.
+
+   :::image type="content" source="media/view-where-when-changesets-have-been-merged/work-item-details.png" alt-text="Screenshot of the menu bar of a work item in TFVC. The Track Work Item icon is highlighted.":::
+
+   The **Select Branches** dialog appears.
 
 1. (Optional) In the **Branches** list, select or clear the branches that you want to show or hide. As you select or clear branches, a preview of your selections appears on the right side of the dialog.
 
@@ -80,23 +84,23 @@ The following screenshot shows a changeset in the DinnerNow project:
 > [!TIP]
 > You can select a branch that received the changeset, for example, **Version2**. Then you can see all the merges that were required for the changeset to reach that branch. Those merges appear as dark green arrows.
 
-## Switch to the Timeline View
+## Switch to the timeline view
 
-You can get information about when a changeset was merged to various branches by switching to the **Timeline View**. This view shows the source, target, and time stamp of each merge.
+You can get information about when a changeset was merged to various branches by switching to the timeline view. This view shows the source, target, and time stamp of each merge.
 
-### Display the Timeline View of a changeset
+### Display the timeline view of a changeset
 
 Open the **Tracking Changeset** or **Tracking Work Item** window, and then select :::image type="icon" source="media/view-where-when-changesets-have-been-merged/IC267920.gif"::: **Timeline Tracking**.
 
-### Example: Use the Timeline View
+### Example: Use the timeline view
 
-In the earlier example, two baseless merges and one standard merge were visible. When you select :::image type="icon" source="media/view-where-when-changesets-have-been-merged/IC267920.gif"::: **Timeline Tracking**, the **Tracking Changeset** window switches to a view that shows the sequence of the merges:
+In the earlier example, various standard and baseless merges were visible. When you select :::image type="icon" source="media/view-where-when-changesets-have-been-merged/IC267920.gif"::: **Timeline Tracking**, the **Tracking Changeset** window switches to a view that shows the sequence of the merges:
 
-:::image type="content" source="media/view-where-when-changesets-have-been-merged/IC348439.png" alt-text="Screenshot of the Timeline View. Bars labeled with branch names are stacked vertically. Arrows extend between branches, and a time stamp is visible.":::
+:::image type="content" source="media/view-where-when-changesets-have-been-merged/IC348439.png" alt-text="Screenshot of the timeline view. Bars labeled with branch names are stacked vertically. Arrows extend between branches, and a time stamp is visible.":::
 
-- The branches that have received the changeset appear at the top of the view.
-- The branches that haven't received the changeset appear in white at the bottom of the view. In this case, **FeatureB** and **Main** haven't received the changeset.
-- The time stamp shows the date and time when the changeset was merged to a selected branch. In this case, **Version1** is selected.
+- The branches that received the changeset appear at the top of the view.
+- The branches that didn't receive the changeset appear in white at the bottom of the view. In this case, **FeatureB** and **Main** didn't receive the changeset.
+- The time stamp shows the date and time when the changeset was merged to a selected branch. In this case, **Version1** is selected, and the merge to that branch occurred at the displayed time.
 
 ## Drag changesets and branches to merge them
 
