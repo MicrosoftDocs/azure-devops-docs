@@ -172,7 +172,7 @@
     },
     {
       "source_path": "docs/user-guide/alm-devops-features.md",
-      "redirect_url": "https://azure.microsoft.com/en-us/products/devops/#overview",
+      "redirect_url": "https://azure.microsoft.com/products/devops/#overview",
       "redirect_document_id": false
     }
   ]
