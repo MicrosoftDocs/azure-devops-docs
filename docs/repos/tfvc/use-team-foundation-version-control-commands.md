@@ -14,18 +14,18 @@ ms.subservice: azure-devops-repos-tfvc
 # Use Team Foundation version control commands
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
+You can use version control commands to do nearly all Team Foundation Version Control (TFVC) tasks that you can do in Visual Studio. You can also use version control commands to do several tasks that can't be done in Visual Studio. To run version control commands from a command prompt or within a script, you use the `tf.exe` tool.
 
 ## Run a command
 
-To launch the Visual Studio command prompt, from Windows **Start**, choose the **Developer Command Prompt for VS2019** or earlier version shortcut.
+To launch the Visual Studio command prompt, from Windows **Start**, select the **Developer Command Prompt for VS2022** or earlier version shortcut.
 
 > [!NOTE]   
-> For Visual Studio 2017 and later versions, the **tf.exe** binary is no longer in a fixed location in the Visual Studio install path as in previous releases. (for example, `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE`). Scripts using **tf.exe** should not hard-code a path to the file based on the Visual Studio install path.
+> For Visual Studio 2019 and later versions, the **tf.exe** binary is no longer in a fixed location in the Visual Studio install path as in some previous releases, for example, `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE`. Scripts that use **tf.exe** shouldn't hard-code a path to the file based on the Visual Studio install path.
 
-In most cases, you run the version control command in the context of a directory that is mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace:
+In most cases, you run the version control command in the context of a directory that is mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace, use the following command:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf get
@@ -33,89 +33,94 @@ c:\code\SiteApp\Main\SolutionA>tf get
 
 ### Set up your dev machine and manage workspaces
 
-Your workspace is a local copy of your team's codebase. Because it is a local copy on your dev machine, you can develop and test your code in isolation until you are ready to check in your work. Here are some commands to manage your workspace:
+Your workspace is a local copy of your team's codebase. Because it's a local copy on your dev machine, you can develop and test your code in isolation until you're ready to check in your work. Here are some commands to manage your workspace:
 
-- [Proxy Command](proxy-command.md) 
-- [Workfold Command](workfold-command.md) 
-- [Workspace Command](workspace-command.md)  
-- [Workspaces Command](workspaces-command.md) 
+- [Proxy command](proxy-command.md) 
+- [Workfold command](workfold-command.md) 
+- [Workspace command](workspace-command.md)  
+- [Workspaces command](workspaces-command.md) 
 
-See also: [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md), [Create and work with workspaces](create-work-workspaces.md)
+For more information, see the following resources:
+
+- [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Create and work with workspaces](create-work-workspaces.md)
 
 ### Develop your app
 
 Use these commands to develop your app under version control with your team:
 
 - [Add command](add-command.md): Adds files and folders to version control.
-- [Checkout (or Edit) command](checkout-or-edit-command.md): Checks out a file and changes its pending change status to "edit".
-- [Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md)  
+- [Checkout (or Edit) command](checkout-or-edit-command.md): Checks out a file and changes its pending change status to **edit**.
+- [Delete command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md): Removes files and folders from the Azure DevOps server and deletes them from the disk.
 - [Get command](get-command.md): Gets (downloads) the latest or a specified version of one or more files or folders from Team Foundation Server to the workspace.
-- [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)  
-- [Status command](status-command.md): Displays information about pending changes to files and folders items in one or more workspaces, or in a shelveset.
-- [Undo command](undo-command.md): Discards one or more pending changes to files or folders.
-- [Undelete Command](undelete-command.md) 
+- [Rename command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md): Changes the name or path of a file or folder.
+- [Status command](status-command.md): Displays information about pending changes to files and folders in workspaces or in a shelveset.
+- [Undo command](undo-command.md): Discards specified pending changes to files or folders.
+- [Undelete Command](undelete-command.md): Restores items that were previously deleted.
 
-See also: [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)
+For more information, see [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md).
 
 ### Suspend your work
 
 For a variety of reasons, sometimes you need to set aside some or all of your work in progress. To suspend and resume your work, and to manage your shelvesets, use these commands:
 
-- [Shelve Command](shelve-command.md)  
-- [Shelvesets Command](shelvesets-command.md) 
-- [Unshelve Command](unshelve-command.md) 
+- [Shelve command](shelve-command.md)  
+- [Shelvesets command](shelvesets-command.md) 
+- [Unshelve command](unshelve-command.md) 
 
-See also: [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
+For more information, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
 ### Contribute your work
 
-Use the checkin command to check in your code to the team's code base:
+Use the `checkin` command to check in your code to the team's code base:
 
 - [Checkin command](checkin-command.md): Checks in pending changes to files or folders to the server.
 
-See also: [Check in your work to the team's codebase](check-your-work-team-codebase.md)
+For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
 ### Manage files and solve problems
 
-**View and Manage Version Control Files and Folders**  
+Use the resources in the following sections to manage files.
 
-- [Properties (or Info) Command](properties-or-info-command.md) 
-- [Dir Command](dir-command.md)   
-- [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)   
-- [LocalVersions Command](localversions-command.md) 
+#### View and manage version control files and folders
 
-See also: [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)
+- [Properties (or Info) command](properties-or-info-command.md) 
+- [Dir command](dir-command.md)   
+- [Destroy command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)   
+- [LocalVersions command](localversions-command.md) 
 
-**View and Manage Past Versions**  
+For more information, see [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md).
 
-- [Changeset Command](changeset-command.md)  
-- [History command](history-command.md): Displays the revision history of one or more files or folders.
-- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md) 
-- [Labels Command](labels-command.md) 
-- [Rollback Command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md) 
-- [Unlabel Command](unlabel-command.md)   
-- [View Command](view-command.md) 
+#### View and manage past versions
 
-See also: [View and manage past versions](view-manage-past-versions.md)
+- [Changeset command](changeset-command.md): Changes or displays changeset attributes.
+- [History command](history-command.md): Displays the revision history of files or folders.
+- [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md): Attaches or removes labels from files or folders.
+- [Labels command](labels-command.md): Displays information about labels that are in use in the server.
+- [Rollback command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md): Rolls back the effects of changesets.
+- [Unlabel command](unlabel-command.md): Removes an item from an existing label in the server.
+- [View command](view-command.md): Retrieves a specified version of a file and displays it.
 
-**Compare Folders and Files**  
+For more information, see [View and manage past versions](view-manage-past-versions.md).
 
-- [Difference Command](difference-command.md)  
-- [Folderdiff Command](folderdiff-command.md) 
+#### Compare folders and files
 
-See also: [View and manage past versions](view-manage-past-versions.md)
+- [Difference command](difference-command.md): Compares differences between files and shelvesets.
+- [Folderdiff command](folderdiff-command.md): Compares the differences between files in two folders.
 
-**Resolve File Conflicts**  
+For more information, see [View and manage past versions](view-manage-past-versions.md).
 
-- [Resolve Command](resolve-command.md) 
+#### Resolve file conflicts
 
-See also: [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
+- [Resolve command](resolve-command.md): Resolves conflicts between items in your workspace and on the server.
 
-**Work with Version Control Locks**  
+For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-- [Lock Command](lock-command.md) 
+#### Work with version control locks
 
-See also: [Work with version control locks](work-version-control-locks.md).
+- [Lock command](lock-command.md): Locks or unlocks files and folders.
+
+For more information, see [Work with version control locks](work-version-control-locks.md).
 
 ### Isolate risk
 
@@ -126,7 +131,7 @@ Use the following commands to isolate risk using branches:
 - [Merge Command](merge-command.md) 
 - [Merges Command](merges-command.md) 
 
-See also: [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
+For more information, see [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
 ### Administer Version Control
 
@@ -135,7 +140,7 @@ Use the following commands to manage your version control system:
 - [Configure command](configure-command.md)  
 - [Permission command](permission-command.md)  
 
-See also: [Configure check-out settings](configure-check-out-settings.md).
+For more information, see [Configure check-out settings](configure-check-out-settings.md).
 
 ### Get Help on Version Control Commands
 
