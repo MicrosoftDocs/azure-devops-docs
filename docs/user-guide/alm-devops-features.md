@@ -282,56 +282,30 @@ Change the [pick list of iteration paths](../boards/sprints/define-sprints.md) t
 ### Scale
 
 
-|Scale task  |Description |
+|Task  |Info |
 |---------|---------|
-|Add another team    | [Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams.
-
-![Multiple teams](media/features/alm-feature-multiple-teams.png)          |
+|Add another team    | [Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams   |
 |Set team defaults   |  Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. [Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).       |
 |Set team hierarchy    | By [configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data.        |
 |Autonomy and alignment    | As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../boards/plans/agile-culture.md).        |
 |Scale your tools and practices    |  Incrementally adopt [practices that scale](../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.       |
-|Manage your portfolio    |  Manage a [portfolio of backlogs](../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.
-![Portfolio management](media/features/alm-feature-portfolio-management.png)       |
+|Manage your portfolio    |  Manage a [portfolio of backlogs](../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs. |
 |Structure with Agile framework    | Structure team projects to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../boards/plans/scaled-agile-framework.md).        |
 
-**Add another team**
-[Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams.
-![Multiple teams](media/features/alm-feature-multiple-teams.png)  
-**Set team defaults**
-Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. [Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).
-**Set up a team hierarchy**
-By [configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data.
-**Autonomy and alignment**
-As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../boards/plans/agile-culture.md).
-**Scale your tools and practices**
-Incrementally adopt [practices that scale](../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
-**Portfolio management**
-Manage a [portfolio of backlogs](../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.
-![Portfolio management](media/features/alm-feature-portfolio-management.png)
-**Scaled Agile Framework**
-Structure team projects to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../boards/plans/scaled-agile-framework.md).
 <a id="scrum"></a>
 
 ### Scrum
 
-**Define sprints**
-[Schedule and activate your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.
-**Select team sprints, set team defaults**
-Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s)](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md) to support their work tracking activities.
-**Plan sprints**
-Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../boards/sprints/assign-work-sprint.md).
-**Track work on your task board**
-Use your [task board](../boards/sprints/task-board.md) during your daily Scrum meetings to view and update progress.
-**Velocity & forecasting**
-Use [velocity charts](../report/dashboards/team-velocity.md) and [forecast](../boards/sprints/forecast.md) tools to estimate work that can be completed in future sprints.
-![Team velocity chart](media/features/alm-feature-team-velocity-chart.png)  
-**Sprint burndown charts**
-Monitor progress and review team patterns from [sprint burndown charts](/azure/devops/report/dashboards/configure-sprint-burndown).
-![Sprint burndown chart](media/features/alm-index-sprint-burndown-widget.png)  
-**Manage resources**
-Use [capacity planning tools](../boards/sprints/set-capacity.md) to track individual, team, and activity over and under capacity for a sprint.
-![Capacity bars](../boards/sprints/media/ALM_DS_CapacityBars_S.png)
+|Task  |Info |
+|---------|---------|
+|Define sprints | [Schedule and activate your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.|
+|Select team sprints, set team defaults|Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s)](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md) to support their work tracking activities.|
+|Plan sprints|Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../boards/sprints/assign-work-sprint.md).|
+|Track work on your task board|Use your [task board](../boards/sprints/task-board.md) during your daily Scrum meetings to view and update progress.|
+|Forecast work |Use [velocity charts](../report/dashboards/team-velocity.md) and [forecast](../boards/sprints/forecast.md) tools to estimate work that can be completed in future sprints.|
+|Use sprint burndown charts|Monitor progress and review team patterns from [sprint burndown charts](/azure/devops/report/dashboards/configure-sprint-burndown).|
+|Manage resources|Use [capacity planning tools](../boards/sprints/set-capacity.md) to track individual, team, and activity over and under capacity for a sprint.|
+![Capacity bars](../boards/sprints/media/ALM_DS_CapacityBars_S.png)|
 
 <a id="workflow"></a>
 
