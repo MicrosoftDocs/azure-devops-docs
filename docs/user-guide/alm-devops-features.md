@@ -1,7 +1,7 @@
 ---
-title: Feature overview for Azure DevOps
+title: Feature overview
 titleSuffix: Azure DevOps 
-description: Comprehensive index to all features for Azure DevOps
+description: Comprehensive index to all features for Azure DevOps.
 ms.subservice: azure-devops-new-user
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
@@ -12,13 +12,13 @@ ms.date: 05/28/2019
 monikerRange: '<= azure-devops'
 ---
 
-# What are the features in Azure DevOps?
+# Feature overview
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
+Learn about the features that can help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
-If you're new to Azure DevOps, see our overview articles that are designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
+For a description of the core services supported through the web portal, see [Essential services](services.md).
 
 > [!NOTE]  
 > Some features are platform-dependent, based on the following two platforms:
@@ -27,72 +27,45 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 
 ## Access and supported clients
 
----
-:::row:::
-   :::column span="1":::
-      **Browsers**
-      [Connect to the web portal](../organizations/projects/connect-to-projects.md) from the latest versions of these supported browsers:  
-      - Chrome  
-      - Microsoft Edge  
-      - Firefox  
-      - Internet Explorer  
-      - Safari (Mac)
-   :::column-end:::
-   :::column span="1":::
-      **Integrated Development Environments (IDE)**
-        Track work and integrate with your code, build, and test environments from the following clients:  
-        - [Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
-        - [Visual Studio](https://visualstudio.microsoft.com/downloads/)  
-        - [Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
-        - [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
-        - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
-        For more information, see [Connect to a project](../organizations/projects/connect-to-projects.md).
-   :::column-end:::
-   :::column span="1":::
-      **Permissions**
-        Control access to specific features by setting permissions for a user or group.
-      - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
-      - [Build & Release](../pipelines/policies/set-permissions.md)  
-      - [Git](../repos/git/set-git-repository-permissions.md)  
-      - [TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)  
-      - [Dashboards](/azure/devops/report/dashboards/dashboard-permissions)  
-      - [Queries](../boards/queries/set-query-permissions.md)  
-      - [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
-      - [Test](../organizations/security/change-project-level-permissions.md)  
-      - [Work item tags](../organizations/security/permissions.md#tags)
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Manage users and groups**
-        Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).
-   :::column-end:::
-   :::column span="1":::
-      **Add team members**
-        To share and contribute to your project, add users to [Azure DevOps Services](../organizations/security/add-users-team-project.md) or your [Azure DevOps Server](../organizations/settings/add-teams.md#add-team-members).
-        ![Manage users, add team members](media/features/alm-feature-manage-members.png)  
-   :::column-end:::
-   :::column span="1":::
-      **Azure Active Directory (Azure AD) (Azure DevOps Services)**
-        Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md).
-   :::column-end:::
----
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Access levels**
-        All users added to your organization or project have access to Basic features by default, except for [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features.
-        - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md) 
-        - [Change access levels (Azure DevOps Server)](../organizations/security/change-access-levels.md)  
-   :::column-end:::
-   :::column span="1":::
-      **Office integration clients**
-        Use features supported by these familiar clients to manage your project and illustrate your requirements.  
-      - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-   :::column-end:::
-:::row-end:::
----
+- **Browsers**
+   [Connect to the web portal](../organizations/projects/connect-to-projects.md) from the latest versions of these supported browsers:  
+   - Chrome  
+   - Microsoft Edge  
+   - Firefox  
+   - Internet Explorer  
+   - Safari (Mac)
+- **Integrated development environments (IDE)**
+   Track work and integrate with your code, build, and test environments from the following clients:  
+   - [Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
+   - [Visual Studio](https://visualstudio.microsoft.com/downloads/)  
+   - [Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
+   - [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
+   - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
+   For more information, see [Connect to a project](../organizations/projects/connect-to-projects.md).
+- **Permissions**
+   Control access to specific features by setting permissions for a user or group.
+   - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
+   - [Build & Release](../pipelines/policies/set-permissions.md)  
+   - [Git](../repos/git/set-git-repository-permissions.md)  
+   - [TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)  
+   - [Dashboards](/azure/devops/report/dashboards/dashboard-permissions)  
+   - [Queries](../boards/queries/set-query-permissions.md)  
+   - [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
+   - [Test](../organizations/security/change-project-level-permissions.md)  
+   - [Work item tags](../organizations/security/permissions.md#tags)
+- **Manage users and groups**
+   Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).
+- **Add team members**
+   To share and contribute to your project, add users to [Azure DevOps Services](../organizations/security/add-users-team-project.md) or your [Azure DevOps Server](../organizations/settings/add-teams.md#add-team-members).
+   ![Manage users, add team members](media/features/alm-feature-manage-members.png)  
+- **Azure Active Directory (Azure AD) (Azure DevOps Services)**
+   Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md).
+- **Access levels**
+   All users added to your organization or project have access to Basic features by default, except for [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features.
+   - [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md) 
+   - [Change access levels (Azure DevOps Server)](../organizations/security/change-access-levels.md)  
+- **Office integration clients**
+   Use features supported by these familiar clients to manage your project and illustrate your requirements. [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 
 <a id="agile-tools"></a>
 
@@ -102,284 +75,135 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 
 ### Backlogs
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="320">
-
-<p><b>Create your backlog</b></p>
-<p>Plan your project by <a href="../boards/backlogs/create-your-backlog.md" data-raw-source="[adding a work item for each user story or requirement](../boards/backlogs/create-your-backlog.md)">adding a work item for each user story or requirement</a> you plan to develop.  </p>
-<img src="media/features/features-quick-add-panel.png" alt="Build your backlog of user stories and requirements"/><br/> <br/>
-
-
-<p><b>Organize your backlog</b></p>
-<p><a href="../boards/backlogs/organize-backlog.md" data-raw-source="[Group items into a hierarchical list using portfolio backlogs](../boards/backlogs/organize-backlog.md)">Group items into a hierarchical list using portfolio backlogs</a> and quickly reorder and re-parent items to effectively manage your deliverables. </p>
-
-<p><b>Forecast</b></p>
-
-<p>Use the <a href="../boards/sprints/forecast.md" data-raw-source="[forecast](../boards/sprints/forecast.md)">forecast</a> tool to estimate work to be completed in future sprints. </p>
- <br/>
-
-
-</td>
-<td width="320">
-<p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> <b>Change project</b>, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
-
-<p><b>Full screen mode</b></p>
-<p>Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
-
-
-<p><b>Backlog and board settings</b></p>
-<p>Choose <img src="../boards/media/icons/team-settings-gear-icon.png" alt="Settings icon"/>  to configure team backlogs and boards, including <a href="../organizations/settings/show-bugs-on-backlog.md" data-raw-source="[show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md)">show bugs on backlogs and boards</a> and <a href="../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[set team backlog levels](../organizations/settings/select-backlog-navigation-levels.md)">set team backlog levels</a>.  </p>
-<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Backlog and board settings"/><br/><br/>
-
-
-
-<p><b>View portfolio backlog hierarchy</b></p>
-<p>Use <a href="../boards/backlogs/organize-backlog.md" data-raw-source="[**Parents Show/Hide**](../boards/backlogs/organize-backlog.md)"><strong>Parents Show/Hide</strong></a> to drill down into the backlog hierarchy.   </p>
-
-
-<p><b>Multi-team backlog ownership</b></p>
-<p>Easily view and track items <a href="../boards/backlogs/backlogs-overview.md#multi-team" data-raw-source="[owned by other teams](../boards/backlogs/backlogs-overview.md#multi-team)">owned by other teams</a> and quickly reorder and re-parent items to effectively manage your backlog. </p>
-
-
-</td>
-
-<td width="30%">
-<p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> <b>Change type</b> <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
-
-<p><b>Filter your backlog</b></p>
-<p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs-boards-plans.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs-boards-plans.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
-<img src="media/features/alm-feature-filter-backlog.png" alt="Filter based on keywords or tags"/><br/> <br/>
-
-<p><b>Request feedback</b></p>
-<p><a href="../project/feedback/get-feedback.md" data-raw-source="[Request feedback on working software](../project/feedback/get-feedback.md)">Request feedback on working software</a> and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
-<img src="media/features/feature-request-feedback.png" alt="Request feedback"/><br/> <br/>
-
-<p><b>Feedback client</b></p>
-<p>Provide the free <a href="../project/feedback/give-feedback.md" data-raw-source="[Microsoft feedback client](../project/feedback/give-feedback.md)">Microsoft feedback client</a> to capture their responses to your feedback requests. </p>
-
-</td>
-</tr>
-</tbody>
-</table>
+- **Create your backlog**
+  Plan your project by [adding a work item for each user story or requirement](../boards/backlogs/create-your-backlog.md) you plan to develop.
+- **Organize your backlog**
+   [Group items into a hierarchical list using portfolio backlogs](../boards/backlogs/organize-backlog.md) and quickly reorder and re-parent items to effectively manage your deliverables.
+- **Forecast**
+   Use the [forecast](../boards/sprints/forecast.md) tool to estimate work to be completed in future sprints.
+- **Move work items to a different project (Azure DevOps Services)**
+   Choose ![Change project icon](../boards/media/icons/change-team-project-icon.png) **Change project**, ![Actions icon](../boards/media/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different project](../boards/backlogs/remove-delete-work-items.md).
+- **Full screen mode**
+   Choose ![full screen icon](../boards/media/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/media/icons/exitfullscreen_icon.png) to enter or exit full screen mode.
+- **Backlog and board settings**
+   Choose ![Settings icon](../boards/media/icons/team-settings-gear-icon.png) to configure team backlogs and boards, including [show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) and [set team backlog levels](../organizations/settings/select-backlog-navigation-levels.md).
+- **View portfolio backlog hierarchy**
+   Use [**Parents Show/Hide**](../boards/backlogs/organize-backlog.md) to drill down into the backlog hierarchy.
+- **Multi-team backlog ownership**
+   Easily view and track items [owned by other teams](../boards/backlogs/backlogs-overview.md#multi-team) and quickly reorder and re-parent items to effectively manage your backlog.
+- **Change work item type (Azure DevOps Services)**
+   If you added a task instead of a bug and want to change the work item type to bug, you can. Choose ![Change type icon](../boards/media/icons/change-type-icon.png) 
+- **Change type** ![Actions icon](../boards/media/icons/actions-icon.png) Actions menu in a work item form to [change the work item type](../boards/backlogs/remove-delete-work-items.md).
+- **Filter your backlog**
+   Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state.
+   You can also list a subset of items based on keywords [keywords](../boards/backlogs/filter-backlogs-boards-plans.md) or [tags](../boards/queries/add-tags-to-work-items.md).
+- **Request feedback**
+   [Request feedback on working software](../project/feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.
+- **Feedback client**
+   Provide the free [Microsoft feedback client](../project/feedback/give-feedback.md) to capture their responses to your feedback requests.
 
 <a id="bugs-tasks-issue-tracking"></a>
 
 ### Bug, task, and issue tracking
 
-
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-
-
-<p><b>Track issues and other types of work</b></p>
-<p>Different types of work items <a href="../boards/backlogs/add-work-items.md" data-raw-source="[track different types of work](../boards/backlogs/add-work-items.md)">track different types of work</a> - such as bugs, test cases, risks, issues, and more. </p>
-<img src="media/features/alm-feature-new-work-item-widget.png" alt="Add new work item widget"/><br/>
- <br/>
-
-<p><b>Bulk modify</b></p>
-<p>Quickly change one or more fields in several work items using <a href="../boards/backlogs/bulk-modify-work-items.md" data-raw-source="[bulk modify in the web portal](../boards/backlogs/bulk-modify-work-items.md)">bulk modify in the web portal</a> or <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">bulk modify using Excel</a>. </p>
-
-<p><b>Copy or clone a work item</b></p>
-<p><a href="../boards/backlogs/copy-clone-work-items.md#copy-clone" data-raw-source="[Copy an existing work item](../boards/backlogs/copy-clone-work-items.md#copy-clone)">Copy an existing work item</a> or bulk copy several using <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a>.</p>
-<img src="media/features/alm-index-copy-clone-work-item.png" alt="Copy or clone a work item"/><br/> <br/>
-
-<p><b>Follow a work item </b></p>
-<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> <b>Follow</b>/<b>Following</b> to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
-<img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
-
-<p><b>Rich text comments</b></p>
-<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area.</p>
-
-
-<p><b>Clear HTML formatting </b></p>
-<p>Use <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> or <b>CTRL+Spacebar</b> to remove formatting from highlighted text.</p>
-
-
-
-<p><b>Attachments</b></p>
-<p>To support collaboration of work in progress, <a href="../boards/queries/share-plans.md#attach-files" data-raw-source="[add emails, documents, images, log files, or other file types](../boards/queries/share-plans.md#attach-files)">add emails, documents, images, log files, or other file types</a> to work items.  </p>
-
-
-</td>
-<td width="33%">
-
-
-<p><b>Estimates and time tracking</b></p>
-<p>Track <a href="/azure/devops/boards/queries/query-numeric?viewFallbackFrom=vsts" data-raw-source="[estimated, completed, and remaining work](../boards/queries/query-numeric.md)">estimated, completed, and remaining work</a> for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.</p>
-
-
-
-<p><b>New work item experience</b></p>
-<p>The <a href="../reference/process/new-work-item-experience.md" data-raw-source="[new work item experience](../reference/process/new-work-item-experience.md)">new work item experience</a> provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
-
-
-<p><b>Manage bugs</b></p>
-<p><a href="../boards/backlogs/manage-bugs.md" data-raw-source="[Capture and triage bugs](../boards/backlogs/manage-bugs.md)">Capture and triage bugs</a> using different kinds of tools. </p>
-
-
-<p><b>Choose how you want to track bugs</b></p>
-<p>Each team can <a href="../organizations/settings/show-bugs-on-backlog.md" data-raw-source="[choose to manage bugs on their backlog or along with tasks](../organizations/settings/show-bugs-on-backlog.md)">choose to manage bugs on their backlog or along with tasks</a>. </p>
-
-
-<p><b>Share plans and information</b></p>
-<p>Share information using work items and <a href="../boards/queries/share-plans.md" data-raw-source="[generate summary lists with links to backlogs or queries](../boards/queries/share-plans.md)">generate summary lists with links to backlogs or queries</a>. </p>
-
-
-<p><b>Remove or delete a work item</b></p>
-<p>Remove work items from the backlog by changing their State to Removed. Or, <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move them to the recycle bin or permanently delete them](../boards/backlogs/remove-delete-work-items.md)">move them to the recycle bin or permanently delete them</a>.</p>
-<img src="../boards/backlogs/media/recycle-bin-icon.png" alt="Recycle bin icon"/><br/> <br/>
-
-<p><b>Tags</b></p>
-<p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Bulk update work items](../boards/backlogs/bulk-modify-work-items.md#tags)">Bulk update work items</a> or <a href="../boards/backlogs/work-item-template.md" data-raw-source="[use work item templates](../boards/backlogs/work-item-template.md)">use work item templates</a> to add or remove tags. </p>
-<img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
-
-<p><b>Work item templates</b></p>
-<p>Quickly add new work items based on templates <a href="../boards/backlogs/work-item-template.md" data-raw-source="[with  pre-populate values for your team&#39;s commonly used fields](../boards/backlogs/work-item-template.md)">with  pre-populate values for your team&#39;s commonly used fields</a>. </p>
-
-<p><b>History &amp; auditing</b></p>
-<p>Review and query <a href="../boards/queries/history-and-auditing.md" data-raw-source="[work item change history](../boards/queries/history-and-auditing.md)">work item change history</a> to learn of past decisions and support future ones.</p>
-
-
-
-
-</td>
-<td width="33%">
-<p><b>Discussion </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> <b>discussion</b>.  </p>
-
-
-<p><b>Integrate Git development with work tracking </b></p>
-<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the <a href="../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Git Development section</a>. Add branches, create pull requests, and view all development done to support the specific work item.  </p>
-<img src="media/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
-
-
-<p><b>Verify a bug, rerun test case</b></p>
-<p>Choose <strong>Verify</strong> from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see <a href="../test/run-manual-tests.md" data-raw-source="[Run tests for web apps](../test/run-manual-tests.md)">Run tests for web apps</a>. </p>
-
-
-<p><b>Link work items  </b></p>
-<p>Track related work, dependencies, and changes made over time by <a href="../boards/queries/link-work-items-support-traceability.md" data-raw-source="[linking work items](../boards/queries/link-work-items-support-traceability.md)">linking work items</a>. </p>
-<img src="media/features/alm-feature-links-control.png" alt="Link control, web portal"/><br/><br/>
-
-<p><b>Add or modify a field </b></p>
-<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Azure DevOps Server](../organizations/settings/work/rule-reference.md)">Azure DevOps Server</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
-
-
-<p><b>Restrict access</b></p>
-<p><a href="/azure/devops/organizations/security/restrict-access?viewFallbackFrom=vsts" data-raw-source="[Limit who can create or modify work items or a work item field](../organizations/security/restrict-access.md)">Limit who can create or modify work items or a work item field</a> based on area path, work item type, or based on your specific conditions. </p>
-
-
-<p><b>Field index </b></p>
-<p>Find descriptions and usage information for each field from the <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[work item field index](../boards/work-items/guidance/work-item-field.md)">work item field index</a>. </p>
-
-
-
-</td>
-</tr>
-</tbody>
-</table>
+- **Track issues and other types of work**
+   Different types of work items [track different types of work](../boards/backlogs/add-work-items.md) - such as bugs, test cases, risks, issues, and more.
+   ![Add new work item widget](media/features/alm-feature-new-work-item-widget.png)  
+- **Bulk modify**
+   Quickly change one or more fields in several work items using [bulk modify in the web portal](../boards/backlogs/bulk-modify-work-items.md) or [bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
+- **Copy or clone a work item**
+   [Copy an existing work item](../boards/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). 
+- **Follow a work item**
+   Choose ![Follow icon](../boards/media/icons/follow-icon.png)/![Following icon](../boards/media/icons/following-icon.png) **Follow**/**Following** to quickly [start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md).
+![Follow a work item control](media/features/alm-feature-follows.png)  
+- **Rich text comments**
+   Describe and comment on work using [formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md). Choose ![full screen icon](../boards/media/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/media/icons/exitfullscreen_icon.png) to expand or contract the viewing area.
+- **Clear HTML formatting**
+   Use ![Remove format](../boards/media/icons/remove-formatting-icon.png) or **CTRL+Spacebar** to remove formatting from highlighted text.
+- **Attachments**
+   To support collaboration of work in progress, [add emails, documents, images, log files, or other file types](../boards/queries/share-plans.md#attach-files) to work items.
+- **Estimates and time tracking**
+   Track [estimated, completed, and remaining work](/azure/devops/boards/queries/query-numeric?viewFallbackFrom=vsts) for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.
+- **New work item experience**
+   The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type.
+- **Manage bugs**
+   [Capture and triage bugs](../boards/backlogs/manage-bugs.md) using different kinds of tools.
+- **Choose how you want to track bugs**
+   Each team can [choose to manage bugs on their backlog or along with tasks](../organizations/settings/show-bugs-on-backlog.md).
+- **Share plans and information**
+   Share information using work items and [generate summary lists with links to backlogs or queries](../boards/queries/share-plans.md).
+- **Remove or delete a work item**
+   Remove work items from the backlog by changing their State to Removed. Or, [move them to the recycle bin or permanently delete them](../boards/backlogs/remove-delete-work-items.md).
+   ![Recycle bin icon](../boards/backlogs/media/recycle-bin-icon.png)  
+- **Tags**
+   [Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries. [Bulk update work items](../boards/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](../boards/backlogs/work-item-template.md) to add or remove tags.
+   ![Add tags to filter backlogs, boards, and queries](media/features/alm-feature-tags.png)  
+- **Work item templates**
+   Quickly add new work items based on templates [with pre-populate values for your team's commonly used fields](../boards/backlogs/work-item-template.md).
+- **History & auditing**
+   Review and query [work item change history](../boards/queries/history-and-auditing.md) to learn of past decisions and support future ones.
+- **Discussion**
+   [Add or review comments](../boards/backlogs/add-work-items.md) added to a work item. Start by choosing ![Discussions icon](../boards/backlogs/media/icon-discussions-wi.png) **discussion**.
+- **Integrate Git development with work tracking**
+   Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development done to support the specific work item.
+   ![Work item form Development section](media/features/alm-feature-git-dev-section.png)  
+- **Verify a bug, rerun test case**
+   Choose **Verify** from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../test/run-manual-tests.md).
+- **Link work items**
+   Track related work, dependencies, and changes made over time by [linking work items](../boards/queries/link-work-items-support-traceability.md).
+   ![Link control, web portal](media/features/alm-feature-links-control.png)  
+- **Add or modify a field**
+   Add a custom field ([Azure DevOps Services](../organizations/settings/work/customize-process.md) | [Azure DevOps Server](../organizations/settings/work/rule-reference.md) to support tracking additional data requirements or modify an existing field to apply optional rules.
+- **Restrict access**
+   [Limit who can create or modify work items or a work item field](/azure/devops/organizations/security/restrict-access?viewFallbackFrom=vsts) based on area path, work item type, or based on your specific conditions.
+- **Field index**
+   Find descriptions and usage information for each field from the [work item field index](../boards/work-items/guidance/work-item-field.md).
 
 ::: moniker range="azure-devops"
 
 <a id="customize-vsts">  </a>
 
-### Customize (Azure DevOps Services)
+### Customize
 
-
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-
-<p><b>Create an inherited process</b></p>
-<p>The first step in customizing a project is to <a href="../organizations/settings/work/manage-process.md#create-inherited-process" data-raw-source="[create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process)">create an inherited process</a>. You can only customize inherited processes.  </p>
-<img src="media/features/customize-vsts-process.png" alt="Customize process"/><br/><br/>
-
-<p><b>New work item experience </b></p>
-<p>The <a href="../reference/process/new-work-item-experience.md" data-raw-source="[new work item experience](../reference/process/new-work-item-experience.md)">new work item experience</a> provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
-
-<p><b>Customize a process</b></p>
-<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:</p>
-<ul>
-<li><a href="../organizations/settings/work/customize-process-field.md" data-raw-source="[Add and modify fields](../organizations/settings/work/customize-process-field.md)">Add and modify fields</a></li>
-<li><a href="../organizations/settings/work/customize-process-form.md" data-raw-source="[Modify the web form layout](../organizations/settings/work/customize-process-form.md)">Modify the web form layout</a></li>
-<li><a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Modify the workflow states](../organizations/settings/work/customize-process-workflow.md)">Modify the workflow states</a> </li>
-<li><a href="../organizations/settings/work/customize-process-work-item-type.md" data-raw-source="[Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md)">Add a custom work item type</a> </li>
-<li><a href="../organizations/settings/work/custom-controls-process.md" data-raw-source="[Add a custom control](../organizations/settings/work/custom-controls-process.md)">Add a custom control</a> </li>
-</ul>
-
-<p><b>Change the process used by a project</b></p>
-<p>To apply customizations to one or more team projects, you <a href="../organizations/settings/work/manage-process.md#migrate" data-raw-source="[change the process they reference to a customized inherited process](../organizations/settings/work/manage-process.md#migrate)">change the process they reference to a customized inherited process</a>.  </p>
-
-<p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a project from a process that you don&#39;t want used, <a href="../organizations/settings/work/manage-process.md#enable-process" data-raw-source="[you can disable it](../organizations/settings/work/manage-process.md#enable-process)">you can disable it</a>.  </p>
-
-
-
-</td>
-
-<td width="33%">
-
-<p><b>Add or modify a field</b></p>
-<p><a href="../organizations/settings/work/customize-process-field.md" data-raw-source="[Add a custom field](../organizations/settings/work/customize-process-field.md)">Add a custom field</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
-<img src="media/features/index-add-field.png" alt="Add field"/><br/><br/>
-
-<p><b>Remove a field from a form</b></p>
-<p>You can <a href="../organizations/settings/work/customize-process-field.md#remove-field" data-raw-source="[remove a custom field and select inherited fields from a work item form](../organizations/settings/work/customize-process-field.md#remove-field)">remove a custom field and select inherited fields from a work item form</a>. You can also <a href="../organizations/settings/work/customize-process-field.md#rename-field" data-raw-source="[relabel the fields](../organizations/settings/work/customize-process-field.md#rename-field)">relabel the fields</a> that appear on the form.   </p>
-
-<p><b>Area path pick lists</b></p>
-<p>Change the <a href="../organizations/settings/set-area-paths.md" data-raw-source="[pick list of area paths](../organizations/settings/set-area-paths.md)">pick list of area paths</a> to support grouping work items by team, product, or feature area. </p>
-<img src="media/features/alm-feature-area-paths.png" alt="Hierarchical area paths"/><br/><br/>
-
-<p><b>Sprint/iteration pick lists</b></p>
-<p>Change the <a href="../boards/sprints/define-sprints.md" data-raw-source="[pick list of iteration paths](../boards/sprints/define-sprints.md)">pick list of iteration paths</a> to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team. </p>
-<img src="media/features/alm-feature-define-sprints.png" alt="Iterations or sprints"/><br/><br/>
-</td>
-
-
-<td width="33%">
-
-
-
-
-<p><b>Review fields</b></p>
-<p>You can <a href="../boards/work-items/work-item-fields.md#review-fields" data-raw-source="[review the list of fields](../boards/work-items/work-item-fields.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
-
-<p><b>Delete a field from the collection</b></p>
-<p>You can <a href="../organizations/settings/work/customize-process-field.md#delete-field" data-raw-source="[delete a custom field](../organizations/settings/work/customize-process-field.md#delete-field)">delete a custom field</a> if you find it&#39;s no longer required. </p>
-
-
-
-<p><b>Customize the web form</b></p>
-<p>For each work item type, you can <a href="../organizations/settings/work/customize-process-form.md" data-raw-source="[add custom pages to group additional custom fields](../organizations/settings/work/customize-process-form.md)">add custom pages to group additional custom fields</a> and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
-<img src="media/features/index-add-group.png" alt="Add custom group"/><br/><br/>
-
-<p><b>Add a custom work item type</b></p>
-<p>You can <a href="../organizations/settings/work/customize-process-work-item-type.md" data-raw-source="[add and modify a custom work item type](../organizations/settings/work/customize-process-work-item-type.md)">add and modify a custom work item type</a>.    </p>
-
-<p><b>Customize the workflow</b></p>
-<p>For each work item type, you can <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.    </p>
-
-
-<p><b>Delete a process</b></p>
-<p>Delete those inherited processes that you no longer want used. Choose <b>Delete</b>.  </p>
-
-<p><b>Set process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">granted explicit permissions to edit a specific process</a>.  </p>
-
-</td>
-
-
-</tr>
-</tbody>
-</table>
+- **Create an inherited process**
+The first step in customizing a project is to [create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.
+- **New work item experience**
+The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type.
+- **Customize a process**
+Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:
+   * [Add and modify fields](../organizations/settings/work/customize-process-field.md)
+   * [Modify the web form layout](../organizations/settings/work/customize-process-form.md)
+   * [Modify the workflow states](../organizations/settings/work/customize-process-workflow.md)
+   * [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md)
+   * [Add a custom control](../organizations/settings/work/custom-controls-process.md)
+- **Change the process used by a project**
+To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../organizations/settings/work/manage-process.md#migrate).
+- **Enable/disable a process**
+To make sure no one creates a project from a process that you don't want used, [you can disable it](../organizations/settings/work/manage-process.md#enable-process).
+- **Add or modify a field**
+[Add a custom field](../organizations/settings/work/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules.
+- **Remove a field from a form**
+You can [remove a custom field and select inherited fields from a work item form](../organizations/settings/work/customize-process-field.md#remove-field). You can also [relabel the fields](../organizations/settings/work/customize-process-field.md#rename-field) that appear on the form.
+- **Area path pick lists**
+Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area.
+![Hierarchical area paths](media/features/alm-feature-area-paths.png)   
+- **Sprint/iteration pick lists**
+Change the [pick list of iteration paths](../boards/sprints/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.
+![Iterations or sprints](media/features/alm-feature-define-sprints.png)
+- **Review fields**
+You can [review the list of fields](../boards/work-items/work-item-fields.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
+- **Delete a field from the collection**
+You can [delete a custom field](../organizations/settings/work/customize-process-field.md#delete-field) if you find it's no longer required.
+- **Customize the web form**
+For each work item type, you can [add custom pages to group additional custom fields](../organizations/settings/work/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.
+- **Add a custom work item type**
+You can [add and modify a custom work item type](../organizations/settings/work/customize-process-work-item-type.md).
+- **Customize the workflow**
+For each work item type, you can [add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md).
+- **Delete a process**
+Delete those inherited processes that you no longer want used. Choose **Delete**.
+- **Set process permissions**
+To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions).
 
 ::: moniker-end
 
@@ -387,332 +211,158 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 
 <a id="customize-tfs"></a>
 
-### Customize (Azure DevOps Server)
+### Customize
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-
-
-<p><b>Add or modify a field </b></p>
-<p><a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Add or modify a field](../organizations/settings/work/rule-reference.md)">Add or modify a field</a> to support work tracking and reporting by editing the WIT definition.</p>
-
-
-<p><b>Add rules to a field </b></p>
-<p>Apply <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[various rules to custom fields](../organizations/settings/work/rule-reference.md)">various rules to custom fields</a> to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
-
-
-<p><b>Remove a field </b></p>
-<p><a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Stop tracking a field by removing the field](../organizations/settings/work/rule-reference.md)">Stop tracking a field by removing the field</a> from the work item form of select work item types. </p>
-
-
-</td>
-<td width="33%">
-
-
-<p><b>Area path pick lists</b></p>
-<p>Change the <a href="../organizations/settings/set-area-paths.md" data-raw-source="[pick list of area paths](../organizations/settings/set-area-paths.md)">pick list of area paths</a> to support grouping work items by team, product, or feature area. </p>
-
-<p><b>Sprint/iteration pick lists</b></p>
-<p>Change the <a href="../boards/sprints/define-sprints.md" data-raw-source="[pick list of iteration paths](../boards/sprints/define-sprints.md)">pick list of iteration paths</a> to support grouping work into sprints, milestones, or other event-specific or time-related period.</p>
-
-
-<p><b>Custom pick lists </b></p>
-<p><a href="/azure/devops/reference/xml/define-pick-lists" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md)">Define or modify pick list values</a> by editing the work item type definition.</p>
-</td>
-<td width="33%">
-
-
-
-<p><b>Modify the workflow </b></p>
-<p><a href="/azure/devops/reference/xml/change-workflow-wit" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
-
-
-<p><b>Change the work item form </b></p>
-<p><a href="/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true" data-raw-source="[Change the layout of your work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
-
-<p><b>Add a custom work item type </b></p>
-<p><a href="/azure/devops/reference/customize-work" data-raw-source="[Add a custom work item type](../reference/customize-work.md)">Add a custom work item type</a> to track different data requirements.</p>
-
-
-</td>
-</tr>
-</tbody>
-</table>
-
+- **Add or modify a field**
+[Add or modify a field](../organizations/settings/work/rule-reference.md) to support work tracking and reporting by editing the WIT definition.
+- **Add rules to a field**
+Apply [various rules to custom fields](../organizations/settings/work/rule-reference.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.
+- **Remove a field**
+[Stop tracking a field by removing the field](../organizations/settings/work/rule-reference.md) from the work item form of select work item types.
+- **Area path pick lists**
+Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area.
+- **Sprint/iteration pick lists**
+Change the [pick list of iteration paths](../boards/sprints/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period.
+- **Custom pick lists**
+[Define or modify pick list values](/azure/devops/reference/xml/define-pick-lists) by editing the work item type definition.
+- **Modify the workflow**
+[Design your custom workflow](/azure/devops/reference/xml/change-workflow-wit) by adding states, transitions, reasons, and optional actions.
+- **Change the work item form**
+[Change the layout of your work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true) by adding fields, custom controls, or tabs.
+- **Add a custom work item type**
+[Add a custom work item type](/azure/devops/reference/customize-work) to track different data requirements.
 ::: moniker-end
 
 <a id="kanban"></a>
 
 ### Kanban
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-
-<p><b>Kanban basics</b></p>
-<p>Use your Kanban board to <a href="../boards/boards/kanban-basics.md" data-raw-source="[visualize and track the flow of work](../boards/boards/kanban-basics.md)">visualize and track the flow of work</a> from idea to completion as well as quickly update work item fields</p>
-<img src="../boards/boards/media/ALM_KB_UpdateFieldOnCard.png" alt="Update fields on cards"/><br/><br/>
-
-<p><b>Drag-n-drop</b></p>
-<p><a href="../boards/boards/reorder-cards.md" data-raw-source="[Drag and drop items](../boards/boards/reorder-cards.md)">Drag and drop items</a> on the Kanban board to update status and to reorder and reparent items.  </p>
-
-<p><b>Add task checklists</b></p>
-<p>Add and mark tasks as done with <a href="../boards/boards/add-task-checklists.md" data-raw-source="[lightweight tasks checklists](../boards/boards/add-task-checklists.md)">lightweight tasks checklists</a>. </p>
-<img src="../boards/backlogs/media/overview/kanban-task-checklist.png" alt="Track tasks with a checklist"/><br/><br/>
-
-<p><b>Filter</b></p>
-<p><a href="/azure/devops/boards/backlogs/filter-backlogs-boards-plans#text-filter" data-raw-source="[Use key words to filter and find items](../boards/backlogs/filter-backlogs-boards-plans.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
-
-<img src="media/features/alm-feature-kanban-filter.png" alt="Kanban board filter"/><br/><br/>
-
-
-
-</td>
-<td width="33%">
-
-
-<p><b>Set WIP limits</b></p>
-<p><a href="../boards/boards/wip-limits.md" data-raw-source="[Set constraints on the amount of work your team undertakes at each work stage](../boards/boards/wip-limits.md)">Set constraints on the amount of work your team undertakes at each work stage</a> to gain access to sprint backlogs and task boards.</p>
-
-
-<p><b>Split columns</b></p>
-<p>Turn on split columns to <a href="../boards/boards/split-columns.md" data-raw-source="[track the lag between when items are done in one state and work actually starts in a new state](../boards/boards/split-columns.md)">track the lag between when items are done in one state and work actually starts in a new state</a>. </p>
-
-<p><b>Map your workflow</b></p>
-<p><a href="../boards/boards/add-columns.md" data-raw-source="[Customize columns to support your team&#39;s workflow](../boards/boards/add-columns.md)">Customize columns to support your team&#39;s workflow</a> and track work from start to finish. </p>
-<img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
-
-<p><b>Expedite work with swimlanes </b></p>
-<p>Use <a href="../boards/boards/expedite-work.md" data-raw-source="[swimlanes](../boards/boards/expedite-work.md)">swimlanes</a> to track work at different service-level classes. </p>
-
-
-<p><b>Definition of done</b></p>
-<p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
-<p><b>Filter by field values or parent work items</b></p>
-<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> <b>field filter</b> to <a href="/azure/devops/boards/backlogs/filter-backlogs-boards-plans" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/backlogs/filter-backlogs-boards-plans.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
-<img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
-
-<p><b>Cumulative Flow Diagram </b></p>
-<p>With the CFD, you can <a href="../report/dashboards/cumulative-flow.md" data-raw-source="[monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md)">monitor the count of work items as they progressively move through various states which you define</a>.  </p>
-</td>
-
-
-<td width="33%">
-
-<p><b>Customize cards</b></p>
-<p><a href="../boards/boards/customize-cards.md" data-raw-source="[Add fields to cards](../boards/boards/customize-cards.md)">Add fields to cards</a> that you can edit directly on your Kanban and task boards.</p><br/><img src="../boards/boards/media/kanban-board-card-style-rule-example.png" alt="Customized card with added work item fields and styling rules"/><br/><br/>
-
-<p><b>Live updates </b></p>
-<p><a href="../boards/boards/kanban-basics.md" data-raw-source="[Enable live updates](../boards/boards/kanban-basics.md)">Enable live updates</a> to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
-<img src="media/features/alm-feature-live-updates.png" alt="Live updates"/><br/><br/>
-
-
-<p><b>Add inline tests </b></p>
-<p><a href="../boards/boards/add-run-update-tests.md" data-raw-source="[Add, run, and update tests](../boards/boards/add-run-update-tests.md)">Add, run, and update tests</a> with inline test on your Kanban board.   </p>
-
-<p><b>Add checklists to features and epics</b></p>
-<p>Add and mark user stories and other work items as done from your <a href="../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban features or epics boards](../boards/boards/kanban-epics-features-stories.md)">Kanban features or epics boards</a>. </p>
-
-<p><b>Set team&#39;s card reorder preference </b></p>
-<p>You can preserve the backlog priority when you move a card to a new column by setting your team&#39;s <a href="../boards/boards/reorder-cards.md" data-raw-source="[Kanban board card reordering setting](../boards/boards/reorder-cards.md)">Kanban board card reordering setting</a>.  </p>
-
-<p><b>Enable/disable card annotations</b></p>
-<p>Turn on or off <a href="../boards/boards/customize-cards.md#annotations" data-raw-source="[task checklists or inline tests](../boards/boards/customize-cards.md#annotations)">task checklists or inline tests</a> for your Kanban board. </p>
-
-<p><b>Configure inline tests</b></p>
-<p>Configure how new inline tests are added to the Kanban board: <a href="../boards/boards/customize-cards.md#tests" data-raw-source="[create a new test plan/test suite or choose an existing test plan](../boards/boards/customize-cards.md#tests)">create a new test plan/test suite or choose an existing test plan</a>. </p>
-
-</td>
-
-
-
-</tr>
-</tbody>
-</table>
+- **Kanban basics**
+   Use your Kanban board to [visualize and track the flow of work](../boards/boards/kanban-basics.md) from idea to completion as well as quickly update work item fields
+- **Drag-n-drop**
+   [Drag and drop items](../boards/boards/reorder-cards.md) on the Kanban board to update status and to reorder and reparent items.
+- **Add task checklists**
+   Add and mark tasks as done with [lightweight tasks checklists](../boards/boards/add-task-checklists.md).
+   ![Track tasks with a checklist](../boards/backlogs/media/overview/kanban-task-checklist.png)  
+- **Filter**
+   [Use key words to filter and find items](/azure/devops/boards/backlogs/filter-backlogs-boards-plans#text-filter) on the Kanban board.
+- **Set WIP limits**
+   [Set constraints on the amount of work your team undertakes at each work stage](../boards/boards/wip-limits.md) to gain access to sprint backlogs and task boards.
+- **Split columns**
+   Turn on split columns to [track the lag between when items are done in one state and work actually starts in a new state](../boards/boards/split-columns.md).
+- **Map your workflow**
+   [Customize columns to support your team's workflow](../boards/boards/add-columns.md) and track work from start to finish.
+   ![Add columns to map your workflow](media/features/alm-feature-kanban-flow.png)  
+- **Expedite work with swimlanes**
+   Use [swimlanes](../boards/boards/expedite-work.md) to track work at different service-level classes.
+- **Definition of done**
+   Support your team to be in sync by [specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md).
+- **Filter by field values or parent work items**
+   Choose ![Kanban field filter icon](../boards/media/icons/kanban-filter-icon.png) **field filter** to [filter the board based on assignment, iteration, work item type, or tags](/azure/devops/boards/backlogs/filter-backlogs-boards-plans).
+- **Cumulative Flow Diagram**
+   With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md).
+- **Customize cards**
+   [Add fields to cards](../boards/boards/customize-cards.md) that you can edit directly on your Kanban and task boards.
+   ![Customized card with added work item fields and styling rules](../boards/boards/media/kanban-board-card-style-rule-example.png)  
+- **Live updates**
+   [Enable live updates](../boards/boards/kanban-basics.md) to automatically refresh your Kanban board when changes are made by others or to the board settings.
+- **Add inline tests**
+   [Add, run, and update tests](../boards/boards/add-run-update-tests.md) with inline test on your Kanban board.
+- **Add checklists to features and epics**
+   Add and mark user stories and other work items as done from your [Kanban features or epics boards](../boards/boards/kanban-epics-features-stories.md).
+- **Set team's card reorder preference**
+   You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](../boards/boards/reorder-cards.md).
+- **Enable/disable card annotations**
+   Turn on or off [task checklists or inline tests](../boards/boards/customize-cards.md#annotations) for your Kanban board.
+- **Configure inline tests**
+   Configure how new inline tests are added to the Kanban board: [create a new test plan/test suite or choose an existing test plan](../boards/boards/customize-cards.md#tests).
 
 <a id="scale"></a>
 
 ### Scale
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-<p><b>Add another team</b></p>
-<p><a href="../organizations/settings/add-teams.md" data-raw-source="[Add and structure teams](../organizations/settings/add-teams.md)">Add and structure teams</a> and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
-<img src="media/features/alm-feature-multiple-teams.png" alt="Multiple teams"/><br/><br/>
-<p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team&#39;s default area path, iteration path, and activated sprints to automatically filter the set of work items they display. <a href="../organizations/settings/about-teams-and-settings.md" data-raw-source="[Understand how defaults are used](../organizations/settings/about-teams-and-settings.md)">Understand how defaults are used</a>.</p>
 
-</td>
-<td width="33%">
+|Scale task  |Description |
+|---------|---------|
+|Add another team    | [Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams.
 
+![Multiple teams](media/features/alm-feature-multiple-teams.png)          |
+|Set team defaults   |  Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. [Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).       |
+|Set team hierarchy    | By [configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data.        |
+|Autonomy and alignment    | As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../boards/plans/agile-culture.md).        |
+|Scale your tools and practices    |  Incrementally adopt [practices that scale](../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.       |
+|Manage your portfolio    |  Manage a [portfolio of backlogs](../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.
+![Portfolio management](media/features/alm-feature-portfolio-management.png)       |
+|Structure with Agile framework    | Structure team projects to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../boards/plans/scaled-agile-framework.md).        |
 
-<p><b>Set up a team hierarchy</b></p>
-<p>By <a href="../boards/plans/portfolio-management.md" data-raw-source="[configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md)">configuring your teams and backlogs into an hierarchical structure</a>, program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
-
-
-<p><b>Autonomy and alignment</b></p>
-<p>As your organization grows, your tools can grow to support a <a href="../boards/plans/agile-culture.md" data-raw-source="[culture of team autonomy and organizational alignment](../boards/plans/agile-culture.md)">culture of team autonomy and organizational alignment</a>. </p>
-
-
-<p><b>Scale your tools and practices</b></p>
-<p>Incrementally adopt <a href="../boards/plans/practices-that-scale.md" data-raw-source="[practices that scale](../boards/plans/practices-that-scale.md)">practices that scale</a> to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.</p>
-
-</td>
-<td width="33%">
-
-
-<p><b>Portfolio management</b></p>
-<p>Manage a <a href="../boards/plans/portfolio-management.md" data-raw-source="[portfolio of backlogs](../boards/plans/portfolio-management.md)">portfolio of backlogs</a> and gain insight into each team&#39;s progress as well as the progress of all programs.</p>
-
+**Add another team**
+[Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams.
+![Multiple teams](media/features/alm-feature-multiple-teams.png)  
+**Set team defaults**
+Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. [Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).
+**Set up a team hierarchy**
+By [configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data.
+**Autonomy and alignment**
+As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../boards/plans/agile-culture.md).
+**Scale your tools and practices**
+Incrementally adopt [practices that scale](../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
+**Portfolio management**
+Manage a [portfolio of backlogs](../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.
 ![Portfolio management](media/features/alm-feature-portfolio-management.png)
-
-<br/>
-
-
-<p><b>Scaled Agile Framework</b></p>
-<p>Structure team projects to support <a href="../boards/plans/scaled-agile-framework.md" data-raw-source="[epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../boards/plans/scaled-agile-framework.md)">epics, release trains, and multiple backlogs to support the Scaled Agile Framework</a>. </p>
-
-
-</td>
-</tr>
-</tbody>
-</table>  
-
-
+**Scaled Agile Framework**
+Structure team projects to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../boards/plans/scaled-agile-framework.md).
 <a id="scrum"></a>
 
 ### Scrum
 
-
-
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-
-
-<p><b>Define sprints</b></p>
-<p><a href="../boards/sprints/define-sprints.md" data-raw-source="[Schedule and activate your team&#39;s sprints](../boards/sprints/define-sprints.md)">Schedule and activate your team&#39;s sprints</a> to gain access to sprint backlogs and task boards.</p>
-
-<p><b>Select team sprints, set team defaults</b></p>
-<p>Several tools reference the team&#39;s default and active iteration paths or sprints. For the Agile tools to work best, each team needs to <a href="../organizations/settings/set-area-paths.md" data-raw-source="[set their team area path(s)](../organizations/settings/set-area-paths.md)">set their team area path(s)</a> and <a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[iteration paths](../organizations/settings/set-iteration-paths-sprints.md)">iteration paths</a> to support their work tracking activities. </p>
-
-
-<p><b>Plan sprints</b></p>
-<p>Build your sprint backlog, add tasks, and load balance work across your team as you <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[plan your sprint](../boards/sprints/assign-work-sprint.md)">plan your sprint</a>.</p>
-
-
-<p><b>Track work on your task board</b></p>
-<p>Use your <a href="../boards/sprints/task-board.md" data-raw-source="[task board](../boards/sprints/task-board.md)">task board</a> during your daily Scrum meetings to view  and update progress.  </p>
-
-</td>
-<td width="33%">
-
-
-
-<p><b>Velocity &amp; forecasting</b></p>
-<p>Use <a href="../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../boards/sprints/forecast.md" data-raw-source="[forecast](../boards/sprints/forecast.md)">forecast</a> tools  to estimate work that can be completed in future sprints. </p>
-<img src="media/features/alm-feature-team-velocity-chart.png" alt="Team velocity chart"/><br/><br/>
-
-<p><b>Sprint burndown charts</b></p>
-<p>Monitor progress and review team patterns from <a href="/azure/devops/report/dashboards/configure-sprint-burndown" data-raw-source="[sprint burndown charts](../report/dashboards/configure-sprint-burndown.md)">sprint burndown charts</a>.</p>
-<img src="media/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/>
-
-
-</td>
-<td width="33%">
-
-
-
-<p><b>Manage resources</b></p>
-<p>Use <a href="../boards/sprints/set-capacity.md" data-raw-source="[capacity planning tools](../boards/sprints/set-capacity.md)">capacity planning tools</a> to track individual, team, and activity over and under capacity for a sprint.</p>
-<img src="../boards/sprints/media/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/><br/>
-
-
-</td>
-</tr>
-</tbody>
-</table>
-
+**Define sprints**
+[Schedule and activate your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.
+**Select team sprints, set team defaults**
+Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s)](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md) to support their work tracking activities.
+**Plan sprints**
+Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../boards/sprints/assign-work-sprint.md).
+**Track work on your task board**
+Use your [task board](../boards/sprints/task-board.md) during your daily Scrum meetings to view and update progress.
+**Velocity & forecasting**
+Use [velocity charts](../report/dashboards/team-velocity.md) and [forecast](../boards/sprints/forecast.md) tools to estimate work that can be completed in future sprints.
+![Team velocity chart](media/features/alm-feature-team-velocity-chart.png)  
+**Sprint burndown charts**
+Monitor progress and review team patterns from [sprint burndown charts](/azure/devops/report/dashboards/configure-sprint-burndown).
+![Sprint burndown chart](media/features/alm-index-sprint-burndown-widget.png)  
+**Manage resources**
+Use [capacity planning tools](../boards/sprints/set-capacity.md) to track individual, team, and activity over and under capacity for a sprint.
+![Capacity bars](../boards/sprints/media/ALM_DS_CapacityBars_S.png)
 
 <a id="workflow"></a>
 
 ### Workflow
 
-
-
-
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
-
-
-<p><b>What is workflow? </b></p>
-<p>You use workflow to track the progress of work as it moves from new, active, to complete or closed. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.  </p>
-<img src="../boards/work-items/guidance/media/ALM_PT_Agile_WF_Bug.png" alt="User story workflow"/><br/>
-<br/>
-
-
-<p><b>Default workflows</b></p>
-<p>Each process <a href="../boards/work-items/guidance/choose-process.md#main-distinctions" data-raw-source="[defines the workflow](../boards/work-items/guidance/choose-process.md#main-distinctions)">defines the workflow</a> for each work item type to track progress from newly defined, to in progress, to completed or closed. </p>
-
-
-
-
-
-</td>
-<td width="33%">
-
-<p><b>Kanban workflow</b></p>
-<p>You can fully customize your Kanban board to map the workflow your team uses by <a href="../boards/boards/add-columns.md" data-raw-source="[adding and renaming columns](../boards/boards/add-columns.md)">adding and renaming columns</a></p>
-<img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
-
-<p><b>Customize the workflow</b></p>
-<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For Azure DevOps Server: <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
-
- <p><b>States  </b></p>
-<p>States allow you to <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[track the status of work](../reference/xml/change-workflow-wit.md)">track the status of work</a>. For  example, a bug moves from <strong>Active</strong>, <strong>Resolved</strong>, and <strong>Closed</strong> to correspond to when it&#39;s defined, fixed, and verified as fixed.</p>
-
-<p><b>Transitions</b></p>
-<p>Transitions specify the <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[valid progressions and regressions from state to state](../reference/xml/change-workflow-wit.md)">valid progressions and regressions from state to state</a> for a work item type.</p>
-
-<p><b>Reasons</b></p>
-<p>Each transition <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[specifies a default reason as well as optional reasons](../reference/xml/change-workflow-wit.md)">specifies a default reason as well as optional reasons</a> for tracking the change in state.  </p>
-
-
-
-</td>
-<td width="33%">
-
-<p><b>Update fields during workflow changes (Azure DevOps Server)  </b></p>
-<p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
-
-<p><b>Apply workflow conditional field rules (Azure DevOps Server)  </b></p>
-<p>You can define rules that <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[change a field value based on the contents of other fields](../organizations/settings/work/rule-reference.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
-
-
-<p><b>Restrict who can make changes during workflow transitions (Azure DevOps Server)  </b></p>
-<p>Set a condition field rule that applies to a group to <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[restrict who can make changes to a workflow or a field](../organizations/settings/work/rule-reference.md)">restrict who can make changes to a workflow or a field</a>.  </p>
-
-
-<p><b>Event-generated workflow changes or field assignments (Azure DevOps Server)</b></p>
-<p><a href="/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts" data-raw-source="[Add an action](../reference/xml/automate-field-assignments-state-transition-reason.md)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal Azure DevOps Server event or external event. </p>
-
-<p><b>Visual workflow design tool (Azure DevOps Server)</b></p>
-<p>You can change the workflow or view the workflow state diagram  by using the <a href="https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1" data-raw-source="[Process Editor](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1)">Process Editor</a>, a power tool for Visual Studio. </p>
-
-</td>
-</tr>
-</tbody>
-</table>  
-
-
+**What is workflow?**
+You use workflow to track the progress of work as it moves from new, active, to complete or closed. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
+![User story workflow](../boards/work-items/guidance/media/ALM_PT_Agile_WF_Bug.png)  
+**Default workflows**
+Each process [defines the workflow](../boards/work-items/guidance/choose-process.md#main-distinctions) for each work item type to track progress from newly defined, to in progress, to completed or closed.
+**Kanban workflow**
+You can fully customize your Kanban board to map the workflow your team uses by [adding and renaming columns](../boards/boards/add-columns.md)
+![Add columns to map your workflow](media/features/alm-feature-kanban-flow.png)  
+**Customize the workflow**
+For Azure DevOps Services: [add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md). For Azure DevOps Server: [Design your custom workflow](/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts) by adding states, transitions, reasons, and optional actions.
+**States**
+States allow you to [track the status of work](/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts). For example, a bug moves from **Active**, **Resolved**, and **Closed** to correspond to when it's defined, fixed, and verified as fixed.
+**Transitions**
+Transitions specify the [valid progressions and regressions from state to state](/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts) for a work item type.
+**Reasons**
+Each transition [specifies a default reason as well as optional reasons](/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts) for tracking the change in state.
+**Update fields during workflow changes (Azure DevOps Server)**
+You can [define rules that change a field value](/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts) whenever you change the state, perform a transition, or select a reason.
+**Apply workflow conditional field rules (Azure DevOps Server)**
+You can define rules that [change a field value based on the contents of other fields](../organizations/settings/work/rule-reference.md) during workflow changes.
+**Restrict who can make changes during workflow transitions (Azure DevOps Server)**
+Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](../organizations/settings/work/rule-reference.md).
+**Event-generated workflow changes or field assignments (Azure DevOps Server)**
+[Add an action](/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts) to a custom workflow definition to automatically transition work items or specify a field value based on an internal Azure DevOps Server event or external event.
+**Visual workflow design tool (Azure DevOps Server)**
+You can change the workflow or view the workflow state diagram by using the [Process Editor](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1), a power tool for Visual Studio.
 
 <a id="alerts"></a>
 
@@ -2653,14 +2303,3 @@ We add new features frequently. We'll work to keep this list up-to-date. Other r
 - [Azure DevOps Services - Features update](/azure/devops/release-notes/2020/sprint-175-update)
 - [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)  
 
-<br/>
-Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises Azure DevOps Server](https://visualstudio.microsoft.com/downloads/)">on-premises Azure DevOps Server</a>.  
-
-<!---   
-### We welcome your feedback
-
-Send suggestions on **[UserVoice](https://developercommunity.visualstudio.com/content/idea/post.html?space=21)**, and follow us on **[Twitter](https://twitter.com/AzureDevOps) @AzureDevOps**.
-
-See also our [comprehensive feedback and support page](provide-feedback.md).
-
--->
