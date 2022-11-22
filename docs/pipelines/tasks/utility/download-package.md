@@ -31,7 +31,7 @@ Requires the Package Management extension.
 |Feed|(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our [FAQ](#faq) below for information on how to get a feed or project ID, or information on using project and feed name instead.|
 |View|(Optional) Select a view to see package versions only promoted to that view.|
 |Definition|(Required) Select the package to download. This can be the artifact ID or the package name.|
-|Version|(Required) Version of the package.|
+|Version|(Required) Version of the package. You can also specify `latest` to obtain the most recently published version.|
 |Files|(Optional) Specify files to be downloaded as multiline minimatch patterns. [More Information](../file-matching-patterns.md). The default pattern (**) will download all files within the artifact.|
 |Extract|(Optional) Specify whether to extract the package contents at the destination directory.|
 |DownloadPath|(Required) Path on the agent machine where the package will be downloaded.|
