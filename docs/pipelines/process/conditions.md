@@ -194,7 +194,7 @@ If you queue a build on the `main` branch, and you cancel the build when job `A`
 
 #### [Steps](#tab/steps/)
 
-Say you have the following YAML pipeline. Notice that `B` depends on `A`.
+Say you have the following YAML pipeline. Notice that step 2.3 has a `condition` set on it.
 
 ```yml
 steps:
