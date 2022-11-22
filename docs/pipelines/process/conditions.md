@@ -83,6 +83,9 @@ you can specify the conditions under which the task or job will run.
 
 * * *
 
+> [!NOTE]
+  When you specify your own `condition` property for a stage / job / step, you overwrite its default `condition: succeeded()` expression. This can lead to your stage / job / step running even when the build is cancelled. Make sure you take into account the state of the containing stage / job when writing your own conditions.
+
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
@@ -94,7 +97,125 @@ See the [expressions](expressions.md) topic for a full guide to the syntax.
 
 Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for [cancel timeout](phases.md#timeouts) so that these kinds of tasks have enough time to complete after the user cancels a run.
 
+## Behavior when build is canceled
+
+When a build is canceled, it doesn't mean all its stages, jobs, or steps stop running. The decision depends on the stage / job / step `conditions` you specified and at what point of the pipeline execution's you canceled the build.
+
+If your condition does not take into account the state of the parent of your stage / job / step, then if the condition evaluates to `true`, your stage / job / step will run, *even if* its parent is canceled. If its parent is skipped, then your stage / job / step will not run.
+
+Let us look at some examples. 
+
+#### [Stages](#tab/stages/)
+Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that `stage2` has a `condition` set for it.
+```yml
+stages:
+- stage: stage1
+  jobs:
+  - job:
+    steps:
+      - script: echo 1; sleep 30
+- stage: stage2
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  jobs:
+  - job: A
+    steps:
+      - script: echo 2
+```
+
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+
+Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that job `A` has a `condition` set for it.
+```yml
+stages:
+- stage: stage1
+  jobs:
+  - job:
+    steps:
+      - script: echo 1; sleep 30
+- stage: stage2
+  jobs:
+  - job: A
+    condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+    steps:
+      - script: echo 2
+```
+
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will *not* run, even though it contains a job `A` whose condition would evaluate to `true`. This is because `stage2` is marked as skipped in response to `stage1` being cancelled.
+
+Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that `script: echo 2` has a `condition` set for it.
+```yaml
+stages:
+- stage: stage1
+  jobs:
+  - job:
+    steps:
+      - script: echo 1; sleep 30
+- stage: stage2
+  jobs:
+  - job: A
+    steps:
+      - script: echo 2
+        condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+```
+
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will *not* run, even though it contains a step in job `A` whose condition would evaluate to `true`. This is because `stage2` is marked as skipped in response to `stage1` being cancelled.
+
+#### [Jobs](#tab/jobs/)
+Say you have the following YAML pipeline. Notice that job `B` depends on job `A` and that job `B` has a `condition` set for it.
+```yml
+jobs:
+- job: A
+  steps:
+  - script: sleep 30
+- job: B
+  dependsOn: A 
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  steps:
+    - script: echo step 2.1
+```
+
+If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+
+Say you have the following YAML pipeline. Notice that `B` depends on `A`.
+```yml
+jobs:
+- job: A
+  steps:
+  - script: sleep 30
+- job: B
+  dependsOn: A 
+  steps:
+    - script: echo step 2.1
+      condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+      
+```
+
+If you queue a build on the `main` branch, and you cancel the build when job `A` is executing, job `B` will not execute, even though `step 2.1` has a `condition` that evaluates to `true`. This is because job `B` is skipped.
+
+#### [Steps](#tab/steps/)
+
+Say you have the following YAML pipeline. Notice that `B` depends on `A`.
+
+```yml
+steps:
+  - script: echo step 2.1
+  - script: echo step 2.2; sleep 30
+  - script: echo step 2.3
+    condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+```
+
+If you queue a build on the `main` branch, and you cancel the build when steps 2.1 or 2.2 are executing, step 2.3 will still execute, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+
+* * *
+
 ## Examples
+
+### Run for the main branch, even if canceled, even if failing
+
+```
+eq(variables['Build.SourceBranch'], 'refs/heads/main')
+```
+
 
 ### Run for the main branch, if succeeding
 
@@ -129,17 +250,16 @@ and(failed(), eq(variables['Build.Reason'], 'PullRequest'))
 ### Run if the build is scheduled, even if failing, even if canceled
 
 ```
-and(always(), eq(variables['Build.Reason'], 'Schedule'))
+eq(variables['Build.Reason'], 'Schedule')
 ```
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
-### Run if a variable is set to true
+### Always run if a variable is set to true, even if canceled, even if failing
 
 ```
-condition: eq(variables['System.debug'], 'true')
+eq(variables['System.debug'], 'true')
 ```
-
 
 ### Run if a variable is null (empty string)
 
@@ -257,13 +377,6 @@ steps:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### I've got a conditional step that runs even when a job is canceled. Does my conditional step affect a job that I canceled in the queue?
-
-No. If you cancel a job while it's in the queue, then the entire job is canceled, including conditional steps.
-
-### I've got a conditional step that should run even when the deployment is canceled. How do I specify this?
-
-If you defined the pipelines using a YAML file, then this is supported. This scenario is not yet supported for release pipelines.
 
 ### How can I trigger a job if a previous job succeeded with issues? 
 
@@ -286,29 +399,29 @@ jobs:
   - script: echo Job B ran
 ```
 
-### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
+### I've got a conditional stage / job / step that runs even when a build is canceled. How do I manage to cancel the entire pipeline at once?
 
 You'll experience this issue if the condition that's configured in the stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue, the entire job is canceled, including all the other stages, with this function configured. For more information, see [Job status functions](expressions.md#job-status-functions).
 
 ```yaml
 stages:
 - stage: Stage1
-  displayName: Stage 1
-  dependsOn: []
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
+  displayName: stage 1
+  dependsOn: Stage1
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
   jobs:
   - job: ShowVariables
-    displayName: Show variables
+    displayName: Show variables 1
     steps:
     - task: CmdLine@2
-      displayName: Show variables
+      displayName: Show variables 1
       inputs:
         script: 'printenv'
-
+          
 - stage: Stage2
   displayName: stage 2
   dependsOn: Stage1
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables 2
@@ -317,20 +430,8 @@ stages:
       displayName: Show variables 2
       inputs:
         script: 'printenv'
-          
-- stage: Stage3
-  displayName: stage 3
-  dependsOn: Stage2
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
-  jobs:
-  - job: ShowVariables
-    displayName: Show variables 3
-    steps:
-    - task: CmdLine@2
-      displayName: Show variables 3
-      inputs:
-        script: 'printenv'
 ```
+
 
 <!-- ENDSECTION -->
 
