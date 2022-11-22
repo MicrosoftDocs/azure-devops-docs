@@ -2,7 +2,7 @@
 title: Share Packages publicly with public feeds
 description: Use Azure Artifacts public feeds to share NuGet, npm, Maven, and Python packages publicly
 ms.service: azure-devops-artifacts
-ms.date: 06/20/2022
+ms.date: 11/22/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -53,8 +53,8 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 
 - [NuGet](../../pipelines/artifacts/nuget.md#publish-a-package)
 - [Npm](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
+- [Maven](../../pipelines/artifacts/publish-maven-artifacts.md)
 - [Python](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
-- [Maven](../../pipelines/artifacts/pull-package-gradle.md)
 
 > [!IMPORTANT]
 > Universal Packages are not supported in public feeds.
