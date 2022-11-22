@@ -44,8 +44,9 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 
 ### Publish packages (CLI)
 
-- [NuGet](../get-started-nuget.md#publish-nuget-packages)
-- [Npm](../get-started-npm.md#publish-packages)
+- [NuGet - NuGet.ext](../nuget/publish.md#publish-packages)
+- [NuGet - dotnet](../nuget/dotnet-exe.md#publish-packages)
+- [Npm](../npm/publish.md)
 - [Maven](../get-started-maven.md#publish-artifacts)
 - [Python](../quickstarts/python-cli.md#publish-python-packages)
 
