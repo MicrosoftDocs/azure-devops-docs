@@ -25,7 +25,7 @@ For a description of the core services supported through the web portal, see [Es
 >- **Azure DevOps Services** - cloud service
 >- **Azure DevOps Server** - on-premises
 
-## Access and supported clients
+## Supported clients & access
 
 :::row:::
     :::column:::
@@ -36,6 +36,7 @@ For a description of the core services supported through the web portal, see [Es
    - Firefox  
    - Internet Explorer  
    - Safari (Mac)
+
 **Use integrated development environments (IDEs)**
    Track work and integrate with your code, build, and test environments from the following clients:  
    - [Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
@@ -44,6 +45,7 @@ For a description of the core services supported through the web portal, see [Es
    - [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)  
    - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
    For more information, see [Connect to a project](../organizations/projects/connect-to-projects.md).
+
 **Permissions**
    Control access to specific features by setting permissions for a user or group.
    - [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
@@ -59,12 +61,16 @@ For a description of the core services supported through the web portal, see [Es
 :::column:::
 **Manage users and groups**
 Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).
+
 **Add team members**
 To share and contribute to your project, add users to [Azure DevOps Services](../organizations/security/add-users-team-project.md) or [Azure DevOps Server](../organizations/settings/add-teams.md#add-team-members).
+
 **Azure Active Directory (Azure AD) (Azure DevOps Services)**
 Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md).
+
 **Access levels**
 All users added to your organization or project have access to Basic features by default, except for [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features. For more information, see [Change access levels](../organizations/security/change-access-levels.md).
+
 **Office integration clients**
 Use features supported by these familiar clients to manage your project and illustrate your requirements, like [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
 :::column-end:::
@@ -77,37 +83,6 @@ Use features supported by these familiar clients to manage your project and illu
 <a id="backlogs"></a>
 
 ### Backlogs
-
-:::row:::
-    :::column:::
-   **Create your backlog**
-   Plan your project by [adding a work item for each user story or requirement](../boards/backlogs/create-your-backlog.md) you plan to develop.
-   **Organize your backlog**
-    [Group items into a hierarchical list using portfolio backlogs](../boards/backlogs/organize-backlog.md) and quickly reorder and re-parent items to effectively manage your deliverables.|
-   **Forecast**
-    Use the [forecast](../boards/sprints/forecast.md) tool to estimate work to be completed in future sprints.
-   **Move work items to a different project (Azure DevOps Services)**
-    Choose ![Change project icon](../boards/media/icons/change-team-project-icon.png) **Change project**, ![Actions icon](../boards/media/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different project](../boards/backlogs/remove-delete-work-items.md).
-   **Use full screen mode**
-    Choose ![full screen icon](../boards/media/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/media/icons/exitfullscreen_icon.png) to enter or exit full screen mode.
-   **Change backlog and board settings**
-   Choose ![Settings icon](../boards/media/icons/team-settings-gear-icon.png) to configure team backlogs and boards, including [show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) and [set team backlog levels](../organizations/settings/select-backlog-navigation-levels.md).
-   :::column-end:::
-   :::column:::
-   **View portfolio backlog hierarchy**
-   Use [**Parents Show/Hide**](../boards/backlogs/organize-backlog.md) to drill down into the backlog hierarchy.
-   **Multi-team backlog ownership**
-   Easily view and track items [owned by other teams](../boards/backlogs/backlogs-overview.md#multi-team) and quickly reorder and re-parent items to effectively manage your backlog.
-   **Change work item type (Azure DevOps Services)**
-   If you added a task, but wanted a bug, you can [change the work item type](../boards/backlogs/remove-delete-work-items.md).
-   **Filter your backlog**
-   Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state. You can also list a subset of items based on keywords [keywords](../boards/backlogs/filter-backlogs-boards-plans.md) or [tags](../boards/queries/add-tags-to-work-items.md).
-   **Request feedback**
-   [Request feedback on working software](../project/feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.
-   **Feedback client**
-   Provide the free [Microsoft feedback client](../project/feedback/give-feedback.md) to capture their responses to your feedback requests.
-   :::column-end:::
-:::row-end:::
 
 |Feature  |Information |
 |---------|---------|
@@ -127,35 +102,6 @@ Use features supported by these familiar clients to manage your project and illu
 <a id="bugs-tasks-issue-tracking"></a>
 
 ### Bug, task, and issue tracking
-
-:::row:::
-   :::column:::
-   **Track issues and other types of work**
-   Different types of work items [track different types of work](../boards/backlogs/add-work-items.md), such as bugs, test cases, risks, issues, and more. 
-   **Bulk modify**
-Quickly change one or more fields in several work items using [bulk modify in the web portal](../boards/backlogs/bulk-modify-work-items.md) or [bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md).|
-|Copy or clone a work item| [Copy an existing work item](../boards/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). |
-|Follow a work item| Choose ![Follow icon](../boards/media/icons/follow-icon.png)/![Following icon](../boards/media/icons/following-icon.png) **Follow**/**Following** to quickly [start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md).|
-|Use rich text comments| Describe and comment on work using [formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md). Choose ![full screen icon](../boards/media/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/media/icons/exitfullscreen_icon.png) to expand or contract the viewing area.|
-|Clear HTML formatting|Use ![Remove format](../boards/media/icons/remove-formatting-icon.png) or **CTRL+Spacebar** to remove formatting from highlighted text.|
-|Use attachments|To support collaboration of work in progress, [add emails, documents, images, log files, or other file types](../boards/queries/share-plans.md#attach-files) to work items.|
-|Use estimates and time tracking |Track [estimated, completed, and remaining work](/azure/devops/boards/queries/query-numeric?viewFallbackFrom=vsts) for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.|
-|Use new work item experience|The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type.|
-|Manage bugs|[Capture and triage bugs](../boards/backlogs/manage-bugs.md) using different kinds of tools.|
-|Choose how you want to track bugs|Each team can [choose to manage bugs on their backlog or along with tasks](../organizations/settings/show-bugs-on-backlog.md).|
-|Share plans and information|Share information using work items and [generate summary lists with links to backlogs or queries](../boards/queries/share-plans.md).|
-|Remove or delete a work item|Remove work items from the backlog by changing their State to Removed. Or, [move them to the recycle bin or permanently delete them](../boards/backlogs/remove-delete-work-items.md).|
-|Use tags|[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries. [Bulk update work items](../boards/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](../boards/backlogs/work-item-template.md) to add or remove tags.|
-|Use work item templates|Quickly add new work items based on templates [with pre-populate values for your team's commonly used fields](../boards/backlogs/work-item-template.md).|
-|Use history & auditing|Review and query [work item change history](../boards/queries/history-and-auditing.md) to learn of past decisions and support future ones.|
-|Discussion|[Add or review comments](../boards/backlogs/add-work-items.md) added to a work item. Start by choosing ![Discussions icon](../boards/backlogs/media/icon-discussions-wi.png) **discussion**.|
-|Integrate Git development with work tracking|Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development done to support the specific work item.|
-|Verify a bug, rerun test case|Choose **Verify** from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../test/run-manual-tests.md).|
-|Link work items|Track related work, dependencies, and changes made over time by [linking work items](../boards/queries/link-work-items-support-traceability.md).|
-|Add or modify a field|[Add a custom field](../organizations/settings/work/customize-process.md)|
-|Restrict access|[Limit who can create or modify work items or a work item field](/azure/devops/organizations/security/restrict-access?viewFallbackFrom=vsts) based on area path, work item type, or based on your specific conditions.|
-|Use field index|Find descriptions and usage information for each field from the [work item field index](../boards/work-items/guidance/work-item-field.md).
-
 
 |Feature  |Information |
 |---------|---------|
