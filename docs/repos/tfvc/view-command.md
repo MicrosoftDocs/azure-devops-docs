@@ -228,6 +228,6 @@ c:\projects>tf view *.cs
 ## Related articles
 
 - [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
-- [Checkout and Edit Commands](checkout-or-edit-command.md)
-- [Get Command](get-command.md)
-- [Difference Command](difference-command.md)
+- [Checkout and Edit commands](checkout-or-edit-command.md)
+- [Get command](get-command.md)
+- [Difference command](difference-command.md)
