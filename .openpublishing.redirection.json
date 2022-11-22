@@ -169,6 +169,11 @@
       "source_path": "docs/organizations/public/make-project-public.md",
       "redirect_url": "/azure/devops/organizations/projects/make-project-public",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/alm-devops-features.md",
+      "redirect_url": "/products/devops/overview",
+      "redirect_document_id": false
     }
   ]
 }
