@@ -23,7 +23,7 @@ One advantage of building your app under version control is that you can look ba
 - [Get the history of an item](get-history-item.md).
   Get detailed information about what changes have been made to your files.
 
-- [View file changes by using annotate](view-file-changes-using-annotate.md).
+- [View file changes using annotate](view-file-changes-using-annotate.md).
   Annotate a file to learn who made changes and what changes they made in all earlier versions of the file.
 
 - [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
