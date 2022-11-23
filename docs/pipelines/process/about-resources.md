@@ -51,7 +51,7 @@ To call a second pipeline from your pipeline with the `resources` syntax, refere
 resources:
   pipelines:
   - pipeline: SmartHotel-resource # identifier for the resource (used in pipeline resource variables)
- source: SmartHotel-CI # name of the pipeline that produces an artifact
+    source: SmartHotel-CI # name of the pipeline that produces an artifact
 ```
 
 #### [Classic](#tab/classic)
