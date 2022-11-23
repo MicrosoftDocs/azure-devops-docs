@@ -58,7 +58,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="3":::
    Identifies the files and folders that are specified for property retrieval.
    
-   For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument.

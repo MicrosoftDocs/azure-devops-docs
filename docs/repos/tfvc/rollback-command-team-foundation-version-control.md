@@ -165,7 +165,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    **/login**
    :::column-end:::
    :::column span="3":::
-   For information about this option, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   For information about this option, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
    :::column-end:::
 :::row-end:::
 :::row:::

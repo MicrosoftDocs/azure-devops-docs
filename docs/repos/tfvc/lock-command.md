@@ -47,7 +47,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    *itemspec*
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
