@@ -1557,7 +1557,7 @@ Event: An approval completed for a run stage.
 
 ### Run job state changed
 
-Event: A new job is running, or it has completed, or it has not started, or is waiting for an agent.
+Event: A new job is running, or it has completed, or is waiting for an agent.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.job-state-changed-event`
