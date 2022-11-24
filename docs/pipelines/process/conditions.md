@@ -176,7 +176,7 @@ jobs:
 
 If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`. 
 
-If you want job `B` to only run when job `A` succeeds *and* you queued the build on the `main` branch, then your `conditions` should read `and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))`.
+If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))`.
 
 Say you have the following YAML pipeline. Notice that `B` depends on `A`.
 ```yml
