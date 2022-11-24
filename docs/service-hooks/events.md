@@ -1570,7 +1570,6 @@ Event: A new job is running, or it has completed, or it has not started, or is w
  * `jobNameId`: Filter events to a specific job name
  * `jobStateId`: Filter events based on the new state of the job
    * Valid values: 
-      * `NotStarted` 
       * `Waiting` 
       * `Running`
       * `Completed`
