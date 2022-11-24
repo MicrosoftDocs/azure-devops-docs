@@ -1268,7 +1268,29 @@ Event: Overall statuses of a pipeline run changed. A new run has started, or a r
       "revision": 1,
       "name": "TEST-CI",
       "folder": "\\"
-    }
+    },
+    "repositories": [
+      {
+        "type": "Git",
+        "change":
+        {
+          "author":
+          {
+            "name": "Fabrikam John",
+            "email": "john@fabrikamfiber.com",
+            "date": "2022-11-11T15:09:21Z"
+          },
+          "committer":
+          {
+            "name": "Fabrikam John",
+            "email": "john@fabrikamfiber.com",
+            "date": "2022-11-11T15:09:21Z"
+          },
+          "message": "Added Viva support"
+        },
+        "url": "https://fabrikamfiber@dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_git/fabrikamfiber"
+      }
+    ]
   },
   "resourceVersion": "5.1-preview.1",
   "resourceContainers": {
@@ -1361,7 +1383,29 @@ Event: A new stage has started, or a stage has transitioned to canceling, cancel
       "revision": 2,
       "name": "TEST-CI",
       "folder": "\\"
-    }
+    },
+    "repositories": [
+      {
+        "type": "Git",
+        "change":
+        {
+          "author":
+          {
+            "name": "Fabrikam John",
+            "email": "john@fabrikamfiber.com",
+            "date": "2022-11-11T15:09:21Z"
+          },
+          "committer":
+          {
+            "name": "Fabrikam John",
+            "email": "john@fabrikamfiber.com",
+            "date": "2022-11-11T15:09:21Z"
+          },
+          "message": "Added Viva support"
+        },
+        "url": "https://fabrikamfiber@dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_git/fabrikamfiber"
+      }
+    ]
   },
   "resourceVersion": "5.1-preview.1",
   "resourceContainers": {
