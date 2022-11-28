@@ -213,7 +213,7 @@ If you queue a build on the `main` branch, and you cancel the build when steps 2
 
 * * *
 
-To prevent stages, jobs, or steps with `conditions` from running when a build is canceled, make sure you condier their parent's state when writing the `conditions`. For more information, see [Job status functions](expressions.md#job-status-functions).
+To prevent stages, jobs, or steps with `conditions` from running when a build is canceled, make sure you consider their parent's state when writing the `conditions`. For more information, see [Job status functions](expressions.md#job-status-functions).
 
 ## Examples
 
