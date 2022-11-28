@@ -99,14 +99,14 @@ Do any of your conditions make it possible for the task to run even after the bu
 
 ## Pipeline behavior when build is canceled
 
-When a build is canceled, it doesn't mean all its stages, jobs, or steps stop running. The decision depends on the stage / job / step `conditions` you specified and at what point of the pipeline execution's you canceled the build.
+When a build is canceled, it doesn't mean all its stages, jobs, or steps stop running. The decision depends on the stage / job / step `conditions` you specified and at what point of the pipeline's execution you canceled the build.
 
 If your condition doesn't take into account the state of the parent of your stage / job / step, then if the condition evaluates to `true`, your stage / job / step will run, *even if* its parent is canceled. If its parent is skipped, then your stage / job / step won't run.
 
 Let us look at some examples. 
 
 #### [Stages](#tab/stages/)
-Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that `stage2` has a `condition` set for it.
+Say you have the following YAML pipeline. Notice that, by default, `stage2` depends on `stage1` and that `stage2` has a `condition` set for it.
 ```yml
 stages:
 - stage: stage1
@@ -140,7 +140,7 @@ stages:
       - script: echo 2
 ```
 
-If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a job `A` whose condition evaluates to `true`. The reason is because `stage2` is marked as skipped in response to `stage1` being canceled.
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a job `A` whose condition evaluates to `true`. The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
 Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that `script: echo 2` has a `condition` set for it.
 ```yaml
@@ -158,7 +158,7 @@ stages:
         condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
 ```
 
-If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a step in job `B` whose condition evaluates to `true`. The reason is because `stage2` is marked as skipped in response to `stage1` being canceled.
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a step in job `B` whose condition evaluates to `true`. The reason is because `stage2` is skipped in response to `stage1` being canceled.
 
 #### [Jobs](#tab/jobs/)
 Say you have the following YAML pipeline. Notice that job `B` depends on job `A` and that job `B` has a `condition` set for it.
@@ -174,7 +174,9 @@ jobs:
     - script: echo step 2.1
 ```
 
-If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`. 
+
+If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))`.
 
 Say you have the following YAML pipeline. Notice that `B` depends on `A`.
 ```yml
@@ -190,7 +192,7 @@ jobs:
       
 ```
 
-If you queue a build on the `main` branch, and you cancel the build when job `A` is executing, job `B` *won't* execute, even though `step 2.1` has a `condition` that evaluates to `true`. The reason is because job `B` is skipped.
+If you queue a build on the `main` branch, and you cancel the build when job `A` is executing, job `B` *won't* execute, even though `step 2.1` has a `condition` that evaluates to `true`. The reason is because job `B` has the default `condition: succeeded()`, which evaluates to `false` when job `A` is canceled. Therefore, job `B` is skipped, and none of its steps run.
 
 #### [Steps](#tab/steps/)
 
