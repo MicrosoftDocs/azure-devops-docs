@@ -47,7 +47,7 @@ The following services are available as the target of service hooks. For more in
 |[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build |
 |[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All        | Post event to FLO |
 |[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed        | Deploy web app   |
-|[Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)    | All        | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic  |
+|[Azure Service Bus](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)    | All        | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic  |
 |[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue |
 |[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build |
 |[Campfire](https://go.microsoft.com/fwlink/?LinkID=393613)   |  All | Post a message to a room |

@@ -619,7 +619,7 @@ Use the following parameters when you define and secure a connection to a NuGet 
 | Username  | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password  | Required when connection type is **Basic authentication**. The password for the username. |
 
-To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](../tasks/package/nuget-authenticate.md).
+To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1).
 
 ### Python package download service connection
 
@@ -675,7 +675,7 @@ Use the following parameters when you define and secure a connection to a remote
 | Password or passphrase |  The password or passphrase for the specified username if using a keypair as credentials. |
 |Private key |  The entire contents of the private key file if using this type of authentication.|
 
-For more information, see [SSH task](../tasks/deploy/ssh.md) and [Copy files over SSH](../tasks/deploy/copy-files-over-ssh.md).
+For more information, see [SSH task](/azure/devops/pipelines/tasks/reference/ssh-v0) and [Copy files over SSH](/azure/devops/pipelines/tasks/reference/copy-files-over-ssh-v0).
 
 ### Subversion service connection
 

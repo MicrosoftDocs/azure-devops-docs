@@ -120,7 +120,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query Work Items task, ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../tasks/utility/work-item-query.md).  
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
    :::column-end:::
    :::column span="1":::
       Azure DevOps Server 2020 and later versions 

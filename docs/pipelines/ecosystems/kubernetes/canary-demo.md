@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 A *canary* deployment strategy means deploying new versions of an application next to stable, production versions. You can then see how the canary version compares to the baseline, before promoting or rejecting the deployment.
 
-This step-by-step guide covers how to use the [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy. Specifically, you'll learn how to set up canary deployments for Kubernetes, and the associated workflow to evaluate code. You then use that code to compare baseline and canary app deployments, so you can decide whether to promote or reject the canary deployment.
+This step-by-step guide covers how to use the [Kubernetes manifest task's](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) canary strategy. Specifically, you'll learn how to set up canary deployments for Kubernetes, and the associated workflow to evaluate code. You then use that code to compare baseline and canary app deployments, so you can decide whether to promote or reject the canary deployment.
 
 ## Prerequisites
 
