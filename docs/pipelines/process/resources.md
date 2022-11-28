@@ -758,34 +758,7 @@ Resource triggers can fail to execute for the following reasons.
 * If trigger conditions aren't matched, the trigger won't execute. A warning is surfaced so you can understand why the conditions weren't matched.  
 
    ![Trigger issues supportability](media/trigger-supportability.png)
-   
-## Validate and troubleshoot webhooks
-
-1. Create a service connection.
-
-1. Reference your service connection and name your webhook in the `webhooks` section. 
-
-    ```yml
-    resources:
-      webhooks:
-        - webhook: MyWebhookTriggerAlias
-          connection: MyServiceConnection
-    ```
-
-1. Run your pipeline. When you run your pipeline, the webhook will be created in Azure as a distributed task for your organization.
-
-
-1. Perform a `POST` API call with valid JSON in the body to 
-`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. Edit your pipeline. 
-
-    1. Edit your pipeline. 
-    1. Select the vertical menu. 
-    1. Select **Triggers** > **YAML** > **Get Sources**. 
-    1. Go to **Default branch for manual and scheduled builds** to update your feature branch. 
-    1. Select **Save & queue**.
-    1. After this pipeline runs successfully, perform a `POST` API call with valid JSON in the body to 
-`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
-
+  
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -818,6 +791,34 @@ You'll need to set up a [classic release pipeline](../release/index.md) because 
  *  The Bash task runs `docker pull <hub-user>/<repo-name>[:<tag>]`. Replace `hub-user`, `repo-name`, and `tag` with your values. 
 
     :::image type="content" source="media/docker-hub-tasks-classic-pipeline.png" alt-text="Add Docker login and Bash tasks. ":::
+
+## How can I validate and troubleshoot webhooks?
+
+1. Create a service connection.
+
+1. Reference your service connection and name your webhook in the `webhooks` section. 
+
+    ```yml
+    resources:
+      webhooks:
+        - webhook: MyWebhookTriggerAlias
+          connection: MyServiceConnection
+    ```
+
+1. Run your pipeline. When you run your pipeline, the webhook will be created in Azure as a distributed task for your organization.
+
+
+1. Perform a `POST` API call with valid JSON in the body to 
+`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. Edit your pipeline. 
+
+    1. Edit your pipeline. 
+    1. Select :::image type="content" source="../../media/icons/more-actions.png" alt-text="Select more actions menu":::. 
+    1. Select **Triggers** > **YAML** > **Get Sources**. 
+    1. Go to **Default branch for manual and scheduled builds** to update your feature branch. 
+    1. Select **Save & queue**.
+    1. After this pipeline runs successfully, perform a `POST` API call with valid JSON in the body to 
+`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
+
 ## Related articles
 
 * [Define variables](variables.md)
