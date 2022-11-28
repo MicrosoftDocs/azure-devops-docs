@@ -57,7 +57,7 @@ Verify you've granted organization access.
 1. Go to the Azure Boards app in the GitHub Marketplace, `https://github.com/marketplace/azure-boards`. 
 
 	> [!div class="nextstepaction"]
-	> ![Azure Boards app](https://github.com/marketplace/azure-boards) 
+	> [Azure Boards app](https://github.com/marketplace/azure-boards) 
 
 1. Choose **Set up a plan**.
 
