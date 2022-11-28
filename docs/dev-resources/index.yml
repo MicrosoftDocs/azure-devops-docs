@@ -24,7 +24,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Get Started with Azure DevOps CLI
-            url: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            url: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json
           - text: Sign in with a Personal Access Token (PAT)
             url: ../cli/log-in-via-pat.md
           - text: Configure policies
@@ -48,7 +48,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text:  Cross-platform CLI for Azure DevOps (tfx-cli)
-            url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json
   - title: Azure DevOps REST API Reference
     linkLists:
       - linkListType: get-started
