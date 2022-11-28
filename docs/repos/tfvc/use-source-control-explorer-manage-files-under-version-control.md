@@ -19,9 +19,9 @@ ms.subservice: azure-devops-repos-tfvc
 Use Source Control Explorer to browse file versions and work with your codebase under Team Foundation Version Control (TFVC). 
 
 > [!NOTE]
-> If you're using Git for version control, manage your Visual Studio project files by using Git Changes and Source Control Explorer. For more details, see [Get started with Git in Azure Repos](../git/gitquickstart.md). You can also learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
+> If you're using Git for version control, manage your Visual Studio project files by using Git Changes. For more details, see [Get started with Git in Azure Repos](../git/gitquickstart.md). You can also learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
 
-If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer). Source Code Explorer is for managing changes that you make in your project when you use TFVC.
+If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer). Source Control Explorer is for managing changes that you make in your project when you use TFVC.
 
 ## Open Source Control Explorer
 
@@ -38,6 +38,8 @@ You can also use the command prompt to manage your files in TFVC. For more infor
 
 ## FAQ
 
+The following sections provide answers to commonly asked questions.
+
 ### Why do I see the Not mapped link?
 
 If the **Not mapped** link appears next to **Local Path** in a folder that contains files that you need to work with, you can select the link to map the folder. For more information, see [Create and work with workspaces](create-work-workspaces.md).
@@ -52,8 +54,8 @@ See [Create and work with workspaces](create-work-workspaces.md).
 
 - To display the Folders pane, on the Source Control Explorer toolbar, select the **Folders** icon.
 - To hide the folders pane, use one of these options:
-  - In the upper-right corner of the Folders title bar, select **Close**.
-  - In the Source Control Explorer toolbar, select the **Folders** icon.
+  - On the upper-right corner of the Folders title bar, select **Close**.
+  - On the Source Control Explorer toolbar, select the **Folders** icon.
 
 ### I don't see the latest data in the window. How can I fix this?
 
@@ -63,7 +65,7 @@ If Source Control Explorer doesn't display the latest data that's on the server,
 
 The **Pending Change** column displays your [pending changes](develop-code-manage-pending-changes.md) to an item. Source Control Explorer also displays the pending changes of other team members who are using [server workspaces](decide-between-using-local-server-workspace.md). It lists their names in the **User** column. If an ellipsis (**...**) appears, you can view a list of the users and their pending changes:
 
-1. In the **Name** column, right-click item, and then select **Properties**.
+1. In the **Name** column, right-click the item, and then select **Properties**.
 
 2. In the **Properties** dialog box, select the **Status** tab. A list of users appears in the **User** column. Their associated pending changes appear in the **Change Type** column.
 
