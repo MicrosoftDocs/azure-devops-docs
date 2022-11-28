@@ -62,7 +62,7 @@ node_js:
 
 [Microsoft-hosted agents](../agents/hosted.md) contain the SDKs for many languages out-of-the-box
 and most languages need no configuration.  But where a language has multiple
-versions installed, you may need to execute a [language selection task](../tasks/tool/node-js.md)
+versions installed, you may need to execute a [language selection task](/azure/devops/pipelines/tasks/reference/node-tool-v0)
 to set up the environment.
 
 For example, to select Node.JS 8.x:

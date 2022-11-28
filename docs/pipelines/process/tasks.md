@@ -337,7 +337,7 @@ env:
   ...
 ```
 
-The following example runs the `script` step which is a shortcut for the [Command line task](../tasks/utility/command-line.md), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
+The following example runs the `script` step which is a shortcut for the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
 
 ```yml
 # Using the script shortcut syntax
@@ -401,7 +401,7 @@ steps:
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
-The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads the Node.js version if it is not already on the agent. The [Command Line](../tasks/utility/command-line.md) script logs the location of the Node.js version on disk.
+The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it is not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
 
 ::: moniker-end
 
@@ -461,7 +461,7 @@ On the [Variables tab](../build/variables.md) define this variable:
 
 #### Save & queue
 
-Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
+Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
 * * *
 
