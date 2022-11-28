@@ -28,7 +28,7 @@ This slows down the frequency of integrations, and ultimately defeats the purpos
 In order to have a CI pipeline that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline.
 However, this only serves to further defeat continuous integration.
 
-Instead, [enable Test Impact Analysis (TIA)](#enabletia) when using the [Visual Studio Test](../tasks/test/vstest.md)
+Instead, [enable Test Impact Analysis (TIA)](#enabletia) when using the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2)
 task in a build pipeline. TIA performs incremental validation by automatic test selection.
 It will automatically select only the subset of tests required to validate the code being committed.
 For a given code commit entering the CI/CD pipeline, TIA will select and run only the relevant tests required to validate that commit.
@@ -58,7 +58,7 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 At present, TIA is supported for:
 
 * TFS 2017 Update 1 onwards, and Azure Pipelines
-* Version 2.* of the [Visual Studio Test](../tasks/test/vstest.md) task in the build pipeline
+* Version 2.* of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task in the build pipeline
 * Build vNext, with multiple VSTest Tasks
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
@@ -83,7 +83,7 @@ At present, TIA is **not** supported for:
 
 ## Enable Test Impact Analysis
 
-TIA is supported through Version 2.* of the [Visual Studio Test](../tasks/test/vstest.md) task.
+TIA is supported through Version 2.* of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task.
 If your app is a single tier application, all you need to do is to check **Run only impacted tests** in the task UI.
 The Test Impact data collector is automatically configured. No additional steps are required.
 

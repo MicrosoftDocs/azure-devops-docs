@@ -152,5 +152,5 @@ To configure the **VMware Resource Deployment** task to provision a new virtual 
 
 Once you have the virtual machines set up, deploying a build to those virtual machines is no different than deploying to any other machine. For instance, you can:
 
-* Use the [PowerShell on Target Machines](../tasks/deploy/powershell-on-target-machines.md) task to run remote scripts on those machines using Windows Remote Management.
+* Use the [PowerShell on Target Machines](/azure/devops/pipelines/tasks/reference/powershell-on-target-machines-v3) task to run remote scripts on those machines using Windows Remote Management.
 * Use [Deployment groups](../release/deployment-groups/index.md) to run scripts and other tasks on those machines using build and release agent.
