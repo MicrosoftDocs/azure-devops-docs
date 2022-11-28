@@ -133,7 +133,7 @@ Use the following commands to isolate risk by using branches:
 
 For more information, see [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
-### Administer Version Control
+### Administer version control
 
 Use the following commands to manage your version control system:
 
@@ -142,7 +142,7 @@ Use the following commands to manage your version control system:
 
 For more information, see [Configure check-out settings](configure-check-out-settings.md).
 
-### Get Help on Version Control Commands
+### Get help on version control commands
 
 Use the following commands to get detailed information about version control commands:
 
