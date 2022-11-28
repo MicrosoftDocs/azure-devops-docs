@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 01/21/2022
+ms.date: 11/28/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -73,7 +73,7 @@ For example, if you have a job that sets a variable using a runtime expression u
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML isn't yet supported in TFS.
+YAML isn't supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -99,14 +99,16 @@ Do any of your conditions make it possible for the task to run even after the bu
 
 ## Pipeline behavior when build is canceled
 
-When a build is canceled, it doesn't mean all its stages, jobs, or steps stop running. The decision depends on the stage / job / step `conditions` you specified and at what point of the pipeline's execution you canceled the build.
+When a build is canceled, it doesn't mean all its stages, jobs, or steps stop running. The decision depends on the stage, job, or step `conditions` you specified and at what point of the pipeline's execution you canceled the build.
 
-If your condition doesn't take into account the state of the parent of your stage / job / step, then if the condition evaluates to `true`, your stage / job / step will run, *even if* its parent is canceled. If its parent is skipped, then your stage / job / step won't run.
+If your condition doesn't take into account the state of the parent of your stage / job / step, then if the condition evaluates to `true`, your stage, job, or step will run, *even if* its parent is canceled. If its parent is skipped, then your stage, job, or step won't run.
 
-Let us look at some examples. 
+Let's look at some examples. 
 
 #### [Stages](#tab/stages/)
-Say you have the following YAML pipeline. Notice that, by default, `stage2` depends on `stage1` and that `stage2` has a `condition` set for it.
+
+In this pipeline, by default, `stage2` depends on `stage1` and `stage2` has a `condition` set. `stage2` only runs when the source branch is `main`. 
+
 ```yml
 stages:
 - stage: stage1
@@ -124,7 +126,8 @@ stages:
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
-Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that job `B` has a `condition` set for it.
+In this pipeline, `stage1` depends on `stage2`. Job `B` has a `condition` set for it.
+
 ```yml
 stages:
 - stage: stage1
@@ -178,7 +181,7 @@ If you queue a build on the `main` branch, and you cancel it while job `A` is ru
 
 If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))`.
 
-Say you have the following YAML pipeline. Notice that `B` depends on `A`.
+In the following pipeline, `B` depends on `A`.
 ```yml
 jobs:
 - job: A
@@ -196,7 +199,7 @@ If you queue a build on the `main` branch, and you cancel the build when job `A`
 
 #### [Steps](#tab/steps/)
 
-Say you have the following YAML pipeline. Notice that step 2.3 has a `condition` set on it.
+You can also have conditions on steps. In this pipeline, notice that step 2.3 has a `condition` set on it.
 
 ```yml
 steps:
@@ -210,7 +213,7 @@ If you queue a build on the `main` branch, and you cancel the build when steps 2
 
 * * *
 
-To prevent stages / jobs / steps for which you specified `conditions` from running when a build is canceled, make sure you took into account their parent's state when writing the `conditions`. For more information, see [Job status functions](expressions.md#job-status-functions).
+To prevent stages, jobs, or steps with `conditions` from running when a build is canceled, make sure you consider their parent's state when writing the `conditions`. For more information, see [Job status functions](expressions.md#job-status-functions).
 
 ## Examples
 
