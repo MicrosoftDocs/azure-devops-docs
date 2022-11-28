@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/09/2022
+ms.date: 11/21/2022
 ---
 
 # Integrate with service hooks
@@ -52,7 +52,6 @@ The following services are available as the target of service hooks. For more in
 |[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build |
 |[Campfire](https://go.microsoft.com/fwlink/?LinkID=393613)   |  All | Post a message to a room |
 |[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog |
-|[Flowdock](https://github.com/flowdock/api-docs/blob/master/docs/integration-getting-started.md)   | All   |  Post a message to a team inbox or chat |
 |[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database |
 |HipChat    | (No longer supported)        | |
 |[HockeyApp](https://aka.ms/vsts-hockeyapp-integration)   | Work item updated| Send notification |

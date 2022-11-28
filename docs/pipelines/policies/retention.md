@@ -472,7 +472,7 @@ No. Neither the pipeline's retention policy nor the maximum limits set by the ad
 
 If you use classic releases to deploy to production, then customize the retention policy on the release pipeline. Specify the number of days that releases deployed to production must be retained. In addition, indicate that runs associated with that release are to be retained. This will override the run retention policy.
 
-If you use multi-stage YAML pipelines to production, the only retention policy you can configure is in the project settings. You cannot customize retention based on the environment to which the build is deployed.
+If you use multi-stage YAML pipelines to deploy to production, the only retention policy you can configure is in the project settings. You cannot customize retention based on the environment to which the build is deployed.
 
 ### I did not mark runs to be retained indefinitely. However, I see a large number of runs being retained. How can I prevent this?
 

@@ -16,6 +16,6 @@
   href: manage-boards.md
 - name: System fields
   displayName: modify fields, remaining work, state, iteration ID, node, remote link count, effort
-  href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json
 - name: Keyboard shortcuts
   href: keyboard-shortcuts.md
