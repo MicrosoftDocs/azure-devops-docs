@@ -792,7 +792,7 @@ You'll need to set up a [classic release pipeline](../release/index.md) because 
 
     :::image type="content" source="media/docker-hub-tasks-classic-pipeline.png" alt-text="Add Docker login and Bash tasks. ":::
 
-## How can I validate and troubleshoot webhooks?
+### How can I validate and troubleshoot webhooks?
 
 1. Create a service connection.
 
