@@ -758,6 +758,38 @@ Resource triggers can fail to execute for the following reasons.
 * If trigger conditions aren't matched, the trigger won't execute. A warning is surfaced so you can understand why the conditions weren't matched.  
 
    ![Trigger issues supportability](media/trigger-supportability.png)
+   
+## Validating and troubleshooting webhooks
+
+After creating your `service connection` and naming your webhook, ensure that you have a pipeline with the webhook and service connection referenced within resources -> webhooks
+```yml
+resources:
+  webhooks:
+    - webhook: MyWebhookTriggerAlias
+      connection: MyServiceConnection
+```
+and run the pipeline.  Running the pipeline at least once ensures the webhook is created at Azure as a distributed task within your `{organization}`.
+
+Perform a `POST` API call with any valid JSON in the body to 
+`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`.
+
+If you receive a 200 status code response, your webhook is ready for consumption by your pipeline.
+
+If you receive a 500 status code response, with the error `Cannot find webhook for the given webHookId <webhook-name-here>. Try enabling CD trigger for this artifact.`
+and your pipeline yaml is in a branch of your code that is *NOT* the default e.g. `feature/my-feature-branch`?
+1. Navigate to your pipeline
+1. Click 'Edit'
+1. Click the vertical ellipses beside 'Run'
+1. Click 'Triggers'
+1. Click the 'YAML' tab
+1. Click 'Get Sources'
+1. Select your feature branch under `Default branch for manual and scheduled builds`
+1. Click 'Save & queue'
+
+After this pipeline runs successfully to completion, perform a `POST` API call with any valid JSON in the body to 
+`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`.
+
+You should now receive a 200 status code response.
 
 ## Next steps
 
