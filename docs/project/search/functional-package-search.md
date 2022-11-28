@@ -39,6 +39,24 @@ Using the **Type** filter, you can select the type of package you want to search
 
 You can use the Azure DevOps REST API to search for packages in a specific organization. See [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
 
+#### Example
+
+```Command
+POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearchresults?api-version=7.0
+```
+
+```Request body
+{
+  "$orderBy": null,
+  "$top": 100,
+  "$skip": 0,
+  "searchText": "react-calendar",
+  "filters": {
+    "ProtocolType": "Npm"
+  }
+}
+```
+
 ## Search in upstream sources
 
 Using upstream sources, you can consume packages from public registries and Azure Artifacts feeds. See [Search upstreams](../../artifacts/how-to/search-upstream.md) to lean how to search for packages in upstream sources and save them to your feed.
