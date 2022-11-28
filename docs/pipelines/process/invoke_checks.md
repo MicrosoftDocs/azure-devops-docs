@@ -11,8 +11,8 @@ monikerRange: ">= azure-devops-2020"
 # Invoke Azure Function / REST API Checks
 
 The Invoke Azure Function / REST API Checks allow you to write code to decide if a specific pipeline stage is allowed to access a protected resource or not. These checks can run in two modes:
-- Asynchronous (Recommended): push mode, in which Azure DevOps awaits for the Azure Function / REST API implementation to call back into Azure DevOps with a stage access decision
-- Synchronous(: poll mode, in which Azure DevOps periodically calls the Azure Function / REST API to get a stage access decision
+- **Asynchronous (Recommended)**: push mode, in which Azure DevOps awaits for the Azure Function / REST API implementation to call back into Azure DevOps with a stage access decision
+- **Synchronous**: poll mode, in which Azure DevOps periodically calls the Azure Function / REST API to get a stage access decision
 
 In the rest of this guide, we'll refer to Azure Function / REST API Checks as simply checks.
 
@@ -39,23 +39,22 @@ The recommended implementation of the async mode for a single Azure Function che
 The steps in the diagram are:
 1. Check Delivery. Azure Pipelines prepares to deploy a pipeline stage and requires access to a protected resource. It invokes the corresponding Azure Function check and expects receipt confirmation, by the call ending with an HTTP 200 status code. Stage deployment is paused pending a decision.
 2. Check Evaluation. This step happens inside your Azure Function implementation, which runs on your own Azure resources and the code of which is completely under your control. We recommend your Azure Function follow these steps:
-   - 2.1 Start an _async_ task and return HTTP status code 200.
-   - 2.2 Enter an inner loop, in which it can do multiple condition evaluations.
-   - 2.3 Evaluate the access conditions.
-   - 2.4 If it can't reach a final decision, reschedule a reevaluation of the conditions for a later point, then go to step 2.3.
-1. Decision Communication. The Azure function calls back into Azure Pipelines with the access decision. Stage deployment can proceed.
+   - 2.1 Start an _async_ task and return HTTP status code `200`
+   - 2.2 Enter an inner loop, in which it can do multiple condition evaluations
+   - 2.3 Evaluate the access conditions
+   - 2.4 If it can't reach a final decision, reschedule a reevaluation of the conditions for a later point, then go to step 2.3
+1. Decision Communication. The Azure function calls back into Azure Pipelines with the access decision. Stage deployment can proceed
 
 ### Recommended Configuration for Asynchronous Checks
 
 In the Azure Function / REST API check configuration panel, make sure you:
-- Selected _Callback_ for the _Completion event_.
-- Set _Time between evaluations (minutes)_ to _0_.
+- Selected _Callback_ for the _Completion event_
+- Set _Time between evaluations (minutes)_ to _0_
+
+Setting the _Time between evaluations_ to a non-zero value means that the check decision (pass / fail) is not final, and the check will be re-evaluated until all other Approvals & Checks reach a final state. 
 
 > [!NOTE]
-> Setting the _Time between evaluations_ to a non-zero value means that the check decision (pass / fail) is not final, and the check will be re-evaluated until all other Approvals & Checks reach a final state. 
-
-> [!NOTE]
-> In the near future, the _Time between evaluations_ will be removed, and a value of 0 will be required.
+> In the near future, the _Time between evaluations_ will be removed, and a value of 0 will be used instead.
 
 ### Pass Pipeline Run Information to Checks
 
@@ -92,10 +91,10 @@ Your check must use the following REST API endpoint to communicate a decision ba
 You can provide status updates to Azure Pipelines users from within your checks using Azure Pipelines REST APIs. This functionality is useful, for example, if you wish to let users know the check is waiting on an external action, such as someone needs to approve a ServiceNow ticket.
 
 The steps to send status updates are:
-1. Create a task feed, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/timelines/{timelineId}/records/{jobId}/feed?api-version=4.1}` with body `{ "value": "array of log data", "count": number of logs}`.
-2. Create a task log, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/logs?api-version=4.1"` with body `{"path":"logs\\{taskInstanceId}"}`.
-3. Append to task log, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/logs/{taskLogId}?api-version=4.1` with the body containing log messages stream data.
-4. Update timeline record, by making an authenticated HTTP PATCH request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/timelines/{timelineId}/records?api-version=4.1` with body `{"value":[{"id": taskInstanceId, "log": taskLogObject}],"count":1}`.
+1. Create a task feed, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/timelines/{timelineId}/records/{jobId}/feed?api-version=4.1}` with body `{ "value": "array of log data", "count": number of logs}`
+2. Create a task log, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/logs?api-version=4.1"` with body `{"path":"logs\\{taskInstanceId}"}`
+3. Append to task log, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/logs/{taskLogId}?api-version=4.1` with the body containing log messages stream data
+4. Update timeline record, by making an authenticated HTTP PATCH request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/timelines/{timelineId}/records?api-version=4.1` with body `{"value":[{"id": taskInstanceId, "log": taskLogObject}],"count":1}`
 
 ### Examples
 
@@ -175,26 +174,26 @@ The implementation of the sync mode for a single Azure Function check is depicte
 :::image type="content" source="media/checks/sync_checks.png" alt-text="The implementation of the sync mode for a single Azure Function check.":::
 
 The steps are:
-1. Azure Pipelines prepares to deploy a pipeline stage and requires access to a protected resource. 
+1. Azure Pipelines prepares to deploy a pipeline stage and requires access to a protected resource
 1. It enters an inner loop in which:
-  - 2.1. Azure Pipelines invokes the corresponding Azure Function check and waits for a decision.
-  - 2.2. Your Azure Function evaluates the conditions necessary to permit access and returns a decision.
-  - 2.3. If the Azure Function response body doesn't satisfy the _Success criteria_ you defined and _Time between evaluations_ is non-zero, Azure Pipelines reschedules another check evaluation after _Time between evaluations_.
-
-Your synchronous check must return within 3 seconds.
+  - 2.1. Azure Pipelines invokes the corresponding Azure Function check and waits for a decision
+  - 2.2. Your Azure Function evaluates the conditions necessary to permit access and returns a decision
+  - 2.3. If the Azure Function response body doesn't satisfy the _Success criteria_ you defined and _Time between evaluations_ is non-zero, Azure Pipelines reschedules another check evaluation after _Time between evaluations_
 
 ### Configure Synchronous Checks
 
 To use the synchronous mode for the Azure Function / REST API, in the check configuration panel, make sure you:
-- Selected _ApiResponse_ for the _Completion event_ under _Advanced_.
-- Specified the _Success criteria_ that define when to pass the check based on the check's response body.
-- Set _Time between evaluations_ to _0_ under _Control options_.
-- Set _Timeout_ to how long you wish to wait for a check to succeed. If there's no positive decision and _Timeout_ is reached, the corresponding pipeline stage will be skipped.
+- Selected _ApiResponse_ for the _Completion event_ under _Advanced_
+- Specified the _Success criteria_ that define when to pass the check based on the check's response body
+- Set _Time between evaluations_ to _0_ under _Control options_
+- Set _Timeout_ to how long you wish to wait for a check to succeed. If there's no positive decision and _Timeout_ is reached, the corresponding pipeline stage will be skipped
 
-The _Time between evaluations_ setting defines how long the check's decision is valid. A value of 0 means the decision is valid. A non-zero value means the check will be retried after the configured interval, when its decision is negative. When [multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) are running, the check will be retried regardless of decision.
+The _Time between evaluations_ setting defines how long the check's decision is valid. A value of 0 means the decision is final. A non-zero value means the check will be retried after the configured interval, when its decision is negative. When [multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) are running, the check will be retried regardless of decision.
+
+The maximum number of evaluations is defined by the ratio between the _Timeout_ and _Time between evaluations_ values. We recommend you ensure this ratio is at most 10.
 
 > [!NOTE]
-> In the near future, Azure Pipelines will enforce that there be at most X check evaluations, based on the  _Time between evaluations_ and _Timeout_ values.
+> In the near future, Azure Pipelines will enforce there be at most 10 check retries.
 
 ### Pass Pipeline Run Information to Checks
 
@@ -219,55 +218,55 @@ Lets look at some example use cases and what are the recommended type of checks 
 
 ### External Information Must Be Correct
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only if the information in a ServiceNow ticket is correct. In this case, the flow would be as follows:
-- You add an _asynchronous_ Azure Function check that verifies the correctness of the ServiceNow ticket.
+- You add an _asynchronous_ Azure Function check that verifies the correctness of the ServiceNow ticket
 - When a pipeline that wants to use the Service Connection runs:
-    - Azure Pipelines calls your check function.
-    - If the information is incorrect, the check returns a negative decision. Assume this outcome.
-    - The pipeline stage fails.
-    - You update the information in the ServiceNow ticket.
-    - You restart the failed stage.
-    - The check runs again and this time it succeeds.
-    - The pipeline run continues.
+    - Azure Pipelines calls your check function
+    - If the information is incorrect, the check returns a negative decision. Assume this outcome
+    - The pipeline stage fails
+    - You update the information in the ServiceNow ticket
+    - You restart the failed stage
+    - The check runs again and this time it succeeds
+    - The pipeline run continues
 
 ### External Approval Must Be Granted
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only after an administrator approved a ServiceNow ticket. In this case, the flow would be as follows:
-- You add an _asynchronous_ Azure Function check that verifies the ServiceNow ticket has been approved.
+- You add an _asynchronous_ Azure Function check that verifies the ServiceNow ticket has been approved
 - When a pipeline that wants to use the Service Connection runs:
-    - Azure Pipelines calls your check function. 
-    - If the ServiceNow ticket isn't approved, the Azure Function sends an update to Azure Pipelines, and reschedules itself to check the state of the ticket in 15 minutes.
-    - Once the ticket is approved, the check calls back into Azure Pipelines with a positive decision.
-    - The pipeline run continues.
+    - Azure Pipelines calls your check function.
+    - If the ServiceNow ticket isn't approved, the Azure Function sends an update to Azure Pipelines, and reschedules itself to check the state of the ticket in 15 minutes
+    - Once the ticket is approved, the check calls back into Azure Pipelines with a positive decision
+    - The pipeline run continues
 
 ### Development Process Was Followed
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only if the code coverage is above 80%. In this case, the flow would be as follows:
-- You write your pipeline in such a way that stage failures cause the build to fail.
-- You add an _asynchronous_ Azure Function check that verifies the code coverage for the associated pipeline run.
+- You write your pipeline in such a way that stage failures cause the build to fail
+- You add an _asynchronous_ Azure Function check that verifies the code coverage for the associated pipeline run
 - When a pipeline that wants to use the Service Connection runs:
-    - Azure Pipelines calls your check function.
-    - If the code coverage condition isn't met, the check returns a negative decision. Assume this outcome.
-    - The check failure causes your stage to fail, which causes your pipeline run to fail.
-- The engineering team adds the necessary unit tests to reach 80% code coverage.
-- A new pipeline run is triggered, and this time, the check passes.
-    - The pipeline run continues.
+    - Azure Pipelines calls your check function
+    - If the code coverage condition isn't met, the check returns a negative decision. Assume this outcome
+    - The check failure causes your stage to fail, which causes your pipeline run to fail
+- The engineering team adds the necessary unit tests to reach 80% code coverage
+- A new pipeline run is triggered, and this time, the check passes
+    - The pipeline run continues
 
 ### Performance Criteria Must Be Met
 Say you deploy new versions of your system in multiple steps, starting with a canary deployment. You wish to ensure your canary deployment's performance is adequate. In this case, the flow would be as follows:
 - You add an _asynchronous_ Azure Function check 
 - When a pipeline that wants to use the Service Connection runs:
-    - Azure Pipelines calls your check function.
-    - The check starts a monitor of the canary deployment's performance.
-    - The check schedules multiple evaluation checkpoints, to see how the performance evolved.
-    - Once you gain enough confidence in the canary deployment's performance, your Azure Function calls back into Azure Pipelines with a positive decision.
-    - The pipeline run continues.
+    - Azure Pipelines calls your check function
+    - The check starts a monitor of the canary deployment's performance
+    - The check schedules multiple evaluation checkpoints, to see how the performance evolved
+    - Once you gain enough confidence in the canary deployment's performance, your Azure Function calls back into Azure Pipelines with a positive decision
+    - The pipeline run continues
 
 ### Deployment Reason Must Be Valid
 Say you have a Service Connection to a production environment resource, and you wish to ensure that access to it happens only for manually queued builds. In this case, the flow would be as follows:
-- You add a _synchronous_ Azure Function check that verifies that `Build.Reason` for the pipeline run is `Manual`.
-- You configure the Azure Function check to pass `Build.Reason` in its Headers.
-- You set the check's _Time between evaluations_ to _0_, so failure or pass is final and no reevaluation is necessary.
+- You add a _synchronous_ Azure Function check that verifies that `Build.Reason` for the pipeline run is `Manual`
+- You configure the Azure Function check to pass `Build.Reason` in its Headers
+- You set the check's _Time between evaluations_ to _0_, so failure or pass is final and no reevaluation is necessary
 - When a pipeline that wants to use the Service Connection runs:
-    - Azure Pipelines calls your check function.
-    - If the reason is other than `Manual`, the check fails, and the pipeline run fails.
+    - Azure Pipelines calls your check function
+    - If the reason is other than `Manual`, the check fails, and the pipeline run fails
 
 ## Multiple Checks
 
