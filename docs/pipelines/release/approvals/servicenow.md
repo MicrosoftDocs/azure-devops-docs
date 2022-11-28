@@ -141,6 +141,39 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 :::image type="content" source="media/servicenow-14.png" alt-text="A screenshot showing the pipeline execution.":::
 
+## Date/Time Variables
+
+1. Set the variable with: "$[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]" and we can use "$(Get-Date -Format Date:MMddyy)".
+
+    In this way, we could get the value 10072022, not the 10.07.2022 without "." And we could not add any interval between ddMMyyyy, it does not supported by Azure         pipeline.
+    Besides, as workaroud, we could define the build number format in the Options tab with value: "$(DayOfMonth).$(Month).$(Year:yyyy)".
+    Then we could use variable $(Build.BuildNumber) directly to get the date time.
+    
+1. If you define pipeline variables by using expressions, then it supports .Net custom date and time format specifiers: 
+   - "$[format('{0:dd}.{0:MM}.{0:yyyy}',  pipeline.startTime)]".
+    
+1. For your specific date format, we could do this:
+
+        Write-Host "Setting up the date time for build variable"
+        $myDate=$(Get-Date -format dd.MM.yyyy)
+        Write-Host "##vso[task.setvariable variable=MyDate]$myDate"
+        
+   And then later in your pipeline you can refer to '$(MyDate)'.
+   
+1. Get formatted Date into varaible:
+ 
+    Use the powershell function Get-Date.
+    We could set up the variable in yaml like following:
+
+    variables:
+       - "mydate: $(Get-Date -Format yyyyMMddhhmmss)"
+
+    Then we can direct use it in the powershell script:
+
+    powershell: |
+        "Write-Host $(mydate)"
+
+
 ## FAQs
 
 ### Q: What versions of ServiceNow are supported?
