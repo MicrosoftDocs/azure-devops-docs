@@ -1,14 +1,14 @@
 ---
 title: Search packages
 titleSuffix: Azure Artifacts
-description: How to search for packages across all your feeds in an Azure DevOps organization.
+description: How to search for packages across all your feeds and in upstream sources in an Azure DevOps organization.
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2020'
-ms.date: 01/14/2021
+ms.date: 11/28/2022
 ---
 
 # Search packages across your feeds
@@ -20,7 +20,7 @@ Package Search is available to all users of Azure DevOps. For information on mai
 ## Prerequisites
 
 - [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-- [Azure Artifacts feed](../../artifacts/get-started-nuget.md).
+- [Azure Artifacts feed](../../artifacts/start-using-azure-artifacts.md).
 
 ## Apply supported functions to package search
 
@@ -39,8 +39,12 @@ Using the **Type** filter, you can select the type of package you want to search
 
 You can use the Azure DevOps REST API to search for packages in a specific organization. See [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
 
+## Search in upstream sources
+
+Using upstream sources, you can consume packages from public registries and Azure Artifacts feeds. See [Search upstreams](../../artifacts/how-to/search-upstream.md) to lean how to search for packages in upstream sources and save them to your feed.
+
 > [!NOTE]
-> Searching for packages in upstreams with NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
+> Searching for packages in upstreams using the NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
 
 ## Next steps
 
