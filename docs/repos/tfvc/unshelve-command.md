@@ -15,7 +15,7 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-The Team Foundation Version Control (TFVC) `unshelve` command restores shelved file revisions, check-in notes, comments, and work item associations to the current workspace. The command can also remove an existing shelveset from the server.
+The Team Foundation Version Control (TFVC) `unshelve` command restores shelved file revisions, check-in notes, comments, and work item associations to the current workspace. You can also use the `unshelve` command to remove an existing shelveset from the server.
 
 ## Prerequisites
 
