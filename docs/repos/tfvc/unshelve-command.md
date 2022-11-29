@@ -5,7 +5,7 @@ description: Use the Team Foundation Version Control unshelve command to restore
 ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 11/28/2022
+ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---

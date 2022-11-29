@@ -5,7 +5,7 @@ description: Run Team Foundation Version Control commands from a command prompt 
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 11/23/2022
+ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
