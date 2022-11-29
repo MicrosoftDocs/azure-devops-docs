@@ -56,7 +56,7 @@ Use these commands to develop your app under version control with your team:
 - [Rename command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md): Changes the name or path of a file or folder.
 - [Status command](status-command.md): Displays information about pending changes to files and folders in workspaces or in a shelveset.
 - [Undo command](undo-command.md): Discards specified pending changes to files or folders.
-- [Undelete Command](undelete-command.md): Restores items that were previously deleted.
+- [Undelete command](undelete-command.md): Restores items that were previously deleted.
 
 For more information, see [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md).
 
@@ -126,10 +126,10 @@ For more information, see [Work with version control locks](work-version-control
 
 Use the following commands to isolate risk by using branches:
 
-- [Branch Command](branch-command.md) 
-- [Branches Command](branches-command.md) 
-- [Merge Command](merge-command.md) 
-- [Merges Command](merges-command.md) 
+- [Branch command](branch-command.md) 
+- [Branches command](branches-command.md) 
+- [Merge command](merge-command.md) 
+- [Merges command](merges-command.md) 
 
 For more information, see [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
@@ -146,8 +146,8 @@ For more information, see [Configure check-out settings](configure-check-out-set
 
 Use the following commands to get detailed information about version control commands:
 
-- [Help Command (Team Foundation Version Control)](help-command-team-foundation-version-control.md)  
-- [Msdn Command](msdn-command.md)  
+- [Help command (Team Foundation Version Control)](help-command-team-foundation-version-control.md)  
+- [Msdn command](msdn-command.md)  
 
 ## Understand command syntax
 
@@ -191,7 +191,7 @@ You can use item specifications and version specifications to specify which item
 
 #### Use an item specification argument to specify affected items
 
-You use an item specification to specify the items affected by a command. You can specify items either on a client machine or on your Azure DevOps server. You can use wildcard characters such as **\\*** and **?**.
+You use an item specification to specify the items affected by a command. You can specify items either on a client machine or on your Azure DevOps server. You can use wildcard characters such as **\*** and **?**.
 
 #### Client item specification arguments
 
@@ -246,9 +246,9 @@ Use the following syntax to specify a version specification:
 
 | Type | Syntax | Description | Examples | Result |
 | --- | --- | --- | --- | --- |
-| Changeset | `[C]<version-number>` | Specifies items based on a changeset number. If an item that's in scope wasn't modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset. You can omit `C` if you specify only a number.| `c:\code\SiteApp\Main&gt;tf get readme.txt /v:C8`<br><br>`c:\code\SiteApp\Main&gt;tf get readme.txt /v:8`<br><br>`c:\code\SiteApp\Main&gt;tf get readme.txt;8` | If *readme.txt* was modified in changeset 8, the example code gets that version of the file. Otherwise, it gets the most recent version of *readme.txt* before version 8. |
-| Label | `L<label>` | Specifies items that a label was applied to. | `c:\code\SiteApp\Main&gt;tf get readme.txt;LJulyHotFix`<br><br>`c:\code\SiteApp\Main&gt;tf get /version:LLastKnownGood` | The first example gets the version of *readme.txt* that was labeled **JulyHotFix**. The second retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled **LastKnownGood** was created. You might use the code in the second example as part of an [automated build process](../../pipelines/build/triggers.md). |
-| Date and time | `D<yyyy-mm-ddTxx:xx>`<br><br>or<br><br>`D<mm/dd/yyyy>`<br><br>or<br><br>Any .NET Framework-supported format.<br><br>or<br><br>Any of the date formats supported on the local machine. | Specifies a changeset that was created on a specified date and time. | `c:\code\SiteApp\Main&gt;tf get /version:D2022-03-22`<br><br>`c:\code\SiteApp\Main&gt;tf get /version:D2022-03-22T09:00` | The first example updates the workspace to match the codebase as it existed on March 22, 2022 at midnight. The second updates the workspace to match the codebase as it existed on March 22, 2022 at 9:00 AM. For more information about .NET Framework-supported date and time formats, see [DateTime](/dotnet/api/system.datetime) and [Standard date and time format strings](/dotnet/standard/base-types/standard-date-and-time-format-strings). |
+| Changeset | `[C]<version-number>` | Specifies items based on a changeset number. If an item that's in scope wasn't modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset. You can omit `C` if you specify only a number.| `c:\code\SiteApp\Main>tf get readme.txt /v:C8`<br><br>`c:\code\SiteApp\Main>tf get readme.txt /v:8`<br><br>`c:\code\SiteApp\Main>tf get readme.txt;8` | If *readme.txt* was modified in changeset 8, the example code gets that version of the file. Otherwise, it gets the most recent version of *readme.txt* before version 8. |
+| Label | `L<label>` | Specifies items that a label is applied to. | `c:\code\SiteApp\Main>tf get readme.txt;LJulyHotFix`<br><br>`c:\code\SiteApp\Main>tf get /version:LLastKnownGood` | The first example gets the version of *readme.txt* that was labeled **JulyHotFix**. The second retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled **LastKnownGood** was created. You might use the code in the second example as part of an [automated build process](../../pipelines/build/triggers.md). |
+| Date and time | `D<yyyy-mm-ddTxx:xx>`<br><br>or<br><br>`D<mm/dd/yyyy>`<br><br>or<br><br>Any .NET Framework-supported format.<br><br>or<br><br>Any of the date formats supported on the local machine. | Specifies a changeset that was created on a specified date at a specific time. | `c:\code\SiteApp\Main>tf get /version:D2022-03-22`<br><br>`c:\code\SiteApp\Main>tf get /version:D2022-03-22T09:00` | The first example updates the workspace to match the codebase as it existed on March 22, 2022 at midnight. The second updates the workspace to match the codebase as it existed on March 22, 2022 at 9:00 AM. For more information about .NET Framework-supported date and time formats, see [DateTime](/dotnet/api/system.datetime) and [Standard date and time format strings](/dotnet/standard/base-types/standard-date-and-time-format-strings). |
 | Current workspace | `W` | Specifies the version in your workspace. | - | - |
 | Specified workspace | `W<workspace-name>; <workspace-owner>` | Specifies the version in a specified workspace. | `WResolveRIConflicts;PatW` | The example specifies the version in the `ResolveRIConflicts` workspace that `PatW` owns. |
 | Tip | `T` | Specifies the most recent version. | - | - |

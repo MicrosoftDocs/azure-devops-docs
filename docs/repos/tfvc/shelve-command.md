@@ -73,13 +73,13 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 
 The **shelve** command of the **tf** command-line utility backs up pending changes, a list of associated work items, in-progress check-in notes, and comments in a shelveset on the Team Foundation Server. A *shelveset *is much like a changeset that is not committed to the server. Like a changeset, a shelveset can be retrieved from the server into a local workspace by any user who has sufficient permissions.
 
-Shelving is an alternative to checking in pending changes that have not been tested sufficiently. Use shelving when you want to interrupt you work:
+Shelving is an alternative to checking in pending changes that have not been tested sufficiently. Use shelving when you want to interrupt your work:
 
 -   Share a set of local working files together with another developer or tester without checking in your changes to the version control server.
 
 -   Set aside a group of pending changes temporarily without checking them in so that you can instead work on a higher priority issue. After you complete work on the high priority task, you can restore your shelved changes using the [Unshelve Command](unshelve-command.md).
 
-If you include the **/move** option, the **shelve** command rolls back all shelved file revisions to their *base workspace versions* that is the last version retrieved from the server to the current workspace. Specifically, the **/move** option makes sure that for all the items that you shelve:
+If you include the **/move** option, the **shelve** command rolls back each shelved file revision to the *base workspace version* that's the last version retrieved from the server to the current workspace. Specifically, the **/move** option makes sure that for all the items that you shelve:
 
 -   Uses **Undo** to undo the changes that were shelved. The files that were pending additions are deleted from the workspace.
 
