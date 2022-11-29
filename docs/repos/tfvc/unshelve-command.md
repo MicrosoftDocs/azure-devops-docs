@@ -172,7 +172,7 @@ You can delete a shelveset by using `tf shelve /delete`. For more information, s
 
 ## Examples
 
-The following example opens the **Unshelve** dialog box so that you can find and unshelve a shelveset into the current workspace. You also have an option in the dialog box to have the shelveset deleted when the unshelve operation completes.
+The following example opens the **Unshelve** dialog box so that you can find and unshelve a shelveset into the current workspace. You also have an option in the dialog box to have the shelveset deleted when the unshelve operation finishes.
 
 ```
 c:\>tf unshelve

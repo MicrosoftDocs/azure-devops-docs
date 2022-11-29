@@ -217,7 +217,7 @@ You can use the **Label** window to perform the following tasks:
 
 When you right-click an item in the Label window, you can also select one of the following commands:
 
-- **View** (files only)
+- [View](view-command.md) (files only)
 - [View history](get-history-item.md)
 - [Compare](compare-files.md) (files only)
 - [Annotate](view-file-changes-using-annotate.md) (files only)
@@ -225,11 +225,11 @@ When you right-click an item in the Label window, you can also select one of the
 
 ## Work from the command prompt
 
-- [Labels command](labels-command.md). Use this command to list labels.
-- [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md). Use this command to apply or remove a label.
+- Use the `labels` command to list labels. For more information, see [Labels command](labels-command.md).
+- Use the `label` command to apply or remove a label. For more information, see [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
 
   > [!TIP]
-  > When you use this command to apply a label, you can specify a scope other than the project.
+  > When you use the `label` command to apply a label, you can specify a scope other than the project.
 
 ## Next steps
 
