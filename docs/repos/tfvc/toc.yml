@@ -98,6 +98,8 @@
       href: lock-unlock-folders-files.md
 - name: Manage versions
   items:
+  - name: View and manage past versions
+    href: view-manage-past-versions.md
   - name: Get the history of an item
     href: get-history-item.md
   - name: View changes using annotate
