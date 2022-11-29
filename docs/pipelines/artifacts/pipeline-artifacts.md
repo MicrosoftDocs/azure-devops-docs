@@ -361,6 +361,12 @@ When migrating from build artifacts to pipeline artifacts:
     artifactType: 'pipeline'
 ```
 
+- **targetPath**: The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include variables, but wildcards are not supported.
+
+- **artifactName**: Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
+
+- **artifactType**: Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`.
+
 ## FAQ
 
 #### Q: What are build artifacts?
