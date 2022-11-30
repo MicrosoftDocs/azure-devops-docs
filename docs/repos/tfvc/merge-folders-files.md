@@ -72,7 +72,7 @@ You can use the **Tracking Changeset** window to view information such as where 
 
 ### Example: Merge a new method
 
-To illustrate how you might use the preceding procedure, consider the following example. Your teammate asks you to to implement a new method in some of the **feature2-branchA** code that they use in their **feature2-branchB** code. You write code for the new method and check it into the **feature2-branchA** branch. You let your teammate know that you've checked in the new method.
+To illustrate how you might use the preceding procedure, consider the following example. Your teammate asks you to implement a new method in some of the **feature2-branchA** code that they use in their **feature2-branchB** code. You write code for the new method and check it into the **feature2-branchA** branch. You let your teammate know that you've checked in the new method.
 
 Your teammate finds the latest source, but doesn't see the new method that you checked in. They open **Source Control Explorer**, view the **History** window for the **feature2-branchA** branch, and see that with changeset **66**, you checked in the new method. Your teammate right-clicks changeset **66** and selects **Track Changeset**, and the following window appears:
 
