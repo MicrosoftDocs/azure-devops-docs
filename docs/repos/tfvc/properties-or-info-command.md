@@ -14,7 +14,7 @@ ms.subservice: azure-devops-repos-tfvc
 # Properties Command
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 The **properties** command displays information about items under version control.
 
