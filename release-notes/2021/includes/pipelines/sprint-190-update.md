@@ -84,7 +84,7 @@ Your build will fail if the global.json file contains the `rollForward: disable`
 
 If the `rollForward` field isn't specified in your global.json file, there will be no change for you. The latest installed patch level is used.
 
-If you need to use an exact .NET SDK version that isn't the latest patch, please use the [`UseDotNet` task](/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer) to install it as part of the build:
+If you need to use an exact .NET SDK version that isn't the latest patch, please use the [`UseDotNet` task](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) to install it as part of the build:
 
 ``` YAML
 steps:
