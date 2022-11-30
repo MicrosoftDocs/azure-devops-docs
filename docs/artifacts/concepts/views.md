@@ -47,7 +47,7 @@ The **quality** of the change isn't generally known until the validation process
 
 :::image type="content" source="media/release-views-flow.png" alt-text="publishing packages workflow":::
 
-You can use the `@Release` view as a mean to convey the quality of your changes. Using the `@Release` view, you can share packages that met your quality bar and allow your consumers to only see the subset of package versions that were tested, validated, and are ready to be consumed.
+You can use the `@Release` view as a means to convey the quality of your changes. Using the `@Release` view, you can share packages that met your quality bar and allow your consumers to only see the subset of package versions that were tested, validated, and are ready to be consumed.
 
 :::image type="content" source="media/release-views-quality-tags.png" alt-text="deployment semantic version":::
 
