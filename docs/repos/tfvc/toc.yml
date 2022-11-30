@@ -54,6 +54,8 @@
     href: edit-check-policies.md
   - name: Enable or disable check-in policies
     href: enable-disable-check-policies.md
+  - name: Remove check-in policies
+    href: remove-check-policies.md
   - name: Configure check-in notes
     href: configure-check-notes.md
   - name: Test impact for partially mapped repositories
@@ -175,6 +177,8 @@
     href: help-command-team-foundation-version-control.md
   - name: History
     href: history-command.md
+  - name: Info or Properties
+    href: properties-or-info-command.md
   - name: Label
     href: label-command-team-foundation-version-control.md
   - name: Labels
@@ -191,8 +195,6 @@
     href: msdn-command.md
   - name: Permission
     href: permission-command.md
-  - name: Properties
-    href: properties-or-info-command.md
   - name: Proxy
     href: proxy-command.md
   - name: Reconcile
