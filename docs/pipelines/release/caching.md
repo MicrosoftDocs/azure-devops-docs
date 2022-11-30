@@ -40,7 +40,7 @@ When a cache step is encountered during a run, the task will restore the cache b
 
 ### Configure the Cache task
 
-The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* and *path*:
+The [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) has two required arguments: *key* and *path*:
 
 - **path**: the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
@@ -366,7 +366,7 @@ steps:
 - script: mvn install -B -e
 ```
 
-If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
+If you're using a [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
 
 ```yaml
 - task: Maven@4
