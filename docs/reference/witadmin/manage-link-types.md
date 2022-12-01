@@ -22,7 +22,7 @@ You manage the link types defined for a project collection by using the followin
 - `deactivatelinktype`:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
 - `deletelinktype`:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.    
 - `exportlinktype`:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. 
-- `importlinktype`:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type does not already exist, a new link type will be created.   
+- `importlinktype`:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type doesn't already exist, a new link type will be created.   
 - `listlinktypes`:  Lists the available set of link types on a server. 
 - `reactivatelinktype`: Reactivates the specified link type, and optionally assigns it a new name.  
   
@@ -55,7 +55,7 @@ witadmin reactivatelinktype /collection:CollectionURL /n:LinkName
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
 |`/n:` `LinkName`|The name or the reference name of the link type to deactivate or delete.|  
 |`/f:` `FileName`|The XML file of link types. Required for import, optional for export. If you omit this parameter, the command output appears on the display.|  
 |`/e:` `encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, `witadmin` uses UTF-8.|  

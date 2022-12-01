@@ -29,7 +29,7 @@ You can permanently remove work items from the on-premises Team Foundation Serve
 To run the `witadmin` command-line tool, open a Command Prompt window where Visual Studio is installed. The `witadmin` command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community or Visual Studio Team Explorer](https://visualstudio.microsoft.com/downloads/).  
 
 > [!NOTE]   
-> You must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server or TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017.  
+> You must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server. For example, if you connect to a TFS 2018 instance, you must connect from Visual Studio 2017 or Team Explorer 2017.  
 
 *Visual Studio 2017 or Team Explorer 2017 client:*
 
@@ -54,11 +54,11 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
 
 #### Parameters  
   
-|**Parameter**|**Description**|  
+|**Parameter**|**Description**|   
 |-------------------|---------------------|  
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|  
-|`/id`:`id`|The ID of a work item to destroy. To specify multiple work items, separate IDs using only commas, without whitespace.|  
-|`/noprompt**|Disables the prompt for confirmation.|  
+|`/collection:CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|  
+|`/id:id`|The ID of a work item to destroy. To specify multiple work items, separate IDs using only commas, without whitespace.|  
+|`/noprompt`|Disables the prompt for confirmation.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
   
   

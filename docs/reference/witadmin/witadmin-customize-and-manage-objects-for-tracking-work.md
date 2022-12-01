@@ -213,7 +213,7 @@ For the Inherited process model, you can view and delete fields from the web por
 
 ## [Categories](witadmin-import-export-categories.md)
 
-Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. To learn about categories and how they are used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
+Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. To learn about categories and how they're used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
  
  
 ---

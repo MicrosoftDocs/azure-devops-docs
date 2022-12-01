@@ -19,9 +19,9 @@ ms.date: 12/01/2022
 
 You can import and export categories defined for a project by using the following `witadmin` commands:   
 - `exportcategories`:  Exports the XML definition of categories defined for a project.   
-- `importcategories`:  Imports a work item type XML definition file into a project.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
+- `importcategories`:  Imports a work item type XML definition file into a project.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type doesn't already exist, this command creates a new category.  
   
-To learn about the default categories and how they are used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
+To learn about the default categories and how they're used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
   
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]    
   
@@ -47,10 +47,10 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:**  `http://*ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then specify the URI using the following format: `http://ServerName:Port/CollectionName`.|  
-|`/p`:`Project`|The name of the project from which the categories are exported or to which the categories are imported.|  
-|`/f`:*FileName*|The path and file name of the XML definition file that contains the categories to be exported or imported. If you omit this parameter when you use the **exportcategories** command, the command lists the categories in the Command Prompt window.|  
-|`/e`:*Encoding*|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e`:`utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:**  `http://*ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then specify the URI using the following format: `http://ServerName:Port/CollectionName`.|  
+|`/p:Project`|The name of the project from which the categories are exported or to which the categories are imported.|  
+|`/f:FileName`|The path and file name of the XML definition file that contains the categories to be exported or imported. If you omit this parameter when you use the `exportcategories` command, the command lists the categories in the Command Prompt window.|  
+|`/e:Encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e`:`utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, `witadmin` uses UTF-8.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
@@ -66,10 +66,10 @@ Importing a categories file creates the categories if they do not already exist.
 
 Unless otherwise specified, the following values apply in each example:  
   
-- URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
-- Project name: AdventureWorks    
-- Input or output file name: myCategories.xml   
-- Default encoding: UTF-8  
+- URI for the project collection: `http://AdventureWorksServer:8080/tfs/DefaultCollection`    
+- Project name: `AdventureWorks`    
+- Input or output file name: `myCategories.xml`   
+- Default encoding: `UTF-8`  
   
 ### List categories  
 

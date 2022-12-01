@@ -103,8 +103,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------| 
-
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
 |`/n:RefName`<br />`/n:Name`|The reference name of a work item type field.|  
 |`/index`|Specifies to enable or disable indexing for the specified field. Specify **on** to enable indexing and **off** to disable indexing.|  
 |`/name:NewName`|Specifies the new name for the field.|  
@@ -137,7 +136,7 @@ All system reference fields that show person-names have the attribute `syncnamec
   
 After synchronization is enabled, the field no longer shows a static string. Instead, the field shows the name associated with a user account. When you change the user name in Active Directory or in Workgroup, a field with `syncnamechanges` set to `true` automatically shows the new name.  
   
-When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field does not allow group names that are stored in Team Foundation Server or in Active Directory if any one of the following conditions is `true`:  
+When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field doesn't allow group names that are stored in Team Foundation Server or in Active Directory if any one of the following conditions is `true`:  
   
 - The `VALIDUSER` rule is specified across all work item types    
 - The `VALIDUSER` rule is specified for a work item type    
@@ -255,7 +254,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
 3.  In the Query Editor, choose the **Click here to add a clause** link to add a row, select the blank **Field** cell, and in the cell, type **Rank**. The following message that appears above the results list. This message indicates that the Rank cannot be found.  
   
-     **Run the query to see the query results.**  TF51005: The query references a field that does not exist. The error is caused by <\<Rank>>.  
+     **Run the query to see the query results.**  TF51005: The query references a field that doesn't exist. The error is caused by <\<Rank>>.  
   
 4.  Delete the value **Rank** from the **Field** cell, and type **Important Rank** into the cell.  
   
