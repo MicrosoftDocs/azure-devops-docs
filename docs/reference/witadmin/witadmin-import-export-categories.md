@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 12/01/2022
 ---
 
 
@@ -17,9 +17,9 @@ ms.date: 01/11/2022
 
 [!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
-You can import and export categories defined for a project by using the following **witadmin** commands:   
--   **exportcategories**:  Exports the XML definition of categories defined for a project.   
--   **importcategories**:  Imports a work item type XML definition file into a project.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
+You can import and export categories defined for a project by using the following `witadmin` commands:   
+- `exportcategories`:  Exports the XML definition of categories defined for a project.   
+- `importcategories`:  Imports a work item type XML definition file into a project.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
   
@@ -47,15 +47,15 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
-|**/p**:`Project`|The name of the project from which the categories are exported or to which the categories are imported.|  
-|**/f**:*FileName*|The path and file name of the XML definition file that contains the categories to be exported or imported. If you omit this parameter when you use the **exportcategories** command, the command lists the categories in the Command Prompt window.|  
-|**/e**:*Encoding*|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e`:`utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
-|**/?** or **help**|Displays help about the command in the Command Prompt window.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:**  `http://*ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then specify the URI using the following format: `http://ServerName:Port/CollectionName`.|  
+|`/p`:`Project`|The name of the project from which the categories are exported or to which the categories are imported.|  
+|`/f`:*FileName*|The path and file name of the XML definition file that contains the categories to be exported or imported. If you omit this parameter when you use the **exportcategories** command, the command lists the categories in the Command Prompt window.|  
+|`/e`:*Encoding*|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e`:`utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
+|`/?` or `help`|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
 
-Importing a categories file creates the categories if they do not already exist. If categories already exist, the **witadmin importcategories** command will warn you that the current list will be overwritten. You can write your own program to update an existing set of categories, or you can update the categories yourself with new data.  
+Importing a categories file creates the categories if they do not already exist. If categories already exist, the `witadmin importcategories` command will warn you that the current list will be overwritten. You can write your own program to update an existing set of categories, or you can update the categories yourself with new data.  
   
 > [!IMPORTANT]  
 >  Changes you make to categories can impact process configuration. See [ProcessConfiguration XML elements](../xml/process-configuration-xml-element.md).  
@@ -85,7 +85,8 @@ You add a category to the Hidden Types categories to remove support for users to
   
 1. Export the definition file for categories for your project.  
   
-   ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```witadmin  
    witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
    ```  
   
@@ -120,7 +121,8 @@ You add a category to the Hidden Types categories to remove support for users to
   
 4. Import the definition file for categories to your project.  
   
-   ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```witadmin  
    witadmin importcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
    ```  
   
