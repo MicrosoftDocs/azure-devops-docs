@@ -1,22 +1,24 @@
 ---
-title: History command
+title: History command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: History command
+description: See how to use the tf history command to display the revision history of files or folders.
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 07/13/2022
+ms.date: 11/15/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# History command  (Team Foundation Version Control)
+# History command (Team Foundation Version Control)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Displays the revision history of one or more files or folders. The data is displayed in either the History window, or if **/noprompt** option is specified, at the command prompt.
+The Team Foundation Version Control (TFVC) `tf history` command displays the revision history of one or more files or folders. The command data is displayed in either the **History** window in Visual Studio, or if the `/noprompt` option is specified, at the command prompt.
+
+You can also use Visual Studio to get revision history. For more information, see [Get the history of an item](get-history-item.md).
 
 ## Prerequisites
 
@@ -44,7 +46,7 @@ tf hist[ory] itemspec [/version:versionspec]
 
 :::row:::
    :::column span="1":::
-   **/collection**: *TeamProjectCollectionUrl*
+   `/collection:<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
    Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.
@@ -54,28 +56,27 @@ tf hist[ory] itemspec [/version:versionspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/format**
+   `/format`
    :::column-end:::
    :::column span="3":::
-   Specifies how much detail to display about each changeset when the **/noprompt** option is specified:
-
+   Specifies how much detail to display about each changeset when the `/noprompt` option is specified:
    
-   - **Brief** (default): Displays one line about each changeset that includes: ID number, changes made, user who made the changes, date, and comment. Some of the data may be truncated.
+   - `Brief` (default): Displays one line about each changeset that includes: ID number, changes made, user who made the changes, date, and comment. Some of the data may be truncated.
 
-   - **Detailed**: Displays a full description of each changeset. In addition to the above information, this option displays additional data such as date with time, items changed, check-in notes, and check-in policy warnings.   
+   - `Detailed`: Displays a full description of each changeset. In addition to the preceding information, this option displays more data such as date with time, items changed, check-in notes, and check-in policy warnings.   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/itemmode**
+   `/itemmode`
    :::column-end:::
    :::column span="3":::
-   You cannot combine this option with the **/slotmode** option. See [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
+   You can't combine this option with the `/slotmode` option. For more information, see [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *itemspec*
+   `<itemspec>`
    :::column-end:::
    :::column span="3":::
    Specifies the items for which to display history. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
@@ -83,22 +84,17 @@ tf hist[ory] itemspec [/version:versionspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/noprompt**
+   `/noprompt`
    :::column-end:::
    :::column span="3":::
-   This option:
+   Suppresses the display of windows and dialog boxes, such as the **History** window, and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
-   
-   - Suppresses the display of windows and dialog boxes (such as the **History** window) and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
-
-   - Does not display the history of revisions that occurred before an item was moved, renamed, branched, or merged.
-
-   
+   Doesn't display the history of revisions that occurred before an item was moved, renamed, branched, or merged.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/login**:*username*,[*password*]
+   `/login:<username>[,<password>]`
    :::column-end:::
    :::column span="3":::
    Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
@@ -106,7 +102,7 @@ tf hist[ory] itemspec [/version:versionspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/recursive**
+   `/recursive`
    :::column-end:::
    :::column span="3":::
    Recursively retrieves historical data on items in the specified directory and any subdirectories.
@@ -114,31 +110,31 @@ tf hist[ory] itemspec [/version:versionspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/slotmode**
+   `/slotmode`
    :::column-end:::
    :::column span="3":::
-   You cannot combine this option with the **/itemmode** option. See [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
+   You can't combine this option with the `/itemmode` option. For more information, see [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/sort**
+   `/sort`
    :::column-end:::
    :::column span="3":::
    Sorts the revision history for one or more files or folders in either of the following orders:
 
    
-   - **Ascending**: from the oldest to the most recent revision.
+   - `Ascending`: From the oldest to the most recent revision.
 
-   - **Descending** (default): from the most recent to the oldest revision.
+   - `Descending` (default): From the most recent to the oldest revision.
 
    
-   You must use the **/noprompt** option with this option.
+   You must use the `/noprompt` option with this option.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/stopafter**:*number*
+   `/stopafter:<number>`
    :::column-end:::
    :::column span="3":::
    Specifies the maximum number of changesets to display in the history data.
@@ -146,49 +142,54 @@ tf hist[ory] itemspec [/version:versionspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/user**:*username*
+   `/user:<username>`
    :::column-end:::
    :::column span="3":::
-   Filters the historical data to show changes made by the specified user. An asterisk (**\***) symbol includes data on changes from all users (the default).
+   Filters the historical data to show changes made by the specified user. An asterisk (\*) symbol includes data on changes from all users, the default.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/version**:*versionspec*
+   `/version:<versionspec>`
    :::column-end:::
    :::column span="3":::
-   Specifies one of the following limits on the history data:
+   Specifies either the maximum version, or the minimum and maximum versions by using the range `~` syntax. The default is `/version:W`, the version in the workspace.
 
-   
-   - The maximum version
-
-   - The minimum and the maximum versions using the range **~** syntax.
-
-   
-   The default is `/version:W` (the version in the workspace).
+   You can't combine this option with the `/slotmode` option.
 
    For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
-
-   You cannot combine this option with the **/slotmode** option.
    :::column-end:::
 :::row-end:::
 
+## Remarks
+
+- To get more detailed information about a changeset, for example to see associated work items:
+
+  - In the Visual Studio **History** window, double-click or right-click the changeset and choose **Changeset Details**.
+
+  - From the command prompt, use the [Changeset command](changeset-command.md).
+
+- The `/collection` option is useful for running this command from a machine and user account that doesn't have a workspace mapped to the project collection that contains the items.
 
 ## Examples
 
+The following examples assume that *c:\\code\\SiteApp\\Main* maps to the main folder in the workspace.
+
 ### Get history of a single file
+
+The following example displays all changes made to *program2.cs* in the **History** window.
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1>tf history program2.cs
 ```
 
-Displays all changes made to program.cs in the History window.
+The following example displays all changes made to *program2.cs* in the command prompt window.
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1>tf history program2.cs /noprompt
 ```
 
-Displays all changes made to program.cs in the command prompt window. For example:
+Output:
 
 ```
 Changeset Change                     User              Date       Comment
@@ -199,20 +200,21 @@ Changeset Change                     User              Date       Comment
 
 ### Get history of all items in a folder
 
+The following example displays all changes made to all items in *SolutionA*, including those in subfolders, in the **History** window.
+
 ```
 c:\code\SiteApp\Main\SolutionA>tf history * /recursive
 ```
 
-Displays all changes made to all items in SolutionA (including those in subfolders) in the History window.
-
 ### Get history of the last five changes to all items in a folder
+
+The following example displays the latest five changes made to items in *SolutionA*, including those in subfolders, in the command prompt window:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history * /noprompt /recursive /stopafter:5
 ```
 
-Displays the latest 5 changes made to items in SolutionA (including those in subfolders):
-
+Output:
 ```
 Changeset User              Date       Comment
 --------- ----------------- ---------- ----------------------------------------
@@ -225,33 +227,38 @@ Changeset User              Date       Comment
 
 ### Get history from version x and earlier
 
+The following example displays changes made to all items in *SolutionA*, including those in subfolders, in version 30 and earlier, in the command prompt window:
+
 ```
 c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:30
 ```
 
-Displays changes made to all items in SolutionA (including those in subfolders) in version 30 and earlier:
+Output:
 
 ```
 Changeset User              Date       Comment
 --------- ----------------- ---------- ----------------------------------------
 30        Raisa Pokrovskaya 4/23/2012
 29        Jamal Hartnett    4/23/2012  Fix bug in new method
-20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 
+15        Raisa Pokrovskaya 4/8/2012
 ```
 
 ### Get history from date D and earlier
+
+The following examples display changes made to all items in *SolutionA*, including those in subfolders, on 4/23/12 or earlier, in the command prompt window:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/24/2012
 ```
 
--- or --
+Or:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D2012-04-24T12:00
 ```
 
-Displays changes made to all items in SolutionA (including those in subfolders) on 4/23/12 or earlier:
+Output:
 
 ```
 Changeset User              Date       Comment
@@ -261,13 +268,15 @@ Changeset User              Date       Comment
 20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
 ```
 
-### Get history from version x to version y
+### Get history from a range of dates
+
+The following example displays changes made to all items in *SolutionA*, including those in subfolders, between 4/12/2012 and 4/23/2012, in the command prompt window:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
 ```
 
-Displays changes made to all items in SolutionA (including those in subfolders) between 4/12/2012 and 4/23/12:
+Output:
 
 ```
 Changeset User              Date       Comment
@@ -279,11 +288,13 @@ Changeset User              Date       Comment
 
 ### Get detailed history
 
+The following example displays details about changes made to all items in *SolutionA*, including those in subfolders, between 4/12/2012 and 4/23/2012, in the command prompt window:
+
 ```
 c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012 /format:detailed
 ```
 
-Displays details about changes made to all items in SolutionA (including those in subfolders) between 4/12/2012 and 4/23/12:
+Output:
 
 ```
 -------------------------------------------------------------------------------
@@ -335,34 +346,22 @@ Studio with an open solution.
 
 ### Get the non-recursive history of a folder
 
+The following example displays the history of the *SolutionA* folder in the Visual Studio **History** window, which enables you to explore earlier changes to the folder. For example, if the most recent change to the folder was a rename, you can expand the changeset to see changes that occurred before the rename.
+
 ```
 c:\code\SiteApp\Main\SolutionA>tf history .
 ```
 
-Displays the history of the SolutionA folder in the History window, which enables you to explore earlier changes to the folder. For example, if the most recent change to the folder was a rename, you can expand the changeset to see changes that occurred before the rename.
+The following example displays the most recent change to the *SolutionA* folder in the command prompt window.
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf history . /noprompt
 ```
 
-Displays the most recent change to the SolutionA folder in the command prompt window.
 
-## Work in Visual Studio
+## Related articles
 
--    [Get the history of an item](get-history-item.md)  Use Visual Studio to get revision history.
+- For information about how to use the **History** window, see [Get the history of an item](get-history-item.md).
+- For more information about changesets, see [Find and view changesets](find-view-changesets.md).
+- Also see [View and manage past versions](view-manage-past-versions.md).
 
-## Tips
-
--   ![Tip](media/history-command/IC572374.png) For information about how to use the **History** window, see [Get the history of an item](get-history-item.md).
-
--   ![Tip](media/history-command/IC572374.png) To get more detailed information about a changeset (for example, you want to see associated work items):
-
-    -   In the History window, double-click the changeset or open its context menu and choose **Changeset Details**.
-
-    -   From the command prompt, use the [Changeset Command](changeset-command.md).
-
--   ![Tip](media/history-command/IC572374.png) For more information about changesets, see [Find and view changesets](find-view-changesets.md).
-
--   ![Tip](media/history-command/IC572374.png) The **/collection** option is useful for running this command from a machine and user account that does not have a workspace mapped to the Project Collection that contains the items.
-
--   ![Tip](media/history-command/IC572374.png) See [View and manage past versions](view-manage-past-versions.md).
