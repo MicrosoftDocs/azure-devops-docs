@@ -544,6 +544,10 @@ key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 
 A: Caches expire after seven days of no activity.
 
+### Q: When does the cache get uploaded?
+
+A: After the last step fo your pipeline a cache will be created from your cache `path` and uploaded. See the [example](#configure-the-cache-task) for more details.
+
 ### Q: Is there a limit on the size of a cache?
 
 A: There's no enforced limit on the size of individual caches or the total size of all caches in an organization.
