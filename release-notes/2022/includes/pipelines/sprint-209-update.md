@@ -147,7 +147,7 @@ steps:
 
 If you want to change the behavior of existing YAML pipelines, it may be more convenient to set this option in the UI instead of updating the YAML file. To navigate to the UI, open the YAML editor for the pipeline, select Triggers, then Process, and then the Checkout step.
 
-If you specify this setting both in the YAML file and in the UI, then the value specified in the UI takes precedence.
+If you specify this setting both in the YAML file and in the UI, then the value specified in the YAML file takes precedence.
 
 ##### [Classic](#tab/classic/)
 
