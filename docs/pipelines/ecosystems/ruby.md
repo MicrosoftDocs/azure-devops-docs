@@ -46,11 +46,11 @@ You have a working YAML file (`azure-pipelines.yml`) in your repository that's r
 
 You can use Azure Pipelines to build your Ruby projects without needing to set up any infrastructure of your own. Ruby is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
+For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v0) task to the beginning of your pipeline.
 
 ### Use a specific Ruby version
 
-Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the version of Ruby used in your pipeline. This snippet adds Ruby 2.4 or later to the path and sets subsequent pipeline tasks to use it.
+Add the [Use Ruby Version](/azure/devops/pipelines/tasks/reference/use-ruby-version-v0) task to set the version of Ruby used in your pipeline. This snippet adds Ruby 2.4 or later to the path and sets subsequent pipeline tasks to use it.
 
 ```yaml
 # https://learn.microsoft.com/azure/devops/pipelines/ecosystems/ruby
@@ -97,7 +97,7 @@ To execute Rake in the context of the current bundle (as defined in your Gemfile
 
 The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
 
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit style test results to the server. You get a rich test reporting experience that you can use for troubleshooting any failed tests and for test timing analysis.
+Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task to publish JUnit style test results to the server. You get a rich test reporting experience that you can use for troubleshooting any failed tests and for test timing analysis.
 
 ```yaml
 - task: PublishTestResults@2
@@ -110,7 +110,7 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 
 The sample code uses [SimpleCov](https://github.com/colszowka/simplecov) to collect code coverage data when unit tests get run. SimpleCov is configured to use Cobertura and HTML report formatters. 
 
-Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do so, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
+Add the [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task to publish code coverage results to the server. When you do so, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@1

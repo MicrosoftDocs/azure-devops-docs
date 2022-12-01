@@ -139,7 +139,7 @@ A new [Python Script](/azure/devops/pipelines/tasks#utility) task simplifies run
 
 Miniconda is now available on Microsoft-hosted agents. The [conda](https://www.anaconda.com/distribution/) package and virtual environment manager makes it easy to install, run, and upgrade complex data science and machine learning environments like the SciPy stack, scikit-learn, CNTK, and TensorFlow. It will also install the version of Python that is needed by your pipeline.
 
-The new, built-in [Conda Environment](/azure/devops/pipelines/tasks/package/conda-environment) task also helps you create a conda environment. It activates the environment for subsequent pipeline steps, installs package dependencies, adds conda to the path, and optionally upgrades the agent to the latest version of conda.
+The new, built-in [Conda Environment](/azure/devops/pipelines/tasks/reference/conda-environment-v1) task also helps you create a conda environment. It activates the environment for subsequent pipeline steps, installs package dependencies, adds conda to the path, and optionally upgrades the agent to the latest version of conda.
 
 ### Simplify definitions with multiple agentless tasks
 

@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure DevOps Services**
 
-With pipeline caching, you can reduce your build time by caching your dependencies to be reused in later runs. In this article, you will learn how to use the [Cache task](../tasks/utility/cache.md) to cache and restore your NuGet packages.
+With pipeline caching, you can reduce your build time by caching your dependencies to be reused in later runs. In this article, you will learn how to use the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) to cache and restore your NuGet packages.
 
 ## Lock dependencies
 

@@ -133,7 +133,7 @@ ms.date: 10/25/2022
 
 ## Server-level groups 
 
-When you install Azure DevOps Server, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can not remove or delete the built-in server-level groups.
+When you install Azure DevOps Server, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You cannot remove or delete the built-in server-level groups.
 
 ::: moniker-end
 
@@ -337,7 +337,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 
 ## Collection-level groups
 
-   When you create an organization or project collection in Azure DevOps, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can not remove or delete the built-in collection-level groups.
+   When you create an organization or project collection in Azure DevOps, the system creates collection-level groups that have [permissions in that collection](#collection-level). You cannot remove or delete the built-in collection-level groups.
 
    <!---
    Project Collection Administrators
@@ -1346,7 +1346,7 @@ You manage project-level permissions through the [web portal admin context](chan
 :::row:::
    :::column span="4":::
    > [!NOTE] 
-   > All users granted Stakeholder access for a private project can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. To learn more, see [Stakeholder access quick reference](/stakeholder-access.md).  
+   > All users granted Stakeholder access for a private project can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).  
   > Although the **Create tag definition**  permission appears
   > in the security settings at the project-level,
   > tagging permissions are actually collection level permissions that are scoped
@@ -3172,10 +3172,10 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
 ## Notifications or alerts 
 
 ::: moniker range=">= azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, they you can manage them using [az devops security permission](manage-tokens-namespaces.md) or [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools.
+There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using [az devops security permission](manage-tokens-namespaces.md) or [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools.
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, they you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
+There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
 ::: moniker-end
 
 
