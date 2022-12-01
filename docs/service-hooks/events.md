@@ -1,7 +1,7 @@
 ---
 title: Service hooks events
 titleSuffix: Azure DevOps  
-description: Reference for service hook events supported by Azure DevOps. 
+description: Reference for service hook events. 
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2022
+ms.date: 11/30/2022
 ---
 
 # Service hooks events
@@ -2316,82 +2316,78 @@ Filter events to include only changed work items.
 #### Sample payload
 
 ```json
+```json
 {
-    "id": "03c164c2-8912-4d5e-8009-3707d5f83734",
-    "eventType": "git.push",
-    "publisherId": "tfs",
-    "message": {
-        "text": "Jamal Hartnett pushed updates to Fabrikam-Fiber-Git:master.",
-        "html": "Jamal Hartnett pushed updates to Fabrikam-Fiber-Git:master.",
-        "markdown": "Jamal Hartnett pushed updates to `Fabrikam-Fiber-Git`:`master`."
+  "id": "1ca023d6-6cff-49dd-b3d1-302b69311810",
+  "eventType": "workitem.updated",
+  "publisherId": "tfs",
+  "scope": "all",
+  "message": {
+    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett."
+  },
+  "detailedMessage": {
+    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Severity: 3 - Medium\r\n",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>Severity: 3 - Medium</li></ul>",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Severity: 3 - Medium\r\n"
+  },
+  "resource": {
+    "id": 5,
+    "rev": 1,
+    "fields": {
+      "System.AreaPath": "FabrikamCloud",
+      "System.TeamProject": "FabrikamCloud",
+      "System.IterationPath": "FabrikamCloud\\Release 1\\Sprint 1",
+      "System.WorkItemType": "Bug",
+      "System.State": "New",
+      "System.Reason": "New defect reported",
+      "System.CreatedDate": "2014-07-15T17:42:44.663Z",
+      "System.CreatedBy": "Jamal Hartnett",
+      "System.ChangedDate": "2014-07-15T17:42:44.663Z",
+      "System.ChangedBy": "Jamal Hartnett",
+      "System.Title": "Some great new idea!",
+      "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
+      "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
     },
-    "detailedMessage": {
-        "text": "Jamal Hartnett pushed a commit to Fabrikam-Fiber-Git:master.\n - Fixed bug in web.config file 33b55f7c",
-        "html": "Jamal Hartnett pushed a commit to <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>:<a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster\">master</a>.\n<ul>\n<li>Fixed bug in web.config file <a href=\"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74\">33b55f7c</a>\n</ul>",
-        "markdown": "Jamal Hartnett pushed a commit to [Fabrikam-Fiber-Git](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/):[master](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster).\n* Fixed bug in web.config file [33b55f7c](https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74)"
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+      },
+      "workItemRevisions": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+      },
+      "workItemType": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+      },
+      "fields": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+      },
+      "html": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=5"
+      },
+      "workItemHistory": {
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/history"
+      }
     },
-    "resource": {
-        "commits": [
-            {
-                "commitId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74",
-                "author": {
-                    "name": "Jamal Hartnett",
-                    "email": "fabrikamfiber4@hotmail.com",
-                    "date": "2015-02-25T19:01:00Z"
-                },
-                "committer": {
-                    "name": "Jamal Hartnett",
-                    "email": "fabrikamfiber4@hotmail.com",
-                    "date": "2015-02-25T19:01:00Z"
-                },
-                "comment": "Fixed bug in web.config file",
-                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
-            }
-        ],
-        "refUpdates": [
-            {
-                "name": "refs/heads/master",
-                "oldObjectId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
-                "newObjectId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74"
-            }
-        ],
-        "repository": {
-            "id": "278d5cd2-584d-4b63-824a-2ba458937249",
-            "name": "Fabrikam-Fiber-Git",
-            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
-            "project": {
-                "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-                "name": "Fabrikam-Fiber-Git",
-                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-                "state": "wellFormed",
-                "visibility": "unchanged",
-                "lastUpdateTime": "0001-01-01T00:00:00"
-            },
-            "defaultBranch": "refs/heads/master",
-            "remoteUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_git/Fabrikam-Fiber-Git"
-        },
-        "pushedBy": {
-            "displayName": "Jamal Hartnett",
-            "id": "00067FFED5C7AF52@Live.com",
-            "uniqueName": "fabrikamfiber4@hotmail.com"
-        },
-        "pushId": 14,
-        "date": "2014-05-02T19:17:13.3309587Z",
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/14"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
     },
-    "resourceVersion": "1.0",
-    "resourceContainers": {
-        "collection": {
-            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
-        },
-        "account": {
-            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
-        },
-        "project": {
-            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
-        }
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
     },
-    "createdDate": "2020-10-16T22:14:07.267Z"
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2016-09-19T13:03:30.1456784Z"
 }
 ```
 
