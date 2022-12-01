@@ -83,6 +83,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Teams | 5,000 per organization |
 | Work item tags | 150,000 tag definitions per organization or collection |
 | Delivery plans per project | 1,000 |
+| Templates per work item type | 100 |
 
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
@@ -108,6 +109,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Taskboard | 800 work items |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per project |
+| Templates per work item type | 100 |
 
 Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
@@ -301,3 +303,4 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview)
 - [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 - [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
+
