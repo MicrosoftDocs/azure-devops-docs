@@ -3,7 +3,7 @@ title: Rebuild the client cache
 titleSuffix: Azure DevOps Server 
 description: Update the data cache on client computers after certain maintenance operations.
 ms.service: azure-devops-boards
-ms.custom: witadmin
+ms.custom: witadmin, archive-candidate
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
 ms.topic: reference
 ms.author: kaelli

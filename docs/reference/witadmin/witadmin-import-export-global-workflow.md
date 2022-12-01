@@ -3,7 +3,7 @@ title: Import and export global workflow using witadmin
 titleSuffix: Azure DevOps  
 description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple projects and types of work items share 
 ms.service: azure-devops-boards
-ms.custom: witadmin
+ms.custom: witadmin, archive-candidate
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
 ms.topic: reference
 ms.author: kaelli
