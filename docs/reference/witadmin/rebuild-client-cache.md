@@ -37,19 +37,19 @@ To run the `witadmin` command-line tool, open a Command Prompt window where Visu
 > We recommend that you use the same or later version of Visual Studio as your Azure DevOps Server. For example, if you connect to Azure DevOps Server 2019, then connect to your project from a version of Visual Studio 2019. 
 
 
-### For Visual Studio 2022 
+**For Visual Studio 2022** 
 
 `%programfiles(x86)%\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
 or `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
 
-### For Visual Studio 2019
+**For Visual Studio 2019**
 
 `%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
 or `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
 
-### For Visual Studio 2017
+**For Visual Studio 2017**
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
@@ -75,7 +75,7 @@ witadmin rebuildcache /collection:CollectionURL [/noprompt]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /> **On-premises TFS format:**  `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then the format for the URI is as shown: `http://ServerName:Port/CollectionName`.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /> **On-premises format:**  `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then the format for the URI is as shown: `http://ServerName:Port/CollectionName`.|  
 |`/noprompt`|Disables the prompt for confirmation.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
   

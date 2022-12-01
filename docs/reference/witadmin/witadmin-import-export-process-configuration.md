@@ -1,7 +1,7 @@
 ---
 title: Import or export process configuration  
 titleSuffix: Azure DevOps
-description: Modify the display of the Azure Boards pages that you view through the web portal 
+description: Modify the display of the Azure Boards pages that you view through the web portal using command line tools.
 ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
@@ -101,7 +101,7 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
    `/v`
    :::column-end:::
    :::column span="3":::
-   Optional. Validates the XML that defines the process configuration but does not import the definition file.
+   Optional. Validates the XML that defines the process configuration but doesn't import the definition file.
    :::column-end:::   
 :::row-end:::
 :::row:::
@@ -115,17 +115,17 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
 
 ## Remarks  
 
-Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true).  
+Installing the latest version of Azure DevOps upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true).  
 
- If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management).  
+If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management).  
 
 ## Examples  
 
 The following values apply in each example:  
 
--   URL for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
--   Project: Contoso   
--   Port number for the server website: 8080  
+-   URL for the collection: `http://AdventureWorksServer:8080/tfs/DefaultCollection`    
+-   Project: `Contoso`   
+-   Port number for the server website: `8080`  
 
 <a name="quick_add"></a>   
 

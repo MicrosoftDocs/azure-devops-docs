@@ -58,13 +58,13 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|  
 |`/p:Project`|The project for which the types of work items are to be managed. This project must be defined in the project collection specified by the **/collection** parameter.<br /><br /> The **/p** parameter is required unless you run the **importwitd** command with the **/v** option.|  
 `/n:TypeName`|The name of the work item type to destroy, export, import, or rename.|  
 |`/f:FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window.<br /><br /> **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft web site.|  
 |`/e:*Encoding`|The name of a .NET Framework 2.0 encoding format. The command uses the specified encoding to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** tries to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |`/exportgloballists`|Exports the definitions of global lists referenced by the work item type. The definitions for global lists will be embedded into the work item type definition XML. When not specified, the definitions for global lists are omitted.|  
-|`/v`|Validates the XML that defines the work item type, but does not import the XML definition file. **Note:**  You can validate the type definition without specifying a project. References to project-scoped groups is ignored.|  
+|`/v`|Validates the XML that defines the work item type, but doesn't import the XML definition file. **Note:**  You can validate the type definition without specifying a project. References to project-scoped groups is ignored.|  
 |`/new:NewName`|The new name of the work item type.|  
 |`/noprompt`|Disables the prompt for confirmation.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
@@ -127,7 +127,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 ```  
   
 ### Validate the XML definition of a WIT  
- The following example validates the XML that defines the work item type but does not import the definition.  
+ The following example validates the XML that defines the work item type but doesn't import the definition.  
   
 ```  
 witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks /v  

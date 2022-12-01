@@ -1,7 +1,7 @@
 ---
-title: Import and export global lists using witadmin
+title: Import and export global lists 
 titleSuffix: Azure DevOps  
-description: Customize or update a global list by export and import using witadmin for Azure DevOps.
+description: Customize or update a global list by export and import using command line tools for Azure DevOps.
 ms.service: azure-devops-boards
 ms.custom: witadmin, archive-candidate
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
@@ -58,16 +58,16 @@ witadmin listgloballist /collection:CollectionURL
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:**  `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then the format for the URI is the following: `http://ServerName:Port/CollectionName`.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:**  `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, then use the following format for the URI: `http://ServerName:Port/CollectionName`.|  
 |`/n`:`GlobalListName`|The name of the global list to destroy.|  
-|`/f`:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft Web site. To avoid this redirection, you can export the file to a location where you have permissions.|  
-|`/e`:`Encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
+|`/f`:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:** If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft Web site. To avoid this redirection, you can export the file to a location where you have permissions.|  
+|`/e`:`Encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, `witadmin` uses UTF-8.|  
 |`/noprompt`|Disables the prompt for confirmation.|  
 |`/?` or `help`|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
 
-Importing a global list creates a list if one does not exist. If the list already exists, the `witadmin importgloballist` command will warn you that the current list will be overwritten. You can write your own program to update an existing global list, or you can update the global list yourself with the new data.  
+Importing a global list creates a list if one doesn't exist. If the list already exists, the `witadmin importgloballist` command will warn you that the current list will be overwritten. You can write your own program to update an existing global list, or you can update the global list yourself with the new data.  
   
 To create a new global list, start with the following code and modify it as needed. This example defines a global list of disciplines that you can assign to tasks.  
   
