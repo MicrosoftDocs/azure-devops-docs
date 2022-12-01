@@ -17,11 +17,11 @@ monikerRange: '<= azure-devops'
 
 Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. You can get notified when changes occur to the following items:
 
-- work items
-- code reviews
-- pull requests
-- source control files
-- builds
+- Work items
+- Code reviews
+- Pull requests
+- Source control files
+- Builds
 
 For example, you can get notified whenever you or your team resolves a bug or are assigned a work item.
 
@@ -135,10 +135,9 @@ The preferred email address for your organization profile gets notifications, by
 
 ## Integrating with other services
 
-If your team uses an external service to collaborate&mdash;such as Campfire, Flowdock, or Slack&mdash;you can configure notifications to be sent to these services. These services are supported out of the box:
+If your team uses an external service to collaborate&mdash;such as Campfire or Slack&mdash;you can configure notifications to be sent to these services. These services are supported out of the box:
 
 - [Campfire](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
-- [Flowdock](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
 - [HipChat](../../service-hooks/overview.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json) 
 - [Slack](../../service-hooks/services/slack.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)  
 - [Microsoft Teams](../../service-hooks/services/teams.md?toc=/azure/devops/organizations/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json)

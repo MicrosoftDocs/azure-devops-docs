@@ -13411,7 +13411,7 @@
     },
     {
       "source_path_from_root": "/docs/integrate/redirection/service-hooks/flowdock-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
