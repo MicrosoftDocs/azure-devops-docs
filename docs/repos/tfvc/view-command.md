@@ -67,7 +67,7 @@ The following sections describe arguments and options of the `view` command.
    `<item-spec>`
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder to retrieve. For more information about how TFVC parses the `<item-spec>` argument to determine which items are within scope, see [Use Team Foundation version control commands - Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   Identifies the file or folder to retrieve. For more information about how TFVC parses the `<item-spec>` argument to determine which items are within scope, see [Use Team Foundation version control commands - Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
 
    > [!Note]  
    > You can specify more than one `<item-spec>` argument. 
