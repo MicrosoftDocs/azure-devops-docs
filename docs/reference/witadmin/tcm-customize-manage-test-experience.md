@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 12/01/2022
 ---
 
 # Customize and manage the test experience
@@ -54,18 +54,19 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 
 | **Parameter**  |   **Description**  |
 |----------------|--------------------|
-|**/export**     |Specifies export of the field mapping file of the type specified. For the syntax of supported file types, see the Remarks section.  |
-|**/import**     |Specifies import of the field mapping file.   |
-|**/mappingfile**:`Path`  |  The path and file name of the XML definition file that contains the field mappings.  |
-|**/collection**:`CollectionURL` |Specifies the uniform resource identifier (URI) of the project collection. The format for the URI is as follows: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, the format for the URI is as follows:<br /><br /> **http**://*ServerName:Port/CollectionName*  |
-|**/teamproject:**`Project`| Specifies the name of the project for which the field mappings are to be applied. This project must be defined in the project collection that is specified by the **/collection** parameter.   
-|**/type**:`resolutiontype|bug|failuretype`| The type of file to import or export. For the syntax structure of each file type, see [bug](#bug), [resolution states](#resolution), and [failure types](#failure). |
-|**/login:** `UserName,Password` | Optional. Specifies the name and password of a user who is logged who has permissions to run the command.<br /><br /> You would use this option when your Windows credentials do not have the appropriate permissions, you are using basic authentication, or you are not on a domain. |
-|  **/?** or **help**  | Displays help about the command in the Command Prompt window.  |
+|`/export`     |Specifies export of the field mapping file of the type specified. For the syntax of supported file types, see the Remarks section.  |
+|`/import`    |Specifies import of the field mapping file.   |
+|`/mappingfile`Path`  |  The path and file name of the XML definition file that contains the field mappings.  |
+|`/collection:CollectionURL` |Specifies the uniform resource identifier (URI) of the project collection. The format for the URI is as follows: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, the format for the URI is as follows:<br /><br /> **http**://*ServerName:Port/CollectionName*  |
+|`/teamproject:Project`| Specifies the name of the project for which the field mappings are to be applied. This project must be defined in the project collection that is specified by the **/collection** parameter.   
+|`/type`:`resolutiontype|bug|failuretype`| The type of file to import or export. For the syntax structure of each file type, see [bug](#bug), [resolution states](#resolution), and [failure types](#failure). |
+|`/login:UserName,Password` | Optional. Specifies the name and password of a user who is logged who has permissions to run the command.<br /><br /> You would use this option when your Windows credentials do not have the appropriate permissions, you are using basic authentication, or you are not on a domain. |
+|`/?` or `help`|Displays help about the command in the Command Prompt window.|  
+  
 
 ## Remarks  
 
-Each time that you run the **tcm fieldmapping import** command, the contents of the existing field mapping file are replaced with the contents that you import.  
+Each time that you run the `tcm fieldmapping import` command, the contents of the existing field mapping file are replaced with the contents that you import.  
 
 <a name="bug"></a> 
 

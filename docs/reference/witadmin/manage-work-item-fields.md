@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 12/01/2022
 ---
 
 # Manage work item fields
@@ -20,7 +20,7 @@ You can manage the fields defined for work item types that are defined for a pro
 
 ::: moniker range=">= azure-devops-2019"
 
--   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
+-   `changefield`: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
     -   **Data type** for `PlainText` or `HTML` fields.    
         > [!IMPORTANT]  
         >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
@@ -28,17 +28,17 @@ You can manage the fields defined for work item types that are defined for a pro
     -   **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.    
     -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
     -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
--   **deletefield**: Deletes the specified field.     
--   **listfields**: Lists the attributes for all fields or a specified field.
+-   `deletefield`: Deletes the specified field.     
+-   `listfields`: Lists the attributes for all fields or a specified field.
 
 > [!NOTE]
-> The **witadmin indexfield** command has been deprecated with Azure DevOps Server 2019 and later versions. Indexing fields is no longer required
+> The `witadmin indexfield` command has been deprecated with Azure DevOps Server 2019 and later versions. Indexing fields is no longer required.
 ::: moniker-end
 
   
 ::: moniker range="< azure-devops-2019"
 
--   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
+-   `changefield`: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
     -   **Data type** for `PlainText` or `HTML` fields.    
         > [!IMPORTANT]  
         >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
@@ -46,9 +46,9 @@ You can manage the fields defined for work item types that are defined for a pro
     -   **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.    
     -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
     -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
--   **deletefield**: Deletes the specified field.    
--   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
--   **listfields**: Lists the attributes for all fields or a specified field.
+-   `deletefield`: Deletes the specified field.    
+-   `indexfield`: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
+-   `listfields`: Lists the attributes for all fields or a specified field.
 
 ::: moniker-end
 
@@ -102,21 +102,21 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ### Parameters  
   
 |**Parameter**|**Description**|  
-|-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
-|**/n**:`RefName`<br />**/n**:`Name`|The reference name of a work item type field.|  
-|**/index**|Specifies to enable or disable indexing for the specified field. Specify **on** to enable indexing and **off** to disable indexing.|  
-|**/name:** `NewName`|Specifies the new name for the field.|  
-|**/syncnamechanges**|Specifies to use the work item field to store names and to update as changes are made in Active Directory or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
-|**/reportingname**:`ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
-|**/reportingrefname**:`ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
-|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).|  
-|**/reportingformula:** `Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
-|**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../xml/field-definition-element-reference.md).|  
-|**/unused**|Lists all fields that are not used by any project defined in the project collection.|  
-|**/noprompt**|Disables prompt for confirmation.|  
-|**/? or help**|Displays help about the command in the Command Prompt window.|  
-  
+|-------------------|---------------------| 
+
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
+|`/n:RefName`<br />`/n:Name`|The reference name of a work item type field.|  
+|`/index`|Specifies to enable or disable indexing for the specified field. Specify **on** to enable indexing and **off** to disable indexing.|  
+|`/name:NewName`|Specifies the new name for the field.|  
+|`/syncnamechanges`|Specifies to use the work item field to store names and to update as changes are made in Active Directory or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
+|`/reportingname:ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
+|`/reportingrefname:ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
+|`/reportingtype:Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   `dimension:` Used for the Integer, String, or DateTime fields.<br />-   `detail:` Used for the Integer, Double, String, or DateTime fields.<br />-   `measure:` Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-  `none:` Used to disable reportability on the field.<br /><br /> For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).|  
+|`/reportingformula:Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
+|`/type:HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../xml/field-definition-element-reference.md).|  
+|`/unused`|Lists all fields that are not used by any project defined in the project collection.|  
+|`/noprompt`|Disables prompt for confirmation.|  
+|`/?` or `help`|Displays help about the command in the Command Prompt window.|  
 
 
 
@@ -163,7 +163,7 @@ Unless otherwise specified, the following values apply in each example:
   
 ### List fields  
 
-Use **witadmin listfields** to see the set of fields in use, to select one to add to a work item type. Also, you can list the attribute assignments defined for a specific field and determine which fields are used by which projects.  
+Use `witadmin listfields` to see the set of fields in use, to select one to add to a work item type. Also, you can list the attribute assignments defined for a specific field and determine which fields are used by which projects.  
   
 ### View the attributes of a work item field  
 
@@ -377,8 +377,6 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 ```  
 
 Enter **y** at the confirmation prompt to complete this step.  
-  
-
 
 
 ::: moniker range="< azure-devops-2019"
