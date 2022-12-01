@@ -3,7 +3,7 @@ title: Import and export global lists using witadmin
 titleSuffix: Azure DevOps  
 description: Customize or update a global list by export/import using witadmin for Azure DevOps
 ms.service: azure-devops-boards
-ms.custom: witadmin
+ms.custom: witadmin, archive-candidate
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.topic: reference
 ms.author: kaelli
