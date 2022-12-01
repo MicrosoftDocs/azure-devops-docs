@@ -1,5 +1,7 @@
 ---
 ms.topic: include
+ms.service: azure-devops-boards
+ms.date: 12/01/2022
 ---
 
 
@@ -18,8 +20,7 @@ To run the `witadmin` command-line tool, open a Command Prompt window where Visu
 > If you are connecting to an on-premises server, we recommend that you use the same or later version of Visual Studio as your Azure DevOps Server. For example, if you connect to Azure DevOps Server 2019, then connect to your project from a version of Visual Studio 2019. 
 ::: moniker-end
 
-**
-For Visual Studio 2022** 
+**For Visual Studio 2022** 
 
 `%programfiles(x86)%\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
