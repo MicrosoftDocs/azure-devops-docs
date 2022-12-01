@@ -34,7 +34,7 @@ Use this article to learn how to complete these tasks:
 - To add or edit a Delivery Plan, you must be a member of the Contributors group for the project where you add the plan. 
 - To add team backlogs to a plan, you must have view permissions to those projects. 
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. 
-- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan. Or, you must be a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
  
 ## Before you define a plan
 
@@ -45,7 +45,7 @@ To add and configure a Delivery Plan, the following elements must be configured:
 - [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- **Iteration Paths** must be assigned **Start** and **End Dates** or they won't appear on the plan. 
 	- Also, **Iteration Paths** must be selected for the team whose backlogs you select, or work items associated with those **Iteration Paths** won't appear on the plan.   
-- Teams have defined [product backlog items](../backlogs/create-your-backlog.md), or [portfolio backlogs](../backlogs/define-features-epics.md) and assigned those items to either a **Start Date** and **End Date** or an **Iteration Path**.   
+- Each team must have defined [product backlog items](../backlogs/create-your-backlog.md), or [portfolio backlogs](../backlogs/define-features-epics.md) and assigned those items to either a **Start Date** and **End Date** or an **Iteration Path**.   
  
 > [!TIP]  
 > If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.   
@@ -61,7 +61,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 |-------------|-------------------|
 |**Overview**|Edit the plan **Name** or **Description**. |
 |**[Teams](#teams)** |Add or remove a team backlog. You can add up to 20 backlog levels for Azure DevOps Services or 15 backlog levels for Azure DevOps Server 2022. You can add a mix of backlog levels and teams from any project defined for the organization.  |
-|**[Field criteria](#field-criteria)**|Specify field criteria to filter work item types displayed on the plan. All criteria is evaluated as an AND statement.  If no fields are specified, then all work item types that appear on the teams backlog level appear on the delivery plan.  |
+|**[Field criteria](#field-criteria)**|Specify field criteria to filter work item types displayed on the plan. All criteria are evaluated as an AND statement.  If no fields are specified, then all work item types that appear on the teams backlog level appear on the delivery plan.  |
 |**[Markers](#markers)** |Add up to 30 milestone markers to the plan. Specify a label and select a color.  |  
 |**[Fields](#fields)** |Add or remove fields from cards to display on the plan, similar to how you [customize them for your Kanban board](../../boards/boards/customize-cards.md). You can't add rich-text (HTML) fields, such as the Description field, to a card even if it appears in the list. These field types represent too many challenges to format on a card.    |
 |**[Styles](#styles)** |Add styling rules to change card color based on field criteria. |
@@ -101,7 +101,7 @@ When defining a plan, note the following information:
 
 ## Edit a plan 
 
-Once you've defined a plan, you can modify it or further customize it. 
+Once you've defined a plan, you can modify or further customize it. 
 
 1. Choose the **Settings** to open the **Plans settings** dialog. 
 
@@ -144,7 +144,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 	:::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Plans settings, Markers tab, two markers defined.":::   
 
-1.	To add additional markers, choose **+ Add marker**. You can add up to 30 markers. The **+ Add marker** button becomes disabled after 30 markers have been added.  
+1.	To add more markers, choose **+ Add marker**. You can add up to 30 markers. The **+ Add marker** button becomes disabled after 30 markers have been added.  
 
 2.	Choose **Save** when done. 
 
