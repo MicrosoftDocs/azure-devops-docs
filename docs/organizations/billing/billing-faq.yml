@@ -9,13 +9,13 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/04/2022
+  ms.date: 12/02/2022
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-  In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
+  In this article, you can find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   
   [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
@@ -71,6 +71,16 @@ sections:
         answer: |
           A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased five MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case, you're charged one-third of the monthly cost of five hosted pipelines.
 
+      - question: |
+          Q: What happens if I set up billing before my Azure Test Plans trial expires?
+        answer: |
+          A: If you [set up billing](set-up-billing-for-your-organization-vs.md) before your trial expires, you don't get charged before the 30 (media/billing-faq/view-daily-costs.png
+
+      - question: |
+          Q: What happens if I don't set up billing and my Azure Test Plans trial expires?
+        answer: |
+          A: Those users assigned Basic + Test Plans lose access until you do [set up billing](set-up-billing-for-your-organization-vs.md).
+      
       - question: |
           Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
         answer: |
