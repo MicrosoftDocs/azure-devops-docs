@@ -1,9 +1,9 @@
 ---
-title: View Artifacts storage
+title: View Artifacts storage consumption
 description: View Azure Artifacts storage consumption at organization and project levels.
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 04/07/2021
+ms.date: 12/02/2022
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '<= azure-devops'
@@ -14,14 +14,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
-
-Azure Artifacts uses a consumption-based billing for all the supported package types (NuGet, npm, Python, Maven, and Universal packages). Storing symbols files is free.
+Azure Artifacts uses a consumption-based billing for all the supported package types (NuGet, npm, Python, Maven, and Universal packages). With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
 
 Using the artifact storage UI from your organization/project settings, you can view your storage consumption at both the organization level and the project level. Storage is also grouped by project and/or by artifact type.
-
-> [!NOTE]
-> Azure Artifacts offers 2GiB of free storage for **every organization**. Once the maximum storage limit is reached, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ## Organization-level storage
 
@@ -29,15 +24,13 @@ The organization-level view shows your total storage summary and your storage co
 
 1. From within your organization, select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
-1. Under **Artifacts**, select **Storage** on the left pane.
+1. Select **Storage** from the left pane.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows a menu in organization settings with artifact storage highlighted.](media/artifact-storage-navigation.png)
+    :::image type="content" source="media/artifact-storage-navigation.png" alt-text="A screenshot showing how to navigate to org-level storage.":::
 
-1. View your storage consumption for each section.
+1. You can view your total storage summary, storage by artifact type, and storage by projects in your organization.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of organization-level artifact storage, with sections for summary, type, and projects.](media/org-level-storage.png)
+    :::image type="content" source="media/org-level-storage.png" alt-text="A screenshot showing the storage consumption levels.":::
 
 For the current release, you can view the storage breakdown for **Packages** and for projects listed in the **Storage by projects** section.
 
@@ -66,6 +59,9 @@ The project-level view shows your total storage summary and your storage consump
     > ![Screenshot of project-level artifact storage, with sections for summary and type.](media/project-level-storage.png)
 
 The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only.
+
+> [!NOTE]
+> Azure Artifacts offers 2GiB of free storage for every organization. Once the maximum storage limit is reached, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ## Related articles
 
