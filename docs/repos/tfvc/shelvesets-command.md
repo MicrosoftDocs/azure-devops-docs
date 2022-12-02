@@ -21,7 +21,7 @@ The Team Foundation Version Control (TFVC) `shelvesets` command displays informa
 
 ## Prerequisites
 
-To use the `shelvesets` command, you must the have **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `shelvesets` command, you must have the **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
@@ -53,7 +53,7 @@ tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamPro
 
 Shelvesets are created by the [Shelve command](shelve-command.md). Shelvesets are stored on the Azure DevOps server and can be retrieved into a workspace by any user who has sufficient permissions by using the [Unshelve command](unshelve-command.md).
 
-Unlike a changeset, a shelveset is a non-versioned entity. If you or another user unshelve the items in a shelveset, edit several files, and re-shelve the shelveset, TFVC doesn't create a new version of the items for future comparison, and maintains no record of who revised the items, when, or how. For more information about deciding whether to shelve or check in a set of pending changes, and a general overview of shelving, see [Work with shelvesets](suspend-your-work-manage-your-shelvesets.md).
+Unlike a changeset, a shelveset is a non-versioned entity. If you or another user unshelve the items in a shelveset, edit several files, and reshelve the shelveset, TFVC doesn't create a new version of the items for future comparison. TFVC maintains no record of who revised the items, when, or how. For more information about deciding whether to shelve or check in a set of pending changes, and a general overview of shelving, see [Work with shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
 For detailed information about the individual source file revisions in a particular shelveset, you can use the [Status command](status-command.md) with the `/shelveset` option.
 
