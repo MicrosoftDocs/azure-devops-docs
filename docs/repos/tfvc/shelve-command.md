@@ -105,13 +105,13 @@ The following example deletes the existing shelveset `new-feature` from the serv
 c:\projects> tf shelve new-feature /replace
 ```
 
-The following example creates a shelveset named `HelloWorld_TestMe` that includes all pending changes to all *.cs* files in the *C:\\projects* working folder and its subfolders.
+The following example creates a shelveset named `HelloWorld_TestMe` that includes all pending changes to all *.cs* files in the *C:\\projects* working folder and its subfolders:
 
 ```
 c:\projects> tf shelve HelloWorld_TestMe c:\projects\*.cs /recursive
 ```
 
-The following example deletes the `HelloWorld_24` shelveset.
+The following example deletes the `HelloWorld_24` shelveset:
 
 ```
 c:\projects> tf shelve HelloWorld_24 /delete
