@@ -25,7 +25,7 @@ same syntax described in the following sections.
 
 ## Go get with public projects
 
-If your Azure Repos Git repo is in a [public project](../../organizations/public/about-public-projects.md) 
+If your Azure Repos Git repo is in a [public project](../../organizations/projects/about-projects.md) 
 you can use `go get` using the web repo url in the following format, 
 and Azure Repos returns the appropriate meta tags so that `go get` knows 
 the type and location of the repo to retrieve it.

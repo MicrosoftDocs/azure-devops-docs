@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/26/2022
+ms.date: 11/08/2022
 ---
 
 # Create an active bugs report in Power BI based on a custom Analytics view
@@ -35,32 +35,16 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
     d. Create a card and apply the Is Current=True filter to show current count.  
 
 
-<a id="prerequisites">  </a>
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-## Prerequisites  
 
-To create a Power BI report that references an Analytics view, you must meet the following criteria.  
+### Power BI prerequisites  
 
-::: moniker range="azure-devops"
+To create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
-- You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
-- Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
-- Have tracked bugs for some period of time to generate a trend report. 
+- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
+- Have tracked work items for some period of time on which to generate a trend report. 
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-- You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
-- Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
-- Have tracked bugs for some period of time to generate a trend report.  
-
-::: moniker-end
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 

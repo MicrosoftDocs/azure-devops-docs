@@ -35,7 +35,7 @@ sections:
       - question: How can non-contributors view or modify work items?  
         answer: |
           ::: moniker range="azure-devops"
-          For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [About public projects](../organizations/public/about-public-projects.md).   
+          For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [Make a private project public](../organizations/projects/make-project-public.md).   
           Also, if your organization uses Azure Active Directory to manage user access, you can [add external users to your organization](../organizations/accounts/add-external-user.md).
           ::: moniker-end
 
@@ -46,8 +46,8 @@ sections:
       - question: How can I restrict viewing or modifying select work items?  
         answer: |
           You can restrict access by setting permissions for an area path. To learn more, see the following articles: 
-          - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-          - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
+          - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json)
+          - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json) 
 
       - question: Can caching impact rules applied to work items?  
         answer: | 

@@ -52,7 +52,7 @@ tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] it
 |---|---|
 |`/encoding`|Ignore this parameter.|
 |`<itemspec>`|Specifies the scope of the items to check out. For syntax, see [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).|
-|`/lock`|Applies or removes a lock. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md#itemspec).|
+|`/lock`|Applies or removes a lock. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md#use-an-item-specification-argument-to-specify-affected-items).|
 |`/login:<username>[,<password>]`|Specifies the user account to run the command. See [Use Team Foundation Version Control commands](use-team-foundation-version-control-commands.md).|
 |`/recursive`|Recursively checks out items in the specified directory and any subdirectories.|
 

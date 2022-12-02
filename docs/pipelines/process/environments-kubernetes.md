@@ -22,7 +22,7 @@ You can use Kubernetes resources with public or private clusters. To learn more 
 
 See the following advantages of using Kubernetes resource views within environments:
 
-- **Pipeline traceability** - The [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
+- **Pipeline traceability** - The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
 
   > [!div class="mx-imgBorder"]
   > ![Pipeline traceability](media/k8s-pipeline-traceability.png)
@@ -230,7 +230,7 @@ stages:
               arguments: svc
               outputFormat: jsonpath='http://{.items[0].status.loadBalancer.ingress[0].ip}:{.items[0].spec.ports[0].port}'
 
-          # Getting the IP of the deployed service and writing it to a variable for posing comment
+          # Getting the IP of the deployed service and writing it to a variable for posting comment
           - script: |
               url="$(get.KubectlOutput)"
               message="Your review app has been deployed"

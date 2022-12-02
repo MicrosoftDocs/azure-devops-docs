@@ -149,7 +149,7 @@ A best practice is to manage users through security groups. You can use the defa
    
    - [Install extensions](../../marketplace/install-extension.md)
    - [Approve requests for extensions](../../marketplace/request-extensions.md)
-   - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
+   - [Uninstall or disable extensions](../../marketplace/install-extension.md#uninstall-disable-extension)
    :::column-end:::
    :::column span="1":::
    

@@ -523,6 +523,9 @@ You can use `if`, `elseif`, and `else` clauses to conditionally assign variable 
 
 ::: moniker range="< azure-devops-2022"
 You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+
+The `elseif` and `else` clauses are are available starting with Azure DevOps 2022 and are not available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
+
 ::: moniker-end
 
 Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
@@ -871,6 +874,7 @@ stages:
 ```
 
 If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
+
 ```yml
 stages:
 - stage: build
@@ -896,6 +900,40 @@ stages:
   dependsOn:
   - 'build'
   condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
+  jobs:
+    ...
+```
+
+In the example above, the condition references an environment and not an environment resource. To reference an environment resource, you'll need to add the environment resource name to the dependencies condition. In the following example, condition references an environment virtual machine resource named `vmtest`. 
+
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: vmtest
+      resourceName: winVM2
+      resourceType: VirtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  condition: eq(dependencies.build.outputs['build_job.Deploy_winVM2.setRunTests.runTests']
+, 'true')
   jobs:
     ...
 ```

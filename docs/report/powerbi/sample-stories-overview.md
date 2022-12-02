@@ -16,7 +16,7 @@ ms.date: 09/17/2021
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
+You can track the quality of work items that belong to the Requirements category with the requirements tracking report. The Requirements category includes work items such as User Stories (Agile), Product Backlog Items (Scrum), Issues (Basic), and Requirements (CMMI). To learn more about work item categories, see [Track user stories, issues, bugs, and other work items](../../boards/work-items/about-work-items.md#wit).
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -39,7 +39,7 @@ An example is shown in the following image.
 
 ### Query area and iteration paths
 
-In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
+In order to scope your report to a particular Area and Iteration path, you can filter the query using AreaSK and IterationSK. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
 
 ### Query for percentage of hours completion for requirements
 

@@ -180,7 +180,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 ## Create a project 
 
-If you signed up for Azure DevOps with an existing Microsoft account or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing Microsoft account or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/projects/about-projects.md). 
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
@@ -267,7 +267,7 @@ You can rename your project or change its visibility. To learn more about managi
 - [Manage projects](../../organizations/projects/about-projects.md)  
 - [Rename a project](../../organizations/projects/rename-project.md)  
 - [Delete a project](../../organizations/projects/delete-project.md)
-- [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
+- [Change the project visibility, public or private](../../organizations/projects/make-project-public.md)
 
 ## Try this next  
  

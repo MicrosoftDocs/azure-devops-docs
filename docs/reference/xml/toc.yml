@@ -3,7 +3,7 @@
 - name: Fields
   items:
   - name: View fields
-    href: ../../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    href: ../../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json
   - name: Add or modify a field
     href: ../add-modify-field.md
   - name: Apply a field rule

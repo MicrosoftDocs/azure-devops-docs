@@ -48,7 +48,7 @@ ms.date: 10/19/2022
 :::row:::
    :::column span="4":::
    > [!NOTE]   
-   > All users granted Stakeholder access can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. To learn more, see [Stakeholder access quick reference](/stakeholder-access.md).
+   > All users granted Stakeholder access can only add existing tags. Even if the **Create tag definition** permission is set to **Allow**, stakeholders can't add tags. This is part of the Stakeholder access settings. To learn more, see [Stakeholder access quick reference](../stakeholder-access.md).
    > Although the **Create tag definition**  permission appears
    > in the security settings at the project-level,
    > tagging permissions are actually collection level permissions that are scoped
@@ -213,7 +213,7 @@ ms.date: 10/19/2022
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
-   Can [change the project visibility](../../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
+   Can [change the project visibility](../../projects/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
 :::row:::
