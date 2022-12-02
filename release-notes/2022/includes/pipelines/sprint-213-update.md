@@ -16,7 +16,7 @@ For a full list of differences between ubuntu-22.04 and ubuntu-20.04, visit the 
 You can use a System-assigned Managed Identity when creating Docker Registry service connections for Azure Container Registry. This allows you to access Azure Container Registry using a Managed Identity associated with a self-hosted Azure Pipelines agent, eliminating the need to manage credentials.
 
 > [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/213-pipelines-05.png)
+> ![New Docker Registry Service Connection for Changes to Approvals](../../media/213-pipelines-05.png)
 
 > [!NOTE]
 > The Managed Identity used to access Azure Container Registry will need the appropriate Azure RBAC role assignment, e.g. AcrPull or AcrPush role.
@@ -26,10 +26,10 @@ You can use a System-assigned Managed Identity when creating Docker Registry ser
 When you restrict pipeline permissions of a protected resource, such as a service connection, the associated Audit Event Log now correctly states that the resource was "successfully _unauthorized_" for its project.
 
 > [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/213-pipelines-01.png)
+> ![Pipeline Permissions for Changes to Approvals](../../media/213-pipelines-01.png)
 
 > [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/213-pipelines-02.png)
+> ![Successfully Authorized for Changes to Approvals](../../media/213-pipelines-02.png)
 
 ### Ensure Your Organization only Uses YAML Pipelines
 
@@ -38,7 +38,7 @@ Azure DevOps now allows you to ensure your organization only uses YAML pipelines
 You can disable creation of classic pipelines at organization level or project-level, by turning on the corresponding toggles. The toggles can be found in Project / Org Settings -> Pipelines -> Settings and look like in the following screenshot. Their default state is off, and they require admin rights to change their state. If the toggle is on at organisation-level, the disabling is enforced for all projects. Otherwise, each project is free to choose whether to enforce or not the disablement.
 
 > [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/213-pipelines-03.png)
+> ![Disable Creation Of Classic Build and Classic Pipeline for Changes to Approvals](../../media/213-pipelines-03.png)
 
 When disabling the creation of classic pipelines is enforced, REST APIs related to creating classic pipelines, task groups, and deployment groups will fail. REST APIs that create YAML pipelines will work.
 
@@ -159,7 +159,7 @@ If you use a custom agent pool, managing which pipelines can access it was cours
 Azure Pipelines now provides a fine-grained access management for agent pools. The experience is similar to the one for managing pipeline permissions for Service Connections.
 
 > [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/213-pipelines-06.png)
+> ![FabrikamFiber Agent Pool for Changes to Approvals](../../media/213-pipelines-06.png)
 
 ### Prevent Accidental Granting of Pipeline Access Permissions
 
@@ -170,7 +170,7 @@ Up until now, this option was checked by default. While this makes it easier for
 To promote a secure-by-default choice, Azure DevOps now leaves the checkbox unticked.
 
 > [!div class="mx-imgBorder"]
-> ![Audit Events for Changes to Approvals](../../media/213-pipelines-04.png)
+> ![New Generic Service Connection for Changes to Approvals](../../media/213-pipelines-04.png)
 
 ### Improve Security when Building PRs from Forked GitHub Repos
 

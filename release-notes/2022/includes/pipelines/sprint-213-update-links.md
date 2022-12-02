@@ -11,6 +11,6 @@ ms.topic: include
 - [Ensure Your Organization only Uses YAML Pipelines](#ensure-your-organization-only-uses-yaml-pipelines)
 - [Service Hook for Job State Change](#service-hook-for-job-state-change)
 - [Fine-grained Access Management for Agent Pools](#fine-grained-access-management-for-agent-pools)
-- [Prevent Accidental Granting of Pipeline Access Permissions](#prevent-accidental-granting-of-pipeline-access-permissionsn)
+- [Prevent Accidental Granting of Pipeline Access Permissions](#prevent-accidental-granting-of-pipeline-access-permissions)
 - [Improve Security when Building PRs from Forked GitHub Repos](#improve-security-when-building-prs-from-forked-github-repos)
 
