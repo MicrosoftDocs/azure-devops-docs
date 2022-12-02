@@ -54,7 +54,7 @@ To prepare for when your team grows large enough to need [branches](./branching-
 
 1. On the Visual Studio menu bar, choose **File** > **Source Control**> **New Folder**.
 
-1. In **Source Control Explorer**, rename the folder *Main*.
+1. In **Source Control Explorer**, rename the folder to *Main*.
 
    ![Screenshot that shows renaming the new folder in Source Control Explorer.](media/set-up-team-foundation-version-control-your-dev-machine/IC675823.png)
 
