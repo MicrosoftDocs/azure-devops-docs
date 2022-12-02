@@ -22,7 +22,7 @@ You can change the location of your workspace from server to local or from local
 
 ## When to use a local workspace
 
-Use a local workspace if there isn't a reliable connection between your computer and the Azure DevOps instance you're connected to, and there will be less than 100,000 items in the workspace. You might also prefer a local workspace if you don't need to work as part of a team, and you strongly prefer working with the file system in a manner similar to Git.
+Use a local workspace if there isn't a reliable connection between your computer and the server you're connected to, and there will be less than 100,000 items in the workspace. You might also prefer a local workspace if you don't work as part of a team, and you prefer working with the file system in a manner similar to Git.
 
 - Using local workspaces makes [check-out locks](understand-lock-types.md) unenforceable.
 
@@ -31,7 +31,7 @@ Use a local workspace if there isn't a reliable connection between your computer
 - Although Visual Studio doesn't block you from running multiple instances against the same workspace, this usage isn't supported. Working this way is more likely to cause problems if you're using a local workspace.
 
 > [!IMPORTANT]
-> With a local workspace, performance can degrade as the number of items approaches or exceeds 100,000. Local workspaces keep multiple copies of the same file to enable some version control actions locally, because the server connection isn't reliably available. Multiple copies also take up more room on disk.
+> With a local workspace, performance can degrade as the number of items approaches or exceeds 100,000. Local workspaces keep multiple copies of the same file, to enable some version control actions locally if the server connection isn't available. Multiple copies also take up more room on disk.
 
 ## When to use a server workspace
 
@@ -39,7 +39,7 @@ Use a server workspace when the specific conditions aren't met for using a local
 
 ### Work in a server workspace while disconnected
 
-You can still work in a server workspace if you're temporarily disconnected from the Azure DevOps server by taking the solution *offline*. Later when the connection is available, you can take the solution online to return to the connected behavior. Visual Studio detects a disconnected condition and takes the solution offline automatically, but if you want to do so manually, follow these steps.
+You can still work in a server workspace if you're temporarily disconnected from the TFVC server by taking the solution *offline*. Later when the connection is available, you can take the solution online to return to the connected behavior. Visual Studio detects a disconnected condition and takes the solution offline automatically, but if you want to do so manually, follow these steps.
 
 > [!TIP]
 > If working offline is important to you, consider using a local workspace instead of a server workspace.
@@ -70,29 +70,26 @@ Visual Studio doesn't put a solution back online automatically. You must do that
 
 ## Manage project collection workspace settings for your team
 
-If you're an [administrator](../../organizations/security/permissions.md), you can specify which type of workspace Visual Studio creates for your team members by default, Local or Server. You can also enable asynchronous checkout for your team's server workspaces.
+If you're an [administrator](../../organizations/security/permissions.md), you can specify which type of workspace Visual Studio creates for your team members by default, local or server. You can also enable asynchronous checkout for your team's server workspaces.
 
 1. In the Visual Studio menu bar, choose **Team** > **Project Collection Settings**> **Source Control**. The **Source Control Settings** dialog box appears.
 
-1. On the **Workspace Settings** tab, choose either the **Local** or **Server** option button.
+1. On the **Workspace Settings** tab, choose either the **Local** or **Server** option.
 
 1. You can reduce the time the system takes to check out files to server workspaces by selecting **Enable asynchronous checkout in server workspaces**. If you select this option:
 
    - The **PendChange** permission is no longer enforced.
    - Checkout locks are disabled.
 
+1. Select **OK**.
+
 ## Work from the command prompt
 
 Use the TFVC utility [Workspace](workspace-command.md) and [Workspaces](workspaces-command.md) commands to create and manage workspaces from the command prompt.
 
-If you have sufficient [permissions](../../organizations/security/permissions.md#tfvc), you can use the following [workspaces command](workspaces-command.md) to see the local workspaces that are used in your project collection.
+If you have sufficient [permissions](../../organizations/security/permissions.md#tfvc), you can use the following `workspaces` command to see the local workspaces that are used in your project collection.
 
 ```
-tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
+tf workspaces /format:detailed /owner:* /collection:https://<YourServer>/<YourCollection>/
 ```
 
-> [!NOTE]
-
-### Q: How does a local workspace work?
-
-**A:** 
