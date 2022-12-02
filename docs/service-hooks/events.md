@@ -92,92 +92,176 @@ Event: A build completes.
 #### Sample payload
 ```json
 {
-  "id": "4a5d99d6-1c75-4e53-91b9-ee80057d4ce3",
+  "subscriptionId": "4f6e6328-0251-4814-a009-c01dfa368e3f",
+  "notificationId": 1,
+  "id": "33433986-7f56-4969-bfd4-3e59774c75ad",
   "eventType": "build.complete",
   "publisherId": "tfs",
-  "scope": "all",
   "message": {
-    "text": "Build ConsumerAddressModule_20150407.2 succeeded",
-    "html": "Build <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3\">ConsumerAddressModule_20150407.2</a> succeeded",
-    "markdown": "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
+    "text": "Build 20221202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20221202.1</a> succeeded",
+    "markdown": "Build [20221202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
   },
   "detailedMessage": {
-    "text": "Build ConsumerAddressModule_20150407.2 succeeded",
-    "html": "Build <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3\">ConsumerAddressModule_20150407.2</a> succeeded",
-    "markdown": "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
+    "text": "Build 20221202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20221202.1</a> succeeded",
+    "markdown": "Build [20221202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=54d02617-2ebd-42b0-b1e2-257059c4c03d&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
   },
   "resource": {
-    "uri": "vstfs:///Build/Build/2",
-    "id": 2,
-    "buildNumber": "ConsumerAddressModule_20150407.1",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Builds/2",
-    "startTime": "2015-04-07T18:04:06.83Z",
-    "finishTime": "2015-04-07T18:06:10.69Z",
-    "reason": "manual",
-    "status": "succeeded",
-    "dropLocation": "#/3/drop",
-    "drop": {
-      "location": "#/3/drop",
-      "type": "container",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/drop",
-      "downloadUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/drop?api-version=1.0&$format=zip&downloadFileName=ConsumerAddressModule_20150407.1_drop"
-    },
-    "log": {
-      "type": "container",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/logs",
-      "downloadUrl": "https://dev.azure.com/fabrikam-fiber-inc/_apis/resources/Containers/3/logs?api-version=1.0&$format=zip&downloadFileName=ConsumerAddressModule_20150407.1_logs"
-    },
-    "sourceGetVersion": "LG:refs/heads/master:600c52d2d5b655caa111abfd863e5a9bd304bb0e",
-    "lastChangedBy": {
-      "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
-      "displayName": "Normal Paulk",
-      "uniqueName": "fabrikamfiber16@hotmail.com",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-      "imageUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
-    },
-    "retainIndefinitely": false,
-    "hasDiagnostics": true,
-    "definition": {
-      "batchSize": 1,
-      "triggerType": "none",
-      "definitionType": "xaml",
-      "id": 2,
-      "name": "ConsumerAddressModule",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Definitions/2"
-    },
-    "queue": {
-      "queueType": "buildController",
-      "id": 4,
-      "name": "Hosted Build Controller",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build/Queues/4"
-    },
-    "requests": [
-      {
-        "id": 1,
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Requests/1",
-        "requestedFor": {
-          "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
-          "displayName": "Normal Paulk",
-          "uniqueName": "fabrikamfiber16@hotmail.com",
-          "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-          "imageUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
-        }
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/Builds/2727068"
+      },
+      "web": {
+        "href": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_build/results?buildId=2727068"
+      },
+      "sourceVersionDisplayUri": {
+        "href": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/builds/2727068/sources"
+      },
+      "timeline": {
+        "href": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/builds/2727068/Timeline"
+      },
+      "badge": {
+        "href": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/status/4658"
       }
-    ]
+    },
+    "properties": {},
+    "tags": [],
+    "validationResults": [],
+    "plans": [
+      {
+        "planId": "cd96240e-881a-49e9-8135-89a4ad458a6d"
+      }
+    ],
+    "triggerInfo": {},
+    "id": 2727068,
+    "buildNumber": "20221202.1",
+    "status": "completed",
+    "result": "succeeded",
+    "queueTime": "2022-12-02T12:18:45.7367977Z",
+    "startTime": "2022-12-02T12:18:56.6205723Z",
+    "finishTime": "2022-12-02T12:21:08.520904Z",
+    "url": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/Builds/2727068",
+    "definition": {
+      "drafts": [],
+      "id": 4658,
+      "name": "MainRepo (1)",
+      "url": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d8fd-495c-917b-fec46cb44fbb/_apis/build/Definitions/4658?revision=1",
+      "uri": "vstfs:///Build/Definition/4658",
+      "path": "\\",
+      "type": "build",
+      "queueStatus": "enabled",
+      "revision": 1,
+      "project": {
+        "id": "16dcfeeb-d8fd-495c-917b-fec46cb44fbb",
+        "name": "FabrikamFiberChat",
+        "url": "https://dev.azure.com/FabrikamFiber/_apis/projects/16dcfeeb-d8fd-495c-917b-fec46cb44fbb",
+        "state": "wellFormed",
+        "revision": 876,
+        "visibility": "organization",
+        "lastUpdateTime": "2022-04-06T14:51:16.337Z"
+      }
+    },
+    "buildNumberRevision": 1,
+    "project": {
+      "id": "16dcfeeb-d8fd-495c-917b-fec46cb44fbb",
+      "name": "FabrikamFiberChat",
+      "url": "https://dev.azure.com/FabrikamFiber/_apis/projects/16dcfeeb-d8fd-495c-917b-fec46cb44fbb",
+      "state": "wellFormed",
+      "revision": 876,
+      "visibility": "organization",
+      "lastUpdateTime": "2022-04-06T14:51:16.337Z"
+    },
+    "uri": "vstfs:///Build/Build/2727068",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "6e12f6141917f66a2964af55952ee33914d2d91f",
+    "queue": {
+      "id": 4799,
+      "name": "Azure Pipelines",
+      "pool": {
+        "id": 112,
+        "name": "Azure Pipelines",
+        "isHosted": true
+      }
+    },
+    "priority": "normal",
+    "reason": "manual",
+    "requestedFor": {
+      "displayName": "Jack Fabrikam",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A9985ce4a-0206-43df-a8ea-076ae68596a9/_apis/Identities/57a5d794-9773-6c32-bbb6-550585695119",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc3My03YzMyLQJiYjYtNTUwNTg1Njk1MTE5"
+        }
+      },
+      "id": "57a5d794-9473-6c32-bbb6-550585695119",
+      "uniqueName": "jack@FabrikamFiber.com",
+      "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc1My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5",
+      "descriptor": "aad.NTdhNWQ3OTQtOTc6My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5"
+    },
+    "requestedBy": {
+      "displayName": "Jack Fabrikam",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A9985ce4a-0206-43df-a8ea-076ae68596a9/_apis/Identities/57a5d794-9773-6c32-bbb6-550585695119",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc3My03YzMyLQJiYjYtNTUwNTg1Njk1MTE5"
+        }
+      },
+      "id": "57a5d794-9473-6c32-bbb6-550585695119",
+      "uniqueName": "jack@FabrikamFiber.com",
+      "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc1My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5",
+      "descriptor": "aad.NTdhNWQ3OTQtOTc6My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5"
+    },
+    "lastChangedDate": "2022-12-02T12:21:08.96Z",
+    "lastChangedBy": {
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A9982ce4a-0206-43df-a8ea-076ae68596a9/_apis/Identities/00000002-0000-8888-8000-000000000000",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC02ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA"
+        }
+      },
+      "id": "00000002-0000-8888-8000-000000000000",
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA2ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA2ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA"
+    },
+    "orchestrationPlan": {
+      "planId": "cd96240e-881a-42e9-8135-89a4ad458a6d"
+    },
+    "logs": {
+      "id": 0,
+      "type": "Container",
+      "url": "https://dev.azure.com/FabrikamFiber/16dcfeeb-d2fd-495c-917b-fec46cb44fbb/_apis/build/builds/2727068/logs"
+    },
+    "repository": {
+      "id": "e5994ecb-b917-4d23-aa75-d52205c3c19b",
+      "type": "TfsGit",
+      "name": "MainRepo",
+      "url": "https://dev.azure.com/FabrikamFiber/FabrikamFiberChat/_git/FabrikamFiberChat",
+      "clean": null,
+      "checkoutSubmodules": false
+    },
+    "retainedByRelease": false,
+    "triggeredByBuild": null,
+    "appendCommitMessageToRunName": true
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
     "collection": {
-      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+      "id": "54d02617-2e2d-42b0-b1e2-257059c4c03d",
+      "baseUrl": "https://dev.azure.com/FabrikamFiber/"
     },
     "account": {
-      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+      "id": "998ace4a-0206-432f-a8ea-076ae68596a9",
+      "baseUrl": "https://dev.azure.com/FabrikamFiber/"
     },
     "project": {
-      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+      "id": "16dc2eeb-d8fd-495c-917b-fec46cb44fbb",
+      "baseUrl": "https://dev.azure.com/FabrikamFiber/"
     }
   },
-  "createdDate": "2016-09-19T13:03:26.4285528Z"
+  "createdDate": "2022-12-02T12:21:13.8866607Z"
 }
 ```
 
