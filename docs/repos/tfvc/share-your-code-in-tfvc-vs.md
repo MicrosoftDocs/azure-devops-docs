@@ -25,7 +25,7 @@ Whether your software project is large, small, or brand new, it's best to use ve
 
 ## Prerequisites
 
-- [Sign up for Azure DevOps and create a project](../../../organizations/accounts/create-organization.md).
+- [Sign up for Azure DevOps and create a project](../../organizations/accounts/create-organization.md).
 
 - Install [Visual Studio](https://visualstudio.microsoft.com/downloads).
 
@@ -37,7 +37,7 @@ Whether your software project is large, small, or brand new, it's best to use ve
 
    ![Screenshot that shows selecting Connect to connect a project.](media/share-your-code-in-tfvc-vs/connect.png)
 
-   If the project you want isn't listed, select **Manage Connections**, select **Connect to a Project**, and then select the project you want. For more information, see [Connect from Visual Studio or Team Explorer](../../../organizations/projects/connect-to-projects.md#connect-from-visual-studio-or-team-explorer).
+   If the project you want isn't listed, select **Manage Connections**, select **Connect to a Project**, and then select the project you want. For more information, see [Connect from Visual Studio or Team Explorer](../../organizations/projects/connect-to-projects.md#connect-from-visual-studio-or-team-explorer).
 
 > [!NOTE]
 > Some TFVC menu options aren't displayed in Visual Studio until you connect to TFVC.
@@ -55,7 +55,7 @@ Whether your software project is large, small, or brand new, it's best to use ve
 
    ![Screenshot shows a success message that verifies that Visual Studio is now connected to your project.](media/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
 
-If you don't see the **Configure your workspace** link, you might already have a workspace on your computer. To see existing workspaces, open **Source Control Explorer**, or look under **Solutions** in **Team Explorer**. For more information, see [Use Source Control Explorer to manage files in TFVC](./use-source-control-explorer-manage-files-under-version-control.md) or [Create and work with workspaces](./create-work-workspaces.md).
+If you don't see the **Configure your workspace** link, you might already have a workspace on your computer. To see existing workspaces, open **Source Control Explorer**, or look under **Solutions** in **Team Explorer**. For more information, see [Use Source Control Explorer to manage files in TFVC](./use-source-control-explorer-manage-files-under-version-control.md) and [Create and work with workspaces](./create-work-workspaces.md).
 
 ![Screenshot that shows Team Explorer, where you can select Source Control Explorer or Manage Workspaces.](media/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 
@@ -122,7 +122,7 @@ Your whole team can work on the code now. All changes are tracked in version con
 
    You can also check in from the code editor or from **Team Explorer**.
 
-1. If you're working on a task or fixing a bug that's tracked as a work item, you can add that work item to your pending changes. TFVC resolves the bug, closes the task, or links the changeset to the work item.
+1. If you're working on a task or fixing a bug that's tracked as a work item, you can associate that work item with your pending changes. TFVC resolves the bug, closes the task, or links the changeset to the work item.
 
    ![Screenshot shows Related Work Items in pending changes.](media/share-your-code-in-tfvc-vs/IC682159.png)
 

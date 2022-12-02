@@ -58,7 +58,7 @@ To set permissions for a custom security group, you must have defined that group
 
    ![Image that shows choosing a TFVC repository.](media/tfvc-permissions/open-tfvc-repositories-security-s185.png)
 
-1. Choose the user or security group you want to change permissions. 
+1. Choose the user or security group you want to change permissions for. 
 
    To set permissions for a specific user or group, enter their name in the identity box and select their identity. 
 
@@ -70,7 +70,7 @@ To set permissions for a custom security group, you must have defined that group
 
 1. When you're done, navigate away from the page. The permission changes are automatically saved for the selected user or group.
 
-   If you add a user or group, and don't change any permissions for that user or group, when you refresh the permissions page, the user or group you added no longer appears.
+   If you add a user or group and don't change any of their permissions, the user or group you added no longer appears after you refresh the permissions page.
 
    [!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
 
@@ -79,9 +79,9 @@ To set permissions for a custom security group, you must have defined that group
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. In the Azure DevOps web portal for the project where you want to set permissions, select **Project Settings**.
+To set the permissions for the TFVC repository for a project:
 
-To set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then 
+1. In the Azure DevOps web portal for the project where you want to set permissions, select **Project Settings**.
 
 1. Select **Repositories**.
 
@@ -97,7 +97,7 @@ To set the permissions for the TFVC repository for a project, choose **TFVC Repo
 
    [!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
 
-   If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+   If you add a user or group and don't change any of their permissions, the user or group you added no longer appears after you refresh the permissions page.
 
 1. Save your changes.  
 

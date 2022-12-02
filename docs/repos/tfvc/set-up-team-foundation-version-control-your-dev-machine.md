@@ -76,7 +76,7 @@ If you've got an idea for a new app, you can use TFVC version control from the s
 
 1. When you create a new code project that you want to put under TFVC solution control, put it in your mapped workspace folder like *c:\Users\\\<YourName>\\Source\\Workspaces\\YourTeamProject\\Main\\*.
 
-   Or, if you already have an app in progress that you want to put under TFVC source control, move the solution into your workspace folder.
+   Or, if you already have an app that you want to put under TFVC source control, move the solution into your workspace folder with Windows File Explorer.
 
 1. In Visual Studio, press Ctrl+Shift+O and open your solution, and open **Solution Explorer** by pressing Ctrl+Alt+L.
 
