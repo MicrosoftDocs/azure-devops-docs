@@ -37,7 +37,7 @@ A model offers the following benefits:
 
 - Provides a common framework and language to help communicate  
 - Leverages years of experience  
-- Helps users consider the large picture while focusing n improvement  
+- Helps users consider the large picture while focusing on improvement  
 - Is often supported by trainers and consultants  
 - Can help solve disagreements by providing agreed-upon standards
   
