@@ -140,8 +140,8 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
    :::column span="2":::
       - [View your subscriptions, opt-out as needed](about-settings.md)
-      - [Change your preferred email address](../../notifications/change-email-address.md)
-      - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
+      - [Change your preferred email address](../../organizations/notifications/change-email-address.md)
+      - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
    :::column-end:::
    :::column span="2":::
       Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.
@@ -217,10 +217,10 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       **Notifications**
    :::column-end:::
    :::column span="2":::
-      - [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many team notifications are automatically defined when a team is added. For more information about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).
+      Many team notifications are automatically defined when a team is added. For more information about how notifications are managed, see [About notifications](../../organizations/notifications/about-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -285,7 +285,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - Set project description
-      - [Change the project visibility, public or private](../public/make-project-public.md)
+      - [Change the project visibility, public or private](../projects/make-project-public.md)
    :::column-end:::
    :::column span="2":::
       Update the project description or change its visibility.
@@ -361,10 +361,10 @@ From the administrative **Project settings** page, you can configure settings av
       **Notifications**
    :::column-end:::
    :::column span="2":::
-      - [Manage project-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage project-level notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
+      Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -376,7 +376,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Configure service hooks](../../service-hooks/overview.md)
    :::column-end:::
    :::column span="2":::
-      With service hooks, you can automate a task on other services, such as [Campfire, Flowdock, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
+      With service hooks, you can automate a task on other services, such as [Campfire, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
    :::column-end:::
 :::row-end:::
 ---
@@ -482,7 +482,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Manage and configure team tools](manage-teams.md)
-      - [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
       For more information, see [About teams and Agile tools](about-teams-and-settings.md).
@@ -686,10 +686,10 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Global notifications**
    :::column-end:::
    :::column span="2":::
-      - [Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+      - [Manage collection-level notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
    :::column span="2":::
-      Many notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
+      Many notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -715,7 +715,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Install and manage Marketplace extensions](../../marketplace/install-extension.md)
       - [Approve extensions](../../marketplace/request-extensions.md)
       - [Grant permissions to manage extensions](../../marketplace/grant-permissions.md)
-      - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
+      - [Uninstall or disable extensions](../../marketplace/install-extension.md#uninstall-an-extension)
    :::column-end:::
    :::column span="2":::
       An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, and so on; build and release flows; code testing and tracking; and collaboration among team members.

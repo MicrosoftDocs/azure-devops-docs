@@ -561,7 +561,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@3
+          - task: TfxInstaller@4
             inputs:
               version: "v0.x"
           - task: Npm@1
@@ -588,7 +588,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@3
+          - task: TfxInstaller@4
             inputs:
               version: "0.x"
           - task: Npm@1
@@ -610,7 +610,7 @@ stages:
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
-          - task: PackageAzureDevOpsExtension@3
+          - task: PackageAzureDevOpsExtension@4
             inputs:
               rootFolder: '$(System.DefaultWorkingDirectory)'
               publisherId: '$(PublisherID)'
@@ -635,7 +635,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@3
+          - task: TfxInstaller@4
             inputs:
               version: "v0.x"
           - task: DownloadBuildArtifacts@0
@@ -644,7 +644,7 @@ stages:
               downloadType: "single"
               artifactName: "$(ArtifactName)"
               downloadPath: "$(System.DefaultWorkingDirectory)"
-          - task: PublishAzureDevOpsExtension@3
+          - task: PublishAzureDevOpsExtension@4
             inputs:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection

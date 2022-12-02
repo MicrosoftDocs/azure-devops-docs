@@ -432,7 +432,7 @@ To automate select actions, add custom rules to your Bug work item type. For exa
 One of the methods used by Azure DevOps to support integration is to link objects to other objects.  Along with linking work items to work items, you can also link work items to other objects. Link to objects such as builds, releases, branches, commits, and pull requests as illustrated in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Conceptual image that shows link types used to link work items to build and release objects.]( ../../notifications/media/types-of-work-item-links.png) 
+> ![Conceptual image that shows link types used to link work items to build and release objects.]( ../../organizations/notifications/media/types-of-work-item-links.png) 
  
 You can add a link from the work item or from the build and release objects. 
 

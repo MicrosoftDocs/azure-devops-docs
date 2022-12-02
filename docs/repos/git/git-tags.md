@@ -13,9 +13,9 @@ ms.subservice: azure-devops-repos-git
 # Use Git tags
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Azure DevOps supports both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can create annotated tags using the web portal, and starting with Visual Studio 2017 Update 6, you can create both lightweight and annotated tags from within Visual Studio. For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
+Azure DevOps supports both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can create annotated tags using the web portal. You can create both lightweight and annotated tags from within Visual Studio. For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
 
 This article provides an overview of working with Git tags in Azure DevOps and Visual Studio.
 
@@ -80,11 +80,21 @@ To view tags for a specific branch in the **Commits** view, navigate to your rep
 
 #### [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
+### View tags in the History view
 
-You can view tags in the **Tags** view and in the **History** view.
+You can view tags in the **History** view.
+
+1. From the **Git** menu in the menu bar, select **Manage Branches**.
+
+1. Select a branch to view history.
+
+   ![View tags in the History view.](media/git-tags/view-tags-from-commits-vs.png)
+
+   The red shapes are branches, and the green shapes are tags.
 
 ### View tags in the Tags view
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To view all tags in a repo, select **Tags** from the **Home** view.
 
@@ -108,12 +118,6 @@ You can view tags in the **Tags** view and in the **History** view.
 
 To retrieve the current list of tags from the source repo, perform a [fetch](pulling.md?tabs=visual-studio#download-changes-with-fetch) operation.
 
-### View tags in the History view
-
-You can also view tags in the **History** view, for example by navigating to the **Branches** view, right-clicking the desired branch, and choosing **View History**. The red shapes are branches, and the green shapes are tags.
-
-![View tags in the History view.](media/git-tags/view-tags-from-commits-vs.png)
-
 ---
 
 ## Create tag
@@ -130,7 +134,7 @@ To create a tag, you must have the [Create Tag](../../organizations/security/per
 You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view.
 
 >[!IMPORTANT]
-> You can only create annotated tags in the web portal. To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging) or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag).
+> You can only create annotated tags in the web portal or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag). To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 ### Create tags from the Tags view
 
@@ -159,7 +163,7 @@ To create a tag directly from the commits view, right-click the desired tag and 
 You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view.
 
 >[!IMPORTANT]
-> You can only create annotated tags in the web portal. To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging) or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag).
+> You can only create annotated tags in the web portal or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag). To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 ### Create tags from the Tags view
 
@@ -185,11 +189,23 @@ To create a tag directly from the commits view, right-click the desired tag and 
 
 #### [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
+You can create both annotated and lightweight tags in Visual Studio from both the **History** view and the **Tags** view. To create an annotated tag, provide both a name and a message when creating the tag. To create a lightweight tag, omit the message and supply only a name.
 
-You can create both annotated and lightweight tags in Visual Studio from both the **Tags** view and the **History** view. To create an annotated tag, provide both a name and a message when creating the tag. To create a lightweight tag, omit the message and supply only a name.
+### Create tags from the History view
+
+You can view tags in the **History** view.
+
+1. From the **Git** menu in the menu bar, select **Manage Branches**.
+
+1. Select a branch to view history, right-click a commit, and select **New Tag**.
+
+   ![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
+
+1. In the **Create a new tag** dialog, enter a **Tag name** only for a lightweight tag or a **Tag name** and **Tag message** for an annotated tag. Select **Create**.
 
 ### Create tags from the Tags view
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. Select **New Tag** in the **Tags** view to create a new tag.
 
@@ -206,12 +222,6 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 3. The new tag is created locally. Right-click the new tag and choose **Push** to push it to the remote repo. Select **Push All** to push all new local tags to the remote repo.
 
    ![Push new tag](media/git-tags/tag-created-vs.png)
-
-### Create tags from the History view
-
-To create a tag directly from the history view, right-click the desired commit and choose **Create Tag**.
-
-![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
 
 ---
 
@@ -268,7 +278,7 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-The steps in this procedure show you how to delete a tag in the local repo using Visual Studio 2017 Update 6.
+The steps in this procedure show you how to delete a tag in the local repo using Visual Studio 2019 Team Explorer.
 
 Right-click the tag to delete and choose **Delete Locally**
 
@@ -317,13 +327,15 @@ Right-click the tag to delete and choose **Delete Locally**
 
 #### [Visual Studio](#tab/visual-studio)
 
+The steps in this procedure show you how to create a branch from a tag using Visual Studio 2019 Team Explorer. For Visual Studio 2019 using the **Git** menu or Visual Studio 2022, use the browser.
+
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To create a branch from a tag, right-click the tag and choose **New Local Branch From**. You can also choose **Create Branch From Tag**.
 
    ![New branch from tag, Visual Studio.](media/git-tags/branch-from-tag-vs.png)
 
-2. Specify a branch name, verify the desired tag, and choose **Create Branch**. To checkout the new branch after it is created, choose **Checkout branch**.
+2. Specify a branch name, verify the desired tag, and choose **Create Branch**. To check out the new branch after it is created, choose **Checkout branch**.
 
    ![Choose Create Branch, Visual Studio.](media/git-tags/branch-from-tag-create-vs.png)
 
@@ -366,6 +378,8 @@ Right-click the tag to delete and choose **Delete Locally**
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
+
+The steps in this procedure show you how to view tag history using Visual Studio 2019 Team Explorer. For Visual Studio 2019 using the **Git** menu or Visual Studio 2022, use the browser.
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 

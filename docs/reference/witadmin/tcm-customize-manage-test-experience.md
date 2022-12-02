@@ -1,15 +1,15 @@
 ---
 title: Customize and manage the test experience
 titleSuffix: Azure DevOps 
-description: Learn how to customize and manage the test experience
+description: Learn how to customize and manage the test experience using command line tools.
 ms.service: azure-devops-boards
-ms.custom: witadmin
+ms.custom: witadmin, archive-candidate
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 12/01/2022
 ---
 
 # Customize and manage the test experience
@@ -23,7 +23,7 @@ Using the `tcm fieldmapping` command, you can customize the following three feat
 
 [!INCLUDE [temp](../../test/includes/mtm-deprecate-message.md)]
 
-The **tcm** command-line tool works when run against Azure DevOps Services and on-premises Azure DevOps Server. 
+The `tcm` command-line tool works when run against Azure DevOps Services and on-premises Azure DevOps Server. 
 
 > [!IMPORTANT]
 > The **tcm** tool is available through Visual Studio 2017 and earlier versions. It isn't available in Visual Studio 2019 and later versions.
@@ -34,7 +34,7 @@ Also, you can use `tcm` command options to [copy and clone test plans and test s
 
  For the project where you define the work item types, you must be a member of the **Project Administrators** security group. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).  
 
-To run the **tcm** command-line tool, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
+To run the `tcm` command-line tool, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 
 
 
@@ -52,20 +52,21 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 
 #### Parameters  
 
-| **Parameter**  |   **Description**  |
-|----------------|--------------------|
-|**/export**     |Specifies export of the field mapping file of the type specified. For the syntax of supported file types, see the Remarks section.  |
-|**/import**     |Specifies import of the field mapping file.   |
-|**/mappingfile**:`Path`  |  The path and file name of the XML definition file that contains the field mappings.  |
-|**/collection**:`CollectionURL` |Specifies the uniform resource identifier (URI) of the project collection. The format for the URI is as follows: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, the format for the URI is as follows:<br /><br /> **http**://*ServerName:Port/CollectionName*  |
-|**/teamproject:**`Project`| Specifies the name of the project for which the field mappings are to be applied. This project must be defined in the project collection that is specified by the **/collection** parameter.   
-|**/type**:`resolutiontype|bug|failuretype`| The type of file to import or export. For the syntax structure of each file type, see [bug](#bug), [resolution states](#resolution), and [failure types](#failure). |
-|**/login:** `UserName,Password` | Optional. Specifies the name and password of a user who is logged who has permissions to run the command.<br /><br /> You would use this option when your Windows credentials do not have the appropriate permissions, you are using basic authentication, or you are not on a domain. |
-|  **/?** or **help**  | Displays help about the command in the Command Prompt window.  |
+| **Parameter**  |   **Description**  |  
+|----------------|--------------------| 
+|`/export`    |Specifies export of the field mapping file of the type specified. For the syntax of supported file types, see the Remarks section.  |
+|`/import`    |Specifies import of the field mapping file.   |
+|`/mappingfile:Path`  |  The path and file name of the XML definition file that contains the field mappings.  |
+|`/collection:CollectionURL` |Specifies the uniform resource identifier (URI) of the project collection. The format for the URI is as follows: `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /><br /> If no virtual directory is used, the format for the URI is as follows:<br /><br /> **http**://*ServerName:Port/CollectionName*  |
+|`/teamproject:Project`| Specifies the name of the project for which the field mappings are to be applied. This project must be defined in the project collection that is specified by the **/collection** parameter.   
+|`/type`:`resolutiontype|bug|failuretype`| The type of file to import or export. For the syntax structure of each file type, see [bug](#bug), [resolution states](#resolution), and [failure types](#failure). |
+|`/login:UserName,Password` | Optional. Specifies the name and password of a user who is logged who has permissions to run the command.<br /><br /> You would use this option when your Windows credentials do not have the appropriate permissions, you are using basic authentication, or you are not on a domain. |
+|`/?` or `help`|Displays help about the command in the Command Prompt window.|  
+  
 
 ## Remarks  
 
-Each time that you run the **tcm fieldmapping import** command, the contents of the existing field mapping file are replaced with the contents that you import.  
+Each time that you run the `tcm fieldmapping import` command, the contents of the existing field mapping file are replaced with the contents that you import.  
 
 <a name="bug"></a> 
 
@@ -73,7 +74,7 @@ Each time that you run the **tcm fieldmapping import** command, the contents of 
  
 When the supported clients for Azure Test Plans creates a bug, the mapping file defines the work item type to create and fills in three data fields: reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which these three fields are automatically filled in.  
 
-If your project was created with one of the default process templates, the bug work item type is already enabled. However, if you're adding another type of work item to the bug category or you're working with a customized process template, you might have to use the **tcm** command.  
+If your project was created with one of the default process templates, the bug work item type is already enabled. However, if you're adding another type of work item to the bug category or you're working with a customized process template, you might have to use the `tcm` command.  
 
 You can define only one work item type to be created when you run tests for Azure Test Plans.  
 
@@ -133,14 +134,14 @@ The following XML syntax lists the default failure types defined for a project.
 
 Unless otherwise specified, the following values apply in each example:  
 
--   URI for the project collection: http://AdventureWorksServer:8080/tfs/Collection1    
--   Project name: AdventureWorks   
--   Bug field mapping file name: bugfieldmappings.xml    
--   Folder location: "C:\Users\AdminUser\Documents\\"  
+-   URI for the project collection: `http://AdventureWorksServer:8080/tfs/Collection1`    
+-   Project name: `AdventureWorks`   
+-   Bug field mapping file name: `bugfieldmappings.xml`    
+-   Folder location: `C:\Users\AdminUser\Documents\\`  
 
 ### Import the bug field mappings file  
 
-The following command imports the contents of the bugfieldmappings.xml file to the AdventureWorks project that is defined in Collection1 on the server that is named AdventureWorksServer.  
+The following command imports the contents of the `bugfieldmappings.xml` file to the `AdventureWorks` project that is defined in `Collection1` on the server that is named `AdventureWorksServer`.  
 
 ```  
 tcm fieldmapping /import /type:bug /mappingfile:"C:\Users\AdminUser\Documents\bugfieldmappings.xml" /collection:http://AdventureWorksServer:8080/tfs/Collection1 /teamproject:AdventureWorks   

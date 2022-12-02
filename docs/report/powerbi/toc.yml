@@ -8,19 +8,23 @@ items:
   items:
   - name: Data available and versioning  
     href: data-available-in-analytics.md  
-  - name: Query Analytics 
+  - name: Construct OData queries  
     href: ../analytics/analytics-query-parts.md  
+  - name: Sample basic queries
+    href: ../extend-analytics/wit-analytics.md
   - name: Query tools  
     href: ../analytics/analytics-query-tools.md  
   - name: Best practices  
     href: ../analytics/analytics-best-practices.md  
+  - name: Project & organization-scoped queries
+    href: ../extend-analytics/account-scoped-queries.md
   - name: Permissions and prerequisites  
     href: ../analytics/analytics-permissions-prerequisites.md  
   - name: Set Analytics permissions (Security)  
     href: analytics-security.md  
   - name: Enable or install Analytics  
     href: ../dashboards/analytics-extension.md  
-  - name: Quick reference index  
+  - name: Analytics quick reference 
     href: ../extend-analytics/quick-ref.md  
 - name: Analytics views  
   items:  
@@ -53,18 +57,14 @@ items:
     href: data-connector-functions.md
 - name: Sample queries, Work tracking
   items:
-  - name: Query work item data
-    href: ../extend-analytics/wit-analytics.md
-  - name: Project & organization-scoped queries
-    href: ../extend-analytics/account-scoped-queries.md
+  - name: Retrieve work item data
+    href: ../extend-analytics/analytics-recipes.md
+  - name: Retrieve work item links
+    href: ../extend-analytics/work-item-links.md
   - name: Query aggregate data
     href: ../extend-analytics/aggregated-data-analytics.md
   - name: Query trend data
     href: ../extend-analytics/querying-for-trend-data.md
-  - name: Query work item links
-    href: ../extend-analytics/work-item-links.md
-  - name: Basic work tracking queries
-    href: ../extend-analytics/analytics-recipes.md
 - name: Sample reports, Analytics views
   items:
   - name: Active bugs report
@@ -174,10 +174,12 @@ items:
       href: ../analytics/entity-reference-test-plans.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md
-  - name: Filters applied to historical data
+  - name: Historical data representation
     href: analytics-historical-filtering.md
   - name: Supported functions & clauses
     href: ../extend-analytics/odata-supported-features.md
+  - name: OData batch support
+    href: ../extend-analytics/odata-batch.md
   - name: API versioning
     href: ../extend-analytics/odata-api-version.md
 - name: Troubleshooting

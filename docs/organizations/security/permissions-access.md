@@ -243,7 +243,7 @@ You can manage feeds from the web portal, **Build and release > Packages**. User
 
 ## Notifications, alerts, and team collaboration tools 
 
-To manage notifications, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md) and [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).
+To manage notifications, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) and [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 
 > [!NOTE]  
 > There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).

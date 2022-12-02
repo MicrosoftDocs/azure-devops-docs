@@ -55,7 +55,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set test retention policies
-            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json 
   - title: Run automated tests
     linkLists:
       - linkListType: concept
