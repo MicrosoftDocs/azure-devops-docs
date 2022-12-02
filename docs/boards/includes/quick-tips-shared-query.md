@@ -22,6 +22,6 @@ If you are new to Azure Boards, work tracking, and shared queries, review these 
 ::: moniker range=">= azure-devops-2019"
 
 > [!IMPORTANT]  
-> Starting with Visual Studio 2019, the Azure DevOps plug-in for Office has deprecatedsupport for Microsoft Project. Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. You can continue to use Microsoft Excel.  
+> Starting with Visual Studio 2019, the Azure DevOps plug-in for Office has deprecated support for Microsoft Project. Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. You can continue to use Microsoft Excel.  
 
 ::: moniker-end
