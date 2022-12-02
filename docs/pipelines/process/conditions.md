@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can specify the conditions under which each stage, job, or step runs.
-By default, a job or stage runs if it doesn't depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.
+By default, a job or stage runs if it doesn't depend on any other job or stage, or if _all_ of the jobs or stages it depends on have completed and succeeded. This includes not only direct dependencies, but their dependencies as well, computed recursively.
 By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
 You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails or by specifying a custom condition.
 
