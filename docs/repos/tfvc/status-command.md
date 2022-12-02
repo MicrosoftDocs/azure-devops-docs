@@ -149,7 +149,7 @@ For more information, see [Decide between using a local or a server workspace](d
 
 ## Examples
 
-In all the following examples, assume that `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\` in the workspace.
+In all the following examples, assume that *$/SiteApp/Main/* is mapped to *c:\\code\\SiteApp\\Main\\* in the workspace.
 
 ### List all changes in the current workspace
 
@@ -169,7 +169,7 @@ c:\code\SiteApp\Main>tf stat SolutionA\*
 
 ### List all changes in a folder and its subfolders
 
-The following example lists pending changes to all items in the *SolutionA folder*, including those in its subfolders:
+The following example lists pending changes to all items in the *SolutionA* folder, including changes in its subfolders:
 
 ```
 c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
@@ -178,7 +178,11 @@ c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
 ## Next steps
 
 - Most changes you make to files under version control are queued as pending changes in your workspace. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md) and [Create and work with workspaces](create-work-workspaces.md).
+
 - You can use the [Difference command](difference-command.md) to get details about edit changes, or changes to the content, in a file.
+
 - If you need to set aside changes, and perhaps also want to clean your workspace for another task, use the [Shelve command](shelve-command.md). For more information about shelvesets, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
+
 - When you're ready to check in changes to the server, use the [Checkin command](checkin-command.md).
+
 - For more information about how to use the `tf` utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
