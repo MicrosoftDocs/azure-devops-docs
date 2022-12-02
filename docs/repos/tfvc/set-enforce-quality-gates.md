@@ -24,7 +24,7 @@ Check-in policies are used to enforce mandatory software development practices. 
 
 Policies are configured and established in **Settings** on the **Source Control** page of **Team Explorer**. A sample policy constraint is **You must associate your changes with one or more work items.** This policy prevents users from submitting changes without associating a specific bug or feature they're working on.
 
-When policies are violated, the violations are presented to the user during the source control check-in process in **Check In** and **Pending Changes**. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
+When policies are violated, the **Check In** and **Pending Changes** pages of **Team Explorer** present the violations to the user during the source control check-in process. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
 ## Check-in notes
 

@@ -64,7 +64,7 @@ If you don't see the **Configure your workspace** link, you might already have a
 
 ## Add your code to version control
 
-1. To create a new code project to put under TFVC source control, select **New** under **Solutions** in the **Home** page of **Team Explorer**. Put the new solution in your mapped workspace folder like *c:\Users\\\<YourName>\\Source\\Workspaces\\YourTeamProject\\*.
+1. To create a new code project to put under TFVC source control, select **New** under **Solutions** in the **Home** page of **Team Explorer**. Put the new solution in your mapped workspace folder, such as *c:\Users\\\<YourName>\\Source\\Workspaces\\YourTeamProject\\*.
 
    ![Screenshot that shows the Team Explorer Home page with New highlighted under Solutions.](media/share-your-code-in-tfvc-vs/team-explorer-new-solution.png)
 
