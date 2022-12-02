@@ -45,25 +45,25 @@ The project-level view shows your total storage summary and your storage consump
 
 1. From within your project, select ![gear icon](../media/icons/gear-icon.png) **Project settings**.
 
-1. Under **Artifacts**, select **Storage** on the left pane.
+1. Select **Storage** from the left pane.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows a menu in project settings with artifact storage highlighted.](media/artifacts-storage-navigation-project-level.png)
+    :::image type="content" source="media/artifacts-storage-navigation-project-level.png" alt-text="A screenshot showing how to navigate to project-level storage.":::
 
-1. View your total storage summary and your storage by artifact type.
+1. You can view your total storage summary and storage consumption by artifact type for your project.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of project-level artifact storage, with sections for summary and type.](media/project-level-storage.png)
+    :::image type="content" source="media/proj-level-storage.png" alt-text="A screenshot showing project level storage consumption.":::
 
-The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only.
+1. Select **View storage breakdown** from **Storage by type** to view the total storage for packages in project-scoped feeds.
+
+    :::image type="content" source="media/packages-proj-scoped-feeds.png" alt-text="A screenshot showing the total storage for packages in project-scoped feeds.":::
 
 > [!NOTE]
 > Azure Artifacts offers 2GiB of free storage for every organization. Once the maximum storage limit is reached, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ## Related articles
 
-- [What are feeds?](concepts/feeds.md)
-- [What are feed views?](concepts/views.md)
-- [Get started with NuGet packages](get-started-nuget.md)
-- [Publish to NuGet feeds (YAML/classic)](../pipelines/artifacts/nuget.md)
-- [Azure Artifacts billing: blog post](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/)
+- [Artifacts feeds](concepts/feeds.md)
+- [Feed views](concepts/views.md)
+- [Get started with NuGet packages in Azure Artifacts](get-started-nuget.md)
+- [Publish NuGet packages with Azure Pipelines (YAML/classic)](../pipelines/artifacts/nuget.md)
+- [Azure DevOps blog: Artifacts billing](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/)
