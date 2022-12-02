@@ -57,7 +57,7 @@ Use your web browser to perform a soft-delete. After 28 days, projects will be  
 
    :::image type="content" source="media/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
 
-4. Confirm deletion by entering the organization name, and then select **Delete** in the popup screen.
+4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
     ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
 
