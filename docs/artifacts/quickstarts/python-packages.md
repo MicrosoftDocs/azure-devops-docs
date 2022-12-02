@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 02/26/2021
 monikerRange: '<= azure-devops'
-ms.custom: devx-track-python
+ms.custom: devx-track-python, py-fresh-zinc
 "recommendations": "true"
 ---
 
