@@ -11,7 +11,7 @@ ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Decide between using a local or server TFVC workspace
+# Decide between using a local or server workspace
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
@@ -20,9 +20,9 @@ In Team Foundation Version Control (TFVC), when you [create or edit a workspace]
 
 You can change the location of your workspace from server to local or from local to server whenever you need to. For more information, see [Create and work with workspaces](create-work-workspaces.md).
 
-## When to use a local workspace
+## Use a local workspace
 
-Use a local workspace if there isn't a reliable connection between your computer and the server you're connected to, and there will be less than 100,000 items in the workspace. You might also prefer a local workspace if you don't work as part of a team, and you prefer working with the file system in a manner similar to Git.
+Use a local workspace if there isn't a reliable connection between your computer and the server you're connected to, and when there will be fewer than 100,000 items in the workspace. You might also prefer a local workspace if you don't work as part of a team, and you prefer working with the file system in a manner similar to Git.
 
 - Using local workspaces makes [check-out locks](understand-lock-types.md) unenforceable.
 
@@ -31,9 +31,9 @@ Use a local workspace if there isn't a reliable connection between your computer
 - Although Visual Studio doesn't block you from running multiple instances against the same workspace, this usage isn't supported. Working this way is more likely to cause problems if you're using a local workspace.
 
 > [!IMPORTANT]
-> With a local workspace, performance can degrade as the number of items approaches or exceeds 100,000. Local workspaces keep multiple copies of the same file, to enable some version control actions locally if the server connection isn't available. Multiple copies also take up more room on disk.
+> Local workspaces keep multiple copies of the same file, to enable some version control actions locally if the server connection isn't available. With a local workspace, performance can degrade as the number of items approaches or exceeds 100,000. Multiple copies also take up more room on disk.
 
-## When to use a server workspace
+## Use a server workspace
 
 Use a server workspace when the specific conditions aren't met for using a local workspace, or if you use the **Enable get latest on check-out** option.
 
@@ -72,7 +72,9 @@ Visual Studio doesn't put a solution back online automatically. You must do that
 
 If you're an [administrator](../../organizations/security/permissions.md), you can specify which type of workspace Visual Studio creates for your team members by default, local or server. You can also enable asynchronous checkout for your team's server workspaces.
 
-1. In the Visual Studio menu bar, choose **Team** > **Project Collection Settings**> **Source Control**. The **Source Control Settings** dialog box appears.
+1. In the Visual Studio menu bar, choose **Team** > **Project Collection Settings**> **Source Control**.
+
+   The **Source Control Settings** dialog box appears.
 
 1. On the **Workspace Settings** tab, choose either the **Local** or **Server** option.
 
