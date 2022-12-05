@@ -79,8 +79,8 @@ steps:
   inputs:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-       yarn | "$(Agent.OS)"
-       yarn
+       "yarn" | "$(Agent.OS)"
+       "yarn"
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
