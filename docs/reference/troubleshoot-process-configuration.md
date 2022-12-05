@@ -3,7 +3,7 @@ title: Troubleshoot process configuration issues
 titleSuffix: Azure DevOps & TFS 
 description: Resolve process configuration issues in Azure DevOps Services & Team Foundation Server
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

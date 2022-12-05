@@ -3,6 +3,7 @@ title: Track iteration activities in Azure Boards
 titleSuffix: Azure Boards
 description: Specify requirements, review requirements in the iteration, and create task work items for the work that must be performed to implement each requirement. 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 085a4bc1-e4f3-4105-bf29-add86b2dfd80
 ms.topic: conceptual
 ms.author: kaelli
