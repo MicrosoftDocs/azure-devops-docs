@@ -719,11 +719,11 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: October 2022
+  - name: November 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: October 2022
+    href: docswhatsnew/azure-devops-docs-2022-10.md
   - name: September 2022
     href: docswhatsnew/azure-devops-docs-2022-09.md
-  - name: August 2022
-    href: docswhatsnew/azure-devops-docs-2022-08.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops
