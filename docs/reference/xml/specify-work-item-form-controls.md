@@ -3,7 +3,7 @@ title: Specify work item form controls
 titleSuffix: Azure DevOps
 description: Provides a quick reference to the Control element, its child elements, and attributes.
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
 ms.author: kaelli
 author: KathrynEE

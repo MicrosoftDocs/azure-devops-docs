@@ -3,7 +3,7 @@ title: Expand list items and exclude groups from lists
 titleSuffix: Azure DevOps
 description: Examples for expanding pick list items and restricting items using attributes 
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
 ms.author: kaelli
 author: KathrynEE

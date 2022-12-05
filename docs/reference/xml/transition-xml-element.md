@@ -3,7 +3,7 @@ title: TRANSITION XML element
 titleSuffix: TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.author: kaelli
 author: KathrynEE
