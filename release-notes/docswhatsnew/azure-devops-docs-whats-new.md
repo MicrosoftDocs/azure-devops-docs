@@ -1,179 +1,153 @@
 ---
-title: "Azure DevOps docs: What's new for October 1, 2022 - October 31, 2022"
-description: "What's new in the Azure DevOps docs for October 1, 2022 - October 31, 2022."
-ms.date: 11/03/2022
+title: "Azure DevOps docs: What's new for November 1, 2022 - November 30, 2022"
+description: "What's new in the Azure DevOps docs for November 1, 2022 - November 30, 2022."
+ms.date: 12/05/2022
 ---
 
-# Azure DevOps docs: What's new for October 1, 2022 - October 31, 2022
+# Azure DevOps docs: What's new for November 1, 2022 - November 30, 2022
 
-Welcome to what's new in the Azure DevOps docs from October 1, 2022 through October 31, 2022. This article lists some of the major changes to docs during this period.
-
-## Artifacts
-
-### New articles
-
-- [Search for packages in upstream sources](/azure/devops/artifacts/how-to/search-upstream)
-
-### Updated articles
-
-- [Project-scoped feeds](/azure/devops/artifacts/feeds/project-scoped-feeds)
+Welcome to what's new in the Azure DevOps docs from November 1, 2022 through November 30, 2022. This article lists some of the major changes to docs during this period.
 
 ## Boards
 
 ### Updated articles
 
 - [Link user stories, issues, bugs, and other work items in Azure Boards](/azure/devops/boards/backlogs/add-link)
-- [Configure your backlog view in Azure Boards](/azure/devops/boards/backlogs/configure-your-backlog-view)
-- [Interactively filter backlogs, boards, queries, and plans in Azure Boards](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)
-- [Organize your backlog and map child work items to parents in Azure Boards](/azure/devops/boards/backlogs/organize-backlog)
-- [Manage and organize queries in Azure Boards and Azure DevOps](/azure/devops/boards/queries/organize-queries)
-- [Use an index to query quick reference data in Azure Boards and Azure DevOps](/azure/devops/boards/queries/query-index-quick-ref)
-- [Define a work item query in Azure Boards](/azure/devops/boards/queries/using-queries)
-
-## Developer resources
-
-### Updated articles
-
-- [Contribution model](/azure/devops/extend/develop/contributions-overview)
-- [Extensions overview](/azure/devops/extend/overview)
-- [Package and publish extensions](/azure/devops/extend/publish/overview)
-- [Extensibility points](/azure/devops/extend/reference/targets/overview)
+- [Key concepts and work item tasks in Azure Boards and Azure DevOps](/azure/devops/boards/work-items/quick-ref)
 
 ## Marketplace
 
 ### Updated articles
 
-- [Manage extension permissions](/azure/devops/marketplace/grant-permissions)
 - [Install extensions](/azure/devops/marketplace/install-extension)
-- [Marketplace extensions for Azure DevOps](/azure/devops/marketplace/overview)
-- [Uninstall or disable extensions for Azure DevOps](/azure/devops/marketplace/uninstall-disable-extensions)
-
-## Organizations
-
-### Updated articles
-
-- [Access via Azure AD FAQs](/azure/devops/organizations/accounts/faq-azure-access)
-- [Change your organization's billing subscription](/azure/devops/organizations/billing/change-azure-subscription)
-- [About projects and scaling your organization](/azure/devops/organizations/projects/about-projects)
-- [Create a project in Azure DevOps](/azure/devops/organizations/projects/create-project)
-- [Rename a project in Azure DevOps](/azure/devops/organizations/projects/rename-project)
-- [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions)
 
 ## Pipelines
 
-### New articles
-
-- [Publish Maven artifacts with Azure Pipelines](/azure/devops/pipelines/artifacts/publish-maven-artifacts)
-
 ### Updated articles
 
-- [Push an image](/azure/devops/pipelines/ecosystems/containers/push-image)
-- [Manage service connections](/azure/devops/pipelines/library/service-endpoints)
-- [Restore NuGet packages in Azure Pipelines](/azure/devops/pipelines/packages/nuget-restore)
-- [Use gates and approvals to control your deployment](/azure/devops/pipelines/release/deploy-using-approvals)
-- [Classic release pipelines](/azure/devops/pipelines/release/index)
-- [Maven task](/azure/devops/pipelines/tasks/build/maven)
+- [Specify conditions](/azure/devops/pipelines/process/conditions)
+- [Expressions](/azure/devops/pipelines/process/expressions)
+- [Define resources in YAML](/azure/devops/pipelines/process/resources)
+- [Release gates and approvals overview](/azure/devops/pipelines/release/approvals/index)
+- [Invoke REST API task](/azure/devops/pipelines/tasks/utility/http-rest-api)
+- [Publish Pipeline Artifacts task](/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact)
 
 ## Project
 
 ### Updated articles
 
-- [Publish a Git repo to a wiki](/azure/devops/project/wiki/publish-repo-to-wiki)
-- [Markdown syntax for wikis](/azure/devops/project/wiki/wiki-markdown-guidance)
+- [Search packages across your feeds](/azure/devops/project/search/functional-package-search)
+- [Syntax guidance for basic Markdown usage](/azure/devops/project/wiki/markdown-guidance)
+- [Migrate pages from Wiki extension to a team project wiki](/azure/devops/project/wiki/migrate-extension-wiki-pages)
 
 ## Report
 
 ### Updated articles
 
-- [Data model for Analytics](/azure/devops/report/extend-analytics/data-model-analytics-service)
+- [Construct OData queries for Analytics in Azure DevOps](/azure/devops/report/analytics/analytics-query-parts)
+- [Metadata reference for Azure Boards Analytics](/azure/devops/report/analytics/entity-reference-boards)
+- [Metadata reference for Azure Pipelines Analytics](/azure/devops/report/analytics/entity-reference-pipelines)
+- [Metadata reference for Test Plans Analytics](/azure/devops/report/analytics/entity-reference-test-plans)
+- [Project and organization-scoped queries](/azure/devops/report/extend-analytics/account-scoped-queries)
+- [Aggregate work tracking data using Analytics](/azure/devops/report/extend-analytics/aggregated-data-analytics)
+- [Query work tracking data using Analytics](/azure/devops/report/extend-analytics/analytics-recipes)
+- [Define basic queries using OData Analytics](/azure/devops/report/extend-analytics/wit-analytics)
+- [Query for linked work items](/azure/devops/report/extend-analytics/work-item-links)
+- [Analytics & Reporting](/azure/devops/report/index)
+- [Historical data representation in Analytics](/azure/devops/report/powerbi/analytics-historical-filtering)
 
 ## Repos
 
 ### Updated articles
 
-- [Copy changes with cherry-pick](/azure/devops/repos/git/cherry-pick)
-- [Clone an existing Git repo](/azure/devops/repos/git/clone)
-- [Save your work with commits](/azure/devops/repos/git/commits)
-- [Create a new Git repo](/azure/devops/repos/git/creatingrepo)
-- [Git preferences and settings in Visual Studio](/azure/devops/repos/git/git-config)
-- [Get started with Git in Azure Repos](/azure/devops/repos/git/gitquickstart)
-- [Resolve merge conflicts](/azure/devops/repos/git/merging)
-- [Update code with fetch, merge, and pull](/azure/devops/repos/git/pulling)
-- [Apply changes with rebase](/azure/devops/repos/git/rebase)
-- [Review history](/azure/devops/repos/git/review-history)
-- [Share your code with Azure Repos and Visual Studio](/azure/devops/repos/git/share-your-code-in-git-vs)
-- [Undo changes](/azure/devops/repos/git/undo)
-- [Add check-in policies](/azure/devops/repos/tfvc/add-check-policies)
-- [Add command (Team Foundation Version Control)](/azure/devops/repos/tfvc/add-command)
-- [Add files to the version control server](/azure/devops/repos/tfvc/add-files-server)
-- [Associate a file type with a file-comparison tool](/azure/devops/repos/tfvc/associate-file-type-file-comparison-tool)
-- [Associate a file type with a merge tool](/azure/devops/repos/tfvc/associate-file-type-merge-tool)
-- [Branch folders and files](/azure/devops/repos/tfvc/branch-folders-files)
-- [Checkin command](/azure/devops/repos/tfvc/checkin-command)
-- [Checkout (or Edit) command](/azure/devops/repos/tfvc/checkout-or-edit-command)
-- [Check in your work to the team's codebase](/azure/devops/repos/tfvc/check-your-work-team-codebase)
-- [Compare files using Team Foundation Version Control](/azure/devops/repos/tfvc/compare-files)
-- [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc)
-- [Configure check-in notes](/azure/devops/repos/tfvc/configure-check-notes)
-- [Create and work with workspaces](/azure/devops/repos/tfvc/create-work-workspaces)
-
-## Service-hooks
-
-### Updated articles
-
-- [Service hook consumers](/azure/devops/service-hooks/consumers)
-- [Create a service hook subscription programmatically](/azure/devops/service-hooks/create-subscription)
-- [Service hooks events](/azure/devops/service-hooks/events)
-- [Integrate with service hooks](/azure/devops/service-hooks/overview)
-
-## User guide
-
-### Updated articles
-
-- [Compare Azure DevOps Services with Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs)
-- [Code with Git](/azure/devops/user-guide/code-with-git)
-- [Overview of services](/azure/devops/user-guide/services)
+- [Git command reference](/azure/devops/repos/git/command-prompt)
+- [Complete, abandon, or revert pull requests](/azure/devops/repos/git/complete-pull-requests)
+- [Use Git tags](/azure/devops/repos/git/git-tags)
+- [Understand how Team Foundation Version Control (TFVC) commands map to Git workflows](/azure/devops/repos/git/mapping-my-tfvc-actions-to-git)
+- [Branch command (Team Foundation Version Control)](/azure/devops/repos/tfvc/branch-command)
+- [Branches command](/azure/devops/repos/tfvc/branches-command)
+- [Changeset command](/azure/devops/repos/tfvc/changeset-command)
+- [Check in to a folder controlled by a gated check-in](/azure/devops/repos/tfvc/check-folder-controlled-by-gated-check-build-process)
+- [Configure command](/azure/devops/repos/tfvc/configure-command)
+- [Day in the life of a devops developer: Suspend work, fix a bug, and conduct a code review](/azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review)
+- [Day in the life of a devops developer: Write new code for a user story](/azure/devops/repos/tfvc/day-life-alm-developer-write-new-code-user-story)
+- [Delete command (Team Foundation Version Control)](/azure/devops/repos/tfvc/delete-command-team-foundation-version-control)
+- [Delete or restore files and folders in TFVC](/azure/devops/repos/tfvc/delete-restore-files-folders)
+- [Destroy command (Team Foundation Version Control)](/azure/devops/repos/tfvc/destroy-command-team-foundation-version-control)
+- [Destroy version-controlled files](/azure/devops/repos/tfvc/destroy-version-controlled-files)
+- [Develop code and manage pending changes](/azure/devops/repos/tfvc/develop-code-manage-pending-changes)
+- [Difference command](/azure/devops/repos/tfvc/difference-command)
+- [Dir command  (Team Foundation Version Control)](/azure/devops/repos/tfvc/dir-command)
+- [Download or get files from the server](/azure/devops/repos/tfvc/download-get-files-from-server)
+- [Edit check-in policies](/azure/devops/repos/tfvc/edit-check-policies)
+- [Explore the feature isolation strategy](/azure/devops/repos/tfvc/effective-feature-isolation-on-tfvc)
+- [Find and view changesets](/azure/devops/repos/tfvc/find-view-changesets)
+- [Folder comparison filters](/azure/devops/repos/tfvc/folder-comparison-filters)
+- [Folderdiff command (Team Foundation Version Control)](/azure/devops/repos/tfvc/folderdiff-command)
+- [TFVC code review in Visual Studio](/azure/devops/repos/tfvc/get-code-reviewed-vs)
+- [Get command (Team Foundation Version Control)](/azure/devops/repos/tfvc/get-command)
+- [Get the history of an item](/azure/devops/repos/tfvc/get-history-item)
+- [Git permission command](/azure/devops/repos/tfvc/git-permission-command)
+- [Git view command](/azure/devops/repos/tfvc/git-view-command)
+- [Help command (Team Foundation Version Control)](/azure/devops/repos/tfvc/help-command-team-foundation-version-control)
+- [History command (Team Foundation Version Control)](/azure/devops/repos/tfvc/history-command)
+- [Label command (Team Foundation Version Control)](/azure/devops/repos/tfvc/label-command-team-foundation-version-control)
+- [Labels command (Team Foundation Version Control)](/azure/devops/repos/tfvc/labels-command)
+- [Localversions command (Team Foundation Version Control)](/azure/devops/repos/tfvc/localversions-command)
+- [Lock command (Team Foundation Version Control)](/azure/devops/repos/tfvc/lock-command)
+- [Merge command (Team Foundation Version Control)](/azure/devops/repos/tfvc/merge-command)
+- [Merge folders and files in Azure Repos](/azure/devops/repos/tfvc/merge-folders-files)
+- [Merges command (Team Foundation Version Control)](/azure/devops/repos/tfvc/merges-command)
+- [Optimize your workspace](/azure/devops/repos/tfvc/optimize-your-workspace)
+- [Permission command  (Team Foundation Version Control)](/azure/devops/repos/tfvc/permission-command)
+- [Info or Properties command (Team Foundation Version Control)](/azure/devops/repos/tfvc/properties-or-info-command)
+- [Proxy command  (Team Foundation Version Control)](/azure/devops/repos/tfvc/proxy-command)
+- [Reconcile command (Team Foundation Version Control)](/azure/devops/repos/tfvc/reconcile-command)
+- [Remove access to TFVC files](/azure/devops/repos/tfvc/remove-access-version-control-files)
+- [Rename command (Team Foundation Version Control)](/azure/devops/repos/tfvc/rename-command-team-foundation-version-control)
+- [Rename or move files and folders in TFVC](/azure/devops/repos/tfvc/rename-move-files-folders)
+- [Resolve command (Team Foundation Version Control)](/azure/devops/repos/tfvc/resolve-command)
+- [Resolve Team Foundation Version Control conflicts](/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts)
+- [Roll back changesets](/azure/devops/repos/tfvc/roll-back-changesets)
+- [Rollback command (Team Foundation Version Control)](/azure/devops/repos/tfvc/rollback-command-team-foundation-version-control)
+- [View the branch hierarchy of a project](/azure/devops/repos/tfvc/view-branch-hierarchy-team-project)
+- [View command (Team Foundation Version Control)](/azure/devops/repos/tfvc/view-command)
+- [View file changes using annotate](/azure/devops/repos/tfvc/view-file-changes-using-annotate)
+- [View where and when changesets have been merged](/azure/devops/repos/tfvc/view-where-when-changesets-have-been-merged)
+- [Workfold command (Team Foundation Version Control)](/azure/devops/repos/tfvc/workfold-command)
+- [Workspace command (Team Foundation Version Control)](/azure/devops/repos/tfvc/workspace-command)
+- [Workspaces command (Team Foundation Version Control)](/azure/devops/repos/tfvc/workspaces-command)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-10-01..2022-10-31).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-11-01..2022-11-30).
 
-- ["How to find the organization owner" link is useless for deleted organizations! #12810](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12810)
-- [Sample Powershell script needs updating #12809](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12809)
-- ['::moniker-end' displayed in rendered docs #12787](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12787)
-- [Incorrect scentence in the Azure artifacts page #12780](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12780)
-- [Potential error in a note about the wiki count limit #12762](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12762)
-- [Should System.ArtifactsDirectory be changed to Pipeline.Workspace in the automatic deployment jobs? #12741](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12741)
-- [What happens to project other resources in those project after directory swtich? #12736](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12736)
-- [Custom Service Hook Consumer documentation lacking substance #12735](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12735)
-- [Suggest 'ubuntu-latest' for the build agent image #12712](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12712)
-- [What environments are available? Is there a Python310? #12709](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12709)
-- [About the split expression #12697](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12697)
-- [Documentation suggested `includes` is not in the pipeline schema #12673](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12673)
-- [clean: true = clean: all?  #12636](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12636)
-- [Invalid sample payload json #12611](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12611)
-- [Several of the documented mermaid diagram types don't work #12597](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12597)
-- [Incomprehensible note in "Logging commands - Azure Pipelines" #12585](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12585)
-- [Python Function App YAML deployment Failed #12552](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12552)
-- [missing url example for a specific nuget feed view #12483](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12483)
-- [incomplete guide #12404](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12404)
-- [Try your extension?? #12309](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12309)
-- [Push step yml not explained #11198](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11198)
-- [Use "-w 0" for base64 command #11086](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11086)
-- [PAT token in a file, not really secure #8777](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8777)
-- [Azure DevOps: No example on how to use PAT to access git repositories #2455](https://github.com/MicrosoftDocs/azure-devops-docs/issues/2455)
+- [Test Suite types definitions are confusing #12913](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12913)
+- [More detailed information about target path #12879](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12879)
+- [Grammatical error on page should be fixed #12850](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12850)
+- [Effects of removing a user from the organization  #12824](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12824)
+- [[task.complete] is missing navigation link in intro table #12796](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12796)
+- [templateContext not well explained / exampled #12744](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12744)
+- [Example does not use cached packages #12647](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12647)
+- [Missing Custom properties documentation #12543](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12543)
+- [No mention of .NET 6 for collecting code coverage metrics with Coverlet #12467](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12467)
+- ['Conditional Insertion' does not work for Azure Devops Server -> remove from doc #12311](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12311)
+- [Add example success condition based on json elements in reponse #12291](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12291)
+- [Error 401 unauthorized in azure Pipelines with Artifacts in the same Project Scope #12083](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12083)
+- [Missing documentation indicating not supported on-prem #11029](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11029)
+
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [brendankarl](https://github.com/brendankarl) - Brendan Griffin (1)
+- [gholliday](https://github.com/gholliday) - Grant Holliday (2)
+- [chadbaldwin](https://github.com/chadbaldwin) - Chad Baldwin (1)
+- [coolhome](https://github.com/coolhome) - Preston Alvarado (1)
 - [geralexgr](https://github.com/geralexgr) - Gerasimos Alexiou (1)
-- [IvanYuriev2](https://github.com/IvanYuriev2) (1)
 - [jessehouwing](https://github.com/jessehouwing) - Jesse Houwing (1)
-- [MaratMussabekov](https://github.com/MaratMussabekov) (1)
-- [rgundogmusm](https://github.com/rgundogmusm) (1)
-- [secretGeek](https://github.com/secretGeek) - Leon Bambrick (1)
-- [theBNT](https://github.com/theBNT) (1)
-- [verargulla](https://github.com/verargulla) - Ver Argulla (1)
-- [zippy1981](https://github.com/zippy1981) - Justin Dearing (1)
+- [lonevvolf](https://github.com/lonevvolf) (1)
+- [pascalberger](https://github.com/pascalberger) - Pascal Berger (1)
+- [pazand](https://github.com/pazand) (1)
+- [raydixon](https://github.com/raydixon) - Ray Dixon (1)
+- [schra](https://github.com/schra) - André Schröder (1)
