@@ -474,6 +474,10 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
   >az account set --subscription <subscription id or >subscription name>
   >```
 
+   ```azurecli
+   az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
+   ```
+
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
    ```shell
