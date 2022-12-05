@@ -17,11 +17,11 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-The **undo** command discards one or more pending changes to files or folders.
+The Team Foundation Version Control (TFVC) `undo` command discards one or more pending changes to files or folders.
  
 ## Prerequisites
 
-To use the **branch** command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+To use the `undo` command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
