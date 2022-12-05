@@ -231,8 +231,8 @@ The following table provides examples of how to expand several of these properti
 | Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
 | Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
 | Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
-| Project	| `ProjectSK`   | `$expand=AssignedTo($select=ProjectName)` | 
-| Team 	    | `TeamSK`      | `$expand=AssignedTo($select=TeamName)` | 
+| Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
+| Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
 To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
 
