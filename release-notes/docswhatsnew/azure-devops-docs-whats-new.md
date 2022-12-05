@@ -32,6 +32,10 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2022 through Nov
 - [Invoke REST API task](/azure/devops/pipelines/tasks/utility/http-rest-api)
 - [Publish Pipeline Artifacts task](/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact)
 
+## Updated training modules
+
+- [Guided project - Automate Node.js deployments with Azure Pipelines](/training/modules/deploy-nodejs/)
+
 ## Project
 
 ### Updated articles
