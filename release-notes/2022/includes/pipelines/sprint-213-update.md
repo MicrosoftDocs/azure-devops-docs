@@ -35,7 +35,7 @@ When you restrict pipeline permissions of a protected resource, such as a servic
 
 Azure DevOps now allows you to ensure your organization only uses YAML pipelines, by disabling the creation of classic build pipelines, classic release pipelines, task groups, and deployment groups. Your existing classic pipelines will continue to run, and you'll be able to edit them, but you won't be able to create new ones.
 
-You can disable creation of classic pipelines at organization level or project-level, by turning on the corresponding toggles. The toggles can be found in Project / Org Settings -> Pipelines -> Settings and look like in the following screenshot. Their default state is off, and they require admin rights to change their state. If the toggle is on at organisation-level, the disabling is enforced for all projects. Otherwise, each project is free to choose whether to enforce or not the disablement.
+You can disable creation of classic pipelines at the organization level or project-level, by turning on the corresponding toggles. The toggles can be found in Project / Org Settings -> Pipelines -> Settings and look like in the following screenshot. Their default state is off, and they require admin rights to change their state. If the toggle is on at the organization-level, the disabling is enforced for all projects. Otherwise, each project is free to choose whether to enforce or not the disablement.
 
 > [!div class="mx-imgBorder"]
 > ![Disable Creation Of Classic Build and Classic Pipeline for Changes to Approvals](../../media/213-pipelines-03.png)
@@ -154,7 +154,7 @@ Run, stage, and job state change service hook events now contain a `repository` 
 
 Agent pools allow you to specify and manage the machines on which your pipelines run. 
 
-If you use a custom agent pool, managing which pipelines can access it was course grained. You could allow all pipelines to use it, or you could require each pipeline ask for permission. Alas, once you granted a pipeline access permission to an agent pool, you could not revoke it using the pipelines UI.
+If you use a custom agent pool, managing which pipelines can access it was coarse-grained. You could allow all pipelines to use it, or you could require each pipeline ask for permission. Alas, once you granted a pipeline access permission to an agent pool, you could not revoke it using the pipelines UI.
 
 Azure Pipelines now provides a fine-grained access management for agent pools. The experience is similar to the one for managing pipeline permissions for Service Connections.
 
