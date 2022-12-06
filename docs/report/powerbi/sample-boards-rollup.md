@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/05/2022
 ---
 
 # Rollup child work item values to parent sample report
@@ -80,7 +80,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Query part**
    :::column-end:::
    :::column span="2":::
@@ -88,7 +88,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `$filter=WorkItemType eq 'Feature'`
    :::column-end:::
    :::column span="2":::
@@ -96,7 +96,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and State ne 'Cut'`
    :::column-end:::
    :::column span="2":::
@@ -104,7 +104,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="2":::
@@ -114,7 +114,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and Descendants/any()`
    :::column-end:::
    :::column span="2":::
@@ -122,7 +122,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `&$select=WorkItemId, Title, WorkItemType, State`
    :::column-end:::
    :::column span="2":::
@@ -130,7 +130,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath),`
    :::column-end:::
    :::column span="2":::
@@ -138,7 +138,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `Descendants(`
    :::column-end:::
    :::column span="2":::
@@ -146,7 +146,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `$apply=filter(WorkItemType eq 'User Story')`</code>
    :::column-end:::
    :::column span="2":::
@@ -154,7 +154,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
    :::column span="2":::
@@ -162,7 +162,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `)`
    :::column-end:::
    :::column span="2":::

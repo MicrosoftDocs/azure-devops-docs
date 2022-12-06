@@ -83,6 +83,10 @@ items:
     href: sample-odata-overview.md
   - name: View the OData query of a built-in report
     href: ../extend-analytics/view-odata-query-analytics-report.md
+  - name: Transform Analytics data
+    href: transform-analytics-data-report-generation.md
+  - name: Create a Power BI report
+    href: create-report.md
 - name: Sample reports, Boards
   items:
   - name: Open bugs

@@ -8,18 +8,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/05/2022
 ---
 
 # Open bugs sample report 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to display, for a given set of open Bugs, a breakdown by State and Assigned To fields. An example is shown in the following image. 
+To create a list of bugs or user stories, you select the matrix report in Power BI and using a query similar to the ones provided in this article. The report you generate lists open bugs broken down by State and Assigned To fields, as shown in  the following image. 
 
-> [!div class="mx-imgBorder"] 
-> ![Open Bugs sample matrix report](media/reports-boards/open-bugs-report.png)
-
+:::image type="content" source="media/reports-boards/open-bugs-report.png" alt-text="Screenshot of Open Bugs sample matrix report.":::
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -27,6 +25,10 @@ This article shows you how to display, for a given set of open Bugs, a breakdown
 
 
 ## Sample queries
+
+Several queries are provided which filter bugs or user stories by area path, iteration path, or team.  
+
+### Bugs filtered by Area Path
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -71,23 +73,23 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `$filter=WorkItemType eq 'Bug'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return Bugs.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and StateCategory ne 'Completed'`
    :::column-end:::
    :::column span="3":::
@@ -95,74 +97,36 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Select fields to return.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Expand Assigned To, Iteration, Area entities and select entity fields.
    :::column-end:::
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
+### User stories filtered by teams 
 
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Fields](media/reports-boards/open-bugs-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Matrix**. 
-1. Add the field "State" to **Columns**.
-1. Add the field "AssignedTo.UserName" to **Rows**.
-1. Add the field "WorkItemId" to **Values**.
-    - Right-click "WorkItemId" field and ensure **Count** is selected.
-
-The example report displays. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/reports-boards/open-bugs-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
-
-### Filter by Teams, rather than Area Path
-
-You can query for open bugs by Team Name rather than Area Path.  
+You can query for open bugs by one or more teams rather than Area Path.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -173,7 +137,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'Bug' "
             &"and StateCategory ne 'Completed'' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') "
         &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -189,16 +153,16 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'Bug'
             and StateCategory ne 'Completed'
-            and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')
         &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)
 ```
 
 ***
 
-### User Stories in a specific Iteration
+### User Stories in a specific Area Path and Iteration Path
 
-You can query for open bugs by Area Path and a specific Iteration.
+The following query supports filterg  user stories for a specific Area Path and Iteration Path.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -232,9 +196,52 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+## Expand columns in Power BI
+
+The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)` clause returns records that contain several fields. Prior to creating the report, you need to expand the record to flatten it into specific fields. In this instance, you'll want to expand the following records: 
+
+- `AssignedTo`
+- `AreaPath`
+- `IterationPath`
+
+To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
+ 
+
+## (Optional) Rename fields
+
+Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+
+## (Optional) Rename query 
+
+You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
+
+
+## Create the report
+
+Power BI shows you the fields you can report on. 
+
+> [!NOTE]   
+> The example below assumes that no one renamed any columns. 
+
+> [!div class="mx-imgBorder"] 
+> ![Sample - Boards Open Bugs - Fields](media/reports-boards/open-bugs-fields.png)
+
+For a simple report, do the following steps:
+
+1. Select Power BI Visualization **Matrix**. 
+1. Add the field "State" to **Columns**.
+1. Add the field "AssignedTo.UserName" to **Rows**.
+1. Add the field "WorkItemId" to **Values**.
+    - Right-click "WorkItemId" field and ensure **Count** is selected.
+
+The example report displays. 
+ 
+:::image type="content" source="media/reports-boards/open-bugs-report.png" alt-text="Screenshot of Sample Open Bugs matrix report.":::
+
 
 ## Related articles
 
