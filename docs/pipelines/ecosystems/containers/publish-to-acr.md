@@ -95,3 +95,48 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 1. Enter a name for your service connection.
 
 1. Select **Save** when you are done.
+
+## Build and publish to Azure Container Registry
+
+1. From your project, select **Pipelines** and then select **Create Pipeline**.
+
+1. Select the service hosting your source code (Azure Repos, GitHub etc.).
+
+1. Select your repository, and then select **Starter pipeline**.
+
+1. Delete the default yaml pipeline and use the following snippet:
+
+    ```yml
+    trigger:
+    - main
+    
+    resources:
+    - repo: self
+    
+    variables:
+      dockerRegistryServiceConnection: '<SERVICE_CONNECTION_NAME>'
+      imageRepository: '<IMAGE_NAME>'
+      dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+      tag: '$(Build.BuildId)'
+    
+    stages:
+    - stage: Build
+      displayName: Build and publish stage
+      jobs:
+      - job: Build
+        displayName: Build job
+        pool:
+          vmImage: 'ubuntu-latest'
+        steps:
+        - task: Docker@2
+          displayName: Build and publish image to Azure Container Registry
+          inputs:
+            command: buildAndPush
+            containerRegistry: $(dockerRegistryServiceConnection)
+            repository: $(imageRepository)
+            dockerfile: $(dockerfilePath)
+            tags: |
+              $(tag)
+    ```
+
+1. Once the pipeline run is complete, you can verify your image in Azure. Navigate to your container registry in Azure portal, and then select **Repositories**.
