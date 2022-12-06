@@ -1,5 +1,5 @@
 ---
-title:Power BI data transformations
+title: Power BI data transformations
 titleSuffix: Azure DevOps
 description: Learn how to create a Power BI report from Analytics data.
 ms.subservice: azure-devops-analytics

@@ -15,18 +15,18 @@ ms.date: 12/05/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-To create a list of bugs or user stories, you select the matrix report in Power BI and using a query similar to the ones provided in this article. The report you generate lists open bugs broken down by State and Assigned To fields, as shown in  the following image. 
+To generate a report that lists open bugs or user stories, select the Matrix report in Power BI and use a query similar to the ones provided in this article. The report you generate lists open bugs or user stories broken down by **State** and **Assigned To** fields, as shown in  the following image. 
 
 :::image type="content" source="media/reports-boards/open-bugs-report.png" alt-text="Screenshot of Open Bugs sample matrix report.":::
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 
 ## Sample queries
 
-Several queries are provided which filter bugs or user stories by area path, iteration path, or team.  
+Several queries are provided which filter bugs or user stories by area path, iteration path, or team. All of these queries specify the `WorkItems` entity set as they return current and not historical data.  
 
 ### Bugs filtered by Area Path
 
@@ -92,8 +92,8 @@ The following table describes each part of the query.
    :::column span="2":::
    `and StateCategory ne 'Completed'`
    :::column-end:::
-   :::column span="3":::
-   Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
+   :::column span="2":::
+   Filter out items that are completed. For more information on State Categories, see [How workflow category states are used in Azure Boards backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -101,9 +101,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="2":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
-   
-   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   And filter work items under a specific Area Path. To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -119,7 +117,7 @@ The following table describes each part of the query.
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
    :::column-end:::
    :::column span="2":::
-   Expand Assigned To, Iteration, Area entities and select entity fields.
+   Select expandable property fields`AssignedTo`, `Iteration`, `Area`.
    :::column-end:::
 :::row-end:::
 
@@ -220,21 +218,14 @@ Once you have expanded the columns, you may want to rename one or more fields. F
 You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
 
 
-## Create the report
+## Create the Matrix report
 
-Power BI shows you the fields you can report on. 
+1. In Power BI, choose the **Matrix** report under **Visualizations** and select the fields as shown in the following image. 
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+	:::image type="content" source="media/reports-boards/open-bugs-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Open Bugs report. ":::
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Fields](media/reports-boards/open-bugs-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Matrix**. 
-1. Add the field "State" to **Columns**.
-1. Add the field "AssignedTo.UserName" to **Rows**.
+1. Add the field "**State**" to **Columns**.
+1. Add the field "Assigned To" or "AssignedTo.UserName" to **Rows**.
 1. Add the field "WorkItemId" to **Values**.
     - Right-click "WorkItemId" field and ensure **Count** is selected.
 
