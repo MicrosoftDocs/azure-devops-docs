@@ -10,6 +10,7 @@ ms.topic: include
 - [Audit Log Events Related to Pipeline Permission](#audit-log-events-related-to-pipeline-permissions)
 - [Ensure Your Organization only Uses YAML Pipelines](#ensure-your-organization-only-uses-yaml-pipelines)
 - [Service Hook for Job State Change](#service-hook-for-job-state-change)
+- [New PAT Scope Required to Updates Pipeline General Settings](#new-pat-scope-required-to-updates-pipeline-general-settings)
 - [Fine-grained Access Management for Agent Pools](#fine-grained-access-management-for-agent-pools)
 - [Prevent Accidental Granting of Pipeline Access Permissions](#prevent-accidental-granting-of-pipeline-access-permissions)
 - [Improve Security when Building PRs from Forked GitHub Repos](#improve-security-when-building-prs-from-forked-github-repos)
