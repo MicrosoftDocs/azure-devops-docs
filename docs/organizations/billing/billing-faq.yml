@@ -74,7 +74,7 @@ sections:
       - question: |
           Q: What happens if I set up billing before my Azure Test Plans trial expires?
         answer: |
-          A: If you [set up billing](set-up-billing-for-your-organization-vs.md) before your trial expires, you don't get until the trial ends.
+          A: If you [set up billing](set-up-billing-for-your-organization-vs.md) before your trial expires, you don't get charged until the trial ends.
 
       - question: |
           Q: What happens if I don't set up billing and my Azure Test Plans trial expires?
