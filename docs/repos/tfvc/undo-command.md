@@ -19,7 +19,7 @@ The Team Foundation Version Control (TFVC) `undo` command discards one or more p
  
 ## Prerequisites
 
-By default, members of the project **Contributors** group have permissions to contribute to a repository and use the `undo` command in their own workspaces. To undo changes in another user's workspace, you must have the **UndoOther** and **UnlockOther** permissions set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+By default, members of the project **Contributors** group have permissions to contribute to a repository and use the `undo` command in their own workspaces. To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Syntax
 
