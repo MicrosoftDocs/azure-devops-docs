@@ -25,7 +25,7 @@ Expand Teams
 
 ## Expand columns 
 
-The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: AssignedTo, Iteration, and Area. 
+The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: **AssignedTo**, **Iteration**, and **Area**. 
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on the entities you need to flatten.
 
@@ -53,20 +53,30 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Expand Descendants column
 
-1. Choose the expand button, and select the columns to report on:
+1. Choose the **Expand** button, and select the columns to report on:
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
+	:::image type="content" source="media/transform-data/descendants-column-expand.png" alt-text="Screenshot of Power BI Descendants column. ":::
 
 2. Check all the columns and choose **OK**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding Descendants](media/odatapowerbi-expandrollup.png)
+	:::image type="content" source="media/transform-data/expand-descendents-property.png" alt-text="Screenshot of Power BI Descendants column, expand options. ":::
 
 3. The Descendants entity is flattened to the selected columns:
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanded Descendants](media/odatapowerbi-expandedrollup.png)
+	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI Descendants column, expand options. ":::
+
+
+#### Pivot Descendants.StateCategory column
+
+1. Select the 1Descendants.StateCategory1 column header to select it.
+
+1. Select **Transform** menu and then **Pivot Column**. 
+	:::image type="content" source="media/transform-data/transform-menu-pivot-column.png" alt-text="Transform menu, Pivot Column option.":::
+
+1. In the Pivot Column dialog, for **Values** select `Descendants.TotalStoryPoints`, and then press **OK**.
+	Power BI creates a column for every StateCategory value.
+
+	:::image type="content" source="media/transform-data/descendants-pivot-column-dialog.png" alt-text="Dialog of Pivot Column for  Descendants.TotalStoryPoints column. ":::  
 
 <a id="rename-column-fields" /> 
 
@@ -81,8 +91,6 @@ When finished with your expansion, you may choose to rename one or more columns.
 
 1. Enter a new label for the column field and then press Enter. 
 
-
-
 ## Rename the query
 
 1. You can rename the query from the default **Query1**, to something more meaningful. 
@@ -95,3 +103,10 @@ When finished with your expansion, you may choose to rename one or more columns.
 	> [!div class="mx-imgBorder"] 
 	> ![Power BI Close & Apply](/azure/devops/report/powerbi/media/powerbi-close-apply.png)
 
+
+
+## TBD 
+- Create custom fields - such as a percentage 
+- Can't pivot if you have unexpanded records - will get an error message about nested columns
+- Must remove Null fields - use Replace values (why does this not work in some instances) 
+- 
