@@ -5,6 +5,7 @@ ms.date: 12/6/2022
 ms.topic: include
 ---
 
+- [Ubuntu-latest label will point to ubuntu-22.04 image](#ubuntu-latest-label-will-point-to-ubuntu-22.04-image)
 - [Container Registry service connections can now use Azure Managed Identities](#container-registry-service-connections-can-now-use-azure-managed-identities)
 - [Audit Log Events Related to Pipeline Permission](#audit-log-events-related-to-pipeline-permissions)
 - [Ensure Your Organization only Uses YAML Pipelines](#ensure-your-organization-only-uses-yaml-pipelines)
