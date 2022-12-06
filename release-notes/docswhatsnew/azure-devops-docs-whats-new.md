@@ -35,6 +35,7 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2022 through Nov
 ### Updated training modules
 
 - [Guided project - Automate Node.js deployments with Azure Pipelines](/training/modules/deploy-nodejs/)
+- [Create a release pipeline](/training/modules/create-release-pipeline-devops)
 
 ## Project
 
