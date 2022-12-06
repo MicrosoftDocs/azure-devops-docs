@@ -8,7 +8,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/05/2022
 ---
 
 # Bug trends sample report 
@@ -17,15 +17,23 @@ ms.date: 10/05/2021
 
 This article shows you how to display, for a given set of open Bugs, the number of Bugs in each State, trended over a period of time. The following image shows an example of such a trend. 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
+
+:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Bug trends sample line chart report.":::
+
+ 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 
 ## Sample queries
+
+The following queries return data from the `WorkItemSnapshot` entity set to support generating trend reports.  
+
+### Bug trend filtered by Area Path
+
+The following queries filter bugs by area path and a start date.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -83,47 +91,47 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.  
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `$apply=filter(`
    :::column-end:::
-   :::column span="3":::
-   Start of filter statement
+   :::column span="2":::
+   Start of filter statement clause.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `WorkItemType eq 'Bug'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return Bugs.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and State ne 'Closed'`
    :::column-end:::
-   :::column span="3":::
-   Omit Closed bugs.
+   :::column span="2":::
+   Omit bugs in a Closed state.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="3":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column span="2":::
+  Filter work items under a specific **Area Path** that you specify in`'{areapath}'`.<br>To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `and DateValue ge {startdate}`
    :::column-end:::
    :::column span="3":::
@@ -135,7 +143,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="3":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -143,7 +151,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="3":::
-   Start groupby()
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -151,7 +159,7 @@ The following table describes each part of the query.
    `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
    :::column-end:::
    :::column span="3":::
-   Group by DateValue (used for trending), and any fields you want to report on.
+   Group by `DateValue`,  used for trending, and any other fields you want to report on.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,7 +167,7 @@ The following table describes each part of the query.
    `aggregate($count as Count)`
    :::column-end:::
    :::column span="3":::
-   Aggregate by counting bugs that match the criteria on each date
+   Aggregate by counting bugs that match the criteria on each date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -167,54 +175,16 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="3":::
-   Close groupby().
+   Close `groupby()` clause.
    :::column-end:::
 :::row-end:::
-
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
-
-
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Line chart**. 
-1. Add the field "DateValue" to **Axis**.
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
-1. Add the field "State" to **Legend**.
-1. Add the field "Count" to **Values**.
-    - Right-click Count field and ensure **Sum** is selected.
-
-The example report displays. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
+ 
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
-### Filter by Teams, rather than Area Path
+### Bug trends filtered by Teams 
 
-You can query for bug trends by Team Name rather than Area Path.  
+You can query for bug trends by team name rather than Area Path.  
 
 
 #### [Power BI query](#tab/powerbi/)
@@ -227,7 +197,7 @@ let
         &"$apply=filter( "
             &"WorkItemType eq 'Bug' "
             &"and State ne 'Closed' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})"
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')"
             &"and DateValue ge {startdate}  "
             &") "
         &"/groupby( "
@@ -248,7 +218,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
         $apply=filter(
             WorkItemType eq 'Bug'
             and State ne 'Closed'
-            and (Teams/any(x:x/TeamName eq '{teamname} or Teams/any(x:x/TeamName eq '{teamname} or Teams/any(x:x/TeamName eq '{teamname})
+            and (Teams/any(x:x/TeamName eq '{teamname}' or Teams/any(x:x/TeamName eq '{teamname}' or Teams/any(x:x/TeamName eq '{teamname}')
             and DateValue ge {startdate} 
             )
         /groupby(
@@ -305,11 +275,11 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
         )
 ```
 
-* * *
+***
 
 <a id="weekly-snapshots" />
 
-### Bug trend with a snapshot on the first of every month
+### Bug trends with a snapshot on the first of every month
 
 Using a monthly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
 
@@ -357,9 +327,51 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+
+## Expand columns in Power BI
+
+Expand the `Area/AreaPath)` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
+ 
+
+## (Optional) Rename fields
+
+Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+
+## (Optional) Rename query 
+
+You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
+
+
+## Create the Line chart report 
+
+1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+
+	:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
+
+1. Add the field "**DateValue**" to **X-axis**.
+	- Right-click **DateValue** and select **DateValue**, rather than **Date Hierarchy**.  
+
+1. Add the field Count to **Y-axis**.
+	- Right-click **Count** and ensure **Sum** is selected.
+
+1. Add the State to **Legend**.
+
+The example report displays.  
+
+:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
+
+### Modify report format visuals 
+
+- To modify format elements of the report, choose the **Format your visual** (paintbrush) icon and modify one or more available settings. 
+
+	:::image type="content" source="media/reports-boards/bug-trends-change-color.png" alt-text="Screenshot of Power BI Format visual selections for Bug trends report. "::: 
+
+To learn more, see [Get started with the formatting pane](/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties)
+
 
 ## Related articles
 

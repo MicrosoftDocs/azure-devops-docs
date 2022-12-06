@@ -56,7 +56,7 @@ All sample report articles provide the following sections and information:
 * **Create the report** - Steps to create a simple report from the data
 * **Additional queries** - Other sample queries for similar, but different reports.
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## A Power BI query
     
