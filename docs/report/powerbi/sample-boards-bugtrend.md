@@ -329,18 +329,21 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
+## Transform data in Power BI
 
-## Expand columns in Power BI
+
+
+### Expand columns in Power BI
 
 Expand the `Area/AreaPath)` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
  
 
-## (Optional) Rename fields
+### (Optional) Rename fields
 
 Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 
-## (Optional) Rename query 
+### (Optional) Rename query 
 
 You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
 
