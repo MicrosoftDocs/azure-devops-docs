@@ -36,7 +36,7 @@ This article shows you how to create a stacked bar report to display progress of
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'Feature' "
-            &"and State ne 'Cut' "
+            &"and State ne 'Removed' "
             &"and startswith(Area/AreaPath,'{areapath}') "
             &"and Descendants/any()"
             &"&$select=WorkItemId,Title,Area,Iteration,AssignedTo,WorkItemType,State,AreaSK"
@@ -57,7 +57,7 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'Feature'
-            and State ne 'Cut'
+            and State ne 'Removed'
             and startswith(Area/AreaPath,'{areapath}')
             and Descendants/any()
         &$select=WorkItemId,Title,Area,Iteration,AssignedTo,WorkItemType,State,AreaSK
