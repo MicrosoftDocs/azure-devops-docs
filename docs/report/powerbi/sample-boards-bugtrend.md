@@ -139,48 +139,47 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `/groupby(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Group by `DateValue`,  used for trending, and any other fields you want to report on.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `aggregate($count as Count)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Aggregate by counting bugs that match the criteria on each date.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Close `groupby()` clause.
    :::column-end:::
 :::row-end:::
  
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
 ### Bug trends filtered by Teams 
 
@@ -366,7 +365,7 @@ The example report displays.
 
 ### Modify report format visuals 
 
-- To modify format elements of the report, choose the **Format your visual** (paintbrush) icon and modify one or more available settings. 
+- To modify format elements of the report, choose the **Format your visual** (paintbrush) icon and modify one or more available settings. For example, you can modify the line colors used in the trend chart.
 
 	:::image type="content" source="media/reports-boards/bug-trends-change-color.png" alt-text="Screenshot of Power BI Format visual selections for Bug trends report. "::: 
 
