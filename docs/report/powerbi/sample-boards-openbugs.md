@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 12/05/2022
 ---
 
-# Open bugs sample report 
+# Open bugs or user stories sample reports 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
