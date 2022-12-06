@@ -117,7 +117,7 @@ The following table describes each part of the query.
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
    :::column-end:::
    :::column span="2":::
-   Select expandable property fields`AssignedTo`, `Iteration`, `Area`.
+   Select expandable property fields `AssignedTo`, `Iteration`, `Area`.
    :::column-end:::
 :::row-end:::
 
@@ -197,7 +197,11 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
-## Expand columns in Power BI
+
+## Transform data in Power BI
+
+
+### Expand columns in Power BI
 
 The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)` clause returns records that contain several fields. Prior to creating the report, you need to expand the record to flatten it into specific fields. In this instance, you'll want to expand the following records: 
 
@@ -208,12 +212,12 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
  
 
-## (Optional) Rename fields
+### (Optional) Rename fields
 
 Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 
-## (Optional) Rename query 
+### (Optional) Rename query 
 
 You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
 

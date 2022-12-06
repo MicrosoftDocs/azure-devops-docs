@@ -15,16 +15,22 @@ ms.date: 12/05/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to generate the rollup count of User Stories and total Story Points for a given set of Features. An example is shown in the following image. 
+Rollup provides support to show a count of work items or sum of Story Points, Remaining Work, or other custom field of child items. This articles provides several examples of how to generate a rollup tabular report for Epics, Features, or User Stories that contain child work items. The following image shows an example of Story Points rolled up for their parent Features.  
+ 
+:::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Feature rollup matrix report.":::
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Report](media/reports-boards/feature-rollup-report.png)
+To learn more about rollup and options to show rollup, see [Display rollup progress or totals in Azure Boards](../../boards/backlogs/display-rollup.md).
+
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Sample queries
+
+The following queries return data from the `WorkItems` entity set to support generating rollup matrix reports.  
+
+### Rollup Story Points to Features of child User Stories based on Area Path
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -108,8 +114,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="2":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
-   
+   Return work items under a specific Area Path, replacing `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path. 
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
@@ -134,7 +139,7 @@ The following table describes each part of the query.
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath),`
    :::column-end:::
    :::column span="2":::
-   Expand Assigned To, Iteration, Area entities and select entity fields.
+   Select expandable property fields `AssignedTo`, `Iteration`, `Area`.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -147,10 +152,10 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="2":::
-   `$apply=filter(WorkItemType eq 'User Story')`</code>
+   `$apply=filter(WorkItemType eq 'User Story')` 
    :::column-end:::
    :::column span="2":::
-   Filters the descendants. Only include User Stories (omits Tasks and Bugs).
+   Filter the descendants to only include User Stories (omits Tasks and Bugs).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +163,7 @@ The following table describes each part of the query.
    `/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
    :::column span="2":::
-   For all Descendants matching the filter clause above, count them, and sum the StoryPoints field.
+   For all descendants matching the filter clause above, count them, and sum the StoryPoints property.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -170,79 +175,9 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
+### Rollup Story Points to Features of child User Stories based on Teams
 
-
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
-
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-### Expand Descendants column
-
-1. Choose the expand button, and select the columns to report on:
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
-
-2. Check all the columns and choose **OK**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding Descendants](media/odatapowerbi-expandrollup.png)
-
-3. The Descendants entity is flattened to the selected columns:
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanded Descendants](media/odatapowerbi-expandedrollup.png)
-
-### Replace null values in rollup fields
-
-If a work item doesn't have any children, the rollup value may be null. For example, **Descendants.CountOfUserStories** is "null" if a Feature doesn't have any child User Stories.
-
-For easier reporting, replace all nulls with zero by following these steps.
-
-[!INCLUDE [temp](includes/sample-replace-nulls.md)]
-
-Repeat for all the rollup columns.
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that columns are renamed as indicated in the corresponding images. 
-
-> [!div class="mx-imgBorder"] 
-> ![Feature rollup fields.](media/reports-boards/feature-rollup-fields.png)
-
-For a simple report, do the following steps:
-
-1. Choose the Power BI Visualization **Table**. 
-1. Add the following fields to **Values**
-    - **WorkItemId**, choose **Don't summarize** to show ID
-    - **WorkItemType**
-    - **Title**
-    - **State**
-    - **Count of User Stories**
-    - **Total Story Points**
-
-The example report displays:
-
-> [!div class="mx-imgBorder"] 
-> ![Feature rollup sample report.](media/reports-boards/feature-rollup-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
-
-### Filter by Teams, rather than Area Path
-
-You can generate rollup reports filtering by Team Name rather than Area Path.  
+The following queries show how to generate rollup reports filtering by team name rather than Area Path.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -288,7 +223,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Rollup Story Points to Epics
 
-You can rollup story points to Epics using the following query.  
+You can rollup story points to Epics using the following queries.  
 
 #### [Power BI](#tab/powerbi/)
 
@@ -332,7 +267,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Rollup Tasks Remaining Work to Features 
+### Rollup Tasks Remaining Work to User Stories 
+
+The following queries show how to roll up **Remaining Work** assigned to child Tasks to User Stories in the hierarchy. These queries assume that Tasks are assigned as children of a User Story in the specified **Area Path**.
 
 #### [Power BI](#tab/powerbi/)
 
@@ -341,7 +278,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ```
 let
     Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
-            &"$filter=WorkItemType eq 'Feature'"
+            &"$filter=WorkItemType eq 'User Story'"
             &" and State ne 'Cut'"
             &" and startswith(Area/AreaPath,'{areapath}')"
             &" and Descendants/any()"    
@@ -362,7 +299,7 @@ in
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
-    $filter=WorkItemType eq 'Feature'
+    $filter=WorkItemType eq 'User Story'
         and State ne 'Cut'
         and startswith(Area/AreaPath,'{areapath}')
         and Descendants/any()
@@ -377,6 +314,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 ### Rollup Bug count to Features
+
+The following queries show how to roll up the count of Bugs assigned to Features. These queries assume that Bugs are defined as children of a Feature in the specified **Area Path**.
 
 #### [Power BI](#tab/powerbi/)
 
@@ -420,10 +359,86 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
+## Transform data in Power BI
+
+
+### Expand columns in Power BI
+
+The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)` clause returns records that contain several fields. Prior to creating the report, you need to expand the record to flatten it into specific fields. In this instance, you'll want to expand the following records: 
+
+- `AssignedTo`
+- `AreaPath`
+- `IterationPath`
+
+To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
+ 
+
+### (Optional) Rename fields
+
+Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+
+### Replace null values in rollup fields
+
+If a work item doesn't have any children, the rollup value may be null. For example, **Descendants.CountOfUserStories** is "null" if a Feature doesn't have any child User Stories.
+
+For easier reporting, replace all nulls with zero by following these steps.
+
+[!INCLUDE [temp](includes/sample-replace-nulls.md)]
+
+Repeat for all the rollup columns.
+
+### (Optional) Rename query 
+
+You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
+
+
+
+## Create the Matrix report
+
+1. In Power BI, choose the **Table** report under **Visualizations** and select the fields as shown in the following image. 
+
+	:::image type="content" source="media/reports-boards/rollup-table-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Rollup table report. ":::
+
+1. Add the field "**DateValue**" to **X-axis**.
+	- Right-click **DateValue** and select **DateValue**, rather than **Date Hierarchy**.  
+
+1. Add the field Count to **Y-axis**.
+	- Right-click **Count** and ensure **Sum** is selected.
+
+1. Add the State to **Legend**.
+
+The example report displays.  
+
+:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
+
+
+
+Power BI shows you the fields you can report on. 
+
+> [!NOTE]   
+> The example below assumes that columns are renamed as indicated in the corresponding images. 
+
+> [!div class="mx-imgBorder"] 
+> ![Feature rollup fields.](media/reports-boards/feature-rollup-fields.png)
+
+For a simple report, do the following steps:
+
+1. Add the following fields to **Columns** in the order indicated: 
+    - **WorkItemId**, choose **Don't summarize** to show ID if needed
+    - **WorkItemType**
+    - **Title**
+    - **State**
+    - **Count of User Stories**
+    - **Total Story Points**. 
+
+The example report displays:
+
+:::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of sample Feature rollup matrix report.":::
+ 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
