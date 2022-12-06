@@ -149,6 +149,11 @@ Run, stage, and job state change service hook events now contain a `repository` 
 ]
 ```
 
+### New PAT Scope Required to Updates Pipeline General Settings 
+Invoking the [General Settings - Update](https://learn.microsoft.com/en-us/rest/api/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1) REST API now requires a PAT with scope _Project & Team, Read & Write_. 
+
+> [!div class="mx-imgBorder"]
+> ![FabrikamFiber Agent Pool for Changes to Approvals](../../media/213-pipelines-07.png)
 
 ### Fine-grained Access Management for Agent Pools
 
