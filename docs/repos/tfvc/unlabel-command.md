@@ -49,7 +49,7 @@ The following sections describe arguments and options of the `unlabel` command.
    `<team-project-collection-url>`
    :::column-end:::
    :::column span="3":::
-   Specifies the URL of the project collection that contains the item that you want to remove from an existing label, for example, https://myserver:8080/tfs/DefaultCollection.
+   Specifies the URL of the project collection that contains the item that you want to remove from an existing label, for example, `https://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 :::row:::

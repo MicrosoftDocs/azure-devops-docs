@@ -41,7 +41,7 @@ tf undo [/workspace:<workspace-name>[;<workspace-owner>]]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `/collection : <team-project-collection-url>`
+   `/collection:<team-project-collection-url>`
    :::column-end:::
    :::column span="3":::
    Specifies the URL of the project collection that contains the items, for example, `https://myserver:8080/tfs/DefaultCollection`.
@@ -91,7 +91,7 @@ tf undo [/workspace:<workspace-name>[;<workspace-owner>]]
    You can specify `<workspace-owner>` to undo a pending change in a workspace that belongs to a specific user. If you don't provide this argument, the workspace that's owned by the current user is used by default. But if you provide the `/login` argument with a username, the workspace that's owned by that user is used. You must have the **UndoOther** permission set to **Allow** to undo changes in another user's workspace.
 
    > [!Note]  
-   > You can use the `undo` command to undo a pending change in a remote workspace that's still in use. Before continuing work in that workspace, a user must sign in to the machine that hosts the workspace and get the items that are affected by the undo operation. For more information about the `get` command and its `/all` argument, see [Get command](get-command.md)).
+   > You can use the `undo` command to undo a pending change in a remote workspace that's still in use. Before continuing work in that workspace, a user must sign in to the machine that hosts the workspace and get the items that are affected by the undo operation. For more information about the `get` command and its `/all` argument, see [Get command](get-command.md).
   :::column-end:::
 :::row-end:::
 
