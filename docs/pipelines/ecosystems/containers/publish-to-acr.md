@@ -77,3 +77,21 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
     ```
 
 * * *
+
+## Create a Docker registry service connection
+
+1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+
+1. Select **Service connections** from the left pane.
+
+1. Select **New service connection**, and then select **Docker Registry** then **Next**.
+
+1. Select **Azure Container Registry**, and then select *Service Principal* as your **Authentication Type**.
+
+1. Select your **Subscription** from the dropdown menu.
+
+1. Select your **Azure container registry** from the list.
+
+1. Enter a name for your service connection.
+
+1. Select **Save** when you are done.
