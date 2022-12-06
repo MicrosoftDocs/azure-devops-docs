@@ -151,7 +151,7 @@ Run, stage, and job state change service hook events now contain a `repository` 
 ```
 
 ### New PAT Scope Required to Update Pipeline General Settings 
-Invoking the [General Settings - Update](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1) REST API now requires a PAT with scope **Project and Team -> Read & Write**. 
+Invoking the [General Settings - Update](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1&preserve-view=true) REST API now requires a PAT with scope **Project and Team -> Read & Write**. 
 
 > [!div class="mx-imgBorder"]
 > ![Project and Team](../../media/213-pipelines-07.png)
@@ -180,7 +180,7 @@ To promote a secure-by-default choice, Azure DevOps now leaves the checkbox unti
 
 ### Improved security when building pull requests from forked GitHub repositories
 
-You can use Azure DevOps to build and test your public GitHub repository. Having a public GitHub repository lets you  collaborate with developers across the world, but comes with [security concerns related to building pull requests (PRs) from forked repos](https://learn.microsoft.com/azure/devops/pipelines/security/repos?view=azure-devops#forks&preserve-view=true).
+You can use Azure DevOps to build and test your public GitHub repository. Having a public GitHub repository lets you  collaborate with developers across the world, but comes with [security concerns related to building pull requests (PRs) from forked repos](/azure/devops/pipelines/security/repos?view=azure-devops#forks&preserve-view=true).
 
 To prevent PRs from forked GitHub repositories from making undesired changes to your repositories, Azure DevOps now limits the GitHub access token to have read-only scope.
 
