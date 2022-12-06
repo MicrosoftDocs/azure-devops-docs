@@ -18,7 +18,7 @@ You can use a System-assigned Managed Identity when creating Docker Registry ser
 > ![New Docker Registry Service Connection for Changes to Approvals](../../media/213-pipelines-05.png)
 
 > [!NOTE]
-> The Managed Identity used to access Azure Container Registry will need the appropriate Azure Role Based Accss Control (RBAC) assignment, e.g. AcrPull or AcrPush role.
+> The Managed Identity used to access Azure Container Registry will need the appropriate Azure Role Based Access Control (RBAC) assignment, e.g. AcrPull or AcrPush role.
 
 ### Audit log events related to pipeline permissions
 
