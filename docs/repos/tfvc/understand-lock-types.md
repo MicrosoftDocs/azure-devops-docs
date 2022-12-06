@@ -5,7 +5,7 @@ description: Understand how locks work in Team Foundation Version Control. See t
 ms.assetid: 5da8c9b3-78cf-4d49-827f-3f1a95bf4b9b
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 11/29/2022
+ms.date: 12/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---

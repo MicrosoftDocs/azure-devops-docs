@@ -5,7 +5,7 @@ description: Use shelvesets in Team Foundation Version Control to set aside in-p
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 12/05/2022
+ms.date: 12/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -19,12 +19,12 @@ For various reasons, sometimes you need to set aside some or all of your work th
 
 - **Interruption:** You have pending changes that aren't ready to check in, but you need to work on a different task.  
 - **Collaboration:** You have pending changes that aren't ready to check in, but you need to share them with another team member.  
-- **Code review:** You want another team member to review your pending changes. To learn more about code reviews, see [Day in the life of a devops developer: write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
+- **Code review:** You want another team member to review your pending changes. To learn more about code reviews, see [Day in the life of a devops developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
 - **Private build:** Before you check in your changes, you want to use your automated build system to build and test your code.  
 - **Backup:** You have work in progress that you can't finish but want to make a backup copy of. You want the backup copy to be stored on your server and available to other team members.  
 - **Handoff:** You have work in progress that you want to hand off to another team member.
 
-You can move your [pending changes](develop-code-manage-pending-changes.md) to a shelveset on the server and then clean your [workspace](create-work-workspaces.md). The shelveset saves your file revisions, comment, list of related work items, and check-in notes when you evaluate policies before shelving.
+In these scenarios and others, you can move your [pending changes](develop-code-manage-pending-changes.md) to a shelveset on the server and then clean your [workspace](create-work-workspaces.md). The shelveset saves your file revisions, comment, list of related work items, and check-in notes when you evaluate policies before shelving.
 
 ## Prerequisites
 
@@ -119,5 +119,5 @@ After the **Find Shelvesets** page displays a list of shelvesets, as described i
 - [Difference command](difference-command.md): Compare the changes to a file in a shelveset with another version.
 
 > [!TIP]
-> - Unlike a changeset, a shelveset is a non-versioned entity. You can unshelve the items in a shelveset, edit several files, and then reshelve the shelveset. But the system doesn't create a new version of the items for future comparison. It also doesn't maintain a record of who revised the items, when there were revised, or in what manner. The original shelveset is completely replaced.
+> - Unlike a changeset, a shelveset is a non-versioned entity. You can unshelve the items in a shelveset, edit several files, and then reshelve the shelveset. But the system doesn't create a new version of the items for future comparison. It also doesn't maintain a record of who revised the items, when they were revised, or in what manner. The original shelveset is completely replaced.
 > - Conflicts can prevent you from resuming suspended work. If you experience conflicts, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
