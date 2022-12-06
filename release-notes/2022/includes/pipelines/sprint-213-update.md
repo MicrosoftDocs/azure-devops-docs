@@ -4,7 +4,7 @@ ms.author: ckanyika
 ms.date: 12/6/2022
 ms.topic: include
 ---
-### Ubuntu-Latest label will point to ubuntu-22.04 image
+### Ubuntu-latest label will point to ubuntu-22.04 image
 
 The ubuntu-22.04 image is ready to be the default version for the **ubuntu-latest** label in Azure Pipelines Microsoft-hosted agents. Until now, this label pointed to ubuntu-20.04 agents. 
 
@@ -20,7 +20,7 @@ You can use a System-assigned Managed Identity when creating Docker Registry ser
 > [!NOTE]
 > The Managed Identity used to access Azure Container Registry will need the appropriate Azure Role Based Accss Control (RBAC) assignment, e.g. AcrPull or AcrPush role.
 
-### Audit Log Events Related to Pipeline Permissions
+### Audit log events related to pipeline permissions
 
 When you restrict pipeline permissions of a protected resource, such as a service connection, the associated Audit Event Log now correctly states that the resource was *successfully _unauthorized_* for its project.
 
@@ -30,7 +30,7 @@ When you restrict pipeline permissions of a protected resource, such as a servic
 > [!div class="mx-imgBorder"]
 > ![Successfully Authorized for Changes to Approvals](../../media/213-pipelines-02.png)
 
-### Ensure your organization only uses YAML Pipelines
+### Ensure your organization only uses YAML pipelines
 
 Azure DevOps now lets you ensure your organization only uses YAML pipelines, by disabling the creation of classic build pipelines, classic release pipelines, task groups, and deployment groups. Your existing classic pipelines will continue to run, and you'll be able to edit them, but you won't be able to create new ones.
 
