@@ -43,7 +43,7 @@ For more information, see [Undo command](undo-command.md).
 ## Related articles
 
 - [Create and work with workspaces](create-work-workspaces.md)
-- [Using the Check In and Pending Changes windows](develop-code-manage-pending-changes.md)
+- [Use the Check In and Pending Changes windows](develop-code-manage-pending-changes.md)
 - [Work with version control locks](work-version-control-locks.md)
 
  

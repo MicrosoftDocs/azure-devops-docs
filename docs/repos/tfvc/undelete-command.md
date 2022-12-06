@@ -44,9 +44,9 @@ The following sections describe arguments and options of the `undelete` command.
 
 ### Arguments
 
-| **Argument** | **Description** |
+| Argument | Description |
 | --- | --- |
-| `<item-specification>` | Identifies the file or folder to undelete. For more information about how TFVC parses `<item-specification>` values to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
+| `<item-specification>` | Identifies the file or folder to restore. For more information about how TFVC parses `<item-specification>` values to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
 | `<deletion-ID>` | Specifies a unique identifier that disambiguates multiple deleted items that have the same name. |
 | `<username>` | Provides a value to the `/login` option. You can specify this value as either `DOMAIN\<username>` or `<username>`. |
 
