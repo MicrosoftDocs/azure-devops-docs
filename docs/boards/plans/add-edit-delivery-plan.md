@@ -75,18 +75,18 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 1. Open **Boards>Delivery Plans**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
+	> ![Screenshot showing how to Open Boards and Delivery Plans.](media/plans/open-plans.png) 
 
 1. To add a plan, choose **New Plan**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose New Plan button.](media/plans/add-plan-new-plan-button.png) 
+	> ![Screenshot showing Choose New Plan button.](media/plans/add-plan-new-plan-button.png) 
 
 	All users have permissions to create a plan and manage the plans they create.   
 2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan. You can add up to 15 teams to a plan.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![New delivery plan dialog.](media/plans/new-delivery-plan-dialog.png)  
+	> ![Dialog forNew delivery plan.](media/plans/new-delivery-plan-dialog.png)  
 
 When defining a plan, note the following information:  
 - Use the name and description field to clearly identify your plan within the project 
@@ -109,7 +109,7 @@ Once you've defined a plan, you can modify or further customize it.
 
 2. Then, choose the page you want to edit based on the [customizations you want to make](#customization-options). Here, we add the **Tags** to the **Field criteria**. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
-	:::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
+	:::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Dialog for Plan settings, Field criteria page.":::   
 
 
 <a id="fields"></a>
@@ -127,7 +127,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 	Here we select all standard fields and add the **Story Points** and **Priority** fields to display on cards. 
 
-	:::image type="content" source="media/plans/plan-settings-fields.png" alt-text="Plan settings, Fields tab.":::
+	:::image type="content" source="media/plans/plan-settings-fields.png" alt-text="Dialog for Plan settings, Fields tab.":::
 
 	> [!TIP]  
 	> To show the **Title** of the parent work item, choose the **Parent** field. Choosing the **Parent** title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your plan based on parent work items, whether the **Parent** field is added to cards or not. 
@@ -142,7 +142,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 1. To set a marker, open **Markers**, specify a date and specify a hexadecimal color, or choose the color palette icon to change to a new color selected by the system.  	
 
-	:::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Plans settings, Markers tab, two markers defined.":::   
+	:::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Dialog for Plans settings, Markers tab, two markers defined.":::   
 
 1.	To add more markers, choose **+ Add marker**. You can add up to 30 markers. The **+ Add marker** button becomes disabled after 30 markers have been added.  
 
@@ -165,13 +165,13 @@ With styling rules, you can cause cards to change color when their corresponding
 
 1. To change the card color, open the **Styles** tab. You can specify up to 10 styles. There are some limits to the fields you choose.   
 
-	:::image type="content" source="media/plans/plan-settings-styles.png" border="true" alt-text="Plans settings, Styles tab, two styles defined.":::   
+	:::image type="content" source="media/plans/plan-settings-styles.png" border="true" alt-text="Dialog for Plans settings, Styles tab, two styles defined.":::   
 
 1. Choose **+Add styling rule**. Enter a name for the style and choose the color from the color picker. Then specify the field criteria. You can add multiple field values. For style purposes, they're all evaluated as a logical AND. Choose the field and the value for the field. 
  
 	For example, here we choose to highlight cards with a **Priority=1**. 
 
-	:::image type="content" source="media/plans/specify-style.png" border="true" alt-text="Plans settings, Styles tab, define a new style.":::   
+	:::image type="content" source="media/plans/specify-style.png" border="true" alt-text="Dialog for Plans settings, Styles tab, define a new style.":::   
 
 
 	> [!NOTE]   
@@ -183,7 +183,7 @@ With styling rules, you can cause cards to change color when their corresponding
 
 You can highlight work items for a team's current **Iteration Path** by specifying the `@CurrentIteration` macro in the **Styles** tab as shown in the following image. For more information on using the `@CurrentIteration` macros, see [Query by date or current iteration, Create queries for your team's current iteration](../queries/query-by-date-or-current-iteration.md#create-queries-for-your-teams-current-iteration).
 
-:::image type="content" source="media/plans/styles-current-iteration.png" border="true" alt-text="Plans settings, Styles tab, set style using the current iteration macro for the Iteration Path.":::   
+:::image type="content" source="media/plans/styles-current-iteration.png" border="true" alt-text="Dialog for Plans settings, Styles tab, set style using the current iteration macro for the Iteration Path.":::   
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ Before setting tag colors, first [add tags to backlog items](../queries/add-tags
 
 1. From the Plan settings dialog, choose **Tag colors** and then choose :::image type="icon" source="../../media/icons/add-dark-icon.png" border="false"::: **Add tag color**. Then, select the tag and the color you want to appear on the cards.  
 
-	:::image type="content" source="media/plans/edit-tags-settings.png" border="true" alt-text="Plans settings, Tags tab, add tags and set color.":::   
+	:::image type="content" source="media/plans/edit-tags-settings.png" border="true" alt-text="Dialog for Plans settings, Tags tab, add tags and set color.":::   
    
 2. To enable or disable a tag color, select the **Enabled** checkbox.  
 
