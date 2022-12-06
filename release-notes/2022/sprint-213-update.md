@@ -1,13 +1,13 @@
 ---
-title: TBD
+title: Improvements to strengthen pipelines security.
 author: ckanyika
 ms.author: ckanyika
 ms.date: 12/6/2022
-description: With this update, TBD
+description: With this update, we are including improvements to strengthen pipelines security in Azure DevOps.
 ---
-# TBD
+# Improvements to strengthen pipelines security
 
-TBD
+With this update, we are including improvements to strengthen security in Azure DevOps. Now you can use a System-assigned Managed Identity when creating Docker Registry service connections for Azure Container Registry. In addition, we've enhanced access management for agent pools to let you specify the use of resouces within a YAML pipeline. Lastly, we are limiting the GitHub access token for forekd public GitHub repositories to have read-only scope. 
 
 Check out the release notes for details.
 
