@@ -94,6 +94,8 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 1. Select **Save** when you are done.
 
+:::image type="content" source="../media/acr-service-connection-msi.png" alt-text="A screenshot showing how to set up a docker registry service connection MSI.":::
+
 ## Create a Docker registry service connection - Service Principal
 
 1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
@@ -111,6 +113,8 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 1. Enter a name for your service connection.
 
 1. Select **Save** when you are done.
+
+:::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
 
 ## Build and publish to Azure Container Registry
 
@@ -156,6 +160,8 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
     ```
 
 1. Once the pipeline run is complete, you can verify your image in Azure. Navigate to your container registry in Azure portal, and then select **Repositories**.
+
+:::image type="content" source="../media/acr-image.png" alt-text="A screenshot showing the image in Azure Portal.":::
 
 ## Clean up resources
 
