@@ -5,7 +5,7 @@ description: Use the Team Foundation Version Control (TFVC) Shelve command to st
 ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
 ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 07/13/2022
+ms.date: 12/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
