@@ -3,6 +3,7 @@ title: Arrange requirements in a product plan
 titleSuffix: Azure Boards
 description: Learn how to generate a product plan from a set of requirements by using the backlog in Azure Boards. 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
 ms.topic: conceptual
 ms.author: kaelli  
