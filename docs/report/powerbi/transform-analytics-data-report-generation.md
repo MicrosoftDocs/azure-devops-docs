@@ -66,6 +66,9 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI Descendants column, expand options. ":::
 
 
+links-target-work-item-column-expand.png
+
+
 #### Pivot Descendants.StateCategory column
 
 1. Select the 1Descendants.StateCategory1 column header to select it.
@@ -77,6 +80,47 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 	Power BI creates a column for every StateCategory value.
 
 	:::image type="content" source="media/transform-data/descendants-pivot-column-dialog.png" alt-text="Dialog of Pivot Column for  Descendants.TotalStoryPoints column. ":::  
+
+
+### Expand the Links column
+
+1. Select the expand button on the Links column.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks.png)  
+	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options. ":::
+
+1. Select all the fields to flatten.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Select all the fields to flatten.](media/odatapowerbi-expandlinks2.png)  
+	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options. ":::
+
+1. Select the expand button on the Links.TargetWorkItem column.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Select the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
+	:::image type="content" source="media/transform-data/links-target-work-item-column-expand.png" alt-text="Screenshot of Power BI Links.TargetWorkItem column, expand options. ":::
+
+1. Select the fields of the Target Work Item to flatten.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Select the fields of the Target Work Item to flatten.](media/odatapowerbi-expandlinks4.png)
+
+	The Table now contains flattened Link and Target Work Item field(s).
+
+    > [!div class="mx-imgBorder"] 
+    > ![The Table now contains flattened Link and Target Work Item field(s).](media/odatapowerbi-expandlinks5.png)
+
+> [!NOTE]
+> If the link represents a one-to-many or many-to-many relationship, then multiple links will
+> expand to multiple rows, one for each link. 
+> 
+> For example, if Work Item #1 is linked to Work Item's #2 and #3, then when you expand the Links record, 
+> you will have 2 rows for Work Item #1. One that represents its link to Work Item #2, and another that
+> represents its link to Work Item #3.
+
+
 
 <a id="rename-column-fields" /> 
 

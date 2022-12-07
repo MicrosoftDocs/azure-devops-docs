@@ -20,19 +20,19 @@ In this article, we provide samples for the most popular reports:
 ::: moniker range=">= azure-devops-2020"
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **Azure Boards**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Azure Test Plans**  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       [!INCLUDE [temp](includes/sample-fulllist.md)]
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       [!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
    :::column-end:::
 :::row-end:::

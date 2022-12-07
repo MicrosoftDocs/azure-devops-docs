@@ -130,7 +130,7 @@ The following table describes each part of the query.
    :::column span="1":::
       **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Description**
    :::column-end:::
 :::row-end:::
@@ -139,7 +139,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}'` or `TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
    :::column-end:::
 :::row-end:::
@@ -147,7 +147,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `and (DateSK ge {startDate} and DateSK le {endDate})`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Date range of interest. You can enter the dates in **YYYYMMDD** format. 
    :::column-end:::
 :::row-end:::
@@ -155,7 +155,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `/groupby((DateSK)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Group the data into bins of same date. It produces one set of values per day in given date range.
    :::column-end:::
 :::row-end:::
@@ -163,7 +163,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `/aggregate($count as TotalCount,`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Aggregate data across the filtered test points with having count as `TotalCount`. 
    :::column-end:::
 :::row-end:::
@@ -171,7 +171,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as `Passed` metric. 
    :::column-end:::
 :::row-end:::

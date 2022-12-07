@@ -28,7 +28,9 @@ To learn more about rollup and options to show rollup, see [Display rollup progr
 
 ## Sample queries
 
-The following queries return data from the `WorkItems` entity set to support generating rollup matrix reports.  
+The following queries return data from the `WorkItems` entity set to support generating rollup matrix reports. 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)] 
 
 ### Rollup Story Points to Features of child User Stories based on Area Path
 
@@ -86,92 +88,92 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.
 
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `$filter=WorkItemType eq 'Feature'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return Features.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and State ne 'Cut'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Omit Closed bugs.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return work items under a specific Area Path, replacing `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path. 
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and Descendants/any()`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Include all Features, even the ones with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `&$select=WorkItemId, Title, WorkItemType, State`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Select fields to return.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath),`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Select expandable property fields `AssignedTo`, `Iteration`, `Area`.  
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `Descendants(`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Expand Descendants.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `$apply=filter(WorkItemType eq 'User Story')` 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Filter the descendants to only include User Stories (omits Tasks and Bugs).
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    For all descendants matching the filter clause above, count them, and sum the StoryPoints property.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="2":::
-   Close Descendants().
+   :::column span="1":::
+   Close `Descendants()`.
    :::column-end:::
 :::row-end:::
 
@@ -360,7 +362,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Transform data in Power BI
 
