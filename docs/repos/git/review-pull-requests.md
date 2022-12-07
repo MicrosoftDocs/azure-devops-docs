@@ -102,7 +102,7 @@ The following steps describe how reviewers of PRs in Azure Repos can navigate th
 
 1. The **Overview** tab of a PR shows the title, description, reviewers, linked worked items, history, status, and comments. Read the PR description to see the proposed changes. View the comments to understand the issues raised by other reviewers.
     >[!NOTE]
-    >Each file is estimated for a number of modifications and is marked with a "+" sign or a "rename, edit" label next to its name. When a file has more than 50% changes, it is considered *renamed*. This is the default threshold for git repositories that cannot be changed.
+    >Each file is estimated for a number of modifications and is marked with a "+" sign or a "rename, edit" label next to its name. When a file has more than 50-percent changes, it is considered *renamed.* This is the default threshold for git repositories that cannot be changed.
     
     :::image type="content" source="media/review-pull-requests/2022/overview-tab.png" border="true" alt-text="Screenshot of the Azure Repos PR overview tab.":::
     
