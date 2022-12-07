@@ -6,7 +6,7 @@ ms.topic: include
 ---
 
 - [Container Registry service connections can now use Azure Managed Identities](#container-registry-service-connections-can-now-use-azure-managed-identities)
-- [Audit logeEvents related to pipeline permission](#audit-log-events-related-to-pipeline-permissions)
+- [Audit log events related to pipeline permission](#audit-log-events-related-to-pipeline-permissions)
 - [Ensure your organization only uses YAML pipelines](#ensure-your-organization-only-uses-yaml-pipelines)
 - [Service hook for job state change](#service-hook-for-job-state-change)
 - [New PAT scope required to update pipeline General Settings](#new-pat-scope-required-to-update-pipeline-general-settings)
