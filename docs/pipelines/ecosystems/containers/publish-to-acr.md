@@ -78,7 +78,23 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 * * *
 
-## Create a Docker registry service connection
+## Create a Docker registry service connection - Managed Service Identity
+
+1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+
+1. Select **Service connections** from the left pane.
+
+1. Select **New service connection**, and then select **Docker Registry** then **Next**.
+
+1. Select **Azure Container Registry**, and then select *Managed Service Identity* as your **Authentication Type**.
+
+1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, [Tenant ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-ad-tenant), and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry).
+
+1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Save** when you are done.
+
+## Create a Docker registry service connection - Service Principal
 
 1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
 
