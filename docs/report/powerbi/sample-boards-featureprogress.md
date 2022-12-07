@@ -83,51 +83,51 @@ The following table describes each part of the query.
 
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Query part**  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       ----------------
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       ----------------
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `$filter=WorkItemType eq 'Feature'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Return Features.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `and State ne 'Cut'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Omit Features marked as Cut.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `and startswith(Area/AreaPath,'{areapath}')`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.  
       To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `and Descendants/any()`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Filters out any work item that has at least one or "any" descendant. Includes all Features with at least one Child WIT. To get all work items with their descendants, even if they don't have any, run a query without the `Descendants/any()` filter. To omit Features that don't have child User Stories, replace with `any(d:d/WorkItemType eq 'User Story')`.  
       For all work items **with and without descendants**:  
       `$filter=endswith(Area/AreaPath,'suffix')
@@ -141,50 +141,50 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `&$select=WorkItemId, Title, WorkItemType, State`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Select fields to return.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `&$expand=Descendants(`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Expand Descendants.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `$apply=filter(WorkItemType eq 'User Story')`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Filters the descendants. Only include User Stories (omits Tasks and Bugs).
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `/groupby((StateCategory),`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Group the rollup by StateCategory. For more information on State Categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md).
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `aggregate(StoryPoints with sum as TotalStoryPoints))`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Aggregate sum of Story Points.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       `)`  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Close Descendants().
    :::column-end:::
 :::row-end:::

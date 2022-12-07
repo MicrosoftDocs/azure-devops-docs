@@ -28,6 +28,8 @@ To generate a report that lists open bugs or user stories, select the Matrix rep
 
 Several queries are provided which filter bugs or user stories by area path, iteration path, or team. All of these queries specify the `WorkItems` entity set as they return current and not historical data.  
 
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
 ### Bugs filtered by Area Path
 
 #### [Power BI query](#tab/powerbi/)
@@ -73,50 +75,50 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.
 
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `$filter=WorkItemType eq 'Bug'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return Bugs.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and StateCategory ne 'Completed'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Filter out items that are completed. For more information on State Categories, see [How workflow category states are used in Azure Boards backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    And filter work items under a specific Area Path. To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Select fields to return.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Select expandable property fields `AssignedTo`, `Iteration`, `Area`.
    :::column-end:::
 :::row-end:::
@@ -194,8 +196,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 
 ## Transform data in Power BI

@@ -29,7 +29,9 @@ This article shows you how to display, for a given set of open Bugs, the number 
 
 ## Sample queries
 
-The following queries return data from the `WorkItemSnapshot` entity set to support generating trend reports.  
+The following queries return data from the `WorkItemSnapshot` entity set to support generating trend reports. 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]  
 
 ### Bug trend filtered by Area Path
 
@@ -91,90 +93,90 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.  
 
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `$apply=filter(`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Start of filter statement clause.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `WorkItemType eq 'Bug'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return Bugs.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and State ne 'Closed'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Omit bugs in a Closed state.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
   Filter work items under a specific **Area Path** that you specify in`'{areapath}'`.<br>To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `and DateValue ge {startdate}`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start trend on or after the specified date. Example: **2021-04-01Z** represents 2021-April-01.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `/groupby(`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Group by `DateValue`,  used for trending, and any other fields you want to report on.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `aggregate($count as Count)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Aggregate by counting bugs that match the criteria on each date.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Close `groupby()` clause.
    :::column-end:::
 :::row-end:::
