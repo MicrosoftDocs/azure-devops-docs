@@ -3,7 +3,7 @@ title: Link type element reference
 titleSuffix: Azure DevOps
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.author: kaelli
 author: KathrynEE

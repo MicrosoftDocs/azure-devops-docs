@@ -3,6 +3,7 @@ title: Start your project in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to arrange the basic resources of the project in an initial stage by using tools in Azure Boards.
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 193eee36-7d2a-4652-b905-7759cc60321e
 ms.topic: conceptual
 ms.author: kaelli

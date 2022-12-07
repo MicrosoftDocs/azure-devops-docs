@@ -3,6 +3,7 @@ title: Plan a project in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to plan a project so you can analyze design, develop, test, and eventually deliver your product.  
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
 ms.author: kaelli
