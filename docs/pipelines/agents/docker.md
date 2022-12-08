@@ -438,8 +438,9 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 
 ## Use Azure Kubernetes Service cluster
 
-> [!NOTE]
-> The following instructions only work on AKS 1.18 and lower because [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
+> [!CAUTION]
+> Please, consider that any docker based tasks will not work on AKS 1.19 or earlier due to docker in docker restriction. 
+> [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
 
 ### Deploy and configure Azure Kubernetes Service 
 
