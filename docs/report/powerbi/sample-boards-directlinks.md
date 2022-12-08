@@ -387,69 +387,44 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
  
 ### (Optional) Rename fields
 
-Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. You can rename them in the data table view, or later when you create the report. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+In this example, the following fields have been renamed: 
+
+| Original field name | Rename |
+|---------------------|--------|
+| Links.TargetWorkItem.ID | Target ID |
+| LinksLinkTypeName       | Link Type |
+| Links.TargetWorkItem.State | Target State |
+| Links.TargetWorkItem.Title | Target Title | 
 
 
 ## Create a table report to list linked work items 
 
 1. In Power BI, choose **Table** report under **Visualizations** and select the fields as shown in the following image. 
 
-	:::image type="content" source="media/reports-boards/open-bugs-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Open Bugs report. ":::
+	:::image type="content" source="media/reports-boards/parent-child-links-list-table-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Parent-Child Links list table report. ":::
 
-1. Add the field "**State**" to **Columns**.
-1. Add the field "Assigned To" or "AssignedTo.UserName" to **Rows**.
-1. Add the field "WorkItemId" to **Values**.
-    - Right-click "WorkItemId" field and ensure **Count** is selected.
-
-The example report displays. 
+1. Add the following fields in the order indicated to **Columns**:
+	- **ID**, right-click and select **Don't summarize**  
+	- **State**
+	- **Title**
+	- **Target ID**, right-click and select **Don't summarize**
+	- **Link Type**
+	- **Target State**
+	- **Target Title**  
  
-:::image type="content" source="media/reports-boards/open-bugs-report.png" alt-text="Screenshot of Sample Open Bugs matrix report.":::
+The example report displays. 
 
+:::image type="content" source="media/reports-boards/parent-child-links-table-report.png" alt-text="Screenshot of Sample Parent-child links of Features and User Stories table report.":::
 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
+ 
 
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Direct Links - Fields](media/odatapowerbi-directlinks-fields.png)
-
-parent-child-links-list-table-visualizations.png
-
-
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Table**.
-1. Add columns "WorkItemID" to **Values**.
-    - Right-click  "WorkItemID" and select **Don't summarize**.
-1. Add column "Title" to **Values**.
-1. Add column "Link.TargetWorkItem.WorkItemID" to **Values**.
-    - Right-click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
-1. Add column "Link.TargetWorkItem.Title" to **Values**.
+ <!---
 1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then select **Apply Filter**.
     - This action filters out any work items that don't have a link.
-
-The resulting example report is shown in the following image.
-
-> [!NOTE]
-> Note how work item 233464 is represented by two rows, one for each linked work item.
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Direct Links - Report](media/odatapowerbi-directlinks-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-
-## Full list of sample reports
-
-[!INCLUDE [temp](includes/sample-fulllist.md)]
-
-## Related articles
-
-[!INCLUDE [temp](includes/sample-relatedarticles.md)]
+ 
+--> 
