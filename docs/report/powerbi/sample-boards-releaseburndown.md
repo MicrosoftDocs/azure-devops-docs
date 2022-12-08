@@ -1,5 +1,5 @@
 ---
-title: Release Burndown sample Power BI report 
+title: Release Burndown sample queries and Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a release burndown Power BI report.
 ms.subservice: azure-devops-analytics
@@ -8,14 +8,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 ---
 
-# Release burndown sample report
+# Release burndown sample queries and reports
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Burndown and burnup reports show how much work is getting completed over time.  The following image shows a burndown both by Story Points and User Stories count.
+Burndown and burnup reports show how much work is getting completed over time. The following image shows a burndown both by count of User Stories as well as sum of Story Points.
 
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Release burndown clustered column chart report.":::
 
@@ -29,7 +29,7 @@ To learn more about burndown and burnup, see [Configure a Burndown or Burnup wid
 
 ## Sample queries
 
-The queries in this section show how to generate burndown charts of work items based on historical. All of these queries specify the `WorkItemSnapshot` entity set.  
+The queries in this section show how to generate burndown charts of work items based on historical data. All of these queries specify the `WorkItemSnapshot` entity set.  
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
@@ -39,7 +39,7 @@ The queries in this section show how to generate burndown charts of work items b
 The following query shows you how to return historical data of User Stories for a release based on work items tagged with a release tag. 
 
 > [!NOTE]  
-> For reports based on filtering a tag, the tag must be assigned to the work item at the start of the release or burndown/burnup start date. Otherwise, the work item is filtered out of the query.  
+> For reports based on filtering a tag, the tag must be assigned to the work item at the start of the release or burndown/burnup start date. Otherwise, the work item isn't included in the returned data.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -88,9 +88,12 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
-- `{tag}` - A tag that represents your release. All work items tagged with `{tagname}` are included in the report.
-- `{startdate}` - The date to start the burndown report.
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
+- `{tag}` - A tag that represents your release. All work items tagged with `{tagname}` are included in the report
+- `{startdate}` - The date to start the burndown report
 - `{enddate}` - The date to end the burndown report.
 
 

@@ -110,8 +110,11 @@ $apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{testPlanTitle}` - Title of the test plan whose data you want to return.
 
 
 ### Query breakdown

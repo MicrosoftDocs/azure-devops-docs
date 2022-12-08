@@ -79,7 +79,9 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions-task-name.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 
 ### Query breakdown

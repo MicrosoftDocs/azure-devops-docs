@@ -63,7 +63,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
 
 
