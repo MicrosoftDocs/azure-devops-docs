@@ -15,16 +15,31 @@ ms.date: 10/05/2021
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to display the burndown of User Stories for a release based on work items tagged with a release tag. The following image shows a burndown both by Story Points and User Stories count.
- 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report.png)
+Burndown and burnup reports show how much work is getting completed over time.  The following image shows a burndown both by Story Points and User Stories count.
+
+:::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Release burndown clustered column chart report.":::
+
+
+To learn more about burndown and burnup, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
+
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Sample queries
+
+The queries in this section show how to generate burndown charts of work items based on historical. All of these queries specify the `WorkItemSnapshot` entity set.  
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+### Burndown of User Stories in an area path from start and end date
+
+
+The following query shows you how to return historical data of User Stories for a release based on work items tagged with a release tag. 
+
+> [!NOTE]  
+> For reports based on filtering a tag, the tag must be assigned to the work item at the start of the release or burndown/burnup start date. Otherwise, the work item is filtered out of the query.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -113,9 +128,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
-   
-   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
+   Include only User Stories under a specific **Area Path** replacing `'{areapath}'`.<br>To filter by a team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -123,7 +136,7 @@ The following table describes each part of the query.
    `and Tags/any(x:x/TagName eq '{tagname}')`.
    :::column-end:::
    :::column span="1":::
-   Specifies the Tag that represents the Release to burndown, and to include all work items tagged with {tagname} in the report.
+   Specifies the tag label that represents the release to burndown on, and to include all work items tagged with {tagname} in the report. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -147,7 +160,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close  filter().
+   Close  `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -155,7 +168,7 @@ The following table describes each part of the query.
    `/groupby (`
    :::column-end:::
    :::column span="1":::
-   Start groupby().
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -163,7 +176,7 @@ The following table describes each part of the query.
    `(DateValue, State, Area/AreaPath), `
    :::column-end:::
    :::column span="1":::
-   Group by DateValue (used for trending), and any fields you want to report on.
+   Group by `DateValue` (used for trending), and any fields you want to report on.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -171,7 +184,7 @@ The following table describes each part of the query.
    `aggregate ($count as Count, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
    :::column span="1":::
-   Aggregate by count of user stories, and sum of Story Points.
+   Aggregate by count of user stories and sum of **Story Points**.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -179,71 +192,14 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close groupby().
+   Close `groupby()` clause.
    :::column-end:::
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
+### Burndown of User Stories for a team  
 
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-
-> [!div class="mx-imgBorder"] 
-> ![Sample -Release Burndown - Fields](media/odatapowerbi-releaseburndown-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Clustered column chart**. 
-1. Add the field "DateValue" to **Axis**
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
-1. Add the field "TotalStoryPoints" to **Values**
-1. Add the field "Count" to **Values**
-
-The example report displays burndown on both Story Points and Count of Stories.
-
-> [!div class="mx-imgBorder"] 
-> ![The example report displays burndown on Story Points and Count of Stories.](media/odatapowerbi-releaseburndown-report.png)
-
-To pivot burndown by Area Path, do the following steps:
-
-1. Select Power BI Visualization **Stacked bar chart**. 
-1. Add the field "DateValue" to **Axis**.
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
-1. Add the field "TotalStoryPoints" or "Count" to **Values**. You can't have two fields in Values.
-1. Add the field "Area.AreaPath" to **Legend**.
-
-The example report displays burndown pivoted by Area Path.
-
-> [!div class="mx-imgBorder"] 
-> ![The example report displays burndown pivoted by Area Path.](media/odatapowerbi-releaseburndown-report2.png)
-
-To pivot the burndown by State, add the field "State" to **Values**, replacing "Area.AreaPath".
-
-> [!div class="mx-imgBorder"] 
-> ![To pivot the burndown by State, add the field "State".](media/odatapowerbi-releaseburndown-report3.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
-
-### Filter by Teams, rather than Area Path
-
-This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
+This query is the same as the one used above, except it filters by team name rather than **Area Path**. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -254,7 +210,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?"
         &"$apply=filter(WorkItemType eq 'User Story' "
             &"and StateCategory ne 'Completed' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') "
             &"and Tags/any(x:x/TagName eq '{tagname}') "
             &"and DateValue ge {startdate} "
             &"and DateValue le {enddate} "
@@ -276,7 +232,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?
         $apply=filter(WorkItemType eq 'User Story'
             and StateCategory ne 'Completed'
-            and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')
             and Tags/any(x:x/TagName eq '{tagname}')
             and DateValue ge {startdate}
             and DateValue le {enddate}
@@ -289,9 +245,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 * * *
 
-### Burndown with a snapshot every Friday
+### Burndown User Stories with a snapshot every Friday
 
-Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
+Using a weekly snapshot reduces the amount of data pulled into Power BI and increases query performance. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -340,9 +296,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-### Burndown based off an Iteration Path
+### Burndown User Stories based on an area and iteration path  
 
-Some organizations use Iteration Paths to mark Stories for a Release. For example, they may have an Iteration Path of MyProject\Release1. The following query shows how to select Stories by Iteration Path.
+Some organizations use **Iteration Paths** to mark Stories for a release. For example, they may have an **Iteration Path** of *MyProject\Release1*. The following query shows how to select User Stories by Iteration Path.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -388,11 +344,11 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Burndown based off a custom field
+### Burndown User Stories with a custom field value  
 
-Some organizations use a custom field to mark Stories for a Release. For example, they may have a field called "Milestone". This query shows you how to select Stories by a custom field.
-You'll need to replace both `{customfield}` and `{releasevalue}` in the query.
-To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You'll use the Property Name as `{customfield}`.
+Some organizations use a custom field to mark User Stories for a release. For example, they may have a field called **Milestone**. This query shows you how to select User Stories by a custom field.  
+
+You'll need to replace both `{customfieldname}` and `{releasevalue}` in the query. To determine the name of your custom field, see [Metadata reference for Azure Boards, Custom properties](../analytics/entity-reference-boards.md#custom-properties). You'll replace `{customfieldname}` with the custom property name, for example `Custom_Milestone`.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -438,10 +394,76 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 * * *
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
 
+## (Optional) Rename query 
+
+You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
+
+## Transform data in Power BI
+
+Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
+- `Links` 
+- `Links.TargetWorkItem`
+- `Area`
+- `Iteration`
+- `AssignedTo` 
+
+To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
+
+## Power BI transforms
+
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
+
+[!INCLUDE [temp](includes/sample-finish-query.md)]
+
+
+## Create the clustered column chart  
+
+Power BI shows you the fields you can report on. 
+
+> [!NOTE]   
+> The example below assumes that no one renamed any columns. 
+
+
+1. In Power BI, choose **Clustered column chart** under **Visualizations** and select the fields as shown in the following image. 
+
+	:::image type="content" source="media/reports-boards/release-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Release burndown clustered column chart report. ":::
+
+1. Add the `DateValue` to **X-Axis** and right-click `DateValue` and select `DateValue`, rather than `Date Hierarchy`   
+
+1. Add `Count` to **Y-Axis**. 
+
+1. Add `TotalStoryPoints` to **Y-Axis**. 
+  
+
+The example report displays burndown on both the Count of Stories and Story Points.
+
+:::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Sample Release burndown clustered column chart report.":::
+
+ 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
+
+
+<!-- 
+To pivot burndown by Area Path, do the following steps:
+
+1. Select Power BI Visualization **Stacked bar chart**. 
+1. Add the field "DateValue" to **Axis**.
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
+1. Add the field "TotalStoryPoints" or "Count" to **Values**. You can't have two fields in Values.
+1. Add the field "Area.AreaPath" to **Legend**.
+
+The example report displays burndown pivoted by Area Path.
+
+> [!div class="mx-imgBorder"] 
+> ![The example report displays burndown pivoted by Area Path.](media/odatapowerbi-releaseburndown-report2.png)
+
+To pivot the burndown by State, add the field "State" to **Values**, replacing "Area.AreaPath".
+
+> [!div class="mx-imgBorder"] 
+> ![To pivot the burndown by State, add the field "State".](media/odatapowerbi-releaseburndown-report3.png) 
+
+-->
