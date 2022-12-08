@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 12/6/2022
+ms.date: 12/8/2022
 ms.topic: include
 ---
 ### Container Registry service connections can now use Azure Managed Identities
