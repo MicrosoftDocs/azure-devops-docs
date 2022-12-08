@@ -100,7 +100,7 @@ The steps to send status updates are:
 
 #### Basic Azure Function Check
 
-In this [basic example](), the Azure Function checks that the invoking pipeline has run a static analysis task prior to granting access to a protected resource.
+In this [basic example](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionBasicHandler), the Azure Function checks that the invoking pipeline has run a static analysis task prior to granting access to a protected resource.
 
 The Azure Function goes through the following steps:
 1. Confirms the receipt of the check payload
@@ -130,16 +130,16 @@ To use this Azure Function check, you need to ensure that you specify the follow
 
 #### Advanced Azure Function Check
 
-In this [advanced example](), the Azure Function checks that the Azure Boards ticket referenced in the commit message that triggered the pipeline run is in the correct state.
+In this [advanced example](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionAdvancedHandler), the Azure Function checks that the Azure Boards work item referenced in the commit message that triggered the pipeline run is in the correct state.
 
 The Azure Function goes through the following steps:
 1. Confirms the receipt of the check payload
 1. Sends a status update to Azure Pipelines that the check started
-1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the state of the Azure Boards ticket referenced in the commit message that triggered the pipeline run
-1. Checks if the ticket is in the `Completed` state
+1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the state of the Azure Boards work item referenced in the commit message that triggered the pipeline run
+1. Checks if the work item is in the `Completed` state
 1. Sends a status update with the result of the check
-1. If the ticket isn't in the `Completed` state, it reschedules another evaluation in 5 minutes
-1. Once the ticket is in the correct state, it sends a positive decision to Azure Pipelines
+1. If the work item isn't in the `Completed` state, it reschedules another evaluation in 5 minutes
+1. Once the work item is in the correct state, it sends a positive decision to Azure Pipelines
 
 You can download this example from [GitHub]().
 
