@@ -10,7 +10,7 @@
       items:
         - name: "2022"
           items:
-          - name: December 6
+          - name: December 8
             href: 2022/sprint-213-update.md
           - name: November 2
             href: 2022/sprint-212-update.md
@@ -199,7 +199,7 @@
         items:
         - name: "2022"
           items:
-          - name: December 6
+          - name: December 8
             href: 2022/boards/sprint-213-update.md
           - name: November 2
             href: 2022/boards/sprint-212-update.md
@@ -353,7 +353,7 @@
         items:
         - name: "2022"
           items:
-          - name: December 6
+          - name: December 8
             href: 2022/pipelines/sprint-213-update.md
           - name: November 2
             href: 2022/pipelines/sprint-212-update.md
