@@ -32,13 +32,21 @@ The goal in this case is to prevent that adversary from running malicious code i
 Malicious code may steal secrets or corrupt production environments.
 Another goal is to prevent lateral exposure to other projects, pipelines, and repositories from the compromised pipeline.
 
+YAML pipelines offer the best security for your Azure DevOps Pipelines. In contrast to classic build and release pipelines, YAML pipelines:
+
+* _Can be code reviewed_. YAML pipelines are no different from any other piece of code. You can prevent malicious actors from introducing malicious steps in your pipelines by enforcing the use of Pull Requests to merge changes. [Branch policies](https://learn.microsoft.com/azure/devops/repos/git/branch-policies-overview) make it easy for you to set this up.
+* _Provide resource access management_. Resource owners decide if a YAML pipeline can access a resource or not. This prevents attacks like [stealing another repository](https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/). [Approvals and checks](../process/approvals) provide access control for _each_ pipeline run.
+* _Support runtime parameters_. [Runtime parameters](../process/runtime-parameters) help you avoid a host of security issues related to variables, such as [Argument Injection](https://devblogs.microsoft.com/devops/pipeline-argument-injection/).
+
 This series of articles outlines recommendations to help you put together a secure YAML-based CI/CD pipeline.
 It also covers the places where you can make trade-offs between security and flexibility.
 The series also assumes familiarity with [Azure Pipelines](../get-started/what-is-azure-pipelines.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
 
+
 Topics covered:
 - [Incremental approach to improving security](approach.md)
 - [Repository protection](repos.md)
+- [Secure access to repositories](secure-access-to-repos.md)
 - [Pipeline resources](resources.md)
 - [Project structure](projects.md)
 - [Security through templates](templates.md)

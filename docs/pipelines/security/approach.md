@@ -33,6 +33,16 @@ This way, as you start to apply security practices, you have a centralized place
 
 For more information, see [Templates](templates.md).
 
+## Disable Creation of Classic Pipelines
+
+If you develop *only* YAML pipelines, disable creation of classic build and release pipelines. Doing so prevents a security concern that stems from YAML and classic pipelines sharing the same resources, for example the same service connections. 
+
+When the feature is enabled, no classic build pipeline, classic release pipeline, task groups, and deployment groups can be created using either the user interface or the REST API.
+
+You can disable creation of classic pipelines by turning on a toggle at either organization level or project level. To turn it on, navigate to your *Organization / Project settings*, then under the *Pipelines* section choose *Settings*. In the *General* section, toggle on *Disable creation of classic build and classic release pipelines*.
+
+When you turn it on at organization level, it is on for all projects in that organization. If you leave it off, you can choose for which projects you wish to turn it on.
+
 ## Next steps
 
 After you plan your security approach, consider how your [repositories](repos.md) provide protection.
