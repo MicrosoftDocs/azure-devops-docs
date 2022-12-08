@@ -4,10 +4,10 @@
   items:
   - name: Request stakeholder feedback
     displayName: stakeholder, feedback, request
-    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
   - name: Provide stakeholder feedback
     displayName: stakeholder, feedback, provide
-    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
   - name: Get insights from tests
     displayName: insights, exploratory
     href: ../../test/insights-exploratory-testing.md
@@ -28,10 +28,10 @@
     href: ../../test/add-to-bugs-exploratory-testing.md
   - name: Provide feedback without a request
     displayName: stakeholder, feedback, voluntary
-    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
   - name: Track stakeholder feedback requests
     displayName: stakeholder, feedback, response, query
-    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
 - name: Microsoft Feedback client
   items:
   - name: Request feedback
@@ -40,7 +40,7 @@
     href: give-feedback.md
 - name: Track feedback requests
   displayName: stakeholder, feedback, track
-  href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
 - name: Set feedback permissions (Security)
   href: give-permissions-feedback.md
 - name: Enable remote audio capture

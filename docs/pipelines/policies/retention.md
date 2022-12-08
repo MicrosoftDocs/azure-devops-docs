@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 11/02/2021
+ms.date: 11/08/2022
 ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
 monikerRange: '<= azure-devops'
 ---
@@ -346,7 +346,7 @@ To clean up automated test results that are left over from deleted builds or tes
 
 You can set artifact retention policies for pipeline runs in the Pipeline settings. 
 
-1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
+1. Sign in to your project, For Azure DevOps Services, the URL path is `https://dev.azure.com/{yourorganization}/{yourproject}`.
 
 2. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
@@ -362,7 +362,7 @@ You can set artifact retention policies for pipeline runs in the Pipeline settin
 
 ## Use the Copy Files task to save data longer
 
-You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
+You can use the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
 # [YAML](#tab/yaml)
 
@@ -472,7 +472,7 @@ No. Neither the pipeline's retention policy nor the maximum limits set by the ad
 
 If you use classic releases to deploy to production, then customize the retention policy on the release pipeline. Specify the number of days that releases deployed to production must be retained. In addition, indicate that runs associated with that release are to be retained. This will override the run retention policy.
 
-If you use multi-stage YAML pipelines to production, the only retention policy you can configure is in the project settings. You cannot customize retention based on the environment to which the build is deployed.
+If you use multi-stage YAML pipelines to deploy to production, the only retention policy you can configure is in the project settings. You cannot customize retention based on the environment to which the build is deployed.
 
 ### I did not mark runs to be retained indefinitely. However, I see a large number of runs being retained. How can I prevent this?
 
@@ -506,7 +506,7 @@ If you believe that you have lost runs due to a bug in the service, create a sup
 
 ### How do I use the `Build.Cleanup` capability of agents?
 
-Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
+Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs. The Cleanup functionality can be enabled by navigating to  **Agent** > **Capabilities** and setting `Build.Cleanup` equal to `1`.
 
 ### What happens to file share Artifacts when the build is deleted 
 

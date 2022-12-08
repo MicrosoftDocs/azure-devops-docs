@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/04/2022
+ms.date: 10/31/2022
 ---
 
 # Change your organization's billing subscription
@@ -51,15 +51,6 @@ Have the following permissions to change your organization's billing subscriptio
 4. Choose your Azure subscription, and then select **Save**.
 
    :::image type="content" source="media/shared/select-azure-subscription.png" alt-text="Screenshot showing Azure subscription selection.":::
-
-> [!NOTE]
-> If your organization has access to more than 50 subscriptions and you can't find the target subscription, do one of the following workarounds for this UI limitation:
-> 1. [Create a new user account](../accounts/add-organization-users.md). 
-> 2. Grant the user account [Owner or Contributor permission](add-backup-billing-managers.md) to the target subscription in the Azure portal. 
-> 3. Add the user account to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) for the Azure DevOps organization. 
-> 4. Use the new user account to link the organization to the target subscription.
-> 
-> - Or open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Azure DevOps bills the newly saved subscription for your organization.
 

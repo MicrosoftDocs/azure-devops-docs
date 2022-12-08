@@ -14,11 +14,10 @@ ms.subservice: azure-devops-repos-git
 # Pull request update notifications
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-You can subscribe to email alerts to be notified of changes in pull requests (PRs). By default, you're subscribed to several common PR notifications. For a complete list of default subscription notifications, see [Out-of-the-box (OOB) or default subscriptions](../../notifications/oob-built-in-notifications.md#out-of-the-box-oob-or-default-subscriptions).
+You can subscribe to email alerts to be notified of changes in pull requests (PRs). By default, you're subscribed to several common PR notifications. For a complete list of default subscription notifications, see [Out-of-the-box (OOB) or default subscriptions](../../organizations/notifications/oob-built-in-notifications.md#out-of-the-box-oob-or-default-subscriptions).
 
-To view or set your personal notifications, see [Manage your personal notifications](../../notifications/manage-your-personal-notifications.md).
+To view or set your personal notifications, see [Manage your personal notifications](../../organizations/notifications/manage-your-personal-notifications.md).
 
 ::: moniker range=">= azure-devops-2019"
 

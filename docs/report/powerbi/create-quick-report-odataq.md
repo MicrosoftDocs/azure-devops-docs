@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms date: 10/04/2021
+ms date: 10/17/2022
 ---
 
 # Create a Power BI report with an OData Query
@@ -78,24 +78,21 @@ Create a Power BI Query to pull the data into Power BI as follows:
  
     ```
     let
-       Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? "
-            &"$apply=filter( "
-                &"WorkItemType eq 'Bug' "
-                &"and StateCategory ne 'Completed' "
-                &"and startswith(Area/AreaPath,'{areapath}') "
-                &"and DateValue ge {startdate}  "
-                &") "
-            &"/groupby( "
-                &"(DateValue,State,WorkItemType,Priority,Severity,Area/AreaPath,Iteration/IterationPath,AreaSK), "
-                &"aggregate($count as Count) "
-                &") "
-        ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+       Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/WorkItemSnapshot? "
+          $apply=filter(
+              WorkItemType eq 'Bug'  
+          AND StateCategory ne 'Completed'  
+          AND startswith(Area/AreaPath,'{areapath}')  
+          AND DateValue ge {startdate} )/
+          groupby((DateValue,State,WorkItemType,Area/AreaPath), aggregate($count as Count))  
+          &$orderby=DateValue"
+         ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
     in
         Source
     ```
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor - Pasted Query](media/odatapowerbi-advancededitor-pasted.png)
+    > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
 
 5. Substitute your values within the sample query.
 
@@ -104,10 +101,10 @@ Create a Power BI Query to pull the data into Power BI as follows:
     * `{organization}` - Your organization name 
     * `{project}` - Your team project name. Or omit `/{project}` entirely, for a cross-project query
     * `{areapath}` - Your Area Path. Format: Project\Level1\Level2
-    * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2019-07-01Z` represents 2019-July-01. Don't enclose in quotes.
+    * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents 2022-September-01. Don't enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor - Replace strings in query](media/odatapowerbi-advancededitor-replaced.png)
+    > ![Screenshot of Power BI, Advanced Editor, Replaced Strings in Query.](media/odatapowerbi-advancededitor-replaced.png)
 
 6. Choose **Done** to execute the query.
 

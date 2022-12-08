@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
 
-# Choose a branching strategies with a DevOps mindset  
+# Choose a branching strategy with a DevOps mindset  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

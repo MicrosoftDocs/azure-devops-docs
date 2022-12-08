@@ -31,7 +31,7 @@ steps:
 ```
 
 > [!NOTE]
-> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](../tasks/utility/publish-pipeline-artifact.md) .
+> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) .
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -128,7 +128,7 @@ steps:
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
-> The `download` keyword is a shortcut for the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
+> The `download` keyword is a shortcut for the [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task.
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -279,7 +279,7 @@ Not available.
 ## Artifacts in release and deployment jobs
 
 Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `$(Pipeline.Workspace)`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
-In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
+In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
 
 ```yaml
 steps:
@@ -339,7 +339,7 @@ stages:
 
 ## Migrate from build artifacts
 
-Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task instead.
+Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) can still be downloaded using [Download Build Artifacts](/azure/devops/pipelines/tasks/reference/download-build-artifacts-v1), but we recommend using the latest [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
@@ -360,6 +360,12 @@ When migrating from build artifacts to pipeline artifacts:
         artifactName: 'dev'
     artifactType: 'pipeline'
 ```
+
+- **targetPath**: The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include variables, but wildcards are not supported.
+
+- **artifactName**: Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.
+
+- **artifactType**: Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. Options: `pipeline`, `filepath`.
 
 ## FAQ
 

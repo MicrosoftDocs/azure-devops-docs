@@ -139,7 +139,7 @@ Choose the **Current UI** tab. The New Teams Page UI is only available for Azure
 	From the team profile, you can perform these additional tasks:  
 	- [Add team members](#add-team-members)
 	- [Add and remove team administrators](add-team-administrator.md)
-	- [Navigate to team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+	- [Navigate to team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 	<a id="add-team-members" />
@@ -269,7 +269,7 @@ url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a9
 
 Upon creation of a team, the following items are automatically configured:  
 - Security group with the team name containing the members assigned to the team, for example, **[Fabrikam Fiber]\Production Planning**. You can use this name to filter queries or to **@mention** all members of the team. 
-- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../notifications/manage-team-group-global-organization-notifications.md).
+- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 - Default dashboard named **Overview** assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
 
 > [!IMPORTANT]   

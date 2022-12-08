@@ -26,7 +26,7 @@ Use the Delivery Plans feature to ensure that your teams are aligned with your o
 
 Delivery Plans supports these tasks: 
 
-- View up to 15 team backlogs, including a mix of backlogs and teams from different projects.
+- View up to 20 team backlogs, including a mix of backlogs and teams from different projects.
 - Add custom portfolio backlogs and epics. 
 - View work items that span several iterations.
 - Reset start date and target date through drag-and-drop borders. 

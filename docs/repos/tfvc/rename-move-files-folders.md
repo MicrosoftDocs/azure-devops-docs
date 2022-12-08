@@ -1,11 +1,11 @@
 ---
-title: Rename or move files and folders | Team Foundation Version Control 
+title: Rename or move files and folders in TFVC
 titleSuffix: Azure Repos
-description: Rename or move files and folders using Team Foundation Version Control (TFVC) commands
+description: Rename or move files and folders using Team Foundation Version Control (TFVC) in Visual Studio.
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,54 +14,56 @@ ms.subservice: azure-devops-repos-tfvc
 # Rename or move files and folders in TFVC
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
+For files in Team Foundation Version Control (TFVC), you can use Visual Studio [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to move or rename one file or folder at a time.
+
+You can also use the `tf` command-line utility to move or rename files or folders in TFVC. For more information, see [Rename command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md).
 
 > [!IMPORTANT]
-> If you're not using TFVC for version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) to
-> move and rename files in your current open Visual Studio solutions or projects.
+> - Don't use **Source Control Explorer** to move folders or files that a Visual Studio project or solution references. Move these files with [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) instead, and use a new changeset to check in the move.
+> 
+> - If you're not using TFVC for version control, use **Solution Explorer** to move and rename files in Visual Studio solutions or projects.
 
-## Move an item in TFVC
+## Prerequisites
 
-You can use [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to move one file or folder at a time.
-You should not use Source Control Explorer to move folders or files that are referenced by a Visual Studio project or solution. 
-Move these files with [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) instead and check in the move in a new changeset.
+You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-1.  In Source Control Explorer, select the item that you want to move, open its shortcut menu, and choose **Move**.
+## Move an item
 
-2.  In the **Move** dialog box, either manually type the destination for the item in the **To** box, or choose **Browse** to use the **Browse for Folder** dialog box.
+1. In **Source Control Explorer**, right-click the item that you want to move and choose **Move**.
 
-3.  Choose **OK**.
+1. In the **Move** dialog box, manually enter the destination for the item in the **To** box, or choose **Browse** to use the **Browse for Folder** dialog box.
 
-## Rename an item in TFVC
+1. Choose **OK**.
 
-1.  In Source Control Explorer, select the file that you want to edit, open its shortcut menu, and choose **Rename**.
+## Rename an item
 
-2.  Type the desired name for the item.
+1. In **Source Control Explorer**, right-click the file you want to rename and choose **Rename**.
+
+1. Enter the new name for the item.
+
+1. Choose **OK**.
 
 ### Fix the outcome after you rename an item in your operating system
 
-You should avoid renaming items managed by TFVC using your operating system (for example, using Windows File Explorer, or the **rename** command in the Windows command prompt). When you have used your operating system to rename an item in a [local workspace](decide-between-using-local-server-workspace.md), Visual Studio detects the change as two changes: an add and a delete. You can join the two actions into a rename action.
+Avoid using your operating system, such as Windows File Explorer or the Windows command prompt `rename` command, to rename items that are managed by TFVC. If you do use your operating system to rename an item in a [local workspace](decide-between-using-local-server-workspace.md), Visual Studio detects the change as two changes: an add and a delete. You can join the two actions into a rename action.
 
 > [!NOTE]
-> Git version control users can move and rename files from the command line or Windows Explorer without this concern. The changes will be reflected in Team Explorer.
+> This issue doesn't apply to Git version control.
 
-1.  In Visual Studio, in Team Explorer, choose ![Home icon](media/rename-move-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
+1. In Visual Studio **Team Explorer**, choose **Pending Changes**.
 
-2.  In the **Excluded Changes** section, choose the **Detected:** link.
+1. In the **Excluded Changes** section of the **Pending Changes** page, select **Detected**.
 
-3.  In the **Promote Candidate Changes** dialog box, select the delete and add actions, open their shortcut menu, and choose **Promote as Rename**.
+1. In the **Promote Candidate Changes** dialog box, select the delete and add actions, right-click, and choose **Promote as Rename**.
 
-4.  A single rename change now appears in the **Included Changes** section.
+1. A single rename change now appears in the **Included Changes** section.
 
-## Work from the command prompt
+> [!TIP]
+> - When you begin a new task, it's a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.
+> - Avoid renaming an item that has been branched but not yet checked in. If you try to do so, a conflict occurs.
 
--    [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md) : Rename or move a file.
+## Next steps
 
-## Tips
-
-You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
-
--   If you are beginning a new task, it's a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.  
--   Avoid renaming an item that has been branched but not yet checked in. If you try to do so, a conflict will occur.  
--   You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).
+You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).

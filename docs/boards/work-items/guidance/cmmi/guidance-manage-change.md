@@ -3,6 +3,7 @@ title: Manage change with the Capability Maturity Model Integration (CMMI) proce
 titleSuffix: Azure Boards
 description: Learn how to use change request work items to track and control all changes to the product and supporting systems. 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
 ms.topic: conceptual
 ms.author: kaelli
@@ -49,6 +50,6 @@ You can use change request work items to track and control all changes to the pr
 
 ## Monitor change requests  
 
- While a change request is active, you can monitor it by viewing the Open Change Requests With Requirements query. Also, you can [create an email alert](../../../../notifications/manage-your-personal-notifications.md) for when a Change Request is created. Change requests should be processed in a reasonable amount of time.  
+ While a change request is active, you can monitor it by viewing the Open Change Requests With Requirements query. Also, you can [create an email alert](../../../../organizations/notifications/manage-your-personal-notifications.md) for when a Change Request is created. Change requests should be processed in a reasonable amount of time.  
   
  If a change request doesn't receive the attention that it requires, escalate the matter by creating an issue work item. Link the new issue to the change request, and escalate the issue to get the change request impact assessment on track.

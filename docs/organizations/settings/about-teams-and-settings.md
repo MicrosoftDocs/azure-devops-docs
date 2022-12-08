@@ -221,7 +221,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ![Web portal, Queries page, Query that uses In Group operator and team group name](../../boards/plans/media/query-in-group-email-team-work-in-progress.png)
 
-You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../organizations/notifications/at-mentions.md).  
 
 ## Work on more than one team
 

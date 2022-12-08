@@ -3,7 +3,7 @@ title: All FORM XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
 ms.author: kaelli
 author: KathrynEE

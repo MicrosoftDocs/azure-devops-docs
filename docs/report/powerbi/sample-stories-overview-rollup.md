@@ -16,7 +16,7 @@ ms.date: 10/12/2021
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This report builds on the [Requirements tracking report](sample-stories-overview.md) report and does a one level roll-up to provide aggregated metrics. For example, if you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.
+This report builds on the [Requirements tracking report](sample-stories-overview.md) and shows how to aggregate metrics for a one-level roll-up. For example, if you're tracking requirements with User Stories, you can aggregate data for Features&mdash;the parent for User Stories&mdash;with the queries provided in this article.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -37,7 +37,7 @@ An example is shown in the following image.
 
 ### Query area and iteration paths
 
-In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
+In order to scope your report to a particular Area and Iteration path, you can filter the query using AreaSK and IterationSK. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
 
 ### Query for percentage of hours completion for requirements
 
@@ -257,7 +257,7 @@ To create the report, perform the following steps:
 
 1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by WorkItemId column. 
 1. Create a Power BI visualization **Table**.
-1. Add the columns you are interested in from the three Power BI queries.
+1. Add the columns you're interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
     > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)

@@ -2,7 +2,7 @@
 title: Share Packages publicly with public feeds
 description: Use Azure Artifacts public feeds to share NuGet, npm, Maven, and Python packages publicly
 ms.service: azure-devops-artifacts
-ms.date: 06/20/2022
+ms.date: 11/22/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -15,7 +15,7 @@ Azure Artifacts provides an easy way to share packages to users outside your org
 ## Prerequisites
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- A public project. [Create a public project](../../organizations/public/create-public-project.md) if you don't have one already.
+- A public project. [Create a public project](../../organizations/projects/create-project.md) if you don't have one already.
 
 ## Create a public feed
 
@@ -44,8 +44,9 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 
 ### Publish packages (CLI)
 
-- [NuGet](../get-started-nuget.md#publish-nuget-packages)
-- [Npm](../get-started-npm.md#publish-packages)
+- [NuGet - NuGet.ext](../nuget/publish.md#publish-packages)
+- [NuGet - dotnet](../nuget/dotnet-exe.md#publish-packages)
+- [Npm](../npm/publish.md)
 - [Maven](../get-started-maven.md#publish-artifacts)
 - [Python](../quickstarts/python-cli.md#publish-python-packages)
 
@@ -53,8 +54,8 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 
 - [NuGet](../../pipelines/artifacts/nuget.md#publish-a-package)
 - [Npm](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
+- [Maven](../../pipelines/artifacts/publish-maven-artifacts.md)
 - [Python](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
-- [Maven](../../pipelines/artifacts/pull-package-gradle.md)
 
 > [!IMPORTANT]
 > Universal Packages are not supported in public feeds.

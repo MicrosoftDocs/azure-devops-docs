@@ -207,16 +207,17 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
    :::column span="":::
       - [Aggregate data, apply extension](aggregated-data-analytics.md#apply-extension)  
       - [Aggregate data, OData aggregation extension](aggregated-data-analytics.md#aggregation-extension)  
-      - [Aggregate data, simple count](aggregated-data-analytics.md#simple-count)  
+      - [Aggregate data, simple count](wit-analytics.md#return-count-items)  
       - [Collection-scoped queries](account-scoped-queries.md#org-scope)  
-      - [Construct a basic query](wit-analytics.md#basic-query)  
+      - [Construct a basic query](../analytics/analytics-query-parts.md#construct-basic-query)  
       - [Create an Analytics widget](example-analytics-widget.md)  
       <br/>
-      - [Enforce server-side paging](wit-analytics.md#server-force-paging)  
+      - [Enforce server-side paging](../analytics/analytics-query-parts.md#server-force-paging)  
       - [Filter aggregated results](aggregated-data-analytics.md#filter-aggregate)  
-      - [Filter by Area Path](wit-analytics.md#filter-related-entities)  
+      - [Filter by Area Path](wit-analytics.md#filter-navigation-field)  
       - [Filter by Changed Date](wit-analytics.md#date-range-queries)  
-      - [Filter by Iteration Path](wit-analytics.md#filter-related-entities)  
+      - [Filter by Identity field](wit-analytics.md#filter-navigation-field)  
+      - [Filter by Iteration Path](wit-analytics.md#filter-navigation-field)  
       - [Filter data with query filter clause](wit-analytics.md#filter-data)  
       <br/>
       - [Generate multiple aggregations](aggregated-data-analytics.md#multiple-aggregate)  
@@ -225,7 +226,7 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
       - [Group results using `groupby`](aggregated-data-analytics.md#groupby)  
    :::column-end:::
    :::column span="":::
-      - [Query a single entity set](wit-analytics.md#single-entity)  
+      - [Query an entity set](../analytics/analytics-query-parts.md#query-entity-set)  
       - [Query based on Iteration Path](analytics-recipes.md#iteration)  
       - [Query based on Area Path](analytics-recipes.md#area)  
       - [Query based on Changed Date](analytics-recipes.md#changed-date)  
@@ -233,19 +234,20 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
       - [Query based on Team](analytics-recipes.md#team)  
       - [Query based on Was Ever](analytics-recipes.md#was-ever)  
       <br/>
-      - [Query work item count](analytics-recipes.md#project-count)  
+      - [Query work item count](wit-analytics.md#return-count-items) 
       - [Query for linked work items](work-item-links.md)  
       - [Query for non-hierarchical links](work-item-links.md)  
       - [Query metadata](../analytics/analytics-query-parts.md#query-metadata)  
       - [Query trend data](querying-for-trend-data.md#trend-data)  
-      - [Query work item history](analytics-recipes.md#retrieve-work-item-history)  
+      - [Query work item history](analytics-recipes.md#history)  
    :::column-end:::
    :::column span="":::
       - [Organization-scoped queries](account-scoped-queries.md#org-scope)  
-      - [Project-scoped queries](account-scoped-queries.md#project-scope)  
+      - [Project-scoped queries](account-scoped-queries.md#project-scope)   
+      - [Return a count of work items](wit-analytics.md#return-count-items)  
       - [Return data from related entities](wit-analytics.md#return-related)  
       - [Return parent of work items](account-scoped-queries.md#parent-work-items)  
-      - [Return specific columns or fields](wit-analytics.md#select-columns)  
+      - [Return specific properties or fields](wit-analytics.md#select-columns)  
       - [Set permissions](../powerbi/analytics-security.md)  
       - [Sort results](wit-analytics.md#sort-results)  
       - [View OData query behind a report or widget](view-odata-query-analytics-report.md)

@@ -14,7 +14,7 @@
   href: connect-to-projects.md
   displayname: Azure, Active, Directory, portal, visual, studio, connection
 - name: Connect a project to GitHub
-  href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json
   displayname: Azure, Boards, connection, authentication, PAT, OAuth, register
 - name: Get started as a Stakeholder
   href: ../security/get-started-stakeholder.md
@@ -23,13 +23,13 @@
   href: about-projects.md
   displayname: private, public, customize, configure, Agile, connect
 - name: What do I get with a project?
-  href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json
   displayname: features, services, dashboards, plan, track
 - name: Add users or groups to a project
   displayName: create, new, account, default, custom, access, permission
   href: ../security/add-users-team-project.md
 - name: Work across projects FAQs 
-  href: ../../project/work-across-projects-faqs.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+  href: ../../project/work-across-projects-faqs.yml?toc=/azure/devops/organizations/toc.json 
 - name: Project configuration
   items:
   - name: Area & iteration paths
@@ -44,7 +44,7 @@
 - name: Manage projects
   items:
   - name: Manage your project
-    href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json
     displayname: policies, extensions
   - name: Rename a project
     href: rename-project.md
@@ -59,7 +59,7 @@
     href: ../settings/set-services.md
     displayname: project, settings, disable, pipeline, repository
   - name: Set project visibility
-    href: ../public/make-project-public.md
+    href: ../projects/make-project-public.md
     displayname: make, change, vs, repo, repository,
   - name: Save project data
     href: save-project-data.md
@@ -68,5 +68,10 @@
     href: resources-granted-to-project-members.md
     displayname: scope, group, organization, project, collection
 - name: Public projects
-  href: ../public/about-public-projects.md
-  displayname: share, code, continuous, integration, deployment, services, migrate
+  items:
+  - name: About public projects
+    href: about-projects.md#use-private-and-public-projects
+    displayname: public, project, private, feature, access
+  - name: Change project to public or private
+    href: make-project-public.md
+    displayname: public, project, private, visibility, access

@@ -241,8 +241,8 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    :::column span="2":::
    The test suite category. Allowed values are:  
    - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.  
-   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
-   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.  
+   - **Requirement Based**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
+   - **Static**: Use to group together test cases with any characteristics or test suites.  
    For more information, see [Create a test plan](../../test/create-a-test-plan.md).  
    Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String
    :::column-end:::

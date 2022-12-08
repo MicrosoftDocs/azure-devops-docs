@@ -302,13 +302,13 @@ Tasks in a server job are orchestrated by and executed on the server (Azure Pipe
 
 Currently, only the following tasks are supported out of the box for agentless jobs:
 
-* [Delay task](../tasks/utility/delay.md)
-* [Invoke Azure Function task](../tasks/utility/azure-function.md)
-* [Invoke REST API task](../tasks/utility/http-rest-api.md)
-* [Manual Validation task](../tasks/utility/manual-validation.md)
-* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
-* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
-* [Query Work Items task](../tasks/utility/work-item-query.md)
+* [Delay task](/azure/devops/pipelines/tasks/reference/delay-v1)
+* [Invoke Azure Function task](/azure/devops/pipelines/tasks/reference/azure-function-v1)
+* [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
+* [Manual Validation task](/azure/devops/pipelines/tasks/reference/manual-validation-v0)
+* [Publish To Azure Service Bus task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1)
+* [Query Azure Monitor Alerts task](/azure/devops/pipelines/tasks/reference/azure-monitor-v1)
+* [Query Work Items task](/azure/devops/pipelines/tasks/reference/query-work-items-v0)
 
 Because tasks are extensible, you can add more agentless tasks by using extensions. The default timeout for agentless jobs is 60 minutes.  
 
@@ -326,7 +326,7 @@ jobs:
     maxParallel: number
     matrix: { string: { string: string } }
 
-  pool: server
+  pool: server # note: the value 'server' is a reserved keyword which indicates this is an agentless job
 ```
 
 You can also use the simplified syntax:
@@ -334,7 +334,7 @@ You can also use the simplified syntax:
 ```yaml
 jobs:
 - job: string
-  pool: server
+  pool: server # note: the value 'server' is a reserved keyword which indicates this is an agentless job
 ```
 
 ::: moniker-end

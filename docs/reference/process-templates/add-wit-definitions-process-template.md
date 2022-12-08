@@ -3,6 +3,7 @@ title: Add or modify work item types
 titleSuffix: Azure DevOps & TFS
 description: Specify type definitions for a process template within the WorkItemTracking plug-in 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: c0cec71f-89ad-43f5-960e-6008e3f9d975
 ms.author: kaelli
 author: KathrynEE
