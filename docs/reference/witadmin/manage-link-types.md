@@ -3,13 +3,13 @@ title: Manage link types
 titleSuffix: Azure DevOps   
 description: Customize the link types to track related work, dependencies, and changes made over time  
 ms.service: azure-devops-boards
-ms.custom: witadmin
+ms.custom: witadmin, archive-candidate
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 12/01/2022
 ---
 
 # Manage link types
@@ -18,13 +18,13 @@ ms.date: 01/11/2022
 
 Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
-You manage the link types defined for a project collection by using the following **witadmin** commands:  
--   **deactivatelinktype**:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
--   **deletelinktype**:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.    
--   **exportlinktype**:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. 
--   **importlinktype**:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type does not already exist, a new link type will be created.   
--   **listlinktypes**:  Lists the available set of link types on a server. 
--   **reactivatelinktype**: Reactivates the specified link type, and optionally assigns it a new name.  
+You manage the link types defined for a project collection by using the following `witadmin` commands:  
+- `deactivatelinktype`:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
+- `deletelinktype`:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.    
+- `exportlinktype`:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. 
+- `importlinktype`:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type doesn't already exist, a new link type will be created.   
+- `listlinktypes`:  Lists the available set of link types on a server. 
+- `reactivatelinktype`: Reactivates the specified link type, and optionally assigns it a new name.  
   
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
@@ -55,13 +55,14 @@ witadmin reactivatelinktype /collection:CollectionURL /n:LinkName
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br />**http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*. |  
-|**/n:** `LinkName`|The name or the reference name of the link type to deactivate or delete.|  
-|**/f:** `FileName`|The XML file of link types. Required for import, optional for export. If you omit this parameter, the command output appears on the display.|  
-|**/e:** `encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
-|**/v**|Validates the link type XML without importing it.|  
-|**/noprompt**|Disables the prompt for confirmation.|  
-|**/?** or **help**|Displays help about the command in the Command Prompt window.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|   
+|`/n:` `LinkName`|The name or the reference name of the link type to deactivate or delete.|  
+|`/f:` `FileName`|The XML file of link types. Required for import, optional for export. If you omit this parameter, the command output appears on the display.|  
+|`/e:` `encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, `witadmin` attempts to detect the encoding, and if detection fails, `witadmin` uses UTF-8.|  
+|`/v`|Validates the link type XML without importing it.|  
+|`/noprompt`|Disables the prompt for confirmation.|  
+|`/?` or `help`|Displays help about the command in the Command Prompt window.|  
+  
   
 ## Remarks  
  
@@ -91,7 +92,7 @@ witadmin exportlinktype /collection:http://AdventureWorksServer:8080/tfs/Default
 ```  
   
 ### Deactivate and then reactivate a link type  
- The following examples deactivate the link type, mylinktype, and then reactivate it:  
+ The following examples deactivate the link type, *mylinktype*, and then reactivate it:  
   
 ```  
 witadmin deactivatelinktype /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:mylinktype  

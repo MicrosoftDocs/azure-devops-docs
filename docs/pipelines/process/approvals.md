@@ -79,11 +79,11 @@ The check fails if execution of the stage doesn't start within the **Timeout** p
 ## Invoke Azure function
 
 Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
-Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
+Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](/azure/devops/pipelines/tasks/reference/azure-function-v1)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
-The checks fail if the stage hasn't started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
+The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](/azure/devops/pipelines/tasks/reference/azure-function-app-v1) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
@@ -92,9 +92,9 @@ The checks fail if the stage hasn't started execution within the specified **Tim
 
 ## Invoke REST API
 
-Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
+Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1)
 
-The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage hasn't started execution within the specified **Timeout** period. See [Invoke REST API task](../tasks/utility/http-rest-api.md) for more details.
+The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
@@ -105,7 +105,7 @@ The evaluation can be repeated periodically using the **Time between evaluations
 Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
 Canary deployments and staged rollouts are common deployment strategies used to lower risk of regressions to critical applications. After deploying to a stage (set of customers), the application is observed for a period of time. Health of the application after deployment is used to decide whether the update should be made to the next stage or not.
 
-Query Azure Monitor Alerts helps you observe Azure Monitor and ensure no alerts are raised for the application after a deployment. The check succeeds if no alert rules are activated at the time of evaluation. [Learn More](../tasks/utility/azure-monitor.md)
+Query Azure Monitor Alerts helps you observe Azure Monitor and ensure no alerts are raised for the application after a deployment. The check succeeds if no alert rules are activated at the time of evaluation. [Learn More](/azure/devops/pipelines/tasks/reference/azure-monitor-v1)
 
 The evaluation is repeated after **Time between evaluations** setting in control options. The checks fail if the stage hasn't started execution within the specified **Timeout** period.  
 

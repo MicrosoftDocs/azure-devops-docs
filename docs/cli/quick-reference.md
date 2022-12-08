@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/18/2022
+ms.date: 11/08/2022
 ---
 
 # Index to Azure DevOps CLI examples 
@@ -77,11 +77,10 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Update a banner](../organizations/settings/manage-banners.md#update-a-banner)
       #### Extensions
       - [Install an extension](../marketplace/install-extension.md) 
-      - [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
-      - [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
+      - [List extensions](../marketplace/install-extension.md#list-extensions)
+      - [List extension information](../marketplace/install-extension.md#list-extension-information)
       - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
-      - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
-      - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
+      - [Uninstall/disable an extension](../marketplace/install-extension.md#uninstall-disable-extension) 
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
@@ -246,12 +245,18 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Update a security group](../organizations/security/add-manage-security-groups.md) 
 
-## Service endpoints
+<a id="service-endpoints" />
+
+## Service endpoints or service connections
 
 - [Create a GitHub service endpoint](service-endpoint.md)
 - [Create an Azure RM service endpoint](service-endpoint.md)
 - [Create service endpoint using a configuration file](service-endpoint.md)
- 
+- [List service endpoints](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-list)
+- [Delete a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-delete)
+- [Manage GitHub service endpoints](/cli/azure/devops/service-endpoint/github)
+- [Show details of a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-show)
+- [Update a service endpoint](/cli/azure/devops/service-endpoint#az-devops-service-endpoint-update)
 
 ## Related articles
  

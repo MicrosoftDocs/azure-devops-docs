@@ -10,6 +10,8 @@
       items:
         - name: "2022"
           items:
+          - name: November 2
+            href: 2022/sprint-212-update.md
           - name: October 11
             href: 2022/sprint-211-update.md
           - name: October 4
@@ -195,6 +197,8 @@
         items:
         - name: "2022"
           items:
+          - name: November 2
+            href: 2022/boards/sprint-212-update.md
           - name: October 11
             href: 2022/boards/sprint-211-update.md
           - name: October 4
@@ -345,6 +349,8 @@
         items:
         - name: "2022"
           items:
+          - name: November 2
+            href: 2022/pipelines/sprint-212-update.md
           - name: October 11
             href: 2022/pipelines/sprint-211-update.md
           - name: October 4
@@ -713,11 +719,11 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: September 2022
+  - name: October 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: September 2022
+    href: docswhatsnew/azure-devops-docs-2022-09.md
   - name: August 2022
     href: docswhatsnew/azure-devops-docs-2022-08.md
-  - name: July 2022
-    href: docswhatsnew/azure-devops-docs-2022-07.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

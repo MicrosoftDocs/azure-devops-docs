@@ -7,5 +7,5 @@
     topicHref: /azure/devops/dev-resources/index
     items: 
     - name: Demo Generator
-      tocHref: /azure/devops//demo-gen
+      tocHref: /azure/devops//demo-gen/
       topicHref: /azure/devops/demo-gen/index
