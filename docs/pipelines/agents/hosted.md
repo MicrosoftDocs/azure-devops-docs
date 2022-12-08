@@ -37,7 +37,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Ubuntu 18.04 ([deprecated starting 8/8/2022 and unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002)) | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md) |
 | macOS 12 Monterey | *macOS-12* | `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
 | macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
-| macOS X Catalina 10.15 ([deprecated starting 5/31/2022 and unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583)) | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
+| macOS X Catalina 10.15 ([deprecated starting 5/31/2022 and unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/5583)) | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
