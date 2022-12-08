@@ -1,5 +1,5 @@
 ---
-title: Work Items with Direct Links sample report
+title: List linked work items sample queries and reports  
 titleSuffix: Azure DevOps
 description: Learn how to generate Power BI reports based on Work Items with Direct Links.
 ms.subservice: azure-devops-analytics
@@ -8,10 +8,10 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 ---
 
-# List linked work items sample reports
+# List linked work items sample queries and reports
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
@@ -86,7 +86,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
 
 ### Query breakdown

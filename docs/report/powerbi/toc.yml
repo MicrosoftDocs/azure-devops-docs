@@ -97,7 +97,7 @@ items:
     href: sample-boards-rollup.md
   - name: Feature progress
     href: sample-boards-featureprogress.md
-  - name: Work Items and Direct Links
+  - name: List linked work items 
     href: sample-boards-directlinks.md
   - name: Release burndown
     href: sample-boards-releaseburndown.md

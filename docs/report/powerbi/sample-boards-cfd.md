@@ -68,7 +68,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{teamname}` - The name of the team to display the CFD for.
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+* `{teamname}` - The name of the team to display CFD data
 * `{startdate}` - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 
 

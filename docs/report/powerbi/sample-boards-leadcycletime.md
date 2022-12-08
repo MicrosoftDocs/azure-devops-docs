@@ -65,6 +65,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
 - `{startdate}` - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 

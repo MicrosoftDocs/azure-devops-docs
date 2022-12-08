@@ -74,7 +74,14 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`. 
+
+
+
 
 ### Query breakdown
 

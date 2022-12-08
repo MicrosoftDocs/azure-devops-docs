@@ -88,8 +88,9 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ***
 
 ### Substitution strings
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 
 ### Query breakdown
