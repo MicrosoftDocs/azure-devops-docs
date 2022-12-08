@@ -13,4 +13,5 @@ ms.topic: include
 - [Fine-grained access management for agent pools](#fine-grained-access-management-for-agent-pools)
 - [Prevent granting all pipelines access to protected resources](#prevent-granting-all-pipelines-access-to-protected-resources)
 - [Improved security when building pull requests from forked GitHub repositories](#improved-security-when-building-pull-requests-from-forked-github-repositories)
+- [Macos-latest label will point to macos-12 image](#macos-latest-label-will-point-to-macos-12-image)
 - [Ubuntu-latest label will point to ubuntu-22.04 image](#ubuntu-latest-label-will-point-to-ubuntu-2204-image)
