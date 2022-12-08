@@ -144,7 +144,7 @@ Run, stage, and job state change service hook events now contain a `repository` 
 ]
 ```
 
-### New PAT Scope Required to Update Pipeline General Settings 
+### New PAT scope required to update pipeline General Settings 
 Invoking the [General Settings - Update](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1&preserve-view=true) REST API now requires a PAT with scope **Project and Team -> Read & Write**. 
 
 > [!div class="mx-imgBorder"]
