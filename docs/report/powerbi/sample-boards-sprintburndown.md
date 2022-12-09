@@ -369,6 +369,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
+
+[!INCLUDE [temp](includes/rename-query.md)]
+
+
 ## Power BI transforms
 
 [!INCLUDE [temp](includes/sample-expandcolumns.md)]
