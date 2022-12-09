@@ -152,10 +152,10 @@ sections:
         answer: |
           [Restore the user](/azure/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
       
+          <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
+
       - question: |
           How can I convert an Azure AD guest into a member?
-
-          <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
           
         answer: |
           Select from the following two options:
