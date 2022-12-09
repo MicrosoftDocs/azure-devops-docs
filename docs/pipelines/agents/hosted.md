@@ -47,11 +47,13 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* [The macOS 10.15 will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/5583).
+* [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
-* [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/23](https://github.com/actions/runner-images/issues/6002).
-* [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
-* [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
-* [`macOS-latest` workflows will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
+* [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
+* [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
+* [`windows-latest` images will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
+* [`macOS-latest` images will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
 * [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
 * The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
 * In December 2021, we removed the following Azure Pipelines hosted image:
