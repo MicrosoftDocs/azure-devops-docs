@@ -368,10 +368,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Transform data in Power BI
-
-
-### Expand columns in Power BI
+## Expand columns in Power BI
 
 The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)` clause returns records that contain several fields. Prior to creating the report, you need to expand the record to flatten it into specific fields. In this instance, you'll want to expand the following records: 
 
@@ -382,12 +379,12 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
  
 
-### (Optional) Rename fields
+## (Optional) Rename fields
 
 Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 
-### Replace null values in rollup fields
+## Replace null values in rollup fields
 
 If a work item doesn't have any children, the rollup value may be null. For example, **Descendants.CountOfUserStories** is "null" if a Feature doesn't have any child User Stories.
 
@@ -403,7 +400,7 @@ You can the default query label, *Query1* to something more meaningful. To do so
 
 
 
-## Create the Matrix report
+## Create the Table report
 
 1. In Power BI, choose the **Table** report under **Visualizations** and select the fields as shown in the following image. 
 

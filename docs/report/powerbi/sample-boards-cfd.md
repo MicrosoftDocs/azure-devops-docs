@@ -81,7 +81,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 * `{teamname}` - The name of the team to display CFD data
-* `{startdate}` - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
+- `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -191,23 +191,23 @@ In the follow example, the query was renamed to *CFD*, but no columns were renam
 1. Add `DateValue` to **Axis** and then right-click `DateValue` and select `DateValue`, rather than `Date Hierarchy`.
 
 1. Add `Count` to **Values**.
-2. 
+
 1. Add `ColumnName` to **Legend**.
 
-1. In the Filters pane, expand `ColumnName`, and select only the values you want to appear on the chart. For example, you may want to unselect *New*, *Proposed*, *Done*, or *Closed*.  
+1. In the **Filters** pane, expand `ColumnName`, and select only the values you want to appear on the chart. For example, you may want to unselect *New*, *Proposed*, *Done*, or *Closed*. 
 
 	:::image type="content" source="media/reports-boards/cfd-columnname-filters.png" alt-text="Screenshot of Power BI Filters for ColumnName. ":::
 
 
-The example report displays the columns in alphabetic order. 
+The example report displays the columns in alphabetic order. However, the preferred order is to sort the data according to the Kanban column order, or progressive order. 
 
 :::image type="content" source="media/reports-boards/cfd-stacked-area-chart.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in alphabetic order.":::
 
 ### Sort columns in progressive order
 
-To sort the chart columns in the order specific on the board, do the following steps:
+To sort the chart columns in the order specific on the Kanban board, do the following steps:
 
-1. Use the query below to create a new query in Power BI. When done, rename the query to *ColumnOrder*. 
+1. Create a new query in Power BI per the following queries. When done, rename the query to *ColumnOrder*. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -249,7 +249,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 1. Select **Column Tools** and then **Sort by Column** and choose `ColumnOrder`.
 	:::image type="content" source="media/reports-boards/cfd-sort-by-column.png" alt-text="Screenshot of Power BI Column Tools, Sort by Column selection.":::
 
-1. Select the **Modeling** menu, and then select **Manage Relationships**. Ensure there's a relationship between `CFD.ColumnName` and `ColumnOrder.ColumnName`. It's likely that the relationship was autodetected.
+1. Select the **Modeling** menu, and then **Manage Relationships**. Ensure there's a relationship between `CFD.ColumnName` and `ColumnOrder.ColumnName`. It's likely that the relationship was autodetected.
 
 	:::image type="content" source="media/reports-boards/cfd-manage-relationships-dialog.png" alt-text="Dialog for Manage Relationships showing a relationship between CFD.ColumnName and ColumnOrder.ColumnName":::
 
