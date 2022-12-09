@@ -15,14 +15,13 @@ ms.date: 12/08/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Lead time and cycle time indicate how long it takes for work to flow through a team's development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for a team to complete work items once they begin actively working on them.You can create lead time and cycle charts using the queries provided in this article. 
+You can create lead time and cycle charts using the queries provided in this article. Lead time and cycle time indicate how long it takes for work to flow through a team's development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for a team to complete work items once they begin actively working on them.
 
-The following image shows an example for average lead time. 
+The following image shows an example for average lead time broken down by priority assignments made to the user stories.
 
-:::image type="content" source="media/media/odatapowerbi-leadcycle-report.png" alt-text="Screenshot of Power BI Lead Cycle Time trend chart report.":::
+:::image type="content" source="media/reports-boards/lead-time-trend-chart.png" alt-text="Screenshot of Power BI Lead Cycle Time trend chart report.":::
 
-
-To learn more about lead time and cycle time, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
+To learn more about lead and cycle time, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -31,7 +30,7 @@ To learn more about lead time and cycle time, see [Cumulative flow, lead time, a
 
 ## Sample queries
 
-Queries in this section support returning lead and cycle time data for completed User Stories. You can query by area path or team name(s). 
+Queries in this section support returning lead and cycle time data for completed User Stories. You can query by area path or team name(s). All of these queries specify the `WorkItems` entity set as they return data calculated for each work item by the Analytics service.  
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
@@ -81,7 +80,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
-- `{startdate}` - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
+- `{startdate}` - Start your report for items completed on or after a given date, with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -96,6 +95,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$filter=WorkItemType eq 'User Story'`
@@ -196,11 +196,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-
-## (Optional) Rename query 
-
-You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
+[!INCLUDE [temp](includes/rename-query.md)]
 
 ## Transform data in Power BI
 
@@ -216,9 +212,9 @@ To learn how, see the following sections in [Transform Analytics data to generat
 - [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
   
 
-## Create the Line chart report 
+## Create the trend chart  
 
-The follow example assumes the query was renamed to LeadCycleTime and no one renamed any columns. 
+In the follow example, the query was renamed to *LeadCycleTime*, but no columns were renamed. 
 
 1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
 
@@ -231,7 +227,7 @@ The follow example assumes the query was renamed to LeadCycleTime and no one ren
 1. Add `Priority` to **Legend**.
 
  
-The example report displays:
+The example report displays. Note as you hover over any area in the report, additional data is shown. 
 
 :::image type="content" source="media/reports-boards/lead-time-trend-chart.png" alt-text="Screenshot of Sample Power BI Lead Cycle Time trend chart report.":::
 

@@ -402,9 +402,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 
 
-## (Optional) Rename query 
+[!INCLUDE [temp](includes/rename-query.md)]
 
-You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
 
 ## Transform data in Power BI
 
