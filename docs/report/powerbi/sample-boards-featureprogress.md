@@ -8,7 +8,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2022
+ms.date: 12/08/2022
 ---
 
 # Feature progress rollup sample report

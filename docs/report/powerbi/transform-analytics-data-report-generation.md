@@ -121,6 +121,40 @@ links-target-work-item-column-expand.png
 > represents its link to Work Item #3.
 
 
+<"id ="transform-data-type" />
+
+## Transform a column data type 
+
+<"id ="leadtimedays-cycletimedays" />
+
+
+### Transform the LeadTimeDays and CycleTimeDays columns to whole Numbers
+
+The `LeadTimeDays` and `CycleTimeDays` are decimal fields. For example if **Lead Time** is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that it's rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 
+
+From the Power Query Editor, select the ribbon **Transform** menu. 
+
+1. Select the `LeadTimeDays` column by selecting the column header.
+1. Select **Data Type** and change to **Whole Numbers**.
+   :::image type="content" source="media/transform-data/change-data-type-lead-time.png" alt-text="Screenshot of Power BI Transform menu, Data type selection.":::
+
+1. Repeat for `CycleTimeDays`.
+
+### Change CompletedDateSK to a Date field
+
+The `CompletedDateSK` column data corresponds to an integer rendering of the **Completed Date** field in the format `YYYYMMDD`. For example, the integer value of 2022-July-01 is 20220701. For easier reporting, we change it to a **Date** field.
+
+From the Power Query Editor, select the ribbon **Transform** menu. 
+
+1. Select the `CompletedDateSK` column header. 
+1. Select **Data Type** and change to **Text**.
+	When the **Change Column Type** dialog appears, select **Add new step** (rather than **Replace current step**). This two-step process is the easiest way to change it to a proper **Date** field in Power BI.
+
+   :::image type="content" source="media/transform-data/change-column-type-add-new-step.png" alt-text="Screenshot of Power BI Transform menu, Change Column Type dialog.":::
+
+1. Next, select **Date Type** again and choose **Date**. 
+	In the **Change Column Type** dialog, select **Add new step**.
+ 
 
 <a id="rename-column-fields" /> 
 

@@ -8,23 +8,35 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/08/2022
 ---
 
 # Lead time and Cycle time sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-This article shows you how to display average lead time or cycle time for a given set of User Stories. The following image shows an example for average lead time. To learn more about lead and cycle time, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
+Lead time and cycle time indicate how long it takes for work to flow through a team's development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for a team to complete work items once they begin actively working on them.You can create lead time and cycle charts using the queries provided in this article. 
 
-> [!div class="mx-imgBorder"] 
-> ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
+The following image shows an example for average lead time. 
+
+:::image type="content" source="media/media/odatapowerbi-leadcycle-report.png" alt-text="Screenshot of Power BI Lead Cycle Time trend chart report.":::
+
+
+To learn more about lead time and cycle time, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
+
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Sample queries
+
+Queries in this section support returning lead and cycle time data for completed User Stories. You can query by area path or team name(s). 
+
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+###  Return Lead Time and Cycle Time for User Stories and Area Path 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -37,7 +49,7 @@ let
             &"and StateCategory eq 'Completed' "
             &"and CompletedDate ge {startdate} "
             &"and startswith(Area/AreaPath,'{areapath}') "
-        &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
+        &"&$select=WorkItemId,Title,WorkItemType,State,Priority,AreaSK "
             &",CycleTimeDays,LeadTimeDays,CompletedDateSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -55,7 +67,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
             and StateCategory eq 'Completed'
             and CompletedDate ge {startdate}
             and startswith(Area/AreaPath,'{areapath}')
-        &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
+        &$select=WorkItemId,Title,WorkItemType,State,Priority,AreaSK
             ,CycleTimeDays,LeadTimeDays,CompletedDateSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)
 ```
@@ -69,7 +81,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
-- `{startdate}` - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
+- `{startdate}` - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -89,7 +101,7 @@ The following table describes each part of the query.
    `$filter=WorkItemType eq 'User Story'`
    :::column-end:::
    :::column span="1":::
-   Return User Stories
+   Return data for User Stories.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -97,7 +109,9 @@ The following table describes each part of the query.
    `and StateCategory eq 'Completed'`
    :::column-end:::
    :::column span="1":::
-   Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
+   Return only completed items. The system calculates values for **Lead Time Days** and **Cycle Time Days** only for work items that have completed. 
+   > [!NOTE]   
+   > If you look at the raw data of records, you may see entries where `CycleTimeDays=0`. This occurs when the User Story or work item enters an *In Progress* workflow category state and *Completed* on the same day.  For more information on workflow state categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,7 +119,7 @@ The following table describes each part of the query.
    `and CompletedDate ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return items Closed after the specified date. Example: **2019-04-01Z** represents 2019-April-01
+   Return items that are completed after the specified date. Example: **2022-04-01Z** represents 2022-April-01
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,17 +127,15 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
-   
-   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
+   Return work items under a specific **Area Path** that you specify in`'{areapath}'`. To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
+   `&$select=WorkItemId, Title, WorkItemType, State, Priority`
    :::column-end:::
    :::column span="1":::
-   Select fields to return
+   Select properties to return.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -131,7 +143,7 @@ The following table describes each part of the query.
    `, CycleTimeDays, LeadTimeDays, CompletedDateSK`
    :::column-end:::
    :::column span="1":::
-   Return the Cycle/Lead Time fields and CompletedDateSK. CompletedDateSK is the CompletedDate as an integer
+   Return the properties that support  **Lead Time Days**, **Cycle Time Days** and `CompletedDateSK`. CompletedDateSK returns a date value as an integer
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -139,78 +151,14 @@ The following table describes each part of the query.
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
    :::column-end:::
    :::column span="1":::
-   Expand Assigned To, Iteration, Area entities and select entity fields
+   Expand the properties for `AssignedTo`, `Iteration`, and `Area` entities and select entity fields for them. 
    :::column-end:::
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
+### Return Lead Time and Cycle Time for User Stories and teams
 
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-### Change LeadTimeDays and CycleTimeDays to data type: Whole Number
-
-The LeadTimeDays and CycleTimeDays are decimal fields. For example if Lead Time is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that it's rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 
-
-1. Select the LeadTimeDays column by clicking the column header.
-1. Select the **Transform** menu.
-1. Select **Data Type** and change to **Whole Numbers**.
-1. Repeat for CycleTimeDays.
-
-### Change CompletedDateSK to a Date field
-
-The CompletedDateSK field is the integer version of the Completed Date field in the format YYYYMMDD. For example, the integer value of 2019-July-01 is 20190701. For easier reporting, we change it to a Date field.
-
-1. Select the CompletedDateSK column by choosing the column header.
-1. Select the **Transform** menu.
-1. Select **Data Type** and change to **Text**.
-1. Select **Date Type** (again) and change to **Date**.
-1. When the **Change Column Type** dialog appears, select **Add new step** (rather than **Replace current step**). This two-step process is the easiest way to change it to a proper Date field in Power BI.
-
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Power BI + OData - Lead Cycle Fields](media/odatapowerbi-leadcycle-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Line chart**. 
-1. Add the field "CompletedDateSK" to **Axis**.
-    - Right-click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
-1. Add the field "Priority" to legend.
-1. Add the field "LeadTimeDays" to **Values**.
-    - Right-click "LeadTimeDays" field and ensure **Average** is selected.
-
-The example report:
-
-> [!div class="mx-imgBorder"] 
-> ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
-
-To pivot the report by Area Path (representing teams), add the field "Area.AreaPath" to **Legend**, replacing "Priority"
-
-> [!div class="mx-imgBorder"] 
-> ![Power BI + OData - Lead Cycle Report by Teams](media/odatapowerbi-leadcycle-report2.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
-You can use the following additional queries to create different but similar reports. You can use these queries with the steps defined above.
-
-### Filter by Teams, rather than Area Path
-
-This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
+This query is the same as the one provided in the previous section, except it filters by several team names rather than area paths.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -223,7 +171,7 @@ let
             &"and StateCategory eq 'Completed' "
             &"and CompletedDate ge {startdate} "
             &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) "
-        &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
+        &"&$select=WorkItemId,Title,WorkItemType,State,Priority,AreaSK "
             &",CycleTimeDays,LeadTimeDays,CompletedDateSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -241,17 +189,64 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
             and StateCategory eq 'Completed'
             and CompletedDate ge {startdate}
             and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
-        &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
+        &$select=WorkItemId,Title,WorkItemType,State,Priority,AreaSK
             ,CycleTimeDays,LeadTimeDays,CompletedDateSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath)
 ```
 
 ***
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
+
+## (Optional) Rename query 
+
+You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
+
+## Transform data in Power BI
+
+From the Power Query Editor, choose the query with the data you want to transform. For a Lead/Cycle time chart, you'll want to make the following transformations: 
+
+- Expand columns such as `Area`, `Iteration`, and `AssignedTo`. 
+- Tranform the data type for the `LeadTimeDays` and `CycleTimeDays` columns to a Whole number. 
+- Transform the data type for the `CompletedDateSK` column from an integer to a Date value, this requires several steps.  
+
+To learn how, see the following sections in [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md):
+- [Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+- [Transform the LeadTimeDays and CycleTimeDays columns to whole Numbers](transform-analytics-data-report-generation.md#leadtimedays-cycletimedays). 
+- [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+  
+
+## Create the Line chart report 
+
+The follow example assumes the query was renamed to LeadCycleTime and no one renamed any columns. 
+
+1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+
+	:::image type="content" source="media/reports-boards/lead-time-trend-chart-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Lead Time trend chart report. ":::
+
+1. Add `CompletedDateSK` to the **X-axis**.
+
+1. Add `LeadTimeDays` to the **Y-axis**, right-click and select **Average**.  
+
+1. Add `Priority` to **Legend**.
+
+ 
+The example report displays:
+
+:::image type="content" source="media/reports-boards/lead-time-trend-chart.png" alt-text="Screenshot of Sample Power BI Lead Cycle Time trend chart report.":::
 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
+
+
+
+<!--- 
+To pivot the report by Area Path (representing teams), add the field "Area.AreaPath" to **Legend**, replacing "Priority"
+
+> [!div class="mx-imgBorder"] 
+> ![Power BI + OData - Lead Cycle Report by Teams](media/odatapowerbi-leadcycle-report2.png)
+ 
+--> 
+
+
