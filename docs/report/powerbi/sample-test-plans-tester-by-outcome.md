@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 12/05/2022
 ---
 
 # Tester by outcome matrix sample report
@@ -73,7 +73,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of the test plan whose data you want to return.

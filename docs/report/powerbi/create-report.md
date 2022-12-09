@@ -1,5 +1,5 @@
 ---
-title: Power BI data transformations
+title: Create a Power BI report using Analytics data
 titleSuffix: Azure DevOps
 description: Learn how to create a Power BI report from Analytics data.
 ms.subservice: azure-devops-analytics
@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 12/05/2022
 ---
 
-# Create a Power Bi report
+# Create a Power Bi report from Analytics data
 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
