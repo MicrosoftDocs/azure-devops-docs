@@ -31,7 +31,7 @@ This article shows you how to display, for a given set of open Bugs, the number 
 
 The following queries return data from the `WorkItemSnapshot` entity set to support generating trend reports. 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]  
+[!INCLUDE [temp](includes/query-filters-work-items.md)]   
 
 ### Bug trend filtered by Area Path
 
@@ -132,7 +132,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-  Filter work items under a specific **Area Path** that you specify in`'{areapath}'`.<br>To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   Return work items under a specific **Area Path** that you specify in`'{areapath}'`. To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -331,8 +331,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Transform data in Power BI
 

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/08/2021
+ms.date: 12/08/2022
 ---
 
 # Release burndown sample queries and reports
@@ -18,6 +18,9 @@ ms.date: 10/08/2021
 Burndown and burnup reports show how much work is getting completed over time. The following image shows a burndown both by count of User Stories as well as sum of Story Points.
 
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Release burndown clustered column chart report.":::
+
+Burndown charts only make sense if you plan your work for the time period of the chart. Otherwise, if you plan on a sprint-by-sprint basis, you won't see a standard burndown. In these instances, a burnup chart makes more sense to see how progress is made over time. 
+
 
 
 To learn more about burndown and burnup, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
