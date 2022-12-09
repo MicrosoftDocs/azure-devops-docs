@@ -244,7 +244,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Transform the data in Power BI
 
-The query returns several columns that you need to expand before you can use them. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
+The query returns several columns that you need to expand before you can use them to create a report. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
 
 For the Feature Progress report, you'll need to carry out the following transforms: 
 
