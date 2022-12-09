@@ -169,7 +169,7 @@ From the Power Query Editor, select the ribbon **Transform** menu.
 
 Sometimes one or more records will contain null values. For example, a value may not have been entered for **Story Points** or **Remaining Work**.  
 
-:::image type="content" source="media/transform-data/records-null-data.png alt-text="Screenshot of Power BI table containing null values. .":::
+:::image type="content" source="media/transform-data/records-null-data.png" alt-text="Screenshot of Power BI table containing null values.":::
 
 For easier reporting, replace nulls with zero by following these steps.
 
@@ -179,6 +179,34 @@ For easier reporting, replace nulls with zero by following these steps.
 	- Enter "null" in **Value to Find**.
 	- Enter "0" in **Replace With**.
 1. Choose **OK**.
+
+## Create a custom column
+
+<a id="create-percent-complete" />
+ 
+### Create a percentage complete computed column
+
+1. Select **Add Column** menu.
+1. Select **Custom Column**.
+1. Enter **PercentComplete** for **New column name**.
+1. Enter the following in **Custom column formula**.
+
+    ```
+    = [Completed]/([Proposed]+[InProgress]+[Resolved]+[Completed])
+    ```
+	:::image type="content" source="media/reports-boards/custom-column-dialog-percent-complete.png" alt-text="Custom Column Dialog, PercentComplete syntax.":::
+
+    > [!NOTE]
+    > It is possible you won't have a **Resolved** column, if the work items don't have States mapped to the Resolved State Category. 
+    > If so, then omit "[Resolved]" in the above formula.
+
+1. Press **OK**.
+1. Select **Transform** menu.
+1. Select **Data Type** and select **Percentage**.
+
+[!INCLUDE [temp](includes/sample-finish-query.md)]
+
+
 
 
 ## Rename column fields

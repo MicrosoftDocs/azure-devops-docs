@@ -96,7 +96,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
 - `{tag}` - A tag that represents your release. All work items tagged with `{tagname}` are included in the report
-- `{startdate}` - The date to start the burndown report
+- `{startdate}` - The date to start the burndown report with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes. 
 - `{enddate}` - The date to end the burndown report.
 
 
