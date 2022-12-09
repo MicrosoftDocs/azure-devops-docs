@@ -63,7 +63,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 3. The Descendants entity is flattened to the selected columns:
 
-	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI Descendants column, expand options. ":::
+	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI expanded Descendants column. ":::
 
 
 links-target-work-item-column-expand.png
