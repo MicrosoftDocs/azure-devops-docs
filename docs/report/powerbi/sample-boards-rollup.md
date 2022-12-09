@@ -409,41 +409,17 @@ You can the default query label, *Query1* to something more meaningful. To do so
 
 	:::image type="content" source="media/reports-boards/rollup-table-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Rollup table report. ":::
 
-1. Add the field "**DateValue**" to **X-axis**.
-	- Right-click **DateValue** and select **DateValue**, rather than **Date Hierarchy**.  
-
-1. Add the field Count to **Y-axis**.
-	- Right-click **Count** and ensure **Sum** is selected.
-
-1. Add the State to **Legend**.
-
-The example report displays.  
-
-:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
-
-
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that columns are renamed as indicated in the corresponding images. 
-
-> [!div class="mx-imgBorder"] 
-> ![Feature rollup fields.](media/reports-boards/feature-rollup-fields.png)
-
-For a simple report, do the following steps:
-
 1. Add the following fields to **Columns** in the order indicated: 
-    - **WorkItemId**, choose **Don't summarize** to show ID if needed
-    - **WorkItemType**
-    - **Title**
-    - **State**
-    - **Count of User Stories**
-    - **Total Story Points**. 
-
-The example report displays:
-
-:::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of sample Feature rollup matrix report.":::
+    - `WorkItemI`, choose **Don't summarize** to show ID if needed
+    - `WorkItemType`
+    - `Title`
+    - `State`
+    - `Count of User Stories`
+    - `Total Story Points`. 
+ 
+The example report displays.   
+ 
+:::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Sample Feature rollup matrix report.":::
  
 ## Related articles
 

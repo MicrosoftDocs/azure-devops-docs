@@ -66,9 +66,6 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI expanded Descendants column. ":::
 
 
-links-target-work-item-column-expand.png
-
-
 #### Pivot Descendants.StateCategory column
 
 1. Select the 1Descendants.StateCategory1 column header to select it.
@@ -121,13 +118,12 @@ links-target-work-item-column-expand.png
 > represents its link to Work Item #3.
 
 
-<"id ="transform-data-type" />
+<a id="transform-data-type" />
 
 ## Transform a column data type 
 
-<"id ="leadtimedays-cycletimedays" />
-
-
+<a id="leadtimedays-cycletimedays" />
+ 
 ### Transform the LeadTimeDays and CycleTimeDays columns to whole Numbers
 
 The `LeadTimeDays` and `CycleTimeDays` are decimal fields. For example if **Lead Time** is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that it's rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 

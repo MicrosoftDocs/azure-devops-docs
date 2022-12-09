@@ -382,16 +382,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Create the report
 
-Power BI shows you the fields you can report on. 
+1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Power BI + OData - expanding an entity column](media/odatapowerbi-sprintburndown-fields.png)
-
-sprint-burndown-visualizations.png
-
+	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
+ 
 For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Clustered column chart**. 
