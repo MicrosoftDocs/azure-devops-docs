@@ -78,7 +78,9 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 * * *
 
-## Create a Docker registry service connection - Managed Service Identity
+## Create a Docker registry service connection
+
+### [Managed Service Identity](#tab/msi)
 
 1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
 
@@ -96,7 +98,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
     :::image type="content" source="../media/acr-service-connection-msi.png" alt-text="A screenshot showing how to set up a docker registry service connection MSI.":::
 
-## Create a Docker registry service connection - Service Principal
+### [Service Principal](#tab/sp)
 
 1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
 
@@ -115,6 +117,28 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 1. Select **Save** when you are done.
 
     :::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
+
+## Set up a self-hosted agent VM
+
+To use managed service identity with Azure Pipelines to publish Docker images to Azure Container Registry, we must set up our own self-hosted agent on an Azure VM.
+
+### Create VM
+
+1. Navigate to [Azure portal](https://portal.azure.com/).
+
+1. Select **Create a resource** from the left navigation panel, and then select **Virtual machine** -> **Create**.
+
+1. Select your **Subscription** and then select the **Resource group** you used to create your container registry.
+
+1. Give your virtual machine a name amd select an **Image**.
+
+1. Enter a **Username** and **Password**, and then select **Review + create**.
+
+1. Review your settings, and then select **Create** when you are done.
+ 
+1. Select **Go to resource** when the deployment is complete.
+
+### Set up a self-hosted agent
 
 ## Build and publish to Azure Container Registry
 
