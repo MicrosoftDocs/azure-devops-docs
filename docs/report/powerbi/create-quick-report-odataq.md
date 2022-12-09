@@ -124,8 +124,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
+:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
 
 For a simple report, do the following steps:
 
@@ -138,13 +137,9 @@ For a simple report, do the following steps:
 
 The example report:
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-<a id="q-a">  </a>
-
+:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
+ 
 ## Next steps
 
 > [!div class="nextstepaction"]

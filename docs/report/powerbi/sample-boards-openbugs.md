@@ -200,19 +200,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Transform data in Power BI
-
-
-
-### (Optional) Rename query 
-
-You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
-
-### Expand columns in Power BI
+## Expand columns in Power BI
 
 The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)` clause returns records that contain several fields. Prior to creating the report, you need to expand the record to flatten it into specific fields. In this instance, you'll want to expand the following records: 
 
@@ -223,11 +214,9 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
  
 
-### (Optional) Rename fields
+## (Optional) Rename fields
 
 Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
-
-
 
 ## Create the Matrix report
 
@@ -235,10 +224,9 @@ Once you have expanded the columns, you may want to rename one or more fields. F
 
 	:::image type="content" source="media/reports-boards/open-bugs-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Open Bugs report. ":::
 
-1. Add the field "**State**" to **Columns**.
-1. Add the field "Assigned To" or "AssignedTo.UserName" to **Rows**.
-1. Add the field "WorkItemId" to **Values**.
-    - Right-click "WorkItemId" field and ensure **Count** is selected.
+1. Add `Assigned To` to **Rows**.
+1. Add  `State` to **Columns**.
+1. Add 1WorkItemId1 to **Values**, and right-click 1WorkItemId` and ensure **Count** is selected.
 
 The example report displays. 
  

@@ -15,11 +15,9 @@ ms.date: 12/08/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to display, for a given set of open Bugs, the number of Bugs in each State, trended over a period of time. The following image shows an example of such a trend. 
+Bug trend reports are useful to see how well a team is closing active bugs. This article shows you how to display the number of bugs in a given state over a period of time. The following image shows an example of a bug trends report.  
 
-
-:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Bug trends sample line chart report.":::
-
+:::image type="content" source="media/reports-boards/bug-trends-report.png" alt-text="Screenshot of Bug trends line chart report.":::
  
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -86,7 +84,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query 
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
-- `{startdate}` - The date to start your trend report. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
+- `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
 
 <!--- How specify the end date? --> 
 
@@ -186,7 +184,7 @@ The following table describes each part of the query.
  
 
 
-### Bug trends filtered by Teams 
+### Bug trend filtered by Teams 
 
 You can query for bug trends by team name rather than Area Path.  
 
@@ -283,7 +281,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 <a id="weekly-snapshots" />
 
-### Bug trends with a snapshot on the first of every month
+### Bug trend with a snapshot on the first of every month
 
 Using a monthly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
 
@@ -336,23 +334,14 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Transform data in Power BI
-
-
-
-### Expand columns in Power BI
+## Expand columns in Power BI
 
 Expand the `Area/AreaPath)` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
  
 
-### (Optional) Rename fields
+## (Optional) Rename fields
 
 Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
-
-
-### (Optional) Rename query 
-
-You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
 
 
 ## Create the Line chart report 
@@ -361,17 +350,15 @@ You can the default query label, *Query1* to something more meaningful. To do so
 
 	:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
 
-1. Add the field "**DateValue**" to **X-axis**.
-	- Right-click **DateValue** and select **DateValue**, rather than **Date Hierarchy**.  
+1. Add  `DateValue`" to **X-axis**, and right-click `DateValue` and select `DateValue` rather than `Date Hierarchy`.  
 
-1. Add the field Count to **Y-axis**.
-	- Right-click **Count** and ensure **Sum** is selected.
+1. Add `Count` to **Y-axis**, and right-click `Count` and ensure **Sum** is selected.
 
-1. Add the State to **Legend**.
+1. Add `State` to **Legend**.
 
 The example report displays.  
 
-:::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
+:::image type="content" source="media/reports-boards/bug-trends-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
 
 ### Modify report format visuals 
 
@@ -379,7 +366,7 @@ The example report displays.
 
 	:::image type="content" source="media/reports-boards/bug-trends-change-color.png" alt-text="Screenshot of Power BI Format visual selections for Bug trends report. "::: 
 
-To learn more, see [Get started with the formatting pane](/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties)
+To learn more, see [Get started with the formatting pane](/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties). 
 
 
 ## Related articles

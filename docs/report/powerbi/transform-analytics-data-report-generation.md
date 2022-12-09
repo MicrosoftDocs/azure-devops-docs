@@ -51,7 +51,13 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 
 
+
+<a id="expand-descendants" />
+
 ### Expand Descendants column
+
+
+The **Descendants** column contains a table with two fields: **State** and **TotalStoryPoints**. Expand it. 
 
 1. Choose the **Expand** button, and select the columns to report on:
 
@@ -66,6 +72,9 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI expanded Descendants column. ":::
 
 
+
+<a id="pivot-statecategory" />
+
 #### Pivot Descendants.StateCategory column
 
 1. Select the 1Descendants.StateCategory1 column header to select it.
@@ -78,6 +87,8 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 	:::image type="content" source="media/transform-data/descendants-pivot-column-dialog.png" alt-text="Dialog of Pivot Column for  Descendants.TotalStoryPoints column. ":::  
 
+
+<a id="expand-links-column" />
 
 ### Expand the Links column
 
@@ -152,7 +163,23 @@ From the Power Query Editor, select the ribbon **Transform** menu.
 	In the **Change Column Type** dialog, select **Add new step**.
  
 
-<a id="rename-column-fields" /> 
+<a id="replace-null-values" /> 
+
+## Replace Null values  
+
+Sometimes one or more records will contain null values. For example, a value may not have been entered for **Story Points** or **Remaining Work**.  
+
+:::image type="content" source="media/transform-data/records-null-data.png alt-text="Screenshot of Power BI table containing null values. .":::
+
+For easier reporting, replace nulls with zero by following these steps.
+
+1. Select the column by clicking the column header.
+1. Select the **Transform** menu.
+1. Select **Replace Values**. In the **Replace Values** dialog:
+	- Enter "null" in **Value to Find**.
+	- Enter "0" in **Replace With**.
+1. Choose **OK**.
+
 
 ## Rename column fields
 

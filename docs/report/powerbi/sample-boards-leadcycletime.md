@@ -80,7 +80,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
-- `{startdate}` - Start your report for items completed on or after a given date, with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
+- `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -208,7 +208,7 @@ From the Power Query Editor, choose the query with the data you want to transfor
 
 To learn how, see the following sections in [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md):
 - [Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
-- [Transform the LeadTimeDays and CycleTimeDays columns to whole Numbers](transform-analytics-data-report-generation.md#leadtimedays-cycletimedays). 
+- [Transform the LeadTimeDays and CycleTimeDays columns to whole Numbers](transform-analytics-data-report-generation.md#leadtimedays-cycletimedays).
 - [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
   
 
