@@ -149,6 +149,8 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 
 1. Add `Team.TeamName` to **Field**.
 
+To learn more about working with slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+
 <!---
 The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a Team filter added. Selecting a team in the slicer filters the results of the Open Bugs report. It will work for any report, as long as its query returns AreaSK.
 
