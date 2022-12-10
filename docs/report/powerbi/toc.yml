@@ -85,8 +85,6 @@ items:
     href: ../extend-analytics/view-odata-query-analytics-report.md
   - name: Transform Analytics data
     href: transform-analytics-data-report-generation.md
-  - name: Create a Power BI report
-    href: create-report.md
   - name: Add a team slicer to a report
     href: sample-boards-teamslicer.md
 - name: Sample reports, Boards

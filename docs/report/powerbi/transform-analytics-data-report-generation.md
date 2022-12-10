@@ -8,21 +8,23 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2022
+ms.date: 12/09/2022
 ---
 
 # Transform Analytics data to generate Power BI reports
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
+Once you've imported your Analytics data into Power BI, you may need to transform select column data prior to creating a report. This article shows you how to perform some of these basic tasks, such as: 
 
-Expand Area Path, Iteration Path
-Expand Assigned To
-Expand Descendents
-Expand Links
-Expand Teams
-
-
+- Expand columns, such as **Area**, **AssignedTo**, and **Iteration**. . 
+- Expand descendant columns when querying linked work items
+- Pivot columns to generate counts for select category states 
+- Transform the column data type from decimal to whole numbers 
+- Replace null values in column data 
+- Create a custom field 
+- Rename fields 
+ 
 ## Expand columns 
 
 The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: **AssignedTo**, **Iteration**, and **Area**. 
@@ -205,11 +207,6 @@ Prior to adding the percentage complete column, make sure that you replace all n
 1. Select **Transform** menu.
 1. Select **Data Type** and select **Percentage**.
 
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-
-
 ## Rename column fields
 
 When finished with your expansion, you may choose to rename one or more columns. 
@@ -220,23 +217,25 @@ When finished with your expansion, you may choose to rename one or more columns.
 	> ![Power BI Rename Columns](/azure/devops/report/powerbi/media/powerbi-rename-columns.png)
 
 1. Enter a new label for the column field and then press Enter. 
+ 
 
-## Rename the query
+## Close the query and apply your changes 
 
-1. You can rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](/azure/devops/report/powerbi/media/powerbi-rename-query.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
+1. Once you've completed all your data transformations, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Power BI Close & Apply](/azure/devops/report/powerbi/media/powerbi-close-apply.png)
 
 
 
-## TBD 
-- Create custom fields - such as a percentage 
-- Can't pivot if you have unexpanded records - will get an error message about nested columns
-- Must remove Null fields - use Replace values (why does this not work in some instances) 
-- 
+## Related articles 
+
+- [Create a Power BI report with an OData Query](create-quick-report-odataq.md)
+- [Connect with data by using Power BI and OData queries](odataquery-connect.md) 
+- [Overview of sample reports using OData queries](sample-odata-overview.md) 
+- [Add a team slicer to a Power BI report](sample-boards-teamslicer.md)
+
+<!---
+Can't pivot if you have unexpanded records - will get an error message about nested columns  
+Must remove Null fields - use Replace values (why does this not work in some instances) 
+--> 
