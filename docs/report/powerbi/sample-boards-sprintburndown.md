@@ -31,6 +31,8 @@ To learn more about burndown and burnup, and [Burndown and burnup guidance](../d
 
 ## Sample queries
 
+Burndown charts require querying the `WorkItemSnapshot` entity set to get historical data.  
+
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ### Burndown User Stories for an area path and the current iteration
@@ -264,8 +266,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 * * *
 
-### Burndown User Stories for all sprints since the start of a year  
-### All Sprints since the beginning of the year
+### Burndown User Stories for all sprints since the start of a year   
 
 You may want to view a burndown of all the sprints in a single report. These queries pulls in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
 
@@ -373,38 +374,32 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Power BI transforms
+## Transform data in Power BI
 
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
+Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
+- `Area`
+- `Iteration`
+- `AssignedTo` 
 
-[!INCLUDE [temp](includes/sample-finish-query.md)]
+To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
+ 
 
+## Create the stacked column chart report
 
-## Create the report
-
-1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked column chart** report under **Visualizations** and select the fields as shown in the following image. 
 
 	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
- 
-For a simple report, do the following steps:
 
-1. Select Power BI Visualization **Clustered column chart**. 
-1. Add the field "DateValue" to **Axis**
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
-1. Add the field "TotalStoryPoints" to **Values**
-1. Add the field "Count" to **Values**
+1. Add `DateValue` to **X-Axis**, right-click and select `DateValue`, rather than `Date Hierarchy`   
+
+1. Add `Count` to **Y-Axis**. 
+
+1. Add `State` to **Y-Axis**. 
 
 The example report, which displays burndown on both Story Points and Count of Stories.
 
 
 :::image type="content" source="media/reports-boards/sprint-burndown-clustered-column-chart.png" alt-text="Screenshot of Sample Power BI Sprint burndown clustered column chart report.":::
-
-
- 
-
-## Full list of sample reports
-
-[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
