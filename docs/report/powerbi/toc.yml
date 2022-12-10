@@ -87,6 +87,8 @@ items:
     href: transform-analytics-data-report-generation.md
   - name: Create a Power BI report
     href: create-report.md
+  - name: Add a team slicer to a report
+    href: sample-boards-teamslicer.md
 - name: Sample reports, Boards
   items:
   - name: Open bugs
@@ -108,8 +110,6 @@ items:
     displayname: CFD
   - name: Lead/Cycle time
     href: sample-boards-leadcycletime.md
-  - name: Add a team slicer
-    href: sample-boards-teamslicer.md
 - name: Sample reports, Pipelines
   items:
   - name: Outcome summary

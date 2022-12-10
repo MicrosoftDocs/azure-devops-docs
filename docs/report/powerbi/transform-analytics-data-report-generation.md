@@ -186,6 +186,7 @@ For easier reporting, replace nulls with zero by following these steps.
  
 ### Create a percentage complete computed column
 
+Prior to adding the percentage complete column, make sure that you replace all null values in the pivoted state columns.
 1. Select **Add Column** menu.
 1. Select **Custom Column**.
 1. Enter **PercentComplete** for **New column name**.
@@ -197,8 +198,8 @@ For easier reporting, replace nulls with zero by following these steps.
 	:::image type="content" source="media/reports-boards/custom-column-dialog-percent-complete.png" alt-text="Custom Column Dialog, PercentComplete syntax.":::
 
     > [!NOTE]
-    > It is possible you won't have a **Resolved** column, if the work items don't have States mapped to the Resolved State Category. 
-    > If so, then omit "[Resolved]" in the above formula.
+    > It's possible that you won't have a **Resolved** column, if the work items don't have States mapped to the *Resolved* workflow state category. 
+    > If so, omit "[Resolved]" in the above formula.
 
 1. Press **OK**.
 1. Select **Transform** menu.

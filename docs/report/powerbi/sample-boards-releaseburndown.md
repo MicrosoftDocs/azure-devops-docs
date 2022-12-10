@@ -38,7 +38,6 @@ The queries in this section show how to generate burndown charts of work items b
 
 ### Burndown of User Stories in an area path from start and end date
 
-
 The following query shows you how to return historical data of User Stories for a release based on work items tagged with a release tag. 
 
 > [!NOTE]  
@@ -415,13 +414,7 @@ Prior to creating the report, you'll need to expand columns that return records 
 - `AssignedTo` 
 
 To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
-
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
+ 
 
 ## Create the clustered column chart  
 
@@ -435,7 +428,7 @@ Power BI shows you the fields you can report on.
 
 	:::image type="content" source="media/reports-boards/release-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Release burndown clustered column chart report. ":::
 
-1. Add the `DateValue` to **X-Axis** and right-click `DateValue` and select `DateValue`, rather than `Date Hierarchy`   
+1. Add `DateValue` to **X-Axis**, right-click and select `DateValue`, rather than `Date Hierarchy`   
 
 1. Add `Count` to **Y-Axis**. 
 
