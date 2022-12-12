@@ -216,6 +216,27 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
     :::image type="content" source="../media/agent-available.png" alt-text="A screenshot showing the agent available in the agents tab.":::
 
+
+## Set up the managed identity
+
+1. In Azure Portal, navigate to the VM you created earlier.
+
+1. Select **Identity** from the left navigation panel, and then enable the **System assigned** identity.
+
+1. Select **Save** when you are done and then confirm.
+
+    :::image type="content" source="../media/system-assigned-id.png" alt-text="A screenshot showing how to enable system-assigned identity.":::
+
+1. Select **Azure role assignments**, and then select **Add role assignment**.
+
+1. Select **Resource group** from the **Scope** dropdown menu.
+
+1. Select your **Subscription** and your **Resource group**, and then select the **AcrPush** role.
+
+1. Repeat the steps 5 & 6 to add the **AcrPull** role.
+
+    :::image type="content" source="../media/crpull-push-roles.png" alt-text="A screenshot showing how to set up acrpull and push roles.":::
+
 ## Build and publish to Azure Container Registry
 
 1. From your project, select **Pipelines** and then select **Create Pipeline**.
