@@ -104,6 +104,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`

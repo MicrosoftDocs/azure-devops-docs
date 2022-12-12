@@ -23,7 +23,7 @@ This article shows you how to create a report that shows a pipeline's daily pass
 The following image shows an example of such a trend.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
+> ![Screenshot of Power BI Pipelines Pass rate trend Report.](media/odatapowerbi-pipelines/passratetrend-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -105,6 +105,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -251,37 +252,37 @@ The following table describes each part of the query.
 
 The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. Here in this example, such an entity is CompletedOn.
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **CompletedOn**.
+After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on `CompletedOn`.
 
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/passratetrend-expand1.png)
+    > ![Screenshot of Power BI, Choose expand button.](media/odatapowerbi-pipelines/passratetrend-expand1.png)
     
-1. Select the checkbox "(Select All Columns)" to expand
+1. Select the checkbox **Select All Columns** to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/passratetrend-expand2.png)
+    > ![Screenshot of Power BI, Select all columns.](media/odatapowerbi-pipelines/passratetrend-expand2.png)
 
-1. The table now contains the expanded entity **CompletedOn.Date**
+1. The table now contains the expanded entity `CompletedOn.Date`.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/passratetrend-expand3.png)
+    > ![Screenshot of Power BI, Expanded entity.](media/odatapowerbi-pipelines/passratetrend-expand3.png)
 
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type you have to change for creating reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type you've to change for creating reports.
 
 1. Change the type of columns **PassRate, FailRate** and **PartiallySuccessfulRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/passratetrend-changecolumntype1.png)
+    > ![Screenshot of Power BI transform data, change column type..](media/odatapowerbi-pipelines/passratetrend-changecolumntype1.png)
 
 1. Change the type of column **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Change the type of column TotalCount to Whole Number.](media/odatapowerbi-pipelines/passratetrend-changecolumntype2.png)
+    > ![Screenshot of Power BI, Change the type of column TotalCount to Whole Number.](media/odatapowerbi-pipelines/passratetrend-changecolumntype2.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -291,17 +292,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/passratetrend-renamerightclick.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odatapowerbi-pipelines/passratetrend-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -311,7 +312,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines pass rate trend - Fields](media/odatapowerbi-pipelines/passratetrend-fields.png)
+> ![Screenshot of Power BI Visualizations and Fields selections for pipelines pass rate trend report.](media/odatapowerbi-pipelines/passratetrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -325,7 +326,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
+> ![Screenshot of Power BI Sample Pipelines Pass rate trend Report.](media/odatapowerbi-pipelines/passratetrend-report.png)
 
 
 ## More queries
@@ -578,11 +579,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ```
 
 ***
-
-## Full list of sample reports for Pipelines
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
-
+ 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

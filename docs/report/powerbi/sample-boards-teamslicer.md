@@ -21,7 +21,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 > [!IMPORTANT]
 > The Team filter requires that the **"AreaSK"** field is included in the query used by the report you want to filter. 
 > All of the queries provided in the sample reports already include **"AreaSK"**. 
-> If you have created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
+> If you've created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -89,7 +89,7 @@ The following table describes each part of the query.
    `$filter=startswith(AreaPath, '{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Return all teams mapped to an Area Path at or under the specified `{areapath}`. To include all teams in a project, omit this statement.
+   Return all teams mapped to an **Area Path** at or under the specified `{areapath}`. To include all teams in a project, omit this statement.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -97,7 +97,7 @@ The following table describes each part of the query.
    `&$select=AreaSK, AreaPath`
    :::column-end:::
    :::column span="1":::
-   Return Area Path fields, to use for mapping.
+   Return **Area Path** fields, to use for mapping.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,7 +105,7 @@ The following table describes each part of the query.
    `&$expand=Teams($select=TeamName)`
    :::column-end:::
    :::column span="1":::
-   Return the team associated with the Area Path.
+   Return the team associated with the **Area Path**.
    :::column-end:::
 :::row-end:::
 
@@ -118,17 +118,17 @@ The following table describes each part of the query.
 1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
-    > ![Choose the expand button.](media/odatapowerbi-expandteam.png)
+    > ![Screenshot showing choose the expand button.](media/odatapowerbi-expandteam.png)
 
 1. Select the fields to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select the fields to flatten.](media/odatapowerbi-expandteam2.png)
+    > ![Screenshot that shows how ot select the fields to flatten.](media/odatapowerbi-expandteam2.png)
 
 1. Table will now contain entity field(s).
 
     > [!div class="mx-imgBorder"] 
-    > ![Table will now contain entity field(s).](media/odatapowerbi-expandteam3.png)
+    > ![Screenshot of table that now contains entity fields.](media/odatapowerbi-expandteam3.png)
  
 
 ## Create a Relationship using "AreaSK"
@@ -139,7 +139,7 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 1. Create a relationship between your Report query and the Teams query. It's likely that Power BI will autodetect and create the relationship for you. Here's an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
 
     > [!div class="mx-imgBorder"] 
-    > ![Example of relationship between queries.](media/odatapowerbi-timeslicer-relationships.png)
+    > ![Screenshot that shows example of relationship between queries.](media/odatapowerbi-timeslicer-relationships.png)
     
 ## Add the Team Filter to an existing report
 
@@ -155,7 +155,7 @@ To learn more about working with slicers, see [Slicers in Power BI](/power-bi/vi
 The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a Team filter added. Selecting a team in the slicer filters the results of the Open Bugs report. It will work for any report, as long as its query returns AreaSK.
 
 > [!div class="mx-imgBorder"] 
-> ![Team Slicer report](media/odatapowerbi-timeslicer-report.png)
+> ![Screenshot that shows Team Slicer report.](media/odatapowerbi-timeslicer-report.png)
 
 -->
  

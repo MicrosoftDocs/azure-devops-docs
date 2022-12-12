@@ -252,7 +252,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 
 1. Select the **Modeling** menu, and then **Manage Relationships**. Ensure there's a relationship between `CFD.ColumnName` and `ColumnOrder.ColumnName`. It's likely that the relationship was autodetected.
 
-	:::image type="content" source="media/reports-boards/cfd-manage-relationships-dialog.png" alt-text="Dialog for Manage Relationships showing a relationship between CFD.ColumnName and ColumnOrder.ColumnName":::
+	:::image type="content" source="media/reports-boards/cfd-manage-relationships-dialog.png" alt-text="Dialog for Manage Relationships showing a relationship between CFD.ColumnName and ColumnOrder.ColumnName.":::
 
 1. In the report created above, in the **Legend**, replace `CFD.ColumnName` with `ColumnOrder.ColumnName` to **Legend**.
 

@@ -203,8 +203,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 From the Power Query Editor, choose the query with the data you want to transform. For a Lead/Cycle time chart, you'll want to make the following transformations: 
 
 - Expand columns such as `Area`, `Iteration`, and `AssignedTo`. 
-- Tranform the data type for the `LeadTimeDays` and `CycleTimeDays` columns to a Whole number. 
-- Transform the data type for the `CompletedDateSK` column from an integer to a Date value, this requires several steps.  
+- Transform the data type for the `LeadTimeDays` and `CycleTimeDays` columns to a Whole number. 
+- Transform the data type for the `CompletedDateSK` column from an integer to a date value.  
 
 To learn how, see the following sections in [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md):
 - [Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
@@ -214,7 +214,7 @@ To learn how, see the following sections in [Transform Analytics data to generat
 
 ## Create the trend chart  
 
-In the follow example, the query was renamed to *LeadCycleTime*, but no columns were renamed. 
+In the following example, the query was renamed to *LeadCycleTime*, but no columns were renamed. 
 
 1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
 
@@ -227,7 +227,7 @@ In the follow example, the query was renamed to *LeadCycleTime*, but no columns 
 1. Add `Priority` to **Legend**.
 
  
-The example report displays. Note as you hover over any area in the report, additional data is shown. 
+The example report displays. Note that as you hover over any area in the report, more data is shown. 
 
 :::image type="content" source="media/reports-boards/lead-time-trend-chart.png" alt-text="Screenshot of Sample Power BI Lead Cycle Time trend chart report.":::
 

@@ -15,7 +15,7 @@ ms.date: 12/05/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Rollup provides support to show a count of work items or sum of Story Points, Remaining Work, or other custom field of child items. This articles provides several examples of how to generate a rollup tabular report for Epics, Features, or User Stories that contain child work items. The following image shows an example of Story Points rolled up for their parent Features.  
+Rollup provides support to show a count of work items or sum of Story Points, Remaining Work, or other custom field of child items. This article provides several examples of how to generate a tabular rollup  report for Epics, Features, or User Stories that contain child work items. The following image shows an example of Story Points rolled up for their parent Features.  
  
 :::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Feature rollup matrix report.":::
 
@@ -151,7 +151,7 @@ The following table describes each part of the query.
    `Descendants(`
    :::column-end:::
    :::column span="1":::
-   Expand Descendants.
+   Expand the `Descendants` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,7 +159,7 @@ The following table describes each part of the query.
    `$apply=filter(WorkItemType eq 'User Story')` 
    :::column-end:::
    :::column span="1":::
-   Filter the descendants to only include User Stories (omits Tasks and Bugs).
+   Filter the descendants to only include User Stories (omits tasks and bugs).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -167,7 +167,7 @@ The following table describes each part of the query.
    `/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
    :::column span="1":::
-   For all descendants matching the filter clause above, count them, and sum the StoryPoints property.
+   For all descendants matching the filter clause, count them, and sum the `StoryPoints` property.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -273,7 +273,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Rollup Tasks Remaining Work to User Stories 
 
-The following queries show how to roll up **Remaining Work** assigned to child Tasks to User Stories in the hierarchy. These queries assume that Tasks are assigned as children of a User Story in the specified **Area Path**.
+The following queries show how to rollup **Remaining Work** assigned to child Tasks to User Stories in the hierarchy. These queries assume that Tasks are assigned as children of a User Story in the specified **Area Path**.
 
 #### [Power BI](#tab/powerbi/)
 
@@ -319,7 +319,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Rollup Bug count to Features
 
-The following queries show how to roll up the count of Bugs assigned to Features. These queries assume that Bugs are defined as children of a Feature in the specified **Area Path**.
+The following queries show how to rollup the count of Bugs assigned to Features. These queries assume that Bugs are defined as children of a Feature in the specified **Area Path**.
 
 #### [Power BI](#tab/powerbi/)
 
@@ -381,7 +381,7 @@ To learn how, see [Transform Analytics data to generate Power BI reports](transf
 
 ## (Optional) Rename fields
 
-Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 
 ## Replace null values in rollup fields
@@ -393,10 +393,6 @@ For easier reporting, replace all nulls with zero by following these steps.
 [!INCLUDE [temp](includes/sample-replace-nulls.md)]
 
 Repeat for all the rollup columns.
-
-### (Optional) Rename query 
-
-You can the default query label, *Query1* to something more meaningful. To do so, see [Rename the query](transform-analytics-data-report-generation.md#rename-the-query).  
 
 
 

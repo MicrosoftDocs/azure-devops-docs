@@ -23,7 +23,7 @@ This article shows you how to get the execution state of one or more Test Plans 
 The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
+> ![Screenshot of Power BI Execution Trend report.](media/odatapowerbi-executiontrend.png)
 
 The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.  
 
@@ -192,7 +192,7 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Fields](media/odatapowerbi-executiontrend-fields.png)
+> ![Screenshot of Power BI Visualizations Execution Trend fields.](media/odatapowerbi-executiontrend-fields.png)
 
 To create the report, do the following steps:
 
@@ -203,11 +203,8 @@ To create the report, do the following steps:
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
-
-## Full list of sample reports for Test Plans
-
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+> ![Screenshot of Power BI sample execution trend report.](media/odatapowerbi-executiontrend.png)
+ 
 
 ## Related articles
 
