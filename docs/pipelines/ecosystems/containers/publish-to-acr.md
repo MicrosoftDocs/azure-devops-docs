@@ -138,8 +138,64 @@ To use managed service identity with Azure Pipelines to publish Docker images to
  
 1. Select **Go to resource** when the deployment is complete.
 
+### Create an agent pool
+
+1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+
+1. Select **Agent pools**, and then select **Add pool**.
+
+1. Select **New**, and then select *Self-hosted* from the **Pool type**.
+
+1. Give your pool a name, and then check **Grant access permission to all pipelines** checkbox.
+
+1. Select **Create** when you are done.
+
+1. Now select the pool you just created, and then select **New agent**.
+
+1. We will be using the following instructions to set up our agent in the Azure VM we created earlier. Select the **Copy** button to copy the download link to your clipboard.
+
+    :::image type="content" source="../media/agent-setup-instructions.png" alt-text="A screenshot showing how to set up an agent.":::
+
 ### Set up a self-hosted agent
 
+1. In Azure Portal, connect to your VM.
+
+1. In an elevated PowerShell command prompt, run the following command to download the agent.
+
+    ```PowerShell
+    Invoke-WebRequest -URI <YOUR_AGENT_DOWNLOAD_LINK> -UseBasicParsing  -OutFile <FILE_PATH> 
+    ##Example: Invoke-WebRequest -URI https://vstsagentpackage.azureedge.net/agent/2.213.2/vsts-agent-win-x64-2.213.2.zip -OutFile C:\vsts-agent-win-x64-2.213.2.zip
+    ```
+
+1. Run the following command to extract and create your agent.
+    
+    ```PowerShell
+    mkdir agent ; cd agent
+    Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("<FILE_PATH>", "$PWD")
+    ```
+
+1. Run the following command to configure your agent, and follow the prompts.
+
+    ```powershell
+    .\config.cmd
+    ```
+
+1. Enter your server URL when asked for input. Example: https://dev.azure.com/fabrikamFiber
+
+1. Press **Enter** when prompted for the authentication type to choose **PAT** authentication.
+
+1. Paste the personal access token you created earlier and then press enter.
+
+1. Enter the name of your agent pool when prompted, and then enter your agent name.
+
+1. Leave the default value for the work folder, and then enter *Y* if you want to run your agent as a service.
+
+1. Run the cmd file to run the agent on your Azure VM.
+
+    ```powershell
+    .\run.cmd
+    ```
+ 
 ## Build and publish to Azure Container Registry
 
 1. From your project, select **Pipelines** and then select **Create Pipeline**.
