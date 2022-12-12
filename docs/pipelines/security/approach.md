@@ -33,7 +33,7 @@ This way, as you start to apply security practices, you have a centralized place
 
 For more information, see [Templates](templates.md).
 
-## Disable Creation of Classic Pipelines
+## Disable creation of classic pipelines
 
 If you develop *only* YAML pipelines, disable creation of classic build and release pipelines. Doing so prevents a security concern that stems from YAML and classic pipelines sharing the same resources, for example the same service connections. 
 
