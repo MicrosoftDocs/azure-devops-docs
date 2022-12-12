@@ -156,6 +156,20 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
     :::image type="content" source="../media/agent-setup-instructions.png" alt-text="A screenshot showing how to set up an agent.":::
 
+### Create a personal access token 
+
+1. From your project in Azure DevOps portal, select **User Settings**, and then select *Personal Access Tokens**.
+
+1. Select **New Token** to create a new PAT.
+
+1. Enter a name for your PAT and then choose an expiration date for your token.
+
+1. Select **Custom defined** in **Scopes**, and then select **Show all scopes**.
+
+1. Select **Agent Pools** -> **Read & manage**, and **Deployment Groups** -> **Read & manage**.
+
+1. Select **Create** when you are done, and save your PAT in a safe location.
+
 ### Set up a self-hosted agent
 
 1. In Azure Portal, connect to your VM.
@@ -190,12 +204,18 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 1. Leave the default value for the work folder, and then enter *Y* if you want to run your agent as a service.
 
+    :::image type="content" source="../media/configure-agent.png" alt-text="A screenshot showing how to set up an agent on an Azure VM.":::
+
 1. Run the cmd file to run the agent on your Azure VM.
 
     ```powershell
     .\run.cmd
     ```
- 
+
+1. Your agent should be listed now in your Agent pool -> **Agents**.
+
+    :::image type="content" source="../media/agent-available.png" alt-text="A screenshot showing the agent available in the agents tab.":::
+
 ## Build and publish to Azure Container Registry
 
 1. From your project, select **Pipelines** and then select **Create Pipeline**.
