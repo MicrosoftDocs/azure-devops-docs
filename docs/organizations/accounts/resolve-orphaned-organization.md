@@ -31,7 +31,7 @@ But, organizations that are connected to Azure AD can transfer ownership to an a
 
 If you don't know who the Azure DevOps Administrator is for your organization, follow these steps to find out.
 
-1. To find your Azure DevOps Administrator, go to the [Azure portal](https://portal.azure.com/), as described in [View and assign administrator roles in Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about Azure AD roles, see [Administrator role permissions in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
+1. To find your Azure DevOps Administrator, go to the [Azure portal](https://portal.azure.com/), as described in [View and assign administrator roles in Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). For more information about Azure AD roles, see [Administrator role permissions in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
 2. The Azure DevOps Administrator can now complete the steps in [Change Azure DevOps owner](change-organization-ownership.md) to claim ownership of the target Azure DevOps organization.  
 
 ## When you don't have an Azure DevOps Administrator
