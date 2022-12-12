@@ -4,7 +4,7 @@ ms.topic: include
 
 ### kustomize and kompose as bake options in KubernetesManifest task
 
-[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-v1-manifest?view=azure-devops&preserve-view=true) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
+[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0?view=azure-devops&preserve-view=true) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
 
 ```YAML
 steps:
