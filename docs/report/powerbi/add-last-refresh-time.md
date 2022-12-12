@@ -14,7 +14,7 @@ ms.date: 10/01/2021
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-After [creating a report](create-quick-report.md) and [publishing it to Power BI](publish-power-bi-desktop-to-power-bi.md), one of the most common requests is a way to determine the last time the data was refreshed.  
+After you [create a report](create-quick-report.md) and [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md), one of the most common requests is a way to determine the last time the data was refreshed.  
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -34,7 +34,7 @@ To add a column with the last refresh date of the dataset, follow these steps.
     > [!div class="mx-imgBorder"]  
     > ![Advanced Editor](media/AdvancedEditor.png) 
 
-    If you haven't already modified the query, you should see text below with specific table values matching your Analytics view.
+    If you haven't already modified the query, review the following examples with specific table values matching your Analytics view.
 	 
     ```Query 
     let

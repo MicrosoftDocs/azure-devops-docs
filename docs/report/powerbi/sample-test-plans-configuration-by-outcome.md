@@ -16,14 +16,14 @@ ms.date: 10/13/2021
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
+When you've multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
 An example of the configuration by outcome matrix report is shown in the following image.
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Configuration by Outcome matrix - Report](media/odatapowerbi-configurationbyoutcome.png)
+> ![Screenshot of Power BI Configuration by Outcome matrix report.](media/odatapowerbi-configurationbyoutcome.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -149,22 +149,22 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/powerbi-rename-columns.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/powerbi-rename-columns.png)
 
 1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Power BI Change Column Type](media/powerbi-change-column-type.png)
+	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/powerbi-rename-query.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/powerbi-rename-query.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/powerbi-close-apply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/powerbi-close-apply.png)
 
 
 ## Create the report
@@ -182,16 +182,13 @@ To create the report, do the following steps:
 1. Add the field **Count** to **Values**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI select Sum as aggregation](media/powerbi-sum-aggregation.png)
+	> ![Screenshot of Power BI select Sum as aggregation.](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Configuration by Outcome matrix - Report](media/odatapowerbi-configurationbyoutcome.png)
-
-## Full list of sample reports for Test Plans
-
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+> ![Screenshot of Power BI sample configuration by test outcome matrix report.](media/odatapowerbi-configurationbyoutcome.png)
+ 
 
 ## Related articles
 

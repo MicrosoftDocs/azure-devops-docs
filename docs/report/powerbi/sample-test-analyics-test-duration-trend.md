@@ -24,7 +24,7 @@ This article shows you how to create a report that shows the day wise trend of t
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-duration-trend-report1.png)
+> ![Screenshot of Power BI test duration trend report.](media/odata-powerbi-test-analytics/test-duration-trend-report1.png)
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -102,6 +102,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -229,17 +230,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/test-duration-trend-expand1.png)
+    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/test-duration-trend-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/test-duration-trend-expand2.png)
+    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/test-duration-trend-expand2.png)
 
 1. The table now contains the expanded entity **Test.TestName**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/test-duration-trend-expand3.png)
+    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/test-duration-trend-expand3.png)
     
 
 ### Change column type
@@ -249,12 +250,12 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change Total Count column type.](media/odata-powerbi-test-analytics/test-duration-changetype1.png)
+    > ![Screenshot of Power BI, change Total Count column type.](media/odata-powerbi-test-analytics/test-duration-changetype1.png)
     
 1. Change the type of column **TotalDuration** and **AvgDuration** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change Total Duration column type.](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
+    > ![Screenshot of Power BI, change Total Duration column type.](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -264,17 +265,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/test-duration-trend-rename1.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/test-duration-trend-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -285,7 +286,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/test-duration-trend-filed.png)
+> ![Screenshot of Power BI Visualizations test duration trend report fields.](media/odata-powerbi-test-analytics/test-duration-trend-filed.png)
 
 For a simple report, do the following steps:
 
@@ -299,12 +300,9 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-duration-trend-report1.png)
+> ![Screenshot of Power BI sample test duration trend report.](media/odata-powerbi-test-analytics/test-duration-trend-report1.png)
 
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+ 
 
 ## Related articles
 

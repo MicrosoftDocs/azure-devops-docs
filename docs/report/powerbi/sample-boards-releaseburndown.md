@@ -15,7 +15,7 @@ ms.date: 12/08/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Burndown and burnup reports show how much work is getting completed over time. The following image shows a burndown both by count of User Stories as well as sum of Story Points.
+Burndown and burnup reports show how much work is getting completed over time. The following image shows burndown both by count of User Stories and sum of Story Points.
 
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Release burndown clustered column chart report.":::
 
@@ -204,7 +204,7 @@ The following table describes each part of the query.
 
 ### Burndown of User Stories for a team  
 
-This query is the same as the one used above, except it filters by team name rather than **Area Path**. 
+The following query returns burndown data filtered by team name rather than **Area Path**. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -418,10 +418,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 
 ## Create the clustered column chart  
 
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+Power BI shows you the fields you can report on. The following example assumes that columns weren't renamed. 
 
 
 1. In Power BI, choose **Clustered column chart** under **Visualizations** and select the fields as shown in the following image. 

@@ -11,7 +11,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
-    > ![Expand an entity column, Power BI + OData](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn.png)
+    > ![Screenshot of Power BI transform data, Expand an entity column, ](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn.png)
 
 1. Select the fields to flatten.
 

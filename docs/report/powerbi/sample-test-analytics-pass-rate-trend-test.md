@@ -22,7 +22,7 @@ This article shows you how to create a report that shows day wise trend of numbe
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
+> ![Screenshot of Power BI test pass rate trend report.](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
 
 
 [!INCLUDE [temp](includes/preview-note.md)]
@@ -114,6 +114,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -286,17 +287,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand1.png)
+    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand2.png)
+    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand3.png)
+    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand3.png)
     
 
 ### Change column type
@@ -304,7 +305,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Change the type of column **PassRate** to **Decimal Number** and **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/pass-rate-trend-test-changetype1.png)
+    > ![Screenshot of Power BI transform data, change column type.](media/odata-powerbi-test-analytics/pass-rate-trend-test-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -314,17 +315,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/pass-rate-trend-test-rename1.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/pass-rate-trend-test-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -335,7 +336,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/pass-rate-trend-test-fileds1.png)
+> ![Screenshot of Power BI Visualizations pass rate trend report fields.](media/odata-powerbi-test-analytics/pass-rate-trend-test-fileds1.png)
 
 For a simple report, do the following steps:
 
@@ -349,7 +350,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
+> ![Screenshot of Power BI sample test pass rate trend report.](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
 
 
 

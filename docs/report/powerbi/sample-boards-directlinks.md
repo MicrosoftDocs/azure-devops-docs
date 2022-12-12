@@ -390,7 +390,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
  
 ### (Optional) Rename fields
 
-Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. You can rename them in the data table view, or later when you create the report. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. You can rename them in the data table view, or later when you create the report. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 In this example, the following fields have been renamed: 
 

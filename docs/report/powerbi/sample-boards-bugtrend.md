@@ -341,7 +341,7 @@ Expand the `Area/AreaPath)` and `Iteration/IterationPath` columns. Expanding the
 
 ## (Optional) Rename fields
 
-Once you have expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 
 ## Create the Line chart report 
