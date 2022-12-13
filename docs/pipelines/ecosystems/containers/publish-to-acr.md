@@ -78,46 +78,6 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 * * *
 
-## Create a Docker registry service connection
-
-### [Managed Service Identity](#tab/msi)
-
-1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
-
-1. Select **Service connections** from the left pane.
-
-1. Select **New service connection**, and then select **Docker Registry** then **Next**.
-
-1. Select **Azure Container Registry**, and then select *Managed Service Identity* as your **Authentication Type**.
-
-1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, [Tenant ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-ad-tenant), and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry).
-
-1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
-
-1. Select **Save** when you are done.
-
-    :::image type="content" source="../media/acr-service-connection-msi.png" alt-text="A screenshot showing how to set up a docker registry service connection MSI.":::
-
-### [Service Principal](#tab/sp)
-
-1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
-
-1. Select **Service connections** from the left pane.
-
-1. Select **New service connection**, and then select **Docker Registry** then **Next**.
-
-1. Select **Azure Container Registry**, and then select *Service Principal* as your **Authentication Type**.
-
-1. Select your **Subscription** from the dropdown menu.
-
-1. Select your **Azure container registry** from the list.
-
-1. Enter a name for your service connection.
-
-1. Select **Save** when you are done.
-
-    :::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
-
 ## Set up a self-hosted agent VM
 
 To use managed service identity with Azure Pipelines to publish Docker images to Azure Container Registry, we must set up our own self-hosted agent on an Azure VM.
@@ -206,16 +166,27 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
     :::image type="content" source="../media/configure-agent.png" alt-text="A screenshot showing how to set up an agent on an Azure VM.":::
 
-1. Run the cmd file to run the agent on your Azure VM.
+1. Let's install Docker now on our VM. Run the following command to download Docker.
+
+    ```powershell
+    Invoke-WebRequest -URI https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe -OutFile <DOWNLOAD_PATH>
+    ```
+
+1. Navigate to your download path, and then run the following command to install and start Docker.
+
+    ```powershell
+    Start-Process 'Docker%20Desktop%20Installer.exe' -Wait install
+    ```
+
+1. Now navigate back to your agent folder, and run the cmd file to run the agent on your Azure VM.
 
     ```powershell
     .\run.cmd
     ```
 
-1. Your agent should be listed now in your Agent pool -> **Agents**.
+1. Your agent should be listed now in your Agent pool -> **Agents** in the Azure DevOps portal.
 
     :::image type="content" source="../media/agent-available.png" alt-text="A screenshot showing the agent available in the agents tab.":::
-
 
 ## Set up the managed identity
 
@@ -237,6 +208,46 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
     :::image type="content" source="../media/crpull-push-roles.png" alt-text="A screenshot showing how to set up acrpull and push roles.":::
 
+## Create a Docker registry service connection
+
+### [Managed Service Identity](#tab/msi)
+
+1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+
+1. Select **Service connections** from the left pane.
+
+1. Select **New service connection**, and then select **Docker Registry** then **Next**.
+
+1. Select **Azure Container Registry**, and then select *Managed Service Identity* as your **Authentication Type**.
+
+1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry). Paste your VM's system assigned Object ID you created in the previous step in the **Tenant ID** text field.
+
+1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+
+1. Select **Save** when you are done.
+
+    :::image type="content" source="../media/acr-service-connection-msi.png" alt-text="A screenshot showing how to set up a docker registry service connection MSI.":::
+
+### [Service Principal](#tab/sp)
+
+1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+
+1. Select **Service connections** from the left pane.
+
+1. Select **New service connection**, and then select **Docker Registry** then **Next**.
+
+1. Select **Azure Container Registry**, and then select *Service Principal* as your **Authentication Type**.
+
+1. Select your **Subscription** from the dropdown menu.
+
+1. Select your **Azure container registry** from the list.
+
+1. Enter a name for your service connection.
+
+1. Select **Save** when you are done.
+
+    :::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
+
 ## Build and publish to Azure Container Registry
 
 1. From your project, select **Pipelines** and then select **Create Pipeline**.
@@ -250,10 +261,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
     ```yml
     trigger:
     - main
-    
-    resources:
-    - repo: self
-    
+
     variables:
       dockerRegistryServiceConnection: '<SERVICE_CONNECTION_NAME>'
       imageRepository: '<IMAGE_NAME>'
@@ -267,8 +275,12 @@ To use managed service identity with Azure Pipelines to publish Docker images to
       - job: Build
         displayName: Build job
         pool:
-          vmImage: 'ubuntu-latest'
+          name: '<YOUR_AGENT_POOL_NAME>'
         steps:
+        - task: DockerInstaller@0
+          inputs:
+            dockerVersion: '17.09.0-ce'
+
         - task: Docker@2
           displayName: Build and publish image to Azure Container Registry
           inputs:
