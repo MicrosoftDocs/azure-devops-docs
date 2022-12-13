@@ -3,6 +3,7 @@ title: Add a work item instance to a process template
 titleSuffix: TFS
 description: Define work items that act as reminders for each project manager to perform after a project is created in Team Foundation Server 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 7cc17cb2-d854-469b-b45f-060e94baca71
 ms.author: kaelli
 ms.topic: reference

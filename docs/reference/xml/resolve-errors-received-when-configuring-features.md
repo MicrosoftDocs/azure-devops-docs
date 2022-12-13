@@ -3,7 +3,7 @@ title: Resolve errors received configuring features
 titleSuffix: Azure DevOps
 description: Occurs when definitions in the project conflict with definitions in the process templates uploaded to your project collection.
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.author: kaelli
 author: KathrynEE

@@ -183,7 +183,7 @@ To learn how, see the following sections in [Transform Analytics data to generat
 
 ## Create the stacked area chart  
 
-In the follow example, the query was renamed to *CFD*, but no columns were renamed. 
+In the following example, the query was renamed to *CFD*, but no columns were renamed. 
 
 1. In Power BI, choose the **Stacked area** chart under **Visualizations** and select the fields as shown in the following image. 
 
