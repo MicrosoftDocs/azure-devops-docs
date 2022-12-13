@@ -206,7 +206,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 1. Repeat the steps 5 & 6 to add the **AcrPull** role.
 
-    :::image type="content" source="../media/crpull-push-roles.png" alt-text="A screenshot showing how to set up acrpull and push roles.":::
+    :::image type="content" source="../media/acrpull-push-roles.png" alt-text="A screenshot showing how to set up acrpull and push roles.":::
 
 ## Create a Docker registry service connection
 
@@ -247,6 +247,8 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 1. Select **Save** when you are done.
 
     :::image type="content" source="../media/acr-service-connection.png" alt-text="A screenshot showing how to set up a docker registry service connection.":::
+
+* * *
 
 ## Build and publish to Azure Container Registry
 
