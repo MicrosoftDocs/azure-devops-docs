@@ -148,9 +148,9 @@ From the Power Query Editor, select the ribbon **Transform** menu.
 
 <a id="replace-null-values" /> 
 
-## Replace Null values  
+## Replace values  
 
-Sometimes one or more records will contain null values. For example, a value may not have been entered for **Story Points** or **Remaining Work**.  
+Sometimes one or more records may contain null values. For example, a value may not have been entered for **Story Points** or **Remaining Work**.  
 
 :::image type="content" source="media/transform-data/records-null-data.png" alt-text="Screenshot of Power BI table containing null values.":::
 
