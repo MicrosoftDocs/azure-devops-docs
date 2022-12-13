@@ -19,7 +19,7 @@ ms.date: 10/13/2021
 Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Plan structure for aggregated view](media/odatapowerbi-aggregatedatlevel-plan.png)
+> ![Screenshot of Power BI Test Plan structure for aggregated view.](media/odatapowerbi-aggregatedatlevel-plan.png)
 
 As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. This article explains how to do it for all level 3 test suites in a test plan.
 
@@ -28,7 +28,7 @@ As shown in the above image, there are level 3 test suites with same names under
 For a sample test suite hierarchy in a test plan like below, you can configure this report.
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Suites Aggregated View - Report](media/odatapowerbi-aggregatedatlevel.png)
+> ![Screenshot of Power BI Test Suites Aggregated View - Report.](media/odatapowerbi-aggregatedatlevel.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -104,8 +104,14 @@ $apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}' and TestSuite/IdLeve
 ***
 
 ### Substitution strings
+ 
 
-[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{testPlanTitle}` - Title of the test plan whose data you want to return.
+
 
 ### Query breakdown
 
@@ -133,7 +139,7 @@ The following table describes each part of the query.
    `/groupby((TestSuite/TitleLevel3),`
    :::column-end:::
    :::column span="1":::
-   The test suites to group by. If you're interested in getting report for all distinct test suites lying at level 3 of test suite hierarchy, you can specify this query part. You can change the level number from 1-14. If you wish to separate test suites with same name, you can use  `/groupby((TestSuite/TitleLevel3, TestSuite/IdLevel3),` to sure that even if you have two test suites with same name, they'll be shown as two different entries as they would have two different IDs.
+   The test suites to group by. If you're interested in getting report for all distinct test suites lying at level 3 of test suite hierarchy, you can specify this query part. You can change the level number from 1-14. If you wish to separate test suites with same name, you can use  `/groupby((TestSuite/TitleLevel3, TestSuite/IdLevel3),` to sure that even if you've two test suites with same name, they'll be shown as two different entries as they would have two different IDs.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -189,22 +195,22 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/powerbi-rename-columns.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/powerbi-rename-columns.png)
 
 1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Power BI Change Column Type](media/powerbi-change-column-type.png)
+	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/powerbi-rename-query.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/powerbi-rename-query.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/powerbi-close-apply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/powerbi-close-apply.png)
 
 
 ## Create the report
@@ -220,16 +226,13 @@ To create the report, do the following steps:
 1. Add the columns **TestSuite.TitleLevel3, NotRunCount, RunCount, PassedCount, TotalCount**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI select Sum as aggregation](media/powerbi-sum-aggregation.png)
+	> ![Screenshot of Power BI select Sum as aggregation.](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Suites Aggregated View - Report](media/odatapowerbi-aggregatedatlevel.png)
+> ![Screenshot of Power BI Test Suites Aggregated View report.](media/odatapowerbi-aggregatedatlevel.png)
 
-## Full list of sample reports for Test Plans
-
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

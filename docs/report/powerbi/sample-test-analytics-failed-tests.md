@@ -21,7 +21,7 @@ This article shows you how to create a report that shows the list of failed test
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/failed-tests-report1.png)
+> ![Screenshot of Power BI failed test report.](media/odata-powerbi-test-analytics/failed-tests-report1.png)
 
 Specifically, you'll find sample queries for the following reports: 
 
@@ -97,11 +97,11 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ### Substitution strings
 
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
- 
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name
 - `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
 - `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
@@ -116,6 +116,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -272,17 +273,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/failed-tests-expand1.png)
+    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/failed-tests-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/failed-tests-expand2.png)
+    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/failed-tests-expand2.png)
 
 1. The table now contains the expanded entity **Test.TestName**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/failed-tests-expand3.png)
+    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/failed-tests-expand3.png)
     
 
 ### Change column type
@@ -292,7 +293,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalCount**, **PassedCount**, **FailedCount**, **NotExecutedCount**, **NotImpactedCount, and **FlakyCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/failed-tests-changetype1.png)
+    > ![Screenshot of Power BI transform data, change column type.](media/odata-powerbi-test-analytics/failed-tests-changetype1.png)
     
 1. Change the type of column **PassRate** to **Decimal Number**.
 
@@ -307,17 +308,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/failed-tests-rename1.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/failed-tests-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -328,7 +329,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/failed-tests-field1.png)
+> ![Screenshot of Power BI Visualizations failed test report fields.](media/odata-powerbi-test-analytics/failed-tests-field1.png)
 
 For a simple report, do the following steps:
 
@@ -345,7 +346,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/failed-tests-report1.png)
+> ![Screenshot of Power BI sample failed test report.](media/odata-powerbi-test-analytics/failed-tests-report1.png)
 
 
 
@@ -579,11 +580,7 @@ $apply=filter(
 iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast(TotalCount sub NotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate)
 ```
 
-***
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+*** 
 
 ## Related articles
 

@@ -83,6 +83,10 @@ items:
     href: sample-odata-overview.md
   - name: View the OData query of a built-in report
     href: ../extend-analytics/view-odata-query-analytics-report.md
+  - name: Transform Analytics data
+    href: transform-analytics-data-report-generation.md
+  - name: Add a team slicer to a report
+    href: sample-boards-teamslicer.md
 - name: Sample reports, Boards
   items:
   - name: Open bugs
@@ -93,7 +97,7 @@ items:
     href: sample-boards-rollup.md
   - name: Feature progress
     href: sample-boards-featureprogress.md
-  - name: Work Items and Direct Links
+  - name: List linked work items 
     href: sample-boards-directlinks.md
   - name: Release burndown
     href: sample-boards-releaseburndown.md
@@ -104,8 +108,6 @@ items:
     displayname: CFD
   - name: Lead/Cycle time
     href: sample-boards-leadcycletime.md
-  - name: Add a team slicer
-    href: sample-boards-teamslicer.md
 - name: Sample reports, Pipelines
   items:
   - name: Outcome summary

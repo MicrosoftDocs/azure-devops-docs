@@ -23,7 +23,7 @@ This article shows you how to get the execution state of one or more Test Plans 
 The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
+> ![Screenshot of Power BI Execution Trend report.](media/odatapowerbi-executiontrend.png)
 
 The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.  
 
@@ -112,8 +112,7 @@ $apply=filter(
 
 ### Substitution strings
 
-
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`. 
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
@@ -130,7 +129,7 @@ The following table describes each part of the query.
    :::column span="1":::
       **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Description**
    :::column-end:::
 :::row-end:::
@@ -139,7 +138,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}'` or `TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
    :::column-end:::
 :::row-end:::
@@ -147,7 +146,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `and (DateSK ge {startDate} and DateSK le {endDate})`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Date range of interest. You can enter the dates in **YYYYMMDD** format. 
    :::column-end:::
 :::row-end:::
@@ -155,7 +154,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `/groupby((DateSK)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Group the data into bins of same date. It produces one set of values per day in given date range.
    :::column-end:::
 :::row-end:::
@@ -163,7 +162,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `/aggregate($count as TotalCount,`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Aggregate data across the filtered test points with having count as `TotalCount`. 
    :::column-end:::
 :::row-end:::
@@ -171,7 +170,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as `Passed` metric. 
    :::column-end:::
 :::row-end:::
@@ -193,7 +192,7 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Fields](media/odatapowerbi-executiontrend-fields.png)
+> ![Screenshot of Power BI Visualizations Execution Trend fields.](media/odatapowerbi-executiontrend-fields.png)
 
 To create the report, do the following steps:
 
@@ -204,11 +203,8 @@ To create the report, do the following steps:
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
-
-## Full list of sample reports for Test Plans
-
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+> ![Screenshot of Power BI sample execution trend report.](media/odatapowerbi-executiontrend.png)
+ 
 
 ## Related articles
 
