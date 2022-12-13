@@ -24,7 +24,7 @@ An example is shown in the following image.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration - Report](media/odatapowerbi-pipelines/taskduration-report.png)
+> ![Screenshot of Power BI Pipelines task duration report.](media/odatapowerbi-pipelines/taskduration-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -82,7 +82,9 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 ### Query breakdown
 
@@ -213,7 +215,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TaskDuration80thPercentileInSeconds, TaskDuration80thPercentileInSeconds** and **TaskDuration95thPercentileInSeconds** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
+    > ![Screenshot of Power BI transform data for Change column type.](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
 
 
 ### Rename fields and query
@@ -223,17 +225,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI transform data, Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -243,7 +245,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/taskduration-fields.png)
+> ![Screenshot of Power BI Visualizations and Fields selections for pipelines task duration report.](media/odatapowerbi-pipelines/taskduration-fields.png)
 
 For a simple report, do the following steps:
 
@@ -260,7 +262,7 @@ For a simple report, do the following steps:
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Screenshot of Pipelines task duration Line chart Report.](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+> ![Screenshot of sample Pipelines task duration Line chart Report.](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
 ## Full list of sample reports for Pipelines

@@ -23,7 +23,7 @@ This article shows you how to get the daily trend report of the time taken to ex
 The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+> ![Screenshot of Power BI Pipelines task duration trend report.](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -79,7 +79,9 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions-task-name.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 
 ### Query breakdown
@@ -204,17 +206,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/taskdurationtrend-expand1.png)
+    > ![Screenshot of Power BI transform data, Choose expand button.](media/odatapowerbi-pipelines/taskdurationtrend-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/taskdurationtrend-expand2.png)
+    > ![Screenshot of Power BI transform data, Select all columns.](media/odatapowerbi-pipelines/taskdurationtrend-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/taskdurationtrend-expand3.png)
+    > ![Screenshot of Power BI transform data, Expanded entity.](media/odatapowerbi-pipelines/taskdurationtrend-expand3.png)
 
 
 ### Change column type
@@ -224,7 +226,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. 1. Change the type of column **TaskDuration80thPercentileInSeconds** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
+    > ![Screenshot of Power BI transform data, change column type.](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
 
 
 ### Rename fields and query 
@@ -234,17 +236,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Rename the query to something more meaningful.](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI, Rename the query.](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -254,7 +256,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/taskdurationtrend-fields.png)
+> ![Screenshot of Power BI Visualizations Pipelines task duration fields.](media/odatapowerbi-pipelines/taskdurationtrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -271,7 +273,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+> ![Screenshot of Power BI sample Pipelines task duration trend report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
 ## More queries
@@ -488,11 +490,7 @@ $apply=filter(
 
 ***
 
-
-
-## Full list of Pipelines sample reports
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+ 
 
 ## Related articles
 

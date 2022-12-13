@@ -22,7 +22,7 @@ This article shows you how to create a report that shows day wise trend of numbe
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
+> ![Screenshot of Power BI test summary report.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
 
 
 [!INCLUDE [temp](includes/preview-note.md)]
@@ -99,13 +99,11 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ### Substitution strings
 
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
- 
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
-- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
+ 
+ 
 ### Query breakdown
 
 The following table describes each part of the query.
@@ -268,17 +266,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand1.png)
+    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand2.png)
+    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand3.png)
+    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand3.png)
     
 
 ### Change column type
@@ -286,7 +284,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Change the type of column **PassRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-changetype1.png)
+    > ![Screenshot of Power BI transform data, change column type.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -296,17 +294,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-rename1.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -317,7 +315,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-field.png)
+> ![Screenshot of Power BI Visualization Test Summary Fields.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-field.png)
 
 For a simple report, do the following steps:
 
@@ -332,7 +330,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
+> ![Screenshot of Power BI sample test summary report.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
 
 
 You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
@@ -554,10 +552,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 ```
 
 ***
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+ 
 
 ## Related articles
 

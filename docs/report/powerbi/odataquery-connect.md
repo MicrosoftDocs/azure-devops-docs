@@ -28,7 +28,7 @@ In this article, you learn how to:
 > * Write and test OData queries.
 > * Run an OData query from Power BI.
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Use Visual Studio Code to write and test OData queries
 
