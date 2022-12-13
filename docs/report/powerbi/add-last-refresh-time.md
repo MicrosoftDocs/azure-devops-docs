@@ -24,12 +24,12 @@ To add a column with the last refresh date of the dataset, follow these steps.
 
 1. Load the Power BI pbix file associated with your view in Power BI Desktop.  
 
-2. In the External Data section of the ribbon, choose **Edit Queries**.   
+1. In the External Data section of the ribbon, choose **Edit Queries**.   
 
     > [!div class="mx-imgBorder"]  
     > ![Power BI Desktop, Home tab, Edit Queries](media/edit-queries.png) 
 
-3. Open **Advanced Editor**. 
+1. Open **Advanced Editor**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Advanced Editor](media/AdvancedEditor.png) 
@@ -38,62 +38,68 @@ To add a column with the last refresh date of the dataset, follow these steps.
 
 #### [Private view](#tab/private/)
 
-    ```Query 
-	let
-	    Source = VSTS.AnalyticsViews("{OrganizationName}", "ProjectName}", []),
-	    #"Private Views_Folder" = Source{[Id="Private Views",Kind="Folder"]}[Data],
-	    #"{AnalyticsViewsID_Table}" = #"Private Views_Folder"{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
-	in
-	    #"{AnalyticsViewsID_Table}"
-    ```
+```Query 
+let
+    Source = VSTS.AnalyticsViews("{OrganizationName}", "ProjectName}", []),
+    #"Private Views_Folder" = Source{[Id="Private Views",Kind="Folder"]}[Data],
+    #"{AnalyticsViewsID_Table}" = #"Private Views_Folder"{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+in
+    #"{AnalyticsViewsID_Table}"
+```
 
 #### [Shared view](#tab/shared/)
 
-    ```Query 
-	let
-	    Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
-	    #"{AnalyticsViewsID_Table}" = Source{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
-	in
-	    #"{AnalyticsViewsID_Table}"
-    ```
+```Query 
+let
+    Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
+    #"{AnalyticsViewsID_Table}" = Source{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+in
+    #"{AnalyticsViewsID_Table}"
+```
 
 ***
-    Modify the query according to the following syntax.
-	   
-    ```Query 
-    let
-        Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
-	    #"Private Views_Folder" = Source{[Id="Private Views",Kind="Folder"]}[Data],
-	    #"{AnalyticsViewsID_Table}" = #"Private Views_Folder"{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
-        #"Added Refresh Date" = Table.AddColumn(#"{tableid}_Table", "Refresh Date", 
-            each DateTimeZone.FixedUtcNow(), type datetimezone)
-    in
-        #"Added Refresh Date"
-    ```
 
-    ```Query 
-	let
-	    Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
-	    #"{AnalyticsViewsID_Table}" = Source{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
-        #"Added Refresh Date" = Table.AddColumn(#"{tableid}_Table", "Refresh Date", 
-            each DateTimeZone.FixedUtcNow(), type datetimezone)
-	in
-	    #"Added Refresh Date"
-    ```
+1. Modify the query according to the following syntax.
+
+
+#### [Private view](#tab/private/)
+	   
+```Query 
+let
+   Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
+	#"Private Views_Folder" = Source{[Id="Private Views",Kind="Folder"]}[Data],
+	#"{AnalyticsViewsID_Table}" = #"Private Views_Folder"{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+    #"Added Refresh Date" = Table.AddColumn(#"{tableid}_Table", "Refresh Date", 
+        each DateTimeZone.FixedUtcNow(), type datetimezone)
+in
+    #"Added Refresh Date"
+```
+
+#### [Shared view](#tab/shared/)
+
+```Query 
+let
+   Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
+   #"{AnalyticsViewsID_Table}" = Source{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+   #"Added Refresh Date" = Table.AddColumn(#"{tableid}_Table", "Refresh Date", 
+       each DateTimeZone.FixedUtcNow(), type datetimezone)
+in
+   #"Added Refresh Date"
+```
  
 ***
 
     > [!IMPORTANT]  
     > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
-4. When finish, choose **Done**.
+1. When finish, choose **Done**.
 
-5. Choose **Close & Apply** to immediately refresh the dataset.   
+1. Choose **Close & Apply** to immediately refresh the dataset.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/transform-data/powerbi-close-apply.png)  
+	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/powerbi-close-apply.png)   
 
-6. To add a card with the last refresh date to your reports, under **Visualizations**, choose **Card**, and add **Refresh Date** to **Fields**.
+1. To add a card with the last refresh date to your reports, under **Visualizations**, choose **Card**, and add **Refresh Date** to **Fields**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Power BI Desktop, Card, Refresh Date Applied.](media/last-refresh/card-visualizations.png)
