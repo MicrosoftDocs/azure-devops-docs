@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 12/12/2022
 ---
 
 # Create a column in Power BI for last refresh date
@@ -35,21 +35,24 @@ To add a column with the last refresh date of the dataset, follow these steps.
     > ![Advanced Editor](media/AdvancedEditor.png) 
 
     If you haven't already modified the query, review the following examples with specific table values matching your Analytics view.
-	 
+
     ```Query 
-    let
-        Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", null),
-        #"{tableid}_Table" = Source{[Id="{tableid}",Kind="Table"]}[Data],
-    in
-        #"{tableid}_Table"
+	let
+	    Source = VSTS.AnalyticsViews("{OrganizationName}", "ProjectName}", []),
+	    #"Private Views_Folder" = Source{[Id="Private Views",Kind="Folder"]}[Data],
+	    #"{AnalyticsViewsID_Table}" = #"Private Views_Folder"{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+	in
+	    #"{AnalyticsViewsID_Table}"
     ```
+
 
     Modify the query as follows:
 	   
     ```Query 
     let
-        Source = VSTS.AnalyticsViews("account", "project", null),
-        #"{tableid}_Table" = Source{[Id="{tableid}",Kind="Table"]}[Data],
+        Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
+	    #"Private Views_Folder" = Source{[Id="Private Views",Kind="Folder"]}[Data],
+	    #"{AnalyticsViewsID_Table}" = #"Private Views_Folder"{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
         #"Added Refresh Date" = Table.AddColumn(#"{tableid}_Table", "Refresh Date", 
             each DateTimeZone.FixedUtcNow(), type datetimezone)
     in
@@ -64,22 +67,18 @@ To add a column with the last refresh date of the dataset, follow these steps.
 5. Choose **Close & Apply** to immediately refresh the dataset.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Home, Close & Apply](media/powerbi-close-apply.png)   
+	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/powerbi-close-apply.png)   
 
-6. Identify the *Refresh Date* column under the field.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Fields, Refresh Date field](media/RefreshDateField.png)  
-
-7. Add the field to a card to see the last refresh date on your reports.
+6. To add a card with the last refresh date to your reports, under **Visualizations**, choose **Card**, and add **Refresh Date** to **Fields**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Card, Refresh Date Applied](media/RefreshDateApplied.png)  
-
+	> ![Screenshot of Power BI Desktop, Card, Refresh Date Applied.](media/last-refresh/card-visualizations.png)
 
 
 ## Related articles
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
+- [Create a Power BI report with a default Analytics view](create-quick-report.md)
+- [Publish a Power BI Desktop file to Power BI](publish-power-bi-desktop-to-power-bi.md)
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
