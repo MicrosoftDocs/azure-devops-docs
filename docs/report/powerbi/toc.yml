@@ -71,8 +71,6 @@ items:
     href: active-bugs-sample-report.md
   - name: Get a count of work items
     href: data-connector-examples.md
-  - name: Add a last refresh date
-    href: add-last-refresh-time.md
   - name: Filter on teams
     href: create-team-filter.md
   - name: Calculate time-in-state
@@ -85,6 +83,8 @@ items:
     href: ../extend-analytics/view-odata-query-analytics-report.md
   - name: Transform Analytics data
     href: transform-analytics-data-report-generation.md
+  - name: Refresh data, add last refresh date
+    href: add-last-refresh-time.md 
   - name: Add a team slicer to a report
     href: sample-boards-teamslicer.md
 - name: Sample reports, Boards
