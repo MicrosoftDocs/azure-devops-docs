@@ -56,7 +56,7 @@ items:
   - name: Connect using Advanced Functions
     href: data-connector-functions.md
   - name: Publish a Power BI Desktop file to Power BI
-    href: publish-power-bi-desktop-to-power-bi
+    href: publish-power-bi-desktop-to-power-bi.md
 - name: Sample queries, Work tracking
   items:
   - name: Retrieve work item data

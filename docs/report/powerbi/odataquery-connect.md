@@ -160,7 +160,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 Select **Close & Apply** to save your settings and pull the data into Power BI. After the data is refreshed, you can create a report as you would normally in Power BI.
 
-![Power BI "Close & Apply" button](media/powerbi-close-apply.png)
+![Power BI "Close & Apply" button](media/transform-data/powerbi-close-apply.png)
 
 ## Related articles
 

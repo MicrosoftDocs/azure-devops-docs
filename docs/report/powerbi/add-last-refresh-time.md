@@ -36,6 +36,8 @@ To add a column with the last refresh date of the dataset, follow these steps.
 
     If you haven't already modified the query, review the following examples with specific table values matching your Analytics view.
 
+#### [Private view](#tab/private/)
+
     ```Query 
 	let
 	    Source = VSTS.AnalyticsViews("{OrganizationName}", "ProjectName}", []),
@@ -45,8 +47,18 @@ To add a column with the last refresh date of the dataset, follow these steps.
 	    #"{AnalyticsViewsID_Table}"
     ```
 
+#### [Shared view](#tab/shared/)
 
-    Modify the query as follows:
+    ```Query 
+	let
+	    Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
+	    #"{AnalyticsViewsID_Table}" = Source{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+	in
+	    #"{AnalyticsViewsID_Table}"
+    ```
+
+***
+    Modify the query according to the following syntax.
 	   
     ```Query 
     let
@@ -59,6 +71,18 @@ To add a column with the last refresh date of the dataset, follow these steps.
         #"Added Refresh Date"
     ```
 
+    ```Query 
+	let
+	    Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", []),
+	    #"{AnalyticsViewsID_Table}" = Source{[Id="{AnalyticsViewsID}",Kind="Table"]}[Data]
+        #"Added Refresh Date" = Table.AddColumn(#"{tableid}_Table", "Refresh Date", 
+            each DateTimeZone.FixedUtcNow(), type datetimezone)
+	in
+	    #"Added Refresh Date"
+    ```
+ 
+***
+
     > [!IMPORTANT]  
     > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
@@ -67,7 +91,7 @@ To add a column with the last refresh date of the dataset, follow these steps.
 5. Choose **Close & Apply** to immediately refresh the dataset.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/powerbi-close-apply.png)   
+	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/transform-data/powerbi-close-apply.png)  
 
 6. To add a card with the last refresh date to your reports, under **Visualizations**, choose **Card**, and add **Refresh Date** to **Fields**.
 
