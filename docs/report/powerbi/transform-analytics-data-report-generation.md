@@ -29,29 +29,22 @@ Once you've imported your Analytics data into Power BI, you may need to transfor
 
 The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: **AssignedTo**, **Iteration**, and **Area**. 
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on the entities you need to flatten.
+After closing the **Advanced Editor** and while remaining in the **Power Query Editor**, select the expand button on the entities you need to flatten.
 
-1. Choose the expand button.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Expand an entity column, Power BI + OData](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn.png)
-
-1. Select the fields to flatten.
+1. For example, choose the expand button for **Area**, select the properties you want to expand, and choose **OK**. Here, we choose `AreaName` and `AreaPath` to flatten. The `AreaName` property is similar to the **Node Name** field.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select the fields to flatten.](media/transform/dataexpand-area-path-property.png) /azure/devops/report/powerbi/media/odatapowerbi/expandcolumn2.png)
+    > ![Screenshot of Power BI transform data, Expand AreaPath column.](media/transform-data/expand-area-path-property.png)
 
+	> [!NOTE]   
+	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. To learn more about these properties, see the following metadata references: [Areas](entity-reference-boards.md#areas), [Iterations](entity-reference-boards.md#iterations), and [Users](entity-reference-general.md#users).
+	
 1. The table now contains entity field(s).
 
     > [!div class="mx-imgBorder"] 
-    > ![The table now contains entity field(s).](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn3.png)
+    > ![Screenshot of expanded Area columns.](media/transform-data/expanded-area-columns.png)
 
-1. Repeat steps 1 through 3 for all columns representing several fields. For work items, these typically include:  
-	- `AssignedTo`
-	- `AreaPath`
-	- `IterationPath`
-
-
+1. Repeat steps 1 through 3 for all fields representing entities that need expanding. These appear with *Record* listed in the table column when unexpanded. 
 
 
 <a id="expand-descendants" />
@@ -187,7 +180,7 @@ Prior to adding the percentage complete column, make sure that you replace all n
     ```
     = [Completed]/([Proposed]+[InProgress]+[Resolved]+[Completed])
     ```
-	:::image type="content" source="media/reports-boards/custom-column-dialog-percent-complete.png" alt-text="Custom Column Dialog, PercentComplete syntax.":::
+	:::image type="content" source="media/transform-data/custom-column-dialog-percent-complete.png" alt-text="Custom Column Dialog, PercentComplete syntax.":::
 
     > [!NOTE]
     > It's possible that you won't have a **Resolved** column, if the work items don't have States mapped to the *Resolved* workflow state category. 
