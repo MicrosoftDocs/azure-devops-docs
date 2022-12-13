@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/09/2022
 ---
 
 # Connect with data by using Power BI and OData queries
@@ -42,9 +42,9 @@ To download and install Visual Studio Code, go to the [Visual Studio Code downlo
 
 Open Visual Studio Code, select **Extensions**, and then search for *odata*. In the results list, select **vscode-odata**, and then install it.
 
-### Create an .odata file
+### Create an OData file
 
-In Visual Studio Code, create and save a file called *filename.odata*. You may name it whatever you want, but it must have an *.odata* extension to enable the OData extension functionality.
+In Visual Studio Code, create and save a file called `filename.odata`. You may name it whatever you want, but it must have a `.odata` extension to enable the OData extension functionality.
 
 ### Write the OData query
 
