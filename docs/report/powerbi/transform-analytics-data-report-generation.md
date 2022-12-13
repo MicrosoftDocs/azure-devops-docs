@@ -17,13 +17,13 @@ ms.date: 12/09/2022
 
 Once you've imported your Analytics data into Power BI, you may need to transform select column data prior to creating a report. This article shows you how to perform some of these basic tasks, such as: 
 
-- Expand columns, such as **Area**, **AssignedTo**, and **Iteration**. . 
+- Expand columns, such as **Area**, **AssignedTo**, and **Iteration** 
 - Expand descendant columns when querying linked work items
 - Pivot columns to generate counts for select category states 
 - Transform the column data type from decimal to whole numbers 
 - Replace null values in column data 
 - Create a custom field 
-- Rename fields 
+- Rename fields. 
  
 ## Expand columns 
 
@@ -39,7 +39,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Select the fields to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select the fields to flatten.](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn2.png)
+    > ![Select the fields to flatten.](media/transform/dataexpand-area-path-property.png) /azure/devops/report/powerbi/media/odatapowerbi/expandcolumn2.png)
 
 1. The table now contains entity field(s).
 
@@ -94,33 +94,18 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 
 ### Expand the Links column
 
-1. Select the expand button on the Links column.
+1. Select the expand button on the `Links` column.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks.png)  
 	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options. ":::
 
 1. Select all the fields to flatten.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Select all the fields to flatten.](media/odatapowerbi-expandlinks2.png)  
 	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options. ":::
 
-1. Select the expand button on the Links.TargetWorkItem column.
+1. Select the expand button on the `Links.TargetWorkItem` column and select the properties to flatten.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Select the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
 	:::image type="content" source="media/transform-data/links-target-work-item-column-expand.png" alt-text="Screenshot of Power BI Links.TargetWorkItem column, expand options. ":::
 
-1. Select the fields of the Target Work Item to flatten.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select the fields of the Target Work Item to flatten.](media/odatapowerbi-expandlinks4.png)
-
-	The Table now contains flattened Link and Target Work Item field(s).
-
-    > [!div class="mx-imgBorder"] 
-    > ![The Table now contains flattened Link and Target Work Item field(s).](media/odatapowerbi-expandlinks5.png)
 
 > [!NOTE]
 > If the link represents a one-to-many or many-to-many relationship, then multiple links will
@@ -136,15 +121,18 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 ## Transform a column data type 
 
 <a id="leadtimedays-cycletimedays" />
+
  
-### Transform the LeadTimeDays and CycleTimeDays columns to whole Numbers
+### Transform LeadTimeDays and CycleTimeDays to whole numbers
 
 The `LeadTimeDays` and `CycleTimeDays` are decimal fields. For example if **Lead Time** is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that it's rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 
 
-From the Power Query Editor, select the ribbon **Transform** menu. 
+From the Power Query Editor, select the ribbon **Transform** menu.  
 
-1. Select the `LeadTimeDays` column by selecting the column header.
-1. Select **Data Type** and change to **Whole Numbers**.
+1. Select the `LeadTimeDays` column by selecting the column header.  
+
+1. Select **Data Type** and change to **Whole Numbers**.  
+
    :::image type="content" source="media/transform-data/change-data-type-lead-time.png" alt-text="Screenshot of Power BI Transform menu, Data type selection.":::
 
 1. Repeat for `CycleTimeDays`.
@@ -185,6 +173,8 @@ For easier reporting, replace nulls with zero by following these steps.
 ## Create a custom column
 
 <a id="create-percent-complete" />
+
+
  
 ### Create a percentage complete computed column
 
@@ -214,7 +204,7 @@ When finished with your expansion, you may choose to rename one or more columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](/azure/devops/report/powerbi/media/powerbi-rename-columns.png)
+	> ![Power BI Rename Columns](media/transform-data/powerbi-rename-columns.png)
 
 1. Enter a new label for the column field and then press Enter. 
  
@@ -224,7 +214,7 @@ When finished with your expansion, you may choose to rename one or more columns.
 1. Once you've completed all your data transformations, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](/azure/devops/report/powerbi/media/powerbi-close-apply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
 
 
 

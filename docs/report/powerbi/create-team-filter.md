@@ -95,7 +95,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 11. On the Home tab, choose **Close & Apply**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Home, Close & Apply](media/powerbi-close-apply.png)   
+	> ![Power BI Desktop, Home, Close & Apply](media/transform-data/powerbi-close-apply.png)  
 
 16. Next, choose **Refresh** to add *AreaSK* to the view.  
 

@@ -110,11 +110,47 @@ Create a Power BI Query to pull the data into Power BI as follows:
 
     If you've never connected to your account, Power BI may require you to authenticate. For more information, see [Client authentication options](client-authentication-options.md).
 
-## Create Power BI transforms
 
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
+## Expand Area, Iteration, AssignedTo columns
 
-[!INCLUDE [temp](includes/sample-finish-query.md)]
+The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an `$expand` statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: `AssignedTo`, `Iteration`, and `Area`. 
+
+After closing the **Advanced Editor** and while remaining in the **Power Query Editor**, select the expand button on the entities you need to flatten.
+
+1. For example, choose the expand button for **Area**, select the properties you want to expand, and choose **OK**. Here, we choose `AreaName` and `AreaPath` to flatten. The `AreaName` property is similar to the **Node Name** field.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Screenshot of Power BI transform data, Expand AreaPath column.](media/transform-data/expand-area-path-property.png)
+
+	> [!NOTE]   
+	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. To learn more about these properties, see the following metadata references: [Areas](entity-reference-boards.md#areas), [Iterations](entity-reference-boards.md#iterations), and [Users](entity-reference-general.md#users).
+	
+1. The table now contains entity field(s).
+
+    > [!div class="mx-imgBorder"] 
+    > ![Screenshot of expanded Area columns.](media/transform-data/expanded-area-columns.png)
+
+1. Repeat steps 1 through 3 for all fields representing entities that need expanding. These appear with *Record* listed in the table column when unexpanded. 
+
+
+## Rename fields and query, then Close & Apply
+
+When finished, you may choose to rename columns. 
+
+1. Right-click a column header and select **Rename...**
+
+	> [!div class="mx-imgBorder"] 
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
+
+1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
+
+	> [!div class="mx-imgBorder"] 
+	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
+
+1. Once done, choose **Close & Apply** to save the query and return to Power BI.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
 
 
 ## Create the report
