@@ -17,8 +17,8 @@ ms date: 12/13/2022
 
 Learn how to generate the following example reports in Power BI based on an Analytics view.  
 
-- [Number of Work Items](#number-of-work-items)  
-- [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
+- [Count of Work Items](#number-of-work-items)  
+- [Matrix report of work items by Area Path and State](#number-of-work-items-by-area-path-and-state)  
 
 Before generating these reports, you must first [connect to Analytics using the Power BI data connector](data-connector-connect.md). 
 
@@ -39,7 +39,7 @@ Before generating these reports, you must first [connect to Analytics using the 
 
 ## Number of work items by area path and state
 
-1. Load `Work Items - Today` Analytics view into Power BI. The data table should include the following columns: `Area Path`, `Priority`, `Work Item Count`, `Work Item Type`.  
+1. Load `Work Items - Today` Analytics view into Power BI. The data table should include the following columns: `Area Path`, `Assigned To`, `Iteration Path`, `State`, `Title`, `Work Item ID`, and `Work Item Type`.  
 
 2. From the **Visualizations** pane, choose **Matrix**, and add `Area Path`, `State`, and `Work Item ID` to **Rows**, **Columns**, and **Values**, respectively. 
 
@@ -52,6 +52,9 @@ Before generating these reports, you must first [connect to Analytics using the 
 	> [!NOTE]   
 	> To simplify the report, select `Area Paths` were renamed to shorten their labels. To learn how to replace values in a column, see [Transform Analytics data to generate Power BI reports, Replace values](transform-analytics-data-report-generation.md#replace-null-values). 
 
+1. To filter on other fields, such as `Iteration Path` or `Work Item Type`, drag the field to **Columns** in the **Visualizations** pane, and then filter the data from the **Filters** pane.
+
+ 
 ## Related articles 
 
 - [Power BI integration overview](overview.md) 
