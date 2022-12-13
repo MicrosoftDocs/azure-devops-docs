@@ -376,6 +376,8 @@ Understanding how security works for agent pools helps you control sharing and u
 
 **Roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
+### Organization-level security settings
+
 | Role on an agent pool in organization settings | Purpose |
 |------|---------|
 | Reader | Members of this role can view the agent pool as well as agents. You typically use this to add operators that are responsible for monitoring the agents and their health.  |
@@ -384,6 +386,8 @@ Understanding how security works for agent pools helps you control sharing and u
 
 The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All agent pools' node. When using TFS or Azure DevOps Server, by default, TFS and Azure DevOps Server administrators are also administrators of the 'All agent pools' node.
 
+### Project-level security settings
+
 Roles are also defined on each project agent pool, and memberships in these roles govern what operations you can perform on an agent pool at the project level.
 
 | Role on an agent pool in project settings | Purpose |
@@ -391,6 +395,24 @@ Roles are also defined on each project agent pool, and memberships in these role
 | Reader | Members of this role can view the project agent pool. You typically use this to add operators that are responsible for monitoring the build and deployment jobs in that project agent pool.  |
 | User | Members of this role can use the project agent pool when authoring pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. The user that created the pool is automatically added to the Administrator role for that pool.
+
+::: moniker range="azure-devops"
+
+#### Pipeline permissions
+
+Pipeline permissions control which YAML pipelines are authorized to use an agent pool. Pipeline permissions do not restrict access from Classic pipelines.
+
+You can choose from the following options:
+
+* Open access for all pipelines to use the agent pool from the more options at top-right corner of the **Pipeline permissions** section in security tab of an agent pool.
+
+* Lock down the agent pool and only allow selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request gets raised, which must be approved by an agent pool Administrator. This does not limit access from Classic pipelines.
+
+:::image type="content" source="media/agent-pools-pipeline-permissions.png" alt-text="Screenshot of the pipeline permissions user experience for an agent pool.":::
+
+Pipeline permissions for the *Azure Pipelines* agent pool cannot be configured, as the pool is accessible, by default, to all pipelines.
+
+::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
