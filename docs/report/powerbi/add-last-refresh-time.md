@@ -14,11 +14,13 @@ ms.date: 12/12/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-After you [create a report](create-quick-report.md) and [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md), one of the most common requests is a way to determine the last time the data was refreshed.  
+The last refresh date, when added to a report, alerts users as to how fresh the data is in the report. You can add a card to a report which provides the date and time that the data for the report was last updated. Also, you can refresh the data models from Power BI to update all data models with the latest data.  
 
+The method for adding a last refresh date differs depending on whether your Power BI report is based on an Analytics view, Power BI, or OData query.  
+ 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-## Add the last refresh date column
+## Add the last refresh date column to a report based on an Analytics views
 
 To add a column with the last refresh date of the dataset, follow these steps.  
 
@@ -93,10 +95,42 @@ To add a column with the last refresh date of the dataset, follow these steps.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/transform-data/powerbi-close-apply.png)   
 
-1. To add a card with the last refresh date to your reports, under **Visualizations**, choose **Card**, and add **Refresh Date** to **Fields**.
+
+## Add the last refresh date column to a report based on a Power BI or OData query 
+
+1. From Power BI, choose **Blank Query**, rename the query to Last Refreshed Date, and then enter the following formula into the function bar. 
+
+	:::image type="content" source="media/last-refresh/last-refresh-date-query.png" alt-text="Screenshot of Power Query Editor, formula for DateTime.LocalNow for Last Refresh Date query. ":::
+
+1. To convert the date data to a table format, choose **To Table** and select the  **To Table** option. 
+
+	:::image type="content" source="media/last-refresh/convert-data-to-table.png" alt-text="Screenshot of Power Query Editor, To Table option. ":::
+
+	A single column appears with the date.
+
+	:::image type="content" source="media/last-refresh/column-coverted-data.png" alt-text="Screenshot of converted date column. ":::
+
+1. From the **Transform** menu, choose **Change Data TYpe** and select the **Date/Time** option. 
+
+	:::image type="content" source="media/last-refresh/change-data-type-date-time.png" alt-text="Screenshot of Transform menu, Change Data Type option to Date/Time. ":::
+
+1. From the Home menu, choose **Close and Apply**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Power BI Desktop, Home, Close & Apply.](media/transform-data/powerbi-close-apply.png)   
+
+## Add a card to a report with the Refresh Date 
+
+1. To add a card with the last refresh date to your reports, under **Visualizations**, choose **Card**, and add **Refresh Date** or **Last Refresh Date** to **Fields**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Power BI Desktop, Card, Refresh Date Applied.](media/last-refresh/card-visualizations.png)
+
+## Refresh data 
+
+1. Choose **Refresh** to refresh report page data and the data model. After all queries are updated, the card refreshes with the latest date. 
+
+	:::image type="content" source="media/last-refresh/refresh-data.png" alt-text="Screenshot of Power BI, Refresh option.":::
 
 
 ## Related articles
