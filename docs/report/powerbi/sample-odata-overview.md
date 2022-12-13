@@ -51,10 +51,9 @@ In this article, we provide samples for the most popular reports:
 
 All sample report articles provide the following sections and information: 
 
-* **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI
-* **Power BI transforms** - Steps to transform the data into a reportable format
-* **Create the report** - Steps to create a simple report from the data
-* **Additional queries** - Other sample queries for similar, but different reports.
+* **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI along with other sample queries.
+* **Transform data in Power BI** - Steps to transform the data into a reportable format
+* **Create the report** - Steps to create a simple report from the data.
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
