@@ -3,6 +3,7 @@ title: Manage change with the Capability Maturity Model Integration (CMMI) proce
 titleSuffix: Azure Boards
 description: Learn how to use change request work items to track and control all changes to the product and supporting systems. 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
 ms.topic: conceptual
 ms.author: kaelli
