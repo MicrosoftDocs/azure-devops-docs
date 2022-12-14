@@ -18,23 +18,7 @@ ms.date: 12/13/2022
 
 With Power BI, a suite of business analytics tools, you can pull data from [Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. Use Power BI to do impromptu analysis, produce beautiful reports, and publish for enterprise consumption.
 
-The integration of Power BI with Analytics enables you to go beyond the built-in Analytics reports and dashboard widgets to generate custom reports. 
-
-<!---
-
-Data connectors
-Query Editor
-Data set filters
-Measures
-Calculated columns
-Sorting
-Hierarchies
-Visualizations
-DAX
-
-
--->
-
+The integration of Power BI with Analytics enables you to go beyond the built-in Analytics reports and dashboard widgets to generate fully custom reports. 
 
 ## Data connection methods
 
@@ -95,14 +79,14 @@ You can pull data from Analytics into Power BI in one of the three ways describe
 Once you've connected data from Analytics in Power BI, you can always modify the underlying data using Power BI's **Power Query Editor** and **Advanced Editor**. Note the following operational constraints: 
 
 - When you connect using OData queries or an OData feed, you can specify query filters, data to return, data to aggregate, and more. 
-- When you connect using an Analytics view, you must refine the view based on the filter and data you want to have returned. 
+- When you connect using an Analytics view, you must edit the Analytics view to modify the query filter and fields that you want to have returned. 
 
-For examples of reports see [Sample reports](#sample-reports) provided later in this article. 
+For examples of reports, see [sample reports](#sample-reports) provided later in this article. 
 
 
 ## Transform data in Power BI
 
-Once you've imported data into Power BI, you can use the Power Query Editor **Transform**, **Add Column**, and other menu options and tools to change the data as needed. Many of the [Sample reports](#sample-reports) provided later in this article provide instructions on data transformations that you'll need to make. These include some of the following operations: 
+Once you've imported data into Power BI, you can use the Power Query Editor **Transform**, **Add Column**, and other menu options and tools to change the data as needed. Many of the [sample reports](#sample-reports) provided later in this article provide instructions on data transformations that you'll need to make. These instructions include some of the following operations: 
 
 - Expand data columns  
 - Pivot columns  
@@ -115,7 +99,7 @@ To get familiar with these operations, see [Transform Analytics data to generate
 
 ## Data Analysis Expressions (DAX) 
 
-Power BI supports creating new information from data already in your data model using DAX. DAX provides a collection of functions, operators, and constants that can be used in a formula, or expression, to calculate and return one or more values. 
+Power BI supports creating new information from data already in your data model using DAX. DAX provides a collection of functions, operators, and constants that you can use in a formula to calculate and return one or more values. 
 
 For an Analytics sample report that uses DAX, see [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md). 
 
@@ -135,6 +119,8 @@ To quickly get familiar with these Power BI basic features, see the following Po
 
 ## Sample reports
 
+Several sample reports are provided to show how to generate reports from either an Analytics view or OData query. 
+
 ### Sample reports using Analytics View
 
 - [Active bugs report](active-bugs-sample-report.md)  
@@ -143,11 +129,9 @@ To quickly get familiar with these Power BI basic features, see the following Po
 - [Filter on teams](create-team-filter.md)   
 - [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)   
 
-### Sample reports using OData Queries
+### Sample reports using OData queries
 
-To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
-
-For specific examples, see one of the following articles: 
+To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md). For specific examples, see one of the following articles: 
  
 
 ::: moniker range=">= azure-devops-2020"
@@ -186,7 +170,7 @@ All sample report articles provide the following sections and information:
 
 * **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI along with other sample queries.
 * **Transform data in Power BI** - Steps to transform the data into a reportable format
-* **Create the report** - Steps to create a simple report from the data.
+* **Create the report** - Steps to create a report from the data.
 
 ## Related articles
 
