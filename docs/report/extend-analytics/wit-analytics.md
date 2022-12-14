@@ -506,7 +506,7 @@ Specify the `$orderby` option to sort your results or specify the sequence in wh
 
 - [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md)
-- [Best practices to use when querying Analytics](/analytics/analytics-best-practices.md) 
+- [Best practices to use when querying Analytics](../analytics/analytics-best-practices.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
