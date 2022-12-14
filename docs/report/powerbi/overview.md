@@ -172,6 +172,15 @@ All sample report articles provide the following sections and information:
 * **Transform data in Power BI** - Steps to transform the data into a reportable format
 * **Create the report** - Steps to create a report from the data.
 
+## Power BI extensions 
+
+The following Marketplace extensions are available to support Power BI integration with Analytics.
+
+- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) translates an Azure DevOps work item query into an OData query for use with Azure DevOps Analytics OData endpoints. This can be useful for beginners to initiate a simple OData query.
+- [vscode-odata](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) extension adds rich language support to Visual Studio Code for the OData query language. 
+ 
+
+
 ## Related articles
 
 - [Dashboards](../dashboards/dashboards.md)
