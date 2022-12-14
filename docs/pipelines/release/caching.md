@@ -334,7 +334,7 @@ steps:
 - script: |   
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
     ./gradlew --stop    
-  displayName: Build
+  displayName: Gradlew stop
 ```
 
 - **restoreKeys**: The fallback keys if the primary key fails (Optional)
