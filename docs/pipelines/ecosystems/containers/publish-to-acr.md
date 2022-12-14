@@ -13,9 +13,11 @@ Using Azure Pipelines, you can set up a pipeline workflow to build and publish y
 
 > [!div class="checklist"]
 >
-> - Create a service connection to authenticate with Azure DevOps
 > - Create an Azure Container Registry  
-> - Build and publish your Docker container
+> - Set up a self-hosted agent on an Azure VM
+> - Set up the managed service identity
+> - Create a Docker Registry service connection
+> - Build and publish your image to Azure Container Registry
 
 ## Prerequisites
 
@@ -59,11 +61,11 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 1. Select your preferred **Location** and **SKU** and then select **Review + create**.
 
-1. Review your settings and then select **Create** when you are done.
+1. Review your settings and then select **Create** when you're done.
 
 ### [CLI](#tab/cli)
 
-1. Navigate to [Azure portal](https://portal.azure.com/), and open the Azure CLI by selecting the **Azure Cloud Shell** button from the toolbar.
+1. Navigate to [Azure portal](https://portal.azure.com/), and then open the Azure CLI by selecting the **Azure Cloud Shell** button from the toolbar.
 
 1. Create a new resource group.
 
@@ -80,9 +82,9 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 ## Set up a self-hosted agent VM
 
-To use managed service identity with Azure Pipelines to publish Docker images to Azure Container Registry, we must set up our own self-hosted agent on an Azure VM.
+To use Managed Service Identity with Azure Pipelines to publish Docker images to Azure Container Registry, we must set up our own self-hosted agent on an Azure VM.
 
-### Create VM
+### Create a VM
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
@@ -90,45 +92,45 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 1. Select your **Subscription** and then select the **Resource group** you used to create your container registry.
 
-1. Give your virtual machine a name amd select an **Image**.
+1. Give your virtual machine a name and choose an **Image**.
 
-1. Enter a **Username** and **Password**, and then select **Review + create**.
+1. Enter your **Username** and **Password**, and then select **Review + create**.
 
-1. Review your settings, and then select **Create** when you are done.
+1. Review your settings, and then select **Create** when you're done.
  
 1. Select **Go to resource** when the deployment is complete.
 
 ### Create an agent pool
 
-1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+1. From your Azure DevOps project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
 
 1. Select **Agent pools**, and then select **Add pool**.
 
-1. Select **New**, and then select *Self-hosted* from the **Pool type**.
+1. Select **New**, and then select *Self-hosted* from the **Pool type** dropdown menu.
 
 1. Give your pool a name, and then check **Grant access permission to all pipelines** checkbox.
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
 
 1. Now select the pool you just created, and then select **New agent**.
 
-1. We will be using the following instructions to set up our agent in the Azure VM we created earlier. Select the **Copy** button to copy the download link to your clipboard.
+1. We will be using the instructions in this window to set up your agent in the VM you created earlier. Select the **Copy** button to copy the download link to your clipboard.
 
     :::image type="content" source="../media/agent-setup-instructions.png" alt-text="A screenshot showing how to set up an agent.":::
 
 ### Create a personal access token 
 
-1. From your project in Azure DevOps portal, select **User Settings**, and then select *Personal Access Tokens**.
+1. From your Azure DevOps project, select **User Settings**, and then select **Personal Access Tokens**.
 
-1. Select **New Token** to create a new PAT.
+1. Select **New Token** to create a new Personal Access Token.
 
-1. Enter a name for your PAT and then choose an expiration date for your token.
+1. Enter a name for your PAT, and then choose an expiration date.
 
 1. Select **Custom defined** in **Scopes**, and then select **Show all scopes**.
 
 1. Select **Agent Pools** -> **Read & manage**, and **Deployment Groups** -> **Read & manage**.
 
-1. Select **Create** when you are done, and save your PAT in a safe location.
+1. Select **Create** when you're done, and save your PAT in a safe location.
 
 ### Set up a self-hosted agent
 
@@ -148,7 +150,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
     Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("<FILE_PATH>", "$PWD")
     ```
 
-1. Run the following command to configure your agent, and follow the prompts.
+1. Run the following command to start configuring your agent.
 
     ```powershell
     .\config.cmd
@@ -158,15 +160,15 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 1. Press **Enter** when prompted for the authentication type to choose **PAT** authentication.
 
-1. Paste the personal access token you created earlier and then press enter.
+1. Paste your personal access token that you created earlier and then press enter.
 
-1. Enter the name of your agent pool when prompted, and then enter your agent name.
+1. Enter the name of your agent pool, and then enter your agent name.
 
-1. Leave the default value for the work folder, and then enter *Y* if you want to run your agent as a service.
+1. Leave the default value for *work folder*, and then enter *Y* if you want to run your agent as a service.
 
     :::image type="content" source="../media/configure-agent.png" alt-text="A screenshot showing how to set up an agent on an Azure VM.":::
 
-1. Let's install Docker now on our VM. Run the following command to download Docker.
+1. Now that the agent is ready to start listening for jobs, let's install Docker on our VM. Run the following command to download Docker.
 
     ```powershell
     Invoke-WebRequest -URI https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe -OutFile <DOWNLOAD_PATH>
@@ -194,7 +196,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 1. Select **Identity** from the left navigation panel, and then enable the **System assigned** identity.
 
-1. Select **Save** when you are done and then confirm.
+1. Select **Save** when you're done and then confirm your choice.
 
     :::image type="content" source="../media/system-assigned-id.png" alt-text="A screenshot showing how to enable system-assigned identity.":::
 
@@ -212,7 +214,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 ### [Managed Service Identity](#tab/msi)
 
-1. From your project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
+1. From your Azure DevOps project, select the gear icon ![gear icon](../../../media/icons/gear-icon.png) to navigate to your **Project settings**.
 
 1. Select **Service connections** from the left pane.
 
@@ -220,7 +222,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 1. Select **Azure Container Registry**, and then select *Managed Service Identity* as your **Authentication Type**.
 
-1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry). Paste your VM's system assigned Object ID you created in the previous step in the **Tenant ID** text field.
+1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry). Paste your VM's system assigned Object ID that you created in the previous step in the **Tenant ID** text field.
 
 1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
 
@@ -252,7 +254,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
 
 ## Build and publish to Azure Container Registry
 
-1. From your project, select **Pipelines** and then select **Create Pipeline**.
+1. From your Azure DevOps project, select **Pipelines** and then select **Create Pipeline**.
 
 1. Select the service hosting your source code (Azure Repos, GitHub etc.).
 
@@ -294,7 +296,7 @@ To use managed service identity with Azure Pipelines to publish Docker images to
               $(tag)
     ```
 
-1. Once the pipeline run is complete, you can verify your image in Azure. Navigate to your container registry in Azure portal, and then select **Repositories**.
+1. Once the pipeline run is complete, you can verify your image in Azure. Navigate to your Azure Container Registry in Azure portal, and then select **Repositories**.
 
     :::image type="content" source="../media/acr-image.png" alt-text="A screenshot showing the image in Azure Portal.":::
 
