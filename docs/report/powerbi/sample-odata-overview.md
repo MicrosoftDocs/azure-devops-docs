@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/12/2021
+ms.date: 12/12/2022
 ---
 
 # Overview of sample reports using OData queries
@@ -51,10 +51,9 @@ In this article, we provide samples for the most popular reports:
 
 All sample report articles provide the following sections and information: 
 
-* **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI
-* **Power BI transforms** - Steps to transform the data into a reportable format
-* **Create the report** - Steps to create a simple report from the data
-* **Additional queries** - Other sample queries for similar, but different reports.
+* **Sample queries** - The Power BI Query and raw OData query used to pull data into Power BI along with other sample queries.
+* **Transform data in Power BI** - Steps to transform the data into a reportable format
+* **Create the report** - Steps to create a simple report from the data.
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -77,7 +76,7 @@ Get started quickly with the following steps that embed the OData query in the P
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of Power BI, Advanced Editor.](media/odatapowerbi-advancededitor.png)
 
-4. Replace the contents with one of the sample queries provided in the linked articles listed at the top of this article.  
+4. Replace the contents with one of the sample queries provided in the linked articles listed earlier in this article.  
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
@@ -94,7 +93,7 @@ Get started quickly with the following steps that embed the OData query in the P
     * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
-    > !Screenshot of Power BI,Advanced Editor, Replace strings in query.](media/odatapowerbi-advancededitor-replaced.png)
+    > [!Screenshot of Power BI,Advanced Editor, Replace strings in query.](media/odatapowerbi-advancededitor-replaced.png)
 
 6. To execute the query, select **Done**. 
 
@@ -102,9 +101,9 @@ Get started quickly with the following steps that embed the OData query in the P
 
 ## Raw OData query
 
-The OData Query is provided in case you want to modify and test the OData query separately, before using it in Power BI. This method provides more flexibility, but involves other steps before using the OData Query in Power BI as described in [Connect using Power BI and OData queries](odataquery-connect.md)
+Most sample reports provide an OData query in case you want to modify and test the OData query separately before using it in Power BI. This method provides more flexibility, but involves other steps before using the OData Query in Power BI as described in [Connect using Power BI and OData queries](odataquery-connect.md)
 
-For more information on how to write OData queries against Analytics, check out the [OData Query Quick Reference](../extend-analytics/quick-ref.md) 
+For more information on how to write OData queries against Analytics, see [OData Query Quick Reference](../extend-analytics/quick-ref.md) 
 
 ## Related articles
 
