@@ -427,10 +427,10 @@
       href: targets/azure-stack.md
     - name: Azure Container Registry
       items:
-        - name: Build and push with Docker template
+        - name: Build and push to Azure Container Registry with a Docker template
           href: ecosystems/containers/acr-template.md
-        - name: Build and push to Azure Container Registry - managed service identity
-          href: ecosystems/publish-to-acr.md
+        - name: Build and push to Azure Container Registry - Managed Service Identity
+          href: ecosystems/containers/publish-to-acr.md
         - name: Deploy ASP.NET Core app
           href: apps/cd/azure/aspnet-core-to-acr.md
     - name: Azure Kubernetes Service
