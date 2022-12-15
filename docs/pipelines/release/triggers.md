@@ -40,7 +40,7 @@ Continuous deployment triggers allow you to create a release every time a new bu
 
 ## Scheduled release triggers
 
-Scheduled release trigger allow you to create new releases at specific times.
+Scheduled release triggers allow you to create new releases at specific times.
 
 Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Disabled button and specify your release schedule. You can set up multiple schedules to trigger a release.
 
@@ -71,7 +71,7 @@ You can also use **Build tags** to organize your workflow and tag specific runs.
 Stage triggers allow you set up specific conditions to trigger deployment to a specific stage.
 
 - **Select trigger**:
-  Set the trigger that will start the deployment to your stage automatically. Use the **Stages** dropdown to trigger a release after a successful deployment to the selected stage. Select **Manual only** to only allow only manual trigger.
+  Set the trigger that will start the deployment to your stage automatically. Use the **Stages** dropdown to trigger a release after a successful deployment to the selected stage. Select **Manual only** to only allow manual trigger.
 
     :::image type="content" source="media/trigger-02a.png" alt-text="A screenshot showing pre-deployment triggers.":::
 
