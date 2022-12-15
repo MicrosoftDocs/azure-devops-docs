@@ -7,7 +7,7 @@ ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: chcomley
 author: chcomley
 ms.date: 09/16/2020
-monikerRange: '> azure-devops-2020'
+monikerRange: '>= azure-devops-2022'
 ---
 
 # Use a decorator to inject steps into a pipeline
