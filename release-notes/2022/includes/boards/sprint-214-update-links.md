@@ -5,4 +5,6 @@ ms.date: TBD
 ms.topic: include
 ---
 
-- [Copy comment links](#copy-comment-links)
+- [Card resize logic in Delivery Plans](#card-resize-logic-in-delivery-plans)
+- [Batch update improvements](#batch-update-improvements)
+- [Batch delete API (GA)](#batch-delete-api-ga)
