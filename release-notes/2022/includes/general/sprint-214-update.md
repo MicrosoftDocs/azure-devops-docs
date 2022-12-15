@@ -5,13 +5,9 @@ ms.date: TBD
 ms.topic: include
 ---
 
-### Create personal access tokens to deploy to the Marketplace 
+### Extensions should display their Scopes 
 
-We have resolved a [known issue](https://devblogs.microsoft.com/devops/issue-with-extension-publishing/) regarding publishing extensions to the Visual Studio Marketplace. If you’ve run into the error message: *Your ability to create global personal access tokens (PATs) is restricted by your organization.*, this is likely because your administrator has enabled [a policy to restrict the creation of global personal access tokens (PATs)](https://learn.microsoft.com/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators?view=azure-devops#restrict-creation-of-global-pats).
+When admins install extensions to their Azure DevOps organization, they can review the permissions the extension needs as part of the installation. However, once they are installed, the extension permissions are not visible in the extension settings. This has posed a problem to administrators when they need to perform a periodic review of installed extensions. In this sprint, we have added the extension permissions to extension settings to help administrators review and take an informed decision on whether to keep them or not.
 
 > [!div class="mx-imgBorder"]
-> ![Create personal access tokens to deploy to Marketplace](../../media/211-general-01.png)
-
-Previously, a global PAT was necessary to publish an extension to the Visual Studio Marketplace using the Cross-platform CLI for Azure DevOps (tfx-cli). We have now redesigned the extensions publishing process to accept any PATs with a Marketplace **Publish** scope.
-
-Moving forward, any personal access token with a Marketplace “Publish” scope can be used to publish Azure DevOps and Visual Studio extensions in the Visual Studio Marketplace. This is the case even if the administrator has disabled the creation of global personal access tokens (PATs) policy.
+> ![Create personal access tokens to deploy to Marketplace](../../media/214-general-01.png)

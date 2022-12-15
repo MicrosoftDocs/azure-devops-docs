@@ -2,7 +2,7 @@
 title: Improvements to strengthen pipelines security.
 author: ckanyika
 ms.author: ckanyika
-ms.date: 12/8/2022
+ms.date: TBD
 description: With this update, we are including improvements to strengthen pipelines security in Azure DevOps.
 ---
 # Improvements to strengthen pipelines security
@@ -11,22 +11,28 @@ With this update, we are including improvements to strengthen security in Azure 
 
 Check out the release notes for details.
 
+### General
+
+[!INCLUDE [sprint-214-update-links](includes/general/sprint-214-update-links.md)]
 
 ### Azure Boards
 
-[!INCLUDE [sprint-213-update-links](includes/boards/sprint-213-update-links.md)]
+[!INCLUDE [sprint-214-update-links](includes/boards/sprint-214-update-links.md)]
 
 ### Azure Pipelines
 
-[!INCLUDE [sprint-213-update-links](includes/pipelines/sprint-213-update-links.md)]
+[!INCLUDE [sprint-214-update-links](includes/pipelines/sprint-214-update-links.md)]
 
+## General
+
+[!INCLUDE [sprint-214-update](includes/general/sprint-214-update.md)]
 ## Azure Boards
 
-[!INCLUDE [sprint-213-update](includes/boards/sprint-213-update.md)]
+[!INCLUDE [sprint-214-update](includes/boards/sprint-214-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-213-update](includes/pipelines/sprint-213-update.md)]
+[!INCLUDE [sprint-214-update](includes/pipelines/sprint-214-update.md)]
 
 ## Next steps
 

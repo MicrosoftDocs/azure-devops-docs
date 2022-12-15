@@ -5,4 +5,4 @@ ms.date: TBD
 ms.topic: include
 ---
 
-- [Create personal access tokens to deploy to the Marketplace](#create-personal-access-tokens-to-deploy-to-the-marketplace)
+- [Extensions should display their Scopes](#extensions-should-display-their-scopes)
