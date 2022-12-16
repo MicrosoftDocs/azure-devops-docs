@@ -64,7 +64,7 @@ A limit is placed on 500 dashboards per project.
 
 ## Wiki
 
-In addition to the usual repository limits (see the [Repository Size Limits](../repos/git/limits#repository-size)), Wikis defined for a project are limited to 25 MB per single file. 
+In addition to the usual repository limits (see the [Repository Size Limits](../repos/git/limits.md#repository-size)), Wikis defined for a project are limited to 25 MB per single file. 
 
 ## Data import
 - Limited to 300 projects per organization
