@@ -60,9 +60,10 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 
 ## Azure Pipelines sample widgets and reports 
 
-- **Built-in reports** 
+- **Built-in reports**   
       - [Test failures report](../../pipelines/reports/pipelinereport.md)  
-- **Sample reports**
+
+- **Sample reports**  
       - [Outcome summary](../powerbi/sample-pipelines-outcome-summary.md)  
       - [Outcome summary for all pipelines](../powerbi/sample-pipelines-allpipelines.md)  
       - [Pass rate trend](../powerbi/sample-pipelines-pass-rate-trend.md) 
@@ -82,13 +83,13 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 
 ## Azure Test Plans sample widgets and reports 
 
-- **Widgets and built-in reports** 
+- **Widgets and built-in reports**   
       - [Chart for Test Plans](../../test/track-test-status.md)
       - [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
       - [Test Progress](../../test/progress-report.md)
       - [Test Results Trend](../dashboards/configure-test-results-trend.md) 
 
-- **Sample reports**
+- **Sample reports**  
       - [Configuration by outcome matrix](../powerbi/sample-test-plans-configuration-by-outcome.md)   
       - [Execution Trend](../powerbi/sample-test-plans-execution-trend.md)    
       - [Progress status](../powerbi/sample-test-plans-progress-status.md)     
@@ -163,7 +164,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 ## Tasks
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       - [Aggregate data, apply extension](aggregated-data-analytics.md#apply-extension)  
       - [Aggregate data, OData aggregation extension](aggregated-data-analytics.md#aggregation-extension)  
       - [Aggregate data, simple count](wit-analytics.md#return-count-items)  
@@ -182,9 +183,10 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Generate multiple aggregations](aggregated-data-analytics.md#multiple-aggregate)  
       - [Generate calculated properties](aggregated-data-analytics.md#calculated-properties)  
       - [Generate a Cumulative Flow Diagram](aggregated-data-analytics.md#cfd)  
-      - [Group results using `groupby`](aggregated-data-analytics.md#groupby)  
+      - [Group results using `groupby`](aggregated-data-analytics.md#groupby)   
+      <br/>
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       - [Query an entity set](../analytics/analytics-query-parts.md#query-entity-set)  
       - [Query based on Iteration Path](analytics-recipes.md#iteration)  
       - [Query based on Area Path](analytics-recipes.md#area)  
@@ -199,8 +201,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Query metadata](../analytics/analytics-query-parts.md#query-metadata)  
       - [Query trend data](querying-for-trend-data.md#trend-data)  
       - [Query work item history](analytics-recipes.md#history)  
-   :::column-end:::
-   :::column span="":::
+      <br/>
       - [Organization-scoped queries](account-scoped-queries.md#org-scope)  
       - [Project-scoped queries](account-scoped-queries.md#project-scope)   
       - [Return a count of work items](wit-analytics.md#return-count-items)  
@@ -214,20 +215,29 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 :::row-end:::
 
 
-## Reference
+## Metadata reference
 
-- [Calendar date, Project, and User metadata reference](../analytics/entity-reference-general.md) 
-- [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md) 
-- [Metadata reference for Azure Pipelines Analytics](../analytics/entity-reference-pipelines.md) 
-- [Metadata reference for Test Plans](../analytics/entity-reference-test-plans.md) 
+::: moniker range=">= azure-devops-2020"
+
+- [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
+- [Azure Boards](../analytics/entity-reference-boards.md) 
+- [Azure Pipelines](../analytics/entity-reference-pipelines.md) 
+- [Test Plans](../analytics/entity-reference-test-plans.md) 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+- [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
+- [Azure Boards](../analytics/entity-reference-boards.md) 
+
+::: moniker-end
+
+## Data model reference and troubleshooting
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
 - [Supported OData functions and clauses](odata-supported-features.md)  
 - [OData API versioning](odata-api-version.md) 
 - [Performance & latency](../powerbi/performance-latency.md)
-
-
-## Troubleshooting
-
 - [OData Analytics query guidelines for Azure DevOps](odata-query-guidelines.md) 
 - [Resolve errors associated with an Analytics view](../powerbi/troubleshooting-views.md)
 
