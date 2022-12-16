@@ -3,6 +3,7 @@ title: New work item web form
 titleSuffix: Azure DevOps
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.author: kaelli
 author: KathrynEE
@@ -65,7 +66,7 @@ Use the new Discussion section to add and review comments made about the work be
 
 Click the ![Discussions icon](../../boards/media/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../../boards/media/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
-Within the discussion section, you can use the [<strong>@mention</strong> control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Within the discussion section, you can use the [<strong>@mention</strong> control](../../organizations/notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../organizations/notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 <img src="../../boards/backlogs/media/add-work-items-discussion.png" alt="Discussion section" />  
 

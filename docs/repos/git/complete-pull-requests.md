@@ -15,7 +15,7 @@ ms.subservice: azure-devops-repos-git
 # Complete, abandon, or revert pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and [complete the PR](#complete-a-pull-request). Or if you decide not to proceed with the changes in the PR, you can [abandon the PR](#abandon-the-pr).
 
@@ -80,7 +80,13 @@ On the PR Overview page, branch policy requirements have an :::image type="icon"
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
+You can open a PR in Visual Studio and then review branch policies as described in the Browser tab.
+
+To open a PR from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To access PRs from Visual Studio Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -165,7 +171,7 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
    :::image type="content" source="media/complete-pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete P R dialog.":::
 
    - **Merge (no fast forward)**: Merge with a non-linear history that preserves all commits.
-   - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR.
+   - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
    - **Rebase and fast-forward**: Rebase the source commits onto the target and fast-forward.
    - **Semi-linear merge**: Rebase source commits onto the target and create a two-parent merge.
    
@@ -200,7 +206,7 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
 1. Select any of the following options:
    - **Complete linked work items after merging** to complete any linked work items.
    - **Delete `<branch name>` after merging** to delete the source branch from the PR.
-   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR.
+   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
      
      
@@ -236,7 +242,7 @@ When you complete the merge, any [linked work items](pull-requests.md#link-work-
 
    - **Complete linked work items after merging** to complete any linked work items.
    - **Delete `<branch name>` after merging** to delete the source branch from the PR.
-   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR.
+   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
 
 4. Select **Complete merge**.
@@ -249,7 +255,11 @@ Linked work items are also updated showing the PR completion.
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
+To complete a PR, open the PR in the browser, and on the **Overview** page, select **Complete** or set other options.
+
+To open a PR from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+
+To access PRs from Visual Studio 2019 Team Explorer:
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -258,8 +268,6 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
 
 1. To open a PR in the web portal, right-click the PR and select **Open in browser**.
-
-To complete a PR, open the PR in the browser, and on the **Overview** page, select **Complete** or set other options.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -406,7 +414,19 @@ A PR set to autocomplete displays an **Auto-complete** badge on the **Pull reque
 
 # [Visual Studio](#tab/visual-studio)
 
-In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Set auto-complete**.
+Open a pull request in the web portal. On the **Overview** page, select **Set auto-complete**.
+
+To open a PR from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and select a pull request to open it.
+
+To access PRs from Visual Studio 2019 Team Explorer:
+
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+
+1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
+
+1. To open a PR in the web portal and view the policies in effect, right-click the PR and select **Open in browser**.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -435,12 +455,14 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
 
 To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
-<a id="abandon-pr"></a>
 
+<a id="abandon-pr"></a>
 
 # [Visual Studio](#tab/visual-studio)
 
-In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Abandon**.
+Open a pull request in the web portal. On the Overview page, select **Abandon**.
+
+To open the PR in the web portal, use the procedure from [Complete a pull request](#complete-a-pull-request).
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -455,7 +477,6 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 ***
 
 <a name="revert-a-completed-pr"></a>
-
 
 ## Revert a completed pull request
 

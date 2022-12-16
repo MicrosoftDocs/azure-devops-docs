@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/11/2022
+ms.date: 11/2/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="8"><a href="2022/sprint-212-update.md" data-raw-source="[2 November 2022](2022/sprint-212-update.md)"> 2 November 2022</a></td>
+    <td>Edit work item link types</td><td>Boards</td><td>Future</td></tr>
+    <td>Create temporary query REST endpoint</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch delete API (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>@CurrentIteration macro in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Template Expressions in Repository Resource Definition</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Template Expressions in Container Resource Definition</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Audit Events for Changes to Approvals</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Task library exposes Agent hosting model</td><td>Pipelines</td><td>Future</td></tr>
+</tr>
     <td rowspan="5"><a href="2022/sprint-211-update.md" data-raw-source="[11 October 2022](2022/sprint-211-update.md)"> 11 October 2022</a></td>
     <td>Create personal access tokens to deploy to the Marketplace</td><td>Platform</td><td>Future</td></tr>
     <td>Option to maintain hierarchy with filters</td><td>Boards</td><td>Future</td></tr>

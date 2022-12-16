@@ -16,10 +16,12 @@
     href: import-git-repository.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
+  - name: Use Visual Studio with Git
+    href: ../tfvc/use-visual-studio-git.md
 - name: Connect & authenticate
   items:
   - name: Connect to a project or repo
-    href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json
   - name: Authentication
     href: auth-overview.md
   - name: Authenticate with SSH
@@ -123,6 +125,8 @@
     href: commit-history.md
   - name: Commit details
     href: commit-details.md
+  - name: Git index.lock file
+    href: git-index-lock.md
 - name: Pull requests
   items:
   - name: About pull requests
@@ -156,15 +160,15 @@
   - name: Configure repos to link to work items
     href: configure-repos-work-tracking.md
   - name: Auto complete work items with pull requests
-    href: ../../boards/work-items/auto-complete-work-items-pull-requests.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../boards/work-items/auto-complete-work-items-pull-requests.md?toc=/azure/devops/repos/toc.json
   - name: Drive Git development from a work item
-    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json
   - name: Work item completion on commit
     href: resolution-mentions.md
   - name: Set up continuous integration
-    href: ../../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json
   - name: Define a CI build for your repo
-    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json
   - name: Create a pull request status server
     href: create-pr-status-server.md
   - name: Use Azure Functions to create custom branch policies
@@ -188,7 +192,7 @@
 - name: Reference
   items:
   - name: Default Git permissions (Security)
-    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json
   - name: Download permissions report
     href: ../../organizations/security/download-permissions-report.md
   - name: Frequently asked questions

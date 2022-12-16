@@ -1,6 +1,7 @@
 ---
 title: Markdown syntax for files, widgets, and wikis
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps  
+ms.custom: wiki, devdivchpfy22
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
 ms.subservice: azure-devops-wiki
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
@@ -9,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/03/2022
+ms.date: 11/02/2022
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -22,7 +23,7 @@ Here you can find some basic Markdown syntax guidance and specific guidance for 
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
-For more syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
+For more syntax that's supported for wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
 
 You can provide guidance in the following areas using Markdown:
 
@@ -40,7 +41,7 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker range="tfs-2018"
 
-- [Project wiki](add-edit-wiki.md)
+- [Project Wiki](add-edit-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
@@ -53,7 +54,7 @@ You can provide guidance in the following areas using Markdown:
 ::: moniker-end
 
 > [!IMPORTANT]  
-> Not all Markdown syntax is supported across all features. Each section in this article identifies the features the syntax is supported with the **Supported in** line.
+> Not all Markdown syntax is supported across all features. Each section in this article identifies the features and the syntax supported with the **Supported in** line.
 
 ## Headers
 
@@ -61,7 +62,7 @@ You can provide guidance in the following areas using Markdown:
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example `####`. Up to six levels of headings are supported.
+Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. Up to six levels of headings are supported.
 
 **Example:**
 ```markdown
@@ -74,17 +75,17 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**
 
-<img src="media/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" />        
+:::image type="content" source="media/markdown-guidance/mrkdown-headers.png" alt-text="Screenshot of Web portal, headers 1 through 5.":::     
 
 ## Paragraphs and line breaks
 
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
-Make your text easier to read by breaking it into paragraphs or with line breaks.  
+Make your text easier to read by breaking it into paragraphs or line breaks.  
 
 ### Pull requests
 
-In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
+In pull request comments, select **Enter** to insert a line break and begin text on a new line.
 
 **Example - pull request comment:**
 
@@ -173,7 +174,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 - To apply bold: surround the text with double asterisks `**`.
 - To apply strikethrough: surround the text with double tilde characters `~~`.
 
-Combine these elements to apply emphasis to text.
+Combine these elements to apply emphasis to the text.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -288,16 +289,16 @@ Console.WriteLine("Hello, World!");
 
 #### Supported in: Markdown widget | Pull Requests | README files | Wikis 
 
-Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that have
-a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
+Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data with a
+clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
 
-- Place each table row on its own line
-- Separate table cells using the pipe character `|`
-- The first two lines of a table set the column headers and the alignment of elements in the table
-- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
-- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
+- Place each table row on its own line.
+- Separate table cells using the pipe character `|`.
+- The first two lines of a table set the column headers and the alignment of elements in the table.
+- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right).
+- To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere).  
 - Make sure to end each row with a CR or LF.
-- A blank space is required before and after work item or pull request (PR) mentions inside a table cell.
+- A blank space is required before and after work item or pull request (PR) mentioned inside a table cell.
 
 **Example:**
 
@@ -321,9 +322,9 @@ a clear name to description mapping. You can format tables in pull requests, wik
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
 
-Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
+Organize related items with lists. You can add ordered lists with numbers or unordered lists with just bullets.
 
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph or enter two line breaks consecutively to begin a new paragraph.
 
 ### Ordered or numbered lists
 
@@ -393,7 +394,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
-In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
+In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID and then choosing the work item from the list.
 
 Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). This action can be useful if you want to use *#* for color hex codes.
 
@@ -461,7 +462,7 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 
 - Punctuation marks and leading white spaces within a file name are ignored
 - Upper case letters are  converted to lower
-- Spaces between letters are converted to dashes (-).
+- Spaces between letters are converted to dashes (-)
 
 **Example:**
 
@@ -501,7 +502,7 @@ In wiki, you can also reference heading in another page:
 
 #### Supported in: Markdown widget | Pull Requests | README files | Wikis 
 
-To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects in your pull requests:
+To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects of your pull requests:
 
 - Comments
 - Markdown files
@@ -536,7 +537,7 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 #### Supported in: Pull Requests | Wikis
 
-Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
+Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to the selected text.
 
 You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
@@ -646,16 +647,16 @@ To escape emojis, enclose them using the \` character.
 
 #### Supported in: Pull Requests | Wikis
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in your wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
 
 <img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" />        
 
-If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it renders directly into your comment or wiki page.
+If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-Attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and select links to download attached files.
+The attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and select links to download the attached files.
 
-Attachments support the following file formats.
+Attachments support the following file formats:
 
 > [!div class="mx-tdCol2BreakAll"]
 > |          Type          | File formats |
@@ -686,7 +687,7 @@ Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html
 - Fractions and binomials
 - Other KaTeX supported elements
 
-To include mathematical notation, surround the mathematical notation with a `$` sign, for inline, and `$$` for block,  as shown in the following examples:
+To include mathematical notation surround the mathematical notation with a `$` sign for inline and `$$` for block,  as shown in the following examples:
 
 ::: moniker range="tfs-2018"
 

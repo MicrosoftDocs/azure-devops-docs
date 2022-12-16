@@ -96,7 +96,7 @@ ms.date: 01/09/2020
    - [Queries](../queries/using-queries.md)
    - [Velocity](../../report/dashboards/team-velocity.md)
    - [Dashboards](../../report/dashboards/dashboards.md)
-   - [Alerts](../../notifications/howto-manage-team-notifications.md)  
+   - [Alerts](../../organizations/notifications/manage-team-group-global-organization-notifications.md)  
    
    :::column-end:::
    :::column span="3":::

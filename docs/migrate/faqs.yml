@@ -44,23 +44,23 @@ sections:
       - question: Is there a difference between a project that was created manually versus one that was created from data import?
 
         answer: |
-         The features available to each project are the same. The differences occur in how you modify the processes in your organization. When you create an organization, you'll use the [Inheritance process model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to customize the work tracking experience. As described previously, you can clone a Hosted XML process to an Inheritance process model after import. 
+         The features available to each project are the same. The differences occur in how you modify the processes in your organization. When you create an organization, you'll use the [Inheritance process model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json) to customize the work tracking experience. As described previously, you can clone a Hosted XML process to an Inheritance process model after import. 
 
       - question: If my organization is using Hosted XML, can I create new projects to use the Inheritance process model?
 
         answer: |
-          **Yes**. For data import organizations, Azure DevOps Services supports team projects that use Inheritance as well as Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json). 
+          **Yes**. For data import organizations, Azure DevOps Services supports team projects that use Inheritance as well as Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json). 
 
       - question:  Where can I find more information on Hosted XML and the Inheritance process model?
 
         answer: |
-          * [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
-          * [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+          * [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json)
+          * [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json)  
 
 additionalContent: | 
   ## Related articles
   - [Migration overview](migration-overview.md)
   - [Process template validation](migration-processtemplates.md)
   - [Troubleshooting process errors](migration-processtemplates.md#dealing-with-process-errors)
-  - [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
-  - [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+  - [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json)
+  - [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json)  

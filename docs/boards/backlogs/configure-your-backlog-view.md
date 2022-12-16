@@ -128,7 +128,7 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
       - **Planning**: Shows the **Planning** pane to support drag-and-drop of work items to **Iteration Paths**.  
    :::column-end:::
 :::row-end:::
-
+::: moniker-end
 
 ### Filter bar 
 

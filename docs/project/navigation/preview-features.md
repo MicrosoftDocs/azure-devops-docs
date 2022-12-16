@@ -180,10 +180,10 @@ With **Experimental themes** enabled, you can select among a number of additiona
 - [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)  
 - [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
 - [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/manage-team-group-global-organization-notifications.md) 
+- [Combine email recipients](../../organizations/notifications/manage-team-group-global-organization-notifications.md) 
 - [New experience in Code, Work Item, & Wiki search](/previous-versions/azure/devops/2017/oct-06-vsts#code)  
-- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+- [Out of the box notifications](../../organizations/notifications/manage-your-personal-notifications.md)   
+- [Team expansion for notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
 - [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
 
 ### Azure Artifacts 

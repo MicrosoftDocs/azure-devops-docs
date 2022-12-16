@@ -3,6 +3,7 @@ title: Change the audio device or annotation tool
 titleSuffix: Azure DevOps Services & TFS
 description: Change the default settings used for the annotation tool or audio device in Azure DevOps Services & Team Foundation Server 
 ms.subservice: azure-devops-feedback
+ms.custom: archive-candidate
 ms.topic: how-to
 ms.assetid: f0f5bd2d-5a9a-48e0-a5aa-6ac93453b2bc
 ms.author: kaelli

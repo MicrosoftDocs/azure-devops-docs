@@ -76,7 +76,7 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 By signing in as a member of an Azure DevOps project, you can clone private repos that are accessible to you, and public repos. Visual Studio supports search, clone, and sync operations on repos that are accessible through authentication.
 
 > [!NOTE]
-> You can clone a public **Azure Repos** Git repo without signing in as a member of its parent Azure DevOps project. To clone a public Git repo without signing in, see [Clone any Git repo](#clone-any-git-repo) and [Connect to a project in Azure DevOps](/azure/devops/organizations/public/clone-git-repo-public).
+> You can clone a public **Azure Repos** Git repo without signing in as a member of its parent Azure DevOps project. To clone a public Git repo without signing in, see [Clone any Git repo](#clone-any-git-repo) and then connect to a project in Azure DevOps.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
