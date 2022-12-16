@@ -58,7 +58,7 @@ And, you can easily add [custom fields, work item types, and portfolio backlogs]
 
 ## Built-in social tools and communication
 
-Work item forms provide built-in discussion that you can use to capture questions, notes, and communication as they occur. With this feature, you can maintain a history of what a team decides on any particular work item. You can quickly bring a team member or an entire team into the conversation [by using @mentions](../../notifications/at-mentions.md). 
+Work item forms provide built-in discussion that you can use to capture questions, notes, and communication as they occur. With this feature, you can maintain a history of what a team decides on any particular work item. You can quickly bring a team member or an entire team into the conversation [by using @mentions](../../organizations/notifications/at-mentions.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section in work item form](../backlogs/media/add-work-items-discussion.png)
@@ -77,7 +77,7 @@ As your project grows, the number of work items used to track it grows. To suppo
 - [Pivot views](../work-items/view-add-work-items.md ) that show you work items assigned to you, that you elected to follow, were recently modified, and more  
 - A powerful [query engine](../queries/about-managed-queries.md) that filters work item lists based on any field and used to update or triage work items
 - Fast, flexible [ad-hoc search](../queries/search-box-queries.md) with quick inline filters 
-- Alert management settings so you can [personalize the alerts](../../notifications/manage-your-personal-notifications.md) you receive when work items are assigned to you or are changed, or other filter criteria
+- Alert management settings so you can [personalize the alerts](../../organizations/notifications/manage-your-personal-notifications.md) you receive when work items are assigned to you or are changed, or other filter criteria
 
 
 ## Monitor status and progress with built-in dashboards and analytics  

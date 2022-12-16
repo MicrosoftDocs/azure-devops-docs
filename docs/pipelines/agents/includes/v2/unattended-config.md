@@ -53,6 +53,8 @@ name in the format `domain\userName` or `userName@domain.com`
 - `--overwriteAutoLogon` - used with `--runAsAutoLogon` to overwrite the existing auto logon on the machine
 - `--noRestart` - used with `--runAsAutoLogon` to stop the host from restarting after agent configuration completes
 
+[!INCLUDE [troubleshooting-autologon](./troubleshooting-autologon.md)]
+
 ### Deployment group only
 - `--deploymentGroup` - configure the agent as a deployment group agent
 - `--deploymentGroupName <name>` - used with `--deploymentGroup` to specify the deployment group for the agent to join

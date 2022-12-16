@@ -174,7 +174,7 @@ A: These are some of the possible reasons of the failure:
 
   * If you are using [runtime parameters](./runtime-parameters.md?tabs=script&view=azure-devops&preserve-view=true) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment.
 
-  * A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
+  * A user with stakeholder access level cannot create the environment as stakeholders do not have access to the repository.
   
 ## Related articles
 

@@ -3,7 +3,7 @@ title: Use categories to group work item types
 titleSuffix: Azure DevOps
 description: Generate flexible reports, and support increased integration across projects using categories 
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
 ms.author: kaelli
 author: KathrynEE

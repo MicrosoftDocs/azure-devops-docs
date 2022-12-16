@@ -3,6 +3,7 @@ title: Manage issue work items within your project plan
 titleSuffix: Azure Boards
 description: Learn how to use the issue work item to help you to track problems with the project plan and its activities and tasks. 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 4f90afe9-9748-42e9-9117-e98ee6543417
 ms.topic: conceptual
 ms.author: kaelli

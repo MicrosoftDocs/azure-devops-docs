@@ -33,7 +33,7 @@
     displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cient
   - name: Area & iteration paths
     displayName: classification nodes, iteration paths, reserved names, special characters
-    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json  
   - name: Workflow states & categories
     displayName: auto complete, pull requests
     href: ./work-items/workflow-and-state-categories.md
@@ -42,10 +42,10 @@
     href: ./queries/link-work-items-support-traceability.md
   - name: Link types
     displayName: work, hyperlink, external, github, remote
-    href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json  
   - name: Work tracking limits
     displayName: customize, migrate, import
-    href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json
   - name: Process guidance
     href: work-items/guidance/toc.yml
   - name: Permissions & access
@@ -55,13 +55,13 @@
       displayname: security, features, stakeholder access
     - name: Default permissions & access (Security)
       displayName: team administrator, administrator, access
-      href: ../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
     - name: Set work tracking & plan permissions
       displayName: work item tags, roles, object-level, project-level, permissions
-      href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
     - name: Grant or restrict permissions to select tasks
       displayName: restrict access, visibility, closed work
-      href: ../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json
 - name: Configure & customize
   items:
   - name: Configure & customize guidance
@@ -69,10 +69,10 @@
     displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
   - name: Define area paths & assign to a team
     displayName: levels, rollup, area paths
-    href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json
   - name: Define iteration (sprints) & configure team iterations
     displayName: forecast, team sprints
-    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md
     displayname: default, correct, Kanban, custom
@@ -87,18 +87,18 @@
     items:
     - name: About teams & Agile tools
       displayName: default team, default area path, iteration path, sprint backlogs, working days, product backlog, task boards, team groups
-      href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json
     - name: Add a team
-      href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json
     - name: Add a team administrator
       displayName: edit administrator, administrator, permissions
-      href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json
     - name: Add users to a project or team
       displayName: add users, users to project, users to team, team
-      href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/boards/toc.json
     - name: Configure team tools
       displayName: team dashboard, backlog, team name, notifications
-      href: ../organizations/settings/manage-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../organizations/settings/manage-teams.md?toc=/azure/devops/boards/toc.json
   - name: Set the Work Items experience (Visual Studio)
     href: work-items/set-work-item-experience-vs.md
   - name: Manage process templates
@@ -123,16 +123,16 @@
 - name: Track work, code, builds, and releases
   items:
   - name: End-to-end traceability
-    href: ../cross-service/end-to-end-traceability.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../cross-service/end-to-end-traceability.md?toc=/azure/devops/boards/toc.json
     displayname: pull requests, commits, comments, build
   - name: 'Use #ID to link to work items'
-    href: ../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json
     displayname: pull requests, commits, comments, build, wiki
   - name: Configure Git repositories to integrate with work tracking
-    href: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json
     displayname: auto link, transition, check for linked work items, auto complete, external links
   - name: Configure pipelines to support work tracking
-    href: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json
     displayname: auto link, create work item on build failure, report deployment status,
   - name: Drive Git development
     displayName: create branch, new branch, build
@@ -183,7 +183,7 @@
   - name: Project portal & process guidance (Deprecated)
     items:
     - name: Configure or add a project portal
-      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json
     - name: Configure or redirect process guidance
       href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
 - name: Integrations & extensions

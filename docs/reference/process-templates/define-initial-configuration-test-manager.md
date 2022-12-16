@@ -3,6 +3,7 @@ title: Define Test Manager initial configuration
 titleSuffix: Azure DevOps & TFS
 description: Use the plug-in for Microsoft Test Manager to define the project's initial test management setup 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: a72625e1-afa2-4707-9a20-bb7927a0aeaf
 ms.author: kaelli
 author: KathrynEE

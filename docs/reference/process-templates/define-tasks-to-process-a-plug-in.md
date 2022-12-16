@@ -3,6 +3,7 @@ title: Define the tasks to process a plug-in
 titleSuffix: Azure DevOps & TFS
 description: Define the artifacts to be uploaded or created for a process template plug-in for Team Foundation Server 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: af1b9f73-b930-49b6-b6f2-68d691b152aa
 ms.author: kaelli
 author: KathrynEE

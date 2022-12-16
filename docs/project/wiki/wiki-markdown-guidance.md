@@ -1,14 +1,15 @@
 ---
 title: Markdown syntax for wikis
 titleSuffix: Azure DevOps
-description: Learn how to share information and add tables & mathematical notation using Markdown in  within wikis.
+description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
+ms.custom: wiki, devdivchpfy22
 ms.subservice: azure-devops-wiki
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2022  
+ms.date: 11/18/2022  
 ---
 
 # Markdown syntax for wikis
@@ -90,7 +91,7 @@ sequenceDiagram
 :::
 ```
 
-:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text=".":::
+:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text="Screenshot of mermaid sequence.":::
 
 ### Gantt chart example
 
@@ -318,11 +319,11 @@ For more information about how to copy the query URL, which provides a GUID for 
 
 ## @mention users and groups
 
-To @mention users or groups in wiki, key in "@" in the wiki editor. This @mention opens autosuggest, from which you can mention users or groups to get notified by email.
+To @mention users or groups in wiki, key in "@" in the wiki editor. This @mention opens autosuggest from which you can mention users or groups to get notified by email.
 
 > ![Mention Autosuggest](media/mention-autosuggest.png)
 
-You can also select "@mention" from the edit toolbar.
+You can also select **@mention** from the edit toolbar.
 
 > ![Mention from edit toolbar](media/mention-toolbar.png)
 

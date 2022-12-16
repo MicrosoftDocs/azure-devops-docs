@@ -2,12 +2,12 @@
   href: organization-management.md
 - name: Plan your organizational structure
   displayName: projects, teams, repos, version control, scenarios, quantity, mapping, reporting, structure, data
-  href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json
 - name: Create your organization
   href: create-organization.md
 - name: Manage your organization
   displayName: new, project
-  href: ../../user-guide/manage-organization-collection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/manage-organization-collection.md?toc=/azure/devops/organizations/toc.json
 - name: Look up organization owner
   displayName: access, permissions, owner, project collection administrator, valid
   href: ../security/look-up-organization-owner.md
@@ -16,7 +16,7 @@
   href: ../settings/manage-banners.md
 - name: Manage preview features
   displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
-  href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json
 - name: Adjust organization settings
   items:
   - name: Add privacy policy URL
@@ -51,7 +51,7 @@
     href: manage-pats-with-policies-for-administrators.md
 - name: Services status
   displayName: service, health, portal, geography, region, core, other, event, log, availability, RSS, REST APIs
-  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json
 - name: FAQs
   items:
   - name: Create and configure an organization

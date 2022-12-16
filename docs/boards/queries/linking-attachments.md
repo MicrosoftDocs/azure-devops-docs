@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 07/26/2022
 ---
 
-
 # Query work items by link or attachment count  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -55,63 +54,6 @@ Query clauses that specify an integer field can use the operators listed below.
 You can filter for work items by the link type, link count, or attachment count.  
 
 ---
-:::row:::
-   :::column span="":::
-     **Filter for**
-   :::column-end:::
-   :::column span="":::
-      **Include these query clauses**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-     Items with attachments
-   :::column-end:::
-   :::column span="":::
-      `Attached File Count >= 1`
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-     Items with two or more hyperlinks
-   :::column-end:::
-   :::column span="":::
-      `Hyperlink Count >= 2`
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-     Items containing external links, links to objects other than work items
-   :::column-end:::
-   :::column span="":::
-      `External Link Count >= 1`
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-     Items that contain between three and seven related links
-   :::column-end:::
-   :::column span="":::
-      `Related Link Count >= 3`
-      `And`
-      `Related Link Count <= 7`
-   :::column-end:::
-:::row-end:::
----
-::: moniker range="azure-devops"  
-:::row:::
-   :::column span="":::
-     Items that contain remote links
-   :::column-end:::
-   :::column span="":::
-      `Remote Link Count > 0`
-   :::column-end:::
-:::row-end:::
----
 ::: moniker-end 
 
 
@@ -129,14 +71,11 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 :::image type="content" source="media/link-attachments/tree-query-te.png" alt-text="Screenshot of Query Editor, Tree Query, Team Explorer.":::
 
-* * *
-
-
+***
 > [!NOTE]
 > You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a Direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
 
 From there, you can add query clauses or change the filter options for linked work items. 
- 
 :::row:::
    :::column span="":::
      **Filter for**
@@ -183,8 +122,6 @@ From there, you can add query clauses or change the filter options for linked wo
    :::column-end:::
 :::row-end:::
 
-  
-
 <a id="dependents" />
 
 ## List items based on linked dependents  
@@ -228,9 +165,7 @@ The following image shows the query results that are returned.
 
 ![Direct links query results](media/example-work-item-queries/IC588291.png)  
 
-* * * 
-
-
+***
 <a id="orphan-stories" />
 
 ## List orphan user stories 
@@ -243,7 +178,6 @@ If you typically organize your user stories under features, you can quickly find
 Or, you can find unparented backlog items using a **Work items and direct links** query. For example, the following query lists active user stories for the Azure DevOps team that don't have a Parent link. 
 
 :::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal, unparented user stories.":::
-  
 <a id="table-field"/>
 <a id="fields" />
 
@@ -251,18 +185,6 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 
 The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but are tracked for all work item types. 
 
-:::row:::
-   :::column span="1":::
-   **Field name**
-   :::column-end:::
-   :::column span="3":::
-   **Description**
-   :::column-end:::
-   :::column span="1":::
-   **Work item type**
-   :::column-end:::
-:::row-end:::
----
 :::row:::
    :::column span="1":::
    **Attachment File Count**
@@ -292,7 +214,9 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="external-link-count"/>
+
    **External Link Count**
+
    :::column-end:::
    :::column span="3":::
    The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.  
@@ -305,7 +229,9 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="hyper-link-count"/>
+
    **Hyperlink Count**
+
    :::column-end:::
    :::column span="3":::
    The number of hyperlinks that are defined for the work item.
@@ -331,7 +257,9 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
+
    **Link Description**
+
    :::column-end:::
    :::column span="3":::
    Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.) 
@@ -346,7 +274,9 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="parent"/>
+
    **Parent**
+
    :::column-end:::
    :::column span="3":::
    When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the **ID** of the work item within an Integer field. 
@@ -363,7 +293,9 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="parent"/>
+
    **Parent**
+
    :::column-end:::
    :::column span="3":::
    When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the **ID** of the work item within an Integer field. 
@@ -379,7 +311,9 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="related-link-count"/>
+
    **Related Link Count**
+
    :::column-end:::
    :::column span="3":::
    The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
@@ -392,7 +326,9 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="remote-link-count"/>
+
    **Remote Link Count**
+
    :::column-end:::
    :::column span="3":::
    Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
@@ -435,4 +371,5 @@ All tabs that support creating links between work items are implemented by using
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
 ::: moniker-end 
+
 

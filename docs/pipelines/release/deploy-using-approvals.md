@@ -1,9 +1,9 @@
 ---
 title: Control deployments with gates and approvals
-ms.custom: seodec18
 description: Use deployment approvals, gates, and manual intervention to control your deployment
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.topic: tutorial
+ms.custom: seodec18, engagement-fy23
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 10/12/2022
@@ -85,11 +85,11 @@ Depending on the scenario, sometimes you may need to add manual intervention to 
 1. Select **Save** when you're done.
 
 > [!NOTE]
-> The [Manual Intervention](../tasks/utility/manual-intervention.md) task can only be used in an [agentless job](../process/phases.md#server-jobs).
+> The [Manual Intervention](/azure/devops/pipelines/tasks/reference/manual-intervention-v8) task can only be used in an [agentless job](../process/phases.md#server-jobs).
 
 ## Set up manual validation 
 
-You can use the [Manual Validation](../tasks/utility/manual-validation.md) task in your YAML pipeline to pause and wait for manual approval. Manual validation is especially useful in scenarios where you want to validate configuration settings or build packages before starting a computation-intensive job.
+You can use the [Manual Validation](/azure/devops/pipelines/tasks/reference/manual-validation-v0) task in your YAML pipeline to pause and wait for manual approval. Manual validation is especially useful in scenarios where you want to validate configuration settings or build packages before starting a computation-intensive job.
 
 The `waitForValidation` job pauses the run and triggers a UI prompt to review and validate the task. The email addresses listed in `notifyUsers` receive a notification to approve or deny the pipeline run. 
 

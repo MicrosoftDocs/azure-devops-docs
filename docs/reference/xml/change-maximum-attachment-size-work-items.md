@@ -3,7 +3,7 @@ title: Change the maximum attachment size for work items
 titleSuffix: Azure DevOps Server
 description: Use the web service to increase the size of files you attach to a work item
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: a37734d7-8db0-44e5-9e4a-31ddf9261e9e
 ms.author: kaelli
 author: KathrynEE

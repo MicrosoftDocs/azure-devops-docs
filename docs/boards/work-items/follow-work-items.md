@@ -20,10 +20,10 @@ ms.date: 07/13/2022
 
 To get notified of changes made to a specific work item or a pull request, you can choose to follow them. The Follow feature provides an improvised way of getting notified on a case-by-case basis. 
 
-If you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
+If you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
 
 > [!NOTE]  
-> Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../notifications/manage-your-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
+> Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../organizations/notifications/manage-your-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
 >
 > ![Work item notification templates](media/follow-work/work-item-notifications.png) 
 
@@ -88,7 +88,7 @@ By default, you're **Subscribed** to receive a notification when any change is m
 
 You'll only receive notifications when other members of your team modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md)
 
 To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
  
@@ -102,7 +102,7 @@ To track the progress of a single pull request, choose the  :::image type="icon"
 
 You'll only receive notifications when other members of your team modify the PR, such as adding to the discussion or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md).  
 
 To stop following changes, open the PR context menu and choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  Following icon. 
 
@@ -170,10 +170,10 @@ For example, the following query shows how to query across all projects for acti
 
 ## Related articles  
 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
 
 
 ### Q: Can I add someone else to follow a work item or PR?
 
-**A:** No, you can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).	
+**A:** No, you can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).	

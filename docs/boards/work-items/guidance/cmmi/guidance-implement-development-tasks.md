@@ -3,6 +3,7 @@ title: Implement development tasks to build software functionality
 titleSuffix: Azure Boards
 description:  Learn how to implement a development task to design and add new functionality to your software in Azure Boards.
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: e3345668-394d-419a-b813-8fa68b6b1bfc
 ms.topic: conceptual
 ms.author: kaelli
