@@ -1,6 +1,6 @@
 ---
-title: Using Invoke Azure Function / REST API Checks
-description: Use Invoke Azure Function / REST API Checks to determine when a deployment stage can run
+title: Using Invoke Azure Function / REST API checks
+description: Use Invoke Azure Function / REST API checks to determine when a deployment stage can run
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
@@ -8,7 +8,7 @@ ms.date: 07/13/2022
 monikerRange: ">= azure-devops-2020"
 ---
 
-# Invoke Azure Function / REST API Checks
+# Invoke Azure Function / REST API checks
 
 The Invoke Azure Function / REST API Checks allow you to write code to decide if a specific pipeline stage is allowed to access a protected resource or not. These checks can run in two modes:
 - **Asynchronous (Recommended)**: push mode, in which Azure DevOps awaits for the Azure Function / REST API implementation to call back into Azure DevOps with a stage access decision
@@ -18,13 +18,13 @@ In the rest of this guide, we'll refer to Azure Function / REST API Checks as si
 
 The recommended way to use checks is in asynchronous mode. This mode offers you the highest level of control over the check logic, makes it easy to reason about what state the system is in, and decouples Azure Pipelines from your checks implementation, providing the best scalability. All synchronous checks can be implemented using the asynchronous checks mode.
 
-## Asynchronous Checks
+## Asynchronous checks
 
 In asynchronous mode, Azure DevOps makes a call to the Azure Function / REST API check and awaits a callback with the resource access decision. There's no open HTTP connection between Azure DevOps and your check implementation during the waiting period. 
 
 The rest of this section talks about Azure Function checks, but unless otherwise noted, the guidance applies to Invoke REST API checks as well.
 
-### Recommended Implementation of Asynchronous Checks
+### Recommended implementation of asynchronous checks
 
 The recommended asynchronous mode has two communication steps:
 1. **Deliver the check payload**. Azure Pipelines makes an HTTP call to your Azure Function / REST API _only_ to deliver the check payload, and _not_ to receive a decision on the spot. Your function should just acknowledge receipt of the information and terminate the HTTP connection with Azure DevOps. Your check implementation should process the HTTP request within 3 seconds.
@@ -45,7 +45,7 @@ The steps in the diagram are:
    - 2.4 If it can't reach a final decision, reschedule a reevaluation of the conditions for a later point, then go to step 2.3
 1. Decision Communication. The Azure function calls back into Azure Pipelines with the access decision. Stage deployment can proceed
 
-### Recommended Configuration for Asynchronous Checks
+### Recommended configuration for asynchronous checks
 
 In the Azure Function / REST API check configuration panel, make sure you:
 - Selected _Callback_ for the _Completion event_
@@ -56,7 +56,7 @@ Setting the _Time between evaluations_ to a non-zero value means the check decis
 > [!NOTE]
 > In the near future, the _Time between evaluations_ will be removed, and a value of 0 will be used instead.
 
-### Pass Pipeline Run Information to Checks
+### Pass pipeline run information to checks
 
 When configuring the check, you can specify the pipeline run information you wish to send to your check. At a minimum, you should send:
 - `"PlanUrl": "$(system.CollectionUri)"` 
@@ -71,7 +71,7 @@ These key-value pairs are set, by default, in the Headers of the REST call made 
 
 You can use `AuthToken` to make calls into Azure DevOps, such as when your check will call back with a decision.  The `AuthToken` is restricted to the scope of the pipeline run from which the check call was made.
 
-### Send a Decision back to Azure DevOps
+### Send a decision back to Azure DevOps
 
 Your check must use the following REST API endpoint to communicate a decision back to Azure Pipelines:
 - `POST {PlanUri}/{ProjectId}/_apis/distributedtask/hubs/{HubName}/plans/{PlanId}/events?api-version=2.0-preview.1`
@@ -86,7 +86,7 @@ Your check must use the following REST API endpoint to communicate a decision ba
 }
 ```
  
-### Send Status Updates to Azure DevOps from Checks
+### Send status updates to Azure DevOps from checks
 
 You can provide status updates to Azure Pipelines users from within your checks using Azure Pipelines REST APIs. This functionality is useful, for example, if you wish to let users know the check is waiting on an external action, such as someone needs to approve a ServiceNow ticket.
 
@@ -97,7 +97,7 @@ The steps to send status updates are:
 
 ### Examples
 
-#### Basic Azure Function Check
+#### Basic Azure Function check
 
 In this [basic example](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionBasicHandler), the Azure Function checks that the invoking pipeline has run a static analysis task prior to granting access to a protected resource.
 
@@ -127,7 +127,7 @@ To use this Azure Function check, you need to ensure that you specify the follow
 }
 ```
 
-#### Advanced Azure Function Check
+#### Advanced Azure Function check
 
 In this [advanced example](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionAdvancedHandler), the Azure Function checks that the Azure Boards work item referenced in the commit message that triggered the pipeline run is in the correct state.
 
@@ -158,13 +158,13 @@ To use this Azure Function check, you need to ensure that you specify the follow
 }
 ```
 
-### Error Handling
+### Error handling
 
 Azure Pipelines attempts at most 10 times to deliver the check payload to your Azure Function / REST API check. A successful delivery is defined as an HTTP 20x code received within 3 seconds. When the limit is reached without a successful delivery, the check is considered failed, and the associated stage will fail, too. The retry interval is non-deterministic and non-configurable.
 
 If your check doesn't call back into Azure Pipelines within the configured timeout, the associated stage will be skipped. Stages depending on it will be skipped as well.
 
-## Synchronous Checks
+## Synchronous checks
 
 In synchronous mode, Azure DevOps makes a call to the Azure Function / REST API check to get an immediate decision whether access to a protected resource is permitted or not. 
 
@@ -179,7 +179,7 @@ The steps are:
   - 2.2. Your Azure Function evaluates the conditions necessary to permit access and returns a decision
   - 2.3. If the Azure Function response body doesn't satisfy the _Success criteria_ you defined and _Time between evaluations_ is non-zero, Azure Pipelines reschedules another check evaluation after _Time between evaluations_
 
-### Configure Synchronous Checks
+### Configure synchronous checks
 
 To use the synchronous mode for the Azure Function / REST API, in the check configuration panel, make sure you:
 - Selected _ApiResponse_ for the _Completion event_ under _Advanced_
@@ -194,7 +194,7 @@ The maximum number of evaluations is defined by the ratio between the _Timeout_ 
 > [!NOTE]
 > In the near future, Azure Pipelines will enforce there be at most 10 check retries.
 
-### Pass Pipeline Run Information to Checks
+### Pass pipeline run information to checks
 
 When configuring the check, you can specify the pipeline run information you wish to send to your Azure Function / REST API check. By default, Azure Pipeline adds the following information in the Headers of the HTTP call it makes.
 - `"PlanUrl": "$(system.CollectionUri)"` 
@@ -207,15 +207,15 @@ When configuring the check, you can specify the pipeline run information you wis
 
 We don't recommend making calls into Azure DevOps in synchronous mode, because it will most likely cause your check to take more than 3 seconds to reply, so the check will fail.
 
-### Error Handling
+### Error handling
 
 For each check instance, Azure Pipelines attempts at most X times to obtain a decision, regardless of the returned HTTP status code. If your check takes more than 3 seconds to return, Azure Pipelines considers the attempt as failed. When the limit is reached without a positive decision, the check is considered failed, and the associated stage will fail, too.
 
-## When to Use Asynchronous vs Synchronous Checks
+## When to use asynchronous vs synchronous checks
 
 Lets look at some example use cases and what are the recommended type of checks to use.
 
-### External Information Must Be Correct
+### External information must be correct
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only if the information in a ServiceNow ticket is correct. In this case, the flow would be as follows:
 - You add an _asynchronous_ Azure Function check that verifies the correctness of the ServiceNow ticket
 - When a pipeline that wants to use the Service Connection runs:
@@ -227,7 +227,7 @@ Say you have a Service Connection to a production resource, and you wish to ensu
     - The check runs again and this time it succeeds
     - The pipeline run continues
 
-### External Approval Must Be Granted
+### External approval must be granted
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only after an administrator approved a ServiceNow ticket. In this case, the flow would be as follows:
 - You add an _asynchronous_ Azure Function check that verifies the ServiceNow ticket has been approved
 - When a pipeline that wants to use the Service Connection runs:
@@ -236,7 +236,7 @@ Say you have a Service Connection to a production resource, and you wish to ensu
     - Once the ticket is approved, the check calls back into Azure Pipelines with a positive decision
     - The pipeline run continues
 
-### Development Process Was Followed
+### Development process was followed
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only if the code coverage is above 80%. In this case, the flow would be as follows:
 - You write your pipeline in such a way that stage failures cause the build to fail
 - You add an _asynchronous_ Azure Function check that verifies the code coverage for the associated pipeline run
@@ -248,7 +248,7 @@ Say you have a Service Connection to a production resource, and you wish to ensu
 - A new pipeline run is triggered, and this time, the check passes
     - The pipeline run continues
 
-### Performance Criteria Must Be Met
+### Performance criteria must be met
 Say you deploy new versions of your system in multiple steps, starting with a canary deployment. You wish to ensure your canary deployment's performance is adequate. In this case, the flow would be as follows:
 - You add an _asynchronous_ Azure Function check 
 - When a pipeline that wants to use the Service Connection runs:
@@ -258,7 +258,7 @@ Say you deploy new versions of your system in multiple steps, starting with a ca
     - Once you gain enough confidence in the canary deployment's performance, your Azure Function calls back into Azure Pipelines with a positive decision
     - The pipeline run continues
 
-### Deployment Reason Must Be Valid
+### Deployment reason must be valid
 Say you have a Service Connection to a production environment resource, and you wish to ensure that access to it happens only for manually queued builds. In this case, the flow would be as follows:
 - You add a _synchronous_ Azure Function check that verifies that `Build.Reason` for the pipeline run is `Manual`
 - You configure the Azure Function check to pass `Build.Reason` in its Headers
@@ -267,7 +267,7 @@ Say you have a Service Connection to a production environment resource, and you 
     - Azure Pipelines calls your check function
     - If the reason is other than `Manual`, the check fails, and the pipeline run fails
 
-## Multiple Checks
+## Multiple checks
 
 Before Azure Pipelines deploys a stage in a pipeline run, multiple Checks may need to pass. A protected resource may have one or more Checks associated to it. A stage may use multiple protected resources. Azure Pipelines collects all the Checks associated to each protected resource used in a stage and evaluates them concurrently.
 
@@ -277,7 +277,7 @@ When you use checks in the recommended way (asynchronous, with final states) mak
 
 Check out the [Multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) section for examples.
 
-## Learn More
+## Learn more
 - [Approvals and Checks](approvals.md)
 - [Invoke Azure Function Task](../tasks/deploy/azure-function-app.md)
 - [Invoke REST API Task](../tasks/utility/http-rest-api.md)
