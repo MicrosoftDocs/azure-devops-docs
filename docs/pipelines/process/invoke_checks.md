@@ -137,7 +137,7 @@ The Azure Function goes through the following steps:
 1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the state of the Azure Boards work item referenced in the commit message that triggered the pipeline run
 1. Checks if the work item is in the `Completed` state
 1. Sends a status update with the result of the check
-1. If the work item isn't in the `Completed` state, it reschedules another evaluation in 5 minutes
+1. If the work item isn't in the `Completed` state, it reschedules another evaluation in 1 minute
 1. Once the work item is in the correct state, it sends a positive decision to Azure Pipelines
 
 You can download this example from [GitHub]().
