@@ -64,12 +64,7 @@ A limit is placed on 500 dashboards per project.
 
 ## Wiki
 
-Wikis defined for a project are limited to 1 GB per git repository. 
-
-> [!TIP]    
-> To derive the size of a wiki/git repository, download the repo to your local computer, unzip the file, and then open the **Properties** for the corresponding folder.  
-
-
+In addition to the usual repository limits (see the [Repository Size Limits](https://learn.microsoft.com/azure/devops/repos/git/limits#repository-size)), Wikis defined for a project are limited to 25 MB per single file. 
 
 ## Data import
 - Limited to 300 projects per organization
