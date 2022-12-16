@@ -84,7 +84,7 @@ you can specify the conditions under which the task or job will run.
 * * *
 
 > [!NOTE]
-  When you specify your own `condition` property for a stage / job / step, you overwrite its default `condition: succeeded()`. This can lead to your stage / job / step running even if the build is cancelled. Make sure you take into account the state of the parent stage / job when writing your own conditions.
+> When you specify your own `condition` property for a stage / job / step, you overwrite its default `condition: succeeded()`. This can lead to your stage / job / step running even if the build is cancelled. Make sure you take into account the state of the parent stage / job when writing your own conditions.
 
 ## Enable a custom condition
 
