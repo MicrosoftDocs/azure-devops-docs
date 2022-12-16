@@ -154,7 +154,7 @@ To use this Azure Function check, you need to ensure that you specify the follow
 "TimelineId": "$(system.TimelineId)", 
 "TaskInstanceId": "$(system.TaskInstanceId)", 
 "AuthToken": "$(system.AccessToken)",
-"SourceVersionMessage": "$(build.SourceVersionMessage)"
+"BuildId": "$(build.BuildId)"
 }
 ```
 
