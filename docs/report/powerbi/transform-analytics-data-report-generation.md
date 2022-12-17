@@ -168,7 +168,6 @@ For easier reporting, replace nulls with zero by following these steps.
 <a id="create-percent-complete" />
 
 
- 
 ### Create a percentage complete computed column
 
 Prior to adding the percentage complete column, make sure that you replace all null values in the pivoted state columns.
@@ -202,12 +201,7 @@ When finished with your expansion, you may choose to rename one or more columns.
 1. Enter a new label for the column field and then press Enter. 
  
 
-## Close the query and apply your changes 
-
-1. Once you've completed all your data transformations, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
+[!INCLUDE [temp](includes/close-apply.md)]
 
 
 

@@ -7,25 +7,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2021
+ms.date: 12/13/2022
 ---
 
 # Project and organization-scoped queries
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-::: moniker range="azure-devops"
-Using Analytics for Azure DevOps, you can construct project or organization-scoped queries to return work items or other data of interest. You can run these queries directly in your browser or within Power BI. 
+Using Analytics for Azure DevOps, you can construct queries that are scoped to a project or an organization or collection.  You can run these queries directly in your browser or within Power BI. 
 
-Project-scope queries help answer questions about a single project whereas organization-scope queries allow you to answer questions that cross project boundaries. Organization-scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
-::: moniker-end
-
-::: moniker range"< azure-devops"
-Using Analytics for Azure DevOps, you can construct project or collection-scoped queries to return work items or other data of interest. You can run these queries directly in your browser or within Power BI. 
-
-Project-scope queries help answer questions about a single project whereas collection-scope queries allow you to answer questions that cross project boundaries. Collection-scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
-
-::: moniker-end
+Project-scope queries help answer questions about a single project whereas organization and collection scoped queries allow you to answer questions that cross project boundaries. Organization and collection scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of permissions.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
