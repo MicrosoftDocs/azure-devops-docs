@@ -3,7 +3,7 @@ title: Manual test Configuration by Outcome history report sample Power BI repor
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate a Configuration by Outcome matrix report.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -28,7 +28,7 @@ An example of the configuration by outcome matrix report is shown in the followi
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 

@@ -3,9 +3,9 @@ title: Pipeline pass rate trend of a test sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a pass rate trend Power BI report for a given test of a pipeline in the project.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.manager: mijacobs
-ms.author: kaghai
+ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
