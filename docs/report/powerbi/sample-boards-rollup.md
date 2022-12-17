@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/05/2022
+ms.date: 12/16/2022
 ---
 
 # Rollup child work item values to parent sample report
@@ -271,9 +271,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Rollup Tasks Remaining Work to User Stories 
+### Rollup Tasks Remaining Work and Completed Work to User Stories 
 
-The following queries show how to rollup **Remaining Work** assigned to child Tasks to User Stories in the hierarchy. These queries assume that Tasks are assigned as children of a User Story in the specified **Area Path**.
+The following query shows how to rollup **Remaining Work** and **Completed Work** assigned to child Tasks to User Stories in the hierarchy. These queries assume that Tasks are assigned as children of a User Story in the specified **Area Path**.
 
 #### [Power BI](#tab/powerbi/)
 
@@ -283,14 +283,14 @@ The following queries show how to rollup **Remaining Work** assigned to child Ta
 let
     Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
             &"$filter=WorkItemType eq 'User Story'"
-            &" and State ne 'Cut'"
+            &" and State ne 'Removed'"
             &" and startswith(Area/AreaPath,'{areapath}')"
             &" and Descendants/any()"    
         &"& $select=WorkItemId,Title,WorkItemType,State,AreaSK"
         &"& $expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),"        
             &"Descendants("
                 &"$apply=filter(WorkItemType eq 'Task')"
-                &"/aggregate(RemainingWork with sum as TotalRemainingWork)"
+                &"/aggregate(RemainingWork with sum as TotalRemainingWork, CompletedWork with sum as TotalCompletedWork)"
             &")", 
         null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
 in
@@ -304,14 +304,14 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
     $filter=WorkItemType eq 'User Story'
-        and State ne 'Cut'
+        and State ne 'Removed'
         and startswith(Area/AreaPath,'{areapath}')
         and Descendants/any()
     &$select=WorkItemId,Title,WorkItemType,State,AreaSK
     &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),
         Descendants(
         $apply=filter(WorkItemType eq 'Task')
-        /aggregate(RemainingWork with sum as TotalRemainingWork)
+        /aggregate(RemainingWork with sum as TotalRemainingWork, CompletedWork with sum as TotalCompletedWork)
         )
 ```
 
@@ -329,7 +329,7 @@ The following queries show how to rollup the count of Bugs assigned to Features.
 let
     Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
             &"$filter=WorkItemType eq 'Feature'"
-            &" and State ne 'Cut'"
+            &" and State ne 'Removed'"
             &" and startswith(Area/AreaPath,'{areapath}')"
             &" and Descendants/any()"    
         &"& $select=WorkItemId,Title,WorkItemType,State,AreaSK"
@@ -350,7 +350,7 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
     $filter=WorkItemType eq 'Feature'
-        and State ne 'Cut'
+        and State ne 'Removed'
         and startswith(Area/AreaPath,'{areapath}')
         and Descendants/any()
     &$select=WorkItemId,Title,WorkItemType,State,AreaSK
