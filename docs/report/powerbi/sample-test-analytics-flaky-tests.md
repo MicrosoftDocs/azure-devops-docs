@@ -3,9 +3,9 @@ title: Pipeline flaky test sample Power BI reports
 titleSuffix: Azure DevOps
 description: Learn how to generate a list of flaky tests Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.manager: mijacobs
-ms.author: kaghai
+ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample

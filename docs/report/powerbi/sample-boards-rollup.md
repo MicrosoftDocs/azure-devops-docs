@@ -3,7 +3,7 @@ title: Rollup child work item values to sample report
 titleSuffix: Azure DevOps
 description:  Learn how to generate a rollup of child work item values to the parent Power BI report.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -377,12 +377,10 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 - `IterationPath`
 
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
- 
 
 ## (Optional) Rename fields
 
 Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
-
 
 ## Replace null values in rollup fields
 
@@ -394,7 +392,7 @@ For easier reporting, replace all nulls with zero by following these steps.
 
 Repeat for all the rollup columns.
 
-
+[!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the Table report
 
