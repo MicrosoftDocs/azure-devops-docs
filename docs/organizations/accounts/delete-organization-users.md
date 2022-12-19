@@ -96,6 +96,9 @@ The **Users** page isn't available for on-premises server instances. However, yo
 
 ::: moniker range=" azure-devops"
 
+> [!NOTE]
+> The Azure DevOps CLI does not support adding and removing service principals.
+
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
 <a id="remove-user" /> 
