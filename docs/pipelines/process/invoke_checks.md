@@ -75,8 +75,8 @@ You can use `AuthToken` to make calls into Azure DevOps, such as when your check
 
 Your check must use the following REST API endpoint to communicate a decision back to Azure Pipelines:
 - [Create an event](), by making issuing a `POST {PlanUri}/{ProjectId}/_apis/distributedtask/hubs/{HubName}/plans/{PlanId}/events?api-version=2.0-preview.1` HTTP request
-- Headers: `Basic: {AuthToken}`
-- Body:
+- `Headers`: `Basic: {AuthToken}`
+- `Body`:
 ```json
 {
     "name": "TaskCompleted",
@@ -162,7 +162,10 @@ To use this Azure Function check, you need to specify the following `Headers` wh
 
 ### Error handling
 
-Azure Pipelines attempts at most 10 times to deliver the check payload to your Azure Function / REST API check. A successful delivery is defined as an HTTP 20x code received within 3 seconds. When the limit is reached without a successful delivery, the check is considered failed, and the associated stage will fail, too. The retry interval is non-deterministic and non-configurable.
+Currently, Azure Pipelines evaluates a single check instance at most 2,000 times.
+
+> [NOTE!]
+> In the near future, Azure Pipelines will attempt at most 10 times to deliver the check payload to your Azure Function / REST API check. A successful delivery is defined as an HTTP code lower than 400, received within 3 seconds. When the limit is reached without a successful delivery, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable.
 
 If your check doesn't call back into Azure Pipelines within the configured timeout, the associated stage will be skipped. Stages depending on it will be skipped as well.
 
@@ -211,7 +214,10 @@ We don't recommend making calls into Azure DevOps in synchronous mode, because i
 
 ### Error handling
 
-For each check instance, Azure Pipelines attempts at most X times to obtain a decision, regardless of the returned HTTP status code. If your check takes more than 3 seconds to return, Azure Pipelines considers the attempt as failed. When the limit is reached without a positive decision, the check is considered failed, and the associated stage will fail, too.
+Currently, Azure Pipelines evaluates a single check instance at most 2,000 times.
+
+> [NOTE!]
+> In the near future, Azure Pipelines will attempt at most 10 times to obtain a decision, regardless of the returned HTTP status code. If your check takes more than 3 seconds to return, Azure Pipelines will consider the attempt as failed. When the limit is reached without a positive decision, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable.
 
 ## When to use asynchronous vs synchronous checks
 
@@ -263,7 +269,7 @@ Say you deploy new versions of your system in multiple steps, starting with a ca
 ### Deployment reason must be valid
 Say you have a Service Connection to a production environment resource, and you wish to ensure that access to it happens only for manually queued builds. In this case, the flow would be as follows:
 - You add a _synchronous_ Azure Function check that verifies that `Build.Reason` for the pipeline run is `Manual`
-- You configure the Azure Function check to pass `Build.Reason` in its Headers
+- You configure the Azure Function check to pass `Build.Reason` in its `Headers`
 - You set the check's _Time between evaluations_ to _0_, so failure or pass is final and no reevaluation is necessary
 - When a pipeline that wants to use the Service Connection runs:
     - Azure Pipelines calls your check function
@@ -271,9 +277,9 @@ Say you have a Service Connection to a production environment resource, and you 
 
 ## Multiple checks
 
-Before Azure Pipelines deploys a stage in a pipeline run, multiple Checks may need to pass. A protected resource may have one or more Checks associated to it. A stage may use multiple protected resources. Azure Pipelines collects all the Checks associated to each protected resource used in a stage and evaluates them concurrently.
+Before Azure Pipelines deploys a stage in a pipeline run, multiple checks may need to pass. A protected resource may have one or more Checks associated to it. A stage may use multiple protected resources. Azure Pipelines collects all the checks associated to each protected resource used in a stage and evaluates them concurrently.
 
-A pipeline run is allowed to deploy to a stage only when _all_ Checks pass at the same time. A single final negative decision causes the pipeline to be denied access and the stage to fail.
+A pipeline run is allowed to deploy to a stage only when _all_ checks pass at the same time. A single final negative decision causes the pipeline to be denied access and the stage to fail.
 
 When you use checks in the recommended way (asynchronous, with final states) makes their access decisions final, and eases understanding the state of the system.
 
