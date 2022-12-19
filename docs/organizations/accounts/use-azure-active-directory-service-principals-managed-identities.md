@@ -61,7 +61,7 @@ Only administrators can add service principals to an organization. As service pr
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-To add the service principal to the organization, you will need to enter the application or managed identity display name. A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../billing/buy-basic-access-add-users?view=azure-devops#pay-for-a-user-once-across-multiple-organizations) is selected. They can be assigned to all access levels except for Visual Studio Subscriber, as they are unable to sign up for a Visual Studio subscription.
+To add the service principal to the organization, you will need to enter the application or managed identity display name. A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../billing/buy-basic-access-add-users?view=azure-devops#pay-for-a-user-once-across-multiple-organizations) is selected. They can be assigned to all access levels except for **Visual Studio Subscriber**, as service principals are unable to sign up for a Visual Studio subscription.
 
 #### Manage the service principal in Azure DevOps
 
@@ -82,6 +82,7 @@ Acquiring an access token for a managed identity can be done by following along 
   * Service principals will not receive any Notifications.
 * Service principals cannot create tokens, like [personal access tokens (PATs)](./use-personal-access-tokens-to-authenticate) or [SSH Keys](../../repos/git/use-ssh-keys-to-authenticate). Since they can generate their own Azure AD tokens, these can be used to call Azure DevOps REST APIs.
 * We will not be supporting [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth?view=azure-devops) for service principals.
+* The [Azure CLI](/azure/devops/cli/) does not support service principals.
 
 ## FAQs
 
