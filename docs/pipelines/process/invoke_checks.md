@@ -91,25 +91,27 @@ Your check must use the following REST API endpoint to communicate a decision ba
 You can provide status updates to Azure Pipelines users from within your checks using Azure Pipelines REST APIs. This functionality is useful, for example, if you wish to let users know the check is waiting on an external action, such as someone needs to approve a ServiceNow ticket.
 
 The steps to send status updates are:
-1. Create a task log, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/logs?api-version=4.1"` with body `{"path":"logs\\{taskInstanceId}"}`
-1. Append to task log, by making an authenticated HTTP POST request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/logs/{taskLogId}?api-version=4.1` with the body containing log messages stream data
-1. Update timeline record, by making an authenticated HTTP PATCH request to `{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/timelines/{timelineId}/records?api-version=4.1` with body `{"value":[{"id": taskInstanceId, "log": taskLogObject}],"count":1}`
+1. [Create a task log](https://review.learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/create)
+1. [Append to the task log](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/append-log-content)
+1. [Update timeline record](https://review.learn.microsoft.com/rest/api/azure/devops/distributedtask/records/update)
+
+All REST API calls need be authenticated.
 
 ### Examples
 
 #### Basic Azure Function check
 
-In this [basic example](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionBasicHandler), the Azure Function checks that the invoking pipeline has run a static analysis task prior to granting access to a protected resource.
+In this [basic example](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionBasicHandler), the Azure Function checks that the invoking pipeline run executed a `CmdLine` task, prior to granting it access to a protected resource.
 
 The Azure Function goes through the following steps:
 1. Confirms the receipt of the check payload
 1. Sends a status update to Azure Pipelines that the check started
-1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the pipeline run's [Timeline]() entry
-1. Checks if the Timeline contains a task with `"id": "sadada"` (the static analysis task)
+1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the pipeline run's [Timeline](https://learn.microsoft.com/rest/api/azure/devops/build/timeline/get) entry
+1. Checks if the Timeline contains a task with `"id": "D9BAFED4-0B18-4F58-968D-86655B4D2CE9"` (the ID of the `CmdLine` task)
 1. Sends a status update with the result of the search
 1. Sends a check decision to Azure Pipelines 
 
-You can download this example from [GitHub]().
+You can download this example from [GitHub](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionBasicHandler).
 
 To use this Azure Function check, you need to ensure that you specify the following Headers when configuring the check:
 ```json
@@ -140,7 +142,7 @@ The Azure Function goes through the following steps:
 1. If the work item isn't in the `Completed` state, it reschedules another evaluation in 1 minute
 1. Once the work item is in the correct state, it sends a positive decision to Azure Pipelines
 
-You can download this example from [GitHub]().
+You can download this example from [GitHub](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionAdvancedHandler).
 
 To use this Azure Function check, you need to ensure that you specify the following Headers when configuring the check:
 ```json
