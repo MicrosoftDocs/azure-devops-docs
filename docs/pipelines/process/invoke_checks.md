@@ -67,14 +67,14 @@ When configuring the check, you can specify the pipeline run information you wis
 - `"TaskInstanceId": "$(system.TaskInstanceId)"` 
 - `"AuthToken": "$(system.AccessToken)"`
 
-These key-value pairs are set, by default, in the Headers of the REST call made by Azure Pipelines.
+These key-value pairs are set, by default, in the `Headers` of the REST call made by Azure Pipelines.
 
 You can use `AuthToken` to make calls into Azure DevOps, such as when your check will call back with a decision.  The `AuthToken` is restricted to the scope of the pipeline run from which the check call was made.
 
 ### Send a decision back to Azure DevOps
 
 Your check must use the following REST API endpoint to communicate a decision back to Azure Pipelines:
-- `POST {PlanUri}/{ProjectId}/_apis/distributedtask/hubs/{HubName}/plans/{PlanId}/events?api-version=2.0-preview.1`
+- [Create an event](), by making issuing a `POST {PlanUri}/{ProjectId}/_apis/distributedtask/hubs/{HubName}/plans/{PlanId}/events?api-version=2.0-preview.1` HTTP request
 - Headers: `Basic: {AuthToken}`
 - Body:
 ```json
@@ -95,7 +95,7 @@ The steps to send status updates are:
 1. [Append to the task log](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/append-log-content)
 1. [Update timeline record](https://review.learn.microsoft.com/rest/api/azure/devops/distributedtask/records/update)
 
-All REST API calls need be authenticated.
+All REST API calls need to be authenticated.
 
 ### Examples
 
@@ -113,19 +113,19 @@ The Azure Function goes through the following steps:
 
 You can download this example from [GitHub](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionBasicHandler).
 
-To use this Azure Function check, you need to ensure that you specify the following Headers when configuring the check:
+To use this Azure Function check, you need to specify the following `Headers` when configuring the check:
 ```json
 {
-"Content-Type":"application/json", 
-"PlanUrl": "$(system.CollectionUri)", 
-"ProjectId": "$(system.TeamProjectId)", 
-"HubName": "$(system.HostType)", 
-"PlanId": "$(system.PlanId)", 
-"JobId": "$(system.JobId)", 
-"TimelineId": "$(system.TimelineId)", 
-"TaskInstanceId": "$(system.TaskInstanceId)", 
-"AuthToken": "$(system.AccessToken)",
-"BuildId": "$(build.BuildId)"
+    "Content-Type":"application/json", 
+    "PlanUrl": "$(system.CollectionUri)", 
+    "ProjectId": "$(system.TeamProjectId)", 
+    "HubName": "$(system.HostType)", 
+    "PlanId": "$(system.PlanId)", 
+    "JobId": "$(system.JobId)", 
+    "TimelineId": "$(system.TimelineId)", 
+    "TaskInstanceId": "$(system.TaskInstanceId)", 
+    "AuthToken": "$(system.AccessToken)",
+    "BuildId": "$(build.BuildId)"
 }
 ```
 
@@ -144,19 +144,19 @@ The Azure Function goes through the following steps:
 
 You can download this example from [GitHub](https://github.com/microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/AzureFunctionAdvancedHandler).
 
-To use this Azure Function check, you need to ensure that you specify the following Headers when configuring the check:
+To use this Azure Function check, you need to specify the following `Headers` when configuring the check:
 ```json
 {
-"Content-Type":"application/json", 
-"PlanUrl": "$(system.CollectionUri)", 
-"ProjectId": "$(system.TeamProjectId)", 
-"HubName": "$(system.HostType)", 
-"PlanId": "$(system.PlanId)", 
-"JobId": "$(system.JobId)", 
-"TimelineId": "$(system.TimelineId)", 
-"TaskInstanceId": "$(system.TaskInstanceId)", 
-"AuthToken": "$(system.AccessToken)",
-"BuildId": "$(build.BuildId)"
+    "Content-Type":"application/json", 
+    "PlanUrl": "$(system.CollectionUri)", 
+    "ProjectId": "$(system.TeamProjectId)", 
+    "HubName": "$(system.HostType)", 
+    "PlanId": "$(system.PlanId)", 
+    "JobId": "$(system.JobId)", 
+    "TimelineId": "$(system.TimelineId)", 
+    "TaskInstanceId": "$(system.TaskInstanceId)", 
+    "AuthToken": "$(system.AccessToken)",
+    "BuildId": "$(build.BuildId)"
 }
 ```
 
@@ -198,7 +198,7 @@ The maximum number of evaluations is defined by the ratio between the _Timeout_ 
 
 ### Pass pipeline run information to checks
 
-When configuring the check, you can specify the pipeline run information you wish to send to your Azure Function / REST API check. By default, Azure Pipeline adds the following information in the Headers of the HTTP call it makes.
+When configuring the check, you can specify the pipeline run information you wish to send to your Azure Function / REST API check. By default, Azure Pipeline adds the following information in the `Headers` of the HTTP call it makes.
 - `"PlanUrl": "$(system.CollectionUri)"` 
 - `"ProjectId": "$(system.TeamProjectId)"`
 - `"HubName": "$(system.HostType)"` 
@@ -215,7 +215,7 @@ For each check instance, Azure Pipelines attempts at most X times to obtain a de
 
 ## When to use asynchronous vs synchronous checks
 
-Lets look at some example use cases and what are the recommended type of checks to use.
+Let's look at some example use cases and what are the recommended type of checks to use.
 
 ### External information must be correct
 Say you have a Service Connection to a production resource, and you wish to ensure that access to it's permitted only if the information in a ServiceNow ticket is correct. In this case, the flow would be as follows:
