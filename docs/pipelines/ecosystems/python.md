@@ -112,8 +112,6 @@ steps:
 
 ::: moniker range="azure-devops-2019"
 
-## 2 - Create your pipeline
-
 1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
 ``` yaml
