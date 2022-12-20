@@ -138,8 +138,7 @@ An account used to monitor or manage select services, such as build or test serv
 
 ## Service principal
 
-A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
-
+A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals) and [service principal and managed identity support in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 ## Secure Sockets Layer (SSL)
 
