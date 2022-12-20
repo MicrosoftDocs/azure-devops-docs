@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 02/12/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -160,6 +160,9 @@ To check your limits, navigate to **Project settings**, **Parallel jobs**.
 ![Pipelines concurrent jobs](../media/troubleshooting/concurrent-pipeline-limits.png)
 
 After reviewing the limits, check concurrency to see how many jobs are currently running and how many are available.
+
+> [!NOTE]
+> Azure Pipelines has temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected. Please note that it takes us 2-3 business days to respond to your free tier requests.
 
 ::: moniker-end
 

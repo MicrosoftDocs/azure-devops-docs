@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2021
+ms.date: 12/20/2022
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---

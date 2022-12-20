@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 12/01/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -130,7 +130,7 @@ For more information, see the [YAML schema](/azure/devops/pipelines/yaml-schema)
 
 To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. The default **Agent Specification** is *windows-2019*. For more information about the software installed on the Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
-![Select Agent pool and choose the desired agent](media/agent-pool-classic.png)
+:::image type="content" source="media/agent-pool-classic.png" alt-text="Screenshot of selecting and Agent pool and choosing the desired agent.":::
 
 * * *
 
