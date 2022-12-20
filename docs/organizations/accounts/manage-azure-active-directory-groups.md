@@ -27,7 +27,7 @@ Not familiar with Azure AD, but want to check it out? Learn more about [Azure AD
 and differences in how you [control organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
 > [!NOTE]
-> Due to a functional limitation on Microsoft Graph, [service principals](./use-azure-active-directory-service-principals-managed-identities.md) will not appear in any list of Azure AD group members on Azure DevOps. Permissions set on any Azure AD groups will still apply to any service principals in the group that have been added to the organizations, even if they are not displaying on the web UI.
+> Due to a functional limitation on Microsoft Graph, [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) will not appear in any list of Azure AD group members on Azure DevOps. Permissions set on any Azure AD groups will still apply to any service principals in the group that have been added to the organizations, even if they are not displaying on the web UI.
 
 ## Prerequisites
 
