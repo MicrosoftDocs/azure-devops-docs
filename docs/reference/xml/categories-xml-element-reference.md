@@ -3,7 +3,7 @@ title: Categories XML element reference
 titleSuffix: Azure DevOps  
 description: Learn about the syntax and default work item type categories used Azure DevOps.
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
 ms.author: kaelli
 author: KathrynEE

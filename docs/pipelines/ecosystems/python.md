@@ -120,7 +120,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 
 ### Use a specific Python version
 
-To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.6:
+To use a specific version of Python in your pipeline, add the [Use Python Version task](/azure/devops/pipelines/tasks/reference/use-python-version-v0) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.6:
 
 ```yaml
 steps:
@@ -165,7 +165,7 @@ To run Python scripts in your repository, use a `script` element and specify a f
 - script: python src/example.py
 ```
 
-You can also run inline Python scripts with the [Python Script task](../tasks/utility/python-script.md):
+You can also run inline Python scripts with the [Python Script task](/azure/devops/pipelines/tasks/reference/python-script-v0):
 
 ```yaml
 - task: PythonScript@0
@@ -274,7 +274,7 @@ Azure Pipelines can run parallel Tox test jobs to split up the work. On a develo
 
 ### Publish test results
 
-Add the [Publish Test Results task](../tasks/test/publish-test-results.md) to publish JUnit or xUnit test results to the server:
+Add the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) to publish JUnit or xUnit test results to the server:
 
 ```yaml
 - task: PublishTestResults@2
@@ -286,7 +286,7 @@ Add the [Publish Test Results task](../tasks/test/publish-test-results.md) to pu
 
 ### Publish code coverage results
 
-Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results to the server. You can see coverage metrics in the build summary and download HTML reports for further analysis.
+Add the [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) to publish code coverage results to the server. You can see coverage metrics in the build summary and download HTML reports for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -297,7 +297,7 @@ Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage
 
 ## Package and deliver code
 
-To authenticate with `twine`, use the [Twine Authenticate task](../tasks/package/twine-authenticate.md) to store authentication credentials in the `PYPIRC_PATH` environment variable.
+To authenticate with `twine`, use the [Twine Authenticate task](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) to store authentication credentials in the `PYPIRC_PATH` environment variable.
 
 ```yaml
 - task: TwineAuthenticate@0

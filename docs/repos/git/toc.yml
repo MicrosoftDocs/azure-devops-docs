@@ -16,6 +16,8 @@
     href: import-git-repository.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
+  - name: Use Visual Studio with Git
+    href: ../tfvc/use-visual-studio-git.md
 - name: Connect & authenticate
   items:
   - name: Connect to a project or repo

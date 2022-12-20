@@ -3,9 +3,9 @@ title: Pipeline flaky test sample Power BI reports
 titleSuffix: Azure DevOps
 description: Learn how to generate a list of flaky tests Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.manager: mijacobs
-ms.author: kaghai
+ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
@@ -20,7 +20,7 @@ ms.date: 10/13/2021
 This article shows you how to create a report that shows the list of flaky tests for a pipeline. An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/flaky-tests-report1.png)
+> ![Screenshot of Power BI flaky tests report.](media/odata-powerbi-test-analytics/flaky-tests-report1.png)
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -95,11 +95,11 @@ $apply=filter(
 
 ### Substitution strings
 
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
 - `{organization}` - Your organization name
 - `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
 - `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
@@ -278,17 +278,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/failed-tests-expand1.png)
+    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/failed-tests-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/failed-tests-expand2.png)
+    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/failed-tests-expand2.png)
 
 1. The table now contains the expanded entity **Test.TestName**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/failed-tests-expand3.png)
+    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/failed-tests-expand3.png)
     
 
 ### Change column type
@@ -298,12 +298,12 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalCount**, **PassedCount**, **FailedCount**, **NotExecutedCount**, **NotImpactedCount**, and **FlakyCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/failed-tests-changetype1.png)
+    > ![Screenshot of Power BI transform data, change column type.](media/odata-powerbi-test-analytics/failed-tests-changetype1.png)
     
 1. Change the type of column **FlakyRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Change the type of column FlakyRate to Decimal Number.](media/odata-powerbi-test-analytics/flaky-tests-changetype1.png)
+    > ![Screenshot of Power BI, Change the type of column FlakyRate to Decimal Number.](media/odata-powerbi-test-analytics/flaky-tests-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -313,17 +313,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/failed-tests-rename1.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/failed-tests-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -334,7 +334,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/flaky-tests-field1.png)
+> ![Screenshot of Power BI Visualizations flaky test report fields.](media/odata-powerbi-test-analytics/flaky-tests-field1.png)
 
 For a simple report, do the following steps:
 
@@ -349,7 +349,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/flaky-tests-report1.png)
+> ![Screenshot of Power BI sample flaky tests report.](media/odata-powerbi-test-analytics/flaky-tests-report1.png)
 
 
 You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
@@ -583,10 +583,7 @@ $apply=filter(
 ```
 
 ***
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+ 
 
 ## Related articles
 

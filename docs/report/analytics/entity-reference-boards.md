@@ -91,14 +91,15 @@ Many properties are date-based or user-based. These properties are associated wi
 
 |**Display name**<br/>`Property name` | **Data type** | **Description**<br/>`Reference name` | 
 |-------------------------------------|---------------|--------------------------------------|
-|**Accepted By**<br/>`AcceptedBy` | UserSK | Name of the person who responded to a code review. (CMMI process)<br/>`Microsoft.VSTS.CodeReview.AcceptedBy` |   
+|**Accepted By**<br/>`Microsoft_VSTS_CodeReview_AcceptedBy` | UserSK | Name of the person who responded to a code review. (CMMI process)<br/>`Microsoft.VSTS.CodeReview.AcceptedBy` |   
 |**Accepted Date**<br/> `AcceptedDate` | DateTime | Date and time when the person responded to the code review. (CMMI process)<br/>`Microsoft.VSTS.CodeReview.AcceptedDate`  |     
-| **Activated By** <br/>`ActivatedBy` | UserSK | Name of the team member who activated or reactivated the work item.<br/>`Microsoft.VSTS.Common.ActivatedBy`   |   
+| **Activated By**<br/>`ActivatedBy`<br/>`ActivatedByUserSK` | UserSK | Name of the team member who activated or reactivated the work item.<br/>`Microsoft.VSTS.Common.ActivatedBy`   |   
 |**Activated Date**<br/> `ActivatedDate` | DateTime | Date and time when a team member activated or reactivated a bug or work item.<br/>`Microsoft.VSTS.CodeReview.ActivatedDate` | 
 |**Activity**<br/>`Activity` | String | The type of activity that is required to perform a task.<br/>`Microsoft.VSTS.Common.Activity`<br/><br/>The type of activity or discipline that is assigned to a task. Allowed values are: **Deployment**, **Design**, **Development**, **Documentation**, **Requirements**, and **Testing**. (Agile, Scrum, and Basic process) <br/>`Microsoft.VSTS.Common.Activity`  | 
+|`AnalyticsUpdatedDate` | DateTimeOffset | The data and time the entity was last updated. |
 |**Application Type**  | String | The type of application that stakeholders will provide feedback on. The default values are *Web Application*, *Remote Machine*, and *Client Application*. The valid types are specified in the process configuration file for projects that use an On-premises XML process. <br/>`Microsoft_VSTS_Feedback_ApplicationType`  | 
 |**Area Path**<br/>`AreaPath`<br/>`AreaSK`  | String  | Groups the work items into product feature or team areas. The area must be a valid node in the project hierarchy.<br/>`System.AreaPath`     |    
-|**Assigned To** <br/>`AssignedTo`<br/>`AssignedToUserSK`  | Double  | The name of the team member who currently owns the work item.<br/>`System.AssignedTo`    |     
+|**Assigned To** <br/>`AssignedTo`<br/>`AssignedToUserSK` | UserSK | The name of the team member who currently owns the work item.<br/>`System.AssignedTo`    |     
 |**Automated Test Id** <br/>`AutomatedTestId` | String | The ID of the test that automates the test case.<br/>`Microsoft.VSTS.TCM.AutomatedTestId`   | 
 |**Automated Test Name** <br/>`AutomatedTestName` | String | Name of the team member who activated or reactivated the work item.<br/>`Microsoft.VSTS.TCM.AutomatedTestName`  | 
 |**Automated Test Storage**<br/>`AutomatedTestStorage` | String | The assembly that contains the test that automates the test case.<br/>`Microsoft.VSTS.TCM.AutomatedTestStorage`   |    
@@ -107,22 +108,19 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Backlog Priority**<br/>`BacklogPriority` | Double | A number assigned by a system background process used to stack rank or track the sequence of items on a backlog or board. (Scrum process) <br/>`Microsoft.VSTS.Common.BacklogPriority`   |    
 |**Blocked**<br/>`Blocked`  | String | Indicates that no further work can be performed on the work item. Valid values are **Yes** or **No**. (CMMI process)<br/>`Microsoft.VSTS.CMMI.Blocked` | 
 |**Business Value**<br/>`BusinessValue` | Double | A subjective unit of measure that captures the relative business value of a product backlog item  or feature compared to other items of the same type. An item that is assigned a higher number should be considered as having more business value than an item that is assigned a lower number. <br/>`Microsoft.VSTS.Common.BusinessValue`   |     
-|**Changed By**<br/>`ChangedBy` | Navigation | The name of the team member who modified the work item most recently.<br/>`System.ChangedBy`   |  
-|`ChangedByUserSK` | GUID | The name of the person who modified the work item.  | 
-|**Changed Date**<br/>`ChangedDate`  | DateTime | Date and time when the work item was modified.<br/>`System.ChangedDate`  |      
+|**Changed By**<br/>`ChangedBy`<br/>`ChangedByUserSK` | UserSK | The name of the person who modified the work item most recently.<br/>`System.ChangedBy`   |   
+|**Changed Date**<br/>`ChangedDate`  | DateTime | Date and time when the work item was modified.<br/>`System.ChangedDate`  | 
 |`ChangedDateSK` | Int32 | The date the work item was modified, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities.  |      
 |`ChangedOn`  | Navigation | Navigational property to the `Date` entity for the date the work item was modified, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in ```groupby``` statements. |    
-|**Closed By**<br/>`ClosedBy` | Navigation | The name of the person who closed a work item. <br/>`Microsoft.VSTS.Common.ClosedBy`   | 
-|`ClosedByUserSK` | GUID | GUID assigned to the person  who closed the work item.  | 
+|**Closed By**<br/>`ClosedBy`<br/>`ClosedByUserSK` | UserSK | The name of the person who closed a work item. <br/>`Microsoft.VSTS.Common.ClosedBy`   | 
 |**Closed Date**<br/>`ClosedDate`<br/>`ClosedDateSK`<br/>`ClosedOn` | DateTime | Date and time when a work item was closed.<br/>`Microsoft.VSTS.Common.ClosedDate`   |    
 |**Comment Count**<br/>`CommentCount` | Int32 | The number of comments added to the **Discussion** section of the work item.<br/>`System.CommentCount`  |   
 |**Committed**<br/>`Committed`  | String | Indicates if the requirement is committed in the project. Valid values are **Yes** or **No**. (CMMI process)<br/>`Microsoft.VSTS.CMMI.Committed`   |  
 |`CompletedDateSK`  | Int32 | Navigational property date captured by Analytics that stores when the work item entered a workflow **State** associated with the *Completed* workflow state category.   |
 |`CompletedOn`  | Navigation | Navigational property to the `Date` entity for the date the work item entered a workflow **State** associated with the *Completed* workflow state category, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in ```groupby``` statements. |
 |**Completed Work**<br/>`CompletedWork` | Double | A measure of the amount of work spent on a task.<br/>`Microsoft.VSTS.Scheduling.CompletedWork`  |    
-|**Created By**<br/>`CreatedBy`| Navigation | The name of the person who created the work item. <br/>`Microsoft.VSTS.Common.CreatedBy`  | 
-|`CreatedByUserSK` | GUID | GUID assigned to the person who created the work item.  |  
-|**Created Date**<br/>`CreatedDate` | DateTime | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display. <br/>`Microsoft.VSTS.Common.CreatedDate`    |  
+|**Created By**<br/>`CreatedBy`<br/>`CreatedByUserSK`| UserSK | The name of the person who created the work item. <br/>`Microsoft.VSTS.Common.CreatedBy`  | 
+|**Created Date**<br/>`CreatedDate`<br/>`CreatedDateSK`| DateTime | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display. <br/>`Microsoft.VSTS.Common.CreatedDate`    |  
 |`CreatedDateSK`| Int32 | The date the work item was created, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. | 
 |`CreatedOn` | Navigation | Navigation property to the `Date` entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in ```groupby``` statements. |
 |**Cycle Time Days**<br/>`CycleTimeDays` | Double | Cycle time is calculated from first entering an *In Progress* or *Resolved* state category to entering a *Completed* state category. To learn more, see [Lead Time and Cycle Time widgets](../dashboards/cycle-time-and-lead-time.md). |  
@@ -147,8 +145,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Rating** <br/>`Reason` | String | The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response) The number is stored in the system and written as follows:- **0 - Not Rated**, **1 - Poor**, **2 - Fair**, **3 - Good**, **4 - Very Good**, and **5 - Excellent**.  Valid for these entity types: `WorkItemRevision` and `WorkItem`.<br/>`Microsoft.VSTS.Common.Rating`  | 
 | **Reason** <br/>`Reason` | String | The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason. <br/>`System.Reason`  | 
 |**Remaining Work** <br/>`RemainingWork` | Double | A measure of the amount of work that remains to finish a task.<br/>`Microsoft.VSTS.Scheduling.RemainingWork` | 
-|**Resolved By** <br/>`ResolvedBy` | Navigation | The name of the team member who resolved the bug or user story.<br/>`Microsoft.VSTS.Common.ResolvedBy` | 
-|`ResolvedByUserSK` | GUID | The GUID assigned to the person who resolved the work item.  | 
+|**Resolved By** <br/>`ResolvedBy` <br/>`ResolvedByUserSK` | UserSK | The name of the team member who resolved the bug or user story.<br/>`Microsoft.VSTS.Common.ResolvedBy` | 
 |**Resolved Date** <br/>`ResolvedDate` | DateTime | The date and time when the bug or user story was resolved. <br/>`Microsoft.VSTS.Common.ResolvedDate` | 
 |`ResolvedDateSK`| Int32 | The date the work item was resolved, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. | 
 |`ResolvedOn` | Navigation | Navigation property to the `Date` entity for the date the work item was resolved, in the time zone defined for the organization. Commonly used to reference properties from the `Date` entity in ```groupby``` statements. |

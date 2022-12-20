@@ -3,6 +3,7 @@ title: Add or modify work item categories
 titleSuffix: Azure DevOps & TFS
 description: Add or modify categories to your process template for Team Foundation Server 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 93f146df-8424-4183-89f7-298943eb8c0f
 ms.author: kaelli
 ms.topic: reference

@@ -1,11 +1,11 @@
 ---
-title: Undo Changes in Another User's Workspace
+title: Undo changes in another user's workspace
 titleSuffix: Azure Repos
-description: Undo Changes in Another User's Workspace
+description: Use Team Foundation Version Control commands to remove a lock that another user has placed on a file or to delete the workspace of another user.
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 12/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -14,14 +14,13 @@ ms.subservice: azure-devops-repos-tfvc
 # Undo changes in another user's workspace
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
  
+Occasionally a team member is blocked from checking in a file that someone else has locked. You can use Team Foundation Version Control (TFVC) commands in this situation:
 
-If a team member is blocked from checking in a file that is locked by someone else, you can use the **tf undo** command to delete Team Foundation version control pending changes in another user's workspace.
-
-If you must also remove an exclusive lock on a file, but not the pending changes, you can use the **tf lock** command. For more information, see [Lock Command](lock-command.md).
-
-If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](/previous-versions/ms245474(v=vs.110)).
+- To delete pending changes in another user's workspace, use the `tf undo` command.
+- To remove an exclusive lock on a file but not the pending changes, use the `tf lock` command. For more information, see [Lock command](lock-command.md).
+- To delete another user's workspace, use the `tf workspace` command. For more information, see [Remove a workspace](/previous-versions/ms245474(v=vs.110)).
 
 ## Prerequisites
 
@@ -29,18 +28,22 @@ To undo pending changes in another user's workspace, you must have the **Adminis
 
 ## Undo the changes in another user's workspace
 
-1.  Open the **Developer Command Prompt** for your version.
+1. Open **Developer Command Prompt** for your version of Visual Studio.
 
-2.  Type the following command at the command prompt and replace the arguments with the appropriate parameter information for your needs:
+1. Enter the following command at the command prompt. Replace the arguments with values that are appropriate for your needs.
 
-    `tf undo /workspace:OtherUserWorkspace;OtherUser $/TeamProject/MyFile.cs /collection:http://YourTFSServer:8080/tfs/YourCollection`
+   `tf undo /workspace:<other-user-workspace>;<other-user> $/<project-path>/<file-name> /collection:<team-project-collection-url>`
+
+   For example, you might enter the following command:
+
+   `tf undo /workspace:OtherUserWorkspace;OtherUser $/TeamProject/MyFile.cs /collection:https://YourTFSServer:8080/tfs/YourCollection`
 
 For more information, see [Undo command](undo-command.md).
 
 ## Related articles
 
 - [Create and work with workspaces](create-work-workspaces.md)
-- [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md)
+- [Use the Check In and Pending Changes windows](develop-code-manage-pending-changes.md)
 - [Work with version control locks](work-version-control-locks.md)
 
  
