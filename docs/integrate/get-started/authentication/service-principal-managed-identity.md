@@ -46,7 +46,7 @@ The very first step is to create an application and/or a managed identity, which
 
 #### Assign application roles and grant admin consent
 
-[App-only roles](/azure/active-directory/develop/custom-rbac-for-developers) can be set up in Azure AD for service principals to authorize which permissions it will be allowed. (We treat roles slightly different than described in the Azure AD documentation. Rather than a role being a combination of permissions, each role is aligned to a single Azure DevOps permission.) All of the roles to choose from can be found on this list of [Azure DevOps scopes](../../integrate/get-started/authentication/oauth?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops#scopes).
+[App-only roles](/azure/active-directory/develop/custom-rbac-for-developers) can be set up in Azure AD for service principals to authorize which permissions it will be allowed. (We treat roles slightly different than described in the Azure AD documentation. Rather than a role being a combination of permissions, each role is aligned to a single Azure DevOps permission.) All of the roles to choose from can be found on this list of [Azure DevOps scopes](./oauth?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops#scopes).
 
 To [assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration, you can do this in the Azure portal or programmatically by using [Microsoft Graph](https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0&tabs=http). Since these are application permissions, each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permission. For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
 
@@ -61,13 +61,13 @@ Only administrators can add service principals to an organization. As service pr
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-To add the service principal to the organization, you will need to enter the application or managed identity display name. A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../billing/buy-basic-access-add-users?view=azure-devops#pay-for-a-user-once-across-multiple-organizations) is selected. They can be assigned to all access levels except for **Visual Studio Subscriber**, as service principals are unable to sign up for a Visual Studio subscription.
+To add the service principal to the organization, you will need to enter the application or managed identity display name. A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users?view=azure-devops#pay-for-a-user-once-across-multiple-organizations) is selected. They can be assigned to all access levels except for **Visual Studio Subscriber**, as service principals are unable to sign up for a Visual Studio subscription.
 
 #### Manage the service principal in Azure DevOps
 
-Once added to the organization, you can also manage access through [permissions and security groups](../security/permissions) in the same way as you do for users. A few notable differences have been outlined below:
+Once added to the organization, you can also manage access through [permissions and security groups](../../../organizations/security/permissions) in the same way as you do for users. A few notable differences have been outlined below:
 * At this time, service principals do not display in the list of Azure AD group members on Azure DevOps. However, so long as the service principal has been explicitly added to the organization, any permissions set on the Azure AD group will also apply to the service principals in the group.
-* [Group rules](./assign-access-levels-by-group-membership) do not apply to service principals. In order to set access levels or project memberships on top of service principals, you can [directly set them](../security/change-access-levels).
+* [Group rules](./assign-access-levels-by-group-membership) do not apply to service principals. In order to set access levels or project memberships on top of service principals, you can [directly set them](../../../organizations/security/change-access-levels).
 * Service principals may not be available in all user dropdowns throughout the product yet.
 
 #### Call Azure DevOps REST APIs with service principal token
@@ -80,8 +80,8 @@ Acquiring an access token for a managed identity can be done by following along 
 * As service principals do not have emails, the following functionality is unavailable:
   * Service principals cannot be invited to any organzation, group, or project via email.
   * Service principals will not receive any Notifications.
-* Service principals cannot create tokens, like [personal access tokens (PATs)](./use-personal-access-tokens-to-authenticate) or [SSH Keys](../../repos/git/use-ssh-keys-to-authenticate). Since they can generate their own Azure AD tokens, these can be used to call Azure DevOps REST APIs.
-* We will not be supporting [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth?view=azure-devops) for service principals.
+* Service principals cannot create tokens, like [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate) or [SSH Keys](../../../repos/git/use-ssh-keys-to-authenticate). Since they can generate their own Azure AD tokens, these can be used to call Azure DevOps REST APIs.
+* We will not be supporting [Azure DevOps OAuth](./oauth?view=azure-devops) for service principals.
 * The [Azure CLI](/azure/devops/cli/) does not support service principals.
 
 ## FAQs
