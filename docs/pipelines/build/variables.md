@@ -93,7 +93,7 @@ Setting `System.Debug` to `true` will configure verbose logs for all runs. You c
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range">= azure-devops-2020 <= azure-devops-2022"
 
 [!INCLUDE [include](includes/variables-server-2020.md)]
 
