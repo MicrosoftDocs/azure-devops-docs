@@ -7,7 +7,7 @@ ms.date: 12/14/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Customize JavaScript for Azure Pipelines
+# Customize Python for Azure Pipelines
 
 You can use Azure Pipelines to build your Python apps without having to set up any infrastructure of your own. Tools that you commonly use to build, test, and run Python apps - like pip - get pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. 
 
