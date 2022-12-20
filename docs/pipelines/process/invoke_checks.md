@@ -90,9 +90,9 @@ Your check implementation must use the [Post Event](https://learn.microsoft.com/
 You can provide status updates to Azure Pipelines users from within your checks using Azure Pipelines REST APIs. This functionality is useful, for example, if you wish to let users know the check is waiting on an external action, such as someone needs to approve a ServiceNow ticket.
 
 The steps to send status updates are:
-1. [Create a task log](https://review.learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/create)
+1. [Create a task log](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/create)
 1. [Append to the task log](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/append-log-content)
-1. [Update timeline record](https://review.learn.microsoft.com/rest/api/azure/devops/distributedtask/records/update)
+1. [Update timeline record](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/records/update)
 
 All REST API calls need to be authenticated.
 
