@@ -51,7 +51,7 @@ If no approval is granted within the **Timeout** period, the deployment will be 
    - This policy lets you enforce multi-factor authentication in the release approval flow. If this policy is checked it will prompt approvers to re-sign in before approving releases. This feature is only available in Azure DevOps Services for Azure Active Directory backed accounts only.
    - Reduce user workload by automatically approving subsequent prompts if the specified user has already approved the deployment to a previous stage in the pipeline (applies to pre-deployment approvals only).
 
-### Approval notifications
+## Approval notifications
 
 You can enable notifications from your project settings to subscribe to release events. Emails are sent to approvers with links to the summary page where they can approve/reject the release. 
 
