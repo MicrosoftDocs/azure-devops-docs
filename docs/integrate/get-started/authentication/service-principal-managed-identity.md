@@ -35,12 +35,31 @@ Your own implementation may vary, but at a high-level, the following steps are n
 
 ### 1. Create a new managed identity and service principal
 
-The very first step is to create an application and/or a managed identity, which must be done in the Azure portal. The Azure AD documentation provides a wealth of information on how to get started here. Some helpful links are highlighted below:
+A Service Principal (SP) is a security object that represents an Azure AD entity (user/application) and defines its access policy and permissions in the Azure AD tenant. There are two main types of SP supported:
+* **Managed Identity** Service Principal
+* **Application Service Principal**
 
+The very first step is to create an application and/or a managed identity, which must be done in the Azure portal. The Azure AD documentation provides a wealth of information on how to get started here. 
+
+#### Managed Identity
+A **Managed Identity (MI)** is a service principal of a special type that can only be used with Azure resources. There are two types of managed identities:
+
+System-assigned. Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD.
+User-assigned. You may also create a managed identity as a standalone Azure resource. You can create a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it.
+
+Some helpful links are highlighted below:
+* [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 * [Manage user-assigned managed identities (for user-assigned managed identities)](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 * [Configure managed identities for Azure resources on a VM using the Azure portal (for user-assigned and system-assigned managed identities)](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
-* [Use the portal to create an Azure AD application and service principal that can access resources (for application service principals)](/azure/active-directory/develop/howto-create-service-principal-portal)
 
+#### Application Registration
+
+When you create new application registration, an application object is created in AAD. An **application service principal** is then a representation of an application object in a single tenant or directory. You can register an application as a multi-tenant application, and in each tenant, there will be a unique service principal object that represents the application object.
+
+Further information:
+* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
+* [Use the portal to create an Azure AD application and service principal that can access resources (for application service principals)](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ### 2. Configure Azure DevOps OAuth application roles
 
@@ -52,27 +71,35 @@ To [assign these Azure AD app roles](/azure/active-directory/develop/howto-add-a
 
 // Insert a code snippet here akin to https://techcommunity.microsoft.com/t5/integrations-on-azure-blog/grant-graph-api-permission-to-managed-identity-object/ba-p/2792127
 
-#### Add service principal to Azure DevOps organization
+#### Add and manage service principal in Azure DevOps organization
 
-Once you have completed configuring the service principal in the Azure AD portal, they can be treated similarly to users. They can be added through the [Users page](../../../organizations/accounts/add-organization-users.md) or with the [ServicePrincipalEntitlements APIs](//api-reference-links). 
+Once you have completed configuring the service principal in the Azure AD portal, they can be treated similarly to users, with the caveat that they cannot login or interact with the site and must access Azure Devops resources programmatically. 
 
-Only administrators can add service principals to an organization. As service principals do not have emails, you cannot invite them via email. They also cannot login or interact with the site and can only access Azure Devops resources programmatically.
+Only **Project Collection Administrators** can add service principals to an organization. They can be added through the [Users page](../../../organizations/accounts/add-organization-users.md) or with the [ServicePrincipalEntitlements APIs](//api-reference-links). You can also use these APIs to update service principals' access levels and project memberships, and remove service principals altogether.
 
-   > [!div class="mx-imgBorder"]  
-   >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
+// Insert image here on add flow
 
-To add the service principal to the organization, you will need to enter the application or managed identity display name. A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected. They can be assigned to all access levels except for **Visual Studio Subscriber**, as service principals are unable to sign up for a Visual Studio subscription.
+As service principals do not have emails, you cannot invite them via email. To add the service principal to the organization, you will need to enter the application or managed identity display name. 
 
-#### Manage the service principal in Azure DevOps
+> [!TIP] 
+> If you choose to add a service principal programmatically through the [ServicePrincipalEntitlements API], make sure to pass in the service principal's object id and not the application's object id. 
 
-Once added to the organization, you can also manage access through [permissions and security groups](../../../organizations/security/permissions.md) in the same way as you do for users. A few notable differences have been outlined below:
-* At this time, service principals do not display in the list of Azure AD group members on Azure DevOps. However, so long as the service principal has been explicitly added to the organization, any permissions set on the Azure AD group will also apply to the service principals in the group.
+A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected. They can be assigned to all access levels except for **Visual Studio Subscriber**, as service principals are unable to sign up for a Visual Studio subscription.
+
+#### Set permissions on the service principal in Azure DevOps
+
+Once added to the organization, you can also manage access through [permissions and security groups](../../../organizations/security/permissions.md) in the same way as you do for users. 
+
+A few notable differences have been outlined below:
+* At this time, service principals do not display in any list of Azure AD group members on Azure DevOps. However, so long as the service principal has been explicitly added to the organization, any permissions set on the Azure AD group will also apply to the service principals in the group.
 * [Group rules](../../../organizations/accounts/assign-access-levels-by-group-membership.md) do not apply to service principals. In order to set access levels or project memberships on top of service principals, you can [directly set them](../../../organizations/security/change-access-levels.md).
 * Service principals may not be available in all user dropdowns throughout the product yet.
 
 #### Call Azure DevOps REST APIs with service principal token
 
-Acquiring an access token for a managed identity can be done by following along with the Azure AD documentation, for [service principals](/azure/databricks/dev-tools/api/latest/aad/service-prin-aad-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
+Acquiring an access token for a managed identity can be done by following along with the Azure AD documentation. See these examples for [service principals](/azure/databricks/dev-tools/api/latest/aad/service-prin-aad-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
+
+The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
 ## Prohibited Service Principal Actions
 
@@ -89,4 +116,25 @@ Acquiring an access token for a managed identity can be done by following along 
 ### Q: Why should I use a service principal or a managed identitiy instead of a PAT?
 Service principals and managed identities allow an application to act on behalf of itself. Previously, when this option was not available, PATs were a popular option for authentication of application, but such bearer tokens are considered a less secure method that requires the application to perform actions on behalf of the owner of the PAT. In the case of an application performing automated functions, the PAT owner may not adequately reflect who is actually performing these actions on Azure DevOps.
 
-::: moniker-end
+### Q: Can I use a service principal to do git actions, like clone a repo?
+
+In the following block you can see how to use Azure an AD access token for authentication.
+
+#### [Windows](#tab/Windows/)
+
+In PowerShell, enter the following code.
+
+```powershell
+$ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
+git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
+```
+
+To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager). See [Git for Windows](https://www.git-scm.com/download/win).
+
+#### [Linux/macOS](#tab/Linux/)
+
+In Bash, enter the following code.
+
+```bash
+???
+```
