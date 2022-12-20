@@ -8,7 +8,7 @@ ms.date: 02/13/2020
 ---
 <a id="agent-variables"></a>
 
-## Agent variables (DevOps Server 2020)
+## Agent variables (DevOps Server)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -121,7 +121,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 
 </table>
 
-## Build variables (DevOps Server 2020)
+## Build variables (DevOps Server)
 
 <a id="build-variables"></a>
 
@@ -510,7 +510,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 </table>
 
-## Pipeline variables (DevOps Server 2020)
+## Pipeline variables (DevOps Server)
 
 <a id="pipeline-variables"></a>
 
@@ -525,7 +525,7 @@ For example, <code>/home/vsts/work/1</code>.</td>
 
 </table>
 
-## Deployment job variables (DevOps Server 2020)
+## Deployment job variables (DevOps Server)
 
 <a id="deployment-job-variables"></a>
 
@@ -557,7 +557,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 </table>
 
 
-## System variables (DevOps Server 2020)
+## System variables (DevOps Server)
 
 <a id="system-variables"></a>
 
