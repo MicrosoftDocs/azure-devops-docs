@@ -116,7 +116,7 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. This does not apply to [service principals](../accounts/use-azure-active-directory-service-principals-managed-identities.md), which you must pay for each organization the service principal has been added to where the service principal has **Basic** or **Basic + Test Plans**.
+If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. This does not apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal has been added to where the service principal has **Basic** or **Basic + Test Plans**.
 
 For more information, see [multi-organization billing FAQs](./billing-faq.yml). Complete the following steps.
 
