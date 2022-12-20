@@ -87,7 +87,7 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 Setting `System.Debug` to `true` will configure verbose logs for all runs. You can also configure verbose logs for a single run with the **Enable system diagnostics** checkbox. See For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
 
