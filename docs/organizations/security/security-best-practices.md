@@ -22,7 +22,7 @@ You don't have to implement best practices when using Azure Devops, but doing so
 - [Scope permissions](#scope-permissions) at the organization/collection, project, or object level
 - Maintain tight control of administrators and [security groups](#manage-security-groups)
 - Scope [service accounts](#scope-service-accounts) and [service connections](#scope-service-connections)
-- Learn best practices for each authentication method
+- Learn best practices for each [authentication method](#choose-the-right-authentication-method)
 - Secure specific product areas and associated services, like [Azure Artifacts](#secure-azure-artifacts), [Azure Boards](#secure-azure-boards), [Azure Pipelines](#secure-azure-pipelines), [Azure Repos](#secure-azure-repos), [Azure Test Plans](#secure-azure-test-plans), and [Github integrations](#secure-github-integrations).
 
 ## Securing Azure DevOps
