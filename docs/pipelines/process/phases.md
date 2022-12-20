@@ -862,7 +862,7 @@ In addition to workspace clean, you can also configure cleaning by configuring t
 
     :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **true**. 
 
     :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
