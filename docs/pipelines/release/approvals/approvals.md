@@ -39,41 +39,17 @@ You can set up approvals at the start of a stage (pre-deployment approvals), at 
 > [!NOTE]
 > Deployment approvers must have **View releases** [permissions](../../policies/permissions.md#set-release-permissions).
 
+- **Approvers**:
+When a group is specified as approvers, only one user from that group is needed to approve, resume, or reject deployment.
 
-When a group is specified as an approver, only one of the users in that group needs to approve
-for the deployment to occur or the release to move forward.
+- **Timeout**:
+If no approval is granted within the **Timeout** period, the deployment will be rejected.
 
-   * If you're using **Azure Pipelines**, you
-     can use local groups managed in Azure Pipelines or
-     Azure Active Directory (Azure AD) groups if they've been
-     added into Azure Pipelines.
-   * If you're using **Team Foundation Server** (TFS),
-     you can use local groups managed in TFS or Active
-     Directory (AD) groups if they've been added into TFS.
+- **Approval policies**:
 
-The creator of a deployment is considered to be a separate user
-role for deployments. For more information,
-see [Release permissions](../../policies/permissions.md#set-release-permissions).
-Either the release creator or the deployment creator can be restricted from approving deployments.
-
-If no approval is granted within the **Timeout** specified for the approval, the deployment is rejected.
-
-Use the **Approval policies** to:
-
-   * Specify that the user who requested (initiated or created) the release can't approve it.
-     If you're experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
-     For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
-   * Force a revalidation of the user identity to take into account recently changed permissions.
-   * Reduce user workload by automatically approving subsequent prompts if the specified
-     user has already approved the deployment to a previous stage in the pipeline
-     (applies to pre-deployment approvals only). Take care when using this option; for example, you may
-     want to require a user to physically approve a deployment to production even though that user has
-     previously approved a deployment to a QA stage in the same release pipeline.  
-
-For information about approving or rejecting deployments, and viewing approval logs, see
-[Create a release](../define-multistage-release-process.md#create-release),
-[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation), and
-[Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
+   - For added security, you can add this approval policy to prevent the user who requested the release from approving it. If you're experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. See [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set) to learn more about identity variables.
+   - This policy lets you enforce multi-factor authentication in the release approval flow. If this policy is checked it will prompt approvers to re-sign in before approving releases. This feature is only available in Azure DevOps Services for Azure Active Directory backed accounts only.
+   - Reduce user workload by automatically approving subsequent prompts if the specified user has already approved the deployment to a previous stage in the pipeline (applies to pre-deployment approvals only).
 
 ### Approval notifications
 
