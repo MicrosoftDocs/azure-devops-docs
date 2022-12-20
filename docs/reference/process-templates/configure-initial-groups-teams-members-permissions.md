@@ -3,6 +3,7 @@ title: Configure initial security settings
 titleSuffix: Azure DevOps & TFS
 description: Configure the initial security settings for a project using the plug-in file
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
 ms.author: kaelli
 author: KathrynEE

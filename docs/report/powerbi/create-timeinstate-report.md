@@ -40,7 +40,7 @@ This article provides a series of recipes using DAX calculations to evaluate tim
 > * Some calculations will include +0 to ensure that a numeric value is included for every row instead of BLANK.
 > You may need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses 'New", 'Active' and 'Closed' in place of 'Proposed', 'In Progress', and 'Completed'. 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Add the Work Items Count measure 
 

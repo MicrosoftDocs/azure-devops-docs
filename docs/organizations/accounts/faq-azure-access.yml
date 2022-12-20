@@ -141,8 +141,6 @@ sections:
           Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
         answer: |
           You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. For example, Azure AD guests can't use the Azure DevOps web portal to search for or select users who haven't already been added to the Azure DevOps organization. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
-          
-          <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
       
       - question: |
           What if we can't use the same sign-in addresses?
@@ -154,8 +152,11 @@ sections:
         answer: |
           [Restore the user](/azure/active-directory/fundamentals/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user isn't associated with the previous identity.
       
+          <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
+
       - question: |
           How can I convert an Azure AD guest into a member?
+          
         answer: |
           Select from the following two options:
           

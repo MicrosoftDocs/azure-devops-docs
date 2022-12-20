@@ -171,7 +171,7 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
    :::image type="content" source="media/complete-pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete P R dialog.":::
 
    - **Merge (no fast forward)**: Merge with a non-linear history that preserves all commits.
-   - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR.
+   - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
    - **Rebase and fast-forward**: Rebase the source commits onto the target and fast-forward.
    - **Semi-linear merge**: Rebase source commits onto the target and create a two-parent merge.
    
@@ -206,7 +206,7 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
 1. Select any of the following options:
    - **Complete linked work items after merging** to complete any linked work items.
    - **Delete `<branch name>` after merging** to delete the source branch from the PR.
-   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR.
+   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
      
      
@@ -242,7 +242,7 @@ When you complete the merge, any [linked work items](pull-requests.md#link-work-
 
    - **Complete linked work items after merging** to complete any linked work items.
    - **Delete `<branch name>` after merging** to delete the source branch from the PR.
-   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR.
+   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
 
 4. Select **Complete merge**.

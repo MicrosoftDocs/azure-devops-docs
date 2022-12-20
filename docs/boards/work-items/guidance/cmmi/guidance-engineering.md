@@ -3,6 +3,7 @@ title: Engineering process areas for designing software in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about the value-added activities for discovering information required to design and build software products in Azure Boards.
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 53c52c0e-da53-4f9c-afc4-6c6260d32ccc
 ms.topic: conceptual
 ms.author: kaelli

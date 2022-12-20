@@ -5,7 +5,7 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 02/26/2021
 monikerRange: '<= azure-devops'
-ms.custom: devx-track-python
+ms.custom: devx-track-python, py-fresh-zinc
 "recommendations": "true"
 ---
 
@@ -92,7 +92,7 @@ The **artifacts-keyring** package allows you to set up authentication to publish
 When you connect to Azure DevOps for the first time, you will be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
 > [!NOTE]
-> If you want to set up authentication in Azure Pipelines, use the [Python Pip Authenticate](../../pipelines/tasks/package/pip-authenticate.md) task to install packages, or the [Python Twine Upload Authenticate](../../pipelines/tasks/package/twine-authenticate.md) task to push packages.
+> If you want to set up authentication in Azure Pipelines, use the [Python Pip Authenticate](/azure/devops/pipelines/tasks/reference/pip-authenticate-v1) task to install packages, or the [Python Twine Upload Authenticate](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) task to push packages.
 
 ## Related articles
 

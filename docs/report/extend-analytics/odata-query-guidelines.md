@@ -262,7 +262,7 @@ For example, the following query gets a single work item by its identifier.
 >   &$select=WorkItemId, Title
 > ```
 
-If you're not sure which properties you should include in such a filter, you can look it up in the metadata. See [Explore the Analytics OData metadata](analytics-metadata.md). Properties are in the `Key` element of the `EntityType`. For example, `WorkItemId` and `Revision` are key columns for the `WorkItemRevision` entity.
+If you're not sure which properties you should include in such a filter, you can look it up in the metadata. See [Construct OData queries for Analytics, URL components to query the metadata](../analytics/analytics-query-parts.md#query-metadata). Properties are in the `Key` element of the `EntityType`. For example, `WorkItemId` and `Revision` are key columns for the `WorkItemRevision` entity.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -921,10 +921,10 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 
 ## Related articles
 
+- [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Query work item tracking data](wit-analytics.md)
 - [Aggregate data](aggregated-data-analytics.md)
 - [Query trend data](querying-for-trend-data.md)
 - [Query work item links](work-item-links.md)
-- [Explore the Analytics OData metadata](analytics-metadata.md)
 - [Supported functions & clauses](odata-supported-features.md)  
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 

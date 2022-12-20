@@ -3,7 +3,7 @@ title: Requirements tracking, Stories overview report
 titleSuffix: Azure DevOps
 description: Learn about Power BI queries to generate a report that tracks work progress and status of tests and bugs.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -23,7 +23,7 @@ You can track the quality of work items that belong to the Requirements category
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png) 
+> ![Screenshot of Power BI Stories Overview Report.](media/odatapowerbi-storiesoverview.png) 
  
 
 > [!NOTE] 
@@ -269,7 +269,7 @@ To create the report, perform the following steps:
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Requirements tracking report](media/odatapowerbi-storiesoverview.png)
+> ![Screenshot of Power BI Requirements tracking report](media/odatapowerbi-storiesoverview.png)
 
 
 ## Related articles
