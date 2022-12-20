@@ -105,7 +105,7 @@
     displayName: authenticate, access, token, app, security
   - name: Authorize access with service principals and managed identities
     href: ../../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/organizations/security/toc.json  
-    displayName: authenticate, access, token, app, security    
+    displayName: authenticate, access, security, service, principal, managed, identity   
   - name: Use SSH key authentication
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json  
     displayName: access, security
