@@ -1,34 +1,24 @@
 ---
-title: Control deployments by using approvals
+title: Control deployments with release approvals
 ms.custom: seodec18
-description: Understand release approvals in Azure Pipelines and Team Foundation Server (TFS)
+description: Understand release approvals in Azure Pipelines
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 08/24/2018
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Release deployment control using approvals
+# Deployment control using approvals
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+With Azure release pipelines, You can enable manual deployment approvals for each stage in a release pipeline to control your deployment workflow. When using approvals in your pipeline, the deployment is paused at each point where approval is required until the specified approver grants approval, rejects the release, or reassigns the approval to another user.
 
-When a release is created from a release pipeline that defines
-approvals, the deployment stops at each point where approval is required
-until the specified approver grants approval or rejects the release (or
-reassigns the approval to another user).
-You can enable manual deployment approvals for each stage in a release pipeline.
+## Deployment approvals
 
-## Define a deployment approval
-
-You can define approvals at the start of a stage (pre-deployment approvers), 
-at the end of a stage (post-deployment approvers), or both. For details of 
-how to define and use approvals, see [Add approvals within a release pipeline](../define-multistage-release-process.md#add-approvals).
+You can set up approvals at the start of a stage (pre-deployment approvals), at the end of a stage (post-deployment approvals), or for both. For details of how to define and use approvals, see [Add approvals within a release pipeline](../define-multistage-release-process.md#add-approvals).
 
 * For a **pre-deployment** approval, choose the icon at the entry point of the stage
    and enable pre-deployment approvers.
