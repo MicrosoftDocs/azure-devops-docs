@@ -46,7 +46,7 @@ The very first step is to create an application and/or a managed identity, which
 
 #### Assign application roles and grant admin consent
 
-[App-only roles](/azure/active-directory/develop/custom-rbac-for-developers) can be set up in Azure AD for service principals to authorize which permissions it will be allowed. (We treat roles slightly different than described in the Azure AD documentation. Rather than a role being a combination of permissions, each role is aligned to a single Azure DevOps permission.) All of the roles to choose from can be found on this list of [Azure DevOps scopes](./oauth.md?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops#scopes).
+[App-only roles](/azure/active-directory/develop/custom-rbac-for-developers) can be set up in Azure AD for service principals to authorize which permissions it will be allowed. (We treat roles slightly different than described in the Azure AD documentation. Rather than a role being a combination of permissions, each role is aligned to a single Azure DevOps permission.) All of the roles to choose from can be found on this list of [Azure DevOps scopes](./oauth.md#scopes).
 
 To [assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration, you can do this in the Azure portal or programmatically by using [Microsoft Graph](https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0&tabs=http). Since these are application permissions, each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permission. For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
 
@@ -67,7 +67,7 @@ To add the service principal to the organization, you will need to enter the app
 
 Once added to the organization, you can also manage access through [permissions and security groups](../../../organizations/security/permissions.md) in the same way as you do for users. A few notable differences have been outlined below:
 * At this time, service principals do not display in the list of Azure AD group members on Azure DevOps. However, so long as the service principal has been explicitly added to the organization, any permissions set on the Azure AD group will also apply to the service principals in the group.
-* [Group rules](./assign-access-levels-by-group-membership.md) do not apply to service principals. In order to set access levels or project memberships on top of service principals, you can [directly set them](../../../organizations/security/change-access-levels.md).
+* [Group rules](../../../organizations/accounts/assign-access-levels-by-group-membership.md) do not apply to service principals. In order to set access levels or project memberships on top of service principals, you can [directly set them](../../../organizations/security/change-access-levels.md).
 * Service principals may not be available in all user dropdowns throughout the product yet.
 
 #### Call Azure DevOps REST APIs with service principal token
