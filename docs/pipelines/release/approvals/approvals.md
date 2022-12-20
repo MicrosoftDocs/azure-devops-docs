@@ -18,16 +18,26 @@ With Azure release pipelines, You can enable manual deployment approvals for eac
 
 ## Deployment approvals
 
-You can set up approvals at the start of a stage (pre-deployment approvals), at the end of a stage (post-deployment approvals), or for both. For details of how to define and use approvals, see [Add approvals within a release pipeline](../define-multistage-release-process.md#add-approvals).
+You can set up approvals at the start of a stage (pre-deployment approvals), at the end of a stage (post-deployment approvals), or for both.
 
-* For a **pre-deployment** approval, choose the icon at the entry point of the stage
-   and enable pre-deployment approvers.
-* For a **post-deployment** approval, choose the icon at the exit point of the stage
-   and enable post-deployment approvers.
+### Pre-deployment approvals
 
-You can add multiple approvers for both pre-deployment and post-deployment settings.
-These approvers can be individual users or groups of users. These users must have the
-[View releases](../../policies/permissions.md#set-release-permissions) permission.
+1. Select your classic release pipeline, and then select the **Pre-deployment conditions** icon and then click the toggle button to enable **Pre-deployment approvals**.
+
+1. Add your **Approvers** and then choose the **Timeout** period. You can add multiple users or groups to the list of approvers. You can also select your **Approval policies** depending on your deployment workflow.
+
+    :::image type="content" source="media/pre-deployment-approvals.png" alt-text="A screenshot showing how to set up pre-deployment approvals.":::
+
+### Post-deployment approvals
+
+1. Select your classic release pipeline, and then select the **Post-deployment conditions** icon and then click the toggle button to enable **Post-deployment approvals**.
+
+1. Add your **Approvers** and then choose the **Timeout** period. You can add multiple users or groups to the list of approvers. You can also select your **Approval policies** depending on your deployment workflow.
+
+    :::image type="content" source="media/post-deployment-approvals.png" alt-text="A screenshot showing how to set up post-deployment approvals.":::
+
+> [!NOTE]
+> Deployment approvers must have **View releases** [permissions](../../policies/permissions.md#set-release-permissions).
 
 
 When a group is specified as an approver, only one of the users in that group needs to approve
