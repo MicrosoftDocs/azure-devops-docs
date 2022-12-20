@@ -53,20 +53,18 @@ If no approval is granted within the **Timeout** period, the deployment will be 
 
 ### Approval notifications
 
-Notifications such as an email message can be sent to the approver(s) defined for
-each approval step. Configure recipients and settings in the **Notifications** section of the 
-[project settings page](../../../project/navigation/go-to-service-page.md#open-project-settings).
+You can enable notifications from your project settings to subscribe to release events. Emails are sent to approvers with links to the summary page where they can approve/reject the release. 
 
-![configuring notifications for manual approvals](media/notifications.png)
-  
-The link in the email message opens the **Summary** page for the release
-where the user can approve or reject the release.
+1. From your project, select ![gear icon](../../../media/icons/gear-icon.png) **Project settings**.
+
+1. Select **Notifications** from the left navigation pane, and then select **New subscription** > **Release** to add a new event subscription.
+
+    :::image type="content" source="media/project-notifications.png" alt-text="A screenshot showing project notifications.":::
 
 ## Related articles
 
-* [Approvals and gates overview](index.md)
-* [Manual intervention](../deploy-using-approvals.md#set-up-manual-intervention)
-* [Stages](../../process/stages.md)
-* [Triggers](../triggers.md)
+- [Release gates and approvals](index.md)
+- [Use gates and approvals to control your deployment](../deploy-using-approvals.md)
+- [Add stages, dependencies, & conditions](../../process/stages.md)
+- [Release triggers](../triggers.md)
 
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
