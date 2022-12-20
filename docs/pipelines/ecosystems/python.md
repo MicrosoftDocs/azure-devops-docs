@@ -3,7 +3,7 @@ title: Quickstart - Use Azure Pipelines to build and publish a Python app
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 10/11/2022
+ms.date: 12/20/2022
 monikerRange: '>=azure-devops-2019'
 ms.custom: devx-track-python, freshness-fy22q2
 ---
@@ -12,21 +12,25 @@ ms.custom: devx-track-python, freshness-fy22q2
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. 
+You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. This quickstart walks through how to create a simple Flask app with three pages that use a common base template and deploy it with Azure DevOps. 
 
-This quickstart walks through how to create a simple Flask app with three pages that use a common base template and deploy it with Azure DevOps. 
+You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
+
+To learn about configuring Python in pipelines, see [Customize Python](customize-python.md).
 
 If you want a more complex example, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
-## Create your first pipeline
+## Prerequisites
 
-::: moniker range=">=azure-devops-2020"
+You must have the following items in Azure DevOps:
 
-New to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
-::: moniker-end
 
-### Get the code
+## 1 - Fork the sample code
+
 ::: moniker range="azure-devops-2019"
 
 Import this repo into your Git repo in Azure DevOps Server 2019:
@@ -35,60 +39,86 @@ Import this repo into your Git repo in Azure DevOps Server 2019:
 
 ::: moniker range=">=azure-devops-2020"
 
-Import this repo into your Git repo:
+For the following sample Python Flask tutorial:
 
 ::: moniker-end
-
 
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 
-::: moniker range=">=azure-devops-2020"
-
-## Sign in to Azure Pipelines
-
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
-
-[!INCLUDE [include](includes/create-project.md)]
-
-::: moniker-end
-
-### Create the pipeline
+## 2 - Create your pipeline
 
 ::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
 
-When the **Configure** tab appears, select **Python package** to create a Python package to test on multiple Python versions.
+1. Go to your project and select **Pipelines** > **Create a new pipeline**.
 
-1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+1. Select **GitHub** as the location of your source code.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
 
-2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+1. When the list of repositories appears, select your Node.js sample repository.
 
-   If you want to watch your pipeline in action, select the build job.
+1. Azure Pipelines analyzes the code in your repository and recommends the `Python package` template for your pipeline. Select that template.
 
-   You just ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+1. Azure Pipelines generates a YAML file for your pipeline. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
 
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+1. A new run starts. Wait for the run to finish.
 
-3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+When you're done, you have a YAML file *azure-pipelines.yml* in your repository that's ready for you to customize.
 
-Read further to learn some of the more common ways to customize your pipeline.
+### Customize your pipeline
+
+1. Edit the `azure-pipelines.yml` file in your repository and update the Python version references.   
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+strategy:
+  matrix:
+    Python37:
+      python.version: '3.7'
+    Python38:
+      python.version: '3.8'
+    Python39:
+      python.version: '3.9'
+    Python310:
+      python.version: '3.10'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- script: |
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
+```
 
 ::: moniker-end
+
 
 ::: moniker range="azure-devops-2019"
 
-### YAML
+## 2 - Create your pipeline
+
 1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
 ``` yaml
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -108,13 +138,18 @@ steps:
 
 5. When you're ready to make changes to your pipeline, **Edit** it.
 
-Read further to learn some of the more common ways to customize your pipeline.
-
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
 
-## Build environment
+## 3 - Run your pipeline
 
-You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
+Save and run your pipeline. After your pipeline runs, verify that the jobs ran successfully. 
+    
+:::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
 
+## Next steps
+
+Congratulations, you've successfully completed this quickstart! To run Python scripts or run specific versions of Python, see [Configure Python](customize-python.md).
+
+> [!div class="nextstepaction"]
+> [Configure Python](customize-python.md)
