@@ -16,7 +16,7 @@ ms.date: 07/25/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md). Users can include human users, service accounts, and [service principals](./use-azure-active-directory-service-principals-managed-identities.md).
+Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md). Users can include human users, service accounts, and [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 The following types of users can join your Azure DevOps Services organization for free:
 
