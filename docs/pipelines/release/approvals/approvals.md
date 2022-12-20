@@ -1,6 +1,6 @@
 ---
 title: Control deployments with release approvals
-ms.custom: seodec18
+ms.custom: seodec18, engagement-fy23
 description: Understand release approvals in Azure Pipelines
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.topic: conceptual
