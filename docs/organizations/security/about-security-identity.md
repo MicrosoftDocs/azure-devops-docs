@@ -121,7 +121,7 @@ While the main types of accounts of interest are the human user accounts that yo
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Look up the organization owner](look-up-organization-owner.md). 
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals or managed identities**: [Azure AD applications or managed identities](./use-azure-active-directory-service-principals-managed-identities.md) that have been added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
+- **Service principals or managed identities**: [Azure AD applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that have been added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
@@ -180,7 +180,7 @@ and can't use
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
-- [Service principals or managed identities](../accounts/use-personal-access-tokens-to-authenticate.md) to generate Azure AD tokens on behalf of an application. Most actions traditionally done by a service account and a PAT can be done using a service principal or managed identity.
+- [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Azure AD tokens on behalf of an application or service, that typically automates some workflow that needs to access Azure DevOps resources. Most actions traditionally done by a service account and a PAT can be done using a service principal or managed identity.
 
 
 By default, your account or collection allows access for all authentication methods. 
