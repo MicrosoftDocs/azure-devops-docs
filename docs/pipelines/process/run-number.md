@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 11/04/2021
+ms.date: 12/21/2022
 monikerRange: '>= tfs-2018'
 ---
 
@@ -14,7 +14,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`.
+You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`. 
+
+In Azure DevOps `$(Rev:r)` is a special variable format that only works in the Build Number field. When a build is completed, if nothing else in the build number has changed, the `Rev` integer value increments by one.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
@@ -110,9 +112,9 @@ If you use an expression to set the build number, you can't use some tokens beca
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### How large can a run number be?
+### How large can a run number be and what characters can I use?
 
-Runs may be up to 255 characters.
+Runs may be up to 255 characters. Characters which are not allowed include `"`, `/`, `:`, `<`, `>`, `'`, `|`, `?`, `@`, and `*`. You cannot end with a `.`.
 
 ### In what time zone are the build number time values expressed?
 
