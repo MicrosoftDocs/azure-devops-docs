@@ -132,7 +132,7 @@ Previously, when you used a matrix to expand jobs or a variable to identify a po
 
 Flaky tests can affect developers' productivity since test failures may not be related to the changes under test. They can also impact the quality of shipped code. This is why we added in-product support for flaky test management. This functionality supports end-to-end lifecycle with detection, reporting and resolution. Flaky test management supports system and custom detection. 
 
-System detection is available via VSTest task rerun capability. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. All further executions of test for the same branch are also marked flaky until its resolved and unmarked. You can also plug in your custom detection mechanism using our APIs. Once a test is identified as flaky, you can get the details in the in-context test report in the pipeline. You can then decide whether the flaky tests impact your pipeline failure. By default, flaky test information is available as additional meta-data.  
+System detection is available via VSTest task rerun capability. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. All further executions of test for the same branch are also marked flaky until it's resolved and unmarked. You can also plug in your custom detection mechanism using our APIs. Once a test is identified as flaky, you can get the details in the in-context test report in the pipeline. You can then decide whether the flaky tests impact your pipeline failure. By default, flaky test information is available as additional meta-data.  
 
 > [!div class="mx-imgBorder"]
 > ![In-product support for flaky test management.](../../media/155_13.png)
@@ -146,7 +146,7 @@ For more details about flaky test management, see the documentation [here](/azur
 
 ### Improvements to the Deployment Center for WebApp in the Azure portal
 
-We've improved the Deployment Center for WebApp in the Azure portal with support for pipelines with multiple artifacts. Now, if a non-primary artifact of Azure Pipelines is deployed on the web app, you'll get relevant details from the Azure portal. You will also have a deep link to the deployed repo to navigate directly to the repo from the Azure portal. The repo can be hosted in Azure Repos or in GitHub.
+We've improved the Deployment Center for WebApp in the Azure portal with support for pipelines with multiple artifacts. Now, if a non-primary artifact of Azure Pipelines is deployed on the web app, you'll get relevant details from the Azure portal. You'll also have a deep link to the deployed repo to navigate directly to the repo from the Azure portal. The repo can be hosted in Azure Repos or in GitHub.
 
 ### CI triggers for new branches
 
