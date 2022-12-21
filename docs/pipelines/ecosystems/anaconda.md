@@ -127,7 +127,6 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 > To resolve, use the `--name` argument and a unique identifier in the argument value,
 > like a concatnation with the `$(Build.BuildNumber)` build variable.
 
-
 ### Install packages from Anaconda
 
 The following YAML installs the `scipy` package in the conda environment named `myEnvironment`.
