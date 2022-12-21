@@ -29,7 +29,7 @@ A deployment job doesn't automatically clone the source repo. You can checkout t
 
 ## Schema
 
-Here is the full syntax to specify a deployment job: 
+Here's the full syntax to specify a deployment job: 
 
 ```YAML
 jobs:
@@ -66,7 +66,7 @@ environment:
     tags: string # List of tag filters.
 ```
 
-For virtual machines, you do not need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
+For virtual machines, you don't need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 ## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
@@ -127,7 +127,7 @@ strategy:
           ...
 ```
 
-If you are using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
+If you're using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
 
 ```yaml
   jobs:
@@ -374,7 +374,7 @@ jobs:
 ```
 ## Use pipeline decorators to inject steps automatically
 
-[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be applied as part of enforcing safe deployment practices.
 
 In addition, deployment jobs can be run as a [container job](container-phases.md) along with [services side-car](service-containers.md) if defined.
 
@@ -543,7 +543,7 @@ Learn more about how to [set a multi-job output variable](variables.md#set-a-mul
 
 ### My pipeline is stuck with the message "Job is pending...". How can I fix this?
  
-This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
+This can happen when there's a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names don't contain keywords. If renaming doesn't fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
 
 ### Are decorators supported in deployment groups?
 
