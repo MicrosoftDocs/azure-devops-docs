@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`. 
 
-In Azure DevOps `$(Rev:r)` is a special variable format that only works in the Build Number field. When a build is completed, if nothing else in the build number has changed, the `Rev` integer value increments by one.
+In Azure DevOps `$(Rev:r)` is a special variable format that only works in the build number field. When a build is completed, if nothing else in the build number has changed, the `Rev` integer value increases by one.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
