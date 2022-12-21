@@ -122,7 +122,7 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 > argument: `conda env create --quiet --force --file environment.yml`.
 
 > [!NOTE]
-> If you are using self-hosted agents that are sharing storage, and running jobs in parallel, 
+> If you are using self-hosted agents that are sharing storage, and running jobs in parallel 
 > using the same Anaconda environments, there may be clashes between those environments. 
 > To resolve, use the `--name` argument and a unique identifier in the argument value,
 > like a concatnation with the `$(Build.BuildNumber)` build variable.
