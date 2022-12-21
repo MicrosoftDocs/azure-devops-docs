@@ -29,8 +29,19 @@ Starting with Sprint 215, REST API calls to:
 [Authorize Definition Resources](https://learn.microsoft.com/rest/api/azure/devops/build/resources/authorize-definition-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
 [Authorize Project Resources](https://learn.microsoft.com/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) will require a PAT with scope `Pipeline Resources Use and Manage`
 
-### TBD2
+### GA of templates support in YAML editor
 
+[Templates](https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](https://docs.microsoft.com/azure/devops/pipelines/security/templates?view=azure-devops) through your pipeline.
 
-### TBD3
+Azure Pipelines supports a YAML editor, which can be quite handy when editing your pipeline. However the editor did not support templates until now. Authors of YAML pipelines could not get assistance through intellisense when using a template. Template authors could not make use of the YAML editor.  In this release, we are adding support for templates in the YAML editor. 
 
+As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. When you type in the name of your template, you will be prompted to validate your template. Once validated, the YAML editor understands the schema of the template including the input parameters.
+
+> [!div class="mx-imgBorder"]
+> ![Pipelines REST API Updates](../../media/214-pipelines-02.png)
+
+Post validation, you can choose to navigate into the template. You will be able to make changes to the template using all the features of the YAML editor.
+
+There are known limitations:
+If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In an ideal experience, the validation should not be blocked and you should be able to fill in the input parameters using intellisense.
+You cannot create a new template from the editor. You can only use or edit existing templates.
