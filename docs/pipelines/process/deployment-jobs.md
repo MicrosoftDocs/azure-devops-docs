@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 09/29/2021
+ms.date: 12/21/2022
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -387,8 +387,8 @@ To share variables between stages, output an [artifact](../artifacts/pipeline-ar
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['Deploy.StepA.VariableA']]`)
-- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<deployment-job-name>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['Deploy.StepA.VariableA']]`)
+- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<deployment-job-name>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
