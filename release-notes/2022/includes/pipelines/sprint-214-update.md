@@ -4,8 +4,9 @@ ms.author: ckanyika
 ms.date: TBD
 ms.topic: include
 ---
-### TBD
+### Support for Tokyo version of ServiceNow
 
+Azure Pipelines has an existing integration with ServiceNow. The integration relies on an [app](https://store.servicenow.com/sn_appstore_store.do#!/store/application/fa788cb5dbb5630040669c27db961940) in ServiceNow and an [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) in Azure DevOps. We've now updated the app to work with the Quebec version of ServiceNow. Both classic and YAML pipelines now work with Quebec. To ensure that this integration works, upgrade to the new version of the app (4.188.0) from the Service Now store. For more information, see [Integrate with ServiceNow Change Management](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/servicenow?view=azure-devops&preserve-view=true).
 
 
 ### New Predefined System Variable
