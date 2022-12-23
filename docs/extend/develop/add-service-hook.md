@@ -44,7 +44,7 @@ This article walks through developing an extension that implements a **sample co
 :::image type="content" source="media/consumer-service.png" alt-text="Sample consumer service":::
 
 - For those who are more learn by example persons, here is the link to the complete extension example GitHub project: [Extension example GitHub repo](https://github.com/microsoft/vsts-extension-samples/tree/master/service-hooks-consumer)
-- List of all supported events you can use as triggers for your custom consumer extension: [List of event types](https://learn.microsoft.com/en-gb/azure/devops/service-hooks/events?view=azure-devops)
+- List of all supported events you can use as triggers for your custom consumer extension: [List of event types](../../service-hooks/events.md)
 
 
 ## Create the extension
@@ -154,7 +154,7 @@ Action for your custom consumer has the following properties:
 | id                  | id for your action service.                                                                                                                                                          |
 | name                | Name of the the action                                                                                                                                                               |
 | description         | More detailed description of the action                                                                                                                                              |
-| supportedEventTypes | Array of trigger types for which this action can be used. More info at: [List of event types](https://learn.microsoft.com/en-gb/azure/devops/service-hooks/events?view=azure-devops) |
+| supportedEventTypes | Array of trigger types for which this action can be used. More info at: [List of event types](../../service-hooks/events.md) |
 | publishEvent.url    | URL where HTTP message will be sent to. It can be tempalted by values provided by inputDescriptors. Their actual values are defined by user when subscription is beeing created.     |
 |                     |
 
@@ -172,4 +172,4 @@ Now you can deploy your extension to your Azure DevOps organization and test it.
 - [Create a service hook subscription programmatically](../../service-hooks/create-subscription.md)
 - [Test and debug extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Extension example GitHub repo](https://github.com/microsoft/vsts-extension-samples/tree/master/service-hooks-consumer)
-- [List of event types](https://learn.microsoft.com/en-gb/azure/devops/service-hooks/events?view=azure-devops)
+- [List of event types](../../service-hooks/events.md)
