@@ -17,7 +17,7 @@ ms.date: 12/27/2022
 
 With service hooks, you can notify third-party systems about events that occur in your project. You can use a custom consumer to send an HTTP message to the endpoint that’s defined in the extension's manifest.
 
-This article walks through developing an extension that implements a **sample consumer service** that includes the following events and actions.
+This article walks through developing an extension that implements a **sample consumer service**, which includes the following events and actions.
 
 - Supported events that trigger the following actions:
   - Code pushed
@@ -46,9 +46,9 @@ This is a general description of how all our service hook implementations work. 
 
 ## Create the extension
 
-1. [See how to create your extension from scratch.](../get-started/node.md).
+1. [See how to create your extension from scratch](../get-started/node.md).
 
-2. Add the specific contribution for custom consumer implementation to your basic [manifest file](./manifest.md). See the following example of how should your manifest look after you add the contribution.
+2. Add the specific contribution for custom consumer implementation to your basic [manifest file](./manifest.md). See the following example of how your manifest should look after you add the contribution.
 
 ```json
 {
@@ -126,40 +126,40 @@ This is a general description of how all our service hook implementations work. 
     ]
 }
 ```
+
 > [!NOTE]
 > Remember to update the `publisher` property.
 
 
 For each contribution in your extension, the manifest defines the following items.
-- Type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case,
-- Contribution target - consumer services (ms.vss-servicehooks.consumers) in this case,
-- Properties that are specific to each type of contribution. 
+- Type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case
+- Contribution target - consumer services (ms.vss-servicehooks.consumers) in this case
+- Properties that are specific to each type of contribution
 
-For a consumer, we have the following properties.
+Consumers have the following properties.
 
 | Property         | Description                                                                             |
 | ---------------- | --------------------------------------------------------------------------------------- |
-| id               | Unique id for your consumer service.                                                 |
-| name             | Name of the custom consumer. Will be visible during Service Hook subscription creation. |
+| id               | Unique ID for your consumer service.                                                 |
+| name             | Name of the custom consumer, which is visible during service hook subscription creation. |
 | description      | Describes your consumer service.                                                        |
-| informationUrl   | Website where you can find more info about your extension.                                    |
+| informationUrl   | Find more info about your extension.                                    |
 | inputDescriptors | Inputs to be used by users that are creating subscriptions with the consumer service.   |
-| actions          | Describes the actions to take and which events trigger them.                            |
+| actions          | Describes the actions to take and which events trigger those actions.                            |
 
-Action for your custom consumer has the following properties:
+Actions for your consumer have the following properties:
 
 | Property            | Description                                                                                                                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id                  | id for your action service.                                                                                                                                                        |
-| name                | Name of the action                                                                                                                                                               |
-| description         | More detailed description of the action                                                                                                                                              |
-| supportedEventTypes | Array of trigger types for which this action can be used. More info at: [List of event types](../../service-hooks/events.md) |
-| publishEvent.url    | URL where HTTP message gets sent to. It can be templated by values provided by inputDescriptors. Their actual values are defined by the user when subscription gets created.    |
-|                     |
+| id                  | ID for your action service.                                                                                                                                                        |
+| name                | Name of the action.                                                                                                                                                               |
+| description         | Detailed description of the action.                                                                                                                                              |
+| supportedEventTypes | Array of trigger types for which this action can be used. For more information, see [List of event types](../../service-hooks/events.md). |
+| publishEvent.url    | URL where HTTP message gets sent to. It can be templated by values provided by inputDescriptors. Their actual values get defined by the user when the subscription gets created.    |
+
+3. Deploy your extension to your Azure DevOps organization and test it.
 
 ## Next steps
-
-Deploy your extension to your Azure DevOps organization and test it.
 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
