@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 12/27/2022
 --- 
 
 
@@ -21,7 +21,7 @@ ms.date: 04/04/2022
 You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Azure Active Directory to add and manage new users through security groups. However, to enable flexibility for all size organizations, the following operations are supported: 
  
 - Team and project administrators can add new users to their team or project, unless the policy [Allow team and project administrators to invite new users](restrict-invitations.md) is disabled. New users are ones that haven't been added to the organization. 
-- When adding new users through the team and project user interfaces, the system automatically assigns an access level to the user. 
+- When you add new users through the team and project user interfaces, the system automatically assigns an access level to the user. 
 - Adding users to a team or project automatically adds them to the Contributors group for the project. Members of the Contributors group have permissions to most features needed to contribute.
 - By adding users to a team, you make team-specific tools aware of them, such as the team security group, Team Members widget, and sprint capacity planning tools. 
 - Once users have been added to a project or organization, you can browse for their display name or user name (email alias) from any people-picker tool.
@@ -233,7 +233,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 	   :::column-end:::
 	:::row-end:::
 
-	 When adding a new user, the system assigns Stakeholder as the access level when all free five Basic access levels have been assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level and resend invitations from the [**Organization Settings>Users** page](#manage-users).  
+	 When you add a new user, the system assigns Stakeholder as the access level when all free five Basic access levels have been assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level and resend invitations from the [**Organization Settings>Users** page](#manage-users).  
 
 	 > [!NOTE]
 	 > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
@@ -381,7 +381,9 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 ::: moniker-end
 
 ---
-
+    > [!TIP]
+    > The displayed total count stops incrementing at 500, but you can still add more users.
+    > :::image type="content" source="media/add-users/total-team-members.png" alt-text="Screenshot showing total team members.":::
 
 ## Remove users or groups from a team 
 
@@ -500,7 +502,7 @@ As a member of the Project Administrators group, you can add members to a projec
 	   :::column-end:::
 	:::row-end:::
 
-	 When adding a new user, the system assigns Stakeholder as the access level when all free five Basic access levels have been assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level from the [**Organization Settings>Users** page](#manage-users).  
+	 When you add a new user, the system assigns Stakeholder as the access level when all free five Basic access levels have been assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level from the [**Organization Settings>Users** page](#manage-users).  
 
 	 > [!NOTE]
 	 > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
