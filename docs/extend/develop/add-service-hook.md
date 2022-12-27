@@ -1,57 +1,54 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Service hooks custom consumer
-description: Learn how to create a custom consumer service for service hooks in Azure DevOps.
+title: Create a custom consumer for service hooks
+description: Learn how to create a custom consumer for service hooks in Azure DevOps.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.custom: engagement-fy23
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 12/23/2022
+ms.date: 12/27/2022
 ---
 
-# Service hooks custom consumer
+# Create a custom consumer for service hooks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With service hooks, you can notify third-party systems about events happening in your project. Using extensions you can do your custom action by sending an HTTP message to the endpoint defined in the extension's manifest. We call this Custom Consumer for Service Hooks.
+With service hooks, you can notify third-party systems about events that occur in your project. You can use a custom consumer to send an HTTP message to the endpoint that’s defined in the extension's manifest.
+
+This article walks through developing an extension that implements a **sample consumer service** that includes the following events and actions.
+
+- Supported events that trigger the following actions:
+  - Code pushed
+  - Pull request created
+  - Pull request updated
+- Supported actions to take when events occur:
+  - Do action (Send HTTP message)
+
+> [!NOTE]
+> In this article, we refer to the home directory for your project as "home".
+
+:::image type="content" source="media/consumer-service.png" alt-text="Sample consumer service":::
+
+For more information, see the [Extension example GitHub repo](https://github.com/microsoft/vsts-extension-samples/tree/master/service-hooks-consumer).
+For a list of all supported events you can use as triggers for your custom consumer extension, see [List of event types](../../service-hooks/events.md).
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## How service hooks work
 
-Service hook **publishers** define a set of *events*. **Subscriptions** listen and wait for the *events* they also define **actions** to be taken when the event is triggered.
+Service hook **publishers** define a set of *events*. **Subscriptions** listen and wait for the *events* and define **actions** for when the event is triggered.
 
 :::image type="content" source="media/service-hooks.png" alt-text="Service hooks diagram":::
 
-This is a general description of how all our Service Hooks implementations work. For our particular case, we will specify our consumer defined by extension and do specific action which will be taken when an event occurs.
-
-## Custom consumer service
-
-This article walks through developing an extension that implements a **sample consumer service** that includes:
-
-- Supported events that trigger actions to be taken
-  - Code pushed
-  - Pull request created
-  - Pull request updated
-- Supported actions to take when events occur
-  - Do action (Send HTTP message)
-
-> [!NOTE]
-> This article refers to the home directory for your project as "home".
-
-:::image type="content" source="media/consumer-service.png" alt-text="Sample consumer service":::
-
-- For those who are more learn by example persons, here is the link to the complete extension example GitHub project: [Extension example GitHub repo](https://github.com/microsoft/vsts-extension-samples/tree/master/service-hooks-consumer)
-- List of all supported events you can use as triggers for your custom consumer extension: [List of event types](../../service-hooks/events.md)
-
+This is a general description of how all our service hook implementations work. For our case, we specify our consumer defined by an extension, as well as the specified action for when an event occurs.
 
 ## Create the extension
 
-1. Follow this [link](../get-started/node.md) where is described, how you can create your extension from the scratch.
+1. [See how to create your extension from scratch.](../get-started/node.md).
 
-2. Add the specific contribution for custom consumer implementation to your basic [manifest file](./manifest.md). Example of how should your manifest look after you add the contribution:
+2. Add the specific contribution for custom consumer implementation to your basic [manifest file](./manifest.md). See the following example of how should your manifest look after you add the contribution.
 
 ```json
 {
@@ -130,20 +127,22 @@ This article walks through developing an extension that implements a **sample co
 }
 ```
 > [!NOTE]
-> Note: Dont forget to update the `publisher` property.
+> Remember to update the `publisher` property.
 
 
-For each contribution in your extension, the manifest defines
-- the type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case,
-- the contribution target - consumer services (ms.vss-servicehooks.consumers) in this case,
-- and the properties that are specific to each type of contribution. For a consumer service we have:
+For each contribution in your extension, the manifest defines the following items.
+- Type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case,
+- Contribution target - consumer services (ms.vss-servicehooks.consumers) in this case,
+- Properties that are specific to each type of contribution. 
+
+For a consumer, we have the following properties.
 
 | Property         | Description                                                                             |
 | ---------------- | --------------------------------------------------------------------------------------- |
-| id               | Unique id for your consumer service.                                                    |
+| id               | Unique id for your consumer service.                                                 |
 | name             | Name of the custom consumer. Will be visible during Service Hook subscription creation. |
 | description      | Describes your consumer service.                                                        |
-| informationUrl   | Where more info can be found about your extension.                                      |
+| informationUrl   | Website where you can find more info about your extension.                                    |
 | inputDescriptors | Inputs to be used by users that are creating subscriptions with the consumer service.   |
 | actions          | Describes the actions to take and which events trigger them.                            |
 
@@ -151,16 +150,16 @@ Action for your custom consumer has the following properties:
 
 | Property            | Description                                                                                                                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id                  | id for your action service.                                                                                                                                                          |
-| name                | Name of the the action                                                                                                                                                               |
+| id                  | id for your action service.                                                                                                                                                        |
+| name                | Name of the action                                                                                                                                                               |
 | description         | More detailed description of the action                                                                                                                                              |
 | supportedEventTypes | Array of trigger types for which this action can be used. More info at: [List of event types](../../service-hooks/events.md) |
-| publishEvent.url    | URL where HTTP message will be sent to. It can be tempalted by values provided by inputDescriptors. Their actual values are defined by user when subscription is beeing created.     |
+| publishEvent.url    | URL where HTTP message gets sent to. It can be templated by values provided by inputDescriptors. Their actual values are defined by the user when subscription gets created.    |
 |                     |
 
 ## Next steps
 
-Now you can deploy your extension to your Azure DevOps organization and test it.
+Deploy your extension to your Azure DevOps organization and test it.
 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
