@@ -114,7 +114,7 @@ Do every part of [1. Create a custom task](#1-create-a-custom-task) within the `
    tsc --init --target es6
    ```
 
-To ensure the ES6 (rather than ES5) standard is used, we added the `--target es6` parameter.
+   To ensure the ES6 (rather than ES5) standard is used, we added the `--target es6` parameter.
 
 ### Create custom task
 
@@ -155,28 +155,28 @@ Now that the scaffolding is complete, we can create our custom task.
             "target": "index.js"
         }
     }
-}
+    }
    ```
 
-   **task.json components**
+**task.json components**
 
-   See the following descriptions of some of the components of the `task.json` file.
+See the following descriptions of some of the components of the `task.json` file.
 
-   | Property             | Description                                                                                                                |
-   | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-   | `id`                 | A unique GUID for your task.                                                                                                |
-   | `name`               | Name with no spaces.                                                                                                        |
-   | `friendlyName`       | Descriptive name (spaces allowed).                                                                                          |
-   | `description`        | Detailed description of what your task does.                                                                                |
-   | `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
-   | `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
-   | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
-   | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
-   | `execution`          | Execution options for this task, including scripts.                                                                         
-   | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
+| Property             | Description                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `id`                 | A unique GUID for your task.                                                                                                |
+| `name`               | Name with no spaces.                                                                                                        |
+| `friendlyName`       | Descriptive name (spaces allowed).                                                                                          |
+| `description`        | Detailed description of what your task does.                                                                                |
+| `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
+| `instanceNameFormat` | How the task displays within the build/release step list. You can use variable values by using **$(variablename)**. |
+| `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
+| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
+| `execution`          | Execution options for this task, including scripts.                                                                         
+| `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
 
-   > [!NOTE]
-   > For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
+> [!NOTE]
+> For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
 
 3. Create an `index.ts` file by using the following code as a reference. This code runs when the task gets called.
 
@@ -235,7 +235,7 @@ run();
     Hello Human
    ```
 
-This time, the task succeeded because `samplestring` was supplied, and it correctly outputted "Hello Human"!
+This time, the task succeeded because `samplestring` was supplied and it correctly outputted "Hello Human"!
 
 <a name="testscripts"></a>
 
@@ -278,9 +278,9 @@ We unit test to quickly test the task script, and not the external tools that it
     });
     ```
 
-> [!TIP]
-> Your test folder should be located in the buildandreleasetask folder. If you get a sync-request error, you can work around it by adding sync-request to the buildandreleasetask folder with the command
-> `npm i --save-dev sync-request`.
+   > [!TIP]
+   > Your test folder should be located in the buildandreleasetask folder. If you get a sync-request error, you can work around it by adding sync-request to the buildandreleasetask folder with the command
+   > `npm i --save-dev sync-request`.
 
 3. Create a `success.ts` file in your test directory with the following contents. This file creation simulates running the task and mocks all calls to outside methods.
 
@@ -297,7 +297,7 @@ We unit test to quickly test the task script, and not the external tools that it
     tmr.run();
     ```
 
-The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
+   The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
 
 
 4. Add the following example success test to your `_suite.ts` file to run the task mock runner.
@@ -335,7 +335,7 @@ The success test validates that with the appropriate inputs, it succeeds with no
     tmr.run();
     ```
 
-The failure test validates that when the tool gets bad or incomplete input, it fails in the expected way with helpful output.
+   The failure test validates that when the tool gets bad or incomplete input, it fails in the expected way with helpful output.
 
 6. Add the following code to your `_suite.ts` file to run the task mock runner.
 
@@ -365,11 +365,11 @@ The failure test validates that when the tool gets bad or incomplete input, it f
     mocha tests/_suite.js
     ```
 
-Both tests should pass. If you want to run the tests with more verbose output (what you'd see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
+   Both tests should pass. If you want to run the tests with more verbose output (what you'd see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
 
-  ```
-  $env:TASK_TEST_TRACE=1
-  ```
+   ```
+   $env:TASK_TEST_TRACE=1
+   ```
 
 <a name="extensionmanifest"></a>
 
