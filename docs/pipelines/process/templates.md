@@ -97,6 +97,22 @@ steps:
 - ${{ each value in parameters.listOfStrings }}:
   - script: echo ${{ value }}
 ``` 
+Additionally you can iterate through nested elements within an object
+```yaml
+parameters:
+- name: listOfFrutis
+  type: object
+  default:
+  - fruitName: 'apple'
+    colors: ['red','green']
+  - fruitName: 'lemon'
+    colors: ['yellow']
+
+steps:
+- ${{ each fruit in parameters.listOfFrutis }} :
+  -${{ each fruitColor in fruit.colors}} :
+    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }}
+``` 
 
 ## Extend from a template
 
