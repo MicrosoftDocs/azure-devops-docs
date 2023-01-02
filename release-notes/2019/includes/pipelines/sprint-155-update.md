@@ -93,7 +93,7 @@ We've made updates to several of the Azure Pipelines hosted VM images. You can f
 * For VS2017 and VS2019:
     * Added Azul Java 7
     * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/) to match host kernel version
-    * Added Az Powershell module v2.3.2
+    * Added Az PowerShell module v2.3.2
     * Pinned Mercurial to v5.0.0
     * Updated Python to versions 2.7.16, 3.4.4, 3.5.4, 3.6.8, 3.7.4
     * Added Portable Class Library (VS 2019 only)
