@@ -34,7 +34,7 @@ If a check passes, then the pipeline is allowed access to a protected resource a
 
 The recommended implementation of the async mode for a single Azure Function check is depicted in the following diagram.
 
-:::image type="content" source="media/checks/async_checks.png" alt-text="The recommended implementation of the async mode for a single Azure Function check.":::
+:::image type="content" source="media/checks/async_checks.png" alt-text="Diagram that shows the recommended implementation of the async mode for a single Azure Function check.":::
 
 The steps in the diagram are:
 1. Check Delivery. Azure Pipelines prepares to deploy a pipeline stage and requires access to a protected resource. It invokes the corresponding Azure Function check and expects receipt confirmation, by the call ending with an HTTP 200 status code. Stage deployment is paused pending a decision.
@@ -53,8 +53,8 @@ In the Azure Function / REST API check configuration panel, make sure you:
 
 Setting the _Time between evaluations_ to a non-zero value means the check decision (pass / fail) isn't final. The check will be reevaluated until all other Approvals & Checks reach a final state. 
 
-> [!NOTE]
-> In the near future, the _Time between evaluations_ will be removed, and a value of 0 will be used instead.
+<!-- > [!NOTE]
+> In the near future, the _Time between evaluations_ will be removed, and a value of 0 will be used instead. -->
 
 ### Pass pipeline run information to checks
 
@@ -163,8 +163,8 @@ To use this Azure Function check, you need to specify the following `Headers` wh
 
 Currently, Azure Pipelines evaluates a single check instance at most 2,000 times.
 
-> [NOTE!]
-> In the near future, Azure Pipelines will attempt at most 10 times to deliver the check payload to your Azure Function / REST API check. A successful delivery is defined as an HTTP code lower than 400, received within 3 seconds. When the limit is reached without a successful delivery, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable.
+<!-- > [NOTE!]
+> In the near future, Azure Pipelines will attempt at most 10 times to deliver the check payload to your Azure Function / REST API check. A successful delivery is defined as an HTTP code lower than 400, received within 3 seconds. When the limit is reached without a successful delivery, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable. -->
 
 If your check doesn't call back into Azure Pipelines within the configured timeout, the associated stage will be skipped. Stages depending on it will be skipped as well.
 
@@ -174,7 +174,7 @@ In synchronous mode, Azure DevOps makes a call to the Azure Function / REST API 
 
 The implementation of the sync mode for a single Azure Function check is depicted in the following diagram.
 
-:::image type="content" source="media/checks/sync_checks.png" alt-text="The implementation of the sync mode for a single Azure Function check.":::
+:::image type="content" source="media/checks/sync_checks.png" alt-text="Diagram that shows the implementation of the sync mode for a single Azure Function check.":::
 
 The steps are:
 1. Azure Pipelines prepares to deploy a pipeline stage and requires access to a protected resource
@@ -195,8 +195,8 @@ The _Time between evaluations_ setting defines how long the check's decision is 
 
 The maximum number of evaluations is defined by the ratio between the _Timeout_ and _Time between evaluations_ values. We recommend you ensure this ratio is at most 10.
 
-> [!NOTE]
-> In the near future, Azure Pipelines will enforce there be at most 10 check retries.
+<!-- > [!NOTE]
+> In the near future, Azure Pipelines will enforce there be at most 10 check retries. -->
 
 ### Pass pipeline run information to checks
 
@@ -215,8 +215,8 @@ We don't recommend making calls into Azure DevOps in synchronous mode, because i
 
 Currently, Azure Pipelines evaluates a single check instance at most 2,000 times.
 
-> [NOTE!]
-> In the near future, Azure Pipelines will attempt at most 10 times to obtain a decision, regardless of the returned HTTP status code. If your check takes more than 3 seconds to return, Azure Pipelines will consider the attempt as failed. When the limit is reached without a positive decision, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable.
+<!-- > [NOTE!]
+> In the near future, Azure Pipelines will attempt at most 10 times to obtain a decision, regardless of the returned HTTP status code. If your check takes more than 3 seconds to return, Azure Pipelines will consider the attempt as failed. When the limit is reached without a positive decision, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable. -->
 
 ## When to use asynchronous vs synchronous checks
 
