@@ -100,7 +100,7 @@ steps:
 Additionally you can iterate through nested elements within an object
 ```yaml
 parameters:
-- name: listOfFrutis
+- name: listOfFruits
   type: object
   default:
   - fruitName: 'apple'
@@ -109,8 +109,8 @@ parameters:
     colors: ['yellow']
 
 steps:
-- ${{ each fruit in parameters.listOfFrutis }} :
-  -${{ each fruitColor in fruit.colors}} :
+- ${{ each fruit in parameters.listOfFruits }} :
+  - ${{ each fruitColor in fruit.colors}} :
     - script: echo ${{ fruit.fruitName}} ${{ fruitColor }}
 ``` 
 
