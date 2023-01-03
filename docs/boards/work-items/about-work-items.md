@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/03/2023
 ---
 
 # Track user stories, issues, bugs, and other work items in Azure Boards
@@ -124,6 +124,9 @@ Along with the work items types that appear on backlogs and boards, there are wo
    :::column span="1":::
       Feedback Request
    :::column-end:::
+   :::column span="1":::
+      Feedback Request
+   :::column-end:::
    :::column span="2":::
        Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).
    :::column-end:::
@@ -151,6 +154,9 @@ Along with the work items types that appear on backlogs and boards, there are wo
    :::column-end:::
 :::row-end:::
 :::row:::
+   :::column span="1":::
+      Shared Parameter
+   :::column-end:::
    :::column span="1":::
       Shared Parameter
    :::column-end:::
