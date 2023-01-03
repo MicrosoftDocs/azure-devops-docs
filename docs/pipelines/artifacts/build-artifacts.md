@@ -217,7 +217,7 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 ## Tips
 
-- Disable IIS Basic Authentication if you are using Azure DevOps Server to allow authentication with your Personal Access Token. See [IIS Basic Authentication and PATs](/azure/devops/integrate/get-started/authentication/iis-basic-auth) for more details.
+- Disable IIS Basic Authentication if you are using Azure DevOps Server to allow authentication with your Personal Access Token. See [IIS Basic Authentication and PATs](../../integrate/get-started/authentication/iis-basic-auth.md) for more details.
 
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
