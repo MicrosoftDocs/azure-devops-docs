@@ -217,6 +217,8 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 ## Tips
 
+- Disable IIS Basic Authentication if you are using Azure DevOps Server to allow authentication with your Personal Access Token. See [IIS Basic Authentication and PATs](/azure/devops/integrate/get-started/authentication/iis-basic-auth) for more details.
+
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
 - Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
