@@ -90,9 +90,9 @@ Your check implementation must use the [Post Event](/rest/api/azure/devops/distr
 You can provide status updates to Azure Pipelines users from within your checks using Azure Pipelines REST APIs. This functionality is useful, for example, if you wish to let users know the check is waiting on an external action, such as someone needs to approve a ServiceNow ticket.
 
 The steps to send status updates are:
-1. [Create a task log](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/create)
-1. [Append to the task log](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/logs/append-log-content)
-1. [Update timeline record](https://learn.microsoft.com/rest/api/azure/devops/distributedtask/records/update)
+1. [Create a task log](/rest/api/azure/devops/distributedtask/logs/create)
+1. [Append to the task log](/rest/api/azure/devops/distributedtask/logs/append-log-content)
+1. [Update timeline record](/rest/api/azure/devops/distributedtask/records/update)
 
 All REST API calls need to be authenticated.
 
@@ -105,7 +105,7 @@ In this [basic example](https://github.com/microsoft/azure-pipelines-extensions/
 The Azure Function goes through the following steps:
 1. Confirms the receipt of the check payload
 1. Sends a status update to Azure Pipelines that the check started
-1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the pipeline run's [Timeline](https://learn.microsoft.com/rest/api/azure/devops/build/timeline/get) entry
+1. Uses `{AuthToken}` to make a callback into Azure Pipelines to retrieve the pipeline run's [Timeline](/rest/api/azure/devops/build/timeline/get) entry
 1. Checks if the Timeline contains a task with `"id": "D9BAFED4-0B18-4F58-968D-86655B4D2CE9"` (the ID of the `CmdLine` task)
 1. Sends a status update with the result of the search
 1. Sends a check decision to Azure Pipelines 
