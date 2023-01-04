@@ -232,6 +232,17 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 1. Select **Grant access permission to all pipelines**, and then select **Save** when you are done.
 
+#### [YAML](#tab/yaml/)
+
+```yml
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: nuget.org
+```
 
 ## Related articles
 
