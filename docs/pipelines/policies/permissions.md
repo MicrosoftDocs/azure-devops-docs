@@ -6,7 +6,7 @@ description: Understand how you can set permissions at varying levels to securel
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: jukullam
 author: juliakm
-ms.date: 01/03/2023
+ms.date: 01/04/2023
 monikerRange: '<= azure-devops'
 ---
 
