@@ -14,7 +14,7 @@ The Invoke Azure Function / REST API Checks allow you to write code to decide if
 - **Asynchronous (Recommended)**: push mode, in which Azure DevOps awaits for the Azure Function / REST API implementation to call back into Azure DevOps with a stage access decision
 - **Synchronous**: poll mode, in which Azure DevOps periodically calls the Azure Function / REST API to get a stage access decision
 
-In the rest of this guide, we'll refer to Azure Function / REST API Checks as simply checks.
+In the rest of this guide, we'll refer to Azure Function / REST API Checks simply as checks.
 
 The recommended way to use checks is in asynchronous mode. This mode offers you the highest level of control over the check logic, makes it easy to reason about what state the system is in, and decouples Azure Pipelines from your checks implementation, providing the best scalability. All synchronous checks can be implemented using the asynchronous checks mode.
 
