@@ -243,6 +243,19 @@ steps:
     nuGetFeedType: external
     publishFeedCredentials: nuget.org
 ```
+#### [Classic](#tab/classic/)
+
+1. Select the Push **Command**.
+
+1. Select the **Path to NuGet package(s) to publish** or keep the default value. 
+
+1. Select **External NuGet server** for your **Target feed location**, and then select the service connection you created earlier.
+
+1. Select **Save & queue** when you are done.
+
+:::image type="content" source="media/push-to-nuget-org.png" alt-text="Screenshot showing how to configure the NuGet push task in Azure Pipelines":::
+
+* * *
 
 ## Related articles
 
