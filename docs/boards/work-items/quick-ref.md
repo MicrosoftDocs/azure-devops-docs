@@ -127,6 +127,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Add Features](../boards/kanban-epics-features-stories.md)  
       - [Add items to a backlog](../backlogs/create-your-backlog.md)  
       - [Add items to a Kanban board](../boards/kanban-quickstart.md)  
+      - [Add links](../backlogs/add-link.md)  
       - [Add tags](../queries/add-tags-to-work-items.md)  
       - [Add tasks](../sprints/add-tasks.md)  
       - [Add to discussion](../backlogs/add-work-items.md#capture-comments-in-the-discussion-section)    
