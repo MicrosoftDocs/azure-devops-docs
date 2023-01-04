@@ -105,6 +105,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       <br/> 
       - [Work item fields](guidance/work-item-field.md)  
       - [Work item form](about-work-items.md#work-item-form)  
+      - [Work item form controls](work-item-form-controls.md)  
       - [Work item templates](about-work-items.md#templates)  
       - [Work item types](about-work-items.md#work-item-types-wits)
       - [Work tracking limits](../../organizations/settings/work/object-limits.md)

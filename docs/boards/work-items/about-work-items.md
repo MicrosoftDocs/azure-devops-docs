@@ -18,43 +18,43 @@ ms.date: 01/04/2023
 
 Track the features and requirements you're developing, code defects or bugs, and other details using work items. Work items are similar to GitHub issues, but offer different types to track different types of information.
 
-::: moniker range=">= azure-devops-2019"
-
-You use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type. And work item types have a unique identifier within an organization or project collection. The available work item types depend on the [process you used when creating your project](guidance/choose-process.md) (Agile, Basic, Scrum, or CMMI).  
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-You use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type. And work item types have a unique identifier within an organization or project collection. The available work item types depend on the [process you used when your project was created](guidance/choose-process.md) (Agile, Scrum, or CMMI). 
-
-::: moniker-end
+You use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type. And, each work item is assigned a unique identifier within an organization or project collection. The available work item types depend on the [process you used when creating your project](guidance/choose-process.md).  
 
 If you're just getting started, read the information provided in this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
 
 <a id="wit" />
 
-## Work item types to track work
+## Track features, requirements, user stories, and bugs  
 
 To track different types of work, you choose a specific work item type. The work item types available to you differ depending on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)--**Agile**, **Basic**, **Scrum**, or **CMMI**--as illustrated in the following images. The items in your backlog might be called User Stories (Agile), Issues (Basic), Product Backlog Items (Scrum), or Requirements (CMMI). All four types are similar. They describe the customer value of the work and the work to do.    
 
 [!INCLUDE [temp](../includes/work-item-types.md)]
 
 Each work item type belongs to a category. Categories are used to group work item types and determine which types appear on backlogs and boards. 
-
-> [!div class="mx-tdBreakAll"]  
-> |Category | Work item type | Controls backlogs/boards |
-> |----------|----------------|--------------------------|
-> |Epic| Epic | Epic portfolio backlogs and boards |
-> |Feature| Feature | Feature portfolio backlogs and boards |
-> |Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
-> |Task | Task | Sprints Taskboards  |
-> |Bug | Bug | Dependent on [how bugs are tracked](#track)  | 
-> | N/A| Issue (Agile and CMMI)<br/>Impediment (Scrum)| Used to track non-work project elements that can impact work getting done.  |
+  
+|Category | Work item type | Controls backlogs/boards |
+|----------|----------------|--------------------------|
+|Epic  | Epic | Epic portfolio backlogs and boards |
+|Feature   | Feature | Feature portfolio backlogs and boards |
+|Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
+|Task   | Task | Sprints Taskboards  |
+|Bug   | Bug | Dependent on [how bugs are tracked](#track)  | 
+| N/A   | Issue (Agile and CMMI)<br/>Impediment (Scrum)| N/A. Used to track non-work project elements that can impact work getting done.  |
 
 For a list of other work item types available, see [Work item types to track testing, reviews, and feedback ](#wit-other) later in this article. 
 
+
+<a id="track"> </a>
+
+### Track bugs as requirements or tasks 
+
+Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and then treat them as a task. Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items? Or, should you track your bugs as tasks linked to those backlog items? How does your team estimate work?  
+
+Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+
+For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
+ 
  
 <a id="form" />
 
@@ -78,7 +78,7 @@ Common fields defined for all work item types display at the top of the work ite
 |**State**| New (Agile)<br/>To Do (Basic)<br/>New (Scrum)<br/>Proposed (CMMI) |The current state of the work item. All newly created work items are assigned to the work flow state associated with the *Proposed* workflow category This field allows you to update the status of a work item as it progresses from new or active to a done, closed, or completed state. | 
 |**Reason**| New (Agile)<br/>Added to backlog (Basic)<br/>New backlog item (Scrum)<br/>New (CMMI) |The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason.  | 
 |**Area** Path| user-dependent | Specifies a project-configured path used to group work items by product feature or team areas.  The default assignment depends on the web page used to define the work item. When created from a team backlog or board, then the team's default assignment is used.   | 
-|**Iteration** Path| user-dependent | Specifies a project-configured path used to group work items by named sprints or time periods.  The default assignment depends on the web page used to define the work item. When created from a team backlog or board, then the team's default assignment is used.<br/><br/>To schedule work items to be worked on during a specific time period, you assign the **Iteration Path**. First, you define the Iteration Paths for use in the project, and then each team selects the Iteration Paths that they'll use. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md).  |
+|**Iteration** Path| user-dependent | Specifies a project-configured path used to group work items by named sprints or time periods.  The default assignment depends on the web page used to define the work item. When created from a team backlog or board, then the team's default assignment is used. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md).  |
 |**Tags**| None | Tags are user-definable keywords or phrases that users can define or select from a list of added tags. Tags isn't a field similar to other fields, but a control available at the top of each work item form. To learn more, see [Add work item tags to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).  | 
 
 To learn more about each field, see [Work item field index](./guidance/work-item-field.md).  
@@ -93,14 +93,6 @@ The following images illustrate the natural progressions and regressions for Use
  
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
  
-
-### Area and Iteration Path
-
-You assign work items to an **Area Path** to group work items by team, product, or feature area. And, you assign work items to an **Iteration Path** to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths.
-
-You define area and iteration paths for a project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../../organizations/settings/about-areas-iterations.md). 
-
-
 <a id="assign" />
 <a id="assign-work-items"></a>
 
@@ -171,7 +163,7 @@ The **Deployment**, **Development** and **Related Work** controls are special co
 | Control | Description | 
 |---------|-------------|
 |**Deployment** | Provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).<br/> ![Screenshot of Deployment control.](media/deployments-control/deployment-control-intro.png)  | 
-|**Development** | records all Git development processes that support completion of the work item. This control can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).<br/>  ![Screenshot of Development control.](media/about-work-items/development-control.png)                 | 
+|**Development** | Records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).<br/>  ![Screenshot of Development control.](media/about-work-items/development-control.png)                 | 
 |**Related Work** | Provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.  ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  | 
 
 
@@ -182,11 +174,13 @@ The **Deployment**, **Development** and **Related Work** controls are special co
 
 ## Development and Related Work controls
 
-The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work.  
+The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work. The following table provides a short description of each control.  
 
 | Control | Description | 
 |---------|-------------|
-|**Development** |                   | 
+|**Development** | records all Git development processes that support completion of the work item. This control can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).<br/>  ![Screenshot of Development control.](media/about-work-items/development-control.png)                 | 
+|**Related Work** | Provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.  ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  | 
+
 
 ::: moniker-end
 
@@ -197,7 +191,7 @@ The **History**, **Links**, and **Attachment** tabs appear in all work item form
 
 <a id="history"> </a>
 
-### Review changes made to the work item through the History tab
+### History: Review changes made to the work item 
 
 The :::image type="icon" source="../media/icons/icon-history-tab-wi.png" border="false"::: **History** tab maintains a record of changes made to a work item over time. A record is made when changes are made to any of the [common fields](#common-fields), description or other rich-text fields, **Discussion** control entries, or addition or removal of links or attachments.  
 
@@ -213,7 +207,7 @@ To learn more, see [Query work item history and discussion fields](../queries/hi
 
 <a id="link"> </a>
 
-### Link work items to other work or objects
+### Links: Link work items to other work items or objects
 
 From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Links** tab, you can add, remove, or view work items or other objects linked to the work item. Different link types are used to link to different objects, or to link to other work items. 
 
@@ -223,7 +217,11 @@ To learn more about linking, see the following articles:
 -  [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md)
 -  [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md) 
 -  [Link type reference](../queries/link-type-reference.md)
+ 
 
+### Attachments: Attach files to a work item
+
+From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. To learn more about linking, see [Share information within work items and social tools](../queries/share-plans.md). 
  
 
 <a id="portal-clients"></a>  
@@ -242,18 +240,6 @@ You can add and update work items from the web portal and various clients. For a
 Use the web portal to accomplish the following tasks. 
 
 [!INCLUDE [temp](../includes/page-work-item-tasks.md)] 
-
-
-<a id="track"> </a>
-
-## Track bugs as requirements or tasks 
-
-Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and then treat them as a task. Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items? Or, should you track your bugs as tasks linked to those backlog items? How does your team estimate work?  
-
-Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
-
-For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
-
 
 
 
@@ -297,10 +283,7 @@ You can add or modify the fields contained within a work item type or add a cust
 ::: moniker range="tfs-2018"
 You can add or modify the fields contained within a work item type or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
-
-
-
-
+ 
 <a id="wit-other" />
 
 ## Work item types to track testing, reviews, and feedback 
