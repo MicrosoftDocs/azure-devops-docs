@@ -151,6 +151,12 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 
 
+
+
+
+
+
+
 ::: moniker range=">= azure-devops-2019"
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
@@ -242,6 +248,12 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 
 
 
+
+
+
+
+
+
 #### Example: Nightly build with different frequencies
 
 ::: moniker range=">=azure-devops-2019"
@@ -266,9 +278,21 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 
 
+
+
+
+
+
+
 ![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
+
+
+
+
+
+
 
 
 
@@ -317,6 +341,12 @@ Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *` or `0 0-18/6 * * *`
 Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
+
+
+
+
+
+
 
 
 
@@ -414,6 +444,12 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
+
+
+
+
+
+
 
 
 
