@@ -164,6 +164,8 @@ From the web portal, simply copy the URL from the web browser address or hover o
 
 ![Copy hyperlink for a work item from web portal](../backlogs/media/add-work-item-copy-URL.png) 
 
+::: moniker range="<= azure-devops-2019"
+
 
 <a id="start-storyboarding">  </a>
 
@@ -179,11 +181,11 @@ You can storyboard your ideas using PowerPoint to bring your ideas to life with 
 ![Work item form, Start storyboarding menu option](../backlogs/media/add-work-item-start-storyboarding.png)
 
 
+::: moniker-end
 
 ## Related articles
 
-- [Run a semantic or improvised work item search](../queries/search-box-queries.md)
+- [Run a semantic work item search](../queries/search-box-queries.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-- [Customize your work tracking experience](../../reference/customize-work.md)
-- [Bulk add or modify work items using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Customize your work tracking experience](../../reference/customize-work.md) 
 
