@@ -216,6 +216,23 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 - - -
 
+## Publish to NuGet.Org
+
+1. [Generate an API key]()
+
+1. Navigate to your Azure DevOps project and then select ![gear icon](../../media/icons/gear-icon.png) **Project settings**.
+
+1. Select **Service Connections**, and then select **New service connection**.
+
+1. Select **NuGet**, and then select **Next**.
+
+1. Select **ApiKey** as your authentication method. Use the following url for your **Feed URL**: *https://api.nuget.org/v3/index.json*. 
+
+1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
+
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you are done.
+
+
 ## Related articles
 
 - [Publish npm packages with Azure Pipelines](./npm.md)
