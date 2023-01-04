@@ -125,11 +125,30 @@ When Azure DevOps Server is configured with Active Directory (AD), Azure DevOps 
 You can grant access to a project by adding security groups you create in AD or by adding accounts to existing or custom groups defined in the collection setting **Security** pages. To learn more, see [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups). 
 ::: moniker-end
 
-## Follow, Refresh, and Actions menu
+## Follow, Refresh, Revert, and Actions menu
+
+The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls appear on all work item forms. 
 
 :::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
+ 
+Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
+
+Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. Choose the :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false":::  **Revert changes** to undo any changes you made to the work item form.  
+To learn more about the tasks you can perform from the **Actions** menu, see the following articles: 
+
+- [New linked work item](../backlogs/add-link.md)
+- [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
+- [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
+- [Create copy of work item...](../backlogs/copy-clone-work-items.md)
+- [Email work item](email-work-items.md) 
+- [Delete](../backlogs/remove-delete-work-items.md) 
+- [Templates](../backlogs/work-item-template.md)
+- [New branch...](../backlogs/connect-work-items-to-git-dev-ops.md)  
+- [Customize](../../organizations/settings/work/customize-process.md)
 
 
+> [!NOTE]   
+> Some menu options may not appear depending on your permission assignments. Also, additional options may appear based on Marketplace extensions added to your organization or other customizations made to the work item type. 
 
 
 ## Discussion control  
