@@ -17,7 +17,7 @@ In Azure Pipelines, you can use the classic editor or the YAML tasks to publish 
 
 ## Create a NuGet package
 
-There are various ways to create your NuGet packages such as using Visual Studio to pack your NuGet packages. If you're already using MSBuild or some other task to create your packages, skip this section and jump to the [publish packages](#publish-packages) section.
+There are various ways to create your NuGet packages such as using Visual Studio to pack your NuGet packages. If you're already using MSBuild or some other task to create your packages, skip this section and jump to the [publish NuGet packages](#publish-nuget-packages) section.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
