@@ -149,6 +149,9 @@
         - name: Define approvals & checks
           href: process/approvals.md
           displayName: approvals, checks
+        - name: Invoke Azure Function / REST API checks  
+          href: process/invoke-checks.md
+          displayName: azure function, checks
         - name: Define a gate
           href: release/approvals/gates.md
         - name: Use approvals and gates
