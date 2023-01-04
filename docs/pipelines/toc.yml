@@ -593,7 +593,7 @@
     - name: Configure and pay for parallel jobs
       href: licensing/concurrent-jobs.md
       displayName: parallel jobs, microsoft-hosted, self-hosted
-    - name: Set pipelines permissions
+    - name: Set pipeline permissions
       href: policies/permissions.md
       displayName: release permissions, task group permissions, service permissions, environment permissions
     - name: Add users to contribute to pipelines
