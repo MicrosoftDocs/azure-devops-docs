@@ -96,7 +96,7 @@ The following images illustrate the natural progressions and regressions for Use
 <a id="assign" />
 <a id="assign-work-items"></a>
 
-## Assign work 
+### Assign work 
 
 You can only assign a work item to one person at a time. The **Assigned To** field is an identity field designed to hold a user identity that has been added to the project. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin typing the name of a project member to quickly focus your search to a select few.  
 
@@ -113,58 +113,56 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
 
 ::: moniker range="azure-devops" 
 
-### Integration with Azure Active Directory 
-
-When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+When Azure DevOps is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
 You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. For more information, see [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019" 
 
-### Integration with Active Directory
-
-When Azure DevOps Server is configured with Active Directory (AD), Azure DevOps synchronizes person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+When Azure DevOps Server is configured with Active Directory (AD), Azure DevOps synchronizes identity fields with these directories. Identity fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
 You can grant access to a project by adding security groups you create in AD or by adding accounts to existing or custom groups defined in the collection setting **Security** pages. To learn more, see [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups). 
 ::: moniker-end
 
- 
-::: moniker range="<= azure-devops-2019"
+## Follow, Refresh, and Actions menu
 
-> [!NOTE]    
->To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Define pick lists](../../reference/xml/define-pick-lists.md).
+:::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
 
-::: moniker-end
+
 
 
 ## Discussion control  
 
-With the **Discussion** control, project members can  add and review comments made about the work being performed. 
+With the **Discussion** control, project members can  add and review comments made about the work being performed. The rich text editor tool bar displays below the text entry area. It appears when you click your cursor within each text box that supports text formatting. To learn more, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section within a work item form,](../backlogs/media/discussion-section.png)   
-
-The rich text editor tool bar displays below the text entry area. It appears when you click your cursor within each text box that supports text formatting. 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Discussion section, New Rich Text Editor toolbar.](../queries/media/share-plans/discussion-rich-text-editor-toolbar.png)  
-
-To learn more, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section).
-
-
-
+ 
 ::: moniker range=">= azure-devops-2019"
 
 ## Deployment, Development, and Related Work controls
 
 The **Deployment**, **Development** and **Related Work** controls are special controls available in most work tracking forms. The following table provides a short description of each control. 
 
-| Control | Description | 
-|---------|-------------|
-|**Deployment** | Provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).<br/> ![Screenshot of Deployment control.](media/deployments-control/deployment-control-intro.png)  | 
-|**Development** | Records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).<br/>  ![Screenshot of Development control.](media/about-work-items/development-control.png)                 | 
-|**Related Work** | Provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.  ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  | 
+### Deployment control
+
+The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
+
+![Screenshot of Deployment control.](media/deployments-control/deployment-control-intro.png) 
+
+
+### Development control
+
+The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
+
+![Screenshot of Development control.](media/about-work-items/development-control.png)
+
+### Related Work control
+
+The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.
+
+![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
 
 
 ::: moniker-end
@@ -176,10 +174,18 @@ The **Deployment**, **Development** and **Related Work** controls are special co
 
 The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work. The following table provides a short description of each control.  
 
-| Control | Description | 
-|---------|-------------|
-|**Development** | records all Git development processes that support completion of the work item. This control can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).<br/>  ![Screenshot of Development control.](media/about-work-items/development-control.png)                 | 
-|**Related Work** | Provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.  ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  | 
+
+### Development control
+
+The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
+
+![Screenshot of Development control.](media/about-work-items/development-control.png)
+
+### Related Work control
+
+The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.
+
+![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
 
 
 ::: moniker-end
@@ -187,7 +193,7 @@ The **Development** and **Related Work** controls are used to support common lin
 
 ## History, Links, and Attachment tabs
 
-The **History**, **Links**, and **Attachment** tabs appear in all work item forms.  
+The **History**, **Links**, and **Attachment** tabs appear in all work item forms. They support auditing, traceability, and sharing information.  
 
 <a id="history"> </a>
 
@@ -199,11 +205,10 @@ The state change history diagram appears first. To see the entire history of sta
 
 :::image type="content" source="../queries/media/state-change-history-diagram.png" alt-text="Screenshot of Work item form, Web portal, State change history diagram (web portal only).":::
 
-Choose an entry in the left pane to view the details of changes made.
+Choose an entry in the left pane to view the details of changes made. To learn more, see [Query work item history and discussion fields](../queries/history-and-auditing.md). 
 
 :::image type="content" source="../queries/media/hist-audit-wi-form.png" alt-text="Screenshot of Work item form, History tab, Web portal, Details.":::
 
-To learn more, see [Query work item history and discussion fields](../queries/history-and-auditing.md). 
 
 <a id="link"> </a>
 
@@ -221,39 +226,18 @@ To learn more about linking, see the following articles:
 
 ### Attachments: Attach files to a work item
 
-From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. To learn more about linking, see [Share information within work items and social tools](../queries/share-plans.md). 
+From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, you can add, remove, or view files or images added to the work item. You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. To learn more, see [Share information within work items and social tools](../queries/share-plans.md). 
  
 
 <a id="portal-clients"></a>  
 
 ## Track work in the web portal 
 
-You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md). 
-
-
-## Web portal and clients that support tracking work items  
-
-You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps](../../user-guide/tools.md). 
-
-### Web portal 
+You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md). For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps](../../user-guide/tools.md). 
 
 Use the web portal to accomplish the following tasks. 
 
 [!INCLUDE [temp](../includes/page-work-item-tasks.md)] 
-
-
-
-<a id="queries" />
-
-## Find or list work items 
-
-Use the search box to do an impromptu search for finding specific work items based on select field criteria. Or, create a query to do a managed search, which lists work items based on your query criteria. With managed searches, you can do other tasks, such as a work items triage, creating a trend or status chart, adding to the dashboard, and more. 
-
-To learn more, see these articles: 
-- [About managed queries](../queries/about-managed-queries.md) 
-- [View, run, or email a query](../queries/view-run-query.md)  
-- [About managed queries](../queries/about-managed-queries.md) 
-- [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />
 
@@ -288,166 +272,44 @@ You can add or modify the fields contained within a work item type or add a cust
 
 ## Work item types to track testing, reviews, and feedback 
  
-Along with the work items types that appear on backlogs and boards, there are work item types that track testing, reviews, and feedback. These types, listed in the following table by category, are available for most all processes. 
+Along with the work items types that appear on backlogs and boards, there are work item types that track testing, reviews, and feedback. These types, listed in the following table by category, are available for most all processes.  
 
-
-:::row:::
-   :::column span="1":::
-      **Category**
-   :::column-end:::
-   :::column span="1":::
-      **Work item type**
-   :::column-end:::
-   :::column span="2":::
-       **Used to track specified types of work**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Code Review Request
-   :::column-end:::
-   :::column span="1":::
-      Code Review Request
-   :::column-end:::
-   :::column span="2":::
-       Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Code Review Response
-   :::column-end:::
-   :::column span="1":::
-      Code Review Response
-   :::column-end:::
-   :::column span="2":::
-       A code review response is created for each person who's requested to provide review comments.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Feedback Request
-   :::column-end:::
-   :::column span="1":::
-      Feedback Request
-   :::column-end:::
-   :::column span="2":::
-       Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Feedback Response
-   :::column-end:::
-   :::column span="1":::
-      Feedback Response
-   :::column-end:::
-   :::column span="2":::
-       A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Shared Step
-   :::column-end:::
-   :::column span="1":::
-      Shared Step
-   :::column-end:::
-   :::column span="2":::
-       Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Shared Parameter
-   :::column-end:::
-   :::column span="1":::
-      Shared Parameter
-   :::column-end:::
-   :::column span="2":::
-       Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Test Case
-   :::column-end:::
-   :::column span="1":::
-      Test Case
-   :::column-end:::
-   :::column span="2":::
-       Each test case [defines a manual test](../../test/create-test-cases.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Test Plan
-   :::column-end:::
-   :::column span="1":::
-      Test Plan
-   :::column-end:::
-   :::column span="2":::
-       Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Test Suite
-   :::column-end:::
-   :::column span="1":::
-      Test Suite
-   :::column-end:::
-   :::column span="2":::
-       Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). 
-   :::column-end:::
-:::row-end::: 
-
-
-Ideally, work items are only created from the specific tool designed to support their usage. So, to prevent users from creating work items manually, there's a Hidden Types category. All of the categories listed in the previous table are added to the Hidden Types category except for the Test Case category. 
+| Category and Work item type | Used to track specified types of work| 
+|-----------------------------|--------------------------------------|
+|Code Review Request|Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). |
+|Code Review Response|A code review response is created for each person who's requested to provide review comments.|
+|Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).|
+|Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).|
+|Shared Step|Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).|
+|Shared Parameter|Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).|
+|Test Case|Each test case [defines a manual test](../../test/create-test-cases.md).|
+|Test Plan|Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). |
+|Test Suite|Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). |
  
 
 <a id="permissions-access" />
 
 ## Required permissions and access 
 
-As a member added to the Contributors group of a project, you can use most features provided under the **Boards** or **Work** hub. The following table summarizes the permissions that impact project member's ability to view and edit work items. 
+As a member added to the Contributors group of a project, you can use most features provided under the **Boards** or **Work** hub. To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-| Permission | Level |  
+The following table summarizes the permissions that impact project member's ability to view and edit work items. 
+
+| Level |  Permission | 
 |-----|--------| 
-|**View work items in this node**| Area path | 
-|**Edit work items in this node**| Area path | 
-|**Create tag definition**| Project |   
-|**Change work item type**| Project |  
-|**Move work items out of this project**| Project |  
-|**Delete and restore work items**| Project | 
-|**Permanently delete work items**| Project |  
+|Area path | **View work items in this node**| 
+|Area path | **Edit work items in this node**| 
+|Project |   **Create tag definition**| 
+|Project |   **Change work item type**|  
+|Project |   **Move work items out of this project**|  
+|Project |   **Delete and restore work items**|  
+|Project |   **Permanently delete work items**|    
 
-Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. To learn more about work tracking permissions, see: 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).  
-
-To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
-
-
-## Tasks you can do using work items
-
-- Use different [work item types (WITs)](#wit) to track different types of information. Specific tools include:  
-	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
-	- [Define Features and Epics](../backlogs/define-features-epics.md)
-	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
-	- [Add Tasks to backlog items](../sprints/add-tasks.md)
-- Update the [work item form](#form) to add information, update status, reassign another project member or sprint, link work items, attach files, and add comments  
-- [Specify how bugs should be tracked](#track), either as requirements or as tasks
-- Add and modify work items using the [web portal and other supported clients](#portal-clients)
-- [Assign a work item](#assign) to one and only one project member 
-- [Assign work items to a sprint](#assign-to-sprint) via the iteration path
-- [Link work items to other work items or Azure DevOps objects](#link) 
-- Run [impromptu search or queries to find or list work items](#queries)  
-- [Capture and apply work item templates](#templates) to quickly fill in work item field
-- [Add and customize work item types](#customize)
-- [Modify work items](#permissions-access) 
-
-
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)  
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+ 
 
 ## Try this next 
 
