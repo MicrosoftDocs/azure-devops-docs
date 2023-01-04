@@ -88,7 +88,7 @@ The checks fail if the stage has not started execution within the specified **Ti
 > [!NOTE]
 > User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
-[Read more about the recommended way to use Invoke Azure Function checks](invoke_checks.md).
+[Read more about the recommended way to use Invoke Azure Function checks](invoke-checks.md).
 
 ## Invoke REST API
 
@@ -99,7 +99,7 @@ The evaluation can be repeated periodically using the **Time between evaluations
 > [!NOTE]
 > User defined pipeline variables are not accessible to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
-[Read more about the recommended way to use Invoke REST API checks](invoke_checks.md).
+[Read more about the recommended way to use Invoke REST API checks](invoke-checks.md).
 
 ## Query Azure Monitor Alerts
 Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
@@ -246,16 +246,16 @@ A stage can consist of many jobs, and each job can consume several resources. Be
 
 A single final negative decision causes the pipeline to be denied access and the stage to fail. The decisions of all Approvals and Checks except for Invoke Azure Function / REST API and [Exclusive lock](#exclusive-lock) are final.
 
-When using Invoke Azure Function / REST API checks in the [recommended way](invoke_checks.md), their access decisions are also final. 
+When using Invoke Azure Function / REST API checks in the [recommended way](invoke-checks.md), their access decisions are also final. 
 
 When you specify _Time between evaluations_ for an Invoke Azure Function / REST API check to be non-zero, the check's decision is non-final. This scenario is worth exploring. 
 
 Let us look at an example. Imagine your YAML pipeline has a stage that uses a Service Connection. This Service Connection has two checks configured for it:
-1. An asynchronous check, named _External Approval Granted_, that verifies that [an external approval is given](invoke_checks.md#external-approval-must-be-granted) and is configured in the recommended way.
-1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke_checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
+1. An asynchronous check, named _External Approval Granted_, that verifies that [an external approval is given](invoke-checks.md#external-approval-must-be-granted) and is configured in the recommended way.
+1. A synchronous check, named _Deployment Reason Valid_, that verifies that [the deployment reason is valid](invoke-checks.md#deployment-reason-must-be-valid) and for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks_timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous checks' executions.":::
+:::image type="content" source="media/checks/checks-timeline.png" alt-text="Diagram that shows the timeline of an asynchronous and a synchronous checks' executions.":::
 
 In this execution:
 - Both checks, _External Approval Granted_ and _Deployment Reason Valid_, are invoked at the same time. _Deployment Reason Valid_ fails immediately, but because _External Approval Granted_ is pending, it will be retried. 
@@ -267,7 +267,7 @@ Let us look at another example, involving two synchronous checks. Assume your YA
 1. A synchronous check, named _Sync Check 2_, for which you set the _Time between evaluations_ to 7 minutes.
 
 A possible checks execution is shown in the following diagram.
-:::image type="content" source="media/checks/checks_timeline_sync.png" alt-text="Diagram that shows the timeline of two synchronous checks' executions.":::
+:::image type="content" source="media/checks/checks-timeline-sync.png" alt-text="Diagram that shows the timeline of two synchronous checks' executions.":::
 
 In this execution:
 - Both checks, _Sync Check 1_ and _Sync Check 2_, are invoked at the same time. _Sync Check 1_ passes, but it will be retried, because _Sync Check 2_ fails. 
