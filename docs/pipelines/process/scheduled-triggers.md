@@ -148,15 +148,6 @@ Select the days and times when you want to run the build using the classic edito
 If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 
-
-
-
-
-
-
-
-
-
 ::: moniker range=">= azure-devops-2019"
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
@@ -169,7 +160,8 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 ::: moniker-end
 
-***
+* * *
+
 ## Examples
 
 #### [YAML](#tab/yaml/)
@@ -245,15 +237,6 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 ::: moniker-end
 
 
-
-
-
-
-
-
-
-
-
 #### Example: Nightly build with different frequencies
 
 ::: moniker range=">=azure-devops-2019"
@@ -275,30 +258,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 ::: moniker range="tfs-2018"
 
 
-
-
-
-
-
-
-
-
-
 ![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
 
+* * *
 
-
-
-
-
-
-
-
-
-***
 ## Cron syntax
 
 #### [YAML](#tab/yaml/)
@@ -343,15 +309,6 @@ Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
 
 
-
-
-
-
-
-
-
-
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -371,7 +328,8 @@ YAML isn't supported in TFS.
 
 Classic schedules are defined using a graphical editor instead of cron syntax. For information on defining classic schedules, see [Examples](#examples).
 
-***
+* * *
+
 ## Scheduled runs view
 
 #### [YAML](#tab/yaml/)
@@ -446,16 +404,8 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 ::: moniker-end
 
 
+* * *
 
-
-
-
-
-
-
-
-
-***
 <a name="always"></a>
 ## Running even when there are no code changes
 
@@ -524,14 +474,15 @@ To configure the scheduled pipeline to build only if there has been a change sin
 
 ::: moniker-end
 
-***
+* * *
+
 <a name="limits"></a>
 ## Limits on the number of scheduled runs
 
 There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources, particularly the Microsoft-hosted agents. This limit are:
 - around 1000 runs per pipeline per week.
 - 10 runs per pipeline per 15 minutes
-   
+
 ::: moniker range=">azure-devops-2019"
 ## Migrating from the classic editor
 
@@ -686,6 +637,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 ### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
 
 Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say `features/X`, then make sure that the YAML file **in that branch** has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in the `features/X` branch should have the following `schedule` in this example: 
+ 
 ```yaml
 schedules: 
 - cron: "0 12 * * 0"   # replace with your schedule 
@@ -697,4 +649,3 @@ schedules:
 For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
 
 ::: moniker-end
-
