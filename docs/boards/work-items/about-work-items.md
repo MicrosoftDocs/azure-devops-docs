@@ -105,14 +105,23 @@ The following common fields appear in most work items in the header area of the 
 
 <a id="workflow-states">  </a> 
 
-### State, Reason, and workflow
+### Track active, open, resolved, or closed work items
 
-Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are *New*, *Active*, *Resolved*, and *Closed*. The *Removed* state supports removing a work item from appearing on the backlog. To learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
+Workflow states define how a work item progresses from its creation to closure. Workflow states also determine whether a work item appears on a backlog or board as described in [How workflow category states are used in Azure Boards backlogs and boards](/workflow-and-state-categories.md). 
 
-The following images illustrate the natural progressions and regressions for User Stories (Agile), Issues (Basic), Product Backlog Items (Scrum), or Requirements (CMMI). Similar progressions and regressions are defined for other work item types for each process.  
+The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are *New*, *Active*, *Resolved*, *Closed*, and *Removed*. The following images illustrate the natural progressions and regressions for User Stories (Agile), Issues (Basic), Product Backlog Items (Scrum), or Requirements (CMMI). Similar progressions and regressions are defined for other work item types for each process.  
  
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
- 
+
+> [!NOTE]
+> - A work item can exist in one and only one state. 
+> - When all work is complete, set the work item **State** to 
+> - The Kanban board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
+> - Depending on the :::image type="icon" source="../media/icons/view-options-icon.png" border="false"::: **View Options** you select, work items in a *Closed* or *Completed* state won't appear on the backlog. 
+> - The *Removed* state supports removing a work item from appearing on the backlog. To learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
+> - You can query work items by **State** and other fields to list work in progress, resolved, or completed. 
+
+
 <a id="assign" />
 <a id="assign-work-items"></a>
 
@@ -122,12 +131,11 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
  
 :::image type="content" source="media/about-work-items/assigned-to-field.png" alt-text="Screenshot of Assigned To field in the work item form."::: 
 
-**Note the following:**
-
-- You can assign a work item only to users that have been [added to a project or team](../../organizations/security/add-users-team-project.md)
-- You can assign a work item to one and only one user at a time. If work is split across two or more users, consider creating separate work items that you'll assign to each user responsible for the work to complete. 
-- Over time, the drop-down menu of identity fields display the names you have most recently selected.
-- You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
+> [!NOTE]
+> - You can assign a work item only to users that have been [added to a project or team](../../organizations/security/add-users-team-project.md)
+> - You can assign a work item to one and only one user at a time. If work is split across two or more users, consider creating separate work items that you'll assign to each user responsible for the work to complete. 
+> - Over time, the drop-down menu of identity fields display the names you have most recently selected.
+> - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
  
 
 When Azure DevOps is configured with Azure Active Directory or Active Directory, then Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 

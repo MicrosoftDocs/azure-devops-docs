@@ -18,7 +18,7 @@ ms.date: 01/04/2023
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019 | azure-devops-2020"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items assigned to you or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
 - [**Boards**](../boards/kanban-quickstart.md): Use to implement Kanban practices, update the State, and visualize the flow of work for a team. 
