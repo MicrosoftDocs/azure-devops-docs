@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequent questions about billing management
+  title: Billing FAQs
   titleSuffix: Azure DevOps
   ms.custom: seodec18, freshness-fy22q1, engagement-fy23
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
@@ -9,13 +9,13 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 12/02/2022
+  ms.date: 01/05/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-  In this article, you can find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
+  In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   
   [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
@@ -36,7 +36,7 @@ sections:
       - question: |
           Q: How can new users get Basic instead of Stakeholder when added to a Project?
         answer: |
-          A: When a user is new to the organization and is added to a project, previously they would get Basic access level. If you purchased Basic, but it wasn't yet assigned to a user. With assignment-based billing, you pay only for the users you assign, so there aren't any that are "unassigned". 
+          A: When a user is new to the organization and is added to a project, previously they would get Basic access level. If you purchased Basic, but it wasn't yet assigned to a user. With assignment-based billing, you pay only for the users you assign, so there aren't any "unassigned" users. 
           
           If you want all new users added to a project to get Basic, change the default access level (**Organization Settings** > **Billing**) to Basic.
           
@@ -94,7 +94,7 @@ sections:
       - question: |
           Q: How do I pay for Azure DevOps support?
         answer: |
-          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
+          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). Report a service outage from our [service status page](https://status.dev.azure.com/). 
            
           If you need technical support with Azure DevOps and don't have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
            
@@ -102,12 +102,12 @@ sections:
             - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you'll set up payment direct with Azure, through a partner, or through a Microsoft representative.
             - The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you'll only pay for what you use.
            
-          2. Pick a support plan.
-            - As part of signing up for an Azure subscription, you can pick a [support plan](https://azure.microsoft.com/support/plans/).
+          2. Choose a support plan.
+            - As part of signing up for an Azure subscription, you can choose a [support plan](https://azure.microsoft.com/support/plans/).
             - All support plans let you create unlimited support requests for a fixed monthly price.
             - All paid plans, including the Developer plan, offer technical support for Azure DevOps.
           3. Submit a support ticket.
-            - Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](/azure/azure-portal/supportability/how-to-create-azure-support-request). 
+            - Now, you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](/azure/azure-portal/supportability/how-to-create-azure-support-request). 
               
       - question: |
           Q: Can I buy Azure DevOps by using a purchase order?
@@ -117,19 +117,23 @@ sections:
       - question: |
           Q: Can I use Azure DevOps for free?
         answer: |
-          A: Yes. You can use Azure DevOps up to the free tier limits for your organization, listed as follows:
+          A: Yes. Use Azure DevOps up to the free tier limits for your organization, listed as follows:
           
           [!INCLUDE [free-tier](../../includes/free-tier.md)]
           
       - question: |
           Q: What types of Azure subscriptions can I use to buy Azure DevOps?
         answer: |
-          A: Almost all Azure subscriptions. We support Azure subscriptions connected to your
+          A: You can buy Azure DevOps with most Azure subscriptions. We support Azure subscriptions connected to your
           [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), Azure subscriptions set up by
           Cloud Solution Providers (CSPs), through Microsoft Open License resellers, and Pay-As-You-Go. You can also buy using Azure subscriptions that Visual Studio subscribers set up as a subscriber benefit. (But no, your monthly credit can't be used pay for more Visual Studio subscriptions.)
           
           The only notable exclusion is that you can't use the [Azure free trial](https://azure.microsoft.com/pricing/free-trial/), Government, or National clouds.
 
+      - question: |
+          Q: Can I use the Azure free account to buy from the Visual Studio Marketplace?
+        answer: |
+          A: No. You can't use the [Azure free account](https://azure.microsoft.com/pricing/free-trial/) to pay for Visual Studio Marketplace purchases. Instead, set up a separate Pay-As-You-Go Azure subscription before or during your purchase. 
       - question: |
           Q: Can I use the monthly Azure credits from my Visual Studio subscription to buy Azure DevOps?
         answer: |
@@ -151,12 +155,12 @@ sections:
       - question: |
           Q: Am I required to buy other Azure services?
         answer: |
-          A: Not at all. If you only want to buy Azure DevOps via Azure, you can do that.
+          A: Not at all. If you only want to buy Azure DevOps via Azure, that's okay.
           
       - question: |
           Q: Can I apply tags to organizations from the Azure portal?
         answer: |
-          A: Yes. You can do that by selecting the Azure subscription that is linked to the desired Azure DevOps organization, locate the organization under Settings > Resources.
+          A: Yes. Select the Azure subscription that's linked to the desired Azure DevOps organization, in Settings > Resources.
           :::image type="content" source="media/billing-faq/organization-under-subscription.png" alt-text="Screenshot of locating your organization":::
           
           Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign will appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
@@ -214,7 +218,7 @@ sections:
           Q: Why are extra free user grants removed when multi-organization billing is enabled?
         answer: |
           A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-organization billing. For that reason, when you enable multi-organization billing, extra free grants are removed. If you have a free grant, [contact our Microsoft Azure support team](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) to request that the grant applied to your Azure subscription instead. For a free grant example, the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html).
-          
+
           ## Understand your bill
           
           Azure DevOps charges appear with other Azure charges on your [Azure bill](/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.
@@ -318,7 +322,7 @@ sections:
   - name: How charges get processed
     questions:
       - question: |
-          Q: How are user charges (Azure DevOps user/Basic, Basic + Test Plans, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
+          Q: How are user charges and CI/CD concurrent job charges processed?
         answer: |
           A: Charges are metered daily to the Azure subscription you selected when you set up billing. Charges accumulate and are included on the next Azure bill you receive.
           
@@ -340,7 +344,7 @@ sections:
       - question: |
           Q: Where can I check my bill or update billing details on my Azure subscription?
         answer: |
-          A: If you're the owner or contributor for the Azure subscription that's used for billing your organization, you can view your billing details in Azure DevOps **Organization settings** > **Billing** tab.
+          A: If you're the owner or contributor for the Azure subscription that's used for billing your organization, you can view your billing details in Azure DevOps **Organization settings** > **Billing** tab. If you're the Azure Account Administrator, go to the [Azure Account portal](https://account.windowsazure.com).
           
   - name: Enterprise Agreement customers
     questions:
@@ -349,6 +353,11 @@ sections:
         answer: |
           A: Yes, you can. You need to be an owner or contributor for an Azure subscription that was created for your EA.
           
+      - question: |
+          Q: Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
+        answer: |
+          A: Yes. Buy directly from the Visual Studio Marketplace, Azure DevOps tab. Bill purchases to the Azure subscription that was created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
+      
       - question: |
           Q: How can I tell whether I have the necessary privileges to buy services through my organization's Enterprise Agreement?
         answer: |
@@ -364,7 +373,13 @@ sections:
           A: Yes, you can use these prepaid funds for all services that Azure DevOps offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
           
           The only exclusion is for extensions offered by partners. These charges appear on your next "overage" invoice. Typically, charges occur monthly, but because of historical rules for some EA customers, an overage invoice might not be issued for several months. Consult a licensing specialist for your EA if you need to know what number of other purchases aren't eligible for Azure Monetary Commitment funds, trigger an overage invoice.
-          
+
+      - question: |
+          Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
+        answer: |
+          A: Use the [Azure Prepayment](/marketplace/azure-consumption-commitment-benefit) (previously called monetary commitment) funds from your Enterprise Agreement to pay for the following items: [Azure DevOps users](buy-basic-access-add-users.md), and [Microsoft-published extensions for Azure DevOps](https://marketplace.visualstudio.com/azuredevops). You can't use these funds to pay for Visual Studio cloud subscriptions and non-Microsoft extensions for Azure DevOps.
+
+
   - name: Other questions
     questions:
       - question: |
