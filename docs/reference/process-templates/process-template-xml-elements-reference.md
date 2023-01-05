@@ -3,6 +3,7 @@ title: Process template XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Processes the template for adding or removing plug-in files.
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 68ae0569-a8b6-48c8-ba91-0c18372a2c64
 ms.author: kaelli
 author: KathrynEE

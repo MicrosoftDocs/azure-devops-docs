@@ -71,8 +71,6 @@ items:
     href: active-bugs-sample-report.md
   - name: Get a count of work items
     href: data-connector-examples.md
-  - name: Add a last refresh date
-    href: add-last-refresh-time.md
   - name: Filter on teams
     href: create-team-filter.md
   - name: Calculate time-in-state
@@ -83,6 +81,12 @@ items:
     href: sample-odata-overview.md
   - name: View the OData query of a built-in report
     href: ../extend-analytics/view-odata-query-analytics-report.md
+  - name: Transform Analytics data
+    href: transform-analytics-data-report-generation.md
+  - name: Refresh data, add last refresh date
+    href: add-last-refresh-time.md 
+  - name: Add a team slicer to a report
+    href: sample-boards-teamslicer.md
 - name: Sample reports, Boards
   items:
   - name: Open bugs
@@ -93,7 +97,7 @@ items:
     href: sample-boards-rollup.md
   - name: Feature progress
     href: sample-boards-featureprogress.md
-  - name: Work Items and Direct Links
+  - name: List linked work items 
     href: sample-boards-directlinks.md
   - name: Release burndown
     href: sample-boards-releaseburndown.md
@@ -104,8 +108,6 @@ items:
     displayname: CFD
   - name: Lead/Cycle time
     href: sample-boards-leadcycletime.md
-  - name: Add a team slicer
-    href: sample-boards-teamslicer.md
 - name: Sample reports, Pipelines
   items:
   - name: Outcome summary
@@ -156,24 +158,22 @@ items:
     href: sample-test-plans-tester-by-outcome.md
   - name: Configuration by outcome matrix
     href: sample-test-plans-configuration-by-outcome.md
+- name: Entity and properties reference
+  items:
+  - name: Date, Project, and User
+    href: ../analytics/entity-reference-general.md
+  - name: Work tracking (Azure Boards)  
+    href: ../analytics/entity-reference-boards.md
+  - name: Pipelines (Azure Pipelines)
+    href: ../analytics/entity-reference-pipelines.md
+  - name: Testing (Azure Test Plans)  
+    href: ../analytics/entity-reference-test-plans.md
 - name: Data model reference
   items:
   - name: Data model for Analytics
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Analytics OData metadata
     href: ../extend-analytics/analytics-metadata.md
-  - name: Entity and properties reference
-    items:
-    - name: Date, Project, and User
-      href: ../analytics/entity-reference-general.md
-    - name: Work tracking (Azure Boards)  
-      href: ../analytics/entity-reference-boards.md
-    - name: Pipelines (Azure Pipelines)
-      href: ../analytics/entity-reference-pipelines.md
-    - name: Testing (Azure Test Plans)  
-      href: ../analytics/entity-reference-test-plans.md
-  - name: Analytics views dataset design
-    href: data-connector-dataset.md
   - name: Historical data representation
     href: analytics-historical-filtering.md
   - name: Supported functions & clauses
@@ -182,6 +182,8 @@ items:
     href: ../extend-analytics/odata-batch.md
   - name: API versioning
     href: ../extend-analytics/odata-api-version.md
+  - name: Analytics views dataset design
+    href: data-connector-dataset.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view  

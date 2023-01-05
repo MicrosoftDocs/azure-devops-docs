@@ -3,6 +3,7 @@ title: Create a solution architecture in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to investigate alternative architectural strategies to create good architecture in Azure Boards. 
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.topic: conceptual
 ms.author: kaelli

@@ -76,8 +76,6 @@
     href: user-guide-faqs.yml?toc=/azure/devops/get-started/toc.json
   - name: Service limits
     href: service-limits.md?toc=/azure/devops/get-started/toc.json
-  - name: Features index
-    href: alm-devops-features.md?toc=/azure/devops/get-started/toc.json
 - name: Resources
   items:
   - name: Azure CLI

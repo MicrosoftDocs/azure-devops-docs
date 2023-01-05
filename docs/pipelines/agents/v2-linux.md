@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 09/20/2021
+ms.date: 11/30/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -39,7 +39,7 @@ We support the following subset of .NET Core supported distributions:
   - Fedora 30, 29
   - Linux Mint 18, 17
   - openSUSE 42.3 or later
-  - Oracle Linux 7
+  - Oracle Linux 8, 7
   - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 20.04, 18.04, 16.04
