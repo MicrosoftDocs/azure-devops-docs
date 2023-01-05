@@ -100,8 +100,8 @@ The following common fields appear in most work items in the header area of the 
 |[Assigned To](#assign)   |Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.|
 |[State](#workflow-states)   |When the work item is created, the **State** defaults to the first state in the workflow. As work progresses, you update it to reflect the current state.|
 |[Reason](#workflow-states)   | Automatically updates when the State is changed. Each State is associated with a default reason.|
-|[Area](../../organizations/settings/set-area-paths.md)   |Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).|
-|[Iteration](../../organizations/settings/set-area-paths.md)|Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings//set-iteration-paths-sprints.md).|
+|[Area](../queries/query-by-area-iteration-path.md)   |Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).|
+|[Iteration](../queries/query-by-area-iteration-path.md)|Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings//set-iteration-paths-sprints.md).|
 
 <a id="workflow-states">  </a> 
 
@@ -119,7 +119,7 @@ The four main states that are defined for the User Story (Agile process) describ
 > - The Kanban board and Sprint Taskboard support viewing and updating the workflow state of requirements or tasks, respectively, using drag and drop. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md) and [Update and monitor your Taskboard](../sprints/task-board.md). 
 > - Depending on the :::image type="icon" source="../media/icons/view-options-icon.png" border="false"::: **View Options** you select, work items in a *Closed* or *Completed* state won't appear on the backlog. 
 > - The *Removed* state supports removing a work item from appearing on the backlog. To learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove). 
-> - You can query work items by **State** and other fields to list work in progress, resolved, or completed. 
+> - You can query work items by **State** and other fields to list work in progress, resolved, or completed. To learn more, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
 
 
 <a id="assign" />
@@ -136,6 +136,7 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
 > - You can assign a work item to one and only one user at a time. If work is split across two or more users, consider creating separate work items that you'll assign to each user responsible for the work to complete. 
 > - Over time, the drop-down menu of identity fields display the names you have most recently selected.
 > - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
+> - To learn more about identity fields, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md).
  
 
 When Azure DevOps is configured with Azure Active Directory or Active Directory, then Azure DevOps synchronizes identity fields with these directories. Identity fields include **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. 
@@ -153,24 +154,26 @@ With work item templates, you can quickly create work items that have pre-popula
 
 The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls appear on all work item forms. 
 
-:::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
-
-- Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
-- Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. 
-- Choose  :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: **Revert changes** to undo any changes you made to the work item form. 
-
-To learn more about the tasks you can perform from the **Actions** menu, see the following articles: 
-
-- [New linked work item](../backlogs/add-link.md)
-- [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
-- [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
-- [Create copy of work item...](../backlogs/copy-clone-work-items.md)
-- [Email work item](email-work-items.md) 
-- [Delete](../backlogs/remove-delete-work-items.md) 
-- [Templates](../backlogs/work-item-template.md)
-- [New branch...](../backlogs/connect-work-items-to-git-dev-ops.md)  
-- [Customize](../../organizations/settings/work/customize-process.md)
-
+:::row:::
+   :::column span="1":::
+      :::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
+   :::column-end:::
+   :::column span="1":::
+	- Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
+	- Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. 
+	- Choose  :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: **Revert changes** to undo any changes you made to the work item form. 
+	- To exercise a task available from the **Actions** menu, see the following articles: 
+	  - [New linked work item](../backlogs/add-link.md)
+	  - [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
+	  - [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
+	  - [Create copy of work item...](../backlogs/copy-clone-work-items.md)
+	  - [Email work item](email-work-items.md) 
+	  - [Delete](../backlogs/remove-delete-work-items.md) 
+	  - [Templates](../backlogs/work-item-template.md)
+	  - [New branch...](../backlogs/connect-work-items-to-git-dev-ops.md)  
+	  - [Customize](../../organizations/settings/work/customize-process.md)
+   :::column-end:::
+:::row-end:::
 
 > [!NOTE]   
 > Some menu options may not appear depending on your permission assignments. Also, additional options may appear based on Marketplace extensions added to your organization or other customizations made to the work item type. 
