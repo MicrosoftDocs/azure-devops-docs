@@ -368,11 +368,15 @@ Next, create the Dockerfile.
 
     print_header "4. Running Azure Pipelines agent..."
 
-    chmod +x ./run-docker.sh
+    trap 'cleanup; exit 0' EXIT
+    trap 'cleanup; exit 130' INT
+    trap 'cleanup; exit 143' TERM
+
+    chmod +x ./run.sh
 
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run-docker.sh "$@" & wait $!
+    ./run.sh "$@" & wait $!
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
@@ -438,8 +442,9 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 
 ## Use Azure Kubernetes Service cluster
 
-> [!NOTE]
-> The following instructions only work on AKS 1.18 and lower because [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
+> [!CAUTION]
+> Please, consider that any docker based tasks will not work on AKS 1.19 or earlier due to docker in docker restriction. 
+> [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
 
 ### Deploy and configure Azure Kubernetes Service 
 
@@ -467,6 +472,12 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
    ```
 
 3. Configure Container Registry integration for existing AKS clusters.
+
+  > [!NOTE]
+  > If you have multiple subscriptions on the Azure Portal, please, use this command first to select a subscription
+  >```azurecli
+  >az account set --subscription <subscription id or >subscription name>
+  >```
 
    ```azurecli
    az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>

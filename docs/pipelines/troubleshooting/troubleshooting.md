@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 02/12/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -160,6 +160,9 @@ To check your limits, navigate to **Project settings**, **Parallel jobs**.
 ![Pipelines concurrent jobs](../media/troubleshooting/concurrent-pipeline-limits.png)
 
 After reviewing the limits, check concurrency to see how many jobs are currently running and how many are available.
+
+> [!NOTE]
+> Azure Pipelines has temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by submitting [a request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected. Please note that it takes us 2-3 business days to respond to your free tier requests.
 
 ::: moniker-end
 
@@ -361,7 +364,7 @@ It is helpful to narrow whether a build or release failure is the result of an A
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](/azure/devops/pipelines/tasks/reference/msbuild-v1) or [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
 ::: moniker range="azure-devops"
@@ -460,7 +463,7 @@ The MSBuild and Visual Studio Build tasks already add `/nr:false` to the argumen
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
 #### MSBuild and /maxcpucount:[n]
 
-By default the build tasks such as [MSBuild](../tasks/build/msbuild.md) and [Visual Studio Build](../tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
+By default the build tasks such as [MSBuild](/azure/devops/pipelines/tasks/reference/msbuild-v1) and [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
 Try adding the `/m:1` argument to your build tasks to force MSBuild to run only one process at a time.
 
@@ -564,7 +567,7 @@ To troubleshoot issues related to service connections, see [Service connection t
 
 ### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
 
-In this scenario, you can use the [Azure File Copy task](../tasks/deploy/azure-file-copy.md) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
+In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
 ## Get logs to diagnose problems
 

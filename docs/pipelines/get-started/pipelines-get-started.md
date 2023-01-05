@@ -5,7 +5,7 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 09/02/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 

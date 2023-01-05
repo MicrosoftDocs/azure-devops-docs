@@ -61,15 +61,15 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
     > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
   - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/customize-javascript.md#run-unit-tests)
-  - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
+  - [Publishing fully-formed test reports for Python test runners](../ecosystems/customize-python.md#test)
 
-* **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
-  that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
-  [Maven](../tasks/build/maven.md), [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and
-  [Xcode](../tasks/build/xcode.md) that provide this capability as an option within the task.  
+* **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2)
+  that automatically publish test results to the pipeline, or others such as [Ant](/azure/devops/pipelines/tasks/reference/ant-v1),
+  [Maven](/azure/devops/pipelines/tasks/reference/maven-v3), [Gulp](/azure/devops/pipelines/tasks/reference/gulp-v1), [Grunt](/azure/devops/pipelines/tasks/reference/grunt-v0), and
+  [Xcode](/azure/devops/pipelines/tasks/reference/xcode-v5) that provide this capability as an option within the task.  
 
 * **Publish Test Results task**. Task that publishes test results to Azure Pipelines or TFS when tests are executed using
-  your choice of runner, and results are available in any of the [supported test result formats](../tasks/test/publish-test-results.md). 
+  your choice of runner, and results are available in any of the [supported test result formats](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
 
 * **API(s)**. Test results published directly by using the [Test Management API(s)](/rest/api/azure/devops/test/results/list).
 
@@ -205,7 +205,7 @@ You can debug a failure, file a bug, or abort the pipeline.
 
 > [!NOTE]
 > The feature is currently available for both build and release, using
-> [Visual Studio Test](../tasks/test/vstest.md) task in a Multi Agent job. 
+> [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task in a Multi Agent job. 
 > It will be available for Single Agent jobs in a future release.
 
 The view below shows the **in-progress** test summary in a release, reporting the total test count and the number of test failures
@@ -226,7 +226,7 @@ or tests having different instances based on an input parameter (data driven tes
 As these tests are related, they must be reported together with the overall outcome derived from the individual instances or tests.
 These test results are reported as a summarized test result in the **Tests** tab:
 
-* **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](../tasks/test/vstest.md) task.
+* **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task.
   During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the non-deterministic behavior of the test.
   Test reports provide a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
   Additionally the [Test Management API(s)](/rest/api/azure/devops/test/results/list)
@@ -255,7 +255,7 @@ The aborted tests and test runs can be viewed alongside the completed runs in th
 
 > [!NOTE]
 > The feature is currently available for both build and release, using the
-> [Visual Studio Test](../tasks/test/vstest.md) task in a Multi Agent job 
+> [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task in a Multi Agent job 
 > or publishing test results using the
 > [Test Management API(s)](/rest/api/azure/devops/test/results/list). 
 > It will be available for Single Agent jobs in a future release.

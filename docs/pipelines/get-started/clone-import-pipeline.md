@@ -2,7 +2,7 @@
 title: Clone or import a pipeline
 description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
-ms.date: 12/23/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 

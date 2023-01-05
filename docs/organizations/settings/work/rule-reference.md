@@ -1009,7 +1009,7 @@ To learn more about default security groups, see [Permissions and groups](../../
 Rules that specify a condition based on the user or group membership of the user modifying a work item are evaluated in one of two ways. When the rule is evaluated, the application needs to determine whether the rule applies to the current user by checking if that user is or isn't a member of the specified group. 
  
 - When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Azure Active Directory or Active Directory is made. No problems occur for this operation.  
-- When modifying the work item from Visual Studio, Team Explorer Everywhere, Excel or other custom tool using the WIT Client Object Model, the request to evaluate membership is based on a client cache. The client cache is not aware of Active Directory groups. 
+- When modifying the work item from Visual Studio, Excel or other custom tool using the WIT Client Object Model, the request to evaluate membership is based on a client cache. The client cache is not aware of Active Directory groups. 
 
 > [!NOTE] 
 > Visual Studio 2019 Team Explorer for projects using GIT has been re-written to use REST APIs.
@@ -1037,7 +1037,7 @@ This section describes the expected behavior and interactions when you apply con
 
 The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
-1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
+1.  From an Azure DevOps client--such as the web portal or Visual Studio Team Explorer--a user creates a new work item or edits an existing work item.
 
 2.  Fill in field defaults. For all fields, apply any defaults assigned to the field that aren't part of a conditional clause.
 
@@ -1071,7 +1071,7 @@ The following steps show, in the correct sequence, the interactions that Azure D
 
 Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply. The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
-1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
+1.  From an Azure DevOps client--such as the web portal or Visual Studio Team Explorer--a user creates a new work item or edits an existing work item.
 
 2.  Fill in field defaults. For all fields, apply any **DEFAULT** rules specified outside or **WHEN** rules.
 

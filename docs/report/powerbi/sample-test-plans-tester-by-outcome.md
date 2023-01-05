@@ -3,13 +3,13 @@ title: Manual test Tester by Outcome matrix sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate a tester by outcome matrix report.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 12/05/2022
 ---
 
 # Tester by outcome matrix sample report
@@ -23,12 +23,12 @@ When multiple testers are executing test cases, it may be possible that few have
 The report generated is similar to following image.
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Tester by Outcome matrix - Report](media/odatapowerbi-testerbyoutcome.png)
+> ![Screenshot of Power BI Tester by Outcome matrix report.](media/odatapowerbi-testerbyoutcome.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
@@ -73,7 +73,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ### Substitution strings
 
-[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{testPlanTitle}` - Title of the test plan whose data you want to return.
 
 ### Query breakdown
 
@@ -141,22 +144,22 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/powerbi-rename-columns.png)
+	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
 1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Power BI Change Column Type](media/powerbi-change-column-type.png)
+	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/powerbi-rename-query.png)
+	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/powerbi-close-apply.png)
+	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
 
 
 ## Create the report
@@ -174,16 +177,13 @@ To create the report, do the following steps:
 1. Add the field **Count** to **Values**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI select Sum as aggregation](media/powerbi-sum-aggregation.png)
+	> ![Screenshot of Power BI select Sum as aggregation.](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Tester by Outcome matrix - Report](media/odatapowerbi-testerbyoutcome.png)
-
-## Full list of sample reports for Test Plans
-
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+> ![Screenshot of Power BI sample tester by Outcome matrix report.](media/odatapowerbi-testerbyoutcome.png)
+ 
 
 ## Related articles
 

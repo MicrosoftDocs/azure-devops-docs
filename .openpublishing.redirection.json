@@ -3,7 +3,7 @@
     {
       "source_path": "docs/migrate/migration.md",
       "redirect_url": "/azure/devops/migrate/migration-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/devsecops/index.md",
@@ -168,6 +168,16 @@
     {
       "source_path": "docs/organizations/public/make-project-public.md",
       "redirect_url": "/azure/devops/organizations/projects/make-project-public",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/alm-devops-features.md",
+      "redirect_url": "https://azure.microsoft.com/products/devops/#overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/csp/buy-vs-app-center.md",
+      "redirect_url": "https://visualstudio.microsoft.com/app-center/",
       "redirect_document_id": false
     }
   ]
