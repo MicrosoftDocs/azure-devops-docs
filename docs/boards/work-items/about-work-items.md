@@ -12,11 +12,11 @@ monikerRange: '<= azure-devops'
 ms.date: 01/04/2023
 ---
 
-# About work items such as features, user stories, bugs, tasks in Azure Boards
+# About work items such as features, user stories, bugs, tasks defined in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Track the features and requirements you're developing, code defects or bugs, and other details using work items. Work items are similar to GitHub issues, but offer different types to track different types of information.
+You use work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Work items are similar to GitHub issues, but offer different types to track different types of information.
 
 You use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type. And, each work item is assigned a unique identifier within an organization or project collection. The available work item types depend on the [process you used when creating your project](guidance/choose-process.md).  
 
@@ -25,7 +25,7 @@ If you're just getting started, read the information provided in this article. T
 
 <a id="wit" />
 
-## Track features, requirements, user stories, and bugs  
+## Track work 
 
 To track different types of work, you choose a specific work item type. The work item types available to you differ depending on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)--**Agile**, **Basic**, **Scrum**, or **CMMI**--as illustrated in the following images. The items in your backlog might be called User Stories (Agile), Issues (Basic), Product Backlog Items (Scrum), or Requirements (CMMI). All four types are similar. They describe the customer value of the work and the work to do.    
 
@@ -64,26 +64,87 @@ The work item form shows the fields used to track information related to the wor
 
 Each work item form contains several tabs. The **Details** tab contains the common fields, other fields defined for the work item type, and the **Discussion** control.  
 
+
 Common fields defined for all work item types display at the top of the work item form. As shown in the following image, these fields include the following fields: **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration**.  You can update these fields at any time. 
 
 :::image type="content" source="media/about-work-items/common-fields-basic.png" alt-text="Screenshot of common fields in work item form for all work item types.":::
 
 <a id="assign-to-sprint"></a>
+<a id="common-fields" />
 
-[!INCLUDE [temp](../includes/common-work-item-fields.md)]   
+### Definitions for common work tracking fields  
 
-|Field| Default | Description | 
-|-----|--------|--------------|
-|**ID**| System assigned |The unique identifier that Azure DevOps assigns to a work item. Work item IDs are unique across all projects defined for an organization or project collection. | 
-|**Title**| Required |A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list. | 
-|**Assigned To**| None |The name of a team member who currently owns the work item. For more information, see [Assign work](#assign-work) later in this article. | 
-|**State**| New (Agile)<br/>To Do (Basic)<br/>New (Scrum)<br/>Proposed (CMMI) |The current state of the work item. All newly created work items are assigned to the work flow state associated with the *Proposed* workflow category This field allows you to update the status of a work item as it progresses from new or active to a done, closed, or completed state. | 
-|**Reason**| New (Agile)<br/>Added to backlog (Basic)<br/>New backlog item (Scrum)<br/>New (CMMI) |The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason.  | 
-|**Area** Path| user-dependent | Specifies a project-configured path used to group work items by product feature or team areas.  The default assignment depends on the web page used to define the work item. When created from a team backlog or board, then the team's default assignment is used.   | 
-|**Iteration** Path| user-dependent | Specifies a project-configured path used to group work items by named sprints or time periods.  The default assignment depends on the web page used to define the work item. When created from a team backlog or board, then the team's default assignment is used. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md).  |
-|**Tags**| None | Tags are user-definable keywords or phrases that users can define or select from a list of added tags. Tags isn't a field similar to other fields, but a control available at the top of each work item form. To learn more, see [Add work item tags to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).  | 
+<a id="definitions-in-common"></a>
 
-To learn more about each field, see [Work item field index](./guidance/work-item-field.md).  
+The following fields appear in most work items in the header area of the form. The only required field for all work item types is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
+
+
+> [!NOTE]   
+> Additional fields may be required depending on customizations made to your process and project.  
+
+:::row:::
+   :::column span="1":::
+   **Field/tab**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+   [Title](../queries/titles-ids-descriptions.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Enter a description of 255 characters or less. You can always modify the title later.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Assigned To](../queries/query-by-workflow-changes.md)
+   :::column-end:::
+   :::column span="3":::
+   Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [State](../queries/query-by-workflow-changes.md)
+   :::column-end:::
+   :::column span="3":::
+   When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Reason](../queries/query-by-workflow-changes.md)
+   :::column-end:::
+   :::column span="3":::
+   Use the default first. Update it when you change state. Each State is associated with a default reason.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Area](../../organizations/settings/set-area-paths.md)
+   :::column-end:::
+   :::column span="3":::
+   Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.
+
+   To change the dropdown list of areas, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Iteration](../../organizations/settings/set-area-paths.md)
+   :::column-end:::
+   :::column span="3":::
+   Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.
+
+   To change the drop-down list of iterations, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).
+   :::column-end:::
+:::row-end:::
 
 <a id="workflow-states">  </a> 
 
@@ -129,13 +190,10 @@ You can grant access to a project by adding security groups you create in AD or 
 
 ## Follow, Refresh, Revert, and Actions menu
 
-The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls appear on all work item forms. 
+The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls appear on all work item forms. Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. Choose the :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false":::  **Revert changes** to undo any changes you made to the work item form. 
 
 :::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
  
-Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
-
-Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. Choose the :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false":::  **Revert changes** to undo any changes you made to the work item form.  
 To learn more about the tasks you can perform from the **Actions** menu, see the following articles: 
 
 - [New linked work item](../backlogs/add-link.md)
@@ -166,25 +224,11 @@ With the **Discussion** control, project members can  add and review comments ma
 
 The **Deployment**, **Development** and **Related Work** controls are special controls available in most work tracking forms. The following table provides a short description of each control. 
 
-### Deployment control
-
-The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
-
-![Screenshot of Deployment control.](media/deployments-control/deployment-control-intro.png) 
-
-
-### Development control
-
-The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
-
+![Screenshot of Deployment control.](media/about-work-items/deployment-control.png)
 ![Screenshot of Development control.](media/about-work-items/development-control.png)
-
-### Related Work control
-
-The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.
-
 ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
 
+The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
 
 ::: moniker-end
 
@@ -194,27 +238,19 @@ The **Related Work** control provides a quick view of linked work items, and sup
 ## Development and Related Work controls
 
 The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work. The following table provides a short description of each control.  
-
-
-### Development control
-
-The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
-
+ 
 ![Screenshot of Development control.](media/about-work-items/development-control.png)
-
-### Related Work control
-
-The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Can quickly add and remove linked work items.
-
 ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
-
 
 ::: moniker-end
 
+The **Development** control records all Git development processes that support completion of the work item.  It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item. To learn more, see [Drive Git development from a work item ](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-## History, Links, and Attachment tabs
+The **Related Work** control provides a quick view of linked work items, and supports adding a link to a parent work item. Also, you can quickly add and remove linked work items.
+  
+## History, Links, and Attachment tabs 
 
-The **History**, **Links**, and **Attachment** tabs appear in all work item forms. They support auditing, traceability, and sharing information.  
+The :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png" border="false"::: **History**, :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links**, or :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: **Attachments** tabs support auditing, traceability, and sharing information.  These three tabs provide a history of changes, controls to add and remove links to work items, and controls to attach and remove files.  
 
 <a id="history"> </a>
 
@@ -240,6 +276,7 @@ From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" bord
 :::image type="content" source="media/about-work-items/links-tab.png" alt-text="Screenshot of Work item form, Links tab.":::
 
 To learn more about linking, see the following articles: 
+
 -  [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md)
 -  [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md) 
 -  [Link type reference](../queries/link-type-reference.md)

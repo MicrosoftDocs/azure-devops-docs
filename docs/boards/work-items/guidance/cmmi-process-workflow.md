@@ -33,7 +33,7 @@ To support other CMMI processes, teams can track change requests, risks, issues,
 
 Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). Later, you can open each requirement to provide more details and estimate its size.
 
-:::image type="content" source="../media/about-work-items-requirement.png" alt-text="Screenshot of Requirement work item form.":::
+:::image type="content" source="../media/about-work-items/work-item-form-requirement.png" alt-text="Screenshot of Requirement work item form.":::
 
 ::: moniker range="> azure-devops-2019"
 Or, you can bulk add requirements using a [cvs file](../../queries/import-work-items-from-csv.md). 
