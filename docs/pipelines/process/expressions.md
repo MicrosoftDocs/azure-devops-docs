@@ -874,6 +874,7 @@ stages:
 ```
 
 If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
+
 ```yml
 stages:
 - stage: build
@@ -899,6 +900,40 @@ stages:
   dependsOn:
   - 'build'
   condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
+  jobs:
+    ...
+```
+
+In the example above, the condition references an environment and not an environment resource. To reference an environment resource, you'll need to add the environment resource name to the dependencies condition. In the following example, condition references an environment virtual machine resource named `vmtest`. 
+
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: vmtest
+      resourceName: winVM2
+      resourceType: VirtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  condition: eq(dependencies.build.outputs['build_job.Deploy_winVM2.setRunTests.runTests']
+, 'true')
   jobs:
     ...
 ```

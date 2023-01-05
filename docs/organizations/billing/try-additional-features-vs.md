@@ -1,14 +1,14 @@
 ---
 title: Try Azure Test Plans for free
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperf-fy22q3, freshness-fy22q1
+ms.custom: seodec18, contperf-fy22q3, freshness-fy22q1, engagement-fy23
 description: Get a free 30-day trial for Azure Test Plans (formerly Test Manager).
 ms.subservice: azure-devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 08/05/2022
+ms.date: 12/02/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Basic users have full access to Azure Test Plans during the 30-day trial. After the trial expires, buy Basic + Test Plans and assign it to specific users, so they can keep using the service. For more information about Azure Test Plans, see [What is Azure Test Plans](../../test/overview.md).
+Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 days. For more information about Azure Test Plans, see [What is Azure Test Plans](../../test/overview.md).
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
@@ -54,6 +54,7 @@ For more information about using Azure Test Plans, see [Navigate Test Plans](../
 
 ## Related articles
 
+- [Billing FAQs](billing-faq.yml)
 - [Manage paid access for users](buy-basic-access-add-users.md)
 - [Buy parallel jobs for Azure DevOps](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 - [Azure DevOps billing overview](overview.md)

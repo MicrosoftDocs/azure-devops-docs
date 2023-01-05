@@ -301,7 +301,7 @@ The following table summarizes the client supported features available depending
    Client software
    :::column-end:::
    :::column span="2":::
-   Visual Studio, Eclipse with [Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
+   Visual Studio 
    :::column-end:::
    :::column span="2":::
    Visual Studio, Visual Studio Code, Eclipse, and other third-party tools

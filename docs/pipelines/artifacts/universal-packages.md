@@ -20,7 +20,7 @@ Using Universal Packages you can pack any number of files of any type and share 
 
 ## Prepare a Universal Package
 
-By default, the Universal Packages task uses the `$(Build.ArtifactStagingDirectory)` as the publish directory. To prepare your Universal Package for publishing, place the files you want to publish in that directory. You can also use the [Copy Files](../tasks/utility/copy-files.md) utility task to copy those files to the publish directory.
+By default, the Universal Packages task uses the `$(Build.ArtifactStagingDirectory)` as the publish directory. To prepare your Universal Package for publishing, place the files you want to publish in that directory. You can also use the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) utility task to copy those files to the publish directory.
 
 <a name="publish-packages"></a>
 

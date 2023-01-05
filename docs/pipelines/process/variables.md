@@ -609,7 +609,7 @@ jobs:
 
 To use the output from a different stage at the job level, you use the `stageDependencies` syntax:
 
- - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`
+ - At the stage level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
  - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
 
 ```yaml

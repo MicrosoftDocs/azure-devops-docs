@@ -3,7 +3,7 @@ title: Requirements tracking, Stories overview rollup report
 titleSuffix: Azure DevOps
 description: Learn how to use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
 ms.subservice: azure-devops-analytics
-ms.reviewer: ravishan
+ms.reviewer: desalg
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -23,7 +23,7 @@ This report builds on the [Requirements tracking report](sample-stories-overview
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
+> ![Screenshot of Power BI Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
 
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
@@ -265,7 +265,7 @@ To create the report, perform the following steps:
 Here, **Authentication scenarios** is a parent feature of two User Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
+> ![Screenshot of Power BI Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
 
 ## Related articles
 

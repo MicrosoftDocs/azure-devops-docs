@@ -71,10 +71,10 @@ In addition, you'll need:
 
 5. You need the Visual Studio Test Platform to be installed on the agent computer.
    If Visual Studio is already installed on the agent computer, you can skip this step.
-   If not, you must add the [Visual Studio Test Platform Installer task](../pipelines/tasks/test/visual-studio-test-agent-deployment.md)
+   If not, you must add the [Visual Studio Test Platform Installer task](/azure/devops/pipelines/tasks/reference/deploy-visual-studio-test-agent-v2)
    to the pipeline definition.
 
-6. Add the [Visual Studio Test task](../pipelines/tasks/test/vstest.md) to the release pipeline and configure it as follows:
+6. Add the [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to the release pipeline and configure it as follows:
  
    * Verify that version 2 of the Visual Studio Test task is selected.
      The version number is shown in the drop-down list at the top left
@@ -117,7 +117,7 @@ In addition, you'll need:
 
      ![Specifying the properties for the Visual Studio Test task](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
-     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](../pipelines/tasks/test/vstest.md).
+     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2).
 
 7. Choose the **Agent job** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
@@ -354,7 +354,7 @@ from different sources, set this option to
 A: Use a [runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 file to pass values as parameters to your test code. For example, in a release that contains several stages,
 you can pass the appropriate app URL to each the test tasks in each one. The runsettings file and matching parameters
-must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstest.md). 
+must be specified in the [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2). 
 
 ![Pass parameters to test code from a build or release pipeline](media/pass-params-to-test-code.png)
 

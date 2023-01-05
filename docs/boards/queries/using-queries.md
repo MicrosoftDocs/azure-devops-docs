@@ -2,14 +2,14 @@
 title: Define a work item query with the Query Editor in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to create a flat-list, tree, or direct links queries to list, triage, update, and chart work items. 
-ms.custom: "boards-queries, contperf-fy21q3, linked-from-support, cross-project" 
+ms.custom: boards-queries, contperf-fy23, linked-from-support, cross-project 
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/05/2022
+ms.date: 12/16/2022
 ---
 
 # Define a work item query in Azure Boards
@@ -19,11 +19,12 @@ ms.date: 10/05/2022
 
 Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
 ::: moniker range=">= azure-devops-2020"
-Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
+Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
-Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
+Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 ::: moniker-end
+
 #### [Browser](#tab/browser/) 
 
 > [!div class="mx-imgBorder"]  
