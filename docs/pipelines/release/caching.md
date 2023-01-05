@@ -40,7 +40,7 @@ When a cache step is encountered during a run, the task will restore the cache b
 
 ### Configure the Cache task
 
-The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* and *path*:
+The [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2) has two required arguments: *key* and *path*:
 
 - **path**: the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
@@ -79,8 +79,8 @@ steps:
   inputs:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-       yarn | "$(Agent.OS)"
-       yarn
+       "yarn" | "$(Agent.OS)"
+       "yarn"
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -334,7 +334,7 @@ steps:
 - script: |   
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
     ./gradlew --stop    
-  displayName: Build
+  displayName: Gradlew stop
 ```
 
 - **restoreKeys**: The fallback keys if the primary key fails (Optional)
@@ -366,7 +366,7 @@ steps:
 - script: mvn install -B -e
 ```
 
-If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
+If you're using a [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
 
 ```yaml
 - task: Maven@4
@@ -543,6 +543,10 @@ key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 ### Q: When does a cache expire?
 
 A: Caches expire after seven days of no activity.
+
+### Q: When does the cache get uploaded?
+
+A: After the last step fo your pipeline a cache will be created from your cache `path` and uploaded. See the [example](#configure-the-cache-task) for more details.
 
 ### Q: Is there a limit on the size of a cache?
 

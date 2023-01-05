@@ -231,8 +231,8 @@ The following table provides examples of how to expand several of these properti
 | Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
 | Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
 | Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
-| Project	| `ProjectSK`   | `$expand=AssignedTo($select=ProjectName)` | 
-| Team 	    | `TeamSK`      | `$expand=AssignedTo($select=TeamName)` | 
+| Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
+| Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
 To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
 
@@ -506,7 +506,7 @@ Specify the `$orderby` option to sort your results or specify the sequence in wh
 
 - [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md)
-- [Best practices to use when querying Analytics](/analytics/analytics-best-practices.md) 
+- [Best practices to use when querying Analytics](../analytics/analytics-best-practices.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)

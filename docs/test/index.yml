@@ -73,7 +73,7 @@ landingContent:
           - text: Go
             url: ../pipelines/ecosystems/go.md#test
           - text: Python
-            url: ../pipelines/ecosystems/python.md#run-tests
+            url: ../pipelines/ecosystems/customize-python.md#run-tests
           - text: UI testing using Selenium
             url: ../pipelines/test/continuous-test-selenium.md
           - text: Review code coverage results

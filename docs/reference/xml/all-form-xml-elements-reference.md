@@ -3,13 +3,13 @@ title: All FORM XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
 ms.service: azure-devops-boards
-ms.custom: process
+ms.custom: process, archive-candidate
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '< azure-devops'
-ms.date: 03/02/2017
+ms.date: 12/16/2022
 ---
 
 # All FORM XML elements reference (TFS 2015)
@@ -289,12 +289,13 @@ You can control the spacing and size of many elements on a work item form by spe
 |`Padding`|Optional. String of the form (top, bottom, left, right) that specifies, in pixels, the amount of room around the outside border of the control and around the inside border. You can vary the amount of space on each side.|`Control`<br /> `Group`<br /> `Layout`<br /> `Tab`<br /> `TabGroup`|  
 |`PercentWidth`|Optional. The column width as a percentage of the containing element's width. `PercentWidth` and `FixedWidth` are mutually exclusive.|`Column`|  
 |`ReadOnly`|Optional. You can display a read-only field in a control. Different controls respond to this attribute in slightly different ways.|`Control`|  
-|`Target`|Optional. String that specifies to which client this layout applies. Visual Studio displays this work item type in this layout if the `Target` attribute is omitted or set to Windows Forms. External clients can specify additional layouts by using custom `Target` attributes that Visual Studio ignores.<br /> The following values are valid:<br /> `WinForms`: Applies the form to Team Explorer and Team Explorer Everywhere.<br /> `Web`: Applies the form to the web portal.|`Layout`|  
+|`Target`|Optional. String that specifies to which client this layout applies. Visual Studio displays this work item type in this layout if the `Target` attribute is omitted or set to Windows Forms. External clients can specify additional layouts by using custom `Target` attributes that Visual Studio ignores.<br /> The following values are valid:<br /> `WinForms`: Applies the form to Team Explorer.<br /> `Web`: Applies the form to the web portal.|`Layout`|  
 |`Type`|Required. The type of the control. For more information, see [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).|`Control`|  
 
 <a name="LabelElements"></a> 
 ## Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
- The `WebpageControlOptions` element and its child elements have the following syntax structure:  
+
+The `WebpageControlOptions` element and its child elements have the following syntax structure:  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML

@@ -29,6 +29,27 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 >
 > You can connect an Azure DevOps organization to multiple GitHub repositories so long as you are an administrator for those repositories. However, you shouldn't connect a GitHub repository to more than one Azure DevOps organization. To understand why, review [Troubleshoot GitHub & Azure Boards connection, Unexpected results when linking to projects defined in two or more Azure DevOps organizations](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
 
+### Grant Azure Boards organization access 
+
+Verify you've granted organization access. 
+
+1. From GitHub web portal, open **Settings** from your profile menu.  
+     
+	> [!div class="mx-imgBorder"] 
+	> ![Screenshot of open profile, choose Settings.](media/troubleshoot/choose-settings.png)
+	
+2. Next, choose **Applications** under **Integrations**.  
+
+3. Choose the **Authorized OAuth Apps** tab, and then choose **Azure Boards**. 
+    
+	> [!div class="mx-imgBorder"]
+	> ![Screenshot of Authorized OAuth Apps tab, choose Azure Boards.](media/troubleshoot/open-azure-boards.png)
+
+4. Under **Organization access**, resolve any issues that may appear. Choose **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+	
+	> [!div class="mx-imgBorder"]
+	> ![Screenshot of Organization access with organizations without access.](media/troubleshoot/organization-access-issues.png) 
+
 <a id="install" />
 
 ## Install and configure the Azure Boards app 

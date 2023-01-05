@@ -4,7 +4,7 @@ ms.topic: include
 
 ### kustomize and kompose as bake options in KubernetesManifest task
 
-[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops&preserve-view=true) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
+[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0?view=azure-devops&preserve-view=true) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
 
 ```YAML
 steps:
@@ -58,7 +58,7 @@ We updated the experience for managing pipeline variables in the YAML editor. Yo
 
 ### New predefined variables in YAML pipeline
 
-Variables give you a convenient way to get key bits of data into various parts of your pipeline. With this update we've added a few predefined variables to a deployment job. These variables are automatically set by the system, scoped to the specific deployment job and are read-only.
+Variables give you a convenient way to get key bits of data into various parts of your pipeline. With this update, we've added a few predefined variables to a deployment job. These variables are automatically set by the system, scoped to the specific deployment job and are read-only.
 
 * Environment.Id - The ID of the environment.
 * Environment.Name - The name of the environment targeted by the deployment job.
@@ -67,7 +67,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 ### Link work items with multi-stage YAML pipelines
 
-Currently, you can automatically link work items with classic builds. However, this was not possible with YAML pipelines. With this update we have addressed this gap. When you run a pipeline successfully using code from a specified branch, Azure Pipelines will automatically associate the run with all the work items (which are inferred through the commits in that code). When you open the work item, you will be able to see the runs in which the code for that work item was built. To configure this, use the settings panel of a pipeline.
+Currently, you can automatically link work items with classic builds. However, this wasn't possible with YAML pipelines. With this update, we've addressed this gap. When you run a pipeline successfully using code from a specified branch, Azure Pipelines will automatically associate the run with all the work items (which are inferred through the commits in that code). When you open the work item, you'll be able to see the runs in which the code for that work item was built. To configure this, use the settings panel of a pipeline.
 
 ### Cancel stage in a multi-stage YAML pipeline run
 
@@ -76,7 +76,7 @@ When running a multi-stage YAML pipeline, you can now cancel the execution of a 
 ### Approvals in multi-stage YAML pipelines
 
 We continue to improve multi-stage YAML pipelines, we now let you add manual approvals to these pipelines. Infrastructure owners can protect their environments and seek manual approvals before a stage in any pipeline deploys to them.
-With complete segregation of roles between infrastructure (environment) and application (pipeline) owners, you will ensure manual sign off for deployment in a particular pipeline and get central control in applying the same checks across all deployments to the environment.
+With complete segregation of roles between infrastructure (environment) and application (pipeline) owners, you'll ensure manual sign off for deployment in a particular pipeline and get central control in applying the same checks across all deployments to the environment.
 
 > [!div class="mx-imgBorder"]
 > ![Approvals in multi-stage YAML pipelines.](../../media/155_24.png)
@@ -93,7 +93,7 @@ We've made updates to several of the Azure Pipelines hosted VM images. You can f
 * For VS2017 and VS2019:
     * Added Azul Java 7
     * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/) to match host kernel version
-    * Added Az Powershell Module v2.3.2
+    * Added Az PowerShell module v2.3.2
     * Pinned Mercurial to v5.0.0
     * Updated Python to versions 2.7.16, 3.4.4, 3.5.4, 3.6.8, 3.7.4
     * Added Portable Class Library (VS 2019 only)
@@ -118,11 +118,11 @@ In this update, we enhanced the DevOps Projects virtual machine (VM) workflow to
 
 ### Single hosted pool
 
-In the last sprint, we communicated that we are rolling out a new hosted pool called Azure Pipelines to replace all the other hosted pools - Hosted, Hosted VS2017, Hosted Ubuntu 1604, Hosted Windows 2019 with VS2019, Hosted macOS, and Hosted macOS High Sierra. This change will be implemented with this release.
+In the last sprint, we communicated that we're rolling out a new hosted pool called Azure Pipelines to replace all the other hosted pools - Hosted, Hosted VS2017, Hosted Ubuntu 1604, Hosted Windows 2019 with VS2019, Hosted macOS, and Hosted macOS High Sierra. This change will be implemented with this release.
 
-Having multiple hosted pools can be confusing at times. You do not get an accurate picture of where concurrency is being consumed. For example, if you have a concurrency of 10 parallel jobs, you see 10 virtual agents in each of the hosted pools, which is not accurate. When your job is waiting on a specific hosted pool (e.g. Hosted VS2017) with all idle agents, you may think that Azure Pipelines service is broken without realizing that the concurrency is possibly consumed in other hosted pools (e.g. Hosted Ubuntu 1604). 
+Having multiple hosted pools can be confusing at times. You don't get an accurate picture of where concurrency is being consumed. For example, if you have a concurrency of 10 parallel jobs, you see 10 virtual agents in each of the hosted pools, which isn't accurate. When your job is waiting on a specific hosted pool (e.g. Hosted VS2017) with all idle agents, you may think that Azure Pipelines service is broken without realizing that the concurrency is possibly consumed in other hosted pools (e.g. Hosted Ubuntu 1604). 
 
-With this change, you will see a single hosted pool that will give you an accurate picture of how many jobs are running in that pool. We plan to roll out this change over the next few sprints. You will not have to make any changes to your pipelines since we will automatically redirect jobs from the old hosted pools to the appropriate image in the new unified pool.
+With this change, you'll see a single hosted pool that will give you an accurate picture of how many jobs are running in that pool. We plan to roll out this change over the next few sprints. You won't have to make any changes to your pipelines since we'll automatically redirect jobs from the old hosted pools to the appropriate image in the new unified pool.
 
 ### Show correct pool information on each job
 
@@ -132,28 +132,28 @@ Previously, when you used a matrix to expand jobs or a variable to identify a po
 
 Flaky tests can affect developers' productivity since test failures may not be related to the changes under test. They can also impact the quality of shipped code. This is why we added in-product support for flaky test management. This functionality supports end-to-end lifecycle with detection, reporting and resolution. Flaky test management supports system and custom detection. 
 
-System detection is available via VSTest task rerun capability. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. All further executions of test for the same branch are also marked flaky until its resolved and unmarked. You can also plug in your custom detection mechanism using our APIs. Once a test is identified as flaky, you can get the details in the in-context test report in the pipeline. You can then decide whether the flaky tests impact your pipeline failure. By default, flaky test information is available as additional meta-data.  
+System detection is available via VSTest task rerun capability. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. All further executions of test for the same branch are also marked flaky until it's resolved and unmarked. You can also plug in your custom detection mechanism using our APIs. Once a test is identified as flaky, you can get the details in the in-context test report in the pipeline. You can then decide whether the flaky tests impact your pipeline failure. By default, flaky test information is available as additional meta-data.  
 
 > [!div class="mx-imgBorder"]
 > ![In-product support for flaky test management.](../../media/155_13.png)
 
-Here is an example of a report with the test summary. 
+Here's an example of a report with the test summary. 
 
 > [!div class="mx-imgBorder"]
 > ![Example of a report with the test summary.](../../media/155_14.png)
 
 For more details about flaky test management, see the documentation [here](/azure/devops/pipelines/test/flaky-test-management?view=azure-devops&preserve-view=true).
 
-### Improvements to the Deployment Center for WebApp in the Azure Portal
+### Improvements to the Deployment Center for WebApp in the Azure portal
 
-We've improved the Deployment Center for WebApp in the Azure Portal with support for pipelines with multiple artifacts. Now, if a non-primary artifact of Azure Pipelines is deployed on the web app, you will get relevant details from the Azure Portal. You will also have a deep link to the deployed repo to navigate directly to the repo from the Azure Portal. The repo can be hosted in Azure Repos or in GitHub.
+We've improved the Deployment Center for WebApp in the Azure portal with support for pipelines with multiple artifacts. Now, if a non-primary artifact of Azure Pipelines is deployed on the web app, you'll get relevant details from the Azure portal. You'll also have a deep link to the deployed repo to navigate directly to the repo from the Azure portal. The repo can be hosted in Azure Repos or in GitHub.
 
 ### CI triggers for new branches
 
 It has been a long pending request to not trigger CI builds when a new branch is created and when that branch doesn't have changes. Consider the following examples:
 
 * You use the web interface to create a new branch based on an existing branch. This would immediately trigger a new CI build if your branch filter matches the name of the new branch. This is unwanted because the content of the new branch is the same when compared to the existing branch. 
-* You have a repository with two folders - app and docs. You set up a path filter for CI to match "app". In other words, you do not want to create a new build if a change has been pushed to docs. You create a new branch locally, make some changes to docs, and then push that branch to the server. We used to trigger a new CI build. This is unwanted since you explicitly asked not to look for changes in docs folder. However, because of the way we handled a new branch event, it would seem as if a change has been made to the app folder as well.
+* You have a repository with two folders - app and docs. You set up a path filter for CI to match "app". In other words, you don't want to create a new build if a change has been pushed to docs. You create a new branch locally, make some changes to docs, and then push that branch to the server. We used to trigger a new CI build. This is unwanted since you explicitly asked not to look for changes in docs folder. However, because of the way we handled a new branch event, it would seem as if a change has been made to the app folder as well.
 
 Now, we have a better way of handling CI for new branches to address these problems. When you publish a new branch, we explicitly look for new commits in that branch, and check whether they match the path filters.
 
@@ -193,7 +193,7 @@ When creating a PR, it can be challenging to validate if the changes might break
 
 ### Skip the first pipeline run
 
-When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/pipelines#ext-azure-devops-az-pipelines-create) for more information.
+When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure isn't ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/pipelines#ext-azure-devops-az-pipelines-create) for more information.
 
 ### Service endpoint command enhancement
 

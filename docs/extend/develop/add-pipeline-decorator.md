@@ -7,12 +7,12 @@ ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: chcomley
 author: chcomley
 ms.date: 09/16/2020
-monikerRange: '> azure-devops-2019'
+monikerRange: '>= azure-devops-2022'
 ---
 
 # Use a decorator to inject steps into a pipeline
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
 This process is different than adding steps to a single definition because it applies to all pipelines in an organization.

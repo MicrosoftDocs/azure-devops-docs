@@ -3,6 +3,7 @@ title: Capability Maturity Model Integration (CMMI) requirements reference
 titleSuffix: Azure Boards
 description: Learn about the fields used to track requirements in the CMMI process for Azure DevOps.  
 ms.service: azure-devops-boards
+ms.custom: archive-candidate
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
 ms.topic: conceptual
 ms.author: kaelli

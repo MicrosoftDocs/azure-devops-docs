@@ -121,6 +121,12 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 > error on the next build since the environment already exists. To resolve, use the `--force`
 > argument: `conda env create --quiet --force --file environment.yml`.
 
+> [!NOTE]
+> If you are using self-hosted agents that are sharing storage, and running jobs in parallel 
+> using the same Anaconda environments, there may be clashes between those environments. 
+> To resolve, use the `--name` argument and a unique identifier as the argument value,
+> like a concatenation with the `$(Build.BuildNumber)` build variable.
+
 ### Install packages from Anaconda
 
 The following YAML installs the `scipy` package in the conda environment named `myEnvironment`.

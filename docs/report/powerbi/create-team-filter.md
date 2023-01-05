@@ -21,7 +21,7 @@ However, you can still filter on a team using the steps provided in this article
 > [!NOTE]  
 > In a similar manner, limitations exist in determining the board-specific column of a work item within an Analytics view. However, the guidance provided in this article won't work for board locations due to the dependency on the selected historical data in the view. 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Add the AreaSK field to your Analytics view 
 
@@ -95,7 +95,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 11. On the Home tab, choose **Close & Apply**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Home, Close & Apply](media/powerbi-close-apply.png)   
+	> ![Power BI Desktop, Home, Close & Apply](media/transform-data/powerbi-close-apply.png)  
 
 16. Next, choose **Refresh** to add *AreaSK* to the view.  
 
