@@ -78,77 +78,21 @@ Common fields defined for all work item types display at the top of the work ite
 
 The following fields appear in most work items in the header area of the form. The only required field for all work item types is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
 
-
 > [!NOTE]   
 > Additional fields may be required depending on customizations made to your process and project.  
 
-:::row:::
-   :::column span="1":::
-   **Field/tab**
-   :::column-end:::
-   :::column span="3":::
-   **Usage**
-   :::column-end:::
-:::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-   [Title](../queries/titles-ids-descriptions.md) 
-
-   :::column-end:::
-   :::column span="3":::
-   Enter a description of 255 characters or less. You can always modify the title later.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Assigned To](../queries/query-by-workflow-changes.md)
-   :::column-end:::
-   :::column span="3":::
-   Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [State](../queries/query-by-workflow-changes.md)
-   :::column-end:::
-   :::column span="3":::
-   When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Reason](../queries/query-by-workflow-changes.md)
-   :::column-end:::
-   :::column span="3":::
-   Use the default first. Update it when you change state. Each State is associated with a default reason.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Area](../../organizations/settings/set-area-paths.md)
-   :::column-end:::
-   :::column span="3":::
-   Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.
-
-   To change the dropdown list of areas, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   [Iteration](../../organizations/settings/set-area-paths.md)
-   :::column-end:::
-   :::column span="3":::
-   Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.
-
-   To change the drop-down list of iterations, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).
-   :::column-end:::
-:::row-end:::
+|Field |   Usage |
+|----------|------------------------|
+|[Title](../queries/titles-ids-descriptions.md)|Enter a description of 255 characters or less. You can always modify the title later.|
+|[Assigned To](../queries/query-by-workflow-changes.md)|Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.|
+|[State](../queries/query-by-workflow-changes.md)|When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.|
+|[Reason](../queries/query-by-workflow-changes.md)|Use the default first. Update it when you change state. Each State is associated with a default reason.|
+|[Area](../../organizations/settings/set-area-paths.md)|Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.<br/><br/>To change the dropdown list of areas, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).|
+|[Iteration](../../organizations/settings/set-area-paths.md)|Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.<br/><br/>To change the drop-down list of iterations, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).|
 
 <a id="workflow-states">  </a> 
 
-### State, Workflow, and Reason  
+### State, Reason, and workflow
 
 Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are *New*, *Active*, *Resolved*, and *Closed*. The *Removed* state supports removing a work item from appearing on the backlog. To learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
 
@@ -224,9 +168,18 @@ With the **Discussion** control, project members can  add and review comments ma
 
 The **Deployment**, **Development** and **Related Work** controls are special controls available in most work tracking forms. The following table provides a short description of each control. 
 
-![Screenshot of Deployment control.](media/about-work-items/deployment-control.png)
-![Screenshot of Development control.](media/about-work-items/development-control.png)
-![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
+:::row:::
+   :::column span="1":::
+      ![Screenshot of Deployment control.](media/about-work-items/deployment-control.png)
+   :::column-end:::
+   :::column span="1":::
+      ![Screenshot of Development control.](media/about-work-items/development-control.png)
+   :::column-end:::
+   :::column span="1":::
+      ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
+   :::column-end:::
+:::row-end:::
+
 
 The **Deployment** control provides a quick view of whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
 
@@ -239,8 +192,14 @@ The **Deployment** control provides a quick view of whether a feature or user st
 
 The **Development** and **Related Work** controls are used to support common linking tasks to development objects or other work items. These controls are available in most work items used to track work. The following table provides a short description of each control.  
  
-![Screenshot of Development control.](media/about-work-items/development-control.png)
-![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
+:::row:::
+   :::column span="1":::
+      ![Screenshot of Development control.](media/about-work-items/development-control.png)
+   :::column-end:::
+   :::column span="1":::
+      ![Screenshot of Related Work control.](media/about-work-items/related-work-control.png)  
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end
 
@@ -377,10 +336,10 @@ Users with Basic access have full access to all features. Users with Stakeholder
 
 ## Related articles 
 
+- [Key concepts and work item tasks in Azure Boards](quick-ref.md)
 - [Web portal navigation](../../project/navigation/index.md) 
+- [Work item form controls](work-item-form-controls.md)
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
-- [About Kanban and Agile project management](../boards/kanban-overview.md) 
-- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [About Kanban and Agile project management](../boards/kanban-overview.md)  
 - [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)  
-- [Work item field index](./guidance/work-item-field.md)
-- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)
+- [Work item field index](./guidance/work-item-field.md) 
