@@ -2,14 +2,14 @@
 title: Agile process work item types & workflow in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to use the Agile process to track work using its work item types working in Azure Boards.
-ms.custom: work-items, seodec18
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/04/2023
 ---
 
 # Agile process work item types for workflow management in Azure Boards  
@@ -18,7 +18,7 @@ ms.date: 04/01/2022
 
 Teams use the work item types (WITs) provided with the Agile process. Work item types help your team to plan and track progress of software projects. You define user stories to manage the backlog of work. Then, using the Kanban board, you track progress by updating the status of those stories.
 
-![Agile process, WITs used to plan and track](media/agile-process-plan-wits.png)
+![Conceptual image of Agile process, work item types used to plan and track work.](media/agile-process-plan-wits.png)
 
 To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers map user stories to features. When a team works in sprints, they define tasks that automatically link to user stories. If you are new to the Agile process, review the section [Plan and track work with Agile](agile-process.md#start-using) to get started. 
 
@@ -32,11 +32,9 @@ User stories define the applications, requirements, and elements that teams need
 
 Create user stories from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). From that page, you can also drag-and-drop items to reorder them or [map them to features](../../backlogs/organize-backlog.md). 
 
-![Web portal, Agile process, Quick add panel](media/IC697757.png)
-
 Later, you can open each user story to provide more details and estimate the story points.
-
-![User story work item form ](../../backlogs/media/add-work-item-vsts-user-story-form.png) 
+ 
+:::image type="content" source="../media/about-work-items-user-story.png" alt-text="Screenshot of User Story work item form.":::
 
 By defining the **Story Points**, your team can use the forecast feature and velocity charts to estimate future sprints or work efforts. By prioritizing the user stories on the backlog page (that's captured in the Stack Rank field), product owners can indicate which items should be given higher priority.
 
@@ -136,7 +134,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-![Bug work item form, header area](media/agile-bug-form-state-reason.png)
+![Screenshot of Bug work item form, header area.](media/agile-bug-form-state-reason.png)
 
 
 ### Agile workflow states 
@@ -147,7 +145,7 @@ By updating the workflow, teams know which items are new, in progress, or comple
 > [!div class="mx-tdBreakAll"]  
 > |User Story |Bug |Task |  
 > |-------------|----------|---------| 
-> |<img src="media/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" /> |<img src="media/agile-bug-workflow.png" title="Bug workflow states, Agile process"  alt="Bug workflow states, Agile process" /> |<img src="media/ALM_PT_Agile_WF_Task.png" title="Task workflow states, Agile process "  alt="Task workflow states, Agile process" />| 
+> |<img src="media/ALM_PT_Agile_WF_UserStory.png" title="Conceptual image of User Story workflow states, Agile process." alt="Conceptual image of User Story workflow states, Agile process." /> |<img src="media/agile-bug-workflow.png" title="Conceptual image of Bug workflow states, Agile process."  alt="Conceptual image of Bug workflow states, Agile process." /> |<img src="media/ALM_PT_Agile_WF_Task.png" title="Conceptual image of Task workflow states, Agile process."  alt="Conceptual image of Task workflow states, Agile process." />| 
 
 A typical workflow progression for a user story follows:
 
@@ -161,7 +159,7 @@ A typical workflow progression for a user story follows:
 
 Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-![Track progress on the Kanban board](../../boards/media/ALM_CC_MoveCard.png)
+![Screenshot of Track progress on the Kanban board.](../../boards/media/ALM_CC_MoveCard.png)
 
 You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
@@ -176,11 +174,11 @@ Using portfolio backlogs, you can [drill down from one backlog to another](../..
 
 When your team manages their work in sprints, they can use the [sprint backlog page](../../sprints/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
 
-![Sprint backlog, add task](media/IC697761.png)
+![Screenshot of Sprint backlog, add task.](media/IC697761.png)
 
 Name the task and estimate the work it will take.
 
-![Agile task work item form](media/agile-task-form.png)
+![Screenshot of Agile task work item form.](media/agile-task-form.png)
 
 Using Agile processes, teams forecast work and define tasks at the start of each sprint. Each team member then performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer defines tasks to implement user stories, and a tester defines tasks to write and run test cases.
 
@@ -259,13 +257,13 @@ If you use [Microsoft Project](/previous-versions/azure/devops/boards/backlogs/o
  
 ### Test user stories
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links** tab. 
 
-![Test plan web portal](media/IC793453.png)
+![Screenshot of Test plan web portal.](media/IC793453.png)
 
 The test case contains multiple fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
-![Test case form](media/agile-test-case-form.png)
+![Screenshot of Test case form.](media/agile-test-case-form.png)
 
 The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made in testing each item. By defining these links, you support information that appears in the [Stories Overview Report](../../../report/sql-reports/stories-overview-report-agile.md) report.
 
@@ -277,21 +275,20 @@ You can [create bugs from the web portal, Visual Studio, or when testing with Te
 [!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
 
 ## Customize work item types
+
 [!INCLUDE [temp](../../includes/customize-work-tracking.md)] 
 
 
 ## Related articles
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]  
-  
- 
-
+   
 
 ### Track issues 
 
 Issues are used to track events that may block progress or shipping a user story. Bugs, on the other hand, are used to track code defects. You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards/dashboards.md), or from the **New** menu on the Queries page. 
 
-![Add work item from a New work item widget](../../../user-guide/media/features/alm-feature-new-work-item-widget.png)  
+![Screenshot of Add work item from a New work item widget.](../../../user-guide/media/features/alm-feature-new-work-item-widget.png)  
 
 Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
  

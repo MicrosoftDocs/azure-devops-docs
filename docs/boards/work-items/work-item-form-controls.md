@@ -2,7 +2,7 @@
 title: Use work item form controls in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to use work item form controls to update status, link work items, and more in Azure Boards.
-ms.custom: work-items, seodec18  
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: conceptual
@@ -22,7 +22,7 @@ Different types of work items track different data. Each work item form contains
 
 As the following image shows, each work item form comes with several controls, fields, and tabs. Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. 
 
-![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
+![Screenshot of work item form to track features or user stories.](media/about-work-items/work-item-form.png.png)
 
 
 ::: moniker range=">= azure-devops-2019"
