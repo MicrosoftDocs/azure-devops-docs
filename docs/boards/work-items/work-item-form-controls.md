@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 01/04/2023
 ---
 
-# Use work item form controls 
+# Work item form controls 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
