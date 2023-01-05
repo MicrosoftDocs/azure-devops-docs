@@ -159,19 +159,19 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
       :::image type="content" source="media/about-work-items/follow-refresh-actions-menu.png" alt-text="Screenshot of Follow and Refresh icons, and Actions menu.":::
    :::column-end:::
    :::column span="1":::
-	- Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
-	- Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. 
-	- Choose  :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: **Revert changes** to undo any changes you made to the work item form. 
-	- To exercise a task available from the **Actions** menu, see the following articles: 
-	  - [New linked work item](../backlogs/add-link.md)
-	  - [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
-	  - [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
-	  - [Create copy of work item...](../backlogs/copy-clone-work-items.md)
-	  - [Email work item](email-work-items.md) 
-	  - [Delete](../backlogs/remove-delete-work-items.md) 
-	  - [Templates](../backlogs/work-item-template.md)
-	  - [New branch...](../backlogs/connect-work-items-to-git-dev-ops.md)  
-	  - [Customize](../../organizations/settings/work/customize-process.md)
+      - Choose **Follow** to get updates when changes are made to the work item. To learn more, see [Follow changes made to a user story, bug, or other work item or pull request](follow-work-items.md). 
+      - Choose :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: **Refresh**  to update the work item form with the latest changes that someone else may have made while you had the work item open. 
+      - Choose  :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: **Revert changes** to undo any changes you made to the work item form. 
+      - To exercise a task available from the **Actions** menu, see the following articles: 
+        - [New linked work item](../backlogs/add-link.md)
+        - [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
+        - [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
+        - [Create copy of work item...](../backlogs/copy-clone-work-items.md)
+        - [Email work item](email-work-items.md) 
+        - [Delete](../backlogs/remove-delete-work-items.md) 
+        - [Templates](../backlogs/work-item-template.md)
+        - [New branch...](../backlogs/connect-work-items-to-git-dev-ops.md)  
+        - [Customize](../../organizations/settings/work/customize-process.md)
    :::column-end:::
 :::row-end:::
 
