@@ -29,7 +29,7 @@ If a pipeline in this project is important and runs should be retained for longe
 
 # [PowerShell](#tab/powershell)
 
-```
+```yaml
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()))
   name: RetainOnSuccess
@@ -46,21 +46,32 @@ If a pipeline in this project is important and runs should be retained for longe
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
 ```
 
-# [Azure CLI/ Bash](#tab/cli)
-```  
- - task: AzureCLI@2
-          condition: and(succeeded(), not(canceled()))
-          name: RetainOnSuccess
-          displayName: Retain on Success
-          inputs:
-            azureSubscription: 'Your Service Connection'
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              curl -X POST $(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1 -H 'Content-type: application/json' -H 'Authorization: bearer $(system.AccessToken)' -d '[{ daysValid: 365, definitionId: $(System.DefinitionId), ownerId: "User:$(Build.RequestedForId)", protectPipeline: false, runId: $(Build.BuildId) }]' 
-``` 
-# [REST API Task](#tab/task)
+# [Bash](#tab/cli)
+
+```yaml
+- bash: |
+    curl \
+      -X POST \
+      -H 'Authorization: Bearer $(System.AccessToken)' \
+      -H 'Content-Type: application/json' \
+      -d '[
+            {
+              "daysValid": 730,
+              "definitionId": $(System.DefinitionId),
+              "ownerId": "User:$(Build.RequestedForId)",
+              "protectPipeline": false,
+              "runId": $(Build.BuildId)
+            }
+          ]' \
+      "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1"
+  condition: and(succeeded(), not(canceled()))
+  name: RetainOnSuccess
+  displayName: Retain on Success
 ```
+
+# [REST API Task](#tab/task)
+
+```yaml
 - task: InvokeRESTAPI@1
           displayName: 'Retain on Success'
           inputs:
@@ -74,7 +85,7 @@ If a pipeline in this project is important and runs should be retained for longe
               }
             body: |
               [{
-                "daysValid": 365,
+                "daysValid": 730,
                 "definitionId": $(System.DefinitionId),
                 "ownerId": "User:$(Build.RequestedForId)",
                 "protectPipeline": false,
@@ -92,7 +103,7 @@ No, leases don't work in the reverse. If a project is configured to retain for t
 
 This is similar to above, only the condition needs to change:
 
-```
+```yaml
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()), startsWith(variables['Build.SourceBranchName'], 'releases/'))
   name: RetainReleaseBuildOnSuccess
@@ -115,7 +126,7 @@ Consider a two-stage pipeline that first runs a build and then a release. When s
 
 The `Build` stage can retain the pipeline as in the above examples, but with one addition: by saving the new lease's `Id` in an output variable, the lease can be updated later when the release stage runs.
 
-```
+```yaml
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()))
   name: RetainOnSuccess
@@ -136,7 +147,7 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
 
 To [_update_ a retention lease](/rest/api/azure/devops/build/leases/update) requires a different REST API call.
 
-```
+```yaml
 - stage: Release
   dependsOn: Build
   jobs:
