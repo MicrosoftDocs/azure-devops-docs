@@ -50,7 +50,7 @@ Now, you're paying for Azure DevOps with your CSP-based Azure subscription.
 
 ## Related articles
 
-- [Buy and manage Visual Studio cloud subscriptions for your customers](/visualstudio/subscriptions/vscloud-csp?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&view=azure-devops)
+- [Buy and manage Visual Studio cloud subscriptions for your customers](/visualstudio/subscriptions/vscloud-csp)
 - [Buy Visual Studio App Center resources](https://visualstudio.microsoft.com/app-center/)
 - [Azure DevOps pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops)
 - [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
