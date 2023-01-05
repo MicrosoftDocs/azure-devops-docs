@@ -34,7 +34,7 @@ Create user stories from the quick add panel on the [product backlog page](../..
 
 Later, you can open each user story to provide more details and estimate the story points.
  
-:::image type="content" source="../media/about-work-items-user-story.png" alt-text="Screenshot of User Story work item form.":::
+:::image type="content" source="../media/about-work-items/work-item-form-user-story.png" alt-text="Screenshot of User Story work item form.":::
 
 By defining the **Story Points**, your team can use the forecast feature and velocity charts to estimate future sprints or work efforts. By prioritizing the user stories on the backlog page (that's captured in the Stack Rank field), product owners can indicate which items should be given higher priority.
 

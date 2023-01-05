@@ -22,7 +22,7 @@ Different types of work items track different data. Each work item form contains
 
 As the following image shows, each work item form comes with several controls, fields, and tabs. Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. 
 
-![Screenshot of work item form to track features or user stories.](media/about-work-items/work-item-form.png.png)
+![Screenshot of work item form to track features or user stories.](media/about-work-items/work-item-form-user-story.png)
 
 
 ::: moniker range=">= azure-devops-2019"

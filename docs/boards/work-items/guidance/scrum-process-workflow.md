@@ -35,7 +35,7 @@ You can create PBIs and bugs from the [quick add panel on the product backlog pa
 Later, you can open each PBI or bug to provide more details and estimate the effort. Also, by prioritizing the PBIs and bugs on the backlog page (which is captured in the Backlog Priority field), product owners can indicate which items should be given higher priority.  
 
 
-:::image type="content" source="../media/about-work-items-product-backlog-item.png" alt-text="Screenshot of Product backlog item work item form."::: 
+:::image type="content" source="../media/about-work-items/work-item-form-product-backlog-item.png" alt-text="Screenshot of Product backlog item work item form."::: 
 
 
 By defining the **Effort** for PBIs and bugs, teams can use the forecast feature and velocity charts to estimate future sprints or work efforts. By defining the **Business Value**, product owners can specify priorities separate from the changeable backlog stack ranking.
