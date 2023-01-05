@@ -184,7 +184,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
 With the **Discussion** control, project members can  add and review comments made about the work being performed. The rich text editor tool bar displays below the text entry area when you click your cursor within each text box. Each comment added is recorded in the **History** field. To learn more, see [View and add work items](view-add-work-items.md#capture-comments-in-the-discussion-section). To query the Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Discussion section within a work item form,](../backlogs/media/discussion-section.png)   
+> ![Screenshot of Discussion section within a work item form.](../backlogs/media/discussion-section.png)   
  
 ::: moniker range=">= azure-devops-2019"
 
