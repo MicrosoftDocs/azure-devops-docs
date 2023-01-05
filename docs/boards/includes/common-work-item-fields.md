@@ -30,7 +30,6 @@ The only required field for all work item types is **Title**. When the work item
 :::row:::
    :::column span="1":::
    [Title](../queries/titles-ids-descriptions.md) 
-
    :::column-end:::
    :::column span="3":::
    Enter a description of 255 characters or less. You can always modify the title later.
@@ -41,7 +40,7 @@ The only required field for all work item types is **Title**. When the work item
    [Assigned To](../queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-   Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.
+   Assign the work item to the team member responsible for performing the work. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -58,27 +57,22 @@ The only required field for all work item types is **Title**. When the work item
    :::column-end:::
    :::column span="3":::
    Use the default first. Update it when you change state. Each State is associated with a default reason.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [Area](../../organizations/settings/set-area-paths.md)
+   [Area](../queries/query-by-area-iteration-path.md)
    :::column-end:::
    :::column span="3":::
-   Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.
-
-   To change the dropdown list of areas, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).
+   Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.  To change the dropdown list of areas, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [Iteration](../../organizations/settings/set-area-paths.md)
+   [Iteration](../queries/query-by-area-iteration-path.md)
    :::column-end:::
    :::column span="3":::
-   Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.
-
-   To change the drop-down list of iterations, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).
+   Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings//set-iteration-paths-sprints.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -108,4 +102,4 @@ The only required field for all work item types is **Title**. When the work item
    :::column span="3":::
    Share more detailed information by adding files to the work item, such as email threads, documents, images, log files, or other file types.
    :::column-end:::
-:::row-end:::
+:::row-end::: 
