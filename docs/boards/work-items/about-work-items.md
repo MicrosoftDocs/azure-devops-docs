@@ -70,6 +70,8 @@ Common fields defined for all work item types display at the top of the work ite
 
 <a id="assign-to-sprint"></a>
 
+[!INCLUDE [temp](../includes/common-work-item-fields.md)]   
+
 |Field| Default | Description | 
 |-----|--------|--------------|
 |**ID**| System assigned |The unique identifier that Azure DevOps assigns to a work item. Work item IDs are unique across all projects defined for an organization or project collection. | 
