@@ -2,14 +2,14 @@
 title: Understand Scrum process work items types & workflow
 titleSuffix: Azure Boards
 description: Learn how to use the Scrum process work item types and workflow to track work in Azure Boards and Azure DevOps.
-ms.custom: work-items
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/04/2023
 ---
 
 # Manage your Scrum process work item types and workflow  
@@ -18,27 +18,24 @@ ms.date: 04/01/2022
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners, and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks that automatically link to PBIs and bugs.
 
-![Scrum process, WITs used to plan and track](media/scrum-process-plan-wits.png) 
+![Conceptual images of Scrum process, work item types used to plan and track.](media/scrum-process-plan-wits.png) 
 
 > [!NOTE]  
 > If you are new to the Scrum process, review [About Sprints, Scrum and project management](../../sprints/scrum-overview.md) to get started. 
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues. 
-
-
  
 
 ## Define PBIs and bugs  
 
 When you define a product backlog item, you want to focus on the value that your customers will receive and avoid descriptions of how your team will develop the feature. The product owner can prioritize your product backlog based on each item's business value, effort, and relative dependency on other backlog items. As your business requirements evolve, so does your product backlog. Typically, teams specify details only for the highest priority items, or those items assigned to the current and next sprint.
 
-You can create PBIs and bugs from the [quick add panel on the product backlog page](../../backlogs/create-your-backlog.md).  
-
-<img src="media/IC675707.png" alt="Web portal, Agile process, Quick add panel " /> 
+You can create PBIs and bugs from the [quick add panel on the product backlog page](../../backlogs/create-your-backlog.md). 
 
 Later, you can open each PBI or bug to provide more details and estimate the effort. Also, by prioritizing the PBIs and bugs on the backlog page (which is captured in the Backlog Priority field), product owners can indicate which items should be given higher priority.  
 
-![Product backlog item work item form](media/new-form-product-backlog-item.png)  
+
+:::image type="content" source="../media/about-work-items/work-item-form-product-backlog-item.png" alt-text="Screenshot of Product backlog item work item form."::: 
 
 
 By defining the **Effort** for PBIs and bugs, teams can use the forecast feature and velocity charts to estimate future sprints or work efforts. By defining the **Business Value**, product owners can specify priorities separate from the changeable backlog stack ranking.
@@ -117,7 +114,7 @@ By updating the State, teams know which items are new, in progress, or completed
 > [!div class="mx-tdBreakAll"]  
 > |Product Backlog Item |Bug |Task |  
 > |-------------|----------|---------| 
-> |<img src="media/ALM_PT_Scrum_WF_PBI.png" title="Product Backlog Item workflow states, Scrum process " alt="Product Backlog Item workflow states, Scrum process" /> |<img src="media/ALM_PT_Scrum_WF_Bug.png" title="Bug workflow states, Scrum process"  alt="Bug workflow states, Scrum process" /> |<img src="media/ALM_PT_Scrum_WF_Task.png" title="Task workflow states, Scrum process"  alt="Task workflow states, Scrum process" /> |
+> |<img src="media/ALM_PT_Scrum_WF_PBI.png" title="Conceptual image of Product Backlog Item workflow states, Scrum process." alt="Conceptual image of Product Backlog Item workflow states, Scrum process." /> |<img src="media/ALM_PT_Scrum_WF_Bug.png" title="Conceptual image of Bug workflow states, Scrum process."  alt="Conceptual image of Bug workflow states, Scrum process." /> |<img src="media/ALM_PT_Scrum_WF_Task.png" title="Conceptual image of Task workflow states, Scrum process."  alt="Conceptual image of Task workflow states, Scrum process." /> |
 
 PBIs and bugs follow this typical workflow progression:
 
@@ -131,7 +128,7 @@ PBIs and bugs follow this typical workflow progression:
 
 Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of PBIs, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-![Track progress on the Kanban board](../../boards/media/ALM_CC_MoveCard.png)
+![Screenshot of track progress on the Kanban board.](../../boards/media/ALM_CC_MoveCard.png)
 
 You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For other customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
@@ -146,11 +143,11 @@ Using portfolio backlogs, you can [drill down from one backlog to another](../..
 
 When your team manages their work in sprints, they can use the sprint backlog page to break down the work to be accomplished into distinct tasks.
 
-![Add a task to an item in the sprint backlog](media/IC795962.png)  
+![Screenshot of Sprint backlog, Add a task to an item in the sprint backlog.](media/IC795962.png)  
 
 Name the task and estimate the work it will take.
 
-<img src="media/scrum-task-form.png" alt="Scrum process, Task work item form" />  
+<img src="media/scrum-task-form.png" alt="Screenshot of Scrum process, Task work item form/" />  
 
 Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member completes a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
 
@@ -193,12 +190,12 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 From the web portal or Test Manager, you can [create test cases that automatically link to a PBI or bug](../../../test/create-test-cases.md). Or, you can link a PBI or bug to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab).  
 
 
-<img src="media/IC793453.png" alt="Web portal, Select the test suite and add a test case" /> 
+<img src="media/IC793453.png" alt="Screenshot of Web portal, Select the test suite and add a test case." /> 
 
 
 The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
-![Scrum Test case work item form](media/scrum-test-case-form.png)  
+![Screenshot of Scrum Test case work item form.](media/scrum-test-case-form.png)  
 
 The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) captures the links to all the PBIs and bugs in a test case. By linking PBIs and bugs to test cases, the team can track the progress made in testing each item.  
 
