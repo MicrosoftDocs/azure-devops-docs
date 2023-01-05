@@ -91,7 +91,7 @@ A further protection is that customers can recover their deleted organizations o
 
 Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, the restores do." While technically incorrect, the sentiment is right.
 
-Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. Also, from time to time, we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
+Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
 
 ## Service availability
 
@@ -313,3 +313,4 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Features and services included with Azure DevOps](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
+
