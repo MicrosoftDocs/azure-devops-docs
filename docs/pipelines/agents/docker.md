@@ -350,6 +350,10 @@ Next, create the Dockerfile.
 
     source ./env.sh
 
+    trap 'cleanup; exit 0' EXIT
+    trap 'cleanup; exit 130' INT
+    trap 'cleanup; exit 143' TERM
+
     print_header "3. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
@@ -368,11 +372,11 @@ Next, create the Dockerfile.
     trap 'cleanup; exit 130' INT
     trap 'cleanup; exit 143' TERM
 
-    chmod +x ./run-docker.sh
+    chmod +x ./run.sh
 
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run-docker.sh "$@" & wait $!
+    ./run.sh "$@" & wait $!
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
