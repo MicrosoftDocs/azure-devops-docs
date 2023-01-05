@@ -73,25 +73,25 @@ If a pipeline in this project is important and runs should be retained for longe
 
 ```yaml
 - task: InvokeRESTAPI@1
-          displayName: 'Retain on Success'
-          inputs:
-            connectionType: connectedServiceName
-            serviceConnection: Your Service Connection
-            method: POST
-            headers: |
-              {
-                "Content-type": "application/json",
-                "Authorization": "bearer $(system.AccessToken)"
-              }
-            body: |
-              [{
-                "daysValid": 730,
-                "definitionId": $(System.DefinitionId),
-                "ownerId": "User:$(Build.RequestedForId)",
-                "protectPipeline": false,
-                "runId": $(Build.BuildId)
-              }]
-            waitForCompletion: 'false'
+  displayName: 'Retain on Success'
+  inputs:
+    connectionType: connectedServiceName
+    serviceConnection: Your Service Connection
+    method: POST
+    headers: |
+      {
+        "Content-type": "application/json",
+        "Authorization": "bearer $(system.AccessToken)"
+      }
+    body: |
+      [{
+        "daysValid": 730,
+        "definitionId": $(System.DefinitionId),
+        "ownerId": "User:$(Build.RequestedForId)",
+        "protectPipeline": false,
+        "runId": $(Build.BuildId)
+      }]
+    waitForCompletion: 'false'
 ```
 * * *
 
