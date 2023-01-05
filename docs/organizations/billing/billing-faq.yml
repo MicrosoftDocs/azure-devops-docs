@@ -377,7 +377,7 @@ sections:
       - question: |
           Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
         answer: |
-          A: Use the [Azure Prepayment](/marketplace/azure-consumption-commitment-benefit) (previously called monetary commitment) funds from your Enterprise Agreement to pay for the following items: [Azure DevOps users](../buy-basic-access-add-users.md), [Microsoft-published extensions for Azure DevOps](https://marketplace.visualstudio.com/azuredevops), and [Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs) You can't use these funds to pay for Visual Studio cloud subscriptions and non-Microsoft extensions for Azure DevOps.
+          A: Use the [Azure Prepayment](/marketplace/azure-consumption-commitment-benefit) (previously called monetary commitment) funds from your Enterprise Agreement to pay for the following items: [Azure DevOps users](buy-basic-access-add-users.md), [Microsoft-published extensions for Azure DevOps](https://marketplace.visualstudio.com/azuredevops), and [Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs) You can't use these funds to pay for Visual Studio cloud subscriptions and non-Microsoft extensions for Azure DevOps.
 
 
   - name: Other questions
