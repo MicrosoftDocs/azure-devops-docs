@@ -57,7 +57,7 @@ To use `twine` to publish your Python packages, you must first set up authentica
 ```yaml
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #Provide the FeedName only if you are using an organization-scoped feed.
+    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #Don't provide projectName if you are using an organization-scoped feed.
     pythonUploadServiceConnection: <NAME_OF_YOUR_SERVICE_CONNECTION>
 ```
 
@@ -95,7 +95,7 @@ To use `twine` to publish your Python packages, you must first set up authentica
 - task: TwineAuthenticate@1
   displayName: Twine Authenticate
   inputs:
-    artifactFeed: projectName/feedName        #Provide the FeedName only if you are using an organization-scoped feed.
+    artifactFeed: projectName/feedName        #Don't provide projectName if you are using an organization-scoped feed.
   
 - script: |
      python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
