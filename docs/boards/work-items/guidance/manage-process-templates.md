@@ -42,13 +42,8 @@ To manage process templates, you must be a member of the **Project Collection Ad
 > Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
  
 
-::: moniker range="azure-devops"
 
-[!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts-only.md)]
-::: moniker-end 
-
-
-::: moniker range="< azure-devops"
+::: moniker range=">= azure-devops-2019"
 [!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts.md)]
 ::: moniker-end 
 
@@ -122,6 +117,38 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
 
 ::: moniker-end
 
+
+::: moniker range="tfs-2018"
+
+## Open Process Template Manager 
+
+1. From Visual Studio 2015, open the Process Template Manager from the **Team>Team Project Collection Settings>Process Template Manager** bar menu.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Screenshot that shows Open Process Template Manager from Visual Studio 2015.](media/open-process-template-manager.png)
+
+   You'll see a list of each process template that has been uploaded to the project collection. 
+
+   ![Process Template Manager dialog, Select process template to work with.](media/process-template-manager.png)
+
+   > [!TIP]   
+   > For a comparison of the default process templates--Agile, Basic, CMMI, and Scrum--see [Choose a process](choose-process.md).  
+   The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
+
+3. Select the process template that you want to work with and then choose from the following actions.  
+
+	|**Choose this task** | **To perform this operation** |
+	|---------------------|-------------------------------|
+	|**Upload**|To upload a process template.<br/>In the **Upload Process Template** dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions). |
+	|**Download** | To download the process template to a local computer.<br/>In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.<br/><br/>If you're downloading a process template to use to [configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), [manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually) or [update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)--choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. All version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). <br/><br/>You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation). |
+	|**Make Default**| To cause the selected process template to appear as the default selection in the **New Team Project Wizard**. | 
+	|**Delete**	|To permanently remove the selected process template from the collection.	| 
+
+
+::: moniker-end
+
+
+
 <a id="wit_correlation"> </a>
 
 ## Correlate a process template with an existing project
@@ -186,12 +213,10 @@ Periodically, updates are made to the process templates to support new features.
 
 
 REMOVED CONTENT: 
-
-
 > [!NOTE]  
 > The way the Process Template Manager works changed with the release of Visual Studio 2017 and Visual Studio 2019. Opening the Process Template Manager from Visual Studio 2017 and later versions  opens the web portal **Collection Settings** or **Organization Settings**.  
  
-1. From Visual Studio, connect to an on-premises Azure DevOps Server collection that uses On-premises XML process model. 
+1. From Visual Studio 2017, connect to an on-premises Azure DevOps Server collection that uses On-premises XML process model. 
 1. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
 	> [!div class="mx-imgBorder"] 
@@ -202,7 +227,6 @@ REMOVED CONTENT:
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of web portal, Project Collection Settings, Open Process.](media/process-template/open-collection-process-ado-2019.png)
-
 
 -->
 
