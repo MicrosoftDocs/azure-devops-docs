@@ -21,9 +21,7 @@ When you create a project, a process is used to specify the work item types to c
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
-
-Support for uploading and downloading Inherited processes isn't supported through the user interface. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
-
+ 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -39,13 +37,10 @@ You can upload, download, and delete process templates for a project collection.
 ## Prerequisites
  
 To manage process templates, you must be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
-
-
-::: moniker range="azure-devops"
+ 
 > [!IMPORTANT]  
-> Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). To manage Hosted XML processes, see [Hosted XML process model](../../../organizations/settings/work/hosted-xml-process-model.md).
-
-::: moniker-end
+> Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
+ 
 
 ::: moniker range="azure-devops"
 
@@ -74,7 +69,7 @@ To manage process templates, you must be a member of the **Project Collection Ad
 	> [!div class="mx-imgBorder"]  
 	> ![Import Process dialog, choose process file to import.](../../../organizations/settings/work/import-process/media/import-process-dialog.png)
 
-	Check the **Replace existing template** if you are updating an existing template. The import process overwrites any template that has the same name as the one you import and requires that you check this box to confirm you want it replaced.
+	Check the **Replace existing template** if you're updating an existing template. The import process overwrites any template that has the same name as the one you import and requires that you check this box to confirm you want it replaced.
 
 	> [!IMPORTANT]  
 	> You can't update one of the locked processes: Agile, Basic, CMMI, and Scrum.  
