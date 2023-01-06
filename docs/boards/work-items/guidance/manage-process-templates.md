@@ -57,9 +57,9 @@ To manage process templates, you must be a member of the **Project Collection Ad
 	> ![Screenshot of Import Process link.](../../../organizations/settings/work/import-process/media/import-process-import-link.png)
 
     > [!NOTE]    
-    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../../migrate/migration-overview.md).
+    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../migrate/migration-overview.md).
 
-1.  Choose the file to upload. Your [custom process must meet specific constraints](customize-process.md) in order to pass validation checks during import.  
+1.  Choose the file to upload. Your [custom process must meet specific constraints](../../../organizations/settings/work/import-process/customize-process.md) in order to pass validation checks during import.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Import Process dialog, choose process file to import.](../../../organizations/settings/work/import-process/media/import-process-dialog.png)
@@ -132,7 +132,7 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
    ![Process Template Manager dialog, Select process template to work with.](media/process-template-manager.png)
 
    > [!TIP]   
-   > For a comparison of the default process templates--Agile, Basic, CMMI, and Scrum--see [Choose a process](choose-process.md).  
+   > For a comparison of the default process templates--Agile, CMMI, and Scrum--see [Choose a process](choose-process.md).  
    The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
 
 3. Select the process template that you want to work with and then choose from the following actions.  
