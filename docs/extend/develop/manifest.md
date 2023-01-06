@@ -611,12 +611,14 @@ The Marketplace only supports badges from the following trusted services:
 * snyk.io/
 * travis-ci.com/
 * travis-ci.org/
-* vsmarketplacebadge.apphb.com/
+* vsmarketplacebadges.dev/
 * bithound.io/
 * deepscan.io/
 * githost.io/
 * gitlab.com/
 * opencollective.co/
+
+Note : Replace vsmarketplacebadge.apphb.com badge with vsmarketplacebadges.dev badge.
 
 If you want to show a badge from another service, contact *vsmarketplace@microsoft.com*.
 
