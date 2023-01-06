@@ -138,7 +138,7 @@ Note that most new features we are shipping in Boards are only available in the 
       <tr>
          <td><a href="/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane" data-raw-source="[Move to Column and Move to Swimlane](/azure/devops/release-notes/2022/boards/sprint-210-update#move-to-column-and-move-to-swimlane)">Move to Column and Move to Swimlane</a></td>
          <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q3</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -164,6 +164,12 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2022 Q4</td>
          <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Save Comment Improvements](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors on Kanban board</a></td>
+        <td>Boards</td>
+         <td>2023 Q1</td>
+        <td>Future</td>      
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
@@ -318,13 +324,13 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="14"><strong>2022 Q4</strong></td>
+        <td rowspan="13"><strong>2022 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters" data-raw-source="[Maintain backlog hierarchy when filters are applied](/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url" data-raw-source="[copy work item attachment url](/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment url</a></td>
+        <td><a href="/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url" data-raw-source="[Copy work item attachment url](/azure/devops/release-notes/2022/sprint-211-update#copy-work-item-attachment-url)">Copy work item attachment url</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>     
@@ -332,12 +338,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types" data-raw-source="[Ability to change link type from Web UI](/azure/devops/release-notes/2022/sprint-212-update#edit-work-item-link-types)">Ability to change link type from Web UI</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/save-comment-improvements" data-raw-source="[Save Comment Improvements](/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save Comment Improvements</a></td>
-        <td>Boards</td>
-        <td>Future</td>      
-      </tr>
+      </tr>     
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection" data-raw-source="[Improvements in service connection usage history](/azure/devops/release-notes/roadmap/2022/improvements-in-service-connection)">Improvements in service connection usage history</a></td>
         <td>Pipelines</td>
@@ -389,7 +390,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="11"><strong>2023 Q1</strong></td>
+        <td rowspan="14"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -434,6 +435,21 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Swimlane colors](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors</a></td>
+        <td>Boards</td>
+        <td>Future</td>      
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/save-comment-improvements" data-raw-source="[Save Comment Improvements](/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save Comment Improvements</a></td>
+        <td>Boards</td>
+        <td>Future</td>      
+      </tr>
+       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/lock-picklist-fields" data-raw-source="[Prevent picklist fields from being edited](/azure/devops/release-notes/roadmap/2023/lock-picklist-fields)">Prevent picklist fields from being edited</a></td>
+        <td>Boards</td>
+        <td>Future</td>      
+      </tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work Item support for Markdown editing](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work Item support for Markdown editing</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -444,7 +460,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>     
       <tr>
-        <td rowspan="4"><strong>2023 Q2</strong></td>
+        <td rowspan="5"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -456,6 +472,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
