@@ -1,7 +1,7 @@
 ---
-title: Link GitHub commits and PRs to work items
+title: Link GitHub commits, PRs, and issues to work items
 titleSuffix: Azure Boards 
-description: Learn how to add links to your GitHub commits and pull requests. These links can link to or from Azure Boards work items.
+description: Learn how to links work items to GitHub commits, pull requests, and issues, and automatically transition work item states in Azure Boards.  
 ms.service: azure-devops-boards 
 ms.custom: work-items, github, engagement-fy23
 ms.author: kaelli
@@ -23,7 +23,12 @@ Once you've connected your Azure Boards project with a GitHub repository, you ca
 
 * Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration](index.md).  
 * You must be a Contributor to Azure Boards project and to the GitHub repository.  
-* If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
+
+::: moniker range="azure-devops"
+> [!NOTE]   
+> Projects that use the Hosted XML process model require updates to the work item types to view the Development section and GitHub link types. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
+::: moniker-end
+
 
 ## Use `AB#` mention to link from GitHub to Azure Boards work items 
  
@@ -42,7 +47,7 @@ AB#{ID}
 
 For example, `AB#125` will link to work item ID 125. 
 
-You can also enter a commit or pull request message to transition the work item. The system will recognize `fix, fixes, fixed` and apply it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If there is no **State** associated with *Resolved*, then it transitions to the **State** associated with the *Completed* workflow category state. To understand how workflow states map to workflow category states, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md) 
+You can also enter a commit or pull request message to transition the work item. The system will recognize `fix, fixes, fixed` and apply it to the #-mention item that follows. Mentioned work items transition to the first **State** associated with the *Resolved* workflow category state. If there's no **State** associated with *Resolved*, then it transitions to the **State** associated with the *Completed* workflow category state. To understand how workflow states map to workflow category states, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md) 
 
 Some examples are provided as shown. 
 
@@ -53,7 +58,7 @@ Some examples are provided as shown.
 | `Adds a new feature, fixes AB#123.`         | Links and transitions the work item to  the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
 | `Fixes AB#123, AB#124, and AB#126`          | Links to Azure Boards work items 123, 124, and 126. Transitions only the first item, 123 to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category.|
 | `Fixes AB#123, Fixes AB#124, Fixes AB#125` | Links to Azure Boards work items 123, 124, and 126. Transitions all items to   either the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
-| `Fixing multiple bugs: issue #123 and user story AB#234` | Links to GitHub issue 123 and Azure Boards work item 234. No transitions. |
+| `Fixing multiple bugs: issue #123 and user story AB#234` | Links to GitHub issue 123 and Azure Boards work item 234. No transitions are made. |
 
 
 > [!NOTE]   
