@@ -19,13 +19,6 @@ ms.date: 01/05/2023
 
 When you create a project, a process is used to specify the work item types to configure and other settings. Each process template primarily defines the building blocks of the work item tracking system for Azure Boards. For the Hosted XML and On-premises XML process models, you can upload a process template to either update an existing project or create a project. For the Inheritance process model, you customize work tracking through the web portal. To learn more about these different processes, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-::: moniker range="azure-devops"
-> [!IMPORTANT]  
-> Uploading and downloading Inherited processes isn't supported. However, if you're organization uses the Hosted XML process, you can import and export process templates as described in [Import and export a Hosted XML process](../../../organizations/settings/work/import-process/import-process.md). 
-> To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). To manage Hosted XML processes, see [Hosted XML process model](../../../organizations/settings/work/hosted-xml-process-model.md).
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
 
@@ -49,6 +42,12 @@ To manage process templates, you must be a member of the **Project Collection Ad
 
 
 ::: moniker range="azure-devops"
+> [!IMPORTANT]  
+> Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). To manage Hosted XML processes, see [Hosted XML process model](../../../organizations/settings/work/hosted-xml-process-model.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 [!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts-only.md)]
 ::: moniker-end 
@@ -63,12 +62,12 @@ To manage process templates, you must be a member of the **Project Collection Ad
 ## Import a process template (Hosted XML process)   
 
 1.  From the **Processes** tab, choose **Import process** and then drag-and-drop or browse to the zip file of the process you've customized.  
-  
-    > [!NOTE]    
-    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../../migrate/migration-overview.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Import Process link.](../../../organizations/settings/work/import-process/media/import-process-import-link.png)
+
+    > [!NOTE]    
+    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../../migrate/migration-overview.md).
 
 1.  Choose the file to upload. Your [custom process must meet specific constraints](customize-process.md) in order to pass validation checks during import.  
 
@@ -98,7 +97,7 @@ To manage process templates, you must be a member of the **Project Collection Ad
 	> [!div class="mx-imgBorder"]  
 	> ![Dialog for Create new project.](../../../organizations/settings/work/import-process/media/create-project-from-hosted.png)
 
-For additional Hosted XML process management tasks, see [Import and export a Hosted XML process](../../../organizations/settings/work/import-process/import-process.md).
+For other Hosted XML process management tasks, see [Import and export a Hosted XML process](../../../organizations/settings/work/import-process/import-process.md).
 
 ::: moniker-end 
 
@@ -163,20 +162,17 @@ If you upload the process template through the web portal, you may come across e
 
 Resolve each error and then retry the upload process. You may find additional information about resolving process template errors from [Resolve validation errors for process import](../../../organizations/settings/work/import-process/resolve-errors.md). 
 
-Uploading a process template requires that it pass the following validation checks. 
+The following validation checks must pass when uploading a process template.  
 
-- Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
-Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
-For more restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
+- Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates. 
+Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;. For more restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
 - Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation will fail.
 - Process template total size should be 2 GB or less, or project creation will fail.
 - The upload process runs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Duplicate tags in an XML file can cause errors. If there's no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.
 - If XML definition files reference an extension, then the extension must be installed and enabled in the collection.
 
 > [!IMPORTANT]  
-> The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. 
->
-> See [Process template plug-ins: Index to XML element definitions](../../../reference/process-templates/process-template-plug-ins-xml-elements-index.md).
+> The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. See also [Process template plug-ins: Index to XML element definitions](../../../reference/process-templates/process-template-plug-ins-xml-elements-index.md).
  
 
 ## Related articles  
