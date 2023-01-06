@@ -17,9 +17,7 @@ ms.date: 01/05/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)] 
 
-[!INCLUDE [version-all](../../../includes/version-selector-minimize.md)]
-
-When you create a project, a process is used to specify the work item types to configure and other settings. Each process template primarily defines the building blocks of the work item tracking system for Azure Boards. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
+When you create a project, a process is used to specify the work item types to configure and other settings. Each process template primarily defines the building blocks of the work item tracking system for Azure Boards. For the Hosted XML and On-premises XML process models, you can upload a process template to either update an existing project or create a project. For the Inheritance process model, you customize work tracking through the web portal. To learn more about these different processes, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
 ::: moniker range="azure-devops"
 > [!IMPORTANT]  
@@ -39,18 +37,74 @@ Support for uploading and downloading Inherited processes isn't supported throug
 You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects.
 ::: moniker-end 
 
-[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-::: moniker range="< azure-devops"
+[!INCLUDE [version-all](../../../includes/version-selector-minimize.md)]
+
+
+[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
 ## Prerequisites
  
 To manage process templates, you must be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
 
 
-[!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts.md)]
+::: moniker range="azure-devops"
 
-## Manage a process template  
+[!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts-only.md)]
+::: moniker-end 
+
+
+::: moniker range="< azure-devops"
+[!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts.md)]
+::: moniker-end 
+
+
+::: moniker range="azure-devops"
+## Import a process template (Hosted XML process)   
+
+1.  From the **Processes** tab, choose **Import process** and then drag-and-drop or browse to the zip file of the process you've customized.  
+  
+    > [!NOTE]    
+    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../../migrate/migration-overview.md).
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Import Process link.](../../../organizations/settings/work/import-process/media/import-process-import-link.png)
+
+1.  Choose the file to upload. Your [custom process must meet specific constraints](customize-process.md) in order to pass validation checks during import.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Import Process dialog, choose process file to import.](../../../organizations/settings/work/import-process/media/import-process-dialog.png)
+
+	Check the **Replace existing template** if you are updating an existing template. The import process overwrites any template that has the same name as the one you import and requires that you check this box to confirm you want it replaced.
+
+	> [!IMPORTANT]  
+	> You can't update one of the locked processes: Agile, Basic, CMMI, and Scrum.  
+
+1.  Upon successful import, you'll see the following message.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Import Process success dialog.](../../../organizations/settings/work/import-process/media/import-process-success-dialog.png)
+
+    If the process doesn't pass the validation checks performed on import, you'll receive a list of error messages.  
+    [Correct each error](../../../organizations/settings/work/import-process/resolve-errors.md) and then retry the import. 
+
+1.  You can immediately create a project using the newly imported process. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Import process actions menu, Create new team project from imported process.](../../../organizations/settings/work/import-process/media/import-process-new-team-project.png)
+
+1. Fill out the form that appears. To learn more about the different options, see [Create a project](../../../organizations/projects/create-project.md).
+
+	> [!div class="mx-imgBorder"]  
+	> ![Dialog for Create new project.](../../../organizations/settings/work/import-process/media/create-project-from-hosted.png)
+
+For additional Hosted XML process management tasks, see [Import and export a Hosted XML process](../../../organizations/settings/work/import-process/import-process.md).
+
+::: moniker-end 
+
+::: moniker range="< azure-devops"
+
+## Manage a process template (On-premises XML process)  
 
 1. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
@@ -71,7 +125,6 @@ To manage process templates, you must be a member of the **Project Collection Ad
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of web portal, process context menu, Disable or Delete a Process.](media/process-template/disable-default-options.png)
-
 
 ::: moniker-end
 
@@ -134,8 +187,7 @@ Periodically, updates are made to the process templates to support new features.
 - [Customize a process template](../../../reference/process-templates/customize-process.md)   
 - [Process template and plug-in files](../../../reference/process-templates/overview-process-template-files.md)  
 - [Import and update a process (Hosted XML)](../../../organizations/settings/work/import-process/import-process.md)     
-- [Customize your work tracking experience](../../../reference/customize-work.md)  
-
+- [Customize your work tracking experience](../../../reference/customize-work.md)   
  
 <!--- 
 
