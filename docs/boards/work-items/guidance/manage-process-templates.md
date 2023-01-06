@@ -37,18 +37,18 @@ You can upload, download, and delete process templates for a project collection.
 ## Prerequisites
  
 To manage process templates, you must be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
- 
-> [!IMPORTANT]  
-> Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
- 
-
 
 ::: moniker range=">= azure-devops-2019"
+
+> [!IMPORTANT]  
+> Uploading and downloading Inherited processes isn't supported. To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
+
 [!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts.md)]
 ::: moniker-end 
 
 
 ::: moniker range="azure-devops"
+
 ## Import a process template (Hosted XML process)   
 
 1.  From the **Processes** tab, choose **Import process** and then drag-and-drop or browse to the zip file of the process you've customized.  
@@ -91,7 +91,7 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops"
+::: moniker range=">= azure-devops-2018 < azure-devops"
 
 ## Manage a process template (On-premises XML process)  
 
@@ -210,23 +210,6 @@ Periodically, updates are made to the process templates to support new features.
 <!--- 
 
 1/5/2023: Removed link to the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator) tool as it is not being updated. 
-
-
-REMOVED CONTENT: 
-> [!NOTE]  
-> The way the Process Template Manager works changed with the release of Visual Studio 2017 and Visual Studio 2019. Opening the Process Template Manager from Visual Studio 2017 and later versions  opens the web portal **Collection Settings** or **Organization Settings**.  
  
-1. From Visual Studio 2017, connect to an on-premises Azure DevOps Server collection that uses On-premises XML process model. 
-1. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot that shows Open Process Template Manager from Visual Studio 2019.](media/process-template/choose-process-template-manager-2019.png)
-
-
-	A web browser tab opens to the **Organization Settings>Process** page. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of web portal, Project Collection Settings, Open Process.](media/process-template/open-collection-process-ado-2019.png)
-
 -->
 
