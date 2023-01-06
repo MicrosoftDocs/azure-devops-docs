@@ -48,7 +48,7 @@ You can upload, download, and delete process templates for a project collection.
 To manage process templates, you must be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
 
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../../organizations/settings/includes/open-process-admin-context-ts.md)]
 
 ## Manage a process template  
 
