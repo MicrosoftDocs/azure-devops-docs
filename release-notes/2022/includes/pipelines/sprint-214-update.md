@@ -17,7 +17,7 @@ For example, if your pipeline is housed under the `FabrikamFiber\Chat` folder in
 
 ### GA of templates support in YAML editor
 
-[Templates](https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops&preserve-view=true) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](https://docs.microsoft.com/azure/devops/pipelines/security/templates?view=azure-devops&preserve-view=true) through your pipeline.
+[Templates](/azure/devops/pipelines/process/templates?view=azure-devops&preserve-view=true) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](/azure/devops/pipelines/security/templates?view=azure-devops&preserve-view=true) through your pipeline.
 
 Azure Pipelines supports a YAML editor, which can be quite handy when editing your pipeline. However the editor did not support templates until now. Authors of YAML pipelines could not get assistance through intellisense when using a template. Template authors could not make use of the YAML editor.In this release, we are adding support for templates in the YAML editor. 
 
@@ -34,7 +34,7 @@ You cannot create a new template from the editor. You can only use or edit exist
 
 ### New PAT Scope for Managing Pipeline Authorization and Approvals & Checks
 
-To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](https://learn.microsoft.com/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources&preserve-view=true), such as a service connection, or to manage [Approvals and Checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) for that resource.
+To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources&preserve-view=true), such as a service connection, or to manage [Approvals and Checks](/azure/devops/pipelines/process/approvals) for that resource.
 
 > [!div class="mx-imgBorder"]
 > ![Pipelines Resources](../../media/214-pipelines-01.png)
