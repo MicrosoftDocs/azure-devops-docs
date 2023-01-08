@@ -17,7 +17,7 @@ For example, if your pipeline is housed under the `FabrikamFiber\Chat` folder in
 
 ### GA of templates support in YAML editor
 
-[Templates](https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops&preserve-view=true) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](https://docs.microsoft.com/azure/devops/pipelines/security/templates?view=azure-devops) through your pipeline.
+[Templates](https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops&preserve-view=true) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](/azure/devops/pipelines/security/templates?view=azure-devops) through your pipeline.
 
 Azure Pipelines supports a YAML editor, which can be quite handy when editing your pipeline. However the editor did not support templates until now. Authors of YAML pipelines could not get assistance through intellisense when using a template. Template authors could not make use of the YAML editor.  In this release, we are adding support for templates in the YAML editor. 
 
