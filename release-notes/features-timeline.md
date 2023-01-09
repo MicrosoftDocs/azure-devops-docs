@@ -390,7 +390,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="14"><strong>2023 Q1</strong></td>
+        <td rowspan="15"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -444,8 +444,13 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Boards</td>
         <td>Future</td>      
       </tr>
-       <tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/lock-picklist-fields" data-raw-source="[Prevent picklist fields from being edited](/azure/devops/release-notes/roadmap/2023/lock-picklist-fields)">Prevent picklist fields from being edited</a></td>
+        <td>Boards</td>
+        <td>Future</td>      
+      </tr>
+      <tr>
+        <td>Hyperlink field type for custom fields</td>
         <td>Boards</td>
         <td>Future</td>      
       </tr>
