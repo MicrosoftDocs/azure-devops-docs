@@ -138,8 +138,8 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [No mention of .NET 6 for collecting code coverage metrics with Coverlet #12467](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12467)
 - ['Conditional Insertion' does not work for Azure Devops Server -> remove from doc #12311](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12311)
 - [Add example success condition based on json elements in reponse #12291](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12291)
-- [Error 401 unauthorized in azure Pipelines with Artifacts in the same Project Scope #12083](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12083)
-- [Missing documentation indicating not supported on-prem #11029](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11029)
+- [Error 401 unauthorized in Azure Pipelines with Artifacts in the same Project Scope #12083](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12083)
+- [Missing documentation indicating not supported on-premises #11029](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11029)
 
 
 ## Community contributors
