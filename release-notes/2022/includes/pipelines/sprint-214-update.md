@@ -6,7 +6,7 @@ ms.topic: include
 ---
 ### Support for Tokyo version of ServiceNow
 
-Azure Pipelines has an existing integration with ServiceNow. The integration relies on an [app](https://store.servicenow.com/sn_appstore_store.do#!/store/application/fa788cb5dbb5630040669c27db961940) in ServiceNow and an [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) in Azure DevOps. We've now updated the app to work with the Tokyo version of ServiceNow. Both classic and YAML pipelines now work with Tokyo. To ensure that this integration works, upgrade to the new version of the app (4.215.2) from the Service Now store. For more information, see [Integrate with ServiceNow Change Management](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/servicenow?view=azure-devops&preserve-view=true).
+Azure Pipelines has an existing integration with ServiceNow. The integration relies on an [app](https://store.servicenow.com/sn_appstore_store.do#!/store/application/fa788cb5dbb5630040669c27db961940) in ServiceNow and an [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) in Azure DevOps. We've now updated the app to work with the Tokyo version of ServiceNow. Both classic and YAML pipelines now work with Tokyo. To ensure that this integration works, upgrade to the new version of the app (4.215.2) from the Service Now store. For more information, see [Integrate with ServiceNow Change Management](https://learn.microsoft.com/azure/devops/pipelines/release/approvals/servicenow?view=azure-devops&preserve-view=true).
 
 ### New Predefined System Variable
 
@@ -16,7 +16,7 @@ For example, if your pipeline is housed under the `FabrikamFiber\Chat` folder in
 
 ### GA of templates support in YAML editor
 
-[Templates](https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](https://docs.microsoft.com/azure/devops/pipelines/security/templates?view=azure-devops) through your pipeline.
+[Templates](https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops&preserve-view=true) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](https://docs.microsoft.com/azure/devops/pipelines/security/templates?view=azure-devops&preserve-view=true) through your pipeline.
 
 Azure Pipelines supports a YAML editor, which can be quite handy when editing your pipeline. However the editor did not support templates until now. Authors of YAML pipelines could not get assistance through intellisense when using a template. Template authors could not make use of the YAML editor.  In this release, we are adding support for templates in the YAML editor. 
 
