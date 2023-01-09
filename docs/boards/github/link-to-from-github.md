@@ -31,7 +31,6 @@ Once you've connected your Azure Boards project with a GitHub repository, you ca
 
 
 ## Use `AB#` mention to link from GitHub to Azure Boards work items 
- 
 From a GitHub commit, pull request or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the title or description (not a comment).
 
 ::: moniker range="azure-devops-2019"
@@ -52,6 +51,9 @@ You can also enter a commit or pull request message to transition the work item.
 Some examples are provided as shown. 
 
 
+
+
+
 | Commit or pull request message              | Action |
 | :------------------------------------------ | :----------------------------------------------- |
 | `Fixed AB#123`                              | Links and transitions the work item to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
@@ -61,11 +63,14 @@ Some examples are provided as shown.
 | `Fixing multiple bugs: issue #123 and user story AB#234` | Links to GitHub issue 123 and Azure Boards work item 234. No transitions are made. |
 
 
+
+
+
 > [!NOTE]   
 > If you have connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you may see unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
 
-
 <a id="link-existing"> </a> 
+
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -82,15 +87,15 @@ Some examples are provided as shown.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To link to a commit or pull request, open the work item and choose <strong>Add Link</strong> under the Development section. 
+1. To link to a commit or pull request, open the work item and choose **Add Link** under the Development section. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of work item form, Development section, Add link option.](media/link/add-link-development-github.png) 
 
-	To link to an issue, choose the <strong>Links</strong> tab, and then choose <strong>Add Link>Existing item</strong>. 
+	To link to an issue, choose the **Links** tab, and then choose **Add Link>Existing item**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![[Screenshot of work item form, Links tab, Add link to issue.](media/link/add-link-from-links-tab.png) 
+	> ![Screenshot of work item form, Links tab, Add link to issue.](media/link/add-link-from-links-tab.png) 
 
 1. From the **Add link** dialog, select one of the **GitHub** link types, enter the URL to the commit, pull request, or issue and then choose **OK**.  
 	Here, we add a link to a GitHub pull request. 
@@ -107,7 +112,6 @@ Some examples are provided as shown.
 
 ::: moniker-end
 
-
 ## View or open links from the Development section
 
 The Development section within the work item form lists the links created to GitHub commits and pull requests with the :::image type="icon" source="../../media/icons/github.png" border="false"::: GitHub icon. 
@@ -115,8 +119,7 @@ The Development section within the work item form lists the links created to Git
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item form, Development section shows GitHub links.](media/link/git-hub-development-links.png)  
 
-Choose the link provided to open the commit or pull request in GitHub. 
-
+Choose the link provided to open the commit or pull request in GitHub.  
 
 ## View GitHub objects on Kanban board
 
@@ -124,8 +127,6 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board that shows GitHub links on work item cards.](media/link/board-view-github-links.png)  
-
-
 
 ::: moniker range="azure-devops-2019"
 
@@ -145,4 +146,5 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 - [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
+
 
