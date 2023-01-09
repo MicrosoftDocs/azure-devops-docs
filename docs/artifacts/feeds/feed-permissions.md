@@ -81,7 +81,7 @@ In the edit feed dialog:
 
 ## Permissions table
 
-In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
+In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the different access levels for a feed
 
 |                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
 | --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
