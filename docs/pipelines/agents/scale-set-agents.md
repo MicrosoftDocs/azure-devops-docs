@@ -449,7 +449,7 @@ To delete the saved agent when you are done with your investigation, navigate to
 * [How can I delete agents?](#how-can-i-delete-agents)
 * [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
 * [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
-* [Issues and solutions](#issues-and-solutions)
+* [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
   * [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
   * [VMSS scale up is not happening in the expected five minute interval](#vmss-scale-up-is-not-happening-in-the-expected-five-minute-interval)
   * [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
@@ -458,7 +458,7 @@ To delete the saved agent when you are done with your investigation, navigate to
   * [You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
   * [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
   * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-is-not-running-on-agents-or-getting-logs)
-  * [If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists)](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances-the-password-for-the-user-is-changed-if-it-already-exists)
+  * [If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
   * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
 
 ### Where can I find the images used for Microsoft-hosted agents?
@@ -486,7 +486,7 @@ For scale set agents, the infrastructure to run the agent software and jobs is A
 
 For information on purchasing parallel jobs, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
 
-### Issues and solutions
+### What are some common issues and their solutions?
 
 #### You observe more idle agents than desired at various times
 
@@ -529,7 +529,9 @@ You may get an error message like `This virtual machine scale set is already in 
 
 The maintenance job runs once every 24 hours. It's possible that VMs are getting filled up before this time. Consider increasing the disk size on the VM and adding a script in the pipeline to delete the contents.
 
-#### If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists)
+#### If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances
+
+If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists).
 
 This issue occurs because agent extension scripts attempt to create the user AzDevOps and change its password.
 
