@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 07/18/2022
+ms.date: 01/09/2023
 monikerRange: azure-devops
 ---
 
@@ -474,3 +474,59 @@ Pricing for scale set agents is similar to other self-hosted agents. You provide
 For scale set agents, the infrastructure to run the agent software and jobs is Azure Virtual Machine Scale Sets, and the pricing is described in [Virtual Machine Scale Sets pricing](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/).
 
 For information on purchasing parallel jobs, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+
+### Issues and solutions
+
+#### You observe more idle agents than desired at various times
+
+To better understand why this happens, see [How Azure Pipelines manages the scale set](#how-azure-pipelines-manages-the-scale-set). Throughout the scaling operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. This is an expected behavior as Azure Pipelines converges gradually to the constraints that you specify.
+
+#### VMSS scale up is not happening in the expected five minute interval
+
+ The scaling job runs every five minutes, but if only one operation is processed, you may observe that scale up isn’t happening within five minutes; this is currently by design. 
+
+#### Azure DevOps Linux VM Scale Set frequently fails to start the pipeline
+
+The first place to look when experiencing issues with scale set agents is the Diagnostics tab in the agent pool.
+
+Also, consider saving the unhealthy VM for debugging purposes. For more information, see [Unhealthy Agents](#unhealthy-agents).
+
+Saved agents will be there unless you delete them. If the agent doesn't come online in 10 minutes, it will be marked as unhealthy and saved if possible. Only one VM will be kept in a saved state. If the agent goes offline unexpectedly (due to a VM reboot or something happening to the image), it won't be saved for investigation.
+
+Only VMs that agents fail to start will be saved. If a VM has a failed state during creation, it won't be saved. In this case, the message in the Diagnostics tab will be "deleting unhealthy machine" instead of "failed to start".
+
+#### You check the option Automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued.
+
+The option to tear down the VM after each build will only work for Windows Server and supported Linux images. It isn’t supported for Windows client images.
+
+#### VMSS shows the agent as offline if the VM restarts
+
+This is the expected behavior. The agent service runs in the systemd context only. However, if the machine restarts for some reason, it's considered an unhealthy VM and deleted. For more information, see [Unhealthy Agents](#unhealthy-agents).
+
+When agents or virtual machines fail to start, can't connect to Azure DevOps, or go offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots can cause these issues. 
+To avoid the issue, disable the software update on the image. You can also connect to the VM to debug and gather logs to help investigate the issue. 
+
+#### You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management
+
+When the pool is created, a tag is added to the scale set to mark the scale set as in use (to avoid two pools using the same scale set), and another tag is added for the timestamp that updates each time the configuration job runs (every two hours).
+
+#### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists: This virtual machine scale set is already in use by pool <pool name>.
+
+The issue occurs because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap in which a VMSS not used by any agent pool still can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
+
+#### VMSS maintenance job is not running on agents or getting logs
+
+The maintenance job runs once every 24 hours. It's possible that VMs are getting filled up before this time. Consider increasing the disk size on the VM and adding a script in the pipeline to delete the contents.
+
+#### If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists)
+
+This issue occurs because agent extension scripts attempt to create the user AzDevOps and change its password.
+
+> [!NOTE]
+> It's OK to create the user and grant it extra permissions, but it should not be the primary administrator, and nothing should depend on the password, as the password will be changed. To avoid the issue, pick a different user as the primary administrator when creating the scale set, instead of `AzDevOps`. 
+
+#### Agent extension installation fails on scale set instances due to network security and firewall configurations
+
+The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url). 
+
+
