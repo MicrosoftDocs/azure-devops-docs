@@ -202,7 +202,7 @@ This feature was prioritized based on a suggestion.
 
 ### Extend Wiki using REST APIs
 
-Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wikis/create) and [Wiki search](/rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results) documentation for more information.
+Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wikis/create) and [Wiki search](/rest/api/azure/devops/search/wiki-search-results) documentation for more information.
 
 ## Reporting
 
