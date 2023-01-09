@@ -28,7 +28,7 @@ Other highlights include:
 
 ### Recover a recently-deleted repository via API
 
-Sometimes mistakes can be made when cleaning up old repositories in source control. If a Git repository has been deleted within the last 30 days, it can be recovered through the REST API. Soon we’ll also enable this option in the Web UI. See the documentation for the [list](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories) and [recover](/rest/api/vsts/git/repositories/restore%20repository%20from%20recycle%20bin) operations for more information.
+Sometimes mistakes can be made when cleaning up old repositories in source control. If a Git repository has been deleted within the last 30 days, it can be recovered through the REST API. Soon we’ll also enable this option in the Web UI. See the documentation for the [list](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories) and [recover](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin) operations for more information.
 
 ## Work
 
