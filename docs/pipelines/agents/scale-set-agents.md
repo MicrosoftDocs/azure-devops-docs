@@ -449,6 +449,17 @@ To delete the saved agent when you are done with your investigation, navigate to
 * [How can I delete agents?](#how-can-i-delete-agents)
 * [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
 * [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
+* [Issues and solutions](#issues-and-solutions)
+  * [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
+  * [VMSS scale up is not happening in the expected five minute interval](#vmss-scale-up-is-not-happening-in-the-expected-five-minute-interval)
+  * [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
+  * [You check the option Automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued](#you-check-the-option-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-are-not-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-they-are-queued)
+  * [VMSS shows the agent as offline if the VM restarts](#vmss-shows-the-agent-as-offline-if-the-vm-restarts)
+  * [You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
+  * [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
+  * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-is-not-running-on-agents-or-getting-logs)
+  * [If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists)](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances-the-password-for-the-user-is-changed-if-it-already-exists)
+  * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
@@ -495,7 +506,7 @@ Saved agents will be there unless you delete them. If the agent doesn't come onl
 
 Only VMs that agents fail to start will be saved. If a VM has a failed state during creation, it won't be saved. In this case, the message in the Diagnostics tab will be "deleting unhealthy machine" instead of "failed to start".
 
-#### You check the option Automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued.
+#### You check the option Automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued
 
 The option to tear down the VM after each build will only work for Windows Server and supported Linux images. It isn’t supported for Windows client images.
 
@@ -510,9 +521,9 @@ To avoid the issue, disable the software update on the image. You can also conne
 
 When the pool is created, a tag is added to the scale set to mark the scale set as in use (to avoid two pools using the same scale set), and another tag is added for the timestamp that updates each time the configuration job runs (every two hours).
 
-#### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists: This virtual machine scale set is already in use by pool <pool name>.
+#### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists
 
-The issue occurs because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap in which a VMSS not used by any agent pool still can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
+You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap in which a VMSS not used by any agent pool still can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
 
 #### VMSS maintenance job is not running on agents or getting logs
 
