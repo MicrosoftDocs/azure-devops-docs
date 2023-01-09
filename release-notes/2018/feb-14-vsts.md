@@ -28,7 +28,7 @@ Other highlights include:
 
 ### Recover a recently-deleted repository via API
 
-Sometimes mistakes can be made when cleaning up old repositories in source control. If a Git repository has been deleted within the last 30 days, it can be recovered through the REST API. Soon we’ll also enable this option in the Web UI. See the documentation for the [list](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories) and [recover](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin) operations for more information.
+Sometimes mistakes can be made when cleaning up old repositories in source control. If a Git repository has been deleted within the last 30 days, it can be recovered through the REST API. See the documentation for the [list](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories) and [recover](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin) operations for more information.
 
 ## Work
 
@@ -151,16 +151,16 @@ Deleting unused packages can help keep the package list clean but sometimes it c
 
 ### Manage access and extensions for large numbers of users using groups
 
-We’ve made it easy for administrators to manage large groups of users by enabling you to assign access levels and extensions to AAD or VSTS groups. After setting up the appropriate rules, adding someone to the group will automatically grant them the correct access levels and extensions when they access the VSTS account. As a result, access levels and extensions will no longer have to be managed on an individual basis.
+We’ve made it easy for administrators to manage large groups of users by enabling you to assign access levels and extensions to Azure AAD or VSTS groups. After setting up the appropriate rules, adding someone to the group will automatically grant them the correct access levels and extensions when they access the VSTS account. As a result, access levels and extensions will no longer have to be managed on an individual basis.
 
 > [!div class="mx-imgBorder"]
 > ![Group licensing](media/130_07.png)
 
 See the [large account user management roadmap post](https://blogs.msdn.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/azure/devops/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
 
-### Reduced latency for AAD group membership changes
+### Reduced latency for Azure AAD group membership changes
 
-If you are managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
+If you are managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in Azure AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
 
 ### Manage users with Graph REST APIs Public Preview
 
