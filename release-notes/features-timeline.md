@@ -450,7 +450,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>      
       </tr>
       <tr>
-        <td>Hyperlink field type for custom fields</td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/hyperlink-field-type" data-raw-source="[Hyperlink field type for custom fields](/azure/devops/release-notes/roadmap/2023/hyperlink-field-type)">Hyperlink field type for custom fields<a></td>
         <td>Boards</td>
         <td>Future</td>      
       </tr>
