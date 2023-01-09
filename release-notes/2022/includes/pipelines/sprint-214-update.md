@@ -33,7 +33,7 @@ You cannot create a new template from the editor. You can only use or edit exist
 
 ### New PAT Scope for Managing Pipeline Authorization and Approvals & Checks
 
-To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](https://learn.microsoft.com/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources), such as a service connection, or to manage [Approvals and Checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) for that resource.
+To limit damage done by leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](https://learn.microsoft.com/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources&preserve-view=true), such as a service connection, or to manage [Approvals and Checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) for that resource.
 
 > [!div class="mx-imgBorder"]
 > ![Pipelines Resources](../../media/214-pipelines-01.png)
