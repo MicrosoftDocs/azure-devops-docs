@@ -5,7 +5,7 @@ description: How to publish NuGet packages with Azure Pipelines using YAML and t
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 01/04/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,7 +17,7 @@ In Azure Pipelines, you can use the classic editor or the YAML tasks to publish 
 
 ## Create a NuGet package
 
-There are various ways to create your NuGet packages such as using Visual Studio to pack your NuGet packages. If you're already using MSBuild or some other task to create your packages, skip this section and jump to the [publish packages](#publish-packages) section.
+There are various ways to create your NuGet packages such as using Visual Studio to pack your NuGet packages. If you're already using MSBuild or some other task to create your packages, skip this section and jump to the [publish NuGet packages](#publish-nuget-packages) section.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -45,16 +45,14 @@ YAML is not supported in TFS.
 
 From your pipeline definition, add the **NuGet task** to your pipeline to create a NuGet package. Make sure to add this task below the one building your application and above any tasks that require your NuGet package.
 
-:::image type="content" source="media/nuget/create-packages-in-team-build.png" alt-text="Screenshot showing the NuGet pack task in Azure Pipelines.":::
-
 - **Command:** the NuGet command to run.
 - **Path to csproj or nuspec file(s) to pack**: pattern to search for csproj directories to pack.
 - **Configuration to package**: when using a csproj file this specifies the configuration to package.
 - **Package folder**: directory where packages will be created.
 
-- - -
+:::image type="content" source="media/nuget/create-packages-in-team-build.png" alt-text="Screenshot showing the NuGet pack task in Azure Pipelines.":::
 
-<a name="package-versioning"></a>
+- - -
 
 ## Package versioning
 
@@ -123,9 +121,7 @@ inputs:
     patchVersion: '$(Patch)'
 ```
 
-<a name="publish-packages"></a>
-
-## Publish a package
+## Publish NuGet packages
 
 To publish packages to an Azure Artifacts feed from your pipeline, you must set the **Project Collection Build Service** identity to be a **Contributor** on your feed. See [Configure feed settings](../../artifacts/feeds/feed-permissions.md#configure-feed-settings) for more details. 
 
@@ -200,12 +196,12 @@ YAML is not supported in TFS.
 
 To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your pipeline definition and configure it as follows:
 
-:::image type="content" source="media/nuget/publish-packages-from-team-build.png" alt-text="Screenshot showing how to configure the NuGet task in Azure Pipelines":::
-
 - **Command**: the NuGet command to run.
 - **Path to NuGet package(s) to publish**:the pattern to match or path to nupkg files to be uploaded.
 - **Target feed location**: You can publish to your current organization or an external NuGet server.
 - **Target feed**: Select the feed that you want to publish to.
+
+:::image type="content" source="media/nuget/publish-packages-from-team-build.png" alt-text="Screenshot showing how to configure the NuGet task in Azure Pipelines":::
 
 ::: moniker range="tfs-2018"
 
@@ -215,6 +211,51 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 ::: moniker-end
 
 - - -
+
+## Publish to NuGet.Org
+
+1. [Generate an API key](../../artifacts/nuget/publish-to-nuget-org.md#generate-an-api-key)
+
+1. Navigate to your Azure DevOps project and then select ![gear icon](../../media/icons/gear-icon.png) **Project settings**.
+
+1. Select **Service Connections**, and then select **New service connection**.
+
+1. Select **NuGet**, and then select **Next**.
+
+1. Select **ApiKey** as your authentication method. Use the following url for your **Feed URL**: *https://api.nuget.org/v3/index.json*. 
+
+1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
+
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you are done.
+
+#### [YAML](#tab/yaml/)
+
+Add the following YAML snippet to your pipeline definition:
+
+```yml
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: nuget.org
+```
+#### [Classic](#tab/classic/)
+
+Add the NuGet task to your pipeline definition and configure it as follows:
+
+1. Select the Push **Command**.
+
+1. Select the **Path to NuGet package(s) to publish** or keep the default value. 
+
+1. Select **External NuGet server** for your **Target feed location**, and then select the service connection you created earlier.
+
+1. Select **Save & queue** when you are done.
+
+:::image type="content" source="media/push-to-nuget-org.png" alt-text="Screenshot showing how to configure the NuGet push task in Azure Pipelines":::
+
+* * *
 
 ## Related articles
 

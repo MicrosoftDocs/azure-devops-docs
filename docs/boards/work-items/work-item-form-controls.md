@@ -2,17 +2,17 @@
 title: Use work item form controls in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to use work item form controls to update status, link work items, and more in Azure Boards.
-ms.custom: work-items, seodec18  
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE 
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/04/2023
 ---
 
-# Use work item form controls 
+# Work item form controls 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -22,7 +22,7 @@ Different types of work items track different data. Each work item form contains
 
 As the following image shows, each work item form comes with several controls, fields, and tabs. Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. 
 
-![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
+![Screenshot of work item form to track features or user stories.](media/about-work-items/work-item-form-user-story.png)
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -164,6 +164,8 @@ From the web portal, simply copy the URL from the web browser address or hover o
 
 ![Copy hyperlink for a work item from web portal](../backlogs/media/add-work-item-copy-URL.png) 
 
+::: moniker range="<= azure-devops-2019"
+
 
 <a id="start-storyboarding">  </a>
 
@@ -179,11 +181,11 @@ You can storyboard your ideas using PowerPoint to bring your ideas to life with 
 ![Work item form, Start storyboarding menu option](../backlogs/media/add-work-item-start-storyboarding.png)
 
 
+::: moniker-end
 
 ## Related articles
 
-- [Run a semantic or improvised work item search](../queries/search-box-queries.md)
+- [Run a semantic work item search](../queries/search-box-queries.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-- [Customize your work tracking experience](../../reference/customize-work.md)
-- [Bulk add or modify work items using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Customize your work tracking experience](../../reference/customize-work.md) 
 
