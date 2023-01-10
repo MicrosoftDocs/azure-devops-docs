@@ -94,61 +94,56 @@ All jobs in a release run with the job authorization scope set to collection. In
 
 ## Artifact sources - version control
 
-There are scenarios in which you may want to consume artifacts stored in a version control system directly, without passing them through a build pipeline. For example:
+There are some scenarios in which you may want to consume artifacts from different source controls directly without passing them through a build pipeline. For example:
 
-* You are developing a PHP or a JavaScript application that does not require an explicit build pipeline.
+- You are developing a PHP or a JavaScript application that does not require an explicit build pipeline.
 
-* You manage configurations for various stages in different version control repositories, and you want to consume these configuration files directly from version control as part of the deployment pipeline.
+- You manage configurations for various stages in different version control repositories, and you want to consume these configuration files directly from version control as part of the deployment pipeline.
 
-* You manage your infrastructure and configuration as code (such as Azure Resource Manager templates) and you want to manage these files in a version control repository.
+- You manage your infrastructure and configuration as code and you want to manage these files in a version control repository.
 
-Because you can configure multiple artifact sources in a single release pipeline, you can link both a build pipeline that produces the binaries of the application as well as a version control repository that stores the configuration files into the same pipeline, and use the two sets of artifacts together while deploying.
+Because you can configure multiple artifact sources in a single release pipeline, you can link both a build pipeline that produces the binaries of your application as well as a version control repository that stores the configuration files into the same pipeline, and use the two sets of artifacts together while deploying.
 
-Azure Pipelines integrates with Team Foundation Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
+Azure Pipelines supports Team Foundation Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
 
-You can link a release pipeline to any of the Git or TFVC repositories in any of the projects in your collection (you will need read access to these repositories). No additional setup is required when deploying version control artifacts within the same collection.
+You can link a release pipeline to any of the Git or TFVC repositories in any project in your collection (you will need read access to these repositories). No additional setup is required when deploying version control artifacts within the same collection.
 
-When you link a **Git** or **GitHub** repository and select a branch, you can edit the default properties of the artifact types after the artifact has been saved. This is particularly useful in scenarios where the branch for the stable version of the artifact changes, and continuous delivery releases should use this branch to obtain newer versions of the artifact. You can also specify details of the checkout, such as whether checkout submodules and LFS-tracked files, and the shallow fetch depth.
+When you link a GitHub repository and select a branch, you can edit the default properties of the artifact types after the artifact has been saved. This is particularly useful in scenarios where the branch for the stable version of the artifact changes, and continuous delivery releases should use this branch to obtain newer versions of the artifact. You can also specify details of the checkout, such as whether checkout submodules and LFS-tracked files, and the shallow fetch depth.
 
-When you link a **TFVC branch**, you can specify the changeset to be deployed when creating a release.
+When you link a TFVC branch, you can specify the changeset to be deployed when creating a release.
 
-The following features are available when using TFVC, Git, and GitHub sources:
+The following features are available when using TFVC, Git, and GitHub as an artifact source:
 
-| Feature | Behavior with TFVC, Git, and GitHub sources |
-|---------|----------------------------------------|
-| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release pipeline. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
-| Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
-| Work items and commits | Azure Pipelines cannot show work items or commits associated with releases when using version control artifacts.|
-| Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+| Feature | Description                      |
+|---------|----------------------------------|
+| Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
+| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="> azure-devops-2022"
 
-By default, the releases execute in with a collection level Job authorization scope. That means releases can access all repositories in the organization (or collection for Azure DevOps Server). You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to artifacts for releases in a project.
+By default, releases run with a collection level job authorization scope. This means that releases can access resources in all projects in the organization (or collection for Azure DevOps Server). This is useful when linking build artifacts from other projects. You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to a project's artifact.
 
 ::: moniker-end
 
 ## Artifact sources - Jenkins
 
-To consume Jenkins artifacts, you must create a service connection with credentials to connect to your Jenkins server. For more information, see [service connections](../library/service-endpoints.md) and [Jenkins service connection](../library/service-endpoints.md#jenkins-service-connection). You can then link a Jenkins project to a release pipeline. The Jenkins project must be configured with a post build action to publish the artifacts.
+To consume Jenkins artifacts, you must create a service connection to authenticate with your Jenkins server. See [manage service connections](../library/service-endpoints.md) and [Jenkins service connection](../library/service-endpoints.md#jenkins-service-connection) for more information. The Jenkins project must be configured with a post build action to publish your artifacts.
 
-The following features are available when using Jenkins sources:
+The following features are available when using Jenkins as an artifact source:
 
+| Feature | Description                      |
+|---------|----------------------------------|
+| Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
+| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
-|        Feature         |                                                                                              Behavior with Jenkins sources                                                                                               |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Auto-trigger releases  | You can configure a continuous deployment trigger for pushes into the repository in a release pipeline. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
-|   Artifact variables   |                                                         A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Jenkins.                                                         |
-| Work items and commits |                                                                          Azure Pipelines cannot show work items or commits for Jenkins builds.                                                                           |
-|   Artifact download    |                         By default, Jenkins builds are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts.                          |
-
-<p />
-
-Artifacts generated by Jenkins builds are typically propagated to storage repositories for archiving and sharing. Azure blob storage is one of the supported repositories, allowing you to consume Jenkins projects that publish to Azure storage as artifact sources in a release pipeline. Deployments download the artifacts automatically from Azure to the agents. In this configuration, connectivity between the agent and the Jenkins server is not required. Microsoft-hosted agents can be used without exposing the server to internet.
+Artifacts generated by Jenkins builds are typically propagated to storage repositories for archiving and sharing. Azure blob storage is one of the supported repositories, allowing you to consume Jenkins projects that publish to Azure storage as artifact sources in a release pipeline. Azure Pipelines download the artifacts automatically from Azure to the agent running the pipeline. In this scenario, connectivity between the agent and the Jenkins server is not required. Microsoft-hosted agents can be used without exposing the server to internet.
 
 > [!NOTE]
-> Azure Pipelines may not be able to contact your Jenkins server if, for example, it is within your enterprise network. In this case you can integrate Azure Pipelines with Jenkins by setting up an on-premises agent that can access the Jenkins server. You will not be able to see the name of your Jenkins projects when linking to a build, but you can type this into the link dialog field.
-
-For more information about Jenkins integration capabilities, see [Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+> Azure Pipelines may not be able to contact your Jenkins server if, for example, it is within your enterprise network. If this is the case, you can integrate Azure Pipelines with Jenkins by setting up an on-premises agent that can access the Jenkins server. You will not be able to see the name of your Jenkins projects when linking to a build, but you can enter the name in the URL text field.
 
 ## Artifact sources - containers
 
