@@ -10,59 +10,26 @@ ms.custom: "contperf-fy20q4, seodec18"
 monikerRange: '<= azure-devops'
 ---
 
-# Release artifacts and artifact sources
+# Release pipelines and Artifact sources
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
-
-::: moniker range="azure-devops"
-> [!NOTE] 
-> This topic covers classic release pipelines. To understand artifacts in YAML pipelines, see [artifacts](../artifacts/artifacts-overview.md).
-::: moniker-end
-
-A release is a collection of artifacts in your DevOps CI/CD processes. An **artifact** is a deployable component of your application. Azure Pipelines can deploy artifacts that are produced by a [wide range of artifact sources](#artifact-sources), and stored in different types of artifact repositories.
-
-When **authoring a release pipeline**, you link the appropriate **artifact sources** to your release pipeline. For example, you might link an Azure Pipelines build pipeline or a Jenkins project to your release pipeline.
-
-When **creating a release**, you specify the exact version of these artifact sources; for example, the number of a build coming from Azure Pipelines, or the version of a build coming from a Jenkins project.
-
-After a release is created, you cannot change these versions. A release is fundamentally defined by the versioned artifacts that make up the release. As you deploy the release to various stages, you will be deploying and validating the same artifacts in all stages.
-
-A single release pipeline can be linked to **multiple artifact sources**, of which one is the [primary source](#primary-source). In this case, when you create a release, you specify individual versions for each of these sources.
-
-![Artifacts in a pipeline and release](media/artifacts-01.png)
-
-Artifacts are central to a number of features in Azure Pipelines. Some of the features that depend on the linking of artifacts to a release pipeline are:
-
-* **Auto-trigger releases**. You can configure new releases to be automatically created whenever a new version of an artifact is produced.  For more information, see [Continuous deployment triggers](triggers.md#release-triggers). Note that the ability to automatically create releases is available for only some artifact sources.
-
-* **Trigger conditions**. You can configure a release to be created automatically, or the deployment of a release to a stage to be triggered automatically, when only specific conditions on the artifacts are met. For example, you can configure releases to be automatically created only when a new build is produced from a certain branch.
-
-* **Artifact versions**. You can configure a release to automatically use a specific version of the build artifacts, to always use the latest version, or to allow you  to specify the version when the release is created.
-
-* **Artifact variables**. Every artifact that is part of a release has metadata associated with it, exposed to [tasks](../tasks/index.md) through [variables](#artifact-variables). This metadata includes the version number of the artifact, the branch of code from which the artifact was produced (in the case of build or source code artifacts), the pipeline that produced the artifact (in the case of build artifacts), and more. This information is accessible in the deployment tasks. For more information, see [Artifact variables](variables.md#artifact-variables).
-
-* **Work items and commits**. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. The work items or commits in a release are computed as the union of all work items and commits of all builds between the current release and the previous release. Note that Azure Pipelines is currently able to compute work items and commits for only certain artifact sources.
-
-* **Artifact download**. Whenever a release is deployed to a stage, by default Azure Pipelines automatically downloads all the artifacts in that release to the [agent](../agents/agents.md) where the deployment job runs. The procedure to download artifacts depends on the type of artifact. For example, Azure Pipelines artifacts are downloaded using an algorithm that downloads multiple files in parallel. Git artifacts are downloaded using Git library functionality. For more information, see [Artifact download](#artifact-download).
+With Azure Pipelines, you can deploy your artifacts from a wide range of artifact sources and integrate your workflow with different types of artifact repositories. Releases can be linked to multiple artifact sources, where  one is designated as the primary source.
 
 ## Artifact sources
 
-There are several types of tools you might use in your application lifecycle process to produce or store artifacts. For example, you might use continuous integration systems such as Azure Pipelines, Jenkins, or TeamCity to produce artifacts. You might also use version control systems such as Git or TFVC to store your artifacts. Or you can use repositories such as Azure Artifacts or a NuGet repository to store your artifacts. You can configure Azure Pipelines to deploy artifacts from all these sources.
+Azure Pipelines supports a wide range of repositories, source control tools, and continuous integration systems. 
 
-By default, a release created from the release pipeline will use the latest version of the artifacts. At the time of linking an artifact source to a release pipeline, you can change this behavior by selecting one of the options to use the latest build from a specific branch by specifying the tags, a specific version, or allow the user to specify the version when the release is created from the pipeline.
+When creating a release, you can specify the version of your artifact source. By default, releases use the latest version of the source artifact. You can also choose to use the latest build from a specific branch by specifying the tags, a specific version, or allow the user to specify the version at the time of release creation.
 
-![Adding an artifact](media/artifacts-02.png)
+:::image type="content" source="media/artifacts-02.png" alt-text="Screenshot showing how to add an artifact to a classic release pipeline.":::
 
-If you link more than one set of artifacts, you can specify which is the primary (default).
+If you link more than one artifact, you can specify which one is the primary source (default).
 
-![Selecting a default version option](media/artifacts-02a.png)
+:::image type="content" source="media/artifacts-02a.png" alt-text="Screenshot showing how to set a primary source artifact.":::
 
-> [!IMPORTANT]
-> The Artifacts `Default version` drop down list items depends on the `repository type` of the linked build definition.
+> [!NOTE]
+> The `Default version` dropdown items depend on the source type of the linked build definition.
 
 * The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
 
