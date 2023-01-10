@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 01/05/2023
+  ms.date: 01/10/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -50,9 +50,14 @@ sections:
           A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md), applied to users without direct assignments, you don't start paying until they sign in and receive an access level.
           
       - question: |
+          Q: What happens when a user is deleted in Azure AD?
+        answer: |
+          A: When a user is permanently deleted in Azure AD, within a few hours, they will be removed from Azure DevOps and you will no longer be billed for their license. Guest users may need to be removed manually from Azure DevOps. For more information, see [Delete a user in Azure AD](https://learn.microsoft.com/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
+      
+      - question: |
           Q: How can I stop paying for users who aren't actively using Azure DevOps?
         answer: |
-          A: If you have inactive users, stop paying for them by removing them or assigning them a free Stakeholder access level. Sort by **Last Access** to find users who haven't accessed the organization recently. Find out how recently they got added by exporting the list of users and checking the **Date Created** column.
+          A: If you have inactive users, stop paying for them by removing them or assigning them a free Stakeholder access level. Sort by **Last Access** to find users who haven't accessed the organization recently. Find out how recently they got added by exporting the list of users and checking the **Date Added** column.
           
           ![Last access](media/shared/last-access.png)
           
