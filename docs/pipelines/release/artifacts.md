@@ -31,70 +31,64 @@ If you link more than one artifact, you can specify which one is the primary sou
 > [!NOTE]
 > The `Default version` dropdown items depend on the source type of the linked build definition.
 
-* The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
+- The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
 
-* `Latest from a specific branch with tags` and `Latest from the build pipeline default branch with tags` options are supported by the following repository types: `TfsGit`, `GitHub`, `Bitbucket`, and `GitHubEnterprise`.
+- `Latest from a specific branch with tags` and `Latest from the build pipeline default branch with tags` options are supported by the following repository types: `TfsGit`, `GitHub`, `Bitbucket`, and `GitHubEnterprise`.
 
-* `Latest from the build pipeline default branch with tags` is not supported by `XAML` build definitions.
+- `Latest from the build pipeline default branch with tags` is not supported by `XAML` build definitions.
 
 The following sections describe how to work with the different types of artifact sources.
 
-* [Azure Pipelines](#artifact-sources---azure-pipelines)
-* [Version control](#artifact-sources---version-control)
-* [Jenkins](#artifact-sources---jenkins)
-* [Azure Container Registry, Docker, and Kubernetes](#artifact-sources---containers)
-* [Azure Artifacts](#artifact-sources---azure-artifacts)
-* [TFS server](#artifact-sources---tfs-server)
-* [TeamCity](#artifact-sources---teamcity)
-* [Other sources](#artifact-sources---other-sources)
+- [Azure Pipelines](#artifact-sources---azure-pipelines)
+- [Version control](#artifact-sources---version-control)
+- [Jenkins](#artifact-sources---jenkins)
+- [Azure Container Registry, Docker, and Kubernetes](#artifact-sources---containers)
+- [Azure Artifacts](#artifact-sources---azure-artifacts)
+- [TFS server](#artifact-sources---tfs-server)
+- [TeamCity](#artifact-sources---teamcity)
+- [Other sources](#artifact-sources---other-sources)
 
 ## Artifact sources - Azure Pipelines
 
-You can link a release pipeline to any of the build pipelines in Azure Pipelines or TFS project collection.
+You can link a release pipeline to any Azure Pipelines build. You can also link multiple build pipelines and specify their default values and set up deployment triggers on multiple build sources. When any of the builds completes, it will trigger the creation of a release.
+
+The following features are available when using Azure Pipelines as an artifact source:
+
+| Feature | Description                      |
+|---------|----------------------------------|
+| Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
+| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
+| Deployment stages | The build summary list all the deployment stages where the artifact was deployed to. |
 
 > [!NOTE]
 > You must include a **Publish Artifacts** task in your build pipeline. For YAML build pipelines, an artifact with the name **drop** is published implicitly.
 
-Some of the differences in capabilities between different versions of TFS and Azure Pipelines are:
+::: moniker range="> azure-devops-2022"
 
-* **TFS 2015**: You can link build pipelines only from the same project of your collection. You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions. When multiple build pipelines are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
+By default, releases run with a collection level job authorization scope. This means that releases can access resources in all projects in the organization (or collection for Azure DevOps Server). This is useful when linking build artifacts from other projects. You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to a project's artifact.
 
-* **TFS 2017 and newer** and **Azure Pipelines**: You can link build pipelines from any of the projects in Azure Pipelines or TFS. You can link multiple build pipelines and specify default values for each of them. You can set up continuous deployment triggers on multiple build sources. When any of the builds completes, it will trigger the creation of a release.
+**To set job authorization scope for the organization**:
 
-The following features are available when using Azure Pipelines sources:
+- Navigate to your **Organization settings**.
+- Select **Settings** under Pipelines.
+- Turn on the toggle **Limit job authorization scope to current project for release pipelines** to limit the scope to current project. This is the recommended setting for a good security measures.
 
-| Feature | Behavior with Azure Pipelines sources |
-|---------|----------------------------------|
-| Auto-trigger releases | New releases can be created automatically when new builds (including XAML builds) are produced. See [Continuous Deployment](triggers.md) for details. You do not need to configure anything within the build pipeline. See the notes above for differences between version of TFS.|
-| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Azure Pipelines. |
-| Work items and commits | Azure Pipelines integrates with work items in TFS and Azure Pipelines. These work items are also shown in the details of releases. Azure Pipelines integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and Other Git repositories. Azure Pipelines shows the commits only when the build is produced from source code in TFVC or Git.|
-| Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
-| Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
+**To set job authorization scope for a specific project**:
 
-::: moniker range=">=azure-devops-2020"
-
-By default, the releases execute in with a collection level Job authorization scope. That means releases can access resources in all projects in the organization (or collection for Azure DevOps Server). This is useful when linking build artifacts from other projects. You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to artifacts for releases in a project.
-
-To set job authorization scope for the organization:
-
-- Navigate to your organization settings page in the Azure DevOps user interface.
-- Select Settings under Pipelines.
-- Turn on the toggle *Limit job authorization scope to current project for release pipelines* to limit the scope to current project. This is the recommended setting, as it enhances security for your pipelines.
-
-To set job authorization scope for a specific project:
-
-- Navigate to your project settings page in the Azure DevOps user interface.
-- Select Settings under Pipelines.
-- Turn on the toggle Limit job authorization scope to current project to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+- Navigate to your **Project settings**.
+- Select **Settings** under Pipelines.
+- Turn on the toggle **Limit job authorization scope to current project for release pipelines** to limit the scope to the current project. This is the recommended setting, as it enhances security for your pipelines.
 
 > [!NOTE] 
 > If the scope is set to project at the organization level, you cannot change the scope in each project.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
-All jobs in releases run with the job authorization scope set to collection. In other words, these jobs have access to resources in all projects in your project collection. 
+All jobs in a release run with the job authorization scope set to collection. In other words, these jobs have access to resources in all projects in your project collection. 
 
 ::: moniker-end
 
