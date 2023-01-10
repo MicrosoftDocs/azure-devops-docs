@@ -1,3 +1,4 @@
+---
 title: Secret-free deployments from Azure Pipelines
 author: drewbren
 ms.author: abrenner
