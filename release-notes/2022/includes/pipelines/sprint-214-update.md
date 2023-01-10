@@ -6,7 +6,7 @@ ms.topic: include
 ---
 ### Support for Tokyo version of ServiceNow
 
-Azure Pipelines has an existing integration with ServiceNow. The integration relies on an [app](https://store.servicenow.com/sn_appstore_store.do#!/store/application/fa788cb5dbb5630040669c27db961940) in ServiceNow and an [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) in Azure DevOps. We've now updated the app to work with the Tokyo version of ServiceNow. Both classic and YAML pipelines now work with Tokyo. To ensure that this integration works, upgrade to the new version of the app (4.215.2) from the Service Now store. For more information, see [Integrate with ServiceNow Change Management](https://learn.microsoft.com/azure/devops/pipelines/release/approvals/servicenow?view=azure-devops&preserve-view=true).
+Azure Pipelines has an existing integration with ServiceNow. The integration relies on an [app](https://store.servicenow.com/sn_appstore_store.do#!/store/application/fa788cb5dbb5630040669c27db961940) in ServiceNow and an [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) in Azure DevOps. We've now updated the app to work with the Tokyo version of ServiceNow. Both classic and YAML pipelines now work with Tokyo. To ensure that this integration works, upgrade to the new version of the app (4.215.2) from the Service Now store. For more information, see [Integrate with ServiceNow Change Management](/azure/devops/pipelines/release/approvals/servicenow?view=azure-devops&preserve-view=true).
 
 ### New Predefined System Variable
 
@@ -33,7 +33,7 @@ You cannot create a new template from the editor. You can only use or edit exist
 
 ### New PAT Scope for Managing Pipeline Authorization and Approvals & Checks
 
-To limit the damage of leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](https://learn.microsoft.com/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources&preserve-view=true), such as a service connection, or to manage [Approvals and Checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) for that resource.
+To limit the damage of leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources&preserve-view=true), such as a service connection, or to manage [Approvals and Checks](/azure/devops/pipelines/process/approvals) for that resource.
 
 > [!div class="mx-imgBorder"]
 > ![Pipelines Resources](../../media/214-pipelines-01.png)
