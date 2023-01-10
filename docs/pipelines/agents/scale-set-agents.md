@@ -458,7 +458,7 @@ To delete the saved agent when you are done with your investigation, navigate to
   * [You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
   * [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
   * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-is-not-running-on-agents-or-getting-logs)
-  * [If you specify **AzDevOps** as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
+  * [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
   * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
 
 ### Where can I find the images used for Microsoft-hosted agents?
@@ -523,7 +523,7 @@ When the pool is created, a tag is added to the scale set to mark the scale set 
 
 #### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists
 
-You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap in which a VMSS not used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
+You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap, in which a VMSS not used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
 
 #### VMSS maintenance job is not running on agents or getting logs
 
