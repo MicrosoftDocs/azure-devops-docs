@@ -26,7 +26,7 @@ If you like Microsoft-hosted agents but are limited by what they offer, you shou
 - Your jobs exceed the Microsoft-hosted agent timeout.
 - You can't partition Microsoft-hosted parallel jobs to individual projects or teams in your organization.
 - You want to run several consecutive jobs on an agent to take advantage of incremental source and machine-level package caches.
-- You want to run additional configuration or cache warmup before an agent begins accepting jobs.
+- You want to run configuration or cache warmup before an agent begins accepting jobs.
 
 If you like self-hosted agents but wish that you could simplify managing them, you should consider scale set agents. Here are some examples:
 
@@ -75,7 +75,7 @@ In the following example, a new resource group and virtual machine scale set are
     --name vmssagents
     ```
 
-4. Create a virtual machine scale set in your resource group. In this example the UbuntuLTS VM image is specified. 
+4. Create a virtual machine scale set in your resource group. In this example, the UbuntuLTS VM image is specified. 
 
     ```azurecli
     az vmss create \
@@ -148,7 +148,7 @@ In the following example, a new resource group and virtual machine scale set are
     > [!IMPORTANT]
     > You may create your scale set pool in **Project settings** or **Organization settings**, but when you delete a scale set pool, you must delete it from **Organization settings**, and not **Project settings**.
 
-2. Select **Azure virtual machine scale set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired virtual machine scale set from that subscription. If you have an existing [service connection](../library/service-endpoints.md) you can choose that from the list instead of the subscription.
+2. Select **Azure virtual machine scale set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired virtual machine scale set from that subscription. If you have an existing [service connection](../library/service-endpoints.md), you can choose that from the list instead of the subscription.
 
     > [!IMPORTANT]
     > - To configure a scale set agent pool, you must have either [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#user-administrator-permissions) permissions on the selected subscription. If you have one of these permissions but get an error when you choose **Authorize**, see [troubleshooting](../release/azure-rm-endpoint.md#insufficient-privileges-to-complete-the-operation).
@@ -168,8 +168,8 @@ In the following example, a new resource group and virtual machine scale set are
     - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job. The VM goes offline after running a job and is re-imaged before picking up another job.
     - **Save an unhealthy agent for investigation** - Whether to save [unhealthy agent VMs](#unhealthy-agents) for troubleshooting instead of deleting them.
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale out the number of agents, but won't exceed this limit.
-    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale in the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
-    - **Delay in minutes before deleting excess idle agents** - To account for the variability in build load throughout the day, Azure Pipelines will wait this long before deleting an excess idle agent.
+    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale in the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set **Number of agents to keep on standby** to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
+    - **Delay in minutes before deleting excess idle agents** - To account for the variability in build load throughout the day, Azure Pipelines will wait for the specified duration before deleting an excess idle agent.
     - **Configure VMs to run interactive tests** (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions. Check this box to run unelevated with interactive UI. In either case, the agent user is a member of the Administrators group.
 
 6. When your settings are configured, choose **Create** to create the agent pool.
@@ -208,7 +208,7 @@ To put all of this into an example, consider a scale set agent pool that is conf
 
 - If no other jobs arrive for 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales in the pool to two agents.
 
-Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over the course of a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. You may observe more idle agents than you desire at various times. This is expected as Azure Pipelines converges gradually to the constraints that you specify.
+Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over the course of a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. You may observe more idle agents than you desire at various times, which is expected as Azure Pipelines converges gradually to the constraints that you specify.
 
 > [!NOTE]
 >  It can take an hour or more for Azure Pipelines to scale out or scale in the virtual machines. Azure Pipelines will scale out in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
@@ -282,7 +282,7 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 1. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
 
-1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. 
+1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script, which can be found here. 
 
     - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)
     - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/6/enableagent.ps1](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/6/enableagent.ps1)
@@ -338,7 +338,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 1. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-   1. **Windows** - If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
+   1. **Windows** - If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you specified by `<MyDiskSizeGb>`.
    
       Open DiskPart tool as administrator and run these DiskPart commands:
       
@@ -346,7 +346,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
       1. `select volume 2` (depends on which volume is the OS drive)
       1. `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
           
-1. Install any additional software on the VM.
+1. Install any desired additional software on the VM.
 
 1. To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
 
@@ -437,7 +437,7 @@ Select the instance, choose **Connect**, and perform your investigation.
 
 :::image type="content" source="media/scale-set-agents/connect.png" alt-text="Connect to virtual machine instance.":::
 
-To delete the saved agent when you are done with your investigation, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and choose **Delete**. This removes the agent from the pool and deletes the associated virtual machine.
+To delete the saved agent when you are done with your investigation, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and choose **Delete** to remove the agent from the pool and delete the associated virtual machine.
 
 :::image type="content" source="media/scale-set-agents/saved-agents-card-delete.png" alt-text="Saved agents card delete button.":::
      
@@ -512,7 +512,7 @@ The option to tear down the VM after each build will only work for Windows Serve
 
 #### VMSS shows the agent as offline if the VM restarts
 
-This is the expected behavior. The agent service runs in the systemd context only. However, if the machine restarts for some reason, it's considered an unhealthy VM and deleted. For more information, see [Unhealthy Agents](#unhealthy-agents).
+Showing the agents as offline if the VM restarts is the expected behavior. The agent service runs in the systemd context only. However, if the machine restarts for some reason, it's considered an unhealthy VM and deleted. For more information, see [Unhealthy Agents](#unhealthy-agents).
 
 When agents or virtual machines fail to start, can't connect to Azure DevOps, or go offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots may cause these issues. 
 To avoid the issue, disable the software update on the image. You can also connect to the VM to debug and gather logs to help investigate the issue. 
@@ -529,11 +529,11 @@ You may get an error message like `This virtual machine scale set is already in 
 
 The maintenance job runs once every 24 hours. It's possible that VMs are getting filled up before this time. Consider increasing the disk size on the VM and adding a script in the pipeline to delete the contents.
 
-#### If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances
+#### If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances
 
-If you specify AzDevOps as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists).
+If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists).
 
-This issue occurs because agent extension scripts attempt to create the user AzDevOps and change its password.
+This issue occurs because agent extension scripts attempt to create the user `AzDevOps` and change its password.
 
 > [!NOTE]
 > It's OK to create the user and grant it extra permissions, but it should not be the primary administrator, and nothing should depend on the password, as the password will be changed. To avoid the issue, pick a different user as the primary administrator when creating the scale set, instead of `AzDevOps`. 
