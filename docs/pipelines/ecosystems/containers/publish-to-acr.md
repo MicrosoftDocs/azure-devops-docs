@@ -134,7 +134,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
 ### Set up a self-hosted agent
 
-1. In Azure Portal, connect to your VM.
+1. In Azure portal, connect to your VM.
 
 1. In an elevated PowerShell command prompt, run the following command to download the agent.
 
@@ -192,7 +192,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
 ## Set up the managed identity
 
-1. In Azure Portal, navigate to the VM you created earlier.
+1. In Azure portal, navigate to the VM you created earlier.
 
 1. Select **Identity** from the left navigation panel, and then enable the **System assigned** identity.
 
@@ -298,7 +298,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
 1. Once the pipeline run is complete, you can verify your image in Azure. Navigate to your Azure Container Registry in Azure portal, and then select **Repositories**.
 
-    :::image type="content" source="../media/acr-image.png" alt-text="A screenshot showing the image in Azure Portal.":::
+    :::image type="content" source="../media/acr-image.png" alt-text="A screenshot showing the image in Azure portal.":::
 
 ## Clean up resources
 
