@@ -31,21 +31,3 @@ There are known limitations:
 If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In an ideal experience, the validation should not be blocked, and you should be able to fill in the input parameters using intellisense.
 You cannot create a new template from the editor. You can only use or edit existing templates.
 
-### New PAT Scope for Managing Pipeline Authorization and Approvals & Checks
-
-To limit the damage of leaking a PAT token, we've added a new PAT scope, named `Pipeline Resources`, to be used when managing pipeline authorization to use a [protected resource](/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources&preserve-view=true), such as a service connection, or to manage [Approvals and Checks](/azure/devops/pipelines/process/approvals) for that resource.
-
-> [!div class="mx-imgBorder"]
-> ![Pipelines Resources](../../media/214-pipelines-01.png)
-
-Starting with Sprint 215, REST API calls to:
-
-[Update an Approval](/azure/devops/approvalsandchecks/approvals/update) will require a PAT with scope `Pipeline Resources Use` 
-
-[Manage Checks](/azure/devops/approvalsandchecks/check-configurations) will require a PAT with scope `Pipeline Resources Use and Manage` 
-
-[Update Pipeline Permissions For Resources](/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
-
-[Authorize Definition Resources](/azure/devops/build/resources/authorize-definition-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
-
-[Authorize Project Resources](/azure/devops/build/authorizedresources/authorize-project-resources) will require a PAT with scope `Pipeline Resources Use and Manage`
