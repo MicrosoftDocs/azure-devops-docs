@@ -3,7 +3,7 @@ title: Improvements to strengthen pipelines security.
 author: ckanyika
 ms.author: ckanyika
 ms.date: 1/10/2023
-description: With this update, we are including improvements to strengthen pipelines security in Azure DevOps.
+description: TBD
 ---
 # Improvements to strengthen pipelines security
 
