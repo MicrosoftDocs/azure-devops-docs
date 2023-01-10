@@ -404,11 +404,11 @@ az vmss update --resource-group <myResourceGroup> --name <myScaleSet> --set virt
      
 ## Supported Operating Systems
 
-Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016/2019, and Windows 10 client.
+Scale set agents currently support Ubuntu Linux, Windows Server/DataCenter 2016/2019, and Windows 10 client.
 
 ### Known issues
 
-* Debian or RedHat Linux are not supported. Only Ubuntu is.
+* Debian and RedHat Linux are not supported. Only Ubuntu is.
 * Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI. The agent will run as Local Service instead.
 
 ## Troubleshooting issues
@@ -419,7 +419,7 @@ The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete,
 
 ### Unhealthy Agents
 
-When agents or virtual machines are failing to start, not connecting to Azure DevOps, or going offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots can cause these issues. Connecting to the VM to debug and gather logs can help with the investigation.
+When agents or virtual machines are failing to start, not connecting to Azure DevOps, or going offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots may cause these issues. Connecting to the VM to debug and gather logs can help with the investigation.
 
 If you would like Azure DevOps to save an unhealthy agent VM for investigation and not automatically delete it when it detects the unhealthy state, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose **Settings**, select the option **Save an unhealthy agent for investigation**, and choose **Save**.
 
@@ -514,7 +514,7 @@ The option to tear down the VM after each build will only work for Windows Serve
 
 This is the expected behavior. The agent service runs in the systemd context only. However, if the machine restarts for some reason, it's considered an unhealthy VM and deleted. For more information, see [Unhealthy Agents](#unhealthy-agents).
 
-When agents or virtual machines fail to start, can't connect to Azure DevOps, or go offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots can cause these issues. 
+When agents or virtual machines fail to start, can't connect to Azure DevOps, or go offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots may cause these issues. 
 To avoid the issue, disable the software update on the image. You can also connect to the VM to debug and gather logs to help investigate the issue. 
 
 #### You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management
@@ -523,7 +523,7 @@ When the pool is created, a tag is added to the scale set to mark the scale set 
 
 #### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists
 
-You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap in which a VMSS not used by any agent pool still can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
+You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap in which a VMSS not used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
 
 #### VMSS maintenance job is not running on agents or getting logs
 
