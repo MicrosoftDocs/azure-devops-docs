@@ -8,13 +8,13 @@ ms.topic: include
 
 Azure Pipelines has an existing integration with ServiceNow. The integration relies on an [app](https://store.servicenow.com/sn_appstore_store.do#!/store/application/fa788cb5dbb5630040669c27db961940) in ServiceNow and an [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) in Azure DevOps. We've now updated the app to work with the Tokyo version of ServiceNow. Both classic and YAML pipelines now work with Tokyo. To ensure that this integration works, upgrade to the new version of the app (4.215.2) from the Service Now store. For more information, see [Integrate with ServiceNow Change Management](/azure/devops/pipelines/release/approvals/servicenow?view=azure-devops&preserve-view=true).
 
-### New Predefined System Variable
+### New predefined system variable
 
 We introduced a new predefined system variable, named `Build.DefinitionFolderPath`, whose value is the folder path of a build pipeline definition. The variable is available in both YAML and classic build pipelines. 
 
 For example, if your pipeline is housed under the `FabrikamFiber\Chat` folder in Azure Pipelines, then the value of `Build.DefinitionFolderPath` is `FabrikamFiber\Chat`.
 
-### GA of templates support in YAML editor
+### General Availability template support in YAML editor
 
 [Templates](/azure/devops/pipelines/process/templates?view=azure-devops&preserve-view=true) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](/azure/devops/pipelines/security/templates?view=azure-devops&preserve-view=true) through your pipeline.
 
@@ -44,7 +44,7 @@ Starting with Sprint 215, REST API calls to:
 
 [Manage Checks](/azure/devops/approvalsandchecks/check-configurations) will require a PAT with scope `Pipeline Resources Use and Manage` 
 
-[Update Pipeline Permisions For Resources](/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
+[Update Pipeline Permissions For Resources](/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
 
 [Authorize Definition Resources](/azure/devops/build/resources/authorize-definition-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
 
