@@ -8,6 +8,11 @@
     items:
     - name: By release date 
       items:
+        - name: "2023"
+          items:
+          - name: January 11
+            href: 2023/sprint-214-update.md
+          expanded: true
         - name: "2022"
           items:
           - name: December 8
@@ -42,7 +47,7 @@
             href: 2022/sprint-199-update.md
           - name: January 19
             href: 2022/sprint-198-update.md
-          expanded: true
+          expanded: false
         - name: "2021"
           items:
           - name: December 6
