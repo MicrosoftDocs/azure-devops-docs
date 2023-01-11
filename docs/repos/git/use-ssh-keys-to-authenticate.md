@@ -304,10 +304,11 @@ takes care of starting `ssh-agent` for you.
 **A:** If you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
 
 But, this process doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured.  Azure DevOps blindly accepts the first key that the client provides during authentication.  If that key is invalid for the requested repo, the request fails with the following error:
-> ```
-> remote: Public key authentication failed.
-> fatal: Could not read from remote repository.
-> ```
+
+```
+remote: Public key authentication failed.
+fatal: Could not read from remote repository.
+```
 
 For Azure DevOps, configure SSH to explicitly use a specific key file. One way to do so is to edit your `~/.ssh/config` file (for example, `/home/jamal/.ssh` or `C:\Users\jamal\.ssh`) as follows:
 
