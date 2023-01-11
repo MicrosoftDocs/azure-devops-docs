@@ -5,8 +5,10 @@ ms.author: ckanyika
 ms.date: 1/10/2023
 description: With this update, we highlight extension updates and performance improvements.
 ---
-# TBD
+# Extension updates and performance improvements 
 
+With this update, we have included extension updates and performance improvements. With an existing ServiceNow integration, we've updated the app to support the Tokyo version of ServiceNow. 
+We've also made improvements to extension settings to help you manage your installed extensions.
 
 Check out the release notes for details.
 
