@@ -202,6 +202,11 @@
       items:
       - name: Azure Boards
         items:
+        - name: "2023"
+          items:
+          - name: January 11
+            href: 2023/boards/sprint-214-update.md
+          expanded: false
         - name: "2022"
           items:
           - name: December 8
@@ -356,6 +361,11 @@
           expanded: false
       - name: Azure Pipelines
         items:
+        - name: "2023"
+          items:
+          - name: January 11
+            href: 2023/pipelines/sprint-214-update.md
+          expanded: false
         - name: "2022"
           items:
           - name: December 8
@@ -577,6 +587,11 @@
         expanded: false
       - name: General
         items:
+        - name: "2023"
+          items:
+          - name: January 11
+            href: 2023/general/sprint-214-update.md
+          expanded: false
         - name: "2022"
           items:
           - name: October 11
