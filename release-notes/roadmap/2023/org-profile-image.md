@@ -1,5 +1,5 @@
 ---
-title: Secret-free deployments from Azure Pipelines
+title: Organization profile image
 author: drewbren
 ms.author: abrenner
 ms.date: 01/12/2023
