@@ -23,4 +23,4 @@ handling of partial failures. Meaning, if one patch fails but the others do not,
 
 ### Batch delete API (GA)
 
-This new REST API endpoint to delete and/or destroy work items in batch is now publicly available. [Click here](/azure/devops/wit/work-items/delete-work-items?view=azure-devops-rest-7.1&branch=mseng%2fusers%2frfrydrysek%2fhack1986677-bulk-delete&tabs=HTTP&preserve-view=true) to learn more.
+This new REST API endpoint to delete and/or destroy work items in batch is now publicly available. [Click here](/azure/devops/wit/work-items/delete-work-items?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true) to learn more.
