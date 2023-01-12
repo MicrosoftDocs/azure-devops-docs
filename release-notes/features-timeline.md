@@ -390,7 +390,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="15"><strong>2023 Q1</strong></td>
+        <td rowspan="16"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -464,6 +464,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Boards</td>
         <td>Future</td>
       </tr>     
+      <tr>
+       <td><a href="/azure/devops/release-notes/roadmap/2023/org-profile-image" data-raw-source="[Organization profile image](/azure/devops/release-notes/roadmap/2023/org-profile-image)">Organization profile image</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
       <tr>
         <td rowspan="5"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
