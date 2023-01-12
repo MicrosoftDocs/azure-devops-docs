@@ -24,7 +24,8 @@ When creating a release, you can specify the version of your artifact source. By
 
 :::image type="content" source="media/artifacts-02.png" alt-text="Screenshot showing how to add an artifact to a classic release pipeline.":::
 
-If you link more than one artifact, you can specify which one is the primary source (default).
+If you link more than one artifact, you can specify which one is the primary source (default). The primary artifact source is used to set a number of predefined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#numbering).
+
 
 :::image type="content" source="media/artifacts-02a.png" alt-text="Screenshot showing how to set a primary source artifact.":::
 
@@ -226,48 +227,29 @@ Azure Pipelines may not be able to contact your TeamCity server if, for example,
 
 ## Artifact source alias
 
-To ensure the uniqueness of every artifact download, each artifact source linked to a release pipeline is automatically provided with a specific download location known as the _source alias_. This location can be accessed through the variable:
+To ensure the uniqueness of every artifact download, each artifact source linked to a release pipeline is automatically provided with a specific download location known as the *source alias*. This location can be accessed by using the variable: `$(System.DefaultWorkingDirectory)\[source alias]`
 
-`$(System.DefaultWorkingDirectory)\[source alias]`
+Using a source aliases ensures that renaming a linked artifact source doesn't require editing the task properties because the download location defined in the agent does not change.
 
-This uniqueness also ensures that, if you later rename a linked artifact source in its original location (for example, rename a build pipeline in Azure Pipelines or a project
-in Jenkins), you don't need to edit the task properties because the download location defined in the agent does not change.
-
-The source alias is, by default, the name of the source selected when you linked the artifact source, prefixed with an underscore; depending on the type of the artifact source this will be the name of the build pipeline, job, project, or repository. You can edit the source alias from the artifacts tab of a release pipeline; for example, when you change the name of the build pipeline and you want to use a source alias that reflects the name of the build pipeline.
-
-## Primary source
-
-When you link multiple artifact sources to a release pipeline, one of them is designated as the primary artifact source. The primary artifact source is used to set a number of predefined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#numbering).
+By default, the source alias is the name of the artifact source prefixed with an underscore. Depending on the type of the artifact source, this will be the name of the build pipeline, job name, project name, or the repository name. You can edit the source alias from the artifacts tab of your release pipeline.
 
 ## Artifact download
 
-When you deploy a release to a stage, the versioned artifacts from each of the sources are, by default, downloaded to the automation agent so that tasks running within that stage can deploy these artifacts. The artifacts downloaded to the agent are not deleted when a release is completed. However, when you initiate the next release, the downloaded artifacts are deleted and replaced with the new set of artifacts.
+When a deployment is completed to a stage, the versioned artifacts from each of the sources are downloaded to the pipeline agent so that tasks running within that stage can access those artifacts. The downloaded artifacts do not get deleted when a release is completed. However, when you initiate the next release, the downloaded artifacts are deleted and replaced with the new set of artifacts.
 
-A new unique folder in the agent is created for every release pipeline when you initiate a release, and the artifacts are downloaded into that folder. The `$(System.DefaultWorkingDirectory)` variable maps to this folder.
+A new unique folder in the agent is created for every release pipeline when a release is initiated, and the artifacts are downloaded to the following folder:`$(System.DefaultWorkingDirectory)`.
 
-Azure Pipelines currently does not perform any optimization to avoid downloading the unchanged artifacts if the same release is deployed again. In addition, because the previously downloaded contents are always deleted when you initiate a new release, Azure Pipelines cannot perform incremental downloads to the agent.
+Azure Pipelines does not perform any optimization to avoid downloading the unchanged artifacts if the same release is deployed again. In addition, because the previously downloaded contents are always deleted when you initiate a new release, Azure Pipelines cannot perform incremental downloads to the agent.
 
 ::: moniker range="< azure-devops"
 
-You can, however, instruct Azure Pipelines to [skip the automatic download](../process/phases.md#artifact-download) of artifacts to the agent for a specific job and stage of the deployment if you wish. Typically, you will do this when the tasks in that job do not require any artifacts, or if you implement custom code in a task to download the artifacts you require.
+You can however, set up your pipeline to [skip automatic download](../process/phases.md#artifact-download) for a specific job or stage if you wish to do so. 
 
 ::: moniker-end
-
-::: moniker range="azure-devops"
-
-In Azure Pipelines, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download) to the agent for a specific job and stage of the deployment. Typically, you will do this to improve the efficiency of the deployment pipeline when the tasks in that job do not require all or any of the artifacts, or if you implement custom code in a task to download the artifacts you require.
-
-:::image type="content" source="media/select-artifacts.png" alt-text="Selecting the artifacts to download":::
-
-::: moniker-end
-
-## Artifact variables
-
-Azure Pipelines exposes a set of predefined variables that you can access and use in tasks and scripts; for example, when executing PowerShell scripts in deployment jobs. When there are multiple artifact sources linked to a release pipeline, you can access information about each of these. For a list of all predefined artifact variables, see [variables](variables.md#artifact-variables).
 
 ## Related articles
 
-* [Release pipelines](index.md)
-* [Stages](../process/stages.md)
-
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+- [Classic release and artifacts variables](variables.md#artifact-variables)
+- [Classic release pipelines](index.md)
+- [Publish and download pipeline Artifacts](../artifacts/pipeline-artifacts)
+- [Add stages, dependencies, & conditions](../process/stages.md)
