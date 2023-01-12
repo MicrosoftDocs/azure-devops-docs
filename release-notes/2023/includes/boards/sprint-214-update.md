@@ -19,8 +19,8 @@ For example, if target date is not being used and you resize the card, the new i
 We made several changes to the 7.1 version of the work item batch update API. These include minor performance improvements and the 
 handling of partial failures. Meaning, if one patch fails but the others do not, the others will successfully be completed.
 
-[Click here](/azure/devops/wit/?view=azure-devops-rest-7.1#work-item-batch-update-api-&preserve-view=true' ) to learn more about the batch update REST API.
+[Click here](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/?view=azure-devops-rest-7.1#work-item-batch-update-api-) to learn more about the batch update REST API.
 
 ### Batch delete API (GA)
 
-This new REST API endpoint to delete and/or destroy work items in batch is now publicly available. [Click here](/azure/devops/wit/work-items/delete-work-items?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true) to learn more.
+This new REST API endpoint to delete and/or destroy work items in batch is now publicly available. [Click here](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/work-items/delete-work-items?view=azure-devops-rest-7.1&tabs=HTTP) to learn more.
