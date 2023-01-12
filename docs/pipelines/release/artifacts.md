@@ -192,58 +192,37 @@ When using Maven snapshots, multiple versions can be downloaded at once (example
 
 ## Artifact sources - TFS server
 
-You can use Azure Pipelines to deploy artifacts published by an on-premises TFS server. You don't need to make the TFS server visible on the Internet; you just set up an on-premises automation agent. Builds from an on-premises TFS server are downloaded directly into the on-premises agent, and then deployed to the specified target servers. They will not leave your enterprise network. This allows you to leverage all of your investments in your on-premises TFS server, and take advantage of the release capabilities in Azure Pipelines.
+You can use Azure Pipelines to deploy artifacts from TFS servers without having to make your server discoverable on the Internet by setting up an on-premises automation agent. Artifacts are downloaded to the on-premises agent and then deployed to the specified target servers without leaving your enterprise network. This is ideal for customers  to leverage their investments of their on-premises infrastructure while taking advantage of Azure Pipelines releases.
 
-> [!TIP]
-> Using this mechanism, you can also deploy artifacts published in one Azure Pipelines subscription in another Azure Pipelines, or deploy artifacts published in one Team Foundation Server from another Team Foundation Server.
+To use TFS servers as an artifact source, you must install the [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs) extension from the Visual Studio Marketplace, and then create a [service connection](../library/service-endpoints.md) to authenticate with Azure Pipelines. Once authenticated, you can then link a TFS build pipeline to your release pipeline and choose **External TFS Build** from the *Type* dropdown menu.
 
-To enable these scenarios, you must install the [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs) extension from Visual Studio Marketplace. Then create a service connection with credentials to connect to your TFS server (see [service connections](../library/service-endpoints.md) for details).
+The following features are available when using TFS servers as an artifact source:
 
-You can then link a TFS build pipeline to your release pipeline. Choose **External TFS Build** in the **Type** list.
+| Feature | Description                      |
+|---------|----------------------------------|
+| Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
+| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |                                                                |
 
-The following features are available when using external TFS sources:
-
-
-|        Feature         |                                                                                                                                           Behavior with external TFS sources                                                                                                                                           |
-|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Auto-trigger releases  | You cannot configure a continuous deployment trigger for external TFS sources in a release pipeline. To automatically create a new release when a build is complete, you would need to add a script to your build pipeline in the external TFS server to invoke Azure Pipelines REST APIs and to create a new release. |
-|   Artifact variables   |                                                                                                                 A number of [artifact variables](variables.md) are supported for external TFS sources.                                                                                                                 |
-| Work items and commits |                                                                                                                      Azure Pipelines cannot show work items or commits for external TFS sources.                                                                                                                       |
-|   Artifact download    |                                                                    By default, External TFS artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts.                                                                     |
-
-> [!NOTE]
-> Azure Pipelines may not be able to contact an on-premises TFS server in case it's within your enterprise network. In that case you can integrate Azure Pipelines with TFS by setting up an on-premises agent that can access the TFS server. You will not be able to see the name of your TFS projects or build pipelines when linking to a build, but you can include those variables in the link dialog fields. In addition, when you create a release, Azure Pipelines may not be able to query the TFS server for the build numbers. Instead, enter the **Build ID** (not the build number) of the desired build in the appropriate field, or select the **Latest** build.
+Azure Pipelines may not be able to contact an on-premises TFS server in case it's within your enterprise network. In that case you can integrate Azure Pipelines with TFS by setting up an on-premises agent that can access the TFS server. You will not be able to see the name of your TFS projects or build pipelines when linking to a build, but you can include those variables in the URL text fields. In addition, when you create a release, Azure Pipelines may not be able to query the TFS server for the build numbers. Instead, enter the *Build ID* (not the build number) of the desired build in the appropriate field, or select the *Latest* build.
 
 ## Artifact sources - TeamCity
 
-To integrate with TeamCity, you must first install the [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity) extension from Marketplace.
+To use TeamCity as an Artifact source, you must first install the [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity) extension from Visual Studio Marketplace.
 
-To consume TeamCity artifacts, start by creating a service connection with credentials to connect to your TeamCity server (see [service connections](../library/service-endpoints.md) for details).
+Once completed, create a [service connection](../library/service-endpoints.md) to authenticate with your TeamCity server. You can then link your build artifact to a release pipeline. The TeamCity build configuration must be set up with an action to publish artifacts.
 
-You can then link a TeamCity build configuration to a release pipeline. The TeamCity build configuration must be configured with an action to publish the artifacts.
+The following features are available when using TeamCity as an artifact source:
 
-The following features are available when using TeamCity sources:
+| Feature | Description                      |
+|---------|----------------------------------|
+| Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
+| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |                                                 |
 
-
-|        Feature         |                                                                                                                       Behavior with TeamCity sources                                                                                                                       |
-|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Auto-trigger releases  | You cannot configure a continuous deployment trigger for TeamCity sources in a release pipeline. To create a new release automatically when a build is complete, add a script to your TeamCity project that invokes the Azure Pipelines REST APIs to create a new release. |
-|   Artifact variables   |                                                                                           A number of [artifact variables](variables.md) are supported for builds from TeamCity.                                                                                           |
-| Work items and commits |                                                                                                   Azure Pipelines cannot show work items or commits for TeamCity builds.                                                                                                   |
-|   Artifact download    |                                                  By default, TeamCity builds are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts.                                                  |
-
-> [!NOTE]
-> Azure Pipelines may not be able to contact your TeamCity server if, for example, it is within your enterprise network. In this case you can integrate Azure Pipelines with TeamCity by setting up an on-premises agent that can access the TeamCity server. You will not be able to see the name of your TeamCity projects when linking to a build, but you can type this into the link dialog field.
-
-## Artifact sources - Custom artifacts
-
-In addition to built-in artifact sources, Azure Artifacts supports integrating any custom artifact source with the artifact extensibility model. You can plug in any custom artifact source, and Azure DevOps will provide a first-class user experience and seamless integration.
-
-For more information, see [Azure DevOps artifact extensibility model](https://aka.ms/artifactextensibility).
-
-## Artifact sources - Other sources
-
-Your artifacts may be created and exposed by other types of sources such as a NuGet repository. While we continue to expand the types of artifact sources supported in Azure Pipelines, you can start using it without waiting for support for a specific source type. Simply skip the linking of artifact sources in a release pipeline, and add custom tasks to your stages that download the artifacts directly from your source.
+Azure Pipelines may not be able to contact your TeamCity server if, for example, it is within your enterprise network. In this case you can integrate Azure Pipelines with TeamCity by setting up an on-premises agent that can access the TeamCity server. You will not be able to see the name of your TeamCity projects when linking to a build, but you can type this into the URL text field.
 
 ## Artifact source alias
 
