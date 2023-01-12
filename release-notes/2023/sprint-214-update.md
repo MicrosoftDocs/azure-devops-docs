@@ -2,7 +2,7 @@
 title: Extension updates and performance improvements 
 author: ckanyika
 ms.author: ckanyika
-ms.date: 1/10/2023
+ms.date: 1/12/2023
 description: With this update, we highlight extension updates and performance improvements.
 ---
 # Extension updates and performance improvements 
