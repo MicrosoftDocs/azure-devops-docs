@@ -16,5 +16,5 @@ Organizations are represented today by an automatically generated image that can
 
 [Developer Community Suggestion](https://developercommunity.visualstudio.com/t/Can-Not-update-Organization-Settings-Ove/1329561)
 
->  [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Organization settings overview](media/OrgProfile.png)
