@@ -1,10 +1,10 @@
 ---
 title: 'Azure CLI sample for Azure Pipelines and variable groups'
 description: Azure CLI sample for accessing secret and nonsecret variables from a variable group in an Azure Pipeline. This sample uses the azure-devops extension.
-author: steved0x
+author: juliakm
 ms.author: jukullam
 manager: mijacobs
-ms.date: 05/20/2021
+ms.date: 01/12/2023
 ms.topic: sample
 ms.devlang: azurecli 
 monikerRange: '>=azure-devops-2020'
@@ -98,7 +98,7 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-After you have published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
+After you've published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
 
 ```azurecli
 #!/bin/bash
@@ -126,6 +126,10 @@ variableGroupName="Contoso Variable Group"
 # Sign in to Azure CLI and follow the directions. May be unnecessary in some environments.
 echo "Sign in. (For Cloud Shell, provide the device login code.)"
 az login
+
+# Sign in using an Azure DevOps personal access token (PAT). May be unnecessary in some environments.
+echo "Sign in to Azure DevOps."
+az devops login
 
 # Create a resource group and a storage account.
 az group create --name "$resourceGroupName" --location "$resourceGroupLocation"
