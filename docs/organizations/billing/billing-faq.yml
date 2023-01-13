@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 01/10/2023
+  ms.date: 01/13/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -341,8 +341,10 @@ sections:
       - question: |
           Q: What happens if I cancel my Azure subscription or my credit card expires?
         answer: |
-          A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the free tier of service.
+          A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the [free tier](overview.md#free-tier) of service. To resume access to paid services, [reactivate your subscription](https://learn.microsoft.com/azure/cost-management-billing/manage/subscription-disabled) or [change your organization's billing subscription](change-azure-subscription.md).
           
+          ![Screenshot of invalid Azure billing subscription.](media/billing-faq/azure-subscription-invalid.png)
+
           >[!NOTE]
           >You must keep your Azure subscription in good standing to avoid interruptions in paid services.
           
