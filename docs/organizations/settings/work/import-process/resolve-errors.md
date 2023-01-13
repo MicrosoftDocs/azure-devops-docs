@@ -158,7 +158,7 @@ will be imported to add or update a process. This file contains all of the plug-
 when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
-The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../../../../reference/process-templates/process-template-xml-elements-reference.md).   
+The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference).   
 
 <a id="VS412457"></a>
 
@@ -2050,7 +2050,7 @@ Custom controls are not supported in Azure DevOps Services. Review the `FORM` se
 ## Test management plug-in errors
 
 The TestManagement.xml file, located in the Test Management folder, 
-must conform to the syntax and rules described in [Define the initial configuration of Test Manager](../../../../reference/process-templates/define-initial-configuration-test-manager.md). 
+must conform to the syntax and rules described in [Define the initial configuration of Test Manager](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager). 
 
 
 <a id="TF402533"></a>

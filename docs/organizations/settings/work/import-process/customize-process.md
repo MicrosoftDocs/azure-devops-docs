@@ -161,7 +161,7 @@ You can import up to 32 processes into Azure DevOps Services. Your custom proces
 
 ### Process template
 
-Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../../../../reference/process-templates/process-template-xml-elements-reference.md). Also, it must meet the following conditions:
+Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference). Also, it must meet the following conditions:
 
 * Limits the number of defined WITs to 64
 * Contains only one Categories.xml definition file

@@ -107,7 +107,7 @@ The following XML syntax lists the default contents of the resolution states def
 </TestResolutionStates>  
 ```  
 ::: moniker range="< azure-devops"
-For on-premises collection, you can [customize the resolution states defined in the process template](../process-templates/define-initial-configuration-test-manager.md). 
+For on-premises collection, you can [customize the resolution states defined in the process template](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager). 
 ::: moniker-end
 
 When you analyze failed tests, you assign the failure type and resolution state.  
