@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/8/2022
+ms.date: 1/12/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -36,6 +36,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2023/sprint-214-update.md" data-raw-source="[12 January 2023](2023/sprint-214-update.md)"> 12 January 2023</a></td>
+    <td>Extensions should display their Scopes</td><td>General</td><td>Future</td></tr>
+    <td>Card resize logic in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch update improvements</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch delete API (GA)</td><td>Boards</td><td>Future</td></tr>
+    <td>Support for Tokyo version of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>New predefined system variable</td><td>Pipelines</td><td>Future</td></tr>
+    <td>General Availability template support in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="11"><a href="2022/sprint-213-update.md" data-raw-source="[8 December 2022](2022/sprint-213-update.md)"> 8 December 2022</a></td>
     <td>Copy comment links</td><td>Boards</td><td>Future</td></tr>
