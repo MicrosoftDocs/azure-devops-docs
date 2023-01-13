@@ -4,8 +4,8 @@ description: Virtual machine resource support within Environment
 ms.topic: conceptual
 ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: ushan
-ms.date: 07/30/2021
+ms.manager: mijacobs
+ms.date: 01/12/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -84,7 +84,7 @@ jobs:
 - deployment: VMDeploy
   displayName: Deploy to VM
   environment: 
-   name: ContosoDeploy
+   name: VMenv
    resourceType: VirtualMachine
   strategy:
      runOnce:
@@ -106,7 +106,7 @@ jobs:
 - deployment: VMDeploy
   displayName: Deploy to VM
   environment: 
-    name: ContosoDeploy
+    name: VMenv
     resourceType: VirtualMachine
     tags: windows # only deploy to virtual machines with this tag
   strategy:
@@ -139,7 +139,7 @@ jobs:
 - deployment: VMDeploy
   displayName: Deploy to VM
   environment: 
-    name: ContosoDeploy
+    name: VMenv
     resourceType: VirtualMachine
     tags: windows,prod # only deploy to virtual machines with both windows and prod tags
   strategy:
@@ -159,9 +159,6 @@ For more information about deployment strategies and life-cycle hooks, see [Depl
 Select the **Deployments** tab for complete traceability of commits and work items, and a cross-pipeline deployment history per environment and resource.
 > [!div class="mx-imgBorder"]
 > ![VMDeployments_view](media/vm-deployments.png)
-  
-> [!div class="mx-imgBorder"]
-> ![VMjobs_view](media/vm-jobsview.png)
   
 ## Remove a VM from an environment
 
