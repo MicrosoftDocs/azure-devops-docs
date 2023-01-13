@@ -1,12 +1,12 @@
 ---
-title: Release artifacts and artifact sources
-description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS). This article lists and explains the different artifacts sources and how to consume them. It also explains the artifacts variables and download.
+title: Release pipelines and artifact sources
+description: Understand release pipelines and the different artifact sources.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
 ms.author: shashban
 author: shashban
-ms.date: 12/08/2021
-ms.custom: "contperf-fy20q4, seodec18"
+ms.date: 01/12/2023
+ms.custom: "contperf-fy20q4, seodec18, engagement-fy23"
 monikerRange: '<= azure-devops'
 ---
 
@@ -47,7 +47,6 @@ The following sections describe how to work with the different types of artifact
 - [Azure Artifacts](#artifact-sources---azure-artifacts)
 - [TFS server](#artifact-sources---tfs-server)
 - [TeamCity](#artifact-sources---teamcity)
-- [Other sources](#artifact-sources---other-sources)
 
 ## Artifact sources - Azure Pipelines
 
@@ -59,7 +58,7 @@ The following features are available when using Azure Pipelines as an artifact s
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
 | Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 | Deployment stages | The build summary list all the deployment stages where the artifact was deployed to. |
 
@@ -97,7 +96,7 @@ All jobs in a release run with the job authorization scope set to collection. In
 
 There are some scenarios in which you may want to consume artifacts from different source controls directly without passing them through a build pipeline. For example:
 
-- You are developing a PHP or a JavaScript application that does not require an explicit build pipeline.
+- Developing a PHP or a JavaScript application that doesn't require an explicit build pipeline.
 
 - You manage configurations for various stages in different version control repositories, and you want to consume these configuration files directly from version control as part of the deployment pipeline.
 
@@ -107,7 +106,7 @@ Because you can configure multiple artifact sources in a single release pipeline
 
 Azure Pipelines supports Team Foundation Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
 
-You can link a release pipeline to any of the Git or TFVC repositories in any project in your collection (you will need read access to these repositories). No additional setup is required when deploying version control artifacts within the same collection.
+You can link a release pipeline to any of the Git or TFVC repositories in any project in your collection (you'll need read access to these repositories). No additional setup is required when deploying version control artifacts within the same collection.
 
 When you link a GitHub repository and select a branch, you can edit the default properties of the artifact types after the artifact has been saved. This is particularly useful in scenarios where the branch for the stable version of the artifact changes, and continuous delivery releases should use this branch to obtain newer versions of the artifact. You can also specify details of the checkout, such as whether checkout submodules and LFS-tracked files, and the shallow fetch depth.
 
@@ -138,7 +137,7 @@ The following features are available when using Jenkins as an artifact source:
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
 | Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
 Artifacts generated by Jenkins builds are typically propagated to storage repositories for archiving and sharing. Azure blob storage is one of the supported repositories, allowing you to consume Jenkins projects that publish to Azure storage as artifact sources in a release pipeline. Azure Pipelines download the artifacts automatically from Azure to the agent running the pipeline. In this scenario, connectivity between the agent and the Jenkins server is not required. Microsoft-hosted agents can be used without exposing the server to internet.
@@ -148,7 +147,7 @@ Artifacts generated by Jenkins builds are typically propagated to storage reposi
 
 ## Artifact sources - containers
 
-When deploying containerized apps, the container image is first pushed to a container registry. You can then deploy your container image to Azure Web App for Containers or a Docker/Kubernetes cluster. You must create a service connection to authenticate with with Azure. See [manage service connections](../library/service-endpoints.md) for more details.
+When deploying containerized apps, the container image is first pushed to a container registry. You can then deploy your container image to Azure Web App for Containers or a Docker/Kubernetes cluster. You must create a service connection to authenticate with Azure. See [manage service connections](../library/service-endpoints.md) for more details.
 
 The following features are available when using Azure Container as an artifact source:
 
@@ -156,7 +155,7 @@ The following features are available when using Azure Container as an artifact s
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
 | Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
 > [!NOTE]
@@ -177,16 +176,16 @@ The following features are available when using Azure Artifacts as an artifact s
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
 | Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
 #### Handling Maven snapshots
 
 When using Maven snapshots, multiple versions can be downloaded at once (example `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You might need to remove the old version and only keep the latest Artifact before deployment. Run the following PowerShell command in an elevated command prompt to remove all copies except the one with the highest lexicographical value:
 
-    ```PowerShell
-    Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
-    ```
+```PowerShell
+Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
+```
 
 > [!NOTE]
 > You can store up to 30 Maven snapshots in your feed. Once you reach the maximum limit, Azure Artifacts will automatically delete snapshots down to 25. This process will be triggered automatically every time 30+ snapshots are published to your feed.
@@ -203,8 +202,8 @@ The following features are available when using TFS servers as an artifact sourc
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
-| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |                                                                |
+| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
 Azure Pipelines may not be able to contact an on-premises TFS server in case it's within your enterprise network. In that case you can integrate Azure Pipelines with TFS by setting up an on-premises agent that can access the TFS server. You will not be able to see the name of your TFS projects or build pipelines when linking to a build, but you can include those variables in the URL text fields. In addition, when you create a release, Azure Pipelines may not be able to query the TFS server for the build numbers. Instead, enter the *Build ID* (not the build number) of the desired build in the appropriate field, or select the *Latest* build.
 
@@ -220,8 +219,8 @@ The following features are available when using TeamCity as an artifact source:
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when a new build artifact is available (including XAML builds). See [Release triggers](triggers.md) for more details.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported fo Azure Pipelines sources. |
-| Work items and commits | You can link Azure Pipelines work items are it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
-| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |                                                 |
+| Work items and commits | You can link Azure Pipelines work items and it will be displayed in the releases details. Commits are displayed when you use Git or TFVC source controls.|
+| Artifact download | By default, build artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](../process/phases.md#agent-phase) your artifact. |
 
 Azure Pipelines may not be able to contact your TeamCity server if, for example, it is within your enterprise network. In this case you can integrate Azure Pipelines with TeamCity by setting up an on-premises agent that can access the TeamCity server. You will not be able to see the name of your TeamCity projects when linking to a build, but you can type this into the URL text field.
 
@@ -251,5 +250,5 @@ You can however, set up your pipeline to [skip automatic download](../process/ph
 
 - [Classic release and artifacts variables](variables.md#artifact-variables)
 - [Classic release pipelines](index.md)
-- [Publish and download pipeline Artifacts](../artifacts/pipeline-artifacts)
+- [Publish and download pipeline Artifacts](../artifacts/pipeline-artifacts.md)
 - [Add stages, dependencies, & conditions](../process/stages.md)
