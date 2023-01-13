@@ -20,11 +20,11 @@ We solved the problem by allowing you to edit and change the link type directly.
 
 We have seen several instances of extension authors attempting to run unsaved queries by passing the Work Item Query Language (WIQL) statement through the querystring. This works fine unless you have a large WIQL statement that reaches the browser limits on querystring length. To solve this, we have created a new REST endpoint to allow tool authors to generate a temporary query. Using the id from the response to pass via querystring eliminates this problem.
 
-Learn more at the [temp queries REST API documentation page](/rest/api/azure/devops/wit/temp-queries/create?view=azure-devops-rest-7.1).
+Learn more at the [temp queries REST API documentation page](/rest/api/azure/devops/wit/temp-queries/create?view=azure-devops-rest-7.1&preserve-view=true).
 
 ### Batch delete API (private preview)
 
-Currently, the only way to remove work items from the recycle bin is using this [REST API](/rest/api/azure/devops/wit/work-items/delete?view=azure-devops-rest-6.0&tabs=HTTP&viewFallbackFrom=azure-devops-rest-7.0) to delete one at a time. This can be a slow process and is subject to rate limiting when trying to do any kind of mass clean up. In response, we have added a new REST API endpoint to delete and/or destroy work items in batch.
+Currently, the only way to remove work items from the recycle bin is using this [REST API](/rest/api/azure/devops/wit/work-items/delete?view=azure-devops-rest-6.0&tabs=HTTP&viewFallbackFrom=azure-devops-rest-7.0&preserve-view=true) to delete one at a time. This can be a slow process and is subject to rate limiting when trying to do any kind of mass clean up. In response, we have added a new REST API endpoint to delete and/or destroy work items in batch.
 
 If you are interested in participating in a private preview of this new endpoint, please [email us directly](mailto:dahellem@microsoft.com).
 
