@@ -34,7 +34,7 @@ You may want to modify or create a link type for one of the following reasons:
 
 The link type is specified in a type definition XML file that you import to a project collection. See [LinkTypes](link-type-element-reference.md).  
   
-With the `witadmin` command-line utility, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](../witadmin/manage-link-types.md).  
+With the `witadmin` command-line utility, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types).  
   
 Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md).  
   

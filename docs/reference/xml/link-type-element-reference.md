@@ -34,7 +34,7 @@ You may want to modify or create a link type for one of the following reasons:
 -   Add a link type to track a particular relationship that is unique to your team's process.  
 
 
-The link type is specified in a type definition XML file that you import to a project collection. To customize or create a link type, use **witadmin importlinktype** to import the link type definition file to the project collection that hosts your project. With the **witadmin** command-line tool, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](../witadmin/manage-link-types.md).   
+The link type is specified in a type definition XML file that you import to a project collection. To customize or create a link type, use **witadmin importlinktype** to import the link type definition file to the project collection that hosts your project. With the **witadmin** command-line tool, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types).   
 
 <a name="SyntaxStructure"></a>   
 ##  Syntax structure  
@@ -141,7 +141,7 @@ The topology types described in the following table determine the restrictions p
 > [!NOTE]    
 >**Feature availability**: Creating a custom link type is only supported for the On-premises XML process model. You can't add custom link types when you use the Hosted XML process model.
 
-To create a custom link type, define the link type XML definition file according to the syntax provided earlier in this topic, and then import it using  [**witadmin importlinktype**](../witadmin/manage-link-types.md). Each process-defined link type is associated with an XML definition file. These files are defined in the ```WorkItem Tracking\LinkTypes``` folder of the [process set of files and folders](../process-templates/customize-process.md). 
+To create a custom link type, define the link type XML definition file according to the syntax provided earlier in this topic, and then import it using  [**witadmin importlinktype**](/previous-versions/azure/devops/reference/witadmin/manage-link-types). Each process-defined link type is associated with an XML definition file. These files are defined in the ```WorkItem Tracking\LinkTypes``` folder of the [process set of files and folders](../process-templates/customize-process.md). 
 
 For example, the following syntax defines the Microsoft.VSTS.Common.TestedBy link type provided via the TestedBy.xml file:
 
