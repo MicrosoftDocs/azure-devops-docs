@@ -61,7 +61,7 @@ variables:
   value: $[variables.contososecret]
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: ubuntu-latest
@@ -113,7 +113,7 @@ githubOrg="<my-github-organization-name>"
 githubRepo="<my-github-repository-name>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
-branch="master"
+branch="main"
 
 # Declare other variables.
 uniqueId=$RANDOM
