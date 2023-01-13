@@ -67,7 +67,7 @@ You may be able to resolve errors and warnings that the [Configure Features](/pr
   
  To learn more, see the following topics:  
   
--   [Overview of process template files](../process-templates/overview-process-template-files.md)    
+-   [Overview of process template files](/previous-versions/azure/devops/reference/process-templates/overview-process-template-files)    
 -   [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   
 -   [Change the workflow](change-workflow-wit.md)    
 -   [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md)  
