@@ -259,7 +259,7 @@ Aside from connecting via a web browser, you can connect to a project from the f
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md) 
 - [Test & Feedback extension](../../test/request-stakeholder-feedback.md)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+- [Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
 
 
 For more information, see [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).

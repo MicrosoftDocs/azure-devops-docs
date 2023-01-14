@@ -20,5 +20,5 @@ can provide feedback using the flow described in
 > This lightweight end-to-end flow is applicable only for web apps
 > and by using Azure DevOps. To get feedback for desktop apps, or for
 > earlier versions of TFS, use the feedback flow described in
-> [Get feedback](../../project/feedback/get-feedback.md)
+> [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
 > about the Microsoft Feedback Client.
