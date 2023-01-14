@@ -1,13 +1,13 @@
 ---
-title: TBD
+title: Support for subpages table in wiki
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/17/2023
-description: TBD.
+description: With this update, we've added support for subpages table in wiki.
 ---
-# TBD 
+# Support for subpages table in wiki
 
-With this update, placeholder.
+You can now add subpages table to your wiki pages so you can see the content and links. In Boards, you can now add colors to swimlane and lock custom fields from being edited. We also continue our investments in security and added a new PAT scope for managing pipeline authorization and approvals and checks. 
 
 Check out the release notes for details.
 

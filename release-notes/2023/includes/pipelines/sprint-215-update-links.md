@@ -5,4 +5,5 @@ ms.date: 1/17/2023
 ms.topic: include
 ---
 
-- [Pipelines REST API Update](#pipelines-rest-api-update)
+- [New PAT Scope for managing pipeline authorization and approvals and checks](#new-pat-scope-for-managing-pipeline-authorization-and-approvals-and-checks)
+- [Upcoming REST API call changes](#upcoming-rest-api-call-changes)
