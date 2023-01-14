@@ -6,9 +6,9 @@ ms.topic: include
 ---
 ### Support for subpages table
 
-You can now add a table of content for subpages to your wiki pages. This table will have links to all sub pages located under the page where the table of subpages is shown.
+You can now add a table of content for subpages to your wiki pages. This table will have links to all subpages located under the page where the table of subpages is shown.
 
-You can add the table of sub pages either by inserting the special tag **[[_TOSP_]]** manually or adding that as shown in the below animated image. Only the first **[[_TOSP_]]** tag is used to create the table of sub pages.
+You can add the table of subpages either by inserting the special tag **[[\_TOSP_]]** manually or from **More options** as shown in the animated image below. Only the first **[[\_TOSP_]]** tag is used to create the table of sub pages.
 
 This feature was prioritized based on the following community suggestion tickets:
 * [Table of contents should consider subpages](https://developercommunity.visualstudio.com/t/table-of-contents-should-consider-subpages/366283) 
