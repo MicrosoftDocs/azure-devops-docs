@@ -30,11 +30,7 @@ Process templates define the objects and processes available to you when you cre
 > [!NOTE]    
 > This article describes process templates used to create projects defined on Azure DevOps Services. If you're looking for **project templates** for software development, see [Creating Visual Studio templates](/visualstudio/ide/creating-project-and-item-templates).  
   
-Default process templates define default configurations as well as the following artifacts that your team uses to plan and track work, collaborate, and share information.
-
-For example, the Agile process template defines the set of artifacts shown in the following image.  
-  
-**Agile process template artifacts**  
+Default process templates define default configurations and work item types used by Azure Boards and Azure Test Plans. For example, the Agile process template defines the set of work item types shown in the following image.   
   
 ![Conceptual image of Agile process template artifacts.](media/agile-process-template-artifacts.png)  
   
@@ -59,7 +55,6 @@ The primary use of process templates is to create a project. For the Hosted XML 
 **On-premises XML process model**    
 -   [Create a project](../../organizations/projects/create-project.md)  
 
-  
 ## Where should I start?  
 
  Before you start customizing a process template, you'll want to become familiar with what you can configure and customize and then plan your changes accordingly.  
@@ -82,19 +77,12 @@ The primary use of process templates is to create a project. For the Hosted XML 
 
 Process templates consist of nine plug-ins. Each plug-in defines a set of tasks that execute and the screens that appear when you create a project. Tasks set permissions, create folders, upload files, activate sites, or set other configurable variables. Plug-ins also specify the dependencies that a task has on the successful completion of other tasks.  
   
-![Conceptual image of Process Template Plugins.](media/tfs_pt_plugins.png)  
-
-
-![Conceptual image of Process Template Plugins.](media/tfs_pt_plugins.png)  
+![Conceptual image of Process Template Plugins.](media/azure-devops-plugins.png)  
   
-> [!IMPORTANT]  
->When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. 
->
->If you want these features to be created for a project on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](/previous-versions/azure/devops/reference/process-templates/overview-process-template-files#client-support).  
-
 ::: moniker range="< azure-devops-2022"
 
-The Reporting plug-in requires SQL Server Reporting Services and SQL Server Analysis Services to be installed for a project collection. To learn more, see []).   
+> [!IMPORTANT]  
+>When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. To support reporting for a project collection, see [Add reports to a team project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).   
 ::: moniker-end
 
 To customize a process template, you customize one or more files associated with a functional area. While customizing any one object is fairly simple, you'll want to make sure that you don't break any inter-dependencies when you customize.  The [ProcessTemplate.xml plug-in file](/previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in) defines which plug-ins to include in the template. This file contains all the task groups that you want to run to create a project. Each task group references a subordinate XML plug-in file where the specific tasks for that plug-in are defined.     

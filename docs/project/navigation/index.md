@@ -143,7 +143,7 @@ Although you can access source code, work items, and builds from both clients, s
       - [Product backlog](../../boards/backlogs/create-your-backlog.md), [Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md), [Sprint backlogs](../../boards/sprints/assign-work-sprint.md), [Taskboards](../../boards/sprints/task-board.md), [Capacity planning](../../boards/sprints/set-capacity.md) 
       - [Kanban boards](../../boards/boards/kanban-basics.md) 
       - [Dashboards](../../report/dashboards/dashboards.md), [Widgets](../../report/dashboards/widget-catalog.md), [Charts](../../report/dashboards/charts.md) 
-      - [Request feedback](../feedback/get-feedback.md)  
+      - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Web-based Test Management](../../test/overview.md)  
       - [Administration pages to administer accounts, team projects, and teams](../../organizations/settings/about-settings.md)   
    :::column-end:::

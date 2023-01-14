@@ -41,7 +41,7 @@
     - name: XML element index
       href: /previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index 
     - name: Process template files
-      href: overview-process-template-files 
+      href: /previous-versions/azure/devops/reference/process-templates/overview-process-template-files 
     - name: Define root tasks
       href: /previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in
     - name: Process template XML elements
