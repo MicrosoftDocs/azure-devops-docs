@@ -31,9 +31,9 @@
   - name: Combine list types
     href: /previous-versions/azure/devops/reference/xml/combine-list-types
   - name: Customize the work item form
-    href: previous-versions/azure/devops/reference/customize-wit-form
+    href: /previous-versions/azure/devops/reference/customize-wit-form
   - name: Specify work item form controls
-    href: previous-versions/azure/devops/reference/xml/specify-work-item-form-controls 
+    href: /previous-versions/azure/devops/reference/xml/specify-work-item-form-controls 
   - name: Define link controls
     href: /previous-versions/azure/devops/reference/xml/define-link-controls 
   - name: Change the maximum attachment size for work items
