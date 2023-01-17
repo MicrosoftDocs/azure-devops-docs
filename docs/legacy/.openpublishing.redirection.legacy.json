@@ -6003,7 +6003,7 @@
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_url": "/previous-versions//azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
       "redirect_document_id": false
     },
     {
@@ -6013,97 +6013,97 @@
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-build-product.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-develop-requirements.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-engineering.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-implement-development-tasks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-iteration-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-manage-change.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-manage-issues-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-manage-risks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-plan-a-project-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-project-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-project-inception.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-project-management.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/track-bugs.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
     },
     {
@@ -11548,7 +11548,7 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
       "redirect_document_id": false
     },
     {
@@ -11563,52 +11563,52 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-build-product.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-develop-requirements.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-engineering.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-implement-development-tasks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-iteration-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-manage-change.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-manage-issues-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-manage-risks.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
       "redirect_document_id": false
     },
     {
@@ -11618,17 +11618,17 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-project-activities.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-project-inception.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
       "redirect_document_id": false
     },
     {
@@ -11648,7 +11648,7 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/track-bugs.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
     },
     {
