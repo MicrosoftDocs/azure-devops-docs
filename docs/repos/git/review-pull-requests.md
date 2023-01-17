@@ -94,7 +94,7 @@ You can manage PRs in Azure DevOps Services by using the [Azure DevOps command l
 
 Pull requests let designated reviewers examine, discuss, and vote on proposed changes before those changes are applied to a target branch of a repo. Keep in mind that if development is carried out with the same files on different branches there may be a conflicting changes. In that case it is required to carefully analyze and resolve those conflicts. To do so, may require manually editing the file to correctly apply the changes from either source, target or both branches. Taking all changes from either source or target (which can be done by a single button click) may not be optimal and can result in loss of some required changes. This can be done using ADO tools, or it will be more convenient to use development tools (such as Visual Studio).
 
-To learn more see [Resolve merge conflicts](/azure/devops/repos/git/merging?view=azure-devops&tabs=visual-studio-2019).
+To learn more see [Resolve merge conflicts](/azure/devops/repos/git/merging?view=azure-devops&tabs=visual-studio-2019&preserve-view=true).
 
 The following steps describe how reviewers of PRs in Azure Repos can navigate through a PR to understand the proposed changes:
 

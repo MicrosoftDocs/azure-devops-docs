@@ -34,8 +34,8 @@ If you'd like to be considered as part of the private preview, please share your
 2. Could you please provide a brief description of the tools/services you use today that need to authenticate against ADO? What authentication mechanism(s) are you using today? 
 3. Do you currently use Managed Identities to authenticate against any other Azure Resources?  
 4. What would you do with Managed Identity(s) if you could use them to authenticate against ADO? What does that workflow look like?
-5. Can you provide a list of what APIs you might be using? See the [ADO REST API documentation](/rest/api/azure/devops/?view=azure-devops-rest-7.1) for help.
-6. What kind of scopes would be useful for you in helping your MI accomplish what it needs to do? See [this list of ADO OAuth scopes](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes), as a jumping off point.
+5. Can you provide a list of what APIs you might be using? See the [ADO REST API documentation](/rest/api/azure/devops/?view=azure-devops-rest-7.1&preserve-view=true) for help.
+6. What kind of scopes would be useful for you in helping your MI accomplish what it needs to do? See [this list of ADO OAuth scopes](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes&preserve-view=true), as a jumping off point.
 7. Is there anything else that might be helpful for us to know about your Managed Identity user scenario?
 8. What is the name of your Azure DevOps organization(s) that you would like this feature enabled for?
 
