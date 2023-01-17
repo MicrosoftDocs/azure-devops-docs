@@ -4,12 +4,13 @@ titleSuffix: Azure Boards
 description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items
 ms.service: azure-devops-boards
+ms.custom: engagement-fy23
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: conceptual  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 01/17/2023
 ---
 
 # Field descriptions for default and work item fields used in process templates
@@ -65,7 +66,7 @@ Values in parenthesis indicate the following criteria:
    - [Activated By](../../queries/query-by-workflow-changes.md#fields)
    - [Activated Date](../../queries/query-by-workflow-changes.md#fields)
    - [Activity](../../queries/query-numeric.md#fields)
-   - [Actual Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Actual Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Application Launch Instructions](guidance-code-review-feedback-field-reference.md#fields)
    - [Application Start Information](guidance-code-review-feedback-field-reference.md#fields) 
@@ -96,8 +97,8 @@ Values in parenthesis indicate the following criteria:
    - [Business Value](../../queries/query-numeric.md#fields)
    
    ### C
-   - [Called By](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
-   - [Called Date](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Called By](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
+   - [Called Date](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Changed By](../../queries/history-and-auditing.md#fields) (System)
    - [Changed Date](../../queries/history-and-auditing.md#fields) (System)
    - [Closed By](../../queries/query-by-workflow-changes.md#fields) (System)
@@ -106,7 +107,7 @@ Values in parenthesis indicate the following criteria:
    - [Closed Status Code](guidance-code-review-feedback-field-reference.md#fields)
    - [Closing Comment](guidance-code-review-feedback-field-reference.md#fields)
    - [Comment Count](../../queries/linking-attachments.md#fields)
-   - [Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Comments](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Committed](../../queries/planning-ranking-priorities.md#fields) (CMMI)
    - [Completed Work](../../queries/query-numeric.md#fields)
    - [Contingency Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
@@ -139,12 +140,12 @@ Values in parenthesis indicate the following criteria:
    ### I
    
    - [ID](../../queries/titles-ids-descriptions.md#fields) (System)
-   - [Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
-   - [Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
+   - [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Architecture](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Development](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Technical Publications](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on Test](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - [Impact on User Experience](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
    - [Integrated in Build](../../queries/build-test-integration.md#fields) (TCM)
    - [Issue](../../queries/build-test-integration.md#fields) (TCM)
    - [Iteration ID](../../queries/query-by-area-iteration-path.md#fields)  (System)
@@ -152,26 +153,26 @@ Values in parenthesis indicate the following criteria:
    
    ### J-L-M-N
    
-   - [Justification](cmmi/guidance-change-request-field-reference-cmmi.md#fields) (CMMI)
+   - [Justification](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
    - [Link Comment](../../queries/linking-attachments.md#fields) (System)
    - [Link Description](../../queries/linking-attachments.md#fields) (System)
    - [Local Data Source](../../queries/build-test-integration.md#fields) (TCM)
-   - [Meeting Type](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
-   - [Minutes](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI) 
+   - [Meeting Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
+   - [Minutes](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI) 
    - [Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
    - [Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Node Name](../../queries/query-by-area-iteration-path.md#fields) (System)
    
    ### O-P-Q
    
-   - [Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Optional Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Original Estimate](../../queries/query-numeric.md#fields)
    - [Parameters](../../queries/build-test-integration.md#fields) (TCM)
    - [Parent<sup>1</sup>](../../queries/linking-attachments.md#parent)
    - [Priority](../../queries/planning-ranking-priorities.md#fields) 
    - [Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI) 
-   - [Purpose](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
+   - [Purpose](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Query Text](../../queries/build-test-integration.md#fields) (TCM)
    
    :::column-end:::
@@ -184,8 +185,8 @@ Values in parenthesis indicate the following criteria:
    - [Remaining Work](../../queries/query-numeric.md#fields) 
    - [Remote Link Count<sup>2</sup>](../../queries/linking-attachments.md#remote-link-count) (System)
    - [Repro Steps](../../queries/titles-ids-descriptions.md#fields)
-   - [Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields) (CMMI)
-   - [Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
+   - [Required Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
+   - [Requirement Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
    - [Requires Review](../../queries/query-numeric.md#fields) (CMMI)
    - [Requires Test](../../queries/query-numeric.md#fields) (CMMI)
    - [Resolution](../../queries/titles-ids-descriptions.md#fields) (Scrum)
@@ -211,7 +212,7 @@ Values in parenthesis indicate the following criteria:
    - [Steps](../../queries/build-test-integration.md#fields) (TCM)
    - [Steps to Reproduce](../../queries/titles-ids-descriptions.md#fields) (TCM)
    - [Story Points](../../queries/query-numeric.md#fields) (Agile)
-   - [Subject Matter Expert](cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
+   - [Subject Matter Expert](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
    - [Symptom](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    - [System Info](../../queries/titles-ids-descriptions.md#fields) (TCM) 
    
@@ -231,7 +232,7 @@ Values in parenthesis indicate the following criteria:
    
    ### U-V-W
    
-   - [User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md#fields) (CMMI)
+   - [User Acceptance Test](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
    - [Value Area](../../queries/planning-ranking-priorities.md#fields)
    - [Watermark](../../queries/history-and-auditing.md#fields) (System)
    - [Work Item Type](../../queries/titles-ids-descriptions.md#fields) (System)  
@@ -272,20 +273,30 @@ The following articles describe fields that are used in common by several WITs, 
 
 ### Fields used to track CMMI work items
 
-- [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md#fields)
+- [Requirements](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields)
 - [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields)
-- [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md#fields)
+- [Change Requests](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields)
 - [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields)
-- [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md#fields)
+- [Review Meetings](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields)
 - [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) 
  
 
 ## Related articles
 
+
+::: moniker range=">= azure-devops-2022"  
 - [About work item fields](../work-item-fields.md)
 - [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    
+  
+::: moniker-end  
 
+::: moniker range="< azure-devops-2022"  
+- [About work item fields](../work-item-fields.md)
+- [About managed queries](../../queries/about-managed-queries.md)
+- [Define a query](../../queries/using-queries.md) 
+- [Choose a process](choose-process.md)  
+- [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)  
 
+- ::: moniker-end     

@@ -622,7 +622,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
 
 <a id="reportable-attributes"> </a>
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2022"
 
 ## Reportable attributes
 
@@ -630,13 +630,13 @@ All reporting attributes are valid only for on-premises deployments whose projec
 
 For a description of each reportable attribute, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
 
-For a list of fields that have reportable attributes defined by default, see [Reportable fields reference](../../reference/xml/reportable-fields-reference.md).
+For a list of fields that have reportable attributes defined by default, see [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) .
 
 ::: moniker-end
 
 <a id="index-fields" />
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2022"
 
 ## Indexed fields
 
