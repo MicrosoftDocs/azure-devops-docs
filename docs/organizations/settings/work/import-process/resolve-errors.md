@@ -1738,7 +1738,7 @@ Review the `FIELDS` and `WORKFLOW` sections for the presence of `"for"` and `"no
 ### TF402593: Field rules aren't supported for field *[fieldName]*.
 
 Most System and Microsoft.VSTS fields do not support rules. 
-See [Rules and rule evaluation](rule-reference.md) 
+See [Rules and rule evaluation](../rule-reference.md) 
 for a complete list of supported field rules.
 
 Edit the definition files for work item types that contain the named field and remove the field rules specified for it. 

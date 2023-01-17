@@ -251,7 +251,7 @@ The following fields are specified in the ProcessConfiguration.xml file:
 
 #### Rule restrictions
 
-In addition to the standard [field-rule restrictions](rule-reference.md), the following restrictions are enforced:
+In addition to the standard [field-rule restrictions](../rule-reference.md), the following restrictions are enforced:
 
 * Field-rule elements can't specify the **for** and **not** attributes.
 * **FIELD** elements can't contain the child-rule elements **CANNOTLOSEVALUE**, **NOTSAMEAS**, **MATCH**, and **PROHIBITEDVALUES**.

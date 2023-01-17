@@ -5428,7 +5428,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/change-workflow-wit.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-workflow-wit",
+      "redirect_url": "/azure/devops/reference/xml/change-workflow-wit",
       "redirect_document_id": false
     },
     {
@@ -5533,12 +5533,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/process-configuration-xml-element.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/process-configuration-xml-element",
+      "redirect_url": "/azure/devops/reference/xml/process-configuration-xml-element",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/provide-help-text-hyperlinks-web-content-form.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form",
+      "redirect_url": "/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form",
       "redirect_document_id": false
     },
     {
@@ -5568,7 +5568,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/support-rollup-of-work-and-other-fields.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-rollup-of-work-and-other-fields",
+      "redirect_url": "/azure/devops/reference/xml/support-rollup-of-work-and-other-fields",
       "redirect_document_id": false
     },
     {
@@ -5613,12 +5613,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/manage-global-lists-for-work-item-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/manage-link-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-link-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-link-types",
       "redirect_document_id": false
     },
     {
@@ -5628,12 +5628,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/rebuild-client-cache.md",
-      "redirect_url": "/azure/devops/reference/witadmin/rebuild-client-cache",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/tcm-customize-manage-test-experience.md",
-      "redirect_url": "/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
       "redirect_document_id": false
     },
     {
@@ -5643,12 +5643,12 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/witadmin-import-export-categories.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-categories",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/witadmin/witadmin-import-export-global-workflow.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
       "redirect_document_id": false
     },
     {
@@ -10108,7 +10108,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/manage-new-form-rollout.md",
-      "redirect_url": "/azure/devops/reference/manage-new-form-rollout",
+      "redirect_url": "/previous-versions/azure/devops/reference/manage-new-form-rollout",
       "redirect_document_id": false
     },
     {
@@ -10143,7 +10143,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/process/new-work-item-experience.md",
-      "redirect_url": "/azure/devops/reference/process/new-work-item-experience",
+      "redirect_url": "/previous-versions/azure/devops/reference/process/new-work-item-experience",
       "redirect_document_id": false
     },
     {
@@ -10353,7 +10353,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/customize-process.md",
-      "redirect_url": "/azure/devops/reference/process-templates/",
+      "redirect_url": "/azure/devops/reference/process-templates/customize-process",
       "redirect_document_id": false
     },
     {
@@ -10418,12 +10418,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/manage-global-lists-for-work-item-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/manage-link-types.md",
-      "redirect_url": "/azure/devops/reference/witadmin/manage-link-types",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-link-types",
       "redirect_document_id": false
     },
     {
@@ -10433,12 +10433,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/rebuild-client-cache.md",
-      "redirect_url": "/azure/devops/reference/witadmin/rebuild-client-cache",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/tcm-customize-manage-test-experience.md",
-      "redirect_url": "/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
       "redirect_document_id": false
     },
     {
@@ -10448,12 +10448,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/witadmin-import-export-categories.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-categories",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/witadmin-import-export-global-workflow.md",
-      "redirect_url": "/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
       "redirect_document_id": false
     },
     {
@@ -10533,7 +10533,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/change-workflow-wit.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-workflow-wit",
+      "redirect_url": "/azure/devops/reference/xml/change-workflow-wit",
       "redirect_document_id": false
     },
     {
@@ -10638,12 +10638,12 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/process-configuration-xml-element.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/process-configuration-xml-element",
+      "redirect_url": "/azure/devops/reference/xml/process-configuration-xml-element",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/provide-help-text-hyperlinks-web-content-form.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form",
+      "redirect_url": "/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form",
       "redirect_document_id": false
     },
     {
@@ -10668,7 +10668,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/support-rollup-of-work-and-other-fields.md",
-      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-rollup-of-work-and-other-fields",
+      "redirect_url": "/azure/devops/reference/xml/support-rollup-of-work-and-other-fields",
       "redirect_document_id": false
     },
     {

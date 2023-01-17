@@ -103,7 +103,7 @@
         - name: Tab
           href: /previous-versions/azure/devops/reference/xml/tab-xml-element-reference
         - name: LinksControlOptions (web/client)
-         href: /previous-versions/azure/devops/reference/xml/linkscontroloptions-elements
+          href: /previous-versions/azure/devops/reference/xml/linkscontroloptions-elements
         - name: Link and Param
           href: link-param-xml-elements-reference.md
     - name: CATEGORIES XML reference
