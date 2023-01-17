@@ -229,7 +229,7 @@ The link types you can add within the development section are Branch, Build, Cha
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control). 
  
 ::: moniker-end
 
