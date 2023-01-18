@@ -100,7 +100,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Test status or progress chart](../../test/track-test-status.md) 
       ::: moniker range=">= azure-devops-2019"
       **Analytics**  
-      - [Analytics views](../powerbi/analytics-default-views.md)  
+      - [Analytics views](../powerbi/what-are-analytics-views.md)  
       - [Analytics widgets](analytics-widgets.md)  
       - [What is Analytics?](../powerbi/what-is-analytics.md)  
       - [Enable or install Analytics](analytics-extension.md) 
