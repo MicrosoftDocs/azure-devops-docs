@@ -301,7 +301,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
 	If the **Add Tree Level** is disabled, you're working from a query list. To convert your list to a tree list, you must first [reconfigure your list](#reconfigure-list) to an input list. 
 
-1. Choose the link type to use when adding work items to a hierarchy, and then choose **Convert**. The most usual choice is **Parent-Child**. You can only select from tree topology link types. To learn more, see [Link type topologies and restrictions](../../../reference/xml/link-type-element-reference.md#topology). 
+1. Choose the link type to use when adding work items to a hierarchy, and then choose **Convert**. The most usual choice is **Parent-Child**. You can only select from tree topology link types. To learn more, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Convert to Tree List dialog](media/excel/convert-tree.png)

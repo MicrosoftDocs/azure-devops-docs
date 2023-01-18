@@ -92,7 +92,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 - [Azure Test Plans](../organizations/billing/try-additional-features-vs.md): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts.  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/perform-exploratory-tests.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
-- [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
+- [Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback).  
 
 ## Browser-based web tools
 

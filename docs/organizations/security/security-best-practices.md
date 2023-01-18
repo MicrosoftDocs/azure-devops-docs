@@ -267,7 +267,7 @@ For more information, see [Application management best practices](/azure/active-
 - Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
 - Check out the following articles for more in-depth information about setting sub-project permissions. 
     - [Set wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
-    - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
+    - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
     - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)
     - [Set Analytics permissions](../../report/powerbi/analytics-security.md)
 

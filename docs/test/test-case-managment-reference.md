@@ -69,7 +69,7 @@ The following table provides links to articles that describe how to exercise the
 :::row-end:::
 :::row:::
    :::column span="2":::
-   [`tcm fieldmapping`](../reference/witadmin/tcm-customize-manage-test-experience.md): Imports or exports an XML file for defining the resolution types, bug type, and failure types.   
+   [`tcm fieldmapping`](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience): Imports or exports an XML file for defining the resolution types, bug type, and failure types.   
    ::: moniker range=">= azure-devops-2020"
    > [!NOTE]  
    > You can only exercise this command on collections that use the Online XML process model. For Azure DevOps Server 2020 and later versions that use the Inherited process model, import of XML files aren't supported. 

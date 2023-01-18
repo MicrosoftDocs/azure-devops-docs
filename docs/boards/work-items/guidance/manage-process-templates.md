@@ -203,7 +203,7 @@ Periodically, updates are made to the process templates to support new features.
 
 - [Create a project](../../../organizations/projects/create-project.md)   
 - [Customize a process template](../../../reference/process-templates/customize-process.md)   
-- [Process template and plug-in files](../../../reference/process-templates/overview-process-template-files.md)  
+- [Process template and plug-in files](/previous-versions/azure/devops/reference/process-templates/overview-process-template-files)  
 - [Import and update a process (Hosted XML)](../../../organizations/settings/work/import-process/import-process.md)     
 - [Customize your work tracking experience](../../../reference/customize-work.md)   
  
