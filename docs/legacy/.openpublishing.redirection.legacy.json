@@ -4238,27 +4238,27 @@
     },
     {
       "source_path_from_root": "/docs/work/connect/get-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/get-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/get-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/connect/give-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/connect/give-permissions-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-permissions-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-permissions-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/change-audio-device-annotation-tool.md",
-      "redirect_url": "/azure/devops/project/feedback/change-audio-device-annotation-tool",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/reference/enable-remote-audio-capture.md",
-      "redirect_url": "/azure/devops/project/feedback/enable-remote-audio-capture",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/enable-remote-audio-capture",
       "redirect_document_id": false
     },
     {
@@ -6003,7 +6003,7 @@
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
-      "redirect_url": "/previous-versions//azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
       "redirect_document_id": false
     },
     {
@@ -6013,7 +6013,7 @@
     },
     {
       "source_path_from_root": "/docs/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
-      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
@@ -8313,7 +8313,7 @@
     },
     {
       "source_path_from_root": "/docs/collaborate/project-vision-status.md",
-      "redirect_url": "/azure/devops//organizations/projects/project-vision-status",
+      "redirect_url": "/azure/devops/organizations/projects/project-vision-status",
       "redirect_document_id": false
     },
     {
@@ -8547,33 +8547,33 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs//project/feedback/about-feedback.md",
+      "source_path_from_root": "/docs/project/feedback/about-feedback.md",
       "redirect_url": "/azure/devops/project/feedback/index",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/change-audio-device-annotation-tool.md",
-      "redirect_url": "/azure/devops/project/feedback/change-audio-device-annotation-tool",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/enable-remote-audio-capture.md",
-      "redirect_url": "/azure/devops/project/feedback/enable-remote-audio-capture",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/enable-remote-audio-capture",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/get-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/get-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/get-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/give-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-feedback",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/feedback/give-permissions-feedback.md",
-      "redirect_url": "/azure/devops/project/feedback/give-permissions-feedback",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-permissions-feedback",
       "redirect_document_id": false
     },
     {
@@ -11613,7 +11613,7 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
       "redirect_document_id": false
     },
     {
@@ -11633,17 +11633,17 @@
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-project-management.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/work/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
-      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
@@ -18095,7 +18095,7 @@
     },
     {
       "source_path_from_root": "/docs/repos/git/overview-2013.md",
-      "redirect_url": "/azure/devops/repos//get-started/what-is-repos",
+      "redirect_url": "/azure/devops/repos/get-started/what-is-repos",
       "redirect_document_id": false
     },
     {
