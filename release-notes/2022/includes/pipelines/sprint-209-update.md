@@ -14,7 +14,7 @@ Previously, the Pipelines UI used to show the last commit message when displayin
 
 This message can be confusing, for example, when your YAML pipeline's code lives in a repository different from the one that holds the code it's building. We heard your feedback from the [Developer Community](https://developercommunity.visualstudio.com/content/idea/1030999/enabledisable-appending-the-to-the-title-of-every.html) asking us for a way to enable/disable appending the latest commit message to the title of every pipeline run. 
 
-With this update, we've added a new YAML property, named [`appendCommitMessageToRunName`](/azure/devops/pipelines/yaml-schema/pipeline?view=azure-pipelines#pipeline-stages&preserve-view=true), that lets you do exactly that. By default, the property is set to `true`. When you set it to `false`, the pipeline run will only display the [`BuildNumber`](/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml).
+With this update, we've added a new YAML property, named [`appendCommitMessageToRunName`](/azure/devops/pipelines/yaml-schema/pipeline?view=azure-pipelines#pipeline-stages&preserve-view=true), that lets you do exactly that. By default, the property is set to `true`. When you set it to `false`, the pipeline run will only display the [`BuildNumber`](/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Example of pipeline run with build number](../../media/209-pipelines-02.png)
