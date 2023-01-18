@@ -5,11 +5,11 @@ description: Learn about sample Power BI queries that generate a tester by outco
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 12/05/2022
+ms.date: 01/19/2023
 ---
 
 # Tester by outcome matrix sample report
