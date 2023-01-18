@@ -12,6 +12,6 @@ hide_comments: true
 
 # Pull Request widget to allow for the selection of many repos
 
-As a user, when I use the [Pull Request widget](/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request), I should be allowed to select many repositories. 
+As a user, when I use the [Pull Request widget](/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request&preserve-view=true), I should be allowed to select many repositories. 
 
 [Community suggestion ticket](https://developercommunity.visualstudio.com/t/allow-multiple-repository-selection-in-pull-reques/982784).

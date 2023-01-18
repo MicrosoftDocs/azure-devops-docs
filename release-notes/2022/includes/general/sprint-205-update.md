@@ -9,7 +9,7 @@ ms.topic: include
 
 Project Collection Administrators can now opt-in to receive notifications when a personal access token (PAT) belonging to a user in their organization is found in a GitHub public repository. 
 
-As a reminder, the Azure DevOps security team, in collaboration with our partners at GitHub, scan for Azure DevOps PATs [checked into public repositories on GitHub](https://devblogs.microsoft.com/devops/mitigating-leaked-personal-access-tokens-pats-found-on-github-public-repositories/) and sends an email notification to the owner of the token, if one is found in a GitHub public repository. This is also logged in the Azure DevOps organization's [Audit Log](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page#review-audit-log).
+As a reminder, the Azure DevOps security team, in collaboration with our partners at GitHub, scan for Azure DevOps PATs [checked into public repositories on GitHub](https://devblogs.microsoft.com/devops/mitigating-leaked-personal-access-tokens-pats-found-on-github-public-repositories/) and sends an email notification to the owner of the token, if one is found in a GitHub public repository. This is also logged in the Azure DevOps organization's [Audit Log](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page#review-audit-log&preserve-view=true).
 
 Project Collection Administrators can subscribe to these notifications by navigating to 
 **User Settings -> Notifications -> New Subscription**
