@@ -29,9 +29,7 @@ items:
 - name: Analytics views  
   items:  
   - name: What are Analytics views?  
-    href: what-are-analytics-views.md  
-  - name: Default Analytics views  
-    href: analytics-default-views.md  
+    href: what-are-analytics-views.md 
   - name: Create an Analytics view  
     href: analytics-views-create.md?  
   - name: Manage Analytics views  
