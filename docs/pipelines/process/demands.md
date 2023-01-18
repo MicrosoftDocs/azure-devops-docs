@@ -31,7 +31,7 @@ Use demands to make sure that the capabilities your pipeline needs are present o
 
 Some tasks won't run unless one or more demands are met by the agent. For example, the [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) task demands that ```msbuild``` and ```visualstudio``` are installed on the agent.
 
-## Manually entered demands
+## Manually entered agent demands
 
 You might need to use self-hosted agents with special capabilities. For example, your pipeline may require **SpecialSoftware** on agents in the `Default` pool. Or, if you have multiple agents with different operating systems in the same pool, you may have a pipeline that requires a Linux agent.
 
