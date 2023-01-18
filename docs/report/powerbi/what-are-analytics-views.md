@@ -22,7 +22,7 @@ An Analytics view provides a simplified way to specify the filter criteria for a
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
-You can use a [default Analytics view](analytics-default-views.md) or [create a custom view](analytics-views-create.md). You create custom views in the web portal for Azure DevOps. Once you've defined a view that supports the data of interest, you can then open the view using [Power BI Data Connector](data-connector-connect.md) to create a report. 
+You can use a default Analytics view or [create a custom view](analytics-views-create.md). You create custom views in the web portal for Azure DevOps. Once you've defined a view that supports the data of interest, you can then open the view using [Power BI Data Connector](data-connector-connect.md) to create a report. 
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
@@ -62,13 +62,9 @@ When you use the Power BI Data Connector, these same default views appear in the
 
 ::: moniker-end
 
+### Options for work item types and historical data
 
-Default Analytics views work well for customers with small datasets. To learn more, see [Default Analytics views](analytics-default-views.md).
-
-
-Each default Analytics view provides a combination of options for work item types and historical data. The following tables describe each set of options. 
-
-### Options for work item types 
+Default Analytics views work well for customers with small datasets. Each default Analytics view provides a combination of options for work item types and historical data. The following tables describe each set of options. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item type option | Description |
@@ -78,7 +74,6 @@ Each default Analytics view provides a combination of options for work item type
 > | Tasks | Load current or historical state of Tasks
 > | Work Items | Load current or historical state of all work items  |
 
-### Options for historical data 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Historical option | Description |
