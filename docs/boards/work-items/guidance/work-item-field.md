@@ -2,9 +2,8 @@
 title: Learn default and system work item field descriptions
 titleSuffix: Azure Boards
 description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
-ms.custom: work-items
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
-ms.custom: engagement-fy23
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: conceptual  
 ms.author: kaelli
@@ -41,7 +40,7 @@ To support other tracking needs, you can [modify or add a custom field](../../..
 ::: moniker range=">= azure-devops-2019"  
 
 > [!NOTE]   
-> The [Analytics Service](../../../report/powerbi/what-is-analytics.md) doesn't support reporting on plain text and HTML fields at this time. 
+> The [Analytics Service](../../../report/powerbi/what-is-analytics.md) doesn't support reporting on plain text and HTML fields. 
 
 ::: moniker-end  
 
@@ -241,8 +240,8 @@ Values in parenthesis indicate the following criteria:
 :::row-end:::
 
 > [!NOTE]  
-> 1. This field is available from Azure DevOps Services and Azure DevOps Server 2020.
-> 2. This fields is available from Azure DevOps Services only.
+> 1. This field is available from Azure DevOps Services and Azure DevOps Server 2020 and later versions.
+> 2. This field is available for Azure DevOps Services only.
 
 By using the system fields or other fields you've added to your project collection, you can enable meaningful cross-project reports and queries. Also, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 
@@ -285,6 +284,7 @@ The following articles describe fields that are used in common by several WITs, 
 
 
 ::: moniker range=">= azure-devops-2022"  
+
 - [About work item fields](../work-item-fields.md)
 - [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
@@ -293,10 +293,12 @@ The following articles describe fields that are used in common by several WITs, 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops-2022"  
+
 - [About work item fields](../work-item-fields.md)
 - [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
 - [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)  
 
-- ::: moniker-end     
+::: moniker-end     
+

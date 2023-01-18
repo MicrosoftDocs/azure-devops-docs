@@ -2,9 +2,8 @@
 title: Quick reference index to Azure Boards settings 
 titleSuffix: Azure Boards
 description: Index to concepts and tasks for configuring and customizing Azure Boards.
-ms.custom: quick-reference-index
+ms.custom: quick-reference-index, engagement-fy23
 ms.service: azure-devops-boards
-ms.custom: engagement-fy23
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE

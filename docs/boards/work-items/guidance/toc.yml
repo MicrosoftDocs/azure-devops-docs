@@ -36,7 +36,7 @@
         href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi
     - name: Manage projects
       items:
-     - name: Project management process
+      - name: Project management process
         displayName: Iterative development, agile software, waterfall, extreme programming, stakeholder
         href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management 
       - name: Project activities
