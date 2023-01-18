@@ -256,8 +256,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 <a id="custom-control">  </a>
 
 ## Add a custom control  
-
-Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+ 
 
 Using [REST APIs for tracking work items](/rest/api/azure/devops/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
@@ -267,7 +266,7 @@ Or, you can add a custom control which is available through the [Visual Studio M
 -   [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control) that supports adding color to pick list items  
 -   [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions) that provides a group extension with a customizable set of rules which support one-click action.    
 
-To add a custom control to the new web form, see [WebLayout and Control elements](xml/weblayout-xml-elements.md). 
+To add a custom control to the new web form, see [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
 
 <a id="change-attribute">  </a>
 
