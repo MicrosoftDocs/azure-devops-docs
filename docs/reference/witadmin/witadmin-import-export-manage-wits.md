@@ -192,7 +192,7 @@ witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollectio
   
 When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. In particular, the [Agile planning tools](../../boards/get-started/what-is-azure-boards.md) will not work until you update the categories definition.  
   
-For more information, see [Import and export categories](witadmin-import-export-categories.md).  
+For more information, see [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
   
 ## Related articles  
 -  [Customize your work tracking experience](../customize-work.md)

@@ -688,6 +688,6 @@ Area paths and iteration paths are also referred to as *Classification Nodes*.
 
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
-- [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
+- [Define the classification plug-in (Process Template)](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in)
 
 ::: moniker-end

@@ -443,7 +443,7 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Screenshot of Add work item from a New work item widget.](media/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json).  
 
 
 [!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
