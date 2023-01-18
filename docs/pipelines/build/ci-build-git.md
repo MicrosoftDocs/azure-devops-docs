@@ -3,7 +3,7 @@ title: Building multiple branches
 description: Build multiple branches using Azure Pipelines or TFS
 ms.topic: how-to
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
-ms.date: 04/02/2019
+ms.date: 01/18/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -179,27 +179,6 @@ Once the work is completed in the topic branch and merged to main, you can delet
 
 > [!IMPORTANT]
 > Azure Pipelines no longer supports per-pipeline retention policies. We recommend using project-level retention rules.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-## Use retention policies to clean up your completed builds
-
-Retention policies allow you to control and automate the cleanup of your various builds.  For shorter-lived branches like topic branches, you may want to retain less history to reduce clutter and storage costs.  If you create CI builds on multiple related branches, it will become less important to keep builds for all of your branches.  
-
-1.  Navigate to the **Pipelines** menu in Azure Pipelines or TFS.
-2.  Locate the build pipeline that you set up for your repo.
-3.  Select **Edit** at the top right of your screen.
-4.  Under the build pipeline name, Select the **Retention** tab.  Select **Add** to add a new retention policy.
-
-    ![Retention menu](media/ci-build-git/retentionpolicy.png)
-
-5.  Type **feature/*** in the **Branch specification** dropdown.  This ensures any feature branches matching the wildcard will use the policy.
-6.  Set **Days to keep** to 1 and **Minimum to keep** to 1.
-7.  Select the **Save & queue** menu and then Select **Save**.  
-
-Policies are evaluated in order, applying the first matching policy to each build. The default rule at the bottom matches all builds.  The retention policy will clean up build resources each day.  You retain at least one build at all times.  You can also choose to keep any particular build for an indefinite amount of time.
 
 ::: moniker-end
 
