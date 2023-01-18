@@ -200,7 +200,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
       - [Reassign work items](../backlogs/bulk-modify-work-items.md#reassign-work-items)
       - [Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)  
-      - [Request feedback ](../../project/feedback/get-feedback.md)  
+      - [Request feedback ](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)  
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  
