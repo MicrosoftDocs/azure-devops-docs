@@ -257,6 +257,15 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
+### Substitution strings
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - The name of your project  
+- `{iterationSK}` - The GUID associated with the Iteration Path of interest, to determine, see [../extend-analytics/wit-analytics.md#iterationsk]( Return the IterationSK for a specific Iteration Path)
+- `{areaSK}` - The GUID associated with the Area Path of interest, to determine, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path)
+ 
 
 ### Query breakdown
 
@@ -339,7 +348,6 @@ The following table describes each part of the query.
    While aggregating, sum the values of test points based on their latest execution outcome of *Passed*, *Failed*, *Blocked*, *NotApplicable*, and *None*. Also, sum the values of test points whose latest outcome is not equal to *None* to get the total `RunCount`.  
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
     `/aggregate(
@@ -370,7 +378,6 @@ The following table describes each part of the query.
    Calculate the percent of completed wor.
    :::column-end:::
 :::row-end:::
- 
 
 
 
