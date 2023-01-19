@@ -24,7 +24,7 @@ This guide will walk you through using Azure Artifacts to publish and consume Py
 There are two primary ways to connect to a feed to publish or consume your Python packages:
 
 1. Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package, which will automatically set up authentication for you.
-1. Manually set up credentials for **pip.ini**/**pip.conf** for pushes, and **.pypirc** for pulls with a personal access token (PAT).
+1. Manually set up credentials for your *pip.ini*/*pip.conf* for pushes, and *.pypirc* for pulls with a personal access token (PAT).
 
 > [!NOTE]
 > **artifacts-keyring** is not supported on newer versions of Ubuntu.
@@ -34,7 +34,7 @@ There are two primary ways to connect to a feed to publish or consume your Pytho
 The **artifacts-keyring** package allows you to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
 
 > [!IMPORTANT]
-> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**.
+> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**. See [Usage requirements](https://github.com/microsoft/artifacts-keyring#requirements) for more details.
 
 1. In an elevated command prompt window, run the following command to install the artifacts-keyring package:
    
@@ -42,20 +42,36 @@ The **artifacts-keyring** package allows you to set up authentication to publish
    pip install artifacts-keyring
    ```
    
-1. Install packages from your feed. 
+1. To install a package from your feed, run the following command:
     
-   ```Command
-   pip install <package-name> --index-url https://pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/simple
-   ```
+    - **Project scoped feed**:
 
-1. Publish packages to your feed.
+       ```Command
+       pip install <PACKAGE_NAME> --index-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple
+       ```
+    
+    - **Organization scoped feed**:
+    
+       ```Command
+       pip install <PACKAGE_NAME> --index-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/simple
+       ```
+
+1. To publish a package to your feed, run the following command:
    
-   ```Command
-   twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/upload
-   ```
+    - **Project scoped feed**:
+    
+       ```Command
+       twine upload --repository-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/upload
+       ```
+
+    - **Organization scoped feed**:
+    
+       ```Command
+       twine upload --repository-url https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/upload
+       ```
 
 > [!NOTE]
-> The artifacts-keyring package is layered on top of our Azure Artifacts Credential Provider. For more advanced configuration options, check out the [artifacts-credprovider](https://github.com/microsoft/artifacts-credprovider) repository.
+> The artifacts-keyring package is layered on top of the Azure Artifacts Credential Provider. For more advanced configuration options, check out the [artifacts-credprovider](https://github.com/microsoft/artifacts-credprovider) repository.
 
 ## Manually configure authentication
 
