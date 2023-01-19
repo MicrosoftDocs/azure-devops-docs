@@ -10,7 +10,7 @@
       items:
         - name: "2023"
           items:
-          - name: January 17
+          - name: January 23
             href: 2023/sprint-215-update.md
           - name: January 12
             href: 2023/sprint-214-update.md
@@ -206,7 +206,7 @@
         items:
         - name: "2023"
           items:
-          - name: January 17
+          - name: January 23
             href: 2023/boards/sprint-215-update.md
           - name: January 12
             href: 2023/boards/sprint-214-update.md
@@ -367,7 +367,7 @@
         items:
         - name: "2023"
           items:
-          - name: January 17
+          - name: January 23
             href: 2023/pipelines/sprint-215-update.md
           - name: January 12
             href: 2023/pipelines/sprint-214-update.md
@@ -716,7 +716,7 @@
         items:
         - name: "2023"
           items:
-          - name: January 17
+          - name: January 23
             href: 2023/wiki/sprint-215-update.md
           expanded: false
         - name: "2022"

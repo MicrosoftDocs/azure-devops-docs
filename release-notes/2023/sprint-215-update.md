@@ -2,7 +2,7 @@
 title: Support for subpages table in wiki
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/17/2023
+ms.date: 1/23/2023
 description: With this update, we've added support for subpages table in wiki.
 ---
 # Support for subpages table in wiki
