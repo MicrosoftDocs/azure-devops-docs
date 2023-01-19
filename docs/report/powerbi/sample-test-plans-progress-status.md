@@ -179,12 +179,6 @@ You can rename column fields. For example, you can rename the column `NotApplica
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
-
-
-
 ## Create the Donut chart report
 
 1. In Power BI, under **Visualizations**, choose the **Donut** report and select the fields as shown in the following image. 
