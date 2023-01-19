@@ -54,11 +54,11 @@ To generate the report, you must add three Power BI queries to Power BI desktop 
 > [!NOTE]   
 > The Power BI query snippets provided in the following sections include the requisite data transforms to expand columns and change data type.
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)] 
-
 ### Query area and iteration paths
 
 In order to scope your report to a particular Area and Iteration path, you can filter the query using `AreaSK` and `IterationSK`. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)] 
 
 ### Query for percentage of hours completion for requirements
 
@@ -129,6 +129,8 @@ $filter=(
 ***
 
 ### Query for test execution status of requirements
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -256,7 +258,120 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-[!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
+### Query breakdown
+
+The following table describes each part of the query.
+
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       `$filter=(
+        IterationSK eq {iterationSK}
+        and AreaSK eq {areaSK}`
+        and WorkItemType eq 'Feature'
+        )`
+   :::column-end:::
+   :::column span="1":::
+   Returns data for only Features under the specified Iteration and Area.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `filter(
+        (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK} 
+        and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
+        and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
+        and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)))`
+   :::column-end:::
+   :::column span="1":::
+   Return data for only selected backlog requirement items under the specified Iteration and Area.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `&$expand=Descendants( 
+           $apply=filter( CompletedWork ne null or RemainingWork ne null )` 
+   :::column-end:::
+   :::column span="1":::
+   Expand the child items of Features and return *Completed Work* and *Remaining Work* data for the work items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `&$expand=Descendants(
+           $apply=filter(
+               WorkItemType eq 'Bug'
+           )
+           /groupby(
+               (State),
+               aggregate($count as Count) )` 
+   :::column-end:::
+   :::column span="1":::
+   Expand the child items of Features and filter for bug, group the return data by State and sun the total count of child items.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate data across the filtered test points with having count as `TotalCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1"::: 
+       `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as PassedCount, 
+	    cast(LastResultOutcome eq 'Failed', Edm.Int32) with sum as FailedCount, 
+        cast(LastResultOutcome eq 'Blocked', Edm.Int32) with sum as BlockedCount,
+        cast(LastResultOutcome eq 'NotApplicable', Edm.Int32) with sum as NotApplicableCount,
+	    cast(LastResultOutcome eq 'None', Edm.Int32) with sum as NotRunCount, 
+	    cast(LastResultOutcome ne 'None', Edm.Int32) with sum as RunCount)`
+   :::column-end:::
+   :::column span="1":::
+   While aggregating, sum the values of test points based on their latest execution outcome of *Passed*, *Failed*, *Blocked*, *NotApplicable*, and *None*. Also, sum the values of test points whose latest outcome is not equal to *None* to get the total `RunCount`.  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+    `/aggregate(
+        iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
+        iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate *Completed Work* and *Remaining Work* data across the filtered work items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `)/compute(
+            (SumCompletedWork add SumRemainingWork) as TotalWork, 
+            SumCompletedWork as SumCompleted`
+   :::column-end:::
+   :::column span="1":::
+   Compute the total rollup of *Completed Work* and *Remaining Work*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `)/compute(
+            iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
+       )`
+   :::column-end:::
+   :::column span="1":::
+   Calculate the percent of completed wor.
+   :::column-end:::
+:::row-end:::
+ 
+
 
 
 ## Create the Table report

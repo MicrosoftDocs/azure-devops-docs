@@ -132,6 +132,9 @@ $filter=(
 
 ### Query for test execution status of requirements
 
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
@@ -162,6 +165,7 @@ let
 in
     #"Changed Type"
 ```
+ 
 
 #### [OData query](#tab/odata/)
 
@@ -258,9 +262,148 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
+let
+    Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
+    $filter=(
+        IterationSK eq {iterationSK}
+        and AreaSK eq {areaSK}
+        and Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
+        and Processes/all(p:p/IsBugType eq false)
+    )
+    &$expand=Descendants(
+        $apply=filter(
+            CompletedWork ne null 
+            or RemainingWork ne null
+        )
+        /aggregate(
+            iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
+            iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork
+        )/compute(
+            (SumCompletedWork add SumRemainingWork) as TotalWork, 
+            SumCompletedWork as SumCompleted
+        )/compute(
+            iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
+        )
+)&$select=WorkItemId, Title", null, [Implementation="2.0"]),
+    #"Expanded Descendants" = Table.ExpandTableColumn(Source, "Descendants", {"SumCompletedWork", "SumRemainingWork", "TotalWork", "SumCompleted", "PercCompletedWork"}, {"Descendants.SumCompletedWork", "Descendants.SumRemainingWork", "Descendants.TotalWork", "Descendants.SumCompleted", "Descendants.PercCompletedWork"}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Expanded Descendants",{{"Descendants.SumCompletedWork", type number}, {"Descendants.SumRemainingWork", type number}, {"Descendants.TotalWork", type number}, {"Descendants.SumCompleted", type number}, {"Descendants.PercCompletedWork", type number}})
+in
+    #"Changed Type"
 
-[!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
+### Query breakdown
+
+The following table describes each part of the query.
+
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       `$filter=(
+        IterationSK eq {iterationSK}
+        and AreaSK eq {areaSK}`
+        )`
+   :::column-end:::
+   :::column span="1":::
+   Returns data for only selected Iteration, Area, and backlog work items.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Processes/any(p:p/BacklogType eq 'RequirementBacklog')`
+   :::column-end:::
+   :::column span="1":::
+   Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Processes/all(p:p/IsBugType eq false)`
+   :::column-end:::
+   :::column span="1":::
+   Omit the bug type work items while getting requirements. In Basic process template, Issue work items are also of bug type, so for Basic process remove this clause from your query.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `filter(
+        (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK} 
+        and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
+        and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
+        and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)
+        )
+       )`
+   :::column-end:::
+   :::column span="1":::
+   Return data for only selected requirements based on Iteration and Area.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate data across the filtered test points with having count as `TotalCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed`
+   :::column-end:::
+   :::column span="1":::
+   While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+       `&$expand=Descendants(
+        $apply=filter(
+            CompletedWork ne null 
+            or RemainingWork ne null
+        )`
+   :::column-end:::
+   :::column span="1":::
+   Returns *Completed Work* and *Remaining Work* data for child work items of filtered parent items.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    `/aggregate(
+        iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
+        iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate *Completed Work* and *Remaining Work* data across the filtered work items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `)/compute(
+            (SumCompletedWork add SumRemainingWork) as TotalWork, 
+            SumCompletedWork as SumCompleted`
+   :::column-end:::
+   :::column span="1":::
+   Compute the total rollup of *Completed Work* and *Remaining Work*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `)/compute(
+            iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
+       )`
+   :::column-end:::
+   :::column span="1":::
+   Calculate the percent of completed wor.
+   :::column-end:::
+:::row-end:::
  
+
 
 ## Create the Table report
 
