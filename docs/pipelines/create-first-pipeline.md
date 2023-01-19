@@ -22,6 +22,14 @@ This is a step-by-step guide to using Azure Pipelines to build a sample applicat
 
 [!INCLUDE [include](includes/prerequisites.md)]
 
+## Navigating pipelines
+
+You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
+
+![View pipelines](get-started/media/pipelines-overview.png)
+
+You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
+
 ## Create your first pipeline
 
 #### [Java](#tab/java)
