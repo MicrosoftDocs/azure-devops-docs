@@ -5,11 +5,11 @@ description: Learn about Power BI queries to generate a report that tracks work 
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 09/17/2021
+ms.date: 01/19/2023
 ---
 
 # Requirements tracking sample report
@@ -18,24 +18,41 @@ ms.date: 09/17/2021
 
 You can track the quality of work items that belong to the Requirements category with the requirements tracking report. The Requirements category includes work items such as User Stories (Agile), Product Backlog Items (Scrum), Issues (Basic), and Requirements (CMMI). To learn more about work item categories, see [Track user stories, issues, bugs, and other work items](../../boards/work-items/about-work-items.md#wit).
 
-[!INCLUDE [temp](includes/preview-note.md)]
+The following image shows an example of a requirements tracking report. 
 
-An example is shown in the following image. 
+:::image type="content" source="media/odatapowerbi-storiesoverview.png" alt-text="Screenshot of Power BI Requirements tracking report.":::
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Stories Overview Report.](media/odatapowerbi-storiesoverview.png) 
- 
+This report displays the following information for each requirement that it lists:
+
+- **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
+- **Passed tests**: The number of test cases run that have passed based on the most recent test run.  
+- **Failed tests**: The number of test cases run that have failed based on the most recent test run. 
+- **Run tests**:  The number of test runs that have executed.  
+- **Active bugs**: The number of linked bugs in an Active state. 
+- **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
+
 
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
-[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]  
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
+[!INCLUDE [temp](includes/preview-note.md)]
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
 
-
 ## Sample queries
+
+To generate the report, you must add three Power BI queries to Power BI desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
+ 
+> [!NOTE]   
+> The Power BI query snippets provided in the following sections include the requisite data transforms to expand columns and change data type.
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]   
 
 ### Query area and iteration paths
 
@@ -243,14 +260,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 
 [!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
+ 
 
-
-## Power BI transforms
-
-The transforms applied to Power BI queries are already added in query snippets.
-
-
-## Create the report
+## Create the Table report
 
 Power BI shows you the fields you can report on. 
 
@@ -259,8 +271,8 @@ Power BI shows you the fields you can report on.
 
 To create the report, perform the following steps:
 
-1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by WorkItemId column. 
-1. Create a Power BI visualization **Table**.
+1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by `WorkItemId` column. 
+1. Under **Visualizations**, choose **Table**.
 1. Add the columns you are interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
