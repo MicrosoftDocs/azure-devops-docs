@@ -16,20 +16,17 @@ ms.date: 01/19/2023
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
+When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. The report generated is similar to following image.
+
+:::image type="content" source="media/odatapowerbi-testerbyoutcome.png" alt-text="Screenshot of Power BI Tester by Outcome matrix report.":::
+
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-The report generated is similar to following image.
- 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Tester by Outcome matrix report.](media/odatapowerbi-testerbyoutcome.png)
-
-[!INCLUDE [temp](includes/sample-required-reading.md)]
-
-
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
+[!INCLUDE [temp](includes/sample-required-reading.md)]
+ 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md). 
@@ -40,6 +37,10 @@ For the report to generate useful data, the team must carry out the following ac
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
 
 ## Sample queries
+
+You can use the following queries of the `TestPoints` entity set to create different but similar test plan progress reports.
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -82,7 +83,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 The following table describes each part of the query.
 
-
 :::row:::
    :::column span="1":::
    **Query part**
@@ -115,15 +115,11 @@ The following table describes each part of the query.
    Aggregate data across the filtered test points with having count as `Count`.
    :::column-end:::
 :::row-end:::
+ 
 
+[!INCLUDE [temp](includes/rename-query.md)]
 
-[!INCLUDE [temp](includes/query-filters-test.md)]
-
-## Power BI transforms
-
-In Power BI, do the following steps.  
-
-When finished, you may choose to rename columns. 
+## Expand the Tester column
 
 1. Expand `Tester`
     - Choose the expand button.
@@ -141,28 +137,24 @@ When finished, you may choose to rename columns.
         > [!div class="mx-imgBorder"] 
 	    > ![Power BI expanded tester](media/powerbi-expanded-tester.png)
 
-1. Right-click a column header and select **Rename...**
+1. (Optional) Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
+
+
+## Change the data type of count columns  
 
 1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
+ 
 
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
+[!INCLUDE [temp](includes/close-apply.md)]
 
 
-## Create the report
+## Create the Matrix report
 
 Power BI shows you the fields you can report on. 
 
@@ -181,9 +173,9 @@ To create the report, do the following steps:
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample tester by Outcome matrix report.](media/odatapowerbi-testerbyoutcome.png)
- 
+
+:::image type="content" source="media/odatapowerbi-testerbyoutcome.png" alt-text="Screenshot of Power BI Sample Tester by Outcome matrix report.":::
+
 
 ## Related articles
 
