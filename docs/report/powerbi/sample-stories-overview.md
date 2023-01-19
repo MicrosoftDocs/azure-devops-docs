@@ -261,34 +261,17 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ```
 
 ***
+ 
 
-let
-    Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
-    $filter=(
-        IterationSK eq {iterationSK}
-        and AreaSK eq {areaSK}
-        and Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-        and Processes/all(p:p/IsBugType eq false)
-    )
-    &$expand=Descendants(
-        $apply=filter(
-            CompletedWork ne null 
-            or RemainingWork ne null
-        )
-        /aggregate(
-            iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
-            iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork
-        )/compute(
-            (SumCompletedWork add SumRemainingWork) as TotalWork, 
-            SumCompletedWork as SumCompleted
-        )/compute(
-            iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
-        )
-)&$select=WorkItemId, Title", null, [Implementation="2.0"]),
-    #"Expanded Descendants" = Table.ExpandTableColumn(Source, "Descendants", {"SumCompletedWork", "SumRemainingWork", "TotalWork", "SumCompleted", "PercCompletedWork"}, {"Descendants.SumCompletedWork", "Descendants.SumRemainingWork", "Descendants.TotalWork", "Descendants.SumCompleted", "Descendants.PercCompletedWork"}),
-    #"Changed Type" = Table.TransformColumnTypes(#"Expanded Descendants",{{"Descendants.SumCompletedWork", type number}, {"Descendants.SumRemainingWork", type number}, {"Descendants.TotalWork", type number}, {"Descendants.SumCompleted", type number}, {"Descendants.PercCompletedWork", type number}})
-in
-    #"Changed Type"
+### Substitution strings
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - The name of your project  
+- `{iterationSK}` - The GUID associated with the Iteration Path of interest, to determine, see [../extend-analytics/wit-analytics.md#iterationsk]( Return the IterationSK for a specific Iteration Path)
+- `{areaSK}` - The GUID associated with the Area Path of interest, to determine, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path)
+- 
 
 ### Query breakdown
 
