@@ -122,7 +122,6 @@ $apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')
 
 The following table describes each part of the query.
 
-
 :::row:::
    :::column span="1":::
    **Query part**
