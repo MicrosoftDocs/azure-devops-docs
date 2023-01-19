@@ -5,39 +5,60 @@ description: Learn how to use sample Power BI and OData queries to generate a on
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/12/2021
+ms.date: 01/19/2023
 ---
 
 # Requirements tracking rollup sample report
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-This report builds on the [Requirements tracking report](sample-stories-overview.md) and shows how to aggregate metrics for a one-level roll-up. For example, if you're tracking requirements with User Stories, you can aggregate data for Features&mdash;the parent for User Stories&mdash;with the queries provided in this article.
-
-[!INCLUDE [temp](includes/preview-note.md)]
+The Requirements tracking rollup report builds on the [Requirements tracking report](sample-stories-overview.md) and shows how to aggregate metrics for a one-level roll-up. For example, if you're tracking requirements with User Stories, you can aggregate data for Features using the queries provided in this article.
 
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
 
+This report displays the following information for each requirement that it lists:
+
+- **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
+- **Passed tests**: The number of test cases run that have passed based on the most recent test run.  
+- **Failed tests**: The number of test cases run that have failed based on the most recent test run. 
+- **Run tests**:  The number of test runs that have executed.  
+- **Active bugs**: The number of linked bugs in an Active state. 
+- **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
+
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
-[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
 
-[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
+
+[!INCLUDE [temp](includes/preview-note.md)]
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
+
+[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
 
 
 ## Sample queries
 
+To generate the report, you must add three Power BI queries to Power BI desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
+ 
+> [!NOTE]   
+> The Power BI query snippets provided in the following sections include the requisite data transforms to expand columns and change data type.
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)] 
+
 ### Query area and iteration paths
 
-In order to scope your report to a particular Area and Iteration path, you can filter the query using AreaSK and IterationSK. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
+In order to scope your report to a particular Area and Iteration path, you can filter the query using `AreaSK` and `IterationSK`. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
 
 ### Query for percentage of hours completion for requirements
 
@@ -169,13 +190,10 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 ```
 
 ***
-
-  
+ 
 
 [!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
-
-
-
+ 
 
 ### Query for status of bugs linked to the requirements
 
@@ -241,22 +259,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
 
 
-## Power BI transforms
+## Create the Table report
 
-The transforms applied to Power BI queries are already added in query snippets.
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The following example assumes that no one renamed any columns. 
-
-To create the report, perform the following steps:
-
-1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by WorkItemId column. 
-1. Create a Power BI visualization **Table**.
+1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by `WorkItemId` column. 
+1. Under **Visualizations**, choose **Table**.
 1. Add the columns you're interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
@@ -265,7 +271,7 @@ To create the report, perform the following steps:
 Here, **Authentication scenarios** is a parent feature of two User Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
+> ![Screenshot of Power BI Sample Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
 
 ## Related articles
 

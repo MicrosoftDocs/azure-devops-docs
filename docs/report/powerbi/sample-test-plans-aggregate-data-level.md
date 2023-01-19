@@ -18,7 +18,6 @@ ms.date: 01/19/2023
 
 You can report on the execution state of one or more Test Suites. The report you create using the information in this article is similar to the following image.  
 
-
 :::image type="content" source="media/odatapowerbi-aggregatedatlevel.png" alt-text="Screenshot of Power BI Test Suites Aggregated View - Report.":::
 
 As shown in the following image, test suites can be arranged within a hierarchical organization. As shown, there are three test suites with the same names under two test suites labeled *Australia* and *Asia*. This articles outlines how to aggregate data for a specific test suite level. 
