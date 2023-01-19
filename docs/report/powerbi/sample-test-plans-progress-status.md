@@ -33,7 +33,7 @@ This report displays two donut charts that summarize Test Plans executed and not
 	- **NotApplicable**: The sum and percentage of test cases that didn't run.  
  
 
-### Questions the report answers
+## Questions the report answers
 
 The overall execution state report helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 
