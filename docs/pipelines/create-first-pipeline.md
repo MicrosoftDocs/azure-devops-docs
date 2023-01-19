@@ -22,14 +22,6 @@ This is a step-by-step guide to using Azure Pipelines to build a sample applicat
 
 [!INCLUDE [include](includes/prerequisites.md)]
 
-## Navigating pipelines
-
-You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
-
-![View pipelines](get-started/media/pipelines-overview.png)
-
-You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
-
 ## Create your first pipeline
 
 #### [Java](#tab/java)
@@ -251,6 +243,14 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 1. Azure DevOps will automatically start a pipeline run. Wait for the run to finish.
 
 --- 
+
+## View and manage your pipelines
+
+You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
+
+:::image type="content" source="get-started/media/pipelines-overview.png" alt-text="Screenshot of pipelines landing page.":::
+
+You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
