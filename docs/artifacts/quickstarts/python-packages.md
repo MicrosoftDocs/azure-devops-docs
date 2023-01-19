@@ -3,7 +3,7 @@ title: Get started with Python packages in Azure Artifacts
 description: Quickly start hosting python packages with Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.date: 02/26/2021
+ms.date: 01/19/2023
 monikerRange: '<= azure-devops'
 ms.custom: devx-track-python, py-fresh-zinc
 "recommendations": "true"
@@ -91,10 +91,19 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
 
 1. Add a *pip.ini* (Windows) or a *pip.conf* (Mac/Linux) file to your virtualenv. Make sure you don't check your personal access token into a public repository. 
 
-    ```
-    [global]
-    extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
-    ```
+    - **Project scoped feed**:
+
+        ```
+        [global]
+        extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
+        ```
+
+    - **Organization scoped feed**:
+
+        ```
+        [global]
+        extra-index-url=https://<FEED_NAME>:<YOUR_PERSONAL_ACCESS_TOKEN>@pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/pypi/simple/
+        ```
 
 1. Run the following command in your project directory to install your package.
 
@@ -102,7 +111,7 @@ The [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package 
     pip install <PACKAGE_NAME>
     ```
 
-When you connect to Azure DevOps for the first time, you will be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
+When you connect to Azure DevOps for the first time, you'll be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
 > [!NOTE]
 > If you want to publish or consume your packages using Azure Pipelines, use the [Python Pip Authenticate](/azure/devops/pipelines/tasks/reference/pip-authenticate-v1) task to authenticate and install packages, or the [Python Twine Upload Authenticate](/azure/devops/pipelines/tasks/reference/twine-authenticate-v1) task to publish your packages.
@@ -110,6 +119,8 @@ When you connect to Azure DevOps for the first time, you will be prompted for cr
 ## Related articles
 
 - [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md).
+
+- [Publish and consume Python packages from the command line](python-cli.md)
 
 - [Build Python apps](../../pipelines/ecosystems/python.md).
 
