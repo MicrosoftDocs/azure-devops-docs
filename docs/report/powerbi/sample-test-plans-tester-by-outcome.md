@@ -143,13 +143,9 @@ The following table describes each part of the query.
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
 
-## Change the data type of count columns  
+## Change the data type of select columns  
 
-1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
-
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Power BI transform data, change column type.](media/powerbi-change-column-type.png)
- 
+From the Power Query Editor, select the columns containing a number, such as *Blocked*, *Failed*, and *NotApplicable*; select **Data Type** from the **Transform** menu; and then choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
