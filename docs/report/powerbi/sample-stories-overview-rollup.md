@@ -26,9 +26,9 @@ An example is shown in the following image.
 This report displays the following information for each requirement that it lists:
 
 - **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
-- **Passed tests**: The number of test cases run that have passed based on the most recent test run.  
-- **Failed tests**: The number of test cases run that have failed based on the most recent test run. 
-- **Run tests**:  The number of test runs that have executed.  
+- **Passed tests**: The number of test cases run that's passed based on the most recent test run.  
+- **Failed tests**: The number of test cases run that's failed based on the most recent test run. 
+- **Run tests**:  The number of test runs that's executed.  
 - **Active bugs**: The number of linked bugs in an Active state. 
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
@@ -263,8 +263,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 - `{organization}` - Your organization name 
 - `{project}` - The name of your project  
-- `{iterationSK}` - The GUID associated with the Iteration Path of interest, to determine, see [../extend-analytics/wit-analytics.md#iterationsk]( Return the IterationSK for a specific Iteration Path)
-- `{areaSK}` - The GUID associated with the Area Path of interest, to determine, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path)
+- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#iterationsk](Return the IterationSK for a specific Iteration Path)
+- `{areaSK}` - The GUID associated with the Area Path of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path).
  
 
 ### Query breakdown
