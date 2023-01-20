@@ -43,29 +43,7 @@ Select **Analytics** to view pipeline metrics such as pass rate and run duration
 
 ![Pipeline analytics](media/pipeline-analytics.png)
 
-## View pipeline run details
 
-From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
-
-![Pipeline run summary](media/pipeline-run-summary.png)
-
-From the summary pane you can download artifacts, and navigate to linked commits, test results, and work items.
-
-### Cancel and re-run a pipeline
-
-If the pipeline is running, you can cancel it by choosing **Cancel**. If the run has completed, you can re-run the pipeline by choosing **Run new**.
-
-![Cancel pipeline run](media/cancel-pipeline-run.png)
-
-<a name="download-logs"></a>
-### Pipeline run more actions menu
-
-From the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
-
-![Pipeline run summary more actions menu](media/pipeline-run-summary-context-menu.png)
-
-> [!NOTE]
-> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
 
 
 

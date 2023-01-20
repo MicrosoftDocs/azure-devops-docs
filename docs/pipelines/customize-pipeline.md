@@ -227,7 +227,7 @@ Pipeline triggers cause a pipeline to run. You can use `trigger:` to cause a pip
 
 ## Pipeline settings
 
-You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu on the pipeline details page.
+You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu on the [pipeline details](create-first-pipeline.md#view-pipeline-details) page.
 
 :::image type="content" source="get-started/media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
 
