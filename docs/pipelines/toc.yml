@@ -14,8 +14,6 @@
     - name: Customize your pipeline
       href: customize-pipeline.md
       displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
-    - name: Multi-stage pipelines user experience
-      href: get-started/multi-stage-pipelines-experience.md
 - name: Pipeline basics
   items:
     - name: Key concepts
