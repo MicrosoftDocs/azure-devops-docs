@@ -190,7 +190,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
     Key vault: Select your key vault
     Secret filter: A comma separated list of secret names or leave * to download all secrets from the selected key vault.
     
-    :::image type="content" border="false" source="key-vault-classic.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
+    :::image type="content" border="false" source="media/key-vault-classic.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
 
 1. Select the **Copy files** task and fill out the required fields.
 
