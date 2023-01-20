@@ -17,13 +17,7 @@ The multi-stage pipelines experience brings improvements and ease of use to the 
 
 
 
-## View pipeline details
 
-The details page for a pipeline allows you to view and manage that pipeline.
-
-![Pipeline details](media/pipeline-overview.png)
-
-Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](yaml-pipeline-editor.md).
 
 ### Pipeline settings
 

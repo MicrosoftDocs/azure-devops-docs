@@ -272,6 +272,14 @@ Select a pipeline run to view information about that run.
 
 Once you're done, use the breadcrumb navigation bar to navigate to the pipeline's details page.
 
+### View pipeline details
+
+The details page for a pipeline allows you to view and manage that pipeline.
+
+![Pipeline details](get-started/media/pipeline-overview.png)
+
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md).
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
