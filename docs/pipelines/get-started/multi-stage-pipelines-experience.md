@@ -21,23 +21,15 @@ The multi-stage pipelines experience brings improvements and ease of use to the 
 
 
 
-### Runs
 
-Select **Runs** to view the runs for that pipeline. You can optionally filter the displayed runs.
 
-![Pipeline runs](media/pipeline-runs.png)
-
-You can choose to **Retain** or **Delete** a run from the context menu. For more information on run retention, see [Build and release retention policies](../policies/retention.md).
-
-![Pipeline run context menu](media/pipeline-run-context-menu.png)
-
-### Branches
+### Branches123
 
 Select **Branches** to view the history or run for that branch. Hover over the **History** to view a summary for each run, and select a run to navigate to the details page for that run.
 
 ![Pipeline branches](media/pipeline-branches.png)
 
-### Analytics
+### Analytics123
 
 Select **Analytics** to view pipeline metrics such as pass rate and run duration. Choose **View full report** for more information on each metric.
 
