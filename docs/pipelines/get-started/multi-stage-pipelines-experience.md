@@ -23,38 +23,8 @@ The multi-stage pipelines experience brings improvements and ease of use to the 
 
 
 
-### Branches123
-
-Select **Branches** to view the history or run for that branch. Hover over the **History** to view a summary for each run, and select a run to navigate to the details page for that run.
-
-![Pipeline branches](media/pipeline-branches.png)
-
-### Analytics123
-
-Select **Analytics** to view pipeline metrics such as pass rate and run duration. Choose **View full report** for more information on each metric.
-
-![Pipeline analytics](media/pipeline-analytics.png)
 
 
-
-
-
-
-
-
-:::moniker range="azure-devops"
-
-## Task insights for failed pipeline runs
-
-Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
-
-:::image type="content" source="media/task-insights.png" alt-text="This task has failed pop-up.":::
-
-To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
-
-:::image type="content" source="media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
-
-:::moniker-end
 
 ## Next steps
 
