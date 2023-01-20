@@ -20,7 +20,7 @@ You can report on the execution state of one or more Test Suites. The report you
 
 :::image type="content" source="media/odatapowerbi-aggregatedatlevel.png" alt-text="Screenshot of Power BI Test Suites Aggregated View - Report.":::
 
-As shown in the following image, test suites can be arranged within a hierarchical organization. As shown, there are three test suites with the same names under two test suites labeled *Australia* and *Asia*. This articles outlines how to aggregate data for a specific test suite level. 
+As shown in the following image, test suites can be arranged within a hierarchical organization. As shown, there are three test suites with the same names under two test suites labeled *Australia* and *Asia*. This article outlines how to aggregate data for a specific test suite level. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI Test Plan structure for aggregated view.](media/odatapowerbi-aggregatedatlevel-plan.png)
@@ -171,7 +171,7 @@ The following table describes each part of the query.
 
 ## Expand columns in Power Query Editor
 
-Prior to creating the report, you need to expand the `TestSuite` column to flatten the records into tspecific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns).
+Prior to creating the report, you need to expand the `TestSuite` column to flatten the records into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns).
 
 In Power BI, do the following steps.  
 
