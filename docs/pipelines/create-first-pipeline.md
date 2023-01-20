@@ -282,7 +282,15 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](get-started/yaml-pipeline-editor.md).
 
-### Jobs and stages
+### View pipeline run details
+
+From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
+
+![Pipeline run summary](get-started/media/pipeline-run-summary.png)
+
+From the summary pane you can view job and stage details, download artifacts, and navigate to linked commits, test results, and work items.
+
+#### Jobs and stages
 
 The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example, the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
 
@@ -295,14 +303,6 @@ Choose a job to see the steps for that job.
 From the steps view, you can review the status and details of each step. From the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
 
 ![Pipeline tasks more actions menu](get-started/media/pipeline-steps-context-menu.png)
-
-### View pipeline run details
-
-From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
-
-![Pipeline run summary](get-started/media/pipeline-run-summary.png)
-
-From the summary pane you can download artifacts, and navigate to linked commits, test results, and work items.
 
 #### Cancel and re-run a pipeline
 
