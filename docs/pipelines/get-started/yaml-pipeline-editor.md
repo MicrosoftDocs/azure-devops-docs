@@ -47,7 +47,7 @@ To access the YAML pipeline editor, do the following steps.
 To access the YAML pipeline editor, do the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select your project, choose **Pipelines**, and then select the pipeline you want to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [Pipelines landing page](../create-first-pipeline.md#pipelines-landing-page).
+2. Select your project, choose **Pipelines**, and then select the pipeline you want to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [view and manage your pipelines](../create-first-pipeline.md#view-and-manage-your-pipelines).
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-landing-page.png" alt-text="Azure Pipelines landing page.":::
 
