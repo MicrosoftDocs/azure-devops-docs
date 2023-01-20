@@ -14,4 +14,4 @@ Make sure you have the following items:
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
   If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.
 
-* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshooting.md#check-for-available-parallel-jobs).
