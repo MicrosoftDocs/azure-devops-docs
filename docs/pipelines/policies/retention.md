@@ -489,7 +489,7 @@ Minimum releases to keep are defined at stage level. It denotes that Azure DevOp
 
 ### How is retention period decided when release is deployed to multiple stages having different retention period?
 
-Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. Minimum releases to keep is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
+Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. **Minimum releases to keep** is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
 
 ### I deleted a stage for which I have some old releases. What retention will be considered for this case?
 
