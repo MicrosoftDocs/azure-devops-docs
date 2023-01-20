@@ -242,7 +242,11 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 1. Azure DevOps will automatically start a pipeline run. Wait for the run to finish.
 
---- 
+---
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
 
 ## View and manage your pipelines
 
@@ -251,6 +255,10 @@ You can view and manage your pipelines by choosing **Pipelines** from the left-h
 :::image type="content" source="get-started/media/pipelines-overview.png" alt-text="Screenshot of pipelines landing page.":::
 
 You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
