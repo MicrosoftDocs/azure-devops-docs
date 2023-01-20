@@ -270,6 +270,10 @@ Select **Runs** to view all pipeline runs. You can optionally filter the display
 
 Select a pipeline run to view information about that run.
 
+You can choose to **Retain** or **Delete** a run from the context menu. For more information on run retention, see [Build and release retention policies](policies/retention.md).
+
+![Pipeline run context menu](get-started/media/pipeline-run-context-menu.png)
+
 ### View pipeline details
 
 The details page for a pipeline allows you to view and manage that pipeline.
