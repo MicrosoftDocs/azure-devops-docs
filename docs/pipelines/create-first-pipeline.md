@@ -256,6 +256,26 @@ You can view and manage your pipelines by choosing **Pipelines** from the left-h
 
 You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
+### Pipelines landing page
+
+From the pipelines landing page you can view pipelines and pipeline runs, create and import pipelines, manage security, and drill down into pipeline and run details.
+
+Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
+
+![Choose Recent to view recently run pipelines or choose All to view all pipelines.](get-started/media/view-pipelines.png)
+
+Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
+
+![Pipeline context menu](get-started/media/pipelines-overview-pipeline-context-menu.png)
+
+Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
+
+![View pipeline runs](get-started/media/all-pipeline-runs.png)
+
+Select a pipeline run to view information about that run.
+
+Once you're done, use the breadcrumb navigation bar to navigate to the pipeline's details page.
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
