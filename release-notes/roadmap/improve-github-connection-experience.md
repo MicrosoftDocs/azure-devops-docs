@@ -16,7 +16,7 @@ Improve the GitHub connection experience for Enterprise customers by supporting 
 
 ## Part 1, Connection REST APIs
 
-Provide REST endpoints so customers can build tooling to orchistrate the connecting of GitHub repos to Azure DevOps projects. These APIs can be used at scale to connect hundreds or thousands of GitHub repos to a given project.
+Provide REST endpoints so customers can build tooling to orchestrate connecting of GitHub repos to Azure DevOps projects. These APIs can be used at scale to connect hundreds or thousands of GitHub repos to a given project.
 
 ## Part 2, UX Improvements
 
