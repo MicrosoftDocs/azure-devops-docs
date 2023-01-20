@@ -21,10 +21,10 @@ As a user with permanently delete work item permissions, I need to be able to:
 ## Proposed solution
 
 - Remove recycle bin from being part of the queries hub
-- Simplify and optimize for performance. Example, remove preview panel.
-- Limit the number of work items returned to 2,000.
-- Add field criteria panel to provide basic search capabilities.
-- Select all functionality for easier permanently deleting of items.
+- Simplify and optimize for performance (example, remove preview work item panel)
+- Limit the number of work items returned to 2,000
+- Add field criteria panel to provide basic search capabilities
+- Select all functionality for easier permanently deleting of items
 
 > [!div class="mx-imgBorder"]
 > ![screen shot of example of swimlane colors](media/boards-recycle-bin.gif)
