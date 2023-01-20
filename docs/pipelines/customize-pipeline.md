@@ -227,7 +227,7 @@ Pipeline triggers cause a pipeline to run. You can use `trigger:` to cause a pip
 
 ## Pipeline settings
 
-There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) and choose **More actions**, **Settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](create-first-pipeline.md#view-pipeline-details) and choose **More actions**, **Settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
 
 :::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
 
