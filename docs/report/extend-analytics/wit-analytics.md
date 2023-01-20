@@ -125,18 +125,17 @@ To return a count of items along with select data for the items, specify the `$c
  
 ## Areas or Iterations properties
 
-To look up the `AreaSK` or `IterationSK` of an Area Path or Iteration Path, use the following queries. 
+To look up the `AreaSK` or `IterationSK`, or other property of an **Area Path** or **Iteration Path**, use the following queries. 
 
 <a id="areask" />
 
 ### Return the AreaSK for a specific Area Path 
 
-The following query specifies to return the `AreaSK` property defined for the *Fabrikam Fiber\Service Delivery\Internet* Area Path.
+The following query specifies to return the `AreaSK` property defined for the *Fabrikam Fiber\Service Delivery\Internet* **Area Path**. To specify other properties defined for the `Areas` entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Service Delivery\Internet' &$select=AreaSK
-
 > ```
 
 The query returns the following data.  
@@ -157,12 +156,11 @@ The query returns the following data.
 
 ### Return the IterationSK for a specific Iteration Path 
 
-The following query specifies to return the `IterationSK` property defined for the *Fabrikam Fiber\Service Delivery\Internet* Area Path.
+The following query specifies to return the `IterationSK` property defined for the *Fabrikam Fiber\Release 1\Sprint 3* **Iteration Path**. To specify other properties defined for the `Iterations` entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 >https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
-
 > ```
 
 The query returns the following data.  
@@ -170,7 +168,7 @@ The query returns the following data.
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > {
->   "@odata.context": "https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Iterations(IterationSK)",
+>   "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Iterations(IterationSK)",
 >   "value": [
 >     {
 >       "IterationSK": "862e961a-ac7a-4fcc-9ebc-8afd0c12fed5"

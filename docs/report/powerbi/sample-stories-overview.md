@@ -25,9 +25,9 @@ The following image shows an example of a requirements tracking report.
 This report displays the following information for each requirement that it lists:
 
 - **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
-- **Passed tests**: The number of test cases run that have passed based on the most recent test run.  
-- **Failed tests**: The number of test cases run that have failed based on the most recent test run. 
-- **Run tests**:  The number of test runs that have executed.  
+- **Passed tests**: The number of test cases run that's passed based on the most recent test run.  
+- **Failed tests**: The number of test cases run that's failed based on the most recent test run. 
+- **Run tests**:  The number of test runs that's executed.  
 - **Active bugs**: The number of linked bugs in an Active state. 
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
@@ -269,9 +269,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 - `{organization}` - Your organization name 
 - `{project}` - The name of your project  
-- `{iterationSK}` - The GUID associated with the Iteration Path of interest, to determine, see [../extend-analytics/wit-analytics.md#iterationsk]( Return the IterationSK for a specific Iteration Path)
-- `{areaSK}` - The GUID associated with the Area Path of interest, to determine, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path)
-- 
+- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#iterationsk](Return the IterationSK for a specific Iteration Path)
+- `{areaSK}` - The GUID associated with the Area Path of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path).
+
 
 ### Query breakdown
 
@@ -399,7 +399,7 @@ To create the report, perform the following steps:
 
 1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by `WorkItemId` column. 
 1. Under **Visualizations**, choose **Table**.
-1. Add the columns you are interested in from the three Power BI queries.
+1. Add the columns you're interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
     > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
