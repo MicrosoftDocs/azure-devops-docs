@@ -312,6 +312,20 @@ If your pipeline gets an agent but fails to complete, check the following common
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Service Connection related issues](#service-connection-related-issues)
 
+:::moniker range="azure-devops"
+
+### Task insights for failed pipeline runs
+
+Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
+
+:::image type="content" source="../get-started/media/task-insights.png" alt-text="This task has failed pop-up.":::
+
+To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
+
+:::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
+
+:::moniker-end
+
 ### Job time-out
 
 A pipeline may run for a long time and then fail due to job time-out. 
