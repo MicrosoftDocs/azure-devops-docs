@@ -260,7 +260,7 @@ Choose **Recent** to view recently run pipelines (the default view), or choose *
 
 ![Choose Recent to view recently run pipelines or choose All to view all pipelines.](get-started/media/view-pipelines.png)
 
-Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
+Select a pipeline to manage that pipeline and [view the runs](#view-pipeline-details). Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
 
 ![Pipeline context menu](get-started/media/pipelines-overview-pipeline-context-menu.png)
 
@@ -269,8 +269,6 @@ Select **Runs** to view all pipeline runs. You can optionally filter the display
 ![View pipeline runs](get-started/media/all-pipeline-runs.png)
 
 Select a pipeline run to view information about that run.
-
-Once you're done, use the breadcrumb navigation bar to navigate to the pipeline's details page.
 
 ### View pipeline details
 
