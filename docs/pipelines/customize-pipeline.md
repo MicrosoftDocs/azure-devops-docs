@@ -227,8 +227,6 @@ Pipeline triggers cause a pipeline to run. You can use `trigger:` to cause a pip
 
 ## Pipeline settings
 
-### Pipeline settings
-
 You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu on the pipeline details page.
 
 :::image type="content" source="get-started/media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
@@ -240,7 +238,7 @@ You can view and configure pipeline settings from the **More actions** :::image 
 * **Delete** - Deletes the pipeline including all builds and associated artifacts.
 * **Scheduled runs** - [Scheduled runs view](process/scheduled-triggers.md#scheduled-runs-view)
 
-There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](create-first-pipeline.md#view-pipeline-details) and choose **More actions**, **Settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+Choose **Settings** to configure the following pipeline settings.
 
 :::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
 
