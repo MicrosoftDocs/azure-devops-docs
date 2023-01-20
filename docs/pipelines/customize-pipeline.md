@@ -227,6 +227,19 @@ Pipeline triggers cause a pipeline to run. You can use `trigger:` to cause a pip
 
 ## Pipeline settings
 
+### Pipeline settings
+
+You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu on the pipeline details page.
+
+:::image type="content" source="get-started/media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
+
+* **Manage security** - [Manage security](#manage-security)
+* **Rename/move** - Edit your pipeline name and folder location.
+  :::image type="content" source="get-started/media/rename-move-pipeline.png" alt-text="Rename or move pipeline":::
+* **Status badge** - [Add a status badge to your repository](create-first-pipeline.md?view=azure-devops&preserve-view=true#add-a-status-badge-to-your-repository)
+* **Delete** - Deletes the pipeline including all builds and associated artifacts.
+* **Scheduled runs** - [Scheduled runs view](process/scheduled-triggers.md#scheduled-runs-view)
+
 There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](create-first-pipeline.md#view-pipeline-details) and choose **More actions**, **Settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
 
 :::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
@@ -244,6 +257,14 @@ From the **Pipeline settings** pane you can configure the following settings.
 
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../organizations/notifications/manage-team-group-global-organization-notifications.md)
 
+
+### Manage security
+
+You can configure pipelines security on a project level from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
+
+![Pipeline security](get-started/media/pipelines-context-menu.png)
+
+To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to predefined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](policies/permissions.md).
 ## Create work item on failure
 
 YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 
