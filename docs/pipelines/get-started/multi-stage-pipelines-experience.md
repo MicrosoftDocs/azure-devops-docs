@@ -68,19 +68,7 @@ From the **More actions** :::image type="icon" source="../../media/icons/more-ac
 > You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
 
 
-### Jobs and stages
 
-The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example, the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
-
-![Pipeline jobs](media/pipeline-jobs-pane.png)
-
-Choose a job to see the steps for that job.
-
-![Pipeline tasks](media/pipeline-steps-list.png)
-
-From the steps view, you can review the status and details of each step. From the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
-
-![Pipeline tasks more actions menu](media/pipeline-steps-context-menu.png)
 
 
 
