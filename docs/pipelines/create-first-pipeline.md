@@ -250,13 +250,9 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ## View and manage your pipelines
 
-You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
+You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu to go to the pipelines landing page.
 
 :::image type="content" source="get-started/media/pipelines-overview.png" alt-text="Screenshot of pipelines landing page.":::
-
-You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
-
-### Pipelines landing page
 
 From the pipelines landing page you can view pipelines and pipeline runs, create and import pipelines, manage security, and drill down into pipeline and run details.
 
