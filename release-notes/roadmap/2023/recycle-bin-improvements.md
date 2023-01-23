@@ -27,7 +27,7 @@ As a user with permanently delete work item permissions, I need to be able to:
 - Select all functionality for easier permanently deleting of items
 
 > [!div class="mx-imgBorder"]
-> ![screen shot of example of swimlane colors.](media/boards-recycle-bin.gif#lightbox))
+> ![screen shot of example of swimlane colors.](media/boards-recycle-bin.gif#lightbox)
 
 > [!NOTE]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
