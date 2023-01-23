@@ -421,7 +421,7 @@ Also, this variable is only available on the step level and is neither available
 Note: This variable is available in TFS 2015.4.
 
 > [!NOTE]
-> The **Build.SourceVersionMessage** variable does not work when **Batch changes while a build is in progress** is enabled for classic build pipelines.
+> The **Build.SourceVersionMessage** variable does not work with classic build pipelines in Bitbucket repositories when **Batch changes while a build is in progress** is enabled.
 </td>
 <td>No</td>
 </tr>

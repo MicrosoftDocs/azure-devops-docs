@@ -377,7 +377,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 Note: This variable is available in TFS 2015.4.
 
 > [!NOTE]
-> The **Build.SourceVersionMessage** variable does not work when **Batch changes while a build is in progress** is enabled for classic build pipelines.
+> The **Build.SourceVersionMessage** variable does not work with classic build pipelines in Bitbucket repositories when **Batch changes while a build is in progress** is enabled.
 </td>
 </tr>
 
