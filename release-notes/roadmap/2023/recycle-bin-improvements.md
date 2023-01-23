@@ -18,7 +18,7 @@ As a user with permanently delete work item permissions, I need to be able to:
 - Select all work items in the recycle bin and permanently delete them
 - Recycle bin actions and response times need to be fast
 
-# Proposed solution
+### Proposed solution
 
 - Remove recycle bin from being part of the queries hub
 - Simplify and optimize for performance (example, remove preview work item panel)
