@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can use a script to customize your pipeline
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 02/11/2021
+ms.date: 01/06/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,14 +16,13 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
+When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md). PowerShell Core runs on any platform. 
 
 ::: moniker range=">= azure-devops-2019"
 ## Add a PowerShell script
 ### [YAML](#tab/yaml)
 
-The syntax for including PowerShell Core is slightly different from the syntax for Windows PowerShell. You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
-PowerShell Core runs on any platform. 
+The syntax for including PowerShell Core is slightly different from the syntax for Windows PowerShell. 
 
 1. Push your PowerShell script to your repo.
 
@@ -85,7 +84,7 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: echo $(Build.BuildNumber) //output updated build number
+- pwsh: echo $(Build.BuildNumber) //output updated build number
 ```
 #### [Classic](#tab/classic)
 

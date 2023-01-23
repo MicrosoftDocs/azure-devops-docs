@@ -503,7 +503,7 @@ The ability of Team Foundation version control to resolve a work item requires t
 > [!NOTE]
 > When you use the **Checkin** action, you must set appropriate *from* and *to* states to reflect the state transition that you want.
 
-For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](../../reference/xml/automate-field-assignments-state-transition-reason.md).
+For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason).
 
 ## Related articles
 

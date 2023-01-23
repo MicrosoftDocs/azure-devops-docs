@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/04/2022
+ms.date: 12/16/2022
 ---
 
 
@@ -28,11 +28,10 @@ Developers have access to many tools through these versions of Visual Studio and
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams.
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size, and with a need to scale. It supports designing, building, and managing complex enterprise applications.
 - **Visual Studio Test Professional**: Provides access to Microsoft Test and development tools to support quality and collaboration throughout the development process.
-- **Visual Studio Team Explorer**: Free solution for non-developers to interact with Azure DevOps.  
-- **[Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)**: Free plug in to support teams running Eclipse on Linux, macOS, or Windows that connects to Azure DevOps.  
+- **[Visual Studio Code](https://code.visualstudio.com/docs)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps.  
 - **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)**: Free plug in to support Android developers and connect to Git repositories on Azure DevOps.
 - **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)**: Free plug in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
-- **[Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps.  
+
 
 To get started with client libraries, see [Client library samples](../integrate/get-started/client-libraries/samples.md).
 
@@ -93,7 +92,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 - [Azure Test Plans](../organizations/billing/try-additional-features-vs.md): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts.  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/perform-exploratory-tests.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
-- [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
+- [Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback).  
 
 ## Browser-based web tools
 

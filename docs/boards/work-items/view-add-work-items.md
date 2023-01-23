@@ -202,7 +202,7 @@ For example, here we choose User Story.
 > ![Screenshot of web portal, Work Items page, New Work Item.](media/view-add/work-items-hub-new.png)
 
 > [!TIP]    
-> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). 
+> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json). 
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -292,7 +292,7 @@ Queries provide other features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 
 
 <a id="page-controls">  </a>

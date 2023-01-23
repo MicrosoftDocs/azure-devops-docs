@@ -651,7 +651,7 @@ Add one or more of the following widgets to support adding:
       <a id="other-links-widget"></a>   
       Provides links to the following features:   
       
-      - [Opens a form to initiate a request to provide feedback](../../project/feedback/get-feedback.md)   
+      - [Opens a form to initiate a request to provide feedback](/previous-versions/azure/devops/project/feedback/get-feedback)   
       - [Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team](../../boards/sprints/define-sprints.md)   
       - [Opens the team's quick dialog to modify your team's area path](../../organizations/settings/set-area-paths.md).   
    :::column-end:::

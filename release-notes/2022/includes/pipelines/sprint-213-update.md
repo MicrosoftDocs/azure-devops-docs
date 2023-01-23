@@ -40,7 +40,7 @@ When disabling the creation of classic pipelines is enforced, REST APIs related 
 Disabling creation of classic pipelines is opt-in for existing organizations. For new organizations, it is opt-in for the time being.
 
 ### New PAT scope required to update pipeline General Settings 
-Invoking the [General Settings - Update](/azure/devops/build/general-settings/update?view=azure-devops-rest-7.1&preserve-view=true) REST API now requires a PAT with scope **Project and Team -> Read & Write**. 
+Invoking the [General Settings - Update](/rest/api/azure/devops/build/general-settings/update) REST API now requires a PAT with scope **Project and Team -> Read & Write**. 
 
 > [!div class="mx-imgBorder"]
 > ![Project and Team](../../media/213-pipelines-07.png)
