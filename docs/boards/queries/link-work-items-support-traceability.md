@@ -3,14 +3,15 @@ title: Link work items to support traceability in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to support an auto trail of changes and enable quick navigation by linking work items together.
 ms.service: azure-devops-boards
-ms.custom: "boards-queries, cross-project, cross-service"
+ms.custom: boards-queries, cross-project, cross-service, contperf-fy23
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/26/2022
----
+ms.date: 12/16/2022
+--- 
+
 
 # Use links to view dependencies and track related work 
 
@@ -33,8 +34,8 @@ This article describes the link types available for your use. You can link objec
  
 > [!TIP]
 > You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 > - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 > - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
 
@@ -127,29 +128,15 @@ For details, see [Add link to work items](../backlogs/add-link.md#link).
 
 <a id="team-explorer-link" />
 
-If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in many ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
+If you primarily work in Visual Studio, and want to link work items, you can do so in many ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
 Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
 ![Work item form link toolbar controls](media/IC673344.png)  
 
-**Visual Studio 2017-2019/Team Explorer** 
-
 The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
 * If you're connected to a GitHub or third-party Git repository. 
 * If you're set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
-
-#### [Team Explorer Everywhere](#tab/tee/)
-
-Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
-
-![Link control options (Team Explorer, Eclipse)](media/IC775501.png)  
-
-**Link a work item to an existing work item (Team Explorer)**
-
-From the Query Results view, you can link a work item to a new or existing work item. Select the work item you want to link, open the context menu for that work item and (1) select Link to an Existing Item... (2)Fill out the dialog that appears, (3) select Save, and then (4) Save Results to save the changes made to the work item. 
-
-![Link to an existing work item](media/IC588289.png)
 
 * * *
 
@@ -210,8 +197,8 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md)
 - [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id)
@@ -219,8 +206,8 @@ See the following articles for more information:
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
-- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json) 
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json) 
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id)
 - [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).

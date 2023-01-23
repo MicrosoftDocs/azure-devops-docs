@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 04/08/2021
+ms.date: 12/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -81,13 +81,13 @@ After you've installed the agent on a machine, you can install any other softwar
 >
 > We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bug fixes.
 
-## Azure virtual machine scale set agents
+## Azure Virtual Machine Scale Set agents
 
-Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
+Azure Virtual Machine Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
 
-You specify a virtual machine scale set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
+You specify a Virtual Machine Scale Set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
 
-For more information, see [Azure virtual machine scale set agents](scale-set-agents.md).
+For more information, see [Azure Virtual Machine Scale Set agents](scale-set-agents.md).
 
 ::: moniker-end
 
@@ -486,7 +486,7 @@ Your pipelines won't run until they can target a compatible agent.
 
     ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
 
-4. An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
+4. An update request is queued for each agent in the pool, and runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
@@ -536,15 +536,15 @@ You might also run into problems if parallel build jobs are using the same singl
 
 ::: moniker range=">= azure-devops-2019"
 
-### What’s the behavior of agents when the pipeline jobs are cancelled?
+### What’s the behavior of agents when the pipeline jobs are canceled?
 
 For Microsoft-hosted agents, the agent is torn down and returned to the Azure Pipelines pool.
 
 For self-hosted agents:
 
-When a pipeline is cancelled, the agent sends a sequence of commands to the process executing the current step. The first command is sent with a timeout of 7.5 seconds. If the process has not terminated, a second command is sent with a timeout of 2.5 seconds. If the process has not terminated, the agent issues a command to kill the process. If the process does not honor the two initial termination requests, it will be killed. From the initial request to termination takes approximately 10 seconds.
+When a pipeline is canceled, the agent sends a sequence of commands to the process executing the current step. The first command is sent with a timeout of 7.5 seconds. If the process has not terminated, a second command is sent with a timeout of 2.5 seconds. If the process has not terminated, the agent issues a command to kill the process. If the process does not honor the two initial termination requests, it will be killed. From the initial request to termination takes approximately 10 seconds.
 
-The commands issued to the process are different based on the agent operating system.
+The commands issued to the process to cancel the pipeline differ based on the agent operating system.
 
 * macOS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
 * Windows - The commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill.

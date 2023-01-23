@@ -7,7 +7,7 @@ ms.subservice: azure-devops-new-user
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 07/07/2022
+ms.date: 01/03/2023
 ---
 
 # Service and rate limits for Azure DevOps Services
@@ -69,6 +69,14 @@ In addition to the usual repository limits (see the [Repository Size Limits](../
 ## Data import
 - Limited to 300 projects per organization
 - See [data import documentation](../migrate/migration-overview.md) for details
+
+## Service connections
+
+There are no per-project limits placed on creating service connections. However, there may be limits which are imposed through Azure Active Directory. For additional information, review the following articles:
+
+- [Azure AD service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions)
+- [Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits)
+
 
 ## Related articles 
 

@@ -3,12 +3,13 @@ title: Query work items by history in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.service: azure-devops-boards
+ms.custom: boards-queries, contperf-fy23
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 07/13/2022
+ms.date: 12/16/2022
 ---
 
 
@@ -38,7 +39,7 @@ You can use either the web portal or Team Explorer to view the history of a work
 
 :::image type="content" source="media/hist-audit-query-ts-bt.png" alt-text="Screenshot of Query Editor to Search for items based on words contained in the History field.":::
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio](#tab/visual-studio/)
 <a id="tee-query-history" />
 <a id="team-explorer" />
 
@@ -46,9 +47,6 @@ You can use either the web portal or Team Explorer to view the history of a work
 The **Query Editor** isn't available when you're connected to GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
 * If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
 * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
- 
-
-**Visual Studio/Team Explorer and Team Explorer Everywhere**
 
 ![Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.](media/hist-audit-query-team-explorer.png) 
 

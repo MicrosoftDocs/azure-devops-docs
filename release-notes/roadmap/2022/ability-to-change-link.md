@@ -6,7 +6,7 @@ ms.date: 10/12/2022
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Ability to change link type from Web UI
+description: Ability to change type of link from Web UI
 hide_comments: true
 ---
 

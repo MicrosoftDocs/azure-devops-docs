@@ -2,14 +2,14 @@
 title: Use managed queries to list work items  
 titleSuffix: Azure Boards 
 description: Learn how to track work by creating queries to list work items in Azure Boards and Azure DevOps.
-ms.custom: boards-queries, cross-project, contperf-fy21q3 
+ms.custom: boards-queries, cross-project, contperf-fy23
 ms.service: azure-devops-boards
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 03/01/2022
+ms.date: 12/16/2022
 ---
 
 
@@ -25,7 +25,7 @@ Use managed queries to support these operations:
 - Review a hierarchy of work items  
 - Share a list of work items with a team member 
   
-You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/). Changes you make in one client are reflected in other clients as all changes are stored in the work tracking data store. 
+You can create queries and query folders from the web portal or from Visual Studio Team Explorer. Changes you make in one client are reflected in other clients as all changes are stored in the work tracking data store. 
  
 ## Get started using queries
 

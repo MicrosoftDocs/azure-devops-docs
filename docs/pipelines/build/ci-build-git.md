@@ -182,7 +182,7 @@ Once the work is completed in the topic branch and merged to main, you can delet
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="<=azure-devops-2020"
 
 ## Use retention policies to clean up your completed builds
 

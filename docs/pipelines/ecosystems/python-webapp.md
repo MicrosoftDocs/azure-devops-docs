@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
 author: juliakm
-ms.date: 10/17/2022
+ms.date: 01/19/2023
 monikerRange: 'azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
 ---
@@ -29,11 +29,12 @@ To test the example app locally, from the folder containing the code, run the fo
 
 
 ```bash
-# Mac/Linux
+# Linux
 sudo apt-get install python3-venv  # If needed
 python3 -m venv .env
 source .env/bin/activate
-pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+python3 -m pip install --upgrade pip
+python3 -m pip install -r ./requirements.txt
 export set FLASK_APP=hello_app.webapp
 python3 -m flask run
 ```
@@ -364,7 +365,7 @@ As part of your build process, you may want to run tests on your app code. Tests
   displayName: 'Remove .env before zip'
 ```
 
-You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-results.md?tabs=yaml) to make test results appear in the pipeline results screen. For more information, see [Build Python apps - Run tests](python.md#run-tests).
+You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-results.md?tabs=yaml) to make test results appear in the pipeline results screen. For more information, see [Build Python apps - Run tests](customize-python.md#run-tests).
 
 ## Provision an App Service with single commands
 

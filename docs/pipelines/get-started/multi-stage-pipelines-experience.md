@@ -5,7 +5,7 @@ description: Learn how to navigate using the multi-stage pipelines user interfac
 ms.topic: reference
 ms.author: sdanie
 author: steved0x
-ms.date: 05/07/2021
+ms.date: 12/20/2022
 monikerRange: '> azure-devops-2019'
 ---
 
