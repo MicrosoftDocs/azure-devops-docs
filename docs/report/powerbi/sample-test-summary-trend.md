@@ -6,11 +6,11 @@ ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.manager: mijacobs
 ms.author: kaelli
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 10/13/2021
+ms.date: 01/24/2023
 ---
 
 # Test summary trend sample report 
@@ -24,12 +24,7 @@ An example is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI test summary report.](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
 
-
-[!INCLUDE [temp](includes/preview-note.md)]
-
-
 Specifically, you'll find sample queries for the following reports: 
-
 
 - Test summary trend for build workflow
 - Test summary trend for release workflow
@@ -37,11 +32,15 @@ Specifically, you'll find sample queries for the following reports:
 - Test summary trend for a particular test file
 - Test summary trend for a particular test owner 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Sample queries
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+[!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
 #### [Power BI query](#tab/powerbi/)
 

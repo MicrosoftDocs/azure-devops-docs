@@ -33,7 +33,7 @@ Specifically, you'll find sample queries for the following reports:
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Sample queries
 
