@@ -117,7 +117,7 @@ $apply=filter(
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`.
-- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20220815` for 22 August 2015.
+- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20220815` for 15 August 2022.
 
 
 ### Query breakdown

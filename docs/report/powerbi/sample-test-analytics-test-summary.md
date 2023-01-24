@@ -21,8 +21,7 @@ When you execute a pipeline run and include test tasks within the pipeline defin
 
 The following image shows an example of a test summary report.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI test summary report.](media/odata-powerbi-test-analytics/test-summary-reports1.png)
+:::image type="content" source="media/pipeline-test-reports/test-summary-donut-report.png" alt-text="Screenshot of Test Summary Donut report.":::
 
 Use the queries provided in this article to generate the following reports:  
 
@@ -30,7 +29,7 @@ Use the queries provided in this article to generate the following reports:
 - Test summary for release workflow
 - Test summary for a particular branch
 - Test summary for a particular test file
-- Test summary for a particular test owner 
+- Test summary for a particular test owner. 
  
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -57,18 +56,18 @@ Use the following queries to view the test summary of a pipeline for a **Build**
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
+   Source = OData.Feed ("https://analytics.dev.azure.com/mseng/AzureDevOps/_odata/v4.0-preview/TestResultsDaily?
+       $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build' "
+                &"And DateSK ge {startdate} "
+                &"And Workflow eq 'Build' "
         &") "
             &"/aggregate( "
                 &"ResultCount with sum as ResultCount, "
                 &"ResultPassCount with sum as ResultPassCount, "
-            &"ResultFailCount with sum as ResultFailCount, "
+                &"ResultFailCount with sum as ResultFailCount, "
                 &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
-            &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
+                &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
         &") "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
@@ -83,7 +82,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
+	And DateSK ge {startdate}
 	And Workflow eq 'Build'
 	)
 	/aggregate(
@@ -93,7 +92,6 @@ $apply=filter(
 		ResultNotExecutedCount with sum as ResultNotExecutedCount,
 		ResultNotImpactedCount with sum as ResultNotImpactedCount
 	)
-
 ```
 
 ***
@@ -112,18 +110,18 @@ Use the following queries to view the test summary of a pipeline for a **Release
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
+   Source = OData.Feed ("https://analytics.dev.azure.com/mseng/AzureDevOps/_odata/v4.0-preview/TestResultsDaily?
+       $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Release' "
+                &"And DateSK ge {startdate} "
+                &"And Workflow eq 'Release' "
         &") "
             &"/aggregate( "
                 &"ResultCount with sum as ResultCount, "
                 &"ResultPassCount with sum as ResultPassCount, "
-            &"ResultFailCount with sum as ResultFailCount, "
+                &"ResultFailCount with sum as ResultFailCount, "
                 &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
-            &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
+                &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
         &") "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
@@ -138,7 +136,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
+	And DateSK ge {startdate}
 	And Workflow eq 'Release'
 	)
 	/aggregate(
@@ -160,27 +158,29 @@ To view the test summary of a pipeline for a particular branch, use the followin
 - Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
+To learn more about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
+   Source = OData.Feed ("https://analytics.dev.azure.com/mseng/AzureDevOps/_odata/v4.0-preview/TestResultsDaily?
+       $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build' "
+                &"And DateSK ge {startdate} "
+                &"And Workflow eq 'Build' "
         &") "
             &"/groupby( "
                 &"(Branch/BranchName), "
-                &"aggregate( "
-            &"ResultCount with sum as ResultCount, "
+            &"/aggregate( "
+                &"ResultCount with sum as ResultCount, "
                 &"ResultPassCount with sum as ResultPassCount, "
-            &"ResultFailCount with sum as ResultFailCount, "
-        &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
-    &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
-    &")) "
+                &"ResultFailCount with sum as ResultFailCount, "
+                &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
+                &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
+        &") "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -194,12 +194,12 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
+	And DateSK ge {startdate}
 	And Workflow eq 'Build'
 	)
 	/groupby(
 		(Branch/BranchName),
-		aggregate(
+		/aggregate(
 		ResultCount with sum as ResultCount,
 		ResultPassCount with sum as ResultPassCount,
 		ResultFailCount with sum as ResultFailCount,
@@ -224,20 +224,21 @@ To view the test summary of a pipeline for a particular test file, use the follo
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
+   Source = OData.Feed ("https://analytics.dev.azure.com/mseng/AzureDevOps/_odata/v4.0-preview/TestResultsDaily?
+       $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build') "
+                &"And DateSK ge {startdate} "
+                &"And Workflow eq 'Build' "
+        &") "
         &"/groupby( "
             &"(Test/ContainerName), "
-                &"aggregate( "
+            &"/aggregate( "
                 &"ResultCount with sum as ResultCount, "
-            &"ResultPassCount with sum as ResultPassCount, "
+                &"ResultPassCount with sum as ResultPassCount, "
                 &"ResultFailCount with sum as ResultFailCount, "
-            &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
-        &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
-    &")) "
+                &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
+                &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
+        &") "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -251,11 +252,11 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
+	And DateSK ge {startdate}
 	And Workflow eq 'Build')
 	/groupby(
 		(Test/ContainerName),
-		aggregate(
+		/aggregate(
 		ResultCount with sum as ResultCount,
 		ResultPassCount with sum as ResultPassCount,
 		ResultFailCount with sum as ResultFailCount,
@@ -280,20 +281,21 @@ To view the test summary of a pipeline for tests owned by a particular test owne
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
+   Source = OData.Feed ("https://analytics.dev.azure.com/mseng/AzureDevOps/_odata/v4.0-preview/TestResultsDaily?
+       $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build') "
+                &"And DateSK ge {startdate} "
+                &"And Workflow eq 'Build' "
+        &") "
         &"/groupby( "
             &"(Test/TestOwner), "
-                &"aggregate( "
+            &"/aggregate( "
                 &"ResultCount with sum as ResultCount, "
-            &"ResultPassCount with sum as ResultPassCount, "
+                &"ResultPassCount with sum as ResultPassCount, "
                 &"ResultFailCount with sum as ResultFailCount, "
-            &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
-        &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
-    &")) "
+                &"ResultNotExecutedCount with sum as ResultNotExecutedCount, "
+                &"ResultNotImpactedCount with sum as ResultNotImpactedCount "
+        &") "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -307,11 +309,11 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
+	And DateSK ge {startdate}
 	And Workflow eq 'Build')
 	/groupby(
 		(Test/TestOwner), 
-		aggregate(
+		/aggregate(
 		ResultCount with sum as ResultCount,
 		ResultPassCount with sum as ResultPassCount,
 		ResultFailCount with sum as ResultFailCount,
@@ -329,7 +331,7 @@ $apply=filter(
 - `{organization}` - Your organization name
 - `{project}` - Your team project name
 - `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline` 
-- `{startdate}` - The date to start your report. Format: `YYYY-MM-DDZ`. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{startdate}` - The date to start your report. You can enter the dates in YYYYMMDD format. For example, `20220815` for 15 August 2022.
 
 ### Query breakdown
 
@@ -443,11 +445,7 @@ The following table describes each part of the query.
 
 
 [!INCLUDE [temp](includes/rename-query.md)]
- 
-## Change column data type (TBD) 
-
-From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
-
+  
 ## (Optional) Rename column fields
 
 You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
@@ -458,7 +456,7 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 
 1. In Power BI, under **Visualizations**, choose the **Donut** report and select the fields as shown in the following image. 
 
-	:::image type="content" source="media/odata-powerbi-test-analytics/test-summary-fields1.png" alt-text="Screenshot of visualization fields selections for Test Summary report. ":::
+	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary.png" alt-text="Screenshot of visualization fields selections for Test Summary report. ":::
 
 1. Add the following fields to **Values**, in the order indicated. Right-click each field and ensure **Sum** is selected.   
 	- `ResultPassCount`  
@@ -466,13 +464,9 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 	- `ResultNotExecutedCount` 
 	- `ResultNotImpactedCount` 
  
-Your report should look like this. 
+Your report should look similar to the following image. 
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample test summary report.](media/odata-powerbi-test-analytics/test-summary-reports1.png)
-
-
-You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
+:::image type="content" source="media/pipeline-test-reports/test-summary-donut-report.png" alt-text="Screenshot of Sample Test Summary Donut report.":::
  
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
