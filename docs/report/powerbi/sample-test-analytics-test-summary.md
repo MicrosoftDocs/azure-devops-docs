@@ -17,9 +17,9 @@ ms.date: 01/24/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**. For information on adding tests to a pipeline, see the [Test task resources](#resources) later in this article. 
+When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) sectopm later in this article. 
 
-An example is shown in the following image.
+The following image shows an example of a test summary report.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI test summary report.](media/odata-powerbi-test-analytics/test-summary-reports1.png)
@@ -47,6 +47,8 @@ You can use the following queries of the `TestResultsDaily` entity set to create
 
 #### [Power BI query](#tab/powerbi/)
 
+
+### Test summary for Build workflow  
 
 Use the following queries to view the test summary of a pipeline for a **Build** workflow.
 
@@ -97,7 +99,7 @@ $apply=filter(
 ***
 
 
-## Test summary for Release workflow  
+### Test summary for Release workflow  
 
 Use the following queries to view the test summary of a pipeline for a **Release** workflow.
 
@@ -150,7 +152,7 @@ $apply=filter(
 
 ***
 
-## Filter by branch
+### Filter by branch
 
 To view the test summary of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
@@ -208,7 +210,7 @@ $apply=filter(
 
 ***
 
-## Filter by test file
+### Filter by test file
 
 To view the test summary of a pipeline for a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
@@ -264,7 +266,7 @@ $apply=filter(
 
 ***
 
-## Filter by test owner
+### Filter by test owner
 
 To view the test summary of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
@@ -367,10 +369,10 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `and Workflow eq 'Build'`
+   `and Workflow eq 'Build'` or `and Workflow eq 'Release'`
    :::column-end:::
    :::column span="1":::
-   Return test runs only for pieplines designated with the `Build` workflow.
+   Return test runs only for pipelines designated with the `Build` or `Release` workflow.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -386,7 +388,7 @@ The following table describes each part of the query.
    `aggregate(`
    :::column-end:::
    :::column span="1":::
-   Start the `aggregate` clause for all the test runs matching the above filter criteria.
+   Start the `aggregate` clause for all the test runs matching the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
