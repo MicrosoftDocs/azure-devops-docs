@@ -6,41 +6,50 @@ ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.manager: mijacobs
 ms.author: kaelli
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
-ms.date: 09/21/2021
+monikerRange: '>= azure-devops'   
+ms.date: 01/24/2023
 ---
 
 # Test summary sample report 
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-This article shows you how to get the number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**.
+When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**. For information on adding tests to a pipeline, see the [Test task resources](#resources) later in this article. 
 
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI test summary report.](media/odata-powerbi-test-analytics/test-summary-reports1.png)
 
-Specifically, you'll find sample queries for the following reports: 
+Use the queries provided in this article to generate the following reports:  
 
 - Test summary for build workflow
 - Test summary for release workflow
 - Test summary for a particular branch
 - Test summary for a particular test file
 - Test summary for a particular test owner 
-
+ 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
-
-## Sample queries
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+
+## Sample queries
+
+You can use the following queries of the `TestResultsDaily` entity set to create different but similar pipeline test summary reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by Test.  
+
+[!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
+
 #### [Power BI query](#tab/powerbi/)
+
+
+Use the following queries to view the test summary of a pipeline for a **Build** workflow.
+
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -87,183 +96,13 @@ $apply=filter(
 
 ***
 
-### Substitution strings
 
-[!INCLUDE [temp](includes/sample-query-substitutions.md)]
- 
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline` 
-- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+## Test summary for Release workflow  
 
-### Query breakdown
-
-The following table describes each part of the query.
-
-:::row:::
-   :::column span="1":::
-   **Query part**
-   :::column-end:::
-   :::column span="1":::
-   **Description**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `$apply=filter(`
-   :::column-end:::
-   :::column span="1":::
-   Start filter()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `Pipeline/PipelineName eq '{pipelineName}'`
-   :::column-end:::
-   :::column span="1":::
-   Return test runs for the specified pipeline
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and CompletedOn/Date ge {startdate}`
-   :::column-end:::
-   :::column span="1":::
-   Return test runs on or after the specified date
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and Workflow eq 'Build'`
-   :::column-end:::
-   :::column span="1":::
-   Return test runs for 'Build' workflow
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `)`
-   :::column-end:::
-   :::column span="1":::
-   Close filter()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `aggregate(`
-   :::column-end:::
-   :::column span="1":::
-   Start aggregate. For all the test runs matching the above filter criteria:
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultCount with sum as ResultCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of test runs as ResultCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultPassCount with sum as ResultPassCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of passed test runs as ResultPassCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultFailCount with sum as ResultFailCount`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of failed test runs as ResultFailCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of not executed test runs as ResultNotExecutedCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultNotImpactedCount with sum as ResultNotImpactedCount`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of not affected test runs as ResultNotImpactedCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `)`
-   :::column-end:::
-   :::column span="1":::
-   Close aggregate()
-   :::column-end:::
-:::row-end:::
+Use the following queries to view the test summary of a pipeline for a **Release** workflow.
 
 [!INCLUDE [temp](includes/query-filters-test.md)]
 
-
-## Power BI transforms
-
-### Rename fields and query, then Close & Apply
-
-When finished, you may choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/test-summary-rename1.png)
-
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
-  
-  
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Visualizations Test Summary fields.](media/odata-powerbi-test-analytics/test-summary-fields1.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Donut Chart**. 
-1. Add the field "ResultPassCount" to **Values**.
-    - Right-click "ResultPassCount" field and ensure **Sum** is selected.
-1. Add the field "ResultFailCount" to **Values**.
-	  - Right-click "ResultFailCount" field and ensure **Sum** is selected.
-1. Add the field "ResultNotExecutedCount" to **Values**.
-	  - Right-click "ResultNotExecutedCount" field and ensure **Sum** is selected.
-1. Add the field "ResultNotImpactedCount " to **Values**.
-    - Right-click "ResultNotImpactedCount " field and ensure **Sum** is selected.
-
-    
-Your report should look like this. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample test summary report.](media/odata-powerbi-test-analytics/test-summary-reports1.png)
-
-
-You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
-
-## Test summary for Release workflow 
-
-You may want to view the test summary of a pipeline for **Release** workflow, instead of Build workflow.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -313,11 +152,11 @@ $apply=filter(
 
 ## Filter by branch
 
-You may want to view the test summary of a pipeline for a particular branch only. To create the report, carry out the following extra steps along with what is defined previously in this article.
+To view the test summary of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
-- Expand Branch into Branch.BranchName
-- Select Power BI Visualization Slicer and add the field Branch.BranchName to the slicer's Field
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand `Branch` into `Branch.BranchName`
+- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
+- Select the branch name from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -371,11 +210,11 @@ $apply=filter(
 
 ## Filter by test file
 
-You may want to view the test summary of a pipeline for a particular test file only. To create the report, carry out the following extra steps along with what is defined previously in this article.
+To view the test summary of a pipeline for a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand Branch into Test.ContainerName
-- Select Power BI Visualization Slicer and add the field Test.ContainerName to the slicer's Field
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand `Branch` into `Test.ContainerName`
+- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
+- Select the container name from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -427,11 +266,11 @@ $apply=filter(
 
 ## Filter by test owner
 
-You may want to view the test summary of a pipeline for tests owned by a particular test owner only. To create the report, carry out the following extra steps along with what is defined previously in this article.
+To view the test summary of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand Branch into Test.TestOwner
-- Select Power BI Visualization Slicer and add the field Test.TestOwner to the slicer's Field
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand `Branch` into `Test.TestOwner`
+- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
+- Select the test owner from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -480,6 +319,162 @@ $apply=filter(
 ```
 
 *** 
+
+### Substitution strings
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+ 
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline` 
+- `{startdate}` - The date to start your report. Format: `YYYY-MM-DDZ`. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+
+### Query breakdown
+
+The following table describes each part of the query.
+
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start `filter()` clause.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for the specified pipeline.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs on or after the specified date.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs only for pieplines designated with the `Build` workflow.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close `filter()` clause.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start the `aggregate` clause for all the test runs matching the above filter criteria.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as ResultCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of test runs as `ResultCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultPassCount with sum as ResultPassCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of passed test runs as `ResultPassCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFailCount with sum as ResultFailCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of failed test runs as `ResultFailCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not executed test runs as `ResultNotExecutedCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotImpactedCount with sum as ResultNotImpactedCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not affected test runs as `ResultNotImpactedCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close the `aggregate()` clause.
+   :::column-end:::
+:::row-end:::
+
+
+
+[!INCLUDE [temp](includes/rename-query.md)]
+ 
+## Change column data type (TBD) 
+
+From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+
+## (Optional) Rename column fields
+
+You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
+## Create the Donut chart report
+
+1. In Power BI, under **Visualizations**, choose the **Donut** report and select the fields as shown in the following image. 
+
+	:::image type="content" source="media/odata-powerbi-test-analytics/test-summary-fields1.png" alt-text="Screenshot of visualization fields selections for Test Summary report. ":::
+
+1. Add the following fields to **Values**, in the order indicated. Right-click each field and ensure **Sum** is selected.   
+	- `ResultPassCount`  
+	- `ResultFailCount` 
+	- `ResultNotExecutedCount` 
+	- `ResultNotImpactedCount` 
+ 
+Your report should look like this. 
+
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Power BI sample test summary report.](media/odata-powerbi-test-analytics/test-summary-reports1.png)
+
+
+You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
+ 
+
+[!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
+
 
 ## Related articles
 
