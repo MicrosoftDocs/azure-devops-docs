@@ -1,10 +1,10 @@
 ---
 title: Service Containers
-titleSuffix: Azure Pipelines & TFS
+titleSuffix: Azure Pipelines
 description: Run containerized services alongside pipeline jobs
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.topic: conceptual
-ms.date: 10/05/2021
+ms.date: 01/24/2023
 monikerRange: azure-devops
 ---
 
@@ -46,7 +46,7 @@ resources:
 
 
 pool:
-  vmImage: 'ubuntu-20.04'
+  vmImage: 'ubuntu-latest'
 
 container: my_container
 services:
@@ -83,7 +83,7 @@ resources:
     - 6379
 
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 
 services:
   nginx: nginx
@@ -114,21 +114,21 @@ In the following example, the same steps run against multiple versions of Postgr
 resources:
   containers:
   - container: my_container
-    image: ubuntu:18.04
-  - container: pg12
-    image: postgres:12
-  - container: pg11
-    image: postgres:11
+    image: ubuntu:22.04
+  - container: pg15
+    image: postgres:15
+  - container: pg14
+    image: postgres:14
 
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 
 strategy:
   matrix:
-    postgres12:
-      postgresService: pg12
-    postgres11:
-      postgresService: pg11
+    postgres15:
+      postgresService: pg15
+    postgres14:
+      postgresService: pg14
 
 container: my_container
 
