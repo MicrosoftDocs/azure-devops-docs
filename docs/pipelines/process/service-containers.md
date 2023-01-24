@@ -28,7 +28,7 @@ The pipeline will run `docker run` for the provided container without additional
 
 Azure Pipelines can run Linux or [Windows Containers](/virtualization/windowscontainers/about/). Use either
 hosted Ubuntu for Linux containers, or the Hosted Windows Container pool for Windows containers.
-(The Hosted macOS pool does not support running containers.)
+(The Hosted macOS pool doesn't support running containers.)
 
 # [YAML](#tab/yaml)
 
@@ -95,7 +95,7 @@ steps:
     echo $AGENT_SERVICES_REDIS_PORTS_6379
 ```
 
-This pipeline starts the latest `nginx` containers. Since the job is not running in a container, there's no automatic name resolution.
+This pipeline starts the latest `nginx` containers. Since the job isn't running in a container, there's no automatic name resolution.
 This example shows how you can instead reach services by using `localhost`. 
 In the above example, we provide the port explicitly (for example, `8080:80`).
 
@@ -196,7 +196,7 @@ Service containers share the same container resources as container jobs. This me
 
 # [Classic](#tab/classic)
 
-Service containers are not yet supported in classic pipelines.
+Service containers aren't yet supported in classic pipelines.
 
 ---
 
