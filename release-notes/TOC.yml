@@ -10,7 +10,7 @@
       items:
         - name: "2023"
           items:
-          - name: January 23
+          - name: January 25
             href: 2023/sprint-215-update.md
           - name: January 12
             href: 2023/sprint-214-update.md
