@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Support Group Managed Service Accounts as agent service account
 
-The Azure Pipelines agent now supports Group Managed Service Accounts on [Self-hosted agents on Windows](/azure/devops/pipelines/agents/v2-windows?view=azure-devops).
+The Azure Pipelines agent now supports Group Managed Service Accounts on [Self-hosted agents on Windows](/azure/devops/pipelines/agents/v2-windows?view=azure-devops&preserve-view=true).
 
 [Group Managed Service Accounts (gSMAs)](https://aka.ms/gmsa) provide centralized password management for domain accounts that act as service accounts. The Azure Pipelines Agent can recognize this type of account so a password is not required during configuration:
 
@@ -35,7 +35,7 @@ Retrieving a pipeline's YAML code can fail due to:
 * Authentication issues
 * Unable to retrieve the content of the pipeline's .yml file
 
-Read more about [Informational runs](/azure/devops/pipelines/process/information-run?view=azure-devops).
+Read more about [Informational runs](/azure/devops/pipelines/process/information-run?view=azure-devops&preserve-view=true).
 
 ### Build Definition REST API `retentionRules` property is obsolete
 
