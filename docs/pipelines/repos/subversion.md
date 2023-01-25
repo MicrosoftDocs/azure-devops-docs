@@ -2,7 +2,7 @@
 title: Build code from Subversion
 description: Using Subversion repo with Azure Pipelines
 ms.topic: reference
-ms.date: 07/08/2020
+ms.date: 01/25/2023
 monikerRange: 'azure-devops'
 ---
 
