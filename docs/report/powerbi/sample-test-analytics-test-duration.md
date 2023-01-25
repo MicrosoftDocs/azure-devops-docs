@@ -6,11 +6,11 @@ ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.manager: mijacobs
 ms.author: kaelli
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 10/13/2021
+ms.date: 01/25/2023
 ---
 
 # Test duration sample report
@@ -90,7 +90,7 @@ TotalDuration div TotalCount as AvgDuration)
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
