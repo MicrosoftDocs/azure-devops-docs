@@ -15,17 +15,14 @@ ms.date: 10/13/2021
 # Failed tests sample report
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
-
-This article shows you how to create a report that shows the list of failed tests for a pipeline.
-
+ 
 You can create a report that shows the list of failed tests for pipeline runs that include test tasks. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
-An example is shown in the following image.
-
+The following image provides an example report.
 
 :::image type="content" source="media/pipeline-test-reports/failed-tests-table-report.png" alt-text="Screenshot of Failed Tests Table report.":::
 
-Specifically, you'll find sample queries for the following reports: 
+Specifically, this article provides sample queries for the following reports: 
 
 - Failed tests for build workflow
 - Failed tests for release workflow
@@ -342,7 +339,7 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 *** 
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
@@ -530,7 +527,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
  
 1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area as shown in the following image. 
 
-	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary-trend.png" alt-text="Screenshot of visualization fields selections for Test Summary Trend stacked column line chart report. ":::
+	:::image type="content" source="media/pipeline-test-reports/visualizations-failed-test-table.png" alt-text="Screenshot of visualization fields selections for Failed tests table report. ":::
 
 1. Add the following fields to the **Columns** section in the order listed.  
 
