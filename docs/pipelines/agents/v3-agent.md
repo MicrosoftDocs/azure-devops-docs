@@ -10,9 +10,13 @@ ms.date: 01/24/2023
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware as well as newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
+## Upgrade to 3.x agent on supported operating systems
+
 If you are running your self-hosted agents on newer operating systems that are [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic.
 
-If you are running your self-hosted agents on an operating system supported by the current version 2 agent software built using [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) that is not supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
+## Upgrade to 3.x agent on unsupported operating systems
+
+If you are running your self-hosted agents on an operating system supported by the current version 2.x agent software built using [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) that is not supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 The following list of operating systems are commonly used for self-hosted 2.x agents. These operating systems are not supported by .NET 6 and cannot be used to run the new .NET 6 based version 3.x agent.
 
