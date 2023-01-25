@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 11/29/2022
+ms.date: 01/25/2023
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -218,6 +218,21 @@ resources:
     endpoint: MyGitHubServiceConnection
     name: MyGitHubOrgOrUser/MyGitHubRepo
     ref: features/tools
+
+steps:
+- checkout: MyGitHubRepo
+```
+
+The following example checks out the commit referenced by `MyTag`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepo
+    ref: refs/tags/MyTag
 
 steps:
 - checkout: MyGitHubRepo
