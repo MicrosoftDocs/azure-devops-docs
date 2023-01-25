@@ -37,7 +37,7 @@ The version 3.x agent software is currently in the preview phase. You can instal
 
 A preview of the new version 3.x agent software is available from the [Azure Pipelines releases page on GitHub](https://github.com/microsoft/azure-pipelines-agent/releases), in the pre-release section.
 
-To use the new version 3 agent, install the latest .NET 6 agent from the pre-releases section of the [Azure Pipelines releases page on GitHub](https://github.com/microsoft/azure-pipelines-agent/releases) onto your agent machine, and register it with the desired [agent pool](pools-queues.md),.
+To use the new version 3 agent, install the latest .NET 6 agent from the pre-releases section of the [Azure Pipelines releases page on GitHub](https://github.com/microsoft/azure-pipelines-agent/releases) onto your agent machine, and register it with the desired [agent pool](pools-queues.md).
 
 ## FAQ
 
