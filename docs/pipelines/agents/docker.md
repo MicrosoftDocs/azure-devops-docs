@@ -217,7 +217,8 @@ Next, create the Dockerfile.
           iputils-ping \
           jq \
           lsb-release \
-          software-properties-common
+          software-properties-common \
+          libicu66
 
       RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
