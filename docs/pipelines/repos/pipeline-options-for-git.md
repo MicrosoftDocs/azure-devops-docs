@@ -1,6 +1,6 @@
 ---
 title: Options for Git repositories
-description: Options that are available when using a Git repository with Azure Pipelines
+description: Options available when using a Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.custom: seodec18
