@@ -3,9 +3,7 @@ title: Canary deployment strategy for Kubernetes deployments
 description: Demo of performing canary deployments on Kubernetes clusters by using Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 10/19/2022
+ms.date: 01/24/2023
 ms.custom: fasttrack-edit
 monikerRange: 'azure-devops'
 ---
@@ -56,7 +54,7 @@ helm install --name sampleapp stable/prometheus-operator
 
 ## Create service connections
 
-1. Go to **Project settings** > **Pipelines** > **Service connections**.
+1. Go to **Project settings** > **Pipelines** > **Service connections** in the Azure DevOps menu.
 1. Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
 1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
 

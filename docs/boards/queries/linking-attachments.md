@@ -362,7 +362,7 @@ You can view related work items and object within a work item form by installing
 
 ### Add custom link types or customize the links controls 
 
-To add link types, see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md). 
+To add link types, see [Manage link types [witadmin]](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
 All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).  
 

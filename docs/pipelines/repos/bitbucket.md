@@ -70,6 +70,9 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 # [Classic](#tab/classic/)
 
+> [!NOTE]
+> The **Build.SourceVersionMessage** variable does not work with Bitbucket repositories when **Batch changes while a build is in progress** is enabled.  
+
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
 
 ![ci trigger git branches](media/ci-trigger-git-branches-neweditor.png)
