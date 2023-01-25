@@ -214,7 +214,7 @@ $apply=filter(
 
 To view the test summary of a pipeline for a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Branch` into `Test.ContainerName`
+- Expand `Test` into `Test.ContainerName`
 - Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
 - Select the container name from the slicer for which you need to see the outcome summary.
 
@@ -271,7 +271,7 @@ $apply=filter(
 
 To view the test summary of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Branch` into `Test.TestOwner`
+- Expand `Test` into `Test.TestOwner`
 - Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
 - Select the test owner from the slicer for which you need to see the outcome summary.
 
