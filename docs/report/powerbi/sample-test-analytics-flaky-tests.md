@@ -17,7 +17,7 @@ ms.date: 01/25/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
  
-You can create a report that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. To learn more about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+You can create a report, as shown in the following image, that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. To learn more about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
 :::image type="content" source="media/pipeline-test-reports/flaky-tests-table-report.png" alt-text="Screenshot of Flaky Tests Table report.":::
 Power BI shows you the fields you can report on. 
@@ -534,12 +534,8 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
-
-  
   
 ## Create the Table report
-
-## Create the line and stack column chart report
  
 1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area as shown in the following image. 
 
@@ -560,6 +556,9 @@ Your report should look similar to the following image.
 :::image type="content" source="media/pipeline-test-reports/flaky-tests-table-report.png" alt-text="Screenshot of Sample Flaky Tests Table report.":::
 Power BI shows you the fields you can report on. 
   
+
+
+[!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
 
 ## Related articles
 

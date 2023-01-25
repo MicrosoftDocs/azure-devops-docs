@@ -17,17 +17,23 @@ ms.date: 01/25/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-This article shows you how to create a report that shows day wise trend of number of times a test passed and failed, along with its pass rate of any given test of a pipeline.
+Test duration reports provide insight into how long on average a particular test takes to execute during a pipeline run.  
 
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI test pass rate trend report.](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
 
+:::image type="content" source="media/pipeline-test-reports/flaky-tests-table-report.png" alt-text="Screenshot of Flaky Tests Table report.":::
+Power BI shows you the fields you can report on. 
+
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
+
 
 ## Sample queries
 
