@@ -11,4 +11,3 @@ ms.topic: include
 - [Variables as inputs in checks](#variables-as-inputs-in-checks)
 - [Script to self-validate pipeline agent version](#script-to-self-validate-pipeline-agent-version)
 - [Pipeline run status overview icon](#pipeline-run-status-overview-icon)
-- [Upcoming REST API call changes](#upcoming-rest-api-call-changes)

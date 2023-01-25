@@ -11,6 +11,14 @@ To limit damage done by leaking a PAT token, we've added a new PAT scope, named 
 > [!div class="mx-imgBorder"]
 > ![Pipelines REST API Updates](../../media/215-pipelines-01.png)
 
+In the next sprint, REST API calls will change as follows:
+
+* [Update an Approval](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/update) will require a PAT with scope `Pipeline Resources Use` 
+* [Manage Checks](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/check-configurations) will require a PAT with scope `Pipeline Resources Use and Manage` 
+* [Update Pipeline Permisions For Resources](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
+* [Authorize Definition Resources](https://learn.microsoft.com/rest/api/azure/devops/build/resources/authorize-definition-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
+* [Authorize Project Resources](https://learn.microsoft.com/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) will require a PAT with scope `Pipeline Resources Use and Manage`
+
 ### Experience improvements to pipeline permissions
 
 We've improved the experience around managing pipeline permissions to make the permissions system remember if a pipeline had previously used a protected resource, such as a service connection.
@@ -29,27 +37,16 @@ Say you have the following YAML pipeline. Notice we define variables `FunctionKe
 ```yaml
 variables:
   FunctionKey: <<redacted>>
- 
   MyHeader: "FabrikamHeader"
- 
   MyQuery: "FabrikamQuery"
- 
   MyBody: "FabrikamBody"
- 
-  
- 
-stages:
- 
+
+stages: 
 - stage: Build
- 
   jobs:
- 
   - job: SetRC
- 
     steps:
- 
     - script: echo "##vso[task.setvariable variable=RetryCount;isOutput=true]3"
- 
       name: RCValue
 - stage: Deploy
   jobs:
@@ -85,18 +82,9 @@ We have created a [script](https://github.com/microsoft/azure-pipelines-agent/tr
 > [!NOTE]
 > Recent builds of the v2 agent will not try to auto-upgrade to the v3 agent on an operating system known not to be compatible with it.
 
-### Upcoming REST API call changes
-
-In the next sprint, REST API call will changes as follows:
-
-* [Update an Approval](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/update) will require a PAT with scope `Pipeline Resources Use` 
-* [Manage Checks](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/check-configurations) will require a PAT with scope `Pipeline Resources Use and Manage` 
-* [Update Pipeline Permisions For Resources](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
-* [Authorize Definition Resources](https://learn.microsoft.com/rest/api/azure/devops/build/resources/authorize-definition-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
-* [Authorize Project Resources](https://learn.microsoft.com/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) will require a PAT with scope `Pipeline Resources Use and Manage`
-
 ### Pipeline run status overview icon
 
 In this sprint, we're making it easier to know the overall status of a pipeline run. 
 
 For YAML pipelines that have many stages, it used to be hard to know the status of a pipeline run, that is, is it still running or it finished. And if it finished, what is the overall state: successful, failed, or cancelled. We fixed this issue by adding a run status overview icon.
+> ![Pipeline run status overview icon](../../media/215-pipelines-03.png)
