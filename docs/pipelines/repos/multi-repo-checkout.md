@@ -223,7 +223,7 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
-The following example checks out the commit referenced by `MyTag`.
+The following example uses [tags](../../repos/git/git-tags.md) to check out the commit referenced by `MyTag`.
 
 ```yaml
 resources:
