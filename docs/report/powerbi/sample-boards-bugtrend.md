@@ -333,7 +333,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Expand columns in Power BI
 
-Expand the `Area/AreaPath)` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
+Expand the `Area/AreaPath` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
 
 
 ## (Optional) Rename fields

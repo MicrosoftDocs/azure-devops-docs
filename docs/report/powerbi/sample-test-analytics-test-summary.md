@@ -17,7 +17,7 @@ ms.date: 01/24/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) sectopm later in this article. 
+When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
 The following image shows an example of a test summary report.
 
@@ -44,13 +44,13 @@ You can use the following queries of the `TestResultsDaily` entity set to create
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
-#### [Power BI query](#tab/powerbi/)
-
 
 ### Test summary for Build workflow  
 
 Use the following queries to view the test summary of a pipeline for a **Build** workflow.
 
+
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -150,7 +150,7 @@ $apply=filter(
 
 ***
 
-### Filter by branch
+### Test summary filtered by branch
 
 To view the test summary of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
@@ -210,7 +210,7 @@ $apply=filter(
 
 ***
 
-### Filter by test file
+### Test summary filtered by test file
 
 To view the test summary of a pipeline for a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
@@ -267,7 +267,7 @@ $apply=filter(
 
 ***
 
-### Filter by test owner
+### Test summary filtered by test owner
 
 To view the test summary of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
