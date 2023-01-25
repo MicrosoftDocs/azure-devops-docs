@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/8/2022
+ms.date: 1/25/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,26 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="9"><a href="2023/sprint-215-update.md" data-raw-source="[25 January 2023](2023/sprint-215-update.md)"> 25 January 2023</a></td>
+    <td>Prevent editing of shareable picklists fields</td><td>Boards</td><td>Future</td></tr>
+    <td>Swimlane colors</td><td>Boards</td><td>Future</td></tr>
+    <td>Experience improvements to pipeline permissions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Ability to disable masking for short secrets</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New PAT Scope for managing pipeline authorization and approvals and checks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Variables as inputs in checks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Script to self-validate pipeline agent version</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline run status overview icon</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for subpages table</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+    <td rowspan="7"><a href="2023/sprint-214-update.md" data-raw-source="[12 January 2023](2023/sprint-214-update.md)"> 12 January 2023</a></td>
+    <td>Extensions should display their Scopes</td><td>General</td><td>Future</td></tr>
+    <td>Card resize logic in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch update improvements</td><td>Boards</td><td>Future</td></tr>
+    <td>Batch delete API (GA)</td><td>Boards</td><td>Future</td></tr>
+    <td>Support for Tokyo version of ServiceNow</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New predefined system variable</td><td>Pipelines</td><td>Future</td></tr>
+    <td>General Availability of templates support in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
     <td rowspan="11"><a href="2022/sprint-213-update.md" data-raw-source="[8 December 2022](2022/sprint-213-update.md)"> 8 December 2022</a></td>
     <td>Copy comment links</td><td>Boards</td><td>Future</td></tr>
     <td>Container Registry service connections can now use Azure Managed Identities</td><td>Pipelines</td><td>Future</td></tr>
@@ -66,6 +86,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Copy work item attachment URL</td><td>Boards</td><td>Future</td></tr>
     <td>Pipeline Agent supports Group Managed Service Accounts as service account</td><td>Pipelines</td><td>Future</td></tr>
     <td>Show Parent in Query Results Widget</td><td>Reporting</td><td>Future</td></tr>
+</tr>
+    <td rowspan="6"><a href="2022/sprint-210-update.md" data-raw-source="[4 October 2022](2022/sprint-210-update.md)"> 4 October 2022</a></td>
+    <td>All Public REST APIs support granular PAT scopes</td><td>General</td><td>Future</td></tr>
+    <td>Move to column and move to swimlane</td><td>Boards</td><td>Future</td></tr>
+    <td>Windows PowerShell task performance improvement</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipelines Agent on .NET 6 pre-announcement</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Node 16 task runner in pipeline agent</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New user interface for upstream package search</td><td>Artifacts</td><td>Future</td></tr>
 </tr>
     <td rowspan="8"><a href="2022/sprint-209-update.md" data-raw-source="[12 September 2022](2022/sprint-209-update.md)"> 12 September 2022</a></td>
     <td>Increase Delivery Plans team limit from 15 to 20</td><td>Boards</td><td>Future</td></tr>
