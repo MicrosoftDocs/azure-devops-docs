@@ -17,12 +17,12 @@ ms.date: 01/24/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
  
-Pipelines that include test tasks can be queried to build a test summary trend report. For example, the following report displays the number of failed test runs in each column over a period of 20 days, along with the line chart showing the trend of test pass rate. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+Pipelines that include test tasks can be queried to build a test summary trend report. For example, the following report displays the number of failed test runs in each column over a period of 24 days, along with the line chart showing the trend of test pass rate. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
  
 :::image type="content" source="media/pipeline-test-reports/test-summary-trend-stack-column-line-chart-report.png" alt-text="Screenshot of  Test Summary Trend Stacked Column Line chart report.":::
 
-Specifically, you'll find sample queries for the following reports: 
+Specifically, this article provides sample queries for generating the following reports: 
 
 - Test summary trend for build workflow
 - Test summary trend for release workflow
@@ -221,7 +221,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 To view the test summary trend of a pipeline for a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Branch` into `Test.ContainerName`
+- Expand `Test` into `Test.ContainerName`
 - Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
 - Select the container name from the slicer for which you need to see the outcome summary.
  
@@ -280,7 +280,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 To view the test summary trend of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Branch` into `Test.TestOwner`
+- Expand `Test` into `Test.TestOwner`
 - Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
 - Select the test owner from the slicer for which you need to see the outcome summary.
  
@@ -496,9 +496,9 @@ The following table describes each part of the query.
  
 [!INCLUDE [temp](includes/rename-query.md)]
 
-## Expand columns in Power BI
+## Expand the CompletedOn column in Power BI
 
-Expand the `CompletedOn` column. Expanding the column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
+Expand the `CompletedOn` column. Expanding the column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
 ## Change column data type
 
@@ -510,7 +510,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 ## Create the line and stack column chart report
  
-1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas as shown in the following image. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary-trend.png" alt-text="Screenshot of visualization fields selections for Test Summary Trend stacked column line chart report. ":::
 

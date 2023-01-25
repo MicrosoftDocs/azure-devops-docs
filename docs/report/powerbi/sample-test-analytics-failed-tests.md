@@ -18,10 +18,12 @@ ms.date: 10/13/2021
 
 This article shows you how to create a report that shows the list of failed tests for a pipeline.
 
+You can create a report that shows the list of failed tests for pipeline runs that include test tasks. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+
 An example is shown in the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI failed test report.](media/odata-powerbi-test-analytics/failed-tests-report1.png)
+
+:::image type="content" source="media/pipeline-test-reports/failed-tests-table-report.png" alt-text="Screenshot of Failed Tests Table report.":::
 
 Specifically, you'll find sample queries for the following reports: 
 
@@ -35,9 +37,19 @@ Specifically, you'll find sample queries for the following reports:
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
+[!INCLUDE [temp](includes/sample-required-reading.md)]
+
+
 ## Sample queries
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+You can use the following queries of the `TestResultsDaily` entity set to create different but similar pipeline failed test reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by Test.  
+
+[!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
+
+
+### Failed tests for a Build workflow  
+
+Use the following queries to view the failed tests for a **Build** workflow pipeline.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -95,266 +107,10 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ***
 
-### Substitution strings
 
+### Failed tests for Release workflow
 
-[!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
-- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
-
-### Query breakdown
-
-The following table describes each part of the query.
-
-:::row:::
-   :::column span="1":::
-   **Query part**
-   :::column-end:::
-   :::column span="1":::
-   **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-   `$apply=filter(`
-   :::column-end:::
-   :::column span="1":::
-   Start filter()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `Pipeline/PipelineName eq '{pipelineName}'`
-   :::column-end:::
-   :::column span="1":::
-   Return test runs for the specified pipeline
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and CompletedOn/Date ge {startdate}`
-   :::column-end:::
-   :::column span="1":::
-   Return test runs on or after the specified date
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and Workflow eq 'Build'`
-   :::column-end:::
-   :::column span="1":::
-   Return test runs for 'Build' workflow
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `)`
-   :::column-end:::
-   :::column span="1":::
-   Close filter()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `/groupby(`
-   :::column-end:::
-   :::column span="1":::
-   Start groupby()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `(TestSK, Test/TestName),`
-   :::column-end:::
-   :::column span="1":::
-   Group by the test Name
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `aggregate(`
-   :::column-end:::
-   :::column span="1":::
-   Start aggregate. For all the test runs matching the above filter criteria:
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultCount with sum as TotalCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of test runs as TotalCount
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultPassCount with sum as PassedCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of passed test runs as PassedCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultFailCount with sum as FailedCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of failed test runs as FailedCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultNotExecutedCount with sum as NotExecutedCount`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of not executed test runs as NotExecutedCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultNotImpactedCount with sum as NotImpactedCount,`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of not affected test runs as NotImpactedCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `ResultFlakyCount with sum as FlakyCount`
-   :::column-end:::
-   :::column span="1":::
-   Count the total number of flaky test runs as FlakyCount.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `))`
-   :::column-end:::
-   :::column span="1":::
-   Close aggregate() and groupby()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `/compute(`
-   :::column-end:::
-   :::column span="1":::
-   Start compute()
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast(TotalCount sub NotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate`
-   :::column-end:::
-   :::column span="1":::
-   For all the tests, calculate Pass rate.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `)`
-   :::column-end:::
-   :::column span="1":::
-   Close compute()
-   :::column-end:::
-:::row-end:::
-
-## Power BI transforms
-
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such an entity is Test.
-
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Test**.
-
-### Expand the Test column
-
-1. Choose the expand button
-
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/failed-tests-expand1.png)
-    
-1. Select the checkbox "(Select All Columns)" to expand
-
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/failed-tests-expand2.png)
-
-1. The table now contains the expanded entity **Test.TestName**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/failed-tests-expand3.png)
-    
-
-### Change column type
-
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. You can change the column type as shown.
-
-1. Change the type of column **TotalCount**, **PassedCount**, **FailedCount**, **NotExecutedCount**, **NotImpactedCount, and **FlakyCount** to **Whole Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, change column type.](media/odata-powerbi-test-analytics/failed-tests-changetype1.png)
-    
-1. Change the type of column **PassRate** to **Decimal Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Change the type of column PassRate to Decimal Number.](media/odata-powerbi-test-analytics/failed-tests-changetype2.png)
-
-
-### Rename fields and query, then Close & Apply
-
-When finished, you may choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/failed-tests-rename1.png)
-
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
-  
-  
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Visualizations failed test report fields.](media/odata-powerbi-test-analytics/failed-tests-field1.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Table**.
-1. Add the field "Test.TestName" to **Values**.
-1. Add the field "TotalCount" to **Values**.
-1. Add the field "PassedCount" to **Values**.
-1. Add the field "FailedCount" to **Values**.
-1. Add the field "NotImpactedCount" to **Values**.
-1. Add the field "NotExecutedCount" to **Values**.
-1. Add the field "FlakyCount" to **Values**.
-1. Add the field "PassRate" to **Values**
-    
-Your report should look like this. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample failed test report.](media/odata-powerbi-test-analytics/failed-tests-report1.png)
-
-
-
-You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
-
-## Failed tests for Release workflow
-
-You may want to view the failed tests of a pipeline for **Release** workflow, instead of Build workflow.
+Use the following queries to view the failed tests for a **Release** workflow pipeline.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -406,13 +162,16 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ***
 
-## Filter by Branch
+### Failed tests filtered by Branch
 
-You may want to view the failed tests of a pipeline for a particular branch only. To create the report, carry out the following extra steps along with what is defined previously in this article.
+To view the failed tests of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
-- Expand Branch into Branch.BranchName
-- Select Power BI Visualization Slicer and add the field Branch.BranchName to the slicer's Field
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand `Branch` into `Branch.BranchName`
+- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
+- Select the branch name from the slicer for which you need to see the outcome summary.
+
+To learn more about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
+ 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -466,13 +225,14 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ***
 
-## Filter by test file
+### Failed tests filtered by test file
 
-You may want to view the failed tests of a pipeline for a particular test file only. To create the report, carry out the following extra steps along with what is defined previously in this article.
+To view the failed tests for a pipeline and a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand Branch into Test.ContainerName
-- Select Power BI Visualization Slicer and add the field Test.ContainerName to the slicer's Field
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand `Test` into `Test.ContainerName`
+- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
+- Select the container name from the slicer for which you need to see the outcome summary.
+  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -524,13 +284,13 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ***
 
-## Filter by test owner
+### Failed tests filtered by test owner
 
-You may want to view the failed tests of a pipeline for tests owned by a particular test owner only. To create the report, carry out the following extra steps along with what is defined previously in this article.
+To view the Failed test for a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand Branch into Test.TestOwner
-- Select Power BI Visualization Slicer and add the field Test.TestOwner to the slicer's Field
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand `Test` into `Test.TestOwner`
+- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
+- Select the test owner from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -582,6 +342,217 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 *** 
 
+### Substitution strings
+
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+
+### Query breakdown
+
+The following table describes each part of the query.
+
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start `filter()` clause.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for the specified pipeline.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs on or after the specified date.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for `Build` workflow pipeline.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close `filter()` clause.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start `groupby()` clause.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(TestSK, Test/TestName),`
+   :::column-end:::
+   :::column span="1":::
+   Group by the test Name
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start `aggregate` clause to sum the test runs matching the filter criteria.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of test runs as `TotalCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultPassCount with sum as PassedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of passed test runs as `PassedCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFailCount with sum as FailedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of failed test runs as `FailedCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotExecutedCount with sum as NotExecutedCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not executed test runs as `NotExecutedCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotImpactedCount with sum as NotImpactedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not affected test runs as `NotImpactedCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFlakyCount with sum as FlakyCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of flaky test runs as `FlakyCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="1":::
+   Close `aggregate()` and `groupby()` clauses.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start `compute()` clause.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast(TotalCount sub NotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate`
+   :::column-end:::
+   :::column span="1":::
+   For all the tests, calculate `PassRate`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close `compute()` clause.
+   :::column-end:::
+:::row-end:::
+
+ 
+[!INCLUDE [temp](includes/rename-query.md)]
+
+## Expand the Test column in Power BI
+
+Expand the `Test` column to show the expanded entity `Test.TestName`. Expanding the column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+
+## Change column data type
+
+1. From the Power Query Editor, select the `TotalCount`, `PassedCount`, `FailedCount`, `NotExecutedCount`, `NotImpactedCount`, and `FlakyCount`  columns; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
+
+1. Select the `PassRate` column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+
+To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
+## Create the line and stack column chart report
+ 
+1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area as shown in the following image. 
+
+	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary-trend.png" alt-text="Screenshot of visualization fields selections for Test Summary Trend stacked column line chart report. ":::
+
+1. Add the following fields to the **Columns** section in the order listed.  
+
+	- `Test.TestName`
+	- `TotalCount`
+	- `PassedCount`
+	- `FailedCount`
+	- `NotImpactedCount`
+	- `NotExecutedCount`
+	- `FlakyCount`
+	- `PassRate`
+ 
+
+Your report should look similar to the following image. 
+
+:::image type="content" source="media/pipeline-test-reports/failed-tests-table-report.png" alt-text="Screenshot of Sample Failed Tests Table report.":::
+ 
+
+[!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
+
+
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
+
