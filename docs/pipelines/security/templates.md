@@ -3,7 +3,7 @@ title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: vijayma
-ms.date: 02/24/2021
+ms.date: 01/24/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -301,13 +301,13 @@ jobs:
       condition: always()
 ```
 ::: moniker-end
-<!-- Coming Q1 CY20
+
+
 ## Template enforcement
+
 A template is only a security mechanism if you can enforce it.
-The control point to enforce use of templates is once again a protected resource.
-Configure a template check on your agent pool or other protected resource.
-This check will fail if your pipeline does not extend the required template and will prevent access to that resource.
--->
+The control point to enforce use of templates is a [protected resource](resources.md).
+You can configure approvals and checks on your agent pool or other protected resources like repositories. For an example, see [Add a repository resource check](../process/repository-resource.md#add-a-repository-resource-check). 
 
 ## Next steps
 

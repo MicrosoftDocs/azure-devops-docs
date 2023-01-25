@@ -391,7 +391,7 @@ The extension manifest contains all of the information about your extension. It 
 | `id`              | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task. Typically the build or release task name is  in the ID of the contribution. |
 | `type`            | Type of the contribution. Should be **ms.vss-distributed-task.task**.                                                                                                                                         |
 | `targets`         | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.                                                                                                                   |
-| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release task pipeline.                                                                                    |
+| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release pipeline task.                                                                                    |
 
 ### Files
 

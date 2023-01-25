@@ -194,7 +194,7 @@ Note that most new features we are shipping in Boards are only available in the 
 
 ### Pipelines agent Node lifecycle
 
-Azure Pipelines tasks can be authored either in Node or Powershell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
+Azure Pipelines tasks can be authored either in Node or PowerShell, and they use the corresponding runner in the Azure Pipelines agent. Node has a [regular cadence of releases](https://github.com/nodejs/release#release-schedule), with Node 16 being the LTS and Node 18 the Current version as of October, 2022. The original design of the Node task runner did not make Node version upgrades straightforward for task authors, and as a result has not kept up with the latest Node releases. We've heard feedback from customers on this, and are now making a number of changes to enable Azure Pipelines agents to keep installed Node versions in sync with the Node release cadence and support lifecycle while minimizing impacts on task and pipeline authors. 
 
 As a first step, we recently released a new [Node 16 task runner](/azure/devops/release-notes/2022/sprint-210-update#node-16-task-runner-in-pipeline-agent) for the agent. Over the next few months, we plan to provide improved guidance for task authors to keep up with Node updates. Because not all tasks in the [Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs) will be continuously updated to run on the latest versions of Node, we will also provide pipeline authors the ability to continue using non-upgraded tasks. Once all these features are available, we'll remove end-of-life versions of Node from Microsoft hosted agents and self-hosted agent images. 
 
@@ -324,7 +324,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="13"><strong>2022 Q4</strong></td>
+        <td rowspan="12"><strong>2022 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters" data-raw-source="[Maintain backlog hierarchy when filters are applied](/azure/devops/release-notes/2022/sprint-211-update#option-to-maintain-hierarchy-with-filters)">Maintain backlog hierarchy when filters are applied</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -368,12 +368,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes" data-raw-source="[Associate all public APIs with PAT scopes](/azure/devops/release-notes/2022/sprint-210-update#all-public-rest-apis-support-granular-pat-scopes)">Associate all public APIs with PAT scopes</a></td>
         <td>General</td>
         <td>2022.1</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/pull-request-widget" data-raw-source="[Pull Request widget to allow for the selection of many repos](/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>
+      </tr>      
       <tr>
         <td><a href="/azure/devops/release-notes/2022/sprint-211-update#show-parent-in-query-results-widget" data-raw-source="[Show Link with Parent Name in Query Results Widget](/azure/devops/release-notes/2022/sprint-211-update#show-parent-in-query-results-widget)">Show Link with Parent Name in Query Results Widget</a></td>
         <td>Reporting</td>
@@ -390,7 +385,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="16"><strong>2023 Q1</strong></td>
+        <td rowspan="18"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -454,6 +449,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Boards</td>
         <td>Future</td>      
       </tr>
+       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[REST APIs to connect GitHub Repos to Azure Boards](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">REST APIs to connect GitHub Repos to Azure Boards (Preview)</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work Item support for Markdown editing](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Work Item support for Markdown editing</a></td>
         <td>Boards</td>
@@ -463,14 +463,19 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[swimlane rules on kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>     
+      </tr>   
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/pull-request-widget" data-raw-source="[Pull Request widget to allow for the selection of many repos](/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>  
       <tr>
        <td><a href="/azure/devops/release-notes/roadmap/2023/org-profile-image" data-raw-source="[Organization profile image](/azure/devops/release-notes/roadmap/2023/org-profile-image)">Organization profile image</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td rowspan="5"><strong>2023 Q2</strong></td>
+        <td rowspan="6"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
         <td>Future</td>
@@ -479,6 +484,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>General</td>
         <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
+        <td>Boards</td>
+        <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>

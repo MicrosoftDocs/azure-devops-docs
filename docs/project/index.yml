@@ -100,7 +100,7 @@ landingContent:
           - text: Request feedback, Test & Feedback extension
             url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
           - text: Request feedback, Microsoft Feedback Client
-            url: ./feedback/get-feedback.md
+            url: /previous-versions/azure/devops/project/feedback/get-feedback
           - text: Track feedback
             url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
  

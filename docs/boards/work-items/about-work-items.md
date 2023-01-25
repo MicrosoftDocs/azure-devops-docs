@@ -289,8 +289,8 @@ Along with the work items types that appear on backlogs and boards, there are wo
 |-----------------------------|--------------------------------------|
 |Code Review Request|Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). |
 |Code Review Response|A code review response is created for each person who's requested to provide review comments.|
-|Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).|
-|Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).|
+|Feedback Request|Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
+|Feedback Response|A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback).|
 |Shared Step|Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).|
 |Shared Parameter|Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).|
 |Test Case|Each test case [defines a manual test](../../test/create-test-cases.md).|
@@ -322,7 +322,7 @@ Users with Basic access have full access to all features. Users with Stakeholder
 ## Try this next 
 
 > [!div class="nextstepaction"]
-> [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+> [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
 
 
 ## Related articles 

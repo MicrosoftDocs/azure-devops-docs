@@ -3,6 +3,7 @@ title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/25/2023
+
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -56,6 +57,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Support for Tokyo version of ServiceNow</td><td>Pipelines</td><td>Future</td></tr>
     <td>New predefined system variable</td><td>Pipelines</td><td>Future</td></tr>
     <td>General Availability of templates support in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="11"><a href="2022/sprint-213-update.md" data-raw-source="[8 December 2022](2022/sprint-213-update.md)"> 8 December 2022</a></td>
     <td>Copy comment links</td><td>Boards</td><td>Future</td></tr>

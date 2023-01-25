@@ -496,6 +496,6 @@ That's the basics about defining queries. For an index of query examples, see [Q
 
 - [Query FAQs](query-faqs.yml)
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
