@@ -4,7 +4,7 @@ description: Configure build completion triggers (classic)
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 03/31/2021
+ms.date: 01/25/2023
 monikerRange: ">=azure-devops-2019"
 ---
 
