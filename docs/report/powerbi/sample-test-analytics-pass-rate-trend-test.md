@@ -302,7 +302,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
  
 1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas. 
 
-	:::image type="content" source="media/pipeline-test-reports/visualizations-test-pass-rate-trend-stacked-column-line-chart.png" alt-text="Screenshot of visualization fields selections for PAss rate trend duuration table report. ":::
+	:::image type="content" source="media/pipeline-test-reports/visualizations-test-pass-rate-trend-stacked-column-line-chart.png" alt-text="Screenshot of visualization fields selections for Pass rate trend duration table report. ":::
 
 1. Add `Date.Date` to the **X-axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
 
