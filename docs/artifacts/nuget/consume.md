@@ -24,37 +24,33 @@ To set up Visual Studio to access your feed as a package source, we must first g
 
 #### [Windows](#tab/windows/)
 
-1. In Visual Studio, select **Tools**, and then select **Options**.
+1. Open Visual Studio, and then select **Tools** -> **Options**.
 
 1. Select **NuGet Package Manager**, and then select **Package Sources**.
 
-1. Enter the feed's **Name** and **Source** URL, and then select the green (+) sign to add a new package source.
+1. Enter your feed's **Name** and the **Source** URL you copied in the previous step, and then select the green (+) sign to add a new package source.
 
-1. If you enabled upstream sources in your feed, clear the **nuget.org** checkbox.
+1. If you enabled [upstream sources](/upstream-sources.md) in your feed, clear the **nuget.org** checkbox.
 
 1. Select **OK** when you are done.
 
     :::image type="content" source="../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio - Windows":::
 
-<a name="mac-os"></a>
-
 #### [macOS](#tab/macOS/)
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
+1. Create a new [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-1. In visual studio, select **Preferences** from the menu bar.
+1. Open visual studio, and then select **Preferences** from the menu bar.
 
 1. Select **NuGet**, and then select **Sources**.
 
-1. Select **Add**, and then enter your feed's name, the source URL, a userName (any string), and your personal access token.
-
-1. Select **OK**.
+1. Select **Add**, and then enter your feed's **Name**, the **Source** URL you copied in the previous step, a userName (any string), and your personal access token. Select **OK** when you are done.
 
 1. If you enabled upstream sources in your feed, clear the **nuget.org** checkbox.
 
 1. Select **OK** when you are done.
 
-    :::image type="content" source="../media/vs-mac-settings.png" alt-text="Set up visual studio: macOS":::
+    :::image type="content" source="../media/vs-mac-settings.png" alt-text="A screenshot showing how to add a new package source in Visual Studio - macOS":::
 
 ---
 
