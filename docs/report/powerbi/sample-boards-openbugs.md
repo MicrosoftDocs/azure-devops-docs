@@ -222,7 +222,7 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 ## Create the Matrix report
 
-1. In Power BI, choose the **Matrix** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Matrix** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/open-bugs-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Open Bugs report. ":::
 

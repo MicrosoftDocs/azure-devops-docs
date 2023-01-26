@@ -190,7 +190,7 @@ You can rename column fields. For example, you can rename the column `NotApplica
 
 ## Create the stacked area chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Stacked area chart** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Stacked area chart** report. 
 	:::image type="content" source="media/reports-test-plans/test-plan-execution-trend-stacked-area-chart-visualizations.png" alt-text="Screenshot of visualization fields selections for test plan execution trend run report. ":::
  
 1. Drag and drop **DateSK** onto the **X-Axis**.

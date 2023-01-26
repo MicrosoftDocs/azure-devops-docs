@@ -406,7 +406,7 @@ In this example, the following fields have been renamed:
 
 ## Create a table report to list linked work items 
 
-1. In Power BI, choose **Table** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Table** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/parent-child-links-list-table-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Parent-Child Links list table report. ":::
 

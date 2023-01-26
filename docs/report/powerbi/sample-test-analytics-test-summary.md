@@ -9,13 +9,13 @@ ms.author: kaelli
 ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'   
+monikerRange: '>= azure-devops-2020'  
 ms.date: 01/24/2023
 ---
 
 # Test summary sample report 
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 When you execute a pipeline run and include test tasks within the pipeline definition, you can create a report that indicates the  number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
@@ -454,7 +454,7 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 
 ## Create the Donut chart report
 
-1. In Power BI, under **Visualizations**, choose the **Donut** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Donut** report. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary.png" alt-text="Screenshot of visualization fields selections for Test Summary report. ":::
 

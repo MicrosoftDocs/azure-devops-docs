@@ -267,7 +267,7 @@ To learn how, see the following sections in [Transform Analytics data to generat
 
 ## Create the stacked bar chart report 
 
-1. In Power BI, choose **Stacked bar chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Stacked bar chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/feature-progress-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Feature Progress stacked bar chart report. ":::
 

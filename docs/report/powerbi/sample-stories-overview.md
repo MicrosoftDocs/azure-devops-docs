@@ -388,12 +388,7 @@ The following table describes each part of the query.
  
 
 
-## Create the Table report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The following example assumes that no one renamed any columns. 
+## Create the Table report 
 
 To create the report, perform the following steps:
 

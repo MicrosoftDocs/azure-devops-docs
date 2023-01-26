@@ -397,7 +397,7 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 
 ## Create the Line chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Line chart** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Line chart** report. 
 
 	:::image type="content" source="media/pipeline-reports/duration-trend-visualizations.png" alt-text="Screenshot of Visualization fields selections for pipelines run duration trend report. ":::
   

@@ -9,13 +9,13 @@ ms.author: kaelli
 ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'  
 ms.date: 01/24/2023
 ---
 
 # Test summary trend sample report 
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
  
 Pipelines that include test tasks can be queried to build a test summary trend report. For example, the following report displays the number of failed test runs in each column over a period of 24 days, along with the line chart showing the trend of test pass rate. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
@@ -510,13 +510,15 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 ## Create the line and stack column chart report
  
-1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary-trend.png" alt-text="Screenshot of visualization fields selections for Test Summary Trend stacked column line chart report. ":::
 
-1. Add `Date.Date` to the **X-Axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
+1. Add `CompletedOn.Date` to the **X-axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
 
-1. Add `AvgDuration` to **Y-axis**, right-click the field and select **Average** rather than **Sum**.
+1. Add `ResultFailCount` to **Column y-axis**.
+
+1. Add `PassRate` to **Line y-axis**.
 
 Your report should look similar to the following image. 
 
