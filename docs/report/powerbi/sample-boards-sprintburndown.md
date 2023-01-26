@@ -85,7 +85,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
@@ -388,7 +388,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 
 ## Create the stacked column chart report
 
-1. In Power BI, choose the **Stacked column chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked column chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
 

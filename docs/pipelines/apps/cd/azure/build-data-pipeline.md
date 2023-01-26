@@ -4,7 +4,7 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.subservice: azure-devops-pipelines-apps
-ms.date: 10/28/2021
+ms.date: 01/25/2023
 ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
@@ -133,9 +133,9 @@ To make commands easier to run, start by selecting a default region. After you s
     * Version: `V2`
     * Resource group: `data-pipeline-cicd-rg`
     * Location: Your closest location
-    * Clear the selection for **Enable GIT**.
+    * Clear the selection for **Enable Git**.
 
-   1. Add the Azure Data Factory extension. 
+   1. Add the [Azure Data Factory extension](/cli/azure/datafactory). 
    
         ```azurecli
        az extension add --name datafactory

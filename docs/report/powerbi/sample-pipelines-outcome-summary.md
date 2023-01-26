@@ -88,7 +88,7 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -439,7 +439,7 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
 
 ## Create the Donut chart report
 
-1. In Power BI, under **Visualizations**, choose the **Donut** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Donut** report. 
 
 	:::image type="content" source="media/pipeline-reports/single-pipelines-outcome-visualizations.png" alt-text="Screenshot of visualization fields selections for all pipeline runs report. ":::
 

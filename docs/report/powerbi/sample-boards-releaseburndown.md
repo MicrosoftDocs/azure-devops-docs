@@ -85,7 +85,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -418,10 +418,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 
 ## Create the clustered column chart  
 
-Power BI shows you the fields you can report on. The following example assumes that columns weren't renamed. 
-
-
-1. In Power BI, choose **Clustered column chart** under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Clustered column chart** under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/release-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Release burndown clustered column chart report. ":::
 
@@ -432,7 +429,7 @@ Power BI shows you the fields you can report on. The following example assumes t
 1. Add `TotalStoryPoints` to **Y-Axis**. 
   
 
-The example report displays burndown on both the Count of Stories and Story Points.
+The example report displays burndown on both the count of Stories and sum or **Story Points**.
 
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Sample Release burndown clustered column chart report.":::
 

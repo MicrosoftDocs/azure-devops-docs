@@ -263,7 +263,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
  
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -388,12 +388,7 @@ The following table describes each part of the query.
  
 
 
-## Create the Table report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The following example assumes that no one renamed any columns. 
+## Create the Table report 
 
 To create the report, perform the following steps:
 
