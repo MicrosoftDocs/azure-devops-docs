@@ -110,14 +110,14 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`.
-- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20220815` for 22 August 2015.
+- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20220815` for 15 August 2022.
 
 
 ### Query breakdown
@@ -190,7 +190,7 @@ You can rename column fields. For example, you can rename the column `NotApplica
 
 ## Create the stacked area chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Stacked area chart** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Stacked area chart** report. 
 	:::image type="content" source="media/reports-test-plans/test-plan-execution-trend-stacked-area-chart-visualizations.png" alt-text="Screenshot of visualization fields selections for test plan execution trend run report. ":::
  
 1. Drag and drop **DateSK** onto the **X-Axis**.

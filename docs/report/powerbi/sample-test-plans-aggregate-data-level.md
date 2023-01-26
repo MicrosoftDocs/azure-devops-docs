@@ -102,7 +102,7 @@ $apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}' and TestSuite/IdLeve
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
  
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]

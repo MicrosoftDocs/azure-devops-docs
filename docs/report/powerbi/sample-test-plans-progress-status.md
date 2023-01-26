@@ -109,7 +109,7 @@ $apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -180,7 +180,7 @@ You can rename column fields. For example, you can rename the column `NotApplica
 
 ## Create the Donut chart report
 
-1. In Power BI, under **Visualizations**, choose the **Donut** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Donut** report. 
 
 	:::image type="content" source="media/reports-test-plans/test-plan-progress-donut-report-visualizations.png" alt-text="Screenshot of visualization fields selections for test progress run report. ":::
 
