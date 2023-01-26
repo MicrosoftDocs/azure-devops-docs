@@ -76,7 +76,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name 
@@ -267,7 +267,7 @@ To learn how, see the following sections in [Transform Analytics data to generat
 
 ## Create the stacked bar chart report 
 
-1. In Power BI, choose **Stacked bar chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Stacked bar chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/feature-progress-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Feature Progress stacked bar chart report. ":::
 
