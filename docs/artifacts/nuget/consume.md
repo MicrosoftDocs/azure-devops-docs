@@ -50,7 +50,7 @@ To set up Visual Studio to access your feed as a package source, we must first g
 
 1. Select **OK** when you're done.
 
-    :::image type="content" source="../media/vs-mac-settings.png" alt-text="A screenshot showing how to add a new package source in Visual Studio - macOS":::
+    :::image type="content" source="../media/vs-mac-settings.png" alt-text="A screenshot showing how to add a new package source in Visual Studio - macOS.":::
 
 ---
 
