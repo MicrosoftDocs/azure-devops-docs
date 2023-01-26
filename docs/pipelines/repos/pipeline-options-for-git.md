@@ -27,7 +27,7 @@ While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps project, 
 | Checkout submodules | Yes | Yes | Yes |
 | Checkout files from LFS | Yes | Yes | Yes |
 | Clone a second repo | Yes | Yes | Yes |
-| Don't sync sources | Yes | Yes | No |
+| Don't sync sources | Yes | Yes | Yes |
 | Shallow fetch | Yes | Yes | Yes |
 
 
