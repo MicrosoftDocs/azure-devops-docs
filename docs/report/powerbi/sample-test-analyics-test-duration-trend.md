@@ -1,7 +1,7 @@
 ---
-title: Pipeline test duration sample Power BI reports 
+title: Pipeline test duration trend sample Power BI reports 
 titleSuffix: Azure DevOps
-description: Learn how to generate a test duration Power BI report for a given pipeline in the project.
+description: Learn how to generate a test duration trend Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.manager: mijacobs
@@ -13,27 +13,15 @@ monikerRange: '>= azure-devops'
 ms.date: 01/25/2023
 ---
 
-# Test duration sample report
+# Test duration trend sample report
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 
-Test duration reports, similar to the one shown in the following image, provide insight into the number of times a test is run and the average time it takes for a particular test to execute during a pipeline run. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+Test duration trend reports, similar to the one shown in the following image, provide insight into the day-wise trend of the average time taken to execute a test for a selected time range. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
-:::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Test Duration Table report.":::
-Power BI shows you the fields you can report on. 
+:::image type="content" source="media/pipeline-test-reports/test-duration-trend-line-chart-report.png" alt-text="Screenshot of Test Duration Trend Line chart report.":::
  
-Use the queries provided in this article to generate the following reports:  
-
-
-- Test duration for build workflow
-- Test duration for release workflow
-- Test duration for a particular branch
-- Test duration for a particular test file
-- Test duration for a particular test owner 
-
-
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -48,34 +36,28 @@ You can use the following queries of the `TestResultsDaily` entity set to create
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
-### Test duration for Build workflow  
-
-Use the following queries to view the test duration report for a pipeline with a **Build** workflow.
-
+Use the following queries to view the test duration trend report for a pipeline with a **Build** workflow. 
 
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
-let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-                &"And Workflow eq 'Build' "
-           &") "
-            &"/groupby( "
-                &"(TestSK, Test/TestName), "
-                &"aggregate( "
-                  &"ResultCount with sum as TotalCount, "
-                  &"ResultDurationSeconds with sum as TotalDuration "
-            &")) "
-        &"/compute( "
-    &"TotalDuration div TotalCount as AvgDuration) "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-in
-    Source
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter(
+	Pipeline/PipelineName eq '{pipelineName}'
+	And Date/Date ge {startdate}
+	And Workflow eq 'Build'
+	)
+/groupby(
+	(TestSK, Test/TestName, Date/Date), 
+	aggregate(
+	  ResultCount with sum as TotalCount,
+	  ResultDurationSeconds with sum as TotalDuration
+	))
+/compute(
+	TotalDuration div TotalCount as AvgDuration
+	)
 ```
 
 #### [OData query](#tab/odata/)
@@ -100,214 +82,7 @@ TotalDuration div TotalCount as AvgDuration)
 ```
 
 ***
-
-
-
-### Test duration for Release workflow  
-
-Use the following queries to view the test duration report for a pipeline with a **Release** workflow.
-
-
-#### [Power BI query](#tab/powerbi/)
-
-[!INCLUDE [temp](includes/sample-powerbi-query.md)]
-
-```
-let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate}) "
-        &"/groupby((TestSK, Test/TestName, Workflow), "
-        &"aggregate( "
-            &"ResultCount with sum as TotalCount, "
-                &"ResultDurationSeconds with sum as TotalDuration "
-                &")) "
-            &"/compute( "
-                &"TotalDuration div TotalCount as AvgDuration) "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-in
-    Source
-```
-
-#### [OData query](#tab/odata/)
-
-[!INCLUDE [temp](includes/sample-odata-query.md)]
-
-```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter(
-	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate})
-/groupby((TestSK, Test/TestName, Workflow), 
-	aggregate(
-	ResultCount with sum as TotalCount,
-	ResultDurationSeconds with sum as TotalDuration
-	))
-/compute(
-TotalDuration div TotalCount as AvgDuration)
-```
-
-***
-
-### Test duration filtered by branch
-
-To view the test duration of pipeline tests for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
-
-- Expand `Branch` into `Branch.BranchName`
-- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
-- Select the branch name from the slicer for which you need to see the outcome summary.
-
-To learn more about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
  
-#### [Power BI query](#tab/powerbi/)
-
-[!INCLUDE [temp](includes/sample-powerbi-query.md)]
-
-```
-let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build') "
-        &"/groupby((TestSK, Test/TestName, Branch/BranchName), "
-            &"aggregate( "
-                &"ResultCount with sum as TotalCount, "
-                &"ResultDurationSeconds with sum as TotalDuration "
-            &")) "
-                &"/compute( "
-            &"TotalDuration div TotalCount as AvgDuration) "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-in
-    Source
-```
-
-#### [OData query](#tab/odata/)
-
-[!INCLUDE [temp](includes/sample-odata-query.md)]
-
-```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter(
-	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
-	And Workflow eq 'Build')
-/groupby((TestSK, Test/TestName, Branch/BranchName), 
-	aggregate(
-	ResultCount with sum as TotalCount,
-	ResultDurationSeconds with sum as TotalDuration
-	))
-/compute(
-TotalDuration div TotalCount as AvgDuration)
-```
-
-***
- 
-### Test duration filtered by test file
-
-To view the test duration of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
-
-- Expand `Test` into `Test.ContainerName`
-- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
-- Select the test file from the slicer for which you need to see the outcome summary. 
-
-#### [Power BI query](#tab/powerbi/)
-
-[!INCLUDE [temp](includes/sample-powerbi-query.md)]
-
-```
-let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build') "
-        &"/groupby((TestSK, Test/TestName, Test/ContainerName), "
-            &"aggregate( "
-                &"ResultCount with sum as TotalCount, "
-                &"ResultDurationSeconds with sum as TotalDuration "
-            &")) "
-                &"/compute( "
-            &"TotalDuration div TotalCount as AvgDuration) "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-in
-    Source
-```
-
-#### [OData query](#tab/odata/)
-
-[!INCLUDE [temp](includes/sample-odata-query.md)]
-
-```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter(
-	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
-	And Workflow eq 'Build')
-/groupby((TestSK, Test/TestName, Test/ContainerName), 
-	aggregate(
-	ResultCount with sum as TotalCount,
-	ResultDurationSeconds with sum as TotalDuration
-	))
-/compute(
-TotalDuration div TotalCount as AvgDuration)
-```
-
-***
- 
-### Test duration filtered by test owner
-
-To view the test duration of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
-
-- Expand `Test` into `Test.TestOwner`
-- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
-- Select the test owner from the slicer for which you need to see the outcome summary.
-
-#### [Power BI query](#tab/powerbi/)
-
-[!INCLUDE [temp](includes/sample-powerbi-query.md)]
-
-```
-let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build') "
-        &"/groupby((TestSK, Test/TestName, Test/TestOwner), "
-            &"aggregate( "
-                &"ResultCount with sum as TotalCount, "
-                &"ResultDurationSeconds with sum as TotalDuration "
-            &")) "
-                &"/compute( "
-            &"TotalDuration div TotalCount as AvgDuration) "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-in
-    Source
-```
-
-#### [OData query](#tab/odata/)
-
-[!INCLUDE [temp](includes/sample-odata-query.md)]
-
-```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter(
-	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
-	And Workflow eq 'Build')
-/groupby((TestSK, Test/TestName, Test/TestOwner), 
-	aggregate(
-	ResultCount with sum as TotalCount,
-	ResultDurationSeconds with sum as TotalDuration
-	))
-/compute(
-TotalDuration div TotalCount as AvgDuration)
-```
-
-***
-
 
 ## Substitution strings and query breakdown
 
@@ -316,7 +91,12 @@ TotalDuration div TotalCount as AvgDuration)
 - `{organization}` - Your organization name
 - `{project}` - Your team project name
 - `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
-- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents September 1, 2022. Don't enclose in quotes or brackets and use two digits for both, month and date.
+
+
+> [!TIP]  
+> Depending on the number of tests added to a pipeline, the data returned can be significant. We recommend that you use a `{startdate}` for a few days to gauge the amount of data returned and adjust accordingly.
+
 
 ### Query breakdown
 
@@ -381,10 +161,10 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `(TestSK, Test/TestName),`
+   `(TestSK, Test/TestName, Date/Date),`
    :::column-end:::
    :::column span="1":::
-   Group by the test name.
+   Group by test, test name, and run date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -448,9 +228,12 @@ The following table describes each part of the query.
  
 [!INCLUDE [temp](includes/rename-query.md)]
 
-## Expand the Test column in Power BI
+## Expand the Test and Date columns in Power BI
 
-Expand the `Test` column to show the expanded entity `Test.TestName`. Expanding the column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+Expanding a column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+
+1. Expand the `Test` column to show the expanded entities `TestSK` and `Test.TestName`.  
+2. Expand the `Date` column to show the expanded entity `Date.Date`.  
 
 ## Change column data type
 
@@ -463,24 +246,23 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 [!INCLUDE [temp](includes/close-apply.md)]
  
   
-## Create the Table report
+## Create the Line chart report
  
-1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose **Line chart** and drag and drop the fields onto the **Columns** area as shown in the following image. 
 
-	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-table.png" alt-text="Screenshot of visualization fields selections for Test Duration table report. ":::
+	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-trend-line-chart.png" alt-text="Screenshot of visualization fields selections for Test Duration Trend Line chart report. ":::
 
-1. Add the following fields to the **Columns** section in the order listed.  
+1. Add `Date.Date` to the X-Axis, right-click the field and select CompletedOn.Date, rather than Date Hierarchy.
 
-	- `Test.TestName`
-	- `TotalCount`
-	- `AvgDuration` 
+1. Add ResultFailCount to Column y-axis.
+
+1. Add PassRate to Line y-axis.
 
 1. Right click the `AvgDuration` and choose **Average** instead of **Sum**.
 
 Your report should look similar to the following image. 
 
-:::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Sample Test Duration Table report.":::
-Power BI shows you the fields you can report on. 
+:::image type="content" source="media/pipeline-test-reports/test-duration-trend-line-chart-report.png" alt-text="Screenshot of Sample Test Duration Trend Line chart report.":::
   
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]

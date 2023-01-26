@@ -17,15 +17,11 @@ ms.date: 01/25/2023
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-Test duration reports provide insight into how long on average a particular test takes to execute during a pipeline run.  
+Pass rate trend reports provide insight into average time it takes for a particular test to execute during a pipeline run.  
 
 An example is shown in the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI test pass rate trend report.](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
-
-:::image type="content" source="media/pipeline-test-reports/flaky-tests-table-report.png" alt-text="Screenshot of Flaky Tests Table report.":::
-Power BI shows you the fields you can report on. 
+:::image type="content" source="media/pipeline-test-reports/test-pass-rate-trend-stack-column-line-chart-report.png" alt-text="Screenshot of Pass Rate Trend report."::: 
 
 
 [!INCLUDE [temp](includes/preview-note.md)]
@@ -126,7 +122,7 @@ The following table describes each part of the query.
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -142,7 +138,7 @@ The following table describes each part of the query.
    `And Date/Date ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return test runs on or after the specified date
+   Return test runs on or after the specified date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -150,7 +146,7 @@ The following table describes each part of the query.
    `And Test/TestName eq '{testName}'`
    :::column-end:::
    :::column span="1":::
-   Return test runs only for the specified test name
+   Return test runs only for the specified test name.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +154,7 @@ The following table describes each part of the query.
    `and Workflow eq 'Build'`
    :::column-end:::
    :::column span="1":::
-   Return test runs for 'Build' workflow
+   Return test runs for `Build` workflow.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -166,7 +162,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -174,7 +170,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -182,7 +178,7 @@ The following table describes each part of the query.
    `(Date/Date),`
    :::column-end:::
    :::column span="1":::
-   Group by the date of completion of test run
+   Group by the completion date of test run.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -190,7 +186,7 @@ The following table describes each part of the query.
    `aggregate(`
    :::column-end:::
    :::column span="1":::
-   Start aggregate. For all the test runs matching the above filter criteria:
+   Start `aggregate` clause to sum different test run outcomes matching the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -198,7 +194,7 @@ The following table describes each part of the query.
    `ResultCount with sum as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of test runs as TotalCount.
+   Count the total number of test runs as `TotalCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -206,7 +202,7 @@ The following table describes each part of the query.
    `ResultPassCount with sum as ResultPassCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of passed test runs as ResultPassCount.
+   Count the total number of passed test runs as `ResultPassCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -214,7 +210,7 @@ The following table describes each part of the query.
    `ResultFailCount with sum as ResultFailCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of failed test runs as ResultFailCount.
+   Count the total number of failed test runs as `ResultFailCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -222,7 +218,7 @@ The following table describes each part of the query.
    `ResultAbortedCount with sum as ResultAbortedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of aborted test runs as ResultAbortedCount.
+   Count the total number of aborted test runs as `ResultAbortedCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -230,7 +226,7 @@ The following table describes each part of the query.
    `ResultErrorCount with sum as ResultErrorCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of errored test runs as ResultErrorCount.
+   Count the total number of test runs marked as having an error as `ResultErrorCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -238,7 +234,7 @@ The following table describes each part of the query.
    `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of not executed test runs as ResultNotExecutedCount.
+   Count the total number of not executed test runs as `ResultNotExecutedCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -246,7 +242,7 @@ The following table describes each part of the query.
    `ResultNotImpactedCount with sum as ResultNotImpactedCount`
    :::column-end:::
    :::column span="1":::
-   Count the total number of not affected test runs as ResultNotImpactedCount.
+   Count the total number of not affected test runs as `ResultNotImpactedCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -254,7 +250,7 @@ The following table describes each part of the query.
    `))`
    :::column-end:::
    :::column span="1":::
-   Close aggregate() and groupby()
+   Close `aggregate()` and `groupby()` clauses.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -262,7 +258,7 @@ The following table describes each part of the query.
    `/compute(`
    :::column-end:::
    :::column span="1":::
-   Start compute()
+   Start `compute()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -270,7 +266,7 @@ The following table describes each part of the query.
    `iif(TotalCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpactedCount) div cast(TotalCount sub ResultNotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate)`
    :::column-end:::
    :::column span="1":::
-   For all the days, calculate Pass rate.
+   For all the days, calculate the `PassRate` .
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -278,92 +274,54 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close compute()
+   Close `compute()` clause.
    :::column-end:::
 :::row-end:::
 
-## Power BI transforms
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such an entity is Date.
+ 
+[!INCLUDE [temp](includes/rename-query.md)]
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Date**.
+## Expand the Date column in Power BI
 
-### Expand the Date column
+Expand the `Date` column to show the expanded entity `CompletedOn.Date`.  Expanding a column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+ 
 
-1. Choose the expand button
+## Change column data type
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, Choose expand button.](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand1.png)
-    
-1. Select the checkbox "(Select All Columns)" to expand
+1. From the Power Query Editor, select the `TotalCount` column; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, Select all columns.](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand2.png)
+1. Select the `PassRate`column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
 
-1. The table now contains the expanded entity **CompletedOn.Date**.
+To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, Expanded entity.](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand3.png)
-    
-
-### Change column type
-
-1. Change the type of column **PassRate** to **Decimal Number** and **TotalCount** to **Whole Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI transform data, change column type.](media/odata-powerbi-test-analytics/pass-rate-trend-test-changetype1.png)
+[!INCLUDE [temp](includes/close-apply.md)]
 
 
-### Rename fields and query, then Close & Apply
+## Create the line and stack column chart report
+ 
+1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas as shown in the following image. 
 
-When finished, you may choose to rename columns. 
+	:::image type="content" source="media/pipeline-test-reports/visualizations-test-pass-rate-trend-stacked-column-line-chart.png" alt-text="Screenshot of visualization fields selections for PAss rate trend duuration table report. ":::
 
-1. Right-click a column header and select **Rename...**
+1. Add `Date.Date` to the **X-axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
 
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Columns.](media/odata-powerbi-test-analytics/pass-rate-trend-test-rename1.png)
+1. Add `ResultPassCount` and `ResultFailCount` to the **Column y-axis**.
+ 
+1. Add `PassRate` to the **Line y-axis**..  
+ 
 
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
+Your report should look similar to the following image. 
 
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI transform data, Rename Query.](media/odatapowerbi-pipelines/renamequery.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/odatapowerbi-pipelines/closeandapply.png)
+:::image type="content" source="media/pipeline-test-reports/test-pass-rate-trend-stack-column-line-chart-report.png" alt-text="Screenshot of Sample Pass Rate Trend report."::: 
   
-  
-## Create the report
 
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Visualizations pass rate trend report fields.](media/odata-powerbi-test-analytics/pass-rate-trend-test-fileds1.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Line and stacked column chart**. 
-1. Add the field "Date.Date" to **Shared Axis**.
-    - Right-click "Date.Date" and select "Date.Date", rather than Date Hierarchy.
-1. Add the field "ResultPassCount" to **Column values**.
-1. Add the field "ResultFailCount" to **Column values**.
-1. Add the field "PassRate" to **Line values**.
-    
-Your report should look like this. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample test pass rate trend report.](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
-
-
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
+
+ 
+  
+ 
