@@ -551,6 +551,8 @@
     - name: About agents & agent pools
       href: agents/agents.md
       displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
+    - name: Agent version 3.x preview
+      href: agents/v3-agent.md
     - name: Create & manage agent pools
       href: agents/pools-queues.md
       displayName: queue, default, hosted, maintenance
