@@ -194,7 +194,7 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 In the following example, the query was renamed to *CFD*, but no columns were renamed. 
 
-1. In Power BI, choose the **Stacked area** chart under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked area** chart under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/cfd-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for CFD chart report. ":::
  

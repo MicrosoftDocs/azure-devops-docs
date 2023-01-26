@@ -346,7 +346,7 @@ Once you've expanded the columns, you may want to rename one or more fields. For
 
 ## Create the Line chart report 
 
-1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Line chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
 

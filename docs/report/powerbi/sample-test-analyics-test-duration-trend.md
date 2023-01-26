@@ -9,14 +9,13 @@ ms.author: kaelli
 ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'  
 ms.date: 01/25/2023
 ---
 
 # Test duration trend sample report
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
-
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 Test duration trend reports, similar to the one shown in the following image, provide insight into the day-wise trend of the average time taken to execute a test for a selected time range. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
@@ -248,17 +247,13 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
   
 ## Create the Line chart report
  
-1. In Power BI, under **Visualizations**, choose **Line chart** and drag and drop the fields onto the **Columns** area as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose **Line chart** and drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-trend-line-chart.png" alt-text="Screenshot of visualization fields selections for Test Duration Trend Line chart report. ":::
 
-1. Add `Date.Date` to the X-Axis, right-click the field and select CompletedOn.Date, rather than Date Hierarchy.
+1. Add `Date.Date` to the **X-axis**, right-click the field and select **Date.Date**, rather than **Date.Hierarchy**.
 
-1. Add ResultFailCount to Column y-axis.
-
-1. Add PassRate to Line y-axis.
-
-1. Right click the `AvgDuration` and choose **Average** instead of **Sum**.
+1. Add **AvgDuration** to the **Y-axis**.
 
 Your report should look similar to the following image. 
 

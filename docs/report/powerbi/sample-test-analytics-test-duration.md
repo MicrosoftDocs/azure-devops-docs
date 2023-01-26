@@ -9,19 +9,17 @@ ms.author: kaelli
 ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'  
 ms.date: 01/25/2023
 ---
 
 # Test duration sample report
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
-
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 Test duration reports, similar to the one shown in the following image, provide insight into the number of times a test is run and the average time it takes for a particular test to execute during a pipeline run. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
 :::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Test Duration Table report.":::
-Power BI shows you the fields you can report on. 
  
 Use the queries provided in this article to generate the following reports:  
 
@@ -465,7 +463,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
   
 ## Create the Table report
  
-1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-table.png" alt-text="Screenshot of visualization fields selections for Test Duration table report. ":::
 
@@ -479,8 +477,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 Your report should look similar to the following image. 
 
-:::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Sample Test Duration Table report.":::
-Power BI shows you the fields you can report on. 
+:::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Sample Test Duration Table report."::: 
   
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]

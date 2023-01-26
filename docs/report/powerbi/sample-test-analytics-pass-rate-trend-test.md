@@ -9,13 +9,13 @@ ms.author: kaelli
 ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops' 
+monikerRange: '>= azure-devops-2020'  
 ms.date: 01/25/2023
 ---
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 Pass rate trend reports provide insight into average time it takes for a particular test to execute during a pipeline run.  
 
@@ -300,7 +300,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 ## Create the line and stack column chart report
  
-1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-pass-rate-trend-stacked-column-line-chart.png" alt-text="Screenshot of visualization fields selections for PAss rate trend duuration table report. ":::
 
@@ -308,7 +308,7 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 1. Add `ResultPassCount` and `ResultFailCount` to the **Column y-axis**.
  
-1. Add `PassRate` to the **Line y-axis**..  
+1. Add `PassRate` to the **Line y-axis**. 
  
 
 Your report should look similar to the following image. 

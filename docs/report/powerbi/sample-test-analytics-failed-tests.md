@@ -1,28 +1,28 @@
 ---
 title: Pipeline failed test sample Power BI reports 
 titleSuffix: Azure DevOps
-description: Learn how to generate a list of failed tests Power BI report for a given pipeline in the project.
+description: Learn how to list failed tests in a Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'  
 ms.date: 10/13/2021
 ---
 
 # Failed tests sample report
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
- 
-You can create a report that shows the list of failed tests for pipeline runs that include test tasks. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
-The following image provides an example report.
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+ 
+You can create a report that lists failed tests, similar to the following image, for pipeline runs that include test tasks. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+ 
 
 :::image type="content" source="media/pipeline-test-reports/failed-tests-table-report.png" alt-text="Screenshot of Failed Tests Table report.":::
 
-Specifically, this article provides sample queries for the following reports: 
+Use the queries provided in this article to generate the following reports:
 
 - Failed tests for build workflow
 - Failed tests for release workflow
@@ -523,9 +523,9 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
-## Create the line and stack column chart report
+## Create the Table report
  
-1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-failed-test-table.png" alt-text="Screenshot of visualization fields selections for Failed tests table report. ":::
 

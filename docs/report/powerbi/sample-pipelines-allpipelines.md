@@ -237,7 +237,7 @@ You can rename column fields. For example, you can rename the column `Pipeline.P
   
 ## Create the Stacked Column Chart report
 
-1. In Power BI, under **Visualizations**, choose the **Stacked Column Chart** report and select the fields as shown in the following image. 
+1. In Power BI, under **Visualizations**, choose the **Stacked Column Chart** report. 
 
 	:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-visualizations.png" alt-text="Screenshot of visualization fields selections for all pipeline runs report. ":::
  
