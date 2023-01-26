@@ -27,7 +27,7 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 | Fedora | <= 32 |
 | RedHat Enterprise Linux | <= 6 |
 | Ubuntu | < 18.04 LTS |
-| MacOS | < 10.15 |
+| macOS | < 10.15 |
 
 You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools will be able to upgrade from 2.x to 3.x.
 
