@@ -16,7 +16,7 @@ Using Azure Artifacts and Visual Studio, you can set up your development machine
 
 ## Get source URL
 
-To connect Visual Studio to our feed, we must first get the *Source URL*:
+To set up Visual Studio to access your feed as a package source, we must first get the *Source URL*:
 
 [!INCLUDE [](../includes/nuget/nuget-consume-endpoint.md)]
 
