@@ -12,8 +12,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
-
 ::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
