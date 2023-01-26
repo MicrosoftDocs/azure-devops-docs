@@ -8,11 +8,11 @@ ms.date: 01/26/2023
 
 # Agent software version 3 preview
 
-The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware as well as newer operating systems like Ubuntu 22.04, or Windows on ARM64.
+The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
 ## Upgrade to 3.x agent on supported operating systems
 
-If you're running your self-hosted agents on newer operating systems that are [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic when the 3.x agent is released to general availability. To try out the preview version of the 3.x agent, see [Install agent version 3.x preview](#install-agent-version-3x-preview).
+If you're running your self-hosted agents on newer operating systems [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic when the 3.x agent is released to general availability. To try out the preview version of the 3.x agent, see [Install agent version 3.x preview](#install-agent-version-3x-preview).
 
 ## Upgrade to 3.x agent on unsupported operating systems
 
@@ -33,7 +33,7 @@ You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/m
 
 ## Install agent version 3.x preview
 
-The version 3.x agent software is currently in the preview phase. You can install this software on [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md). [Please let us know your feedback](https://github.com/microsoft/azure-pipelines-agent/issues).
+The version 3.x agent software is currently in the preview phase. You can install this software on [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md). [Let us know your feedback](https://github.com/microsoft/azure-pipelines-agent/issues).
 
 A preview of the new version 3.x agent software is available from the [Azure Pipelines releases page on GitHub](https://github.com/microsoft/azure-pipelines-agent/releases), in the pre-release section.
 
@@ -63,7 +63,7 @@ No. The pipelines team is regularly adding new features to Azure Pipelines and s
 
 ### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
 
-No. The new agent is only applicable for Azure DevOps Service customers at this time. However, a future version of Azure DevOps Server (2022.1) will include the new agent. So, it is recommended that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
+No. The new agent is only applicable for Azure DevOps Service customers at this time. However, a future version of Azure DevOps Server (2022.1) will include the new agent. The pipelines team recommends that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
 
 ### What is the timeline for agent version 3 deployment?
 
