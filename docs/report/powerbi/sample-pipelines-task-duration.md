@@ -81,7 +81,7 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -235,7 +235,7 @@ To learn how, see [Rename column fields](transform-analytics-data-report-generat
 
 ## Create the Table report 
 
-1. In Power BI, under **Visualizations**, choose the **Table** report and select the fields as shown in the following image. Fields have been renamed as indicated in [Rename column fields](#rename) section.
+1. In Power BI, under **Visualizations**, choose the **Table** report. Fields have been renamed as indicated in [Rename column fields](#rename) section.
 
 	:::image type="content" source="media/pipeline-reports/task-duration-table-visualizations.png" alt-text="Screenshot of visualization fields selections for task duration table report. ":::
 

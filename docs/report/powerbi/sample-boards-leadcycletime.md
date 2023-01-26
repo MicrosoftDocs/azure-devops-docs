@@ -73,7 +73,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -218,7 +218,7 @@ To learn how, see the following sections in [Transform Analytics data to generat
 
 In the following example, the query was renamed to *LeadCycleTime*, but no columns were renamed. 
 
-1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Line chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/lead-time-trend-chart-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Lead Time trend chart report. ":::
 
