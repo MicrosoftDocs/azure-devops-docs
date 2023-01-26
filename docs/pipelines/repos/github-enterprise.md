@@ -2,7 +2,7 @@
 title: Build code from GitHub Enterprise Server
 description: Using a GitHub Enterprise Server with Azure Pipelines
 ms.topic: reference
-ms.date: 01/25/2023
+ms.date: 10/05/2022
 monikerRange: 'azure-devops'
 ---
 
