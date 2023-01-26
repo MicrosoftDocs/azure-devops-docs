@@ -1,10 +1,10 @@
 ---
-title: Install NuGet packages with Visual Studio
-description: How to use Visual Studio to consume NuGet packages
+title: Install NuGet packages using Visual Studio
+description: How to use Visual Studio to consume NuGet packages from Azure Artifacts feeds and NuGet.org
 ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 01/26/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -30,9 +30,9 @@ To set up Visual Studio to access your feed as a package source, we must first g
 
 1. Enter your feed's **Name** and the **Source** URL you copied in the previous step, and then select the green (+) sign to add a new package source.
 
-1. If you enabled [upstream sources](/upstream-sources.md) in your feed, clear the **nuget.org** checkbox.
+1. If you enabled [upstream sources](upstream-sources.md) in your feed, clear the **nuget.org** checkbox.
 
-1. Select **OK** when you are done.
+1. Select **OK** when you're done.
 
     :::image type="content" source="../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio - Windows":::
 
@@ -44,11 +44,11 @@ To set up Visual Studio to access your feed as a package source, we must first g
 
 1. Select **NuGet**, and then select **Sources**.
 
-1. Select **Add**, and then enter your feed's **Name**, the **Source** URL you copied in the previous step, a userName (any string), and your personal access token. Select **OK** when you are done.
+1. Select **Add**, and then enter your feed's **Name**, the **Source** URL you copied in the previous step, a userName (any string), and your personal access token. Select **OK** when you're done.
 
 1. If you enabled upstream sources in your feed, clear the **nuget.org** checkbox.
 
-1. Select **OK** when you are done.
+1. Select **OK** when you're done.
 
     :::image type="content" source="../media/vs-mac-settings.png" alt-text="A screenshot showing how to add a new package source in Visual Studio - macOS":::
 
