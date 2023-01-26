@@ -1,9 +1,9 @@
 ---
 title: Agent software version 3
-description: Learn how to run pipelines using the version 3 agent sofware.
+description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '= azure-devops'
 ms.topic: conceptual
-ms.date: 01/24/2023
+ms.date: 01/26/2023
 ---
 
 # Agent software version 3 preview
@@ -12,13 +12,13 @@ The pipelines team is upgrading the agent software from version 2.x (using .NET 
 
 ## Upgrade to 3.x agent on supported operating systems
 
-If you are running your self-hosted agents on newer operating systems that are [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic when the 3.x agent is released to general availability. To try out the preview version of the 3.x agent, see [Install agent version 3.x preview](#install-agent-version-3x-preview).
+If you're running your self-hosted agents on newer operating systems that are [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic when the 3.x agent is released to general availability. To try out the preview version of the 3.x agent, see [Install agent version 3.x preview](#install-agent-version-3x-preview).
 
 ## Upgrade to 3.x agent on unsupported operating systems
 
-If you are running your self-hosted agents on an operating system supported by the current version 2.x agent software built using [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) that is not supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
+If you're running your self-hosted agents on an operating system supported by the current version 2.x agent software built using [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) that isn't supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
-The following list of operating systems are commonly used for self-hosted 2.x agents. These operating systems are not supported by .NET 6 and cannot be used to run the new .NET 6 based version 3.x agent.
+The following list of operating systems are commonly used for self-hosted 2.x agents. These operating systems aren't supported by .NET 6 and can't be used to run the new .NET 6 based version 3.x agent.
 
 | System/Distribution | Version not supported by .NET 6 |
 |---------------------|---------------------------------|
@@ -43,7 +43,7 @@ To use the new version 3 agent, install the latest .NET 6 agent from the pre-rel
 
 ### What is the difference between the 2.x and 3.x agents?
 
-The 2.x agents (e.g., 2.212) are .NET Core 3.1 and the 3.x agents (e.g., 3.212) are .NET 6. During Phase I and II, we will have both versions simultaneously with the 3.x versions being in prerelease.
+The 2.x agents (e.g., 2.212) are .NET Core 3.1 and the 3.x agents (e.g., 3.212) are .NET 6. During Phase I and II, we'll have both versions simultaneously with the 3.x versions being in prerelease.
 
 ### How can I check my agents to see if they can upgrade to 3.x?
 
@@ -63,7 +63,7 @@ No. The pipelines team is regularly adding new features to Azure Pipelines and s
 
 ### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
 
-No. The new agent is only applicable for Azure DevOps Service customers at this time. However, a future version of Azure DevOps Server (2022.1) will include the new agent. So, it is recommended that you update your agent machines to newer OSes that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
+No. The new agent is only applicable for Azure DevOps Service customers at this time. However, a future version of Azure DevOps Server (2022.1) will include the new agent. So, it is recommended that you update your agent machines to newer operating systems that are supported by .NET 6 starting now, if you plan to keep up with the Azure DevOps Server releases in the future.
 
 ### What is the timeline for agent version 3 deployment?
 
