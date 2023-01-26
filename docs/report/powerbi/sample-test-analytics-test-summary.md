@@ -475,28 +475,3 @@ Your report should look similar to the following image.
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Visualizations test duration report fields.](media/odata-powerbi-test-analytics/test-duration-field.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Table**.
-1. Add the field "Test.TestName" to **Values**.
-1. Add the field "TotalCount" to **Values**.
-1. Add the field "AvgDuration" to **Values**.
-    
-Your report should look like this. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI sample test duration report.](media/odata-powerbi-test-analytics/test-duration-report1.png)
-
-
-You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
