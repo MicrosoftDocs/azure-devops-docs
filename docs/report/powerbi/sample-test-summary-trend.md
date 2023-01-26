@@ -490,7 +490,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close `compute()` clause
+   Close `compute()` clause.
    :::column-end:::
 :::row-end:::
  
@@ -514,16 +514,14 @@ To learn more about changing the data type, see  [Transform Analytics data to ge
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary-trend.png" alt-text="Screenshot of visualization fields selections for Test Summary Trend stacked column line chart report. ":::
 
-1. Add `CompletedOn.Date`" to the **X-Axis**, right-click the field and select **CompletedOn.Date**, rather than **Date Hierarchy**.  
+1. Add `Date.Date` to the **X-Axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
 
-1. Add `ResultFailCount` to **Column y-axis**. 
-
-1. Add `PassRate` to **Line y-axis**. 
-
+1. Add `AvgDuration` to **Y-axis**, right-click the field and select **Average** rather than **Sum**.
 
 Your report should look similar to the following image. 
 
 :::image type="content" source="media/pipeline-test-reports/test-summary-trend-stack-column-line-chart-report.png" alt-text="Screenshot of Sample Test Summary Trend Stacked Column Line chart report.":::
+
  
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
