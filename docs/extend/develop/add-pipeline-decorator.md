@@ -1,5 +1,5 @@
 ---
-title: Use a pipeline decorator
+title: Author a pipeline decorator
 description: Inject steps before and after every pipeline job.
 ms.topic: reference
 ms.subservice: azure-devops-ecosystem
@@ -10,12 +10,12 @@ ms.date: 01/26/2023
 monikerRange: '>= azure-devops-2022'
 ---
 
-# Use a pipeline decorator
+# Author a pipeline decorator
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
-This process is different than adding steps to a single definition because it applies to all pipelines in an organization.
+The process of authoring a pipeline decorator is different than adding steps to a single definition because it applies to all pipelines in an organization.
 
 Suppose your organization requires running a virus scanner on all build outputs that could be released.
 Pipeline authors don't need to remember to add that step. We create a decorator that automatically injects the step. Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
