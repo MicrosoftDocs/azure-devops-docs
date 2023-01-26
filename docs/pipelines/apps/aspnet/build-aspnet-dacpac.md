@@ -3,8 +3,8 @@ ms.assetid: 7F0B861F-D88B-45A8-8510-19041543C49E
 title: Build your SQL server database
 ms.topic: conceptual
 ms.custom: seodec18
-description: Define a continuous integration (CI) build for your SQL server database in Azure Pipelines or Team Foundation Server (TFS)
-ms.date: 04/14/2021
+description: Define a continuous integration (CI) build for your SQL server database in Azure Pipelines
+ms.date: 01/26/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -29,28 +29,17 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 ### Create the build pipeline
 
-<ol>
+1. Open your project in your web browser. If you don't see your project listed on the home page, select **Browse**.
+* On-premises: `http://{your_server}:8080/tfs/DefaultCollection/{your_project}`
+* Azure Pipelines: `https://dev.azure.com/{your_organization}/{your_project}`
 
+:::image type="content" source="../../media/browse-to-team-project.png" alt-text="Screenshot of Browse to project.":::
 
-<li><p>Open your project in your web browser</p>
-<img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
+2. Create a build pipeline by selecting **Pipelines** > **Builds**.
 
-<p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
-<ul>
-<li>On-premises TFS: <code>http://{your_server}:8080/tfs/DefaultCollection/{your_project}</code> </li>
-<li>Azure Pipelines: <code>https://dev.azure.com/{your_organization}/{your_project}</code></li>
-</ul>
-<p><a href="/azure/devops/server/admin/websitesettings" data-raw-source="[The TFS URL doesn&#39;t work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)">The TFS URL doesn&#39;t work for me. How can I get the correct URL?</a></p>
-</li>
+:::image type="content" source="../../media/create-new-build-definition.png" alt-text="Screenshot of select Build tab. ":::
 
-<li><p>Create a build pipeline (Pipelines tab &gt; Builds)</p>
-<img src="~/pipelines/media/create-new-build-definition.png" alt="Build tab">
-<p>
-</li>
-
-<li>Select the <strong>.NET Desktop</strong> template.</li>
-    <li>As the repository source, select the project, repository, and branch.</li>
-</ol>
+3. Select the **.NET Desktop** template. Then, select the project, repository, and branch. 
 
 ### Enable continuous integration (CI)
 
