@@ -72,7 +72,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name 
@@ -152,20 +152,12 @@ From the Power Query Editor, select the columns containing a number, such as *Bl
 
 ## Create the Matrix report
 
-Power BI shows you the fields you can report on. 
+1. In Power BI, under **Visualizations**, choose  **Matrix**. 
+ 
+1. Add `Tester.UserName` to **Rows**.
+1. Add `LastResultOutcome` to **Columns**.
+1. Add `Count` to **Values** and right-click the field and select  **Sum**
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-To create the report, do the following steps:
-
-1. Create a Power BI visualization **Matrix**.
-1. Add the field **Tester.UserName** to **Rows**.
-1. Add the field **LastResultOutcome** to **Columns**.
-1. Add the field **Count** to **Values**.
-1. Select **Sum** as aggregation for **Count**.
-	> [!div class="mx-imgBorder"] 
-	> ![Screenshot of Power BI select Sum as aggregation.](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
