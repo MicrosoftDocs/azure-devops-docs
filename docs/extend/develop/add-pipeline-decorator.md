@@ -22,7 +22,7 @@ Pipeline authors don't need to remember to add that step. We create a decorator 
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-## 1. Create a pipeline decorator
+## 1. Add contributions to an extension
 
 The following example assumes you're familiar with the [contribution models](contributions-overview.md).
 
@@ -127,7 +127,7 @@ A pipeline run looks similar to the following example.
 > The decorator runs on every job in every pipeline in the organization.
 > In later steps, we add logic to control when and how the decorator runs.
 
-## Inject conditions
+## 4. Inject conditions
 
 In our example, we only need to run the virus scanner if the build outputs might be released to the public. Let's say that only builds from the default branch (typically `main`) are ever released.
 We should limit the decorator to jobs running against the default branch.
@@ -165,7 +165,7 @@ steps:
     displayName: 'Run my script (injected from decorator)'
 ```
 
-## Specify a target task
+## 5. Specify a target task
 
 You can specify target [task ID](add-build-task.md#taskjson), and inject tasks before or after this target task.
 To specify target task, you can modify vss-extension.json manifest file like the following example.
@@ -200,7 +200,7 @@ You can specify a list of inputs of the target task that you want to inject as i
 
 This feature is designed to work with [custom pipeline tasks](add-build-task.md#step-1-create-a-custom-task). It isn't intended to provide access to target pipeline task inputs via pipeline variables.
 
-In order to get access to the target pipeline task inputs (inputs with the `target_` prefix), the injected pipeline task should use methods from the [azure-pipelines-tasks-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib), and not the pipeline variables, for example `const inputString = tl.getInput('target_targetInput')`). 
+To get access to the target pipeline task inputs (inputs with the `target_` prefix), the injected pipeline task should use methods from the [azure-pipelines-tasks-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib), and not the pipeline variables, for example `const inputString = tl.getInput('target_targetInput')`). 
 
 To do so, you can create your own custom pipeline [task](add-build-task.md#task-implementation) and use the target inputs there. If you need the functionality of one of the out-of-box tasks, like `CmdLine@2`, you can create a copy of the [CmdLine@2 task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/CmdLineV2) and publish it with your decorator extension.
 
@@ -252,7 +252,7 @@ For now, you can't specify endpoints like SonarQube with pipeline decorators.
 
 Pipeline decorators currently work with Azure Dev Ops Git and GitHub. They do not work for other source control providers.
 -->
-## Debugging
+## Debug
 
 You might need to debug when you create your decorator. You also may want to see what data you have available in the context.
 
