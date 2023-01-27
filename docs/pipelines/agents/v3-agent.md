@@ -49,6 +49,18 @@ The 2.x agents (e.g., 2.212) are .NET Core 3.1 and the 3.x agents (e.g., 3.212) 
 
 You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools will be able to upgrade from 2.x to 3.x.
 
+### What is enable SERVICE_SID_TYPE_UNRESTRICTED for agent service?
+
+When configuring the 3.x agent software on Windows Server, you specify the service security identifier from the following prompt.
+
+```
+Enter enable SERVICE_SID_TYPE_UNRESTRICTED for agent service (Y/N) (press enter for N)
+```
+
+Previous versions of the agent software set the service security identifier type to `SERVICE_SID_TYPE_NONE`, which is the default value for the 3.x agent. To configure the security service identifier type to `SERVICE_SID_TYPE_UNRESTRICTED`, press `Y`.
+
+For more information, see [SERVICE_SID_INFO structure](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) and [Security identifiers](/windows-server/identity/ad-ds/manage/understand-security-identifiers).
+
 ### How will security issues in the agent be patched going forward?
 
 When the .NET 6 agent becomes generally available for self-hosted pools in Q1 2023, there will be no patches done, in general, for the 2.x agents. The patches will be done only for the 3.x agents. However, we also have Azure DevOps Server customers that will still be relying on 2.x agents. So, we will review the security issues on a case by case basis to decide.
