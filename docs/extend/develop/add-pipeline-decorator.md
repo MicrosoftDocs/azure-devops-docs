@@ -267,4 +267,7 @@ Select the task to see the logs, which show runtime values and that the context 
 
 ## Related articles
 
-- [About YAML expression syntax](../../pipelines/process/expressions.md#functions).
+- [About YAML expression syntax](../../pipelines/process/expressions.md#functions)
+- [Pipeline decorator expression context](pipeline-decorator-context.md)
+- [Develop a web extension](../get-started/node.md)
+- [Authentication guide](../../integrate/get-started/authentication/authentication-guidance.md)
