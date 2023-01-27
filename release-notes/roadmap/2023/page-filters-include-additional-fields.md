@@ -12,16 +12,16 @@ hide_comments: true
 
 # Additional fields on page filters
 
-As a user, I want to filter work items by any field. Not just the few specific fields currerntly available. This applies for backlogs, boards, sprints, queries, and delivery plans.
+As a user, I want to filter work items by any field. Not just the few fields currently available. This applies for backlogs, boards, sprints, queries, and delivery plans.
 
 [Community Suggestion Ticket](https://developercommunity.visualstudio.com/t/add-the-ability-to-filter-boards-by-custom-fields/606538)
 
-Filter options dialog to pick and choose additional fields to filter on.
+Dialog to pick and choose additional fields to be used on filter control.
 
 > [!div class="mx-imgBorder"]
 > ![screen shot field picker.](media/boards-field-filters-1.gif#lightbox)
 
-Additional fields added to your filter.
+Additional fields added.
 
 > [!div class="mx-imgBorder"]
 > ![screen shot new field filters applied.](media/boards-field-filters-2.gif#lightbox)
