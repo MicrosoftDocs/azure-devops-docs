@@ -5,7 +5,6 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Define a continuous integration (CI) build for your Azure Cloud Service in Azure Pipelines or Team Foundation Server (TFS)
 ms.date: 01/27/2021
-monikerRange: '<= azure-devops'
 ---
 
 # Build your Azure Cloud Service
