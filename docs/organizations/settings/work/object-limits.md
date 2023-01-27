@@ -80,7 +80,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Iteration Path Depth | 14 |
 | Iteration Paths per team | 300 |
 | Project Dashboards | 500 |
-| Team Dashboards | 500 (meaning each team can have up to 500 team level dashboards) |
+| Team Dashboards | 500 (each team can have up to 500 team level dashboards) |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per organization or collection |
 | Delivery plans per project | 1,000 |
