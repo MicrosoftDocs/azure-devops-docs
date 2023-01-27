@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/13/2020
+ms.date: 01/27/2023
 ---
 
 1. Open your project in your web browser
