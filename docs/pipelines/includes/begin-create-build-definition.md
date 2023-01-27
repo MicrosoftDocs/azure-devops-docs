@@ -7,11 +7,11 @@ author: steved0x
 ms.date: 01/27/2023
 ---
 
-1. Open your project in your web browser
+1. Open your project in your web browser.
 
     :::image type="content" source="../media/browse-to-team-project.png" alt-text="Screenshot of Browse to project. ":::
 
-1. (If you don&#39;t see your project listed on the home page, select **Browse**.)
+1. (If you don't see your project listed on the home page, select **Browse**.)
     * On-premises TFS: `http://{your_server}:8080/tfs/DefaultCollection/{your_project}`
     * Azure Pipelines: `https://dev.azure.com/{your_organization}/{your_project}`
 
