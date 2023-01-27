@@ -6,7 +6,7 @@ ms.subservice: azure-devops-ecosystem
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: chcomley
 author: chcomley
-ms.date: 01/26/2023
+ms.date: 01/27/2023
 monikerRange: '>= azure-devops-2022'
 ---
 
@@ -99,7 +99,7 @@ Create that file in the root of your contribution. It holds the set of steps to 
 We start with a basic example and work up to the full task.
 
 #### my-decorator.yml (initial version)
-------
+
 ```yaml
 steps:
 - task: CmdLine@2
@@ -191,7 +191,7 @@ To specify target task, you can modify vss-extension.json manifest file like the
 }
 ```
 
-By setting up of 'targettask' property, you can specify ID of a target task.
+When you set up the 'targettask' property, you can specify ID of a target task.
 Tasks will be injected before/after all instances of specified target task. 
 
 
