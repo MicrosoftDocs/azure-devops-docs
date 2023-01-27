@@ -25,16 +25,13 @@ For the instructions in this topic, you need an Azure Cloud Service project in V
 
 ### Create the build pipeline
 
-<ol>
-
 [!INCLUDE [include](../../includes/begin-create-build-definition.md)]
 
-<li>Select the <strong>Azure Cloud Service</strong> template.</li>
+1. Select the **Azure Cloud Service** template.
 
-<li>As the repository source, select the project, repository, and branch.</li>
+1. As the repository source, select the project, repository, and branch.
 
-<li>Remove the <strong>Azure Cloud Service Deployment task</strong> from the build pipeline, since you will be deploying the cloud service later through a release pipeline.</li>
-</ol>
+1. Remove the **Azure Cloud Service Deployment task** from the build pipeline, since you will be deploying the cloud service later through a release pipeline.
 
 ### Enable continuous integration (CI)
 
