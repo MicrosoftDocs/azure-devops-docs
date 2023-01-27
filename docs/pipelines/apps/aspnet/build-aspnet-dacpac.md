@@ -33,11 +33,11 @@ For the instructions in this topic, you need a SQL server database project in Vi
 * On-premises: `http://{your_server}:8080/tfs/DefaultCollection/{your_project}`
 * Azure Pipelines: `https://dev.azure.com/{your_organization}/{your_project}`
 
-:::image type="content" source="../../media/browse-to-team-project.png" alt-text="Screenshot of Browse to project.":::
+    :::image type="content" source="../../media/browse-to-team-project.png" alt-text="Screenshot of Browse to project.":::
 
 2. Create a build pipeline by selecting **Pipelines** > **Builds**.
 
-:::image type="content" source="../../media/create-new-build-definition.png" alt-text="Screenshot of select Build tab. ":::
+    :::image type="content" source="../../media/create-new-build-definition.png" alt-text="Screenshot of select Build tab. ":::
 
 3. Select the **.NET Desktop** template. Then, select the project, repository, and branch. 
 
