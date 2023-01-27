@@ -103,12 +103,4 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 ## FAQ
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
-
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
