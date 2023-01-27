@@ -57,7 +57,7 @@ When configuring the 3.x agent software on Windows Server, you specify the servi
 Enter enable SERVICE_SID_TYPE_UNRESTRICTED for agent service (Y/N) (press enter for N)
 ```
 
-Previous versions of the agent software set the service security identifier type to `SERVICE_SID_TYPE_NONE`, which is the default value for the 3.x agent. To configure the security service identifier type to `SERVICE_SID_TYPE_UNRESTRICTED`, press `Y`.
+Previous versions of the agent software set the service security identifier type to `SERVICE_SID_TYPE_NONE`, which is the default value for the current agent versions. To configure the security service identifier type to `SERVICE_SID_TYPE_UNRESTRICTED`, press `Y`.
 
 For more information, see [SERVICE_SID_INFO structure](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) and [Security identifiers](/windows-server/identity/ad-ds/manage/understand-security-identifiers).
 
