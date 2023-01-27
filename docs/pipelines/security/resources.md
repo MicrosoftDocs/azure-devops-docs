@@ -22,12 +22,12 @@ Your pipelines often have access to secrets.
 For instance, to sign your build, you need a signing certificate.
 To deploy to a production environment, you need a credential to that environment.
 In Azure Pipelines, all of the following are considered *protected* resources in YAML pipelines:
-- [agent pools](../agents/agents.md)
-- [secret variables in variable groups](../library/variable-groups.md)
-- [secure files](../library/secure-files.md)
-- [service connections](../library/service-endpoints.md)
-- [environments](../process/environments.md)
-- [repositories](../process/repository-resource.md)
+- [Agent pools](../agents/agents.md)
+- [Secret variables in variable groups](../library/variable-groups.md)
+- [Secure files](../library/secure-files.md)
+- [Service connections](../library/service-endpoints.md)
+- [Environments](../process/environments.md)
+- [Repositories](../process/repository-resource.md)
 
 "Protected" means:
 - They can be made accessible to specific users and specific pipelines within the project. They can't be accessed by users and pipelines outside of a project.
