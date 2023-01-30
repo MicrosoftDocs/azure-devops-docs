@@ -35,7 +35,7 @@ There are a few features you or an administrator can enable or disable. Some  fe
 
 ::: moniker range="azure-devops"
 
-The follow table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
+The following table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
 
 
 |**Preview features**|**Per user**|**Per organization**|

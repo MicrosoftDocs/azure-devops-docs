@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 01/13/2023
+ms.date: 01/30/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -318,11 +318,11 @@ If your pipeline gets an agent but fails to complete, check the following common
 
 Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
 
-:::image type="content" source="../get-started/media/task-insights.png" alt-text="This task has failed pop-up.":::
+:::image type="content" source="../get-started/media/task-insights.png" alt-text="Screenshot of task insights metrics.":::
 
 To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
 
-:::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
+:::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Screenshot of task insights for failed pipeline runs setting.":::
 
 :::moniker-end
 

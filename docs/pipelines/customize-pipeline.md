@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 10/03/2022
+ms.date: 01/30/2023
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -229,18 +229,18 @@ Pipeline triggers cause a pipeline to run. You can use `trigger:` to cause a pip
 
 You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: menu on the [pipeline details](create-first-pipeline.md#view-pipeline-details) page.
 
-:::image type="content" source="get-started/media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
+:::image type="content" source="get-started/media/pipeline-more-actions.png" alt-text="Screenshot of pipeline settings and more actions menu.":::
 
 * **Manage security** - [Manage security](#manage-security)
 * **Rename/move** - Edit your pipeline name and folder location.
-  :::image type="content" source="get-started/media/rename-move-pipeline.png" alt-text="Rename or move pipeline":::
+  :::image type="content" source="get-started/media/rename-move-pipeline.png" alt-text="Screenshot of rename or move pipeline page.":::
 * **Status badge** - [Add a status badge to your repository](create-first-pipeline.md?view=azure-devops&preserve-view=true#add-a-status-badge-to-your-repository)
 * **Delete** - Deletes the pipeline including all builds and associated artifacts.
 * **Scheduled runs** - [Scheduled runs view](process/scheduled-triggers.md#scheduled-runs-view)
 
 Choose **Settings** to configure the following pipeline settings.
 
-:::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
+:::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Screenshot of pipeline settings page.":::
 
 From the **Pipeline settings** pane you can configure the following settings.
 
@@ -251,7 +251,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 * **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
 
-  :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Automatically link work items included in this run.":::
+  :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Screenshot of setting to automatically link work items included in this run.":::
 
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../organizations/notifications/manage-team-group-global-organization-notifications.md)
 
@@ -260,7 +260,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 
 You can configure pipelines security on a project level from the **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
 
-![Pipeline security](get-started/media/pipelines-context-menu.png)
+![Screenshot of pipeline security menu options.](get-started/media/pipelines-context-menu.png)
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to predefined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](policies/permissions.md).
 ## Create work item on failure
