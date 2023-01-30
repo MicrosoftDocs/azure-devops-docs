@@ -5,7 +5,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 12/20/2022
+ms.date: 01/30/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -97,6 +97,26 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
   * Shows when each job was run, and how it completed
 
 Both logs show how the agent capabilities were detected and set.
+
+:::moniker range=">azure-devops-2022"
+
+## Network diagnostics for self-hosted agents
+
+Set the value of `Agent.Diagnostic` to `true` to collect the following additional logs that can be used for troubleshooting network issues for self-hosted agents.
+
+| File | Information | Applies to |
+|------|-------------|------------|
+| `cloudinit.*` | Cloud-init completed successfully (if used) | Linux |
+| `BrokenPackages.*` | Packages are in a consistent state | Linux |
+| `Agent.*` | Environment variables | Linux, Windows |
+| `waagentConf.txt` | Azure VM agent (waagent.conf) | Azure: Linux, Windows |
+| `environment.txt` / `agent.*` | Account group membership list | Windows |
+
+> [!NOTE]
+> The `Agent.Diagnostic` variable and logs described in this section are available with [Agent v2.200.0](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.200.0) and higher.
+
+:::moniker-end
+
 
 ## Other logs
 
