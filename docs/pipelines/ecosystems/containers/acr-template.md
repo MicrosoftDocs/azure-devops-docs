@@ -128,6 +128,5 @@ az group delete --name myapp-rg
 
 ## Related articles
 
-- [Deploy containerized ASP.NET Core apps](../../apps/cd/azure/aspnet-core-to-acr.md)
 - [Deploy to Azure Web App for Containers (Classic)](../../apps/cd/deploy-docker-webapp.md)
 - [Docker Content Trust](./content-trust.md)
