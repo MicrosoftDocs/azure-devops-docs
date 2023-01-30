@@ -310,6 +310,5 @@ az group delete --name myapp-rg
 
 ## Related articles
 
-- [Deploy your ASP.NET Core app as a container](../../apps/cd/azure/aspnet-core-to-acr.md)
 - [Build and push images to Azure Container Registry with Docker templates](./acr-template.md)
 - [Build and deploy to Azure Kubernetes Service](/azure/aks/devops-pipeline)
