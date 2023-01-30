@@ -35,7 +35,7 @@ There are a few features you or an administrator can enable or disable. Some  fe
 
 ::: moniker range="azure-devops"
 
-The follow table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
+The following table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
 
 
 |**Preview features**|**Per user**|**Per organization**|
@@ -57,7 +57,7 @@ The follow table indicates which preview features can be enabled per user or tea
 |New Wiki experience| ✔️ | ✔️ |     
 |[Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)| ✔️ | ✔️ |     
 |[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
-|[Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |      
+|[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |      
 |[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
 
 ::: moniker-end
