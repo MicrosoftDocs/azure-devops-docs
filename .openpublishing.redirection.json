@@ -191,6 +191,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-acr.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/apps/cd/deploy-cloudservice-cloudservice.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-cloudservice-cloudservice",
       "redirect_document_id": false
