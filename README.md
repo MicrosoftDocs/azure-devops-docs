@@ -4,6 +4,6 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 
 # Content repos
 
-> * For content contributions to `https://learn.microsoft.com/vsts`, work in the /docs folder.
-> * For content contributions to `learn.microsoft.com/vsts/release-notes`, work in the `/release-notes` folder.
+> * For content contributions to `https://learn.microsoft.com/azure/devops`, work in the /docs folder.
+> * For content contributions to `learn.microsoft.com/azure/devops/release-notes`, work in the `/release-notes` folder.
 > * Contact Ryan Thompson--`ryanth` (Microsoft alias) or `@thomps23` (GitHub alias) -- for details and training on content contribution or publishing.

@@ -5,7 +5,6 @@ ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.custom: "mvc, seodec18"
 ms.date: 09/17/2021
 ms.topic: how-to
-monikerRange: 'azure-devops'
 ---
 
 # Deploy your ASP.NET Core app as a container

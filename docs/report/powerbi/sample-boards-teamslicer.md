@@ -60,7 +60,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
