@@ -7,16 +7,11 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 11/05/2021
-monikerRange: '<= azure-devops'
 ---
 
 # Deploy your ASP.NET app to an Azure Cloud Service (Classic)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
 
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Azure Pipelines.
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
@@ -106,13 +101,5 @@ You're now ready to create a release, which means to run the release pipeline wi
 [!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
 ## FAQ
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

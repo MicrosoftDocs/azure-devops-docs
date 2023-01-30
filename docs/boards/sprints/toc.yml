@@ -26,6 +26,9 @@
   - name: 6. Update the Taskboard
     href: task-board.md
     displayname: status, remaining work, scope
+- name: End of sprint activities
+  href: end-sprint-activities.md
+  displayname: close sprint, remaining work, move work
 - name: Customize your sprint backlogs
   items:
   - name: Customize a Taskboard

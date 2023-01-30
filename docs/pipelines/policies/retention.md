@@ -38,7 +38,7 @@ The following retention policies are available in Azure DevOps in your **Project
 
 By default, members of the Contributors, Build Admins, Project Admins, and Release Admins groups can manage retention policies. 
 
-To manage test results, you must have one of the following subscriptions:
+To manage retention policies, you must have one of the following subscriptions:
 - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
 - [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
