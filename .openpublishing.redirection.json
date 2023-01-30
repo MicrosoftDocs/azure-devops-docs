@@ -179,6 +179,21 @@
       "source_path": "docs/organizations/billing/csp/buy-vs-app-center.md",
       "redirect_url": "https://visualstudio.microsoft.com/app-center/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/aspnet/build-aspnet-dacpac.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-dacpac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/aspnet/build-aspnet-cloudservice.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/deploy-cloudservice-cloudservice.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/cd/deploy-cloudservice-cloudservice",
+      "redirect_document_id": false
     }
   ]
 }
