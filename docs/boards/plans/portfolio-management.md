@@ -156,8 +156,6 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ::: moniker-end
 
-
-
 ## Track dependencies across teams 
 
 The simplest way to track dependencies across teams is to link work items using the **Related** link type. If they're dependent in time, then you can use the **Predecessor/Successor** link types.  You can then create queries that find work items containing these relationships. See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more. 
@@ -168,15 +166,15 @@ Using Delivery Plans, you can track dependencies across projects within an organ
 
 ## Portfolio feature progress
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2022"
 
-To view feature progress based on linked requirements, you can add a rollup column or view the Feature Timeline. To learn more, see [Display rollup](../backlogs/display-rollup.md) and [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
+To view feature progress based on linked requirements, you can add a rollup column or view a delivery plan. To learn more, see [Display rollup](../backlogs/display-rollup.md) and [Review delivery plans](review-team-plans.md). 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2022"
 
-To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
+To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](/previous-versions/azure/devops/boards/extensions/feature-timeline). 
 
 ::: moniker-end
 
