@@ -812,7 +812,7 @@ You'll need to set up a [classic release pipeline](../release/index.md) because 
 `https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. 
 
     1. Open your pipeline. 
-    1. Click "Edit"
+    1. Select **Edit**.
     1. Select the more actions menu :::image type="content" source="../../media/icons/more-actions.png" alt-text="Select more actions menu":::. 
     1. Select **Triggers** > **YAML** > **Get Sources**. 
     1. Go to **Default branch for manual and scheduled builds** to update your feature branch. 
