@@ -242,7 +242,7 @@ If you are using an on-premises Team Foundation Server or Azure DevOps Server, y
 
 If you are using Azure DevOps Services, you can view but not change these settings for your project.
 
-Global release retention policy settings can be managed from the **Release retention** settings of your project:
+Global release retention policy settings can be reviewed from the **Release retention** settings of your project:
 
 * Azure DevOps Services: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
