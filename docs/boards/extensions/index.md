@@ -13,7 +13,7 @@ ms.date: 01/31/2023
 
 # Overview of extensions for Azure Boards
 
-[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
 
@@ -48,7 +48,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 > - View work item dependencies 
 > - Stakeholders can view plans
 
-To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
+To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
 ::: moniker-end
  
 
@@ -96,7 +96,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work item form control library](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library)
-[Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
+- [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 
