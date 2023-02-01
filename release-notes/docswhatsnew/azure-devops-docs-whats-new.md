@@ -80,7 +80,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2023 through Janu
 ### Updated articles
 
 - [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
-- 
+
 ## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-01-01..2023-01-31).
