@@ -1,12 +1,12 @@
 ---
-title: "Azure DevOps docs: What's new for January 1, 2023 - December 1, 2023"
-description: "What's new in the Azure DevOps docs for January 1, 2023 - December 1, 2023."
+title: "Azure DevOps docs: What's new for January 1, 2023 - January 31, 2023"
+description: "What's new in the Azure DevOps docs for January 1, 2023 - January 31, 2023."
 ms.date: 02/01/2023
 ---
 
-# Azure DevOps docs: What's new for January 1, 2023 - December 1, 2023
+# Azure DevOps docs: What's new for January 1, 2023 - January 31, 2023
 
-Welcome to what's new in the Azure DevOps docs from January 1, 2023 through December 1, 2023. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from January 1, 2023 through January 31, 2023. This article lists some of the major changes to docs during this period.
 
 ## Artifacts
 
@@ -22,7 +22,6 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2023 through Dece
 
 ### Updated articles
 
-- [Overview of extensions for Azure Boards](/azure/devops/boards/extensions/index)
 - [Link GitHub commits, pull requests, and issues to work items in Azure Boards](/azure/devops/boards/github/link-to-from-github)
 - [Sprints and Scrum key concepts in Azure Boards](/azure/devops/boards/sprints/scrum-key-concepts)
 - [Implement Scrum practices for your team in Azure Boards](/azure/devops/boards/sprints/scrum-overview)
@@ -81,8 +80,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2023 through Dece
 ### Updated articles
 
 - [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
-
-
+- 
 ## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-01-01..2023-01-31).
