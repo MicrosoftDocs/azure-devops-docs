@@ -67,7 +67,8 @@ No. The new agent is only applicable for Azure DevOps Service customers at this 
 
 ### What is the timeline for agent version 3 deployment?
 
-Agent version 2 will be retired at the end of Q1 2023. See [Upgrade of .NET agent for Azure Pipelines](https://devblogs.microsoft.com/devops/upgrade-of-net-agent-for-azure-pipelines/).
+Agent version 3 is being rolled out gradually. Agent version 2 will be retired at the end of Q1 2023. See [Upgrade of .NET agent for Azure Pipelines](https://devblogs.microsoft.com/devops/upgrade-of-net-agent-for-azure-pipelines/).
 
 ### What will happen when a task requires an agent to be updated to agent version 3?
-Normally, when a task requires a newer version of the agent, it will automatically update itself. For know, while agent version 2 continues to be updated, we have disabled auto update from agent version 2 to agent version 3. Once we enable it, for Operating Systems that are not compatible with agent version 3, agent version 2.217 and newer will not attempt to update itself to the v3 agent. Instead, a warning will be shown informing users they need to upgrade the Operating System first.
+Normally, when a task requires a newer version of the agent, it will automatically update itself. For know, while agent version 2 continues to be updated, we have disabled auto update from agent version 2 to agent version 3. Once we enable it, for Operating Systems that are not compatible with agent version 3, agent version 2.217 and newer will not attempt to update itself to the v3 agent. Instead, a warning will be shown informing users they need to upgrade the Operating System first:
+> 'The operating system the agent is running on is '<OS>', which will not be supported by the .NET 6 based v3 agent. Please upgrade the operating system of this host to ensure compatibility with the v3 agent. See [https://aka.ms/azdo-pipeline-agent-version](https://aka.ms/azdo-pipeline-agent-version)'
