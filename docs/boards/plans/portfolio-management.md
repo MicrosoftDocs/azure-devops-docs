@@ -174,7 +174,7 @@ To view feature progress based on linked requirements, you can add a rollup colu
 
 ::: moniker range="< azure-devops-2022"
 
-To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](/previous-versions/azure/devops/boards/extensions/feature-timeline). 
+To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](/previous-versions/azure/devops/all/extensions/feature-timeline). 
 
 ::: moniker-end
 

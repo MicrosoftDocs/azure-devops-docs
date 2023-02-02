@@ -54,8 +54,8 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
 
 ::: moniker range=">= azure-devops-2022"
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
-- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/boards/extensions/epic-roadmap)  
-- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/boards/extensions/feature-timeline) 
+- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
+- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work&ssr=false#overview)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
@@ -67,8 +67,8 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
 ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
-- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/boards/extensions/epic-roadmap)  
-- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/boards/extensions/feature-timeline) 
+- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
+- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work&ssr=false#overview)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
@@ -79,8 +79,8 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
 
 ::: moniker range="tfs-2018"
 - [Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
-- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/boards/extensions/epic-roadmap)  
-- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/boards/extensions/feature-timeline) 
+- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/epic-roadmap)  
+- [Feature Timeline extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), [Feature Timeline (Deprecated)](/previous-versions/azure/devops/all/extensions/feature-timeline) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
 ::: moniker-end
