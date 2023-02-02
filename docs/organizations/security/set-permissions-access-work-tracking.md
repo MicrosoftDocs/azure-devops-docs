@@ -2,14 +2,14 @@
 title: Set permissions for work tracking
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to work tracking tasks by setting object or project-level permissions for Azure DevOps
-ms.custom: "boards-permissions, linked-from-support"
+ms.custom: boards-permissions, linked-from-support, engagement-fy23
 ms.subservice: azure-devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2022
+ms.date: 02/02/2023
 --- 
 
 
@@ -172,7 +172,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 
     For example, here we added the *Disallow Access Group*, and disallowed members of this group the ability to view, modify, or edit work items in the **Account Management** area path.   
 
-    :::image type="content" source="media/work-tracking/set-area-node-permissions.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions. "::: 
+    :::image type="content" source="media/work-tracking/set-area-node-permissions-with-work-item-comments.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions. "::: 
 
     You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
@@ -200,7 +200,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 
     For example, here we've added the *Disallow Access Group*, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
 
-    :::image type="content" source="media/work-tracking/set-permissions-area-node-dialog.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions, Azure DevOps Server 2020 and earlier versions. "::: 
+    :::image type="content" source="media/work-tracking/set-permissions-area-node-dialog.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions, Azure DevOps Server 2022 and earlier versions. "::: 
  
     You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
