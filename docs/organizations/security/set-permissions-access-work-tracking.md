@@ -237,14 +237,20 @@ You define both areas and iterations for a project from the **Project Settings>P
 ## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
-To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's Security dialog. 
+To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's **Security** dialog. 
 
 **Query folder Permissions dialog**
 
-> [!div class="mx-imgBorder"]  
-> ![Permissions dialog for a query folder.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
+::: moniker range="azure-devops"
+:::image type="content" source="../../boards/queries/media/permissions/permissions-dialog-query-folder-azure-devops.png" alt-text="Permissions dialog for a query folder.":::
+::: moniker-end
 
-For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
+::: moniker range="< azure-devops"
+> [!div class="mx-imgBorder"]  
+> ![Permissions dialog for a query folder, Azure DevOps Server 2022 and earlier versions.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
+::: moniker-end
+
+To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
 <a id="tags" /> 
 

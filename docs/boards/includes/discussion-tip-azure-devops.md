@@ -14,7 +14,7 @@ ms.date: 02/02/2023
 Use the **Discussion** section to add and review comments made about the work being performed. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Discussion section within a work item form,](../backlogs/media/discussion-section.png)   
+> ![Screenshot of Discussion section within a work item form.](../backlogs/media/discussion-section.png)   
 
 The rich text editor tool bar displays below the text entry area. It appears when you click your cursor within each text box that supports text formatting. 
 
@@ -27,10 +27,10 @@ The rich text editor tool bar displays below the text entry area. It appears whe
 
 ### Mention someone, a group, work item, or pull request 
 
-Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/at-mention.png" border="false" alt-text="at mention":::, :::image type="icon" source="../../media/icons/work-id.png" border="false" alt-text="pound sign ":::, or :::image type="icon" source="../../media/icons/pr-id.png" border="false" alt-text="P R":::&mdash; to open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request. Or to open the same menu, you can type **@**, **#**, or **!**.
+Choose one of these icons--:::image type="icon" source="../../media/icons/at-mention.png" border="false" alt-text="at mention":::, :::image type="icon" source="../../media/icons/work-id.png" border="false" alt-text="pound sign ":::, or :::image type="icon" source="../../media/icons/pr-id.png" border="false" alt-text="P R":::--to open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request. Or to open the same menu, you can type **@**, **#**, or **!**.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Discussion section, @mention drop-down menu people-picker.](../media/discussion-at-mention.png)
+> ![Screenshot of Discussion section, at-mention drop-down menu people-picker.](../media/discussion-at-mention.png)
 
 Type a name, or enter a number and the menu list will filter to match your entry. Choose the entry you want to add. You can bring a group into the discussion by typing **@** and the group name, such as a team or security group. 
 
@@ -71,7 +71,7 @@ Add one or more reactions to a comment by choosing a smiley icon at the upper-ri
 
 If you only have permissions to add to the **Discussion** of a work item, then you can do so by saving comments. This permission is controlled by Area Path nodes and the **Edit work item comments in this node** permission. To learn more, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
-Once comments are saved, there is no need to save the work item.  
+Once you save the comments, you don't need to save the work item.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section, save comment.](../work-items/media/view-add/save-comments-discussion-control.png)  
