@@ -202,12 +202,12 @@
     },
     {
       "source_path": "docs/boards/extensions/feature-timeline.md",
-      "redirect_url": "/previous-versions/azure/devops/boards/extensions/feature-timeline",
+      "redirect_url": "/previous-versions/azure/devops/all/extensions/feature-timeline",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/extensions/epic-roadmap.md",
-      "redirect_url": "/previous-versions/azure/devops/boards/extensions/epic-roadmap",
+      "redirect_url": "/previous-versions/azure/devops/all/extensions/epic-roadmap",
       "redirect_document_id": false
     }
   ]
