@@ -1,7 +1,8 @@
 ---
 title: Default permissions quick reference
 titleSuffix: Azure DevOps 
-description: Default permissions and access to common user tasks for Azure DevOps 
+description: Default permissions and access to common user tasks for Azure DevOps
+ms.custom: "permissions, engagement-fy23" 
 ms.subservice: azure-devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
@@ -9,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022  
+ms.date: 02/02/2023
 ---
 
 # Default permissions quick reference for Azure DevOps
@@ -61,12 +62,11 @@ Access to the following tasks are controlled by each user's access level or by p
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
 
-<!---
 ::: moniker range="tfs-2018"  
 > [!NOTE]  
 > There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
 ::: moniker-end  
--->  
+
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 

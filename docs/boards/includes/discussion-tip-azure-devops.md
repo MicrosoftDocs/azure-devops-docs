@@ -3,7 +3,7 @@ ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 11/19/2021
+ms.date: 02/02/2023
 ---
 
 
@@ -62,5 +62,18 @@ Add one or more reactions to a comment by choosing a smiley icon at the upper-ri
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Discussion section, add a reaction to a comment.](../media/discussion-comments-reactions.png)  
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Save a comment without saving the work item
+
+If you only have permissions to add to the Discussion of a work item, then you can do so by saving comments. This permission is controlled by Area Path nodes and the **Edit work item comments in this node** permission. To learn more, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+
+Once comments are saved, there is no need to save the work item.  
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Discussion section, save comment.](../work-items/media/view-add/save-comments-discussion-control.png)  
 
 ::: moniker-end
