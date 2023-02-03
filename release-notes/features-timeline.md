@@ -166,7 +166,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-        <td><a href="azure/devops/release-notes/2023/sprint-215-update#swimlane-colors" data-raw-source="[Swimlane colors on Kanban board.](/azure/devops/release-notes/2023/sprint-215-update#swimlane-colors)">Swimlane colors on Kanban board</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-215-update#swimlane-colors" data-raw-source="[Swimlane colors on Kanban board.](/azure/devops/release-notes/2023/sprint-215-update#swimlane-colors)">Swimlane colors on Kanban board</a></td>
         <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q1</td>
         <td>Future</td>      
