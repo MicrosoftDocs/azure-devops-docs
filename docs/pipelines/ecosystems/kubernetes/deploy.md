@@ -22,7 +22,7 @@ To get started with Azure Pipelines and Azure Kubernetes service, see [Build and
 
 ## Kubernetes tasks
 
-The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) checks for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests with Helm, Kompose, or Kustomize, and aid in deployment strategy roll outs.
+The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) checks for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations, simplify creation and referencing of imagePullSecrets, bake manifests, and aid in deployment strategy roll outs.
 
 > [!NOTE]
 >  While YAML-based pipeline support triggers on a single Git repository, if you need a trigger for a manifest file stored in another Git repository or if triggers are needed for Azure Container Registry or Docker Hub, you should use a classic pipeline instead of a YAML-based pipeline.
@@ -54,7 +54,7 @@ To set up multicloud deployment, [create an environment](../../process/environme
 
 > The generic provider approach based on existing service account works with clusters from any cloud provider, including Azure. The benefit of using the Azure Kubernetes Service option instead is that it creates new [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects (instead of reusing an existing ServiceAccount) so that the newly created RoleBinding object can limit the operations of the ServiceAccount to the chosen namespace only.
 
-When you use the generic provider approach, [make sure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. This is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.
+When you use the generic provider approach, [make sure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. You need to grant permissions to the right services account so that the service account can be used by Azure Pipelines to create objects in the chosen namespace.
 
 ### Parallel deployments to multiple clouds
 
