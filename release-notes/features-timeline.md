@@ -479,7 +479,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>   
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on burnup, burndown, and velocity charts to included resolved as closed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on burnup, burndown, and velocity charts to included resolved as closed</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>    
