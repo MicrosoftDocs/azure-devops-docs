@@ -166,9 +166,9 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Save Comment Improvements](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors on Kanban board</a></td>
+        <td><a href="azure/devops/release-notes/2023/sprint-215-update#swimlane-colors" data-raw-source="[Swimlane colors on Kanban board.](/azure/devops/release-notes/2023/sprint-215-update#swimlane-colors)">Swimlane colors on Kanban board</a></td>
         <td>Boards</td>
-         <td>2023 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q1</td>
         <td>Future</td>      
       </tr>
       <tr>
@@ -342,7 +342,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-         <td rowspan="24"><strong>2023 Q1</strong></td>
+        <td rowspan="24"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Swimlane colors](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors</a></td>
         <td>Boards</td>
         <td>Future</td>      
@@ -458,12 +458,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>  
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/dashboards-last-accessed-and-modified" data-raw-source="[When a dashboard was last accessed and modified](/azure/devops/release-notes/roadmap/2022/dashboards-last-accessed-and-modified)">Dashboards, last accessed and modified</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/dashboards-last-accessed-and-modified" data-raw-source="[When a dashboard was last accessed and modified](/azure/devops/release-notes/roadmap/2023/dashboards-last-accessed-and-modified)">Dashboards, last accessed and modified</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>  
       <tr>
-        <td rowspan="5"><strong>2023 Q2</strong></td>
+        <td rowspan="6"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -477,7 +477,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>      
+      </tr>   
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on burnup, burndown, and velocity charts to included resolved as closed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on burnup, burndown, and velocity charts to included resolved as closed</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>    
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
         <td>Pipelines</td>
