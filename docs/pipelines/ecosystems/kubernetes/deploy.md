@@ -16,7 +16,7 @@ You can use Azure Pipelines to deploy to [Azure Kubernetes Service](/azure/aks/)
 * [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0): bake and deploy manifests to Kubernetes clusters with Helm, Kompose, or Kustomize
 * [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1): deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands
 
-For added deployment traceability, you can use a [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) with a Kubernetes task. 
+For added deployment traceability, use a [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) with a Kubernetes task. 
 
 To get started with Azure Pipelines and Azure Kubernetes service, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](/azure/aks/devops-pipeline). To get started with Azure Pipelines, Kubernetes, and the canary deployment strategy specifically, see [Use a canary deployment strategy for Kubernetes deployments with Azure Pipelines](./canary-demo.md). 
 
@@ -31,13 +31,52 @@ You can use the bake action in the [Kubernetes manifest task](/azure/devops/pipe
 
 You can target [Kubernetes resources](../../process/environments-kubernetes.md) that are part of [environments](../../process/environments.md) with [deployment jobs](../../process/deployment-jobs.md). Using environments and resources deployment gives you access to better pipeline traceability so that you can diagnose deployment issues. You can also deploy to Kubernetes clusters with regular [jobs](../../process/phases.md) without the same health features.
 
+The following YAML code is an example of baking manifest files from Helm charts
+
+```yaml
+steps:
+- task: KubernetesManifest@0
+  name: bake
+  displayName: Bake K8s manifests from Helm chart
+  inputs:
+    action: bake
+    helmChart: charts/sample
+    overrides: 'image.repository:nginx'
+
+- task: KubernetesManifest@0
+  displayName: Deploy K8s manifests
+  inputs:
+    kubernetesServiceConnection: someK8sSC
+    namespace: default
+    manifests: $(bake.manifestsBundle)
+    containers: |
+      nginx: 1.7.9
+```
 ## Kubectl task
 
 As an alternative to the KubernetesManifest [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), you can use the [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1) to deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands. 
 
+The following example shows how a service connection is used to refer to the Kubernetes cluster. 
+
+```yaml
+- task: Kubernetes@1
+  displayName: kubectl apply
+  inputs:
+    connectionType: Kubernetes Service Connection
+    kubernetesServiceEndpoint: Contoso
+```
+
 ## Script task
 
-You can also use `kubectl` with a [script task](../../scripts/cross-platform-scripting.md). For example: ```script: kubectl apply -f manifest.yml```. 
+You can also use `kubectl` with a [script task](../../scripts/cross-platform-scripting.md). 
+
+The following example uses a script to run `kubectl`. 
+
+```yaml
+- script: |
+    kubectl apply -f manifest.yml
+```
+
 
 ## Kubernetes deployment strategies
 
