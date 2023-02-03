@@ -11,10 +11,10 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-You can use Azure Pipelines to deploy to [Azure Kubernetes Service](/azure/aks/) and Kubernetes clusters offered by multiple cloud providers. Azure Pipelines has two tasks for working with Kubernetes:
+You can use Azure Pipelines to deploy to [Azure Kubernetes Service](/azure/aks/) and Kubernetes clusters offered by other cloud providers. Azure Pipelines has two tasks for working with Kubernetes:
 
-* Use [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0)  in a build or release pipeline to bake and deploy manifests to Kubernetes clusters with Helm, Kompose, or Kustomize.
-* Use the [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1) to deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands. 
+* [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0): bake and deploy manifests to Kubernetes clusters with Helm, Kompose, or Kustomize
+* [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1): deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands
 
 For added deployment traceability, you can use a [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) with a Kubernetes task. 
 
@@ -22,12 +22,12 @@ To get started with Azure Pipelines and Azure Kubernetes service, see [Build and
 
 ## Kubernetes tasks
 
-The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) checks for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or `kustomization.yaml` or Docker compose files, and aid in deployment strategy roll outs.
+The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) checks for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests with Helm, Kompose, or Kustomize, and aid in deployment strategy roll outs.
 
 > [!NOTE]
 >  While YAML-based pipeline support triggers on a single Git repository, if you need a trigger for a manifest file stored in another Git repository or if triggers are needed for Azure Container Registry or Docker Hub, you should use a classic pipeline instead of a YAML-based pipeline.
 
-You can use the bake action in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) to bake templates into Kubernetes manifest files. The action lets you use tools such as [Helm](https://helm.sh), [Kustomize](https://github.com/kubernetes-sigs/kustomize), and [Kompose](https://github.com/kubernetes/kompose). With baking, these Kubernetes manifest files are usable for deployments to the cluster. The bake action of the Kubernetes manifest task provides visibility into the transformation between input templates and the end manifest files that are used in deployments.  You can consume baked manifest files downstream (in tasks) as inputs for the deploy action of the Kubernetes manifest task. 
+You can use the bake action in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) to bake templates into Kubernetes manifest files. The action lets you use tools such as [Helm](https://helm.sh), [Kustomize](https://github.com/kubernetes-sigs/kustomize), and [Kompose](https://github.com/kubernetes/kompose). The bake action of the Kubernetes manifest task provides visibility into the transformation between input templates and the end manifest files that are used in deployments.  You can consume baked manifest files downstream (in tasks) as inputs for the deploy action of the Kubernetes manifest task. 
 
 You can target [Kubernetes resources](../../process/environments-kubernetes.md) that are part of [environments](../../process/environments.md) with [deployment jobs](../../process/deployment-jobs.md). Using environments and resources deployment gives you access to better pipeline traceability so that you can diagnose deployment issues. You can also deploy to Kubernetes clusters with regular [jobs](../../process/phases.md) without the same health features.
 
