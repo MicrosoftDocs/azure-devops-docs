@@ -456,9 +456,9 @@
       href: ecosystems/containers/content-trust.md
     - name: Kubernetes
       items:
-        - name: Deploy manifests
+        - name: Deploy to Kubernetes
           href: ecosystems/kubernetes/deploy.md
-          displayName: kubernetes, aks, gke, eks
+          displayName: kubernetes, aks, gke, eks, canary
         - name: Kubernetes canary deployments
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
