@@ -20,7 +20,7 @@ For added deployment traceability, you can use a [Kubernetes resource](../../pro
 
 To get started with Azure Pipelines and Azure Kubernetes service, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](/azure/aks/devops-pipeline). To get started with Azure Pipelines, Kubernetes, and the canary deployment strategy specifically, see [Use a canary deployment strategy for Kubernetes deployments with Azure Pipelines](./canary-demo.md). 
 
-## Kubernetes tasks
+## KubernetesManifest task
 
 The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) checks for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations, simplify creation and referencing of imagePullSecrets, bake manifests, and aid in deployment strategy roll outs.
 
@@ -31,11 +31,13 @@ You can use the bake action in the [Kubernetes manifest task](/azure/devops/pipe
 
 You can target [Kubernetes resources](../../process/environments-kubernetes.md) that are part of [environments](../../process/environments.md) with [deployment jobs](../../process/deployment-jobs.md). Using environments and resources deployment gives you access to better pipeline traceability so that you can diagnose deployment issues. You can also deploy to Kubernetes clusters with regular [jobs](../../process/phases.md) without the same health features.
 
-### Alternatives to the Kubernetes Manifest task
+## Kubectl task
 
 As an alternative to the KubernetesManifest [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), you can use the [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1) to deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands. 
 
-Another option is to use `kubectl` with a [script task](../../scripts/cross-platform-scripting.md). For example: ```script: kubectl apply -f manifest.yml```. 
+## Script task
+
+You can also use `kubectl` with a [script task](../../scripts/cross-platform-scripting.md). For example: ```script: kubectl apply -f manifest.yml```. 
 
 ## Kubernetes deployment strategies
 
