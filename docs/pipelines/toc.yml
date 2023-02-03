@@ -459,7 +459,7 @@
         - name: Deploy to Kubernetes
           href: ecosystems/kubernetes/deploy.md
           displayName: kubernetes, aks, gke, eks, canary
-        - name: Kubernetes canary deployments
+        - name: Use a canary deployment strategy
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
   items:
