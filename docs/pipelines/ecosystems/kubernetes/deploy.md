@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
 ms.date: 02/03/2023
 monikerRange: 'azure-devops'
+ms.custom: engagement-fy23
 ---
 
 # Deploy to Kubernetes
