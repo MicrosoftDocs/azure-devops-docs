@@ -1,0 +1,29 @@
+---
+title: Burnup, burndown, and velocity charts option to include resolved as closed
+author: danhellem
+ms.author: dahellem
+ms.date: 02/03/2023
+ms.topic: article
+ms.service: azure-devops
+ms.subservice: azure-devops-release-notes
+description: SBurnup, burndown, and velocity charts option to include resolved as closed
+hide_comments: true
+---
+
+# Option to include Resolved as Closed
+
+As a team, we would like the option for the burndown, burnup and velociy charts to take into account that work items in the **Resolved** state are completed. Currently, those charts look at resolved items as work that are still in progress. 
+
+[Community Suggestion Ticket](https://developercommunity.visualstudio.com/t/allow-burnupburndown-charts-to-include-resolved-wo/578309)
+
+Charts affected are:
+
+- Burndown widget
+- Burnup widget
+- Sprint burndown widget
+- Sprint burndown on Analytics tab
+- Velocity widget
+- Velocity chart on Analytics tab
+
+> [!div class="mx-imgBorder"]
+> ![Screen showing otpion to make resolved items track as completed.](media/reporting-resolved-category-as-completed-check.gif)
