@@ -276,7 +276,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
    :::column span="3":::
    
-   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Not Contains, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -285,7 +285,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
    :::column span="3":::
    
-   `Contains Words, Does Not Contain Words, Is Empty, Is Not Empty`
+   `Contains Words, Not Contains Words, Is Empty, Is Not Empty`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -293,7 +293,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    String
    :::column-end:::
    :::column span="3":::
-   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Not Contains, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
