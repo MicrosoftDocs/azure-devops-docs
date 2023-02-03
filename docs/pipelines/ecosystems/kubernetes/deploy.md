@@ -15,7 +15,7 @@ You can use Azure Pipelines to deploy to Kubernetes clusters offered by multiple
 
 Azure Pipelines also includes built-in support for [Azure Kubernetes Service](/azure/aks/), Azure's hosted Kubernetes solution. 
 
-To get started with Azure Pipelines and Azure Kubernetes service, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](azure/aks/devops-pipeline). This article walks through building a CI/CD pipeline using the Azure Pipelines Kubernetes template. 
+To get started with Azure Pipelines and Azure Kubernetes service, see [Build and deploy to Azure Kubernetes Service with Azure Pipelines](/azure/aks/devops-pipeline). This article walks through building a CI/CD pipeline using the Azure Pipelines Kubernetes template. 
 
 ## Kubernetes tasks
 
