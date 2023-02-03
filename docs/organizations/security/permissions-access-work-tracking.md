@@ -352,9 +352,9 @@ Stakeholder access supports business owners and analysts and other team members 
 
 For a comparison chart of Stakeholder versus basic access, see the [Feature Matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
-For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
+For information about each access level, see [About access levels](access-levels.md). To assign access levels, see: 
 - **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
-- **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)  
+- **Azure DevOps Server**: [Change access levels](change-access-levels.md)  
 
 <a id="grant-add-permissions"></a>  
 
@@ -370,9 +370,9 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2022"
 
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
+If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end  
 

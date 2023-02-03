@@ -221,13 +221,13 @@ You define both areas and iterations for a project from the **Project Settings>P
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings  for TFS 2018.](../../media/settings/open-project-settings-horz.png)  
+    > ![Screenshot showing Open Project Settings for TFS 2018.](../../media/settings/open-project-settings-horz.png)  
 
 2. Choose **Work** and then **Areas**.  
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![In the context menu, select Security for TFS 2018.](media/work-tracking/set-permissions-area-node-open.png)
+    ![Screenshot showing context menu, select Security for TFS 2018.](media/work-tracking/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -242,12 +242,12 @@ To manage permissions for a query or query folder, you must be the creator of th
 **Query folder Permissions dialog**
 
 ::: moniker range="azure-devops"
-:::image type="content" source="../../boards/queries/media/permissions/permissions-dialog-query-folder-azure-devops.png" alt-text="Permissions dialog for a query folder.":::
+:::image type="content" source="../../boards/queries/media/permissions/permissions-dialog-query-folder-azure-devops.png" alt-text="Screenshot of Permissions dialog for a query folder.":::
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
-> ![Permissions dialog for a query folder, Azure DevOps Server 2022 and earlier versions.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
+> ![Screenshot of Permissions dialog for a query folder, Azure DevOps Server 2022 and earlier versions.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
 ::: moniker-end
 
 To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
