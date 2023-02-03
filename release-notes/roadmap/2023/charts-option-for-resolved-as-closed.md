@@ -1,12 +1,12 @@
 ---
-title: Burnup, burndown, and velocity charts option to include resolved as closed
+title: Burnup, Burndown, and Velocity charts option to include resolved as completed
 author: danhellem
 ms.author: dahellem
 ms.date: 02/03/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: SBurnup, burndown, and velocity charts option to include resolved as closed
+description: Burnup, Burndown, and Velocity charts option to include resolved as completed
 hide_comments: true
 ---
 
