@@ -121,8 +121,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/multi-cloud.md",
-      "redirect_url":"/pipelines/ecosystems/kubernetes/bake.md",
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/bake.md",
+      "redirect_url":"/pipelines/ecosystems/kubernetes/deploy",
       "redirect_document_id": false
     }
   ]
