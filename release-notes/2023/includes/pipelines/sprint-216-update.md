@@ -10,14 +10,32 @@ Pipeline agents running Red Hat 6 will no longer receive updates after agent ver
 
 ### Pipeline UI - Stages Side Panel
 
+YAML pipelines can have tens of stages, and not all of them will fit on your screen. While the pipeline run overview icon tells you the overall state of your run, it is still hard to know which stage failed, or which stage is still running, for example.
+
+In this sprint, we've added a pipeline stages side panel that lets you quickly see the state of all your stages. You can then click on a stage and get directly to its logs.
+
+> [!div class="mx-imgBorder"]
+> ![Update Pipelines](../../media/216-pipelines-01.png)
+
+> [!div class="mx-imgBorder"]
+> ![Pipelines UI updates](../../media/216-pipelines-02.png)
+
+### Restrict opening protected resources to resource administrators
+
+To improve the security of resources that are critical to your ability to securely build and deploy your applications, Azure Pipelines now requires resource-type administrator role when opening up access to a resource to all pipelines.
+
+For example, this means that to allow _any_ pipeline to use a service connection requires a general Service Connections Administrator role, for all service connections. This restriction applies when creating a protected resource or when editing its Security configuration.
+
+For example, when creating a service connection, and you don't have sufficient rights, the _Grant access permission to all pipelines_ option is disabled.
+
+> [!div class="mx-imgBorder"]
+> ![Service Connections](../../media/216-pipelines-03.png)
 
 
-### PM Updates Pending 
+Also, when trying to open access to an existing resource and you don't have sufficient rights, you'll get an _You are not authorized to open access for this resource_ message.
 
-
-
-### PM Updates Still Pending 
-
+> [!div class="mx-imgBorder"]
+> ![Pipelines Permissions](../../media/216-pipelines-04.png)
 
 ### Service Hook for Job State Change
 
