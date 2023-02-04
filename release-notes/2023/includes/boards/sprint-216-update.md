@@ -9,7 +9,7 @@ ms.topic: include
 
 The ability to save only work item comments has been a [top customer ask](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819) for some time. We are excited to finally make the suggestion a reality. First, let's make sure we understand the most common scenario...
 
-"I want to prevent some users from editing work item fields but allow them to contribute to the discussion."
+_"I want to prevent some users from editing work item fields but allow them to contribute to the discussion."_
 
 To accomplish this, you need to go to Project Settings > Project Configuration > Area Path. Then select the area path of choice and click Security.
 
