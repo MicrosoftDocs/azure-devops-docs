@@ -1,10 +1,10 @@
 ---
 title: Build and Release Tasks
 ms.custom: seodec18
-description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
+description: Understand Build and Release tasks in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 11/29/2021
+ms.date: 12/21/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -46,7 +46,7 @@ to enable fundamental build and deployment scenarios. We have also
 provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
-offers a number of extensions; each of which, when installed to your
+offers many extensions; each of which, when installed to your
 subscription or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)
 to add tasks to Azure Pipelines or TFS.
@@ -110,7 +110,7 @@ If you select a preview version (such as **1.\* Preview**), be aware that this
 version is still under development and might have known issues.
 
 If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab.
-The ability to restore to an older version of a release pipeline is not currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
+The ability to restore to an older version of a release pipeline isn't currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
 
 Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
 
@@ -176,7 +176,7 @@ Control options are available as keys on the `task` section.
 > 
 > **Continue on error** alters this in a subtle way. It effectively "tricks" all downstream steps/jobs into treating any result as "success" for the purposes of making that decision. Or to put it another way, it says "don't consider the failure of this task when you're making a decision about the condition of the containing structure".
 
-The timeout period begins when the task starts running. It does not include the
+The timeout period begins when the task starts running. It doesn't include the
 time the task is queued or is waiting for an agent.
 
 In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
@@ -185,7 +185,7 @@ In this YAML, `PublishTestResults@2` will run even if the previous step fails be
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.7'
+    versionSpec: '3.x'
     architecture: 'x64'
 - task: PublishTestResults@2
   inputs:
@@ -197,7 +197,7 @@ steps:
 ### Conditions
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+* [Custom conditions](conditions.md), which are composed of [expressions](expressions.md)
 
 ::: moniker-end
 
@@ -214,7 +214,7 @@ For example:
 resources:
   containers:
   - container: pycontainer
-    image: python:3.8
+    image: python:3.11
 
 steps:
 - task: SampleTask@1
@@ -269,7 +269,7 @@ when you want to temporarily take task out of the process for testing or for spe
 
 The timeout for this task in minutes. The default is zero (infinite timeout).
 Setting a value other than zero overrides the setting for the parent task job.
-The timeout period begins when the task starts running. It does not include the
+The timeout period begins when the task starts running. It doesn't include the
 time the task is queued or is waiting for an agent.
 
 ### Azure Pipelines options
@@ -299,7 +299,7 @@ Select the condition for running this task:
 > [!NOTE]
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../process/phases.md#timeouts).
 
-### TFS 2015 and newer options
+### TFS 2018 and newer options
 
 #### Continue on error (partially successful)
 
@@ -337,7 +337,7 @@ env:
   ...
 ```
 
-The following example runs the `script` step which is a shortcut for the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
+The following example runs the `script` step, which is a shortcut for the [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
 
 ```yml
 # Using the script shortcut syntax
@@ -388,20 +388,20 @@ Create an azure-pipelines.yml file in your project's base directory with the fol
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: ubuntu-latest
 
 steps:
 # Node install
 - task: NodeTool@0
   displayName: Node install
   inputs:
-    versionSpec: '6.x' # The version we're installing
+    versionSpec: '12.x' # The version we're installing
 # Write the installed version to the command line
 - script: which node
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
-The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it is not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
+The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it isn't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
 
 ::: moniker-end
 
@@ -457,11 +457,11 @@ On the [Variables tab](../build/variables.md) define this variable:
 
 |Name|Value|Settable at queue time|
 |-|-|-|
-|```NodeVersionSpec```|```6.x, 7.x```|Selected|
+|```NodeVersionSpec```|```10.x, 12.x```|Selected|
 
 #### Save & queue
 
-Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
+Select **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads each of the Node.js versions if they aren't already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
 * * *
 

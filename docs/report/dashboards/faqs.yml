@@ -133,17 +133,13 @@ sections:
       - question: What charts or widgets support PERT or Gannt charts? 
         answer: | 
           Two project management tools in wide use are  Program Evaluation Review Technique (PERT) charts and Gantt charts. PERT charts provide support for calculating the amount of time it will take to realistically finish a project.  Horizontal bar charts developed by Henry Gantt provide support for visualizing project schedules. Azure DevOps doesn't provide native support for either PERT or Gantt charts. However, it does provide the following tools and extensions that support visualizing schedules and dependencies:  
-          ::: moniker range="azure-devops"
+          ::: moniker range=">= azure-devops-2022"
           - [**Delivery Plans**](../../boards/plans/review-team-plans.md): Displays the scheduled work items by sprint of selected teams against a calendar view, including support for visualizing dependencies.  
-          - [**Feature Timeline**](../../boards/extensions/feature-timeline.md): A marketplace extension that displays an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
-          - [**Epic Roadmap**](../../boards/extensions/feature-timeline.md): A marketplace extension that provides a calendar view of a single epic and its child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.
           - [**Dependency Tracker**](../../boards/extensions/feature-timeline.md): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. 
           - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions that provide support for visualizing portfolio roadmaps.  
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          - [**Delivery Plans**](../../boards//extensions/delivery-plans.md): A marketplace extension that displays scheduled work items by sprint of selected teams against a calendar view.  
-          - [**Feature Timeline**](../../boards/extensions/feature-timeline.md): A marketplace extension that displays an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
-          - [**Epic Roadmap**](../../boards/extensions/feature-timeline.md): A marketplace extension that provides a calendar view of a single epic and its child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.
+          - [**Delivery Plans**](../../boards/extensions/delivery-plans.md): A marketplace extension that displays scheduled work items by sprint of selected teams against a calendar view.  
           - [**Dependency Tracker**](../../boards/extensions/feature-timeline.md): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. 
           - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions that provide support for visualizing portfolio roadmaps.  
           ::: moniker-end

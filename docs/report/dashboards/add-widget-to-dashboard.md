@@ -116,7 +116,7 @@ This example shows how to add the Velocity widget available from Analytics to a 
 5. Select the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
 
 6. Next, configure the widget. For details, see the following articles: 
-	- [Configure burndown or Turnup](configure-burndown-burnup-widgets.md)
+	- [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
 	- [Configure cumulative flow](cumulative-flow.md)  
 	- [Configure lead/cycle time](cycle-time-and-lead-time.md)  
 	- [Configure velocity](team-velocity.md)  

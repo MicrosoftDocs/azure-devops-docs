@@ -709,7 +709,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following articles:  
 - [Link type element reference](../../reference/xml/link-type-element-reference.md) 
-- [Manage link types (`witadmin`)](../../reference/witadmin/manage-link-types.md) 
+- [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types) 
 
 ::: moniker-end
 
@@ -807,7 +807,7 @@ The default json format provides additional information about the attributes def
 
 ### `witadmin listlinktypes` 
 
-You can list link types supported for your project collection using the [`witadmin listlinktypes`](../../reference/witadmin/manage-link-types.md) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
+You can list link types supported for your project collection using the [`witadmin listlinktypes`](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
 
 Here we list the link types for the fabrikam-sever default collection: 
 
@@ -902,14 +902,14 @@ The following table provides descriptions for each of the link type attributes r
       `editable`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is editable (`true`) or not (`false`). You can only add and edit custom link types for on-premises deployments using [`witadmin` Manage link type](../../reference/witadmin/manage-link-types.md) command-line tool. System link types always have `editable=false`.  
+      Indicates whether the link type is editable (`true`) or not (`false`). You can only add and edit custom link types for on-premises deployments using [`witadmin` Manage link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool. System link types always have `editable=false`.  
 :::row-end:::
 :::row:::
    :::column span="":::
       Is Active, `enabled`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is active (`true`) or not (`false`). You can only custom link types for on-premises deployments using the [`witadmin` Manage link type](../../reference/witadmin/manage-link-types.md) command-line tool. 
+      Indicates whether the link type is active (`true`) or not (`false`). You can only custom link types for on-premises deployments using the [`witadmin` Manage link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types) command-line tool. 
    :::column-end:::
 :::row-end:::
 :::row:::

@@ -217,7 +217,44 @@ Always authenticate with identity services rather than cryptographic keys when a
   - [Manage PATs with policies - for administrators](../accounts/manage-pats-with-policies-for-administrators.md)
   - [Use PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
 
------
+For more information, check out the following articles:
+
+- [Manage PATs with policies - for administrators](../accounts/manage-pats-with-policies-for-administrators.md)
+- [Use PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
+
+### Limit access by location 
+
+Limit access to specific IP (Internet Protocol) address ranges with Azure AD Conditional Access Policy Validation. For example, you can configure a location so that MFA isn’t required for internal IP addresses. 
+
+For more information, see [Using the location condition in a Conditional access policy](/azure/active-directory/conditional-access/howto-conditional-access-policy-location).
+
+### Secure your network
+
+Set up an [allowlist](allow-list-ip-url.md).
+
+### Use Web application firewalls
+
+Implement Web application firewalls (WAFs), so they can filter, monitor, and block any malicious web-based traffic to and from Azure DevOps.
+
+- Always use encryption.
+- Validate certificates.
+- This shouldn’t be the only planned safety mechanism to reduce the volume and severity of security bugs in your applications.
+
+For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals)
+
+## Secure projects
+
+- Enable the *Limit user visibility for projects* preview feature for the organization, which restricts access to only those projects that you add users to.
+- Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
+::: moniker range="azure-devops"
+- Disable "Allow public projects" in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
+::: moniker-end
+- Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
+- Check out the following articles for more in-depth information about setting sub-project permissions. 
+    - [Set wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
+    - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
+    - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+    - [Set Analytics permissions](../../report/powerbi/analytics-security.md)
 
 ## Secure Azure Artifacts 
 

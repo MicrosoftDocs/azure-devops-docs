@@ -3,7 +3,7 @@ title: Release Burndown sample queries and Power BI reports
 titleSuffix: Azure DevOps
 description: Learn how to generate a release burndown Power BI report.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -20,8 +20,6 @@ Burndown and burnup reports show how much work is getting completed over time. T
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Release burndown clustered column chart report.":::
 
 Burndown charts only make sense if you plan your work for the time period of the chart. Otherwise, if you plan on a sprint-by-sprint basis, you won't see a standard burndown. In these instances, a burnup chart makes more sense to see how progress is made over time. 
-
-
 
 To learn more about burndown and burnup, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
 
@@ -87,7 +85,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -404,7 +402,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Transform data in Power BI
+## Expand columns in Power Query Editor
 
 Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
 - `Links` 
@@ -414,14 +412,13 @@ Prior to creating the report, you'll need to expand columns that return records 
 - `AssignedTo` 
 
 To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
- 
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
 
 ## Create the clustered column chart  
 
-Power BI shows you the fields you can report on. The following example assumes that columns weren't renamed. 
-
-
-1. In Power BI, choose **Clustered column chart** under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Clustered column chart** under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/release-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Release burndown clustered column chart report. ":::
 
@@ -432,7 +429,7 @@ Power BI shows you the fields you can report on. The following example assumes t
 1. Add `TotalStoryPoints` to **Y-Axis**. 
   
 
-The example report displays burndown on both the Count of Stories and Story Points.
+The example report displays burndown on both the count of Stories and sum or **Story Points**.
 
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Sample Release burndown clustered column chart report.":::
 

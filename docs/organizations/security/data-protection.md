@@ -53,7 +53,7 @@ Azure DevOps uses Azure Storage as the primary repository for service metadata a
 
 - **Azure SQL Database storage** stores the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project, and provides indexes into the blob storage to look up files and attachments. For more information, see [Azure SQL Database](/azure/azure-sql/database).
 
-Administrators can manage access to resources by [granting or restricting permissions](../../reference/process-templates/configure-initial-groups-teams-members-permissions.md) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
+Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
 
 During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows the user to remain authenticated against Azure DevOps.
 
@@ -91,7 +91,7 @@ A further protection is that customers can recover their deleted organizations o
 
 Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, the restores do." While technically incorrect, the sentiment is right.
 
-Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. Also, from time to time, we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
+Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. There are many combinations of disaster and data corruption scenarios, which we continue to plan and run new tests for regularly.
 
 ## Service availability
 
@@ -313,3 +313,4 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Features and services included with Azure DevOps](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
+

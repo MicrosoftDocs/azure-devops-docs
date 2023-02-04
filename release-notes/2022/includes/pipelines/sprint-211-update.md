@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Pipeline Agent supports Group Managed Service Accounts as service account
 
-The Azure Pipelines agent now supports Group Managed Service Accounts on [Self-hosted agents on Windows](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?view=azure-devops).
+The Azure Pipelines agent now supports Group Managed Service Accounts on [Self-hosted agents on Windows](/azure/devops/pipelines/agents/v2-windows?view=azure-devops&preserve-view=true).
 
 [Group Managed Service Accounts](https://aka.ms/gmsa) provide centralized password management for domain accounts that act as service accounts. The Azure Pipelines Agent can recognize this type of account so a password is not required during configuration:
 

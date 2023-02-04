@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a Cumulative Flow Diagram (CFD) Power BI report.
 ms.subservice: azure-devops-analytics
 ms.author: kaelli
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
@@ -74,7 +74,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 ```
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -175,17 +175,26 @@ The following table describes each part of the query.
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Transform data in Power BI
+## Expand columns in Power Query Editor
 
-From the Power Query Editor, choose the query with the data you want to transform. For a CFD chart, you'll want to 
-expand columns such as `Area`, `Iteration`, and `AssignedTo`. 
-To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+From the Power Query Editor, choose the query with the data you want to transform. For a CFD chart, you'll need to 
+expand the `Area`, `Iteration`, and `AssignedTo` columns. To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+
+
+## (Optional) Rename fields
+
+Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
+
 
 ## Create the stacked area chart  
 
 In the following example, the query was renamed to *CFD*, but no columns were renamed. 
 
-1. In Power BI, choose the **Stacked area** chart under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked area** chart under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/cfd-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for CFD chart report. ":::
  

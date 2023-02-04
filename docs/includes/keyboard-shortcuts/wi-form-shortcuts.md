@@ -35,6 +35,8 @@ You can use the following keyboard shortcuts when [interacting with a work item 
       **Shift+Alt+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy work item title   
       **Ctrl+Shift+,**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to left tab (page)   
       **Ctrl+Shift+.**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to right tab (page)   
+      **z**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen   
+      **Ctrl+Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and close   
    :::column-end:::
 :::row-end:::
  

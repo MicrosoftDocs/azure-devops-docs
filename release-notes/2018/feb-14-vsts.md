@@ -28,20 +28,20 @@ Other highlights include:
 
 ### Recover a recently-deleted repository via API
 
-Sometimes mistakes can be made when cleaning up old repositories in source control. If a Git repository has been deleted within the last 30 days, it can be recovered through the REST API. Soon we’ll also enable this option in the Web UI. See the documentation for the [list](/rest/api/vsts/git/repositories/get%20recycle%20bin%20repositories) and [recover](/rest/api/vsts/git/repositories/restore%20repository%20from%20recycle%20bin) operations for more information.
+Sometimes mistakes can be made when cleaning up old repositories in source control. If a Git repository has been deleted within the last 30 days, it can be recovered through the REST API. See the documentation for the [list](/rest/api/azure/devops/git/repositories/get-recycle-bin-repositories) and [recover](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin) operations for more information.
 
 ## Work
 
 ### Discuss work items in Microsoft Teams using the VSTS messaging extension
 
-Microsoft Teams has become the hub for teamwork within many engineering teams. We have expanded our Microsoft Teams integration with the new VSTS messaging extension to enable you to find and discuss specific work items alongside your other content and tools. See the [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) extension in the Marketplace for more information.
+Microsoft Teams has become the hub for teamwork within many engineering teams. We've expanded our Microsoft Teams integration with the new VSTS messaging extension to enable you to find and discuss specific work items alongside your other content and tools. See the [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) extension in the Marketplace for more information.
 
 > [!div class="mx-imgBorder"]
 > ![VSTS messaging extension in Microsoft Teams](media/130_01.png)
 
 ### Mention a group in work item and pull request discussions
 
-When discussions about work items or pull requests include several people&#8212;or everyone on a particular team&#8212;it takes time to @mention everyone you want to notify. Now you can simply @mention a team or security group in discussions. If you are a member of a group that gets mentioned in either a work item or a pull request, you will get an email notification. If you are a member of a group that gets mentioned in a work item, that work item will be displayed in your **Mentioned** pivot in the **Work Items** hub too.
+When discussions about work items or pull requests include several people&#8212;or everyone on a particular team&#8212;it takes time to @mention everyone you want to notify. Now you can simply @mention a team or security group in discussions. If you're a member of a group that gets mentioned in either a work item or a pull request, you'll get an email notification. If you're a member of a group that gets mentioned in a work item, that work item will be displayed in your **Mentioned** pivot in the **Work Items** hub too.
 
 > [!div class="mx-imgBorder"]
 > ![Group mention](media/130_05.png)
@@ -63,7 +63,7 @@ Now you can configure branch filters for GitHub repositories as well. For exampl
 
 ### Filter branches using include and exclude
 
-So far you have been able to specify branches and tags that should trigger a release. We received clear feedback that this was limited and required frequent updates to release definitions. As in **Build**, you can now specify branches that should not trigger a release. For example, you may want to trigger a release for all the **dev/*** branches but not for the **dev/featureX** branch.
+So far you've been able to specify branches and tags that should trigger a release. We received clear feedback that this was limited and required frequent updates to release definitions. As in **Build**, you can now specify branches that shouldn't trigger a release. For example, you may want to trigger a release for all the **dev/*** branches but not for the **dev/featureX** branch.
 
 > [!div class="mx-imgBorder"]
 > ![Branch include and exclude filters](media/130_12.png)
@@ -86,7 +86,7 @@ Details of the Azure blob storage where artifacts are published are required whe
 
 ### Specify a default version for Jenkins artifacts
 
-When a release with multiple artifacts is auto-triggered, default versions saved in the release definition are picked up for all artifacts. Previously, Jenkins artifacts did not have a default version setting, and so you couldn’t set a continuous deployment trigger on a release using Jenkins as the secondary artifact.
+When a release with multiple artifacts is auto-triggered, default versions saved in the release definition are picked up for all artifacts. Previously, Jenkins artifacts didn't have a default version setting, and so you couldn’t set a continuous deployment trigger on a release using Jenkins as the secondary artifact.
 
 Now, you can specify a default version for Jenkins artifacts, with the options you’re familiar with:
 
@@ -151,16 +151,16 @@ Deleting unused packages can help keep the package list clean but sometimes it c
 
 ### Manage access and extensions for large numbers of users using groups
 
-We’ve made it easy for administrators to manage large groups of users by enabling you to assign access levels and extensions to AAD or VSTS groups. After setting up the appropriate rules, adding someone to the group will automatically grant them the correct access levels and extensions when they access the VSTS account. As a result, access levels and extensions will no longer have to be managed on an individual basis.
+We’ve made it easy for administrators to manage large groups of users by enabling you to assign access levels and extensions to Azure AAD or VSTS groups. After setting up the appropriate rules, adding someone to the group will automatically grant them the correct access levels and extensions when they access the VSTS account. As a result, access levels and extensions will no longer have to be managed on an individual basis.
 
 > [!div class="mx-imgBorder"]
 > ![Group licensing](media/130_07.png)
 
 See the [large account user management roadmap post](https://blogs.msdn.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/azure/devops/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
 
-### Reduced latency for AAD group membership changes
+### Reduced latency for Azure AAD group membership changes
 
-If you are managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
+If you're managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in Azure AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
 
 ### Manage users with Graph REST APIs Public Preview
 
@@ -168,7 +168,7 @@ The Graph REST API resources allow developers to write applications that manage 
 
 ### Leave account
 
-In the past, only account owners or administrators could remove users from an account. Now you can leave an account that you are no longer involved in on your own. To leave an account, navigate to your profile page and locate the account you wish to leave within your account list. Underneath the account actions section, there is now an option to leave the account. This feature was prioritized based on a suggestion.
+In the past, only account owners or administrators could remove users from an account. Now you can leave an account that you're no longer involved in on your own. To leave an account, navigate to your profile page and locate the account you wish to leave within your account list. Underneath the account actions section, there's now an option to leave the account. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Leave account](media/130_06.png)

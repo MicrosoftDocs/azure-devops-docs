@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to generate feature progress rollup by Story Points Power BI report.
 ms.subservice: azure-devops-analytics
 ms.author: kaelli
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
@@ -76,7 +76,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - `{organization}` - Your organization name 
@@ -242,7 +242,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-## Transform the data in Power BI
+## Transform the data in Power Query Editor
 
 The query returns several columns that you need to expand before you can use them to create a report. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
 
@@ -263,9 +263,11 @@ To learn how, see the following sections in [Transform Analytics data to generat
 > In this example, the **State** values for **User Story** include **Proposed**, **In Progress**, and **Completed**. 
 
 
+[!INCLUDE [temp](includes/close-apply.md)]
+
 ## Create the stacked bar chart report 
 
-1. In Power BI, choose **Stacked bar chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose **Stacked bar chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/feature-progress-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Feature Progress stacked bar chart report. ":::
 

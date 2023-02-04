@@ -2,7 +2,7 @@
 title: Build code from Subversion
 description: Using Subversion repo with Azure Pipelines
 ms.topic: reference
-ms.date: 07/08/2020
+ms.date: 01/25/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -23,7 +23,7 @@ If the Subversion server cannot be reached from Azure Pipelines, work with your 
 
 ### Reachable from Microsoft-hosted agents
 
-A decision you have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a simple pipeline to use Microsoft-hosted agents and make sure to add a step to checkout source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
+A decision you have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a simple pipeline to use Microsoft-hosted agents and make sure to add a step to check out source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
 
 ### Not reachable from Microsoft-hosted agents
 

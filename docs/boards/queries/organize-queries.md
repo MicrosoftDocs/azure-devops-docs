@@ -2,14 +2,14 @@
 title: Manage and organize your queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
 description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
-ms.custom: boards-queries 
+ms.custom: boards-queries, contperf-fy23 
 ms.service: azure-devops-boards
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/05/2022
+ms.date: 12/16/2022
 ---
 
 
@@ -18,7 +18,7 @@ ms.date: 10/05/2022
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
+Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer.
 
 > [!NOTE]  
 > To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. Also, you can perform bulk drag-and-drop of queries into query folders from Visual Studio but not from the web portal. 

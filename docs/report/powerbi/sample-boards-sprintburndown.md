@@ -3,7 +3,7 @@ title: Sprint Burndown sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a sprint burndown Power BI report.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23, engagement-fy23
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -85,7 +85,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
@@ -375,7 +375,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 [!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Transform data in Power BI
+## Expand columns in Power Query Editor
 
 Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
 - `Area`
@@ -384,10 +384,11 @@ Prior to creating the report, you'll need to expand columns that return records 
 
 To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
  
+[!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the stacked column chart report
 
-1. In Power BI, choose the **Stacked column chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Stacked column chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
 

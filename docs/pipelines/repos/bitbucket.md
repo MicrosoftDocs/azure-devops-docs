@@ -4,7 +4,7 @@ description: Using a Bitbucket Cloud repository with Azure Pipelines
 ms.topic: reference
 ms.author: vijayma
 author: vijayma
-ms.date: 05/31/2022
+ms.date: 01/25/2023
 monikerRange: azure-devops
 ---
 
@@ -69,6 +69,9 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
 
 # [Classic](#tab/classic/)
+
+> [!NOTE]
+> The **Build.SourceVersionMessage** variable does not work with Bitbucket repositories when **Batch changes while a build is in progress** is enabled.  
 
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
 

@@ -172,19 +172,31 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. Select the **.Net Desktop** pipeline template.
 
-1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
+1. For this example, we will only need the last two tasks from the template. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
 
     :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete pipeline tasks.":::
 
 1. Select **+** to add a new task. Add the **Command line** task and configure it as follows:
+    
+    Display name: Command Line Script.
+    Script: ```echo $(Your-Secret-Name) > secret.txt```
 
     :::image type="content" border="false" source="media/cmd-task.png" alt-text="A screenshot showing how to configure the command line task.":::
 
-1. Select the **Copy files** task and fill out the required parameters as follows:
+1. Select **+** to add a new task. Add the **Azure Key Vault** task and configure it as follows:
+
+    Display Name: Azure Key Vault
+    Azure subscription: Select your Azure subscription from the list, and then select **Authorize**.
+    Key vault: Select your key vault
+    Secret filter: A comma separated list of secret names or leave * to download all secrets from the selected key vault.
+    
+    :::image type="content" border="false" source="media/key-vault-classic.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
+
+1. Select the **Copy files** task and fill out the required fields.
 
     :::image type="content" border="false" source="media/copy-task.png" alt-text="A screenshot showing how to set up the copy files task.":::
 
-1. Select the **Publish Artifacts** task and enter the required parameters.
+1. Select the **Publish Artifacts** and keep the default settings.
 
     :::image type="content" border="false" source="media/publish-artifacts.png" alt-text="A screenshot showing how to set up the publish artifacts task.":::
 

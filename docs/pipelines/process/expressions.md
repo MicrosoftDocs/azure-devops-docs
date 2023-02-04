@@ -605,6 +605,23 @@ steps:
   - script: echo ${{ value }}
 ```
 
+Additionally, you can iterate through nested elements within an object.
+
+```yaml
+parameters:
+- name: listOfFruits
+  type: object
+  default:
+  - fruitName: 'apple'
+    colors: ['red','green']
+  - fruitName: 'lemon'
+    colors: ['yellow']
+steps:
+- ${{ each fruit in parameters.listOfFruits }} :
+  - ${{ each fruitColor in fruit.colors}} :
+    - script: echo ${{ fruit.fruitName}} ${{ fruitColor }}
+``` 
+
 ## Dependencies
 
 Expressions can use the dependencies context to reference previous jobs or stages. You can use dependencies to:
