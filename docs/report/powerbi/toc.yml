@@ -29,9 +29,7 @@ items:
 - name: Analytics views  
   items:  
   - name: What are Analytics views?  
-    href: what-are-analytics-views.md  
-  - name: Default Analytics views  
-    href: analytics-default-views.md  
+    href: what-are-analytics-views.md 
   - name: Create an Analytics view  
     href: analytics-views-create.md?  
   - name: Manage Analytics views  
@@ -158,24 +156,22 @@ items:
     href: sample-test-plans-tester-by-outcome.md
   - name: Configuration by outcome matrix
     href: sample-test-plans-configuration-by-outcome.md
+- name: Entity and properties reference
+  items:
+  - name: Date, Project, and User
+    href: ../analytics/entity-reference-general.md
+  - name: Work tracking (Azure Boards)  
+    href: ../analytics/entity-reference-boards.md
+  - name: Pipelines (Azure Pipelines)
+    href: ../analytics/entity-reference-pipelines.md
+  - name: Testing (Azure Test Plans)  
+    href: ../analytics/entity-reference-test-plans.md
 - name: Data model reference
   items:
   - name: Data model for Analytics
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Analytics OData metadata
     href: ../extend-analytics/analytics-metadata.md
-  - name: Entity and properties reference
-    items:
-    - name: Date, Project, and User
-      href: ../analytics/entity-reference-general.md
-    - name: Work tracking (Azure Boards)  
-      href: ../analytics/entity-reference-boards.md
-    - name: Pipelines (Azure Pipelines)
-      href: ../analytics/entity-reference-pipelines.md
-    - name: Testing (Azure Test Plans)  
-      href: ../analytics/entity-reference-test-plans.md
-  - name: Analytics views dataset design
-    href: data-connector-dataset.md
   - name: Historical data representation
     href: analytics-historical-filtering.md
   - name: Supported functions & clauses
@@ -184,6 +180,8 @@ items:
     href: ../extend-analytics/odata-batch.md
   - name: API versioning
     href: ../extend-analytics/odata-api-version.md
+  - name: Analytics views dataset design
+    href: data-connector-dataset.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view  

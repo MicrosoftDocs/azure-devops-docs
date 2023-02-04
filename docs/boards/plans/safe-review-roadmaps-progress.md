@@ -155,7 +155,6 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 
 ## Related articles
 
-- [Review team Delivery Plans](review-team-plans.md)
-- [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md)
+- [Review team Delivery Plans](review-team-plans.md) 
 
 

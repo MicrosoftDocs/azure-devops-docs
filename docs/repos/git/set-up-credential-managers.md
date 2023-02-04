@@ -5,9 +5,9 @@ description: Authenticate to Azure Repos and TFS Git repos using credential mana
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 11/13/2020
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.date: 11/13/2020
 ---
 
 # Use Git Credential Manager to authenticate to Azure Repos
@@ -20,8 +20,7 @@ Git Credential Manager simplifies authentication with your Azure Repos Git repos
 Azure Repos provides IDE support for Microsoft account and Azure AD authentication through the following clients:
 
 - [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md)
-- [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
-- [Eclipse with the Team Explorer Everywhere plug-in](https://github.com/Microsoft/team-explorer-everywhere)
+- [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
 
 If your environment doesn't have an integration available, configure your IDE with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 

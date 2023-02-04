@@ -156,10 +156,10 @@ A: Make sure that the feed's owner is sharing a view as an upstream source.
 ##### Q: Can a user with **Reader** role download packages from an upstream source?
 A: No. A user with **Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Collaborator**, a **Contributor**, or an **Owner** install those packages from upstream.
 
-##### Q: What happens when a user delete or unpublish a package saved from an upstream source?
+##### Q: What happens when a user deletes or unpublishes a package saved from an upstream source?
 A: The package will not be available for download from the feed and the version number gets reserved permanently. The package also will no longer be saved from the upstream source. Earlier and later versions of the package will not be affected.
 
-##### Q: What happens when a user deprecate a package saved from an upstream source?
+##### Q: What happens when a user deprecates a package saved from an upstream source?
 A: A warning message gets added to the package's metadata and displayed whenever the package is viewed or installed from the feed.
 
 ## Related articles

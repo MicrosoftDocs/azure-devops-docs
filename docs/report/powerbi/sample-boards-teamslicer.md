@@ -3,12 +3,12 @@ title: Add a Team slicer to a Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to add a team slicer to a Power BI report.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/08/2022
+ms.date: 12/16/2022
 ---
 
 
@@ -30,7 +30,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 
 ## Sample queries
 
-To use a team slicer in a Power BI report, you'll need to add another query to your Power BI report. The query below returns the mapping between teams and Area Paths.
+To use a team slicer in a Power BI report, you'll need to add another query to your Power BI report. The following query returns the mapping between teams and Area Paths.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -60,7 +60,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -109,8 +109,6 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
  
 ##  Expand the Teams column
@@ -151,14 +149,6 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 
 To learn more about working with slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
-<!---
-The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a Team filter added. Selecting a team in the slicer filters the results of the Open Bugs report. It will work for any report, as long as its query returns AreaSK.
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot that shows Team Slicer report.](media/odatapowerbi-timeslicer-report.png)
-
--->
- 
 
 ## Related articles
 

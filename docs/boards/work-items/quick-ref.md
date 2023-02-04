@@ -2,13 +2,13 @@
 title: Quick reference for concepts related to work item tasks
 titleSuffix: Azure Boards
 description: Learn about query operators, macros, and sample queries used to list work items for Azure Boards and Azure DevOps.
-ms.custom: boards-work-items  
+ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/08/2022
+ms.date: 01/04/2023
 ---
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
@@ -105,6 +105,7 @@ Use this index to quickly access concepts and tasks related to work items and in
       <br/> 
       - [Work item fields](guidance/work-item-field.md)  
       - [Work item form](about-work-items.md#work-item-form)  
+      - [Work item form controls](work-item-form-controls.md)  
       - [Work item templates](about-work-items.md#templates)  
       - [Work item types](about-work-items.md#work-item-types-wits)
       - [Work tracking limits](../../organizations/settings/work/object-limits.md)
@@ -126,6 +127,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Add Features](../boards/kanban-epics-features-stories.md)  
       - [Add items to a backlog](../backlogs/create-your-backlog.md)  
       - [Add items to a Kanban board](../boards/kanban-quickstart.md)  
+      - [Add links](../backlogs/add-link.md)  
       - [Add tags](../queries/add-tags-to-work-items.md)  
       - [Add tasks](../sprints/add-tasks.md)  
       - [Add to discussion](../backlogs/add-work-items.md#capture-comments-in-the-discussion-section)    
@@ -198,7 +200,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
       - [Reassign work items](../backlogs/bulk-modify-work-items.md#reassign-work-items)
       - [Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)  
-      - [Request feedback ](../../project/feedback/get-feedback.md)  
+      - [Request feedback ](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)  
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  

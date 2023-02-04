@@ -4,7 +4,7 @@ description: Use .NET Framework to build ASP.NET apps in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
-ms.date: 02/09/2021
+ms.date: 01/09/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -50,20 +50,12 @@ Import this repo into your Git repo in TFS:
 ::: moniker-end
 
 ```
-https://github.com/Microsoft/devops-project-samples.git
+https://github.com/Azure-Samples/app-service-web-dotnet-get-started
 ```
+  
 
-The sample repo includes several different projects, and the sample application for this article is located at:
+The sample app is a Visual Studio solution that uses .NET 4.8. 
 
-```
-https://github.com/Microsoft/devops-project-samples
-```
-
-You'll use the code in `/dotnet/aspnet/webapp/`. Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.   
-
-The sample app is a Visual Studio solution that has two projects: 
-* An ASP.NET Web Application project that targets .NET Framework 4.5
-* A Unit Test project
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -90,7 +82,7 @@ The sample app is a Visual Studio solution that has two projects:
 ::: moniker range=">=azure-devops-2020"
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
-* Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
+* Use `windows-2022` for Windows Server 2022 with Visual Studio 2022
 
 You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 

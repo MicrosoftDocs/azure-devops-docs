@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to generate Lead time and Cycle time Power BI reports.
 ms.subservice: azure-devops-analytics
 ms.author: kaelli
-ms.custom: powerbisample
+ms.custom: powerbisample, engagement-fy23
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
@@ -73,7 +73,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
@@ -198,7 +198,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/rename-query.md)]
 
-## Transform data in Power BI
+## Transform data in Power Query Editor
 
 From the Power Query Editor, choose the query with the data you want to transform. For a Lead/Cycle time chart, you'll want to make the following transformations: 
 
@@ -212,11 +212,13 @@ To learn how, see the following sections in [Transform Analytics data to generat
 - [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
   
 
+[!INCLUDE [temp](includes/close-apply.md)]
+
 ## Create the trend chart  
 
 In the following example, the query was renamed to *LeadCycleTime*, but no columns were renamed. 
 
-1. In Power BI, choose the **Line chart** report under **Visualizations** and select the fields as shown in the following image. 
+1. In Power BI, choose the **Line chart** report under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/lead-time-trend-chart-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Lead Time trend chart report. ":::
 

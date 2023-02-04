@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: kaelli
 author: KathrynEE 
 monikerRange: 'azure-devops'
-ms.date: 10/28/2021
+ms.date: 12/16/2022
 ---
 
 # Azure Repos with Microsoft Teams
@@ -17,10 +17,9 @@ ms.date: 10/28/2021
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the 
-[Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to easily monitor your repositories. 
-Set up and manage subscriptions to receive notifications in your channel whenever code is pushed/checked 
-in or when a pull request (PR) is created, updated or merged. The app supports monitoring both Git and 
-Team Foundation Version Control (TFVC) repositories.
+[Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to monitor your repositories. The app supports monitoring both Git and Team Foundation Version Control (TFVC) repositories. It doesn't support integration with GitHub repositories. 
+
+To get started, you must set up and manage subscriptions to receive notifications in your channel whenever code is pushed/checked in or when a pull request (PR) is created, updated or merged. 
 
 > [!div class="mx-imgBorder"]
 > ![Notifications image](media/integrations-teams/NotificationsCards.png)

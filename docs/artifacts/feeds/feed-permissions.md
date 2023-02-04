@@ -22,7 +22,7 @@ Feed owners can specify who can create and administer Artifacts feeds. To access
 :::image type="content" source="media/azure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings":::
 
 > [!NOTE]
-> The Azure Artifacts settings icon will not be visible if you don't have the right permissions.
+> The Azure Artifacts settings icon will only be visible if you are an **Owner** or an **Administrator** of the feed.
 
 By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
 
@@ -81,7 +81,7 @@ In the edit feed dialog:
 
 ## Permissions table
 
-In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
+In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the different access levels for a feed
 
 |                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
 | --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
@@ -159,6 +159,8 @@ You can make your packages available publicly to anonymous users with limited ac
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md).
 
 - [Promote packages to a view](./views.md).
+
+- [Project-scoped feeds](project-scoped-feeds.md).
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md).
 

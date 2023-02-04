@@ -8,6 +8,13 @@
     items:
     - name: By release date 
       items:
+        - name: "2023"
+          items:
+          - name: January 25
+            href: 2023/sprint-215-update.md
+          - name: January 12
+            href: 2023/sprint-214-update.md
+          expanded: true
         - name: "2022"
           items:
           - name: December 8
@@ -42,7 +49,7 @@
             href: 2022/sprint-199-update.md
           - name: January 19
             href: 2022/sprint-198-update.md
-          expanded: true
+          expanded: false
         - name: "2021"
           items:
           - name: December 6
@@ -197,6 +204,13 @@
       items:
       - name: Azure Boards
         items:
+        - name: "2023"
+          items:
+          - name: January 23
+            href: 2023/boards/sprint-215-update.md
+          - name: January 12
+            href: 2023/boards/sprint-214-update.md
+          expanded: true
         - name: "2022"
           items:
           - name: December 8
@@ -351,6 +365,13 @@
           expanded: false
       - name: Azure Pipelines
         items:
+        - name: "2023"
+          items:
+          - name: January 23
+            href: 2023/pipelines/sprint-215-update.md
+          - name: January 12
+            href: 2023/pipelines/sprint-214-update.md
+          expanded: false
         - name: "2022"
           items:
           - name: December 8
@@ -572,6 +593,11 @@
         expanded: false
       - name: General
         items:
+        - name: "2023"
+          items:
+          - name: January 12
+            href: 2023/general/sprint-214-update.md
+          expanded: true  
         - name: "2022"
           items:
           - name: October 11
@@ -688,6 +714,11 @@
         expanded: false
       - name: Wiki
         items:
+        - name: "2023"
+          items:
+          - name: January 23
+            href: 2023/wiki/sprint-215-update.md
+          expanded: false
         - name: "2022"
           items:
           - name: February 28
@@ -725,11 +756,11 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: October 2022
+  - name: December 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: September 2022
-    href: docswhatsnew/azure-devops-docs-2022-09.md
-  - name: August 2022
-    href: docswhatsnew/azure-devops-docs-2022-08.md
+  - name: November 2022
+    href: docswhatsnew/azure-devops-docs-2022-11.md
+  - name: October 2022
+    href: docswhatsnew/azure-devops-docs-2022-10.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

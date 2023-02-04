@@ -35,7 +35,7 @@ When you run the pipeline, you can specify the branch to check out for the `libr
 
 #### Specify the version of a template to extend at build queue-time
 
-[Templates](https://learn.microsoft.com/azure/devops/pipelines/process/templates) represent a great way to reduce code duplication _and_ [improve the security of your pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/templates?). 
+[Templates](/azure/devops/pipelines/process/templates) represent a great way to reduce code duplication _and_ [improve the security of your pipelines](/azure/devops/pipelines/security/templates?). 
 
 One popular use case is to house templates in their own repository. This reduces the coupling between a template and the pipelines that extend it and makes it easier to evolve the template and the pipelines independently. 
 
@@ -135,7 +135,7 @@ You can use `parameters.` and `variables.` in your template expressions. For var
 
 ### Audit Events for Changes to Approvals
 
-[Approvals](https://learn.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals) allow you to control when a stage should run. This is commonly used to control deployments to production environments. [Auditing](https://learn.microsoft.com/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page) allows you to meet compliance requirements and monitor the security of your Azure DevOps organization.
+[Approvals](/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#approvals&preserve-view=true) allow you to control when a stage should run. This is commonly used to control deployments to production environments. [Auditing](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page&preserve-view=true) allows you to meet compliance requirements and monitor the security of your Azure DevOps organization.
 
 When a user is asked to approve a pipeline to deploy to a particular stage, that user can choose to reassign the approval to someone else. 
 
