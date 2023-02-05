@@ -46,10 +46,7 @@ Further information:
 * [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 * [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-<video src="./media/sp-create-sp.mp4" width="600" controls>
-</video>
-
-![VIDEO https://msit.microsoftstream.com/video/5fd10840-98dc-ba75-cfbe-f1ed9cd5786b]
+![VIDEO ./media/sp-create-sp.mp4]
 
 #### Create a Managed Identity
 Creating managed identities in the Azure portal differs significantly from setting up applications with service principals. Before you begin the creation process, you must first consider which type of managed identity you want to create:
@@ -143,13 +140,13 @@ At this time, service principals and managed identities have the same [rate limi
 
 ## Potential Errors and How to Resolve Them
 
-### Failed to create service principal with object ID '{`provided objectId`}'
+#### Failed to create service principal with object ID '{`provided objectId`}'
 
 This error will appear because there is no service principal with the `provided objectId` in the tenant connected to your organization.
 One common reason why this might happen is that you are passing in the object id of the app registration, instead of the object id of its service principal. Remember, a service principal is an object that represents the application for a given tenant, it is not the application itself.
 The `service principal object id` can be found in your tenant's "Enterprise Applications" page. Search for the application's name and click on the "Enterprise Application" result that returns. This is the page of the service principal / enterprise application and you can use the Object Id found on this page to create a service principal in Azure DevOps.
 
-### Access Denied: {`id of the caller identity`} needs the following permission(s) on the resource Users to perform this action: Add Users
+#### Access Denied: {`id of the caller identity`} needs the following permission(s) on the resource Users to perform this action: Add Users
 
 This error usually happens for a number of reasons, some listed below:
 * You are not the owner of the organization, project collection administrator, or a project or team administrator.
