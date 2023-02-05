@@ -23,7 +23,7 @@ You can now add Azure Active Directory (Azure AD) service principals and managed
 > [!NOTE]
 > Service principal and managed identities support is currently in public preview. They are only available to Azure AD-backed organizations.
 
-For those developing applications on top of Azure AD, let these applications access your organization's Azure DevOps resources by adding their service principals as members of your organization. [Service principals](/azure/active-directory/fundamentals/service-accounts-principal) are security objects within an Azure AD application that define what an application can do and access in a given tenant. They can be setup in the Azure portal during the application registration process and configured to access Azure resources, including Azure DevOps. By adding these service principals into your organization and setting up permissions on top of them, we can determine whether a service principal is authorized to access resources and which ones.
+For those developing applications on top of Azure AD, let these applications access your organization's Azure DevOps resources by adding their service principals as members of your organization. [Service principals](/azure/active-directory/fundamentals/service-accounts-principal) are security objects within an Azure AD application that define what an application can do in a given tenant. They are set up in the Azure portal during the application registration process and configured to access Azure resources, like Azure DevOps. By adding service principals into your organization and setting up permissions on top of them, we can determine whether a service principal is authorized to access your organizational resources and which ones.
 
 [Managed identities](/azure/active-directory/fundamentals/service-accounts-managed-identities) are another Azure AD feature that act similarly to the application service principals described above. These objects provide identities for Azure resources and allow an easy way for services that support Azure AD authentication to share credentials. They are an appealing option because Azure AD takes care of credential management and rotation. While setup and configuration of a managed identity may look different in the Azure portal, Azure DevOps treats both security objects similarly as a new identity that can be added into our Users Hub and further configured to limit permissions. Throughout the rest of this documentation, we will refer to managed identites and service principals interchangeably as service principal, unless specified.
 
@@ -37,11 +37,24 @@ Your own implementation may vary, but at a high-level, the following steps are n
 
 The very first step is to create an application and/or a managed identity, which must be done in the Azure portal. 
 
-#### Managed Identity
-A **Managed Identity (MI)** is a service principal of a special type that can only be used with Azure resources. There are two types of managed identities:
+#### Application Registration
 
-* **System-assigned.** Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD.
-* **User-assigned.** You may also create a managed identity as a standalone Azure resource by creating a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it.
+When you create a new application registration, an application object is created in Azure AD. The **application service principal** is a representation of this application object for a given tenant. When you register an application as a multi-tenant application, there will be a unique service principal object that represents the application object for every tenant the application is added to.
+
+Further information:
+* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
+* [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
+
+<video src='your URL here' width=180/>
+
+![VIDEO https://msit.microsoftstream.com/video/5fd10840-98dc-ba75-cfbe-f1ed9cd5786b]
+
+#### Managed Identity
+Creating managed identities in the Azure portal differs significantly from setting up applications with service principals. Before you begin the creation process, you must first consider which type of managed identity you want to create:
+
+* **System-assigned managed identity:** Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD.
+* **User-assigned managed identity** You may also create a managed identity as a standalone Azure resource by creating a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it.
 
 Some helpful links are highlighted below:
 * [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
@@ -49,17 +62,6 @@ Some helpful links are highlighted below:
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
 ![VIDEO https://msit.microsoftstream.com/video/40e30840-98dc-ba75-3491-f1ed9cd7c336]
-
-#### Application Registration
-
-When you create a new application registration, an application object is created in Azure AD. The **application service principal** is then a representation of this application object for a given tenant. When you register an application as a multi-tenant application, there will be a unique service principal object that represents the application object in every tenant it is added to.
-
-Further information:
-* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-* [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
-* [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
-
-![VIDEO https://msit.microsoftstream.com/video/5fd10840-98dc-ba75-cfbe-f1ed9cd5786b]
 
 ### 2. Configure Azure DevOps OAuth application roles
 
@@ -75,7 +77,7 @@ To [assign these Azure AD app roles](/azure/active-directory/develop/howto-add-a
 
 // Insert video on granular scopes app-only
 
-#### Add and manage service principal in a Azure DevOps organization
+### 3. Add and manage service principal in an Azure DevOps organization
 
 Once you have completed configuring the service principal in the Azure AD portal, you must do the same in Azure DevOps by adding the service principal to your organization. They can be added through the [Users page](../../../organizations/accounts/add-organization-users.md) or with the [ServicePrincipalEntitlements APIs](//api-reference-links). Since they cannot login interactively, these actions must be done by a user account instead, specifically  a **Project Collection Administrator**. Only PCAs can add and manage service principals in an organization. When being added, you can also grant it access to specific projects and assign it a license.
 
@@ -96,7 +98,7 @@ Management of service principals does differ from user accounts in a few key way
 * You cannot modify a service principal’s display name or avatar on Azure DevOps.
 * A service principal will count as a license for each organization it is added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 
-#### Call Azure DevOps REST APIs with service principal token
+### 4. Access Azure DevOps resources with an Azure AD token
 
 Acquiring an access token for a managed identity can be done by following along with the Azure AD documentation. See these examples for [service principals](/azure/databricks/dev-tools/api/latest/aad/service-prin-aad-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
 
