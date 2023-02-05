@@ -82,7 +82,7 @@ Once you have completed configuring the service principal in the Azure AD portal
 > [!TIP] 
 > To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the [ServicePrincipalEntitlements API], make sure to pass in the service principal's object id and not the application's object id. 
 
-// Insert a screenshot
+![Service principals and managed identities in the Users Hub](./media/users-hub-sps.png)
 
 After they are added to the organization, they can be treated similarly to standard user accounts. You can directly assign permissions to the service principal, add and remove it from security groups and teams, and remove it from the organization.
 
@@ -129,8 +129,25 @@ git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" 
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (i.e. Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs.
 
+### Q: Can I use a service principal with Azure CLI?
+??
+
 ### Q: What are the rate limits on service principals and managed identities?
 At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limit) as users.
 
+### Q: Can I add a managed identity from a different tenant to my organization?
+??
 
+## Potential Errors and How to Resolve Them
 
+### Failed to create service principal with object ID '{`provided objectId`}'
+
+This error will appear because there is no service principal with the `provided objectId` in the tenant connected to your organization.
+One common reason why this might happen is that you are passing in the object id of the app registration, instead of the object id of its service principal. Remember, a service principal is an object that represents the application for a given tenant, it is not the application itself.
+The `service principal object id` can be found in your tenant's "Enterprise Applications" page. Search for the application's name and click on the "Enterprise Application" result that returns. This is the page of the service principal / enterprise application and you can use the Object Id found on this page to create a service principal in Azure DevOps.
+
+### Access Denied: {`id of the caller identity`} needs the following permission(s) on the resource Users to perform this action: Add Users
+
+This error usually happens for a number of reasons, some listed below:
+* You are not the owner of the organization, project collection administrator, or a project or team administrator.
+* You are a project or team administrator trying to add a user, but the policy ['Allow team and project administrators to invite new users'](../../organizations/security/restrict-invitations?view=azure-devops) has not been enabled.
