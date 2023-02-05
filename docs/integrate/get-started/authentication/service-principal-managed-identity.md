@@ -69,7 +69,7 @@ Further information:
 
 // Insert screenshot of app roles available in Azure Portal
 
-To [assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration, you can do this in the Azure portal or programmatically by using [Microsoft Graph](https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0&tabs=http). Since these are application permissions, each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permission. For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
+To [assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration, you can do this in the Azure portal or programmatically by using [Microsoft Graph](https://learn.microsoft.com/graph/api/user-post-approleassignments). Since these are application permissions, each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permission. For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
 
 // Insert a code snippet here akin to https://techcommunity.microsoft.com/t5/integrations-on-azure-blog/grant-graph-api-permission-to-managed-identity-object/ba-p/2792127
 
@@ -133,7 +133,7 @@ To keep your token more secure, use credential managers so you don't have to ent
 ??
 
 ### Q: What are the rate limits on service principals and managed identities?
-At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits) as users.
+At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
 ### Q: Can I add a managed identity from a different tenant to my organization?
 ??
@@ -150,4 +150,4 @@ The `service principal object id` can be found in your tenant's "Enterprise Appl
 
 This error usually happens for a number of reasons, some listed below:
 * You are not the owner of the organization, project collection administrator, or a project or team administrator.
-* You are a project or team administrator trying to add a user, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations) has not been enabled.
+* You are a project or team administrator trying to add a user, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations.md) has not been enabled.
