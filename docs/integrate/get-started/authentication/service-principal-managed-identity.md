@@ -46,7 +46,7 @@ Further information:
 * [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 * [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-<video src="/media/sp-create-sp.mp4" width="600" controls>
+<video src="./media/sp-create-sp.mp4" width="600" controls>
 </video>
 
 ![VIDEO https://msit.microsoftstream.com/video/5fd10840-98dc-ba75-cfbe-f1ed9cd5786b]
