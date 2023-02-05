@@ -14,20 +14,18 @@ ms.date: 02/15/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Security should always be your top-most concern when you’re working with company and personal data, especially when you're working in a cloud-based solution, like Azure DevOps Services. Microsoft keeps the underlying cloud infrastructure secure, but it's up to you to configure security in Azure DevOps. 
+Security should always be your top-most concern when you’re working with company and personal data, especially when you're working in a cloud-based solution, like Azure DevOps Services. Microsoft keeps the underlying cloud infrastructure secure, but it's up to you to configure security in Azure DevOps to keep your organization secure. 
 
-You don't have to implement best practices when using Azure Devops, but doing so will likely help you have a better, more secure experience. We've gathered some ideas for keeping your Azure DevOps environment secure, with the following goals in mind: 
+We've gathered some ideas for you to consider as you look to improve your security, with the following goals in mind: 
 
-- Secure [Azure DevOps in general](#securing-azure-devops)
-- [Scope permissions](#scope-permissions) at the organization/collection, project, or object level
+- Securing your [Azure DevOps environment](#securing-azure-devops-environment)
+- Restrict access through [scoped permissions](#scoped-permissions) at the organization/collection, project, or object level
 - Maintain tight control of administrators and [security groups](#manage-security-groups)
 - Scope [service accounts](#scope-service-accounts) and [service connections](#scope-service-connections)
-- Learn best practices for each [authentication method](#choose-the-right-authentication-method)
+- Learn best practices for [authenticating when integrating with Azure DevOps](#choose-the-right-authentication-method)
 - Secure specific product areas and associated services, like [Azure Artifacts](#secure-azure-artifacts), [Azure Boards](#secure-azure-boards), [Azure Pipelines](#secure-azure-pipelines), [Azure Repos](#secure-azure-repos), [Azure Test Plans](#secure-azure-test-plans), and [Github integrations](#secure-github-integrations).
 
-## Securing Azure DevOps
-
-- Periodically [review audit events](../audit/azure-devops-auditing.md#review-audit-log) to monitor and react to unexpected usage patterns by administrators and other users. 
+## Securing Azure DevOps environment
 
 ### Removing users
 
@@ -50,40 +48,31 @@ For more information, see the following articles:
 - [Manage conditional access](../accounts/change-application-access-policies.md)
 - [Require all users to use multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)
 
+### Review auditing events
+
+Once you have an Azure AD backed organization, you can turn on Auditing in your Security policies. Periodically [review audit events](../audit/azure-devops-auditing.md#review-audit-log) to monitor and react to unexpected usage patterns by administrators and other users. 
+
 ### Secure your network
 
-Set up an [allowlist](allow-list-ip-url.md).
-
-### Use Web application firewalls
-
-Implement Web application firewalls (WAFs), so they can filter, monitor, and block any malicious web-based traffic to and from Azure DevOps.
-
+A few ways to do so might include:
+- Set up an [allowlist](allow-list-ip-url.md) to restrict specific IPs.
 - Always use encryption.
 - Validate certificates.
-- This shouldn’t be the only planned safety mechanism to reduce the volume and severity of security bugs in your applications.
-- For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals)
+- Implement Web application firewalls (WAFs), so they can filter, monitor, and block any malicious web-based traffic to and from Azure DevOps.
+- For more information, see this guidance on [application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals)
 
 -----
 
-## Scope permissions
+## Scoped permissions
 
-The system manages permissions at different levels - individual, external, server, collection, project, object, and  - and assigns them to one or more built-in groups by default.
+The system manages permissions at different levels - individual, collection, project, and object - and assigns them to one or more built-in groups by default.
 
 - Only give users and services the minimum amount of access needed to perform their business functions.
 - Disable inheritance where possible. Due to the allow-by-default nature of inheritance, unexpected users can get access or permissions. For more information, read about [inheritance](about-permissions.md#permission-inheritance-and-security-groups). 
-- Check out the following articles:
+- Learn more about permissions here:
   - [Permissions and role lookup guide](permissions-lookup-guide.md)
   - [Permissions, security groups, and service accounts reference](permissions.md)
   - [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions).
-
-### External guest access 
-
-- Block external guest access entirely by disabling the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list). It's a good idea to do so if there's no business need for it.
-- Use a different email or user principal name (UPN) for your personal and business accounts, even though it's allowed. This action eliminates the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.  
-- Put all the external guest users in a single Azure AD group and manage the permissions of that group appropriately. You can easily manage and audit this way.
-  - Remove direct assignments so the group rules apply to those users. For more information, see [Add a group rule to assign access levels](../accounts/assign-access-levels-by-group-membership.md).
-  - Reevaluate rules regularly on the Group rules tab of the Users page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Every 24 hours and anytime a group rule changes, rules get automatically reevaluated in the system.
-- For more information, see [B2B guests in the Azure AD](/azure/active-directory/external-identities/delegate-invitations). 
 
 ### Project-level permissions
 
@@ -93,12 +82,15 @@ The system manages permissions at different levels - individual, external, serve
 - Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
 - Disable *"Allow public projects"* in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
 - Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
-- Check out the following articles for more in-depth information about setting sub-project permissions. 
-    - [Set wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
-    - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
-    - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)
-    - [Set Analytics permissions](../../report/powerbi/analytics-security.md)
- 
+
+### External guest access 
+
+- Block external guest access entirely by disabling the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list). It's a good idea to do so if there's no business need for it.
+- Use a different email or user principal name (UPN) for your personal and business accounts, even though it's allowed. This action eliminates the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.  
+- Put all the external guest users in a single Azure AD group and manage the permissions of that group appropriately. You can easily manage and audit this way.
+  - Remove direct assignments so the group rules apply to those users. For more information, see [Add a group rule to assign access levels](../accounts/assign-access-levels-by-group-membership.md).
+  - Reevaluate rules regularly on the Group rules tab of the Users page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Every 24 hours and anytime a group rule changes, rules get automatically reevaluated in the system.
+- For more information, see [B2B guests in the Azure AD](/azure/active-directory/external-identities/delegate-invitations). 
 
 
 -----
@@ -117,48 +109,6 @@ See the following recommendations for assigning permissions to security groups a
 |Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.        |
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
-
-### Server-level groups
-
-See the following table of built-in security groups, which users to add, and best practice tips.
-
----
-:::row:::
-   :::column span="1":::
-      **Built-in security group** 
-   :::column-end:::
-   :::column span="1":::
-      **Add these users**
-   :::column-end:::
-   :::column span="1":::
-     **Best practice tips**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Team Foundation Administrators
-   :::column-end:::
-   :::column span="1":::
-      People who need to perform all server-level operations.
-   :::column-end:::
-   :::column span="1":::
-      This group should be restricted to the smallest possible number of users who need total administrative control over server-level operations. If your deployment uses SharePoint or Reporting, consider adding the members of this group to the Farm Administrators and Site Collection Administrators groups in SharePoint and the Team Foundation. 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Team Foundation Valid users
-   :::column-end:::
-   :::column span="1":::
-      People who need to view server instance-level information.
-   :::column-end:::
-   :::column span="1":::
-      This group contains all users known to exist in the server instance. You can't modify the membership of this group.
-   :::column-end:::
-:::row-end:::
----
 
 For more information, see [Valid user groups](about-permissions.md#valid-user-groups)  
 
@@ -188,12 +138,12 @@ For more information, see [Valid user groups](about-permissions.md#valid-user-gr
 ## Choose the right authentication method
 
 Select your [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) from the following sources:
-- [Consider service principals and managed identities](#consider-service-principals-and-managed-identities)
+- [Consider service principals and managed identities](#consider-service-principals)
 - [Use personal access tokens (PATs) seldomly](#use-pats-seldomly)
 
 ### Consider service principals
 
-Explore alternatives like [service principals and managed identities](../../integrate/get-started/authentication/service-principal-and-managed-identity.md) that enable you to use Azure AD tokens to access Azure DevOps resources. Such tokens carry less risk when leaked compared to PATs and contain benefits like easy credential management.
+Explore alternatives like [service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that enable you to use Azure AD tokens to access Azure DevOps resources. Such tokens carry less risk when leaked compared to PATs and contain benefits like easy credential management.
 
 ### Use PATs seldomly
 
@@ -217,44 +167,7 @@ Always authenticate with identity services rather than cryptographic keys when a
   - [Manage PATs with policies - for administrators](../accounts/manage-pats-with-policies-for-administrators.md)
   - [Use PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
 
-For more information, check out the following articles:
-
-- [Manage PATs with policies - for administrators](../accounts/manage-pats-with-policies-for-administrators.md)
-- [Use PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
-
-### Limit access by location 
-
-Limit access to specific IP (Internet Protocol) address ranges with Azure AD Conditional Access Policy Validation. For example, you can configure a location so that MFA isn’t required for internal IP addresses. 
-
-For more information, see [Using the location condition in a Conditional access policy](/azure/active-directory/conditional-access/howto-conditional-access-policy-location).
-
-### Secure your network
-
-Set up an [allowlist](allow-list-ip-url.md).
-
-### Use Web application firewalls
-
-Implement Web application firewalls (WAFs), so they can filter, monitor, and block any malicious web-based traffic to and from Azure DevOps.
-
-- Always use encryption.
-- Validate certificates.
-- This shouldn’t be the only planned safety mechanism to reduce the volume and severity of security bugs in your applications.
-
-For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals)
-
-## Secure projects
-
-- Enable the *Limit user visibility for projects* preview feature for the organization, which restricts access to only those projects that you add users to.
-- Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
-::: moniker range="azure-devops"
-- Disable "Allow public projects" in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
-::: moniker-end
-- Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
-- Check out the following articles for more in-depth information about setting sub-project permissions. 
-    - [Set wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
-    - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
-    - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)
-    - [Set Analytics permissions](../../report/powerbi/analytics-security.md)
+-----
 
 ## Secure Azure Artifacts 
 
@@ -341,7 +254,3 @@ For more information, see [Application management best practices](/azure/active-
 - Never authenticate GitHub service connections as an identity that's an administrator or owner of any repositories. [Check your policies](../../repos/git/configure-repos-work-tracking.md). 
 - Never use a full-scope GitHub PAT (Personal Access Token) to authenticate GitHub service connections. 
 - Don't use a personal GitHub account as a service connection with Azure DevOps. 
-
-# Additional Resources
-
-- [Unit testing best practices with .NET Core and .NET Standard](/dotnet/core/testing/unit-testing-best-practices)
