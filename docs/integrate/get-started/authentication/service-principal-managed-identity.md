@@ -33,11 +33,11 @@ Below, we describe the steps needed to authenticate these identities to Azure De
 
 Your own implementation may vary, but at a high-level, the following steps are needed to start using service principals in your workflow.
 
-### 1. Create a new managed identity and service principal
+### 1. Create a new managed identity or application service principal
 
 The very first step is to create an application and/or a managed identity, which must be done in the Azure portal. 
 
-#### Application Registration
+#### Create an Application Service Principal
 
 When you create a new application registration, an application object is created in Azure AD. The **application service principal** is a representation of this application object for a given tenant. When you register an application as a multi-tenant application, there will be a unique service principal object that represents the application object for every tenant the application is added to.
 
@@ -51,7 +51,7 @@ Further information:
 
 ![VIDEO https://msit.microsoftstream.com/video/5fd10840-98dc-ba75-cfbe-f1ed9cd5786b]
 
-#### Managed Identity
+#### Create a Managed Identity
 Creating managed identities in the Azure portal differs significantly from setting up applications with service principals. Before you begin the creation process, you must first consider which type of managed identity you want to create:
 
 * **System-assigned managed identity:** Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD.
