@@ -185,9 +185,6 @@ The Users view shows key information per user in a table. In this view, you can 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-> [!NOTE]
-> The Azure DevOps CLI does not support adding and removing service principals.
-
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
 <a id="update-user" />
