@@ -133,7 +133,7 @@ To keep your token more secure, use credential managers so you don't have to ent
 ??
 
 ### Q: What are the rate limits on service principals and managed identities?
-At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limit) as users.
+At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits) as users.
 
 ### Q: Can I add a managed identity from a different tenant to my organization?
 ??
@@ -150,4 +150,4 @@ The `service principal object id` can be found in your tenant's "Enterprise Appl
 
 This error usually happens for a number of reasons, some listed below:
 * You are not the owner of the organization, project collection administrator, or a project or team administrator.
-* You are a project or team administrator trying to add a user, but the policy ['Allow team and project administrators to invite new users'](../../organizations/security/restrict-invitations?view=azure-devops) has not been enabled.
+* You are a project or team administrator trying to add a user, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations) has not been enabled.
