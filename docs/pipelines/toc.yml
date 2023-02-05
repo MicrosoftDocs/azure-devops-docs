@@ -456,19 +456,10 @@
       href: ecosystems/containers/content-trust.md
     - name: Kubernetes
       items:
-        - name: Deploy manifests
+        - name: Deploy to Kubernetes
           href: ecosystems/kubernetes/deploy.md
-          displayName: kubernetes, aks, gke, eks
-        - name: Bake manifests
-          href: ecosystems/kubernetes/bake.md
-          displayName: helm
-        - name: Multi-cloud deployments
-          href: ecosystems/kubernetes/multi-cloud.md
-          displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
-        - name: Deployment strategies
-          href: ecosystems/kubernetes/deployment-strategies.md
-          displayName: canary, strategy, kubernetes, aks, gke, eks
-        - name: Kubernetes canary deployments
+          displayName: kubernetes, aks, gke, eks, canary
+        - name: Use a canary deployment strategy
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
   items:
