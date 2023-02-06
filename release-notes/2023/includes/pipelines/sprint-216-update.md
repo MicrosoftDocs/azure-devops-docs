@@ -6,7 +6,7 @@ ms.topic: include
 ---
 ### Red Hat 6 will no longer receive Pipeline agent updates
 
-Pipeline agents running Red Hat 6 will no longer receive updates after agent version v2.214.2. Customers still using Red Hat 6 should upgrade or replace Red Hat 6 agents with a compatible operating system version. To make customers aware they are running the last agent version released for Red Hat 6, an agent knob is required to be set for continues agent operation. A [blog post](https://aka.ms/azdo-pipeline-agent-rhel6) will provide details and answer frequently asked questions.
+Pipeline agents running Red Hat 6 will no longer receive updates after agent version v2.214.2. If you are still using Red Hat 6 upgrade or replace Red Hat 6 agents with a compatible operating system version. To alert you of running the last agent version released for Red Hat 6, an agent knob is required to be set for continuous agent operation. For more details and answers to frequently asked questions please visit our [blog post](https://aka.ms/azdo-pipeline-agent-rhel6) .
 
 ### Pipeline UI - Stages Side Panel
 
@@ -24,9 +24,9 @@ In this sprint, we've added a pipeline stages side panel that lets you quickly s
 
 To improve the security of resources that are critical to your ability to securely build and deploy your applications, Azure Pipelines now requires resource-type administrator role when opening up access to a resource to all pipelines.
 
-For example, this means that to allow _any_ pipeline to use a service connection requires a general Service Connections Administrator role, for all service connections. This restriction applies when creating a protected resource or when editing its Security configuration.
+For example,to allow _any_ pipeline to use a service connection requires a general Service Connections Administrator role, for all service connections. This restriction applies when creating a protected resource or when editing its Security configuration.
 
-For example, when creating a service connection, and you don't have sufficient rights, the _Grant access permission to all pipelines_ option is disabled.
+In addition, when creating a service connection, and you don't have sufficient rights, the _Grant access permission to all pipelines_ option is disabled.
 
 > [!div class="mx-imgBorder"]
 > ![Service Connections](../../media/216-pipelines-03.png)
@@ -39,7 +39,7 @@ Also, when trying to open access to an existing resource and you don't have suff
 
 ### Service Hook for Job State Change
 
-Service Hooks allow you to react in response to events related to state changes in your pipeline. Up until now, you could configure service hooks for pipeline run and stage state changes. 
+Service Hooks allow you to react in response to events related to state changes in your pipeline. Previously you could configure service hooks for pipeline run and stage state changes. 
 
 Starting now, you can configure service hooks that fire when the state of a job in your pipeline changes. The payload structure of the new service hook is similar to the following example.
 

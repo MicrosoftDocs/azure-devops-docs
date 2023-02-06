@@ -7,7 +7,7 @@ ms.topic: include
 
 ### New Save Comments Permission
 
-The ability to save only work item comments has been a [top customer ask](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819) for some time. We are excited to finally make the suggestion a reality. First, let's make sure we understand the most common scenario...
+The ability to save only work item comments has been a top request in the [developer community](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819). We are excited to let you know that we have implemented this feature. To begin, let's review the most common scenario:
 
 _"I want to prevent some users from editing work item fields but allow them to contribute to the discussion."_
 
