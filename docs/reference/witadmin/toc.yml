@@ -28,7 +28,7 @@
     href: /previous-versions/azure/devops/reference/witadmin/rebuild-client-cache
     displayname: rebuildcache
   - name: Delete work items
-    href: /previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently.md
+    href: /previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently
     displayname: destroywi
   - name: Customize & manage the test experience
     href: /previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience
