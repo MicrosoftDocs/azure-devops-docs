@@ -208,7 +208,7 @@
         items:
         - name: "2023"
           items:
-          - name: February 5
+          - name: February 7
             href: 2023/boards/sprint-216-update.md
           - name: January 23
             href: 2023/boards/sprint-215-update.md
@@ -689,7 +689,7 @@
           items:
           - name: February 7
             href: 2023/reporting/sprint-216-update.md
-          expanded: false    
+          expanded: true   
         - name: "2022"
           items:
           - name: October 11
