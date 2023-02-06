@@ -1,5 +1,5 @@
 ---
-title: Support for subpages table in wiki
+title: TBD
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/7/2023
@@ -21,7 +21,7 @@ Check out the release notes for details.
 
 ### Reporting
 
-[!INCLUDE [sprint-216-update-links](includes/wikireporting/sprint-216-update-links.md)]
+[!INCLUDE [sprint-216-update-links](includes/reporting/sprint-216-update-links.md)]
 
 ## Azure Boards
 
