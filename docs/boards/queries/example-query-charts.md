@@ -3,12 +3,12 @@ title: Example query charts in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about useful query charts to create and display on dashboards when working in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-queries, contperf-fy23 
+ms.custom: boards-queries, engagement-fy23 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2022
+ms.date: 02/06/2023
 ---
 
 
