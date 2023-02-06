@@ -56,11 +56,11 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 | Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
 |-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
-| **NuGet packages**                | Yes                    | Yes                                          | Yes                                          |
-| **npm packages**                  | Yes                    | Yes                                          | Yes                                          |
-| **Maven packages**                | Yes                    | Yes                                          | Yes                                          |
-| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020  | Yes                                          |
-| **Universal Packages**            | Yes                    | No                                           | No                                           |
+| **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | Server 2019 Update 1 and newer, Server 2020, and Server 2022.  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
 ## Artifacts free tier and upgrade
 
