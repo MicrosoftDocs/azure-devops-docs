@@ -198,7 +198,7 @@ You should avoid making the following customizations because they can result in 
 *	WITs: Rename or delete WITs 
 *	Categories: Change the name of default categories, or change the WITs specified within default categories  
 
-To learn more about reporting attributes, see [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reportingd).
+To learn more about reporting attributes, see [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting).
 
 ### Recommended practices  
 *	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.  
