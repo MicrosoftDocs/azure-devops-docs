@@ -69,7 +69,7 @@ Some helpful links:
 
 // Insert screenshot of app roles available in Azure portal
 
-[Assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration in the Azure portal or programmatically by using [the Microsoft Graph APIs](https://learn.microsoft.com/graph/api/user-post-approleassignments). Each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permissions. For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
+[Assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration in the Azure portal or programmatically by using [the Microsoft Graph APIs](/graph/api/user-post-approleassignments). Each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permissions. For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
 
 // Insert a code snippet here akin to https://techcommunity.microsoft.com/t5/integrations-on-azure-blog/grant-graph-api-permission-to-managed-identity-object/ba-p/2792127
 
@@ -81,6 +81,9 @@ Once you have completed configuring the service principal in the Azure AD portal
 
 > [!TIP] 
 > To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the [ServicePrincipalEntitlements API], make sure to pass in the service principal's object id and not the application's object id. 
+
+> [!NOTE]
+> You can only add a managed identity for the tenant your organization is connected to. If you would like to access a managed identity in a different tenant, see [the workaround we've included in the FAQ](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
 
 ![Service principals and managed identities in the Users Hub](./media/users-hub-sps.png)
 
@@ -120,6 +123,12 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, token strings that represent a user’s username and password, they'
 re incredibly risky to use as they can easily fall into the wrong person’s hands. Azure AD tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
 
+### Q: What are the rate limits on service principals and managed identities?
+At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
+
+### Q: Will using this feature cost me additional fees?
+At this time, service principals and managed identities are no different in pricing than a standard user license. One notable change pertains to how we treat "multi-org billing" for service principals. While users are counted as only one license no matter how many organizations they have been added to, service principals will be counted as one license per each organization they have been added to (like standard "user assignment-based billing"). 
+
 ### Q: Can I use a service principal to do git operations, like clone a repo?
 See the following example of how we've passed an Azure AD token of a service principal instead of a PAT to git clone a repo in a PowerShell script.
 
@@ -127,20 +136,73 @@ See the following example of how we've passed an Azure AD token of a service pri
 $ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
 git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
 ```
+> [!TIP] 
+> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
 
-To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs.
+### Q: Can I use a service principal or managed identity with Azure CLI?
+Yes! Anywhere that asks for PATs in the Azure CLI can also accept Azure AD access tokens. (We will work on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
 
-### Q: Can I use a service principal with Azure CLI?
-??
+```powershell
+# Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
+$env:AZURE_DEVOPS_EXT_PAT="{aad_access_token}"
 
-### Q: What are the rate limits on service principals and managed identities?
-At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
+# Command: az devops login will prompt you to enter a token. You can add an Azure AD token too! Not just a PAT.
+Example:
+PS C:\Users> az devops login
+Token:
+```
+After which, you should be able to use `az cli` commands per usual.
 
 ### Q: Can I add a managed identity from a different tenant to my organization?
-??
+You are only able to add a managed identity from the same tenant that your organization is connected to. However, we have a workaround that will allow you to set up a managed identity in the "resource tenant" where are all of your resources are and enable it to be used by an application service principal in the "target tenant", the tenant your organization is connected to.
+1. To begin, create a [user-assigned managed identity](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities) in Azure portal for your resource tenant. 
+2. Connect it to a [virtual machine and assign this managed identity](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to it. 
+3. Create a [key vault](/azure/key-vault/general/quick-create-portal) and generate a [certificate](/azure/key-vault/certificates/quick-create-portal) (cannot be of type "PEM"). When you generate this certificate, a secret with the same name is also generated, which we will be using later. 
+4. Now, grant access to the managed identity so that it can read the private key from the key vault. Create an access policy in the key vault with the "Get/List" permissions (under "Secret permissions" and search for the managed identity under "Select principal".
+5. Lastly, download the created certificate in "CER" format, which ensures that it does not contain the private part of your certificate.
+6. Next, we need to [create a new application registration](#1-create-a-new-managed-identity-or-application-service-principal) in the target tenant.
+7. Upload the downloaded certificate to this new application in the "Certificates & secrets" tab.
+8. Add this application's service principal to the [Azure DevOps organization we want it to access](#3-add-and-manage-service-principal-in-an-azure-devops-organization), and don't forget to set up the service principal with any required permissions.
+9. To get an Azure AD access token from this service principal that makes use of the managed identity certificate, take a look at this code sample below:
 
+```cs
+public static async Task<string> GetSecret(string keyVaultName, string secretName)
+{
+	var keyVaultUri = new Uri("https://" + keyVaultName + ".vault.azure.net");
+	var client = new SecretClient(keyVaultUri, new ManagedIdentityCredential());
+	var keyVaultSecret = await client.GetSecretAsync(secretName);
 
-## Potential Errors and How to Resolve Them
+	var secret = keyVaultSecret.Value;
+	return secret.Value;
+}
+
+private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken(string applicationClientID, string appTenantId)
+{
+	IConfidentialClientApplication app;
+
+	byte[] privateKeyBytes = Convert.FromBase64String(GetSecret(keyVaultName, secretName));
+	X509Certificate2 certificateWithPrivateKey = new X509Certificate2(privateKeyBytes, (string)null, X509KeyStorageFlags.MachineKeySet);
+
+	app = ConfidentialClientApplicationBuilder.Create(applicationClientID)
+		.WithCertificate(certificateWithPrivateKey)
+		.WithAuthority(new Uri(string.Format(CultureInfo.InvariantCulture, "https://login.microsoftonline.com/{0}", appTenantId)))
+		.Build();
+	app.AddInMemoryTokenCache();
+
+	string AdoAppClinetID = "499b84ac-1321-427f-aa17-267ca6975798/.default";
+	string[] scopes = new string[] { AdoAppClientID };
+
+	var result = await app.AcquireTokenForClient(scopes).ExecuteAsync();
+
+	return result;
+}
+```
+10. Please note that this certificate must still be regularly rotated.
+
+### Q: Can I register a self-hosted agent using a service principal or managed identity?
+It is possible to [register an agent](../../../pipelines/agents/v2-windows?view=azure-devops#server-url-and-authentication) using an Azure AD token from your service principal or managed identity. When the setup asks for your authentication type, choose PAT. However, instead of a PAT, pass in an Azure AD token into the command prompt window. (We are working to revise the agent setup language to include thos.)
+
+## Potential errors
 
 #### Failed to create service principal with object ID '{`provided objectId`}'
 
@@ -150,5 +212,15 @@ The `service principal object ID` can be found in your tenant's "Enterprise Appl
 
 #### Access Denied: {`ID of the caller identity`} needs the following permission(s) on the resource Users to perform this action: Add Users
 
-You're not the owner of the organization, project collection administrator, or a project or team administrator.
-Or you're a project or team administrator, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations.md) has been disabled.
+This error might be due to one of the following reasons:
+* You're not the owner of the organization, project collection administrator, or a project or team administrator.
+* You're a project or team administrator, but the policy ['Allow team and project administrators to invite new users'](../../../organizations/security/restrict-invitations.md) has been disabled.
+* You're a project or team administrator, you're enabled to invite new users, but you are trying to assign a license when you invite a new user.
+  * Project or team administrators are not allowed to assign a license to new users. Any new invited user will be added with a Stakeholder license. Contact a PCA to change the license access level.
+
+#### Azure DevOps Graph List API returns empty list, even though we know there are service principals in the organization
+The Azure DevOps Graph List API may return an empty list, even if there are still additional pages of users to return. Use the `continuationToken` to iterate through the lists, and you will eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it is possible that the first X results return empty.
+
+## More resources
+* How to access az cli using a token
+* 
