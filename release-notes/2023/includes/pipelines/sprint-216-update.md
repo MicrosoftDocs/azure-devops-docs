@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: TBD
+ms.date: 2/7/2023
 ms.topic: include
 ---
 ### Red Hat 6 will no longer receive Pipeline agent updates
