@@ -15,7 +15,7 @@ ms.date: 02/03/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can export a work item type as xml using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml](../../reference/xml/weblayout-xml-elements.md). 
+You can export a work item type as xml using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
 
 > [!NOTE]
 > Work item form customization via xml is supported only on Azure DevOps Server, not Azure DevOps Services. 

@@ -110,9 +110,9 @@ An often requested feature is to allow the creation of a work item that automati
 If your project uses the On-premises XML process model to customize work tracking, you can add help text, hyperlinks, or web content to a form to provide guidance. 
 
 To learn more, see the following articles: 
-- [WebLayout and Control elements](../../reference/xml/weblayout-xml-elements.md)
+- [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
 - [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md)
-- [Edit a WIT definition to add web content to a work item form](../../reference/xml/edit-wit-definition-add-web-content-form.md)
+- [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form)
  
 ::: moniker-end
 
