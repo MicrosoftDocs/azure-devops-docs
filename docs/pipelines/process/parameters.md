@@ -33,7 +33,7 @@ To link more arguments across all tasks to new or existing process parameters, s
 
 To set a process parameter, edit your pipeline and go to **Tasks** > **Pipeline**. 
 
-:::image type="content" source="media/process-parameter-task.png" alt-text="Add a parameter to a classic task. ":::
+:::image type="content" source="media/process-parameter-task.png" alt-text="Screenshot of adding a parameter to a classic task. ":::
 
 ::: moniker range="<=tfs-2018"
 
