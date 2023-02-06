@@ -8,7 +8,7 @@ ms.topic: include
 
 Pipeline agents running Red Hat 6 will no longer receive updates after agent version v2.214.2. If you are still using Red Hat 6 upgrade or replace Red Hat 6 agents with a compatible operating system version. To alert you of running the last agent version released for Red Hat 6, an agent knob is required to be set for continuous agent operation. For more details and answers to frequently asked questions please visit our [blog post](https://aka.ms/azdo-pipeline-agent-rhel6) .
 
-### Pipeline UI - Stages Side Panel
+### Pipeline stages side panel
 
 YAML pipelines can have tens of stages, and not all of them will fit on your screen. While the pipeline run overview icon tells you the overall state of your run, it is still hard to know which stage failed, or which stage is still running, for example.
 
@@ -37,7 +37,7 @@ Also, when trying to open access to an existing resource and you don't have suff
 > [!div class="mx-imgBorder"]
 > ![Pipelines Permissions](../../media/216-pipelines-04.png)
 
-### Service Hook for Job State Change
+### Service Hook for job state change
 
 Service Hooks allow you to react in response to events related to state changes in your pipeline. Previously you could configure service hooks for pipeline run and stage state changes. 
 

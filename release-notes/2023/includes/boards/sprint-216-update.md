@@ -5,7 +5,7 @@ ms.date: 2/7/2023
 ms.topic: include
 ---
 
-### New Save Comments Permission
+### New save comments permission
 
 The ability to save only work item comments has been a top request in the [developer community](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819). We are excited to let you know that we have implemented this feature. To begin, let's review the most common scenario:
 
