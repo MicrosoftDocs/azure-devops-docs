@@ -18,4 +18,4 @@ As a user, I want to copy the URL for a work item attachment so that it can be c
 > ![Change link types from the web ui](media/boards-2022q3-01.png)
 
 > [!NOTE]
-> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/&preserve-view=true).
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview).
