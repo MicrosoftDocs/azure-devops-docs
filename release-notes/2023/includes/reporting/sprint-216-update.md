@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Copy Dashboard
 
-Back in Sprint 204 [we announced the GA release](https://learn.microsoft.com/azure/devops/release-notes/2022/sprint-204-update#general-availability-of-copy-dashboard) of Copy Dashboard. Users however needed to turn it on in the preview features list. In this sprint, we removed it from the preview features list. It is now available to all users at all times.
+Back in Sprint 204 [we announced the GA release](/azure/devops/release-notes/2022/sprint-204-update#general-availability-of-copy-dashboard) of Copy Dashboard. Users however needed to turn it on in the preview features list. In this sprint, we removed it from the preview features list. It is now available to all users at all times.
 
 
 > ![Dashboard Preview](../../media/216-reporting-01.png)
