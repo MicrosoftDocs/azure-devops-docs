@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Copy Dashboard
 
-Back in sprint 204 we announced the GA release of Copy Dashboard. But users still needed to turn it on in from the preview features list. In this sprint, we removed it from the preview features list. It is now available to all users all of the time.
+Back in Sprint 204 we announced the GA release of Copy Dashboard. Users however needed to turn it on in the preview features list. In this sprint, we removed it from the preview features list. It is now available to all users at all times.
 
 
 > ![Dashboard Preview](../../media/216-reporting-01.png)
