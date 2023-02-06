@@ -43,7 +43,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Red Hat 6 will no longer receive Pipeline agent updates</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pipeline stages side panel</td><td>Pipelines</td><td>Future</td></tr>
     <td>Restrict opening protected resources to resource administrators</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Service Hook for job state change</td><td>Pipelines</td><td>Future</td></tr>
     <td>Copy Dashboard</td><td>Reporting</td><td>Future</td></tr>   
 <tr>
     <td rowspan="9"><a href="2023/sprint-215-update.md" data-raw-source="[25 January 2023](2023/sprint-215-update.md)"> 25 January 2023</a></td>
