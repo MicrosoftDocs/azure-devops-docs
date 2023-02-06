@@ -23,7 +23,7 @@ You can define the URL for a work item using the syntax provided based on the ve
 Examples in this article use the following conventions:
 
 - *OrganizationName* specifies the name of the Azure Boards organization  
-- *ServerName* specifies the name of the TFS application tier server   
+- *ServerName* specifies the name of the Azure DevOps application tier server   
 - *Port* specifies the port, default=8080
 - *CollectionName* specifies the name of the project collection.
 - *ProjectName* specifies the project name
@@ -66,7 +66,7 @@ http://*ServerName:Port/CollectionName/ProjectName*/<b>_workitems?id=</b>*WorkIt
 http://fabrikamprime:8080/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
 ```  
 
-## Azure DevOps Server 2019 and TFS 2018
+## Azure DevOps Server 2019 and earlier versions
 
 
 http://*ServerName:Port*/**tfs**/*CollectionName/ProjectName*/**_workitems?id**=*WorkItemNumber***&_a=edit** 

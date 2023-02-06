@@ -66,7 +66,7 @@ You can perform the following tasks with the Hosted XML process model.
    - [Add a custom pick list](../../../reference/add-modify-field.md#picklist)
    - [Predefined field](../../../reference/add-modify-field.md#picklist)
    - [Resolution State or Failure Type](../../../reference/customize-work.md)
-   - [Define global lists](../../../reference/xml/define-global-lists.md)    
+   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
    :::column-end:::
 :::row-end:::
 

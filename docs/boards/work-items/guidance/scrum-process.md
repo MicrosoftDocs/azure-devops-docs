@@ -92,9 +92,9 @@ As updates are made to the Scrum process template, the version number is updated
 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |TFS version | Scrum process name | Major version |
+> |Version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
+> | Azure DevOps Services<br/>Azure DevOps Server 2022 | Scrum | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Scrum | 17 |
 > | TFS 2018 | Scrum | 16 |
 

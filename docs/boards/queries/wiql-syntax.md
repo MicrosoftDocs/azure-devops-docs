@@ -667,7 +667,7 @@ You can specify one of the following system link type names.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](../../reference/xml/link-type-element-reference.md). 
+You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
 ::: moniker-end
 
 - `System.LinkTypes.Hierarchy-Forward`

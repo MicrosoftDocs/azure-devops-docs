@@ -365,7 +365,7 @@ You customize work item types using the On-premises XML process model. For more 
       - [Change a field label](../../reference/add-modify-field.md#change-label)    
       - [Define Area Paths](../../organizations/settings/set-area-paths.md)    
       - [Define Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md)    
-      - [Define global lists](../../reference/xml/define-global-lists.md)    
+      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
       - [Delete a field](../../reference/add-modify-field.md#delete-field)    
       - [Modify a predefined pick list](../../reference/add-modify-field.md#picklist)  
       - [Remove a field from a form](../../reference/add-modify-field.md#change-label)  
