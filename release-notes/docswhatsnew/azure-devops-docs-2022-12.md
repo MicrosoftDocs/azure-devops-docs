@@ -95,31 +95,7 @@ Welcome to what's new in the Azure DevOps docs from December 1, 2022 through Dec
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-12-01..2022-12-31).
-
-- [Required Node Version incompatible with Mocha #12980](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12980)
-- [Wrong examples of clauses to include in section "Return data for Identity, Area Path, and Iteration Path fields" #12938](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12938)
-- [Define 'inactive' account #12936](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12936)
-- [DownloadPackage@1 does not describe 'latest' version usage #12911](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12911)
-- [Sample payload for "Work item updated" is wrong #12893](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12893)
-- [What, exactly, is the set of invalid characters for a build number? #12723](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12723)
-- [WindowsMachineFileCopy Doc States MachineNames are optional, yet pipeline fails with Required error #12447](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12447)
-- [set variables #12384](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12384)
-- [Guidance for setting variables in pipelines omits useful detail #12276](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12276)
-- [runOnce strategy output variables do not use lifecycle-hookname, but the deployment job name #12117](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12117)
-- [Description of $(Rev:r) lacks meaning of $(Rev:.r) and its used on this page in most of examples #11941](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11941)
-- [ADO Yaml SYSTEM_DEBUG #11857](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11857)
-- [Azure App Service Deploy task - ConfigurationSettings - remove colon #11768](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11768)
-- [In which step is the cache being uploaded? #11699](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11699)
-- [Should have a list of keywords - eg: how to specify  Not Equal, Greater than etc #11638](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11638)
-- [Clarification: Does "Deploy all in sequence" option look at commit sequence or build completion sequence? #11533](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11533)
-- [Could you illustrate more on how to use "variables" part in stage? #11527](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11527)
-- [Stages, jobs and pipeline agents #11381](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11381)
-- [Missing parameters for PublishCodeCoverageResults #11183](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11183)
-- [Build.Reason variable missing BuildCompletion event #10943](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10943)
-- [Missing requirements for build numbers #9850](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9850)
-- [Hosted Agent Tip? #8706](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8706)
-- [Pipeline and resource identifiers need additional clarity #7276](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7276)
+Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-12-01..2022-12-31).
 
 ## Community contributors
 
