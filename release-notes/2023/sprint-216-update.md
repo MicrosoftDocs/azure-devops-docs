@@ -1,13 +1,13 @@
 ---
-title: TBD
+title: Improved pipeline security and administrator control
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/7/2023
-description: TBD
+description: With this update, we improved pipelines security resources and administrator control.
 ---
-# TBD
+# Improved pipeline security and administrator control
 
-
+With this update, we improved pipelines security resources critical to building and deploy your applications. In response to your feedback, we've made also made the Copy Dashboard feature easily accessible. 
 
 Check out the release notes for details.
 
