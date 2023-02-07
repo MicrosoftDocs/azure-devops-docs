@@ -77,7 +77,7 @@ The setting is designed to work at organization level and at project level.
 Lets look at an example. Say the setting is on and your pipeline defines a variable named `my_variable` that isn't settable at queue time.
 :::image type="content" source="media/define-variables-classic-pipeline.png" alt-text="Screenshot of defining a variable in a classic pipeline.":::
 
-Next, assume you wish to run the pipeline. The _Run pipeline panel_ will not show any variables, and the _Add variable_ button is missing in the _Variables_ panel.
+Next, assume you wish to run the pipeline. The _Variables_ panel doesn't show any variables, and the _Add variable_ button is missing.
 :::image type="content" source="media/add-variables-at-queue-time-setting-on.png" alt-text="Screenshot of variables tab wth setting on.":::
 
 Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) and the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API calls to set the value of `my_variable` or of a new variable will fail with an error similar to the following.
