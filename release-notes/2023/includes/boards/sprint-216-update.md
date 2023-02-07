@@ -11,11 +11,11 @@ The ability to save only work item comments has been a top request in the [devel
 
 _"I want to prevent some users from editing work item fields but allow them to contribute to the discussion."_
 
-To accomplish this, you need to go to Project Settings > Project Configuration > Area Path. Then select the area path of choice and click Security.
+To accomplish this, you need to go to **Project Settings > Project Configuration > Area Path**. Then select the area path of choice and click Security.
 
 ![Area Path](../../media/216-boards-01.png)
 
-Notice the new permission "Edit work item comments in this node".  By default, the permission is set to "Not set". Meaning, the work item will behave exactly like it did before. To allow a group or users to save comments, select that group/users and change the permission to "Allow".
+Notice the new permission **"Edit work item comments in this node"**.  By default, the permission is set to **Not set**. Meaning, the work item will behave exactly like it did before. To allow a group or users to save comments, select that group/users and change the permission to **Allow**.
 
 ![New Permission](../../media/216-boards-02.png)
 
@@ -24,6 +24,6 @@ When the user opens the work item form in this area path, they will be able to a
 > [!div class="mx-imgBorder"]
 > ![Gif to demo editing of shareable picklist fields.](../../media/216-boards-01.gif "gif to demo editing of shareable picklist fields")
 
-We hope you love this feature as much as we do. As always, if you have any feedback or suggestions, [please let us know](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS/suggest).
+We hope you love this feature as much as we do. As always, if you have any feedback or suggestions, [please let us know](https://developercommunity.visualstudio.com/AzureDevOps/suggest).
 
 

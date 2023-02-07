@@ -6,7 +6,9 @@ ms.topic: include
 ---
 ### Red Hat 6 will no longer receive Pipeline agent updates
 
-Pipeline agents running Red Hat 6 will no longer receive updates after agent version v2.214.2. If you are still using Red Hat 6 upgrade or replace Red Hat 6 agents with a compatible operating system version. To alert you of running the last agent version released for Red Hat 6, an agent knob is required to be set for continuous agent operation. For more details and answers to frequently asked questions please visit our [blog post](https://aka.ms/azdo-pipeline-agent-rhel6) .
+Pipeline agents running Red Hat 6 will no longer receive updates after agent version v2.214.2. If you are still using Red Hat 6 upgrade or replaced Red Hat 6 agents with a compatible operating system version. To alert you of running the last agent version released for Red Hat 6, an agent knob is required to be set for continuous agent operation. 
+
+For more details and answers to frequently asked questions please visit our [blog post](https://aka.ms/azdo-pipeline-agent-rhel6) .
 
 ### Pipeline stages side panel
 
@@ -24,14 +26,14 @@ In this sprint, we've added a pipeline stages side panel that lets you quickly s
 
 To improve the security of resources that are critical to your ability to securely build and deploy your applications, Azure Pipelines now requires resource-type administrator role when opening up access to a resource to all pipelines.
 
-For example,to allow _any_ pipeline to use a service connection requires a general Service Connections Administrator role, for all service connections. This restriction applies when creating a protected resource or when editing its Security configuration.
+For example, a general Service Connections Administrator role is required to allow *any* pipeline to use a service connection.. This restriction applies when creating a protected resource or when editing its Security configuration.
 
-In addition, when creating a service connection, and you don't have sufficient rights, the _Grant access permission to all pipelines_ option is disabled.
+In addition, when creating a service connection, and you don't have sufficient rights, the **Grant access permission to all pipelines** option is disabled.
 
 > [!div class="mx-imgBorder"]
 > ![Service Connections](../../media/216-pipelines-03.png)
 
-Also, when trying to open access to an existing resource and you don't have sufficient rights, you'll get an _You are not authorized to open access for this resource_ message.
+Also, when trying to open access to an existing resource and you don't have sufficient rights, you'll get a _You are not authorized to open access for this resource_ message.
 
 > [!div class="mx-imgBorder"]
 > ![Pipelines Permissions](../../media/216-pipelines-04.png)

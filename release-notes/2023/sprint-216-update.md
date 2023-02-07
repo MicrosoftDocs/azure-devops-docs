@@ -7,7 +7,7 @@ description: With this update, we improved pipelines security resources and admi
 ---
 # Improved pipeline security and administrator control
 
-With this update, we improved pipelines security resources critical to building and deploy your applications. In response to your feedback, we've also made the Copy Dashboard feature easily accessible. 
+With this update, we improved pipelines security resources critical to building and deploying your applications. In response to your feedback, we've also made the Copy Dashboard feature easily accessible. 
 
 Check out the release notes for details.
 
