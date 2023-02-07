@@ -69,7 +69,21 @@ When configuring the check, you can specify the pipeline run information you wis
 
 These key-value pairs are set, by default, in the `Headers` of the REST call made by Azure Pipelines.
 
-You can use `AuthToken` to make calls into Azure DevOps, such as when your check will call back with a decision.  The `AuthToken` is restricted to the scope of the pipeline run from which the check call was made.
+You can use `AuthToken` to make calls into Azure DevOps, such as when your check will call back with a decision.
+
+### Call into Azure DevOps
+
+For your check to reach a decision, it may need information about the current pipeline run that cannot be passed to the check. 
+
+Imagine your check verifies that the pipeline run executed a particular task, for example a static analysis task, prior to permitting the pipeline to deploy to the Production environment. This is similar to the [Basic Azure Function check example](#basic-azure-function-check) . 
+
+To call into Azure DevOps, we recommend you use the security token issued for the running build. This token is already provided to your checks by default, in the `AuthToken` header. Another option is to use a [personal access token (PAT)](https://learn.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). 
+
+Compared to PATs, the `AuthToken` token is not subject to request throttling, doesn't need manual refresh, and is not tied to a personal account.
+
+The `AuthToken` token is issued for the build identity that runs the pipelines, e.g., the _FabrikamFiber build service_, so it has the same permissions as it. If you enabled [_Protect access to repositories in YAML pipelines_](https://learn.microsoft.com/azure/devops/pipelines/process/access-tokens?#protect-access-to-repositories-in-yaml-pipelines), its scope is restricted to only the repositories referenced in the running pipeline.
+
+The `AuthToken` token is valid 
 
 ### Send a decision back to Azure DevOps
 
