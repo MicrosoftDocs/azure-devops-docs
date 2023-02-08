@@ -342,7 +342,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="21"><strong>2023 Q1</strong></td>
+        <td rowspan="22"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Swimlane colors](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors</a></td>
         <td>Boards</td>
         <td>Future</td>      
@@ -386,6 +386,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
         <td>Pipelines</td>
         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-scalability" data-raw-source="[Checks scalability](/azure/devops/release-notes/roadmap/2022/checks-scalability)">Checks scalability</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/net6agent-replace-core31" data-raw-source="[.NET 6 agent to replace .NET Core 3.1 agent](/azure/devops/release-notes/roadmap/2022/net6agent-replace-core31)">.NET 6 agent to replace .NET Core 3.1 agent</a></td>
@@ -500,7 +505,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="12"><strong>Future</strong></td>
+        <td rowspan="13"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[UI improvements GitHub Connection Experience.](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">UI improvements to GitHub Connection Experience</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -524,6 +529,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise</a></td>
         <td>Pipelines</td>
         <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/package-promote-task" data-raw-source="[Package promote task in Azure Pipelines](/azure/devops/release-notes/roadmap/package-promote-task)">Package promote task in Azure Pipelines</a></td>
