@@ -158,7 +158,7 @@ If you are currently running other pipelines, you may not have any remaining par
 #### Check for available parallel jobs
 
 > [!NOTE]
-> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
+> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. If you don't have any parallel jobs, your pipelines will fail with the following error: `##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request`.  Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
 
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
