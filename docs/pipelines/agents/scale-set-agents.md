@@ -449,11 +449,11 @@ To delete the saved agent when you're done with your investigation, navigate to 
   * [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
   * [VMSS scale up is not happening in the expected five minute interval](#vmss-scale-up-is-not-happening-in-the-expected-five-minute-interval)
   * [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
-  * [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-are-not-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-they-are-queued)
+  * [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-arent-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-theyre-queued)
   * [VMSS shows the agent as offline if the VM restarts](#vmss-shows-the-agent-as-offline-if-the-vm-restarts)
   * [You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
   * [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
-  * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-is-not-running-on-agents-or-getting-logs)
+  * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
   * [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
   * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
 
