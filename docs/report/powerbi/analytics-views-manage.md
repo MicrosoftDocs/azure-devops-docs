@@ -3,6 +3,7 @@ title: Manage Analytics views
 titleSuffix: Azure DevOps
 description: Learn how to view, edit, and delete an Analytics view for Azure DevOps
 ms.subservice: azure-devops-analytics
+ms.custom: analytics-views, engagement-fy23 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
