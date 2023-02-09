@@ -63,7 +63,7 @@ No. The pipelines team is regularly adding new features to Azure Pipelines and s
 
 ### Do I have to install .NET 6 before installing the 3.x agent software?
 
-You don't have to install .NET 6 on your agent machine before installing and configuring the 3.x agent software. All dependencies the .NET 6 agent requires are part of the agent itself.
+You don't have to install .NET 6 on your agent machine before installing and configuring the 3.x agent software. All .NET Framework dependencies the 3.x agent requires are part of the agent itself.
 
 ### Do I have to build my code using .NET 6 if I am using the 3.x agent?
 
