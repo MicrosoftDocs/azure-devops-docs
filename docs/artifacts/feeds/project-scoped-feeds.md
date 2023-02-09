@@ -85,6 +85,15 @@ Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifact
 > If a user has permissions to access a specific view, and they don't have permissions to the feed, they will still be able to access and download packages through that view.  
 > If you want to completely hide your packages, you must restrict access to both the feed and the view. See [Feeds and views permissions](feed-permissions.md) for more details.
 
+## Q&A
+
+#### Q: How to access a project-scoped feed in a different project with Azure Pipelines?
+
+When a Pipeline needs to connect to a project-scoped feed in a different project, the pipeline must have access to both the project that the feed is scoped to and the feed itself. Your **Project build service** identity will look as follows:
+`[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
+2. From the project hosting the feed, go to the **Project settings** > **Permissions** to add your pipeline's **project build service** to the Contributors group or an alternative group your project may have that allows contributor access to its users.
+3. From the project-scoped feed, select **Settings** > **Feed permissions** and add your project build service as a **Collaborator**.
+
 ## Related articles
 
 - [Configure permissions](./feed-permissions.md)

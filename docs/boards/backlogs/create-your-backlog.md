@@ -344,7 +344,7 @@ Choose **Save & Close** when done.
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+      [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (CMMI only)
    :::column-end:::
    :::column span="3":::
       Describes the customer impact of not implementing the requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories.

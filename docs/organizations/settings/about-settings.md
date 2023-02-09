@@ -348,7 +348,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Grant or restrict permissions to select tasks](../security/restrict-access.md)
       - [Set dashboard permissions](../security/../../report/dashboards/dashboard-permissions.md)
       - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
-      - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
+      - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
       - [Set build and release permissions](../../pipelines/policies/set-permissions.md)
    :::column-end:::
    :::column span="2":::

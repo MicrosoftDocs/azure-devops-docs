@@ -22,7 +22,7 @@ You can use Kubernetes resources with public or private clusters. To learn more 
 
 See the following advantages of using Kubernetes resource views within environments:
 
-- **Pipeline traceability** - The [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
+- **Pipeline traceability** - The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
 
   > [!div class="mx-imgBorder"]
   > ![Pipeline traceability](media/k8s-pipeline-traceability.png)
@@ -250,8 +250,6 @@ To use this job in an **existing** pipeline, the service connection backing the 
 
 ## Related articles
 
-- [Deploy manifests](../ecosystems/kubernetes/deploy.md) and [bake manifests](../ecosystems/kubernetes/bake.md)
-- [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
-- [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
-- [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
-- [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)
+* [Deploy](../ecosystems/kubernetes/deploy.md) 
+* [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
+* [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)

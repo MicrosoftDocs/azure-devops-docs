@@ -28,118 +28,78 @@ If you're new to Analytics, we recommend that you review the following articles.
 - [Summary of best practices to use when querying Analytics](../analytics/analytics-best-practices.md)  
 - [Permissions and prerequisites for working with Analytics](../analytics/analytics-permissions-prerequisites.md) 
 
- 
-## Sample widgets and reports 
-
-Analytics supports several widgets and built-in reports. In addition, we've created several sample reports to showcase how to query the data and build the reports of interest using Power BI. 
-
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
+Analytics supports several widgets and built-in reports. In addition, we've created several sample reports to showcase how to query the data and build the reports of interest using Power BI. 
 
-<!--- include built-in reports and widgets --> 
+## Azure Boards sample widgets and reports 
+:::row:::
+   :::column span="1":::
+      **Widgets and built-in reports** 
+      - [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md)  
+      - [Lead/Cycle Time](../dashboards/cycle-time-and-lead-time.md)  
+      - [Sprint burndown](../dashboards/configure-sprint-burndown.md)  
+      - [Velocity](../dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+      **Sample reports**
+      - [Bug trend](../powerbi/sample-boards-bugtrend.md)   
+      - [Cumulative Flow Diagram (CFD)](../powerbi/sample-boards-cfd.md) 
+      - [Feature progress](../powerbi/sample-boards-featureprogress.md) 
+      - [Lead/Cycle Time](../powerbi/sample-boards-leadcycletime.md)
+      - [Open bugs](../powerbi/sample-boards-openbugs.md)
+      - [Rollup](../powerbi/sample-boards-rollup.md) 
+      - [Work items and direct links](../powerbi/sample-boards-directlinks.md)
+      - [Release burndown](../powerbi/sample-boards-releaseburndown.md)  
+      - [Sprint burndown](../powerbi/sample-boards-sprintburndown.md)
+   :::column-end:::
+:::row-end:::
 
 ::: moniker range=">= azure-devops-2020"
----
-:::row:::
-   :::column span="2":::
-      **Azure Boards**
-   :::column-end:::
-   :::column span="2":::
-      **Azure Test Plans**  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      - [Bug trend](../powerbi/sample-boards-bugtrend.md) (Power BI)   
-      - [Burndown/Burnup](../dashboards/configure-burndown-burnup-widgets.md) (widget)
-      - [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md) (Built-in report, widget)
-      - [Cumulative Flow Diagram (CFD)](../powerbi/sample-boards-cfd.md) (Power BI)
-      - [Feature progress](../powerbi/sample-boards-featureprogress.md) (Power BI)     
-      - [Lead/Cycle Time](../dashboards/cycle-time-and-lead-time.md) (widget)
-      - [Lead/Cycle Time](../powerbi/sample-boards-leadcycletime.md) (Power BI)  
-      - [Open bugs](../powerbi/sample-boards-openbugs.md) (Power BI)   
-      - [Rollup](../powerbi/sample-boards-rollup.md) (Power BI)     
-      - [Work items and direct links](../powerbi/sample-boards-directlinks.md) (Power BI)   
-      - [Release burndown](../powerbi/sample-boards-releaseburndown.md) (Power BI)
-      - [Sprint burndown](../dashboards/configure-sprint-burndown.md) (Built-in report, widget)       
-      - [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) (Power BI)    
-      - [Velocity](../dashboards/team-velocity.md) (Built-in report, widget) 
-   :::column-end:::
-   :::column span="2":::
-      - [Chart for Test Plans](../../test/track-test-status.md) (widget)
-      - [Configuration by outcome matrix](../powerbi/sample-test-plans-configuration-by-outcome.md) (Power BI)     
-      - [Execution Trend](../powerbi/sample-test-plans-execution-trend.md) (Power BI)      
-      - [Progress status](../powerbi/sample-test-plans-progress-status.md) (Power BI)     
-      - [Requirements traceability](../../pipelines/test/requirements-traceability.md) (Built-in report)    
-      - [Requirements tracking](../powerbi/sample-stories-overview.md) (Power BI)     
-      - [Requirements tracking - Rollup](../powerbi/sample-stories-overview-rollup.md) (Power BI)  
-      - [Test Progress](../../test/progress-report.md) (Built-in report)  
-      - [Test Results Trend](../dashboards/configure-test-results-trend.md) (widget)   
-      - [Test suites aggregated view](../powerbi/sample-test-plans-aggregate-data-level.md) (Power BI)      
-      - [Tester by outcome matrix](../powerbi/sample-test-plans-tester-by-outcome.md) (Power BI)  
-   :::column-end:::
-:::row-end:::
----
+
+## Azure Pipelines sample widgets and reports 
+
+- **Built-in reports**   
+      - [Test failures report](../../pipelines/reports/pipelinereport.md)  
+
+- **Sample reports**  
+      - [Outcome summary](../powerbi/sample-pipelines-outcome-summary.md)  
+      - [Outcome summary for all pipelines](../powerbi/sample-pipelines-allpipelines.md)  
+      - [Pass rate trend](../powerbi/sample-pipelines-pass-rate-trend.md) 
+      - [Stage wise failures](../powerbi/sample-pipelines-stagewise-failures.md)    
+      - [Duration](../powerbi/sample-pipelines-duration.md)   
+      - [Duration trend](../powerbi/sample-pipelines-duration-trend.md)  
+      - [Task duration](../powerbi/sample-pipelines-task-duration.md)  
+      - [Task duration trend](../powerbi/sample-pipelines-task-duration-trend.md)  
+      - [Test summary](../powerbi/sample-test-analytics-test-summary.md)  
+      - [Test summary trend](../powerbi/sample-test-summary-trend.md)  
+      - [Failed tests](../powerbi/sample-test-analytics-failed-tests.md)    
+      - [Flaky tests](../powerbi/sample-test-analytics-flaky-tests.md)  
+      - [Test duration](../powerbi/sample-test-analytics-test-duration.md)  
+      - [Test duration trend](../powerbi/sample-test-analyics-test-duration-trend.md)  
+      - [Pass rate trend of a test](../powerbi/sample-test-analytics-pass-rate-trend-test.md)  
 
 
-:::row:::
-   :::column span="2":::
-      **Pipeline**
-   :::column-end:::
-   :::column span="2":::
-      **Pipeline and test** 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      - [Outcome summary](../powerbi/sample-pipelines-outcome-summary.md) (Power BI)  
-      - [Outcome summary for all pipelines](../powerbi/sample-pipelines-allpipelines.md) (Power BI)  
-      - [Pass rate trend](../powerbi/sample-pipelines-pass-rate-trend.md) (Power BI)   
-      - [Stage wise failures](../powerbi/sample-pipelines-stagewise-failures.md) (Power BI)    
-      - [Duration](../powerbi/sample-pipelines-duration.md) (Power BI)    
-      - [Duration trend](../powerbi/sample-pipelines-duration-trend.md) (Power BI)   
-      - [Task duration](../powerbi/sample-pipelines-task-duration.md) (Power BI)   
-      - [Task duration trend](../powerbi/sample-pipelines-task-duration-trend.md)  (Power BI)   
-   :::column-end:::
-   :::column span="2":::
-      - [Test failures report](../../pipelines/reports/pipelinereport.md) (Built-in report)
-      - [Test summary](../powerbi/sample-test-analytics-test-summary.md)  (Power BI)  
-      - [Test summary trend](../powerbi/sample-test-summary-trend.md) (Power BI)   
-      - [Failed tests](../powerbi/sample-test-analytics-failed-tests.md) (Power BI)   
-      - [Flaky tests](../powerbi/sample-test-analytics-flaky-tests.md) (Power BI)   
-      - [Test duration](../powerbi/sample-test-analytics-test-duration.md) (Power BI)   
-      - [Test duration trend](../powerbi/sample-test-analyics-test-duration-trend.md) (Power BI)   
-      - [Pass rate trend of a test](../powerbi/sample-test-analytics-pass-rate-trend-test.md) (Power BI)   
-   :::column-end:::
-:::row-end:::
----
+## Azure Test Plans sample widgets and reports 
+
+- **Widgets and built-in reports**   
+      - [Chart for Test Plans](../../test/track-test-status.md)
+      - [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
+      - [Test Progress](../../test/progress-report.md)
+      - [Test Results Trend](../dashboards/configure-test-results-trend.md) 
+
+- **Sample reports**  
+      - [Configuration by outcome matrix](../powerbi/sample-test-plans-configuration-by-outcome.md)   
+      - [Execution Trend](../powerbi/sample-test-plans-execution-trend.md)    
+      - [Progress status](../powerbi/sample-test-plans-progress-status.md)     
+      - [Requirements tracking](../powerbi/sample-stories-overview.md)
+      - [Requirements tracking - Rollup](../powerbi/sample-stories-overview-rollup.md) 
+      - [Test suites aggregated view](../powerbi/sample-test-plans-aggregate-data-level.md)  
+      - [Tester by outcome matrix](../powerbi/sample-test-plans-tester-by-outcome.md) 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-For Azure DevOps Server 2019, only Azure Boards work tracking data is available from Analytics. 
-
-- [Bug trend](../powerbi/sample-boards-bugtrend.md) (Power BI)   
-- [Burndown/Burnup](../dashboards/configure-burndown-burnup-widgets.md) (widget)
-- [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md) (Built-in report, widget)
-- [Cumulative Flow Diagram (CFD)](../powerbi/sample-boards-cfd.md) (Power BI)
-- [Feature progress](../powerbi/sample-boards-featureprogress.md) (Power BI)     
-- [Lead/Cycle Time](../dashboards/cycle-time-and-lead-time.md) (widget)
-- [Lead/Cycle Time](../powerbi/sample-boards-leadcycletime.md) (Power BI)  
-- [Open bugs](../powerbi/sample-boards-openbugs.md) (Power BI)   
-- [Rollup](../powerbi/sample-boards-rollup.md) (Power BI)     
-- [Work items and direct links](../powerbi/sample-boards-directlinks.md) (Power BI)   
-- [Release burndown](../powerbi/sample-boards-releaseburndown.md) (Power BI)
-- [Sprint burndown](../dashboards/configure-sprint-burndown.md) (Built-in report, widget)       
-- [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) (Power BI)    
-- [Velocity](../dashboards/team-velocity.md) (Built-in report, widget) 
-
-::: moniker-end
-
+  
 ## Key concepts 
 
 :::row:::
@@ -204,7 +164,7 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
 ## Tasks
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       - [Aggregate data, apply extension](aggregated-data-analytics.md#apply-extension)  
       - [Aggregate data, OData aggregation extension](aggregated-data-analytics.md#aggregation-extension)  
       - [Aggregate data, simple count](wit-analytics.md#return-count-items)  
@@ -223,9 +183,10 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
       - [Generate multiple aggregations](aggregated-data-analytics.md#multiple-aggregate)  
       - [Generate calculated properties](aggregated-data-analytics.md#calculated-properties)  
       - [Generate a Cumulative Flow Diagram](aggregated-data-analytics.md#cfd)  
-      - [Group results using `groupby`](aggregated-data-analytics.md#groupby)  
+      - [Group results using `groupby`](aggregated-data-analytics.md#groupby)   
+      <br/>
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       - [Query an entity set](../analytics/analytics-query-parts.md#query-entity-set)  
       - [Query based on Iteration Path](analytics-recipes.md#iteration)  
       - [Query based on Area Path](analytics-recipes.md#area)  
@@ -240,8 +201,7 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
       - [Query metadata](../analytics/analytics-query-parts.md#query-metadata)  
       - [Query trend data](querying-for-trend-data.md#trend-data)  
       - [Query work item history](analytics-recipes.md#history)  
-   :::column-end:::
-   :::column span="":::
+      <br/>
       - [Organization-scoped queries](account-scoped-queries.md#org-scope)  
       - [Project-scoped queries](account-scoped-queries.md#project-scope)   
       - [Return a count of work items](wit-analytics.md#return-count-items)  
@@ -255,17 +215,29 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
 :::row-end:::
 
 
-## Reference
+## Metadata reference
 
-- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
+::: moniker range=">= azure-devops-2020"
+
+- [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
+- [Azure Boards](../analytics/entity-reference-boards.md) 
+- [Azure Pipelines](../analytics/entity-reference-pipelines.md) 
+- [Test Plans](../analytics/entity-reference-test-plans.md) 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+- [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
+- [Azure Boards](../analytics/entity-reference-boards.md) 
+
+::: moniker-end
+
+## Data model reference and troubleshooting
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
 - [Supported OData functions and clauses](odata-supported-features.md)  
 - [OData API versioning](odata-api-version.md) 
 - [Performance & latency](../powerbi/performance-latency.md)
-
-
-## Troubleshooting
-
 - [OData Analytics query guidelines for Azure DevOps](odata-query-guidelines.md) 
 - [Resolve errors associated with an Analytics view](../powerbi/troubleshooting-views.md)
 

@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2021
+ms.date: 01/17/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -336,7 +336,7 @@ Classic schedules are defined using a graphical editor instead of cron syntax. F
 
 ::: moniker range=">azure-devops-2019"
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
 
@@ -375,7 +375,7 @@ YAML isn't supported in TFS.
 #### [Classic](#tab/classic/)
 ::: moniker range=">= azure-devops-2020"
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu-classic.png)
 
@@ -477,9 +477,11 @@ To configure the scheduled pipeline to build only if there has been a change sin
 * * *
 
 <a name="limits"></a>
-## Limits on the number of scheduled runs
+## Limits on the number of scheduled runs in YAML pipelines
 
-There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources, particularly the Microsoft-hosted agents. This limit is around 1000 runs per pipeline per week.
+There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources, particularly the Microsoft-hosted agents. The limits are:
+- around 1000 runs per pipeline per week
+- 10 runs per pipeline per 15 minutes
 
 ::: moniker range=">azure-devops-2019"
 ## Migrating from the classic editor

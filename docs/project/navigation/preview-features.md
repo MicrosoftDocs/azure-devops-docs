@@ -2,14 +2,14 @@
 title: Manage preview features
 titleSuffix: Azure DevOps Services
 description: Enable/disable or activate/deactivate features in preview at the user or organization level  
-ms.custom: "navigation, cross-project, cross-service"
+ms.custom: navigation, cross-project, cross-service, engagement-fy23
 ms.subservice: azure-devops-projects
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/13/2022
+ms.date: 02/02/2023
 ---
 
 
@@ -35,16 +35,16 @@ There are a few features you or an administrator can enable or disable. Some  fe
 
 ::: moniker range="azure-devops"
 
-The follow table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
+The following table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
 
 
 |**Preview features**|**Per user**|**Per organization**|
 |--------------------|--------------|-----------------|
+|[Pull Request Summary - Load of large files](#pull-request-summary)  | ✔️ |   |   
 |[Analytics Views](../../report/powerbi/what-are-analytics-views.md)| ✔️ | ✔️ |  
-|[Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md) | ✔️ | ✔️ |   
 |Dependency Tracker Preview Features (ignore this setting) | ✔️ | ✔️ |   
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ |   
-|[Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  |   | ✔️ |  
+|[Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  |   | ✔️ |    
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group) |   | ✔️ |   
 |[New account manager](#account-manager) | ✔️ | ✔️ |   
 |New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
@@ -57,7 +57,7 @@ The follow table indicates which preview features can be enabled per user or tea
 |New Wiki experience| ✔️ | ✔️ |     
 |[Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)| ✔️ | ✔️ |     
 |[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
-|[Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |      
+|[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |      
 |[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
 
 ::: moniker-end
@@ -157,6 +157,13 @@ When you enable a feature at the project or collection-level, you essentially tu
 
 ::: moniker range="azure-devops"
 
+<a id="pull-request-summary">  </a>
+
+## Pull Request Summary - Load of large files
+
+Enables a file content load experience for large files in the Pull request summary.
+
+
 <a id="experimental-themes">  </a>
 
 ## Experimental themes  
@@ -192,7 +199,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 - [Updated package experience](../../artifacts/index.yml) 
 
 ### Azure Boards, Dashboards, and Analytics 
-
+- [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
 - [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
 - [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
 - [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)

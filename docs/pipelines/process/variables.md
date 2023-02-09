@@ -607,7 +607,7 @@ jobs:
 
 ### Use outputs in a different stage
 
-To use the output from a different stage at the job level, you use the `stageDependencies` syntax:
+To use the output from a different stage, you must use the syntax depending on whether you're at the stage or job level:
 
  - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`
  - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
@@ -621,6 +621,8 @@ stages:
     - task: MyTask@1  # this step generates the output variable
       name: ProduceVar  # because we're going to depend on it, we need to name the step
 - stage: Two
+  variables:
+    stageVarFromA: $[dependencies.One.outputs['A.ProduceVar.MyVar']
   jobs:
   - job: B
     variables:

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/pipelines/get-started/multi-stage-pipelines-experience.md",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/pipelines/targets/cosmos-db.md",
       "redirect_url": "/azure/cosmos-db/tutorial-setup-ci-cd",
       "redirect_document_id": false
@@ -104,8 +109,22 @@
       "source_path_from_root":"/docs/pipelines/licensing/concurrent-pipelines-tfs.md",
       "redirect_url":"/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/deployment-strategies.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/multi-cloud.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/bake.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
     }
-
   ]
 }
 

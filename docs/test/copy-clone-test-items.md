@@ -730,7 +730,7 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 - [Repeat a test with different data](repeat-test-with-different-data.md)
 - [Test objects and terms](test-objects-overview.md) 
 - [Create a query based on build and test integration fields](../boards/queries/build-test-integration.md) 
-- [Customize and manage the test experience](../reference/witadmin/tcm-customize-manage-test-experience.md) 
+- [Customize and manage the test experience](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience) 
 
 
 ::: moniker range="<= azure-devops-2019"
