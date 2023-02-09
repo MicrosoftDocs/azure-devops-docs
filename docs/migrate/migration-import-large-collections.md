@@ -17,11 +17,11 @@ ms.date: 10/07/2021
 <a id="import-large-collections"></a>
 
 
-For databases that the data migration tool warns are too big, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure whether your collection exceeds the size threshold, you should run a data migration tool validation on the collection. The validation lets you know whether you need to use the SQL Azure VM method for import. 
+For databases that the data migration tool warns are too large, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure whether your collection exceeds the size threshold, you should run a data migration tool validation on the collection. The validation lets you know whether you need to use the SQL Azure VM method for import. 
 
 ## Determine if you can reduce the collection size
 
-Before you proceed, we recommend checking to see whether your [old data can be cleaned up](/azure/devops/server/upgrade/clean-up-data). Over time, collections can build up very large volumes of data. This is a natural part of the DevOps process, but you might find that you don't need to retain all of the data. Some common examples of no longer relevant data are older workspaces and build results. 
+Before you proceed, we recommend checking to see whether your [old data can be cleaned up](/azure/devops/server/upgrade/clean-up-data). Over time, collections can build up large volumes of data. This growth is a natural part of the DevOps process, but you might find that you don't need to retain all of the data. Some common examples of no longer relevant data are older workspaces and build results. 
 
 Cleaning older, no-longer-relevant artifacts could remove a lot more space than you might expect, and it could determine whether you use the DACPAC import method or a SQL Azure VM. 
 
@@ -47,7 +47,7 @@ You can set up a SQL Azure VM from the Azure portal with just a few clicks. To l
 
 > [!NOTE] 
 > While setting up your SQL Azure VM, bear in mind that the performance of the VM and attached data disks will have a significant impact on the performance of the import. For this reason, we *highly* recommend:
-- Selecting a VM Size at the level of D8s_v5_* or above
+- Selecting a VM Size at the level of D8s_v5_* or greater
 - Using managed disks
 - Consulting [Virtual machine and disk performance](/azure/virtual-machines/disks-performance). Please ensure your infrastructure is configured so that neither the VM IOPS or storage IOPS become a bottleneck on the performance of the import. For example, ensuring the number of data disks attached to your VM is sufficient to support the IOPS from the VM.
 
@@ -286,7 +286,7 @@ CREATE USER <username> FOR LOGIN <username> WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 ```
 
-Following our Fabrikam example, the two SQL commands would look like the following:
+Following our Fabrikam example, the two SQL commands would be:
 
 ```sql
 ALTER DATABASE [Foo] SET RECOVERY SIMPLE;
