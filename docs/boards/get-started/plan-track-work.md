@@ -567,7 +567,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Task Type](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+      [Task Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (CMMI only)
    :::column-end:::
    :::column span="3":::
       Select the kind of task to implement from the allowed values:</p>
@@ -591,6 +591,6 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 ## Related articles
 
 - [Azure Boards FAQs](../faqs.yml) 
-- [Index to field descriptions](../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
+- [Index to field descriptions](../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json)  
 - [Add tags to issues or tasks](../queries/add-tags-to-work-items.md)   
 

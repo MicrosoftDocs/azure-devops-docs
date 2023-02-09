@@ -65,14 +65,14 @@ ms.date: 02/13/2020
 <tr>
 <td>Agent.TempDirectory</td>
 <td>
-A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/build/dotnet-core-cli">.NET Core CLI task</a> to hold temporary items like test results before they are published.
+A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2">.NET Core CLI task</a> to hold temporary items like test results before they are published.
 </td>
 </tr>
 
 <tr>
 <td>Agent.ToolsDirectory</td>
 <td>
-The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/tool/node-js" data-raw-source="[Node Tool Installer](../../tasks/tool/node-js.md)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/tool/use-python-version" data-raw-source="[Use Python Version](../../tasks/tool/use-python-version.md)">Use Python Version</a> to switch between multiple versions of a tool.
+The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/node-tool-v0" data-raw-source="[Node Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/reference/use-python-version-v0" data-raw-source="[Use Python Version](/azure/devops/pipelines/tasks/reference/use-python-version-v0)">Use Python Version</a> to switch between multiple versions of a tool.
 These tasks will add tools from this directory to <code>PATH</code> so that subsequent build steps can use them.
 <br><br>
 Learn about <a href="https://go.microsoft.com/fwlink/?linkid=2008884" data-raw-source="[managing this directory on a self-hosted agent](https://go.microsoft.com/fwlink/?linkid=2008884)">managing this directory on a self-hosted agent</a>.
@@ -104,7 +104,7 @@ For example: <code>c:\agent_work</code>.
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
@@ -335,6 +335,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 Note: This variable is available in TFS 2015.4.
+
+> [!NOTE]
+> The **Build.SourceVersionMessage** variable does not work with classic build pipelines in Bitbucket repositories when **Batch changes while a build is in progress** is enabled.
 </td>
 </tr>
 
@@ -345,7 +348,7 @@ Note: This variable is available in TFS 2015.4.
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 

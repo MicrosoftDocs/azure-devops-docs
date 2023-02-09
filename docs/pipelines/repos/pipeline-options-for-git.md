@@ -1,10 +1,10 @@
 ---
 title: Options for Git repositories
-description: Options that are available when using a Git repository with Azure Pipelines
+description: Options available when using a Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.custom: seodec18
-ms.date: 12/15/2020
+ms.date: 01/25/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,21 +18,21 @@ monikerRange: '<= azure-devops'
 
 While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
 
-| Feature | Azure Pipelines | TFS 2017.2 and higher | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
-|---------|------|------|----------|------------|--------------|------------|--------------|
-|Branch|Yes|Yes|Yes|Yes|Yes|
-|Clean|Yes|Yes|Yes|Yes|Yes|
-|Tag or label sources|Project; Classic only|Team project|Team project|Team project|No|
-|Report build status|Yes|Yes|Yes|No|No|
-|Checkout submodules|Yes|Yes|Yes|Yes|Yes|
-|Checkout files from LFS|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
-|Clone a second repo|Yes|Yes|Yes|Yes|Yes|
-|Don't sync sources|Yes|Yes|No|No|No|
-|Shallow fetch|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
+| Feature | Azure Pipelines | Azure DevOp Server 2019 and higher | TFS 2018 |
+|---|---|---|---|
+| Branch | Yes | Yes | Yes |
+| Clean | Yes | Yes | Yes |
+| Tag or label sources | Project; Classic only | Team project | Team project |
+| Report build status | Yes | Yes | Yes |
+| Checkout submodules | Yes | Yes | Yes |
+| Checkout files from LFS | Yes | Yes | Yes |
+| Clone a second repo | Yes | Yes | Yes |
+| Don't sync sources | Yes | Yes | Yes |
+| Shallow fetch | Yes | Yes | Yes |
 
 
 > [!NOTE]
-> Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
+> Click **Advanced settings** in the **Get Sources** task to see some of the above options.
 
 
 ## Branch
@@ -71,7 +71,7 @@ There are several different clean options available for YAML pipelines.
 
       :::image type="content" source="../process/media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-  2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+  2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **true**. 
 
       :::image type="content" source="../process/media/clean-setting.png" alt-text="Clean setting."::: 
 
@@ -82,7 +82,7 @@ parameters:
 - name: clean
   displayName: Checkout clean
   type: boolean
-  default: false
+  default: true
   values:
   - false
   - true
@@ -98,7 +98,7 @@ steps:
   clean: ${{ parameters.clean }}
 ```
 
-By default, `clean` is set to `false` but can be overridden when manually running the pipeline by checking the **Checkout clean** checkbox that is added for the runtime parameter.
+By default, `clean` is set to `true` but can be overridden when manually running the pipeline by unchecking the **Checkout clean** checkbox that is added for the runtime parameter.
 
 :::moniker-end
 

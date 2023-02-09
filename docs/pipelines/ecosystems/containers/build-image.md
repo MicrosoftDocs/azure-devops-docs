@@ -58,9 +58,7 @@ This quickstart shows how to build a container image for app deployment using Az
 
    When you add the **azure-pipelines.yml** file to your repository, you're prompted to add a commit message.
 
-1. Edit the commit message, and select **Save and run** again to start the pipeline.
-
-For more information, see the [Docker task](../../tasks/build/docker.md) used by this sample application. You can also directly invoke Docker commands using a [command line task](../../tasks/utility/command-line.md).
+For more information, see the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used by this sample application. You can also directly invoke Docker commands using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2).
 
 ## Clean up resources
 
@@ -113,7 +111,7 @@ steps:
 
 1. Before you create your container image, make sure to install Docker on your self-hosted machine.
 
-1. In your pipeline, *prior* to the [Docker task](../../tasks/build/docker.md) that builds your image, add the [Docker installer task](../../tasks/tool/docker-installer.md).
+1. In your pipeline, *prior* to the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) that builds your image, add the [Docker installer task](/azure/devops/pipelines/tasks/reference/docker-installer-v0).
 
 ### How can I create a script-based Docker build instead of using the Docker task?
 
@@ -123,7 +121,7 @@ You can use the `build` command or any other Docker command.
 docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
 ```
 
-This command creates an image equivalent to one built with the Docker task. Internally, the Docker task calls the Docker binary on a script and stitches together a few more commands to provide a few more benefits. Learn more about [Docker task](../../tasks/build/docker.md).
+This command creates an image equivalent to one built with the Docker task. Internally, the Docker task calls the Docker binary on a script and stitches together a few more commands to provide a few more benefits. Learn more about [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2).
 
 ### Can I reuse layer caching during builds on Azure Pipelines?
 

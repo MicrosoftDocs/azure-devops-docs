@@ -46,7 +46,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    `<Itemspec>`
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder that contains the branch you want to examine. For more information about how TFVC parses `<itemspec>`s to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   Identifies the file or folder that contains the branch you want to examine. For more information about how TFVC parses `<itemspec>`s to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
    :::column-end:::
 :::row-end:::
 :::row:::

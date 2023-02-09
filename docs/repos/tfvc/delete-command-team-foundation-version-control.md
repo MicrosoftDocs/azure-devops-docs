@@ -48,7 +48,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    `<itemspec>`
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder to delete from the Azure DevOps server. For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   Identifies the file or folder to delete from the Azure DevOps server. For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options-to-modify-how-a-command-functions).
 
    > [!Note]  
    > You can specify more than one `itemspec` argument.

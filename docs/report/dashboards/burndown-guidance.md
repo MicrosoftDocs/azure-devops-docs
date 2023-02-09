@@ -182,16 +182,4 @@ Teams should meet immediately to course correct and either reassign work, recrui
 ## Industry resources
  
 - [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  
-
-<!---
-For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
-
-
-Things to look for: 
-- Scope creep: work added after the start of a sprint or planning period
-- Above the trend line: 
-- Below the trend line:  
-- Total scope line  ... 
-- Stalled or flat areas 
-
---> 
+ 

@@ -3,7 +3,7 @@
 title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
 ms.topic: conceptual
-ms.date: 09/14/2021
+ms.date: 12/21/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -11,9 +11,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you use PowerShell and Bash scripts in your pipelines, it's often useful to be able to set variables that you can then use in future tasks. Scripts are great for when you want to do something that isn't supported by a task like calling a custom REST API and parsing the response. 
+When you use PowerShell and Bash scripts in your pipelines, it's often useful to be able to set variables that you can then use in future tasks. Newly set variables aren't available in the same task. 
 
-You'll use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](../tasks/utility/bash.md) scripts. 
+Scripts are great for when you want to do something that isn't supported by a task like calling a custom REST API and parsing the response. 
+
+You'll use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) scripts. 
 
 > [!NOTE] 
 > Deployment jobs use a different syntax for output variables. To learn more about support for output variables in deployment jobs, see [Deployment jobs](./deployment-jobs.md#support-for-output-variables).
@@ -66,7 +68,7 @@ The `task.setvariable` command includes properties for setting a variable as sec
 
 To use the variable in the next stage, set the `isoutput` property to `true`. To reference a variable with the `isoutput` set to true, you'll include the task name. For example, `$(TaskName.myVar)`. 
 
-When you set a variable as read only it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances securing by making that variable immutable. 
+When you set a variable as read only, it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances securing by making that variable immutable. 
 
 
 ## Set a variable as secret
@@ -85,11 +87,11 @@ There are four different types of output variables with distinct syntaxes:
 
 ## Set an output variable for use in the same job
 
-When you use an output variable in the same job, you do not have to use the `isoutput` property. By default, the variable will be available to downstream steps within the same job. However, if you do add the `isoutput` property, you'll need to reference the variable with the task name. 
+When you use an output variable in the same job, you don't have to use the `isoutput` property. By default, the variable will be available to downstream steps within the same job. However, if you do add the `isoutput` property, you'll need to reference the variable with the task name. 
 
 # [Bash](#tab/bash)
 
-The script below sets the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput=true`.
+The script here sets the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput=true`.
 
 ```yaml
 jobs:
@@ -222,7 +224,7 @@ jobs:
 
 ## Set an output variable for use in future stages
 
-Output variables can be used across stages in pipelines. This helps you pass useful information, such as the ID of a generated output, from one stage to the next. 
+Output variables can be used across stages in pipelines. You can use output variables to pass useful information, such as the ID of a generated output, from one stage to the next. 
 
 When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#stage-depending-on-job-output). 
 

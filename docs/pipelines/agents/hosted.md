@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/17/2022
+ms.date: 01/25/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -32,12 +32,12 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | --- | --- | --- | --- |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md) |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2019-Readme.md) |
-| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
-| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
+| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
+| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
 | Ubuntu 18.04 ([deprecated starting 8/8/2022 and unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002)) | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md) |
-| macOS 12 Monterey | *macOS-12* | `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
-| macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
-| macOS X Catalina 10.15 ([deprecated starting 5/31/2022 and unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583)) | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
+| macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
+| macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
+| macOS X Catalina 10.15 ([deprecated starting 5/31/2022 and unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/5583)) | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -47,11 +47,13 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### Recent updates
 
+* [The macOS 10.15 will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/5583).
+* [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
-* [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/23](https://github.com/actions/runner-images/issues/6002).
-* [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
-* [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
-* [`macOS-latest` workflows will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
+* [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
+* [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
+* [`windows-latest` images will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
+* [`macOS-latest` images will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
 * [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
 * The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
 * In December 2021, we removed the following Azure Pipelines hosted image:
@@ -375,7 +377,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xcode
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
+  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 

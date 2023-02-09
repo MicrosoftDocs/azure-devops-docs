@@ -3,12 +3,13 @@ title: Sample OData queries
 titleSuffix: Azure DevOps
 description: Learn how to construct basic queries for Azure DevOps using OData Analytics.
 ms.subservice: azure-devops-analytics
+ms.custom: engagement-fy23
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/07/2022
+ms.date: 01/19/2023
 ---
 
 # Define basic queries using OData Analytics
@@ -25,6 +26,7 @@ In this article you'll learn how to define queries that return the following dat
 > [!div class="checklist"]  
 > - Count of items (no other data)
 > - Count of items and data
+> - Properties defined for Areas or Iteration Paths
 > - Selected columns or fields
 > - Filtered data  
 > - Return data for Identity, Area Path, and Iteration Path fields
@@ -120,6 +122,60 @@ To return a count of items along with select data for the items, specify the `$c
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/v4.0-preview/Users?$count=true&$select=UserName,UserEmail
 > ```
   
+ 
+## Areas or Iterations properties
+
+To look up the `AreaSK` or `IterationSK`, or other property of an **Area Path** or **Iteration Path**, use the following queries. 
+
+<a id="areask" />
+
+### Return the AreaSK for a specific Area Path 
+
+The following query specifies to return the `AreaSK` property defined for the *Fabrikam Fiber\Service Delivery\Internet* **Area Path**. To specify other properties defined for the `Areas` entity set, see [Metadata reference for Azure Boards Analytics, Areas](../analytics/entity-reference-boards.md#areas).
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Areas?$filter=AreaPath eq 'Fabrikam Fiber\Service Delivery\Internet' &$select=AreaSK
+> ```
+
+The query returns the following data.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> {
+>   "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Areas(AreaSK)",
+>   "value": [
+>     {
+>       "AreaSK": "637dc203-0549-4415-9663-b6358ac27d21"
+>     }
+>   ]
+> }
+> ```
+
+<a id="iterationsk" />
+
+### Return the IterationSK for a specific Iteration Path 
+
+The following query specifies to return the `IterationSK` property defined for the *Fabrikam Fiber\Release 1\Sprint 3* **Iteration Path**. To specify other properties defined for the `Iterations` entity set, see [Metadata reference for Azure Boards Analytics, Iterations](../analytics/entity-reference-boards.md#iterations).
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+>https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/Iterations?$filter=IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 3' &$select=IterationSK
+> ```
+
+The query returns the following data.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> {
+>   "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#Iterations(IterationSK)",
+>   "value": [
+>     {
+>       "IterationSK": "862e961a-ac7a-4fcc-9ebc-8afd0c12fed5"
+>     }
+>   ]
+> }
+> ```
  
 <a id="select-columns" />
 
@@ -231,8 +287,8 @@ The following table provides examples of how to expand several of these properti
 | Identity  | `UserSK`      | `$expand=AssignedTo($select=UserName)` or<br/>`$expand=AssignedTo($select=UserEmail)` | 
 | Area      | `AreaSK`      | `$expand=AssignedTo($select=AreaName)` or<br/>`$expand=AssignedTo($select=AreaPath)` | 
 | Iteration | `IterationSK` | `$expand=Iteration($select=IterationName)` or<br/>`$expand=Iteration($select=IterationPath)` or<br/>`$expand=Iteration($select=StartDate)`| 
-| Project	| `ProjectSK`   | `$expand=AssignedTo($select=ProjectName)` | 
-| Team 	    | `TeamSK`      | `$expand=AssignedTo($select=TeamName)` | 
+| Project	| `ProjectSK`   | `$expand=Project($select=ProjectName)` | 
+| Team 	    | `TeamSK`      | `$expand=Teams($select=TeamName)` | 
 
 To specify several properties that need to be expanded, you specify them in a single expand clause within a comman-delimited list. 
 
@@ -506,7 +562,7 @@ Specify the `$orderby` option to sort your results or specify the sequence in wh
 
 - [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Metadata reference for Azure Boards Analytics](../analytics/entity-reference-boards.md)
-- [Best practices to use when querying Analytics](/analytics/analytics-best-practices.md) 
+- [Best practices to use when querying Analytics](../analytics/analytics-best-practices.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)

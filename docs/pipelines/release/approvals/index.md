@@ -46,7 +46,7 @@ You can combine all three techniques within a release pipeline to fully achieve 
 In addition, you can install an extension that integrates with *ServiceNow* to help you control and manage your deployments through Service Management methodologies such as ITIL. For more information, see [Integrate with ServiceNow change management](servicenow.md).
 
 > [!NOTE]
-> The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
+> The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](/azure/devops/pipelines/tasks/reference/delay-v1) in your release pipeline.
 
 # [YAML](#tab/yaml)
 

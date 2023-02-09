@@ -1,6 +1,6 @@
 ---
-title: Build and push Docker images to Azure Container Registry
-description: Build and push Docker images with Azure Pipelines
+title: Build and push Docker images to Azure Container Registry with Docker templates
+description: Build and push Docker images with Azure Pipelines and Docker templates
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: atulmal
@@ -8,7 +8,7 @@ author: azooinmyluggage
 ms.date: 03/01/2022
 monikerRange: 'azure-devops'
 ---
-# Build and push Docker images to Azure Container Registry
+# Build and push Docker images to Azure Container Registry using Docker templates
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
@@ -96,7 +96,7 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 
 ## How we build your pipeline
 
-The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](../../tasks/build/docker.md?view=azure-devops&preserve-view=true) `Docker@2` to build and push your Docker image to the container registry.
+The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) `Docker@2` to build and push your Docker image to the container registry.
 
 ```YAML
 - stage: Build
@@ -128,6 +128,5 @@ az group delete --name myapp-rg
 
 ## Related articles
 
-- [Deploy containerized ASP.NET Core apps](../../apps/cd/azure/aspnet-core-to-acr.md)
 - [Deploy to Azure Web App for Containers (Classic)](../../apps/cd/deploy-docker-webapp.md)
 - [Docker Content Trust](./content-trust.md)

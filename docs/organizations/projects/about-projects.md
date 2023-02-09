@@ -1,14 +1,14 @@
 ---
 title: About projects and scaling your organization
 titleSuffix: Azure DevOps
-ms.custom: seodec18, engagement-fy23  
+ms.custom: engagement-fy23  
 description: Understand how to structure your project to support collaboration on building software solutions.
 ms.subservice: azure-devops-projects
 ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/04/2022 
+ms.date: 12/16/2022
 --- 
 
 # About projects and scaling your organization
@@ -254,25 +254,13 @@ As your organization grows, you can add teams equipped with configurable Agile t
 
 Aside from connecting via a web browser, you can connect to a project from the following clients:
 
-::: moniker range=">= azure-devops-2019"
-- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://visualstudio.microsoft.com/vs/compare/)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
-- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
-::: moniker-end
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md) 
+- [Test & Feedback extension](../../test/request-stakeholder-feedback.md)
+- [Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
 
-::: moniker range="tfs-2018"
-- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
-- [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
-- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
-::: moniker-end
 
 For more information, see [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).
 

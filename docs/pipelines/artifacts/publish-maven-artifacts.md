@@ -94,6 +94,15 @@ To publish your package to an Azure Artifacts feed, use the Maven task to deploy
 
 :::image type="content" source="media/maven-published-to-feed.png" alt-text="A screenshot showing the build artifact published to a feed.":::
 
+## Q&A
+
+#### Q: How to authenticate with MavenAuthenticate?
+
+A: You can use the [MavenAuthenticate](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0) task to authenticate with Maven feeds inside and outside your organization. See the examples below for more details:
+
+- [Authenticate with Maven feeds inside your organization](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0#authenticate-maven-feeds-inside-your-organization)
+- [Authenticate with Maven feeds outside your organization](/azure/devops/pipelines/tasks/reference/maven-authenticate-v0#authenticate-maven-feeds-outside-your-organization)
+
 ## Related articles
 
 - [Publish npm packages with Azure Pipelines](./npm.md)

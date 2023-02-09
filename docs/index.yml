@@ -166,7 +166,7 @@ tools:
       url: ./pipelines/apps/windows/cpp.md
     - title: Docker 
       imageSrc: ./pipelines/media/index/logo_dockercontainer.svg
-      url: ./pipelines/tasks/build/docker.md
+      url: /azure/devops/pipelines/tasks/reference/docker-v2
     - title: Java
       imageSrc: /media/logos/logo_java.svg
       url: ./pipelines/ecosystems/java.md
@@ -272,7 +272,7 @@ additionalContent:
             - text: Hosted XML process model
               url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json
             - text: Process templates
-              url: ./reference/process-templates/overview-process-template-files.md 
+              url: ./reference/process-templates/index.md 
             - text: See more >
               url: ./reference/index.yml 
     - title: Additional services
