@@ -30,7 +30,7 @@ If you like Microsoft-hosted agents but are limited by what they offer, you shou
 
 If you like self-hosted agents but wish that you could simplify managing them, you should consider scale set agents. Here are some examples:
 
-- You don't want to run dedicated agents around the clock. You want to de-provision agent machines that are not being used to run jobs.
+- You don't want to run dedicated agents around the clock. You want to de-provision agent machines that aren't being used to run jobs.
 - You run untrusted code in your pipeline and want to re-image agent machines after each job.
 - You want to simplify periodically updating the base image for your agents.
 
@@ -99,7 +99,7 @@ In the following example, a new resource group and virtual machine scale set are
     * `--disable-overprovision` - required
     * `--upgrade-policy-mode manual` - required
     * `--load-balancer ""` - Azure Pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss#az-vmss-create).
-    * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
+    * `--instance-count 2` - this setting isn't required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
@@ -187,7 +187,7 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
 
-Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale in or out is based on the number of idle agents at that time. An agent is considered idle if it is online and is not running a pipeline job. Azure Pipelines performs a scale out operation if either of the following conditions is satisfied:
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale in or out is based on the number of idle agents at that time. An agent is considered idle if it's online and is not running a pipeline job. Azure Pipelines performs a scale out operation if either of the following conditions is satisfied:
 
 - The number of idle agents falls below the number of standby agents you specify
 - There are no idle agents to service pipeline jobs waiting in the queue
@@ -215,7 +215,7 @@ Throughout this operation, the goal for Azure Pipelines is to reach the desired 
 
 To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale out and there are also unhealthy machines to delete, Azure Pipelines will first scale out the pool. Once the pool has scaled out to reach the desired number of idle agents on standby, the unhealthy machines will be deleted, depending on the **Save an unhealthy agent for investigation** setting. For more information, see [Unhealthy agents](#unhealthy-agents).
 
-Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling out will occur.
+Due to the sampling size of 5 minutes, it's possible that all agents can be running pipelines for a short period of time and no scaling out will occur.
 
 ## Customizing Pipeline Agent Configuration
 
@@ -242,7 +242,7 @@ You can customize the configuration of the Azure Pipelines Agent by defining env
 
 ## Customizing Virtual Machine Startup via the Custom Script Extension
 
-Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for startup scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged. The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
+Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for startup scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it's created or reimaged. The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
 
 Here is an example to create a custom script extension for Linux.
 
@@ -280,7 +280,7 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 1. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
 
-1. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
+1. If the Custom Script Extension is installed, it's executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
 
 1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with the latest version of configuration script. The configuration scripts can be found at URLs with the following formats:
    - Linux: _https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/<config_script_version>/enableagent.sh_, for example, [version 14](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/14/enableagent.sh)
@@ -388,7 +388,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
      
 1. Verify that both VMs created in the scale set come online, have different names, and reach the Succeeded state
 
-You are now ready to create an agent pool using this scale set.
+You're now ready to create an agent pool using this scale set.
 
 ## Update an existing scale set with a new custom image
 
@@ -404,8 +404,8 @@ Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016
 
 ### Known issues
 
-* Debian or RedHat Linux are not supported. Only Ubuntu is.
-* Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI. The agent will run as Local Service instead.
+* Debian or RedHat Linux aren't supported. Only Ubuntu is.
+* Windows 10 client doesn't support running the pipeline agent as a local user and therefore the agent can't interact with the UI. The agent will run as Local Service instead.
 
 ## Troubleshooting issues
 
@@ -433,7 +433,7 @@ Select the instance, choose **Connect**, and perform your investigation.
 
 :::image type="content" source="media/scale-set-agents/connect.png" alt-text="Connect to virtual machine instance.":::
 
-To delete the saved agent when you are done with your investigation, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and choose **Delete**. This removes the agent from the pool and deletes the associated virtual machine.
+To delete the saved agent when you're done with your investigation, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and choose **Delete**. This removes the agent from the pool and deletes the associated virtual machine.
 
 :::image type="content" source="media/scale-set-agents/saved-agents-card-delete.png" alt-text="Saved agents card delete button.":::
      
@@ -448,7 +448,7 @@ To delete the saved agent when you are done with your investigation, navigate to
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
-Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/runner-images/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
+Licensing considerations limit us from distributing Microsoft-hosted images. We're unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/runner-images/tree/main/images) that we use to generate these images are open source. You're free to use these scripts and create your own custom images.
 
 ### How do I configure scale set agents to run UI tests?
 
@@ -457,7 +457,7 @@ Create a Scale Set with a Windows Server OS and when creating the Agent Pool sel
 ### How can I delete agents?
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
-Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it is currently running and will not pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
+Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it's currently running and won't pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
 
 ### Can I configure the scale set agent pool to have zero agents on standby?
 
