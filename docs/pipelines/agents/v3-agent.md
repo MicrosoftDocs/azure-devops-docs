@@ -16,7 +16,7 @@ If you're running your self-hosted agents on newer operating systems [supported 
 
 ## Upgrade to 3.x agent on unsupported operating systems
 
-If you're running your self-hosted agents on an operating system supported by the current version 2.x agent software built using [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) that isn't supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
+If you're running your self-hosted agents on an operating system that isn't supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 The following list of operating systems are commonly used for self-hosted 2.x agents. These operating systems aren't supported by .NET 6 and can't be used to run the new .NET 6 based version 3.x agent.
 
@@ -29,7 +29,7 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 | Ubuntu | < 18.04 LTS |
 | macOS | < 10.15 |
 
-You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools will be able to upgrade from 2.x to 3.x.
+You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools are able to upgrade from 2.x to 3.x.
 
 ## Install agent version 3.x preview
 
@@ -43,7 +43,7 @@ To use the new version 3 agent, install the latest .NET 6 agent from the pre-rel
 
 ### What is the difference between the 2.x and 3.x agents?
 
-The 2.x agents (e.g., 2.212) are .NET Core 3.1 and the 3.x agents (e.g., 3.212) are .NET 6. During Phase I and II, we'll have both versions simultaneously with the 3.x versions being in prerelease.
+The 2.x agents (for example 2.212) are .NET Core 3.1 and the 3.x agents (for example 3.212) are .NET 6. During Phase I and II, both versions are available, with the 3.x versions being in prerelease.
 
 ### How can I check my agents to see if they can upgrade to 3.x?
 
