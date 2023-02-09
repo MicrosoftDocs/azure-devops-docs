@@ -282,13 +282,9 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 1. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
 
-1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. 
-
-    - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)
-    - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/6/enableagent.ps1](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/6/enableagent.ps1)
-
-    > [!NOTE]
-    > These URLs may change.
+1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with the latest version of configuration script. The configuration scripts can be found at URLs with the following formats:
+   - Linux: _https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/<config_script_version>/enableagent.sh_, for example, [version 14](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/14/enableagent.sh)
+   - Windows: _https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/<config_script_version>/enableagent.ps1_, for example, [version 16](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/16/enableagent.ps1)
 
 1. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
