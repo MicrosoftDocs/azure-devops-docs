@@ -99,7 +99,7 @@ In the following example, a new resource group and virtual machine scale set are
     * `--disable-overprovision` - required
     * `--upgrade-policy-mode manual` - required
     * `--load-balancer ""` - Azure Pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss#az-vmss-create).
-    * `--instance-count 2` - this setting isn't required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
+    * `--instance-count 2` - this setting isn't required, but it gives you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines deletes these two VMs and create new ones.
 
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
@@ -187,7 +187,7 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
 
-Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale in or out is based on the number of idle agents at that time. An agent is considered idle if it's online and is not running a pipeline job. Azure Pipelines performs a scale out operation if either of the following conditions is satisfied:
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale in or out is based on the number of idle agents at that time. An agent is considered idle if it's online and isn't running a pipeline job. Azure Pipelines performs a scale out operation if either of the following conditions is satisfied:
 
 - The number of idle agents falls below the number of standby agents you specify
 - There are no idle agents to service pipeline jobs waiting in the queue
@@ -498,11 +498,11 @@ The first place to look when experiencing issues with scale set agents is the 
 
 Also, consider saving the unhealthy VM for debugging purposes. For more information, see [Unhealthy Agents](#unhealthy-agents).
 
-Saved agents will be there unless you delete them. If the agent doesn't come online in 10 minutes, it will be marked as unhealthy and saved if possible. Only one VM will be kept in a saved state. If the agent goes offline unexpectedly (due to a VM reboot or something happening to the image), it won't be saved for investigation.
+Saved agents are there unless you delete them. If the agent doesn't come online in 10 minutes, it is marked as unhealthy and saved if possible. Only one VM is kept in a saved state. If the agent goes offline unexpectedly (due to a VM reboot or something happening to the image), it isn't saved for investigation.
 
-Only VMs that agents fail to start will be saved. If a VM has a failed state during creation, it won't be saved. In this case, the message in the Diagnostics tab will be "deleting unhealthy machine" instead of "failed to start".
+Only VMs for which agents fail to start are saved. If a VM has a failed state during creation, it isn't saved. In this case, the message in the Diagnostics tab is "deleting unhealthy machine" instead of "failed to start".
 
-#### You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not re-imaging as they should and just pick up new jobs as they are queued
+#### You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't re-imaging as they should and just pick up new jobs as they're queued
 
 The option to tear down the VM after each build will only work for Windows Server and supported Linux images. It isn’t supported for Windows client images.
 
@@ -519,9 +519,9 @@ When the pool is created, a tag is added to the scale set to mark the scale set 
 
 #### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists
 
-You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it is deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap, in which a VMSS that is not used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
+You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it's deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap, in which a VMSS that isn't used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
 
-#### VMSS maintenance job is not running on agents or getting logs
+#### VMSS maintenance job isn't running on agents or getting logs
 
 The maintenance job runs once every 24 hours. It's possible that VMs are getting filled up before this time. Consider increasing the disk size on the VM and adding a script in the pipeline to delete the contents.
 
