@@ -67,7 +67,7 @@ You don't have to install .NET 6 on your agent machine before installing and con
 
 ### Do I have to build my code using .NET 6 if I am using the 3.x agent?
 
-The version of .NET Framework used to run the 3.x agent is self-contained in the agent installation, and isn't used to build your code. The version of .NET Framework that is used to build your code depends on the version of .NET Framework you have installed onto your agent machine. 
+The version of .NET Framework used to run the 3.x agent is self-contained in the agent installation, and isn't used to build your code. The version of .NET Framework that is used to build your code depends on the pipeline and the version or versions of .NET Framework you have installed onto your agent machine. 
 
 ### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
 
