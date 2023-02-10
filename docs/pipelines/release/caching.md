@@ -29,11 +29,13 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
-## Cache task
+## Cache task: how it works
 
-Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job.
+Caching is added to a pipeline using the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2). This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that wasn't skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. 
+
+After all steps in the job have run and assuming a **successful** job status, a special **"Post-job: Cache"** step is automatically added and triggered for each **"restore cache"** step that wasn't skipped. This step is responsible for **saving the cache**.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
@@ -401,7 +403,7 @@ steps:
 
 There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules that can reduce or eliminate network calls to the public npm registry or to a private registry.
 
-Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it is recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
+Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it's recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
 
 **Example**:
 
@@ -522,7 +524,7 @@ steps:
 
 ## Known issues and feedback
 
-If you are experiencing issues setting up caching for your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
+If you're experiencing issues setting up caching for your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
 
 ## Q&A
 
