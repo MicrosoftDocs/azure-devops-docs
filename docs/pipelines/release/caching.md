@@ -29,11 +29,13 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
-## Cache task
+## Cache task: how it works
 
-Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job.
+Caching is added to a pipeline using the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2). This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that wasn't skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. 
+
+After all steps in the job have run and assuming a **successful** job status, a special **"Post-job: Cache"** step is automatically added and triggered for each **"restore cache"** step that wasn't skipped. This step is responsible for **saving the cache**.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
