@@ -180,7 +180,7 @@ Note that most new features we are shipping in Boards are only available in the 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
          <td>Boards</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -342,7 +342,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="22"><strong>2023 Q1</strong></td>
+        <td rowspan="21"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Swimlane colors](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors</a></td>
         <td>Boards</td>
         <td>Future</td>      
@@ -366,12 +366,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[REST APIs to connect GitHub Repos to Azure Boards](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">REST APIs to connect GitHub Repos to Azure Boards (Preview)</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>
+      </tr>     
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[swimlane rules on kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
         <td>Boards</td>
@@ -460,15 +455,15 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>   
+      </tr>      
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
         <td>Reporting</td>
@@ -499,13 +494,23 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>         
       <tr>
-        <td rowspan="1"><strong>2023 Q3</strong></td>
+        <td rowspan="3"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="13"><strong>Future</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>   
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td rowspan="12"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[UI improvements GitHub Connection Experience.](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">UI improvements to GitHub Connection Experience</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -514,12 +519,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>   
+      </tr>     
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode" data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
         <td>Pipelines</td>
