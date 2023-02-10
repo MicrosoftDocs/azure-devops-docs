@@ -630,7 +630,26 @@ ID     Identifier                            Name      Start Date            Fin
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-* 
+
+
+<a name="delete-path"></a>
+
+## Delete an Iteration Path
+
+When you delete an **Iteration Path**, you must provide an **Iteration Path** to use to update the work items assigned to the **Iteration Path** you want to delete. 
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
+1. To delete an **Iteration Path**, open the web portal **Project settings>Project configuration>Iterations** page.
+
+1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the node, and select **Delete** or **Remove**.  
+
+2. In the dialog that opens, select the **Iteration Path** to reassign work items to, and then choose **Delete path**.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of Delete iteration dialog.](media/iterations/delete-iteration-path-dialog.png) 
+ 
+
 <a name="export"></a>
 
 ### Export/import iteration paths  
