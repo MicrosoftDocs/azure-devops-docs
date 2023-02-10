@@ -461,62 +461,34 @@ Fabrikam Fiber\Voice                   True                 True
 
 * * *
 
-
-
 <a name="rename-delete"></a>
 
-## Rename, move, or delete an area path
+## Rename or move an Area Path
 
-The system automatically updates work items and queries that reference your updated area path.  
+The system automatically updates work items and queries that reference your updated area path. Each **Area Path** is associated with a unique GUID.  
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2019"
+1. To rename an **Area Path**, open the web portal **Project settings>Project configuration>Areas** page.
 
-1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
+1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the node, and select **Edit**.  
 
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of sequence, Open Work > Project Configuration](media/areas/edit-area-rename-preview.png)  
-
-2. In the dialog that opens, enter the new name.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of Edit area dialog.](media/areas/edit-area-rename-dialog-preview.png)
-
-3. To move the node within the hierarchy, change the Location field.
-
-4. To delete a node, choose the **Delete** option from the actions menu.
-
-> [!NOTE]
-> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of sequence, Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename.png)  
+    :::image type="content" source="media/areas/edit-area-rename-project-configuration.png" alt-text="Screenshot of open context menu for an Area Path node, choose Edit option.":::
 
 2. In the dialog that opens, enter the new name.
 
-    > [!div class="mx-imgBorder"]
-    > [!Screenshot of Edit area dialog, TFS 2018 and earlier on-premises versions.](media/areas/edit-area-rename-dialog.png)
+    :::image type="content" source="media/areas/edit-area-rename-dialog.png" alt-text="Screenshot of Edit area dialog.":::
 
-3. To move the node within the hierarchy, change the Location field.
+3. To move the node within the hierarchy, change the **Location** field.
 
-4. To delete a node, choose the **Delete** option from the actions menu.
-
-::: moniker-end
-
+	> [!NOTE]
+	> When you rename or change the **Location** field for a node, the system automatically updates the existing work items that reference the **Area Path**. 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops" 
 
-You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/boards/area/project#az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can rename or move an area path for a project, using [az boards area team add](/cli/azure/boards/area/project#az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 <a id="rename-move-project-area-path" /> 
 
@@ -539,7 +511,7 @@ az boards area project update --path
 
 #### Example
 
-For example, the following command renames the Voice area path to Voice and Web for the Fabrikam Fiber project. 
+For example, the following command renames the *Voice* area path to *Voice and Web* for the *Fabrikam Fiber* project. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -582,6 +554,23 @@ az boards area team remove --path "\Fabrikam Fiber\Service Delivery\Voice" --tea
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
+
+<a name="delete-area-path"></a>
+
+## Delete an Area Path
+
+When you delete an **Area Path**, you must provide an **Area Path** to use to update the work items assigned to the **Area Path** you want to delete. 
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
+1. To delete an **Area Path**, open the web portal **Project settings>Project configuration>Areas** page.
+
+1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the node, and select **Delete** or **Remove**.  
+
+2. In the dialog that opens, select the **Area Path** to reassign work items to, and then choose **Delete path**.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of Delete area dialog.](media/areas/delete-area-path-dialog.png) 
 
 
 ## Chart progress by area
