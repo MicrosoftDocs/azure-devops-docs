@@ -271,7 +271,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Burndown User Stories for all sprints since the start of a year   
 
-You may want to view a burndown of all the sprints in a single report. These queries pulls in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
+You may want to view a burndown of all the sprints in a single report. These queries pull in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
 
 #### [Power BI query](#tab/powerbi/)
 
