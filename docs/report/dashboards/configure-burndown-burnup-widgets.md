@@ -21,8 +21,9 @@ The Burndown and Burnup widgets provide the flexibility to create charts for:
 - Within specified time periods.
 
 Burndown charts focus on remaining work within a specific time period, while burnup charts focus on completed work. 
-
 Both chart types help answer the question: *Are we on track to complete this set of work by the end date?*
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Use this article to learn how to:
 
