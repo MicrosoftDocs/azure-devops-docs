@@ -44,11 +44,11 @@ Review your sprint burndown chart throughout your sprint cycle to check for thes
 
 You can view sprint burndown  from your team's sprint backlog built-in report or by adding the Sprint burndown widget to a team dashboard.
 
-[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
-
 To configure or view sprint burndown charts, see [Sprint burndown](configure-sprint-burndown.md).
  
 ::: moniker-end
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
