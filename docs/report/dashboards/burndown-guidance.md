@@ -78,7 +78,7 @@ Depending on the teams, work item types, and time period you want to monitor, ch
 | Monitor | Chart option |  
 |---------|---------------|  
 | Sprint burndown for a team | Sprint burndown chart |  
-| Sprint burndown for a specific work item type or a porfolio backlog | Sprint burndown widget |  
+| Sprint burndown for a specific work item type or a portfolio backlog | Sprint burndown widget |  
 | Sprint burndown for several teams | Burndown widget |  
 | Release burndown/burnup  for one or more teams or teams in different projects | Burndown/Burnup widget |  
 | Burnup or burndown for any type of work item and time period | Burndown/Burnup widget |  
