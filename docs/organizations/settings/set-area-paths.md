@@ -3,12 +3,13 @@ title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
 ms.subservice: azure-devops-settings
+ms.custom: teams, engagement-fy23
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 02/10/2023
 ---
 
 # Define area paths and assign to a team
@@ -462,6 +463,7 @@ Fabrikam Fiber\Voice                   True                 True
 * * *
 
 <a name="rename-delete"></a>
+<a id="rename-move-project-area-path" />   
 
 ## Rename or move an Area Path
 
@@ -488,13 +490,10 @@ The system automatically updates work items and queries that reference your upda
 
 ::: moniker range="azure-devops" 
 
-You can rename or move an area path for a project, using [az boards area team add](/cli/azure/boards/area/project#az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
-<a id="rename-move-project-area-path" /> 
+### Rename or move an area path from a project
 
-### Rename or move an area path
-
-To rename or move an area path, use the `az boards area project update` command.
+You can rename or move an area path for a project, using [`az boards area project update`](/cli/azure/boards/area/project#az-boards-area-project-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -525,7 +524,7 @@ ID     Identifier                            Name           Path                
 
 ### Remove an area path from a team 
 
-To remove an area path from a team, use [az boards area team remove](/cli/azure/boards/area/team#az-boards-area-team-remove).
+To remove an area path from a team, use [`az boards area team remove`](/cli/azure/boards/area/team#az-boards-area-team-remove).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -569,9 +568,7 @@ When you delete an **Area Path**, you must provide an **Area Path** to use to up
 
 2. In the dialog that opens, select the **Area Path** to reassign work items to, and then choose **Delete path**.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of Delete area dialog.](media/areas/delete-area-path-dialog.png) 
-
+    :::image type="content" source="media/areas/delete-area-path-dialog.png" alt-text="Screenshot of Delete area dialog.":::
 
 ## Chart progress by area
 
