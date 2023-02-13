@@ -68,14 +68,56 @@ Tips: Pie charts versus Query count; can quickly see the types of work items
 ## Maintain backlog hygiene 
 
 The following queries can help your team maintain a healthy backlog by ensuring that work is assigned Here are a few tasks to review periodically, usually at the beginning or end of a sprint. Review this list for what makes sense for your team and organization goals. 
- 
-| Query focus | Query clause |
-|-------|--------------|
-|Work assigned to a sprint but not assigned to a team member| :::image type="content" source="media/example-queries/query-no-assigned-to.png" alt-text="Screenshot of Query Editor, Assigned To field is blank for current iteration.":::   
-|Active work items not assigned to the current sprint | :::image type="content" source="media/example-queries/query-active-but-not-current-iteration.png" alt-text="Screenshot of Query Editor, Active but not assigned to current iteration.":::   
-- Active work items assigned to a past sprint | :::image type="content" source="media/example-queries/query-active-past-iteration.png" alt-text="Screenshot of Query Editor, Active but assigned to a past iteration.":::   |
-|Stale work items, no changes made in the last 2 to 3 months (query by Changed Date) | :::image type="content" source="media/example-queries/query-stale-work.png " alt-text="Screenshot of Query Editor, Active work not changed for past 3 months.":::   |
-|Ill-defined work items, for example, ones with no Description, Acceptance Criteria, Story Points, or Effort defined| :::image type="content" source="media/example-queries/query-ill-defined-work.png " alt-text="Screenshot of Query Editor, Work with empty required fields.":::   |  
+
+:::row:::
+   :::column span="1":::
+      Query focus
+   :::column-end:::
+   :::column span="3":::
+      Query clause
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Work assigned to a sprint but not assigned to a team member
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-no-assigned-to.png" alt-text="Screenshot of Query Editor, Assigned To field is blank for current iteration.":::
+   :::column-end:::
+:::row-end:::   
+:::row:::
+   :::column span="1":::
+      Active work items not assigned to the current sprint 
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-active-but-not-current-iteration.png" alt-text="Screenshot of Query Editor, Active but not assigned to current iteration.":::
+   :::column-end:::
+:::row-end:::   
+:::row:::
+   :::column span="1":::
+      Active work items assigned to a past sprint
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-active-past-iteration.png" alt-text="Screenshot of Query Editor, Active but assigned to a past iteration."::: 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Stale work items, no changes made in the last 2 to 3 months (query by Changed Date)
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-stale-work.png " alt-text="Screenshot of Query Editor, Active work not changed for past 3 months.":::
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Ill-defined work items, for example, ones with no Description, Acceptance Criteria, Story Points, or Effort defined
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-ill-defined-work.png " alt-text="Screenshot of Query Editor, Work with empty required fields.":::
+   :::column-end:::
+:::row-end:::
 
 In the following image, all five query charts appear on a team dashboard. To add query charts to a dashboard, see [Add charts to a dashboard](../../report/dashboards/add-charts-to-dashboard.md#add-a-work-item-query-or-chart) 
 
