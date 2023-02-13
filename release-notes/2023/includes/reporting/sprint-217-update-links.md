@@ -5,4 +5,4 @@ ms.date: TBD
 ms.topic: include
 ---
 
-- [Copy Dashboard](#copy-dashboard)
+- [Search and filter stages in the Pipelines stages side panel](#search-and-filter-stages-in-the-pipelines-stages-side-panel)
