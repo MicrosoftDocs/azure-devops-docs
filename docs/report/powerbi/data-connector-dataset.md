@@ -1,8 +1,9 @@
 ---
-title: Analytics Views - Dataset design
+title: Dataset design for Analytics views
 titleSuffix: Azure DevOps
 description: Learn about the dataset that is created in Power BI for an Analytics View.
 ms.subservice: azure-devops-analytics
+ms.custom: analytics-views 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -129,7 +130,7 @@ Now you can list Areas by Project and get a count of Areas in each project.
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Power BI integration overview](overview.md)  
 - [Work item field index](../../boards/work-items/guidance/work-item-field.md)
-- [Work item categories](../../reference/xml/use-categories-to-group-work-item-types.md)
+- [Work item categories](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)
 - [Backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Data Connector - Example reports](./data-connector-examples.md)

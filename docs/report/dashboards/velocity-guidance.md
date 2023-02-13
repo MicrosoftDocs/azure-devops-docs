@@ -20,6 +20,8 @@ Velocity metrics provide useful information to support the following team and pr
 - Forecasting future sprints and the backlog items that a team can complete   
 - A guide for determining how well the team estimates and meets their planned commitments 
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Velocity chart types

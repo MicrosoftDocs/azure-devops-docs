@@ -20,7 +20,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
->  If your Azure DevOps or TFS server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
+>  If your on-premises server has been upgraded from an earlier version, you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
 
 ::: moniker-end
 

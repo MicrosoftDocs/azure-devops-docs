@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/04/2023
+ms.date: 02/02/2023
 ---
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
@@ -162,7 +162,8 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       ::: moniker-end
-      <br/>
+
+
       - [Email work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
    :::column-end:::
@@ -288,7 +289,8 @@ You customize work item types using either the Inheritance process model or On-p
       - [Move the field within the layout](../../organizations/settings/work/customize-process-form.md#move-field)  
       - [Remove a field from form](../../organizations/settings/work/customize-process-field.md#remove-field)  
       - [Restrict modification](../../organizations/security/restrict-access.md#restrict-modifications-wits)  
-      - [Set Required/Default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set required/default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)
    :::column-end:::
 :::row-end:::
 ---
@@ -328,7 +330,8 @@ You customize work item types using either the Inheritance process model or On-p
       <br/>
       - [Remove a field from a form](../../organizations/settings/work/customize-process-field.md#remove-field)  
       - [Restrict modification](../../organizations/security/restrict-access.md#restrict-modifications-wits)  
-      - [Set Required/Default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set required/default options](../../organizations/settings/work/customize-process-field.md#options)  
+      - [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)
    :::column-end:::
 :::row-end:::
 ---
@@ -362,7 +365,7 @@ You customize work item types using the On-premises XML process model. For more 
       - [Change a field label](../../reference/add-modify-field.md#change-label)    
       - [Define Area Paths](../../organizations/settings/set-area-paths.md)    
       - [Define Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md)    
-      - [Define global lists](../../reference/xml/define-global-lists.md)    
+      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
       - [Delete a field](../../reference/add-modify-field.md#delete-field)    
       - [Modify a predefined pick list](../../reference/add-modify-field.md#picklist)  
       - [Remove a field from a form](../../reference/add-modify-field.md#change-label)  

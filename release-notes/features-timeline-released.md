@@ -38,6 +38,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2023/sprint-216-update.md" data-raw-source="[7 February 2023](2023/sprint-216-update.md)"> 7 February 2023</a></td>
+    <td>New save comments permission</td><td>Boards</td><td>Future</td></tr>
+    <td>Red Hat 6 will no longer receive Pipeline agent updates</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline stages side panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Restrict opening protected resources to resource administrators</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Copy Dashboard</td><td>Reporting</td><td>Future</td></tr>   
+<tr>
     <td rowspan="9"><a href="2023/sprint-215-update.md" data-raw-source="[25 January 2023](2023/sprint-215-update.md)"> 25 January 2023</a></td>
     <td>Prevent editing of shareable picklists fields</td><td>Boards</td><td>Future</td></tr>
     <td>Swimlane colors</td><td>Boards</td><td>Future</td></tr>
