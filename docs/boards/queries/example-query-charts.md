@@ -67,14 +67,14 @@ Tips: Pie charts versus Query count; can quickly see the types of work items
 
 ## Maintain backlog hygiene 
 
-The following queries can help your team maintain a healthy backlog by ensuring that work is assigned Here are a few tasks to review periodically, usually at the beginning or end of a sprint. Review this list for what makes sense for your team and organization goals. 
+The following queries can help your team maintain a healthy backlog by ensuring that work is assigned Here are a few tasks to review periodically, usually at the beginning or end of a sprint. Review this list for what makes sense for your team and organization goals. Substitute the Fabrikam Team for your team and add additional filters as needed.
 
 :::row:::
    :::column span="1":::
-      Query focus
+      **Query focus**
    :::column-end:::
    :::column span="3":::
-      Query clause
+      **Query clauses**
    :::column-end:::
 :::row-end:::
 ---
@@ -121,18 +121,65 @@ The following queries can help your team maintain a healthy backlog by ensuring 
 
 In the following image, all five query charts appear on a team dashboard. To add query charts to a dashboard, see [Add charts to a dashboard](../../report/dashboards/add-charts-to-dashboard.md#add-a-work-item-query-or-chart) 
 
+:::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-charts.png" alt-text="Screenshot of Dashboard with five query charts added.":::  
 
-:::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-charts.png " alt-text="Screenshot of Dashboard with five query charts added.":::  
 
+Alternatively, you can add query tiles that reference the same query and simply show the total count of work items. as shown in the following image. The query tile widget is a 1x1 tile, whereas the smallest query chart dashboard widget is 2x2. To add query tiles to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
+:::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-tiles.png" alt-text="Screenshot of Dashboard with five query tiles added.":::  
+ 
 ## Example status charts 
 
-- **Planned work**: How much work is represented in the backlog. A query that looks at work in the *New* or *Proposed* category state provides a snapshot of work in the backlog.  
-- **Active bugs**: Agile teams monitor their bug or technical debt and set goals to maintain the total number under a specific number. 
-- **Active bugs by assignment**: Monitor bugs assignments across a team to support load balancing.  
-- Active bugs by state 
-- **Tagged work items**: Monitor tagged work to ensure the team is meeting specific goals, milestones, or categories of work. 
-- **Blocked work**: How much work is currently blocked? You can query blocked work using a tag or custom field. 
+The following table provides some examples of status charts you can create and the queries behind them. 
+
+:::row:::
+   :::column span="1":::
+      **Query focus**
+   :::column-end:::
+   :::column span="3":::
+      **Query clauses**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Planned work**: How much work is represented in the backlog. A query that looks at work in the *New* or *Proposed* category state provides a snapshot of work in the backlog.
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-backlog-work.png " alt-text="Screenshot of Query Editor, Backlog work, not closed or removed.":::
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Active bugs**: Agile teams monitor their bug or technical debt and set goals to maintain the total number under a specific number.
+      :::image type="content" source="media/example-queries/query-active-bugs.png " alt-text="Screenshot of Query Editor, Active bugs.":::
+	  From this one query, you can create a chart based on assignment or state. 
+      :::image type="content" source="media/example-queries/chart-active-bugs-by-state.png " alt-text="Screenshot of query chart, Active bugs by state.":::
+      :::image type="content" source="media/example-queries/chart-active-bugs-by-assignment.png " alt-text="Screenshot of query chart, Active bugs by assignment.":::
+   :::column-end:::
+:::row-end:::   
+:::row:::
+   :::column span="1":::
+      **Tagged work items**: Monitor tagged work to ensure the team is meeting specific goals, milestones, or categories of work.
+      :::image type="content" source="media/example-queries/query-active-work-tagged-across-project.png " alt-text="Screenshot of Query Editor, Active work across projects tagged with Web.":::
+   :::column-end:::
+:::row-end:::   
+:::row:::
+   :::column span="1":::
+      **Blocked work**: How much work is currently blocked? You can query blocked work using a tag or custom field.
+      :::image type="content" source="media/example-queries/query-active-work-tagged-as-blocked.png " alt-text="Screenshot of Query Editor, Active work tagged as blocked.":::
+   :::column-end:::
+:::row-end:::   
+
+
+<!---TIPS
+Not In operator 
+Area Path
+Add a column field to 
+Query charts are built off the fields used to construct the query or the column options specified for the query 
+States applicable to your project may differ depending on the process used  
+
+--> 
 
 
 ## Example trend charts 
