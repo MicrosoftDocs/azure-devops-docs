@@ -1,13 +1,13 @@
 ---
 title: About notifications
-description: Overview of notifications and subscriptions in Azure Devops, including how to set them up and manage them.
+description: Learn how to configure and manage notifications in Azure DevOps organizations to stay informed and improve collaboration within development teams.
 ms.subservice: azure-devops-notifications
 toc: show
 ms.custom: quarterly-update, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/10/2023
+ms.date: 02/13/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,17 +15,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. Get notifications when changes occur to the following items.
+Notifications in Azure DevOps keep you and your team informed about project activity, including changes to work items, code reviews, pull requests, source control files, and builds. When an event occurs in Azure DevOps, its content is compared with every subscription of that event type, and a notification is generated for every subscription/event match that meets the filter conditions. Notifications are delivered through email or service hook, based on the delivery properties defined in the subscription. 
 
-- Work items
-- Code reviews
-- Pull requests
-- Source control files
-- Builds
-
-When an **event** occurs in Azure DevOps, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.** Certain actions create events, like when a work item gets created or a pull request is voted on. For more information, see the list of [supported event types](oob-supported-event-types.md).
-
-Each notification is then delivered based on the delivery properties defined in the subscription (either as an email or as a service hook). [Learn more about email delivery options](concepts-email-recipients.md).
+For more information, see the list of [supported event types](oob-supported-event-types.md) and [learn more about email delivery options](concepts-email-recipients.md).
 
 ## Notification types
 
