@@ -228,7 +228,7 @@
 - name: REST API Reference
   items:
   - name: Work Items
-    href: /rest/api/vsts/wit/work%20items
+    href: /rest/api/azure/devops/wit/work-items
   - name: Fields
     href: /rest/api/azure/devops/wit/fields
   - name: Boards

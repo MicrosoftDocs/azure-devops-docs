@@ -282,6 +282,7 @@ The following properties are valid for the **Areas** entity set, which is associ
 |**Area Name** | `AreaName` | String | Name defined for the Area Path when it's created.  | 
 |**Area Path** | `AreaPath` | String | Full path of the Area Path starting with the root node.   |  
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Navigation properties for the **Area** entity type and **Areas** entity set include `Project` and `Teams`.  
 
@@ -306,6 +307,7 @@ The following properties are valid for the **Iterations** entity set, which is a
 |**Iteration Path** | `IterationPath` | String |  Full path of the Iteration Path starting with the root node. The iteration must be a valid node in the project hierarchy.  <br/>`System.IterationPath`    | 
 |**Start Date** | `StartDate` | DateTime | Start date defined for the Iteration Path.   |  
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Navigation properties for the **Iteration** entity type and **Iterations** entity set include `Project` and `Teams`.  
 

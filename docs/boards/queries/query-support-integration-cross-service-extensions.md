@@ -82,7 +82,7 @@ To learn more about WIQL, see [Syntax for the Work Item Query Language (WIQL)](w
  
 ### `.wiq` file structure
 
- The following syntax shows the structure of the `.wiq` file.  For details on each `WorkItemQuery` syntax element, see [Define a work item query to add to a process template](../../reference/process-templates/define-work-item-query-process-template.md)
+ The following syntax shows the structure of the `.wiq` file.  For details on each `WorkItemQuery` syntax element, see [Define a work item query to add to a process template](/previous-versions/azure/devops/reference/process-templates/define-work-item-query-process-template)
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML 

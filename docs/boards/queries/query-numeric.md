@@ -2,7 +2,7 @@
 title: Query by numeric fields based on effort, schedules, and story points
 titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards and Azure DevOps.
-ms.custom: boards-queries
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: kaelli
@@ -472,7 +472,7 @@ For more information on using work items and queries, see:
 
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following articles: 
+Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards provides rollup of **Remaining Work** for tasks on the taskboard. For other rollup requirements, see the following articles:  
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/data-connector-connect.md)  
 
