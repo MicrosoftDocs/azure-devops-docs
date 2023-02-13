@@ -76,7 +76,7 @@ You can add or modify the fields contained within a work item type, add a custom
 
 ## Work item form and Details tab
 
-The work item form shows the fields used to track information related to each work item. In general, you define and update a work item through it's work item form, although other methods are available to bulk import, export, update, and modify work items. For an overview of all form controls, see [Work item form controls](work-item-form-controls.md). 
+The work item form shows the fields used to track information related to each work item. In general, you define and update a work item through its work item form, although other methods are available to bulk import, export, update, and modify work items. For an overview of all form controls, see [Work item form controls](work-item-form-controls.md). 
 
 Each work item form contains several tabs. The **Details** tab contains the common fields, other fields defined for the work item type, and the **Discussion** control. Common fields defined for all work item types display at the top of the work item form. As shown in the following image, these fields include the following fields: **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration**.  You can update these fields at any time. 
 
