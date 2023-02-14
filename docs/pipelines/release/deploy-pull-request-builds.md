@@ -1,11 +1,11 @@
 ---
 title: Deploy pull request Artifacts
-description: Deploy pull request Artifacts from Azure Repos or GitHub repository
+description: Deploy pull request Artifacts from Azure Repos or GitHub repositories
 ms.topic: tutorial
 ms.author: moala
-ms.custom: contperf-fy21q4
+ms.custom: contperf-fy21q4, engagement-fy23
 author: raiyanalam
-ms.date: 10/16/2020
+ms.date: 02/14/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -64,7 +64,7 @@ You can use branch policies to implement a list of criteria that must be met for
 
     :::image type="content" source="../../repos/git/media/branches/branches_nav-new-nav.png" alt-text="A screenshot showing how to navigate to branches in Azure Repos.":::
 
-1. Select the the context menu for your appropriate branch `...`, then select **Branch policies**.
+1. Select the context menu for your appropriate branch `...`, then select **Branch policies**.
 
     :::image type="content" source="media/deploy-pull-request-builds/branch-policies-menu.png" alt-text="A screenshot showing how to access branch policies for a specific branch.":::
 
