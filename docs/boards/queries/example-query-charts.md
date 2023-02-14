@@ -69,7 +69,7 @@ For details on creating query charts, see [Track progress with status and trend 
 	::: moniker-end
 1. If you plan to add a query chart to a dashboard, first create the dashboard. Then, you can add it to the dashboard from the **Queries>Charts** page.
 1. If you add a query and then want to add it to a dashboard from the dashboard, you must first refresh your browser for the dashboard to register the newly added query. 
- 
+1. To optimize performance of complex queries, see [Best integration practices, Optimize queries](../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ## Maintain backlog hygiene 
 
@@ -196,7 +196,6 @@ The following table provides some examples of status charts you can create and t
 
 
 The following table provides some examples of trend charts you can create. 
-
 
 :::row:::
    :::column span="1":::
