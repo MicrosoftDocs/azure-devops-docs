@@ -244,7 +244,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-:::image type="content" source="media/charts-add-stacked-bar.png" alt-text="Screenshot of web portal, Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart.":::     
+:::image type="content" source="media/charts-add-stacked-bar.png" alt-text="Screenshot of web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart.":::     
 ::: moniker-end   
 
 ## Add a Pivot table  
@@ -254,7 +254,7 @@ The Pivot table displays a table of configurable rows and columns, with columns 
 The following image shows an example of active bugs assigned to developers and their current state.  
 
 > [!div class="mx-imgBorder"]  
-> ![Configure Chart dialog, Pivot table](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
+> !["Screenshot of Configure Chart dialog, Pivot table.](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
 
 ## Add a Trend chart  
 
@@ -262,11 +262,11 @@ Trend charts let you view progress over time. You can select a rolling period ra
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Configure chart dialog, Stacked bar chart.](media/charts/config-2-week-trend-chart-bugs.png)   
+> ![Screenshot of Configure chart dialog, two week trend chart.](media/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart.":::  
+:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.":::  
 ::: moniker-end  
 
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
@@ -280,14 +280,14 @@ To create a burndown chart, make sure to add the numeric field you want to your 
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Configure chart dialog, Remaining work for past 4 weeks.](media/charts/config-remaining-work-trend-chart.png)   
+> ![Screenshot of Configure chart dialog, Remaining work for past four weeks.](media/charts/config-remaining-work-trend-chart.png)   
 
 In addition to query-based burndown charts, you can [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"   
-:::image type="content" source="media/create-burndown-trend-sum-chart.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks.":::  
+:::image type="content" source="media/create-burndown-trend-sum-chart.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, Trend chart for the past four weeks.":::  
 ::: moniker-end  
 
 
