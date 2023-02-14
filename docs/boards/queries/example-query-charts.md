@@ -184,10 +184,47 @@ States applicable to your project may differ depending on the process used
 
 ## Example trend charts 
 
-- Bug trends over time by state (last 30 days)
-- Active work trends by state (last 30 days) 
-- Newly added work over time 
-- Velocity by distinct area path 
+:::row:::
+   :::column span="1":::
+      **Query focus**
+   :::column-end:::
+   :::column span="3":::
+      **Query clauses**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Bug trends over time by state** (last 30 days)
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/chart-bug-trend.png " alt-text="Screenshot of Query chart, bug trend stacked area chart by state\.":::
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Active work trends by state** (last 30 days)
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/chart-active-work-trend.png " alt-text="Screenshot of Query chart, Active Backlog work, not closed or removed.":::
+   :::column-end:::
+:::row-end:::   
+:::row:::
+   :::column span="1":::
+      **Newly added work over time**
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/chart-active-work-trend.png " alt-text="Screenshot of Query chart, Active Backlog work, not closed or removed.":::
+   :::column-end:::
+:::row-end:::   
+:::row:::
+   :::column span="1":::
+      Velocity by distinct area path
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-backlog-work.png " alt-text="Screenshot of Query Editor, Backlog work, not closed or removed.":::
+   :::column-end:::
+:::row-end:::   
 
 ## Useful work tracking widgets and charts
 
