@@ -45,7 +45,7 @@ A pull request trigger creates a release every time a new build Artifact is avai
 
     :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-target-branch.png" alt-text="A screenshot showing how to select the target branch.":::
 
-1. To deploy your application to a specific stage you need to explicitly opt-in that stage. The **Stages** section shows the stages that are enabled for pull request deployments.
+1. To deploy your application to a specific stage you need to explicitly opt in that stage. The **Stages** section shows the stages that are enabled for pull request deployments.
 
     :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-stage.png" alt-text="A screenshot showing the list of stages that are enabled for pull request deployments.":::
 
