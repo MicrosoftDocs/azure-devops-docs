@@ -61,13 +61,61 @@ Questions to answer
 What articles should link to this article?  
 - Does a change in Stack Rank count toward the Changed Date? 
 
-Tips: Pie charts versus Query count; can quickly see the types of work items 
+ 
 --> 
 
+
+
+## Prerequisites
+
+- To create a query chart or view query charts from the Queries page, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+- To add a query chart to a dashboard:
+	- You need to save the query under the **Shared Queries** folder. To do that, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](set-query-permissions.md). 
+	- You must have created the dashboard or be granted permissions to edit the dashboard. To learn more about dashboard permissions, see [Set dashboard permissions](../../report/dashboard-permissions.md). 
+- To view a query chart added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
+
+::: moniker range="azure-devops"
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+
+::: moniker-end
+ 
+
+## Tips for creating query charts 
+
+When creating query charts, make sure your queries meet the following guidelines. 
+1. Only choose **Flat list of work items** for the query type. Only flat-list queries support query charts. 
+1. Always save a query after modifying the clauses or column options before switching to the **Charts** page. 
+2. Use the **In** and **Not In** operators to specify more than one work item type, workflow state, or other groupings of interest
+2. When creating a trend chart, make sure that your query returns no more than 1000 work items. You'll receive a widget error if that number is exceeded. 
+1. Add the fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
+	- To group by status, include the **State** field 
+	- To group by work assignments, include the **Assigned To** field
+	- To group by sprints or iterations, include the **Iteration Path**    
+	- To group by team, include the **Node Name** field that displays the leaf node of the **Area Pat**h 
+	- To group by a custom field, include it.  
+- To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](query-numeric.md).  
+1.  You can't group charts by the following field data types:
+	-  Work item **ID** or **Parent** fields
+	-  Date-time fields, such as **Created Date**, **Changed Date** 
+	-  Plain text fields, such as **Title** 
+	-  Rich-text fields, such as **Description**, **Acceptance Criteria**, **Repro Steps** 
+	-  **Tags** (You can filter a query using tags, however you can't use tags to configure your query chart).
+1. If you add a query and then want to add it to a dashboard from the dashboard, you must first refresh your browser for the dashboard to register the newly added query. 
+
+
+::: moniker range=">= azure-devops-2022"
+> [!NOTE]   
+> While you can't group a query-based chart by tags, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](configure-chart-work-items-widget.md).  
+::: moniker-end
 
 ## Maintain backlog hygiene 
 
 The following queries can help your team maintain a healthy backlog by ensuring that work is assigned Here are a few tasks to review periodically, usually at the beginning or end of a sprint. Review this list for what makes sense for your team and organization goals. Substitute the Fabrikam Team for your team and add additional filters as needed.
+
+> [!NOTE]  
+> States applicable to your project may differ from those shown in the following examples depending on the process used by your project.  
+
 
 :::row:::
    :::column span="1":::
@@ -124,7 +172,7 @@ In the following image, all five query charts appear on a team dashboard. To add
 :::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-charts.png" alt-text="Screenshot of Dashboard with five query charts added.":::  
 
 
-Alternatively, you can add query tiles that reference the same query and simply show the total count of work items. as shown in the following image. The query tile widget is a 1x1 tile, whereas the smallest query chart dashboard widget is 2x2. To add query tiles to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+Alternatively, you can add query tiles that reference the same query and simply show the total count of work items as shown in the following image. The query tile widget is a 1x1 tile, whereas the smallest query chart dashboard widget is 2x2. To add query tiles to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 :::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-tiles.png" alt-text="Screenshot of Dashboard with five query tiles added.":::  
  
@@ -178,24 +226,19 @@ The following table provides some examples of status charts you can create and t
 :::row-end:::   
 
 
-<!---TIPS
-Not In operator 
-Area Path
-Add a column field to 
-Query charts are built off the fields used to construct the query or the column options specified for the query 
-States applicable to your project may differ depending on the process used  
-
---> 
-
 
 ## Example trend charts 
+
+
+The following table provides some examples of trend charts you can create. 
+
 
 :::row:::
    :::column span="1":::
       **Query focus**
    :::column-end:::
    :::column span="3":::
-      **Query clauses**
+      **Query clauses and chart**
    :::column-end:::
 :::row-end:::
 ---
@@ -204,6 +247,7 @@ States applicable to your project may differ depending on the process used
       **Bug trends over time by state** (last 30 days)
    :::column-end:::
    :::column span="3":::
+      :::image type="content" source="media/example-queries/query-active-bugs.png " alt-text="Screenshot of Query Editor, Active bugs example.":::  
       :::image type="content" source="media/example-queries/chart-bug-trend.png " alt-text="Screenshot of Query chart, bug trend stacked area chart by state\.":::
    :::column-end:::
 :::row-end:::  
@@ -212,6 +256,7 @@ States applicable to your project may differ depending on the process used
       **Active work trends by state** (last 30 days)
    :::column-end:::
    :::column span="3":::
+      :::image type="content" source="media/example-queries/query-backlog-work.png " alt-text="Screenshot of Query Editor, Backlog work, not closed or removed example.":::
       :::image type="content" source="media/example-queries/chart-active-work-trend.png " alt-text="Screenshot of Query chart, Active Backlog work, not closed or removed.":::
    :::column-end:::
 :::row-end:::   
@@ -223,30 +268,22 @@ States applicable to your project may differ depending on the process used
       :::image type="content" source="media/example-queries/chart-active-work-trend.png " alt-text="Screenshot of Query chart, Active Backlog work, not closed or removed.":::
    :::column-end:::
 :::row-end:::   
-:::row:::
-   :::column span="1":::
-      Velocity by distinct area path
-   :::column-end:::
-   :::column span="3":::
-      :::image type="content" source="media/example-queries/query-backlog-work.png " alt-text="Screenshot of Query Editor, Backlog work, not closed or removed.":::
-   :::column-end:::
-:::row-end:::   
+
 
 ## Useful work tracking widgets and charts
 
-- Velocity 
-- Sprint burndown 
-- Lead time
-- Cycle time 
-- Cumulative flow 
+In addition to the previous query charts provided, the following built-in widgets provide a wealth of information for teams working to monitor progress and continuous improvement goals. Each of these charts can be added to a team dashboard. 
 
+- [Velocity](../../report/dashboards/team-velocity.md) 
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md) 
+- [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
+- [Lead time and Cycle time](../../report/dashboards/cycle-time-and-lead-time.md) 
 
-Widget error: The daily number of work items returned exceeds the trend chart size limit of 1000. 
- 
 ## Related articles
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   
+- [FAQs about queries](query-faqs.md)
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
  
  
