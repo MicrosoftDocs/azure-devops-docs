@@ -56,31 +56,32 @@ A pull request trigger creates a release every time a new build Artifact is avai
 > [!IMPORTANT]
 > Enabling automatic pull request deployments for production stages is not recommended.
 
-### Set up branch policy for Azure Repos
+### Set up branch policies for Azure Repos
 
 You can use branch policies to implement a list of criteria that must be met for a pull request to be merged.
 
-1. From within your project, select **Repos** > **Branches** to access the list of branches for your repository.
+1. Navigate to your project, and then select **Repos** > **Branches** to access the list of branches for your repository.
 
-    :::image type="content" source="../../repos/git/media/branches/branches_nav-new-nav.png" alt-text="Branches in Azure Repos":::
+    :::image type="content" source="../../repos/git/media/branches/branches_nav-new-nav.png" alt-text="A screenshot showing how to navigate to branches in Azure Repos.":::
 
-2. Select the the context menu for your appropriate branch `...`, then select **Branch policies**.
+1. Select the the context menu for your appropriate branch `...`, then select **Branch policies**.
 
-    :::image type="content" source="media/deploy-pull-request-builds/branch-policies-menu.png" alt-text="Branch policies for main branch":::
+    :::image type="content" source="media/deploy-pull-request-builds/branch-policies-menu.png" alt-text="A screenshot showing how to access branch policies for a specific branch.":::
 
-3. Select **Add status policy**, then select a **status to check** from the dropdown menu. The release definition should have run at least once with the pull request trigger switched on in order to get the status. Select the status corresponding to your release definition and then select **Save**.
+1. Select **Add status policy**, then select a **Status to check** from the dropdown menu. Select the status corresponding to your release definition and then select **Save**.
 
-    :::image type="content" source="media/deploy-pull-request-builds/add-status-policy.png" alt-text="Add status policy":::
+    :::image type="content" source="media/deploy-pull-request-builds/add-status-policy.png" alt-text="A screenshot showing how to add a status policy.":::
 
-   For more information on customizing your status policy, see [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md).
+   > [!NOTE]
+   > The release definition should have run at least once with the pull request trigger enabled in order to get the list of statuses. See [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md) for more details.
 
-4. With the new status policy added, users won't be able to merge any changes to the target branch without a "succeeded" status is posted to the pull request.
+1. With the new status policy added, users won't be able to merge any changes to the target branch without a "succeeded" status is posted to the pull request.
 
-    :::image type="content" source="media/deploy-pull-request-builds/status-policies.png" alt-text="Status policy list":::
+    :::image type="content" source="media/deploy-pull-request-builds/status-policies.png" alt-text="A screenshot showing a list of status policies and the pull request deployment policy enabled.":::
 
-5. You can view the status of your policies from the pull request Overview page. Depending on your policy settings, you can view the posted release status under the **Required**, **Optional**, or **Status** sections. The release status gets updated every time the pipeline is triggered.
+1. You can view the status of your policies from the pull request Overview page. Depending on your policy settings, you can view the posted release status under the **Required**, **Optional**, or **Status** sections. The release status gets updated every time the pipeline is triggered.
    
-    :::image type="content" source="media/deploy-pull-request-builds/pull-request-policy-status.png" alt-text="Pull request policies status":::
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-policy-status.png" alt-text="A screenshot showing the pull request policies status.":::
 
 ## Set up status checks for GitHub repositories
 
