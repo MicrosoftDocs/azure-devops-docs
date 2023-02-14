@@ -83,19 +83,21 @@ You can use branch policies to implement a list of criteria that must be met for
    
     :::image type="content" source="media/deploy-pull-request-builds/pull-request-policy-status.png" alt-text="A screenshot showing the pull request policies status.":::
 
-## Set up status checks for GitHub repositories
+### Set up status checks for GitHub repositories
 
-Enabling status checks for a GitHub repository allow an administrator to choose which criteria must be met before a pull request is merged into the target branch. Check out the [Branch protection rule](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) GitHub article to learn how to enable status checks for your GitHub repository. The status checks will be posted on your pull request only after your release pipeline has run at least once with the pull request deployment condition Enabled.
+Enabling status checks for a GitHub repository allow an administrator to choose which criteria must be met before a pull request is merged into the target branch. 
 
-:::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="Status checks GitHub":::
+> [!NOTE]
+> The status checks will be posted on your pull request only after your release pipeline has run at least once with the pull request deployment condition Enabled. See [Branch protection rules](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) for more details.
+
+:::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="A screenshot showing how to enable status checks.":::
 
 You can view your status checks in your pull request under the **Conversation** tab.
    
-:::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="Pull request status checks":::
+:::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="A screenshot showing the pull request status checks.":::
 
 ## Related articles
 
 - [Release triggers](triggers.md)
-- [Supported build source repositories](../repos/index.md)
-- [Git branch policies](../../repos/git/branch-policies-overview.md)
-- [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md)
+- [Deploy from multiple branches](deploy-multiple-branches.md)
+- [Supported source repositories](../repos/index.md)
