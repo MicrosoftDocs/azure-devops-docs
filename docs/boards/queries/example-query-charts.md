@@ -19,51 +19,13 @@ ms.date: 02/14/2023
 Query charts are a great way to visualize status and trends. Also, by adding several charts to a dashboard, you can quickly review all the important data you want to monitor for your team or project. With that in mind, consider addressing the following questions with your team: 
 - *What are the most useful query charts for teams to create and monitor?* 
 - *What charts will help us maintain backlog hygiene?*
-- *When creating trend charts, what time frame should I consider?*
+- *When creating trend charts, what time frame should we monitor?*
 
 Not all teams have the same goals or tracking needs. However, teams that adopt Agile methods tend to routinely perform the following tasks. So consider the status and trend charts that will help your team perform these tasks.  
 - [Triage incoming work](../sprints/best-practices-scrum.md#tips-for-successful-triage-meetings), ensure new work is well defined 
 - Refine the backlog as described in [Backlog management ](../backlogs/best-practices-product-backlog.md) 
 - Plan sprints and set sprint goals as described in [Scrum and best practices](../sprints/best-practices-scrum.md)
-- Conduct [daily standups](../sprints/best-practices-scrum.md#daily-scrum-meetings)  
-
-
-<!---TIPS
-consider the time frame you want to monitor
-snapshot or trends
-what's shipping when?
-Track bug debt, progress
-Active bugs
-Stale bugs
-Hi priority bugs
-Triage bugs
-Active bug trends
-
-
-How to view total work done 
-How to view remaining work - 
-
-Create tasks and estimate work 
-How to view all work items
-How to view work items I'm following 
-
-Query charts and Query widgets for dashboards, customizing widget tile. 
-
-## What status or trends should your team monitor? 
-
-Questions to answer 
-
-- Do you want to view status or a trend over time
-- If trend, what time frame is of interest 
-- What team, product, or organization goals need to be monitored
-- What recurring activities need to be done to maintain backlog hygiene? 
-
-What articles should link to this article?  
-- Does a change in Stack Rank count toward the Changed Date? 
-
- 
---> 
-
+- Conduct [daily standups](../sprints/best-practices-scrum.md#daily-scrum-meetings).  
 
 
 ## Prerequisites
@@ -83,38 +45,38 @@ What articles should link to this article?
 
 ## Tips for creating query charts 
 
-When creating query charts, make sure your queries meet the following guidelines. 
+For details on creating query charts, see [Track progress with status and trend query-based charts](../../report/dashboards/charts.md). Make sure your queries meet the following guidelines. 
 1. Only choose **Flat list of work items** for the query type. Only flat-list queries support query charts. 
 1. Always save a query after modifying the clauses or column options before switching to the **Charts** page. 
-2. Use the **In** and **Not In** operators to specify more than one work item type, workflow state, or other groupings of interest
-2. When creating a trend chart, make sure that your query returns no more than 1000 work items. You'll receive a widget error if that number is exceeded. 
+1. Use the **In** and **Not In** operators to specify more than one work item type, workflow state, or other groupings of interest
+1. When creating a trend chart, make sure that your query returns no more than 1000 work items. You'll receive a widget error if that number is exceeded. 
 1. Add the fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
 	- To group by status, include the **State** field 
 	- To group by work assignments, include the **Assigned To** field
 	- To group by sprints or iterations, include the **Iteration Path**    
 	- To group by team, include the **Node Name** field that displays the leaf node of the **Area Pat**h 
 	- To group by a custom field, include it.  
-- To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](query-numeric.md).  
-1.  You can't group charts by the following field data types:
+1. To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](query-numeric.md).  
+1. You can't group charts by the following field data types:
 	-  Work item **ID** or **Parent** fields
 	-  Date-time fields, such as **Created Date**, **Changed Date** 
 	-  Plain text fields, such as **Title** 
 	-  Rich-text fields, such as **Description**, **Acceptance Criteria**, **Repro Steps** 
 	-  **Tags** (You can filter a query using tags, however you can't use tags to configure your query chart).
+	::: moniker range=">= azure-devops-2022"
+	> [!NOTE]   
+	> While you can't group a query-based chart by tags, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](../../report/dashboards/configure-chart-work-items-widget.md).  
+	::: moniker-end
+1. If you plan to add a query chart to a dashboard, first create the dashboard. Then, you can simply add it to the dashboard from the **Queries>Charts** page.
 1. If you add a query and then want to add it to a dashboard from the dashboard, you must first refresh your browser for the dashboard to register the newly added query. 
-
-
-::: moniker range=">= azure-devops-2022"
-> [!NOTE]   
-> While you can't group a query-based chart by tags, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](configure-chart-work-items-widget.md).  
-::: moniker-end
+ 
 
 ## Maintain backlog hygiene 
 
-The following queries can help your team maintain a healthy backlog by ensuring that work is assigned Here are a few tasks to review periodically, usually at the beginning or end of a sprint. Review this list for what makes sense for your team and organization goals. Substitute the Fabrikam Team for your team and add additional filters as needed.
+The following queries can help your team maintain a healthy backlog by ensuring that work is assigned. The following table provides some example queries to review periodically, usually at the beginning or end of a sprint. Review this list for what makes sense for your team and organization goals. Substitute the *Fabrikam Team* for your team and add additional filters as needed.
 
 > [!NOTE]  
-> States applicable to your project may differ from those shown in the following examples depending on the process used by your project.  
+> Work item types and workflow states applicable to your project may differ from those shown in the following examples depending on the process used by your project.  
 
 
 :::row:::
@@ -128,7 +90,7 @@ The following queries can help your team maintain a healthy backlog by ensuring 
 ---
 :::row:::
    :::column span="1":::
-      Work assigned to a sprint but not assigned to a team member
+      **Unassigned work**: Work assigned to the current sprint but not assigned to a team member
    :::column-end:::
    :::column span="3":::
       :::image type="content" source="media/example-queries/query-no-assigned-to.png" alt-text="Screenshot of Query Editor, Assigned To field is blank for current iteration.":::
@@ -136,7 +98,7 @@ The following queries can help your team maintain a healthy backlog by ensuring 
 :::row-end:::   
 :::row:::
    :::column span="1":::
-      Active work items not assigned to the current sprint 
+      **Active work not assigned to the current sprint** 
    :::column-end:::
    :::column span="3":::
       :::image type="content" source="media/example-queries/query-active-but-not-current-iteration.png" alt-text="Screenshot of Query Editor, Active but not assigned to current iteration.":::
@@ -144,7 +106,7 @@ The following queries can help your team maintain a healthy backlog by ensuring 
 :::row-end:::   
 :::row:::
    :::column span="1":::
-      Active work items assigned to a past sprint
+      **Active work assigned to a past sprint**
    :::column-end:::
    :::column span="3":::
       :::image type="content" source="media/example-queries/query-active-past-iteration.png" alt-text="Screenshot of Query Editor, Active but assigned to a past iteration."::: 
@@ -152,7 +114,7 @@ The following queries can help your team maintain a healthy backlog by ensuring 
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Stale work items, no changes made in the last 2 to 3 months (query by Changed Date)
+      **Stale work**: Work items with no changes made in the last 2 to 3 months (query by **Changed Date**)
    :::column-end:::
    :::column span="3":::
       :::image type="content" source="media/example-queries/query-stale-work.png " alt-text="Screenshot of Query Editor, Active work not changed for past 3 months.":::
@@ -160,7 +122,7 @@ The following queries can help your team maintain a healthy backlog by ensuring 
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Ill-defined work items, for example, ones with no Description, Acceptance Criteria, Story Points, or Effort defined
+      **Ill-defined work**: For example, ones with no **Description**, **Acceptance Criteria**, **Story Points**, or **Effort** defined
    :::column-end:::
    :::column span="3":::
       :::image type="content" source="media/example-queries/query-ill-defined-work.png " alt-text="Screenshot of Query Editor, Work with empty required fields.":::
@@ -172,7 +134,10 @@ In the following image, all five query charts appear on a team dashboard. To add
 :::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-charts.png" alt-text="Screenshot of Dashboard with five query charts added.":::  
 
 
-Alternatively, you can add query tiles that reference the same query and simply show the total count of work items as shown in the following image. The query tile widget is a 1x1 tile, whereas the smallest query chart dashboard widget is 2x2. To add query tiles to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+Alternatively, you can add query tiles that reference the same query and simply show the total count of work items as shown in the following image. 
+
+> [!NOTE]  
+> The query tile widget is a 1x1 tile, whereas the smallest query chart dashboard widget is 2x2. To add query tiles to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 :::image type="content" source="media/example-queries/dashboard-backlog-hygiene-query-tiles.png" alt-text="Screenshot of Dashboard with five query tiles added.":::  
  
@@ -260,19 +225,11 @@ The following table provides some examples of trend charts you can create.
       :::image type="content" source="media/example-queries/chart-active-work-trend.png " alt-text="Screenshot of Query chart, Active Backlog work, not closed or removed.":::
    :::column-end:::
 :::row-end:::   
-:::row:::
-   :::column span="1":::
-      **Newly added work over time**
-   :::column-end:::
-   :::column span="3":::
-      :::image type="content" source="media/example-queries/chart-active-work-trend.png " alt-text="Screenshot of Query chart, Active Backlog work, not closed or removed.":::
-   :::column-end:::
-:::row-end:::   
 
 
 ## Useful work tracking widgets and charts
 
-In addition to the previous query charts provided, the following built-in widgets provide a wealth of information for teams working to monitor progress and continuous improvement goals. Each of these charts can be added to a team dashboard. 
+In addition to the query charts provided earlier in this article, the following built-in widgets provide a wealth of information for teams working to monitor progress and continuous improvement goals. Each of these charts can be added to a team dashboard. 
 
 - [Velocity](../../report/dashboards/team-velocity.md) 
 - [Cumulative flow](../../report/dashboards/cumulative-flow.md) 
@@ -283,7 +240,42 @@ In addition to the previous query charts provided, the following built-in widget
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [FAQs about queries](query-faqs.md)
+- [FAQs about queries](query-faqs.yml)
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
  
  
+<!---TIPS
+consider the time frame you want to monitor
+snapshot or trends
+what's shipping when?
+Track bug debt, progress
+Active bugs
+Stale bugs
+Hi priority bugs
+Triage bugs
+Active bug trends
+
+
+How to view total work done 
+How to view remaining work - 
+
+Create tasks and estimate work 
+How to view all work items
+How to view work items I'm following 
+
+Query charts and Query widgets for dashboards, customizing widget tile. 
+
+## What status or trends should your team monitor? 
+
+Questions to answer 
+
+- Do you want to view status or a trend over time
+- If trend, what time frame is of interest 
+- What team, product, or organization goals need to be monitored
+- What recurring activities need to be done to maintain backlog hygiene? 
+
+What articles should link to this article?  
+- Does a change in Stack Rank count toward the Changed Date? 
+
+ 
+--> 

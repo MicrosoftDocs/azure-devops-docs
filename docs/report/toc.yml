@@ -40,6 +40,10 @@
   - name: Configure charts for work items 
     href: dashboards/configure-chart-work-items-widget.md
     displayname: tags, flat, query
+  items:
+  - name: Example query charts
+    href: ../boards/queries/example-query-charts.md
+    displayname: status, monitor, trend, widgets  
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics
