@@ -152,8 +152,10 @@ The following table provides some examples of status charts you can create and t
 :::row:::
    :::column span="1":::
       **Active bugs**: Agile teams monitor their bug or technical debt and set goals to maintain the total number under a specific number.
-      :::image type="content" source="media/example-queries/query-active-bugs.png " alt-text="Screenshot of Query Editor, Active bugs.":::
-	  From this one query, you can create a chart based on assignment or state. 
+   :::column-end:::
+   :::column span="3":::
+      :::image type="content" source="media/example-queries/query-active-bugs.png " alt-text="Screenshot of Query Editor, Active bugs.":::  
+	  From this one query, you can create a chart based on assignment or state.  
       :::image type="content" source="media/example-queries/chart-active-bugs-by-state.png " alt-text="Screenshot of query chart, Active bugs by state.":::
       :::image type="content" source="media/example-queries/chart-active-bugs-by-assignment.png " alt-text="Screenshot of query chart, Active bugs by assignment.":::
    :::column-end:::
@@ -161,12 +163,16 @@ The following table provides some examples of status charts you can create and t
 :::row:::
    :::column span="1":::
       **Tagged work items**: Monitor tagged work to ensure the team is meeting specific goals, milestones, or categories of work.
+   :::column-end:::
+   :::column span="3":::
       :::image type="content" source="media/example-queries/query-active-work-tagged-across-project.png " alt-text="Screenshot of Query Editor, Active work across projects tagged with Web.":::
    :::column-end:::
 :::row-end:::   
 :::row:::
    :::column span="1":::
       **Blocked work**: How much work is currently blocked? You can query blocked work using a tag or custom field.
+   :::column-end:::
+   :::column span="3":::
       :::image type="content" source="media/example-queries/query-active-work-tagged-as-blocked.png " alt-text="Screenshot of Query Editor, Active work tagged as blocked.":::
    :::column-end:::
 :::row-end:::   
