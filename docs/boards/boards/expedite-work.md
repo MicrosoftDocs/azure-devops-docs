@@ -66,18 +66,20 @@ You can also focus on a single swimlane by collapsing all other lanes.
 1. Choose :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: **Configure board settings** to configure the board.  
 
 	:::image type="content" source="media/expedite/choose-configure-board-settings.png" alt-text="Screenshot of Kanban board, Choose Configure board settings.":::
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot of gear icon to open board settings for a team.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-1. Choose **Swimlanes**, choose **Add swimlane**, and ten enter the name of the swimlane you want to add. For example, here we enter *Expedite*. 
+1. Choose **Swimlanes**, choose **Add swimlane**, and then enter the name of the swimlane you want to add. For example, here we enter *Expedite*. 
 
 	> [!NOTE]  
-	> The following images show the user interface that displays when the **New Boards Hub** preview feature is enabled. Some features are only available when the **New Boards Hub** is enabled as described in . To enable it, see [Manage or enable features](../../project/navigation/preview-features.md).
+	> The following images show the user interface that displays when the **New Boards Hub** preview feature is enabled. Some features are only available when the **New Boards Hub** is enabled as described in [Key concepts and work item tasks in Azure Boards](../work-items/quick-ref.md). For example, the ability to choose the swimlane color is only supported when the **New Boards Hub** feature is enabled. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 	:::image type="content" source="media/expedite/add-swimlane-new-board-hubs-enabled.png" alt-text="Screenshot of Kanban board Settings, Swimlane tab, Add swimlane.":::
 
-	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
-    
+	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. 
+
+1. To set the color of the swimlane, choose a color from the drop-down menu. To reset the swimlane to the default, choose :::image type="icon" source="../media/icons/refresh.png" border="false":::  **Reset to default color**. 
+
+	:::image type="content" source="media/expedite/pick-swimlane-color.png" alt-text="Screenshot of Kanban board Settings, Swimlane tab, choose swimlane color.":::
+
 3. To reorder or delete a swimlane, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: context menu for the swimlane, and select the corresponding option from the menu.    
 
 	:::image type="content" source="media/expedite/move-remove-swimlane-options.png" alt-text="Screenshot of Kanban board Settings, Swimlane tab, swimlane menu options."::: 
