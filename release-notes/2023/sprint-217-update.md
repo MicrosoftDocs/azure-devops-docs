@@ -6,7 +6,7 @@ ms.date: 2/15/2023
 description: With this update, we announce the multiple repository selection pull request widget, is now available in private preview.
 ---
 # Improved reporting and pipeline stage name filter
-With this update, we announce the multiple repository selection pull request widget, now available in private preview. In addition, we have made improvements to interactive boards reports and your ability in pipelines to find the stages you're looking for in the stages side panel.
+With this update, we announce the multiple repository selection pull request widget, now available in private preview. In addition, we have made improvements to interactive boards reports and have made it easier to find  stages using the stages side panel.
 
 Check out the release notes for details.
 
