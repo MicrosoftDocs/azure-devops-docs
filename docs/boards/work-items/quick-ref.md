@@ -26,7 +26,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
 > - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position)
-
+> - [Change the color of a swimlane on a Kanban board](../boards/expedite-work.md#add-or-remove-a-swimlane)
 ::: moniker-end
 
 
