@@ -1,8 +1,8 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: TBD
+ms.date: 2/15/2023
 ms.topic: include
 ---
 
-- [Search and filter stages in the Pipelines stages side panel](#search-and-filter-stages-in-the-pipelines-stages-side-panel)
+- [Pull Request widget for multiple repos (preview)](#pull-request-widget-for-multiple-repos-preview) 
