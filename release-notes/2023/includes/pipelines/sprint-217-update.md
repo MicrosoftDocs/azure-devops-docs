@@ -4,7 +4,7 @@ ms.author: ckanyika
 ms.date: 2/15/2023
 ms.topic: include
 ---
-### Search for Stages in Side Panel
+### Search for stages in side panel
 
 We've made it easier to find the stages you're looking for in the stages side panel. You can now quickly filter for stages based on their status, for example running stages or those that require manual intervention. You can also search for stages by their name. 
 
