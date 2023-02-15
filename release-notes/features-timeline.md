@@ -374,7 +374,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>   
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
-        <td>Boards</td>
+        <td>Repos</td>
         <td>Future</td>
       </tr>
       <tr>
