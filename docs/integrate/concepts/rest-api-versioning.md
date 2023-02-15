@@ -1,20 +1,21 @@
 ---
 title: REST API versioning for Azure DevOps
-description: Learn how versioning works for REST APIs for Azure DevOps.
+description: Overview of the importance of versioning in REST APIs and guidance on implementing versioning in your projects in Azure DevOps.
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
+ms.custom: engagement-fy23
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/29/2020
+ms.date: 02/14/2023
 ---
 
 # REST API versioning
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Using versioned REST APIs, you can ensure your projects are scalable and maintainable over time while applications and services continue to work as APIs evolve.
 
 ## Guidelines
 
@@ -44,10 +45,11 @@ i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-
 
 ### Supported versions
 
-| Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 |
-|-----------------------------|-----|-----|-----|-----|-----|-----|
-| Azure DevOps Services       | X   | X   | X   | X   | X   | X  |
-| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X  |
+| Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 | 7.0 |
+|-----------------------------|-----|-----|-----|-----|-----|-----|-----|
+| Azure DevOps Services       | X   | X   | X   | X   | X   | X  | X |
+|Azure DevOps Server 2022     | X   | X   | X   | X   | X   | X  | X |
+| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X  | - |
 | Azure DevOps Server 2019    | X   | X   | X   | X   | X   | -   |
 | Team Foundation Server 2018 | X   | X   | X   | X   | -   | -   |
 | Team Foundation Server 2017 | X   | X   | X   | -   | -   | -   |
@@ -60,4 +62,4 @@ A few undocumented version 1.0 APIs existed in Team Foundation Server 2013, but 
 ## Related articles
 
 * [Get started with REST APIs](../how-to/call-rest-api.md)
-* [Azure DevOps Services REST API reference](/rest/api/azure/devops/?preserve-view=true&view=azure-devops-rest-6.1)
+* [Azure DevOps Services REST API reference](/rest/api/azure/devops/)

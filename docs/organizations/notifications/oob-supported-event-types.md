@@ -29,6 +29,3 @@ Learn the supported event types for notification subscriptions in Azure DevOps.
 |Release|Release approval pending|Approval Type<br>Assigned To<br>Environment Name<br>Release Definition Name|Assigned to<br>Environment owner|
 |Release|Deployment completed|Deployment request reason<br>Deployment requested for<br>Deployment Status<br>Environment Name<br>Environment Owner<br>Last Deployment Status<br>Release Definition Name<br>Release request reason<br>Release requested by|Deployment requested for<br>Environment owner<br>Release requested by<br>Approved by|
 |Release|Deployment pending|Environment Name<br>Environment Owner<br>Release Definition Name|Manual intervention recipient<br>Environment owner|  
-
-For more information about events and event types, see [Events, subscriptions, and notifications](concepts-events-and-notifications.md).
-

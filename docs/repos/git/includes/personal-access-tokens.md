@@ -288,7 +288,7 @@ When your code is working, it's a good time to switch from basic auth to [OAuth]
 For more information and examples of how to use PATs, see the following articles:
 
 - [Git credential managers](../set-up-credential-managers.md)
-- [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request)
+- [REST APIs](/rest/api/azure/devops)
 - [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os)
 - [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
 - [Get started with Azure DevOps CLI](../../../cli/index.md).
