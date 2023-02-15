@@ -12,3 +12,8 @@ The ability to have the pull request widget include multiple repos has been a [l
 
 > ![Dashboard Preview](../../media/217-reporting-01.png)
 
+This new widget will allow you see the pull requests from up to 10 different repositories in a single list.
+
+> ![Dashboard Preview](../../media/217-reporting-02.png)
+
+If you would like early access to this widget, please [email us directly](mailto:dahellem@microsoft.com) with your organization name.
