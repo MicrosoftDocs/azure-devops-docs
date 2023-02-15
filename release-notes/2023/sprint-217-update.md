@@ -1,13 +1,12 @@
 ---
-title: Improved pipeline security and administrator control
+title: Improved reporting and pipeline stage name filter
 author: ckanyika
 ms.author: ckanyika
-ms.date: TBD
-description: TBD
+ms.date: 2/15/2023
+description: With this update, we announce the multiple repository selection pull request widget is now available in private preview.
 ---
-# TBD
-
-With this update, we improved pipelines security resources critical to building and deploying your applications. In response to your feedback, we've also made the Copy Dashboard feature easily accessible. 
+# Improved reporting and pipeline stage name filter
+With this update, we announce the multiple repository selection pull request widget is now available in private preview. In addition, we have made improvements to interactive boards reports and your ability in pipelines to find the stages you're looking for in the stages side panel
 
 Check out the release notes for details.
 
