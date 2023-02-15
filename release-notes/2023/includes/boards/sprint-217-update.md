@@ -13,4 +13,4 @@ These interactive reports, located in the Boards hub, have been accessible as a 
 To view these charts, click the Analytics tab location on the Kanban Board, Backlog, and Sprints pages.
 
 
-> ![Dashboard Preview](../../media/217-boards-01.png)
+> ![Interactive Reports](../../media/217-boards-01.png)
