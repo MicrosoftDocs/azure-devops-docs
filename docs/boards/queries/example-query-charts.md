@@ -46,18 +46,18 @@ Not all teams have the same goals or tracking needs. However, teams that adopt A
 ## Tips for creating query charts 
 
 For details on creating query charts, see [Track progress with status and trend query-based charts](../../report/dashboards/charts.md). Make sure your queries meet the following guidelines. 
-1. Only choose **Flat list of work items** for the query type. Only flat-list queries support query charts. 
-1. Always save a query after modifying the clauses or column options before switching to the **Charts** page. 
-1. Use the **In** and **Not In** operators to specify more than one work item type, workflow state, or other groupings of interest
-1. When creating a trend chart, make sure that your query returns no more than 1000 work items. You'll receive a widget error if that number is exceeded. 
-1. Add the fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
+- Only choose **Flat list of work items** for the query type. Only flat-list queries support query charts. 
+- Always save a query after modifying the clauses or column options before switching to the **Charts** page. 
+- Use the **In** and **Not In** operators to specify more than one work item type, workflow state, or other groupings of interest
+- When creating a trend chart, make sure that your query returns no more than 1000 work items. You'll receive a widget error if that number is exceeded. 
+- Add the fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
 	- To group by status, include the **State** field 
 	- To group by work assignments, include the **Assigned To** field
 	- To group by sprints or iterations, include the **Iteration Path**    
 	- To group by team, include the **Node Name** field that displays the leaf node of the **Area Pat**h 
 	- To group by a custom field, include it.  
-1. To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](query-numeric.md).  
-1. You can't group charts by the following field data types:
+- To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](query-numeric.md).  
+- You can't group charts by the following field data types:
 	-  Work item **ID** or **Parent** fields
 	-  Date-time fields, such as **Created Date**, **Changed Date** 
 	-  Plain text fields, such as **Title** 
@@ -67,9 +67,9 @@ For details on creating query charts, see [Track progress with status and trend 
 	> [!NOTE]   
 	> While you can't group a query-based chart by tags, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](../../report/dashboards/configure-chart-work-items-widget.md).  
 	::: moniker-end
-1. If you plan to add a query chart to a dashboard, first create the dashboard. Then, you can add it to the dashboard from the **Queries>Charts** page.
-1. If you add a query and then want to add it to a dashboard from the dashboard, you must first refresh your browser for the dashboard to register the newly added query. 
-1. To optimize performance of complex queries, see [Best integration practices, Optimize queries](../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
+- If you plan to add a query chart to a dashboard, first create the dashboard. Then, you can add it to the dashboard from the **Queries>Charts** page.
+- If you add a query and then want to add it to a dashboard from the dashboard, you must first refresh your browser for the dashboard to register the newly added query. 
+- To optimize performance of complex queries, see [Best integration practices, Optimize queries](../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ## Maintain backlog hygiene 
 
@@ -212,7 +212,7 @@ The following table provides some examples of trend charts you can create.
    :::column-end:::
    :::column span="3":::
       :::image type="content" source="media/example-queries/query-active-bugs.png " alt-text="Screenshot of Query Editor, Active bugs example.":::  
-      :::image type="content" source="media/example-queries/chart-bug-trend.png " alt-text="Screenshot of Query chart, bug trend stacked area chart by state\.":::
+      :::image type="content" source="media/example-queries/chart-bug-trend.png " alt-text="Screenshot of Query chart, bug trend stacked area chart by state.":::
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -243,38 +243,3 @@ In addition to the query charts provided earlier in this article, the following 
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
  
  
-<!---TIPS
-consider the time frame you want to monitor
-snapshot or trends
-what's shipping when?
-Track bug debt, progress
-Active bugs
-Stale bugs
-Hi priority bugs
-Triage bugs
-Active bug trends
-
-
-How to view total work done 
-How to view remaining work - 
-
-Create tasks and estimate work 
-How to view all work items
-How to view work items I'm following 
-
-Query charts and Query widgets for dashboards, customizing widget tile. 
-
-## What status or trends should your team monitor? 
-
-Questions to answer 
-
-- Do you want to view status or a trend over time
-- If trend, what time frame is of interest 
-- What team, product, or organization goals need to be monitored
-- What recurring activities need to be done to maintain backlog hygiene? 
-
-What articles should link to this article?  
-- Does a change in Stack Rank count toward the Changed Date? 
-
- 
---> 
