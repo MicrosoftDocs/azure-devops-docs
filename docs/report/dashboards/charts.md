@@ -266,7 +266,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text=Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.:::  
+:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.":::  
 ::: moniker-end  
 
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
