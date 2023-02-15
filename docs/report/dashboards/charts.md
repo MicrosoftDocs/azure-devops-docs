@@ -254,7 +254,7 @@ The Pivot table displays a table of configurable rows and columns, with columns 
 The following image shows an example of active bugs assigned to developers and their current state.  
 
 > [!div class="mx-imgBorder"]  
-> !["Screenshot of Configure Chart dialog, Pivot table.](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
+> ![Screenshot of Configure Chart dialog, Pivot table.](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
 
 ## Add a Trend chart  
 
@@ -266,7 +266,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text="Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.":::  
+:::image type="content" source="media/charts-active-bugs-area-trend-2-weeks.png" alt-text=Screenshot of Web portal, Queries page, Chart tab, Configure Chart dialog, two week trend chart.:::  
 ::: moniker-end  
 
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
@@ -322,7 +322,7 @@ To add other types of charts, such as test results and build summary charts, see
 
 ## Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
+Query-based charts generate data from the work item tracking data store and therefore display the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
 
 ::: moniker-end
 
