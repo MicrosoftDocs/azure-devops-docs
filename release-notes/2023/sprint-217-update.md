@@ -2,7 +2,7 @@
 title: Improved reporting and pipeline stage name filter
 author: ckanyika
 ms.author: ckanyika
-ms.date: 2/15/2023
+ms.date: 2/17/2023
 description: With this update, we announce the multiple repository selection pull request widget, is now available in private preview.
 ---
 # Improved reporting and pipeline stage name filter
@@ -10,6 +10,9 @@ With this update, we announce the multiple repository selection pull request wid
 
 Check out the release notes for details.
 
+### General
+
+[!INCLUDE [sprint-217-update-links](includes/general/sprint-217-update-links.md)]
 ### Azure Boards
 
 [!INCLUDE [sprint-217-update-links](includes/boards/sprint-217-update-links.md)]
@@ -22,6 +25,9 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-217-update-links](includes/reporting/sprint-217-update-links.md)]
 
+## General
+
+[!INCLUDE [sprint-217-update](includes/general/sprint-217-update.md)]
 ## Azure Boards
 
 [!INCLUDE [sprint-217-update](includes/boards/sprint-217-update.md)]
