@@ -44,7 +44,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 ## Create the scale set
 
-In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's autoscaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
+In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must **disable [autoscaling](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview)** so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
@@ -95,7 +95,7 @@ In the following example, a new resource group and virtual machine scale set are
     ```
 
     > [!NOTE]
-    > Azure Pipelines does not support scale set [overprovisioning](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-design-overview#overprovisioning) and [autoscaling](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal).
+    > Azure Pipelines does not support scale set [overprovisioning](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-design-overview#overprovisioning) and [autoscaling](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal). Make sure both features are disabled for your scale set.
 
     Because Azure Pipelines manages the scale set, the following settings are required or recommended:
 
