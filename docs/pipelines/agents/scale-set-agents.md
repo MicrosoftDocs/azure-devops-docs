@@ -508,7 +508,7 @@ Saved agents are there unless you delete them. If the agent doesn't come online 
 
 Only VMs for which agents fail to start are saved. If a VM has a failed state during creation, it isn't saved. In this case, the message in the Diagnostics tab is "deleting unhealthy machine" instead of "failed to start".
 
-#### You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't reimaging as they should and just pick up new jobs as they're queued
+#### You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't re-imaging as they should and just pick up new jobs as they're queued
 
 The option to tear down the VM after each build will only work for Windows Server and supported Linux images. It isn’t supported for Windows client images.
 
