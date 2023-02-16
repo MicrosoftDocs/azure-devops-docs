@@ -612,7 +612,7 @@ jobs:
 
 To use the output from a different stage, you must use the syntax depending on whether you're at the stage or job level:
 
- - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`
+ - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`. You can use these variables in conditions. 
  - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
 
 ```yaml
@@ -623,11 +623,24 @@ stages:
     steps:
     - task: MyTask@1  # this step generates the output variable
       name: ProduceVar  # because we're going to depend on it, we need to name the step
+
 - stage: Two
-  variables:
-    stageVarFromA: $[dependencies.One.outputs['A.ProduceVar.MyVar']
+  dependsOn:
+  - One
   jobs:
   - job: B
+    variables:
+      # map the output variable from A into this job
+      varFromA: $[ stageDependencies.One.A.outputs['ProduceVar.MyVar'] ]
+    steps:
+    - script: echo $(varFromA) # this step uses the mapped-in variable
+
+- stage: Three
+  dependsOn:
+  - One
+  - Two
+  jobs:
+  - job: C
     variables:
       # map the output variable from A into this job
       varFromA: $[ stageDependencies.One.A.outputs['ProduceVar.MyVar'] ]
