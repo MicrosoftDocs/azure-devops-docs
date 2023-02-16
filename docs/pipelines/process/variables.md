@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 07/29/2022
+ms.date: 02/16/2023
 
 monikerRange: '<= azure-devops'
 ---
@@ -551,6 +551,9 @@ To share variables across multiple pipelines in your project, use the web interf
 ::: moniker range=">=azure-devops-2020"
 Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
 In YAML, you can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
+
+When referencing matrix jobs in downstream tasks, you'll use a different syntax. See [Set a multi-job output variable](#set-a-multi-job-output-variable).  
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
