@@ -94,6 +94,9 @@ In the following example, a new resource group and virtual machine scale set are
     --load-balancer ""
     ```
 
+    > [!NOTE]
+    > Azure Pipelines does not support scale set [overprovisioning](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-design-overview#overprovisioning) and [autoscaling](azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal).
+
     Because Azure Pipelines manages the scale set, the following settings are required or recommended:
 
     * `--disable-overprovision` - required
@@ -138,6 +141,9 @@ In the following example, a new resource group and virtual machine scale set are
     * **Scaling - Manual scale**
 
         :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify manual scale policy." :::
+
+> [!IMPORTANT]
+> Azure Pipelines does not support [instance protection](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection). Make sure you have the *scale-in* and *scale set actions* instance protections disabled.
 
 ## Create the scale set agent pool
 
