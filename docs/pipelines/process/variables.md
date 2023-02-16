@@ -132,7 +132,7 @@ Runtime expression variables are only expanded when they are used for a value, n
 
 Use macro syntax if you are providing input for a task. 
 
-Choose a runtime expression if you are working with [conditions](conditions.md) and [expressions](expressions.md). The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a macro expression. 
+Choose a runtime expression if you are working with [conditions](conditions.md) and [expressions](expressions.md). However, don't use a runtime expression if it will cause a problem for your empty variable to print out with the name of the variable (`$[variables.var]`). For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a macro expression. 
 
 If you are defining a variable in a template, use a template expression.
 
@@ -614,6 +614,8 @@ To use the output from a different stage, you must use the syntax depending on w
 
  - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`. You can use these variables in conditions. 
  - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
+ - 
+Output variables are only available in the next downstream stage. If multiple stages consume the same output variable, use the `dependsOn` condition. 
 
 ```yaml
 stages:
