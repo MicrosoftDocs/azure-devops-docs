@@ -607,6 +607,8 @@
         items:
         - name: "2023"
           items:
+          - name: February 17
+            href: 2023/general/sprint-217-update.md
           - name: January 12
             href: 2023/general/sprint-214-update.md
           expanded: true  
