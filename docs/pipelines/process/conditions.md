@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 11/28/2022
+ms.date: 02/17/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -117,14 +117,14 @@ stages:
     steps:
       - script: echo 1; sleep 30
 - stage: stage2
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
   jobs:
   - job: B
     steps:
       - script: echo 2
 ```
 
-If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
 In this pipeline, `stage1` depends on `stage2`. Job `B` has a `condition` set for it.
 
@@ -138,7 +138,7 @@ stages:
 - stage: stage2
   jobs:
   - job: B
-    condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
     steps:
       - script: echo 2
 ```
@@ -158,7 +158,7 @@ stages:
   - job: B
     steps:
       - script: echo 2
-        condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+        condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
 ```
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a step in job `B` whose condition evaluates to `true`. The reason is because `stage2` is skipped in response to `stage1` being canceled.
@@ -172,14 +172,14 @@ jobs:
   - script: sleep 30
 - job: B
   dependsOn: A 
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
   steps:
     - script: echo step 2.1
 ```
 
-If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`. 
+If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`. 
 
-If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))`.
+If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))`.
 
 In the following pipeline, `B` depends on `A`.
 ```yml
@@ -191,7 +191,7 @@ jobs:
   dependsOn: A 
   steps:
     - script: echo step 2.1
-      condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+      condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
       
 ```
 
@@ -206,10 +206,10 @@ steps:
   - script: echo step 2.1
   - script: echo step 2.2; sleep 30
   - script: echo step 2.3
-    condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
 ```
 
-If you queue a build on the `main` branch, and you cancel the build when steps 2.1 or 2.2 are executing, step 2.3 will still execute, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+If you queue a build on the `main` branch, and you cancel the build when steps 2.1 or 2.2 are executing, step 2.3 will still execute, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
 * * *
 
