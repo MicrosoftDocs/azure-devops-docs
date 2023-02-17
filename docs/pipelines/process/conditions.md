@@ -299,7 +299,8 @@ steps:
   condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
 ```
 
- However, when you pass a parameter to a template, the parameter won't have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAML files, the value from the template will get used in your condition. 
+
+When you pass a parameter to a template, you need to set the parameter's value in your template or use [templateContext to pass properties to templates](templates.md#use-templatecontext-to-pass-properties-to-templates). 
 
 ```yaml
 # parameters.yml
