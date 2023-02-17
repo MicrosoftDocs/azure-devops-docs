@@ -38,6 +38,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2023/sprint-217-update.md" data-raw-source="[17 February 2023](2023/sprint-217-update.md)"> 17 February 2023</a></td>
+    <td>License source column in user list export</td><td>General</td><td>Future</td></tr>
+    <td>Interactive boards reports</td><td>Boards</td><td>Future</td></tr>
+    <td>Search for filter stages in side panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline agent v3 (.NET 6) rolling out</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pull request widget for multiple repos (private preview)</td><td>Reporting</td><td>Future</td></tr>
+<tr>
     <td rowspan="5"><a href="2023/sprint-216-update.md" data-raw-source="[7 February 2023](2023/sprint-216-update.md)"> 7 February 2023</a></td>
     <td>New save comments permission</td><td>Boards</td><td>Future</td></tr>
     <td>Red Hat 6 will no longer receive Pipeline agent updates</td><td>Pipelines</td><td>Future</td></tr>
