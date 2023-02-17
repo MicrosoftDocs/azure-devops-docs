@@ -32,7 +32,7 @@ The following chart types are supported:
 - Pivot table
 - Histogram 
 
-> If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/azure-devops-extension-samples).
+If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/azure-devops-extension-sample).
 Once downloaded, go to the `charts` folder, and then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.
 The extension contains sample chart widgets.  
 
@@ -63,7 +63,7 @@ Ensure that the `VSS.SDK.js` file is inside the `sdk/scripts` folder so that the
 
 ### Images
 Add images to an `img` folder in your project directory so that the path is `home/img/logo.png` and `home/img/CatalogIcon.png`. 
-See our newest documentation, the [Formula Design System](https://developer.microsoft.com/en-us/azure-devops/).
+See our newest documentation, the [Formula Design System](https://developer.microsoft.com/en-us/azure-devops/) and [Azure DevOps extension sample SDK](https://github.com/microsoft/azure-devops-extension-sample/tree/master/static).
 
 ### Extension manifest file
 In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md). Create a `vss-extension.json` file with the following contents: 
