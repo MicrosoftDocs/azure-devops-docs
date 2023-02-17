@@ -1,7 +1,7 @@
 ---
 title: Conditions
 ms.custom: seodec18
-description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
+description: Learn about how you can write custom conditions in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.date: 02/17/2023
@@ -145,7 +145,7 @@ stages:
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a job `A` whose condition evaluates to `true`. The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
-Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that `script: echo 2` has a `condition` set for it.
+Say you have the following YAML pipeline. Notice that, by default, `stage2` depends on `stage1` and that `script: echo 2` has a `condition` set for it.
 ```yaml
 stages:
 - stage: stage1
@@ -286,7 +286,7 @@ jobs:
 
 ### Use a template parameter as part of a condition
 
-When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true.
+When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true. For more template parameter examples, see [Template types & usage](templates.md). 
 
 ```yaml
 parameters:
