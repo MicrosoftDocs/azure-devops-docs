@@ -11,6 +11,6 @@ We've made it easier to find the stages you're looking for in the stages side pa
 > [!div class="mx-imgBorder"]
 > ![Update AZ Pipelines](../../media/217-pipelines-01.png)
 
-### Pipeline Agent v3 (.NET 6) rolling out
+### Pipeline agent v3 (.NET 6) rolling out
 
-In the coming weeks, we will roll out the .NET 6 based Pipeline Agent v3. This will impact both Hosted and Self-hosted agents. Any agents running on an operating system not compatible with .NET 6 will not get upgraded, and will continue to use agent v2. This does not impact builds targeting .NET. For more information and frequently asked questions, see the [agent v3 doc page](https://aka.ms/azdo-pipeline-agent-version).
+In the coming weeks, we will roll out the .NET 6 based Pipeline Agent v3. This will impact both hosted and self-hosted agents. Any agents running on an operating system not compatible with .NET 6 will not get upgraded, and will continue to use agent v2. This does not impact builds targeting .NET. For more information and frequently asked questions, see the [agent v3 doc page](https://aka.ms/azdo-pipeline-agent-version).
