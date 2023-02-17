@@ -1,12 +1,14 @@
 ---
-title: Improved reporting and pipeline stage name filter
+title: Pull request widget for multiple repos is now in private preview
 author: ckanyika
 ms.author: ckanyika
 ms.date: 2/17/2023
-description: With this update, we announce the multiple repository selection pull request widget, is now available in private preview.
+description: With this update, we are excited to announce that you can select multiple repositories in the pull request widget.
 ---
-# Improved reporting and pipeline stage name filter
-With this update, we announce the multiple repository selection pull request widget, now available in private preview. In addition, we have made improvements to interactive boards reports and have made it easier to find  stages using the stages side panel.
+# Pull request widget for multiple repos is now in private preview
+The pull request widget lets you display active pull requests (PRs) requested by your team. Previously, the pull request widget let you select one repository to show in your dashboard. With this update, we are excited to announce that you can select multiple repositories in the pull request widget. 
+
+In Pipelines, we've made it easier to find stages using the stages side panel. Now you can filter for stages based on their status.
 
 Check out the release notes for details.
 
