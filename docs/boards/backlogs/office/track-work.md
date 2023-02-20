@@ -232,9 +232,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
    >    
    > 	
    >    
-   > ![QUery Results, context menu, Open in Excel Open Boards
-   >    
-   > Queries, vertical nav](media/connect/open-in-excel-from-portal.png)
+   > ![QUery Results, context menu, Open in Excel Open Boards Queries, vertical nav](media/connect/open-in-excel-from-portal.png)
 
 ### [Connect from client to Azure Boards](#tab/open-excel-cloud)
 
