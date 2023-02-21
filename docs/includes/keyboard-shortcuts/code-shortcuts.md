@@ -3,97 +3,95 @@ ms.topic: include
 ms.date: 04/04/2022
 ---
 
-
 <a id="code-shortcuts"></a>
 
 ::: moniker range=">= azure-devops-2019"  
-You can use the following keyboard shortcuts when working from a page under **Repos**. To view the valid shortcuts, enter **?** to access  Global and service-specific shortcuts.  
+You can use the following keyboard shortcuts when you work in a page under **Repos**. To view the valid shortcuts, select **?** to access  global and service-specific shortcuts.  
 ::: moniker-end
 
 ::: moniker range="tfs-2018"  
-You can use the following keyboard shortcuts when working from a page under **Code**. To view the valid shortcuts, enter **?** to access Global and service-specific shortcuts.  
+You can use the following keyboard shortcuts when you work in a page under **Code**. To view the valid shortcuts, select **?** to access global and service-specific shortcuts.  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
-### Git repositories 
+### Git repositories
 
-<table>
-<tbody valign="top">
-<tr>
-<td><img src="../../media/keyboard-shortcuts/code-shortcuts-cloud.png" alt="Repos - Git shortcuts"/></td>
-<td>
-<strong>Repos-Git</strong><br/><br/> 
-<strong>z</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
-<strong>e</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open explorer <br/>
-<strong>h</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open history <br/>
-<strong>b</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open branches <br/>
-<strong>q</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open pull requests <br/>
-<strong>c,p</strong>&nbsp;&nbsp;&nbsp;Create pull request <br/>
-<strong>r</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Select repository <br/>
-<br/><br/>
-<strong>Files</strong><br/><br/>
-<strong>1</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
-<strong>2</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
-<strong>t</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-<strong>w</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
-</td>
-</tr>
-</tbody>
-</table>
+<img src="../../media/keyboard-shortcuts/code-shortcuts-cloud.png" alt="Repos - Git shortcuts"/>
 
-### TFVC repositories 
+#### Repos Git shortcuts
 
-:::row:::
-   :::column span="2":::
-      ![Repos-TFVC shortcuts](../../media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
-   :::column-end:::
-   :::column span="2":::
-      <br/><br/> 
-      **Repos-TFVC**<br/> 
-      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
-      <br/><br/> 
-      **Code**<br/> 
-      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files <br/>
-      &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets <br/>
-      &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelveshets<br/>
-      <br/><br/>
-      **Files** <br/>
-      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
-      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
-      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-   :::column-end:::
-:::row-end:::
+|Shortcut|Action|
+|---|---|
+|z|Toggle full-screen mode|
+|e|Open explorer|
+|h|Open history|
+|b|Open branches|
+|q|Open pull requests|
+|c, p|Create pull request|
+|r|Select repository|
 
+#### Repos files shortcuts
+
+|Shortcut|Action|
+|---|---|
+|1|Open contents|
+|2|Open history|
+|t|Move focus to directory path|
+|w|Select branch|
+
+### TFVC repositories
+
+![Repos-TFVC shortcuts](../../media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
+
+#### Repos TFVC shortcuts
+
+|Shortcut|Action|
+|---|---|
+|r|Select repository|
+
+#### Repos TFVC code shortcuts
+
+|Shortcut|Action|
+|---|---|
+|e|Open Files|
+|c|Open changesets|
+|v|Open shelvesets|
+
+#### Repos TFVC files shortcuts
+
+|Shortcut|Action|
+|---|---|
+|1|Open contents|
+|2|Open history|
+|t|Move focus to directory path|
 
 ::: moniker-end
-
 
 ::: moniker range="<= azure-devops-2019"
 
-:::row:::
-   :::column span="2":::
-      ![Repos or Code shortcuts](../../media/keyboard-shortcuts/code-shortcuts.png)  
-   :::column-end:::
-   :::column span="2":::
-      **Code**<br/> 
-      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
-      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open explorer <br/>
-      &nbsp;&nbsp;**h**&nbsp;&nbsp;&nbsp;Open history <br/>
-      &nbsp;&nbsp;**b**&nbsp;&nbsp;&nbsp;Open branches (Git)<br/>
-      &nbsp;&nbsp;**q**&nbsp;&nbsp;&nbsp;Open pull requests (Git)<br/>
-      **c,p**&nbsp;&nbsp;&nbsp;Create pull request (Git)<br/>
-      <br/><br/>
-      **File Explorer** <br/>
-      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
-      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
-      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-      &nbsp;&nbsp;**w**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch (Git)<br/>
-      &nbsp;&nbsp;**y**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch to commit (Git)<br/>
-      **c,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create branch (Git)<br/>
-   :::column-end:::
-:::row-end:::
- 
+![Repos or Code shortcuts](../../media/keyboard-shortcuts/code-shortcuts.png)  
+
+#### Repos or Code shortcuts
+
+|Shortcut|Action|
+|---|---|
+|r|Select repository|
+|e|Open explorer|
+|h|Open history|
+|b|Open branches (Git)|
+|q|Open pull requests (Git)|
+|c, p|Create pull request (Git)|
+  
+#### File Explorer shortcuts
+
+|Shortcut|Action|
+|---|---|
+|1|Open contents|
+|2|Open history|
+|t|Move focus to directory path|
+|w|Select branch (Git)|
+|y|Switch to commit (Git)|
+|c, b|Create branch (Git)|
+
 ::: moniker-end
-
-
