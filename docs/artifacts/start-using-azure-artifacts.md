@@ -20,6 +20,7 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2-GiB storage.
+- An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
 
 ::: moniker range="tfs-2018"
 
@@ -65,6 +66,8 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 # [Universal Packages](#tab/universalpackages)
 
 - [Universal Packages quickstart](./quickstarts/universal-packages.md)
+
+---
 
 ## Feature availability
 
