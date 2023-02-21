@@ -5,8 +5,8 @@ description: Add up to two additional work item types and portfolio backlogs in 
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops' 
 ms.date: 01/17/2023 

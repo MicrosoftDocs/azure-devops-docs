@@ -4,8 +4,8 @@ titleSuffix: TFS
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
 ms.service: azure-devops-boards
 ms.custom: engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '< azure-devops'
 ms.date: 01/17/2023 

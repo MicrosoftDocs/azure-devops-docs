@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Filter your view to focus on items of interest 
 ms.custom: "navigation, cross-service"
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

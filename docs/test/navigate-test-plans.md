@@ -3,8 +3,8 @@ title: Navigate Test Plans
 description: Learn how to navigate Test Plans. 
 ms.service: azure-devops-test-plans
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>=azure-devops-2020'
 ms.date: 09/14/2021
 ---

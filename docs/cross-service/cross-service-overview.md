@@ -5,8 +5,8 @@ description: Learn about how Azure DevOps supports collaboration across all its 
 ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 09/28/2022
 ---
