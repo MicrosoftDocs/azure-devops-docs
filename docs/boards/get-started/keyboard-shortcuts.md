@@ -15,14 +15,15 @@ ms.date: 04/01/2022
 
 # Keyboard shortcuts for Azure Boards and Team Explorer
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]    
-You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. Along with these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-For specific guidance on navigating within the web portal, see [Web portal navigation](../../project/navigation/index.md).
+You can use the keyboard shortcuts listed in this article when you work in Azure DevOps or Team Explorer. You also can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) on the **Tools** > **Options** > **Environment** > **Keyboard** page.
+
+For specific guidance on moving around in the web portal for Azure DevOps, see [Web portal navigation](../../project/navigation/index.md).
 
 ## Web portal
 
-You can use these keyboard shortcuts when working in the web portal for Azure DevOps.  
+You can use these keyboard shortcuts when you work in the web portal for Azure DevOps.  
 
 **Navigate within lists**
 
@@ -39,18 +40,17 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 |**Esc**|Dismiss context menu|
 |**Enter**|Choose selected menu item|
 
-## Web portal, global shortcuts
+## Web portal global shortcuts
 
-Enter **?** to access the Global and page-specific shortcuts.   
- 
+Enter **?** to access global and page-specific shortcuts.
+
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
-Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
-
+Page-specific shortcuts work only when you're on a specific page. For example, select **g**, **c** to open the **Code** page, and then select **c**,  **p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
 
 ::: moniker range=">= azure-devops-2019"
 
-## Work items 
+## Work items
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
@@ -64,15 +64,15 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-## Boards 
+## Boards
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
 
-## Backlogs 
+## Backlogs
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
-## Queries 
+## Queries
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -80,14 +80,13 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Plans
 
-You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
- 
+You can use the following keyboard shortcuts when you [interact with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when you're viewing a plan from the **Boards** > **Plans** page or the **Work** > **Plans** page.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
 ## Team Explorer navigational shortcuts
 
-Use these shortcuts when working in Team Explorer. 
+Use these shortcuts when you're working in Team Explorer.
 
 :::row:::
    :::column span="1":::
@@ -138,23 +137,22 @@ Use these shortcuts when working in Team Explorer.
    :::column-end:::
 :::row-end:::
 
+You can use shortcuts for query results whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)]
 
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)] 
-
-
-
-## Related articles 
+## Related articles
 
 - [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
 - [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
-- [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Web portal navigation](../../project/navigation/index.md) 
+- [Accessibility features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
+- [Web portal navigation](../../project/navigation/index.md)
 
 ### Install Team Explorer  
 
-Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
+Team Explorer is a plug-in for Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017, you gain access to Team Explorer.  
+
+## Next steps
 
 Learn more about [working in Team Explorer](../../user-guide/work-team-explorer.md).

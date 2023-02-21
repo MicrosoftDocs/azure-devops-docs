@@ -2,24 +2,23 @@
 ms.topic: include
 ---
 
-
 <a id="work-items-page-shortcuts"></a>
 
 ::: moniker range=">= azure-devops-2019"
 
-You can use the following keyboard shortcuts when working from the **Boards>Work Items** or **Work>Work Items** page. 
+You can use the following keyboard shortcuts when you work on the **Boards** > **Work Items** page or the **Work** > **Work Items** page.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]  
-> The following shortcuts are available from the web portal for Azure DevOps Server 2019 and later versions. 
+> The following shortcuts are available in the web portal for Azure DevOps Server 2019 and later versions.
 
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2020"
+
 
 
 :::row:::
@@ -40,13 +39,10 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete
    :::column-end:::
 :::row-end:::
- 
+
 ::: moniker-end
 
-
-
 ::: moniker range="azure-devops-2019"
-
 
 :::row:::
    :::column span="2":::
@@ -66,7 +62,5 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete 
    :::column-end:::
 :::row-end:::
- 
+
 ::: moniker-end
-
-
