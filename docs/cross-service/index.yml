@@ -8,8 +8,8 @@ metadata:
   description: Work across Azure DevOps Services and projects, integrate with Azure, GitHub, and other resources, and create and manage public projects.
   ms.subservice: azure-devops-cross-service
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
