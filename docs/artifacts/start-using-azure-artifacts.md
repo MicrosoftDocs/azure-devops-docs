@@ -46,11 +46,25 @@ Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, yo
 
 With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 
-- [NuGet](./get-started-nuget.md)
-- [npm](./get-started-npm.md)
-- [Maven](./get-started-maven.md)
-- [Python](./quickstarts/python-packages.md)
-- [Universal Packages](./quickstarts/universal-packages.md)
+# [NuGet](#tab/nuget)
+
+- [Get started with NuGet packages and Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npm)
+
+- [Get started with npm packages and Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- [Get started with Maven packages and Azure Artifacts](./get-started-maven.md)
+
+# [Python](#tab/python)
+
+- [Get started with Python packages and Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Universal Packages](#tab/universalpackages)
+
+- [Universal Packages quickstart](./quickstarts/universal-packages.md)
 
 ## Feature availability
 
