@@ -144,7 +144,7 @@ You can use these shortcuts when you work in Team Explorer.
 |Alt+Up arrow (|Move focus to next section|
 |Alt+Down arrow|Move focus to previous section|
 
-### Team Explorer context menu
+### Team Explorer context menu shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -156,7 +156,7 @@ You can use these shortcuts when you work in Team Explorer.
 |Down arrow|Move focus down|
 |Enter|Choose context menu|  
 
-### Team Explorer work item commands
+### Team Explorer work item shortcuts
 
 |Shortcut|Action|
 |---|---|
