@@ -25,4 +25,6 @@ To toggle between card titles only and card details, select **t**.
 |Shift+Page down|Focus on next team|
 |Ctrl+Shift+f|Filter results|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/delivery-plans-cloud.png" alt-text="Screenshot that shows Delivery plans page keyboard shortcuts.":::

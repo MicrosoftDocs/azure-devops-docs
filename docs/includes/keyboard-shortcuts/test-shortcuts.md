@@ -19,6 +19,8 @@ You can use the following keyboard shortcuts when you work in **Test Plans** or 
 |h|Open machines|
 |l|Open load test - TBD|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/test-shortcuts.png" alt-text="Screenshot that shows Test page keyboard shortcuts.":::
 
 ### Test Plans shortcuts
@@ -36,6 +38,8 @@ You can use the following keyboard shortcuts when you work in **Test Plans** or 
 |Ctrl+Shift+f|Filter results|
 |v, g|View grid|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/test-plan-shortcuts.png" alt-text="Screenshot that shows Test Plans page keyboard shortcuts.":::
 
 ### Test parameters shortcuts
@@ -48,6 +52,8 @@ You can use the following keyboard shortcuts when you work in **Test Plans** or 
 |c, t|Add test case|
 |v, t|Toggle test cases pane|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/test-parameters-shortcuts.png" alt-text="Screenshot that shows Test parameters page keyboard shortcuts.":::
 
 ### Test runs shortcuts
@@ -57,4 +63,6 @@ You can use the following keyboard shortcuts when you work in **Test Plans** or 
 |1|Test runs|
 |2|Filter|
 
-:::image type="content" source="../../media/keyboard-shortcuts/test-run-shortcuts.png" alt-text="Screenshot that shows Test run page keyboard shortcuts.":::
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
+:::image type="content" source="../../media/keyboard-shortcuts/test-run-shortcuts.png" alt-text="Screenshot that shows Test runs page keyboard shortcuts.":::

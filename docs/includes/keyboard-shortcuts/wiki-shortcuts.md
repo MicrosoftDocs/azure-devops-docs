@@ -29,6 +29,8 @@ You can use the following keyboard shortcuts when you [manage or edit Wiki pages
 |Ctrl+P|Print page|
 |Ctrl+Shift+b|Create work item from selected text|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/wiki-manage-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 manage Wiki page keyboard shortcuts.":::
 
 ### Edit Wiki shortcuts
@@ -44,6 +46,8 @@ You can use the following keyboard shortcuts when you [manage or edit Wiki pages
 |Ctrl+s|Save changes|
 |Ctrl+Enter|Save and close|
 |Esc|Close|
+
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/wiki-edit-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 edit Wiki page keyboard shortcuts.":::
 
@@ -63,6 +67,8 @@ You can use the following keyboard shortcuts when you [manage or edit Wiki pages
 |Ctrl+P|Print page|
 |Ctrl+Shift+f|Filter page|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/wiki-manage.png" alt-text="Screenshot that shows Azure DevOps 2019 manage Wiki page keyboard shortcuts.":::
 
 ### Edit Wiki shortcuts
@@ -78,6 +84,8 @@ You can use the following keyboard shortcuts when you [manage or edit Wiki pages
 |Ctrl+s|Save changes|
 |Ctrl+Enter|Save and close|
 |Esc|Close|
+
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/wiki-edit.png" alt-text="Screenshot that shows Azure DevOps 2019 edit Wiki page keyboard shortcuts.":::
 
