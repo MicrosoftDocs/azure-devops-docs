@@ -6,16 +6,18 @@ ms.date: 04/04/2022
 <a id="code-shortcuts"></a>
 
 ::: moniker range=">= azure-devops-2019"  
-You can use the following keyboard shortcuts when you work in a page under **Repos**. To view the valid shortcuts, select **?** to access  global and service-specific shortcuts.  
+You can use the following keyboard shortcuts when you work on a page under **Repos**. To view the valid shortcuts, select **?** to access  global and service-specific shortcuts.  
 ::: moniker-end
 
 ::: moniker range="tfs-2018"  
-You can use the following keyboard shortcuts when you work in a page under **Code**. To view the valid shortcuts, select **?** to access global and service-specific shortcuts.  
+You can use the following keyboard shortcuts when you work on a page under **Code**. To view the valid shortcuts, select **?** to access global and service-specific shortcuts.  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
 ### Git repositories
+
+Use these shortcuts when you work in Git repositories and files.
 
 #### Repos Git shortcuts
 
@@ -43,6 +45,8 @@ The following screenshot shows the lists of keyboard shortcuts as they appear in
 :::image type="content" source="../../media/keyboard-shortcuts/code-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Repos Git keyboard shortcuts.":::
 
 ### TFVC repositories
+
+Use these shortcuts when you work in TFVC repositories.
 
 #### Repos TFVC shortcuts
 
@@ -85,7 +89,7 @@ The following screenshot shows the lists of keyboard shortcuts as they appear in
 |q|Open pull requests (Git)|
 |c, p|Create pull request (Git)|
   
-#### File Explorer shortcuts
+#### Files shortcuts
 
 |Shortcut|Action|
 |---|---|
