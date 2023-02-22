@@ -23,6 +23,8 @@ You can use the following keyboard shortcuts in the web portal:
 |f, n|Focus next section|
 |f, p|Focus previous section|
 
+:::image type="content" source="../../media/keyboard-shortcuts/global-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 global keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -42,5 +44,7 @@ You can use the following keyboard shortcuts in the web portal:
 |f, n|Focus next section|
 |f, p|Focus previous section|
 |/|Move focus to Search|
+
+:::image type="content" source="../../media/keyboard-shortcuts/global-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 global keyboard shortcuts.":::
 
 ::: moniker-end

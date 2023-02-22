@@ -9,8 +9,6 @@ You can use the following keyboard shortcuts when you [work with queries](../../
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="../../media/keyboard-shortcuts/queries-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Queries page keyboard shortcuts.":::
-
 |Shortcut|Action|
 |---|---|
 |c, q|New query|
@@ -20,11 +18,11 @@ You can use the following keyboard shortcuts when you [work with queries](../../
 |k *or* Alt+p|Previous item|
 |Ctrl+Shift+f|Filter results|
 
+:::image type="content" source="../../media/keyboard-shortcuts/queries-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Queries page keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-
-:::image type="content" source="../../media/keyboard-shortcuts/queries-new-shortcut.png" alt-text="Screenshot that shows Azure DevOps 2019 Queries page keyboard shortcuts.":::
 
 |Shortcut|Action|
 |---|---|
@@ -34,5 +32,7 @@ You can use the following keyboard shortcuts when you [work with queries](../../
 |j *or* Alt+n|Select next item|
 |k *or* Alt+p|Select previous item|
 |Ctrl+Shift+f|Filter results|
+
+:::image type="content" source="../../media/keyboard-shortcuts/queries-new-shortcut.png" alt-text="Screenshot that shows Azure DevOps 2019 Queries page keyboard shortcuts.":::
 
 ::: moniker-end

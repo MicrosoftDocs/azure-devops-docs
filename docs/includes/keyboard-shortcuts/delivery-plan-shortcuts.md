@@ -8,8 +8,6 @@ To toggle between card titles only and card details, select **t**.
 > [!NOTE]
 > Select **?** to access global and service-specific shortcuts.
 
-:::image type="content" source="../../media/keyboard-shortcuts/delivery-plans-cloud.png" alt-text="Screenshot that shows Delivery plans page keyboard shortcuts.":::
-
 |Shortcut|Action|
 |---|---|
 |Home|Select first item|
@@ -26,3 +24,5 @@ To toggle between card titles only and card details, select **t**.
 |Shift+Page up|Focus on previous team|
 |Shift+Page down|Focus on next team|
 |Ctrl+Shift+f|Filter results|
+
+:::image type="content" source="../../media/keyboard-shortcuts/delivery-plans-cloud.png" alt-text="Screenshot that shows Delivery plans page keyboard shortcuts.":::
