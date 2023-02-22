@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: How to guide for importing a large collection to the cloud
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/07/2021
 ---

@@ -77,16 +77,11 @@ The following tasks aren't supported at this time:
 
 ## Connect Azure Boards to GitHub repositories 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2022"
 You can start from Azure Boards or from GitHub to make the connection. You can connect up to 250 GitHub repositories to an Azure Boards project. 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end 
-
-::: moniker range="< azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 You can start from Azure Boards or from GitHub to make the connection. You can connect up to 100 GitHub repositories to an Azure Boards project. 
 ::: moniker-end 
 
