@@ -456,6 +456,7 @@ To delete the saved agent when you're done with your investigation, navigate to 
   * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
   * [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
   * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
+  * [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
