@@ -31,6 +31,8 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 |z|Toggle full screen|
 |Ctrl+Enter|Save and close|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/work-item-form-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 work item form keyboard shortcuts.":::
 
 ::: moniker-end
@@ -46,6 +48,8 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 |Ctrl+Shift+,|Move to left tab (page)|
 |Ctrl+Shift+.|Move to right tab (page)|
 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
 :::image type="content" source="../../media/keyboard-shortcuts/work-item-form.png" alt-text="Screenshot that shows Azure DevOps 2019 work item form keyboard shortcuts.":::
 
 ::: moniker-end
@@ -54,13 +58,13 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 
 ::: moniker range=">= azure-devops-2020"
 
-The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted.
+The rich text editor tool bar appears below the text entry area when you select each text box that can be formatted.
 
 :::image type="content" source="../../boards/queries/media/share-plans/new-rich-text-editor-toolbar.png" alt-text="Screenshot that shows the Azure DevOps 2020 rich text editor toolbar.":::
 
 You can use the following keyboard shortcuts when you work in a web browser on one of the following operating systems. (**Command**=:::image type="icon" source="../../media/icons/mac-command-symbol.png" border="false":::)
 
-### Windows OS shortcuts
+### Windows shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -98,7 +102,7 @@ You can use the following keyboard shortcuts when you work in a web browser on o
 
 ::: moniker range="<= azure-devops-2019"  
 
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box.
+The rich text formatting toolbar appears above each text box that can be formatted. It becomes active only when you select the text box.
 
 :::image type="content" source="../../boards/queries/media/rich-text-ui-team-services.png" alt-text="Screenshot that shows the Azure DevOps 2019 rich text editor toolbar.":::
 

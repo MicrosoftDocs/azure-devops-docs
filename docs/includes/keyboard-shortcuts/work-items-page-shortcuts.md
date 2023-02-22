@@ -6,7 +6,7 @@ ms.topic: include
 
 ::: moniker range=">= azure-devops-2019"
 
-You can use the following keyboard shortcuts when you work on the **Boards** > **Work Items** page or the **Work** > **Work Items** page.
+You can use these keyboard shortcuts when you work on the **Boards** > **Work items** page or the **Work** > **Work items** page.
 
 ::: moniker-end
 
@@ -31,7 +31,7 @@ You can use the following keyboard shortcuts when you work on the **Boards** > *
 |Ctrl+c|Copy to clipboard|
 |Delete|Delete|
 
-The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+The following screenshot shows the list of keyboard shortcuts as they appear in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/work-items-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 work items page keyboard shortcuts.":::
 
@@ -51,7 +51,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 |Ctrl+c|Copy to clipboard|
 |Delete|Delete|
 
-The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+The following screenshot shows the list of keyboard shortcuts as they appear in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/work-items-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 work items page keyboard shortcuts.":::
 
