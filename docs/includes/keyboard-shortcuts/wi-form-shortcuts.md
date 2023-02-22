@@ -20,8 +20,6 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="../../media/keyboard-shortcuts/work-item-form-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 work item form keyboard shortcuts.":::
-
 |Shortcut|Action|
 |---|---|
 |Alt+i|Assign work item to me|
@@ -33,11 +31,11 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 |z|Toggle full screen|
 |Ctrl+Enter|Save and close|
 
+:::image type="content" source="../../media/keyboard-shortcuts/work-item-form-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 work item form keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-
-:::image type="content" source="../../media/keyboard-shortcuts/work-item-form.png" alt-text="Screenshot that shows Azure DevOps 2019 work item form keyboard shortcuts.":::
 
 |Shortcut|Action|
 |---|---|
@@ -47,6 +45,8 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 |Shift+Alt+c|Copy work item title|
 |Ctrl+Shift+,|Move to left tab (page)|
 |Ctrl+Shift+.|Move to right tab (page)|
+
+:::image type="content" source="../../media/keyboard-shortcuts/work-item-form.png" alt-text="Screenshot that shows Azure DevOps 2019 work item form keyboard shortcuts.":::
 
 ::: moniker-end
 

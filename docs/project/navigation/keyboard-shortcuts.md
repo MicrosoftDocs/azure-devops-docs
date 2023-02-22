@@ -44,7 +44,7 @@ You can use these keyboard shortcuts when you work in the web portal for Azure D
 
 ## Web portal global shortcuts
 
-Enter **?** to access global and page-specific shortcuts.
+Select **?** to access global and page-specific shortcuts.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 

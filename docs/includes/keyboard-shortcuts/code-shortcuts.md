@@ -17,8 +17,6 @@ You can use the following keyboard shortcuts when you work in a page under **Cod
 
 ### Git repositories
 
-<img src="../../media/keyboard-shortcuts/code-shortcuts-cloud.png" alt="Repos - Git shortcuts"/>
-
 #### Repos Git shortcuts
 
 |Shortcut|Action|
@@ -40,9 +38,11 @@ You can use the following keyboard shortcuts when you work in a page under **Cod
 |t|Move focus to directory path|
 |w|Select branch|
 
-### TFVC repositories
+The following screenshot shows the lists of keyboard shortcuts as they appear in Azure DevOps:
 
-![Repos-TFVC shortcuts](../../media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
+:::image type="content" source="../../media/keyboard-shortcuts/code-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Repos Git keyboard shortcuts.":::
+
+### TFVC repositories
 
 #### Repos TFVC shortcuts
 
@@ -66,11 +66,15 @@ You can use the following keyboard shortcuts when you work in a page under **Cod
 |2|Open history|
 |t|Move focus to directory path|
 
+The following screenshot shows the lists of keyboard shortcuts as they appear in Azure DevOps:
+
+:::image type="content" source="../../media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Repos TFVC keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-#### Repos or Code shortcuts
+#### Code shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -92,7 +96,8 @@ You can use the following keyboard shortcuts when you work in a page under **Cod
 |y|Switch to commit (Git)|
 |c, b|Create branch (Git)|
 
-![Repos or Code shortcuts](../../media/keyboard-shortcuts/code-shortcuts.png)  
+The following screenshot shows the lists of keyboard shortcuts as they appear in Azure DevOps:
 
+:::image type="content" source="../../media/keyboard-shortcuts/code-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 Repos Code page and File Explorer keyboard shortcuts.":::
 
 ::: moniker-end

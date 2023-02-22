@@ -19,8 +19,10 @@ You can use the following keyboard shortcuts when you work on a **Boards** > **B
 |m, i|Move item to current iteration|
 |m, n|Move item to next iteration|
 |Insert|Add child item|
-|f+i|Add child TBD|
+|f+i|Add child item|
 |Ctrl+Shift+f|Filter results|
+
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Boards Backlogs page keyboard shortcuts.":::
 
@@ -36,6 +38,8 @@ You can use the following keyboard shortcuts when you work on a **Boards** > **B
 |m, n|Move item to next iteration|
 |Insert|Add child|
 |Ctrl+Shift+f|Filter results|
+
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows Azure DevOps 2019 Boards Backlogs page keyboard shortcuts.":::
 
@@ -57,6 +61,8 @@ You can use the following keyboard shortcuts when you work on a **Work** > **Bac
 |Insert|Add child|
 |Ctrl+Shift+f|Filter results|
 |r|Toggle show/hide parents|
+
+The following screenshot shows the list of keyboard shortcuts as it appears in Team Foundation Server 2018:
 
 :::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows TFS 2018 Work Backlogs page keyboard shortcuts.":::
 
