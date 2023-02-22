@@ -4,7 +4,7 @@ ms.topic: include
 
 <a id="queries-te-shortcuts"></a>
 
-### Query editor
+### Team Explorer query editor shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -24,7 +24,7 @@ ms.topic: include
 |Ctrl+v |Paste copied clause|
 |Del |Delete contents of current field or clause|
 
-### Query results
+### Team Explorer query results shortcuts
 
 |Shortcut|Action|
 |---|---|

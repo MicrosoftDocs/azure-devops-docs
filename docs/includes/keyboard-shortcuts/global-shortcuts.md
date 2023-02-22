@@ -7,8 +7,6 @@ ms.date: 04/04/2022
 
 ::: moniker range=">= azure-devops-2020"
 
-You can use these keyboard shortcuts in the web portal:
-
 |Shortcut|Action|
 |--------|------|
 |?|Show keyboard shortcuts|
@@ -30,8 +28,6 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-
-You can use these keyboard shortcuts in the web portal:
 
 |Shortcut|Action|
 |--------|------|

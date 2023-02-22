@@ -27,11 +27,11 @@ You can use these keyboard shortcuts when you work in the web portal for Azure D
 
 Select **?** to access global and page-specific shortcuts.
 
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
-
 Page-specific shortcuts work only when you're on a specific page. For example, select **g**, **c** to open the **Code** page, and then select **c**,  **p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
 
-## Web portal list shortcuts
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
+
+### Web portal list shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -60,7 +60,7 @@ Page-specific shortcuts work only when you're on a specific page. For example, s
 
 ::: moniker range=">= azure-devops-2019"
 
-## Work item forms
+## Work item form
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
