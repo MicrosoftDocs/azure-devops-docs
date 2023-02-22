@@ -33,6 +33,8 @@ Page-specific shortcuts work only when you're on a specific page. For example, s
 
 ### Web portal list shortcuts
 
+You can use these keyboard shortcuts when you work in a list in the web portal for Azure DevOps:
+
 |Shortcut|Action|
 |---|---|
 |Tab|Move focus right|
@@ -80,7 +82,7 @@ Page-specific shortcuts work only when you're on a specific page. For example, s
 
 <a id="plan-shortcuts"></a>
 
-## Plans
+## Delivery plans
 
 You can use these keyboard shortcuts when you [interact with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, select **?** when you're viewing a plan on a **Boards** > **Plans** page or a **Work** > **Plans** page.
 
