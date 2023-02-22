@@ -5,8 +5,8 @@ description: Add States, Transitions, Reasons, or Actions to customize the workf
 ms.service: azure-devops-boards
 ms.custom: archive-candidate
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 03/31/2017

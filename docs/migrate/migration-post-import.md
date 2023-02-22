@@ -5,8 +5,8 @@ description: Guidance on how to validate and configure an organization after it 
 ms.topic: conceptual
 ms.subservice: azure-devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/23/2023
 ---

@@ -5,8 +5,8 @@ description: Define the objects and processes available to you when you create a
 ms.custom: engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '<= azure-devops' 
 ms.date: 01/13/2023

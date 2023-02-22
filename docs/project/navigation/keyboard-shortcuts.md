@@ -5,8 +5,8 @@ description: Learn about keyboard shortcuts for the web portal for Azure DevOps 
 ms.custom: Navigation
 ms.subservice: azure-devops-projects
 ms.topic: conceptual 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---

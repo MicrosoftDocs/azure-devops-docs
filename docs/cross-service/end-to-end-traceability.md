@@ -5,8 +5,8 @@ description: Learn about the tools and features that support traceability from r
 ms.subservice: azure-devops-cross-service
 ms.custom: cross-service, cross-project
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 01/26/2021
 ---

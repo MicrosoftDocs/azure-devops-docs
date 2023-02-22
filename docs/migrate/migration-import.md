@@ -5,8 +5,8 @@ description: How to guide for preparing an on-premises collection to importing i
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 08/18/2022
 ---

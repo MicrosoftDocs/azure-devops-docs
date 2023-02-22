@@ -4,8 +4,8 @@ metadata:
   description: Answers to frequently asked questions about process models post migration
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-migrate
-  ms.author: kaelli
-  author: KathrynEE
+  ms.author: chcomley
+  author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
