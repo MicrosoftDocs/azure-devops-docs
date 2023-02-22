@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to find the Azure DevOps platform and version you're using. 
 ms.subservice: azure-devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 09/30/2022
 monikerRange: '<= azure-devops'

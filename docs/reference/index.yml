@@ -9,8 +9,8 @@ metadata:
   description: Configure and customize Azure Boards including area paths, iteration paths, projects, and processes.
   ms.service: azure-devops-boards
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 07/08/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

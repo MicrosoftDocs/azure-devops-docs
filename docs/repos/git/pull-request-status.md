@@ -128,7 +128,7 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample on GitHub](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) where you can see the parts of code that add the following sample items to the status menu. 
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). For more information, see the [Azure DevOps extension sample](https://github.com/Microsoft/azure-devops-extension-sample). 
 
 ![Status menu](media/pull-request-status/custom-status-menu-entries.png)
 

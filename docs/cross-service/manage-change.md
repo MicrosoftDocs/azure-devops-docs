@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage change when using Agile methods  
 ms.subservice: azure-devops-cross-service
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 03/30/2021
 ---

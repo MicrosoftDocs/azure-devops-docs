@@ -32,7 +32,7 @@
   - name: Wikis
     href: /rest/api/vsts/wiki/wikis
   - name: Fetch Wiki search results
-    href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
+    href: /rest/api/azure/devops/search/wiki-search-results/fetch-wiki-search-results
 - name: Resources
   items:
   - name: Get Started

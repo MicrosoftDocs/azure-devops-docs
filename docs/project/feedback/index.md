@@ -5,8 +5,8 @@ description: Learn about requesting and providing feedback about your software a
 ms.subservice: azure-devops-feedback
 ms.topic: overview
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---

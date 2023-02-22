@@ -37,11 +37,11 @@
   - name: Request feedback
     href: /previous-versions/azure/devops/project/feedback/get-feedback 
   - name: Provide feedback
-    href: /previous-versions/azure/devops/project/feedback/give-feedback.md
+    href: /previous-versions/azure/devops/project/feedback/give-feedback
   - name: Set feedback permissions  
-    href: /previous-versions/azure/devops/project/feedback/give-permissions-feedback.md
+    href: /previous-versions/azure/devops/project/feedback/give-permissions-feedback
     displayName: security
   - name: Enable remote audio capture
-    href: /previous-versions/azure/devops/project/feedback/enable-remote-audio-capture.md
+    href: /previous-versions/azure/devops/project/feedback/enable-remote-audio-capture
   - name: Change the audio device or annotation tool
-    href: /previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool.md
+    href: /previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool

@@ -6,8 +6,8 @@ ms.service: azure-devops-boards
 ms.custom: witadmin, engagement-fy23
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/13/2023
 ---
