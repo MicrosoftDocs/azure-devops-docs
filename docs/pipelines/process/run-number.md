@@ -25,6 +25,7 @@ In YAML, this property is called `name` and is at the root level of a pipeline.
 If not specified, your run is given a unique integer as its name.
 You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
+The `name` property does not work in template files. 
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
