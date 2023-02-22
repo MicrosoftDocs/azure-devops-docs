@@ -5,8 +5,8 @@ description: Navigate to pages and artifacts using breadcrumbs or selectors in t
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 07/30/2020 
 ---

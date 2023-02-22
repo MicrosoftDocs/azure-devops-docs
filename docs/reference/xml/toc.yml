@@ -129,8 +129,8 @@
   - name: Troubleshooting
     items:
     - name: Support bug update status using My Work
-      href: /previous-versions/azure/devops/reference/xml/xml/support-bug-update-status-using-my-work
+      href: /previous-versions/azure/devops/reference/xml/support-bug-update-status-using-my-work
     - name: Resolve errors received when configuring features
-      href: /previous-versions/azure/devops/reference/xml/xml/resolve-errors-received-when-configuring-features
+      href: /previous-versions/azure/devops/reference/xml/resolve-errors-received-when-configuring-features
     - name: Resolve process configuration issues
       href: /previous-versions/azure/devops/reference/troubleshoot-process-configuration

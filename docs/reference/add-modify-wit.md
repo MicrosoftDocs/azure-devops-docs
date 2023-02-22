@@ -5,8 +5,8 @@ description: Modify or add a work item type to support queries, reports, and wor
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops'
 ms.date: 01/17/2023 

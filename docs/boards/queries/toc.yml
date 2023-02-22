@@ -44,6 +44,9 @@
     href: define-query-hyperlink.md
 - name: Sample queries
   items:
+  - name: Example query charts
+    href: example-query-charts.md
+    displayname: status, monitor, trend, widgets  
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md
     displayname: Title, Description, Detail, Repo Steps, Acceptance Criteria, Resolution, System Info, Team Project, Title, Work Item Type, wildcard

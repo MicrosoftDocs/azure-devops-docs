@@ -5,8 +5,8 @@ description: Index to concepts and tasks for configuring and customizing Azure B
 ms.custom: quick-reference-index, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/17/2023 
 ---

@@ -5,8 +5,8 @@ description: Resolve common DataMigratorTool validation errors
 ms.topic: troubleshooting
 ms.subservice: azure-devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/31/2022
 ---

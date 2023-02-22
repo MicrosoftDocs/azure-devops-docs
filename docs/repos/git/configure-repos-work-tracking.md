@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to configure Azure Repos to support integration with Azure Boards and work tracking 
 ms.service: azure-devops-boards
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 08/02/2021
 ---

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Access the application area or change your view
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

@@ -5,8 +5,8 @@ description: Enable/disable or activate/deactivate features in preview at the us
 ms.custom: navigation, cross-project, cross-service, engagement-fy23
 ms.subservice: azure-devops-projects
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
 ms.date: 02/02/2023

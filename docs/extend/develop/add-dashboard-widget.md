@@ -57,7 +57,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 3. The [third part](#part-3) explains how to add configuration to your widget. 
 
 > [!NOTE]   
-> If you're in a hurry and want to get your hands on the code right away, you can download the complete samples [here](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets). 
+> If you're in a hurry and want to get your hands on the code right away, you can download the samples [here](https://github.com/Microsoft/azure-devops-extension-sample). 
 > Once downloaded, go to the `widgets` folder, then follow [Step 6](#package-publish-share) and [Step 7](#add-from-catalog) directly to publish the sample extension which has the three sample widgets of varying complexities.
 
 Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out of the box for you and some guidance on widget structure.

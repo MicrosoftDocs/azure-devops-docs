@@ -28,7 +28,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../organizations/notifications/concepts-events-and-notifications.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
 - [GitHub connections](../../boards/github/connect-to-github.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
@@ -63,7 +63,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../organizations/notifications/concepts-events-and-notifications.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
 - [GitHub connections](../../boards/github/connect-to-github.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
@@ -99,7 +99,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
-- [Events, notifications, subscriptions](../../organizations/notifications/concepts-events-and-notifications.md)  
+- [Notifications and subscriptions](../../organizations/notifications/about-notifications.md)  
 - [Iteration paths](../settings/about-areas-iterations.md)  
    :::column-end:::
    :::column span="":::
