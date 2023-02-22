@@ -17,17 +17,17 @@ ms.date: 04/04/2022
 
 You can use the keyboard shortcuts listed in this article when you work in Azure DevOps or Team Explorer. You also can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) on the **Tools** > **Options** > **Environment** > **Keyboard** page.
 
-For specific guidance on moving around in the web portal for Azure DevOps, see [Web portal navigation](index.md).
+For specific guidance about moving around in the web portal for Azure DevOps, see [Web portal navigation](index.md).
 
 ## Web portal
 
 You can use these keyboard shortcuts when you work in the web portal for Azure DevOps.  
 
-### Move around in a list
+### Move in a list
 
 |Shortcut|Action|
 |---|---|
-|Tab|Move focus right to the next word|
+|Tab|Move focus right|
 |Left arrow|Move focus left|
 |Right arrow|Move focus right|
 |Up arrow|Move focus up|
@@ -36,8 +36,8 @@ You can use these keyboard shortcuts when you work in the web portal for Azure D
 |Ctrl+End|Move focus to bottom of list|
 |Ctrl+Up arrow|Move item up in the list|
 |Ctrl+Down arrow|Move item down in the list|
-|Shift+Up arrow|Highlight consecutive items above the current line|
-|Shift+Down arrow|Highlight consecutive items below the current line|
+|Shift+Up arrow|Highlight consecutive items above the current line or field|
+|Shift+Down arrow|Highlight consecutive items below the current line or field|
 |Menu|Open context menu|
 |Esc|Dismiss context menu|
 |Enter|Choose selected menu item|

@@ -5,7 +5,7 @@ ms.date: 04/04/2022
 
 <a id="kanban-board-shortcuts"></a>
 
-You can use the following keyboard shortcuts when you work on a Kanban board on the **Boards** > **Boards** page or the **Work** > **Board** page.  
+You can use the following keyboard shortcuts when you work on a Kanban board on the **Boards** > **Boards** page or the **Work** > **Boards** page.  
 
 ::: moniker range=">= azure-devops-2020"
 
