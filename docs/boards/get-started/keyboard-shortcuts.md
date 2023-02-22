@@ -21,9 +21,17 @@ For specific guidance about moving around in the web portal for Azure DevOps, se
 
 ## Web portal
 
-You can use these keyboard shortcuts when you work in the web portal for Azure DevOps.  
+You can use these keyboard shortcuts when you work in the web portal for Azure DevOps.
 
-### Move in a list
+### Web portal global shortcuts
+
+Select **?** to access global and page-specific shortcuts.
+
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
+
+Page-specific shortcuts work only when you're on a specific page. For example, select **g**, **c** to open the **Code** page, and then select **c**,  **p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
+
+## Web portal list shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -42,14 +50,6 @@ You can use these keyboard shortcuts when you work in the web portal for Azure D
 |Esc|Dismiss context menu|
 |Enter|Choose selected menu item|
 
-## Web portal global shortcuts
-
-Select **?** to access global and page-specific shortcuts.
-
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
-
-Page-specific shortcuts work only when you're on a specific page. For example, select **g**, **c** to open the **Code** page, and then select **c**,  **p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
-
 ::: moniker range=">= azure-devops-2019"
 
 ## Work items
@@ -60,7 +60,7 @@ Page-specific shortcuts work only when you're on a specific page. For example, s
 
 ::: moniker range=">= azure-devops-2019"
 
-## Work item form shortcuts
+## Work item forms
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
@@ -82,13 +82,13 @@ Page-specific shortcuts work only when you're on a specific page. For example, s
 
 ## Plans
 
-You can use these keyboard shortcuts when you [interact with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, select **?** when you're viewing a plan from the **Boards** > **Plans** page or the **Work** > **Plans** page.
+You can use these keyboard shortcuts when you [interact with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, select **?** when you're viewing a plan on a **Boards** > **Plans** page or a **Work** > **Plans** page.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
 ## Team Explorer
 
-You can use these keyboard shortcuts when you're working in Team Explorer.
+You can use these shortcuts when you work in Team Explorer.
 
 ### Team Explorer global shortcuts
 
@@ -140,6 +140,10 @@ You can use shortcuts for query results whenever you have a list of work items, 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)]
 
+### Install Team Explorer  
+
+Team Explorer is a plug-in for Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017, you gain access to Team Explorer.  
+
 ## Related articles
 
 - [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
@@ -147,10 +151,6 @@ You can use shortcuts for query results whenever you have a list of work items, 
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
 - [Web portal navigation](../../project/navigation/index.md)
-
-### Install Team Explorer  
-
-Team Explorer is a plug-in for Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017, you gain access to Team Explorer.  
 
 ## Next steps
 

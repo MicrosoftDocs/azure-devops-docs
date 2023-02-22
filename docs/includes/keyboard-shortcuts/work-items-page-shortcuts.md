@@ -6,7 +6,7 @@ ms.topic: include
 
 ::: moniker range=">= azure-devops-2019"
 
-You can use these keyboard shortcuts when you work on the **Boards** > **Work items** page or the **Work** > **Work items** page.
+You can use these keyboard shortcuts on a **Boards** > **Work items** page or a **Work** > **Work items** page.
 
 ::: moniker-end
 
