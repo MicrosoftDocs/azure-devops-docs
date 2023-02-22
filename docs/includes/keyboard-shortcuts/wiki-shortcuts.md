@@ -6,7 +6,7 @@ ms.date: 04/04/2022
 
 <a id="wiki-shortcuts"></a>
 
-You can use the following keyboard shortcuts when you [manage or edit Wiki pages](../../project/wiki/add-edit-wiki.md). To view the valid shortcuts, select **?** in a **Wiki** page.
+You can use the following keyboard shortcuts when you [manage or edit Wiki pages](../../project/wiki/add-edit-wiki.md). To view the valid shortcuts, select **?** on a **Wiki** page.
 
 ::: moniker range="tfs-2018"
 
