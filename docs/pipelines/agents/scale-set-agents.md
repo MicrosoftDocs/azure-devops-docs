@@ -538,4 +538,6 @@ This issue occurs because agent extension scripts attempt to create the user `Az
 
 The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url). 
 
+#### I want to increase my pool size. What should I take into consideration?
 
+Before you increase the size of your pool, make sure the Azure Virtual Network configured for your VMSS pool has a large enough _Address space_ range to accomodate all your new agents. If not, you may get an error similar to _Failed to increase capacity. Subnet azure-devops-agent-pool-fabrikam-fiber with address prefix 12.123.45.224/28 does not have enough capacity for 5 IP addresses_.
