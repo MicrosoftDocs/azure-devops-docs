@@ -94,7 +94,7 @@ Page-specific shortcuts work only when you're on a specific page. For example, s
 
 ::: moniker range="< azure-devops"
 
-## Plans
+## Delivery Plans
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]
 

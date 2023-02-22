@@ -9,8 +9,6 @@ You can use the following keyboard shortcuts when you work on a Kanban board on 
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt-text="Screenshot that shows Azure DevOps 2020 Kanban board shortcuts.":::
-
 |Shortcut|Action|
 |---|---|
 |n|Add new item|
@@ -32,13 +30,13 @@ You can use the following keyboard shortcuts when you work on a Kanban board on 
 |u|Collapse all swimlanes|
 |Shift+Page up|Select first/next swimlane above|
 |Shift+Page down|Select last/next swimlane below|
+
+:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt-text="Screenshot that shows Azure DevOps 2020 Kanban board shortcuts.":::
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 Kanban board shortcuts.":::
-
 |Shortcut|Action|
 |---|---|
 |n|Add new item|
@@ -60,5 +58,7 @@ You can use the following keyboard shortcuts when you work on a Kanban board on 
 |u|Collapse all swimlanes|
 |Shift+Page up|Select first/next swimlane above|
 |Shift+Page down|Select last/next swimlane below|
+
+:::image type="content" source="../../media/keyboard-shortcuts/kanban-board-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 Kanban board shortcuts.":::
 
 ::: moniker-end

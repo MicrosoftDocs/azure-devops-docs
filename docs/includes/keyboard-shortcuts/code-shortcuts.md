@@ -70,8 +70,6 @@ You can use the following keyboard shortcuts when you work in a page under **Cod
 
 ::: moniker range="<= azure-devops-2019"
 
-![Repos or Code shortcuts](../../media/keyboard-shortcuts/code-shortcuts.png)  
-
 #### Repos or Code shortcuts
 
 |Shortcut|Action|
@@ -93,5 +91,8 @@ You can use the following keyboard shortcuts when you work in a page under **Cod
 |w|Select branch (Git)|
 |y|Switch to commit (Git)|
 |c, b|Create branch (Git)|
+
+![Repos or Code shortcuts](../../media/keyboard-shortcuts/code-shortcuts.png)  
+
 
 ::: moniker-end

@@ -31,6 +31,8 @@ You can use the following keyboard shortcuts when you work on the **Boards** > *
 |Ctrl+c|Copy to clipboard|
 |Delete|Delete|
 
+:::image type="content" source="../../media/keyboard-shortcuts/work-items-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 work items page keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -46,5 +48,7 @@ You can use the following keyboard shortcuts when you work on the **Boards** > *
 |Ctrl+Shift+f|Filter results|
 |Ctrl+c|Copy to clipboard|
 |Delete|Delete|
+
+:::image type="content" source="../../media/keyboard-shortcuts/work-items-shortcuts.png" alt-text="Screenshot that shows Azure DevOps 2019 work items page keyboard shortcuts.":::
 
 ::: moniker-end

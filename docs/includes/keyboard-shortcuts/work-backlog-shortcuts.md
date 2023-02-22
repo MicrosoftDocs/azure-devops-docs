@@ -13,8 +13,6 @@ You can use the following keyboard shortcuts when you work on a **Boards** > **B
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Boards Backlogs page keyboard shortcuts.":::
-
 |Shortcut|Action|
 |---|---|
 |m, b|Move item to backlog|
@@ -24,11 +22,11 @@ You can use the following keyboard shortcuts when you work on a **Boards** > **B
 |f+i|Add child TBD|
 |Ctrl+Shift+f|Filter results|
 
+:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Boards Backlogs page keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-
-:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows Azure DevOps 2019 Boards Backlogs page keyboard shortcuts.":::
 
 |Shortcut|Action|
 |---|---|
@@ -39,13 +37,13 @@ You can use the following keyboard shortcuts when you work on a **Boards** > **B
 |Insert|Add child|
 |Ctrl+Shift+f|Filter results|
 
+:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows Azure DevOps 2019 Boards Backlogs page keyboard shortcuts.":::
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 You can use the following keyboard shortcuts when you work on a **Work** > **Backlogs** page. These shortcuts work when you are on a product backlog, portfolio backlog, or sprint backlog page.
-
-:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows TFS 2018 Work Backlogs page keyboard shortcuts.":::
 
 ### Backlogs
 
@@ -59,5 +57,7 @@ You can use the following keyboard shortcuts when you work on a **Work** > **Bac
 |Insert|Add child|
 |Ctrl+Shift+f|Filter results|
 |r|Toggle show/hide parents|
+
+:::image type="content" source="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt-text="Screenshot that shows TFS 2018 Work Backlogs page keyboard shortcuts.":::
 
 ::: moniker-end
