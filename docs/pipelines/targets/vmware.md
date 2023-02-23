@@ -73,7 +73,7 @@ You need to first configure how TFS connects to vCenter. You have to a setup a s
 3. Follow these steps to create a vCenter Server service connection in your project:
 
    * Open your Azure Pipelines or TFS project in 
-     your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
+     your web browser. Choose the **Settings** icon in the menu bar and select **Service connections**.
 
    * In the **Services** tab, choose **New service connection**, and select **VMware vCenter Server**.
 
