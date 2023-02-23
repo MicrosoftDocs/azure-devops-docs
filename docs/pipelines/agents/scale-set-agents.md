@@ -115,7 +115,7 @@ In the following example, a new resource group and Virtual Machine Scale Set are
     > [!IMPORTANT]
     > Ephemeral OS disks are not supported on all VM sizes. For list of supported VM sizes, see [Ephemeral OS disks for Azure VMs](/azure/virtual-machines/ephemeral-os-disks).
 
-    Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
+    Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Don't pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
     
     Select any VM SKU and storage SKU.
 
@@ -350,7 +350,7 @@ If you just want to create a scale set with the default 128-GB OS disk using a p
           
 1. Install any desired additional software on the VM.
 
-1. To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
+1. To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it doesn't already exist.
 
 1. Reboot the VM when finished with customizations
    
@@ -410,7 +410,7 @@ Scale set agents currently support Ubuntu Linux, Windows Server/DataCenter 2016/
 
 ### Known issues
 
-* Debian or RedHat Linux aren't supported. Only Ubuntu is.
+* Debian or RedHat Linux distributions aren't supported. Only Ubuntu is.
 * Windows 10 client doesn't support running the pipeline agent as a local user and therefore the agent can't interact with the UI. The agent will run as Local Service instead.
 
 ## Troubleshooting issues
@@ -453,15 +453,16 @@ To delete the saved agent when you're done with your investigation, navigate to 
 * [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
 * [What are some common issues and their solutions?](#what-are-some-common-issues-and-their-solutions)
   * [You observe more idle agents than desired at various times](#you-observe-more-idle-agents-than-desired-at-various-times)
-  * [VMSS scale up is not happening in the expected five minute interval](#vmss-scale-up-is-not-happening-in-the-expected-five-minute-interval)
+  * [VMSS scale up isn't happening in the expected five-minute interval](#vmss-scale-up-isnt-happening-in-the-expected-five-minute-interval)
   * [Azure DevOps Linux VM Scale Set frequently fails to start the pipeline](#azure-devops-linux-vm-scale-set-frequently-fails-to-start-the-pipeline)
-  * [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs are not reimaging as they should and just pick up new jobs as they are queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-arent-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-theyre-queued)
+  * [You check the option to automatically tear down virtual machines after every use for the agent pool, but you see that the VMs aren't re-imaging as they should and just pick up new jobs as they're queued](#you-check-the-option-to-automatically-tear-down-virtual-machines-after-every-use-for-the-agent-pool-but-you-see-that-the-vms-arent-re-imaging-as-they-should-and-just-pick-up-new-jobs-as-theyre-queued)
   * [VMSS shows the agent as offline if the VM restarts](#vmss-shows-the-agent-as-offline-if-the-vm-restarts)
   * [You can see multiple tags like _AzureDevOpsElasticPoolTimeStamp for VMSS in cost management](#you-can-see-multiple-tags-like-_azuredevopselasticpooltimestamp-for-vmss-in-cost-management)
   * [You can't create a new scale set agent pool and get an error message that a pool with the same name already exists](#you-cant-create-a-new-scale-set-agent-pool-and-get-an-error-message-that-a-pool-with-the-same-name-already-exists)
-  * [VMSS maintenance job is not running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
+  * [VMSS maintenance job isn't running on agents or getting logs](#vmss-maintenance-job-isnt-running-on-agents-or-getting-logs)
   * [If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances](#if-you-specify-azdevops-as-the-primary-administrator-in-your-script-for-vmss-you-may-observe-issues-with-the-agent-configurations-on-scale-set-instances)
   * [Agent extension installation fails on scale set instances due to network security and firewall configurations](#agent-extension-installation-fails-on-scale-set-instances-due-to-network-security-and-firewall-configurations)
+  * [I want to increase my pool size. What should I take into consideration?](#i-want-to-increase-my-pool-size-what-should-i-take-into-consideration)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
@@ -494,7 +495,7 @@ For information on purchasing parallel jobs, see [Configure and pay for parallel
 
 To better understand why this happens, see [How Azure Pipelines manages the scale set](#how-azure-pipelines-manages-the-scale-set). Throughout the scaling operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. This is an expected behavior as Azure Pipelines converges gradually to the constraints that you specify.
 
-#### VMSS scale up is not happening in the expected five minute interval
+#### VMSS scale up isn't happening in the expected five-minute interval
 
  The scaling job runs every five minutes, but if only one operation is processed, you may observe that scale up isn’t happening within five minutes; this is currently by design. 
 
@@ -504,7 +505,7 @@ The first place to look when experiencing issues with scale set agents is the 
 
 Also, consider saving the unhealthy VM for debugging purposes. For more information, see [Unhealthy Agents](#unhealthy-agents).
 
-Saved agents are there unless you delete them. If the agent doesn't come online in 10 minutes, it is marked as unhealthy and saved if possible. Only one VM is kept in a saved state. If the agent goes offline unexpectedly (due to a VM reboot or something happening to the image), it isn't saved for investigation.
+Saved agents are there unless you delete them. If the agent doesn't come online in 10 minutes, it's marked as unhealthy and saved if possible. Only one VM is kept in a saved state. If the agent goes offline unexpectedly (due to a VM reboot or something happening to the image), it isn't saved for investigation.
 
 Only VMs for which agents fail to start are saved. If a VM has a failed state during creation, it isn't saved. In this case, the message in the Diagnostics tab is "deleting unhealthy machine" instead of "failed to start".
 
@@ -525,7 +526,7 @@ When the pool is created, a tag is added to the scale set to mark the scale set 
 
 #### You can't create a new scale set agent pool and get an error message that a pool with the same name already exists
 
-You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it's deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap, in which a VMSS that isn't used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
+You may get an error message like `This virtual machine scale set is already in use by pool <pool name>` because the tag still exists on the scale set even after it's deleted. When an agent pool is deleted, you attempt to delete the tag from the scale set, but this is a best-effort attempt, and you give up after three retries. Also, there can be a maximum of a two-hour gap, in which a Virtual Machine Scale Set that isn't used by any agent pool can't be assigned to a new one. The fix for this is to wait for that time interval to pass, or manually delete the tag for the scale set from the Azure portal. When viewing the scale set in the Azure portal, select the **Tags** link on the left and delete the tag labeled **_AzureDevOpsElasticPool**. 
 
 #### VMSS maintenance job isn't running on agents or getting logs
 
@@ -533,7 +534,7 @@ The maintenance job runs once every 24 hours. It's possible that VMs are getting
 
 #### If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances
 
-If you specify `AzDevOps` as the primary administrator in your script for VMSS, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists).
+If you specify `AzDevOps` as the primary administrator in your script for Virtual Machine Scale Set, you may observe issues with the agent configurations on scale set instances (the password for the user is changed if it already exists).
 
 This issue occurs because agent extension scripts attempt to create the user `AzDevOps` and change its password.
 
@@ -544,4 +545,6 @@ This issue occurs because agent extension scripts attempt to create the user `Az
 
 The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url). 
 
+#### I want to increase my pool size. What should I take into consideration?
 
+Before you increase the size of your pool, make sure the Azure Virtual Network configured for your Virtual Machine Scale Sets pool has a large enough _Address space_ range to accommodate all your new agents. If not, you may get an error similar to _Failed to increase capacity. Subnet azure-devops-agent-pool-fabrikam-fiber with address prefix 12.123.45.224/28 does not have enough capacity for 5 IP addresses_.
