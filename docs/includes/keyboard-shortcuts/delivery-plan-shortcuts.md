@@ -3,7 +3,7 @@ ms.topic: include
 ms.date: 04/04/2022
 ---
 
-To toggle between card titles only and card details, select **t**. 
+To toggle between card details and card titles only, select **t**. 
 
 > [!NOTE]
 > Select **?** to access global and service-specific shortcuts.

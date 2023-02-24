@@ -5,7 +5,7 @@ ms.date: 04/04/2022
 
 <a id="queries-web-portal-shortcuts"></a>
 
-You can use the following keyboard shortcuts when you [work with queries](../../boards/queries/using-queries.md) in the web portal. To view the valid shortcuts, select **?** on a **Boards** > **Queries** page or a **Work** > **Queries** page.
+You can use the following keyboard shortcuts when you [work with queries](../../boards/queries/using-queries.md) in the web portal. To view valid shortcuts, select **?** on a **Boards** > **Queries** page or a **Work** > **Queries** page.
 
 ::: moniker range=">= azure-devops-2020"
 

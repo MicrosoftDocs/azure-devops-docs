@@ -7,14 +7,14 @@ ms.date: 04/04/2022
 
 ::: moniker range=">= azure-devops-2019"
 
-You can use the following keyboard shortcuts to [interact with a work item form](../../boards/work-items/work-item-form-controls.md). To view the valid shortcuts, select **?** within the form.
+You can use the following keyboard shortcuts to [interact with a work item form](../../boards/work-items/work-item-form-controls.md). To view valid shortcuts, select **?** in the form.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]  
-> The following shortcuts are available from the web portal for Azure DevOps Server 2019 and later versions.
+> Shortcuts for work item forms are available in the web portal for Azure DevOps Server 2019 and later versions.
 
 ::: moniker-end
 
@@ -54,15 +54,17 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 ::: moniker-end
 
-## Rich text field shortcuts
+## Rich text editor
 
 ::: moniker range=">= azure-devops-2020"
 
-The rich text editor tool bar appears below the text entry area when you select each text box that can be formatted.
+The rich text editor toolbar appears below the text entry area when you select a text box that can be formatted.
+
+Here's an example of the toolbar in a selected text box that can be formatted:
 
 :::image type="content" source="../../boards/queries/media/share-plans/new-rich-text-editor-toolbar.png" alt-text="Screenshot that shows the Azure DevOps 2020 rich text editor toolbar.":::
 
-You can use the following keyboard shortcuts when you work in a web browser on one of the following operating systems. (**Command**=:::image type="icon" source="../../media/icons/mac-command-symbol.png" border="false":::)
+You can use the following keyboard shortcuts when you work in a web browser on one of the following operating systems (**Command**=:::image type="icon" source="../../media/icons/mac-command-symbol.png" border="false":::).
 
 ### Windows shortcuts
 
@@ -103,6 +105,8 @@ You can use the following keyboard shortcuts when you work in a web browser on o
 ::: moniker range="<= azure-devops-2019"  
 
 The rich text formatting toolbar appears above each text box that can be formatted. It becomes active only when you select the text box.
+
+Here's an example of the toolbar in a text box:
 
 :::image type="content" source="../../boards/queries/media/rich-text-ui-team-services.png" alt-text="Screenshot that shows the Azure DevOps 2019 rich text editor toolbar.":::
 
