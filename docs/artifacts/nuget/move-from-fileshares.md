@@ -128,5 +128,6 @@ Update your builds to ensure they have the right credentials to consume and publ
 
 - [Install NuGet packages with Visual Studio](./consume.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
+- [Migrate NuGet packages to Azure Artifacts](../tutorials//migrate-packages.md)
 - [NuGet.org upstream source](./upstream-sources.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
