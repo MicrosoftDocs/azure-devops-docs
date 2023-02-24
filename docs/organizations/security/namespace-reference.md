@@ -167,7 +167,7 @@ The following table describes the namespaces that manage object-level permission
       `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
-      [Manages dashboard object-level permissions](permissions.md#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
+      [Manages dashboard object-level permissions](permissions.md#dashboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
       **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
