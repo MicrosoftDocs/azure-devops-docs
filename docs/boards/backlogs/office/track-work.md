@@ -223,16 +223,16 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
    >    
    > 	
    >    
-   > ![Open Boards Queries, vertical nav](/docs/boards/queries/media/view-run-queries/open-queries-vert.png)
+   > ![Open Boards Queries, vertical nav](../../queries/media/view-run-queries/open-queries-vert.png)
 
 1. Choose the query you want to open in Excel.
 
-1. From the **Results** tab, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon
+1. From the **Results** tab, choose the  :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon.
    > [!div class="mx-imgBorder"]  
    >    
    > 	
    >    
-   > ![QUery Results, context menu, Open in Excel Open Boards Queries, vertical nav](media/connect/open-in-excel-from-portal.png)
+   > ![Query Results, context menu, Open in Excel Open Boards Queries, vertical nav](media/connect/open-in-excel-from-portal.png)
 
 ### [Connect from client to Azure Boards](#tab/open-excel-cloud)
 
