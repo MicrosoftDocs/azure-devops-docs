@@ -7,16 +7,16 @@ ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops' 
-ms.date: 02/15/2022  
+ms.date: 02/24/2023  
 ---
 
 # Security best practices
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Security should always be your topmost concern when you’re working with information and data, especially when you're working in a cloud-based solution, like Azure DevOps Services. Microsoft keeps the underlying cloud infrastructure secure, but it's up to you to configure security in Azure DevOps. 
+When you're working with information and data, particularly in a cloud-based solution like Azure DevOps Services, prioritizing security should always be your primary concern. While Microsoft maintains the security of the underlying cloud infrastructure, it's your responsibility to configure security in Azure DevOps.
 
-You don't have to implement best practices when using Azure Devops, but doing so will likely help you have a better, more secure experience. We've gathered some best practices for keeping your Azure DevOps environment secure, with the following goals in mind: 
+Although it's not mandatory, incorporating best practices while using Azure DevOps can enhance your experience and make it more secure. We've compiled the following best practices that aim to keep your Azure DevOps environment secure:
 
 - Properly scope [service accounts](#scope-service-accounts), [service connections](#scope-service-connections), and [permissions](#scope-permissions)
 - Maintain tight control of administrators and service account groups
@@ -64,8 +64,9 @@ For more information, see [Set individual permissions](/azure/devops/organizatio
 - Block external guest access entirely by disabling the ["Allow invitations to be sent to any domain" policy](/azure/active-directory/external-identities/allow-deny-list). It's a good idea to do so if there's no business need for it.
 - Use a different email or user principal name (UPN) for your personal and business accounts, even though it's allowed. This action eliminates the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.  
 - Put all the external guest users in a single Azure AD group and manage the permissions of that group appropriately. You can easily manage and audit this way.
-  - Remove direct assignments so the group rules apply to those users. For more information, see [Add a group rule to assign access levels](../accounts/assign-access-levels-by-group-membership.md).
-  - Reevaluate rules regularly on the Group rules tab of the Users page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Every 24 hours and anytime a group rule changes, rules get automatically reevaluated in the system.
+- Remove direct assignments so the group rules apply to those users. For more information, see [Add a group rule to assign access levels](../accounts/assign-access-levels-by-group-membership.md).
+
+[!INCLUDE [note-group-rules](includes/note-group-rules.md)]
 
 For more information, see [B2B guests in the Azure AD](/azure/active-directory/external-identities/delegate-invitations). 
 ::: moniker range="< azure-devops"
@@ -79,9 +80,9 @@ See the following recommendations for assigning permissions to security groups a
 
 |**Do** :::image type="icon" source="../../media/icons/checkmark.png" border="false":::|**Don't** :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: |
 |---------|---------|
-|Use Azure Active Directory, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the Project Valid Users group. This group can access and view project information.        |
-|When you're adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.   | Don't add users to multiple security groups that contain different permission levels. In certain cases, a *Deny* permission level may override an *Allow* permission level.        |
-|When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | Don't change the default assignments made to the valid users groups. If you remove or set the *View instance-level information* permission to *Deny* for one of the *Valid Users* groups, no users in the group can access the project, collection, or deployment, depending on the group you set.        |
+|Use Azure Active Directory, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the *Project Valid Users* group. This group can access and view project information.        |
+|When you're adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who need to create and modify area paths, iteration paths, and queries.   | Don't add users to multiple security groups that contain different permission levels. In certain cases, a *Deny* permission level may override an *Allow* permission level.        |
+|When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | Don't change the default assignments made to the *Project Valid Users* groups. If you remove or set the *View instance-level information* permission to *Deny* for one of the *Project Valid Users* groups, no users in the group can access the project, collection, or deployment, depending on the group you set.        |
 |Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.        |
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
@@ -178,10 +179,10 @@ See the following table of built-in security groups, which users to add, and bes
       Project-scoped users
    :::column-end:::
    :::column span="1":::
-      People who need limited access to view organization settings and projects other than those projects they’re specifically added to.
+      People who need limited access to view organization settings and projects other than those projects they’re added to.
    :::column-end:::
    :::column span="1":::
-      Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.
+      Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Don't add users to this group if they're also added to the Project Collection Administrators group.
    :::column-end:::
 :::row-end:::
    ---
@@ -189,7 +190,7 @@ See the following table of built-in security groups, which users to add, and bes
 #### Removing users
 
 - If your organization uses MSA accounts, then remove inactive users directly from the organization, as you have no other way to prevent access. When you do so, you can't create a query for work items assigned to the removed user account. For more information, see [Delete users from Azure DevOps](../accounts/delete-organization-users.md).
-- If your organization is backed by Azure AD, then you can disable or delete the Azure AD user account while leaving their Azure DevOps account active. In this way, you can continue to query their work item history using their account name.
+- If your organization's connected to Azure AD, then you can disable or delete the Azure AD user account while leaving your Azure DevOps organization active. In this way, you can continue to query their work item history using their account name.
 - [Revoke user PATs](../accounts/admin-revoke-user-pats.md).
 - Revoke any special permissions that may have been granted to individual user accounts.
 - Reassign work from users you’re removing to current team members.
@@ -199,7 +200,7 @@ See the following table of built-in security groups, which users to add, and bes
 Select your [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) from the following sources:
 - [Multi-factor authentication](#require-multi-factor-authentication)
 - [Azure Active Directory (Azure AD)](#use-azure-ad)
-- [Personal access tokens (PATs)](#use-pats-seldomly)
+- [Personal access tokens (PATs)](#use-pats-sparingly)
 
 ### Require multi-factor authentication
 
@@ -207,30 +208,24 @@ Require all users to use multi-factor authentication (MFA), as a basic security 
 
 ### Use Azure AD
 
-Integrate Azure DevOps with Azure AD to have a single plane for identity. Consistency and a single authoritative source increases clarity and reduces security risks from human errors and configuration complexity. The key to end to end governance is to have multiple role assignments (with different role definitions and different resource scopes to the same Azure AD groups). Without Azure AD, you're solely responsible for controlling organization access. 
+Integrate Azure DevOps with Azure AD to have a single plane for identity. Consistency and a single authoritative source increases clarity and reduces security risks from human errors and configuration complexity. The key for end to end governance is to have multiple role assignments (with different role definitions and different resource scopes to the same Azure AD groups). Without Azure AD, you're solely responsible for controlling organization access. 
 
 For more information, see the following articles:
 - [About accessing your organization with Azure AD](../accounts/access-with-azure-ad.md)
 - [Add AD/Azure AD users or groups to a built-in security groups](add-ad-aad-built-in-security-groups.md)
 
-### Use PATs seldomly
+### Use PATs sparingly
 
-Always authenticate with identity services rather than cryptographic keys when available. Managing keys securely with application code is difficult and regularly leads to mistakes like accidentally publishing sensitive access keys to code repositories like GitHub. But, if you're using PATs, see the following recommendations:
+If possible, we recommended to always use identity services for authentication instead of cryptographic keys since managing keys securely with application code is challenging and can lead to mistakes like accidentally publishing sensitive access keys to public code repositories like GitHub. However, if you must use personal access tokens (PATs), consider the following guidelines:
 
-- Administrators should audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any PATs that don’t meet the following criteria for PATs in use: 
+- PATs should always be scoped to specific roles.
+- PATs shouldn't provide global access to multiple organizations.
+- PATs shouldn't grant write or manage permissions on builds or releases.
+- PATs should have an expiration date and be kept secret since they're as critical as passwords.
+- PATs should never be hardcoded in the application code, even if it's tempting to do so to simplify the code.
+- Administrators should regularly audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any that don't meet the above criteria.
 
-  - Should always be scoped (roles). 
-  - Shouldn’t be global (can access more than one organization). 
-  - Shouldn’t allow write or manage permissions on build or releases.
-  - Should have an expiration date.
-  - Should be kept secret. Your tokens are as critical as passwords.
-  - Should have an expiration date.
-  - Shouldn’t be hardcoded. It can be tempting to simplify code to get a token for a prolonged period and store it in your application, but don’t do that. They could end up in source code that could be stolen.
-
-- Keep your PATs secret. Your tokens are as critical as passwords.
-- Store your tokens in a safe place.
-- Don’t hard code tokens in applications. It can be tempting to simplify code to obtain a token for a long period of time and store it in your application, but don’t do that.
-- Give tokens an expiration date.
+In addition to these guidelines, it's crucial to store your PATs in a secure location and never hardcode them into applications. Finally, set an expiration date for your PATs to ensure they're only valid for a limited time.
 
 For more information, check out the following articles:
 
@@ -239,7 +234,7 @@ For more information, check out the following articles:
 
 ### Limit access by location 
 
-Limit access to specific IP (Internet Protocol) address ranges with Azure AD Conditional Access Policy Validation. For example, you can configure a location so that MFA isn’t required for internal IP addresses. 
+By using Azure AD Conditional Access Policy Validation, you can restrict access to specific IP address ranges. For instance, you can set up a policy that exempts internal IP addresses from requiring MFA.
 
 For more information, see [Using the location condition in a Conditional access policy](/azure/active-directory/conditional-access/howto-conditional-access-policy-location).
 
@@ -253,7 +248,7 @@ Implement Web application firewalls (WAFs), so they can filter, monitor, and blo
 
 - Always use encryption.
 - Validate certificates.
-- This shouldn’t be the only planned safety mechanism to reduce the volume and severity of security bugs in your applications.
+- Firewalls shouldn’t be the only planned safety mechanism to reduce the volume and severity of security bugs in your applications.
 
 For more information, see [Application management best practices](/azure/active-directory/manage-apps/application-management-fundamentals)
 
@@ -265,7 +260,7 @@ For more information, see [Application management best practices](/azure/active-
 - Disable "Allow public projects" in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
 ::: moniker-end
 - Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
-- Check out the following articles for more in-depth information about setting sub-project permissions. 
+- Check out the following articles for more in-depth information about setting subproject permissions. 
     - [Set wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
     - [Set feedback permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
     - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)
@@ -291,7 +286,7 @@ For more information about how to set permission levels for pipelines, see [Set 
 
 ### Policies
 
-- Require at least one reviewer outside of the original requester. The approver takes co-ownership of the changes and should be held equally responsible for any impact it may have.
+- Require at least one reviewer outside of the original requester. The approver shares co-ownership of the changes and should be held equally accountable for any potential impact.
 - Require CI build to pass, which is useful for establishing baseline code quality, such as code linting, unit tests, and even security checks like virus and credential scans.
 - Ensure that the original pull requester can’t approve the change.  
 - Disallow completion of a PR (Pull Request), even if some reviewers vote to wait or reject.
