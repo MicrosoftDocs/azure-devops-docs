@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/25/2023
+ms.date: 2/24/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -4566,7 +4566,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RC1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td>December 6, 2022</td>
+          <td>19.205.33122.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC2](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc2-release-date-october-25-2022)">2022 RC2</a></td>
+          <td>October 25, 2022</td>
+          <td>19.205.33011.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc1-release-date-august-9-2022)">2022 RC1</a></td>
           <td>August 9, 2022</td>
           <td>19.205.32728.1</td>
         </tr>
