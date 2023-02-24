@@ -76,7 +76,7 @@ Some helpful links:
 
 For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
 
-As a pre-requisite, you may need the [AzureAD powershell module](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) first.
+As a pre-requisite, you may need the [AzureAD powershell module](/powershell/azure/active-directory/install-adv2) first.
 ```powershell
 Install-Module AzureAD
 ```
