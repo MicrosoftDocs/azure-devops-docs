@@ -6,7 +6,7 @@ description: Learn about Capability Maturity Model Integration (CMMI) process ob
 ms.service: azure-devops-boards
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

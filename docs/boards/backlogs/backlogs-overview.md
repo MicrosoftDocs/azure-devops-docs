@@ -5,7 +5,7 @@ description: Learn how to plan, track, and organize user stories, features, and 
 ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'

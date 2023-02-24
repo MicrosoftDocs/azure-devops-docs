@@ -5,7 +5,7 @@ description: Learn how to use the code review and feedback fields to track code 
 ms.service: azure-devops-boards
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 11/07/2021

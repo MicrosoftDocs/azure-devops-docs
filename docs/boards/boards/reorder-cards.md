@@ -5,7 +5,7 @@ description: Learn how to use the Kanban board, process, and tools reorder Kanba
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to  
 monikerRange: '<= azure-devops'

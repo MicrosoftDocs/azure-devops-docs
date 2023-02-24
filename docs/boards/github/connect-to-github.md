@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards 
 ms.service: azure-devops-boards
 ms.topic: how-to
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 11/19/2021

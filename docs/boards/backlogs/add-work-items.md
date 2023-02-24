@@ -5,7 +5,7 @@ description: Add work items so you can plan and manage a software project using 
 ms.custom: devx-track-azurecli
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: tutorial

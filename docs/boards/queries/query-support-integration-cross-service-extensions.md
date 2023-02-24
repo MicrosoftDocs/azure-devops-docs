@@ -5,7 +5,7 @@ description: Learn about extra features, like cross-service operations, that are
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

@@ -5,7 +5,7 @@ description: Learn how to set Work In Progress Limits on the Kanban board in Azu
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

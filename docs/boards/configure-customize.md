@@ -5,7 +5,7 @@ description: Learn about choices to customize or configure Azure Boards and the 
 ms.service: azure-devops-boards
 ms.topic: overview
 ms.assetid: 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 06/02/2022 

@@ -5,7 +5,7 @@ description: Track work by creating queries based on effort, story points, sched
 ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'

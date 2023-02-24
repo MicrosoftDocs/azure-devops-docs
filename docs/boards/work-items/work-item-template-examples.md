@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn about sample work item templates you can use to pre-populate fields and provide guidance in work item forms. 
 ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'

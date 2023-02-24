@@ -5,7 +5,7 @@ description: Learn how to determine how much work your team can deliver across s
 ms.custom: boards-sprints    
 ms.service: azure-devops-boards
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

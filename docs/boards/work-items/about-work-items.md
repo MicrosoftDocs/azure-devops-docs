@@ -5,7 +5,7 @@ description: Learn how Azure Boards supports work items to plan, track, & collab
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

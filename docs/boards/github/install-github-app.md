@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Configure the Azure Boards app to connect one or more GitHub repositories to Azure Boards  
 ms.service: azure-devops-boards
 ms.topic: quickstart
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021

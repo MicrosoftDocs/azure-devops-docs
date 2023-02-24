@@ -5,7 +5,7 @@ description: Learn how to query work item history and comments to support audit 
 ms.service: azure-devops-boards
 ms.custom: boards-queries, contperf-fy23
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'

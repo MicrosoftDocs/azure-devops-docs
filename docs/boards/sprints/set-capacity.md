@@ -5,7 +5,7 @@ description: Learn how to determine team capacity, adjust work to fit team capac
 ms.service: azure-devops-boards
 ms.custom: boards-sprints
 ms.assetid: 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

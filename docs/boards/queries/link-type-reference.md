@@ -5,7 +5,7 @@ description: Reference guide that describes all link types defined for Azure Dev
 ms.service: azure-devops-boards
 ms.custom: work-items, cross-project, cross-service, engagement-fy23
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

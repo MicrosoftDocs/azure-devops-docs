@@ -5,7 +5,7 @@ description: Map and add columns to your team's Kanban board to manage your work
 ms.custom: "boards-kanban, contperf-fy21q3" 
 ms.service: azure-devops-boards
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

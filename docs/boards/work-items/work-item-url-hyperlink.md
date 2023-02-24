@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to construct a URL for a work item for Azure Boards and Azure DevOps.
 ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE 
 ms.topic: how-to
 monikerRange: '<= azure-devops'   

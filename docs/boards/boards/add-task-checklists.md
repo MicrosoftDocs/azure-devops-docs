@@ -5,7 +5,7 @@ description: Add tasks, subtasks, to do lists, bugs, or other child work items a
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

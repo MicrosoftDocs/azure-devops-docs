@@ -6,7 +6,7 @@ ms.custom: work-items
 ms.service: azure-devops-boards
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

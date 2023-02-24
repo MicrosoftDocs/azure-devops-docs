@@ -5,7 +5,7 @@ description: Learn how to quickly make the same change to many work items in Azu
 ms.service: azure-devops-boards
 ms.custom: "boards-backlogs, seodec18, linked-from-support" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

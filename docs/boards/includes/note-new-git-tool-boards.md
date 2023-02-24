@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-repos
 ms.manager: mijacobs
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: include
 ms.date: 11/04/2020

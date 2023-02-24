@@ -5,7 +5,7 @@ description: Add, run, and update manual test cases on your Kanban board for lig
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

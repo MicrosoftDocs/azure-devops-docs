@@ -5,7 +5,7 @@ description: Learn how to link one or more work items to other work items or to 
 ms.custom: cross-project  
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

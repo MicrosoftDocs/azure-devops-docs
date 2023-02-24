@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
 ms.manager: mijacobs
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: include
 ms.date: 02/21/2020

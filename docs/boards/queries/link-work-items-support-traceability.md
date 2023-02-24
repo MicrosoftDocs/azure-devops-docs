@@ -5,7 +5,7 @@ description: Learn how to support an auto trail of changes and enable quick navi
 ms.service: azure-devops-boards
 ms.custom: work-items, cross-project, cross-service, contperf-fy23, engagement-fy23
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

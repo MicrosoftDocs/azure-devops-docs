@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: how-to

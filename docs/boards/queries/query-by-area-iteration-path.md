@@ -5,7 +5,7 @@ description: Learn how to query for work items based on their area or iteration 
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'

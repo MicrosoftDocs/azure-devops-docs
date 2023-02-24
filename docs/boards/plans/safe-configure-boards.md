@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to configure Azure Boards to support epics, release trains, and multiple backlogs to support SAFe® practices.
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

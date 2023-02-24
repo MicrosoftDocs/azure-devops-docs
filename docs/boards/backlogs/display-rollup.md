@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to add or remove the rollup column displays that show progress or totals of hierarchical items in Azure Boards
 ms.service: azure-devops-boards
 ms.topic: how-to
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
 ms.date: 05/09/2022
