@@ -5,7 +5,7 @@ description: Learn about scaling Agile recommended practices for working in Azur
 ms.service: azure-devops-boards
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

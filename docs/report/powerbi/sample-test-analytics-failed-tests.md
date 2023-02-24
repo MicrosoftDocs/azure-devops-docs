@@ -4,9 +4,9 @@ titleSuffix: Azure DevOps
 description: Learn how to list failed tests in a Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'  
 ms.date: 10/13/2021

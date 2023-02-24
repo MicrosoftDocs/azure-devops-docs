@@ -5,8 +5,8 @@ description: Add and manage fields in the web form of a work item type for an In
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: how-to
 ms.date: 01/11/2022

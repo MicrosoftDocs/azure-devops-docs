@@ -3,8 +3,8 @@ title: About security, authentication, authorization, and security policies
 titleSuffix: Azure DevOps
 description: Learn how Azure DevOps manages security through authentication, authorization, and policies 
 ms.subservice: azure-devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 4/26/2021

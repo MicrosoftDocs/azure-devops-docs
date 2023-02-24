@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: chcomley  
-author: KathrynEE  
+author: chcomley  
 monikerRange: '<= azure-devops'
 ms.date: 10/18/2022
 ---

@@ -5,8 +5,8 @@ description: Choose which backlog and portfolio backlogs are active for your tea
 ms.service: azure-devops-boards
 ms.custom: teams
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

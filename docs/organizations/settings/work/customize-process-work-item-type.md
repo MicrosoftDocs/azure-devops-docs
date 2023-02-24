@@ -5,8 +5,8 @@ description: Customize a process by adding or modifying a work item type for a p
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: how-to
 ms.date: 04/22/2019

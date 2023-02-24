@@ -6,7 +6,7 @@ ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022

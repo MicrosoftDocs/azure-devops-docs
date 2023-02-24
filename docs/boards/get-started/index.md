@@ -6,7 +6,7 @@ ms.custom: boards-get-started
 ms.subservice: azure-devops-new-user
 ms.topic: overview
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 09/15/2021
 ---

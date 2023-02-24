@@ -6,7 +6,7 @@ ms.custom: "boards-queries, linked-from-support"
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 01/31/2022  

@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: conceptual
 ms.author: chcomley
-author: KathrynEE 
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 02/03/2023
 ---

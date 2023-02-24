@@ -5,8 +5,8 @@ description: Describes work tracking customizations supported by the inherited p
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
 ms.date: 07/08/2022

@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to move work items assigned to one team to another team.  
 ms.subservice: azure-devops-settings
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 05/20/2022

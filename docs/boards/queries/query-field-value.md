@@ -5,7 +5,7 @@ description: Learn how to create a query by filtering on field values that are c
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/25/2021  

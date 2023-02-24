@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.custom: cross-service
 ms.reviewer: karrg
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 10/20/2021
 ---

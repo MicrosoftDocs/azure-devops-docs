@@ -5,7 +5,7 @@ description: Learn how to change the work item type or bulk move work items to a
 ms.custom: "boards-backlogs, seodec18, cross-project" 
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 06/27/2022

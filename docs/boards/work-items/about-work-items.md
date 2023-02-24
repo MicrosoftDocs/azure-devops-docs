@@ -6,7 +6,7 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 01/05/2023

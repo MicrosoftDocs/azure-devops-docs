@@ -5,7 +5,7 @@ description: Learn how to configure one or more GitHub repositories to integrate
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2019 < azure-devops'
 ms.date: 02/16/2022
 ---

@@ -5,7 +5,7 @@ description: Learn about key concepts and glossary of terms for Sprints and Scru
 ms.custom: boards-sprints, engagement-fy23 
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 01/23/2023

@@ -5,8 +5,8 @@ description: Group work items based on team, product, or feature area by definin
 ms.subservice: azure-devops-settings
 ms.custom: teams, engagement-fy23
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/10/2023

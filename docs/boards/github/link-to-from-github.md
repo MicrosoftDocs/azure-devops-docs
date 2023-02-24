@@ -5,7 +5,7 @@ description: Learn how to links work items to GitHub commits, pull requests, and
 ms.service: azure-devops-boards 
 ms.custom: work-items, github, engagement-fy23
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
 ms.date: 01/06/2023

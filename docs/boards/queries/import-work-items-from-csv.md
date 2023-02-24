@@ -5,7 +5,7 @@ description: Learn how to import or update work items in bulk from a CSV formatt
 ms.custom: "boards-queries, linked-from-support"
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
 ms.date: 10/21/2021

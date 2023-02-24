@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

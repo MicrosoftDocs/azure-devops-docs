@@ -5,7 +5,7 @@ description: Learn about tasks to perform to close a sprint when using Scrum in 
 ms.custom: boards-sprints, engagement-fy23 
 ms.service: azure-devops-boards 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 01/23/2023

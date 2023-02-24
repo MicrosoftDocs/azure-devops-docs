@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Find project and team tasks and related concepts 
 ms.subservice: azure-devops-projects
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

@@ -5,8 +5,8 @@ description: Understand the set of namespaces used to manage security
 ms.subservice: azure-devops-security
 ms.custom: quarterly-review
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---

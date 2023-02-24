@@ -3,8 +3,8 @@ title: Work tracking metadata reference for Analytics
 titleSuffix: Azure DevOps
 description: Properties, enumerated types, and members metadata reference for the Analytics service for Azure Boards.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/07/2022

@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---

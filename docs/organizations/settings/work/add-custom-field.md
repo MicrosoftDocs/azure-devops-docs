@@ -5,8 +5,8 @@ description: Learn how to add a custom field to the web form of a work item type
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/03/2022

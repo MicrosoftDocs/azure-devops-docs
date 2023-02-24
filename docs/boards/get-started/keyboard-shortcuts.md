@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---

@@ -5,7 +5,7 @@ description: Learn how to plan and track work in your new Kanban team project in
 ms.custom: boards-get-started
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

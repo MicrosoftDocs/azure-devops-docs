@@ -3,7 +3,7 @@ ms.service: azure-devops-boards
 ms.assetid: 
 ms.manager: mijacobs
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: include
 ms.date: 01/24/2020
 ---

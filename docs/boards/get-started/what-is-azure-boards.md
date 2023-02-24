@@ -6,7 +6,7 @@ ms.custom: boards-get-started, contperf-fy22q2
 ms.subservice: azure-devops-new-user
 ms.assetid:  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 12/01/2021

@@ -5,7 +5,7 @@ description: Learn how to construct a URL for a work item for Azure Boards and A
 ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE 
+author: chcomley 
 ms.topic: how-to
 monikerRange: '<= azure-devops'   
 ms.date: 03/02/2022

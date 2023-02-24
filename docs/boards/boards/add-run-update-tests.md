@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

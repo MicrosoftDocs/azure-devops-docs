@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/26/2021
 ---

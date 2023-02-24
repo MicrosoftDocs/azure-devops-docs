@@ -8,7 +8,7 @@ ms.service: azure-devops-boards
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: tutorial
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---

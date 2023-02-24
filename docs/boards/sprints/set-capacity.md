@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.custom: boards-sprints
 ms.assetid: 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

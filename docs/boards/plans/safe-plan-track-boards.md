@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to plan and track epics, release trains, and multiple backlogs in Azure Boards to support SAFe® practices.
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

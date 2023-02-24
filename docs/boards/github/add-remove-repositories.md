@@ -5,7 +5,7 @@ description: Learn how to or remove GitHub repositories or remove GitHub connect
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021
 ---

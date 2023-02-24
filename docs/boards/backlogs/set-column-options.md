@@ -5,7 +5,7 @@ description: Learn how to add column fields to show and sort fields for a backlo
 ms.service: azure-devops-boards
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

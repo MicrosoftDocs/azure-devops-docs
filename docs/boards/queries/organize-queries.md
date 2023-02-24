@@ -6,7 +6,7 @@ ms.custom: boards-queries, contperf-fy23
 ms.service: azure-devops-boards
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2023

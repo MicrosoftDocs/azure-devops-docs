@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 05/24/2022

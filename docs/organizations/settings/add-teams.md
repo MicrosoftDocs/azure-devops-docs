@@ -5,8 +5,8 @@ description: Learn how to create or add a team to a project to scale Azure DevOp
 ms.subservice: azure-devops-settings
 ms.custom: teams
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 05/19/2022

@@ -5,9 +5,9 @@ ms.custom: seodec18
 description: Change the process for your project from Agile to Scrum
 ms.topic: how-to
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
-ms.reviewer: kaelli
+ms.author: chcomley
+author: chcomley
+ms.reviewer: dahellem
 monikerRange: ">= azure-devops-2020"
 ms.date: 07/17/2020
 ---

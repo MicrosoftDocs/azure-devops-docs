@@ -5,7 +5,7 @@ description: Learn how to track dependencies within teams, across teams, and acr
 ms.service: azure-devops-boards
 ms.custom: cross-project  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'
 ms.date: 08/03/2022

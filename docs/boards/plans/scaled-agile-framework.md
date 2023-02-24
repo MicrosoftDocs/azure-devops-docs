@@ -5,7 +5,7 @@ description: How to implement the Scaled Agile Framework® to support epics, rel
 ms.service: azure-devops-boards
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to add a time-in-state measure to an existing Power BI report based on Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
 ms.custom: analytics-views, engagement-fy23 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms date: 02/08/2023

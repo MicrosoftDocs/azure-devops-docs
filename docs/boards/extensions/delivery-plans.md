@@ -5,7 +5,7 @@ description: Learn how to add and use plans to review scheduled multi-team deliv
 ms.service: azure-devops-boards
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 08/09/2022

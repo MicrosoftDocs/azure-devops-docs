@@ -5,7 +5,7 @@ description: Learn how to connect Excel to integrate and track your work in Azur
 ms.service: azure-devops-boards
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

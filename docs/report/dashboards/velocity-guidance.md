@@ -5,8 +5,8 @@ description: Learn about working with velocity charts generated for an Azure Dev
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---

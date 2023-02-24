@@ -5,8 +5,8 @@ description: Add another user to the team administrator role in Azure DevOps.
 ms.subservice: azure-devops-settings
 ms.custom: teams
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

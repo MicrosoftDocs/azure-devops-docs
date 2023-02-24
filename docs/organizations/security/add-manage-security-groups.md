@@ -5,8 +5,8 @@ description: Add and manage security groups in an organization using the Azure D
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: reference 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 05/06/2022
 ---

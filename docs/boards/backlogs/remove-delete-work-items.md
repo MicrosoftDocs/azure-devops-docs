@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18, contperf-fy21q2, linked-from-support"
 ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 06/01/2022

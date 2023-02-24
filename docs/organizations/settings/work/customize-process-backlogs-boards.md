@@ -5,8 +5,8 @@ description: Learn how to add and edit backlog levels for the Inheritance proces
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: how-to
 ms.date: 04/07/2021 

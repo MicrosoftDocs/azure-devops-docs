@@ -5,7 +5,7 @@ description: Configure one or more GitHub repositories to integrate with Azure B
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 11/19/2021
 ---
