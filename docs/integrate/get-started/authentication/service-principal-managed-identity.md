@@ -46,7 +46,7 @@ Further information:
 * [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 * [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-![VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWY8q]
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWY8q]
 
 #### Create a Managed Identity
 Creating managed identities in the Azure portal differs significantly from setting up applications with service principals. Before you begin the creation process, you must first consider which type of managed identity you want to create:
@@ -59,7 +59,7 @@ Some helpful links:
 * [Manage user-assigned managed identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
-![VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8K]
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8K]
 
 ### 2. Configure Azure DevOps OAuth application roles
 
@@ -128,7 +128,7 @@ Once you have completed configuring the service principal in the Azure AD portal
 
 After they're added to the organization, they can be treated similarly to standard user accounts. You can directly assign permissions to the service principal, add and remove it from security groups and teams, assign it to any access level available to users, and remove it from the organization.
 
-![VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
 
 Management of service principals does differ from user accounts in a few key ways:
 * Service principals don't have emails and as such, they can't be invited to an organization via email.
@@ -147,10 +147,10 @@ The returned access token is a JWT with the defined roles, which can be used to 
 
 #### Use the Azure AD token to authenticate to Azure DevOps resources
 In the following video example, follow along with this [sample application](https://dev.azure.com/mseng/AzureDevOps/_git/Tools.Identity?path=/ServicePrincipalsSamples/1-ConsoleApp-AppRegistration) where we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate.
-![VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
-![VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
 
 Service principals can be used to call Azure DevOps REST APIs and do most actions, but it's limited from the following operations:
 * Service principals can't be Organization Owners or create organizations.
@@ -171,7 +171,7 @@ At this time, service principals and managed identities have the same [rate limi
 At this time, service principals and managed identities are no different in pricing than a standard user license. One notable change pertains to how we treat "multi-org billing" for service principals. While users are counted as only one license no matter how many organizations they have been added to, service principals will be counted as one license per each organization they have been added to (like standard "user assignment-based billing"). 
 
 ### Q: Can I use a service principal to do git operations, like clone a repo?
-See the following example of how we've passed an [Azure AD token](#get-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
+See the following example of how we've passed an [Azure AD token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
 
 ```powershell
 $ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
@@ -181,7 +181,7 @@ git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" 
 > To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
 
 ### Q: Can I use a service principal or managed identity with Azure CLI?
-Yes! Anywhere that asks for PATs in the Azure CLI can also accept [Azure AD access tokens](#get-azure-ad-token). (We will work on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
+Yes! Anywhere that asks for PATs in the Azure CLI can also accept [Azure AD access tokens](#get-an-azure-ad-token). (We will work on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
 
 ```powershell
 # Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
