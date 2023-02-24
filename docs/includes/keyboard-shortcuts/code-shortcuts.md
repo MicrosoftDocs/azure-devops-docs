@@ -17,7 +17,7 @@ You can use the following keyboard shortcuts when you work on a page under **Cod
 
 ### Git repositories
 
-Use these shortcuts when you work in Git repositories and files.
+You can use these shortcuts when you work with Git repositories in Azure DevOps.
 
 #### Repos Git shortcuts
 
@@ -46,7 +46,7 @@ The following screenshot shows the lists of keyboard shortcuts as they appear in
 
 ### TFVC repositories
 
-Use these shortcuts when you work in TFVC repositories.
+You can use these shortcuts when you work with TFVC repositories in Azure DevOps.
 
 #### Repos TFVC shortcuts
 

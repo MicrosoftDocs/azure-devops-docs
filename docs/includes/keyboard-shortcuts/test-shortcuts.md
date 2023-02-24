@@ -7,7 +7,7 @@ ms.topic: include
 You can use the following keyboard shortcuts when you work in **Test Plans** or **Test**.  
 
 > [!NOTE]  
-> The following shortcuts are available in the web portal for Azure DevOps Services and TFS 2015.2 or later versions.
+> Test shortcuts are available in the web portal for Azure DevOps Services and TFS 2015.2 or later versions.
 
 ### Test shortcuts
 
@@ -17,13 +17,12 @@ You can use the following keyboard shortcuts when you work in **Test Plans** or 
 |m|Open shared parameters|
 |r|Open runs|
 |h|Open machines|
-|l|Open load test - TBD|
 
 The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
 :::image type="content" source="../../media/keyboard-shortcuts/test-shortcuts.png" alt-text="Screenshot that shows Test page keyboard shortcuts.":::
 
-### Test Plans shortcuts
+### Test plans shortcuts
 
 |Shortcut|Action|
 |---|---|

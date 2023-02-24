@@ -62,7 +62,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 
 ::: moniker range=">= azure-devops-2019"
 
-## Work item form
+## Work item forms
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
@@ -84,7 +84,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 
 ## Delivery plans
 
-You can use these keyboard shortcuts when you [interact with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, select **?** when you're viewing a plan on a **Boards** > **Plans** page or a **Work** > **Plans** page.
+You can use these keyboard shortcuts when you [interact with a delivery plan](../../boards/plans/review-team-plans.md). To view valid shortcuts, select **?** when you view a plan on a **Boards** > **Plans** page or a **Work** > **Plans** page.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
@@ -138,13 +138,13 @@ You can use these shortcuts when you work in Team Explorer.
 |Shift+Alt, l|Link to new work item|  
 |Enter|Open selected work item|  
 
-You can use shortcuts for query results whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
+You can use shortcuts for query results when you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)]
 
 ### Install Team Explorer  
 
-Team Explorer is a plug-in for Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017, you gain access to Team Explorer.  
+Team Explorer is a plug-in for Visual Studio. You gain access to Team Explorer when you install the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017.  
 
 ## Related articles
 

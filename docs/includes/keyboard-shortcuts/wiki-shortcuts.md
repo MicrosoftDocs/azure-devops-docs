@@ -6,18 +6,18 @@ ms.date: 04/04/2022
 
 <a id="wiki-shortcuts"></a>
 
-You can use the following keyboard shortcuts when you [manage or edit Wiki pages](../../project/wiki/add-edit-wiki.md). To view the valid shortcuts, select **?** on a **Wiki** page.
+You can use the following keyboard shortcuts when you [manage or edit wiki pages](../../project/wiki/add-edit-wiki.md). To view valid shortcuts, select **?** on a **Wiki** page.
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
-> The following shortcuts are available in the web portal for TFS 2018.2 and later versions.  
+> Shortcuts you can use when you manage or edit a wiki page are available in the web portal for TFS 2018.2 and later versions.  
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
-### Manage Wiki shortcuts
+### Manage wiki page shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -33,7 +33,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 :::image type="content" source="../../media/keyboard-shortcuts/wiki-manage-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 manage Wiki page keyboard shortcuts.":::
 
-### Edit Wiki shortcuts
+### Edit wiki page shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -55,7 +55,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 ::: moniker range="<= azure-devops-2019"
 
-### Manage Wiki shortcuts
+### Manage wiki page shortcuts
 
 |Shortcut|Action|
 |---|---|
@@ -71,7 +71,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 :::image type="content" source="../../media/keyboard-shortcuts/wiki-manage.png" alt-text="Screenshot that shows Azure DevOps 2019 manage Wiki page keyboard shortcuts.":::
 
-### Edit Wiki shortcuts
+### Edit wiki page shortcuts
 
 |Shortcut|Action|
 |---|---|
