@@ -8,7 +8,7 @@ f1_keywords:
 - vs.tfc.teamexplorer.TeamExplorer
 ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'

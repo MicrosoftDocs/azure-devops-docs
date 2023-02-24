@@ -2,7 +2,7 @@
 ms.service: azure-devops-boards
 ms.topic: include
 ms.manager: mijacobs
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.date: 05/25/2022
 ---

@@ -5,7 +5,7 @@ description: Define, capture, and triage bugs and code defects to manage technic
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.service: azure-devops-boards
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

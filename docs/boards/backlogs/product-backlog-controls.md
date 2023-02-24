@@ -5,7 +5,7 @@ description: Learn how to switch views and enable from your product or portfolio
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

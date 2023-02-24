@@ -5,7 +5,7 @@ description: Learn how to add work item tags to categorize and filter lists & bo
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

@@ -5,7 +5,7 @@ description: Use the web portal to support Kanban, plan and track work. Also, le
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'

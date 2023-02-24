@@ -5,7 +5,7 @@ description: Learn about key concepts, the glossary of terms, and available tool
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

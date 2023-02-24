@@ -6,7 +6,7 @@ ms.custom: boards-queries, cross-project, contperf-fy23
 ms.service: azure-devops-boards
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022

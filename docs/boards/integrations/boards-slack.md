@@ -7,7 +7,7 @@ ms.subservice: azure-devops-integration
 ms.topic: how-to
 ms.custom: cross-service
 ms.reviewer: karrg
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 10/20/2021

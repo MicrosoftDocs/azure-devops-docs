@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to track dependencies within teams, across teams, and across projects by using Delivery Plans in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: cross-project  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'

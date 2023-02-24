@@ -5,7 +5,7 @@ description: Best practice guidance to implement scrum and use sprint tools in A
 ms.service: azure-devops-boards
 ms.custom: boards-sprints, engagement-fy23 
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: best-practice
 monikerRange: '<= azure-devops'

@@ -8,8 +8,8 @@ metadata:
   description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Kanban, Scrum, and Agile tools. 
   ms.service: azure-devops-boards
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 06/16/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

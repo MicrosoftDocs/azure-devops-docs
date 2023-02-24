@@ -5,7 +5,7 @@ description: Understand how workflow states map to workflow category states and 
 ms.custom: seodec18   
 ms.service: azure-devops-boards
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

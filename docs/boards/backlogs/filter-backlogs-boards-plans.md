@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to apply filters to backlogs, boards, queries, and plans in Azure Boards  
 ms.custom: "boards-backlogs, boards-kanban, seodec18, contperf-fy21q3"    
 ms.service: azure-devops-boards
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

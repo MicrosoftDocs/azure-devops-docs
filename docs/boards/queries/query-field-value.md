@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to create a query by filtering on field values that are compared to other field values in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.service: azure-devops-boards
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'

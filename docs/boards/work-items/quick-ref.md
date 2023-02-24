@@ -5,7 +5,7 @@ description: Learn about query operators, macros, and sample queries used to lis
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2023

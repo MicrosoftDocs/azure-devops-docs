@@ -5,7 +5,7 @@ description: Learn how to create queries based on planning, ranking, priority, a
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'

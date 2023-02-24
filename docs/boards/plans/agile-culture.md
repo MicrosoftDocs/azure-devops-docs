@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Create an Agile culture of autonomous teams and an aligned enterprise. Create the culture by using Agile tools when working in Azure Boards and Azure DevOps.
 ms.service: azure-devops-boards
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: best-practice
 monikerRange: '<= azure-devops'

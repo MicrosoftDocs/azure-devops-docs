@@ -5,7 +5,7 @@ description: Learn how to delete test plans, test cases, test results, & other t
 ms.custom: seodec18
 ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to links work items to GitHub commits, pull requests, and issues, and automatically transition work item states in Azure Boards.  
 ms.service: azure-devops-boards 
 ms.custom: work-items, github, engagement-fy23
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'

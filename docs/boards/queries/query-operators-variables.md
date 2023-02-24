@@ -5,7 +5,7 @@ description: Learn about field data types, operators, and macros/variables used 
 ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

@@ -5,7 +5,7 @@ description: Learn how to turn live updates on or off for a Kanban board in Azur
 ms.custom: boards-kanban 
 ms.topic: how-to
 ms.service: azure-devops-boards
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

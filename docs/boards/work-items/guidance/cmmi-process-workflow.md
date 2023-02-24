@@ -6,7 +6,7 @@ description: Learn how to use the CMMI process work item types and workflow to t
 ms.service: azure-devops-boards
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 01/04/2023

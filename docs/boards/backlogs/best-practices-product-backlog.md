@@ -5,7 +5,7 @@ description: Learn best practices to manage and refine your product backlog in A
 ms.custom: "boards-backlogs, seodec18"  
 ms.service: azure-devops-boards
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: best-practice
 monikerRange: '<= azure-devops'

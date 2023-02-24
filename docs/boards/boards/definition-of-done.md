@@ -6,7 +6,7 @@ description: Learn how to support your team's shared understanding. Build this u
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

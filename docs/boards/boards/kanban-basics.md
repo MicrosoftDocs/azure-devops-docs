@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track your team's work in Azure Boards.
 ms.custom: boards-kanban  
 ms.service: azure-devops-boards
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

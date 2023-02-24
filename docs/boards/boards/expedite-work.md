@@ -6,7 +6,7 @@ description: Learn how to use swimlanes to differentiate different types of work
 ms.custom: boards-kanban, engagement-fy23 
 ms.service: azure-devops-boards
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

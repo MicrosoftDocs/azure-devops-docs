@@ -5,7 +5,7 @@ description: Learn how to implement scrum by using the sprint dashboard in Azure
 ms.service: azure-devops-boards
 ms.custom: boards-sprints, engagement-fy23 
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

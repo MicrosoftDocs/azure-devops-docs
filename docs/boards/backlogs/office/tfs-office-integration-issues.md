@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to resolve common integration issues that occur with Azure DevOps Office integrations. 
 ms.service: azure-devops-boards
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 06/27/2022

@@ -5,7 +5,7 @@ description: Learn how to add and set dates for sprints, releases, or iterations
 ms.custom: boards-sprints
 ms.service: azure-devops-boards
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'

@@ -5,7 +5,7 @@ description: Learn about default permissions and access levels in Azure Boards.
 ms.custom: boards-get-started, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

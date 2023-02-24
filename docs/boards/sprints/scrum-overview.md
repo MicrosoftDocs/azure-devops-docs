@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to implement Scrum practices, track work, and monitor progress and trends in Azure Boards. 
 ms.custom: boards-sprints, engagement-fy23
 ms.service: azure-devops-boards 
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'

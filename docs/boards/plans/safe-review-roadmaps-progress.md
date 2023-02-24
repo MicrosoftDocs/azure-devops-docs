@@ -3,7 +3,7 @@ title: View SAFe® progress, roadmaps, and metrics in Azure Boards
 titleSuffix: Azure Boards
 description: Review SAFe® metrics, progress, roadmaps, and KPIs supported by Azure DevOps and Azure Boards. 
 ms.service: azure-devops-boards
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

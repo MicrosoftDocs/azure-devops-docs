@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.article:   
 ms.assetid:  
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'

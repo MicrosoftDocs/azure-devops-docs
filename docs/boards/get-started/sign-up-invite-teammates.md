@@ -5,7 +5,7 @@ description: Learn how to sign up for and invite others to join a team project i
 ms.custom: boards-get-started
 ms.subservice: azure-devops-new-user
 ms.topic: quickstart
-ms.author: kaelli
+ms.author: chcomley
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 09/15/2021
