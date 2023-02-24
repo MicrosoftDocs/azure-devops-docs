@@ -67,7 +67,7 @@ Some helpful links:
 
 [App-only roles](/azure/active-directory/develop/custom-rbac-for-developers) can be set up in Azure AD for service principals to authorize which permissions it will be allowed. (We treat roles slightly different than described in the Azure AD documentation. Rather than a role being a combination of permissions, each role is aligned to a single Azure DevOps scope.) All of the roles to choose from can be found on this list of [Azure DevOps scopes](./oauth.md#scopes).
 
-// Insert screenshot of app roles available in Azure portal
+![Application permissions for service principals on Azure Portal](./media/sp-app-perms.png)
 
 [Assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration in the Azure portal or programmatically by using [the Microsoft Graph APIs](/graph/api/user-post-approleassignments). Each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permissions. 
 
