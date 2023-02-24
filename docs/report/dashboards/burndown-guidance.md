@@ -5,8 +5,8 @@ description: Learn how to choose and use burndown/burnup charts to review sprint
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 08/25/2022
 ---

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn about useful dashboards to create when working in Azure DevOps.
 ms.service: azure-devops-boards
 ms.custom: dashboards, engagement-fy23 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 02/23/2023

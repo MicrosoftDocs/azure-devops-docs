@@ -5,8 +5,8 @@ description: Learn about the available functions that the Power BI Data Connecto
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms date: 10/04/2021
 ---

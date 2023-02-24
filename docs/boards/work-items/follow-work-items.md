@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18, cross-project
 ms.subservice: azure-devops-settings
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/13/2022

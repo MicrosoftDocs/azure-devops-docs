@@ -5,8 +5,8 @@ description: Learn how to define the iteration and sprint fields when you assign
 ms.subservice: azure-devops-settings
 ms.custom: teams, engagement-fy23
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/10/2023

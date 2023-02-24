@@ -5,7 +5,7 @@ description: Learn about useful query charts to create and display on dashboards
 ms.service: azure-devops-boards
 ms.custom: boards-queries, engagement-fy23 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.date: 02/14/2023

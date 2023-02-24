@@ -5,7 +5,7 @@ description: Learn how to add and manage Azure DevOps work item templates to upd
 ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 ms.custom: "work-items, contperf-fy21q3"  
 monikerRange: '<= azure-devops'

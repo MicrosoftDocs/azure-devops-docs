@@ -5,7 +5,7 @@ description: Learn how to set your backlog level, view options, and column optio
 ms.custom: boards-backlogs
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/27/2022

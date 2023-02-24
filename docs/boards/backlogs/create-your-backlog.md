@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18, contperf-fy20q4"
 ms.service: azure-devops-boards
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

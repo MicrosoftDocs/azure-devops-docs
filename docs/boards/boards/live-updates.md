@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.topic: how-to
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---

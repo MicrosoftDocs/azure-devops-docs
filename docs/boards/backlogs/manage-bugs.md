@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.service: azure-devops-boards
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022

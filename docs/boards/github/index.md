@@ -6,7 +6,7 @@ ms.custom: boards-get-started
 ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 02/16/2022
 ---

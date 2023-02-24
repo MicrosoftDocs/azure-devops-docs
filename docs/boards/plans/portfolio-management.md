@@ -5,7 +5,7 @@ description: Learn how to work with a hierarchical team structure to manage prod
 ms.service: azure-devops-boards
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

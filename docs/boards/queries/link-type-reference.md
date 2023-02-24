@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.custom: work-items, cross-project, cross-service, engagement-fy23
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/18/2022

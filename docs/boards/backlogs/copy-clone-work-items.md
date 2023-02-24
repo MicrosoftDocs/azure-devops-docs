@@ -6,7 +6,7 @@ ms.custom: "seodec18, cross-project"
 ms.service: azure-devops-boards
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.author: chcomley
-author: KathrynEE 
+author: chcomley 
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

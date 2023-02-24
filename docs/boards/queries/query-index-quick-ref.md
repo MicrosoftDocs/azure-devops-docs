@@ -6,7 +6,7 @@ ms.custom: boards-queriess, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/05/2022
 ---

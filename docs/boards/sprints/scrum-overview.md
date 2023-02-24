@@ -5,7 +5,7 @@ description: Learn how to implement Scrum practices, track work, and monitor pro
 ms.custom: boards-sprints, engagement-fy23
 ms.service: azure-devops-boards 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 01/23/2023

@@ -6,7 +6,7 @@ ms.custom: boards-work-items, contperf-fy22q1
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2020'
 ms.date: 08/26/2022
 --- 

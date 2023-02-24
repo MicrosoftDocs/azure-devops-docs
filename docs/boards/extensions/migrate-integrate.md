@@ -6,7 +6,7 @@ ms.custom: extensions, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---

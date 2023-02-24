@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: include
 ms.date: 07/27/2021
 ---

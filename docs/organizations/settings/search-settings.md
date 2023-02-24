@@ -3,8 +3,8 @@ title: Search settings, organization, project, and user
 titleSuffix: Azure DevOps 
 description: Learn how to search organization, project, and user settings in Azure DevOps.  
 ms.subservice: azure-devops-settings
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 12/17/2020

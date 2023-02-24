@@ -5,7 +5,7 @@ description: Configure the Azure Boards app to connect one or more GitHub reposi
 ms.service: azure-devops-boards
 ms.topic: quickstart
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021
 ---

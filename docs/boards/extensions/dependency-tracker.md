@@ -6,7 +6,7 @@ ms.custom: extensions, archive-candidate
 ms.service: azure-devops-boards
 ms.topic: how-to 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/02/2022
 ---

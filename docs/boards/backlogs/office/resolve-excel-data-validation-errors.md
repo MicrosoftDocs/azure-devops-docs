@@ -5,7 +5,7 @@ description: Learn how to address rule errors that occur when publishing a list 
 ms.service: azure-devops-boards
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---

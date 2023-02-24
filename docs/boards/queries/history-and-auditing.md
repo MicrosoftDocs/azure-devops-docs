@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.custom: boards-queries, contperf-fy23
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022

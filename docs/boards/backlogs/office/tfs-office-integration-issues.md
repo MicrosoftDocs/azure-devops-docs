@@ -5,7 +5,7 @@ description: Learn how to resolve common integration issues that occur with Azur
 ms.service: azure-devops-boards
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 06/27/2022
 ---

@@ -5,8 +5,8 @@ description: Learn how to select and configure widgets that you add to a team da
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.topic: best-practice
 ms.custom: cross-project  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops' 
 ms.date: 06/02/2022 
 ---

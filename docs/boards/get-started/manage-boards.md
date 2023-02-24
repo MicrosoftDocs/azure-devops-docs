@@ -5,7 +5,7 @@ description: Learn concepts in Azure Boards that help you understand how to mana
 ms.service: azure-devops-boards
 ms.custom: boards-get-started
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

@@ -5,7 +5,7 @@ description: Learn how to edit or change permissions for a Delivery Plan in Azur
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

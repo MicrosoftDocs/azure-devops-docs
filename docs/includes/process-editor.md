@@ -1,8 +1,8 @@
 ---
 title: Process Editor Tool
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 01/13/2023 
 ---
 

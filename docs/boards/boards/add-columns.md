@@ -6,7 +6,7 @@ ms.custom: "boards-kanban, contperf-fy21q3"
 ms.service: azure-devops-boards
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

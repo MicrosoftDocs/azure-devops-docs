@@ -5,7 +5,7 @@ description: Learn how to customize Azure Boards to support specific SAFe® prac
 ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 06/02/2022

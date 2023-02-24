@@ -5,8 +5,8 @@ description: Learn how to configure a Burndown or Burnup widget to create charts
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: tutorial
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'  
 ms.date: 07/26/2022
 ---

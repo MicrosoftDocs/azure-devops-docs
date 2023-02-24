@@ -5,7 +5,7 @@ description: Learn how to customize your Kanban board to show fields, add column
 ms.custom: boards-get-started
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021

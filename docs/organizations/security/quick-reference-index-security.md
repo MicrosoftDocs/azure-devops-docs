@@ -5,8 +5,8 @@ description: Index to concepts and tasks for configuring security.
 ms.custom: quick-reference-index
 ms.subservice: azure-devops-security
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/13/2022
 ---

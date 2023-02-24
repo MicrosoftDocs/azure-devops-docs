@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/24/2021 

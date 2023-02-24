@@ -5,7 +5,7 @@ description: Learn how to configure Azure Boards to support epics, release train
 ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

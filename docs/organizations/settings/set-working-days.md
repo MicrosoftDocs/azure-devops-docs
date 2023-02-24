@@ -5,8 +5,8 @@ description: Learn how to choose your team's working days for capacity planning 
 ms.service: azure-devops-boards
 ms.custom: teams
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

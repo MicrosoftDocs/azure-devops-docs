@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.service: azure-devops-boards
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: chcomley
-author: KathrynEE 
+author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

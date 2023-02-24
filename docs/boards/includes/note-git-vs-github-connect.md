@@ -2,7 +2,7 @@
 ms.service: azure-devops-repos
 ms.manager: mijacobs
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: include
 ms.date: 11/04/2020
 ms.subservice: azure-devops-repos-git

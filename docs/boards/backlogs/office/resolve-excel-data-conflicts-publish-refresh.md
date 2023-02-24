@@ -5,7 +5,7 @@ description: Learn how to resolve data conflicts when publishing a work item fro
 ms.service: azure-devops-boards
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---

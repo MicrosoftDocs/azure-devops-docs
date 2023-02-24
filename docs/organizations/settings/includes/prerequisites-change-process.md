@@ -1,8 +1,8 @@
 ---
 ms.topic: include
-ms.author: kaelli
-author: KathrynEE
-ms.reviewer: kaelli
+ms.author: chcomley
+author: chcomley
+ms.reviewer: dahellem
 ms.date: 07/17/2020
 ---
 

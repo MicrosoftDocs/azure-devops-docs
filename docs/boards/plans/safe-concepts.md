@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how Scaled Agile Framework concepts map to Azure Boards artifacts.
 ms.service: azure-devops-boards
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

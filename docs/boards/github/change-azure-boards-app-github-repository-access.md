@@ -5,7 +5,7 @@ description: Learn how to configure the Azure Boards app to allow or suspend Git
 ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 07/06/2021
 ---

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how Analytics views work with Azure DevOps and Power BI integration. 
 ms.subservice: azure-devops-analytics
 ms.custom: analytics-views, engagement-fy23 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
 ms.date: 01/18/2023

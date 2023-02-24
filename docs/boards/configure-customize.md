@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.topic: overview
 ms.assetid: 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 06/02/2022 
 ---

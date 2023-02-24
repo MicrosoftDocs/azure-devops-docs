@@ -5,7 +5,7 @@ description: Create an Agile culture of autonomous teams and an aligned enterpri
 ms.service: azure-devops-boards
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

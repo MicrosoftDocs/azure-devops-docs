@@ -7,7 +7,7 @@ ms.service: azure-devops-boards
 ms.article:   
 ms.assetid:  
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

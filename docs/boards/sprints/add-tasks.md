@@ -5,7 +5,7 @@ description: Learn how to add tasks to user stories assigned to a sprint. You ca
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

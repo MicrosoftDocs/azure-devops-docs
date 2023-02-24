@@ -5,8 +5,8 @@ description: Learn how to add status, progress, and trend charts to dashboards f
 ms.custom: dashboards, contperf-fy20q4 
 ms.subservice: azure-devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 02/14/2023

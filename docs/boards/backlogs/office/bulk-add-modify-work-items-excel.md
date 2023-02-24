@@ -5,7 +5,7 @@ description: Use the Excel plugin in Azure DevOps to bulk add or modify Azure Bo
 ms.service: azure-devops-boards
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
 monikerRange: '<= azure-devops'

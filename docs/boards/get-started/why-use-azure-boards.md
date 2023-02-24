@@ -5,7 +5,7 @@ description: Understand why to use Azure Boards to track your issues, user stori
 ms.custom: "boards-get-started, seodec18"
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021

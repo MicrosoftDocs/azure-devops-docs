@@ -5,7 +5,7 @@ description: Learn about work item fields, their attributes, and how to modify t
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards 
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: how-to
 ms.date: 01/17/2023 

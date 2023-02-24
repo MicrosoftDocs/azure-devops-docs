@@ -5,7 +5,7 @@ description: Learn how to configure your Kanban board badge status. You can conf
 ms.service: azure-devops-boards
 ms.topic: quickstart
 ms.author: chcomley
-author: KathrynEE
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021
 ---

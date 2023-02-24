@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to query Analytics OData metadata, entities, entity sets.  
 ms.custom: "analytics" 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/04/2022

@@ -6,8 +6,8 @@ ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
 ms.assetid: 
 ms.topic: tutorial 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019' 
 ms.date: 02/02/2022
 ---

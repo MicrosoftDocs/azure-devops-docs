@@ -6,8 +6,8 @@ ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: conceptual 
 ms.custom: has-adal-ref
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/25/2021
 ---
