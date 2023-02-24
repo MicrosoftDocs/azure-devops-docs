@@ -3,6 +3,7 @@ title: Exploratory testing in connected mode
 description: Manual and exploratory testing - exploratory testing by using the Test & Feedback extension in Connected mode
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x

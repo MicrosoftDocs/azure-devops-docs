@@ -3,7 +3,7 @@ title: Copy or clone test plans, test suites, test cases, or other test items
 titleSuffix: Azure Test Plans  
 description: Learn how to copy or clone test plans, test suites, test cases in Azure Test Plans.  
 ms.service: azure-devops-test-plans
-ms.custom: cross-project
+ms.custom: cross-project, UpdateFrequency3
 ms.author: chcomley
 author: chcomley 
 ms.topic: tutorial
