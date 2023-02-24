@@ -3,6 +3,7 @@ title: What is Azure Test Plans? Manual, exploratory, and automated test tools.
 description: Learn about the test tools and capabilities that Azure Test Plans provides to drive quality and collaboration throughout the development process. 
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

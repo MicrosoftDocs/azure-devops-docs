@@ -8,6 +8,7 @@ metadata:
   titleSuffix: Azure DevOps 
   description: Test your software using manual and exploratory testing services to improve your overall code quality. 
   ms.service: azure-devops-test-plans
+  ms.custom: UpdateFrequency3
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
   author: chcomley 
