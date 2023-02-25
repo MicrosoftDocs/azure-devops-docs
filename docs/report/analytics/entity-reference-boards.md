@@ -427,7 +427,7 @@ For an index of all fields defined for a project, see [Field descriptions for wo
 
 ### Custom properties 
 
-Custom fields are automatically added to the Analytics service as a custom property. `Custom_` is prepended to the property name. For example, the custom field, **Risk Opportunity** is represented in the metadata as listed below. 
+Custom fields are automatically added to the Analytics service as a custom property. `Custom_` or `Custom.` is prepended to the property name. Check your collection's metadata as described in [Construct OData queries for Analytics, URL components to query the metadata](analytics-query-parts.md#url-components-to-query-the-metadata). The following example provides the metadata syntax for the custom field, **Risk Opportunity**. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

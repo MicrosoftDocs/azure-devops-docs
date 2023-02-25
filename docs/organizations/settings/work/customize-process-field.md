@@ -323,11 +323,19 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 <a id="delete-field">  </a>
 
-## Delete a field  
+## Delete a custom field  
+
+With the Inheritance process model, you can only delete custom fields. You can't delete fields defined for system default processes. 
 
 Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
 
-We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).
+> [!NOTE]   
+> We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).  
+> Or, if Analytics is enabled for your organization or collection, you can query Analytics for where a custom field is in use with the following syntax:  
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/WorkItemTypeFields?$filter=FieldReferenceName eq {CustomFieldReferenceName}&$select=WorkItemType
+> ``` 
 
 
 1. You delete the field from the **All processes>Fields** page.  
