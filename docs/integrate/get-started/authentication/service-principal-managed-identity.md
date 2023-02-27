@@ -147,9 +147,11 @@ The returned access token is a JWT with the defined roles, which can be used to 
 
 #### Use the Azure AD token to authenticate to Azure DevOps resources
 In the following video example, follow along with this [sample application](https://dev.azure.com/mseng/AzureDevOps/_git/Tools.Identity?path=/ServicePrincipalsSamples/1-ConsoleApp-AppRegistration) where we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate.
+
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
+
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
 
 Service principals can be used to call Azure DevOps REST APIs and do most actions, but it's limited from the following operations:
