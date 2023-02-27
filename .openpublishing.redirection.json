@@ -209,6 +209,11 @@
       "source_path": "docs/boards/extensions/epic-roadmap.md",
       "redirect_url": "/previous-versions/azure/devops/all/extensions/epic-roadmap",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/notifications/concepts-events-and-notifications.md",
+      "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
+      "redirect_document_id": false
     }
   ]
 }

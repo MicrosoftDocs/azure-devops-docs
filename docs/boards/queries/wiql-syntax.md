@@ -6,8 +6,8 @@ ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.author: kaelli  
-author: KathrynEE  
+ms.author: chcomley  
+author: chcomley  
 monikerRange: '<= azure-devops'
 ms.date: 10/18/2022
 ---
@@ -667,7 +667,7 @@ You can specify one of the following system link type names.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](../../reference/xml/link-type-element-reference.md). 
+You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
 ::: moniker-end
 
 - `System.LinkTypes.Hierarchy-Forward`

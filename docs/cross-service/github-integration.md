@@ -5,8 +5,8 @@ description: Learn about Azure DevOps integration with GitHub.
 ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/31/2021
 ---

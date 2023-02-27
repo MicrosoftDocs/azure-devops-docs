@@ -6,8 +6,8 @@ ms.subservice: azure-devops-security
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---

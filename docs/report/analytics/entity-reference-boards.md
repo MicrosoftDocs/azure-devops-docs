@@ -3,8 +3,8 @@ title: Work tracking metadata reference for Analytics
 titleSuffix: Azure DevOps
 description: Properties, enumerated types, and members metadata reference for the Analytics service for Azure Boards.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/07/2022
@@ -282,6 +282,7 @@ The following properties are valid for the **Areas** entity set, which is associ
 |**Area Name** | `AreaName` | String | Name defined for the Area Path when it's created.  | 
 |**Area Path** | `AreaPath` | String | Full path of the Area Path starting with the root node.   |  
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Navigation properties for the **Area** entity type and **Areas** entity set include `Project` and `Teams`.  
 
@@ -306,6 +307,7 @@ The following properties are valid for the **Iterations** entity set, which is a
 |**Iteration Path** | `IterationPath` | String |  Full path of the Iteration Path starting with the root node. The iteration must be a valid node in the project hierarchy.  <br/>`System.IterationPath`    | 
 |**Start Date** | `StartDate` | DateTime | Start date defined for the Iteration Path.   |  
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Navigation properties for the **Iteration** entity type and **Iterations** entity set include `Project` and `Teams`.  
 
@@ -425,7 +427,7 @@ For an index of all fields defined for a project, see [Field descriptions for wo
 
 ### Custom properties 
 
-Custom fields are automatically added to the Analytics service as a custom property. `Custom_` is prepended to the property name. For example, the custom field, **Risk Opportunity** is represented in the metadata as listed below. 
+Custom fields are automatically added to the Analytics service as a custom property. `Custom_` or `Custom.` is prepended to the property name. Check your collection's metadata as described in [Construct OData queries for Analytics, URL components to query the metadata](analytics-query-parts.md#url-components-to-query-the-metadata). The following example provides the metadata syntax for the custom field, **Risk Opportunity**. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

@@ -6,8 +6,8 @@ ms.custom: work-items
 ms.service: azure-devops-boards
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -83,7 +83,7 @@ If you need to add reporting services or update reports to the latest versions, 
 As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Each template provides a `version` element. This element specifies a major and minor version. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |On-premises version | Agile process name | Major version |
+> |Version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | Agile | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Agile | 17 |

@@ -5,8 +5,8 @@ description: Learn how to configure and view cumulative flow diagrams to improve
 ms.custom: dashboards 
 ms.subservice: azure-devops-analytics
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops' 
 ms.date: 04/04/2022

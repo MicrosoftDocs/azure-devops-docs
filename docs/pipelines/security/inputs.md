@@ -79,38 +79,23 @@ The setting is designed to work at organization level and at project level.
 Lets look at an example. Say the setting is on and your pipeline defines a variable named `my_variable` that isn't settable at queue time.
 :::image type="content" source="media/define-variables-classic-pipeline.png" alt-text="Screenshot of defining a variable in a classic pipeline.":::
 
-Next, assume someone wishes to run your pipeline, and they define the same variable `my_variable` at queue time.
+Next, assume you wish to run the pipeline. The _Variables_ panel doesn't show any variables, and the _Add variable_ button is missing.
 
-:::image type="content" source="media/redefine-variables-queue-time.png" alt-text="Screenshot of redefining a variable in a classic pipeline at queue time.":::
+:::image type="content" source="media/add-variables-at-queue-time-setting-on.png" alt-text="Screenshot of variables panel with setting on.":::
 
-When they try to run the pipeline, they'll get an error.
-:::image type="content" source="media/queue-error.png" alt-text="Screenshot of getting an error when running a pipeline after redefining a variable in a classic pipeline at queue time.":::
-
-> [!NOTE]
-> Currently, the _Limit variables that can be set at queue time_ setting covers only variables explicitly defined in classic build pipelines.
->
-> We're extending the scope of the _Limit variables that can be set at queue time_ setting to cover both YAML and classic build pipelines. We're gradually rolling out this extended coverage.
->
-> Once the rollout is complete and the setting is on:
->
-> * No one is able to define any new variable at queue time. Only those variables that are explicitly marked as settable at queue time can be set.
->
-> * The _Add variable_ button will be removed from the _Run pipeline_ panel.
-:::image type="content" source="media/add-variables-at-queue-time-rollout-complete.png" alt-text="Screenshot of variables tab after rollout is complete.":::
->
-> * The [Builds - Queue](/rest/api/azure/devops/build/builds/queue) and the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API calls will fail with an error similar to
-> 
-> ```json
-> {
->     "$id": "1",
->     "innerException": null,
->     "message": "You can't set the following variables (my_variable). If you want to be able to set these variables, then edit the pipeline and select Settable at queue time on the variables tab of the pipeline editor.",
->     "typeName": "Microsoft.Azure.Pipelines.WebApi.PipelineValidationException, Microsoft.Azure.Pipelines.WebApi",
->     "typeKey": "PipelineValidationException",
->     "errorCode": 0,
->     "eventId": 3000
-> }
-> ```
+Using the [Builds - Queue](/rest/api/azure/devops/build/builds/queue) and the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API calls to queue a pipeline run and set the value of `my_variable` or of a new variable will fail with an error similar to the following.
+ 
+```json
+{
+  "$id": "1",
+  "innerException": null,
+  "message": "You can't set the following variables (my_variable). If you want to be able to set these variables, then edit the pipeline and select Settable at queue time on the variables tab of the pipeline editor.",
+  "typeName": "Microsoft.Azure.Pipelines.WebApi.PipelineValidationException, Microsoft.Azure.Pipelines.WebApi",
+  "typeKey": "PipelineValidationException",
+  "errorCode": 0,
+  "eventId": 3000
+}
+```
 
 ::: moniker-end
 

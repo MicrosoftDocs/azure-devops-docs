@@ -2,14 +2,14 @@
 title: Set permissions for work tracking
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to work tracking tasks by setting object or project-level permissions for Azure DevOps
-ms.custom: "boards-permissions, linked-from-support"
+ms.custom: boards-permissions, linked-from-support, engagement-fy23
 ms.subservice: azure-devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2022
+ms.date: 02/02/2023
 --- 
 
 
@@ -172,7 +172,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 
     For example, here we added the *Disallow Access Group*, and disallowed members of this group the ability to view, modify, or edit work items in the **Account Management** area path.   
 
-    :::image type="content" source="media/work-tracking/set-area-node-permissions.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions. "::: 
+    :::image type="content" source="media/work-tracking/set-area-node-permissions-with-work-item-comments.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions. "::: 
 
     You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
@@ -200,7 +200,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 
     For example, here we've added the *Disallow Access Group*, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
 
-    :::image type="content" source="media/work-tracking/set-permissions-area-node-dialog.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions, Azure DevOps Server 2020 and earlier versions. "::: 
+    :::image type="content" source="media/work-tracking/set-permissions-area-node-dialog.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions, Azure DevOps Server 2022 and earlier versions. "::: 
  
     You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
@@ -221,13 +221,13 @@ You define both areas and iterations for a project from the **Project Settings>P
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings  for TFS 2018.](../../media/settings/open-project-settings-horz.png)  
+    > ![Screenshot showing Open Project Settings for TFS 2018.](../../media/settings/open-project-settings-horz.png)  
 
 2. Choose **Work** and then **Areas**.  
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![In the context menu, select Security for TFS 2018.](media/work-tracking/set-permissions-area-node-open.png)
+    ![Screenshot showing context menu, select Security for TFS 2018.](media/work-tracking/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -237,14 +237,20 @@ You define both areas and iterations for a project from the **Project Settings>P
 ## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
-To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's Security dialog. 
+To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's **Security** dialog. 
 
 **Query folder Permissions dialog**
 
-> [!div class="mx-imgBorder"]  
-> ![Permissions dialog for a query folder.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
+::: moniker range="azure-devops"
+:::image type="content" source="../../boards/queries/media/permissions/permissions-dialog-query-folder-azure-devops.png" alt-text="Screenshot of Permissions dialog for a query folder.":::
+::: moniker-end
 
-For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
+::: moniker range="< azure-devops"
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Permissions dialog for a query folder, Azure DevOps Server 2022 and earlier versions.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
+::: moniker-end
+
+To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
 <a id="tags" /> 
 

@@ -3,12 +3,13 @@ title:  Define iteration paths and configure team iterations
 titleSuffix: Azure Boards 
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
 ms.subservice: azure-devops-settings
+ms.custom: teams, engagement-fy23
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 02/10/2023
 ---
 
 # Define iteration paths (sprints) and configure team iterations 
@@ -100,7 +101,7 @@ Define both areas and iterations for a project from the **Project settings** > *
 1. Choose (1) **Project Settings**, expand **Boards** if needed, and then choose (2) **Project configuration** and (3) **Iterations**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Project Settings>Work>Project Configuration for Azure DevOps Server 2020 and on.](media/iterations/open-work-project-config-iterations-preview.png)   
+	> ![Screenshot of Project Settings, Project Configuration.](media/iterations/open-work-project-config-iterations-preview.png)   
 
 ::: moniker-end
 
@@ -113,7 +114,7 @@ Define both areas and iterations for a project from the **Project configuration 
 1. From the web portal, choose **Project settings**(1), select **Project configuration**(2), and then **Iterations**(3).   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Project Settings>Work>Project Configuration for Azure DevOps Server 2019.](media/iterations/open-work-project-config-iterations-vert.png)   
+	> ![Screenshot of Project Settings, Project Configuration for Azure DevOps Server 2019.](media/iterations/open-work-project-config-iterations-vert.png)   
 
 ::: moniker-end
 
@@ -123,7 +124,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then, choose **Iterations**.  
 
-![Screenshot of Open the project administration page for TFS 2018 and earlier.](../../media/settings/open-project-settings-tfs-2015.png)
+![Screenshot of Open the project administration page for TFS 2018.](../../media/settings/open-project-settings-tfs-2015.png)
 
 ::: moniker-end
 
@@ -199,15 +200,15 @@ You can add iterations in the same way that you add areas. For more information 
 
 2. To schedule the start and end dates for each sprint that your teams use, highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the iteration path and choose **Edit**.  
 
-   :::image type="content" source="media/iterations/set-dates-preview.png" alt-text="Set dates, preview page.":::
+   :::image type="content" source="media/iterations/set-dates-preview.png" alt-text="Screenshot of dialog to Set dates.":::
 
 3. Choose the calendar icon to select new dates. 
 
-   :::image type="content" source="media/iterations/schedule-sprints-calendar-preview.png" alt-text="Screenshot of Work, Iterations page, and calendar icon for selecting new dates for Azure DevOps 2020 and on.":::	
+   :::image type="content" source="media/iterations/schedule-sprints-calendar-preview.png" alt-text="Screenshot of Iterations page, and calendar icon for selecting new dates.":::	
 
 4. When you're finished, you have a set of sprints scheduled - similar to the following image: 
 
-   :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps 2020 and on.":::
+   :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Iterations page, scheduled set of sprints.":::
 
    Your next step is to [choose the sprints each team uses](#activate-team-services). 
 
@@ -223,7 +224,7 @@ From **Iterations**, you can add iterations that teams can then select for their
 
    For Scrum-based projects, you see the following set of sprints. 
 
-   :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Project Settings Context, Work, Iterations page":::
+   :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Screenshot of Project Settings Context, Work, Iterations page.":::
 
 2. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
 	
@@ -248,18 +249,18 @@ Add and modify area paths from the **Work** > **Iterations** page from the proje
 For Scrum-based projects, you see the following set of sprints. 
 
 > [!div class="mx-imgBorder"]  
-> ![Project Settings Context, Work, Iterations page](media/areas/modify-areas-its-iterations-ts.png) 
+> ![Screenshot of Project Settings, Work, Iterations page for TFS 2018.](media/areas/modify-areas-its-iterations-ts.png) 
 
 1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the iteration path and choose **Edit**.
 	
    Choose the calendar icon to choose new dates. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, and calendar icon for setting new dates in TFS 2017 through 2018.](media/iterations/schedule-sprints-calendar.png) 	
+	> ![Screenshot of Work, Iterations page, and calendar icon for setting new dates in TFS 2018.](media/iterations/schedule-sprints-calendar.png) 	
 
 2. When you're finished, you have a set of sprints scheduled - like this: 
 
-   :::image type="content" source="media/areas/modify-areas-its-iterations-scheduled-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for TFS 2017 through 2018.":::
+   :::image type="content" source="media/areas/modify-areas-its-iterations-scheduled-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for TFS 2018.":::
 
    Your next step is to [choose the sprints each team uses](#activate-team-services). 
 
@@ -337,22 +338,22 @@ You can set team defaults from team settings. If you're not a team administrator
 
 You define both areas and iterations from **Project settings > Boards > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1.  Open a backlog or board for a team and choose **Team profile** :::image type="icon" source="../../media/icons/team.png" border="false"::: > **Team Settings**. 
+1.  Open a backlog or board for a team and choose :::image type="icon" source="../../media/icons/team.png" border="false"::: **Team profile** and then **Team Settings**. 
 
 	Here we open the Board for the Web team and from there the team profile. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work Backlog or Board, choose team profile icon](media/team-defaults/open-team-profile-choose-team-settings.png)  
+	> ![Screenshot of Work Backlog or Board, choose team profile icon.](media/team-defaults/open-team-profile-choose-team-settings.png)  
 
 2. Choose **Iterations and areas**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Iterations and area](media/team-defaults/team-profile-choose-iterations-areas.png)   
+	> ![Screenshot of Team Profile, choose Iterations and area.](media/team-defaults/team-profile-choose-iterations-areas.png)   
 
 3. If you need to switch the team context, use the team selector within the breadcrumbs.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](media/team-defaults/select-team-context.png) 
+	> ![Screenshot of Team Configuration, Team breadcrumb.](media/team-defaults/select-team-context.png) 
 
 ::: moniker-end
 
@@ -361,7 +362,7 @@ You define both areas and iterations from **Project settings > Boards > Team con
 You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::. For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
-> ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
+> ![Screenshot of Open team settings for TFS 2018.](media/team-defaults/open-team-settings-horz.png) 
 
 ::: moniker-end
 
@@ -424,19 +425,19 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
    Here, we navigate to the Fabrikam Fiber Team.  
 
    > [!div class="mx-imgBorder"]
-   > ![Project settings>Work>Team Configuration>Iterations page](media/team-defaults/open-team-settings-iterations-vert.png)  
+   > ![Screenshot of Project settings, Team Configuration, Iterations page.](media/team-defaults/open-team-settings-iterations-vert.png)  
 
 2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
 
-	![Work, Iterations page for team, set team backlog iteration for backlogs and boards](media/team-defaults/stdefaults-team-backlog-iteration.png)
+	![Screenshot of Iterations page for team, set team backlog iteration for backlogs and boards.](media/team-defaults/stdefaults-team-backlog-iteration.png)
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
 3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team backlog or Kanban board. You can specify any iteration defined under the **Backlog iteration** path. To assign new work items to the current iteration, specify **@CurrentIteration**. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
 
-	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.  
+	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.
 
-	![Screenshot of Work, Iterations page for team, set team default for new work items for Azure DevOps Server 2019 and on.](media/team-defaults/stdefaults-team-default-iteration-vert.png)
+	![Screenshot of Work, Iterations page for team, set team default for new work items.](media/team-defaults/stdefaults-team-default-iteration-vert.png)
 
 	> [!NOTE]   
 	> New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint. 
@@ -444,12 +445,12 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Work, Iterations page for team, select sprints for Azure DevOps Server 2019 and on.](media/team-defaults/select-iterations.png)
+	> ![Screenshot of Work, Iterations page for team, select sprints.](media/team-defaults/select-iterations.png)
 
 	When you're done, you should see a list of sprints, similar to the following.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Work, Iterations page for team, activates sprint list for Azure DevOps Server 2019 and on.](media/team-defaults/selected-iterations.png) 
+	> ![Screenshot of Work, Iterations page for team, activates sprint list.](media/team-defaults/selected-iterations.png) 
 
 	If you don't see the sprints or dates that you need, you can add or edit iterations for the project, provided you have the required permissions. For more information, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
@@ -463,28 +464,28 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	Here, we navigate to the Fabrikam Fiber Team.  
 
-	![Work, Iterations page for team](../../boards/sprints/media/dsprints-team-work-iterations-page.png)  
+	![Screenshot of Work, Iterations page for a team.](../../boards/sprints/media/dsprints-team-work-iterations-page.png)  
 
     <a id="set-backlog-iteration">  </a>
 2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
 
-    ![Work, Iterations page for team, set team backlog iteration for backlogs and boards](media/team-defaults/stdefaults-team-backlog-iteration.png)
+    ![Screenshot of Work, Iterations page for a team, set team backlog iteration for backlogs and boards.](media/team-defaults/stdefaults-team-backlog-iteration.png)
 
     Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
 3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team dashboard and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
 
-	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.  
+	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.
 
-	![Screenshot of Work, Iterations page for team, set team default for new work items for TFS 2017 through 2018.](media/team-defaults/stdefaults-team-default-iteration.png)
+	![Screenshot of Work, Iterations page for team, set team default for new work items for TFS 2018.](media/team-defaults/stdefaults-team-default-iteration.png)
 
 4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 
- 	![Screenshot of Work, Iterations page for team, select sprint to activate for TFS 2017 through 2018.](../../boards/sprints/media/dsprints-add-sprints-to-team-iterations-page.png)
+ 	![Screenshot of Work, Iterations page for team, select sprint to activate for TFS 2018.](../../boards/sprints/media/dsprints-add-sprints-to-team-iterations-page.png)
 
 	When you're done, you should see a list of sprints, similar to the following.  
 
-	![Screenshot of Work, Iterations page for team, activates sprint list for TFS 2017 through 2018.](../../boards/sprints/media/dsprints-selected-active-sprints.png) 
+	![Screenshot of Work, Iterations page for team, activates sprint list for TFS 2018.](../../boards/sprints/media/dsprints-selected-active-sprints.png) 
 
 	If you don't see the sprints or dates that you need, then [return to the project administration context and define them there](set-iteration-paths-sprints.md#define-sprints-team-services).  
 
@@ -550,23 +551,23 @@ az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "S
 
 * * *
 
-<a name="rename-delete"></a>
+<a name="rename"></a>
 
-## Rename, move, or delete an iteration 
+## Rename or move an iteration 
 
 When you rename an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path(s). 
 
 #### [Browser](#tab/browser/)
 
-1. To rename an iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
+1. To rename an iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the node, and then select **Edit**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Open Work>Project Configuration in browser.](media/iterations/edit-iteration-path.png)  
+	> ![Screenshot of Open Work, Project Configuration in browser.](media/iterations/edit-iteration-path.png)  
 
 2. In the dialog that opens, enter the new name. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Open Work>Project Configuration dialog in browser.](media/iterations/edit-iteration-path-dialog.png)
+	> ![Screenshot of Open Work, Project Configuration dialog in browser.](media/iterations/edit-iteration-path-dialog.png)
 
 3. To move the node within the hierarchy, change the Location field. 
 
@@ -589,10 +590,6 @@ To rename or move a project iteration path, use the `az boards area project upda
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-az boards iteration project delete --path
-                                   [--project]
-                                   [--yes]
-
 az boards iteration project update --path
                                    [--child-id]
                                    [--finish-date]
@@ -630,7 +627,52 @@ ID     Identifier                            Name      Start Date            Fin
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-* 
+
+
+<a name="delete-path"></a>
+
+## Delete an Iteration Path
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
+#### [Browser](#tab/browser/)
+
+When you delete an **Iteration Path**, you must provide an **Iteration Path** to use to update the work items assigned to the **Iteration Path** you want to delete. 
+
+1. To delete an **Iteration Path**, open the web portal **Project settings>Project configuration>Iterations** page.
+
+1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the node, and select **Delete** or **Remove**.  
+
+1. In the dialog that opens, select the **Iteration Path** to reassign work items to, and then choose **Delete path**.
+
+    :::image type="content" source="media/iterations/delete-iteration-path-dialog.png" alt-text="Screenshot of Delete iteration dialog.":::
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+To delete a project iteration path, use the [`az boards area project delete`](/cli/azure/boards/iteration/project) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+
+> [!div class="tabbedCodeSnippets"]
+```azurecli
+az boards iteration project delete --path
+                                   [--project]
+                                   [--yes]
+``` 
+
+#### Parameters
+ 
+- **path**: Required. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.   
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".   
+- **yes**: Optional. Do not prompt for confirmation.
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+* * *
+
+
 <a name="export"></a>
 
 ### Export/import iteration paths  

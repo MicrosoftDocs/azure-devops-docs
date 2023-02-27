@@ -3,8 +3,8 @@ title: OData metadata for Analytics
 titleSuffix: Azure DevOps  
 description: Learn about the entity model OData metadata defined for Analytics in Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/08/2022

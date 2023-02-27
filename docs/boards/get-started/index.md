@@ -5,8 +5,8 @@ description: Learn how to sign up and start using Azure Boards. Use Azure Boards
 ms.custom: boards-get-started 
 ms.subservice: azure-devops-new-user
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 09/15/2021
 ---

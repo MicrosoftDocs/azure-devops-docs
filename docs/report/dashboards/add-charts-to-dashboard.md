@@ -5,8 +5,8 @@ description: Learn how to add system-generated charts or query-based charts to a
 ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2022
 ---

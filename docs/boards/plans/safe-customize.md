@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to customize Azure Boards to support specific SAFe® practices.
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 06/02/2022

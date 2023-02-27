@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn concepts in Azure Boards that help you understand how to manage your project.
 ms.service: azure-devops-boards
 ms.custom: boards-get-started
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

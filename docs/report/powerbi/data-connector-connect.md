@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to connect to Power BI Data Connector and Analytics to access Azure DevOps data.
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms date: 10/04/2021

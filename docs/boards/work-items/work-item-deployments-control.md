@@ -5,8 +5,8 @@ description: Learn how to link work items to other objects to improve traceabili
 ms.custom: boards-work-items, contperf-fy22q1  
 ms.service: azure-devops-boards
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2020'
 ms.date: 08/26/2022
 --- 

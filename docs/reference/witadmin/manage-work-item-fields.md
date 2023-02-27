@@ -6,8 +6,8 @@ ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 12/01/2022
 ---

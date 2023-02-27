@@ -5,9 +5,9 @@ description: Learn how to publish and enable refresh of a Power BI Desktop file 
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
-ms.author: kaelli
+ms.author: chcomley
 monikerRange: '>=azure-devops-2019'
-author: KathrynEE
+author: chcomley
 ms.date: 10/05/2021
 ---
 

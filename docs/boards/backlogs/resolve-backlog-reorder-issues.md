@@ -6,8 +6,8 @@ ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/26/2021
 ---
@@ -38,7 +38,7 @@ Use this article to fix the issues that occur and that display one of the follow
 
 The following image indicates the natural hierarchy for the Agile, Scrum, and Capability Maturity Model Integration (CMMI) processes. Along with these work item types, other custom work item types may be added to backlogs and boards. Also, custom backlog levels may be added. 
 
-![Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.](../../reference/media/create-hierarchy-with-different-wits.png) 
+![Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.](media/resolve/create-hierarchy-with-different-wits.png) 
 
 You break this natural hierarchy when you create same-category links between work items. 
 

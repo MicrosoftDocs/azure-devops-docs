@@ -3,7 +3,7 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '= azure-devops'
 ms.topic: conceptual
-ms.date: 01/26/2023
+ms.date: 02/09/2023
 ---
 
 # Agent software version 3 preview
@@ -16,7 +16,7 @@ If you're running your self-hosted agents on newer operating systems [supported 
 
 ## Upgrade to 3.x agent on unsupported operating systems
 
-If you're running your self-hosted agents on an operating system supported by the current version 2.x agent software built using [.NET Core 3.1](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) that isn't supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
+If you're running your self-hosted agents on an operating system that isn't supported by .NET 6, you must update your machines to use a newer supported operating system [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 
 The following list of operating systems are commonly used for self-hosted 2.x agents. These operating systems aren't supported by .NET 6 and can't be used to run the new .NET 6 based version 3.x agent.
 
@@ -29,7 +29,7 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 | Ubuntu | < 18.04 LTS |
 | macOS | < 10.15 |
 
-You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools will be able to upgrade from 2.x to 3.x.
+You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools are able to upgrade from 2.x to 3.x.
 
 ## Install agent version 3.x preview
 
@@ -43,7 +43,7 @@ To use the new version 3 agent, install the latest .NET 6 agent from the pre-rel
 
 ### What is the difference between the 2.x and 3.x agents?
 
-The 2.x agents (e.g., 2.212) are .NET Core 3.1 and the 3.x agents (e.g., 3.212) are .NET 6. During Phase I and II, we'll have both versions simultaneously with the 3.x versions being in prerelease.
+The 2.x agents (for example 2.212) are .NET Core 3.1 and the 3.x agents (for example 3.212) are .NET 6. During Phase I and II, both versions are available, with the 3.x versions being in prerelease.
 
 ### How can I check my agents to see if they can upgrade to 3.x?
 
@@ -60,6 +60,14 @@ You should migrate to a newer operating system that is supported by .NET 6 now. 
 ### Can I stay on 2.x agents if I am not working on any changes in my project anymore?
 
 No. The pipelines team is regularly adding new features to Azure Pipelines and some of them may require an update to the agent even though your pipeline does not explicitly depend on that feature. When you prevent auto-upgrades of the agent using the guidance in a follow-up blog, that agent cannot be used to schedule the pipeline. If no agent with the required capabilities can be found, the pipeline execution will fail.
+
+### Do I have to install .NET 6 before installing the 3.x agent software?
+
+You don't have to install .NET 6 on your agent machine before installing and configuring the 3.x agent software. All .NET dependencies the 3.x agent requires are part of the agent itself.
+
+### Do I have to build my code using .NET 6 if I am using the 3.x agent?
+
+The version of .NET used to run the 3.x agent is self-contained in the agent installation, and isn't used to build your code. The version of .NET that is used to build your code depends on the pipeline and the version or versions of .NET you have installed onto your agent machine. 
 
 ### I use Azure DevOps Server and not Azure DevOps Service. Does this change impact me?
 

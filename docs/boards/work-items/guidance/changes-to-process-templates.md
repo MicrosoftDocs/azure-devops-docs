@@ -6,8 +6,8 @@ ms.service: azure-devops-boards
 ms.custom: engagement-fy23
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/17/2023
 ---
@@ -45,7 +45,7 @@ The following changes were introduced as indicated.
 
 The following changes were introduced with Azure DevOps Server 2019.
 
-- Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in [Add work item queries to a process template](../../../reference/process-templates/add-work-item-queries-process-template.md).  
+- Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in [Add work item queries to a process template](/previous-versions/azure/devops/reference/process-templates/add-work-item-queries-process-template).  
 
 ## TFS 2017 and earlier versions
 

@@ -7,6 +7,9 @@
   items:
   - name: Dashboards quick reference
     href: dashboards/quick-ref.md
+  - name: Define your dashboard focus
+    href: dashboards/dashboard-focus.md
+    displayname: project, team, example
   - name: Add, rename, & delete dashboards
     href: dashboards/dashboards.md
     displayname: filter, dashboard, auto-refresh, add widget, delete widget
@@ -40,6 +43,9 @@
   - name: Configure charts for work items 
     href: dashboards/configure-chart-work-items-widget.md
     displayname: tags, flat, query
+  - name: Example query charts
+    href: ../boards/queries/example-query-charts.md
+    displayname: status, monitor, trend, widgets  
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics

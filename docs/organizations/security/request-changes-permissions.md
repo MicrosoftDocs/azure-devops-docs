@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: How-to guide for finding and increasing permission levels needed to perform select tasks in Azure DevOps.
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/11/2022

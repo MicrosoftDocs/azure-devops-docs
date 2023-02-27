@@ -5,8 +5,8 @@ description: Define Azure Boards features and epics to organize your product and
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 05/24/2022

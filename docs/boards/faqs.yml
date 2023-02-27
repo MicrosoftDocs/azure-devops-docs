@@ -4,8 +4,8 @@ metadata:
   description: Answers to frequently asked questions about Azure Boards 
   titleSuffix: Azure Boards
   ms.service: azure-devops-boards
-  ms.author: kaelli
-  author: KathrynEE
+  ms.author: chcomley
+  author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"

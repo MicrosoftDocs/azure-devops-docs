@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Add & update work items, view work tracking progress with Stakeholder access
 ms.service: azure-devops-boards
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  

@@ -4,8 +4,8 @@ titleSuffix: TFS
 description: How to configure a project portal for Azure DevOps
 ms.subservice: azure-devops-projects 
 ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

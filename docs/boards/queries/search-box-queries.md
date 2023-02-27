@@ -5,8 +5,8 @@ description: Learn how to use the search box to quickly filter for assigned to, 
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

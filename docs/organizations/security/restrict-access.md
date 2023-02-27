@@ -5,8 +5,8 @@ description: How to set permissions to grant or restrict access to select build,
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: overview
 ms.subservice: azure-devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/10/2022 
 --- 
@@ -17,7 +17,7 @@ ms.date: 02/10/2022
 
 You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
-If you're new to administrating permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md)to learn about permission states and inheritance.
+If you're new to administrating permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md) to learn about permission states and inheritance.
 
 In this article you learn how to do the following tasks: 
 

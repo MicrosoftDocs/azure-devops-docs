@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps & TFS
 description: Receive the error when you try to connect to Azure DevOps Services or an on-premises Azure DevOps Server.
 ms.service: azure-devops-boards
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 04/22/2019
 ---

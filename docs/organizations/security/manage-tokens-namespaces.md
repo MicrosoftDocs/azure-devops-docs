@@ -5,8 +5,8 @@ description: Manage security permissions using az devops security permission com
 ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/31/2022
 ---
