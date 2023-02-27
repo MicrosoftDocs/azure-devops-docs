@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to address rule errors that occur when publishing a list from Excel to Azure Boards. 
 ms.service: azure-devops-boards
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---

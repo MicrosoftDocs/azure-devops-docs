@@ -5,8 +5,8 @@ description: Add States, Transitions, Reasons, or Actions to customize the workf
 ms.service: azure-devops-boards
 ms.custom: archive-candidate
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 03/31/2017
@@ -31,7 +31,16 @@ The workflow determines the logical progression and regression of work that team
 > For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
 
-[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
+<a id="update-xml-wit"></a>
+
+## Update the XML definition for a work item type
+
+If you are new to WIT customization, note the following: 
+ 
+- To customize any aspect of a work item type, you must update its XML definition. The XML definition is described in [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)   
+- If you are customizing the web form that uses the new work item experience, you'll want to reference the [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)  
+- If you are customizing a client form for use with Visual Studio, you'll want to reference the [Layout XML element reference](/previous-versions/azure/devops/reference/xml/layout-xml-element-reference) 
+- Follow the sequence of steps outlined in [Customize the work item tracking web form](../customize-wit-form.md).
 
 
 To customize the workflow, follow these two steps:   

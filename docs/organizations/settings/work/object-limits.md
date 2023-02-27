@@ -5,8 +5,8 @@ description: Limits placed on the number of objects that can be specified for wo
 ms.custom: "inherited-process, linked-from-support, cross-project"
 ms.service: azure-devops-boards
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
 ms.date: 07/07/2022
@@ -57,10 +57,10 @@ A work item revision limit of 10,000 is in effect for updates made through the R
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
 
-The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
+The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 ::: moniker-end
 
-To improve query performance, see [ Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md).
+To improve query performance, see [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md).
 
 ## Backlogs, boards, dashboards, and teams
 

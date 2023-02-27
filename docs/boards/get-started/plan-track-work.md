@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to plan and track work in your new Kanban team project in Azure Boards.
 ms.custom: boards-get-started
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -567,7 +567,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Task Type](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+      [Task Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (CMMI only)
    :::column-end:::
    :::column span="3":::
       Select the kind of task to implement from the allowed values:</p>

@@ -6,8 +6,8 @@ description: Requirements for consistency in labeling objects like organizations
 ms.subservice: azure-devops-settings
 ms.topic: conceptual
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 05/24/2022
 ---
@@ -128,7 +128,7 @@ Files attached to work items must conform to the following restrictions.
       - Default maximum size: 4,096 kilobytes
       - Absolute maximum size: 2 gigabytes  
       ::: moniker range="< azure-devops"
-      [Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md)
+      [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items)
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -335,7 +335,7 @@ Help text that you add must conform to the following restrictions.
 
 ### Global lists 
 
-A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and projects. See [Define global lists](../../reference/xml/define-global-lists.md) for details.
+A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises Azure DevOps Server. As you define work item types, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple work item types and projects. For details, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).
 
 A global list, defined using the ```GLOBALLIST``` element contains one or more list items, specified using the ```LISTITEM``` element.
 

@@ -5,8 +5,8 @@ description: Learn how to download Azure DevOps clients and navigate in Team Exp
 keywords: Download Azure DevOps clients 
 ms.subservice: azure-devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022

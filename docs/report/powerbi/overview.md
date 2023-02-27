@@ -5,8 +5,8 @@ description: Learn about the different integration options you can use to connec
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.subservice: azure-devops-analytics
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>=azure-devops-2019'
 ms.date: 12/13/2022
 ---

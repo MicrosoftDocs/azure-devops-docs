@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps Services
 description: Description of limits and rate limits on the Azure DevOps Service
 ms.topic: conceptual
 ms.subservice: azure-devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 01/03/2023
 ---

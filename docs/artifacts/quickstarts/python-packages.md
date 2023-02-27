@@ -24,7 +24,7 @@ This guide will walk you through using Azure Artifacts to publish and consume Py
 There are two primary ways to connect to a feed to publish or consume your Python packages:
 
 1. Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package, which will automatically set up authentication for you.
-1. Manually set up credentials for your *pip.ini*/*pip.conf* for pushes, and *.pypirc* for pulls with a personal access token (PAT).
+1. Manually set up credentials for your *.pypirc* pushes, and your *pip.ini*/*pip.conf* for pulls with a personal access token (PAT).
 
 > [!NOTE]
 > **artifacts-keyring** is not supported on newer versions of Ubuntu.

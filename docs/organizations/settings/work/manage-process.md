@@ -5,8 +5,8 @@ description: Add custom fields, work item types, and more by creating and applyi
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 07/08/2022

@@ -5,8 +5,8 @@ description: Learn how to configure your project's backlogs and boards. Also, le
 ms.custom: boards-backlogs    
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

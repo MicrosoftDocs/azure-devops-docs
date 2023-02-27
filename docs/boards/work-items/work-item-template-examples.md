@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about sample work item templates you can use to pre-populate fields and provide guidance in work item forms. 
 ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -110,9 +110,9 @@ An often requested feature is to allow the creation of a work item that automati
 If your project uses the On-premises XML process model to customize work tracking, you can add help text, hyperlinks, or web content to a form to provide guidance. 
 
 To learn more, see the following articles: 
-- [WebLayout and Control elements](../../reference/xml/weblayout-xml-elements.md)
+- [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
 - [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md)
-- [Edit a WIT definition to add web content to a work item form](../../reference/xml/edit-wit-definition-add-web-content-form.md)
+- [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form)
  
 ::: moniker-end
 

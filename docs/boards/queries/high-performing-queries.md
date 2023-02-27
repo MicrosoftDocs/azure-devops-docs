@@ -5,8 +5,8 @@ description: Learn how to create high-performing work item queries in Azure Boar
 ms.custom: "boards-queries, linked-from-support"  
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 01/31/2022  

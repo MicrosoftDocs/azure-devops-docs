@@ -2,8 +2,8 @@
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 05/20/2021
 ---

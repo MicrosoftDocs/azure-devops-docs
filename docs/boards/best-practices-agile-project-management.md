@@ -5,8 +5,8 @@ description: Get started guide for project managers new to Azure Boards to plan 
 ms.service: azure-devops-boards
 ms.topic: best-practice
 ms.custom: cross-project  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops' 
 ms.date: 06/02/2022 
 ---

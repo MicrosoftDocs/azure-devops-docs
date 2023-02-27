@@ -3,10 +3,10 @@ title: Link work items to support traceability in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to support an auto trail of changes and enable quick navigation by linking work items together.
 ms.service: azure-devops-boards
-ms.custom: boards-queries, cross-project, cross-service, contperf-fy23
+ms.custom: work-items, cross-project, cross-service, contperf-fy23, engagement-fy23
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022
@@ -186,7 +186,7 @@ The link types used to construct these links&mdash;as illustrated in the followi
 
 ![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
 
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements#development-links-control?view=tfs-2017&preserve-view=true). 
 
 ::: moniker-end
 

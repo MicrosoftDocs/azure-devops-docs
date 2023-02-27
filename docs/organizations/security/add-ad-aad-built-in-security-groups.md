@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
 ms.subservice: azure-devops-security
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

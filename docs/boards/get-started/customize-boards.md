@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to customize your Kanban board to show fields, add columns, and change card color.
 ms.custom: boards-get-started
 ms.subservice: azure-devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021

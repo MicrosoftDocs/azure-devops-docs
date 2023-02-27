@@ -6,8 +6,8 @@ description: Learn how to use Scrum process objects to plan and track work, moni
 ms.service: azure-devops-boards
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -92,9 +92,9 @@ As updates are made to the Scrum process template, the version number is updated
 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |TFS version | Scrum process name | Major version |
+> |Version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
+> | Azure DevOps Services<br/>Azure DevOps Server 2022 | Scrum | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Scrum | 17 |
 > | TFS 2018 | Scrum | 16 |
 

@@ -6,8 +6,8 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/05/2023
 ---

@@ -238,14 +238,14 @@ The `okText` and `cancelText` attributes can be used to specify alternate titles
     };
 ```
 
-To not show any buttons on the dialog, you can set the `buttons` attribute to `null`:
+To not show any buttons on the dialog, you can set the `buttons` attribute to `[]`:
 
 ```javascript
     var dialogOptions = {
         title: "My Dialog Title",
         width: 800,
         height: 600,
-        buttons: null
+        buttons: []
     };
 ```
 

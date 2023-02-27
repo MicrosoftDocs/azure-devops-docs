@@ -6,10 +6,10 @@ ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: how-to
 ms.reviewer:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/11/2022  
+ms.date: 02/16/2023
 ---
 
 # Export a list of users and their access levels
@@ -19,18 +19,16 @@ ms.date: 05/11/2022
 <a id="export-audit-log" >  </a>
 
 ::: moniker range="azure-devops"
-You can get a list of users and groups that have access to your organization in Azure DevOps by exporting users. The downloaded list also indicates which access level has been granted.
+You can get a list of users and groups that have access to your organization in Azure DevOps by exporting users. The downloaded list also indicates access levels.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.
+You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-You can get a list of users and groups that have access to your Team Foundation Server (TFS) instance by exporting the audit log. The audit log also indicates which access level has been granted.
+You can get a list of users and groups that have access to your Team Foundation Server (TFS) instance by exporting the audit log. The audit log also indicates access levels.
 ::: moniker-end
-
-[!INCLUDE [important-backed-by-azure-active-directory](../audit/includes/important-backed-by-azure-active-directory.md)]
 
 ## Prerequisites
 
@@ -75,7 +73,7 @@ From your web portal, you can get a list of the users in your organization and v
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
+You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates access levels.  
 
 1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
 
@@ -90,7 +88,7 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Export audit log, Azure DevOps Server 2019 and 2020, Web portal, ](media/export-users-audit/export-audit-log-2019.png)  
 
-3. The user log file is saved as a .csv file to your Download folder.  
+3. The user log file saves as a .csv file to your Download folder.  
 
 	To determine the access level assigned to each user or group, open the file in Excel.
 
@@ -98,7 +96,7 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 
 ::: moniker range="tfs-2018"
 
-You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
+You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates access levels.  
 
 1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
@@ -111,7 +109,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 	> [!NOTE]
 	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 
 
-3. The user log file is saved as a .csv file to your Download folder.  
+3. The user log file saves as a .csv file to your Download folder.  
 	To determine the access level assigned to each user or group, open the file in Excel.
 
 ::: moniker-end
@@ -126,7 +124,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command, which doesn't apply to users added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user list [--org] [--skip] [--top]

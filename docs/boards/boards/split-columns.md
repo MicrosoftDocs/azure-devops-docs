@@ -6,8 +6,8 @@ description: Learn how to implement the Kanban pull model by dividing each colum
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

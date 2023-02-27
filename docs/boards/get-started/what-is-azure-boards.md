@@ -5,8 +5,8 @@ description: Learn about the Agile tools Azure Boards provides.
 ms.custom: boards-get-started, contperf-fy22q2
 ms.subservice: azure-devops-new-user
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 12/01/2021

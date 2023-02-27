@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards.
 ms.custom: boards-sprints, engagement-fy23 
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 01/23/2023

@@ -5,8 +5,8 @@ description: Learn how Azure Boards supports work items to plan, track, & collab
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 01/05/2023
@@ -76,7 +76,7 @@ You can add or modify the fields contained within a work item type, add a custom
 
 ## Work item form and Details tab
 
-The work item form shows the fields used to track information related to each work item. In general, you define and update a work item through it's work item form, although other methods are available to bulk import, export, update, and modify work items. For an overview of all form controls, see [Work item form controls](work-item-form-controls.md). 
+The work item form shows the fields used to track information related to each work item. In general, you define and update a work item through its work item form, although other methods are available to bulk import, export, update, and modify work items. For an overview of all form controls, see [Work item form controls](work-item-form-controls.md). 
 
 Each work item form contains several tabs. The **Details** tab contains the common fields, other fields defined for the work item type, and the **Discussion** control. Common fields defined for all work item types display at the top of the work item form. As shown in the following image, these fields include the following fields: **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration**.  You can update these fields at any time. 
 
@@ -107,7 +107,7 @@ The following common fields appear in most work items in the header area of the 
 
 ### Track active, open, resolved, or closed work items
 
-Workflow states define how a work item progresses from its creation to closure. Workflow states also determine whether a work item appears on a backlog or board as described in [How workflow category states are used in Azure Boards backlogs and boards](/workflow-and-state-categories.md). 
+Workflow states define how a work item progresses from its creation to closure. Workflow states also determine whether a work item appears on a backlog or board as described in [How workflow category states are used in Azure Boards backlogs and boards](workflow-and-state-categories.md). 
 
 The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are *New*, *Active*, *Resolved*, *Closed*, and *Removed*. The following images illustrate the natural progressions and regressions for User Stories (Agile), Issues (Basic), Product Backlog Items (Scrum), or Requirements (CMMI). Similar progressions and regressions are defined for other work item types for each process.  
  

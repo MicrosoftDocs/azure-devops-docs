@@ -5,8 +5,8 @@ description: Summary of what you can and can't customize in a process template t
 ms.service: azure-devops-boards
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---

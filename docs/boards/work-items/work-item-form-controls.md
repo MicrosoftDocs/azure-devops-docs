@@ -6,10 +6,10 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
-ms.date: 01/04/2023
+ms.date: 02/03/2023
 ---
 
 # Work item form controls 
@@ -115,9 +115,21 @@ With each update, the Reason field also updates and changes are recorded in the 
 
 By linking work items using Related or Dependent link types, you can track work that is dependent on other work. Each work item contains one or more tabs with link controls. These controls support linking the work item to one or more objects.  
 
-There are three links controls provided on most forms. The Development and Related Work scoped links controls appear on the Details tab. The ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab provides access to all links made to the work item.  
 
-![Bug work item form, Agile process, Development and Related links controls](../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png)  
+::: moniker range=">= azure-devops-2020"
+
+There are four links controls provided on most forms. The **Deployment**, **Development**, and **Related Work** scoped links controls appear on the **Details** tab. The ![Links page icon](../media/icons/icon-links-tab-wi.png) **Links** tab provides access to all links made to the work item.  
+
+:::image type="content" source="media/linkscontrol-bug-form-dev-related-links-azure-devops.png" alt-text="Screenshot of Bug work item form, Agile process, Deployment, Development, and Related links controls.":::
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+There are three links controls provided on most forms. The **Development** and **Related Work** scoped links controls appear on the **Details** tab. The ![Links page icon](../media/icons/icon-links-tab-wi.png) **Links** tab provides access to all links made to the work item.  
+
+![Screenshot of Bug work item form, Agile process, Development and Related links controls.](media/linkscontrol-bug-form-dev-related-links.png)  
+
+::: moniker-end
 
 
 ## Add links  
@@ -126,21 +138,44 @@ From each links control, you can complete these actions:
 
 - To open an associated item or object, select the linked item  
 - To delete a link, highlight it and select the ![delete icon](../media/icons/delete_icon.png) delete icon   
-- To link to an existing item, or create and link a new work item, select one of the menu options.  
+- To link to an existing work item, or create and link to a new work item, select one of the menu options from the **Related Work** control.  
 
-![Links control menu of options](../../reference/xml/media/linkscontrol-related-work-menu-options.png)  
+::: moniker range=">= azure-devops-2019"
+:::image type="content" source="media/linkscontrol-related-work-menu-options-azure-devops.png" alt-text="Screenshot of Related Links control menu options. ":::
+::: moniker-end
+ 
+::: moniker range="tfs-2018"
+![Screenshot of Related Links control menu options, TFS 2018.](media/linkscontrol-related-work-menu-options.png)  
+::: moniker-end
 
 To learn more, see [Add links to work items](../backlogs/add-link.md).
 
+<a id="deployment">  </a>
+
+::: moniker range=">= azure-devops-2020"
+
+### Deployment control  
+
+The **Deployment** control supports a quick view of where and when a work item has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. 
+To learn more, see [Link work items to builds and deployments](work-item-deployments-control.md).
+
+:::image type="content" source="media/deployments-control/deployment-control-intro.png" alt-text="Screenshot of Deployment control with links to production and staging runs. "::: 
+
+::: moniker-end
+
+
 <a id="git-development">  </a>
 
-### Development scoped links control  
+### Development control  
 
-The Development links control displays all of your development links, whether based on a git or Team Foundation version control (TFVC) repository. It displays links in a set order, and provides calls-to-action that support users to [drive development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).  
+The **Development** control displays all of your development links, whether based on a Git repository or Team Foundation version control (TFVC) repository. It displays links in a set order, and provides calls-to-action that support users to [drive development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).  
+
+Git lets you link work items to commits by using the **Commit**, **Pull Request**, or **Branch link** types. To learn how, see [Manage and commit your changes](../../repos/git/commits.md).  
+
+If you've connected your Azure DevOps project to a GitHub repository, you can link to GitHub commits, PRs, and issues. To learn how, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the Changeset and Versioned Item link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-Git lets you link work items to commits by using the Commit link type. To learn how, see [Manage and commit your changes](../../repos/git/commits.md).  
 
 ### Related scoped links control 
 

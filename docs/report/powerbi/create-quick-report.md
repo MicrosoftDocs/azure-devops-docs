@@ -3,8 +3,8 @@ title: Create a Power BI report with an Analytics view
 titleSuffix: Azure DevOps
 description: Learn how to create a trend report using an Analytics view.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
 ms.date: 11/08/2022

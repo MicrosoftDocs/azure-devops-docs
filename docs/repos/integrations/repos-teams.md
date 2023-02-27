@@ -6,8 +6,8 @@ ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to 
 ms.custom: cross-service
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: 'azure-devops'
 ms.date: 12/16/2022
 ---

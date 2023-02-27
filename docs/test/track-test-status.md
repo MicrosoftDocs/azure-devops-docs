@@ -3,6 +3,7 @@ title: View progress report
 titleSuffix: Azure Test Plans
 description: Learn how to view the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

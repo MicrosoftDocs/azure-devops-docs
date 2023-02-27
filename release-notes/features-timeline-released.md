@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/25/2023
+ms.date: 2/24/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -37,6 +37,20 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="5"><a href="2023/sprint-217-update.md" data-raw-source="[17 February 2023](2023/sprint-217-update.md)"> 17 February 2023</a></td>
+    <td>License source column in user list export</td><td>General</td><td>Future</td></tr>
+    <td>Interactive boards reports</td><td>Boards</td><td>Future</td></tr>
+    <td>Search for filter stages in side panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline agent v3 (.NET 6) rolling out</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pull request widget for multiple repos (private preview)</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+    <td rowspan="5"><a href="2023/sprint-216-update.md" data-raw-source="[7 February 2023](2023/sprint-216-update.md)"> 7 February 2023</a></td>
+    <td>New save comments permission</td><td>Boards</td><td>Future</td></tr>
+    <td>Red Hat 6 will no longer receive Pipeline agent updates</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline stages side panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Restrict opening protected resources to resource administrators</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Copy Dashboard</td><td>Reporting</td><td>Future</td></tr>   
 <tr>
     <td rowspan="9"><a href="2023/sprint-215-update.md" data-raw-source="[25 January 2023](2023/sprint-215-update.md)"> 25 January 2023</a></td>
     <td>Prevent editing of shareable picklists fields</td><td>Boards</td><td>Future</td></tr>
@@ -4559,7 +4573,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RC1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td>December 6, 2022</td>
+          <td>19.205.33122.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC2](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc2-release-date-october-25-2022)">2022 RC2</a></td>
+          <td>October 25, 2022</td>
+          <td>19.205.33011.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc1-release-date-august-9-2022)">2022 RC1</a></td>
           <td>August 9, 2022</td>
           <td>19.205.32728.1</td>
         </tr>

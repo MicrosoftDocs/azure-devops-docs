@@ -5,8 +5,8 @@ description: Learn how to use the board controls available with your Kanban boar
 ms.custom: boards-kanban  
 ms.service: azure-devops-boards
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

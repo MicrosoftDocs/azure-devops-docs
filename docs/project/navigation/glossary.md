@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 02/08/2019

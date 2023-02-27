@@ -5,8 +5,8 @@ description: Learn about process templates for Azure DevOps
 ms.custom: engagement-fy23  
 ms.service: azure-devops-boards
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 01/13/2023

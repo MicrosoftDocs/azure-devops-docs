@@ -6,8 +6,8 @@ ms.custom: Navigation
 ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---

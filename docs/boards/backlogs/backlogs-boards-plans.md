@@ -5,8 +5,8 @@ description: Learn about tasks that support backlogs, Kanban boards, taskboards,
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

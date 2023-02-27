@@ -3,8 +3,8 @@ title: Get started as a project collection administrator or organization owner
 titleSuffix:  Azure DevOps
 description: Learn how to add contributors and configure policies, settings, and other Azure DevOps options available at the organization or collection level.
 ms.subservice: azure-devops-new-user
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 02/28/2022

@@ -6,8 +6,8 @@ ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
 ms.assetid:  
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 11/07/2021
 ---

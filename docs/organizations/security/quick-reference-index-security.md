@@ -5,8 +5,8 @@ description: Index to concepts and tasks for configuring security.
 ms.custom: quick-reference-index
 ms.subservice: azure-devops-security
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/13/2022
 ---
@@ -129,7 +129,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json)  
        - [Analytics permissions](../../report/powerbi/analytics-security.md?toc=/azure/devops/organizations/toc.json)  
        - [Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json)   
-       - [Feedback permissions](../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json)   
+       - [Feedback permissions]/previous-versions/azure/devops/project/feedback/give-permissions-feedback)   
    :::column-end:::
    :::column span="1"::: 
        **Authentication** 

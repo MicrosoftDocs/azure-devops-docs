@@ -109,8 +109,22 @@
       "source_path_from_root":"/docs/pipelines/licensing/concurrent-pipelines-tfs.md",
       "redirect_url":"/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/deployment-strategies.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/multi-cloud.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/bake.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
     }
-
   ]
 }
 

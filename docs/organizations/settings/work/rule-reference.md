@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Default rules and the rule engine  
 ms.custom: inherited-process, engagement-fy23
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: conceptual
 ms.date: 01/17/2023
@@ -86,7 +86,7 @@ There isn't a one-to-one mapping between the two processes. In some cases, the X
 Note the following:  
 - Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
 - Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions.  
-- Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](/previous-versions/azure/devops/reference/xml/support-rollup-of-work-and-other-fields).
+- Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 - You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
 
 

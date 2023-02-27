@@ -7,16 +7,16 @@ ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops' 
-ms.date: 02/15/2022  
+ms.date: 02/24/2023  
 ---
 
 # Security best practices
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Security should always be your top-most concern when you’re working with company and personal data, especially when you're working in a cloud-based solution, like Azure DevOps Services. Microsoft keeps the underlying cloud infrastructure secure, but it's up to you to configure security in Azure DevOps to keep your organization secure. 
+When you're working with information and data, particularly in a cloud-based solution like Azure DevOps Services, prioritizing security should always be your primary concern. While Microsoft maintains the security of the underlying cloud infrastructure, it's your responsibility to configure security in Azure DevOps.
 
-We've gathered some ideas for you to consider as you look to improve your security, with the following goals in mind: 
+Although it's not mandatory, incorporating best practices while using Azure DevOps can enhance your experience and make it more secure. We've compiled the following best practices that aim to keep your Azure DevOps environment secure:
 
 - Securing your [Azure DevOps environment](#securing-azure-devops-environment)
 - Restrict access through [scoped permissions](#scoped-permissions) at the organization/collection, project, or object level
@@ -103,9 +103,9 @@ See the following recommendations for assigning permissions to security groups a
 
 |**Do** :::image type="icon" source="../../media/icons/checkmark.png" border="false":::|**Don't** :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: |
 |---------|---------|
-|Use Azure Active Directory, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the Project Valid Users group. This group can access and view project information.        |
-|When you're adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.   | Don't add users to multiple security groups that contain different permission levels. In certain cases, a *Deny* permission level may override an *Allow* permission level.        |
-|When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | Don't change the default assignments made to the valid users groups. If you remove or set the *View instance-level information* permission to *Deny* for one of the *Valid Users* groups, no users in the group can access the project, collection, or deployment, depending on the group you set.        |
+|Use Azure Active Directory, Active Directory, or Windows security groups when you're managing lots of users.    | Don’t change the default permissions for the *Project Valid Users* group. This group can access and view project information.        |
+|When you're adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who need to create and modify area paths, iteration paths, and queries.   | Don't add users to multiple security groups that contain different permission levels. In certain cases, a *Deny* permission level may override an *Allow* permission level.        |
+|When you're adding many teams, consider creating a *Team Administrators* custom group where you allocate a subset of the permissions available to *Project Administrators*.     | Don't change the default assignments made to the *Project Valid Users* groups. If you remove or set the *View instance-level information* permission to *Deny* for one of the *Project Valid Users* groups, no users in the group can access the project, collection, or deployment, depending on the group you set.        |
 |Consider granting the work item query folders *Contribute* permission to users or groups who require the ability to create and share work item queries for the project.    | Don't assign permissions that are noted as *Assign only to service accounts* to user accounts.        |
 |Keep groups as small as possible. Access should be restricted, and the groups should be frequently audited.    |         |
 |Take advantage of built-in roles and default to Contributor for developers. Admins get assigned to the Project Administrator security group for elevated permissions, allowing them to configure security permissions.|     |
@@ -135,6 +135,7 @@ For more information, see [Valid user groups](about-permissions.md#valid-user-gr
 
 -----
 
+
 ## Choose the right authentication method
 
 Select your [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) from the following sources:
@@ -143,21 +144,19 @@ Select your [authentication methods](../../integrate/get-started/authentication/
 
 ### Consider service principals
 
+
 Explore alternatives like [service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that enable you to use Azure AD tokens to access Azure DevOps resources. Such tokens carry less risk when leaked compared to PATs and contain benefits like easy credential management.
 
-### Use PATs seldomly
+### Use PATs sparingly
 
-Always authenticate with identity services rather than cryptographic keys when available. Managing keys securely with application code is difficult and regularly leads to mistakes like accidentally publishing sensitive access keys to code repositories like GitHub. But, if you're using PATs, see the following recommendations:
+If possible, we recommended to always use identity services for authentication instead of cryptographic keys since managing keys securely with application code is challenging and can lead to mistakes like accidentally publishing sensitive access keys to public code repositories like GitHub. However, if you must use personal access tokens (PATs), consider the following guidelines:
 
-- Administrators should audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any PATs that don’t meet the following criteria for PATs in use: 
-
-  - Should always be scoped (roles). 
-  - Shouldn’t be global (can access more than one organization). 
-  - Shouldn’t allow write or manage permissions on build or releases.
-  - Should have an expiration date.
-  - Should be kept secret. Your tokens are as critical as passwords.
-  - Should have an expiration date.
-  - Shouldn’t be hardcoded. It can be tempting to simplify code to get a token for a prolonged period and store it in your application, but don’t do that. They could end up in source code that could be stolen.
+- PATs should always be scoped to specific roles.
+- PATs shouldn't provide global access to multiple organizations.
+- PATs shouldn't grant write or manage permissions on builds or releases.
+- PATs should have an expiration date and be kept secret since they're as critical as passwords.
+- PATs should never be hardcoded in the application code, even if it's tempting to do so to simplify the code.
+- Administrators should regularly audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any that don't meet the above criteria.
 
 - Keep your PATs secret. Your tokens are as critical as passwords.
 - Store your tokens in a safe place.
@@ -168,6 +167,7 @@ Always authenticate with identity services rather than cryptographic keys when a
   - [Use PATs](../accounts/use-personal-access-tokens-to-authenticate.md) 
 
 -----
+
 
 ## Secure Azure Artifacts 
 
@@ -189,7 +189,7 @@ Always authenticate with identity services rather than cryptographic keys when a
 
 ### Policies
 
-- Require at least one reviewer outside of the original requester. The approver takes co-ownership of the changes and should be held equally responsible for any impact it may have.
+- Require at least one reviewer outside of the original requester. The approver shares co-ownership of the changes and should be held equally accountable for any potential impact.
 - Require CI build to pass, which is useful for establishing baseline code quality, such as code linting, unit tests, and even security checks like virus and credential scans.
 - Ensure that the original pull requester can’t approve the change.  
 - Disallow completion of a PR (Pull Request), even if some reviewers vote to wait or reject.
