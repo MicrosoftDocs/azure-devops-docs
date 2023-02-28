@@ -66,4 +66,9 @@ There's a policy for managing leaked PATs! For more information, see [Revoke lea
 A: No. Azure Artifacts does not support passing a personal access token as an ApiKey. When using a local development environment, we recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. See the following examples for more details: [dotnet](../../artifacts/nuget/dotnet-exe.md), [NuGet.exe](../../artifacts/nuget/publish.md).
 If you want to publish your packages using Azure Pipelines, use the [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task to authenticate with your feed [example](../../pipelines/artifacts/nuget.md#publish-a-package).
 
+### Q: Why did my PAT stop working?
+
+A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days is sufficient for many, but you may need to sign in more often than that depending upon your Azure Active Directory configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still does not work after that, check to see if your PAT has expired.
+
 ::: moniker-end
+
