@@ -115,7 +115,7 @@ If you have larger initiatives or scenarios that require shipping several Featur
 
 ## Create your product plan   
 
-Create your product plan using the Features Backlog. The development team then creates their product plan using the Product Backlog. Periodically you'll want to review and groom your product plans.  
+Create your product plan using the Features Backlog. The development team then creates their product plan using the Product Backlog. Periodically you'll want to review and refine your product plans.  
 
 
 ### Features backlog 
@@ -132,9 +132,9 @@ Development teams add User Stories to their product backlog so that  the User St
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Product backlog.](media/best-practices/product-backlog.png)  
  
-### Groom each backlog  
+### Refine each backlog  
 
-Periodically review each backlog to perform these tasks: 
+Periodically review each backlog: 
 - Define work to be performed 
 - Reorder work items using drag-and-drop so that they appear in priority order 
 - Open work items and add details 
