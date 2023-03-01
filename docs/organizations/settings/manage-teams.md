@@ -202,10 +202,6 @@ For detailed information on each configuration option, you can explore the follo
    :::column-end:::
 :::row-end:::
 ---
- 
-**Kanban board**
-
-:::image type="content" source="../../boards/boards/media/quickstart/intro-view.png" alt-text="Screenshot of Kanban.":::
 
 ## Configure sprint taskboards 
 
@@ -235,7 +231,7 @@ By default, all team members can add and edit team dashboards. In addition, team
 Team administrators can add, configure, and manage permissions for team dashboards. For more information, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
 ::: moniker-end
 
-:::image type="content" source="media/manage-team-dashboard.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
+:::image type="content" source="media/manage-team-dashboards.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
 
 <a id="team-description" />
 
