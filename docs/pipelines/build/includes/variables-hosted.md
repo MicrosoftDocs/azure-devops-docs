@@ -564,6 +564,9 @@ For example, <code>/home/vsts/work/1</code>.</td>
 
 </table>
 
+> [!TIP]
+> If you are using classic release pipelines, you can use [classic releases and artifacts variables](../../release/variables.md) to store and access data throughout your pipeline.
+
 ##  Deployment job variables (DevOps Services)
 
 <a id="deployment-job-variables"></a>
