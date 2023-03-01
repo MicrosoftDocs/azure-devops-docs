@@ -140,7 +140,7 @@ For more information, see [Valid user groups](about-permissions.md#valid-user-gr
 
 Select your [authentication methods](../../integrate/get-started/authentication/authentication-guidance.md) from the following sources:
 - [Consider service principals and managed identities](#consider-service-principals)
-- [Use personal access tokens (PATs) seldomly](#use-pats-seldomly)
+- [Use personal access tokens (PATs) seldomly](#use-pats-sparingly)
 
 ### Consider service principals
 
