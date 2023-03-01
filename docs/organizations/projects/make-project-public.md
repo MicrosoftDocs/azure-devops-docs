@@ -44,7 +44,7 @@ All members of the project experience the following effects when a private proje
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
-- Understand [access levels and unavailable features for public projects].(#access-levels-and-unavailable-features-for-public-projects).
+- Understand [access levels and unavailable features for public projects](#access-levels-and-unavailable-features-for-public-projects).
 - Be aware of [partial migration options](#partial-migration).
 - Review items in the [migration checklist](#migration-checklist). 
 
