@@ -69,15 +69,15 @@ When you add a team to a project, a Project Administrator should [add one or mor
 
 Many Agile tools rely on the team's configured area and iteration paths. For more information, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-After project administrators add the project's area and iteration paths using [set area paths](set-area-paths.md) and [Set iteration paths](set-iteration-paths-sprints.md), team administrators can choose the relevant area and iteration paths for their team. These settings influence a wide range of Agile tools that the team can access.
+After project administrators add the project's area and iteration paths using [Set area paths](set-area-paths.md) and [Set iteration paths](set-iteration-paths-sprints.md), team administrators can choose the relevant area and iteration paths for their team. These settings influence a wide range of Agile tools that the team can access.
 
 :::image type="content" source="media/manage-iterations-areas.png" alt-text="Screenshot of Iterations and areas highlighted.":::
 
 Settings include making the following associations for each team:  
 
-- **Select team Area Paths**   
+- **Select team area paths**   
 	Can select the default area path(s) associated with the team. These settings affect many Agile tools available to the team.	
-- **Select team Iteration Paths or sprints** 
+- **Select team iteration paths or sprints** 
 	Can select the default area path(s) associated with the team. These settings affect many Agile tools available to the team. 
  
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
@@ -87,11 +87,11 @@ For more information, see [Define area paths and assign to a team](set-area-path
 
 ## Configure team backlogs, boards, and general settings 
 
-Team administrators can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. Also, administrators can choose whether bugs are treated similar to user stories and requirements or as tasks. 
+As a team administrator, you have the flexibility to customize your team's workflow to suit your needs. One way to do so is by choosing which backlog levels are active for your team. For instance, a feature team might only want to display the product backlog, while a management team might prefer to show the feature and epic backlogs only. Also, you can choose how to treat bugs within your workflow, either as user stories and requirements or as tasks.
 
-Team administrators can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.   
+Another way to customize your team's workflow is by selecting non-working days for the team. By doing so, sprint planning and tracking tools can automatically take these days off into account when calculating capacity and sprint burndown.
 
-You can configure most of your team settings from the common configuration dialog. 
+Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location.
 
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
@@ -160,8 +160,9 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-Team administrators can fully customize the team's Kanban boards associated with the product and portfolio backlogs. Configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
-For more information on each configuration option, see the following articles: 
+Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. If you need assistance, you can refer to the [Kanban basics](../../boards/boards/kanban-basics.md) guide.
+
+For detailed information on each configuration option, you can explore the following articles:
 
 ---
 :::row:::
@@ -169,9 +170,7 @@ For more information on each configuration option, see the following articles:
       **General**
       - [Backlogs](select-backlog-navigation-levels.md)
       - [Working days](set-working-days.md)
-      - [Working with bugs](show-bugs-on-backlog.md)
-            
-            
+      - [Working with bugs](show-bugs-on-backlog.md)            
       **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
@@ -210,7 +209,6 @@ For more information on each configuration option, see the following articles:
 
 ## Configure sprint taskboards 
 
-
 ::: moniker range=">= azure-devops-2020" 
 
 Similar to Kanban boards, you can customize each sprint taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
@@ -224,7 +222,6 @@ Similar to Kanban boards, each sprint taskboard can be customized to support inf
 ::: moniker-end
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of taskboard selection.":::
-
 
 <a id="add-and-manage-team-dashboards" /> 
 
