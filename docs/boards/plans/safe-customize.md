@@ -214,7 +214,7 @@ You can add controls from the Marketplace or create your own.
 
 The User Story, Feature, and Epic work item types are meant to support product planning and tracking. However, other work item types might be useful to support your SAFe® organization's customer-centric focus. Specifically, you might want to add work items to capture customer feedback, customer requests, and more. 
 
-When defining a new work item type, think through the following items: 
+When you define a new work item type, think through the following items: 
 - Information you want to capture, track, and report on 
 - How work is captured 
 - The workflow to support tracking the work
@@ -240,7 +240,7 @@ You can also add up to three more portfolio backlogs as shown in the following i
 > ![Screenshot of backlog picklist showing five levels of portfolio backlogs.](../../organizations/settings/work/media/process/portfolio-backlogs-modified.png)  
 
 > [!TIP]
-> The SAFe configuration for adding a Solution (Capabilities) Backlog that appears as a parent to the Program (Features) backlog isn't achievable via the Backlog Levels page. As a less-than-ideal workaround, you can disable the inherited Epic work item type and recreate it as a custom work item type. For more information, see [Customize process backlogs and boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
+> You may want to add a Solution (Capabilities) Backlog that appears as a parent of the Program (Features) Backlog. This SAFe configuration isn't achievable via the Backlog Levels page. As a less-than-ideal workaround, you can disable the inherited Epic work item type and recreate it as a custom work item type. For more information, see [Customize process backlogs and boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 
 For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 
