@@ -3,7 +3,7 @@ title:  Define iteration paths and configure team iterations
 titleSuffix: Azure Boards 
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
 ms.subservice: azure-devops-settings
-ms.custom: teams, engagement-fy23
+ms.custom: teams, engagement-fy23, devx-track-azurecli
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.author: chcomley
 author: chcomley
