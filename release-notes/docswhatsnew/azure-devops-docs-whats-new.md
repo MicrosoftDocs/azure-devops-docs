@@ -68,7 +68,6 @@ Welcome to what's new in the Azure DevOps docs from February 1, 2023 through Feb
 ## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-02-01..2023-02-28).
-## Community contributors
 
 ## Community contributors
 
