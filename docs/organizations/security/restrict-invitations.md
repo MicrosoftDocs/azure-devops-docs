@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/12/2021
+ms.date: 03/02/2023
 ---
 
 # Restrict new user invitations from Project and Team Administrators 
@@ -47,7 +47,11 @@ You must be a member of the [Project Collection Administrators group](../securit
 Now, only Project Collection Administrators can invite new users to Azure DevOps.
 
 > [!NOTE]
-> **Known limitation:** Even with the policy turned off, Team and Project Administrators can re-invite users who were previously members of the organization. 
+> Project and Team Administrators can directly add users to their projects through the permissions blade. However, if they attempt to add users through the **Add Users** button located in the **Organization settings** > **Users** section, it's not visible to them.
+> Adding a user directly through **Project settings** > **Permissions** doesn't result in the user appearing automatically in the **Organization settings** > **Users** list. For the user to be reflected in the Users list, they must sign in to the system.
+
+### Known limitation
+Even with the policy turned off, Team and Project Administrators can re-invite users who were previously members of the organization. 
 
 ## Related articles
 - [Default permissions and access](permissions-access.md) 
