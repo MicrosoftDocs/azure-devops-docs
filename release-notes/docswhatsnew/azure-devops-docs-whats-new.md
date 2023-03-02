@@ -73,7 +73,6 @@ Thank you for your feedback on our documentation. This month we made updates to 
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [KathrynEE](https://github.com/KathrynEE) (17)
 - [bendews](https://github.com/bendews) - Ben Dews (1)
 - [Harry-Ross](https://github.com/Harry-Ross) - Harry Ross [SSW] (1)
 - [JiriFurda](https://github.com/JiriFurda) - Jiří Furda (1)
