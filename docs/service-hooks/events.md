@@ -2632,7 +2632,6 @@ Filter events to include only changed work items.
 #### Sample payload
 
 ```json
-```json
 {
   "id": "1ca023d6-6cff-49dd-b3d1-302b69311810",
   "eventType": "workitem.updated",
