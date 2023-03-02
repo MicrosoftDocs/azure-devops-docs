@@ -2,7 +2,7 @@
 title: Install extensions
 description: Learn how to install, assign, and uninstall extensions for Azure DevOps.
 ms.topic: how-to
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, devx-track-azurecli
 ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
