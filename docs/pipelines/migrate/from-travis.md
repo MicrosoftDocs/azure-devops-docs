@@ -85,7 +85,7 @@ that are executed automatically for the most commonly used languages:
 | `python`                 | `pip install -r requirements.txt`
 | `ruby`                   | `bundle install --jobs=3 --retry=3`<br>`rake` |
 
-In addition, less common languages can be enabled but require an another
+In addition, less common languages can be enabled but require another
 dependency installation step or execution inside a docker container:
 
 | Language      | Commands                       |
