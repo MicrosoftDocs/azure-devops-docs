@@ -14,7 +14,7 @@ The Invoke Azure Function / REST API Checks allow you to write code to decide if
 - **Asynchronous (Recommended)**: push mode, in which Azure DevOps awaits for the Azure Function / REST API implementation to call back into Azure DevOps with a stage access decision
 - **Synchronous**: poll mode, in which Azure DevOps periodically calls the Azure Function / REST API to get a stage access decision
 
-In the rest of this guide, we'll refer to Azure Function / REST API Checks simply as checks.
+In the rest of this guide, we refer to Azure Function / REST API Checks simply as checks.
 
 The recommended way to use checks is in asynchronous mode. This mode offers you the highest level of control over the check logic, makes it easy to reason about what state the system is in, and decouples Azure Pipelines from your checks implementation, providing the best scalability. All synchronous checks can be implemented using the asynchronous checks mode.
 
@@ -51,7 +51,7 @@ In the Azure Function / REST API check configuration panel, make sure you:
 - Selected _Callback_ for the _Completion event_
 - Set _Time between evaluations (minutes)_ to _0_
 
-Setting the _Time between evaluations_ to a non-zero value means the check decision (pass / fail) isn't final. The check will be reevaluated until all other Approvals & Checks reach a final state. 
+Setting the _Time between evaluations_ to a non-zero value means the check decision (pass / fail) isn't final. The check is reevaluated until all other Approvals & Checks reach a final state. 
 
 <!-- > [!NOTE]
 > In the future, the _Time between evaluations_ will be removed, and a value of 0 will be used instead. -->
@@ -69,7 +69,21 @@ When configuring the check, you can specify the pipeline run information you wis
 
 These key-value pairs are set, by default, in the `Headers` of the REST call made by Azure Pipelines.
 
-You can use `AuthToken` to make calls into Azure DevOps, such as when your check will call back with a decision.  The `AuthToken` is restricted to the scope of the pipeline run from which the check call was made.
+You should use `AuthToken` to make calls into Azure DevOps, such as when your check calls back with a decision.
+
+### Call into Azure DevOps
+
+To reach a decision, your check may need information about the current pipeline run that can't be passed to the check, so the check needs to retrieve it. Imagine your check verifies that a pipeline run executed a particular task, for example a static analysis task. Your check needs to call into Azure DevOps and get the list of already executed tasks.
+
+To call into Azure DevOps, we recommend you use the [job access token](/azure/devops/pipelines/process/access-tokens) issued for the check execution, instead of a [personal access token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). The token is already provided to your checks by default, in the `AuthToken` header. 
+
+Compared to PATs, the job access token is less prone to getting throttled, doesn't need manual refresh, and is not tied to a personal account. The token is valid for 48 hours. 
+
+Using the job access token all but removes Azure DevOps REST API throttling issues. When you use a PAT, you're using the same PAT for all runs of your pipeline. If you run a large number of pipelines, then the PAT gets throttled. This is less of an issue with the job access token since a new token is generated for each check execution.
+
+The token is issued for the [build identity](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) used to run a pipeline, for example, _FabrikamFiberChat build service (FabrikamFiber)_. In other words, the token can be used to access the same repositories or pipeline runs that the host pipeline can. If you enabled [_Protect access to repositories in YAML pipelines_](/azure/devops/pipelines/process/access-tokens?#protect-access-to-repositories-in-yaml-pipelines), its scope is further restricted to only the repositories referenced in the pipeline run.
+
+If your check needs to access non-Pipelines related resources, for example, Boards user stories, you should grant such permissions to pipelines' build identities. If your check can be triggered from multiple projects, make sure that all pipelines in all projects can access the required resources.
 
 ### Send a decision back to Azure DevOps
 
@@ -166,7 +180,7 @@ Currently, Azure Pipelines evaluates a single check instance at most 2,000 times
 <!-- > [!NOTE]
 > In the future, Azure Pipelines will attempt at most 10 times to deliver the check payload to your Azure Function / REST API check. A successful delivery is defined as an HTTP code lower than 400, received within 3 seconds. When the limit is reached without a successful delivery, the check fails, and the associated stage fails, too. The retry interval is non-deterministic and non-configurable. -->
 
-If your check doesn't call back into Azure Pipelines within the configured timeout, the associated stage will be skipped. Stages depending on it will be skipped as well.
+If your check doesn't call back into Azure Pipelines within the configured timeout, the associated stage is skipped. Stages depending on it are skipped as well.
 
 ## Synchronous checks
 
@@ -189,9 +203,9 @@ To use the synchronous mode for the Azure Function / REST API, in the check conf
 - Selected _ApiResponse_ for the _Completion event_ under _Advanced_
 - Specified the _Success criteria_ that define when to pass the check based on the check's response body
 - Set _Time between evaluations_ to _0_ under _Control options_
-- Set _Timeout_ to how long you wish to wait for a check to succeed. If there's no positive decision and _Timeout_ is reached, the corresponding pipeline stage will be skipped
+- Set _Timeout_ to how long you wish to wait for a check to succeed. If there's no positive decision and _Timeout_ is reached, the corresponding pipeline stage is skipped
 
-The _Time between evaluations_ setting defines how long the check's decision is valid. A value of 0 means the decision is final. A non-zero value means the check will be retried after the configured interval, when its decision is negative. When [multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) are running, the check will be retried regardless of decision.
+The _Time between evaluations_ setting defines how long the check's decision is valid. A value of 0 means the decision is final. A non-zero value means the check will be retried after the configured interval, when its decision is negative. When [multiple Approvals and Checks](approvals.md#multiple-approvals-and-checks) are running, the check is retried regardless of decision.
 
 The maximum number of evaluations is defined by the ratio between the _Timeout_ and _Time between evaluations_ values. We recommend you ensure this ratio is at most 10.
 
