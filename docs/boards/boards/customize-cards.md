@@ -323,7 +323,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
      In the following example, we add a Stale tasks rule that highlights tasks that haven't changed in the last five days.
 
-     ![Screenshot showing Taskboard, Style dialog, example style rule.](../sprints/media/customize/task-board-card-style-rule-stale-tasks.png)   
+   :::image type="content" source="../sprints/media/customize/task-board-card-style-rule-stale-tasks.png" alt-text="Screenshot showing Taskboard, Style dialog, and example style rule."::: 
 
 3. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**.
 
