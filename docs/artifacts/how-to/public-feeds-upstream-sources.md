@@ -30,7 +30,7 @@ In this article, you will learn how to:
 
 ## Create a public feed
 
-Public feeds are project-scoped feeds in a public project. Public feeds inherit the visibility settings of the hosting project.
+A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project.
 
 1. Sign in to your Azure DevOps organization, and then select your project.
 
@@ -46,3 +46,26 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 > [!NOTE]
 > Upstream sources are enabled by default when you create a new public feed.
+
+## Add an upstream source
+
+1. Sign in to your Azure DevOps organization, and then select your project.
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed Settings**.
+
+1. Select **Upstream Sources**, and then select **Add Upstream**.
+
+    :::image type="content" source="../media/public-feed-add-upstream.png" alt-text="A screenshot showing how to add an upstream source in a public feed.":::
+
+1. Select your upstream source **Type**. In this example, I will be adding NuGet.org as an upstream source.
+
+    :::image type="content" source="../media/public-feed-upstream-types.png" alt-text="A screenshot showing the different types of upstream sources.":::
+
+1. Configure your source, and then select **Save** when you are done.
+
+    :::image type="content" source="../media/public-feed-configure-upstream.png" alt-text="A screenshot showing how to configure your upstream source.":::
+
+> [!IMPORTANT]
+> Public feeds does not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
