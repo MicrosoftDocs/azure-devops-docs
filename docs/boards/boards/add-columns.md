@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 03/03/2023
 ---
 
 # Add columns to your Kanban board to manage your workflow
@@ -67,7 +67,7 @@ Also, we recommend that you review the following articles:
 
 ## Customization sequence for board columns
 
-Before you configure your team's Kanban board columns, make sure that you complete the following tasks as much as possible. Otherwise, you'll find yourself revisiting your configuration. Revisiting a single team's configuration is one thing, but if you support many teams, you're adding extra work by skipping this step. 
+Before you configure your team's Kanban board columns, make sure that you complete the following tasks as much as possible. Otherwise, you might need to revisit your configuration. Revisiting a single team's configuration is one thing, but if you support many teams, you're adding extra work by skipping this step. 
 
 **Process administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
@@ -75,10 +75,10 @@ Before you configure your team's Kanban board columns, make sure that you comple
 3. Customize workflow states. Each workflow state appears as a column on the Kanban board. For details, see [Customize a workflow](../../organizations/settings/work/customize-process-workflow.md).
 
 **Team administrator**:
-1. Set the backlogs that you want to be active for your team. You only need to configure the Kanban boards of backlogs that your team will use. For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
-1. Determine how to track bugs. Bugs might have different workflow states from other types of work items in the **Requirement** category. As a result, bugs must be mapped separately from other work item types. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
-1. Identify the columns that your team will use to support its workflow and Kanban processes. For more information, see [Map the flow of work](#map-the-flow-of-work) later in this article. 
-1. Add, remove, or rename columns and map workflow states to columns. For more information, see [Manage columns on your Kanban board](#add-or-rename-columns) later in this article.  
+1. Set the backlogs that you want to be active for your team. You only need to configure the Kanban boards of backlogs that your team plans to use. For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+2. Determine how to track bugs. Bugs might have different workflow states from other types of work items in the **Requirement** category. As a result, bugs must be mapped separately from other work item types. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+3. Identify the columns that your team can use to support its workflow and Kanban processes. For more information, see [Map the flow of work](#map-the-flow-of-work) later in this article. 
+4. Add, remove, or rename columns and map workflow states to columns. For more information, see [Manage columns on your Kanban board](#add-or-rename-columns) later in this article.  
 
 For example, if you add bugs or other work item types to appear on a Kanban board, you potentially introduce other workflow states. New workflow states request you to adjust the Kanban column-to-state mappings when one of the following customizations is made:
 
@@ -134,10 +134,10 @@ To get started, ask your team these questions:
 
 - *What types of activities do we regularly complete?* 
 - *What natural handoffs occur within our team or from our team to other teams?* 
-- *What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?*
+- *What activities can help reinforce our team policies, such as analysis, code review, or design acceptance?*
 - *What work needs to occur at each stage?*  
 - *What limits do we want to set for each workflow state?*  
-- *Will a split column be useful for one or more columns?*  
+- *Is a split column useful for one or more columns?*  
 
 Our example development team came up with these stages as essential to their process: 
 
@@ -182,7 +182,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 	You can rename a column directly from the Kanban board. 
 
-	<img src="media/rename-kanban-columns-direct-ts.png" alt="Screenshot that shows renaming a column directly on a Kanban board." />
+	:::image type="content" source="media/rename-kanban-columns-direct-ts.png" alt-text="Screenshot showing renaming a column directly on a board.":::
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
@@ -194,7 +194,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then:
 
    1. Open **Settings**, select **Columns**, and select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: from the column tab.
-   1. Select **Remove** from the menu.  
+   2. Select **Remove** from the menu.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/columns/remove-column.png)    
@@ -215,7 +215,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/add-columns-open-settings-ts.png)  
 
-2. Select **Columns** and then a column tab to see all the settings that you can modify. Your initial column settings will look something like the following example. 
+2. Select **Columns** and then a column tab to see all the settings that you can modify. Your initial column settings look similar to the following example. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows column settings in the Settings dialog.](media/add-columns-settings-dialog-ts.png)
@@ -247,7 +247,6 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 ::: moniker-end  
 
-
 ## Use your Kanban board  
 
 After you have a well-configured Kanban board, you can start using it. To learn how, see [Start using your Kanban board](kanban-quickstart.md).  
@@ -271,25 +270,21 @@ To hand off work to another team member, reassign it directly from the board.
 ![Screenshot that shows assigning an item from a Kanban board.](media/ALM_AC_Reassign.png)
 
 Team members who receive the handoff can [set alerts](../../organizations/notifications/manage-your-personal-notifications.md) to get immediate email notifications of their newly assigned work. 
- 
 
 <a id="change-priorities"> </a>
 
 ### Change your team's priorities
 
-To keep teams working on the highest-priority items, you'll want to react quickly when a change in priority occurs, even after work starts. With your Kanban board, it's a snap. Simply drag an item up or down within a column.
-
-![Screenshot that shows moving an item within a column.](media/ALM_AC_ChangePriorities.png)
-
+To keep teams working on the highest-priority items, you'll want to react quickly when a change in priority occurs, even after work starts. With your Kanban board, it's a snap. Drag an item up or down within a column.
+:::image type="content" source="media/ALM_AC_ChangePriorities.png" alt-text="Screenshot that shows moving an item within a column.":::
 
 <a id="track-column-status"> </a>
 
 ### Track Kanban column status  
 
-Your Kanban board is one of several tools that you have for tracking work. The [query tool](../queries/using-queries.md) allows you to list a subset of work items for the purpose of review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
+Your Kanban board is one of several tools that you have for tracking work. The [query tool](../queries/using-queries.md) allows you to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
 
 But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, you can track column moves on a Kanban board by using the [Board Column and Board Column Done fields](../queries/query-by-workflow-changes.md#kanban_query_fields).
-
 
 ## FAQs 
 
@@ -307,13 +302,10 @@ But what if you want to list items based on their Kanban column assignment? Can 
 
 ## Related articles
 
-That's about all you need to know about working with Kanban columns. Here are a few more options for customizing the look and feel of the board: 
-
 - [Customize cards](customize-cards.md)  
 - [Accelerate work with swimlanes](expedite-work.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Enable live updates](live-updates.md)
-
 
 ### REST API resources
 To interact programmatically with Kanban board and other team settings, see the [Boards reference in the REST API](/rest/api/azure/devops/work/boards).
