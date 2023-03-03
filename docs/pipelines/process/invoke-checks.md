@@ -75,11 +75,13 @@ You should use `AuthToken` to make calls into Azure DevOps, such as when your ch
 
 To reach a decision, your check may need information about the current pipeline run that can't be passed to the check, so the check needs to retrieve it. Imagine your check verifies that a pipeline run executed a particular task, for example a static analysis task. Your check needs to call into Azure DevOps and get the list of already executed tasks.
 
-To call into Azure DevOps, we recommend you use the security token issued for the running build, instead of a [personal access token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). 
+To call into Azure DevOps, we recommend you use the [job access token](/azure/devops/pipelines/process/access-tokens) issued for the check execution, instead of a [personal access token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). The token is already provided to your checks by default, in the `AuthToken` header. 
 
-This token is already provided to your checks by default, in the `AuthToken` header. Compared to PATs, the token is not subject to request throttling, doesn't need manual refresh, and is not tied to a personal account. The `AuthToken` token is valid for 48 hours.
+Compared to PATs, the job access token is less prone to getting throttled, doesn't need manual refresh, and is not tied to a personal account. The token is valid for 48 hours. 
 
-The `AuthToken` token is issued for the [build identity](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) used to run a pipeline, for example, _FabrikamFiberChat build service (FabrikamFiber)_. In other words, the token can be used to access the same repositories or pipeline runs that the host pipeline can. If you enabled [_Protect access to repositories in YAML pipelines_](/azure/devops/pipelines/process/access-tokens?#protect-access-to-repositories-in-yaml-pipelines), its scope is further restricted to only the repositories referenced in the pipeline run.
+Using the job access token all but removes Azure DevOps REST API throttling issues. When you use a PAT, you're using the same PAT for all runs of your pipeline. If you run a large number of pipelines, then the PAT gets throttled. This is less of an issue with the job access token since a new token is generated for each check execution.
+
+The token is issued for the [build identity](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) used to run a pipeline, for example, _FabrikamFiberChat build service (FabrikamFiber)_. In other words, the token can be used to access the same repositories or pipeline runs that the host pipeline can. If you enabled [_Protect access to repositories in YAML pipelines_](/azure/devops/pipelines/process/access-tokens?#protect-access-to-repositories-in-yaml-pipelines), its scope is further restricted to only the repositories referenced in the pipeline run.
 
 If your check needs to access non-Pipelines related resources, for example, Boards user stories, you should grant such permissions to pipelines' build identities. If your check can be triggered from multiple projects, make sure that all pipelines in all projects can access the required resources.
 
