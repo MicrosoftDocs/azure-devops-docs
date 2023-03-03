@@ -182,6 +182,10 @@ Where a possible intrusion or high priority security vulnerability gets identifi
 
 Finally, to help combat emerging threats, Azure DevOps employs an "Assume Breach" strategy. A highly specialized group of security experts within Microsoft, known as the Red Team, assumes the role of sophisticated adversaries. This team tests breach detection and response, to accurately measure readiness and the impacts of real-world attacks. This strategy strengthens threat detection, response, and defense of the service. It also allows the team to validate and improve the effectiveness of the entire security program.
 
+### Ransomware Attack Protection Overview
+
+Azure DevOps leverages Azure's best in class preventative and detective controls to help prevent and/or respond to a ranswomware attack. For more information on how Azure protects customers from Ransomware attacks, please review the [Azure Defenses for Ransomware Attack whitepaper](https://azure.microsoft.com/en-us/resources/azure-defenses-for-ransomware-attack/).
+
 ## Data privacy
 
 You should have confidence that your data is being handled appropriately and for legitimate uses. Part of that assurance involves appropriately restricting usage so that your data is used only for legitimate reasons.
