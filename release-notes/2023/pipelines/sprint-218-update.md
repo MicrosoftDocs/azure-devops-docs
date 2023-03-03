@@ -3,7 +3,7 @@ title: Azure DevOps Release Notes - Azure Pipelines Sprint 218 Update
 description: See the Sprint 218 feature updates for Azure Pipelines, including next steps.
 author: ckanyika
 ms.author: ckanyika
-ms.date: TBD
+ms.date: 3/7/2023
 ---
 
 # Azure Pipelines - Sprint 218 Update
