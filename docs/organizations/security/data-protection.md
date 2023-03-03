@@ -184,7 +184,7 @@ Finally, to help combat emerging threats, Azure DevOps employs an "Assume Breach
 
 ### Ransomware Attack Protection Overview
 
-Azure DevOps leverages Azure's best in class controls to help prevent, detect and/or respond to a ranswomware attack. For more information on how Azure protects customers from Ransomware attacks, please review the [Azure Defenses for Ransomware Attack whitepaper](https://azure.microsoft.com/en-us/resources/azure-defenses-for-ransomware-attack/).
+Azure DevOps is built on Azure and leverages Azure's best in class controls to help prevent, detect and/or respond to a ranswomware attack. For more information on how Azure protects customers from Ransomware attacks, please review the [Azure Defenses for Ransomware Attack whitepaper](https://azure.microsoft.com/en-us/resources/azure-defenses-for-ransomware-attack/).
 
 ## Data privacy
 
