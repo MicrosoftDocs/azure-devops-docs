@@ -87,5 +87,17 @@ Run, stage, and job state change service hook events now contain a `repository` 
     }
 ]
 ```
-### New pipeline experience for GHES/GHAE
+### Improved security when creating GitHub Enterprise Server-hosted Pipelines
 
+When you create your first GitHub Enterprise Server (GHES) hosted pipeline, you may have to create a GHES service connection.
+
+Previously, you had only one option for the authentication mechanism: to use a Personal access token. This promotes creating less secure service connections.
+
+> [!div class="mx-imgBorder"]
+> ![New GitHub](../../media/218-pipelines-01.png)
+
+
+Starting with this sprint, we've made OAuth2 the default authentication mechanism when creating a GHES service connection, be it during pipeline creation or when adding a service connection.
+
+> [!div class="mx-imgBorder"]
+> ![OAuth2](../../media/218-pipelines-02.png)
