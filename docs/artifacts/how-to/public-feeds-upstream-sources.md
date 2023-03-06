@@ -121,11 +121,11 @@ pip install
 
 A: This error typically occurs when:
 
-1. An anonymous user querying a package versions: make sure you add a package-lock.json file to your project to generate the dependency tree and lock down the versions of your dependencies. 
+1. An anonymous user querying a package version: make sure you add a package-lock.json file to your project to generate the dependency tree and lock down the versions of your dependencies. 
 
 Or
 
-2. An anonymous user attempting to download a package version that doesn't exist in the feed: make sure the version you're trying to install exists in your feed.
+2. An anonymous user attempting to download a package version that doesn't exist in the feed: make sure the version you're trying to install exists in your feed. If the package is still in upstream, have someone in your team with **Collaborator** or higher permissions build your project to save the latest packages to your feed. 
 
 #### Q: I'm trying to restore my packages using Visual Studio, but I'm noticing that they're getting pulled from a different source?
 
