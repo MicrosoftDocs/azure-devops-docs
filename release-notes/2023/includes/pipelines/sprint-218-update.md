@@ -4,6 +4,30 @@ ms.author: ckanyika
 ms.date: 3/7/2023
 ms.topic: include
 ---
+
+### Node runner download task
+
+Customers that are adopting [agent releases that exclude the Node 6 task runner](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md) may have an occasional need to run tasks that have not been updated to use a newer Node runner. For those customers we provide a method to still use tasks dependent on Node End-of-Life runners, see Node runner guidance [blog post](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
+
+The below task is a method to install the Node 6 runner just-in-time, so an old task can still execute:
+
+
+```yaml
+  steps:
+  - task: NodeTaskRunnerInstaller@0
+    inputs:
+      runnerVersion: 6
+```
+### TFX validates whether a task is using an EOL Node runner
+Task authors use [TFX](https://learn.microsoft.com/en-us/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
+
+Extensions that contain tasks using the Node 6 runner will see this warning:
+
+```
+Task <TaskName> is dependent on a task runner that is end-of-life and will be removed in the future. Authors should review Node upgrade guidance: https://aka.ms/node-runner-guidance.
+```
+
+
 ### Service Hook for Job State Change
 
 Service Hooks allow you to react in response to events related to state changes in your pipeline. Up until now, you could configure service hooks for pipeline run and stage state changes. 
