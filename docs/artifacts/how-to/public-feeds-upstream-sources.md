@@ -9,9 +9,9 @@ monikerRange: '<= azure-devops'
 
 # Use upstream sources in a public feed
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. Packages saved from upstreams are scanned for vulnerabilities to ensure that they are safe and comply with security policies. If a vulnerability is found, the package is flagged as "vulnerable" and a notification is sent to the feed owner(s).  
+Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. Packages saved from upstreams are scanned for vulnerabilities to ensure that they're safe and comply with security policies. If a vulnerability is found, the package is flagged as "vulnerable", and a notification is sent to the feed owner(s).  
 
-In this article, you will learn how to:
+In this article, you'll learn how to:
 
 > [!div class="checklist"]
 >
@@ -42,7 +42,7 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
     :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot showing how to create a new public feed.":::
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
 
 > [!NOTE]
 > Upstream sources are enabled by default when you create a new public feed.
@@ -59,11 +59,11 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
     :::image type="content" source="../media/public-feed-add-upstream.png" alt-text="A screenshot showing how to add an upstream source in a public feed.":::
 
-1. Select your upstream source **Type**. In this example, I will be adding NuGet.org as an upstream source.
+1. Select your upstream source **Type**. In this example, we'll be adding NuGet.org as an upstream source.
 
     :::image type="content" source="../media/public-feed-upstream-types.png" alt-text="A screenshot showing the different types of upstream sources.":::
 
-1. Configure your source, and then select **Save** when you are done.
+1. Configure your source, and then select **Save** when you're done.
 
     :::image type="content" source="../media/public-feed-configure-upstream.png" alt-text="A screenshot showing how to configure your upstream source.":::
 
@@ -129,7 +129,7 @@ Or
 
 #### Q: I'm trying to restore my packages using Visual Studio, but I'm noticing that they're getting pulled from a different source?
 
-A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local Nuget package manager. You can force nuget to use the source in your config file by running the following command:
+A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local NuGet package manager. You can force NuGet to use the source in your config file by running the following command:
 
 ```Command
 nuget restore -config <PATH_TO_NUGET_CONFIG_FILE>
