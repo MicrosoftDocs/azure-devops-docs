@@ -3,7 +3,7 @@ title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
 ms.subservice: azure-devops-settings
-ms.custom: teams, engagement-fy23
+ms.custom: teams, engagement-fy23, devx-track-azurecli
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: chcomley
 author: chcomley
@@ -617,4 +617,3 @@ Area paths and iteration paths are also referred to as *Classification Nodes*.
 - [Define the classification plug-in (Process Template)](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in)
 
 ::: moniker-end
-
