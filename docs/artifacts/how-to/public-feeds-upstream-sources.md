@@ -69,3 +69,48 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 > [!IMPORTANT]
 > Public feeds does not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
+
+## Install packages
+
+Run the following command in an elevated command prompt:
+
+#### [NuGet](#tab/nuget)
+
+```Command
+nuget.exe restore
+```
+
+#### [Dotnet](#tab/dotnet)
+
+```Command
+dotnet restore --interactive
+```
+
+#### [Npm](#tab/npm)
+
+```Command
+npm install
+```
+
+#### [Maven](#tab/maven)
+
+```Command
+mvn install
+```
+
+#### [Gradle](#tab/gradle)
+
+```Command
+gradle build
+```
+
+#### [Python](#tab/python)
+
+```Command
+pip install
+```
+
+- - -
+
+> [!NOTE]
+> You must be a **Collaborator** or higher to install new package versions from upstream. Anonymous users can only install packages that exist locally.
