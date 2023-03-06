@@ -19,7 +19,7 @@ The below task is a method to install the Node 6 runner just-in-time, so an old 
       runnerVersion: 6
 ```
 ### TFX validates whether a task is using an EOL Node runner
-Task authors use [TFX](https://learn.microsoft.com/en-us/azure/devops/extend/publish/command-line?view=azure-devops) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
+Task authors use [TFX](https://learn.microsoft.com/azure/devops/extend/publish/command-line?view=azure-devops&preserve-view=true ) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
 
 Extensions that contain tasks using the Node 6 runner will see this warning:
 
