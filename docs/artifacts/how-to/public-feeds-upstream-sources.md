@@ -70,7 +70,7 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 > [!IMPORTANT]
 > Public feeds does not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
 
-## Install packages
+## Restore packages
 
 Run the following command in an elevated command prompt:
 
@@ -113,4 +113,30 @@ pip install
 - - -
 
 > [!NOTE]
-> You must be a **Collaborator** or higher to install new package versions from upstream. Anonymous users can only install packages that exist locally.
+> You must be a **Collaborator** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
+
+## Q&A
+
+#### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error?
+
+A: This error typically occurs when:
+
+1. An anonymous user querying a package versions: make sure you add a package-lock.json file to your project to generate the dependency tree and lock down the versions of your dependencies. 
+
+Or
+
+2. An anonymous user attempting to download a package version that doesn't exist in the feed: make sure the version you're trying to install exists in your feed.
+
+#### Q: I'm trying to restore my packages using Visual Studio, but I'm noticing that they're getting pulled from a different source?
+
+A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local Nuget package manager. You can force nuget to use the source in your config file by running the following command:
+
+```Command
+nuget restore -config <PATH_TO_NUGET_CONFIG_FILE>
+```
+
+## Related articles
+
+- [Search for packages in upstream sources](search-upstream.md)
+- [Set up upstream sources](set-up-upstream-sources.md)
+- [Configure upstream behavior](../concepts/upstream-behavior.md)
