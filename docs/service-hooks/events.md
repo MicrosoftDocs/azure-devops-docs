@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/30/2022
+ms.date: 03/06/2023
 ---
 
 # Service hooks events
@@ -2622,6 +2622,9 @@ Filter events to include only changed work items.
 * Publisher ID: `tfs`
 * Event ID: `workitem.updated`
 * Resource Name: `workitem`
+
+> [!NOTE]
+> Creating a Service Hooks subscription with multiple fields is not supported through the UI, but you can achieve this by either [creating a custom payload through the API](/rest/api/azure/devops/hooks/subscriptions/create), or by creating separate Service Hooks subscriptions for each field.
 
 #### Settings
 
