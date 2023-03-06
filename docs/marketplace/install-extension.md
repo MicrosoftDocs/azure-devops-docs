@@ -7,7 +7,7 @@ ms.subservice: azure-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 11/02/2022
+ms.date: 03/06/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -529,11 +529,11 @@ A: If you don't see your organization when buying from the Azure DevOps Marketpl
 ### Q: Why can't I install an extension?
 A: You can't install extensions for one of the following reasons.  
 - You must be a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
-- If you get an "already installed or requested" error check with your Project Collection Administrator and ask them to assign the extension to you.  
+- For an "already installed or requested" error, check with your Project Collection Administrator and ask them to assign the extension to you.  
 
 ### Q: Why can't users access extension features?
 A: Users can't access an extension for one of the following reasons:  
-- Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). You'll experience different capabilities, based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more information, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+- Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). You experience different capabilities, based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more information, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 - If you're using an organization and you started a free extension trial, your trial might have expired. To check whether your trial expired:
    1. On your organization toolbar, select **Users**.
    2. Go to the extension pane.
@@ -586,8 +586,9 @@ A: Depending on the support you need, choose from the following articles:
 - [Azure support](https://azure.microsoft.com/support/options/).
 - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 - [Visual Studio subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Contact the Azure DevOps Marketplace team](mailto:vsmarketplace@microsoft.com)
+
+> [!NOTE]
+> The Azure DevOps support team is unable to support Visual Studio Marketplace extensions. To get support on marketplace extensions, locate the extension you're using in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs). On the extension page, you can find a link to the GitHub repository where you can create an issue, or a link to get community support.
 
 ## Next steps
 
