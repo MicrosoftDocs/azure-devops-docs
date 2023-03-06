@@ -3,7 +3,7 @@ title: Add information banner
 titleSuffix: Azure DevOps 
 description: Learn how to add, update, or remove an information banner to your organization or collection
 ms.subservice: azure-devops-settings
-ms.assetid:  
+ms.custom: devx-track-azurecli
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
