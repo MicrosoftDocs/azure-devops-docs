@@ -112,9 +112,6 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 > [!NOTE] 
 > Each organization or collection can define up to 2048 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
->
-> Picklist values must not contain any one of the following characters: `` .,;':~/*|?"&%$!+=()[]{}<>-` ``
-
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
 
