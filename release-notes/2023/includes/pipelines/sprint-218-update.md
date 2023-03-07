@@ -18,7 +18,7 @@ The below task is a method to install the Node 6 runner just-in-time, so an old 
     inputs:
       runnerVersion: 6
 ```
-### TFX validates whether a task is using an EOL Node runner
+### Updated TFX Node runner validation
 Task authors use [TFX](/azure/devops/extend/publish/command-line?view=azure-devops&preserve-view=true) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
 
 Extensions that contain tasks using the Node 6 runner will see this warning:
@@ -28,7 +28,7 @@ Task <TaskName> is dependent on a task runner that is end-of-life and will be re
 ```
 
 
-### Service Hook for Job State Change
+### Service Hook for job state change
 
 Service Hooks allow you to react in response to events related to state changes in your pipeline. Up until now, you could configure service hooks for pipeline run and stage state changes. 
 

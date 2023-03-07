@@ -40,7 +40,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
     <td rowspan="5"><a href="2023/sprint-218-update.md" data-raw-source="[7 March 2023](2023/sprint-218-update.md)"> 7 March 2023</a></td>
     <td>Node runner download task</td><td>Pipelines</td><td>Future</td></tr>
-    <td>TFX validates whether a task is using an EOL Node runner</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updated TFX Node runner validation</td><td>Pipelines</td><td>Future</td></tr>
     <td>Service hook for job state change</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improved security when creating GitHub Enterprise Server (hosted Pipelines)</td><td>Pipelines</td><td>Future</td></tr>
     <td>Dashboards last accessed date and modified By</td><td>Reporting</td><td>Future</td></tr>
