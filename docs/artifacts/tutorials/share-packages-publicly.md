@@ -57,9 +57,6 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 - [Maven](../../pipelines/artifacts/publish-maven-artifacts.md)
 - [Python](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
 
-> [!IMPORTANT]
-> Universal Packages are not supported in public feeds.
-
 ## Share packages
 
 To share your packages publicly, you can simply share your feed URL E.g. `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages with [package badges](../package-badges.md).
