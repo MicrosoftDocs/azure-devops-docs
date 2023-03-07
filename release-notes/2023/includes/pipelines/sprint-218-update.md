@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Node runner download task
 
-Customers that are adopting [agent releases that exclude the Node 6 task runner](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md) may have an occasional need to run tasks that have not been updated to use a newer Node runner. For those customers we provide a method to still use tasks dependent on Node End-of-Life runners, see Node runner guidance [blog post](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
+When adopting [agent releases that exclude the Node 6 task runner](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/node6.md) you may have an occasional need to run tasks that have not been updated to use a newer Node runner. For this scenario we provide a method to still use tasks dependent on Node End-of-Life runners, see Node runner guidance [blog post](https://devblogs.microsoft.com/devops/node-runner-update-guidance-for-azure-pipelines-task-authors/#upcoming-changes).
 
 The below task is a method to install the Node 6 runner just-in-time, so an old task can still execute:
 
@@ -19,7 +19,7 @@ The below task is a method to install the Node 6 runner just-in-time, so an old 
       runnerVersion: 6
 ```
 ### TFX validates whether a task is using an EOL Node runner
-Task authors use [TFX](/azure/devops/extend/publish/command-line?view=azure-devops ) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
+Task authors use [TFX](/azure/devops/extend/publish/command-line?view=azure-devops&preserve-view=true) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
 
 Extensions that contain tasks using the Node 6 runner will see this warning:
 
@@ -113,7 +113,7 @@ Run, stage, and job state change service hook events now contain a `repository` 
 ```
 ### Improved security when creating GitHub Enterprise Server-hosted Pipelines
 
-When you create your first GitHub Enterprise Server (GHES) hosted pipeline, you may have to create a GHES service connection.
+When you create your first GitHub Enterprise Server (GHES) hosted pipeline, you might need to create a GHES service connection.
 
 Previously, you had only one option for the authentication mechanism: to use a Personal access token. This promotes creating less secure service connections.
 
