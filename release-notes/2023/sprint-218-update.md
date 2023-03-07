@@ -1,11 +1,16 @@
 ---
-title: TBD
+title: Improved dashboard management and pipeline security
 author: ckanyika
 ms.author: ckanyika
 ms.date: 3/7/2023
-description: TBD
+description: With this update, we have enable the capability to view when a dashboard was last visited or modified providing you with view to determine which ones can be removed.
 ---
-# TBD
+# Improved dashboard management and pipeline security 
+With this update, we have added the capability to track when a dashboard was last viewed or modified. This improvement will help project administrators evaluate if a dashboard needs to be removed due to inactivity, further preventing reaching stored dashboard thresholds.  
+
+We also continue our investments in security and updated the TFX to perform validations on Node runner versions.
+
+Check out the release notes for details.
 
 ### Azure Pipelines
 
