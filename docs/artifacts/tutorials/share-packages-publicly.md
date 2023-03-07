@@ -68,9 +68,6 @@ As long as your project is kept public, anyone can view and download packages fr
 
 :::image type="content" source="../media/public-feeds-access.png" alt-text="A screenshot showing packages in a public feed.":::
 
-> [!IMPORTANT]
-> Upstream sources are not supported in public feeds.
-
 ## Related articles
 
 - [Get started with NuGet packages in Azure Artifacts](../get-started-nuget.md)

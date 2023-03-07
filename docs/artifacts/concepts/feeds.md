@@ -33,7 +33,6 @@ There some important things to note regarding public feeds:
 
 * Public feeds can only be created inside of public projects.
 * Public feeds aren't intended as a replacement for existing package management platforms (NuGet.org, npmjs.com, etc.).
-* Public feeds cannot have upstream sources.
 * Public users cannot currently download universal packages. All other package types are supported for public access.
 
 > [!NOTE]
