@@ -30,9 +30,9 @@ Task <TaskName> is dependent on a task runner that is end-of-life and will be re
 
 ### Service Hook for job state change
 
-Service Hooks allow you to react in response to events related to state changes in your pipeline. Up until now, you could configure service hooks for pipeline run and stage state changes. 
+Service Hooks allow you to react in response to events related to state changes in your pipeline runs. Up until now, you could configure service hooks for pipeline run- and stage state changes. 
 
-Starting now, you can configure service hooks that fire when the state of a job in your pipeline changes. The payload structure of the new service hook is similar to the following example.
+Starting now, you can configure service hooks that fire when the state of a job in your pipeline run changes. The payload structure of the new event is shown in the following example.
 
 ```json
 {
@@ -84,7 +84,7 @@ Starting now, you can configure service hooks that fire when the state of a job 
     "createdDate": "2022-11-21T16:11:02.9207334Z"
 }
 ```
-Run, stage, and job state change service hook events now contain a `repository` property that shows source Azure Repos code version information associated to the pipeline run. For example,
+Run, stage, and job state change service hook events now contain a `repository` property that lists the Azure Repos consumed by the pipeline run. For example,
 
 ```json
 "repositories":
