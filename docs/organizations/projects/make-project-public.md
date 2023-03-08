@@ -136,7 +136,7 @@ For more information, see [Instructions for a tip migration](#migrate-git-tip-on
 **Artifacts**
    :::column-end:::
    :::column span="2":::
-:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public. Public feeds can't have upstream sources. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
+:::image type="icon" source="../../media/icons/checkmark.png" border="false":::Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
    :::column-end:::
 :::row-end:::
 :::row:::
