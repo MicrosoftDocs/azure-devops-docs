@@ -1,7 +1,7 @@
 ---
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/7/2023
+ms.date: 3/8/2023
 ms.topic: include
 ---
 
@@ -121,7 +121,7 @@ Previously, you had only one option for the authentication mechanism: to use a P
 > ![New GitHub](../../media/218-pipelines-01.png)
 
 
-Starting with this sprint, we've made OAuth 2.0 the default authentication mechanism when creating a GHES service connection, be it during pipeline creation or when adding a service connection.
+Starting with this sprint, we've made OAuth2 the default authentication mechanism when creating a GHES service connection, be it during pipeline creation or when adding a service connection.
 
 > [!div class="mx-imgBorder"]
 > ![OAuth2](../../media/218-pipelines-02.png)
