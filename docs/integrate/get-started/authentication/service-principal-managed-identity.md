@@ -1,5 +1,5 @@
 ---
-title: Use service principals
+title: Use service principal or managed identities
 titleSuffix: Azure DevOps
 ms.custom: 
 description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
