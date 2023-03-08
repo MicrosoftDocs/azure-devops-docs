@@ -19,7 +19,7 @@ The below task is a method to install the Node 6 runner just-in-time, so an old 
       runnerVersion: 6
 ```
 ### Updated TFX Node runner validation
-Task authors use [TFX](/azure/devops/extend/publish/command-line?view=azure-devops&preserve-view=true) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
+Task authors use [the extension packaging tool (TFX)](/azure/devops/extend/publish/command-line?view=azure-devops&preserve-view=true) to publish extensions. TFX has been updated to perform validations on Node runner versions, see Node runner guidance [blog post](https://aka.ms/node-runner-guidance).
 
 Extensions that contain tasks using the Node 6 runner will see this warning:
 
@@ -28,9 +28,9 @@ Task <TaskName> is dependent on a task runner that is end-of-life and will be re
 ```
 
 
-### Service Hook for job state change
+### Service hook for job state change
 
-Service Hooks allow you to react in response to events related to state changes in your pipeline runs. Up until now, you could configure service hooks for pipeline run- and stage state changes. 
+Service hooks allow you to react in response to events related to state changes in your pipeline runs. Up until now, you could configure service hooks for pipeline run- and stage state changes. 
 
 Starting now, you can configure service hooks that fire when the state of a job in your pipeline run changes. The payload structure of the new event is shown in the following example.
 
@@ -84,7 +84,7 @@ Starting now, you can configure service hooks that fire when the state of a job 
     "createdDate": "2022-11-21T16:11:02.9207334Z"
 }
 ```
-Run, stage, and job state change service hook events now contain a `repository` property that lists the Azure Repos consumed by the pipeline run. For example,
+Run, stage, and job state change service hook events now contain a `repository` property that lists the Azure Repos consumed by the pipeline run. For example:
 
 ```json
 "repositories":
@@ -121,7 +121,7 @@ Previously, you had only one option for the authentication mechanism: to use a P
 > ![New GitHub](../../media/218-pipelines-01.png)
 
 
-Starting with this sprint, we've made OAuth2 the default authentication mechanism when creating a GHES service connection, be it during pipeline creation or when adding a service connection.
+Starting with this sprint, we've made OAuth 2.0 the default authentication mechanism when creating a GHES service connection, be it during pipeline creation or when adding a service connection.
 
 > [!div class="mx-imgBorder"]
 > ![OAuth2](../../media/218-pipelines-02.png)

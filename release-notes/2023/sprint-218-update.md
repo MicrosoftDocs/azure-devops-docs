@@ -8,7 +8,7 @@ description: With this update, we have enable the capability to view when a dash
 # Improved dashboard management and pipeline security 
 With this update, we have added the capability to track when a dashboard was last viewed or modified. This improvement will help project administrators evaluate if a dashboard needs to be removed due to inactivity, further preventing reaching stored dashboard thresholds.  
 
-We also continue our investments in security and updated the TFX to perform validations on Node runner versions.
+We also continue our investments in security. Now, OAuth 2.0 is the default authentication mechanism when creating a GitHub Enterprise Server hosted pipeline.  
 
 Check out the release notes for details.
 
