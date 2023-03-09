@@ -141,7 +141,7 @@ steps:
     allowPackageConflicts: true
 ```
 
-To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you are done. See [Manage service connections](../library/service-endpoints.md) for more details.
+To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.
 
 To publish a package to an external NuGet feed, add the following snippet to your YAML pipeline.
 
@@ -226,7 +226,7 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
 
-1. Select **Grant access permission to all pipelines**, and then select **Save** when you are done.
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done.
 
 #### [YAML](#tab/yaml/)
 
@@ -251,7 +251,7 @@ Add the NuGet task to your pipeline definition and configure it as follows:
 
 1. Select **External NuGet server** for your **Target feed location**, and then select the service connection you created earlier.
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 :::image type="content" source="media/push-to-nuget-org.png" alt-text="Screenshot showing how to configure the NuGet push task in Azure Pipelines":::
 
