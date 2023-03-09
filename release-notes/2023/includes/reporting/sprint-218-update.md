@@ -11,9 +11,6 @@ One of the challenges of allowing teams to create several dashboards is the mana
 
 The **Modified By** information will also be displayed on the dashboard page itself.
 
-
 > ![Dashboard Preview](../../media/218-reporting-01.png)
-
-This new widget will allow you to see the pull requests from up to 10 different repositories in a single list.
 
 We hope these new fields help project administrators understand the activity level for dashboards to make an educated decision if they should be removed or not.
