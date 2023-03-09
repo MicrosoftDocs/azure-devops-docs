@@ -68,7 +68,7 @@ Semantic Versioning is supported in Azure Pipelines and can be configured in you
    - `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in your pipeline. This format will automatically increment the build number and the package version with a new patch number. It will keep the major and minor versions constant, until you change them manually.
    - `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in your pipeline. This format will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
 
-- **Use a custom versioning scheme**. You can customize the major, minor, and patch versions for your packages and let the NuGet task generate a unique prerelease label based on the date and time.
+- **Use a custom versioning scheme**. You can customize the major, minor, and patch versions for your packages and let the NuGet task generate a unique prerelease label based on the date and time. Format: *Major.Minor.Patch-ci-datetime*. See [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
 
 - **Use a script in your build pipeline to generate the version**.
 
@@ -76,7 +76,7 @@ Semantic Versioning is supported in Azure Pipelines and can be configured in you
 
 ::: moniker range=">= azure-devops-2019"
 
-This example shows how to use the date and time as the prerelease label.
+This example shows how to use the date and time as the prerelease label. This will generate a SemVer compliant version formatted as: `Major.Minor.Patch-ci-datetime`.
 
 ```yaml
 variables:
