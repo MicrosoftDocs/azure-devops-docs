@@ -88,7 +88,7 @@ To complete this section successfully, you must have an [Azure Container Registr
         # Container registry service connection established during pipeline creation
         dockerRegistryServiceConnection: '{{ containerRegistryConnection.Id }}'
         imageRepository: 'javascriptdocker'
-        containerRegistry: 'sampleappcontinerregistry.azurecr.io'
+        containerRegistry: 'sampleappcontainerregistry.azurecr.io'
         dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
         tag: '$(Build.BuildId)'
     
