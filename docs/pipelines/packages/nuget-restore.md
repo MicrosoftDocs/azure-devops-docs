@@ -49,14 +49,14 @@ With NuGet Package Restore you can install all your project's dependency without
 ### [YAML](#tab/yaml/)
 
 ```YAML
-- task: DotNetCoreCLI@2
-  displayName: dotnet restore
+- task: NuGetCommand@2
+  displayName: NuGet v2 Restore
   inputs:
-    command: restore                      ## The dotnet command to run. Options: build, push, pack, restore, run, test, and custom.
-    projects: '**/*.csproj'               ## Path to your csproj file
-    feedsToUse: 'select'                  ## Options: select, config
-    vstsFeed: '<projectName>/<feedName>'  ## Required when feedsToUse == Select
-    includeNuGetOrg: true                 ## Use packages from NuGet.org
+    command: restore                      
+    restoreSolution: '**/*.sln'             ## Required when command = restore. Path to solution, packages.config, or project.json. Default: **/*.sln.
+    feedsToUse: 'select'                    ## Required. Feeds to use. 'select' | 'config'. Alias: selectOrConfig. Default: select.
+    vstsFeed: '<PROJECT_NAME>/<FEED_NAME>'  ## Required when feedsToUse == Select. Use packages from this Azure Artifacts feed. 
+    includeNuGetOrg: true                   ## Use packages from upstream (NuGet.org)
 ```
 
 * * *
