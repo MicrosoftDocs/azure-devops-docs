@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Restore NuGet packages in Azure Pipelines
+# Restore NuGet packages with Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -85,9 +85,9 @@ To restore your NuGet packages, run the following command in your project direct
 nuget.exe restore
 ```
 
-## Restore NuGet packages from feeds in a different organization
+## Restore NuGet packages from a feed in a different organization
 
-To restore NuGet packages from feeds in a different Azure DevOps organization, you must use a personal access token to authenticate.
+To restore NuGet packages from a feed in a different Azure DevOps organization, you must use a personal access token to authenticate.
 
 #### Create a personal access token
 
@@ -97,7 +97,9 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 1. Create a personal access token with **Packaging (read)** scope and copy your PAT to the clipboard.
 
-#### Restore packages
+    :::image type="content" source="media/create-read-feed-pat.png" alt-text="A screenshot showing how to create a personal access token with packaging read permissions.":::
+
+#### Restore NuGet packages
 
 ### [Classic](#tab/classic/)
 
@@ -133,15 +135,15 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 ## FAQ
 
-### My pipeline is failing to restore my NuGet packages?
+### Q: My pipeline is failing to restore my NuGet packages?
 
-The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
+A: The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
 
 ::: moniker range="tfs-2018" 
 
-### How do I use the latest version of NuGet?
+### Q: How do I use the latest version of NuGet?
 
-For new pipelines, the **NuGet Tool Installer** will be added automatically to any pipeline that uses a NuGet task. We periodically update the NuGet default version around the same time we install Visual Studio updates on the Hosted build agents.
+A: For new pipelines, the **NuGet Tool Installer** will be added automatically to any pipeline that uses a NuGet task. We periodically update the NuGet default version around the same time we install Visual Studio updates on the Hosted build agents.
 
 For existing pipelines, add the **NuGet Tool Installer** to your pipeline and select the NuGet version for all the subsequent tasks. Check out the [dist.nuget](https://dist.nuget.org/tools.json) to see all the available versions.
 
