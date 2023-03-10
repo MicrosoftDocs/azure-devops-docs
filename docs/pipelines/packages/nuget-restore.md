@@ -120,12 +120,13 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 ### [YAML](#tab/yaml/)
 
 ```yml
-task: NuGetCommand@2
-      inputs:
-        restoreSolution: '**/*.sln'                     ## Path to your project's solution, packages.config, or project.json.
-        feedsToUse: 'config'
-        nugetConfigPath: 'Deployment/NuGet.config'      ## Path to your nuget.config file.
-        externalFeedCredentials: 'MyServiceConnection'  ## The name of your service connection.
+- task: NuGetCommand@2
+  displayName: NuGet Restore
+  inputs:
+    restoreSolution: '**/*.sln'                     ## Required when command = restore. Path to your project's solution, packages.config, or project.json.
+    feedsToUse: 'config'                            ## Required. 'select' | 'config'. Default: select.
+    nugetConfigPath: 'Deployment/NuGet.config'      ## Required when selectOrConfig = config. Path to your nuget.config file.
+    externalFeedCredentials: 'MyServiceConnection'  ## Use when selectOrConfig = config. The name of your service connection. Credentials for feeds outside your organization/collection.  
 ```
 
 * * *
