@@ -35,12 +35,10 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 1. Select **Create** when you are done.
 
-> [!NOTE]
-> Organization-scoped feeds cannot be converted into project-scoped feeds.
-
 ## Publish packages
 
-If you want to publish NuGet packages, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+> [!NOTE]
+> If you want to publish NuGet packages, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 ### Publish packages (CLI)
 
