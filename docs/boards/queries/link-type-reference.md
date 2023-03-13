@@ -977,5 +977,5 @@ The following table provides descriptions for each of the link type attributes r
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
-- [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference.#topology)
+- [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#link-type-topologies-and-restrictions)
 - [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)
