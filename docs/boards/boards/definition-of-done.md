@@ -10,21 +10,19 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 03/14/2023
 ---
 
 # Specify the Definition of Done criteria for your Kanban columns
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. Help your team agree what "done" means by specifying the Definition of Done criteria for each Kanban column. Defining what "done" means helps you identify the essential tasks to complete before moving an item into a downstream stage. 
-Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**
+When your team advances from one stage to the next in their work, it's crucial that they have a shared understanding of what constitutes "done." You can define the criteria for the Definition of Done in each Kanban column. By doing so, the team can identify the necessary tasks that need to be completed before advancing an item to the next stage. By doing so, you're also implementing one of the core Kanban tenets, *make processes and policies explicit*.
 
-When set, team members can quickly double-check the done criteria.
+Team members can quickly double-check the done criteria.
 
 > [!div class="mx-imgBorder"]
 > ![Definition of Done](media/columns/move-doing-done-dod-develop.png)
-
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
 
@@ -48,7 +46,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, Configure Definition of Done](media/columns/definition-of-done-defined.png)  
 
-3. When done with your changes, choose **Save**.
+3. When you're done with your changes, select **Save**.
 
 ::: moniker-end 
 
