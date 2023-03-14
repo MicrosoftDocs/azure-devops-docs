@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 03/14/2023
 ---
 
 
@@ -31,7 +31,7 @@ While [setting WIP limits](#Set) is simple, adhering to the limits takes a team 
 
 ## Determine initial WIP limits
 
-To get started, have your team determine the initial WIP limits to set and how they'll use and monitor them. Beyond that, few rules apply to what numbers to set as they can vary based on several factors. Here are two guidelines to help you determine what limits to set:
+To get started, have your team determine the initial WIP limits to set and how to use and monitor them. Few rules apply to what numbers to set as they can vary based on several factors. Here are two guidelines to help you determine what limits to set:
 
 * Set limits based on current works in progress. Count the items present in your existing Kanban columns.
 
@@ -56,8 +56,7 @@ Respecting WIP limits means teams don't pull items into a column if doing so cau
 
 Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
 
-To gain the advantages of constraining work-in-progress, have your team meet frequently to discuss the process changes taking place. As a starting point, consider hosting discussions around some of the [challenges and solutions to support successful implementation of WIP limits](best-practices-kanban.md#practices) provided below.
-
+To gain the advantages of constraining work-in-progress, have your team meet frequently to discuss the process changes taking place. Consider hosting discussions around some of the [challenges and solutions to support successful implementation of WIP limits](best-practices-kanban.md#practices), in the following sections.
 
 <a id="Keep within WIP" />
 
@@ -76,23 +75,23 @@ Taking periodic snapshots of your Kanban board can visually catalog where work f
 
 ![Snapshots](media/WIP_3.png)
 
-Such snapshots can show your team:
+Such snapshots can show your team the following information:
 
 * How many items on average exist within a workflow stage/column  
 * How many items are being worked versus team members who work within a workflow stage/column  
 * How many and which items remained in a workflow stage/column for long periods of time  
-* How many items did the team complete at the end of a one, two, or three week period?  
+* How many items did the team complete at the end of a one, two, or three week period 
 
 <a id="Eliminate waste" />
 
 ## Eliminate waste
 
-Because bottlenecks signal waste in your workflow process, you'll want to identify the source of the waste. Kanban defines waste as anything not strictly needed to produce desired outcomes.
+Because bottlenecks signal waste in your workflow process, you need to identify the source of the waste. Kanban defines waste as anything not strictly needed to produce desired outcomes.
 
 Common wastes in software development include:
 
 * Unused code or features
-* Defects that lead to rework
+* Defects leading to rework
 * Delays or time spent waiting for something
 * Handoffs from one person, team, or business process to another
 * Insufficient requirements
@@ -105,7 +104,7 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 ## Set WIP limits
 
-With an understanding of how you'll use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
+With an understanding of how you want to use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -146,7 +145,6 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 ::: moniker-end
 
 ## Related articles
-
 
 - [Split columns](split-columns.md)  
 - [Speed up work](expedite-work.md)  
