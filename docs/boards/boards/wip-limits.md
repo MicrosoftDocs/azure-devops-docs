@@ -21,7 +21,7 @@ An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP 
 
 You define WIP limits for each work stage, corresponding to each intermediate column. The limit sets a soft constraint on the number of items allowed within the column. Nothing actually prevents you from moving more items into the column and exceeding the limit. Your Kanban board shows the count of items at each stage next to each limit.
 
-<img src="media/WIP_1.png" alt="Kanban board columns with WIP limits" /> 
+:::image type="content" source="media/WIP_1.png" alt-text="Example image showing Kanban board columns with WIP limits."::: 
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
@@ -52,7 +52,7 @@ After you've set your WIP limits, you'll want to track how well your team keeps 
 
 Respecting WIP limits means teams don't pull items into a column if doing so causes the number of items in the column to exceed the column limit. When they do, your Kanban board provides immediate feedback. This feedback should act as a signal to the team to focus immediately on activities to reduce the number of items in the column.
 
-<img src="media/WIP_2.png" alt="Kanban board showing a column over the WIP limit" /> 
+:::image type="content" source="media/WIP_2.png" alt-text="Example image of a Kanban board showing a column over the WIP limit.":::
 
 Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
 
@@ -73,7 +73,7 @@ The free eBook, [Kanban and Scrum - making the most of both](https://www.infoq.c
 
 Taking periodic snapshots of your Kanban board can visually catalog where work flows smoothly and where bottlenecks appear.
 
-![Snapshots](media/WIP_3.png)
+:::image type="content" source="media/WIP_3.png" alt-text="Screenshot of example snapshots.":::
 
 Such snapshots can show your team the following information:
 
@@ -117,7 +117,8 @@ With an understanding of how you want to use WIP limits, here's how you set them
 
 2. Choose **Columns** and then a column tab to set the WIP limit for that column. 
 
-	![Kanban board, Customize columns, default columns, Agile process, set WIP limits](media/wip-columns-settings.png)  
+    
+	:::image type="content" source="media/wip-columns-settings.png" alt-text="Screenshot showing Kanban board, Customize columns, default columns, Agile process, set WIP limits."::: 
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
