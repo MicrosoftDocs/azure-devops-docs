@@ -475,6 +475,23 @@ Add code tracking widgets to track changes made within a repository or get quick
    :::column-end:::
 :::row-end:::
 
+::: moniker range="= azure-devops"
+:::row:::
+   :::column span="1":::
+      ### Pull request (multiple repos)
+      ![Screenshot of Pull request widget for multiple repos.](media/widget-catalog-pull-request-multi.png)  
+   :::column-end:::
+   :::column span="1":::
+      <br/>
+      <a id="pull-request-widget-multi"></a> 
+      Adds a configurable widget to display active PRs requested by the team, or assigned to or requested by the person logged in. Select the team and up to 10 repositories for the pull requests of interest.   
+      
+      To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
+
+      *This widget is currently in private preview*
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 
 
 ::: moniker range=">= azure-devops-2019"
