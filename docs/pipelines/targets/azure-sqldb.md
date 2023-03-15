@@ -178,7 +178,7 @@ steps:
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
-  arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+    arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@5
   displayName: Azure PowerShell script: FilePath
