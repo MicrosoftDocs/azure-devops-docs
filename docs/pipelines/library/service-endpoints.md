@@ -542,6 +542,9 @@ For an Azure RBAC disabled cluster, a ServiceAccount gets created in the chosen 
 > [!NOTE]
 > This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you can't see subscriptions from other Azure tenants, check your Azure AD permissions in those tenants.
 
+> [!CAUTION]
+> Starting with Kubernetes version 1.24 and above, this option will no longer be supported. Please refer to the alternative options below instead.
+
 #### Service account option
 
 | Parameter | Description |
