@@ -23,7 +23,7 @@ The following REST API calls support the new PAT scope as follows:
 
 We've improved the experience around managing pipeline permissions to make the permissions system remember if a pipeline had previously used a protected resource, such as a service connection.
 
-In the past, if you checked off "Grant access permission to all pipelines" when you created a protected resource, but then you restricted access to the resource, your pipeline needed a new authorization to use the resource. This behavior was inconsistent with subsequent opening and closing access to the resource, where a new authorization was not required. This is now fixed.
+In the past, if you checked off "Grant access permission to all pipelines" when you created a protected resource, but then you restricted access to the resource, your pipeline needed a new authorization to use the resource. This behavior was inconsistent with subsequent opening and closing access to the resource, where a new authorization wasn't required. This is now fixed.
 ### Variables as inputs in checks
 
 [Approvals and checks](https://learn.microsoft.com/azure/devops/pipelines/process/approvals) are a runtime security mechanism that allows resource owners to control which pipeline _runs_ can use their resource. 
@@ -71,11 +71,11 @@ Learn more about [the recommended way to use Invoke Azure Function & REST API ch
 Azure Pipelines masks secrets in logs. Secrets can be variables marked as secret, variables from variable groups that are linked to Azure Key Vault or elements of a Service Connection marked as secret by the Service Connection provider.
 
 All occurrences of secret value are masked. Masking short secrets e.g. '`1`', '`2`', '`Dev`' makes it easy to guess their values e.g. in a date: '`Jan 3, 202***`'   
-It is now clear '`3`' is a secret. In such cases you may prefer not masking the secret altogether. If it is not possible to not mark the value as secret (e.g. the value is taken from Key Vault), you can set the `AZP_IGNORE_SECRETS_SHORTER_THAN` knob to a value of up to 4.
+It's now clear '`3`' is a secret. In such cases you may prefer not masking the secret altogether. If it's not possible to not mark the value as secret (e.g. the value is taken from Key Vault), you can set the `AZP_IGNORE_SECRETS_SHORTER_THAN` knob to a value of up to 4.
 
 ### Script to self-validate pipeline agent version
 
-We currently have 2 versions of the Pipeline agent: v2 uses .NET 3.1 Core and v3 uses .NET 6. We are slowly rolling out the v3 agent to supported operating systems, after which we will retire the v2 agent. See [the upgrade of .NET agent for Azure Pipelines blog post](https://aka.ms/azdo-pipeline-agent-version) for more information.
+We currently have two versions of the Pipeline agent: v2 uses .NET 3.1 Core and v3 uses .NET 6. We're slowly rolling out the v3 agent to supported operating systems, after which we'll retire the v2 agent. For more information, see [the upgrade of .NET agent for Azure Pipelines blog post](https://aka.ms/azdo-pipeline-agent-version).
 
 We have created a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to help you verify if your self-hosted agents will be able to upgrade. This script will process all pools in your organization and identify v2 agents on operating systems that are not supported by the v3 agent, e.g. CentOS 6, Fedora versions before 31, macOS 10.14, RHEL 6.
 
@@ -86,5 +86,5 @@ We have created a [script](https://github.com/microsoft/azure-pipelines-agent/tr
 
 In this sprint, we're making it easier to know the overall status of a pipeline run. 
 
-For YAML pipelines that have many stages, it used to be hard to know the status of a pipeline run, that is, is it still running or it finished. And if it finished, what is the overall state: successful, failed, or cancelled. We fixed this issue by adding a run status overview icon.
+For YAML pipelines that have many stages, it used to be hard to know the status of a pipeline run, that is, is it still running or it finished. And if it finished, what is the overall state: successful, failed, or canceled. We fixed this issue by adding a run status overview icon.
 > ![Pipeline run status overview icon](../../media/215-pipelines-03.png)
