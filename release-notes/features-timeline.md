@@ -438,7 +438,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>  
       <tr>
-        <td rowspan="9"><strong>2023 Q2</strong></td>
+        <td rowspan="10"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -481,7 +481,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>General</td>
         <td>N/A</td>
-      </tr>         
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/dataimport-progresspage" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/2023/dataimport-progresspage)">Increased transparency into the progress of an Azure DevOps Server to Azure DevOps Services data migration</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
       <tr>
         <td rowspan="4"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
