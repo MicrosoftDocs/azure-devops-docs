@@ -11,13 +11,13 @@ To limit damage done by leaking a PAT token, we've added a new PAT scope, named 
 > [!div class="mx-imgBorder"]
 > ![Pipelines REST API Updates](../../media/215-pipelines-01.png)
 
-In the next sprint, REST API calls will change as follows:
+The following REST API calls support the new PAT scope as follows:
 
-* [Update an Approval](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/update) will require a PAT with scope `Pipeline Resources Use` 
-* [Manage Checks](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/check-configurations) will require a PAT with scope `Pipeline Resources Use and Manage` 
-* [Update Pipeline Permisions For Resources](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
-* [Authorize Definition Resources](https://learn.microsoft.com/rest/api/azure/devops/build/resources/authorize-definition-resources) will require a PAT with scope `Pipeline Resources Use and Manage` 
-* [Authorize Project Resources](https://learn.microsoft.com/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) will require a PAT with scope `Pipeline Resources Use and Manage`
+* [Update an Approval](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/approvals/update) supports scope `Pipeline Resources Use` 
+* [Manage Checks](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/check-configurations) supports scope `Pipeline Resources Use and Manage` 
+* [Update Pipeline Permissions For Resources](https://learn.microsoft.com/rest/api/azure/devops/approvalsandchecks/pipeline-permissions/update-pipeline-permisions-for-resources) supports scope `Pipeline Resources Use and Manage` 
+* [Authorize Definition Resources](https://learn.microsoft.com/rest/api/azure/devops/build/resources/authorize-definition-resources) supports scope `Pipeline Resources Use and Manage` 
+* [Authorize Project Resources](https://learn.microsoft.com/rest/api/azure/devops/build/authorizedresources/authorize-project-resources) supports scope `Pipeline Resources Use and Manage`
 
 ### Experience improvements to pipeline permissions
 
