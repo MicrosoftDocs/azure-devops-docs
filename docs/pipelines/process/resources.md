@@ -809,7 +809,7 @@ You'll need to set up a [classic release pipeline](../release/index.md) because 
 
 
 1. Perform a `POST` API call with valid JSON in the body to 
-`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. 
+`https://dev.azure.com/{organization}/_apis/public/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. 
 
     1. Open your pipeline. 
     1. Select **Edit**.
@@ -818,7 +818,7 @@ You'll need to set up a [classic release pipeline](../release/index.md) because 
     1. Go to **Default branch for manual and scheduled builds** to update your feature branch. 
     1. Select **Save & queue**.
     1. After this pipeline runs successfully, perform a `POST` API call with valid JSON in the body to 
-`https://dev.azure.com/{organization}/_apis/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
+`https://dev.azure.com/{organization}/_apis/public/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
 
 ## Related articles
 
