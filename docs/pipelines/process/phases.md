@@ -545,7 +545,7 @@ You can specify that a job run based on the value of an output variable set in a
 jobs:
 - job: A
   steps:
-  - script: "echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - script: "echo '##vso[task.setvariable variable=skipsubsequent;isOutput=true]false'"
     name: printvar
 
 - job: B
