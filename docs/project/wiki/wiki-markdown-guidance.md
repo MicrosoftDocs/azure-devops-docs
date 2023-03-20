@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/18/2022  
+ms.date: 03/20/2023  
 ---
 
 # Markdown syntax for wikis
@@ -45,6 +45,14 @@ Consistency is maintained in the formatting in TOC.
 > [!NOTE]
 > The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
+## Add a subpages table
+
+Add a table of content for subpages (TOSP) to your wiki pages. This table has links to all subpages located under the page where the table of subpages is shown.
+
+You can add the table of subpages either by inserting the special tag `[[_TOSP_]]` manually or by selecting from the **More options** menu. Only the first `[[_TOSP_]]` tag is used to create the table of subpages.
+
+:::image type="content" source="media/wiki/wiki-TOSP.png" alt-text="Screenshot showing markdown for child pages of Page 1.":::
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2022"
@@ -54,7 +62,7 @@ Consistency is maintained in the formatting in TOC.
 Mermaid lets you create diagrams and visualizations using text and code. 
 
 > [!NOTE]
-> - Not all syntax in the content linked below for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
+> - Not all syntax in the following linked content for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, `flowchart` syntax (`graph` used instead), or LongArrow `---->`. 
 > - Mermaid isn't supported in the Internet Explorer browser.
 > - If you experience an "Unsupported diagram type", the functionality may not be yet available in your org due to usual deployment scheme.
 
@@ -232,7 +240,7 @@ pie title Fishermans in countries
 
 ### Requirements diagram example
 
-The requirements diagram visualize the requirements and connections between those.
+The requirements diagram visualizes the requirements and their connections.
 
 ```
 :::mermaid
