@@ -51,7 +51,7 @@ Add a table of content for subpages (TOSP) to your wiki pages. This table has li
 
 You can add the table of subpages either by inserting the special tag `[[_TOSP_]]` manually or by selecting from the **More options** menu. Only the first `[[_TOSP_]]` tag is used to create the table of subpages.
 
-:::image type="content" source="media/wiki/wiki-tosp.png" alt-text="Screenshot showing markdown for child pages of Page 1.":::
+:::image type="content" source="media/wiki/wiki-table-content-subpages.png" alt-text="Screenshot showing markdown for child pages of Page 1.":::
 
 ::: moniker-end
 
