@@ -28,7 +28,7 @@ You can use a combination of tokens, variables, and underscore characters.
 The `name` property doesn't work in template files. 
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
 
 steps:
   - script: echo '$(Build.BuildNumber)' # outputs customized build number like project_def_master_20200828.1
