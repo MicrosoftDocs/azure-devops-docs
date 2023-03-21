@@ -241,12 +241,12 @@ sections:
             If you get the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the **Requirement** category aren't mapped to the column. 
 
             > [!div class="mx-imgBorder"]
-            > ![Screenshot that shows a configuration error message on a Kanban board.](../backlogs/media/setup-backlog/column-config-error.png)
+            > ![Screenshot that shows a configuration error message on a Kanban board.](./backlogs/media/setup-backlog/column-config-error.png)
 
             Select **Correct this now** to open the **Settings** dialog.
             In the following example, two new states are added: **Triaged** for bug, and **Investigate** for user story. Each state is then mapped to an existing or new column. After each state is mapped to a column, the Kanban board displays the work items assigned to these states.  
             > [!div class="mx-imgBorder"]
-            > ![Screenshot showing Kanban board settings, columns.](media/add-columns-custom-states-mapping.png)  
+            > ![Screenshot showing Kanban board settings, columns.](./boards/media/add-columns-custom-states-mapping.png)  
 
   - name: Work item templates  
 
