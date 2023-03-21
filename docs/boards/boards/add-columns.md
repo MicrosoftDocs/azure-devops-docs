@@ -70,36 +70,37 @@ Also, we recommend that you review the following articles:
 The Kanban board uses the **Work item type** and **State** categories to group work items that you want handled in the same manner.
 
 <a id="map-the-flow-of-work">  </a>
-Identify your team's workflows. See the following table of example workflows and their descriptions.
 
-|**Workflow**  |Description  |
-|---------|---------|
-|Backlog    | Make a prioritized list of work items that the team isn't yet ready to work on.        |
-|Analyze    | Identify well-understood and shared acceptance criteria, along with overall work required to develop and test the item.         |
-|Develop   |Code and run unit tests for the item.         |
-|Test    | Run exploratory, automated, integration, and other tests.        |
-|Done    | Hand off to production because the item is ready.        |
+1. Identify your team's workflows. See the following table of example workflows and their descriptions.
 
-Know your work item types and on which boards they appear.
+   |Workflow  |Description  |
+   |---------|---------|
+   |Backlog    | Make a prioritized list of work items that the team isn't yet ready to work on       |
+   |Analyze    | Identify well-understood and shared acceptance criteria, along with overall work required to develop and test the item         |
+   |Develop   |Code and run unit tests for the item         |
+   |Test    | Run exploratory, automated, integration, and other tests        |
+   |Done    | Hand off to production because the item is ready        |
 
-|**Work item type** category |Work items appear here |
-|---------|---------|
-|Requirement    |  Only on the product board       | 
-|Feature   | Only on the Feature portfolio board        |         
-|Epic     | Only on the Epic portfolio board        | 
-|Custom|    Only on a custom portfolio board |        
+2. Know your work item types and on which boards they appear.
 
-> [!TIP]   
-> We recommend that you map each workflow state to a Kanban column, as if it's not mapped, it doesn't appear on the Kanban board.
+   |Work item type category |Work items appear here |
+   |---------|---------|
+   |Requirement    |  Only on the product board       | 
+   |Feature   | Only on the Feature portfolio board        |         
+   |Epic     | Only on the Epic portfolio board        | 
+   |Custom|    Only on a custom portfolio board |        
 
-Specify the workflow **State** for each work item type and column, using one of the following four categories.
+   > [!TIP]   
+   > We recommend that you map each workflow state to a Kanban column, as if it's not mapped, it doesn't appear on the Kanban board.
 
-|**State** category  |Description  |
-|---------|---------|
-|Proposed   | The first Kanban board column is automatically mapped to the default state for each work item.  |
-|In Progress | Work flow state must be specified for each WIT and column.         |
-|Completed  | Can only map to the last Kanban board column.         |
-|Removed     | Workflow state doesn't need to be specified.        |
+1. Specify the workflow **State** for each work item type and column, using one of the following four categories.
+
+   |State category  |Description  |
+   |---------|---------|
+   |Proposed   | The first Kanban board column is automatically mapped to the default state for each work item |
+   |In Progress | Work flow state must be specified for each WIT and column       |
+   |Completed  | Can only map to the last Kanban board column      |
+   |Removed     | Workflow state doesn't need to be specified     |
 
 > [!NOTE]
 > Adding bugs or other work items to a Kanban board may create new workflow states, requiring adjustments to column-to-state mappings in the following situations:
@@ -112,7 +113,9 @@ Specify the workflow **State** for each work item type and column, using one of 
 
 ## Manage columns on your Kanban board
 
-Column titles and choices depend on the [process](../work-items/guidance/choose-process.md) that you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
+Column titles and choices depend on the [process](../work-items/guidance/choose-process.md) that you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
+
+Do the following steps to add and edit your columns.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -227,19 +230,22 @@ Drag an item up or down within a column.
 Use the [query tool](../queries/using-queries.md) to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
 
 Specify [WIP limits](wip-limits.md), [split columns](split-columns.md), and [definition of done](definition-of-done.md)
-You can use your Kanban board to do the following tasks: 
 
-- Visualize work that's in progress, nearing completion, and completed.  
-- Filter your board to focus on select work based on assignment to a team member or sprint, tags, or parent feature. For more information, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
-- Update workflow status through drag-and-drop operations, as shown in [Update status](#update-status).  
-- Reorder cards to change priority of work items, as described in [Change priorities](#change-priorities). 
-- View and quickly assign values to key fields, as described in [Customize cards](customize-cards.md). 
-- Create queries and charts based on board columns, as illustrated in [Track board column status](#track-column-status). 
-- Review a cumulative flow diagram based on column assignments, as described in [View and configure a cumulative flow diagram](../../report/dashboards/cumulative-flow.md). 
+### Do more tasks
+
+In the following table, we've listed tasks and their associated articles, so you can do more with your Kanban board. 
+
+|Article |Task |
+|---------|---------|
+|[Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)    |Filter your board to focus on select work based on assignment to a team member or sprint, tags, or parent feature.         |
+|[Update status](#update-status)    | Update workflow status through drag-and-drop operations.        |
+|[Change priorities](#change-priorities)  | Reorder cards to change priority of work items.        |
+|[Customize cards](customize-cards.md)    | View and quickly assign values to key field.        |
+|[Track board column status](#track-column-status)   | Create queries and charts based on board columns.        |
+|[View and configure a cumulative flow diagram](../../report/dashboards/cumulative-flow.md)   |Review a cumulative flow diagram based on column assignments.         |
 
 ## Related articles
 
-- [Customize cards](customize-cards.md)  
 - [Accelerate work with swimlanes](expedite-work.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Enable live updates](live-updates.md)
