@@ -58,7 +58,7 @@ stages:
       - script: echo Hello Stage A!
 
 - stage: B
-  condition: and(succeeded(), eq(variables.isMain, 'true'))
+  condition: and(succeeded(), eq(variables.isMain, true))
   jobs:
   - job: B1
     steps:
@@ -265,7 +265,7 @@ eq(variables['Build.Reason'], 'Schedule')
 ### Always run if a variable is set to true, even if canceled, even if failing
 
 ```
-eq(variables['System.debug'], 'true')
+eq(variables['System.debug'], true)
 ```
 
 ### Run if a variable is null (empty string)
@@ -286,7 +286,14 @@ jobs:
 
 ### Use a template parameter as part of a condition
 
-When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true. For more template parameter examples, see [Template types & usage](templates.md). 
+When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true. 
+
+The `condition` in the pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns true because there was no previous step. 
+
+The `eq('${{ parameters.doThing }}', true)` function checks whether the doThing parameter is equal to `true`. Since the default value for doThing is true, the condition will return true by default unless a different values gets set in the pipeline. 
+
+For more template parameter examples, see [Template types & usage](templates.md). 
+
 
 ```yaml
 parameters:
@@ -296,7 +303,7 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
 ```
 
 
@@ -313,7 +320,7 @@ jobs:
   - job: B
     steps:
     - script: echo I did a thing
-    condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+    condition: ${{ if eq(parameters.doThing, true) }}
 ```
 
 ```yaml
