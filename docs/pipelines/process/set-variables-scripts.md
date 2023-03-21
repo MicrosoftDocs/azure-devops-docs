@@ -277,8 +277,8 @@ stages:
   jobs:
   - job: A1
     steps:
-     - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-       name: MyOutputVar
+    - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+      name: MyOutputVar
 - stage: B
   dependsOn: A
   jobs:
@@ -286,7 +286,7 @@ stages:
     variables:
       myStageAVar: $[stageDependencies.A.A1.outputs['MyOutputVar.myStageVal']]
     steps:
-      - powershell: Write-Host "$(myStageAVar)"
+    - powershell: Write-Host "$(myStageAVar)"
 ```
 
 ---
@@ -295,14 +295,14 @@ In case your value contains newlines, you can escape them and the agent will aut
 
 ```yaml
 steps:
-    - bash: |
-        escape_data() {
-          local data=$1
-          data="${data//'%'/'%AZP25'}"
-          data="${data//$'\n'/'%0A'}"
-          data="${data//$'\r'/'%0D'}"
-          echo "$data"
-        }
-        echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
-      name: MyOutputVar
+- bash: |
+    escape_data() {
+      local data=$1
+      data="${data//'%'/'%AZP25'}"
+      data="${data//$'\n'/'%0A'}"
+      data="${data//$'\r'/'%0D'}"
+      echo "$data"
+      }
+    echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
+  name: MyOutputVar
 ```
