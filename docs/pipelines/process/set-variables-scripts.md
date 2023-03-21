@@ -302,7 +302,7 @@ steps:
       data="${data//$'\n'/'%0A'}"
       data="${data//$'\r'/'%0D'}"
       echo "$data"
-      }
+    }
     echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
   name: MyOutputVar
 ```
