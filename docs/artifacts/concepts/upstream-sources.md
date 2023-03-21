@@ -13,7 +13,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Upstream sources enable you to use a single feed to store packages from different sources: the ones you publish and the ones you consume from feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once you enable an upstream source, any user connected to your feed can install a package from upstream and a copy will be saved to your feed.
+Using upstream sources, you can conveniently store packages from various sources in a single feed - including those that you publish, as well as those you consume from other feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once upstream sources enabled, a copy of any package installed from upstream will be automatically saved to your feed
+
+> [!NOTE]
+> You must be a **Collaborator** or higher to install packages from upstream sources.
 
 ::: moniker range="azure-devops"
 
