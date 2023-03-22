@@ -235,8 +235,8 @@ First, set the output variable `myStageVal`.
 
 ```yaml
 steps:
-    - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-      name: MyOutputVar
+  - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+    name: MyOutputVar
 ```
 
 Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
@@ -264,9 +264,9 @@ stages:
 First, set the output variable `myStageVal`.
 
 ```yaml
-    steps:
-     - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-       name: MyOutputVar
+steps:
+  - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+    name: MyOutputVar
 ```
 
 Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
