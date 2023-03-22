@@ -18,13 +18,6 @@ Using upstream sources, you can conveniently store packages from various sources
 > [!NOTE]
 > You must be a **Collaborator** or higher to install packages from upstream sources.
 
-::: moniker range="azure-devops"
-
-> [!NOTE]
-> Custom upstream sources are only supported for npm packages.
-
-::: moniker-end
-
 ## Advantages
 
 Upstream sources enable you to manage all of your product's dependencies in a single feed. Publishing all your packages to a single feed has a few benefits:
@@ -112,6 +105,13 @@ To take full advantage of the fast lookup feature, we recommend that you only in
 When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
 
 Saving packages can improve download performance and save network bandwidth especially for TFS servers in internal networks.
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> Custom upstream sources are only supported for npm packages.
+
+::: moniker-end
 
 ## Override packages from upstream sources
 
