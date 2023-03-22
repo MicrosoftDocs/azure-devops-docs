@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/21/2023
+ms.date: 03/22/2023
 ---
 
 # Manage columns on your Kanban board
