@@ -13,14 +13,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Upstream sources enable you to use a single feed to store packages from different sources: the ones you publish and the ones you consume from feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once you enable an upstream source, any user connected to your feed can install a package from upstream and a copy will be saved to your feed.
-
-::: moniker range="azure-devops"
+Using upstream sources, you can conveniently store packages from various sources in a single feed - including those that you publish, as well as those you consume from other feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once upstream sources enabled, a copy of any package installed from upstream will be automatically saved to your feed
 
 > [!NOTE]
-> Custom upstream sources are only supported for npm packages.
-
-::: moniker-end
+> You must be a **Collaborator** or higher to install packages from upstream sources.
 
 ## Advantages
 
@@ -29,7 +25,7 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 - **Simplicity:** your config file such as NuGet.config, npmrc, or settings.xml will contain only one feed so it less prone to mistakes and bugs.
 - **Determinism:** your feed resolves package requests in order, so rebuilding your code will be more consistent.
 - **Provenance:** your feed knows the provenance of the packages it saved from upstream sources, so you can verify that you're using the original package and not a copy or malicious package.
-- **Peace of mind:** a copy will be saved to your feed for any package installed from upstream sources. So if the upstream source is disabled, removed, or undergoing maintenance, you can still continue to develop and build because you have a copy of that package in your feed.
+- **Peace of mind:** a copy is saved to your feed for any package installed from upstream sources. So if the upstream source is disabled, removed, or undergoing maintenance, you can still continue to develop and build because you have a copy of that package in your feed.
 
 ## Best practices - package consumers
 
@@ -62,7 +58,7 @@ Example:
 
 #### Order your upstream sources intentionally
 
-If you're only using public registries such as nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
+If you're only using public registries such as nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed follow the [search order](#search-order).
 
 If you're using multiple sources such as a mixture of feeds and public registries, then each upstream is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
 
@@ -89,9 +85,9 @@ To construct a package graph, simply connect to the feed's default view and inst
 
 ## Search order
 
-For public package managers that support multiple feeds (NuGet and Maven), the order in which feeds are queried is sometimes unclear or non-deterministic. For example in NuGet, parallel queries are made to all the feeds in the config file, and the responses are processed first-In, first-out FIFO.
+For public package managers that support multiple feeds (NuGet and Maven), the order in which feeds are queried is sometimes unclear or nondeterministic. For example in NuGet, parallel queries are made to all the feeds in the config file, and the responses are processed first-In, first-out FIFO.
 
-Upstream sources prevent this non-deterministic behavior by searching the feed and its upstream sources using the following order:
+Upstream sources prevent this nondeterministic behavior by searching the feed and its upstream sources using the following order:
 
 1. Packages pushed to the feed.
 
@@ -109,6 +105,13 @@ To take full advantage of the fast lookup feature, we recommend that you only in
 When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
 
 Saving packages can improve download performance and save network bandwidth especially for TFS servers in internal networks.
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> Custom upstream sources are only supported for npm packages.
+
+::: moniker-end
 
 ## Override packages from upstream sources
 
