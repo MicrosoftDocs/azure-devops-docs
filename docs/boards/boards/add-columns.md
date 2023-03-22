@@ -65,7 +65,7 @@ Also, we recommend that you review the following articles:
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
 
-## Map workflow states 
+### Map workflow states 
 
 The Kanban board uses the **Work item type** and **State** categories to group work items that you want handled in the same manner.
 
@@ -111,7 +111,7 @@ The Kanban board uses the **Work item type** and **State** categories to group w
 
 <a id="add-or-rename-columns"> </a>
 
-## Manage columns on your Kanban board
+## Manage columns
 
 Column titles and choices depend on the [process](../work-items/guidance/choose-process.md) that you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
 
