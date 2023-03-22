@@ -3,9 +3,6 @@
 - name: What is Azure Boards?
   displayName: scrum, kanban, basics, agile, CMMI, backlog
   href: get-started/what-is-azure-boards.md
-- name: Why use Azure Boards?
-  displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
-  href: get-started/why-use-azure-boards.md
 - name: Best practices for Agile project management
   displayName: agile, kanban, scrum, rollup, filtering, waterfall, deliverables, cadence, sprint cadence, work types, CMMI, product plan, product backlog
   href: best-practices-agile-project-management.md
@@ -64,7 +61,7 @@
       href: ../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json
 - name: Configure & customize
   items:
-  - name: Configure & customize guidance
+  - name: Configure & customize overview
     href: configure-customize.md
     displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
   - name: Define area paths & assign to a team
