@@ -5,12 +5,8 @@ ms.author: ckanyika
 ms.date: 3/28/2023
 description: TBD
 ---
-# Improved dashboard management and pipeline security 
-With this update, we have added the capability to track when a dashboard was last viewed or modified. This improvement will help project administrators evaluate if a dashboard needs to be removed due to inactivity, further preventing reaching stored dashboard thresholds.  
+# TBD
 
-We also continue our investments in security. Now, OAuth2 is the default authentication mechanism when creating a GitHub Enterprise Server hosted pipeline.  
-
-Check out the release notes for details.
 
 ### Azure Boards
 
