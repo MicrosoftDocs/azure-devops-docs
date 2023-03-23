@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/17/2023
+ms.date: 03/22/2023
 ---
 
 # Sign up for Azure Boards
@@ -23,14 +23,14 @@ To sign up for all Azure DevOps Services, see [Sign up, sign in to Azure DevOps]
 
 You must have the latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.
 
-## Choose your sign-up option  
+## Sign-up 
 
 1. From your web browser, open the [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min) sign-up page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project dialog, start free.](media/acquisition/start-free-azure-boards.png)
 
-1. Choose one of the following buttons based on the account you want to use. 
+1. Select which account you want to use. 
 
 	- **Start free**: Choose this option when: 
 		- You have a Microsoft account and plan to sign in using your account email address, phone number, or Skype ID. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription.
@@ -46,20 +46,26 @@ You must have the latest version of one of the following web browsers: Microsoft
 
 1. Continue through the flow to finish signing up.
    
-   When you're done, you have an organization and project based on your account name. Sign in to your organization at any time by entering `https://dev.azure.com/{yourorganization}` in your web portal.
-
+   When you're done, you have an organization and a project that correspond to your account name. Optionally, you can [change the name or other settings for your organization or project](#optional-change-your-organization-or-project-settings). 
+   
+   Sign in to your organization at any time (```https://dev.azure.com/{yourorganization}```).
 
 <a id="change-settings" />
 
-## Change your organization or project settings
+### Optional: Change your organization or project settings
 
-You can rename and delete your organization, or change the organization location. For more information, see the following articles:
+An organization is your container for projects, users, and other resources. It groups related projects and provides a centralized location for managing users, permissions, and billing. It also has tools for planning, tracking, and collaborating on projects.
+
+For more information about changing your organization settings, see the following articles.
 
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 
-You can rename your project or change its visibility. For more information, see the following articles:
- 
+
+A project is a specific effort within an organization. Each project is associated with a specific team and can have its own set of permissions, settings, and configurations.
+
+For more information about changing your project settings, see the following articles.
+
 - [Rename a project](../../organizations/projects/rename-project.md)  
 - [Delete a project](../../organizations/projects/delete-project.md)
 - [Change the project visibility, public or private](../../organizations/projects/make-project-public.md)
