@@ -40,14 +40,15 @@ Use [templates](templates.md) to define variables in one file that are used in m
 
 ### User-defined multi-line variables
 
-Azure DevOps supports multi-line variables but there are a few limitations. 
+Azure DevOps supports multi-line variables but there are a few limitations.
 
-Upstream components may not handle the variable values correctly. 
+Downstream components such as future tasks may not handle the variable values correctly. 
 
 Azure DevOps won't alter user-defined variable values. Variable values need to be formatted correctly before being passed as multi-line variables. When formatting your variable, avoid special characters, don't use restricted names, and make sure you use a line ending format that works for the operating system of your agent. 
 
-Multi-line variables behave differently depending on the operating system because of variations in how each operating system handles line endings. Azure DevOps won't alter variables depending on the operating system. If a multi-line variable contains line endings in the wrong format for the current operating system, it may not be processed correctly. To avoid this, make sure that you format multi-line variables correctly for the target operating system. 
+Multi-line variables behave differently depending on the operating system. To avoid this, make sure that you format multi-line variables correctly for the target operating system. 
 
+Azure DevOps never alters variable values, even if you provide unsupported formatting.
 
 ## System variables
 
