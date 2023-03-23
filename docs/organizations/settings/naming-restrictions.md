@@ -9,7 +9,7 @@ ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2022
+ms.date: 03/22/2023
 ---
 
 # Naming restrictions and conventions  
@@ -1295,7 +1295,7 @@ User accounts that you add to an organization or collection must conform to the 
    :::column span="3":::
       - Must not include the following printable characters: `"/ \ [ ] : | < > + = ; ? *`
       - Must not include non-printable characters in the ASCII value range of 1-31
-      - Must not end in a period (.)
+      - Must not end in a period (.) or a dollar sign ($)
       - Must not include commas (,)
       - Must not include the following Unicode categories: LineSeparator, ParagraphSeparator, Control, Format, OtherNotAssigned
    :::column-end:::
