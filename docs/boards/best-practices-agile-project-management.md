@@ -20,8 +20,7 @@ Azure Boards provides a choice of Agile planning tools, many of which work in co
 > [!NOTE]
 > If your team is committed to practicing Kanban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](./sprints/scrum-overview.md). 
 
-> [!NOTE]   
-> Most of the guidance in this article is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portfolio planning tools, are only available for the cloud at this time.
+Most of the guidance in this article is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portfolio planning tools, are only available for the cloud at this time.
 
 ## Configure your teams   
 
@@ -254,7 +253,7 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 > [!NOTE]   
 > Marketplace extensions are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
 
-#### To learn how:
+For more information, see the following articles:
 
 - [Link user stories, issues, bugs, and other work items](backlogs/add-link.md) 
 - [Triage work items](queries/triage-work-items.md) 
@@ -287,13 +286,11 @@ Each sprint, perform the following tasks:
 - Check in with other teams on dependencies that your team's work depends on 
 - Monitor sprint progress using the Sprint burndown chart 
 
-#### To learn how: 
+For more information, see the following articles:
 
 - [Assign backlog items to a sprint](sprints/assign-work-sprint.md) 
 - [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
 - [Define features and epics](backlogs/define-features-epics.md)  
-
-
 
 ## Review progress and feature deliverables 
 
@@ -343,7 +340,7 @@ To review features delivered across several teams, configure a delivery plan. De
 - Add rollup columns to your Feature backlog to monitor overall progress based on work item count completion 
 - Use delivery plans to review features for several teams and discuss cross-team dependencies 
 
-### To learn how: 
+For more information, see the following articles:
 
 - [Add columns to your Kanban board](boards/add-columns.md) 
 - [Customize cards](boards/customize-cards.md)
@@ -394,9 +391,8 @@ Teams can define one or more dashboards to share information and monitor real-ti
 - At sprint planning meetings, have your team identify at least one sprint goal related to process improvement  
 - Conduct regular retrospectives to capture what went well, what didn't go well, and actions to improve  
 - Maintain an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension. 
- 
 
-#### To learn how: 
+For more information, see the following articles:
 
 - [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Add, rename, and delete dashboards](../report/dashboards/dashboards.md)
