@@ -47,9 +47,9 @@ You can set up a SQL Azure VM from the Azure portal with just a few clicks. To l
 
 > [!NOTE] 
 > While setting up your SQL Azure VM, bear in mind that the performance of the VM and attached data disks will have a significant impact on the performance of the import. For this reason, we *highly* recommend:
-- Selecting a VM Size at the level of D8s_v5_* or greater
-- Using managed disks
-- Consulting [Virtual machine and disk performance](/azure/virtual-machines/disks-performance). Please ensure your infrastructure is configured so that neither the VM IOPS or storage IOPS become a bottleneck on the performance of the import. For example, ensuring the number of data disks attached to your VM is sufficient to support the IOPS from the VM.
+> - Selecting a VM Size at the level of D8s_v5_* or greater
+> - Using managed disks
+> - Consulting [Virtual machine and disk performance](/azure/virtual-machines/disks-performance). Please ensure your infrastructure is configured so that neither the VM IOPS or storage IOPS become a bottleneck on the performance of the import. For example, ensuring the number of data disks attached to your VM is sufficient to support the IOPS from the VM.
 
 Azure DevOps Services is available in several Azure regions across the globe. These can be seen in the table below.
 

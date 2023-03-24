@@ -200,7 +200,7 @@ For more information about work item type rules that apply toward restricting op
 
 ## Hide organization settings from users
 
-If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility and collaboration to specific projects** preview feature. 
+If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility and collaboration to specific projects** preview feature. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker range=" azure-devops"
 

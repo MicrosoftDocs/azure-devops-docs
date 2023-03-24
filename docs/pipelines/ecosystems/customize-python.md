@@ -50,8 +50,6 @@ jobs:
 ```
 You can add tasks to run using each Python version in the matrix.
 
-::: moniker-end
-
 ## Run Python scripts
 
 To run Python scripts in your repository, use a `script` element and specify a filename. For example:

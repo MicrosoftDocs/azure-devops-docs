@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'  
-ms.date: 02/28/2022
+ms.date: 03/23/2023
 ---
 
 # Get started managing your project 
@@ -17,7 +17,7 @@ ms.date: 02/28/2022
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults. 
 
-If you've created a project or been added to the **Project Administrators** group, you'll want to be familiar with the administrative tasks you're charged with. There are a few tasks you might want to do to ensure a smooth operational experience. 
+If you created a project or you're added to the **Project Administrators** group, get familiar with the administrative tasks you're charged with. There are a few tasks you might want to do to ensure a smooth operational experience. 
 
 > [!NOTE]   
 > This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
@@ -31,11 +31,11 @@ If you've created a project or been added to the **Project Administrators** grou
 
 ## Manage security and permissions
 
-Access to select tasks is controlled by permissions and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md).  
+Permissions and security groups control access to select tasks. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md).  
 
 [!INCLUDE [project-level-permissions](../organizations/security/includes/project-level-permissions.md)]
 
-To learn more about security and setting permissions at the project-level, review the following articles:
+For more information about security and setting permissions at the project-level, review the following articles:
 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
 - [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md) 
@@ -51,7 +51,7 @@ Permissions are managed at the following three levels and through role-based ass
 - project
 - organization or collection
 
-As a member of the **Project Administrators** group, you can grant or restrict permissions for all objects and at the project-level. To delegate specific tasks to others, we recommend that you add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
+As a member of the **Project Administrators** group, you can grant or restrict permissions for all objects and at the project-level. To delegate specific tasks to others, we recommend that you add them to a built-in or custom security group, or add them to a specific role. For more information, see the following articles.
 
 - [Role-based permissions](../organizations/security/about-permissions.md#role-based-permissions)
 - [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
@@ -74,7 +74,7 @@ Set policies to support collaboration across your teams and automatically remove
  
 ## Configure and customize Azure Boards 
 
-You can configure and customize Azure Boards to support a number of business requirements for planning and tracking work. At a minimum, you'll want to configure the following elements:
+You can configure and customize Azure Boards to support many business requirements for planning and tracking work. At a minimum, you should configure the following elements:
 
 - Area paths to group work items by team, product, or feature area
 - Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods 
@@ -89,13 +89,13 @@ If you're new to Azure Boards and want an in-depth overview of what you can conf
 
 ## Integrate with other services 
 
-Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the **Project Administrators** group, you can configure integration with many of these services. To learn more, see the following articles. 
+Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the **Project Administrators** group, you can configure integration with many of these services. For more information, see the following articles. 
 
 - [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md)
 
 - [Azure Boards and GitHub integration](../boards/github/index.md)
 
-- Microsoft teams integration:  
+- Microsoft Teams integration:  
 	- [Azure Boards with Microsoft Teams](../boards/integrations/boards-teams.md) 
 	- [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md)
 	- [Azure Pipelines with Microsoft Teams](../pipelines/integrations/slack.md)
@@ -142,7 +142,7 @@ What to tell their users?
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group).
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group).
 
 ::: moniker-end  
 -->

@@ -530,7 +530,7 @@ Members of the [**Project Collection Administrators** group](../security/change-
 From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 
 > [!div class="mx-imgBorder"]  

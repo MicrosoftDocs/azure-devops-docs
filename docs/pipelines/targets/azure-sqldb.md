@@ -157,13 +157,14 @@ Add the following to your azure-pipelines.yml file to run a SQL script.
 
 ```yaml
 variables:
-  AzureSubscription: '<Azure service connection>'
-  ServerName: '<Database server name>'
-  ServerFqdn: '<SQL Database FQDN>'
-  DatabaseName: '<Database name>'
-  AdminUser: '<SQL user name>'
-  AdminPassword: '<SQL user password>'
-  SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
+  AzureSubscription: '<SERVICE_CONNECTION_NAME>'
+  ResourceGroupName: '<RESOURCE_GROUP_NAME>'
+  ServerName: '<DATABASE_SERVER_NAME>'
+  ServerFqdn: '<DATABASE_FQDN>'
+  DatabaseName: '<DATABASE_NAME>'
+  AdminUser: '<DATABASE_USERNAME>'
+  AdminPassword: '<DATABASE_PASSWORD>'
+  SQLFile: '<LOCATION_OF_SQL_FILE_IN_$(Build.SourcesDirectory)>'
 
 steps:
 - task: AzurePowerShell@5

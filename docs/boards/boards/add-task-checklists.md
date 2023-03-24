@@ -148,7 +148,7 @@ Checklist items show the avatars of those team members assigned to the item. You
 
 ## Configure the Kanban board 
 
-To configure or change the layout of the Kanban board, see [Customize your boards](../get-started/customize-boards.md). 
+To configure or change the layout of the Kanban board, see [Customize your boards](../configure-customize.md). 
 
 
 ## Related articles  

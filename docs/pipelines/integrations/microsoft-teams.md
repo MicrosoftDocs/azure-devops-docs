@@ -8,7 +8,7 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 01/13/2022
+ms.date: 03/21/2023
 monikerRange: 'azure-devops'
 ---
  
@@ -142,7 +142,7 @@ This command deletes all the subscriptions related to any pipeline in the projec
 
 ## Link your notifications
 
-Link a set of related notifications to reduce the space occupied by notifications in a channel. All notifications linked to a particular run of a pipeline get linked together.
+All notifications linked to a particular run of a pipeline get linked together.
 
 **Example 1:** Compact view of linked notifications. 
 

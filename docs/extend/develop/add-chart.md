@@ -192,7 +192,7 @@ Here, the chart's size is defined in `hostOptions`. The series property is an ar
 For pie charts, we also have some special options that are defined by the `specializedOptions` property. Here, we're explicitly enabling data labels for the pie chart. 
 We also need to set the size of the pie chart by specifying its outer diameter. 
 
-The chart requires a container, the chart options, and a call to the Chart Service to initialize and render. For more information on chart options, see [vss-web-extension-sdk/typings/charts](https://github.com/Microsoft/azure-devops-extension-sdk/blob/master/typings/charts.d.ts).
+The chart requires a container, the chart options, and a call to the Chart Service to initialize and render. For more information on chart options, see [vss-web-extension-sdk/typings/charts](https://github.com/Microsoft/vss-web-extension-sdk/blob/master/typings/charts.d.ts).
 
 ### Stacked area chart
 
