@@ -13,24 +13,18 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-If you use [Slack](https://slack.com), you can use the [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines) to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, 
-pending approvals and more from the app and get notifications for these events in your Slack channels.
-
-> [!div class="mx-imgBorder"]
-> ![Notifications image](media/integrations-slack/notifications.png)
-
+With [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines), Slack users can easily track the events occurring within their pipelines. The app allows users to establish and oversee subscriptions for various pipeline events, such as builds, releases, pending approvals, and more. Notifications for these events are then delivered directly to users' Slack channels
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
-## Add the Azure Pipelines app to your Slack workspace
+## Install Azure Pipelines app
 
 Navigate to [Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to install the Azure Pipelines app to your Slack workspace. Once added, 
 you will see a welcome message from the app as below. Use the `/azpipelines` handle to start interacting with the app.
 
-> [!div class="mx-imgBorder"]
-> ![Welcome message image](media/integrations-slack/welcome-message.png)
+    :::image type="content" source="media/integrations-slack/welcome-message.png" alt-text="A screenshot showing the Azure Pipelines app welcome message.":::
 
-## Connect the Azure Pipelines app to your pipelines
+## Connect to your pipeline
 
 Once the app has been installed in your Slack workspace, you can connect the app to the pipelines you want to monitor. The app will ask you to authenticate to Azure Pipelines before running any commands. 
 
