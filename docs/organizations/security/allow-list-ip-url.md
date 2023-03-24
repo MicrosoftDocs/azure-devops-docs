@@ -18,7 +18,7 @@ ms.date: 03/27/2023
 
 If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 
-- [Domain URLs to allow](#domain-urls-to-allow)
+- [Allowed domain URLs](#allowed-domain-urls)
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
 
 > [!TIP]
