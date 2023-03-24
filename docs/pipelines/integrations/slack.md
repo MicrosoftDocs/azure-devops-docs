@@ -9,7 +9,7 @@ ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
  
-# Azure Pipelines with Slack
+# Use Azure Pipelines with Slack
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -26,64 +26,45 @@ you will see a welcome message from the app as below. Use the `/azpipelines` han
 
 ## Connect to your pipeline
 
-Once the app has been installed in your Slack workspace, you can connect the app to the pipelines you want to monitor. The app will ask you to authenticate to Azure Pipelines before running any commands. 
+Once the app has been installed in your Slack workspace, you can connect the app to any pipeline you want to monitor. You will be asked to authenticate to Azure Pipelines before running any commands. 
 
-> [!div class="mx-imgBorder"]
-> ![Sign in prompt image ](media/integrations-slack/sign-in.png)
+    :::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
 
 To start monitoring all pipelines in a project, use the following slash command inside a channel:
 
-```
-/azpipelines subscribe [project url]
-```
+    ```
+    /azpipelines subscribe [project url]
+    ```
 
-The project URL can be to any page within your project (except URLs to pipelines).
+The project URL can link to any page within your project (except URLs to pipelines). For example: */azpipelines subscribe https://dev.azure.com/myorg/myproject/*
 
-For example:
-
-```
-/azpipelines subscribe https://dev.azure.com/myorg/myproject/
-```
 
 You can also monitor a specific pipeline using the following command:
 
-```
-/azpipelines subscribe [pipeline url]
-```
+    ```
+    /azpipelines subscribe [pipeline url]
+    ```
 
-The pipeline URL can be to any page within your pipeline that has `definitionId` or `buildId/releaseId` in the URL.  
+The pipeline URL can link to any page within your pipeline that has a `definitionId` or a `buildId/releaseId` in the URL. For example: */azpipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123*, or: */azpipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases*
 
-For example:
+The subscribe command gets you started with a few subscriptions by default. Here are the default notifications enabled for the following pipeline type:
 
-```
-/azpipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123
-```
+| Build pipelines | Release pipelines | YAML pipelines |
+| -------- | -------- | -------- |
+| *Build completed* notification | *Release deployment started*, *Release deployment completed* and *Release deployment approval pending* notifications | *Run stage state changed* and *Run stage waiting for approval* notifications |
 
-or:
-
-```
-/azpipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases
-```
-
-The subscribe command gets you started with a few subscriptions by default. For Build pipelines, the channel is subscribed to *Build completed* notification. For Release pipelines, 
-the channel will start receiving *Release deployment started*, *Release deployment completed* and *Release deployment approval pending* notifications. For YAML pipelines, subscriptions are created for the *Run stage state changed* and *Run stage waiting for approval* notifications.
-
-> [!div class="mx-imgBorder"]
-> ![Subscriptions added image](media/integrations-slack/subscriptions-added-confirmation.png)
+:::image type="content" source="media/integrations-slack/subscriptions-added-confirmation.png" alt-text="A screenshot showing notification example.":::
 
 ## Manage subscriptions
 
-To manage the subscriptions for a channel, use the following command:
+To manage the subscriptions for a channel, use the following command: `/azpipelines subscriptions`
 
-`/azpipelines subscriptions`
+This command will list all the current subscriptions for the channel and allow you to add or remove subscriptions.
 
-This command will list all the current subscriptions for the channel and allow you to add new subscriptions.
+> [!NOTE]
+> Team administrators are not able to remove or modify subscriptions created by Project administrators.
 
-[!NOTE]
-Team administrators aren't able to remove or modify subscriptions created by Project administrators.
-
-> [!div class="mx-imgBorder"]
-> ![Subscriptions list image](media/integrations-slack/subscriptions-list.png)
+:::image type="content" source="media/integrations-slack/subscriptions-list.png" alt-text="A screenshot showing a list of subscriptions.":::
 
 ## Using filters effectively to customize subscriptions
 
