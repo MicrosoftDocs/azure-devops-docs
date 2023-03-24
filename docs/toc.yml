@@ -44,7 +44,7 @@
   - name: Authenticate extensions and security
     href: ./extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with service principals or managed identities
-    href: ./integrate/get-started/authentication/service-principal-managed-identity?toc=/azure/devops/marketplace-extensibility/toc.json
+    href: ./integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with PATs
     href: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Authenticate with OAuth 2.0
