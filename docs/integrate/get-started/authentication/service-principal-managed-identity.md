@@ -63,10 +63,12 @@ Some helpful links:
 
 ### 2. Add and manage service principal in an Azure DevOps organization
 
-Once you have completed configuring the service principal in the Azure AD portal, you must do the same in Azure DevOps by adding the service principal to your organization. They can be added through the [Users page](../../../organizations/accounts/add-organization-users.md) or with the [ServicePrincipalEntitlements APIs](//api-reference-links). Since they can't log in interactively, these actions must be done by a user account instead, specifically  a **Project Collection Administrator**. Only PCAs can add and manage service principals in an organization. When being added, you can also grant it access to specific projects and assign it a license.
+Once you have completed configuring the service principal in the Azure AD portal, you must do the same in Azure DevOps by adding the service principal to your organization. They can be added through the [Users page](../../../organizations/accounts/add-organization-users.md) or with the [ServicePrincipalEntitlements APIs](//api-reference-links). Since they can't log in interactively, they must be added by a user account that can add users to an organization, project, or team. This includes **Project Collection Administrators** or **Project Administrators and Team Administrators** when the ["Allow team and project administrators to invite new users" policy](/azure/devops/organizations/security/restrict-invitations) is enabled. 
+
+If you are a PCA, you can also grant a service principal access to specific projects and assign it a license. If you are not, you must reach out to the PCA to update any project memberships or license access levels.
 
 > [!TIP] 
-> To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the [ServicePrincipalEntitlements API], make sure to pass in the **service principal's object id** and not the application's object id. 
+> To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the `ServicePrincipalEntitlements` API, make sure to pass in the **service principal's object id** and not the application's object id. 
 
 > [!NOTE]
 > You can only add a managed identity for the tenant your organization is connected to. If you would like to access a managed identity in a different tenant, see [the workaround we've included in the FAQ](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
