@@ -40,15 +40,13 @@ Learn more about [using IIS Basic Authentication with Azure DevOps on-premises](
 ## Frequently asked questions (FAQs)
 
 #### Q: Why can't one of my service accounts access the Azure DevOps REST API?
-
 A: Your service account may not have "materialized." Since signing in isn't possible with a service account that doesn't have interactive signing in permissions, check out [this work-around](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Quickstarts/dotnet/MaterializeUserQuickStarts/Program.cs).
 
 #### Q: I'm making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](../../concepts/dotnet-client-libraries.md) or [Azure DevOps Services REST APIs](/rest/api/azure/devops)?
 A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They're simpler and more easily maintained when version changes to our REST endpoints occur. If functionality is missing from the client libraries, [MSAL](/azure/active-directory/develop/msal-overview) is the best authentication mechanism to use with our REST APIs.
-### Q: Is this guidance only for Azure DevOps Services or is it also relevant for on-premises Azure DevOps Server users?
 
+#### Q: Is this guidance only for Azure DevOps Services or is it also relevant for on-premises Azure DevOps Server users?
 A: This guidance is mainly for Azure DevOps Services users. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using the [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate for a user.
 
 #### Q: What if I want my application to authenticate with both Azure DevOps Server and Azure DevOps Services?
-
 A: The best practice is to have different authentication paths for Azure DevOps Server and Azure DevOps Services. You can use the requestContext to find out which you're hitting and then use the best mechanism for each. Instead, if you want a unified solution, [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) works for both.
