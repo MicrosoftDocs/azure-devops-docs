@@ -22,7 +22,7 @@ The following types of users can join your Azure DevOps Services organization fo
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
 * Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. You can assign more features to users, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), by access level, Basic + Test Plans.
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic or Basic + Test Plan features, depending on their subscription level. 
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
