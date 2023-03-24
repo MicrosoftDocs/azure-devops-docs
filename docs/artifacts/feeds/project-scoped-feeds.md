@@ -52,6 +52,9 @@ Follow the instructions below and select the appropriate scope for your need to 
 
 ::: moniker-end
 
+> [!NOTE]
+> Organization-scoped feeds cannot be converted into project-scoped feeds.
+
 ## Project-scoped vs organization-scoped feeds
 
 A project-scoped feed is scoped to a project instead of an organization. Here are the main differences between the two types of feeds:

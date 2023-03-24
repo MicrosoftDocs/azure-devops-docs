@@ -68,7 +68,7 @@ Semantic Versioning is supported in Azure Pipelines and can be configured in you
    - `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in your pipeline. This format will automatically increment the build number and the package version with a new patch number. It will keep the major and minor versions constant, until you change them manually.
    - `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in your pipeline. This format will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
 
-- **Use a custom versioning scheme**. You can customize the major, minor, and patch versions for your packages and let the NuGet task generate a unique prerelease label based on the date and time.
+- **Use a custom versioning scheme**. You can customize the major, minor, and patch versions for your packages and let the NuGet task generate a unique prerelease label based on the date and time. Format: *Major.Minor.Patch-ci-datetime*. See [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
 
 - **Use a script in your build pipeline to generate the version**.
 
@@ -76,7 +76,7 @@ Semantic Versioning is supported in Azure Pipelines and can be configured in you
 
 ::: moniker range=">= azure-devops-2019"
 
-This example shows how to use the date and time as the prerelease label.
+This example shows how to use the date and time as the prerelease label. This will generate a SemVer compliant version formatted as: `Major.Minor.Patch-ci-datetime`.
 
 ```yaml
 variables:
@@ -141,7 +141,7 @@ steps:
     allowPackageConflicts: true
 ```
 
-To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you are done. See [Manage service connections](../library/service-endpoints.md) for more details.
+To publish a package to an external NuGet feed, you must first create a service connection to connect to that feed. You can do this by going to **Project settings** > **Service connections** > **New service connection**. Select **NuGet**, and then select **Next**. Fill out the form and then select **Save** when you're done. See [Manage service connections](../library/service-endpoints.md) for more details.
 
 To publish a package to an external NuGet feed, add the following snippet to your YAML pipeline.
 
@@ -226,7 +226,7 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
 
-1. Select **Grant access permission to all pipelines**, and then select **Save** when you are done.
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done.
 
 #### [YAML](#tab/yaml/)
 
@@ -251,7 +251,7 @@ Add the NuGet task to your pipeline definition and configure it as follows:
 
 1. Select **External NuGet server** for your **Target feed location**, and then select the service connection you created earlier.
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 :::image type="content" source="media/push-to-nuget-org.png" alt-text="Screenshot showing how to configure the NuGet push task in Azure Pipelines":::
 

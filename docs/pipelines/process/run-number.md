@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines or Azure DevOps Server.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 02/24/2023
+ms.date: 03/21/2023
 monikerRange: '>= tfs-2018'
 ---
 
@@ -18,17 +18,23 @@ You can customize how your pipeline runs are numbered. The default value for run
 
 In Azure DevOps `$(Rev:r)` is a special variable format that only works in the build number field. When a build is completed, if nothing else in the build number has changed, the `Rev` integer value increases by one.
 
+`$(Rev:r)` resets when you change part of the build number. For example, if you've configured your build number format as `$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:r)`, then the build number will reset when the date changes the next day. If your build number is `MyBuild_20230621.1`, the next build number that day is `MyBuild_20230621.2`. The next day, the build number is `MyBuild_20230622.1`.
+
+If your build number format is `1.0.$(Rev:r)`, then the build number resets to `1.0.1` when you change part of the number. For example, if your last build number was `1.0.3`, and you change the build number to `1.1.$(Rev:r)` to indicate a version change, the next build number is `1.1.1`.
+
+
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-In YAML, this property is called `name` and is at the root level of a pipeline. 
+In YAML, this property is called `name` and must be at the root level of a pipeline. 
 If not specified, your run is given a unique integer as its name.
 You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
 The `name` property doesn't work in template files. 
 
 ```yaml
-name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
 
 steps:
   - script: echo '$(Build.BuildNumber)' # outputs customized build number like project_def_master_20200828.1
@@ -47,7 +53,7 @@ If you leave this field blank, your completed build is given a unique integer as
 
 ## Example
 
-At the time a run is started:
+At the time, a run is started:
 
 * Project name: Fabrikam
 
