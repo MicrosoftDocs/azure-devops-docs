@@ -53,7 +53,7 @@ The subscribe command gets you started with a few subscriptions by default. Here
 | -------- | -------- | -------- |
 | *Build completed* notification | *Release deployment started*, *Release deployment completed* and *Release deployment approval pending* notifications | *Run stage state changed* and *Run stage waiting for approval* notifications |
 
-:::image type="content" source="media/integrations-slack/subscriptions-added-confirmation.png" alt-text="A screenshot showing notification example.":::
+:::image type="content" source="media/integrations-slack/events-subscription.png" alt-text="A screenshot showing notification example.":::
 
 ## Manage subscriptions
 
@@ -66,26 +66,21 @@ This command will list all the current subscriptions for the channel and allow y
 
 :::image type="content" source="media/integrations-slack/subscriptions-list.png" alt-text="A screenshot showing a list of subscriptions.":::
 
-## Using filters effectively to customize subscriptions
+## Customize subscriptions
 
-When a user subscribes to any pipeline, a few subscriptions are created by default without any filters being applied. Often, users have the need to customize these subscriptions. 
-For example, users may want to hear only about failed builds or get notified only when deployments are pushed to production. The Azure Pipelines app supports filters to customize what you see in your channel.
+By default, when subscribing to a pipeline, several subscriptions are generated that do not have any filters applied. However, it is common for users to want to personalize these subscriptions according to their preferences. For instance, users may wish to receive notifications only for failed builds or when deployments are made to production. The Azure Pipelines app offers the option to apply filters, enabling users to customize the messages they receive in their channel. To customize a subscription:
 
-1. Run the `/azpipelines subscriptions` command
-2. In the list of subscriptions, if there is a subscription that is unwanted or must be modified (Example: creating noise in the channel), select the **Remove** button 
-3. Select the **Add subscription** button
-4. Select the required pipeline and the desired event
-5. Select the appropriate filters to customize your subscription
+1. Run the `/azpipelines subscriptions` command to list all your subscriptions.
 
-### Example: Get notifications only for failed builds
+1. Select **Add subscription**.
 
-> [!div class="mx-imgBorder"]
-> ![Build Filters](media/integrations-slack/build-filters.png)
+1. Select the event you want to subscribe to, and then select your desired configuration.
 
-### Example: Get notifications only if the deployments are pushed to production environment
+1. Select **Save** when you're done.
 
-> [!div class="mx-imgBorder"]
-> ![Release Filters](media/integrations-slack/release-filters.png)
+#### Example: Get notifications only for failed builds
+
+:::image type="content" source="media/integrations-slack/custom-build-completed.png" alt-text="A screenshot showing a list how to add a custom new subscription.":::
 
 ## Approve deployments from your channel
 
