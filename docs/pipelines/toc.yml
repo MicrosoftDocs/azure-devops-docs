@@ -433,8 +433,6 @@
       items:
         - name: Build and push to Azure Container Registry with a Docker template
           href: ecosystems/containers/acr-template.md
-        - name: Build and push to Azure Container Registry - Managed Service Identity
-          href: ecosystems/containers/publish-to-acr.md
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
