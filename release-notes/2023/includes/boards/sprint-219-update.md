@@ -7,7 +7,7 @@ ms.topic: include
 
 ### REST API support for connecting GitHub repositories (preview)
 
-The [Azure Boards-GitHub integration](/azure/devops/boards/github/?view=azure-devops&preserve-view=true)has been available for several years now. It enables the linking between GitHub commits, pull requests, and issues to work items in Boards.  However, the current integration is limited to connecting 250 GitHub repositories to a project and there is no API support.
+The [Azure Boards-GitHub integration](/azure/devops/boards/github/?view=azure-devops&preserve-view=true) has been available for several years now. It enables the linking between GitHub commits, pull requests, and issues to work items in Boards.  However, the current integration is limited to connecting 250 GitHub repositories to a project and there is no API support.
 
 We are happy to announce a very limited private preview for those customers who are reaching the limits of the current implementation and would like to add more than 250 GitHub repositories to a project. The preview gets you access to a set of new REST APIs that will allow you to build your own tooling to link up to 2,000 repositories per connection.
 
