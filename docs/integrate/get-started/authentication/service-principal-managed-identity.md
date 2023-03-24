@@ -161,7 +161,7 @@ You are only able to add a managed identity from the same tenant that your organ
 3. Create a [key vault](/azure/key-vault/general/quick-create-portal) and generate a [certificate](/azure/key-vault/certificates/quick-create-portal) (cannot be of type "PEM"). When you generate this certificate, a secret with the same name is also generated, which we will be using later. 
 4. Now, grant access to the managed identity so that it can read the private key from the key vault. Create an access policy in the key vault with the "Get/List" permissions (under "Secret permissions" and search for the managed identity under "Select principal".
 5. Lastly, download the created certificate in "CER" format, which ensures that it does not contain the private part of your certificate.
-6. Next, we need to [create a new application registration](#1-create-a-new-managed-identity-or-application-service-principal) in the target tenant.
+6. Next, we need to create a new application registration in the target tenant.
 7. Upload the downloaded certificate to this new application in the "Certificates & secrets" tab.
 8. Add this application's service principal to the [Azure DevOps organization we want it to access](#3-add-and-manage-service-principal-in-an-azure-devops-organization), and don't forget to set up the service principal with any required permissions.
 9. To get an Azure AD access token from this service principal that makes use of the managed identity certificate, take a look at this code sample below:
@@ -293,8 +293,7 @@ always-auth=true
 ```
 
 ### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
-
-1. First, you must add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension?view=vs-2022#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
+1. First, you must add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
 2. Next, you can publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
 ```
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
