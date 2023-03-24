@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: how-to
 ms.author: wonga
 author: wonga
-ms.date: 12/15/2022
+ms.date: 03/24/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -61,65 +61,12 @@ Some helpful links:
 
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8K]
 
-### 2. Configure Azure DevOps OAuth application roles
-
-#### Assign application roles and grant admin consent for service principals
-
-[App-only roles](/azure/active-directory/develop/custom-rbac-for-developers) can be set up in Azure AD for service principals to authorize which permissions it will be allowed. (We treat roles slightly different than described in the Azure AD documentation. Rather than a role being a combination of permissions, each role is aligned to a single Azure DevOps scope.) All of the roles to choose from can be found on this list of [Azure DevOps scopes](./oauth.md#scopes).
-
-![Application permissions for service principals on Azure Portal](./media/sp-app-perms.png)
-
-[Assign these Azure AD app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#assign-app-roles-to-applications) to an app registration in the Azure portal or programmatically by using [the Microsoft Graph APIs](/graph/api/user-post-approleassignments). Each tenant admin must [grant consent](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps#grant-admin-consent) on behalf of all the users to allow the application to use these application permissions. 
-
-
-#### Assign application roles and grant admin consent for managed identities
-
-For managed identities, assigning an Azure AD role can only be done programmatically, like the following code snippet. When run by an admin, consent will be granted for the tenant.
-
-As a pre-requisite, you may need the [AzureAD powershell module](/powershell/azure/active-directory/install-adv2) first.
-```powershell
-Install-Module AzureAD
-```
-Then, an administrator that can approve consent requests needs to run the following script:
-
-
-```powershell
-## VARIABLES
-
-# Azure DevOps App ID in Azure AD
-$azureDevOpsAppId = "499b84ac-1321-427f-aa17-267ca6975798"
-
-# Azure DevOps API permissions. Find all at https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes
-$permissions = "[List of comma-separated permissions]" # Example: "vso.build", "vso.graph"
-
-# Azure AD Tenant ID
-$tenatId = "77acec32-749c-443d-a53a-af7e86896469"
-
-# Managed Identity Object ID. You can find it in the Azure resource instance under Managed Identity, or in the Enterprise Applications
-$objectId = "[Object ID of your Managed Identity]"
-
-## SCRIPT
-
-Connect-AzureAD -Tenant $tenatId
-
-# Find the Azure DevOps application
-$azureDevOpsApp = Get-AzureADServicePrincipal -Filter "appId eq '$azureDevOpsAppId'"
-
-# Assign all permissions to the Managed Identity service principal
-foreach ($permission in $permissions)
-{
-   $role = $azureDevOpsApp.AppRoles | where Value -Like $permission | Select-Object -First 1
-   New-AzureADServiceAppRoleAssignment -Id $role.Id -ObjectId $objectId -PrincipalId $objectId -ResourceId $azureDevOpsApp.ObjectId
-}
-
-```
-
-### 3. Add and manage service principal in an Azure DevOps organization
+### 2. Add and manage service principal in an Azure DevOps organization
 
 Once you have completed configuring the service principal in the Azure AD portal, you must do the same in Azure DevOps by adding the service principal to your organization. They can be added through the [Users page](../../../organizations/accounts/add-organization-users.md) or with the [ServicePrincipalEntitlements APIs](//api-reference-links). Since they can't log in interactively, these actions must be done by a user account instead, specifically  a **Project Collection Administrator**. Only PCAs can add and manage service principals in an organization. When being added, you can also grant it access to specific projects and assign it a license.
 
 > [!TIP] 
-> To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the [ServicePrincipalEntitlements API], make sure to pass in the service principal's object id and not the application's object id. 
+> To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the [ServicePrincipalEntitlements API], make sure to pass in the **service principal's object id** and not the application's object id. 
 
 > [!NOTE]
 > You can only add a managed identity for the tenant your organization is connected to. If you would like to access a managed identity in a different tenant, see [the workaround we've included in the FAQ](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
@@ -138,7 +85,7 @@ Management of service principals does differ from user accounts in a few key way
 * You can't modify a service principal’s display name or avatar on Azure DevOps.
 * A service principal will count as a license for each organization it's added to, even if [multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) is selected.
 
-### 4. Access Azure DevOps resources with an Azure AD token
+### 3. Access Azure DevOps resources with an Azure AD token
 
 #### Get an Azure AD token
 Acquiring an access token for a managed identity can be done by following along with the Azure AD documentation. See these examples for [service principals](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) and [managed identities](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token). 
@@ -163,41 +110,49 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 
 ### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
-Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, token strings that represent a user’s username and password, they'
-re incredibly risky to use as they can easily fall into the wrong person’s hands. Azure AD tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
+Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, meaning token strings that represent a user’s username and password, they're incredibly risky to use as they can easily fall into the wrong person’s hands. Azure AD tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
 
 ### Q: What are the rate limits on service principals and managed identities?
 At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
-### Q: Will using this feature cost me additional fees?
-At this time, service principals and managed identities are no different in pricing than a standard user license. One notable change pertains to how we treat "multi-org billing" for service principals. While users are counted as only one license no matter how many organizations they have been added to, service principals will be counted as one license per each organization they have been added to (like standard "user assignment-based billing"). 
-
-### Q: Can I use a service principal to do git operations, like clone a repo?
-See the following example of how we've passed an [Azure AD token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
-
-```powershell
-$ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
-git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
-```
-> [!TIP] 
-> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
+### Q: Will using this feature cost more?
+Service principals and managed identities are priced similarly as users, based on the access level. One notable change pertains to how we treat "multi-org billing" for service principals. While users are counted as only one license no matter how many organizations they have been added to, service principals will be counted as one license per each organization they have been added to (like standard "user assignment-based billing"). 
 
 ### Q: Can I use a service principal or managed identity with Azure CLI?
-Yes! Anywhere that asks for PATs in the Azure CLI can also accept [Azure AD access tokens](#get-an-azure-ad-token). (We will work on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
+Yes! Anywhere that asks for PATs in the [Azure CLI](/azure/authenticate-azure-cli) can also accept [Azure AD access tokens](#get-an-azure-ad-token). (We will work on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
 
 ```powershell
-# Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
+# To authenticate with environment variable: Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
 $env:AZURE_DEVOPS_EXT_PAT="{aad_access_token}"
 
-# Command: az devops login will prompt you to enter a token. You can add an Azure AD token too! Not just a PAT.
-Example:
-PS C:\Users> az devops login
-Token:
+# To authenticate with a command: After typing this command, the az devops login will prompt you to enter a token. You can add an Azure AD token too! Not just a PAT.
+az devops login
+
+# To authenticate a service principal with a password or cert:
+az login --service-principal -u <app-id> -p <password-or-cert> --tenant <tenant>
+
+# To authenticate a managed identity:
+az login --identity
 ```
-After which, you should be able to use `az cli` commands per usual.
+
+Now, let's get an Azure AD token and try to call an Azure DevOps API by passing it in the headers as a `Bearer` token:
+```powershell
+Write-Host "Obtain access token for Service Connection identity..."
+$accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
+
+Write-Host "Use access token with Azure DevOps REST API to list projects in the organization..."
+$apiVersion = "7.1-preview.1"
+$uri = "https://dev.azure.com/${yourUsername}/_apis/projects?api-version=${apiVersion}"
+$headers = @{
+    Accept = "application/json"
+    Authorization = "Bearer $accessToken"
+}
+Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -ExpandProperty value ` | Select-Object id, name
+```
+
+After which, you should be able to use `az cli` commands per usual. 
 
 ### Q: Can I add a managed identity from a different tenant to my organization?
-
 You are only able to add a managed identity from the same tenant that your organization is connected to. However, we have a workaround that will allow you to set up a managed identity in the "resource tenant" where are all of your resources are and enable it to be used by an application service principal in the "target tenant", the tenant your organization is connected to.
 1. To begin, create a [user-assigned managed identity](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities) in Azure portal for your resource tenant. 
 2. Connect it to a [virtual machine and assign this managed identity](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to it. 
@@ -243,6 +198,106 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 ```
 10. Please note that this certificate must still be regularly rotated.
 
+### Q: Can I use a service principal to do git operations, like clone a repo?
+See the following example of how we've passed an [Azure AD token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
+
+```powershell
+$ServicePrincipalAadAccessToken = 'Azure AD access token of a service principal'
+git -c http.extraheader="AUTHORIZATION: bearer $ServicePrincipalAadAccessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
+```
+> [!TIP] 
+> To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager), which can accept [Azure AD tokens (that is, Microsoft Identity OAuth tokens)](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/environment.md#GCM_AZREPOS_CREDENTIALTYPE) instead of PATs if an environment variable is changed.
+
+A helpful tip on how to get the access token from the Azure CLI to call git fetch is shown below:
+1. Open the Git configuration of your repository: 
+```sh
+git config -e
+```
+
+2. Add the following lines:
+```sh
+[credential]
+    helper = "!f() { test \"$1\" = get && echo \"password=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)\"; }; f" 
+```
+
+3. Test that it works using: 
+```sh
+GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
+```
+
+### Q: Can I use a service principal or managed identity with Azure CLI?
+Yes! Anywhere that asks for PATs in the Azure CLI can also accept [Azure AD access tokens](#get-an-azure-ad-token). (We will work on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
+
+```powershell
+# Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
+$env:AZURE_DEVOPS_EXT_PAT="{aad_access_token}"
+
+# Command: az devops login will prompt you to enter a token. You can add an Azure AD token too! Not just a PAT.
+Example:
+PS C:\Users> az devops login
+Token:
+```
+After which, you should be able to use `az cli` commands per usual.
+
+### Q: Can I use a service principal to connect to feeds?
+Yes, you should be able to connect to any feed using Basic authentication by replacing the PAT secret value with an SP access token. Below, we will demonstrate how this is done for nuget and maven, but this should be doable for other feed types.
+
+#### npm project setup with Azure AD tokens
+> [!NOTE]
+> The vsts-npm-auth tool does not support Azure AD access tokens. 
+
+1. Add a `.npmrc` to your project, in the same directory as your `package.json`.
+```
+registry=https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/registry/ 
+always-auth=true
+```
+2. Get an access token for your service principal or managed identity.
+3. Add the code below to your `${user.home}/.npmrc` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
+```
+//pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
+```
+
+#### maven project setup with Azure AD tokens
+1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
+
+```xml
+<repository>
+  <id>Fabrikam</id>
+  <url>https://pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+```
+2. Get an access token for your Service Principal or Managed Identity.
+3. Add or edit the `settings.xml` file in `${user.home}/.m2` and replace the placeholder `[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]` with the access token from the previous step.
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>Fabrikam</id>
+      <!-- username is not used in the authentication -->
+      <username>Fabrikam</username>
+      <password>[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]</password>
+    </server>
+  </servers>
+</settings>
+```
+
+### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
+
+1. First, you must add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension?view=vs-2022#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
+2. Next, you can publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
+```
+tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
+```
+
 ## Potential errors
 
 #### Failed to create service principal with object ID '{`provided objectId`}'
@@ -261,4 +316,3 @@ This error might be due to one of the following reasons:
 
 #### Azure DevOps Graph List API returns empty list, even though we know there are service principals in the organization
 The Azure DevOps Graph List API may return an empty list, even if there are still additional pages of users to return. Use the `continuationToken` to iterate through the lists, and you will eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it is possible that the first X results return empty.
-
