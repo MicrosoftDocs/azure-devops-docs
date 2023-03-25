@@ -182,13 +182,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td>2023 Q2</td>
          <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
-         <td>Boards</td>
-         <td>2023 Q2</td>
-         <td>Future</td>
-      </tr>
+      </tr>      
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements.](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
          <td>Boards</td>
@@ -196,17 +190,17 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+         <td>Boards</td>
+         <td>2023 Q3</td>
+         <td>Future</td>
+      </tr>
+      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Include additional fields on page filters.](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Include additional fields on page filters</a></td>
          <td>Boards</td>
          <td>2023 Q3</td>
          <td>Future</td>
-      </tr>  
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
-         <td>Boards</td>
-         <td>Future</td>
-         <td>Future</td>
-      </tr>         
+      </tr>             
     </tbody>
 </table>
 
@@ -342,7 +336,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="21"><strong>2023 Q1</strong></td>
+        <td rowspan="20"><strong>2023 Q1</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Swimlane colors](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors</a></td>
         <td>Boards</td>
         <td>Future</td>      
@@ -356,12 +350,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/lock-picklist-fields" data-raw-source="[Prevent picklist fields from being edited](/azure/devops/release-notes/roadmap/2023/lock-picklist-fields)">Prevent picklist fields from being edited</a></td>
         <td>Boards</td>
         <td>Future</td>      
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/hyperlink-field-type" data-raw-source="[Hyperlink field type for custom fields](/azure/devops/release-notes/roadmap/2023/hyperlink-field-type)">Hyperlink field type for custom fields<a></td>
-        <td>Boards</td>
-        <td>Future</td>      
-      </tr>
+      </tr>     
        <tr>
         <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[REST APIs to connect GitHub Repos to Azure Boards](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">REST APIs to connect GitHub Repos to Azure Boards (Preview)</a></td>
         <td>Boards</td>
@@ -458,12 +447,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>      
+      </tr>           
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
         <td>Reporting</td>
@@ -492,13 +476,23 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>General</td>
         <td>N/A</td>
-      </tr>         
+      </tr>
       <tr>
-        <td rowspan="3"><strong>2023 Q3</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/dataimport-progresspage" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/2023/dataimport-progresspage)">Increased transparency into the progress of an Azure DevOps Server to Azure DevOps Services data migration</a></td>
+        <td>General</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>    
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>

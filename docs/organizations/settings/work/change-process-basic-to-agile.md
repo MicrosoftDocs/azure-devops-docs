@@ -173,5 +173,5 @@ After changing the process, you may want to make additional updates as follows:
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
 - [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
-- [Customize your boards](../../../boards/get-started/customize-boards.md)
+- [Customize your boards](../../../boards/configure-customize.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

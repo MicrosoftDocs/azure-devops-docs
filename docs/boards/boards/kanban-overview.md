@@ -20,7 +20,7 @@ ms.date: 05/20/2022
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
 
-If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. To add another Kanban board, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json).
+If you're a project administrator just getting started, review [Configure and customize Azure Boards](../configure-customize.md) to learn more about defining area and iteration paths and customizing your work item types. To add another Kanban board, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json).
 
 ## Use Kanban boards to plan and show progress
 
