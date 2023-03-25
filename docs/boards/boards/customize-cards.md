@@ -186,21 +186,17 @@ You can customize cards that appear on the Kanban board for your product backlog
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot showing Open board settings for a team, vert nav.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-5. When you're done, choose **Save**.
-
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"
 
 1. [Open your Kanban board](kanban-quickstart.md).  
 
-1. Choose the backlog level you want to customize. 
+2. Choose the backlog level you want to customize. 
 
-1. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+3. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot showing Kanban board, open common configuration settings.](media/add-columns-open-settings-ts.png)  
-
-2. When you're done, choose **Save**.
 
 ::: moniker-end
 
@@ -409,7 +405,7 @@ For more information, see [Add tasks or child items as checklists](../../boards/
 	> [!NOTE]   
 	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. To learn more about linking Azure Boards work items to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
 
-3. When you're done, choose **Save**.
+3. When you're done, choose **Save and close**.
 
 ::: moniker-end
 

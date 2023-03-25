@@ -214,6 +214,31 @@
       "source_path": "docs/organizations/notifications/concepts-events-and-notifications.md",
       "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/why-use-azure-boards.md",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/get-started/index.md",
+      "redirect_url": "/azure/devops/boards/get-started/sign-up-invite-teammates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/get-started/manage-boards.md",
+      "redirect_url": "/azure/devops/boards/configure-customize",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/get-started/customize-boards.md",
+      "redirect_url": "/azure/devops/boards/configure-customize",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/basic-field-reference.md",
+      "redirect_url": "/azure/devops/boards/work-items/guidance/work-item-field",
+      "redirect_document_id": false
     }
   ]
 }

@@ -294,6 +294,7 @@ clear name to description mapping. You can format tables in pull requests, wiki,
 
 - Place each table row on its own line.
 - Separate table cells using the pipe character `|`.
+- To use a pipe character within a table you must escape with a backslash `\|`.
 - The first two lines of a table set the column headers and the alignment of elements in the table.
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right).
 - To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere).  

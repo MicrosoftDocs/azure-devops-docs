@@ -1,6 +1,4 @@
-- name: Start using Azure Boards
-  href: index.md
-- name: Sign up and invite some teammates
+- name: Sign up for Azure Boards
   displayName: Microsoft account, create project,
   href: sign-up-invite-teammates.md
 - name: Plan and track work
@@ -8,14 +6,6 @@
   href: plan-track-work.md
 - name: Customize your boards
   displayName: cards, columns, field, swimlanes, settings, backlog levels
-  href: customize-boards.md
+  href: ../configure-customize.md
 - name: Track work as a Stakeholder
   href: ../../organizations/security/get-started-stakeholder.md?bc=/azure/devops/boards/breadcrumb/toc.json&toc=/azure/devops/boards/toc.json
-- name: Manage your project
-  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions, configure, settings, customize
-  href: manage-boards.md
-- name: System fields
-  displayName: modify fields, remaining work, state, iteration ID, node, remote link count, effort
-  href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json
-- name: Keyboard shortcuts
-  href: keyboard-shortcuts.md
