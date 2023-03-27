@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 08/18/2021
+ms.date: 03/27/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -49,8 +49,9 @@ Azure DevOps works with and uses many Microsoft Azure services. For more informa
 
 Azure DevOps stores information that's global in nature, such as user identities and profile information as follows:
 
-- EU-based users: profile data is in EU data center  
 - US-based users: profile data is in US data center
+- EU-based users: profile data is in EU data center  
+- UK-based users: profile data is in UK data center
 - Users from all other countries and regions: profile data is in US data center
 
 ## Allow list data for tenant policies
