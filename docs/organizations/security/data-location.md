@@ -38,10 +38,10 @@ For more information, see [Data residency in Azure](https://azure.microsoft.com/
 
 Except [as noted](#transferring-your-data), Azure DevOps maintains all customer data within your selected geography. Customer data includes the following data types:
 
-- source code
-- work items
-- test results
-- geo-redundant mirrors and offsite backups
+- Source code
+- Work items
+- Test results
+- Geo-redundant mirrors and offsite backups
 
 Azure DevOps works with and uses many Microsoft Azure services. For more information and details on customer data retention by location, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).  
 
