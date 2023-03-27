@@ -82,50 +82,26 @@ By default, when subscribing to a pipeline, several subscriptions are generated 
 
 :::image type="content" source="media/integrations-slack/custom-build-completed.png" alt-text="A screenshot showing a list how to add a custom new subscription.":::
 
-## Approve deployments from your channel
+## Approve deployments
 
-You can approve deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to the *Release deployment approval pending* notification for classic Releases or the *Run stage waiting for approval* notification for YAML pipelines. Both of these subscriptions are created by default when you subscribe to the pipeline.
+You can approve deployments from within your Slack channel without navigating to the Azure Pipelines portal by subscribing to the *Release deployment approval pending* notifications  (classic releases) or the *Run stage waiting for approval* notifications (YAML pipelines). Both subscriptions are created by default when you subscribe to a pipeline.
 
-![Ready for approval](media/integrations-slack/approve.png)
+:::image type="content" source="media/integrations-slack/approve.png" alt-text="A screenshot showing pipeline approval in Slack.":::
 
-Whenever the running of a stage is pending for approval, a notification card with options to approve or reject the request is posted in the channel. Approvers can review the details of the request in the notification and take appropriate action. In the following example, the deployment was approved and the approval status is displayed on the card.
+The Azure Pipelines app for Slack enables you to handle all the checks and approval scenarios that are available in the Azure Pipelines portal. These include single approver, multiple approvers, and team-based approval. You have the option to approve requests either individually or on behalf of a team.
 
-![Screenshot showing approved notification.](media/integrations-slack/approved.png)
+:::image type="content" source="media/integrations-slack/approved.png" alt-text="A screenshot showing a pre-deployment pipeline approved in Slack.":::
 
-The app supports all the checks and approval scenarios present in Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence) and teams as approvers. You can approve requests as an individual or on behalf of a team.
+## Remove all subscriptions
 
-## Previews of pipeline URLs
-
-When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate.
-
-![Build URL unfurling.](./media/integrations-slack/build-url-unfurling.png)
-
-
-![Release URL unfurling.](./media/integrations-slack/release-url-unfurling.png)
-
-For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
-
-
-## Remove subscriptions and pipelines from a channel
-
-If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
+To declutter your channel, you can make use of the following commands to unsubscribe from all pipelines within a project. For example: */azpipelines unsubscribe all https://dev.azure.com/myorg/myproject*.
 
 ```
 /azpipelines unsubscribe all [project url]
 ```
 
-For example:
-
-```
-/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
-```
-
-This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
-
 > [!IMPORTANT] 
-> Only project administrators can run this command.
-
-
+> This command can only be executed by project administrators.
 
 
 ## Commands reference
