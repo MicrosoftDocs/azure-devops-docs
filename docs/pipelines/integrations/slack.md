@@ -22,28 +22,28 @@ With [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipe
 Navigate to [Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to install the Azure Pipelines app to your Slack workspace. Once added, 
 you'll see a welcome message from the app as below. Use the `/azpipelines` handle to start interacting with the app.
 
-    :::image type="content" source="media/integrations-slack/welcome-message.png" alt-text="A screenshot showing the Azure Pipelines app welcome message.":::
+:::image type="content" source="media/integrations-slack/welcome-message.png" alt-text="A screenshot showing the Azure Pipelines app welcome message.":::
 
 ## Connect to your pipeline
 
 Once the app has been installed in your Slack workspace, you can connect the app to any pipeline you want to monitor. You'll be asked to authenticate to Azure Pipelines before running any commands. 
 
-    :::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
+:::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
 
 To start monitoring all pipelines in a project, use the following slash command inside a channel:
 
-    ```
-    /azpipelines subscribe [project url]
-    ```
+```
+/azpipelines subscribe [project url]
+```
 
 The project URL can link to any page within your project (except URLs to pipelines). For example: */azpipelines subscribe https://dev.azure.com/myorg/myproject/*
 
 
 You can also monitor a specific pipeline using the following command:
 
-    ```
-    /azpipelines subscribe [pipeline url]
-    ```
+```
+/azpipelines subscribe [pipeline url]
+```
 
 The pipeline URL can link to any page within your pipeline that has a `definitionId` or a `buildId/releaseId` in the URL. For example: */azpipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123*, or: */azpipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases*
 
