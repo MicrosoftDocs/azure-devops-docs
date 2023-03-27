@@ -3,9 +3,9 @@ ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
 title: Azure Pipelines with Slack
-description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 
+description: Connect and monitor your pipelines with Azure Pipelines app for Slack
 ms.author: jukullam
-ms.date: 12/17/2019
+ms.date: 03/27/2023
 monikerRange: 'azure-devops'
 ---
  
@@ -20,13 +20,13 @@ With [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipe
 ## Install Azure Pipelines app
 
 Navigate to [Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to install the Azure Pipelines app to your Slack workspace. Once added, 
-you will see a welcome message from the app as below. Use the `/azpipelines` handle to start interacting with the app.
+you'll see a welcome message from the app as below. Use the `/azpipelines` handle to start interacting with the app.
 
     :::image type="content" source="media/integrations-slack/welcome-message.png" alt-text="A screenshot showing the Azure Pipelines app welcome message.":::
 
 ## Connect to your pipeline
 
-Once the app has been installed in your Slack workspace, you can connect the app to any pipeline you want to monitor. You will be asked to authenticate to Azure Pipelines before running any commands. 
+Once the app has been installed in your Slack workspace, you can connect the app to any pipeline you want to monitor. You'll be asked to authenticate to Azure Pipelines before running any commands. 
 
     :::image type="content" source="media/integrations-slack/sign-in.png" alt-text="A screenshot showing the sign-in prompt message.":::
 
@@ -59,7 +59,7 @@ The subscribe command gets you started with a few subscriptions by default. Here
 
 To manage the subscriptions for a channel, use the following command: `/azpipelines subscriptions`
 
-This command will list all the current subscriptions for the channel and allow you to add or remove subscriptions.
+This command lists all the current subscriptions for the channel and allow you to add or remove subscriptions.
 
 > [!NOTE]
 > Team administrators are not able to remove or modify subscriptions created by Project administrators.
@@ -90,7 +90,7 @@ You can approve deployments from within your Slack channel without navigating to
 
 The Azure Pipelines app for Slack enables you to handle all the checks and approval scenarios that are available in the Azure Pipelines portal. These include single approver, multiple approvers, and team-based approval. You have the option to approve requests either individually or on behalf of a team.
 
-:::image type="content" source="media/integrations-slack/approved.png" alt-text="A screenshot showing a pre-deployment pipeline approved in Slack.":::
+:::image type="content" source="media/integrations-slack/approved.png" alt-text="A screenshot showing a predeployment pipeline approved in Slack.":::
 
 ## Remove all subscriptions
 
@@ -103,10 +103,9 @@ To declutter your channel, you can make use of the following commands to unsubsc
 > [!IMPORTANT] 
 > This command can only be executed by project administrators.
 
-
 ## Commands reference
 
-Here are all the commands supported by the Azure Pipelines app:
+Here are all the commands supported by the Azure Pipelines app for Slack:
 
 | Slash command        | Functionality  |
 | -------------------- |----------------|
@@ -120,8 +119,7 @@ Here are all the commands supported by the Azure Pipelines app:
 
 ### Notifications in Private channels
 
-The Azure Pipelines app can help you monitor the pipelines activity in your private channels as well. You will need to invite the bot to your private channel by using `/invite @azpipelines`. 
-Post that, you can set up and manage your notifications the same way as you would for a public channel.
+The Azure Pipelines app can help you monitor the pipelines activity in your private channels as well. You'll need to invite the bot to your private channel by using `/invite @azpipelines`. Once the bot has been added, you can configure and control your notifications in the same manner as you would for a public channel.
 
 >[!NOTE]
 > * You can use the Azure Pipelines app for Slack only with a project hosted on Azure DevOps Services at this time.
@@ -132,18 +130,7 @@ Post that, you can set up and manage your notifications the same way as you woul
 
 ## Troubleshooting
 
-If you are experiencing the following errors when using the [Azure Pipelines App for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines), follow the procedures in this section. 
-
 [!INCLUDE [troubleshooting](includes/troubleshoot-authentication.md)]
-
-In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azpipelines signout` command followed by the `/azpipelines signin` command. 
-
-Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
-
-> [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](media/troubleshooting/consent-page-slack.png)
-
-If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
 - [Azure Boards with Slack](../../boards/integrations/boards-slack.md)
