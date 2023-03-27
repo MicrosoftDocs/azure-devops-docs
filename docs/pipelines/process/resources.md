@@ -216,7 +216,7 @@ resources:
       
 ```
 
-Your pipeline will run whenever the `SmartHotel` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
+Your pipeline will run whenever the `SmartHotel-CI` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
 
 ### `download` for pipelines
 
