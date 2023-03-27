@@ -37,6 +37,19 @@ You can [use a variable group](../library/variable-groups.md) to make variables 
 
 Use [templates](templates.md) to define variables in one file that are used in multiple pipelines. 
 
+
+### User-defined multi-line variables
+
+Azure DevOps supports multi-line variables but there are a few limitations.
+
+Downstream components such as pipeline tasks may not handle the variable values correctly. 
+
+Azure DevOps won't alter user-defined variable values. Variable values need to be formatted correctly before being passed as multi-line variables. When formatting your variable, avoid special characters, don't use restricted names, and make sure you use a line ending format that works for the operating system of your agent. 
+
+Multi-line variables behave differently depending on the operating system. To avoid this, make sure that you format multi-line variables correctly for the target operating system. 
+
+Azure DevOps never alters variable values, even if you provide unsupported formatting.
+
 ## System variables
 
 In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you're using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
