@@ -86,13 +86,13 @@ Files attached to work items must conform to the following restrictions.
 ::: moniker range=" azure-devops"
 |Restriction type  |Restriction  |
 |---------|---------|
-|File size   | - Must not exceed the maximum size:<br/>- Default maximum size: 4,096 kilobytes.<br/>- Absolute maximum size: 2 gigabytes.   |
+|File size   | Must not exceed the maximum size:<br/>- Default maximum size: 4,096 kilobytes.<br/>- Absolute maximum size: 2 gigabytes.   |
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 |Restriction type  |Restriction  |
 |---------|---------|
-|File size   | - Must not exceed the maximum size:<br>- Default maximum size: 4,096 kilobytes.<br>- Absolute maximum size: 2 gigabytes. For more information, see [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).   |
+|File size   | Must not exceed the maximum size:<br>- Default maximum size: 4,096 kilobytes.<br>- Absolute maximum size: 2 gigabytes. For more information, see [Change the maximum attachment size for work items](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).   |
 ::: moniker-end
 
 <a id="Kanban" />
@@ -129,17 +129,15 @@ Work item field names must conform to the following restrictions.
 
 The work item type definition language includes the concept of a *field reference name*. Field reference names can help you to port definitions between Team Foundation project collections and also to allow third-party integrations to find and refer to specific fields. These names are globally unique, just as a namespace in the .NET Framework application is globally unique.  
 
-> [!NOTE]
-> Field reference names can't be renamed. If for example, you changed the field name "Title" to "Header", the field reference name of that field remains the same. Integrations and internal representations of fields should use the field reference name instead of depending on the field name itself.  
- 
 The **System** namespace is used only to define all core system fields that are mandatory for Team Foundation system functions. You can't create your own System.X field because it might impede functionality.  
 
 The **Microsoft** namespace is used to define work item tracking fields. These fields are defined in a work item type definition of the process templates. 
 
-> [!IMPORTANT]
-> Although you can create your own Microsoft.X field, we don't recommend that you do so, as it might impede functionality or the ability for the Configure Features wizard to successfully update a project after an upgrade.   
-
 Customers and partners can create their own field namespaces for custom work item types. For descriptions of system fields and fields defined in the default process templates, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).
+
+> [!IMPORTANT]
+> - Field reference names can't be renamed. If for example, you changed the field name "Title" to "Header", the field reference name of that field remains the same. Integrations and internal representations of fields should use the field reference name instead of depending on the field name itself.
+> - Although you can create your own Microsoft.X field, we don't recommend that you do so, as it might impede functionality or the ability for the Configure Features wizard to successfully update a project after an upgrade.  
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
@@ -149,7 +147,7 @@ The following examples show valid field reference names, in various namespaces. 
 
 |System namespace examples |Microsoft namespace examples |Other namespace examples|
 |---------|---------|---------|
-|System.Id, System.Title, System.CreatedBy, System.CreatedDate, System.ChangedBy, System.ChangedDate, System.State, System.Reason | Microsoft.VSTS.Build.FoundIn, Microsoft.VSTS.Common.Activity, Microsoft.VSTS.Common.Discipline, Microsoft.VSTS.Common.Priority, Microsoft.VSTS.CMMI.TaskType, Microsoft.VSTS.TCM.AutomationStatus, Microsoft.VSTS.TCM.TestSuiteType  | The fictitious company, Fabrikam Fiber, might define the following custom work item fields:<br>FabrikamFiber.Common.Severity, FabrikamFiber.Common.Phase, FabrikamFiber.RiskManagement.RiskType, FabrikamFiber.RiskManagement.Resolution<br>The fictitious software company Contoso Corporation might define the following work item fields:<br>Contoso.Common.BusinessPriority, Contoso.Bug.FoundInPhase, Contoso.Bug.FixInPhase    |
+|System.Id, System.Title, System.CreatedBy, System.CreatedDate, System.ChangedBy, System.ChangedDate, System.State, System.Reason | Microsoft.VSTS.Build.FoundIn, Microsoft.VSTS.Common.Activity, Microsoft.VSTS.Common.Discipline, Microsoft.VSTS.Common.Priority, Microsoft.VSTS.CMMI.TaskType, Microsoft.VSTS.TCM.AutomationStatus, Microsoft.VSTS.TCM.TestSuiteType  | The fictitious company, Fabrikam Fiber, might define the following custom work item fields:<br>FabrikamFiber.Common.Severity, FabrikamFiber.Common.Phase, FabrikamFiber.RiskManagement.RiskType, FabrikamFiber.RiskManagement.Resolution<br><br>The fictitious software company Contoso Corporation might define the following work item fields:<br>Contoso.Common.BusinessPriority, Contoso.Bug.FoundInPhase, Contoso.Bug.FixInPhase    |
 
 ::: moniker range="< azure-devops"
 
@@ -176,9 +174,7 @@ A global list, defined using the `GLOBALLIST` element contains one or more list 
 |Restriction type |Restriction |
 |---------|---------|
 |Length    | - Must not contain more than 254 Unicode characters.<br>- Must not be empty.    |
-|Special characters    |- Must not contain leading or trailing white space.<br>
-      - Must not contain two consecutive spaces.<br>
-      - Must not contain backslash `\` characters.  |
+|Special characters    |- Must not contain leading or trailing white space.<br>- Must not contain two consecutive spaces.<br>- Must not contain backslash `\` characters.  |
 |Scope   |   Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions. |
 
 Global lists must conform to the following restrictions.
@@ -198,10 +194,7 @@ Define a reference name by using alphanumeric characters, underscore characters,
 |---------|---------|
 |Length    | Must not contain more than 70 Unicode characters.    |
 |Uniqueness     | - Must not be identical to any other field reference name within the project collection.<br>- Must not be identical to any other field reference name after those names get processed by the computer to replace all periods `.` with underscores `_`. For example, the field reference names `My.*Field*` and `My.Field` would both process as the same name: `My__Field` |
-|Special characters    |- Must not contain hyphens `-`.<br>
-      - Must contain at least one period `.`.<br>
-      - Must not start or end with a period `.`.<br>
-      - Must not start with a numberMust not start with an underscore `_`.  |
+|Special characters    |- Must not contain hyphens `-`.<br>- Must contain at least one period `.`.<br>- Must not start or end with a period `.`.<br>- Must not start with a numberMust not start with an underscore `_`.  |
 
 ::: moniker-end
 
@@ -240,7 +233,7 @@ Each Azure DevOps project can contain multiple Git repositories. The names you a
 |---------|---------|
 |Length     | Must not contain more than 64 Unicode characters.        |
 |Uniqueness    | Must not be identical to any other Git repo name in the project.        |
-|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).        |
+|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).        |
 
 <a id="SourceControl">   </a>
 
@@ -334,7 +327,7 @@ Processes that you define or customize must conform to the following restriction
 
 |Restriction type  |Restriction  |
 |---------|---------|
-|Length     | Must not contain more than 256 Unicode characters        |
+|Length     | Must not contain more than 256 Unicode characters.        |
 |Uniqueness   |  - Must be unique across Azure DevOps.<br/>- If you upload a template with the same name as an existing template, the existing template is overwritten.       |
 |Process template file size    | Must not exceed 2 GB (gigabytes).        |
 
@@ -355,8 +348,8 @@ Names you assign to project collections must conform to the following restrictio
 |---------|---------|
 |Length    |  Must not contain more than 64 Unicode characters.       |
 |Uniqueness    | - Must not be identical to any other collection name in your on-premises deployment.<br>- If your deployment includes SharePoint Products or SQL Server Reporting Services, they can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website.        |
-|Reserves names    |  Must not be a [system reserved name](#reserved).         |
-|Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>                |
+|Reserved names    |  Must not be a [system reserved name](#reserved).         |
+|Special characters | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>                |
 
 ::: moniker-end
 
@@ -372,7 +365,7 @@ Names you assign to projects that you create must conform to the following restr
 |---------|---------|
 |Length    |  Must not contain more than 64 Unicode characters.       |
 |Uniqueness    | Must not be identical to any other name in the project collection, the SharePoint Web application that supports the collection, or the instance of SQL Server Reporting Services that supports the collection. |
-|Reserves names    |  Must not be a [system reserved name](#reserved). <br>- Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.  |
+|Reserves names    | - Must not be a [system reserved name](#reserved). <br>- Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.  |
 | Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.   |
 
 <a id="GroupAccountNames">   </a>
@@ -463,7 +456,7 @@ User accounts that you add to an organization or collection must conform to the 
 |Account name length   | Must not contain more than 256 Unicode characters.        |
 |Uniqueness   | Must not match any other user account added to the project collection.        |
 |Reserved group names    | Must not be named with a $NAMESPACE at either the project or the server level.  |
-|Special characters   | - Must not include the following printable characters: `"/ \ [ ] : | < > + = ; ? *`<br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.` or a dollar sign `$`.<br>- Must not include commas `,`.<br>- Must not include the following Unicode categories: LineSeparator, ParagraphSeparator, Control, Format, OtherNotAssigned.        |
+|Special characters   | - Must not include the following printable characters: `"/ \ [ ] : | < > + = ; ? *`.<br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.` or a dollar sign `$`.<br>- Must not include commas `,`.<br>- Must not include the following Unicode categories: LineSeparator, ParagraphSeparator, Control, Format, OtherNotAssigned.        |
 
 ## Wiki page and file names
 
