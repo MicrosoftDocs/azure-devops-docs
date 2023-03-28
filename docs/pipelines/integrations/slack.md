@@ -53,13 +53,13 @@ The subscribe command gets you started with a few subscriptions by default. Here
 | -------- | -------- | -------- |
 | *Build completed* notification | *Release deployment started*, *Release deployment completed* and *Release deployment approval pending* notifications | *Run stage state changed* and *Run stage waiting for approval* notifications |
 
-:::image type="content" source="media/integrations-slack/events-subscription.png" alt-text="A screenshot showing notification example.":::
+:::image type="content" source="media/integrations-slack/events-subscription.png" alt-text="A screenshot showing notification example." lightbox="media/integrations-slack/events-subscription.png":::
 
 ## Manage subscriptions
 
 To manage the subscriptions for a channel, use the following command: `/azpipelines subscriptions`
 
-This command lists all the current subscriptions for the channel and allow you to add or remove subscriptions.
+This command lists all the current subscriptions for the channel and allows you to add or remove subscriptions.
 
 > [!NOTE]
 > Team administrators are not able to remove or modify subscriptions created by Project administrators.
