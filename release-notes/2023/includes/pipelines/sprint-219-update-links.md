@@ -5,6 +5,6 @@ ms.date: 3/28/2023
 ms.topic: include
 ---
 
-- [Different methods to set AGENT_ACKNOWLEDGE_NO_UPDATES](#different-methods-to-set-agent-acknowledge-no-updates) 
-- [Updated TFX Node runner validation](#updated-tfx-node-runner-validation)
-- [Service hook for job state change](#service-hook-for-job-state-change)
+- [Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others](#different-methods-to-set-agent-acknowledge-no-updates) 
+- [Different methods to set AGENT_ACKNOWLEDGE_NO_UPDATES](#different-methods-to-set-agent-acknowledge-no-updates)
+- [Resources](#resources)
