@@ -22,7 +22,8 @@ We will provide all the documentation and code samples to help you on-board into
 
 Swimlane rules are similar to style rules, but instead, they allow you to setup conditions on your Kanban board to automatically move work items into specific lanes. For example, you might want all Priority=1 bugs to be placed in the "High Priority" lane and Priority=2 bugs into the "Medium Priority" lane.
 
-( add animated gif )
+> [!div class="mx-imgBorder"]
+> ![Gif to demo editing of shareable picklist fields.](../../media/219-boards-01.gif "gif to demo editing of shareable picklist fields")
 
 The feature has been on the backlog since 2018 and is one of [the top voted items](https://developercommunity.visualstudio.com/t/swimlanes-rules/365710) in the work item space. We are excited to finally bring it to customers. We are taking a limited number of requests to be added to the private preview to help us ensure it is ready for production. If you are interested in getting early access to the feature, please [send us an email](mailto:%20dahellem@microsoft.com) and be sure to include the name of your organization (dev.azure.com/{organization}).
 
