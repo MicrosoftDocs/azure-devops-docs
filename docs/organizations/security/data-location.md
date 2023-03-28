@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 03/27/2023
+ms.date: 03/28/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -54,19 +54,23 @@ Azure DevOps stores information that's global in nature, such as user identities
 - UK-based users: profile data is in UK data center
 - Users from all other countries and regions: profile data is in US data center
 
-## Allow list data for tenant policies
+### Token data
 
-We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
+Azure DevOps considers token information, such as personal access tokens (PATs) and SSH keys, global in nature, and stores this information in a US data center.
+
+## Allowlist data for tenant policies
+
+We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 ## Transferring your data
 
-We don't transfer customer data outside of your selected geography. However, we will transfer your data if we need to do any of the following actions:
+We don't transfer customer data outside of your selected geography. However, we transfer your data if we need to do any of the following actions:
 
 - provide customer support
 - troubleshoot the service
 - comply with legal requirements
 
-If needed, you can transfer your data using preview, beta, or other pre-release services. These services typically store your data in the United States, but may store it globally.
+If needed, you can transfer your data using preview, beta, or other prerelease services. These services typically store your data in the United States, but may store it globally.
 
 > [!NOTE]
 > For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a GitHub data center in the US. This data center location is owned and managed by GitHub with compliance certifications, such as SOC 1 & 2 Type II reports available [here](https://github.com/security).
