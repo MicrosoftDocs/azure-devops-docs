@@ -20,7 +20,7 @@ You have two options to address the above error in your pipelines:
 
 2. Set the AGENT_ACKNOWLEDGE_NO_UPDATES variable on the agent.
 
-# Setting AGENT_ACKNOWLEDGE_NO_UPDATES
+### Setting AGENT_ACKNOWLEDGE_NO_UPDATES
 To acknowledge Pipeline agent v2 no longer receiving updates, you can configure an environment variable on the agent (e.g. /etc/environment, /etc/profile.d, Windows System Settings):
 ```bash
 AGENT_ACKNOWLEDGE_NO_UPDATES=true
