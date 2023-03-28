@@ -53,9 +53,8 @@ For more information about reserved names, see [File names, paths, and namespace
 
 Universal packages must conform to the following restrictions.
 
-|Column1  |Column2  |
+|Restriction type  |Restriction  |
 |---------|---------|
-|Restriction type    | Restriction        |
 |Package name    |- Must be lowercase.<br/>- Must start and end with letters or numbers.<br/>- Must only contain letters, numbers, and nonconsecutive dashes, underscore, or periods.         |
 |Package version    |Must be lowercase without build metadata.         |
 
@@ -121,14 +120,11 @@ Each work item type contains one or more work item fields. These fields define t
 Work item field names must conform to the following restrictions.  
 
 |Restriction type |Restriction |
-|---------|---------|
+|-----------------|------------|
 |Length    | Must not contain more than 128 Unicode characters.    |
-|Uniqueness     |- Field names must contain at least one alphabetic character.<br>
-      - Must not contain any one of the following characters: `.,;':~\/\*|?"&%$!+=()[]{}<>-`.<br>
-      - Must not contain leading or trailing spaces.<br>
-      - Must not contain two or more consecutive spaces.         |
-|Special characters    | Must be unique within the organization or project collection. Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. |
- 
+|Uniqueness|- Field names must contain at least one alphabetic character.<br/>- Must not contain any one of the following characters: `.,;':~\/\*|?"&%$!+=()[]{}<>-`.<br/>- Must not contain leading or trailing spaces.<br/>- Must not contain two or more consecutive spaces.   |
+|Special characters | Must be unique within the organization or project collection. Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. |
+
 #### Field reference names and portability  
 
 The work item type definition language includes the concept of a *field reference name*. Field reference names can help you to port definitions between Team Foundation project collections and also to allow third-party integrations to find and refer to specific fields. These names are globally unique, just as a namespace in the .NET Framework application is globally unique.  
@@ -183,7 +179,7 @@ A global list, defined using the `GLOBALLIST` element contains one or more list 
 |Special characters    |- Must not contain leading or trailing white space.<br>
       - Must not contain two consecutive spaces.<br>
       - Must not contain backslash `\` characters.  |
-|Scope   |   Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions.
+|Scope   |   Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions. |
 
 Global lists must conform to the following restrictions.
 
@@ -218,8 +214,7 @@ Tag names must conform to the following restrictions.
 |Restriction type |Restriction |
 |---------|---------|
 |Length    | - Must not contain more than 400 Unicode characters.<br>- Must not be null or empty.    |
-|Special characters    |- Must not contain separator characters: `,` or `;`.<br>
-      - Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters.|
+|Special characters    |- Must not contain separator characters: `,` or `;`.<br>- Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters.|
 |Scope   | Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions.
 
 ## Azure Pipelines
@@ -228,13 +223,8 @@ Azure pipeline definitions must conform to the following restrictions.
 
 |Restriction type |Restriction  |
 |---------|---------|
-|Job name    |- Must only contain alphanumeric characters and `'_'`.<br>
-      - Must not start with a number.<br>
-      - Must have a unique name.<br>
-      - Must not contain keywords, for example: "deployment".         |
-|Stage name     | - Must only contain alphanumeric characters and `'_'`.<br>
-      - Must not start with a number.<br>
-      - Must not contain keywords, for example: "deployment".        |
+|Job name    |- Must only contain alphanumeric characters and `'_'`.<br/>- Must not start with a number.<br/>- Must have a unique name.<br/>- Must not contain keywords, for example: "deployment".         |
+|Stage name     | - Must only contain alphanumeric characters and `'_'`.<br/>- Must not start with a number.<br/>- Must not contain keywords, for example: "deployment".        |
 |Expressions    | Must start with `a-Z` or `_AND`, followed by `a-Z`, `0-9`, or `_`.        |
 
 For more information, see [Azure Pipelines documentation](../../pipelines/index.yml).
@@ -250,11 +240,7 @@ Each Azure DevOps project can contain multiple Git repositories. The names you a
 |---------|---------|
 |Length     | Must not contain more than 64 Unicode characters.        |
 |Uniqueness    | Must not be identical to any other Git repo name in the project.        |
-|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br>
-      - Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`.<br>
-      - Must not start with an underscore `_`.<br>
-      - Must not start or end with a period `.`.<br>
-      - Must not be a [system reserved name](#reserved).        |
+|Special characters   | - Must not contain any Unicode control characters or surrogate characters.<br/>- Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`.<br/>- Must not start with an underscore `_`.<br/>- Must not start or end with a period `.`.<br/>- Must not be a [system reserved name](#reserved).        |
 
 <a id="SourceControl">   </a>
 
@@ -266,11 +252,8 @@ Version control paths must conform to the following restrictions. See also [Opti
 
 |Restriction type  |Restriction  |
 |---------|---------|
-|Server source control folder path length    | - Must not contain more than 259 Unicode characters for a single folder or file name.<br>
-      - Must not contain more than 388 Unicode characters for a directory.<br>
-      - Must not contain more than 399 Unicode characters for a combined directory and file name.    |
-|Local folder path length   |- Must not contain more than 248 Unicode characters for a directory.<br>
-      - Must not contain more than 260 Unicode characters for a combined directory and file name. |
+|Server source control folder path length    | - Must not contain more than 259 Unicode characters for a single folder or file name.<br/>- Must not contain more than 388 Unicode characters for a directory.<br/>- Must not contain more than 399 Unicode characters for a combined directory and file name.    |
+|Local folder path length   |- Must not contain more than 248 Unicode characters for a directory.<br/>- Must not contain more than 260 Unicode characters for a combined directory and file name. |
 |Web portal and REST-specific length restrictions  |Must not contain more than 215 Unicode characters for a combined project name, directory, and file name.  |
 
 In the web portal and REST API, certain operations have a more restrictive path length than Visual Studio and TF.exe clients. These operations include Edit, Rename, and Delete, and occur because the web portal/REST uses a randomly generated workspace for concurrency when pending the changes.
@@ -284,7 +267,7 @@ Files and folders you add to Team Foundation version control must conform to the
 |Restriction type |Restriction |
 |---------|---------|
 |Files and folders    |- Names must not contain the following printable characters: `\ / : * ? " < > | ;`.<br>- Folders must not be outside the mapped directory for the active workspace.   |
-|File names   | - Must not begin with a `$`.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ;`        |
+|File names   | - Must not begin with a `$`.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ;`.        |
 
 ### TFVC labels
 
@@ -293,8 +276,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
 |Restriction type |Restriction |
 |---------|---------|
 |Length    |Must not contain more than 64 Unicode characters.  |
-|Special characters | - Can't end with a space `( )` or period `.`.<br>
-      - Must not contain the following printable characters: `\ / : * ? " < > | ; @` |
+|Special characters | - Can't end with a space `( )` or period `.`.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; @`. |
 
 
 ### TFVC Shelvesets 
@@ -306,7 +288,7 @@ Shelveset names must conform to the following restrictions.
 |Restriction type |Restriction |
 |---------|---------|
 |Length    |Must not contain more than 64 Unicode characters.  |
-|Special characters | Must not contain the following printable characters: `\ / : * ? " < > | ;` |
+|Special characters | Must not contain the following printable characters: `\ / : * ? " < > | ;`. |
 
 ### TFVC workspaces
 
@@ -317,7 +299,7 @@ Workspace names must conform to the following restrictions.
 |Restriction type |Restriction |
 |---------|---------|
 |Length    |Must not contain more than 64 Unicode characters.  |
-|Special characters | - Must not end with a space `( )`.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ;` |
+|Special characters | - Must not end with a space `( )`.<br/>- Must not contain the following printable characters: `\ / : * ? " < > | ;`. |
 
 ::: moniker range="< azure-devops"
 
@@ -353,8 +335,7 @@ Processes that you define or customize must conform to the following restriction
 |Restriction type  |Restriction  |
 |---------|---------|
 |Length     | Must not contain more than 256 Unicode characters        |
-|Uniqueness   |  - Must be unique across Azure DevOps.<br>
-      - If you upload a template with the same name as an existing template, the existing template is overwritten.       |
+|Uniqueness   |  - Must be unique across Azure DevOps.<br/>- If you upload a template with the same name as an existing template, the existing template is overwritten.       |
 |Process template file size    | Must not exceed 2 GB (gigabytes).        |
 
 ::: moniker range="< azure-devops"
@@ -373,14 +354,9 @@ Names you assign to project collections must conform to the following restrictio
 |Restriction type  |Restriction |
 |---------|---------|
 |Length    |  Must not contain more than 64 Unicode characters.       |
-|Uniqueness    | - Must not be identical to any other collection name in your on-premises deployment.<br>
-      - If your deployment includes SharePoint Products or SQL Server Reporting Services, they can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website.        |
+|Uniqueness    | - Must not be identical to any other collection name in your on-premises deployment.<br>- If your deployment includes SharePoint Products or SQL Server Reporting Services, they can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website.        |
 |Reserves names    |  Must not be a [system reserved name](#reserved).         |
-|  Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>
-      - Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>
-      - Must not contain an ellipsis `...` or a double period `..`.<br>
-      - Must not start with an underscore `_`.<br>
-      - Must not start or end with a period `.`.<br>                |
+|Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.<br>                |
 
 ::: moniker-end
 
@@ -397,10 +373,7 @@ Names you assign to projects that you create must conform to the following restr
 |Length    |  Must not contain more than 64 Unicode characters.       |
 |Uniqueness    | Must not be identical to any other name in the project collection, the SharePoint Web application that supports the collection, or the instance of SQL Server Reporting Services that supports the collection. |
 |Reserves names    |  Must not be a [system reserved name](#reserved). <br>- Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.  |
-| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>
-      - Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>
-      - Must not start with an underscore `_`.<br>
-      - Must not start or end with a period `.`.   |
+| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`. <br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.   |
 
 <a id="GroupAccountNames">   </a>
 
@@ -417,11 +390,7 @@ Security groups must conform to the following restrictions.
 |Security group account name length  |  Must not contain more than 256 Unicode characters.       |
 |Uniqueness    | - Project-level group accounts must not match any other group name in the same project.<br>- Collection-level group accounts must not match any other name of a group account in the project collection.  |
 |Reserved group names    |Must not be named with a $NAMESPACE at either the project or the server level.    |
-| Special characters |  - Must not contain any Unicode control characters or surrogate characters.<br>
-      - Must not contain the following printable characters: `/ \ [ ] : | < > + = ; ? *`. <br>
-     - Must not include nonprintable characters in the ASCII value range of 1-31.<br>
-      - Must not end in a period `.`.<br>
-      - Must not include commas `,`.   |
+| Special characters |- Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `/ \ [ ] : | < > + = ; ? *`. <br>- Must not include nonprintable characters in the ASCII value range of 1-31.<br>- Must not end in a period `.`.<br>- Must not include commas `,`.   |
 
 ::: moniker range="< azure-devops"
 
@@ -440,13 +409,8 @@ Your on-premises build computer must conform to the following restrictions.
 |Disk space    | Must contain sufficient space for the build (insufficient space leads to failed builds).        |
 |Build directory   | Must be a local path (for example, `C:\BuildDirectory`).        |
 |Drop location directory    | Must be a UNC path (for example, `\server\share`).        |
-|Drop location permissions   | Each generated build is put in a new directory in the drop folder.<br>
-      - The Team Foundation Server Service account (for example, `Domain\TFSSERVICE`) must have Full Control permission access to the UNC drop location.<br>
-      - The UNC drop location must be a shared folder.        |
-|Team Foundation Build Service account  | If you change the TFS Service account after the initial installation, you must make sure that the following conditions are true:<br>
-      - The account is a member of the Build Services group.<br>
-      - The account has read/write permissions to the temporary folders and the ASP.NET temporary folder.<br>
-      - The account has Full Control permission to the build directory and drop location. |
+|Drop location permissions   | Each generated build is put in a new directory in the drop folder.<br>- The Team Foundation Server Service account (for example, `Domain\TFSSERVICE`) must have Full Control permission access to the UNC drop location.<br>- The UNC drop location must be a shared folder.        |
+|Team Foundation Build Service account  | If you change the TFS Service account after the initial installation, you must make sure that the following conditions are true:<br>- The account is a member of the Build Services group.<br>- The account has read/write permissions to the temporary folders and the ASP.NET temporary folder.<br>- The account has Full Control permission to the build directory and drop location. |
 |Firewall issues|If the build computer is firewall enabled, make sure that the program, **tfsbuildservice*,* is in the exceptions list.        |
 
 ### Build types
@@ -485,12 +449,8 @@ Team names must conform to the following restrictions.
 |---------|---------|
 |Length    | Must not contain more than 64 Unicode characters.        |
 |Uniqueness     |Must not be identical to any other name in the project.         |
-|Reserved names   | - Must not be a [system reserved name](#reserved).        |
-|Special characters     | - Must not contain any Unicode control characters or surrogate characters.<br>
-      - Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`.<br>
-      - Must not contain an ellipsis `...` or a double period `..`.<br>
-      - Must not start with an underscore `_`.<br>
-      - Must not start or end with a period `.`.       |
+|Reserved names   | Must not be a [system reserved name](#reserved).        |
+|Special characters     | - Must not contain any Unicode control characters or surrogate characters.<br>- Must not contain the following printable characters: `\ / : * ? " < > | ; # $ * { } , + = [ ]`.<br>- Must not contain an ellipsis `...` or a double period `..`.<br>- Must not start with an underscore `_`.<br>- Must not start or end with a period `.`.       |
 
 ## User account names
 
