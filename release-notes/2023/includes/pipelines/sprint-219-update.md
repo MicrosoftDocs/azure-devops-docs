@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others
 
-With the [rollout of agent v3](azure/devops/release-notes/2023/pipelines/sprint-217-update#pipeline-agent-v3-net-6-rolling-out) nearing completion, agent v2 nears the end of its lifecycle.
+With the [rollout of agent v3](/azure/devops/release-notes/2023/pipelines/sprint-217-update#pipeline-agent-v3-net-6-rolling-out) nearing completion, agent v2 nears the end of its lifecycle.
 
 Starting with version 2.218 of the agent, pipelines running on an operating system that is no longer supported by agent v3 will fail with the following error message:
 
