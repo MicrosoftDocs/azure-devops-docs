@@ -4,11 +4,19 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 09/17/2021
+ms.date: 03/28/2023
 ---
  
 
+|Restriction type |Restriction  |
+|---------|---------|
+|Node length    | Must not contain more than 255 characters.        |
+|Reserved names     | - Must not consist only of a period `.` or two periods `..`.<br>- Must not be a system-reserved name, such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX. For more information about reserved names, see [File Names, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).   |
+|Special characters for nodes    | - Must not contain Unicode control characters.<br>- Must not contain any one of the following characters: `&#92; &#47; $ ? &#42; : &quot; &amp; &gt; &lt; &#35; % | +`.<br>- Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).    |
+|Path length    | Must not contain more than 4,000 Unicode characters.        |
+|Path hierarchy depth    | Must be fewer than 14 levels deep.        |
 
+<!--
 :::row:::
    :::column span="1":::
       **Restriction type**
@@ -63,3 +71,4 @@ ms.date: 09/17/2021
       - Must be fewer than 14 levels deep
    :::column-end:::
 :::row-end:::
+-->
