@@ -5,9 +5,8 @@ ms.author: ckanyika
 ms.date: 3/28/2023
 description: With this update, we highlight the near rollout of Pipeline agent v3 and the end of v2 updates.
 ---
-# Pipeline agent updates and Azure Boards preview opportunities 
-With this update, we highlight the rollout of Pipeline agent v3 and the end of v2 updates. Pipelines running on an operating system that is not supported by agent v3 will fail. 
-We will be also made improvements to extension settings to help you manage your installed extensions.
+# Pipeline agent updates and Azure Boards private preview opportunities 
+With this update, we highlight the rollout of Pipeline agent v3 and the end of v2 updates. Pipelines running on an operating system that is not supported by agent v3 will encounter errors. 
 
 In addition, we are excited to extend an opportunity to participate in two Azure Boards private previews. 
 
