@@ -20,7 +20,7 @@ We will provide all the documentation and code samples to help you on-board into
 
 ### Swimlane rules (preview)
 
-Swimlane rules are similar to style rules, but instead, they allow you to setup conditions on your Kanban board to automatically move work items into specific lanes. For example, you might want all Priority=1 bugs to be placed in the "High Priority" lane and Priority=2 bugs into the "Medium Priority" lane.
+Swimlane rules are similar to style rules, but instead, they allow you to setup conditions on your Kanban board to automatically move work items into specific lanes. For example, you might want all Priority=1 bugs to be placed in the **"High Priority"** lane and Priority=2 bugs into the **"Medium Priority"** lane.
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo editing of shareable picklist fields.](../../media/219-boards-01.gif "gif to demo editing of shareable picklist fields")

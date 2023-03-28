@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others
 
-With the [rollout of agent v3](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-217-update#pipeline-agent-v3-net-6-rolling-out) nearing completion, agent v2 nears the end of its lifecycle.
+With the [rollout of agent v3](azure/devops/release-notes/2023/pipelines/sprint-217-update#pipeline-agent-v3-net-6-rolling-out) nearing completion, agent v2 nears the end of its lifecycle.
 
 Starting with version 2.218 of the agent, pipelines running on an operating system that is no longer supported by agent v3 will fail with the following error message:
 
@@ -34,7 +34,10 @@ jobs:
     AGENT_ACKNOWLEDGE_NO_UPDATES: 'true' # Required to not fail job on operating system that is not supported by .NET 6
 ```
 And here is an example of setting a pipeline variable in a classic pipeline:
-![Screenshot showing how to set the AGENT_ACKNOWLEDGE_NO_UPDATES variable to true in classic pipeline](https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/02/classic-pipeline-knob.png)
+> [!div class="mx-imgBorder"]
+> ![Update AZ Pipelines](../../media/219-pipelines-01.png)
+
+
 
 Any of the above methods to set `AGENT_ACKNOWLEDGE_NO_UPDATES=true` will let the 2.218 or later 2.x agent continue to operate on the operating system that is not supported by agent v3.
 
@@ -42,4 +45,4 @@ Any of the above methods to set `AGENT_ACKNOWLEDGE_NO_UPDATES=true` will let the
 
 - [Additional information](https://aka.ms/azdo-pipeline-agent-v2-eos)
 - [Agent v3](https://aka.ms/azdo-pipeline-agent-version)
-- [Red Hat Enterprise Linux 6 end-of-support](https://learn.microsoft.com/azure/devops/release-notes/2023/pipelines/sprint-216-update#red-hat-6-will-no-longer-receive-pipeline-agent-updates)
+- [Red Hat Enterprise Linux 6 end-of-support](/azure/devops/release-notes/2023/pipelines/sprint-216-update#red-hat-6-will-no-longer-receive-pipeline-agent-updates)
