@@ -16,11 +16,12 @@ variable or agent knob “AGENT_ACKNOWLEDGE_NO_UPDATES” to “true”. See <a 
 
 You have two options to address the above error in your pipelines:
 
-1. (Preferred) Move your agents to machines with newer operating systems. This is the best option as it will allow you to get future updates to the agent.
+1. Move your agents to machines with newer operating systems. This is the best option as it will allow you to get future updates to the agent. **(Preferred)** 
+
 2. Set the AGENT_ACKNOWLEDGE_NO_UPDATES variable on the agent.
 
-### Different methods to set AGENT_ACKNOWLEDGE_NO_UPDATES
-To acknowledge the agent will no longer receive updates, you can configure an environment variable on the agent (e.g. /etc/environment, /etc/profile.d, Windows System Settings):
+# Setting AGENT_ACKNOWLEDGE_NO_UPDATES
+To acknowledge Pipeline agent v2 no longer receiving updates, you can configure an environment variable on the agent (e.g. /etc/environment, /etc/profile.d, Windows System Settings):
 ```bash
 AGENT_ACKNOWLEDGE_NO_UPDATES=true
 ```
@@ -33,13 +34,13 @@ jobs:
   variables:
     AGENT_ACKNOWLEDGE_NO_UPDATES: 'true' # Required to not fail job on operating system that is not supported by .NET 6
 ```
-And here is an example of setting a pipeline variable in a classic pipeline:
+And here is an example of how to set a pipeline variable in a classic pipeline:
 > [!div class="mx-imgBorder"]
 > ![Update AZ Pipelines](../../media/219-pipelines-01.png)
 
 
 
-Any of the above methods to set `AGENT_ACKNOWLEDGE_NO_UPDATES=true` will let the 2.218 or later 2.x agent continue to operate on the operating system that is not supported by agent v3.
+Any of the methods above to set `AGENT_ACKNOWLEDGE_NO_UPDATES=true` will let the 2.218 or later 2.x agent continue to operate on the operating system that is not supported by agent v3.
 
 ### Resources
 
