@@ -16,8 +16,7 @@ variable or agent knob “AGENT_ACKNOWLEDGE_NO_UPDATES” to “true”. See <a 
 
 You have two options to address the above error in your pipelines:
 
-1. Move your agents to machines with newer operating systems. This is the best option as it will allow you to get future updates to the agent. **(Preferred)** 
-
+1. The recommended option is to move your agents to machines with newer operating systems. This is the preferred option as it will allow you to get future updates to the agent.
 2. Set the AGENT_ACKNOWLEDGE_NO_UPDATES variable on the agent.
 
 ### Setting AGENT_ACKNOWLEDGE_NO_UPDATES
