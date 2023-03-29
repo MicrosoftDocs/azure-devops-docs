@@ -6,6 +6,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 12/01/2022
 monikerRange: 'azure-devops'
+robots: NOINDEX
 ---
 
 # Build and publish Docker images to Azure Container Registry
