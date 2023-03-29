@@ -25,9 +25,9 @@ Swimlane rules are similar to style rules, but instead, they allow you to setup 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo editing of shareable picklist fields.](../../media/219-boards-01.gif "gif to demo editing of shareable picklist fields")
 
-The feature is one of the top voted items in the work item space and we are excited to finally bring it customers. 
+The feature is one of the top voted items in the work item space and we are excited to finally bring it to customers. 
 
-We are taking a limited number of requests to be added to a private preview to help us ensure it is ready for production. If you are interested in getting early access to the feature, please [send us an email](mailto:%20dahellem@microsoft.com). Please include the name of your organization (dev.azure.com/{organization}).
+We are taking a limited number of requests to be added to a private preview to help us ensure it is ready for production. If you are interested in getting early access to the feature, [send us an email](mailto:%20dahellem@microsoft.com). Please include the name of your organization (dev.azure.com/{organization}).
 
 [Community suggestion ticket](https://developercommunity.visualstudio.com/t/swimlanes-rules/365710)
 
