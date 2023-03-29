@@ -31,7 +31,7 @@ We describe the steps needed to authenticate these identities to Azure DevOps to
 
 ## Step-by-step Configuration
 
-Your own implementation may vary, but at a high-level, the following steps are needed to start using service principals in your workflow. Consider looking at one of our [sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/NonInteractivePatGenerationSample) to follow along with an example on your own.
+Your own implementation may vary, but at a high-level, the following steps are needed to start using service principals in your workflow. Consider looking at one of our [sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples) to follow along with an example on your own.
 
 ### 1. Create a new managed identity or application service principal
 
@@ -101,7 +101,7 @@ In the following video example, we move from authenticating with a PAT to using 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
 
-Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/NonInteractivePatGenerationSample).
+Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
 
 Service principals can be used to call Azure DevOps REST APIs and do most actions, but it's limited from the following operations:
 * Service principals can't be Organization Owners or create organizations.
@@ -319,6 +319,6 @@ This error might be due to one of the following reasons:
 The Azure DevOps Graph List API may return an empty list, even if there are still additional pages of users to return. Use the `continuationToken` to iterate through the lists, and you will eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it is possible that the first X results return empty.
 
 ## More Resources
-* [Link to sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/NonInteractivePatGenerationSample)
+* [Link to sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples)
 * [Service Principals Entitlements API Reference](https://learn.microsoft.com/en-us/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements)
 * [Service Principal Graph API Reference](https://learn.microsoft.com/en-us/rest/api/azure/devops/graph/service-principals)
