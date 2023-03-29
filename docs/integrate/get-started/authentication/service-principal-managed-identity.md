@@ -31,7 +31,7 @@ We describe the steps needed to authenticate these identities to Azure DevOps to
 
 ## Step-by-step Configuration
 
-Your own implementation may vary, but at a high-level, the following steps are needed to start using service principals in your workflow.
+Your own implementation may vary, but at a high-level, the following steps are needed to start using service principals in your workflow. Consider looking at one of our [sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/NonInteractivePatGenerationSample) to follow along with an example on your own.
 
 ### 1. Create a new managed identity or application service principal
 
@@ -68,14 +68,14 @@ Once you have completed configuring the service principal in the Azure AD portal
 If you are a PCA, you can also grant a service principal access to specific projects and assign it a license. If you are not, you must reach out to the PCA to update any project memberships or license access levels.
 
 > [!TIP] 
-> To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the `ServicePrincipalEntitlements` API, make sure to pass in the **service principal's object id** and not the application's object id. 
+> To add the service principal to the organization, you will need to enter the application or managed identity's display name. If you choose to add a service principal programmatically through the [`ServicePrincipalEntitlements` API](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements), make sure to pass in the **service principal's object id** and not the application's object id. 
 
 > [!NOTE]
 > You can only add a managed identity for the tenant your organization is connected to. If you would like to access a managed identity in a different tenant, see [the workaround we've included in the FAQ](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
 
 ![Service principals and managed identities in the Users Hub](./media/users-hub-sps.png)
 
-After they're added to the organization, they can be treated similarly to standard user accounts. You can directly assign permissions to the service principal, add and remove it from security groups and teams, assign it to any access level available to users, and remove it from the organization.
+After they're added to the organization, they can be treated similarly to standard user accounts. You can directly assign permissions to the service principal, add and remove it from security groups and teams, assign it to any access level available to users, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals) to perform CRUD operations on service principals.
 
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
 
@@ -95,13 +95,13 @@ Acquiring an access token for a managed identity can be done by following along 
 The returned access token is a JWT with the defined roles, which can be used to access organization resources using the token as *Bearer*.
 
 #### Use the Azure AD token to authenticate to Azure DevOps resources
-In the following video example, follow along with this [sample application](https://dev.azure.com/mseng/AzureDevOps/_git/Tools.Identity?path=/ServicePrincipalsSamples/1-ConsoleApp-AppRegistration) where we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate.
-
+In the following video example, we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate. 
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
-
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
+
+Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/NonInteractivePatGenerationSample).
 
 Service principals can be used to call Azure DevOps REST APIs and do most actions, but it's limited from the following operations:
 * Service principals can't be Organization Owners or create organizations.
@@ -163,7 +163,7 @@ You are only able to add a managed identity from the same tenant that your organ
 5. Lastly, download the created certificate in "CER" format, which ensures that it does not contain the private part of your certificate.
 6. Next, we need to create a new application registration in the target tenant.
 7. Upload the downloaded certificate to this new application in the "Certificates & secrets" tab.
-8. Add this application's service principal to the [Azure DevOps organization we want it to access](#3-add-and-manage-service-principal-in-an-azure-devops-organization), and don't forget to set up the service principal with any required permissions.
+8. Add this application's service principal to the [Azure DevOps organization we want it to access](#2-add-and-manage-service-principal-in-an-azure-devops-organization), and don't forget to set up the service principal with any required permissions.
 9. To get an Azure AD access token from this service principal that makes use of the managed identity certificate, take a look at this code sample below:
 
 ```cs
@@ -317,3 +317,8 @@ This error might be due to one of the following reasons:
 
 #### Azure DevOps Graph List API returns empty list, even though we know there are service principals in the organization
 The Azure DevOps Graph List API may return an empty list, even if there are still additional pages of users to return. Use the `continuationToken` to iterate through the lists, and you will eventually find a page where the service principals are returned. If a `continuationToken` is returned, that means there are more results available through the API. While we have plans to improve upon this logic, at this moment, it is possible that the first X results return empty.
+
+## More Resources
+* [Link to sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/NonInteractivePatGenerationSample)
+* [Service Principals Entitlements API Reference](https://learn.microsoft.com/en-us/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements)
+* [Service Principal Graph API Reference](https://learn.microsoft.com/en-us/rest/api/azure/devops/graph/service-principals)
