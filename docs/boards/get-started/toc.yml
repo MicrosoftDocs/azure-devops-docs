@@ -4,8 +4,5 @@
 - name: Plan and track work
   displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow, Agile, Basic, Scrum, CMMI
   href: plan-track-work.md
-- name: Customize your boards
-  displayName: cards, columns, field, swimlanes, settings, backlog levels
-  href: ../configure-customize.md
 - name: Track work as a Stakeholder
   href: ../../organizations/security/get-started-stakeholder.md?bc=/azure/devops/boards/breadcrumb/toc.json&toc=/azure/devops/boards/toc.json

@@ -13,15 +13,6 @@
   href: get-started/toc.yml
 - name: Basic concepts
   items:
-  - name: Backlogs, boards, & plans
-    href: backlogs/backlogs-boards-plans.md
-    displayname: In Progress, Rollup, Taskboard
-  - name: Best tool for the job
-    displayName: backlogs, boards, office integration, marketplace extensions, work items
-    href: work-items/best-tool-add-update-link-work-items.md
-  - name: Agile glossary
-    displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets
-    href: ./work-items/agile-glossary.md
   - name: Choose a process
     href: work-items/guidance/choose-process.md
     displayname: agile, basic, scrum, cmmi, test
@@ -47,12 +38,9 @@
     href: work-items/guidance/toc.yml
   - name: Permissions & access
     items:
-    - name: Quick guide to default permissions & access
+    - name: Default permissions & access for Boards
       href: ./get-started/permissions-access-boards.md
       displayname: security, features, stakeholder access
-    - name: Default permissions & access (Security)
-      displayName: team administrator, administrator, access
-      href: ../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
     - name: Set work tracking & plan permissions
       displayName: work item tags, roles, object-level, project-level, permissions
       href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
@@ -263,3 +251,6 @@
     href: ../user-guide/tools.md
   - name: Azure DevOps CLI
     href: /cli/azure/boards
+  - name: Agile glossary
+    displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets
+    href: ./work-items/agile-glossary.md
