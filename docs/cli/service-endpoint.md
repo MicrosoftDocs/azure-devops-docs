@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to use Azure DevOps CLI to create a service endpoint
 ms.topic: how-to
 ms.subservice: azure-devops-reference
+ms.custom: devx-track-arm-template
 ms.manager: mijacobs 
 ms.author: chcomley
 author: chcomley
@@ -289,4 +290,3 @@ Note that the path is provided using '\\' backslash.
 
 
 -->
-
