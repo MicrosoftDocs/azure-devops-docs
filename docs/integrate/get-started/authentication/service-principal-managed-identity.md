@@ -320,5 +320,5 @@ The Azure DevOps Graph List API may return an empty list, even if there are stil
 
 ## More Resources
 * [Link to sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples)
-* [Service Principals Entitlements API Reference](https://learn.microsoft.com/en-us/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements)
-* [Service Principal Graph API Reference](https://learn.microsoft.com/en-us/rest/api/azure/devops/graph/service-principals)
+* [Service Principals Entitlements API Reference](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements)
+* [Service Principal Graph API Reference](/rest/api/azure/devops/graph/service-principals)
