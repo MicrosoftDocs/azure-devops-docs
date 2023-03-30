@@ -337,7 +337,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="20"><strong>2023 Q2</strong></td>
+        <td rowspan="21"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -350,6 +350,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
+        <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
@@ -423,9 +428,9 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>2022.1</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
+        <td><a href="/azure/devops/release-notes/roadmap/support-for-cargo-package" data-raw-source="[Support for Cargo package manager for Rust](/azure/devops/release-notes/roadmap/support-for-cargo-package)">Support for Cargo package manager for Rust</a></td>
+        <td>Artifacts</td>
+        <td>N/A</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
