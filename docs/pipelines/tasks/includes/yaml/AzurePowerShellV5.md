@@ -4,6 +4,7 @@ author: RoopeshNair
 ms.author: ronai
 ms.date: 06/01/2022
 ms.subservice: azure-devops-pipelines-tasks
+ms.custom: devx-track-azurepowershell
 ---
 
 ```YAML

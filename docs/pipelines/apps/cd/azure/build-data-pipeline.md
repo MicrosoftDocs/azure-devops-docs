@@ -4,7 +4,7 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.subservice: azure-devops-pipelines-apps
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, devx-track-arm-template
 ms.date: 01/25/2023
 ms.topic: how-to
 monikerRange: '=azure-devops'
