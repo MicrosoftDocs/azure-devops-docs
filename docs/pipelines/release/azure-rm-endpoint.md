@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Azure Resource Manager service connections
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-arm-template
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
