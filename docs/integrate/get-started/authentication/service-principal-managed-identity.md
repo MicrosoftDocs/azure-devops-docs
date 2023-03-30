@@ -77,7 +77,7 @@ If you're a PCA, you can also grant a service principal access to specific proje
 
 After they're added to the organization, they can be treated similarly to standard user accounts. You can assign permissions directly on the service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals) to perform CRUD operations on service principals.
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
 
 Management of service principals does differ from user accounts in a few key ways:
 * Service principals don't have emails and as such, they can't be invited to an organization via email.
@@ -96,10 +96,12 @@ The returned access token is a JWT with the defined roles, which can be used to 
 
 #### Use the Azure AD token to authenticate to Azure DevOps resources
 In the following video example, we move from authenticating with a PAT to using a token from a service principal. We start by using a client secret for authentication, then move to using a client certificate. 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWNVM]
 
 Another example demonstrates how to connect to Azure DevOps using a User Assigned Managed Identity within an Azure Function.
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8L]
 
 Follow along with these examples by finding the app code in our [collection of sample apps](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
 
