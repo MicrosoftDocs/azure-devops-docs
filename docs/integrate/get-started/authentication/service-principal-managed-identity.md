@@ -46,7 +46,7 @@ Further information:
 * [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 * [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWY8q]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWY8q]
 
 #### Create a Managed Identity
 Creating managed identities in the Azure portal differs significantly from setting up applications with service principals. Before you begin the creation process, you must first consider which type of managed identity you want to create:
@@ -59,7 +59,7 @@ Some helpful links:
 * [Manage user-assigned managed identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8K]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWL8K]
 
 ### 2. Add and manage service principal in an Azure DevOps organization
 
@@ -73,7 +73,7 @@ If you're a PCA, you can also grant a service principal access to specific proje
 > [!NOTE]
 > You can only add a managed identity for the tenant your organization is connected to. If you would like to access a managed identity in a different tenant, see [the workaround we've included in the FAQ](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
 
-![Service principals and managed identities in the Users Hub](./media/users-hub-sps.png)
+![Screenshot of service principals and managed identities in the Users Hub.](./media/users-hub-sps.png)
 
 After they're added to the organization, they can be treated similarly to standard user accounts. You can assign permissions directly on the service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals) to perform CRUD operations on service principals.
 
