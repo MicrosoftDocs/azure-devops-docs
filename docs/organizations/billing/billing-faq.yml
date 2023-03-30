@@ -173,7 +173,7 @@ sections:
 
           ## Multi-organization billing
 
-          Multi-organization billing allows you to pay once per user, for organizations under the same Azure billing subscription.
+          Multi-organization billing allows you to pay once per human user, for organizations under the same Azure billing subscription. This does not apply to service principals and managed identities, which will still be charged on a user assignment-based billing. Any service principal or managed identity will be charged once per organization that it has been added to.
 
       - question: |
           Q: Does multi-organization billing make sense for all customers?

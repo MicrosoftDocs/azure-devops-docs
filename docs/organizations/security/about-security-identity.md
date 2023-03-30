@@ -27,7 +27,7 @@ This article builds on the information provided in [Get started with permissions
       - Users
       - Organization owner
       - Service accounts
-      - Service principals
+      - Service principals or managed identities
       - Job agents
       
       
@@ -68,7 +68,7 @@ This article builds on the information provided in [Get started with permissions
       **Account types**
       - Users
       - Service accounts
-      - Service principals
+      - Service principals or managed identities
       - Job agents
       
       
@@ -110,20 +110,23 @@ For more information about the steps Microsoft takes to keep your projects in Az
 
 ## Accounts 
 
-While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations, which includes the following account types.
+While the main types of accounts of interest are the human user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations. These include the following account types.   
+
 
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Look up the organization owner](look-up-organization-owner.md). 
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals**: Internal Azure DevOps accounts to support internal operations. 
+- **Service principals or managed identities**: [Azure AD applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that have been added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
+
+Throughout these docs, users can refer to all identities that have been added to the Users Hub, which can include human users and service principals.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals**: Internal Azure DevOps accounts to support internal operations. 
+- **Service principals or managed identities**: Azure AD applications or managed identities that have been added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
@@ -149,25 +152,27 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 ### Authentication methods, integrating with other services and apps
 
-Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
+Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following authentication methods.
 
-- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens for:  
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens on behalf of yourself for:  
 	- Accessing specific resources or activities, like builds or work items
 	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication 
 	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
 
-- [OAuth](../../integrate/get-started/authentication/oauth.md) 
-to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
+- [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth.md) 
+to generate tokens on behalf of users for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
 and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
 - [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys when you use Linux, macOS, 
+to generate encryption keys for yourself when you use Linux, macOS, 
 or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
+
+- [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Azure AD tokens on behalf of an application or service, that typically automates some workflow that needs to access Azure DevOps resources. Most actions traditionally done by a service account and a PAT can be done using a service principal or managed identity.
 
 By default, your account or collection allows access for all authentication methods. 
 You can limit access, but you must specifically restrict access for each method. 
