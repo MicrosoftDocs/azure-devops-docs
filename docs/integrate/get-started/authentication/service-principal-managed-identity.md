@@ -112,23 +112,20 @@ Service principals can be used to call Azure DevOps REST APIs and do most action
 
 ## FAQs
 
-### Q: Why should I use a service principal or a managed identity instead of a PAT?
+#### Q: Why should I use a service principal or a managed identity instead of a PAT?
 
 Many of our customers seek out a service principal or managed identity to replace an existing PAT (personal access token). Such PATs often belong to a service account (shared team  account) that is using them to authenticate an application with Azure DevOps resources. PATs must be laboriously rotated every so often (minimum 180 days). As PATs are simply bearer tokens, meaning token strings that represent a user’s username and password, they're incredibly risky to use as they can easily fall into the wrong person’s hands. Azure AD tokens expire every hour and must be regenerated with a refresh token to get a new access token, which limits the overall risk factor when leaked.
 
-### Q: What are the rate limits on service principals and managed identities?
+#### Q: What are the rate limits on service principals and managed identities?
 At this time, service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
 
-### Q: Will using this feature cost more?
+#### Q: Will using this feature cost more?
 Service principals and managed identities are priced similarly as users, based on the access level. One notable change pertains to how we treat "multi-org billing" for service principals. Users are counted as only one license no matter how many organizations they've been added to, but service principals are counted as one license per each organization they've been added to. This is just like standard "user assignment-based billing". 
 
-### Q: Can I use a service principal or managed identity with Azure CLI?
-Yes! Anywhere that asks for PATs in the [Azure CLI](/azure/authenticate-azure-cli) can also accept [Azure AD access tokens](#get-an-azure-ad-token). (We are working on renaming the environment variable to reflect that Azure AD tokens are also accepted.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
+#### Q: Can I use a service principal or managed identity with Azure CLI?
+Yes! Anywhere that asks for PATs in the [Azure CLI](/azure/authenticate-azure-cli) can also accept [Azure AD access tokens](#get-an-azure-ad-token). See these examples for how you might pass an Azure AD token in to authenticate with CLI.
 
 ```powershell
-# To authenticate with environment variable: Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
-$env:AZURE_DEVOPS_EXT_PAT="{aad_access_token}"
-
 # To authenticate with a command: After typing this command, the az devops login will prompt you to enter a token. You can add an Azure AD token too! Not just a PAT.
 az devops login
 
@@ -156,7 +153,7 @@ Invoke-RestMethod -Uri $uri -Headers $headers -Method Get | Select-Object -Expan
 
 After which, you should be able to use `az cli` commands per usual. 
 
-### Q: Can I add a managed identity from a different tenant to my organization?
+#### Q: Can I add a managed identity from a different tenant to my organization?
 You're only able to add a managed identity from the same tenant that your organization is connected to. However, we have a workaround that allows you to set up a managed identity in the "resource tenant", where are all of your resources are, and enable it to be used by a service principal in the "target tenant", where your organization is connected.
 1. To begin, create a [user-assigned managed identity](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities) in Azure portal for your resource tenant. 
 2. Connect it to a [virtual machine and assign this managed identity](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to it. 
@@ -204,7 +201,7 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 }
 ```
 
-### Q: Can I use a service principal to do git operations, like clone a repo?
+#### Q: Can I use a service principal to do git operations, like clone a repo?
 See the following example of how we've passed an [Azure AD token](#get-an-azure-ad-token) of a service principal instead of a PAT to git clone a repo in a PowerShell script.
 
 ```powershell
@@ -231,25 +228,10 @@ git config -e
 ```sh
 GIT_TRACE=1 GCM_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
 ```
-
-### Q: Can I use a service principal or managed identity with Azure CLI?
-Yes! Anywhere that asks for PATs in the Azure CLI can also accept [Azure AD access tokens](#get-an-azure-ad-token). (We are working on revising the requested environemnt variable to reflect this.) In the meantime, see these examples for how you might pass an Azure AD token in to authenticate with CLI.
-
-```powershell
-# Set the environment variable for current process, which is the preferred option for CI/CD. Please note that Azure AD tokens will expire in an hour, and use with care if this token is needed for longer.
-$env:AZURE_DEVOPS_EXT_PAT="{aad_access_token}"
-
-# Command: az devops login will prompt you to enter a token. You can add an Azure AD token too! Not just a PAT.
-Example:
-PS C:\Users> az devops login
-Token:
-```
-After which, you should be able to use `az cli` commands per usual.
-
-### Q: Can I use a service principal to connect to feeds?
+#### Q: Can I use a service principal to connect to feeds?
 Yes, you should be able to connect to any feed using Basic authentication by replacing the PAT secret value with an SP access token. We demonstrate how to connect with an Azure AD token for NuGet and Maven, but this should be doable for other feed types.
 
-#### Npm project setup with Azure AD tokens
+##### Npm project setup with Azure AD tokens
 > [!NOTE]
 > The vsts-npm-auth tool does not support Azure AD access tokens. 
 
@@ -264,7 +246,7 @@ always-auth=true
 //pkgs.dev.azure.com/Fabrikam/_packaging/FabrikamFeed/npm/:_authToken=[AAD_SERVICE_PRINCIPAL_ACCESS_TOKEN]
 ```
 
-#### Maven project setup with Azure AD tokens
+##### Maven project setup with Azure AD tokens
 1. Add the repo to both your `pom.xml`'s `<repositories>` and `<distributionManagement>` sections.
 
 ```xml
@@ -297,7 +279,7 @@ always-auth=true
 </settings>
 ``` 
 
-### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
+#### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
 1. First, you must add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
 2. Next, you can publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
 ```
