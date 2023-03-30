@@ -41,7 +41,7 @@ And here is an example of how to set a pipeline variable in a classic pipeline:
 
 Any of the methods above to set `AGENT_ACKNOWLEDGE_NO_UPDATES=true` will let the 2.218 or later 2.x agent continue to operate on the operating system that is not supported by agent v3.
 
-### Resources
+#### Resources
 
 - [Additional information](https://aka.ms/azdo-pipeline-agent-v2-eos)
 - [Agent v3](https://aka.ms/azdo-pipeline-agent-version)
