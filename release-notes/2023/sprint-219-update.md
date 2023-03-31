@@ -2,7 +2,7 @@
 title: Pipeline agent updates and Azure Boards private preview opportunities 
 author: ckanyika
 ms.author: ckanyika
-ms.date: 3/28/2023
+ms.date: 3/31/2023
 description: With this update, we highlight the near rollout of Pipeline agent v3 and the end of v2 updates.
 ---
 # Pipeline agent updates and Azure Boards private preview opportunities 
