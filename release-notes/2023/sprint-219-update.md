@@ -11,6 +11,10 @@ With this update, we highlight the rollout of Pipeline agent v3 and the end of v
 In addition, we are excited to extend an opportunity to participate in two Azure Boards private previews. 
 
 Check out the release notes for details.
+### General
+
+[!INCLUDE [sprint-219-update-links](includes/general/sprint-219-update-links.md)]
+
 ### Azure Boards
 
 [!INCLUDE [sprint-219-update-links](includes/boards/sprint-219-update-links.md)]
@@ -18,6 +22,10 @@ Check out the release notes for details.
 ### Azure Pipelines
 
 [!INCLUDE [sprint-219-update-links](includes/pipelines/sprint-219-update-links.md)]
+
+## Azure General 
+
+[!INCLUDE [sprint-219-update](includes/general/sprint-219-update.md)]
 
 ## Azure Boards
 
