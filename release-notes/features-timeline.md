@@ -172,9 +172,9 @@ Note that most new features we are shipping in Boards are only available in the 
         <td>Future</td>      
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board (preview)</a></td>
          <td>Boards</td>
-         <td>2023 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -337,16 +337,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="21"><strong>2023 Q2</strong></td>
+        <td rowspan="20"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/save-comment-improvements" data-raw-source="[Save Comment Improvements](/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save comment improvements</a></td>
-        <td>Boards</td>
-        <td>Future</td>      
-      </tr>
+      </tr>      
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
