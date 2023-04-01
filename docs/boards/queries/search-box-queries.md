@@ -170,6 +170,7 @@ Free text search easily searches across all work item fields, including custom f
 
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
+
 ::: moniker-end
 
 <a id="start-an-improvised-search-and-use-shortcut-filters" />
