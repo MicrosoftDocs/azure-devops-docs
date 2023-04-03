@@ -300,19 +300,19 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-scalability" data-raw-source="[Checks scalability](/azure/devops/release-notes/roadmap/2022/checks-scalability)">Checks scalability</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q3</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
