@@ -1,7 +1,7 @@
 - name: About backlogs
   href: backlogs-overview.md
 - name: Backlogs, boards, & plans
-  href: backlogs/backlogs-boards-plans.md
+  href: backlogs-boards-plans.md
   displayname: In Progress, Rollup, Taskboard
 - name: Create your backlog
   href: create-your-backlog.md
