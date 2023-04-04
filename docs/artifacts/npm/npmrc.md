@@ -1,6 +1,6 @@
 ---
 title: Set up your client's npmrc
-description: How to set up your project and authenticate to Azure Artifacts feeds
+description: How to set up your project and connect to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
@@ -16,7 +16,7 @@ Azure Artifacts enables you to publish various package types to your feeds and i
 
 ## Project setup
 
-For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the Npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. The following steps will guide you through setting up the first configuration file:
+For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the Npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -221,21 +221,20 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 
 ## Troubleshoot
 
-#### vsts-npm-auth is not recognized
+##### vsts-npm-auth is not recognized
 
-If you're running into the following error:
+If you encounter the following error while running your project:
 
 - Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
 - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
 
-Then it's likely that the npm modules folder is not in your path. To fix this issue, rerun the Node.js setup and make sure that the `Add to PATH` options are selected.
+Then it's likely that the npm modules folder is not added to your path. To resolve this issue, rerun the Node.js setup and make sure to select the `Add to PATH` option.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing how to set up node.js](./media/node-setup.png)
+:::image type="content" source="./media/node-setup.png" alt-text="A Screenshot showing how to set up node.js.":::
 
-Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
+As an alternative solution, you can add the npm modules folder to your path by editing the PATH variable `%APPDATA%\npm` in Command Prompt or `$env:APPDATA\npm` in PowerShell.
 
-#### Unable to authenticate
+##### Unable to authenticate
 
 If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
 
@@ -243,7 +242,7 @@ If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`
 vsts-npm-auth -config .npmrc -F
 ```
 
-#### Reset vsts-npm-auth
+##### Reset vsts-npm-auth
 
 Follow the steps below to modify/reset your vsts-npm-auth credentials:
 
