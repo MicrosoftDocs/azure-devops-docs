@@ -11,6 +11,7 @@
   href: ./work-items/quick-ref.md
 - name: Get started
   href: get-started/toc.yml
+    items:
   - name: Process guidance
     href: work-items/guidance/toc.yml
   - name: Permissions & access
