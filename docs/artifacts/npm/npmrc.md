@@ -3,6 +3,7 @@ title: Set up your client's npmrc
 description: How to set up your project and connect to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
+ms.custom: engagement-fy23
 ms.topic: conceptual
 ms.date: 04/04/2023
 monikerRange: '<= azure-devops'
