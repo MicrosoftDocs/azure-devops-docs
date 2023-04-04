@@ -27,6 +27,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available on Azure DevOps Services; the Server columns reflect when we expect the feature to ship in Azure DevOps Server. 
 
 ## Initiatives
+
+### GitHub Advanced Security for Azure DevOps (currently in private preview)
+
+GitHub Advanced Security (GHAS) for Azure DevOps is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
+- Secret Scanning to detect credentials and other secrets that may have already been committed to your Azure Repos, as well as push protection to prevent developers from accidentally pushing new secrets.
+- Dependency Scanning to identify any known vulnerable open-source packages you may be using, and offer straightforward guidance on how to upgrade those packages to fix the vulnerabilities.
+- Code Scanning with CodeQL, a powerful static analysis engine that identifies deep application security vulnerabilities in your source code.
+ 
 ### Minimizing the risks associated with credential theft
 
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equal from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
@@ -63,7 +71,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Managed Identity and Service Principal support](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (preview)</a></td>
          <td>General</td>
-         <td>2023 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q1</td>
          <td>N/A</td>
       </tr>
       <tr>
@@ -235,19 +243,19 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16" data-raw-source="[All in-the-box tasks run on Node 16](/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -337,11 +345,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="20"><strong>2023 Q2</strong></td>
+        <td rowspan="21"><strong>2023 Q2</strong></td>
+        <td>GitHub Advanced Security for Azure DevOps (public preview)</td>
+        <td>Pipelines and Repos</td>
+        <td>Future</td>
+      </tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>      
+      </tr>       
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
