@@ -72,7 +72,7 @@ For best practice, we suggest using two separate configuration files. The first 
 ## Credentials setup
 
 > [!TIP]
-> Multiple registries in .npmrc files are supported with [upstream sources](../concepts/upstream-sources.md) and [scopes](..//npm/scopes.md).
+> The use of multiple registries in .npmrc files is supported in [upstream sources](../concepts/upstream-sources.md) and [scopes](..//npm/scopes.md).
 
 ### [Windows](#tab/windows/)
 
@@ -151,11 +151,13 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 ## Pipeline authentication
 
-Azure Artifacts recommend using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0) to authenticate with your pipeline. When using a task runner such as gulp or Grunt, you'll need to add the npm authenticate task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
+For authentication with your pipeline, Azure Artifacts recommends using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0). When using a task runner like gulp or Grunt, it's important to add the npm authenticate task to the beginning of your pipeline. By doing so, your credentials will be injected into your project's .npmrc file and persisted for the duration of the pipeline run, enabling subsequent steps to use the credentials in the configuration file.
 
 ### [Classic](#tab/classic)
 
 ::: moniker range=">= azure-devops-2019"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Azure Pipelines**, and then select your pipeline definition.
 
@@ -163,18 +165,15 @@ Azure Artifacts recommend using the [npm authenticate task](/azure/devops/pipeli
 
 1. Select `+` to add a task to your pipeline.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing how to add the npm authenticate task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png" alt-text="Screenshot showing how to add the npm authenticate task to your pipeline.":::
 
 1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing the npm authenticate task added to the pipeline](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase-newnav.png" alt-text="Screenshot showing the npm authenticate task added to the pipeline.":::
 
 1. Select your .npmrc file.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing how to add your .npmrc file](../media/build-definition/build-definition-npm-auth-task-file.png)
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your .npmrc file.":::
 
 1. Select **Save & queue** when you're done.
 
@@ -184,25 +183,21 @@ Azure Artifacts recommend using the [npm authenticate task](/azure/devops/pipeli
 
 1. Select **Build and Release**, and then select **Builds**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing how to access your builds in TFS](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+    :::image type="content" source="../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png" alt-text="Screenshot showing how to access your builds in TFS.":::
 
 1. Select your pipeline, and then select **Edit**.
 
 1. Select `+` to add a task to your pipeline.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to add a new task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+    :::image type="content" source="../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png" alt-text="Screenshot showing how to add a new task to your pipeline.":::
 
 1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing the npm authenticate task](../media/build-definition/build-definition-npm-auth-task-phase.png)
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-phase.png" alt-text="Screenshot showing the npm authenticate task.":::
 
 1. Select your .npmrc file.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing how to add your .npmrc file to the npm authenticate task](../media/build-definition/build-definition-npm-auth-task-file.png)
+    :::image type="content" source="../media/build-definition/build-definition-npm-auth-task-file.png" alt-text="Screenshot showing how to add your .npmrc file to the npm authenticate task.":::
 
 1. Select **Save & queue** when you're done.
 
@@ -220,7 +215,7 @@ Azure Artifacts recommend using the [npm authenticate task](/azure/devops/pipeli
 * * *
 
 > [!NOTE]
-> To grant permissions to your pipeline, make sure you set the build service role to **Contributor** in your feed settings.
+> To grant your pipeline access to your feed, make sure you set the build service role to **Contributor** in your feed settings.
 
 :::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
 
