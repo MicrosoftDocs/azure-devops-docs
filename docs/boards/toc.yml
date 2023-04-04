@@ -11,29 +11,6 @@
   href: ./work-items/quick-ref.md
 - name: Get started
   href: get-started/toc.yml
-- name: Basic concepts
-  items:
-  - name: Choose a process
-    href: work-items/guidance/choose-process.md
-    displayname: agile, basic, scrum, cmmi, test
-  - name: About work items
-    href: work-items/about-work-items.md
-    displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cient
-  - name: Area & iteration paths
-    displayName: classification nodes, iteration paths, reserved names, special characters
-    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json  
-  - name: Workflow states & categories
-    displayName: auto complete, pull requests
-    href: ./work-items/workflow-and-state-categories.md
-  - name: Linking & traceability
-    displayName: parent, child, git, remote
-    href: ./queries/link-work-items-support-traceability.md
-  - name: Link types
-    displayName: work, hyperlink, external, github, remote
-    href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json  
-  - name: Work tracking limits
-    displayName: customize, migrate, import
-    href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json
   - name: Process guidance
     href: work-items/guidance/toc.yml
   - name: Permissions & access
