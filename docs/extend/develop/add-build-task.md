@@ -99,10 +99,10 @@ Do every part of [1. Create a custom task](#1-create-a-custom-task) within the `
    npm install @types/mocha --save-dev
    ```
 
-7. Choose TypeScript version 2.3.4 or 4.0.2. 
+7. Choose TypeScript version 2.3.4 or 4.6.3. 
 
    ```
-   npm install typescript@4.0.2 -g --save-dev
+   npm install typescript@4.6.3 -g --save-dev
    ```
 
    > [!NOTE]
@@ -174,6 +174,12 @@ See the following descriptions of some of the components of the `task.json` file
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
 | `restrictions`       | Restrictions being applied to the task about [GitHub Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks.|
+
+> [!NOTE]
+> You can create an `id` with the following command in PowerShell:
+> ```powershell
+> (New-Guid).Guid
+> ```
 
 > [!NOTE]
 > For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, see the **[Build/release task reference](./integrate-build-task.md)**.
