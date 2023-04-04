@@ -4,7 +4,7 @@ description: How to set up your project and authenticate to Azure Artifacts feed
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 10/11/2022
+ms.date: 04/04/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -12,13 +12,15 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com. To authenticate with Azure Artifacts, we must first set up our config file. Npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+Azure Artifacts enables you to publish various package types to your feeds and install packages from both feeds and public registries like npmjs.com. Before we can authenticate with Azure Artifacts, we need to configure our .npmrc file, which stores the feed URLs and credentials that Npm uses. This file can be used to customize the behavior of the Npm client, such as setting up proxies, specifying default package locations, or configuring private package feeds. The .npmrc file is located in the user's home directory and can also be created at the project level to override the default settings. By editing the .npmrc file, users can customize their Npm experience and make it more tailored to their needs.
 
 ## Project setup
 
-We recommend using two config files, the first one you should use to authenticate to Azure Artifacts, and the second one should be kept locally to store your credentials. On your development machine, place the second *.npmrc* file in your home directory. This second file should contain all your registries' credentials. The following steps will help set up your other config file:
+For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the Npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. The following steps will guide you through setting up the first configuration file:
 
 ::: moniker range=">= azure-devops-2019"
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
  
@@ -28,13 +30,15 @@ We recommend using two config files, the first one you should use to authenticat
 
 ::: moniker range="tfs-2018"
 
+1. Select **Build and Release**.
+
 1. Select **Packages**, and then select **Connect to feed**.
 
     :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
 
 ::: moniker-end
 
-2. Select **npm** from the list of package types.
+2. Select **npm** from the left navigation pane.
 
 3. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
 
@@ -63,7 +67,7 @@ We recommend using two config files, the first one you should use to authenticat
 ::: moniker-end
 
 > [!NOTE]
-> if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for more details.
+> if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. For more information, please refer to the list of [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
 
 ## Credentials setup
 
