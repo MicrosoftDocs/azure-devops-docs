@@ -11,20 +11,18 @@
   href: ./work-items/quick-ref.md
 - name: Get started
   href: get-started/toc.yml
-  items:
-  - name: Process guidance
-    href: work-items/guidance/toc.yml
-  - name: Permissions & access
-    items:
-    - name: Default permissions & access for Boards
-      href: ./get-started/permissions-access-boards.md
-      displayname: security, features, stakeholder access
-    - name: Set work tracking & plan permissions
-      displayName: work item tags, roles, object-level, project-level, permissions
-      href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
-    - name: Grant or restrict permissions to select tasks
-      displayName: restrict access, visibility, closed work
-      href: ../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json
+- name: Boards & Kanban
+  href: boards/toc.yml
+- name: Work items
+  href: work-items/toc.yml
+- name: Backlogs
+  href: backlogs/toc.yml
+- name: Sprints & Scrum
+  href: sprints/toc.yml
+- name: Queries
+  href: queries/toc.yml
+- name: Plans & portfolios
+  href: plans/toc.yml
 - name: Track work, code, builds, and releases
   items:
   - name: End-to-end traceability
@@ -93,18 +91,6 @@
       href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
 - name: Azure Boards & GitHub
   href: github/toc.yml
-- name: Work items
-  href: work-items/toc.yml
-- name: Boards & Kanban
-  href: boards/toc.yml
-- name: Backlogs
-  href: backlogs/toc.yml
-- name: Sprints & Scrum
-  href: sprints/toc.yml
-- name: Queries & search
-  href: queries/toc.yml
-- name: Plans & portfolios
-  href: plans/toc.yml
 - name: Integrations & extensions
   href: extensions/toc.yml
 - name: Troubleshooting
