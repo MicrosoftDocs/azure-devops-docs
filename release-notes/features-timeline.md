@@ -28,7 +28,7 @@ Each feature is linked to an article where you can learn more about a particular
 
 ## Initiatives
 
-### GitHub Advanced Security for Azure DevOps (currently in private preview, coming to public preview in Q2)
+### GitHub Advanced Security for Azure DevOps (currently in private preview, coming to public preview in 2023 Q2)
 
 GitHub Advanced Security (GHAS) for Azure DevOps is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
 - Secret Scanning to detect credentials and other secrets that may have already been committed to your Azure Repos, as well as push protection to prevent developers from accidentally pushing new secrets.
@@ -348,7 +348,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td rowspan="21"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (public preview)</a></td>
         <td>Pipelines and Repos</td>
-        <td>Future</td>
+        <td>N/A</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
@@ -452,9 +452,9 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td rowspan="5"><strong>2023 Q3</strong></td>
-        <td>GitHub Advanced Security for Azure DevOps (general availability)</td>
+        <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (public preview)</a></td>
         <td>Pipelines and Repos</td>
-        <td>Future</td>
+        <td>N/A</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
