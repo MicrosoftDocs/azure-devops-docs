@@ -169,7 +169,7 @@ A: You can only add a managed identity from the same tenant that your organizati
 5. Download the created certificate in "CER" format, which ensures that it doesn't contain the private part of your certificate.
 6. Create a new application registration in the target tenant.
 7. Upload the downloaded certificate to this new application in the "Certificates & secrets" tab.
-8. Add this application's service principal to the [Azure DevOps organization we want it to access](#2-add-and-manage-service-principal-in-an-azure-devops-organization), and remember to set up the service principal with any required permissions.
+8. Add this application's service principal to the [Azure DevOps organization we want it to access](#2-add-and-manage-service-principals-in-an-azure-devops-organization), and remember to set up the service principal with any required permissions.
 9. To get an Azure AD access token from this service principal that makes use of the managed identity certificate, see the following code sample:
 
 > [!NOTE]
