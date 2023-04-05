@@ -534,7 +534,7 @@ jobs:
 
 - job: B
   dependsOn: A
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
   steps:
   - script: echo this only runs for master
 ```

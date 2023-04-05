@@ -508,7 +508,7 @@ Use the following example to create a new pipeline with YAML. Learn more about h
 
 ```yaml
 trigger: 
-- master
+- main
 
 pool:
   vmImage: "ubuntu-latest"

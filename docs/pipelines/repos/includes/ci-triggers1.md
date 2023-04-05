@@ -17,7 +17,7 @@ You can control which branches get CI triggers with a simple syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - releases/*
 ```
 
@@ -37,7 +37,7 @@ For more complex triggers that use `exclude` or `batch`, you must use the full s
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/old*
@@ -81,7 +81,7 @@ trigger:
   batch: true
   branches:
     include:
-    - master
+    - main
 ```
 
 > [!NOTE]
@@ -101,7 +101,7 @@ You can specify file paths to include or exclude.
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
   paths:
     include:
@@ -110,7 +110,7 @@ trigger:
     - docs/README.md
 ```
 
-When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
+When you specify paths, you must explicitly specify branches to trigger on if you are using Azure DevOps Server 2019.1 or lower. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter. If you are using Azure DevOps Server 2020 or newer, you can omit `branches` to filter on all branches in conjunction with the path filter.
 
 ::: moniker-end
 
