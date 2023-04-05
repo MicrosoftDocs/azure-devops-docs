@@ -52,6 +52,7 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2023 through March 
 - [Migrate from Travis to Azure Pipelines](/azure/devops/pipelines/migrate/from-travis)
 - [Restore NuGet packages with Azure Pipelines](/azure/devops/pipelines/packages/nuget-restore)
 - [Set variables in scripts](/azure/devops/pipelines/process/set-variables-scripts)
+- [Set up MLOps with Azure DevOps](/azure/machine-learning/how-to-setup-mlops-azureml)
 
 ## User guide
 
