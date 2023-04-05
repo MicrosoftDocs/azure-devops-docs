@@ -272,7 +272,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourceBranchName</td>
 <td>The name of the branch the build was queued for.
 <ul>
-<li>Git repo branch or pull request: The last path segment in the ref. For example, in <code>refs/heads/ma</codine> this value is <code>master</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
+<li>Git repo branch or pull request: The last path segment in the ref. For example, in <code>refs/heads/main</code> this value is <code>master</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
 <li>TFVC repo branch: The last path segment in the root server path for the workspace. For example in <code>$/teamproject/main</code> this value is <code>main</code>.</li>
 <li>TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code> or <code>myshelveset;username@live.com</code>.</li>
 </ul>
