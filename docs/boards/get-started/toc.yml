@@ -6,3 +6,16 @@
   href: plan-track-work.md
 - name: Track work as a Stakeholder
   href: ../../organizations/security/get-started-stakeholder.md?bc=/azure/devops/boards/breadcrumb/toc.json&toc=/azure/devops/boards/toc.json
+- name: Process guidance
+  href: work-items/guidance/toc.yml
+- name: Permissions & access
+  items:
+    - name: Default permissions & access for Boards
+      href: ../get-started/permissions-access-boards.md
+      displayname: security, features, stakeholder access
+    - name: Set work tracking & plan permissions
+      displayName: work item tags, roles, object-level, project-level, permissions
+      href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json
+    - name: Grant or restrict permissions to select tasks
+      displayName: restrict access, visibility, closed work
+      href: ../../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json
