@@ -1972,7 +1972,7 @@ Event: Code was pushed to a Git repository.
     ],
     "refUpdates": [
       {
-        "name": "refs/heads/master",
+        "name": "refs/heads/main",
         "oldObjectId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
         "newObjectId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74"
       }
@@ -1987,7 +1987,7 @@ Event: Code was pushed to a Git repository.
         "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git"
     },
     "pushedBy": {
@@ -2062,7 +2062,7 @@ Event: A pull request is created in a Git repository.
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
@@ -2078,7 +2078,7 @@ Event: A pull request is created in a Git repository.
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/master",
+    "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
@@ -2170,7 +2170,7 @@ Event: A merge commit was created on a pull request.
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
@@ -2187,7 +2187,7 @@ Event: A merge commit was created on a pull request.
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/master",
+    "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
@@ -2285,7 +2285,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
@@ -2302,7 +2302,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/master",
+    "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {

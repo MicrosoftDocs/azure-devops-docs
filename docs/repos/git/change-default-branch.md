@@ -100,7 +100,7 @@ Update the triggering branches and the `git push` line if your branch names are 
 trigger:
   branches:
     include:
-    - master
+    - main
     - main
  
 pool: { vmImage: ubuntu-latest }
