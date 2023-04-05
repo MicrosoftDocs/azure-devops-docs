@@ -18,16 +18,16 @@ monikerRange: '<= azure-devops'
 
 You can now add Azure Active Directory (Azure AD) service principals and managed identities to your Azure DevOps organizations to grant access to your organization resources. For many teams, this feature can be a viable and preferred alternative to [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) when authenticating applications that power automation workflows for your company. 
 
-## About service principals and managed identities
-
 > [!NOTE]
 > Service principals and managed identities support is currently in public preview. They're only available to organizations that are connected to Azure AD.
 
-You can let Azure AD applications access your Azure DevOps resources by adding their service principals to your organization. [Service principals](/azure/active-directory/fundamentals/service-accounts-principal) are security objects within an Azure AD application that define what an application can do in a given tenant. They're set up in the Azure portal during the application registration process and configured to access Azure resources, like Azure DevOps. By adding service principals into your organization and setting up permissions on top of them, we can determine whether a service principal is authorized to access your organizational resources and which ones.
+## About service principals and managed identities
+
+[Service principals](/azure/active-directory/fundamentals/service-accounts-principal) are security objects within an Azure AD application that define what an application can do in a given tenant. They're set up in the Azure portal during the application registration process and configured to access Azure resources, like Azure DevOps. By adding service principals into your organization and setting up permissions on top of them, we can determine whether a service principal is authorized to access your organizational resources and which ones.
 
 [Managed identities](/azure/active-directory/fundamentals/service-accounts-managed-identities) are another Azure AD feature that act similarly to an application's service principals. These objects provide identities for Azure resources and allow an easy way for services that support Azure AD authentication to share credentials. They're an appealing option because Azure AD takes care of credential management and rotation. While setup for a managed identity may look different on the Azure portal, Azure DevOps treats both security objects the same as a new identities in an organization with defined permissions. Throughout the rest of this article, we refer to managed identities and service principals interchangeably as service principal, unless specified.
 
-We describe the steps needed to authenticate these identities to Azure DevOps to allow them to perform actions on behalf of themselves.
+Use the following steps to authenticate these identities to Azure DevOps to allow them to perform actions on behalf of themselves.
 
 ## Configure managed identities and service principals
 
@@ -35,7 +35,7 @@ Your implementation may vary, but at a high-level, the following steps help you 
 
 ### 1. Create a new managed identity or application service principal
 
-The first step is to create an application and/or a managed identity, which must be done in the Azure portal. 
+Create an [application service principal](#create-an-application-service-principal) or a [managed identity](#create-a-managed-identity) in the Azure portal. 
 
 #### Create an application service principal
 
@@ -55,7 +55,7 @@ Creating managed identities in the Azure portal differs significantly from setti
 * **System-assigned managed identity:** Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD.
 * **User-assigned managed identity** You may also create a managed identity as a standalone Azure resource by creating a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it.
 
-For more information, see the following articles:
+For more information, see the following articles and video:
 * [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 * [Manage user-assigned managed identities](/azure/active-directory/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
 * [Configure managed identities for Azure resources on a VM using the Azure portal](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
@@ -71,16 +71,16 @@ Once you configure the service principals in the Azure AD portal, you must do th
 
 If you're a PCA, you can also grant a service principal access to specific projects and assign a license. If you're not a PCA, you must reach out to the PCA to update any project memberships or license access levels.
 
+![Screenshot of service principals and managed identities in the Users Hub.](./media/users-hub-sps.png)
+
 > [!NOTE]
 > You can only add a managed identity for the tenant your organization is connected to. If you would like to access a managed identity in a different tenant, see the [workaround we've included in the FAQ](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
 
-![Screenshot of service principals and managed identities in the Users Hub.](./media/users-hub-sps.png)
-
-After your service principals are added to the organization, they can be treated similarly to standard user accounts. You can assign permissions directly on a service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals) to perform CRUD operations on service principals.
+After your service principals are added to the organization, you can treat them similarly to standard user accounts. You can assign permissions directly on a service principal, add it to security groups and teams, assign it to any access level, and remove it from the organization. You can also use the [`Service Principal Graph APIs`](/rest/api/azure/devops/graph/service-principals) to perform CRUD operations on service principals.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWG70]
 
-Management of service principals does differ from user accounts in the following key ways:
+Management of service principals differs from user accounts in the following key ways:
 
 * Service principals don't have emails and as such, they can't be invited to an organization via email.
 * Group rules for licensing currently don't apply to service principals. If you want to assign an access level to a service principal, it's best to do so directly. 
@@ -290,8 +290,11 @@ always-auth=true
 
 ### Q: Can I use a service principal to publish extensions to the Visual Studio Marketplace?
 
-A: 1. First, you must add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
-2. Next, you can publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
+A: Yes. Do the following steps.
+
+1. Add a service principal as a member to a publisher account. You can get the service principal's ID from its profile using [Profiles - Get](/rest/api/azure/devops/profile/profiles/get). Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
+
+2. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using an SP. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use an SP access token:
 ```
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <AAD_ACCESS_TOKEN>
 ```
