@@ -452,7 +452,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td rowspan="5"><strong>2023 Q3</strong></td>
-        <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (public preview)</a></td>
+        <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
       </tr>
