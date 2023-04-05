@@ -110,7 +110,7 @@ trigger:
     - docs/README.md
 ```
 
-When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
+When you specify paths, you must explicitly specify branches to trigger on if you are using Azure DevOps Server 2019.1 or lower. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter. If you are using Azure DevOps Server 2020 or newer, you can omit `branches` to filter on all branches in conjunction with the path filter.
 
 ::: moniker-end
 
