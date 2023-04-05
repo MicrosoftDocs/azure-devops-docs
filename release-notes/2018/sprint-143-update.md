@@ -119,7 +119,7 @@ By default, pipelines triggered by pull requests (PRs) will be canceled if a new
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
   autoCancel: false
 ```
