@@ -38,7 +38,7 @@ Wildcards patterns allow `*` to match zero or more characters and `?` to match a
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
     - feature/*
     exclude:

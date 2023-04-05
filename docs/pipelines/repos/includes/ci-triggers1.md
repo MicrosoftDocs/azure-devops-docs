@@ -17,7 +17,7 @@ You can control which branches get CI triggers with a simple syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - releases/*
 ```
 
@@ -37,7 +37,7 @@ For more complex triggers that use `exclude` or `batch`, you must use the full s
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/old*
@@ -81,7 +81,7 @@ trigger:
   batch: true
   branches:
     include:
-    - master
+    - main
 ```
 
 > [!NOTE]
@@ -101,7 +101,7 @@ You can specify file paths to include or exclude.
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
   paths:
     include:
