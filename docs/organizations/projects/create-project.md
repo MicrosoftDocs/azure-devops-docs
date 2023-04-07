@@ -89,7 +89,7 @@ There isn't a limit on the number of projects that you can create within a proje
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav.png)  
 
-   When you choose public visibility, anyone on the internet can view your project. With private visibility, only users you give access to can view your project. For more information about public projects, see [Create a public project in your organization](../projects/create-project.md). If the **Public** option isn't available, you need to change the policy.
+   When you choose public visibility, anyone on the internet can view your project. With private visibility, only users you give access to can view your project. For more information about features and access levels for public projects, see [Make a private project public.](make-project-public.md). If the **Public** option isn't available, you need to change the policy.
 
 4. Select **Create**. Azure DevOps displays the project welcome page.
 
