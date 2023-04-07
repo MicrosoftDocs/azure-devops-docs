@@ -233,7 +233,7 @@ sections:
       - question: Can I list items based on their Kanban column assignment?
 
         answer: |
-            **Yes**, you can track column moves on a Kanban board by using the [Board Column and Board Column Done fields](/boards/queries/query-by-workflow-changes?view=azure-devops#kanban_query_fields).
+            **Yes**, you can track column moves on a Kanban board by using the [Board Column and Board Column Done fields](queries/query-by-workflow-changes?view=azure-devops#kanban_query_fields).
 
       - question: What if I get the error message, "The column configurations aren't valid"?
 
