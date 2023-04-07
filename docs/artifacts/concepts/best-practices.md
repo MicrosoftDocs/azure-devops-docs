@@ -21,21 +21,19 @@ Creating and publishing packages is a critical step in any package management wo
 
 - **Each repository should only reference one feed**:
 
-    A feed is an organizational construct to host packages. You can have multiple feeds for a project but a particular project should only reference one feed. If you want to use packages from multiple feeds, use [upstream sources](upstream-sources.md) to access packages from multiple feeds through a single upstream.
+    A feed is a fundamental organizational structure for hosting packages. While you can have multiple feeds for a project, it's best to limit a project to referencing just one feed. If you want to use packages from multiple feeds, it's recommended to use [upstream sources](upstream-sources.md). This enables you to access packages from multiple feeds and public registries.
 
 - **Automatically publish newly created packages to your feed**:
 
-    This will populate the `@local` view of your feed. See [Feed views](views.md) to learn more about feed views and upstream sources.
+    This will update the `@local` view of your feed with the new packages. See [Feed views](views.md) to learn more about feed views and upstream sources.
 
 - **Enable retention policies to automatically clean up old package versions**:
 
-    Deleting old package versions improves client performance and releases storage space. You can choose how many versions of a package to retain when setting up your [retention policy](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
+    By deleting older package versions, you can optimize client performance and free up storage space. When setting up your [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) you have the flexibility to select the number of versions of a package to keep. This allows you to easily manage package versions and improve your package management workflow.
 
 - **Promote your package to the correct view**:
 
-    When a package is ready for early adopters, select that package from within your feed and promote it to the `@prerelease` view. When the package is deemed of sufficient quality to be released, promote that package to the `@release` view.
-    
-    Promoting package versions to a view ensures they won't be deleted by retention policies. For more information on views, check out the [Feed views](views.md) article.
+    To make a package available to early adopters, you can select it from your feed and promote it to the @prerelease view. Once you've deemed the package to be of sufficient quality for a full release, you can promote it to the @release view. By promoting package versions to a view, you can prevent them from being deleted by retention policies. To learn more about feed views, check out the [Feed views](views.md) article.
 
 - **If external teams are consuming your packages, ensure that `@release` and `@prerelease` views are visible across the organizations**:
 
