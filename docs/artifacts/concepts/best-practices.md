@@ -41,31 +41,26 @@ Creating and publishing packages is a critical step in any package management wo
 
 ## Consume packages
 
-Follow these guidelines and best practices when consuming packages from feeds and upstream sources.
+In this section, we'll cover best practices for consuming packages with Azure Artifacts, including configuring package sources, managing package versions, and ensuring secure and efficient package consumption.
 
 - **Configure upstream sources for your feed**:
 
-    If you want to consume packages from public registries such as NuGet.org or npmjs.com, you should consider adding upstream sources to your feed.
-    
-    For more information, see [Understand upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
+    Adding upstream sources to your feed is the recommended approach for consuming packages from public registries like NuGet.org or npmjs.com. See [Understand upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md) for more details.
 
 - **Sources not in your organization but in the same AAD tenant should be added using the feed locator**:
 
-    The feed locator uses the following syntax: `azure-feed://<organization>/<projectName>/<feed>@<view>`
+    The syntax for the feed locator is as follows: `azure-feed://<organization>/<projectName>/<feed>@<view>`
 
 - **Ensure that the order of the sources matches your desired package resolution order**:
 
-    The feed will check each upstream in order, returning the package from the first source that can provide it.
+    The feed will sequentially check each upstream source, and return the package from the first source that has it.
 
-- **To avoid confusion, we recommend placing any public upstreams FIRST in your resolution order**:
+- **Place public upstreams FIRST in your resolution order**:
 
     This prevents other sources from overriding well-known packages with altered or incompatible versions.
 
-## Next steps
+## Related articles
 
-> [!div class="nextstepaction"]
-> [Get started with Azure Artifacts](../start-using-azure-artifacts.md)
-> [Artifacts storage breakdown](../artifact-storage.md)
-> [What are feeds?](feeds.md)
-> [What are feed views?](views.md)
-> [Understand upstream sources](upstream-sources.md)
+- [Package sizes and count limits](../reference/limits.md)
+- [Artifacts storage consumption](../artifact-storage.md)
+- [Upstream sources overview](upstream-sources.md)
