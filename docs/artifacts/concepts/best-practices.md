@@ -1,9 +1,10 @@
 ---
 title: Best practices when working with Azure Artifacts
-description: Best practices to publish and consume packages from Artifacts feeds
+description: Best practices when publishing and consuming packages with Azure Artifacts
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 08/20/2021
+ms.date: 04/07/2023
+ms.custom: contperf-fy23, engagement-fy23
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -12,11 +13,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure Artifacts.
+Managing software packages can be a complex and time-consuming process, particularly when working with large-scale projects. Fortunately, Azure Artifacts provides a robust platform for package management that can help streamline the process and improve collaboration among development teams. However, to get the most out of Azure Artifacts, it's essential to follow best practices that ensure the integrity and quality of your packages. In this article, we'll cover some of the most important best practices for producing, consuming, and managing packages in Azure Artifacts. Whether you're a seasoned developer or just starting with Azure Artifacts, these tips will help you optimize your workflow and ensure the success of your projects.
 
 ## Create and publish packages
 
-Follow these guidelines and best practices when creating or publishing your packages.
+Creating and publishing packages is a critical step in any package management workflow. In this section, we'll cover best practices for creating and publishing packages in Azure Artifacts.
 
 - **Each repository should only reference one feed**:
 
