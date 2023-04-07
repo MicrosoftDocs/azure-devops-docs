@@ -7,7 +7,7 @@
 - name: Track work as a Stakeholder
   href: ../../organizations/security/get-started-stakeholder.md?bc=/azure/devops/boards/breadcrumb/toc.json&toc=/azure/devops/boards/toc.json
 - name: Process guidance
-  href: work-items/guidance/toc.yml
+  href: ../work-items/guidance/toc.yml
 - name: Permissions & access
   items:
     - name: Default permissions & access for Boards
