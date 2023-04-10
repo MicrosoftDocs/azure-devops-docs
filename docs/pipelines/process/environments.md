@@ -3,7 +3,7 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 04/26/2022
+ms.date: 04/10/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -11,7 +11,10 @@ monikerRange: '>= azure-devops-2020'
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
+An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production. An Azure DevOps environment represents a logical deployment target where your pipeline deploys software. 
+
+Azure DevOps environments aren't available in classic pipelines. For classic pipelines, [deployment groups](../release/deployment-groups/index.md) offer similar functionality. 
+
 
 Environments provide the following benefits.
 
@@ -24,7 +27,7 @@ Environments provide the following benefits.
 
 While an environment is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
 
-When you author a YAML pipeline and refer to an environment that does not exist, Azure Pipelines automatically creates the environment when the user performing the operation is known and permissions can be assigned. When Azure Pipelines does not have information about the user creating the environment (example: a YAML update from an external code editor), your pipeline will fail if the environment does not already exist. 
+When you author a YAML pipeline and refer to an environment that doesn't exist, Azure Pipelines automatically creates the environment when the user performing the operation is known and permissions can be assigned. When Azure Pipelines doesn't have information about the user creating the environment (example: a YAML update from an external code editor), your pipeline fails if the environment doesn't already exist. 
 
 <a name="creation"></a>
 
@@ -122,7 +125,7 @@ The deployment history view within environments provides the following advantage
    > [!div class="mx-imgBorder"]
    > ![Screenshot of deployment history listing.](media/environments-deployment-history.png)
 
-- Drill down into the job details to see the list of commits and work items that were deployed to the environment. The list of commits and work items are the new items between deployments. Your first listing will include all of the commits and the following listings will just include changes. If multiple commits are tied to the same pull request, you'll see multiple results on the work items and changes tabs.
+- Drill down into the job details to see the list of commits and work items that were deployed to the environment. The list of commits and work items are the new items between deployments. Your first listing includes all of the commits and the following listings will just include changes. If multiple commits are tied to the same pull request, you'll see multiple results on the work items and changes tabs.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of commits under deployment history.](media/environment-deployment-history-changes.png)
@@ -166,15 +169,15 @@ A: If you see the message "Access denied: {User} needs Create permissions to do 
 
 A: These are some of the possible reasons of the failure:
 
-  * When you author a YAML pipeline and refer to an environment that does not exist in the YAML file, Azure Pipelines automatically creates the environment in some cases:  
+  * When you author a YAML pipeline and refer to an environment that doesn't exist in the YAML file, Azure Pipelines automatically creates the environment in some cases:  
     * You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
     * You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.  
 
-  * In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment  that does not exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
+  * In the following flows, Azure Pipelines doesn't have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment  that doesn't exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines doesn't know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
 
-  * If you are using [runtime parameters](./runtime-parameters.md?tabs=script&view=azure-devops&preserve-view=true) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment.
+  * If you're using [runtime parameters](./runtime-parameters.md?tabs=script&view=azure-devops&preserve-view=true) for creating the environment, it fails as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment.
 
-  * A user with stakeholder access level cannot create the environment as stakeholders do not have access to the repository.
+  * A user with stakeholder access level can't create the environment as stakeholders don't have access to the repository.
   
 ## Related articles
 
