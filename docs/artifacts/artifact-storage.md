@@ -14,13 +14,15 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts uses a consumption-based billing for all the supported package types (NuGet, npm, Python, Maven, and Universal packages). With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
+Azure Artifacts adopts a consumption-based billing model for all the package types it supports, such as NuGet, npm, Python, Maven, and Universal packages. The free-tier plan provides a storage capacity of two Gibibytes (GiB) to store various package types. If you exceed the storage limit, you can either upgrade to a paid subscription or remove some of your existing artifacts.
 
-Using the artifact storage UI from your organization/project settings, you can view your storage consumption at both the organization level and the project level. Storage is also grouped by project and/or by artifact type.
+The artifact storage UI available in your organization/project settings allows you to monitor your storage usage at the organization and project levels. Storage is also grouped by project and artifact type.
 
 ## Organization-level storage
 
-The organization-level view shows your total storage summary and your storage consumption by artifact type and by project.
+The organization-level view provides an overview of your total storage usage as well as the storage consumption by artifact type and by project.
+
+1. Sign in to your Azure DevOps organization.
 
 1. From within your organization, select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
