@@ -241,7 +241,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 
 > [!NOTE]
 > * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
-> * The failing task is retried immediately.
+> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
 > * A warning is added to the task logs indicating that it has failed before it is retried.
@@ -283,7 +283,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 Specify the number of retries if this task fails. The default is zero. 
 
 > [!NOTE]
-> * The failing task is retried immediately.
+> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
 > * A warning is added to the task logs indicating that it has failed before it is retried.
