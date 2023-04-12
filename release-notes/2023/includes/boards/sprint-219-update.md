@@ -20,6 +20,9 @@ We will provide all the documentation and code samples to help you on-board into
 
 ### Swimlane rules (private preview)
 
+> [!IMPORTANT]
+> Due to heavy volumne, we have stopped taking new requests into the priviate preview. We expect to release this feature into GA in the next couple of sprints.
+
 Swimlane rules are similar to style rules, but instead, they allow you to setup conditions on your Kanban board to automatically move work items into specific lanes. For example, you might want to setup a lane for each person on your team. When you assign the work item, it will be placed into that lane.
 
 > [!div class="mx-imgBorder"]
