@@ -34,5 +34,5 @@ We are taking a limited number of requests to be added to a private preview to h
 
 [Community suggestion ticket](https://developercommunity.visualstudio.com/t/swimlanes-rules/365710)
 
- [!>NOTE]
+> [!NOTE]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
