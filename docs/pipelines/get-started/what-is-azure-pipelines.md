@@ -3,7 +3,7 @@ title: What is Azure Pipelines?
 ms.custom: seodec18
 description: Learn how to automatically build, test, and deploy your code with Azure Pipelines
 ms.topic: overview
-ms.date: 01/04/2023
+ms.date: 04/12/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -68,7 +68,8 @@ To use Azure Pipelines, complete the following tasks:
 
 **Azure DevOps Services**
 
-If you use public projects, Azure Pipelines is free. For more information, see [What is a public project?](../../organizations/projects/about-projects.md)
+If you use public projects, Azure Pipelines is free, but you will need to request the free grant of parallel jobs. For more information, see [What is a public project?](../../organizations/projects/about-projects.md).you can request this grant by submitting a [request](https://aka.ms/azpipelines-parallelism-request). Existing organizations and projects are not affected.
+
 If you use private projects, you can run up to 1,800 minutes (30 hours) of pipeline jobs for free every month.
 
 For more information, see [Pricing based on parallel jobs](../licensing/concurrent-jobs.md)
