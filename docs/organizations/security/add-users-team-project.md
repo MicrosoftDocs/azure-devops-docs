@@ -622,7 +622,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 	[![Screenshot of Project Settings>Security.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 3. Under **Groups**, choose one of the following options:
-   - **Readers**: To add users who require read-only access to the project, choose.
+   - **Readers**: To add users who require read-only access to the project.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
    - **Project Administrators**: To add users who need to administrate the project. For more information, see [Change project-level permissions](change-project-level-permissions.md).
 
