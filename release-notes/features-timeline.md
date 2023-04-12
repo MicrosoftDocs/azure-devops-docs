@@ -466,7 +466,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>
       <tr>
-        <td rowspan="5"><strong>2023 Q3</strong></td>
+        <td rowspan="6"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
@@ -485,7 +485,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>   
+      </tr>  
+      <tr>
+        <td><a href="" data-raw-source="[]()">Chart click thru to show section results</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr> 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
