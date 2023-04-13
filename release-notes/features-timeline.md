@@ -186,7 +186,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (preview)</a></td>
          <td>Boards</td>
          <td>2023 Q2</td>
          <td>Future</td>
@@ -366,7 +366,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td>Analytics views (general avalability)</td>
+        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops" data-raw-source="[Analytics views (general avalability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general avalability)</td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
@@ -487,12 +487,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>  
       <tr>
-        <td><a href="" data-raw-source="[]()">Chart click thru to show section results</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr> 
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2023/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
