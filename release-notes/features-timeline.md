@@ -366,7 +366,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views" data-raw-source="[Analytics views (general avalability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general avalability)</td>
+        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views" data-raw-source="[Analytics views (general availability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general availability)</td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
