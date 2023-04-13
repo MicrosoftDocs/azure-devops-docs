@@ -180,13 +180,13 @@ Note that most new features we are shipping in Boards are only available in the 
         <td>Future</td>      
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview)">Swimlane rules on Kanban board (preview)</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q1</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (preview)</a></td>
          <td>Boards</td>
          <td>2023 Q2</td>
          <td>Future</td>
@@ -345,11 +345,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="21"><strong>2023 Q2</strong></td>
+        <td rowspan="24"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (public preview)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
       </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview" data-raw-source="[Swimlane rules (general availability)](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview)">Swimlane rules (general availability)</a></td>
+        <td>Boards</td>
+        <td>N/A</td>
+      </tr>    
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
         <td>Boards</td>
@@ -358,6 +363,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
         <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views" data-raw-source="[Analytics views (general avalability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general avalability)</td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview" data-raw-source="[Pull request widget for multiple repos](/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview)">Pull request widget for multiple repos (general availability)</a></td>
+        <td>Reporting</td>
         <td>Future</td>
       </tr>
       <tr>
@@ -451,7 +466,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>
       <tr>
-        <td rowspan="5"><strong>2023 Q3</strong></td>
+        <td rowspan="6"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
@@ -470,7 +485,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>   
+      </tr>  
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr> 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
