@@ -366,7 +366,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops" data-raw-source="[Analytics views (general avalability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general avalability)</td>
+        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views" data-raw-source="[Analytics views (general avalability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general avalability)</td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>
@@ -492,7 +492,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr> 
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2023/rollup-columns-for-query)">Rollup columns for query results</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
         <td>Future</td>
       </tr>

@@ -1,7 +1,7 @@
 ---
 title: Chart click thru to results by section
 author: danhellem
-ms.author: dhellem
+ms.author: dahellem
 ms.date: 04/13/2023
 ms.topic: article
 ms.service: azure-devops
