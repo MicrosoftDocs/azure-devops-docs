@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 09/15/2022
+ms.date: 04/14/2023
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -368,23 +368,14 @@ The `repository` keyword lets you specify an external repository.
 
 ```yaml
 resources:
-  repositories:
-  - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: enum  # see the following "Type" topic
-    name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/main'
-    endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
-    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
-      branches:
-        include: [ string ] # branch names which trigger a build
-        exclude: [ string ] # branch names which won't
-      tags:
-        include: [ string ] # tag names which trigger a build
-        exclude: [ string ] # tag names which won't
-      paths:
-        include: [ string ] # file paths which must match to trigger a build
-        exclude: [ string ] # file paths which won't trigger a build
-```
+    repositories:
+    - repository: string # Required as first property. Alias for the repository.
+      endpoint: string # ID of the service endpoint connecting to this repository.
+      trigger: none | trigger | [ string ] # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos).
+      name: string # repository name (format depends on 'type'; does not accept variables).
+      ref: string # ref name to checkout; defaults to 'refs/heads/main'. The branch checked out by default whenever the resource trigger fires.
+      type: string # Type of repository: git, github, githubenterprise, and bitbucket.
+    ```
 
 ## [Example](#tab/example)
 
@@ -424,13 +415,24 @@ Use `checkout` keyword to consume your repos defined as part of `repository` res
 
 ```yaml
 steps:
-- checkout: string  # identifier for your repository resource
-  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
-  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
-  lfs: boolean  # whether to download Git-LFS files; defaults to false
-  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
-  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
-  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+- checkout: string # Required as first property. Configures checkout for the specified repository.
+  clean: string # If true, run git clean -ffdx followed by git reset --hard HEAD before fetching.
+  fetchDepth: string # Depth of Git graph to fetch.
+  fetchTags: string # Set to 'true' to sync tags when fetching the repo, or 'false' to not sync tags. See remarks for the default behavior.
+  lfs: string # Set to 'true' to download Git-LFS files. Default is not to download them.
+  persistCredentials: string # Set to 'true' to leave the OAuth token in the Git config after the initial fetch. The default is not to leave it.
+  submodules: string # Set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules. Default is not to fetch submodules.
+  path: string # Where to put the repository. The root directory is $(Pipeline.Workspace).
+  condition: string # Evaluate this condition expression to determine whether to run this task.
+  continueOnError: boolean # Continue running even on failure?
+  displayName: string # Human-readable name for the task.
+  target: string | target # Environment in which to run this task.
+  enabled: boolean # Run this task when the job runs?
+  env: # Variables to map into the process's environment.
+    string: string # Name/value pairs
+  name: string # ID of the step.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
+  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 Repos from the `repository` resource aren't automatically synced in your jobs. Use `checkout` to fetch your repos as part of your jobs.
