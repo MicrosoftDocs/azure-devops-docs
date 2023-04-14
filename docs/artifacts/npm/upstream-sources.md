@@ -34,7 +34,7 @@ You can use npmjs.com as an upstream source with new and existing feeds.
 
 1. Select **Upstream sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="../media/add-upstream.png" alt-text="A screenshot showing how to add an upstream source":::
+    :::image type="content" source="./media/npm-new-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
 1. Select **Public source**, and then select **npmjs** from the dropdown menu.
 
