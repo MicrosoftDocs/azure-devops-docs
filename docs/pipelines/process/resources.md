@@ -375,7 +375,7 @@ resources:
       name: string # repository name (format depends on 'type'; does not accept variables).
       ref: string # ref name to checkout; defaults to 'refs/heads/main'. The branch checked out by default whenever the resource trigger fires.
       type: string # Type of repository: git, github, githubenterprise, and bitbucket.
-    ```
+```
 
 ## [Example](#tab/example)
 
