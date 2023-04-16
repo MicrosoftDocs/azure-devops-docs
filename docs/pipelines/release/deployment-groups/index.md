@@ -53,7 +53,7 @@ The tags you assign to your target servers allow you to limit deployment to spec
 A tag is limited to 256 characters, but there is no limit to the number of tags you can use.
 
 > [!NOTE]
-> A deployment pool is a set of target servers available to the organization (org-scoped). When you create a new deployment pool for projects in your organization, a corresponding deployment group is automatically provisioned for each project. The deployment groups will have the same target servers as the deployment pool. You can manually trigger an agent version upgrade for your the target servers by hovering over the ellipsis (...) in **Deployment Pools** and selecting **Update targets**. See [Agent versions and upgrades](../../agents/agents.md) for more details.
+> A deployment pool is a set of target servers available to the organization (org-scoped). When you create a new deployment pool for projects in your organization, a corresponding deployment group is automatically provisioned for each project. The deployment groups will have the same target servers as the deployment pool. You can manually trigger an agent version upgrade for your target servers by hovering over the ellipsis (...) in **Deployment Pools** and selecting **Update targets**. See [Agent versions and upgrades](../../agents/agents.md) for more details.
 
 :::image type="content" source="media/update-targets-pools.png" alt-text="A screenshot showing how to update targets in deployment pools.":::
 
