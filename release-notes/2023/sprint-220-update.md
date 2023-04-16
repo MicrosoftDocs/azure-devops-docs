@@ -9,9 +9,6 @@ description:
 
 
 Check out the release notes for details.
-### General
-
-[!INCLUDE [sprint-220-update-links](includes/general/sprint-220-update-links.md)]
 
 ### Azure Boards
 
@@ -20,10 +17,6 @@ Check out the release notes for details.
 ### Azure Pipelines
 
 [!INCLUDE [sprint-220-update-links](includes/pipelines/sprint-220-update-links.md)]
-
-## Azure General 
-
-[!INCLUDE [sprint-220-update](includes/general/sprint-220-update.md)]
 
 ## Azure Boards
 
