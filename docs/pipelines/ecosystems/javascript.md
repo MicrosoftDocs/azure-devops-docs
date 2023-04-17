@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q2
-ms.date: 06/16/2022
+ms.date: 04/17/2023
 monikerRange: '<= azure-devops'
 zone_pivot_groups: pipelines-version
 ---
@@ -154,7 +154,7 @@ Save and run your pipeline. After your pipeline runs, verify that the job ran su
 2. After you have the sample code in your own repository, [create your first pipeline](../create-first-pipeline.md) and select the **Empty process** template.
 
 3. Select **Process** under the **Tasks** tab in the pipeline editor and change the properties as follows:
-   * **Agent queue:** `Hosted Ubuntu 1604`
+   * **Agent queue:** `Hosted Ubuntu Latest`
 
 4. Add the following tasks to the pipeline in the specified order:
    * **npm**
