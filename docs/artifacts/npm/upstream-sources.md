@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 The npm client is designed to work with a single primary *registry* (what Azure Artifacts calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
 
-The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with npm.** Upstreams give you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.
+The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with npm.** Upstreams give you the most flexibility to use a combination of scoped- and nonscoped packages in your feed, as well as scoped- and nonscoped packages from npmjs.com.
 
 ## Enable npmjs.com as an upstream
 
@@ -34,7 +34,7 @@ You can use npmjs.com as an upstream source with new and existing feeds.
 
 1. Select **Upstream sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="../media/add-upstream.png" alt-text="A screenshot showing how to add an upstream source":::
+    :::image type="content" source="./media/npm-new-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
 1. Select **Public source**, and then select **npmjs** from the dropdown menu.
 

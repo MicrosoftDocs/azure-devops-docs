@@ -21,13 +21,9 @@ Enabling upstream sources on your feed enables developers to consume packages fr
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) button to navigate to **Feed settings**.
 
-1. Select **Upstream Sources**.
+1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="./media/upstreams.png" alt-text="A screenshot showing how to access upstream sources from feed settings.":::
-
-1. Select **Add Upstream**.
-
-    :::image type="content" source="./media/add-nuget-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+    :::image type="content" source="./media/settings-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
 1. Select **Public source**.
 
