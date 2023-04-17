@@ -1,5 +1,5 @@
 ---
-title: Import or update work items in bulk by using CSV files
+title: Import or update work items in bulk with CSV files
 titleSuffix: Azure Boards
 description: Learn how to import or update work items in bulk from a CSV formatted file. 
 ms.custom: "boards-queries, linked-from-support"
@@ -8,10 +8,10 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
-ms.date: 10/21/2021
+ms.date: 04/04/2023
 ---
 
-# Import or update work items in bulk by using CSV files in Azure Boards
+# Import or update work items in bulk with CSV files
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
@@ -177,11 +177,11 @@ Work Item Type,Title,Description
 
 ::: moniker range=">= azure-devops-2020"
 
-## Q & A
+## FAQs
 
-### Can I import new items and update existing items in the same CSV file?
+### Q: Can I import new items and update existing items in the same CSV file?
 
-Absolutely! Leave the ID field empty for any new work items. In the following example, the last entry for an Epic doesn't specify an ID.
+A: Absolutely! Leave the ID field empty for any new work items. In the following example, the last entry for an Epic doesn't specify an ID.
 
 > [!div class="tabbedCodeSnippets"]
 ```CSV
@@ -194,11 +194,15 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 ,"Epic","Track Telementry for data imports",,"To Do","2",
 ```
 
+### Q: How do I add multiple tags?
+
+A: You can add multiple tags separated by a semicolon. For more information, see [Tasks you can and can't do with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+
 <a id="tree-items" /> 
 
-### Can I import a CSV file that has parent-child links?
+### Q: Can I import a CSV file that has parent-child links?
 
-Yes, you can add child work items by indenting title columns. The following example adds three child Issues under the already defined Epic.
+A: Yes, you can add child work items by indenting title columns. The following example adds three child Issues under the already defined Epic.
 
 > [!div class="tabbedCodeSnippets"]
 ```CSV
@@ -214,9 +218,9 @@ Here's a better visual in Excel.
 > [!div class="mx-imgBorder"]  
 > ![Excel view image](media/import-csv/import-add-child-items.png)
 
-### How do I know if my imported file has errors?
+### Q: How do I know if my imported file has errors?
 
-Any problems with the formatting of your CSV file appear in the Results page of the import view. You can't import the work items until the formatting and syntax is correct.
+A: You can test by adding tags with spaces and hyphens, for example, and include it in the export. The import should match the same format. Any problems with the formatting of your CSV file appear in the Results page of the import view. You can't import the work items until the formatting and syntax is correct.
 
 > [!div class="mx-imgBorder"]  
 > ![CSV Error image](media/import-csv/import-error.png)
@@ -224,8 +228,6 @@ Any problems with the formatting of your CSV file appear in the Results page of 
 The work items' results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
 
 ::: moniker-end 
-
-
 
 ## Related articles
 
