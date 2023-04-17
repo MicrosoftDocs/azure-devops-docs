@@ -16,8 +16,6 @@ Azure Artifacts enables developers publishing and consuming packages from Azure 
 
 ## Publish Python packages
 
-To publish a Python package to your feed, follow these steps:
-
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts** and then select your feed from the dropdown menu.
@@ -65,33 +63,39 @@ To publish a Python package to your feed, follow these steps:
 
 ## Consume Python packages
 
-To install a Python package from the command line, follow these steps:
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Update your Python package installer
+1. Select **Artifacts** and then select your feed from the dropdown menu.
+
+1. Select **Connect to feed** and then select **pip** from the left navigation panel.
+
+1. If this is your first time using Azure Artifacts with pip, select **Get the tools** to install the prerequisites.
+
+1. Download and install Python, and then run the following command to update your Python package installer.
 
     ```Command
     python -m pip install --upgrade pip
     ```
 
-1. Ensure you have the latest version of Azure Artifacts keyring
+1. Install the latest Azure Artifacts keyring.
 
     ```Command
     pip install twine keyring artifacts-keyring
     ```
 
-1. [Create a virtual environment](https://docs.python.org/3/library/venv.html) if you don't have one already
+1. [Create a virtual environment](https://docs.python.org/3/library/venv.html) if you don't have one already.
 
-1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) configuration file to your virtual environment
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) configuration file to your virtualenv.
 
     ```Command
     [global]
-    extra-index-url=https://pkgs.dev.azure.com/<organizationName>/_packaging/<feedName>/pypi/simple/
+    extra-index-url=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/pypi/simple/
     ```
 
-1. Run the following command in your project directory to install your package
+1. Run the following command in your project directory to install your package.
 
    ```
-   pip install <package>
+   pip install <PACKAGE_NAME>
    ```
 
 ## Related articles
