@@ -199,7 +199,7 @@ private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken
 		.Build();
 	app.AddInMemoryTokenCache();
 
-	string AdoAppClinetID = "499b84ac-1321-427f-aa17-267ca6975798/.default";
+	string AdoAppClientID = "499b84ac-1321-427f-aa17-267ca6975798/.default";
 	string[] scopes = new string[] { AdoAppClientID };
 
 	var result = await app.AcquireTokenForClient(scopes).ExecuteAsync();
