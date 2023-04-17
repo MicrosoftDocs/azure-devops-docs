@@ -136,7 +136,7 @@ When you select multiple tags, VMs that include all the tags get used in your pi
 
 ```yaml
 trigger: 
-- master
+- main
 
 pool: 
    vmImage: ubuntu-latest

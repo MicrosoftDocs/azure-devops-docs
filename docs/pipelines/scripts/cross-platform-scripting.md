@@ -97,7 +97,7 @@ trigger:
     batch: true
     branches:
         include:
-        - master
+        - main
 steps:
 - bash: |
     echo "Hello world from $AGENT_NAME running on $AGENT_OS"
