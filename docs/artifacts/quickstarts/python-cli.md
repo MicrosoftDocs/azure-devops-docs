@@ -26,30 +26,32 @@ To publish a Python package to your feed, follow these steps:
 
 1. If this is your first time using Azure Artifacts with twine, select **Get the tools** to install the prerequisites.
  
-1. Install the latest version of Azure Artifacts keyring
+1. Download and install Python, and then run the following command to install the latest version of Azure Artifacts keyring.
 
     ```Command
     pip install twine keyring artifacts-keyring
     ```
 
-1. Add a .pypirc configuration file to your home directory
+1. Add a .pypirc configuration file to your home directory.
 
     ```Command
     touch ~/.pypirc
     ```
+    > [!NOTE]
+    > If you already have a .pypirc file with credentials for the public PyPI index, it is recommended to remove the [pypi] section from your file to prevent unintended publication of private packages.
 
-1. Add the following content to your .pypirc file
+1. Paste the following snippet to your .pypirc file:
 
     ```Command
     [distutils]
     Index-servers =
-      <organizationName>
+      <ORGANIZATION_NAME>
     
-    [<organizationName>]
-    Repository = https://pkgs.dev.azure.com/<organizationName>/_packaging/<feedName>/pypi/upload
+    [<ORGANIZATION_NAME>]
+    Repository = https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/PROJECT_NAME/_packaging/<FEED_NAME>/pypi/upload/
     ```
 
-1. Create a source and a wheel distributions
+1. Create a source and wheel distributions.
 
    ```Command
    python setup.py sdist bdist_wheel
@@ -58,7 +60,7 @@ To publish a Python package to your feed, follow these steps:
 1. Run the following command to publish your package
 
    ```
-   twine upload -r <organizationName> dist/*
+   twine upload -r <ORGANIZATION_NAME> dist/*
    ```
 
 ## Consume Python packages
