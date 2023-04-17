@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q2
-ms.date: 06/16/2022
+ms.date: 04/17/2023
 monikerRange: '<= azure-devops'
 zone_pivot_groups: pipelines-version
 ---
@@ -111,27 +111,23 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
       displayName: 'npm build'
     ``` 
 
-1. Add new tasks to your pipeline to copy your npm package, package.json, and to publish your artifact. The [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies files from local path on the agent where your source code files are downloaded and saves files to a local path on the agent where any artifacts are copied to before being pushed to their destination. Those files are saved into a *npm* folder. The pipeline-artifacts[Publish Pipeline Artifact task](../artifacts/pipeline-artifacts.md), downloads the files from the earlier Copy Files tasks and makes them available as pipeline artifacts that will be published with your pipeline build.  
+1. Add new tasks to your pipeline to copy your npm package, package.json, and to publish your artifact. The [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies files from local path on the agent where your source code files are downloaded and saves files to a local path on the agent where any artifacts are copied to before being pushed to their destination. Only the `src` and `public` folders get copies. The [Publish Pipeline Artifact task](../artifacts/pipeline-artifacts.md) downloads the files from the earlier Copy Files tasks and makes them available as pipeline artifacts that will be published with your pipeline build.  
 
     ```yaml
     - task: CopyFiles@2
       inputs:
         sourceFolder: '$(Build.SourcesDirectory)'
-        contents: '*.tgz' 
-        targetFolder: $(Build.ArtifactStagingDirectory)/npm
-      displayName: 'Copy npm package'
+        contents: |
+           src/*
+           public/*
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
+      displayName: 'Copy project files'
     
-    - task: CopyFiles@2
-      inputs:
-        sourceFolder: '$(Build.SourcesDirectory)'
-        contents: 'package.json' 
-        targetFolder: $(Build.ArtifactStagingDirectory)/npm
-      displayName: 'Copy package.json'   
-
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(Build.ArtifactStagingDirectory)/npm'
-        artifactName: npm
+        artifactName: e2e-server
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        publishLocation: 'pipeline'
       displayName: 'Publish npm artifact'
     ```
 
@@ -158,7 +154,7 @@ Save and run your pipeline. After your pipeline runs, verify that the job ran su
 2. After you have the sample code in your own repository, [create your first pipeline](../create-first-pipeline.md) and select the **Empty process** template.
 
 3. Select **Process** under the **Tasks** tab in the pipeline editor and change the properties as follows:
-   * **Agent queue:** `Hosted Ubuntu 1604`
+   * **Agent queue:** `Hosted Ubuntu Latest`
 
 4. Add the following tasks to the pipeline in the specified order:
    * **npm**
