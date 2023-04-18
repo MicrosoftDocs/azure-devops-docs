@@ -116,7 +116,7 @@ else
 }
 ```
 
-The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewallRule.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
