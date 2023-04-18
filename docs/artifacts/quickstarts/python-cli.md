@@ -3,6 +3,7 @@ title: Publish and consume Python packages using the CLI
 description: Publish and consume Python packages from the command-line interface
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
+ms.custom: engagement-fy23
 ms.date: 04/17/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
@@ -43,9 +44,9 @@ Azure Artifacts enables developers publishing and consuming packages from Azure 
     ```Command
     [distutils]
     Index-servers =
-      <ORGANIZATION_NAME>
+      <FEED_NAME>
     
-    [<ORGANIZATION_NAME>]
+    [<FEED_NAME>]
     Repository = https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/PROJECT_NAME/_packaging/<FEED_NAME>/pypi/upload/
     ```
 
@@ -58,7 +59,7 @@ Azure Artifacts enables developers publishing and consuming packages from Azure 
 1. Run the following command to publish your package
 
    ```
-   twine upload -r <ORGANIZATION_NAME> dist/*
+   twine upload -r <FEED_NAME> dist/*
    ```
 
 ## Consume Python packages
@@ -100,6 +101,6 @@ Azure Artifacts enables developers publishing and consuming packages from Azure 
 
 ## Related articles
 
-- [Feeds permissions](../feeds/feed-permissions.md)
+- [Configure permissions](../feeds/feed-permissions.md)
 - [Understand upstream sources](../concepts/upstream-sources.md)
 - [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
