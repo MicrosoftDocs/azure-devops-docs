@@ -18,6 +18,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-220-update-links](includes/pipelines/sprint-220-update-links.md)]
 
+### Reporting
+
+[!INCLUDE [sprint-220-update-links](includes/reporting/sprint-220-update-links.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-220-update](includes/boards/sprint-220-update.md)]
@@ -26,6 +30,8 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-220-update](includes/pipelines/sprint-220-update.md)]
 
+## Reporting
+[!INCLUDE [sprint-220-update](includes/reporting/sprint-220-update.md)]
 
 ## Next steps
 
