@@ -38,6 +38,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="2"><a href="2023/sprint-220-update.md" data-raw-source="[20 April 2023](2023/sprint-220-update.md)"> 20 April 2023</a></td>
+    <td>Sticky "Save" and "Save and Close" button </td><td>Boards</td><td>Future</td></tr>
+    <td>Stage quick actions</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
     <td rowspan="4"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
     <td>Service principal and managed identity support in Azure DevOps </td><td>General</td><td>Future</td></tr>
     <td>REST API support for connecting GitHub repositories (private preview)</td><td>Boards</td><td>Future</td></tr>
