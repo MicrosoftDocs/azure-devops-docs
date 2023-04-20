@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Analytics Views are now generally available
 
-The Analytics Views feature has been in preview for an extended period of time. Today we are happy to announce that this feature is now generally available to all organizations. 
+The Analytics Views feature has been in a preview state for an extended period of time. Today we are happy to announce that this feature is now generally available to all organizations. 
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
 
