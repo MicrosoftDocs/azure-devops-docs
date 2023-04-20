@@ -17,4 +17,4 @@ If you are not familiar with Analytics Views, here is some documentation to get 
 - [Create an Analytics view in Azure DevOps](/azure/devops/report/powerbi/analytics-views-create?view=azure-devops)
 - [Manage Analytics views](/azure/devops/report/powerbi/analytics-views-manage?view=azure-devops)
 - [Create a Power BI report with a default Analytics view](/azure/devops/report/powerbi/create-quick-report?view=azure-devops)
-- [Connect to Analytics with Power BI Data Connector](azure/devops/report/powerbi/data-connector-connect?view=azure-devops)
+- [Connect to Analytics with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect?view=azure-devops)
