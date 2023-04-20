@@ -239,6 +239,11 @@
       "source_path": "docs/boards/work-items/guidance/basic-field-reference.md",
       "redirect_url": "/azure/devops/boards/work-items/guidance/work-item-field",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/get-started/keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
     }
   ]
 }
