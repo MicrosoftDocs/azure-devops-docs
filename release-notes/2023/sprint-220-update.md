@@ -1,12 +1,12 @@
 ---
-title:  To Be Determined 
+title:  New usability features for Boards and Pipelines 
 author: ckanyika
 ms.author: ckanyika
 ms.date: 4/20/2023
-description: TBD
+description: New usability features for Boards and Pipelines
 ---
-# Pipeline TBD 
-
+# New usability features for Boards and Pipelines  
+With this update, we introduce a usability feature to the work item save button in Boards. We've also added actions to making it easier to rerun failed jobs or entire stages on the Pipelines runs overview page.
 
 Check out the release notes for details.
 
