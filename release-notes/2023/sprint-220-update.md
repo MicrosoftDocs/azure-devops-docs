@@ -6,7 +6,7 @@ ms.date: 4/20/2023
 description: New usability features for Boards and Pipelines
 ---
 # New usability features for Boards and Pipelines  
-With this update, we add a new feature to the work item save button in Boards. We've also added actions making it easier to rerun failed jobs or entire stages on the Pipelines runs overview page.
+With this update, we add a new feature to the work item save button in Boards. In Pipelines, we added actions to the Pipelines overview page to make it easier to rerun failed jobs or entire stages. 
 
 Check out the release notes for details.
 
