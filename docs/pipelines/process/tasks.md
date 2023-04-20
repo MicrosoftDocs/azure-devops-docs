@@ -133,7 +133,7 @@ Control options are available as keys on the `task` section.
   condition: expression     # see below
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
-  timeoutInMinutes: number  # how long to wait before timing out the task
+  timeoutInMinutes: string  # how long to wait before timing out the task
 ```
 
 ::: moniker-end
@@ -147,7 +147,7 @@ Control options are available as keys on the `task` section.
   condition: expression     # see below
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
-  timeoutInMinutes: number  # how long to wait before timing out the task
+  timeoutInMinutes: string  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
 
@@ -163,7 +163,7 @@ Control options are available as keys on the `task` section.
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
   retryCountOnTaskFailure: number # Max number of retries; default is zero
-  timeoutInMinutes: number  # how long to wait before timing out the task
+  timeoutInMinutes: string  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
 
