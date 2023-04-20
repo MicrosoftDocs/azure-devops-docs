@@ -36,7 +36,7 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Sign up for free
+          - text: Sign up for Azure Boards
             url: ./get-started/sign-up-invite-teammates.md
           - text: Plan & track work
             url: ./get-started/plan-track-work.md
