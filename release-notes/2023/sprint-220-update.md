@@ -1,12 +1,13 @@
 ---
-title:  New usability features for Boards and Pipelines 
+title:  New usability features for Boards, Pipelines and Reporting  
 author: ckanyika
 ms.author: ckanyika
 ms.date: 4/20/2023
-description: New usability features for Boards and Pipelines
+description: New usability features for Boards, Pipelines and Reporting
 ---
-# New usability features for Boards and Pipelines  
-With this update, we add a new feature to the work item save button in Boards. In Pipelines, we added actions to the Pipelines overview page to make it easier to rerun failed jobs or entire stages. 
+# New usability features for Boards, Pipelines and Reporting  
+With this update, we add a new feature to the work item save button in Boards. In Pipelines, we added actions to the Pipelines overview page to make it easier to rerun failed jobs or entire stages. We've also made, the Analytics views feature in reporting generally available to all organizations. 
+
 
 Check out the release notes for details.
 
@@ -18,6 +19,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-220-update-links](includes/pipelines/sprint-220-update-links.md)]
 
+### Reporting
+
+[!INCLUDE [sprint-220-update-links](includes/reporting/sprint-220-update-links.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-220-update](includes/boards/sprint-220-update.md)]
@@ -26,6 +31,8 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-220-update](includes/pipelines/sprint-220-update.md)]
 
+## Reporting
+[!INCLUDE [sprint-220-update](includes/reporting/sprint-220-update.md)]
 
 ## Next steps
 
