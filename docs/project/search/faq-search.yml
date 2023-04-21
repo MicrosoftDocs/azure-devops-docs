@@ -67,7 +67,7 @@ sections:
     
     - question: How do I search internal NuGet packages published company-wide?
       answer: |
-        1. Go to [Discover in Azure DevOps(https://aka.ms/discover).
+        1. Go to [Discover in Azure DevOps](https://aka.ms/discover).
         2. Enter your query and search.
         3. Choose the **Packages** pivot. 
         You can also navigate from your organization's landing page. 
