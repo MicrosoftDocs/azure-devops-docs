@@ -623,6 +623,9 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
 
+
+#### Example
+
 ```yaml
 - task: Bash@3
     inputs:
@@ -631,12 +634,6 @@ Add a tag for current build. You can expand the tag with a predefined or user-de
         last_scanned="last_scanned-$(currentDate)"
         echo "##vso[build.addbuildtag]$last_scanned"
     displayName: 'Apply last scanned tag'
-```
-
-#### Example
-
-```
-##vso[build.addbuildtag]Tag_UnitTestPassed
 ```
 
 
