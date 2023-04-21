@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 10/13/2022
+ms.date: 04/21/2023
 ms.custom: contperf-fy21q3
 monikerRange: '<= azure-devops'
 ---
@@ -621,7 +621,17 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 #### Usage
 
-Add a tag for current build.
+Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
+
+```yaml
+- task: Bash@3
+    inputs:
+    targetType: 'inline'
+    script: |
+        last_scanned="last_scanned-$(currentDate)"
+        echo "##vso[build.addbuildtag]$last_scanned"
+    displayName: 'Apply last scanned tag'
+```
 
 #### Example
 
