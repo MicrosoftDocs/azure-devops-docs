@@ -8,4 +8,4 @@ ms.topic: include
 
 ## Prerequisites
 
-To configure team settings, you must be [added as a Team Administrator](../add-team-administrator.md) or be a member of the **Project Administrators** group. See [Change project-level permissions](../../security/change-project-level-permissions.md).
+To configure team settings, you must be added to the Team Administrator role or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../add-team-administrator.md) or [Change project-level permissions](../../security/change-project-level-permissions.md).
