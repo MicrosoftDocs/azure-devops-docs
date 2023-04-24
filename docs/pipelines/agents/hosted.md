@@ -373,7 +373,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   
   where `$(xcodeRoot)` = `/Applications/Xcode_13.2.app`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
 
 #### Xcode
 
@@ -381,7 +381,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
 
   This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
 
