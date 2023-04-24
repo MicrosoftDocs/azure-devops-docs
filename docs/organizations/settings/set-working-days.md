@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/20/2023
+ms.date: 04/24/2023
 ---
 
 # Configure working days  
@@ -29,15 +29,17 @@ Learn how to align your team's work hours with your organization's requirements,
 
 ::: moniker range="azure-devops"
 
-1. In **Azure Boards**, select the **Sprints** tab.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Choose **Boards** > **Sprints**.
 
    :::image type="content" source="media/configure-team/azure-boards-sprints-tab-selection.png" alt-text="Screenshot of selection of Azure Boards, and then the Sprints tab, with red boxes.":::
 
-2. Select **Capacity** > Settings :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
+3. Select **Capacity** > **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
-   ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)
+   ![Screenshot showing selected buttons highlighted with red boxes by sequence for Capacity page, Settings, Working days.](media/capacity-planning-open-team-settings-new-nav.png)
 
-3. Select the checkbox next to the appropriate working days, and then select **Save and close**.
+4. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
    Your team's working days are updated.
 
