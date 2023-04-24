@@ -16,7 +16,7 @@ ms.date: 04/24/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-Teams have the flexibility to choose their preferred backlog levels. Feature teams may focus on their product backlog, while management teams may only display feature and epic backlogs (the default portfolio backlogs). You can configure backlog levels through team settings. 
+Each team has the flexibility to choose their preferred backlog levels. Feature teams may focus on their product backlog, while management teams may only display feature and epic backlogs (the default portfolio backlogs). You can configure backlog levels through team settings. 
 
 ::: moniker range=">= azure-devops-2019" 
 If you need more portfolio backlogs, see the following articles based on the process model you use: 
@@ -36,43 +36,44 @@ If you need more portfolio backlogs, see [Add portfolio backlogs](../../referenc
 
 ## Set your team's preferences for backlog levels
 
-This setting impacts the backlog and board views for all team members. You have the option to modify the setting from either the backlog or board view. In this article, we show you from the board view.
+This setting impacts the backlog and board views for all team members. You can modify the setting from either the backlog or board view. In this article, we show you from the board view.
 
 ::: moniker range=">= azure-devops-2019" 
 
-1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Choose **Boards**, and then open your Kanban board.
 
-2. Select **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
+3. Select **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
 
-3. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
+4. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
 	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
 
-4. When you're done with your changes, choose **Save and close**.  
+5. When you're done with your changes, choose **Save and close**.  
 
-5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
+6. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018" 
 
-1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md).
 
 2. Select **Configure team settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
 
-2. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
+3. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
 	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
 
-3. When you're done with your changes, choose **Save**.  
+4. When you're done with your changes, choose **Save**.  
 
-4. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
+5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
 ::: moniker-end
 
