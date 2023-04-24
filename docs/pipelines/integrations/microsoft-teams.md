@@ -181,8 +181,6 @@ If you're using a different email or tenant for Microsoft Teams and Azure DevOps
 
 ## Troubleshoot 
 
-[!INCLUDE [troubleshooting](includes/troubleshoot-authentication.md)]
-
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Pipelines signout` command and then run the `@Azure Pipelines signin` command in the channel where the Azure Pipelines app for Microsoft Teams is installed.
 
 Select the `Sign in` button and you get redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what you chose in the previous step. Accept and complete the sign in process.
