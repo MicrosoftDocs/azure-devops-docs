@@ -34,7 +34,7 @@ In this tutorial, learn how to:
 > * [Open your Kanban board](#open-your-kanban-board)
 > * [Add work items](#add-work-items)
 > * [Update work items](#update-work-items)
-> * [View the backlog](#view-the-backlog)
+> * [View the backlog](#view-as-backlog)
 > * [Find work items](#find-work-items)
 
 ## Prerequisites

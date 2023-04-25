@@ -69,7 +69,7 @@ Once you've defined the inherited process, you can perform these actions:
 - [Change project(s) to use the inherited process](#migrate)        
 
 > [!NOTE]
-> All inherited processes and their child processes are automatically updated with any updates made to their parent system processes. Updates to processes are documented in [Changes made to process templates](../../../boards/work-items/guidance/changes-to-process-templates.md).
+> All inherited processes and their child processes are automatically updated with any updates made to their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
  
 
 <a id="migrate"></a>
