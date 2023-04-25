@@ -23,12 +23,12 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
 
-For more information, see [Stakeholder access quick reference](stakeholder-access.md). To compare Stakeholder versus Basic access, see the [feature matrix](https://azure.microsoft.com/services/devops/compare-features/).
+For more information, see the [Stakeholder access quick reference](stakeholder-access.md). To compare Stakeholder versus Basic access, see the [feature matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
 In this tutorial, learn how to:
 
 > [!div class="checklist"]
-> * Understand Stakeholder access and available features* 
+> * Understand Stakeholder access and available features 
 > * [Sign in to a project](#sign-in-to-a-project)
 > * [Understand work items and types](#understand-work-items-and-types)
 > * [Open your Kanban board](#open-your-kanban-board)
@@ -78,7 +78,7 @@ You can view work items once you connect to a project.
 1. In your project, and select **Boards** > **Boards**, and then select a **team board** from the dropdown menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Open your Kanban board, cloud version.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile-s155.png)  
+	> ![Screenshot of Open your Kanban board, cloud version.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
 	You can also enter a keyword in the search box or select **View Board directory** to see a list of available team boards.
 
@@ -151,6 +151,7 @@ For more information, see [View and add work items from the Work Items page](../
 ::: moniker range=">= azure-devops-2020"
 
 ## Update work items
+The work item forms you see may differ from the following images. The basic functionality is the same, however, changes have been made with different versions of Azure DevOps. 
 
 ### Change status
 
@@ -165,12 +166,8 @@ Drag and drop a work item to move it downstream as you complete work.
 ::: moniker-end
 
 ### Add details
-
-Open your work item by double-clicking the title or highlight it and then select  **Enter**. 
-You can change field values, add a description, add comments, and assign work. But, you can only assign work to a user who is added to the project. 
-
-> [!NOTE]  
-> The work item form you see may differ from those shown in the following images. The basic functionality is the same, however, changes have been made with different versions of Azure DevOps. 
+To open a work item, double-click the title or highlight it, and then select  **Enter**. 
+Here we show how to assign work. You can only assign work to a user who is added to the project.
  
 #### [Agile process](#tab/agile-process) 
 
@@ -179,14 +176,12 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 > [!div class="mx-imgBorder"]
 > ![Screenshot of User Story work item form, add details.](../../boards/get-started/media/plan-track-work/user-story-form-add-details.png)
 
-
 #### [Basic process](#tab/basic-process) 
 
 For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. When you're done, select **Save & Close**. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Issues work item form, add details](../../boards/get-started/media/track-issues/issue-form-add-details.png)
-
 
 #### [Scrum process](#tab/scrum-process) 
 
@@ -208,31 +203,18 @@ For example, here we assign the Requirement to Jamal Hartnett. When you're done,
 
 ***
 
-For more information, see [Field descriptions and usage](../../boards/get-started/plan-track-work.md).
-For information about work item comments, see [Capture comments in the Discussion section](../../boards/get-started/plan-track-work.md#capture-comments-in-the-discussion-section).
+Add more details by changing field values, adding a description or tags, and adding comments. For more information, see the following articles:
 
-### Add tags
+- [Update fields: Descriptions and usage](../../boards/get-started/plan-track-work.md)
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). As a Stakeholder, you can add existing tags to a work item, but you can't add new tags.
+- [Capture comments in the Discussion section](../../boards/get-started/plan-track-work.md#capture-comments-in-the-discussion-section)
 
-As a Stakeholder, you can add existing tags to a work item, but you can't add new tags. Tags are useful for filtering backlogs, boards, and queries. 
+## View as Backlog 
 
-From a work item, choose **Add tag** and enter a keyword of an existing tag. Or, select from the list of previously assigned tags.  
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of work item form, Add one or more tags to a work item.](../../boards/queries/media/add-tags/add-tag-vsts.png)
-
-Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, choose the x on the tag,![Delete a tag assigned to a work item](../../boards/queries/media/add-tags/unassign-a-tag.png).   
+Check the product backlog to see how the team prioritized their work. Backlog items appear in priority order. Work item types may include bugs depending on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md). 
 
 ::: moniker range="azure-devops"
-> [!NOTE]   
-> By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing tags. Stakeholders in private projects can add tags that are already defined, but not add new tags. To grant or restrict permissions to create new tags, set the project-level **Create tag definition** permission. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-::: moniker-end
-
-## View the backlog 
-
-You can check the product backlog to see how the team prioritized their work. Backlog items appear in priority order. Work item types may include bugs depending on the team settings. 
-
-::: moniker range="azure-devops"
-From the Kanban board, choose **View as backlog**.  
+From the Kanban board, choose **View as Backlog**.  
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of link to view Backlog, cloud version.](../../boards/media/switch-to-backlog-cloud.png) 
 ::: moniker-end
@@ -250,7 +232,6 @@ From the Kanban board, choose **Backlog**.
 ::: moniker-end
 
 You should see the list of backlog items listed in priority order. You can add a backlog item, which goes to the bottom of the list. With Stakeholder access, you can't reprioritize work. 
-To view or edit a work item, either double-click the title or highlight it and select **Enter**.
 
 <a id="query">  </a>
 
@@ -262,9 +243,9 @@ Choose **Boards** > **Work Items** > and then select an option from the dropdown
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing selections of Work, Work Items page, and Choose Assigned to Me.](media/stakeholder/work-items-assigned-to-me.png)
 
-You can filter and sort within each option. For more information, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
-
-   For more information, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
+For more information, see the following articles: 
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
    ::: moniker-end    
 
 ::: moniker range="tfs-2018"
