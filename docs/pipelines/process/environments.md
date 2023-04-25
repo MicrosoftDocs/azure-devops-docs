@@ -53,7 +53,7 @@ Use a Pipeline to create and deploy to environments, too. For more information, 
 
 ## Target an environment from a deployment job
 
-A [deployment job](deployment-jobs.md) is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources) as shown in the following YAML snippet.
+A [deployment job](deployment-jobs.md) is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources) as shown in the following YAML snippet. The pipeline will run on the myVM machine because the resource name is specified.
 
 ```YAML
 - stage: deploy
@@ -64,6 +64,8 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
       vmImage: 'Ubuntu-latest'
     # creates an environment if it doesn't exist
     environment: 'smarthotel-dev'
+      resourceName: myVM
+      resourceType: virtualMachine
     strategy:
       runOnce:
         deploy:
