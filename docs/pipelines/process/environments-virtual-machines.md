@@ -74,7 +74,7 @@ The first step in adding a VM resource is to define an environment.
 
 ## Use VM in pipelines
 
-Target VMs in your pipeline by referencing the environment. By default, the pipeline job runs for all of the VMs defined for an environment with a resourceName.
+Target VMs in your pipeline by referencing the environment. By default, the pipeline job runs for all of the VMs defined for an environment with a `resourceName`.
 
 ```yaml
 trigger: 
