@@ -199,7 +199,7 @@ Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp
 
 ## Related articles  
 
-Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
+Periodically, updates are made to the process templates to support new features. For more information, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).  
 
 - [Create a project](../../../organizations/projects/create-project.md)   
 - [Customize a process template](../../../reference/process-templates/customize-process.md)   

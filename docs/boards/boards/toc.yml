@@ -18,6 +18,8 @@
   href: add-run-update-tests.md
 - name: Customize your boards
   items:
+  - name: Configure & customize Azure Boards
+    href: ../configure-customize.md
   - name: Kanban board controls
     href: kanban-board-controls.md
     displayname: live updates, view options, Configure team settings, filter

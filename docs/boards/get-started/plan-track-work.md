@@ -97,7 +97,7 @@ In each work item form, describe work, assign contributors, track status, and co
 
 ::: moniker-end
 
-For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md)
+For more information, see [Default permissions and access for Azure Boards](permissions-access-boards.md).
 
 ::: moniker range="tfs-2018"
 > [!NOTE]   
