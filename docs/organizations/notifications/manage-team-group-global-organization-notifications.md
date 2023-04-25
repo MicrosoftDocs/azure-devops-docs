@@ -30,7 +30,7 @@ To manage notifications, you must be an administrator for the level you want to 
 If you're not an administrator, get added as one. For more information, see the following articles:
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 - [Change permissions at the project-level](../../organizations/security/change-project-level-permissions.md)
-- [Change permissions at the organization or collection-level](../../organizations/security/change-organization-collection-level-permissions.md). 
+- [Change permissions at the organization or collection-level](../../organizations/security/change-organization-collection-level-permissions.md)
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
