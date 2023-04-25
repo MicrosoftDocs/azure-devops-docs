@@ -69,7 +69,7 @@ Once you've defined the inherited process, you can perform these actions:
 - [Change project(s) to use the inherited process](#migrate)        
 
 > [!NOTE]
-> All inherited processes and their child processes are automatically updated with any updates made to their parent system processes. Updates to processes are documented in [Changes made to process templates](../../../boards/work-items/guidance/changes-to-process-templates.md).
+> All inherited processes and their child processes are automatically updated with any updates made to their parent system processes. Updates to processes are documented in [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
  
 
 <a id="migrate"></a>
@@ -92,7 +92,7 @@ For the second method, we have provided detailed steps for three common scenario
 >
 > Also, if you change a project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
 
-1. Choose the process that contains the project you want to change. For example, say you want to change a project from from Agile to Scrum, then choose the **Agile** process.
+1. Choose the process that contains the project you want to change. For example, say you want to change a project from Agile to Scrum, then choose the **Agile** process.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Choose the Agile process.](media/agile-to-scrum/choose-agile.png)

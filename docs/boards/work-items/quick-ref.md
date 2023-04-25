@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 02/02/2023
 ---
 
-# Key concepts and work item tasks in Azure Boards and Azure DevOps
+# Key concepts and work item tasks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

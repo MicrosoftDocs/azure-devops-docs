@@ -6,7 +6,7 @@
 - name: Best practices for Agile project management
   displayName: agile, kanban, scrum, rollup, filtering, waterfall, deliverables, cadence, sprint cadence, work types, CMMI, product plan, product backlog
   href: best-practices-agile-project-management.md
-- name: Quick reference
+- name: Quick reference - concepts and tasks
   displayName: agile, charts, interitance, work item, scrum, state categories, bulk modify, WIT
   href: ./work-items/quick-ref.md
 - name: Get started
