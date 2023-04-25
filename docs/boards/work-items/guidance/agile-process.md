@@ -90,7 +90,7 @@ As updates are made to the Agile process template, the version number is updated
 > | TFS 2018 | Agile | 16 |
 
 
-For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
+For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 <a id="predefined-queries" />
 

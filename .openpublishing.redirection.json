@@ -244,6 +244,11 @@
       "source_path": "docs/boards/work-items/get-started/keyboard-shortcuts.md",
       "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/changes-to-process-templates.md",
+      "redirect_url": "/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#removing-assigned-to-rule-on-bug-work-item-type",
+      "redirect_document_id": false
     }
   ]
 }
