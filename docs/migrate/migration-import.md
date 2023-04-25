@@ -299,7 +299,7 @@ Step 1: [Take the collection offline and detach it](#step-1-detach-your-collecti
 > DACPAC imports are not currently supported for SQL Server 2022. Imports from SQL Server 2022 databases must use the SQL Azure virtual machine (VM) method. If you are using SQL Server 2022, skip steps 2 to 5. Then follow the instructions provided in [Import large collections](migration-import-large-collections.md) and continue to section [determine the import type](#determine-the-import-type).
 
 > [!NOTE] 
-> If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
+> The collection size limit for the DACPAC method is 150 GB. If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
 
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
