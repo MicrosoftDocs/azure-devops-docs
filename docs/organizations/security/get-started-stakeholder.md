@@ -259,10 +259,10 @@ To view or edit a work item, either double-click the title or highlight it and s
 ::: moniker range=">= azure-devops-2019"
 Choose **Boards** > **Work Items** > and then select an option from the dropdown menu. Here we chose **Assigned to me**. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Screenshot showing selections of Work, Work Items page, and Choose Assigned to Me.](media/stakeholder/work-items-assigned-to-me.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing selections of Work, Work Items page, and Choose Assigned to Me.](media/stakeholder/work-items-assigned-to-me.png)
 
-	You can filter and sort within each option. For more information, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
+You can filter and sort within each option. For more information, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
    For more information, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
    ::: moniker-end    
