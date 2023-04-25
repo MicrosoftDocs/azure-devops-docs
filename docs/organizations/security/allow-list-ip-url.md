@@ -211,15 +211,21 @@ https://aadcdn.msauth.net
 https://aadcdn.msftauth.net
 https://amcdn.msftauth.net
 https://azurecomcdn.azureedge.net
+```
 
 The following endpoints are used to authenticate Azure DevOps organizations using a Microsoft Account (MSA). 
 These are only needed for Azure DevOps organizations backed by Microsoft Accounts (MSA). 
 Azure DevOps organizations backed an Azure Active Directory tenant does not need the following URLs.
+
+```
 https://live.com 
 https://login.live.com 
+```
 
 The following URL is required if you're migrating from Azure DevOps server to the cloud service using our data migration tool.
+```
 https://dataimport.dev.azure.com
+```
 
 > [!NOTE]
 > Azure DevOps uses Content Delivery Networks (CDNs) to serve static content. Users in **China** should also add the following domain URLs to an allowlist:
