@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 10/14/2022
+ms.date: 04/26/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -175,6 +175,9 @@ Also, data we store on your behalf in Azure DevOps gets encrypted as follows:
 * Data stored in Azure SQL databases gets encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption). TDE protects against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
 * Azure Blob Storage connections get encrypted to protect your data in transit. To protect data at rest stored in Azure Blob Storage, Azure DevOps uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
+
+> [!NOTE]
+> The primary reason for Azure DevOps not achieving Federal Information Processing Standards (FIPS) 140-2 compliance is the use of MD5 encryption algorithms to calculate checksum diffs for Team Foundation Version Control (TFVC) code repositories. Azure DevOps does not currently use MD5 to encrypt customer data.
 
 The Azure infrastructure helps the Azure DevOps team to log and monitor key aspects of the service. This helps ensure that activities within the service are legitimate, and detects breaches or attempted breaches. In addition, all deployment and administrator activities are securely logged, as is operator access to production storage. Real-time alerts are raised because the log information is automatically analyzed to uncover potentially malicious or unauthorized behavior.
 
