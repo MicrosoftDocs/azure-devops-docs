@@ -12,7 +12,7 @@ The pipelines team is upgrading the agent software from version 2.x (using .NET 
 
 ## Upgrade to 3.x agent on supported operating systems
 
-If you're running your self-hosted agents on newer operating systems [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic when the 3.x agent is released to general availability. To try out the preview version of the 3.x agent, see [Install agent version 3.x preview](#install-agent-version-3x-preview).
+If you're running your self-hosted agents on newer operating systems [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic.
 
 The following oeprating systems are supported by the 3.x agent.
 
@@ -66,13 +66,23 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 
 You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools are able to upgrade from 2.x to 3.x.
 
-## Install agent version 3.x preview
+Starting with agent version 2.218 (or [2.214 on RHEL 6](https://aka.ms/azdo-pipeline-agent-rhel6)), pipelines running on one of the unsupported operating systems listed here will fail with with following error message: `This operating system will stop receiving updates of the Pipelines Agent in the future. To be able to continue to run pipelines please upgrade the operating system or set an environment variable or agent knob "AGENT_ACKNOWLEDGE_NO_UPDATES" to "true". See https://aka.ms/azdo-pipeline-agent-v2-eos for more information.`
 
-The version 3.x agent software is currently in the preview phase. You can install this software on [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md). [Let us know your feedback](https://github.com/microsoft/azure-pipelines-agent/issues).
+To resolve this error you can:
 
-A preview of the new version 3.x agent software is available from the [Azure Pipelines releases page on GitHub](https://github.com/microsoft/azure-pipelines-agent/releases), in the pre-release section.
+1. Upgrade or move your agent machines to one of the supported operating systems listed previously in this article. This is the preferred solution and allows you to get future agent updates,
+1. Set an `AGENT_ACKNOWLEDGE_NO_UPDATES` variable on the agent, either by setting an environment variable or a pipeline variable.
+  * You can set `AGENT_ACKNOWLEDGE_NO_UPDATES` by configuring an an environment variable on the agent, for example in **/etc/environment** or **etc/profile.d**: `AGENT_ACKNOWLEDGE_NO_UPDATES=true`.
+  * You can set a pipeline variable.
 
-To use the new version 3 agent, install the latest .NET 6 agent from the pre-releases section of the [Azure Pipelines releases page on GitHub](https://github.com/microsoft/azure-pipelines-agent/releases) onto your agent machine, and register it with the desired [agent pool](pools-queues.md).
+    ```yml
+    jobs:
+    - job: 'agentWithVariables'
+      displayName: 'Agent with variables'
+    
+      variables:
+        AGENT_ACKNOWLEDGE_NO_UPDATES: 'true' # Required to not fail job on operating system that is not supported by .NET 6
+    ```
 
 ## FAQ
 
@@ -110,7 +120,8 @@ No. The new agent is only applicable for Azure DevOps Service customers at this 
 
 ### What is the timeline for agent version 3 deployment?
 
-Agent version 3 is being rolled out gradually. Agent version 2 will be retired at the end of Q1 2023. See [Upgrade of .NET agent for Azure Pipelines](https://devblogs.microsoft.com/devops/upgrade-of-net-agent-for-azure-pipelines/).
+Agent version 3 was released March 2023.
 
 ### What will happen when a task requires an agent to be updated to agent version 3?
+
 Normally, when a task requires a newer version of the agent, it will automatically update itself. For now, while agent version 2 continues to be updated, we have disabled auto update from agent version 2 to agent version 3. Once we enable it, for Operating Systems that are not compatible with agent version 3, agent version 2.217 and newer will not attempt to update itself to the v3 agent. Instead, a warning will be shown informing users they need to upgrade the Operating System first: `The operating system the agent is running on is <OS>, which will not be supported by the .NET 6 based v3 agent. Please upgrade the operating system of this host to ensure compatibility with the v3 agent. See https://aka.ms/azdo-pipeline-agent-version`
