@@ -6,13 +6,48 @@ ms.topic: conceptual
 ms.date: 02/09/2023
 ---
 
-# Agent software version 3 preview
+# Agent software version 3
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
 ## Upgrade to 3.x agent on supported operating systems
 
 If you're running your self-hosted agents on newer operating systems [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic when the 3.x agent is released to general availability. To try out the preview version of the 3.x agent, see [Install agent version 3.x preview](#install-agent-version-3x-preview).
+
+The following oeprating systems are supported by the 3.x agent.
+
+* **Linux**
+  * x64
+    * CentOS 7, 8
+    * Debian 10+
+    * Fedora 36+
+    * openSUSE 15+
+    * Red Hat Enterprise Linux 7+
+      * No longer requires separate package
+    * SUSE Enterprise Linux 12 SP2 or later
+    * Ubuntu 22.04, 20.04, 18.04, 16.04
+    * CBL-Mariner 2.0
+  * ARM64
+    * Debian 10+
+    * Ubuntu 22.04, 20.04, 18.04
+* **macOS**
+  * x64
+    * macOS 10.15 "Catalina"
+    * macOS 11.0 "Big Sur"
+    * macOS 12.0 "Monterey"
+    * macOS 13.0 "Ventura"
+  * ARM64
+    * macOS 11.0 "Big Sur"
+    * macOS 12.0 "Monterey"
+    * macOS 13.0 "Ventura"
+    * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
+* **Windows**
+  * Client OS
+    * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
+    * Windows 8.1
+    * Windows 10
+  * Server OS
+    * Windows Server 12 or higher
 
 ## Upgrade to 3.x agent on unsupported operating systems
 
