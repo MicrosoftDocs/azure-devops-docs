@@ -34,6 +34,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2019-Readme.md) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
+| macOS 13 Ventura | *macos-13* | `macos-13` | 
 | macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
 | macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
 | macOS X Catalina 10.15 (deprecated starting 5/31/2022 and unsupported by 4/24/2023) | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
