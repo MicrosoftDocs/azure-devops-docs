@@ -18,11 +18,11 @@ monikerRange: '<= azure-devops'
 
 This article describes the licensing model for Azure Pipelines in Team Foundation Server 2018 (TFS 2018) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
-A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
+A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need more parallel jobs.
 
-One free parallel job is included with every collection in a Team Foundation Server. Every Visual Studio Enterprise subscriber in a Team Foundation Server contributes one additional parallel job. 
+One free parallel job is included with every collection in a Team Foundation Server. Every Visual Studio Enterprise subscriber in a Team Foundation Server contributes one more parallel job. 
 
-You can buy additional private jobs from the Visual Studio Marketplace. There's a maximum limit of 25 parallel jobs for Microsoft-hosted agents.
+You can buy more private jobs from the Visual Studio Marketplace. There's a maximum limit of 25 parallel jobs for Microsoft-hosted agents.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ## How many parallel jobs do I need?
 
-As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed. There are several methods you can use to check your parallel job limits and job history.
+As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed. There are several methods you can use to check your parallel job limits and job history.
 
 ### View job history using the pool consumption report
 
@@ -215,7 +215,7 @@ When you run a [server job](../process/phases.md#server-jobs) or deploy to a [de
 ![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
 1. FabrikamFiber CI Build 102 (main branch) starts first.
-2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
+2. Deployment of FabrikamFiber Release 11 gets triggered by completion of FabrikamFiber CI Build 102.
 3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
 4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals doesn't consume a parallel job.
 5. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
