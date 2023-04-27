@@ -6,7 +6,7 @@ description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 02/25/2022
+ms.date: 04/27/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -170,7 +170,7 @@ Buy more parallel jobs within your organization settings:
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Parallel jobs** under Pipelines, and then select either **Purchase parallel jobs** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
+3. Select **Parallel jobs** under Pipelines, and then select either **Change** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
 
    :::image type="content" source="../../organizations/billing/media/shared/manage-parallel-jobs.png" alt-text="manage parallel jobs image":::
 
