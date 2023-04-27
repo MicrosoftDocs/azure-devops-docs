@@ -52,10 +52,10 @@ All work items you import are created in a new state. This rule means that you c
    Issue,Remove old test code,2
    ```
 
-3. From the web portal for your project, open **Boards>Queries** and choose the **Import Work Items** option.
+3. From the web portal for your project, open **Boards > Queries** and choose the **Import Work Items** option.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Boards>Queries, Import Work Items](media/import-csv/open-queries-import.png)
+	> ![Boards - Queries, Import Work Items](media/import-csv/open-queries-import.png)
 
 4. Select your CSV file and then choose **Import**.
 
@@ -226,6 +226,10 @@ A: You can test by adding tags with spaces and hyphens, for example, and include
 > ![CSV Error image](media/import-csv/import-error.png)
 
 The work items' results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
+
+### Q: Why am I getting errors for some identity values?
+
+A: When using the Web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the org. If not, it searches on the identity in AAD. If the user is in AAD but not in the org, it will add that user to the valid identities. When importing via CSV, for performance reasons, the identity picker does not go through these extra steps, it only checks to see if there is a matching UPN already in the org. If it does not find a matching UPN, it will report that the identity is unknown.
 
 ::: moniker-end 
 
