@@ -130,7 +130,7 @@ You can use the **Pool consumption report**, available on the **Analytics** tab 
 
 Figure out how many parallel jobs you need by first seeing how many parallel jobs your organization currently uses:
 
-1. Browse to **Organization settings** > **Pipelines** > **Retention and parallel jobs** > **Parallel jobs**.
+1. Browse to **Organization settings** > **Pipelines** > **Parallel jobs**.
 
    :::image type="content" source="media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png" alt-text="Location of parallel jobs in organization settings.":::
 
