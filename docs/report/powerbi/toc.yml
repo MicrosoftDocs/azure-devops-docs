@@ -49,7 +49,7 @@ items:
   - name: Create a report using an OData query
     href: create-quick-report-odataq.md
     displayname: Expand
-  - name: Connect using Analytics Views
+  - name: Connect using Analytics views
     href: data-connector-connect.md
   - name: Connect using OData queries
     href: odataquery-connect.md
