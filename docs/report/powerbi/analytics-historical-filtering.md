@@ -80,7 +80,7 @@ Filters are applied to each revision of a work item. For example, let's say we h
 |5|Jan-20|1001|A bug|Resolved|/Admirals|Customer|
 |6 (Current)|Jan-28|1001|A bug|Closed|/Admirals|Customer|
 
-The latest revision (#6) is the Current revision of the work item. In Analytics Views, if you selected "Current only" in the History tab, you would get one row of data for this work item, the current row.
+The latest revision (#6) is the Current revision of the work item. In Analytics views, if you selected "Current only" in the History tab, you would get one row of data for this work item, the current row.
 
 When reporting on history, we could potentially be pulling in revisions 1 through 6 for reporting. 
 
