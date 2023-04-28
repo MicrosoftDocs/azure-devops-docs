@@ -9,7 +9,7 @@ ms.topic: include
 
 The **Analytics Views** feature has been in a preview state for an extended period of time. Today we are happy to announce that this feature is now generally available to all organizations. 
 
-In the navigation, we move **Analytics** views from the **Overview** tab to the **Boards** tab.
+In the navigation, **Analytics views** moved from the **Overview** tab to the **Boards** tab.
 
 > ![Analytics view in boards navigation.](../../media/220-reporting-01.png)
 
