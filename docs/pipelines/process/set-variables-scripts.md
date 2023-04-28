@@ -20,6 +20,8 @@ You'll use the `task.setvariable` logging command to set variables in [PowerShel
 > [!NOTE] 
 > Deployment jobs use a different syntax for output variables. To learn more about support for output variables in deployment jobs, see [Deployment jobs](./deployment-jobs.md#support-for-output-variables).
 
+To use a variable with a condition in a pipeline, see [Specify conditions](conditions.md). 
+
 ## About `task.setvariable`
 
 When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same job by default. If you add the parameter `isoutput`, the syntax to call your variable changes. See [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
@@ -68,7 +70,7 @@ The `task.setvariable` command includes properties for setting a variable as sec
 
 To use the variable in the next stage, set the `isoutput` property to `true`. To reference a variable with the `isoutput` set to true, you'll include the task name. For example, `$(TaskName.myVar)`. 
 
-When you set a variable as read only, it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances securing by making that variable immutable. 
+When you set a variable as read only, it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances security by making that variable immutable. 
 
 
 ## Set a variable as secret
@@ -235,8 +237,8 @@ First, set the output variable `myStageVal`.
 
 ```yaml
 steps:
-    - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-      name: MyOutputVar
+  - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+    name: MyOutputVar
 ```
 
 Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
@@ -264,12 +266,30 @@ stages:
 First, set the output variable `myStageVal`.
 
 ```yaml
-    steps:
-     - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-       name: MyOutputVar
+steps:
+  - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+    name: MyOutputVar
 ```
 
 Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+    - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+      name: MyOutputVar
+- stage: B
+  dependsOn: A
+  jobs:
+  - job: B1
+    variables:
+      myStageAVar: $[stageDependencies.A.A1.outputs['MyOutputVar.myStageVal']]
+    steps:
+    - powershell: Write-Host "$(myStageAVar)"
+```
 
 ---
 
@@ -277,14 +297,14 @@ In case your value contains newlines, you can escape them and the agent will aut
 
 ```yaml
 steps:
-    - bash: |
-        escape_data() {
-          local data=$1
-          data="${data//'%'/'%AZP25'}"
-          data="${data//$'\n'/'%0A'}"
-          data="${data//$'\r'/'%0D'}"
-          echo "$data"
-        }
-        echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
-      name: MyOutputVar
+- bash: |
+    escape_data() {
+      local data=$1
+      data="${data//'%'/'%AZP25'}"
+      data="${data//$'\n'/'%0A'}"
+      data="${data//$'\r'/'%0D'}"
+      echo "$data"
+    }
+    echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
+  name: MyOutputVar
 ```

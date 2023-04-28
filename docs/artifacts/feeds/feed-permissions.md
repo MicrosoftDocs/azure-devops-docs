@@ -22,7 +22,7 @@ Feed owners can specify who can create and administer Artifacts feeds. To access
 :::image type="content" source="media/azure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings":::
 
 > [!NOTE]
-> The Azure Artifacts settings icon will not be visible if you don't have the right permissions.
+> The Azure Artifacts settings icon is only visible to **Project Collection Administrators** or those who have been granted permission to administer feeds in the Azure Artifacts settings panel.
 
 By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
 
@@ -159,6 +159,8 @@ You can make your packages available publicly to anonymous users with limited ac
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md).
 
 - [Promote packages to a view](./views.md).
+
+- [Project-scoped feeds](project-scoped-feeds.md).
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md).
 

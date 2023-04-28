@@ -1,14 +1,15 @@
 ---
 title: Default work tracking permissions & access 
-titleSuffix: Azure Boards & TFS 
-description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
+titleSuffix: Azure Boards 
+description: Default permissions and access levels for tracking work in Azure Boards 
+ms.custom: boards-permissions, linked-from-support, engagement-fy23
 ms.subservice: azure-devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 02/02/2023
 --- 
 
 # Permissions and access for work tracking
@@ -351,9 +352,9 @@ Stakeholder access supports business owners and analysts and other team members 
 
 For a comparison chart of Stakeholder versus basic access, see the [Feature Matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
-For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
+For information about each access level, see [About access levels](access-levels.md). To assign access levels, see: 
 - **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
-- **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)  
+- **Azure DevOps Server**: [Change access levels](change-access-levels.md)  
 
 <a id="grant-add-permissions"></a>  
 
@@ -369,9 +370,9 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2022"
 
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
+If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end  
 

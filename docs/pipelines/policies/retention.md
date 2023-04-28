@@ -193,7 +193,7 @@ A retention lease can be added on a pipeline run for a specific period. For exam
 
 ### Manually set retention lease on pipeline runs
 
-You can manually set a pipeline run to be retained using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
+You can manually set a pipeline run to be retained using the [More actions menu](../create-first-pipeline.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) page.
 
 ![manually retain a run](media/manually-retain-a-run.png)
 
@@ -203,10 +203,10 @@ You can manually set a pipeline run to be retained using the [More actions menu]
 
 ## Delete a run
 
-You can delete runs using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
+You can delete runs using the [More actions menu](../create-first-pipeline.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) page.
 
 > [!NOTE]
-> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu).
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../create-first-pipeline.md#pipeline-run-more-actions-menu).
 
   > [!div class="mx-imgBorder"]
   > ![delete a run](media/delete-a-run.png)
@@ -242,7 +242,7 @@ If you are using an on-premises Team Foundation Server or Azure DevOps Server, y
 
 If you are using Azure DevOps Services, you can view but not change these settings for your project.
 
-Global release retention policy settings can be managed from the **Release retention** settings of your project:
+Global release retention policy settings can be reviewed from the **Release retention** settings of your project:
 
 * Azure DevOps Services: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
@@ -489,7 +489,7 @@ Minimum releases to keep are defined at stage level. It denotes that Azure DevOp
 
 ### How is retention period decided when release is deployed to multiple stages having different retention period?
 
-Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. Minimum releases to keep is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
+Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. **Minimum releases to keep** is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
 
 ### I deleted a stage for which I have some old releases. What retention will be considered for this case?
 

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
 ms.subservice: azure-devops-security
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  

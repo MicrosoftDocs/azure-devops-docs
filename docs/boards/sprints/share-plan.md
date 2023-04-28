@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to share sprint plan working with Scrum methods.
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2021

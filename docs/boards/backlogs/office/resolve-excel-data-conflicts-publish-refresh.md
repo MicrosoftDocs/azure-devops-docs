@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to resolve data conflicts when publishing a work item from Excel to Azure Boards.
 ms.service: azure-devops-boards
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---

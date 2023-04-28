@@ -5,8 +5,8 @@ description: At-a-glance view of default permissions assigned to built-in securi
 ms.topic: reference
 ms.custom: freshness-review 
 ms.subservice: azure-devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ---

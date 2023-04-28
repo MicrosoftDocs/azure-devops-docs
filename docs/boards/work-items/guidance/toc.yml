@@ -86,6 +86,3 @@
       - name: Track bugs
         displayName: bugs, triage, unit tests
         href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs
-- name: Changes made to process templates
-  displayName: Agile, CMMI, Scrum, Basic, rules, work item types
-  href: changes-to-process-templates.md

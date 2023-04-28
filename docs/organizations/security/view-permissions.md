@@ -5,8 +5,8 @@ description: How to find what permissions you or a team member have, including p
 ms.assetid:  
 ms.subservice: azure-devops-security
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 --- 

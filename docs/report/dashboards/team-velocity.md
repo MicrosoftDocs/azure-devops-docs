@@ -6,8 +6,8 @@ ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops' 
 ms.date: 06/03/2022
 ---

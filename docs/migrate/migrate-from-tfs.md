@@ -5,8 +5,8 @@ description: Learn about migrating from Azure DevOps Server to Azure DevOps Serv
 ms.topic: conceptual
 ms.subservice: azure-devops-migrate
 ms.assetid: 3D20B6AC-E8A8-4A6D-B9D8-68ED2F5E0E8D
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 06/22/2017
 monikerRange: '<= azure-devops'
 ---

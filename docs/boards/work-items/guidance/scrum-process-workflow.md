@@ -6,8 +6,8 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/04/2023
 ---

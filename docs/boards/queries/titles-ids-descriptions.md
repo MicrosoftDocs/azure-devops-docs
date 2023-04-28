@@ -5,8 +5,8 @@ description: Learn about work queries based on titles, IDs, and rich-text fields
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/06/2022

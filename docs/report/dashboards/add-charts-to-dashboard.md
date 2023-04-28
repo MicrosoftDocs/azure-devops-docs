@@ -2,13 +2,13 @@
 title: Add built-in charts to a team dashboard
 titleSuffix: Azure DevOps
 description: Learn how to add system-generated charts or query-based charts to a team dashboard in Azure DevOps.
-ms.custom: dashboards
+ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 02/02/2022
 ---
 
 # Add charts to a dashboard
@@ -71,7 +71,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 4. From the charts Actions menu, select the team dashboard.  
 
-	![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)  
+	![Screenshot of Query Chart context menu, add to a dashboard.](media/pin-chart-to-a-dashboard.png)  
 
 	You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the **Add to dashboard** option.  
 
@@ -85,14 +85,14 @@ You can add each of the in-context **Analytics** reports to a dashboard.
 1. Open the report, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon, and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart.png)  
+	> ![Screenshot of Analytics in-context report, Copy to dashboard.](media/add-charts/add-analytics-chart.png)  
 
 	To open a report, see [Cumulate Flow Diagram](cumulative-flow.md#view-the-cfd-in-context-report), [Velocity](team-velocity.md#view-the-velocity-in-context-report), or [Sprint burndown](configure-sprint-burndown.md#view-context-report).
 
 1. Select the dashboard and select **OK**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select the dashboard and select OK.](media/add-charts/select-a-dashboard-dialogue.png)  
+	> ![Select the dashboard dialog.](media/add-charts/select-a-dashboard-dialogue.png)  
 
 1. (Optional) Open the dashboard and select :::image type="icon" source="media/icons/actions-icon.png" border="false"::: **More actions** for the widget to configure the size or change other chart properties. 
 
@@ -122,15 +122,15 @@ Each time you run a build, it logs information about the build, including:
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Pipelines>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md) and then open **Pipelines>Builds** to add a build history chart to a team dashboard.  
 
-	![Add a build summary chart to a dashboard](media/add-chart-build-summary.png)  
+	![Screenshot of Add a build summary chart to a dashboard.](media/add-chart-build-summary.png)  
 
 	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The **Add to dashboard** menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
-	![Build summary chart.](media/add-a-dashboard-build-summary.png)  
+	![Screenshot of Build summary chart.](media/add-a-dashboard-build-summary.png)  
 
 	Hover over a bar to view build information and run time. Select a bar to go to the build summary page.   
 
@@ -149,11 +149,11 @@ Each time a release is deployed, it logs information about the release to each o
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Add a Release pipeline chart to a dashboard, new nav](media/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
+	> ![Screenshot of Add a Release pipeline chart to a dashboard.](media/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release pipeline tile](media/add-cd-release-definition-tile.png)  
+	![Screenshot of Release pipeline tile.](media/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -161,15 +161,15 @@ Each time a release is deployed, it logs information about the release to each o
 ::: moniker range="tfs-2018"  
 
 > [!NOTE]  
-> You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md). Requires TFS 2017.1 or later versions.   
+> You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md).    
 
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
 
-    ![Add a Release pipeline chart to a dashboard](media/add-cd-release-definition.png)  
+    ![Screenshot of Add a Release pipeline chart to a dashboard, TFS 2018.](media/add-cd-release-definition.png)  
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release pipeline tile](media/add-cd-release-definition-tile.png)  
+	![Screenshot of Release pipeline tile, TFS 2018.](media/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -187,7 +187,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
-	![Select the dashboard to add the test chart to.](media/add-a-chart-test-plan.png)  
+	![Screenshot of Select the dashboard to add the test chart to.](media/add-a-chart-test-plan.png)  
 ::: moniker-end
 
 
@@ -208,11 +208,11 @@ You can add trends to the dashboard of the failures and duration of those [tests
 
 1. Select the bar chart for either Test failures or Test duration.    
 
-	![Add a test plan chart to a dashboard](media/add-chart-test-quality.png)  
+	![Screenshot of Add a test plan chart to a dashboard.](media/add-chart-test-quality.png)  
 
-3. Open the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions menu and select the dashboard to add the chart to.  
+3. Open the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: **Actions** menu and select the dashboard to add the chart to.  
 
-	![Open Actions menu and select dashboard](media/add-chart-test-failures.png)  
+	![Screenshot of Open Actions menu and select dashboard.](media/add-chart-test-failures.png)  
 
 	Learn more about [reviewing automated test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md).  
 
@@ -224,7 +224,7 @@ Open the Markdown file defined in your repository and make sure you are in your 
 
 Select **Add to dashboard**, and then select the team dashboard to add the Markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
 
-<img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" />
+<img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Screenshot of Web portal, Code, README file, Add Markdown page to a dashboard." />
 
 
  

@@ -5,8 +5,8 @@ description: Learn how to configure a Burndown or Burnup widget to create charts
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: tutorial
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'  
 ms.date: 07/26/2022
 ---
@@ -21,8 +21,9 @@ The Burndown and Burnup widgets provide the flexibility to create charts for:
 - Within specified time periods.
 
 Burndown charts focus on remaining work within a specific time period, while burnup charts focus on completed work. 
-
 Both chart types help answer the question: *Are we on track to complete this set of work by the end date?*
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Use this article to learn how to:
 
@@ -159,7 +160,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	![Screenshot of Configuration dialog, Select multiple field criteria.](media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
-	>   Analytics-based charts are built based on the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
+	>   Analytics-based charts are built based on the `WorkItemsSnapshot` EntitySet. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
  
 	::: moniker range=">= azure-devops-2022"
 	You can even filter on a null value for the **Field Criteria**. This behavior is consistent with a query using the same field criteria. Here we select to filter on work items whose **Activity** value isn't defined. 
@@ -178,7 +179,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	You can select from standard or custom fields of integer or decimal data type, such as **Story Points**, **Effort**, or  **Remaining Work**.  
 
 	> [!NOTE]  
-	> Burndown works best when aggregating size fields like Story PPoints. If you choose to Burndown on fields that change during the sprint, like Remaining Work for Tasks, the calculation of "Items not Estimated" will grow as items are closed. 
+	> Burndown works best when aggregating size fields like Story Points. If you choose to Burndown on fields that change during the sprint, like Remaining Work for Tasks, the calculation of "Items not Estimated" will grow as items are closed. 
  
 
 ## Choose the time period and plotting interval  

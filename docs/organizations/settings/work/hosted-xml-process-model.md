@@ -5,8 +5,8 @@ description: How to customize work tracking features using the Hosted XML proces
 ms.service: azure-devops-boards
 ms.custom: engagement-fy23
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 01/17/2023
 ---
@@ -66,7 +66,7 @@ You can perform the following tasks with the Hosted XML process model.
    - [Add a custom pick list](../../../reference/add-modify-field.md#picklist)
    - [Predefined field](../../../reference/add-modify-field.md#picklist)
    - [Resolution State or Failure Type](../../../reference/customize-work.md)
-   - [Define global lists](../../../reference/xml/define-global-lists.md)    
+   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)    
    :::column-end:::
 :::row-end:::
 

@@ -6,8 +6,8 @@ ms.custom: work-items
 ms.service: azure-devops-boards
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -591,8 +591,7 @@ If you change the workflow for the test plan and test suite, you might need to u
 
 You can customize a process before or after you create a project that uses the process. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).    
  
-- [Upload/download process templates](manage-process-templates.md)  
-- [Changes made to process templates](changes-to-process-templates.md)  
+- [Upload/download process templates](manage-process-templates.md)   
 - [Configure features after an Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
 
 If you have more questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).

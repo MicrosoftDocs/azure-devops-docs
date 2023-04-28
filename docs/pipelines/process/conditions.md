@@ -1,10 +1,10 @@
 ---
 title: Conditions
 ms.custom: seodec18
-description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
+description: Learn about how you can write custom conditions in Azure Pipelines.
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 11/28/2022
+ms.date: 02/17/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -58,7 +58,7 @@ stages:
       - script: echo Hello Stage A!
 
 - stage: B
-  condition: and(succeeded(), eq(variables.isMain, 'true'))
+  condition: and(succeeded(), eq(variables.isMain, true))
   jobs:
   - job: B1
     steps:
@@ -117,14 +117,14 @@ stages:
     steps:
       - script: echo 1; sleep 30
 - stage: stage2
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
   jobs:
   - job: B
     steps:
       - script: echo 2
 ```
 
-If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` will still run, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
 In this pipeline, `stage1` depends on `stage2`. Job `B` has a `condition` set for it.
 
@@ -138,14 +138,14 @@ stages:
 - stage: stage2
   jobs:
   - job: B
-    condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
     steps:
       - script: echo 2
 ```
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a job `A` whose condition evaluates to `true`. The reason is because `stage2` has the default `condition: succeeded()`, which evaluates to `false` when `stage1` is canceled. Therefore, `stage2` is skipped, and none of its jobs run.
 
-Say you have the following YAML pipeline. Notice that, by default, `stage1` depends on `stage2` and that `script: echo 2` has a `condition` set for it.
+Say you have the following YAML pipeline. Notice that, by default, `stage2` depends on `stage1` and that `script: echo 2` has a `condition` set for it.
 ```yaml
 stages:
 - stage: stage1
@@ -158,7 +158,7 @@ stages:
   - job: B
     steps:
       - script: echo 2
-        condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+        condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
 ```
 
 If you queue a build on the `main` branch, and you cancel it while `stage1` is running, `stage2` *won't* run, even though it contains a step in job `B` whose condition evaluates to `true`. The reason is because `stage2` is skipped in response to `stage1` being canceled.
@@ -172,14 +172,14 @@ jobs:
   - script: sleep 30
 - job: B
   dependsOn: A 
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
   steps:
     - script: echo step 2.1
 ```
 
-If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`. 
+If you queue a build on the `main` branch, and you cancel it while job `A` is running, job `B` will still run, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`. 
 
-If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))`.
+If you want job `B` to only run when job `A` succeeds *and* you queue the build on the `main` branch, then your `condition` should read `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))`.
 
 In the following pipeline, `B` depends on `A`.
 ```yml
@@ -191,7 +191,7 @@ jobs:
   dependsOn: A 
   steps:
     - script: echo step 2.1
-      condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+      condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
       
 ```
 
@@ -206,10 +206,10 @@ steps:
   - script: echo step 2.1
   - script: echo step 2.2; sleep 30
   - script: echo step 2.3
-    condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
 ```
 
-If you queue a build on the `main` branch, and you cancel the build when steps 2.1 or 2.2 are executing, step 2.3 will still execute, because `contains(variables['build.sourceBranch'], 'refs/heads/main')` evaluates to `true`.
+If you queue a build on the `main` branch, and you cancel the build when steps 2.1 or 2.2 are executing, step 2.3 will still execute, because `eq(variables['Build.SourceBranch'], 'refs/heads/main')` evaluates to `true`.
 
 * * *
 
@@ -265,7 +265,7 @@ eq(variables['Build.Reason'], 'Schedule')
 ### Always run if a variable is set to true, even if canceled, even if failing
 
 ```
-eq(variables['System.debug'], 'true')
+eq(variables['System.debug'], true)
 ```
 
 ### Run if a variable is null (empty string)
@@ -286,7 +286,14 @@ jobs:
 
 ### Use a template parameter as part of a condition
 
-When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true.
+When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true. 
+
+The `condition` in the pipeline combines two functions: `succeeded()` and `eq('${{ parameters.doThing }}', true)`. The `succeeded()` function checks if the previous step succeeded. The `succeeded()` function returns true because there was no previous step. 
+
+The `eq('${{ parameters.doThing }}', true)` function checks whether the doThing parameter is equal to `true`. Since the default value for doThing is true, the condition will return true by default unless a different values gets set in the pipeline. 
+
+For more template parameter examples, see [Template types & usage](templates.md). 
+
 
 ```yaml
 parameters:
@@ -296,10 +303,11 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
 ```
 
- However, when you pass a parameter to a template, the parameter won't have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAML files, the value from the template will get used in your condition. 
+
+When you pass a parameter to a template, you need to set the parameter's value in your template or use [templateContext to pass properties to templates](templates.md#use-templatecontext-to-pass-properties-to-templates). 
 
 ```yaml
 # parameters.yml
@@ -312,7 +320,7 @@ jobs:
   - job: B
     steps:
     - script: echo I did a thing
-    condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+    condition: ${{ if eq(parameters.doThing, true) }}
 ```
 
 ```yaml

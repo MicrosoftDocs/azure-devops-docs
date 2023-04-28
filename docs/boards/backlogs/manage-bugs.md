@@ -5,8 +5,8 @@ description: Define, capture, and triage bugs and code defects to manage technic
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.service: azure-devops-boards
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
@@ -264,7 +264,7 @@ For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) 
 
 ::: moniker range=">= azure-devops-2020"  
 > [!NOTE]  
-> The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../work-items/guidance/changes-to-process-templates.md). You can reinstate this automation by adding a rule. For an Inheritance process, see [Apply rules to workflow states, Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
+> The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been removed from the default system process. You can reinstate this automation by adding a rule. For an Inheritance process, see [Apply rules to workflow states, Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
  
 ::: moniker-end  
 

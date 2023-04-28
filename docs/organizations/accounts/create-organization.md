@@ -25,7 +25,7 @@ Use an organization to connect groups of related projects, and help to scale up 
 ::: moniker range="= azure-devops"
 
 > [!NOTE]
-> All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via [REST API](/rest/api/azure/devops/?view=azure-devops-rest-7.1&preserve-view=true).
+> All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via [REST API](/rest/api/azure/devops).
 
 <a name="how-sign-up"></a>
 

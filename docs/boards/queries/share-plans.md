@@ -2,11 +2,11 @@
 title: Share information in work items and social tools in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to easily share information about work items, queries, and more in Azure Boards.
-ms.custom: boards-queries
+ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 10/26/2022
@@ -148,7 +148,7 @@ You can add up to 100 attachments to a work item. Attachments are limited to 60 
 
 You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. 
 
-By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2 GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
+By default, the size of work item attachments is limited to 4 MB. You can use the web service to [increase the size of files you attach up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 
 ::: moniker-end 
  
@@ -237,7 +237,7 @@ Storyboarding your ideas and goals increases visual understanding. With [PowerPo
 
 
 > [!NOTE]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the Storyboard link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the **Storyboard** link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
 
 
 ::: moniker range="tfs-2018"

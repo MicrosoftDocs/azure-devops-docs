@@ -6,8 +6,8 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/04/2023
 ---
@@ -48,69 +48,52 @@ Use the following guidance and that provided for [fields used in common across w
    **Usage**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    [Description](../../queries/titles-ids-descriptions.md)  
-
    :::column-end:::
    :::column span="3":::
-   For user stories, provide enough detail for estimating how much work will be required to implement the story. Focus on who the feature is for, what users want to accomplish, and why. Don&#39;t describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
-
+   For user stories, provide enough detail for estimating how much work will be required to implement the story. Focus on who the feature is for, what users want to accomplish, and why. Don't describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Acceptance Criteria](../../queries/titles-ids-descriptions.md) 
-
    :::column-end:::
    :::column span="3":::
-   Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. You can use the acceptance criteria as the basis for acceptance tests to more effectively evaluate whether an item is satisfactorily completed.
-
+   Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers' expectations. You can use the acceptance criteria as the basis for acceptance tests to more effectively evaluate whether an item is satisfactorily completed.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Value Area](../../queries/planning-ranking-priorities.md)
-
    :::column-end:::
    :::column span="3":::
-   The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:
-
-   
+   The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:  
    - **Architectural**: Technical services to implement business features that deliver solution 
-   
-   
    - **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
-   
-   
-  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Story Points](../../queries/query-numeric.md)
-
    :::column-end:::
    :::column span="3":::
    Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.
 
    Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Priority](../../queries/planning-ranking-priorities.md)
-
    :::column-end:::
    :::column span="3":::
    A subjective rating of the user story, feature, or requirement as it relates to the business. Allowed values are:
    - **1**: Product can't ship without the feature.
-   - **2**: Product can't ship without the feature, but it doesn&#39;t have to be addressed immediately.
+   - **2**: Product can't ship without the feature, but it doesn't have to be addressed immediately.
    - **3**: Implementation of the feature is optional based on resources, time, and risk.
-
-   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -123,7 +106,6 @@ Use the following guidance and that provided for [fields used in common across w
    - **1 - High**
    - **2 - Medium**
    - **3 - Low**
-
    :::column-end:::
 :::row-end:::
 
@@ -135,7 +117,6 @@ Use the following guidance and that provided for [fields used in common across w
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
 ![Screenshot of Bug work item form, header area.](media/agile-bug-form-state-reason.png)
-
 
 ### Agile workflow states 
 
@@ -192,65 +173,49 @@ When teams estimate work using hours or days, they define tasks and the **Remain
    **Usage**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    [Original Estimate](../../queries/query-numeric.md)
-
    :::column-end:::
    :::column span="3":::
-   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.
-
+   The amount of estimated work required to complete a task. Typically, this field doesn't change after it's assigned.
    You can specify work in hours or in days. There are no inherent time units associated with this field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Remaining Work](../../queries/query-numeric.md)
-
    :::column-end:::
    :::column span="3":::
-   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](../../../report/sql-reports/burndown-and-burn-rate-report.md), [Remaining Work](../../../report/sql-reports/remaining-work-report.md), and [Status on All Iterations](../../../report/sql-reports/status-on-all-iterations-report.md).
-
+   The amount of work remaining to complete a task. As work progresses, update this field. This field is used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following SQL Server reports: [Burndown and Burn Rate](/previous-versions/azure/devops/report/sql-reports/burndown-and-burn-rate-report), [Remaining Work](/previous-versions/azure/devops/report/sql-reports/remaining-work-report), and [Status on All Iterations](/previous-versions/azure/devops/report/sql-reports/status-on-all-iterations-report).
    If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Completed Work](../../queries/query-numeric.md) 
-
    :::column-end:::
    :::column span="3":::
    The amount of work spent implementing a task.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Activity](../../queries/query-numeric.md) 
-
    :::column-end:::
    :::column span="3":::
    Select the type of activity this task represents when your team estimates sprint capacity by activity.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    [Integrated in Build](../../queries/build-test-integration.md)
-
    :::column-end:::
    :::column span="3":::
    Product build number that incorporates the code or fixes a bug.
-
    :::column-end:::
 :::row-end:::  
-
-::: moniker range="tfs-2018"
-If you use [Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) to assign resources and track a schedule.
-::: moniker-end
 
 ## Track test progress 
 

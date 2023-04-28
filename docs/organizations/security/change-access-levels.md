@@ -6,8 +6,8 @@ ms.subservice: azure-devops-security
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: quickstart
 ms.reviewer:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022  
 ---

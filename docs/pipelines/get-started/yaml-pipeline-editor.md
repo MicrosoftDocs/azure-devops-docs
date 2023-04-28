@@ -47,7 +47,7 @@ To access the YAML pipeline editor, do the following steps.
 To access the YAML pipeline editor, do the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select your project, choose **Pipelines**, and then select the pipeline you want to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [Pipelines landing page](multi-stage-pipelines-experience.md#pipelines-landing-page).
+2. Select your project, choose **Pipelines**, and then select the pipeline you want to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [view and manage your pipelines](../create-first-pipeline.md#view-and-manage-your-pipelines).
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-landing-page.png" alt-text="Azure Pipelines landing page.":::
 
@@ -185,7 +185,7 @@ Previously, the editor didn't support templates, so authors of YAML pipelines co
 >
 > * If the template has required parameters that aren't provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs.
 >
-> *You can't create a new template from the editor. You can only use or edit existing templates.
+> * You can't create a new template from the editor. You can only use or edit existing templates.
 
 As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. As you enter the name of your template, you may be prompted to validate your template. Once validated, the YAML editor understands the schema of the template, including the input parameters.
 

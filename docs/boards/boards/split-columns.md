@@ -3,17 +3,18 @@ title: Split columns on your Kanban board
 titleSuffix: Azure Boards
 ms.global_help.title: Split columns
 description: Learn how to implement the Kanban pull model by dividing each column into Doing and Done when you work in Azure Boards.  
-ms.custom: boards-kanban 
+ms.custom: boards-kanban, engagement-fy23 
 ms.service: azure-devops-boards
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 03/03/2023
 ---
 
 # Split columns on your Kanban board to show work in progress
+
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at each stage.  
@@ -54,7 +55,8 @@ Split columns provide you even greater insight into how many items sit idle in a
 By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or few bottlenecks correspond to perfect flows. No item sits in a queue for any 
 
 ## Choose which columns you want to split  
-Now that you understand how your team can use split columns, here's how to turn them on. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
+
+Now that you understand how your team can use split columns, here's how to turn them on. Before you split columns, ensure you [mapped each stage of your team's process to a Kanban column](add-columns.md).
 
 Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage. 
 
@@ -62,26 +64,25 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.  
+3. Choose **Columns** and then choose the column tab that you want to split. Add a check mark in the checkbox to cause the column to split.  
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 	
 	> [!div class="mx-imgBorder"]
-	> ![Kanban board settings dialog, Split columns](media/columns/split-columns-tfs-2018.png)  
+	> ![Screenshot of Kanban board settings page, Split columns](media/columns/split-columns.png)  
 
-3. When done with your changes, choose **Save**.
+4. When you're done, choose **Save and close**.
 
 	> [!TIP]    
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
 
 ::: moniker-end 
-
 
 ::: moniker range="tfs-2018" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.

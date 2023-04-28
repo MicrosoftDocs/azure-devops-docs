@@ -103,6 +103,9 @@
   - name: Authorize access to REST APIs with OAuth 2.0
     href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json  
     displayName: authenticate, access, token, app, security
+  - name: Authorize access with service principals and managed identities
+    href: ../../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/organizations/security/toc.json  
+    displayName: authenticate, access, security, service, principal, managed, identity   
   - name: Use SSH key authentication
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json  
     displayName: access, security

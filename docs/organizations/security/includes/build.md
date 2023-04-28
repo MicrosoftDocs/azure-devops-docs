@@ -1,7 +1,7 @@
 ---
 ms.subservice: azure-devops-security: devops-cicd
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 08/18/2021
 ---

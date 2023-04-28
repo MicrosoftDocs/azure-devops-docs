@@ -3,8 +3,8 @@ title: Get Analytics insights comparable to those provided by SQL Reporting Serv
 titleSuffix: Azure DevOps 
 description: Learn how to get insights using Analytics comparable to those provided by the legacy SQL Reporting Services reports.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019 <= azure-devops-2020'
 ms.date: 05/26/2022

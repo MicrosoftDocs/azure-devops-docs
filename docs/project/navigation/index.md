@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Navigate within the user interface/web portal of Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

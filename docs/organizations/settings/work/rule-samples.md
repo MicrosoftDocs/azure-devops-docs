@@ -3,8 +3,8 @@ title: Sample custom rule scenarios
 titleSuffix: Azure DevOps 
 description: Examples of custom rule definitions for inherited and XML processes 
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: sample
 ms.date: 06/30/2021

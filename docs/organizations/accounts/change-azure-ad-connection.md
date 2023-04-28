@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/05/2022
+ms.date: 03/02/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -16,24 +16,22 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to switch your organization connection from one Azure Active Directory (Azure AD) to another. When you change directories, your project resources remain, as there's no impact to them.
+Learn how to switch your organization connection from one Azure Active Directory (Azure AD) to another. When you change directories, your project resources remain unaffected.
 
 For more information about using Azure AD with Azure DevOps, see the [Conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-Before you switch your organization directory, make sure the following statements are true:
+Before you switch your organization directory, do the following tasks:
 
-- You're in the Project Collection Administrator group for the organization.
-- You're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
-- There are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Azure AD identities in the new tenant.
-
-Do the following task:
-
-- Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/). You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change).
+- Confirm you're in the Project Collection Administrator group for the organization.
+- Confirm you're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
+- Confirm there are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users. You can map them to their Azure AD identities in the new tenant.
+- Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change). For more information, see the [FAQ](faq-azure-access.yml).
+- Do not add the users from the destination Azure AD into the Azure DevOps organization.
 
 > [!IMPORTANT]
-> Users and groups that inherit membership and permissions from an Azure AD group, will no longer inherit those permissions after the transfer. Azure AD groups that were added to your Azure DevOps organization don't get transferred and will cease to exist in your organization when the Azure AD connection is changed. All permissions and membership relationships made with these Azure AD groups will also cease to exist after the transfer.
+> Users and groups who inherit membership and permissions from an Azure AD group, will no longer inherit those permissions after the transfer. Azure AD groups that were added to your Azure DevOps organization don't get transferred and will cease to exist in your organization when the Azure AD connection is changed. All permissions and membership relationships made with these Azure AD groups will also cease to exist after the transfer.
           
 
 ## Change the Azure AD connection
@@ -99,7 +97,7 @@ Complete the following steps to recreate your SSH keys.
 
 ### Rename your MSA
 
-[Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
+[Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you aren't prompted to choose between accounts.
 
 ### Adjust your VS subscription
 

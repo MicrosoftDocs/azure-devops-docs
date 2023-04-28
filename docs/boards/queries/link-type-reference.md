@@ -3,10 +3,10 @@ title: Link types reference guide
 titleSuffix: Azure Boards
 description: Reference guide that describes all link types defined for Azure DevOps and Azure Boards. 
 ms.service: azure-devops-boards
-ms.custom: "boards-queries, cross-project, cross-service"
+ms.custom: work-items, cross-project, cross-service, engagement-fy23
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 10/18/2022
@@ -59,7 +59,7 @@ A specific field maintains a count of links for each of these link types, such a
 
 ::: moniker-end 
 
-Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you'll want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology).
+Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following tables to choose which link type to use based on the types of queries and reports you'll want to create.  To learn more about the different topologies, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology).
 
 
 <a id="work-link-types">  </a>
@@ -76,7 +76,7 @@ A work item's [*Related Link Count*](linking-attachments.md#related-link-count) 
 
 ::: moniker range="< azure-devops"  
 
-The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
+The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 
 ::: moniker-end  
 
@@ -330,7 +330,7 @@ The following table describes the external link types you can choose when adding
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
-The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
+The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true). 
 ::: moniker-end  
 
 
@@ -708,8 +708,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 ## Custom link types
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following articles:  
-- [Link type element reference](../../reference/xml/link-type-element-reference.md) 
-- [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types) 
+- [Link type element reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference) 
+- [Manage link types (`witadmin`)](/previous-versions/azure/devops/reference/witadmin/manage-link-types). 
 
 ::: moniker-end
 
@@ -886,7 +886,7 @@ The following table provides descriptions for each of the link type attributes r
       `acyclic`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type allows or (`true`) or restricts (`false`) circular relationships. For example, tree type links restrict circular relationships. For more information, see [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md). 
+      Indicates whether the link type allows or (`true`) or restricts (`false`) circular relationships. For example, tree type links restrict circular relationships. For more information, see [LinkTypes elements reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -894,7 +894,7 @@ The following table provides descriptions for each of the link type attributes r
       `directional`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is directional (`true`) or not (`false`).  Directional link types are defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md). 
+      Indicates whether the link type is directional (`true`) or not (`false`).  Directional link types are defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](/previous-versions/azure/devops/reference/xml/link-type-element-reference). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -949,7 +949,7 @@ The following table provides descriptions for each of the link type attributes r
       `topology`
    :::column-end:::
    :::column span="2":::
-      Specifies the topology type&mdash;dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology). 
+      Specifies the topology type&mdash;dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -977,5 +977,5 @@ The following table provides descriptions for each of the link type attributes r
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
-- [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
+- [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#link-type-topologies-and-restrictions)
 - [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)

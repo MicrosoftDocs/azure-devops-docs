@@ -5,8 +5,8 @@ description: Learn how to map or parent backlog items to features. Then learn ho
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/27/2022
