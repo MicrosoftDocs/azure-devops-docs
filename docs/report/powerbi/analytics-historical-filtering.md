@@ -65,7 +65,7 @@ You use the `WorkItemRevisions` entity set to load all the revisions for a given
 > To create a work tracking trend report, create or modify a default **Analytics view** and specify the time frame of interest in the **History** tab. To learn more, see [Create an Analytics view](../powerbi/analytics-views-create.md).
 
 
-Both [Analytics Views](./what-are-analytics-views.md) and the [Burndown and Burnup widgets](../dashboards/configure-burndown-burnup-widgets.md) let you configure filters that scope the data set to your needs. You apply filters to scope the data to specific teams, work item types, or backlogs. Filters may also apply to specific properties or fields and their corresponding values. For example, you can apply filters on work items to return only bugs defined for the *Fabrikam Voice* team and that are tagged with *Customer*.  
+Both [Analytics views](./what-are-analytics-views.md) and the [Burndown and Burnup widgets](../dashboards/configure-burndown-burnup-widgets.md) let you configure filters that scope the data set to your needs. You apply filters to scope the data to specific teams, work item types, or backlogs. Filters may also apply to specific properties or fields and their corresponding values. For example, you can apply filters on work items to return only bugs defined for the *Fabrikam Voice* team and that are tagged with *Customer*.  
 
 ## How filters are applied to historical data
 
@@ -84,7 +84,7 @@ The latest revision (#6) is the Current revision of the work item. In Analytics 
 
 When reporting on history, we could potentially be pulling in revisions 1 through 6 for reporting. 
 
-Let's say, when creating an Analytics View or configuring the Burndown widget, you set these two filters:
+Let's say, when creating an Analytics view or configuring the Burndown widget, you set these two filters:
 
 * Area Path = /Admirals
 * Tags contains Customer
