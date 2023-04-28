@@ -11,7 +11,7 @@ The **Analytics Views** feature has been in a preview state for an extended peri
 
 In the navigation, we move **Analytics** views from the **Overview** tab to the **Boards** tab.
 
-> ![Analytics view in boards navigation](../../media/220-reporting-01.png)
+> ![Analytics view in boards navigation.](../../media/220-reporting-01.png)
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. If you are not familiar with **Analytics Views**, here is some documentation to get you caught up:
 
