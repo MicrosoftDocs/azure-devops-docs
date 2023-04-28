@@ -4,7 +4,7 @@ ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 01/25/2023
+ms.date: 04/28/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -323,5 +323,17 @@ MyEnv4=MyEnvValue4
 ::: moniker range="< azure-devops"
 [!INCLUDE [include](../includes/qa-versions.md)]
 ::: moniker-end
+
+### What is enable SERVICE_SID_TYPE_UNRESTRICTED for agent service?
+
+When configuring the agent software on Windows Server, you can specify the service security identifier from the following prompt.
+
+```
+Enter enable SERVICE_SID_TYPE_UNRESTRICTED for agent service (Y/N) (press enter for N)
+```
+
+Previous versions of the agent software set the service security identifier type to `SERVICE_SID_TYPE_NONE`, which is the default value for the current agent versions. To configure the security service identifier type to `SERVICE_SID_TYPE_UNRESTRICTED`, press `Y`.
+
+For more information, see [SERVICE_SID_INFO structure](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) and [Security identifiers](/windows-server/identity/ad-ds/manage/understand-security-identifiers).
 
 <!-- ENDSECTION -->
