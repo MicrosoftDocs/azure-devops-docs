@@ -5,8 +5,8 @@ description: Learn about working with velocity charts generated for an Azure Dev
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---
@@ -19,6 +19,8 @@ Velocity metrics provide useful information to support the following team and pr
 - Sprint planning  
 - Forecasting future sprints and the backlog items that a team can complete   
 - A guide for determining how well the team estimates and meets their planned commitments 
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 01/13/2023
+ms.date: 01/30/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -158,7 +158,7 @@ If you are currently running other pipelines, you may not have any remaining par
 #### Check for available parallel jobs
 
 > [!NOTE]
-> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
+> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. If you don't have any parallel jobs, your pipelines will fail with the following error: `##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request`.  Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
 
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
@@ -311,6 +311,20 @@ If your pipeline gets an agent but fails to complete, check the following common
 * [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Service Connection related issues](#service-connection-related-issues)
+
+:::moniker range="azure-devops"
+
+### Task insights for failed pipeline runs
+
+Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
+
+:::image type="content" source="../get-started/media/task-insights.png" alt-text="Screenshot of task insights metrics.":::
+
+To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
+
+:::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Screenshot of task insights for failed pipeline runs setting.":::
+
+:::moniker-end
 
 ### Job time-out
 

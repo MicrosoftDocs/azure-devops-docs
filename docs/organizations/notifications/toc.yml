@@ -4,9 +4,6 @@
 - name: Navigating the UI
   href:  navigating-the-ui.md
   displayName: interface, personal, team, project, organization, collection, notification, settings
-- name: Events and notifications
-  href:  concepts-events-and-notifications.md
-  displayName: subscriptions, default, email, custom, service, alert
 - name: How email recipients are determined
   href:  concepts-email-recipients.md
   displayName: subscription, delivery, preference, settings, preferred, team, group, alert

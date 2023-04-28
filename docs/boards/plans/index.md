@@ -5,8 +5,8 @@ description: Learn how to scale Agile tools using portfolios, dashboards, and de
 ms.custom: seodec18
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

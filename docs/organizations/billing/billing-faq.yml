@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 01/13/2023
+  ms.date: 02/24/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -29,7 +29,7 @@ sections:
 
           In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. We don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q--how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project-) for your organization to Basic.
           
-          [Group rules](../accounts/assign-access-levels-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you'll find that assignment errors are no longer common.
+          [Group rules](../accounts/assign-access-levels-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, assignment errors are no longer common.
           
           For more information about user assignment-based billing, see our [blog post](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
 
@@ -52,7 +52,7 @@ sections:
       - question: |
           Q: What happens when a user is deleted in Azure AD?
         answer: |
-          A: When a user is permanently deleted in Azure AD, within a few hours, they will be removed from Azure DevOps and you will no longer be billed for their license. Guest users may need to be removed manually from Azure DevOps. For more information, see [Delete a user in Azure AD](https://learn.microsoft.com/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
+          A: When a user is permanently deleted in Azure AD, within a few hours, they're removed from Azure DevOps and you're no longer be billed for their license. Guest users may need to be removed manually from Azure DevOps. For more information, see [Delete a user in Azure AD](https://learn.microsoft.com/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
       
       - question: |
           Q: How can I stop paying for users who aren't actively using Azure DevOps?
@@ -74,7 +74,7 @@ sections:
       - question: |
           Q: Do daily pro-rated charges apply to other purchases also?
         answer: |
-          A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased five MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case, you're charged one-third of the monthly cost of five hosted pipelines.
+          A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased five MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines are pro-rated. In this case, you're charged one-third of the monthly cost of five hosted pipelines.
 
       - question: |
           Q: What happens if I set up billing before my Azure Test Plans trial expires?
@@ -104,8 +104,8 @@ sections:
           If you need technical support with Azure DevOps and don't have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
            
           1. Create an Azure subscription.
-            - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you'll set up payment direct with Azure, through a partner, or through a Microsoft representative.
-            - The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you'll only pay for what you use.
+            - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether to set up payment direct with Azure, through a partner, or through a Microsoft representative.
+            - The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription - you only pay for what you use.
            
           2. Choose a support plan.
             - As part of signing up for an Azure subscription, you can choose a [support plan](https://azure.microsoft.com/support/plans/).
@@ -168,12 +168,12 @@ sections:
           A: Yes. Select the Azure subscription that's linked to the desired Azure DevOps organization, in Settings > Resources.
           :::image type="content" source="media/billing-faq/organization-under-subscription.png" alt-text="Screenshot of locating your organization":::
           
-          Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign will appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
+          Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
           :::image type="content" source="media/billing-faq/apply-billing-tag-on-organization.png" alt-text="Screenshot of applying tags":::
 
           ## Multi-organization billing
 
-          Multi-organization billing allows you to pay once per user, for organizations under the same Azure billing subscription.
+          Multi-organization billing allows you to pay once per human user, for organizations under the same Azure billing subscription. This does not apply to service principals and managed identities, which will still be charged on a user assignment-based billing. Any service principal or managed identity will be charged once per organization that it has been added to.
 
       - question: |
           Q: Does multi-organization billing make sense for all customers?

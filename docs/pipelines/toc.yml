@@ -14,8 +14,6 @@
     - name: Customize your pipeline
       href: customize-pipeline.md
       displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
-    - name: Multi-stage pipelines user experience
-      href: get-started/multi-stage-pipelines-experience.md
 - name: Pipeline basics
   items:
     - name: Key concepts
@@ -435,10 +433,6 @@
       items:
         - name: Build and push to Azure Container Registry with a Docker template
           href: ecosystems/containers/acr-template.md
-        - name: Build and push to Azure Container Registry - Managed Service Identity
-          href: ecosystems/containers/publish-to-acr.md
-        - name: Deploy ASP.NET Core app
-          href: apps/cd/azure/aspnet-core-to-acr.md
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
@@ -460,19 +454,10 @@
       href: ecosystems/containers/content-trust.md
     - name: Kubernetes
       items:
-        - name: Deploy manifests
+        - name: Deploy to Kubernetes
           href: ecosystems/kubernetes/deploy.md
-          displayName: kubernetes, aks, gke, eks
-        - name: Bake manifests
-          href: ecosystems/kubernetes/bake.md
-          displayName: helm
-        - name: Multi-cloud deployments
-          href: ecosystems/kubernetes/multi-cloud.md
-          displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
-        - name: Deployment strategies
-          href: ecosystems/kubernetes/deployment-strategies.md
-          displayName: canary, strategy, kubernetes, aks, gke, eks
-        - name: Kubernetes canary deployments
+          displayName: kubernetes, aks, gke, eks, canary
+        - name: Use a canary deployment strategy
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
   items:

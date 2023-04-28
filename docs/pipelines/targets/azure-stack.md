@@ -150,7 +150,7 @@ Create a service connection. You’ll need the values from your SPN and the name
     # Add steps that build, run tests, deploy, and more:
     # https://aka.ms/yaml
     trigger:
-    - master
+    - main
     variables:
       azureSubscription: '<your connection name>'
       VSTS_ARM_REST_IGNORE_SSL_ERRORS: true

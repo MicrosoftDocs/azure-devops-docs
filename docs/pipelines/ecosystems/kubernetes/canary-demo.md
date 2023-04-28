@@ -1,5 +1,5 @@
 ---
-title: Canary deployment strategy for Kubernetes deployments
+title: Use a canary deployment strategy for Kubernetes deployments with Azure Pipelines
 description: Demo of performing canary deployments on Kubernetes clusters by using Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
@@ -8,7 +8,7 @@ ms.custom: fasttrack-edit
 monikerRange: 'azure-devops'
 ---
 
-# Canary deployment strategy for Kubernetes deployments
+# Tutorial: Use a canary deployment strategy for Kubernetes deployments
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 

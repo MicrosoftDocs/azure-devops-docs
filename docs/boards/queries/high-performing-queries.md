@@ -5,8 +5,8 @@ description: Learn how to create high-performing work item queries in Azure Boar
 ms.custom: "boards-queries, linked-from-support"  
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 01/31/2022  
@@ -83,6 +83,10 @@ Try to limit the number of `Or` operators defined in your query. Queries run bet
 ## Save your query 
 
 Save your query to improve query performance. Due to internal optimizations, saved queries tend to perform better over unsaved queries. Always save your query when you plan to reuse it. Even WIQL queries run through a REST API, save the WIQL through the web portal to make your REST API calls less prone to future performance regressions. 
+
+## Run your query 
+
+Sometimes your query needs to be run a few times to reach the right optimization plan. Make sure your query is saved and run that query up to 10 times over a 30 minute period. This allows the system to examine and seek out the optimization plan that is most appropriate for your query. 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

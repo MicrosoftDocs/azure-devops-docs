@@ -6,8 +6,8 @@ ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.article:   
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

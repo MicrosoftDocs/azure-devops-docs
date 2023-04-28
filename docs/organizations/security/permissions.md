@@ -6,8 +6,8 @@ ms.subservice: azure-devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/25/2022
 --- 
@@ -479,7 +479,7 @@ So the full name of the administrator group for the default collection is
    :::column span="2":::
    Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
    > [!NOTE]   
-   > The **Project-Scoped Users** group becomes available with restricted access when the organization-level preview feature, **Limit user visibility and collaboration to specific projects** is enabled. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+   > The **Project-Scoped Users** group becomes available with restricted access when the organization-level preview feature, **Limit user visibility and collaboration to specific projects** is enabled. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
    :::column-end:::
 :::row-end:::
 ::: moniker-end

@@ -4,9 +4,10 @@ titleSuffix: Azure DevOps
 description: Find examples that showcase use of Azure DevOps CLI. 
 ms.topic: conceptual
 ms.subservice: azure-devops-reference
+ms.custom: devx-track-azurecli
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
+ms.author: chcomley  
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 11/08/2022
 ---
@@ -270,5 +271,3 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
 - [az devops](/cli/azure/azure-cli-reference-for-devops#azure-devops-organizations)
 - [az pipelines](/cli/azure/azure-cli-reference-for-devops#azure-pipelines)
 - [az repos](/cli/azure/azure-cli-reference-for-devops#azure-repos)
-
-

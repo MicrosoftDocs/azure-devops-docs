@@ -74,7 +74,7 @@ The first step in adding a VM resource is to define an environment.
 
 ## Use VM in pipelines
 
-Target VMs in your pipeline by referencing the environment. By default, the pipeline job runs for all of the VMs defined for an environment.
+Target VMs in your pipeline by referencing the environment. By default, the pipeline job runs for all of the VMs defined for an environment with a `resourceName`.
 
 ```yaml
 trigger: 
@@ -88,7 +88,8 @@ jobs:
   displayName: Deploy to VM
   environment: 
    name: VMenv
-   resourceType: VirtualMachine
+   resourcesNAme: VMenv
+   resourceType: virtualMachine
   strategy:
      runOnce:
         deploy:   
@@ -96,7 +97,10 @@ jobs:
             - script: echo "Hello world"
 ```
 
-You can select specific sets of virtual machines from the environment to receive the deployment with tags. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter and the value `windows` to your pipeline.
+> [!NOTE]
+> The `resourceType` values are case sensitive. Specifying the incorrect casing will result in no matching resources found in the environment. See the [YAML schema](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) for more information.
+
+You can select a specific virtual machine from the environment to only receive the deployment by specifying it by its `resourceName`. For example, to target deploying only to the Virtual Machine resource named `USHAN-PC` in the `VMenv` environment, add the `resourceName` parameter and give it the value of `USHAN-PC`.
 
 ```yaml
 trigger: 
@@ -110,8 +114,8 @@ jobs:
   displayName: Deploy to VM
   environment: 
     name: VMenv
-    resourceType: VirtualMachine
-    tags: windows # only deploy to virtual machines with this tag
+    resourceType: virtualMachine
+    resourceName: USHAN-PC # only deploy to the VM resource named USHAN-PC
   strategy:
     runOnce:
       deploy:   
@@ -123,7 +127,7 @@ To learn more about deployment jobs, see the [YAML schema](/azure/devops/pipelin
 
 ## Add and manage tags
 
-Tags give you a way to target specific VMs in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI. Tags are each limited to 256 characters. There's no limit to the number of tags that you can use.
+Tags give you a way to target a set of specific VMs in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI. Tags are each limited to 256 characters. There's no limit to the number of tags that you can use.
 
 Add or remove tags in the UI from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a VM resource.
 
@@ -133,7 +137,7 @@ When you select multiple tags, VMs that include all the tags get used in your pi
 
 ```yaml
 trigger: 
-- master
+- main
 
 pool: 
    vmImage: ubuntu-latest
@@ -143,7 +147,7 @@ jobs:
   displayName: Deploy to VM
   environment: 
     name: VMenv
-    resourceType: VirtualMachine
+    resourceType: virtualMachine
     tags: windows,prod # only deploy to virtual machines with both windows and prod tags
   strategy:
     runOnce:

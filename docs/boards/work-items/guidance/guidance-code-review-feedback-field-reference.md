@@ -5,8 +5,8 @@ description: Learn how to use the code review and feedback fields to track code 
 ms.service: azure-devops-boards
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 11/07/2021
 ---
@@ -20,7 +20,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
->  If your Azure DevOps or TFS server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
+>  If your on-premises server has been upgraded from an earlier version, you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
 
 ::: moniker-end
 

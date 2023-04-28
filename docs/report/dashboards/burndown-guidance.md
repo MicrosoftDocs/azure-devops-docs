@@ -5,8 +5,8 @@ description: Learn how to choose and use burndown/burnup charts to review sprint
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 08/25/2022
 ---
@@ -44,10 +44,11 @@ Review your sprint burndown chart throughout your sprint cycle to check for thes
 
 You can view sprint burndown  from your team's sprint backlog built-in report or by adding the Sprint burndown widget to a team dashboard.
 
-
 To configure or view sprint burndown charts, see [Sprint burndown](configure-sprint-burndown.md).
  
 ::: moniker-end
+
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -77,7 +78,7 @@ Depending on the teams, work item types, and time period you want to monitor, ch
 | Monitor | Chart option |  
 |---------|---------------|  
 | Sprint burndown for a team | Sprint burndown chart |  
-| Sprint burndown for a specific work item type or a porfolio backlog | Sprint burndown widget |  
+| Sprint burndown for a specific work item type or a portfolio backlog | Sprint burndown widget |  
 | Sprint burndown for several teams | Burndown widget |  
 | Release burndown/burnup  for one or more teams or teams in different projects | Burndown/Burnup widget |  
 | Burnup or burndown for any type of work item and time period | Burndown/Burnup widget |  
@@ -182,16 +183,4 @@ Teams should meet immediately to course correct and either reassign work, recrui
 ## Industry resources
  
 - [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  
-
-<!---
-For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
-
-
-Things to look for: 
-- Scope creep: work added after the start of a sprint or planning period
-- Above the trend line: 
-- Below the trend line:  
-- Total scope line  ... 
-- Stalled or flat areas 
-
---> 
+ 

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 04/13/2022
+ms.date: 02/22/2023
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -723,7 +723,7 @@ If you want to pin a specific commit, first create a tag pointing to that commit
 > [!NOTE]
 > If no `ref` is specified, the pipeline will default to using `refs/heads/main`.
 
-You may also use `@self` to refer to the repository where the main pipeline was found.
+You may also use `@self` to refer to the repository where the original pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
 For example:
 

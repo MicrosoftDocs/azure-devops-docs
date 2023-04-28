@@ -4,11 +4,11 @@ titleSuffix: Azure DevOps
 description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
 ms.subservice: azure-devops-security
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 03/23/2023
 --- 
 
 # Add AD/Azure AD users or groups to a built-in security group
@@ -40,7 +40,9 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+
+[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
 ::: moniker-end 
 

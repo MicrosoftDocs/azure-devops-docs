@@ -5,8 +5,8 @@ description: Describes work tracking customizations supported by the inherited p
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
 ms.date: 07/08/2022
@@ -40,7 +40,7 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 You'll see two types of processes:
 
 - ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in [Changes made to process templates](../../../boards/work-items/guidance/changes-to-process-templates.md).
+- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in the [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]   

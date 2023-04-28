@@ -81,7 +81,7 @@ For example, a pipeline is created with the following schedule, and this version
 ```yaml
 # YAML file in the main branch
 schedules:
-- cron: "0 0 * * *"
+- cron: '0 0 * * *'
   displayName: Daily midnight build
   branches:
     include:
@@ -95,7 +95,7 @@ If `new-feature` is added to the `branches` list and this change is pushed to th
 ```yaml
 # YAML file in the new-feature-branch
 schedules:
-- cron: "0 0 * * *"
+- cron: '0 0 * * *'
   displayName: Daily midnight build
   branches:
     include:
@@ -108,7 +108,7 @@ Now consider that a branch named `release` is created based off `main`, and then
 ```yaml
 # YAML file in the release branch
 schedules:
-- cron: "0 0 * * *"
+- cron: '0 0 * * *'
   displayName: Daily midnight build
   branches:
     include:
@@ -116,7 +116,7 @@ schedules:
 
 # YAML file in the main branch with release added to the branches list
 schedules:
-- cron: "0 0 * * *"
+- cron: '0 0 * * *'
   displayName: Daily midnight build
   branches:
     include:
@@ -172,7 +172,7 @@ The following example defines two schedules:
 
 ```yaml
 schedules:
-- cron: "0 0 * * *"
+- cron: '0 0 * * *'
   displayName: Daily midnight build
   branches:
     include:
@@ -180,7 +180,7 @@ schedules:
     - releases/*
     exclude:
     - releases/ancient/*
-- cron: "0 12 * * 0"
+- cron: '0 12 * * 0'
   displayName: Weekly Sunday build
   branches:
     include:
@@ -271,7 +271,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker range=">azure-devops-2019"
 
-Each Azure Pipelines scheduled trigger cron expression is a space-delimited expression with five entries in the following order.
+Each Azure Pipelines scheduled trigger cron expression is a space-delimited expression with five entries in the following order. The expression is enclosed in single quotes `'`.
 
 ```
 mm HH DD MM DW
@@ -336,7 +336,7 @@ Classic schedules are defined using a graphical editor instead of cron syntax. F
 
 ::: moniker range=">azure-devops-2019"
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
 
@@ -348,7 +348,7 @@ This example displays the scheduled runs for the following schedule.
 
 ```yaml
 schedules:
-- cron: "0 0 * * *"
+- cron: '0 0 * * *'
   displayName: Daily midnight build
   branches:
     include:
@@ -375,7 +375,7 @@ YAML isn't supported in TFS.
 #### [Classic](#tab/classic/)
 ::: moniker range=">= azure-devops-2020"
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../create-first-pipeline.md#view-pipeline-details) for your pipeline. 
 
 ![Scheduled runs menu](media/triggers/scheduled-runs-menu-classic.png)
 
@@ -507,12 +507,12 @@ The equivalent YAML scheduled trigger is:
 
 ```yaml
 schedules:
-- cron: "30 21 * * Sun-Thu"
+- cron: '30 21 * * Sun-Thu'
   displayName: M-F 3:00 AM (UTC + 5:30) India daily build
   branches:
     include:
     - /features/india/*
-- cron: "0 8 * * Mon-Fri"
+- cron: '0 8 * * Mon-Fri'
   displayName: M-F 3:00 AM (UTC - 5) NC daily build
   branches:
     include:
@@ -535,7 +535,7 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 > The UTC time zones in YAML scheduled triggers don't account for daylight saving time.
 
 > [!TIP]
-> When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`
+> When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`.
 
 ### Example: Nightly build with different frequencies
 
@@ -553,13 +553,13 @@ The equivalent YAML scheduled trigger is:
 
 ```yaml
 schedules:
-- cron: "0 3 * * Mon-Fri"
+- cron: '0 3 * * Mon-Fri'
   displayName: M-F 3:00 AM (UTC) daily build
   branches:
     include:
     - main
     - /releases/*
-- cron: "0 3 * * Sun"
+- cron: '0 3 * * Sun'
   displayName: Sunday 3:00 AM (UTC) weekly latest version build
   branches:
     include:
@@ -640,7 +640,7 @@ Schedules are defined in YAML files, and these files are associated with branche
  
 ```yaml
 schedules: 
-- cron: "0 12 * * 0"   # replace with your schedule 
+- cron: '0 12 * * 0'   # replace with your schedule
   branches: 
     include: 
     - features/X  

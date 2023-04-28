@@ -46,6 +46,6 @@ added.
 
 - [Develop a web extension](../get-started/node.md)
 - [Developer Formula Design System](https://developer.microsoft.com/azure-devops/)
-- [Azure DevOps sample extensions repo](https://github.com/Microsoft/vsts-extension-samples)
+- [Azure DevOps sample extensions repo](https://github.com/Microsoft/azure-devops-extension-sample)
 - [Contribution model](../develop/contributions-overview.md)
 - [Package and publish extensions](../publish/overview.md)

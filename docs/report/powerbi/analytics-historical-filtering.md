@@ -3,8 +3,8 @@ title: Historical data representation in Analytics
 titleSuffix: Azure DevOps
 description: Learn how historical data is stored in Analytics and filters are applied to support trend reports.  
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/08/2022

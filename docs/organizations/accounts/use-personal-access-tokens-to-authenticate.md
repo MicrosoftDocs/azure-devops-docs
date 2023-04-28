@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/13/2022
+ms.date: 03/29/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -45,7 +45,7 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 
 ### Q: What happens to a PAT if a user account is disabled?
 
-A: Once a user's removed from Azure DevOps, the PAT is invalidated within 1 hour. If your organization is connected to Azure Active Directory (Azure AD), the PAT is also invalidated in Azure AD, as it belongs to the user. We recommend that the user rotate their PAT to another user or service account to keep services running.
+A: Once a user's removed from Azure DevOps, the PAT is invalidated within 1 hour. If your organization is connected to Azure Active Directory (Azure AD), the PAT is also invalidated in Azure AD, as it belongs to the user. We recommend that the user rotates their PAT to another user or service account to keep services running.
 
 ### Q: Is there a way to renew a PAT via REST API?
 
@@ -57,13 +57,18 @@ A: No. You can use basic auth with most Azure DevOps REST APIs, but [organizatio
 
 ### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
-A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate immediately by [rotating or revoking the leaked PAT](use-personal-access-tokens-to-authenticate.md#revoke-a-pat). 
+A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). Unless you disabled the *Automatically revoke leaked personal access tokens* policy, we immediately revoke the leaked PAT. We encourage affected users to mitigate immediately by [revoking the leaked token](use-personal-access-tokens-to-authenticate.md#revoke-a-pat) and replacing it with a new token. 
 
-There's a policy for managing leaked PATs! For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically).
+For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically).
 
 ### Q: Can I use a personal access token as an ApiKey to publish NuGet packages to an Azure Artifacts feed using the dotnet/nuget.exe command line?
 
-A: No. Azure Artifacts does not support passing a personal access token as an ApiKey. When using a local development environment, we recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. See the following examples for more details: [dotnet](../../artifacts/nuget/dotnet-exe.md), [NuGet.exe](../../artifacts/nuget/publish.md).
+A: No. Azure Artifacts doesn't support passing a personal access token as an ApiKey. When using a local development environment, we recommended installing the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. For more information, see the following examples: [dotnet](../../artifacts/nuget/dotnet-exe.md), [NuGet.exe](../../artifacts/nuget/publish.md).
 If you want to publish your packages using Azure Pipelines, use the [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task to authenticate with your feed [example](../../pipelines/artifacts/nuget.md#publish-a-package).
 
+### Q: Why did my PAT stop working?
+
+A: PAT authentication requires you to regularly sign into Azure DevOps using the full authentication flow. Once every 30 days is sufficient for many, but you may need to sign in more often than that depending upon your Azure Active Directory configuration. If your PAT stops working, first try signing into your organization, ensuring that you go through the full authentication prompt. If your PAT still doesn't work after that, check to see if your PAT has expired.
+
 ::: moniker-end
+

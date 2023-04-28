@@ -5,8 +5,8 @@ description: Describes the set of customizations that are preserved versus those
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.date: 05/30/2018

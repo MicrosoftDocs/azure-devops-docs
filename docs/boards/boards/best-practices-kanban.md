@@ -5,8 +5,8 @@ description: Learn about best practices when implementing Kanban in Azure Boards
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: best-practice
 ms.date: 10/15/2021
 ---

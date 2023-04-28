@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project.  
 ms.service: azure-devops-boards
 ms.topic: troubleshooting
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021
 ---

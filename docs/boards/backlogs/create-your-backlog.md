@@ -5,8 +5,8 @@ description: Learn how to add backlog items or user stories to plan your project
 ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
 ms.service: azure-devops-boards
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -344,7 +344,7 @@ Choose **Save & Close** when done.
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+      [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (CMMI only)
    :::column-end:::
    :::column span="3":::
       Describes the customer impact of not implementing the requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories.

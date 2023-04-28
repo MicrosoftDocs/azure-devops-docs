@@ -5,8 +5,8 @@ description: XML syntax and usage for all ProcessConfiguration elements to suppo
 ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 12/15/2017  

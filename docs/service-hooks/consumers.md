@@ -185,7 +185,7 @@ Campfire is similar to instant messaging, but designed exclusively for groups.
 
 ### Post a message to a room
 
-Post a message about the event to a room in Campfire. For more information, see [Campfire](https://docs.helpscout.com/article/263-campfire).
+Post a message about the event to a room in Campfire.
 
 * Consumer ID: **campfire**
 * Action ID: **postMessageToRoom**

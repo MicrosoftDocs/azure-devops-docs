@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 10/14/2022
+ms.date: 04/26/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -176,11 +176,18 @@ Also, data we store on your behalf in Azure DevOps gets encrypted as follows:
 
 * Azure Blob Storage connections get encrypted to protect your data in transit. To protect data at rest stored in Azure Blob Storage, Azure DevOps uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
+> [!NOTE]
+> The primary reason for Azure DevOps not achieving Federal Information Processing Standards (FIPS) 140-2 compliance is the use of MD5 encryption algorithms to calculate checksum diffs for Team Foundation Version Control (TFVC) code repositories. Azure DevOps does not currently use MD5 to encrypt customer data.
+
 The Azure infrastructure helps the Azure DevOps team to log and monitor key aspects of the service. This helps ensure that activities within the service are legitimate, and detects breaches or attempted breaches. In addition, all deployment and administrator activities are securely logged, as is operator access to production storage. Real-time alerts are raised because the log information is automatically analyzed to uncover potentially malicious or unauthorized behavior.
 
 Where a possible intrusion or high priority security vulnerability gets identified, the team has a clear response plan. This plan outlines responsible parties, steps required to secure customer data, and how to engage with security experts at Microsoft. The team also notifies any organization owners if data was disclosed or corrupted, so that they can take appropriate steps to remedy the situation.
 
 Finally, to help combat emerging threats, Azure DevOps employs an "Assume Breach" strategy. A highly specialized group of security experts within Microsoft, known as the Red Team, assumes the role of sophisticated adversaries. This team tests breach detection and response, to accurately measure readiness and the impacts of real-world attacks. This strategy strengthens threat detection, response, and defense of the service. It also allows the team to validate and improve the effectiveness of the entire security program.
+
+### Ransomware attack protection overview
+
+Azure DevOps is built on Azure and uses Azure's best-in-class controls to help prevent, detect, and respond to a ransomware attack. For more information about how Azure protects customers from ransomware attacks, see [Azure defenses for ransomware attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/).
 
 ## Data privacy
 

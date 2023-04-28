@@ -1,8 +1,8 @@
 ---
 ms.subservice: azure-devops-analytics
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 01/19/2023
 ---
