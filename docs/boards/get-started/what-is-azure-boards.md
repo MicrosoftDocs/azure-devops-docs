@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 03/17/2023
+ms.date: 04/28/2023
 ---
 
 # What is Azure Boards?
@@ -30,10 +30,11 @@ You can track work in Azure Boards using default or customized work item types a
 |---------|---------|
 |[**Work items**](../work-items/view-add-work-items.md)    | Access lists of work items based on specific criteria, such as those assigned to you, ones you follow, and work items you viewed or updated.        |
 |[**Boards**](../boards/kanban-quickstart.md) | View work items as cards and update their status through drag-and-drop, similar to physical sticky notes on a whiteboard. Use this feature to implement Kanban practices and visualize work flow for a team.        |
-|[**Backlogs**](../backlogs/create-your-backlog.md)    | view, plan, order, and organize work items, including using a product backlog to represent your project plan and a portfolio backlog to group work under features and epics.        |
-|[**Sprints**](../sprints/assign-work-sprint.md)   | access your team's filtered view of work items based on a specific sprint or iteration path. Assign work to a sprint using drag-and-drop from the backlog. Interact with a backlog list or card-based taskboard to implement Scrum practices.        |
+|[**Backlogs**](../backlogs/create-your-backlog.md)    | View, plan, order, and organize work items, including using a product backlog to represent your project plan and a portfolio backlog to group work under features and epics.        |
+|[**Sprints**](../sprints/assign-work-sprint.md)   | Access your team's filtered view of work items based on a specific sprint or iteration path. Assign work to a sprint using drag-and-drop from the backlog. Interact with a backlog list or card-based taskboard to implement Scrum practices.        |
 |[**Queries**](../queries/view-run-query.md)  | Generate custom work item lists and perform various tasks, such as triage work, make bulk updates, and view relationships between work items. Queries also allow for creating status and trend charts that can be added to dashboards.        |
 |[**Delivery Plans**](../plans/review-team-plans.md)   | Management teams can view deliverables and track dependencies across multiple teams in a calendar view. Delivery plans support tasks such as viewing up to 15 team backlogs, custom portfolio backlogs and epics, and work that spans several iterations. Users can add backlog items to a plan, view rollup progress of features and epics, and dependencies between work items.        |
+| [Analytics views](../../report/powerbi/what-are-analytics-views.md) | Create highly sophisticated Power BI reports, based on Azure Boards data (work items). Access default Analytics views or create a custom view.  |
 
 :::image type="content" source="media/about-boards/boards-hubs.png" alt-text="Screenshot showing hubs in Azure Boards menu.":::
 

@@ -52,7 +52,7 @@ ms.date: 08/10/2020
 
 ## Select the Analytics view
 
-1. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. The Data Connector presents a list of available [Analytics Views](../powerbi/what-are-analytics-views.md). Each view represents a set of data that you can pull into Power BI. You can also [create custom Analytics Views](../powerbi/analytics-views-create.md).
+1. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. The Data Connector presents a list of available [Analytics views](../powerbi/what-are-analytics-views.md). Each view represents a set of data that you can pull into Power BI. You can also [create custom Analytics views](../powerbi/analytics-views-create.md).
 
 	 The image below shows the default Analytics views. Your list of views may differ based on the process model used to created your project. All views listed, except those appended with "Today", will provide historical trend data. 
 
@@ -77,7 +77,7 @@ ms.date: 08/10/2020
 	Select the checkbox next to **Work Items - Today** table and choose **Load**. 
 
 	> [!NOTE]
-	> [Analytics Views](../powerbi/what-are-analytics-views.md) do not apply filters that have defined using Power BI on the server. Any filters applied in Power BI will limit the data shown to end users but will not reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](../powerbi/analytics-views-create.md).  
+	> [Analytics views](../powerbi/what-are-analytics-views.md) do not apply filters that have defined using Power BI on the server. Any filters applied in Power BI will limit the data shown to end users but will not reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](../powerbi/analytics-views-create.md).  
 
 2. **Wait for the data to load**. You can observe its progress by looking at the status messages, which appear directly under 
 	the table name. Should you see any errors, refer to the [Q & A](../powerbi/data-connector-connect.md#q-a) section as it covers the most common problems.  
