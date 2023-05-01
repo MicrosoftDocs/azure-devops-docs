@@ -5,7 +5,7 @@ author: robbagby
 ms.author: robbag
 ms.date: 05/01/2023
 ms.topic: example-scenario
-  ms.custom:
+ms.custom:
     - devops
     - app-development
     - internal-intro
@@ -158,7 +158,7 @@ Azure DevOps is billed on a per-user per-month basis. There might be more charge
 
 ## Security
 
-- Consider the [security benefits of using Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#security) when choosing whether to use Microsoft-hosted or self-hosted agents.
+- Consider the [security benefits of using Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted&tabs=yaml#security) when choosing whether to use Microsoft-hosted or self-hosted agents.
 
 - Ensure all changes to environments are done through pipelines. Implement role-based access controls (RBAC) on the principle of least privilege, preventing users from accessing environments.
 
@@ -173,16 +173,16 @@ Review the following resources to learn more about CI/CD and Azure DevOps:
 - [Step-by-step Tutorials: DevOps with Azure DevOps](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet)
 - [Create a CI/CD pipeline for .NET with Azure DevOps Projects](/azure/devops-project/azure-devops-project-aspnet-core)
 - [What is Azure Repos?](/azure/devops/repos/get-started/what-is-repos)
-- [What is Azure Pipelines?](https://learn.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines)
+- [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
 - [Azure DevOps](https://azure.microsoft.com/services/devops)
 - [App Service overview](/azure/app-service/overview)
 - [Introduction to Azure Functions](/azure/azure-functions/functions-overview)
 - [Azure Key Vault basic concepts](/azure/key-vault/general/basic-concepts)
-- [Azure Monitor overview](https://learn.microsoft.com/azure/azure-monitor/overview)
+- [Azure Monitor overview](/azure/azure-monitor/overview)
 
 ## Related resources
 
-- [DevOps Checklist](../../checklist/dev-ops.md)
+- [DevOps Checklist](/azure/architecture/checklist/dev-ops)
 - [CI/CD for Azure VMs](/azure/architecture/solution-ideas/articles/cicd-for-azure-vms)
 - [CI/CD for Containers](/azure/architecture/solution-ideas/articles/cicd-for-containers)
 - [Build a CI/CD pipeline for microservices on Kubernetes](/azure/architecture/microservices/ci-cd-kubernetes)
