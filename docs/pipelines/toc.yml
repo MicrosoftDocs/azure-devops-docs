@@ -628,8 +628,8 @@
   items:
     - name: Baseline Azure Pipelines architecture
       href: architectures/devops-baseline-architecture.md
-    # - name: Azure Web Apps deployment architecture
-    #   href: licensing/concurrent-jobs.md
+    - name: Azure Web Apps deployment architecture
+      href: architectures/devops-azure-web-apps-architecture.md
     # - name: DevTest and DevOps for IaaS architecture
     #   href: policies/permissions.md
     # - name: IaaS application architecture
