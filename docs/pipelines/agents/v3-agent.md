@@ -3,7 +3,7 @@ title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '= azure-devops'
 ms.topic: conceptual
-ms.date: 02/09/2023
+ms.date: 05/01/2023
 ---
 
 # Agent software version 3
@@ -14,7 +14,7 @@ The pipelines team is upgrading the agent software from version 2.x (using .NET 
 
 If you're running your self-hosted agents on newer operating systems [supported by .NET 6](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md), the upgrade to the new agent version is automatic.
 
-The following oeprating systems are supported by the 3.x agent.
+The following operating systems are supported by the 3.x agent.
 
 * **Linux**
   * x64
@@ -66,13 +66,13 @@ The following list of operating systems are commonly used for self-hosted 2.x ag
 
 You can use a [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindAgentsNotCompatibleWithAgent) to predict whether the agents in your self-hosted pools are able to upgrade from 2.x to 3.x.
 
-Starting with agent version 2.218 (or [2.214 on RHEL 6](https://aka.ms/azdo-pipeline-agent-rhel6)), pipelines running on one of the unsupported operating systems listed here will fail with with following error message: `This operating system will stop receiving updates of the Pipelines Agent in the future. To be able to continue to run pipelines please upgrade the operating system or set an environment variable or agent knob "AGENT_ACKNOWLEDGE_NO_UPDATES" to "true". See https://aka.ms/azdo-pipeline-agent-v2-eos for more information.`
+When sttemptinh to run pipelines on agent version 2.218 (or [2.214 on RHEL 6](https://aka.ms/azdo-pipeline-agent-rhel6)), pipelines running on one of the unsupported operating systems listed here will fail with following error message: `This operating system will stop receiving updates of the Pipelines Agent in the future. To be able to continue to run pipelines please upgrade the operating system or set an environment variable or agent knob "AGENT_ACKNOWLEDGE_NO_UPDATES" to "true". See https://aka.ms/azdo-pipeline-agent-v2-eos for more information.`
 
 To resolve this error you can:
 
 1. Upgrade or move your agent machines to one of the supported operating systems listed previously in this article. This is the preferred solution and allows you to get future agent updates,
 1. Set an `AGENT_ACKNOWLEDGE_NO_UPDATES` variable on the agent, either by setting an environment variable or a pipeline variable.
-  * You can set `AGENT_ACKNOWLEDGE_NO_UPDATES` by configuring an an environment variable on the agent, for example in **/etc/environment** or **etc/profile.d**: `AGENT_ACKNOWLEDGE_NO_UPDATES=true`.
+  * You can set `AGENT_ACKNOWLEDGE_NO_UPDATES` by configuring an environment variable on the agent, for example in **/etc/environment** or **etc/profile.d**: `AGENT_ACKNOWLEDGE_NO_UPDATES=true`.
   * You can set a pipeline variable.
 
     ```yml
