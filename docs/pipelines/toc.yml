@@ -624,6 +624,16 @@
           displayName: PATH, containers, control tasks, auditing
     - name: Download release permissions report
       href: ../organizations/security/download-permissions-report-release.md
+- name: Architecture
+  items:
+    - name: Baseline Azure Pipelines architecture
+      href: architectures/devops-baseline-architecture.md
+    # - name: Azure Web Apps deployment architecture
+    #   href: licensing/concurrent-jobs.md
+    # - name: DevTest and DevOps for IaaS architecture
+    #   href: policies/permissions.md
+    # - name: IaaS application architecture
+    #   href: policies/permissions.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
