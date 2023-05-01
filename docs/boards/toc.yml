@@ -47,52 +47,53 @@
     href: work-items/auto-complete-work-items-pull-requests.md
   - name: Request and track feedback
     href: ../project/feedback/toc.yml
-- name: Excel, Project, PowerPoint
-  items:
-  - name: Connect to an Office client
-    displayName: Excel, Microsoft Excel, open in Excel, Office 365
-    href: backlogs/office/track-work.md
-  - name: Bulk add or modify work items (Excel)
-    displayName: bulk edit, Excel, edit in Excel
-    href: backlogs/office/bulk-add-modify-work-items-excel.md
-  - name: Excel FAQs
-    displayName: edit in Excel, open in Excel
-    href: backlogs/office/faqs.yml
-  - name: Project & Storyboarding (Deprecated)
-    items:
-    - name: Create backlog items & tasks (Project)
-      href: /previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project
-    - name: Schedule projects (Project)
-      href: /previous-versions/azure/devops/boards/backlogs/office/schedule-projects-using-microsoft-project
-    - name: Rollup work using Project
-      href: /previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project
-    - name: Storyboard your ideas (PowerPoint)
-      href: /previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint
-    - name: Add & share storyboard shapes (PowerPoint)
-      href: /previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes
-  - name: Troubleshooting
-    items:
-    - name: Office integration issues
-      href: backlogs/office/tfs-office-integration-issues.md
-    - name: Resolve Excel data conflicts
-      displayName: conflicts, Excel, conflicting work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
-      href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
-    - name: Resolve Excel data validation errors
-      displayName: error checking in Excel, error checking, invalid links
-      href: backlogs/office/resolve-excel-data-validation-errors.md
-    - name: Resolve invalid links in an Excel tree list
-      displayName: duplicate titles, disconnected, sorted tree, locked
-      href: backlogs/office/resolve-excel-invalid-links-tree-list.md
-  - name: Project portal & process guidance (Deprecated)
-    items:
-    - name: Configure or add a project portal
-      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json
-    - name: Configure or redirect process guidance
-      href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
 - name: Azure Boards & GitHub
   href: github/toc.yml
 - name: Integrations & extensions
   href: extensions/toc.yml
+  items:
+  - name: Excel, Project, PowerPoint
+    items:
+    - name: Connect to an Office client
+      displayName: Excel, Microsoft Excel, open in Excel, Office 365
+      href: backlogs/office/track-work.md
+    - name: Bulk add or modify work items (Excel)
+      displayName: bulk edit, Excel, edit in Excel
+      href: backlogs/office/bulk-add-modify-work-items-excel.md
+    - name: Excel FAQs
+      displayName: edit in Excel, open in Excel
+      href: backlogs/office/faqs.yml
+    - name: Project & Storyboarding (Deprecated)
+      items:
+      - name: Create backlog items & tasks (Project)
+        href: /previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project
+      - name: Schedule projects (Project)
+        href: /previous-versions/azure/devops/boards/backlogs/office/schedule-projects-using-microsoft-project
+      - name: Rollup work using Project
+        href: /previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project
+      - name: Storyboard your ideas (PowerPoint)
+        href: /previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint
+      - name: Add & share storyboard shapes (PowerPoint)
+        href: /previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes
+    - name: Troubleshooting
+      items:
+      - name: Office integration issues
+        href: backlogs/office/tfs-office-integration-issues.md
+      - name: Resolve Excel data conflicts
+        displayName: conflicts, Excel, conflicting work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+        href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
+      - name: Resolve Excel data validation errors
+        displayName: error checking in Excel, error checking, invalid links
+        href: backlogs/office/resolve-excel-data-validation-errors.md
+      - name: Resolve invalid links in an Excel tree list
+        displayName: duplicate titles, disconnected, sorted tree, locked
+        href: backlogs/office/resolve-excel-invalid-links-tree-list.md
+    - name: Project portal & process guidance (Deprecated)
+      items:
+      - name: Configure or add a project portal
+        href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json
+      - name: Configure or redirect process guidance
+        href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
 - name: Troubleshooting
   items:
   - name: FAQs

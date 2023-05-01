@@ -121,7 +121,7 @@ To quickly get familiar with these Power BI basic features, see the following Po
 
 Several sample reports are provided to show how to generate reports from either an Analytics view or OData query. 
 
-### Sample reports using Analytics View
+### Sample reports using Analytics view
 
 - [Active bugs report](active-bugs-sample-report.md)  
 - [Get a count of work items](data-connector-examples.md)  

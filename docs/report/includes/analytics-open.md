@@ -15,6 +15,6 @@ From your web portal, expand **Overview** and choose **Analytics views**.
 If you don't see **Analytics**, check that it's enabled and that you have permissions to view Analytics. See the [Permissions and prerequisites to access Analytics](../analytics/analytics-permissions-prerequisites.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of expand Boards and choose Analytics views.](../powerbi/media/analytics-views/open-analytics-2020.png)  
+> ![Screenshot of expanding the Boards hub and choosing Analytics views, which is surrounded by red square.](../powerbi/media/analytics-views/open-analytics-2020.png)  
 
 

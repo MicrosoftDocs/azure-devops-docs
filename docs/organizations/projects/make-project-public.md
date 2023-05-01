@@ -238,7 +238,7 @@ The following user interface elements are hidden for non-members.
       Analytics
    :::column-end:::
    :::column span="2":::
-      Analytics Views is hidden, and the Analytics OData feed isn't supported for non-members. Power BI integration in general isn't supported.
+      Analytics views is hidden, and the Analytics OData feed isn't supported for non-members. Power BI integration in general isn't supported.
    :::column-end:::
 :::row-end:::
 :::row:::
