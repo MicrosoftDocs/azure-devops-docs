@@ -2,7 +2,7 @@
 title: Azure Pipelines architecture for Azure Web Apps 
 description: Learn how to create web apps using ASP.NET, Java, Node.js, or PHP. Deliver value faster to your customers with a CI/CD pipeline.
 author: martinekuan
-ms.author: architectures
+ms.author: martinek
 ms.date: 05/01/2023
 ms.topic: solution-idea
 ms.category: 
