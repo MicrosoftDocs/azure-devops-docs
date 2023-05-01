@@ -1,5 +1,5 @@
 ---
-title: CI/CD baseline architecture with Azure Pipelines
+title: Azure Pipelines baseline architecture 
 description: This architecture illustrates building a continuous integration and deployment pipeline using Azure Pipelines.
 author: robbagby
 ms.author: robbag
