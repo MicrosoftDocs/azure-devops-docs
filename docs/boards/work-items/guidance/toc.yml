@@ -1,3 +1,6 @@
+- name: About default processes
+  displayName: Default, process, Basic, Agile, Scrum, CMMI
+  href: choose-process.md
 - name: Agile culture
   displayName: agile transformation, ship, DevOps
   href: ../../plans/agile-culture.md
