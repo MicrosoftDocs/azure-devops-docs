@@ -624,7 +624,7 @@
           displayName: PATH, containers, control tasks, auditing
     - name: Download release permissions report
       href: ../organizations/security/download-permissions-report-release.md
-- name: Architecture
+- name: Architectures
   items:
     - name: Baseline Azure Pipelines architecture
       href: architectures/devops-baseline-architecture.md
