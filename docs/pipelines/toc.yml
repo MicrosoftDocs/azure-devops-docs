@@ -630,8 +630,8 @@
       href: architectures/devops-baseline-architecture.md
     - name: Azure Web Apps deployment architecture
       href: architectures/devops-azure-web-apps-architecture.md
-    # - name: DevTest and DevOps for IaaS architecture
-    #   href: policies/permissions.md
+    - name: DevTest for IaaS architecture
+      href: devops-devtest-iaas-architecture.md
     # - name: IaaS application architecture
     #   href: policies/permissions.md
 - name: Integrate with 3rd party software
