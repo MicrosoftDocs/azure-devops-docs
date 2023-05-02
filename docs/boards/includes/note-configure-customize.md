@@ -14,7 +14,7 @@ ms.date: 05/02/2023
 > For more information, see the following articles:
 > - [Configure and customize Azure Boards](../configure-customize.md)
 > - [Create a project using the process of your choice](../../organizations/projects/create-project.md)
-- [Customize your work tracking experience (process models)](../../reference/customize-work.md)
-- [Manage inherited processes](../../organizations/settings/work/manage-process.md)  
+> - [Customize your work tracking experience (process models)](../../reference/customize-work.md)
+> - [Manage inherited processes](../../organizations/settings/work/manage-process.md)  
 
 ::: moniker-end

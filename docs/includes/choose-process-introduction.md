@@ -11,8 +11,6 @@ When you create a project, you choose a *process* or *process template* based on
 
 |Term  |Description  |
 |---------|---------|
-|Process model | Refers to the model used to support projects created for an organization or project collection. Only one process model is supported for a project at a time. 
-
-For more information and a comparison of the three process models&mdash;*Inheritance*, *On-premises XML*, and *Hosted XML*&mdash;see [Customize work tracking](../reference/customize-work.md#collection-level-process-customization).        |
+|Process model | Refers to the model used to support projects created for an organization or project collection. Only one process model is supported for a project at a time.         |
 |Process     | Defines the building blocks of the work item tracking system and supports the *Inheritance* process model for Azure Boards. This model supports customization of projects through a What You See Is What You Get (WYSIWYG) user interface.        |
 |Process template     | Defines the building blocks of the work item tracking system and other subsystems you access through Azure DevOps. Process templates are only used with the *Hosted XML* and *On-premises XML* process models. You can customize projects by modifying and importing process template XML definition files.        |
