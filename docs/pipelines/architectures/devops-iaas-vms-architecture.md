@@ -35,7 +35,7 @@ This article describes a high-level DevOps workflow for deploying application ch
 
 ## Architecture
 
-:::image type="complex" source="media/azure-pipelines-iaas-variant-architecture.svg" lightbox="../media/azure-pipelines-iaas-variant-architecture.svg" alt-text="Architecture diagram of a CI/CD pipeline using Azure Pipelines." border="false"::: 
+:::image type="complex" source="media/azure-pipelines-iaas-variant-architecture.svg" lightbox="media/azure-pipelines-iaas-variant-architecture.svg" alt-text="Architecture diagram of a CI/CD pipeline using Azure Pipelines." border="false"::: 
 Architecture diagram of an Azure pipeline deploying to Azure Virtual Machines. The diagram shows the following steps: 1. An engineer pushing code changes to an Azure DevOps Git repository. 2. An Azure DevOps PR pipeline getting triggered. This pipeline shows the following tasks: linting, restore, build, and unit tests. 3. An Azure DevOps CI pipeline getting triggered. This pipeline shows the following tasks: get secrets, linting, restore, build, unit tests, integration tests and publishing a Web Deploy package as an artifact. 3. An Azure DevOps CD pipeline getting triggered. This pipeline shows the following tasks: download artifacts, deploy to staging, tests, manual intervention, and release. 4. Shows the CD pipeline deploying to a Virtual Machine of Virtual Machine Scale Set. 5. Shows the CD pipeline releasing to a production environment by deploying to a production environment. 6. Shows an operator monitoring the pipeline, taking advantage of Azure Monitor, Azure Application Insights and Azure Analytics Workspace.
 :::image-end:::
 

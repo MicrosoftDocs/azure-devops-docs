@@ -631,9 +631,9 @@
     - name: Azure Web Apps architecture
       href: architectures/devops-azure-web-apps-architecture.md
     - name: DevTest architecture
-      href: devops-devtest-iaas-architecture.md
+      href: architectures/devops-devtest-iaas-architecture.md
     - name: IaaS architecture
-      href: devops-iaas-vms-architecture.md
+      href: architectures/devops-iaas-vms-architecture.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
