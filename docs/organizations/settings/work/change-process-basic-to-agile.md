@@ -26,7 +26,7 @@ Prior to making this change, we recommend you familiarize yourself with the proc
 |**Basic** | ![Basic work item types](../../../boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/media/track-issues/basic-process-workflow.png)|
 |**Agile** | ![Agile work item types](media/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
 
-For an overview of all processes, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
 Reasons you might want to change your process from Basic to Agile:
 

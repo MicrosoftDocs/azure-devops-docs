@@ -18,7 +18,7 @@ ms.date: 03/31/2017
 
 You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of work&mdash;requirements, tasks, code defects&mdash;to support software development.  
 
-The workflow determines the logical progression and regression of work that team members will perform. It also specifies the values that appear in the drop-down menus for the State and Reason fields. For an overview of the default workflow states supported in the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
+The workflow determines the logical progression and regression of work that team members will perform. It also specifies the values that appear in the drop-down menus for the State and Reason fields. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md). 
 
 **Workflow for Product Backlog Item (Scrum process template)**  
 
