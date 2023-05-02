@@ -1,5 +1,5 @@
 ---
-title: Choose a process for your Azure DevOps project
+title: Choose a process flow or process template
 titleSuffix: Azure Boards
 description: Learn how to choose a process or process template based on the process model you use in Azure Boards and Azure DevOps. 
 ms.custom: work-items 
@@ -13,38 +13,33 @@ ms.date: 04/01/2022
 ---
 
 
-# Choose a process flow or process template to work in Azure Boards 
+# Choose a process flow or process template
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
+
+Azure Boards offers a variety of processes to choose from for managing work items. Selecting the right process is essential for optimizing the workflow and ensuring the success of a project. In this article, we explore the different processes available Azure Boards and provide guidance on how to choose the most suitable one for your project.
 
 [!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
-For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
-
+For more information, see the following articles:
+- [Configure and customize Azure Boards](../../configure-customize.md)
+- [Create a project using the process of your choice](../../../organizations/projects/create-project.md)
+- [Customize your work tracking experience (process models)](../../../reference/customize-work.md).
+::: moniker range=">= azure-devops-2019"
+- [Manage inherited processes](../../../organizations/settings/work/manage-process.md) 
+::: moniker-end
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they're referred to as a "process."
-
-::: moniker range=">= azure-devops-2019"
-
-> [!TIP]  
-> To view and manage Inherited process models, see [Manage processes](../../../organizations/settings/work/manage-process.md).
-
-::: moniker-end
-
-
-<a id="template_intro"></a>
-
-
+The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, Capability Maturity Model Integration (CMMI), and Scrum&mdash;are the same and summarized in this article. The Basic process is available from Azure DevOps Server 2019.1 and later versions, which we refer to as a "process."
 
 ## Choose a Basic, Agile, Scrum, and CMMI process
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
 
 Basic is the most lightweight and is in a selective Preview. 
-Scrum is the next most lightweight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
+Scrum is the next most lightweight. Agile supports many Agile method terms, and CMMI provides the most support for formal processes and change management. 
 
 [!INCLUDE [temp](../../includes/note-basic-process.md)]
 
@@ -143,26 +138,34 @@ Or, you can create a project from a process and then customize the project.
 
 The following table summarizes the main distinctions between the WITs and states used by the four default processes.  
 
+| **Tracking area** | **Basic** | **Agile** | **Scrum** | **CMMI** |
+| -------- | -------- | -------- | -------- | -------- |
+| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 4 | Row 1, Column 5 |
+| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 2, Column 4 | Row 2, Column 5 |
+| Row 3, Column 1 | Row 3, Column 2 | Row 3, Column 3 | Row 3, Column 4 | Row 3, Column 5 |
+| Row 4, Column 1 | Row 4, Column 2 | Row 4, Column 3 | Row 4, Column 4 | Row 4, Column 5 |
+| Row 5, Column 1 | Row 5, Column 2 | Row 5, Column 3 | Row 5, Column 4 | Row 5, Column 5 |
+| Row6 ,Column1|Row6 ,Column2|Row6 ,Column3|Row6 ,Column4|Row6 ,Column5|
 :::row:::
    :::column span="1":::
    
-   **Tracking area**
+   
    :::column-end:::
    :::column span="1":::
    
-   **Basic**
+   
    :::column-end:::
    :::column span="1":::
    
-   **Agile**
+   
    :::column-end:::
    :::column span="1":::
    
-   **Scrum**
+   
    :::column-end:::
    :::column span="1":::
    
-   **CMMI**
+
    :::column-end:::
 :::row-end:::
 ---
