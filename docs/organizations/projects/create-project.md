@@ -121,7 +121,7 @@ There isn't a limit on the number of projects that you can create within a proje
    - Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. 
    - Enter an optional description. 
    - Choose the visibility, initial source control type, and work item process. 
-     For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
+     For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [About processes and process templates](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of create new project form.](media/create-project/create-new-project-form-new-nav.png)  
