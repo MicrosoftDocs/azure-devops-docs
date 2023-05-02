@@ -26,7 +26,7 @@ This article describes a high-level DevOps workflow for deploying application ch
 
 ## Architecture
 
-:::image type="complex" source="media/azure-pipelines-devtest-variant-architecture.svg" lightbox="../media/azure-pipelines-devtest-variant-architecture.svg" alt-text="Architecture diagram of a CI/CD pipeline using Azure Pipelines that uses Azure DevTest Labs for a staging environment." border="false"::: 
+:::image type="complex" source="media/azure-pipelines-devtest-variant-architecture.svg" lightbox="media/azure-pipelines-devtest-variant-architecture.svg" alt-text="Architecture diagram of a CI/CD pipeline using Azure Pipelines that uses Azure DevTest Labs for a staging environment." border="false"::: 
 Architecture diagram of an Azure pipeline deploying to Azure Virtual Machines. The diagram shows the following steps: 1. A DevTest Labs staging environment is pre-created for the CI/CD pipeline. 2. An engineer pushing code changes to an Azure DevOps Git repository. 3. An Azure DevOps PR pipeline getting triggered. This pipeline shows the following tasks: linting, restore, build, and unit tests. 4. An Azure DevOps CI pipeline getting triggered. This pipeline shows the following tasks: get secrets, linting, restore, build, unit tests, integration tests and publishing artifacts. 4. An Azure DevOps CD pipeline getting triggered. This pipeline shows the following tasks: download artifacts, deploy to staging, tests, manual intervention, and release. 5. Shows the CD pipeline deploying to an Azure DevTest Labs staging environment. 6. Shows the CD pipeline releasing to a production environment. 7. Shows an operator monitoring the pipeline, taking advantage of Azure Monitor, Azure Application Insights and Azure Analytics Workspace.
 :::image-end:::
 
