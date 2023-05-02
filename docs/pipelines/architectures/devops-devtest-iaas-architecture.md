@@ -1,5 +1,5 @@
 ---
-title: DevTest and DevOps for IaaS solutions architecture 
+title: DevTest and DevOps solutions architecture 
 description: Learn how to configure a DevTest and DevOps infrastructure for development, testing, and deploying IaaS-based software.
 author: martinekuan
 ms.author: martinek
@@ -15,7 +15,7 @@ summary: Learn how to configure a DevTest and DevOps infrastructure for developm
 monikerRange: '<= azure-devops'
 ---
 
-# Azure Pipelines architecture with with DevTest Labs 
+# Azure Pipelines architecture with DevTest Labs 
 
 > [!IMPORTANT]
 > CI/CD with DevTest Labs is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-baseline-architecture.md). This article focuses on the specifics of deploying to a DevTest Labs staging environments.
