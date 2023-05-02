@@ -1,7 +1,7 @@
 ---
-title: Choose a process flow or process template
+title: About default processes and process templates
 titleSuffix: Azure Boards
-description: Learn how to choose a process or process template based on the process model you use in Azure Boards and Azure DevOps. 
+description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project. 
 ms.custom: work-items 
 ms.service: azure-devops-boards
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
@@ -13,7 +13,7 @@ ms.date: 05/02/2023
 ---
 
 
-# Choose a process flow or process template
+# About default processes and process templates
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
@@ -23,27 +23,18 @@ Azure Boards offers various processes to choose from for managing work items. Se
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
-For more information, see the following articles:
-- [Configure and customize Azure Boards](../../configure-customize.md)
-- [Create a project using the process of your choice](../../../organizations/projects/create-project.md)
-- [Customize your work tracking experience (process models)](../../../reference/customize-work.md).
-::: moniker range=">= azure-devops-2019"
-- [Manage inherited processes](../../../organizations/settings/work/manage-process.md) 
-::: moniker-end
+The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, Capability Maturity Model Integration (CMMI), and Scrum&mdash;are the same and summarized in this article.
+
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, Capability Maturity Model Integration (CMMI), and Scrum&mdash;are the same and summarized in this article. The Basic process is available from Azure DevOps Server 2019.1 and later versions, which we refer to as a "process."
-
-## Choose a Basic, Agile, Scrum, and CMMI process
+## Default processes
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
 
-Basic is the most lightweight and is in a selective Preview. 
-Scrum is the next most lightweight. Agile supports many Agile method terms, and CMMI provides the most support for formal processes and change management. 
+**Basic** is the most lightweight and is in a selective Preview. 
+**Scrum** is the next most lightweight. **Agile** supports many Agile method terms, and **CMMI** provides the most support for formal processes and change management. 
 
 [!INCLUDE [temp](../../includes/note-basic-process.md)]
-
-Choose the process that provides the best fit for your team.  
 
 :::row:::
    :::column span="2":::
@@ -123,7 +114,7 @@ Choose the process that provides the best fit for your team.
 
 If you need more than two or three backlog levels, you can add more based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)  
-- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).  
+- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)  
 	
 <a id="main-distinctions"></a>
 
@@ -574,4 +565,4 @@ If you change the workflow for the test plan and test suite, you might need to u
 - [Customize your work tracking experience](../../../reference/customize-work.md).    
 - [Upload/download process templates](manage-process-templates.md)   
 - [Configure features after an Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
-- [Azure DevOps support page](https://azure.microsoft.com/support/devops/).
+- [Azure DevOps support page](https://azure.microsoft.com/support/devops/)
