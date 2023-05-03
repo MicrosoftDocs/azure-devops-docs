@@ -57,7 +57,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
     * Select **Retention** to set up how long to keep manual and automated test runs.     
 
-    :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Retention settings in Project settings for DevOps 2019.":::
+    :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Screenshot of retention settings in Project settings for DevOps 2019.":::
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
     * Select **Retention** to set up how long to keep manual and automated test runs.     
 
-    :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
+    :::image type="content" source="media/retention-menu.png" alt-text="Screenshot of retention settings in Project settings.":::
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
