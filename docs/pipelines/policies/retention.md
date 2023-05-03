@@ -58,6 +58,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * Select **Retention** to set up how long to keep manual and automated test runs.     
 
     :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Retention settings in Project settings for DevOps 2019.":::
+
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
