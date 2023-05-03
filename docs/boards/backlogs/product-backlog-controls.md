@@ -145,7 +145,7 @@ For details on using each of these controls, see [Configure your backlog view](c
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)  
       > [!NOTE]
-      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). To learn more, see [Choose a process](../work-items/guidance/choose-process.md). 
+      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end

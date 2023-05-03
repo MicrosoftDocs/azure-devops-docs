@@ -320,7 +320,7 @@ Both the operating system and Active Directory impose certain restrictions on co
 A process defines the building blocks of the work item tracking system and other subsystems that you have access to after connecting to a project.  
 
 > [!NOTE]   
->  **Terminology**: Both "process" and "process template" refer to an interdependent set of files used to create a project. For more information, see [Choose a process](../../boards/work-items/guidance/choose-process.md), which describes the differences among the three default processes available to you.   
+>  **Terminology**: Both "process" and "process template" refer to an interdependent set of files used to create a project. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md), which describes the differences among the three default processes available to you.   
 
 Processes that you define or customize must conform to the following restrictions.  
 

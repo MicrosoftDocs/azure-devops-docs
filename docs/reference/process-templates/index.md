@@ -23,7 +23,7 @@ ms.date: 01/13/2023
 
 Process template customization is only supported for the [Hosted XML](../../organizations/settings/work/hosted-xml-process-model.md) and [On-premises XML](../on-premises-xml-process-model.md) process models.  
  
-For an overview of the default process templates available to you, see [Choose a process](../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json).
+For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json).
 
 For on-premises deployments and Azure DevOps Services, you can [upload/download process templates](../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json). 
 
