@@ -87,9 +87,11 @@ In Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 | --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
 | List/install/restore packages                 | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
 | Publish packages                              |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Unlist packages                               |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Promote packages to a view                    |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Unlist packages (NuGet)                       |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
 | Delete packages                               |          |              |             | &#x2713; |     &#x2713;    |
+| Deprecate packages (Npm)                      |          |              |   &#x2713;  |          |                 |
+| Unpublish packages (Npm)                      |          |              |             |          |     &#x2713;    |
+| Promote packages to a view                    |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
 | Add/remove upstream sources                   |          |              |             | &#x2713; |     &#x2713;    |
 | Allow external package versions               |          |              |             | &#x2713; |     &#x2713;    |
 | Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
