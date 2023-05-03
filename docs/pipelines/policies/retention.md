@@ -45,11 +45,26 @@ To manage retention policies, you must have one of the following subscriptions:
 
 You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2019"
 
 ## Configure retention policies
 
-1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
+1. Sign in to your project. 
+
+2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+
+3. Select **Release retention** under **Pipelines** or **Retention** under **Test**.
+    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
+    * Select **Retention** to set up how long to keep manual and automated test runs.     
+
+    :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Retention settings in Project settings for DevOps 2019.":::
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+## Configure retention policies
+
+1. Sign in to your project. 
 
 2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
