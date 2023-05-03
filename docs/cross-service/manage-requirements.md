@@ -358,7 +358,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 - [About work items](../boards/work-items/about-work-items.md) 
 - [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md)
-- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About processes and process templates](../boards/work-items/guidance/choose-process.md)
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 

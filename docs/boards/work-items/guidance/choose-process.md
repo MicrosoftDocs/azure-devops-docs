@@ -1,7 +1,7 @@
 ---
-title: Choose a process for your Azure DevOps project
+title: About default processes and process templates
 titleSuffix: Azure Boards
-description: Learn how to choose a process or process template based on the process model you use in Azure Boards and Azure DevOps. 
+description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project. 
 ms.custom: work-items 
 ms.service: azure-devops-boards
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
@@ -9,46 +9,32 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 05/02/2023
 ---
 
 
-# Choose a process flow or process template to work in Azure Boards 
+# About default processes and process templates
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
+
+Azure Boards offers various processes to choose from for managing work items. Selecting the right process is essential for optimizing the workflow and ensuring the success of a project. In this article, we explore the different processes available Azure Boards and provide guidance on how to choose the most suitable one for your project.
 
 [!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
-For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
+The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, Capability Maturity Model Integration (CMMI), and Scrum&mdash;are the same and summarized in this article.
 
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they're referred to as a "process."
-
-::: moniker range=">= azure-devops-2019"
-
-> [!TIP]  
-> To view and manage Inherited process models, see [Manage processes](../../../organizations/settings/work/manage-process.md).
-
-::: moniker-end
-
-
-<a id="template_intro"></a>
-
-
-
-## Choose a Basic, Agile, Scrum, and CMMI process
+## Default processes
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
 
-Basic is the most lightweight and is in a selective Preview. 
-Scrum is the next most lightweight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
+**Basic** is the most lightweight and is in a selective Preview. 
+**Scrum** is the next most lightweight. **Agile** supports many Agile method terms, and **CMMI** provides the most support for formal processes and change management. 
 
 [!INCLUDE [temp](../../includes/note-basic-process.md)]
-
-Choose the process that provides the best fit for your team.  
 
 :::row:::
    :::column span="2":::
@@ -72,8 +58,7 @@ Choose the process that provides the best fit for your team.
    **Agile**
 
    Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum,
-   and tracks development and test activities separately. This process works great if you want to track user stories and
-(optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.  
+   and tracks development and test activities separately. This process works great if you want to track user stories and (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.  
 
    You can learn more about Agile methodologies at the
    [Agile Alliance](https://www.agilealliance.org/).
@@ -93,8 +78,7 @@ Choose the process that provides the best fit for your team.
    **Scrum**
 
    
-   Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great if you want to track product backlog items (PBIs) and
-   bugs on the Kanban board, or break down PBIs and bugs into tasks on the taskboard.
+   Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great for tracking  product backlog items (PBIs) and bugs on the Kanban board. You can also break down PBIs and bugs into tasks on the taskboard.
    
    This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).
 
@@ -130,7 +114,7 @@ Choose the process that provides the best fit for your team.
 
 If you need more than two or three backlog levels, you can add more based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)  
-- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).  
+- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)  
 	
 <a id="main-distinctions"></a>
 
@@ -138,31 +122,26 @@ If you need more than two or three backlog levels, you can add more based on the
 
 The default processes are designed to meet the needs of most teams. 
 If your team has unusual needs and connects to an on-premises server, 
-you can customize a process and then create the project. 
+you can customize a process, and then create the project. 
 Or, you can create a project from a process and then customize the project.  
 
 The following table summarizes the main distinctions between the WITs and states used by the four default processes.  
 
 :::row:::
    :::column span="1":::
-   
-   **Tracking area**
+   Tracking area
    :::column-end:::
    :::column span="1":::
-   
-   **Basic**
+   Basic
    :::column-end:::
    :::column span="1":::
-   
-   **Agile**
+   Agile
    :::column-end:::
    :::column span="1":::
-   
-   **Scrum**
+   Scrum
    :::column-end:::
    :::column span="1":::
-   
-   **CMMI**
+   CMMI
    :::column-end:::
 :::row-end:::
 ---
@@ -528,25 +507,20 @@ Each image shows only the default reason associated with the transition.
 
 * * *
 
-
-
 Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the taskboard by dragging it to its corresponding state column.
 
 You can change the workflow to support other states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-
 <a id="removed-closed-done"></a>
 
-### Removed, Closed, and Done states  
+### Work item states
 
-When you change the state of a work item to Removed, Closed, or Done, the system responds like this: 
+When you change the state of a work item to `Removed`, `Closed`, or `Done`, the system responds as follows: 
 
-*   **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, work items in the closed and done state appear.   
-*   **Removed**: Work items in this state don't appear on any backlog or board.   
+* **`Closed`** / **`Done`**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, work items in the closed and done state appear.   
+* **`Removed`**: Work items in this state don't appear on any backlog or board.   
 
-Work items are maintained in a project as long as the project is active. 
-Even if you set them to Closed, Done, or Removed, a record is kept in the data store. 
-You can use a record to create queries or reports.  
+Your project maintains work items as long as the project is active. Even if you set work items to `Closed`, `Done`, or `Removed`, the data store keeps a record. You can use a record to create queries or reports.  
 
 [!INCLUDE [temp](../../includes/note-closed-items.md)]
 
@@ -555,20 +529,22 @@ If you need to permanently delete work items, see [Remove or delete work items](
 
 <a id="wits-all"></a>
 
-## Work item types added to all processes 
+## WITs added to all processes 
 
 The following WITs are added to all processes except the Basic process.  
 
   ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](media/ALM_PT_WITS_shared.png)
 
-Teams create and work with these types using the corresponding tool: 
+Your team can create and work with these types using the corresponding tool: 
 
-*   Test Plan, Test Suite, Test Case Shared Steps, and Shared Parameters: Microsoft Test Manager.
-*   Feedback Request and Feedback Response: Request feedback.  
-*   Code Review Request and Code Review Response: My Work (from Team Explorer) and Code Review Request.  
+|Tool  |Work item types  |
+|---------|---------|
+|Microsoft Test Manager     |   `Test Plan`, `Test Suite`, `Test Case Shared Steps`, `Shared Parameters`      |
+|Request Feedback     |   `Feedback Request`, `Feedback Response`      |
+|My Work (from Team Explorer), Code Review    | `Code Review Request`, `Code Review Response`        |
 
-Work items from these type definitions aren't meant to be created manually and are then added to the Hidden Types category. 
-Work item types added to the Hidden Types category don't appear in the menus that create new work items.   
+Work items from these type definitions aren't meant to be created manually and are then added to the  `Hidden Types` category. 
+Work item types added to the `Hidden Types` category don't appear in the menus that create new work items.   
 
 <a id="test-experience"></a>
 
@@ -578,10 +554,7 @@ WITs that support the test experience and work with Test Manager and the web por
 
 ![Test management work item types](media/ALM_PT_WITS_TestExperience.png)
 
-From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite. And you can view which test suites are defined for a test plan. 
-However, these objects aren't connected to each other through link types. 
-Customize these WITs as you would any other WIT. 
-See [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md). 
+From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite and view which test suites are defined for a test plan. However, these objects aren't connected to each other through link types. Customize these WITs as you would any other WIT. For more information, see [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md). 
 
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
@@ -589,9 +562,7 @@ If you change the workflow for the test plan and test suite, you might need to u
 
 <a id="term-note"></a>
 
-You can customize a process before or after you create a project that uses the process. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).    
- 
+- [Customize your work tracking experience](../../../reference/customize-work.md).    
 - [Upload/download process templates](manage-process-templates.md)   
 - [Configure features after an Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
-
-If you have more questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).
+- [Azure DevOps support page](https://azure.microsoft.com/support/devops/)

@@ -175,7 +175,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Watermark**<br/>`Watermark` | String | A system-managed field that increments with changes made to a work item. Valid for these entity types: `WorkItemRevision` and `WorkItem`.<br/>`System.Watermark` | 
 |**Work Item Id**<br/>`WorkItemId` | Int32 | The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within an organization or project collection.<br/>`System.Id` | 
 |`WorkItemRevisionSK`  | Int32 | The Analytics unique key for the work item revision that is used by external tools to join related entities.  | 
-|**Work Item Type** <br/>`WorkItemType` | String | The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../../boards/work-items/guidance/choose-process.md).<br/>` System.WorkItemType` |
+|**Work Item Type** <br/>`WorkItemType` | String | The name of the work item type. Work item types are defined based on the process used when you created your project. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md).<br/>` System.WorkItemType` |
 
 ### Navigation properties 
 
