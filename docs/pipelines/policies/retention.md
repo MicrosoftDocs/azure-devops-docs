@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 11/08/2022
+ms.date: 05/03/2023
 ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
 monikerRange: '<= azure-devops'
 ---
@@ -45,7 +45,7 @@ To manage retention policies, you must have one of the following subscriptions:
 
 You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Configure retention policies
 
