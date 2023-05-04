@@ -68,7 +68,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
-[!INCLUDE [permissions](includes/v2/prepare-permissions.md)]
+[!INCLUDE [permissions](includes/v3/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -113,7 +113,7 @@ Azure DevOps Server: `https://{your_server}/tfs`
 
 ### Authentication type
 
-[!INCLUDE [include](includes/v2/unix-authentication-types.md)]
+[!INCLUDE [include](includes/v3/unix-authentication-types.md)]
 
 ## Run interactively
 
@@ -319,11 +319,11 @@ We provide the `./svc.sh` script as a convenient way for you to run and manage y
 
 You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/macOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
-[!INCLUDE [include](includes/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v3/replace-agent.md)]
 
-[!INCLUDE [include](includes/v2/remove-and-reconfigure-unix.md)]
+[!INCLUDE [include](includes/v3/remove-and-reconfigure-unix.md)]
 
-[!INCLUDE [include](includes/v2/configure-help-unix.md)]
+[!INCLUDE [include](includes/v3/configure-help-unix.md)]
 
 [!INCLUDE [include](includes/capabilities.md)]
 
@@ -331,7 +331,7 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](includes/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 ### Where can I learn more about how the launchd service works?
 
@@ -339,7 +339,7 @@ You can use the template described above as to facilitate generating other kinds
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v3/qa-firewall.md)]
 
 ::: moniker-end
 
@@ -357,13 +357,13 @@ If you are running the agent interactively, see the restart instructions in [Run
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v3/web-proxy-bypass.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v3/qa-urls.md)]
 
 ::: moniker-end
 

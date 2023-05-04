@@ -94,7 +94,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 <h2 id="permissions">Prepare permissions</h2>
 
-[!INCLUDE [include](includes/v2/prepare-permissions.md)]
+[!INCLUDE [include](includes/v3/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -134,7 +134,7 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ### Authentication type
 
-[!INCLUDE [include](includes/v2/unix-authentication-types.md)]
+[!INCLUDE [include](includes/v3/unix-authentication-types.md)]
 
 ## Run interactively
 
@@ -288,11 +288,11 @@ You can use the template described above as to facilitate generating other kinds
 
 It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using cgroups and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure cgroups and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
 
-[!INCLUDE [include](includes/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v3/replace-agent.md)]
 
-[!INCLUDE [include](includes/v2/remove-and-reconfigure-unix.md)]
+[!INCLUDE [include](includes/v3/remove-and-reconfigure-unix.md)]
 
-[!INCLUDE [include](includes/v2/configure-help-unix.md)]
+[!INCLUDE [include](includes/v3/configure-help-unix.md)]
 
 [!INCLUDE [include](includes/capabilities.md)]
 
@@ -300,7 +300,7 @@ It's important to avoid situations in which the agent fails or become unusable b
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](includes/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 ### Why is sudo needed to run the service commands?
 
@@ -310,7 +310,7 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v3/qa-firewall.md)]
 
 ::: moniker-end
 
@@ -328,13 +328,13 @@ If you are running the agent interactively, see the restart instructions in [Run
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v3/web-proxy-bypass.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v3/qa-urls.md)]
 
 ::: moniker-end
 

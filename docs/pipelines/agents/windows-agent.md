@@ -55,7 +55,7 @@ running 4 self-hosted agents apiece.
 
 <h2 id="permissions">Prepare permissions</h2>
 
-[!INCLUDE [permissions](includes/v2/prepare-permissions.md)]
+[!INCLUDE [permissions](includes/v3/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -173,7 +173,7 @@ To restart the agent, right-click the entry and choose **Restart**.
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
-[!INCLUDE [include](includes/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v3/replace-agent.md)]
 
 ## Remove and re-configure an agent
 
@@ -190,7 +190,7 @@ After you've removed the agent, you can [configure it again](#download-configure
 The agent can be set up from a script with no human intervention.
 You must pass `--unattended` and the answers to all questions.
 
-[!INCLUDE [unattend](./includes/v2/unattended-config.md)]
+[!INCLUDE [unattend](./includes/v3/unattended-config.md)]
 
 `.\config --help` always lists the latest required and optional responses.
 
@@ -222,10 +222,10 @@ The help provides information on authentication alternatives and unattended conf
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](includes/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 ::: moniker range="azure-devops"
-[!INCLUDE [include](includes/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v3/qa-firewall.md)]
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
@@ -255,11 +255,11 @@ MyEnv4=MyEnvValue4
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v3/web-proxy-bypass.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-[!INCLUDE [include](includes/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v3/qa-urls.md)]
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
