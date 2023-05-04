@@ -1,7 +1,7 @@
 ---
 title: Deploy an Azure Pipelines agent on Linux
 ms.custom: seodec18
-description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS) (Agent version 2.x).
+description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 01/25/2023
@@ -32,37 +32,23 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ::: moniker range="> tfs-2018"
 
-The agent is based on .NET Core 3.1.
+The agent is based on .NET 6.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
-- x64
-  - CentOS 7, 6 (see note 1)
-  - Debian 9
-  - Fedora 30, 29
-  - Linux Mint 18, 17
-  - openSUSE 42.3 or later
-  - Oracle Linux 8, 7
-  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
-  - SUSE Enterprise Linux 12 SP2 or later
-  - Ubuntu 20.04, 18.04, 16.04
-  - CBL-Mariner 1.0 (see note 3)
-- ARM32 (see note 2)
-  - Debian 9
-  - Ubuntu 18.04
-- ARM64
-  - Debian 9
-  - Ubuntu 21.04, 20.04, 18.04
 
-> [!NOTE]
-> Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
-
-> [!NOTE]
-> Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
-> Run `uname -a` to see your Linux distro's instruction set.
-
-> [!NOTE]
-> Mariner OS distribution currently has partial support from the Azure DevOps Agent.
-> We are providing a mechanism for detection of this OS distribution in `installdependencies.sh` script, but due to lack of support from the [.Net Core](https://github.com/dotnet/core/issues/6379) side, we couldn't guarantee full operability of all agent functions when running on this OS distribution.
+* x64
+  * CentOS 7, 8
+  * Debian 10+
+  * Fedora 36+
+  * openSUSE 15+
+  * Red Hat Enterprise Linux 7+
+    * No longer requires separate package
+  * SUSE Enterprise Linux 12 SP2 or later
+  * Ubuntu 22.04, 20.04, 18.04, 16.04
+  * CBL-Mariner 2.0
+* ARM64
+  * Debian 10+
+  * Ubuntu 22.04, 20.04, 18.04
 
 Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
@@ -71,25 +57,11 @@ We strongly recommend installing the latest version of Git.
 > The agent installer knows how to check for other dependencies.
 You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
 >
-> Be aware that some of these dependencies required by .NET Core are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
+> Be aware that some of these dependencies required by .NET are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
 >
 > Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
 > 
 > For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for further support.
-
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-**TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
-We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
-See [Azure Pipelines agent prereqs](?view=azure-devops&preserve-view=true#check-prerequisites) for more about what's required to run a newer agent.
-
-If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
-
-* [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
-* [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
 
 ::: moniker-end
 
@@ -151,52 +123,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-### Azure DevOps Server 2019 and Azure DevOps Server 2020
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab.md)]
-
-1. Click **Download agent**.</li>
-
-1. On the **Get agent** dialog box, click **Linux**.</li>
-
-1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
-
-1. On the right pane, click the **Download** button.
-
-1. Follow the instructions on the page.</li>
-
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-### TFS 2018
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **Linux**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page.
-
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
-
-::: moniker-end
-
 
 ### Server URL
 
@@ -205,19 +131,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-TFS 2018: `https://{your_server}/tfs`
-
-::: moniker-end
-
 
 ### Authentication type
 

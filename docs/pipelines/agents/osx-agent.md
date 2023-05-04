@@ -1,7 +1,7 @@
 ---
 title: Deploy a build and release agent on macOS
 ms.custom: seodec18
-description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS) (Agent version 2.x)
+description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.date: 01/25/2023
@@ -14,12 +14,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [v3Agent](includes/v3-agent-include.md)]
 
-::: moniker range="tfs-2018"
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
-
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
@@ -30,15 +24,22 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 
 ## Check prerequisites
 
-::: moniker range=">= tfs-2018"
+
 
 Make sure your machine has these prerequisites:
-- macOS 10.15 "Catalina", macOS 11.0 "Big Sur", or macOS 12.0 "Monterey"
+
+* x64
+  * macOS 10.15 "Catalina"
+  * macOS 11.0 "Big Sur"
+  * macOS 12.0 "Monterey"
+  * macOS 13.0 "Ventura"
+* ARM64
+  * macOS 11.0 "Big Sur"
+  * macOS 12.0 "Monterey"
+  * macOS 13.0 "Ventura"
+  * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
+
 - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
-
-These prereqs are required for agent version 2.125.0 and higher.
-
-::: moniker-end
 
 ### TFVC
 
@@ -96,39 +97,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="> azure-devops-2022 < azure-devops"
 
-### Azure DevOps Server 2019 and Azure DevOps Server 2020
+### Azure DevOps Server 2022.1
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
 1. In your web browser, sign in to Azure DevOps Server, and navigate to the **Agent pools** tab:
 
    [!INCLUDE [include](includes/agent-pools-tab.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **macOS**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page.
-
-1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
-
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-### TFS 2018
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
 1. Click **Download agent**.
 
@@ -154,7 +131,7 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker range="< azure-devops"
 
-TFS 2018 and newer: `https://{your_server}/tfs`
+Azure DevOps Server: `https://{your_server}/tfs`
 
 ::: moniker-end
 
