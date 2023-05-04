@@ -1,23 +1,21 @@
 ---
 title: Deploy an Azure Pipelines agent on Windows
 ms.custom: contperf-fy21q1
-description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (Agent version 2.x)
+description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines
 ms.topic: conceptual
-ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.date: 04/28/2023
-monikerRange: '<= azure-devops'
+monikerRange: '> azure-devops-2022'
 ---
 
 # Self-hosted Windows agents
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
+[!INCLUDE [version-gt-2022](../../includes/version-gt-2022.md)]
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
+> * If your code is in an on-premises Team Foundation Server (TFS) 2017 or newer, see [Deploy an agent on Windows for on-premises TFS 2017 or newer](v2-windows.md).
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](/previous-versions/azure/devops/pipelines/agents/v1-windows).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
@@ -26,13 +24,17 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 ## Check prerequisites
 
 Make sure your machine has these prerequisites:
-- Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq), 8.1, 10, or 11 (if using a client OS)
-- Windows 2012 or higher (if using a server OS)
-- [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
-- [.NET Framework](/dotnet/framework/install/) 4.6.2 or higher
 
-> [!IMPORTANT]
-> Starting December 2019, the minimum required .NET version for build agents is 4.6.2 or higher.
+* Operating system version
+  * Client OS
+    * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
+    * Windows 8.1
+    * Windows 10
+  * Server OS
+    * Windows Server 12 or higher
+* The agent software installs its own version of .NET so there is no .NET prerequisite.
+- [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
+
 
 Recommended:
 - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
@@ -58,8 +60,6 @@ running 4 self-hosted agents apiece.
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range="azure-devops"
-
 ### Azure Pipelines
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
@@ -82,56 +82,6 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-### Azure DevOps Server  2019 and Azure DevOps Server 2020
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
-
-      [!INCLUDE [include](includes/agent-pools-tab.md)]
-
-1. Click **Download agent**.</li>
-
-1. On the **Get agent** dialog box, click **Windows**.</li>
-
-1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
-The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
-
-1. On the right pane, click the **Download** button.
-
-1. Follow the instructions on the page to download the agent.
-
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-### TFS 2018
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **Windows**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page to download the agent.
-
-1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. 
-
-::: moniker-end
-
 > [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.
 > If you want to configure as a service, this is **required**.
@@ -147,22 +97,14 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ### Server URL and authentication
 
-::: moniker range="azure-devops"
 When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
-::: moniker-end
 
-::: moniker range="< azure-devops"
-When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
-::: moniker-end
 
-::: moniker range="azure-devops"
 When setup asks for your authentication type, choose **PAT**.
 Then paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is only used during the initial configuration of the agent. Later, if the PAT expires or needs to be renewed, no further changes are required by the agent.
-
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 > [!IMPORTANT]
