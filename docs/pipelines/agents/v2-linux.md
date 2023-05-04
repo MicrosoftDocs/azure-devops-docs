@@ -1,14 +1,14 @@
 ---
-title: Deploy an Azure Pipelines agent on Linux (Agent version 2.x)
+title: Deploy an Azure Pipelines agent on Linux (2.x)
 ms.custom: seodec18
-description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS) (Agent version 2.x).
+description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS) (2.x).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 01/25/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Self-hosted Linux agents (Agent version 2.x)
+# Self-hosted Linux agents (2.x)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -88,7 +88,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 ::: moniker range="tfs-2018"
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
-We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
+We recommend that, if able, you should upgrade to a later (2.125.0 or higher).
 See [Azure Pipelines agent prereqs](?view=azure-devops&preserve-view=true#check-prerequisites) for more about what's required to run a newer agent.
 
 If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:

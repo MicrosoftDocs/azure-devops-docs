@@ -1,14 +1,14 @@
 ---
-title: Deploy an Azure Pipelines agent on Windows (Agent version 2.x)
+title: Deploy an Azure Pipelines agent on Windows (2.x)
 ms.custom: contperf-fy21q1
-description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (Agent version 2.x)
+description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (2.x)
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.date: 04/28/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Self-hosted Windows agents (Agent version 2.x)
+# Self-hosted Windows agents (2.x)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -78,7 +78,7 @@ running 4 self-hosted agents apiece.
 1. On the **Get the agent** dialog box, choose **Windows**.
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
-The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+The x64 is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
 If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
 
 1. On the right pane, click the **Download** button.
@@ -104,7 +104,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 1. On the **Get agent** dialog box, click **Windows**.</li>
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
-The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+The x64 is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
 If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
 
 1. On the right pane, click the **Download** button.
@@ -267,7 +267,7 @@ After configuring the agent:
 ```
 
 This will run through a diagnostic suite that may help you troubleshoot the problem.
-The diagnostics feature is available starting with agent version 2.165.0.
+The diagnostics feature is available starting with 2.165.0.
 
 ## Help on other options
 
