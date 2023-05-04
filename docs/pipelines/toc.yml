@@ -546,11 +546,19 @@
     - name: Microsoft-hosted agents
       href: agents/hosted.md
     - name: Self-hosted Linux agents
-      href: agents/v2-linux.md
+      href: agents/linux-agent.md
     - name: Self-hosted macOS agents
-      href: agents/v2-osx.md
+      href: agents/osx-agent.md
     - name: Self-hosted Windows agents
-      href: agents/v2-windows.md
+      href: agents/windows-agent.md
+    - name: Self-hosted agents (previous version)
+      items:
+      - name: Self-hosted Linux agents
+        href: agents/v2-linux.md
+      - name: Self-hosted macOS agents
+        href: agents/v2-osx.md
+      - name: Self-hosted Windows agents
+        href: agents/v2-windows.md      
     - name: Scale set agents
       href: agents/scale-set-agents.md
       displayName: byos, elastic agents, VMSS, autoscale
