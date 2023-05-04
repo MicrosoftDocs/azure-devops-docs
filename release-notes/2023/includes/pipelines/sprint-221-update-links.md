@@ -6,3 +6,4 @@ ms.topic: include
 ---
 
 - [Pipeline agents can be registered using a Service Principal](#pipeline-agents-can-be-registered-using-a-service-principal) 
+- [Pipeline Settings Audit Improvements](#pipeline-settings-audit-improvements) 
