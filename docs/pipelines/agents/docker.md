@@ -402,7 +402,7 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](linux-agent.md#run-once) to the `run` command.
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
@@ -602,6 +602,6 @@ Try again. You no longer get the error.
 ## Related articles
 
 - [Self-hosted Windows agents](windows-agent.md)
-- [Self-hosted Linux agents](v2-linux.md)
+- [Self-hosted Linux agents](linux-agent.md)
 - [Self-hosted macOS agents](v2-osx.md)
 - [Microsoft-hosted agents](hosted.md)
