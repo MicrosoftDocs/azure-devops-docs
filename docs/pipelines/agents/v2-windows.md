@@ -1,5 +1,5 @@
 ---
-title: Deploy an Azure Pipelines agent on Windows
+title: Deploy an Azure Pipelines agent on Windows (Agent version 2.x)
 ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (Agent version 2.x)
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 04/28/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Self-hosted Windows agents
+# Self-hosted Windows agents (Agent version 2.x)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
