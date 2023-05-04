@@ -350,7 +350,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ## Prerequisites
 
-* A [self-hosted Windows agent](agents/v2-windows.md).
+* A [self-hosted Windows agent](agents/windows-agent.md).
 
 <a name="initialize-repo"></a>
 ## Initialize your repository
