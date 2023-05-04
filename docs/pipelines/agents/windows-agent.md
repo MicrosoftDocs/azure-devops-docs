@@ -13,6 +13,13 @@ monikerRange: '<= azure-devops'
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
+:::moniker range="<azure-devops"
+
+> [!IMPORTANT]
+> This article provides guidance for using the 3.x agent software with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Windows agents (Agent version 2.x)](v2-windows.md).
+
+:::moniker-end
+
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
 > * If your code is in an on-premises Team Foundation Server (TFS) 2017 or newer, see [Deploy an agent on Windows for on-premises TFS 2017 or newer](v2-windows.md).

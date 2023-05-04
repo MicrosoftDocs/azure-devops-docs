@@ -12,7 +12,12 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
+:::moniker range="azure-devops"
+
+> [!IMPORTANT]
+> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server and TFS. If you're using Azure DevOps Services, see [Self-hosted Windows agents](windows-agent.md).
+
+:::moniker-end
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
