@@ -203,7 +203,7 @@ Next, create the Dockerfile.
 
 4. Save the following content to `~/dockeragent/Dockerfile`:
     * For Ubuntu 20.04:
-      ```docker
+      ```Dockerfile
       FROM ubuntu:20.04
       RUN DEBIAN_FRONTEND=noninteractive apt-get update
       RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
@@ -232,7 +232,7 @@ Next, create the Dockerfile.
       ENTRYPOINT [ "./start.sh" ]
       ```
     * For Ubuntu 18.04:
-      ```docker
+      ```Dockerfile
       FROM ubuntu:18.04
 
       # To make it easier for build and release pipelines to run apt-get,
@@ -485,7 +485,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
-   ```shell
+   ```yaml
    apiVersion: apps/v1
    kind: Deployment
    metadata:
