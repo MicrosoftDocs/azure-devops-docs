@@ -84,7 +84,7 @@ Deployment groups make it easier to organize the servers you want to use to host
     ssh <publicIpAddress>
     ```
 
-1. Run the following command to install the required dependencies to set up the build and release agent on a Linux virtual machine. See [Self-hosted Linux agents](../../agents/v2-linux.md) for more details.
+1. Run the following command to install the required dependencies to set up the build and release agent on a Linux virtual machine. See [Self-hosted Linux agents](../../agents/linux-agent.md) for more details.
 
     ```command
     sudo apt-get install -y libunwind8 libcurl3
