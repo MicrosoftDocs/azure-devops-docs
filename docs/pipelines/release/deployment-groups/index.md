@@ -110,5 +110,5 @@ From your release pipeline definition, select the post deployment icon, and then
 - [Deploy to Azure VMs using deployment groups](./deploying-azure-vms-deployment-groups.md)
 - [Provision agents for deployment groups](./howto-provision-deployment-group-agents.md)
 - [Self-hosted Windows agents](../../agents/windows-agent.md)
-- [Self-hosted macOS agents](../../agents/v2-osx.md)
+- [Self-hosted macOS agents](../../agents/osx-agent.md)
 - [Self-hosted Linux agents](../../agents/linux-agent.md)

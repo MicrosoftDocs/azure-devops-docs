@@ -603,5 +603,5 @@ Try again. You no longer get the error.
 
 - [Self-hosted Windows agents](windows-agent.md)
 - [Self-hosted Linux agents](linux-agent.md)
-- [Self-hosted macOS agents](v2-osx.md)
+- [Self-hosted macOS agents](osx-agent.md)
 - [Microsoft-hosted agents](hosted.md)
