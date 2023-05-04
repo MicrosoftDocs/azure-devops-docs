@@ -12,7 +12,7 @@ ms.date: 02/13/2020
 > You can run a script on a:
 > 
 > * [Windows agent](../../agents/windows-agent.md) using either a [Batch script task](/azure/devops/pipelines/tasks/reference/batch-script-v1) or [PowerShell script task](/azure/devops/pipelines/tasks/reference/powershell-v2).
-> * [macOS](../../agents/v2-osx.md) or [Linux](../../agents/linux-agent.md) agent using a [Shell script task](/azure/devops/pipelines/tasks/reference/shell-script-v2).
+> * [macOS](../../agents/osx-agent.md) or [Linux](../../agents/linux-agent.md) agent using a [Shell script task](/azure/devops/pipelines/tasks/reference/shell-script-v2).
 
 # [Batch](#tab/batch)
 

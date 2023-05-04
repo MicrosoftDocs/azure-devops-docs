@@ -224,7 +224,7 @@ To use the template:
 
 * [Run on machine group job](../../process/deployment-group-phases.md)
 * [Deploy an agent on Windows](../../agents/windows-agent.md)
-* [Deploy an agent on macOS](../../agents/v2-osx.md)
+* [Deploy an agent on macOS](../../agents/osx-agent.md)
 * [Deploy an agent on Linux](../../agents/linux-agent.md)
 
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
