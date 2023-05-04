@@ -12,7 +12,12 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
+:::moniker range="azure-devops"
+
+> [!IMPORTANT]
+> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server and TFS. If you're using Azure DevOps Services, see [Self-hosted macOS agents](osx-agent.md).
+
+:::moniker-end
 
 ::: moniker range="tfs-2018"
 

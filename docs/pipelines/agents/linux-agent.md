@@ -12,7 +12,12 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
+:::moniker range="<azure-devops"
+
+> [!IMPORTANT]
+> This article provides guidance for using the 3.x agent software with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Linux agents (Agent version 2.x)](v2-linux.md).
+
+:::moniker-end
 
 ::: moniker range="tfs-2018"
 
