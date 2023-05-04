@@ -97,30 +97,6 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2022 < azure-devops"
-
-### Azure DevOps Server 2022.1
-
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
-
-1. In your web browser, sign in to Azure DevOps Server, and navigate to the **Agent pools** tab:
-
-   [!INCLUDE [include](includes/agent-pools-tab.md)]
-
-1. Click **Download agent**.
-
-1. On the **Get agent** dialog box, click **macOS**.
-
-1. Click the **Download** button.
-
-1. Follow the instructions on the page.
-
-1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
-
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
-
-::: moniker-end
-
 ### Server URL
 
 ::: moniker range="azure-devops"
