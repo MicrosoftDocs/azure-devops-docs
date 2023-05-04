@@ -61,7 +61,7 @@ To use Azure Pipelines, complete the following tasks:
 - Have an organization in Azure DevOps. If you don't have one, [create an organization](../../organizations/accounts/create-organization.md) now.
 - Store your source code in a [version control system](#version-control-systems).
 ::: moniker range="< azure-devops"
-- Download a [build agent](../agents/v2-windows.md) and install it on a build server.
+- Download a [build agent](../agents/windows-agent.md) and install it on a build server.
 ::: moniker-end
 
 ### Pricing for Azure DevOps

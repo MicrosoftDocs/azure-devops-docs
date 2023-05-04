@@ -16,13 +16,13 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 :::moniker range="<azure-devops"
 
 > [!IMPORTANT]
-> This article provides guidance for using the 3.x agent software with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Windows agents (Agent version 2.x)](v2-windows.md).
+> This article provides guidance for using the 3.x agent software with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Windows agents (Agent version 2.x)](windows-agent.md).
 
 :::moniker-end
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
-> * If your code is in an on-premises Team Foundation Server (TFS) 2017 or newer, see [Deploy an agent on Windows for on-premises TFS 2017 or newer](v2-windows.md).
+> * If your code is in an on-premises Team Foundation Server (TFS) 2017 or newer, see [Deploy an agent on Windows for on-premises TFS 2017 or newer](windows-agent.md).
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](/previous-versions/azure/devops/pipelines/agents/v1-windows).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
