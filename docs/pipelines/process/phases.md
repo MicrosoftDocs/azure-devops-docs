@@ -349,7 +349,7 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 
 <h2 id="dependencies">Dependencies</h2>
 
-When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies.
+When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies. By default Azure DevOps YAML pipeline jobs will run in parrellel unless the dependsOn value is overwritten.
 
 > [!NOTE]
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
