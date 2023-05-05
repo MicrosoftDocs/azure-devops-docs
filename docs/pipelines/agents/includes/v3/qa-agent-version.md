@@ -7,7 +7,7 @@ author: steved0x
 ms.date: 02/12/2020
 ---
 
-### How do I make sure I have the latest v2 agent version?
+### How do I make sure I have the latest agent version?
 
 1. Navigate to the **Agent pools** tab:
 
@@ -27,7 +27,7 @@ ms.date: 02/12/2020
 
 ::: moniker range="< azure-devops"
 
-### Can I update my v2 agents that are part of an Azure DevOps Server pool?
+### Can I update my agents that are part of an Azure DevOps Server pool?
 
 Yes.
 Beginning with Azure DevOps Server 2019, you can configure your server to look for the agent package files on a local disk.
