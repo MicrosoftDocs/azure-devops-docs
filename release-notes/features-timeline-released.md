@@ -39,7 +39,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </thead>
 <tr>
     <td rowspan="4"><a href="2023/sprint-221-update.md" data-raw-source="[8 May 2023](2023/sprint-221-update.md)"> 8 May 2023</a></td>
-    <td>Swimlane rules are now generally available</td><td>Boards</td><td>Future</td></tr>
+    <td>Swimlane rules is generally available</td><td>Boards</td><td>Future</td></tr>
     <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pipeline Settings Audit Improvements</td><td>Pipelines</td><td>Future</td></tr>
     <td>Pull Request widget for multiple repos is now generally available</td><td>Reporting</td><td>Future</td></tr>
