@@ -119,7 +119,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 1. On the **Get the agent** dialog box, click **Linux**.
 
-1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
+1. On the left pane, select the specific flavor. We offer x64 or ARM for many Linux distributions.
 
 1. On the right pane, click the **Download** button.
 
