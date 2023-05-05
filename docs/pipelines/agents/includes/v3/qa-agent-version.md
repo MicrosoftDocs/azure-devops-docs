@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.author: sdanie
 ms.manager: mijacobs
 author: steved0x
-ms.date: 02/12/2020
+ms.date: 05/05/2023
 ---
 
 ### How do I make sure I have the latest agent version?
