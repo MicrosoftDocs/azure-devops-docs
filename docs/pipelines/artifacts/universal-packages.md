@@ -68,15 +68,13 @@ To publish to an external feed, you must first create a service connection to po
 
 ---
 
-<a name="package-versioning"></a>
-
 ## Package versioning
 
-Universal Packages follow the semantic versioning spec and are identified by their names and version numbers. Semantic version numbers have three numeric components, Major, Minor, and Patch: `Major.Minor.Patch`.
+Universal Packages follow the semantic versioning specification and can be identified by their names and version numbers. Semantic version numbers are composed of three numeric components, Major, Minor, and Patch, in the format: `Major.Minor.Patch`.
 
-When you release a new backward-compatible feature, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`), and when you make a backward-incompatible change, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented in the case of fixing a bug (`1.0.0` to `1.0.1`). 
+The minor version number is incremented when new features are added that are backward compatible with previous versions, in this case, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`). The major version number is incremented when there are significant changes that could break compatibility with previous versions. In this case, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented when only bug fixes or other small changes are made that do not affect compatibility with previous versions (`1.0.0` to `1.0.1`). 
 
-The Universal Packages task automatically selects the next major, minor, or patch version for you when you publish a new package.
+When publishing a new package, the Universal Packages task will automatically select the next major, minor, or patch version for you.
 
 # [YAML](#tab/yaml)
 
@@ -84,7 +82,7 @@ To enable versioning for your package, add a `versionOption` input to your YAML 
 
 Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a _testPackage 1.0.0_, and select the _major_ option, your new package will be _testPackage 2.0.0_. If you select the _minor_ option, your package version will be 1.1.0, and if you select the _patch_ option, your package version will be 1.0.1.
 
-One thing to keep in mind is that if you select the `custom` option, you must also provide a `versionPublish` as follows.
+Note that if you choose the `custom` option, you must also specify a `versionPublish` value as follows:
 
 ```yaml
 - task: UniversalPackages@0
@@ -99,20 +97,20 @@ One thing to keep in mind is that if you select the `custom` option, you must al
     packagePublishDescription: '<Package description>'
 ```
 
-| Argument                                                          | Description                                                                       |
-|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| publishDirectory                                                  | Location of the files to be published.                                            |
-| vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
-| vstsFeedPackagePublish                                            | The package name.                                                                 |
-| versionOption                                                     | Select a version increment strategy. Options: `major`, `minor`, `patch`, `custom` |
-| versionPublish                                                    | The custom package version                                                        |
-| packagePublishDescription                                         | Description of the content of the package.                                        |
+| Argument                     | Description                                                                                                               |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| publishDirectory             | Location of the files you wish to publish.                                                                                |
+| vstsFeedPublish              | The project and feed name to publish to. If you're working with an organization-scoped feed, specify only the feed name.  |
+| vstsFeedPackagePublish       | The package name. Must be lower case. Use only letters, numbers, and dashes.                                              |
+| versionOption                | Select a versioning strategy. Options: `major`, `minor`, `patch`, `custom`.                                               |
+| versionPublish               | The custom package version.                                                                                               |
+| packagePublishDescription    | Description of the package content.                                                                                       |
 
 # [Classic](#tab/classic)
 
-From the Universal Packages task form, select a version increment strategy, or select **Custom** to input your package version manually.
+From the Universal Packages task form, select a versioning strategy, or select **Custom** to enter your package version manually.
 
-:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="Package versioning":::
+:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="A screenshot showing how use a versioning strategy in classic pipeline.":::
 
 ---
 
