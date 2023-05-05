@@ -28,7 +28,7 @@ monikerRange: '<= azure-devops'
 To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
 
 > [!NOTE]
-> This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you are using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
+> This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Linux agent.
 
 [!INCLUDE [include](includes/concepts.md)]
 
