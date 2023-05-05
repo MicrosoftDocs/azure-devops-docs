@@ -29,22 +29,19 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 
 ## Check prerequisites
 
-
-
-Make sure your machine has these prerequisites:
-
-* x64
-  * macOS 10.15 "Catalina"
-  * macOS 11.0 "Big Sur"
-  * macOS 12.0 "Monterey"
-  * macOS 13.0 "Ventura"
-* ARM64
-  * macOS 11.0 "Big Sur"
-  * macOS 12.0 "Monterey"
-  * macOS 13.0 "Ventura"
-  * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
-
+* Supported operating systems
+  * x64
+    * macOS 10.15 "Catalina"
+    * macOS 11.0 "Big Sur"
+    * macOS 12.0 "Monterey"
+    * macOS 13.0 "Ventura"
+  * ARM64
+    * macOS 11.0 "Big Sur"
+    * macOS 12.0 "Monterey"
+    * macOS 13.0 "Ventura"
+    * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
 - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+* The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 
 ### TFVC
 
