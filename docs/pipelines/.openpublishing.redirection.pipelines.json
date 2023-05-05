@@ -136,10 +136,6 @@
     {
       "source_path_from_root":"/docs/pipelines/agents/v2-osx.md",
       "redirect_url":"/azure/devops/pipelines/agents/osx-agent"
-    },
-    {
-      "source_path_from_root":"/docs/pipelines/agents/v3-agent-123.md",
-      "redirect_url":"/azure/devops/pipelines/agents/agents#install"
     }
   ]
 }
