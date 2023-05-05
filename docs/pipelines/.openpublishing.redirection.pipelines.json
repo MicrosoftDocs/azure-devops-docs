@@ -126,16 +126,20 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root":"/docs/pipelines/agent/v2-linux.md",
-      "redirect_url":"/azure/devops/pipelines/agent/linux-agent"
+      "source_path_from_root":"/docs/pipelines/agents/v2-linux.md",
+      "redirect_url":"/azure/devops/pipelines/agents/linux-agent"
     },
     {
-      "source_path_from_root":"/docs/pipelines/agent/v2-windows.md",
-      "redirect_url":"/azure/devops/pipelines/agent/windows-agent"
+      "source_path_from_root":"/docs/pipelines/agents/v2-windows.md",
+      "redirect_url":"/azure/devops/pipelines/agents/windows-agent"
     },
     {
-      "source_path_from_root":"/docs/pipelines/agent/v2-osx.md",
-      "redirect_url":"/azure/devops/pipelines/agent/osx-agent"
+      "source_path_from_root":"/docs/pipelines/agents/v2-osx.md",
+      "redirect_url":"/azure/devops/pipelines/agents/osx-agent"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v3-agent-123.md",
+      "redirect_url":"/azure/devops/pipelines/agents/agents#install"
     }
   ]
 }
