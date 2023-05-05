@@ -78,7 +78,7 @@ running 4 self-hosted agents apiece.
 1. On the **Get the agent** dialog box, choose **Windows**.
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
-The x64 is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+The x64 version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
 If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
 
 1. On the right pane, click the **Download** button.
@@ -104,7 +104,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 1. On the **Get agent** dialog box, click **Windows**.</li>
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
-The x64 is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+The x64 version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
 If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
 
 1. On the right pane, click the **Download** button.
@@ -267,7 +267,7 @@ After configuring the agent:
 ```
 
 This will run through a diagnostic suite that may help you troubleshoot the problem.
-The diagnostics feature is available starting with 2.165.0.
+The diagnostics feature is available starting with version 2.165.0.
 
 ## Help on other options
 
