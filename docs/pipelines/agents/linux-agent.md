@@ -41,22 +41,23 @@ The agent is based on .NET 6.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 
-* x64
-  * CentOS 7, 8
-  * Debian 10+
-  * Fedora 36+
-  * openSUSE 15+
-  * Red Hat Enterprise Linux 7+
-    * No longer requires separate package
-  * SUSE Enterprise Linux 12 SP2 or later
-  * Ubuntu 22.04, 20.04, 18.04, 16.04
-  * CBL-Mariner 2.0
-* ARM64
-  * Debian 10+
-  * Ubuntu 22.04, 20.04, 18.04
-
-Regardless of your platform, you will need to install Git 2.9.0 or higher.
+* Supported distributions
+  * x64
+    * CentOS 7, 8
+    * Debian 10+
+    * Fedora 36+
+    * openSUSE 15+
+    * Red Hat Enterprise Linux 7+
+      * No longer requires separate package
+    * SUSE Enterprise Linux 12 SP2 or later
+    * Ubuntu 22.04, 20.04, 18.04, 16.04
+    * CBL-Mariner 2.0
+  * ARM64
+    * Debian 10+
+    * Ubuntu 22.04, 20.04, 18.04
+* **Git** - Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
+* **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
 
 > [!NOTE]
 > The agent installer knows how to check for other dependencies.
