@@ -4,7 +4,7 @@ ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS (2.x)
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 04/28/2023
+ms.date: 05/05/2023
 monikerRange: '<= azure-devops'
 ---
 
