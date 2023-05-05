@@ -1,11 +1,11 @@
 ---
 title: Publish & download Universal Packages
 ms.custom: seodec18, contperf-fy21q4
-description: Publish Universal Packages to Azure Artifacts feeds with Azure Pipelines
+description: Publish and download Universal Packages with Azure Pipelines YAML/Classic
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.date: 05/03/2021
+ms.date: 05/05/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Universal Packages allow you to package any number of files of any type and share them with your team. Using the Universal Package task in Azure Pipelines, you can pack, publish, and download packages of various sizes, up to 4 TB. Each package will be uniquely identified with a name and a version number. You can use Azure CLI or Azure Pipelines to publish and consume packages from your Artifacts feeds.
+Universal Packages allow you to package any number of files of any type and share them with your team. Using the Universal Package task in Azure Pipelines, you can pack, publish, and download packages of various sizes, up to 4 TB. Each package is uniquely identified with a name and a version number. You can use Azure CLI or Azure Pipelines to publish and consume packages from your Artifacts feeds.
 
 > [!NOTE]
 > Universal Packages are only available in Azure DevOps Services.
@@ -80,13 +80,13 @@ When publishing a new package, the Universal Packages task will automatically se
 
 To enable versioning for your package, add a `versionOption` input to your YAML file. The options for publishing a new package version are: `major`, `minor`, `patch`, or `custom`.
 
-Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a _testPackage 1.0.0_, and select the _major_ option, your new package will be _testPackage 2.0.0_. If you select the _minor_ option, your package version will be 1.1.0, and if you select the _patch_ option, your package version will be 1.0.1.
+Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a *testPackage 1.0.0*, and select the *major* option, your new package will be *testPackage 2.0.0*. If you select the *minor* option, your package version will be *1.1.0*, and if you select the *patch* option, your package version will be *1.0.1*.
 
 Note that if you choose the `custom` option, you must also specify a `versionPublish` value as follows:
 
 ```yaml
 - task: UniversalPackages@0
-  displayName: Universal Publish
+  displayName: Publish a Universal Package
   inputs:
     command: publish
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
@@ -110,7 +110,7 @@ Note that if you choose the `custom` option, you must also specify a `versionPub
 
 From the Universal Packages task form, select a versioning strategy, or select **Custom** to enter your package version manually.
 
-:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="A screenshot showing how use a versioning strategy in classic pipeline.":::
+:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="A screenshot showing how to use a versioning strategy in classic pipeline.":::
 
 ---
 
@@ -118,12 +118,12 @@ From the Universal Packages task form, select a versioning strategy, or select *
 
 #### [YAML](#tab/yaml/)
 
-To download a Universal Package from a feed in your organization, use the Universal package task with the `download` command input as follows: 
+To download a Universal Package from a feed in your organization, use the Universal Package task with the `download` command as follows: 
 
 ```yaml
 steps:
 - task: UniversalPackages@0
-  displayName: 'Universal download'
+  displayName: Download a Universal Package
   inputs:
     command: download
     vstsFeed: '<projectName>/<feedName>'
@@ -144,23 +144,23 @@ To download a Universal Package from an external source, use the following snipp
 ```yaml
 steps:
 - task: UniversalPackages@0
-  displayName: 'Universal download'
+  displayName: Download a Universal Package
   inputs:
     command: download
     feedsToUse: external
-    externalFeedCredentials: MSENG2
+    externalFeedCredentials: 'MSENG2'
     feedDownloadExternal: 'fabrikamFeedExternal'
     packageDownloadExternal: 'fabrikam-package'
     versionDownloadExternal: 1.0.0
 ```
 
-| Argument                       | Description                                                                                                                                              |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                                    |
-| externalFeedCredentials        | Name of the service connection pointing to the external feed. See [service connections](../library/service-endpoints.md) for details.                    |
-| feedDownloadExternal           | Name of the external feed.                                                                                                                               |
-| packageDownloadExternal        | The package name to be downloaded.                                                                                                                       |
-| versionDownloadExternal        | The version of the package to be downloaded.                                                                                                             |
+| Argument                       | Description                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                    |
+| externalFeedCredentials        | Name of the service connection to the external feed. See [manage service connections](../library/service-endpoints.md) for more details. |
+| feedDownloadExternal           | Name of the external feed.                                                                                                               |
+| packageDownloadExternal        | The package name you wish to download.                                                                                                   |
+| versionDownloadExternal        | The version of the package you wish to download.                                                                                         |
 
 #### [Classic](#tab/classic/)
 
@@ -168,19 +168,20 @@ To download a Universal Package, add the **Universal Package** task to your pipe
 
 - **Command:** Download
 - **Destination directory**: Folder path where the packages will be downloaded. Default value: `$(System.DefaultWorkingDirectory)`.
-- **Feed location:** Download a Universal Package from an Azure Artifacts feed in your organization or in another organization.
+- **Feed location:** Download a Universal Package from a feed in your organization or in another organization.
 - **Feed:** The feed that you want to download from.
-- **Package name:** The package that you want to download.
+- **Package name:** Name of the package to be downloaded.
 - **Version:** The version of the package that you want to download.
 
-:::image type="content" source="media/universal-packages/download.png" alt-text="Download Universal Packages task configuration":::
+:::image type="content" source="media/universal-packages/download.png" alt-text="A screenshot showing how to download a Universal Package with classic pipeline.":::
 
 ---
 
-> [!NOTE]
-> You can use wildcards in the string you pass to the download command to download the latest version of a Universal Package. See [Universal Packages quickstart](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version) for more details.
+> [!TIP]
+> You can use wildcards to download the latest version of a Universal Package. See [Download the latest version](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version) for more details.
 
-## Next Steps
+## Related articles
 
-- [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Universal Packages upstream sources](../../artifacts/universal-packages/universal-packages-upstream.md)
+- [Search for packages in upstream sources](../../artifacts/how-to/search-upstream.md)
+- [Feed permissions](../../artifacts/feeds/feed-permissions.md)
