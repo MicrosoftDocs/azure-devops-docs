@@ -4,14 +4,14 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2020
+ms.date: 05/05/2023
 ---
 
-## Remove and re-configure an agent
+## Remove and reconfigure an agent
 
 To remove the agent:
 
-1. Stop and uninstall the service as explained above.
+1. Stop and uninstall the service as explained in the revious section.
 
 2. Remove the agent.
    ```bash
