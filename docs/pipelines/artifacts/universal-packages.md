@@ -9,31 +9,28 @@ ms.date: 05/03/2021
 monikerRange: 'azure-devops'
 ---
 
-# Publish and download Universal Packages in Azure Pipelines
+# Publish and download Universal Packages with Azure Pipelines
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Using Universal Packages you can pack any number of files of any type and share it with your team. Using the Universal Package task, you can pack, publish, and download packages of various sizes up to 4 TB. Each package will be uniquely identified with a name and a version number. Packages can be published and consumed to and from Artifacts feeds by using the Azure CLI or Azure Pipelines.
+Universal Packages allow you to package any number of files of any type and share them with your team. Using the Universal Package task in Azure Pipelines, you can pack, publish, and download packages of various sizes, up to 4 TB. Each package will be uniquely identified with a name and a version number. You can use Azure CLI or Azure Pipelines to publish and consume packages from your Artifacts feeds.
 
 > [!NOTE]
 > Universal Packages are only available in Azure DevOps Services.
 
-## Prepare a Universal Package
+## Copy files
 
-By default, the Universal Packages task uses the `$(Build.ArtifactStagingDirectory)` as the publish directory. To prepare your Universal Package for publishing, place the files you want to publish in that directory. You can also use the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) utility task to copy those files to the publish directory.
-
-<a name="publish-packages"></a>
+The Universal Packages task in Azure Pipelines is set to use `$(Build.ArtifactStagingDirectory)` as the default publish directory. To ready your Universal Package for publishing, move the files you wish to publish to that directory. You can also use the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) utility task to copy those files to the publish directory.
 
 ## Publish a Universal Package
 
 # [YAML](#tab/yaml)
 
-To publish a Universal Package to your Artifacts feed, add the following task to your pipeline's yaml file.
+To publish a Universal Package to your Azure Artifacts feed, add the following task to your pipeline's YAML file.
 
 ```yaml
-# Publish a Universal Package
 - task: UniversalPackages@0
-  displayName: Universal Publish
+  displayName: Publish a Universal Package
   inputs:
     command: publish
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
@@ -42,16 +39,16 @@ To publish a Universal Package to your Artifacts feed, add the following task to
     packagePublishDescription: '<Package description>'
 ```
 
-| Argument                                                          | Description                                                                       |
-|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| publishDirectory                                                  | Location of the files to be published.                                            |
-| vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
-| vstsFeedPackagePublish                                            | The package name. Must be lower case. Use only letters, numbers, and dashes.                                                                |
-| packagePublishDescription                                         | Description of the content of the package.                                        |
+| Argument                    | Description                                                                                                               |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| publishDirectory            | Location of the files you wish to publish.                                                                                |
+| vstsFeedPublish             | The project and feed name to publish to. If you're working with an organization-scoped feed, specify only the feed name.  |
+| vstsFeedPackagePublish      | The package name. Must be lower case. Use only letters, numbers, and dashes.                                              |
+| packagePublishDescription   | Description of the package content.                                                                                       |
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from the feed's settings. See [Adding users/groups permissions to a feed](../../artifacts/feeds/feed-permissions.md) for details.
+To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from your feed's settings. See [Adding users/groups permissions to a feed](../../artifacts/feeds/feed-permissions.md) for more details.
 
-To publish to an external feed, you must first create a service connection to point to that feed. see [Manage service connection](../library/service-endpoints.md) for details. 
+To publish to an external feed, you must first create a service connection to authenticate with your feed. see [Manage service connection](../library/service-endpoints.md) for more details. 
 
 # [Classic](#tab/classic)
 
@@ -63,7 +60,7 @@ To publish your Universal Package, add the **Universal Package** task to your pi
 - **Destination feed:** Select the feed that you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
-    :::image type="content" source="media/universal-packages/publish.png" alt-text="Universal Package publish task":::
+    :::image type="content" source="media/universal-packages/publish.png" alt-text="A screenshot showing how to publish a universal package using a classic pipeline.":::
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
