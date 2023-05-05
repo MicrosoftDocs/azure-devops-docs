@@ -1147,15 +1147,16 @@ In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** pe
 
 Several branch policies offer path filters. If a path filter is set, the policy applies only to files that match the path filter. Leaving this field blank means that the policy applies to all files in the branch.
 
-You can specify absolute paths and wildcards.
+You can specify absolute paths (path must start either by `/` or a wildcard) and wildcards.
 Examples:
 - `/WebApp/Models/Data.cs`
 - `/WebApp/*`
+- `*/Models/Data.cs`
 - `*.cs`
 
 You can specify multiple paths using `;` as a separator.
 Example:
-- `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`
+- `/WebApp/Models/Data.cs;/ClientApp/Models/Data.cs`
 
 Paths prefixed with `!` are excluded if they would otherwise be included.
 Example:
@@ -1177,6 +1178,7 @@ The order of filters is significant. Filters are applied left-to-right.
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
+- [What will happen when path in path filters does start neither with `\` nor with wildcard?](#What-will-happen-when-path-in-path-filters-does-start-neither-with-\-nor-with-wildcard)
 
 #### Can I push changes directly to branches that have branch policies?
 
@@ -1233,6 +1235,10 @@ For example, your pull request has the following policies set:
 In this case, your approval satisfies **Automatically included reviewers**, but not **Require a minimum number of reviewers**, so you can't complete the pull request.
 
 There might also be other policies, such as **Prohibit the most recent pusher from approving their own changes**, that prevent you from approving your own changes even if **Allow requestors to approve their own changes** is set.
+
+#### What will happen when path in path filters does start neither with `\` nor with wildcard?
+
+The path in path filters that does not start with either `\` or a wildcard will have no effect and the path filter will evaluate as if that path was not specified. That is becaue such path cannot match the `/` the absolute file path starts with.
 
 ## Related articles
 
