@@ -247,7 +247,7 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |Row6 https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
-|https://vstsagentpackage.azureedge.net      |  Required to setup self-hosted agent in machines within your network              |
+|https://vstsagentpackage.azureedge.net      |  Required to set up self-hosted agent in machines within your network              |
 |https://amp.azure.net   | Needed for deploying to Azure app service           |
 |https://go.microsoft.com  | Accesses go links        |
 

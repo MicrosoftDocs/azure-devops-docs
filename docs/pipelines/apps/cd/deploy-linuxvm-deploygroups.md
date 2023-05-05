@@ -35,7 +35,7 @@ Learn how to use Classic Azure Pipelines to build and deploy your web app to an 
 
 - Use Ubuntu 16.04 or higher.
 - For Java Spring Boot and Spring Cloud apps, create a Linux VM in Azure using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
-- For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [set up Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
+- For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [setup Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
 - For Java EE apps, use one of the following templates to create a [Linux VM, Java and WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90), a [Linux VM, Java and WebLogic](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin), or a [Linux VM and Java 13.x](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and WildFly/JBoss 14.
 
 - - -
@@ -70,7 +70,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 - - -
 
-## Set up a deployment group
+## Setup a deployment group
 
 Deployment groups make it easier to organize the servers you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
@@ -116,7 +116,7 @@ Deployment groups make it easier to organize the servers you want to use to host
 
 1. Select the **Continuous deployment** icon, and the click the toggle button to enable the continuous deployment trigger. Add the *main* branch as a **Build branch filter**.
 
-    :::image type="content" source="media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to set up the continuous deployment trigger":::
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to setup the continuous deployment trigger":::
 
 1. Select **Tasks**, and then select the **Agent job** and remove it.
 
