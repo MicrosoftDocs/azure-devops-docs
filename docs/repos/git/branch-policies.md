@@ -1178,7 +1178,8 @@ The order of filters is significant. Filters are applied left-to-right.
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
-- [What will happen when path in path filters does start neither with `/` nor with wildcard?](#What-will-happen-when-path-in-path-filters-does-start-neither-with--nor-with-wildcard)
+- [What happens when path in path filters start neither with `/` nor with wildcard?](#What-happens-when-path-in-path-filters-start-neither-with--nor-with-wildcard)
+
 
 #### Can I push changes directly to branches that have branch policies?
 
@@ -1236,9 +1237,11 @@ In this case, your approval satisfies **Automatically included reviewers**, but 
 
 There might also be other policies, such as **Prohibit the most recent pusher from approving their own changes**, that prevent you from approving your own changes even if **Allow requestors to approve their own changes** is set.
 
-#### What will happen when path in path filters does start neither with `/` nor with wildcard?
+#### What happens when path in path filters start neither with `/` nor with wildcard?
 
-The path in path filters that does not start with either `/` or a wildcard will have no effect and the path filter will evaluate as if that path was not specified. That is becaue such path cannot match the `/` the absolute file path starts with.
+
+The path in path filters that start neither with `/` nor with a wildcard will have no effect, and the path filter will evaluate as if that path wasn't specified. That's because such a path can't match the `/` the absolute file path starts with.
+
 
 ## Related articles
 
