@@ -21,9 +21,8 @@ monikerRange: '<= azure-devops'
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
-> Before you begin:
-> * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
-> *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
+> [!NOTE]
+> This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -40,28 +39,9 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
     * macOS 12.0 "Monterey"
     * macOS 13.0 "Ventura"
     * Note: Not all Azure Pipeline tasks have been updated to support ARM64 yet
-- Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
-* The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
-
-### TFVC
-
-If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
-(The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
-
-[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
-
-Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
-
-> [!NOTE]
-> Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
-
-If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
-
-If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
-1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
-2. Download TEE-CLC version 14.135.0 manually from [Team Explorer Everywhere GitHub releases](https://github.com/microsoft/team-explorer-everywhere/releases).
-3. Extract the contents of `TEE-CLC-14.135.0` folder to `<agent_directory>/externals/tee`.
+- **Git** - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+* **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
+* **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -374,5 +354,25 @@ If you are running the agent interactively, see the restart instructions in [Run
 [!INCLUDE [include](../includes/qa-versions.md)]
 
 ::: moniker-end
+
+### TFVC prerequisites
+
+If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
+
+[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
+It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+
+Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
+
+> [!NOTE]
+> Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+
+If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
+1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
+2. Download TEE-CLC version 14.135.0 manually from [Team Explorer Everywhere GitHub releases](https://github.com/microsoft/team-explorer-everywhere/releases).
+3. Extract the contents of `TEE-CLC-14.135.0` folder to `<agent_directory>/externals/tee`.
 
 <!-- ENDSECTION -->

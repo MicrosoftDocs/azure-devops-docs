@@ -20,11 +20,8 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 
 :::moniker-end
 
-> Before you begin:
-> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
-> * If your code is in an on-premises Team Foundation Server (TFS) 2017 or newer, see [Deploy an agent on Windows for on-premises TFS 2017 or newer](windows-agent.md).
-> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](/previous-versions/azure/devops/pipelines/agents/v1-windows).
-> *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
+> [!NOTE]
+> This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -41,13 +38,9 @@ Make sure your machine has these prerequisites:
     * Windows Server 12 or higher
 * The agent software installs its own version of .NET so there is no .NET prerequisite.
 - [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
+* **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
+* Recommended - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
 
-
-Recommended:
-- [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
-
-
-If you're building from a Subversion repo, you must install the [Subversion client](https://subversion.apache.org/) on the machine.
 
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
