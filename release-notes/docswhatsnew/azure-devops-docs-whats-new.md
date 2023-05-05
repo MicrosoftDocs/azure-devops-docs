@@ -31,6 +31,7 @@ Welcome to what's new in the Azure DevOps docs from April 1, 2023 through April 
 
 ### Updated articles
 
+- [Create a build pipeline training module](/training/modules/create-a-build-pipeline/)
 - [Define resources in YAML](/azure/devops/pipelines/process/resources)
 
 
