@@ -5,7 +5,7 @@ ms.date: 5/8/2023
 ms.topic: include
 ---
 
-### Swimlane rules are now generally available
+### Swimlane rules is now generally available
 
 In our [March 31st release notes](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview), we announced a private preview for swimlane rules. For the last couple of sprints, we have been fixing bugs and iterating on your feedback. In this sprint we are happy to announce that swimlane rules are now generally available.
 
