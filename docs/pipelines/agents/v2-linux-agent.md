@@ -61,6 +61,9 @@ We support the following subset of .NET Core supported distributions:
 > [!NOTE]
 > Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
 
+> [!IMPORTANT]
+> As of February 2023, no more agent releases support RHEL 6. For more information, see [Customers using Red Hat Enterprise Linux (RHEL) 6 should upgrade the OS on Self-hosted agents](https://devblogs.microsoft.com/devops/customers-using-red-hat-enterprise-linux-rhel-6-should-upgrade-the-os-on-self-hosted-agents/).
+
 > [!NOTE]
 > Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
 > Run `uname -a` to see your Linux distro's instruction set.
