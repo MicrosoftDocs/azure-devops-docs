@@ -25,11 +25,10 @@ monikerRange: '<= azure-devops'
 
 ::: moniker-end
 
-To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
+To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. See [Check prerequisites](#check-prerequisites) for a list of supported Linux distributions.
 
-> Before you begin:
-> * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
-> *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
+> [!NOTE]
+> This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you are using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -58,6 +57,8 @@ We support the following subset of .NET Core supported distributions:
 * **Git** - Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 * **.NET** - The agent software runs on .NET 6, but installs its own version of .NET so there is no .NET prerequisite.
+* **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
+* **TFVC** - If you're building from a TFVC repo, see [TFVC prerequisites](#tfvc-prerequisites).
 
 > [!NOTE]
 > The agent installer knows how to check for other dependencies.
@@ -71,32 +72,8 @@ You can install those dependencies on supported Linux platforms by running `./bi
 
 ::: moniker-end
 
-### Subversion
-
-If you're building from a Subversion repo, you must install the Subversion client on the machine.
-
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
-
-### TFVC
-
-If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
-(The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
-
-[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
-It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
-
-Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
-
-> [!NOTE]
-> Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
-
-If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
-
-If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
-1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
-2. Download TEE-CLC version 14.135.0 manually from [Team Explorer Everywhere GitHub releases](https://github.com/microsoft/team-explorer-everywhere/releases).
-3. Extract the contents of `TEE-CLC-14.135.0` folder to `<agent_directory>/externals/tee`.
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -349,5 +326,25 @@ If you are running the agent interactively, see the restart instructions in [Run
 [!INCLUDE [include](../includes/qa-versions.md)]
 
 ::: moniker-end
+
+### TFVC prerequisites
+
+If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
+
+[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
+It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
+
+Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
+
+> [!NOTE]
+> Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+
+If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
+1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
+2. Download TEE-CLC version 14.135.0 manually from [Team Explorer Everywhere GitHub releases](https://github.com/microsoft/team-explorer-everywhere/releases).
+3. Extract the contents of `TEE-CLC-14.135.0` folder to `<agent_directory>/externals/tee`.
 
 <!-- ENDSECTION -->
