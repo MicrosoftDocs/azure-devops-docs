@@ -38,7 +38,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 The agent is based on .NET 6.
 You can run this agent on several Linux distributions.
-We support the following subset of .NET Core supported distributions:
+We support the following subset of .NET 6 supported distributions:
 
 * Supported distributions
   * x64
