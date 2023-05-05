@@ -294,6 +294,10 @@ resources:
     trigger:
     - main
     - release
+  steps:
+  - checkout: self
+  - checkout: A
+  - checkout: B
 ```
 
 The following table shows which versions are checked out for each repository by a pipeline using the above YAML file, unless you explicitly override the behavior during `checkout`.
