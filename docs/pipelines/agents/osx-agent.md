@@ -343,7 +343,7 @@ If you are running the agent interactively, see the restart instructions in [Run
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="<azure-devops"
 
 [!INCLUDE [include](includes/v3/qa-urls.md)]
 
