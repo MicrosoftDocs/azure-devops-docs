@@ -29,7 +29,7 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 | `https://app.vssps.visualstudio.com`                 | For organizations using the `{organization_name}.visualstudio.com` domain              |
 | `https://dev.azure.com`                              | For organizations using the `dev.azure.com` domain                                     |
 | `https://login.microsoftonline.com`                  | Azure Active Directory sign in                                                         |
-| `https://management.core.windows.net`                | Azure Management API's                                                                 |
+| `https://management.core.windows.net`                | Azure Management APIs                                                                 |
 | `https://vstsagentpackage.azureedge.net`             | Agent package                                                                          |
 
 

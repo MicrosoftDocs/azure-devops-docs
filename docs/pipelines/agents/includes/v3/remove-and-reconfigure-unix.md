@@ -11,7 +11,7 @@ ms.date: 05/05/2023
 
 To remove the agent:
 
-1. Stop and uninstall the service as explained in the revious section.
+1. Stop and uninstall the service as explained in the previous section.
 
 2. Remove the agent.
    ```bash
