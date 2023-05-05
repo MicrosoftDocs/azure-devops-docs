@@ -5,9 +5,9 @@ ms.date: 5/8/2023
 ms.topic: include
 ---
 
-### Swimlane rules is now generally available
+### Swimlane rules are now generally available
 
-In our [March 31st release notes](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview), we announced a private preview for swimlane rules. For the last couple of sprints, we have been fixing bugs and iterating on your feedback. In this sprint we are happy to announce that swimlane rules are now generally available.
+In our [March 31st release notes](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview), we announced a private preview for swimlane rules. These past few sprints, we have been fixing bugs and iterating on your feedback. In this sprint we are happy to announce that swimlane rules are now generally available.
 
 Swimlane rules are similar to style rules, but instead, they allow you to setup conditions on your Kanban board to automatically move work items into specific lanes. Here are some example scenarios for using swimlane rules:
 
