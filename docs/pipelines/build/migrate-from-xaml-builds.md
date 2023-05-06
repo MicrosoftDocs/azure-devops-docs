@@ -166,7 +166,7 @@ The new build pipeline offers you some new options. For example:
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
-| Clean workspace | On the **Repository** tab, open the **Clean** menu, and then select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Display **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
+| Clean workspace | On the **Repository** tab, open the **Clean** menu, and then select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Display **Advanced settings**, and then select **Clean**. (We plan to move this option out of advanced settings.) |
 | Get version | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
@@ -178,7 +178,7 @@ The new build pipeline offers you some new options. See [Build TFVC repositories
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
-| Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
+| Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. |
 
 The new build pipeline offers you some new options. See [Pipeline options for Git repositories](../repos/pipeline-options-for-git.md).
@@ -271,7 +271,7 @@ Here are a few examples of the kinds of apps you can build:
 
 ### Release
 
-The new build system is tightly integrated with Azure Pipelines. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
+The new build system is tightly integrated with Azure Pipelines. So it's easier than ever to automatically kick-off a deployment after a successful build. Learn more:
 
 * [Create your first pipeline](../create-first-pipeline.md)
 
