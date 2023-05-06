@@ -70,7 +70,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 - - -
 
-## Setup a deployment group
+## Set up a deployment group
 
 Deployment groups make it easier to organize the servers you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
@@ -116,7 +116,7 @@ Deployment groups make it easier to organize the servers you want to use to host
 
 1. Select the **Continuous deployment** icon, and the click the toggle button to enable the continuous deployment trigger. Add the *main* branch as a **Build branch filter**.
 
-    :::image type="content" source="media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to setup the continuous deployment trigger":::
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to set up the continuous deployment trigger":::
 
 1. Select **Tasks**, and then select the **Agent job** and remove it.
 
