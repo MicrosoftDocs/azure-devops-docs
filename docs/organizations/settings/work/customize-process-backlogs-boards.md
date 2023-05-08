@@ -143,7 +143,7 @@ And, lastly, Remaining Work is used in [Sprint burndown and capacity charts](../
 
 ## Add or edit portfolio backlogs 
 
-The Agile, Scrum, and CMMI system processes defines two default portfolio backlogs, Epics and Features. Each is associated with their corresponding work item types, Epic and Feature. The Basic process only defines the Epics backlog and Epic work item type. For more information about each process, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+The Agile, Scrum, and CMMI system processes defines two default portfolio backlogs, Epics and Features. Each is associated with their corresponding work item types, Epic and Feature. The Basic process only defines the Epics backlog and Epic work item type. For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
 You can add a custom work item type when adding or editing a portfolio backlog, or you can choose a work item type you've previously added. Only those work item types that don't belong to another backlog level appear for selection. 
  

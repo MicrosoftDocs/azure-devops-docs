@@ -28,7 +28,7 @@ landingContent:
             url: ./work-items/about-work-items.md
       - linkListType: concept
         links:
-          - text: Choose a process
+          - text: About default processes
             url: ./work-items/guidance/choose-process.md
           - text: Agile process workflow
             url: ./work-items/guidance/agile-process-workflow.md
