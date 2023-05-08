@@ -105,7 +105,7 @@ plugins {
 
 ### Configure settings.xml
 
-1. Open your *settings.xml* file in your home directory and add the following snippet. Replace the placeholders with the appropriate values.
+1. Open your *settings.xml* file in your home directory and add the following snippet. Replace the placeholders with your feed name, organization name, and the personal access token you created earlier.
 
 ```xml
 <server>
@@ -115,3 +115,16 @@ plugins {
 </server>
 ```
 
+## Publish artifacts
+
+Run the following command in an elevated command prompt to publish your package to your feed. Your new package will be named: *groupId:artifactId*.
+
+```Command
+gradle publish
+```
+
+## Related articles
+
+- [Install Maven Artifacts](./install.md)
+- [Use packages from Maven Central](./upstream-sources.md)
+- [Google Maven Repository upstream source](./google-maven.md)
