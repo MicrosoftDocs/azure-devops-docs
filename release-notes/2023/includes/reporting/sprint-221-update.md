@@ -12,6 +12,6 @@ We are happy to announce that the Pull Request widget for multiple repos is now 
 
 > ![Multiple repository widget to GA](../../media/221-reporting-01.png)
 
-The ability to have the **pull request widget** include multiple repos has been a highly requested feature.We hope you love it.
+The ability to have the **pull request widget** include multiple repos has been a highly requested feature. We hope you love it.
 
 [Community suggestion ticket](https://developercommunity.visualstudio.com/t/allow-multiple-repository-selection-in-pull-reques/982784)
