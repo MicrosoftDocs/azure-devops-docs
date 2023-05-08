@@ -288,7 +288,7 @@ The following articles describe fields that are used in common by several WITs, 
 - [About work item fields](../work-item-fields.md)
 - [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
-- [Choose a process](choose-process.md)  
+- [About processes and process templates](choose-process.md)  
   
 ::: moniker-end  
 
@@ -297,7 +297,7 @@ The following articles describe fields that are used in common by several WITs, 
 - [About work item fields](../work-item-fields.md)
 - [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
-- [Choose a process](choose-process.md)  
+- [About processes and process templates](choose-process.md)  
 - [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)  
 
 ::: moniker-end     

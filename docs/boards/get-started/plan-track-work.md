@@ -15,7 +15,7 @@ ms.date: 03/17/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In this article, learn how to use Azure Boards to plan and track your work using an **Agile**, **Basic**, **Scrum**, or **Capability Maturity Model Integration (CMMI)** process. For more information about these processes, see [Choose a process](../work-items/guidance/choose-process.md).
+In this article, learn how to use Azure Boards to plan and track your work using an **Agile**, **Basic**, **Scrum**, or **Capability Maturity Model Integration (CMMI)** process. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md).
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 
