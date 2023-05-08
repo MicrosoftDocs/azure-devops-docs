@@ -1178,7 +1178,7 @@ The order of filters is significant. Filters are applied left-to-right.
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
-- [What happens when path in path filters start neither with `/` nor with wildcard?](#What-happens-when-path-in-path-filters-start-neither-with--nor-with-wildcard)
+- [What happens when path in path filters start neither with `/` nor with wildcard?](#what-happens-when-path-in-path-filters-start-neither-with--nor-with-wildcard)
 
 
 #### Can I push changes directly to branches that have branch policies?
