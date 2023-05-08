@@ -46,10 +46,9 @@ plugins {
 
 1. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope.
 
-    :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
-
 1. Select **Create** when you are done. Copy your token and save it in a secure location.
 
+    :::image type="content" source="media/gradle-pat.png" alt-text="Screenshot showing how to create a new personal access token with packaging read & write scopes.":::  
 
 ### Configure build.gradle
 
@@ -107,13 +106,13 @@ plugins {
 
 1. Open your *settings.xml* file in your home directory and add the following snippet. Replace the placeholders with your feed name, organization name, and the personal access token you created earlier.
 
-```xml
-<server>
-    <id>[FEED_NAME]</id>
-    <username>[ORGANIZATION_NAME]</username>
-    <password>[PERSONAL_ACCESS_TOKEN]</password>
-</server>
-```
+    ```xml
+    <server>
+        <id>[FEED_NAME]</id>
+        <username>[ORGANIZATION_NAME]</username>
+        <password>[PERSONAL_ACCESS_TOKEN]</password>
+    </server>
+    ```
 
 ## Publish artifacts
 
