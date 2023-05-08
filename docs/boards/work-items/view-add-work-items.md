@@ -84,7 +84,7 @@ There's no [**az boards**](/cli/azure//boards) command that opens the **Work Ite
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Basic](../get-started/plan-track-work.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create differ. For example, backlog items may be called user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of these processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+> For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
 
 ## View work items
 
