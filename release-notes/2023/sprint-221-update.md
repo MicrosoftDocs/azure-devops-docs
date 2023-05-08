@@ -8,7 +8,7 @@ description: Swimlane rules is generally available
 # Swimlane rules is generally available
 We are excited to announce that Swimlane rules is generally available. Swimlane rules allow you to setup conditions on your Kanban board to automatically move work items into specific lanes.
 
-In addition, we have added two new security improvements to Azure Pipelines. In Reporting, we have made the Pull Request widget for multiple repos generally available.  
+In addition, we have added two new security improvements to Azure Pipelines. In Reporting, the Pull Request widget for multiple repos is now generally available.  
 
 Check out the release notes for details.
 
