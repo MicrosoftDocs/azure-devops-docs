@@ -63,7 +63,7 @@ If you're just getting started, we recommend you review and get started with the
 :::row-end:::
 ---
 
-Follow the links provided in the following table to learn more about the Azure services that support continuous integration (CI) and continuous delivery (CD) using Azure Pipelines. For a complete list of Azure pipeline tasks, see [Build and release tasks](tasks/index.md).
+Follow the links provided in the following table to learn more about the Azure services that support continuous integration (CI) and continuous delivery (CD) using Azure Pipelines. For a complete list of Azure Pipelines tasks, see [Build and release tasks](tasks/index.md).
 
 
 :::row:::
