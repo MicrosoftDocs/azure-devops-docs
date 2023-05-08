@@ -30,7 +30,7 @@ In this article, you will learn how to connect to an Azure Artifacts feed and pu
 
 Before setting up your project, ensure that you have installed Gradle and added the Maven Settings plugin to your *build.gradle* file as follows:
 
-```
+```groovy
 plugins {
   id "net.linguica.maven-settings" version "0.5"
 }
@@ -51,16 +51,67 @@ plugins {
 1. Select **Create** when you are done. Copy your token and save it in a secure location.
 
 
+### Configure build.gradle
 
+1. If a *build.gradle* file does not exist in the root of your project, create a new file and name it: *build.gradle*.
 
+1. Add the following section to your *build.gradle* file in both the **repositories** and **publishing.repositories** containers. 
 
-
-1. Create a new file in your *.gradle* folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
-
-6. Open the **gradle.properties** file with a text editor and add the following snippet:
-
+    ```groovy
+    maven {
+        url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+        name '<FEED_NAME>'
+        authentication {
+            basic(BasicAuthentication)
+        }
+    }
     ```
-    vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
+1. Here's an example of what your *build.gradle* file should look like:
+
+    ```groovy
+    publishing { 
+        publications { 
+            myPublication(MavenPublication) { 
+                groupId '<GROUP_ID>' 
+                artifactId '<ARTIFACT_ID>' 
+                version '<VERSION_NUMBER>'           
+                artifact '<PATH_TO_YOUR_JAR_FILE>'   
+            } 
+        } 
+    
+        // Repositories to publish artifacts 
+        repositories { 
+            maven {
+                url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+                name '<FEED_NAME>'
+                authentication {
+                    basic(BasicAuthentication)
+                }
+            }
+        } 
+    } 
+     
+    // Repositories to fetch dependencies
+    repositories { 
+            maven {
+                url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1'
+                name '<FEED_NAME>'
+                authentication {
+                    basic(BasicAuthentication)
+                }
+            }
+    } 
     ```
 
-7. Save your file when you are done.
+### Configure settings.xml
+
+1. Open your *settings.xml* file in your home directory and add the following snippet. Replace the placeholders with the appropriate values.
+
+```xml
+<server>
+    <id>[FEED_NAME]</id>
+    <username>[ORGANIZATION_NAME]</username>
+    <password>[PERSONAL_ACCESS_TOKEN]</password>
+</server>
+```
+
