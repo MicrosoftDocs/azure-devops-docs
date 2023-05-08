@@ -1,9 +1,7 @@
 ---
 title: DevTest and DevOps solutions architecture 
 description: Learn how to configure a DevTest and DevOps infrastructure for development, testing, and deploying IaaS-based software.
-author: martinekuan
-ms.author: martinek
-ms.date: 05/01/2023
+ms.date: 05/08/2023
 ms.topic: solution-idea
 ms.custom:
     - fcp
@@ -18,7 +16,7 @@ monikerRange: '<= azure-devops'
 # Azure Pipelines architecture with DevTest Labs 
 
 > [!IMPORTANT]
-> CI/CD with DevTest Labs is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-baseline-architecture.md). This article focuses on the specifics of deploying to a DevTest Labs staging environments.
+> CI/CD with DevTest Labs is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-pipelines-baseline-architecture.md). This article focuses on the specifics of deploying to a DevTest Labs staging environments.
 
 DevTest Labs allow you to provision Windows and Linux environments by using reusable templates and artifacts. These environments can be useful for developers, but can also be used in CI/CD pipelines for provisioning staging environments. See [Azure DevTest Labs scenarios](/azure/devtest-labs/devtest-lab-guidance-get-started) to see if DevTest labs is a good fit for your scenario.
 
@@ -34,7 +32,7 @@ Architecture diagram of an Azure pipeline deploying to Azure Virtual Machines. T
 
 ### Dataflow
 
-This section assumes you have read [Azure Pipelines baseline architecture](devops-baseline-architecture.md#dataflow) and only focuses on the specifics of deploying a workload to Azure DevTest Labs for staging.
+This section assumes you have read [Azure Pipelines baseline architecture](devops-pipelines-baseline-architecture.md#dataflow) and only focuses on the specifics of deploying a workload to Azure DevTest Labs for staging.
 
 1. **PR pipeline** - *Same as the baseline*
 
@@ -56,7 +54,7 @@ This section assumes you have read [Azure Pipelines baseline architecture](devop
 
 ### Components
 
-This section assumes you have read [Azure Pipelines baseline architecture components section](devops-baseline-architecture.md#components) and only focuses on the specifics of deploying a workload to Azure DevTest Labs for staging.
+This section assumes you have read [Azure Pipelines baseline architecture components section](devops-pipelines-baseline-architecture.md#components) and only focuses on the specifics of deploying a workload to Azure DevTest Labs for staging.
 
 - [Azure DevTest Labs](/azure/devtest-labs/devtest-lab-overview) is a service for creating, using, and managing environments used for development, testing and deployment purposes. The service allows you to easily deploy pre-configured environments in a cost-effective manner.
 
@@ -70,7 +68,7 @@ This section assumes you have read [Azure Pipelines baseline architecture compon
 
 ## Considerations
 
-This section assumes you have read the [considerations section in Azure Pipelines baseline architecture](devops-baseline-architecture.md#considerations) and only focuses on the specifics of deploying a workload to Azure DevTest Labs for staging.
+This section assumes you have read the [considerations section in Azure Pipelines baseline architecture](devops-pipelines-baseline-architecture.md#considerations) and only focuses on the specifics of deploying a workload to Azure DevTest Labs for staging.
 
 ### Cost Optimization
 
@@ -87,6 +85,6 @@ This section assumes you have read the [considerations section in Azure Pipeline
 
 ## Related resources
 
-- [CI/CD baseline architecture with Azure Pipelines](devops-baseline-architecture.md)
+- [CI/CD baseline architecture with Azure Pipelines](devops-pipelines-baseline-architecture.md)
 - [CI/CD for IaaS applications](/azure/architecture/solution-ideas/articles/cicd-for-azure-vms)
 

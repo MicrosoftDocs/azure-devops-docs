@@ -1,9 +1,7 @@
 ---
 title: Azure Pipelines architecture for Azure Web Apps 
 description: Learn how to create web apps using ASP.NET, Java, Node.js, or PHP. Deliver value faster to your customers with a CI/CD pipeline.
-author: martinekuan
-ms.author: martinek
-ms.date: 05/01/2023
+ms.date: 05/08/2023
 ms.topic: solution-idea
 ms.category: 
     - devops
@@ -32,7 +30,7 @@ monikerRange: '<= azure-devops'
 # Azure Pipelines architecture for Azure Web Apps 
 
 > [!IMPORTANT]
-> CI/CD for Azure Web Apps is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-baseline-architecture.md). This article focuses on the Web Apps-specific facets of deployment.
+> CI/CD for Azure Web Apps is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-pipelines-baseline-architecture.md). This article focuses on the Web Apps-specific facets of deployment.
 
 Azure Web Apps is a fast and simple way to create web apps using ASP.NET, Java, Node.js, Python, and other languages and frameworks. Deliver value faster to your customers with a continuous integration and continuous deployment (CI/CD) pipeline that pushes each of your changes automatically to Azure Web Apps.
 
@@ -46,7 +44,7 @@ Architecture diagram of an Azure pipeline deploying to Azure App Services. The d
 
 ### Dataflow
 
-This section assumes you have read [Azure Pipelines baseline architecture](devops-baseline-architecture.md#dataflow) and only focuses on the considerations specifics to deploying a workload to Azure App Services.
+This section assumes you have read [Azure Pipelines baseline architecture](devops-pipelines-baseline-architecture.md#dataflow) and only focuses on the considerations specifics to deploying a workload to Azure App Services.
 
 1. **PR pipeline** - *Same as the baseline*
 
@@ -62,7 +60,7 @@ This section assumes you have read [Azure Pipelines baseline architecture](devop
 
 ### Components
 
-This section assumes you have read [Azure Pipelines baseline architecture components section](devops-baseline-architecture.md#components) and only focuses on the considerations specifics to deploying a workload to Azure App Services.
+This section assumes you have read [Azure Pipelines baseline architecture components section](devops-pipelines-baseline-architecture.md#components) and only focuses on the considerations specifics to deploying a workload to Azure App Services.
 
 - [Azure App Service](/azure/app-service/): Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. Azure Web Apps are actually applications hosted in Azure App Service.
 
@@ -70,7 +68,7 @@ This section assumes you have read [Azure Pipelines baseline architecture compon
 
 ## Considerations
 
-This section assumes you have read the [considerations section in Azure Pipelines baseline architecture](devops-baseline-architecture.md#considerations) and only focuses on the considerations specifics to deploying a workload to Azure App Services.
+This section assumes you have read the [considerations section in Azure Pipelines baseline architecture](devops-pipelines-baseline-architecture.md#considerations) and only focuses on the considerations specifics to deploying a workload to Azure App Services.
 
 ### Operational Excellence
 
@@ -88,5 +86,5 @@ This section assumes you have read the [considerations section in Azure Pipeline
 
 ## Related resources
 
-- [CI/CD baseline architecture with Azure Pipelines](devops-baseline-architecture.md)
+- [CI/CD baseline architecture with Azure Pipelines](devops-pipelines-baseline-architecture.md)
 <!-- - [CI/CD for IaaS applications](./cicd-for-azure-vms.yml) -->

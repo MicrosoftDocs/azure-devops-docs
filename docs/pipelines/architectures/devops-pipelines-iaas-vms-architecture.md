@@ -1,9 +1,7 @@
 ---
 title: DevOps for IaaS solutions architecture 
 description: High-level DevOps workflow for deploying application changes to VMs using continuous integration (CI) and continuous deployment (CD) practices using Azure Pipelines.
-author: ckittel
-ms.author: robbag
-ms.date: 05/01/2023
+ms.date: 05/08/2023
 ms.topic: solution-idea
 ms.custom:
     - acom-architecture
@@ -27,7 +25,7 @@ monikerRange: '<= azure-devops'
 # Azure Pipelines architecture for IaaS 
 
 > [!IMPORTANT]
-> CI/CD for IaaS applications is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-baseline-architecture.md). This article focuses on the specifics of deploying web applications to Azure Virtual Machines.
+> CI/CD for IaaS applications is a variant of [Design a CI/CD pipeline using Azure DevOps](devops-pipelines-baseline-architecture.md). This article focuses on the specifics of deploying web applications to Azure Virtual Machines.
 
 Azure Virtual Machines is an option for hosting custom applications when you want flexible and granular management of your compute. Virtual machines (VMs) should be subject to the same level of engineering rigor as Platform-as-a-Service (PaaS) offerings throughout the development lifecycle. For example, implementing automated build and release pipelines to push changes to the VMs.
 
@@ -43,7 +41,7 @@ Architecture diagram of an Azure pipeline deploying to Azure Virtual Machines. T
 
 ### Dataflow
 
-This section assumes you have read [Azure Pipelines baseline architecture](devops-baseline-architecture.md#dataflow) and only focuses on the specifics of deploying a workload to Azure Virtual Machines.
+This section assumes you have read [Azure Pipelines baseline architecture](devops-pipelines-baseline-architecture.md#dataflow) and only focuses on the specifics of deploying a workload to Azure Virtual Machines.
 
 1. **PR pipeline** - *Same as the baseline*
 
@@ -62,7 +60,7 @@ This section assumes you have read [Azure Pipelines baseline architecture](devop
 
 ### Components
 
-This section assumes you have read [Azure Pipelines baseline architecture components section](devops-baseline-architecture.md#components) and only focuses on the specifics of deploying a workload to Azure Virtual Machines.
+This section assumes you have read [Azure Pipelines baseline architecture components section](devops-pipelines-baseline-architecture.md#components) and only focuses on the specifics of deploying a workload to Azure Virtual Machines.
 
 - [Azure Virtual Machines](https://azure.microsoft.com/products/virtual-machines) provide on-demand, high-scale, secure, virtualized infrastructure using Windows or Linux servers. Virtual Machines are used in this architecture to host workloads.
 
@@ -76,7 +74,7 @@ This article focuses on the use of Azure Traffic Manager as the load balancer. A
 
 ## Considerations
 
-This section assumes you have read the [considerations section in Azure Pipelines baseline architecture](devops-baseline-architecture.md#considerations) and only focuses on the considerations specifics to deploying a workload to Azure Virtual Machines.
+This section assumes you have read the [considerations section in Azure Pipelines baseline architecture](devops-pipelines-baseline-architecture.md#considerations) and only focuses on the considerations specifics to deploying a workload to Azure Virtual Machines.
 
 ### Operational Excellence
 
@@ -91,5 +89,5 @@ This section assumes you have read the [considerations section in Azure Pipeline
 
 ## Related resources
 
-- [CI/CD baseline architecture with Azure Pipelines](devops-baseline-architecture.md)
+- [CI/CD baseline architecture with Azure Pipelines](devops-pipelines-baseline-architecture.md)
 - [Run a Linux VM on Azure](/azure/architecture/reference-architectures/n-tier/linux-vm)

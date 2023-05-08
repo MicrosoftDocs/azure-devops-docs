@@ -1,9 +1,7 @@
 ---
 title: Azure Pipelines baseline architecture 
 description: This architecture illustrates building a continuous integration and deployment pipeline using Azure Pipelines.
-author: robbagby
-ms.author: robbag
-ms.date: 05/01/2023
+ms.date: 05/08/2023
 ms.topic: example-scenario
 ms.custom:
     - devops

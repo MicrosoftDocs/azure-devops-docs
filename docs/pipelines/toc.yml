@@ -627,13 +627,13 @@
 - name: Architectures
   items:
     - name: Baseline Azure Pipelines architecture
-      href: architectures/devops-baseline-architecture.md
+      href: architectures/devops-pipelines-baseline-architecture.md
     - name: Azure Web Apps architecture
-      href: architectures/devops-azure-web-apps-architecture.md
+      href: architectures/devops-pipelines-azure-web-apps-architecture.md
     - name: DevTest architecture
-      href: architectures/devops-devtest-iaas-architecture.md
+      href: architectures/devops-pipelines-devtest-iaas-architecture.md
     - name: IaaS architecture
-      href: architectures/devops-iaas-vms-architecture.md
+      href: architectures/devops-pipelines-iaas-vms-architecture.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
