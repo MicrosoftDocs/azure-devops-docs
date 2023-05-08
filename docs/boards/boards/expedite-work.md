@@ -10,21 +10,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2023
+ms.date: 05/10/2023
 ---
 
-# Use swimlanes to differentiate work you want to expedite on your Kanban board
+# Expedite work using swimlanes
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 Your Kanban board helps you visualize the flow of work as it moves from defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
-
-For example, you can create three swimlanes&mdash;*Expedite*, *Standard*, and *Parked*&mdash;to track high-priority work, standard work, and work that's currently blocked.  
-
-![Conceptual image of Kanban board showing three swimlanes](media/ALM_EW_IntroChart_3C.png) 
-
-> [!TIP]
-> Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ↑↓ up/down arrows. For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
@@ -40,13 +33,14 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 
 ## Track work in swimlanes  
 
-Once you've set up your swimlanes, you can drag items into a swimlane and also reorder them within the lane.  
+Once you've set up your swimlanes, you can drag items into a swimlane, and also reorder them within the lane.  
 
 > [!TIP]  
-> When you have many swimlanes or cards on your board, you may encounter slow performance when dragging a card. We recommend that you use swimlanes in conjunction with card styles, tags, and board filters to manage your work items. If you have a lot of cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
+> - Enter `o` to expand all swimlanes and `u` to collapse all swimlanes. To move the focus up or down, enter the `↑↓` up/down arrows. For more information, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
+> - When you have many swimlanes or cards on your board, you may encounter slow performance when dragging a card. We recommend that you use swimlanes in conjunction with card styles, tags, and board filters to manage your work items. If you have a lot of cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Kanban board, Drag items into a swimlane. ](media/expedite/swimlanes-move-item.png)  
+> ![Screenshot of Kanban board and dragging items into a swimlane.](media/expedite/swimlanes-move-item.png)  
 
 You can also focus on a single swimlane by collapsing all other lanes.
 
@@ -57,7 +51,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 	
 ## Add or remove a swimlane 
 
-*What swimlanes will support your tracking needs?* Once you've identified one or two, add them to your Kanban board.  
+*Which swimlanes support your tracking needs?* Once you've identified one or two, add them to your Kanban board.  
 
 ::: moniker range="azure-devops"
 
@@ -150,6 +144,27 @@ You can also focus on a single swimlane by collapsing all other lanes.
 6. When done with your changes, choose **Save**.  
 
 ::: moniker-end  
+
+## Set up swimlane rules
+
+Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your Kanban board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it get placed into that lane. The following limits apply:
+- Up to 50 lanes on a board
+- Up to 5 rules per lane
+- Max of 25 rules total
+
+> [!TIP]
+> You can't assign rules to the Default lane, but you can optionally rename it.
+
+1. From your Kanban board, choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to **Configure board settings**.
+2. Select **Swimlanes**.
+
+
+3. Select **+ Add swimlane**. Enter a name and select a color for your new swimlane, and then add criteria for Field, Operator, and Value, and then choose **Save**. 
+
+The following examples show:
+- Lanes to track the feature (parent) of your user stories and bugs.
+- Lanes to track priority. Priority=1 bugs to be placed in the "High Priority" lane and Priority=2 bugs into the "Medium Priority" lane.
+
 
 ## Query for work items based on swimlane
 
