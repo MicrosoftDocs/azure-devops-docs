@@ -21,7 +21,7 @@ trigger:
 - releases/*
 ```
 
-You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
+You can specify the full name of the branch (for example, `main`) or a wildcard (for example, `releases/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
 
 > [!NOTE]
@@ -43,7 +43,7 @@ trigger:
     - releases/old*
 ```
 
-In the above example, the pipeline will be triggered if a change is pushed to master or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`. 
+In the above example, the pipeline will be triggered if a change is pushed to `main` or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`. 
 
 If you specify an `exclude` clause without an `include` clause, then it is equivalent to specifying `*` in the `include` clause.
 
@@ -87,7 +87,7 @@ trigger:
 > [!NOTE]
 > `batch` is not supported in repository resource triggers.
 
-To clarify this example, let us say that a push `A` to master caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
+To clarify this example, let us say that a push `A` to `main` caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
 
 >[!NOTE]
 > If the pipeline has multiple jobs and stages, then the first run should still reach a terminal state by completing or skipping all its jobs and stages before the second run can start. For this reason, you must exercise caution when using this feature in a pipeline with multiple stages or approvals. If you wish to batch your builds in such cases, it is recommended that you split your CI/CD process into two pipelines - one for build (with batching) and one for deployments.
