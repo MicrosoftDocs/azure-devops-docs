@@ -7,11 +7,8 @@ ms.topic: include
 
 ### Pull Request widget for multiple repos is now generally available
 
-We are happy to announce that the Pull Request widget for multiple repos is now generally available. This new widget will allow you to see the pull requests for up to 10 different repositories in a single list.
-
+We are thrilled to announce the general availability of the Pull Request widget for multiple repositories. With this new widget, you can effortlessly view pull requests from up to 10 different repositories in a single, streamlined list, making it easier than ever to stay on top of your pull requests.
 
 > ![Multiple repository widget to GA](../../media/221-reporting-01.png)
-
-The ability to have the **pull request widget** include multiple repos has been a highly requested feature. We hope you love it.
 
 [Community suggestion ticket](https://developercommunity.visualstudio.com/t/allow-multiple-repository-selection-in-pull-reques/982784)

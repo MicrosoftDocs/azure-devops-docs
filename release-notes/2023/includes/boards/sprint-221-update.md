@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Swimlane rules is generally available
 
-In our [March 31st release notes](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview), we announced a private preview for swimlane rules. We have spend the past few sprints, fixing bugs and iterating on your feedback. In this sprint we are happy to announce that swimlane rules are now generally available.
+We are excited to announce that swimlane rules, which were first introduced in our [March 31st release notes](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview), have now progressed from the private preview stage to being generally available. Over the past few sprints, we have worked diligently to fix bugs and incorporate your valuable feedback into the feature. 
 
 Swimlane rules are similar to style rules, but instead, they allow you to setup conditions on your Kanban board to automatically move work items into specific lanes. Here are some example scenarios for using swimlane rules:
 
@@ -18,6 +18,9 @@ Swimlane rules are similar to style rules, but instead, they allow you to setup 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo editing of shareable picklist fields.](../../media/221-boards-01.gif "gif to demo editing of shareable picklist fields")
 
-The feature has been on the backlog for an extended period and has been one of the top voted items in the work item space. We are excited to make this feature generally available to all users of the [New Boards Hub preview](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview). If you have any questions, [please send us an email](mailto:%20dahellem@microsoft.com).
+This highly anticipated feature has remained on our backlog for an extended period and has consistently garnered one of the highest number of votes in the work item space. We are excited to make this feature generally available to all users of the [New Boards Hub preview](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview). If you have any questions, [please send us an email](mailto:%20dahellem@microsoft.com).
 
 [Community suggestion ticket](https://developercommunity.visualstudio.com/t/swimlanes-rules/365710)
+
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
