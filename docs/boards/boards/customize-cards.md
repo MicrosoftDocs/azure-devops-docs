@@ -467,6 +467,7 @@ From a card on the Kanban board, you can go to the underlying test plan and test
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
 - [Set working days](../../organizations/settings/set-working-days.md) 
+- [Set up swimlanes](expedite-work.md)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"

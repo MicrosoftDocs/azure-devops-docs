@@ -251,7 +251,7 @@ sections:
       - question: Can I use swimlanes and set up swimlane rules?
 
         answer:  |
-            **Yes**, you can [add swimlanes](boards/expedite-work.md) to your Kanban board and [set up swimlane rules](boards/expedite-work#set-up-swimlane-rules).
+            **Yes**, you can [add or remove swimlanes](boards/expedite-work.md) on your Kanban board. You can also [set up swimlane rules](boards/expedite-work.md#set-up-swimlane-rules), where when certain conditions are met, Azure Boards automatically moves work items into specific lanes.
 
   - name: Work item templates  
 
