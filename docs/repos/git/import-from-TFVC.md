@@ -14,7 +14,7 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can migrate code from an existing TFVC repository to a new Git repository within the same organization. Migrating to Git is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
+You can migrate code from an existing TFVC repository to a new Git repository within the same organization. Migrating to Git is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave differently from Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
 
 * Revising tools and processes
 * Removing binaries and executables
