@@ -81,7 +81,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 	> [!NOTE]  
 	> If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: context menu for the swimlane,  and select **Remove**. 
 
-5. When done with your changes, choose **Save**.  
+5. When you're done with your changes, choose **Save**.  
 
 ::: moniker-end 
 
@@ -111,7 +111,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
 
-5. When done with your changes, choose **Save**.  
+5. When you're done with your changes, choose **Save**.  
 
 ::: moniker-end 
 
@@ -140,7 +140,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
 
-6. When done with your changes, choose **Save**.  
+6. When you're done with your changes, choose **Save**.  
 
 ::: moniker-end  
 
@@ -148,7 +148,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your Kanban board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it gets placed into that lane. 
 
-The following limits apply:
+The following limits apply to swimlanes:
 - Up to 50 lanes on a board
 - Up to five rules per lane
 - Max of 25 rules total
@@ -161,7 +161,7 @@ Complete the following steps to set up swimlane rules for your Kanban board.
 
    :::image type="content" source="media/expedite/add-swimlane-criteria.png" alt-text="Screenshot showing sequence of buttons to select to add a swimlane rule.":::
 
-3. Choose from the dropdown menus for each of the following entries: **Field**, **Operator**, and **Value**, and then choose **Save**. 
+3. Choose from the dropdown menus for each of the following entries: **Field**, **Operator**, and **Value**, and then choose **Save**. For more information, see the [examples in the next section](#examples-of-swimlane-rules). 
 
    :::image type="content" source="media/expedite/swimlane-rule-criteria.png" alt-text="Screenshot showing field, operator, and value selections for swimlane rule.":::
 
@@ -174,16 +174,18 @@ When your board refreshes, your work items are listed within the appropriate swi
 
 The following examples show some of the ways you can use and set up swimlane rules.
 
-- Set up swimlane rules to track priority. We created rules for the `Priority` field and renamed the default lane, so work items automatically go into the appropriate swimlane.
+- **Track priority**. We created rules for the `Priority` field and renamed the default lane, so work items automatically go into the appropriate swimlane.
   :::image type="content" source="media/expedite/priority-swimlane-rule-setup.png" alt-text="Screenshot showing swimlane rules set up by priority.":::
 
   :::image type="content" source="media/expedite/board-priority-swimlanes.png" alt-text="Screenshot showing priority swimlanes on Kanban board.":::
 
-- Set up swimlane rules to track the parents of your work items. We created rules for the`Work item type` field, so you can quickly see parents (features) and children (user stories and bugs) in their own swimlanes on the Kanban board.
+- **Track the parents of your work items**. We created rules for the `Work item type` field, so you can quickly see parents (features) and children (user stories and bugs) in their own swimlanes on the Kanban board.
   :::image type="content" source="media/expedite/work-item-type-swimlane-rule-setup.png" alt-text="Screenshot showing rules set up for work item types.":::
 
-- Set up swimlane rules for each person on your team. We created rules for the `Assigned to` field, so that when you assign a work item, it's placed into that person's lane.
-  :::image type="content" source="media/expedite/swimlane-rule-assigned-to.png" alt-text="Screenshot showing rule criteria for swimlane, by Assigned To field.":::
+  :::image type="content" source="media/expedite/board-track-parent-work-items-swimlanes.png" alt-text="Screenshot showing parent work item swimlanes on Kanban board.":::
+
+- **Track each person's work on your team**. We created rules for the `Assigned to` field, so that when you assign a work item, it's placed into that person's lane.
+  :::image type="content" source="media/expedite/assigned-to-swimlane-rule-setup.png" alt-text="Screenshot showing rule criteria for swimlane, by Assigned To field.":::
 
   :::image type="content" source="media/expedite/board-assigned-to-swimlanes.png" alt-text="Screenshot showing swimlanes grouped by priority.":::
 
