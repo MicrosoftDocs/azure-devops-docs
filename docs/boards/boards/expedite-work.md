@@ -115,7 +115,6 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ::: moniker-end 
 
-
 ::: moniker range="tfs-2018"  
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
@@ -154,9 +153,11 @@ The following limits apply:
 - Up to five rules per lane
 - Max of 25 rules total
 
+Complete the following steps to set up swimlane rules for your Kanban board.
+
 1. From your Kanban board, choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to **Configure board settings**.
 
-2. Select **Swimlanes**, select the swimlane or **[+ Add swimlane](#add-or-remove-a-swimlane)**, and then select **+ Add criteria**.
+2. Select **Swimlanes**, select the **swimlane** or **[+ Add swimlane](#add-or-remove-a-swimlane)**, and then select **+ Add criteria**.
 
    :::image type="content" source="media/expedite/add-swimlane-criteria.png" alt-text="Screenshot showing sequence of buttons to select to add a swimlane rule.":::
 
@@ -171,14 +172,15 @@ When your board refreshes, your work items are listed within the appropriate swi
 
 ### Examples of swimlane rules
 
-The following examples show some of the ways you can use and set up swimlane rules:
+The following examples show some of the ways you can use and set up swimlane rules.
 
-- Set up swimlane rules to track priority. `Priority 1` work items go into the **High priority** swimlane, `Priority 2` work items go into the **Medium priority** swimlane, which is the renamed default lane, and `Priority 3` work items go into the **Low priority** swimlane.
+- Set up swimlane rules to track priority. We created rules for the `Priority` field and renamed the default lane, so work items automatically go into the appropriate swimlane.
   :::image type="content" source="media/expedite/priority-swimlane-rule-setup.png" alt-text="Screenshot showing swimlane rules set up by priority.":::
-  :::image type="content" source="media/expedite/collapsed-swimlanes-rules.png" alt-text="Screenshot showing collapsed swimlanes with rules set up.":::
-- Set up swimlane rules to track the parents of your work items. We created lanes for `Features` and `Bugs`, and we renamed the default lane to `User stories`. This way you can see parents, children, and related work items.
+
+- Set up swimlane rules to track the parents of your work items. We created rules for the`Work item type` field, so you can easily see parents (features) and children (user stories and bugs) in their own swimlanes on the Kanban board.
   :::image type="content" source="media/expedite/work-item-type-swimlane-rule-setup.png" alt-text="Screenshot showing rules set up for work item types.":::
-- Set up swimlane rules for each person on your team. We create lanes for `Julia` and `Rami`. When you assign the work item, it's placed into that person's lane.
+
+- Set up swimlane rules for each person on your team. We created rules for the `Assigned to` field, so that when you assign a work item, it's placed into that person's lane.
   :::image type="content" source="media/expedite/swimlane-rule-assigned-to.png" alt-text="Screenshot showing rule criteria for swimlane, by Assigned To field.":::
 
 ## Query for work items based on swimlane

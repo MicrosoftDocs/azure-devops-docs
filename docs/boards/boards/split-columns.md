@@ -116,6 +116,6 @@ For examples on querying Board columns, see [Query by assignment or workflow cha
 - [Add columns](add-columns.md)  
 - [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md)
 - [Work in Progress limits](wip-limits.md)  
-- [Add swimlanes, expedite work](expedite-work.md)   
+- [Set up swimlanes](expedite-work.md)   
 - [Definition of Done](definition-of-done.md)  
 - [Customize cards](../../boards/boards/customize-cards.md)   
