@@ -147,39 +147,55 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ## Set up swimlane rules
 
-Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your Kanban board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it get placed into that lane. The following limits apply:
+Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your Kanban board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it gets placed into that lane. 
+
+The following limits apply:
 - Up to 50 lanes on a board
-- Up to 5 rules per lane
+- Up to five rules per lane
 - Max of 25 rules total
+
+1. From your Kanban board, choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to **Configure board settings**.
+
+2. Select **Swimlanes**, select the swimlane or **[+ Add swimlane](#add-or-remove-a-swimlane)**, and then select **+ Add criteria**.
+
+   :::image type="content" source="media/expedite/add-swimlane-criteria.png" alt-text="Screenshot showing sequence of buttons to select to add a swimlane rule.":::
+
+3. Choose from the dropdown menus for each of the following entries: **Field**, **Operator**, and **Value**, and then choose **Save**. 
+
+   :::image type="content" source="media/expedite/swimlane-rule-criteria.png" alt-text="Screenshot showing field, operator, and value selections for swimlane rule.":::
 
 > [!TIP]
 > You can't assign rules to the Default lane, but you can optionally rename it.
 
-1. From your Kanban board, choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to **Configure board settings**.
-2. Select **Swimlanes**.
+When your board refreshes, your work items are listed within the appropriate swimlane. 
 
+### Examples of swimlane rules
 
-3. Select **+ Add swimlane**. Enter a name and select a color for your new swimlane, and then add criteria for Field, Operator, and Value, and then choose **Save**. 
+The following examples show some of the ways you can use and set up swimlane rules:
 
-The following examples show:
-- Lanes to track the feature (parent) of your user stories and bugs.
-- Lanes to track priority. Priority=1 bugs to be placed in the "High Priority" lane and Priority=2 bugs into the "Medium Priority" lane.
-
+- Set up swimlane rules to track priority. `Priority 1` work items go into the **High priority** swimlane, `Priority 2` work items go into the **Medium priority** swimlane, which is the renamed default lane, and `Priority 3` work items go into the **Low priority** swimlane.
+  :::image type="content" source="media/expedite/priority-swimlane-rule-setup.png" alt-text="Screenshot showing swimlane rules set up by priority.":::
+  :::image type="content" source="media/expedite/collapsed-swimlanes-rules.png" alt-text="Screenshot showing collapsed swimlanes with rules set up.":::
+- Set up swimlane rules to track the parents of your work items. We created lanes for `Features` and `Bugs`, and we renamed the default lane to `User stories`. This way you can see parents, children, and related work items.
+  :::image type="content" source="media/expedite/work-item-type-swimlane-rule-setup.png" alt-text="Screenshot showing rules set up for work item types.":::
+- Set up swimlane rules for each person on your team. We create lanes for `Julia` and `Rami`. When you assign the work item, it's placed into that person's lane.
+  :::image type="content" source="media/expedite/swimlane-rule-assigned-to.png" alt-text="Screenshot showing rule criteria for swimlane, by Assigned To field.":::
 
 ## Query for work items based on swimlane
 
 You can track which work items have been added to a Kanban board swimlane by creating a query and using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
 
+## Next steps
+
+> [!div class="nextstepaction"] 
+> [Customize cards](../../boards/boards/customize-cards.md)  
 
 ## Related articles
-
-As you can see, swimlanes provides another way to organize and visualize the flow of work using [Kanban](kanban-basics.md). Here are a few more options you have for customizing the look and feel of your Kanban board.   
 
 * [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
 * [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
 * [Add columns](add-columns.md)  
-* [Split columns](split-columns.md)   
-* [Customize cards](../../boards/boards/customize-cards.md)   
+* [Split columns](split-columns.md)    
 
 ### REST API resources
 
