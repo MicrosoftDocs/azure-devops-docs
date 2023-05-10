@@ -313,8 +313,8 @@ steps:
 
 ### My output variable isn't rendering. What is going wrong? 
 
-There are a few reasons why your output variables may not appear. 
+There are a few reasons why your output variable may not appear. 
 
-* Output variables set with `isoutput` aren't available in the same job and are instead only available in downstream jobs. 
-* Depending on what variable syntax you use, a variable you use to set an output variable may not be available at runtime. For example, variables with macro syntax (`$(var)`) get processed before a task runs. In contrast, variables with template syntax are processed at runtime (`$[variables.var]`). You'll usually want to use runtime syntax when setting output variables. For more information on variable syntax, see [Define variables](variables.md#understand-variable-syntax).
+* Output variables set with `isoutput` aren't available in the same job and instead are only available in downstream jobs. 
+* Depending on what variable syntax you use, a variable that sets an output variable's value may not be available at runtime. For example, variables with macro syntax (`$(var)`) get processed before a task runs. In contrast, variables with template syntax are processed at runtime (`$[variables.var]`). You'll usually want to use runtime syntax when setting output variables. For more information on variable syntax, see [Define variables](variables.md#understand-variable-syntax).
 * There may be extra spaces within your expression. If your variable isn't rendering, check for extra spaces surrounding `isOutput=true`.
