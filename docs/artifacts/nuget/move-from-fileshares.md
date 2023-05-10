@@ -99,18 +99,24 @@ For each feed, select **Connect to feed** > **NuGet.exe** and copy the **Source 
 
 #### Migrate your NuGet packages
 
-Once you've set up your feeds, you can do a bulk push from each file share to its corresponding feed. To do so:
+Once you've set up your feeds, you can now set up your project to authenticate with your feed and publish your packages. Make sure you have installed the latest version of the Azure Artifacts credential provider before proceeding to the next steps. 
 
-1. Run the following command in an elevated PowerShell prompt window. This sets up your environment to allow you to work with nuget.exe and Azure Artifacts feeds.
+1. Ensure that your *nuget.config* file is in the same folder as your .csproj or .sln file, and then add the following snippet to your nuget.config file. Replace the placeholders with the appropriate values.
 
-    ```Command
-    init.ps1
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+    </configuration>
     ```
 
-1. For each share, use the following command to push all packages in the share to your new feed:
+1. Run the following `push` command to publish all your packages to your new feed:
 
     ```Command
-    nuget push <YOUR_PACKAGE_PATH>\*.nupkg -Source <YOUR_SOURCE_URL> -ApiKey Azure DevOps Services
+    nuget.exe push -Source <FEED_NAME> -ApiKey Az <PACKAGE_PATH>\*.nupkg
     ```
 
 > [!TIP]
