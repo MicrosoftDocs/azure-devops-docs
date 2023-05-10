@@ -25,9 +25,6 @@ Azure Artifacts provides a number of benefits compared to file shares:
 
 - **Well-formedness:** Azure Artifacts validates all pushed packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when moving to Azure Artifacts feeds.
 
-> [!NOTE]
-> We recommend using NuGet version 4.8.2 or later. Legacy NuGet versions 2.x are also supported.
-
 ## Authentication and authorization
 
 If you're using Active Directory-backed file shares, you and your on-premises build agents are likely authenticating automatically using Windows NTLM. Moving your packages to Azure Artifacts will require a few changes:
@@ -99,7 +96,10 @@ For each feed, select **Connect to feed** > **NuGet.exe** and copy the **Source 
 
 #### Migrate your NuGet packages
 
-Once you've set up your feeds, you can now set up your project to authenticate with your feed and publish your packages. Make sure you have installed the latest version of the Azure Artifacts credential provider before proceeding to the next steps. 
+Once you've set up your feeds, you can now set up your project to authenticate with your feed and publish your packages. Make sure you have installed the latest version of the [Azure Artifacts credential provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) before proceeding to the next steps. 
+
+> [!NOTE]
+> We recommend using NuGet version 5.5.x or later, as it includes critical bug fixes that address cancellations and timeouts.
 
 1. Ensure that your *nuget.config* file is in the same folder as your .csproj or .sln file, and then add the following snippet to your nuget.config file. Replace the placeholders with the appropriate values.
 
@@ -130,6 +130,4 @@ Update your builds to ensure they have the right credentials to consume and publ
 
 - [Install NuGet packages with Visual Studio](./consume.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
-- [Migrate NuGet packages to Azure Artifacts](../tutorials//migrate-packages.md)
-- [NuGet.org upstream source](./upstream-sources.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
