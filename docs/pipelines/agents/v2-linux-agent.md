@@ -393,6 +393,8 @@ It's important to avoid situations in which the agent fails or become unusable b
 
 ## FAQ
 
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [include](includes/v2/qa-agent-version.md)]
