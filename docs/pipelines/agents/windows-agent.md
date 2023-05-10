@@ -16,7 +16,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 :::moniker range="<=azure-devops"
 
 > [!IMPORTANT]
-> This article provides guidance for using the 3.x agent software with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Windows agents (Agent version 2.x)](v2-windows-agent.md).
+> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted Windows agents (Agent version 2.x)](v2-windows-agent.md).
 
 :::moniker-end
 
@@ -219,6 +219,8 @@ The help provides information on authentication alternatives and unattended conf
 [!INCLUDE [include](includes/capabilities.md)]
 
 ## FAQ
+
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 <!-- BEGINSECTION class="md-qanda" -->
 
