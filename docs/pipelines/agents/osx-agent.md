@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 :::moniker range="<=azure-devops"
 
 > [!IMPORTANT]
-> This article provides guidance for using the 3.x agent software with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted macOS agents (Agent version 2.x)](v2-osx-agent.md).
+> This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Services. If you're using Azure DevOps Server or TFS, see [Self-hosted macOS agents (Agent version 2.x)](v2-osx-agent.md).
 
 :::moniker-end
 
@@ -310,6 +310,8 @@ You can use the template described above as to facilitate generating other kinds
 [!INCLUDE [include](includes/capabilities.md)]
 
 ## FAQ
+
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 <!-- BEGINSECTION class="md-qanda" -->
 
