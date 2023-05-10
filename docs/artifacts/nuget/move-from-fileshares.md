@@ -30,7 +30,7 @@ Azure Artifacts provides a number of benefits compared to file shares:
 
 ## Authentication and authorization
 
-If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM. Moving your packages to Azure Artifacts will require a few changes:
+If you're using Active Directory-backed file shares, you and your on-premises build agents are likely authenticating automatically using Windows NTLM. Moving your packages to Azure Artifacts will require a few changes:
 
 - **Authentication:** You need to provide access to the NuGet client in order to push and restore packages.
   - **Visual Studio**: Credential acquisition happens automatically.
@@ -113,7 +113,7 @@ Once you've set up your feeds, you can now set up your project to authenticate w
     </configuration>
     ```
 
-1. Run the following `push` command to publish all your packages to your new feed:
+1. Run the following `push` command to publish all your packages to your new feed. You can pass any string to the ApiKey argument, as it serves solely as a placeholder.
 
     ```Command
     nuget.exe push -Source <FEED_NAME> -ApiKey Az <PACKAGE_PATH>\*.nupkg
@@ -121,10 +121,6 @@ Once you've set up your feeds, you can now set up your project to authenticate w
 
 > [!TIP]
 > For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
-
-#### Update your NuGet configuration
-
-Now, return to each of the *nuget.config* files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For each share, find the file share path (Example `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and replace the `value` with your new feed's source URL.
 
 #### Integrate with your builds
 
