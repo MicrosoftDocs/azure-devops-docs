@@ -1,18 +1,23 @@
 ---
-title: Deploy a build and release agent on macOS
+title: Deploy a build and release agent on macOS (2.x)
 ms.custom: seodec18
-description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
+description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS) (2.x)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 01/25/2023
+ms.date: 05/05/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Self-hosted macOS agents
+# Self-hosted macOS agents (2.x)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
+:::moniker range="azure-devops"
+
+> [!IMPORTANT]
+> This article provides guidance for using the 2.x version agent software with Azure DevOps Server and TFS. If you're using Azure DevOps Services, see [Self-hosted macOS agents](osx-agent.md).
+
+:::moniker-end
 
 ::: moniker range="tfs-2018"
 

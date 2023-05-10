@@ -536,7 +536,7 @@
     - name: About agents & agent pools
       href: agents/agents.md
       displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
-    - name: Agent version 3.x preview
+    - name: Agent version 3.x
       href: agents/v3-agent.md
     - name: Create & manage agent pools
       href: agents/pools-queues.md
@@ -546,11 +546,19 @@
     - name: Microsoft-hosted agents
       href: agents/hosted.md
     - name: Self-hosted Linux agents
-      href: agents/v2-linux.md
+      href: agents/linux-agent.md
     - name: Self-hosted macOS agents
-      href: agents/v2-osx.md
+      href: agents/osx-agent.md
     - name: Self-hosted Windows agents
-      href: agents/v2-windows.md
+      href: agents/windows-agent.md
+    - name: Self-hosted agents (previous version 2.x)
+      items:
+        - name: Self-hosted Linux agents (2.x)
+          href: agents/v2-linux-agent.md
+        - name: Self-hosted macOS agents (2.x)
+          href: agents/v2-osx-agent.md
+        - name: Self-hosted Windows agents (2.x)
+          href: agents/v2-windows-agent.md      
     - name: Scale set agents
       href: agents/scale-set-agents.md
       displayName: byos, elastic agents, VMSS, autoscale
