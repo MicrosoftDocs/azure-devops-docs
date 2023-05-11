@@ -3,7 +3,7 @@ title: Deploy to Kubernetes
 description: Use Azure Pipelines to deploy to Kubernetes clusters
 ms.topic: how-to
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
-ms.date: 02/03/2023
+ms.date: 05/11/2023
 monikerRange: 'azure-devops'
 ms.custom: engagement-fy23
 ---
@@ -16,6 +16,8 @@ You can use Azure Pipelines to deploy to [Azure Kubernetes Service](/azure/aks/)
 
 * [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0): bake and deploy manifests to Kubernetes clusters with Helm, Kompose, or Kustomize
 * [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1): deploy, configure, and update a Kubernetes cluster in Azure Container Service by running kubectl commands
+
+If you're using Azure Kubernetes Service with either task, the Azure Resource Manager service connection type is the best way to connect to a private cluster, or a cluster that has local accounts disabled. 
 
 For added deployment traceability, use a [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) with a Kubernetes task. 
 
