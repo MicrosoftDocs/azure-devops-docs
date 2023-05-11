@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ---
 
 # Expedite work using swimlanes
@@ -23,7 +23,7 @@ Your Kanban board helps you visualize the flow of work as it moves from defined 
 
 ## Types of swimlanes  
 
-You can use swimlanes to sort work on your Kanban board to track items that you differentiate as follows: 
+You can use up to 50 swimlanes to sort work on your Kanban board to track items that you differentiate as follows: 
 *	High priority items  
 *	Service-level class  
 *	Date-driven requirement  
@@ -42,6 +42,9 @@ Once you've set up your swimlanes, you can drag items into a swimlane, and also 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Kanban board and dragging items into a swimlane.](media/expedite/swimlanes-move-item.png)  
 
+> [!NOTE]
+> The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, but, you can't delete it or apply rules.
+
 You can also focus on a single swimlane by collapsing all other lanes.
 
 > [!div class="mx-imgBorder"]  
@@ -51,7 +54,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 	
 ## Add or remove a swimlane 
 
-*Which swimlanes support your tracking needs?* Once you've identified one or two, add them to your Kanban board.  
+*Which swimlanes support your tracking needs?* Once you've identified one or two, add them to your Kanban board.
 
 ::: moniker range="azure-devops"
 
@@ -61,27 +64,22 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 	:::image type="content" source="media/expedite/choose-configure-board-settings.png" alt-text="Screenshot of Kanban board, Choose Configure board settings.":::
 
-1. Choose **Swimlanes**, choose **Add swimlane**, and then enter the name of the swimlane you want to add. For example, here we enter *Expedite*. 
+2. Choose **Swimlanes**, choose **Add swimlane**, and then enter the name of the swimlane you want to add. For example, here we enter *Expedite*. You can optionally select the more actions icon :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to insert a new swimlane above or below another swimlane.
 
 	> [!NOTE]  
 	> The following images show the user interface that displays when the **New Boards Hub** preview feature is enabled. Some features are only available when the **New Boards Hub** is enabled as described in [Key concepts and work item tasks in Azure Boards](../work-items/quick-ref.md). For example, the ability to choose the swimlane color is only supported when the **New Boards Hub** feature is enabled. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 	:::image type="content" source="media/expedite/add-swimlane-new-board-hubs-enabled.png" alt-text="Screenshot of Kanban board Settings, Swimlane tab, Add swimlane.":::
 
-	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. 
-
-1. To set the color of the swimlane, choose a color from the drop-down menu. To reset the swimlane to the default, choose :::image type="icon" source="../media/icons/refresh.png" border="false":::  **Reset to default color**. 
+3. To set the color of the swimlane, choose a color from the drop-down menu. To reset the swimlane to the default, choose :::image type="icon" source="../media/icons/refresh.png" border="false":::  **Reset to default color**. 
 
 	:::image type="content" source="media/expedite/pick-swimlane-color.png" alt-text="Screenshot of Kanban board Settings, Swimlane tab, choose swimlane color.":::
 
-3. To reorder or delete a swimlane, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: context menu for the swimlane, and select the corresponding option from the menu.    
+4. To reorder a swimlane, choose the up or down menu selector :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: to move it up or down. To remove a swimlane, choose :::image type="icon" source="../media/icons/trash-can.png" border="false"::: the trash bin icon, but first move all items out of the lane.
 
 	:::image type="content" source="media/expedite/move-remove-swimlane-options.png" alt-text="Screenshot of Kanban board Settings, Swimlane tab, swimlane menu options."::: 
 
-	> [!NOTE]  
-	> If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: context menu for the swimlane,  and select **Remove**. 
-
-5. When you're done with your changes, choose **Save**.  
+5. When you're done with your changes, choose **Save**. 
 
 ::: moniker-end 
 
@@ -146,12 +144,14 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ## Set up swimlane rules
 
-Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your Kanban board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it gets placed into that lane. 
+Swimlane rules are similar to style rules, but instead they allow you to set up conditions on your Kanban board to automatically move work items into specific lanes. For example, you can set up a lane for each person on your team. When you assign the work item, it gets placed into that lane.
+
+Swimlane rules get executed in order, so once the rule is met, it executes and moves on to the next work item. For example, Lane 1 has a rule that says "where priority = 1" and Lane 2 has a rule that says "where priority = 2". If the work item is set to priority = 1, it gets moved into Lane 1.
 
 The following limits apply to swimlanes:
-- Up to 50 lanes on a board
 - Up to five rules per lane
 - Max of 25 rules total
+- Only `AND` rules are supported
 
 Complete the following steps to set up swimlane rules for your Kanban board.
 
@@ -174,7 +174,7 @@ When your board refreshes, your work items are listed within the appropriate swi
 
 The following examples show some of the ways you can use and set up swimlane rules.
 
-- **Track priority**. We created rules for the `Work Item Type` and `Priority` fields and renamed the default lane, so work items automatically go into the appropriate swimlane.
+- **Track priority**. We created rules for the `Work Item Type` and `Priority` fields, so work items automatically go into the appropriate swimlane.
   
   **Settings**
   :::image type="content" source="media/expedite/priority-swimlane-rule-setup.png" alt-text="Screenshot showing swimlane rules set up by priority.":::
@@ -188,7 +188,7 @@ The following examples show some of the ways you can use and set up swimlane rul
   **Kanban board results**
   :::image type="content" source="media/expedite/board-track-parent-work-items-swimlanes.png" alt-text="Screenshot showing parent work item swimlanes on Kanban board.":::
 
-- **Track each person's work on your team**. We created rules for the `Triage` and `Assigned to` fields, so that when you assign a work item, it's placed into that person's lane.
+- **Track each person's work on your team**. We created rules for the `Assigned to` field, so that when you assign a work item, it's placed into that user's lane.
   
   **Settings**
   :::image type="content" source="media/expedite/assigned-to-swimlane-rule-setup.png" alt-text="Screenshot showing rule criteria for swimlane, by Assigned To field.":::
