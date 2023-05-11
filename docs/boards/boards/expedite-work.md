@@ -177,22 +177,31 @@ The following examples show some of the ways you can use and set up swimlane rul
 - **Track priority**. We created rules for the `Work Item Type` and `Priority` fields, so work items automatically go into the appropriate swimlane.
   
   **Settings**
+
   :::image type="content" source="media/expedite/priority-swimlane-rule-setup.png" alt-text="Screenshot showing swimlane rules set up by priority.":::
+  
   **Kanban board results**
+
   :::image type="content" source="media/expedite/board-priority-swimlanes.png" alt-text="Screenshot showing priority swimlanes on Kanban board.":::
 
 - **Track the parents of your work items**. We created rules for the `Work item type` field, so you can quickly see parents (features) and children (user stories and bugs) in their own swimlanes on the Kanban board.
   
   **Settings**
+
   :::image type="content" source="media/expedite/work-item-type-swimlane-rule-setup.png" alt-text="Screenshot showing rules set up for work item types.":::
+  
   **Kanban board results**
+  
   :::image type="content" source="media/expedite/board-track-parent-work-items-swimlanes.png" alt-text="Screenshot showing parent work item swimlanes on Kanban board.":::
 
 - **Track each person's work on your team**. We created rules for the `Assigned to` field, so that when you assign a work item, it's placed into that user's lane.
   
   **Settings**
+  
   :::image type="content" source="media/expedite/assigned-to-swimlane-rule-setup.png" alt-text="Screenshot showing rule criteria for swimlane, by Assigned To field.":::
+  
   **Kanban board results**
+  
   :::image type="content" source="media/expedite/board-assigned-to-swimlanes.png" alt-text="Screenshot showing swimlanes grouped by priority.":::
 
 ## Query for work items based on swimlane
