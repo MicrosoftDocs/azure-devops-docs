@@ -12,42 +12,42 @@ Welcome to what's new in the Azure DevOps docs from April 1, 2023 through April 
 
 ### Updated articles
 
-- [Manage notifications for a team, project, or organization](/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications.md) - Refresh Notifications for team, project, organization
-- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder.md) - Refresh Get started for Stakeholders
-- [Select backlog navigation levels for your team](/azure/devops/organizations/settings/select-backlog-navigation-levels.md) - Refresh Boards articles x2
+- [Manage notifications for a team, project, or organization](/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications.md)
+- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder.md)
+- [Select backlog navigation levels for your team](/azure/devops/organizations/settings/select-backlog-navigation-levels.md)
 
 ## Artifacts
 
 ### Updated articles
 
-- [Publish and consume Python packages using the command line](/azure/devops/artifacts/quickstarts/python-cli.md) - Python artifatcs CLI
-- [Artifacts storage consumption](/azure/devops/artifacts/artifact-storage.md) - Artifacts storage
-- [Azure Artifacts: best practices](/azure/devops/artifacts/concepts/best-practices.md) - Artifacts best practices
-- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc.md) - npm project setup
+- [Publish and consume Python packages using the command line](/azure/devops/artifacts/quickstarts/python-cli.md)
+- [Artifacts storage consumption](/azure/devops/artifacts/artifact-storage.md)
+- [Azure Artifacts: best practices](/azure/devops/artifacts/concepts/best-practices.md)
+- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc.md)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv.md) - GHI 13129, added FAQ and clarity
-- [About work items and work item types](/azure/devops/boards/work-items/about-work-items.md) - Boards TOC cleanup #1
+- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv.md)
+- [About work items and work item types](/azure/devops/boards/work-items/about-work-items.md)
 
 ## Azure Pipelines
 
 ### Updated articles
 
-- [Logging commands](/azure/devops/pipelines/scripts/logging-commands.md) - Expand AddBuildTag logging command
-- [Azure SQL database deployment](/azure/devops/pipelines/targets/azure-sqldb.md) - Azure sqldb
-- [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript.md) - Fix code example to publish js artifact with content
-- [Define resources in YAML](/azure/devops/pipelines/process/resources.md) - Update repository and checkout resource to match schema doc
-- [Create and target an environment](/azure/devops/pipelines/process/environments.md) - Add classic note to environments article
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows.md) - What is enable SERVICE_SID_TYPE_UNRESTRICTED?
+- [Logging commands](/azure/devops/pipelines/scripts/logging-commands.md)
+- [Azure SQL database deployment](/azure/devops/pipelines/targets/azure-sqldb.md)
+- [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript.md)
+- [Define resources in YAML](/azure/devops/pipelines/process/resources.md)
+- [Create and target an environment](/azure/devops/pipelines/process/environments.md)
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows.md)
 
 ## Integrate
 
 ### Updated articles
 
-- [Use Azure Active Directory service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity.md) - Azure AD service principals - copy edits
+- [Use Azure Active Directory service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity.md)
 
 ## GitHub issue content updates
 
