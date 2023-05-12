@@ -1,5 +1,5 @@
 {
-    "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+    "$schema": "https://github.com/dotnet/docs-tools/blob/main/WhatsNew.Infrastructure/Configuration/reposettings.schema.json",
     "docSetProductName": "Azure DevOps",
     "rootDirectory": "docs/",
     "docLinkSettings": {
@@ -10,7 +10,7 @@
       "additionalMicrosoftOrgs": [
         "GitHub"
       ],
-      "minAdditionsToFile": 62
+      "minAdditionsToFile": 10
     },
     "areas": [
       {
