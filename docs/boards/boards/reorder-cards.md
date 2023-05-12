@@ -106,5 +106,6 @@ If you want to preserve the backlog priority when you move a card to a new colum
 ## Related articles   
 
 * [Backlog priority or stack rank order](../backlogs/backlogs-overview.md#stack-rank)
-* [Customize cards](../../boards/boards/customize-cards.md)   
+* [Customize cards](../../boards/boards/customize-cards.md) 
+* [Set up swimlanes](expedite-work.md)  
 
