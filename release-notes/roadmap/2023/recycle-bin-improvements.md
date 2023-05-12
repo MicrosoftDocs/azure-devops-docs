@@ -19,4 +19,4 @@ As a user with permanently delete work item permissions, I need to be able to:
 - Recycle bin actions and response times need to be fast
 
 > [!NOTE]
-> This feature has been cut. The original intention was to re-do how the recycle bin works within New Boards Hub because of performance issues at scale. However, were able to successfully solve these issues without making significant changes. We will review the status of the recycle bin once New Boards Hub is out of preview. Learn more about the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+> We have decided to forego implemention of this feature. Initially, we planned to revamp the recycle bin functionality in order to address performance concerns at scale with New Boards Hub. However, we were able to resolve these issues without the need for major changes. We will reassess the status of the recycle bin feature once the New Boards Hub is no longer in preview. [**Click here**](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/) to learn more about the New Boards Hub preview.
