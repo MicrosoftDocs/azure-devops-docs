@@ -1,39 +1,53 @@
 ---
 title: "Azure DevOps docs: What's new for April 1, 2023 - April 30, 2023"
 description: "What's new in the Azure DevOps docs for April 1, 2023 - April 30, 2023."
-ms.date: 05/05/2023
+ms.date: 05/12/2023
 ---
 
 # Azure DevOps docs: What's new for April 1, 2023 - April 30, 2023
 
 Welcome to what's new in the Azure DevOps docs from April 1, 2023 through April 30, 2023. This article lists some of the major changes to docs during this period.
 
+## Administration
+
+### Updated articles
+
+- [Manage notifications for a team, project, or organization](/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications.md) - Refresh Notifications for team, project, organization
+- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder.md) - Refresh Get started for Stakeholders
+- [Select backlog navigation levels for your team](/azure/devops/organizations/settings/select-backlog-navigation-levels.md) - Refresh Boards articles x2
+
 ## Artifacts
 
 ### Updated articles
 
-- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc)
-- [Publish and consume Python packages using the command line](/azure/devops/artifacts/quickstarts/python-cli)
+- [Publish and consume Python packages using the command line](/azure/devops/artifacts/quickstarts/python-cli.md) - Python artifatcs CLI
+- [Artifacts storage consumption](/azure/devops/artifacts/artifact-storage.md) - Artifacts storage
+- [Azure Artifacts: best practices](/azure/devops/artifacts/concepts/best-practices.md) - Artifacts best practices
+- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc.md) - npm project setup
+
+## Azure Boards
+
+### Updated articles
+
+- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv.md) - GHI 13129, added FAQ and clarity
+- [About work items and work item types](/azure/devops/boards/work-items/about-work-items.md) - Boards TOC cleanup #1
+
+## Azure Pipelines
+
+### Updated articles
+
+- [Logging commands](/azure/devops/pipelines/scripts/logging-commands.md) - Expand AddBuildTag logging command
+- [Azure SQL database deployment](/azure/devops/pipelines/targets/azure-sqldb.md) - Azure sqldb
+- [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript.md) - Fix code example to publish js artifact with content
+- [Define resources in YAML](/azure/devops/pipelines/process/resources.md) - Update repository and checkout resource to match schema doc
+- [Create and target an environment](/azure/devops/pipelines/process/environments.md) - Add classic note to environments article
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows.md) - What is enable SERVICE_SID_TYPE_UNRESTRICTED?
 
 ## Integrate
 
 ### Updated articles
 
-- [Use Azure Active Directory service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
-
-## Organizations
-
-### Updated articles
-
-- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder)
-
-## Pipelines
-
-### Updated articles
-
-- [Create a build pipeline training module](/training/modules/create-a-build-pipeline/)
-- [Define resources in YAML](/azure/devops/pipelines/process/resources)
-
+- [Use Azure Active Directory service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity.md) - Azure AD service principals - copy edits
 
 ## GitHub issue content updates
 
@@ -43,6 +57,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
+- [learn-build-service-prod](https://github.com/learn-build-service-prod) -  (9)
 - [ethanknights](https://github.com/ethanknights) - Ethan Knights (2)
 - [bjompen](https://github.com/bjompen) - Björn Sundling (1)
 - [brunomartinspro](https://github.com/brunomartinspro) - Bruno Martins (1)
