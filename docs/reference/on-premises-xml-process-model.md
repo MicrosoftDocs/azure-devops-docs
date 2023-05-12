@@ -34,6 +34,8 @@ Team Foundation Server uses the On-premises XML process model to support customi
 ::: moniker-end  
 
 > [!IMPORTANT]  
+> Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.
+> 
 > To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises deployments only.  
 
 ## Supported customizations  
