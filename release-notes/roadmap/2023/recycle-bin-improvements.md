@@ -18,16 +18,5 @@ As a user with permanently delete work item permissions, I need to be able to:
 - Select all work items in the recycle bin and permanently delete them
 - Recycle bin actions and response times need to be fast
 
-Our proposed solution...
-
-- Remove recycle bin from being part of the queries hub
-- Simplify and optimize for performance (example, remove preview work item panel)
-- Limit the number of work items returned to 2,000
-- Add field criteria panel to provide basic search capabilities
-- Select all functionality for easier permanently deleting of items
-
-> [!div class="mx-imgBorder"]
-> ![screen shot of example of swimlane colors.](media/boards-recycle-bin.gif#lightbox)
-
 > [!NOTE]
-> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+> This feature has been cut. The original intention was to re-do how the recycle bin works within New Boards Hub because of performance issues at scale. However, were able to successfully solve these issues without making significant changes. We will review the status of the recycle bin once New Boards Hub is out of preview. Learn more about the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
