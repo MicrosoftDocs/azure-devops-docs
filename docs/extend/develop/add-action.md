@@ -84,12 +84,12 @@ in your extension's manifest file.
 ## Your JavaScript
 The script below registers the handler object to handle the action, place it in the `head` section of the previous HTML page.
 
-> We aliased `lib` to be `node_modules/vss-web-extension-sdk/lib` in our `vss-extension.json` manifest file.
+> We aliased `lib` to be `node_modules/azure-devops-extension-sdk/lib` in our `sdk-extension.json` manifest file.
 
 ```typescript
-<script src="lib/VSS.SDK.min.js"></script>
+<script src="lib/SDK.min.js"></script>
 <script>
-    VSS.init();
+    SDK.init();
 
     // Use an IIFE to create an object that satisfies the IContributedMenuSource contract
     var menuContributionHandler = (function () {
@@ -105,7 +105,7 @@ The script below registers the handler object to handle the action, place it in 
     }());
 
     // Associate the menuContributionHandler object with the "myAction" menu contribution from the manifest.
-    VSS.register("myAction", menuContributionHandler);
+    VSS.register(SDK.getContributionId(), menuContributionHandler);
 </script>
 ```
 
