@@ -24,11 +24,11 @@ sections:
   - name: Single section - ignored 
      
     questions: 
-      - question: Why is my production import taking longer than the corresponding dry-run import of the same collection?
+      - question: Why is my production import taking longer than the corresponding dry-run import of the same organization?
         answer: |
-          During a production import, additional provisioning steps are undertaken to cement the collection into the Azure DevOps Services hosted environment. In contrast, the dry-run import of the same collection typically completes faster since dry-run collections are temporary and thus do not require these additional steps.   
+          During a production import, additional provisioning steps are undertaken to cement the organization into the Azure DevOps Services hosted environment. In contrast, the dry-run import of the same organization typically completes faster since dry-run organizations are temporary and thus do not require these additional steps.   
 
-      - question: Why is my dry-run import taking longer than previous dry-run imports of the same collection?
+      - question: Why is my dry-run import taking longer than previous dry-run imports of the same organization?
         answer: |
           Any dry-run import after the first is expected to take longer given the extra time required to clean up resources from previous dry-run attempts.
 
