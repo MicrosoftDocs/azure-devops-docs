@@ -231,6 +231,21 @@ The work items' results always lists the data errors found for individual work i
 
 A: When using the Web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the org. If not, it searches on the identity in AAD. If the user is in AAD but not in the org, it will add that user to the valid identities. When importing via CSV, for performance reasons, the identity picker does not go through these extra steps. It only checks to see if there is a matching UPN already in the org. If it does not find a matching UPN, it will report that the identity is unknown.
 
+### Q: Does CSV import support all work item types?
+
+A: No, the CSV import does not support the following work item types:
+
+- Code Review Request
+- Code Review Response
+- Feedback Request
+- Feedback Response
+- Test Case
+- Test Plan
+- Test Suite
+- Shared Paremeter
+
+To learn more about importing test cases, see [Bulk import or export test cases](../../test/copy-clone-test-items.md#bulk-import-or-export-test-case).
+
 ::: moniker-end 
 
 ## Related articles
