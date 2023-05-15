@@ -220,6 +220,10 @@ The help provides information on authentication alternatives and unattended conf
 
 ## FAQ
 
+## What version of Git does my agent run?
+
+[!INCLUDE [include](includes/system-prefer-git-from-path.md)]
+
 [!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 <!-- BEGINSECTION class="md-qanda" -->
