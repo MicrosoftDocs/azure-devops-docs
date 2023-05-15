@@ -261,7 +261,7 @@ steps:
   lfs: true
 ```
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine. For more infomation, see [What version of Git does my agent run?](#what-version-of-git-does-my-agent-run)
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine. For more infomation, see [What version of Git does my agent run?](../agents/windows-agent.md#what-version-of-git-does-my-agent-run)
 
 ### Using Git LFS with submodules
 
