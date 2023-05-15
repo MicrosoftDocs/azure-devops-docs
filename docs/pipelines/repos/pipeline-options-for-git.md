@@ -377,8 +377,8 @@ After you select the check box to enable this option, in the **Depth** box speci
 
 ## Prefer Git from path
 
-The Windows agent comes with its own copy of Git.
-If you prefer to supply your own Git rather than use the included copy, set `System.PreferGitFromPath` to `true`.
+[!INCLUDE [include](includes/system-prefer-git-from-path.md)]
+
 This setting is always true on non-Windows agents.
 
 ## Trigger Options for Other Git

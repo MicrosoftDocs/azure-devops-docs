@@ -220,7 +220,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ## FAQ
 
-## What version of Git does my agent run?
+### What version of Git does my agent run?
 
 [!INCLUDE [include](includes/system-prefer-git-from-path.md)]
 
