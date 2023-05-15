@@ -377,7 +377,7 @@ After you select the check box to enable this option, in the **Depth** box speci
 
 ## Prefer Git from path
 
-[!INCLUDE [include](includes/system-prefer-git-from-path.md)]
+[!INCLUDE [include](../agents/includes/system-prefer-git-from-path.md)]
 
 This setting is always true on non-Windows agents.
 
