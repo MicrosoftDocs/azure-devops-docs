@@ -7,13 +7,13 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2022'
+monikerRange: '= azure-devops'
 ms.date: 08/03/2022
 ---
 
 # Create audit streaming
 
-[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > Auditing is still in public preview.

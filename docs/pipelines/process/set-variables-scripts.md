@@ -3,7 +3,7 @@
 title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
 ms.topic: conceptual
-ms.date: 12/21/2022
+ms.date: 05/10/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -308,3 +308,13 @@ steps:
     echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
   name: MyOutputVar
 ```
+
+## FAQ
+
+### My output variable isn't rendering. What is going wrong? 
+
+There are a few reasons why your output variable may not appear. 
+
+* Output variables set with `isoutput` aren't available in the same job and instead are only available in downstream jobs. 
+* Depending on what variable syntax you use, a variable that sets an output variable's value may not be available at runtime. For example, variables with macro syntax (`$(var)`) get processed before a task runs. In contrast, variables with template syntax are processed at runtime (`$[variables.var]`). You'll usually want to use runtime syntax when setting output variables. For more information on variable syntax, see [Define variables](variables.md#understand-variable-syntax).
+* There may be extra spaces within your expression. If your variable isn't rendering, check for extra spaces surrounding `isOutput=true`.
