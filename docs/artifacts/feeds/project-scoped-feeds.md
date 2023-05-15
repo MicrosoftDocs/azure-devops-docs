@@ -90,12 +90,13 @@ Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifact
 
 ## Q&A
 
-#### Q: How to access a project-scoped feed in a different project with Azure Pipelines?
+#### Q: How to access a project-scoped feed in another project using Azure Pipelines?
 
-When a Pipeline needs to connect to a project-scoped feed in a different project, the pipeline must have access to both the project that the feed is scoped to and the feed itself. Your **Project build service** identity will look as follows:
-`[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
-2. From the project hosting the feed, go to the **Project settings** > **Permissions** to add your pipeline's **project build service** to the Contributors group or an alternative group your project may have that allows contributor access to its users.
-3. From the project-scoped feed, select **Settings** > **Feed permissions** and add your project build service as a **Collaborator**.
+In order for a pipeline to access a project-scoped feed in a different project, it is necessary to grant the pipeline access to both the project where the feed is scoped and the feed itself.
+
+- Project setup: navigate to the project hosting the feed, select **Project settings** > **Permissions** and then add your pipeline's *project build service* to the Contributors group or any other suitable group that provides contributor access to its users.
+
+- Feed setup: Navigate to the feed you want to access, select  **Settings** > **Feed permissions** and then add your *project build service* as a **Collaborator**. Your *Project build service* identity is displayed in the following format: `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
 
 ## Related articles
 
