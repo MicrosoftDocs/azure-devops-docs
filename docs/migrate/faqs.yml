@@ -26,11 +26,15 @@ sections:
     questions: 
       - question: Why is my production import taking longer than the corresponding dry-run import of the same collection?
         answer: |
-          Extra steps are undertaken during a production import, which don't occur in a dry-run import. These steps are related to preparing the organization for production use, and cause the import process to take longer to complete.
+          During a production import, additional provisioning steps are undertaken to cement the collection into the Azure DevOps Services hosted environment. In contrast, the dry-run import of the same collection typically completes faster since dry-run collections are temporary and thus do not require these additional steps.   
 
       - question: Why is my dry-run import taking longer than previous dry-run imports of the same collection?
         answer: |
           Any dry-run import after the first is expected to take longer given the extra time required to clean up resources from previous dry-run attempts.
+
+      - question: How long after deleting or renaming an existing dry-run organization will the name become available so another import can be queued? 
+        answer: |
+          It can take up to one hour for an organization name to become available after deleting or renaming.
 
       - question: Does use of the Hosted XML process model pose a future risk in use of Azure DevOps Services? 
         answer: |
