@@ -1,18 +1,23 @@
 ---
-title: Deploy an Azure Pipelines agent on Linux
+title: Deploy an Azure Pipelines agent on Linux (2.x)
 ms.custom: seodec18
-description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
+description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS) (2.x).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 01/25/2023
+ms.date: 05/05/2023
 monikerRange: '<= azure-devops'
 ---
 
-# Self-hosted Linux agents
+# Self-hosted Linux agents (2.x)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [v3Agent](includes/v3-agent-include.md)]
+:::moniker range="azure-devops"
+
+> [!IMPORTANT]
+> This article provides guidance for using the 2.x version agent software with Azure DevOps Server and TFS. If you're using Azure DevOps Services, see [Self-hosted Linux agents](linux-agent.md).
+
+:::moniker-end
 
 ::: moniker range="tfs-2018"
 
@@ -55,6 +60,9 @@ We support the following subset of .NET Core supported distributions:
 
 > [!NOTE]
 > Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
+
+> [!IMPORTANT]
+> As of February 2023, no more agent releases support RHEL 6. For more information, see [Customers using Red Hat Enterprise Linux (RHEL) 6 should upgrade the OS on Self-hosted agents](https://devblogs.microsoft.com/devops/customers-using-red-hat-enterprise-linux-rhel-6-should-upgrade-the-os-on-self-hosted-agents/).
 
 > [!NOTE]
 > Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
@@ -141,7 +149,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 1. On the **Get the agent** dialog box, click **Linux**.
 
-1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
+1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions.
 
 1. On the right pane, click the **Download** button.
 
@@ -165,7 +173,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 1. On the **Get agent** dialog box, click **Linux**.</li>
 
-1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
+1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions.
 
 1. On the right pane, click the **Download** button.
 
@@ -384,6 +392,8 @@ It's important to avoid situations in which the agent fails or become unusable b
 [!INCLUDE [include](includes/capabilities.md)]
 
 ## FAQ
+
+[!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
 <!-- BEGINSECTION class="md-qanda" -->
 

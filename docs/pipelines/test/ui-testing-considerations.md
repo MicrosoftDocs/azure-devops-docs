@@ -29,7 +29,7 @@ the typical considerations for running UI tests.
 
 ## Prerequisites
 
-Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent on Windows](../agents/v2-windows.md). 
+Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent on Windows](../agents/windows-agent.md). 
 
 ## Headless mode or visible UI mode?
 
