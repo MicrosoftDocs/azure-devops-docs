@@ -3,7 +3,7 @@
     "docSetProductName": "Azure DevOps",
     "rootDirectory": "docs/",
     "docLinkSettings": {
-      "linkFormat": "relative",
+      "linkFormat": "siteRelative",
       "relativeLinkPrefix": "/azure/devops/"
     },
     "inclusionCriteria": {
