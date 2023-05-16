@@ -21,3 +21,29 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 - An Azure DevOps organization and a project. [Create one for free](../get-started/pipelines-sign-up.md), if you don't have one already. 
 
 - A [nuget.org](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account.
+
+## Create an API key
+
+1. Navigate to [NuGet.org](https://www.nuget.org/users/account/LogOn?returnUrl=%2F) and sign in to your account.
+
+1. Select your user name icon, and then select **API Keys**.
+
+1. Select **Create**, and then provide a name for your key. Assign the **Push new packages and package version** scope to your key, and enter `*` in the **Glob Pattern** field to include all packages.
+
+1. Select **Create** when you're done.
+
+1. Select **Copy** and save your API key in a safe location.
+
+## Create a service connection
+
+1. Sign in to your Azure DevOps organization `https://dev.azure.com/<Your_Organization>` and then navigate to your project.
+
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings** located at the bottom left corner of the page.
+
+1. Select **NuGet**, and then select **Next**.
+
+1. Select **ApiKey** as your authentication method and set the **Feed URL** to the following: `https://api.nuget.org/v3/index.json`.
+
+1. Enter the ApiKey you generated earlier in the **ApiKey** field, and then provide a name for your service connection.
+
+1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done.
