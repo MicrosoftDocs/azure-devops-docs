@@ -359,7 +359,7 @@ If you just want to create a scale set with the default 128-GB OS disk using a p
       
     - **Windows** - From an admin console window: 
       ```console
-      C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown
+      C:\Windows\System32\sysprep\sysprep.exe /oobe /shutdown
       ```
     - **Linux**:
       ```bash
