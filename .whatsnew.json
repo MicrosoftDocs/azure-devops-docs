@@ -8,7 +8,9 @@
     },
     "inclusionCriteria": {
       "additionalMicrosoftOrgs": [
-        "GitHub"
+        "GitHub",
+        "Microsoft",
+        "MicrosoftDocs"
       ],
       "minAdditionsToFile": 10,
       "omitPullRequestTitles": true

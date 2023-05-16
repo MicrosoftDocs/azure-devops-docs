@@ -57,7 +57,6 @@ Thank you for your feedback on our documentation. This month we made updates to 
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [learn-build-service-prod](https://github.com/learn-build-service-prod) -  (9)
 - [ethanknights](https://github.com/ethanknights) - Ethan Knights (2)
 - [bjompen](https://github.com/bjompen) - Björn Sundling (1)
 - [brunomartinspro](https://github.com/brunomartinspro) - Bruno Martins (1)
