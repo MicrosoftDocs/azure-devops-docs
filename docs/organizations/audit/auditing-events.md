@@ -213,6 +213,8 @@ The following tables describe the type of events (or actions) that are available
 | Pipelines.ResourceUnauthorizedForProject	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for the project |
 | Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease id {RetentionLeaseId} to {RetentionOwnerId} |
 | Pipelines.RunUnretained	 | Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained |
+| Pipelines.ProjectSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
+| Pipelines.OrganizationSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 
 ### Policy
 | ActionId	| Category |	Details |
