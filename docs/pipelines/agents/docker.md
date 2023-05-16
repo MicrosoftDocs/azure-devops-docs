@@ -175,7 +175,7 @@ Now that you have created an image, you can run a container.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
+If you want a fresh agent container for every pipeline run, pass the [`--once` flag](windows-agent.md#run-once) to the `run` command.
 You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Linux
@@ -402,7 +402,7 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](linux-agent.md#run-once) to the `run` command.
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
@@ -544,7 +544,7 @@ Now your agents will run the AKS cluster.
 
 Allow specifying MTU value for networks used by container jobs (useful for docker-in-docker scenarios in k8s cluster).
 
-You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, after that restart the self-hosted agent. You can find more about agent restart [here](./v2-windows.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./v2-windows.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
+You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, and then restart the self-hosted agent. You can find more about agent restart [here](./windows-agent.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./windows-agent.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
 
 This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
 
@@ -601,7 +601,7 @@ Try again. You no longer get the error.
 
 ## Related articles
 
-- [Self-hosted Windows agents](v2-windows.md)
-- [Self-hosted Linux agents](v2-linux.md)
-- [Self-hosted macOS agents](v2-osx.md)
+- [Self-hosted Windows agents](windows-agent.md)
+- [Self-hosted Linux agents](linux-agent.md)
+- [Self-hosted macOS agents](osx-agent.md)
 - [Microsoft-hosted agents](hosted.md)
