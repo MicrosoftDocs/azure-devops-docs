@@ -226,7 +226,7 @@ Due to the sampling size of 5 minutes, it's possible that all agents can be runn
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure Pipelines Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipelines Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./windows-agent.md#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`

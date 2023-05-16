@@ -64,7 +64,7 @@ The first step in adding a VM resource is to define an environment.
    >
    > - The Personal Access Token (PAT) for the signed-in user gets included in the script. The PAT expires on the day you generate the script.
    > - If your VM already has any other agent running on it, provide a unique name for **agent** to register with the environment.
-   > - To learn more about installing the agent script, see [Self-hosted Linux agents](../agents/v2-linux.md) and [Self-hosted Windows agents](../agents/v2-windows.md). The agent scripts for VM resources are like the scripts for self-hosted agents and you can use the same commands.
+   > - To learn more about installing the agent script, see [Self-hosted Linux agents](../agents/linux-agent.md) and [Self-hosted Windows agents](../agents/windows-agent.md). The agent scripts for VM resources are like the scripts for self-hosted agents and you can use the same commands.
 
 1. Once your VM is registered, it appears as an environment resource under the **Resources** tab of the environment.
 1. To add more VMs, copy the script again. Select **Add resource** > **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment.

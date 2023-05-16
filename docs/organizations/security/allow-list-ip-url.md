@@ -247,7 +247,7 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |Row6 https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
-|https://vstsagentpackage.azureedge.net      |  Required to setup self-hosted agent in machines within your network              |
+|https://vstsagentpackage.azureedge.net      |  Required to set up self-hosted agent in machines within your network              |
 |https://amp.azure.net   | Needed for deploying to Azure app service           |
 |https://go.microsoft.com  | Accesses go links        |
 
@@ -293,7 +293,7 @@ If you use Microsoft-hosted agent to run your jobs and you need the information 
 For more information about hosted Windows, Linux and macOS agents, see [Microsoft-hosted agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
 ### Azure Pipelines Self-hosted agents
-If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/v2-windows.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/v2-osx.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
+If you're running a firewall and your code is in Azure Repos, see [Self-hosted Linux agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with), [Self-hosted macOS agents FAQs](../../pipelines/agents/osx-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) or [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
 
 ## Azure DevOps import service
@@ -304,6 +304,6 @@ During the import process, we highly recommend that you restrict access to your 
 
 - [Available service tags](/azure/virtual-network/service-tags-overview)
 - [Microsoft-hosted agents IP address ranges](../../pipelines/agents/hosted.md#agent-ip-ranges)
-- [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md)
+- [Self-hosted Windows agents FAQs](../../pipelines/agents/windows-agent.md)
 - [Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security?toc=%2Fazure%2Fvirtual-network%2Ftoc.json&tabs=azure-portal)
 - [Install and use Visual Studio behind a firewall or proxy server](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services)

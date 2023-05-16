@@ -35,7 +35,7 @@ Learn how to use Classic Azure Pipelines to build and deploy your web app to an 
 
 - Use Ubuntu 16.04 or higher.
 - For Java Spring Boot and Spring Cloud apps, create a Linux VM in Azure using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
-- For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [set up Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
+- For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [setup Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
 - For Java EE apps, use one of the following templates to create a [Linux VM, Java and WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90), a [Linux VM, Java and WebLogic](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin), or a [Linux VM and Java 13.x](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and WildFly/JBoss 14.
 
 - - -
@@ -84,7 +84,7 @@ Deployment groups make it easier to organize the servers you want to use to host
     ssh <publicIpAddress>
     ```
 
-1. Run the following command to install the required dependencies to set up the build and release agent on a Linux virtual machine. See [Self-hosted Linux agents](../../agents/v2-linux.md) for more details.
+1. Run the following command to install the required dependencies to set up the build and release agent on a Linux virtual machine. See [Self-hosted Linux agents](../../agents/linux-agent.md) for more details.
 
     ```command
     sudo apt-get install -y libunwind8 libcurl3

@@ -126,7 +126,7 @@
     href: /rest/api/azure/devops/testresults/result-meta-data
 - name: Resources
   items:
-  - name: Azure Load Test Preview
+  - name: Azure Load Testing
     href: /azure/load-testing/overview-what-is-azure-load-testing
   - name: Azure Pipelines
     href: ../pipelines/index.yml

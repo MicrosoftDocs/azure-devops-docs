@@ -188,24 +188,15 @@ All members of a project can view and contribute to your Kanban board. To invite
 To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).   
 
 
-
-## Try this next 
-
-To get the full power of the Kanban board, configure it to map the flow of work and set WIP limits for your team. To configure the Kanban board, you must be [added as a team administrator](../../organizations/settings/add-team-administrator.md) or be a member of the Project Administrators group. If you're the organization owner or creator of the project, then you have these permissions. 
+## Next steps 
 
 > [!div class="nextstepaction"]
-> [Kanban basics](kanban-basics.md)  
+> [Implement Kanban practices](kanban-basics.md)  
 
 ## Related articles
 
-- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
+- [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Kanban key concepts](kanban-key-concepts.md)
 - [Kanban best practices](best-practices-kanban.md)
 - [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
 - [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
-
-
-
- 
- 
-

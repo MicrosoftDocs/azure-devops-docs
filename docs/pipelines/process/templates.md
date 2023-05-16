@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 05/12/2023
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -31,7 +31,9 @@ Use templates to define your logic once and then reuse it several times. Templat
 
 ## Parameters
 
-You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). You can only use literals for parameter default values.
+You can specify parameters and their data types in a template and reference those parameters in a pipeline. With [templateContext](#use-templatecontext-to-pass-properties-to-templates), you can also pass properties to stages, steps, and jobs that are used as parameters in a template. 
+
+You can also [use parameters outside of templates](runtime-parameters.md). You can only use literals for parameter default values.
 
 
 ### Passing parameters
@@ -510,7 +512,7 @@ steps:
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
-Parameters are not limited to scalar strings.
+Parameters aren't limited to scalar strings.
 See the list of [data types](#parameter-data-types).
 For example, using the `object` type:
 
@@ -537,7 +539,7 @@ jobs:
 
 ## Variable reuse
 
-Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you are [extending from a template](#extend-from-a-template). 
+Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you're [extending from a template](#extend-from-a-template). 
 Use [parameters](#passing-parameters) instead of variables when you want to restrict type. 
 
 In this example, the variable `favoriteVeggie` is included in `azure-pipelines.yml`.
@@ -603,7 +605,7 @@ stages:
 
 ## Reference template paths
 
-Template paths should be relative to the file that does the including. Here is an example nested hierarchy. 
+Template paths should be relative to the file that does the including. Here's an example nested hierarchy. 
 
 ```
 |
@@ -815,7 +817,7 @@ Within a template expression, you have access to the `parameters` context that c
 Additionally, you have access to the `variables` context that contains all the variables specified in the YAML file plus 
 many of the [predefined variables](../build/variables.md) (noted on each variable in that topic). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
-Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
+Template expansion happens [early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 
 ### Required parameters
 
@@ -1224,7 +1226,7 @@ steps:
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
-Parameters are not limited to scalar strings.
+Parameters aren't limited to scalar strings.
 As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
 Likewise, sequences can be passed where sequences are expected.
 For example:
@@ -1303,7 +1305,7 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-The project must be in the same organization; cross-organization references are not supported.
+The project must be in the same organization; cross-organization references aren't supported.
 
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used during the pipeline.
@@ -1412,7 +1414,7 @@ You can use [general functions](expressions.md#functions) in your templates. You
 * Example: `${{ format('{0} Build', parameters.os) }}` &rarr; `'Windows Build'`
 
 #### coalesce
-* Evaluates to the first non-empty, non-null string argument
+* Evaluates to the first nonempty, non-null string argument
 * Min parameters: 2. Max parameters: N
 * Example:
 

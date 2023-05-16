@@ -7,13 +7,13 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2022'
+monikerRange: '= azure-devops'
 ms.date: 08/03/2022
 ---
 
 # Auditing events list
 
-[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > Auditing is still in public preview.
@@ -213,6 +213,8 @@ The following tables describe the type of events (or actions) that are available
 | Pipelines.ResourceUnauthorizedForProject	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for the project |
 | Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease id {RetentionLeaseId} to {RetentionOwnerId} |
 | Pipelines.RunUnretained	 | Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained |
+| Pipelines.ProjectSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
+| Pipelines.OrganizationSettings |	Modify |	Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 
 ### Policy
 | ActionId	| Category |	Details |

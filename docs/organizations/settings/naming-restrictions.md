@@ -212,7 +212,7 @@ Tag names must conform to the following restrictions.
 
 ## Azure Pipelines
 
-Azure pipeline definitions must conform to the following restrictions.
+Azure Pipeline definitions must conform to the following restrictions.
 
 |Restriction type |Restriction  |
 |---------|---------|

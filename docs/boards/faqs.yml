@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
-  ms.date: 03/21/2023
+  ms.date: 05/08/2023
 
 
 title: Azure Boards FAQs  
@@ -247,6 +247,11 @@ sections:
             In the following example, two new states are added: **Triaged** for bug, and **Investigate** for user story. Each state is then mapped to an existing or new column. After each state is mapped to a column, the Kanban board displays the work items assigned to these states.  
             > [!div class="mx-imgBorder"]
             > ![Screenshot showing Kanban board settings, columns.](./boards/media/add-columns-custom-states-mapping.png)  
+
+      - question: Can I use swimlanes and set up swimlane rules?
+
+        answer:  |
+            **Yes**, you can [add or remove swimlanes](boards/expedite-work.md) on your Kanban board. You can also [set up swimlane rules](boards/expedite-work.md#set-up-swimlane-rules), where when certain conditions are met, Azure Boards automatically moves work items into specific lanes.
 
   - name: Work item templates  
 
