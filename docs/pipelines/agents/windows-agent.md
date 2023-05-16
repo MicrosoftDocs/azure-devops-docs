@@ -246,7 +246,7 @@ The help provides information on authentication alternatives and unattended conf
 
 If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
 
-::: moniker range>="azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 ### How do I set different environment variables for each individual agent?
 
 Create a `.env` file under agent's root directory and put the environment variables you want to set into the file in the following format, and then restart the agent.
