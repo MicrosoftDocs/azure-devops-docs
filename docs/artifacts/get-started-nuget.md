@@ -64,7 +64,7 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
 
 ::: moniker range="tfs-2018"
 
-1. Navigate to your project in Azure DevOps Server `https://<YourServerName>/<YourCollectionName>/<YourProjectName>`.
+1. Navigate to your project `http://ServerName:8080/tfs/DefaultCollection/<ProjectName>`.
 
 1. Select **Build and Release** > **Packages**.
 
