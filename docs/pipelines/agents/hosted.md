@@ -40,7 +40,6 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
-
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
 
@@ -278,7 +277,10 @@ If Microsoft-hosted agents don't meet your needs, then you can deploy your own [
 
 ### How can I see what software is included in an image?
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table. 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table.
+
+> [!NOTE]
+> [!INCLUDE [include](includes/system-prefer-git-from-path.md)]
 
 ### How does Microsoft choose the software and versions to put on the image?
 
