@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for April 1, 2023 - April 30, 2023"
 description: "What's new in the Azure DevOps docs for April 1, 2023 - April 30, 2023."
-ms.date: 05/12/2023
+ms.date: 05/16/2023
 ---
 
 # Azure DevOps docs: What's new for April 1, 2023 - April 30, 2023
@@ -12,42 +12,42 @@ Welcome to what's new in the Azure DevOps docs from April 1, 2023 through April 
 
 ### Updated articles
 
-- [Manage notifications for a team, project, or organization](/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications.md)
-- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder.md)
-- [Select backlog navigation levels for your team](/azure/devops/organizations/settings/select-backlog-navigation-levels.md)
+- [Manage notifications for a team, project, or organization](/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications)
+- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder)
+- [Select backlog navigation levels for your team](/azure/devops/organizations/settings/select-backlog-navigation-levels)
 
 ## Artifacts
 
 ### Updated articles
 
-- [Publish and consume Python packages using the command line](/azure/devops/artifacts/quickstarts/python-cli.md)
-- [Artifacts storage consumption](/azure/devops/artifacts/artifact-storage.md)
-- [Azure Artifacts: best practices](/azure/devops/artifacts/concepts/best-practices.md)
-- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc.md)
+- [Publish and consume Python packages using the command line](/azure/devops/artifacts/quickstarts/python-cli)
+- [Artifacts storage consumption](/azure/devops/artifacts/artifact-storage)
+- [Azure Artifacts: best practices](/azure/devops/artifacts/concepts/best-practices)
+- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc)
 
 ## Azure Boards
 
 ### Updated articles
 
-- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv.md)
-- [About work items and work item types](/azure/devops/boards/work-items/about-work-items.md)
+- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
+- [About work items and work item types](/azure/devops/boards/work-items/about-work-items)
 
 ## Azure Pipelines
 
 ### Updated articles
 
-- [Logging commands](/azure/devops/pipelines/scripts/logging-commands.md)
-- [Azure SQL database deployment](/azure/devops/pipelines/targets/azure-sqldb.md)
-- [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript.md)
-- [Define resources in YAML](/azure/devops/pipelines/process/resources.md)
-- [Create and target an environment](/azure/devops/pipelines/process/environments.md)
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows.md)
+- [Logging commands](/azure/devops/pipelines/scripts/logging-commands)
+- [Azure SQL database deployment](/azure/devops/pipelines/targets/azure-sqldb)
+- [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript)
+- [Define resources in YAML](/azure/devops/pipelines/process/resources)
+- [Create and target an environment](/azure/devops/pipelines/process/environments)
+- [Title not found in: #5455](/azure/devops/pipelines/agents/v2-windows.md)
 
 ## Integrate
 
 ### Updated articles
 
-- [Use Azure Active Directory service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity.md)
+- [Use Azure Active Directory service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
 
 ## GitHub issue content updates
 
