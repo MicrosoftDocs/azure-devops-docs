@@ -303,7 +303,7 @@ Step 1: [Take the collection offline and detach it](#step-1-detach-your-collecti
 
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
-Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-key).  
+Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-token).  
 Step 5: [Complete the import specification](#step-5-complete-the-import-specification). 
 
 > [!NOTE] 
