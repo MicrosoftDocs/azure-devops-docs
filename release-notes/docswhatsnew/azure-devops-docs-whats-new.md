@@ -41,7 +41,7 @@ Welcome to what's new in the Azure DevOps docs from April 1, 2023 through April 
 - [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript)
 - [Define resources in YAML](/azure/devops/pipelines/process/resources)
 - [Create and target an environment](/azure/devops/pipelines/process/environments)
-- [Title not found in: #5455](/azure/devops/pipelines/agents/v2-windows.md)
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows-agent)
 
 ## Integrate
 
