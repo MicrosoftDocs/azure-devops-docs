@@ -39,7 +39,9 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From within your project, select **Artifacts**, and then select your feed.
+1. Sign in to your Azure DevOps organization `https://dev.azure.com/<Your_Organization>` and then navigate to your project.
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select **Connect to feed**.
 
@@ -54,13 +56,15 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
     1. Install the [latest NuGet version](https://www.nuget.org/downloads).
     1. Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-1. Follow the instructions in the **Project setup** to add a nuget .config file.
+1. Follow the instructions in the **Project setup** to add a nuget.config file.
 
     :::image type="content" source="./media/project-setup.png" alt-text="Project setup":::
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
+1. Navigate to your project in Azure DevOps Server `https://<YourServerName>/<YourCollectionName>/<YourProjectName>`.
 
 1. Select **Build and Release** > **Packages**.
 
