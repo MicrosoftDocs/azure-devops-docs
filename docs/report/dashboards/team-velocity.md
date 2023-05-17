@@ -12,7 +12,6 @@ monikerRange: '<= azure-devops'
 ms.date: 05/18/2023
 ---
 
-
 # View and configure team velocity
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -29,31 +28,31 @@ Once your team completes a few sprints, you can use the velocity to [forecast](.
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
-In this article, you can learn: 
+In this article, learn how to do the following tasks: 
 
 ::: moniker range=">= azure-devops-2020" 
 
 > [!div class="checklist"]
-> * How to configure the Velocity widget (Analytics)
-> * How to view the Velocity in-context report (Analytics) 
-> * Required and recommended team activities to support velocity tracking      
+> * Configure the Velocity widget (Analytics)
+> * View the Velocity in-context report (Analytics) 
+> * Support velocity tracking with required and recommended team activities    
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019" 
 
 > [!div class="checklist"] 
-> * How to configure the Velocity widget (Analytics)
-> * How to view the Velocity in-context report (work tracking data store) 
-> * Required and recommended team activities to support velocity tracking   
+> * Configure the Velocity widget (Analytics)
+> * View the Velocity in-context report (work tracking data store) 
+> * Support velocity tracking with required and recommended team activities  
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018" 
 
 > [!div class="checklist"] 
-> * How to view the Velocity in-context report (work tracking data store) 
-> * Required and recommended team activities to support velocity tracking   
+> * View the Velocity in-context report (work tracking data store) 
+> * Support velocity tracking with required and recommended team activities  
 
 ::: moniker-end
 
@@ -276,7 +275,6 @@ You configure your velocity widget for a single team. If you want to view the ve
    
 	![Screenshot of example Velocity widget, 8 iterations.](media/commerce-team-velocity-eight-iterations.png) 
 
-	For information on **Planned**, **Completed**, **Completed Late**, and **Incomplete**, see the [velocity legend earlier in the article](#velocity-legend). 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/velocity-activities.md)] 
