@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 05/02/2023
+ms.date: 05/17/2023
 monikerRange: 'azure-devops'
 ---
 
@@ -175,6 +175,9 @@ Also, data we store on your behalf in Azure DevOps gets encrypted as follows:
 * Data stored in Azure SQL databases gets encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption). TDE protects against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
 * Azure Blob Storage connections get encrypted to protect your data in transit. To protect data at rest stored in Azure Blob Storage, Azure DevOps uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
+
+> [!NOTE]
+> Azure DevOps is not Federal Information Processing Standards (FIPS) 140-2 or 140-3 compliant.
 
 The Azure infrastructure helps the Azure DevOps team to log and monitor key aspects of the service. This helps ensure that activities within the service are legitimate, and detects breaches or attempted breaches. In addition, all deployment and administrator activities are securely logged, as is operator access to production storage. Real-time alerts are raised because the log information is automatically analyzed to uncover potentially malicious or unauthorized behavior.
 
