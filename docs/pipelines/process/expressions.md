@@ -512,6 +512,7 @@ You can use the following status check functions as expressions in conditions, b
 * For a job:
   * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
   * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
+  * You may want to use `not(canceled())` instead when there are previous skipped jobs in the dependency graph. 
 
   > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
 
