@@ -68,7 +68,7 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 7. Select **External NuGet server** for your **Target feed location**. Then, in the **NuGet server** field, select the service connection you created earlier.
 
-    :::image type="content" source="media/nuget-push-task.png" alt-text="A screenshot showing how to configure a nuget push task to an external nuget server.":::
+    :::image type="content" source="media/nuget-push-task.png" alt-text="A screenshot showing how to configure a NuGet push task to an external NuGet server.":::
 
 #### [YAML](#tab/yaml/)
 
@@ -95,4 +95,12 @@ steps:
 ```
 ---
 
+Once completed, you can visit the [packages](https://www.nuget.org/account/Packages) page on nuget.org, where you can find your recently published package listed at the top.
 
+:::image type="content" source="media/published-package.png" alt-text="A screenshot showing the published packages in nuget.org.":::
+
+## Related articles
+
+- [Release triggers](../release/triggers.md)
+- [Deploy from multiple branches](../release/deploy-multiple-branches.md)
+- [Pipeline caching](../release/caching.md)
