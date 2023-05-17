@@ -30,20 +30,11 @@ Once your team completes a few sprints, you can use the velocity to [forecast](.
 
 In this article, learn how to do the following tasks: 
 
-::: moniker range=">= azure-devops-2020" 
-
-> [!div class="checklist"]
-> * Configure the Velocity widget (Analytics)
-> * View the Velocity in-context report (Analytics) 
-> * Support velocity tracking with required and recommended team activities    
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019" 
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="checklist"] 
-> * Configure the Velocity widget (Analytics)
-> * View the Velocity in-context report (work tracking data store) 
+> * Configure the Velocity widget
+> * View the Velocity in-context report
 > * Support velocity tracking with required and recommended team activities  
 
 ::: moniker-end
@@ -267,7 +258,7 @@ You configure your velocity widget for a single team. If you want to view the ve
        For example, entering three days will give the team 3 days after the end of an iteration to mark work items complete or done, before they're considered late.
 
      > [!NOTE]  
-     > A work item is considered late when the work item's Completed Date is later than End Date of the Iteration the work item is _currently_ assigned to.
+     > A work item is considered late when the work item's Completed Date is later than End Date of the Iteration the work item is *currently* assigned to.
      > 
      > It will take into account the value you enter for <i>Days past end date of iteration after which work is late</i>.  
 
