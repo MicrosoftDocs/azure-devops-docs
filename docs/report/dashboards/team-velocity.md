@@ -16,8 +16,6 @@ ms.date: 05/18/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2019" 
-
 Teams can track velocity to help determine how much work they can do sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based on either **a count of work items completed** or **the sum of estimates made** for effort (product backlog items), story points (user stories), or size (requirements).
 
 Once your team completes a few sprints, you can use the velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog you can finish within upcoming sprints. If your team hasn't completed a sprint or if you're working on items before a sprint start date, there's no data to analyze and forecast. You might see this message: *Set iteration dates to use this widget*. To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
