@@ -1,6 +1,6 @@
 ---
 title: Publish NuGet packages to NuGet.org with Azure Pipelines (Classic/YAML)
-description: How to publish NuGet packages to NuGet.org using Azure Pipelines 
+description: Learn how to publish NuGet packages to NuGet.org using Azure Pipelines.
 ms.topic: conceptual
 ms.date: 05/14/2023
 monikerRange: '<= azure-devops'
