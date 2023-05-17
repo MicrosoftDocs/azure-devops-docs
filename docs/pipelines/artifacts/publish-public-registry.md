@@ -47,3 +47,52 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 1. Enter the ApiKey you generated earlier in the **ApiKey** field, and then provide a name for your service connection.
 
 1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done.
+
+## Publish packages
+
+1. Sign in to your Azure DevOps organization `https://dev.azure.com/<Your_Organization>` and then navigate to your project.
+
+1. Select **Pipelines**, and then select your pipeline. Select **Edit** to edit your pipeline.
+
+#### [Classic](#tab/classic/)
+
+3. Select **+** to add a new task, and then search for the **.NET Core** task. select **Add** to add it to your pipeline.
+
+4. Select the **pack** command from the command's dropdown menu, and then select the **Path to csproj or nuspec file(s) to pack**. You can keep the default values for the other fields depending on your scenario.
+
+    :::image type="content" source="media/dotnet-pack-task.png" alt-text="A screenshot showing how to configure the dotnet pack task in a classic pipeline.":::
+
+5. Select **+** to add a new task, and then search for the **NuGet** task. select **Add** to add it to your pipeline.
+
+6. Select the **push** command from the command's dropdown menu, and then select the **Path to NuGet package(s) to publish**.
+
+7. Select **External NuGet server** for your **Target feed location**. Then, in the **NuGet server** field, select the service connection you created earlier.
+
+    :::image type="content" source="media/nuget-push-task.png" alt-text="A screenshot showing how to configure a nuget push task to an external nuget server.":::
+
+#### [YAML](#tab/yaml/)
+
+3. Add the following task to build your project and create your NuGet package.
+
+```yml
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
+  inputs:
+    command: pack
+```
+
+4. Add the following tasks to your YAML pipeline to publish your NuGet package to NuGet.org. Replace the placeholder with the name of the service connection you created earlier.
+
+```yml
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: <NAME_OF_YOUR_SERVICE_CONNECTION>
+```
+---
+
+
