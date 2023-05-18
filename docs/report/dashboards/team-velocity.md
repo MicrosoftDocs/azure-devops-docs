@@ -16,15 +16,11 @@ ms.date: 05/18/2023
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Teams can track velocity to help determine how much work they can do sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based on either **a count of work items completed** or **the sum of estimates made** for effort (product backlog items), story points (user stories), or size (requirements).
+Teams can track velocity to help determine how much work they can do sprint-over-sprint. Velocity metrics provide an indication of how much work a team can complete during a sprint based on either **a count of work items completed** or **the sum of estimates made** for effort (product backlog items), story points (user stories), or size (requirements).
 
-Once your team completes a few sprints, you can use the velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog you can finish within upcoming sprints. If your team hasn't completed a sprint or if you're working on items before a sprint start date, there's no data to analyze and forecast. You might see this message: *Set iteration dates to use this widget*. To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+While velocity provides a measure of a team's ability to deliver work, you shouldn't confuse it as a key performance indicator for the team. Velocity provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request likely leads to "Story points inflation" and lead to less desirable outcomes. 
 
-**Example: Velocity showing Set iteration dates to use this widget**  
-
-![Screenshot showing the need to set iteration dates.](media/team-velocity-set-iteration-dates.png)
-
-[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
+Once your team completes a few sprints, you can use the velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog you can finish within upcoming sprints. If your team hasn't completed a sprint or if you're working on items before a sprint start date, there's no data to analyze and forecast. You might see this message: *Set iteration dates to use this widget*. To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. 
 
 In this article, learn how to do the following tasks: 
 
@@ -45,6 +41,8 @@ In this article, learn how to do the following tasks:
 
 ::: moniker-end
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Prerequisites  
@@ -52,6 +50,68 @@ In this article, learn how to do the following tasks:
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
+
+::: moniker range=">= azure-devops-2019"
+
+## Velocity chart types
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:
+
+To open the Velocity chart or add the Velocity widget to a dashboard, see [View or configure team velocity](team-velocity.md).
+
+#### [In-context Velocity chart](#tab/in-context)
+
+![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](media/velocity/analytics-velocity-azure-devops.png)
+
+#### [Velocity widget](#tab/widget)
+
+![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
+
+***
+
+You can configure each chart in the following ways: 
+- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
+- Count of work items that appear on the backlog
+- Number of iterations.   
+
+The widget supports some more configuration options. To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
+ 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With the velocity widget, you can quickly determine the following information:  
+- Planned velocity 
+- Actual (completed) velocity 
+- Work completed later than planned
+- Amount of work not completed   
+
+#### [In-context Velocity chart](#tab/in-context)
+
+![Web portal, Velocity chart showing seven sprints of in progress and completed work](media/team-velocity-chart-web-7-iterations.png)
+
+#### [Velocity widget](#tab/widget)
+
+![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
+
+***
+
+Both of these charts support visualizing team velocity for several sprints. The Velocity widget, however, supports the following configuration options: 
+- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
+- Count of work items that appear on the backlog
+- Number of iterations   
+- Advanced features.
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+The in-context Velocity charts are based on the sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) assigned to backlog items. These charts are similar to the one shown in the following image. 
+
 
 ## Open your backlog from the web portal
 
@@ -118,8 +178,6 @@ Velocity reports are available for each backlog level, both product and portfoli
 	Hover over a column area to show a summary of planned and completed work items. For example, for the 07_2019 sprint, 131 items are planned.
 
    :::image type="content" source="media/velocity/analytics-velocity-azure-devops.png" alt-text="Screenshot of Velocity Analytics report.":::
-
-   For more information, see [Velocity metrics and usage guidance](velocity-guidance.md). 
 
 4. To add the report to a dashboard, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
@@ -194,7 +252,14 @@ Velocity reports are available for each backlog level, both product and portfoli
 	
 ::: moniker-end
 
-[!INCLUDE [velocity-state-descriptions](../includes/velocity-state-descriptions.md)]
+The following table describes the available workflow state categories. Items assigned to a *Proposed* or *Resolved* aren't included in any of the calculations for **Completed**, **Completed Late**, or **Incomplete**. For more information, see [How workflow category states are used in Azure Boards](../../boards/work-items/workflow-and-state-categories.md). The selections you make are only set for you, and persist across sessions until you change them.
+
+|State  |Description |
+|---------|---------|
+|Planned    | Calculated based on the number of work items assigned to the sprint before the start of the sprint. If a work item is assigned to the sprint before the start of the sprint, and then assigned to another sprint after the start of the original sprint, it shows as Planned in the original sprint, and then Completed/Completed, Late/Incomplete in the new sprint it's assigned to.     |
+|Completed  | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and completed before the end of the sprint.        |
+|Completed Late     |Calculated based on the number of work items assigned to the sprint before or after the start of the sprint but completed after the end of the sprint.          |
+|Incomplete    | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and not yet completed.        |  
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -204,15 +269,14 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker range=">= azure-devops-2020" 
 
-- If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do so now.  
+If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-dashboard.md).  
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-1. If you haven't yet [enabled or installed Analytics](analytics-extension.md), do so now.    
-
-1. If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do so now.  
+- If you haven't yet, [Enable or install Analytics](analytics-extension.md).    
+- If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-dashboard.md).  
 
 ::: moniker-end
 
@@ -224,15 +288,15 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 You configure your velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team that rolls up from several teams. For more information, see [Add teams](../../organizations/settings/add-teams.md).  
 
-1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the Configure option to open the configuration dialog. 
+1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. 
 	
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
 	<img src="media/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget." />    
 
-1. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
+2. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
-2. (Optional) Select the check boxes to show additional information for work completed later than planned for each sprint. 
+3. (Optional) Select the check boxes to show additional information for work completed later than planned for each sprint. 
 
 	**Displayed planned work for iterations:** Check this box to
 	display the amount of work planned for an iteration at the start of the iteration. 
@@ -260,21 +324,45 @@ You configure your velocity widget for a single team. If you want to view the ve
      > 
      > It will take into account the value you enter for <i>Days past end date of iteration after which work is late</i>.  
 
-3. Select **Save** when done. The following image shows Velocity based on Story Points and eight sprints of data. 
+4. Select **Save** when done. The following image shows Velocity based on Story Points and eight sprints of data. 
    
 	![Screenshot of example Velocity widget, 8 iterations.](media/commerce-team-velocity-eight-iterations.png) 
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/velocity-activities.md)] 
+## Required and recommended tasks  
+ 
+For your team to gain the greatest utility from the velocity charts, follow these required and recommended tasks.  
 
-[!INCLUDE [temp](../includes/add-teams.md)] 
+**Required:** 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) Sprints should be of the same duration. 
+- [Define and estimate backlog items](../../boards/backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+- Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done will show up on the velocity chart or velocity widget. 
+
+**Recommended:**  
+*	Define and size backlog items to [minimize variability](../dashboards/team-velocity.md).  
+*	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
+*	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
+*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list-only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../boards/backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
+* Minimize the size variability of your backlog items to help strengthen the team's ability to create truer estimates. Variability increases uncertainty, but minimizing the variability of your estimates, increases the likelihood of more reliable velocity metrics and forecast results. Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, as it relates to the effort to complete other items on the backlog.  
+
+
+
+
+
+## Add other teams
+
+If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../organizations/settings/about-teams-and-settings.md).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Velocity guidance](velocity-guidance.md)
+> [Plan your sprint](../../boards/sprints/assign-work-sprint.md)
 
+## Related articles
+
+-  [Forecast your sprints](../../boards/sprints/forecast.md) 
 
 <!--
 The following two velocity charts are available: 

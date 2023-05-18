@@ -69,9 +69,6 @@
   - name: Cumulative flow & lead/cycle time guidance
     href: dashboards/cumulative-flow-cycle-lead-time-guidance.md
     displayname: lead time, cycle time, work in progress, scope, scope change, work in progress, process issues,
-  - name: Velocity guidance
-    href: dashboards/velocity-guidance.md
-    displayname: team, forecast, planned, completed,
   - name: Visibility across teams & projects
     href: ../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/toc.json
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams
