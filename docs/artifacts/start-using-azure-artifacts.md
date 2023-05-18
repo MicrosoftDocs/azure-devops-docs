@@ -18,9 +18,12 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 
 ## Prerequisites
 
+- An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project?view=azure-devops&tabs=browser#create-a-project) if you haven't already.
+
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2-GiB storage.
-- An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
+
+> [!NOTE]
+> If you anticipate using more than the provided 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ::: moniker range="tfs-2018"
 
