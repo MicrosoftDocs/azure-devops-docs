@@ -112,6 +112,7 @@ Both of these charts support visualizing team velocity for several sprints. The 
 
 The in-context Velocity charts are based on the sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) assigned to backlog items. These charts are similar to the one shown in the following image. 
 
+::: moniker-end
 
 ## Open your backlog from the web portal
 
