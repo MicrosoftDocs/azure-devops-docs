@@ -61,7 +61,18 @@ In this article, learn how to do the following tasks:
 
 ::: moniker range=">= azure-devops-2020"
 
-You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:
+You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the information in the following table, which describes the available workflow state categories and their descriptions:
+
+<a id="state-descriptions-table"></a>
+
+Items assigned to a *Proposed* or *Resolved* aren't included in any of the calculations for **Completed**, **Completed Late**, or **Incomplete**. For more information, see [How workflow category states are used in Azure Boards](../../boards/work-items/workflow-and-state-categories.md). The selections you make are only set for you, and persist across sessions until you change them.
+
+|State  |Description |
+|---------|---------|
+|Planned    | Calculated based on the number of work items assigned to the sprint before the start of the sprint. If a work item is assigned to the sprint before the start of the sprint, and then assigned to another sprint after the start of the original sprint, it shows as Planned in the original sprint, and then Completed/Completed, Late/Incomplete in the new sprint it's assigned to.     |
+|Completed  | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and completed before the end of the sprint.        |
+|Completed Late     |Calculated based on the number of work items assigned to the sprint before or after the start of the sprint but completed after the end of the sprint.          |
+|Incomplete    | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and not yet completed.        |  
 
 To open the Velocity chart or add the Velocity widget to a dashboard, see [View or configure team velocity](team-velocity.md).
 
@@ -170,7 +181,7 @@ To select another team, open the project and team selector. Select a different t
 
 Velocity reports are available for each backlog level, both product and portfolio backlogs. Each report provides interactive controls to provide each user the view of interest to them.  
 
-1. Select **Analytics** to open the Velocity report for your product or portfolio backlog. 
+1. From the **Boards** > **Backlogs** screen, select **Analytics** to open the Velocity report for your product or portfolio backlog. 
 
    :::image type="content" source="media/cfd/analytics-summary-cfd-velocity.png" alt-text="Screenshot showing Backlogs, open Analytics.":::
 
@@ -182,14 +193,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
    :::image type="content" source="media/velocity/analytics-velocity-azure-devops.png" alt-text="Screenshot of Velocity Analytics report.":::
 
-   The following table describes the available workflow state categories. Items assigned to a *Proposed* or *Resolved* aren't included in any of the calculations for **Completed**, **Completed Late**, or **Incomplete**. For more information, see [How workflow category states are used in Azure Boards](../../boards/work-items/workflow-and-state-categories.md). The selections you make are only set for you, and persist across sessions until you change them.
-
-    |State  |Description |
-    |---------|---------|
-    |Planned    | Calculated based on the number of work items assigned to the sprint before the start of the sprint. If a work item is assigned to the sprint before the start of the sprint, and then assigned to another sprint after the start of the original sprint, it shows as Planned in the original sprint, and then Completed/Completed, Late/Incomplete in the new sprint it's assigned to.     |
-    |Completed  | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and completed before the end of the sprint.        |
-    |Completed Late     |Calculated based on the number of work items assigned to the sprint before or after the start of the sprint but completed after the end of the sprint.          |
-    |Incomplete    | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and not yet completed.        |  
+   For more information, see the [State descriptions table](#state-descriptions-table), mentioned earlier in this article.
 
 4. To add the report to a dashboard, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
@@ -289,34 +293,30 @@ If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-
 
 ## Configure the Velocity widget    
 
-You configure your Velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team that rolls up from several teams. For more information, see [Add teams](../../organizations/settings/add-teams.md).   
+You can only configure your Velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team that rolls up from several teams. For more information, see [Add teams](../../organizations/settings/add-teams.md).   
 
-1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. 
+1. Select the ![Actions icon](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.
+
+   :::image type="content" source="media/velocity/configure-dashboard-sequence.png" alt-text="Screenshot showing sequence of highlighted buttons to configure Velocity dashboard."::: 
 	
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-	<img src="media/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget." />    
+   :::image type="content" source="media/team-velocity-config-dialog.png" alt-text="Screenshot showing Configure dialog, Velocity widget.":::
 
 2. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
 3. (Optional) Select the check boxes to show additional information for work completed later than planned for each sprint. 
 
-	**Displayed planned work for iterations:** Check this box to
-	display the amount of work planned for an iteration at the start of the iteration. 
-	It's useful for comparing your planned work to actual deliverables.
-	By default, the count of planned work begins on the start date of the iteration. <br/> 
-
-   - ***Days past start date of iteration when planned work is final***: Specify the number of days past the start date to count planned work. For example, if the first two days of an iteration are for planning, then you can enter "3", and planned work gets counted on the third day. 
+	- **Display planned work for iterations:** Check this box to display the amount of work planned for an iteration at the start of the iteration, which is useful for comparing your planned work to actual deliverables. By default, the count of planned work begins on the start date of the iteration.
+    	- **Days past start date of iteration when planned work is final**: Specify the number of days past the start date to count planned work. For example, if the first two days of an iteration are for planning, then you can enter "3", and planned work gets counted on the third day. 
 	
-       For example, if the iteration starts on `01/01/2018`, and three backlog items are assigned to the iteration on `01/01/2018` end-of-day, then those three backlog items are considered as Planned. If your team doesn't complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
+      For example, if the iteration starts on `01/01/2018`, and three backlog items are assigned to the iteration on `01/01/2018` end-of-day, then those three backlog items are considered as Planned. If your team doesn't complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
 
      > [!NOTE]
-     > Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date.
+     > Work is considered Planned if it's assigned to the iteration as of the Iteration Start Date.
 
-     **Highlight work completed late:** Work items marked complete after the iteration end date are considered to be completed late and show as light green. 
-     This is useful for spotting a trend where work items are marked complete after the iteration is complete.
-
-   - ***Days past end date of iteration after which work is late***: Specify the number of days past which you consider a work item late if its status is still new or is in progress.  
+   - **Highlight work completed late:** Check this box to display Work items marked complete after the iteration end date, which are considered to be completed late and show as light green. This is useful for spotting a trend where work items are marked complete after the iteration is complete.
+      - **Days past end date of iteration after which work is late***: Specify the number of days past which you consider a work item late if its status is still new or is in progress.  
 
        For example, entering three days gives the team 3 days after the end of an iteration to mark work items complete or done, before they're considered late.
 
@@ -326,6 +326,8 @@ You configure your Velocity widget for a single team. If you want to view the ve
 4. Select **Save** when you're done. The following image shows Velocity based on Story Points and eight sprints of data. 
    
 	![Screenshot of example Velocity widget, 8 iterations.](media/commerce-team-velocity-eight-iterations.png) 
+
+For more information about **Planned**, **Completed**, **Completed Late**, and **Incomplete** states, see the [State descriptions](#state-descriptions-table) mentioned earlier in this article.
 
 ::: moniker-end
 
