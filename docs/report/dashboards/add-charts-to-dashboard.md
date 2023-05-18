@@ -234,12 +234,10 @@ Select **Add to dashboard**, and then select the team dashboard to add the Markd
 
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 - [Analyze test results](../../pipelines/test/test-analytics.md)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 ::: moniker-end
