@@ -74,7 +74,7 @@ Items assigned to a *Proposed* or *Resolved* aren't included in any of the calcu
 |Completed Late     |Calculated based on the number of work items assigned to the sprint before or after the start of the sprint but completed after the end of the sprint.          |
 |Incomplete    | Calculated based on the number of work items assigned to the sprint before or after the start of the sprint and not yet completed.        |  
 
-Later in this article, learn how to [open the Velocity in-context report](#velocity-chart) or [configure the Velocity widget](#velocity-widget).
+Later in this article, learn how to [open the Velocity in-context report](#velocity-chart) or [configure the Velocity widget](#configure-the-velocity-widget).
 
 #### [In-context Velocity chart](#tab/in-context)
 
@@ -270,21 +270,13 @@ Velocity reports are available for each backlog level, both product and portfoli
 	
 ::: moniker-end
 
-<a id="configure-widget"></a>
-
 ::: moniker range=">= azure-devops-2019"
 
 ## Configure the Velocity widget    
 
 You can only configure your Velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team that rolls up from several teams. For more information, see [Add teams](../../organizations/settings/add-teams.md).   
 
-If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-dashboard.md).  
-
-::: moniker range="azure-devops-2019"
-
-- If you haven't yet, [Enable or install Analytics](analytics-extension.md).
-
-::: moniker-end
+If you haven't yet, [Add the Velocity widget to your dashboard](./add-widget-to-dashboard.md). For Azure DevOps Server 2019, [Enable or install Analytics](analytics-extension.md).
 
 Complete the following steps to configure the Velocity widget.
 
