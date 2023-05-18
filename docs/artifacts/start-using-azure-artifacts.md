@@ -18,7 +18,7 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project?view=azure-devops&tabs=browser#create-a-project) if you haven't already.
+- An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 
