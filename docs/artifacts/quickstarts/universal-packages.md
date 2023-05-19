@@ -1,23 +1,24 @@
 ---
-title: Publish and download universal packages with Azure Artifacts
+title: Publish and download universal packages in Azure Artifacts
 description: How to publish and download universal packages to and from Artifacts feeds.
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 02/15/2022
+ms.date: 05/19/2023
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
-# Publish and download universal packages with Azure Artifacts
+# Publish and download universal packages in Azure Artifacts
 
-With universal packages, you can store different types of packages other than the widely used ones such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can publish and download universal packages from the command line. Uploaded packages can vary in size (up to 4 TB), but should always have a name and a version number. This article will walk you through the steps to publish and download your universal packages to Azure Artifacts feeds.
+Universal Packages offer developers the capability to store an extensive array of package types that extend beyond the conventional ones, such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can conveniently publish and download universal packages directly from the command line. The size of published packages can vary, reaching up to 4 TB, but must always maintain the essential requirement of including a name and version number. This article will walk you through the steps to publish and download your universal packages to your Azure Artifacts feed.
 
 ## Prerequisites
 
-1. [Install Azure CLI](/cli/azure/install-azure-cli).
-1. If you're using Linux, make sure you install the [.NET on Linux](/dotnet/core/linux-prerequisites) version.
-1. [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-1. [Azure Artifacts feed](../get-started-nuget.md).
+- Install [Azure CLI](/cli/azure/install-azure-cli).
+- If you're using Linux, make sure you install the [.NET on Linux](/dotnet/core/linux-prerequisites) version.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../..//organizations/projects/create-project.md) if you haven't already.
+- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
 
 ## Connection setup
 
