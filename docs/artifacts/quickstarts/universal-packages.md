@@ -20,27 +20,23 @@ Universal Packages offer developers the capability to store an extensive array o
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../..//organizations/projects/create-project.md) if you haven't already.
 - An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
 
-## Connection setup
+## Project setup
 
-1. To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
+#### [Windows](#tab/Windows/)
 
-   ```azurecli
-   az --version
-   ```
-
-2. Install the Azure DevOps extension.
+1. Run the following command to install the Azure DevOps extension.
 
    ```azurecli
    az extension add --name azure-devops
    ```
 
-3. If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
+1. If you already have the Azure DevOps extension installed and wish to update it to the latest version, run the following command::
 
    ```azurecli
    az extension update --name azure-devops
    ```
 
-4. Log in to Azure.
+1. Log in to Azure.
 
     ```azurecli
     az login
@@ -49,11 +45,22 @@ Universal Packages offer developers the capability to store an extensive array o
 > [!TIP]
 > To access tenants without subscriptions, run `az login --allow-no-subscription`.
 
-5. Set your project and organization as the CLI's default.
+1. Set your project and organization as the CLI's default.
 
     ```azurecli
     az devops configure --defaults project=<YOUR_PROJECT_NAME> organization=https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
     ```
+
+#### [Other](#tab/Other/)
+
+1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Packaging Read & write** scope, and then copy it to your clipboard.
+
+1. Run the following command to log in. When prompted, enter the personal access token you created in the previous step.
+ 
+    ```azurecli
+    az devops login --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
+    ```
+- - -
 
 ## Publish universal packages
 
