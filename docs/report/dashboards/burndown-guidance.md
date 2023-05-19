@@ -174,7 +174,7 @@ Teams should meet immediately to course correct and either reassign work, recrui
  
 ## Related articles
 
-- [Velocity metrics and usage guidance](velocity-guidance.md)
+- [View and configure velocity](team-velocity.md)
 - [Implement Scrum practices for your team in Azure Boards](../../boards/sprints/scrum-overview.md)
 - [Query by date or current iteration, List work items moved out of a sprint](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-of-a-sprint)
 - [Query by date or current iteration, List work items added to a sprint after the start date](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-added-to-a-sprint-after-the-start-date)
