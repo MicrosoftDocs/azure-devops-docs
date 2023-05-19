@@ -26,7 +26,7 @@ Parameters are only available at template parsing time. Parameters are expanded 
 
 Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you do not assign a default value or set `default` to `false`, the first available value will be used. 
 
-You can use [templateContext](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs that are used as parameters in a template. 
+Use [templateContext](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs that are used as parameters in a template. 
 
 ## Use parameters in pipelines
 
