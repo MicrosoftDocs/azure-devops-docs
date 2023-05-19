@@ -26,6 +26,8 @@ Parameters are only available at template parsing time. Parameters are expanded 
 
 Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you do not assign a default value or set `default` to `false`, the first available value will be used. 
 
+You can use [templateContext](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs that are used as parameters in a template. 
+
 ## Use parameters in pipelines
 
 Set runtime parameters at the beginning of a YAML. This example pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
@@ -298,32 +300,3 @@ steps:
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
 
-## FAQ
-
-### How can I use variables inside of templates?
-
-There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
-
-In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
-
-
-```yaml
-# File: azure-pipelines.yml
-trigger:
-- main
-
-extends:
-  template: template.yml
-```
-
-```yaml
-# File: template.yml
-steps:
-- script: echo Build.SourceBranch = $(Build.SourceBranch) # outputs refs/heads/main
-- script: echo Build.Reason = $(Build.Reason) # outputs IndividualCI
-- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
-  - script: echo I run only if Build.SourceBranch = refs/heads/main 
-- ${{ if eq(variables['Build.Reason'], 'IndividualCI') }}: 
-  - script: echo I run only if Build.Reason = IndividualCI 
-- script: echo I run after the conditions
-```

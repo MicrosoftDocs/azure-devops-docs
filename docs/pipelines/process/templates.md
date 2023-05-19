@@ -1641,5 +1641,35 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
 - No more than 2000 characters per template expression are allowed
 
-::: moniker-end
 
+## FAQ
+
+### How can I use variables inside of templates?
+
+There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+
+In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
+
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- main
+
+extends:
+  template: template.yml
+```
+
+```yaml
+# File: template.yml
+steps:
+- script: echo Build.SourceBranch = $(Build.SourceBranch) # outputs refs/heads/main
+- script: echo Build.Reason = $(Build.Reason) # outputs IndividualCI
+- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
+  - script: echo I run only if Build.SourceBranch = refs/heads/main 
+- ${{ if eq(variables['Build.Reason'], 'IndividualCI') }}: 
+  - script: echo I run only if Build.Reason = IndividualCI 
+- script: echo I run after the conditions
+```
+
+::: moniker-end
