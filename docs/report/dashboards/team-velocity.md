@@ -78,11 +78,11 @@ Later in this article, learn how to [open the Velocity in-context report](#veloc
 
 #### [In-context Velocity chart](#tab/in-context)
 
-![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](media/velocity/analytics-velocity-azure-devops.png)
+![Screenshot of the web portal, in-context Velocity chart showing six sprints of in progress and completed work.](media/velocity/analytics-velocity-azure-devops.png)
 
 #### [Velocity widget](#tab/widget)
 
-![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
+![Screenshot of an example Velocity widget with eight iterations.](media/commerce-team-velocity-eight-iterations.png) 
 
 ***
 
@@ -105,11 +105,11 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 
 #### [In-context Velocity chart](#tab/in-context)
 
-![Web portal, Velocity chart showing seven sprints of in progress and completed work](media/team-velocity-chart-web-7-iterations.png)
+![Screenshot of the web portal, Velocity chart showing seven sprints of in progress and completed work.](media/team-velocity-chart-web-7-iterations.png)
 
 #### [Velocity widget](#tab/widget)
 
-![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
+![Screenshot of an example Velocity widget with eight iterations.](media/commerce-team-velocity-eight-iterations.png) 
 
 ***
 
@@ -317,7 +317,7 @@ For more information about **Planned**, **Completed**, **Completed Late**, and *
 For your team to gain the greatest utility from the Velocity charts, follow these required and recommended tasks.  
 
 **Required:** 
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). Sprints should be of the same duration. 
+- [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). Sprints should be of the same duration. 
 - [Define and estimate backlog items](../../boards/backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create automatically get assigned to the current sprint (Iteration) and to your team's default Area Path.  
 - Update the status of backlog items once work starts and when it's completed. Only backlog items with State of *In Progress* or *Done* show up on the Velocity chart or widget. 
 
