@@ -24,13 +24,15 @@ Parameters are only available at template parsing time. Parameters are expanded 
 > This guidance does not apply to classic pipelines. For parameters in classic pipelines, see [Process parameters (classic)](parameters.md).
 > 
 
-Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you do not assign a default value or set `default` to `false`, the first available value will be used. 
+Parameters must contain a name and data type. Parameters can't be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you don't assign a default value or set `default` to `false`, the first available value is used. 
 
-Use [templateContext](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass additional properties to stages, steps, and jobs that are used as parameters in a template. 
+Use [templateContext](templates.md#use-templatecontext-to-pass-properties-to-templates) to pass extra properties to stages, steps, and jobs that are used as parameters in a template. 
 
 ## Use parameters in pipelines
 
-Set runtime parameters at the beginning of a YAML. This example pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
+Set runtime parameters at the beginning of a YAML. 
+
+This example pipeline includes an `image` parameter with three hosted agents as `string` options. In the jobs section, the `pool` value specifies the agent from the parameter used to run the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
 
 ```yaml
 parameters:
@@ -54,18 +56,18 @@ jobs:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-When the pipeline runs, you select the Pool Image. If you do not make a selection, the default option, `ubuntu-latest` gets used. 
+When the pipeline runs, you select the Pool Image. If you don't make a selection, the default option, `ubuntu-latest` gets used. 
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)
 
 ## Use conditionals with parameters
 
-You can also use parameters as part of conditional logic. With conditionals, part of a YAML will only run if it meets the `if` criteria. 
+You can also use parameters as part of conditional logic. With conditionals, part of a YAML runs if it meets the `if` criteria. 
 
 ### Use parameters to determine what steps run
 
-This pipeline only runs a step when the boolean parameter `test` is true. 
+This pipeline adds a second boolean parameter, `test`, which can be used to control whether or not to run tests in the pipeline. When the value of `test` is true, the step that outputs *Running all the tests* runs. 
 
 ```yaml
 parameters:
@@ -95,7 +97,7 @@ jobs:
 
 ### Use parameters to set what configuration is used
 
-You can also use parameters to set which job runs. In this example, a different job runs depending on the value of `config`. 
+You can also use parameters to set which job runs. In this example, different architectures build depending on the value of `config` parameter, which is a `string` type. By default, both the `x86` and `x64` architectures build.  
 
 ```yaml
 parameters:
@@ -122,7 +124,7 @@ jobs:
 
 ### Selectively exclude a stage
 
-You can also use parameters to set whether a stage runs. In this example, the Performance Test stage runs if the parameter `runPerfTests` is true. 
+You can also use parameters to set whether a stage runs. In this example, there's a pipeline with four stages and different jobs for each stage. The Performance Test stage runs if the parameter `runPerfTests` is true. The default value of `runPerfTests` is false so without any updates, only three of the four stages run. 
 
 ```yaml
 parameters:
@@ -176,7 +178,7 @@ You can also loop through your string, number, and boolean parameters.
 
 #### [Script](#tab/script)
 
-In this example, you loop through parameters and print out each parameter name and value. 
+In this example, you loop through parameters and print the name and value of each parameter. There are four different parameters and each represents a different type. `myStringName` is a single-line string. `myMultiString` is a multi-line string. `myNumber` is a number. `myBoolean` is a boolean value. In the steps section, the script tasks output the key and value of each parameter. 
 
 ```yaml
 # start.yaml
@@ -219,7 +221,7 @@ extends:
 
 #### [PowerShell](#tab/powershell)
 
-You can loop through parameters in a PowerShell task and set each parameter as an environment variable. 
+In this example, you loop through parameters and print the name and value of each parameter. There are four different parameters and each represents a different type. `myStringName` is a single-line string. `myMultiString` is a multi-line string. `myNumber` is a number. `myBoolean` is a boolean value. In the steps section, you loop through parameters in a PowerShell task and set each parameter as an environment variable. 
 
 ```yaml
 # start.yaml
@@ -255,9 +257,6 @@ steps:
     inputs:
       filePath: test_script.ps1
       pwsh: true
-
-
-
 ```
 
 ```yaml
