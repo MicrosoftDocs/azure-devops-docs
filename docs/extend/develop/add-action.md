@@ -105,7 +105,7 @@ The script below registers the handler object to handle the action, place it in 
     }());
 
     // Associate the menuContributionHandler object with the "myAction" menu contribution from the manifest.
-    VSS.register(SDK.getContributionId(), menuContributionHandler);
+    SDK.register(SDK.getContributionId(), menuContributionHandler);
 </script>
 ```
 
