@@ -39,7 +39,7 @@ Request feedback from stakeholders directly from an Azure DevOps work item.
 1. Choose **Send** to generate emails to all the selected stakeholders.
 
 > [!IMPORTANT]
-> The **Request feedback** shortcut menu is unavailable in [New Boards Hub](http://aka.ms/newboardshub). However, there are alternative ways to request feedback, such as through email and chat, in addition to utilizing the [Test & Feedback extension](./voluntary-stakeholder-feedback.md).
+> The **Request feedback** shortcut menu is unavailable in [New Boards Hub](https://aka.ms/newboardshub). However, there are alternative ways to request feedback, such as through email and chat, in addition to utilizing the [Test & Feedback extension](./voluntary-stakeholder-feedback.md).
 
 > [!NOTE]
 > Teams can request feedback from other team members, such as users having Basic access. 
