@@ -25,7 +25,6 @@ In this article, learn how to do the following tasks:
 > * Add the Azure Repos app to your team in Microsoft Teams
 > * Connect the Azure Repos app to your repos
 > * Manage subscriptions to repo related events in your channel
-> * Use filters to customize subscriptions
 > * Search and share PR info using compose extension
 > * Preview PR URLs
 > * Remove subscriptions and repos from a channel
@@ -81,7 +80,7 @@ Customize your notifications with various filters, as described in the following
 > [!div class="mx-imgBorder"]
 > ![View subscriptions](./media/integrations-teams/Subscriptions.png)
 
-## Use filters to get only notifications that you want
+### Use filters to get only notifications that you want
 
 When you subscribe to a repo with `@azure repos subscribe`, a default subscription gets created with no filters applied.
 Often, users need to customize these subscriptions to be notified only when certain conditions are met. 
@@ -91,10 +90,15 @@ The following screenshots show an example of setting up notifications only when 
 2. In the list of subscriptions, if there's a subscription that you don't want or must be modified, select **Remove** to delete it.
 3. Select the **Add subscription** button.
 4. Choose an event type, and then select **Next**.
+   
    :::image type="content" source="media/integrations-teams/filters-1.png" alt-text="Screenshot showing event type selection.":::
+
 5. Choose a repo, and then select **Next**.
+   
    :::image type="content" source="media/integrations-teams/filters-2.png" alt-text="Screenshot showing repo selection.":::
+
 6. Select the appropriate filters to customize your subscription, and then select **Submit**.
+   
    :::image type="content" source="media/integrations-teams/filters-3.png" alt-text="Screenshot showing chosen filters.":::
 
 > [!NOTE]
@@ -147,7 +151,7 @@ If you're using a different email or tenant for Microsoft Teams and Azure DevOps
 |Use case |Email ID + Microsoft Teams tenant|Email ID + Azure DevOps tenant|Steps |
 |---------|---------|---------|---------|
 |1  |email1@abc.com (tenant 1) | email1@abc.com (tenant 1)        | Select **Sign in**.        |
-|2  |email1@abc.com (tenant 1) | email1@abc.com (tenant 2)        |Sign in to Azure DevOps. In the same browser, start a new tab and go to https://teams.microsoft.com/. Run the signin command and select **Sign in**  |
+|2  |email1@abc.com (tenant 1) | email1@abc.com (tenant 2)        |Sign in to Azure DevOps. In the same browser, start a new tab and go to https://teams.microsoft.com/. Run the signin command and select **Sign in**.  |
 |3  |email1@abc.com (tenant 1) | email2@pqr.com (tenant 2)        | Select **Sign in with different email address**, and then in the email id picker use the email2 to sign in to Azure DevOps.        |
 |4  |email1@abc.com (tenant 1) | email2@pqr.com (non default tenant 3)        |  This scenario isn't supported.     |
 
