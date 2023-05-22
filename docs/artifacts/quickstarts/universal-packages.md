@@ -62,33 +62,45 @@ Universal Packages offer developers the capability to store an extensive array o
     ```
 - - -
 
-## Publish universal packages
+## Publish packages
 
 To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and non-consecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
-The following command will publish a universal package to an organization-scoped feed:
+- Organization-scoped feed:
 
-```azurecli
-az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --description <PACKAGE_DESCRIPTION> --path <PACKAGE_DIRECTORY>
-```
+    ```azurecli
+    az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
+    ```
+
+- Project-scoped feed:
+
+    ```azurecli
+    az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <PACKAGE_DIRECTORY> --description <PACKAGE_DESCRIPTION>
+    ```
 
 ## View published packages
 
-1. Navigate to your Azure DevOps organization.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select your project, and then select **Artifacts**.
-
-1. Select your feed from the drop-down menu. 
+1. Select **Artifacts**, and then select your feed from the drop-down menu. Once publishing is completed successfully, your package should be available in your feed.
 
     :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published universal package.":::
 
-## Download universal packages
+## Download packages
 
 To download a universal package using Azure CLI, run the following command in an elevated command prompt.
 
-```azurecli
-az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME>  --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
-```
+- Organization-scoped feed:
+
+    ```azurecli
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME>  --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
+    ```
+
+- Project-scoped feed:
+
+    ```azurecli
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
+    ```
 
 ## Download specific files
 
