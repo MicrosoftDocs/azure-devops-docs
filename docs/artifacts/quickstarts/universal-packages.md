@@ -64,7 +64,7 @@ Universal Packages offer developers the capability to store an extensive array o
 
 ## Publish packages
 
-To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and non-consecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
+To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and nonconsecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
 - Organization-scoped feed:
 
@@ -93,7 +93,7 @@ To download a universal package using Azure CLI, run the following command in an
 - Organization-scoped feed:
 
     ```azurecli
-    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME>  --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
     ```
 
 - Project-scoped feed:
@@ -102,34 +102,40 @@ To download a universal package using Azure CLI, run the following command in an
     az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
     ```
 
-## Download specific files
+### Download specific files
 
-If you only want to download specific files, you can use the `--file-filter` parameter to download a subset of files.
+If you only want to download specific files, you can use the `--file-filter` parameter to download a subset of files. See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
 
-Example: `--file-filter *logs/*.log` would match any file ending with *logs* and with the extension *.log* (Example: build123_logs.log). See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
+Example: *--file-filter *logs/*.log* would match any file ending with *logs* and with the extension *.log* (Example: build123_logs.log). 
 
-```azurecli
-az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION>  --path <DOWNLOAD_PATH>  --file-filter <MATCH_PATTERN>
-```
+- Organization-scoped feed:
 
-## Download the latest version
+    ```azurecli
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
+    ```
+- Project-scoped feed:
 
-You can use wildcards to download the latest version of your Universal Packages.
+    ```azurecli
+    az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --project <PROJECT_NAME> --scope project --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH> --file-filter <MATCH_PATTERN>
+    ```
+
+### Download the latest version
+
+You can use wildcards `*` to download the latest version of your Universal Packages.
 
 **Examples**:
 
-- `--version '*'`: the latest version.
+- `--version '*'`: download the latest version.
 
-- `--version '1.*'`: the latest version with major 1.
+- `--version '1.*'`: download the latest version with major 1.
 
-- `--version '1.2.*'`: the latest patch release with major 1 and minor 2.  
+- `--version '1.2.*'`: download the latest patch release with major 1 and minor 2.
   
 > [!NOTE]
 > Wildcard patterns are not supported with pre-release versions (packages with a dash in their version number).
 
 ## Related articles
 
-- [Publish and download universal packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
-- [universal package task](/azure/devops/pipelines/tasks/reference/universal-packages-v0).
+- [Publish and download universal packages with Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md).
-- [Configure permissions](../feeds/feed-permissions.md)
+- [Configure feed permissions](../feeds/feed-permissions.md)
