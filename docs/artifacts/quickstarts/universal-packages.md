@@ -30,13 +30,13 @@ Universal Packages offer developers the capability to store an extensive array o
    az extension add --name azure-devops
    ```
 
-1. If you already have the Azure DevOps extension installed and wish to update it to the latest version, run the following command::
+2. If you already have the Azure DevOps extension installed and wish to update it to the latest version, run the following command::
 
    ```azurecli
    az extension update --name azure-devops
    ```
 
-1. Log in to Azure.
+3. Log in to Azure.
 
     ```azurecli
     az login
@@ -45,7 +45,7 @@ Universal Packages offer developers the capability to store an extensive array o
 > [!TIP]
 > To access tenants without subscriptions, run `az login --allow-no-subscription`.
 
-1. Set your project and organization as the CLI's default.
+4. Set your project and organization as the CLI's default.
 
     ```azurecli
     az devops configure --defaults project=<YOUR_PROJECT_NAME> organization=https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
@@ -60,7 +60,7 @@ Universal Packages offer developers the capability to store an extensive array o
     ```azurecli
     az devops login --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
     ```
-- - -
+***
 
 ## Publish packages
 
