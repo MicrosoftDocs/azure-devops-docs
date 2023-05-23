@@ -145,19 +145,7 @@ To publish a package to an external NuGet feed, you must first create a service 
 
 To publish a package to an external NuGet feed, add the following snippet to your YAML pipeline.
 
-```yaml
-- task: NuGetAuthenticate@0
-  inputs:
-    nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
-- task: NuGetCommand@2
-  inputs:
-    command: push
-    nuGetFeedType: external
-    versioningScheme: byEnvVar
-    versionEnvVar: <VERSION_ENVIRONMENT_VARIABLE>
-```
-
-**Example using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (NuGet.exe):
+**Using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (with NuGet.exe):
 
 ```yaml
   - task: NuGetAuthenticate@1
@@ -169,7 +157,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
     displayName: "Push"          
 ```
 
-**Example using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (dotnet):
+**Using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (with dotnet):
 
   ```yaml
     - task: NuGetAuthenticate@1
@@ -184,7 +172,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
   ```
 
 > [!NOTE]
-> The `ApiKey` is only used as a placeholder.
+> The `ApiKey` is required, but you can use any arbitrary value
 
 ::: moniker-end
 
