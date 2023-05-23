@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/24/2023
+  ms.date: 05/23/2023
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -201,7 +201,7 @@ sections:
           A: Yes. 
           - All organizations under the same billing Azure subscription are ordered. The ordering is consistent month to month, but it isn't configurable. 
           - The five free Basic users apply to the first organization on the list. Any remaining value carries over to other organizations. 
-          - Users get billed in the first organization they access and not again in any other organization.
+          - Users get billed in the first organization they're found in and not again in any other organization.
           - If there are any charges for an organization, then there's a separate line item for that organization on the detailed Azure bill. 
            
       - question: |
