@@ -80,6 +80,5 @@ You can use the Office Excel tools to find and resolve an error in a work item l
   
 ## Related articles
 
--  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
--  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
--  Connect Azure Boards to an Office client](track-work.md) 
+-  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)      
+-  [Connect Azure Boards to an Office client](track-work.md) 
