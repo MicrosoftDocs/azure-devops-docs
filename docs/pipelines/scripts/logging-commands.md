@@ -153,7 +153,6 @@ exit 1
 Write-Host "##vso[task.logissue type=error]Something went very wrong."
 exit 1
 ```
-
 ---
 
 > [!TIP]
@@ -238,9 +237,22 @@ Finish the timeline record for the current task, set task result and current ope
    
 #### Example
 
+Log a task as succeeded. 
+
 ```
 ##vso[task.complete result=Succeeded;]DONE
 ```
+
+Set a task as failed. As an alternative, you can also use `exit 1`.
+
+```yaml
+- bash: |
+    if [ -z "$SOLUTION" ]; then
+      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
+      echo "##vso[task.complete result=Failed;]"
+    fi
+```
+
 
 ### LogDetail: Create or update a timeline record for a task
 
