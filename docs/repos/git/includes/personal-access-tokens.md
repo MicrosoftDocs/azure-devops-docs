@@ -315,7 +315,7 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
 3. Edit the token name, token expiration, or the scope of access that's associated with the token, and then select **Save**.
 
-   ![Screenshot showing saved PAT.](/azure/devops/repos/git/media/modify-pat.png)
+    :::image type="content" source="../media/modify-pat.png" alt-text="Screenshot showing modified PAT.":::
 
 <!---
 
