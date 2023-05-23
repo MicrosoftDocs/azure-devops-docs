@@ -28,9 +28,9 @@ Each feature is linked to an article where you can learn more about a particular
 
 ## Initiatives
 
-### GitHub Advanced Security for Azure DevOps (currently in private preview, coming to public preview in 2023 Q2)
+### GitHub Advanced Security for Azure DevOps
 
-GitHub Advanced Security (GHAS) for Azure DevOps is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
+GitHub Advanced Security (GHAS) for Azure DevOps, now in public preview, is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
 - Secret Scanning to detect credentials and other secrets that may have already been committed to your Azure Repos, as well as push protection to prevent developers from accidentally pushing new secrets.
 - Dependency Scanning to identify any known vulnerable open-source packages you may be using, and offer straightforward guidance on how to upgrade those packages to fix the vulnerabilities.
 - Code Scanning with CodeQL, a powerful static analysis engine that identifies deep application security vulnerabilities in your source code.
