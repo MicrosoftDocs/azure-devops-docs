@@ -313,7 +313,7 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
     :::image type="content" source="/azure/devops/repos/git/media/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
 
-3. Edit the token name, organization it applies to, token expiration, or the scope of access that's associated with the token, and then select **Save**.
+3. Edit the token name, token expiration, or the scope of access that's associated with the token, and then select **Save**.
 
    ![Screenshot showing saved PAT.](/azure/devops/repos/git/media/modify-pat.png)
 
