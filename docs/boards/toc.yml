@@ -84,10 +84,7 @@
         href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
       - name: Resolve Excel data validation errors
         displayName: error checking in Excel, error checking, invalid links
-        href: backlogs/office/resolve-excel-data-validation-errors.md
-      - name: Resolve invalid links in an Excel tree list
-        displayName: duplicate titles, disconnected, sorted tree, locked
-        href: backlogs/office/resolve-excel-invalid-links-tree-list.md
+        href: backlogs/office/resolve-excel-data-validation-errors.md 
     - name: Project portal & process guidance (Deprecated)
       items:
       - name: Configure or add a project portal

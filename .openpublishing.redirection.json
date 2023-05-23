@@ -254,6 +254,11 @@
       "source_path": "docs/boards/report/dashboards/velocity-guidance.md",
       "redirect_url": "/azure/devops/report/dashboards/team-velocity",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-invalid-links-tree-list.md",
+      "redirect_url": "/azure/devops/boards/backlogs/office/faqs",
+      "redirect_document_id": false
     }
   ]
 }
