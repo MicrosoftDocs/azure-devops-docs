@@ -157,7 +157,7 @@ exit 1
 
 > [!TIP]
 > 
-> `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build.
+> `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build. As an alternative, you can also use `task.logissue type=error`.
 
 #### Example: Log a warning about a specific place in a file
 
