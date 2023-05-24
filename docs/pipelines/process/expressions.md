@@ -658,11 +658,12 @@ Expressed as JSON, it would look like:
 }
 ```
 
-Use this form of `dependencies` to map in variables or check conditions at a stage level.
-In this example, Stage B runs whether Stage A is successful or skipped.
-
 > [!NOTE]
 > The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+
+Use this form of `dependencies` to map in variables or check conditions at a stage level.
+
+In this example, there are two stages, A and B. Stage A has the condition `false` and won't ever run as a result. Stage B runs if the result of Stage A is `Succeeded`, `SucceededWithIssues`, or `Skipped`. Stage B will run because Stage A was skipped. 
 
 ```yaml
 stages:
@@ -681,7 +682,8 @@ stages:
 ```
 
 Stages can also use output variables from another stage.
-In this example, Stage B depends on a variable in Stage A.
+In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs. Not that `stageDependencies` is used in the condition because you are referring to an output variable in a different stage. 
+
 
 ```yaml
 stages:
@@ -695,7 +697,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
+  condition: and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
@@ -708,6 +710,7 @@ stages:
 > If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
 ### Job to job dependencies within one stage
+
 At the job level within a single stage, the `dependencies` data doesn't contain stage-level information.
 
 ```json
