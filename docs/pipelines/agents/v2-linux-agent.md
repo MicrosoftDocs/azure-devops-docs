@@ -50,7 +50,7 @@ We support the following subset of .NET Core supported distributions:
   - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 20.04, 18.04, 16.04
-  - CBL-Mariner 1.0 (see note 3)
+  - Azure Linux 1.0 (see note 3)
 - ARM32 (see note 2)
   - Debian 9
   - Ubuntu 18.04
@@ -69,7 +69,7 @@ We support the following subset of .NET Core supported distributions:
 > Run `uname -a` to see your Linux distro's instruction set.
 
 > [!NOTE]
-> Mariner OS distribution currently has partial support from the Azure DevOps Agent.
+> Azure Linux OS distribution currently has partial support from the Azure DevOps Agent.
 > We are providing a mechanism for detection of this OS distribution in `installdependencies.sh` script, but due to lack of support from the [.Net Core](https://github.com/dotnet/core/issues/6379) side, we couldn't guarantee full operability of all agent functions when running on this OS distribution.
 
 Regardless of your platform, you will need to install Git 2.9.0 or higher.
