@@ -56,27 +56,23 @@ From your pipeline definition, add the **NuGet task** to your pipeline to create
 
 ## Package versioning
 
-NuGet packages are identified by their names and version numbers. A recommended approach to versioning your packages is to use Semantic Versioning. Semantic versions have three numeric components: **Major**, **Minor**, and **Patch**. 
+NuGet packages are distinguished by their names and version numbers. Employing Semantic Versioning is a recommended strategy for effectively managing package versions. Semantic versions consist of three numeric components: Major, Minor, and Patch. 
 
-The **patch** is usually incremented after fixing a bug (E.g. **1.0.0** -> **1.0.1**). When you release a new backward-compatible feature, you increment the minor version and reset the patch version to 0 (E.g. **1.4.17** -> **1.5.0**). When you make a backward-incompatible change, you increment the major version and reset the minor and patch versions to 0 (E.g. **2.6.5** -> **3.0.0**).
+The *Patch* is usually incremented after fixing a bug. When you release a new backward-compatible feature, you increment the *Minor* version and reset the *Patch* version to 0, and when you make a backward-incompatible change, you increment the *Major* version and reset the *Minor* and *Patch* versions to 0.
 
-With Semantic Versioning, you can also use prerelease labels to tag your packages. To use prelease labels, enter a hyphen followed by whatever letter(s) or number(s) you choose: E.g.**1.0.0-beta**.
+With Semantic Versioning, you can also use prerelease labels to tag your packages. To do so, enter a hyphen followed by your prerelease tag: E.g.**1.0.0-beta**. Semantic Versioning is supported in Azure Pipelines and can be configured in your NuGet task as follows:
 
-Semantic Versioning is supported in Azure Pipelines and can be configured in your NuGet task:
+- **Use the date and time** (Classic): **byPrereleaseNumber** (YAML). Your package version will be in the format: *Major.Minor.Patch-ci-datetime* where you have the flexibility to choose the values of your Major, Minor, and Patch.
 
-- **Use the same versioning scheme for your builds and packages**: 
-   - `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in your pipeline. This format will automatically increment the build number and the package version with a new patch number. It will keep the major and minor versions constant, until you change them manually.
-   - `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in your pipeline. This format will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
+- **Use an environment variable** (Classic): **byEnvVar** (YAML). Your package version will be set to the value of the environment variable you specify. 
 
-- **Use a custom versioning scheme**. You can customize the major, minor, and patch versions for your packages and let the NuGet task generate a unique prerelease label based on the date and time. Format: *Major.Minor.Patch-ci-datetime*. See [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
+- **Use the build number** (Classic): **byBuildNumber** (YAML). Your package version will be set to the build number. Make sure you set your build number format under your pipeline **Options** to `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`. To do this in YAML, add a property `name:` at the root of your pipeline and add your format. 
 
-- **Use a script in your build pipeline to generate the version**.
+The following example shows how to use the date and time versioning option. This will generate a SemVer compliant version formatted as: `Major.Minor.Patch-ci-datetime`.
 
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
-
-This example shows how to use the date and time as the prerelease label. This will generate a SemVer compliant version formatted as: `Major.Minor.Patch-ci-datetime`.
 
 ```yaml
 variables:
@@ -101,9 +97,9 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 
-From the **NuGet task** in your pipeline definition, select **Pack options**, and then select your preferred **Automatic package versioning**.
+1. From your classic pipeline definition, select your NuGet task, select **Pack options** and then select **Use the date and time**.
 
-:::image type="content" source="media/package-versioning-classic.png" alt-text="Screenshot showing how to enable package versioning in the NuGet task.":::
+    :::image type="content" source="media/package-versioning-classic.png" alt-text="Screenshot showing how to enable package versioning in the NuGet task.":::
 
 - - -
 
