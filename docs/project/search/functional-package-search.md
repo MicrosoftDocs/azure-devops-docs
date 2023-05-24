@@ -7,13 +7,13 @@ ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 11/28/2022
 ---
 
 # Search packages across your feeds
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
 
