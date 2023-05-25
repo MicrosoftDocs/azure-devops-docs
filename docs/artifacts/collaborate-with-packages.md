@@ -57,25 +57,22 @@ However, package composition does come with its own set of challenges. So far, w
 
 ## What should you use
 
-In general, we've seen large teams be most successful when they use a mixture of composition strategies. To help determine what's right for your codebase, first draw your product's dependency graph and start to group your components into sets of related components.
+In general, we've seen large teams be most successful when they use a mixture of composition strategies. To help determine what's right for your codebase, begin by mapping out the dependency graph of your product, and start to group your components into sets of related components.
 
-For example, you may have a set of components that make up your framework, including common controls, etc., and a set of components that make up your user-facing service.
-Then, for each set of related components, ask these questions:
+For instance you might have a collection of components constituting your framework, and another set of component forming your user-facing service.
+Then, for each group of related components, ask these questions:
 
-- Will my teams often make spanning check-ins across the sets I've created?
+- Can I anticipate frequent check-ins across the sets I've established for my teams?
 
 - Is a single team responsible for the entire set?
 
 - For a single set, is there a shared release cadence?
 
-At a high level, we've found the most success when **source composition** is used for related projects that are worked on by a single team (or a group of related teams) and **binary composition** is used for open-source software, externals (components from faraway or isolated teams), and isolated shared components.
+In our experience, we have found that using  **source composition** is most effective for related projects handled by a single team or a group of related teams. Conversely, **binary composition** proves advantageous for for open-source software, external dependencies (components from distant or isolated teams), and independent shared components.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get started with Azure Artifacts](start-using-azure-artifacts.md)
-> [NuGet quickstart](get-started-nuget.md)
-> [npm quickstart](get-started-npm.md)
-> [Maven quickstart](get-started-maven.md)
-> [Python quickstart](quickstarts/python-packages.md)
-> [Universal packages quickstart](quickstarts/universal-packages.md)
+> [Publish and restore NuGet packages](/nuget/publish.md)
+> [Configure feed permissions](/feeds/feed-permissions.md)
+> [Set up upstream sources](/how-to/set-up-upstream-sources.md)
