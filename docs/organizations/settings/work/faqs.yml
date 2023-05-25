@@ -43,7 +43,6 @@ sections:
           - [Modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
           - [Iteration Paths](../set-iteration-paths-sprints.md)
           - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
-          - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
             
           To grant permissions to an individual member or group to perform the following tasks, you must set the corresponding project-level permissions to **Allow**. See [Change project-level permissions](../../security/change-project-level-permissions.md).
           ::: moniker range="azure-devops"

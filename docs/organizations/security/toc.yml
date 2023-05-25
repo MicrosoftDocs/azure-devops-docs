@@ -188,8 +188,6 @@
     href: ../settings/add-team-administrator.md?toc=/azure/devops/organizations/security/toc.json 
   - name: Set query permissions 
     href: ../../boards/queries/set-query-permissions.md?toc=/azure/devops/organizations/security/toc.json 
-  - name: Edit plan permissions
-    href: ../../boards/plans/edit-delivery-plan-permissions.md?toc=/azure/devops/organizations/security/toc.json 
 - name: Secure Azure Repos
   items:
   - name: Default Git repository and branch permissions
