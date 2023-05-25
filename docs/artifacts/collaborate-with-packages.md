@@ -1,21 +1,21 @@
 ---
-title: Source and package componentization
-description: Using Azure Artifacts to facilitate collaboration
+title: Source and package composition
+description: Use Azure Artifacts to facilitate collaboration
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.service: azure-devops-artifacts
-ms.date: 01/13/2022
+ms.date: 05/25/2023
 ms.topic: reference
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Collaborate more and build faster with componentization
+# Accelerate collaboration and Agile development with componentization
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Your product is successful, your organization is growing, and it's time to scale up your codebase to match this success. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 
-- How do my teams effectively share reusable components?
+- How can my teams efficiently share reusable components?
 
 - How do I enable my feature teams to iterate rapidly without stepping on other teams' work?
 
@@ -27,9 +27,9 @@ In this article, we'll explore how binary composition through Azure Artifacts ca
 
 ## Components and composition
 
-Componentization is the act of separating and structuring of your product into a set of components. Most .NET projects already have some notion of components in the form of the projects in your solution. For example, a simple website might have a front-end component, a data access component, and a model/data storage component.
+Componentization is the process of dividing and organizing your product into distinct components. Most .NET projects already have some notion of components in the form of the projects within the solution. For instance, a basic website may consist of a front-end component, a data access component, and a model/data storage component.
 
-## Source componentization
+## Source composition
 
 As your product grows, the solution and the project model can become inefficient. Changes take longer to integrate and are harder to merge, the build gets slower, and components start to grow from a single project to multiple projects. Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions.
 
@@ -39,26 +39,21 @@ Unfortunately, these project references start to break down when multiple soluti
 
 Accordingly, these binaries now need to be built and made available to solution A before it can build successfully. There are a few ways to do that:
 
-- You can check them into source control. Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance. If you start to work in branches, multiple teams can end up introducing the same binary at different versions, creating nasty merge conflicts at the root of the tree.
+- You can check them into source control. Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance. If you start to work in branches, multiple teams can end up introducing the same binary at different versions, leading to challenging merge conflicts.
 
-- You can host them on a file share somewhere. File shares have a few limitations: there's no index for quick lookups, and there's no protection against overwriting a version later.
+- Alternatively, you can host them on a file share, although this approach comes with certain limitations. File shares lack an index for quick lookups, and they do not provide protection against overwriting a version in the future.
 
-## Package componentization
+## Package composition
 
 Packages address many of the challenges of referencing binaries. Instead of checking them into source, you can have a solution B produce its binaries as NuGet packages that another solution A can then consume. If solution A and solution B are maintained as separate components, where simultaneous changes across A and B are rare, package composition is a great way to manage the dependency of A on B. Package composition allows B to iterate on its own cadence, while A is free to get updates from B when A's schedule permits, and it allows multiple teams to iterate and update solution B without affecting solution A (or other solutions C or D).
 
-Package composition isn't without its challenges though. Thus far, we've looked at a simple example. However, scaling package composition up to the size of a large codebase (something like Windows or Bing) can cause a series of challenges:
+However, package composition does come with its own set of challenges. So far, we have examined a straightforward example. Scaling package composition up to the size of a large codebase (something like Windows or Bing) can cause a series of challenges:
 
 - Understanding the impact of breaking changes in a component low in the dependency graph becomes very challenging.
 
-- **Diamond dependencies** can become a significant roadblock to agility.
+- [Diamond dependencies](/dotnet/standard/library-guidance/dependencies#diamond-dependencies) can become a significant roadblock to agility. In a diamond dependency, components B and C both depend on a shared component A, while component D depends on both B and C. When component A introduces a new version with breaking changes, if B updates to the new version but C does not, D cannot take B's updates without introducing a dependency conflict. In this simple example, a conversation with C may be all that's needed to resolve the conflict. However, in a complex graph, diamonds can quickly become unresolvable.
 
-In a diamond dependency, components B and C both depend on a shared component A, and D depends on B and C.
-Component A releases a new version with breaking changes. If B updates, but C does not, D cannot take B's updates without introducing a dependency conflict.
-In this simple example, a conversation with C may be all that's needed to resolve the conflict. However, in a complex graph, diamonds can quickly become unresolvable.
-
-- If changes must be made across two components that are composed with packages, the dev inner loop is much slower. When A is updated, it must be rebuilt, repackaged, and republished.
-B must then update to the newly published version to validate A's change. Source composition, which can build A and B simultaneously, will always provide a faster inner loop for developers.
+- When modifications need to be applied to two components that are composed using packages, the developer's iteration cycle becomes considerably slower. If Component A is updated, it necessitates rebuilding, repackaging, and republishing it. Subsequently, component B must update to the recently published version to validate the change made in component A. Employing source composition, which allows for simultaneous building of Component A and B, will consistently deliver a quicker iteration cycle for developers.
 
 ## What should you use
 
