@@ -259,6 +259,11 @@
       "source_path": "docs/boards/backlogs/office/resolve-excel-invalid-links-tree-list.md",
       "redirect_url": "/azure/devops/boards/backlogs/office/faqs",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/plans/edit-delivery-plans-permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/set-permissions-access-work-tracking",
+      "redirect_document_id": false
     }
   ]
 }

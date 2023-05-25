@@ -57,7 +57,7 @@ In this article you'll learn:
   - Be a member of the Project Administrators or Project Collection Administrators group
   - Be granted explicit permission through the plan's Security dialog. 
  
-  For details, see [Edit or manage Delivery Plan permissions](../plans/edit-delivery-plan-permissions.md).  
+  For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).  
 
 ## Review a plan with your teams
 
