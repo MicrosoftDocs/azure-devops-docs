@@ -1,6 +1,6 @@
 ---
 title: Create your first pipeline
-ms.custom: seodec18, devx-track-python, devx-track-azurecli, py-fresh-zinc
+ms.custom: seodec18, devx-track-azurecli, py-fresh-zinc
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996

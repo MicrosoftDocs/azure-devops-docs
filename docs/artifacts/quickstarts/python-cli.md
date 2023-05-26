@@ -3,7 +3,7 @@ title: Publish and consume Python packages using the CLI
 description: Publish and consume Python packages from the command-line interface
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, devx-track-python
 ms.date: 04/17/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"
