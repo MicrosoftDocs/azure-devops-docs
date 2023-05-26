@@ -682,7 +682,7 @@ stages:
 ```
 
 Stages can also use output variables from another stage.
-In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs. Not that `stageDependencies` is used in the condition because you are referring to an output variable in a different stage. 
+In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs. Note that `stageDependencies` is used in the condition because you are referring to an output variable in a different stage. 
 
 
 ```yaml
