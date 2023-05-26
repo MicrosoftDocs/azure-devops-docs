@@ -727,18 +727,19 @@ At the job level within a single stage, the `dependencies` data doesn't contain 
 }
 ```
 
-In this example, Job A will always be skipped and Job B will run.
-Job C will run, since all of its dependencies either succeed or are skipped.
+In this example, there are three jobs (a, b, and c). Job a will always be skipped because of `condition: false`. 
+Job b runs because there are no associated conditions. 
+Job c runs because all of its dependencies either succeed (job b) or are skipped (job a).
 
 ```yaml
 jobs:
 - job: a
   condition: false
   steps:
-  - script: echo Job A
+  - script: echo Job a
 - job: b
   steps:
-  - script: echo Job B
+  - script: echo Job b
 - job: c
   dependsOn:
   - a
@@ -750,7 +751,7 @@ jobs:
       in(dependencies.b.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
     )
   steps:
-  - script: echo Job C
+  - script: echo Job c
 ```
 
 In this example, Job B depends on an output variable from Job A.
@@ -802,11 +803,6 @@ In this example, job B1 will run if job A1 is skipped.
 Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
-trigger: none
-
-pool:
-  vmImage: 'ubuntu-latest'
-
 stages:
 - stage: A
   jobs:
@@ -828,7 +824,6 @@ stages:
     condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
     steps:
      - script: echo hello from Job B2
-
 ```
 ::: moniker-end
 
@@ -871,30 +866,7 @@ stages:
 
 ::: moniker range=">=azure-devops-2020"
 
-### Stage depending on job output
-
-If no changes are required after a build, you might want to skip a stage in a pipeline under certain conditions. An example is when you're using Terraform Plan, and you want to trigger approval and apply only when the plan contains changes.
-
-When you use this condition on a stage, you must use the `dependencies` variable, not `stageDependencies`.
-
-The following example is a simple script that sets a variable (use your actual information from Terraform Plan) in a step in a stage, and then invokes the second stage only if the variable has a specific value.
-
-```yaml
-stages:
-- stage: plan_dev
-  jobs:
-  - job: terraform_plan_dev
-    steps:
-    - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
-      name: terraform_plan
-- stage: apply_dev
-  dependsOn: plan_dev
-  condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
-  jobs:
-  - job: part_b
-    steps:
-    - bash: echo "BA"
-```
+### Deployment job output variables
 
 If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
 
@@ -924,7 +896,9 @@ stages:
   - 'build'
   condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
   jobs:
-    ...
+    - job: A
+      steps:
+        - script: echo Hello from job A
 ```
 
 In the example above, the condition references an environment and not an environment resource. To reference an environment resource, you'll need to add the environment resource name to the dependencies condition. In the following example, condition references an environment virtual machine resource named `vmtest`. 
@@ -955,10 +929,11 @@ stages:
 - stage: test
   dependsOn:
   - 'build'
-  condition: eq(dependencies.build.outputs['build_job.Deploy_winVM2.setRunTests.runTests']
-, 'true')
+  condition: eq(dependencies.build.outputs['build_job.Deploy_winVM2.setRunTests.runTests'], 'true')
   jobs:
-    ...
+  - job: A
+      steps:
+        - script: echo Hello from job A
 ```
 
 ::: moniker-end
