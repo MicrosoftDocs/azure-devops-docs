@@ -932,8 +932,8 @@ stages:
   condition: eq(dependencies.build.outputs['build_job.Deploy_winVM2.setRunTests.runTests'], 'true')
   jobs:
   - job: A
-      steps:
-        - script: echo Hello from job A
+    steps:
+     - script: echo Hello from job A
 ```
 
 ::: moniker-end
