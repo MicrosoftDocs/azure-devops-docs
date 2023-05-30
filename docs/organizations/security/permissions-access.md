@@ -126,7 +126,10 @@ You can use [Advanced Security](../../repos/security/configure-github-advanced-s
 
 ::: moniker-end
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
+
+[!INCLUDE [temp](includes/advanced-security.md)]
+
 
 ## Code: Source control
 
