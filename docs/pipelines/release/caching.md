@@ -3,6 +3,7 @@ title: Pipeline caching
 description: Improve pipeline performance by caching files, like dependencies, between runs
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
+ms.custom: devx-track-dotnet, devx-track-js, devx-track-python
 ms.manager: adandree
 ms.date: 10/03/2022
 monikerRange: azure-devops

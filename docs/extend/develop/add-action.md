@@ -1,5 +1,6 @@
 ---
 ms.subservice: azure-devops-ecosystem
+ms.custom: devx-track-js
 title: Add an Action | Extensions for Azure DevOps
 description: Add an action for your extension that extends Azure DevOps.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
