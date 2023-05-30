@@ -69,7 +69,7 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
 	- [Set WIP limits](wip-limits.md)  
 	- [Set Definition of Done](definition-of-done.md)  
 	- [Add swimlanes](expedite-work.md)
-	- [Define card reordering](reorder-cards.md)
+	- [Reorder cards](customize-cards.md#reorder-cards)
 	- [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md)
 	- [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
 - Configure card displays:
