@@ -32,7 +32,7 @@ A constraint in the system that limits the flow of work. Identifying bottlenecks
  
 ## Card reordering 
 
-Card reordering is a configurable setting for a team's Kanban board that either forces cards to maintain the backlog priority when dragged and dropped on the board, or allows the priority order to change. Learn more: [Reorder cards](reorder-cards.md). 
+Card reordering is a configurable setting for a team's Kanban board that either forces cards to maintain the backlog priority when dragged and dropped on the board, or allows the priority order to change. For more information, see [Reorder cards](customize-cards.md#reorder-cards). 
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
 
