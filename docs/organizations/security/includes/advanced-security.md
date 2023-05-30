@@ -76,8 +76,6 @@ ms.subservice: azure-devops-repos-adv-sec
       
    :::column-end:::
 :::row-end:::
-::: moniker-end
-
 ---
 
  
