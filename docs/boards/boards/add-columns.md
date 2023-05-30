@@ -270,7 +270,7 @@ Before you split columns, ensure you [mapped each stage of your team's process t
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 	
-:::image type="content" source="media/columns/split-columns.png" alt-text="Screenshot of Kanban board settings page, Split columns.":::
+   :::image type="content" source="media/columns/split-columns.png" alt-text="Screenshot of Kanban board settings page, Split columns.":::
 
 1. When you're done, choose **Save and close**.
 
