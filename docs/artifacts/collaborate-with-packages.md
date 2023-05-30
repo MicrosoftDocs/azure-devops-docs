@@ -68,7 +68,7 @@ Then, for each group of related components, ask these questions:
 
 - For a single set, is there a shared release cadence?
 
-In our experience, we have found that using  **source composition** is most effective for related projects handled by a single team or a group of related teams. Conversely, **binary composition** proves advantageous for for open-source software, external dependencies (components from distant or isolated teams), and independent shared components.
+In our experience, we have found that using  **source composition** is most effective for related projects handled by a single team or a group of related teams. Conversely, **binary composition** proves advantageous for open-source software, external dependencies (components from distant or isolated teams), and independent shared components.
 
 ## Next steps
 
