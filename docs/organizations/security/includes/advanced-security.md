@@ -1,14 +1,11 @@
 ---
 ms.service: azure-devops-repos
-ms.author: chcomley
-author: chcomley
+ms.author: laurajiang
+author: laurajiang
 ms.topic: include
-ms.date: 04/15/2021
-ms.subservice: azure-devops-repos-git
+ms.date: 05/30/2023
+ms.subservice: azure-devops-repos-adv-sec
 ---
-
-<a name="pcbs-has-read-by-default"></a>
-
 
 :::row:::
    :::column span="2":::
