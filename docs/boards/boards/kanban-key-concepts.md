@@ -32,7 +32,7 @@ A constraint in the system that limits the flow of work. Identifying bottlenecks
  
 ## Card reordering 
 
-Card reordering is a configurable setting for a team's Kanban board that either forces cards to maintain the backlog priority when dragged and dropped on the board, or allows the priority order to change. Learn more: [Reorder cards](reorder-cards.md). 
+Card reordering is a configurable setting for a team's Kanban board that either forces cards to maintain the backlog priority when dragged and dropped on the board, or allows the priority order to change. For more information, see [Reorder cards](customize-cards.md#reorder-cards). 
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
 
@@ -130,7 +130,7 @@ Work that has been started but isn't done or completed.
 
 ## Workflow states
 
-Workflow states are defined for each work item type to support tracking the status of a work item, from its creation to it's completion. These states define the workflow process: actions, steps, or stages that a piece of work goes through from inception to completion.  
+Workflow states are defined for each work item type to support tracking the status of a work item, from its creation to its completion. These states define the workflow process: actions, steps, or stages that a piece of work goes through from inception to completion.  
 
 The State and Reason fields differ depending on the work item type and process selected for the project. 
 

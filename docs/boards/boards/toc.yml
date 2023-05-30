@@ -3,7 +3,7 @@
 - name: Kanban board quickstart
   href: kanban-quickstart.md
 - name: Reorder cards
-  href: reorder-cards.md
+  href: customize-cards.md
 - name: Add tasks or child items as checklists
   href: add-task-checklists.md
   displayname: tasks, subtasks, todo lists, bugs, tests, features, epics, user stories, product backlog items, requirements, annotations, parent

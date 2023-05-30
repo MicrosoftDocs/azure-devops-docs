@@ -316,7 +316,7 @@ The following tables describe the type of events (or actions) that are available
 |----------|-----------|----------|
 | Token.PatCreateEvent	| Create | Personal Access Token "{DisplayName}" was created. |
 | Token.PatExpiredEvent	| Modify | Personal Access Token "{DisplayName}" expired. |
-| Token.PatPublicDiscoveryEvent | Access Personal Access Token "{DisplayName}" associated with user "{OwnerName}" was discovered in a public repository. |
+| Token.PatPublicDiscoveryEvent | Access | Personal Access Token "{DisplayName}" associated with user "{OwnerName}" was discovered in a public repository. |
 | Token.PatRevokeEvent	| Remove	| Personal Access Token "{DisplayName}" was revoked. |
 | Token.PatSystemRevokeEvent	| Remove |	Personal Access Token "{DisplayName}" associated with user "{OwnerName}" was revoked by the system. |
 | Token.PatUpdateEvent	| Modify	| Personal Access Token "{DisplayName}" was updated. |
