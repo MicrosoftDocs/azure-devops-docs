@@ -159,12 +159,6 @@ You can customize cards that appear on the Kanban board for your product backlog
  
 You can directly edit a field displayed on a card without having to open it, except for read-only fields like the Change By and Changed Date fields. This quick update feature is useful when you need to update many work items at once. For example, you can add estimates for backlog items on the Kanban board. 
 
-<!---
-To change the Title, choose the pencil icon in the upper-right corner. 
-Here we change the Assigned To field. 
-![Kanban board, assign a work item.](media/ALM_CC_UpdateFieldOnCard.png) 
---> 
-
 ::: moniker range=">= azure-devops-2019"
 You can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
@@ -412,7 +406,7 @@ From a card on the Kanban board, you can go to the underlying test plan and test
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
 
-![Reorder cards while changing columns](media/8_7_02.gif)
+![GIF Screenshot showing reordering cards while changing columns](media/8_7_02.gif)
 
 ::: moniker range=">= azure-devops-2022"
 In addition to the dynamic card reordering, you can also move a card to a specific column position.  
