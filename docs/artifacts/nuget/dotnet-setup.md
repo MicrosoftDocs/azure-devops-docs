@@ -2,6 +2,7 @@
 title: Connect to Azure Artifacts feeds - dotnet
 description: How to connect to an Azure Artifacts feed - dotnet
 ms.service: azure-devops-artifacts
+ms.custom: devx-track-dotnet
 ms.topic: conceptual
 ms.date: 07/12/2022
 monikerRange: '<= azure-devops'
