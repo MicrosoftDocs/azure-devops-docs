@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/03/2023
+ms.date: 05/30/2023
 ---
  
 # Customize cards on a Kanban board  
@@ -53,13 +53,7 @@ In the following card, these options are set for the bug work item type:
 
 ## Card customization options  
 
-You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team.  
-- *Does your team like to refer to work items by their ID?* 
-- *Do they want to see estimates?* 
-- *Do they want to highlight work items according to set criteria?* 
-- *Or, will just the bare bones of title and assignment suffice?* 
-
-Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban board. Also, add fields with information that you can use to filter the board. 
+Show fields on cards based on what your team frequently refers to or updates when using the Kanban board. You can also add fields with information that you can use to filter the board. 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -77,77 +71,34 @@ Your best bet is to show fields on cards based on what your team frequently refe
 
 Once you open the Settings dialog for the Kanban board, choose one of the following tabs to set your customization options. 
 
-:::row:::
-   :::column span="1":::
-      **Settings tab** 
-   :::column-end:::
-   :::column span="3":::
-      **Use to...**
-   :::column-end:::
-:::row-end:::
----
 ::: moniker range=">= azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **[Fields](#fields)** 
-   :::column-end:::
-   :::column span="3":::
-      Add or remove fields from cards.  
-      Includes adding the **Parent** field to cards.
-   :::column-end:::
-:::row-end:::
+
+|Settings tab |Customization action  |
+|---------|---------|
+|**[Fields](#fields)**  | Add or remove fields from cards.
+Includes adding the **Parent** field to cards.        |
+|**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
+|**[Tag colors](#color-tags)**      | Specify a tag color and enable or disable a tag color.        |
+|**[Annotations](#annotations)**   | 
+Enable or disable annotations to appear on cards.        |
+|**[Tests](#tests)**    |Configure how you want tests to appear and behave on the cards.         |
+|**[Card reordering](#reorder-cards)**    | 
+Choose expected behavior when reordering cards on the board.        |
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **[Fields](#fields)** 
-   :::column-end:::
-   :::column span="3":::
-      Add or remove fields from cards. 
-   :::column-end:::
-:::row-end:::
+
+::: moniker range="<= azure-devops-2019"
+
+|Settings tab |Customization action  |
+|---------|---------|
+|**[Fields](#fields)**  | Add or remove fields from cards.      |
+|**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
+|**[Tag colors](#color-tags)**      | Specify a tag color and enable or disable a tag color.        |
+|**[Annotations](#annotations)**   | 
+Enable or disable annotations to appear on cards.        |
+|**[Tests](#tests)**    |Configure how you want tests to appear and behave on the cards.         |
+|**[Card reordering](#reorder-cards)**    | 
+Choose expected behavior when reordering cards on the board.        |
 ::: moniker-end
-:::row:::
-   :::column span="1":::
-      **[Styles](#style-rule)** 
-   :::column-end:::
-   :::column span="3":::
-      Add styling rules to change card color and title style based on field criteria. 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **[Tag colors](#color-tags)** 
-   :::column-end:::
-   :::column span="3":::
-      Specify a tag color, and enable or disable a tag color. 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **[Annotations](#annotations)** 
-   :::column-end:::
-   :::column span="3":::
-      Enable or disable annotations to appear on cards. 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **[Tests](#tests)** 
-   :::column-end:::
-   :::column span="3":::
-      Configure how you want tests to appear and behave on the cards.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **[Card reordering](reorder-cards.md)** 
-   :::column-end:::
-   :::column span="3":::
-      Choose expected behavior when reordering cards on the board.  
-   :::column-end:::
-:::row-end:::
----
 
 > [!NOTE]   
 > Each team can customize the cards for their Kanban board. Board settings are not inherited from other teams that they may share portions of area paths. 
@@ -207,12 +158,6 @@ You can customize cards that appear on the Kanban board for your product backlog
 ## Choose which fields appear on cards 
  
 You can directly edit a field displayed on a card without having to open it, except for read-only fields like the Change By and Changed Date fields. This quick update feature is useful when you need to update many work items at once. For example, you can add estimates for backlog items on the Kanban board. 
-
-<!---
-To change the Title, choose the pencil icon in the upper-right corner. 
-Here we change the Assigned To field. 
-![Kanban board, assign a work item.](media/ALM_CC_UpdateFieldOnCard.png) 
---> 
 
 ::: moniker range=">= azure-devops-2019"
 You can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
@@ -457,10 +402,78 @@ From a card on the Kanban board, you can go to the underlying test plan and test
 
 :::image type="content" source="media/c-cards-navigate-to-test-suite.png" alt-text="Screenshot showing Test selection from card on board.":::
 
+## Reorder cards
+
+You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
+
+![GIF Screenshot showing reordering cards while changing columns.](media/8_7_02.gif)
+
+::: moniker range=">= azure-devops-2022"
+In addition to the dynamic card reordering, you can also move a card to a specific column position.  
+::: moniker-end
+
+> [!NOTE]   
+> The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.
+
+::: moniker range=">= azure-devops-2022"
+### Move a card to a specific column position
+
+You can reorder the work items within a Kanban board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
+
+> [!NOTE]   
+> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+ 
+Specify a value within the range listed, which corresponds to the number of items currently in the column. 
+
+:::image type="content" source="media/reorder/move-to-position.png" alt-text="Screenshot of Boards, Move to column position dialog.":::
+::: moniker-end
+
+### Set the team preference for reordering cards
+
+If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. 
+
+::: moniker range=">= azure-devops-2019"
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Screenshot of open board settings for a team, vert nav.](../../organizations/settings/media/configure-team/open-board-settings.png)  
+
+2. Choose **Card reordering** and select from the two reordering  behaviors listed.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Settings, Card reordering dialog.](../../boards/boards/media/kanban-card-reordering-up1.png) 
+
+	The setting you choose applies to all active Kanban boards for your team.  
+
+3. When you're done with your changes, choose **Save**.
+::: moniker-end 
+
+::: moniker range="tfs-2018"
+1. [Screenshot of an open Kanban board.](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+2. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+
+	![Screenshot showing Kanban board, open common configuration settings.](media/add-columns-open-settings-ts.png)  
+
+3. Choose **Card reordering** and select from the two reordering behaviors listed.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot showing the Settings dialog and Card reordering dialog.](../../boards/boards/media/kanban-card-reordering-up1.png) 
+
+	The setting you choose applies to all active Kanban boards for your team.  
+
+4. When you're done with your changes, choose **Save**.
+
+	> [!TIP]
+	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+::: moniker-end
+
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
-- [Card reordering](reorder-cards.md)  
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Configure status badges](../github/configure-status-badges.md) 
@@ -471,7 +484,6 @@ From a card on the Kanban board, you can go to the underlying test plan and test
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-- [Card reordering](reorder-cards.md)  
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
