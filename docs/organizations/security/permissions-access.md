@@ -118,7 +118,15 @@ Stakeholders for private projects have no access to **Repos**. Stakeholders for 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="tfs-2018" 
+
+### Advanced Security 
+
+You can use [Advanced Security](../../repos/security/configure-github-advanced-security-features.md) to identify security vulnerabilities in your repository.
+
+::: moniker-end
+
+::: moniker range="advanced-security" 
 
 ## Code: Source control
 

@@ -58,6 +58,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
    - [Administer workspaces (Collection)](change-organization-collection-level-permissions.md)
+   - [Advanced Security](../../repos/security/github-advanced-security-permissions.md)
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
