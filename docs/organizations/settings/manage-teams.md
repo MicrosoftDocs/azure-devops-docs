@@ -186,7 +186,7 @@ For detailed information on each configuration option, you can explore the follo
       - [WIP limits](../../boards/boards/wip-limits.md)    
       - [Definition of Done](../../boards/boards/definition-of-done.md)   
       - [Add swimlanes](../../boards/boards/expedite-work.md)
-      - [Card reordering](../../boards/boards/reorder-cards.md)
+      - [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
       ::: moniker-end
       ::: moniker range="tfs-2018"
@@ -195,7 +195,7 @@ For detailed information on each configuration option, you can explore the follo
       - [WIP limits](../../boards/boards/wip-limits.md)    
       - [Definition of Done](../../boards/boards/definition-of-done.md)  
       - [Add swimlanes](../../boards/boards/expedite-work.md)
-      - [Card reordering](../../boards/boards/reorder-cards.md)
+      - [Reorder cards](../../boards/boards/customize-cards.md#reorder-cards)
       ::: moniker-end
       **Chart**
       - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)

@@ -543,7 +543,7 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 
 - [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Kanban board quickstart](../boards/kanban-quickstart.md) 
-- [Reorder cards](../boards/reorder-cards.md) 
+- [Reorder cards](../boards/customize-cards.md#reorder-cards) 
 - [Add tasks or child items as checklists](../boards/add-task-checklists.md) 
 - [Kanban best practices](../boards/best-practices-kanban.md) 
 
