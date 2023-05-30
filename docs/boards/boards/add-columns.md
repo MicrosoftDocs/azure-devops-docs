@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/22/2023
+ms.date: 05/30/2023
 ---
 
 # Manage columns on your Kanban board
@@ -18,9 +18,7 @@ ms.date: 03/22/2023
 
 The Kanban board helps you visualize your team's workflow, including the types of work and handoffs that occur regularly as your team progresses work items. Each column on your Kanban board corresponds to work that your team does before that stage is considered done.
 
-You can [configure and customize your columns](add-columns.md#add-or-rename-columns) to map to your team's workflow stages. Then, you can update status, reassign work, and reorder items to reflect changing priorities.
 
-![Screenshot of a Kanban board with customized columns.](media/ALM_AC_KanbanIntro.png)
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -41,13 +39,13 @@ You can [configure and customize your columns](add-columns.md#add-or-rename-colu
 
 Complete the following tasks, so you don't need to revisit your configuration.
 
-#### [Process administrator](#tab/process-administrator)
+#### [Process Administrator](#tab/process-administrator)
 
 - Add custom work item types that you want to appear on your backlog or board. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 - Customize your product and portfolio backlogs. Customization ensures that the chosen work item types appear on the backlogs and boards. For more information, see [Customize backlogs and boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 - Customize workflow states. Each workflow state appears as a column on the Kanban board. For details, see [Customize a workflow](../../organizations/settings/work/customize-process-workflow.md).
 
-#### [Team administrator](#tab/team-administrator)
+#### [Team Administrator](#tab/team-administrator)
 
 - Set the backlogs that you want to be active for your team. You only need to configure the Kanban boards of backlogs that your team plans to use. For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - Determine how to track bugs. Bugs might have different workflow states from other types of work items in the **Requirement** category. As a result, bugs must be mapped separately from other work item types. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
@@ -111,7 +109,7 @@ The Kanban board uses the **Work item type** and **State** categories to group w
 
 <a id="add-or-rename-columns"> </a>
 
-## Manage columns
+## Add and edit columns
 
 Column titles and choices depend on the [process](../work-items/guidance/choose-process.md) that you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
 
@@ -229,9 +227,83 @@ Drag an item up or down within a column.
 
 Use the [query tool](../queries/using-queries.md) to list a subset of work items for review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: `Work Item Type=User Story` and `State=Active`). 
 
-Specify [WIP limits](wip-limits.md), [split columns](split-columns.md), and [definition of done](definition-of-done.md)
+Specify [WIP limits](wip-limits.md), [split columns](#split-columns), and [definition of done](definition-of-done.md)
 
-### Do more tasks
+## Split columns
+
+Because each column corresponds to a stage of work, you can quickly see the number of items in progress at each stage. However, a lag often exists between when work gets moved into a column and when work actually starts. To counter that lag and reveal the actual state of work in progress, you can turn on split columns.  When they're split, each column contains two subcolumns, *Doing* and *Done*.
+
+![Kanban with split columns](media/kanban-board-split-columns-example-chart.png)  
+
+Split columns let your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
+
+With split columns, your team knows exactly how many items sit idle, waiting for work to begin. You have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process.
+
+### Move items into the *Doing* and *Done* columns 
+
+With split columns turned on, you update status of items on the Kanban board in the same way you have before. However, now when you've completed work on an item, you move it into *Done*, instead of a downstream column. When the next team member becomes free to work on the next high priority item, they pull it into *Doing* and reassign it to themselves.  
+
+For example, as a team member completes their coding task, they move the item into *Done* under the Develop column. When the tester is ready to test the item, they pull it into *Doing* under the Test column.  
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board showing split column](media/columns/split-columns-move-item.png)
+
+### Identify bottlenecks to drive toward a perfect flow scenario
+
+Split columns provide you even greater insight into how many items sit idle in a *Done* column. Your team can readily see when items pile up, which signal a potential bottleneck.   
+
+![Kanban board, split columns showing stacked items](media/kanban-board-identify-bottlenecks.png)  
+
+By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or few bottlenecks correspond to perfect flows. No item sits in a queue for any 
+
+### Choose which columns you want to split  
+
+Before you split columns, ensure you [mapped each stage of your team's process to a Kanban column](#map-workflow-states). Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage. 
+
+::: moniker range=">= azure-devops-2019"
+1. [Open your Kanban board](kanban-quickstart.md) and choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+
+   :::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot of Open board settings for a team, vertical navigation.":::
+
+2. Choose **Columns** and then choose the column tab that you want to split. Add a check mark in the checkbox to cause the column to split.  
+
+	> [!NOTE]   
+	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
+	
+   :::image type="content" source="media/columns/split-columns.png" alt-text="Screenshot of Kanban board settings page, Split columns.":::
+
+1. When you're done, choose **Save and close**.
+
+	> [!TIP]    
+	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
+
+::: moniker-end 
+
+::: moniker range="tfs-2018"
+1. [Open your Kanban board](kanban-quickstart.md) and choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
+
+   :::image type="content" source="media/add-columns-open-settings-ts.png" alt-text="Screenshot of Kanban board, open common configuration settings.":::
+
+2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
+
+	> [!NOTE]   
+	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
+
+   :::image type="content" source="media/columns/split-columns-tfs-2018.png" alt-text="Screenshot of Kanban board settings dialog, Split columns.":::
+
+3. When you're done with your changes, choose **Save**.  
+
+	> [!TIP]    
+	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
+::: moniker-end
+
+### List work items in a *Doing* or *Done* column 
+
+You can query for work items in a split column using the **Board Column Done** field. This field takes of a value of False when in the *Doing* column and True when in the *Done* column. 
+
+For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
+
+## Do more tasks
 
 In the following table, we've listed tasks and their associated articles, so you can do more with your Kanban board. 
 
