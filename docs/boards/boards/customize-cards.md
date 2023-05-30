@@ -406,7 +406,7 @@ From a card on the Kanban board, you can go to the underlying test plan and test
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
 
-![GIF Screenshot showing reordering cards while changing columns](media/8_7_02.gif)
+![GIF Screenshot showing reordering cards while changing columns.](media/8_7_02.gif)
 
 ::: moniker range=">= azure-devops-2022"
 In addition to the dynamic card reordering, you can also move a card to a specific column position.  
@@ -438,7 +438,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
+	> ![Screenshot of open board settings for a team, vert nav.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
 2. Choose **Card reordering** and select from the two reordering  behaviors listed.  
 
