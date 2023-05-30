@@ -92,7 +92,7 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 
 ### Use .artifactignore
 
-`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. Make sure that the *.artifactignore* file is located within the directory specified by the *targetPath* argument of your [Publish Pipeline Artifacts task](azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1).
 
 > [!NOTE]
 > The plus sign character `+` is not supported in URL paths and some builds metadata for package types such as Maven.
