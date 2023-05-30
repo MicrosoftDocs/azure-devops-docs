@@ -269,6 +269,11 @@
       "source_path": "docs/boards/boards/split-columns.md",
       "redirect_url": "/azure/devops/boards/boards/add-columns",
       "redirect_document_id": false
+    },
+      { 
+      "source_path": "docs/boards/boards/reorder-cards.md",
+      "redirect_url": "/azure/devops/boards/boards/customize-cards#reorder-cards",
+      "redirect_document_id": false
     }
   ]
 }
