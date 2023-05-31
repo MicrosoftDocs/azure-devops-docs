@@ -18,7 +18,7 @@ ms.date: 05/30/2023
 
 The Kanban board offers an extensive range of tools and customization options. It presents work items in the form of cards, where each card represents a work item that facilitates information sharing, progress tracking, and task assignment. These cards are information-rich and provide quick insights for you and your team. Moreover, you can update a field on a card without having to open the corresponding work item. You can also apply style rules to highlight specific cards and tasks based on your set criteria.
 
-When you enable annotations, you gain quick access to linked work items and other features. If you're new to working with the Kanban board, see [Kanban basics](../../boards/boards/kanban-basics.md). 
+When you enable annotations, you gain quick access to linked work items and other features. If you're new to working with the Kanban board, see [Kanban overview](../../boards/boards/kanban-overview.md). 
 
 ::: moniker range=">= azure-devops-2019"
 

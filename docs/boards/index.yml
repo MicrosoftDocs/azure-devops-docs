@@ -70,8 +70,8 @@ landingContent:
             url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Kanban board basics
-            url: ./boards/kanban-basics.md
+          - text: Kanban board overview
+            url: ./boards/kanban-overview.md
           - text: Add columns
             url: ./boards/add-columns.md
           - text: Customize your Kanban board

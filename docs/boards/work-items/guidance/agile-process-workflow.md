@@ -138,7 +138,7 @@ A typical workflow progression for a user story follows:
 
 ### Update status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
 ![Screenshot of Track progress on the Kanban board.](../../boards/media/ALM_CC_MoveCard.png)
 

@@ -16,7 +16,7 @@ ms.date: 10/15/2021
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
-Having worked through the four configuration steps that were provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.
+Having worked through the four configuration steps that were provided in [Kanban quickstart](../boards/kanban-quickstart.md), you're well on your way to implementing most of Kanban's six core practices.
 
 1. **Visualize your workflow**. Teams track their work using a Kanban board that maps to how they work. Teams discuss how to best focus their resources to deliver the most important work.
 2. **Limit work in progress**. Teams set and adhere to work in progress (WIP) limits they set for each stage of work. They use WIP limits to maintain focus on completing what they started and to identify bottlenecks occurring in their processes.

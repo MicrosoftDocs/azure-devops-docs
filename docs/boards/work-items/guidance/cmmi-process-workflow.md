@@ -140,7 +140,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column span="3":::
    
   Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. 
- By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-basics.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+ By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-overview.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
   :::row-end:::
@@ -297,7 +297,7 @@ The typical workflow progression for a requirement is:
 
 ### Update work status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
 <img src="../../boards/media/ALM_CC_MoveCard.png" alt="Screenshot of Web portal, Track progress on the Kanban board." />
 

@@ -160,7 +160,7 @@ Most of these team settings can be easily configured from the common configurati
 
 ::: moniker-end  
 
-Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. If you need assistance, you can refer to the [Kanban basics](../../boards/boards/kanban-basics.md) guide.
+Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Kanban overview](../../boards/boards/kanban-overview.md) and [Kanban quickstart](../../boards/boards/kanban-quickstart.md).
 
 For detailed information on each configuration option, you can explore the following articles:
 
