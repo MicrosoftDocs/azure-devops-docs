@@ -172,7 +172,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
   ```
 
 > [!NOTE]
-> The `ApiKey` is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds
+> The `ApiKey` is required, but you can use any arbitrary value when pushing to Azure Artifacts feeds.
 
 ::: moniker-end
 
