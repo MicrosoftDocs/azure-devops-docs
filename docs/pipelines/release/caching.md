@@ -280,7 +280,7 @@ steps:
       mkdir -p $(Pipeline.Workspace)/docker
       docker save -o $(Pipeline.Workspace)/docker/cache.tar $(repository):$(tag)
     displayName: Docker save
-    condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
+    condition: and(not(canceled()), not(failed()), ne(variables.CACHE_RESTORED, 'true'))
 ```
 
 - **key**: (required) - a unique identifier for the cache.

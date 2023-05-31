@@ -97,7 +97,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 `vsts-npm-auth` is not supported in Linux/Mac. Follow the steps below to set up your credentials:
 
-1. Copy the following snippet into your npmrc file.
+1. Copy the following snippet into your user-level .npmrc file (~/.npmrc). Make sure that you don't add it to the .npmrc file in your source repository:
 
     - **Organization-scoped feed**:
 
@@ -129,7 +129,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 1. Encode your newly generated personal access token as follows:
 
-    1. Run the following command in an elevated command prompt window, and then paste your personal access token when prompted:
+    1. Run the following command in a command prompt window, and then paste your personal access token when prompted:
 
         ```Command
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
