@@ -432,7 +432,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       Provides quick access to open these Agile tools and team resources:     
       
       - [Backlog](../../boards/backlogs/create-your-backlog.md)   
-      - [Kanban board](../../boards/boards/kanban-basics.md)    
+      - [Kanban board](../../boards/boards/kanban-overview.md)    
       - [Task board](../../boards/sprints/task-board.md)    
       - [Queries](../../boards/queries/using-queries.md)  
    :::column-end:::

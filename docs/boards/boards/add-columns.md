@@ -55,7 +55,7 @@ Complete the following tasks, so you don't need to revisit your configuration.
 ---
 Also, we recommend that you review the following articles: 
 
-- [Kanban basics](kanban-basics.md)
+- [Kanban overview](kanban-overview.md)
 - [Configure and customize Azure Boards](../configure-customize.md)
 - [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md)  
 - [Workflow states and state categories](../work-items/workflow-and-state-categories.md)  
@@ -248,7 +248,7 @@ For example, as a team member completes their coding task, they move the item in
 > [!div class="mx-imgBorder"]  
 > ![Kanban board showing split column](media/columns/split-columns-move-item.png)
 
-### Identify bottlenecks to drive toward a perfect flow scenario
+### Identify bottlenecks
 
 Split columns provide you even greater insight into how many items sit idle in a *Done* column. Your team can readily see when items pile up, which signal a potential bottleneck.   
 

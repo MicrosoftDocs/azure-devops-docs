@@ -24,7 +24,7 @@ Team members can quickly double-check the done criteria.
 > [!div class="mx-imgBorder"]
 > ![Definition of Done](media/columns/move-doing-done-dod-develop.png)
 
-If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
+If you're just getting started, review [Kanban overview](kanban-overview.md)  and [Kanban quickstart](kanban-quickstart.md) to get an overview of how to implement Kanban.
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 

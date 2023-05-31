@@ -457,7 +457,7 @@ The main tools you use to plan and track work are described here:
 - [Sprint planning](../sprints/assign-work-sprint.md)
 - [Capacity planning](../sprints/set-capacity.md)
 - [Taskboard](../sprints/task-board.md)
-- [Kanban board](../boards/kanban-basics.md)
+- [Kanban board](../boards/kanban-overview.md)
 
 For more information on using work items and queries, see: 
 - [Query editor](using-queries.md)   

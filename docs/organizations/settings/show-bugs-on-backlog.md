@@ -59,7 +59,7 @@ In the following steps, we show how to change it from the board view.
 
 5. When you're done with your changes, choose **Save**.  
 
-6. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
+6. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-overview.md). 
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ In the following steps, we show how to change it from the board view.
 
 4. When done with your changes, choose **Save**.  
 
-5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+5. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-overview.md).
 
 ::: moniker-end
 
