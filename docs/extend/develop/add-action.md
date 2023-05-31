@@ -57,7 +57,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | icon               | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                     |                   
 | groupId            | Determines where this menu item appears in relation to the others. |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
-| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
+| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor ID.                          |                   
 
 Learn about all of the places where you can add actions in [Extensibility points](../reference/targets/overview.md).
 
@@ -85,12 +85,12 @@ in your extension's manifest file.
 ## Your JavaScript
 The script below registers the handler object to handle the action, place it in the `head` section of the previous HTML page.
 
-> We aliased `lib` to be `node_modules/vss-web-extension-sdk/lib` in our `vss-extension.json` manifest file.
+> We aliased `lib` to be `node_modules/azure-devops-extension-sdk/lib` in our `sdk-extension.json` manifest file.
 
 ```typescript
-<script src="lib/VSS.SDK.min.js"></script>
+<script src="lib/SDK.min.js"></script>
 <script>
-    VSS.init();
+    SDK.init();
 
     // Use an IIFE to create an object that satisfies the IContributedMenuSource contract
     var menuContributionHandler = (function () {
@@ -106,7 +106,7 @@ The script below registers the handler object to handle the action, place it in 
     }());
 
     // Associate the menuContributionHandler object with the "myAction" menu contribution from the manifest.
-    VSS.register("myAction", menuContributionHandler);
+    SDK.register(SDK.getContributionId(), menuContributionHandler);
 </script>
 ```
 
