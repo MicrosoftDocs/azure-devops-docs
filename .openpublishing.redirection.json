@@ -274,6 +274,11 @@
       "source_path": "docs/boards/boards/reorder-cards.md",
       "redirect_url": "/azure/devops/boards/boards/customize-cards#reorder-cards",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-board-controls.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview#use-kanban-board-controls",
+      "redirect_document_id": false
     }
   ]
 }

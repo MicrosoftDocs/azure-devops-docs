@@ -157,8 +157,7 @@ To configure or change the layout of the Kanban board, see [Customize your board
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Add, run, update manual tests](add-run-update-tests.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
-- [Kanban board controls](kanban-board-controls.md)
+- [Use Kanban board controls](kanban-overview.md#use-kanban-board-controls.md)
 
 ### REST API resources
 To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work-items/create).
-
