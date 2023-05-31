@@ -95,7 +95,7 @@ For your files, set `addressable` to `true` unless you include other files that 
 	
 ## Example registeredObjectId
 ```javascript
-VSS.register("backlogTabObject", {
+SDK.register("backlogTabObject", {
     pageTitle: function(state) {
         return "Hello Tab";
     },
