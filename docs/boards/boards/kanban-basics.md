@@ -171,7 +171,7 @@ Each team can manage their backlog and customize their Kanban board. [Add teams]
 
 If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-[!INCLUDE [temp](../includes/live-updates.md)]  
+For more information, see [Enable live updates](kanban-overview.md#enable-live-updates).
 
 ## Related articles
 
