@@ -57,7 +57,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | icon               | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                     |                   
 | groupId            | Determines where this menu item appears in relation to the others. |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
-| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
+| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor ID.                          |                   
 
 Learn about all of the places where you can add actions in [Extensibility points](../reference/targets/overview.md).
 
