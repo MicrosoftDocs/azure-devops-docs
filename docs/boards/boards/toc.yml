@@ -23,8 +23,6 @@
   - name: Use Kanban board controls
     href: kanban-overview.md#use-kanban-board-controls
     displayname: live updates, view options, Configure team settings, filter
-  - name: Enable live updates
-    href: live-updates.md
   - name: Manage columns
     href: add-columns.md
     displayname: remove, state mapping, rename

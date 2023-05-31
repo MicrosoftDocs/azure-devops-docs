@@ -45,10 +45,10 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 Your Kanban board is highly configurable to support your team's workflow. Each team can configure each board with the following tasks:
 :::row:::
    :::column span="1":::
-   Configure boards
+   **Configure boards**
    :::column-end:::
    :::column span="1":::
-   Configure card displays
+   **Configure card displays**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -78,6 +78,7 @@ Along with these team configurations, you can [customize your project](#customiz
 ### Common board configurations for multiple teams 
 
 **Question**: *Can you define a board configuration that multiple teams can subscribe to?*
+
 **Answer**: *No. Each team controls their own team settings and board configurations.*
 
 ## Update work item status
@@ -88,15 +89,9 @@ Once you've configured your Kanban board, you can add work items directly to the
 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For more information, see the following articles:  
 
-## Display of leaf node work items  
+## Display leaf node work items  
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]
-
-## Use select features with multi-team ownership 
-
-When you share area paths across two or more teams, you need to know how Azure Boards manages conflicts that can arise when exercising these features: 
-- [Reorder or reparent work items](#reorder-and-reparent-work-items) on a backlog or board
-- Updates made to Kanban Board Column, Done, and Lane fields when dragging items to a different column 
 
 ### Reorder and reparent work items 
 
@@ -113,12 +108,9 @@ Each team can customize the Kanban board columns and swimlanes, so the values th
 Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, one team's Kanban board items aren't reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
 
 By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are nondeterministic.  
- 
 ::: moniker range=">= azure-devops-2019"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
-
 ::: moniker-end
-
 ::: moniker range="tfs-2018"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
 ::: moniker-end
@@ -153,18 +145,18 @@ The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=rea
 
 See the following table of terms and available tools used in tracking work using Kanban boards and Kanban methods.
 
-|Concept/Term |Description |
+|Concept or Term |Description |
 |---------|---------|
 |Blocker    |  An issue that prevents work from progressing. You can highlight work that is blocked by using tags and changing the card color. For more information, see [Customize cards, Define style rules to highlight cards](customize-cards.md#define-style-rules-to-highlight-cards).       |
 |Bottleneck    | A constraint in the system that limits the flow of work. Identifying bottlenecks makes it easier to reduce their effect and provides a mechanism for controlling work flowing through the process. For more information, see [Split columns, Identify bottlenecks](split-columns.md#id-bottlenecks).        |
 |Card reordering  |Card reordering lets you change the priority order and forces cards to maintain the backlog priority when you drag and drop them on the board. For more information, see [Reorder cards](customize-cards.md#reorder-cards).          |
-|Cumulative flow diagram (CFD)   | The in-context CFD report shows the count of items in each Kanban column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md).         |
+|Cumulative flow diagram (CFD)   | The in-context CFD report shows the count of items in each Kanban column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md).       |
 |Cycle time  |Cycle time is the time calculated for a work item from first entering an *In Progress* category state to entering a *Completed* state category. For more information, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). You can gain valuable metrics and visualize the cycle time for a team and a configurable time period by [adding the Cycle Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md). |
 |Definition of done  | Criteria that a team specifies for each stage of work to share and standardize on what makes up work being done at that stage. For more information, see [Kanban best practices, working software and the Definition of Done](best-practices-kanban.md#dod).         |
 |Kanban board   | An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Azure DevOps provides a Kanban board for each product and portfolio backlog. For more information, see [Kanban basics](../../boards/boards/kanban-basics.md) and [Kanban board features and epics](../../boards/boards/kanban-epics-features-stories.md) and [Track work in swimlanes](expedite-work.md#track-work-in-swimlanes).        |
 |Kanban columns    | A Kanban column maps to a stage of work. The default columns map to the workflow states of the work item types that appear on the Kanban board. You configure the columns to map workflow states of your team. For more information, see [Kanban basics, Map the flow of work](kanban-basics.md#map-flow).        |
-|Row9     | Lead time is the time calculated for a work item from first entering a *Proposed* category state to entering a *Completed* state category. For more information, see  [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). You can gain valuable metrics and visualize the lead time for a team and a configurable time period by [adding the Lead Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md). |
-|Live updates   |Live updates is a Kanban board view option that when enabled automatically refreshes the Kanban board as other team members move or reorder cards. For more information, see [Enable live updates](live-updates.md).          |
+|Lead time    | Lead time is the time calculated for a work item from first entering a *Proposed* category state to entering a *Completed* state category. For more information, see  [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). You can gain valuable metrics and visualize the lead time for a team and a configurable time period by [adding the Lead Time widget to the dashboard](../../report/dashboards/cycle-time-and-lead-time.md). |
+|Live updates   |Live updates is a Kanban board view option that when enabled automatically refreshes the Kanban board as other team members move or reorder cards. For more information, see [Enable live updates](l#enable-live-updates.md).       |
 |Product backlog    | An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. Each team can customize its product backlog. For more information, see [Create your backlog](../backlogs/create-your-backlog.md).        |
 |Product backlog item   | A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items, which are defined with the Scrum process. For more information, see [Scrum process work item types and workflow.](../work-items/guidance/scrum-process-workflow.md)        |
 |Portfolio backlog    | An interactive list of work items, similar to the product backlog that supports organizing or grouping work under features epics, or scenarios. Portfolio backlogs work similarly to product backlogs in that you can prioritize work and view the tree hierarchy of work. For more information, see [Define features and epics.](../backlogs/define-features-epics.md)        |
@@ -176,9 +168,8 @@ See the following table of terms and available tools used in tracking work using
 | Work in progress (WIP) | Work that has been started but isn't done or completed.      |
 | WIP limit    | A WIP limit is a constraint that a team applies to one or more workflow stages to help prevent potential bottlenecks that hinder the continuous flow of work in the system. For more information, see [Work in Progress limits](wip-limits.md).       |
 |Workflow states   |Workflow states are defined for each work item type to support tracking the status of a work item, from its creation to its completion. These states define the workflow process: actions, steps, or stages that a piece of work goes through from inception to completion. The State and Reason fields differ depending on the work item type and process selected for the project.    
-You can customize your workflow states, adding states or renaming states. For more information, see [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). 
-You can customize your workflow states, adding states, renaming states, and changing state transitions and reasons. For more information, see [Customize the workflow](../../reference/xml/change-workflow-wit.md). |
-| Workflow state categories    | State categories determine how the Kanban board treats each workflow state. The state categories used by the backlogs are *Proposed*, *In Progress*,  *Resolved*, and *Completed*. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).      |
+You can customize your workflow states, adding states or renaming states. For more information, see [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). |
+| Workflow state categories    | State categories determine how the Kanban board treats each workflow state. The state categories used by the backlogs are *Proposed*, *In Progress*,  *Resolved*, and *Completed*. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).  |
 
 For more information, see the following articles: 
 - [Agile glossary](../work-items/agile-glossary.md) 
@@ -220,7 +211,7 @@ Choose the :::image type="icon" source="../../media/icons/view-options-icon.png"
 ::: moniker range="tfs-2018"
 Choose the :::image type="icon" source="../media/icons/live-updates-icon.png" border="false"::: **Live updates** icon.  
 
-:::image type="content" source="media/kanban-live-updates.png" alt-text="Screenshot showing Kanban board, live updates icon.":::
+:::image type="content" source="media/turn-live-updates-on-agile.png" alt-text="Screenshot showing Kanban board, live updates icon.":::
 
 As one team member updates the status of a work item, other team members see those updates in real time as they occur.  
 
