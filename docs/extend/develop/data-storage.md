@@ -47,7 +47,7 @@ Here is an example of how to set a value:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Set value in user scope
         dataService.setValue("userScopedKey", 12345, {scopeType: "User"}).then(function(value) {
             console.log("User scoped key value is " + value);
@@ -59,7 +59,7 @@ Here is an example of how to retrieve a setting value:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Get value in user scope
         dataService.getValue("userScopedKey", {scopeType: "User"}).then(function(value) {
             console.log("User scoped key value is " + value);
@@ -72,7 +72,7 @@ Here is an example of how to set a setting value at the project collection level
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Set value (default is project collection scope)
         dataService.setValue("someKey", "abcd-efgh").then(function(value) {
             console.log("Key value is " + value);
@@ -102,7 +102,7 @@ Retrieving a document by its identifier from a collection is easy:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Get document by id
         dataService.getDocument("MyCollection", "MyDocumentId").then(function(doc) {
             // Assuming document has a property named foo
@@ -119,7 +119,7 @@ To create a new document, perform a call such as the following:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Prepare document first
         var newDoc = {
             fullScreen: false,
@@ -146,7 +146,7 @@ If another document in the collection already exists with the same ID as the one
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Prepare document first
         var myDoc = {
             id: 1,
@@ -169,7 +169,7 @@ Here is an example of how update is used:
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         var collection = "MyCollection";
         var docId = "1234-4567-8910";
         // Get document first
@@ -191,7 +191,7 @@ This function deletes the document with the provided ID from the provided collec
 Here is an example usage:
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         var docId = "1234-4567-8910";
         // Delete document
         dataService.deleteDocument("MyCollection", docId).then(function() {
@@ -206,7 +206,7 @@ In addition to the operations on documents themselves, the data storage service 
 
 ```js
     // Get data service
-    VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
+    SDK.getService(SDK.getContributionId()).then(function(dataService) {
         // Get all document under the collection
         dataService.getDocuments("MyCollection").then(function(docs) {
             console.log("There are " + docs.length + " in the collection.");

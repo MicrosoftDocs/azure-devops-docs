@@ -44,7 +44,7 @@ To create extensions for Azure DevOps, you need the following software and tools
   |--- vss-extension.json             // extension's manifest
   ```
 
-- The [vss-web-extension-sdk package installation](https://github.com/Microsoft/azure-devops-extension-sdk).
+- The [azure-devops-extension-sdk package installation](https://github.com/Microsoft/azure-devops-extension-sdk).
 
 > [!IMPORTANT]
 > The dev machine needs to run the [latest version of Node](https://nodejs.org/en/download/) to ensure that the written code is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
