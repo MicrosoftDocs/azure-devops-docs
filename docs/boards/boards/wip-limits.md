@@ -41,7 +41,7 @@ Starting low may help your team discover bottlenecks more quickly and identify p
 
 After you've defined an initial set of WIP limits, you'll likely want to fine tune them as your project progresses.
 
-If you're new to Kanban, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
+If you're new to Kanban, review [Kanban overview](kanban-overview.md) to get an overview of how to access your board and implement Kanban.
 
 
 <a id="Keep within WIP" />
@@ -104,18 +104,18 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 ## Set WIP limits
 
-With an understanding of how you want to use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
+With an understanding of how you want to use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban overview](kanban-overview.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-2. Choose **Columns** and then a column tab to set the WIP limit for that column. 
+3. Choose **Columns** and then a column tab to set the WIP limit for that column. 
 
     
 	:::image type="content" source="media/wip-columns-settings.png" alt-text="Screenshot showing Kanban board, Customize columns, default columns, Agile process, set WIP limits."::: 
@@ -123,7 +123,7 @@ With an understanding of how you want to use WIP limits, here's how you set them
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
-3. When done with your changes, choose **Save**.  
+4. When done with your changes, choose **Save**.  
 
 ::: moniker-end 
 
