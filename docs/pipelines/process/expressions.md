@@ -644,15 +644,64 @@ If you experience issues with output variables having quote characters (`'` or `
 
 The syntax of referencing output variables with dependencies varies depending on the circumstances. Here's an overview of the most common scenarios. Note that there may be times when alternate syntax also works. 
 
-
-| Type  | Description |
-| ----- | ---------- |
-| [stage to stage dependency](#stage-to-stage-dependencies) (different stages) | Reference an output variable from a previous stage in a job in a different stage in a condition in `stages`. <br /> Syntax: `and(succeeded(), eq(stageDependencies.<stage-name>.outputs[‘<job-name>.<step-name>.<variable-name>’], 'true'))` <br /> Example: `and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))`|
-| [job to job dependency](#job-to-job-dependencies-within-one-stage) (same stage) | Reference an output variable in a different job in the same stage in `stages`. <br /> Syntax: `and(succeeded(), eq(dependencies.<stage-name>.outputs[‘<step-name>.<variable-name>’], 'true'))` <br /> Example: `and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))` |
-| [Job to stage dependency](#job-to-job-dependencies-across-stages) (different stages) | Reference an output variable in a different stage in a `job`. <br /> Syntax: `eq(stageDependencies.<stage-name>.<job-name>.outputs[‘<step-name>.<variable-name>’], 'true')` <br /> Example: `eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true’) |
-| [Stage to stage dependency](#deployment-job-output-variables) (deployment job) | Reference output variable in a deployment job in a different stage in `stages`.  <br /> Syntax: `eq(dependencies.<stage-name>.outputs[‘<deployment-job-name>.<deployment-job-name>.<step-name>.<variable-name>’], 'true')` <br /> Example: `eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')` |
-| [Stage to stage dependency](#deployment-job-output-variables) (deployment job with resource) | Reference an output variable in a deployment job that includes a resource in different stage in `stages`. <br /> Syntax: `eq(dependencies.<stage-name>.outputs[‘<deployment-job-name>.<Deploy_resource-name>.<step-name>.<variable-name>’], 'true')` <br /> Example: `eq(dependencies.build.outputs['build_job.Deploy_winVM.setRunTests.runTests'], 'true')` |
-
+:::row:::
+   :::column span="1":::
+   **Type**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [stage to stage dependency](#stage-to-stage-dependencies) (different stages)
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable from a previous stage in a job in a different stage in a condition in `stages`. 
+    Syntax: `and(succeeded(), eq(stageDependencies.<stage-name>.outputs['<job-name>.<step-name>.<variable-name>'], 'true'))` 
+    Example: `and(succeeded(), eq(stageDependencies.A.outputs['A1.printvar.shouldrun'], 'true'))`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [job to job dependency](#job-to-job-dependencies-within-one-stage) (same stage) 
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable in a different job in the same stage in `stages`.
+    Syntax: `and(succeeded(), eq(dependencies.<stage-name>.outputs['<step-name>.<variable-name>'], 'true'))` <br /> 
+    Example: `and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))` 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [Job to stage dependency](#job-to-job-dependencies-across-stages) (different stages) 
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable in a different stage in a `job`.
+    Syntax: `eq(stageDependencies.<stage-name>.<job-name>.outputs['<step-name>.<variable-name>'], 'true')` 
+    Example: `eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true') 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [Stage to stage dependency](#deployment-job-output-variables) (deployment job)
+   :::column-end:::
+   :::column span="2":::
+    Reference output variable in a deployment job in a different stage in `stages`.
+    Syntax: `eq(dependencies.<stage-name>.outputs['<deployment-job-name>.<deployment-job-name>.<step-name>.<variable-name>'], 'true')`
+    Example: `eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    [Stage to stage dependency](#deployment-job-output-variables) (deployment job with resource)
+   :::column-end:::
+   :::column span="2":::
+    Reference an output variable in a deployment job that includes a resource in different stage in `stages`. 
+    Syntax: `eq(dependencies.<stage-name>.outputs['<deployment-job-name>.<Deploy_resource-name>.<step-name>.<variable-name>'], 'true')`
+    Example: `eq(dependencies.build.outputs['build_job.Deploy_winVM.setRunTests.runTests'], 'true')`   
+    :::column-end:::
+:::row-end:::
 
 There are also different syntaxes for output variables in deployment jobs depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables). 
 
