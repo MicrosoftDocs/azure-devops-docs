@@ -1,6 +1,6 @@
 - name: About Boards & Kanban
   href: kanban-overview.md
-- name: Get started using your Kanban board
+- name: Use your Kanban board
   href: kanban-quickstart.md
 - name: Reorder cards
   href: customize-cards.md
