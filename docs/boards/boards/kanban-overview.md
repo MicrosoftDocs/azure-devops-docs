@@ -180,7 +180,7 @@ You can also add or modify the fields defined for a work item type (WIT), add a 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get started with a Kanban board](kanban-quickstart.md)  
+> [Use your Kanban board](kanban-quickstart.md)  
 
 ## Related articles  
 
