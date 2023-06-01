@@ -19,6 +19,8 @@ Azure Artifacts enables you to publish various package types to your feeds and i
 
 For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the Npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
 
+### [Windows](#tab/windows/)
+
 ::: moniker range="azure-devops"   
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
@@ -34,22 +36,6 @@ For best practice, we suggest using two separate configuration files. The first 
 1. Follow the instructions in **Project setup** to set up your config file.
 
     :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release**.
-
-1. Select **Packages**, and then select **Connect to feed**.
-
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
-
-1. Select **npm** from the left navigation pane.
-
-1. Follow the instructions to set up your project.
-
-    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
 
 ::: moniker-end
 
@@ -70,33 +56,6 @@ For best practice, we suggest using two separate configuration files. The first 
    :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
 
 ::: moniker-end
-
-
-> [!NOTE]
-> if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. For more information, please refer to the list of [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
-
-## Credentials setup
-
-> [!TIP]
-> The use of multiple registries in .npmrc files is supported in [upstream sources](../concepts/upstream-sources.md) and [scopes](..//npm/scopes.md).
-
-### [Windows](#tab/windows/)
-
-If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
-
-- Install vsts-npm-auth globally:
-
-    ```Command
-    npm install -g vsts-npm-auth
-    ```
-
-- Add script to package.json:
-
-    ```json
-    "scripts": {
-        "refreshVSToken" : "vsts-npm-auth -config ".\.npmrc\" -TargetConfig "$HOME\.npmrc\""
-    }
-    ```
 
 ### [Linux/Mac](#tab/linux/)
 
