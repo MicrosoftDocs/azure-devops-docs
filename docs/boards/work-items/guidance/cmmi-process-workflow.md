@@ -299,7 +299,7 @@ The typical workflow progression for a requirement is:
 
 Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-<img src="../../boards/media/ALM_CC_MoveCard.png" alt="Screenshot of Web portal, Track progress on the Kanban board." />
+<img src="../../boards/media/alm-cc-move-card.png" alt="Screenshot of Web portal, Track progress on the Kanban board." />
 
 You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
