@@ -467,6 +467,10 @@ steps:
 - script: echo "##vso[task.prependpath]$CONDA/bin"
   displayName: Add conda to PATH
 
+- bash: |
+    sudo chown -R $(whoami):$(id -ng) $(CONDA_CACHE_DIR)
+  displayName: Fix CONDA_CACHE_DIR directory permissions
+
 - task: Cache@2
   displayName: Use cached Anaconda environment
   inputs:
