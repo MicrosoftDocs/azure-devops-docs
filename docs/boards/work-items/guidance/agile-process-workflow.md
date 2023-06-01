@@ -218,7 +218,6 @@ Track testing progress with [user stories](#test-user-stories) and [code defects
 From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links** tab. 
 
 :::image type="content" source="media/test-plan-new-item.png" alt-text="Screenshot of Test plan web portal.":::
-![.](media/test-plan-new-item.png)
 
 The test case contains multiple fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
