@@ -130,7 +130,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. For more information, see [Filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 ::: moniker range="<= azure-devops-2019"
-:::image type="content" source="../backlogs/media/filter-boards/filter-kb-choose-filter.png" alt-text="Screenshot showing enabled field-based filtering, earlier versions..":::
+:::image type="content" source="../backlogs/media/filter-boards/filter-kb-choose-filter.png" alt-text="Screenshot showing enabled field-based filtering, earlier versions.":::
 ::: moniker-end
 
 In the following example image, we filtered all items assigned to Jamal and Raisa.
