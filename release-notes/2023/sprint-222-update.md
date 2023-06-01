@@ -5,9 +5,11 @@ ms.author: glmorale
 ms.date: 6/6/2023
 description: GitHub Advanced Security for Azure DevOps in now in public preview.
 ---
-# GitHub Advanced Security for Azure DevOps (public preview)
+# GitHub Advanced Security for Azure DevOps public preview
 
-We are excited to announce that GitHub Advanced Security for Azure DevOps is now in public preview! GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. It includes secret scanning, dependency scanning, and code scanning abilities into Azure DevOps. Check out the release notes to learn how you can sign up for the public preview.
+We are excited to announce that GitHub Advanced Security for Azure DevOps is now in public preview! GitHub Advanced Security for Azure DevOps adds GitHub Advanced Security's suite of security features to Azure Repos. It brings secret scanning, dependency scanning, and code scanning abilities into Azure DevOps. 
+
+Check out the release notes to learn how you can sign up for the public preview.
 
 ### General
 
@@ -55,4 +57,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-Silviu Andrica
+Rajesh Ramamurthy
