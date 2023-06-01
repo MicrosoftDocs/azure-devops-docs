@@ -464,8 +464,6 @@ steps:
 - script: echo "##vso[task.prependpath]$CONDA/bin"
   displayName: Add conda to PATH
 
-# https://github.com/microsoft/azure-pipelines-tasks/issues/16203
-# https://github.com/microsoft/azure-pipelines-tasks/issues/12179
 - bash: |
     sudo chown -R $(whoami):$(id -ng) $(CONDA_CACHE_DIR)
   displayName: Fix CONDA_CACHE_DIR directory permissions
