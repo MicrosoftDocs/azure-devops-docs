@@ -184,7 +184,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 **Example Kanban board** 
 
-![Screenshot of Kanban board, Agile template, update status of work item](../boards/boards/media/ALM_CC_MoveCard.png) 
+![Screenshot of Kanban board, Agile template, update status of work item](../boards/boards/media/alm-cc-move-card.png) 
 
 Each team can quickly configure their board and the cards to support their business needs.  
  
