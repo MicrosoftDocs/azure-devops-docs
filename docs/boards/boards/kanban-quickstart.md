@@ -62,7 +62,7 @@ When you first open your Kanban board, you have one column for each [workflow st
 
 Set WIP limits for each workflow stage, so that when work items exceed the limit, the column count displays as red. Teams can use this color as a signal to focus immediately on activities to bring the number of items in the column down. For more information, see [Set WIP limits](wip-limits.md).
 
-:::image type="content" source="media/alm_kb_wip-limits.png" alt-text="Screenshot showing WIP limit reached with red numbering.":::
+:::image type="content" source="media/alm-kb-wip-limits.png" alt-text="Screenshot showing WIP limit reached with red numbering.":::
 
 ## Track work in progress
 
@@ -95,7 +95,7 @@ The system automatically saves the work item with the title you entered. You can
 ::: moniker range="tfs-2018"
 To add a work item, select the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus sign, enter a title, and then select **Enter**. 
 
-:::image type="content" source="media/quickstart/add-new-item-standard.png" alt-text="Screenshot showing adding a new item on Kanban board, prev nav..":::
+:::image type="content" source="media/quickstart/add-new-item-standard.png" alt-text="Screenshot showing adding a new item on Kanban board, prev nav.":::
 
 The system automatically saves the work item with the title you entered. You can add as many work items you want by using this method. 
 ::: moniker-end
