@@ -19,13 +19,21 @@ Azure Artifacts enables you to publish various package types to your feeds and i
 
 For best practice, we suggest using two separate configuration files. The first file is used to authenticate with Azure Artifacts, while the second file is stored locally and contains your credentials. To set up the second file, place it in your home directory on your development machine and include all of your registry credentials. By using this approach, the Npm client can easily retrieve your credentials for authentication, allowing you to share your configuration file while keeping your credentials secure. These steps will walk you through the process of setting up the first configuration file:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"   
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
  
     :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+
+1. Select **npm** from the left navigation pane.
+
+1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
+
+1. Follow the instructions in **Project setup** to set up your config file.
+
+    :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
 
 ::: moniker-end
 
@@ -37,35 +45,32 @@ For best practice, we suggest using two separate configuration files. The first 
 
     :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
 
-::: moniker-end
+1. Select **npm** from the left navigation pane.
 
-2. Select **npm** from the left navigation pane.
+1. Follow the instructions to set up your project.
 
-3. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
-
-::: moniker range="azure-devops"   
-
-4. Follow the instructions in **Project setup** to set up your config file.
-
-    :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
+    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="azure-devops-2019 || azure-devops-2020 || azure-devops-2022"
 
-4. Follow the instructions in **Project setup** to set up your config file.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+
+1. Select **npm** from the left navigation pane.
+
+1. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
+
+1. Follow the instructions in **Project setup** to set up your config file.
 
    :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-
-4. Follow the instructions to set up your project.
-
-    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
-
-::: moniker-end
 
 > [!NOTE]
 > if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. For more information, please refer to the list of [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
