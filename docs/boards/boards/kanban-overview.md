@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 05/31/2023
+ms.date: 06/01/2023
 ---
 
 # About Kanban boards
@@ -18,16 +18,15 @@ ms.date: 05/31/2023
  
 Your Kanban board provides you with a visual interactive space for you and your team to plan and show progress. Your team can track the critical information it needs by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
-Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard.
+As work progresses from idea to completion, you update the items on the board. Each column represents a work stage. Each card represents a work item and supports quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard.
 
-> [!NOTE]  
-> A Kanban board gets provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For more information, see [Update and monitor your Taskboard](../sprints/task-board.md).
 
 ## Product and portfolio Kanban boards 
 
 Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Kanban boards are associated with a team and display work items that are based on the area and iteration paths that the team selected. For more information, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
-Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
+To maximize a team's ability to consistently deliver high-quality software, Kanban emphasizes two main practices. The first is to [visualize the flow of work](kanban-quickstart.md#map-the-flow-of-how-your-team-works). This practice requires you to map your team's workflow stages and configure your Kanban board to match. The second is to constrain the amount of work in progress, which requires you to [set work-in-progress (WIP) limits](kanban-quickstart.md#set-wip-limits). You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time. To get started, see [Use your Kanban board](../boards/kanban-quickstart.md). 
 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="../work-items/media/about-agile/view-boards-agile.png" alt-text="Screenshot showing Kanban board, Agile template.":::
@@ -151,11 +150,11 @@ You can only use drag-and-drop to reorder or reparent work items assigned to are
 :::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
 ## Update columns
-Each team can customize the Kanban board columns and swimlanes. So, the values that get assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. 
+Each team can customize the Kanban board columns and swimlanes. The values that get assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. 
 
 Even if the management team and the feature teams configure their Kanban board columns with identical workflow mapping, one team's Kanban board items aren't reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
 
-For more information, see [Manage Kanban board columns](add-columns.md).
+For more information, see [Manage columns](add-columns.md).
  
 ## Provide permissions and access
 
