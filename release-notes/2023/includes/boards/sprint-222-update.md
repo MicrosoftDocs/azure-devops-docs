@@ -5,7 +5,7 @@ ms.date: 6/6/2023
 ms.topic: include
 ---
 
-### Markdown support for comments (public preview)
+### Markdown support for comments (private preview)
 
 We are happy to finally announce the private preview for the new Markdown editor for work item comments. This feature allows you to use the Markdown syntax and editor for all future comments. The markdown editor matches the experiences you see in other parts of the product like Pull Request comments. Existing work item comments can stay as they are, or you can convert them (one at a time) to Markdown.
 
