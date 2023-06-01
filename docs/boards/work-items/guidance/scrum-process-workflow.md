@@ -128,7 +128,7 @@ PBIs and bugs follow this typical workflow progression:
 
 Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of PBIs, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-![Screenshot of track progress on the Kanban board.](../../boards/media/ALM_CC_MoveCard.png)
+![Screenshot of track progress on the Kanban board.](../../boards/media/alm-cc-move-card.png)
 
 You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For other customization options, see [Customize your work tracking experience](#customize-work-tracking).
 

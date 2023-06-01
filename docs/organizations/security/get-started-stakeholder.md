@@ -157,7 +157,7 @@ The work item forms you see may differ from the following images. The basic func
 
 Drag and drop a work item to move it downstream as you complete work. 
 
-![Screenshot of Kanban board, Agile template, update status of work item.](../../boards/boards/media/ALM_CC_MoveCard.png)  
+![Screenshot of Kanban board, Agile template, update status of work item.](../../boards/boards/media/alm-cc-move-card.png)  
 
 ::: moniker-end  
 ::: moniker range="azure-devops-2020"
