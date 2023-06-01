@@ -57,9 +57,33 @@ For best practice, we suggest using two separate configuration files. The first 
 
 ::: moniker-end
 
-### [Linux/Mac](#tab/linux/)
+::: moniker range="tfs-2018"
 
-`vsts-npm-auth` is not supported in Linux/Mac. Follow the steps below to set up your credentials:
+1. Select **Build and Release**.
+
+1. Select **Packages**, and then select **Connect to feed**.
+
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
+
+1. Select **npm** from the left navigation pane.
+
+1. Follow the instructions provided in the **Other** tab to set up your project.
+
+::: moniker-end
+
+
+> [!TIP]
+> Using multiple registries in .npmrc files is supported with [scopes](..//npm/scopes.md) and [upstream sources](../concepts/upstream-sources.md).
+
+### [Other](#tab/other/)
+
+1. Add a .npmrc file in your project's directory, in the same directory as your package.json file, and copy the following snippet into it. 
+
+    ```Command
+    registry=https://pkgs.dev.azure.com/ramiMSFTDevOps/_packaging/OrgScopedDemo/npm/registry/ 
+                        
+    always-auth=true
+    ```
 
 1. Copy the following snippet into your user-level .npmrc file (~/.npmrc). Make sure that you don't add it to the .npmrc file in your source repository:
 
@@ -101,7 +125,7 @@ For best practice, we suggest using two separate configuration files. The first 
 
         You can also use the following command to convert your personal access token to Base64. Use `-w 0` to disable line wrapping.
 
-        - **LinuxMac**:
+        - **Linux/Mac**:
             ```Command
             echo -n "YOUR_PERSONAL_ACCESS-TOKEN" | base64 -w 0
             ```
@@ -183,6 +207,9 @@ For authentication with your pipeline, Azure Artifacts recommends using the [npm
 > To grant your pipeline access to your feed, make sure you set the build service role to **Contributor** in your feed settings.
 
 :::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
+
+> [!NOTE]
+> if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. For more information, please refer to the list of [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
 
 ## Troubleshoot
 
