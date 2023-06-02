@@ -14,7 +14,7 @@ You have the option to keep your existing work item comments as they are or conv
 > [!div class="mx-imgBorder"]
 > ![Gif to demo markdown support for comments.](../../media/222-boards-01.gif "gif to demo markdown support for comments")
 
-If you are interested in enrolling in the private preview, please send us an email with your organization name (https://dev.azure.com/{organization}).
+If you are interested in enrolling in the private preview, please send us an email with your organization name.
 
 This was prioritized based on [this Developer Community suggestion ticket](https://developercommunity.visualstudio.com/t/add-markdown-support-in-discussions/365826).
 
