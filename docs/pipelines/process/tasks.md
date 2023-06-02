@@ -179,6 +179,9 @@ Control options are available as keys on the `task` section.
 The timeout period begins when the task starts running. It doesn't include the
 time the task is queued or is waiting for an agent.
 
+> [!NOTE]
+> Azure Pipelines enforces time limits based on your project type and whether you are using paid parallel jobs, and timeouts can also be specified at the job level. If either of these timeout intervals elapses before your step completes, the running job is terminated, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
+
 In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
 
 ```yaml

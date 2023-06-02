@@ -620,6 +620,9 @@ On the Options tab, you can specify default values for all jobs in the pipeline.
 
 You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions).
 
+> [!NOTE]
+> Azure Pipelines enforces time limits based on your project type and whether you are using paid parallel jobs, and timeouts can also be specified at the job level. If either of these timeout intervals elapses before your task completes, the running job is terminated, even if the task is configured with a longer timeout interval.
+
 <a name="parallelexec"></a>
 
 ## Multi-job configuration
