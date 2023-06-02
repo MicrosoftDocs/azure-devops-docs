@@ -66,21 +66,34 @@ For more information about setting up a Kubernetes service connection outside of
    kubectl config view --minify -o 'jsonpath={.clusters[0].cluster.server}'
    ```
 
-5. To get your secret object, find the service account secret name.
+5. To get the secret object.
 
+    #### Kubernetes 1.22+
+    Replace `service-account-name` with your account name.
+   ```
+   kubectl get secret -n <namespace>  -o jsonpath='{.items[?(@.metadata.annotations.kubernetes\.io/service-account\.name=="service-account-name")]}'
+   ```
+    If you get nothing, see here how to create: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#manually-create-a-long-lived-api-token-for-a-serviceaccount
+
+   #### Kubernetes 1.22 and below:
+    1. Find the service account secret name
    ```
    kubectl get serviceAccounts <service-account-name> -n <namespace> -o 'jsonpath={.secrets[*].name}'
    ```
+    2. replace `<service-account-secret-name>` with the value in previous command in this command
+   ```
+   kubectl get secret <service-account-secret-name> -n <namespace> -o json
+   ```
 
-6. Get the secret object using the output of the previous step.
+5. Get the secret object using the output of the previous step.
 
    ```
    kubectl get secret <service-account-secret-name> -n <namespace> -o json
    ```
 
-7. Copy and paste the Secret object fetched in JSON form into the Secret field.
+6. Copy and paste the Secret object fetched in JSON form into the Secret field.
 
-8. Select **Validate and create** to create the Kubernetes resource.
+7. Select **Validate and create** to create the Kubernetes resource.
 
 ## Reference your Kubernetes resources in a pipeline
 
