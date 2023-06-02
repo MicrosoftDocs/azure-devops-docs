@@ -417,7 +417,7 @@ When teams estimate work, they define tasks and estimate the hours or days to co
 
 From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
 
-![Screenshot of Select the test suite and add a test case.](media/IC793453.png)  
+![Screenshot of Select the test suite and add a test case.](media/test-plan-new-item.png)  
 
 The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).  
 
