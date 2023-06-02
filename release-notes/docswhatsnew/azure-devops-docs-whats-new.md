@@ -78,7 +78,7 @@ Welcome to what's new in the Azure DevOps docs from May 1, 2023 through May 31, 
 
 ### New articles
 
-- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
+- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features) - New feature
 - [Advanced Security billing](/azure/devops/repos/security/github-advanced-security-billing)
 - [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
 - [Dependency scanning](/azure/devops/repos/security/github-advanced-security-dependency-scanning)
