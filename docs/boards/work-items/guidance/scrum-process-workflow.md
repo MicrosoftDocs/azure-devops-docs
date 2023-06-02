@@ -189,9 +189,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
 From the web portal or Test Manager, you can [create test cases that automatically link to a PBI or bug](../../../test/create-test-cases.md). Or, you can link a PBI or bug to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab).  
 
-
-<img src="media/test-plan-new-item.png" alt="Screenshot of Web portal, Select the test suite and add a test case." /> 
-
+:::image type="content" source="media/test-plan-new-item.png" alt-text="Screenshot of Web portal, Select the test suite and add a test case.":::
 
 The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
