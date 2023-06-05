@@ -364,11 +364,10 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
   The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 10.15](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
   - [macOS 11](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xamarin)
+  - [macOS 12](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xamarin)
   
-
-  This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
+This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
   In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 
