@@ -35,3 +35,11 @@ The macOS 13 image is now available in preview for Azure Pipelines hosted agents
 Please note, the macos-latest image label will continue to point to macos-12 until macos-13 comes out of preview later this year. While the macOS 13 image is in preview, it currently doesn't support all of the tooling available in macOS 13 and you may experience longer queue times than other images. 
 
 For more information, check the [runner-images repository](https://github.com/actions/runner-images/issues/6426) and [macOS image configurations](https://github.com/actions/runner-images/tree/main/images/macos).
+
+## Pipeline agents can be registered using a Service Principal
+
+With Azure DevOps Service Service Principals support is in [preview](https://devblogs.microsoft.com/devops/introducing-service-principal-and-managed-identity-support-on-azure-devops/), we are adding the capability to use a Service Principal to register a Pipelines agent with Azure DevOps Service:
+```
+--auth 'SP' --clientid 12345678-1234-1234-abcd-1234567890ab --clientsecret <secret> --tenantid 12345678-1234-1234-abcd-1234567890ab
+```
+You can grant the Service Principal access on the security settings of an agent pool. This removes the need to use a Personal Access Token (PAT).
