@@ -615,9 +615,9 @@ On the Options tab, you can specify default values for all jobs in the pipeline.
 
 Timeouts have the following level of precedence.
 
-1. On Microsoft-hosted agents, jobs are [limited in how long they can run based on project type and whether they are run using a paid parallel job](../agents/hosted.md#capabilities-and-limitations),. When the Microsoft-hosted job timeout interval elapses the job is terminated. On Microsoft-hosted agents, jobs cannot run longer than this interval, regardless of any job level timeouts specified in the job.
-2. The timeout configured at the job level specifies the maximum duration for the job to run. When the job level timeout interval elapses, the job is terminated. If the job is run on a Microsoft-hosted agent, setting the job level timeout to a longer interval than the [built-in Microsoft-hosted job level timeout](../agents/hosted.md#capabilities-and-limitations) has no effect and the Microsoft-hosted job timeout is used.
-1. You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). If the job level timeout intervals elapses before the task completes, the running job is terminated, even if the task is configured with a longer timeout interval.
+1. On Microsoft-hosted agents, jobs are [limited in how long they can run based on project type and whether they are run using a paid parallel job](../agents/hosted.md#capabilities-and-limitations). When the Microsoft-hosted job timeout interval elapses the job is terminated. On Microsoft-hosted agents, jobs cannot run longer than this interval, regardless of any job level timeouts specified in the job.
+2. The timeout configured at the job level specifies the maximum duration for the job to run. When the job level timeout interval elapses, the job is terminated. If the job is run on a Microsoft-hosted agent, setting the job level timeout to an interval greater than the [built-in Microsoft-hosted job level timeout](../agents/hosted.md#capabilities-and-limitations) has no effect and the Microsoft-hosted job timeout is used.
+1. You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). If the job level timeout interval elapses before the task completes, the running job is terminated, even if the task is configured with a longer timeout interval.
 
 <a name="parallelexec"></a>
 
@@ -716,7 +716,7 @@ To run multiple jobs using multi-configuration option,
   number less than you have configured for your subscription, enter that value as the
   **Maximum number of agents** parameter.
 
-For example, you might define two variables named **Location** and **Browser** as follows::
+For example, you might define two variables named **Location** and **Browser** as follows:
 
 * **Location** = `US,Europe`
 * **Browser** = `IE,Chrome,Edge,Firefox`
@@ -828,7 +828,7 @@ The `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are
 When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories other than `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 > [!IMPORTANT]
-> The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
+> The workspace clean options are applicable only for self-hosted agents. Jobs are always run on a new agent with Microsoft-hosted agents. 
 
 ```yaml
 - job: myJob
@@ -939,7 +939,7 @@ For information about using **dependsOn** and **condition**, see [Specify condit
 ## Access to OAuth token
 
  You can allow scripts running in a job to access the current Azure Pipelines or TFS OAuth security token.
-  The token can be use to authenticate to the Azure Pipelines REST API.
+  The token can be used to authenticate to the Azure Pipelines REST API.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
