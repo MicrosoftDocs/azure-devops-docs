@@ -318,7 +318,7 @@ For more information, see [Add tasks or child items as checklists](../../boards/
 You can control the test plan where you create inline tests through the Kanban board. Choose to create a new test plan for each new test that you add or add all new tests to a selected test plan. 
 
 ::: moniker range=">= azure-devops-2019"
-1. From the board settings page (product backlog only), choose **Annotations**. [Make sure that **Test** annotation is enabled](#enable-or-disable-an-annotation), a requirement to configure inline tests.
+1. From the board settings page (product backlog only), choose **Annotations**. [Make sure that **Test** annotation is enabled](#enable-or-disable-annotations), a requirement to configure inline tests.
 
 2. Select **Tests**, and then choose the options you want. Choose an existing test plan from the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon results.  
 
