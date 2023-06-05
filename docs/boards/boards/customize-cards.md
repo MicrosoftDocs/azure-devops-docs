@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/02/2023
+ms.date: 06/05/2023
 ---
  
 # Customize cards on a Kanban board  
@@ -48,9 +48,9 @@ Within the [Settings dialog for the Kanban board](#open-your-kanban-board-settin
 |---------|---------|
 |**[Fields](#fields)**  | Add or remove fields from cards. Includes adding the **Parent** field to cards.        |
 |**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
-|**[Tag colors](#color-tags)**      | Specify a tag color and enable or disable a tag color.        |
-|**[Annotations](#annotations)**   | Enable or disable annotations to appear on cards.        |
-|**[Tests](#tests)**    |Configure how you want tests to appear and behave on the cards.         |
+|**[Tag colors](#assign-tag-colors)**      | Specify a tag color and enable or disable a tag color.        |
+|**[Annotations](#enable-or-disable-annotations)**   | Enable or disable annotations to appear on cards.        |
+|**[Tests](#configure-inline-tests)**    |Configure how you want tests to appear and behave on the cards.         |
 |**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
 ::: moniker-end
 
@@ -59,9 +59,9 @@ Within the [Settings dialog for the Kanban board](#open-your-kanban-board-settin
 |---------|---------|
 |**[Fields](#fields)**  | Add or remove fields from cards.      |
 |**[Styles](#style-rule)**   | Add styling rules to change card color and title style based on field criteria.        |
-|**[Tag colors](#color-tags)**      | Specify a tag color and enable or disable a tag color.        |
-|**[Annotations](#annotations)**   | Enable or disable annotations to appear on cards.        |
-|**[Tests](#tests)**    |Configure how you want tests to appear and behave on the cards.         |
+|**[Tag colors](#assign-tag-colors)**      | Specify a tag color and enable or disable a tag color.        |
+|**[Annotations](#enable-or-disable-annotations)**   | Enable or disable annotations to appear on cards.        |
+|**[Tests](#configure-inline-tests)**    |Configure how you want tests to appear and behave on the cards.         |
 |**[Card reordering](#reorder-cards)**    | Choose expected behavior when reordering cards on the board.        |
 ::: moniker-end
 
@@ -223,7 +223,7 @@ You can apply style rules to change the color of cards on Kanban boards and Task
    - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
    - You can quickly enable and disable a style rule.
 
-    In the following example, we add a *Stale tasks* rule, which highlights tasks that haven't changed in the last five days.
+   In the following example, we add a *Stale tasks* rule, which highlights tasks that haven't changed in the last five days.
 
    :::image type="content" source="../sprints/media/customize/task-board-card-style-rule-stale-tasks.png" alt-text="Screenshot showing Taskboard, Style dialog, and example style rule."::: 
 
@@ -256,7 +256,7 @@ You can apply style rules to change the color of cards on Kanban boards and Task
 2. When you're done, choose **Save**.
 ::: moniker-end
 
-## Assign a color to a tag   
+## Assign tag colors  
 
 Before you set tag colors, [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.   
 
@@ -269,7 +269,7 @@ Before you set tag colors, [add tags to backlog items](../../boards/queries/add-
 
 2. When you're done, select **Save**.
 
-## Enable or disable an annotation
+## Enable or disable annotations
 
 All applicable annotations for the selected board are enabled by default. These annotations include all work item types added to the next level backlog, GitHub, and Tests. Disable any unused annotations or ones that you want to restrict for a specific backlog level. 
 
