@@ -613,7 +613,7 @@ On the Options tab, you can specify default values for all jobs in the pipeline.
 
 * * *
 
-Timeouts have the following level of precendence.
+Timeouts have the following level of precedence.
 
 1. On Microsoft-hosted agents, jobs are [limited in how long they can run based on project type and whether they are run using a paid parallel job](../agents/hosted.md#capabilities-and-limitations),. When the Microsoft-hosted job timeout interval elapses the job is terminated. On Microsoft-hosted agents, jobs cannot run longer than this interval, regardless of any job level timeouts specified in the job.
 2. The timeout configured at the job level specifies the maximum duration for the job to run. When the job level timeout interval elapses, the job is terminated. If the job is run on a Microsoft-hosted agent, setting the job level timeout to a longer interval than the [built-in Microsoft-hosted job level timeout](../agents/hosted.md#capabilities-and-limitations) has no effect and the Microsoft-hosted job timeout is used.
