@@ -620,6 +620,11 @@ On the Options tab, you can specify default values for all jobs in the pipeline.
 
 You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions).
 
+Timeouts have the following level of precendence.
+
+1. On Microsoft-hosted agents, jobs are limited in how long they can run based on project type and whether they are run using a paid parallel job. When the [Microsoft-hosted timeout interval elapses](../licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost), the job is terminated.
+2. The timeout configured at the job level specifies the maximum duration for the job to run. When the job level timeout interval elapses, the job is terminated. 
+
 > [!NOTE]
 > Azure Pipelines enforces time limits based on your project type and whether you are using paid parallel jobs, and timeouts can also be specified at the job level. If either of these timeout intervals elapses before your task completes, the running job is terminated, even if the task is configured with a longer timeout interval.
 
