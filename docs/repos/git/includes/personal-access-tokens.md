@@ -39,39 +39,6 @@ ms.topic: include
 > [!WARNING]
 > Treat and use a PAT like your password and keep it a secret.
 
-<!---
-#### [Current page](#tab/current-page) 
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-  
-2. From your home page, open your profile and go to your security details.
-
-   ![My profile Team Services](/azure/devops/repos/git/media/my-profile-team-services.png)
-
-3. Select **+ New Token**.
-
-   ![Select New Token to create](/azure/devops/repos/git/media/select-new-token.png)
-
-4. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
-
-   ![Enter basic token information](/azure/devops/repos/git/media/create-new-pat.png)
-
-5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
-   for this token to authorize for *your specific tasks*.
-
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, limit your token's scope to **Agent Pools (Read & manage)**, and then select **Create**.
-
-   ![Select scopes for your PAT](~/repos/git/media/select-pat-scopes.png)
-
-6. When you're done, make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
-
-   ![Copy the token to your clipboard](/azure/devops/repos/git/media/copy-token-to-clipboard.png)
-
-> [!WARNING]
-> Treat and use a PAT like your password and keep it a secret.
-
--->
-
 ::: moniker range=" < azure-devops-2019"
 
 1. Sign in to your web portal (```https://{server}:8080/tfs/```).
@@ -166,9 +133,9 @@ To keep your token more secure, use credential managers so you don't have to ent
 In Bash, enter the following code.
 
 ```bash
-MY_PAT=yourPAT # replace "yourPAT" with ":PatStringFromWebUI"
+MY_PAT=[YourPAT] # replace "yourPAT" with ":PatStringFromWebUI"
 B64_PAT=$(printf "%s"":$MY_PAT" | base64)
-git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
+git config --global --add http.extraHeader "Authorization: Basic ${B64_PAT}" 
 ```
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
@@ -313,25 +280,9 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
     :::image type="content" source="/azure/devops/repos/git/media/select-edit-pat-current-view.png" alt-text="Screenshot showing highlighted Edit button to modify PAT.":::
 
-3. Edit the token name, organization it applies to, token expiration, or the scope of access that's associated with the token, and then select **Save**.
+3. Edit the token name, token expiration, or the scope of access that's associated with the token, and then select **Save**.
 
-   ![Screenshot showing saved PAT.](/azure/devops/repos/git/media/modify-pat.png)
-
-<!---
-
-1. From your home page, open your profile. Go to **Security** details.
-
-   ![Go to the organization home page, open your profile, go to Security](/azure/devops/repos/git/media/my-profile-team-services.png)  
-
-2. Select the token for which you want to modify, and then select **Edit**.
-
-   :::image type="content" source="/azure/devops/repos/git/media/select-edit-pat-current-view.png" alt-text="Select Edit to modify PAT":::
-
-3. Edit the token name, organization it applies to, token expiration, or the scope of access that's associated with the token, and then select **Save**.
-
-   ![Modify and Save PAT](/azure/devops/repos/git/media/modify-pat.png)
-
--->
+    :::image type="content" source="../media/modify-pat.png" alt-text="Screenshot showing modified PAT.":::
 
 ## Revoke a PAT
 
@@ -348,22 +299,5 @@ You can revoke a PAT at any time, for various reasons.
 3. Select **Revoke** in the confirmation dialog.
 
    ![Screenshot showing confirmation screen to revoke PAT.](/azure/devops/repos/git/media/revoke-token-confirmation-dialog-preview.png)
-
-<!--
-#### [Current page](#tab/current-page) 
-
-1. From your home page, open your profile. Go to **Security** details.
-
-   ![Go to the organization home page, open your profile, go to Security](/azure/devops/repos/git/media/my-profile-team-services.png)  
-
-2. Select the token for which you want to revoke access, and then select **Revoke**.
-
-   :::image type="content" source="~/repos/git/media/revoke-pat-current-view.png" alt-text="Revoke PAT":::
-
-3. Select **Revoke** in the confirmation dialog.
-
-   ![Confirm revoke](/azure/devops/repos/git/media/revoke-token-confirmation-dialog-preview.png)
-
--->
 
 ::: moniker-end
