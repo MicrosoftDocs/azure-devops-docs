@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Improvements to YAML pipeline traceability
 
-If you have a pipeline that produces artifacts, you can consume its artifacts by defining a `pipelines` [resource](https://learn.microsoft.com/azure/devops/pipelines/process/resources?#define-a-pipelines-resource) in another YAML pipeline.
+If you have a pipeline that produces artifacts, you can consume its artifacts by defining a `pipelines` [resource](/azure/devops/pipelines/process/resources?#define-a-pipelines-resource) in another YAML pipeline.
 
 Azure DevOps now shows the work items linked to the artifact of a _consumed_ pipeline run, not just in the case when the _consumed_ pipeline triggered the _consuming_ pipeline.
 
