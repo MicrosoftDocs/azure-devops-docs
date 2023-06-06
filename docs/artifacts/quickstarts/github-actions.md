@@ -19,7 +19,7 @@ Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
 - An Azure Artifact feed that you'll push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
 - An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
-    - Your PAT needs read, write, and manage **Packaging** permission.
+    - Your PAT needs to have read, write, and manage **Packaging** permissions.
 
 ## Authenticate with Azure Pipelines
 
