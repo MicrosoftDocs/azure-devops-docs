@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [GitHub Advanced Security for Azure DevOps (public preview)](#github-advanced-security-for-azure-devops-public-preview)
-- [Fixed a bug that allowed users to bypass restrict global personal access token (PAT) creation](#fixed-a-bug-that-allowed-users-to-bypass-restrict-global-personal-access-token-pat-creation)
+- [Resolved issue that allowed users to bypass restrict global personal access token (PAT) creation](#resolved-issue-that-allowed-users-to-bypass-restrict-global-personal-access-token-pat-creation)
