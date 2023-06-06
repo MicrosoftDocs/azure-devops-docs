@@ -43,7 +43,7 @@ If your organization uses self-hosted agents, there are more requirements:
 | `https://{organization_name}.governance.visualstudio.com/` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance   |
 | `https://{organization_name}.visualstudio.com`  | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance | 
 
-* Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://download.visualstudio.microsoft.com). 
+* Run a compatible version of the .NET runtime (currently .NET 6.0.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
 * Install the CodeQL bundle to the agent tool cache: 
     1.	Pick the latest CodeQL release bundle from [GitHub](https://github.com/github/codeql-action/releases).
