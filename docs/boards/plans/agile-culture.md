@@ -108,7 +108,10 @@ As you plan how you want to grow your Agile tool set, consider the following are
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Manage risk, track work. :::column-end::: :::column span="2"::: The organization determines how each functional unit communicates status and risk. They establish a &quot;contract of communication&quot; as to the minimum required information the organization needs.  
+      Manage risk, track work 
+   :::column-end::: 
+   :::column span="2"::: 
+      The organization determines how each functional unit communicates status and risk. They establish a &quot;contract of communication&quot; as to the minimum required information the organization needs.  
       Also, the organization provides the infrastructure to reduce risks. The organization owes the teams anything they can do to reduce risks that are common across teams. 
    :::column-end:::
    :::column span="2":::
