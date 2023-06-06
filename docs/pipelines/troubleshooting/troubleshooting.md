@@ -18,7 +18,7 @@ author: steved0x
 This topic provides guidance on the common reasons that pipelines fail to [trigger](#pipeline-wont-trigger), [get an agent and start](#pipeline-queues-but-never-starts), or [complete](#pipeline-fails-to-complete). For instructions on reviewing pipeline logs, see [Review logs to diagnose pipeline issues](review-logs.md).
 
 > [!NOTE]
-> If you are directed to this article from a **Troubleshoot pipeline runs** link in the Azure DevOps portal:
+> If you are directed to this article from a **Troubleshooting failed runs** link in the Azure DevOps portal:
 > 1. Review the common causes in [Pipeline fails to complete](#pipeline-fails-to-complete).
 > 2. Follow the troubleshooting steps [Review logs to diagnose pipeline issues](review-logs.md).
 
