@@ -188,10 +188,15 @@ Note that most new features we are shipping in Boards are only available in the 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (preview)</a></td>
          <td>Boards</td>
-         <td>2023 Q2</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
-      </tr>     
-      
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
+         <td>Boards</td>
+         <td>2023 Q3</td>
+         <td>Future</td>
+      </tr>                
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
          <td>Boards</td>
