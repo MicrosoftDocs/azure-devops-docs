@@ -20,7 +20,7 @@ This topic provides guidance on the common reasons that pipelines fail to [trigg
 > [!NOTE]
 > If you are directed to this article from a **Troubleshooting failed runs** link in the Azure DevOps portal:
 > 1. Review the common causes in [Pipeline fails to complete](#pipeline-fails-to-complete).
-> 2. Follow the troubleshooting steps [Review logs to diagnose pipeline issues](review-logs.md).
+> 2. Follow the troubleshooting steps in [Review logs to diagnose pipeline issues](review-logs.md).
 
 ::: moniker range="tfs-2018"
 
