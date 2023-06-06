@@ -10,6 +10,9 @@
       items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/sprint-222-update.md
+          - name: April 20
           - name: May 9 
             href: 2023/sprint-221-update.md
           - name: April 20
@@ -218,6 +221,8 @@
         items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/boards/sprint-222-update.md
           - name: May 9
             href: 2023/boards/sprint-221-update.md
           - name: April 20
@@ -389,6 +394,8 @@
         items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/pipelines/sprint-222-update.md
           - name: May 9
             href: 2023/pipelines/sprint-221-update.md
           - name: April 20
@@ -629,6 +636,8 @@
         items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/general/sprint-222-update.md
           - name: March 31
             href: 2023/general/sprint-219-update.md
           - name: February 17
