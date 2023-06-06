@@ -6,9 +6,9 @@ ms.date: 05/30/2023
 ms.custom: template-how-to-pattern
 ---
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
 # Create a multistage pipeline with Azure DevOps
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use a multistage pipeline to divide your CI/CD process into stages that represent different parts of your development cycle. In this article, we'll build a YAML pipeline with four stages: 
 
