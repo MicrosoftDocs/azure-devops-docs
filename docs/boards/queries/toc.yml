@@ -35,7 +35,7 @@
   - name: Cross-service and enhanced query operations
     href: query-support-integration-cross-service-extensions.md
     displayname: OData, Power BI, WIQL
-  - name: Bulk import/update work items (CSV)
+  - name: Bulk import & update work items (CSV)
     href: import-work-items-from-csv.md
     displayname: import, export, csv
   - name: Bulk add or modify work items (Excel)
