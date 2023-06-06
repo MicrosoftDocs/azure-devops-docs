@@ -156,7 +156,7 @@ Azure DevOps is billed on a per-user per-month basis. There might be more charge
 
 ## Security
 
-- Consider the [security benefits of using Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted&tabs=yaml#security) when choosing whether to use Microsoft-hosted or self-hosted agents.
+- Consider the [security benefits of using Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#security) when choosing whether to use Microsoft-hosted or self-hosted agents.
 
 - Ensure all changes to environments are done through pipelines. Implement role-based access controls (RBAC) on the principle of least privilege, preventing users from accessing environments.
 
