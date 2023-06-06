@@ -10,13 +10,17 @@ ms.custom: template-how-to-pattern
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use a multistage pipeline to divide your CI/CD process into stages that represent different parts of your development cycle. In this article, we'll build a YAML pipeline with four stages: 
+You can use an Azure DevOps multistage pipeline to divide your CI/CD process into stages that represent different parts of your development cycle. Using a multistage pipeline gives you more visibility into your deployment process and makes it easier to integrate like [approvals and checks](approvals.md). 
 
-* Build: builds the source code and produces a package
-* Dev: test changes before deploying to production
+In this article, you'll build a YAML pipeline with three stages: 
+
+* Build: build the source code and produce a package
+* Dev: test changes before deploying to staging
 * Staging: deploy to a staging Azure App Service instance
 
-We'll create a .NET web application for a pretend space game that includes a leaderboard to show high scores. 
+In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
+
+In this article, you'll create a .NET web application for a pretend space game that includes a leaderboard to show high scores. 
 
 ## Prerequisites
 
