@@ -4,7 +4,7 @@ description: How to cache NuGet packages in Azure Pipelines
 ms.topic: conceptual
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 05/23/2022
+ms.date: 06/06/2023
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -61,6 +61,8 @@ This task will only run if the `CACHE_RESTORED` variable is false.
     command: 'restore'
     restoreSolution: '**/*.sln'
 ```
+
+If you encounter the error message "project.assets.json not found" during your build task, you can resolve it by removing the condition `condition: ne(variables.CACHE_RESTORED, true)` from your restore task. By doing so, the restore command will be executed, generating your project.assets.json file. The restore task will not download packages that are already present in your corresponding folder.
 
 ## Performance comparison
 
