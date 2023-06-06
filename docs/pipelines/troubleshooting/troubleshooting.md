@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 01/30/2023
+ms.date: 06/06/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -15,7 +15,7 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
+This topic provides general pipeline troubleshooting guidance. If you are directed to this article from a **Troubleshoot pipeline runs** link in the Azure DevOps portal, you can review the common causes in [Pipeline fails to complete](#pipeline-fails-to-complete) and follow the troubleshooting steps [Review logs to diagnose pipeline issues](review-logs.md).
 
 ::: moniker range="tfs-2018"
 
@@ -26,9 +26,11 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 You can use the following troubleshooting sections to help diagnose issues with your pipeline. Most pipeline failures fall into one of these categories.
 
 * [Pipeline won't trigger](#pipeline-wont-trigger)
-* [Pipeline queues but never gets an agent](#pipeline-queues-but-never-gets-an-agent)
+* [Pipeline queues but never starts](#pipeline-queues-but-never-starts)
 * [Pipeline fails to complete](#pipeline-fails-to-complete)
 
+
+For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
 <a name="my-pipeline-isnt-triggering" />
 
 ## Pipeline won't trigger
@@ -112,9 +114,9 @@ Once all UI scheduled triggers are removed, a push must be made in order for the
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
-## Pipeline queues but never gets an agent
+## Pipeline queues but never starts
 
-If your pipeline queues but never gets an agent, check the following items.
+If your pipeline queues but never starts, check the following items.
 
 ::: moniker range="azure-devops"
 
@@ -300,7 +302,7 @@ Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) fo
 
 ## Pipeline fails to complete
 
-If your pipeline gets an agent but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
+If your pipeline starts, but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
 
 * [Job time-out](#job-time-out)
 * [Issues downloading code](#issues-downloading-code)
