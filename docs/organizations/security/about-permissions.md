@@ -1,7 +1,7 @@
 ---
 title: Get started with permissions, access levels, and security groups 
 titleSuffix: Azure DevOps
-description: Understand how permissions are managed in Azure DevOps
+description: Understand how you can manage permissions and access in Azure DevOps
 ms.subservice: azure-devops-security
 ms.assetid: 
 toc: show
@@ -12,11 +12,11 @@ monikerRange: '<= azure-devops'
 ms.date: 03/23/2023  
 ---
 
-# Get started with permissions, access, and security groups  
+# Get started with permissions and access
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When it comes to accessing an Azure DevOps feature, it's helpful to understand the following key concepts. 
+In this article, learn about how you can manage access levels and permissions via inheritance, security groups, roles, and more in Azure DevOps. Get started by understanding the following key concepts. 
 
 - **[About permissions](#permissions)**: 
 	- All users added to Azure DevOps are added to one or more default *security groups*. 
@@ -43,7 +43,6 @@ For example, most Azure DevOps users are added to the **Contributors** security 
 Administrators should be added to the Project Collection Administrators or Project Administrators group. Administrators manage security groups and permissions from the web portal, primarily from **Project settings**. Contributors manage permissions for objects they create from the web portal as well.   
 
 For an overview of default permissions, see [Default permissions quick reference](permissions-access.md).  
-
 
 <a id="security-group-membership" /> 
 
@@ -138,9 +137,7 @@ If you only have to manage a small set of users, then you can skip this step. Ho
 
 To set up Azure Active Directory for use with Azure DevOps Services, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md).
 
-
-> [!NOTE]  
-> When your organization is connected to Azure Active Directory, there are a number of organization policies which you can enable or disabled to secure your organization. To learn more, see [About security, authentication, and authorization, Security-policies](about-security-identity.md#security-policies). 
+When your organization is connected to Azure Active Directory, there are many organization policies which you can enable or disable to secure your organization. For more information, see [About security, authentication, and authorization, Security-policies](about-security-identity.md#security-policies). 
 
 To manage organizational access with Azure AD, refer to the following articles: 
 
@@ -158,12 +155,10 @@ To set up Active Directory for use with Azure DevOps Server, see the following a
 * [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 * [Active Directory Domain Services Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started).
 
-Typically, you should install Active Directory prior to installing Azure DevOps Server.
+Install Active Directory prior to installing Azure DevOps Server.
 
 ::: moniker-end
 
-
- 
 <a name="validusers"></a>
 
 ### Valid user groups
