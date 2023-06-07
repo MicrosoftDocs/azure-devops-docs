@@ -2,7 +2,7 @@
 title: Create a multistage pipeline with Azure DevOps
 description: Build an app pipeline for development and staging.
 ms.topic: how-to 
-ms.date: 05/30/2023
+ms.date: 06/15/2023
 ms.custom: template-how-to-pattern
 ---
 
@@ -35,7 +35,7 @@ In this article, you'll create a .NET web application for a pretend space game t
 1. Fork the following sample repository at GitHub.
 
 ```
-https://github.com/Azure-Samples/js-e2e-express-server
+https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy
 ```
 
 ## 2 - Create the App Service environments
@@ -93,13 +93,48 @@ Before you can deploy your pipeline, you need to first create an App Service env
       --output table
     ```
 
-## 3 - Add the Build stage
+## 3 - Create your Azure DevOps project and variables
+
+In this step, you'll set up your Azure DevOps project and a YAML Starter pipeline. You'll also add variables for your development and staging environments. 
+
+### Set up project 
+
+[!INCLUDE [sign-in-azure-pipelines](../ecosystems/includes/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](../ecosystems/includes/create-project.md)]
+
+[!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
+
+When the **Configure** tab appears, select **Starter pipeline**.
+
+1. Examine your new pipeline to see what the YAML does. When you're ready, select **Save and run**.
+
+### Add variables
+
+1. In Azure DevOps, go to **Pipelines** > **Library**. 
+
+1. Select **+ Variable group**.
+
+1. Under **Properties**, add *Release* for the variable group name.
+
+1. Create a two variables to refer to your development and staging host names. Replace the value `1234` with the correct value for your environment. 
+
+    
+|Variable name  |Example value  |
+|---------|---------|
+|WebAppNameDevelopment     |    tailspin-space-game-web-dev-1234     |
+|WebAppNameStaging     |    tailspin-space-game-web-staging-1234     |
+
+ 
+1. Select **Save** to save your variables. 
+
+## 4 - Add the Build stage
 
 
-## 4 - Add the Dev stage
+## 5 - Add the Dev stage
 
 
-## 5 - Add the Deploy stage 
+## 6 - Add the Deploy stage 
 
 
 <!-- 5. Next steps ------------------------------------------------------------------------
