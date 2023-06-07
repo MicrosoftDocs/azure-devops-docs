@@ -97,19 +97,94 @@ Before you can deploy your pipeline, you need to first create an App Service env
 
 In this step, you'll set up your Azure DevOps project and a YAML Starter pipeline. You'll also add variables for your development and staging environments. 
 
-### Set up project 
+### Add a build pipeline 
 
-[!INCLUDE [sign-in-azure-pipelines](../ecosystems/includes/sign-in-azure-pipelines.md)]
+In this section, you'll build a pipeline using an Ubuntu virtual image and that:
 
-[!INCLUDE [include](../ecosystems/includes/create-project.md)]
+* Includes a trigger that runs when there is a code change to branch.
+* Defines two variables, `buildConfiguration` and `releaseBranchName`.
+* Includes a stage named Build that builds the web application
+* Publishes an artifact you'll use in a later stage. 
 
 [!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Starter pipeline**.
+1. When the **Configure** tab appears, select **Starter pipeline**.
 
-1. Examine your new pipeline to see what the YAML does. When you're ready, select **Save and run**.
+1. Replace the contents of *azure-pipelines.yml* with this code. 
 
-### Add variables
+    ```yaml
+    trigger:
+    - '*'
+    
+    variables:
+      buildConfiguration: 'Release'
+      releaseBranchName: 'release'
+    
+    stages:
+    - stage: 'Build'
+      displayName: 'Build the web application'
+      jobs: 
+      - job: 'Build'
+        displayName: 'Build job'
+        pool:
+          vmImage: 'ubuntu-20.04'
+          demands:
+          - npm
+    
+        variables:
+          wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+          dotnetSdkVersion: '6.x'
+    
+        steps:
+        - task: UseDotNet@2
+          displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+          inputs:
+            version: '$(dotnetSdkVersion)'
+    
+        - task: Npm@1
+          displayName: 'Run npm install'
+          inputs:
+            verbose: false
+    
+        - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+          displayName: 'Compile Sass assets'
+    
+        - task: gulp@1
+          displayName: 'Run gulp tasks'
+    
+        - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+          displayName: 'Write build info'
+          workingDirectory: $(wwwrootDir)
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Restore project dependencies'
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Build the project - $(buildConfiguration)'
+          inputs:
+            command: 'build'
+            arguments: '--no-restore --configuration $(buildConfiguration)'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Publish the project - $(buildConfiguration)'
+          inputs:
+            command: 'publish'
+            projects: '**/*.csproj'
+            publishWebProjects: false
+            arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+            zipAfterPublish: true
+    
+        - publish: '$(Build.ArtifactStagingDirectory)'
+          artifact: drop
+    ```
+
+1. When you're ready, select **Save and run**.
+
+### Add environment variables
 
 1. In Azure DevOps, go to **Pipelines** > **Library**. 
 
@@ -120,16 +195,25 @@ When the **Configure** tab appears, select **Starter pipeline**.
 1. Create a two variables to refer to your development and staging host names. Replace the value `1234` with the correct value for your environment. 
 
     
-|Variable name  |Example value  |
-|---------|---------|
-|WebAppNameDevelopment     |    tailspin-space-game-web-dev-1234     |
-|WebAppNameStaging     |    tailspin-space-game-web-staging-1234     |
-
+    |Variable name  |Example value  |
+    |---------|---------|
+    |WebAppNameDevelopment     |    tailspin-space-game-web-dev-1234     |
+    |WebAppNameStaging     |    tailspin-space-game-web-staging-1234     |
+    
  
 1. Select **Save** to save your variables. 
 
 ## 4 - Add the Build stage
 
+Next, you'll update your pipeline to promote your build to the *Dev* stage. 
+
+1. In Azure Pipelines, go to **Pipelines** > **Pipelines**. 
+
+1.  Select **Edit** in the contextual menu to edit your pipeline. 
+
+    :::image type="content" source="media/mutistage-pipeline/multistage-pipeline-edit-contextual-menu.png" alt-text="Screenshot of select Edit menu item. ":::
+    
+1. Update *azure-pipelines.yml* to include a 
 
 ## 5 - Add the Dev stage
 
