@@ -76,19 +76,12 @@ Azure Artifacts offers two types of feeds: project-scoped feeds and organization
 
 ::: moniker-end
 
-## Publish NuGet packages  
+## Publish packages  
 
-Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed. See [nuget sources](/nuget/reference/cli-reference/cli-ref-sources), and [nuget push](/nuget/reference/cli-reference/cli-ref-push) for more details:
+Run the following command to publish your package to your feed. You can use any string for the *ApiKey* argument.
 
 ```Command
-nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
-nuget push -Source <SourceName> -ApiKey key <PackagePath>
-```
-
-If you don't have a NuGet package but want to try publishing packages to your feed, you can install the _HelloWorld_ sample package as follows:
-   
-```Command
-nuget install HelloWorld -ExcludeVersion
+nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
 ```
 
 ## Download NuGet packages
