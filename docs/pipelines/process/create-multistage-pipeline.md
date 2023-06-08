@@ -208,7 +208,7 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 
 ## Clean up
 
-Delete the resource group that you used, *tailspin-space-game-rg*  with the `az group delete` command.
+Delete the resource group that you used, *tailspin-space-game-rg*,  with the `az group delete` command.
 
 ```azurecli
 az group delete --name tailspin-space-game-rg
