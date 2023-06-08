@@ -76,6 +76,13 @@ Azure Artifacts offers two types of feeds: project-scoped feeds and organization
 
 ::: moniker-end
 
+## Download packages
+
+[!INCLUDE [](includes/nuget/consume.md)]
+
+> [!NOTE]
+> Using NuGet Package Explorer to search for packages in upstreams is not supported.
+
 ## Publish packages  
 
 Run the following command to publish your package to your feed. You can use any string for the *ApiKey* argument.
@@ -83,13 +90,6 @@ Run the following command to publish your package to your feed. You can use any 
 ```Command
 nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
 ```
-
-## Download NuGet packages
-
-[!INCLUDE [](includes/nuget/consume.md)]
-
-> [!NOTE]
-> Searching for packages in upstreams with NuGet Package Explorer is not supported.
 
 ## Related articles
 
