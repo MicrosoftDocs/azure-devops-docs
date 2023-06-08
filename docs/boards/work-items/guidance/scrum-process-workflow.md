@@ -109,7 +109,7 @@ When you update the State, teams know which items are new, in progress, or compl
 > [!div class="mx-tdBreakAll"]  
 > |Product Backlog Item |Bug |Task |  
 > |-------------|----------|---------| 
-> |:::image type="content" source="media/alm-pt-scrum-wf-pbi.png" alt-text="Conceptual image of Product Backlog Item workflow states, Scrum process.."::: |:::image type="content" source="media/alm-pt-scrum-wf-bug.png" alt-text="Conceptual image of Bug workflow states, Scrum process."::: |:::image type="content" source="media/alm-pt-scrum-wf-task.png" alt-text="Conceptual image of Task workflow states, Scrum process.."::: |
+> |:::image type="content" source="media/alm-pt-scrum-wf-pbi.png" alt-text="Conceptual image of Product Backlog Item workflow states, Scrum process."::: |:::image type="content" source="media/alm-pt-scrum-wf-bug.png" alt-text="Conceptual image of Bug workflow states, Scrum process."::: |:::image type="content" source="media/alm-pt-scrum-wf-task.png" alt-text="Conceptual image of Task workflow states, Scrum process."::: |
 
 PBIs and bugs follow this typical workflow progression:
 
