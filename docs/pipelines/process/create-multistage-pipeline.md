@@ -312,7 +312,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
               - task: AzureWebApp@1
                 displayName: 'Azure App Service Deploy: website'
                 inputs:
-                  azureSubscription: 'Your-Subscription'
+                  azureSubscription: 'your-subscription'
                   appName: '$(WebAppNameDev)'
                   appType: webAppLinux
                   package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
@@ -354,8 +354,137 @@ Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you w
 
 ### Add new stage to pipeline
 
-1. Add a new stage to your pipeline that deploys to the staging environment. 
+You'll add new stage, `Staging` to the pipeline that includes a manual approval. 
 
+1. Edit your pipeline file and add the `Staging` section.  
 
+    ```yaml
+        trigger:
+    - '*'
+    
+    variables:
+      buildConfiguration: 'Release'
+      releaseBranchName: 'release'
+    
+    stages:
+    - stage: 'Build'
+      displayName: 'Build the web application'
+      jobs: 
+      - job: 'Build'
+        displayName: 'Build job'
+        pool:
+          vmImage: 'ubuntu-20.04'
+          demands:
+          - npm
+    
+        variables:
+          wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+          dotnetSdkVersion: '6.x'
+    
+        steps:
+        - task: UseDotNet@2
+          displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+          inputs:
+            version: '$(dotnetSdkVersion)'
+    
+        - task: Npm@1
+          displayName: 'Run npm install'
+          inputs:
+            verbose: false
+    
+        - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+          displayName: 'Compile Sass assets'
+    
+        - task: gulp@1
+          displayName: 'Run gulp tasks'
+    
+        - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+          displayName: 'Write build info'
+          workingDirectory: $(wwwrootDir)
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Restore project dependencies'
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Build the project - $(buildConfiguration)'
+          inputs:
+            command: 'build'
+            arguments: '--no-restore --configuration $(buildConfiguration)'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Publish the project - $(buildConfiguration)'
+          inputs:
+            command: 'publish'
+            projects: '**/*.csproj'
+            publishWebProjects: false
+            arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+            zipAfterPublish: true
+    
+        - publish: '$(Build.ArtifactStagingDirectory)'
+          artifact: drop
+    
+    - stage: 'Dev'
+      displayName: 'Deploy to the dev environment'
+      dependsOn: Build
+      condition:  succeeded()
+      jobs:
+      - deployment: Deploy
+        pool:
+          vmImage: 'ubuntu-20.04'
+        environment: dev
+        variables:
+        - group: Release
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: drop
+              - task: AzureWebApp@1
+                displayName: 'Azure App Service Deploy: website'
+                inputs:
+                  azureSubscription: 'your-subscription'
+                  appType: 'webAppLinux'
+                  appName: '$(WebAppNameDev)'
+                  package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+
+    - stage: 'Staging'
+      displayName: 'Deploy to the staging environment'
+      dependsOn: Dev
+      jobs:
+      - deployment: Deploy
+        pool:
+          vmImage: 'ubuntu-20.04'
+        environment: staging
+        variables:
+        - group: 'Release'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: drop
+              - task: AzureWebApp@1
+                displayName: 'Azure App Service Deploy: website'
+                inputs:
+                  azureSubscription: 'your-subscription'
+                  appType: 'webAppLinux'
+                  appName: '$(WebAppNameDev)'
+                  package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+
+    ```
+1.  Go to the pipeline run. Watch the build as it runs. When it reaches `Staging`, the pipeline waits for manual release approval. You'll also receive an email that you have a pipeline pending approval. 
+
+    :::image type="content" source="media/mutistage-pipeline/pipeline-wait-approval.png" alt-text="Screenshot of wait for pipeline approval.":::
+
+1. Review the approval and allow the pipeline to run. 
+ 
+    :::image type="content" source="media/mutistage-pipeline/pipeline-check-manual-validation.png" alt-text="Screenshot of manual validation check.":::
+    
+1. Verify that your app deployed by going to https://tailspin-space-game-web-staging-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
 
 ## Next steps
