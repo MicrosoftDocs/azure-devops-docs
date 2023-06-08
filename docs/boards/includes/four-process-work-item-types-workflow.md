@@ -35,7 +35,7 @@ The Basic process is available with [Azure DevOps Server 2019 Update 1](https://
 
 The following images show the Scrum process backlog work item hierarchy and workflow states. Product Backlog Items and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As works progresses from not started to completed, you update the State workflow field from **New**, **Approved**, **Committed**, and **Done**.
 
-![Scrum work item types, conceptual image](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)  ![Product backlog item workflow states, Scrum process](../work-items/guidance/media/ALM_PT_Scrum_WF_PBI.png)
+![Scrum work item types, conceptual image](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)  ![Product backlog item workflow states, Scrum process](../work-items/guidance/media/alm-pt-scrum-wf-pbi.png)
 
 When you add a product backlog item, bug, task, or feature, you create a work item. Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks&mdash;by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. To learn more about using these work item types, see [Scrum process](../work-items/guidance/scrum-process.md).  
 
