@@ -11,7 +11,7 @@ ms.date: 02/05/2020
 
 #### [Agile process](#tab/agile-process) 
 
-The following images show the Agile process backlog work item hierarchy and workflow states. User Stories and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
+The following images show the Agile process backlog work item hierarchy and workflow states. User Stories and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As work progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
 
 ![Agile work item types, conceptual image](../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)  ![User Story workflow states, Agile process](../work-items/guidance/media/ALM_PT_Agile_WF_UserStory.png) 
 
@@ -23,7 +23,7 @@ Each team can configure how they manage Bugs&mdash;at the same level as User Sto
 
 #### [Basic process](#tab/basic-process) 
 
-The following images show the Basic process backlog work item hierarchy and workflow states. Issues and Tasks are used to track work, while Epics are used to group work under larger scenarios. As works progresses from not started to completed, you update the State workflow field from **To Do**, **Doing**, and **Done**. 
+The following images show the Basic process backlog work item hierarchy and workflow states. Issues and Tasks are used to track work, while Epics are used to group work under larger scenarios. As work progresses from not started to completed, you update the State workflow field from **To Do**, **Doing**, and **Done**. 
 
 ![Basic work item types, conceptual image](../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)  ![Issue workflow states, Basic process](../get-started/media/track-issues/basic-process-workflow.png)
 
@@ -33,15 +33,15 @@ The Basic process is available with [Azure DevOps Server 2019 Update 1](https://
 
 #### [Scrum process](#tab/scrum-process) 
 
-The following images show the Scrum process backlog work item hierarchy and workflow states. Product Backlog Items and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As works progresses from not started to completed, you update the State workflow field from **New**, **Approved**, **Committed**, and **Done**.
+The following images show the Scrum process backlog work item hierarchy and workflow states. Product Backlog Items and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As work progresses from not started to completed, you update the State workflow field from **New**, **Approved**, **Committed**, and **Done**.
 
-![Scrum work item types, conceptual image](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)  ![Product backlog item workflow states, Scrum process](../work-items/guidance/media/ALM_PT_Scrum_WF_PBI.png)
+![Screenshot of Scrum work item types, conceptual image.](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)  ![Screenshot of product backlog item workflow states, Scrum process.](../work-items/guidance/media/alm-pt-scrum-wf-pbi.png)
 
 When you add a product backlog item, bug, task, or feature, you create a work item. Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks&mdash;by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. To learn more about using these work item types, see [Scrum process](../work-items/guidance/scrum-process.md).  
 
 #### [CMMI process](#tab/cmmi-process) 
 
-The following images show the CMMI process backlog work item hierarchy and workflow states. Requirements and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As works progresses from not started to completed, you update the State workflow field from **Proposed**, **Active**, **Resolved**, and **Closed**.
+The following images show the CMMI process backlog work item hierarchy and workflow states. Requirements and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. As work progresses from not started to completed, you update the State workflow field from **Proposed**, **Active**, **Resolved**, and **Closed**.
 
 ![CMMI work item types, conceptual image](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)  ![Requirement workflow states, CMMI process](../work-items/guidance/media/ALM_PT_CMMI_WF_Requirement.png)
 
