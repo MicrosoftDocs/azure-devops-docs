@@ -258,7 +258,7 @@ As with all other work item types, the Bug work item type has a well-defined wor
 
 | Agile | Scrum | CMMI | 
 |------------|------------|-----------| 
-| ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
+| ![Screenshot of bug workflow states, Agile process template.](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Screenshot of bug workflow states, Scrum process template.](../work-items/guidance/media/alm-pt-scrum-wf-bug.png) |  ![Screenshot of bug workflow states, CMMI process template.](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
 
 For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug and select a reason that indicates the bug is fixed. Typically, the person who created the bug then verifies the fix and updates the **State** from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, you can reactivate it by setting the **State** to *Committed* or *Active*.
 

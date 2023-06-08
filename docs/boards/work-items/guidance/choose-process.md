@@ -439,7 +439,7 @@ Each image shows only the default reason associated with the transition.
    :::column span="1":::
    
    #### Product backlog item
-   ![Product backlog item workflow states, Scrum process](media/ALM_PT_Scrum_WF_PBI.png)
+   ![Screenshot of product backlog item workflow states, Scrum process.](media/alm-pt-scrum-wf-pbi.png)
    :::column-end:::
    :::column span="1":::
    
@@ -456,12 +456,12 @@ Each image shows only the default reason associated with the transition.
    :::column span="1":::
    
    #### Bug
-   ![Bug workflow states, Scrum process](media/ALM_PT_Scrum_WF_Bug.png)
+   ![Screenshot of bug workflow states, Scrum process.](media/alm-pt-scrum-wf-bug.png)
    :::column-end:::
    :::column span="1":::
    
    #### Task
-   ![Task workflow states, Scrum process](media/ALM_PT_Scrum_WF_Task.png)
+   ![Screenshot of task workflow states, Scrum process.](media/alm-pt-scrum-wf-task.png)
    :::column-end:::
    :::column span="1":::
      
