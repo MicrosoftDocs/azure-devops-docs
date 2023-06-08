@@ -34,6 +34,7 @@ Make sure your machine has these prerequisites:
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
     * Windows 8.1
     * Windows 10
+    * Windows 11
   * Server OS
     * Windows Server 12 or higher
 * The agent software installs its own version of .NET so there is no .NET prerequisite.
