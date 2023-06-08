@@ -16,7 +16,7 @@ In this article, you'll build a YAML pipeline with three stages:
 
 * Build: build the source code and produce a package
 * Dev: test changes before deploying to staging
-* Staging: deploy to a staging Azure App Service instance
+* Staging: deploy to a staging Azure App Service instance after manual approval
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
 
@@ -93,28 +93,30 @@ Before you can deploy your pipeline, you need to first create an App Service env
       --output table
     ```
 
+1. Copy the names of the App Service instances to use as variables in the next section. 
+
 ## 3 - Create your Azure DevOps project and variables
 
-In this step, you'll set up your Azure DevOps project and a YAML Starter pipeline. You'll also add variables for your development and staging environments. 
+Set up your Azure DevOps project and a build pipeline. You'll also add variables for your development and staging environments. 
 
-### Add a build pipeline 
-
-In this section, you'll build a pipeline using an Ubuntu virtual image and that:
+Your build pipeline:
 
 * Includes a trigger that runs when there is a code change to branch.
 * Defines two variables, `buildConfiguration` and `releaseBranchName`.
 * Includes a stage named Build that builds the web application
 * Publishes an artifact you'll use in a later stage. 
 
+### Add a build pipeline 
+
 [!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-1. When the **Configure** tab appears, select **Starter pipeline**.
+7. When the **Configure** tab appears, select **Starter pipeline**.
 
-1. Replace the contents of *azure-pipelines.yml* with this code. 
+8. Replace the contents of *azure-pipelines.yml* with this code. 
 
-  :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-67" highlight="17-24":::
+  :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-67":::
 
-1. When you're ready, select **Save and run**.
+9. When you're ready, select **Save and run**.
 
 ### Add environment variables
 
@@ -150,7 +152,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
     * Run when the Build stage succeeds because of a condition
     * Download an artifact from `drop` and deploy to Azure App Service
 
-  :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-92" highlight="69-92":::
+    :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-92" highlight="69-92":::
 
 1. Change the `AzureWebApp@1` task to use your subscription. 
     1. Select **Settings** for the task. 
@@ -176,7 +178,7 @@ Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you w
 
 1. On the staging environment page, select **Approvals and checks**.
 
-:::image type="content" source="media/mutistage-pipeline/pipeline-add-check-to-environment.png" alt-text="Screenshot of approvals and checks menu option. ":::
+    :::image type="content" source="media/mutistage-pipeline/pipeline-add-check-to-environment.png" alt-text="Screenshot of approvals and checks menu option. ":::
 
 1. Select **Approvals**. 
 
@@ -192,7 +194,7 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 
 1. Edit your pipeline file and add the `Staging` section.  
 
-  :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-116" highlight="94-116":::
+    :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-116" highlight="94-116":::
 
 1.  Go to the pipeline run. Watch the build as it runs. When it reaches `Staging`, the pipeline waits for manual release approval. You'll also receive an email that you have a pipeline pending approval. 
 
@@ -204,4 +206,10 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
     
 1. Verify that your app deployed by going to https://tailspin-space-game-web-staging-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
 
-## Next steps
+## Clean up
+
+Delete the resource group that you used, *tailspin-space-game-rg*  with the `az group delete` command.
+
+```azurecli
+az group delete --name tailspin-space-game-rg
+```
