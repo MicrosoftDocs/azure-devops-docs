@@ -42,26 +42,19 @@ Azure Artifacts offers two types of feeds: project-scoped feeds and organization
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Sign in to your Azure DevOps organization `https://dev.azure.com/<Your_Organization>` and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select **Connect to feed**.
 
-    :::image type="content" source="./media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
+    :::image type="content" source="./media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot showing the connect to feed button.":::
 
-1. Select **NuGet.exe**.
+1. Select **NuGet.exe**. If this is the first time using Azure Artifacts with Nuget.exe, ensure that you have installed all the prerequisites.
 
-    :::image type="content" source="./media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
+1. Follow the instructions provided in the **Project setup** section to configure your nuget.config file.
 
-1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to:
-
-    1. Install the [latest NuGet version](https://www.nuget.org/downloads).
-    1. Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
-
-1. Follow the instructions in the **Project setup** to add a nuget.config file.
-
-    :::image type="content" source="./media/project-setup.png" alt-text="Project setup":::
+    :::image type="content" source="./media/project-setup.png" alt-text="A screenshot showing how to set up your project.":::
 
 ::: moniker-end
 
@@ -75,11 +68,11 @@ Azure Artifacts offers two types of feeds: project-scoped feeds and organization
 
 1. Select **Connect to feed**.
 
-    :::image type="content" source="./media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
+    :::image type="content" source="./media/connect-to-feed.png" alt-text="A screenshot showing the connect to feed button in TFS.":::
 
-1. Select **NuGet** and follow the instruction to connect to your feed.
+1. Select **NuGet**, and then follow the instruction to connect to your feed.
 
-    :::image type="content" source="./media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
+    :::image type="content" source="./media/connect-to-nuget-feed-tfs.png" alt-text="A screenshot showing how to connect to your feed in TFS.":::
 
 ::: moniker-end
 
