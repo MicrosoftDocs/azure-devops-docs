@@ -197,13 +197,13 @@ In this section, you'll build a pipeline using an Ubuntu virtual image and that:
     
     |Variable name  |Example value  |
     |---------|---------|
-    |WebAppNameDevelopment     |    tailspin-space-game-web-dev-1234     |
+    |WebAppNameDev     |    tailspin-space-game-web-dev-1234     |
     |WebAppNameStaging     |    tailspin-space-game-web-staging-1234     |
     
  
 1. Select **Save** to save your variables. 
 
-## 4 - Add the Build stage
+## 4 - Add the Dev stage
 
 Next, you'll update your pipeline to promote your build to the *Dev* stage. 
 
@@ -213,26 +213,149 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 
     :::image type="content" source="media/mutistage-pipeline/multistage-pipeline-edit-contextual-menu.png" alt-text="Screenshot of select Edit menu item. ":::
     
-1. Update *azure-pipelines.yml* to include a 
+1. Update *azure-pipelines.yml* to include a Dev stage. In the Dev stage, your pipeline will:
 
-## 5 - Add the Dev stage
-
-
-## 6 - Add the Deploy stage 
+    * Run when the Build stage succeeds because of a condition
+    * Download an artifact from `drop` and deploy to Azure App Service
 
 
-<!-- 5. Next steps ------------------------------------------------------------------------
+    ```yaml
+    trigger:
+    - '*'
+    
+    variables:
+      buildConfiguration: 'Release'
+      releaseBranchName: 'release'
+    
+    stages:
+    - stage: 'Build'
+      displayName: 'Build the web application'
+      jobs: 
+      - job: 'Build'
+        displayName: 'Build job'
+        pool:
+          vmImage: 'ubuntu-20.04'
+          demands:
+          - npm
+    
+        variables:
+          wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+          dotnetSdkVersion: '6.x'
+    
+        steps:
+        - task: UseDotNet@2
+          displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+          inputs:
+            version: '$(dotnetSdkVersion)'
+    
+        - task: Npm@1
+          displayName: 'Run npm install'
+          inputs:
+            verbose: false
+    
+        - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+          displayName: 'Compile Sass assets'
+    
+        - task: gulp@1
+          displayName: 'Run gulp tasks'
+    
+        - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+          displayName: 'Write build info'
+          workingDirectory: $(wwwrootDir)
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Restore project dependencies'
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Build the project - $(buildConfiguration)'
+          inputs:
+            command: 'build'
+            arguments: '--no-restore --configuration $(buildConfiguration)'
+            projects: '**/*.csproj'
+    
+        - task: DotNetCoreCLI@2
+          displayName: 'Publish the project - $(buildConfiguration)'
+          inputs:
+            command: 'publish'
+            projects: '**/*.csproj'
+            publishWebProjects: false
+            arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+            zipAfterPublish: true
+    
+        - publish: '$(Build.ArtifactStagingDirectory)'
+          artifact: drop
+    
+    - stage: 'Dev'
+      displayName: 'Deploy to the dev environment'
+      dependsOn: Build
+      condition: |
+        and
+        (
+          succeeded()
+        )
+      jobs:
+      - deployment: Deploy
+        pool:
+          vmImage: 'ubuntu-20.04'
+        environment: dev
+        variables:
+        - group: Release
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: drop
+              - task: AzureWebApp@1
+                displayName: 'Azure App Service Deploy: website'
+                inputs:
+                  azureSubscription: 'Your-Subscription'
+                  appName: '$(WebAppNameDev)'
+                  appType: webAppLinux
+                  package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+    ```
 
-Required: Provide at least one next step and no more than three. Include some context so the 
-customer can determine why they would click the link.
-Add a context sentence for the following links.
+1. Change the `AzureWebApp@1` task to use your subscription. 
+    1. Select **Settings** for the task. 
+    1. Find and authorize your Azure subscription. 
+    1. Set the **App type** to Web App on Linux. 
 
--->
+1. Save and run your pipeline. 
+
+1. Verify that your app deployed by going to http://tailspin-space-game-web-dev-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
+
+## 5 - Add the Staging stage 
+
+Last, you'll promote the Dev stage to Staging. Unlike the Dev environment, you want to have more control in the staging environment you'll add a manual approval. 
+
+
+### Create staging environment
+
+1. From Azure Pipelines, select **Environments**.
+
+1. Select **New environment**.
+
+1. Create a new environment with the name *staging* and **Resource** set to *None*. 
+
+1. On the staging environment page, select **Approvals and checks**.
+
+:::image type="content" source="media/mutistage-pipeline/pipeline-add-check-to-environment.png" alt-text="Screenshot of approvals and checks menu option. ":::
+
+1. Select **Approvals**. 
+
+1. In **Approvers**, select **Add users and groups**, and then select your account.
+
+1. In **Instructions to approvers**, write  *Approve this change when it's ready for staging*.
+
+1. Select **Save**. 
+
+### Add new stage to pipeline
+
+1. Add a new stage to your pipeline that deploys to the staging environment. 
+
+
 
 ## Next steps
-TODO: Add your next step link(s)
-
-<!--
-Remove all the comments in this template before you sign-off or merge to the main branch.
-
--->
