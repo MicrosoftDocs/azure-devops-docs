@@ -325,7 +325,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 
 1. Save and run your pipeline. 
 
-1. Verify that your app deployed by going to http://tailspin-space-game-web-dev-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
+1. Verify that your app deployed by going to https://tailspin-space-game-web-dev-1234.azurewebsites.net in your browser. Substitute `1234` with the unique value for your site. 
 
 ## 5 - Add the Staging stage 
 
