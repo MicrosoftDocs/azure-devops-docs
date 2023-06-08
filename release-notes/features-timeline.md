@@ -186,7 +186,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Work item markdown support](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
@@ -356,7 +356,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>           
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (preview)</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -461,7 +461,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>
       <tr>
-        <td rowspan="7"><strong>2023 Q3</strong></td>
+        <td rowspan="6"><strong>2023 Q3</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
@@ -480,12 +480,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>    
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>  
+      </tr>          
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
         <td>Reporting</td>
@@ -497,11 +492,16 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>Future</td>
       </tr>
       <tr>
-        <td rowspan="11"><strong>Future</strong></td>
+        <td rowspan="12"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>       
+      </tr>    
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Delivery plans improvements to filtering by parent](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>     
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode" data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](/azure/devops/release-notes/roadmap/support-flexible-orchestration-mode)">Support Flexible Orchestration mode in scale set agent pools</a></td>
         <td>Pipelines</td>
