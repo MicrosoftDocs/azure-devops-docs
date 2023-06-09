@@ -114,7 +114,7 @@ Your build pipeline:
 
 8. Replace the contents of *azure-pipelines.yml* with this code. 
 
-  :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-67":::
+      :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-67":::
 
 9. When you're ready, select **Save and run**.
 
@@ -152,7 +152,7 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
     * Run when the Build stage succeeds because of a condition
     * Download an artifact from `drop` and deploy to Azure App Service
 
-    :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-92" highlight="69-92":::
+        :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-92" highlight="69-92":::
 
 1. Change the `AzureWebApp@1` task to use your subscription. 
     1. Select **Settings** for the task. 
