@@ -26,7 +26,7 @@ ms.date: 05/10/2022
 
     :::image type="content" source="../../media/vs-addsource.png" alt-text="A screenshot showing how to set up visual studio in Windows.":::
 
-#### [MacOS](#tab/macOS/)
+#### [macOS](#tab/macOS/)
 
 1. Create a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
