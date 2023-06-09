@@ -10,13 +10,9 @@ ms.date: 01/26/2023
 
 1. Navigate to your project, and then select **Artifacts** then select your feed.
 
-1. Select **Connect to feed**.
+1. Select **Connect to feed**, and then select **Visual Studio** from the left navigation panel.
 
-    :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot highlighting the Connect to feed button.":::
-
-1. Select **Visual Studio** from the left navigation panel.
-
-1. Copy your feed's **Source** URL.
+1. Copy your **Source** URL.
 
     :::image type="content" source="../../media/nuget-visual-studio-newnav.png" alt-text="A screenshot showing the source URL.":::
 
@@ -28,11 +24,7 @@ ms.date: 01/26/2023
 
 1. Select your feed from the dropdown menu.  
 
-1. Select **Connect to feed**.
-
-    :::image type="content" source="../../media/connect-to-feed.png" alt-text="A screenshot showing how to Connect to feed in TFS.":::
-   
-1. Copy your feed's **Source** URL.
+1. Select **Connect to feed**, and then copy your **Source** URL.
 
     :::image type="content" source="../../media/nuget-consume-url.png" alt-text="A screenshot showing the package source URL in TFS.":::
 
