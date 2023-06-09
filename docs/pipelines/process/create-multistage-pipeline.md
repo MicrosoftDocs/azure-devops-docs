@@ -15,12 +15,13 @@ You can use an Azure DevOps multistage pipeline to divide your CI/CD process int
 In this article, you'll build a YAML pipeline with three stages: 
 
 * Build: build the source code and produce a package
-* Dev: test changes before deploying to staging
-* Staging: deploy to a staging Azure App Service instance after manual approval
+* Dev: deploy your package to an development site for testing
+* Staging: deploy to a staging Azure App Service instance a [manual approval check](approvals.md)
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
 
-In this article, you'll create a .NET web application for a pretend space game that includes a leaderboard to show high scores. 
+The example code in this exercise is for a .NET web application for a pretend space game that includes a leaderboard to show high scores. You'll deploy to both development and staging instances of Azure Web App for Linux. 
+
 
 ## Prerequisites
 
@@ -32,7 +33,7 @@ In this article, you'll create a .NET web application for a pretend space game t
 
 ## 1 - Fork the project
 
-1. Fork the following sample repository at GitHub.
+1. Fork the following sample repository at GitHub. 
 
 ```
 https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy
@@ -101,10 +102,10 @@ Set up your Azure DevOps project and a build pipeline. You'll also add variables
 
 Your build pipeline:
 
-* Includes a trigger that runs when there is a code change to branch.
-* Defines two variables, `buildConfiguration` and `releaseBranchName`.
+* Includes a trigger that runs when there is a code change to branch
+* Defines two variables, `buildConfiguration` and `releaseBranchName`
 * Includes a stage named Build that builds the web application
-* Publishes an artifact you'll use in a later stage. 
+* Publishes an artifact you'll use in a later stage
 
 ### Add a build pipeline 
 

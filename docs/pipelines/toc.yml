@@ -315,6 +315,9 @@
           href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
+    - name: Create a multistage pipeline
+      href: process/create-multistage-pipeline.md
+      displayName: multi stage, multi stage pipelines 
     - name: Deploy apps to environments
       items:
         - name: Define and target environments
