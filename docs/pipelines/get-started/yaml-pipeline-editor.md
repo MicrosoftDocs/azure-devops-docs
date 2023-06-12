@@ -171,7 +171,9 @@ For more information on working with pipeline variables, see [Define variables](
 
 ## Configure the default agent pool
 
-If a YAML pipeline doesn't specify an agent pool, the default agent pool is used. The defaut pool is also used for post-run cleanup tasks.
+If a YAML pipeline doesn't specify an agent pool, the agent pool configured in the **Default agent pool for YAML** setting is used. This pool is also used for post-run cleanup tasks.
+
+To view and configure the **Default agent pool for YAML** setting:
 
 1. Edit the pipeline and choose **More actions** > **Triggers**.
 
@@ -180,6 +182,8 @@ If a YAML pipeline doesn't specify an agent pool, the default agent pool is used
 2. Choose **YAML**, and select the desired agent pool using the **Default agent pool for YAML** dropdown list.
 
    :::image type="content" source="media/yaml-pipeline-editor/default-agent-pool-for-yaml.png" alt-text="Default agent pool for YAML pipelines.":::
+
+**Default agent pool for YAML** is configured on a per-pipeline basis.
 
 ## Manage settings using the pipeline settings UI
 
