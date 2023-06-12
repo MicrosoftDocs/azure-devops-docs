@@ -151,14 +151,24 @@ Next, you'll update your pipeline to promote your build to the *Dev* stage.
 1. Update *azure-pipelines.yml* to include a Dev stage. In the Dev stage, your pipeline will:
 
     * Run when the Build stage succeeds because of a condition
-    * Download an artifact from `drop` and deploy to Azure App Service
+    * Download an artifact from `drop`
+    * Deploy to Azure App Service with an [Azure Resource Manager service connection](../library/service-endpoints.md)
 
         :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-92" highlight="69-92":::
 
 1. Change the `AzureWebApp@1` task to use your subscription. 
+
     1. Select **Settings** for the task. 
-    1. Find and authorize your Azure subscription. 
+
+        :::image type="content" source="media/mutistage-pipeline/select-settings-azurewebapptask.png" alt-text="Screenshot of settings option in YAML editor task. ":::
+
+    1. Update the `your-subscription` value for **Azure Subscription** to use your own subscription. You may need to authorize access as part of this process. 
+    
+        :::image type="content" source="media/mutistage-pipeline/edit-your-subscription-value.png" alt-text="Screenshot of Azure subscription menu item. ":::
+
     1. Set the **App type** to Web App on Linux. 
+    
+    1. Select **Add** to update the task. 
 
 1. Save and run your pipeline. 
 
@@ -196,6 +206,20 @@ You'll add new stage, `Staging` to the pipeline that includes a manual approval.
 1. Edit your pipeline file and add the `Staging` section.  
 
     :::code language="yml" source="~/../snippets/pipelines/multistage/multistage-example.yml" range="1-116" highlight="94-116":::
+
+1. Change the `AzureWebApp@1` task in the Staging stage to use your subscription. 
+
+    1. Select **Settings** for the task. 
+
+        :::image type="content" source="media/mutistage-pipeline/select-settings-azurewebapptask.png" alt-text="Screenshot of settings option in YAML editor task. ":::
+
+    1. Update the `your-subscription` value for **Azure Subscription** to use your own subscription. You may need to authorize access as part of this process. 
+    
+        :::image type="content" source="media/mutistage-pipeline/edit-your-subscription-value.png" alt-text="Screenshot of Azure subscription menu item. ":::
+
+    1. Set the **App type** to Web App on Linux. 
+    
+    1. Select **Add** to update the task. 
 
 1.  Go to the pipeline run. Watch the build as it runs. When it reaches `Staging`, the pipeline waits for manual release approval. You'll also receive an email that you have a pipeline pending approval. 
 
