@@ -195,7 +195,7 @@ Some YAML pipeline settings are configured using the pipeline settings UI instea
 
 2. From the pipeline settings UI, choose the tab of the setting to configure.
 
-   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-triggers.png" alt-text="Pipeline settings UI for triggers.":::
+   :::image type="content" source="media/yaml-pipeline-editor/pipeline-settings-ui-triggers.png" alt-text="Pipeline settings UI for triggers.":::
 
 :::moniker range=">= azure-devops-2022"
 
