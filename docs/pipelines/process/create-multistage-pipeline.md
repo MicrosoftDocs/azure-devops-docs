@@ -15,7 +15,7 @@ You can use an Azure DevOps multistage pipeline to divide your CI/CD process int
 In this article, you'll build a YAML pipeline with three stages: 
 
 * Build: build the source code and produce a package
-* Dev: deploy your package to an development site for testing
+* Dev: deploy your package to a development site for testing
 * Staging: deploy to a staging Azure App Service instance a [manual approval check](approvals.md)
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
@@ -85,7 +85,7 @@ Before you can deploy your pipeline, you need to first create an App Service env
       --runtime "DOTNET|6.0"
     ```
 
-1. List both App Service instances to verify that they are running with the `az webapp list` command. 
+1. List both App Service instances to verify that they're running with the `az webapp list` command. 
 
     ```azurecli
     az webapp list \
@@ -102,7 +102,7 @@ Set up your Azure DevOps project and a build pipeline. You'll also add variables
 
 Your build pipeline:
 
-* Includes a trigger that runs when there is a code change to branch
+* Includes a trigger that runs when there's a code change to branch
 * Defines two variables, `buildConfiguration` and `releaseBranchName`
 * Includes a stage named Build that builds the web application
 * Publishes an artifact you'll use in a later stage
