@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 01/25/2023
+ms.date: 06/12/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -46,7 +46,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 ### Recent updates
 
 * The macOS 13 image is available
-* The macOS 10.15 image will be fully unsupported by 4/24/2023
+* The macOS 10.15 image is fully unsupported as of 4/24/2023
 * Ubuntu 18.04 has been retired
 * [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
