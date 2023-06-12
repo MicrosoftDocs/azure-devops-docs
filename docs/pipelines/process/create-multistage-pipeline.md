@@ -14,9 +14,9 @@ You can use an Azure DevOps multistage pipeline to divide your CI/CD process int
 
 In this article, you'll build a YAML pipeline with three stages: 
 
-* Build: build the source code and produce a package
-* Dev: deploy your package to a development site for testing
-* Staging: deploy to a staging Azure App Service instance a [manual approval check](approvals.md)
+1. Build: build the source code and produce a package
+2. Dev: deploy your package to a development site for testing
+3. Staging: deploy to a staging Azure App Service instance a [manual approval check](approvals.md)
 
 In a real-world scenario, you may have another stage for deploying to production depending on your DevOps process. 
 
@@ -33,7 +33,7 @@ The example code in this exercise is for a .NET web application for a pretend sp
 
 ## 1 - Fork the project
 
-1. Fork the following sample repository at GitHub. 
+Fork the following sample repository at GitHub. 
 
 ```
 https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy
