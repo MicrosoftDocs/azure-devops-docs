@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/06/2023
+ms.date: 06/12/2023
 ---
 
 # Service hooks events
@@ -42,6 +42,7 @@ ms.date: 03/06/2023
 ::: moniker range="=azure-devops"
 
 * **Pipelines**
+  * [Job state changed](#job.statechanged)
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
@@ -1278,9 +1279,79 @@ Event: A deployment started.
 ::: moniker range=">= azure-devops-2020"
 ## Pipelines
 
-> [!NOTE]
-> Enable the preview feature, [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md), for these events.
+<a name="job.statechanged"></a>
 
+### Job state changed
+
+Event: Overall statuses of a job changed. A job within a run has transitioned to skipped, running or completed.
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelines.job-state-changed-event`
+* Resource Name: `resource`
+
+#### Settings
+ * `PipelineId`: Filter to include only events for the specified pipeline
+ * `state`: Filter events based on the new state of the job
+   * Valid values: 
+      * `Skipped` 
+      * `Running` 
+      * `Completed` 
+
+#### Sample payload
+```json
+{
+    "subscriptionId": "8d91ad83-1db5-4d43-8c5a-9bb2239644b1",
+    "notificationId": 29,
+    "id": "fcad4962-f3a6-4fbf-9653-2058c304503f",
+    "eventType": "ms.vss-pipelines.job-state-changed-event",
+    "publisherId": "pipelines",
+    "message":
+    {
+        "text": "Run 20221121.5 stage Build job Compile succeeded.",
+        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+    },
+    "detailedMessage":
+    {
+        "text": "Run 20221121.5 stage Build job Compile succeeded.",
+        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+    },
+    "resource":
+    {
+        "job":
+        {
+            "_links":
+            {
+                "web":
+                {
+                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088"
+                },
+                "pipeline.web":
+                {
+                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/definition?definitionId=4647"
+                }
+            },
+            "id": "e87e3d16-29b0-5003-7d86-82b704b96244",
+            "name": "Compile",
+            "state": "completed",
+            "result": "succeeded",
+            "startTime": "2022-11-21T16:10:28.49Z",
+            "finishTime": "2022-11-21T16:10:53.66Z"
+        },
+        "stage": { ... },
+        "run": { ... },
+        "pipeline": { ... },
+        "repositories": [ ... ]
+    },
+    "resourceVersion": "5.1-preview.1",
+    "createdDate": "2022-11-21T16:11:02.9207334Z"
+}
+```
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
 <a name="run.statechanged"></a>
 
 ### Run state changed
