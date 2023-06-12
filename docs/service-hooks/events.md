@@ -1276,7 +1276,7 @@ Event: A deployment started.
 }
 ```
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="=azure-devops"
 ## Pipelines
 
 <a name="job.statechanged"></a>
