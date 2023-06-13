@@ -64,7 +64,7 @@ The following table summarizes the configuration options supported by the variou
 |Burndown focus  | Count or Sum | Count or Sum | Count or Sum |  
 |Time period    | Single sprint | Single sprint | Configurable |   
 
-For details on viewing and configuring charts, see [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+For details on viewing and configuring charts, see [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).
 
 ::: moniker-end
 
@@ -169,7 +169,7 @@ Teams should meet immediately to course correct and either reassign work, recrui
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md)
+> [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md)
 
  
 ## Related articles

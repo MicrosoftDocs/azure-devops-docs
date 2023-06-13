@@ -345,4 +345,4 @@ If you work with several teams, and each team wants to work with their own backl
 -  [Forecast your sprints](../../boards/sprints/forecast.md) 
 -  [Set dashboard permissions](dashboard-permissions.md)
 -  [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
--  [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md)
+-  [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md)
