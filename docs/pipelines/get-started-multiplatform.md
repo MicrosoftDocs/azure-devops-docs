@@ -1,6 +1,6 @@
 ---
 title: Create a multi-platform pipeline
-ms.custom: seodec18, devx-track-js
+ms.custom: seodec18
 description: Build and test on macOS, Linux, and Windows
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38

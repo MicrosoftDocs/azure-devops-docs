@@ -1,52 +1,56 @@
 ---
 title: Keyboard shortcuts for web portal and Team Explorer
 titleSuffix: Azure DevOps
-description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
+description: Learn about keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
 ms.custom: Navigation
 ms.subservice: azure-devops-projects
 ms.topic: conceptual 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---
 
-
 # Keyboard shortcuts for Azure DevOps and Team Explorer
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]    
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
+You can use the keyboard shortcuts listed in this article when you work in Azure DevOps or Team Explorer. You also can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) on the **Tools** > **Options** > **Environment** > **Keyboard** page.
 
-For specific guidance on navigating within the web portal, see [Web portal navigation](index.md).
+For specific guidance about moving around in the web portal for Azure DevOps, see [Web portal navigation](index.md).
 
 ## Web portal
 
-You can use these keyboard shortcuts when working in the web portal for Azure DevOps.  
+You can use these keyboard shortcuts when you work in the web portal for Azure DevOps.
 
-**Navigate within lists**
+### Web portal global shortcuts
 
-|Shortcut|Action|
-|--------|------|
-|**Tab**|Move focus|
-|**← →**|Move focus left/right|
-|**↑ ↓**|Move focus up/down|
-|**Ctrl+Home**|Move focus to top of list|
-|**Ctrl+End**|Move focus to bottom of list|
-|**Ctrl+↑↓**|Move item up/down within list|
-|**Shift+↑↓**|Highlight consecutive items|
-|**Menu**|Open context menu|
-|**Esc**|Dismiss context menu|
-|**Enter**|Choose selected menu item|
+Select **?** to access global and page-specific shortcuts.
 
-## Web portal, global shortcuts
-
-Type **?** to access the Global and page-specific shortcuts.   
+Page-specific shortcuts work only when you're on a specific page. For example, select **g**, **c** to open the **Code** page, and then select **c**,  **p** to create a pull request. These navigation shortcuts work as long as the focus isn't on an input control.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
+### Web portal list shortcuts
 
-Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
+You can use these keyboard shortcuts when you work in a list in the web portal for Azure DevOps:
+
+|Shortcut|Action|
+|---|---|
+|Tab|Move focus right|
+|Left arrow|Move focus left|
+|Right arrow|Move focus right|
+|Up arrow|Move focus up|
+|Down arrow|Move focus down|
+|Ctrl+Home|Move focus to top of list|
+|Ctrl+End|Move focus to bottom of list|
+|Ctrl+Up arrow|Move item up in the list|
+|Ctrl+Down arrow|Move item down in the list|
+|Shift+Up arrow|Highlight consecutive items above the current line or field|
+|Shift+Down arrow|Highlight consecutive items below the current line or field|
+|Menu|Open context menu|
+|Esc|Dismiss context menu|
+|Enter|Choose selected menu item|
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -64,8 +68,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= azure-devops-2019"
 
-## Work Items 
-
+## Work items
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
@@ -73,109 +76,113 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= azure-devops-2019"
 
-## Work item form shortcuts
-
+## Work item forms
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
 ::: moniker-end
 
-## Boards 
+## Boards
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
 
-## Backlogs 
+## Backlogs
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
-## Queries 
+## Queries
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
 ::: moniker range="< azure-devops"
 
-## Plans
+## Delivery plans
 
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)] 
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]
 
-::: moniker-end 
+::: moniker-end
 
-## Test Plans, Parameters, and Runs  
+## Test plans, parameters, and runs  
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/test-shortcuts.md)]
-
-
 
 ## Wiki  
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
-> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
+> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2).
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wiki-shortcuts.md)]
 
-## Team Explorer navigational shortcuts
+## Team Explorer
 
-Use these shortcuts when working in Team Explorer. 
+You can use these shortcuts when you work in Team Explorer.
 
-:::row:::
-   :::column span="":::
-      **Navigate**
-      - **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal
-      - **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[Build](../../pipelines/get-started/what-is-azure-pipelines.md)">Build</a>
-      - **Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open <a href="../../organizations/projects/connect-to-projects.md" data-raw-source="[Connect](../../organizations/projects/connect-to-projects.md)">Connect</a>
-      - **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal" data-raw-source="[Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)">Documents</a>
-      - **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Branches (Git)](../../repos/git/gitquickstart.md)">Branches (Git)</a>
-      - **Ctrl+0,g**&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Changes (Git)](../../repos/git/gitquickstart.md)">Changes (Git)</a>
-      - **Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home
-      - **Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)
-      - **Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)
-      - **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)
-      - **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings
-      - **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items
-      - **Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)
-        
-      - **Ctrl+&#39;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box
-      - **Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page
-      - **Alt+1**&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]
-      - **Alt+↑↓**&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
-   :::column-end:::
-   :::column span="":::
-      **Context menu**   
-      - ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu<
-      - **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu
-      - ← →&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right
-      - ↑↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down
-      - **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu
+### Team Explorer global shortcuts
 
-      **Work item commands**
-      - **Alt+m,g**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item
-      - **Alt+m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Add a work item](../../boards/backlogs/add-work-items.md) 
-      - **Alt+m,q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Add a query](../../boards/queries/using-queries.md) 
-      - **Shift+Alt,c**&nbsp;&nbsp;Copy selected work item
-      - **Shift+Alt,l**&nbsp;&nbsp;Link to new work item
-      - **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item 
-   :::column-end:::
-:::row-end:::
-  
+|Shortcut|Action|
+|---|---|
+|Ctrl+0, a|Open web portal|
+|Ctrl+0, b|Open [Build](../../pipelines/get-started/what-is-azure-pipelines.md)|
+|Ctrl+0, c|Open [Connect](../../organizations/projects/connect-to-projects.md)|
+|Ctrl+0, d|Open [Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)|
+|Ctrl+0, e|Open [Branches (Git)](../../repos/git/gitquickstart.md)|
+|Ctrl+0, g|Open [Changes (Git)](../../repos/git/gitquickstart.md)|
+|Ctrl+0, h|Open Home|
+|Ctrl+0, m|Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)|
+|Ctrl+0, p|Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)|
+|Ctrl+0, r|Open [Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)|
+|Ctrl+0, s|Open Settings|
+|Ctrl+0, w|Open Work items|
+|Ctrl+0, y|Open [Synchronization (Git)](../../repos/git/gitquickstart.md)|
+|Ctrl+'|Move focus to search box|
+|Alt+0|Move focus to top of page|
+|Alt+1|Move focus to visible section \[1 through 9\]|
+|Alt+Up arrow (|Move focus to next section|
+|Alt+Down arrow|Move focus to previous section|
 
-You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
+### Team Explorer context menu shortcuts
 
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)] 
+|Shortcut|Action|
+|---|---|
+|<+Down arrow|Open a context menu|  
+|Esc|Dismiss context menu|  
+|Left arrow|Move focus left|
+|Right arrow|Move focus right|
+|Up arrow|Move focus up|
+|Down arrow|Move focus down|
+|Enter|Choose context menu|  
 
+### Team Explorer work item shortcuts
 
+|Shortcut|Action|
+|---|---|
+|Alt+m, g|Open work item|
+|Alt+m, i|[Add a work item](../../boards/backlogs/add-work-items.md)|
+|Alt+m, q|[Add a query](../../boards/queries/using-queries.md)|  
+|Shift+Alt, c|Copy selected work item|
+|Shift+Alt, l|Link to new work item|  
+|Enter|Open selected work item|  
 
-## Related articles 
+You can use shortcuts for query results when you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-- [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
-- [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
-- [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
-- [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Web portal navigation](../navigation/index.md) 
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)]
 
 ### Install Team Explorer  
 
-Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
+Team Explorer is a plug-in for Visual Studio. You gain access to Team Explorer when you install the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017.  
+
+## Related articles
+
+- [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
+- [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
+- [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
+- [Accessibility features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
+- [Web portal navigation](../../project/navigation/index.md)
+
+## Next steps
 
 Learn more about [working in Team Explorer](../../user-guide/work-team-explorer.md).

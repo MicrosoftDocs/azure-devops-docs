@@ -5,8 +5,8 @@ description: Customize the web version of the work item form in Azure DevOps Ser
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 01/17/2023 

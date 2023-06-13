@@ -17,6 +17,7 @@ Azure Artifacts is a highly scalable package management solution that enables de
 
 - **5000 versions** per package ID.
 - **Unlimited package IDs** per feed.
+- **20 upstreams** per package type per feed.
 
 > [!NOTE]
 > You can use [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) to automatically delete older package versions.

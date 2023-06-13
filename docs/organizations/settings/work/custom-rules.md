@@ -5,8 +5,8 @@ description: Add a custom rule to a work item type defined for an inherited proc
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: ">= azure-devops-2019"
 ms.topic: how-to
 ms.date: 06/07/2021

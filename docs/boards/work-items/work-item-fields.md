@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: how-to
 ms.date: 01/17/2023 
@@ -180,7 +180,7 @@ To review the list of fields defined for an organization or collection, open **O
 	> ![Screenshot of Make a copy of a selected inherited process.](media/fields/list-fields.png) 
 
 	> [!NOTE]  
-	> If you don't see **Fields**, then you're collection uses the On-premises XML process. The Fields page isn't supported for that process.  
+	> If you don't see **Fields**, then your collection uses the On-premises XML process. The Fields page isn't supported for that process.  
 
 	For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
 
@@ -426,7 +426,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
    boolean
    :::column-end:::
    :::column span="3":::
-   Indicates if the field is defined within a [global workflow](../../reference/xml/global-workflow-xml-element-reference.md).   
+   Indicates if the field is defined within a [global workflow](/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference).   
    Can change?=No 
    :::column-end:::
 :::row-end:::
@@ -627,7 +627,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
 
 All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
 
-For a description of each reportable attribute, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
+For a description of each reportable attribute, see [Add or modify work item fields to support reporting]((/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting). 
 
 For a list of fields that have reportable attributes defined by default, see [Reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) .
 
@@ -715,7 +715,7 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 
 ::: moniker range="< azure-devops"  
 
-You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get/?view=vsts-rest-tfs-4.1&preserve-view=true). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1&preserve-view=true)
+You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get/?view=vsts-rest-tfs-4.1&preserve-view=true). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops)
 
 > [!div class="tabbedCodeSnippets"]
 > ```REST
@@ -809,7 +809,7 @@ The **Use** parameter indicates the name of each project and the work item type 
 
 ## Project integration and project field mapping  
 
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file. 
+You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). 
 
 ::: moniker-end  
 
@@ -843,13 +843,11 @@ You can change the field name, the index, and the report attributes for any fiel
 ## Related articles  
 
 ::: moniker range="azure-devops"  
-
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
 - [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md)
-
+- [Metadata reference for Azure Boards Analytics](../../report/analytics/entity-reference-boards.md)
 ::: moniker-end  
-
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
@@ -857,10 +855,10 @@ You can change the field name, the index, and the report attributes for any fiel
 - [Work item field index](guidance/work-item-field.md) 
 - [Choose the process model for your project collection](../../reference/customize-work.md#choose-process-model)
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
-- [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
+- [Manage work item fields using witadmin](../../reference/witadmin/manage-work-item-fields.md)
+- [Metadata reference for Azure Boards Analytics](../../report/analytics/entity-reference-boards.md)
 
 ::: moniker-end  
-
 
 ::: moniker range="tfs-2018"  
 
@@ -873,97 +871,3 @@ You can change the field name, the index, and the report attributes for any fiel
 
 
 
-
-
-<!--- 
-
-:::row:::
-   :::column span="1":::
-     
-   :::column-end:::
-   :::column span="3":::
-   IsInternal 
-   :::column-end:::
-   :::column span="3":::
-   boolean
-   :::column-end:::
-   :::column span="3":::
-   It appears that all fields are set to False.
-   :::column-end:::
-   :::column span="3":::
-   No
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-    
-   :::column-end:::
-   :::column span="3":::
-   IsUsedInWorkItemType
-   :::column-end:::
-   :::column span="3":::
-   boolean
-   :::column-end:::
-   :::column span="3":::
-   TBD. 
-   :::column-end:::
-   :::column span="3":::
-   No
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-    
-   :::column-end:::
-   :::column span="3":::
-   PsFieldType
-   :::column-end:::
-   :::column span="3":::
-    
-   :::column-end:::
-   :::column span="3":::
-   Specifies the  
-   :::column-end:::
-   :::column span="3":::
-   No
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-    
-   :::column-end:::
-   :::column span="3":::
-   PsReportingFormula
-   :::column-end:::
-   :::column span="3":::
-    
-   :::column-end:::
-   :::column span="3":::
-   Specifies the  
-   :::column-end:::
-   :::column span="3":::
-   No
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-    
-   :::column-end:::
-   :::column span="3":::
-   PsReportingType
-   :::column-end:::
-   :::column span="3":::
-    
-   :::column-end:::
-   :::column span="3":::
-   Specifies the  
-   :::column-end:::
-   :::column span="3":::
-   No
-   :::column-end:::
-:::row-end:::
-
-
--->

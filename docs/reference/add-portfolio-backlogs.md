@@ -5,8 +5,8 @@ description: Add up to two additional work item types and portfolio backlogs in 
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops' 
 ms.date: 01/17/2023 
@@ -57,7 +57,7 @@ This article walks you through adding a portfolio backlog to a project based on 
 
 You can apply the same steps if you work with a project based on the [Scrum](../boards/work-items/guidance/scrum-process.md) or [CMMI](../boards/work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
 
-For an overview of the three system processes, see [Choose a process](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
+For more informaiton, see [About processes and process templates](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
 <a id="export-files">  </a>
 

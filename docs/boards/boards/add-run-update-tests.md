@@ -5,8 +5,8 @@ description: Add, run, and update manual test cases on your Kanban board for lig
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -16,7 +16,7 @@ ms.date: 04/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. See [Kanban basics](kanban-basics.md) if you're new to working with the Kanban board. If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
+Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban overview](kanban-overview.md). If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
 
 In this article, you'll learn: 
 > [!div class="checklist"]    

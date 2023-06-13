@@ -3,9 +3,10 @@ title: Test objects and terms
 titleSuffix: Azure Test Plans
 description: Understand the different test objects and terms that support manual or automated testing.
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---

@@ -2,7 +2,7 @@
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps  
 ms.custom: wiki, devdivchpfy22
-description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
+description: Discover how to utilize Markdown to incorporate tables, mathematical symbols, and share information effectively in pull requests, README files, dashboards, and wikis.  
 ms.subservice: azure-devops-wiki
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/02/2022
+ms.date: 02/17/2023
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -23,7 +23,7 @@ Here you can find some basic Markdown syntax guidance and specific guidance for 
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
-For more syntax that's supported for wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
+For more supported syntax for wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
 
 You can provide guidance in the following areas using Markdown:
 
@@ -62,7 +62,7 @@ You can provide guidance in the following areas using Markdown:
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. Up to six levels of headings are supported.
+Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. You can use up to six levels of headings.
 
 **Example:**
 ```markdown
@@ -294,11 +294,12 @@ clear name to description mapping. You can format tables in pull requests, wiki,
 
 - Place each table row on its own line.
 - Separate table cells using the pipe character `|`.
+- To use a pipe character within a table you must escape with a backslash `\|`.
 - The first two lines of a table set the column headers and the alignment of elements in the table.
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right).
 - To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere).  
 - Make sure to end each row with a CR or LF.
-- A blank space is required before and after work item or pull request (PR) mentioned inside a table cell.
+- You must enter a blank space before and after work item or pull request (PR) mentioned inside a table cell.
 
 **Example:**
 
@@ -394,7 +395,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
-In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID and then choosing the work item from the list.
+In pull request comments and wikis, HTTP and HTTPS URLs automatically format as links. You can link to work items by entering the *#* key and a work item ID and then choosing the work item from the list.
 
 Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). This action can be useful if you want to use *#* for color hex codes.
 
@@ -444,7 +445,7 @@ When you're linking to another Markdown page in the same Git or TFVC repository,
 
 ### Source control relative links
 
-Links to source control files are interpreted differently depending on whether you specify them in a Welcome page or a Markdown widget. The system interprets relative links as follows:
+Links to source control files get interpreted differently depending on whether you specify them in a Welcome page or a Markdown widget. The system interprets relative links as follows:
 
 - **Welcome page:** relative to the root of the source control repository in which the welcome page exists
 - **Markdown widget:**  relative to the team project collection URL base
@@ -461,8 +462,8 @@ For example:
 Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. In general, the following conventions apply:
 
 - Punctuation marks and leading white spaces within a file name are ignored
-- Upper case letters are  converted to lower
-- Spaces between letters are converted to dashes (-)
+- Upper case letters convert to lower case letter
+- Spaces between letters convert to dashes (-)
 
 **Example:**
 
@@ -508,7 +509,7 @@ To highlight issues or make things more interesting, you can add images and anim
 - Markdown files
 - Wiki pages
 
-Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91;Text](URL)</pre></div> The text in the brackets describes the image being linked and the URL points to the image location.
+Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91;Text](URL)</pre></div> The text in the brackets describes the linked image and the URL points to the image location.
 
 **Example:**
 
@@ -546,7 +547,7 @@ You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with eit
 > [!div class="mx-imgBorder"]  
 > ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-apply.png)
 
-After you've added a task list, you can check the boxes to mark items as completed. These actions are expressed and stored within the comment as [ ] and [x] in Markdown.
+To mark items as completed by checking the boxes, you need to manually edit the markdown and modify the syntax after adding a task list.
 
 > [!div class="mx-imgBorder"]  
 > ![Check the boxes to mark items as completed.](media/markdown-guidance/checklist-pr-applied-check.png)
@@ -576,7 +577,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 #### Supported in: Pull Requests | Wikis
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. We support the [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
 **Example:**
 
@@ -647,14 +648,14 @@ To escape emojis, enclose them using the \` character.
 
 #### Supported in: Pull Requests | Wikis
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field, or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
 
 <img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" />        
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-The attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and select links to download the attached files.
+The attached image files render directly into your comment or wiki pages. Save or update your comment or wiki page with an attachment. Then, you can see the attached image and select links to download the attached files.
 
 Attachments support the following file formats:
 
@@ -678,7 +679,7 @@ Attachments support the following file formats:
 
 #### Supported in: Pull Requests | Wikis
 
-Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation is supported in wiki pages and pull requests. The following supported elements are included:
+We support both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation in wiki pages and pull requests. See the following supported elements:
 
 - Symbols
 - Greek letters

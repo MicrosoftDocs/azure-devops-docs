@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md). PowerShell Core runs on any platform. 
+When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md). PowerShell Core runs on any platform. 
 
 ::: moniker range=">= azure-devops-2019"
 ## Add a PowerShell script
@@ -26,7 +26,7 @@ The syntax for including PowerShell Core is slightly different from the syntax f
 
 1. Push your PowerShell script to your repo.
 
-2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) but Windows PowerShell and will only work on a Windows agent.
+2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
 
 ```yaml
 # for PowerShell Core
@@ -53,7 +53,7 @@ steps:
 
 ::: moniker range="< azure-devops-2019"
 
-You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+You can run Windows PowerShell Script on a [Windows build agent](../agents/windows-agent.md).
 
 1. Push your script into your repo.
 

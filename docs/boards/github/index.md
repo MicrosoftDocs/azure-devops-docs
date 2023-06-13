@@ -5,8 +5,8 @@ description: Manage code in GitHub and link to GitHub commits, pull requests, an
 ms.custom: boards-get-started 
 ms.service: azure-devops-boards
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 02/16/2022
 ---
@@ -77,16 +77,11 @@ The following tasks aren't supported at this time:
 
 ## Connect Azure Boards to GitHub repositories 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2022"
 You can start from Azure Boards or from GitHub to make the connection. You can connect up to 250 GitHub repositories to an Azure Boards project. 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end 
-
-::: moniker range="< azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 You can start from Azure Boards or from GitHub to make the connection. You can connect up to 100 GitHub repositories to an Azure Boards project. 
 ::: moniker-end 
 

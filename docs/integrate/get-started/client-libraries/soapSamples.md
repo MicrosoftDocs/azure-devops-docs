@@ -3,6 +3,7 @@ title: .NET Client Library Samples for Azure DevOps Services - Legacy SOAP
 description: C# samples showing how to integrate with Azure DevOps Services and Team Foundation Server from apps and services on Windows using the legacy SOAP clients.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
+ms.custom: devx-track-dotnet
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

@@ -1,5 +1,6 @@
 ---
 ms.subservice: azure-devops-service-hooks
+ms.custom: devx-track-jenkins
 ms.topic: conceptual
 title: Create a service hook with Jenkins
 description: Use Jenkins with your Azure DevOps organization
@@ -23,6 +24,12 @@ Git repository or when you check in code to Team Foundation version control.
 1. If you haven't already, set up a [Jenkins](https://jenkins-ci.org/) server.
 
 2. If you're setting up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
+
+3. Add or change `hudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL` [system property](https://plugins.jenkins.io/git/#plugin-content-push-notification-from-repository) as **disabled** before -jar parameter inside of `<arguments>` tag in _jenkins.xml_ configuration file.
+
+   `
+   -Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled
+   `
 
 ## Set up a Jenkins build
 

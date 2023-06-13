@@ -90,7 +90,7 @@ To limit the branches that you want triggered, simply add the following to your 
 
 ```YAML
 trigger:
-- master
+- main
 - releases/*
 ```
 

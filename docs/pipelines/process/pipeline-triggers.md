@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 01/25/2023
+ms.date: 06/06/2023
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
@@ -144,7 +144,7 @@ Pipeline completion triggers use the [Default branch for manual and scheduled bu
 When a pipeline completes, the Azure DevOps runtime evaluates the pipeline resource trigger branch filters of any pipelines with pipeline completion triggers that reference the completed pipeline. A pipeline can have multiple versions in different branches, so the runtime evaluates the branch filters in the pipeline version in the branch specified by the `Default branch for manual and scheduled builds` setting. If there is a match, the pipeline runs, but the version of the pipeline that runs may be in a different branch depending on whether the triggered pipeline is in the same repository as the completed pipeline.
 
 - If the two pipelines are in different repositories, the triggered pipeline version in the branch specified by `Default branch for manual and scheduled builds` is run.
-- If the two pipelines are in the same repository, the triggered pipeline version in the same branch as the triggering pipeline is run, even if that branch is different than the `Default branch for manual and scheduled builds`, and even if that version does not have branch filters that match the completed pipeline's branch. This is because the branch filters from the `Default branch for manual and scheduled builds` branch are used to determine if the pipeline should run, and not the branch filters in the version that is in the completed pipeline branch. 
+- If the two pipelines are in the same repository, the triggered pipeline version in the same branch as the triggering pipeline is run (using the version of the pipeline from that branch at the time that the trigger condition is met), even if that branch is different than the `Default branch for manual and scheduled builds`, and even if that version does not have branch filters that match the completed pipeline's branch. This is because the branch filters from the `Default branch for manual and scheduled builds` branch are used to determine if the pipeline should run, and not the branch filters in the version that is in the completed pipeline branch. 
 
 If your pipeline completion triggers don't seem to be firing, check the value of the [Default branch for manual and scheduled builds](pipeline-default-branch.md) setting for the triggered pipeline. The branch filters in that branch's version of the pipeline are used to determine whether the pipeline completion trigger initiates a run of the pipeline. By default, `Default branch for manual and scheduled builds` is set to the default branch of the repository, but you can change it after the pipeline is created.
 

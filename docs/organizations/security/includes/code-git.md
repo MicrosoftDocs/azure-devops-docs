@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-repos
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 04/15/2021
 ms.subservice: azure-devops-repos-git

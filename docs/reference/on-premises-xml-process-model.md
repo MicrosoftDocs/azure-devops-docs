@@ -4,8 +4,8 @@ titleSuffix: TFS
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
 ms.service: azure-devops-boards
 ms.custom: engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '< azure-devops'
 ms.date: 01/17/2023 
@@ -34,6 +34,8 @@ Team Foundation Server uses the On-premises XML process model to support customi
 ::: moniker-end  
 
 > [!IMPORTANT]  
+> Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.
+> 
 > To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises deployments only.  
 
 ## Supported customizations  
@@ -198,7 +200,7 @@ You should avoid making the following customizations because they can result in 
 *	WITs: Rename or delete WITs 
 *	Categories: Change the name of default categories, or change the WITs specified within default categories  
 
-To learn more about reporting attributes, see [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reportingd).
+To learn more about reporting attributes, see [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting).
 
 ### Recommended practices  
 *	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.  

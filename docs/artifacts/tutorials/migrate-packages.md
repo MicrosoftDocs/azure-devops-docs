@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Using the `AzureArtifactsPackageMigration` PowerShell module, you can easily migrate your NuGet packages to Azure Artifacts. This article will walk you through an example of migrating NuGet packages from MyGet to Azure Artifacts.
+Using the [AzureArtifactsPackageMigration](https://github.com/microsoft/azure-artifacts-migration) PowerShell module, you can easily migrate your NuGet packages to Azure Artifacts. This article will walk you through an example of migrating NuGet packages from MyGet to Azure Artifacts.
 
 In this article, you'll learn how to:
 
@@ -89,7 +89,7 @@ To migrate your packages, you will need to get the package source URL for both t
 
 ## Migrate NuGet packages
 
-If your myget feed is private, you will need to create a password to authenticate. You can skip the first step if your myget feed is public.
+If your MyGet feed is private, you will need to create a password to authenticate. You can skip the first step if your MyGet feed is public.
 
 1. Run the following command to convert your password to a secure string.
 

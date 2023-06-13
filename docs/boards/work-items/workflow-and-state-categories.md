@@ -5,11 +5,11 @@ description: Understand how workflow states map to workflow category states and 
 ms.custom: seodec18   
 ms.service: azure-devops-boards
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 04/04/2023
 ---
 
 # How workflow category states are used in Azure Boards backlogs and boards
@@ -24,7 +24,7 @@ Each state belongs to a state category (previously referred to as a metastate). 
 
 ## Workflow states
 
-Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are New, Active, Resolved, and Closed. (The Removed state supports removing a work item from appearing on the backlog; to learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
+Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are New, Active, Resolved, and Closed. (The Removed state supports removing a work item from appearing on the backlog; for more information, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
 
 The natural progressions and regressions for the work item types&mdash;user story (Agile), issue (Basic) product backlog item (SCrum), and requirement (CMMI)&mdash;are as shown.  
  
@@ -343,7 +343,7 @@ Adding custom states to support workflow states that multiple teams want to trac
 
 ## Auto completion of work items with pull requests 
 
-When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. To learn how, see [Auto complete work items with pull requests](auto-complete-work-items-pull-requests.md).
+When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. For more information, see [Auto complete work items with pull requests](auto-complete-work-items-pull-requests.md).
 
 ## Related articles
 

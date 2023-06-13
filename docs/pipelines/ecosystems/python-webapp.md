@@ -48,7 +48,9 @@ $env:FLASK_APP = "hello_app.webapp"
 python -m flask run
 ```
 
-Open a browser and go to *http:\//localhost:5000* to view the app. When you're finished, close the browser and stop the Flask server with **Ctrl**+**C**.
+Open a browser and go to *http:\//localhost:5000* to view the app. Verify that you see the title `Visual Studio Flask Tutorial`. 
+
+When you're finished, close the browser and stop the Flask server with **Ctrl**+**C**.
 
 ## Provision the target Azure App Service
 
@@ -109,7 +111,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
       
       When the command completes, it shows JSON output in the Cloud Shell.
 
-5. To see the running app, open a browser and go to *http:\//\<your-appservice>.azurewebsites.net*. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
+5. To see the running app, open a browser and go to *http:\//\<your-appservice>.azurewebsites.net*. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page. Verify that you see the title `Visual Studio Flask Tutorial`. 
 
     > [!NOTE]
     > For a detailed description of the specific tasks performed by the `az webapp up` command, see [Provision an App Service with single commands](#provision-an-app-service-with-single-commands) at the end of this article.
@@ -250,7 +252,7 @@ Then we have script-based task that creates a virtual environment and installs d
 - In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). By using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Instead, you can pre-create the environment and provide the `environmentName`.
 
 - Within the deployment job, first task is [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0), which specifies the version of Python to use on the build agent. 
-- We then use the [AzureWebApp](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+- We then use the [AzureWebApp](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. If you need to use a different service connection, select **Settings** for the `AzureWebApp@1` task and update the **Azure subscription** value. Paste the following code at the end of the file:
 
     ```yaml
   jobs:

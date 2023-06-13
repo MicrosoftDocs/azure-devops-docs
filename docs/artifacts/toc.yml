@@ -59,9 +59,9 @@
       displayName: upstream sources, upstreams, artifact feeds 
     - name: Publish from GitHub Actions
       href: quickstarts/github-actions.md
-    - name: Migrate from file shares
-      href: nuget/move-from-fileshares.md
-      displayName: nuget feeds, artifacts 
+    - name: Migrate NuGet packages to Azure Artifacts
+      href: tutorials/migrate-packages.md
+      displayName: migration, feed
   - name: npm 
     items:
     - name: npm quickstart
@@ -96,9 +96,9 @@
     - name: Install Maven artifacts
       href: maven/install.md
       displayName: maven artifacts, maven packages, maven feeds
-    - name: Publish Maven artifacts with Gradle
-      href: maven/publish-package-gradle.md
-      displayName: maven artifacts, maven packages 
+    - name: Publish artifacts with Gradle
+      href: maven/publish-with-gradle.md
+      displayName: gradle, publish 
     - name: Maven Central Repository
       href: maven/upstream-sources.md
       displayName: maven packages, maven central, upstream ,upstream sources
@@ -149,15 +149,15 @@
     - name: Delete and recover packages
       href: how-to/delete-and-recover-packages.md
       displayName: delete, recover, packages, artifacts 
-    - name: Migrate packages to Azure Artifacts feed
-      href: tutorials/migrate-packages.md
-      displayName: migration, artifact feeds, artifacts, packages 
     - name: Share PowerShell modules with Azure Artifacts feed
       href: tutorials/private-powershell-library.md
       displayName: powershell artifacts, artifact feeds, powershell module, powershell library
     - name: Use public feeds to share your packages publicly
       href: tutorials/share-packages-publicly.md
       displayName: share packages, share artifacts, artifact feeds, public feeds, feeds
+    - name: Migrate from file shares
+      href: nuget/move-from-fileshares.md
+      displayName: migrate, file share 
   - name: Feed views
     items:
     - name: What are feed views?

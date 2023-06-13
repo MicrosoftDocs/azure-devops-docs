@@ -12,7 +12,7 @@ ms.date: 06/04/2020
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 
 > [!NOTE]
-> When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin`.
+> When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1`.
 If this does not meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
 ### Preferred version of Git
 

@@ -3,6 +3,7 @@ title: Share steps between test cases
 titleSuffix: Azure Test Plans
 description: Learn how to share steps between test cases when you want to test web applications in Azure Test.
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: sdanie
 author: steved0x

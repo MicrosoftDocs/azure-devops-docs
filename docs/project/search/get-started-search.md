@@ -309,5 +309,5 @@ Search for Azure DevOps Server has the following limitation:
 
 ## Related articles
 
-- [Code search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
-- [Work item search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
+- [Code search blog posts](https://devblogs.microsoft.com/search?query=Code+search&blog=%2Fdevops%2F)
+- [Work item search blog posts](https://devblogs.microsoft.com/search?query=Work+item+search)

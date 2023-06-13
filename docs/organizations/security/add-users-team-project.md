@@ -4,8 +4,8 @@ description: How to guide to add users or groups to a team or project
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.subservice: azure-devops-security
 ms.custom: contperf-fy21q4
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 12/27/2022
@@ -111,7 +111,7 @@ Team and project administrators can add existing users to their team or project.
       Project Administrators
    :::column-end:::
    :::column span="2":::
-      [**Project Settings>Permissions>Groups>Group** **Members**](#project-permissions)  
+      [**Project Settings** > **Permissions** > **Groups** > **Group** > **Members**](#project-permissions)  
    :::column-end:::
    :::column span="2":::
       Add existing users or groups to a security group. By adding to a team group, you effectively add them to the team. Optionally remove a user from a group.   
@@ -123,10 +123,10 @@ Team and project administrators can add existing users to their team or project.
       Project Collection Administrators
    :::column-end:::
    :::column span="2":::
-      [**Organization Settings>Users**](../accounts/add-organization-users.md)   
+      [**Organization Settings** > **Users**](../accounts/add-organization-users.md)   
    :::column-end:::
    :::column span="2":::
-      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects. Can use Group rules to further manage groups being added.  
+      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects. Can use [Group rules](../accounts/assign-access-levels-by-group-membership.md) to further manage groups being added.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -622,7 +622,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 	[![Screenshot of Project Settings>Security.](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 3. Under **Groups**, choose one of the following options:
-   - **Readers**: To add users who require read-only access to the project, choose.
+   - **Readers**: To add users who require read-only access to the project.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
    - **Project Administrators**: To add users who need to administrate the project. For more information, see [Change project-level permissions](change-project-level-permissions.md).
 

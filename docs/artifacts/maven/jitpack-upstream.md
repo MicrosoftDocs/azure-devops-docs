@@ -18,11 +18,9 @@ With Azure Artifacts, you can consume packages from different public registries 
 
 1. Select the ![gear icon](../../media/icons/gear-icon.png) at the top right corner to navigate to **Feed Settings**.
 
-1. Select **Upstream Sources**.
+1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-1. Select **Add Upstream**.
-
-    :::image type="content" source="./media/upstream-settings-add-upstream.png" alt-text="A screenshot showing how to access upstream sources to add a new upstream.":::
+    :::image type="content" source="./media/gradle-upstream-source.png" alt-text="A screenshot showing how to access upstream sources to add a new upstream.":::
 
 1. Select **Public source**, and then select **JitPack (https://jitpack.io/)** from the dropdown menu.
 

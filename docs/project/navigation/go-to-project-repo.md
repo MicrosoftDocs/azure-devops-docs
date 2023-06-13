@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Open another project or repository for Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -27,7 +27,7 @@ Also, when you add a work item, the system references the default area and itera
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

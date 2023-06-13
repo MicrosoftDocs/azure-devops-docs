@@ -3,9 +3,9 @@ title: Bug trends sample queries and Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a bug trend Power BI report. 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/08/2022

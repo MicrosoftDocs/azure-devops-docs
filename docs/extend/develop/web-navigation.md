@@ -22,7 +22,7 @@ Vertical navigation brings with it changes that affect some extensions. These ou
 
 In traditional horizontal navigation, users could go to a project or team by selecting from a picker that's in the top left of the page header. This picker presented a list of recent teams and a way to browse for all teams. In the new vertical navigation, a user can only navigate into a project (and not into a team). This change was made to simplify the overall experience. But, it introduced a challenge for web extensions that rely on users' ability to switch teams using the traditional team picker in the page header.
 
-`VSS.getWebContext()` is a client-side API provided by the VSS SDK that provides information about the current organization, project, and team the user is operating in:
+`SDK.getWebContext()` is a client-side API provided by the SDK that provides information about the current organization, project, and team the user is operating in:
 
 ```json
 {
@@ -41,26 +41,29 @@ In traditional horizontal navigation, users could go to a project or team by sel
 }
 ```
 
-We don't recommend relying on `VSS.getWebContext().team`. Instead, follow the guidance below, based on the category your extension falls under.
+We don't recommend relying on `SDK.getWebContext().team`. Instead, follow the guidance below, based on the category your extension falls under.
 
 ### Hub extensions that are team aware
 
 If your extension needs to provide users a way to select a team, you can use the Teams REST API to get a list of teams for the current project. The following example shows how to call this API from your extension.
 
 ```javascript
-VSS.require(["VSS/Service", "TFS/Core/RestClient"],
-   function(VSS_Service, Tfs_Core_WebApi) {
-      var client = VSS_Service.getCollectionClient(Tfs_Core_WebApi.CoreHttpClient4);
-  
-      client.getTeams(VSS.getWebContext().project.id).then(
-         function(teams) {
+import { getClient } from "azure-devops-extension-api";
+import { CoreRestClient } from "azure-devops-extension-api/Core";
+import * as SDK from "azure-devops-extension-sdk";
+
+private async getTeams() {
+    const client = getClient(CoreRestClient);
+    
+    client.getTeams(SDK.getWebContext().project.id).then(
+        function(teams) {
             console.log(teams);
-         }
-      );
-});
+        }
+    );
+}
 ```
 
-For an example of an extension that provides a team picker control, see [Team Calendar](https://github.com/Microsoft/vsts-team-calendar).
+For an example of an extension that provides a team picker control, see [Team Calendar](https://github.com/microsoft/vsts-team-calendar/blob/43c8ffae5481864707e564e879b25dbf4d9b9611/src/Calendar.tsx#LL382C1-L397C16).
 
 ### Pivots/Panels extensions that are in team aware hubs like Backlogs and Dashboard
 
@@ -68,8 +71,8 @@ Your extension can check the *configuration* object passed to your contribution.
 
 ```javascript
 function getCurrentTeam() {
-  let webContext = VSS.getWebContext();
-  let configuration = VSS.getConfiguration();
+  let webContext = SDK.getWebContext();
+  let configuration = SDK.getConfiguration();
 
   if ("team" in configuration) {
     return configuration.team;

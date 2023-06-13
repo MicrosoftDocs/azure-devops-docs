@@ -48,7 +48,7 @@ A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/conf
 
 ## Use an existing service account
 
-The Azure Kubernetes Service creates a new ServiceAccount, but the generic provider option lets you use an existing ServiceAccount. The existing ServiceAccount can be mapped to a Kubernetes resource within your environment to a namespace.
+The Azure Kubernetes Service maps a Kubernetes resource within your environment to a namespace.
 
 For more information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
 
@@ -250,8 +250,6 @@ To use this job in an **existing** pipeline, the service connection backing the 
 
 ## Related articles
 
-- [Deploy manifests](../ecosystems/kubernetes/deploy.md) and [bake manifests](../ecosystems/kubernetes/bake.md)
-- [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
-- [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
-- [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
-- [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)
+* [Deploy](../ecosystems/kubernetes/deploy.md) 
+* [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
+* [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)

@@ -3,8 +3,10 @@ title: Create a service connection and build and publish Docker images to Azure 
 description: How to create service connections and build and publish Docker images with Azure Pipelines
 ms.topic: tutorial
 ms.author: rabououn
+author: ramiMSFT
 ms.date: 12/01/2022
 monikerRange: 'azure-devops'
+robots: NOINDEX
 ---
 
 # Build and publish Docker images to Azure Container Registry
@@ -310,6 +312,5 @@ az group delete --name myapp-rg
 
 ## Related articles
 
-- [Deploy your ASP.NET Core app as a container](../../apps/cd/azure/aspnet-core-to-acr.md)
 - [Build and push images to Azure Container Registry with Docker templates](./acr-template.md)
 - [Build and deploy to Azure Kubernetes Service](/azure/aks/devops-pipeline)

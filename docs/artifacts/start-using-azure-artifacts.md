@@ -18,8 +18,12 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 
 ## Prerequisites
 
+- An Azure DevOps organization and a project. Create an [organization](../organizations/accounts/create-organization.md) or a [project](../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2-GiB storage.
+
+> [!NOTE]
+> If you anticipate using more than the provided 2-GiB storage, it is recommended to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 ::: moniker range="tfs-2018"
 
@@ -46,21 +50,37 @@ Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, yo
 
 With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 
-- [NuGet](./get-started-nuget.md)
-- [npm](./get-started-npm.md)
-- [Maven](./get-started-maven.md)
-- [Python](./quickstarts/python-packages.md)
-- [Universal Packages](./quickstarts/universal-packages.md)
+# [NuGet](#tab/nuget)
+
+- [Get started with NuGet packages and Azure Artifacts](./get-started-nuget.md)
+
+# [Npm](#tab/npm)
+
+- [Get started with npm packages and Azure Artifacts](./get-started-npm.md)
+
+# [Maven](#tab/maven)
+
+- [Get started with Maven packages and Azure Artifacts](./get-started-maven.md)
+
+# [Python](#tab/python)
+
+- [Get started with Python packages and Azure Artifacts](./quickstarts/python-packages.md)
+
+# [Universal Packages](#tab/universalpackages)
+
+- [Universal Packages quickstart](./quickstarts/universal-packages.md)
+
+---
 
 ## Feature availability
 
 | Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
 |-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
-| **NuGet packages**                | Yes                    | Yes                                          | Yes                                          |
-| **npm packages**                  | Yes                    | Yes                                          | Yes                                          |
-| **Maven packages**                | Yes                    | Yes                                          | Yes                                          |
-| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020  | Yes                                          |
-| **Universal Packages**            | Yes                    | No                                           | No                                           |
+| **NuGet packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **npm packages**                  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Maven packages**                | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Python packages**               | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | Server 2019 Update 1 and newer, Server 2020, and Server 2022.  | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                                          |
+| **Universal Packages**            | :::image type="icon" source="../media/icons/checkmark.png" border="false":::                    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::                                           |
 
 ## Artifacts free tier and upgrade
 

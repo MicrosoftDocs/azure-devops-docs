@@ -1,15 +1,16 @@
 ---
 title: Default permissions quick reference
 titleSuffix: Azure DevOps 
-description: Default permissions and access to common user tasks for Azure DevOps 
+description: Default permissions and access to common user tasks for Azure DevOps
+ms.custom: "permissions, engagement-fy23" 
 ms.subservice: azure-devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022  
+ms.date: 02/02/2023
 ---
 
 # Default permissions quick reference for Azure DevOps
@@ -55,18 +56,17 @@ You can plan and track work from the web portal **Work** hub, and using Eclipse,
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md). 
 
-Access to the following tasks are controlled by each user's access level or by permission assignments. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
+Access to the following tasks is controlled by each user's access level or by permission assignments. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
 
 ### General work item permissions
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
 
-<!---
 ::: moniker range="tfs-2018"  
 > [!NOTE]  
 > There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
 ::: moniker-end  
--->  
+
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
@@ -118,7 +118,18 @@ Stakeholders for private projects have no access to **Repos**. Stakeholders for 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="azure-devops" 
+
+### Advanced Security 
+
+You can use [Advanced Security](../../repos/security/configure-github-advanced-security-features.md) to identify security vulnerabilities in your repository.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [temp](includes/advanced-security.md)]
+
 
 ## Code: Source control
 

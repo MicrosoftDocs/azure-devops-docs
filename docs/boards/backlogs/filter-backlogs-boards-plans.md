@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to apply filters to backlogs, boards, queries, and plans in Azure Boards  
 ms.custom: "boards-backlogs, boards-kanban, seodec18, contperf-fy21q3"    
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 10/27/2022
@@ -711,7 +711,7 @@ Along with the standard filter functions summarized in the previous table, the f
 
 ::: moniker range=">= azure-devops-2020"
 To learn more about these other functions, see the following articles: 
-- [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
+- [Reorder cards (Kanban Boards)](../boards/customize-cards.md#reorder-cards)  
 - [Display rollup progress or totals](display-rollup.md) 
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
@@ -719,7 +719,7 @@ To learn more about these other functions, see the following articles:
 
 ::: moniker range="< azure-devops-2020"
 To learn more about these other functions, see the following articles: 
-- [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
+- [Reorder cards (Kanban Boards)](../boards/customize-cards.md#reorder-cards)  
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
 ::: moniker-end 
@@ -1043,6 +1043,6 @@ To learn more, see [Query work item history and discussion fields](../queries/hi
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 - [Tags](../queries/add-tags-to-work-items.md) 
 - [Query work items that you're following](../work-items/follow-work-items.md#query-work-items-that-youre-following)
-- [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
+- [Reorder cards (Kanban Boards)](../boards/customize-cards.md#reorder-cards)  
 
 <!--- Other filter features cross-service such as Filter pipelines -->

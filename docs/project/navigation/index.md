@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Navigate within the user interface/web portal of Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -141,7 +141,7 @@ Although you can access source code, work items, and builds from both clients, s
 :::row:::
    :::column span="2":::
       - [Product backlog](../../boards/backlogs/create-your-backlog.md), [Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md), [Sprint backlogs](../../boards/sprints/assign-work-sprint.md), [Taskboards](../../boards/sprints/task-board.md), [Capacity planning](../../boards/sprints/set-capacity.md) 
-      - [Kanban boards](../../boards/boards/kanban-basics.md) 
+      - [Kanban boards](../../boards/boards/kanban-overview.md) 
       - [Dashboards](../../report/dashboards/dashboards.md), [Widgets](../../report/dashboards/widget-catalog.md), [Charts](../../report/dashboards/charts.md) 
       - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)  
       - [Web-based Test Management](../../test/overview.md)  

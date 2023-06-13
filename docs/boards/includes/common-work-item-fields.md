@@ -1,8 +1,8 @@
 ---
 ms.topic: include
-ms.author: kaelli
-author: KathrynEE 
-ms.date: 01/04/2023
+ms.author: chcomley
+author: chcomley 
+ms.date: 06/07/2023
 ---
 
 
@@ -10,10 +10,9 @@ ms.date: 01/04/2023
 
 <a id="definitions-in-common"></a>
 
-The following fields and tabs appear in most work items. Each tab is used to track specific information, such as :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png" border="false"::: **History**, :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links**, or :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: **Attachments**. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
+The following fields and tabs appear in most work items. Each tab gets used to track specific information, such as :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png" border="false"::: **History**, :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links**, or :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: **Attachments**. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
 
-The only required field for all work item types is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
-
+The only required field for all work item types is **Title**. When you save a work item, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
 
 > [!NOTE]   
 > Additional fields may be required depending on customizations made to your process and project.  
@@ -102,4 +101,4 @@ The only required field for all work item types is **Title**. When the work item
    :::column span="3":::
    Share more detailed information by adding files to the work item, such as email threads, documents, images, log files, or other file types.
    :::column-end:::
-:::row-end::: 
+:::row-end:::

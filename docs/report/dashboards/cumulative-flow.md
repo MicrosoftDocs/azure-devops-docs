@@ -5,8 +5,8 @@ description: Learn how to configure and view cumulative flow diagrams to improve
 ms.custom: dashboards 
 ms.subservice: azure-devops-analytics
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops' 
 ms.date: 04/04/2022
@@ -100,7 +100,7 @@ The CFD shows the count of items in each Kanban column for the selected time per
 
 ::: moniker-end
 
-For the CFD to provide useful information, you'll want to update the status of work items to reflect progress as it occurs. You can quickly make these updates through your [Kanban board](../../boards/boards/kanban-basics.md). 
+For the CFD to provide useful information, you'll want to update the status of work items to reflect progress as it occurs. You can quickly make these updates through your [Kanban board](../../boards/boards/kanban-quickstart.md). 
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -341,9 +341,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md) or
-> [Kanban basics](../../boards/boards/kanban-basics.md)
-
+> [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 
 ## Related articles
 

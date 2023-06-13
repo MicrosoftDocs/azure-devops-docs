@@ -3,6 +3,7 @@ title: Run automated tests from test plans
 description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual 
 ms.author: sdanie
 author: steved0x
@@ -276,7 +277,7 @@ not as a service, to allow the agent to launch a web browser.
 If you are using a headless browser such as [PhantomJS](https://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
 [Build and release agents](../pipelines/agents/agents.md),
-[Deploy an agent on Windows](../pipelines/agents/v2-windows.md),
+[Deploy an agent on Windows](../pipelines/agents/windows-agent.md),
 and [Agent pools](../pipelines/agents/pools-queues.md).
 
 ### Q: Where can I find detailed documentation on how to run Selenium tests?

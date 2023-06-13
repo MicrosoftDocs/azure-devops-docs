@@ -5,7 +5,7 @@ description: Learn how to change the Work Items page setting from default to leg
 ms.custom: work-items, seodec18  
 ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
 ms.date: 06/27/2022

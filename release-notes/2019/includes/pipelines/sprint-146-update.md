@@ -111,7 +111,7 @@ By using the YAML snippet below, the built-in YAML templates will be configured 
 
 ```yaml
 trigger:
-- master
+- main
 ```
 
 ### Change build numbers, upload and download artifacts in forked repository builds

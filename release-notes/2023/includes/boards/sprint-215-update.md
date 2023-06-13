@@ -20,3 +20,6 @@ In your Kanban board, swimlanes help you visualize the status of work that suppo
 
 > [!div class="mx-imgBorder"]
 > ![Gif to demo adding color to swimlanes.](../../media/215-boards-02.gif "gif to demo adding color to swimlanes")
+
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).

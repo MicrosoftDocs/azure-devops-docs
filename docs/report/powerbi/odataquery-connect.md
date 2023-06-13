@@ -3,8 +3,8 @@ title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Learn how to write and test OData queries for use in Power BI integration.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/09/2022

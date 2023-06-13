@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 01/05/2022
 ---
@@ -20,6 +20,7 @@ ms.date: 01/05/2022
      **Project admins**
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range="azure-devops"  
 :::row:::
    :::column span="2":::
@@ -38,7 +39,7 @@ ms.date: 01/05/2022
 ::: moniker-end  
 :::row:::
    :::column span="2":::
-      Create and save managed My queries, query charts
+      Create and save managed **My queries**, query charts
    :::column-end:::
    :::column span="1":::
       
@@ -52,7 +53,7 @@ ms.date: 01/05/2022
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Create, delete, and save Shared queries, charts, folders 
+      Create, delete, and save **Shared queries**, charts, folders 
    :::column-end:::
    :::column span="1":::
       

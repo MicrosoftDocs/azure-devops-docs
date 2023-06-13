@@ -18,14 +18,14 @@ monikerRange: '<= azure-devops'
 
 While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
 
-| Feature | Azure Pipelines | Azure DevOp Server 2019 and higher | TFS 2018 |
+| Feature | Azure Pipelines | Azure DevOps Server 2019 and higher | TFS 2018 |
 |---|---|---|---|
 | Branch | Yes | Yes | Yes |
 | Clean | Yes | Yes | Yes |
 | Tag or label sources | Project; Classic only | Team project | Team project |
 | Report build status | Yes | Yes | Yes |
-| Checkout submodules | Yes | Yes | Yes |
-| Checkout files from LFS | Yes | Yes | Yes |
+| Check out submodules | Yes | Yes | Yes |
+| Check out files from LFS | Yes | Yes | Yes |
 | Clone a second repo | Yes | Yes | Yes |
 | Don't sync sources | Yes | Yes | Yes |
 | Shallow fetch | Yes | Yes | Yes |
@@ -149,7 +149,7 @@ You've got the option to give your team a view of the build status from your rem
 
 If your sources are in an Azure Repos Git repository in your project, then this option displays a badge on the **Code** page to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
 * **Files**: Indicates the status of the latest build for the selected branch.
-* **Commits**: Indicates the build status of the each commit (this requires the continuous integration (CI) trigger to be enabled for your builds).
+* **Commits**: Indicates the build status of each commit (this requires the continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
 If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge on the **Code** page indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
@@ -177,7 +177,7 @@ If you are using multiple `checkout` steps and checking out multiple repositorie
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
 If you are using multiple `checkout` steps and checking out multiple repositories, and want to explicitly specify the folder using `path`,
-consider to avoid to set path which is subfolder of another checkout step's path (i.e. `C:\agent\_work\1\s\repo1` and `C:\agent\_work\1\s\repo1\repo2`), otherwise, the subfolder of the checkout step will be cleared by another repo's cleaning. Please note that this case valid if clean option is true for `repo1`) 
+consider avoiding setting path which is subfolder of another checkout step's path (i.e. `C:\agent\_work\1\s\repo1` and `C:\agent\_work\1\s\repo1\repo2`), otherwise, the subfolder of the checkout step will be cleared by another repo's cleaning. Please note that this case is valid if the clean option is true for `repo1`) 
 
 > [!NOTE]
 > The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
@@ -247,7 +247,7 @@ Use that variable to populate the secret in the above Git command.
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
-## Checkout files from LFS
+## Check out files from LFS
 
 Select if you want to download files from [large file storage (LFS)](../../repos/git/manage-large-files.md).
 
@@ -261,7 +261,7 @@ steps:
   lfs: true
 ```
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine. For more information, see [What version of Git does my agent run?](../agents/windows-agent.md#what-version-of-git-does-my-agent-run)
 
 ### Using Git LFS with submodules
 
@@ -346,7 +346,7 @@ This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 
-* Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
+* Use a build pipeline to just run automation (for example some scripts) that does not depend on code in version control.
 
 If you want to disable downloading sources:
 
@@ -377,13 +377,13 @@ After you select the check box to enable this option, in the **Depth** box speci
 
 ## Prefer Git from path
 
-The Windows agent comes with its own copy of Git.
-If you prefer to supply your own Git rather than use the included copy, set `System.PreferGitFromPath` to `true`.
+[!INCLUDE [include](../agents/includes/system-prefer-git-from-path.md)]
+
 This setting is always true on non-Windows agents.
 
 ## Trigger Options for Other Git
 
-When using an Other/external Git repository, CI builds require that the repository is accessible from the internet. If the repository is behind a firewall or proxy, then only scheduled and manual builds will work.
+When an Other/external Git repository is specified, CI builds require that the repository is accessible from the internet. If the repository is behind a firewall or proxy, then only scheduled and manual builds will work.
 
 ## FAQ  
 

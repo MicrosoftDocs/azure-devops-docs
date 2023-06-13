@@ -3,8 +3,8 @@ title: Scaled Agile Framework (SAFe®) and Azure Boards
 titleSuffix: Azure Boards
 description: Learn how Scaled Agile Framework concepts map to Azure Boards artifacts.
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2021

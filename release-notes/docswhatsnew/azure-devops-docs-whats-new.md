@@ -1,132 +1,123 @@
 ---
-title: "Azure DevOps docs: What's new for December 1, 2022 - December 31, 2022"
-description: "What's new in the Azure DevOps docs for December 1, 2022 - December 31, 2022."
-ms.date: 01/04/2023
+title: "Azure DevOps docs: What's new for May 1, 2023 - May 31, 2023"
+description: "What's new in the Azure DevOps docs for May 1, 2023 - May 31, 2023."
+ms.date: 06/01/2023
 ---
 
-# Azure DevOps docs: What's new for December 1, 2022 - December 31, 2022
+# Azure DevOps docs: What's new for May 1, 2023 - May 31, 2023
 
-Welcome to what's new in the Azure DevOps docs from December 1, 2022 through December 31, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from May 1, 2023 through May 31, 2023. This article lists some of the major changes to docs during this period.
+
+## Administration
+
+### Updated articles
+
+- [Default permissions quick reference for Azure DevOps](/azure/devops/organizations/security/permissions-access)
+- [Set work tracking permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking)
 
 ## Artifacts
 
-### Updated articles
+### New articles
 
-- [Artifacts storage consumption](/azure/devops/artifacts/artifact-storage)
-
-## Boards
+- [Publish Maven artifacts using Gradle](/azure/devops/artifacts/maven/publish-with-gradle)
 
 ### Updated articles
 
-- [Email or print user stories, bugs, and other work items](/azure/devops/boards/work-items/email-work-items)
+- [Accelerate collaboration and Agile development with componentization](/azure/devops/artifacts/collaborate-with-packages)
+- [Publish and download universal packages in Azure Artifacts](/azure/devops/artifacts/quickstarts/universal-packages)
+- [Migrate your packages from file shares](/azure/devops/artifacts/nuget/move-from-fileshares)
 
-## Developer resources
-
-### Updated articles
-
-- [Add a custom pipelines task extension](/azure/devops/extend/develop/add-build-task)
-- [Create a custom consumer for service hooks](/azure/devops/extend/develop/add-service-hook)
-
-## Organizations
+## Azure Boards
 
 ### Updated articles
 
-- [Add users or groups to a team or project](/azure/devops/organizations/security/add-users-team-project)
+- [About Kanban boards](/azure/devops/boards/boards/kanban-overview)
+- [Use your Kanban board](/azure/devops/boards/boards/kanban-quickstart)
+- [Manage columns on your Kanban board](/azure/devops/boards/boards/add-columns)
+- [Customize cards on a Kanban board](/azure/devops/boards/boards/customize-cards)
+- [Work in Excel connected to Azure Boards FAQs](/azure/devops/boards/backlogs/office/faqs)
+- [Import or update work items in bulk with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
+- [Expedite work using swimlanes](/azure/devops/boards/boards/expedite-work)
+- [About default processes and process templates](/azure/devops/boards/work-items/guidance/choose-process)
 
-## Pipelines
+## Azure DevOps Reporting and Analytics service
+
+### Updated articles
+
+- [View and configure team velocity](/azure/devops/report/dashboards/team-velocity)
+
+## Azure Pipelines
 
 ### New articles
 
-- [Customize Python for Azure Pipelines](/azure/devops/pipelines/ecosystems/customize-python)
+- [Publish NuGet packages to NuGet.org with Azure Pipelines](/azure/devops/pipelines/artifacts/publish-public-registry)
+- [Self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent)
+- [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent)
+- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
+- [Azure Pipelines architecture for Azure Web Apps](/azure/devops/pipelines/architectures/devops-pipelines-azure-web-apps-architecture)
+- [CI/CD baseline architecture with Azure Pipelines](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture)
+- [Azure Pipelines architecture with DevTest Labs](/azure/devops/pipelines/architectures/devops-pipelines-devtest-iaas-architecture)
+- [Azure Pipelines architecture for IaaS](/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture)
 
 ### Updated articles
 
-- [Build Python apps](/azure/devops/pipelines/ecosystems/python)
-- [Add stages, dependencies, & conditions](/azure/devops/pipelines/process/stages)
-- [Deployment control using approvals](/azure/devops/pipelines/release/approvals/approvals)
+- [Use predefined variables](/azure/devops/pipelines/build/variables)
+- [Logging commands](/azure/devops/pipelines/scripts/logging-commands)
+- [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
+- [Template types & usage](/azure/devops/pipelines/process/templates)
+- [Pipeline options for Git repositories](/azure/devops/pipelines/repos/pipeline-options-for-git)
+- [Set variables in scripts](/azure/devops/pipelines/process/set-variables-scripts)
+- [Publish and download Universal Packages with Azure Pipelines](/azure/devops/pipelines/artifacts/universal-packages)
+- [Self-hosted Linux agents (2.x)](/azure/devops/pipelines/agents/v2-linux-agent)
+- [Self-hosted macOS agents (2.x)](/azure/devops/pipelines/agents/v2-osx-agent)
+- [Self-hosted Windows agents (2.x)](/azure/devops/pipelines/agents/v2-windows-agent)
+- [Set retention policies for builds, releases, and tests](/azure/devops/pipelines/policies/retention)
+- [Agent software version 3](/azure/devops/pipelines/agents/v3-agent)
 
-## Reference
+## Azure Repos
 
-### Updated articles
+### New articles
 
-- [Manage global lists for work item types](/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types)
-- [Manage work item fields](/azure/devops/reference/witadmin/manage-work-item-fields)
-- [Rebuild the client cache](/azure/devops/reference/witadmin/rebuild-client-cache)
-- [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work)
-- [Import, export, and manage work item types](/azure/devops/reference/witadmin/witadmin-import-export-manage-wits)
-- [Import and export process configuration](/azure/devops/reference/witadmin/witadmin-import-export-process-configuration)
-
-## Report
-
-### Updated articles
-
-- [Sample reports and quick reference index](/azure/devops/report/extend-analytics/quick-ref)
-- [Refresh your report and show last refresh date](/azure/devops/report/powerbi/add-last-refresh-time)
-- [Create a Power BI report with an OData Query](/azure/devops/report/powerbi/create-quick-report-odataq)
-- [About Power BI integration](/azure/devops/report/powerbi/overview)
-
-## Repos
+- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features) - New feature
+- [Advanced Security billing](/azure/devops/repos/security/github-advanced-security-billing)
+- [Code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning)
+- [Dependency scanning](/azure/devops/repos/security/github-advanced-security-dependency-scanning)
+- [Advanced Security permissions](/azure/devops/repos/security/github-advanced-security-permissions)
+- [Secret scanning](/azure/devops/repos/security/github-advanced-security-secret-scanning)
 
 ### Updated articles
 
-- [Merge strategies and squash merge](/azure/devops/repos/git/merging-with-squash)
-- [Decide between using a local or server workspace](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)
-- [Set TFVC repository permissions](/azure/devops/repos/tfvc/set-tfvc-repository-permissions)
-- [Set up Team Foundation Version Control on your dev machine](/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine)
-- [Develop and share code in TFVC with Visual Studio](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
-- [Shelve command (Team Foundation Version Control)](/azure/devops/repos/tfvc/shelve-command)
-- [Shelvesets command (Team Foundation Version Control)](/azure/devops/repos/tfvc/shelvesets-command)
-- [Status command (Team Foundation Version Control)](/azure/devops/repos/tfvc/status-command)
-- [Suspend your work and manage your shelvesets](/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets)
-- [Undelete command (Team Foundation Version Control)](/azure/devops/repos/tfvc/undelete-command)
-- [Undo command (Team Foundation Version Control)](/azure/devops/repos/tfvc/undo-command)
-- [Unlabel command (Team Foundation Version Control)](/azure/devops/repos/tfvc/unlabel-command)
-- [Unshelve command (Team Foundation Version Control)](/azure/devops/repos/tfvc/unshelve-command)
-- [Use labels to take a snapshot of your files in Azure Repos](/azure/devops/repos/tfvc/use-labels-take-snapshot-your-files)
-- [Use Source Control Explorer to manage files in TFVC](/azure/devops/repos/tfvc/use-source-control-explorer-manage-files-under-version-control)
-- [Use Team Foundation version control commands](/azure/devops/repos/tfvc/use-team-foundation-version-control-commands)
+- [Use Azure Repos with Microsoft Teams](/azure/devops/repos/integrations/repos-teams)
+- [Branch policies and settings](/azure/devops/repos/git/branch-policies)
 
-## Service-hooks
+## Demo-gen
 
 ### Updated articles
 
-- [Service hooks events](/azure/devops/service-hooks/events)
-- [Troubleshoot service hooks](/azure/devops/service-hooks/troubleshoot)
+- [Build a custom template](/azure/devops/demo-gen/build-your-own-template)
+
+## Extend
+
+### Updated articles
+
+- [Extend the work item form](/azure/devops/extend/develop/add-workitem-extension)
+- [Data storage](/azure/devops/extend/develop/data-storage)
+- [Extension samples](/azure/devops/extend/develop/samples-overview)
+- [Vertical navigation guidance](/azure/devops/extend/develop/web-navigation)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-12-01..2022-12-31).
-
-- [Required Node Version incompatible with Mocha #12980](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12980)
-- [Wrong examples of clauses to include in section "Return data for Identity, Area Path, and Iteration Path fields" #12938](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12938)
-- [Define 'inactive' account #12936](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12936)
-- [DownloadPackage@1 does not describe 'latest' version usage #12911](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12911)
-- [Sample payload for "Work item updated" is wrong #12893](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12893)
-- [What, exactly, is the set of invalid characters for a build number? #12723](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12723)
-- [WindowsMachineFileCopy Doc States MachineNames are optional, yet pipeline fails with Required error #12447](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12447)
-- [set variables #12384](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12384)
-- [Guidance for setting variables in pipelines omits useful detail #12276](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12276)
-- [runOnce strategy output variables do not use lifecycle-hookname, but the deployment job name #12117](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12117)
-- [Description of $(Rev:r) lacks meaning of $(Rev:.r) and its used on this page in most of examples #11941](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11941)
-- [ADO Yaml SYSTEM_DEBUG #11857](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11857)
-- [Azure App Service Deploy task - ConfigurationSettings - remove colon #11768](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11768)
-- [In which step is the cache being uploaded? #11699](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11699)
-- [Should have a list of keywords - eg: how to specify  Not Equal, Greater than etc #11638](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11638)
-- [Clarification: Does "Deploy all in sequence" option look at commit sequence or build completion sequence? #11533](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11533)
-- [Could you illustrate more on how to use "variables" part in stage? #11527](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11527)
-- [Stages, jobs and pipeline agents #11381](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11381)
-- [Missing parameters for PublishCodeCoverageResults #11183](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11183)
-- [Build.Reason variable missing BuildCompletion event #10943](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10943)
-- [Missing requirements for build numbers #9850](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9850)
-- [Hosted Agent Tip? #8706](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8706)
-- [Pipeline and resource identifiers need additional clarity #7276](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7276)
+Thank you for your feedback on our documentation. This month we made updates to our content to address [these GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2023-05-01..2023-05-31).
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [chrizzo84](https://github.com/chrizzo84) - Christoph Grugel (2)
-- [youcc](https://github.com/youcc) - Chad You (2)
-- [IvanYuriev2](https://github.com/IvanYuriev2) (1)
-- [sebastienrieu](https://github.com/sebastienrieu) - Sébastien Rieu (1)
-- [themaroqa](https://github.com/themaroqa) - Matteo Marenghi (1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (2)
+- [jennings](https://github.com/jennings) - Stephen Jennings (1)
+- [JynLeazy](https://github.com/JynLeazy) (1)
+- [ronwarner](https://github.com/ronwarner) - Ron (1)
+- [SampathDilhan](https://github.com/SampathDilhan) - Sampath Dilhan (1)
+- [stefkiourk](https://github.com/stefkiourk) - Stef Ki (1)
+- [TheJohnH](https://github.com/TheJohnH) - John H (1)
+- [yagnyaPatel](https://github.com/yagnyaPatel) - Yagnya Patel (1)
