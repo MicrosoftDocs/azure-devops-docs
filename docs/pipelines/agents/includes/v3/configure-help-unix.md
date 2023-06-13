@@ -4,7 +4,7 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/12/2020
+ms.date: 06/13/2023
 ---
 
 ## Unattended config
@@ -31,6 +31,14 @@ After configuring the agent:
 
 This will run through a diagnostic suite that may help you troubleshoot the problem.
 The diagnostics feature is available starting with agent version 2.165.0.
+
+:::moniker range=">azure-devops-2022"
+
+## Network diagnostics for self-hosted agents
+
+Set the value of `Agent.Diagnostic` to `true` to collect additional logs that can be used for troubleshooting network issues for self-hosted agents. For more information, see [Network diagnostics for self-hosted agents](../../../troubleshooting/review-logs.md#network-diagnostics-for-self-hosted-agents)
+
+:::moniker-end
 
 ## Help on other options
 
