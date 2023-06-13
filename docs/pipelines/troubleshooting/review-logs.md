@@ -115,6 +115,8 @@ Set the value of `Agent.Diagnostic` to `true` to collect the following additiona
 > [!NOTE]
 > The `Agent.Diagnostic` variable and logs described in this section are available with [Agent v2.200.0](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.200.0) and higher.
 
+For more information, see [agent troubleshooting](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/troubleshooting.md) in the [microsoft/azure-pipelines-agent](https://github.com/microsoft/azure-pipelines-agent/tree/master) Azure Pipelines agent open-source agent repository.
+
 :::moniker-end
 
 
