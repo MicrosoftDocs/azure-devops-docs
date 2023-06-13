@@ -55,7 +55,7 @@
   - name: View/configure sprint burndown
     href: dashboards/configure-sprint-burndown.md
     displayname: sprint backlog, current, past
-  - name: Configure a Burndown or Burnup widget
+  - name: Configure a burndown or burnup widget
     href: dashboards/configure-burndown-burnup-widgets.md
     displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval
   - name: Configure Lead/Cycle time widget
