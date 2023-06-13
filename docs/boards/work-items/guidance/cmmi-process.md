@@ -6,8 +6,8 @@ description: Learn about Capability Maturity Model Integration (CMMI) process ob
 ms.service: azure-devops-boards
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -88,13 +88,13 @@ If you need to add reporting services or update reports to the latest versions, 
 As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Each template provides a `version` element. This element specifies a major and minor version. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |TFS version | CMMI name | Major version |
+> |Version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
 
-For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
+For a summary of updates made to process templates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 
 ### More CMMI guidance

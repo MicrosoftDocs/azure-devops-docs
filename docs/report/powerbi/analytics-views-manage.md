@@ -3,8 +3,9 @@ title: Manage Analytics views
 titleSuffix: Azure DevOps
 description: Learn how to view, edit, and delete an Analytics view for Azure DevOps
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.custom: analytics-views, engagement-fy23 
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/08/2022
@@ -43,7 +44,7 @@ The creator of a view and all members of the Project Administrators and Project 
 1. From either the **Favorites** or **All** page, hover over the view you want to edit, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Edit** option. You can also choose **Edit** from the Summary panel. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Screenshot of Analytics Views, Edit a view.](media/editable-views/edit-view.png)
+	> ![Screenshot of Analytics views, Edit a view.](media/editable-views/edit-view.png)
 
 2. You can edit any part of the view, in the same way you did to define a view. For details, see [Create an Analytics view.](analytics-views-create.md)
 

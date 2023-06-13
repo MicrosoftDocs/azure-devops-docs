@@ -5,8 +5,8 @@ description: Learn about work queries based on titles, IDs, and rich-text fields
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 10/06/2022
@@ -337,7 +337,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Work Item Type
    :::column-end:::
      :::column span="2":::
-   The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
+   The name of the work item type. Work item types are defined based on the process used when you created your project. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) and [Add or modify a work item type](../../reference/add-modify-wit.md). 
 
    To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  
 

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: contperf-fy22q4
 description: Control which services are available for a project from the web portal for Azure DevOps.  
 ms.subservice: azure-devops-settings
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'  
 ms.date: 07/27/2022

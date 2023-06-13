@@ -92,7 +92,7 @@ For your files, set `addressable` to `true` unless you include other files that 
 	
 ## Example
 ```javascript
-VSS.register(VSS.getContribution(), {
+SDK.register(SDK.getContributionId(), {
     pageTitle: function(state) {
         return "Hello";
     },

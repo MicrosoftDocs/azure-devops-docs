@@ -2,14 +2,14 @@
 title: Configure the Test Results Trend (Advanced) widget
 titleSuffix: Azure DevOps 
 description: Learn how to monitor test trends and gain insights about pipeline test efforts using Analytics Test Results Trend (Advanced) widget in Azure DevOps.
-ms.custom: dashboards   
+ms.custom: dashboards, engagement-fy23   
 ms.subservice: azure-devops-analytics
 ms.assetid: 
 ms.topic: tutorial 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019' 
-ms.date: 09/27/2021
+ms.date: 02/02/2022
 ---
 
 # Configure the Test Results Trend (Advanced) widget
@@ -25,7 +25,7 @@ With the **Test Results Trend** widget, you can monitor test trends over a perio
 
 **Example Test Results Trend widget showing pass percentage and test failure for last 7 days**  
 
-![Test results trend (advanced) widget example](media/test-results-trend-widget/Failed-test-pass.png) 
+![Screenshot of example Test results trend (advanced) widget.](media/test-results-trend-widget/Failed-test-pass.png) 
 
 In this article you'll learn:
 
@@ -35,7 +35,7 @@ In this article you'll learn:
 > * How to install and configure the Test Results Trend widget 
 
 > [!NOTE]   
-> The Test Results Trend (Advanced) widget is based on Analytics. Analytics is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2017 and TFS 2018, you can use the Test Results Trend widget. 
+> The Test Results Trend (Advanced) widget is based on Analytics and supported for Azure DevOps Server 2020 and later versions. For earlier versions, you can use the Test Results Trend widget. 
 
 ## Insights supported with Test Results Trend charts
 
@@ -84,7 +84,7 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
 	Modify the **Title** and select either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Test Results Trend (Advanced) widget configuration panel](media/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
+	> ![Screenshot of Configuration dialog for Test Results Trend (Advanced) widget.](media/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
 
 	Select the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon to add one or more pipelines. 
 
@@ -94,7 +94,7 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
 
 	The following image shows a chart with pass rate and test results for last seven days. 
    
-	![Test widget configuration panel](media/test-results-trend-widget/passed-bypriority-pass.png)
+	![Screenshot of Test Results Trend Advanced widget.](media/test-results-trend-widget/passed-bypriority-pass.png)
 
 
 

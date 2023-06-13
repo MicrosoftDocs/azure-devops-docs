@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to add and use plans to review scheduled multi-team deliverables in Azure Boards and Azure DevOps.   
 ms.service: azure-devops-boards
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 08/09/2022
@@ -57,7 +57,7 @@ In this article you'll learn:
   - Be a member of the Project Administrators or Project Collection Administrators group
   - Be granted explicit permission through the plan's Security dialog. 
  
-  For details, see [Edit or manage Delivery Plan permissions](../plans/edit-delivery-plan-permissions.md).  
+  For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).  
 
 ## Review a plan with your teams
 

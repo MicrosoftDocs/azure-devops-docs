@@ -5,36 +5,20 @@ description: Learn about tasks that support backlogs, Kanban boards, taskboards,
 ms.custom: "boards-backlogs, seodec18" 
 ms.service: azure-devops-boards
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 03/30/2023
 ---
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-What can you do from a backlog view versus a board view? How do these tasks differ from delivery plans? How do changes you make in one show up on the other? What customizations can you make for each?
+Learn about the different views available in Agile project management - backlogs, boards, and delivery plans - and how they differ from each other. 
 
-Which view should you use to work with Agile methods?  
-
-**In a nutshell...**
-
--  Backlogs display work items as a list and boards display them as cards  
--  You use your product backlog to quickly plan and prioritize your work  
--  You use your sprint backlogs and taskboards when you work in Scrum   
--  You use your Kanban board to update work status and when you employ Kanban methods   
--  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
--  Plans allow you to review the deliverables for several teams across sprints and a calendar schedule
--  Backlogs, boards, and plans are configurable for each team.  
-
-
-With list backlogs, you can quickly develop your project plan, group and prioritize work, and make bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
-
-And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
-
+Backlogs list work items while boards display them as cards, and each is associated with the other. You can customize each view according to your team's needs. Use your product backlog to plan and prioritize work, your sprint backlogs and taskboards for Scrum, and your Kanban board to update work status. Changes made in one view are reflected in the corresponding board. Delivery plans allow you to monitor progress, deliverables, and dependencies across several teams.
 
 ## Access a backlog or board
 
@@ -136,7 +120,7 @@ For details about working in each type of backlog, see [Create your backlog](cre
 
 Kanban and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and you monitor the flow through the cumulative flow chart. Taskboards track tasks defined for a sprint and you monitor the flow via the sprint burndown chart. 
 
-For details about working in each type of board, see [Kanban basics](../boards/kanban-basics.md) and [taskboard](../sprints/task-board.md). 
+For details about working in each type of board, see [Kanban overview](../boards/kanban-overview.md) and [taskboard](../sprints/task-board.md). 
 
 ### Feature support across backlogs and boards
 
@@ -876,7 +860,7 @@ Now that you understand how backlogs, boards, and plans work, [get started using
 A few things to keep in mind...
 - Every team owns their own backlog. To add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md) 
 - To have work completed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../plans/portfolio-management.md)   
-- Every backlog has a corresponding [Kanban board](../boards/kanban-basics.md) you can use to track progress and update status  
+- Every backlog has a corresponding [Kanban board](../boards/kanban-overview.md) you can use to track progress and update status  
 - Each team can control how [bugs show up on their backlogs](../../organizations/settings/show-bugs-on-backlog.md)  
 - When you add child items, they're linked to their parent using parent-child links, which support hierarchical views and [tree queries](../queries/using-queries.md#tree-query)    
 

@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to resolve data conflicts when publishing a work item from Excel to Azure Boards.
 ms.service: azure-devops-boards
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---
@@ -43,10 +43,9 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
     > [!NOTE]  
     >  This step publishes only the work items that you corrected. If you do not resolve all data validation errors related to a work item, that work item is not published.  
   
-## Related articles
--  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
+## Related articles 
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
--  Connect Azure Boards to an Office client](track-work.md)  
+-  [Connect Azure Boards to an Office client](track-work.md)  
 
 
 ### Required permissions  

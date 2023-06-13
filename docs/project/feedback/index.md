@@ -5,8 +5,8 @@ description: Learn about requesting and providing feedback about your software a
 ms.subservice: azure-devops-feedback
 ms.topic: overview
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
 ---
@@ -72,5 +72,5 @@ To learn more, see the following articles:
 ## Related articles
 
 - [Give reviewers permissions to provide feedback](/previous-versions/azure/devops/project/feedback/give-permissions-feedback)
-- [Default permissions and access set for collaboration tools](../wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json) 
-- [Give us feedback, get support](../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json) 
+- [Default permissions and access set for collaboration tools](../wiki/wiki-readme-permissions.md) 
+- [Give us feedback, get support](../../user-guide/provide-feedback.md) 

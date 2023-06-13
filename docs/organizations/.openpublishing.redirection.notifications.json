@@ -3,7 +3,7 @@
     {
       "source_path_from_root": "/docs/notifications/about-notifications.md",
       "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/add-links-to-work-items.md",
@@ -27,7 +27,7 @@
     },
     {
       "source_path_from_root": "/docs/notifications/concepts-events-and-notifications.md",
-      "redirect_url": "/azure/devops/organizations/notifications/concepts-events-and-notifications",
+      "redirect_url": "/azure/devops/organizations/notifications/about-notifications",
       "redirect_document_id": true
     },
     {

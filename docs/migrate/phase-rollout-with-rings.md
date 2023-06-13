@@ -5,8 +5,8 @@ ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.topic: conceptual
 ms.subservice: azure-devops-migrate
 ms.date: 09/23/2021
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ---
 

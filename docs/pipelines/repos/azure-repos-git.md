@@ -295,7 +295,7 @@ fatal: repository 'XYZ' not found
 ##[error] Git fetch failed with exit code: 128
 ```
 
-Follow each of these steps to troubleshoot your failing triggers:
+Follow each of these steps to troubleshoot your failing checkout:
 
 * Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
 

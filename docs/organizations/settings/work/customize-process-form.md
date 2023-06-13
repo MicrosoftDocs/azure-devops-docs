@@ -5,8 +5,8 @@ description: Customize the web form for a work item type and Inheritance process
 ms.custom: inherited-process   
 ms.service: azure-devops-boards
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: how-to
 ms.date: 04/22/2019

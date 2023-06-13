@@ -3,7 +3,7 @@ title: Use GitHub Actions to push to Azure Artifacts
 description: Push a NuGet package to Azure Artifacts with a GitHub Actions workflow
 ms.author: jukullam
 ms.custom: github-actions-azure
-ms.date: 10/25/2022
+ms.date: 06/06/2023
 monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
@@ -19,6 +19,7 @@ Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
 - An Azure Artifact feed that you'll push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
 - An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+    - Your PAT needs to have read, write, and manage **Packaging** permissions.
 
 ## Authenticate with Azure Pipelines
 

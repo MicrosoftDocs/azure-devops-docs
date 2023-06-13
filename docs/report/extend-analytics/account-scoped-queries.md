@@ -3,8 +3,8 @@ title: Project and organization or collection-scoped OData queries
 titleSuffix: Azure DevOps 
 description: Learn how to query OData Analytics for a project or an organization or collection in Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/13/2022

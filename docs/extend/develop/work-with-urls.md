@@ -21,7 +21,7 @@ With the introduction of Azure DevOps, organizational resources and APIs are now
 
 Regardless of when the organization was created, users, tools, and integrations can interact with organization-level REST APIs using either URL. As the developer of an extension, integration, or tool that interacts with Azure DevOps, learn how to best work with URLs made available to your code and form URLs when you call REST APIs.
 
-For more information, see the [REST API Reference](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true).
+For more information, see the [REST API Reference](/rest/api/azure/devops).
     
 ## Organization primary URL
 

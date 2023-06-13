@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 01/30/2023
+ms.date: 06/06/2023
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -15,7 +15,12 @@ author: steved0x
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
+This topic provides guidance on the common reasons that pipelines fail to [trigger](#pipeline-wont-trigger), [get an agent and start](#pipeline-queues-but-never-starts), or [complete](#pipeline-fails-to-complete). For instructions on reviewing pipeline logs, see [Review logs to diagnose pipeline issues](review-logs.md).
+
+> [!NOTE]
+> If your pipeline run failed and you were directed to this article from the **Troubleshooting failed runs** link in the Azure DevOps portal:
+> 1. Review the common causes in [Pipeline fails to complete](#pipeline-fails-to-complete).
+> 2. Follow the troubleshooting steps in [Review logs to diagnose pipeline issues](review-logs.md).
 
 ::: moniker range="tfs-2018"
 
@@ -26,9 +31,11 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 You can use the following troubleshooting sections to help diagnose issues with your pipeline. Most pipeline failures fall into one of these categories.
 
 * [Pipeline won't trigger](#pipeline-wont-trigger)
-* [Pipeline queues but never gets an agent](#pipeline-queues-but-never-gets-an-agent)
+* [Pipeline queues but never starts](#pipeline-queues-but-never-starts)
 * [Pipeline fails to complete](#pipeline-fails-to-complete)
 
+
+For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
 <a name="my-pipeline-isnt-triggering" />
 
 ## Pipeline won't trigger
@@ -112,9 +119,9 @@ Once all UI scheduled triggers are removed, a push must be made in order for the
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
-## Pipeline queues but never gets an agent
+## Pipeline queues but never starts
 
-If your pipeline queues but never gets an agent, check the following items.
+If your pipeline queues but never starts, check the following items.
 
 ::: moniker range="azure-devops"
 
@@ -158,7 +165,7 @@ If you are currently running other pipelines, you may not have any remaining par
 #### Check for available parallel jobs
 
 > [!NOTE]
-> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
+> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. If you don't have any parallel jobs, your pipelines will fail with the following error: `##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request`.  Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
 
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
@@ -300,7 +307,7 @@ Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) fo
 
 ## Pipeline fails to complete
 
-If your pipeline gets an agent but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
+If your pipeline starts, but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
 
 * [Job time-out](#job-time-out)
 * [Issues downloading code](#issues-downloading-code)

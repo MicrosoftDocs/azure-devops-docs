@@ -40,7 +40,7 @@ The *.artifactignore* follows the same syntax as the [.gitignore](https://git-sc
 
 ## Related articles
 
-- [Package graphs](../concepts/package-graph.md)
-- [Package componentization](../collaborate-with-packages.md)
-- [Key concepts](../artifacts-key-concepts.md)
+- [Publish and download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
 - [Limits on package sizes and counts](limits.md)
+- [Package componentization](../collaborate-with-packages.md)
+

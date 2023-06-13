@@ -5,8 +5,8 @@ description: Learn how to adjust items assigned to a sprint to align with a team
 ms.custom: boards-sprints
 ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2021

@@ -4,8 +4,8 @@ description: Overview of the high fidelity migration process from Server to Serv
 ms.topic: overview
 ms.subservice: azure-devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2021
 ---
@@ -23,6 +23,7 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
+* Azure DevOps Server 2022.0.1
 * Azure DevOps Server 2022
 * Azure DevOps Server 2020.1.2
 

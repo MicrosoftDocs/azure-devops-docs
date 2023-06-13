@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 11/08/2022
+ms.date: 05/03/2023
 ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
 monikerRange: '<= azure-devops'
 ---
@@ -45,11 +45,27 @@ To manage retention policies, you must have one of the following subscriptions:
 
 You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 ## Configure retention policies
 
-1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
+1. Sign in to your project. 
+
+2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+
+3. Select **Release retention** under **Pipelines** or **Retention** under **Test**.
+    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
+    * Select **Retention** to set up how long to keep manual and automated test runs.     
+
+    :::image type="content" source="media/devops-2019-retention-menu.png" alt-text="Screenshot of retention settings in Project settings for DevOps 2019.":::
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+## Configure retention policies
+
+1. Sign in to your project. 
 
 2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
@@ -58,7 +74,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
     * Select **Retention** to set up how long to keep manual and automated test runs.     
 
-    :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
+    :::image type="content" source="media/retention-menu.png" alt-text="Screenshot of retention settings in Project settings.":::
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
@@ -242,7 +258,7 @@ If you are using an on-premises Team Foundation Server or Azure DevOps Server, y
 
 If you are using Azure DevOps Services, you can view but not change these settings for your project.
 
-Global release retention policy settings can be managed from the **Release retention** settings of your project:
+Global release retention policy settings can be reviewed from the **Release retention** settings of your project:
 
 * Azure DevOps Services: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`

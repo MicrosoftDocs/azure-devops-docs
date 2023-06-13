@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about tasks to perform to close a sprint when using Scrum in Azure Boards. 
 ms.custom: boards-sprints, engagement-fy23 
 ms.service: azure-devops-boards 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 01/23/2023

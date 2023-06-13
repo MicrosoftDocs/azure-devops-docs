@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to construct a URL for a work item for Azure Boards and Azure DevOps.
 ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 ms.topic: how-to
 monikerRange: '<= azure-devops'   
 ms.date: 03/02/2022
@@ -23,7 +23,7 @@ You can define the URL for a work item using the syntax provided based on the ve
 Examples in this article use the following conventions:
 
 - *OrganizationName* specifies the name of the Azure Boards organization  
-- *ServerName* specifies the name of the TFS application tier server   
+- *ServerName* specifies the name of the Azure DevOps application tier server   
 - *Port* specifies the port, default=8080
 - *CollectionName* specifies the name of the project collection.
 - *ProjectName* specifies the project name
@@ -66,7 +66,7 @@ http://*ServerName:Port/CollectionName/ProjectName*/<b>_workitems?id=</b>*WorkIt
 http://fabrikamprime:8080/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
 ```  
 
-## Azure DevOps Server 2019 and TFS 2018
+## Azure DevOps Server 2019 and earlier versions
 
 
 http://*ServerName:Port*/**tfs**/*CollectionName/ProjectName*/**_workitems?id**=*WorkItemNumber***&_a=edit** 

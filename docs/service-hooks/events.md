@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/30/2022
+ms.date: 06/12/2023
 ---
 
 # Service hooks events
@@ -42,6 +42,7 @@ ms.date: 11/30/2022
 ::: moniker range="=azure-devops"
 
 * **Pipelines**
+  * [Job state changed](#job.statechanged)
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
@@ -1275,12 +1276,82 @@ Event: A deployment started.
 }
 ```
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="=azure-devops"
 ## Pipelines
 
-> [!NOTE]
-> Enable the preview feature, [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md), for these events.
+<a name="job.statechanged"></a>
 
+### Job state changed
+
+Event: Overall statuses of a job changed. A job within a run has transitioned to skipped, running or completed.
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelines.job-state-changed-event`
+* Resource Name: `resource`
+
+#### Settings
+ * `PipelineId`: Filter to include only events for the specified pipeline
+ * `state`: Filter events based on the new state of the job
+   * Valid values: 
+      * `Skipped` 
+      * `Running` 
+      * `Completed` 
+
+#### Sample payload
+```json
+{
+    "subscriptionId": "8d91ad83-1db5-4d43-8c5a-9bb2239644b1",
+    "notificationId": 29,
+    "id": "fcad4962-f3a6-4fbf-9653-2058c304503f",
+    "eventType": "ms.vss-pipelines.job-state-changed-event",
+    "publisherId": "pipelines",
+    "message":
+    {
+        "text": "Run 20221121.5 stage Build job Compile succeeded.",
+        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+    },
+    "detailedMessage":
+    {
+        "text": "Run 20221121.5 stage Build job Compile succeeded.",
+        "html": "Run 20221121.5 stage Build job <a href=\"https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088\">Compile</a> succeeded.",
+        "markdown": "Run 20221121.5 stage Build job [Compile](https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088) succeeded."
+    },
+    "resource":
+    {
+        "job":
+        {
+            "_links":
+            {
+                "web":
+                {
+                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/results?buildId=2710088"
+                },
+                "pipeline.web":
+                {
+                    "href": "https://dev.azure.com/fabrikamfiber/fabrikamfiber-viva/_build/definition?definitionId=4647"
+                }
+            },
+            "id": "e87e3d16-29b0-5003-7d86-82b704b96244",
+            "name": "Compile",
+            "state": "completed",
+            "result": "succeeded",
+            "startTime": "2022-11-21T16:10:28.49Z",
+            "finishTime": "2022-11-21T16:10:53.66Z"
+        },
+        "stage": { ... },
+        "run": { ... },
+        "pipeline": { ... },
+        "repositories": [ ... ]
+    },
+    "resourceVersion": "5.1-preview.1",
+    "createdDate": "2022-11-21T16:11:02.9207334Z"
+}
+```
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
 <a name="run.statechanged"></a>
 
 ### Run state changed
@@ -1972,7 +2043,7 @@ Event: Code was pushed to a Git repository.
     ],
     "refUpdates": [
       {
-        "name": "refs/heads/master",
+        "name": "refs/heads/main",
         "oldObjectId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
         "newObjectId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74"
       }
@@ -1987,7 +2058,7 @@ Event: Code was pushed to a Git repository.
         "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git"
     },
     "pushedBy": {
@@ -2062,7 +2133,7 @@ Event: A pull request is created in a Git repository.
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
@@ -2078,7 +2149,7 @@ Event: A pull request is created in a Git repository.
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/master",
+    "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
@@ -2170,7 +2241,7 @@ Event: A merge commit was created on a pull request.
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
@@ -2187,7 +2258,7 @@ Event: A merge commit was created on a pull request.
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/master",
+    "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
@@ -2285,7 +2356,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
         "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "defaultBranch": "refs/heads/master",
+      "defaultBranch": "refs/heads/main",
       "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
@@ -2302,7 +2373,7 @@ Event: A pull request is updated; status, review list, reviewer vote changed, or
     "title": "my first pull request",
     "description": " - test2\r\n",
     "sourceRefName": "refs/heads/mytopic",
-    "targetRefName": "refs/heads/master",
+    "targetRefName": "refs/heads/main",
     "mergeStatus": "succeeded",
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
@@ -2623,6 +2694,9 @@ Filter events to include only changed work items.
 * Event ID: `workitem.updated`
 * Resource Name: `workitem`
 
+> [!NOTE]
+> Creating a Service Hooks subscription with multiple fields is not supported through the UI, but you can achieve this by either [creating a custom payload through the API](/rest/api/azure/devops/hooks/subscriptions/create), or by creating separate Service Hooks subscriptions for each field.
+
 #### Settings
 
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2631,7 +2705,6 @@ Filter events to include only changed work items.
 
 #### Sample payload
 
-```json
 ```json
 {
   "id": "1ca023d6-6cff-49dd-b3d1-302b69311810",

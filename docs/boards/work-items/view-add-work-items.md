@@ -2,17 +2,17 @@
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
 description: Learn how to view and filter work items like user stories, issues, and bugs from the Work Items hub and seven personalized pivot views. 
-ms.custom: boards-work-items, devx-track-azurecli, contperf-fy20q4
+ms.custom: boards-work-items, devx-track-azurecli, contperf-fy20q4,  engagement-fy23
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
 ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/26/2022
+ms.date: 02/02/2023
 ---
 
 # View and add work items using the Work Items page  
@@ -84,7 +84,7 @@ There's no [**az boards**](/cli/azure//boards) command that opens the **Work Ite
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Basic](../get-started/plan-track-work.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create differ. For example, backlog items may be called user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of these processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+> For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
 
 ## View work items
 

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 09/21/2020
 ---
@@ -20,7 +20,7 @@ ms.date: 09/21/2020
 ---
 :::row:::
    :::column span="":::
-      [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md)
+      [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)
    :::column-end:::
    :::column span="3":::
       The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.  
@@ -29,7 +29,7 @@ ms.date: 09/21/2020
 ---
 :::row:::
    :::column span="":::
-      [Requirement Type](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md)(Required)  
+      [Requirement Type](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)(Required)  
    :::column-end:::
    :::column span="3":::
       The kind of requirement to implement. You can specify one of the following values:  
@@ -93,7 +93,7 @@ ms.date: 09/21/2020
 ---
 :::row:::
    :::column span="":::
-      [User Acceptance Test](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (Required)  
+      [User Acceptance Test](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (Required)  
    :::column-end:::
    :::column span="3":::
       The status of the user acceptance test for a requirement. You can specify one of the following values:
@@ -109,7 +109,7 @@ ms.date: 09/21/2020
 ---
 :::row:::
    :::column span="":::
-      [Subject Matter Experts](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md)
+      [Subject Matter Experts](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)
    :::column-end:::
    :::column span="3":::
       The names of team members who are familiar with the customer area that this requirement represents.

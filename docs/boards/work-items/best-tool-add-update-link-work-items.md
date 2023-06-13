@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.topic: best-practice
-ms.author: kaelli
+ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---

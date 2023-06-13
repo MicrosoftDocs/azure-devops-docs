@@ -1,15 +1,15 @@
 ### YamlMime:FAQ
 metadata:
   title: Azure Boards FAQs 
-  description: Answers to frequently asked questions about Azure Boards 
+  description: Answers to frequently asked questions about Azure Boards. 
   titleSuffix: Azure Boards
   ms.service: azure-devops-boards
-  ms.author: kaelli
-  author: KathrynEE
+  ms.author: chcomley
+  author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
-  ms.date: 04/01/2022
+  ms.date: 05/08/2023
 
 
 title: Azure Boards FAQs  
@@ -30,9 +30,9 @@ sections:
 
       - question: Who can contribute to Azure Boards? 
         answer: |
-          As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. Other limitations can be imposed based on work tracking permissions or custom rules. To learn more, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md). 
+          As a member of an Azure Boards project, you can use most features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. Other limitations can be imposed based on work tracking permissions or custom rules. To learn more, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md). 
 
-      - question: How can non-contributors view or modify work items?  
+      - question: How can noncontributors view or modify work items?  
         answer: |
           ::: moniker range="azure-devops"
           For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md) and [Make a private project public](../organizations/projects/make-project-public.md).   
@@ -94,7 +94,7 @@ sections:
           Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. Delivery Plans provide a calendar view and allow you to define a milestone marker. For more information, see [Review team Delivery Plans](plans/review-team-plans.md).  
 
           However, you can use one or more of the following options to mark a work item as a milestone: 
-          - Simply prepend or append the word **Milestone** in the title of your work item
+          - Prepend or append the word **Milestone** in the title of your work item
           - [Add a work item tag](queries/add-tags-to-work-items.md) labeled **Milestone**   
           - [Add a custom field](../organizations/settings/work/customize-process-field.md) labeled **Milestone** and populate it with a pick list of milestones  
           - [Link work items](backlogs/add-link.md) using the Predecessor/Successor or Related link type to a milestone work item 
@@ -108,7 +108,7 @@ sections:
           You can view dependencies using [Delivery Plans (Preview)](plans/review-team-plans.md). 
           ::: moniker-end
 
-          If you are tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
+          If you're tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
 
       - question: What determines which work item type should be a parent for another work item type? 
 
@@ -123,7 +123,7 @@ sections:
           ::: moniker-end
 
           ::: moniker range="< azure-devops-2020"
-          This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
+          This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
 
           The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-as-a-tree-list).
 
@@ -152,7 +152,7 @@ sections:
 
       - question: What limits should I be aware of?  
         answer: | 
-          There are a number of limits Azure DevOps imposes such as the number of work items that display on a backlog or board, numbers of teams you can define, and more. For a full list, see [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md). 
+          There are many limits Azure DevOps imposes such as the number of work items that display on a backlog or board, numbers of teams you can define, and more. For a full list, see [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md). 
 
       - question: How do I migrate my existing backlog to Azure Boards?  
         answer: | 
@@ -180,15 +180,11 @@ sections:
         answer: | 
           Azure DevOps doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks.
 
-          That said, you may find that one or more of the following features supports both CPM and MVP. You gain access to these features by installing a Marketplace extension.
- 
-          - [Delivery Plans](plans/review-team-plans.md)
-          - [Feature Timeline](extensions/feature-timeline.md)  
-          - [Dependency Tracker](extensions/dependency-tracker.md)  
+          That said, we recommend that you use [Delivery Plans](plans/review-team-plans.md) to view dependencies and a calendar view of work.  
 
-          If your organization supports connection to Microsoft Project, you may find additional [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
+          If your organization supports connection to Microsoft Project, you may find more [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
 
-          For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
+          For more context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
 
 
   - name: Rollup
@@ -217,8 +213,7 @@ sections:
       - question: Is there a way to widen columns on a Kanban board? 
 
         answer: | 
-          **No**. This is not a supported feature. It is a suggested feature which you can upvote by going to our [Developer Community page](https://developercommunity.visualstudio.com/t/Resize-board-column-width/901212?space=21&q=column+width).
-
+          **No**. This feature isn't supported. It's a suggested feature, which you can upvote by going to our [Developer Community page](https://developercommunity.visualstudio.com/t/Resize-board-column-width/901212?space=21&q=column+width).
 
       - question: Can I query based on Kanban board columns? 
 
@@ -234,7 +229,29 @@ sections:
 
         answer: | 
            **Yes**, by adding the [Azure Boards Kanban Tools](https://marketplace.visualstudio.com/items?itemName=alm-devops-rangers.KanbanBoardTools) Marketplace extension. 
- 
+      
+      - question: Can I list items based on their Kanban column assignment?
+
+        answer: |
+            **Yes**, you can track column moves on a Kanban board by using the [Board Column and Board Column Done fields](queries/query-by-workflow-changes.md#kanban_query_fields).
+
+      - question: What if I get the error message, "The column configurations aren't valid"?
+
+        answer: |
+            If you get the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the **Requirement** category aren't mapped to the column. 
+
+            > [!div class="mx-imgBorder"]
+            > ![Screenshot that shows a configuration error message on a Kanban board.](./backlogs/media/setup-backlog/column-config-error.png)
+
+            Select **Correct this now** to open the **Settings** dialog.
+            In the following example, two new states are added: **Triaged** for bug, and **Investigate** for user story. Each state is then mapped to an existing or new column. After each state is mapped to a column, the Kanban board displays the work items assigned to these states.  
+            > [!div class="mx-imgBorder"]
+            > ![Screenshot showing Kanban board settings, columns.](./boards/media/add-columns-custom-states-mapping.png)  
+
+      - question: Can I use swimlanes and set up swimlane rules?
+
+        answer:  |
+            **Yes**, you can [add or remove swimlanes](boards/expedite-work.md) on your Kanban board. You can also [set up swimlane rules](boards/expedite-work.md#set-up-swimlane-rules), where when certain conditions are met, Azure Boards automatically moves work items into specific lanes.
 
   - name: Work item templates  
 
@@ -255,9 +272,9 @@ sections:
       - question: Can I create a work item template that creates links to other work items?   
 
         answer: |
-          **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*  
+          **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There isn't a predetermined field in the template. Would/could this function be under a user-defined selection?*  
 
-          No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. You can, however, quickly copy tasks, bugs, and other items using [Excel](backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
+          No, there's no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. You can, however, quickly copy tasks, bugs, and other items using [Excel](backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
           - [Add task checklists](boards/add-task-checklists.md)
           - [Add, run, and update inline tests](boards/add-run-update-tests.md) 
           - [Add features and epics](boards/kanban-epics-features-stories.md)  

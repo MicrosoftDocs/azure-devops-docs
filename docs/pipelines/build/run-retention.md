@@ -132,17 +132,17 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
   name: RetainOnSuccess
   displayName: Retain on Success
   inputs:
-  failOnStderr: true
-  targetType: 'inline'
-  script: |
-    $contentType = "application/json";
-    $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-    $rawRequest = @{ daysValid = 365; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
-    $request = ConvertTo-Json @($rawRequest);
-    $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
-    $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
-    $newLeaseId = $newLease.Value[0].LeaseId
-    echo "##vso[task.setvariable variable=newLeaseId;isOutput=true]$newLeaseId";
+    failOnStderr: true
+    targetType: 'inline'
+    script: |
+      $contentType = "application/json";
+      $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
+      $rawRequest = @{ daysValid = 365; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+      $request = ConvertTo-Json @($rawRequest);
+      $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
+      $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
+      $newLeaseId = $newLease.Value[0].LeaseId
+      echo "##vso[task.setvariable variable=newLeaseId;isOutput=true]$newLeaseId";
 ```
 
 To [_update_ a retention lease](/rest/api/azure/devops/build/leases/update) requires a different REST API call.
