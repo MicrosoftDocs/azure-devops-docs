@@ -177,11 +177,11 @@ To view and configure the **Default agent pool for YAML** setting:
 
 1. Edit the pipeline and choose **More actions** > **Triggers**.
 
-   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Pipeline settings UI menu.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Screenshot of the pipeline settings UI menu.":::
 
 2. Choose **YAML**, and select the desired agent pool using the **Default agent pool for YAML** dropdown list.
 
-   :::image type="content" source="media/yaml-pipeline-editor/default-agent-pool-for-yaml.png" alt-text="Default agent pool for YAML pipelines.":::
+   :::image type="content" source="media/yaml-pipeline-editor/default-agent-pool-for-yaml.png" alt-text="Screenshot of the default agent pool for YAML pipelines.":::
 
 **Default agent pool for YAML** is configured on a per-pipeline basis.
 
@@ -191,11 +191,11 @@ Some YAML pipeline settings are configured using the pipeline settings UI instea
 
 1. Edit the pipeline and choose **More actions** > **Triggers**.
 
-   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Pipeline settings UI menu.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Screenshot of the pipeline settings UI menu.":::
 
 2. From the pipeline settings UI, choose the tab of the setting to configure.
 
-   :::image type="content" source="media/yaml-pipeline-editor/pipeline-settings-ui-triggers.png" alt-text="Pipeline settings UI for triggers.":::
+   :::image type="content" source="media/yaml-pipeline-editor/pipeline-settings-ui-triggers.png" alt-text="Screenshot of the pipeline settings UI for triggers.":::
 
 :::moniker range=">= azure-devops-2022"
 
