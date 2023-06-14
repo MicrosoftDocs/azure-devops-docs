@@ -296,7 +296,7 @@ Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 <h3 id ="server-jobs">Server jobs</h3>
 
-Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present.
+Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present. The maximum time for a server job is 30 days. 
 
 <h3 id="agentless-tasks">Agentless jobs supported tasks</h3>
 
