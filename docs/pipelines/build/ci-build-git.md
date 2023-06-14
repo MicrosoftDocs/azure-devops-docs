@@ -20,14 +20,14 @@ Using Azure Pipelines, you can create triggers to build your project on every ne
 
 - A working pipeline. Follow the instructions in [Create your first pipeline](../create-first-pipeline.md) to create your pipeline.
 
-## Set up a CI trigger for a topic branch
+## Enable CI trigger for a topic branch
 
-A common workflow with Git is to create temporary branches from your main branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the main branch and delete the topic branch.
+When working with Git, it is a common practice to create temporary branches from the main branch to facilitate a streamlined workflow. These branches, often referred to as topic or feature branches, serve the purpose of isolating your work. Within this workflow, you create a branch dedicated to a specific feature or bug fix, and once completed, you merge the code back into the main branch before deleting the topic branch.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-Unless you specify a [trigger](/azure/devops/pipelines/yaml-schema/trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
+If no trigger is explicitly specified in your YAML file, any changes made to any branch will trigger a run. To add triggers for both the *main* branch and any *feature/* branches, include the following snippet in your YAML file. This will ensure that any modifications made to these branches will automatically trigger a pipeline run.
 
 ```yaml
 trigger:
@@ -41,21 +41,21 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-Follow the steps below to create a CI trigger that will run a build for feature branches.
 
-1. Select **Pipelines**, and then choose **Builds**.
-2. Locate the build pipeline that services your main branch. Select **Edit**.
-3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
-4. Select the **+ Add** icon under **Branch filters**.
-5. Under the **Branch specification** dropdown, type `feature/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the main branch. 
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-   > [!NOTE] 
-   > Note that the filtered list of branches may not populate as you type `*`. 
-   > You can still press **Enter** and save the branch filter.
+1. Select **Pipelines**, and then select your classic pipeline. Select **Edit** to modify your pipeline.
 
-6. Select the **Save & queue** menu and then Select **Save**.
+1. Select **Triggers** and then check the **Enable continuous integration** checkbox.
+
+1. Under **Path filters** dropdown, type `feature/*` in the **Path specification** text box to trigger on any changes to all feature branches. 
+
+1. Select the **Save & queue** menu and then Select **Save**.
+
+:::image type="content" source="./media/classic-ci-trigger.png" alt-text="A screenshot showing how to add a CI trigger to a classic pipeline.":::
 
 * * *
+
 ## Automatically build a change in topic branch
 
 You're now ready for CI for both the main branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
