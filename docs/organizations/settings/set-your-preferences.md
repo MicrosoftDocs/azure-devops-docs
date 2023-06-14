@@ -105,7 +105,7 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of highlighted Edit profile button.](../../media/settings/profile-jamal-h.png)
 
-3. From the **About** page, you can change the user profile picture, display name, contact information, and country. 
+3. From the **About** page, you can change the user profile picture, display name, contact information, and country/region. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of the About User profile page.](../../media/settings/edit-profile-about-dialog.png)
