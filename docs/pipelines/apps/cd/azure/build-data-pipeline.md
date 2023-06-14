@@ -235,7 +235,7 @@ You'll use Azure Key Vault to store all connection information for your Azure se
 1. Select **Service Principal (automatic)**.
 1. Choose the **data-pipeline-cicd-rg** resource group.
 1. Name the service connection `azure_rm_connection`.
-1. Select **Grant access permission to all pipelines**. 
+1. Select **Grant access permission to all pipelines**. You'll need to have the Service Connections Administrator role to select this option. 
 
 ## Add pipeline variables
 

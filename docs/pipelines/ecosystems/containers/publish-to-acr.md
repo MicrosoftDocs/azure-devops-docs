@@ -225,7 +225,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
 1. Enter your [Subscription ID](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) **Subscription name**, and your [Azure container registry login server](/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry). Paste your VM's system assigned Object ID that you created in the previous step in the **Tenant ID** text field.
 
-1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox.
+1. Enter a name for your service connection, and then check the **Grant access permission to all pipelines** checkbox. You'll need to have the Service Connections Administrator role to select this option. 
 
 1. Select **Save** when you are done.
 
