@@ -56,34 +56,22 @@ YAML builds are not yet available on TFS.
 
 * * *
 
-## Automatically build a change in topic branch
+## Customize build tasks based on the branch being built
 
-You're now ready for CI for both the main branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
-
-Follow the steps below to edit a file and create a new topic branch.
-
-1. Navigate to your code in Azure Repos, TFS, or GitHub.
-1. Create a new branch for your code that starts with `feature/`, e.g., `feature/feature-123`.
-1. Make a change to your code in the feature branch and commit the change.
-1. Navigate to the **Pipelines** menu in Azure Pipelines or TFS and select **Builds**.
-1. Select the build pipeline for this repo. You should now see a new build executing for the topic branch. This build was initiated by the trigger you created earlier. Wait for the build to finish.
-
-Your typical development process includes developing code locally and periodically pushing to your remote topic branch.  Each push you make results in a build pipeline executing in the background.  The build pipeline helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to main.  Practicing CI for your topic branches helps to minimize risk when merging back to main.
-
-## Exclude or include tasks for builds based on the branch being built
-
-The main branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in Azure Pipelines or TFS so that certain tasks only execute on your main branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions.
+The main branch is usually responsible for generating deployable artifacts, such as binaries. For short-lived feature branches, there is no need to invest time in creating and storing these artifacts. In Azure Pipelines, you can implement custom conditions to ensure that specific tasks are executed only on the main branch.
 
 #### [YAML](#tab/yaml/)
-Edit the `azure-pipelines.yml` file in your `main` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
+
+Edit the *azure-pipelines.yml* file in your *main* branch, and add a condition to your desired task. For example, the following snippet adds a condition to the [publish pipeline artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
 ::: moniker range=">=azure-devops-2020"
 
 ```yaml
-- task: PublishBuildArtifacts@1
+- task: PublishPipelineArtifact@1
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 ::: moniker-end
+
 ::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
@@ -91,23 +79,25 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-1. Locate the build pipeline that services your main branch. Select **Edit**.
-2. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
-3. Select **Control Options** for the task on the bottom right hand part of your screen.
-4. Select the dropdown for **Run this task** and choose **Custom conditions**.
 
-   ![Custom condition](media/ci-build-git/customconditions.png)
+The following example adds a custom condition to the [publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
 
-5. Enter the following snippet:
-   ```
+1. Select the **Control Options** section, and then check the **Enabled** checkbox.
+
+1. Select the **Run this task** dropdown menu, and then select **Custom conditions**.
+
+1. Enter the following snippet in the **Custom condition** text box. This task will only execute if you're building the main branch.
+   
+    ```
    and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
    ```
 
-6. Select **Save & queue**.
-7. Choose your **topic branch**.  Select **Queue**.  We are not building the main branch, and the task for **Publish artifacts** will not execute.
-8. Select the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task.
+1. Select **Save & queue** when you're done.
+
+:::image type="content" source="media/ci-build-git/customconditions.png" alt-text="A screenshot showing how to add a custom condition to the publish build artifacts task.":::
 
 * * *
+
 ## Validate pull requests
 
 Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the main branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don't result in broken builds for your branches.
