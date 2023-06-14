@@ -4,9 +4,8 @@ description: How to create service connections and build and publish Docker imag
 ms.topic: tutorial
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 12/01/2022
+ms.date: 06/14/2023
 monikerRange: 'azure-devops'
-robots: NOINDEX
 ---
 
 # Build and publish Docker images to Azure Container Registry
