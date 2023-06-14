@@ -1,34 +1,24 @@
 ---
 title: Building multiple branches
-description: Build multiple branches using Azure Pipelines or TFS
+description: Build multiple branches with Azure Pipelines
 ms.topic: how-to
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
-ms.date: 04/02/2019
+ms.date: 06/14/2023
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
-# Build multiple branches
+# Build multiple branches in Azure Pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
-
-You can build every commit and pull request to your Git repository using Azure Pipelines or TFS. In this tutorial, we will discuss additional considerations when building multiple branches in your Git repository. You will learn how to:
-
-> [!div class="checklist"]
-> * Set up a CI trigger for topic branches
-> * Automatically build a change in topic branch
-> * Exclude or include tasks for builds based on the branch being built
-> * Keep code quality high by building pull requests
-> * Use retention policies to clean up completed builds
+Using Azure Pipelines, you can create triggers to build your project on every new commit and pull request to your repository. In this article, you will learn how to enable continuous integration and set up multiple branch builds for your repository.
 
 ## Prerequisites
 
-* You need a Git repository in Azure Pipelines, TFS, or GitHub with your app. If you do not have one, we recommend importing the [sample .NET Core app](https://github.com/MicrosoftDocs/pipelines-dotnet-core) into your Azure Pipelines or TFS project, or forking it into your GitHub repository. Note that you must use Azure Pipelines to build a GitHub repository. You cannot use TFS.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-* You also need a working build for your repository.
+- A working pipeline. Follow the instructions in [Create your first pipeline](../create-first-pipeline.md) to create your pipeline.
 
 ## Set up a CI trigger for a topic branch
 
