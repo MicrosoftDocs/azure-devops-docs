@@ -46,7 +46,7 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 1. Enter the ApiKey you generated earlier in the **ApiKey** field, and then provide a name for your service connection.
 
-1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done.
+1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done. You'll need to have the Service Connections Administrator role to select this option. 
 
 ## Publish packages
 
