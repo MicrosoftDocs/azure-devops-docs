@@ -513,7 +513,9 @@ As the stage is deleted, so the stage level retention settings are not applicabl
 
 ### My organization requires us to retain builds and releases longer than what is allowed in the settings. How can I request a longer retention?
 
-The only way to retain a run or a release longer than what is allowed through retention settings is to manually mark it to be retained indefinitely. There is no way to configure a longer retention setting. You can also explore the possibility of using the REST APIs in order to download information and artifacts about the runs and upload them to your own storage or artifact repository.
+The only way to retain a run or a release longer than what is allowed through retention settings is to manually mark it to be retained indefinitely. There is no way to configure a longer retention setting manually. Please reach out to [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html) for assistance. 
+
+You can also explore the possibility of using the REST APIs in order to download information and artifacts about the runs and upload them to your own storage or artifact repository.
 
 ### I lost some runs. Is there a way to get them back?
 
