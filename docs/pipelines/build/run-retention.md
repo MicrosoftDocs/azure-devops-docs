@@ -4,7 +4,7 @@ description: Example scenarios of when you might want to retain pipeline runs fr
 ms.topic: conceptual
 ms.author: maoswald
 author: moswald
-ms.date: 06/09/2021
+ms.date: 06/14/2023
 monikerRange: ">= azure-devops-2020"
 ---
 
