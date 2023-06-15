@@ -468,10 +468,9 @@ Use the following parameters to define a connection to a GitHub repository.
 [Create an access token for command line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 Then, complete the following steps to register your GitHub account in your profile.
 
-1. Open your profile from your account name at the right of the Azure Pipelines page heading.
-2. At the top of the left column, under **DETAILS**, choose **Security**.
-3. Select **Personal access tokens**.
-4. Select **Add** and enter the information required to create the token.
+1. Open your **User settings** from your account name at the right of the Azure Pipelines page heading.
+2. Choose **Personal access tokens**.
+3. Select **Add** and enter the information required to create the token.
 
 For more information, see [Artifact sources - version control](../release/artifacts.md#artifact-sources---version-control).
 
@@ -499,10 +498,9 @@ Use the following parameters to define a connection to a GitHub repository.
 [Create an access token for command line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 Then, complete the following steps to register your GitHub account in your profile.
 
-1. Open your profile from your account name at the right of the Azure Pipelines page heading.
-2. At the top of the left column, under **DETAILS**, choose **Security**.
-3. Select **Personal access tokens**.
-4. Select **Add** and enter the information required to create the token.
+1. Open your **User settings** from your account name at the right of the Azure Pipelines page heading.
+2. Choose **Personal access tokens**.
+3. Select **Add** and enter the information required to create the token.
 
 ### Jenkins service connection
 
