@@ -2,7 +2,6 @@
 title: Post neutral status to GitHub on validation runs with path exclusion rule 
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 10/19/2021
 description: With this update, we included multiple updates to Azure Pipelines.
 ---

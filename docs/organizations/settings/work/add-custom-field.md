@@ -3,20 +3,20 @@ title: Add a custom field to an inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom field to the web form of a work item type for an Inheritance process model and apply it to a project. 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/16/2021
+ms.date: 08/03/2022
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
+You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md). For a description of each field defined with a system process, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md). 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
@@ -93,7 +93,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2020"
+	::: moniker range=">= azure-devops-2020 < azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/add-custom-field/choose-new-team-project.png) 
 	::: moniker-end
@@ -108,7 +108,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project-sprint166.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2020"
+	::: moniker range=">= azure-devops-2020 < azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/add-custom-field/create-new-project-2020.png) 
 	::: moniker-end
@@ -147,6 +147,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [View work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field) 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)

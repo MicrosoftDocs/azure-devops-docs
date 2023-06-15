@@ -1,10 +1,10 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 title: Integrating custom apps and third party services with Azure DevOps
 description: Overview of integrating with Azure DevOps.
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
-monikerRange: ">= tfs-2018"
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 03/15/2021
@@ -12,7 +12,7 @@ ms.date: 03/15/2021
 
 # Integrate applications  
 
-[!INCLUDE [version-all](../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 You can build custom applications or services that integrate with Azure DevOps by using the **REST APIs** to make direct HTTP calls, or use our **.NET Client Libraries**.
 

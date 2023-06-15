@@ -2,7 +2,6 @@
 title: Ease customization by migrating projects to the Inheritance process model – VSTS Sprint 139 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 8/21/2018
 description: In the Sprint 139 Update of Visual Studio Team Services (VSTS), you can now migrate Hosted XML projects to the Inheritance process model to ease customization.
 ---
@@ -44,7 +43,7 @@ Build and release:
 
 ### Create table of contents for wiki pages
 
-Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/azure/devops/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a suggestion from UserVoice.
+Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/azure/devops/project/wiki/markdown-guidance) documentation for more information about using Markdown in VSTS. This feature was prioritized based on a suggestion from UserVoice.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki table of contents](media/139_03.png)

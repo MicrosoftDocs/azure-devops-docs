@@ -1,20 +1,20 @@
 ---
 title: Add work item types to backlogs and boards   
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Azure DevOps Services & Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
-monikerRange: '< azure-devops' 
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
+monikerRange: '<= azure-devops' 
 ms.date: 08/03/2021  
 ---
 
 # Add a work item type to a backlog and board
 
-[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 > [!IMPORTANT]  
@@ -49,7 +49,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 You'll make your changes to your process definition files, and then import that process to either update existing projects or use the process to create a project. 
 
-- If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
+- If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/change-organization-collection-level-permissions.md). 
 - [Export the process you want to update](../organizations/settings/work/import-process/import-process.md) 
 -  If you're new to customizing a process, read [Customize a process for import](../organizations/settings/work/import-process/customize-process.md).
 
@@ -57,8 +57,8 @@ You'll make your changes to your process definition files, and then import that 
 ### On-premises XML process model customization sequence 
 
 You'll first export your work tracking definition files, update them, and then import them to your project.  
--  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
--  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
+-  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/change-organization-collection-level-permissions.md). 
+-  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md))
 	- ProcessConfiguration  

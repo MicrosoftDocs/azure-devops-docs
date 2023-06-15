@@ -2,20 +2,20 @@
 title: Modify Azure Boards work items in bulk with Microsoft Excel
 titleSuffix: Azure Boards  
 description: Use the Excel plugin in Azure DevOps to bulk add or modify Azure Boards work items, such as tasks, bugs, backlog items, or issues. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
 # Add or modify Azure Boards work items in bulk with Microsoft Excel 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 When you need to add or modify many work items, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. You can also use native Excel features to support other actions, such as summing a column, copy-and-paste rows, fill down data into cells, and more. 
 
@@ -62,7 +62,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 - Installed Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -72,17 +72,6 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 - To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
 - To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). 
 - To use the [Select User](#select-user) feature, install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2013 <= tfs-2015" 
-
-
-- Installed Microsoft 2007, Microsoft Excel 2010, or Microsoft Excel 2013 
-- Installed Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md).   
 
 ::: moniker-end  
 
@@ -150,7 +139,7 @@ Here's some more guidance:
 - Use an input list, tree list: To complete top down planning and publish parent-child linked work items  
 - Use a query list, flat list: To create an Excel report based on the query of work items  
 	> [!NOTE]
-	To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md).
+	> To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items. 
 
  
@@ -312,7 +301,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
 	If the **Add Tree Level** is disabled, you're working from a query list. To convert your list to a tree list, you must first [reconfigure your list](#reconfigure-list) to an input list. 
 
-1. Choose the link type to use when adding work items to a hierarchy, and then choose **Convert**. The most usual choice is **Parent-Child**. You can only select from tree topology link types. To learn more, see [Link type topologies and restrictions](../../../reference/xml/link-type-element-reference.md#topology). 
+1. Choose the link type to use when adding work items to a hierarchy, and then choose **Convert**. The most usual choice is **Parent-Child**. You can only select from tree topology link types. To learn more, see [Link type topologies and restrictions](/previous-versions/azure/devops/reference/xml/link-type-element-reference#topology). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Convert to Tree List dialog](media/excel/convert-tree.png)
@@ -657,7 +646,7 @@ You can create a report using the **New Report** feature based on a flat list of
 > [!div class="mx-imgBorder"]  
 > ![Create a report using the New Report feature.](media/excel/team-ribbon-new-report.png)
 
-To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
+To learn more, see [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports). 
 
 
 ## Resolve publishing errors  
@@ -684,7 +673,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
-- [View and add work items, az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) 
+- [View and add work items](../../work-items/view-add-work-items.md) 
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  
@@ -694,7 +683,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
-- [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md)
+- [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  

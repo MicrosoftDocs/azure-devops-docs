@@ -2,35 +2,36 @@
 title: Pipeline task duration sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline task duration Power BI report.
-ms.technology: devops-analytics
-ms.reviewer: ravishan
-ms.author: kaghai
-ms.custom: powerbisample
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'      
-ms.date: 10/12/2021
+monikerRange: '>= azure-devops-2020'  
+ms.date: 12/14/2022
 ---
 
 # Pipeline task duration sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to get the time taken to execute different tasks of a pipeline. 
+How long does it take different tasks to complete? This article provides the queries from which you can generate a report for a specific pipeline and its tasks. For example, the following image lists the 50th, 80th, and 95th percentile in seconds for all tasks completed for a specific pipeline from September 1 to December 15, 2022.   
+
+:::image type="content" source="media/pipeline-reports/task-duration-table-report.png" alt-text="Screenshot of Power BI Pipelines task duration table trend report."::: 
+
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-An example is shown in the following image.
-
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration - Report](media/odatapowerbi-pipelines/taskduration-report.png)
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
-
 ## Sample queries
+
+You query the `PipelineRunActivityResults?` entity set to return task duration information.  
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ### [Power BI query](#tab/powerbi/)
 
@@ -80,9 +81,11 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 ### Query breakdown
 
@@ -96,12 +99,13 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,7 +113,7 @@ The following table describes each part of the query.
    `Pipeline/PipelineName eq '{pipelinename}'`
    :::column-end:::
    :::column span="1":::
-   Return pipeline runs for the specified pipeline
+   Return pipeline runs for the specified pipeline.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -117,7 +121,7 @@ The following table describes each part of the query.
    `and PipelineRunCompletedOn/Date ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return task results for pipeline runs on or after the specified date
+   Return task results for a pipeline run on or after the specified date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -125,7 +129,7 @@ The following table describes each part of the query.
    `and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')`
    :::column-end:::
    :::column span="1":::
-   Return task results from only the successful or partially successful pipeline runs
+   Return task results for only successful or partially successful pipeline runs. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -133,7 +137,7 @@ The following table describes each part of the query.
    `and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)`
    :::column-end:::
    :::column span="1":::
-   Omit the pipeline runs that were canceled, skipper or abandoned
+   Omit pipeline runs that were canceled, skipped, or abandoned. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,7 +145,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close the `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -149,7 +153,7 @@ The following table describes each part of the query.
    `/compute(`
    :::column-end:::
    :::column span="1":::
-   Start compute()
+   Start `compute()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -157,7 +161,7 @@ The following table describes each part of the query.
    `percentile_cont(ActivityDurationSeconds, 0.5, TaskDisplayName) as TaskDuration50thPercentileInSeconds,`
    :::column-end:::
    :::column span="1":::
-   For each task, compute the 50th percentile of task durations of all tasks that match the filter criteria
+   For each task, compute the 50th percentile of task durations for all tasks that match the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -165,7 +169,7 @@ The following table describes each part of the query.
    `percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName) as TaskDuration80thPercentileInSeconds,`
    :::column-end:::
    :::column span="1":::
-   For each task, compute the 80th percentile of task durations of all tasks that match the filter criteria
+   For each task, compute the 80th percentile of task durations for all tasks that match the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -173,7 +177,7 @@ The following table describes each part of the query.
    `percentile_cont(ActivityDurationSeconds, 0.95, TaskDisplayName) as TaskDuration95thPercentileInSeconds)`
    :::column-end:::
    :::column span="1":::
-   For each task, compute the 95th percentile of task durations of all tasks that match the filter criteria
+   For each task, compute the 95th percentile of task durations for all tasks that match the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -181,7 +185,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start the `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -189,7 +193,7 @@ The following table describes each part of the query.
    `(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds,TaskDuration95thPercentileInSeconds, TaskDisplayName))`
    :::column-end:::
    :::column span="1":::
-   Group by task of pipeline run and calculated day wise 50th percentile task duration, 80th percentile task duration and 95th percentile task duration
+   Group by task of pipeline run and calculated day wise 50th percentile task duration, 80th percentile task duration, and 95th percentile task duration. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -197,75 +201,56 @@ The following table describes each part of the query.
    `&$orderby=TaskDuration50thPercentileInSeconds desc`
    :::column-end:::
    :::column span="1":::
-   Order the response by task having highest 50th percentile duration
+   Order the response by task having highest 50th percentile duration. 
    :::column-end:::
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-pipelines.md)]
-
-## Power BI transforms
-
-### Change column type
-
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
-
-1. Change the type of column **TaskDuration80thPercentileInSeconds, TaskDuration80thPercentileInSeconds** and **TaskDuration95thPercentileInSeconds** to **Decimal Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
+[!INCLUDE [temp](includes/rename-query.md)]
 
 
-### Rename fields and query
+### Change column data type
+ 
+From the **Transform** menu change the data type for the following columns to `Decimal Number**.` To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).   
+	- `TaskDuration80thPercentileInSeconds`
+	- `TaskDuration80thPercentileInSeconds`
+	- `TaskDuration95thPercentileInSeconds`.
+ 
+<a id="rename" />
 
-When finished, you may choose to rename columns. 
+## (Optional) Rename column fields
 
-1. Right-click a column header and select **Rename...**
+You can rename column fields. For example, you can rename the following columns so that they are more display-friendly. 
+To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
-  
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
-  
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
-  
-  
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/taskduration-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Line Chart**.
-
-1. Add the field **BuildCompletedOn.Date** to **Axis**.
-
-    - Right-click **BuildCompletedOn.Date** and select **BuildCompletedOn.Date**, rather than Date Hierarchy.
-	
-1. Add the field **TaskDuration80thPercentileInSeconds** to **Values**.
-
-    - Right-click **TaskDuration80thPercentileInSeconds** field and ensure **Sum** is selected.
-
-Your report should look similar to the following image. 
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Pipelines task duration Line chart Report.](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+| Original field name |  Renamed field |
+|---------------------|----------------|
+| `TaskDisplayName`     | Task Name      |
+| `TaskDuration50thPercentileInSeconds` | 50th Percentile  |
+| `TaskDuration80thPercentileInSeconds`| 80th Percentile   |
+| `TaskDuration95thPercentileInSeconds`| 95th Percentile  |
 
 
-## Full list of sample reports for Pipelines
+[!INCLUDE [temp](includes/close-apply.md)]
 
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+## Create the Table report 
+
+1. In Power BI, under **Visualizations**, choose the **Table** report. Fields have been renamed as indicated in [Rename column fields](#rename) section.
+
+	:::image type="content" source="media/pipeline-reports/task-duration-table-visualizations.png" alt-text="Screenshot of visualization fields selections for task duration table report. ":::
+
+1. Add the following fields to the Columns in the order specified. 
+	- **Task Name** 
+	- **50th Percentile**  
+	- **80th Percentile**   
+	- **95th Percentile**   
+ 
+1. To change the report title, select the **Format your visual** paint-brush icon from the **Visualizations** pane, select **General**, expand **Title**, and replace the existing text. 
+
+The following image shows a portion of the resulting report.  
+
+:::image type="content" source="media/pipeline-reports/task-duration-table-report.png" alt-text="Screenshot of Power BI Pipelines sample task duration table trend report."::: 
+
 
 ## Related articles
 

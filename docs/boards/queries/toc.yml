@@ -5,84 +5,82 @@
 - name: Semantic search
   href: search-box-queries.md
 - name: Get started with queries
-  expanded: true
   items:
-  - name: View, open, run a query 
+  - name: View, open, run a query
     href: view-run-query.md
-    displayname: favorites, email, run, directory, folders, breadcrumbs, command line 
+    displayname: favorites, email, run, directory, folders, breadcrumbs, command line
   - name: Define a query
     href: using-queries.md
   - name: Manage queries & query folders
     href: organize-queries.md
-    displayname: delete, rename, dashboard, share, save 
+    displayname: delete, rename, dashboard, share, save
   - name: Chart a query
-    href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-  - name: Triage work items  
+    href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json
+  - name: Triage work items
     href: triage-work-items.md
   - name: Filter your queries
-    href: ../backlogs/filter-backlogs-boards-plans.md 
-    displayname: sort, reorder, group, parent, tags  
+    href: ../backlogs/filter-backlogs-boards-plans.md
+    displayname: sort, reorder, group, parent, tags
   - name: Best practices to define a query
-    href: high-performing-queries.md 
+    href: high-performing-queries.md
   - name: Query FAQs
     href: query-faqs.yml
-  - name: Set query permissions (Security) 
+  - name: Set query permissions (Security)
     href: set-query-permissions.md
+  expanded: true
 - name: Additional query operations
   items:
   - name: Change column options
     href: ../backlogs/set-column-options.md
-  - name: Cross-service and enhanced query operations  
-    href: query-support-integration-cross-service-extensions.md 
+  - name: Cross-service and enhanced query operations
+    href: query-support-integration-cross-service-extensions.md
     displayname: OData, Power BI, WIQL
-  - name: Bulk import or update work items (CSV)
-    href: import-work-items-from-csv.md 
+  - name: Bulk import & update work items (CSV)
+    href: import-work-items-from-csv.md
     displayname: import, export, csv
   - name: Bulk add or modify work items (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md
-  - name: Define a query as a hyperlink 
-    href: define-query-hyperlink.md 
-- name: Sample queries 
+  - name: Define a query as a hyperlink
+    href: define-query-hyperlink.md
+- name: Sample queries
   items:
+  - name: Example query charts
+    href: example-query-charts.md
+    displayname: status, monitor, trend, widgets  
   - name: Query by title, ID, or description
-    href: titles-ids-descriptions.md 
+    href: titles-ids-descriptions.md
     displayname: Title, Description, Detail, Repo Steps, Acceptance Criteria, Resolution, System Info, Team Project, Title, Work Item Type, wildcard
   - name: Query by assignment or workflow changes
-    href: query-by-workflow-changes.md 
-    displayname: Identity, Assigned To, Changed By, State, Reason, Board Column, Board Lane, Activated By, State Changed Date 
+    href: query-by-workflow-changes.md
+    displayname: Identity, Assigned To, Changed By, State, Reason, Board Column, Board Lane, Activated By, State Changed Date
   - name: Query by area or iteration
-    href: query-by-area-iteration-path.md   
-    displayname: Area Path, Node Name, Iteration Path 
+    href: query-by-area-iteration-path.md
+    displayname: Area Path, Node Name, Iteration Path
   - name: Query by date or current sprint
-    displayname: CurrentIteration, Activated, Change, Closed, Created, Due, Target, Finish Date, Iteration Path, Resolved Date, Start Date, State Change 
-    href: query-by-date-or-current-iteration.md  
+    href: query-by-date-or-current-iteration.md
+    displayname: CurrentIteration, Activated, Change, Closed, Created, Due, Target, Finish Date, Iteration Path, Resolved Date, Start Date, State Change
   - name: Query based on tags
     href: add-tags-to-work-items.md#query
   - name: Query history and discussion
+    href: history-and-auditing.md
     displayname: revision, rev, Contains Words, Watermark, comments, change date, closed date, created date, resolved date, search comments, wildcard
-    href: history-and-auditing.md  
   - name: Query by field comparison
-    href: query-field-value.md   
+    href: query-field-value.md
   - name: Query by a numeric field
+    href: query-numeric.md
     displayname: Activity, Business Value, Completed Work, Remaining Work, Original Estimate, Discipline, Effort, Story Points, Size, Task Type
-    href: query-numeric.md  
   - name: Query by picklist value
-    displayname: Backlog Priority, Blocked, Committed, Escalate, Priority, Risk, Severity, Stack Rank, Time Criticality, Triage, Value Area 
-    href: planning-ranking-priorities.md  
+    href: planning-ranking-priorities.md
+    displayname: Backlog Priority, Blocked, Committed, Escalate, Priority, Risk, Severity, Stack Rank, Time Criticality, Triage, Value Area
   - name: Query by links or attachments
+    href: linking-attachments.md
     displayname: Attachment File Count, Comment Count, External Link Count, Hyperlink Count, Link comment, Link Description, Related Link Count, Remote Link Count, Parent
-    href: linking-attachments.md 
   - name: Query by build & test integration fields
+    href: build-test-integration.md
     displayname: Automation Status, Found In, Integration Build, Issue, Parameters, Steps, System Info, Repo Steps, Test Suite Type, Automated, Query Text, LocalDataSource
-    href: build-test-integration.md  
 - name: Reference
   items:
   - name: Query fields, operators & macros
     href: query-operators-variables.md
   - name: Work Item Query Language (WIQL) syntax
     href: wiql-syntax.md
-
-
-
-
-

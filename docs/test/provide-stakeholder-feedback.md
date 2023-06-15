@@ -1,18 +1,19 @@
 ---
 title: Give feedback with Test & Feedback extension
-description: Provide feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
+description: Provide feedback in Azure DevOps using the Exploratory Testing browser extension
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Provide feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 <a name="provide"></a>
 Stakeholders and other users can respond to feedback requests using the 
@@ -40,7 +41,7 @@ to assist test teams by providing feedback.
  
    ![Choosing the Provide feedback link in the request email](media/provide-stakeholder-feedback/provide-stakeholder-feedback-04.png)
 
-1. The Azure DevOps or TFS landing page opens to confirm
+1. The Azure DevOps landing page opens to confirm
    that the extension has been automatically configured with 
    the feedback request. Choose the ![launch extension](media/shared/exp-test-icon.png)
    icon in the toolbar to launch the extension.
@@ -75,7 +76,7 @@ to assist test teams by providing feedback.
    For more details, see [this topic](connected-mode-exploratory-testing.md). 
 
    >Some browsers may not provide all the capture capabilities.
-   See [Which web browsers does the extension support?](reference-qa.md#browser-support) 
+   See [Supported web browsers for the extension](perform-exploratory-tests.md#browser-support).
  
 1. When you are done capturing feedback:
 
@@ -97,8 +98,7 @@ to assist test teams by providing feedback.
 
    ![Entering a title and star rating](media/shared/provide-stakeholder-feedback-09.png)
 
-1. Save your feedback. This create a work item in Azure DevOps
-   or TFS containing all your feedback.
+1. Save your feedback. This create a work item in Azure DevOps containing all your feedback.
  
 1. Continue to capture more feedback if required. You can submit 
    multiple feedback responses, bugs, and tasks for the same feedback request. 

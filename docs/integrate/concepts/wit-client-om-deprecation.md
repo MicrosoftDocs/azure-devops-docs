@@ -1,19 +1,19 @@
-﻿---
+---
 title: Deprecation of the Work Item Tracking (WIT) and Test Client OM
 titleSuffix: Azure DevOps
 description: With deprecation of the WIT Client OM, you need to update your code to use REST APIs
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 2C636EA8-6A10-48C1-9620-F792915EBB65
-ms.author: liho
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
-monikerRange: "azure-devops"
+monikerRange: 'azure-devops'
 ms.date: 08/29/2018
 ---
 
 # Deprecation of the Work Item Tracking (WIT) and Test Client OM
 
-[!INCLUDE [version](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 WIT and Test Client OM are part of the broader TFS SDK. They are a set of SOAP-based APIs that can be used to create tools to run operations against the Azure DevOps. These SOAP-based APIs have been replaced by the set of modern REST-based endpoints. Therefore we are in the process of deprecating the SOAP-based APIs (Client OM) for WIT and Test.
 

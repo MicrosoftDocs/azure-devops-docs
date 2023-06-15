@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
@@ -8,7 +8,7 @@ ms.date: 02/13/2020
 ---
 <a id="agent-variables"></a>
 
-## Agent variables (DevOps Server 2020)
+## Agent variables (DevOps Server)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -94,7 +94,7 @@ The operating system processor architecture of the agent host. Valid values are:
 <tr>
 <td>Agent.TempDirectory</td>
 <td>
-<p>A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/build/dotnet-core-cli">.NET Core CLI task</a> to hold temporary items like test results before they are published.</p>
+<p>A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2">.NET Core CLI task</a> to hold temporary items like test results before they are published.</p>
 <p>For example: <code>/home/vsts/work/_temp</code> for Ubuntu</p>
 </td>
 </tr>
@@ -102,7 +102,7 @@ The operating system processor architecture of the agent host. Valid values are:
 <tr>
 <td>Agent.ToolsDirectory</td>
 <td>
-The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/tool/node-js" data-raw-source="[Node Tool Installer](../../tasks/tool/node-js.md)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/tool/use-python-version" data-raw-source="[Use Python Version](../../tasks/tool/use-python-version.md)">Use Python Version</a> to switch between multiple versions of a tool.
+The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/node-tool-v0" data-raw-source="[Node Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/reference/use-python-version-v0" data-raw-source="[Use Python Version](/azure/devops/pipelines/tasks/reference/use-python-version-v0)">Use Python Version</a> to switch between multiple versions of a tool.
 These tasks will add tools from this directory to <code>PATH</code> so that subsequent build steps can use them.
 <br><br>
 Learn about <a href="https://go.microsoft.com/fwlink/?linkid=2008884" data-raw-source="[managing this directory on a self-hosted agent](https://go.microsoft.com/fwlink/?linkid=2008884)">managing this directory on a self-hosted agent</a>.
@@ -121,7 +121,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 
 </table>
 
-## Build variables (DevOps Server 2020)
+## Build variables (DevOps Server)
 
 <a id="build-variables"></a>
 
@@ -135,7 +135,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
@@ -242,6 +242,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <li><code>ValidateShelveset</code>: A user manually queued the build of a specific TFVC shelveset.</li>
 <li><code>CheckInShelveset</code>: <strong>Gated check-in</strong> trigger.</li>
 <li><code>PullRequest</code>: The build was triggered by a Git branch policy that requires a build.</li>
+<li><code>BuildCompletion</code>: The build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a></li>
 <li><code>ResourceTrigger</code>: The build was <a href="/azure/devops/pipelines/process/resources#resources-pipelines" data-raw-source="[triggered by a resource trigger](../../process/resource.md)">triggered by a resource trigger</a> or it was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>.</li>
 </ul>
 See <a href="/azure/devops/pipelines/build/triggers" data-raw-source="[Build pipeline triggers](../triggers.md)">Build pipeline triggers</a>, <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
@@ -357,7 +358,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <td>Build.SourceBranch</td>
 <td>The branch of the triggering repo the build was queued for. Some examples:
 <ul>
-<li>Git repo branch: <code>refs/heads/master</code></li>
+<li>Git repo branch: <code>refs/heads/main</code></li>
 <li>Git repo pull request: <code>refs/pull/1/merge</code></li>
 <li>TFVC repo branch: <code>$/teamproject/main</code></li>
 <li>TFVC repo gated check-in: <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code></li>
@@ -375,7 +376,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourceBranchName</td>
 <td>The name of the branch in the triggering repo the build was queued for.
 <ul>
-<li>Git repo branch or pull request: The last path segment in the ref. For example, in <code>refs/heads/master</code> this value is <code>master</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
+<li>Git repo branch, pull request, or tag: The last path segment in the ref. For example, in <code>refs/heads/main</code> this value is <code>main</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>. In <code>refs/tags/your-tag-name</code> this value is <code>your-tag-name</code>.</li>
 <li>TFVC repo branch: The last path segment in the root server path for the workspace. For example, in <code>$/teamproject/main</code> this value is <code>main</code>.</li>
 <li>TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code> or <code>myshelveset;username@live.com</code>.</li>
 </ul>
@@ -391,7 +392,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 
 The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. 
 
-Important note: If you check out only one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>, even if the self (primary) repository is checked out to a custom path different from its multi-checkout default path <code>$(Pipeline.Workspace)/s/&lt;RepoName&gt;</code> (in this respect, the variable differes from the behavior of the Build.Repository.LocalPath variable).
+Important note: If you check out only one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>, even if the self (primary) repository is checked out to a custom path different from its multi-checkout default path <code>$(Pipeline.Workspace)/s/&lt;RepoName&gt;</code> (in this respect, the variable differs from the behavior of the Build.Repository.LocalPath variable).
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -418,6 +419,9 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 Also, this variable is only available on the step level and is neither available in the job nor stage levels (i.e. the message is not extracted until the job had started and checked out the code).
 
 Note: This variable is available in TFS 2015.4.
+
+> [!NOTE]
+> The **Build.SourceVersionMessage** variable does not work with classic build pipelines in Bitbucket repositories when **Batch changes while a build is in progress** is enabled.
 </td>
 <td>No</td>
 </tr>
@@ -429,7 +433,7 @@ Note: This variable is available in TFS 2015.4.
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
@@ -509,7 +513,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 </table>
 
-## Pipeline variables (DevOps Server 2020)
+## Pipeline variables (DevOps Server)
 
 <a id="pipeline-variables"></a>
 
@@ -524,7 +528,7 @@ For example, <code>/home/vsts/work/1</code>.</td>
 
 </table>
 
-## Deployment job variables (DevOps Server 2020)
+## Deployment job variables (DevOps Server)
 
 <a id="deployment-job-variables"></a>
 
@@ -556,7 +560,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 </table>
 
 
-## System variables (DevOps Server 2020)
+## System variables (DevOps Server)
 
 <a id="system-variables"></a>
 
@@ -690,6 +694,13 @@ Otherwise, it is set to <code>False</code>.</td>
 </tr>
 
 <tr>
+<td>System.PullRequest.targetBranchName</td>
+<td>The name of the target branch for a pull request. This variable can be used in a pipelines to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into.
+</td>
+<td>No</td>
+</tr>
+
+<tr>
 <td>System.PullRequest.SourceBranch</td>
 <td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>). This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 <td>No</td>
@@ -703,7 +714,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code> when your repository is in Azure Repos and <code>master</code> when your repository is in GitHub. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>. This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
+<td>The branch that is the target of a pull request. For example: <code>refs/heads/main</code> when your repository is in Azure Repos and <code>main</code> when your repository is in GitHub. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>. This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 <td>No</td>
 </tr>
 

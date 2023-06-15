@@ -2,19 +2,18 @@
 title: Sign in with a Personal Access Token (PAT), Azure DevOps CLI 
 titleSuffix: Azure DevOps 
 description: Use a Personal Access Token (PAT) with Azure DevOps CLI 
-ms.topic: reference 
-ms.prod: devops 
-ms.technology: devops-reference
+ms.topic: how-to
+ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+ms.author: chcomley  
+author: chcomley
+monikerRange: 'azure-devops'
 ms.date: 08/17/2020
 ---
 
 # Sign in with a personal access token (PAT)
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 You can sign in using an Azure DevOps personal access token (PAT). To create a PAT, see [Use personal access tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
 
@@ -32,7 +31,7 @@ To use a PAT with the Azure DevOps CLI, use one of these options:
 
 You're prompted to enter a PAT after you run the `az devops login` command:
 
-```bash
+```azurecli
 $az devops login --organization https://dev.azure.com/contoso
 Token:
 ```
@@ -48,13 +47,13 @@ When you're successfully signed in, this command also can set your default organ
 
 This option is useful in pipelines in which `#####` can be replaced by `$(System.AccessToken)` or another pipeline variable:
 
-```bash
+```azurecli
 echo  "######" | az devops login --organization https://dev.azure.com/contoso/
 ```
 
 ### From a file
 
-```bash
+```azurecli
 cat my_pat_token.txt | az devops login --organization https://dev.azure.com/contoso/
 ```
 

@@ -1,7 +1,6 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 10/16/2021
 ms.topic: include
 ---
@@ -10,7 +9,7 @@ ms.topic: include
 
 Classic releases had the ability to automatically retain builds that they consume. This was one of the gaps between classic releases and YAML pipelines, and it stopped some of you from moving to YAML. With this release, we have addressed this gap. 
 
-Now you can create a multi-stage YAML pipeline to represent your release, and [consume another YAML pipeline in it as a resource](https://docs.microsoft.com/azure/devops/pipelines/process/resources?view=azure-devops&tabs=schema#resources-pipelines). When you do so, Azure Pipelines will automatically retain the resource pipeline as long as the release pipeline is retained. When the release pipeline is deleted, the lease on the resource pipeline is released and its own retention policies are followed.
+Now you can create a multi-stage YAML pipeline to represent your release, and [consume another YAML pipeline in it as a resource](/azure/devops/pipelines/process/resources?view=azure-devops&preserve-view=true&tabs=schema#resources-pipelines). When you do so, Azure Pipelines will automatically retain the resource pipeline as long as the release pipeline is retained. When the release pipeline is deleted, the lease on the resource pipeline is released and its own retention policies are followed.
 
 ### Changes in the automatic creation of environments
 

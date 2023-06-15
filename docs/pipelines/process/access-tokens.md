@@ -5,15 +5,15 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 03/24/2021
-monikerRange: '>= tfs-2015'
+ms.date: 06/30/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Access repositories, artifacts, and other resources
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 >[!NOTE]
 > If your pipeline is in a **public project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
 
-:::moniker range="azure-devops"
+:::moniker range="azure-devops-2020"
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
@@ -174,9 +174,20 @@ Pipelines can access any Azure DevOps repositories in authorized projects unless
 
 For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
-> [!IMPORTANT]
-> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
+:::moniker-end
 
+:::moniker range=">azure-devops-2020"
+
+### Protect access to repositories in YAML pipelines
+
+In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Protect access to repositories in YAML pipelines** setting.
+
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Protect access to repositories in YAML pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
+
+For more information, see [Azure Repos Git repositories - Protect access to repositories in YAML pipelines](../repos/azure-repos-git.md#protect-access-to-repositories-in-yaml-pipelines).
+
+> [!IMPORTANT]
+> **Protect access to repositories in YAML pipelines** is enabled by default for new organizations and projects created after May 2020.
 :::moniker-end
 
 ## Scoped build identities
@@ -235,35 +246,66 @@ To update the permissions of the job access token:
 
 :::moniker range=">=azure-devops-2019"
 
-### Example - Configure permissions to access another repo in the same project project collection
+<a id="configure-external-project"></a>
+
+### Configure permissions for a project to access another project in the same project collection
+
+In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access the `fabrikam-tailspin/FabrikamFiber` project.
+
+1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
+
+    ![Screenshot of how to configure project settings.](media/access-tokens/project-permissions.png)
+
+2. Create a new Group named *External Projects* and add the **SpaceGameWeb Build Service** account.
+:::image type="content" source="media/access-tokens/create-new-security-group.png" alt-text="Screenshot of creating a new security group.":::
+
+3.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
+
+    ![Screenshot of selecting SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
+
+4. Grant the *View project-level information* permission for that user.
+
+    ![Screenshot of how to grant the View project-level information permission for a user.](media/access-tokens/grant-view-project-permissions.png)
+
+<a id="configure-repo-access"></a>
+
+### Example - Configure permissions to access another repo in the same project collection
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
 
-1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
+1. Follow the steps to [grant the `SpaceGameWeb` project-scoped build identity permission to access the `FabrikamFiber` project](#configure-external-project).
+
+2. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
 
     ![Configure repository access.](media/access-tokens/allow-repo-access.png)
 
-2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019 <= azure-devops-2020"
+3.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
     ![Add user for repository access.](media/access-tokens/add-build-service-user.png)
+:::moniker-end
 
-3. Configure the desired permissions for that user.
+:::moniker range=">azure-devops-2020"
+3.  Start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Configure repository permissions.](media/access-tokens/set-repo-permissions.png)
+    ![Screenshot of how to add a user for repository access.](media/access-tokens/search-for-user.png)
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019"
+
+4. Grant *Read* permissions for that user.
+
+    ![Screenshot of how to configure repository permissions.](media/access-tokens/grant-read-permission-on-repo.png)
 
 ### Example - Configure permissions to access other resources in the same project collection
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access other resources in the `fabrikam-tailspin/FabrikamFiber` project.
 
-1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
+1. Follow the steps to [grant the `SpaceGameWeb` project-scoped build identity permission to access the `FabrikamFiber` project](#configure-external-project).
 
-    ![Configure project settings.](media/access-tokens/project-permissions.png)
-
-2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
-
-    ![Select SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
-
-3. Configure the desired permissions for that user.
+2. Configure the desired permissions for that user.
 
     ![Configure user permissions.](media/access-tokens/set-project-permissions.png)
 

@@ -4,16 +4,15 @@ description: Improve productivity with flaky test management system
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.reviewer: KathrynEE 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 08/31/2020
 monikerRange: 'azure-devops'
 ---
 
 # Manage flaky tests
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Productivity for developers relies on the ability of tests to find real problems with the code under development or update in a timely and reliable fashion. Flaky tests present a barrier to finding real problems, since the failures often don't relate to the changes being tested. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. Flaky tests also impact the quality of shipped code. 
 
@@ -71,7 +70,7 @@ On the Test management page under **Flaky test options**, you can set options fo
 > ![Flaky Reporting](media/flaky-test-management/flaky_reporting.png)
 
 > [!NOTE]
-> The Test summary report is updated only for [Visual Studio Test task](../tasks/test/vstest.md) and [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml). You may need to add a custom script to suppress flaky test failure for other scenarios. 
+> The Test summary report is updated only for [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) and [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml). You may need to add a custom script to suppress flaky test failure for other scenarios. 
 
 ## Tests marked as flaky
 
@@ -97,6 +96,6 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 ## Related articles
 
 - [Review test results](review-continuous-test-results-after-build.md)
-- [Visual Studio Test task](../tasks/test/vstest.md)
+- [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2)
 - [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml)
 - [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update)

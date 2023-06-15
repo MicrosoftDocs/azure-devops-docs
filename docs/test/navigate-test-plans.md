@@ -1,10 +1,11 @@
 ---
 title: Navigate Test Plans  
 description: Learn how to navigate Test Plans. 
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>=azure-devops-2020'
 ms.date: 09/14/2021
 ---
@@ -12,7 +13,7 @@ ms.date: 09/14/2021
 
 # Navigate Test Plans 
 
-[!INCLUDE [version-2020-rtm](includes/version-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks. 
  
@@ -132,7 +133,7 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 - **Open test suite work item**: This option allows you to edit the Test suite work item form to manage the work item fields.
 - **Assign testers to run all tests**: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
 - **Rename/Delete**: These options allow you to manage the suite name or remove the suite and its content from the test plan.
-- **Import test suites**: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
+- **Import test suites**: Use this option to import test cases present in other suites from other test plans in the same project or even across projects. More details below.
 
 
 **Export test suite dialog**  
@@ -140,7 +141,7 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 
 **Import test suites**
 
-Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy. 
+Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy.Also note that we cannot import test suites from the same test plan. 
 
 :::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="Test suites tree import overview.":::
 

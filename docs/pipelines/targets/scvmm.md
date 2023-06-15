@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
-monikerRange: '>= tfs-2018'
+ms.date: 02/01/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy with System Center Virtual Machine Manager
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build.
 
@@ -22,7 +22,7 @@ You can automatically provision new virtual machines in System Center Virtual Ma
 
 ::: moniker range="azure-devops"
 
-You need to first configure how Azure Pipelines connects to SCVMM. You cannot use Microsoft-hosted agents to run SCVMM tasks since the VMM Console is not installed on hosted agents. You must set up a self-hosted build and release agent on the same network as your SCVMM server.
+You need to first configure how Azure Pipelines connects to SCVMM. You can’t use Microsoft-hosted agents to run SCVMM tasks since the VMM Console isn’t installed on hosted agents. You must set up a self-hosted build and release agent on the same network as your SCVMM server.
 
 ::: moniker-end
 
@@ -39,10 +39,10 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
 2. Install the **System Center Virtual Machine Manager (SCVMM)** extension
    from Visual Studio Marketplace into TFS or Azure Pipelines:
 
-   * If you are using **Azure Pipelines**,
+   * If you’re using **Azure Pipelines**,
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
      in Visual Studio Marketplace.
-   * If you are using **Team Foundation Server**, download
+   * If you’re using **Team Foundation Server**, download
      the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
      in Visual Studio Marketplace, upload it to your
      Team Foundation Server, and install it.<p />
@@ -65,7 +65,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
        required to connect to the vCenter Server. Username formats such as **username**, **domain\username**,
        **machine-name\\username**, and **.\\username** are supported.
        UPN formats such as <strong>username@domain.com</strong> and built-in system 
-       accounts such as **NT Authority\\System** are not supported.<p />
+       accounts such as **NT Authority\\System** aren’t supported.<p />
 
 <a name="newvm"></a>
 ## Create new virtual machines from a template, VHD, or stored VM
@@ -138,13 +138,13 @@ A quick alternative to bringing up a virtual machine in desired state prior to r
 <a name="runscript"></a>
 ## Run custom PowerShell scripts for SCVMM
 
-For functionality that is not available through the in-built actions, you can run custom SCVMM PowerShell scripts using the task. The task helps you with setting up the connection with SCVMM using the credentials configured in the service connection, and then runs the script.
+For functionality that isn’t available through the in-built actions, you can run custom SCVMM PowerShell scripts using the task. The task helps you with setting up the connection with SCVMM using the credentials configured in the service connection, and then runs the script.
 
 * **Display name**: The name for the task as it appears in the task list.
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select **Run PowerShell Script for SCVMM**.
 * **Script Type**: Select either **Script File Path** or **Inline Script**.
-* **Script Path**: If you selected **Script File Path**, enter the path of the PowerShell script to execute. It must be a fully-qualified path, or a path relative to the default working directory.
+* **Script Path**: If you selected **Script File Path**, enter the path of the PowerShell script to execute. It must be a fully qualified path, or a path relative to the default working directory.
 * **Inline Script**: If you selected **Inline Script**, enter the PowerShell script lines to execute.
 * **Script Arguments**: Enter any arguments to be passed to the PowerShell script. You can use either ordinal parameters or named parameters.
 * **Working folder**: Specify the current working directory for the script when it runs. The default if not provided is the folder containing the script.
@@ -153,7 +153,7 @@ For functionality that is not available through the in-built actions, you can ru
 
 Once you have the virtual machines set up, deploying a build to those virtual machines is no different than deploying to any other machine. For instance, you can:
 
-* Use the [PowerShell on Target Machines](../tasks/deploy/powershell-on-target-machines.md) task to run remote scripts on those machines using Windows Remote Management.
+* Use the [PowerShell on Target Machines](/azure/devops/pipelines/tasks/reference/powershell-on-target-machines-v3) task to run remote scripts on those machines using Windows Remote Management.
 * Use [Deployment groups](../release/deployment-groups/index.md) to run scripts and other tasks on those machines using build and release agent.
 
 ## See also

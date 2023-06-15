@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
 title: Developer resources documentation
-summary: Use command line tools, REST APIS, client SDKs and more to interface with Azure DevOps programmatically.  
+summary: Use command line tools, REST APIS, and more to interface with Azure DevOps programmatically.  
 
 metadata:
   title: Azure DevOps Developer resources documentation 
+  titleSuffix: Azure DevOps 
   description: Use command line interface, REST APIs, typescript tools and more to interface with Azure DevOps .
-  ms.prod: devops 
-  ms.technology: devops-reference
+  ms.subservice: azure-devops-reference
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/09/2019 
+  ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -19,22 +19,36 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Command Line Interface (CLI)
+  - title: Azure DevOps Command Line Interface (CLI)
     linkLists:
       - linkListType: get-started
         links:
           - text: Get Started with Azure DevOps CLI
-            url: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            url: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json
           - text: Sign in with a Personal Access Token (PAT)
             url: ../cli/log-in-via-pat.md
           - text: Configure policies
             url: ../cli/policy-configuration-file.md
+      - linkListType: reference
+        links:
+          - text:  Azure DevOps CLI quick reference
+            url: ../cli/quick-reference.md
+  - title: Repos and Test CLI 
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Git commands
+            url: ../repos/git/command-prompt.md
+          - text: TFVC repository commands
+            url: ../repos/tfvc/use-team-foundation-version-control-commands.md
+          - text: Test case management commands
+            url: ../test/test-case-managment-reference.md
   - title: Node CLI for Azure DevOps
     linkLists:
       - linkListType: get-started
         links:
           - text:  Cross-platform CLI for Azure DevOps (tfx-cli)
-            url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json
   - title: Azure DevOps REST API Reference
     linkLists:
       - linkListType: get-started

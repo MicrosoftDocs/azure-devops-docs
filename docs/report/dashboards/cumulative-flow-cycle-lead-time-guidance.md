@@ -3,18 +3,17 @@ title: Cumulative flow guidance
 titleSuffix: Azure DevOps   
 description: Learn about using cumulative flow diagrams (CFD) to monitor the flow of work through a system.
 ms.custom: dashboards
-ms.prod: devops  
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.topic: conceptual 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/28/2021
+ms.date: 04/04/2022
 ---
 
 # Cumulative flow, lead time, and cycle time guidance
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md). 
 
@@ -135,7 +134,7 @@ Two problems show up visually as flat lines and as bulges.
 
 :::row:::
    :::column span="2":::
-      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-basics.md) provides the quickest way to transition work from one column to another.  
+      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-overview.md) provides the quickest way to transition work from one column to another.  
       Flat lines can also appear when the work across one or more processes takes longer than planned. Flat lines appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. 
    :::column-end:::
    :::column span="3":::
@@ -244,12 +243,8 @@ You can also see how process changes affect your lead and cycle time. For exampl
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow chart](cumulative-flow.md) 
 ::: moniker-end
 
-
-<!---
- [We don't have a lot of Microsoft documentation on this so we should probably point to externally respected sources that are not our competitors to lend legitimacy to this and provide further reading]. I want to include industry practices here but not dive into a bunch of details. Aaron and Gregg think we should have one.]  
--->

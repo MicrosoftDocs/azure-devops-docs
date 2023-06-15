@@ -1,9 +1,9 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 04/09/2021
+ms.date: 04/04/2022
 ---
 
 ### Features not available to users with Stakeholder access 
@@ -75,29 +75,5 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Access the full set of features under **Code**, **Build and Release**, or **Test**.  
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Add work items, drag-and-drop work items, or change fields on cards on a Kanban board
-- Add new work item tags 
-- Create shared queries, view charts, and modify dashboards  
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features under **Code**, **Build and Release**, or **Test** 
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Add work items, drag-and-drop work items, or change fields on cards on a Kanban board
-- Add new work item tags 
-- Create shared queries, view charts, and modify the home page  
-- Access the full set of features under **Code**, **Build and Release**, or **Test**  
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
 
 

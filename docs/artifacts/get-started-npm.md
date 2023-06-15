@@ -1,20 +1,22 @@
 ---
 title: publish and download npm packages
 description: How to set up your .npmrc config file to publish and download npm packages
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
-ms.date: 10/22/2021
-monikerRange: '>= tfs-2017'
+ms.date: 04/13/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Get started with npm packages in Azure Artifacts
 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+
 With Azure Artifacts, you can publish and download npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your own feed, setting up your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## License the Azure Artifacts extension
 
@@ -47,18 +49,14 @@ A feed is an organizational construct that allows users to store their packages 
 
 [!INCLUDE [](includes/create-feed.md)]
 
-You can change these settings later by editing your feed's settings.
-
-[!INCLUDE [edit-feed](includes/edit-feed.md)]
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Set up your .npmrc files
 
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-We recommend having two .npmrc files. The first one should be placed in the same directory as your package.json file. The second one should be placed in the **$home** directory (Linux/MacOS) or **$env.HOME** (Windows) to store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+We recommend having two .npmrc files. The first one should be placed in the same directory as your package.json file. The second one should be placed in the **$home** directory (Linux/macOS) or **$env.HOME** (Windows) to store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
@@ -69,7 +67,11 @@ We recommend having two .npmrc files. The first one should be placed in the same
 1. Follow the instructions in the **Project setup** to set up your project.
 
     :::image type="content" source="media/npm-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project":::
-        
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+       
 ### Set up authentication on your development machine
 
 > [!IMPORTANT]
@@ -85,9 +87,9 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 }
 ```
 
-#### [Linux/MacOS](#tab/Linux/)
+#### [Other](#tab/Other/)
 
-`vsts-npm-auth` is not supported in Linux/MacOS. In order to authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
+To authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
 
 1. Copy the following code snippet to your .npmrc file.
 
@@ -135,7 +137,11 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+* * * 
+
+::: moniker range="tfs-2018"
+
+## Connect to feed
 
 1. Select **Packages**, and then select **Connect to feed**.
 
@@ -146,8 +152,6 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
     :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how generate credentials":::
 
 ::: moniker-end
-
-* * * 
 
 ## Publish packages
 

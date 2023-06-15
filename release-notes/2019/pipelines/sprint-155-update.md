@@ -3,7 +3,6 @@ title: Azure Pipelines - Sprint 155 Update
 description: See the Sprint 155 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 07/30/2019
 ---
 

@@ -2,17 +2,17 @@
 title: Troubleshoot work item form caching issues
 titleSuffix: Azure Boards
 description: Resolve work item cache rules that cause delay in server-side rule evaluations  
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 monikerRange: "<= azure-devops"
-ms.date: 04/12/2021
+ms.date: 04/04/2022
 ---
 
 # Troubleshoot work item form caching issues
 
-[!INCLUDE [temp](../../../boards/includes/version-azure-boards-plus-2018-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
  
 To quickly render work items in your client or browser, several data elements are cached by the IndexDB process. A known issue exists in the cache rules that can cause a delay in server-side rule re-evaluations.  
 
@@ -55,5 +55,5 @@ If your cache stores outdated rules, you can wait for the client cache to expire
 - [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md) 
 - [Apply rules to workflow states (Inheritance process)](apply-rules-to-workflow-states.md) 
 - [Add a rule to a work item type (Inheritance process)](custom-rules.md) 
-- [Apply or ignore rules based on user or group (On-premises XML process)](../../../organizations/settings/work/rule-reference.md)#apply-or-ignore-rules-based-on-user-or-group)  
+- [Apply or ignore rules based on user or group (On-premises XML process)](../../../organizations/settings/work/rule-reference.md#apply-or-ignore-rules-based-on-user-or-group)  
  

@@ -2,18 +2,18 @@
 title: Add tasks to support sprint planning
 titleSuffix: Azure Boards
 description: Learn how to add tasks to user stories assigned to a sprint. You can also add tasks to an iteration working with Scrum methods in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 04/01/2022
 ---
 
 # Add tasks to backlog items to support sprint planning
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="define-tasks">  </a>
 
@@ -81,7 +81,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -136,7 +136,7 @@ For each sprint backlog item, add a task. Adding tasks from the sprint backlog o
 
 ::: moniker range=">= azure-devops-2019"
 
-You can add tasks from the sprint **Backlog** or **Taskboard**. 
+You can add tasks from the sprint **Backlog** or **Taskboard**.  ALl items you add are automatically assigned the **Iteration Path** of the selected sprint.
 
 From the **Backlog** view, choose the plus sign to open the work item form for a task.
 
@@ -156,7 +156,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Select the
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
@@ -190,21 +190,12 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who 
 > ![Add task](media/add-tasks/add-task-form.png)
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 <a id="task-form-team-services" /> 
 <!--- Task form, new form -->
 ![New task form](media/sp-scrum-task-form.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-<a id="task-form-tfs-2015-13" /> 
-
-<!--- Task form, old form -->
-
-!["Web portal, Task form, old form](media/IC797606.png)  	
-
-::: moniker-end
 
 At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
 
@@ -220,7 +211,7 @@ During the sprint, team members update remaining work to continually reflect the
    **Usage**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    [Original Estimate](../queries/query-numeric.md)
@@ -277,7 +268,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 > ![Unparented tasks, agile taskboard](media/add-tasks/unparented-tasks.png) 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Unparented tasks](media/ALM_TB_UnparentedTasks_CO.png)
 

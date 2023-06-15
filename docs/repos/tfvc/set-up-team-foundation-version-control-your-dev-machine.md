@@ -1,114 +1,100 @@
-﻿---
-title: Team Foundation Version Control on your dev machine
-titleSuffix: Azure Repos
-description: Set up Team Foundation Version Control on your dev machine
-ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
-ms.technology: devops-code-tfvc
-ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
 ---
-
+title: Set up Team Foundation Version Control on your dev machine
+titleSuffix: Azure Repos
+description: Create a workspace and then add your code to set up Team Foundation Version Control (TFVC) on your dev machine.
+ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
+ms.service: azure-devops-repos
+ms.topic: conceptual
+ms.date: 11/30/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
+---
 
 # Set up Team Foundation Version Control on your dev machine
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-To set up Team Foundation Version Control (TFVC) on your dev machine, you just need to create a workspace and then add your code.
 
-**Before you start**
+To set up Team Foundation Version Control (TFVC) on your dev machine, you create a workspace and then add your code.
 
--   If you don't have Visual Studio, [get it here](https://visualstudio.microsoft.com/).
+## Prerequisites
 
--   If you don't have a project, [create](../../organizations/projects/create-project.md) or [get access](../../organizations/public/invite-users-public.md) to one.
+- [Visual Studio installed](https://visualstudio.microsoft.com).
+
+- An Azure DevOps project. If you don't have a project, [create one](../../organizations/projects/create-project.md) or [get access to one](../../organizations/accounts/add-external-user.md).
 
 ## Create a workspace and get the code
 
-From Visual Studio, go to the Team Explorer Connect page (Keyboard: Ctrl + 0, C) and then connect to the project.
+1. Press Ctrl+0, C to open the **Connect** page of the Visual Studio **Team Explorer** window.
 
-![Create a workspace and get the code](media/set-up-team-foundation-version-control-your-dev-machine/IC750752.png)
+1. Right-click a project, and then select **Connect**.
 
-(If the project you want to open is not listed, choose **Select Projects** and then 
-[connect to the project](../../organizations/projects/connect-to-projects.md).)
+   ![Screenshot that shows connecting to a project.](media/set-up-team-foundation-version-control-your-dev-machine/IC750752.png)
 
-Map the project to a folder on your dev machine.
+   If the project you want isn't listed, select **Manage Connections**, select **Connect to a Project**, and then select the project you want. For more information, see [connect to a project](../../organizations/projects/connect-to-projects.md).
 
-![Map the project to a folder on your dev machine](media/set-up-team-foundation-version-control-your-dev-machine/IC677199.png)
+1. Select **Configure your workspace** to map the project to a folder on your dev machine.
 
-Map the workspace and get your code.
+   ![Screenshot that shows mapping the project to a folder on your dev machine.](media/set-up-team-foundation-version-control-your-dev-machine/IC677199.png)
 
-![Map the workspace and get your code](media/set-up-team-foundation-version-control-your-dev-machine/IC696633.png)
+1. Select **Map & Get** to map the workspace and get your code.
 
-## Work in a "Main" parent folder
+   ![Screenshot that shows mapping the workspace to get code.](media/set-up-team-foundation-version-control-your-dev-machine/IC696633.png)
 
-Do you want to prepare for when your team grows large enough to need [branches](./branching-strategies-with-tfvc.md) to manage your work? Put all your code in a parent called Main (for example: `$/MyTeamProject/Main/`).
+## Work in a Main folder
 
-1.  Go to the Team Explorer Home page (Keyboard: Ctrl + 0, H), and then open **Source Control Explorer**.
+To prepare for when your team grows large enough to need [branches](./branching-strategies-with-tfvc.md) to manage your work, put all your code in a parent folder called *Main*, for example *$/MyTeamProject/Main*.
 
-2.  In **Source Control Explorer**, select your project in the left pane.
+1. Press Ctrl+0, H to open the **Home** page of **Team Explorer**.
 
-3.  On the menu bar choose **File**, **Source Control**, **New Folder**.
+1. Select **Source Control Explorer**.
 
-    ![Source control explorer](media/set-up-team-foundation-version-control-your-dev-machine/IC675823.png)
+1. In the **Source Control Explorer** window, select your project in the left pane.
 
-    Name the folder.
+1. On the Visual Studio menu bar, choose **File** > **Source Control**> **New Folder**.
 
-    Open the context menu of the `Main` folder and choose **Check in**.
+1. In **Source Control Explorer**, rename the folder to *Main*.
 
-4.  Check in the new folder.
+   ![Screenshot that shows renaming the new folder in Source Control Explorer.](media/set-up-team-foundation-version-control-your-dev-machine/IC675823.png)
 
-    ![Check in the new folder](media/set-up-team-foundation-version-control-your-dev-machine/IC696634.png)
+1. Right-click the *Main* folder and choose **Check in Pending Changes**.
 
-    Your changeset is checked in.
+1. On the **Pending Changes** page, select **Check In**.
 
-    ![Your changeset is checked in](media/set-up-team-foundation-version-control-your-dev-machine/IC675825.png)
+   ![Screenshot that shows checking in the new folder.](media/set-up-team-foundation-version-control-your-dev-machine/IC696634.png)
 
-When your team decides to branch the codebase, you can convert the Main folder to a branch. See [Branch folders and files](branch-folders-files.md).
+   Your changeset is checked in.
+
+   ![Screenshot that shows check-in success.](media/set-up-team-foundation-version-control-your-dev-machine/IC675825.png)
+
+When your team decides to branch the codebase, you can convert the *Main* folder to a branch. For more information, see [Branch folders and files](branch-folders-files.md).
 
 ## Add your code to version control
 
-### Create a new solution under version control
+If you've got an idea for a new app, you can use TFVC version control from the start. Or, you can put an app in progress under TFVC source control.
 
-If you've got an idea for a new app, you can use version control from the start. Create a new code project (Keyboard: Ctrl + Shift + N), and add it to TFVC version control:
+1. When you create a new code project that you want to put under TFVC solution control, put it in your mapped workspace folder like *c:\Users\\\<YourName>\\Source\\Workspaces\\YourTeamProject\\Main\\*.
 
-![Create a new solution under version control](media/set-up-team-foundation-version-control-your-dev-machine/IC696635.png)
-> [!TIP]
-> We suggest that you put your new project in **c:\Users\\**<em>YourName</em>**\Source\Workspaces\\**.
+   Or, if you already have an app that you want to put under TFVC source control, move the solution into your workspace folder with Windows File Explorer.
 
-When the **Choose Source Control** dialog box appears, choose **Team Foundation Version Control**.
+1. In Visual Studio, press Ctrl+Shift+O and open your solution, and open **Solution Explorer** by pressing Ctrl+Alt+L.
 
-When you are ready, [check in your changes](check-your-work-team-codebase.md) (Keyboard: Ctrl + 0, P).
+1. In **Solution Explorer**, right-click your solution and select **Add Solution to Source Control**.
 
-### Put an existing solution under version control
+   ![Screenshot of adding your solution to source control.](media/set-up-team-foundation-version-control-your-dev-machine/IC675409.png)
 
-You've already got an app in progress and you want to begin working on it under TFVC version control.
+1. In the **Add Solution to Source Control** dialog box, review the details, and then select **OK**.
 
-1.  Move your solution into your workspace folder (for example: **c:\\Users\\YourName\\Source\\Workspaces\\YourTeamProject\\Main\\**).
+1. When you're ready, press Ctrl+0, P to [check in your changes](check-your-work-team-codebase.md).
 
-2.  If you have not already done so, open your solution, (Keyboard: Ctrl + Shift + O) and then open Solution Explorer (Keyboard: Ctrl + Alt + L).
+## Next steps
 
-3.  Add your solution to source control.
+- If you're new to this process, you can [get a detailed step-by-step walkthrough](share-your-code-in-tfvc-vs.md).
 
-    ![Add your solution to source control](media/set-up-team-foundation-version-control-your-dev-machine/IC675409.png)
+- If your folder structure is complex or you use branches, you can [create one or more workspaces](create-work-workspaces.md) and [optimize them to meet your needs](optimize-your-workspace.md).
 
-4.  On the **Choose Source Control** dialog box, choose **Team Foundation Version Control**.
+## Related articles
 
-5.  When you are ready, [check in your changes](check-your-work-team-codebase.md) (Keyboard: Ctrl + 0,P).
-
-## Q & A
-
--   **Q: I'm really new to all this; can I get more help?**
-
-    **A:** Yes, [let us walk you step by step to get started](share-your-code-in-tfvc-vs.md).
-
--   **Q: Is your folder structure complex or do you use branches?**
-
-    **A:** If so, you can [create one or more workspaces](create-work-workspaces.md) and then [optimize them to meet your needs](optimize-your-workspace.md).
-
-## Try this next
-
- [Set up a CI build](../../pipelines/build/triggers.md) 
-
-## Dig deeper
-
- [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)
+- [Set up a CI build](../../pipelines/build/triggers.md) 
+- [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)

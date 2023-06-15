@@ -3,21 +3,21 @@ title: Connect to Power BI Data Connector
 titleSuffix: Azure DevOps
 description: Learn how to connect to Power BI Data Connector and Analytics to access Azure DevOps data.
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
-ms.technology: devops-analytics 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms date: 10/04/2021
 ---
 
 # Connect to Analytics with Power BI Data Connector
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
+
+The Power BI Data Connector uses [Analytics views](what-are-analytics-views.md). 
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
@@ -38,19 +38,21 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 - If you aren't familiar with Analytics, read [what is Analytics?](what-is-analytics.md) before continuing. 
 - Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
 - You must be a member of a project with Basic access or higher. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
+- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true)] is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
 - **Boards** must be enabled. If it's disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Make sure you have [permissions required to access Analytics](analytics-security.md). If you're a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
 - Review the [knowledge base of Power BI articles](/power-bi). 
 
 ::: moniker-end
+
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 [!INCLUDE [temp](../includes/connect-analytics-view.md)]
 

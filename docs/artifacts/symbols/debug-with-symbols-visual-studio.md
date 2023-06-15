@@ -2,17 +2,17 @@
 title: Debug with symbols in Visual Studio
 description: Use symbols to debug your application with Visual Studio.
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.date: 07/20/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Debug with Visual Studio
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the *PDB* extension. You can use Visual Studio to consume your symbols from Azure Artifacts symbol server or other external sources to step into your code and debug your application.
 
@@ -34,7 +34,7 @@ To debug with symbols from the Azure Artifacts symbol server, we must authentica
 
     :::image type="content" source="media/symbol-locations.png" alt-text="New symbol server added to the list of symbol file locations":::
 
-## Debugging optimized modules
+## Debug optimized modules
 
 If you're planning to debug an optimized module (example release binaries) or a third-party source code, we recommend that you uncheck the `Enable Just My Code` checkbox in Visual Studio options.
 
@@ -43,9 +43,7 @@ To do so, select **Tools** > **Options** and then **Debugging**. Select **Genera
 :::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
 
 > [!NOTE]
-> To enable support for portable PDB files, check the **Enable Source Link Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
-> 
-> To enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
+> To enable support for portable PDB files, check the **Enable Source Link Support** checkbox, and to enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox, both located under **Tools** > **Options** > **Debugging** > **General**.
 
 ## Start debugging
 

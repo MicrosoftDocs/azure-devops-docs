@@ -2,7 +2,6 @@
 title: Deployment for Azure Database for MySQL, Kubernetes with Helm, and Ruby on Rails – VSTS Sprint 133 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 4/16/2018
 description: In the **Sprint 133 Update** of Visual Studio Team Services (VSTS), we continue to expand on the languages and platforms we support for build and release.
 ---
@@ -91,7 +90,7 @@ To limit the branches that you want triggered, simply add the following to your 
 
 ```YAML
 trigger:
-- master
+- main
 - releases/*
 ```
 
@@ -164,7 +163,7 @@ Upstream sources to public package feeds like nuget.org and npmjs.com keep a sav
 
 ### Quickly link to other wiki pages using suggestions
 
-When you want to create a link to another wiki page, you can just type the standard markdown syntax for adding links `[link name](/` and you will get an enlistment of all pages in the current wiki. Earlier you were able to click and drag a wiki page to the markdown editor to create links, but this makes creating links in pages even simpler.
+When you want to create a link to another wiki page, you can just type the standard Markdown syntax for adding links `[link name](/` and you will get an enlistment of all pages in the current wiki. Earlier you were able to click and drag a wiki page to the Markdown editor to create links, but this makes creating links in pages even simpler.
 
 > [!div class="mx-imgBorder"]
 > ![autosuggestion wiki page link](media/132_07.png)
@@ -173,7 +172,7 @@ This feature was prioritized based on a suggestion.
 
 ### Filter search results by Wiki name
 
-Publishing markdown files from a Git repository as a Wiki, which we [released last Update](/azure/devops/release-notes/2018/apr-03-vsts#publish-markdown-files-from-a-git-repository-as-a-wiki), will mean you’ll start seeing multiple wikis in the same project. When searching, it may be difficult to wade through similar documents and find what you’re looking for. Now, when you search for your wiki page you will be able to scope down your results by applying the **Wiki** name filter on the search results pages to help you find your content faster.
+Publishing Markdown files from a Git repository as a Wiki, which we [released last Update](/azure/devops/release-notes/2018/apr-03-vsts#publish-markdown-files-from-a-git-repository-as-a-wiki), will mean you’ll start seeing multiple wikis in the same project. When searching, it may be difficult to wade through similar documents and find what you’re looking for. Now, when you search for your wiki page you will be able to scope down your results by applying the **Wiki** name filter on the search results pages to help you find your content faster.
 
 > [!div class="mx-imgBorder"]
 > ![wiki names in search](media/133_03.png)

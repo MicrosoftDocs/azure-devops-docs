@@ -2,19 +2,18 @@
 title: Quick reference index to Azure Boards settings 
 titleSuffix: Azure Boards
 description: Index to concepts and tasks for configuring and customizing Azure Boards.
-ms.custom: quick-reference-index
-ms.technology: devops-agile
-ms.assetid:
+ms.custom: quick-reference-index, engagement-fy23
+ms.service: azure-devops-boards
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 01/17/2023 
 ---
 
 # Quick reference index for Azure Boards settings 
 
-[!INCLUDE [temp](../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 
@@ -241,12 +240,12 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
       - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](xml/define-global-lists.md)  
+      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)  
             
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -296,7 +295,7 @@ With the On-premises XML process model, you modify the XML definition of work it
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -313,7 +312,7 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
       - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](xml/categories-xml-element-reference.md)  
+      - [Add custom categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
    :::column-end:::
 :::row-end:::
 ---

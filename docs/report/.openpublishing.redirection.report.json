@@ -1,0 +1,345 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/docs/report/create-status-and-trend-excel-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/create-status-and-trend-excel-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/add-a-report-server.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/add-a-report-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/add-reports-to-a-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/change-a-process-control-setting.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/change-a-process-control-setting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/disable-data-warehouse.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/disable-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/grant-permissions-to-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/grant-permissions-to-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/locate-reports-after-upgrade.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/locate-reports-after-upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/manage-reports-data-warehouse-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/manually-process-data-warehouse-and-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/rebuild-data-warehouse-and-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/resolve-schema-conflicts.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/resolve-schema-conflicts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/review-team-activities-for-useful-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/upload-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/upload-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/view-organize-configure-reports-using-report-manager.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/view-organize-configure-reports-using-report-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/admin/view-upload-organize-reporting-services-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/view-upload-organize-reporting-services-reports",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path_from_root": "/docs/report/sql-reports/address-inaccuracies-published-for-summary-values.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/address-inaccuracies-published-for-summary-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/backlog-overview-scrum.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/backlog-overview-scrum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/bug-status-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/bug-status-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/bug-trends-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/bug-trends-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/build-quality-indicators-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/build-success-over-time-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/build-summary-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/build-summary-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/burndown-and-burn-rate-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/burndown-and-burn-rate-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/dashboards/choose-source-data-authoring-tool.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/choose-source-data-authoring-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/components-data-warehouse.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/components-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/create-a-detailed-report-using-report-designer.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-a-detailed-report-using-report-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/create-a-report-server-project.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-a-report-server-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/create-aggregate-report-report-designer-analysis-services-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-aggregate-report-report-designer-analysis-services-cube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/create-and-manage-reporting-services-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-and-manage-reporting-services-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/perspective-build-analyze-report-build-details-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-build-analyze-report-build-details-coverage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/perspective-code-analyze-report-code-churn-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-code-analyze-report-code-churn-coverage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/perspective-measure-groups-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-measure-groups-cube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/perspective-test-analyze-report-test-results.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-test-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/perspective-test-analyze-report-work.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/reactivations-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/reactivations-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/release-burndown.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/release-burndown",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/remaining-work-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/remaining-work-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/reporting-services-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/reporting-services-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/requirements-overview-report-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/requirements-overview-report-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/requirements-progress-report-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/requirements-progress-report-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/run-coverage-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/run-coverage-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/shared-dimensions-in-the-analysis-services-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/shared-dimensions-in-the-analysis-services-cube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/sprint-burndown-scrum.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/sprint-burndown-scrum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/status-on-all-iterations-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/status-on-all-iterations-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/stories-overview-report-agile.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/stories-progress-report-agile.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/stories-progress-report-agile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-build-changeset.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-changeset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-build-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-coverage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-build-details.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-details",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-build-project.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-code-churn.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-code-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-current-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-current-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/table-reference-relational-warehouse-database.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-relational-warehouse-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/test-case-readiness-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/test-case-readiness-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/test-plan-progress-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/test-plan-progress-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/test-result-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/test-result-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/unplanned-work.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/unplanned-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/velocity.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/velocity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/work-item-category-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-category-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/work-item-changeset-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-changeset-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/work-item-history-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-history-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/work-item-link-history-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-link-history-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/sql-reports/work-item-test-result-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-test-result-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/reference/manage-new-form-rollout.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/manage-new-form-rollout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/reference/xml/reportable-fields-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/reportable-fields-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/reference/xml/add-or-modify-work-item-fields-to-support-reporting.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/report/powerbi/analytics-default-views.md",
+      "redirect_url": "/azure/devops/report/powerbi/what-are-analytics-views",
+      "redirect_document_id": false
+    }
+  ]
+}

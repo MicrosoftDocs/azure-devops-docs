@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
@@ -97,7 +97,7 @@ For example: <code>c:\agent_work</code>.
 <td>Build.ArtifactStagingDirectory</td>
 <td>The local path on the agent where any artifacts are copied to before being pushed to their destination.
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks. See <a href="/azure/devops/pipelines/artifacts/artifacts-overview" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks. See <a href="/azure/devops/pipelines/artifacts/artifacts-overview" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br/><br/>
 For example:
 <ul>
@@ -256,7 +256,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceBranch</td>
 <td>The branch the build was queued for. Some examples:
 <ul>
-<li>Git repo branch: <code>refs/heads/master</code></li>
+<li>Git repo branch: <code>refs/heads/main</code></li>
 <li>Git repo pull request: <code>refs/pull/1/merge</code></li>
 <li>TFVC repo branch: <code>$/teamproject/main</code></li>
 <li>TFVC repo gated check-in: <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code></li>
@@ -272,7 +272,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourceBranchName</td>
 <td>The name of the branch the build was queued for.
 <ul>
-<li>Git repo branch or pull request: The last path segment in the ref. For example, in <code>refs/heads/master</code> this value is <code>master</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
+<li>Git repo branch or pull request: The last path segment in the ref. For example, in <code>refs/heads/main</code> this value is <code>master</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
 <li>TFVC repo branch: The last path segment in the root server path for the workspace. For example in <code>$/teamproject/main</code> this value is <code>main</code>.</li>
 <li>TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code> or <code>myshelveset;username@live.com</code>.</li>
 </ul>
@@ -318,6 +318,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 Note: This variable is available in TFS 2015.4.
+
+> [!NOTE]
+> The **Build.SourceVersionMessage** variable does not work with classic build pipelines in Bitbucket repositories when **Batch changes while a build is in progress** is enabled.
 </td>
 </tr>
 
@@ -336,7 +339,7 @@ The local path on the agent where any artifacts are copied to before being pushe
 <br/><br/>
 This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks. See <a href="/azure/devops/pipelines/artifacts/artifacts-overview" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks. See <a href="/azure/devops/pipelines/artifacts/artifacts-overview" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br/><br/>
 In <strong>TFS 2015.4</strong>, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable.
 <br/><br/>
@@ -427,7 +430,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
+<td>The branch that is the target of a pull request. For example: <code>refs/heads/main</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
 </tr>
 
 <tr>

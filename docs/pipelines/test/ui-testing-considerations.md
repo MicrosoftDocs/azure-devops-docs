@@ -7,18 +7,18 @@ ms.custom: "continuous-test, seodec18"
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # UI testing considerations
 
-[!INCLUDE [version-header-vsts-tfs2017](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
 the typical considerations for running UI tests. 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later.
@@ -29,7 +29,7 @@ the typical considerations for running UI tests.
 
 ## Prerequisites
 
-Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent on Windows](../agents/v2-windows.md). 
+Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent on Windows](../agents/windows-agent.md). 
 
 ## Headless mode or visible UI mode?
 
@@ -77,7 +77,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
+pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
 To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)
@@ -138,7 +138,7 @@ the **tscon** command as described above.
 
 > [!NOTE]
 > The screen resolution utility task runs on the unified build/release/test agent, and cannot be used with
-> the deprecated [Run Functional Tests task](../tasks/test/run-functional-tests.md).
+> the deprecated [Run Functional Tests task](/azure/devops/pipelines/tasks/reference/run-visual-studio-testsusing-test-agent-v1).
 
 ## Troubleshooting failures in UI tests
 
@@ -154,7 +154,7 @@ Most UI testing frameworks provide the ability to capture screenshots.
 The screenshots collected are available as an attachment to the test results
 when these results are published to the server. 
 
-If you use the [Visual Studio test task](../tasks/test/vstest.md) to run tests,
+If you use the [Visual Studio test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests,
 captured screenshots must be added as a result file in order to be available
 in the test report. For this, use the following code:
 
@@ -172,7 +172,7 @@ Use the `TestContext.AddTestAttachment()` method available in NUnit 3.7 or highe
 
 ---
 
-If you use the [Publish Test Results task](../tasks/test/publish-test-results.md)
+If you use the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)
 to publish results, test result attachments can only be published if you are using
 the VSTest (TRX) results format or the [NUnit 3.0 results](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
 format. 
@@ -180,7 +180,7 @@ format.
 Result attachments cannot be published if you use JUnit or xUnit test results. This is because these test result formats do not have a formal definition for attachments in the results schema. You can use one of the below approaches to publish test attachments instead.
 
 * If you are running tests in the build (CI) pipeline, you can use the
-  [Copy and Publish Build Artifacts](../tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
+  [Copy and Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/copy-publish-build-artifacts-v1) task to publish any additional files created in your tests.
   These will appear in the **Artifacts** page of your build summary. 
 
 * Use the REST APIs to publish the necessary attachments. Code samples can be found
@@ -190,7 +190,7 @@ Result attachments cannot be published if you use JUnit or xUnit test results. T
 
 ### Capture video
 
-If you use the [Visual Studio test task](../tasks/test/vstest.md) to run tests,
+If you use the [Visual Studio test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests,
 video of the test can be captured and is automatically available as an attachment
 to the test result. For this, you must configure the
 [video data collector in a **.runsettings** file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)

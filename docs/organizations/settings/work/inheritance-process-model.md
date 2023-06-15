@@ -3,18 +3,18 @@ title: Process customization and inherited processes
 titleSuffix: Azure DevOps Services
 description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual 
+ms.author: chcomley
+author: chcomley
+ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/17/2020
+ms.date: 07/08/2022
 ---
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 <a id="inherited" /> 
 
@@ -40,7 +40,7 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 You'll see two types of processes:
 
 - ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes. 
+- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in the [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]   
@@ -53,7 +53,7 @@ Once you've created an inherited process, you can customize it, create projects 
 For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
 
 > [!div class="mx-imgBorder"]  
-> ![Admin context, Organization settings, Project list and the process they use](media/process/projects-list.png)
+> ![Screenshot of Admin context, Organization settings, Project list and the process they use.](media/process/projects-list.png)
 
 <a id="process-naming"></a>
 
@@ -75,8 +75,11 @@ If you want to switch the process a project uses from one system process to anot
 
 Following the guidance provided in the above listed articles, you can also make additional changes, for example, from CMMI to Agile or Agile to CMMI. 
 
-Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
+### Best practices when making changes
+
+Making changes to an inherited process is straight forward and safe. However, it is always a best practice to test those changes before applying them to an active project. [Following these steps](./manage-process.md#copy-a-process) will help you surface any negative affects your process changes may have.
 
 ::: moniker-end
 
@@ -87,22 +90,22 @@ Each inherited process you create inherits the WITs defined in the system proces
 
 #### [Agile process](#tab/agile-process) 
 
-![Agile work item types](../../../boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
+![Conceptual image of Agile process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
 
 #### [Basic process](#tab/basic-process) 
 
-![Basic process work item hierarchy](../../../boards/get-started/media/track-issues/basic-process-epics-issues-tasks.png)
+![Conceptual image of Basic process work item hierarchy.](../../../boards/get-started/media/track-issues/basic-process-epics-issues-tasks.png)
 
 > [!NOTE]  
 > The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 #### [Scrum process](#tab/scrum-process) 
 
-![Scrum work item types](../../../boards/work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
+![Conceptual image of Scrum process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
 
 #### [CMMI process](#tab/cmmi-process) 
 
-![CMMI work item types](../../../boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
+![Conceptual image of CMMI process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
 
 * * * 
 
@@ -192,7 +195,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 - You can't change the field name or data type once you've defined it
 - You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
-- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
 
 ::: moniker-end
 
@@ -204,10 +207,10 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - You can't modify the Description help text of inherited fields
-- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists).  
 
 > [!NOTE]    
-> With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
+> With the inherited process, you can't modify the picklists of predefined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
 
 ::: moniker-end
 
@@ -282,7 +285,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 ### Restrict modification of work items based on Area Path 
 
-You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
+You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 ## Work item type (WIT) customizations 
 
@@ -406,7 +409,7 @@ You can make the following customizations to a WIT form.
 
 The web form layout is organized into three columns as shown in the image below. 
 
-![3-column page layout](media/process/cpform-3-column-layout.png)
+![Illustration of 3-column page layout for work item form.](media/process/cpform-3-column-layout.png)
 
 If you only add groups and fields to the first two columns, then the layout reflects a two-column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one-column layout. 
 
@@ -430,7 +433,7 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 
-![Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)  
+![Screenshot of Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)  
 
  
 

@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-settings
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-settings
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 04/15/2021
 ---

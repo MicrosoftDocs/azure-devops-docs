@@ -1,22 +1,28 @@
 ---
-title: Reconcile Command
+title: Reconcile command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Reconcile Command
+description: Use the Team Foundation Version Control reconcile command to compare the current state of the workspace on disk with the server's view.
 ms.assetid: ef4aa5f8-b62e-4dd2-9fb8-1e28b7e0123f
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/25/2020
-monikerRange: '>= tfs-2015'
+ms.date: 11/29/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Reconcile Command
+# Reconcile command (Team Foundation Version Control)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Compares the current state of the workspace on disk with the server's view, either to clean the workspace or to promote unpended local changes.
+The Team Foundation Version Control (TFVC) `tf reconcile` command compares the current state of the workspace on disk with the server's view, either to clean the workspace or to promote unpended local changes.
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf reconcile [itemspec]
@@ -30,7 +36,7 @@ tf reconcile [itemspec]
 
 ## Parameters
 
-### Argument
+### Arguments
 
 :::row:::
    :::column span="1":::
@@ -43,17 +49,17 @@ tf reconcile [itemspec]
 
 :::row:::
    :::column span="1":::
-   *itemspec*
+   `<itemspec>`
    :::column-end:::
    :::column span="3":::
-   Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Identifies the file or folder for which to apply the `reconcile` command. If omitted, all suitable items are included. For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    > [!Note]  
-   > You can specify more than one *Itemspec* argument.
+   > You can specify more than one `itemspec` argument.
    :::column-end:::
 :::row-end:::
 
-### Option
+### Options
 
 :::row:::
    :::column span="1":::
@@ -66,116 +72,110 @@ tf reconcile [itemspec]
 
 :::row:::
    :::column span="1":::
-   **/clean**
+   `/clean`
    :::column-end:::
    :::column span="3":::
-   Updates local items on disk to match the server's structure.
+   Updates local items on disk to match the server's structure. Removes items that aren't present in version control, and adds items that are missing on disk but present in version control.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/promote`
+   :::column-end:::
+   :::column span="3":::
+   Promotes local file changes to version control. Adds locally created items to version control, similar to `tf add`, and removes locally deleted items.
+
+   > [!Note]  
+   > Specify `/adds` and/or `/deletes` when using with `/noprompt`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/adds`
+   :::column-end:::
+   :::column span="3":::
+   Promotes locally added files and folders to version control.
+
+   > [!Note]  
+   > Can use with `/promote` only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/deletes`
+   :::column-end:::
+   :::column span="3":::
+   Promotes deleted files and folders to version control.
+
+   > [!Note]  
+   > Can use with `/promote` only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/exclude`
+   :::column-end:::
+   :::column span="3":::
+   Ignores comma-separated items specified in this option.
+
+   > [!Note]  
+   > This option overrides `/ignore`, `/noignore`, and `/unmapped` options in case of intersections.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/unmapped`
+   :::column-end:::
+   :::column span="3":::
+   Overrides the default, and cleans unmapped and cloaked items. By default, unmapped and cloaked items aren't affected by the `/clean` command. For more information, see [Mappings (workspace)](../../pipelines/repos/tfvc.md#mappings-workspace).
+
+   > [!Note]  
+   > Can use with `/clean` only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/diff`
+   :::column-end:::
+   :::column span="3":::
+   Compares items with source control by using MD5 hashes. Use this option to detect items that are different from the workspace version but still have their read-only bit set (+R).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/preview`
+   :::column-end:::
+   :::column span="3":::
+   Displays what would occur, without actually doing the `reconcile` operation.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/ignore`
+   :::column-end:::
+   :::column span="3":::
+   Overrides the default and doesn't change ignored items. By default, `/clean` updates all items based on the current server state, including items ignored by version control. Use this option to avoid changing the ignored items.
    
-   Remove items that are not present in version control and add those that are missing on disk but present in version control.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/promote**
-   :::column-end:::
-   :::column span="3":::
-   Promote local file changes to version control.
-
-   Add locally created items to version control (similar to **tf add**) and remove those 
+   You can configure which items are ignored using a *.tfignore* file. For more information, see [Customize which files version control ignores](add-files-server.md#tfignore).
 
    > [!Note]  
-   > Should specify **/adds** or(and) **/deletes** when using with **/noprompt**.
+   > Can use with `/clean` only.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/adds**
+   `/noignore`
    :::column-end:::
    :::column span="3":::
-   Promote locally added files and folders to version control.
-
-   > [!Note]  
-   > Can be used with **/promote** only.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/deletes**
-   :::column-end:::
-   :::column span="3":::
-   Promote deleted files and folders to version control.
-
-   > [!Note]  
-   > Can be used with **/promote** only.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/exclude**
-   :::column-end:::
-   :::column span="3":::
-   Items specified in the **/exclude** option will be ignored. The items are separated by comma.
-
-   > [!Note]  
-   > This option overrides **/ignore**, **/noignore** and **/unmapped** options in case of intersections.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/unmapped**
-   :::column-end:::
-   :::column span="3":::
-   By default unmapped and cloaked items are not affected by the **/clean** command. Use this option to clean unmapped and cloaked items as well (see [Mapping Workspace](../../pipelines/repos/tfvc.md#mappings-workspace)).
-
-   > [!Note]  
-   > Can be used with **/clean** only.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/diff**
-   :::column-end:::
-   :::column span="3":::
-   Compares items with source control using MD5 hashes. Use this option to detect items which are different from the workspace version but still have their read-only bit set (+R).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/preview**
-   :::column-end:::
-   :::column span="3":::
-   Displays what would occur, without actually performing the **Reconcile** operation.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/ignore**
-   :::column-end:::
-   :::column span="3":::
-   By default **tf /clean** command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.
+   Overrides the default, and promotes ignored items. By default, `/promote` promotes all items except items that are ignored by version control. Use this option to promote the ignored items as well. This option is similar to using `/noignore` in the `tf add` command.
    
-   You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
-
    > [!Note]  
-   > Can be used with **/clean** only.
+   > Can use with `/promote` only.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/noignore**
-   :::column-end:::
-   :::column span="3":::
-   By default **tf /promote** command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using **/noignore** in the **tf add** command.
-   
-   You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
-
-   > [!Note]  
-   > Can be used with **/promote** only.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/recursive**
+   `/recursive`
    :::column-end:::
    :::column span="3":::
    Reconciles items in the specific directory and subdirectories.
@@ -183,7 +183,7 @@ tf reconcile [itemspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/noprompt**
+   `/noprompt`
    :::column-end:::
    :::column span="3":::
    Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
@@ -191,36 +191,36 @@ tf reconcile [itemspec]
 :::row-end:::
 
 ## Remarks
-You can use the **reconcile** command to synchronize your local workspace state with the server's one.
+You can use the `reconcile` command to synchronize your local workspace state with the server's state.
 
-Use **/clean** to update the local workspace according to the server's state.
-Use **/promote** to promote locally added and deleted items to pending changes in version control.
+- Use `/clean` to update the local workspace according to the server's state.
+- Use `/promote` to promote locally added and deleted items to pending changes in version control.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
 ### Clean
 
-The following example invokes the **Clean Workspace** dialog box so that you can specify local items that should be deleted or redownloaded from the server.
+The following example opens the Visual Studio **Clean Workspace** dialog box, so that you can specify local items that should be deleted or re-downloaded from the server.
 
 ```
 tf reconcile /clean
 ```
 
-The following example cleans all local items except ignored by version control.
+The following example cleans all local items except items that are ignored by version control.
 
 ```
 tf reconcile /clean /ignore
 ```
 
-The following example cleans all local items including unmapped and cloaked.
+The following example cleans all local items, including unmapped and cloaked items.
 
 ```
 tf reconcile /clean /unmapped
 ```
 
-The following example cleans all items except "file1.txt" and "dir1" (with all its content).
+The following example cleans all items except *file1.txt* and *dir1* with all its contents, and doesn't display the **Clean Workspace** dialog box.
 
 ```
 tf reconcile /clean /noprompt /recursive /exclude:file1.txt,dir1
@@ -228,50 +228,36 @@ tf reconcile /clean /noprompt /recursive /exclude:file1.txt,dir1
 
 ### Promote
 
-The following example invokes the **Promote Candidate Changes** dialog box so that you can specify what items should be promoted to pending changes.
+The following example opens the Visual Studio **Promote Candidate Changes** dialog box, so that you can specify what items should be promoted to pending changes.
 
 ```
 tf reconcile /promote
 ```
 
-The following example promotes all items including ignored by version control items, except the "myLib.dll" file.
+The following example promotes all items, including items ignored by version control, except for the *myLib.dll* file.
 
 ```
 tf reconcile /promote /noignore /exclude:myLib.dll
 ```
 
-The following example adds all locally created items to version control pending changes. This command works similar to the **tf add /noprompt** command.
+The following example adds all locally created items to version control pending changes, without opening the **Promote Candidate Changes** dialog box. This command is similar to the `tf add /noprompt` command.
 
 ```
 tf reconcile /promote /adds /noprompt
 ```
 
-The following example adds all locally deleted items to version control pending changes.
+The following example adds all locally deleted items to version control pending changes, without opening the **Promote Candidate Changes** dialog box.
 
 ```
 tf reconcile /promote /deletes /noprompt
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Add Command](add-command.md)
-
-[Get Command](get-command.md)
-
-[Checkin Command](checkin-command.md)
-
-[Difference Command](difference-command.md)
-
-#### Concepts
-
-[Managing File Types](/azure/devops/server/admin/manage-file-types)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Comparing Folders and Files](./compare-files.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Add command](add-command.md)
+- [Get command](get-command.md)
+- [Checkin command](checkin-command.md)
+- [Difference command](difference-command.md)
+- [Manage file types](/azure/devops/server/admin/manage-file-types)
+- [Compare folders and files](./compare-files.md)

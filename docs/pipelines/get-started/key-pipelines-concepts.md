@@ -3,11 +3,13 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 10/11/2021
+ms.date: 12/20/2022
 monikerRange: 'azure-devops'
 ---
 
 # Key concepts for new Azure Pipelines users
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn about the key concepts and components that make up a pipeline. Understanding the basic terms and parts of a pipeline can help you deliver better code more efficiently and reliably.  
 <br />
@@ -73,6 +75,7 @@ A stage contains one or more [jobs](../process/phases.md). Each job runs on an a
 
 A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages. It can be thought of as a workflow that defines how your test, build, and deployment steps are run. 
 
+For Classic pipelines, a pipeline can also be referred to as a definition.
 
 ## Release
 
@@ -84,6 +87,8 @@ For YAML pipelines, the build and release stages are in one, [multi-stage pipeli
 ## Run
 
 A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
+
+For Classic pipelines, a build represents one execution of a pipeline.
 
 ## Script
 
@@ -111,7 +116,7 @@ A trigger is something that's set up to tell the pipeline when to run. You can c
 
 ## Library
 
-The [Library](../library/index.md) includes **secure files** and **variable groups**. [Secure files](../library/secure-files.md) are a way to store files and share them across pipelines. You may need to save a file at the DevOps level and then use it during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it when you need it. [Variable groups](../library/variable-groups.md) store values and secrets that you might want to to be passed into a YAML pipeline or make available across multiple pipelines.
+The [Library](../library/index.md) includes **secure files** and **variable groups**. [Secure files](../library/secure-files.md) are a way to store files and share them across pipelines. You may need to save a file at the DevOps level and then use it during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it when you need it. [Variable groups](../library/variable-groups.md) store values and secrets that you might want to be passed into a YAML pipeline or make available across multiple pipelines.
 
 ### About the authors
 - [Dave Jarvis](https://github.com/DaveJarvis) contributed to the key concepts overview graphic.

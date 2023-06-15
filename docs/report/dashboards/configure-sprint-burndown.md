@@ -3,17 +3,17 @@ title: View and configure sprint burndown
 titleSuffix: Azure DevOps   
 description: Learn how to configure the sprint burndown in-context chart or widget to track team progress in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops' 
-ms.date: 09/27/2021
+ms.date: 04/04/2022
 ---
 
 # Configure and monitor sprint burndown 
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -32,16 +32,9 @@ Throughout your sprint, you can monitor the sprint burndown report to determine 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). Both the in-context sprint burndown report and the Sprint Burndown widget support tracking burndown based on Remaining Work assigned to sprint tasks. 
-
-::: moniker-end
-
-
-::: moniker range="tfs-2013"
-
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). The in-context sprint burndown report supports tracking burndown based on Remaining Work assigned to sprint tasks. 
 
 ::: moniker-end
 
@@ -53,13 +46,14 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]  
 > You can't add an in-context report to a dashboard. However, you can add the Sprint burndown widget to a dashboard. 
 
 ::: moniker-end
 
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
 Use this article to learn about: 
 
@@ -71,6 +65,8 @@ Use this article to learn about:
 > * How to add the in-context Burndown Trend report to a dashboard  
 > * How to configure the Sprint Burndown widgets  
 > * How to view current and past sprint burndowns 
+
+For an overview of all burndown/burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
 
 ::: moniker-end
 
@@ -88,6 +84,7 @@ Use this article to learn about:
 
 > [!NOTE]  
 > Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
+
 
 
 ## The in-context Burndown Trend report
@@ -137,11 +134,8 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 
 ## The Sprint Burndown widget
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -171,7 +165,7 @@ If your dashboard already has a legacy version available, you can easily upgrade
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 The **Sprint Burndown** widget adds a chart based on Remaining Work defined for tasks in the team's current sprint. There are no configuration options for this widget. 
 
@@ -184,21 +178,13 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
-::: moniker range=">= tfs-2015 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 - To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin.
 
 ::: moniker-end
-
-::: moniker range="tfs-2013"
-
-- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
-
-::: moniker-end
-
 
 ## Team activities to track tasks and Remaining Work  
 
@@ -285,7 +271,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, select (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -379,14 +365,9 @@ Select the chart to display it in a larger view.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart, 2018](media/burndown/sprint-burndown-open-chart.png)
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-> [!div class="mx-imgBorder"]  
-> ![Open sprint burndown chart, 2015](media/burndown/sprint-burndown-open-chart.png)
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -410,11 +391,8 @@ Select the chart to display it in a larger view.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015"
-
 ## Add the Sprint Burndown widget to a dashboard  
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -448,7 +426,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard. Select ![add a widget icon](media/add-widget-icon.png) to add a widget to the dashboard. 
 
@@ -526,19 +504,12 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 To view a past sprint and its burndown chart, select the sprint listed under the **Past** section of the sidebar.  
 
 > [!div class="mx-imgBorder"]  
 > ![Past sprints provide historical record, 2017-2018](media/burndown/past-sprints.png) 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-To view a past sprint and its burndown chart, select the sprint listed under the **Past** section of the sidebar.  
-![Past sprints provide historical record, 2015 and earlier](media/burndown/ALM_DS_PastSprints.png)  
 
 ::: moniker-end
 
@@ -581,7 +552,7 @@ Teams may find it useful to review these reports periodically during their sprin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Burndown guidance](burndown-guidance.md) 
+> [Burndown and burnup guidance](burndown-guidance.md) 
 
 In addition to the sprint burndown chart, teams can review the [velocity](team-velocity.md) at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint. You can use your team velocity as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 
@@ -598,10 +569,9 @@ You can learn more about defining, planning, and executing your sprints from the
 
 And, from these industry resources:  
 - [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  
-- [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
-For on-premises deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
+For projects that use the On-premises XML process model, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
 
 ::: moniker-end

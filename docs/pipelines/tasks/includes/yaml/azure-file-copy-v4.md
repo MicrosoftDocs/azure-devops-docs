@@ -3,8 +3,7 @@ ms.topic: include
 author: RoopeshNair
 ms.author: ronai
 ms.date: 12/07/2018
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML
@@ -26,7 +25,7 @@ ms.technology: devops-cicd-tasks
     #targetPath: # Required when destination == AzureVMs
     #additionalArgumentsForBlobCopy: # Optional
     #additionalArgumentsForVMCopy: # Optional
-    #enableCopyPrerequisites: false # Optional
+    #enableCopyPrerequisites: false # Optional | Required to be true when destination == AzureVMs
     #copyFilesInParallel: true # Optional
     #cleanTargetBeforeCopy: false # Optional
     #skipCACheck: true # Optional

@@ -3,17 +3,17 @@ title: Troubleshoot migration import to Azure DevOps Services
 titleSuffix: Azure DevOps
 description: Resolve common DataMigratorTool validation errors 
 ms.topic: troubleshooting
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2019
+ms.date: 01/31/2022
 ---
 
 # Troubleshoot import and migration errors
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The data migration tool flags errors that you need to correct prior to performing a migration to Azure DevOps Services. This article describes the most common warnings and errors that you may receive when preparing to migrate. After correcting each error, run the **migrator validate** command again to verify resolution of all errors.
 
@@ -21,7 +21,7 @@ The data migration tool flags errors that you need to correct prior to performin
 > [!NOTE]
 > We recommended that you use the [Migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
 >
-> With the release of Azure DevOps Server 2019, the TFS Database Import Service was re-branded to become the data migration tool for Azure DevOps. The data migration tool, **TfsMigrator** has been renamed **migrator** for short. The service still works exactly the same as the previous import service. If you're on an older version of on-premises with TFS as the branding, you can still use **migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. For details, see [Migrate data from Azure DevOps Server to Azure DevOps Services](migration-overview.md).
+> With the release of Azure DevOps Server 2019, the Team Foundation Server (TFS) Database Import Service was re-branded to become the data migration tool for Azure DevOps. The data migration tool, **TfsMigrator** has been renamed **migrator** for short. The service still works exactly the same as the previous import service. If you're on an older version of on-premises with TFS as the branding, you can still use **migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. For details, see [Migrate data from Azure DevOps Server to Azure DevOps Services](migration-overview.md).
 
 
 ## Resolve size warnings
@@ -40,7 +40,7 @@ This warning **DOES NOT** mean that your collection is too large for import.
 
 ### Table size above recommended size
 
-Similar to the previous warning, the following warning means you must use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import.  
+Similar to the previous warning, the following warning means you must use the SQL Azure Virtual Machine (VM) method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import.  
 
 ```cmdline
 The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
@@ -72,7 +72,7 @@ The database metadata size is currently {Metadata Size}GBs. This is above the ma
 
 ## Resolve collation warnings
 
-Collation warnings refer to your collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the **warning** messages.  
+Collation warnings refer to your collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either `SQL_Latin1_General_CP1_CI_AS` or `Latin1_General_CI_AS` will generally receive one of the **warning** messages.  
 
 ### No native support
 
@@ -110,7 +110,7 @@ In order to continue, you need to [change your collection's collation](/sql/rela
     
 ## Resolve identity errors
 
-Identity errors aren't common when validating a collection, but when they do occur you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while is was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
+Identity errors aren't common when validating a collection, but when they do occur you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while it was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
 
 The following sections provide guidance for resolving the most common identity errors.
 
@@ -122,7 +122,7 @@ This error indicates that one or more groups is missing a permission that it's e
 
 #### Project Collection Valid Users error message
 
-Examine the error message(s) the data migration tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the example below, you need to fix a missing permission for the **Project Collection Valid Users** group. 
+Examine the error message(s) the data migration tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the following example, you need to fix a missing permission for the **Project Collection Valid Users** group. 
 
 Run the following command, replace the scope with the one from the error message and specify your collection URL.
 
@@ -130,7 +130,7 @@ Run the following command, replace the scope with the one from the error message
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
 
-You determine the scope and group SID from the error message. 
+You determine the scope and group security ID (SID) from the error message. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 for scope:397c326b-b97c-4510-8271-75aac13de7a9. Expected:1 and Actual:0 
@@ -144,7 +144,7 @@ TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S
 
 #### Project Collection Administrators error message
 
-Carefully examine the error message(s) the data migration tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message and specify your collection.
+Carefully examine the error message(s) the data migration tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the following example, then you will need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message and specify your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -156,7 +156,7 @@ TFSSecurity.exe /a+ Identity "{scope}\\" Delete sid:{Group SID} ALLOW /collectio
 TFSSecurity.exe /a+ Identity "{scope}\\" ManageMembership sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
 
-In the following example, take the scope and group SID from the error message and add them to the preceding command. 
+In the following example, take the scope and group `SID` from the error message and add them to the preceding command. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 for scope:0c7c2216-fa4b-4107-a203-82b324a147ef. Expected:15 and Actual:0 
@@ -178,12 +178,12 @@ When you need to correct  multiple errors, we recommend that you create a batch 
 
 ### ISVError: 300005
 
-ISVError: 300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. They're non-editable groups that only contain other Azure DevOps security groups as members.This error indicates that an AD group or user identity has a direct membership in a Valid Users group. 
+ISVError: 300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. These groups are not editable. They are designed to only contain other Azure DevOps permission or security groups as members. This error indicates that an Active Directory (AD) group or user identity has a direct membership in a Valid Users group. 
 
 > [!IMPORTANT]
 > Ensure that you have a backup of your collection and configuration databases before running the following commands to resolve the error. 
 
-Since you can't directly edit Valid Users groups, you need to correct the invalid membership by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error messages the data migration tool highlights. Copy down the GroupSid, MemberId, and ScopeId as you'll need to place these values into the following command.
+Since you can't directly edit Valid Users groups, you need to run a SQL statement against the configuration database to remove the offending identity and correct the invalid membership. Carefully examine the error messages highlighted by the data migration tool. Copy the `GroupSid`, `MemberId`, and `ScopeId` as you'll need to place these values into the following command.
 
 ```SQL
 DECLARE @p6 dbo.typ_GroupMembershipTable
@@ -193,12 +193,13 @@ INSERT into @p6 values('{GroupSid}','Microsoft.TeamFoundation.Identity','{Member
 EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='{ScopeId}',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5',@updateGroupAudit=0
 ```
 
-Below is an example ISVError: 300005 message from the data migration tool. 
+The following example lists an example of an ISVError: 300005 message from the data migration tool. 
 
 ```cmdline
 ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberId:76050ddf-4fd8-48c4-a1ff-859e44364519, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
 ```
-If you see the MemberId from the error message comes back as a SID instead of a GUID, you need to get the MemberID from the dbo.tbl_Identity table in Configuration DB to get the GUID for the Member Sid.
+
+If the error message lists a `MemberSid`, you need to get the `MemberID` from the dbo.tbl_Identity table in the configuration database. With the `MemberID`, you can then look up the GUID for the `MemberSid`.
 
 ```cmdline
 ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberSid:System.Security.Principal.WindowsIdentity;S-1-5-21-124525095-708259637-1543119021-1737349, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
@@ -211,7 +212,7 @@ SET @MemberId = (Select Id from dbo.tbl_Identity where Sid ='S-1-5-21-124525095-
 SELECT @MemberId
 ```
 
-Copy the GroupSid, MemberId, and ScopeId into the SQL command.
+Copy the `GroupSid`, `MemberId`, and `ScopeId` into the SQL command.
 
 ```SQL
 
@@ -251,10 +252,10 @@ Install-Module AzureAD
 // Install the MSOnline PowerShell module -  ensuring to select Yes to All
 Install-Module MSOnline
 
-// Connect to AAD and use your AAD credentials (someone@somecompany.com) to login when the pop-up appears
+// Connect to Azure AD and use your Azure AD credentials (someone@somecompany.com) to login when the pop-up appears
 Connect-MsolService 
 
-// Try to retrieve information on a user from your AAD
+// Try to retrieve information on a user from your Azure AD
 Get-MsolUser -UserPrincipalName someone@somecompany.com
 ```
 
@@ -265,7 +266,7 @@ If you're able to retrieve user information, open your log file from the **prepa
 Number of active users is {Number of Users}.
 ```
 
-If this number is in the high five-digits or even six-digits ranges, it may indicate that the volume of identities being mapped requires more time than the timeout limit provides. Inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible, remove these groups and try again. If you still can't resolve this error, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+If the number of active users is over 50,000, the volume of identities being mapped may require more time than provided by the timeout limit. Inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible, remove these groups and try again. If you still can't resolve this error, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ## Resolve process errors
 
@@ -273,15 +274,22 @@ See the separate [Process Templates](migration-processtemplates.md) page for det
 
 ## Resolve field validation errors
 
+<a name= "VS403310" ></a>
+ 
+#### VS403310
+
+The following error message can occur when an inconsistency in collection files is detected. Contact customer support if you encounter this error. 
+
+`VS403310: An inconsistency was detected in some of the files in the collection.`
+
+
 <a name= "VS403442" ></a>
  
 #### VS403442
 
 Field name conflicts sometimes occur between your local collection and an Azure DevOps Services system field.
 
-```cmdline
-In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
-```
+`In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.`
 
 To resolve this error, change the name of your collection field. Use the **witadmin changefield** command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
 
@@ -296,9 +304,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 The following error indicates a field name conflict exists between your local collection and a specific Azure DevOps Services field. 
 
 
-```cmdline
-In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
-```
+`In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*`
 
 To resolve this error, use the **witadmin changefield** command. For details, see [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
 
@@ -314,9 +320,7 @@ The following error indicates a field type conflict exists between your local co
 
 Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md), you can change the data type only for HTML or PlainText fields. 
 
-```cmdline
-In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
-```
+`In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.`
 
 If your field type is HTML or PlainText, then you can change its type to the required type.
 
@@ -339,22 +343,18 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 ## Resolve import errors
 
-Hit a failure when running your import? Failures in the import space fall into one of two categories. 
-- Verification failures occur when the import fails to start. This failure indicates that the data migration tool attempted to queue an import, but returned an error instead. 
-- Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import receives a failure email. 
+Failures that occur during import fall into one of two categories, [verification failure](#verification-failures) and [import failure](#import-failures).  
 
 ### Verification failures
 
-Verification failure issues indicate that your import request isn't valid. Follow the recommended guidance provided below based on the error messages you receive. Then try to queue the import again.   
+Verification failures occur when the import fails to start. The data migration tool attempted to queue an import, but returned an error instead. Verification failure issues indicate that your import request isn't valid. Address the error messages you receive according to the following guidance and then try to import again.   
 
 **VS403254**
 
 The region that you entered for your Azure DevOps Services import isn't supported. 
 
 
-```cmdline
-VS403254: Region {0} may not be used for the Import, it is not a supported region.
-```
+`VS403254: Region {0} may not be used for the Import, it is not a supported region.`
 
 Open your import specification file and update the region that you've provided with the correct short name for the [region](migration-import.md#supported-azure-regions-for-import). 
 
@@ -362,9 +362,7 @@ Open your import specification file and update the region that you've provided w
 
 The organization name your team has selected is already in use by an existing organization. All Azure DevOps Services imports go into a new organization that is created at import time. 
 
-```cmdline
-VS403249: The organization {0} already exists. Please select a different name and try the import again.
-```
+`VS403249: The organization {0} already exists. Please select a different name and try the import again.`
 
 Select a different organization name and update the import specification file before retrying the import. 
 
@@ -372,10 +370,9 @@ Select a different organization name and update the import specification file be
 
 The DACPAC isn't built off a detached collection. 
 
-```cmdline
-VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
-VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
-```
+`VS403250: The dacpac is not a detached Azure DevOps Server Collection database.`
+
+`VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.`
 
 [Detach](migration-import.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
@@ -383,9 +380,7 @@ VS403286: The dacpac is from a Azure DevOps Server Configuration database. You m
 
 Unable to make a connection to the database using the provided SQL Connection String. 
 
-```cmdline
-VS403243: Unable to connect to the database using the provided SQL Connection String {0}.
-```
+`VS403243: Unable to connect to the database using the provided SQL Connection String {0}.`
 
 Review the parameters that were provided to ensure they're correct and try again.
 
@@ -393,10 +388,9 @@ Review the parameters that were provided to ensure they're correct and try again
 
 The collection database isn't detached.
 
-```cmdline
-VS403260: The database is not detached.
-VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
-```
+`VS403260: The database is not detached.`
+
+`VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server. `
 
 [Detach](migration-import.md#step-1-detach-your-collection) your collection database and retry the import queue.  
 
@@ -404,9 +398,7 @@ VS403351: The DACPAC or source database is missing an expected table. It's possi
 
 The connection string must be encrypted otherwise the password is sent in the clear. 
 
-```cmdline
-VS403261: The SQL connection string must use encryption.
-```
+`VS403261: The SQL connection string must use encryption.`
     
 Add **Encrypt=true** to your SQL connection string.
 
@@ -414,9 +406,7 @@ Add **Encrypt=true** to your SQL connection string.
 
 The connection string must use SQL Authentication. 
 
-```cmdline
-VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.
-```
+`VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.`
 
 Add **Integrated Security=False** to your SQL connection string.
 
@@ -425,22 +415,18 @@ Add **Integrated Security=False** to your SQL connection string.
 Your SQL sign in user account doesn't have the required database role.
 
 
-```cmdline
-VS403263: The User ID {0} must be member of the database role {1}.
-```
+`VS403263: The User ID {0} must be member of the database role {1}.`
 
 Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#configure-your-collection-for-import) role. 
 
 > [!NOTE]   
-> There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Import large collections](migration-import-large-collections.md).
+> There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Import large collections](migration-import-large-collections.md).
 
 **VS403264**
 
 The connection string doesn't point to an Azure DevOps Server collection database. 
 
-```cmdline    
-VS403264: The database is not a Azure DevOps Server Collection database, it cannot be used for import.
-```
+`VS403264: The database is not a Azure DevOps Server Collection database, it cannot be used for import.`
 
 Verify or correct the connection string points to your collection database. 
 
@@ -449,9 +435,7 @@ Verify or correct the connection string points to your collection database.
 
 The Azure DevOps Server Update has queued the file migration job. Imports can't be performed until this job has completed. The completion time for this job is dependent on the size of the collection. 
 
-```cmdline
-VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later
-```
+`VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later`
 
 You can track job progress by running the following query on the collection database:
 
@@ -468,9 +452,7 @@ Once the number of files remaining to migrate is zero, you can run the data migr
 
 A new line character exists in the source location value. This character could have remained after copying the SAS key from your windows console.
 
-```cmdline
-VS403282: The source location parameter contains a new line character. Please ensure the SAS key is defined on a single line in the import specification file.
-```
+`VS403282: The source location parameter contains a new line character. Please ensure the SAS key is defined on a single line in the import specification file.`
 
 Remove the line break and try again.
 
@@ -478,9 +460,7 @@ Remove the line break and try again.
 
 Your import files and DACPAC aren't located in the **required** Azure region to complete the import to your target Azure DevOps Services region. 
 
-```cmdline
-VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.
-``` 
+`VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.` 
 
 [Create a new Windows Azure storage account](/azure/storage/common/storage-create-storage-account) in the required region and copy your files. The following example shows how to copy your data using **AzCopy**.
 
@@ -490,11 +470,9 @@ AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /Source
 
 **VS403316**
 
-Inconsistencies were detected in some TFVC files within your collection.
+Inconsistencies were detected in some Team Foundation version control (TFVC) files within your collection.
 
-```cmdline
-VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.
-```
+`VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.`
 
 Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImportSupport). Open a support ticket and they'll work with you to resolve the error. 
 
@@ -502,7 +480,7 @@ Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImp
 
 The data migration tool was unable to connect to the SQL Azure VM. 
 
-```cmdline
+```
 VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Azure DevOps Services have been provided exceptions for your machines firewall.
 
 List of Azure DevOps Services IPs:
@@ -522,14 +500,13 @@ From SQL Server Management Studio (SSMS), open the extended properties for the s
 
 Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import. For details, see [Delete a project](../organizations/projects/delete-project.md).
 
-```cmdline
-VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
-```
+`VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.`
+
 Verify the collection against which you are running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/restore-project.md). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
 
 ### Import failures
 
-When an import fails, the individual that queued the import receives an email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your import. 
+Import failures happen when the data migration tool successfully queues an import, but fails to complete the import. The individual that queued the import receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your import. 
 
 If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended you not attempt the import again until the failure causing issue is resolved. 
  

@@ -1,75 +1,65 @@
 ---
 title: Reconcile differences between two folders
 titleSuffix: Azure Repos
-description: Reconcile differences between two folders
+description: Reconcile differences between two folders in Team Foundation Version Control (TFVC).
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/29/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Reconcile differences between two folders
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-After you compare a server folder and a local folder, you can reconcile the differences between the folder contents and between files that have conflicting pending changes in your local folder. For more information, see [Compare folders](compare-folders.md).
+After you compare a server folder and a local folder in Team Foundation Version Control (TFVC), you can reconcile the differences between the folder contents and between files that have conflicting pending changes in your local folder. For more information, see [Compare folders](compare-folders.md).
 
-**Required Permissions**
+## Prerequisites
 
-To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To do these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 > [!NOTE]
-> To reconcile two local folders or files, you do not need Team Foundation Server permissions.
+> To reconcile two local folders or files, you don't need Azure DevOps permissions.
 
-### To reconcile differences
+## Reconcile differences
 
-1.  In Source Control Explorer, right-click a folder, and then click **Compare**.
+1. In Visual Studio **Source Control Explorer**, right-click a folder, and then select **Compare**. The **Compare** dialog box opens.
 
-    The **Compare** dialog box appears.
+1. In the **Compare** dialog box, select the folder versions to compare, and then select **OK**. The **Folder Difference** window appears.
 
-2.  In the **Compare** dialog box. select the folder versions to compare. For more information see [Compare folders](compare-folders.md).
+1. In the **Folder Difference** window, right-click the folder or file you want to reconcile, and select **Reconcile**.
 
-    The **Folder Difference** window appears.
+   > [!NOTE]
+   > You can select multiple folders and files by holding down the Ctrl key and selecting the items. Also, you can press Ctrl+A to select all folders and files.
 
-3.  In the **Folder Difference** window, right-click the folder or file you want to reconcile, and click **Reconcile**.
+   The **Reconcile Folder Differences** window appears.
 
-    > [!NOTE]
-    > You can select multiple folders and files by holding down the CTRL key and clicking additional folders or files. Also, you can press CTRL+A to select all folders and files.
+1. For **Files that are not in your workspace**, either select **Get Latest Version** to download the latest version of the files, or select **Ignore** to leave these files only on the server.
 
-    The **Reconcile Folder Differences** window appears.
+1. For **Files that are not on the server**, either select **Add to Server** to upload the files to the server, or select **Ignore** to leave these files only in your local workspace.
 
-4.  For **Files that are not in your workspace**, either click **Get** to download the latest version of files that you do not have in your local workspace, or click **Ignore** to leave these files only on the server.
+1. For **Files that have pending changes**, select one of the following options:
 
-5.  For **Files that are not on the server**, either click **Add to Server** to upload files that do not appear on the server or click **Ignore** to leave these files only in your local workspace.
+   - **Ignore** to keep the changes made to these files in your local workspace.
+   - **Undo Pending Changes** to disregard changes made to these files in your local workspace.
+   - **Get Latest Version** to download the latest version of these files to your local workspace.
 
-6.  For **Files that have pending changes**, select one of the following options:
+1. For **Files that do not have pending changes**, select one of the following options:
 
-    -   **Ignore** to keep the changes made to these files in your local workspace.
+   - **Get Latest Version** to download the latest versions of files.
+   - **Check Out** to check out the server version of files. If you made any changes to your local versions, you'll get an option to merge these changes with the server version when you check in the files.
+   - **Ignore** to leave these files on the server.
 
-    -   **Undo Pending Changes** to disregard changes made to these files in your local workspace.
+1. Select **OK**.
 
-    -   **Get** to download the latest version of these files to your local workspace.
+   If you have pending changes in your local workspace that conflict with the server version of a file, and you choose to **Get Latest Version** of the file, the **Resolve Conflicts** window appears. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-7.  For **Files that do not have pending changes**, select one of the following options:
+## Related articles
 
-    -   Click **Get** to download the latest version of files that you do not have in your local workspace.
-
-    -   Click **Check Out** to check out the server version of files. If you have made any changes to your local version, you will have an option to merge these changes with the server version when you check in the files.
-
-    -   Click **Ignore** to leave these files only on the server.
-
-8.  Click **OK**.
-
-    If you have pending changes in your local workspace that conflict with the server version of a file and you chose to **Get** the latest version of the file, the **Resolve Conflicts** window appears. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
-
-## See Also
-
-#### Other Resources
-
- [Compare folders](compare-folders.md) 
-
- [Compare files](compare-files.md) 
-
- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
+- [Compare folders](compare-folders.md) 
+- [Compare files](compare-files.md) 
+- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 

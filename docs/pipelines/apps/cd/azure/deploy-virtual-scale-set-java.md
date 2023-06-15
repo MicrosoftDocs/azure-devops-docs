@@ -2,13 +2,16 @@
 title: Tutorial - Deploy to a Linux virtual machine scale set
 description: Learn how to use the Azure CLI to create and deploy a Java application on Linux VMs using a virtual machine scale set 
 ms.topic: tutorial
+ms.custom: devx-track-azurecli, devx-track-extended-java
 ms.author: jukullam
 author: JuliaKM
-ms.date: 11/23/2020
+ms.date: 10/03/2022
 monikerRange: 'azure-devops'
 ---
 
 # Tutorial: Deploy a Java app to a virtual machine scale set
+
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 A [virtual machine scale set](/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
 
@@ -63,7 +66,7 @@ Before you begin, you need:
         vmImage: 'ubuntu-latest'
 
       steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: 'pom.xml'
         mavenOptions: '-Xmx3072m'
@@ -90,7 +93,7 @@ Before you begin, you need:
 
 You'll need a resource group, storage account, and shared image gallery for your custom image. 
 
-1. Create a resource group with [az group create](/cli/azure/group#az_group_create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+1. Create a resource group with [az group create](/cli/azure/group#az-group-create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
     ```azurecli-interactive
     az group create --name myVMSSResourceGroup --location eastus2
@@ -166,7 +169,7 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
 
 2. Run the pipeline to generate your first image. You may need to [authorize resources](../../../process/resources.md#authorize-a-yaml-pipeline) during the pipeline run.
  
-3. Go to the your new image in the Azure portal and open **Overview**. Select **Create VMSS** to create a new virtual machine scale set from the new image. Set **Virtual machine scale set name** to `vmssScaleSet`. See [Create a virtual machine scale set in the Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal) to learn more about creating virtual machine scale sets in the Azure portal. 
+3. Go to the new image in the Azure portal and open **Overview**. Select **Create VMSS** to create a new virtual machine scale set from the new image. Set **Virtual machine scale set name** to `vmssScaleSet`. See [Create a virtual machine scale set in the Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal) to learn more about creating virtual machine scale sets in the Azure portal. 
 
 
 ## Deploy updates to the virtual machine scale set 

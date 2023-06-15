@@ -1,189 +1,161 @@
 ---
 title: Use Team Foundation version control commands
 titleSuffix: Azure Repos
-description: Use Team Foundation version control commands
+description: Run Team Foundation Version Control commands from a command prompt or within a script. Use options and shortcuts, and understand exit codes.
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/29/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Use Team Foundation version control commands
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
+You can use version control commands to do nearly all Team Foundation Version Control (TFVC) tasks that you can do in Visual Studio. You can also use version control commands to do several tasks that can't be done in Visual Studio. To run version control commands from a command prompt or within a script, you use the `tf.exe` tool.
 
 ## Run a command
 
-To launch the Visual Studio command prompt, from Windows **Start**, choose **Visual Studio 2015**,   then choose the **Developer Command Prompt for V2015** shortcut.
+To launch the Visual Studio command prompt, from Windows **Start**, select the **Developer Command Prompt for VS2022** or earlier version shortcut.
 
-> Visual Studio 2017 users: The tf.exe binary is no longer in a fixed location in the Visual Studio install path as in previous releases (for example, C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE). Scripts using tf.exe should not hardcode a path to the file based on the Visual Studio 2017 install path.
+> [!NOTE]   
+> For Visual Studio 2019 and later versions, the `tf.exe` binary is no longer in a fixed location in the Visual Studio install path as in some previous releases, for example, `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE`. If your script uses `tf.exe`, don't hard-code a path to the file based on the Visual Studio install path.
 
-In most cases, you run the version control command in the context of a directory that is mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace:
+In most cases, you run the version control command in the context of a directory that's mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace, use the following command:
 
 ```
 c:\code\SiteApp\Main\SolutionA>tf get
 ```
 
-### Set up your dev machine and manage workspaces
+### Set up your development machine and manage workspaces
 
-Your workspace is a local copy of your team's codebase. Because it is a local copy on your dev machine, you can develop and test your code in isolation until you are ready to check in your work. Here are some commands to manage your workspace:
+Your workspace is a local copy of your team's codebase. Because it's a local copy on your development machine, you can develop and test your code in isolation until you're ready to check in your work. Here are some commands to manage your workspace:
 
-[Proxy Command](proxy-command.md) (Visual Studio 2010)  
+- [Proxy command](proxy-command.md) 
+- [Workfold command](workfold-command.md) 
+- [Workspace command](workspace-command.md)  
+- [Workspaces command](workspaces-command.md) 
 
-[Workfold Command](workfold-command.md) (Visual Studio 2010)  
+For more information, see the following resources:
 
-[Workspace Command](workspace-command.md) (Visual Studio 2010)  
-
-[Workspaces Command](workspaces-command.md) (Visual Studio 2010)  
-
-See also: [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md), [Create and work with workspaces](create-work-workspaces.md)
+- [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Create and work with workspaces](create-work-workspaces.md)
 
 ### Develop your app
 
 Use these commands to develop your app under version control with your team:
 
-[Add command](add-command.md)  
-Adds files and folders to version control.
+- [Add command](add-command.md): Adds files and folders to version control.
+- [Checkout (or Edit) command](checkout-or-edit-command.md): Checks out a file and changes its pending change status to **edit**.
+- [Delete command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md): Removes files and folders from the Azure DevOps server and deletes them from the disk.
+- [Get command](get-command.md): Gets (downloads) the latest version or a specified version of one or more files or folders from Azure DevOps Server to the workspace.
+- [Rename command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md): Changes the name or path of a file or folder.
+- [Status command](status-command.md): Displays information about pending changes to files and folders in workspaces or in a shelveset.
+- [Undo command](undo-command.md): Discards specified pending changes to files or folders.
+- [Undelete command](undelete-command.md): Restores items that were previously deleted.
 
-[Checkout (or Edit) command](checkout-or-edit-command.md)  
-Checks out a file and changes its pending change status to "edit".
-
-[Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Get command](get-command.md)  
-Gets (downloads) the latest or a specified version of one or more files or folders from Team Foundation Server to the workspace.
-
-[Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Status command](status-command.md)  
-Displays information about pending changes to files and folders items in one or more workspaces, or in a shelveset.
-
-[Undo command](undo-command.md)  
-Discards one or more pending changes to files or folders.
-
-[Undelete Command](undelete-command.md) (Visual Studio 2010)  
-
-See also: [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)
+For more information, see [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md).
 
 ### Suspend your work
 
-For a variety of reasons, sometimes you need to set aside some or all of your work in progress. To suspend and resume your work, and to manage your shelvesets, use these commands:
+For various reasons, sometimes you need to set aside some or all of your in-progress work. To suspend and resume your work, and to manage your shelvesets, use these commands:
 
-[Shelve Command](shelve-command.md) (Visual Studio 2010)  
+- [Shelve command](shelve-command.md)  
+- [Shelvesets command](shelvesets-command.md) 
+- [Unshelve command](unshelve-command.md) 
 
-[Shelvesets Command](shelvesets-command.md) (Visual Studio 2010)  
-
-[Unshelve Command](unshelve-command.md) (Visual Studio 2010)  
-
-See also: [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
+For more information, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
 ### Contribute your work
 
-Here's how to check in your code to the team's codebase:
+Use the `checkin` command to check in your code to the team's code base:
 
-[Checkin command](checkin-command.md)  
-Checks in pending changes to files or folders to the server.
+- [Checkin command](checkin-command.md): Checks in pending changes to files or folders to the server.
 
-See also: [Check in your work to the team's codebase](check-your-work-team-codebase.md)
+For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
 ### Manage files and solve problems
 
-**View and Manage Version Control Files and Folders**  
+Use the resources in the following sections to manage files.
 
-[Properties (or Info) Command](properties-or-info-command.md) (Visual Studio 2010)  
+#### View and manage version control files and folders
 
-Property Command (not documented)  
+- [Properties (or Info) command](properties-or-info-command.md): Displays information about items in version control.
+- [Dir command](dir-command.md): Displays the contents of the version control server.  
+- [Destroy command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md): Permanently deletes version-controlled files.
+- [LocalVersions command](localversions-command.md): Displays the versions of workspace items.
 
-[Dir Command](dir-command.md) (Visual Studio 2010)  
+For more information, see [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md).
 
-[Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md) (Visual Studio 2010)  
+#### View and manage past versions
 
-[LocalVersions Command](localversions-command.md) (Visual Studio 2010)  
+- [Changeset command](changeset-command.md): Changes or displays changeset attributes.
+- [History command](history-command.md): Displays the revision history of files or folders.
+- [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md): Attaches or removes labels from files or folders.
+- [Labels command](labels-command.md): Displays information about labels that are in use in the server.
+- [Rollback command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md): Rolls back the effects of changesets.
+- [Unlabel command](unlabel-command.md): Removes an item from an existing label in the server.
+- [View command](view-command.md): Retrieves a specified version of a file and displays it.
 
-See also: [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)
+For more information, see [View and manage past versions](view-manage-past-versions.md).
 
-**View and Manage Past Versions**  
+#### Compare folders and files
 
-[Changeset Command](changeset-command.md) (Visual Studio 2010)  
+- [Difference command](difference-command.md): Compares differences between files and shelvesets.
+- [Folderdiff command](folderdiff-command.md): Compares differences between files in two folders.
 
-[History command](history-command.md)  
-Displays the revision history of one or more files or folders.
+For more information, see [View and manage past versions](view-manage-past-versions.md).
 
-[Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md) (Visual Studio 2010)  
+#### Resolve file conflicts
 
-[Labels Command](labels-command.md) (Visual Studio 2010)  
+- [Resolve command](resolve-command.md): Resolves conflicts between items in your workspace and on the server.
 
-[Rollback Command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md) (Visual Studio 2010)  
+For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-[Unlabel Command](unlabel-command.md) (Visual Studio 2010)  
+#### Work with version control locks
 
-[View Command](view-command.md) (Visual Studio 2010)  
+- [Lock command](lock-command.md): Locks or unlocks files and folders.
 
-See also: [View and manage past versions](view-manage-past-versions.md)
-
-**Compare Folders and Files**  
-
-[Difference Command](difference-command.md) (Visual Studio 2010)  
-
-[Folderdiff Command](folderdiff-command.md) (Visual Studio 2010)  
-
-See also: [View and manage past versions](view-manage-past-versions.md)
-
-**Resolve File Conflicts**  
-
-[Resolve Command](resolve-command.md) (Visual Studio 2010)
-
-See also: [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
-
-**Work with Version Control Locks**  
-
-[Lock Command](lock-command.md) (Visual Studio 2010)
-
-See also: [Work with version control locks](work-version-control-locks.md).
+For more information, see [Work with version control locks](work-version-control-locks.md).
 
 ### Isolate risk
 
-Use the following commands to isolate risk using branches:
+Use the following commands to isolate risk by using branches:
 
-[Branch Command](branch-command.md) (Visual Studio 2010)  
+- [Branch command](branch-command.md) 
+- [Branches command](branches-command.md) 
+- [Merge command](merge-command.md) 
+- [Merges command](merges-command.md) 
 
-[Branches Command](branches-command.md) (Visual Studio 2010)  
+For more information, see [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
-[Merge Command](merge-command.md) (Visual Studio 2010)  
+### Administer version control
 
-[Merges Command](merges-command.md) (Visual Studio 2010)  
+Use the following commands to manage your version control system:
 
-See also: [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
+- [Configure command](configure-command.md)  
+- [Permission command](permission-command.md)  
 
-### Administer Version Control
+For more information, see [Configure check-out settings](configure-check-out-settings.md).
 
-Use the following commands to administer your version control system:
+### Get help on version control commands
 
-[Configure Command](configure-command.md) (Visual Studio 2010)  
+Use the following commands to get detailed information about version control commands:
 
-[Permission Command](permission-command.md) (Visual Studio 2010)  
-
-See also: [Administering Team Foundation Version Control](./configure-check-out-settings.md) (Visual Studio 2010).
-
-### Get Help on Version Control Commands
-
-Use the following commands to get more information about version control commands:
-
-[Help Command (Team Foundation Version Control)](help-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Msdn Command](msdn-command.md) (Visual Studio 2010)  
+- [Help command (Team Foundation Version Control)](help-command-team-foundation-version-control.md)  
+- [Msdn command](msdn-command.md)  
 
 ## Understand command syntax
 
-The syntax of each command appears at the top of each reference topic.
+The syntax of each command appears at the top of each reference article.
 
 ### Required and optional arguments
 
-Non-bracketed arguments are required. **[Brackets]** indicate optional arguments that are not required to complete a command. However, some optional arguments have defaults that are applied to the command even if you do not specify the option.
+Non-bracketed arguments are required. **[Brackets]** indicate optional arguments that aren't required to complete a command. However, some optional arguments have defaults that are applied to the command even if you don't specify the option.
 
 ### Exclusive arguments
 
@@ -191,316 +163,155 @@ When options are separated by a pipe (**|**), you can specify one of the options
 
 ### Verbatim and replaceable arguments
 
-Bold items are options that you include verbatim. *Italicized* items are arguments that you must replace with actual characters to perform a command.
+Items that aren't enclosed in brackets are options that you include verbatim. Items enclosed in angle brackets (**<** and **>**) are arguments that you must replace with actual characters to perform a command.
 
-### Command Shortcuts and Aliases
+### Command shortcuts and aliases
 
-Some commands support shortcuts. For example, you can call the [Delete command](delete-command-team-foundation-version-control.md) with either **tf delete** or **tf del**.
+Some commands support shortcuts. For example, you can call the [Delete command](delete-command-team-foundation-version-control.md) with either `tf delete` or `tf del`.
 
 ### Example
 
-For example, the [Checkout command](checkout-or-edit-command.md):
+For example, consider the [Checkout command](checkout-or-edit-command.md):
 
 ```
-tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: username,[ password]]
+tf checkout [/lock:( none|checkin|checkout)] [/recursive] <item-spec> [/login: <username>, [<password>]]
 ```
 
-Let's review the arguments from this example:
+This example includes the following arguments:
 
-- *itemspec*: You must replace this argument with an [itemspec](use-team-foundation-version-control-commands.md#itemspec) that specifies the items you are checking out.
-
-- **/lock:(none|checkin|checkout)**: You are not required to specify the **/lock** option. If you do not specify it, then the system by default specifies **/lock:none**. Otherwise, you can specify one of the lock options.
-
-- The following arguments are optional and if you do not supply them, none of their effects apply to the command:
-
-  - **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
-
-  - **/login**:*username,password*: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
+- `<item-spec>`: You must replace this argument with an [item specification](use-team-foundation-version-control-commands.md#use-an-item-specification-argument-to-specify-affected-items) that identifies the items that you're checking out.
+- The following arguments are optional. If you don't supply them, none of their effects apply to the command:
+  - `/lock:(none|checkin|checkout)`: If you don't specify the `/lock` option, the system uses `/lock:none` by default. Otherwise, you can specify one of the other lock options.
+  - `/recursive`: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
+  - `/login:<username>, <password>`: If you want to run the command as another user, you must specify the `/login` option verbatim and replace `<username>` with the name of the user. If necessary, replace `<password>` with the user's password.
 
 ## Specify the items affected by a command
 
-You can use itemspecs and versionspecs to specify which items are affected by a command.
+You can use item specifications and version specifications to specify which items are affected by a command.
 
-<a name="itemspec"></a>
+#### Use an item specification argument to specify affected items
 
-#### Use an itemspec argument to specify affected items
+You use an item specification to specify the items affected by a command. You can specify items either on a client machine or on your Azure DevOps server. You can use wildcard characters such as **\*** and **?**.
 
-You use an *itemspec* (item specification) to specify the items affected by a command. You can specify items either on a client machine or on your Team Foundation Server. You can use wildcard characters such as **\\*** and **?**.
+#### Client item specification arguments
 
-#### Client itemspec arguments
+A client item specification argument specifies a path to items on a client machine such as:
 
-A client itemspec argument specifies a path to items on a client machine such as a folder (for example, **c:\\code\\SiteApp\\Main\\SolutionA\\**) a file (for example, **c:\\code\\SiteApp\\Main\\SolutionA\\Project1\\program.cs** or multiple files (for example, **c:\\code\\SiteApp\\Main\\SolutionA\\\*.cs**. You can also specify UNC paths such as **\\\\myshare\\code\\SiteApp\\Main**.
+- A folder, for example, *c:\\code\\SiteApp\\Main\\SolutionA\\*.
+- A file, for example, *c:\\code\\SiteApp\\Main\\SolutionA\\Project1\\program.cs*.
+- Multiple files, for example, *c:\\code\\SiteApp\\Main\\SolutionA\\\*.cs*.
+- A universal naming convention (UNC) path, such as *\\\\myshare\\code\\SiteApp\\Main*.
 
-#### Server itemspec arguments
+#### Server item specification arguments
 
-A server itemspec argument specifies a path to items on your Team Foundation Server such as a folder (for example, **$/SiteApp/Main/SolutionA**) a file (for example, **$/SiteApp/Main/SolutionA/Project1/program.cs** or multiple files (for example, **$/SiteApp/Main/SolutionA/\*.cs**.
+A server item specification argument specifies a path to items on your Azure DevOps server such as:
 
-You typically use server itemspec arguments when you need run a command on items not on the client machine. For example, you are working on a dev machine and need to get some revision history data about some items that are in a project collection you don't work in:
+- A folder, for example, *$/SiteApp/Main/SolutionA*.
+- A file, for example, *$/SiteApp/Main/SolutionA/Project1/program.cs*.
+- Multiple files, for example, *$/SiteApp/Main/SolutionA/\*.cs*.
+
+You typically use server item specification arguments when you need to run a command on items that aren't on the client machine. For example, say you're working on a development machine. If you need to get some revision history data about some items that are in a project collection that you don't work in, you can use the following command:
 
 ```
-c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
+c:\>tf history /collection:https://fabrikam-3:8080/tfs/DefaultCollection
 $/SiteApp/Main/SolutionA/Project1/* /recursive  
 /noprompt 
 ```
 
-#### Multiple itemspec arguments
+#### Multiple item specification arguments
 
-For some commands, you can specify multiple *itemspec* arguments. For example:
+For some commands, you can specify multiple item specification arguments, for example:
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
 ```
 
-Checks out program.cs and program2.c.
+This command checks out *program.cs* and *program2.c*.
 
-### Use a versionspec argument to specify affected versions of items
+### Use a version specification argument to specify affected versions of items
 
-You use a *versionspec* (version specification) to specify the version of items affected by a command. To provide a *versionspec* you can:
+You use a version specification to specify the version of items affected by a command. To provide a version specification, you can:
 
--   Use the **/version** option. For example: **/version:C44**.
+- Use the `/version` option, for example, `/version:C44`.
 
--   Append the versionspec to an itemspec with a semicolon. For example: **program1.cs;C44**.
+- Append the version specification to an item specification with a semicolon, for example, `program1.cs;C44`.
 
-When you use the [History command](history-command.md) or the [Difference Command](difference-command.md), you can specify a range of versions by separating the versions with a tilde (~). For example:
+When you use the [History command](history-command.md) or the [Difference command](difference-command.md), you can specify a range of versions by separating the versions with a tilde, for example:
 
 ```
-c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2022~D4/24/2022
 ```
 
-Use the following syntax to specify a *versionspec*.
+Use the following syntax to specify a version specification:
 
-:::row:::
-   :::column span="1":::
-   **Type**
-   :::column-end:::
-   :::column span="1":::
-   **Syntax**
-   :::column-end:::
-   :::column span="3":::
-   **Description**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-   Changeset
-
-   :::column-end:::
-   :::column span="1":::
-   [**C**]*n*
-
-   :::column-end:::
-   :::column span="3":::
-   Specifies items based on a changeset number. If an item that is in scope was not modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset.
-
-   > [!Tip]  
-   > You can omit the *C* if you specify only a number.
-
-   **Examples**
-
-   ```
-   c:\code\SiteApp\Main&gt;tf get readme.txt /v:C8
-   ```
-
-   -- or --
-
-   <a id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073"></a>
-   ```
-   c:\code\SiteApp\Main&gt;tf get readme.txt /v:8
-   ```
-
-   -- or --
-
-
-   <a id="CodeSnippetContainerCode_69203803-1efd-4882-8d47-b4c20c45426a"></a>
-   ```
-   c:\code\SiteApp\Main&gt;tf get readme.txt;8
-   ```
-
-   If readme.txt was modified in changeset 8, gets that version of the file. Otherwise, gets the most recent version of readme.txt before version 8.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Label
-
-   :::column-end:::
-   :::column span="1":::
-   **L***label*
-
-   :::column-end:::
-   :::column span="3":::
-   Specifies items to which *label* was applied.
-
-   **Examples**
-
-
-   <a id="CodeSnippetContainerCode_08cf74c6-4a77-4c72-b034-1b2f0360d827"></a>
-   ```
-   c:\code\SiteApp\Main&gt;tf get readme.txt;LJulyHotFix
-   ```
-
-   Gets the version of readme.txt that was labeled **JulyHotFix**.
-
-
-   <a id="CodeSnippetContainerCode_3517ab06-4897-4514-bf12-fb70aa3848f4"></a>
-   ```
-   c:\code\SiteApp\Main&gt;tf get /version:LLastKnownGood
-   ```
-   
-   Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as **LastKnownGood** was created, for example, perhaps as part of an <a href="../../pipelines/build/triggers.md">automated build process<a/>.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Date and time
-
-   :::column-end:::
-   :::column span="1":::
-   **D***yyyy-mm-ddTxx:xx*
-
-   -or-
-
-   **D***mm/dd/yyyy*
-
-   -or-
-
-   Any .NET Framework-supported format.
-
-   -or-
-
-   Any of the date formats supported on the local machine.
-
-   :::column-end:::
-   :::column span="3":::
-   Specifies a changeset created on a specified date and time.
-
-   **Examples**
-
-
-   <a id="CodeSnippetContainerCode_3e2c85b3-6c9b-4323-92f7-f43b953c7f15"></a>
-   ```
-   c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22
-   ```
-
-   Updates the workspace to match the codebase as it existed on 3/22/2004 at 00:00 (midnight).
-
-
-   <a id="CodeSnippetContainerCode_1f0ebab8-23be-4987-bf44-3424224903c9"></a>
-   ```
-   c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22T09:00
-   ```
-
-   Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).
-
-   For more information about .NET Framework-supported date and time formats see [DateTime](/dotnet/api/system.datetime) and [Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings).
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Workspace (current)
-
-   :::column-end:::
-   :::column span="1":::
-   **W**
-
-   :::column-end:::
-   :::column span="3":::
-   Specifies the version in your workspace.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Workspace (specified)
-
-   :::column-end:::
-   :::column span="1":::
-   **W***workspacename*; *workspaceowner*
-
-   :::column-end:::
-   :::column span="3":::
-   Specifies the version in a specified workspace.
-
-   For example: **WResolveRIConflicts;PeterW**
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Tip
-
-   :::column-end:::
-   :::column span="1":::
-   **T**
-
-   :::column-end:::
-   :::column span="3":::
-   Specifies the most recent version.
-
-   :::column-end:::
-:::row-end:::
-
+| Type | Syntax | Description | Examples | Result |
+| --- | --- | --- | --- | --- |
+| Changeset | `[C]<version-number>` | Specifies items based on a changeset number. If an item that's in scope wasn't modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset. You can omit `C` if you specify only a number.| `tf get readme.txt /v:C8`<br><br>`tf get readme.txt /v:8`<br><br>`tf get readme.txt;8` | If *readme.txt* was modified in changeset 8, the example code gets that version of the file. Otherwise, it gets the most recent version of *readme.txt* before version 8. |
+| Label | `L<label>` | Specifies items that a label is applied to. | `tf get readme.txt;LJulyHotFix`<br><br>`tf get /version:LLastKnownGood` | The first example gets the version of *readme.txt* that was labeled **JulyHotFix**. The second retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled **LastKnownGood** was created. You might use the code in the second example as part of an [automated build process](../../pipelines/build/triggers.md). |
+| Date and time | `D<yyyy-mm-ddTxx:xx>`<br><br>or<br><br>`D<mm/dd/yyyy>`<br><br>or<br><br>Any .NET Framework-supported format.<br><br>or<br><br>Any of the date formats supported on the local machine. | Specifies a changeset that was created on a specified date at a specific time. | `tf get /version:D2022-03-22`<br><br>`tf get /version:D2022-03-22T09:00` | The first example updates the workspace to match the codebase as it existed on March 22, 2022 at midnight. The second updates the workspace to match the codebase as it existed on March 22, 2022 at 9:00 AM. For more information about .NET Framework-supported date and time formats, see [DateTime](/dotnet/api/system.datetime) and [Standard date and time format strings](/dotnet/standard/base-types/standard-date-and-time-format-strings). |
+| Current workspace | `W` | Specifies the version in your workspace. | - | - |
+| Specified workspace | `W<workspace-name>; <workspace-owner>` | Specifies the version in a specified workspace. | `tf get /version:WResolveRIConflicts;PatW` | The example specifies the version in the `ResolveRIConflicts` workspace that `PatW` owns. |
+| Tip | `T` | Specifies the most recent version. | - | - |
 
 ## Use options to modify how a command functions
 
 You can use some common options to modify how a command functions.
 
-### Use the /noprompt option to suppress requests for data input and redirect output data to the command prompt window
+### Use the `/noprompt` option to suppress data input requests and redirect output data
 
-Use the **/noprompt** option to suppress requests for data input and redirect output data to the command prompt window. This option can be useful when you need to use version control commands in a script because the command proceeds without intervention by a user, and the data is available for the script to perform operations such as parsing or capturing.
+Use the `/noprompt` option to suppress requests for data input and redirect output data to the command prompt window. This option can be useful when you need to use version control commands in a script where:
+
+- The command proceeds without intervention by a user.
+- The data is available for the script to perform operations on, such as parsing or capturing.
 
 When you use this option, the system:
 
--   Suppresses all requests for input:
+- Suppresses all requests for input:
+  - Questions aren't asked in the command prompt window. For example, when you use the [Undo command](undo-command.md) with this option, the system doesn't prompt you to confirm whether you want to undo the changes.
+  - Windows and dialog boxes aren't displayed. For example, you can use this option with the [Checkin command](checkin-command.md). The system doesn't display the **Check In** dialog box for you to confirm items and associated work items. Instead, the system checks in the items without confirmation.
 
-    -   Questions are not asked in the command prompt window. For example, when you use the [Undo command](undo-command.md) with this option, the system does not prompt you to confirm if you want to proceed with undoing the changes.
+- Redirects output data to the command prompt. For example, you can use this option with the [History command](history-command.md). The data is displayed in the command prompt window instead of the [History window](get-history-item.md).
 
-    -   Windows and dialog boxes are not presented. For example, you use this option with the [Checkin command](checkin-command.md). Instead of displaying the **Check In** dialog box for you to confirm your options (which items you want to check in or which work items to associate), the system proceeds with the check in without confirmation.
+### Use the `/login` option to specify credentials
 
--   Redirects output data to the command prompt. For example, you use this option with the [History command](history-command.md). The data is displayed in the command prompt window instead of the [History window](get-history-item.md).
+Use the `/login` option to specify the Azure DevOps server user account to run a command in. This option can be useful when you work at the machine of another team member.
 
-### Use /login option to specify credentials when running a command
-
-Use the **/login** option to specify the Team Foundation Server user account to run a command. This option can be useful when you are working at the machine of another team member.
-
-For example, Julia is working with Peter at his dev machine. She uses the [Lock command](lock-command.md) to unlock a file that she locked earlier:
+For example, say you're working at your team member's development machine. You use the [Lock command](lock-command.md) to unlock a file that you locked earlier:
 
 ```
-c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI,JuliaPassword
+c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:<username>,<password>
 ```
 
-If she wants to avoid having her password appear in the command prompt, she can enter the command without the password:
+If you want to avoid having your password appear in the command prompt, you can enter the command without the password:
 
 ```
-c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI
+c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:<username>
 ```
 
-After she enters this command, the system then prompts her to type her password in a dialog box that masks her input.
+After you enter this command, the system prompts you to enter your password in a dialog box that masks your input.
 
-### Use the /lock option to apply or remove a lock
+### Use the `/lock` option to apply or remove a lock
 
 > [!Important]  
-> As a best practice, use the **/lock** option with discretion and notify your teammates why you are locking an item, and when you plan to remove the lock.
+> As a best practice, use the `/lock` option with discretion. Inform your teammates why you're locking an item and when you plan to remove the lock.
 
-Use the **/lock** option to apply or remove a lock at the same time you run another command such as [Add](add-command.md) or [Edit](checkout-or-edit-command.md).
+Use the `/lock` option to apply or remove a lock at the same time that you run another command such as [Add](add-command.md) or [Edit](checkout-or-edit-command.md).
 
 ```
 /lock:(none|checkin|checkout)
 ```
 
--   **None**: No lock is placed on an item. If a lock is already in place, it is removed.
+The `/lock` command uses the following options:
 
--   **Checkin** or **Checkout**: Applies a lock. See [Understand lock types](understand-lock-types.md).
+- `None`: No lock is placed on an item. If a lock is already in place, it gets removed.
+
+- `Checkin` or `Checkout`: A lock is applied. For more information, see [Understand lock types](understand-lock-types.md).
 
 > [!NOTE]
 > In a few cases, the lock operation can fail:
 >
-> - If any other users have locked any of the specified items, the lock operation will fail.
-> - The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
+> - If any other users have locked any of the specified items, the lock operation fails.
+> - If there's already a pending change to the specified item, the system ignores this switch. In this case, you must use the [Lock command](lock-command.md) to change a lock on an item.
 
 ### Use option shortcuts
 
@@ -517,146 +328,146 @@ You can abbreviate the following options.
 
 :::row:::
    :::column span="1":::
-   **/comment**
+   `/comment`
    :::column-end:::
    :::column span="1":::
-   **-C**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/computer**
-   :::column-end:::
-   :::column span="1":::
-   **-M**
+   `-C`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/delete**
+   `/computer`
    :::column-end:::
    :::column span="1":::
-   **-D**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/force**
-   :::column-end:::
-   :::column span="1":::
-   **-P**
+   `-M`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/format**
+   `/delete`
    :::column-end:::
    :::column span="1":::
-   **-F**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/help**
-   :::column-end:::
-   :::column span="1":::
-   **-?, -H**
+   `-D`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/lock**
+   `/force`
    :::column-end:::
    :::column span="1":::
-   **-K**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/login**
-   :::column-end:::
-   :::column span="1":::
-   **-Y**
+   `-P`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/newname**
+   `/format`
    :::column-end:::
    :::column span="1":::
-   **-N**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/noprompt**
-   :::column-end:::
-   :::column span="1":::
-   **-I**
+   `-F`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/owner**
+   `/help`
    :::column-end:::
    :::column span="1":::
-   **-O**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/recursive**
-   :::column-end:::
-   :::column span="1":::
-   **-R**
+   `-?, -H`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/server**
+   `/lock`
    :::column-end:::
    :::column span="1":::
-   **-S**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/slotmode**
-   :::column-end:::
-   :::column span="1":::
-   **-X**
+   `-K`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/template**
+   `/login`
    :::column-end:::
    :::column span="1":::
-   **-T**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **/user**
-   :::column-end:::
-   :::column span="1":::
-   **-U**
+   `-Y`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/version**
+   `/newname`
    :::column-end:::
    :::column span="1":::
-   **-V**
+   `-N`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/workspace**
+   `/noprompt`
    :::column-end:::
    :::column span="1":::
-   **-W**
+   `-I`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/owner`
+   :::column-end:::
+   :::column span="1":::
+   `-O`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/recursive`
+   :::column-end:::
+   :::column span="1":::
+   `-R`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/server`
+   :::column-end:::
+   :::column span="1":::
+   `-S`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/slotmode`
+   :::column-end:::
+   :::column span="1":::
+   `-X`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/template`
+   :::column-end:::
+   :::column span="1":::
+   `-T`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/user`
+   :::column-end:::
+   :::column span="1":::
+   `-U`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/version`
+   :::column-end:::
+   :::column span="1":::
+   `-V`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/workspace`
+   :::column-end:::
+   :::column span="1":::
+   `-W`
    :::column-end:::
 :::row-end:::
 
@@ -673,7 +484,6 @@ Version control commands return the following exit codes:
    **Definition**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **0**
@@ -687,7 +497,7 @@ Version control commands return the following exit codes:
    **1**
    :::column-end:::
    :::column span="3":::
-   Partial success; this means at least something, or possibly everything, failed to succeed.
+   Partial success. At least something, or possibly everything, failed to succeed.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -708,10 +518,10 @@ Version control commands return the following exit codes:
 :::row-end:::
 
 
-For example:
+For example, say you run the following command:
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
 ```
 
-If one of the files you are trying to check out does not exist on the server, the command returns **1** to indicate partial success.
+If one of the files you're trying to check out doesn't exist on the server, the command returns **1** to indicate partial success.

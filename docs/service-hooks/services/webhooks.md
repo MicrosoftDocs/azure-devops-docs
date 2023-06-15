@@ -1,16 +1,16 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Webhooks with Azure DevOps
 description: Use webhooks with your Azure DevOps organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Webhooks
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Webhooks provide a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 
@@ -48,7 +48,7 @@ Only organization Owners or Project Collection Administrators can manage webhook
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Go to your project Service Hooks page: 
 

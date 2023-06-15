@@ -2,7 +2,6 @@
 title: Sprint 171
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 06/18/2020
 description: With this sprint 171, we are bringing a long-awaited feature that customers have asked for as we are adding support for Linux/ARM64 in Azure Pipelines.
 ---
@@ -45,7 +44,7 @@ With this update, we are bringing a long-awaited feature that customers has aske
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"] 
-> [go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## How to provide feedback
 

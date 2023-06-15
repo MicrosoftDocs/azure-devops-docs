@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Create a service hook for Grafana
 description: Annotate Grafana dashboards upon completion of deployments in Azure Pipelines
@@ -12,7 +12,7 @@ ms.date: 07/27/2020
 
 # Create a service hook for Azure DevOps with Grafana
 
-[!INCLUDE [version](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Grafana is an open source, feature-rich metrics dashboard and graph editor. It supports Graphite, Elasticsearch, OpenTSDB, Prometheus, and InfluxDB analytics services. Use the Grafana service hook to annotate Grafana dashboards upon completion of Azure Pipelines deployments.
 

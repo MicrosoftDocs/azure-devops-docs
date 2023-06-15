@@ -3,7 +3,7 @@ title: Use GitHub Actions to push to Azure Artifacts
 description: Push a NuGet package to Azure Artifacts with a GitHub Actions workflow
 ms.author: jukullam
 ms.custom: github-actions-azure
-ms.date: 09/29/2021
+ms.date: 06/06/2023
 monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
@@ -11,28 +11,19 @@ ms.topic: quickstart
 
 # Quickstart: Use GitHub Actions to push to Azure Artifacts
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure Artifacts together. GitHub Actions help you automate your software development workflows from within GitHub. You can use GitHub Actions to deploy to an Azure Artifacts feed. 
 ## Prerequisites
 
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
 - An Azure Artifact feed that you'll push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
 - An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+    - Your PAT needs to have read, write, and manage **Packaging** permissions.
 
 ## Authenticate with Azure Pipelines
 
-You'll use a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) to connect your GitHub account to Azure DevOps.  Within your GitHub workflow, you'll reference the secret so that your GitHub action can authenticate with your Azure DevOps project and your Azure Artifacts feed. 
-
-1. Open your GitHub repository and go to **Settings**.
-
-    :::image type="content" source="../../pipelines/ecosystems/media/github-repo-settings.png" alt-text="Select Settings in GitHub.":::
-
-1. Select **Secrets** and then **New repository secret**.
-
-    :::image type="content" source="../../pipelines/ecosystems/media/select-secrets.png" alt-text="Choose to add a secret":::
-
-1. Paste in your PAT and give it the name `AZURE_ARTIFACTS_PAT`. 
-
-1. Save by selecting **Add secret**.
+[!INCLUDE [include](~/../docs/reusable-content/github-actions/authenticate-with-pat.md)]
 
 ## Create a GitHub workflow that builds an artifact
 
@@ -63,7 +54,7 @@ You'll use a [personal access token](../../organizations/accounts/use-personal-a
     env:
       AZURE_ARTIFACTS_FEED_URL: https://pkgs.dev.azure.com/myorg/nuget-artifact/_packaging/Fabrikam_Feed/nuget/v3/index.json    
       BUILD_CONFIGURATION: 'Release'    # set this to the appropriate build configuration
-      DOTNET_VERSION: '5.x' 
+      DOTNET_VERSION: '6.x' 
      
     jobs:
       build:
@@ -99,7 +90,7 @@ You'll use a [personal access token](../../organizations/accounts/use-personal-a
               dotnet-version: ${{ env.DOTNET_VERSION }}
               source-url: ${{ env.AZURE_ARTIFACTS_FEED_URL }}
             env:
-              NUGET_AUTH_TOKEN: ${{ secrets.AZURE_ARTIFACTS_PAT }} 
+              NUGET_AUTH_TOKEN: ${{ secrets.AZURE_DEVOPS_TOKEN }} 
           
           # Run dotnet build and package
           - name: dotnet build and publish

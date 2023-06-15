@@ -2,22 +2,22 @@
 title: Manage branching strategies in TFVC for DevOps
 description: Learn to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
-ms.topic: article
-ms.technology: devops-code-tfvc
-ms.date: 04/25/2018
-author: wpschaub
-monikerRange: '>= tfs-2015'
+ms.topic: conceptual
+ms.service: azure-devops-repos
+ms.date: 07/13/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
-# Choose a branching strategies with a DevOps mindset  
+# Choose a branching strategy with a DevOps mindset  
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Azure DevOps Services or Azure DevOps Server? You probably have a few questions, such as:
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-- How do I decide on the right branching strategy? 
-- Is there an effective strategy for DevOps?
-- How do I support applications with single or multiple versions?
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Azure DevOps? You probably have a few questions, such as:
 
-> [!VIDEO https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean/player]
+- *How do I decide on the right branching strategy?* 
+- *Is there an effective strategy for DevOps?*
+- *How do I support applications with single or multiple versions?*
 
 TFVC is a centralized version control system to maintain code and make teams more effective. It provides collaboration and consistent code sharing, publishing, and review features. 
 
@@ -110,26 +110,18 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 
 **Lessons from the field - things to avoid**
 
-- Avoid going branch crazy!
+- Avoid having too many branches!
 	- **merging** changes comes with complexity and a cost
 	- there's no need to have a separate branch per environment
 - Avoid using **cherry-picking** to get your code to production
 - Do not attempt to solve **people** or **process** problems with tools
 
-## Reference information
+## Related articles 
+
 - [Continuous Integration](/devops/develop/what-is-continuous-integration)
-- [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
-- [Team Foundation Version Control (TFVC)](./what-is-tfvc.md)
-- [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)
-- [What is DevOps - Sticker](https://www.stickermule.com/marketplace/9107-devops-donovan-brown)
+- [Team Foundation Version Control (TFVC)](what-is-tfvc.md)
+- [What is DevOps?](/devops/what-is-devops)
 
+<!--- 
 > Authors: Sergio A Romero | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
- 
-*(c) 2017 Microsoft Corporation. All rights reserved. This document is
-provided "as-is." Information and views expressed in this document,
-including URL and other Internet Web site references, may change without
-notice. You bear the risk of using it.*
-
-*This document does not provide you with any legal rights to any
-intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.*
+-->

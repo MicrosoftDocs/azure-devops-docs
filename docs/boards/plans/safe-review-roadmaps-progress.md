@@ -1,26 +1,25 @@
 ---
-title: View SAFe® progress, roadmaps, and metrics
+title: View SAFe® progress, roadmaps, and metrics in Azure Boards
 titleSuffix: Azure Boards
-description: Review SAFe® metrics, progress, roadmaps, and KPIs supported by Azure DevOps 
-ms.technology: devops-agile
-ms.prod: devops
-ms.author: kaelli
-author: KathrynEE
+description: Review SAFe® metrics, progress, roadmaps, and KPIs supported by Azure DevOps and Azure Boards. 
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 05/28/2020
+ms.date: 10/20/2021
 ---
 
 
 # View SAFe® progress, roadmaps, and metrics
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With team's configured and working backlogs and boards, you're ready to start viewing and monitoring progress. 
 
-Azure Boards provides a number of in-context charts and dashboard widgets that allow you to monitor and report on a variety of SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
+Azure Boards provides many in-context charts and dashboard widgets that allow you to monitor and report on various SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
 
-- Rollup columns on backlogs 
+- Roll up columns on backlogs 
 - In-context reports 
 - Managed query charts such as pie, bar, stacked bar, trend, and pivot
 - Dashboard widgets 
@@ -28,7 +27,7 @@ Azure Boards provides a number of in-context charts and dashboard widgets that a
 - Analytic Views to support Power BI reports 
 - OData queries to use with Power BI reports 
 
-For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md). An additional backlog tool is Forecast which teams can use in their iteration planning. 
+For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md). Another backlog tool is Forecast which teams can use in their iteration planning. 
 
 In this tutorial, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe® metrics 
 
@@ -60,14 +59,14 @@ Each team has access to their velocity through the in-context velocity report. T
 
 This average can be used to forecast work by plugging it into the forecast tool. 
 
-## Forecast tool 
+## Use the Forecast tool 
 
 By assigning Story Points to each User Story, a team can determine how much work they can complete using the Forecast tool. For details on its usage, see [Forecast your product backlog](../sprints/forecast.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Forecast tool](../sprints/media/forecast-s125.png)
 
-## View Cumulative Flow Diagram (CFD) 
+## View the Cumulative Flow Diagram (CFD) 
 
 Each Azure Boards backlog and board provide configurable CFD views. So each team at every level of SAFe® implementation can monitor progress using these built-in charts. 
 
@@ -81,7 +80,7 @@ Teams can use their CFD to identify bottlenecks and monitor the batch size of wo
 In-context CFD charts are quickly accessible from each backlog and board view. Also, CFD charts can be added to team and project dashboards. To learn more, see [View/configure a Cumulative Flow Diagram](../../report/dashboards/cumulative-flow.md).  
 
 
-## Lead time and cycle time charts
+## View Lead Time and Cycle Time charts
 
 Other metrics that teams use are derived from the Lead time and cycle time charts. These charts can be added to a team dashboard and monitored to learn the following information: 
 
@@ -89,7 +88,7 @@ Other metrics that teams use are derived from the Lead time and cycle time chart
 - Cycle time: Days on average to complete deliverables from date work started
 - Number of outliers 
  
-Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. To learn more, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
+Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information and provide several interactive elements. To learn more, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
 
 #### Example Lead Time widget
 
@@ -119,7 +118,7 @@ You can expand each feature team to see details. Story deliverables are assigned
 > [!div class="mx-imgBorder"]  
 > ![Plans, Fiber Suite App team deliverables](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
 
-### Review portfolio features deliverable 
+### Review the portfolio features deliverable 
 
 Portfolio teams can review the Features under development by their program teams. For example, Features under development by the Fiber Suite team are shown in the following delivery plan view. The Features under development show up under the Program Increment timeboxes.  
  
@@ -156,7 +155,6 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 
 ## Related articles
 
-- [Review team Delivery Plans](review-team-plans.md)
-- [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md)
+- [Review team Delivery Plans](review-team-plans.md) 
 
 

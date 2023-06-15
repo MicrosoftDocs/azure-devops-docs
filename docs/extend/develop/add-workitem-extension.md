@@ -2,9 +2,9 @@
 title: Extend the work item form | Extensions for Azure DevOps
 description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/22/2016
@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Extend the work item form
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 
@@ -60,60 +60,62 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 ###  JavaScript sample
 
-This sample shows how to register an object that's called when events occur on the work item form that may impact your contributed group.
+This example shows how to register an object that's called when events occur on the work item form that may impact your contributed group. Please see [WorkItemFormGroup Sample](https://github.com/microsoft/azure-devops-extension-sample/blob/master/src/Samples/WorkItemFormGroup/WorkItemFormGroup.tsx) for more examples.
 
 ```js   
-    VSS.require(["TFS/WorkItemTracking/Services"], function (_WorkItemServices) {
-        // Get the WorkItemFormService.  This service allows you to get/set fields/links on the 'active' work item (the work item
-        // that currently is displayed in the UI).
-        function getWorkItemFormService()
-        {
-            return _WorkItemServices.WorkItemFormService.getService();
-        }
-    
-        // Register a listener for the work item group contribution.
-        VSS.register(VSS.getContribution().id, function () {
-            return {
-                // Called when the active work item is modified
-                onFieldChanged: function(args) {
-                    $(".events").append($("<div/>").text("onFieldChanged - " + JSON.stringify(args)));
-                },
-                
-                // Called when a new work item is being loaded in the UI
-                onLoaded: function (args) {
+import { IWorkItemFormService, WorkItemTrackingServiceIds } from "azure-devops-extension-api/WorkItemTracking";
+import * as SDK from "azure-devops-extension-sdk";
+
+// Get the WorkItemFormService.  This service allows you to get/set fields/links on the 'active' work item (the work item
+// that currently is displayed in the UI).
+async function getWorkItemFormService()
+{
+    const workItemFormService = await SDK.getService<IWorkItemFormService>(WorkItemTrackingServiceIds.WorkItemFormService);
+    return workItemFormService;
+}
+
+// Register a listener for the work item group contribution after initializing the SDK.
+SDK.register(SDK.getContributionId(), function () {
+    return {
+        // Called when the active work item is modified
+        onFieldChanged: function(args) {
+            $(".events").append($("<div/>").text("onFieldChanged - " + JSON.stringify(args)));
+        },
         
-                    getWorkItemFormService().then(function(service) {            
-                        // Get the current values for a few of the common fields
-                        service.getFieldValues(["System.Id", "System.Title", "System.State", "System.CreatedDate"]).then(
-                            function (value) {
-                                $(".events").append($("<div/>").text("onLoaded - " + JSON.stringify(value)));
-                            });
+        // Called when a new work item is being loaded in the UI
+        onLoaded: function (args) {
+
+            getWorkItemFormService().then(function(service) {            
+                // Get the current values for a few of the common fields
+                service.getFieldValues(["System.Id", "System.Title", "System.State", "System.CreatedDate"]).then(
+                    function (value) {
+                        $(".events").append($("<div/>").text("onLoaded - " + JSON.stringify(value)));
                     });
-                },
-                
-                // Called when the active work item is being unloaded in the UI
-                onUnloaded: function (args) {
-                    $(".events").empty();
-                    $(".events").append($("<div/>").text("onUnloaded - " + JSON.stringify(args)));
-                },
-                
-                // Called after the work item has been saved
-                onSaved: function (args) {
-                    $(".events").append($("<div/>").text("onSaved - " + JSON.stringify(args)));
-                },
-                
-                // Called when the work item is reset to its unmodified state (undo)
-                onReset: function (args) {
-                    $(".events").append($("<div/>").text("onReset - " + JSON.stringify(args)));
-                },
-                
-                // Called when the work item has been refreshed from the server
-                onRefreshed: function (args) {
-                    $(".events").append($("<div/>").text("onRefreshed - " + JSON.stringify(args)));
-                }
-            }
-        });            
-    });
+            });
+        },
+        
+        // Called when the active work item is being unloaded in the UI
+        onUnloaded: function (args) {
+            $(".events").empty();
+            $(".events").append($("<div/>").text("onUnloaded - " + JSON.stringify(args)));
+        },
+        
+        // Called after the work item has been saved
+        onSaved: function (args) {
+            $(".events").append($("<div/>").text("onSaved - " + JSON.stringify(args)));
+        },
+        
+        // Called when the work item is reset to its unmodified state (undo)
+        onReset: function (args) {
+            $(".events").append($("<div/>").text("onReset - " + JSON.stringify(args)));
+        },
+        
+        // Called when the work item has been refreshed from the server
+        onRefreshed: function (args) {
+            $(".events").append($("<div/>").text("onRefreshed - " + JSON.stringify(args)));
+        }
+    }
+});
 ```     
 
 [!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
@@ -246,16 +248,16 @@ To add an observer to the work item, which listens to the work item events, add 
 </head>
 
 <body>
-    <script src="sdk/scripts/VSS.SDK.js"></script>
+    <script src="sdk/scripts/SDK.js"></script>
 
     <script>
-        VSS.init({
+        SDK.init({
             usePlatformScripts: true
         });
         
-        VSS.ready(function () {
+        SDK.ready(function () {
              // Register a listener for the work item page contribution.
-            VSS.register(VSS.getContribution().id, function () {
+            SDK.register(SDK.getContributionId(), function () {
                 return {
                     // Called when the active work item is modified
                     onFieldChanged: function(args) {

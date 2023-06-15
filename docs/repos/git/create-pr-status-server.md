@@ -3,16 +3,18 @@ title: Create a pull request status server with Node.js
 titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/31/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
+ms.custom: devx-track-js
 ---
 
 
 # Create a pull request status server with Node.js
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
@@ -238,7 +240,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 9. Build the status object to post on the PR. 
 
-   `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+   `State` is an enum of type [GitStatusState](/rest/api/azure/devops/git/pull-request-statuses/get#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
    The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 

@@ -1,22 +1,23 @@
 ---
 title: Build your GCC C/C++ app
 ms.custom: seodec18
-description: Learn how you can use continuous integration in Azure Pipelines or Team Foundation Server (TFS) to automatically build your GCC C/C++ app.
+description: Learn how you can use continuous integration in Azure Pipelines to automatically build your GCC C/C++ app.
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
-ms.date: 03/17/2021
+ms.date: 04/04/2022
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build your GCC C/C++ app
 
-**Azure Pipelines | TFS 2018 | TFS 2017.2**
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
+Azure Pipelines provides a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
 
 ## Prerequisites
 
@@ -32,9 +33,9 @@ Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable c
 https://github.com/adventworks/cpp-gpp-sample
 ```
 
-# [Azure Repos or TFS repo](#tab/vsts)
+# [Azure Repos](#tab/vsts)
 
-[!INCLUDE [include](../includes/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../includes/get-sample-code-repos-update-2.md)]
 
 # [GitHub repo](#tab/github)
 
@@ -102,21 +103,6 @@ https://github.com/adventworks/cpp-gpp-sample
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-  ### TFS 2017.2
-
-  1. Search for the **Command Line** task and click **Add** to add it to your build.
-
-  1. Click the **Command Line** task and set its field values as follows:
-
-      Field        | Value
-      ------------ | -----
-      Display name | `Build C++ application`
-      Tool         | `make`
-
-::: moniker-end
-
   ### Finish
 
 1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
@@ -134,7 +120,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 ## Publish your build output
 
-Add the [Copy Files](../../tasks/utility/copy-files.md) and [Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md) tasks to your build to save its compiled output as a build artifact.
+Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks to your build to save its compiled output as a build artifact.
 
 ## Next steps
 

@@ -3,28 +3,19 @@ title: Project Summary, vision, & view project activity
 titleSuffix: Azure DevOps 
 description: View or update your project Summary to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
-ms.technology: devops-collab
+ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 08/24/2021
 ---
 
 # Share your project vision, view project activity
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="> tfs-2017"
-Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks. 
-::: moniker-end
-::: moniker range="tfs-2017"
-Each project provides a **Summary** or home page to share information and showcase the latest project activity. 
-> [!NOTE]
-> The project **Home** page is available for TFS 2017.1 and later versions. It replaces the Welcome page used in TFS 2015 and TFS 2017.
-
-Use this page to perform one or more of the following tasks. 
-::: moniker-end
+Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks.
 
 :::row:::
    :::column span="1":::
@@ -46,10 +37,6 @@ Use this page to perform one or more of the following tasks.
       - Choose a README file or wiki for project information
       - Invite people to contribute to your project  
       ::: moniker-end
-      ::: moniker range="tfs-2017" 
-      - Choose a README file for project information
-      - Invite people to contribute to your project  
-      ::: moniker-end
    :::column-end:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019" 
@@ -59,54 +46,36 @@ Use this page to perform one or more of the following tasks.
      - Email or initiate a chat with a team member
      - Initiate a search across your project 
       ::: moniker-end
-      ::: moniker range="<= tfs-2018" 
      - View project information
      - Email or initiate a chat with a team member
      - View project activity  
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   
-> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
+> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../projects/about-projects.md)
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
 ::: moniker-end
-::: moniker range="< azure-devops-2019" 
+::: moniker range=" tfs-2018" 
 :::image type="content" source="media/summary/project-summary-page-intro-tfs-2018.png" alt-text="Screenshot of summary page, TFS-2018.":::
 ::: moniker-end
 
-::: moniker range=">= tfs-2018" 
 > [!NOTE]   
 > If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#update).
-::: moniker-end
-  
-
 
 ## Prerequisites
 
-::: moniker range=">= tfs-2018" 
-- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+- You must be a member of the [**Project Administrators** group](../security/change-project-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
   - Edit information on the project page
   - Change the repository that you use to share project information
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
+- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#validusers).
 - To add or edit project **Tags**, you must have the project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API. The project properties REST API is used to drive the project tags experience in the product.  
-::: moniker-end
-
-
-::: moniker range="< tfs-2018" 
-- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
-  - Edit information on the project page
-  - Change the repository that you use to share project information
-  - Manage project membership
-- To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers). 
-::: moniker-end
 
 > [!TIP]    
 > If you don't have permissions to edit a page or use a feature, the corresponding icons and links aren't visible. 
@@ -132,7 +101,7 @@ Select one of the following tasks to get started:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range=" tfs-2018"
 
 ## Open project Home page
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
@@ -142,9 +111,6 @@ From your web browser, open the team project drop down menu and select the home 
 To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
 
 ::: moniker-end
-
- 
-::: moniker range=">= tfs-2018"
 
 <a id="update" />
 
@@ -193,8 +159,6 @@ The **Summary** page displays either the **README** file defined in a project re
 	- Links to instructions for collaborating on code, tracking work, building pipelines, deploying releases 
 	- Links to templates to file a bug, issue, or request 
 	- Links to distribution lists to email a question or post a question on Slack or Teams channel. 
-::: moniker-end
- 
 
 ## Invite people to contribute to your project 
 
@@ -202,10 +166,9 @@ The **Summary** page displays either the **README** file defined in a project re
 You can send an email to invite users to contribute to your project by choosing **Invite**. To learn more, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
 
 :::image type="content" source="../security/media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
-
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To add users to the project, choose the **Add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
@@ -227,7 +190,7 @@ From the **Project stats** or **Activity** section, you can view updates made to
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
  ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::image type="content" source="media/summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
 ::: moniker-end
 
@@ -314,24 +277,6 @@ You can share your project and objective, as well as ways for team members to co
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"  
-
-1. You can start editing directly from the Welcome page.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Project page, Edit Welcome Markdown page](media/share-project/markdown-welcome-page-edit.png)  
-
-   > [!NOTE]
-   > If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
-
-2. To add another page, enter a link to a new Markdown file that doesn't yet exist, for example:
-
-   `[page-1](./page-1.md)`
-
-3. After you save the file, select the link. Respond to the prompt to edit the file and commit it to your repository.  
-
-::: moniker-end
-
 <a id="initialize-tfvc"> </a>
 
 ## Initialize a README file for a TFVC repo
@@ -375,7 +320,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Open the Project home page.
 
@@ -402,10 +347,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 - [Web portal navigation](../../project/navigation/index.md)
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
  
- 
 **REST APIs**
 
 - [Projects - Get Project Properties](/rest/api/azure/devops/core/projects/get-project-properties)
 - [Projects - Set Project Properties](/rest/api/azure/devops/core/projects/set-project-properties)
-
- 

@@ -1,110 +1,97 @@
-﻿---
-title: Check in to a folder controlled by gated build process
+---
+title: Check in to a folder controlled by gated check-in
 titleSuffix: Azure Repos
-description: Check in to a folder that is controlled by a gated check-in build process
+description: Check in to a folder that's controlled by a gated check-in build process.
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 10/22/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Check in to a folder that is controlled by a gated check-in build process
+# Check in to a folder controlled by a gated check-in
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 
-![Build process](media/check-folder-controlled-by-gated-check-build-process/IC572351.png)
-**Required permissions**
+When you check in files to a version control folder that's controlled by a [gated check-in build process](../../pipelines/repos/tfvc.md#gated), you must take more steps to complete the check-in.
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+![Screenshot of the Gated Check-in dialog box.](media/check-folder-controlled-by-gated-check-build-process/gated-check-in.png)
+
+## Prerequisites
+
+- You must be a **Contributor** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+- You can't have [Limit job authorization scope to current project for non-release pipelines](../../pipelines/process/access-tokens.md#job-authorization-scope) set. If you receive an error such as **The shelveset _Build_95;Build\\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in**, check this setting and make sure it's not enabled.
 
 <a name="begin_checkin"></a>
 
-## Begin checking in changes to a folder that is controlled by a gated check-in build
+## Gated check-in build process
 
-If the **Gated Check-in** dialog box appears during your check-in, then your changes must first be built by Team Foundation Build before they can be checked in.
+If the **Gated Check-in** dialog box appears during your check-in, your changes must be built by Azure Pipelines before they can be checked in.
 
-### To check in changes to a folder that is controlled by a gated check-in build
+### Check in changes to a folder controlled by a gated check-in
 
-1.  In the **Gated Check-in** dialog box:
+1. In the **Gated Check-in** dialog box, if the **Build pipeline** menu appears and you want to run a build, choose the build pipeline you want to use.
 
-    -   If a build pipeline is displayed, proceed to the next step.
+1. If a build pipeline name already appears in **Gated Check-in**, or after you select a pipeline, select one of the following options:
 
-    -   If the **Build pipeline** menu is displayed instead of the name of a build pipeline, on the **Build pipeline** menu, choose the build pipeline that your build engineer suggests that you use.
+   - If you don't want to build your changes yet, select **Cancel**. You can then build the shelveset manually in a private build if you choose. For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
-2.  Decide how you want to proceed:
+   - If you don't want to build your changes, and you have **Override check-in validation by build** permission set to **Allow**, you can bypass the gated check-in build requirement and check in.
 
-    -   **Cancel the check-in operation and continue working**: If you do not want to try building your changes yet, choose **Cancel**, and then when the system asks you if you want to delete the shelveset, choose **Yes**.
+     Choose **Show options**, and then choose **Bypass validation build and check in my changes directly (requires permissions)**.
 
-    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
+   - If you want to proceed with the gated check-in and discard your local workspace changes, select **Show options**, and then clear the **Preserve my pending changes locally** checkbox. Select **Build Changes**, and when the build completes, follow the instructions under [Delete the latest changes in your workspace after a gated check-in](#delete-the-latest-changes-in-your-workspace-after-a-gated-check-in).
 
-    -   **Proceed with the check-in operation while keeping your changes in your workspace**: To proceed with the check-in operation and continue working with your changes, see [Proceed with the Gated Check-in after Keeping the Changes in Your Workspace](check-folder-controlled-by-gated-check-build-process.md#proceed_and_keep_changes).
+   - To build changes and proceed with check-in, select **Build Changes**.
 
-    -   **Proceed with the check-in operation while deleting changes in your workspace**: If you do not need to continue working with your changes, see [Proceed with the Gated Check-in after Deleting the Changes in Your Workspace](check-folder-controlled-by-gated-check-build-process.md#proceed_and_delete_changes).
+     If you want to keep your local workspace changes, after the build completes, follow the instructions under [Reconcile the latest changes in your workspace after a gated check-in](#reconcile-the-latest-changes-in-your-workspace-after-a-gated-check-in).
 
-    -   **Bypass the gated check-in requirement**: If you have the **Override check-in validation by build permission** set to **Allow**, you can bypass the gated check-in requirement. Choose **Show options**, and then choose **Bypass validation build and check in my changes directly (requires permissions)**.
+During the build, the **Pending Changes** page of the **Team Explorer** window displays an informational message, and you can select the **here** link to monitor the build in the build results window. You can also monitor builds on the **Builds** page of **Team Explorer**.
 
 <a name="proceed_and_keep_changes"></a>
 
-## Proceed with the gated check-in after keeping the changes in your workspace
+### Reconcile the latest changes in your workspace after a gated check-in
 
-The gated check-in process provides a way to proceed with the check-in and continue working with your changes. The drawback of proceeding in this way is that if the build completes successfully you must reconcile the changes in your workspace with the changes that are checked into version control.
+If you continue working in your workspace during the gated check-in, and you want to keep your changes, you should reconcile your latest changes with the changes that are now checked into version control.
 
-### To proceed with the gated check-in after keeping your changes in your workspace
+After the build completes:
 
-1.  Follow the steps in [Begin Checking in Changes to a Folder that is Subject to Gated Check-in](check-folder-controlled-by-gated-check-build-process.md#begin_checkin).
+- If the build results window shows a successful build, reconcile your workspace as follows:
 
-2.  In the **Gated Check-in** dialog box, choose **Build Changes**.
+  - If you're using the Build Notifications application, the **Gated Check-in** dialog box appears. Choose **Reconcile**.
+  - Or, on the **Builds** page of **Team Explorer**, right click the completed build and choose **Reconcile Workspace**. Use the **Reconcile Workspace** dialog box to resolve any version control conflicts.
 
-    In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Build process then Home.](media/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Build process then Builds.](media/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
+- If the build results window show that the build failed, correct the problems that caused the failure. In **Team Explorer**, on the **Builds** page, double-click the build that failed under **My Builds**, or right-click the build and select **Open**.
 
-3.  After the build is completed:
-
-    -   **Check-in committed**: We recommend that you reconcile your workspace before you continue developing your code. If you are using the Build Notifications application, the **Gated Check-in** dialog box appears. Choose **Reconcile**. Otherwise, in **Team Explorer**, on the **Builds** page, under **My Builds**, open the shortcut menu for the completed build, and then choose **Reconcile Workspace**. When the **Reconcile Workspace** dialog box appears, use this dialog box to resolve version control conflicts.
-
-    -   **Check-in rejected**: Correct the problems that caused the check-in to be rejected. In **Team Explorer**, on the **Builds** page, under **My Builds**, double-click the build (or open the shortcut menu for the build, and then choose **Open**). The build results window appears and contains information that can help you resolve the problem that caused the build to fail. For some types of problems, you may be able to choose the error or issue to view the file that requires corrections.
+  The Azure Pipelines build results window opens, containing information that can help you resolve the problem that caused the build to fail. For some types of problems, you may be able to choose the error or issue and view the file that requires corrections.
 
 <a name="proceed_and_delete_changes"></a>
 
-## Proceed with the gated check-in after deleting the changes in your workspace
+### Delete the latest changes in your workspace after a gated check-in
 
-If you want to proceed with the gated check-in operation and you do not plan to continue working with your changes, you can delete the changes in your workspace. Your changes are preserved in a shelveset and built by the system. If the build completes, then your changes are checked in. If the build fails, then you can unshelve the shelveset to get the changes back into your workspace.
+If you don't plan to keep working with your changes after the gated check-in, you can delete the latest changes in your workspace. Your changes are preserved in a shelveset. If the build completes, then your changes are checked in. If the build fails, then you can unshelve the shelveset to get the changes back into your workspace.
 
-### To proceed with the gated check-in after deleting changes in your workspace
+1. When you check in, in the **Gated Check-in** dialog box, choose **Show Options**. Clear the **Preserve my pending changes locally** checkbox, and then choose **Build Changes**.
 
-1.  Follow the steps in [Begin Checking in Changes to a Folder that is Subject to Gated Check-in](check-folder-controlled-by-gated-check-build-process.md#begin_checkin).
+1. After the build completes:
 
-2.  In the **Gated Check-in** dialog box:
+   - If the build results window shows a successful build and check-in, now that your changes are checked in, you might want to get the latest version of the files so that your workspace contains these changes. For more information, see [Download (get) files from the server](download-get-files-from-server.md).
 
-    -   Choose **Show Options** and then clear **Preserve my pending changes locally**.
+   - If the build results window shows the build failed, correct the problems that caused the failure. In **Team Explorer**, on the **Builds** page, double-click the build that failed under **My Builds**, or right-click the build and select **Open**.
 
-    -   Choose **Build Changes**.
+     In the Azure Pipelines build results window, look for information that can help you resolve the problem that caused the build to fail. For some types of problems, you may be able to choose the error or issue and view the file that requires corrections.
 
-3.  In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Gated check Build process then Home.](media/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Gated check Build process then Builds.](media/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
+1. Retrieve your changes from the shelveset. For more information, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
-4.  After the build is completed:
+1. In your files, correct the problems that caused the build to fail.
 
-    -   **Check-in committed**: Now that your changes are checked in, you may want to get the latest version of the files so that your workspace contains these changes. For more information, see [Download (get) files from the Server](download-get-files-from-server.md).
+## Related articles
 
-    -   **Check-in rejected**: Correct the problems that caused the check-in to be rejected.
-
-        1.  In **Team Explorer**, on the **Builds** page, under **My Builds**, double-click the build (or open the shortcut menu for the build and then choose **Open**). The build results window appears.
-
-        2.  In the build results window, look for information that can help you resolve the problem that caused the build to fail. For some types of problems, you may be able to choose the error or issue to view the file that requires corrections.
-
-        3.  Retrieve your changes from the shelveset. For more information, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
-
-        4.  In your files, correct the problems that caused the build to fail.
-
-## See Also
-
-#### Other Resources
-
- [Use a gated check-in build process to validate changes](../../pipelines/build/triggers.md) 
-
- [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)) 
-
- [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md)
+- [Use a gated check-in build process to validate changes](../../pipelines/build/triggers.md)
+- [Develop code and manage pending changes](develop-code-manage-pending-changes.md) 
+- [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md)

@@ -1,20 +1,19 @@
-﻿### YamlMime:FAQ
+### YamlMime:FAQ
 metadata:
   title: Set up Visual Studio with Azure DevOps FAQs
   titleSuffix: Azure DevOps Services
   ms.custom: seodec18
   description: Having problems installing Visual Studio, signing in, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs). 
-  ms.technology: devops-accounts
+  ms.subservice: azure-devops-organizations
   ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 03/11/2020
   monikerRange: 'azure-devops'
-    
 title: Set up Visual Studio with Azure DevOps FAQs
 summary: |
-  [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+  [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
   
   Learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
   

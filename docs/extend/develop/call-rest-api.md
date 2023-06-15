@@ -1,10 +1,11 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
+ms.custom: devx-track-js
 title: How to Call a REST API | Extensions for Azure DevOps 
 description: How to call a REST API in your extension for Azure DevOps.
 ms.assetid: 99794e1e-0127-4e65-83fb-93a71f496d93
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/18/2019
@@ -12,7 +13,7 @@ ms.date: 10/18/2019
 
 # Call a REST API
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To call a REST API from your extension, get the client service first, and then use that to call the API.
 

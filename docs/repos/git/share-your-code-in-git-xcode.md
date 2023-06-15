@@ -3,16 +3,17 @@ title: Share your Xcode project with Git
 titleSuffix: Azure Repos
 description: "Share code in Git using Xcode"
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 #  Share your code in Git using Xcode
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This guide shows you how to share your Xcode projects using Azure Repos. 
 
@@ -59,7 +60,7 @@ If you have already created a repo for your Xcode project in Azure DevOps Servic
 
 ## Push your project
 
-1. Go to **Source Control** in Xcode and select **_Projectname_ -- master**, then **Configure...**  
+1. Go to **Source Control** in Xcode and select **_Projectname_ -- main**, then **Configure...**  
 
    ![Configure your Xcode Git project settings](media/share-your-code-in-git-xcode/xcodeconfigureproject.png)
 

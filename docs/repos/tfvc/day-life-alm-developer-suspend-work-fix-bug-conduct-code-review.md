@@ -1,72 +1,69 @@
-﻿---
+---
 title: Suspend work, fix a bug, and conduct a code review
 titleSuffix: Azure Repos
 description: Day in the life of a devops developer. Suspend work, fix a bug, and conduct a code review.
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 08/25/2016
-monikerRange: '>= tfs-2015'
+ms.date: 10/25/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
+# Day in the life of a devops developer: Suspend work, fix a bug, and conduct a code review
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-A powerful one-click way to switch your working context from one thread of work to another is available in Visual Studio Premium and Visual Studio Ultimate with Team Foundation Server. Also, team members can easily exchange messages about proposed changes to the code. This topic illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
+The Visual Studio **My Work** and **Code Review** features support context switching from one thread of work to another. Also, team members can easily exchange messages about proposed changes to the code. This article illustrates these features, continuing the tutorial from [Day in the life of a devops developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
 
-[Peter has been busy writing some code to fulfill a backlog item task.](day-life-alm-developer-write-new-code-user-story.md) However, [his colleagues have found a bug](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) that is blocking them, and he wants to fix it immediately. He suspends the work that he's doing and fixes the bug. He asks Julia to review the fix and, after the review, checks in the fix and resumes work on his original task.
+[!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
 
-> [!NOTE]
-> The My Work and Code Review features that Peter uses are available only in Visual Studio Premium and Visual Studio Ultimate.
+This tutorial describes how you can suspend work on a current task to immediately fix a bug that's blocking teammates in another work item. After fixing the bug, you can ask colleagues to review the fix, and after the review passes, check in the fix and resume work on the original task.
 
 ## Suspend current work
 
-As Peter works on a backlog item, Julia comes to discuss a bug that is blocking her. It is in an area with which Peter is familiar, so he creates a task to fix the bug and assigns it to himself. He decides to start work on the fix immediately.
+While you're working on a backlog item, you might find out about a bug in another item that's blocking teammates. If it's an area you're familiar with, you can create a task to fix the bug and assign it to yourself to work on immediately.
 
-Before he starts to work on the new bug, Peter wants to make sure that his current work is set aside in a safe place on the team's server. On the **My Work** page, Peter chooses **Suspend** to save (on Team Foundation Server):
+Before you start work on the new bug, you want to make sure that your current work is set aside in a safe place on the team's server. In Visual Studio **Team Explorer**, on the **My Work** page, choose **Suspend** to save on the server:
 
--   All the work he has done, including changes to code, tests, and other files.
+-   All the work you've done, including changes to code, tests, and other files.
 
 -   Open solutions, windows, breakpoints, watch window variables, and other bits of Visual Studio state.
 
-Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He's ready to research and write the fix.
+Now that your workspace is clean, drag the new task from **Available Work Items** to **In Progress Work**. You're ready to research and write the fix.
 
 > [!NOTE]
-> Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
+> Your working context is linked to the work items that show as **In Progress** on the **My Work** page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
 
 ### To suspend current work and begin work on a different task
 
- ![Suspending some work](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
-1.  **Connect:** If you are not already connected to the project that you want to work in, then [connect to the project](../../organizations/projects/connect-to-projects.md):
+Switch your work context:
 
-    1.  In **Team Explorer**, choose ![Home icon](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC547418.png) **Home**, and then choose ![My Work icon](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC588354.png) **My Work**.
+1. If you're not already connected to the project that you want to work in, [connect to the project](../../organizations/projects/connect-to-projects.md).
 
-2.  **Suspend** your current task:
+1. From the **Home** page of **Team Explorer**, choose **My Work**.
 
-    1.  In the **In Progress Work** section, choose **Suspend**.
+1. On the **My Work** page, in the **In Progress Work** section, choose **Suspend**.
 
-    2.  In the box that appears, specify the name that you want to give this set of suspended work, and then choose the **Suspend** button. The default name is your currently in progress work item.
+1. In the box that appears, optionally change the name that you want to give this set of suspended work, and then select **Suspend**. The item appears under **Suspended Work**.
 
-3.  **Start work on a new task**, bug, or other work item:
+   ![Screenshot of suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/suspend.png)
 
-    1.  Before selecting a work item, you might want to:
+1. Drag a work item from **Available Work Items** to **In Progress Work**. Or, you can switch to a work item that you previously suspended by dragging it from **Suspended Work**.
 
-        -   Create a new task or other work item by choosing **New** under **Available Work Items**; or
+   If the work item you want to assign yourself doesn't appear under **Available Work Items**, you can:
 
-        -   Select a different query under **Available Work Items**.
-
-    2.  Drag a work item from **Available Work Items** to **In Progress Work**.
-
-        Alternatively, you can switch to a work item that you previously suspended by dragging it from under **Suspended Work**.
+   - Create a new task or other work item by choosing **New**.
+   - Select a different query by selecting **Open Query**.
 
 > [!TIP]
-> The currently In Progress work items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the In Progress state when you switch from one task to another.
+> The **In Progress Work** items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the **In Progress Work** state when you switch from one task to another.
 
 ## Investigate the bug
 
-Peter opens and reads the bug work item. According to the description that has been written by a member of the test team, a paid invoice is sometimes incorrectly flagged as unpaid. There is a lab environment snapshot attached to the bug work item. Peter is able to open the virtual machines on which the test was run, see the incorrect invoice, and step back through the IntelliTrace log. He traces the fault to the following method:
+Open the new bug and read the description. In this example, the description by a member of the test team states that a paid invoice is sometimes incorrectly flagged as unpaid. A lab environment snapshot is attached to the bug work item. You open the virtual machine (VM) on which the test was run, see the incorrect invoice, and step back through the IntelliTrace log. You can trace the fault to the following method:
 
 ```csharp
 public class LocalMath
@@ -77,13 +74,14 @@ public class LocalMath
     }
 ```
 
-From the IntelliTrace log, Peter sees that sometimes the method returns false because the parameters differ by an extremely small amount. Peter knows that rounding errors of this kind are unavoidable in floating point arithmetic, and that it is bad practice to test floating point numbers for equality.
+From the IntelliTrace log, you see that sometimes the method returns false because the parameters differ by an extremely small amount. You know that rounding errors of this kind are unavoidable in floating point arithmetic, and that it's bad practice to test floating point numbers for equality.
 
 ## Augment the tests to show the error
-When a bug is found, it shows that there was a gap in the unit tests, or that the test did not match the users' actual needs. Therefore, before fixing the bug, Peter adds a test that will demonstrate the presence of this error.
+
+When a bug is found, it shows that there was a gap in the unit tests, or that the test didn't match the users' actual needs. Therefore, before fixing the bug, add a test that demonstrates the presence of this error:
 
 ```csharp
-// Added 2012-02-02 for bug 654321:
+// Added 2022-02-02 for bug 654321:
 /// <summary>
 /// Make sure that number equality test allows for 
 /// small rounding errors.
@@ -91,7 +89,7 @@ When a bug is found, it shows that there was a gap in the unit tests, or that th
 [TestMethod]
 public void TestDoublesEqual()
 {
-    // We allow a rounding error of 1 in 1000000:
+    // Allow a rounding error of 1 in 1000000:
     TestEqual(1, 1e-7, true); // Less than allowed error
     TestEqual(1, 1e-5, false); // More than allowed error
     TestEqual(1000, 1e-7, true); // Less than allowed error
@@ -107,12 +105,13 @@ private void TestEqual(double value, double error, bool result)
 }
 ```
 
-He runs the test and it fails as expected.
+Run the test, and it fails as expected.
 
-![Unit Test Explorer showing failed test for equal](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675827.png)
+![Screenshot of Unit Test Explorer showing failed test for equal.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/test-fails.png)
 
 ## Make the tests pass
-Peter fixes the code:
+
+Fix the code:
 
 ```csharp
 public static bool EqualTo(double a, double b)
@@ -127,38 +126,36 @@ public static bool EqualTo(double a, double b)
 
 The test now passes:
 
-![Unit Test Explorer showing passed test for equal](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
+![Screenshot of Unit Test Explorer showing passed test for equal.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/test-passes.png)
 
 ## Request a code review
 
-Peter is satisfied with his fix for the bug, but he does not check in his work yet. His team uses code reviews to increase overall code quality and reduce the risk of creating more bugs, so Peter uses Team Explorer to request a code review from his teammates Julia and Adam.
+When you're satisfied with your fix for the bug, don't check in your work yet. Teams use code reviews to increase overall code quality and reduce the risk of creating more bugs. Use **Team Explorer** to request code reviews from teammates.
 
 ### To request a code review
 
- ![My Work page - Request Review link. New Code Review page - Enter the name of a reviewer dropdown, Enter a description (optional) textbox, Submit Request button.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592394.png)
-1.  In **Team Explorer**, on the **My Work** page, choose **Request Review**.
+1. In **Team Explorer**, on the **My Work** page under **In Progress Work**, choose **Request Review**.
 
-    The **New Code Review** page appears.
+   The **New Code Review** page appears.
 
-2.  ![Reviewer](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532202.gif) Specify one or more reviewers.
+   ![Screenshot that shows the Request Code Review page.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/request-review.png)
 
-3.  ![Code Review](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532203.gif) Specify the name of the review.
+   - In the **Enter the name of a reviewer** field, specify one or more reviewers, and press Enter after each selection.
+   - In the next field, change the name of the review if you want to.
+   - In the next field, make sure the correct area path appears.
+   - In the next field, type an optional description.
+   
+1. Choose **Submit Request**.
 
-4.  ![Area path](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532204.gif) Specify the area path.
-
-5.  ![Comment](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532205.gif) Specify a comment to your reviewers.
-
-6.  Choose **Submit Request**.
-
-The reviewers will be notified of the request by email.
+The reviewers are notified of the request by email.
 
 You can also request a code review of suspended work, a shelveset, or a changeset. To see a list of changesets, open **Source Control Explorer** and choose the **History** button.
 
-## Accept or decline a code review
+## Do a code review
 
-Julia receives the code review request and accepts it. She reviews the code, writes some comments at the file- and code-block levels, and then sends the code review back to Peter. Adam is too busy to review the code and declines.
+A reviewer can accept the code review request. The reviewer reviews the code, writes some comments at the file- and code-block levels, and then sends the code review back to you. A requested reviewer who's too busy to review the code can decline the review.
 
-In her comments, Julia points out that the test is wrong. The allowable error should be a specified fraction of the input values, not a constant quantity. So the test should multiply the error by the value.
+In the comments, the reviewer points out that the test is wrong. The allowable error should be a specified fraction of the input values, not a constant quantity. So the test should multiply the error by the value.
 
 ```csharp
 // We allow a rounding error of 1 in 1000000
@@ -170,63 +167,65 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 ```
 
 > [!TIP]
-> Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
+> The team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
 
-## To perform a code review![My Work page - code review item. Code Review page - Decline link, Comment, Decline button.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591278.png)![Diff window. Code Review page - Accept link, Overall comment, code block comment](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592880.png)
-1.  In **Team Explorer**, on the **My Work** page, go to the **My Code Reviews & Requests** section and open the request.
+### To do a code review  
 
-2.  On the **Code Review** page, you can:
+1. On the **My Work** page in **Team Explorer**, right-click the code review in the **Code Reviews** section and select **Open**.
 
-    -   Choose **Accept** or **Decline** to notify the author whether you will perform the review.
+   The **Code Review** page appears.
 
-    -   Choose **Add Reviewer** to add other reviewers to the code-review request.
+   ![Screenshot of the Code Review page.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/code-review.png)
 
-    -   View the changes to each file that has been updated for this work item.
+1. On the **Code Review** page, you can:
 
-    -   Expand **Comments** to discuss the changes with the author and other reviewers.
+   - Choose **Add Reviewer** to add other reviewers to the code review request.
+   - Select each file link to see the changes to the files that were updated for this work item.
+   - Use **Comments** to discuss the changes with the author and other reviewers.
 
-        -   Choose **Add Overall Comment**
+     To add comments:
 
-            -or-
+     - Choose **Add Overall Comment** to add an overall comment to the review.
+     - When viewing a file, select a line or block of code, right-click, and select **Add comment**.
 
-            Select a block of code and then choose **Add Comment** from the shortcut menu.
+     After adding each comment, select **Save** or press Ctrl+Enter.
 
-        <!-- -->
-
-        -   Choose **Send Comments** to make your contributions visible to the author and other reviewers.
-
-    -   Choose **Send and Finish** to complete your review, indicating whether the code needs more work.
+1. When you're finished entering comments, select **Send Comments** to make your contributions visible to the author and other reviewers.
 
 ## Respond to a code review
 
-Peter receives and responds to the code review from Julia.
+You receive and respond to the code review from the reviewers. You and the reviewers can exchange comments as often as you like. The review ends when you close it.
 
 ### To respond to a code review
 
-The reviewers and author of the code can exchange comments as often as they like. The review ends when the author closes it. With each contribution to the discussion, the other participants will be notified by email.
+1. In **Team Explorer**, on the **My Work** page, go to the **Code Reviews** section and double-click the request, or right-click the request and choose **Open**.
 
-![My Work page - code review item. Code Review page - Overall comment, file comment, Close Review link.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592517.png)
-1.  In **Team Explorer**, on the **My Work** page, go to the **Code Reviews & Request** section and double-click the request.
+   The **Code Review** page appears.
 
-    You can also open the shortcut menu for the request and choose **Open**.
+   ![Screenshot of responding to a code review.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/respond.png)
 
-2.  Read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**. To send your comments, choose **Send Comments**.
+1. Under the **Comments** section, read the comments and reply to them as needed. To reply to a comment, choose **Reply**, enter your comment in the box that appears, and then choose **OK**.
 
-3.  To view a file and see the code-blocks that have comments, or to edit a file, go to the **Comments** section. In the **Files** sub-section, open the shortcut menu for the file and choose either **Compare (Read-Only)** or **Edit File**.
+1. To view a file and see the code blocks that have comments, or to edit or comment on a file, go to the **Files** subsection. Right-click the file, and choose either:
 
-4.  When you and the other reviewers finish responding to each other's comments and you are ready to close the review, click **Close Review**, and then choose either:
+   - **Compare (Read-Only)**
+   - **Edit Local File**, or
+   - **Add File Comment**
+   
+   You can also select the checkbox next to a comment to indicate that the comment has been addressed.
 
-    -   **Complete** to indicate that the review is finished.
+1. To send your comments, choose **Send Comments**. 
 
-    -   -or-
+1. When you and the other reviewers finish responding to each other's comments and you're ready to close the review, select **Close Review**, and then select:
 
-    -   **Abandon** to indicate you are canceling the review.
+   - **Complete** to indicate that the review is finished, or
+   - **Abandon** to indicate you're canceling the review.
 
 ## Fix the test and the code
 
-Having read Julia's comments, Peter fixes his unit test as she suggests. The test now fails. This shows that the code is not yet correct.
+After reading the review comments, you can fix your unit test as suggested. The test now fails. This shows that the code isn't yet correct.
 
-Peter fixes the code:
+You fix the code:
 
 ```csharp
 /// <summary>
@@ -241,60 +240,49 @@ public static bool EqualTo(double a, double b)
 }
 ```
 
-The test passes once again:
-
-![Unit Test Explorer showing passed test for equal](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
+The test passes once again.
 
 > [!TIP]
 > To fix a bug, follow the same practice as in code development. Write a test that fails and then make the test pass. Check in the code and the tests only when the tests pass.
 
-Peter now turns his attention to the test case in which the bug was discovered. The steps to reproduce the bug are clearly described in the test case work item. He follows the steps and discovers that the invoices are correctly listed.
+You now turn your attention to the test case in which the bug was discovered. The steps to reproduce the bug are clearly described in the test case work item. You follow the steps and discover that the invoices are correctly listed.
 
 ## Check in the fix
 
-Peter checks in the fixed code and the unit tests. The state of the bug is automatically set to **Resolved**, and the **Assigned To** value is automatically reassigned to the member of the test team who discovered the bug. That team member will verify that the bug has been fixed and close the work item.
+You check in the fixed code and the unit tests. The state of the bug is automatically set to **Resolved**, and the **Assigned To** value is automatically reassigned to the member of the test team who discovered the bug. That team member will verify that the bug has been fixed and close the work item.
 
 ### To check in the fix
 
- ![Checking in an update to fix a bug](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC593474.png)
-1.  In **Team Explorer**, on the **My Work** page, choose **Check In**.
+1. In **Team Explorer**, on the **My Work** page, choose **Check In** to open the **Pending Changes** page.
 
-2.  Review the contents of the **Pending Changes** page to make sure that:
+   ![Screenshot of Checking in an update to fix a bug.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/checkin-resolve.png)
 
-    -   All relevant changes are listed in **Included Changes**
+1. On the **Pending Changes** page, make sure that:
 
-    -   All relevant work items are listed in **Related Work Items**.
+   - All relevant changes are listed in **Included Changes**
 
-3.  Specify a **Comment** to help your team understand the purpose of these changes when they look at the version control history of the changed files and folders.
+   - All relevant work items are listed in **Related Work Items**.
 
-4.  Choose **Check In**.
+1. Enter a **Comment** to help your team understand the purpose of these changes when they look at the version control history of the changed files and folders.
+
+1. Select **Check In**.
 
 ## Resume work on a task
 
-Peter resumes work on his task. He is able to get back to work quickly because all his code changes are restored to his workspace along with important bits of state such as open windows, breakpoints, and watch window variables.
+Resume work on your original task. You can get back to work quickly because all your code changes are restored to your workspace along with important bits of state such as open windows, breakpoints, and watch window variables.
 
 ### To resume work on a task
 
- ![Resuming and completing a task](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591026.png)
--   In **Team Explorer**, on the **My Work** page, find the **Suspended & Shelved Work** list. Open the shortcut menu for the item. You have two choices:
+- In **Team Explorer**, on the **My Work** page, select your original work item under **Suspended Work** and select **Resume**.
 
-    -   If you want to resume the suspended work and automatically suspend any pending changes in your workspace, choose **Resume**.
+  ![Screenshot of Resuming a task.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/resume.png)
 
-    -   If you want to merge the suspended work with pending changes already in your workspace, choose **Merge with In Progress**.
+  Or, if you want to merge your suspended work with pending changes in your workspace, choose **Merge with In Progress**.
 
-### When you resume your work
-
- ![Panes affected by suspending a work item.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592393.png)
 When you resume your work, Visual Studio restores:
-
 -   Your open solution
-
 -   Your code changes
-
 -   The state and position of open windows
-
 -   Breakpoints
-
 -   Watch window variables and expressions
-
 -   Bookmarks

@@ -2,10 +2,9 @@
 title:  Analytics widgets 
 titleSuffix: Azure DevOps
 description: Learn about the widgets based on Analytics data that you can add to a dashboard in Azure DevOps.
-ms.technology: devops-analytics
-ms.reviewer: romik
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/27/2021
@@ -14,14 +13,14 @@ ms.date: 09/27/2021
 
 # Widgets based on Analytics data
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. To add extensions or enable the service, you must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md). Using these widgets, you and your team can gain valuable insights into the health and status of your work.
+Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. To add extensions or enable the service, you must be an organization owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). Using these widgets, you and your team can gain valuable insights into the health and status of your work.
 ::: moniker-end
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
@@ -54,7 +53,7 @@ The Burndown widget lets you display a trend of remaining work across multiple t
 
 ![Burndown Widget - Release Burndown Example](./media/burndown-ax-catalog.png)
 
-To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
+To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).  
 
 ## Burnup widget
 
@@ -64,7 +63,7 @@ The Burnup widget lets you display a trend of completed work across multiple tea
 
 ![Burnup Widget - Release Burnup Example](./media/burnup-ax-catalog.png)
 
-To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
+To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).  
 
 
 ## Sprint Burndown widget 

@@ -2,19 +2,19 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 04/09/2021
+ms.date: 01/25/2023
 monikerRange: "> azure-devops-2019"
 ---
 
 # Check out multiple repositories in your pipeline
 
-[!INCLUDE [version-team-services](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 ## Specify multiple repositories
 
-Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
+Repositories can be specified as a [repository resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository), or inline with the `checkout` step. 
 
 The following repository types are supported.
 
@@ -24,7 +24,7 @@ The following repository types are supported.
         [Azure Repos Git](azure-repos-git.md) (`git`)
     :::column-end:::
     :::column span="2":::
-        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Server (limited to repositories in the same organization)
         * Azure DevOps Services
     :::column-end:::
 :::row-end:::
@@ -57,7 +57,7 @@ The following repository types are supported.
 :::row-end:::
 
 > [!IMPORTANT]
-> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server.
 
 > [!NOTE]
 > Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
@@ -114,11 +114,11 @@ The following combinations of `checkout` steps are supported.
 
 > [!NOTE]
 > When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
-> For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
+> For more information, see [Why am I prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
 
 ## Repository resource definition
 
-You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
+You must use a [repository resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
 | Repository type | Service connection |
 |-----------------|--------------------|
@@ -162,7 +162,7 @@ steps:
 - script: dir $(Build.SourcesDirectory)
 ```
 
-If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
+If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories (as specified by the `name` property in the repository resource) are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
 
 ## Inline syntax checkout
@@ -223,6 +223,21 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
+The following example uses [tags](../../repos/git/git-tags.md) to check out the commit referenced by `MyTag`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepo
+    ref: refs/tags/MyTag
+
+steps:
+- checkout: MyGitHubRepo
+```
+
 :::moniker range=">azure-devops-2020"
 
 ## Triggers
@@ -234,36 +249,12 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 
 > [!IMPORTANT]
 > Repository resource triggers only work for Azure Repos Git repositories in the same organization at present. They do not work for GitHub or Bitbucket repository resources.
+>
+> `batch` is not supported in repository resource triggers.
 
 If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
 
 If you specify a `trigger` section for multiple repository resources, then a change to any of them will start a new run.
-
-The trigger for `self` repository can be defined in a `trigger` section at the root of the YAML file, or in a repository resource for `self`. For example, the following two are equivalent.
-
-```yaml
-trigger:
-- main
-
-steps:
-...
-```
-
-```yaml
-resources:
-  repositories:
-  - repository: self
-    type: git
-    name: MyProject/MyGitRepo
-    trigger:
-    - main
-
-steps:
-...
-```
-
-> [!NOTE]
-> It is an error to define the trigger for `self` repository twice. Do not define it both at the root of the YAML file and in the `resources` section.
 
 When a pipeline is triggered, Azure Pipelines has to determine the version of the YAML file that should be used and a version for each repository that should be checked out. If a change to the `self` repository triggers a pipeline, then the commit that triggered the pipeline is used to determine the version of the YAML file. If a change to any other repository resource triggers the pipeline, then the latest version of YAML from the **default branch** of `self` repository is used.
 
@@ -347,13 +338,13 @@ steps:
 ## FAQ
 
 * [Why can't I check out a repository from another project? It used to work.](#why-cant-i-check-out-a-repository-from-another-project-it-used-to-work)
-* [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository)
+* [Why am I prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository)
 
 ### Why can't I check out a repository from another project? It used to work.
 
 Azure Pipelines provides a **Limit job authorization scope to current project** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
-### Why am I am prompted to authorize resources the first time I try to check out a different repository?
+### Why am I prompted to authorize resources the first time I try to check out a different repository?
 
 When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time. These prompts are displayed on the pipeline run summary page. 
 

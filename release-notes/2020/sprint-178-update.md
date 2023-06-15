@@ -2,7 +2,6 @@
 title: Sprint 178
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 11/12/2020
 description: Azure Boards previously relied on extensions and integrations to provide timeline and roadmap capabilities spanning teams and projects. We're proud to announce that  Delivery Plans 2.0 brings these capabilities to the core product, and it's now available for preview.
 

@@ -3,58 +3,58 @@
 - name: Customize a process template
   href: customize-process.md
 - name: Manage process templates
-  href: ../../boards/work-items/guidance/manage-process-templates.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
-- name: Changes made to process templates
-  href: ../../boards/work-items/guidance/changes-to-process-templates.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
-- name: Define work tracking plug-ins
+  href: ../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json
+- name: Archived articles
   items:
-  - name: Define the work item tracking plug-in
-    href: define-objects-track-work-items-plug-in.md
-  - name: Add work item types
-    href: add-wit-definitions-process-template.md
-  - name: Add link types
-    href: add-link-type-definitions-to-a-process-template.md
-  - name: Add categories
-    href: add-type-wit-category-definitions-process-template.md
-  - name: Add work item queries
-    href: add-work-item-queries-process-template.md
-  - name: Define a work item query
-    href: define-work-item-query-process-template.md
-  - name: Add a work item instance
-    href: add-work-item-instance-process-template.md
-- name: Functional areas & permissions
-  items:
-  - name: Control access to functional areas
-    href: control-access-to-functional-areas.md
-  - name: Define the Version Control plug-in
-    href: define-initial-configuration-version-control.md
-  - name: Define the Test Management plug-in
-    href: define-initial-configuration-test-manager.md
-  - name: Define the Build plug-in
-    href: define-initial-configuration-build.md
-  - name: Define the Lab Management plug-in
-    href: define-initial-configuration-lab-management.md
-- name: XML element reference
-  items:
-  - name: XML element index
-    href: process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Process template files
-    href: overview-process-template-files.md
-  - name: Define root tasks
-    href: define-root-tasks-process-template-plug-in.md
-  - name: Process template XML elements
-    href: process-template-xml-elements-reference.md
-  - name: Define tasks and task group dependencies
-    href: define-dependencies-plug-ins-groups-tasks.md
-  - name: Define tasks to process
-    href: define-tasks-to-process-a-plug-in.md
-  - name: Define the Classification plug-in
-    href: define-classification-plug-in.md
-  - name: Define the Portal plug-in
-    href: define-project-portal-plug-in.md
-  - name: Define the Reporting plug-in
-    href: add-reports-to-the-process-template.md
-  - name: "Configure initial groups, teams, members, & permissions"
-    href: configure-initial-groups-teams-members-permissions.md
-  - name: Define the Groups and Permissions plug-in
-    href: define-groups-teams-permissions-plug-in.md
+  - name: Define work tracking plug-ins
+    items:
+    - name: Define the work item tracking plug-in
+      href: /previous-versions/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in
+    - name: Add work item types
+      href: /previous-versions/azure/devops/reference/process-templates/add-wit-definitions-process-template
+    - name: Add link types
+      href: /previous-versions/azure/devops/reference/process-templates/add-link-type-definitions-to-a-process-template
+    - name: Add categories
+      href: /previous-versions/azure/devops/reference/process-templates/add-type-wit-category-definitions-process-template
+    - name: Add work item queries
+      href: /previous-versions/azure/devops/reference/process-templates/add-work-item-queries-process-template
+    - name: Define a work item query
+      href: /previous-versions/azure/devops/reference/process-templates/define-work-item-query-process-template
+    - name: Add a work item instance
+      href: /previous-versions/azure/devops/reference/process-templates/add-work-item-instance-process-template
+    - name: Functional areas & permissions
+      items:
+      - name: Control access to functional areas
+        href: /previous-versions/azure/devops/reference/process-templates/control-access-to-functional-areas
+      - name: Define the Version Control plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control
+      - name: Define the Test Management plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager
+      - name: Define the Build plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-initial-configuration-build
+      - name: Define the Lab Management plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-initial-configuration-lab-management
+    - name: XML element reference
+      items:
+      - name: XML element index
+        href: /previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index 
+      - name: Process template files
+        href: /previous-versions/azure/devops/reference/process-templates/overview-process-template-files 
+      - name: Define root tasks
+        href: /previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in
+      - name: Process template XML elements
+        href: /previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference 
+      - name: Define tasks and task group dependencies
+        href: /previous-versions/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks 
+      - name: Define tasks to process
+        href: /previous-versions/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in 
+      - name: Define the Classification plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-classification-plug-in 
+      - name: Define the Portal plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-project-portal-plug-in 
+      - name: Define the Reporting plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/add-reports-to-the-process-template 
+      - name: Configure initial groups, teams, members, & permissions
+        href: /previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions 
+      - name: Define the Groups and Permissions plug-in
+        href: /previous-versions/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in 

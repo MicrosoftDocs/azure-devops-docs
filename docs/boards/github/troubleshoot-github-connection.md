@@ -2,18 +2,17 @@
 title: Troubleshoot a GitHub repo connection to an Azure Boards project
 titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: troubleshooting
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021
 ---
 
 # Troubleshoot an Azure Boards-GitHub integration 
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)]
-
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The Azure Boards-GitHub integration relies on various authentication protocols to support the connection. Changes to a user's permission scope or authentication credentials can cause revocation of the GitHub repositories connected to Azure Boards. 
  
@@ -78,6 +77,21 @@ The following authentication options are supported based on the GitHub platform 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
 
+## Grant Azure Boards organization access 
+
+If the integration between Azure Boards and GitHub isn't working as expected, verify you've granted organization access. 
+
+1. From GitHub web portal, open **Settings** from your profile menu.  
+	:::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::
+
+1. Next, choose **Applications** under **Integrations**.  
+
+1. Choose the **Authorized OAuth Apps** tab, and then choose **Azure Boards**.  
+	:::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::
+
+1. Under **Organization access**, resolve any issues that may appear. Choose **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+	:::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::
+ 
 
 ## Resolve connection issues
 
@@ -107,6 +121,9 @@ To resolve the problem, consider the following items:
   - The user may have lost admin permissions on the GitHub repo.  
 
 	To resolve, recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
+
+
+
 
 <a id="ghe-dataimport" />
 

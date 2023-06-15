@@ -1,0 +1,544 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/index.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/powershell.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/powershell-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/copy-files.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/copy-files-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/dotnet-core-cli.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/command-line.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/cmd-line-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/publish-build-artifacts.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/docker.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/docker-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/publish-test-results.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/publish-test-results-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-rm-web-app-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/bash.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/bash-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/vstest.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/vstest-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-cli.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-cli-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-resource-group-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-resource-group-deployment-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/visual-studio-build.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/vsbuild-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/nuget.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/nuget-command-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/download-pipeline-artifact.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/npm.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/npm-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-powershell.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-powershell-v5"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/publish-code-coverage-results.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/publish-pipeline-artifact.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/msbuild.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/msbuild-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-file-copy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-file-copy-v4"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-file-copy-version3.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-file-copy-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/maven.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/maven-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/dotnet-core-tool-installer.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/use-dotnet-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/shell-script.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/shell-script-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/helm-deploy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/helm-deploy-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/http-rest-api.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/archive-files.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/archive-files-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-key-vault.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-key-vault-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/download-build-artifacts.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/download-build-artifacts-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/file-transform.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/file-transform-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/nuget-authenticate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/manual-validation.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/manual-validation-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/node-js.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/node-tool-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/delete-files.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/delete-files-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-function-app.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-function-app-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/python-script.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/python-script-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/download-secure-file.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/download-secure-file-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/sql-azure-dacpac-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/docker-compose.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/docker-compose-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/extract-files.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/extract-files-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/kubernetes.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/kubernetes-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/gradle.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/gradle-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/use-python-version.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/use-python-version-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/copy-and-publish-build-artifacts.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/copy-publish-build-artifacts-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/kubernetes-manifest.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/batch-script.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/batch-script-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/nuget.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/nuget-tool-installer-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/npm-authenticate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/npm-authenticate-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/install-ssh-key.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/install-ssh-key-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/iis-web-app-deployment-on-machine-group.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-on-machine-group-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/ssh.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/ssh-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/powershell-on-target-machines.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/powershell-on-target-machines-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/java-tool-installer.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/java-tool-installer-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/manual-intervention.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/manual-intervention-v8"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-rm-web-app-containers.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-web-app-container-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/windows-machine-file-copy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/windows-machine-file-copy-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/iis-web-app-management-on-machine-group.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-app-service-settings.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-app-service-settings-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/xcode.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xcode-v5"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/delay.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/delay-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/azure-static-web-app.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-static-web-app-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/app-center-distribute.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/app-center-distribute-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/universal-packages.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/universal-packages-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/cache.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/cache-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/vstest-platform-tool-installer.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/visual-studio-test-platform-installer-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/maven-authenticate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/maven-authenticate-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/ftp-upload.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/ftp-upload-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/download-package.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/download-package-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/run-functional-tests.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/run-visual-studio-testsusing-test-agent-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/azure-function.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-function-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-app-service-manage.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-app-service-manage-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/android-signing.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/android-signing-v3"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/docker-installer.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/docker-installer-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/pip-authenticate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/pip-authenticate-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/index-sources-publish-symbols.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/publish-symbols-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/install-apple-certificate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/helm-installer.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/helm-installer-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/app-center-test.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/app-center-test-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/curl-upload-files.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/curl-uploader-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/twine-authenticate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/twine-authenticate-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/azure-load-testing.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-load-test-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-rm-web-app.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-web-app-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/gulp.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/gulp-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/install-apple-provisioning-profile.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/ant.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/ant-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/download-fileshare-artifacts.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/download-fileshare-artifacts-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/github-release.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/github-release-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/cmake.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/cmake-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/visual-studio-test-agent-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/deploy-visual-studio-test-agent-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/sql-dacpac-deployment-on-machine-group.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/sql-dacpac-deployment-on-machine-group-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/packer-build.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/packer-build-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/publish-to-azure-service-bus.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-rm-functionapp-containers.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-function-app-container-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/xcode-build.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xcode-v4"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/jenkins-queue-job.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/jenkins-queue-job-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/cocoapods.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/cocoa-pods-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/xamarin-ios.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xamarin-ios-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/work-item-query.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/query-work-items-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/xcode-package-ios.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xcode-package-ios-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/xamarin-android.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xamarin-android-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/go.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/go-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/android-build.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/android-build-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/service-fabric-deploy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/service-fabric-deploy-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/container-structure-test-task.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/container-structure-test-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/kubectl-installer.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/kubectl-installer-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/download-github-release.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/download-github-release-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-cloud-powershell-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-cloud-powershell-deployment-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-policy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-policy-check-gate-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/azure-iot-edge.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-iot-edge-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-mysql-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-mysql-deployment-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/go-tool.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/go-tool-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-monitor-alerts.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-monitor-alerts-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/azure-monitor.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-monitor-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/build/grunt.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/grunt-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/conda-environment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/conda-environment-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/tool/use-ruby-version.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/use-ruby-version-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-vmss-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-vmss-deployment-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/jenkins-download-artifacts.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/jenkins-download-artifacts-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/decrypt-file.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/decrypt-file-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/pypi-publisher.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/py-pi-publisher-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/azure-nlb-management.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-nlb-management-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/azure-spring-cloud.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-spring-cloud-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/mysqldb-deployment.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/mysql-deployment-on-machine-group-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/service-fabric-versioning.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/service-fabric-update-manifests-v2"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/chef.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/chef-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/service-fabric-powershell.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/service-fabric-powershell-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/test/xamarin-test-cloud.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xamarin-test-cloud-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/chef-knife.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/chef-knife-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/service-fabric-compose-deploy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/service-fabric-compose-deploy-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/prev-versions/twine-authenticate-0.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/twine-authenticate-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/package/prev-versions/pip-authenticate-0.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/pip-authenticate-v0"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/utility/xamarin-license.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xamarin-license-v1"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/tasks/deploy/copy-files-over-ssh.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/copy-files-over-ssh-v0"
+    }
+  ]
+}

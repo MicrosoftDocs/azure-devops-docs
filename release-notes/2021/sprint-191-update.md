@@ -2,7 +2,6 @@
 title: Environment variables support in Linux scale set agents
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 08/19/2021
 description: In this sprint, we've added support for environment variables in Linux scale set agents. 
 ---

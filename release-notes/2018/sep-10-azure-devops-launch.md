@@ -2,7 +2,6 @@
 title: Introducing Azure DevOps
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 9/10/2018
 description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps Services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 ---
@@ -185,7 +184,7 @@ See the [Concepts](/azure/devops/pipelines/?view=azure-devops&preserve-view=true
 
 ### Leverage the latest extension categories
 
-As an extension contributor you will notice that extension categories have been aligned to match the renamed Azure DevOps services in the [Marketplace](https://marketplace.visualstudio.com/vsts). Although the previous categories have been automatically mapped to the new ones, we recommend switching to the new categories by updating your extension's manifest. See the [Manifest](/azure/devops/extend/develop/manifest?view=azure-devops&preserve-view=true#required-attributes) documentation for more information.
+As an extension contributor you will notice that extension categories have been aligned to match the renamed Azure DevOps Services in the [Marketplace](https://marketplace.visualstudio.com/vsts). Although the previous categories have been automatically mapped to the new ones, we recommend switching to the new categories by updating your extension's manifest. See the [Manifest](/azure/devops/extend/develop/manifest?view=azure-devops&preserve-view=true#required-attributes) documentation for more information.
 
 ## Administration
 
@@ -210,7 +209,7 @@ Good news! If you are only using the Azure Pipelines service, you do not have to
 
 - You only pay for additional parallel jobs in Azure Pipelines. Users are unlimited.
 - All access to Azure Pipelines features is still governed through a security and permissions model.
-- If you use other Azure DevOps services, you still have to pay a per-user license for those services after the free limits.
+- If you use other Azure DevOps Services, you still have to pay a per-user license for those services after the free limits.
 - In existing organizations, Stakeholders do not get the free Azure Pipelines benefit by default. Your organization administrator (Project Collection Administrator) has to explicitly enable this preview feature. Enabling this preview feature will change the behavior of what Stakeholders can do. Currently, they cannot manage builds or releases. But, once the preview feature is enabled, there is no difference between Basic users and Stakeholders in Azure Pipelines. It is for this reason that the choice of allowing Stakeholders to be treated as free Azure Pipelines users is left to your administrator.
 
 See the [Provide Stakeholders access to edit build and release pipelines](/azure/devops/organizations/security/provide-stakeholder-pipeline-access) documentation for more information.

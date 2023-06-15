@@ -2,28 +2,33 @@
 title: Aggregate work tracking data 
 titleSuffix: Azure DevOps
 description: Learn how to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps.
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 11/04/2022
 ---
 
 # Aggregate work tracking data using Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can get a sum of your work tracking data in one of two ways using Analytics with OData. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query that exercises the OData Aggregation Extension.   
+
+
+This article builds off information provided in [Construct OData queries for Analytics](../analytics/analytics-query-parts.md) and [Define basic queries using OData Analytics](wit-analytics.md). Also, the queries is this article are focused on retrieving work item data, however, the principles apply for querying other entity sets. 
 
 In this article you'll learn: 
 
 >[!div class="checklist"]
-> * About the OData Aggregation Extension  
-> * How to generate a simple count of work items  
+> * About the OData Aggregation Extension   
 > * How to use the Aggregation Extension for OData   
-> * How to group and filter aggregated results 
+> * How to group and filter aggregated results  
 > * How to aggregate data to generate a Cumulative Flow diagram  
+
+To learn how to generate simple counts, see [Return a count of items (no other data)](wit-analytics.md#return-a-count-of-items-no-other-data) and [Return a count of items and data](wit-analytics.md#return-a-count-of-items-and-data).
+
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -32,91 +37,6 @@ In this article you'll learn:
 
 Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
-## Basic root URL
-
-Use this basic root URL as a prefix for all the examples provided in this article.
-
-::: moniker range="azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
-> ``` 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
-> ```
-> 
-> [!NOTE]
-> The examples shown in this article are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL. 
-
-::: moniker-end
-
-<a id="simple-count" />
-
-## Simple count aggregations
-
-First, let's look at how to do counts without the aggregation extensions.
-
-Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items are defined in your organization, you add this string to your query:
-
-`/WorkItems/$count`
-
-Where the full OData query is: 
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
-> ``` 
-> [!INCLUDE [temp](../includes/api-versioning.md)]
-
-For comparison, using the OData aggregation extension, you add this string to your query:
-
-`/WorkItems?$apply=aggregate($count as Count)`
-
-Where the full OData query is: 
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $apply=aggregate($count as Count)
-> ``` 
-
-For simple counts, the non-aggregation approach has a simpler syntax.  
-
-> [!NOTE] 
-> Using `$count` returns a single number; using the OData aggregation extension returns a formatted JSON.  
-  
-You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify the  following string in your query:
-
-`/WorkItems/$count?$filter=State eq 'In Progress'`
-
-Where the full OData query is: 
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count?
->   $filter=State eq 'In Progress'
-> ```
-
-For comparison, using data aggregations you add this snippet to your query:
-
-`/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)`
-
-Where the full OData query is: 
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $apply=
->    filter(State eq 'In Progress')/
->    aggregate($count as Count)
-> ``` 
 
 <a id="aggregation-extension" />
 
@@ -138,26 +58,6 @@ Where:
 
 Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your work tracking data. 
 
-<!---  Commenting these examples out as they are currently not supported. 
-
-**Return the count of work items:**
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $apply=aggregate($count as Count)
-```
-
-**Return a count of area paths**
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
-  $apply=aggregate($count as Count)
-```
-
- 
---> 
 
 **Return the sum of all remaining work**
 
@@ -179,10 +79,9 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
 
 ## Group results using the groupby clause
 
-The OData aggregation extension also supports a `groupby` clause that is identical to the SQL `GROUP BY` clause. You can use this clause to quickly break down numbers
-in more detail.  
+The OData aggregation extension also supports a `groupby` clause that is identical to the SQL `GROUP BY` clause. You can use this clause to quickly break down numbers in more detail.  
 
-For example, this clause will return a  count of work items:
+For example, thie following clause returns a  count of work items:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -259,8 +158,7 @@ It returns a result similar to this example:
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
-<!---
-For example, suppose you wanted to know how many areas are in each project. In OData, "count all areas and group them by project" is equivalent to "give me all projects and a count of areas for each project". This results in a query similar to:
+For example, suppose you wanted to know how many areas are in each project in an organization or collection. In OData, "count all areas and group them by project" is equivalent to "give me all projects and a count of areas for each project". This results in a query similar to:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -268,7 +166,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
---> 
+ 
 
 <a id="filter-aggregate" />
 
@@ -380,5 +278,96 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 
 ## Related articles 
 
-- [Query your work tracking data using OData Analytics](wit-analytics.md)  
+- [Define basic queries using OData Analytics](wit-analytics.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
+
+<!--- REMOVING THIS CONTENT AS IT IS NOW DUPLICATED 
+
+
+## Basic root URL
+
+Use this basic root URL as a prefix for all the examples provided in this article.
+
+::: moniker range="azure-devops"
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
+> ``` 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+> ```
+> 
+> [!NOTE]
+> The examples shown in this article are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL. 
+
+::: moniker-end
+
+<a id="simple-count" />
+
+## Simple count aggregations
+
+First, let's look at how to do counts without the aggregation extensions.
+
+Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items are defined in your organization, you add this string to your query:
+
+`/WorkItems/$count`
+
+Where the full OData query is: 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
+> ``` 
+> 
+
+For comparison, using the OData aggregation extension, you add this string to your query:
+
+`/WorkItems?$apply=aggregate($count as Count)`
+
+Where the full OData query is: 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $apply=aggregate($count as Count)
+> ``` 
+
+For simple counts, the non-aggregation approach has a simpler syntax.  
+
+> [!NOTE] 
+> Using `$count` returns a single number; using the OData aggregation extension returns a formatted JSON.  
+  
+You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify the  following string in your query:
+
+`/WorkItems/$count?$filter=State eq 'In Progress'`
+
+Where the full OData query is: 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count?
+>   $filter=State eq 'In Progress'
+> ```
+
+For comparison, using data aggregations you add this snippet to your query:
+
+`/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)`
+
+Where the full OData query is: 
+
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $apply=
+>    filter(State eq 'In Progress')/
+>    aggregate($count as Count)
+> ``` 
+
+-->

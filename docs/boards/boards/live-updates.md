@@ -4,17 +4,17 @@ titleSuffix: Azure Boards
 description: Learn how to turn live updates on or off for a Kanban board in Azure Boards.
 ms.custom: boards-kanban 
 ms.topic: how-to
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2017'
-ms.date: 10/15/2021
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 
 # Enable live updates in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="live-updates"></a>
 
@@ -32,7 +32,7 @@ Choose the :::image type="icon" source="../media/icons/view-options-icon.png" bo
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 From the Kanban board, choose the :::image type="icon" source="../media/icons/live-updates-icon.png" border="false"::: **Live updates** icon.  
 

@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Pipelines Sprint 166 Update
 description: See the Sprint 166 pipelines updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 03/16/2020
 ---
 

@@ -1,10 +1,10 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Add a Hub Group | Extensions for Azure DevOps
 description: Add a hub group in Azure DevOps for your extension.
 ms.assetid: 8186f578-27a0-4130-ace0-0279c863b1a5
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
@@ -12,9 +12,7 @@ ms.date: 08/04/2016
 
 # Add a hub group
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 We'll create a hub group and add a hub to it.
 If you haven't already, [create the Hello hub](./add-hub.md) first, and then follow these steps to create the hub group.
@@ -58,3 +56,5 @@ Here's the complete extension manifest with Hello in the samples hub group.
 	}
 }
 ```
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]

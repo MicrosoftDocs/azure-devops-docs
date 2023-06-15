@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-artifacts
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT

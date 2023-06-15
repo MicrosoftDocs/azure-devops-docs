@@ -7,14 +7,14 @@ ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
 ms.custom: seodec18, contperf-fy20q4
 ms.date: 10/18/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Classic release and artifacts variables
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -24,8 +24,6 @@ Classic release and artifacts variables are a convenient way to exchange and tra
 
 Variables are different from [Runtime parameters](../process/runtime-parameters.md) which are only available at template parsing time.
 
-> [!NOTE] 
-> This is a reference article that covers the classic release and artifacts variables. To understand variables in YAML pipelines, see [user-defined variables](../process/variables.md). When you migrate from a release pipeline to a YAML pipeline, the `Release.*` variables will not be populated.
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
@@ -43,9 +41,8 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
-> [!TIP]
-> You can view the [current values of all variables](#view-vars) for a release,
-and use a default variable to [run a release in debug mode](#debug-mode).
+> [!NOTE] 
+> For YAML pipelines, see [user-defined variables](../process/variables.md) and [predefined variables](../build/variables.md) for more details.
 
 ## Default variables
 
@@ -53,6 +50,9 @@ Information about the execution context is made available to running tasks throu
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
 Some of the most significant variables are described in the following tables.
 To view the full list, see [View the current values of all variables](#view-vars).
+
+> [!TIP]
+> You can view the [current values of all variables](#view-vars) for a release, and use a default variable to [run a release in debug mode](#debug-mode).
 
 ## System
 
@@ -87,7 +87,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
 | Release.Environments.{stage-name}.status | The deployment status of the stage.<br/><br />Example: `InProgress` |
 | Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
-| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
+| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Schedule` - the release started from a schedule. | 
 | Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
 | Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
 | Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |

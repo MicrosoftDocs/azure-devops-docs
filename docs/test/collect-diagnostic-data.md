@@ -1,24 +1,25 @@
 ---
 title: Collect diagnostic data
-description: Manual and exploratory testing - collect diagnostic data while testing web and desktop apps with Azure DevOps and Team Foundation Server (TFS)
+description: Learn about collecting diagnostic data while testing web and desktop apps with Azure Test Plans in manual and exploratory testing.
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2017'
-ms.date: 09/14/2021
+monikerRange: '<= azure-devops'
+ms.date: 12/06/2021
 ---
 
 # Collect diagnostic data while testing
 
-[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
 during the test. You can collect diagnostic data from
 web apps and from desktop apps,
-and view it in Azure Test Plans or Team Foundation Server.
+and view it in Azure Test Plans.
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
@@ -29,15 +30,15 @@ and view it in Azure Test Plans or Team Foundation Server.
 For web apps under test, you can use web-based Microsoft Test Runner. 
 For desktop apps, download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) to collect the following data on demand:
 
-* [Screen captures](#web-screenshot)
-* [Image action log](#web-log)
-* [Screen recordings](#web-recording)
+- [Screen captures](#web-screenshot)
+- [Image action log](#web-log)
+- [Screen recordings](#web-recording)
 
 > See [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md).
 
 <a name="web-screenshot"></a>
 <a name="collect-desktop"></a>
-### Screen capture
+## Screen capture
 
 Capture annotated screenshots from your app: 
 
@@ -48,7 +49,7 @@ Capture annotated screenshots from your app:
 
 1. Drag to select the area of the screen you want to 
    capture, or just capture the full screen.
- 
+
    ![Selecting the area of the screen to capture](media/collect-diagnostic-data/collect-diagnostic-data-03.png) 
 
 1. If required, edit the title of the screenshot and add 
@@ -59,9 +60,9 @@ Capture annotated screenshots from your app:
 1. Save your screenshot.  
 
    ![Saving the screenshot](media/collect-diagnostic-data/collect-diagnostic-data-05.png) 
- 
+
 <a name="web-log"></a>
-### Image action log
+## Image action log
 
 Capture your interactions with the web or desktop app as an image action log that provides context:
 
@@ -94,17 +95,22 @@ Capture your interactions with the web or desktop app as an image action log tha
    ![Viewing the data captured in the image action log](media/collect-diagnostic-data/collect-diagnostic-data-10.png) 
 
 <a name="web-recording"></a>
-### Screen recording
+## Screen recording
 
 Capture screen recordings from your apps:
 
 1. Open or switch to the Test Runner and choose the **Record screen** icon. 
- 
+
    ![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png) 
 
 1. Choose the entire screen, or choose an app to start recording.
- 
+
+   ::: moniker range=">=azure-devops-2020"
+   ![Select the screen or app to share](media/collect-diagnostic-data/choose-test-feedback-share.png)
+   ::: moniker-end
+   ::: moniker range="<=azure-devops-2019"
    ![Choosing the screen or app to record](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
+   ::: moniker-end
 
    If you create a bug while recording your screen, the 
    recording automatically stops and is added to the bug. 
@@ -112,10 +118,10 @@ Capture screen recordings from your apps:
 1. Finish recording your actions by choosing
    the **Stop** button. The recording is added to the test results 
    as an attachment.
- 
+
    ![Stopping a screen recording](media/collect-diagnostic-data/collect-diagnostic-data-13.png) 
 
-   If you do not stop the recording after ten minutes, it stops
+   If you do not stop the recording after 10 minutes, it stops
    automatically and is saved as an attachment to your test results.
    Restart the recording the **Record screen** icon if required. 
 
@@ -126,21 +132,21 @@ Capture screen recordings from your apps:
 
 <a name="view-data"></a>
 
-### View the diagnostic data
- 
+## View the diagnostic data
+
 When you create a bug while capturing diagnostic data, all the data captured 
 up to that point is included in the bug that is created. You can
 view it before you save the bug.
 
 ![Viewing the diagnostic data in the bug you are creating](media/collect-diagnostic-data/collect-diagnostic-data-15.png) 
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 
 If you want to collect advanced diagnostic data such as code coverage, 
 IntelliTrace, and Test Impact data in addition to the data items listed above,
 you must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)
 and other run settings in Microsoft Test Manager and run your 
-tests using Microsoft Test Manager. For more details, see 
+tests using Microsoft Test Manager. For more information, see 
 [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 <p />
 
@@ -148,11 +154,12 @@ tests using Microsoft Test Manager. For more details, see
 > If you have an older version of Microsoft Test Manager, we recommend you upgrade to the latest version.
 > However, if you have Microsoft Test Manager 2015 or an earlier version installed, you can choose **Microsoft Test Runner 2015 and earlier** when you launch the test runner using **Run with options**.
 > You must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
-> For more details, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
+> For more information, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 
 ## Related articles
 
-* [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.yml)
-
- 
+- [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+- [Overview of manual and exploratory testing](index.yml)
+- [Testing different configurations](test-different-configurations.md)
+- [Manage test results](how-long-to-keep-test-results.md)
+- [FAQs for manual testing](reference-qa.yml#repeatdifferent)

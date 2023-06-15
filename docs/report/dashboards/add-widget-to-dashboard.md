@@ -3,19 +3,19 @@ title: Add a widget to a team dashboard
 titleSuffix: Azure DevOps
 description: Learn how to select and configure widgets that you add to a team dashboard in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
-monikerRange: '>= tfs-2015'
-ms.date: 09/27/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 
 # Add widgets to a dashboard
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
@@ -51,7 +51,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Open a web browser, connect to your project, and select **Dashboards**. 
 
 ![Dashboards directory, previous navigation](media/dashboards-go-to.png) 
@@ -89,17 +89,14 @@ To remove a widget, select ![actions icon](../../media/icons/actions-icon.png) *
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard. Select ![add a widget icon](media/add-widget-icon.png) to add a widget to the dashboard.  
 
 The [widget catalog](widget-catalog.md) describes all available widgets, many of which are scoped to the selected team context.  
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
 Or, you can drag and drop a widget from the catalog onto the dashboard.
-
-::: moniker-end
 
 <a id="add-analytics-widget" />
 
@@ -119,7 +116,7 @@ This example shows how to add the Velocity widget available from Analytics to a 
 5. Select the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
 
 6. Next, configure the widget. For details, see the following articles: 
-	- [Configure burndown or Turnup](configure-burndown-burnup-widgets.md)
+	- [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
 	- [Configure cumulative flow](cumulative-flow.md)  
 	- [Configure lead/cycle time](cycle-time-and-lead-time.md)  
 	- [Configure velocity](team-velocity.md)  
@@ -134,14 +131,11 @@ This example shows how to add the Velocity widget available from Analytics to a 
 
 Most widgets support configuration, which may include specifying the title, setting the widget size, and other widget-specific variables.
 
-::: moniker range=">= tfs-2018"
-
 To configure a widget, add the widget to a dashboard, select open the ![actions icon](../../media/icons/actions-icon.png) menu, and select **Configure**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Open the create a dashboard dialog](media/add-widgets/configure-widget.png) 
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -164,16 +158,6 @@ Additional information is provided to configure the following widgets:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-To configure a widget, add the widget to a dashboard and then select the ![configure icon](media/icons/configure-icon.png) configure icon. 
-![Work item chart unconfigured widget](media/add-widget-configure-initial.png)  
- 
-Once you've configured the widget, you can edit it by opening the actions menu. 
-
-<img src="media/add-widget-configure.png" alt="Edit configured widget " /> 
-
-::: moniker-end
 
 <a id="move-delete" />
 
@@ -181,9 +165,6 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 To move a widget, you need to enable the dashboard edit mode. To delete a widget, select the delete option provided from the widget&#39;s **More actions** menu. 
 
-::: moniker range="tfs-2015"
-Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items. 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 Select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
@@ -198,12 +179,8 @@ When you're finished with your changes, select  **Done Editing** to exit dashboa
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
 
 To remove a widget, select the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
@@ -212,27 +189,19 @@ To remove a widget, select the ![actions icon](../../media/icons/actions-icon.pn
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
 
-To remove a widget, select the widget's ![Trash icon](media/dashboard-trash-icon.png) or ![Delete icon](media/dashboard-delete-icon.png) delete icons.  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2018"
-
 
 <a id="copy" />
 
 ## Copy a widget
 
 You can copy a widget to the same dashboard or to another team dashboard. If you want to move widgets you've configured to another dashboard, here's how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
-::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2019"
 To copy a configured widget to another team dashboard, select the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
@@ -248,6 +217,7 @@ To copy a configured widget to another team dashboard, select
 the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
 
 <img src="media/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" />  
+
 ::: moniker-end
 
 
@@ -266,6 +236,7 @@ In addition to the widgets described in the Widget catalog, you can:
 - Create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md).
 
 ## Disabled Marketplace widgets 
+
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" />   
@@ -283,17 +254,17 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Analytics-based widgets](../dashboards/analytics-widgets.md)
 - [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 ::: moniker-end
 
 

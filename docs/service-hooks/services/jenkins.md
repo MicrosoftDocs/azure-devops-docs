@@ -1,16 +1,17 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
+ms.custom: devx-track-jenkins
 ms.topic: conceptual
 title: Create a service hook with Jenkins
 description: Use Jenkins with your Azure DevOps organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 10/01/2020
 ---
 
 # Create a service hook for Azure DevOps with Jenkins
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you use Jenkins to build your apps, you can store your code in Azure DevOps and continue to use Jenkins for your continuous integration builds.
 You can trigger a Jenkins build when you push code to your project's
@@ -23,6 +24,12 @@ Git repository or when you check in code to Team Foundation version control.
 1. If you haven't already, set up a [Jenkins](https://jenkins-ci.org/) server.
 
 2. If you're setting up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
+
+3. Add or change `hudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL` [system property](https://plugins.jenkins.io/git/#plugin-content-push-notification-from-repository) as **disabled** before -jar parameter inside of `<arguments>` tag in _jenkins.xml_ configuration file.
+
+   `
+   -Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled
+   `
 
 ## Set up a Jenkins build
 
@@ -65,7 +72,7 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Go to your project Service Hooks page: 
 

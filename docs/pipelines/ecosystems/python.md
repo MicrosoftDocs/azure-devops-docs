@@ -1,32 +1,36 @@
 ---
-title: Build and test Python apps
+title: Quickstart - Use Azure Pipelines to build and publish a Python app
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 06/01/2021
+ms.date: 12/20/2022
 monikerRange: '>=azure-devops-2019'
-ms.custom: devx-track-python
+ms.custom: devx-track-python, freshness-fy22q2
 ---
 
 # Build Python apps
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a simple pipeline. 
+You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. This quickstart walks through how to create a simple Flask app with three pages that use a common base template and deploy it with Azure DevOps. 
 
-If you want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
+You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
 
-To create and activate an Anaconda environment and install Anaconda packages with `conda`, see [Run pipelines with Anaconda environments](./anaconda.md).
+To learn about configuring Python in pipelines, see [Customize Python](customize-python.md).
 
-## Create your first pipeline
+If you want a more complex example, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
-::: moniker range=">=azure-devops-2020"
+## Prerequisites
 
-> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+You must have the following items in Azure DevOps:
 
-::: moniker-end
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
-### Get the code
+
+## 1 - Fork the sample code
+
 ::: moniker range="azure-devops-2019"
 
 Import this repo into your Git repo in Azure DevOps Server 2019:
@@ -35,60 +39,84 @@ Import this repo into your Git repo in Azure DevOps Server 2019:
 
 ::: moniker range=">=azure-devops-2020"
 
-Import this repo into your Git repo:
+For the following sample Python Flask tutorial:
 
 ::: moniker-end
-
 
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 
-::: moniker range=">=azure-devops-2020"
-
-## Sign in to Azure Pipelines
-
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
-
-[!INCLUDE [include](includes/create-project.md)]
-
-::: moniker-end
-
-### Create the pipeline
+## 2 - Create your pipeline
 
 ::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
 
-> When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
+1. Go to your project and select **Pipelines** > **Create a new pipeline**.
 
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+1. Select **GitHub** as the location of your source code.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+1. If you're redirected to GitHub to sign in, enter your GitHub credentials.
 
-8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+1. When the list of repositories appears, select your Node.js sample repository.
 
-   If you want to watch your pipeline in action, select the build job.
+1. Azure Pipelines analyzes the code in your repository and recommends the `Python package` template for your pipeline. Select that template.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+1. Azure Pipelines generates a YAML file for your pipeline. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
 
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+1. A new run starts. Wait for the run to finish.
 
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+When you're done, you have a YAML file *azure-pipelines.yml* in your repository that's ready for you to customize.
 
-See the sections below to learn some of the more common ways to customize your pipeline.
+### Customize your pipeline
+
+1. Edit the `azure-pipelines.yml` file in your repository and update the Python version references.   
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+strategy:
+  matrix:
+    Python37:
+      python.version: '3.7'
+    Python38:
+      python.version: '3.8'
+    Python39:
+      python.version: '3.9'
+    Python310:
+      python.version: '3.10'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- script: |
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
+```
 
 ::: moniker-end
+
 
 ::: moniker range="azure-devops-2019"
 
-### YAML
 1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
 ``` yaml
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -108,219 +136,18 @@ steps:
 
 5. When you're ready to make changes to your pipeline, **Edit** it.
 
-6. See the sections below to learn some of the more common ways to customize your pipeline.
-
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
 
-## Build environment
+## 3 - Run your pipeline
 
-You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
+Save and run your pipeline. After your pipeline runs, verify that the jobs ran successfully. 
+    
+:::image type="content" source="media/python-successful-jobs.png" alt-text="Screenshot of complete Python jobs.":::
 
-### Use a specific Python version
+## Next steps
 
-To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.6:
+Congratulations, you've successfully completed this quickstart! To run Python scripts or run specific versions of Python, see [Configure Python](customize-python.md).
 
-```yaml
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.6'
-```
-
-### Use multiple Python versions
-
-To run a pipeline with multiple Python versions, for example to test a package against those versions, define a `job` with a `matrix` of Python versions. Then set the `UsePythonVersion` task to reference the `matrix` variable.
-
-```yaml
-jobs:
-- job: 'Test'
-  pool:
-    vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
-  strategy:
-    matrix:
-      Python27:
-        python.version: '2.7'
-      Python35:
-        python.version: '3.5'
-      Python36:
-        python.version: '3.6'
-
-  steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '$(python.version)'
-
-```
-You can add tasks to run using each Python version in the matrix.
-
-::: moniker-end
-
-## Run Python scripts
-
-To run Python scripts in your repository, use a `script` element and specify a filename. For example:
-
-```yaml
-- script: python src/example.py
-```
-
-You can also run inline Python scripts with the [Python Script task](../tasks/utility/python-script.md):
-
-```yaml
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'inline'
-    script: |
-      print('Hello world 1')
-      print('Hello world 2')
-```
-
-To parameterize script execution, use the `PythonScript` task with `arguments` values to pass arguments into the executing process. You can use `sys.argv` or the more sophisticated `argparse` library to parse the arguments.
-
-```yaml
-- task: PythonScript@0
-  inputs:
-    scriptSource: inline
-    script: |
-      import sys
-      print ('Executing script file is:', str(sys.argv[0]))
-      print ('The arguments are:', str(sys.argv))
-      import argparse
-      parser = argparse.ArgumentParser()
-      parser.add_argument("--world", help="Provide the name of the world to greet.")
-      args = parser.parse_args()
-      print ('Hello ', args.world)
-    arguments: --world Venus
-```
-
-### Install dependencies
-
-You can use scripts to install specific PyPI packages with `pip`. For example, this YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
-
-```yaml
-- script: python -m pip install --upgrade pip setuptools wheel
-  displayName: 'Install tools'
-```
-
-### Install requirements
-
-After you update `pip` and friends, a typical next step is to install dependencies from *requirements.txt*:
-
-```yaml
-- script: pip install -r requirements.txt
-  displayName: 'Install requirements'
-```
-
-<a name="test"></a>
-## Run tests
-
-You can use scripts to install and run various tests in your pipeline.
-
-### Run lint tests with flake8
-
-To install or upgrade `flake8` and use it to run lint tests, use this YAML:
-
-```yaml
-- script: |
-    python -m pip install flake8
-    flake8 .
-  displayName: 'Run lint tests'
-```
-
-### Test with pytest and collect coverage metrics with pytest-cov
-
-Use this YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format:
-
-```yaml
-- script: |
-    pip install pytest pytest-azurepipelines
-    pip install pytest-cov
-    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
-  displayName: 'pytest'
-```
-::: moniker range=">=azure-devops-2020"
-### Run tests with Tox
-
-Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
-
-```yaml
-- job:
-
-  pool:
-    vmImage: 'ubuntu-latest'
-  strategy:
-    matrix:
-      Python27:
-        python.version: '2.7'
-      Python35:
-        python.version: '3.5'
-      Python36:
-        python.version: '3.6'
-      Python37:
-        python.version: '3.7'
-
-  steps:
-  - task: UsePythonVersion@0
-    displayName: 'Use Python $(python.version)'
-    inputs:
-      versionSpec: '$(python.version)'
-
-  - script: pip install tox
-    displayName: 'Install Tox'
-
-  - script: tox -e py
-    displayName: 'Run Tox'
-```
-
-### Publish test results
-
-Add the [Publish Test Results task](../tasks/test/publish-test-results.md) to publish JUnit or xUnit test results to the server:
-
-```yaml
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Publish test results for Python $(python.version)'
-```
-
-### Publish code coverage results
-
-Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results to the server. You can see coverage metrics in the build summary, and download HTML reports for further analysis.
-
-```yaml
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: Cobertura
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-```
-
-## Package and deliver code
-
-To authenticate with `twine`, use the [Twine Authenticate task](../tasks/package/twine-authenticate.md) to store authentication credentials in the `PYPIRC_PATH` environment variable.
-
-```yaml
-- task: TwineAuthenticate@0
-  inputs:
-    artifactFeed: '<Azure Artifacts feed name>'
-    pythonUploadServiceConnection: '<twine service connection from external organization>'
-```
-
-Then, add a custom [script](../yaml-schema.md#script) that uses `twine` to publish your packages.
-
-```yaml
-- script: |
-   twine upload -r "<feed or service connection name>" --config-file $(PYPIRC_PATH) <package path/files>
-```
-
-You can also use Azure Pipelines to [build an image](containers/build-image.md) for your Python app and [push it to a container registry](containers/push-image.md).
-
-::: moniker-end
-
-## Related extensions
-
-- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
-- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-- [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  
+> [!div class="nextstepaction"]
+> [Configure Python](customize-python.md)

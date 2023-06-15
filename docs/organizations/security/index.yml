@@ -1,0 +1,148 @@
+### YamlMime:Landing
+
+title: Security, Permissions, & Access documentation 
+summary: Assign users to security groups, manage permissions, access levels, and billing for Azure DevOps. 
+
+metadata:
+  title: Security, permissions, access, and billing documentation
+  titleSuffix: Azure DevOps
+  description: Assign users to security groups, manage permissions, access levels, and billing for Azure DevOps.  
+  ms.subservice: azure-devops-security
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 02/18/2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About permissions, access, and security groups
+            url: about-permissions.md
+      - linkListType: quickstart
+        links:
+          - text: View permissions
+            url: view-permissions.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add users to a team or project
+            url: add-users-team-project.md
+          - text: Request change in permissions
+            url: request-changes-permissions.md
+          - text: Add or remove users or security groups
+            url: add-remove-manage-user-group-security-group.md 
+  - title: Access levels
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About access levels
+            url: access-levels.md
+          - text: Stakeholder access quick reference
+            url: stakeholder-access.md
+      - linkListType: quickstart
+        links:
+          - text: Add users or groups to an access level (on-premises)
+            url: change-access-levels.md?view=azure-devops-2020&preserve-view=true
+      - linkListType: tutorial
+        links:
+          - text: Get started as a Stakeholder
+            url: get-started-stakeholder.md
+  - title: Manage user access (cloud) 
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create an organization 
+            url: ../accounts/create-organization.md?toc=/azure/devops/organizations/security/toc.json  
+      - linkListType: how-to-guide
+        links:
+          - text: Add users to your organization 
+            url: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json  
+          - text: Connect your organization to Azure Active Directory
+            url: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/organizations/security/toc.json  
+          - text: Provide Stakeholders access to edit pipelines
+            url: provide-stakeholder-pipeline-access.md 
+  - title: Manage user access (on-premises) 
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Change access levels 
+            url: change-access-levels.md 
+      - linkListType: how-to-guide
+        links:
+          - text: Add users or groups to a team or project
+            url: add-users-team-project.md 
+  - title: Manage billing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Billing overview
+            url: ../billing/overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Buy Basic access
+            url: ../billing/buy-basic-access-add-users.md
+          - text: Set up billing for your organization
+            url: ../billing/set-up-billing-for-your-organization-vs.md
+          - text: Try Azure Test Plans for free
+            url: ../billing/try-additional-features-vs.md
+  - title: Authenticate, PATs, & secure applications 
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About security, authentication, & authorization
+            url: about-security-identity.md  
+          - text: Authentication guidance 
+            url: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json   
+      - linkListType: how-to-guide
+        links:
+          - text: Use personal access tokens (PATs)
+            url: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json   
+          - text: Manage PATs via API
+            url: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/security/toc.json   
+          - text: Revoke user PATs 
+            url: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/security/toc.json   
+          - text: Authorize access to REST APIs with OAuth 2.0
+            url: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/security/toc.json  
+  - title: Secure projects  
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Grant or restrict permissions to select tasks
+            url: restrict-access.md 
+      - linkListType: quickstart
+        links:
+          - text: Look up a project administrator 
+            url: look-up-project-administrators.md
+          - text: Change project-level permissions 
+            url: change-project-level-permissions.md 
+      - linkListType: how-to-guide
+        links:
+          - text: Set object-level permissions
+            url: set-object-level-permissions.md 
+  - title: Quick reference guides
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security quick reference index
+            url: quick-reference-index-security.md
+          - text: Default permissions quick reference 
+            url: permissions-access.md 
+          - text: Security management tools 
+            url: security-tools-reference.md
+      - linkListType: concept
+        links:
+          - text: Security key concepts
+            url: security-glossary.md
+      - linkListType: reference
+        links:
+          - text: Permissions lookup guide
+            url: permissions-lookup-guide.md
+          - text: Permissions and groups reference
+            url: permissions.md
+ 

@@ -2,10 +2,10 @@
 title: Manage requirements, Agile methods
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage requirements 
-ms.technology: devops-agile 
-ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-cross-service
+ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 09/08/2020
 ---
@@ -14,7 +14,7 @@ ms.date: 09/08/2020
 
 # Manage requirements 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. This article maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
@@ -184,7 +184,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 **Example Kanban board** 
 
-![Screenshot of Kanban board, Agile template, update status of work item](../boards/boards/media/ALM_CC_MoveCard.png) 
+:::image type="content" source="../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot of Kanban board, Agile template, update status of work item.":::
 
 Each team can quickly configure their board and the cards to support their business needs.  
  
@@ -358,7 +358,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 - [About work items](../boards/work-items/about-work-items.md) 
 - [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md)
-- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About processes and process templates](../boards/work-items/guidance/choose-process.md)
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
@@ -414,6 +414,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Notifications
 
-- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
-- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-- [Manage notifications for a team or group](../notifications/manage-team-group-global-organization-notifications.md)
+- [Default and supported notifications](../organizations/notifications/oob-built-in-notifications.md) 
+- [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+- [Manage notifications for a team or group](../organizations/notifications/manage-team-group-global-organization-notifications.md)

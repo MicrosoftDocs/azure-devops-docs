@@ -3,18 +3,18 @@ title: Forecast your product backlog in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to determine how much work your team can deliver across several sprints by forecasting in Azure Boards. 
 ms.custom: boards-sprints    
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 04/01/2022
 ---
 
 # Forecast your product backlog
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints. Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -61,7 +61,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a state category of *Proposed* or *In Progress* show up on the velocity chart. (for details, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md)).
 
 **Recommended:**  
-*	Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).  
+*	Define and size backlog items to [minimize variability](../../report/dashboards/team-velocity.md#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
 *	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features. The map creates parent-child links in the background.  
@@ -163,7 +163,7 @@ To forecast your product backlog, complete the following actions.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To forecast your product backlog, complete the following actions.
 
@@ -201,8 +201,6 @@ To forecast your product backlog, complete the following actions.
 *	Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint. 
 *	Question forecast results where the effort of an item is near to, or greater than, team velocity.  
 
-::: moniker range=">= tfs-2018" 
-
 In this example, a Velocity of 20 is used. The forecast tool limits the number of items that are shown between the forecast lines to those items that can be completed within the sprint or using unused velocity points from the previous sprint. 
 
 The forecast tool shows between two and four items can be worked on during Iterations 2 through 6 based on the number of Story Points you assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next. 
@@ -216,45 +214,6 @@ The forecast tool shows between two and four items can be worked on during Itera
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 	
-::: moniker-end
-
-::: moniker range="tfs-2017"
-<!--- ### TFS 2017.2 and TFS 2017.3  -->
-
-> [!NOTE]  
-> The forecast logic changed for TFS 2017.2. Previously, the forecast tool limited the number of items shown between the forecast lines to those that could be completed within the sprint or using unused velocity points from the previous sprint. 
->
-> Now, all items listed between the lines can be started in the sprint labeled by the first line, but may not be completed within the sprint. The amount of effort (Effort, Story Points, Size) that can't be completed in one sprint are carried over to the next sprint. For example, for a velocity of 15, if Item 1 has 35 Effort points, 20 Effort points are carried over to next sprint, then again 5 Effort points are carried over to the sprint after that.
-
-In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be started or completed during the first six sprints. This total is based on the amount of Effort that is assigned to each work item. The forecast logic carries over effort points from one sprint to the next. 
-
-- **Sprint 1**: 19 Effort points, items 1 and 2 can be completed and item 3 can be started; 4 Effort points are carried over into the next sprint.
-- **Sprint 2**: 13 Effort points, item 3 from the previous sprint can be completed, item 4 can be completed, and item 5 can be started; 2 Effort points are carried over into the next sprint.
-- **Sprint 3**: 15 Effort points, item 5 from the previous sprint and items 6 through 8 can be completed. Item 9 can be started and 2 Effort points are carried over into the next sprint. 
-- **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed. No Effort points are carried over into the next sprint.
-- **Sprint 5**: 19 Effort points, items 12 and 13 can be completed and item 14 can be started; 4 Effort points are carried over into the next sprint.
-
-![Web portal, Backlog, Forecast On](media/vel-forecast-forecast-ts.png)  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-<!--- ### TFS 2013 - TFS 2017.1 -->
-
-The forecast tool shows only those work items that can be completed within a sprint between the forecast lines. Unused velocity points from one sprint are considered in the forecast of the following sprint. The forecasted sprint is listed along with the last item that can be completed during that sprint. 
-
-In this example, a velocity of 20 is used. The first two items with a total of 13 Effort points can be completed in Sprint 2.
-
-In summary:  
-- **Sprint 2**: 13 Effort points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint  
-- **Sprint 3**: 24 Effort points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint  
-- **Sprint 4**: 21 Effort points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint     
-- **Sprint 5**: 16 Effort points, items 9 through  12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint    
-- **Sprint 6**: 19 Effort points, items 13 through 15 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint     
-
-![Web portal, Enter a velocity to show forecast lines](media/ALM_VF_Forecast_1.png)  
-
-::: moniker-end
 
 ## Determine the velocity needed to complete all items in the backlog
 
@@ -262,7 +221,6 @@ Another way to use the forecast tool is to enter different velocity values until
 
 You can then assess the delta between the current team's velocity and the required velocity. The delta helps determine what other resources are required to meet production demands within a required time. 
 
- 
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -1,286 +1,240 @@
 ---
 title: Use labels to take a snapshot of your files
 titleSuffix: Azure Repos
-description: Use labels to take a snapshot of your files
+description: Find out how you can use Team Foundation Version Control labels to take a snapshot of your files. See how to create, list, edit, apply, and delete labels.
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
-ms.technology: devops-code-tfvc
-ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.service: azure-devops-repos
+ms.topic: how-to
+ms.date: 11/29/2022
+ms.custom: kr2b-contr-experiment
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
+# Use labels to take a snapshot of your files in Azure Repos
 
-# Use labels to take a snapshot of your files
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+Team Foundation Version Control (TFVC) labels provide a way for you to take a snapshot of your files. Later, you can refer back to that snapshot. By using your label, you can view, build, or even roll back a large set of files to the state they were in when you applied the label.
 
-Labels let you take a snapshot of your files so that at a later date you can refer back to that snapshot. By using your label, you can view, build, or even roll back a large set of files to the state they were in when you applied the label.
+## Prerequisites
 
-**Required permissions**
+- To apply a label, you must have the **Label** permission set to **Allow**.
+- To find, list, or view labels, you must have the **Read** permission set to **Allow**.
+- To modify or delete a label, you must own the label or have the **Administer Labels** permission set to **Allow**.
 
-To apply a label, you must have the **Label** permission set to **Allow**. To find, list, or view labels, you must have the **Read** permission set to **Allow**. To modify or delete a label, you must own the label or have the **Administer Labels** permission set to **Allow**.
+## Use labels
 
+In many software projects, when the code has reached a reasonable level of quality and stability, the team builds and releases a new version of the product. The team needs to mark the current version of each file. Even as the files continue to change, the team can still get and build the new version of every file in their project.
 
-## Using Labels
+Theoretically, you could record the ID of each changeset for each file manually. But this kind of process isn't practical. TFVC makes the job easy. Apply a label to the folder, branch, or project that contains the files. You can give the label a name that follows whatever naming convention you prefer. Some examples of label names include: "Sprint 5," "M1," "Beta2," and "Release Candidate 0."
 
-In many software projects, when the code has reached a reasonable level of quality and stability, the team will build and release a new version of the product. The team needs to mark the current version of each file so that even as the files continue to change, the team can still get and build the new version of every file in their project.
+After you apply the label, you can use it to qualify operations such as building, branching, merging, comparing, and getting specific versions of files and folders.
 
-Theoretically, you could record the ID of each changeset for each file manually; but clearly this kind of process is not practical. Team Foundation version control makes the job simple: You apply a label to the folder, branch, or project that contains the files. You can give the label a name that follows whatever naming convention you prefer. Some examples of label names include: "Sprint 5", "M1", "Beta2", and "Release Candidate 0".
-
-After you have applied the label, you can use it to qualify operations such as building, branching, merging, comparing, and getting specific versions of files and folders.
-
-Sometimes after you apply a label you decide that you need to change it. Team Foundation version control enables you to apply a label to additional files, remove a label from certain files, and even to modify which version of a specific file to which the label applies.
-
-> [!TIP]
-> Applying a label provides many of the same benefits as creating a branch, but typically with lower cost and complexity. The tradeoff is that for large databases, operations such as merging may take much longer when running against a label.
-
-## Apply a Label
+Sometimes after you apply a label, you decide that you need to change it. TFVC provides a way for you to apply a label to additional files, remove a label from certain files, and modify which version of a specific file a label applies to.
 
 > [!TIP]
-> When you use Visual Studio to apply a label that already exists, the operation removes the label from all file versions and then applies the label. From the command prompt, however, the label operation is additive. See [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
+> Applying a label provides many of the same benefits as creating a branch, but typically with lower cost and complexity. The tradeoff is that for large databases, operations such as merging might take much longer than usual when running against a label.
 
-### Apply a label
-
-1.  In **Source Control Explorer**, open the shortcut menu for the collection, project, branch, folder, or file to which you want to apply a label and choose **Advanced**, **Apply Label**.
-
-    The **New Label** dialog box appears.
-
-2.  In the **Name** box, type a name for the label.
-
-3.  (Optional) Type your comments in the **Comment** box.
-
-4.  In the **Version** list, **Latest Version** is selected by default. This option is the one most typically used, but if you need the label to target a specific version, select:
-
-    -   **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
-
-    -   **Date**: Specify a date in the **Date** box or select a date from the calendar on the drop-down menu.
-
-    -   **Label**: Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or choose the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
-
-    -   **Workspace Version**: The label is created for the version in your workspace.
-
-5.  When you are satisfied with your settings, perform one of the following steps:
-
-    -   To apply the label, choose **Create**.
-
-    -   To apply the label and then modify it after it has been applied, choose **Create and Edit**. This applies the label and then displays the **Label** window. For more information about using the **Label** window to edit a label, see [Use the Label Window to Work with Labels](use-labels-take-snapshot-your-files.md#label_window).
+## Apply a label
 
 > [!NOTE]
-> When you apply a label using a name that already exists, the system warns you and asks if you want to continue. If you choose **OK** to continue, any items not contained in the path to which you are applying the label will no longer have that label.
+> When you use Visual Studio to apply a label that already exists, the operation removes the label from all file versions and then applies the label. From the command prompt, however, the label operation is additive. See [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
 
-## Rename a Label
+1. In Visual Studio, on the **View** menu, select **Other Windows** > **Source Control Explorer**.
 
-While you cannot modify the name of an existing label, you can easily apply a new label to exactly the same files and same versions to which another label applies.
+1. In Source Control Explorer, right-click the collection, project, branch, folder, or file that you want to apply a label to, and then select **Advanced** > **Apply Label**. The **New Label** dialog box appears.
 
-### Apply a label based on an existing label
+1. In the **Name** box, enter a name for the label.
 
-1.  In Source Control Explorer, open the shortcut menu for the project collection node (the root node), and then choose **Advanced**, **Apply Label**.
+1. (Optional) In the **Comment** box, enter a comment.
 
-    The **New Label** dialog box appears.
+1. In the **Version** list, **Latest Version** is selected by default. This option is the one that's most typically used. If you need the label to target a specific version, select one of the following options:
 
-2.  In the **Name** box, type a name for the label.
+   - **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, select the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
 
-3.  (Optional) In the **Comment** box, type a comment.
+   - **Date**: Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
 
-4.  In **Version** list, select **Label**.
+   - **Label**: Specify an existing label to base the new label on. Either enter the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, edit, and remove labels](#list-find-view-edit-and-remove-labels).
 
-    The **Label** box appears.
+   - **Workspace Version**: Create the label for the version in your workspace.
 
-5.  Perform one of the following steps:
+1. When you're satisfied with your settings, take one of the following steps:
 
-    -   Type the name of the existing label.
+   - To apply the label, select **Create**.
 
-    -   If you are not sure of the name of the existing label, choose the browse button with the ellipses (...) next to the **Label** box.
+   - To apply the label and then modify it after it has been applied, select **Create and Edit**. This action applies the label and then displays the **Label** window. For more information about using the **Label** window to edit a label, see [Use the Label window to work with labels](#use-the-label-window-to-work-with-labels).
 
-        The **Find Label** dialog box appears.
+> [!NOTE]
+> When you apply a label that uses a name that already exists, the system warns you and asks whether you want to continue. If you select **OK** to continue, TFVC removes that label from any items that aren't in the path that you're applying the label to.
 
-        Use the options in the **Find Label** dialog box to filter the list of labels and find the existing label to which you want to apply the new label. (For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).)
+## Rename a label
 
-6.  Choose **Create**.
+You can't modify the name of an existing label. But you can easily apply a new label to exactly the same files and same versions that another label applies to.
 
-7.  (Optional) After you have created the new label, you can remove the old label. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
+1. In Source Control Explorer, right-click the project collection node (the root node), and then select **Advanced** > **Apply Label**. The **New Label** dialog box appears.
 
-<a name="find_label"></a>
+1. In the **Name** box, enter a name for the label.
 
-## List, Find, View, Edit and Remove Labels
+1. (Optional) In the **Comment** box, enter a comment.
 
-There are two ways to list and find labels: the **Find Label** dialog box and the **Label** tab in the **History** window. After you find the label you are interested in, you can then view it, edit it, remove it, or work with the files to which it applies.
+1. In **Version** list, select **Label**. The **Label** box appears.
+
+1. Take one of the following steps:
+
+   - Enter the name of the existing label.
+
+   - If you aren't sure of the name of the existing label, select the browse button with the ellipses (...) next to the **Label** box. The **Find Label** dialog box appears. Use the options in the **Find Label** dialog box to filter the list of labels and find the existing label that you want to apply the new label to. For more information, see [Find, edit, and remove labels](#list-find-view-edit-and-remove-labels).
+
+1. Select **Create**.
+
+1. (Optional) After you've created the new label, you can remove the old label. For more information, see [Find, edit, and remove labels](#list-find-view-edit-and-remove-labels).
+
+## List, find, view, edit, and remove labels
+
+There are two ways to list and find labels: the **Find Label** dialog box and the **Label** tab in the **History** window. After you find the label that you're interested in, you can view, edit, or remove it. You can also work with the files that the label applies to.
 
 ### Find and work with labels by using the Find Label dialog box
 
-1.  In Source Control Explorer, on the menu bar choose **File**, **Source Control**, **Find**, **Find Label**.
+1. In Source Control Explorer, on the menu bar, select **File** > **Source Control** > **Find** > **Find Label**. The **Find Label** dialog box appears.
 
-    The **Find Label** dialog box appears.
+1. (Optional) Refine your search by performing one or more of the following steps:
 
-2.  (Optional) Refine your search by performing one or more of the following steps:
+   - In the **Name** text box, enter the name of the label.
 
-    -   In the **Name** text box, type the name of the label.
+   - In the **Project** list, select the project that contains the label that you want to find.
 
-    -   In the **Project** list, select the project that contains the label that you want to find.
+   - In the **Owner** text box, enter the name or alias of the owner of the label.
 
-    -   In the **Owner** text box, type the name or alias of the owner of the label.
+1. Select **Find**. The **Results** list displays labels that match the search criteria that you entered.
 
-3.  Choose **Find**.
+1. (Optional) Take one of the following steps:
 
-    The **Results** list displays labels that match the search criteria that you entered.
+   - To view or edit a label, select it and select **Edit**. The **Label** window appears. For more information, see [Use the Label window to work with labels](#use-the-label-window-to-work-with-labels).
 
-4.  (Optional) Perform one of the following steps:
+   - To delete a label, select it and select **Delete**.
 
-    -   To view or edit a label, select it and choose **Edit**.
-
-        The **Label** window appears. For more information, see [Use the Label Window to Work with Labels](use-labels-take-snapshot-your-files.md#label_window).
-
-    -   To delete a label, select it and choose **Delete**.
-
-    -   Choose **Close**.
-
-Sometimes you may not be sure of the name of a label, but you know that the label was applied to a particular item under version control. The following procedure explains how to find and then work with a label in this situation.
+   - Select **Close**.
 
 ### List and work with labels that apply to a specific item
 
-1.  In Source Control Explorer, open the shortcut menu for the item to which the label you want to find applies, and then choose **View History**.
+Sometimes you might not be sure of the name of a label, but you know that the label was applied to a particular item under version control. The following procedure explains how to find and work with a label in this situation.
 
-    The **History** window appears.
+1. In Source Control Explorer, right-click an item that the label was applied to, and then select **View History**. The **History** window appears.
 
-2.  Choose the **Labels** tab to display the list of labels that apply to this item.
+1. Select the **Labels** tab to display the list of labels that apply to this item.
 
-3.  (Optional) Perform one of the following steps:
+1. (Optional) Take one of the following steps:
 
-    -   To view or edit a label, open its shortcut menu and choose **Edit Label**.
+   - To view or edit a label, right-click the label, and then select **Edit Label**. The **Label** window appears. For information about how to use this window, see [Use the Label window to work with labels](#use-the-label-window-to-work-with-labels).
 
-        The Label window appears. For information about how to use this window, see [Use the Label Window to Work with Labels](use-labels-take-snapshot-your-files.md#label_window).
+   - To delete a label, right-click the label, and then select **Delete Label**.
 
-    -   To delete a label, open its shortcut menu and choose **Delete Label**.
+   - Right-click the label, and then select another action such as **Get This Version** or **Compare**.
 
-    -   Open the shortcut menu for the label and choose other actions such as **Get This Version**, and **Compare**.
+For more information about how to use the label tab in the **History** window, see [Get the history of an item](get-history-item.md).
 
-For more information about how to use the label tab in the History window, see [Get the history of an item](get-history-item.md).
+## Download labeled versions of files to your workspace
 
-## Download Labeled Versions of Files to Your Workspace
+Labeling a set of files is like taking a snapshot of how they existed at a certain point in time. Weeks or months after you've taken this snapshot, you might need to view or work with the files as they existed in that snapshot. The following procedure explains how to download the labeled versions of a set of files to your workspace.
 
-Labeling a set of files is like taking a snapshot of how they existed at a certain point in time. Weeks or months after you have taken this snapshot, you may need to view or work with the files as they existed in that snapshot. The following procedure explains how to download the labeled versions of a set of files to your workspace.
+1. In Source Control Explorer, right-click the project collection, project, branch, or folder that contains the items that you want to download, and then select **Advanced** > **Get Specific Version**. The **Get** dialog box appears.
 
-### Download labeled versions of files to your workspace
+1. From the **Type** list, select **Label**, and then either enter the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information about how to use this dialog box, see [Find, edit, and remove labels](#list-find-view-edit-and-remove-labels).
 
-1.  In Source Control Explorer, open the shortcut menu for the project collection, project, branch, or folder that contains the items you want to download and then choose **Advanced**, **Get Specific Version**.
+1. Select any other appropriate options in the **Get** dialog box.
 
-    The **Get** dialog box appears.
-
-2.  From the **Type** list, select **Label**, and then either type the label name in the **Label** box, or choose the ellipses (**...**) to open the **Find Label** dialog box. For more information about how to use this dialog box, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
-
-3.  Review, and if appropriate, select any of the additional options in the **Get** dialog box.
-
-4.  Choose **Get**.
+1. Select **Get**.
 
 <a name="label_window"></a>
 
-## Use the Label Window to Work with Labels
+## Use the Label window to work with labels
 
-After you have opened the Label window by using one of the preceding procedures, you are ready to begin working with the label. At the top of the window is a box that displays the comment, which you can edit if you want.
+After you open the **Label** window by using one of the preceding procedures, you're ready to begin working with the label. At the top of the window, a box displays the comment, which you can edit.
 
-You can use the Label window to perform the following tasks:
+You can use the **Label** window to perform the following tasks:
 
--   Add an item to the label
-
--   Remove an item from the label
-
--   Change the version of a file
-
--   Perform other actions on an item
+- Add an item to the label
+- Remove an item from the label
+- Change the version of a file
+- Perform other actions on an item
 
 ### Add an item to the label
 
-1.  In the **Label** window, choose **Add Item**.
+1. In the **Label** window, select **Add Item**. The **Choose Item Version** dialog box appears.
 
-    The **Choose Item Version** dialog box appears.
+1. In the **Choose Item Version** dialog box, navigate to the item that you want to add and then select it.
 
-2.  In the **Choose Item Version** dialog box, navigate to and then select the item that you want to add.
+   > [!TIP]
+   > You can select and hold the **Ctrl** or **Shift** keys and then select multiple items.
 
-    > [!TIP]
-    > You can press and hold the CONTROL or SHIFT keys and then select multiple items.
+1. (Optional) If you need the label to target a specific version, from the **Version** list, select a version:
 
-3.  (Optional) If you need the label to target a specific version, from the **Version** list, select:
+   - **Latest Version**: Apply the label to the latest version that's in version control.
 
-    -   **Latest Version**: The label will be applied to the latest version that is in version control.
+   - **Changeset**: Specify the number of a changeset in the **Changeset** box. Alternatively, select the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
 
-    -   **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Date**: Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
 
-    -   **Date**: Specify a date in the **Date** box or select a date from the calendar on the drop-down menu.
+   - **Label**: Specify an existing label to base the new label on. Either enter the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, edit, and remove labels](#list-find-view-edit-and-remove-labels).
 
-    -   **Label**: Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or choose the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
+   - **Workspace Version**: Create the label for the version in your workspace.
 
-    -   **Workspace Version**: The label is created for the version in your workspace.
+1. Select **OK**.
 
-4.  Choose **OK**.
-
-5.  Choose **File**, **Save**.
+1. Select **File** > **Save**.
 
 ### Remove an item from the label
 
-1.  In the **Label** window, locate the collection, project, branch, folder, or file that you want to remove from this label.
+1. In the Label window, locate the collection, project, branch, folder, or file that you want to remove from this label.
 
-2.  Open the shortcut menu for the item and choose **Remove from Label**.
+1. Right-click the item and select **Remove from Label**. The label is removed from the item. If the item is a project collection, project, branch, or folder, the label is also removed from all the items it contains.
 
-    The label is removed from the item. If the item is a project collection, project, branch, or folder, then the label is also removed from all the items it contains.
-
-3.  Choose **File**, **Save**.
+1. Select **File** > **Save**.
 
 ### Change the version of a file
 
-1.  In the **Label** window, locate the file that you want to modify.
+1. In the Label window, locate the file that you want to modify.
 
-2.  Open the shortcut menu for the file and choose **Change Labeled Version**.
+1. Right-click the file and select **Change Labeled Version**. The **Change Labeled Version** dialog box appears.
 
-3.  The **Change Labeled Version** dialog box appears.
+1. Select one of the following values:
 
-4.  Select:
+   - **Latest Version**: Apply the label to the latest version that's in version control.
 
-    -   **Latest Version**: Apply the label to the latest version that is in version control.
+   - **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, select the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
 
-    -   **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Date**: Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
 
-    -   **Date**: Specify a date in the **Date** box or select a date from the calendar on the drop-down menu.
+   - **Label**: Specify an existing label to base the new label on. Either select the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, edit, and remove labels](#list-find-view-edit-and-remove-labels).
 
-    -   **Label**: Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or choose the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
+   - **Workspace Version**: Create the label for the version in your workspace.
 
-    -   **Workspace Version**: The label is created for the version in your workspace.
-
-5.  Choose **File**, **Save**.
-
+1. Select **File** > **Save**.
 
 ### Perform other actions on a labeled item
 
-When you open the shortcut menu for an item in the Label window, you can also choose one of the following commands:
+When you right-click an item in the Label window, you can also select one of the following commands:
 
--   **View** (files only)
-
--   [View History](get-history-item.md)
-
--   [Compare](compare-files.md) (files only)
-
--   [Annotate](view-file-changes-using-annotate.md) (files only)
-
--   [Get This Version](download-get-files-from-server.md)
+- [View](view-command.md) (files only)
+- [View history](get-history-item.md)
+- [Compare](compare-files.md) (files only)
+- [Annotate](view-file-changes-using-annotate.md) (files only)
+- [Get this version](download-get-files-from-server.md)
 
 ## Work from the command prompt
 
-- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)  Apply or remove a label.
+- Use the `labels` command to list labels. For more information, see [Labels command](labels-command.md).
+- Use the `label` command to apply or remove a label. For more information, see [Label command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
 
   > [!TIP]
-  > When you use this command to apply a label, you can specify a scope other than the project.
+  > When you use the `label` command to apply a label, you can specify a scope other than the project.
 
-- [Labels Command](labels-command.md)  List labels.
+## Next steps
 
-## See Also
-
-#### Other Resources
-
- [Find and view changesets](find-view-changesets.md) 
-
- [Create and work with workspaces](create-work-workspaces.md) 
-
- [Permissions and groups reference](../../organizations/security/permissions.md) 
-
- [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)
+- [Find and view changesets](find-view-changesets.md)
+- [Create and work with workspaces](create-work-workspaces.md)
+- [Permissions and groups reference](../../organizations/security/permissions.md)
+- [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)
+- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

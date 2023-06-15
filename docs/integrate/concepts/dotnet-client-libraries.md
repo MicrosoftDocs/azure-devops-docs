@@ -2,22 +2,23 @@
 title: .NET Client Libraries
 description: Easily integrate with Azure DevOps from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
+ms.custom: devx-track-dotnet
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/16/2021
+ms.date: 07/28/2022
 ---
 
 # .NET client libraries
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 
 > [!TIP]
-> For more information, see [Azure DevOps REST API Reference](/rest/api/azure/devops).
+> For more information, see the [Azure DevOps REST API Reference](/rest/api/azure/devops).
 
 ## Dependency diagram
 
@@ -31,14 +32,14 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 > [!NOTE]
 > REST-based clients only work with Azure DevOps and TFS 2015 or later.
-> To learn more about extending and integrating with  Azure DevOps using the client libraries,
-> see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120))
+> For more information about extending and integrating with Azure DevOps using the client libraries,
+> see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120)).
 
 ## Package and Azure DevOps Server version-mapping table
 
-|Package version|Azure DevOps Server Version|
+|Package version|Azure DevOps Server version|
 |---------------|-----------|
-|17.x.x| `Azure DevOps Server vNext`|
+|16.170.0| `versions >= Azure DevOps Server 2020`|
 |16.153.x| `versions >= Azure DevOps Server 2019 Update 1`|
 |16.143.x| `versions >= Azure DevOps Server 2019`|
 |15.131.x| `versions >= TFS 2018 Update 1`|
@@ -48,11 +49,13 @@ Client libraries are available for .NET developers who build Windows apps and se
 |14.89.x| `versions >= TFS 2015 Update 1`|
 |14.83.x| `versions >= TFS 2015`|
 
+For the latest preview versions, see the [NuGet packages gallery](https://www.nuget.org/packages?q=azure+devops+.net).
+
 ## REST packages
 
-|Packages and Description  |Binaries  |
+|Packages and description  |Binaries  |
 |---------|--------------|
-|[Microsoft.VisualStudio.Services.Client​](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)<br/>Provides access to shared platform services, such as organization, profile, identity, security, and more, via public REST APIs.   |`Microsoft.VisualStudio.Services.WebApi.dll`, `Microsoft.VisualStudio.Services.Common.dll`, `Microsoft.TeamFoundation.Common.dll`         |
+|[Microsoft.VisualStudio.Services.Client​](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)<br/>Provides access to shared platform services via public REST APIs, like organization, profile, identity, security, and more.   |`Microsoft.VisualStudio.Services.WebApi.dll`, `Microsoft.VisualStudio.Services.Common.dll`, `Microsoft.TeamFoundation.Common.dll`         |
 |[Microsoft.TeamFoundationServer.Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)​ <br/>Provides access to version control, work item tracking, build, and more via public REST APIs. | `Microsoft.TeamFoundation.Build2.WebApi.dll`, `Microsoft.TeamFoundation.Core.WebApi.dll`, `Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.dll`, `Microsoft.TeamFoundation.SourceControl.WebApi.dll`, `Microsoft.TeamFoundation.TestManagement.WebApi.dll`, and so on. |
 |[Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)​<br/>Supports applications that require interactive sign-in by a user.          | `Microsoft.VisualStudio.Services.Client.Interactive.dll`        |
 |[Microsoft.VisualStudio.Services.Release.Client​](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/)<br/>Provides access to the Release Service via public REST APIs. |`Microsoft.VisualStudio.Services.ReleaseManagement.WebApi.dll`         |
@@ -67,13 +70,14 @@ Client libraries are available for .NET developers who build Windows apps and se
 |[Microsoft.VisualStudio.Services.Search.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Search.Client)<br/>Provides access to the Search Service via public REST APIs.         |`Microsoft.VisualStudio.Services.Search.Shared.WebApi.dll`, `Microsoft.VisualStudio.Services.Search.WebApi.dll`         |
 |[Microsoft.TeamFoundation.PublishTestResults​](https://www.nuget.org/packages/Microsoft.TeamFoundation.PublishTestResults)<br/>This task can be used to Publish test results and upload test attachments on Azure DevOps. The following results formats are supported with this package: 1. JUnit - publish tests from Junit projects, 2. NUnit- publish tests from Nunit projects, 3. VSTest- publish tests from Visual Studio projects, 4. Xunit- publish tests from Xunit projects          |`Microsoft.TeamFoundation.TestClient.PublishTestResults.dll`         |
 |[Microsoft.VisualStudio.Services.Audit.WebApi](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Audit.WebApi)​<br/>Provides access to the Audit Service via public REST APIs.|`Microsoft.VisualStudio.Services.Audit.WebApi.dll`   |
+| [Microsoft.Azure.Pipelines.Policy.Client](https://www.nuget.org/packages/Microsoft.Azure.Pipelines.Policy.Client/19.207.0-preview)​<br/>Provides access to the pipeline approvals, checks, and authorization via public REST APIs.|`Microsoft.Azure.Pipelines.Policy.Client.dll`  |
 
 > [!TIP]
-> If you have an existing Windows application or service that uses the TFS Client Object Model, use Microsoft.TeamFoundationServer.ExtendedClient.
+> If you have an existing Windows application or service that uses the TFS Client Object Model, use `Microsoft.TeamFoundationServer.ExtendedClient`.
 
 ## Soap package
 
-|**Package  and Description**  |**Binaries**  |  
+|**Package  and description**  |**Binaries**  |  
 |---------|------------|  
 |[Microsoft.TeamFoundationServer.ExtendedClient​](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/)<br/>Work with and manage version control, work items, and build, and other resources from your client application. This package doesn't support Net Standard Client OM. Only use this package when our REST APIs don't offer the functionality you need (for example, creating workspaces in TFVC) |`Microsoft.TeamFoundation.Build.Client.dll`, `Microsoft.TeamFoundation.DeleteTeamProject.dll`, `Microsoft.TeamFoundation.Diff.dll`, `Microsoft.TeamFoundation.Git.Client.dll`, `Microsoft.TeamFoundation.SharePointReporting.Integration.dll`, and so on.    |
 
@@ -87,7 +91,8 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 
 ## Pattern for use
 
-Create an authenticated connection to Azure DevOps, and then get an HttpClient for the service you want to work with, and finally call methods against that service.
+Create an authenticated connection to Azure DevOps, get an HttpClient for the service you want to work with, and then call methods against that service.
+
 See the following examples:
 
 ```csharp
@@ -100,12 +105,8 @@ const String c_collectionUri = "https://dev.azure.com/fabrikam";
 const String c_projectName = "MyGreatProject";
 const String c_repoName = "MyRepo";
 
-// Interactively ask the user for credentials, caching them so the user isn't constantly prompted
-VssCredentials creds = new VssClientCredentials();
-creds.Storage = new VssClientCredentialStorage();
-
 // Connect to Azure DevOps Services
-VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
+VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
 
 // Get a GitHttpClient to talk to the Git endpoints
 using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
@@ -115,7 +116,7 @@ using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
 }
 ```
 
-Authentication paths that produce an interactive dialog aren't available in the .NET Standard version of the .NET client libraries. When using the .NET Standard version of the .NET client libraries, provide credentials more explicitly to authenticate, as in the following example.
+Authentication paths that produce an interactive dialog aren't available in the .NET Standard version of the .NET client libraries. When you're using the .NET Standard version, provide your credentials more explicitly to authenticate, like in the following example.
 
 ```csharp
 using System;
@@ -150,7 +151,7 @@ namespace ConsoleApp1
 
 ```
 
-Further authentication samples can be found on our [.NET Samples Page](../get-started/client-libraries/samples.md).
+Further authentication samples can be found on our [.NET Samples page](../get-started/client-libraries/samples.md).
 
 ## Reference
 
@@ -162,7 +163,7 @@ Check out samples on our [.NET Samples Page](../get-started/client-libraries/sam
 
 ::: moniker range=">= azure-devops-2019"
 
-For more information on nuget packages, see [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/).
+For more information on NuGet packages, see [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/).
 
 ::: moniker-end
 

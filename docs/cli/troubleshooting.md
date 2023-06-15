@@ -3,18 +3,17 @@ title: Troubleshoot Azure DevOps command line interface
 titleSuffix: Azure DevOps 
 description: Azure DevOps extension command line interface troubleshooting 
 ms.topic: troubleshooting 
-ms.prod: devops 
-ms.technology: devops-reference
+ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+ms.author: chcomley
+author: chcomley
+monikerRange: 'azure-devops'
 ms.date: 08/17/2020
 ---
 
 # Troubleshoot common errors in Azure DevOps CLI
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 You can resolve most common errors encountered when running the team-level `az devops boards area` and `az devops boards iteration` commands by following the guidance provided in this article. 
 

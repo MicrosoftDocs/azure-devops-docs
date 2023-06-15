@@ -1,6 +1,6 @@
 ---
 title: Create a multi-platform pipeline
-ms.custom: seodec18, devx-track-js
+ms.custom: seodec18
 description: Build and test on macOS, Linux, and Windows
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Create a multi-platform pipeline
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, and Windows.
 
@@ -24,7 +24,7 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 You can use Azure Pipelines to build an app on written in any language, on multiple platforms at the same time.
 
-1. Go to https://github.com/MicrosoftDocs/pipelines-javascript.
+1. Go to https://github.com/Azure-Samples/js-e2e-express-server.
 
 1. Fork the repo into your own GitHub account.
 
@@ -41,7 +41,7 @@ You're going to add jobs that run on three platforms.
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/javascript?view=azure-devops
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/javascript?view=azure-devops
 strategy:
   matrix:
     linux:

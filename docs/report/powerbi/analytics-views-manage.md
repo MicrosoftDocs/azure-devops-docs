@@ -2,18 +2,18 @@
 title: Manage Analytics views
 titleSuffix: Azure DevOps
 description: Learn how to view, edit, and delete an Analytics view for Azure DevOps
-ms.technology: devops-analytics
-ms.reviewer: romik
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.custom: analytics-views, engagement-fy23 
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 11/08/2022
 ---
 
 # Manage Analytics views 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. 
 
@@ -33,7 +33,7 @@ Use this article to learn how to:
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
-[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 
@@ -44,7 +44,7 @@ The creator of a view and all members of the Project Administrators and Project 
 1. From either the **Favorites** or **All** page, hover over the view you want to edit, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Edit** option. You can also choose **Edit** from the Summary panel. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Analytics Views, Edit a view](media/editable-views/edit-view.png)
+	> ![Screenshot of Analytics views, Edit a view.](media/editable-views/edit-view.png)
 
 2. You can edit any part of the view, in the same way you did to define a view. For details, see [Create an Analytics view.](analytics-views-create.md)
 
@@ -62,14 +62,13 @@ The creator of a view and all members of the Project Administrators and Project 
 All contributors to a project can view shared views and create Power BI reports based on them. When you create a view, you can choose to make it private or shared. 
 
 To share a private view, edit the view and change the sharing option to **Shared**. To unshare a view, switch the sharing option to **Private**.
-
-<!--If you make a shared view private, any Power BI report connected to that view fails to refresh in Power BI.-->
+ 
 
 > [!IMPORTANT]
 > If you plan to share [Power BI reports or dashboards](/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
 > 
 > [!div class="mx-imgBorder"]
-> ![General tab](media/editable-views/general.png)
+> ![Screenshot of New View dialog, General tab.](media/editable-views/general.png)
 
 ## Favorite a view
 
@@ -77,14 +76,14 @@ Favoriting an item provides a quick way to navigate to items you regularly visit
 To favorite a view, hover over the view and choose the ![star icon](../../media/icons/icon-favorite-star.png).
     
 > [!div class="mx-imgBorder"]
-> ![Favorite a view](media/editable-views/directory-favorite.png)
+> ![Screenshot of Analytics views, favorite a view.](media/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](includes/manage-shared-view-permissions.md)]: Couldn&#39;t find file includes/manage-shared-view-permissions.md. -->
+ 
 
 [!INCLUDE [temp](includes/manage-shared-view-permissions.md)]
 
-<!--END ERROR INCLUDE -->
+ 
 
 ## Delete a view
 
@@ -105,19 +104,10 @@ To delete a view, select the :::image type="icon" source="../media/icons/actions
 - [Data available from Analytics](data-available-in-analytics.md)
 - [Grant permissions to access Analytics](./analytics-security.md)
 - [Power BI integration overview](overview.md)
+- [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md)
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
 
 
+## Related resources 
 
-<!--- 
-## Copy a view
-
-For a quick start, you can copy any view including [default Analytics Views](./analytics-default-views.md) and edit it.
-
-1. To copy a view click the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the copy panel.
-
-1. Provide the copy name description.
-1. Decide who can use this view. Set the radio to "Shared" if  you want to make this available to others. Learn more about [sharing Analytics Views](analytics-views-manage.md#share-views)and sharing option. All other definition is copied from the original view.
-
-1. Click Copy to created the new copy. The copied view is detached from the original view. Even if you copy a view from "My views" to "Shared views", it's a new separate view.
-
---->
+- [Wiql to OData Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)

@@ -1,27 +1,27 @@
 ---
-title: Change the time zone in Azure DevOps
+title: Change time zone
 titleSuffix: Azure DevOps Services
 ms.custom: 
-description: Learn how to change the time zone for your organization or for your user profile
-ms.technology: devops-accounts
+description: Learn how to change the time zone for your organization or for user profile.
+ms.subservice: azure-devops-organizations
 ms.assetid: 
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/27/2020
+ms.date: 05/23/2022
 monikerRange: 'azure-devops'
 ---
 
-# Change the time zone in Azure DevOps
+# Change time zone
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to change the time zone for your organization or your user profile.
+Learn how to change the time zone for your organization or user profile in Azure DevOps.
 
 The following time zones are available in Azure DevOps:
 
 * **Azure DevOps organization time zone** - the main time zone setting. This setting is where all your iteration dates, builds, and release schedules depend upon, and so on. Changing your organization time zone affects its dependencies.
-* **Azure DevOps user profile time zone** - only used for the user interface (UI). Your user profile time zone setting is used for a more personalized experience. It also displays timestamps for when users browse Azure DevOps using the time zone that's configured for that specific user.
+* **Azure DevOps user profile time zone** - only used for the user interface (UI). The user profile time zone setting is used for a more personalized experience. It also displays timestamps for when users browse Azure DevOps using the time zone configured for that specific user.
 
 If your organization time zone is EST, and user profile is PST, all date and time fields display in PST time zone. To learn more, see [Time zone settings and usage](../settings/timezone-settings-usage.md).
 
@@ -31,7 +31,7 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Go to **Overview**, and then select the time zone from the dropdown menu.
 
@@ -39,7 +39,7 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 4. Select **Save**.
 
-## Change your user profile time zone
+## Change user profile time zone
 
 ::: moniker range="azure-devops"
 
@@ -58,15 +58,15 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 #### [Current page](#tab/current-page) 
 
-1. From your home page, open your **User profile**, and then select **My profile**.
+1. From your home page, open **User profile**, and then select **My profile**.
 
-    ![Open your user profile settings](../settings/media/open-profile-user-settings.png)
+    ![Open user profile settings](../settings/media/open-profile-user-settings.png)
 
 2. Select **Edit profile**.
 
     ![Select Edit profile](media/change-time-zone/select-edit-profile.png)
 
-3. Select **Preferences**, set your user profile time zone, and then select **Save changes**.
+3. Select **Preferences**, set user profile time zone, and then select **Save changes**.
 
     ![Select Edit profile to change user preference time zone](media/change-time-zone/change-user-preferences-time-zone.png)
 

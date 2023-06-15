@@ -2,11 +2,11 @@
 title: Sample custom rule scenarios 
 titleSuffix: Azure DevOps 
 description: Examples of custom rule definitions for inherited and XML processes 
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 monikerRange: "<= azure-devops"
-ms.topic: example-scenario
+ms.topic: sample
 ms.date: 06/30/2021
 
 
@@ -15,7 +15,7 @@ ms.date: 06/30/2021
 
 # Sample custom rule scenarios  
 
-[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides examples of custom rule definitions. All custom rules are defined for a work item type. Examples are provided for both the Inherited and On-premises XML process models. 
 
@@ -257,7 +257,7 @@ For an Inheritance process, you can prevent users from modifying a work item by 
 
 It's not possible to define a custom rule that restricts modification of work items of a specific type. You can only specify restriction by state. If the user doesn't change the state, then they can modify other fields, unless all fields are made read-only for the group. 
 
-Instead, if you want to restrict a group of users from modifying select work items of any type, you can assign those work items to an Area Path. Define a security group, and then set restrictions for editing work items for that Area Path for that group as shown in the following image. To learn more, see [Set permissions and access for work tracking, Create child nodes and modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
+Instead, if you want to restrict a group of users from modifying select work items of any type, you can assign those work items to an Area Path. Define a security group, and then set restrictions for editing work items for that Area Path for that group as shown in the following image. To learn more, see [Set permissions and access for work tracking, Create child nodes and modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
 
 :::image type="content" source="media/sample-rules/restrict-modifications-by-area-path-permissions.png" alt-text="Screenshot of Permissions dialog for an Area Path to restrict modifications of work items.":::
 
@@ -400,8 +400,8 @@ For the [On-premises XML process model](../../../reference/on-premises-xml-proce
 For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. 
 
 You restrict access to work tracking objects in one of two ways:
-- [Set a condition field rule](rule-reference.md), [a condition-based field rule](../../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
-- By [adding WITs to the Hidden Categories group](../../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+- [Set a condition field rule](rule-reference.md), [a condition-based field rule](/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
 
 ---
 

@@ -4,14 +4,14 @@ description: Virtual machine resource support within Environment
 ms.topic: conceptual
 ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: ushan
-ms.date: 07/30/2021
+ms.manager: mijacobs
+ms.date: 01/12/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
 # Environment - virtual machine resource
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Use virtual machine (VM) resources to manage deployments across multiple machines with YAML pipelines. VM resources let you install agents on your own servers for rolling deployments.
 
@@ -25,6 +25,11 @@ You must have at least a Basic license and access to the following areas:
 - the VM you want to connect to the environment
 
 For more information about security for Azure Pipelines, see [Pipeline security resources](../security/resources.md).
+
+To add a VM to an environment, you must have the [Administrator role](../agents/pools-queues.md#security) for the corresponding deployment pool. A deployment pool is a set of target servers available to the organization. Learn more about [deployment pool and environment permissions](../policies/permissions.md#set-deployment-pool-permissions). 
+
+> [!NOTE]
+> If you are configuring a deployment group agent, or if you see an error when registering a VM environment resource, you must set the PAT scope to **All accessible organizations**.
 
 ## Create a VM resource
 
@@ -59,7 +64,7 @@ The first step in adding a VM resource is to define an environment.
    >
    > - The Personal Access Token (PAT) for the signed-in user gets included in the script. The PAT expires on the day you generate the script.
    > - If your VM already has any other agent running on it, provide a unique name for **agent** to register with the environment.
-   > - To learn more about installing the agent script, see [Self-hosted Linux agents](../agents/v2-linux.md) and [Self-hosted Windows agents](../agents/v2-windows.md). The agent scripts for VM resources are like the scripts for self-hosted agents and you can use the same commands.
+   > - To learn more about installing the agent script, see [Self-hosted Linux agents](../agents/linux-agent.md) and [Self-hosted Windows agents](../agents/windows-agent.md). The agent scripts for VM resources are like the scripts for self-hosted agents and you can use the same commands.
 
 1. Once your VM is registered, it appears as an environment resource under the **Resources** tab of the environment.
 1. To add more VMs, copy the script again. Select **Add resource** > **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment.
@@ -69,7 +74,7 @@ The first step in adding a VM resource is to define an environment.
 
 ## Use VM in pipelines
 
-Target VMs in your pipeline by referencing the environment. By default, the pipeline job runs for all of the VMs defined for an environment.
+Target VMs in your pipeline by referencing the environment. By default, the pipeline job runs for all of the VMs defined for an environment with a `resourceName`.
 
 ```yaml
 trigger: 
@@ -82,8 +87,9 @@ jobs:
 - deployment: VMDeploy
   displayName: Deploy to VM
   environment: 
-   name: ContosoDeploy
-   resourceType: VirtualMachine
+   name: VMenv
+   resourceName: VMenv
+   resourceType: virtualMachine
   strategy:
      runOnce:
         deploy:   
@@ -91,7 +97,10 @@ jobs:
             - script: echo "Hello world"
 ```
 
-You can select specific sets of virtual machines from the environment to receive the deployment with tags. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter and the value `windows` to your pipeline.
+> [!NOTE]
+> The `resourceType` values are case sensitive. Specifying the incorrect casing will result in no matching resources found in the environment. See the [YAML schema](/azure/devops/pipelines/yaml-schema/jobs-deployment-environment) for more information.
+
+You can select a specific virtual machine from the environment to only receive the deployment by specifying it by its `resourceName`. For example, to target deploying only to the Virtual Machine resource named `USHAN-PC` in the `VMenv` environment, add the `resourceName` parameter and give it the value of `USHAN-PC`.
 
 ```yaml
 trigger: 
@@ -104,9 +113,9 @@ jobs:
 - deployment: VMDeploy
   displayName: Deploy to VM
   environment: 
-    name: ContosoDeploy
-    resourceType: VirtualMachine
-    tags: windows # only deploy to virtual machines with this tag
+    name: VMenv
+    resourceType: virtualMachine
+    resourceName: USHAN-PC # only deploy to the VM resource named USHAN-PC
   strategy:
     runOnce:
       deploy:   
@@ -114,11 +123,11 @@ jobs:
           - script: echo "Hello world"
 ```
 
-To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tabs=schema#deployment-job).
+To learn more about deployment jobs, see the [YAML schema](/azure/devops/pipelines/yaml-schema/jobs-deployment).
 
 ## Add and manage tags
 
-Tags give you a way to target specific VMs in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI. Tags are each limited to 256 characters. There's no limit to the number of tags that you can use.
+Tags give you a way to target a set of specific VMs in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI. Tags are each limited to 256 characters. There's no limit to the number of tags that you can use.
 
 Add or remove tags in the UI from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a VM resource.
 
@@ -128,7 +137,7 @@ When you select multiple tags, VMs that include all the tags get used in your pi
 
 ```yaml
 trigger: 
-- master
+- main
 
 pool: 
    vmImage: ubuntu-latest
@@ -137,8 +146,8 @@ jobs:
 - deployment: VMDeploy
   displayName: Deploy to VM
   environment: 
-    name: ContosoDeploy
-    resourceType: VirtualMachine
+    name: VMenv
+    resourceType: virtualMachine
     tags: windows,prod # only deploy to virtual machines with both windows and prod tags
   strategy:
     runOnce:
@@ -157,9 +166,6 @@ For more information about deployment strategies and life-cycle hooks, see [Depl
 Select the **Deployments** tab for complete traceability of commits and work items, and a cross-pipeline deployment history per environment and resource.
 > [!div class="mx-imgBorder"]
 > ![VMDeployments_view](media/vm-deployments.png)
-  
-> [!div class="mx-imgBorder"]
-> ![VMjobs_view](media/vm-jobsview.png)
   
 ## Remove a VM from an environment
 
@@ -192,4 +198,4 @@ When you retry a stage, it reruns the deployment on all VMs and not just failed 
 
 - [About environments](environments.md)
 - [Learn about deployment jobs](deployment-jobs.md)
-- [YAML schema reference](../yaml-schema.md)
+- [YAML schema reference](/azure/devops/pipelines/yaml-schema)

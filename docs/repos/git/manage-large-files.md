@@ -3,16 +3,17 @@ title: Work with large files in your Git repo
 titleSuffix: Azure Repos
 description: Recommendations on how to manage large binary files in Git, Visual Studio, and Team Foundation Server.
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Manage and store large files in Git
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 
@@ -82,7 +83,7 @@ Just follow the [instructions to install the client](https://git-lfs.github.com/
 
 Git LFS has some drawbacks that you should consider before adopting:
 
-1. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/master/docs).
+1. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/main/docs).
 2. If the Git LFS client is not installed and configured correctly, you will not see the binary files committed through Git LFS when you clone your repo. 
    Git will download the data describing the large file (which is what Git LFS commits to the repo) and not the actual binary file itself. 
    Committing large binaries without the Git LFS client installed will push the binary to your repo.

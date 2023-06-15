@@ -1,10 +1,10 @@
-﻿---
+---
 title: REST API samples
 description: REST API samples for Azure DevOps, including personal access tokens (PATs).
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
-ms.custom: 
+ms.custom: devx-track-dotnet
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -13,7 +13,7 @@ ms.date: 10/06/2020
 
 # Get started sample
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 ## Personal access tokens
 
@@ -48,7 +48,7 @@ ListOfProjectsResponse.Projects viewModel = null;
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri($"https://dev.azure.com/{OrgName}"/);  //url of your organization
+    client.BaseAddress = new Uri($"https://dev.azure.com/{OrgName}/");  //url of your organization
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 

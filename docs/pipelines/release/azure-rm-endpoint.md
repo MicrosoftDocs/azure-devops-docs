@@ -1,19 +1,19 @@
 ---
 title: Troubleshoot Azure Resource Manager service connections
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-arm-template
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/16/2021
-monikerRange: '>= tfs-2015'
+ms.date: 03/22/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Troubleshoot ARM service connections
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
@@ -57,8 +57,8 @@ Below are some of the issues that may occur when creating service connections:
 - [Failed to obtain an access token](#sessionexpired)
 - [A valid refresh token was not found](#sessionexpired)
 - [Failed to assign contributor role](#contributorrole)
-- [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 - [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
+- [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 - [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 - [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
 - [Azure subscription is not passed from the previous task output](#azure-subscription-is-not-passed-from-the-previous-task-output)
@@ -149,32 +149,6 @@ This error typically occurs when you do not have **Write** permission for the se
 
 To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) in Azure Active Directory.
 
-<a name="missingSubscriptions"></a>
-
-### Some subscriptions are missing from the list of subscriptions
-
-To fix this issue you will need to modify the supported account types, and who can use your application. To do so, follow the steps below:
-
-1. Sign in to the Azure portal.
-
-1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
-
-    :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure Portal.":::
-
-1. Select **Azure Active Directory** from the left pane.
-
-1. Select **App registrations**.
-
-1. Select you application from the list of registered applications.
-
-1. Under **Essentials**, select **Supported account types**.
-
-1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
-
-    :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
-
-1. Select **Save** when you are done.
-
 <a name="subscription-isnt-listed-service-connection"></a>
 
 ### Subscription isn't listed when creating a service connection
@@ -188,6 +162,32 @@ A maximum of 50 Azure subscriptions are listed in the various Azure subscription
 1. Add the Azure AD user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
 
 1. Log in to Azure DevOps with the new user credentials, and set up a billing. You'll only see one Azure subscription in the list.
+
+<a name="missingSubscriptions"></a>
+
+### Some subscriptions are missing from the list of subscriptions
+
+This issue can be fixed by changing the **supported account types** settings and defining who can use your application. To do so, follow the steps below:
+
+1. Sign in to the Azure portal.
+
+1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
+
+    :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure Portal.":::
+
+1. Select **Azure Active Directory** from the left pane.
+
+1. Select **App registrations**.
+
+1. Select you application from the list of registered applications.
+
+1. Under **Authentication**, select **Supported account types**.
+
+1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
+
+    :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
+
+1. Select **Save** when you are done.
 
 <a name="autoCreatedSecretExpiration"></a>
 

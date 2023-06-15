@@ -1,7 +1,6 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 05/26/2021
 ms.topic: include
 ---
@@ -133,4 +132,4 @@ Here are the steps to copy a dashboard:
 > ![New dashboard options menu](../../media/187-boards-12.png)
 ### New iteration capacity REST API
 
-You can now get the total capacity for all teams in an iteration by using the new **Iterationcapacities** REST Api. Provide the `iterationId` and the API will return the total capacity for each team associated with the iteration, as well as an overall total. This feature will make capacity planning for an increment easier. To learn more about **Iterationcapacities**, see the documentation [here](https://docs.microsoft.com/rest/api/azure/devops/work/capacities/get?view=azure-devops-rest-6.0).
+You can now get the total capacity for all teams in an iteration by using the new **Iterationcapacities** REST Api. Provide the `iterationId` and the API will return the total capacity for each team associated with the iteration, as well as an overall total. This feature will make capacity planning for an increment easier. To learn more about **Iterationcapacities**, see the documentation [here](/rest/api/azure/devops/work/capacities/get?view=azure-devops-rest-6.0&preserve-view=true).

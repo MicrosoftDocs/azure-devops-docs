@@ -4,15 +4,15 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 07/14/2021
-monikerRange: '>= tfs-2015'
+ms.date: 01/24/2023
+monikerRange: '<= azure-devops'
 ---
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -36,7 +36,7 @@ You can later configure your pipeline to check out a different repository or mul
 
 ::: moniker range="< azure-devops-2019"
 
-YAML pipelines are not available in TFS.
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
@@ -54,10 +54,10 @@ To clone additional repositories as part of your pipeline:
 
 * If the access token (explained below) does not have access to the repository:
 
-    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
-    2. Base64-encode this string to create a basic auth token.
-    3. Add a script in your pipeline with the following command to clone that repo
-       `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
+  1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `PAT:`
+  1. Base64-encode this string to create a basic auth token.
+  1. Add a script in your pipeline with the following command to clone that repo
+     `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
 
 ---
 
@@ -68,50 +68,36 @@ Azure Pipelines must be granted access to your repositories to trigger their bui
 Continuous integration (CI) triggers cause a pipeline to run whenever you push an update to the specified branches or you push  specified tags.
 
 # [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+
 [!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
-::: moniker-end
 
-::: moniker range="azure-devops"
 [!INCLUDE [ci-triggers](includes/ci-triggers2.md)]
-::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
-::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-YAML pipelines are not available in TFS.
+YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 # [Classic](#tab/classic/)
+
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
 
-::: moniker range=">= tfs-2017"
-**Azure Pipelines, TFS 2017.3 and newer**
-
 ![Configure continuous integration trigger branch filters.](media/ci-trigger-git-branches-neweditor.png)
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-**TFS 2017.1 and older versions**
-
-![CI trigger git branches, TFS 2017.1 and older.](media/ci-trigger-git-branches.png)
-::: moniker-end
 
 ---
 
-### Skipping CI for individual commits
+### Skipping CI for individual pushes
 
 ::: moniker range="<= azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `***NO_CI***` in the message of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push.
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
@@ -126,13 +112,19 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 
 ## PR triggers
 
-Pull request (PR) triggers cause a pipeline to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+Pull request (PR) triggers cause a pipeline to run whenever you open a pull request, or when you push changes to it. In Azure Repos Git, this functionality is implemented using branch policies. To enable PR validation, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
->[!NOTE]
->To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
+If you have an open PR and you push changes to its source branch, multiple pipelines may run:
+ - The pipelines specified by the target branch's build validation policy will run on the _merge commit_ (the merged code between the source and target branches of the pull request), regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
+ - The pipelines triggered by changes to the PR's source branch, if there are **no** pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). If at least one pushed commit contains `[skip ci]`, the pipelines will not run.
 
->[!NOTE]
->[Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
+ Finally, after you merge the PR, Azure Pipelines will run the CI pipelines triggered by pushes to the target branch, even if some of the merged commits' messages or descriptions contain `[skip ci]` (or any of its variants).
+
+> [!NOTE]
+> To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
+
+> [!NOTE]
+> [Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
 
 ::: moniker range=">tfs-2018"
 
@@ -153,7 +145,7 @@ Building pull requests from Azure Repos forks is no different from building pull
 Azure Pipelines provides several security settings to configure the job authorization scope that your pipelines run with.
 
 - [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project)
-- [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories)
+- [Protect access to repositories in YAML pipelines](#protect-access-to-repositories-in-yaml-pipelines)
 
 ### Limit job authorization scope to current project
 
@@ -186,7 +178,7 @@ For more information on **Limit job authorization scope**, see [Understand job a
 
 :::moniker-end
 
-:::moniker range="azure-devops"
+:::moniker range="azure-devops-2020"
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
@@ -194,10 +186,7 @@ Pipelines can access any Azure DevOps repositories in authorized projects, as de
 
 To configure this setting, navigate to **Pipelines**, **Settings** at either **Organization settings** or **Project settings**. If enabled at the organization level, the setting is grayed out and unavailable at the project settings level.
 
-> [!IMPORTANT]
-> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
-
-When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](../yaml-schema.md#checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](/azure/devops/pipelines/yaml-schema/steps-checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
 
 There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled.
 
@@ -228,13 +217,50 @@ steps:
 
 ::: moniker-end
 
+:::moniker range=">azure-devops-2020"
+
+### Protect access to repositories in YAML pipelines
+
+Pipelines can access any Azure DevOps repositories in authorized projects, as described in the previous [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project) section, unless **Protect access to repositories in YAML pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
+
+To configure this setting, navigate to **Pipelines**, **Settings** at either **Organization settings** or **Project settings**. If enabled at the organization level, the setting is grayed out and unavailable at the project settings level.
+
+> [!IMPORTANT]
+> **Protect access to repositories in YAML pipelines** is enabled by default for new organizations and projects created after May 2020.
+When **Protect access to repositories in YAML pipelines** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](/azure/devops/pipelines/yaml-schema/steps-checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+
+There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Protect access to repositories in YAML pipelines** is enabled.
+
+* If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, and the `self` repository is checked out.
+* If you are using a script to perform read-only operations on a repository in a public project, you don't need to reference the public project repository in a `checkout` step.
+* If you are using a script that provides its own authentication to the repo, such as a PAT, you don't need to reference that repository in a `checkout` step.
+
+For example, when **Protect access to repositories in YAML pipelines** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must either reference this repository in a `checkout` step or with a `uses` statement.
+
+If you are already checking out the `FabrikamTools` repository in your pipeline using a checkout step, you may subsequently use scripts to interact with that repository.
+
+```yml
+steps:
+- checkout: git://FabrikamFiber/FabrikamTools # Azure Repos Git repository in the same organization
+- script: # Do something with that repo
+# Or you can reference it with a uses statement in the job
+uses:
+  repositories: # List of referenced repositories
+  - FabrikamTools # Repository reference to FabrikamTools
+steps:
+- script: # Do something with that repo like clone it
+```
+
+> [!NOTE]
+> For many scenarios, multi-repo checkout can be leveraged, removing the need to use scripts to check out additional repositories in your pipeline. For more information, see [Check out multiple repositories in your pipeline](multi-repo-checkout.md).
+::: moniker-end
+
 ::: moniker range=">tfs-2018"
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]
 
 ::: moniker-end
 
-<a name="q-a"></a>
 ## FAQ
 
 Problems related to Azure Repos integration fall into three categories:
@@ -269,35 +295,35 @@ fatal: repository 'XYZ' not found
 ##[error] Git fetch failed with exit code: 128
 ```
 
-Follow each of these steps to troubleshoot your failing triggers:
+Follow each of these steps to troubleshoot your failing checkout:
 
 * Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
 
 * Are you accessing the repository using a script? If so, check the [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories) setting. When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, you won't be able to check out Azure Repos Git repositories using a script unless they are explicitly referenced first in the pipeline.
 
 * What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
+
   * If the scope is **collection**: 
+
     * This may be an intermittent error. Re-run the pipeline.
     * Someone may have removed the access to **Project Collection Build Service account**.
-      * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
+      * Go to **Project settings** for the project in which the repository exists. Select **Repos > Repositories > specific repository**, and then **Security**.
       * Check if **Project Collection Build Service (your-collection-name)** exists in the list of users.
       * Check if that account has **Create tag** and **Read** access.
 
   * If the scope is **project**: 
+
     * Is the repo in the same project as the pipeline?
       * Yes: 
         * This may be an intermittent error. Re-run the pipeline.
         * Someone may have removed the access to **Project Build Service account**.
-          * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
+          * Go to **Project settings** for the project in which the repository exists. Select **Repos > Repositories > specific repository**, and then **Security**.
           * Check if **your-project-name Build Service (your-collection-name)** exists in the list of users.
           * Check if that account has **Create tag** and **Read** access.
       * No:
         * Is your pipeline in a public project?
           * Yes: You cannot access resources outside of your public project. Make the project private.
-          * No: You need to take additional steps to grant access. Let us say that your pipeline exists in project **A** and that your repository exists in project **B**.
-            * Go to the project settings of the project in which the repository exists (B). Select Repos -> Repositories -> specific repository.
-            * Add **your-project-name Build Service (your-collection-name)** to the list of users, where your-project-name is the name of the project in which your pipeline exists (A).
-            * Give **Create tag** and **Read** access to the account.
+          * No: You need to [configure permissions to access another repo in the same project collection](../process/access-tokens.md#configure-repo-access).
 
 ### Wrong version
 

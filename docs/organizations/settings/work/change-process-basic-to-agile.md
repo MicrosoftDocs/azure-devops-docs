@@ -3,19 +3,19 @@ title: Change process from Basic to Agile
 titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Basic to Agile
-ms.technology: devops-agile
-ms.topic: conceptual
+ms.service: azure-devops-boards
+ms.topic: how-to
 ms.assetid:
-ms.author: kaelli
-author: KathrynEE
-ms.reviewer: kaelli
+ms.author: chcomley
+author: chcomley
+ms.reviewer: dahellem
 monikerRange: ">= azure-devops-2020"
 ms.date: 07/17/2020
 ---
 
 # Change a project process from Basic to Agile
 
-[!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
 You can change a project based on the Basic process to use an inherited Agile process.  This article provides the steps needed to make this change. 
 
@@ -26,7 +26,7 @@ Prior to making this change, we recommend you familiarize yourself with the proc
 |**Basic** | ![Basic work item types](../../../boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/media/track-issues/basic-process-workflow.png)|
 |**Agile** | ![Agile work item types](media/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
 
-For an overview of all processes, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
 Reasons you might want to change your process from Basic to Agile:
 
@@ -173,5 +173,5 @@ After changing the process, you may want to make additional updates as follows:
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
 - [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
-- [Customize your boards](../../../boards/get-started/customize-boards.md)
+- [Customize your boards](../../../boards/configure-customize.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

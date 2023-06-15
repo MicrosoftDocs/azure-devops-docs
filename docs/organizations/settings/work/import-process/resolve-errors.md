@@ -2,17 +2,19 @@
 title: Resolve validation errors
 titleSuffix: Azure DevOps Services  
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
+ms.custom: engagement-fy23
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.author: kaelli
-author: KathrynEE
+ms.topic: troubleshooting
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/20/2018
+ms.date: 01/17/2023
 ---
 
 # Resolve validation errors for process import
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
 > Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [Azure DevOps data import service](../../../../migrate/migration-overview.md). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
@@ -157,7 +159,7 @@ will be imported to add or update a process. This file contains all of the plug-
 when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
-The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../../../../reference/process-templates/process-template-xml-elements-reference.md).   
+The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference).   
 
 <a id="VS412457"></a>
 
@@ -420,7 +422,7 @@ The `Microsoft.ProjectCreationWizard.WorkItemTracking` plug-in is missing from t
 
 ## Categories
 
-The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md).     
+The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference).     
 
 <a id="TF402546"></a>
 
@@ -535,14 +537,14 @@ Add `PortfolioBacklog` to ProcessConfiguration to reference Microsoft.EpicCatego
 ```
 Reference articles: 
 *   [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md)
-*   [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md)
+*   [Categories XML element reference](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)
 
 
 <a id="classification"></a>
 
 ## Classification plug-in errors
 
-The Classification.xml definition file must conform to the syntax and rules described in [Classification plug-in](../../../../reference/process-templates/define-classification-plug-in.md).     
+The Classification.xml definition file must conform to the syntax and rules described in [Classification plug-in](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in).     
 
 <a id="TF402511"></a>
 
@@ -816,7 +818,7 @@ The following `LINKTYPE` element statements within the WorkItems.xml plug-in fil
 
 One or more WITs defined in the custom process template contain a `GLOBALLIST` element. 
 Search through your WIT definition files and replace any `GLOBALLIST` elements with `ALLOWEDVALUES` or `SUGGESTEDVALUES` elements. 
-For reference syntax, see [Define pick lists](../../../../reference/xml/define-pick-lists.md).  
+For reference syntax, see [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).  
 
 <a id="TF402565"></a>
 
@@ -825,7 +827,7 @@ For reference syntax, see [Define pick lists](../../../../reference/xml/define-p
 The named `GLOBALLIST` element contains more items than allowed. Either reduce the number of list items contained in the `GLOBALLIST` element, 
 or segment the global list into two or more elements so that neither list exceeds the maximum number of allowed items. 
 
-For reference syntax, see [Define pick lists](../../../../reference/xml/define-pick-lists.md).  
+For reference syntax, see [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).  
 
 <a id="process-configuration"></a>
 
@@ -1247,7 +1249,7 @@ You've defined more WITs that are allowed in the process. Review your WorkItems.
 Work item types (Bug, User Story, Task, etc.) require the `refname` attribute. The refname value must be unique and cannot contain any reserved namespaces.
 The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by Azure DevOps. 
 
-See [All WITD XML elements reference](../../../../reference/xml/all-witd-xml-elements-reference.md) for more information.
+See [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference) for more information.
 
 #### Error example
 
@@ -1335,7 +1337,7 @@ Most system fields do not allow specifying rules.
 Global lists are not supported in VSTS. 
 Replace all instances of `GLOBALLIST` elements with 
 `ALLOWEDVALUES` and `LISTITEM` elements in all WIT definition files.
-Reference:  [Define pick lists](../../../../reference/xml/define-pick-lists.md).
+Reference:  [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
 
 #### Error example
 
@@ -1367,7 +1369,7 @@ Reference:  [Define pick lists](../../../../reference/xml/define-pick-lists.md).
 
 Global lists are not supported in VSTS. Replace all instances of `GLOBALLIST` elements with 
 `ALLOWEDVALUES` and `LISTITEM` elements in all WIT definition files.
-Reference: [Define pick lists](../../../../reference/xml/define-pick-lists.md).
+Reference: [Define pick lists](/previous-versions/azure/devops/reference/xml/define-pick-lists).
 
 #### Error example
 
@@ -1736,10 +1738,10 @@ Review the `FIELDS` and `WORKFLOW` sections for the presence of `"for"` and `"no
 ### TF402593: Field rules aren't supported for field *[fieldName]*.
 
 Most System and Microsoft.VSTS fields do not support rules. 
-See [Customize a process](customize-process.md#required-fields) 
-for complete list of supported field rules.
+See [Rules and rule evaluation](../rule-reference.md) 
+for a complete list of supported field rules.
 
-Edit the WIT definition files that contain the named field and remove the field rules specified for it. 
+Edit the definition files for work item types that contain the named field and remove the field rules specified for it. 
 
 <a id="TF402602"></a>
 
@@ -1837,7 +1839,7 @@ Change the field name of Custom.NewField.ExternalID
 
 ### VS403104: Work item type *[witName]* references the required field *[refName]* which is not included in all layouts.
 
-This warning is generated if you have a required field in a work item type that is referenced in the `<Layout>` node but not the `<WebLayout>`. The `<WebLayout>` is used to modify the layout of the new form. See [WebLayout xml reference](../../../../reference/xml/weblayout-xml-elements.md) for details.
+This warning is generated if you have a required field in a work item type that is referenced in the `<Layout>` node but not the `<WebLayout>`. The `<WebLayout>` is used to modify the layout of the new form. See [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements) for details.
 
 <a id="VS403073"></a>
 
@@ -2049,7 +2051,7 @@ Custom controls are not supported in Azure DevOps Services. Review the `FORM` se
 ## Test management plug-in errors
 
 The TestManagement.xml file, located in the Test Management folder, 
-must conform to the syntax and rules described in [Define the initial configuration of Test Manager](../../../../reference/process-templates/define-initial-configuration-test-manager.md). 
+must conform to the syntax and rules described in [Define the initial configuration of Test Manager](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager). 
 
 
 <a id="TF402533"></a>

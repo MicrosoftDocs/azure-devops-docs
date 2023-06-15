@@ -1,20 +1,20 @@
 ---
-title: Set up or configure hierarchical teams
+title: Set up or configure hierarchical teams in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
-description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards, Azure DevOps.
-ms.technology: devops-agile 
-ms.author: kaelli
-author: KathrynEE
+description: Learn how to configure teams to support portfolio backlogs to track progress across teams in Azure Boards and  Azure DevOps.
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 06/23/2021
+ms.date: 04/01/2022
 ---
 
 # Configure a hierarchy of teams
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-In [Portfolio management](portfolio-management.md) we showed how management teams and feature teams can use their backlogs to focus on the work that's most important to them. In this article, we show how to configure teams that best supports the different backlog views of management and feature teams. 
+In [Portfolio management](portfolio-management.md), we showed how management teams and feature teams can use their backlogs to focus on the work that's most important to them. In this article, we show how to configure teams that best support the different backlog views of management and feature teams. 
 
 Specifically, we'll show you how to configure a team structure like the one shown in the image below.
 
@@ -22,29 +22,21 @@ Specifically, we'll show you how to configure a team structure like the one show
 
 In this article you'll learn how to:  
 
-::: moniker range=">= tfs-2017" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
 > * Review which area paths are assigned to teams  
-::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
->[!div class="checklist"]    
-> * Set up a hierarchical set of teams and backlogs
-> * Define a single sprint cadence for all teams 
-> * Review which area paths are assigned to teams  
-::: moniker-end 
 
 ## Prerequisites 
 
 - If you don't have a project yet, [create one](../../organizations/projects/create-project.md).  
-- If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group or those who have been [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md) can add teams and configure the project.   
+- To add teams, you must be a member of the **Project Administrator**s group. To get added to this group, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).     
 
 
 <a id="set_up"></a>
 
-## Add teams 
+## Add a team for each management area
 
 The first step is to add a team for each feature team and management area. You can also rename teams that you've already added. When you finish, you'll have a set of teams similar to the ones shown.  
 
@@ -66,7 +58,7 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="add-team-team-services" /> 
 
@@ -74,7 +66,7 @@ The first step is to add a team for each feature team and management area. You c
 
     ![Open project admin page](../../organizations/settings/media/add-team/open-admin-context-tfs-2017.png) 
 
-1. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. If you do not select this option, you will have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
+1. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. If you don't select this option, you'll have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
 
     ![Create a sub-team with its own area path](../../organizations/settings/media/add-team/create-team-dialog.png)
 
@@ -82,42 +74,15 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"
-<a id="add-team-tfs-2015" />
-
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
-
-    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" />
-
-2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
-
-    If you do not select this option, you will have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
-
-    ![Create a sub-team with its own area path](../../organizations/settings/media/add-team/scale-agile-co.png)
-
-    Repeat this step for all feature and management teams you want to create.  
-
-::: moniker-end   
 
 ## Move area paths into a hierarchical structure
 
-In this next step, you want to move the areas paths associated with feature teams from a flat structure to a hierarchical structure. 
-
-::: moniker range=">= tfs-2017"
+In this step, you want to move the areas paths associated with feature teams from a flat structure to a hierarchical structure. 
 
 | Flat area structure | Hierarchical area structure |
 |---------------------|-----------------------------|
 |![Flat area paths](media/config-teams/team-list-flat-structure.png) | ![Hierarchical area paths](media/config-teams/team-list-hierarchy-structure.png) |
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2013  <= tfs-2015"
-
-| Flat area structure | Hierarchical area structure |
-|---------------------|-----------------------------|
-|![Flat area structure](media/pm-flat-area-structure.png)| ![Hierarchical area structure](media/pm-hierarchical-area-structure.png) |
-
-::: moniker-end  
 
 You do this by opening each area path associated with a feature team and changing its location to be under the management area path. 
 
@@ -128,7 +93,7 @@ You do this by opening each area path associated with a feature team and changin
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Work>Project Configuration](../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png)   
 
-1. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+1. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under its corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 
@@ -140,7 +105,7 @@ You do this by opening each area path associated with a feature team and changin
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.   
 
@@ -154,7 +119,7 @@ You do this by opening each area path associated with a feature team and changin
 
 1. Choose **Work**.  
 
-2. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+2. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under its corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 
@@ -165,25 +130,10 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker-end   
 
-::: moniker range="<= tfs-2015"  
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
+## Include subarea paths for management teams
 
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-1. Next, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
-
-    For example, here we move the Customer Profile to under Account Management.
-
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." />  
-
-    Repeat this step for all feature team area paths. 
-
-::: moniker-end
-
-## Include sub-area paths for management teams
-
-By including sub-area paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude sub-area paths. 
+By including subarea paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude subarea paths. 
 
 > [!NOTE]   
 > Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. To learn more, see [Exercising select features with shared area paths](#op-issues) later in this article. 
@@ -215,12 +165,12 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
     > [!div class="mx-imgBorder"]  
     > ![Verify area paths for Account Management team](media/config-teams/verify-area-path-assignments.png)   
 
-    Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam Fiber.   
+    Repeat this step for all your management areas. If you want to enable rollup across all feature teams and management areas to the top-level area, repeat this step for the default team. In our example, that corresponds to Fabrikam Fiber.   
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"   
+::: moniker range="tfs-2018"   
 
 1. You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -239,19 +189,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
     > [!div class="mx-imgBorder"]  
     > ![Verify area paths for Account Management team](media/config-teams/verify-area-path-assignments.png)   
 
-    Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam Fiber.   
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-From **Areas**, open the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu and select **Include sub-areas**.  
-
-Here we choose to include sub-area paths for the Account Management area.  
-
-<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." /> 
-
-Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
+    Repeat this step for all your management areas. If you want to enable rollup across all feature teams and management areas to the top-level area, repeat this step for the default team. In our example, that corresponds to Fabrikam Fiber.   
 
 ::: moniker-end
 
@@ -267,27 +205,16 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 > 
 > Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
 
-::: moniker range=">= tfs-2017"  
 > [!div class="mx-imgBorder"]  
 > ![Iteration path](../../organizations/settings/media/areas/modify-areas-its-iterations-scheduled-ts.png)   
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" />
-::: moniker-end
 
 
-## Configure additional team settings 
 
-For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
+## Configure other team settings 
+
+For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure other team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
-
-
-::: moniker range="<= tfs-2015" 
-This feature isn't supported for TFS 2015 and earlier versions.
-::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -297,7 +224,7 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 > ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
 
 > [!div class="mx-imgBorder"]  
@@ -316,7 +243,7 @@ When you share area paths across two or more teams, you'll want to understand ho
 
 All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
 
-You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it is owned by another team.  
+You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it's owned by another team.  
  
 :::image type="content" source="media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
@@ -325,15 +252,15 @@ You can only use drag-and-drop to reorder or reparent work items assigned to are
 
 Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
 
-By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area shared area paths are of equal depth, the results are non-deterministic.  
+By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area paths are of equal depth, the results are non-deterministic.  
  
 ::: moniker range=">= azure-devops-2019"
- The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
+ The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
- The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+::: moniker range="tfs-2018"
+ The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
 ::: moniker-end
 
 

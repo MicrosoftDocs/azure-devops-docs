@@ -3,18 +3,18 @@ title: Add custom work item type to inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom work item type for an Inheritance process model and apply it to a project.  
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/17/2020
+ms.date: 08/03/2022
 ---
 
 # Add a custom work item type (Inheritance process)     
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
@@ -23,7 +23,7 @@ You use different work item types (WITs) to plan and track different types of wo
 For example, you may want to capture customer issues in a custom WIT labeled Ticket.   
 
 > [!div class="mx-imgBorder"]  
-> ![Custom Ticket work item form](media/process/custom-wit-new-ticket-form.png)
+> ![Custom Ticket work item form.](media/process/custom-wit-new-ticket-form.png)
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -97,7 +97,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2020"
+	::: moniker range=">= azure-devops-2020 < azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/add-custom-field/choose-new-team-project.png) 
 	::: moniker-end
@@ -112,7 +112,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project-sprint166.png) 
 	::: moniker-end
-	::: moniker range="azure-devops-2020"
+	::: moniker range=">= azure-devops-2020 < azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/add-custom-field/create-new-project-2020.png) 
 	::: moniker-end

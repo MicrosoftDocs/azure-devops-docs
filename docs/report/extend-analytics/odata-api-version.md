@@ -2,20 +2,20 @@
 title: OData API versioning
 titleSuffix: Azure DevOps 
 description: Learn how Analytics for Azure DevOps manages changes to the OData API.
-ms.technology: devops-analytics 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: reference
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 06/28/2022
 ---
 
 # OData API versioning
 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-As Analytics grows, we're dedicated to providing consistency and reliability to our users. As such, Analytics for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with more functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
+As the Analytics service matures, we're dedicated to providing consistency and reliability to our users. As such, Analytics for Azure DevOps provides a versioned OData API that is compatible with clients designed for those versions. Each version may be enhanced with more functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and has value as one of our supported versions: **v1.0**, **v2.0**, **v3.0-preview**, or **v4.0-preview**.
 
@@ -85,7 +85,8 @@ The data model exposed by Analytics defines the contract between the service and
 
 ### Example of non-breaking changes
 
-Consider a scenario where a new UserType property is added to the User entity.
+Consider a scenario where a new `UserType` property is added to the `User` entity. For example, the metadata for **v1.0** version is as shown in the following syntax. 
+
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -94,7 +95,7 @@ Consider a scenario where a new UserType property is added to the User entity.
 >         <PropertyRef Name="UserSK"/>
 >     </Key>
 >     <Property Name="UserSK" Type="Edm.Guid" Nullable="false"/>
->     <Property Name="UserId" Type="Edm.Guid" Nullable="false">
+>     <Property Name="UserId" Type="Edm.Guid">
 >         <Annotation Term="Display.DisplayName" String="User Id"/>
 >     </Property>
 >     <Property Name="UserName" Type="Edm.String">
@@ -110,7 +111,38 @@ Consider a scenario where a new UserType property is added to the User entity.
 >     <!-- New User Type property -->
 > </EntityType>
 > ```
-> This change is additive and could be made available in the current **v1.0** version.
+
+For **v4.0-preview** version, the metadata has been augmented. Changes are additive and can be made available in previous versions.
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <EntityType Name="User">
+>   <Key>
+>     <PropertyRef Name="UserSK"/>
+>   </Key>
+>   <Property Name="UserSK" Type="Edm.Guid" Nullable="false"/>
+>   <Property Name="UserId" Type="Edm.Guid">
+>     <Annotation Term="Display.DisplayName" String="User Id"/>
+>   </Property>
+>   <Property Name="UserName" Type="Edm.String">
+>     <Annotation Term="Display.DisplayName" String="User Name"/>
+>     <Annotation Term="Microsoft.VisualStudio.Services.Analytics.IsPersonallyIdentifiableInformation" Bool="true"/>
+>   </Property>
+>   <Property Name="UserEmail" Type="Edm.String">
+>     <Annotation Term="Display.DisplayName" String="User Email"/>
+>     <Annotation Term="Microsoft.VisualStudio.Services.Analytics.IsPersonallyIdentifiableInformation" Bool="true"/>
+>   </Property>
+>   <Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
+>   <Property Name="GitHubUserId" Type="Edm.String">
+>     <Annotation Term="Display.DisplayName" String="GitHub User Id"/>
+>   </Property>
+>   <Property Name="UserType" Type="Microsoft.VisualStudio.Services.Analytics.Model.UserType">
+>     <Annotation Term="Display.DisplayName" String="User Type"/>
+>   </Property>
+> </EntityType>
+> ```
+
+
 
 ### Example of breaking changes
 
@@ -137,7 +169,7 @@ Now consider a scenario where we revert to the original structure of the User en
 > </EntityType>
 > ```
 
-Since removal of the `UserType` field is a breaking change, the field won't be removed until version <strong>v2.0</strong> of the API. <strong>v1.0</strong> of the data model continues to include the `UserType` field.
+Since removal of the `UserType` field is a breaking change, the field won't be removed until version **v2.0** of the API. Version **v1.0** of the data model continues to include the `UserType` field.
 
 
 ## Related articles

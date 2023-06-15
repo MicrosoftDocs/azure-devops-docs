@@ -2,20 +2,20 @@
 title: Clone and update wiki content offline 
 titleSuffix: Azure DevOps 
 description: Add and update pages offline for your built-in team project wiki in Azure DevOps 
-ms.technology: devops-collab
-ms.custom: wiki
+ms.subservice: azure-devops-wiki
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 03/05/2021  
+ms.date: 06/21/2022  
 ---
 
 # Clone and update wiki content offline
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can update your wiki pages offline the same way you develop code in a Git repo.
 
@@ -28,10 +28,10 @@ You can use any client you want or git command-line tools to update your wiki of
 
 The basic steps to update wiki content offline are as follows:
 
-1. Clone your wiki Git repo to your local IDE or workspace
-2. Add files or folders to your local git branch
-3. Update the .order files to reflect the pages and sub-pages that you've added
-4. Commit and push the updates you made to your local git branch
+1. Clone your wiki Git repo to your local IDE or workspace.
+2. Add files or folders to your local git branch.
+3. Update the *.order* files to reflect the pages and sub-pages that you've added.
+4. Commit and push the updates you made to your local git branch.
 
 ## Prerequisites
 
@@ -56,11 +56,11 @@ Do the following steps to migrate Markdown pages from another wiki to your team 
 
 ## Clone your wiki
 
-Your wiki repository stores pages, images, attachments, and the sequence of pages and sub-pages. Clone your wiki to begin.
+Your wiki repository stores pages, images, attachments, and the sequence of pages and subpages. Clone your wiki to begin.
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`), select your project, and then select your wiki.
 
-2. Open the **More** context menu and select **Clone wiki**.
+2. Open the **More actions** context menu and select **Clone wiki**.
 
 	:::image type="content" source="media/wiki/more-clone-wiki.png" alt-text="Clone wiki Git repository":::
 
@@ -79,7 +79,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 ## Add pages to your local Git repository
 
-We author pages using [Markdown format](./markdown-guidance.md). Add a Markdown file to your local branch for each page and sub-page that you want to add to your wiki.
+We author pages using [Markdown format](./markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
 
 ### Add pages
 
@@ -107,13 +107,13 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 	Reference  
     ```
 
-### Add sub-pages
+### Add subpages
 
-1. Create a folder for the parent page, and then add Markdown files for each sub-page in the folder.
+1. Create a folder for the parent page, and then add Markdown files for each subpage in the folder.
 
-   For example, we added to following files to the How-to-contribute folder. These sub-pages appear under the How to contribute page in the wiki.
+   For example, we added the following files to the How-to-contribute folder. These subpages appear under the How to contribute page in the wiki.
 
-   :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Sub-pages under the How to contribute page in the wiki.":::
+   :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Screenshot of the subpages.":::
 
 2. Add a **.order** file in the folder with the order of the sub-pages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
 	 
@@ -161,7 +161,7 @@ In the web portal, you can view the repo files based on the following URL:
 ::: moniker range=">= azure-devops-2019"
 	`https://*AccountName*.visualstudio.com/DefaultCollection/*ProjectName*/_git/*ProjectName*.wiki`
 ::: moniker-end
-::: moniker range=">= tfs-2018"
+::: moniker range="tfs-2018"
 	`https://*ServerName*/DefaultCollection/*ProjectName*/_git/*ProjectName*.wiki`
 ::: moniker-end
 

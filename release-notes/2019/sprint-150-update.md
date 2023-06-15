@@ -2,7 +2,6 @@
 title: Manage organization billing in Azure DevOps - Sprint 150 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 04/08/2019
 description: In the **Sprint 150 Update** of Azure DevOps, we added the ability to manage billing for your organization within our portal. 
 ---

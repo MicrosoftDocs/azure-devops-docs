@@ -2,21 +2,20 @@
 title: Filter lists, boards, and directories
 titleSuffix: Azure DevOps 
 description: Filter your view to focus on items of interest 
-ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
-monikerRange: '>= tfs-2017'
-ms.date: 02/08/2019
+ms.custom: "navigation, cross-service"
+ms.subservice: azure-devops-projects 
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
   
 
 
 # Filter lists, boards, and directories 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Several applications and pages support filtering, which is very useful when a large number of artifacts or items have been defined. Most directory views provide one or more filter functions. 
 
@@ -30,7 +29,7 @@ You can filter most items using keywords or a user name for an author of an item
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 - Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories  
 - Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards 
 
@@ -43,7 +42,7 @@ You can filter most items using keywords or a user name for an author of an item
 
 <a id="filter"></a>
 
-::: moniker range=">= tfs-2018"
+
 ## Filter based on keywords, tags, or fields
 
 To turn filtering on, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
@@ -58,37 +57,8 @@ The filtered set is always a flat list, even if you've selected to show parents.
 
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 
-::: moniker-end
-
-
-::: moniker range="tfs-2017"
-
-## Filter work items based on keywords
-
-You can use keywords to filter your backlogs or queries. The filter function lists those work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. Also, you can enter a value for an ID, whether or not the ID field is visible.  
-
-Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
-
-![Apply text filter](../../boards/backlogs/media/cyb-filter-backlog.png)   
-
-The filtered set is always a flat list, even if you've selected to show parents.  
-
-
-### Characters ignored by keyword filter criteria
-
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
-::: moniker-end
-
-::: moniker range="tfs-2017"
-## Filter work tracking backlogs and queries based on tags
-
-If you've [added tags to your work items](../../boards/queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../../boards/media/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
-
-To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../../boards/queries/add-tags-to-work-items.md#filter)
- 
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
+
 ## Filter directories
 
 Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter a directory list by keyword, team, or other supported field. Keywords apply to titles, descriptions, and team names. 

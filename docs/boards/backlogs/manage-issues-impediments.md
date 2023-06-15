@@ -3,17 +3,17 @@ title: Manage and resolve issues or impediments in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to track issues or impediments to more effectively execute plans or stay on schedule by using Azure Boards.
 ms.custom: "boards-backlogs, seodec18"
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
-ms.date: 10/08/2021
+ms.date: 07/26/2022
 ---
 
 # Manage issues or impediments in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a name="manage-impediments"></a>
 
@@ -31,7 +31,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!IMPORTANT]  
 > Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
@@ -89,26 +89,18 @@ If you want to add these work item types to a backlog, see [Customize your backl
 Open **Boards>Work Items**, and choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon, and then select from the **New work item** menu of options. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add issue, new nav](media/manage-issues/add-issue-vert.png)   
+> ![Screenshot to add an Impediment from the New Work Item list.](media/manage-issues/add-issue-vert.png)   
 
 Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within the add drop down menu. 
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
-<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" />  
+![Screenshot to add an Impediment from the New Work Item list, TFS 2018.](media/cyb-new-work-item-impediment.png) 
   
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-From the Queries page, choose Impediment from the **New** drop-down menu.
-
-<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" />  
-
 ::: moniker-end
 
 
@@ -131,22 +123,29 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 
 ::: moniker-end
-
-<a id="add-to-backlog" /> 
-
-
-::: moniker range="azure-devops"
-
+ 
 <a id="add-to-backlog" /> 
 
 ## Add issues or impediments to your product backlog  
 
+::: moniker range="azure-devops"
 If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+
+::: moniker-end
+
+::: moniker range=">= Azure-devops-2019 < azure-devops"
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by customizing your project's process. For details, see the following: 
+- **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+- **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
+::: moniker-end
+
+::: moniker range="tfs-2018"
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your On-premise XML process. For details, see [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 
 ::: moniker-end
 

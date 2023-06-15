@@ -1,19 +1,19 @@
 ---
-title: Index to query examples, tasks, operators, and macros
+title: Use an index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
-ms.custom: boards-queries
-ms.technology: devops-agile
+description: Learn how to use an index to query operators, macros, and sample queries that are used to list work items for Azure Boards and Azure DevOps.
+ms.custom: boards-queriess, engagement-fy23
+ms.service: azure-devops-boards
 ms.topic: overview 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/25/2021
+ms.date: 10/05/2022
 ---
 
-# Query quick reference 
+# Use an index to query quick reference data in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -111,7 +111,7 @@ You can list work items based on the following criteria...
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
       - [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n)  
       ::: moniker-end
-      ::: moniker range="<= tfs-2018"
+      ::: moniker range="tfs-2018"
       - [Assigned to a member of a team](query-by-workflow-changes.md#group)
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
       ::: moniker-end
@@ -124,6 +124,7 @@ You can list work items based on the following criteria...
       
       **Other**  
       - [List deleted work items (Recycle bin)](../backlogs/remove-delete-work-items.md#restore-or-destroy-work-items)
+      - [Query by field value comparisons](query-field-value.md) 
    :::column-end:::
 :::row-end:::
 ---
@@ -139,40 +140,61 @@ You can list work items based on the following criteria...
    :::column span="1":::
       - [Add a query](using-queries.md) 
       - [Add a query chart](../../report/dashboards/charts.md) 
-      - [Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md) 
-      - [Add a work item chart to a dashboard](../../report/dashboards/charts.md#add-chart-widget) 
+      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-chart-to-a-dashboard) 
+      - [Add a query tile to a dashboard](organize-queries.md#add-query-dashboard)
+      - [Add query results to a dashboard](using-queries.md#query-results-widget-dashboard) 
       - [Add a query folder](organize-queries.md) 
       - [Add columns to query results](../backlogs/set-column-options.md) 
       - [Bulk modify query items](../backlogs/bulk-modify-work-items.md) 
+      - [Bulk update existing work items (csv)](import-work-items-from-csv.md#update-existing-work-items) 
       - [Copy query URL](view-run-query.md#email-query) 
       - [Define a clause](using-queries.md#define-clause) 
-      - [Delete a query](organize-queries.md#view-rename-delete) 
+      - [Delete a query or query folder](organize-queries.md#view-rename-delete) 
       - [Direct-links query](using-queries.md#directs-link-query) 
-      - [Edit a query](using-queries.md) 
    :::column-end:::
    :::column span="1":::
+      - [Edit a query](using-queries.md) 
       - [Email a query](view-run-query.md#email-query) 
       - [Export a query to Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) 
-      - [Favorite a query](view-run-query.md) 
+      - [Export a query (csv)](import-work-items-from-csv.md#export-list-as-a-csv-file) 
+      - [Favorite a query](view-run-query.md#favorites) 
+      - [Favorite a query as a team favorite](organize-queries.md#save-a-query-as-a-team-favorite) 
       - [Filter a query](../backlogs/filter-backlogs-boards-plans.md) 
       - [Flat-list query](using-queries.md#flat-list) 
       - [Group a clause](using-queries.md#group-clauses) 
-      - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 
+      - [Group a chart by tags](add-tags-to-work-items.md#chart-work-items-and-group-by-tags) 
+      - [Import new work items (csv)](import-work-items-from-csv.md#import-new-work-items) 
       - [Open a query](using-queries.md) 
       - [Query across projects](using-queries.md#across-projects) 
       - [Query based on tags](add-tags-to-work-items.md#query) 
-      - [Rename a query](organize-queries.md#view-rename-delete) 
    :::column-end:::
    :::column span="1":::
-      - [Run a query](using-queries.md) 
+      ::: moniker range="azure-devops"
+      - [Rename a query or query folder](organize-queries.md#view-rename-delete) 
+      - [Run a query](view-run-query.md) 
       - [Save a query](organize-queries.md#save) 
+      - [Set query permissions](set-query-permissions.md) 
+      - [Tree query](using-queries.md#tree-query) 
+      - [Triage query results](triage-work-items.md) 
+      - [View a query](view-run-query.md) 
+      - [View query results with Parent field](using-queries.md#query-results-widget-parent-titles) 
+      - [Understand link types](link-type-reference.md) 
+      - [Ungroup a clause](using-queries.md#ungroup-clause) 
+      - [Work Item Query Language (WIQL)](wiql-syntax.md)
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      - [Rename a query or query folder](organize-queries.md#view-rename-delete) 
+      - [Run a query](using-queries.md) 
+      - [Save a query](organize-queries.md#save)
+      - [Save a query as a team favorite](organize-queries.md#favorite-query)  
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#tree-query) 
       - [Triage query items](triage-work-items.md) 
       - [View a query](view-run-query.md) 
       - [Understand link types](link-type-reference.md) 
       - [Ungroup a clause](using-queries.md#ungroup-clause) 
-      - [Work Item Query Language (WIQL)](wiql-syntax.md) 
+      - [Work Item Query Language (WIQL)](wiql-syntax.md)
+      ::: moniker-end 
    :::column-end:::
 :::row-end:::
 ---
@@ -181,53 +203,49 @@ You can list work items based on the following criteria...
 
 ## Operators and macros supported for each data type
 
-The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the <a href="../work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../work-items/guidance/work-item-field.md)">Work item field index</a>. Operators available for defining a query clause depends on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see <a href="query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](query-operators-variables.md)">Query fields, operators, and macros</a>.
+The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depend on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see [Query fields, operators, and macros](query-operators-variables.md).
+
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+
+
 
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Description**
-
    :::column-end:::
    :::column span="3":::
    **Supported operators and macros**
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   **Boolean <sup>1</sup>** 
-
+   **Boolean** 
    :::column-end:::
    :::column span="3":::
    Supports a True/False value. Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md). 
-
    :::column-end:::
    :::column span="3":::
-   = , <> , =[Field] , <>[Field]
+   `= , <> , =[Field] , <>[Field]`
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **DateTime** 
-
    :::column-end:::
    :::column span="3":::
-   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)  
+   A date field in which you can specify a variable, such as `@Today` or `@Today-1`, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.  
 
    For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  **Macros**: **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>**, valid with any **DateTime** field  
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
+   **Macros**: `@Today`, valid with any **DateTime** field  
 
    **Additional macros supported on Azure DevOps 2019 Update 1 and later versions:**:  
-   **<xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref>**, **<xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref>**, **<xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref>**, and **<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref>**, valid with any **DateTime** field
-
+   `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear`, valid with any **DateTime** field
    :::column-end::: 
 :::row-end:::
 :::row:::
@@ -235,13 +253,13 @@ The following table indicates the operators and macros available for the differe
    **Double** 
    :::column-end:::
    :::column span="3":::
-   Also referred to as **Decimal** and includes **picklistDouble**<sup>2</sup>. A real number, such as 0.2 or 3.5.  
+   Also referred to as **Decimal** and includes **picklistDouble**<sup>1</sup>. A real number, such as 0.2 or 3.5.  
    
-   Query samples: [Query by numeric fields](query-numeric.md). 
+   Query examples: [Query by numeric fields](query-numeric.md). 
 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -252,18 +270,17 @@ The following table indicates the operators and macros available for the differe
    A character string that represents a unique ID.
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **History** 
-
    :::column-end:::
    :::column span="3":::
    Custom formatted field used to track historical information and only assigned to the **History** field.  
 
-   Query samples: [History and auditing](history-and-auditing.md). 
+   Query examples: [History and auditing](history-and-auditing.md). 
 
    :::column-end:::
    :::column span="3":::
@@ -273,13 +290,12 @@ The following table indicates the operators and macros available for the differe
 :::row:::
    :::column span="1":::
     **HTML** 
-
    :::column-end:::
    :::column span="3":::
    Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
    :::column-end:::
    :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>3</sup>, Is Not Empty<sup>3</sup>
+   `Contains Words`, `Does Not Contain Words`, `Is Empty`<sup>2</sup>, `Is Not Empty`<sup>2</sup>
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -287,13 +303,11 @@ The following table indicates the operators and macros available for the differe
    **Identity**
    :::column-end:::
    :::column span="3":::
-   A String field that is used to hold a user identity.Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md).
-
+   A String field that is used to hold a user identity. Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md).
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-   **Macros**: **@me** valid for all Identity fields
-
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   **Macros**: **@me** valid for all Identity fields.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -301,18 +315,14 @@ The following table indicates the operators and macros available for the differe
    **Integer**
    :::column-end:::
    :::column span="3":::
-   Also includes **picklistInteger**<sup>2</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.  
+   Also includes **picklistInteger**<sup>1</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.  
 
    Query samples: [Query by numeric fields](query-numeric.md)
-
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`  
 
-   **Macros**: **@Follows**<sup>4</sup>,  
-   **@MyRecentActivity**<sup>5</sup>,  
-   **@RecentMentions**<sup>5</sup>,  
-   **@RecentProjectActivity**, valid when used with the **ID** field 
+   **Macros**: `@Follows`, `@MyRecentActivity`, `@RecentMentions`, and `@RecentProjectActivity`, valid when used with the **ID** field. 
 
    :::column-end:::
 :::row-end:::
@@ -322,11 +332,11 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    Multi-line text strings that support long descriptions and are automatically indexed for full-text search, when full-text search is available.  
-   Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
+   Query examples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
 
    :::column-end:::
    :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>3</sup>, Is Not Empty<sup>3</sup>
+   `Contains Words`, `Does Not Contain Words`, `Is Empty`, `Is Not Empty`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -334,64 +344,52 @@ The following table indicates the operators and macros available for the differe
    **String** 
    :::column-end:::
    :::column span="3":::
-   Also includes **picklistString**<sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the **Title** field, picklists (drop-down menus), user accounts, **Tags**, and other fields.  
+   Also includes **picklistString**<sup>1</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the **Title** field, picklists (drop-down menus), user accounts, **Tags**, and other fields.  
    
-   Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md) and [Query by picklist value](planning-ranking-priorities.md).
-
+   Query examples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md) and [Query by picklist value](planning-ranking-priorities.md).
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`  
 
-   **Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **@Project**<sup>6</sup>, valid with the **Team Project** field 
+   **Macros**: `[Any]`, valid with the **Work Item Type** field `@Project`, valid with the **Team Project** field. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **TreePath** 
-
    :::column-end:::
    :::column span="3":::
    Field type that supports the **Area Path** and **Iteration Path** fields. You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
  
-   Query samples: [Query by area or iteration path](query-by-area-iteration-path.md) and [Query by date or current iteration](query-by-area-iteration-path.md).
+   Query examples: [Query by area or iteration path](query-by-area-iteration-path.md) and [Query by date or current iteration](query-by-area-iteration-path.md).
 
    :::column-end:::
    :::column span="3":::
-   Under, Not Under  
+   `Under`, `Not Under`, `=`, `<>`, `In`, `Not In`  
 
-   **Macros**: **@TeamAreas**<sup>7</sup>, valid with **Area Path** field  
-   **@CurrentIteration**<sup>8</sup> and **@CurrentIteration+/- n**<sup>9</sup> valid with the **Iteration Path** field
+   **Macros**: `@TeamAreas`<sup>3</sup>, valid with **Area Path** field  
+   `@CurrentIteration` and `@CurrentIteration+/- n`<sup>4</sup> valid with the **Iteration Path** field
    :::column-end:::
 :::row-end:::
 
-
 > [!NOTE]  
-> 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
-> 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
-> 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
-> 4. The **@Follows** macro is supported for TFS 2017 and later versions.
-> 5. The **@MyRecentActivity**, **@RecentMentions,** and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
-> 6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-> 7. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
-> 8. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-> 9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
+> 1. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Server 2019 and later versions. 
+> 2. The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions.   
+> 3. The `@TeamAreas` macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions. 
+> 4. The `@CurrentIteration +/- n` macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
-
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="samples" />
 
-## Query samples for select fields 
+## Example queries for select fields 
 
 The following table lists common query fields and their data type for which sample queries are provided. To determine the data type of a field, see [Work item fields and attributes, List field attributes](../work-items/work-item-fields.md).  
 
 :::row:::
    :::column span="1":::
-   ### A
-   
+   ### A  
    - [Acceptance Criteria](titles-ids-descriptions.md) (HTML)
    - [Activated By](query-by-workflow-changes.md) (Identity)
    - [Activated Date](query-by-workflow-changes.md) (DateTime)
@@ -402,21 +400,19 @@ The following table lists common query fields and their data type for which samp
    - [Automated Test Name](build-test-integration.md) (String) 
    - [Automated Test Type](build-test-integration.md) (String) 
    
-   ### B
-   
+   ### B  
    - [Blocked](planning-ranking-priorities.md) (String)
    - [Board Column](query-by-workflow-changes.md) (String)
    - [Board Column Done](query-by-workflow-changes.md) (Boolean)
    - [Board Lane](query-by-workflow-changes.md) (String)
    - [Business Value](query-numeric.md) (String) 
    
-   ### C
-   
+   ### C  
    - [Changed By](history-and-auditing.md) (Identity)
    - [Changed Date](history-and-auditing.md) (DateTime)
    - [Closed By](query-by-workflow-changes.md) (Identity)
    - [Closed Date](query-by-workflow-changes.md) (DateTime)
-   - [Comment Count](linking-attachments.md)<sup>1</sup> (Integer)
+   - [Comment Count](linking-attachments.md) (Integer)
    - [Committed](planning-ranking-priorities.md) (String)
    - [Completed Work](query-numeric.md) (Decimal)
    - [Created By](query-by-workflow-changes.md)  (Identity)
@@ -425,8 +421,7 @@ The following table lists common query fields and their data type for which samp
    :::column-end:::
    :::column span="1":::
    
-   ### D-E-F
-   
+   ### D-E-F  
    - [Discipline](query-numeric.md) (String)
    - [Description](titles-ids-descriptions.md) (HTML)
    - [Due Date](query-by-date-or-current-iteration.md) (DateTime)
@@ -435,8 +430,7 @@ The following table lists common query fields and their data type for which samp
    - [Finish Date](query-by-date-or-current-iteration.md) (DateTime)
    - [Found In Build](build-test-integration.md) (String)
    
-   ### H-P
-   
+   ### H-P  
    - [History](history-and-auditing.md) (History)
    - [Hyperlink Count](linking-attachments.md#hyper-link-count) (Integer)
    - [ID](titles-ids-descriptions.md) (Integer)
@@ -447,9 +441,7 @@ The following table lists common query fields and their data type for which samp
    - [Original Estimate](query-numeric.md) (Decimal)
    - [Parameters](build-test-integration.md) (HTML)
    - [Priority](planning-ranking-priorities.md) (Integer) 
-   
-   ### R
-   
+   ### R  
    - [Reason](query-by-workflow-changes.md) (String)
    - [Related Link Count](linking-attachments.md) (Integer)
    - [Remaining Work](query-numeric.md) (Decimal)
@@ -458,13 +450,10 @@ The following table lists common query fields and their data type for which samp
    - [Resolved Date](query-by-workflow-changes.md) (DateTime)
    - [Resolved Reason](query-by-workflow-changes.md) (String)
    - [Rev](history-and-auditing.md) (Integer)
-   - [Revised Date](history-and-auditing.md) (DateTime)
-   
+   - [Revised Date](history-and-auditing.md) (DateTime) 
    :::column-end:::
    :::column span="1":::
-   
-   ### S
-   
+   ### S  
    - [Severity](planning-ranking-priorities.md) (String)
    - [Size](query-numeric.md) (Decimal)
    - [Stack Rank](planning-ranking-priorities.md) (Decimal)
@@ -474,10 +463,8 @@ The following table lists common query fields and their data type for which samp
    - [Steps](build-test-integration.md) (HTML)
    - [Steps to Reproduce](titles-ids-descriptions.md) (HTML)
    - [Story Points](query-numeric.md) (Decimal)
-   - [System Info](titles-ids-descriptions.md) (HTML)
-   
-   ### T
-   
+   - [System Info](titles-ids-descriptions.md) (HTML)  
+   ### T  
    - [Tags](add-tags-to-work-items.md) (String)
    - [Target Date](query-by-date-or-current-iteration.md) (DateTime)
    - [Task Type](query-numeric.md) (String)
@@ -485,24 +472,18 @@ The following table lists common query fields and their data type for which samp
    - [Test Suite Type](build-test-integration.md) (String)
    - [Title](titles-ids-descriptions.md) (System)
    - [Triage](planning-ranking-priorities.md) (String)
-   
-   ### V-W
-   
+   ### V-W  
    - [Value Area](planning-ranking-priorities.md) (String)
    - [Work Item Type](titles-ids-descriptions.md) (String)  
-   
    :::column-end:::
 :::row-end:::
 
-
-> [!NOTE]  
-> 1. The **Comment Count** field is supported for TFS 2017 and later versions. 
 
 
 ## Related articles
 
 - [Query by field value comparisons](query-field-value.md) 
 - [Guidance to create high-performing queries](high-performing-queries.md)
-- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Use categories to group work item types](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

@@ -2,27 +2,26 @@
 title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
-ms.technology: devops-new-user
+ms.subservice: azure-devops-projects
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
-author: steved0x
-ms.date: 11/15/2019 
+author: steved0x 
 monikerRange: '<= azure-devops'
+ms.date: 12/16/2022
 ---
 
 # Connect to a project in Azure DevOps
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
 - [Web portal](#web-portal)  
-- [Visual Studio or Team Explorer](#visual-studio)  
-- [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in) 
-- [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
+- [Visual Studio or Team Explorer](#visual-studio)   
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
+- [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)
 
 A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. One or more projects may be defined within a collection. There must be at least one project. For more information, see [About projects and scaling your organization](about-projects.md).
 
@@ -53,7 +52,7 @@ A project defines a process and data storage in which you manage your software p
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
    ::: moniker-end
-   ::: moniker range=">= tfs-2013 < azure-devops-2019" 
+   ::: moniker range="< azure-devops-2019"  
    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
@@ -77,20 +76,12 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker-end
  
-    ::: moniker range=">= tfs-2017 <=tfs-2018"
+    ::: moniker range="tfs-2018"
 
     From the project summary page, hover over a service and then choose the page you want. To choose another project, choose the ![Azure DevOps logo](../../media/icons/project-icon.png) Azure DevOps logo.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](media/connect-projects/project-summary-page-choose-app-horz.png)  
-
-    ::: moniker-end
-
-    ::: moniker range=">= tfs-2013 <= tfs-2015"
-
-    Choose your project or team from the set of available links, or choose **Browse** to access all projects and teams.
-
-	![Web portal, TFS, Overview](media/connect-tp-tfs-web-portal.png) 
 
     ::: moniker-end
 
@@ -100,28 +91,12 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 ### Sign in with different credentials
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-1. Open Windows Security from the context menu associated with your name.
-
-    ![Sign in As link in user profile menu](media/connect-tp-open-profile.png)
-
-1. Enter your credentials.
-
-    ![Enter user name and password to access TFS](media/connect-projects-tfs/IC657077.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
 1. Open your profile menu and choose **Sign out**.
 
     > [!div class="mx-imgBorder"]  
 	> ![Sign out](media/sign-out.png)
 
 1. Choose **Sign in** and enter your credentials.
-
-::: moniker-end
 
 ### Open the web portal from Team Explorer
 
@@ -268,13 +243,13 @@ Select Shift and right-click *devenv.exe*, then select **Run as different user**
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. The [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md) usually does adds user accounts.
+To connect to a project, you need your user account added to the project. The **Organization owner** for Azure DevOps Services or a member of the **Project Administrators** group usually adds user accounts. To learn more, see [Add organization users and manage access](../accounts/add-organization-users.md) or [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Azure DevOps Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
@@ -284,7 +259,7 @@ You can also provide access to Stakeholders in your organization who have limite
 
 <a name="proxy"></a>
 
-## Configure Visual Studio to connect to Azure DevOps Proxy Server
+## Configure Visual Studio to connect to Azure DevOps Proxy Server 
 
 If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
@@ -301,16 +276,7 @@ If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/inst
     Make sure you specify the port number that your administrator assigned to TFS Proxy.
 
 To associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
-
-### What other clients support connection to Azure DevOps?
-
-Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a project from these clients:
-
-- [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in) 
-- [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
-- [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
+ 
 
 ### Requirements and client compatibility
 
@@ -318,7 +284,7 @@ Some tasks or features aren't available when you connect to a later version of A
 
 ### Determine your platform version
 
-See [Feedback and support](../../user-guide/provide-feedback.md#platform-version).
+See [Look up your Azure DevOps platform and version](../../user-guide/lookup-platform-version.md).
 
 ## Next steps
 

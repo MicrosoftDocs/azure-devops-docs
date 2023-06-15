@@ -1,111 +1,97 @@
 ---
-title: Install a Maven artifact using Gradle
-description: Install a Maven artifact using Gradle in an Azure DevOps Services build
-ms.technology: devops-artifacts
+title: Build and publish Artifacts using Gradle
+description: How to build and publish artifact with Gradle and Azure Pipelines 
 ms.reviewer: dastahel
 ms.topic: conceptual
-ms.date: 01/31/2018
-monikerRange: '>= tfs-2018'
+ms.date: 08/18/2022
+monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
+# Build and publish artifacts with Gradle and Azure Pipelines
 
-# Install a Maven artifact using Gradle in an Azure DevOps Services build
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-**Azure DevOps Services** | **TFS 2018**
-
-Gradle is a popular build tool for Java applications and the primary build tool for Android. Learn how to download a Maven artifact using Gradle during an Azure DevOps Services build of your application.
+Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and build and publish our build artifacts.
 
 ## Prerequisites
 
-Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- [Install Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- [Install Gradle](https://gradle.org/install/).
 
-From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
+To make sure you have all the prerequisites set up, run the following command in an elevated command prompt to check which Java version is installed on your machine.
 
-```cli
+```Command
 java -version
 ```
 
-And then install Gradle. Once it completes, confirm the installation from a command prompt:
+If the above command doesn't return a java version, make sure you go back and install the Java JDK or JRE first. 
 
-```cli
+To confirm the installation of Gradle, run the following command in an elevated command prompt:
+
+```Command
 gradle -v
 ```
 
-You're ready to start! This tutorial will guide you through the process of installing a Maven artifact using Gradle.
-
-> [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](../../repos/git/clone.md).
-
 ## Set up authentication
-
-First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
 ::: moniker range=">= azure-devops-2019"
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select **User settings**, and then select **Personal access tokens**
 
-Click **+ New Token**.
+    :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+2. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
 
-> You may have to choose "Show all scopes" at the bottom to see the Packaging area.
+    :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
-![Create packaging personal access token](media/create-packaging-pat.png)
-
-Click **Create**.
+3. Select **Create** when you're done.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select your profile icon, and then select **Security**.
 
-Click **Add**.
+2. Select **New Token**, and then name your token and set its expiration date. 
 
-![Add a personal access token](media/add-pat.png)
+3. Select the **Packaging (Read & write)** scope.
 
-Give your new token a name and a duration. 
-
-Select the **Packaging (read and write)** scope.
-
-![Select a token scope](media/select-scope.png)
+    :::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
 
 ::: moniker-end
 
-The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
+4. Copy your token and save it in a secure location.
 
-Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
+5. Create a new file in your `.gradle` folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
 
-Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
-```ini
-vstsMavenAccessToken=YOUR_TOKEN_HERE
-```
+6. Open the **gradle.properties** file with a text editor and add the following snippet:
 
-Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the file when you're done.
+    ```
+    vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
+    ```
 
-## Install a Maven artifact using Gradle
+7. Save your file when you're done.
 
-Open your **build.gradle** file and confirm that the following text is present at the top of it:
-```groovy
-apply plugin: 'java'
-```
+## Build projects with Gradle CLI
 
-Now, add the following code to the end of your **build.gradle** file. Use the `groupId`, `artifactId`, and `version` you supplied in the previous step.
+1. Open your *build.gradle* file and make sure it starts with the following:
 
-```groovy
-dependencies { 
-    compile(group: '{your-group-ID-here}', name: '{your-artifact-ID-here}', version: '{your-version-number-here}')  
-} 
-```   
-For example: `compile(group: 'siteOps', name: 'odata-wrappers', version: '1.0.0.0')
+    ```groovy
+    apply plugin: 'java'
+    ```
 
-This tells `gradle build` to download the artifact you created prior, which is effectively named `orgId:artifactId`, and that it should be applied to the app named in the dependencies. 
+1. Add the following snippet to your *build.gradle* file to download your artifact during the build. Replace the placeholders with your groupID, artifactID, and versionNumber. For example: `compile(group: 'siteOps', name: 'odata-wrappers', version: '1.0.0.0')
 
-To test this, create a simple Java code file and build it with Gradle. You can use this code to test:
+    ```groovy
+    dependencies { 
+        compile(group: '<YOUR_GROUP_ID>', name: '<ARTIFACT_ID>', version: '<VERSION_NUMBER>')  
+    } 
+    ```   
+
+To test this, we can create a sample Java console app and build it with Gradle.
 
 ```java
-package
-
 public class HelloWorld { 
     public static void main(String[] args) { 
         System.out.println("Hello, world!"); 
@@ -113,36 +99,42 @@ public class HelloWorld {
 } 
 ```
 
-Build the code by running Gradle from a command prompt:
+Run the following command to build your project. Your build output should return: `BUILD SUCCESSFUL`
 
-```cli
+```Command
 gradle build
 ```
 
-If the build is successful, you will see `BUILD SUCCESSFUL` displayed when it completes.
+## Use Gradle in Azure Pipelines
 
-## Configure your build to install Maven artifacts using Gradle
+1. Run the following command to create the Gradle wrapper **gradlew**. 
 
-Run the following from a command prompt:
+    ```cli
+    gradle wrapper
+    ```
 
-```cli
-gradle wrapper
-```
+1. Push your changes to your remote branch. We will need this file later when we add the **Gradle** task.
 
-The Gradle wrapper is created in the directory where you ran the above command. The wrapper's file name is **gradlew**. Do not rename this file.
+1. Navigate to your pipeline definition. If you don't have one, create a new pipeline, select **Use the classic editor** and then select the **Gradle** template. 
 
-`git push` an update that contains the wrapper (gradlew) from your cloned (local) repo to `origin`. Team Build requires this file on the remote repo for Gradle to build your project.
+    :::image type="content" source="media/select-gradle-template.png" alt-text="Screenshot showing how to use the Gradle pipeline template":::
 
-Go to the **Build and Release** page for your project, and then select **Builds**.
+1. You can use the default settings with the **gradlew build** task.
 
-Select the **+ New** button. Scroll down and select the **Gradle** template.
+    :::image type="content" source="media/gradle-build-template.png" alt-text="Screenshot showing the Gradle task":::
 
-![Select the Gradle template for a new Build task](media/select-gradle-template.png)
+1. The **Publish build artifacts** task will publish our artifact to Azure Pipelines.
 
-Select **Apply** to start configuring the build to use your Gradle wrapper.
+    :::image type="content" source="media\publish-gradle-pipeline.png" alt-text="Screenshot showing the publish artifacts task.":::
 
-Now, select the **gradlew build** step. You can use the default settings to start.
+1. Select **Save & queue** when you're done.
 
-![Configure the Gradle template](media/gradle-build-template.png)
+1. You can view your published artifact in your pipeline **Summary** once the run is complete.
 
-Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build pipeline, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
+    :::image type="content" source="media\published-artifact.png" alt-text="Screenshot showing the published artifact in pipeline summary.":::
+
+## Related articles
+
+- [Publish and download pipeline Artifacts](./pipeline-artifacts.md)
+- [Restore NuGet packages in Azure Pipelines](../packages/nuget-restore.md)
+- [Artifacts in Azure Pipelines](./build-artifacts.md)

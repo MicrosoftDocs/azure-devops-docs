@@ -1,28 +1,31 @@
 ---
 title: Import, export, and manage work item types
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps  
 description: Manage work item types for a project 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
+ms.date: 12/01/2022
 ---
 
 # Import, export, and manage work item types
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
-You can manage work item types for a project by using the following **witadmin** commands:  
--   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
--   **exportwitd**:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.    
--   **importwitd**:  Imports work item types from an XML definition file into a project. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type doesn't exist, a new work item type is created. To validate the XML that defines a work item type, but not import the file, use the **/v** option.   
--   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window. 
--   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
-  
+You can manage work item types for a project by using the following `witadmin` commands:  
+- `destroywitd`:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
+- `exportwitd`:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.    
+- `importwitd`:  Imports work item types from an XML definition file into a project. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type doesn't exist, a new work item type is created. To validate the XML that defines a work item type, but not import the file, use the `/v` option.   
+- `listwitd`:  Displays the names of the work item types in the specified project in the Command Prompt window. 
+- `renamewitd`:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
+
+To learn more about how work item types are used to track work, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
+
+
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
  
@@ -35,7 +38,7 @@ For the project where the work item types are defined, you must have the followi
 -   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
 -   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
@@ -55,20 +58,20 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the project collection. The format for the URI is the following: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following:<br /><br />**http**://*ServerName:Port/CollectionName*|  
-|**/p:** *Project*|The project for which the types of work items are to be managed. This project must be defined in the project collection specified by the **/collection** parameter.<br /><br /> The **/p** parameter is required unless you run the **importwitd** command with the **/v** option.|  
-|**/n:** `TypeName`|The name of the work item type to destroy, export, import, or rename.|  
-|**/f:** `FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window.<br /><br /> **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft web site.|  
-|**/e:** *Encoding*|The name of a .NET Framework 2.0 encoding format. The command uses the specified encoding to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** tries to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
-|**/exportgloballists**|Exports the definitions of global lists referenced by the work item type. The definitions for global lists will be embedded into the work item type definition XML. When not specified, the definitions for global lists are omitted.|  
-|**/v**|Validates the XML that defines the work item type, but does not import the XML definition file. **Note:**  You can validate the type definition without specifying a project. References to project-scoped groups is ignored.|  
-|**/new:** *NewName*|The new name of the work item type.|  
-|**/noprompt**|Disables the prompt for confirmation.|  
-|**/?** or **help**|Displays help about the command in the Command Prompt window.|  
+|`/collection`:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises format:** `http://ServerName:Port/VirtualDirectoryName/CollectionName`<br /> If no virtual directory is used, then use the following format: `http://ServerName:Port/CollectionName`.|  
+|`/p:Project`|The project for which the types of work items are to be managed. This project must be defined in the project collection specified by the **/collection** parameter.<br /><br /> The **/p** parameter is required unless you run the **importwitd** command with the **/v** option.|  
+`/n:TypeName`|The name of the work item type to destroy, export, import, or rename.|  
+|`/f:FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window.<br /><br /> **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft web site.|  
+|`/e:*Encoding`|The name of a .NET Framework 2.0 encoding format. The command uses the specified encoding to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** tries to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
+|`/exportgloballists`|Exports the definitions of global lists referenced by the work item type. The definitions for global lists will be embedded into the work item type definition XML. When not specified, the definitions for global lists are omitted.|  
+|`/v`|Validates the XML that defines the work item type, but doesn't import the XML definition file. **Note:**  You can validate the type definition without specifying a project. References to project-scoped groups is ignored.|  
+|`/new:NewName`|The new name of the work item type.|  
+|`/noprompt`|Disables the prompt for confirmation.|  
+|`/?` or `help`|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
 
-When you use the **destroywitd** command, it destroys all the following objects:  
+When you use the `destroywitd` command, it destroys all the following objects:  
   
 - The work item type   
 - All work items of that type    
@@ -79,11 +82,11 @@ When you use the **destroywitd** command, it destroys all the following objects:
 
 Unless otherwise specified, the following values apply in each example:  
   
--   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
--   Project name: AdventureWorks    
--   Input or output file name: myworkitems.xml  
--   Work item type name: myworkitem   
--   Default encoding: UTF-8  
+-   URI for the project collection: `http://AdventureWorksServer:8080/tfs/DefaultCollection`    
+-   Project name: `AdventureWorks`    
+-   Input or output file name: `myworkitems.xml`  
+-   Work item type name: `myworkitem`   
+-   Default encoding: `UTF-8`  
   
 ### Export the definition of a WIT  
 
@@ -124,7 +127,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 ```  
   
 ### Validate the XML definition of a WIT  
- The following example validates the XML that defines the work item type but does not import the definition.  
+ The following example validates the XML that defines the work item type but doesn't import the definition.  
   
 ```  
 witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks /v  
@@ -134,7 +137,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after an upgrade?  
 
-**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.  
   
 Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
@@ -147,7 +150,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
  ![Color assignments to different work item types](media/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
   
 ### Q: How do I deactivate or disable a WIT? How do I restrict users from creating work items of a certain type?  
-**A:** If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  
+**A:** If you have a work item type that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML  
@@ -189,7 +192,9 @@ witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollectio
   
 When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. In particular, the [Agile planning tools](../../boards/get-started/what-is-azure-boards.md) will not work until you update the categories definition.  
   
-For more information, see [Import and export categories](witadmin-import-export-categories.md).  
+For more information, see [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
   
 ## Related articles  
 -  [Customize your work tracking experience](../customize-work.md)
+-  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   
+-  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

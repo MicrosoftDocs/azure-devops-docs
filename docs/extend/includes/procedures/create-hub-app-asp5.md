@@ -1,18 +1,18 @@
 1. Create an ASP.NET application.
 
-	![New project dialog with ASP.NET Web Application selected](../../media-procedures/create-hub-app-asp5/create-web-app.png)
+	![New project dialog with ASP.NET Web Application selected](../../media/create-hub-app-asp5/create-web-app.png)
 
 2. Use the empty template.
 
-	![New ASP.NET dialog with the ASP.NET 5 Preview Empty template selected](../../media-procedures/create-hub-app-asp5/empty-template.png)
+	![New ASP.NET dialog with the ASP.NET 5 Preview Empty template selected](../../media/create-hub-app-asp5/empty-template.png)
 
 3. Add the web page that you want to display as a hub. We're doing a simple Hello World page here.
 
-	![Hello world page in the code window and solution explorer](../../media-procedures/create-hub-app-asp5/hello-world-page.png)
+	![Hello world page in the code window and solution explorer](../../media/create-hub-app-asp5/hello-world-page.png)
 
 4. Add a 58x58 pixel image to your web app that identifies your extension.
 
-	![fabrikam logo](../../media-procedures/fabrikam-logo.png)
+	![fabrikam logo](../../media/fabrikam-logo.png)
 
 	If you have the image published on another site, you don't need to add it to your extension. You'll be able to reference it from that site.
 
@@ -28,5 +28,5 @@
 
 6. Enable https for your web app.
 
-	![Properties dialog with SSL enabled](../../media-procedures/create-hub-app-asp5/enable-ssl.png)
+	![Properties dialog with SSL enabled](../../media/create-hub-app-asp5/enable-ssl.png)
 

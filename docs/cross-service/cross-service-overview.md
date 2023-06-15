@@ -2,19 +2,19 @@
 title: Cross-service integration overview
 titleSuffix: Azure DevOps
 description: Learn about how Azure DevOps supports collaboration across all its services. 
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2017'
-ms.date: 08/31/2021
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
+ms.date: 09/28/2022
 ---
  
 
 # Cross-service integration and collaboration overview 
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 One of the major strengths of Azure DevOps is the integration it supports across its core services. Azure DevOps supports multiple integration points across each of the major services&mdash;Azure Boards, Azure Repos, Azure Pipelines, and Azure Test Plans. 
 
@@ -41,7 +41,7 @@ Collaborating within and across teams is supported with many of the features sum
       `@mentions` (add to discussions and comments)
    :::column-end::: 
    :::column span="3":::
-      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../notifications/at-mentions.md).  
+      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../organizations/notifications/at-mentions.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -50,7 +50,7 @@ Collaborating within and across teams is supported with many of the features sum
       `#ID` (link to a work item) 
    :::column-end::: 
    :::column span="3":::
-      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../notifications/add-links-to-work-items.md).  
+      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../organizations/notifications/add-links-to-work-items.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -62,8 +62,8 @@ Collaborating within and across teams is supported with many of the features sum
       Each team gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. To learn more, see:  
       - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
       - [Set personal or team favorites](../project/navigation/set-favorites.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+      - [Unsubscribe from default notification](../organizations/notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -73,10 +73,10 @@ Collaborating within and across teams is supported with many of the features sum
    :::column-end::: 
    :::column span="3":::
       Configure or opt out of personal, team, project, or organization-level alerts. Subscribe to email alerts when changes occur to work items, code reviews, pull requests, source control files, builds and more. To learn more, see:  
-      - [About notifications](../notifications/about-notifications.md)
-      - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+      - [About notifications](../organizations/notifications/about-notifications.md)
+      - [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+      - [Unsubscribe from default notification](../organizations/notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../organizations/notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
 :::row-end:::
 ---
@@ -106,7 +106,7 @@ Collaborating within and across teams is supported with many of the features sum
 
 ## Azure Boards - Azure Repos 
 
-The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links).
+The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../organizations/notifications/add-links-to-work-items.md#view-list-links).
 
 :::image type="content" source="media/overview/concept-link-types-repos.png" alt-text="Conceptual image of link types that link work items to Azure Repos objects."::: 
 
@@ -264,7 +264,7 @@ The following table summarizes the integration points between Azure Boards and A
       View list of build or release objects a single work item is linked to 
    :::column-end::: 
    :::column span="2":::
-      You can link work items to builds and releases&mdash;providing an audit trail of how a feature has been built and deployed. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links). 
+      You can link work items to builds and releases&mdash;providing an audit trail of how a feature has been built and deployed. To learn more, see [Link to work items from other objects, View list of linked objects](../organizations/notifications/add-links-to-work-items.md#view-list-links). 
    :::column-end:::
 :::row-end:::
 --- 
@@ -317,7 +317,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query Work Items task. Ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../pipelines/tasks/utility/work-item-query.md).  
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
    :::column-end:::
 :::row-end:::
 --- 
@@ -371,37 +371,10 @@ The following table summarizes the integration features between Azure Repos and 
       Code coverage
    :::column-end::: 
    :::column span="2":::
-      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](../pipelines/tasks/test/publish-code-coverage-results.md) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
+      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
    :::column-end:::
 :::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      View test results in builds and releases
-   :::column-end::: 
-   :::column span="2":::
-      Measure pipeline quality, review traceability, and troubleshoot failures by surfacing test reulst in pipeline builds and releases. To learn more, see [Review test results](../pipelines/test/review-continuous-test-results-after-build.md). 
-   :::column-end:::
-:::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      Run automated tests in build pipelines
-   :::column-end::: 
-   :::column span="2":::
-      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
-   :::column-end:::
-:::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      Run automated tests in build pipelines
-   :::column-end::: 
-   :::column span="2":::
-      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
-   :::column-end:::
-:::row-end:::
---- 
+---
 
  
 
@@ -462,7 +435,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
    :::column span="3":::
       Tracks information entered into a request feedback form. There are two forms that you can use to initiate a feedback request. 
       -  [Request stakeholder feedback](../test/request-stakeholder-feedback.md)
-      -  [Get feedback](../project/feedback/get-feedback.md). 
+      -  [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback). 
    :::column-end:::
 :::row-end:::
 ---
@@ -477,7 +450,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
       Enables stakeholders to provide feedback based on request for feedback or by volunteering feedback using the [Microsoft Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) marketplace extension. To learn more, see the following articles: 
       - [Provide feedback ](../test/provide-stakeholder-feedback.md)  
       - [Voluntarily provide stakeholder feedback](../test/voluntary-stakeholder-feedback.md)  
-      - [Give feedback](../project/feedback/give-feedback.md).  
+      - [Give feedback](/previous-versions/azure/devops/project/feedback/give-feedback).  
    :::column-end::: 
 :::row-end:::
 ---
@@ -593,25 +566,128 @@ When tracking bugs using the Bug work item type, note the following supported in
 :::row-end:::
 ---
 
-<a id="analytics" /> 
+
+::: moniker range=">= azure-devops-2019" 
+
+## Azure Pipelines - Azure Test Plans
+
+Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.  The following table summarizes the integration points between Azure Pipelines and Azure Test Plans.  
+
+:::row:::
+   :::column span="1":::
+      **Feature**
+   :::column-end::: 
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Test plans setting
+   :::column-end::: 
+   :::column span="2":::
+      With test plan settings, you configure the Test Run settings to associate build or release pipelines and Test Outcome settings. To learn more, see [Run automated tests from test plans](../test/run-automated-tests-from-test-hub.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Pipeline test-enable tasks 
+   :::column-end::: 
+   :::column span="2":::
+      Specify test-enable tasks within a pipeline definition. Azure Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience.  
+      - [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2): Use to publish test results to Azure Pipelines.
+      - [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
+      - [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2): Use to build, test, package, or publish a dotnet application.  
+      For additional tasks, see [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Run automated tests in build pipelines
+   :::column-end::: 
+   :::column span="2":::
+      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+      Associate automated tests with test cases 
+   :::column-end::: 
+   :::column span="2":::
+      See [Associate automated tests with test cases](../test/associate-automated-test-with-test-case.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Set retention policy for automated test results associated with builds
+   :::column-end::: 
+   :::column span="2":::
+      You can set the test retention policy for automated buidls from the **Pipelines>Retention** page. See [Set test retention policies](../test/how-long-to-keep-test-results.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Requirements traceability
+   :::column-end::: 
+   :::column span="2":::
+      The Requirements quality widget supports tracking quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability. to learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Test results trend
+   :::column-end::: 
+   :::column span="2":::
+      The Test results trend configurable widget displays the trend of test results for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc. To learn more, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Deployment status 
+   :::column-end::: 
+   :::column span="2":::
+      The Deployment status configurable widget shows a combined view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. See [Associate automated tests with test cases](../test/how-long-to-keep-test-results.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      View test results in builds and releases
+   :::column-end::: 
+   :::column span="2":::
+      Both build and release summaries provide details of test execution. Review these summaries to assess pipeline quality, review traceability, and troubleshoot failures. Choose **Test summary** to view the details in the **Tests** tab. To learn more, see [Review test results, Tests tab](../pipelines/test/review-continuous-test-results-after-build.md#tests-tab).   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Test analytics for builds
+   :::column-end::: 
+   :::column span="2":::
+      Each build summary includes an **Analytics** tab that hosts the Test analytics report. To learn more, see [Test Analytics](../pipelines/test/test-analytics.md)
+   :::column-end:::
+:::row-end:::
+--- 
+ 
+::: moniker-end 
 
 
-
+ 
 ::: moniker range=">= azure-devops-2019" 
 
 ## Dashboards, reporting, and Analytics  
 
-::: moniker-end  
+Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. To learn more, see [About dashboards, charts, reports, & widgets](../report/dashboards/overview.md). 
 
-::: moniker range="< azure-devops-2019" 
-
-## Dashboards and reporting
-
-::: moniker-end  
-
-::: moniker range=">= azure-devops-2019" 
-
-Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. The Analytics service provides: 
+The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. The Analytics service provides: 
 
 - Analytics widgets that you can add to your dashboards
 - In-context Analytics reports available from select Azure DevOps pages
@@ -620,20 +696,19 @@ Dashboards provide an easy way to monitor progress and status. Using widgets, te
 - Custom reports you can create using OData queries
 - Support to develop and add your custom Analytics widgets you can add to dashboards
 
-To learn more, see [What is the Analytics service](../report/powerbi/what-is-analytics.md). 
+To learn more, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) 
 
 ::: moniker-end  
-
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020" 
-
-For on-premises deployments, SQL Server reports provides additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md).
-
-::: moniker-end 
-
+ 
 
 ::: moniker range="< azure-devops-2019" 
 
-Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
+## Dashboards and reporting
+
+Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals.  To learn more, see [About dashboards, charts, reports, & widgets](../report/dashboards/overview.md). 
+
+SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](/sql/reporting-services/reports/reporting-services-reports-ssrs).
+
 ::: moniker-end 
 
 Built-in widgets you can add to your dashboard are listed below. They are organized under the service they support. You may find additional widgets from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
@@ -763,7 +838,13 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 
 ::: moniker-end 
 
+## Automation and Azure DevOps connectors
 
+Several connectors are supported by Microsoft products to support automation or integration with other applications and services. You can learn more from the following resources. 
+
+- [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+- [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+- [Microsoft Power Automate documentation](/power-automate/)
  
 ## Related articles
 

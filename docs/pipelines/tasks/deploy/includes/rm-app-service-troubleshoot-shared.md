@@ -1,7 +1,6 @@
 ---
 author: ninallam
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ms.topic: include
 ms.date: 12/10/2019
 ms.manager: mijacobs

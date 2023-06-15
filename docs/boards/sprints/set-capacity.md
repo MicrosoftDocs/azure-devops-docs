@@ -1,24 +1,23 @@
 ---
-title: Set sprint capacity in Azure Boards
+title: Set the team sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
-description: Learn how to determine team capacity and how to set the capacity for a sprint in Azure Boards.
-ms.technology: devops-agile
+description: Learn how to determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
+ms.service: azure-devops-boards
 ms.custom: boards-sprints
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 04/01/2022
 ---
 
 
-
-# 3. Determine and set sprint capacity
+# 3. Determine and set sprint capacity in Azure Boards
 
 <a id="set-capacity">  </a>
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="set-capacity">  </a>
 
@@ -91,7 +90,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -151,7 +150,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="media/capacity/capacity-add-users.png" border="false"::: **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
@@ -175,19 +174,10 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Set individual capacity, TFS 2017 and later versions.](media/capacity/capacity-planning-set-capacity-tfs-15.png)
-
-	#### TFS 2015.1  
-	![Screenshot of Set individual capacity, TFS 2015.1 version.](media/capacity/capacity-planning-set-capacity-tfs-2015.1.png)
-
-	#### TFS 2015, TFS 2013  
-
-	![Screenshot of Set individual capacity, TFS 2015 version.y](media/capacity/set-sprint1-capacity.png)"   
+	> ![Screenshot of Set individual capacity, TFS 2018 version.](media/capacity/capacity-planning-set-capacity-tfs-15.png)
 
 ::: moniker-end  
 
-
-::: moniker range=">= tfs-2015"
 
 <a id="copy-capacity">  </a>
 
@@ -195,12 +185,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.  
 
-> [!NOTE]    
-> This feature is available from TFS 2015.1 and later versions.
-
 Notice that only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -209,7 +194,7 @@ Notice that only the capacity-per-day value and activity value are copied over. 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
 ![Screenshot of Copy capacity from the previous iteration, earlier versions.](media/capacity/copy-capacity-from-previous-sprint.png)
@@ -219,20 +204,9 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 <a id="add-remove-users">  </a>
 
-::: moniker range=">= tfs-2015"
-
 ## Remove a user from capacity 
 
 To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This action won't remove the user from the team.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]    
-> This feature is available from TFS 2015.1 and later versions.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -241,7 +215,7 @@ To remove a user, choose the option from the users  :::image type="icon" source=
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 ![Screenshot of Copy capacity Capacity planning, Remove a user, earlier versions.](media/capacity/capacity-planning-remove-user.png) 
 
 ::: moniker-end
@@ -260,7 +234,7 @@ You'll also see a roll-up of the remaining work required to complete each requir
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot of Capacity charts.](media/capacity/review-capacity.png)  
 
@@ -277,7 +251,7 @@ From this view, you can easily see which individuals are at or near capacity. Te
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
@@ -288,8 +262,6 @@ From this view, you can easily see which individuals are at or near capacity. Te
 
 <a id="track-multiple-activities">  </a>
 
-::: moniker range=">= tfs-2015"
-
 ## Track capacity when completing multiple activities
 
 Because individual team members have different sets of skills and duties, you can track their activity and capacity for each activity and for each sprint. 
@@ -298,16 +270,6 @@ Here, Jamal divides time between Deployment and Development.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Add activity to capacity tracking for an individual.](media/capacity/add-activity-to-capacity-planning.png) 
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]    
-> This feature is available from TFS 2015.1 and later versions.
-
-::: moniker-end
-
 
 <a id="track-capacity-per-team">  </a>
 

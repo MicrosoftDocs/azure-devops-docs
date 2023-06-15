@@ -2,18 +2,20 @@
 title: Use the Azure Boards app with Slack
 titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from within Slack.
-ms.technology: devops-agile
-ms.topic: tutorial
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
+ms.topic: how-to
+ms.custom: cross-service
 ms.reviewer: karrg
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 10/20/2021
 ---
  
 # Use the Azure Boards app with Slack to manage work items
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
@@ -40,7 +42,7 @@ Read this article to learn how to:
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 

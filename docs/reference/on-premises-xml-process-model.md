@@ -2,19 +2,19 @@
 title: On-premises XML process model
 titleSuffix: TFS 
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
-ms.technology: devops-agile
-ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.custom: engagement-fy23
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '< azure-devops'
-ms.date: 05/06/2019
+ms.date: 01/17/2023 
 ---
 
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
@@ -28,12 +28,14 @@ For Azure DevOps Server 2019 and later versions, you have a choice of process mo
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. 
 ::: moniker-end  
 
 > [!IMPORTANT]  
+> Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.
+> 
 > To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises deployments only.  
 
 ## Supported customizations  
@@ -77,11 +79,11 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Area paths](../organizations/settings/set-area-paths.md) 
    - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
    - [Add a custom pick list](add-modify-field.md#picklist)  
-   - [Modify a pre-defined pick list](add-modify-field.md#picklist)  
+   - [Modify a predefined pick list](add-modify-field.md#picklist)  
    - [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)  
    - [Person-name field (add users)](../organizations/security/add-users-team-project.md)   
    - [Resolution State & Failure Type](customize-work.md#test-experience)  
-   - [Define global lists](xml/define-global-lists.md)   
+   - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)   
    :::column-end:::
 :::row-end:::
 
@@ -92,7 +94,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="2":::
    - [Add or modify a work item type](add-modify-wit.md)  
    - [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
-   - [Customize the form](xml/change-work-item-form-layout.md)  
+   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)  
    - [Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)  
    - [Specify the WIT icon](xml/process-configuration-xml-element.md)  
    - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)   
@@ -113,7 +115,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)   
    - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)   
    - [Process configuration](xml/process-configuration-xml-element.md)  
-   - [Categories](xml/categories-xml-element-reference.md)  
+   - [Categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
    :::column-end:::
 :::row-end:::
 
@@ -133,9 +135,9 @@ You can perform the following tasks when you work with the On-premises XML proce
    Link types
    :::column-end:::
    :::column span="2":::
-   - [Add a custom link type](xml/link-type-element-reference.md)  
-   - [Delete a custom link type](witadmin/manage-link-types.md)  
-   - [Deactivate/activate a custom link type](witadmin/manage-link-types.md)  
+   - [Add a custom link type](/previous-versions/azure/devops/reference/xml/link-type-element-reference)  
+   - [Delete a custom link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types)  
+   - [Deactivate/activate a custom link type](/previous-versions/azure/devops/reference/witadmin/manage-link-types)  
    :::column-end:::
 :::row-end:::
 
@@ -144,7 +146,7 @@ You can perform the following tasks when you work with the On-premises XML proce
 
 When you manage an on-premises deployment, you perform most customizations using the following sequence. This sequence supports updating the XML definition for WIT, global lists, process configuration, and categories. This sequence supports individual updates through the import of their respective modified XML definition files. We recommend that you maintain your XML definition files in a repository for version control.  
 
-[![Export XML definition file](media/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
+[![Export XML definition file](media/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 In addition, you can use the **witadmin** tool to list objects, rename WITs, permanently remove WITs, and more.  
  
@@ -153,7 +155,9 @@ In addition, you can use the **witadmin** tool to list objects, rename WITs, per
 
 
 <a id="before-you-customize"></a>
+
 ## Maintenance and upgrade implications
+
 Before you customize, you should understand how your customizations may impact your project when you upgrade your application-tier server.  
 
 Upgrades to an on-premises deployment can introduce new features that require updates to the objects used to track work. These objects include work item types, categories, and process configuration. Minimizing changes to the workflow for a WIT or the process configuration can help minimize the work you must do when you upgrade your deployment. 
@@ -196,7 +200,7 @@ You should avoid making the following customizations because they can result in 
 *	WITs: Rename or delete WITs 
 *	Categories: Change the name of default categories, or change the WITs specified within default categories  
 
-To learn more about reporting attributes, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).
+To learn more about reporting attributes, see [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting).
 
 ### Recommended practices  
 *	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.  

@@ -1,33 +1,32 @@
-﻿---
+---
 title: Use PowerShell scripts to customize pipelines
 ms.custom: seodec18
 description: Learn how you can use a script to customize your pipeline
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 02/11/2021
-monikerRange: '>= tfs-2015'
+ms.date: 01/06/2023
+monikerRange: '<= azure-devops'
 ---
 
 # Use a PowerShell script to customize your pipeline
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/dn376353(v=vs.120))**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
+When you're ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline. You can run Windows PowerShell on a [Windows build agent](../agents/windows-agent.md). PowerShell Core runs on any platform. 
 
 ::: moniker range=">= azure-devops-2019"
 ## Add a PowerShell script
 ### [YAML](#tab/yaml)
 
-The syntax for including PowerShell Core is slightly different from the syntax for Windows PowerShell. You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
-PowerShell Core runs on any platform. 
+The syntax for including PowerShell Core is slightly different from the syntax for Windows PowerShell. 
 
 1. Push your PowerShell script to your repo.
 
-2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](../tasks/utility/powershell.md) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](../tasks/utility/powershell.md) but Windows PowerShell and will only work on a Windows agent.
+2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2).
 
 ```yaml
 # for PowerShell Core
@@ -41,7 +40,7 @@ steps:
 
 ### [Classic](#tab/classic)
 
-1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](../tasks/utility/powershell.md) works for PowerShell Core and Windows PowerShell. 
+1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for PowerShell Core and Windows PowerShell. 
 
     :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
 
@@ -54,7 +53,7 @@ steps:
 
 ::: moniker range="< azure-devops-2019"
 
-You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+You can run Windows PowerShell Script on a [Windows build agent](../agents/windows-agent.md).
 
 1. Push your script into your repo.
 
@@ -85,7 +84,7 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: echo $(Build.BuildNumber) //output updated build number
+- pwsh: echo $(Build.BuildNumber) //output updated build number
 ```
 #### [Classic](#tab/classic)
 

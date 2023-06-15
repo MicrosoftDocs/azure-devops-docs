@@ -1,230 +1,254 @@
 ---
 title: Review your repo history
 titleSuffix: Azure Repos
-description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
+description: Learn how to review Git history to find out when files changed, who changed them, and what changes were made.
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
-ms.technology: devops-code-git 
-ms.topic: tutorial
-ms.date: 09/28/2021
+ms.service: azure-devops-repos
+ms.topic: how-to
 monikerRange: '<= azure-devops'
+ms.date: 10/18/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Review history
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
-Review this commit history to find out when file changes were made and determine differences between versions of your code.
+Git uses [commit metadata](commits.md#whats-in-a-commit) like parent links, author details, and timestamps to track the history of changes in a repo. You can review the Git history to find out when files changed, who changed them, and what changes were made.
 
-Git's use of feature [branches](./create-branch.md) and merges through [pull requests](pull-requests.md) mean that the commit history of your development doesn't form a straight, chronological line.
-When you use history to compare versions, think in terms of file changes between two commits instead of file changes between two points in time. 
-A recent change to a file in the `main` branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday. 
+When people create and merge feature [branches](./create-branch.md) into a target branch using [pull requests](pull-requests.md), the development history of the target branch might not be a straight chronological line. So, when you review the history of changes to a file on the target branch, keep in mind that the order of commits is influenced by [merge strategy](pulling.md#update-branches-with-merge-or-rebase) and merge date, not just the original date of the changes. For example, the most recent commit on the `main` branch may introduce a change that was made weeks ago in a feature branch that was only just merged into the `main` branch using a three-way merge.
 
-In this tutorial you learn how to:
+In this article you learn how to:
 
-> [!div class="checklist"]
-> * Compare files
-> * Retrieve files
-> * Compare branches
+>[!div class="checklist"]
+>* Compare file versions
+>* Restore files
+>* Compare branches
 
-## Compare files
+To learn how to use Visual Studio 2022 with Git, see [How Visual Studio makes version control easy with Git](/visualstudio/version-control/git-with-visual-studio).
 
-Compare the changes between two versions of a file in your Git repo.
+## Compare file versions
 
-#### [Browser](#tab/browser)
-
-1. In your project, click **Repos**, and then click **Files**. 
-
-    :::image type="content" source="media/review-history/repos-files.png" alt-text="Screenshot that shows the Azure DevOps menu with Repos and Files selected.":::
- 
-2. Select a file, and then click the **Compare** tab. A diff view shows the most recent commit and the *head* commit in a side-by-side view.
-
-    :::image type="content" source="media/review-history/compare-commits-browser.png" alt-text="Screenshot that shows the Compare tab selected and commit diff view.":::
-
-3. Select the the two commits you want to compare.   
-
-    :::image type="content" source="media/review-history/select-commits-for-compare-browser.png" alt-text="Screenshot that shows the selections for the previous commits for comparison.":::
-
-#### [Visual Studio](#tab/visual-studio/)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
-1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
-
-    ![View history in your repo for a file](media/history/vs-history-view.png)     
-
-2. Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
-3. View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
-4. The diff view shows lines removed from the older commit and added in the new one.
-
-    ![View diff changes in Visual Studio](media/history/vs-diff-changes.png)
-
-#### [Command Line](#tab/command-line/)
-Use the `git log` command to view the commits that changed a file in your repo for your current branch.
-
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git log index.html   
-
- commit bbc3b679197b659544a6f8070c79fb535b496613
-Date:   Thu Jun 30 13:42:50 2016 -0400
-
-    update landing page
-
-commit e5402fe710c25eca1b96a4e238eee9c01ed41c6a
-Date:   Thu Jun 30 13:42:23 2016 -0400
-
-    initial commit
-```
-
-Filter the `git log` output based on author, description or date information by using the corresponding options. 
-Leave out the filename if you want to see the commits matching all files in your repo.
-
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git log --author=frank@fabrikam.com index.html  
-> git log --since="2016-1-1"  
-> git log --before="2 weeks ago"  
-> git log --grep="css change"  
-```
-
-View changes between two commits using `git diff`:
-
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git diff bbc3b67 e5402fe71 index.html
-
--   <link rel="stylesheet" href="app.cs"/>   
-+   <link rel="stylesheet" href="fabrikam.cs"/>
-</pre>
-
-* * *
-## Retrieve files
-
-Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
-Retrieving an older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
-your branch.
+When you want to figure out how and when a particular file change occurred, you might need to compare different versions of the same file from different commits, possibly in different branches.
 
 #### [Browser](#tab/browser)
 
-1. In your project, click **Repos**, and then click **Files**.
+The Azure DevOps team project site lets you compare two versions of the same file from commits in the same branch, but doesn't support comparing file versions across branches.
 
-    :::image type="content" source="media/review-history/repos-files.png" alt-text="Screenshot that shows the Azure DevOps menu with the Repo menu expanded and Files selected.":::
+1. From your web browser, open the team project for your Azure DevOps organization. In the **Repo > Files** view, select a file and choose the **Compare** tab.
 
-2. Select a file, and then select the **History** tab.
+   :::image type="content" source="media/review-history/browser/file-version-compare.png" border="true" alt-text="Screenshot of the File Compare view on the Azure DevOps project page." lightbox="media/review-history/browser/file-version-compare-lrg.png":::
 
-    :::image type="content" source="media/review-history/select-file-history.png" alt-text="Screenshot that shows a the 'History' tab of a file selected.":::
+1. In the **Compare** tab, choose the two commits that contain the file versions you want to compare. The diff view shows any new, deleted, or modified file lines.
 
-3. Select a commit from the list.
-4. Click the ellipses in the top-right corner, and then select **Revert** from the drop-down.
-
-    :::image type="content" source="media/review-history/select-ellipsis-file-history.png" alt-text="Screenshot that shows the ellipsis and the drop-down with 'Revert' selected."::: 
-
-5. Select your target branch, type a topic branch name if necessary, and click **Revert**.
-
-    :::image type="content" source="media/review-history/revert-commit-dialog-browser.png" alt-text="Screenshot that shows the 'Revert commit' dialog.":::
-
-#### [Visual Studio](#tab/visual-studio/)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
-To retrieve a previous version of a file that exists in your Visual Studio project:
-
-1. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
-   You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
-
-   ![View file versions in Visual Studio](media/history/vs-history-view.png)   
-
-To retrieve a previous version of a file that was deleted in a previous commit:
-
-1. Open the **Changes** view in Team Explorer and select **View History** from the **Actions** drop-down. 
-
-   ![View changes](media/history/team-explorer-changes.png) 
-
-2. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
-
-   ![View commit details.](media/history/vs-view-commit-details.png) 
-
-3. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
-
-   ![View deleted files in your Git repo with Visual Studio](media/history/vs-open-deleted-file.png)
+   :::image type="content" source="media/review-history/browser/select-commits-for-compare.png" border="true" alt-text="Screenshot of the Compare options in the File Compare view on the Azure DevOps repo page.":::
 
 >[!NOTE]
->The retrieved version of a file is not automatically saved to your project. To save the retrieved version to your project, select **Save As...** from the **File** menu. If you save the file in your current project, either as a new file or overwriting
-an existing one, you'll need to commit your changes to add the previous version to your local branch.
+> GitHub lets you compare two versions of the same file from different commits across different branches. To compare, append `/compare/<commit1>..<commit2>` to your GitHub repo URL to navigate to the comparison page. The comparison page contains a diff view of each file that differs. For more information on commit comparison in GitHub, see [Comparing commits](https://docs.github.com/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits#comparing-commits).
 
-#### [Command Line](#tab/command-line/)
-Use `git log` to find the version to restore and `git checkout` or `git show` to restore the file from your history.
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](review-history.md?tabs=command-line#compare-files) above.
-Restore the version in its current location using `git checkout`:
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git checkout 85435fac src/app.ts 
-```
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
-Using `git checkout` this way will rewrite the current version of the file at that path location.
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-Restore a file to any location by using `git show`. This command prints the file contents to the terminal-you'll want to redirect the output to your desired location.
+Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
 
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git show 85435fac:src/app.ts
-> /home/frank/oldapp.ts
-```
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
-* * *
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+Team Explorer doesn't provide support for this feature.
+
+#### [Git Command Line](#tab/git-command-line)
+
+The [git diff](https://git-scm.com/docs/git-diff) command can compare different versions of the same file from different commits across different branches. The [git log](https://git-scm.com/docs/git-log) command can help you identify the commits that contain the file versions you want to compare.
+
+1. Use `git log` and specify a file to list the commits that changed the file:
+
+    ```console
+    git log <file>  
+    ```
+    
+    By default, the command output starts with the most recent commit in the current branch, and then iterates backward through ancestor commits (regardless of branch) by following the parent links in each commit's metadata. 
+
+    Here's an example of output for the command `git log index.html`:
+
+    ```output
+    commit bbc3b679197b659544a6f8070c79fb535b496613
+    Date:   Thu Jun 30 13:42:50 2021 -0400
+
+        update landing page
+
+    commit e5402fe710c25eca1b96a4e238eee9c01ed41c6a
+    Date:   Thu Jun 30 13:42:23 2021 -0400
+    
+        initial commit
+    ```
+
+1. Use `git diff` and specify a file and two commits to see how the committed file versions differ:
+
+    ```console
+    git diff <commit1> <commit2> <file>
+    ```
+
+    Here's an example of output for the command `git diff bbc3b67 e5402fe index.html`:
+
+    ```output
+    -   <link rel="stylesheet" href="app.cs"/>   
+    +   <link rel="stylesheet" href="fabrikam.cs"/>
+    ```
+
+    The output shows that one line was deleted and one line was added.
+
+##### Limit Git log output
+
+To [limit](https://git-scm.com/docs/git-log#_commit_limiting)] the commits that `git log` lists, you can filter by author, date, message, changed content, and more. For example:
+
+- `git log --author=frank@fabrikam.com index.html` only lists commits by the specified author.
+
+- `git log --since="2022-5-1"` only lists commits created after the specified date.
+
+- `git log --before="yesterday"` only lists commits created before the specified relative date.
+
+- `git log --grep="css change"` only lists commits with the specified text in their message.
+
+- `git log -S"myVariable"` only lists commits that introduce or remove the specified string.
+
+- `git log -G"myVar.*"` only lists commits that introduce or remove the specified regex string.
+
+- `git log -3` only lists the last three commits.
+
+##### Format Git log output
+
+You have several [format](https://git-scm.com/docs/git-log#_commit_formatting) options for the commit list. For example:
+
+- `git log --abbrev-commit` lists commits using an abbreviated ID (SHA-1 checksum).
+
+- `git log --oneline` lists each commit in a single-line abbreviated format.
+
+- `git log --patch index.html` lists each commit together with a diff of the changes.
+
+---
+
+## Restore files
+
+You can restore a specific version of a file from Git history, even if the file was edited, deleted, or renamed in a later commit. Restoring an older version of a file doesn't create a new commit with the change. To update your branch with the restored file version, you'll need to commit the change.
+
+#### [Browser](#tab/browser)
+
+The Azure DevOps team project site lets you revert all changes made by a specific commit, but doesn't support reverting changes to a specific file within the commit.
+
+#### [Visual Studio 2022](#tab/visual-studio-2022)
+
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
+
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
+
+[!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
+
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar.
+
+1. In **Solution Explorer**, select a file and choose **Git > View History** from the file's context menu to open a **Git History** tab for the selected file.
+
+    :::image type="content" source="media/review-history/visual-studio-2019/common/view-file-history-option.png" border="true" alt-text="Screenshot of the View History option in the file context menu in Solution Explorer in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/view-file-history-option-lrg.png":::
+
+1. In the **Git History** tab, select a commit and choose **View Commit Details** from the commit's context menu to open the **Commit Details** view.
+
+    :::image type="content" source="media/review-history/visual-studio-2019/common/view-commit-details-option.png" border="true" alt-text="Screenshot of the View Commit Details option in the commit context menu in the commit History view in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/view-commit-details-option-lrg.png":::
+
+1. In the **Commit Details** view, select the file and choose **Open** from the file's context menu to open the previous version of the file in a new tab.
+
+   :::image type="content" source="media/review-history/visual-studio-2019/team-explorer/open-file-option.png" border="true" alt-text="Screenshot of the Open option in the file context menu in the Commit Details view of Team Explorer in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/team-explorer/open-file-option-lrg.png":::
+
+1. Choose **File > Save As** from the menu bar to save the restored version of the file.
+
+#### [Git Command Line](#tab/git-command-line)
+
+You can use the [git checkout](https://git-scm.com/docs/git-checkout) or [git show](https://git-scm.com/docs/git-show) commands to restore a specific version of a file from Git history.
+
+- [git checkout](https://git-scm.com/docs/git-checkout) reverts a file to a previously committed version if you specify the file and a commit:
+
+    ```console
+    git checkout <commit> <file>
+    ```
+
+    For example, `git checkout 85435fac src/app.ts` will revert the `src/app.ts` file to its version in commit `85435fac`.
+
+- [git show](https://git-scm.com/docs/git-show) prints the contents of a previously committed file version, which you can redirect to an output file:
+
+    ```console
+    git show <commit>:<file> > <output file>
+    ```
+    
+    For example, `git show 85435fac:src/app.ts > /archive/oldapp.ts` will write the contents of `app.ts` in commit `85435fac` to `/archive/oldapp.ts`.
+
+>[!TIP]
+>To find the ID a previous commit, see [Compare file versions](review-history.md?tabs=command-line#compare-file-versions) or [Find a commit ID](undo.md?tabs=command-line#find-a-commit-id).
+
+---
+
 ## Compare branches
 
-Review potential changes from a [merge](merging.md) or [rebase](rebase.md) by comparing branches directly. 
-You can compare both local and remote branches, which is useful when checking for potential merge conflicts or to see how the 
-changes others have made will affect your work.
+You can compare any local or remote branches to review the changes that will result from a [merge](merging.md) or [rebase](rebase.md). Branch comparison lets you check for merge conflicts and see how changes by others might affect your work.
 
-# [Browser](#tab/browser)
+Visual Studio 2019 and earlier versions don't support branch comparison, so if you're using one of those versions you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub. Visual Studio 2022 supports branch comparison, as described in [Compare branches](/visualstudio/version-control/git-browse-repository?view=vs-2022&preserve-view=true#compare-branches).
 
-1. In your project, click **Repos**, and then click **Branches**.
+#### [Browser](#tab/browser)
 
-    :::image type="content" source="media/review-history/select-repos-branches.png" alt-text="Screenshot that shows selecting 'Repos' and 'Branches' from the project menu.":::
- 
-2. On the branch you want to compare, click the ellipses on the right-side, and then select **Compare branches** from the drop-down.
+1. From your web browser, open the team project for your Azure DevOps organization. In the **Repos > Branches** view, select the ellipsis for any branch and choose **Compare branches** to open the **Branch compare** view.
 
-    :::image type="content" source="media/review-history/select-compare-branches-browser.png" alt-text="Screenshot that shows the ellipsis selected and 'Compare branches' selected from the menu.":::
+   :::image type="content" source="media/review-history/browser/branch-context-menu.png" border="true" alt-text="Screenshot of the branch context menu in the Branches view on the Azure DevOps project page." lightbox="media/review-history/browser/branch-context-menu-lrg.png":::
 
-3. Select the other branch you want to compare with. The view displays all changes between the branches.
+1. In the **Branch compare** view, choose the two branches that you want to compare. Select the **Files** tab for a diff view of the new, deleted, or modified lines in each changed file.
 
-    :::image type="content" source="media/review-history/select-branch-to-compare.png" alt-text="Screenshot that shows the 'Branch compare' dialog, with the first branch drop-down highlighted and branch 'Test1' selected."::: 
+   :::image type="content" source="media/review-history/browser/branch-compare.png" border="true" alt-text="Screenshot of the Files tab in the Branch Compare view on the Azure DevOps repo page." lightbox="media/review-history/browser/branch-compare-lrg.png":::
 
-# [Visual Studio](#tab/visual-studio)
+>[!NOTE]
+> GitHub supports branch comparison. To compare two branches, append `/compare/<branch1>...<branch2>` to your GitHub repo URL to navigate to the comparison page. The comparison page contains a diff view of each file that differs. For more information on branch comparison in GitHub, see [Comparing branches](https://docs.github.com/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits#comparing-branches).
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
+To compare a branch with the current branch, right-click a branch in the **Branches** pane of your repository, and then select the compare option. The context menu specifies the names of the current and the target branches:
 
-![Web portal](media/history/vs-browse-web-portal.png) 
+:::image type="content" source="media/review-history/visual-studio-2022/branch-context-menu-inline.png" border="true" alt-text="Screenshot of the branch context menu in the Branches area of Visual Studio 2022." lightbox="media/review-history/visual-studio-2022/branch-context-menu-expanded.png":::
 
-Select **Branches** from the menu under **Code**. Locate your branch and select the **...** icon to view the branch options. Select **Compare branches**.  
+#### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
-![Compare branches](media/history/compare-branches.png) 
+Visual Studio 2019 doesn't support branch comparison. However, you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub.
 
-Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
+>[!TIP]
+>You can access the web portal from the Team Explorer **Home** view by choosing **Web Portal**.
+>
+>:::image type="content" source="media/review-history/visual-studio-2019/team-explorer/web-portal-link.png" border="true" alt-text="Screenshot showing the Web Portal link in the Home view of Team Explorer in Visual Studio 2019."::: 
 
-![Comparing branches](media/history/comparing-branches.png) 
+#### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
+Visual Studio 2019 doesn't support branch comparison. However, you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub.
 
-# [Command Line](#tab/command-line)
+>[!TIP]
+>You can access the web portal from the Team Explorer **Home** view by choosing **Web Portal**.
+>
+>:::image type="content" source="media/review-history/visual-studio-2019/team-explorer/web-portal-link.png" border="true" alt-text="Screenshot showing the Web Portal link in the Home view of Team Explorer in Visual Studio 2019."::: 
 
-Use `git diff` to compare the contents of two branches. You can compare any combination of local and remote branches. 
-The output shows the deletions and additions between the two versions of the code.
+#### [Git Command Line](#tab/git-command-line)
 
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git diff users/frank/feature origin/master
+To compare any two local or remote branches, you can use the Git `diff` command specifying the branch names:
+
+```console
+git diff <branch1> <branch2>
 ```
 
-> [!div class="tabbedCodeSnippets"]
-```
+Git compares the commit at the tip of one branch with the commit at the tip of the other. The diff output will show the deletions and additions between each file in the two branches.
+
+Here's an example of output for the command `git diff users/frank/feature origin/main`, which compares a local branch with a remote branch:
+
+```output
 index 36843b8..03afc4b 100644
 --- a/tsapp/index.html
 +++ b/tsapp/index.html
@@ -248,12 +272,22 @@ index 36843b8..03afc4b 100644
          this.span.innerText = new Date().toUTCString();
 ```
 
-This will output the diff for every change between the branches. 
-You can narrow down specific file changes by specifying a file after the branch names:
+To narrow down comparison to a specific file, specify the file in the `diff` command:
 
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git diff users/frank/feature origin/master index.html
+```console
+git diff <branch1> <branch2> <file>
 ```
 
+For example, `git diff users/frank/feature origin/main index.html` will only generate a diff for the `index.html` file.
+
 ---
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Understand Git history](history.md)
+
+## Related articles
+
+- [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
+- [Save your work with commits](commits.md)

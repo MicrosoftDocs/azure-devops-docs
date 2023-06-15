@@ -3,7 +3,6 @@ title: Azure Boards - Sprint 159 Update
 description: See the Sprint 159 feature update for Azure Boards, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 10/14/2019
 ---
 

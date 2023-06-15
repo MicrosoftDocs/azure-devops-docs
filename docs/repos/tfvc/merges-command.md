@@ -1,23 +1,28 @@
 ---
-title: Merges Command
+title: Merges command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Merges Command
+description: See how to use the tf merges command to display detailed information about past merges between specified source and destination branches.
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/15/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Merges Command
+# Merges command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Displays detailed information about past merges between the specified source and destination branches.
+The `tf merges` command displays detailed information about past merges between the specified source and destination branches in Team Foundation Version Control (TFVC).
 
-**Required Permissions**  
-To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+To use the `merges` command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
@@ -25,7 +30,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 
 ## Parameters
 
-### Argument
+### Arguments
 
 :::row:::
    :::column span="1":::
@@ -37,7 +42,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *source*
+   `<source>`
    :::column-end:::
    :::column span="3":::
    Filters the merge history to include only entries with the specified sources.
@@ -47,7 +52,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *destination*
+   `<destination>`
    :::column-end:::
    :::column span="3":::
    Specifies the destination branch for which merge history is displayed.
@@ -57,22 +62,22 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *username*
+   `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
+   Provides a value to the `/login` option. You can specify a `username` value as either `DOMAIN\username` or `username`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *TeamProjectCollectionUrl*
+   `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection that contains the branches about which you want to display the merge history (for example, http://myserver:8080/tfs/DefaultCollection).
+   The URL of the project collection that contains the branches about which you want to display the merge history, for example `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 
-### Option
+### Options
 
 :::row:::
    :::column span="1":::
@@ -84,45 +89,45 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/recursive**
+   `/recursive`
    :::column-end:::
    :::column span="3":::
-   Displays information for all merges in specified Team Foundation version control server folder and its subfolders.
+   Displays information for all merges in the specified TFVC server folder and its subfolders.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/extended**
+   `/extended`
    :::column-end:::
    :::column span="3":::
-   Displays a list of merges for a specific range of target items (for example: **tf merges** tgt\file1.txt; C21-25). This option displays the types of merges (for example, add or edit) and detailed information about the source and target items. This option implies **/format: Detailed**.
+   Displays a list of merges for a specific range of target items, for example `tf merges tgt\file1.txt; C21-25`. This option displays the types of merges, for example add or edit, and detailed information about the source and target items. This option implies `/format: Detailed`.
 
    > [!Note]  
-   > You cannot use this option if you have specified a source item. 
+   > You can't use this option if you specify a source item. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/format**
+   `/format`
    :::column-end:::
    :::column span="3":::
    Specifies the formats in which merge history can appear:
 
-   - **Brief**: default value, shows the changeset numbers for both the source and target items and the author and the date of the target checkin.
-   - **Detailed**: shows the detailed paths and changeset numbers for both the source and target items.
+   - `Brief` (default): Shows the changeset numbers for both the source and target items and the author and the date of the target checkin.
+   - `Detailed`: Shows the detailed paths and changeset numbers for both the source and target items.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/login**
+   `/login`
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/showall**
+   `/showall`
    :::column-end:::
    :::column span="3":::
    Displays all past merges for a given target item under its current name and all previously used names.
@@ -130,7 +135,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/collection**
+   `/collection`
    :::column-end:::
    :::column span="3":::
    Specifies the project collection.
@@ -139,36 +144,31 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 
 ## Remarks
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
-
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
-The following example displays information about all merge operations performed between Beta1\_branch and RTM\_branch.
+The following example displays information about all merge operations done between the *Beta1_branch* and the *RTM_branch*.
 
 ```
 c:\projects>tf merges /recursive Beta1_branch RTM_branch
 ```
 
--   Sample output:
+Sample output:
 
-    ```
-	Changeset  Merged in Changeset   Author   Date
-	--------------------------------------------------------
-	135         162                   Justin     10/31/2003
-	146         162                   Justin      10/31/2003
-	147*        167                   Bill       11/02/2003
-    ```
+```
+Changeset  Merged in Changeset   Author   Date
+--------------------------------------------------------
+135         162                   Justin     10/31/2003
+146         162                   Justin      10/31/2003
+147*        167                   Bill       11/02/2003
+```
 
-    The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
-
+The asterisk `*` next to changeset 147 indicates that only some of the changes in that changeset #147 were merged into changeset #167.
 
 ## Related articles
 
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
-- [Merge Command](merge-command.md)  
-- [Branch Command](branch-command.md)  
-- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
-- [Branching and Merging](./branching-strategies-with-tfvc.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)  
+- [Merge command](merge-command.md)  
+- [Branch command](branch-command.md)  
+- [Branching and merging](./branching-strategies-with-tfvc.md)

@@ -3,10 +3,10 @@ title: Best practices for backlog management in Azure Boards
 titleSuffix: Azure Boards
 description: Learn best practices to manage and refine your product backlog in Azure Boards. 
 ms.custom: "boards-backlogs, seodec18"  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
 ms.date: 10/08/2021
@@ -14,7 +14,7 @@ ms.date: 10/08/2021
 
 # Backlog management in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize, and estimate them, and finally, 

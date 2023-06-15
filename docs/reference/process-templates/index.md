@@ -1,31 +1,39 @@
 ---
-title: Process template documentation
-titleSuffix: Azure DevOps & TFS   
-description: Index to topics for customizing process templates for Azure DevOps & Team Foundation Server 
-ms.technology: devops-agile
+title: Process templates overview
+titleSuffix: Azure DevOps  
+description: Learn about process templates for Azure DevOps
+ms.custom: engagement-fy23  
+ms.service: azure-devops-boards
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 05/06/2019
+ms.date: 01/13/2023
 ---
 
 # Process templates overview  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-A process template defines the objects and processes available to you when you create a project. It contains a structured set of XML definition files. Process template customization is only supported for the [Hosted XML](../../organizations/settings/work/hosted-xml-process-model.md) and [On-premises XML](../on-premises-xml-process-model.md) process models.  
+[!INCLUDE [temp](../../includes/choose-process-introduction.md)]
 
-For an overview of the default process templates available to you, see [Choose a process](../../boards/work-items/guidance/choose-process.md?bc=%252fazure%252fdevops%252freference%252f%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json).
+[!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
+ 
 
-For on-premises deployments and Azure DevOps Services, you can [upload/download process templates](../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json). 
+Process template customization is only supported for the [Hosted XML](../../organizations/settings/work/hosted-xml-process-model.md) and [On-premises XML](../on-premises-xml-process-model.md) process models.  
+ 
+For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json).
 
-If you use the Hosted XML process model, you can [import/export a process](../../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).
+For on-premises deployments and Azure DevOps Services, you can [upload/download process templates](../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json). 
+
+If you use the Hosted XML process model, you can [import/export a process](../../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json).
+
+For details on creating a project using the process of your choice, see [Create a project](../../organizations/projects/create-project.md). 
 
 ## Related resources
 
 - [Customize a process template](customize-process.md)
-- [Process Template XML element index](process-template-plug-ins-xml-elements-index.md)
-- [Define the work item tracking plug-in](define-objects-track-work-items-plug-in.md)
-- [Control access to functional areas](control-access-to-functional-areas.md)
+- [Process Template XML element index](/previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index)
+- [Define the work item tracking plug-in](/previous-versions/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in)
+- [Control access to functional areas](/previous-versions/azure/devops/reference/process-templates/control-access-to-functional-areas)

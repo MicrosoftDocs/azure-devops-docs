@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
@@ -12,7 +12,7 @@ ms.date: 06/04/2020
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 
 > [!NOTE]
-> When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin`.
+> When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1`.
 If this does not meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
 ### Preferred version of Git
 
@@ -30,7 +30,7 @@ If you are using multiple `checkout` steps and checking out multiple repositorie
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
-You can configure the `path` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
+You can configure the `path` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
 ```yaml
 steps:
@@ -53,7 +53,7 @@ This setting is not configurable in the classic editor. Your source code will be
 
 # [YAML](#tab/yaml/)
 
-You can configure the `submodules` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+You can configure the `submodules` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ```yaml
 steps:
@@ -114,13 +114,72 @@ Use that variable to populate the secret in the above Git command.
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
+
+:::moniker range="azure-devops"
+
+### Sync tags
+
+The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to checkout to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
+
+Whether to synchronize tags when checking out a repository can be configured in YAML by setting the `fetchTags` property, and in the UI by configuring the **Sync tags** setting.
+
+# [YAML](#tab/yaml/)
+
+You can configure the `fetchTags` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
+
+To configure the setting in YAML, set the `fetchTags` property.
+
+```YAML
+steps:
+- checkout: self
+  fetchTags: true
+```
+
+You can also configure this setting by using the **Sync tags** option in the pipeline settings UI.
+
+1. Edit your YAML pipeline and choose **More actions**, **Triggers**.
+
+    :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
+
+2. Choose **YAML**, **Get sources**.
+
+    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
+
+3. Configure the **Sync tags** setting.
+
+    :::image type="content" source="../media/get-sources-options-sync-tags.png" alt-text="Screenshot of Sync tags setting.":::
+
+> [!NOTE]
+> If you explicitly set `fetchTags` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
+
+# [Classic](#tab/classic/)
+
+You can configure the **Sync tags** setting from the properties of the **Get sources** task in your pipeline.
+
+:::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
+
+---
+
+#### Default behavior
+
+* For existing pipelines created before the release of [Azure DevOps sprint 209](/azure/devops/release-notes/2022/sprint-209-update#do-not-sync-tags-when-fetching-a-git-repository), released in September 2022, the default for syncing tags remains the same as the existing behavior before the **Sync tags** options was added, which is `true`.
+* For new pipelines created after Azure DevOps sprint release 209, the default for syncing tags is `false`.
+
+> [!NOTE]
+> If you explicitly set `fetchTags` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
+
+:::moniker-end
+
 ### Shallow fetch
 
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
+> [!IMPORTANT]
+> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch. To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
+
 # [YAML](#tab/yaml/)
 
-You can configure the `fetchDepth` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
+You can configure the `fetchDepth` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
 ```yaml
 steps:
@@ -133,11 +192,28 @@ steps:
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
+You can also configure fetch depth by setting the **Shallow depth** option in the pipeline settings UI.
+
+1. Edit your YAML pipeline and choose **More actions**, **Triggers**.
+
+    :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
+
+2. Choose **YAML**, **Get sources**.
+
+    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
+
+3. Configure the **Shallow fetch** setting. Uncheck **Shallow fetch** to disable shallow fetch, or check the box and enter a **Depth** to enable shallow fetch.
+
+    :::image type="content" source="../media/get-sources-options-shallow-fetch.png" alt-text="Screenshot of options.":::
+
+> [!NOTE]
+> If you explicitly set `fetchDepth` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI. Setting `fetchDepth: 0` fetches all history and overrides the **Shallow fetch** setting.
+
 # [Classic](#tab/classic/)
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
-![Configure Shallow fetch setting.](../media/github/github-options.png)
+:::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
 
 ---
 
@@ -160,7 +236,7 @@ You may want to skip fetching new commits. This option can be useful in cases wh
 
 # [YAML](#tab/yaml/)
 
-You can configure the **Don't sync sources** setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline, by setting `checkout: none`.
+You can configure the **Don't sync sources** setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline, by setting `checkout: none`.
 
 ```yaml
 steps:
@@ -187,7 +263,7 @@ Select the **Don't sync sources** setting from the properties of the **Get sourc
 
 # [YAML](#tab/yaml/)
 
-You can configure the `clean` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
+You can configure the `clean` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
 ```yaml
 steps:
@@ -207,7 +283,7 @@ When `clean` is set to `true` the build pipeline performs an undo of any changes
  git reset --hard HEAD
  ```
 
-For more options, you can configure the `workspace` setting of a [Job](../../yaml-schema.md#job). 
+For more options, you can configure the `workspace` setting of a [Job](/azure/devops/pipelines/yaml-schema/jobs-job). 
 
 ```yaml
 jobs:
@@ -219,7 +295,7 @@ jobs:
 
 This gives the following clean options.
 
-* **outputs**: Same operation as the clean setting described in the previous the checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+* **outputs**: Same operation as the clean setting described in the previous checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
 * **resources**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 

@@ -2,18 +2,20 @@
 title: Use Azure Boards with Microsoft Teams
 titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from a Microsoft Teams channel.
-ms.technology: devops-agile
-ms.topic: tutorial
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
+ms.custom: cross-service
+ms.topic: how-to
 ms.reviewer: karrg
 ms.author: karrg
-author: KathrynEE
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/20/2021
+ms.date: 10/26/2022
 ---
  
 # Use the Azure Boards app in Microsoft Teams
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can create work items and monitor work item activity in your Azure Boards project from your Teams channel. You accomplish this by adding the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to your Teams channel.
 
@@ -39,18 +41,21 @@ Read this article to learn how to:
 
 
 > [!NOTE]
-> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services. 
-
+> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services.  
+>
+> Also, Azure Boards and Microsoft Teams integration isn't supported if you are an O365 Government Community Cloud (GCC) customer that uses an Azure Commercial subscription in conjunction with your GCC tenant. 
+ 
 
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or added to the team administrator role for the team. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add team administrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or added to the team administrator role for the team. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 > * You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.  
 > * Notifications are currently not supported inside direct messages.
+> * Only public channels are supported.
 
 ## Add the Azure Boards app to Microsoft Teams
 

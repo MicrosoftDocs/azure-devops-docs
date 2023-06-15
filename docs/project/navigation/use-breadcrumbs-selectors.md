@@ -2,12 +2,12 @@
 title: Use breadcrumbs and selectors 
 titleSuffix: Azure DevOps
 description: Navigate to pages and artifacts using breadcrumbs or selectors in the web portal for Azure DevOps
-ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2017'
+ms.custom: "navigation, cross-project, cross-service"
+ms.subservice: azure-devops-projects
+ms.topic: how-to
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
 ms.date: 07/30/2020 
 ---
 
@@ -15,7 +15,7 @@ ms.date: 07/30/2020
 
 # Use breadcrumbs, selectors, and directories to navigate and open artifacts 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs, selectors, and directories. 
 
@@ -30,7 +30,7 @@ To navigate to the project summary page, choose the project link within the brea
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Horizontal navigation doesn't provide a breadcrumb structure for the organization and project levels. Instead, you can select a recent team or project from the project/team selector. 
 
@@ -46,7 +46,7 @@ Choosing **Browse all** [opens the **projects** page](work-across-projects.md).
 Selectors are used to select an artifact within the current page. Most Agile tools are defined for a team and therefore require selection of the team artifact or tool.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 Selectors are used to select an artifact within the current page. Most Agile tools are defined for a team and therefore require selection of the team as well as the specific page.  
 ::: moniker-end
 
@@ -75,7 +75,7 @@ This particular selector features these navigational elements:
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Within **Dashboards**, you select the team whose dashboards you want to view. 
 
@@ -106,7 +106,7 @@ Or, choose **Browse all team backlogs** to open the **Backlogs>All** page.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -149,7 +149,7 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Choose the **Deployment** breadcrumb link to return to the *Deployment* folder. 
 
@@ -224,7 +224,7 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 	> ![Team members](media/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
-	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/manage-team-group-global-organization-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
+	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
 
 See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
 

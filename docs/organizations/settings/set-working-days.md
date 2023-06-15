@@ -2,20 +2,21 @@
 title: Set working days off
 titleSuffix: Azure DevOps
 description: Learn how to choose your team's working days for capacity planning purposes in Azure Boards.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
+ms.custom: teams
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/03/2020
+ms.date: 04/24/2023
 ---
 
 # Configure working days  
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Configure the days that your team works. Your team's working days aid in capacity planning purposes and when you're using sprint and scrum methods in Azure Boards. Each team's sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked.
+Learn how to align your team's work hours with your organization's requirements, optimize productivity, and manage workloads effectively by configuring working days in Azure DevOps.
 
 > [!NOTE]   
 > The **Working days** setting specifies the days that teams regularly take off each week. To specify additional non-working days off, such as holidays or a team day off, set these through the **Capacity** page as described in [Set sprint capacity, Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-team-capacity).
@@ -28,21 +29,23 @@ Configure the days that your team works. Your team's working days aid in capacit
 
 ::: moniker range="azure-devops"
 
-1. In **Azure Boards**, select the **Sprints** tab.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Choose **Boards** > **Sprints**.
 
    :::image type="content" source="media/configure-team/azure-boards-sprints-tab-selection.png" alt-text="Screenshot of selection of Azure Boards, and then the Sprints tab, with red boxes.":::
 
-2. Select **Capacity** > Settings :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
+3. Select **Capacity** > **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
-   ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)
+   ![Screenshot showing selected buttons highlighted with red boxes by sequence for Capacity page, Settings, Working days.](media/capacity-planning-open-team-settings-new-nav.png)
 
-3. Select the checkbox next to the appropriate working days, and then select **Save and close**.
+4. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
    Your team's working days are updated.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 1. From Azure Boards, select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
@@ -51,24 +54,6 @@ Configure the days that your team works. Your team's working days aid in capacit
 2. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
    Your team's working days are updated.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"   
-
-<a  id="tfs-2015-work-days" />  
-
-Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days.
-
-   ![Team settings page for default working days](../../boards/plans/media/ALM_DS_WorkingDaysOff.png)  
-
-   Your changes are automatically saved.
-
-::: moniker-end
-
-::: moniker range="tfs-2013" 
-
-To set non-working days, modify the **ProcessConfiguration** file. For details, see [Process configuration XML element reference, Set non-working days](../../reference/xml/process-configuration-xml-element.md#weekend_days). 
 
 ::: moniker-end
 

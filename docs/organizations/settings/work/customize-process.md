@@ -3,10 +3,10 @@ title: Customize a project
 titleSuffix: Azure DevOps Services
 description: Your guide to configuring and customizing work tracking processes for a project by customizing an inherited process
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 04/22/2019
@@ -14,10 +14,10 @@ ms.date: 04/22/2019
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md). 
 
@@ -223,7 +223,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
@@ -234,7 +234,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 1. The Create new project page opens. Fill out the form. To learn more, see [Create a project](../../projects/create-project.md).
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project-sprint166.png) 
 	::: moniker-end

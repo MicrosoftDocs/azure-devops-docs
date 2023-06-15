@@ -2,17 +2,18 @@
 title: Permissions, licensing, and access for manual testing
 description: Default permissions and access levels in Azure DevOps and TFS for manual and exploratory testing topics and problems
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: reference
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---
 
 # Manual test access and permissions 
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 Access to Azure Test Plans features are controlled by access level and permissions. To access the Test Plans web portal, you must have a **Basic** access level or greater. To define and manage test plans, test suites, and test cases, you need **Basic + Test Plans**, which is available from Azure DevOps.

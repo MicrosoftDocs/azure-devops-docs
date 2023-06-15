@@ -2,7 +2,7 @@
 title: Manage wikis via CLI
 titleSuffix: Azure DevOps
 description: Learn how to manage wikis with the command-line interface (CLI) in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli
 ms.topic: conceptual
 ms.assetid: 
@@ -10,12 +10,12 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.date: 06/07/2021
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ---
 
 # Manage wikis with the CLI
 
-[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn the following CLI commands for managing wikis.
 

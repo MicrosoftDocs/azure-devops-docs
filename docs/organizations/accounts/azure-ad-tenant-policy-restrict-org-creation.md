@@ -3,18 +3,18 @@ title: Restrict new organization creation, Azure Active Directory tenant policy
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Azure Active Directory tenant policy.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 08/18/2021
+ms.date: 05/13/2022
 monikerRange: 'azure-devops'
 ---
 
 # Restrict organization creation via Azure AD tenant policy
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which restricts users from creating an organization in Azure DevOps. This policy is turned off, by default.
 
@@ -26,21 +26,13 @@ If you don't see the policy section in Azure DevOps, then you aren't an administ
 
 ![Check Azure AD roles and administrators](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
 
-You can also check your role using the Azure AD PowerShell module.
-![Azure AD PowerShell to enable policy](media/azure-ad-tenant-policy/azure-ad-powershell.png)
-
-For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-
-> [!NOTE]
-> An Azure DevOps Administrator can only restrict new organization creation for individual users, rather than groups at this time. 
-
 ## Turn on the policy
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 3. Select **Azure Active Directory**, and then switch the toggle to turn on the policy, restricting organization creation.
 
    ![Turn on Azure AD policy](media/azure-ad-tenant-policy/azure-ad-turn-policy-on.png)

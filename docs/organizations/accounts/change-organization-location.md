@@ -3,7 +3,7 @@ title: Find or change location or region of organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Find your organization's default location or update your organization region in Azure DevOps.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Find or change your organization region
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you [create an organization](create-organization.md) in Azure DevOps, you can choose the region your organization is hosted in. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
@@ -31,7 +31,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
 ## Prerequisites
 
-You must be [the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
+- You must be [an organization owner](../security/look-up-organization-owner.md) to change your organization region.
 
 ## Change organization region
 

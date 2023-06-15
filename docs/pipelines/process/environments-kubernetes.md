@@ -4,26 +4,25 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: atulmal
-ms.date: 10/11/2021
-monikerRange: azure-devops
+ms.date: 03/23/2022
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Environment - Kubernetes resource
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 The Kubernetes resource view provides a glimpse into the status of objects within the namespace that's mapped to the resource. This view also overlays pipeline traceability so you can trace back from a Kubernetes object to the pipeline, and then back to the commit.
 
-Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider.
+Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider. 
 
-To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
+You can use Kubernetes resources with public or private clusters. To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 ## Overview
 
 See the following advantages of using Kubernetes resource views within environments:
 
-- **Pipeline traceability** - The [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
+- **Pipeline traceability** - The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0), used for deployments, adds more annotations to show pipeline traceability in resource views. Pipeline traceability helps to identify the originating Azure DevOps organization, project, and pipeline responsible for updates that were made to an object within the namespace.
 
   > [!div class="mx-imgBorder"]
   > ![Pipeline traceability](media/k8s-pipeline-traceability.png)
@@ -49,7 +48,7 @@ A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/conf
 
 ## Use an existing service account
 
-The Azure Kubernetes Service creates a new ServiceAccount, but the generic provider option lets you use an existing ServiceAccount. The existing ServiceAccount can be mapped to a Kubernetes resource within your environment to a namespace.
+The Azure Kubernetes Service maps a Kubernetes resource within your environment to a namespace.
 
 For more information about setting up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md).
 
@@ -146,14 +145,14 @@ stages:
     - upload: manifests
       artifact: manifests
 
-- stage: Deploy
+- stage: Production
   displayName: Deploy stage
   dependsOn: Build
 
   jobs:
-  - deployment: Deploy
+  - deployment: Production
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
-    displayName: Deploy
+    displayName: Production
     pool:
       vmImage: $(vmImageName)
     environment: $(envName).$(resourceName)
@@ -231,7 +230,7 @@ stages:
               arguments: svc
               outputFormat: jsonpath='http://{.items[0].status.loadBalancer.ingress[0].ip}:{.items[0].spec.ports[0].port}'
 
-          # Getting the IP of the deployed service and writing it to a variable for posing comment
+          # Getting the IP of the deployed service and writing it to a variable for posting comment
           - script: |
               url="$(get.KubectlOutput)"
               message="Your review app has been deployed"
@@ -251,8 +250,6 @@ To use this job in an **existing** pipeline, the service connection backing the 
 
 ## Related articles
 
-- [Deploy manifests](../ecosystems/kubernetes/deploy.md) and [bake manifests](../ecosystems/kubernetes/bake.md)
-- [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
-- [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
-- [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
-- [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)
+* [Deploy](../ecosystems/kubernetes/deploy.md) 
+* [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
+* [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)

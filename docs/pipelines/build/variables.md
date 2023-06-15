@@ -2,23 +2,22 @@
 title: Predefined variables
 ms.custom: seodec18
 description: A comprehensive list of all available predefined variables
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 06/03/2021
-monikerRange: '>= tfs-2015'
+ms.date: 12/20/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Use predefined variables
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
-This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they are mostly for internal use.
-
+This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they're mostly for internal use.
 
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.) 
 
@@ -26,7 +25,7 @@ These variables are automatically set by the system and read-only. (The exceptio
 
 In YAML pipelines, you can reference predefined variables as environment variables. For example, the variable `Build.ArtifactStagingDirectory` becomes the variable `BUILD_ARTIFACTSTAGINGDIRECTORY`.
 
-For classic pipelines, you can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc).
+For classic pipelines, you can use [release variables](../release/variables.md) in your deploy tasks to share the common information (for example, Environment Name, Resource Group, etc.).
 
 ::: moniker-end
 
@@ -34,19 +33,8 @@ Learn more about [working with variables](../process/variables.md).
 
 ## Build.Clean 
 
-::: moniker range="> tfs-2017"
-
 This is a deprecated variable that modifies how the build agent cleans up source.
 To learn how to clean up source, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-This variable modifies how the build agent cleans up source.
-To learn more, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
-
-::: moniker-end
 
 <h2 id="systemaccesstoken">System.AccessToken</h2>
 
@@ -97,14 +85,34 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 1. Save the new variable. 
 
+Setting `System.Debug` to `true` will configure verbose logs for all runs. You can also configure verbose logs for a single run with the **Enable system diagnostics** checkbox. 
 
-::: moniker range="azure-devops"
+You can also set `System.Debug` to `true` as a variable in a pipeline or template. 
+
+```yaml
+variables:
+  system.debug: 'true'
+```
+
+::: moniker range=">azure-devops-2022"
+
+When `System.Debug` is set to `true`, an additional variable named `Agent.Diagnostic` is set to `true`. When `Agent.Diagnostic` is `true`, the agent collects additional logs that can be used for troubleshooting network issues for self-hosted agents. For more information, see [Network diagnostics for self-hosted agents](../troubleshooting/review-logs.md#network-diagnostics-for-self-hosted-agents).
+
+> [!NOTE]
+> The `Agent.Diagnostic` variable is available with [Agent v2.200.0](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.200.0) and higher.
+
+::: moniker-end
+
+For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
+
+
+::: moniker range=">=azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 <= azure-devops-2022"
 
 [!INCLUDE [include](includes/variables-server-2020.md)]
 
@@ -122,17 +130,6 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-[!INCLUDE [include](includes/variables-tfs2017.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-[!INCLUDE [include](includes/variables-tfs2015.md)]
-
-::: moniker-end
 
 <a name="identity_values"></a>
 ### How are the identity variables set?

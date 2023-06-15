@@ -2,16 +2,17 @@
 title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
 ms.topic: article
-ms.technology: devops-code-git
-ms.date: 06/04/2019
+ms.service: azure-devops-repos
 monikerRange: '<= azure-devops'
+ms.date: 02/24/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/develop/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a migration *with* history.
+When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/develop/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history. The guidance provided in this article introduces a migration *with* history.
 
 SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, and whether you're using regular SVN or close relative like SVK. 
 
@@ -75,12 +76,10 @@ Subversion just uses the username for each commit, while Git stores both a real 
 To extract a list of all SVN users from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique | Out-File 'authors-transform.txt'
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique | Sort-Object | Out-File 'authors-transform.txt' -Encoding utf8
 ```
-This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
 
-> [!NOTE]
-> Encoding can be adjusted by appending the **-Encoding** option to the command above, for instance, `OutFile 'authors-transform.txt' -Encoding utf8`.
+This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into an **authors-transform.txt** file in UTF-8 format. You can then edit each line in the file to create a mapping of SVN users to well-formatted Git users. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
 
 ### Clone the Subversion repository using git-svn
 
@@ -111,7 +110,7 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --bran
 If your SVN repo was using svn:ignore properties, you can convert to a **.gitignore** file using:
 ```
 cd c:\mytempdir
-git svn show-ignore > .gitignore
+git svn show-ignore --id=origin/trunk > .gitignore
 git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
@@ -140,12 +139,12 @@ In this step, you will create a bare repository and make its default branch matc
     git push bare 
     ```
 
-3. Rename "trunk" branch to "master"
-Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
+3. Rename the `trunk` branch to `main`. 
+Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard `main` branch using:
    
     ```
     cd c:\new-bare.git
-    git branch -m svn/trunk master
+    git branch -m svn/trunk main
     ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
@@ -176,6 +175,16 @@ git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remot
 >
 > This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you will have a Git checkout of your repository.
 
+### Migrate only specific revisions
+
+When not specified, `git-svn clone` will migrate all of the revisions from the first commit (r1) to HEAD. If you need to migrate only a specific set of revisions, the command for `git-svn clone` should be appended with an option of `-r`.
+
+For example, if you need to migrate from rev 100 to HEAD, the command looks like this:
+
+```
+git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "authors-transform.txt" --stdlayout c:\mytempdir -r100:HEAD
+```
+
 ## Update your workflow
 
 Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](/devops/develop/git/centralized-to-git).
@@ -187,7 +196,7 @@ Moving from a centralized version control system to Git is more than just migrat
 - [Ignore file changes with Git](./ignore-files.md?tabs=visual-studio)
 - [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
 
-> Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [Branching guidance](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

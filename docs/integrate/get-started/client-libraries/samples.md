@@ -2,17 +2,18 @@
 title: .NET Client Library Samples for Azure DevOps
 description: C# samples showing how to integrate with Azure DevOps from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
+ms.custom: devx-track-dotnet
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 05/05/2022
 ---
 
 # C# client library samples 
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Samples showing how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
@@ -54,8 +55,9 @@ public static void SampleREST()
     
     // Be sure to send in the full collection uri, i.e. http://myserver:8080/tfs/defaultcollection
     // We are using default VssCredentials which uses NTLM against an Azure DevOps Server.  See additional provided
-    // examples for creating credentials for other types of authentication.
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssCredentials());
+    // Create a connection with PAT for authentication
+    VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
+
 
     // Create instance of WorkItemTrackingHttpClient using VssConnection
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
@@ -129,13 +131,13 @@ To change the method of authentication to Azure DevOps Services or Azure DevOps 
 public static void PersonalAccessTokenRestSample()
 {
     // Create instance of VssConnection using Personal Access Token
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssBasicCredential(string.Empty, pat));
+    VssConnection connection = new VssConnection(orgUrl, new VssBasicCredential(string.Empty, personalAccessToken));
 }
 ```
 
 ##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for REST services (.NET Framework only)
 
-Because interactive dialogs are not supported by the .NET Core version of the clients, this sample applies only to the .NET Framework version of the clients.
+Because interactive dialogs aren't supported by the .NET Core version of the clients, this sample applies only to the .NET Framework version of the clients.
 
 ```cs
 public static void MicrosoftAccountRestSample()

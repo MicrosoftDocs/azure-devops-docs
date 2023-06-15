@@ -13,7 +13,7 @@
 - name: Run commands in a release pipeline 
   href: azure-devops-cli-in-release-pipeline.md
 - name: Manage permissions 
-  href: ../organizations/security/manage-tokens-namespaces.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
+  href: ../organizations/security/manage-tokens-namespaces.md?toc=/azure/devops/dev-resources/toc.json 
 - name: Service connections
   href: service-endpoint.md
 - name: Troubleshoot common errors
@@ -31,9 +31,9 @@
   - name: az repos
     href: /cli/azure/azure-cli-reference-for-devops#azure-repos
   - name: Output formats
-    href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
+    href: /cli/azure/format-output-azure-cli
   - name: Query
-    href: /cli/azure/query-azure-cli?view=azure-cli-latest
+    href: /cli/azure/query-azure-cli
 
 
 

@@ -3,61 +3,22 @@ title: Tasks that support backlogs, boards, & plans in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about tasks that support backlogs, Kanban boards, taskboards, and plans in Azure Boards. 
 ms.custom: "boards-backlogs, seodec18" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 03/30/2023
 ---
-
-
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= tfs-2017"
+Learn about the different views available in Agile project management - backlogs, boards, and delivery plans - and how they differ from each other. 
 
-What can you do from a backlog view versus a board view? How do these tasks differ from delivery plans? How do changes you make in one show up on the other? What customizations can you make for each?
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each?
- 
-::: moniker-end 
-
-Which view should you use to work with Agile methods?  
-
-**In a nutshell...**
-::: moniker range=">= tfs-2017"
--  Backlogs display work items as a list and boards display them as cards  
--  You use your product backlog to quickly plan and prioritize your work  
--  You use your sprint backlogs and taskboards when you work in Scrum   
--  You use your Kanban board to update work status and when you employ Kanban methods   
--  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
--  Plans allow you to review the deliverables for several teams across sprints and a calendar schedule
--  Backlogs, boards, and plans are configurable for each team.  
-::: moniker-end
-
-
-::: moniker range="<= tfs-2015"
--  Backlogs display work items as a list and boards display them as cards  
--  You use your product backlog to quickly plan and prioritize your work  
--  You use your sprint backlogs and taskboards when you work in Scrum   
--  You use your Kanban board to update work status and when you employ Kanban methods   
--  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
--  Each backlog and board is configurable for each team.  
-::: moniker-end
-
-
-With list backlogs, you can quickly develop your project plan, group and prioritize work, and make bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
-::: moniker range=">= tfs-2017"
-And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
-::: moniker-end
+Backlogs list work items while boards display them as cards, and each is associated with the other. You can customize each view according to your team's needs. Use your product backlog to plan and prioritize work, your sprint backlogs and taskboards for Scrum, and your Kanban board to update work status. Changes made in one view are reflected in the corresponding board. Delivery plans allow you to monitor progress, deliverables, and dependencies across several teams.
 
 ## Access a backlog or board
 
@@ -90,6 +51,8 @@ You access your backlogs and boards from a web portal. If you work from the Stor
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
+[!INCLUDE [temp](../includes/tip-configure-backlog-view.md)]
+
 ::: moniker-end
 
 
@@ -99,7 +62,7 @@ You access your backlogs and boards from a web portal. If you work from the Stor
 
 	![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="/azure/devops/media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![The drop-down list for Fabrikam Fiber Team shows a search box, a list of team backlogs titled My Team Backlogs, and a Browse all backlogs button.](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -120,7 +83,7 @@ You access your backlogs and boards from a web portal. If you work from the Stor
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -133,14 +96,6 @@ To choose another team, open the project/team selector and select a different te
 > ![The drop-down list for Fabrikam Fiber / Phone shows a Fabrikam Fiber Home button, a list titled Recent project/teams, a Browse button, and a New team button.](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
-
-![Boards>backlogs, TFS 2015, 2013 web portal](media/backlogs-boards-plans/open-backlog-tfs-2015.png)
-
-::: moniker-end
-
 
 ## Three classes of backlogs, two types of boards  
 
@@ -165,7 +120,7 @@ For details about working in each type of backlog, see [Create your backlog](cre
 
 Kanban and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and you monitor the flow through the cumulative flow chart. Taskboards track tasks defined for a sprint and you monitor the flow via the sprint burndown chart. 
 
-For details about working in each type of board, see [Kanban basics](../boards/kanban-basics.md) and [taskboard](../sprints/task-board.md). 
+For details about working in each type of board, see [Kanban overview](../boards/kanban-overview.md) and [taskboard](../sprints/task-board.md). 
 
 ### Feature support across backlogs and boards
 
@@ -495,11 +450,10 @@ The following table indicates those elements or tasks associated with each type 
    :::column-end:::
 :::row-end:::
 
-
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 :::row:::
    :::column span="1":::
@@ -802,7 +756,6 @@ The following table indicates those elements or tasks associated with each type 
    :::column-end:::
 :::row-end:::
 
-
 ::: moniker-end
 
 
@@ -824,14 +777,11 @@ The In progress items **Show/Hide** filter causes some backlog items to display 
 
 On your [backlog](create-your-backlog.md), set **In progress items** to **Show** to see all active bugs and other items on your backlog.  
 
-::: moniker range=">= tfs-2017"  
 <a id="plans">  </a>
 
 ## Delivery Plans display team deliverables  
 
 With Delivery Plans, you gain tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.    
- 
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -846,26 +796,20 @@ With Delivery Plans, you gain tailor-made views across several teams and their d
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 You install Delivery Plans from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), in the Azure DevOps tab.
 
 All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.  
 ::: moniker-end
 
-::: moniker range="tfs-2017" 
-Delivery Plans is available for TFS 2017.2 and later versions. 
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../plans/review-team-plans.md). 
-::: moniker-end
 
 ::: moniker range="azure-devops"
 ![Example plans preview](../plans/media/plans/features-span-iterations-preview.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 ![Example plans view](../extensions/media/plans/plans-move-1.png)  
 ::: moniker-end
 
@@ -882,17 +826,6 @@ These reasons can cause work items that belong to the Task Category to not appea
 - The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.   
 - The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
 - The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
-	
-<!---
-> [!NOTE]  
->Appearance of task and child items on the taskboard may differ depending on whether you work in Azure Boards and TFS.
-
-> [!NOTE]  
->In Azure Boards and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
-
-> [!NOTE]  
->In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
--->
 
 
 ## Customize backlog and board levels 
@@ -916,37 +849,28 @@ If you need more than three backlog levels and board levels, you can add more. Y
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 If you need more than three backlog and board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end
 
 ## Related articles  
 
-::: moniker range=">= tfs-2017"  
 Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"  
-Now that you understand how backlogs and boards work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
-::: moniker-end
 
 A few things to keep in mind...
 - Every team owns their own backlog. To add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md) 
 - To have work completed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../plans/portfolio-management.md)   
-- Every backlog has a corresponding [Kanban board](../boards/kanban-basics.md) you can use to track progress and update status  
+- Every backlog has a corresponding [Kanban board](../boards/kanban-overview.md) you can use to track progress and update status  
 - Each team can control how [bugs show up on their backlogs](../../organizations/settings/show-bugs-on-backlog.md)  
 - When you add child items, they're linked to their parent using parent-child links, which support hierarchical views and [tree queries](../queries/using-queries.md#tree-query)    
 
- 
 More articles of interest:
 
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)   
 - [Add work items](add-work-items.md)   
 - [Dashboards](../../report/dashboards/dashboards.md)   
 
-::: moniker range=">= tfs-2017"  
-
 ### More tools from the Marketplace 
 
 You may find other tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Downloads), Azure DevOps tab.
-::: moniker-end
+

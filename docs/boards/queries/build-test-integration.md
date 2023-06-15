@@ -1,26 +1,27 @@
 ---
 title: Build and test integration queries
 titleSuffix: Azure DevOps
-description: Track work by creating queries based on build and test integration fields in Azure Boards and Team Foundation Server (TFS)
-ms.technology: devops-agile
+description: Learn how to track work by creating queries based on build and test integration fields in Azure Boards.
+ms.service: azure-devops-boards
+ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 02/06/2019
+ms.date: 04/01/2022
 ---
 
 
-# Query based on build and test integration fields
+# Create a query based on build and test integration fields
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
 -   Query for bugs associated with a build 
 -   Mark test cases as either manual or automated, and store information to support automated test cases  
--   For test cases and shared steps, define the action and validation steps and the data that are used to perform tests.
+-   For test cases and shared steps, define the action and validation steps and the data that are used to run tests.
 
 <!--- include information on limits of querying by test case -->  
 
@@ -32,29 +33,20 @@ Most build and test integration fields have a data type of String, PlainText, or
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Supported operators and macros**
-
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
-    **Rich-text (HTML)** 
-
+    **Rich-text (HTML)** and  
+    **Multi-line text strings (PlainText)** 
    :::column-end:::
    :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Multi-line text strings (PlainText)** 
-   :::column-end:::
-   :::column span="3":::
-   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
+   `Contains Words`, `Does Not Contain Words`, `Is Empty`, `Is Not Empty`.   
+   The `Is Empty` and `Is Not Empty` operators are supported for Azure DevOps Server 2019 RC2 and later versions. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -62,17 +54,11 @@ Most build and test integration fields have a data type of String, PlainText, or
    **Single text (String)** 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
-   **Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **Project**<sup>2</sup>, valid with the **Team Project** field
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`, `Contains`, `Does Not Contain`, `In`, `Not In`, `In Group`, `Not In Group`, `Was Ever`  
+   **Macros**: `[Any]`, valid with the **Work Item Type** field; and `@Project`, valid with the **Team Project** field. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
-
-
-> [!NOTE]  
-> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-> 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-
+ 
 
 ## Useful filters 
 
@@ -117,12 +103,14 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 ## List bugs and the test cases that test them
 
-Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
+Open a new query, set the query type to Work items and direct links. Filter for bugs in the top level and add the filter for Test Cases in the linked work items filter. 
 
 ![List bugs and the test cases that test them](media/query-build-integration-bugs-linked-test-cases.png)
 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
+
+<a id="fields" />
 
 ## Build and test data fields  
 
@@ -141,27 +129,18 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    **Work item type**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Automation Status<sup> 1</sup>
-
    :::column-end:::
    :::column span="2":::
    The status of a test case. You can specify the following values:
-
-   
    - **Automated**
-
    - **Not Automated**
-
-   - **Planned**
-
-   
-   To run automated tests, see [Run automated tests from test plans](../../test/run-automated-tests-from-test-hub.md).
-
+   - **Planned**  
+   To run automated tests, see [Run automated tests from test plans](../../test/run-automated-tests-from-test-hub.md).  
    Reference name=Microsoft.VSTS.TCM.AutomationStatus, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Test Case
@@ -170,17 +149,12 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Found In<sup> 2</sup>
-
    :::column-end:::
    :::column span="2":::
-   Product build number, also known as a revision, in which a bug was found.
-
-   Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String
-
-   
+   Product build number, also known as a revision, in which a bug was found.  
+   Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String  
    > [!NOTE]  
    > You can also use the **Found in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
    :::column-end:::
    :::column span="1":::
    Bug
@@ -189,17 +163,12 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Integration Build<sup> 2</sup>
-
    :::column-end:::
    :::column span="2":::
-   Product build number that incorporates the code or fixes a bug.
-
-   Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String
-
-    
+   Product build number that incorporates the code or fixes a bug.  
+   Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String  
    > [!NOTE]  
    > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
    :::column-end:::
    :::column span="1":::
    All
@@ -208,13 +177,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Issue
-
    :::column-end:::
    :::column span="2":::
-   Indicates that the Shared Steps is associated with an expected result. Allowed values are **Yes** and **No**. 
-
+   Indicates that the Shared Steps are associated with an expected result. Allowed values are **Yes** and **No**. 
    Reference name=Microsoft.VSTS.Common.Issue, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Shared Steps
@@ -222,14 +188,11 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Parameters<sup> 3</sup>
-
+   Parameters 
    :::column-end:::
    :::column span="2":::
-   Contains the parameters to use when running a manual test. 
-
+   Contains the parameters to use when running a manual test.  
    Microsoft.VSTS.TCM.Parameters, Data type=HTML
-
    :::column-end:::
    :::column span="1":::
    Shared Parameters, Shared Steps, Test Case
@@ -238,13 +201,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Steps
-
    :::column-end:::
    :::column span="2":::
-   The action and validation steps that are required to perform the test.
-
+   The action and validation steps that are required to run the test.
    Microsoft.VSTS.TCM.Steps, Data type=HTML
-
    :::column-end:::
    :::column span="1":::
    Shared Steps, Test Case
@@ -253,13 +213,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    System Info
-
    :::column-end:::
    :::column span="2":::
-   Information about the software and system configuration that is relevant to the test.
-
+   Information about the software and system configuration that is relevant to the test.  
    Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
-
    :::column-end:::
    :::column span="1":::
    Bug, Feedback Response
@@ -267,17 +224,11 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Repro Steps (or Steps to reproduce) 
-  
    :::column-end:::
      :::column span="2":::
-   
-   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
-    
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem and whether they've fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
-
-  
    :::column-end:::
    :::column span="1":::
    Bug
@@ -285,41 +236,30 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Test Suite Type<sup> 1,4</sup>
-
+   Test Suite Type<sup> 1</sup>
    :::column-end:::
    :::column span="2":::
-   The test suite category. Allowed values are:
-
-   
-   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.
-
-   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
-
-   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.
-
-   
-   For more information, see [Create a test plan](../../test/create-a-test-plan.md).
- 
+   The test suite category. Allowed values are:  
+   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.  
+   - **Requirement Based**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
+   - **Static**: Use to group together test cases with any characteristics or test suites.  
+   For more information, see [Create a test plan](../../test/create-a-test-plan.md).  
    Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Test Suite
-
    :::column-end:::
 :::row-end:::
 
 
 > [!NOTE]  
-> 1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
+> 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
 > 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
-> 3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
-> 4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
 
-## Additional fields
 
-The following fields do not appear on work item forms, but these fields are tracked for test cases or test suites. You can use some of these fields to filter queries and create reports. (None of these fields are added to the data warehouse nor indexed.) 
+## Other fields
+
+The following fields don't appear on work item forms, but these fields are tracked for test cases or test suites. You can use some of these fields to filter queries and create reports. (None of these fields are added to the data warehouse nor indexed.) 
 
 :::row:::
      :::column span="1":::
@@ -433,11 +373,11 @@ The following fields do not appear on work item forms, but these fields are trac
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Test Suite Audit <sup> 1</sup>
+   Test Suite Audit
 
    :::column-end:::
    :::column span="2":::
-   Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
+   Tracks other operations run when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a combined history view, including changes done to work items field and changes resulting from related artifacts such as test points and configurations.
 
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
 
@@ -449,7 +389,7 @@ The following fields do not appear on work item forms, but these fields are trac
 
 :::row:::
    :::column span="1":::
-   Test Suite Type ID <sup>1, 2</sup>
+   Test Suite Type ID <sup>1</sup>
 
    :::column-end:::
    :::column span="2":::
@@ -473,8 +413,7 @@ The following fields do not appear on work item forms, but these fields are trac
 
 
 > [!NOTE]  
-> 1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
-> 2.  Do not customize the picklist for these fields. The system accepts only those values listed.
+> 1.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
 
 
@@ -505,14 +444,14 @@ You can use the following code snippet to add these fields to a WIT definition.
 > ```
 
 
-When the **Found In** field is present in a WIT definition, Team Foundation Build creates a work item when a build fails, and sets the **Found In** field to the build number of the build that just failed. If the **Found In** field is missing, Team Foundation Build does not create a work item for the failed build, and everything else works as expected.
+When the **Found In** field is present in a WIT definition, Team Foundation Build creates a work item when a build fails, and sets the **Found In** field to the build number of the build that failed. If the **Found In** field is missing, Team Foundation Build doesn't create a work item for the failed build, and everything else works as expected.
 
-When the **Integration Build** field is present in the WIT definition, Team Foundation Build identifies work items that were resolved with each build and then updates those work items to set the build number in which they were resolved in the **Integration Build** field. If the **Integration Build** field is missing, Team Foundation Build does not store the build number in the work items, and everything else works as expected.
+When the **Integration Build** field is present in the WIT definition, Team Foundation Build identifies work items that were resolved with each build and then updates those work items to set the build number in which they were resolved in the **Integration Build** field. If the **Integration Build** field is missing, Team Foundation Build doesn't store the build number in the work items, and everything else works as expected.
 
 
 <a id="global-list" /> 
 
-### Builds and global list auto-population
+### Builds and global list autopopulation
 
 The first time you queue a build for a project using Team Foundation Build, TFS automatically adds a global list labeled <strong>Build - <em>ProjectName</em></strong>. Each time a build is run, a <strong>LISTITEM</strong> is added to this global list with the name of the build.
 
@@ -557,14 +496,14 @@ You can add these fields to work item types that you create for tracking defects
 
 ### Fields that integrate with Team Foundation Version Control
 
-One of the features available in Team Foundation version control (TFVC) enables you to associate or resolve work items when you check in code. You might have worked on a particular work item when you make a code change and you can set that association from within the source-control check-in window when you are finished working on the code.
+One of the features available in Team Foundation version control (TFVC) enables you to associate or resolve work items when you check in code. You might have worked on a particular work item when you make a code change and you can set that association from within the source-control check-in window when you're finished working on the code.
 
 The ability of Team Foundation version control to resolve a work item requires that work items contain a particular action. The source control system then queries work item tracking to determine whether the work item supports that action, and if it does support that action, it also queries for the source and destination states of the transition. If the action is found, the source control system can transition the work item according to the set transition when it checks in the code.
 
 > [!NOTE]
 > When you use the **Checkin** action, you must set appropriate *from* and *to* states to reflect the state transition that you want.
 
-For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](../../reference/xml/automate-field-assignments-state-transition-reason.md).
+For more information about Actions, see [Automate field assignments based on State, Transition, or Reason](/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason).
 
 ## Related articles
 
@@ -572,17 +511,3 @@ For more information about Actions, see [Automate field assignments based on Sta
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)  
 - [Link and attachment queries](linking-attachments.md)
-
-::: moniker range="tfs-2013"  
-
-### Availability of test work item types 
-
-Test Manager and the test work item types (WITs) use the following fields to track test plans, progress, and results. The availability of the WITs is based on the version of TFS installed on your application-tier. To learn more about using these WITs, see [Create a test plan](../../test/create-a-test-plan.md).
-
-|TFS 2013.0|TFS 2013.2|TFS 2013.3 and later versions|
-|---|---|---|
-|<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
-
-To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
-
-::: moniker-end  

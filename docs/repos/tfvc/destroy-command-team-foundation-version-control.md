@@ -1,31 +1,34 @@
-﻿---
-title: Destroy Command (Team Foundation Version Control)
+---
+title: Destroy command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Destroy Command (Team Foundation Version Control)
+description: See how to destroy, or permanently delete, files and folders in Team Foundation Version Control (TFVC).
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 10/31/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Destroy Command (Team Foundation Version Control)
+# Destroy command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Use the **tf destroy** command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
+Use the `tf destroy` command to destroy, or permanently delete, version-controlled files from Team Foundation Version Control (TFVC).
 
-The destroy action cannot be reversed. You must not destroy files that are still needed. Sometimes you have to clean up version control systems. For example, if some files are infected with a computer virus, you have to remove them permanently from version control.
+Sometimes you have to clean up version control systems. For example, if some files are infected with a computer virus, you have to remove them permanently from version control. Don't destroy files that are still needed. The destroy action can't be reversed.
 
-Before you run **tf destroy** without the **/keephistory** option, we recommend that you first delete the files you want to destroy. For more information, see [Delete Files and Folders from Version Control](delete-restore-files-folders.md).
+Before you run `tf destroy` without the `/keephistory` option, first delete the files you want to destroy. For more information, see [Delete files and folders from version control](delete-restore-files-folders.md).
 
-After you delete the files you can synchronize the Team Foundation warehouse. Otherwise, the warehouse will not be synchronized with the destroyed items.
+After you delete the files, you can synchronize the TFVC warehouse. Otherwise, the warehouse won't be synchronized with the destroyed items.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the `destroy` command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
+## Syntax
 ```
 tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>] 
 [/stopat:<versionspec>] [/preview] [/startcleanup] [/noprompt] [/silent] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]]
@@ -33,7 +36,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 
 ## Parameters
 
-### Argument
+### Arguments
 
 :::row:::
    :::column span="1":::
@@ -45,41 +48,41 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *itemspec1* *[itemspec2...itemspecN]*
+   `<itemspec1> [<itemspec2>...<itemspecN>]`
    :::column-end:::
    :::column span="3":::
-   Specifies the server path of the file or folder to be destroyed. Use multiple *itemspec* values to delete multiple items. For example, `tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3`.
+   Specifies the server path of the file or folder to be destroyed. Use multiple `itemspec` values to delete multiple items. For example, `tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3`.
    
-   Local paths are not supported.
+   Local paths aren't supported.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *versionspec*
+   `<versionspec>`
    :::column-end:::
    :::column span="3":::
-   Provides a version such as C58 for the **/keephistory** or **/stopat** options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Provides a version such as `C58` for the `/keephistory` or `/stopat` options. The allowed values are `date`, `tip`, or a specific changeset. For more information about how TFVC parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *username*
+   `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN UserName* or *UserName.*
+   Provides a value to the `/login` option. You can specify a `username` value as either `DOMAIN\username` or `username`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *TeamProjectCollectionUrl*
+   `TeamProjectCollectionUrl`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).
+   The URL of the project collection that contains files that you want to destroy, for example, `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 
 
-### Option
+### Options
 
 :::row:::
    :::column span="1":::
@@ -91,74 +94,72 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/keephistory**
+   `/keephistory`
    :::column-end:::
    :::column span="3":::
-   Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This cannot be specified with the **/preview** option.
+   Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This option can't be specified with the `/preview` option.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/stopat**
+   `/stopat`
    :::column-end:::
    :::column span="3":::
-   Optional. Can be used only if **/keephistory** is specified also.
+   Optional. Can be used only if `/keephistory` is specified also.
    
    Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.
    
-   The default version for **/stopat** is tip (T) for the latest checked-in version of an item.
+   The default version for `/stopat` is `tip` (T) for the latest checked-in version of an item.
    
-   You cannot use label or workspace *versionspec* values to specify an item for **/stopat** option.
+   You can't use label or workspace `versionspec` values to specify an item for the `/stopat` option.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/preview**
+   `/preview`
    :::column-end:::
    :::column span="3":::
-   Displays in the Command Prompt window the files that would be destroyed. When **tf destroy** runs in the preview mode, the files are not actually destroyed.
+   Displays the files that would be destroyed in the command prompt window. When `tf destroy` runs in preview mode, the files aren't actually destroyed.
 
-   > [!Note]  
-   > The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the **/preview** option is used.
+   > [!Note]
+   > The text in the command prompt window displays the word **Destroyed** with each file that would be destroyed. However, the file is actually not destroyed when the `/preview` option is used.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/startcleanup**
+   `/startcleanup`
    :::column-end:::
    :::column span="3":::
-   Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify **/startcleanup**, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.
+   Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user doesn't specify `/startcleanup`, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Azure DevOps Server. By default, the clean-up is scheduled to run every five days. Seven days after the TFVC metadata are cleaned up, the content is deleted by another clean-up process. By default, this content clean-up process runs once each day.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/noprompt**
-   
-   **/i**
+   `/noprompt` or `/i`
    :::column-end:::
    :::column span="3":::
-   Specifies that the destruction of files is non-interactive. **/i** is an alias for **/noprompt**.
+   Specifies that the destruction of files is non-interactive. `/i` is an alias for `/noprompt`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/silent**
+   `/silent`
    :::column-end:::
    :::column span="3":::
-   Specifies that, when you destroy files or folders, the output is not written to the command prompt window.
+   Specifies that, when you destroy files or folders, the output isn't written to the command prompt window.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/login**
+   `/login`
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Team Foundation Server.
+   Specifies the user name and password to authenticate the user with TFVC.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/collection**
+   `/collection`
    :::column-end:::
    :::column span="3":::
    Specifies the project collection.
@@ -166,89 +167,73 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 :::row-end:::
 
 ## Remarks
-When you use **tf destroy** to destroy version-control files, the application tier of Team Foundation Server receives the destroy request and checks to see whether you are a member of the **Team Foundation Administrators** security group. If you are not a member, the system displays an error-message dialog box that tells you that you do not have sufficient permissions to perform the operation.
 
-After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Team Foundation Server is cleaned up. You can also specify the **/startcleanup** option to clean up the files immediately after **tf destroy** runs.
+When you use `tf destroy` to destroy version-control files, the application tier of TFVC receives the destroy request and checks to see whether you're a member of the **Team Foundation Administrators** security group. If you aren't a member, the system displays an error-message dialog box that tells you that you don't have sufficient permissions to perform the operation.
 
-If you run **tf destroy** without specifying **/i** and **/preview**, the system displays a console **Yes** or **No** prompt for each *filespec* value. Otherwise, you can specify **Yes to all**. If you do not specify **/keephistory**, you are prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to **/preview** if you want more information about the changes. If you specify **/keephistory**, you are also prompted by **Yes**, **No**, or **All** text. If you select **Yes** or **All**, the destruction process starts, and the server paths to the destroyed items appear in the Command Prompt window.
+After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Azure DevOps Server is cleaned up. You can also specify the `/startcleanup` option to clean up the files immediately after `tf destroy` runs.
 
-```
+If you run `tf destroy` without specifying `/i` and `/preview`, the system displays a console **Yes** or **No** prompt for each `filespec` value. Otherwise, you can specify **Yes to All**. 
+
+- If you don't specify `/keephistory`, you're prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to `/preview` if you want more information about the changes.
+
+- If you specify `/keephistory`, you're also prompted by **Yes**, **No**, or **Yes to All** text. If you select **Yes** or **Yes to All**, the destruction process starts, and the server paths to the destroyed items appear in the command prompt window.
+
+```output
 Destroyed: <serverItem1>
 Destroyed: <serverItem2>
 Destroyed: ...
 ```
 
-If you specified the *versionspec* value as a tip, the server paths displayed in the Command Prompt window include deletion IDs. For example, X123 might appear in the Command Prompt window.
+If you specified the `versionspec` value as `tip`, the server paths displayed in the command prompt window include deletion IDs. For example, `Destroyed: $/Test1/MyProject;X123` might appear in the command prompt window.
 
-If you use the **/preview** option, the files are not destroyed, but the command-line text displays the files that would be destroyed. For example, if, at the command-line, you type **tf destroy /preview $/Test1/MyProject/MyProject/Program.cs**, the command window displays this text:
+If you use the `/preview` option, the files aren't destroyed, but the command-line text displays the files that would be destroyed. For example, if you enter `tf destroy /preview $/Test1/MyProject/MyProject/Program.cs` at the command-line, the command window displays this text:
 
-Destroyed: $/Test1/MyProject/MyProject/Program.cs
+`Destroyed: $/Test1/MyProject/MyProject/Program.cs`
 
-However, the file is actually not destroyed because you used the **/preview** option.
+However, the file is actually not destroyed because you used the `/preview` option.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 
-### Effects of /keephistory on Other Version Control Operations
+### Effects of /keephistory on other version control operations
 
-If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
+If you specify the `/keephistory` option to retain the history of destroyed files, the files are treated as destroyed by the following TFVC operations:
 
--   **Change content** If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
+-   **Change content**. If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
 
--   **Branch, merge, or unshelve** If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
+-   **Branch, merge, or unshelve**. If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
 
-### Destroying Previously Deleted Items
+### Destroy previously deleted items
 
 If an item has already been deleted, a deletion ID is attached to it and results in a filename change.
 
-### Effects of TF DESTROY on TFVC repo Code Search
+### Effects of tf destroy on TFVC repo code search
 
-Code Search does not handle TF DESTROY notifications and so using TF DESTROY for TFVC repos will not automatically delete files in the Search index.
-As a result, these files appear in the code search results. To avoid these ghost files scenario, users are recommended to delete files before TF DESTROY operation. 
+Code search doesn't handle `tf destroy` notifications, so using `tf destroy` for TFVC repos won't automatically delete files from the search index. As a result, these files appear in the code search results. To avoid these ghost files scenarios, delete files before the `tf destroy` operation.
 
 ## Examples
-### Description
 
-The following example permanently deletes the file a.cs.
-
-### Code
+The following example permanently deletes the file *a.cs*.
 
 ```
-C:\pi\ws1>tf destroy $/proj/pi/a.cs
+tf destroy $/proj/pi/a.cs
 ```
 
-### Description
-
-The following example deletes a folder, *aFolder*, type at the command line:
-
-### Code
+The following example deletes a folder, *aFolder*:
 
 ```
-C:\tf delete $/MyTeamProject/aFolder
+tf delete $/MyTeamProject/aFolder
 ```
 
-### Description
-
-To destroy the deleted item, *aFolder*, you must type at the command line:
-
-### Code
+To destroy the deleted item *aFolder*, enter at the command line:
 
 ```
-tf destroy $/MyTeamProject/sFolder;x123
+tf destroy $/MyTeamProject/aFolder;x123
 ```
 
-Where x123 is the deletion ID.
+where `x123` is the deletion ID.
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Destroy Version Controlled Files](destroy-version-controlled-files.md)
-
-#### Concepts
-
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Destroy version controlled files](destroy-version-controlled-files.md)
+- [Operations available only from the tf command-line](what-is-tfvc.md#operations-available-only-from-the-tf-command-line)

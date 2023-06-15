@@ -2,11 +2,13 @@
 title: Build code from GitHub Enterprise Server
 description: Using a GitHub Enterprise Server with Azure Pipelines
 ms.topic: reference
-ms.date: 07/05/2020
+ms.date: 01/25/2023
 monikerRange: 'azure-devops'
 ---
 
 # Build GitHub Enterprise Server repositories
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can integrate your on-premises GitHub Enterprise Server with Azure Pipelines. Your on-premises server may be exposed to the Internet or it may not be.
 
@@ -34,7 +36,7 @@ The first thing to check is whether your GitHub Enterprise Server is reachable f
 If the verification passes, then the servers that run Azure Pipelines service are able to reach your on-premises GitHub Enterprise Server. You can proceed and set up the connection. Then, you can use this service connection when creating a classic build or YAML pipeline. You can also configure CI and PR triggers for the pipeline. A majority of features in Azure Pipelines that work with GitHub also work with GitHub Enterprise Server. Review the documentation for [GitHub](github.md) to understand these features. Here are some differences:
 
 * The integration between GitHub and Azure Pipelines is made easier through an Azure Pipelines app in GitHub marketplace. This app allows you to set up an integration without having to rely on a particular user's OAuth token. We do not have a similar app that works with GitHub Enterprise Server. So, you must use a PAT, username and password, or OAuth to set up the connection between Azure Pipelines and GitHub Enterprise server.
-* When working with GitHub, Azure Pipelines supports a number of security features to validate contributions from external forks. For instance, secrets stored in a pipeline are not made available to a running job. These protections are not available when working with GitHub Enterprise server.
+* Azure Pipelines supports a number of GitHub security features to validate contributions from external forks. For instance, secrets stored in a pipeline are not made available to a running job. These protections are not available when working with GitHub Enterprise server.
 * Comment triggers are not available with GitHub Enterprise server. You cannot use comments in a GitHub Enterprise server repo pull request to trigger a pipeline.
 * GitHub Checks are not available in GitHub Enterprise server. All status updates are through basic statuses.
 
@@ -44,11 +46,11 @@ When the verification of a GitHub Enterprise Server connection as explained in t
 
 * Work with your IT department to open a network path between Azure Pipelines and GitHub Enterprise Server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the GitHub Enterprise Server so that Azure Pipelines can resolve the FQDN of your server to an IP address. With all of these changes, attempt to create and verify a GitHub Enterprise Server connection in Azure Pipelines.
 
-* Instead of a using a GitHub Enterprise Server connection, you can use a **[Other Git](../library/service-endpoints.md#external-git-service-connection)** connection. Make sure to uncheck the option to **Attempt accessing this Git server from Azure Pipelines**. With this connection type, you can only configure a classic build pipeline. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
+* Instead of a using a GitHub Enterprise Server connection, you can use a **[Other Git](../library/service-endpoints.md#other-git-service-connection)** connection. Make sure to uncheck the option to **Attempt accessing this Git server from Azure Pipelines**. With this connection type, you can only configure a classic build pipeline. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
 
 ## Reachable from Microsoft-hosted agents
 
-Another decision you possibly have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a simple pipeline to use Microsoft-hosted agents and make sure to add a step to checkout source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
+Another decision you possibly have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a simple pipeline to use Microsoft-hosted agents and make sure to add a step to check out source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
 
 ## Not reachable from Microsoft-hosted agents
 
@@ -82,7 +84,7 @@ When you use **Other Git** connection to set up a classic pipeline, disable comm
 
 If you want to set up YAML pipelines or if you want to enhance the experience with classic pipelines, it is important that you enable communication from Azure Pipelines to GitHub Enterprise Server. 
 
-To allow traffic from Azure DevOps to reach your GitHub Enterprise Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allow-list. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allow-list.
+To allow traffic from Azure DevOps to reach your GitHub Enterprise Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allowlist. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allowlist.
 
 ## FAQ
 

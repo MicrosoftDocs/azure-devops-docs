@@ -1,51 +1,46 @@
 ---
-title: CMMI process work item types & workflow
+title: Capability Maturity Model Integration (CMMI) process work item types & workflow
 titleSuffix: Azure Boards
-ms.custom: work-items
-description: How to guide for using the CMMI process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server   
-ms.technology: devops-agile
+ms.custom: work-items, engagement-fy23
+description: Learn how to use the CMMI process work item types and workflow to track work in Azure Boards and Azure DevOps.  
+ms.service: azure-devops-boards
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/24/2021
+ms.date: 01/04/2023
 ---
 
-# CMMI process work item types and workflow
+
+# CMMI process work item types and workflow in Azure Boards
 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
-![CMMI process work item types, conceptual image](media/cmmi-process-plan-wits.png)
+![Conceptual image of CMMI process work item types.](media/cmmi-process-plan-wits.png)
 
 To gain insight into a portfolio of requirements, product owners can map requirements to features. When teams work in iterations, they define tasks that automatically link to requirements.
 
 Using Microsoft Test Manager and the web portal, testers create and run test cases and define bugs to track code defects.
 
-To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you are new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
-
-  
-[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)] 
+To support other CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you're new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
+ 
 
 ## Define requirements 
 
-Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). 
+Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). Later, you can open each requirement to provide more details and estimate its size.
 
-<img src="media/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" />
+:::image type="content" source="../media/about-work-items/work-item-form-requirement.png" alt-text="Screenshot of Requirement work item form.":::
 
-Later, you can open each requirement to provide more details and estimate its size.
-
-![Requirement work item form](media/cmmi-requirement-form.png)  
-
-::: moniker range="> tfs-2018"
-Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md). 
+::: moniker range="> azure-devops-2019"
+Or, you can bulk add requirements using a [cvs file](../../queries/import-work-items-from-csv.md). 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
-Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
+::: moniker range="<= azure-devops-2019"
+Or, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
 ::: moniker-end
 
 
@@ -53,7 +48,7 @@ Alternatively, you can bulk add requirements using [Excel](../../backlogs/office
 
 Requirements specify the functions and product elements that teams need to create. Product owners typically define and stack rank requirements on the product backlog page. The team then scopes the size of the effort to deliver the highest priority items.
 
-Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form. For additional guidance, see [Plan a project](cmmi/guidance-plan-a-project-cmmi.md).
+Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form. For more information, see [Plan a project](cmmi/guidance-plan-a-project-cmmi.md).
 
 
   :::row:::
@@ -64,6 +59,7 @@ Use the following guidance and that provided for [fields used in common across w
    **Usage**
    :::column-end:::
   :::row-end:::
+   ---
   :::row:::
    :::column span="1":::
    
@@ -89,7 +85,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column-end:::
    :::column span="3":::
    
-  The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.
+  The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field that corresponds to Impact Assessment.
 
    
    
@@ -144,7 +140,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column span="3":::
    
   Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. 
- By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+ By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-overview.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
   :::row-end:::
@@ -154,7 +150,7 @@ Use the following guidance and that provided for [fields used in common across w
 
    :::column-end:::
    :::column span="3":::
-   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.
+   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.
 
    You can specify work in hours or in days. There are no inherent time units associated with this field.
 
@@ -181,8 +177,8 @@ Use the following guidance and that provided for [fields used in common across w
   A subjective rating of the requirement as it relates to the business. Allowed values are:
 
   
-   - **1**: Product cannot ship without the item.
-   - **2**: (default) Product cannot ship without the item, but it doesn&#39;t have to be addressed immediately. 
+   - **1**: Product can't ship without the item.
+   - **2**: (default) Product can't ship without the item, but it doesn&#39;t have to be addressed immediately. 
    - **3**: Implementation of the item is optional based on resources, time, and risk.  
    
   
@@ -274,14 +270,15 @@ Use the following guidance and that provided for [fields used in common across w
 
    :::column-end:::
   :::row-end:::
+  ---
 
 [!INCLUDE [temp](../../includes/discussion-tip.md)] 
 
-## Track progress
+## Track work progress
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="media/agile-bug-form-state-reason.png" alt="Bug work item form, header area" /> 
+<img src="media/agile-bug-form-state-reason.png" alt="Screenshot of Bug work item form, header area." /> 
 
 ### CMMI workflow states 
 
@@ -290,7 +287,7 @@ These diagrams show the main progression and regression states for the Requireme
 > [!div class="mx-tdBreakAll"]  
 > |Requirement  |Bug |Task |  
 > |-------------|----------|---------| 
-> |<img src="media/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" /> |<img src="media/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" /> |<img src="media/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" /> |
+> |<img src="media/IC757081.png" title="Conceptual image of Requirement workflow states, CMMI process/" alt="Conceptual image of Requirement workflow states, CMMI process." /> |<img src="media/IC757084.png" title="Conceptual image of Bug workflow states, CMMI process." alt="Conceptual image of Bug workflow states, CMMI process." /> |<img src="media/IC757087.png" title="Conceptual image of Task workflow states, CMMI process." alt="Conceptual image of Task workflow states, CMMI process." /> |
 
 The typical workflow progression for a requirement is:  
 -   The product owner creates a requirement in the **Proposed** state with the default reason, **New requirement**.  
@@ -298,35 +295,34 @@ The typical workflow progression for a requirement is:
 -   The team updates the status to **Resolved** when code development is finished and system tests have passed.  
 -   Lastly, the team or product owner moves the requirement to **Closed** when the product owner agrees that it has been implemented according to the Acceptance Criteria and passed all validation tests.  
 
-### Update status with Kanban or taskboards
+### Update work status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-<img src="../../boards/media/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" />
+:::image type="content" source="../../boards/media/alm-cc-move-card.png" alt-text="Screenshot of web portal, track progress on the Kanban board.":::
 
-You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
+You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
 ## Map requirements to features
 
-When you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do this by [defining features](../../backlogs/define-features-epics.md) and [mapping requirements to features](../../backlogs/organize-backlog.md).
+When you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do view scope by [defining features](../../backlogs/define-features-epics.md) and [mapping requirements to features](../../backlogs/organize-backlog.md).
 
 Using portfolio backlogs, you can [drill down from one backlog to another](../../plans/portfolio-management.md) to view the level of detail you want. Also, you can use portfolio backlogs to view a rollup of work in progress across several teams when you [setup a hierarchy of teams](../../../organizations/settings/add-teams.md).
 
-The feature work item contains similar fields provided for requirements and includes additional fields, as the following table describes.
+The feature work item contains similar fields provided for requirements and includes other fields, as the following table describes.
 
 
 ## Define tasks
 
-
 When your team manages their work in sprints, they can use the [sprint backlog page](../../sprints/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
 
-<img src="media/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" />
+<img src="media/IC697755.png" alt="Screenshot of Web portal, Add task link on a sprint backlog page" />
 
 Name the task and estimate the work it will take.
 
-![CMMI Task work item form](media/cmmi-task-form.png)
+![Screenshot of CMMI Task work item form](media/cmmi-task-form.png)
 
-When teams estimate work they define tasks and estimate the hours or days to complete tasks. Teams forecast work and define tasks at the start of an iteration, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement requirements, and a tester can define tasks to write and run test cases. By linking tasks to requirements and bugs, they see the progress made on these items. For additional guidance, see [Iteration activities](cmmi/guidance-iteration-activities.md).
+When teams estimate work, they define tasks and estimate the hours or days to complete tasks. Teams forecast work and define tasks at the start of an iteration, and each team member does a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement requirements, and a tester can define tasks to write and run test cases. By linking tasks to requirements and bugs, they see the progress made on these items. For more information, see [Iteration activities](cmmi/guidance-iteration-activities.md).
 
 :::row:::
    :::column span="1":::
@@ -375,9 +371,9 @@ When teams estimate work they define tasks and estimate the hours or days to com
    - **User Experience**
 
    
-   This field is also used to calculate capacity by discipline. It is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file. (2)
+   This field is also used to calculate capacity by discipline. It's assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file. (2)
 
-   For additional guidance, see [Implement development tasks](cmmi/guidance-implement-development-tasks.md).
+   For more information, see [Implement development tasks](cmmi/guidance-implement-development-tasks.md).
 
    :::column-end:::
 :::row-end:::
@@ -387,7 +383,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 
    :::column-end:::
    :::column span="3":::
-   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.
+   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.
 
    :::column-end:::
 :::row-end:::
@@ -421,13 +417,13 @@ When teams estimate work they define tasks and estimate the hours or days to com
 
 From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
 
-![Select the test suite and add a test case](media/IC793453.png)  
+![Screenshot of Select the test suite and add a test case.](media/test-plan-new-item.png)  
 
-The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).  
+The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).  
 
-<img src="media/agile-test-case-form.png" alt="Web portal, Test case work item form" />
+<img src="media/agile-test-case-form.png" alt="Screenshot of Web portal, Test case work item form." />
 
-The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](../../../report/sql-reports/requirements-overview-report-cmmi.md) report.
+The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](/previous-versions/azure/devops/report/sql-reports/requirements-overview-report-cmmi) report.
 
 ### Track code defects
 
@@ -436,7 +432,7 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 ## Track change requests, risks, issues, and notes captured in review meetings
 
-In addition to the requirement, feature, task, and bug WITs, you can track information recommended by the CMMI process with the following WITS.
+Along with the requirement, feature, task, and bug WITs, you can track information recommended by the CMMI process with the following WITS.
 
 -  [Change request](cmmi/guidance-change-request-field-reference-cmmi.md) to [manage proposed changes](cmmi/guidance-manage-change.md) to any work product that is under change control.  
 -   [Issue](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) to track an event or situation that might block work or is blocking work on the product. [Issues differ from risks](cmmi/guidance-manage-issues-cmmi.md) in that teams identify issues spontaneously, generally during daily team meetings. 
@@ -445,9 +441,9 @@ In addition to the requirement, feature, task, and bug WITs, you can track infor
 <br/>
 You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards/dashboards.md), or from the **New** menu on the Queries page. 
 
-![Add work item from a New work item widget](media/cmmi-new-work-item-widget.png)  
+![Screenshot of Add work item from a New work item widget.](media/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json).  
 
 
 [!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
@@ -463,191 +459,7 @@ Work items you add from the widget are automatically scoped to your team's defau
 
 ### Backlog list order
 
-The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of requirements, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
+The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of requirements, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
 This field doesn't appear on the work item form. 
-
-::: moniker range="<= tfs-2015"
-
-### Links control, client work item form 
-
-Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
-
-:::row:::
-   :::column span="1":::
-   **Tab name**
-   :::column-end:::
-   :::column span="3":::
-   **Work item type**
-   :::column-end:::
-   :::column span="3":::
-   **Link restrictions**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-   **All Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Requirement
-
-   Bug
-
-   Change Request
-
-   Feedback Request
-
-   Issue
-
-   Review
-
-   Risk
-
-   Shared Steps
-
-   Task
-
-   Test Case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - No restrictions.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Implementation**
-
-   :::column-end:::
-   :::column span="3":::
-   Task
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links between requirements and tasks.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Code Review Request
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links to Code Review Response work items.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Requirements**
-
-   :::column-end:::
-   :::column span="3":::
-   Change Request
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Affects** link type to link change requests to requirements.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Stories**
-
-   :::column-end:::
-   :::column span="3":::
-   Feedback Response
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Related** links to requirements.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Storyboards**
-
-   :::column-end:::
-   :::column span="3":::
-   Requirement
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Storyboard** links.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Test Cases**
-
-   :::column-end:::
-   :::column span="3":::
-   Requirement
-
-   Bug
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tested By** links.
-
-   - Allows links only to test cases.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Tested Requirements**
-
-   :::column-end:::
-   :::column span="3":::
-   Test case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tests** links.
-
-   - Allows links only to requirements.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
+ 

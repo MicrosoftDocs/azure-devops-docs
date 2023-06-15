@@ -2,39 +2,35 @@
 title: Manual test progress status sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate an overall execution state or progress status of manual tests.
-ms.technology: devops-analytics
-ms.reviewer: ravishan
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
-author: KathrynEE
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 01/19/2023
 ---
 
 # Progress status sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+You can report on the execution state of one or more Test Plans in Power BI. The report you create using the information in this article is similar to the following image and the summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
-[!INCLUDE [temp](includes/preview-note.md)]
 
-The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
+:::image type="content" source="media/reports-test-plans/test-plan-progress-donut-reports.png" alt-text="Screenshot of Power BI Test Plan Progress Donut reports.":::
 
 This report displays two donut charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.  
 
 - **Executed vs Not executed** 
-	- **Executed**: The percentage of test plans defined which have run.  
-	- **NotExecuted**: The percentage of test plans defined which haven't run.    
+	- **Executed**: The sum and percentage of test cases that ran.  
+	- **NotExecuted**: The sum and percentage of test cases that didn't run.    
 - **Split by outcome** 
-	- **Blocked**:  Percentage of test cases that are currently blocked from running.  
-	- **Failed**: Percentage of test cases that failed.  
-	- **NotApplicable**: Percentage of test cases that didn't run.  
-	- **Passed**: Percentage of test cases that passed.  
+	- **Passed**: The sum and percentage of test cases that passed.  
+	- **Blocked**:  The sum and percentage of test cases that are currently blocked from running.  
+	- **Failed**: The sum and percentage of test cases that failed when run.  
+	- **NotApplicable**: The sum and percentage of test cases that didn't run.  
  
 
 ## Questions the report answers
@@ -44,9 +40,11 @@ The overall execution state report helps you track the team's progress with resp
 - *How much testing is complete?*
 - *What is the current status of tests passing, failing, or being blocked?*
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
@@ -56,9 +54,12 @@ For the report to generate useful data, the team must carry out the following ac
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
 
-
-
 ## Sample queries
+
+You can use the following queries of the `TestPoints` entity set to create different but similar test plan progress reports.
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
+
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -67,7 +68,7 @@ For the report to generate useful data, the team must carry out the following ac
 ```
 let 
     Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?" 
-        &"$apply=filter(( TestSuite/TestPlanTitle eq '{testPlanTitle}' ))" 
+        &"$apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')" 
         &"/aggregate(" 
             &"$count as TotalCount," 
             &"cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed," 
@@ -90,9 +91,7 @@ in
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
-$apply=filter( 
-    (TestSuite/TestPlanTitle eq '{testPlanTitle}')
-) 
+$apply=filter(TestSuite/TestPlanTitle eq '{testPlanTitle}')
 /aggregate( 
     $count as TotalCount,  
     cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,  
@@ -110,16 +109,18 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{testPlanTitle}` - Title of the test plan whose data you want to return.
 
 
 ### Query breakdown
 
 The following table describes each part of the query.
-
 
 :::row:::
    :::column span="1":::
@@ -129,6 +130,7 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
@@ -163,44 +165,42 @@ The following table describes each part of the query.
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-test.md)]
-
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
+[!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Create the report
+## Change column data type 
 
-Power BI shows you the fields you can report on. 
+From the Power Query Editor, select the `TotalCount` column and all other columns, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+## (Optional) Rename column fields
 
+You can rename column fields. For example, you can rename the column `NotApplicable` to `Not Applicable`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution - Fields](media/odatapowerbi-overallexecution-fields.png)
+[!INCLUDE [temp](includes/close-apply.md)]
 
-To create the report, do the following steps:
+## Create the Donut chart report
 
-1. To create donut chart of Executed v/s Not executed:
-    - Create a Power BI visualization **Donut chart**.
-    - Drag and drop **Executed** and **NotExecuted** in **Values**.
-2. To create donut chart of split by outcome
-    - Create a Power BI visualization **Donut chart**.
-    - Drag and drop outcome values like **Passed**, **Failed**, **Blocked**, **NotApplicable**, and so on, into **Values**.
+1. In Power BI, under **Visualizations**, choose the **Donut** report. 
 
-Your report should appear similar to the following image. 
+	:::image type="content" source="media/reports-test-plans/test-plan-progress-donut-report-visualizations.png" alt-text="Screenshot of visualization fields selections for test progress run report. ":::
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
+1. To create a donut chart of **Executed v/s Not executed**, add the following fields to **Values**, in the order indicated.  
+	- `Executed`  
+	- `NotExecuted`.   
 
-## Full list of Test Plans sample reports 
+1. To create donut chart split by outcome, add the following fields to **Values**, in the order indicated.  
+	- `Passed`  
+	- `Failed`   
+	- `Blocked`  
+	- `NotApplicable`  
+	- and so on.   
 
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+The following image shows the resulting report.  
 
+:::image type="content" source="media/reports-test-plans/test-plan-progress-donut-reports.png" alt-text="Screenshot of Power BI sample Test Plan Progress  report.":::
+ 
 ## Related articles
 
 - [Overview of sample reports using OData queries](./sample-odata-overview.md)
 - [Connect using Power BI and OData queries](./odataquery-connect.md)
-- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)
+- [Sample reports and quick reference index](../extend-analytics/quick-ref.md)

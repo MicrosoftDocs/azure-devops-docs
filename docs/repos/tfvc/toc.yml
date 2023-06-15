@@ -10,9 +10,13 @@
     href: share-your-code-in-tfvc-eclipse.md
   - name: Xcode
     href: share-your-code-in-tfvc-xcode.md
+  - name: Develop an app
+    href: develop-your-app-team-foundation-version-control.md
+  - name: Write new code 
+    href: day-life-alm-developer-write-new-code-user-story.md
   - name: Suspend work using My Work
     href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md
-  - name: Request a code review 
+  - name: Request a code review
     href: get-code-reviewed-vs.md
 - name: Develop in branches
   items:
@@ -24,7 +28,7 @@
     href: branch-folders-files.md
   - name: Additional branch strategies
     href: branch-strategically.md
-  - name: Manage feature isolation  
+  - name: Manage feature isolation
     href: effective-feature-isolation-on-tfvc.md
   - name: Merge folders and files
     href: merge-folders-files.md
@@ -38,7 +42,6 @@
   items:
   - name: Set up TFVC
     href: set-up-team-foundation-version-control-your-dev-machine.md
-    items:
   - name: Create and work with workspaces
     href: create-work-workspaces.md
   - name: Optimize your workspace
@@ -47,6 +50,14 @@
     href: decide-between-using-local-server-workspace.md
   - name: Add check-in policies
     href: add-check-policies.md
+  - name: Edit check-in policies
+    href: edit-check-policies.md
+  - name: Enable or disable check-in policies
+    href: enable-disable-check-policies.md
+  - name: Remove check-in policies
+    href: remove-check-policies.md
+  - name: Configure check-in notes
+    href: configure-check-notes.md
   - name: Test impact for partially mapped repositories
     href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: Work with files
@@ -81,12 +92,16 @@
     href: resolve-team-foundation-version-control-conflicts.md
   - name: Lock files & folders
     items:
+    - name: Work with version control locks
+      href: work-version-control-locks.md
     - name: Understand lock types
       href: understand-lock-types.md
     - name: Lock & unlock folders or files
       href: lock-unlock-folders-files.md
 - name: Manage versions
   items:
+  - name: View and manage past versions
+    href: view-manage-past-versions.md
   - name: Get the history of an item
     href: get-history-item.md
   - name: View changes using annotate
@@ -101,73 +116,53 @@
     href: suspend-your-work-manage-your-shelvesets.md
 - name: Manage TFVC
   items:
-  - name: "Default TFVC permissions (Security)"
-    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Default TFVC permissions (Security)
+    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json
   - name: Set TFVC permissions (Security)
     href: set-tfvc-repository-permissions.md
+  - name: Control access to TFVC
+    href: control-access-team-foundation-version-control.md
+  - name: Remove access to TFVC
+    href: remove-access-version-control-files.md
   - name: Configure check-out settings
     href: configure-check-out-settings.md
   - name: Manage file types
     href: /azure/devops/server/admin/manage-file-types
   - name: Set and enforce quality gates
     href: set-enforce-quality-gates.md
-  - name: Control access to TFVC 
-    href: control-access-team-foundation-version-control.md
-  - name: Remove access to TFVC
-    href: remove-access-version-control-files.md
+  - name: Use Source Control Explorer to manage files
+    href: use-source-control-explorer-manage-files-under-version-control.md
   - name: Undo changes in another user's workspace
     href: undo-changes-another-user-workspace.md
   - name: Clean up files when users leave
     href: clean-up-files-when-users-leave.md
   - name: Destroy version controlled files
-    href: configure-check-out-settings.md 
+    href: destroy-version-controlled-files.md
   - name: Migrate from Visual SourceSafe
     href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
   - name: Download permissions report
-    href: ../../organizations/security/download-permissions-report.md
     displayName: json
+    href: ../../organizations/security/download-permissions-report.md
 - name: TFVC command reference
   items:
   - name: Use Team Foundation version control commands
     href: use-team-foundation-version-control-commands.md
-  - name: Git commands
-    items:
-    - name: Git permission
-      href: git-permission-command.md
-    - name: Git view
-      href: git-view-command.md
   - name: Add
     href: add-command.md
-  - name: Checkin
-    href: checkin-command.md
-  - name: Checkout (or Edit)
-    href: checkout-or-edit-command.md
-  - name: Get
-    href: get-command.md
-  - name: History
-    href: history-command.md
-  - name: Status
-    href: status-command.md
-  - name: Undo
-    href: undo-command.md
-  - name: Delete
-    href: delete-command-team-foundation-version-control.md
-  - name: Properties
-    href: properties-or-info-command.md
-  - name: Rename
-    href: rename-command-team-foundation-version-control.md
-  - name: Shelve
-    href: shelve-command.md
-  - name: Unshelve
-    href: unshelve-command.md
   - name: Branch
     href: branch-command.md
   - name: Branches
     href: branches-command.md
   - name: Changeset
     href: changeset-command.md
+  - name: Checkin
+    href: checkin-command.md
+  - name: Checkout (or Edit)
+    href: checkout-or-edit-command.md
   - name: Configure
     href: configure-command.md
+  - name: Delete
+    href: delete-command-team-foundation-version-control.md
   - name: Destroy
     href: destroy-command-team-foundation-version-control.md
   - name: Difference
@@ -176,8 +171,14 @@
     href: dir-command.md
   - name: Folderdiff
     href: folderdiff-command.md
+  - name: Get
+    href: get-command.md
   - name: Help
     href: help-command-team-foundation-version-control.md
+  - name: History
+    href: history-command.md
+  - name: Info or Properties
+    href: properties-or-info-command.md
   - name: Label
     href: label-command-team-foundation-version-control.md
   - name: Labels
@@ -198,16 +199,26 @@
     href: proxy-command.md
   - name: Reconcile
     href: reconcile-command.md
+  - name: Rename
+    href: rename-command-team-foundation-version-control.md
   - name: Resolve
     href: resolve-command.md
   - name: Rollback
     href: rollback-command-team-foundation-version-control.md
+  - name: Shelve
+    href: shelve-command.md
   - name: Shelvesets
     href: shelvesets-command.md
+  - name: Status
+    href: status-command.md
   - name: Undelete
     href: undelete-command.md
+  - name: Undo
+    href: undo-command.md
   - name: Unlabel
     href: unlabel-command.md
+  - name: Unshelve
+    href: unshelve-command.md
   - name: View
     href: view-command.md
   - name: Workfold
@@ -216,3 +227,9 @@
     href: workspace-command.md
   - name: Workspaces
     href: workspaces-command.md
+  - name: Git commands
+    items:
+    - name: Git permission
+      href: git-permission-command.md
+    - name: Git view
+      href: git-view-command.md

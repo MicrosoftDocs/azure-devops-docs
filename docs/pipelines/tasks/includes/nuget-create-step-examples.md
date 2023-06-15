@@ -3,8 +3,7 @@ ms.topic: include
 ms.date: 08/10/2016
 author: steved0x
 ms.author: sdanie
-ms.prod: devops
-ms.technology: vs-devops-package
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 You want to package and publish some projects in a C# class library to your Azure Artifacts feed.

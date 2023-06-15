@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use Azure Key Vault secrets in your Pipeline
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Azure Key Vault, you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources.
 
@@ -53,25 +53,25 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
     - Set default subscription:
     
-    ```Command
+    ```azurecli
     az account set --subscription <your_subscription_name_or_subscription_ID>
     ```
 
     - Set default region:
     
-    ```Command
+    ```azurecli
     az config set defaults.location=<your_region>
     ```
 
 1. Create a new resource group to host your Azure Key Vault. A resource group is a container that holds related resources for an Azure solution.
 
-    ```Command
+    ```azurecli
     az group create --name <your-resource-group>
     ```
    
 1. Create a new Azure Key Vault.
 
-    ```Command
+    ```azurecli
     az keyvault create \
       --name <your-key-vault-name> \
       --resource-group <your-resource-group>
@@ -80,29 +80,29 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
 ## Configure Key Vault access permissions
 
-Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Follow the steps in the following how-to to [Create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) and then continue with the next steps.
+Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Complete the steps in [Create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal), and then continue with the next steps.
 
 1. Navigate to [Azure portal](https://portal.azure.com/).
 
-1. Select the key vault you created in the previous step.
+2. Select the key vault you created in the previous step.
 
-1. Select **Access policies**.
+3. Select **Access policies**.
 
     :::image type="content" source="media/access-policies.png" alt-text="configure access policies":::
 
-1. Select **Add Access Policy** to add a new policy.
+4. Select **Add Access Policy** to add a new policy.
 
-1. Add a **Get** and **List** to **Secret permissions**.
+5. Add a **Get** and **List** to **Secret permissions**.
 
     :::image type="content" source="media/get-list-permissions.png" alt-text="Add get and list permissions":::
 
-1. Under **Select principal**, select to add a service principal and choose the one you created earlier.
+6. Under **Select principal**, select to add a service principal and choose the one you created earlier.
 
-1. Select **Save** when you are done.
+7. Select **Save** when you are done.
 
 ## Query and use secrets in your pipeline
 
-Using the [Azure Key Vault task](../tasks/deploy/azure-key-vault.md) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be explicitly mapped to env variable as shown in the example below.
+Using the [Azure Key Vault task](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be explicitly mapped to env variable as shown in the example below.
 
 ```YAML
 pool:

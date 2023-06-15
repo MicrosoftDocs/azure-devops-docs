@@ -7,14 +7,14 @@ metadata:
   ms.technology: devops-collab
   ms.author: chcomley
   author: chcomley
-  ms.topic: troubleshooting
-  monikerRange: '>= tfs-2017'
+  ms.topic: faq
+  monikerRange: '<= azure-devops'
   ms.date: 04/14/2021
 
 title: Search FAQs 
 
 summary: | 
-  **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
   Learn the answers to frequently asked questions (FAQs) about the search function for Azure DevOps. 
 
@@ -67,7 +67,7 @@ sections:
     
     - question: How do I search internal NuGet packages published company-wide?
       answer: |
-        1. Go to [Discover in Azure DevOps(https://aka.ms/discover).
+        1. Go to [Discover in Azure DevOps](https://aka.ms/discover).
         2. Enter your query and search.
         3. Choose the **Packages** pivot. 
         You can also navigate from your organization's landing page. 

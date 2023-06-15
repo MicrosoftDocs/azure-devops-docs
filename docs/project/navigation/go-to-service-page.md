@@ -2,20 +2,19 @@
 title: Navigate to an application or functional area
 titleSuffix: Azure DevOps 
 description: Access the application area or change your view
-ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
-monikerRange: '>= tfs-2017'
-ms.date: 02/08/2019
+ms.custom: "navigation, cross-project, cross-service"
+ms.subservice: azure-devops-projects 
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 
 # Open a service, page, or settings 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 The web portal for Azure DevOps provides support for software development teams to collaborate through the planning, development, and release cycles. You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 
@@ -27,7 +26,7 @@ If you don't have a project yet, [create one](../../user-guide/sign-up-invite-te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 This article shows you how to navigate to functional and administrative tasks available from the web portal. There are four levels of administrative tasks: team, project, collection, and server.  
 
@@ -57,7 +56,7 @@ Within the page you may select a specific view or artifact, such as a team backl
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You open a service by choosing it from the horizontal blue bar. Then, select from the available pages.
 
@@ -96,7 +95,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
 
@@ -131,7 +130,7 @@ Administrators configure resources for a project and manage project-level permis
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From a user context, open **Project settings** by choosing the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. 
 ::: moniker-end
@@ -147,28 +146,6 @@ Open any admin page by choosing it's name. Choose or hover over the :::image typ
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-<a id="admin-intro-tfs-2017-1" />
-
-Open any admin page by choosing it's name. Choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
-
-**TFS 2017.2**
-
-![TFS 2017.2, Project Settings](media/go-to-app/work-web-portal_admin-context-project-level-team-services.png)  
-
-**TFS 2017.1**  
-
-![TFS 2017.1,Project Settings](media/go-to-app/work-web-portal_admin-context-project-level-tfs-2017-1.png)  
- 
-<a id="admin-intro-tfs-2017" /> 
-
-**TFS 2017**
-
-![TFS 2017, Project Settings](media/go-to-app/web-portal-admin-project-settings-new-nav.png)
-
-::: moniker-end
-
 
 <a id="collection-admin-context" /> 
 
@@ -181,7 +158,7 @@ Organization owners and members of the Project Collection Administrators group c
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Open Collection settings 
 
@@ -204,7 +181,7 @@ Members of the Project Collection Administrators group configure resources for a
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Organization settings** or **Collection settings**.
 
@@ -219,7 +196,7 @@ Members of the Project Collection Administrators group configure resources for a
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Open Server settings 
 

@@ -74,7 +74,7 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
 
 1. Create a table from grid
 
-    You no longer have to remember the markdown table syntax. Now you can create a markdown table easily by selecting from a 15 X 15 grid. Just select the required number of columns and rows to insert a table with a single click.
+    You no longer have to remember the Markdown table syntax. Now you can create a Markdown table easily by selecting from a 15 X 15 grid. Just select the required number of columns and rows to insert a table with a single click.
 
     > [!div class="mx-imgBorder"]
     > ![Create a table from grid.](../../media/152_03.png)
@@ -93,9 +93,9 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
 
 3. Autoformating markdown tables
 
-    You no longer have to add spaces to align your markdown columns. With the **Format tables** button, your markdown tables are automatically formatted by adding spaces to the cells to align the columns. If you have large tables, use it with **disable word wrap** to make the tables easier to read.​
+    You no longer have to add spaces to align your Markdown columns. With the **Format tables** button, your markdown tables are automatically formatted by adding spaces to the cells to align the columns. If you have large tables, use it with **disable word wrap** to make the tables easier to read.​
 
     > [!div class="mx-imgBorder"]
-    > ![Autoformating markdown tables.](../../media/152_05.png "Wiki page")
+    > ![Autoformating Markdown tables.](../../media/152_05.png "Wiki page")
 
     You can also use the **Ctrl + Shift + F** shortcut to format your tables.

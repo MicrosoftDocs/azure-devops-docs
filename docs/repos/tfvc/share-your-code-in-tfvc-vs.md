@@ -1,173 +1,144 @@
 ---
-title: Develop and share code in TFVC using Visual Studio
+title: Develop and share code in TFVC with Visual Studio
 titleSuffix: Azure Repos
-description: Share code in Team Foundation Version Control using Visual Studio
+description: See how to share code in Team Foundation Version Control (TFVC) centralized version control by using Visual Studio.
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/01/2022
+ms.custom: kr2b-contr-experiment
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
+# Develop and share code in TFVC with Visual Studio
 
-# Develop and share your code in TFVC using Visual Studio
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+Whether your software project is large, small, or brand new, it's best to use version control as early as possible. This article shows you how to get started with Team Foundation Version Control (TFVC), a centralized version control system.
 
-Whether your software project is large, small, or brand new, 
-in most cases you'll be better off if you use version control 
-as early as possible. 
-Here, we'll show you how to get started with 
-Team Foundation Version Control (TFVC), a centralized system.
-If you want to work in a distributed system, 
-you can instead use [Git with Azure Repos](../../repos/git/share-your-code-in-git-vs.md).
+- If you want to work in a distributed version control system, you can instead use [Git with Azure Repos](../../repos/git/share-your-code-in-git-vs.md).
 
-Is your code in another place? [Learn how to migrate it here](#migrate).
+- If you have code you want to migrate into Azure DevOps Services, see [Migration options](../../migrate/migrate-from-tfs.md).
 
-[!INCLUDE [open-team-project-in-vs](includes/open-team-project-in-vs.md)]
+## Prerequisites
+
+- [Sign up for Azure DevOps and create a project](../../organizations/accounts/create-organization.md).
+
+- Install [Visual Studio](https://visualstudio.microsoft.com/downloads).
+
+## Connect to your project
+
+1. In Visual Studio, from the **Home** page of **Team Explorer**, select the **Manage Connections** icon.
+
+1. On the **Connect** page of **Team Explorer**, right-click the project that contains your repository, and select **Connect**.
+
+   ![Screenshot that shows selecting Connect to connect a project.](media/share-your-code-in-tfvc-vs/connect.png)
+
+   If the project you want isn't listed, select **Manage Connections**, select **Connect to a Project**, and then select the project you want. For more information, see [Connect from Visual Studio or Team Explorer](../../organizations/projects/connect-to-projects.md#connect-from-visual-studio-or-team-explorer).
+
+> [!NOTE]
+> Some TFVC menu options aren't displayed in Visual Studio until you connect to TFVC.
 
 <a name="workspace"></a>
 ## Configure your workspace
 
-1. In Visual Studio, configure your workspace.
+1. On the **Home** page of Visual Studio **Team Explorer**, select **Configure your workspace** to map the project to a folder on your dev machine.
 
-   ![On Team Explorer home page, click Configure Workspace](media/share-your-code-in-tfvc-vs/ConfigureWorkspace.png)
+1. Confirm your workspace path, and select **Map & Get** to map the workspace and get your code.
 
-   [I don't see the Configure Workspace link. What do I do next?](#workspace_exists)
+   ![Screenshot that shows mapping the workspace to get code.](media/share-your-code-in-tfvc-vs/MapAndGet.png)
 
-2. Confirm your workspace path, map your workspace, and get the source.
+   Now you can check in source, queue builds, and manage work.
 
-   ![On Team Explorer home page, click Map and get](media/share-your-code-in-tfvc-vs/MapAndGet.png)
+   ![Screenshot shows a success message that verifies that Visual Studio is now connected to your project.](media/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
 
-3. Now you can check in source, queue builds, and manage work.
+If you don't see the **Configure your workspace** link, you might already have a workspace on your computer. To see existing workspaces, open **Source Control Explorer**, or look under **Solutions** in **Team Explorer**. For more information, see [Use Source Control Explorer to manage files in TFVC](./use-source-control-explorer-manage-files-under-version-control.md) and [Create and work with workspaces](./create-work-workspaces.md).
 
-   ![Visual Studio is now connected to your project](media/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
+![Screenshot that shows Team Explorer, where you can select Source Control Explorer or Manage Workspaces.](media/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 
 > [!NOTE]
-> TFVC is not supported when workspaces are placed on network drives or UNC paths.
+> TFVC doesn't support workspaces on network drives or UNC paths.
 
-## Create a new app
+## Add your code to version control
 
-If you already have an app that you want to add to version control,
-skip down to [Add an existing app](#app_add).
+1. To create a new code project to put under TFVC source control, select **New** under **Solutions** in the **Home** page of **Team Explorer**. Put the new solution in your mapped workspace folder, such as *c:\Users\\\<YourName>\\Source\\Workspaces\\YourTeamProject\\*.
 
-![New solution from team explorer](media/share-your-code-in-tfvc-vs/team-explorer-new-solution.png)
+   ![Screenshot that shows the Team Explorer Home page with New highlighted under Solutions.](media/share-your-code-in-tfvc-vs/team-explorer-new-solution.png)
 
-Now that you've added your app, you can skip down to 
-[snapshot your code](#snapshot).
+   Or, if you already have an app in progress that you want to put under TFVC source control, move the solution into your workspace folder in Windows File Explorer.
 
-<a name="app_add"></a>
-## Add an existing app
+   ![Screenshot shows moving your source code to your workspace folder.](media/share-your-code-in-tfvc-vs/IC689415.png)
 
-### Move and open the solution
+1. Open your solution in Visual Studio.
 
-1. Close the solution.
+   ![Screenshot shows Team Explorer Home page, where you can open your solution in Visual Studio.](media/share-your-code-in-tfvc-vs/open-solution-from-team-explorer-home.png)
+   
+1. Press Ctrl+Alt+L to open **Solution Explorer**, and in **Solution Explorer**, right-click the solution and select **Add Solution to Source Control**.
 
-2. Open the workspace folder that you created when you [configured your workspace](#workspace).
+   ![Screenshot of adding your solution to source control.](media/share-your-code-in-tfvc-vs/IC682953.png)
 
-   ![Open the workspace folder from source control explorer](media/share-your-code-in-tfvc-vs/open-workspace-folder-from-source-control-explorer.png)
+1. In the **Add Solution to Source Control** dialog box, review the details, and then select **OK**.
 
-3. Move the code you want to upload to the workspace folder.
+## Check in the solution
 
-   ![Move your source code to your workspace folder](media/share-your-code-in-tfvc-vs/IC689415.png)
+1. When you're ready to [check in your code](check-your-work-team-codebase.md), right-click your solution in **Solution Explorer** and select **Check In**.
 
-4. Open your solution in Visual Studio.
+   ![Screenshot that shows a context menu with Check In selected.](media/share-your-code-in-tfvc-vs/IC682954.png)
 
-   ![Open your solution in Visual Studio](media/share-your-code-in-tfvc-vs/open-solution-from-team-explorer-home.png)
+1. On the **Pending Changes** page of **Team Explorer**, add a check-in comment and then select **Check in**.
 
+   ![Screenshot that shows a Pending Changes pane with a comment and a Check In button.](media/share-your-code-in-tfvc-vs/IC685248.png)
 
-### Add the solution to Azure Repos
+1. From the **Home** page of **Team Explorer**, select **Source Control Explorer**.
 
-1. Open the solution explorer (Keyboard: Ctrl + Alt + L).
+   ![Screenshot that shows the Team Explorer Home page with Source Control Explorer selected.](media/share-your-code-in-tfvc-vs/IC682140.png)
 
-2. Add your solution to version control.
+   In **Source Control Explorer**, you can see the solution in TFVC.
 
-   ![Add the solution to Azure Repos](media/share-your-code-in-tfvc-vs/IC682953.png)
+   ![Screenshot that shows the solution in Source Control Explorer.](media/share-your-code-in-tfvc-vs/IC689416.png)
 
-3. Check in the solution.
+Your whole team can work on the code now. All changes are tracked in version control.
 
-   ![Check in your solution](media/share-your-code-in-tfvc-vs/IC682954.png)
+## Check in changes
 
-4. Add a comment and check in.
+1. When you edit code in Visual Studio that's under TFVC source control, the changed file is automatically checked out. For example, *site.css* is checked out after the `font-size` has been changed to `16px`.
 
-   ![Add a comment and check in pending changes](media/share-your-code-in-tfvc-vs/IC685248.png)
+   ![Screenshot that shows Solutions Explorer with the file site.css checked out.](media/share-your-code-in-tfvc-vs/IC682155.png)
 
-5. Open the source control explorer.
+1. To compare the modified file with the latest version in source control, right-click the file in **Solution Explorer** and select **Compare**.
 
-   ![Open the source control explorer](media/share-your-code-in-tfvc-vs/IC682140.png)
+   ![Screenshot that shows the Compare option in the Solution Explorer context menu.](media/share-your-code-in-tfvc-vs/IC682955.png)
 
-   Your solution is now in TFS.
+   The **Diff** window opens, and you can see the difference between the two versions.
 
-   ![Your solution in the source control explorer](media/share-your-code-in-tfvc-vs/IC689416.png)
+   ![Screenshot that shows the compare window, with two versions of the file side by side.](media/share-your-code-in-tfvc-vs/IC682157.png)
 
-Your whole team can work on the code now. All your changes are tracked in version control.
+1. In **Solution Explorer**, right-click the file and select **Check In** to check in the change.
 
-<a name="snapshot"></a>
-## Snapshot (check in) your code
+   ![Screenshot that shows the Check In option in the Solution Explorer context menu.](media/share-your-code-in-tfvc-vs/IC682956.png)
 
-1. When you edit code in Visual Studio, the changed file is automatically checked out. For example, Site.css is checked out after the border color has been changed to #ddd.
+   You can also check in from the code editor or from **Team Explorer**.
 
-   ![Checked out file in the team explorer](media/share-your-code-in-tfvc-vs/IC682155.png)
+1. If you're working on a task or fixing a bug that's tracked as a work item, you can associate that work item with your pending changes. TFVC resolves the bug, closes the task, or links the changeset to the work item.
 
-2. Compare the modified file with the latest version in source control.
+   ![Screenshot shows Related Work Items in pending changes.](media/share-your-code-in-tfvc-vs/IC682159.png)
 
-   ![Compare in the solution explorer's context menu](media/share-your-code-in-tfvc-vs/IC682955.png)
+1. Add a comment and check in.
 
-   You can see the difference between the two versions.
+   ![Screenshot that shows where you can add a comment and check in the files.](media/share-your-code-in-tfvc-vs/IC685249.png)
 
-   ![Compare window](media/share-your-code-in-tfvc-vs/IC682157.png)
+1. In **Source Control Explorer**, right-click the file you changed and select **View History** to view its history.
 
-3. Check in the changes.
+   ![Screenshot that shows View History in the source file context menu.](media/share-your-code-in-tfvc-vs/IC682957.png)
 
-   ![Check in from the context menu in the solution explorer](media/share-your-code-in-tfvc-vs/IC682956.png)
+   The **History** window lists all the changesets that include this file.
 
-   You can also check in from the code window, or the team explorer.
-
-4. If you're working on a task or fixing a bug that's tracked as a work item, add that work item to your pending changes. Source control will resolve the bug or close the task, and it'll link the changeset to the work item.
-
-   ![Related work items in pending changes](media/share-your-code-in-tfvc-vs/IC682159.png)
-
-5. Add a comment and check in.
-
-   ![Source control explorer, source file context menu, check in](media/share-your-code-in-tfvc-vs/IC685249.png)
-
-6. Open the source control explorer.
-
-   ![Source control explorer in the team explorer home page](media/share-your-code-in-tfvc-vs/IC682161.png)
-
-7. View the history of the file you changed.
-
-   ![Source control explorer, source file context menu, view history](media/share-your-code-in-tfvc-vs/IC682957.png)
-
-   All the changesets that include this file are listed.
-
-   ![History window](media/share-your-code-in-tfvc-vs/IC682163.png)
-
-## Troubleshooting
-
-* [My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-azure-devops-services)
-* [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
-
-<a name="migrate"></a>
-### My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?
-
-Yes:
-
- * [Upgrade From Visual SourceSafe](/previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)).
- * [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
-
-<a name="workspace_exists"></a>
-### I don't see the Configure Workspace link shown in the steps above. What do I do next?
-
-You might already have a workspace on your computer. To see your workspace, open Source 
-Control Explorer. Or change your workspace. Find out how to [manage files under 
-source control](./use-source-control-explorer-manage-files-under-version-control.md?viewFallbackFrom=vsts) or 
-[manage workspaces](./create-work-workspaces.md?viewFallbackFrom=vsts).
-
-![In Team Explorer, click Source Control Explorer or Manage Workspaces](media/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
+   ![Screenshot that shows the History window with changesets.](media/share-your-code-in-tfvc-vs/IC682163.png)
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Get your code reviewed](get-code-reviewed-vs.md)
+- [Get your code reviewed](get-code-reviewed-vs.md)
+- [Migrate from Azure DevOps Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md)

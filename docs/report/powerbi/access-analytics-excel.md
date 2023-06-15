@@ -2,18 +2,18 @@
 title: Access Analytics data through Excel
 titleSuffix: Azure DevOps
 description: Learn how to access Analytics OData from Excel for Azure DevOps. 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: ">= azure-devops-2019" 
 ms.date: 10/01/2021
 ---
 
 # Access data through Excel 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can access data through Excel, generate reports, and then publish the charts to Power BI or use the Excel file
 as a basis for Power BI reports. At this time, you'll need to have alternate credentials enabled to access data

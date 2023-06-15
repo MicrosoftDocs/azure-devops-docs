@@ -1,0 +1,691 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/release-notes/2012/aug-06-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/aug-06-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/aug-13-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/aug-13-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/aug-27-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/aug-27-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/dec-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/dec-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/nov-19-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/nov-19-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/oct-08-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/oct-08-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/oct-29-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/oct-29-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/oct-31-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/oct-31-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2012/sep-17-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2012/sep-17-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/apr-25-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/apr-25-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/aug-19-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/aug-19-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/dec-11-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/dec-11-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/feb-11-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/feb-11-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jan-07-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jan-07-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jan-09-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jan-09-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jan-21-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jan-21-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jan-30-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jan-30-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jul-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jul-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jul-29-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jul-29-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jun-03-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jun-03-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jun-19-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jun-19-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/jun-26-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/jun-26-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/mar-04-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/mar-04-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/mar-22-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/mar-22-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/may-13-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/may-13-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/may-28-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/may-28-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/nov-08-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/nov-08-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/nov-13-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/nov-13-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/oct-17-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/oct-17-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/oct-21-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/oct-21-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/sep-09-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/sep-09-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2013/sep-30-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2013/sep-30-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/apr-03-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/apr-03-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/aug-18-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/aug-18-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/aug-27-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/aug-27-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/dec-02-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/dec-02-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/dec-17-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/dec-17-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/feb-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/feb-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/feb-28-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/feb-28-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/jan-22-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/jan-22-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/jul-01-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/jul-01-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/jul-21-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/jul-21-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/jun-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/jun-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/mar-18-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/mar-18-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/may-12-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/may-12-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/may-20-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/may-20-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/nov-04-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/nov-04-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/oct-14-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/oct-14-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/oct-28-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/oct-28-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/sep-04-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/sep-04-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2014/sep-23-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2014/sep-23-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/apr-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/apr-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/apr-22-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/apr-22-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/apr-24-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/apr-24-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/apr-27-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/apr-27-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/aug-07-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/aug-07-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/aug-26-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/aug-26-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/dec-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/dec-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/feb-18-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/feb-18-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/jan-27-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/jan-27-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/jul-07-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/jul-07-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/jul-17-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/jul-17-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/jun-03-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/jun-03-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/mar-10-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/mar-10-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/mar-27-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/mar-27-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/may-11-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/may-11-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/may-15-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/may-15-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/nov-18-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/nov-18-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/nov-24-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/nov-24-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/oct-08-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/oct-08-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/oct-30-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/oct-30-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2015/sep-18-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2015/sep-18-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/apr-13-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/apr-13-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/aug-17-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/aug-17-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/feb-16-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/feb-16-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/jan-25-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/jan-25-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/jul-07-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/jul-07-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/jul-29-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/jul-29-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/jun-01-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/jun-01-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/jun-17-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/jun-17-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/mar-03-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/mar-03-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/mar-24-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/mar-24-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/may-06-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/may-06-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/nov-02-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/nov-02-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/nov-16-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/nov-16-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/nov-23-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/nov-23-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/oct-12-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/oct-12-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/sep-02-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/sep-02-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2016/sep-21-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2016/sep-21-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/apr-19-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/apr-19-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/aug-04-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/aug-04-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/aug-28-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/aug-28-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/dec-11-vsts.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/dec-11-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/feb-15-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/feb-15-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/jan-05-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/jan-05-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/jan-25-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/jan-25-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/jul-14-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/jul-14-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/jun-01-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/jun-01-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/jun-22-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/jun-22-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/mar-08-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/mar-08-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/mar-29-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/mar-29-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/may-11-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/may-11-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/nov-28-vsts.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/nov-28-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/oct-06-vsts.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/oct-06-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/oct-30-vsts.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/oct-30-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/2017/sep-15-team-services.md",
+      "redirect_url": "/previous-versions/azure/devops/release-notes/2017/sep-15-team-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/index.md",
+      "redirect_url": "/azure/devops/release-notes/features-timeline"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2023-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },  
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },  
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },  
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }, 
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-06.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-05.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-03.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-06.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-05.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-03.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-06.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-05.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-03.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    }
+  ]
+}
+

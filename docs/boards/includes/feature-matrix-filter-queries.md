@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 03/05/2021
 ---
@@ -86,7 +86,7 @@ The following table summarizes the query filter functions supported by each Azur
        Find work items based on a field match with a previous value. 
        Supported operator: `Was Ever`
        Find work items based on a value defined on a specific date. 
-       Supported operator: `ASOF` ([WIQL syntax](../queries/wiql-syntax.md#historical-queries-asof))
+       Supported operator: `ASOF` ([WIQL syntax](../queries/wiql-syntax.md#asof-historical-queries))
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -113,7 +113,7 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items in one or more projects in an organization or collection. Default is the current project. Use the **Team Project** field to query on two or more projects.
    :::column-end:::
    :::column span="1":::
-      TFS 2015-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
@@ -152,7 +152,7 @@ The following table summarizes the query filter functions supported by each Azur
       **Supported operators**: `Is Empty, Is Not Empty`
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -164,19 +164,19 @@ The following table summarizes the query filter functions supported by each Azur
       Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
    :::column-end:::
    :::column span="1":::
-      TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      [Boolean searches](../queries/query-by-workflow-changes.md#kanban-board-change-queries) 
+      [Boolean searches](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
    :::column-end:::
    :::column span="1":::
       Find work items based on boolean field value. 
    :::column-end:::
    :::column span="1":::
-      TFS 2017-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
@@ -188,19 +188,19 @@ The following table summarizes the query filter functions supported by each Azur
       Find work items based on key words or phrases added through the Discussion. 
    :::column-end:::
    :::column span="1":::
-      TFS 2017.2-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      [Query on Kanban board fields](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
+      [Query on Kanban board fields](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board)
    :::column-end:::
    :::column span="1":::
       Find work items based on their Kanban column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -212,7 +212,7 @@ The following table summarizes the query filter functions supported by each Azur
       Filter query results based on a key word or select fields. 
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      Azure DevOps 2019 through Azure DevOps Server 2022, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---

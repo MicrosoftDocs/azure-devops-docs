@@ -3,27 +3,32 @@ title: Rename a Git repo in your project
 titleSuffix: Azure Repos
 description: You can rename a Git repository in a few steps. Your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 10/15/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.date: 02/23/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 
 #  Rename a Git repository in your project
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4sVSK]
 
 ## Prerequisites
 
 - To rename a repository, you must have [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
+::: moniker range=">= azure-devops-2020"
+- If you want to use **az repos update** command to rename a repository, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+::: moniker-end
 
 ## Rename the repository
+
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -45,7 +50,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. 1. From the web portal, open the project administration page for your project and select **Version Control**.
 
@@ -66,20 +71,20 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
 
-1. Open a project (on-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_project}``` or Azure DevOps Services ```https://dev.azure.com/{your_account}/{your_project}```) in your web browser.
+<a name="repos-rename" />
 
-2. Go to the control panel.
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-   ![Administer account](media/control-panel-launch-icon.png)
+::: moniker range="azure-devops" 
+[!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
 
-
-1. Rename the repo from the Version Control tab.
-
-   ![Rename a repository](media/repo-rename/AdminVC.png)
 
 ::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+***
 
 ## Update the Git remotes on your dev machines
 
@@ -103,7 +108,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 - Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
@@ -111,16 +116,24 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
 
-- Copy the repository URL to your clipboard.
+### Update your remote in Visual Studio
 
-	![Remote URL for the repository](media/share-your-code-in-git-xcode/newrepocopycloneurl.png)
+To update your remote:
 
-::: moniker-end
+1. In the **Git** menu from the menu bar, select **Manage Remotes**.
 
+1. In the **Options** dialog, select the remote to edit, then select **Edit**.
 
-### Update your remote in Visual Studio 
+   :::image type="content" source="media/repo-rename/options-rename-remote.png" border="true" alt-text="Screenshot shows the Options dialog with the option to edit remotes." :::
+
+1. Replace the fetch and push remote references with the URL that you [copied from the remote repo](#copy_remote_repo_url).
+
+1. Select **Save** and then **OK** to close the **Options** dialog.
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+
+To update your remote from Visual Studio Team Explorer:
 
 1. Connect to the repo.
 
@@ -138,26 +151,6 @@ Each member of your team must update their local Git repos to continue connectin
 
    ![Edit remote](media/repo-rename/EditRepoSettings.png)
 
-### Update your remote in older versions of Visual Studio from the command prompt
-
-If you use an older version of Visual Studio or work with Git from the command prompt:
-
-1. Open the Git command prompt.
-
-2. Go to the local repository and update the remote to the URL you [copied from the remote repo](#copy_remote_repo_url).
-
-    ```git remote set-url origin {URL_you_copied_from_the_remote_repo}```
-
-### Refresh Team Explorer
-
-1. Refresh Team Explorer.
-
-   ![Refresh Team Explorer](media/repo-rename/RefreshTeamExplorer.png)
-
-2. Team Explorer now shows the updated repo name. 
-
-   ![Team Explorer Updated](media/repo-rename/Result.png)
-
 ## Q&A
 
 <!-- BEGINSECTION class="m-qanda" -->
@@ -166,13 +159,9 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 A: Yes
 
-#### Q: What if I named my remote something other than the default origin?
-
-A: If you're using:
-
- * Visual Studio 2015, then edit the remote with the name you used. 
-
- * An older version of Visual Studio or the command prompt, then run this command: ```git remote set-url  {remote_name} {URL_you_copied_from_the_remote_repo}```
-
-
 <!-- ENDSECTION -->
+
+
+## Related articles
+
+- [Set Git repository settings and policies](repository-settings.md)

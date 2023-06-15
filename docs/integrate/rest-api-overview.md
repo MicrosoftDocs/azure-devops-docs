@@ -2,7 +2,7 @@
 title: REST APIs for Azure DevOps
 description: Find reference material and overviews of the basic patterns for using the REST APIs for Azure DevOps.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 ms.custom: 
 monikerRange: '<= azure-devops'
@@ -14,7 +14,7 @@ robots: NOINDEX, NOFOLLOW
 
 # REST API reference
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods). These methods provide *create*, *retrieve*, *update*, or *delete* access to the service's resources. Learn the basic components of a REST API request and response pair, and see overviews of how to create and send a REST request, and handle the response.
 
@@ -65,7 +65,7 @@ There are many ways to authenticate your application or service with Azure DevOp
 | Non-interactive client-side | Headless text only client-side application | Console app displaying all bugs assigned to a user | [Device Profile](/azure/active-directory/develop/v2-oauth2-device-code) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI-based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | Azure DevOps Server application | Azure DevOps Server app using the Client OM library | Azure DevOps Server extension displaying team bug dashboards | [Client Libraries](./concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [Azure DevOps Services extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walk through](../extend/develop/add-dashboard-widget.md) |
+| [Azure DevOps Services extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [sample walk through](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
 > You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)

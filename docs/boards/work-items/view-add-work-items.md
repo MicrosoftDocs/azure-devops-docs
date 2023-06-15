@@ -1,33 +1,33 @@
 ---
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
-description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views 
-ms.custom: boards-work-items, seodec18, devx-track-azurecli, contperf-fy20q4
+description: Learn how to view and filter work items like user stories, issues, and bugs from the Work Items hub and seven personalized pivot views. 
+ms.custom: boards-work-items, devx-track-azurecli, contperf-fy20q4,  engagement-fy23
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/16/2021
+ms.date: 02/02/2023
 ---
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019** 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-
-View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, as well as interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown in the following image, and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 
 ::: moniker range=">= azure-devops-2020"
-![Screenshot of Boards&gt;Work Items Menu, Cloud version.](media/view-add/view-menu-cloud-version.png)  
+![Screenshot of Boards, Work Items page, Work Item Menu, cloud version.](media/view-add/view-menu-cloud-version.png)  
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
-![Screenshot of Boards&gt;Work Items Menu, on-premises version.](media/view-add/view-menu.png)  
+![Screenshot of Boards, Work Items page, Work Item Menu, on-premises version.](media/view-add/view-menu.png)  
 ::: moniker-end
 
 
@@ -46,10 +46,10 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Web portal](#tab/browser)
 
-(1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
+(1) Check that you've selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Boards>Work Items](media/view-add/open-work-items-agile.png)
+> ![Screenshot of web portal, Open Boards, Work Items hub.](media/view-add/open-work-items-agile.png)
 
 
 # [Visual Studio 2019](#tab/visual-studio)
@@ -59,12 +59,12 @@ Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. To switc
 [!INCLUDE [temp](../includes/note-git-vs-github-connect.md)] 
 
 > [!div class="mx-imgBorder"]  
-> ![Visual Studio, Team Explorer, Choose Work Items](media/view-add/open-work-items-vs-te-complete.png) 
+> ![Screenshot of Visual Studio, Team Explorer, Open Work Items hub.](media/view-add/open-work-items-vs-te-complete.png) 
 
 If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
 
 > [!div class="mx-imgBorder"]  
-> ![Connect to a Project dialog, connect to a Project and Git repository](media/view-add/connect-to-a-project-and-github.png)
+> ![Screenshot of Connect to a Project dialog, connect to a Project and Git repository.](media/view-add/connect-to-a-project-and-github.png)
 
 
 ::: moniker range="azure-devops-2019"
@@ -77,40 +77,44 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
+There's no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services only.
 
 ***
 
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Basic](../get-started/plan-track-work.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create differ. For example, backlog items may be called user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of these processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+> For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
 
 ## View work items
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  You can also use an Azure DevOps CLI command to view details about a work item.
 
 # [Web portal](#tab/browser)
-
-<br/>
-
  
 :::row:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2020"
-      ![Screenshot of Boards&gt;Work Items Menu, Cloud version.](media/view-add/view-menu-cloud-version.png)  
+      ![Screenshot of web portal, Boards, Work Items, Menu options.](media/view-add/view-menu-cloud-version.png)  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020"
-      ![Screenshot of Boards&gt;Work Items Menu, on-premises version.](media/view-add/view-menu.png)  
+      ![Screenshot of web portal, Boards, Work Items, Menu options, Azure DevOps Server 2019 version.](media/view-add/view-menu.png)  
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2020" 
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Does not include items moved to the Removed state. To open or update a work item, simply click its title.  
+      ::: moniker range=">= azure-devops-2022" 
+      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Doesn't include items moved to the **Removed** category state. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
       - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
-      - **My team(s)**: lists work items that you&#39;re team members have recently viewed or updated.  
+      - **My team(s)**: lists work items that your team members have recently viewed or updated.  
+      ::: moniker-end
+      ::: moniker range="azure-devops-2020" 
+      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
+      - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
+      - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
+      - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
+      - **My team(s)**: lists work items that your team members have recently viewed or updated.  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020" 
       - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
@@ -133,10 +137,9 @@ To view a work item, double-click the title or open the context menu for the wor
 
 :::row:::
    :::column span="2":::
-      ![Screenshot of Boards&gt;Work Items Menu, Visual Studio 2019.](media/view-add/work-item-menu-options-vs.png)  
+      ![Screenshot of Visual Studio 2019, Team Explorer, Work Items, context menu of options.](media/view-add/work-item-menu-options-vs.png)  
    :::column-end:::
    :::column span="2":::
-      <br/><br/>
       - **Assign to me**: Changes the **Assigned To** field to your user name.    
       - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).
       - **Complete work item**: Updates the **State** field to Completed, Done, or Closed.
@@ -147,9 +150,9 @@ To view a work item, double-click the title or open the context menu for the wor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="azure-devops"  
 
-You can view a new work item with the [az boards work-item show](/cli/azure/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can view a new work item with the [az boards work-item show](/cli/azure/boards/work-item?#az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az boards work-item show --id
@@ -186,22 +189,24 @@ ID    Type    Title      Assigned To          State
 
 ## Add a work item
 
-Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
+Adding a work item is just one click away. Choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
+> [!NOTE]   
+> New work items are assigned the last **Area Path** and **Iteration Path** selected by the user. 
 
 # [Web portal](#tab/browser)
 
 For example, here we choose User Story. 
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Work Items, Add a work item ](media/view-add/work-items-hub-new.png)
+> ![Screenshot of web portal, Work Items page, New Work Item.](media/view-add/work-items-hub-new.png)
 
 > [!TIP]    
-> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). 
+> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json). 
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
+![Screenshot of Agile process, User story work item form.](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
 
 # [Visual Studio 2019](#tab/visual-studio)
@@ -212,17 +217,14 @@ For example, here we choose User Story.
 Choose **New Work Item** and select the work item type you want. 
 
 > [!div class="mx-imgBorder"]  
-> ![Work Items, Add User Story](media/view-add/add-user-story-vs-te.png)
+> ![Screenshot of Visual Studio 2019, Work Items hub, New Work Item, choose User Story.](media/view-add/add-user-story-vs-te.png)
 
 A browser window will open with the work item form to fill out. 
-
-<!---
-> [!TIP]    
-> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
+ 
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
+![Screenshot of Agile process, User story work item form, opens in web portal.](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
 
 # [Azure DevOps CLI](#tab/azure-devops-cli) 
@@ -247,16 +249,16 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 # [Web portal](#tab/browser)
 
 > [!div class="mx-imgBorder"]
-> ![Boards>Work Items, Filter to show Bugs ](media/view-add/work-items-filter-bug.png)
+> ![Screenshot of web portal, Work Items page, Filter options, choose to show Bugs.](media/view-add/work-items-filter-bug.png)
 
 # [Visual Studio 2019](#tab/visual-studio)
 
 > [!div class="mx-imgBorder"]
-> ![Team Explorer>Work Items, Filter based on a key word ](media/view-add/filter-list-vs-te.png)
+> ![Screenshot of Visual Studio 2019, Team Explorer, Work Items page, Filter based on a key word.](media/view-add/filter-list-vs-te.png)
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
+There's no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services.
 
 ***
 
@@ -275,14 +277,14 @@ From the web portal, you can sort your view by one of the column fields that you
 To select several items in a sequence, hold down the shift key from a web portal page. To select several non-sequential items, use the **Ctrl** key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click ( :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon), and then select an option from the menu. 
 
 > [!div class="mx-imgBorder"]
-> ![Boards>Work Items, Following view, Select work items, context menu](media/view-add/following-context-menu.png)
+> ![Screenshot of web portal, Work Items page, Following view, Select multiple work items, open context menu.](media/view-add/following-context-menu.png)
 
 
 ## Open a view as a query  
 
-From the web portal, you can open any view, filtered view, or selected set of work items as a query. Simply choose **Open in Queries** or the **Open selected items in Queries** option from the context menu. 
+From the web portal, you can open any view, filtered view, or selected set of work items as a query. Choose **Open in Queries** or the **Open selected items in Queries** option from the context menu. 
 
-Queries provide additional features that you can use, including: 
+Queries provide other features that you can use, including: 
 * Edit one or more fields of several work items    
 * Add or remove tags from several work items 
 * Change the work item type 
@@ -290,7 +292,7 @@ Queries provide additional features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 
 
 <a id="page-controls">  </a>
@@ -302,9 +304,9 @@ Use the following three controls to manage your views in the web portal.
 > [!div class="mx-tdBreakAll"]
 > | Control                  | Function                      |
 > |--------------------------|-------------------------------|
-> | ![View options](../media/icons/view-options-icon.png) | View/hide completed items | 
-> | ![Filter](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
-> | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
+> | ![Image of View options control icon.](../media/icons/view-options-icon.png) | View/hide completed items | 
+> | ![Image of Filter control icon.](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
+> | ![Image of Full screen icon.](../media/icons/full-screen-icon.png) / ![Image of Exit full screen icon.](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 
 ## Related articles

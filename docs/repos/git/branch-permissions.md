@@ -3,15 +3,16 @@ title: Set Git branch security and permissions
 titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/25/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Set branch permissions
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Set up permissions to control who can read and update the code in a branch on your Git repo.
@@ -90,16 +91,6 @@ The following permissions are automatically assigned to branch creators: **Contr
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<= tfs-2017"
-:::row:::
-   :::column span="":::
-      **Administer**
-   :::column-end:::
-   :::column span="":::
-      Can set branch permissions for other users, delete the branch, and [lock the branch](lock-branches.md).  
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
@@ -129,74 +120,54 @@ The following permissions are automatically assigned to branch creators: **Contr
       Can push new commits to the branch and lock the branch. Can't rewrite existing commits on the branch. 
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="":::
       **Edit policies**
    :::column-end:::
    :::column span="":::
       Can edit [branch policies](branch-policies.md). 
-      > [!NOTE]
-      > Requires TFS-2017.1 or later version. 
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="<= tfs-2018"
+
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       **Exempt from policy enforcement**
    :::column-end:::
    :::column span="":::
       Are exempt from [branch policies](branch-policies.md) when completing pull requests and can override the policies by checking **Override branch policies and enable merge** when completing a PR. Can also push to a branch that has branch policies enabled. 
-      > [!NOTE]
-      > Requires TFS-2017.1 or later version.  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="":::
       **Force push (rewrite history, delete branches and tags)**
    :::column-end:::
    :::column span="":::
       Can force push to a branch, which can rewrite history. This permission is also required to delete a branch.
-      > [!NOTE]
-      > Requires TFS-2017.1 or later version.  
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="":::
       **Manage permissions**
    :::column-end:::
    :::column span="":::
       Can set permissions for the branch.
-      > [!NOTE]
-      > Requires TFS-2017.1 or later version.  
+ 
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="":::
       **Remove others' locks**
    :::column-end:::
    :::column span="":::
      Can remove [locks](lock-branches.md) set on branches by other users.
-      > [!NOTE]
-      > Requires TFS-2017.1 or later version.  
+ 
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="<= tfs-2017"
-:::row:::
-   :::column span="":::
-      **Rewrite and destroy history (force push)**
-   :::column-end:::
-   :::column span="":::
-      Can force push to a branch, delete a branch, and modify the commit history of a branch. 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 

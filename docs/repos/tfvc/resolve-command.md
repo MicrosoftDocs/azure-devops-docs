@@ -1,24 +1,27 @@
 ---
-title: Resolve Command
+title: Resolve command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Resolve Command
-ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
-ms.technology: devops-code-tfvc
+description: Use the Team Foundation Version Control resolve command to resolve conflicts between changed items in your workspace and the versions of items on the server.
+ms.assetid: ef4aa5f8-b62e-4dd2-9fb8-1e28b7e0123f
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/29/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
+# Resolve command (Team Foundation Version Control)
 
-# Resolve Command
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+The Team Foundation Version Control (TFVC) `tf resolve` command lets you resolve conflicts between changed items in your workspace and the latest or destination versions of items on the server.
 
-Lets you resolve conflicts between changed items in your workspace and the latest or destination versions of items on the server.
+## Prerequisites
 
-**Required Permissions**
+To use the `resolve` command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Syntax
 
 ```
 tf resolve [itemspec] 
@@ -29,7 +32,7 @@ tf resolve [itemspec]
 ## Parameters
 
 
-### Argument
+### Arguments
 
 :::row:::
    :::column span="1":::
@@ -39,52 +42,50 @@ tf resolve [itemspec]
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   *Itemspec*
+   `<itemspec>`
    :::column-end:::
    :::column span="3":::
-   Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
-
+   Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts are included. For more information about how TFVC parses the `itemspec` to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    > [!Note]  
-   > You can specify more than one *Itemspec* argument.
+   > You can specify more than one `itemspec` argument.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *overridetype*
+   `<overridetype>`
    :::column-end:::
    :::column span="3":::
-   Used with the **/overridetype** option. Specifies the encoding type of the files involved. For example; binary.
+   Used with the `/overridetype` option. Specifies the encoding type of the files involved, for example `binary`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *converttype*
+   `<converttype>`
    :::column-end:::
    :::column span="3":::
-   Used with the **/converttotype** option. Specifies the encoding type, such as &quot;unicode.&quot;
+   Used with the `/converttotype` option. Specifies the encoding type, such as `unicode`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *path*
+   `<path>`
    :::column-end:::
    :::column span="3":::
-   Used with the **/newname** option. Specifies the new path of the affected file or folder
+   Used with the `/newname` option. Specifies the new path of the affected file or folder.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *username*
+   `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
+   Provides a value to the `/login` option. You can specify a user name value as either `DOMAIN\username` or `username`.
    :::column-end:::
 :::row-end:::
 
-### Option
+### Options
 
 :::row:::
    :::column span="1":::
@@ -94,35 +95,31 @@ tf resolve [itemspec]
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   **/auto**
+   `/auto`
    :::column-end:::
    :::column span="3":::
-   Resolves outstanding conflicts between different versions of specified items in the current workspace using one of the following options:
-
+   Resolves outstanding conflicts between different versions of specified items in the current workspace by using one of the following options.
    
-   - **AutoMerge**   Automatically reconciles non-overlapping content differences between the specified workspace version of an item and the latest server version.
+   If differences can't be reconciled automatically, either because the file is binary or because the workspace and server versions contain overlapping content changes, the conflict remains unresolved pending the selection of one of the manual merge options.
 
-     If differences cannot be reconciled automatically, either because the file is binary or because the workspace and server versions contain overlapping content changes, the conflict remains unresolved pending the selection of one of the following manual merge options.
+   - `AutoMerge`: Automatically reconciles non-overlapping content differences between the specified workspace version of an item and the latest server version.
 
-   - The **TakeTheirs** option instructs Team Foundation Server to overwrite workspace revisions with the server revision. Further, for conflicts generated by running the **Merge** command, this option accepts the changes from the source of the merge and overwrites the changes in the target.
+   - `TakeTheirs` instructs TFVC to overwrite workspace revisions with the server revision. For conflicts generated by running the `merge` command, this option accepts the changes from the source of the merge and overwrites the changes in the target.
 
-   - The **KeepYours** option instructs Team Foundation Server to keep your changes and discard the changes in the server version of an item. For conflicts generated by running the **Merge** command, this option discards the changes from the source of the merge and leaves the target unchanged.
+   - `KeepYours` instructs TFVC to keep your changes and discard the changes in the server version of an item. For conflicts generated by running the `merge` command, this option discards the changes from the source of the merge and leaves the target unchanged.
 
-   - The **OverwriteLocal** option overwrites the file in your workspace with the server version. This is used to resolve conflicts that arise from a writable file in your workspace.
+   - `OverwriteLocal` overwrites the file in your workspace with the server version. You can use this option to resolve conflicts that arise from a writable file in your workspace.
 
-   - The **DeleteConflict** option removes a conflict from the conflict table, and the option/description table.
+   - `DeleteConflict` removes a conflict from the conflict table and the option/description table.
 
-   - The **KeepYoursRenameTheirs** option accepts the contents and name of your file and renames their file to a new name that the user specifies. This option requires a single-item filespec, and the **/newname** option must also be included.
-
-   
+   - `KeepYoursRenameTheirs` accepts the contents and name of your file and renames their file to a new name that you specify. This option requires a single-item filespec, and you must also include the `/newname` option.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/preview**
+   `/preview`
    :::column-end:::
    :::column span="3":::
    Displays current conflicts but does nothing with them.
@@ -130,29 +127,29 @@ tf resolve [itemspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/overridetype**
+   `/overridetype`
    :::column-end:::
    :::column span="3":::
-   Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see [Managing File Types](/azure/devops/server/admin/manage-file-types).
+   Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. TFVC saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see [Manage file types](/azure/devops/server/admin/manage-file-types).
 
    > [!Note]  
-   > You cannot specify both an **/overridetype** and a **/converttotype**.
+   > You can't specify both an `/overridetype` and a `/converttotype`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/converttotype**
+   `/converttotype`
    :::column-end:::
    :::column span="3":::
-   Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see [Managing File Types](/azure/devops/server/admin/manage-file-types).
+   Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see [Manage file types](/azure/devops/server/admin/manage-file-types).
 
    > [!Note]  
-   > You cannot specify both an **/overridetype** and a **/converttotype**.
+   > You can't specify both an `/overridetype` and a `/converttotype`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/recursive**
+   `/recursive`
    :::column-end:::
    :::column span="3":::
    Resolves items in the specific directory and subdirectories.
@@ -160,23 +157,23 @@ tf resolve [itemspec]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/newname**
+   `/newname`
    :::column-end:::
    :::column span="3":::
-   Option used to resolve a name collision conflict. Can only be used in conjunction with **AutoMerge** and **KeepYoursRenameTheirs**. With **AutoMerge**, **/newname** is only valid with conflicts that involve rename and/or undelete. If used, you must supply a new *path*.
+   Resolves a name collision conflict. Can only be used in conjunction with `AutoMerge` and `KeepYoursRenameTheirs`. With `AutoMerge`, `/newname` is only valid with conflicts that involve rename and/or undelete. If used, you must supply a new `path`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/login**
+   `/login`
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/noprompt**
+   `/noprompt`
    :::column-end:::
    :::column span="3":::
    Suppresses any prompts for input.
@@ -184,13 +181,16 @@ tf resolve [itemspec]
 :::row-end:::
 
 ## Remarks
-You can use the **Resolve** command to select a resolution for pending changes that conflict with the server version.
 
-If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
+You can use the `resolve` command to select a resolution for pending changes that conflict with the server version.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution by using the `resolve` command. You must resolve conflicts before you can check in your pending changes.
+
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
 ## Examples
-The following example invokes the **Resolve Conflicts** dialog box so that you can tell Team Foundation Server how to deal with pending changes that conflict with the server version.
+
+The following example opens the **Resolve Conflicts** dialog box in Visual Studio so you can tell TFVC how to deal with pending changes that conflict with the server version.
 
 ```
 tf resolve
@@ -202,28 +202,13 @@ The following example attempts to resolve all conflicts by automatically merging
 tf resolve /auto:automerge
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Merge Command](merge-command.md)
-
-[Get Command](get-command.md)
-
-[Checkin Command](checkin-command.md)
-
-[Difference Command](difference-command.md)
-
-#### Concepts
-
-[Managing File Types](/azure/devops/server/admin/manage-file-types)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Resolving Folder Differences and File Conflicts](resolve-team-foundation-version-control-conflicts.md)
-
-[Comparing Folders and Files](./compare-files.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Merge command](merge-command.md)
+- [Get command](get-command.md)
+- [Checkin command](checkin-command.md)
+- [Difference command](difference-command.md)
+- [Manage file types](/azure/devops/server/admin/manage-file-types)
+- [Resolve folder differences and file conflicts](resolve-team-foundation-version-control-conflicts.md)
+- [Compare folders and files](./compare-files.md)

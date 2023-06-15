@@ -2,23 +2,23 @@
 title: Resource limits & constraints  
 titleSuffix: Azure DevOps 
 description: Limits on the resources individual users can consume in Azure DevOps, and the number of work item tracking requests they can make 
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
-ms.date: 06/08/2021
-monikerRange: '>= tfs-2018'
+ms.date: 07/15/2022
+monikerRange: 'azure-devops'
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Rate limits
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance. This design leaves users vulnerable to performance issues and even outages when other users, of their shared resources, have spikes in their consumption.
-To combat these problems, Azure DevOps limits the resources individuals can consume and the amount of requests they can make to certain commands.
+To combat these problems, Azure DevOps limits the resources individuals can consume, and the amount of requests they can make to certain commands.
 When these limits are exceeded, future requests may be either delayed or blocked.
 
 When a user's requests are delayed by a significant amount, that user gets an email and sees a warning banner in the web.
@@ -28,6 +28,13 @@ For more information, see [Usage monitoring](../../organizations/accounts/usage-
 When an individual user's requests get blocked, responses with HTTP code 429 (too many requests) are received, with a message similar to the following message:
 
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
+
+For more information, see the following articles:
+
+- [Service and rate limits for Azure DevOps](../../user-guide/service-limits.md)
+- [Git limits](../../repos/git/limits.md)
+- [Best practices to avoid hitting rate limits](integration-bestpractices.md)
+- or [Contact Support in the Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html)
 
 ## Current rate limits
 
@@ -143,7 +150,7 @@ This design gives clients the opportunity to proactively slow down their rate of
       `X-RateLimit-Delay`
    :::column-end:::
    :::column span="2":::
-       How long the request was delayed. Units: seconds with up to 3 decimal places (milliseconds). 
+       How long the request was delayed. Units: seconds with up to three decimal places (milliseconds). 
    :::column-end:::
 :::row-end:::
 ---
@@ -183,4 +190,11 @@ If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `
 
 Doing so allows you to approximate how quickly you're approaching the delay threshold.
 
-Your client can intelligently react by spreading its requests out over time.
+Your client can intelligently react by spreading out its requests over time.
+
+## Related articles
+
+- [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md)
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md)
+- [Configure and customize Azure Boards](../../boards/configure-customize.md)
+- [Usage monitoring](../../organizations/accounts/usage-monitoring.md)

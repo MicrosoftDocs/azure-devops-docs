@@ -2,24 +2,24 @@
 title: Azure DevOps CLI in Azure Pipeline YAML
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Azure Pipeline YAML
-ms.topic: reference 
-ms.prod: devops 
-ms.technology: devops-reference
+ms.topic: how-to
+ms.subservice: azure-devops-reference
+ms.custom: devx-track-azurecli
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+ms.author: chcomley  
+author: chcomley
+monikerRange: 'azure-devops'
 ms.date: 09/22/2021
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the following example to understand how YAML can be used to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
 
 > [!NOTE]
-> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](../pipelines/tasks/deploy/azure-cli.md).
+> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2).
 
 ## Authenticate with Azure DevOps
 
@@ -82,7 +82,7 @@ The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure Dev
 
 ## Hosted agent Azure CLI version
 
-Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/virtual-environments#updates-to-virtual-environments) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific version(s). 
+Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/runner-images#image-releases) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific version(s). 
 
 * To check the included software and their versions for Microsoft-hosted agents, including the installed version of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 * To check the current version for Azure CLI, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
@@ -173,7 +173,7 @@ Installing Azure CLI and Azure DevOps CLI extension on your self-hosted agent wh
 The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent using a pipeline has the following prerequisites.
 
 * Install Azure CLI using Python
-  * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+  * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
   ```yml
   # Specify python version if you have side-by-side versions
   - task: UsePythonVersion@0
@@ -192,7 +192,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 
 * Install Azure CLI DevOps extension
   * Azure CLI version [2.10.1](index.md) or higher is installed. 
-  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash.md).
+  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](/azure/devops/pipelines/tasks/reference/bash-v3).
   ```yml
   # Install Azure DevOps extension
   - bash: az extension add -n azure-devops

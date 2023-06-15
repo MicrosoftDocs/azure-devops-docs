@@ -2,7 +2,7 @@
 title: Collaborate on code
 titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.date: 06/01/2020
 ms.topic: overview
 monikerRange: '<= azure-devops'
@@ -10,8 +10,8 @@ monikerRange: '<= azure-devops'
 
 # What is Azure Repos?
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)] 
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
 Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. 
 
@@ -41,11 +41,11 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 Connect your favorite development environment to Azure Repos to access your repos and manage your work. Share your code using:
 
 - [Command-line](../git/share-your-code-in-git-cmdline.md)
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
+- [Visual Studio Code](https://marketplace.visualstudio.com/vscode)
 - [Visual Studio](../git/share-your-code-in-git-vs.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
-- [Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in)
-- [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+- [Eclipse](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
+- [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
 
 ### Review code with pull requests
 

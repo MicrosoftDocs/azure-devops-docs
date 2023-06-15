@@ -1,20 +1,18 @@
 ---
-title: Query guidelines for Analytics with OData
+title: OData Analytics query guidelines 
 titleSuffix: Azure DevOps
 description: Learn how to write good OData queries that access Analytics for Azure DevOps.
-ms.technology: devops-analytics
-ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
-ms.reviewer: stansw
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 08/12/2022
 ---
 
-# Query guidelines for Analytics with OData
+# OData Analytics query guidelines for Azure DevOps
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against Analytics for Azure DevOps. Following these guidelines will help ensure the queries have good performance for execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
@@ -29,7 +27,7 @@ Guidelines are organized as simple recommendations prefixed with the terms **DO*
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
-> [!INCLUDE [temp](../includes/api-versioning.md)]
+> 
 
 
 
@@ -219,13 +217,13 @@ Timeouts indicate that a query requires optimization. To learn how to design eff
 
 Snapshot entity sets with the `Snapshot` suffix are special because they're modeled as *daily snapshots*. You can use them to get a state of entities as they were at the end of each day in the past. For example, if you queried `WorkItemSnapshot` and filter to a single `WorkItemId`, you would get one record for each day since the work item was created. Loading directly all of this data would be expensive and most likely would exceed usage limits and be blocked. However, aggregations on these entities are both allowed and recommended. In fact, the snapshot entity sets were designed with aggregation scenarios in mind.
 
-For example, the query below gets the number of work items as by date to observe how it grew in January 2017.
+For example, the query below gets the number of work items as by date to observe how it grew in January 2020.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
 >   $apply=
->     filter(DateSK ge 20170101 and DateSK le 20170131)/
+>     filter(DateSK ge 20200101 and DateSK le 20200131)/
 >     groupby((DateSK), aggregate($count as Count))
 > ```
 
@@ -264,7 +262,7 @@ For example, the following query gets a single work item by its identifier.
 >   &$select=WorkItemId, Title
 > ```
 
-If you're not sure which properties you should include in such a filter, you can look it up in the metadata. See [Explore the Analytics OData metadata](analytics-metadata.md). Properties are in the `Key` element of the `EntityType`. For example, `WorkItemId` and `Revision` are key columns for the `WorkItemRevision` entity.
+If you're not sure which properties you should include in such a filter, you can look it up in the metadata. See [Construct OData queries for Analytics, URL components to query the metadata](../analytics/analytics-query-parts.md#query-metadata). Properties are in the `Key` element of the `EntityType`. For example, `WorkItemId` and `Revision` are key columns for the `WorkItemRevision` entity.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -368,7 +366,7 @@ We restrict use of the batch endpoint from handling a batch of multiple requests
 
 We restrict queries that result in more than 800 columns. If you aren't selective enough in which columns your query returns you may receive the following error message.
 
-> VS403670: The specified query retruns 'N' columns which is higher than the allowed limit of 800 columns. Please, use explicit $select (including within the $expand) options to limit number of columns.
+> VS403670: The specified query returns 'N' columns which is higher than the allowed limit of 800 columns. Please, use explicit $select (including within the $expand) options to limit number of columns.
 
 Add a $select clause to your query, and to $expand operations in your query, to avoid exceeding this limit.
 
@@ -394,38 +392,38 @@ Another scenario that tends to generate long queries occurs when you include man
 
 ### ✔️ DO specify time zone when filtering on date columns
 
-The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches the [organization's time zone settings](../../organizations/accounts/change-organization-location.md). This data is precise and simple to interpret at the same time. Another non-obvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you'll get the following error message.
+The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches the [organization's time zone settings](../../organizations/accounts/change-time-zone.md). This data is precise and simple to interpret at the same time. Another non-obvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you'll get the following error message.
 
 > *The query specified in the URI is not valid. No datetime offset was specified.  Please use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
 
-To solve this problem, add the time zone information. For example, assuming that the organization is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2017.
+To solve this problem, add the time zone information. For example, assuming that the organization is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2020.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
+>   $filter=CreatedDate ge 2020-01-01T00:00:00-08:00
 >   &$select=WorkItemId, Title, State
 > ```
 
-The same solution works for time zones with positive offsets, however, the plus character (`+`) has a special meaning in the URI and you must handle it correctly. If you specify `2017-01-01T00:00:00+08:00` (with a `+` character) as your starting point, you'll get the following error.
+The same solution works for time zones with positive offsets, however, the plus character (`+`) has a special meaning in the URI and you must handle it correctly. If you specify `2020-01-01T00:00:00+08:00` (with a `+` character) as your starting point, you'll get the following error.
 
-> *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2017-01-01T0000 08:00'.*
+> *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2020-01-01T0000 08:00'.*
 
-To solve it, replace the `+` character with its encoded version, `%2B`. For example, assuming that the organization is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query returns all the work items created since the beginning of 2017.
+To solve it, replace the `+` character with its encoded version, `%2B`. For example, assuming that the organization is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query returns all the work items created since the beginning of 2020.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
+>   $filter=CreatedDate ge 2020-01-01T00:00:00%2B08:00
 >   &$select=WorkItemId, Title, State
 > ```
 
-An alternative approach is to use date surrogate key properties as they don't keep the time zone information. For example, the following query returns all the work items created since the beginning of 2017 regardless of the organization's settings.
+An alternative approach is to use date surrogate key properties as they don't keep the time zone information. For example, the following query returns all the work items created since the beginning of 2020 regardless of the organization's settings.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $filter=CreatedDateSK ge 20170101
+>   $filter=CreatedDateSK ge 20200101
 >   &$select=WorkItemId, Title, State
 > ```
 
@@ -530,14 +528,14 @@ In Analytics, the revised date is represented by `RevisedDate` (`Edm.DateTimeOff
 
 `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`
 
-For example, the following query returns the number of work items for each day since the beginning of 2017. Notice that apart from the obvious filter on `DateSK` column there's a second filter on `RevisedDateSK`. Although it may seem redundant, it helps the query engine to filter out revisions that aren't in scope and significantly improves query performance.
+For example, the following query returns the number of work items for each day since the beginning of 2020. Notice that apart from the obvious filter on `DateSK` column there's a second filter on `RevisedDateSK`. Although it may seem redundant, it helps the query engine to filter out revisions that aren't in scope and significantly improves query performance.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0/WorkItemSnapshot?
 >   $apply=
->     filter(DateSK gt 20170101)/
->     filter(RevisedDateSK eq null or RevisedDateSK gt 20170101)/
+>     filter(DateSK gt 20200101)/
+>     filter(RevisedDateSK eq null or RevisedDateSK gt 20200101)/
 >     groupby(
 >       (DateValue), 
 >       aggregate($count as Count)
@@ -575,7 +573,7 @@ You can do so with other filter expressions to remove days that don't finish a g
 > </EnumType>
 > ```
 
-Since `Microsoft.VisualStudio.Services.Analytics.Model.Period` is defined as and enum with flags, use the OData [`has`](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868681) operator and specify full type for the period literals.
+Since `Microsoft.VisualStudio.Services.Analytics.Model.Period` is defined as an enum with flags, use the OData [`has`](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868681) operator and specify full type for the period literals.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -726,12 +724,12 @@ Some project administrators heavily customize their processes by adding custom f
 
 There are many ways you can define a date filter. You can filter on the date property directly (for example, `CreatedDate`), its navigation counterpart (for example, `CreatedOnDate`), or its surrogate key representation (for example, `CreatedDate`). The last option yields the best performance and is preferred when the reporting requirements allow for it.
 
-For example, the following query gets all the work items created since the beginning of 2017.
+For example, the following query gets all the work items created since the beginning of 2020.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
->   $filter=CreatedDateSK ge 20170101
+>   $filter=CreatedDateSK ge 20200101
 > ```
 
 <a id="perf-filter-surrogate"> </a>
@@ -776,7 +774,7 @@ User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
-Host: {OrganizationName}.analytics.visualstudio.com
+Host: analytics.dev.azure.com/{OrganizationName}
 ```
 If the dataset exceeds the limit of 1000 records, the query will immediately fail with the following error.
 
@@ -841,7 +839,7 @@ For example, the following query uses `@createdDateSK` parameter to separate the
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 >   $filter=CreatedDateSK ge @createdDateSK
 >   &$select=WorkItemId, Title, State
->   &@createdDateSK=20170101
+>   &@createdDateSK=20200101
 > ```
 
 <a id="style-avoid-mix"> </a>
@@ -923,9 +921,10 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 
 ## Related articles
 
+- [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Query work item tracking data](wit-analytics.md)
 - [Aggregate data](aggregated-data-analytics.md)
 - [Query trend data](querying-for-trend-data.md)
 - [Query work item links](work-item-links.md)
-- [Explore the Analytics OData metadata](analytics-metadata.md)
-- [Supported functions & clauses](odata-supported-features.md)
+- [Supported functions & clauses](odata-supported-features.md)  
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 

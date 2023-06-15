@@ -1,14 +1,14 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 07/09/2020
 ---
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="azure-devops"  
 
-You can add a new work item with the [az boards work-item create](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can add a new work item with the [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item create --title

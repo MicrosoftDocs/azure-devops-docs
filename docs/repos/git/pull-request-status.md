@@ -3,16 +3,17 @@ title: Pull request workflow extensibility
 titleSuffix: Azure Repos
 description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/18/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Customize and extend pull request workflows with pull request status
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
@@ -92,7 +93,7 @@ This further guarantees that the PR will not be able to be merged until the late
 
 ![Status policy reset conditions](media/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
-See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create#on-pull-request).
+See the REST API examples for posting status [on an iteration](/rest/api/azure/devops/git/pull-request-statuses/create#on-iteration) and [on a pull request](/rest/api/azure/devops/git/pull-request-statuses/create#on-pull-request).
 
 ## Status policy
 
@@ -127,13 +128,13 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). For more information, see the [Azure DevOps extension sample](https://github.com/Microsoft/azure-devops-extension-sample). 
 
 ![Status menu](media/pull-request-status/custom-status-menu-entries.png)
 
-## Next Steps
+## Next steps
 
-Learn more about the [PR Status API](/rest/api/azure/devops/git/pull%20request%20statuses) and check out the how-to guides:
+Learn more about the [PR Status API](/rest/api/azure/devops/git/pull-request-statuses) and check out the how-to guides:
 
 * [Create a pull request status server with Node.js](create-pr-status-server.md)
 * [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)

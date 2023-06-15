@@ -2,18 +2,18 @@
 title: Example of an Analytics Widget
 titleSuffix: Azure DevOps 
 description: Learn how to build your own Analytics widget to display in a dashboard in Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
-ms.author: kaelli
-author: KathrynEE
-ms.topic: sample
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
 
 # Create an Analytics widget for Azure DevOps
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 
 You can build your own Analytics widget to display in a [dashboard](../dashboards/overview.md) in Azure DevOps. The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates: 
@@ -22,6 +22,7 @@ You can build your own Analytics widget to display in a [dashboard](../dashboard
 > * How to render trend lines associated with work item states
 > * How to query a dataset, whe a user will configure through the widget configuration view
 > * How to build and publish the widget to the Azure DevOps marketplace
+
 With this information, you'll be able to create your own Analytics widget.
 
 ![View of Configuration with Preview of Widget](./media/extend-analytics-widget.png)  
@@ -34,7 +35,6 @@ This example provides a ready-made widget, covering basics from topics in Dashbo
 1. Create an Azure DevOps Widget Extension, reference the [Widget extensions sample](../../extend/develop/add-dashboard-widget.md)
 1. Render an Azure DevOps Chart Control, reference [Add a Chart](../../extend/develop/add-chart.md)
 1. Query OData from [Analytics](quick-ref.md)
-
 
 
 ## Provide a configuration view

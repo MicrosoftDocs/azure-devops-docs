@@ -2,18 +2,18 @@
 title: Migrate to or integrate work tracking data in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how you can migrate or integrate work tracking data from other software applications to Azure Boards.
-ms.custom: extensions
-ms.technology: devops-agile
+ms.custom: extensions, engagement-fy23
+ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---
 
 # Migrate and integrate work tracking data in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You have a choice of tools to help you migrate your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. You can also integrate Azure Boards with many third-party tools. 
 
@@ -33,18 +33,16 @@ The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?it
 
 To learn more, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/).
 
-[OpsHub Visual Studio Migration Utility](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OVSMU) enables a seamless migration between Azure DevOps Server(TFS) and Azure DevOps Services(VSTS) or Azure DevOps and Azure DevOps.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
+[OpsHub Azure DevOps Migrator](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OADOM) formerly known as OpsHub Visual Studio Migration Utility(OVSMU) enables a seamless migration between Azure DevOps Server and Azure DevOps Services.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
 
 - All version control information and history
 - All work items and history
 - All test cases and test results
-- Supports the 2010, 2012, 2013, 2015, 2018, and 2019 versions of Azure DevOps Server
-- Supports all versions of Azure DevOps Services
+- Supports Team Foundation Server 2018 and Azure DevOps Server versions 2019, 2020, and 2022
+- Supports Azure DevOps Services.
 
-[OVSMU](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) covers the following scenarios:
-
-Supports data migration from Azure DevOps Server (TFS) to Azure DevOps Server (TFS), Azure DevOps Services (VSTS) to Azure DevOps Server (TFS) and Azure DevOps Services (VSTS) to Azure DevOps Services (VSTS).
-
+[OADOM](https://www.opshub.com/products/opshub-azure-devops-migrator/) covers the following scenarios:
+ 
 
 ## Migrate process models between Azure DevOps organizations
 

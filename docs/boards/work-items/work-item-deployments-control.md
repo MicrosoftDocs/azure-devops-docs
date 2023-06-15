@@ -1,23 +1,23 @@
 ---
-title: Link work items to deployments
+title: Link work items to deployments and other objects
 titleSuffix: Azure Boards
-description: Improve traceability, visualize and navigate to deployments which include work items by linking them to releases
+description: Learn how to link work items to other objects to improve traceability and simplify navigation to those objects in Azure Boards.
 ms.custom: boards-work-items, contperf-fy22q1  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2020'
-ms.date: 08/13/2021
+ms.date: 08/26/2022
 --- 
 
-# Link and view work items to builds and deployments
+# Link work items to builds and deployments in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 One of the main ways Azure DevOps supports traceability is by linking objects. Work items link to Git branches, commits, pull requests, builds, and more. Work item forms provide two controls to show and quickly navigate to development objects. The **Deployment** control is described in this article, and the **Development** control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-With the **Deployment** control, you can determine at a glance whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments as well as quick navigation to each release stage and run. 
+With the **Deployment** control, you can determine at a glance whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments and quick navigation to each release stage and run. 
 
 > [!NOTE]
 > The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline. 
@@ -35,9 +35,9 @@ You can view all links through the work item form **Links** tab.
 - Work items associated with commits in the build will show the status of the release  
 - Only work items co-located with the same project where the release pipeline is defined are linked to. 
   
-:::image type="content" source="../../notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
+:::image type="content" source="../../organizations/notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
 
-To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
+To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
 
 ## Prerequisites
 
@@ -45,13 +45,13 @@ To learn how to associate work items to commits, see [Drive Git development from
 - To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.  
 - To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item.  
  
-To populate the **Deployment** control, perform the following steps: 
+To populate the **Deployment** control, complete the following steps: 
 
 1. Define a Classic release pipeline and set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).  
 2. Configure the pipeline as described in [Configure pipelines to support work tracking, Report deployment status to Boards](../../pipelines/integrations/configure-pipelines-work-tracking.md#classic-report-boards).   
 3. Link work items to a commit or pull request in Azure Repos Git repository. For details, see: 
 	-  [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)  
-	-  [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+	-  [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 4.  Run the pipeline.
 	<!---  Only manually triggered releases??? --> 
 
@@ -75,7 +75,7 @@ Question - can you link to work items in a different project ???
 
 ### Deployment control and work item types
 
-By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types. It is automatically enabled for custom work item types you define using the Inherited process. If you don't use the control, you can choose to [Hide from layout](../../organizations/settings/work/customize-process-field.md#hide-a-field-or-custom-control).
+By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types. It's automatically enabled for custom work item types you define using the Inherited process. If you don't use the control, you can choose to [Hide from layout](../../organizations/settings/work/customize-process-field.md#hide-a-field-or-custom-control).
 
 If your project is customized using a Hosted XML process or you need to add it to a custom work item type for an On-premises XML process, you'll need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
 
@@ -97,9 +97,9 @@ When you open the work item, you can see the stages the release is being deploye
 <a id="view-link-list" /> 
 
 
-## View list of links for a work item
+## View a list of links for a work item
 
-To view and navigate to the builds and releases linked to a work item, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Links** tab. Links are grouped under their link type and listed in the order they were created. Choose the **State** or **Latest Update** column headings to sort by the column. Links prefaced with the :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: red exclamation mark indicate that the build, release, or other object has been deleted. This is usually due to retention policies which automatically delete these objects after a certain time period has passed. 
+To view and navigate to the builds and releases linked to a work item, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Links** tab. Links are grouped under their link type and listed in the order they were created. Choose the **State** or **Latest Update** column headings to sort by the column. Links prefaced with the :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: red exclamation mark indicate that the build, release, or other object has been deleted. This indicator occurs because of retention policies, which automatically delete these objects after a certain time period has passed. 
 
 :::image type="content" source="media/deployments-control/links-list.png" alt-text="Screenshot of Links tab, Integrated in build and Integrated in release stage.":::
 
@@ -134,7 +134,7 @@ You can't query for work items that are included in releases. However, you can c
  
 **Link work items**
 
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 - [Link type reference](../queries/link-type-reference.md)

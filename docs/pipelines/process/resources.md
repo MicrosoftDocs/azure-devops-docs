@@ -4,18 +4,18 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/28/2021
-monikerRange: azure-devops
+ms.date: 04/14/2023
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Define resources in YAML
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
 
-For more information, see [About resources](about-resources.md)
+For more information, see [About resources](about-resources.md).
 ### Schema
 
 ```yaml
@@ -43,7 +43,7 @@ These values are empty if a resource doesn't trigger a pipeline run. The variabl
 
 If you have a pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on a pipeline resource for your CD workflows.
 
-In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact.
+In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. Use the label defined by `pipeline` to reference the pipeline resource from other parts of the pipeline, such as when using pipeline resource variables or downloading artifacts.
 
 For an alternative way to download pipelines, see the tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
 
@@ -155,18 +155,19 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 
 ### Evaluation of artifact version
 
-The pipeline version, CI build run, that gets picked in your pipeline run, gets controlled by how your pipeline run is triggered.
+The version of the resource pipeline's artifacts depends on how your pipeline is triggered.
 
-In case you create your pipeline run is created manually or by a scheduled trigger, the default version, branch, and tags get used to evaluate the CI pipeline version.
+If your pipeline runs because you manually triggered it or due to a scheduled run, the version of artifacts's version is defined by the values of the `version`, `branch`, and `tags` properties.
 
-|Provided information|Outcome |
+|Specified properties | Artifact version |
 |---------|---------|
-|Build version #     | That version runs.        |
-|Branch     |The latest version from the given branch runs.         |
-|Tags list    | The latest run that has all the matching tags runs.        |
-|Branch and tags list   |The latest run from the branch provided and that has the matching tags runs.        |
-|Nothing    | The latest version across all the branches runs.        |
+| `version`     | The artifacts from the build having the specified run number |
+| `branch`      | The artifacts from the latest build performed on the specified branch |
+| `tags` list   | The artifacts from the latest build that has all the specified tags    |
+| `branch` and `tags` list   | The artifacts from the latest build performed on the specified branch _and_ that has all the specified tags |
+| None    | The artifacts from the latest build across all the branches |
 
+Let's look at an example. Say your pipeline contains the following resource definition.
 ```yml
 resources:
   pipelines:
@@ -178,17 +179,20 @@ resources:
     - Production        ### Tags are AND'ed
     - PreProduction
 ```
+When you manually trigger your pipeline to run, the version of the artifacts of the `MyCIAlias` pipeline is the one of the latest build done on the `main` branch and that has the `Production` and `PrepProduction` tags.
 
-If your pipeline gets triggered automatically, the CI pipeline version gets picked, based on the trigger event. The default version information provided is irrelevant.
+When your pipeline gets triggered because one of its resource pipelines completes, the version of the artifacts is the one of the triggering pipeline. The values of the `version`, `branch`, and `tags` properties are ignored.
 
-|Provided information  |Outcome  |
+|Specified triggers  | Outcome  |
 |---------|---------|
-|Branches     | A new pipeline gets triggered whenever a CI run successfully completes that matches to the branches that are included.        |
-|Tags     | A new pipeline gets triggered whenever a CI run successfully completes that matches all the tags mentioned.        |
-|Stages     | A new pipeline gets triggered whenever a CI run has all the stages mentioned are completed successfully.        |
-|Branches, tags, and stages    | A new pipeline run gets triggered whenever a CI run matches all the conditions.        |
-|Only `trigger: true`    | A new pipeline run gets triggered whenever a CI run successfully completes.        |
-|Nothing    | No pipeline run gets triggered. Triggers are disabled by default unless you specifically enable them.        |
+|`branches` | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run on the `include` branches |
+|`tags`     | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run that is tagged with _all_ the specified tags |
+| `stages`     | A new run of the current pipeline is triggered whenever the resource pipeline successfully executed the specified `stages` |
+| `branches`, `tags`, and `stages`    | A new run of the current pipeline is triggered whenever the resource pipeline run satisfies _all_ branch, tags, and stages conditions |
+| `trigger: true`    | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run |
+|Nothing    | No new run of the current pipeline is triggered when the resource pipeline successfully completes a run|
+
+Let's look at an example. Say your pipeline contains the following resource definition.
 
 ```yaml
 resources:
@@ -211,6 +215,8 @@ resources:
       - PreProduction
       
 ```
+
+Your pipeline will run whenever the `SmartHotel-CI` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
 
 ### `download` for pipelines
 
@@ -288,6 +294,8 @@ steps:
 
 ---
 
+For more information, see [Pipeline resource metadata as predefined variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#pipeline-resource-metadata-as-predefined-variables).
+
 ## Define a `builds` resource
 
 If you have an external CI build system that produces artifacts, you can consume artifacts with a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI, and so on.
@@ -362,22 +370,13 @@ The `repository` keyword lets you specify an external repository.
 
 ```yaml
 resources:
-  repositories:
-  - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: enum  # see the following "Type" topic
-    name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/main'
-    endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
-    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
-      branches:
-        include: [ string ] # branch names which trigger a build
-        exclude: [ string ] # branch names which won't
-      tags:
-        include: [ string ] # tag names which trigger a build
-        exclude: [ string ] # tag names which won't
-      paths:
-        include: [ string ] # file paths which must match to trigger a build
-        exclude: [ string ] # file paths which won't trigger a build
+    repositories:
+    - repository: string # Required as first property. Alias for the repository.
+      endpoint: string # ID of the service endpoint connecting to this repository.
+      trigger: none | trigger | [ string ] # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos).
+      name: string # repository name (format depends on 'type'; does not accept variables).
+      ref: string # ref name to checkout; defaults to 'refs/heads/main'. The branch checked out by default whenever the resource trigger fires.
+      type: string # Type of repository: git, github, githubenterprise, and bitbucket.
 ```
 
 ## [Example](#tab/example)
@@ -418,13 +417,24 @@ Use `checkout` keyword to consume your repos defined as part of `repository` res
 
 ```yaml
 steps:
-- checkout: string  # identifier for your repository resource
-  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
-  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
-  lfs: boolean  # whether to download Git-LFS files; defaults to false
-  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
-  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
-  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+- checkout: string # Required as first property. Configures checkout for the specified repository.
+  clean: string # If true, run git clean -ffdx followed by git reset --hard HEAD before fetching.
+  fetchDepth: string # Depth of Git graph to fetch.
+  fetchTags: string # Set to 'true' to sync tags when fetching the repo, or 'false' to not sync tags. See remarks for the default behavior.
+  lfs: string # Set to 'true' to download Git-LFS files. Default is not to download them.
+  persistCredentials: string # Set to 'true' to leave the OAuth token in the Git config after the initial fetch. The default is not to leave it.
+  submodules: string # Set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules. Default is not to fetch submodules.
+  path: string # Where to put the repository. The root directory is $(Pipeline.Workspace).
+  condition: string # Evaluate this condition expression to determine whether to run this task.
+  continueOnError: boolean # Continue running even on failure?
+  displayName: string # Human-readable name for the task.
+  target: string | target # Environment in which to run this task.
+  enabled: boolean # Run this task when the job runs?
+  env: # Variables to map into the process's environment.
+    string: string # Name/value pairs
+  name: string # ID of the step.
+  timeoutInMinutes: string # Time to wait for this task to complete before the server kills it.
+  retryCountOnTaskFailure: string # Number of retries if the task fails.
 ```
 
 Repos from the `repository` resource aren't automatically synced in your jobs. Use `checkout` to fetch your repos as part of your jobs.
@@ -471,7 +481,7 @@ resources:
 
 ---
 
-You can use a first class container resource type for Azure Container Registry (ACR) to consume your ACR images. This resources type can be used as part of your jobs and also to enable automatic pipeline triggers.
+You can use a first class container resource type for Azure Container Registry (ACR) to consume your ACR images. This resources type can be used as part of your jobs and also to enable automatic pipeline triggers. You need to have **Contributor** or **Owner** permissions for ACR to use automatic pipeline triggers. For more information, see [Azure Container Registry roles and permissions](/azure/container-registry/container-registry-roles).
 
 ## [Schema](#tab/schema)
 
@@ -561,6 +571,9 @@ steps:
 
 ---
 
+::: moniker range=">= azure-devops-2020"
+
+
 ## Define a `packages` resource
 
 You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. 
@@ -578,9 +591,9 @@ resources:
   packages:
     - package: myPackageAlias # alias for the package resource
       type: Npm # type of the package NuGet/npm
-      connection: GitHubConnectionName # Github service connection with the PAT type
+      connection: GitHubConnectionName # GitHub service connection with the PAT type
       name: nugetTest/nodeapp # <Repository>/<Name of the package>
-      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      version: 1.0.1 # Version of the package to consume; Optional; Defaults to latest
       trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
 ```
 
@@ -607,7 +620,11 @@ steps:
 
 ---
 
+
 ## Define a `webhooks` resource
+
+> [!NOTE]
+> Webhooks were released in Azure DevOps Server 2020.1. 
 
 With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you can't automate your deployment process based on other external events or services. The `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (GitHub, GitHub Enterprise, Nexus, Artifactory, and so on) and trigger your pipelines.
 
@@ -615,7 +632,12 @@ Do the following steps to configure the webhook triggers.
 
 1. Set up a webhook on your external service. When you're creating your webhook, you need to provide the following info:
 
-    - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<WebHook Name>?api-version=6.0-preview`
+    - Request Url
+    
+      ```
+      https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<WebHook Name>?api-version=6.0-preview
+      ```
+  
     - Secret - Optional. If you need to secure your JSON payload, provide the **Secret** value.
 2. Create a new "Incoming Webhook" service connection. This connection is a newly introduced Service Connection Type that allows you to define the following important information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
@@ -664,6 +686,8 @@ steps:
 ```
 
 ---
+
+::: moniker-end
 
 ## Manual version picker for resources in the create run dialogue
 
@@ -743,7 +767,7 @@ Resource triggers can fail to execute for the following reasons.
 * If trigger conditions aren't matched, the trigger won't execute. A warning is surfaced so you can understand why the conditions weren't matched.  
 
    ![Trigger issues supportability](media/trigger-supportability.png)
-
+  
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -755,15 +779,59 @@ Resource triggers can fail to execute for the following reasons.
 
 Using a `pipelines` resource is a way to consume artifacts from a CI pipeline and also configure automated triggers. A resource gives you full visibility into the process by displaying the version consumed, artifacts, commits, and work items. When you define a pipeline resource, the associated artifacts get automatically downloaded in deployment jobs.
 
-You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md).
+You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2).
 
 ### Why should I use `resources` instead of the Download Pipeline Artifacts task?
 
-When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
+When you use the [Download Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
+
+### How can I trigger a pipeline run when my Docker Hub image gets updated? 
+
+You'll need to set up a [classic release pipeline](../release/index.md) because the containers resource trigger is not available for Docker Hub for YAML pipelines.  
+
+1. Create a new Docker Hub [service connection](../library/service-endpoints.md). 
+1. Create a classic release pipeline and add a Docker Hub artifact. Set your service connection. Select the namespace, repository, version, and source alias. 
+    
+    :::image type="content" source="media/docker-artifact-release-pipeline.png" alt-text="Add a Docker Hub artifact. ":::
+
+1. Select the trigger and toggle the continuous deployment trigger to **Enable**. You'll create a release every time a Docker push occurs to the selected repository.
+1. Create a new stage and job. Add two tasks, Docker login and Bash:
+ * The Docker task has the `login` action and logs you into  Docker Hub.  
+ *  The Bash task runs `docker pull <hub-user>/<repo-name>[:<tag>]`. Replace `hub-user`, `repo-name`, and `tag` with your values. 
+
+    :::image type="content" source="media/docker-hub-tasks-classic-pipeline.png" alt-text="Add Docker login and Bash tasks. ":::
+
+### How can I validate and troubleshoot webhooks?
+
+1. Create a service connection.
+
+1. Reference your service connection and name your webhook in the `webhooks` section. 
+
+    ```yml
+    resources:
+      webhooks:
+        - webhook: MyWebhookTriggerAlias
+          connection: MyServiceConnection
+    ```
+
+1. Run your pipeline. When you run your pipeline, the webhook will be created in Azure as a distributed task for your organization.
+
+
+1. Perform a `POST` API call with valid JSON in the body to 
+`https://dev.azure.com/{organization}/_apis/public/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. If you receive a 200 status code response, your webhook is ready for consumption by your pipeline. If you receive a 500 status code response with the error `Cannot find webhook for the given webHookId ...`, your code may be in a branch that is not your default branch. 
+
+    1. Open your pipeline. 
+    1. Select **Edit**.
+    1. Select the more actions menu :::image type="content" source="../../media/icons/more-actions.png" alt-text="Select more actions menu":::. 
+    1. Select **Triggers** > **YAML** > **Get Sources**. 
+    1. Go to **Default branch for manual and scheduled builds** to update your feature branch. 
+    1. Select **Save & queue**.
+    1. After this pipeline runs successfully, perform a `POST` API call with valid JSON in the body to 
+`https://dev.azure.com/{organization}/_apis/public/distributedtask/webhooks/{webhook-name}?api-version={apiversion}`. You should now receive a 200 status code response.
 
 ## Related articles
 
 * [Define variables](variables.md)
 * [Create and target an environment](environments.md)
 * [Use YAML pipeline editor](../get-started/yaml-pipeline-editor.md)
-* [YAML schema reference](../yaml-schema.md)
+* [YAML schema reference](/azure/devops/pipelines/yaml-schema)

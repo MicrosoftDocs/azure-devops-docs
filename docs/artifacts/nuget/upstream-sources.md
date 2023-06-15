@@ -2,70 +2,79 @@
 title: Use packages from nuget.org
 description: How to use packages from nuget.org with Azure Artifacts
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 09/16/2021
-monikerRange: '>= tfs-2018'
+ms.date: 02/14/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # NuGet.org upstream source
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Enabling upstream sources on your feed allow you to publish and consume packages from your feed and public registries. Adding the nuget.org upstream allows you to consume NuGet packages from the public registry.
+Enabling upstream sources on your feed enables developers to consume packages from public registries such as nuget.org and npmjs.com. In this article, you will learn how to add the NuGet Gallery upstream source to consume NuGet packages from the nuget.org public registry.
 
-<a name="existing-feed"></a>
-
-## Add a new upstream source
+## Add NuGet Gallery upstream source
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png) button in the top right of the page to open **Feed settings**.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) button to navigate to **Feed settings**.
 
-1. Select the **Upstream sources** tab.
+1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="../media/upstreams-settings.png" alt-text="Screenshot showing how to access feed settings.":::
+    :::image type="content" source="./media/settings-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
-1. Select **Add upstream source**.
-
-    :::image type="content" source="../media/add-upstream.png" alt-text="Screenshot showing the add a new upstream source button.":::
-
-1. Select **Public source**, and then fill out the required fields.
+1. Select **Public source**.
 
     :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
 
-1. Select **Add** when you are done.
+1. Select **NuGet Gallery** from the dropdown menu. Select **Save** when you are done.
 
-<a name="update-nuget-configuration"></a>
+    :::image type="content" source="./media/nuget-gallery-source.png" alt-text="Screenshot showing how to add the nuget.org upstream source.":::
+
+    > [!NOTE]
+    > The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
+
+1. Select **Save** at the top right corner to save your changes.
 
 ## Update nuget.config
 
-1. Select **Artifacts**, and then select your feed. 
+1. Select **Artifacts**, and then select your feed.
 
-1. Select **Connect to feed**, and then choose **NuGet.exe**.
+1. Select **Connect to feed**, and then select **NuGet.exe**.
 
-    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
+    :::image type="content" source="./media/nuget-config.png" alt-text="A screenshot showing how to connect to NuGet feeds.":::
 
 1. Copy the XML snippet in the **Project Setup** section.
 
-1. Create a new file named *nuget.config* in the root of your project.
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
 
-1. Paste the XML snippet in your config file.
+1. Create a new *nuget.config* file in the root of your project.
+
+1. Paste the XML snippet in your nuget.config file.
 
 ## View saved packages
 
-You can view the packages you saved in your feed by selecting the appropriate **Source** filter.
+You can view the packages you saved from the NuGet Gallery by selecting your **Source** from the dropdown menu.
 
 ::: moniker range=">= azure-devops-2019"
 
-:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="Screenshot showing how to filter upstream sources.":::
+:::image type="content" source="./media/view-saved-packages-nuget.png" alt-text="A screenshot showing how to filter packages by source.":::
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
-:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot showing how to filter upstream sources - TFS.":::
+:::image type="content" source="media/view-cached-packages.png" alt-text="A screenshot showing how to filter packages by source in TFS":::
 
 ::: moniker-end
 

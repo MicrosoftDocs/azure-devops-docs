@@ -1,76 +1,82 @@
 - name: What is Azure DevOps?
-  href: what-is-azure-devops.md
+  href: what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json
 - name: Overview of services
-  href: services.md
-- name: Azure DevOps hosted vs. on-premises
-  href: about-azure-devops-services-tfs.md    
+  href: services.md?toc=/azure/devops/get-started/toc.json
+- name: Compare Azure DevOps hosted vs. on-premises
+  href: about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json
 - name: Get started for end users
+  expanded: true
   items:
   - name: Sign in to the web or a client
-    href: ../organizations/projects/connect-to-projects.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json
   - name: Code with Git
-    href: code-with-git.md 
+    href: code-with-git.md?toc=/azure/devops/get-started/toc.json
   - name: Set up continuous integration and delivery
-    href: ../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: "Plan and track work"
-    href: ../boards/get-started/plan-track-work.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: "Add and run manual tests"
-    href: add-run-manual-tests.md
-  - name: View permissions
-    href: ../organizations/security/view-permissions.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../pipelines/create-first-pipeline.md?toc=/azure/devops/get-started/toc.json
+  - name: Plan and track work
+    href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/get-started/toc.json
+  - name: Add and run manual tests
+    href: add-run-manual-tests.md?toc=/azure/devops/get-started/toc.json
   - name: Follow work and pull requests
-    href: ..//boards/work-items/follow-work-items.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/get-started/toc.json
   - name: Get started as a Stakeholder
-    href: ..//organizations/security/get-started-stakeholder.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json
+  - name: View permissions
+    href: ../organizations/security/view-permissions.md?toc=/azure/devops/get-started/toc.json
 - name: Get started for administrators
+  expanded: true
   items:
   - name: Sign up for Azure DevOps
-    href: sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+    href: sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json
   - name: Create an organization or project collection
-    href: ../organizations/accounts/create-organization.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../organizations/accounts/create-organization.md?toc=/azure/devops/get-started/toc.json
   - name: Manage your project
-    href: project-admin-tutorial.md
-  - name: Add users to a project or team 
-    href: ../organizations/security/add-users-team-project.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: project-admin-tutorial.md?toc=/azure/devops/get-started/toc.json 
+  - name: Manage your organization or collection
+    href: manage-organization-collection.md?toc=/azure/devops/get-started/toc.json
+  - name: Add users to a project or team
+    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json 
   - name: Manage teams and configure team tools
-    href: ../organizations/settings/manage-teams.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Change individual permissions 
-    href: ../organizations/security/change-individual-permissions.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../organizations/settings/manage-teams.md?toc=/azure/devops/get-started/toc.json
+  - name: Change individual permissions
+    href: ../organizations/security/request-changes-permissions.md?toc=/azure/devops/get-started/toc.json
   - name: Grant or restrict permissions to select tasks
-    href: ../organizations/security/restrict-access.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../organizations/security/restrict-access.md?toc=/azure/devops/get-started/toc.json
+  - name: Security best practices
+    href: ../organizations/security/security-best-practices.md?toc=/azure/devops/get-started/toc.json
 - name: Key concepts
   items:
   - name: Plan your organizational structure
-    href: ./plan-your-azure-devops-org-structure.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Source control 
-    href: source-control.md
+    href: plan-your-azure-devops-org-structure.md?toc=/azure/devops/get-started/toc.json
+  - name: Source control
+    href: source-control.md?toc=/azure/devops/get-started/toc.json
   - name: Clients and tools
-    href: tools.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: tools.md?toc=/azure/devops/get-started/toc.json 
   - name: Software development roles
-    href: roles.md
-- name: Troubleshooting 
+    href: roles.md?toc=/azure/devops/get-started/toc.json
+- name: Troubleshooting
   items:
   - name: Troubleshoot connection
-    href: ./troubleshoot-connection.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
-  - name: "TF31002: Unable to connect"
-    href: ../organizations/projects/tf31002-unable-connect-tfs.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
+    href: troubleshoot-connection.md?toc=/azure/devops/get-started/toc.json
+  - name: 'TF31002: Unable to connect'
+    href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/get-started/toc.json
   - name: Troubleshoot access and permissions
-    href: ../organizations/security/troubleshoot-permissions.md
+    href: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/get-started/toc.json
   - name: Allowed address lists and network connections
-    href: ../organizations/security/allow-list-ip-url.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Configure a network adapter to adjust speed
-    href: ../reference/xml/configure-network-adapter-automatically-adjust-speed.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+    href: ../organizations/security/allow-list-ip-url.md?toc=/azure/devops/get-started/toc.json
   - name: Get support or provide feedback
-    href: provide-feedback.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+    href: provide-feedback.md?toc=/azure/devops/get-started/toc.json 
+  - name: Look up platform and version
+    href: lookup-platform-version.md?toc=/azure/devops/get-started/toc.json 
 - name: Reference
   items:
   - name: Navigate in Team Explorer
-    href: work-team-explorer.md  
+    href: work-team-explorer.md?toc=/azure/devops/get-started/toc.json
   - name: FAQs
-    href: faqs.md
-  - name: Service limits  
-    href: service-limits.md
-  - name: Features index
-    href: alm-devops-features.md
+    href: user-guide-faqs.yml?toc=/azure/devops/get-started/toc.json
+  - name: Service limits
+    href: service-limits.md?toc=/azure/devops/get-started/toc.json
+- name: Resources
+  items:
   - name: Azure CLI
-    href: /cli/azure/devops
+    href: ../cli/index.md

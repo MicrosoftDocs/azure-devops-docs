@@ -1,26 +1,27 @@
-﻿---
+---
 title: Revoke personal access tokens for users
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Administrators can revoke personal access tokens (PATs) for users when they're compromised, protecting the organization.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/28/2020
-monikerRange: '>= tfs-2017'
+ms.date: 08/12/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Revoke personal access tokens for organization users
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If your personal access token (PAT) is compromised, take immediate action. Learn how an administrator can revoke a user's PAT, as a precaution to protect your organization. You can also disable a user, which revokes their PAT. There's latency (up to an hour) before the PAT stops working however, once the disable or delete function completes in Azure Active Directory (Azure AD). 
 
 ## Prerequisites
 
-Only an organization administrator or Project Collection Administrator (PCA) can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To learn how to find your organization's admin, see [Look up administrators and organization Owner](../security/lookup-organization-owner-admin.md).
+
+Only the **Organization owner** or a member of the **Project Collection Administrators** group can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/change-organization-collection-level-permissions.md). To learn how to find your **Organization owner**, see [Look up the organization owner](../security/look-up-organization-owner.md).
 
 For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
 

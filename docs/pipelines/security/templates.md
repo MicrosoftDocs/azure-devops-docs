@@ -3,18 +3,26 @@ title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: vijayma
-ms.date: 02/24/2021
-monikerRange: '> azure-devops-2019'
+ms.date: 01/24/2023
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Security through templates
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 [Checks on protected resources](resources.md) are the basic building block of security for Azure Pipelines.
 Checks work no matter the structure - the stages and jobs - of your pipeline.
 If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](../process/templates.md).
 
 Azure Pipelines offers two kinds of templates: **includes** and **extends**.
-Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it.
+Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it. For example, here an includes template (`include-npm-steps.yml`) is inserted into `steps`. 
+
+```yaml
+  steps:
+  - template: templates/include-npm-steps.yml 
+```
+
 To continue the C++ metaphor, `extends` templates are more like inheritance: the template provides the outer structure of the pipeline and a set of places where the template consumer can make targeted alterations.
 
 ## Use extends templates
@@ -78,6 +86,8 @@ steps:
   target: builder
 ```
 
+::: moniker range=">=azure-devops-2022"
+
 ### Agent logging command restrictions
 
 Restrict what services the Azure Pipelines agent will provide to user steps.
@@ -134,8 +144,8 @@ A template can rewrite user steps and only allow certain approved tasks to run.
 You can, for example, prevent inline script execution.
 
 > [!WARNING]
-> In the example below, only the literal step type "script" is prevented.
-> For full lockdown of ad-hoc scripts, you would also need to block "bash", "pwsh", "powershell", and the tasks which back these steps.
+> In the example below, the steps type "bash", "powershell", "pwsh" and "script" are prevented from executing.
+> For full lockdown of ad-hoc scripts, you would also need to block "BatchScript" and "ShellScript".
 
 ```yaml
 # template.yml
@@ -145,9 +155,22 @@ parameters:
   default: []
 steps:
 - ${{ each step in parameters.usersteps }}:
-  - ${{ each pair in step }}:
-    ${{ if ne(pair.key, 'script') }}:
-      ${{ pair.key }}: ${{ pair.value }}
+  - ${{ if not(or(startsWith(step.task, 'Bash'),startsWith(step.task, 'CmdLine'),startsWith(step.task, 'PowerShell'))) }}:  
+    - ${{ step }}
+  # The lines below will replace tasks like Bash@3, CmdLine@2, PowerShell@2
+  - ${{ else }}:  
+    - ${{ each pair in step }}:
+        ${{ if eq(pair.key, 'inputs') }}:
+          inputs:
+            ${{ each attribute in pair.value }}:
+              ${{ if eq(attribute.key, 'script') }}:
+                script: echo "Script removed by template"
+              ${{ else }}:
+                ${{ attribute.key }}: ${{ attribute.value }}
+        ${{ elseif ne(pair.key, 'displayName') }}:
+          ${{ pair.key }}: ${{ pair.value }}
+
+          displayName: 'Disabled by template: ${{ step.displayName }}'
 ```
 
 ```yaml
@@ -158,8 +181,18 @@ extends:
     usersteps:
     - task: MyTask@1
     - script: echo This step will be stripped out and not run!
+    - bash: echo This step will be stripped out and not run!
+    - powershell: echo "This step will be stripped out and not run!"
+    - pwsh: echo "This step will be stripped out and not run!"
+    - script: echo This step will be stripped out and not run!
+    - task: CmdLine@2
+      displayName: Test - Will be stripped out
+      inputs:
+        script: echo This step will be stripped out and not run!
     - task: MyOtherTask@2
 ```
+
+:::moniker-end
 
 ### Type-safe parameters
 
@@ -244,6 +277,7 @@ extends:
         image: 'windows-latest'
 
 ```
+::: moniker range=">=azure-devops"
 
 ### Additional steps
 
@@ -266,14 +300,14 @@ jobs:
     - task: PublishMyTelemetry@1      # Post steps
       condition: always()
 ```
+::: moniker-end
 
-<!-- Coming Q1 CY20
+
 ## Template enforcement
+
 A template is only a security mechanism if you can enforce it.
-The control point to enforce use of templates is once again a protected resource.
-Configure a template check on your agent pool or other protected resource.
-This check will fail if your pipeline does not extend the required template and will prevent access to that resource.
--->
+The control point to enforce use of templates is a [protected resource](resources.md).
+You can configure approvals and checks on your agent pool or other protected resources like repositories. For an example, see [Add a repository resource check](../process/repository-resource.md#add-a-repository-resource-check). 
 
 ## Next steps
 

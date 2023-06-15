@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 07/09/2020
 ms.topic: include
 ---
@@ -33,7 +32,7 @@ When the stages provided in the trigger filter are successfully completed in you
 
 ### Generic webhook based triggers for YAML pipelines
 
-Today, we have various resources (such as pipelines, containers, build, and packages) through which you can consume artifacts and enable automated triggers. Until now, however, you could not automate your deployment process based on other external events or services. In this release, we are introducing webhook trigger support in YAML pipelines to enable integration of pipeline automation with any external service. You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Aritfactory, etc.) and trigger your pipelines. 
+Today, we have various resources (such as pipelines, containers, build, and packages) through which you can consume artifacts and enable automated triggers. Until now, however, you could not automate your deployment process based on other external events or services. In this release, we are introducing webhook trigger support in YAML pipelines to enable integration of pipeline automation with any external service. You can subscribe to any external events through its webhooks (GitHub, GitHub Enterprise, Nexus, Aritfactory, etc.) and trigger your pipelines. 
 
 Here are the steps to configure the webhook triggers:
 1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:

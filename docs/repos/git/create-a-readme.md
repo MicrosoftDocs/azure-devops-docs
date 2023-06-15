@@ -4,25 +4,27 @@ titleSuffix: Azure Repos
 description: Tips, advice, and suggestions on how to create a great readme file for your Git repo.
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 06/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Create a README for your repo
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it. 
 Your readme should speak to the following audiences:
 
-- Users that just want to run your code
+- Users that just want to run your code.
 - Developers that want to build and test your code. Developers are also users.
 - Contributors that want to submit changes to your code. Contributors are both developers and users.
 
-Write your readme in [Markdown](../../project/wiki/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
+Write your readme in [Markdown](../../project/wiki/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to more documentation from your readme.
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 
@@ -32,7 +34,7 @@ Here are some great readmes that use this format and speak to all three audience
 
 ## Create an intro
 
-Start your readme off with a short explanation describing your project. Add a screenshot or animated GIF in your intro if your project has a user interface. 
+Start off your readme with a short explanation describing your project. Add a screenshot or animated GIF in your intro if your project has a user interface. 
 If your code relies on another application or library, make sure to state those dependencies in the intro or right below it. 
 Apps and tools that run only on specific platforms should have the supported operating system versions noted in this section of the readme.
 
@@ -48,19 +50,21 @@ If your project is a library or an interface to an API, put a code snippet showi
 
 ## Provide build steps for developers
 
-Use the next section of your readme to show developers how to build your code from a fresh clone of the repo and run any included tests.  
-Give details about the tools needed to build the code and document the steps to configure them to get a clean build.  
-Break out dense or complex build instructions into a separate page in your documentation and link to it if needed.  
-Run through the instructions as you write them in order to verify the instructions would work for a new contributor.  
-Remember, the developer relying on these instructions could be yourself after not working on a project for some time.   
+Use the next section of your readme to show developers how to build your code from a fresh clone of the repo and run any included tests. Do the following:
+
+- Give details about the tools needed to build the code and document the steps to configure them to get a clean build.  
+- Break out dense or complex build instructions into a separate page in your documentation and link to it if needed.  
+- Run through the instructions as you write them in order to verify the instructions would work for a new contributor.  
+
+Remember, the developer relying on these instructions could be you after not working on a project for some time.   
 
 Provide the commands to run any test cases provided with the source code after the build is successful. 
 Developers lean on these test cases to ensure that they don't break your code as they make changes. 
-Good test cases also serve as samples developers can use to build their own test cases when adding new functionality.
+Good test cases also serve as samples that developers can use to build their own test cases when adding new functionality.
 
 ## Help users contribute
 
-The last section of your readme helps users and developers get involved to report problems and suggest ideas to make your code better.
+The last section of your readme helps users and developers to get involved in reporting problems and suggest ideas to make your code better.
 Users should be linked to channels where they can open up bugs, request features, or get help using your code.   
 
 Developers need to know what rules they need to follow to contribute changes, such as coding/testing guidelines and pull request requirements.

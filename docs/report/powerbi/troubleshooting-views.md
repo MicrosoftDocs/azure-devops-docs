@@ -2,9 +2,9 @@
 title: Troubleshoot an Analytics view
 titleSuffix: Azure DevOps
 description: Learn how to resolve errors that occur with an Analytics view and Power BI for Azure DevOps.
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/13/2021
@@ -13,7 +13,7 @@ ms.date: 10/13/2021
 
 # Resolve errors associated with an Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Connector](data-connector-connect.md). 
 

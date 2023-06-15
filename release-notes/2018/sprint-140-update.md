@@ -2,7 +2,6 @@
 title: Pipeline container jobs - Sprint 140 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 9/20/2018
 description: In the Sprint 140 Update of Azure DevOps Services, you'll find a new way to customize build dependencies to your specific requirements with the introduction of container jobs in Azure Pipelines.
 ---
@@ -90,7 +89,7 @@ Jump over to our [quickstart guide to get started with Universal Packages](/azur
 
 ### Compress symbols when publishing to a file share
 
-We have updated the [Index & Publish Symbols task](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) to support compressing symbols when they are published to a file share.
+We have updated the [Index & Publish Symbols task](/azure/devops/pipelines/tasks/reference/publish-symbols-v2) to support compressing symbols when they are published to a file share.
 
 > [!div class="mx-imgBorder"]
 > ![Compress symbols](media/140_05.png)

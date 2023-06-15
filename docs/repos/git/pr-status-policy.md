@@ -3,16 +3,17 @@ title: Configure a branch policy for an external service
 titleSuffix: Azure Repos
 description: Configure a branch policy to require status from a 3rd party pull request status server
 ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 08/11/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 
 # Configure a branch policy for an external service 
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests. External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements. This article guides you through the process of configuring a branch policy for a service that is posting PR status. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
@@ -25,7 +26,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Configure the branch policy 
 
-1. Navigate to Code > Branches and find the branch that you want to configure the policy on (typically `master` or `develop`). From the context menu, select the **Branch policies** option.
+1. Navigate to **Code>Branches** and find the branch that you want to configure the policy on (typically `main` or `develop`). From the context menu, select the **Branch policies** option.
 
     ![Select Branch policies from the context menu](media/pr-status-policy/branches.png)
 

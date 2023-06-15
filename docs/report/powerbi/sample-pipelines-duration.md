@@ -2,34 +2,42 @@
 title: Pipeline duration sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline duration Power BI report.
-ms.technology: devops-analytics
-ms.reviewer: ravishan
-ms.author: kaghai
-ms.custom: powerbisample
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'     
-ms.date: 10/12/2021
+monikerRange: '>= azure-devops-2020'  
+ms.date: 12/15/2022
 ---
 
 # Pipeline duration sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
+The following image shows an example of a duration report for a specific pipeline for all pipeline runs from September 2022 to December 15 2022. 
+
+:::image type="content" source="media/pipeline-reports/duration-clustered-column-report.png" alt-text="Screenshot of Power BI Pipelines Duration clustered column report."::: 
+
 [!INCLUDE [temp](includes/preview-note.md)]
 
-An example of the pipeline duration report is shown in the following image.
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines duration - Report](media/odatapowerbi-pipelines/duration-report.png)
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Sample queries
+
+You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline duration reports. 
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
+ 
+
+### Return percentile durations for a specified pipeline  
+
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -75,9 +83,11 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+[!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
 
 ### Query breakdown
@@ -92,12 +102,13 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,7 +116,7 @@ The following table describes each part of the query.
    `Pipeline/PipelineName eq '{pipelinename}'`
    :::column-end:::
    :::column span="1":::
-   Return pipeline runs for the specified pipeline
+   Return pipeline runs for the specified pipeline.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,7 +124,7 @@ The following table describes each part of the query.
    `and CompletedDate ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return pipeline runs on or after the specified date
+   Return pipeline runs on or after the specified date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -121,7 +132,7 @@ The following table describes each part of the query.
    `and (SucceededCount eq 1 or PartiallySucceededCount eq 1)`
    :::column-end:::
    :::column span="1":::
-   Return only the successful or partially successful runs
+   Return only the successful or partially successful runs.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -129,7 +140,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -137,7 +148,7 @@ The following table describes each part of the query.
    `/compute(`
    :::column-end:::
    :::column span="1":::
-   Start compute()
+   Start `compute()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -145,14 +156,14 @@ The following table describes each part of the query.
    `percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,`
    :::column-end:::
    :::column span="1":::
-   Compute 50th percentile of Pipeline durations of all pipeline runs that match the filter criteria/td>
+   Compute 50th percentile of pipeline durations of all pipeline runs that match the filter criteria. 
 :::row-end:::
 :::row:::
    :::column span="1":::
    `percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,`
    :::column-end:::
    :::column span="1":::
-   Compute 80th percentile of Pipeline durations of all pipeline runs that match the filter criteria
+   Compute 80th percentile of pipeline durations of all pipeline runs that match the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -160,7 +171,7 @@ The following table describes each part of the query.
    `percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)`
    :::column-end:::
    :::column span="1":::
-   Compute 95th percentile of Pipeline durations of all pipeline runs that match the filter criteria
+   Compute 95th percentile of pipeline durations of all pipeline runs that match the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -168,7 +179,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -176,80 +187,18 @@ The following table describes each part of the query.
    `(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))`
    :::column-end:::
    :::column span="1":::
-   Group the response by - Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds
+   Group the response by `Duration50thPercentileInSeconds`, `Duration80thPercentileInSeconds`, and `Duration95thPercentileInSeconds` and end the `groupby` clause.
    :::column-end:::
 :::row-end:::
+ 
 
-[!INCLUDE [temp](includes/query-filters-pipelines.md)]
+### Return percentile durations for a specified pipeline ID 
 
-## Power BI transforms
+Pipelines can be renamed. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
 
-### Change column type
-
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
-
-1. Change the type of columns **Duration50thPercentileInSeconds, Duration80thPercentileInSeconds** and **Duration95thPercentileInSeconds** to **Decimal Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/duration-changecolumntype1.png)
-
-
-### Rename fields and query 
-
-When finished, you may choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/duration-renamerightclick.png)
-  
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
-  
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
-  
-  
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/duration-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Clustered Column chart**.
-
-1. Add the field "Duration50thPercentileInSeconds" to **Fields**.
-
-1. Add the field "Duration80thPercentileInSeconds" to **Fields**.
-
-1. Add the field "Duration95thPercentileInSeconds" to **Fields**.
-
-
-Your report should appear similar to the following image.   
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Report](media/odatapowerbi-pipelines/duration-report.png)
-
-
-## More queries
-
-You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
-
-
-### Use Pipeline ID, rather than Pipeline Name
-
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
-
-`https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
+```
+https://dev.azure.com/{organization}/{project}/_build?definitionId= {pipelineid}
+```
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -295,12 +244,12 @@ $apply=filter(
 
 ***
 
-### Filter by branch
+### Return percentile durations for a specified pipeline, filter by branch  
 
-You may want to view the duration of a pipeline for a particular **branch** only. To create the report, carry out the following extra steps along with those steps defined previously in this article.
+To view the duration of a pipeline for a particular **branch** only, use the following queries. To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Clustered column chart report](#create-the-clustered-column-chart-report) sections. 
 
-- Expand Branch into Branch.BranchName.  
-- Add the field **Branch.BranchName** to **Axis**.  
+- Expand `Branch` into `Branch.BranchName`.
+- Add the field **Branch.BranchName** to the **X-Axis**.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -346,14 +295,14 @@ $apply=filter(
 
 ***
 
-### Duration for all project pipelines
+### Return percentile durations for all project pipelines  
 
-You may want to view the duration for all the pipelines of the project in a single report. To create the report, follow the below extra steps along with what is defined previously in this article.
+To view the duration for all the pipelines of the project in a single report, use the following queries. To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Clustered column chart report](#create-the-clustered-column-chart-report) sections. 
 
-- Expand Pipeline into  Pipeline.PipelineName.
-- Add the field **PIpeline.PipelineName** to **Axis**.
+- Expand `Pipeline` into  `Pipeline.PipelineName`.
+- Add the field **PIpeline.PipelineName** to **X-Axis**.
 
-Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
+See also [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) for a sample report that has detailed similar steps as required here.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -396,11 +345,39 @@ $apply=filter(
 (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, Pipeline/PipelineName))
 ```
 
-***
+*** 
 
-## Full list of sample reports for Pipelines
 
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+## Change column data type
+
+From the **Transform** menu change the data type for the following columns to **Decimal Number**. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+- `Duration50thPercentileInSeconds`
+- `Duration80thPercentileInSeconds`
+- `Duration95thPercentileInSeconds`    
+
+## (Optional) Rename column fields
+
+You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+[!INCLUDE [temp](includes/close-apply.md)]
+ 
+## Create the Clustered column chart report
+
+1. In Power BI, under **Visualizations**, choose the **Clustered column chart** report. The example assumes that no columns were renamed.
+
+	:::image type="content" source="media/pipeline-reports/duration-clustered-column-visualizations.png" alt-text="Screenshot of Power BI Pipelines clustered column Visualizations and field selections.":::
+
+1. Add the following fields to the **Y-Axis**, right-click each field and ensure **Sum** is selected.
+	- `Duration50thPercentileInSeconds` 
+	- `Duration80thPercentileInSeconds` 
+	- `Duration95thPercentileInSeconds` 
+
+1. To change the report title, legend, or other report visuals, select the **Format your visual** paint-brush icon from the **Visualizations** pane and adjust one or more settings.  
+
+Your report should appear similar to the following image.  
+ 
+:::image type="content" source="media/pipeline-reports/duration-clustered-column-report.png" alt-text="Screenshot of Power BI Sample Pipelines Duration clustered column report.":::
+
 
 ## Related articles
 

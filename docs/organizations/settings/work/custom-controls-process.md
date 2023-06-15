@@ -3,18 +3,18 @@ title: Add a custom control to a WIT
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a custom control for work item type when working in Azure DevOps Services
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/19/2018
 ---
 
 # Add extensions and custom controls to a work item type  (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 With extensions, you can add rich functionality to your work item forms. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution (custom controls) 
@@ -135,14 +135,14 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 ## Group-level and page-level contributions
 
-When you add group-level and page-level contributions, they are automatically added to all WITs defined for all processes, both inherited and custom. You can choose to [hide these contributions from appearing on the form](customize-process-field.md#show-hide-field) for a specific WIT, or move it within the form from it's default location. 
+When you add group-level and page-level contributions, they are automatically added to all WITs defined for all processes, both inherited and custom. You can choose to [hide these contributions from appearing on the form](customize-process-field.md#show-hide-field) for a specific WIT, or move it within the form from the default location. 
 
 If you've installed a group or page contribution, refresh your browser, and then open a work item to view the placement of the contribution on the form. To move or hide the contribution, [follow the guidance provided for the Layout tab](customize-process-form.md).  
 
 
 ## Action-level contributions
 
-Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/uninstall-disable-extensions.md).  
+Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/install-extension.md#uninstall-disable-extension).  
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 

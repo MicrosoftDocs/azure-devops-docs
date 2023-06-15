@@ -1,0 +1,143 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/docs/pipelines/get-started/multi-stage-pipelines-experience.md",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/targets/cosmos-db.md",
+      "redirect_url": "/azure/cosmos-db/tutorial-setup-ci-cd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/library/government-cloud.md",
+      "redirect_url": "/azure/azure-government/connect-with-azure-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/release/deploy-iot-using-azure-pipelines.md",
+      "redirect_url": "/azure/iot-edge/how-to-continuous-integration-continuous-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/azure-functions-windows.md",
+      "redirect_url":"/azure/devops/pipelines/targets/azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/targets/azure-functions.md",
+      "redirect_url": "/azure/azure-functions/functions-how-to-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/function-app-container.md",
+      "redirect_url":"/azure/devops/pipelines/targets/azure-functions#deploy-a-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/webapp-on-container-linux.md",
+      "redirect_url":"/azure/devops/pipelines/apps/cd/deploy-docker-webapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/apps/cd/deploy-webdeploy-webapps.md",
+      "redirect_url":"/azure/devops/pipelines/targets/webapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/apps/cd/deploy-aks.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/aks-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/php-webapp.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/php",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/aks-template.md",
+      "redirect_url":"/azure/aks/devops-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/policies/azure-policy.md",
+      "redirect_url":"/azure/governance/policy/tutorials/policy-devops-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/configure-javascript.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/customize-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/java-function.md",
+      "redirect_url":"/azure/azure-functions/functions-how-to-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/webapp.md",
+      "redirect_url":"/azure/app-service/deploy-azure-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/azure-mysql.md",
+      "redirect_url":"/azure/mysql/single-server/azure-pipelines-mysql-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/tasks/test/cloud-based-load-test.md",
+      "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/tasks/test/cloud-based-web-performance-test.md",
+      "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/tasks/test/run-jmeter-load-test.md",
+      "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/azure-machine-learning.md",
+      "redirect_url":"/azure/machine-learning/how-to-devops-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/licensing/concurrent-pipelines-tfs.md",
+      "redirect_url":"/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/deployment-strategies.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/multi-cloud.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/bake.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/kubernetes/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v2-linux.md",
+      "redirect_url":"/azure/devops/pipelines/agents/linux-agent"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v2-windows.md",
+      "redirect_url":"/azure/devops/pipelines/agents/windows-agent"
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/agents/v2-osx.md",
+      "redirect_url":"/azure/devops/pipelines/agents/osx-agent"
+    }
+  ]
+}
+
+

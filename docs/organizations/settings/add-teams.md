@@ -1,191 +1,336 @@
 ---
-title: Create new team, move from one team to several teams
+title: Create or add a team
 titleSuffix: Azure DevOps 
-description: Learn how to add a new team to a project to scale your Agile tools in Azure DevOps.  
-ms.technology: devops-settings
+description: Learn how to create or add a team to a project to scale Azure DevOps.  
+ms.subservice: azure-devops-settings
+ms.custom: teams, devx-track-azurecli
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.author: kaelli
-author: KathrynEE
-ms.topic: quickstart
+ms.author: chcomley
+author: chcomley
+ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/10/2020
+ms.date: 05/19/2022
 ---
 
-# Add team, go from one default team to others
+# Create or add a team 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-As your organization grows, make sure that you configure your Agile tools to support that growth. Each team needs their own set of team tools to enable the autonomy it needs to manage their backlog and plan their sprints. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Each new project is configured with a default team with the project name. You can rename the default team and you can reassign a new team as the default. 
+ As your organization grows, you add teams to support that growth.  You create a team in Azure DevOps that corresponds to a group of project members focused on specific products, services, or feature areas. You add teams to provide them the tools they need to manage their backlog, plan sprints, configure dashboards, define alerts, and set team favorites.  
+
+Each new project is configured with a default team with the project name. For example, the project named Fabrikam Fiber is configured with the default team Fabrikam Fiber Team. You can rename the default team and you can reassign a new team as the default.  
+
+For a good understanding on how to remain Agile as you add teams, review [Scale Agile to Large Teams](/devops/plan/scaling-agile). For more information about team-configurable tools, see [About teams and Agile tools](about-teams-and-settings.md). 
+
 
 > [!NOTE]    
-> This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
->
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
+> This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams or the integration of Microsoft Teams with Azure Boards, see [Welcome to Microsoft Teams](/microsoftteams/teams-overview) or [Use the Azure Boards app in Microsoft Teams](../../boards/integrations/boards-teams.md). 
 
-<a id="add-team"> </a>  
+Use this article to learn how to perform the following tasks:  
+::: moniker range="azure-devops"
+> [!div class="checklist"]   
+> * Create a team and add team administrators and team members       
+> * Set the default team for a project  
+> * List teams using Azure CLI
+> * Grant additional permissions to teams 
+::: moniker-end
+::: moniker range="< azure-devops"
+> [!div class="checklist"]   
+> * Create a team and add team administrators and team members       
+> * Set the default team for a project   
+> * Grant additional permissions to teams 
+::: moniker-end
 
-As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber default team with visibility across each of these two teams.  
+To move work items assigned to one team to another team, see [Move work items from one team to another](../../boards/work-items/move-work-items.md).
 
 ## Prerequisites 
 
-- If you don't have a project yet, [create one](../projects/create-project.md).  
-- If you're not a Project Administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
-
-## Add two feature teams 
-
 ::: moniker range="azure-devops"
+- To create a team or set the default team, you must be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
+- To add members to a team or change its configuration, you must be a team administrator or member of the Project Administrators group. To get added as a team administrator, see [Add or remove a team administrator](add-team-administrator.md).
+- To use Azure CLI commands, you must first install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
+::: moniker-end
+::: moniker range="< azure-devops"
+- To create a team or set the default team, you must be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
+- To add members to a team or change its configuration, you must be a team administrator or member of the Project Administrators group. To get added as a team administrator, see [Add or remove a team administrator](add-team-administrator.md).
+::: moniker-end 
+
+<a id="add-team"> </a>  
+
+## Create a team and add team members
+
+From your web browser, you can view, create, and configure teams. Only members of the Project Administrators group can create teams.
 
 > [!NOTE]   
-> To enable the user interface for the **New Teams page**, see [Manage or enable features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [New Teams page](#tab/preview-page)
+> When you create a team, you can automatically create the **Area Path** the team will use as a child node of the main project node. If you plan on creating a hierarchical team structure, you may want to first define the **Area Paths** at the project level, then create your teams, and then assign the **Area Path(s)** to be used by each team. To learn more about this team structure, see [Configure a hierarchy of teams](../../boards/plans/configure-hierarchical-teams.md).
 
 ::: moniker range="azure-devops"
 
-Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
-
-1. From the web portal, choose **Project settings** and open **Teams**. 
-  
-   ![Screenshot of Open Project settings, and then Teams buttons on New Teams page](media/shared/open-project-settings-teams-preview.png)
-
-2. Choose **New team**. Give the team a name, and optionally a description. 
-   
-   
-	 ![Screenshot of New team dialog and Create team button selection on New Teams page](media/add-team/create-new-team-preview.png)
-
-3. Select the team to configure it, and then choose **Iterations and areas**. For more information, see [Define area paths and assign to a team](set-area-paths.md). See also [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md). 
-
-	 
-	 ![Screenshot of team profile, choose Iterations and areas link on New Teams page](media/add-team/team-profile-choose-iterations-and-areas.png)
-
-	> [!IMPORTANT]  
-	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
-
-	From the team profile, you can do these additional tasks:  
-   - [Add team administrators](add-team-administrator.md)
-   - [Add team members](#add-team-members)
-   - [Navigate to team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
-   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add-team), [update a team configuration](rename-remove-team.md#update-team), and [delete a team](rename-remove-team.md#delete-team). 
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
+[!INCLUDE [note-new-teams-page](../../includes/note-new-teams-page.md)]
 
-#### [Current page](#tab/current-page) 
+#### [New Teams UI](#tab/preview-page) 
+
+::: moniker range="azure-devops"
+1. From the web portal, choose **Project settings** and open **Teams**.   
+
+   ![Screenshot of Open Project settings, and then Teams buttons on New Teams page.](media/shared/open-project-settings-teams-preview.png)
+
+1. Choose **New team**.   
+
+	:::image type="content" source="media/add-team/new-team-button-new-teams-preview.png" alt-text="Screenshot of choose New Team button, New Teams preview feature enabled.":::
+
+1. Enter a team name and the names of project members who you want to assign to the team. Optionally, enter a description. You must add at least one name as a team **Administrator**. Select **Create an area path with the name of the team**, or leave it unchecked and assign the **Area Path** for the team after it's created. You can choose an existing area path or add a new one at that time. 
+
+	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
+
+	> [!NOTE] 
+	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, Kanban boards, and Taskboards. To learn more, see [Manage and configure team tools](manage-teams.md).   
+
+1. When finished, select **Create**.  
+
+1. Select the team to add a team image, or configure other team elements.  
+
+1. Choose **Settings** to upload an image, change the team name, add a team administrator, or delete the team.   
+
+	:::image type="content" source="media/add-team/team-settings-dialog-new-teams-preview.png" alt-text="Screenshot of Team Settings dialog, New Teams preview feature enabled.":::
+
+1. Choose **Save** to save any changes you made. 
+
+1.  Choose **Iterations and areas** to set the **Area Paths** and **Iteration Paths** for the team to use.   
+
+	:::image type="content" source="media/add-team/team-settings-select-iterations-areas-new-teams-preview.png" alt-text="Screenshot of team settings, Iterations and areas highlighted, New Teams preview feature enabled.":::
+
+	To learn how, see the following articles:  
+		- [Define area paths and assign to a team](set-area-paths.md)  
+		- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md).  
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+Choose the **Current UI** tab. The New Teams Page UI is only available for Azure DevOps Services. 
+::: moniker-end
+
+#### [Current UI](#tab/current-page)  
 
 ::: moniker range=">= azure-devops-2019"
 
-From your web browser, you can view teams that have been added and add teams. 
+1. From the web portal, choose **Project settings** and open **Teams**.   
 
-Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
+	![Screenshot of Open Project settings button, and then Teams button selection on Current page](media/shared/open-project-settings-team-new-nav.png)
+::: moniker-end
 
-1. From the web portal, choose **Project settings** and open **Teams**. 
-   
-   
-   ![Screenshot of Open Project settings button, and then Teams button selection on Current page](media/shared/open-project-settings-team-new-nav.png)
+::: moniker range="tfs-2018"
+1. From the web portal, choose **Project settings > Overview** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.    
 
-2. Choose **New team**. Give the team a name, and optionally a description. 
+	 ![Open project admin page](media/add-team/open-team-settings-tfs-2018.png) 
 
-	 
+::: moniker-end
+2. Choose **New team**. Give the team a name, and optionally a description. Choose a security group to add team members to.  
+
 	 ![Screenshot of New team subteam with its own area path on Current page](media/add-team/create-new-team-new-nav.png)
 
-3. Select the team to configure it, and then choose **Iterations and areas**. For more information, see [Define area paths and assign to a team](set-area-paths.md). See also [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md). 
+1. When finished, select **Create team**. As the creator of the team, you are automatically added as the team administrator. You can remove yourself as an administrator and assign others to that role in the following steps.
 
-	 
+1. Select the team to add team administrators, team members, configure iterations and areas. The Team Profile opens.   
+	From the team profile, you can perform these additional tasks:  
+	- [Add team members](#add-team-members)
+	- [Add and remove team administrators](add-team-administrator.md)
+	- [Navigate to team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
+	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+
+	<a id="add-team-members" />
+
+1. To add team members, choose **Add**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Profile, choose Add, currect page](../security/media/add-users/team-profile-choose-add.png)   
+
+4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
+
+	![Add users and group dialog, current page](../security/media/project-level-permissions-add-a-user.png)
+
+   > [!TIP]
+   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
+
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
+
+6. To add an account as a team administrator, choose **Add** under the **Team Profile, Administrators** section. For details, see [Add a team administrator](add-team-administrator.md). To remove yourself as an administrator, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: **Delete** next to your name.
+
+1. To configure the **Area Paths** and **Iteration Paths** for the team to use, choose **Iterations and areas**.   
+
    ![Screenshot of team profile, choose Iterations and areas link on Current page](media/add-team/team-profile-choose-iterations-and-areas.png)
 
-	> [!IMPORTANT]  
-	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
+	To learn how, see these articles: 
+		- [Define area paths and assign to a team](set-area-paths.md)  
+		- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md).  
+ 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-	From the team profile, you can do these additional tasks:  
-   - [Add team administrators](add-team-administrator.md)
-   - [Add team members](#add-team-members)
-   - [Navigate to team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
-   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+<a id="add-team-cli" /> 
 
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+::: moniker range="azure-devops"
 
-::: moniker-end
+You can add a team using [Azure DevOps team create](/cli/azure/devops/team#az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+> [!div class="tabbedCodeSnippets"]
+```azurecli
+az devops team create --name [--description] [--project] 
+```
 
-<a id="add-team-team-services" /> 
+#### Parameters
+ 
+- **name**: Required. Name of the new team.  
+- **description**: Optional. Description of the new team, enclose within parenthesis.    
+- **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.  
 
-1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.  
+#### Example
 
-	 ![Open project admin page](media/add-team/open-admin-context-tfs-2017.png) 
+The following command adds a team named **Production Planning** to the *fabrikamprime* organization, *Fabrikam Fiber* project, and returns a number of properties assigned to the team in YAML output format.  
 
-2. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. Or, leave it unchecked and assign the default area path for the team after it's created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
+> [!div class="tabbedCodeSnippets"]
+```azurecli
+az devops team create --name "Production Planning" --description "Team tasked with planning operations and new processes." --output yaml
+description: Team tasked with planning operations and new processes.
+```
 
-   	
-	 ![Screenshot of how to Create a subteam with its own area path](media/add-team/create-team-dialog.png)
+The YAML output listed below provides information on each of the attributes defined for the team. 
 
-3. Select the team to configure it. 
-
-   
-	 ![Screenshot of Web portal, project admin context, Overview page, Select a team to configure it](media/add-team/select-team.png)
-
-	The Team Profile opens. From the team profile, you can [Add team members](#add-team-members) and [Add team administrators](add-team-administrator.md).
-
-   	
-	 ![Screenshot of Team profile, choose Iterations and areas link](media/add-team/team-profile-tfs.png)  
-
-4. Select the set of sprints and area paths the team plans to use. For more information, see [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md).
-
-	> [!IMPORTANT]  
-	> Team tools aren't available until the team's default area path is set. 
-
-	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
-
-5. To assign a team as the default team, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for that team and select **Set team as project default**. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-<a id="add-team-tfs-2015" />
-
-1. From the web portal, choose Project Settings:::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open **Project Settings.**  
-
-	 <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Screenshot of Open project admin page" />
-
-2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
-
-	Or, leave it unchecked and assign the default area path for the team after it's created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
-
-   
-	 ![Screenshot of Create a subteam with its own area path](media/add-team/scale-agile-co.png)
-
-3. Select the team from the Overview tab to configure it.  
-
-   
-	 ![Screenshot of the Web portal, admin context, project, Overview page, Select a subteam to configure it](media/add-team/scale-agile-select-team-to-configure-it-co.png)
-
-4. To select the set of sprints the team plans to use, open the **Iterations** page for the team. See [Define iteration paths (also known as sprints) and configure team iterations](set-iteration-paths-sprints.md#activate).  
-
-5. To change the area paths assigned to the team, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-area-paths.md#team-area-paths).  
+> [!div class="tabbedCodeSnippets"]
+```YAML
+id: d3ee0804-601e-459b-ba31-c70d0153ee6b
+identity:
+  descriptor: Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1732201093-1654247747-2842177119-783707289-1-3902693433-3854875975-3003387648-1936292500
+  id: d3ee0804-601e-459b-ba31-c70d0153ee6b
+  isActive: true
+  isContainer: true
+  masterId: d3ee0804-601e-459b-ba31-c70d0153ee6b
+  memberOf: []
+  members: []
+  metaTypeId: 255
+  properties:
+    Account:
+      $type: System.String
+      $value: Production Planning
+    Description:
+      $type: System.String
+      $value: Team tasked with planning operations and new processes.
+    Domain:
+      $type: System.String
+      $value: vstfs:///Classification/TeamProject/854a3f67-9962-43d1-a968-2e5f2eb66c99
+    LocalScopeId:
+      $type: System.String
+      $value: 854a3f67-9962-43d1-a968-2e5f2eb66c99
+    Microsoft.TeamFoundation.Team:
+      $type: System.Boolean
+      $value: true
+    SchemaClassName:
+      $type: System.String
+      $value: Group
+    ScopeId:
+      $type: System.String
+      $value: f0bedec1-eaee-4e51-ba15-01716ab2095e
+    ScopeName:
+      $type: System.String
+      $value: Fabrikam Fiber
+    ScopeType:
+      $type: System.String
+      $value: TeamProject
+    SecuringHostId:
+      $type: System.String
+      $value: 5d5b8da6-3db7-4829-baf9-1e500c21cc12
+    SecurityGroup:
+      $type: System.String
+      $value: SecurityGroup
+    SpecialType:
+      $type: System.String
+      $value: Generic
+    VirtualPlugin:
+      $type: System.String
+      $value: ''
+  providerDisplayName: '[Fabrikam Fiber]\Production Planning'
+  resourceVersion: 2
+  subjectDescriptor: vssgp.Uy0xLTktMTU1MTM3NDI0NS0xNzMyMjAxMDkzLTE2NTQyNDc3NDctMjg0MjE3NzExOS03ODM3MDcyODktMS0zOTAyNjkzNDMzLTM4NTQ4NzU5NzUtMzAwMzM4NzY0OC0xOTM2MjkyNTAw
+identityUrl: https://spsprodeus27.vssps.visualstudio.com/A5d5b8da6-3db7-4829-baf9-1e500c21cc12/_apis/Identities/d3ee0804-601e-459b-ba31-c70d0153ee6b
+name: Production Plan
+projectId: 854a3f67-9962-43d1-a968-2e5f2eb66c99
+projectName: Fabrikam Fiber
+url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a968-2e5f2eb66c99/teams/d3ee0804-601e-459b-ba31-c70d0153ee6b
+```
  
 ::: moniker-end
 
+[!INCLUDE [note-cli-not-supported-on-premises](../../includes/note-cli-not-supported-on-premises.md)]
+
+* * *
+
+Upon creation of a team, the following items are automatically configured:  
+- Security group with the team name containing the members assigned to the team, for example, **[Fabrikam Fiber]\Production Planning**. You can use this name to filter queries or to **@mention** all members of the team. 
+- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
+- Default dashboard named **Overview** assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
+
+> [!IMPORTANT]   
+> Configuring the **Area Paths** and **Iteration Paths** used by the team is essential for many of the Azure Board tools to work, such as Backlogs, Boards, Sprints, and Delivery Plans. Team tools aren't available until the team's default area path is set. **Area Paths** and **Iteration Paths** are first configured for the project and then assigned or selected by the team.  
+>
+> If you are moving from one team to two or more teams, you may want to review and revise the **Area Paths** assigned to the default project team. 
+
+
+To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+
+<a id="include-area-paths"> </a>  
+
+## Set the default project team
+
+Each project has a default team assigned. You can change which project is assigned as the default with the following procedures.   
+
+#### [New Teams UI](#tab/preview-page) 
+::: moniker range="azure-devops"
+1. Open **Project settings > Teams** as indicated in the previous section. 
+
+1. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the team you want to designate as the default, and choose **Set team as project default**. 
+
+	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-new-ui.png)  
+::: moniker-end
+
+::: moniker range="< azure-devops"
+Choose the **Current UI** tab. The New Teams Page UI is only available for Azure DevOps Services. 
+::: moniker-end
+
+#### [Current UI](#tab/current-page) 
+
+::: moniker range=">= azure-devops-2019" 
+1. Open **Project settings > Teams** as indicated in the previous section. 
+::: moniker-end
+::: moniker range="tfs-2018" 
+1. Open **Project Settings > Overview** as indicated in the previous section. 
+::: moniker-end 
+1. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
+
+	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-current.png)  
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops" 
+There isn't an Azure CLI command to set the default team project. 
+::: moniker-end 
 
-From the Azure DevOps CLI command, you can list teams, add teams, and run other team management commands. 
 
-[List teams](#list-teams) | [Add a team](#add-team) | [Move work items](#move-work-items) | [Update a team](rename-remove-team.md#update-team) | [Delete a team](rename-remove-team.md#delete-team)
+[!INCLUDE [note-cli-not-supported-on-premises](../../includes/note-cli-not-supported-on-premises.md)]
+
+* * *
+  
 
 <a id="list-teams" /> 
 
-### List teams 
+::: moniker range="azure-devops" 
 
-You can list teams using [Azure DevOps team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+## List teams with Azure CLI
+
+You can list teams using [Azure DevOps team list](/cli/azure/devops/team#az-devops-team-list). To learn how to list team members, see [Add users to a team or project, List team members](../security/add-users-team-project.md#list-members).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -203,12 +348,6 @@ az devops team list [--project]
 - **skip**: Optional. Number of teams to skip.  
 - **top**: Optional. Maximum number of teams to return. 
 
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-::: moniker range=">= azure-devops-2020"
-
 #### Example
 
 For example, the following command returns the 11 teams defined in the Fabrikam Fiber project. For addition output formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli). 
@@ -218,6 +357,12 @@ Each team is assigned a unique ID.
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
 az devops team list --project "Fabrikam Fiber" --output table
+```
+
+The table output listed below provides information on each of the attributes defined for the team. 
+
+> [!div class="tabbedCodeSnippets"]
+```azurecli
 ID                                    Name                Description
 ------------------------------------  ------------------  ----------------------------------------------------------------------------
 7f099146-29a2-4798-9949-77c9f5f79653  Account Management  Management team focused on creating and maintaining customer services
@@ -233,430 +378,7 @@ b70aa504-33b4-4d17-a85d-0fbf4829a154  Phone               Feature team deliverin
 cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused on voice communications
 ```
 
-<a id="add-team-cli" /> 
-
-### Add a team 
-
-You can add a team using [Azure DevOps team create](/cli/azure/devops/team#ext-azure-devops-az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az devops team create --name
-                      [--description]
-                      [--project] 
-```
-
-#### Parameters
- 
-- **name**: Required. Name of the new team.  
-- **description**: Optional. Description of the new team.   
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
-
-#### Example
-
-The following command adds a team named **Web** to the Fabrikam Fiber project, and returns a number of properties of the team. 
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az devops team create --name Web --project "Fabrikam Fiber"
-{
-  "description": "",
-  "id": "5385556a-254d-4ad4-bd11-71955e3a7070",
-  "identity": {
-    "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-227716950-993605186-2584159299-2630527068-1-1113613831-2979292483-2600436946-77439922",
-    "id": "5385556a-254d-4ad4-bd11-71955e3a7070",
-    "isActive": true,
-    "isContainer": true,
-    "masterId": "5385556a-254d-4ad4-bd11-71955e3a7070",
-    "memberOf": [],
-    "members": [],
-    "metaTypeId": 255,
-    "properties": {
-      "Account": {
-        "$type": "System.String",
-        "$value": "Web"
-      },
-      "Description": {
-        "$type": "System.String",
-        "$value": ""
-      },
-      "Domain": {
-        "$type": "System.String",
-        "$value": "vstfs:///Classification/TeamProject/56af920d-393b-4236-9a07-24439ccaa85c"
-      },
-      "LocalScopeId": {
-        "$type": "System.String",
-        "$value": "56af920d-393b-4236-9a07-24439ccaa85c"
-      },
-      "Microsoft.TeamFoundation.Team": {
-        "$type": "System.Boolean",
-        "$value": true
-      },
-      "SchemaClassName": {
-        "$type": "System.String",
-        "$value": "Group"
-      },
-      "ScopeId": {
-        "$type": "System.String",
-        "$value": "e03662ad-bec4-4a33-bb0f-86e365ee2d88"
-      },
-      "ScopeName": {
-        "$type": "System.String",
-        "$value": "Fabrikam Fiber"
-      },
-      "ScopeType": {
-        "$type": "System.String",
-        "$value": "TeamProject"
-      },
-      "SecuringHostId": {
-        "$type": "System.String",
-        "$value": "380ed149-33d0-4d78-a7ed-89921802f389"
-      },
-      "SecurityGroup": {
-        "$type": "System.String",
-        "$value": "SecurityGroup"
-      },
-      "SpecialType": {
-        "$type": "System.String",
-        "$value": "Generic"
-      },
-      "VirtualPlugin": {
-        "$type": "System.String",
-        "$value": ""
-      }
-    },
-    "providerDisplayName": "[Fabrikam Fiber]\\Web",
-    "resourceVersion": 2,
-    "subjectDescriptor": "vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTExMTM2MTM4MzEtMjk3OTI5MjQ4My0yNjAwNDM2OTQ2LTc3NDM5OTIy"
-  },
-  "identityUrl": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/5385556a-254d-4ad4-bd11-71955e3a7070",
-  "name": "Web",
-  "projectId": "56af920d-393b-4236-9a07-24439ccaa85c",
-  "projectName": "Fabrikam Fiber",
-  "url": "https://dev.azure.com/fabrikam/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/5385556a-254d-4ad4-bd11-71955e3a7070"
-}
-```
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
-
-* * *
-
-<a id="add-team-members"> </a>  
-
-## Add team members
-
-When you set up a team structure for the first time, add user accounts as team members. This action provides access to the project and team assets. Moving from one team to two teams, team members already have access to the project. To support sharing code, planning, and tracking work, you must have access to the project. 
-
-Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
-
-::: moniker range="azure-devops"  
-
-> [!NOTE]   
-> You must first [add a user to a project or to your organization](../accounts/add-organization-users.md) or [set up your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way you can add user identities to a team.
-
-::: moniker-end
- 
-For more information, see [Add users to a project or specific team](../security/add-users-team-project.md). 
-
-::: moniker range="< azure-devops"  
-
-> [!NOTE]   
-> The first time you add a user account, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups).
-
 ::: moniker-end 
-
-
-
-## Move work items under teams 
-
-Now that your two feature teams are configured, you need to move existing work items from their current assignments to the team's default area path. This way, the work items show up on each team's backlog. 
-
-#### [New Teams page](#tab/preview-page)
-
-[!INCLUDE [note-new-teams-not-supported](../../includes/note-new-teams-not-supported.md)]
-
-#### [Current page](#tab/current-page) 
- 
-::: moniker range=">= azure-devops-2019"
-
-1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
-
-   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items" />
-
-2. After you bulk modify, do a bulk save.  
-  
-   <img src="media/add-team/query-bulk-save.png" alt="Screenshot of Bulk save edited work items" />  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"  
-
-1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
-
-2. After you bulk modify, do a bulk save.  
-
-   ![Screenshot of the Web portal, Queries page, Bulk save selected work items](media/add-team/scale-agile-bulk-save-area-path-co.png)  
-
-::: moniker-end  
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="move-work-items" /> 
-
-::: moniker range=">= azure-devops-2020"
-
-You can move work items to a new area paths using [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az boards work-item update --id
-                           [--area]
-                           [--assigned-to]
-                           [--description]
-                           [--discussion]
-                           [--fields]
-                           [--iteration]
-                           [--open]
-                           [--reason]
-                           [--state]
-                           [--title]
-```
-
-#### Parameters
-
-- **id**: Required. The ID of the work item to update.
-- **area**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.  
-- **assigned-to**: Optional. Name of the person the work item is assigned to *Jamal*.
-- **description**: Optional. Description of the work item. 
-- **discussion**: Optional. Comment to add to a discussion in a work item.
-- **fields**: Optional. Space separated "field=value" pairs for custom fields you want to set.
-- **iteration**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.  
-- **open**: Optional. Open the work item in the default web browser. 
-- **reason**: Optional. Reason for the state of the work item. 
-- **state**: Optional. State of the work item, for example, *Active*. 
-- **title**: Optional. Title of the work item. 
-
-#### Example
-
-You can only move one work item at a time using Azure DevOps CLI. In this example, we move work item ID=487 under the Fabrikam Fiber/Service Delivery/Email area path.
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Email"
-{
-  "fields": {
-    "Microsoft.VSTS.Common.BacklogPriority": 1944453550.0,
-    "Microsoft.VSTS.Common.Priority": 1,
-    "Microsoft.VSTS.Common.Severity": "3 - Medium",
-    "Microsoft.VSTS.Common.StateChangeDate": "2016-11-15T23:24:26.143Z",
-    "Microsoft.VSTS.Common.ValueArea": "Business",
-    "System.AreaPath": "Fabrikam Fiber\\Service Delivery\\Email",
-    "System.AssignedTo": {
-      "_links": {
-        "avatar": {
-          "href": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw"
-        }
-      },
-      "descriptor": "msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw",
-      "displayName": "Raisa Pokrovskaya",
-      "id": "bd30c189-db0f-4dd6-9418-5d8b41dc1754",
-      "imageUrl": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw",
-      "uniqueName": "fabrikamfiber5@hotmail.com",
-      "url": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/bd30c189-db0f-4dd6-9418-5d8b41dc1754"
-    },
-    "System.BoardColumn": "New",
-    "System.BoardColumnDone": false,
-    "System.ChangedBy": {
-      "_links": {
-        "avatar": {
-          "href": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk"
-        }
-      },
-      "descriptor": "msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
-      "displayName": "Kathryn",
-      "id": "a0f9fe47-8a0a-438c-adfb-403c69664618",
-      "imageUrl": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
-      "uniqueName": "kebelliott@msn.com",
-      "url": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/a0f9fe47-8a0a-438c-adfb-403c69664618"
-    },
-    "System.ChangedDate": "2019-08-15T20:36:18.34Z",
-    "System.CommentCount": 0,
-    "System.CreatedBy": {
-      "_links": {
-        "avatar": {
-          "href": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk"
-        }
-      },
-      "descriptor": "msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
-      "displayName": "Kathryn",
-      "id": "a0f9fe47-8a0a-438c-adfb-403c69664618",
-      "imageUrl": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
-      "uniqueName": "kebelliott@msn.com",
-      "url": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/a0f9fe47-8a0a-438c-adfb-403c69664618"
-    },
-    "System.CreatedDate": "2016-11-15T23:24:26.143Z",
-    "System.IterationPath": "Fabrikam Fiber\\Release 1\\Sprint 4",
-    "System.Reason": "New defect reported",
-    "System.State": "New",
-    "System.TeamProject": "Fabrikam Fiber",
-    "System.Title": "Check issues with permissions",
-    "System.WorkItemType": "Bug",
-    "WEF_1C5A9C9263944104B13DEF47AB16892F_Kanban.Column": "Backlog",
-    "WEF_1C5A9C9263944104B13DEF47AB16892F_Kanban.Column.Done": false,
-    "WEF_728F47E9D8BF470AB800917CB3E81BD0_Kanban.Column": "New",
-    "WEF_728F47E9D8BF470AB800917CB3E81BD0_Kanban.Column.Done": false,
-    "WEF_7ADD68E5D87D4B75AA575F3757C5FB14_Kanban.Column": "New",
-    "WEF_7ADD68E5D87D4B75AA575F3757C5FB14_Kanban.Column.Done": false,
-    "WEF_7E5E0F9353CB4F0091FCCE45C49F5636_Kanban.Column": "New",
-    "WEF_7E5E0F9353CB4F0091FCCE45C49F5636_Kanban.Column.Done": false,
-    "WEF_E825423B472B438797D4385614A48F91_Kanban.Column": "New",
-    "WEF_E825423B472B438797D4385614A48F91_Kanban.Column.Done": false
-  },
-  "id": 487,
-  "relations": [
-    {
-      "attributes": {
-        "isLocked": false,
-        "name": "Parent"
-      },
-      "rel": "System.LinkTypes.Hierarchy-Reverse",
-      "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/546"
-    },
-    {
-      "attributes": {
-        "isLocked": false,
-        "name": "Child"
-      },
-      "rel": "System.LinkTypes.Hierarchy-Forward",
-      "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/374"
-    }
-  ],
-  "rev": 24,
-  "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/487"
-}
-
-```
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-* * *
-
-
-<a id="include-area-paths"> </a>  
-
-## Configure the default project team 
-
-One last step in moving from one team to two teams requires configuring the default project team to exclude sub-areas.  
-
-#### [New Teams page](#tab/preview-page) 
-
-::: moniker range="azure-devops"
-
-1. Open **Project settings > Team configuration > Areas** settings page for the default project team, and change the setting as shown.  
-
-	   
-	 ![Screenshot of Default project team configuration, and Exclude work items defined in sub-area paths on the New Teams page](media/add-team/exclude-areas-default-team-vert.png)  
-
-2. Refresh the product backlog page for the team, and you see only those work items assigned to the *Fabrikam Fiber* area path.
-  
-     
-   ![Screenshot of the product backlog and the default project team on the New Teams page](media/add-team/product-backlog-default-team.png)
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
-
-#### [Current page](#tab/current-page) 
-
-::: moniker range=">= azure-devops-2019" 
-
-1. Open **Project settings > Team configuration > Areas** settings page for the default project team, and change the setting as shown.  
-
-	   
-	 ![Screenshot of Current page default project team configuration, Exclude work items defined in sub-area paths, new nav](media/add-team/exclude-areas-default-team-vert.png)  
-
-2. Refresh the product backlog page for the team, and you see only those work items assigned to the *Fabrikam Fiber* area path.  
-
-	   
-	 ![Screenshot of Current page Product backlog, default project team](media/add-team/product-backlog-default-team.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-1. Open the **Work > Areas** settings page for the default project team, and change the setting as shown.  
-
-	   
-	 ![Screenshot of Web portal, Admin context, default project, Exclude work items defined in sub-area paths](media/add-team/exclude-areas-default-team-horz.png)  
-
-2. Refresh the product backlog page for the team, and you see only those work items assigned to the *Fabrikam Fiber* area path.  
-
-     
-   ![Screenshot of the Backlog view of default team](media/add-team/product-backlog-default-team-horz.png)  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-1. Open the **Areas** settings page for the default project team, and change the setting as shown.  
-
-	 ![Screenshot of the Web portal, Admin context, default project, Exclude work items defined in sub-area paths](media/add-team/multiple-teams-exclude-sub-area-paths.png)  
-
-2. Refresh the product backlog page for the team, and you see only those work items assigned to the *Fabrikam Fiber* area path.  
-
-   ![Screenshot of the Web portal, Backlog view of default team](media/add-team/multiple-teams-product-backlog-default-team.png)  
-
-::: moniker-end
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-::: moniker range=">= azure-devops-2020" 
-
-You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az boards area team add --path  --team
-                        [--include-sub-areas {false, true}]
-                        [--project]
-                        [--set-as-default]
-```
-
-#### Parameters
-
-- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. 
-- **team**: Required. Name or ID of the team.
-- **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true. 
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
-- **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
-
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
-
-#### Example
-
-For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
-Area                                   Include sub areas    Is Default
--------------------------------------  -------------------  ------------
-Fabrikam Fiber\Service Delivery\Voice  False                False
-Fabrikam Fiber\Voice                   True                 True
-```
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
-
-
-* * *
-
 
 <a id="grant-add-permissions"></a>  
 
@@ -664,40 +386,31 @@ Fabrikam Fiber\Voice                   True                 True
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
 
-- Create and edit child nodes under their default area path
-- Create and edit child nodes under an existing iteration node 
-- Create shared queries and folders under the Shared Queries folder
+- [Create and edit child nodes under their default area path](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path) 
+- [Create shared queries and folders under the **Shared Queries** folder](../../boards/queries/set-query-permissions.md)
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
-::: moniker range="< azure-devops" 
+::: moniker range="< azure-devops-2022" 
 
-If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2017" 
-
-If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites. 
-
--  [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) 
--  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
+If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 
 ::: moniker-end 
+
 
 ## Next steps
 
-Configure your Agile tools to support how your team works. Also, consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members, add a picture to the team profile, and configure and manage all team features.  
-
 > [!div class="nextstepaction"]
-> [Add team administrator](add-team-administrator.md)
-> or
+> [Move work items from one team to another team](../../boards/work-items/move-work-items.md) or 
 > [Manage teams and configure team tools](manage-teams.md)
 
 ## Related articles
 
 - [Rename or remove a team](rename-remove-team.md)
 - [About teams and Agile tools](about-teams-and-settings.md)
+- [Add users to a team or project](../security/add-users-team-project.md)
+
+**Rest API resources**
 - [Azure DevOps Teams CLI](/cli/azure/devops/team)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Work Items (REST API)](/rest/api/azure/devops/wit)

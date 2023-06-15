@@ -1,18 +1,19 @@
-﻿---
+---
 title: Differences between process customizations
 titleSuffix: Azure DevOps Services  
 description: Summary of what you can and can't customize in a process template to support customized work tracking in Azure DevOps Services.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
-ms.author: kaelli
-author: KathrynEE
+ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
 # Process template customizations differences between Azure DevOps Services and TFS  
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
  
 > [!IMPORTANT]  
 > Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](../../../../migrate/migration-overview.md). 
@@ -26,6 +27,9 @@ Azure DevOps Services uses a different model than Team Foundation Server (TFS) f
 * In Azure DevOps Services, process is shared across multiple projects and is the scope you customize.  
  
 The structure and overall syntax used in defining process templates remains the same, with only a few minor differences existing between templates you customize for import into Azure DevOps Services and those you upload to support an on-premises TFS.  
+
+> [!NOTE]  
+> Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.
 
 ## Unsupported customizations and unreferenced plug-in files
 

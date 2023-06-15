@@ -2,19 +2,19 @@
 title: Add or remove columns within a work item list in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add column fields to show and sort fields for a backlog or query in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 04/01/2022
 ---
 
 # Manage columns in a work item list in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
-[!INCLUDE [temp](../includes/version-visual-studio.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 <a id="column-options">  </a>
 
@@ -118,17 +118,17 @@ Specifically, you can do the following actions from the following list views:
 
 
 ::: moniker range="azure-devops"
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../work-items/work-item-fields.md#review-fields)
 
 ::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../work-items/work-item-fields.md#review-fields)
 ::: moniker-end 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project.
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Once you set the column options for a specific view, your settings  persist unti
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those options you set for a portfolio backlog. 
 - Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
@@ -163,7 +163,7 @@ Once you set the column options for a specific view, your settings  persist unti
 > [!NOTE]    
 > You can't set column options for other members of your team. Also, for projects that use the Inheritance process model, you can't set default column options. For projects that use the On-premises XML process model, you can set the default column options for product, portfolio, and sprint backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]    
 > You can't set column options for other members of your team. For projects that use the On-premises XML process model, you can set the default column options for product and portfolio backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 ::: moniker-end
@@ -179,7 +179,7 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 ::: moniker-end 
 
 
- ::: moniker range="<= tfs-2018"
+ ::: moniker range="tfs-2018"
 
 ![Open column options](media/set-column-open-dialog-s125.png) 
 
@@ -191,30 +191,15 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= tfs-2018"
-
 In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../media/icons/delete_icon.png).
 
-::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]    
 > The following dialog is available from TFS 2018.2 and later versions. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
 ![Column options dialog](media/set-column-options-s125.png)  
-::: moniker-end
-
-
-::: moniker range="<= tfs-2017"
-
-Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ↑/↓ up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
- 
-![Column options dialog, TFS](media/b-vs-b-column-options.png)
-
-::: moniker-end
-
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -257,7 +242,7 @@ You can sort query results and Work items views. From the Column options dialog,
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can sort query results. From the Column options dialog, choose **Sorting**.  Add or remove a column field and drag and drop it into the order you want. Choose the up or down arrows to choose whether it sorts in ascending or descending order. 
 
@@ -277,10 +262,9 @@ You can change the column order, column size, or sort options by using the follo
 	- To reverse the sort order, SHIFT+click on the field 
 	- To sort by multiple columns, SHIFT+click on each column in the order you want to sort   
 
-::: moniker range=">= tfs-2015"
 
 For other keyboard shortcuts, enter **?** to display available shortcuts based on the page you're on. 
-::: moniker-end
+
 
 ## Related articles
 

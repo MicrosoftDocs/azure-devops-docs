@@ -1,15 +1,12 @@
 ---
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 09/07/2021
+ms.date: 04/04/2022
 ---
 
-::: moniker range=">= tfs-2017"
-
 Widgets are annotated as follows: 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 - **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
@@ -21,7 +18,7 @@ Widgets are annotated as follows:
 - **User**: Widget is scoped to the logged in user account
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 - **Build**: Widget derives data for a selected build pipeline  
 - **Release**: Widget derives data for a selected release pipeline  
 - **Team**: Widget is scoped to a single team  
@@ -69,7 +66,7 @@ Widgets are annotated as follows:
       - [Velocity](../dashboards/widget-catalog.md#velocity-widget) (Analytics)  
       - [Work links](../dashboards/widget-catalog.md#work-links-widget)  
       ::: moniker-end
-      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      ::: moniker range="tfs-2018"
       **Work**
       - [Assigned to me](../dashboards/widget-catalog.md#assigned-to-me-widget) (User)
       - [Chart for work items](../dashboards/widget-catalog.md#chart-wit-widget)  
@@ -82,8 +79,8 @@ Widgets are annotated as follows:
       - [Work links](../dashboards/widget-catalog.md#work-links-widget)  
       ::: moniker-end
       ---
-      ::: moniker range="<= tfs-2018"
-      **Repos** 
+      ::: moniker range="tfs-2018"
+      **Code** 
       - [Code tile](../dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
       - [Pull request](../dashboards/widget-catalog.md#pull-request-widget) (Team, User)
       ::: moniker-end
@@ -114,7 +111,7 @@ Widgets are annotated as follows:
       - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget) 
       - [Welcome](../dashboards/widget-catalog.md#how-to-widget) 
       ::: moniker-end
-      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      ::: moniker range="tfs-2018"
       **Build & Release**
       - [Build history](../dashboards/widget-catalog.md#build-history-widget) (Build pipeline)
       - [Deployment status](../dashboards/widget-catalog.md#deployment-status-widget) (Build pipeline)
@@ -132,16 +129,6 @@ Widgets are annotated as follows:
       - [Markdown](../dashboards/widget-catalog.md#markdown-widget)  
       - [Other links](../dashboards/widget-catalog.md#other-links-widget-2018)  
       - [Team members](../dashboards/widget-catalog.md#team-members-widget) (Team) 
-      - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget) 
-      - [Welcome](../dashboards/widget-catalog.md#how-to-widget) 
-      ::: moniker-end
-      ::: moniker range="tfs-2017"
-      **Information and links**
-      - [Embedded web page](../dashboards/widget-catalog.md#embedded-webpage-widget)  
-      - [Markdown](../dashboards/widget-catalog.md#markdown-widget)  
-      - [Other links](../dashboards/widget-catalog.md#other-links-widget-2018)  
-      - [Team members](../dashboards/widget-catalog.md#team-members-widget) (Team) 
-      - [Team room](../dashboards/widget-catalog.md#team-room-widget) (Team) 
       - [Visual Studio Shortcuts](../dashboards/widget-catalog.md#visual-studio-widget) 
       - [Welcome](../dashboards/widget-catalog.md#how-to-widget) 
       ::: moniker-end

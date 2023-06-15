@@ -2,7 +2,6 @@
 title: YAML improvements in Azure Pipelines - Sprint 142 Update
 author: erindormier
 ms.author: egeaney
-ms.technology: devops-release-notes
 ms.date: 10/22/2018
 description: In the Sprint 142 Update of Azure DevOps, we have made several improvements to YAML in Azure Pipelines
 ---
@@ -234,13 +233,13 @@ We are releasing a public preview of Pipeline Artifacts, a new highly scalable a
 
 ### Publish code as wiki with Contribute permissions
 
-Earlier, only users having **Create Repository** permission on a git repository were able to publish code as wiki. This made the repository administrators or creators a bottleneck for any requests to publish markdown files hosted in git repos as wikis. Now, you can **Publish code as wiki** if you just have **Contribute permission** on the code repository.
+Earlier, only users having **Create Repository** permission on a git repository were able to publish code as wiki. This made the repository administrators or creators a bottleneck for any requests to publish Markdown files hosted in git repos as wikis. Now, you can **Publish code as wiki** if you just have **Contribute permission** on the code repository.
 
 ## Administration
 
 ### PATs enforce CAP
 
-In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](../2017/feb-15-team-services.md#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
+In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/previous-versions/azure/devops/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Next steps
 

@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Deploy from multiple branches using Azure Pipelines
 
-**Azure Pipelines | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Artifact filters can be used with release triggers to deploy from multiple branches. Applying the artifact filter to a specific branch enables deployment to a specific stage when all the conditions are met.
 

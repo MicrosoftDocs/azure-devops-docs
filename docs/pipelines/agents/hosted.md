@@ -4,13 +4,13 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/30/2021
-monikerRange: '>= tfs-2015'
+ms.date: 06/12/2023
+monikerRange: '<= azure-devops'
 ---
 
 # Microsoft-hosted agents
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="< azure-devops"
 
@@ -30,33 +30,60 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2022 with Visual Studio 2022 | *windows-2022* |  `windows-2022` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
-| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md) |
-| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
-| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md) |
-| macOS 11 Big Sur | *macOS-11* |  `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
-| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md) |
-| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md) |
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md) |
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2019-Readme.md) |
+| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
+| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
+| macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-13-Readme.md) |
+| macOS 12 Monterey | *macOS-12* | `macOS-latest` OR `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
+| macOS 11 Big Sur | *macOS-11* | `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
+
+The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
-> [!NOTE]
-> In March 2020, we removed the following Azure Pipelines hosted images:
->
-> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/actions/virtual-environments/tree/main/images/win) (`vs2015-win2012r2`)
-> - [macOS X High Sierra 10.13](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
-> - [Windows Server Core 1803](https://github.com/actions/virtual-environments/tree/main/images/win) - (`win1803`)
->
-> Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
->
-> For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
+
+### Recent updates
+
+* The macOS 13 image is available
+* The macOS 10.15 image is fully unsupported as of 4/24/2023
+* Ubuntu 18.04 has been retired
+* [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
+* [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
+* [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
+* [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
+* [`windows-latest` images will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
+* [`macOS-latest` images will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
+* [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
+* The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
+* In December 2021, we removed the following Azure Pipelines hosted image:
+  * macOS X Mojave 10.14 (`macOS-10.14`)
+* In March 2020, we removed the following Azure Pipelines hosted images:
+  * Windows Server 2012R2 with Visual Studio 2015 (`vs2015-win2012r2`)
+  * macOS X High Sierra 10.13 (`macOS-10.13`)
+  * Windows Server Core 1803 (`win1803`)
+
+Customers are encouraged to migrate to newer versions or a [self-hosted agent](windows-agent.md).
+
+For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 > [!IMPORTANT]
-> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/virtual-environments), where we manage the scripts to generate various images.
+> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
+
+### How to identify pipelines using a deprecated hosted image
+
+To identify pipelines that are using a deprecated image, browse to the following location in your organization: `https://dev.azure.com/{organization}/{project}/_settings/agentqueues`, and filter on the image name to check. The following example checks the `vs2017-win2016` image.
+
+:::image type="content" source="media/pool-filter-vs2017-win2016.png" alt-text="Screenshot of filtering pipelines by image name.":::
+
+You can also query job history for deprecated images across projects using the script located [here](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages), as shown in the following example.
+
+```powershell
+./QueryJobHistoryForRetiredImages.ps1 -accountUrl https://dev.azure.com/{org} -pat {pat}
+```
 
 ## Use a Microsoft-hosted agent
 
@@ -237,7 +264,7 @@ Microsoft-hosted agents:
 Microsoft-hosted agents do not offer:
 
 * The ability to remotely connect.
-* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
+* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#publish-from-tfs-to-a-unc-file-share).
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
@@ -250,15 +277,18 @@ If Microsoft-hosted agents don't meet your needs, then you can deploy your own [
 
 ### How can I see what software is included in an image?
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table. 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table.
+
+> [!NOTE]
+> [!INCLUDE [include](includes/system-prefer-git-from-path.md)]
 
 ### How does Microsoft choose the software and versions to put on the image?
 
-More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments/blob/main/docs/software-and-images-guidelines.md). 
+More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/runner-images/blob/main/docs/create-image-and-azure-resources.md). 
 
 ### When are the images updated?
 
-Images are typically updated weekly. You can check the [status badges](https://github.com/actions/virtual-environments) which are in the format `20200113.x` where the first part indicates the date the image was updated.
+Images are typically updated weekly. You can check the [status badges](https://github.com/actions/runner-images) which are in the format `20200113.x` where the first part indicates the date the image was updated.
 
 ### What can I do if software I need is removed or replaced with a newer version?
 
@@ -290,7 +320,7 @@ All Azure DevOps organizations are provided with several free parallel jobs for 
 
 Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (for example, Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
-- You can create a new issue on the [repository](https://github.com/actions/virtual-environments), where we track requests for additional software. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
+- You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
 
 - You can use [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md). With these agents, you are fully in control of the images that are used to run your pipelines.
 
@@ -298,7 +328,7 @@ Your self-hosted agent probably has all the right dependencies installed on it, 
 
 Your local machine probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
-- You can create a new issue on the [repository](https://github.com/actions/virtual-environments), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
+- You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
 
 - You can use [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md). With these agents, you are fully in control of the images that are used to run your pipelines.
 
@@ -306,7 +336,7 @@ Your local machine probably has all the right dependencies installed on it, wher
 
 Microsoft-hosted agents only have 10 GB of disk space available for running your job. This space is consumed when you check out source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we cannot increase the free space available on Microsoft-hosted images. You can restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
-### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network? How do we get a list of IP addresses to allow in our firewall?
+### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network. How do we get a list of IP addresses to allow in our firewall?
 
 See the section [Agent IP ranges](#agent-ip-ranges)
 
@@ -334,26 +364,26 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
   The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 10.14](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xamarin)
-  - [macOS 10.15](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
-
-  This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
+  - [macOS 11](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xamarin)
+  - [macOS 12](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xamarin)
+  
+This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
   In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 
   `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
   
-  where `$(xcodeRoot)` = `/Applications/Xcode_12.4.app`
+  where `$(xcodeRoot)` = `/Applications/Xcode_13.2.app`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
 
 #### Xcode
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 12.4 as needed:
+  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
 
-  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_12.4.app/Contents/Developer"`
+  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode) for the `macos-11` agent and [here](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode) for the `macos-12` agent.
 
   This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
 
@@ -368,9 +398,6 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
-
-## Videos 
-> [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
 
 <!-- ENDSECTION -->
 

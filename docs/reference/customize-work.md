@@ -1,20 +1,20 @@
 ---
 title: Customize your work tracking experience
 titleSuffix: Azure DevOps 
-description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
-ms.technology: devops-agile
+description: Guide to configuring and customizing work tracking features in Azure DevOps  
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 04/04/2022
 ---
 
 # Customize your work tracking experience 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context for Azure Boards. The method you use to customize projects, which impacts all teams, depends on the process model you use. 
 
@@ -28,16 +28,17 @@ Customizations you make occur at one of these four levels:
 ::: moniker range="azure-devops"
 - **Project-level shared resources**: Define area and iteration paths which teams select to configure their backlogs and boards. Shared queries and work item tags are additional objects that once defined can be shared across the project.  
 - **Team assets or tools**: Each team can configure their specific tools, such as backlogs, boards, and dashboards. For details, see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
-- **Organization-level process customization**: Customize the fields, work item types, and backlogs and boards available to all teams.   
 - **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
+- **Organization-level process customization**: Customize the fields, work item types, and backlogs and boards available to all teams. 
 ::: moniker-end
+
 
 
 ::: moniker range="< azure-devops"
 - **Project-level shared resources**: Define area and iteration paths which teams select to configure their backlogs and boards. Shared queries and work item tags are additional objects that once defined can be shared across the project.  
 - **Team assets or tools**: Each team can configure their specific tools, such as backlogs, boards, and dashboards. For details, see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
-- **Collection-level process customization**:  Customize the fields, work item types, and backlogs and boards available to all teams. 
-- **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
+- **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.
+- **Collection-level process customization**:  Customize the fields, work item types, and backlogs and boards available to all teams.  
 ::: moniker-end
  
 
@@ -66,27 +67,33 @@ Each project provides a number of shared resources that support all teams added 
 The **Assigned To** and other Identity fields are supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start typing the name of the user you want to select, and search until you find a match. Users that you've previously selected appear in the list automatically. To select users that you haven't selected previously, simply enter their entire name or search against the full directory.  
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker Assigned To field.](../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of people picker Assigned To field.](../organizations/notifications/media/at-mention/identity-selector.png)  
 
 For organizations that manage their users and groups using Azure Active Directory (Azure AD) or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those added to the project. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
 
 ::: moniker range="azure-devops"
 
-To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. To learn how, see [Manage your project, Limit identity search and selection](../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. To learn how, see [Manage your organization, Limit  identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ::: moniker-end
 
 You can limit the values available to Identity fields within a work item by adding a custom rule. 
 
 <a id="process-models"></a>
+<a id="organization-level-process-customization'"></a>
 
 ::: moniker range="azure-devops"
-## Organization-level process customization   
+
+## Organization-level process customization  
+ 
 ::: moniker-end
 
+<a id="collection-level-process-customization'"></a>
 
 ::: moniker range="< azure-devops"
-## Collection-level process customization   
+
+## Collection-level process customization  
+ 
 ::: moniker-end
 
 Your project determines the objects available to track work and the configuration of Agile tools. Specifically, the project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the project.  
@@ -235,6 +242,7 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="3":::
       Update Microsoft field mappings using the [**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file) command-line tool (see note 4)
@@ -250,7 +258,8 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker-end
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
       Use [**az boards** command-line tools](../cli/quick-reference.md#azure-boards) to edit projects and teams and list information
@@ -269,7 +278,23 @@ The following table summarizes the differences between the three supported proce
 ::: moniker-end
 :::row:::
    :::column span="3":::
-      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects and list project information
+      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to list and export process information 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit process information 
    :::column-end:::
    :::column span="1":::
          
@@ -282,6 +307,24 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      Use the [**tcm fieldmapping** command-line tool](witadmin/tcm-customize-manage-test-experience.md) to list and export test case management mapping for resolution types, bug filing, and failure types. 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
 :::row:::
    :::column span="3":::
       REST API (read)
@@ -323,13 +366,13 @@ The following table summarizes the differences between the three supported proce
 	- Work item queries  
 	- Security groups and permissions   
 	- Permissions and access to functional areas such as version control and build 
-	::: moniker range=">= tfs-2017 < azure-devops-2020"
+	::: moniker range="< azure-devops"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update). 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="azure-devops"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
 	::: moniker-end
-4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
+4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
 5. You can use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).
 
 <a id="choose-process-model" />
@@ -361,9 +404,7 @@ To learn more about project collections, see [Manage project collections](/azure
 Several work item types support the test experience within the web portal **Test** pages and Test Manager client. For an Inherited process, you can customize Test Plan, Test Suite, and Test Case, work item types as you would any other work item type. For an On-premises XML process, you can customize all test-related work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
 ::: moniker-end
 
-
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Several work item types support the test experience within the web portal **Test** pages and Test Manager client. You can customize these work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
 ::: moniker-end
 
@@ -452,7 +493,7 @@ Otherwise, to grant or restrict access to select features, review one of these t
    :::column-end:::
    :::column span="1":::
       **Shared resources** 
-      - [Alerts](../notifications/manage-your-personal-notifications.md) 
+      - [Alerts](../organizations/notifications/manage-your-personal-notifications.md) 
       - [Area paths](../organizations/settings/set-area-paths.md)  
       - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Queries](../boards/queries/using-queries.md)  
@@ -470,6 +511,7 @@ Do you want to customize your tools in a way that's not supported?
 Here are a few options available to you:  
 
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
+- [Develop your own extension](../extend/get-started/node.md)
 - Determine if a [Service hook](../service-hooks/overview.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
 - Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
@@ -487,6 +529,4 @@ Here are a few options available to you:
 - [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
-
-[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
-[add-team-admin]: ../../organizations/settings/add-team-administrator.md
+ 

@@ -1,26 +1,26 @@
 ---
 title: Add and manage fields to an inherited process
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps 
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
-ms.date: 08/16/2021 
+ms.topic: how-to
+ms.date: 01/11/2022
 ---
 
 # Add and manage fields (Inheritance process)   
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](media/process/inherited-icon.png) inherited field. For example, you can add a custom field or change the label that appears in the work item form for an inherited field.  
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
+For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
@@ -30,20 +30,6 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
-
-
-<a id="review-fields"></a>
-
-## Review fields 
-
-To review the list of fields defined for all processes and the WITs that reference them, choose **Process** and then **Fields**.  
-
-Fields listed correspond to all fields defined for the organization. This includes all custom fields and those defined for system processes. 
-
-For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
-
-> [!div class="mx-imgBorder"]  
-> ![Make a copy of a selected inherited process](media/process/list-fields.png) 
 
 
 <a id="open-process-wit">  </a>
@@ -125,7 +111,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 ::: moniker-end
 
 > [!NOTE] 
-> Each organization or collection can define up to 1024 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
+> Each organization or collection can define up to 2048 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
 
@@ -337,9 +323,20 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 <a id="delete-field">  </a>
 
-## Delete a field  
+## Delete a custom field  
+
+With the Inheritance process model, you can only delete custom fields. You can't delete fields defined for system default processes. 
 
 Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
+
+> [!NOTE]   
+> We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).  
+> Or, if Analytics is enabled for your organization or collection, you can query Analytics for where a custom field is in use with the following syntax:  
+> [!div class="tabbedCodeSnippets"]
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v4.0-preview/WorkItemTypeFields?$filter=FieldReferenceName eq {CustomFieldReferenceName}&$select=WorkItemType
+> ``` 
+
 
 1. You delete the field from the **All processes>Fields** page.  
 
@@ -356,6 +353,7 @@ Deleting a field deletes all data associated with that field, including historic
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [View work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    

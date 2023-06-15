@@ -1,26 +1,26 @@
-- name: "About wikis, READMEs, & Markdown"
-  href: about-readme-wiki.md  
-- name: Provisioned versus published wikis 
+- name: About wikis, READMEs, & Markdown
+  href: about-readme-wiki.md
+- name: Provisioned versus published wikis
   href: provisioned-vs-published-wiki.md
 - name: Get started
   items:
   - name: Create a wiki for your project
     href: wiki-create-repo.md
-  - name: "Add & edit wiki pages"
+  - name: Add & edit wiki pages
     href: add-edit-wiki.md
-  - name: Publish code to a wiki 
+  - name: Publish code to a wiki
     href: publish-repo-to-wiki.md
   - name: Wiki file structure
-    href: wiki-file-structure.md 
-  - name: Create a README 
-    href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+    href: wiki-file-structure.md
+  - name: Create a README
+    href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/toc.json
 - name: How-to guides
   items:
   - name: Manage wikis with CLI
     href: manage-wikis.md
   - name: View wiki history and revert
     href: wiki-view-history.md
-  - name: Filter or print wiki content 
+  - name: Filter or print wiki content
     href: filter-print-wiki.md
   - name: Follow wiki pages, get notifications
     href: follow-notifications-wiki-pages.md
@@ -30,21 +30,21 @@
     href: add-comments-wiki.md
   - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
-  - name: Update wiki pages offline 
+  - name: Update wiki pages offline
     href: wiki-update-offline.md
-  - name: "Manage wiki permissions (Security)"
+  - name: Manage wiki permissions (Security)
     href: manage-readme-wiki-permissions.md
-  - name: Migrate wiki extension pages  
+  - name: Migrate wiki extension pages
     href: migrate-extension-wiki-pages.md
 - name: Reference
   items:
-  - name: Basic markdown guidance
+  - name: Basic Markdown guidance
     href: Markdown-guidance.md
-  - name: Wiki markdown guidance
+  - name: Wiki Markdown guidance
     href: wiki-markdown-guidance.md
-  - name: Keyboard shortcuts to manage wiki pages 
+  - name: Keyboard shortcuts to manage wiki pages
     href: wiki-keyboard-shortcuts.md
-  - name: "Default permissions (Security)"
+  - name: Default permissions (Security)
     href: wiki-readme-permissions.md
   - name: Data protection overview
-    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/toc.json

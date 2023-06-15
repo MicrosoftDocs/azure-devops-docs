@@ -4,15 +4,15 @@ ms.custom: seodec18
 description: Learn how you can run a v2 private build and release agent behind a web proxy for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
-ms.date: 03/15/2019
-monikerRange: '>= tfs-2015'
+ms.date: 01/25/2023
+monikerRange: '<= azure-devops'
 ---
 
 # Run a self-hosted agent behind a web proxy
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -68,72 +68,6 @@ The agent exposes proxy configuration via environment variables for every task e
 Task authors need to use [azure-pipelines-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib) methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/node/docs/proxy.md) within their task.
 
 Note that many tools do not automatically use the agent configured proxy settings. For example, tools such as `curl` and `dotnet` may require proxy environment variables such as `http_proxy` to also be set on the machine.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-## TFS 2017.2 and older
-
-> [!IMPORTANT]
-> You also can use this method for Azure Pipelines and newer versions of TFS.
-> We strongly recommend the more modern method, which you can access by switching to the TFS 2018 or Azure Pipelines docs.
-
-In the agent root directory, create a .proxy file with your proxy server url.
-
-# [Windows](#tab/windows)
-
-```ps
-echo http://name-of-your-proxy-server:8888 | Out-File .proxy
-```  
-
-If your proxy doesn't require authentication, then you're ready to configure and run the agent. See [Deploy an agent on Windows](v2-windows.md).
-
-# [macOS and Linux](#tab/unix)
-
-```bash
-echo http://name-of-your-web-proxy:8888 > .proxy
-```  
-
-If your proxy doesn't require authentication, then you're ready to configure and run the agent. See [Deploy an agent on macOS](v2-osx.md) or [Deploy an agent on Linux](v2-linux.md).
-
----
-
-> [!NOTE]
-> For backwards compatibility, if the proxy is not specified as described above, the agent also checks for a proxy URL from the VSTS_HTTP_PROXY environment variable.
-
-### Proxy authentication
-
-If your proxy requires authentication, the simplest way to handle it is to grant permissions to the user under which the agent runs. Otherwise, you can provide credentials through environment variables. When you provide credentials through environment variables, the agent keeps the credentials secret by masking them in job and diagnostic logs. To grant credentials through environment variables, set the following variables:
-
-# [Windows](#tab/windows)
-
-```ps
-$env:VSTS_HTTP_PROXY_USERNAME = "proxyuser"
-$env:VSTS_HTTP_PROXY_PASSWORD = "proxypassword"
-```  
-
-# [macOS and Linux](#tab/unix)
-
-```bash
-export VSTS_HTTP_PROXY_USERNAME=proxyuser
-export VSTS_HTTP_PROXY_PASSWORD=proxypassword
-```  
-
-If you are running your agent as a service:
-
-1.
-
- ```bash
-export VSTS_HTTP_PROXY_USERNAME=proxyuser
-export VSTS_HTTP_PROXY_PASSWORD=proxypassword
-```  
-1. Update the environment variables. See [macOS](v2-osx.md#service-update-environment-variables) or [Linux](v2-linux.md#service-update-environment-variables).
-
----
-
-> [!NOTE]
-> This procedure enables the agent infrastructure to operate behind a web proxy. Your build pipeline and scripts must still handle proxy configuration for each task and tool you run in your build. For example, if you are using a task that makes a REST API call, you must configure the proxy for that task.
 
 ::: moniker-end
 

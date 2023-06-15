@@ -1,150 +1,162 @@
 ---
-title: Deploy nginx to a Linux VM (Classic)
-description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Azure Pipelines
+title: Deploy web apps to an NGINX web server on a Linux VM (Classic)
+description: How to use classic pipelines to deploy a web application to an NGINX web server on a Linux virtual machine
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/07/2021
-monikerRange: '>= tfs-2018'
+ms.date: 06/13/2022
+monikerRange: '<= azure-devops'
 ---
 
-# Deploy a web app to an nginx web server on a Linux Virtual Machine
+# Deploy a web app to an NGINX web server running on a Linux Virtual Machine (Classic)
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
-> If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
+> If you want to deploy your application to a Linux virtual machine using YAML pipelines, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
 
-Learn how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
-Azure Pipelines. You can use the steps in this
-quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
+Learn how to use Classic Azure Pipelines to build and deploy your web app to an NGINX web server running on a Linux virtual machine.
 
-![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
+## Prerequisites
 
-After you commit and push a code change, it is automatically built and then deployed. The results will
-automatically show up on your site.
+- An Azure DevOps Organization. [Create one for free](../../../organizations/accounts/create-organization.md).
+- An Azure account with an active subscription. [Create an Azure account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) for free if you don't have one already.
+- A GitHub account. [Create one for free](https://github.com).
 
-## Define your CI build pipeline
-
-You'll need a continuous integration (CI) build pipeline that publishes your web application, and
-a deployment script that can be run locally on the Ubuntu server. Set up a CI build pipeline based on the runtime you want to use. 
-
-#### [Java](#tab/java)
-
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/spring-guides/gs-spring-boot-docker.git
-```
-Follow more steps mentioned in [Build your Java app with Maven](../../ecosystems/java.md) for creating a build to deploy to Linux.
+## Linux VM Prerequisites
 
 #### [JavaScript](#tab/javascript)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
-
-```
-https://github.com/MicrosoftDocs/pipelines-javascript-docker
-```
-Follow more steps mentioned in [Build your Node.js app with gulp](../../ecosystems/javascript.md) for creating a build to deploy to Linux.
-
-* * * 
-
-## Prerequisites for the Linux VM
-
-The deployment scripts used in the above sample repositories have been tested on Ubuntu 16.04, and we recommend you use the same version of Linux VM for this quickstart.
-Follow the extra steps described below based on the runtime stack used for the app.
+- If you don't have a Linux VM with an Nginx web server, follow the steps in this [Quickstart](/azure/virtual-machines/linux/quick-create-cli) to create one in Azure.
 
 #### [Java](#tab/java)
 
-- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
-- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-- For deploying Java EE-based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
+- Use Ubuntu 16.04 or higher.
+- For Java Spring Boot and Spring Cloud apps, create a Linux VM in Azure using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
+- For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [setup Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
+- For Java EE apps, use one of the following templates to create a [Linux VM, Java and WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90), a [Linux VM, Java and WebLogic](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin), or a [Linux VM and Java 13.x](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and WildFly/JBoss 14.
+
+- - -
+
+## Get the code
+
+If you don't have a repository, use the following sample project follow along with this tutorial:
 
 #### [JavaScript](#tab/javascript)
 
-To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
-If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
-[this example](/azure/virtual-machines/linux/quick-create-cli).
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
 
-* * * 
+#### [Java](#tab/java)
 
-[!INCLUDE [create-linux-deployment-group](../includes/create-linux-deployment-group.md)]
+```
+https://github.com/MicrosoftDocs/pipelines-java
+```
 
-## Define your CD release pipeline
+- - -
 
-Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your nginx servers.
+## Build your app
 
-1. Do one of the following to start creating a release pipeline:
+#### [JavaScript](#tab/javascript)
 
-   * If you've completed a CI build, in the build's **Summary** tab under **Deployments**,
-     choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
+- [Build JavaScript apps](../../ecosystems/javascript.md)
 
-     ![Creating a new release pipeline from the build summary](../media/release-from-build-summary.png)
+#### [Java](#tab/java)
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop down
-     in the list of release pipelines, and choose **Create release pipeline**.
+- [Build Java apps](../../ecosystems/java.md)
 
-     ![Creating a new release pipeline in the Releases page](../media/release-from-release-page.png)
+- - -
 
-1. Choose **Start with an Empty job**.
+## Set up a deployment group
 
-1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
-   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
-   the **Releases** tab, choose the **+ Add** link and select your build artifact.
+Deployment groups make it easier to organize the servers you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
-   ![Checking or selecting the build pipeline and artifact](media/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
+1. Open an SSH session to your Linux VM. You can do this using the Cloud Shell button in the upper-right of the [Azure portal](https://portal.azure.com/).
 
-1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-   continuous deployment trigger is enabled, and add a filter that includes the **main** branch.
+    :::image type="content" source="../media/cloud-shell-menu-image.png" alt-text="A screenshot showing the azure cloud shell button":::
 
-   ![Checking or setting the Continuous deployment trigger](media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
+1. Run the following command to initiate the session. Replace the placeholder with the IP address of your VM:
 
-   > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
+    ```command
+    ssh <publicIpAddress>
+    ```
 
-1. Open the **Tasks** tab, select the **Agent job**, and choose **Remove** to remove this job.
+1. Run the following command to install the required dependencies to set up the build and release agent on a Linux virtual machine. See [Self-hosted Linux agents](../../agents/linux-agent.md) for more details.
 
-   ![Removing the Agent job from the pipeline](media/deploy-linuxvm-deploygroups/remove-agent-phase-image.png)
+    ```command
+    sudo apt-get install -y libunwind8 libcurl3
+    ```
 
-1. Choose **...** next to the **Stage 1** deployment pipeline and select **Add deployment group job**.
+1. in Azure DevOps web portal, select **Pipelines**, and then select **Deployment groups**.
 
-   ![Adding a Deployment group stage to the pipeline](media/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+1. Select **Add a deployment group** (or **New** if you have existing deployment groups).
 
-1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
+1. Enter a name for the group such as **myNginx** and then select **Create**.
 
-   ![Selecting the deployment group](media/deploy-linuxvm-deploygroups/select-deployment-group.png)
+1. Select **Linux** for the **Type of target to register** and make sure that **Use a personal access token in the script for authentication** is checked. Select **Copy script to the clipboard**. This script will install and configure an agent on your VM.
 
-    The tasks you add to this job will run on each of the machines in the deployment group you specified.
+1. Back in the SSH session in Azure portal, paste and run the script.
 
-1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
-   **Bash** task.
+1. When you're prompted to configure tags for the agent, press _Enter_ to skip.
 
-   ![Adding a Shell Script task to the pipeline](media/deploy-linuxvm-deploygroups/add-shellscript-task.png)
+1. Wait for the script to finish and display the message *Started Azure Pipelines Agent*. Type *"q"* to exit the file editor and return to the shell prompt.
 
-1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
-   the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
-   repository to build your app, the location of the script is  
-   `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`.
-   
-   ![Configuring the Shell Script task](media/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
-   
-   See a [sample deploy.sh file](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh) for a Node.js web app.   
+1. Back in Azure DevOps portal, on the **Deployment groups** page, open the **myNginx** deployment group. Select the **Targets** tab, and verify that your VM is listed.
 
-1. Save the release pipeline.
+## Create a release pipeline
 
-   ![Saving the newly created release pipeline](media/deploy-linuxvm-deploygroups/save-definition-image.png)
+1. Select **Pipelines** > **Releases**, and then select **New pipeline**.
 
-## Create a release to deploy your app
+1. Select **Empty job**.
 
-You're now ready to create a release, which means to start the process of running the release pipeline
-with the artifacts produced by a specific build. This will result in deploying the build.
+1. Select **Add an artifact** to link your build artifact. Select **Build**, and then select your **Project** and **Source** from the dropdown menu. Select **Add** when you are done.
 
-[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
+1. Select the **Continuous deployment** icon, and the click the toggle button to enable the continuous deployment trigger. Add the *main* branch as a **Build branch filter**.
 
-## Next steps
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to set up the continuous deployment trigger":::
 
-* [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
-* [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
-* [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
-* [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)
+1. Select **Tasks**, and then select the **Agent job** and remove it.
+
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/remove-agent-phase-image.png" alt-text="A screenshot showing how to remove the agent job":::
+
+1. Select the ellipsis icon, and then select **Add a deployment group job**. The tasks you will add to this job will run on each server in your deployment group.
+
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/add-deployment-group-phase.png" alt-text="A screenshot showing how to add a deployment group job":::
+
+1. Select the deployment group you created earlier from the **Deployment group** dropdown menu.
+
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/select-deployment-group.png" alt-text="A screenshot showing how to select your deployment group.":::
+
+1. Select **+** to add a new task. Search for **Bash** and then select **Add** to add it to your pipeline.
+
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/add-shellscript-task.png" alt-text="A screenshot showing how to add the bash task.":::
+
+1. Select the browse button to add the path of your *deploy.sh* script file. See a sample nodeJS deployment script [here](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh).
+
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/configure-shellscript-task.png" alt-text="A screenshot showing how to add the script path.":::
+
+1. Select **Save** when you are done.
+
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/save-definition-image.png" alt-text="A screenshot showing how to save a release pipeline.":::
+
+## Deploy your app
+
+1. Select **Releases**, and then select **Create a release**.
+
+1. Make sure that the artifact version you want to use is selected and then select **Create**.
+
+1. Select the release link in the information bar message. For example: "Release **Release-1** has been queued".
+
+1. Select the status link in **Stages** to see the deployment logs.
+
+1. After the release is complete, navigate to your app and verify its contents.
+
+## Related articles
+
+- [Extend your deployments to IIS Deployment Groups](howto-webdeploy-iis-deploygroups.md)
+- [Deploy to IIS servers with Azure Pipelines and WinRM](deploy-webdeploy-iis-winrm.md)
+- [Deploy to a Windows Virtual Machine](deploy-webdeploy-iis-deploygroups.md)
+- [Create and remove deployment groups dynamically](howto-webdeploy-iis-deploygroups.md#depgroup)

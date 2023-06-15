@@ -1,64 +1,42 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
-
 
 <a id="queries-web-portal-shortcuts"></a>
 
-
-::: moniker range=">= tfs-2015"
-
-
-You can use the following keyboard shortcuts when [working with queries](../../boards/queries/using-queries.md) in the web portal. To view the valid shortcuts, enter **?** from **Boards>Queries** or **Work>Queries**. 
-
-::: moniker-end  
-
-::: moniker range="tfs-2015"  
-> [!NOTE]  
-> The following shortcuts are available from Azure DevOps Services or TFS 2015.2 or later versions.  
-
-::: moniker-end  
-
-
+You can use the following keyboard shortcuts when you [work with queries](../../boards/queries/using-queries.md) in the web portal. To view valid shortcuts, select **?** on a **Boards** > **Queries** page or a **Work** > **Queries** page.
 
 ::: moniker range=">= azure-devops-2020"
 
+|Shortcut|Action|
+|---|---|
+|c, q|New query|
+|r *or* Alt+r|Refresh query|
+|Alt+q|Return to query|
+|j *or* Alt+n|Move to next item|
+|k *or* Alt+p|Move to previous item|
+|Ctrl+Shift+f|Filter results|
 
-:::row:::
-   :::column span="2":::
-      ![Queries keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/queries-shortcuts-cloud.png)  
-   :::column-end:::
-   :::column span="2":::
-      <br/> <br/> 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c q**&nbsp;&nbsp;&nbsp;&nbsp;New query  
-      &nbsp;**r** or **Alt+r**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refresh query  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Alt+q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return to query  
-      &nbsp;&nbsp;&nbsp;&nbsp;**j or Alt+n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next item  
-      &nbsp;&nbsp;&nbsp;&nbsp;**k or Alt+p**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Previous item  
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results  
-   :::column-end:::
-:::row-end:::
- 
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
+
+:::image type="content" source="../../media/keyboard-shortcuts/queries-shortcuts-cloud.png" alt-text="Screenshot that shows Azure DevOps 2020 Queries page keyboard shortcuts.":::
+
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
 
+|Shortcut|Action|
+|---|---|
+|c, q|Add new query|
+|r *or* Alt+r|Refresh query|
+|Alt+q|Return to query|
+|j *or* Alt+n|Move to next item|
+|k *or* Alt+p|Move to previous item|
+|Ctrl+Shift+f|Filter results|
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+The following screenshot shows the list of keyboard shortcuts as it appears in Azure DevOps:
 
+:::image type="content" source="../../media/keyboard-shortcuts/queries-new-shortcut.png" alt-text="Screenshot that shows Azure DevOps 2019 Queries page keyboard shortcuts.":::
 
-:::row:::
-   :::column span="2":::
-      ![Queries keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/queries-new-shortcut.png)  
-   :::column-end:::
-   :::column span="2":::
-      <br/> <br/> 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c q**&nbsp;&nbsp;&nbsp;&nbsp;Add new query  
-      &nbsp;&nbsp;**r** or **Alt+r**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refresh query  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Alt+q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return to query  
-      &nbsp;&nbsp;&nbsp;&nbsp;**j or Alt+n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select next item  
-      &nbsp;&nbsp;&nbsp;&nbsp;**k or Alt+p**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select previous item  
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results  
-   :::column-end:::
-:::row-end:::
- 
 ::: moniker-end

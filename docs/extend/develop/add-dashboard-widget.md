@@ -2,7 +2,7 @@
 title: Add a dashboard widget
 titleSuffix: Azure DevOps
 description: Tutorial for creating a widget that you can then add to a dashboard in Azure DevOps or Team Foundation Server (TFS)
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
 ms.author: chcomley
@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Add a dashboard widget
 
-[!INCLUDE [ ](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. Learn how to create an extension with multiple widgets as contributions.
@@ -57,7 +57,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 3. The [third part](#part-3) explains how to add configuration to your widget. 
 
 > [!NOTE]   
-> If you're in a hurry and want to get your hands on the code right away, you can download the complete samples [here](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets). 
+> If you're in a hurry and want to get your hands on the code right away, you can download the samples [here](https://github.com/Microsoft/azure-devops-extension-sample). 
 > Once downloaded, go to the `widgets` folder, then follow [Step 6](#package-publish-share) and [Step 7](#add-from-catalog) directly to publish the sample extension which has the three sample widgets of varying complexities.
 
 Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out of the box for you and some guidance on widget structure.
@@ -68,7 +68,7 @@ Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) th
 
 This part presents a widget that prints "Hello World" using JavaScript.
 
-![Overview dashboard with a sample widget](../media-procedures/add-dashboard-widget/sample.png)
+![Overview dashboard with a sample widget](../media/add-dashboard-widget/sample.png)
 
 ### Step 1: Get the client SDK - `VSS.SDK.min.js`
 
@@ -181,7 +181,7 @@ You can name these images however you want as long as the extension manifest in 
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview)
+* Find out more about the contribution points in [Extensibility points](../reference/targets/overview.md)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -358,7 +358,7 @@ Widgets can call any of the [REST APIs](/rest/api/azure/devops/) in Azure DevOps
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
-![Overview dashboard with a sample widget using the REST API for WorkItemTracking.](../media-procedures/add-dashboard-widget/sample2.png)
+![Overview dashboard with a sample widget using the REST API for WorkItemTracking.](../media/add-dashboard-widget/sample2.png)
 
 <a id="step-1-files" />
 
@@ -653,7 +653,7 @@ In [Part 2](#part-2) of this guide, you saw how to create a widget that shows qu
 In this part, we add the ability to configure the query to be used instead of the hard-coded one.
 When in configuration mode, the user gets to see a live preview of the widget based on their changes. These changes get saved to the widget on the dashboard when the user selects **Save**.
 
-![Overview dashboard live preview of the widget based on changes.](../media-procedures/add-dashboard-widget/sampleConfiguration.png)
+![Overview dashboard live preview of the widget based on changes.](../media/add-dashboard-widget/sampleConfiguration.png)
 
 ### Step 1: HTML
 
@@ -991,7 +991,7 @@ Choose your widget and select the 'Add' button to add it to your dashboard.
 
 You would see a message asking you to configure the widget.
 
-![Overview dashboard with a sample widget from the catalog.](../media-procedures/add-dashboard-widget/sampleWidgetWithNoSettings.png)
+![Overview dashboard with a sample widget from the catalog.](../media/add-dashboard-widget/sampleWidgetWithNoSettings.png)
 
 There are two ways to configure widgets. One is to hover on the widget, select the ellipsis that appears on the top-right corner and then select Configure.
 The other is to select the Edit button in the bottom right of the dashboard, and then select the configure button that appears on the top-right corner of the widget.
@@ -1049,7 +1049,7 @@ The extension manifest for the third sample in this guide would look like the be
 With the previous change, [repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
 Open the configuration mode for your widget, you should now be able to see the option to change the widget name and size.
 
-![Widget where name and size can be configured](../media-procedures/add-dashboard-widget/sampleConfigureNameAndSize.png)
+![Widget where name and size can be configured](../media/add-dashboard-widget/sampleConfigureNameAndSize.png)
 
 Go ahead and choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
 

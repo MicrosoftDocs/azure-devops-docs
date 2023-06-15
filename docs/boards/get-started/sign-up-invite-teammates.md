@@ -1,57 +1,87 @@
 ---
-title: Sign up for and invite teammates to use projects in Azure Boards
+title: Sign up for Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to sign up for and invite others to join a team project in Azure Boards.
+description: Learn how to sign up for free for Azure Boards.
 ms.custom: boards-get-started
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/15/2021
+ms.date: 03/22/2023
 ---
 
+# Sign up for Azure Boards
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-# Sign up for free and invite others to collaborate in Azure Boards
-
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
-
-Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
-- Create a private or public project with Azure Boards enabled services  
-- Track work using the Basic, Agile, Scrum, or CMMI process for tracking work  
-- Create a Git or Team Foundation Version control (TFVC) repository for managing your code 
-- Invite others to contribute to your project 
+Sign up for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min) to plan, track, and discuss your work across your teams. For more information, see [What is Azure Boards?](./what-is-azure-boards.md).
  
-To sign up and enable all Azure DevOps Services, see [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md). To learn more about the choices available to you, see these articles: 
--  [What is Azure Boards?](./what-is-azure-boards.md) 
--  [Choose a process work tracking work](../work-items/guidance/choose-process.md)
--  [Choose the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
+To sign up for all Azure DevOps Services, see [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md). 
 
-## Choose your sign-up option  
+## Prerequisites
 
-1. From your web browser, open the [Azure Boards](https://azure.microsoft.com/services/devops/boards/) sign-up page. Supported web browsers include the latest versions of Edge, Internet Explorer, Safari (Mac), Firefox, and Chrome. 
+You must have the latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.
+
+## Sign-up 
+
+1. From your web browser, open the [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min) sign-up page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project dialog, start free.](media/acquisition/start-free-azure-boards.png)
 
-1. Choose one of the following buttons based on the account you want to use. 
+1. Select which account you want to use. 
 
 	- **Start free**: Choose this option when: 
-		- You have a Microsoft account and will sign in using your account email address, phone number, or Skype ID. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Go to [Sign up with a personal Microsoft account](#MicrosoftAccount)
-		- You want to sign up using a general email address you want to use. Continue to [Sign up by creating an account using your email address](#create-account).  
+		- You have a Microsoft account and plan to sign in using your account email address, phone number, or Skype ID. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription.
+		- You want to sign up using a general email address you want to use. A project gets created based on your account name, but you can change the project name later.
 		> [!TIP]  
-		> You can sign up with any valid email address. Signing up for Azure Boards enables your email address as a Microsoft account.  
-	- **Start free with GitHub**: Choose this option if you have an  existing GitHub account. Then go to [Sign up with a GitHub account](#github-account).  
+		> - You can sign up with any valid email address. Signing up for Azure Boards enables your email address as a Microsoft account. 
+		> - An organization and project get created based on your account name. Sign in to your organization at any time by entering `https://dev.azure.com/{yourorganization}` in your web portal. You can [change the organization or project settings](#change-settings) at any time. 
+	- **Start free with GitHub**: Choose this option if you have an  existing GitHub account.
+	    > [!IMPORTANT]
+        > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
  
+   If you've already signed up or have an organization set up to use Azure Boards, choose the **Sign in** link.
 
-1. If you've already signed up or have an organization set up to use Azure Boards, choose the **Sign in** link. 
+1. Continue through the flow to finish signing up.
+   
+   When you're done, you have an organization and a project that correspond to your account name. Optionally, you can [change the name or other settings for your organization or project](#optional-change-your-organization-or-project-settings). 
+   
+   Sign in to your organization at any time (```https://dev.azure.com/{yourorganization}```).
 
-	> [!div class="mx-imgBorder"]  
-	> ![Sign-in button.](media/acquisition/sign-in-to-azure-boards.png)
+<a id="change-settings" />
 
-<a name="create-account"></a>
+### Optional: Change your organization or project settings
 
+An organization is your container for projects, users, and other resources. It groups related projects and provides a centralized location for managing users, permissions, and billing. It also has tools for planning, tracking, and collaborating on projects.
+
+For more information about changing your organization settings, see the following articles.
+
+- [Rename an organization](../../organizations/accounts/rename-organization.md)
+- [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
+
+
+A project is a specific effort within an organization. Each project is associated with a specific team and can have its own set of permissions, settings, and configurations.
+
+For more information about changing your project settings, see the following articles.
+
+- [Rename a project](../../organizations/projects/rename-project.md)  
+- [Delete a project](../../organizations/projects/delete-project.md)
+- [Change the project visibility, public or private](../../organizations/projects/make-project-public.md)
+
+## Next steps  
+ 
+> [!div class="nextstepaction"]
+> [Add users or groups to your team or project](../../organizations/security/add-users-team-project.md)
+
+## Related articles  
+
+- [Track issues and tasks](plan-track-work.md)
+- [About access levels](../../organizations/security/access-levels.md)
+- [Define organizations and projects](../../user-guide/plan-your-azure-devops-org-structure.md)
+
+<!---
 ## Sign up by creating an account using your email address 
 
 1. To sign up with a valid email address, choose **Create one!**.  Enter the email address you want to use.
@@ -180,7 +210,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 ## Create a project 
 
-If you signed up for Azure DevOps with an existing Microsoft account or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing Microsoft account or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/projects/about-projects.md). 
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
@@ -210,14 +240,14 @@ Your first project is automatically created using the Basic process and a Git re
 1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page, and then select **New project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/projects-hub-select-new-project.png)  
+   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/select-new-project.png)  
 
 2. Fill out the form, expand **Advanced** to choose the options available for [**Version control**](../../repos/tfvc/comparison-git-tfvc.md) and [**Work item process**](../work-items/guidance/choose-process.md). 
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of create project with Agile process.](media/sign-up/create-agile-git-project.png)  
 
-2. Choose **Create** to complete the action.
+3. Choose **Create** to complete the action.
 
 
 <a id="invite-others" />
@@ -251,32 +281,4 @@ You can add and invite others to work on your project by adding their email addr
 4. When you're done, select **Add** to complete your invitation.
 
 For more information, see [Add users or groups to a team or project](../../organizations/security/add-users-team-project.md) and [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
-
-<a id="change-settings" />
-
-## Change your organization or project settings
-
-You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
-
-- [Manage organizations](../../organizations/accounts/organization-management.md)
-- [Rename an organization](../../organizations/accounts/rename-organization.md)
-- [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
-
-You can rename your project or change its visibility. To learn more about managing projects, see the following articles:
-
-- [Manage projects](../../organizations/projects/about-projects.md)  
-- [Rename a project](../../organizations/projects/rename-project.md)  
-- [Delete a project](../../organizations/projects/delete-project.md)
-- [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
-
-## Try this next  
- 
-> [!div class="nextstepaction"]
-> [Track issues and tasks](plan-track-work.md)
-
-## Related articles  
-
-- [Manage projects](../../organizations/projects/about-projects.md)
-- [Manage organizations](../../organizations/accounts/organization-management.md)
-- [About access levels](../../organizations/security/access-levels.md)
-- [Define organizations and projects](../../user-guide/plan-your-azure-devops-org-structure.md)
+-->

@@ -2,11 +2,11 @@
 title: End-to-end traceability
 titleSuffix: Azure DevOps
 description: Learn about the tools and features that support traceability from requirements to deployment    
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.custom: cross-service, cross-project
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 01/26/2021
 ---
@@ -14,7 +14,7 @@ ms.date: 01/26/2021
 
 # End-to-end traceability 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 One of the chief advantages of adopting a platform such as Azure DevOps is the support it provides to trace work from requirements to deployment. You gain insight at each step of decisions made and the software deployed. The scenarios illustrated in this article are supported when you use Azure Repos git repositories. 
 

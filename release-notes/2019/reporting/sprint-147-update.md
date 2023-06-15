@@ -3,7 +3,6 @@ title: Azure reporting - Sprint 147 Update
 description: See the Sprint 147 feature updates for Azure reporting, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 02/13/2019
 ---
 

@@ -1,15 +1,11 @@
 ---
+ms.subservice: azure-devops-analytics
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: include
+ms.date: 01/19/2023
 ---
-
-This report displays the following information for each requirement that it lists:
-
-- **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
-- **Passed tests**: The number of test cases run that have passed based on the most recent test run.  
-- **Failed tests**: The number of test cases run that have failed based on the most recent test run. 
-- **Run tests**:  The number of test runs that have executed.  
-- **Active bugs**: The number of linked bugs in an Active state. 
-- **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
 ## Questions the report answers
 

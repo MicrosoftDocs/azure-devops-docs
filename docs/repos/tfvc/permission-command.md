@@ -1,24 +1,28 @@
 ---
-title: Permission Command
+title: Permission command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Permission Command
+description: Use the TFVC permission command to modify the user access control list (ACL) and display authorization settings for an item.
 ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/29/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
+# Permission command  (Team Foundation Version Control)
 
-# Permission Command
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+The `tf permission` command modifies the user access control list (ACL) and displays authorization settings for an item in Team Foundation Version Control (TFVC).
 
-Modifies the user access control list (ACL) and displays authorization settings for an item under version control.
+## Prerequisites
 
-**Required Permissions**
+To use the `permission` command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Azure DevOps Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). 
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-To use the **permission** command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Team Foundation Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Syntax
 
 ```
 tf permission [/allow:(* |perm1[,perm2,...]] 
@@ -30,7 +34,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 
 ## Parameters
 
-### Argument
+### Arguments
 
 :::row:::
    :::column span="1":::
@@ -43,57 +47,57 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 
 :::row:::
    :::column span="1":::
-   *perm*
+   `<permission>`
    :::column-end:::
    :::column span="3":::
-   Name of a permission or role to modify. For more information about the permission names, see [Team Foundation Server Permissions](../../organizations/security/permissions.md).
+   Name of a permission or role to modify. For more information about the permission names, see [Security groups, service accounts, and permissions in Azure DevOps](../../organizations/security/permissions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *Username*
+   `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/user** option. A username value can be expressed in one of two ways, depending on the network settings: DOMAIN\username or username.
+   Value for the `/user` option. A user name value can be expressed as `DOMAIN\username` or `username`, depending on network settings.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *Groupname*
+   `<groupname>`
    :::column-end:::
    :::column span="3":::
-   The user-provided value for the **/group** option.
+   The user-provided value for the `/group` option.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *TeamProjectCollectionUrl*
+   `<TeamProjectCollectionUrl>`
    :::column-end:::
    :::column span="3":::
-   The URL of the project collection that contains the item for which you want to modify permissions (for example, http://myserver:8080/tfs/DefaultCollection).
+   The URL of the project collection that contains the item for which to modify permissions, for example `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *Itemspec*
+   `<itemspec>`
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses *itemspecs* to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   The file or folder for which to modify permissions. For more information about how TFVC parses an `itemspec` to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    > [!Note]  
-   > You can specify more than one *Itemspec* argument.
+   > You can specify more than one `itemspec` argument.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   *Username*
+   `<username>`
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
+   Provides a value to the `/login` option. You can specify a user name value as either `DOMAIN\username` or `username`.
    :::column-end:::
 :::row-end:::
 
-### Option
+### Options
 
 :::row:::
    :::column span="1":::
@@ -105,39 +109,39 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/allow**
+   `/allow`
    :::column-end:::
    :::column span="3":::
-   Specifies a list of Team Foundation version control permissions to add to the allow ACL.
+   Specifies a list of TFVC permissions to add to the allow ACL.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/deny**
+   `/deny`
    :::column-end:::
    :::column span="3":::
-   Specifies a list of denied Team Foundation version control access permissions to add to the user access control list.
+   Specifies a list of denied TFVC access permissions to add to the user ACL.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/remove**
+   `/remove`
    :::column-end:::
    :::column span="3":::
-   Specifies a list of Team Foundation version control permissions to remove from both the allow and the deny ACLs.
+   Specifies a list of TFVC permissions to remove from both the allow and the deny ACLs.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/inherit**
+   `/inherit`
    :::column-end:::
    :::column span="3":::
-   If you select **yes**, all permissions associated with a parent ACL are inherited by an item. Cannot be combined with the **/remove** option.
+   If `yes`, the item inherits all permissions associated with a parent ACL. Can't combine with the `/remove` option.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/user**
+   `/user`
    :::column-end:::
    :::column span="3":::
    Specifies the name of a user to modify permissions for.
@@ -145,15 +149,15 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/group**
+   `/group`
    :::column-end:::
    :::column span="3":::
-   Name of the group for which to modify permissions.
+   Specifies the name of the group to modify permissions for.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/collection**
+   `/collection`
    :::column-end:::
    :::column span="3":::
    Specifies the project collection.
@@ -161,98 +165,88 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/recursive**
+   `/recursive`
    :::column-end:::
    :::column span="3":::
    Applies the specified command to all items in the directory and any subdirectories.
 
-   **/recursive** option works only when viewing the permissions for items in a source tree. It does not work when setting permissions, for example with **/allow**, **/deny** and **/remove** options.
+   The `/recursive` option works only when viewing permissions. It doesn't work when setting permissions, for example with the `/allow`, `/deny`, or `/remove` options.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/global**
+   `/global`
    :::column-end:::
    :::column span="3":::
-   Used to view or assign a TFVC collection-level permission.
+   Views or assigns a TFVC collection-level permission. To assign permissions, use the `/allow`, `/deny`, or `/remove` options. The argument `itemspec` isn't required. If listed, it's ignored.
 
-   To assign permissions, use the **/allow**, **/deny**, or **/remove** options.
-
-   The argument *itemspec* is not required. If it is listed, it is ignored.
-
-   When used to view a TFVC collection-level, the five permissions listed are as follows:
+   When used to view a TFVC collection, lists the following five permissions:
 
    
-   - tf: AdminShelvesets
-
-   - tf: AdminWorkspaces
-
-   - tf: CreateWorkspace
-
-   - tf: AdminConfiguration
-
-   - tf: AdminConnections
+   - `tf: AdminShelvesets`
+   - `tf: AdminWorkspaces`
+   - `tf: CreateWorkspace`
+   - `tf: AdminConfiguration`
+   - `tf: AdminConnections`
 
    
-   For more information about permissions, see [Permissions and groups, Collection-level permissions](../../organizations/security/permissions.md#administer-shelved-changes).
+   For more information, see [Collection-level groups](../../organizations/security/permissions.md#collection-level-groups).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **/login**
+   `/login`
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
-
-
 
 ## Remarks
 
-You can use the **permission** command (or alternatively its shortcut, **perm**) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
+You can use the `permission` command or its shortcut `perm` to manage authorization settings for TFVC server objects. However, this command doesn't let you manage authentication settings such as creating or modifying Azure DevOps security groups.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
-The following example displays the Team Foundation access control lists (ACLs) for 314.cs.
+The following example displays the TFVC ACLs for *314.cs*:
 
 ```
 c:\projects>tf permission 314.cs
 ```
 
-The following example displays the ACL information that relates to the group "developers" for the collection that is located at http://myserver:8080/tfs/DefaultCollection/.
+The following example displays the ACL information for the `developers` group in the collection at `http://myserver:8080/tfs/DefaultCollection/`:
 
 ```
 c:\projects>tf permission /group:[teamproject]\developers /collection: http://myserver:8080/tfs/DefaultCollection/
 ```
 
-The following example enables members of the "leads" group to change their local copies of all items in the $/baseobjects Team Foundation version control server folder.
+The following example allows members of the `leads` group to change their local copies of all items in the *$/baseobjects* TFVC server folder:
 
 ```
 c:\projects>tf permission /allow:PendChange /group:[teamproject]\leads $/baseobjects
 ```
 
-The following example removes all permission-related settings from the $/baseobjects folder for members of the "developers" group.
+The following example removes all permission-related settings from the *$/baseobjects* folder for members of the `developers` group:
 
 ```
 c:\projects>tf permission /remove:* /group:developers $/baseobjects
 ```
 
-The following example enables the group "testers" to change their local copies of all items in $/testproject.
+The following example allows the `testers` group to change their local copies of all items in *$/testproject*:
 
 ```
 c:\projects>tf permission /allow:PendChange /group:testers$/testproject
 ```
 
-The following example enables user somealias to make pending changes to his local copy of $/testtproject/314.cs in his workspace.
+The following example allows user `somealias` to make pending changes to their local copy of *$/testtproject/314.cs* in their workspace:
 
 ```
 c:\projects>tf permission /allow:PendChange /user:somealias $/testproject/314.cs.
 ```
 
-The following example denies user somealias the ability to make pending changes to his local copy of $/testproject/1256.cs.
+The following example denies user `somealias` the ability to make pending changes to their local copy of *$/testproject/1256.cs*:
 
 ```
 c:\projects>tf permission /deny:PendChange /user:somealias $/testproject/1256.cs
@@ -260,5 +254,4 @@ c:\projects>tf permission /deny:PendChange /user:somealias $/testproject/1256.cs
 
 ## Related articles 
 
-- [Command-Line Syntax (version control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-- [Tf Command-Line utility commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)

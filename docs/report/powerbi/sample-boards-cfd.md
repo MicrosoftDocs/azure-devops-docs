@@ -2,29 +2,38 @@
 title: Cumulative Flow Diagram (CFD) sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a Cumulative Flow Diagram (CFD) Power BI report.
-ms.technology: devops-analytics
-ms.author: kaelli
-ms.custom: powerbisample
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 12/08/2022
 ---
 
 # Cumulative Flow Diagram (CFD) sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to display the Stories CFD for a specified team. An example is shown in the following image. 
+This article shows you how to display the Stories CFD for a specified team. This data is also available through the built-in chart and dashboard widget. To learn more about these options, see [View and configure a Cumulative Flow Diagram](../dashboards/cumulative-flow.md). 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
+An example is shown in the following image that shows a count of user stories over time in the *Researching*, *Committed*, *In Progress*, and *In Review* states. Hovering over a date provides information on data for that date.
+
+:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Power BI Cumulative Flow stacked area chart report, columns sorted in Kanban board column order."::: 
+
+To learn more about cumulative flow, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Sample queries
+
+Queries in this section support returning cumulative flow data for User Stories. These queries specify the `WorkItemBoardSnapshot` entity set as they return data calculated for the Kanban board over time.  
+
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -65,11 +74,14 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 ```
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{teamname}` - The name of the team to display the CFD for.
-* `{startdate}` - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+* `{teamname}` - The name of the team to display CFD data
+- `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -84,12 +96,13 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -97,7 +110,7 @@ The following table describes each part of the query.
    `Team/TeamName eq '{teamname}'`
    :::column-end:::
    :::column span="1":::
-   Return items for a specific team
+   Return items for a specific team.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,7 +118,7 @@ The following table describes each part of the query.
    `and BoardName eq 'Stories'`
    :::column-end:::
    :::column span="1":::
-   Return items on the 'Stories' backlog. You can specify other backlog names, such as 'Epics', and 'Features'
+   Return items on the **Stories** backlog. You can specify other backlog names, such as **Epics** or **Features**. Specify the backlog level that corresponds to the process selected for your project.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,7 +126,7 @@ The following table describes each part of the query.
    `and DateValue ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Start CFD on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01 2019-July-01
+   Return data on or after the specified date, for example, **2022-04-01Z** represents 2022-April-01 2019-July-01.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -121,7 +134,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -129,7 +142,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -137,7 +150,7 @@ The following table describes each part of the query.
    `(DateValue, ColumnName, LaneName, State, WorkItemType,AssignedTo/UserName,Area/AreaPath), `
    :::column-end:::
    :::column span="1":::
-   Group by DateValue (used for trending), ColumnName, and any other fields you want to report on. Here we include LaneName to enabling filtering by LaneName
+   Group by `DateValue` (used for trending), `ColumnName`, and any other properties you want to report on. Here we include `LaneName` to enabling filtering by swimlanes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -153,50 +166,58 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close groupby()
+   Close `groupby()` clause. 
    :::column-end:::
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+[!INCLUDE [temp](includes/rename-query.md)]
 
 
-## Power BI transforms
+## Expand columns in Power Query Editor
 
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
+From the Power Query Editor, choose the query with the data you want to transform. For a CFD chart, you'll need to 
+expand the `Area`, `Iteration`, and `AssignedTo` columns. To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
-[!INCLUDE [temp](includes/sample-finish-query.md)]
+
+## (Optional) Rename fields
+
+Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 
-## Create the report
+[!INCLUDE [temp](includes/close-apply.md)]
 
-Power BI shows you the fields you can report on. 
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample -Release Burndown - Fields](media/odatapowerbi-cfd-fields.png)
+## Create the stacked area chart  
 
-For a simple report, do the following steps:
+In the following example, the query was renamed to *CFD*, but no columns were renamed. 
 
-1. Select Power BI Visualization **Stacked Area Chart**. 
-1. Add the field "DateValue" to **Axis**
-    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
-1. Add the field "ColumnName" to **Legend**
-1. Add the field "Count" to **Values**
-1. On the Filter for "ColumnName", select only the values you want to appear on the chart. For example, you may want to unselect "New" and "Done"
+1. In Power BI, choose the **Stacked area** chart under **Visualizations**. 
 
-The example report:
+	:::image type="content" source="media/reports-boards/cfd-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for CFD chart report. ":::
+ 
+1. Add `DateValue` to **Axis** and then right-click `DateValue` and select `DateValue`, rather than `Date Hierarchy`.
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
+1. Add `Count` to **Values**.
 
-### Sorting columns in correct order
+1. Add `ColumnName` to **Legend**.
 
-The above sample will display columns in alphabetical order. To sort the columns in the order specific on the board, do the following steps:
+1. In the **Filters** pane, expand `ColumnName`, and select only the values you want to appear on the chart. For example, you may want to unselect *New*, *Proposed*, *Done*, or *Closed*. 
 
-1. Use the query below to create a new query in Power BI. When done, rename the query to "ColumnOrder" 
+	:::image type="content" source="media/reports-boards/cfd-columnname-filters.png" alt-text="Screenshot of Power BI Filters for ColumnName. ":::
+
+
+The example report displays the columns in alphabetic order. However, the preferred order is to sort the data according to the Kanban column order, or progressive order. 
+
+:::image type="content" source="media/reports-boards/cfd-stacked-area-chart.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in alphabetic order.":::
+
+### Sort columns in progressive order
+
+To sort the chart columns in the order specific on the Kanban board, do the following steps:
+
+1. Create a new query in Power BI per the following queries. When done, rename the query to *ColumnOrder*. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -233,29 +254,25 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 
 ### Sort the report in the correct order
 
-1. Once back in Power BI, expand ColumnOrder query and select ColumnName.
-1. Select **Modeling** menu.
-1. Select **Sort by Column** and choose "ColumnOrder".
-1. Select **Manage Relationships** and ensure there's a relationship between "CFD.ColumnName" and "ColumnOrder.ColumnName".
-    - It's likely that the relationship was autodetected.
-1. In the report created above, add "ColumnOrder.ColumnName" to **Legend**, replacing "CFD.ColumnName".
+1. In Power BI, expand the *ColumnOrder* query and select `ColumnName`.
 
-The report will now be sorted by correct column order:
+1. Select **Column Tools** and then **Sort by Column** and choose `ColumnOrder`.
+	:::image type="content" source="media/reports-boards/cfd-sort-by-column.png" alt-text="Screenshot of Power BI Column Tools, Sort by Column selection.":::
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-cfd-report2.png)
+1. Select the **Modeling** menu, and then **Manage Relationships**. Ensure there's a relationship between `CFD.ColumnName` and `ColumnOrder.ColumnName`. It's likely that the relationship was autodetected.
+
+	:::image type="content" source="media/reports-boards/cfd-manage-relationships-dialog.png" alt-text="Dialog for Manage Relationships showing a relationship between CFD.ColumnName and ColumnOrder.ColumnName.":::
+
+1. In the report created above, in the **Legend**, replace `CFD.ColumnName` with `ColumnOrder.ColumnName` to **Legend**.
+
+	The report refreshes with columns sorted in the same order used by the Kanban board.  
+
+	:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in Kanban board column order."::: 
+
 
 > [!NOTE]
 > If any work items were in a column that has since been deleted, they will appear as "Blank" in the above report. 
 
-### Pull in data from multiple teams
-
-If you're pulling data in from multiple teams to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you're pulling in varying columns from every team. It's also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This step allows quick filter of the report by team.
-
-
-## Full list of sample reports
-
-[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 

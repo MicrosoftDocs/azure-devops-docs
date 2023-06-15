@@ -1,9 +1,9 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
-ms.date: 08/18/2021
+ms.date: 04/04/2022
 ---
 
  
@@ -80,7 +80,7 @@ ms.date: 08/18/2021
    :::column-end:::
 :::row-end:::
 ::: moniker-end  
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="2":::
       Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using drag-and-drop 

@@ -1,26 +1,29 @@
 ---
 title: 'Azure CLI sample for Azure Pipelines and variable groups'
 description: Azure CLI sample for accessing secret and nonsecret variables from a variable group in an Azure Pipeline. This sample uses the azure-devops extension.
-author: steved0x
+author: juliakm
 ms.author: jukullam
 manager: mijacobs
-ms.date: 05/20/2021
+ms.date: 01/12/2023
 ms.topic: sample
 ms.devlang: azurecli 
+monikerRange: '>=azure-devops-2020'
 ms.custom: devx-track-azurecli
 ---
 
 # Use a variable group's secret and nonsecret variables in an Azure Pipeline
 
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+
 In this sample, use the Microsoft Azure DevOps CLI (azure-devops extension) to create an Azure Pipeline that accesses a variable group containing both secret and nonsecret variables.
 
 This script demonstrates three operations:
 
-* Defining a [Azure Pipeline](../../index.yml) using [YAML](../../yaml-schema.md) files
+* Defining a [Azure Pipeline](../../index.yml) using [YAML](/azure/devops/pipelines/yaml-schema/) files
 * Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
 * Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run's processing and output
 
-[!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
+[!INCLUDE [include](~/../docs/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
 * [Sign up for Azure Pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization.
 * [Create an Azure DevOps personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) (PAT) for authentication.
@@ -58,7 +61,7 @@ variables:
   value: $[variables.contososecret]
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: ubuntu-latest
@@ -95,7 +98,7 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-After you have published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
+After you've published the YAML file in GitHub, replace the placeholders in the following Bash script, and then run the script.
 
 ```azurecli
 #!/bin/bash
@@ -110,7 +113,7 @@ githubOrg="<my-github-organization-name>"
 githubRepo="<my-github-repository-name>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
-branch="master"
+branch="main"
 
 # Declare other variables.
 uniqueId=$RANDOM
@@ -123,6 +126,10 @@ variableGroupName="Contoso Variable Group"
 # Sign in to Azure CLI and follow the directions. May be unnecessary in some environments.
 echo "Sign in. (For Cloud Shell, provide the device login code.)"
 az login
+
+# Sign in using an Azure DevOps personal access token (PAT). May be unnecessary in some environments.
+echo "Sign in to Azure DevOps."
+az devops login
 
 # Create a resource group and a storage account.
 az group create --name "$resourceGroupName" --location "$resourceGroupLocation"
@@ -203,19 +210,19 @@ az devops configure --defaults organization="" project=""
 
 ## Azure CLI references used in this article
 
-- [az devops configure](/cli/azure/devops#az_devops_configure)
-- [az devops project create](/cli/azure/devops/project#az_devops_project_create)
-- [az devops project delete](/cli/azure/devops/project#az_devops_project_delete)
-- [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az_devops_service_endpoint_github_create)
-- [az group create](/cli/azure/group#az_group_create)
-- [az group delete](/cli/azure/group#az_group_delete)
-- [az login](/cli/azure/reference-index#az_login)
-- [az pipelines create](/cli/azure/pipelines#az_pipelines_create)
-- [az pipelines delete](/cli/azure/pipelines#az_pipelines_delete)
-- [az pipelines run](/cli/azure/pipelines#az_pipelines_run)
-- [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
-- [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_delete)
-- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create)
-- [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_update)
-- [az storage account create](/cli/azure/storage/account#az_storage_account_create)
-- [az storage account delete](/cli/azure/storage/account#az_storage_account_delete)
+- [az devops configure](/cli/azure/devops#az-devops-configure)
+- [az devops project create](/cli/azure/devops/project#az-devops-project-create)
+- [az devops project delete](/cli/azure/devops/project#az-devops-project-delete)
+- [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az-devops-service-endpoint-github-create)
+- [az group create](/cli/azure/group#az-group-create)
+- [az group delete](/cli/azure/group#az-group-delete)
+- [az login](/cli/azure/reference-index#az-login)
+- [az pipelines create](/cli/azure/pipelines#az-pipelines-create)
+- [az pipelines delete](/cli/azure/pipelines#az-pipelines-delete)
+- [az pipelines run](/cli/azure/pipelines#az-pipelines-run)
+- [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az-pipelines-variable-group-create)
+- [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az-pipelines-variable-group-delete)
+- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az-pipelines-variable-group-variable-create)
+- [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#az-pipelines-variable-group-variable-update)
+- [az storage account create](/cli/azure/storage/account#az-storage-account-create)
+- [az storage account delete](/cli/azure/storage/account#az-storage-account-delete)

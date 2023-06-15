@@ -8,14 +8,13 @@ ms.topic: include
 
 Connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.
 
-> [!div class="mx-imgBorder"] 
->![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](/azure/devops/organizations/public/media/wiki/open-wiki-vert-brn.png)
+:::image type="content" source="../media/open-wiki-vert-brn.png" alt-text="Screenshot showing highlighted Wiki menu selection.":::
 
-If you need to switch your team project, choose :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: **Azure DevOps** to [browse all team projects and teams](../../navigation/work-across-projects.md).
+If you need to switch your team project, choose :::image type="icon" source="../../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to [browse all team projects and teams](../../navigation/work-across-projects.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
@@ -36,15 +35,7 @@ az devops wiki show --wiki
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-> [!NOTE]   
-> For Azure DevOps Server 2020, you can use the following command to set the default server instance, collection, and project.  
-> `az devops configure --defaults organization=https://ServerName/CollectionName project=ContosoWebApp`
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Example
 
@@ -90,8 +81,6 @@ az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hell
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-Azure DevOps CLI commands aren't supported for Azure DevOps Server 2019 and earlier versions.  
-::: moniker-end
+
 
 * * *

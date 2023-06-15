@@ -2,19 +2,18 @@
 title: Auto detect configuration and git aliases
 titleSuffix: Azure DevOps 
 description: Auto detect configuration and git aliases when using Azure DevOps extension command-line interface 
-ms.topic: conceptual
-ms.prod: devops 
-ms.technology: devops-reference
+ms.topic: how-to
+ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+ms.author: chcomley  
+author: chcomley
+monikerRange: 'azure-devops'
 ms.date: 08/17/2020
 ---
 
 # Auto detect configuration and git aliases
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 The Azure DevOps CLI has been optimized to allow developers to use Azure Repos and work well with their git workflows.
 
@@ -29,7 +28,7 @@ With this capability, you can run `az repos pr list` in your local git checkout 
 You can also configure the Azure DevOps Extension to add git aliases for common git-based Azure Repos commands like creating or adding reviewers to pull requests. Run the following command to enable git aliases.
 
 
-```bash
+```azurecli
 az devops configure --use-git-aliases true
 ```
 
@@ -54,7 +53,7 @@ For example:
 `az devops configure --defaults organization=https://dev.azure.com/contoso project=webApplication`
 
 Say a customer runs the following commands
-```bash
+```azurecli
 ~/$ az devops configure --defaults organization=https://dev.azure.com/contoso project=webApp
 ~/$ az repos list --organization=https://dev.azure.com/contosoTest --project=testApplication
 ````
@@ -63,7 +62,7 @@ The organization and project parameter provided via command will be used since c
 
 Let's have a look at another example. Say a user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo, which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `true` by default. 
 
-```bash
+```azurecli
 ~/contosoTest/portal$ az devops configure --defaults organization=https://dev.azure.com/contoso project=webApp
 ~/contosoTest/portal$ az repos list
 ```

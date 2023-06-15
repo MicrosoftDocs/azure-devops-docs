@@ -3,10 +3,10 @@ title: Adjust work to fit sprint capacity
 titleSuffix: Azure Boards
 description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
 ms.custom: boards-sprints
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2021
@@ -14,7 +14,7 @@ ms.date: 09/20/2021
 
 # Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="adjust-work">  </a>
 
@@ -80,7 +80,7 @@ Use this article to learn how to:
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -116,7 +116,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]  
 > ![Turn work details on](media//adjust-work/work-details-on-standard.png)
@@ -141,7 +141,7 @@ Here we select two items at the bottom of the sprint backlog, open the  :::image
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Here we select the last item in the sprint backlog and drag it to the product backlog. 
 
@@ -171,7 +171,7 @@ As you reassign tasks, capacity bars automatically update.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Reassign tasks](media/IC797838.png) 
 ::: moniker-end

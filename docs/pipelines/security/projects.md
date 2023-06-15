@@ -3,11 +3,13 @@ title: Recommendations to structure projects in your pipeline
 description: Learn how to use project structure to improve pipeline security.
 ms.assetid: 90fb461a-2315-4b60-a662-f022c9c770e2
 ms.reviewer: vijayma
-ms.date: 05/26/2021
+ms.date: 01/27/2023
 monikerRange: '> azure-devops-2019'
 ---
 
 # Recommendations to securely structure projects in your pipeline
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Beyond the scale of individual resources, you should also consider groups of resources.
 In Azure DevOps, resources are grouped by team projects.

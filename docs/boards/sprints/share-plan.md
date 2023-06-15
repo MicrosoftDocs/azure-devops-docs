@@ -2,10 +2,10 @@
 title: Share your team's sprint plan with your team in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to share sprint plan working with Scrum methods.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2021
@@ -13,7 +13,7 @@ ms.date: 09/20/2021
 
 # 5. Share your sprint plan
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 <a id="share" >  </a>
 
@@ -70,7 +70,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -121,7 +121,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. (Optional) To choose which columns should display and in what order, choose **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
@@ -141,7 +141,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker-end
 
-Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
+Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json). 
 
 
 

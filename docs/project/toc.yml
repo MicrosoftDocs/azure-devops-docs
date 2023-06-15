@@ -1,79 +1,49 @@
-- name: Cross-service, Cross-projects, Wikis, & Public Projects 
+- name: Wikis, Search, & Navigation
   href: index.yml
 - name: Get started
   expanded: true
   items:
   - name: Set your preferences
-    href: ../organizations/settings/set-your-preferences.md
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json 
   - name: Set personal or team favorites
-    href: ../organizations/settings/set-your-preferences.md
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json 
   - name: Understand your default permissions
-    href: ../organizations/security/permissions-access.md
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/project/toc.json 
   - name: Connect to a project
-    href: ../organizations/projects/connect-to-projects.md
-  - name: Navigate the web portal 
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json 
+  - name: Navigate the web portal
     href: ./navigation/index.md
   - name: Get started with Search
     href: ./search/get-started-search.md
   - name: Create a wiki for your project
     href: ./wiki/wiki-create-repo.md
-- name: Integration overview
-  items:
-  - name: Cross-service integration overview
-    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-  - name: GitHub integration 
-    href: ../cross-service/github-integration.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-  - name: Deploy to Azure
-    href: ../pipelines/overview-azure.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-- name: Work across projects and services 
-  items:
-  - name: Project summary
-    href: ../organizations/projects/project-vision-status.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-    displayname: stats, members, wiki, README, invite, share, collaborate
-  - name: Work across projects  
-    href: navigation/work-across-projects.md 
-  - name: Work across projects FAQs
-    href: work-across-projects-faqs.yml 
-- name: Traceability
-  href: ../cross-service/toc.yml
-- name: Search  
-  href: search/toc.yml
 - name: Wiki
   href: wiki/toc.yml
-- name: Public Projects
-  href: ../organizations/public/toc.yml
+- name: Search
+  href: search/toc.yml
 - name: Navigation
   href: navigation/toc.yml
-- name: Notifications
-  href: ../notifications/toc.yml
 - name: Feedback
-  href: ../feedback/toc.yml
+  href: feedback/toc.yml
 - name: REST API Reference
   items:
-  - name: Projects
-    href: /rest/api/azure/devops/core/projects
   - name: Search
     href: /rest/api/vsts/search/
   - name: Wikis
-    href: /rest/api/vsts/wiki/wikis 
+    href: /rest/api/vsts/wiki/wikis
   - name: Fetch Wiki search results
-    href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
-  - name: Get project metrics
-    href: /rest/api/azure/devops/build/metrics/get%20project%20metrics
+    href: /rest/api/azure/devops/search/wiki-search-results/fetch-wiki-search-results
 - name: Resources
   items:
   - name: Get Started
     href: ../get-started/index.yml
   - name: Notifications
-    href: ../notifications/about-notifications.md
+    href: ../organizations/notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json 
   - name: Manage projects
     href: ../organizations/projects/about-projects.md
-  - name: Settings, Security, & Usage
+  - name: Settings & Usage
     href: ../organizations/index.yml
   - name: Azure Boards
-    href:  ../boards/index.yml
-  - name: Reporting
-    href:  ../report/index.yml
-
-
-
+    href: ../boards/index.yml
+  - name: Analytics & reporting
+    href: ../report/index.yml

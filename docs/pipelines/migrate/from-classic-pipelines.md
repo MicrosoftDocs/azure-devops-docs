@@ -2,13 +2,15 @@
 title: Migrate from Classic to YAML pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Classic pipelines to YAML.
-ms.technology: devops-cicd-migrate
+ms.subservice: azure-devops-pipelines-migrate
 ms.topic: quickstart
-ms.date: 10/12/2021
+ms.date: 01/28/2022
 monikerRange: azure-devops
 ---
 
 # Migrate your Classic pipeline to YAML
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Get started with Azure Pipelines by converting your existing Classic pipeline to use YAML. With a YAML-based pipeline, you can implement your CI/CD strategy as code and see its history, compare versions, blame, annotate, and so on.
 
@@ -80,6 +82,14 @@ If you're not going to use this sample pipeline anymore, delete it from your pro
 1. Select the ellipses (...) and select **Delete**.
 
 2. Enter the name of your pipeline to permanently delete it, and then select **Delete**.
+
+## FAQ
+
+### Is there a task in YAML pipelines to create work items when there is a build failure? 
+
+YAML pipelines don't have a [Create work item on failure setting](../build/options.md#create-a-work-item-on-failure) like classic build pipelines. You have a couple of options for creating this functionality yourself.
+- You can use a script or PowerShell task and call the [REST API](/rest/api/azure/devops/pipelines/). 
+- You can use Azure CLI to call [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) in your pipeline. [See an example](../customize-pipeline.md#create-work-item-on-failure) of using the CLI to create a bug on failure.
 
 ## Next steps
 

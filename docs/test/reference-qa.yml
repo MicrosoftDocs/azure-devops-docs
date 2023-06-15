@@ -1,0 +1,224 @@
+### YamlMime:FAQ
+metadata:
+  title: Test plans frequently asked questions 
+  description: Learn about frequently asked questions (FAQs) on test plans in Azure DevOps.
+  titleSuffix: Azure Test Plans
+  ms.service: azure-devops-test-plans
+  ms.custom: UpdateFrequency3
+  ms.author: chcomley
+  author: chcomley
+  ms.topic: FAQ
+  monikerRange: '<= azure-devops'
+  ms.date: 02/16/2022
+
+title: Access and permissions FAQs 
+
+summary: | 
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+
+  Find answers to frequently asked questions when using Azure Test Plans. For how-to guides, see the following articles:  
+  - [Create test plans and test suites](create-a-test-plan.md)
+  - [Create manual test cases](create-test-cases.md)
+  - [Track test status](track-test-status.md)
+  - [Repeat a test with different data](repeat-test-with-different-data.md)
+  - [Set test retention policies](how-long-to-keep-test-results.md)
+  - [Install the Test & Feedback extension](perform-exploratory-tests.md)
+
+  <a name="testplans" /> 
+  <a name="query-based-suites"></a> 
+
+sections:
+
+  - name: Test plans and test suites
+    
+    questions: 
+
+      - question: What are query-based test suites?
+        answer: |
+            <a name="query-based-suites"></a> 
+            Query-based test suites use a query to group together test cases that have a particular characteristic, for example, all tests that have Priority=1. The test suite automatically includes every test case that is returned by the query.
+
+            <a name="copyclonetce"></a>
+
+      - question: Can I copy or clone test plans and test suites?
+        answer: |
+            **Yes**. Depending on the action you want to take, you can copy or clone test plans and import or clone test suites. To learn how, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).  
+
+            > [!NOTE]
+            > - You can export a maximum of 75 test suites in a single operation. The email supports up to 1 MB of data.
+            > - You can't export test plan attachments.
+
+      - question: Can I just view test plan data I export, or copy it to a Word document?
+        answer: |
+            *Yes** Choose **Print** in the **Export** dialog box, then choose **Cancel** in the **Print** dialog box.
+            This option displays the data in the report.
+            Select all the text, then copy and paste it into a Word document, if you want.
+            All the formatting in the report is retained.
+
+      - question: What happens when I delete a test case from a requirement-based test suite?
+        answer: |
+            The test case still exists in your project, but the test case is removed from the test suite.
+            Also, it's no longer linked to the backlog item for that test suite.
+
+            <a name="ViewAssignedTests" />
+
+      - question: Why do I see the wrong test suite and tests when I select View Tests from the notification email about tests that are assigned to me?
+        answer: |
+            This situation might happen if you were prompted to enter credentials for Azure DevOps when you clicked the link.
+            Without signing out of Azure DevOps, select **View Tests** again to see the correct test suite and tests.
+
+            <a name="testcases" />
+            <a name="create-manual-test-cases" />
+
+  - name: Test cases
+
+    questions: 
+
+      - question: Can I copy test cases from one project to another?
+        answer: |
+            **Yes**. See [Copy test cases](copy-clone-test-items.md#copy-test-cases). For Azure DevOps Server 2020 and later versions, you can copy test cases from within a project or another project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
+
+      - question: Can I add an extra line to a test step?
+        answer: |
+            **Yes**. Press **Shift**+**Enter** in the action or expected results field to add an extra line.
+
+      - question: How do I insert a test step into a test case?
+        answer: |
+            Select a test step. Press **Alt**+**P** to insert a new test step above the selected step.
+
+            <a name="add-multiple-test-cases"></a>
+
+      - question: How can I find out if a test case was added to other test suites?
+        answer: |
+            ::: moniker range=">=azure-devops-2020"
+            Select a test case in the **Define** tab. Right-click or select **More options** to open the context menu, and then select **View linked items**.
+
+            ![Screenshot shows the Linked Items dialog box with Test Suites selected.](media/create-test-cases/view-linked-items.png)
+
+            In the **Linked Items** dialog box, select **Test Suites** to see the test suites linked to the test case. Double-click a test suite to open it.
+            ::: moniker-end
+
+            ::: moniker range="<=azure-devops-2019"
+            Select a test case, then view the test suites details.
+            The Associated test suites pane shows you any test suite for any test plan that contains this test case.
+            This view includes all projects.
+
+            Select the associated test suite to view it.
+            To view the project and the test plan for that test suite, move your pointer over the test suite.
+
+            ![On Test Plans page, select details pane. Select test suites in the test details pane.](media/create-test-cases/TestSuites.png)
+
+            ::: moniker-end
+ 
+      - question: How do I delete a test case or other test artifacts?
+        answer: |
+            See [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md).
+
+            <a name="runtests"></a>
+            <a name="qanda"></a>
+            <a name="trackstatus"></a>
+
+  - name: Test status tracking charts
+
+    questions: 
+
+      - question: How is data shown in the charts for test cases that are in multiple test suites?
+        answer: |
+            For test case charts, if a test case has been added to multiple test suites in a plan then it's only counted once. 
+            For test result charts, each instance of a test that is run is counted for each of the test suites separately.
+
+      - question: Who can create charts?
+        answer: |
+            To create charts, you need to be assigned Basic access or higher. 
+
+      - question: How can I edit or delete a chart?
+        answer: |
+            Choose :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  **Configure**  and the option you want from the chart's context menu.  
+
+            :::image type="content" source="media/track-test-status/test-chart-options-context-menu.png" alt-text="Screenshot of test tracking chart configure options menu.":::
+
+            <a name="repeatdifferent"></a>
+
+  - name: Test configurations
+
+    questions: 
+
+      - question: Are parameters the best way to specify that the test should be run on different operating system platforms? And with different browsers, databases, and so on?
+        answer: |
+            It's better to use test configurations.
+            With test case parameters, you run the different parameter values one after another, which makes it difficult to switch from one platform to another.
+            For more information, see [Test different configurations](test-different-configurations.md).
+
+            <a name="manageresults"></a>
+
+  - name: Test results and retaining test data
+
+    questions: 
+
+      - question: What are the default retention limits?
+        answer: |
+            For projects created before October 2015, Azure DevOps doesn't delete results from automated tests and manual tests unless you change the retention limit.  
+            For new projects created after October 2015, Azure DevOps deletes all test results after one year (365 days), unless you chose to indefinitely retain a build associated with those results.
+
+      - question: How do I control how long I keep my test data?
+        answer: |
+            See [Set test retention policies](how-long-to-keep-test-results.md).
+
+      - question: What is the default test retention policy for XAML builds?
+        answer: |
+            By default, a XAML build pipeline is set up to delete builds older than the 10 most recent builds.
+            But related test results aren't automatically deleted when those builds are deleted.  
+
+            For more information, see [Create or edit a build definition](/previous-versions/visualstudio/visual-studio-2013/ms181716(v=vs.120)).
+
+      - question: Why isn't test data deleted for XAML builds by default?
+        answer: |
+            By default, this behavior is turned off because 10 builds can happen quickly, especially with continuous integration builds.
+            Test results are often deleted before you can analyze them. 
+
+            <a name="keep-build-indefinitely"></a>
+
+      - question: How do I keep a build indefinitely?
+        answer: |
+            See [Set retention policies for builds, releases, and tests](../pipelines/policies/retention.md).
+
+            <a name="tandfext" />
+            <a name="recording-playback" />
+
+  - name: Test & Feedback extension 
+
+    questions: 
+
+      - question: How do I play the video recordings I created with the extension?
+        answer: |
+            YOu can view the video recordings created by the Test & Feedback extension in [Google Chrome](https://www.google.com/chrome/) browser and in the [VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
+
+      - question: Does the extension support Team Foundation Server?
+        answer: |
+            The Test & Feedback extension supports Team Foundation Server 2015 and later versions.
+            All users, including users granted **Stakeholder** access, can use the extension in Connected mode. Functionality associated with 
+            session insights and the request and provide feedback flow require Team Foundation Server 2017 or later versions.
+
+            <a name="addsimilar"></a>
+
+      - question: Can I edit an existing bug instead of creating a new bug when using the Test & Feedback extension?
+        answer: |
+            Yes, the extension automatically shows bugs that may be related to the one you're creating
+            and allows you to add your screenshots, notes, and videos to this existing bug.
+            For more information, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
+
+      - question: On Google Chrome, the mouse offset towards the left makes it difficult to use. Do you have a workaround?
+        answer: |
+            Follow this procedure:  
+            1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf**.
+            1. Search for 'Use Blink's zoom for device scale factor'.
+            1. Change it to **Disabled**.
+
+additionalContent: | 
+  ## Related articles
+  - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
+  - [Run manual tests](run-manual-tests.md)
+  - [Track test status](track-test-status.md)
+  - [Repeat a test with different data](repeat-test-with-different-data.md)
+  - [Set test retention policies](how-long-to-keep-test-results.md)
+  - [Install the Test & Feedback extension](perform-exploratory-tests.md)

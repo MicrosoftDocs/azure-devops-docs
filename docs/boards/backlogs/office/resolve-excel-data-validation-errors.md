@@ -2,17 +2,17 @@
 title: Resolve data validation errors in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to address rule errors that occur when publishing a list from Excel to Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 10/08/2021
 ---
 
 # Resolve data validation errors that occur when you publish from Excel
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 A data validation error occurs when a change in the work item list or project plan violates a work item type's rule. The following examples show common data validation errors:  
   
@@ -25,7 +25,7 @@ A data validation error occurs when a change in the work item list or project pl
 
 ## Prerequisites  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md). 
  
   
 <a name="ResolveDataValidationError"></a> 
@@ -80,6 +80,5 @@ You can use the Office Excel tools to find and resolve an error in a work item l
   
 ## Related articles
 
--  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
--  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
--  Connect Azure Boards to an Office client](track-work.md) 
+-  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)      
+-  [Connect Azure Boards to an Office client](track-work.md) 

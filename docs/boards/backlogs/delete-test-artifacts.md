@@ -3,18 +3,18 @@ title: Delete test plans, test cases, and other test artifacts in Azure Boards
 titleSuffix: Azure Boards  
 description: Learn how to delete test plans, test cases, test results, & other test artifacts in Azure Boards. 
 ms.custom: seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
-ms.date: 10/08/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Delete test artifacts in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="delete-test"> </a> 
 
@@ -35,7 +35,7 @@ When you delete test artifacts, the following actions occur:
 
 ::: moniker range=">= azure-devops-2019"
 
-- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/set-project-collection-level-permissions.md#project-level) permission set to **Allow**. 
+- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow**. 
 - To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. 
 - To manage or delete test artifacts, you must also have your [access level](../../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. This level provides access to the full Test Plans feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
@@ -43,7 +43,7 @@ When you delete test artifacts, the following actions occur:
 
 ::: moniker range="< azure-devops-2019"
 
-- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/set-project-collection-level-permissions.md#project-level) permission set to **Allow**. 
+- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow**. 
 - To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. 
 - You must also have your [access level set to Basic+Test Plans or Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
@@ -55,46 +55,47 @@ To delete test artifacts, the following restrictions and operations apply:
 - When you delete a test plan, test suite, test case, shared steps, or shared parameters, you not only permanently delete them, you also delete all associated test artifacts such as test results.  
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
 
-::: moniker range="tfs-2017" 
-
-> [!NOTE]   
-> The permanently delete feature of test artifacts is available for TFS 2017.1 and later versions. 
-
-::: moniker-end
-
 <a id="test-experience"></a>
 
 ## Work item types that support the test experience  
 
 The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager. These work item types are linked together using the link types shown. 
 
-  ![Test management work item types](../work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
+  ![Test management work item types.](../work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
 From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, 
 and which test suites are defined for a test plan. 
 However, these objects aren't connected to each other through link types. For definitions of each field used in these work item types, see [Query based on build and test integration fields](../queries/build-test-integration.md).
 
 
-## Delete a test case
+## Delete a test case, test suite, or test plan 
 
-1. To delete a test case, open it from the web portal and choose the **Permanently delete** option from the actions menu. (Bulk deletion isn't supported from a query results page.)     
+1. To delete a test case, test suite, or test plan, open it from the web portal and choose the **Permanently delete** option from the actions menu. (Bulk deletion isn't supported from a query results page.)     
  
-	![Delete a test case and associated test artifacts from the web form](media/move-change-delete/delete-test-artifacts-form.png)  
+	![Delete a test case and associated test artifacts from the web form.](media/move-change-delete/delete-test-artifacts-form.png)  
 
 	> [!NOTE] 
-	>You'll only see the **Permanently delete** option if you have the necessary permissions and access. 
+	> You'll only see the **Permanently delete** option if you have the necessary permissions and access. 
 
 2. Confirm you want to actually delete the item.  
   
-	![Confirm delete of test artifacts](media/move-change-delete/perm-delete-test-artifacts-dialog.png)  
- 
-3. You can also delete test plans and test suites directly from **Test**. 
+	:::image type="content" source="media/move-change-delete/perm-delete-test-artifacts-dialog.png" alt-text="Confirm delete of test artifacts dialog.":::  
 
-	![Delete test plans and artifacts from Test pages](media/move-change-delete/delete-test-plans.png)  
+::: moniker range=">= azure-devops-2020"
+3. You can also delete a test plan directly from **Test Plans**. To delete a test plan, open **Test Plans** and choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More Actions** for the plan you want to delete, and choose **Delete**. 
+
+	:::image type="content" source="media/move-change-delete/delete-test-suite-test-plans.png" alt-text="Screenshot of Test Plans page, delete a test plan.":::  
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+3. You can also delete a test plan directly from **Test** or **Test Plans**. 
+
+	![Delete test plans and artifacts from Test pages.](media/move-change-delete/delete-test-plans.png)  
+::: moniker-end
 
 4.	To delete shared steps and shared parameters, you need to first manually remove all references to them before you can delete them. 
 	
-	![Delete shared steps from form](media/delete-test-shared-steps-remove-link.png)  
+	![Delete shared steps from form.](media/delete-test-shared-steps-remove-link.png)  
 
 ## Related articles   
 

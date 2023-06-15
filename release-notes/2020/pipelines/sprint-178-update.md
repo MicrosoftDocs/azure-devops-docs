@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Pipelines Sprint 178 Update
 description: See the Sprint 178 feature updates for Azure Pipelines, including next steps.
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 11/12/2020
 ---
 

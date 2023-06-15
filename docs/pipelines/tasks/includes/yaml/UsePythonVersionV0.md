@@ -1,8 +1,7 @@
 ---
 ms.topic: include
 ms.date: 04/25/2019
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML

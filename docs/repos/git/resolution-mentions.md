@@ -2,15 +2,16 @@
 title: Close work items using commit messages
 titleSuffix: Azure Repos
 description: How to close work items using commit messages
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 08/30/2019
 monikerRange: '>= azure-devops-2020'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Resolve work items on commit
 
-[!INCLUDE [version-azure-devops-2020](../includes/version-azure-devops-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 Close work items by mentioning keywords in commit messages. When you mention a work item in a commit that makes it to the default branch via one of the supported workflows, we will attempt to resolve that work item. 
 

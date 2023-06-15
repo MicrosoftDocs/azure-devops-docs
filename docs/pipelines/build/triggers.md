@@ -5,17 +5,22 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 04/13/2021
-monikerRange: '>= tfs-2015'
+ms.date: 01/25/2023
+monikerRange: '<= azure-devops'
 ---
 
 # Specify events that trigger pipelines
 
-::: moniker range="<= tfs-2018"
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the list below:
+Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the lists below.
+
+> [!NOTE]
+> All trigger paths are case-sensitive.
 
 <a name="ci"></a>
 ## Classic build pipelines and YAML pipelines
@@ -43,6 +48,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers-classic.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
 
+<a id="branch-considerations"></a>
 ## Branch consideration for triggers in YAML pipelines
 
 YAML pipelines can have different versions of the pipeline in different branches, which can affect which version of the pipeline's triggers are evaluated and which version of the pipeline should run.

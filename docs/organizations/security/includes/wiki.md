@@ -1,7 +1,7 @@
 
 ## Default permissions per task
 
-|Task |Stakeholders  |Readers  |Contributors  |Team Administrators | Organization Owner/Project Administrator |
+|Task |Stakeholders  |Readers  |Contributors  |Team Administrators | Organization owner/Project Administrator |
 |---------|---------|---------|---------|---------|---------|
 |Set personal notifications or alerts    | ✔️ | | ✔️ | ✔️ | ✔️ |
 |Set team notifications or alerts     |         |         |         | ✔️ | ✔️ |

@@ -6,18 +6,23 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 02/12/2021
-monikerRange: '>= tfs-2015'
+ms.date: 06/06/2023
+monikerRange: '<= azure-devops'
 author: steved0x
 ---
 
 # Troubleshoot pipeline runs
 
-[!INCLUDE [temp](../includes/version.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
+This topic provides guidance on the common reasons that pipelines fail to [trigger](#pipeline-wont-trigger), [get an agent and start](#pipeline-queues-but-never-starts), or [complete](#pipeline-fails-to-complete). For instructions on reviewing pipeline logs, see [Review logs to diagnose pipeline issues](review-logs.md).
 
-::: moniker range="<= tfs-2018"
+> [!NOTE]
+> If your pipeline run failed and you were directed to this article from the **Troubleshooting failed runs** link in the Azure DevOps portal:
+> 1. Review the common causes in [Pipeline fails to complete](#pipeline-fails-to-complete).
+> 2. Follow the troubleshooting steps in [Review logs to diagnose pipeline issues](review-logs.md).
+
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -26,9 +31,11 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 You can use the following troubleshooting sections to help diagnose issues with your pipeline. Most pipeline failures fall into one of these categories.
 
 * [Pipeline won't trigger](#pipeline-wont-trigger)
-* [Pipeline queues but never gets an agent](#pipeline-queues-but-never-gets-an-agent)
+* [Pipeline queues but never starts](#pipeline-queues-but-never-starts)
 * [Pipeline fails to complete](#pipeline-fails-to-complete)
 
+
+For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
 <a name="my-pipeline-isnt-triggering" />
 
 ## Pipeline won't trigger
@@ -72,18 +79,18 @@ If your `pr` trigger isn't firing, and you are using Azure Repos, it is because 
 
 ### Branch filters misconfigured in CI and PR triggers
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them.
 
 > [!IMPORTANT]
-> When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](../yaml-schema.md#triggers).
+> When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [pr](/azure/devops/pipelines/yaml-schema/pr) and [trigger](/azure/devops/pipelines/yaml-schema/trigger).
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them. For more information, see [Triggers](../yaml-schema.md#triggers).
+When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them. For more information, see [pr](/azure/devops/pipelines/yaml-schema/pr) and [trigger](/azure/devops/pipelines/yaml-schema/trigger).
 
 > [!NOTE]
 > If you specify an `exclude` clause without an `include` clause, it is equivalent to specifying `*` in the `include` clause.
@@ -112,9 +119,9 @@ Once all UI scheduled triggers are removed, a push must be made in order for the
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
-## Pipeline queues but never gets an agent
+## Pipeline queues but never starts
 
-If your pipeline queues but never gets an agent, check the following items.
+If your pipeline queues but never starts, check the following items.
 
 ::: moniker range="azure-devops"
 
@@ -155,9 +162,16 @@ If your pipeline queues but never gets an agent, check the following items.
 
 If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](../licensing/concurrent-jobs.md).
 
+#### Check for available parallel jobs
+
+> [!NOTE]
+> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. If you don't have any parallel jobs, your pipelines will fail with the following error: `##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request`.  Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Please allow 2-3 business days to respond to your grant request.
+
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
 ![Pipelines concurrent jobs](../media/troubleshooting/concurrent-pipeline-limits.png)
+
+If you are using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects** or **Public projects**, depending on whether your Azure DevOps project is a [private project (default) or public project](../../organizations/projects/make-project-public.md).
 
 After reviewing the limits, check concurrency to see how many jobs are currently running and how many are available.
 
@@ -189,7 +203,7 @@ To check how much concurrency you have:
         
 2. Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools), and choose **View in-progress jobs**.
 
-3. You'll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
+3. You'll see text that says **Currently running X/X jobs**. If both numbers are the same, pending jobs will wait until currently running jobs complete.
 
     ![View in-progress jobs](../media/troubleshooting/view-in-progress-jobs.png)
  
@@ -260,7 +274,7 @@ The job has been abandoned because agent did not renew the lock. Ensure agent is
 
 This error may indicate the agent lost communication with the server for a span of several minutes. Check the following to rule out network or other interruptions on the agent machine:
 
-* Verify automatic updates are turned off. A machine reboot from an update will cause a build or release to fail with the above error. Apply updates in a controlled fashion to avoid this type of interruption. Before rebooting the agent machine, the agent should first be marked disabled in the pool administration page and let any running build finish.
+* Verify automatic updates are turned off. A machine reboot from an update will cause a build or release to fail with the above error. Apply updates in a controlled fashion to avoid this type of interruption. Before rebooting the agent machine, mark the agent as disabled in the pool administration page and let any running build finish.
 * Verify the sleep settings are turned off.
 * If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that may severely impact the health of the machine for multiple minutes.
 * If the agent is running on a virtual machine, the same operating-system-update recommendations and sleep-setting recommendations apply to the host machine. And also any other maintenance operations that several impact the host machine.
@@ -293,7 +307,7 @@ Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) fo
 
 ## Pipeline fails to complete
 
-If your pipeline gets an agent but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
+If your pipeline starts, but fails to complete, check the following common issues. If your issue doesn't seem to match one of these, see [Get logs to diagnose problems](#get-logs-to-diagnose-problems).
 
 * [Job time-out](#job-time-out)
 * [Issues downloading code](#issues-downloading-code)
@@ -304,6 +318,20 @@ If your pipeline gets an agent but fails to complete, check the following common
 * [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Service Connection related issues](#service-connection-related-issues)
+
+:::moniker range="azure-devops"
+
+### Task insights for failed pipeline runs
+
+Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
+
+:::image type="content" source="../get-started/media/task-insights.png" alt-text="Screenshot of task insights metrics.":::
+
+To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
+
+:::image type="content" source="../get-started/media/task-insights-setting.png" alt-text="Screenshot of task insights for failed pipeline runs setting.":::
+
+:::moniker-end
 
 ### Job time-out
 
@@ -338,7 +366,7 @@ If your pipeline is failing immediately with `Could not find a project that corr
 
 ##### Get sources not downloading some files
 
-This may be characterized by a message in the log "All files up to date" from the *tf get* command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
+This may be characterized by a message in the log "All files up to date" from the `tf get` command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
 ##### Get sources through Team Foundation Proxy
 
@@ -361,7 +389,7 @@ It is helpful to narrow whether a build or release failure is the result of an A
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](/azure/devops/pipelines/tasks/reference/msbuild-v1) or [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
 ::: moniker range="azure-devops"
@@ -427,7 +455,7 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 ### File or folder in use errors
 
-File or folder in use errors are often indicated by error messages such as: 
+`File or folder in use` errors are often indicated by error messages such as: 
 
 * `Access to the path [...] is denied.`
 * `The process cannot access the file [...] because it is being used by another process.`
@@ -460,7 +488,7 @@ The MSBuild and Visual Studio Build tasks already add `/nr:false` to the argumen
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
 #### MSBuild and /maxcpucount:[n]
 
-By default the build tasks such as [MSBuild](../tasks/build/msbuild.md) and [Visual Studio Build](../tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
+By default the build tasks such as [MSBuild](/azure/devops/pipelines/tasks/reference/msbuild-v1) and [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
 Try adding the `/m:1` argument to your build tasks to force MSBuild to run only one process at a time.
 
@@ -484,7 +512,7 @@ A process that stops responding may indicate that a process is waiting for input
 
 Running the agent from the command line of an interactive logged on session may help to identify whether a process is prompting with a dialog for input.
 
-Running the agent as a service may help to eliminate programs from prompting for input. For example in .NET, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When running as a Windows service, the value is false.
+Running the agent as a service may help to eliminate programs from prompting for input. For example in .NET, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When the agent is running as a Windows service, the value is false.
 
 #### Process dump
 
@@ -492,7 +520,7 @@ Analyzing a dump of the process can help to identify what a deadlocked process i
 
 #### WiX project
 
-Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
+Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will work around the issue.
 
 ### Line endings for multiple platforms
 
@@ -564,7 +592,7 @@ To troubleshoot issues related to service connections, see [Service connection t
 
 ### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
 
-In this scenario, you can use the [Azure File Copy task](../tasks/deploy/azure-file-copy.md) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
+In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
 ## Get logs to diagnose problems
 

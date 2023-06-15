@@ -2,15 +2,18 @@
 title: Manage Search, indexing
 description: Get instructions for how to check, pause, resume, and reindex a repository or collection.
 ms.assetid: 
-ms.technology: devops-collab
+ms.custom: engagement-fy23
+ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/30/2021
-monikerRange: '>= tfs-2017 < azure-devops'
+ms.date: 02/14/2023
+monikerRange: '< azure-devops'
 ---
 
 # Manage Search indexing
+
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can manage your search extension and indexing status, which include the following actions:
 [Check indexing status](#check-indexing-status)
@@ -35,10 +38,6 @@ The PowerShell scripts require the SQL script files, so ensure the **SqlScripts*
 > [!NOTE]
 > When you're executing scripts, ensure that you run the appropriate script for your Azure DevOps Server or TFS version:
 > 
-> * [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
-> * [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
-> * [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
-> * [TFS 2017 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update3)
 > * [TFS 2018 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
 > * [TFS 2018 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update1)
 > * [TFS 2018 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update2)
@@ -46,7 +45,7 @@ The PowerShell scripts require the SQL script files, so ensure the **SqlScripts*
 
 ### Check indexing status
 
-(For TFS 2017 Update 1 and later, and Azure DevOps Server, see the [next section](#check-indexing-status-for-tfs-2017-update-1-and-later).)
+(For TFS 2018 and Azure DevOps Server, see the [next section](#check-indexing-status-for-tfs-2018-and-later).)
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection, do the following steps:
 
@@ -72,7 +71,7 @@ To check the indexing status after Search is configured, or after the extension 
 
 5. If the problem persists, contact [customer support ](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
-### Check indexing status for TFS 2017 Update 1 and later
+### Check indexing status for TFS 2018 and later
 
 To check the indexing status after Search is configured, or after the extension was installed for a collection, complete the following steps:
 
@@ -162,7 +161,7 @@ You're prompted to enter the following information:
 
 Search for Azure DevOps Server has the following limitation: 
 
-* If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [re-index all your collections](manage-search.md#reindex-a-repository-or-collection).
+* If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [reindex all your collections](manage-search.md#reindex-a-repository-or-collection).
 
 ## Related articles
 

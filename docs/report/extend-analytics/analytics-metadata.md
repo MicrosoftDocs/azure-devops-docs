@@ -1,112 +1,72 @@
 ---
-title: Explore the OData metadata for Analytics 
+title: OData metadata for Analytics 
 titleSuffix: Azure DevOps  
 description: Learn about the entity model OData metadata defined for Analytics in Azure DevOps.
-ms.technology: devops-analytics
-ms.reviewer: angurusw
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 11/08/2022
 ---
 
-# Explore the Analytics OData metadata
+# Analytics OData metadata
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Understanding the metadata associated with the entity model for Analytics is a prerequisite for programmatically querying the [Data model for Analytics](data-model-analytics-service.md). OData metadata is a machine-readable description of the entity model designed to enable client consumption. 
 
-[!INCLUDE [temp](../includes/analytics-preview.md)]
+> [!NOTE]
+> *"The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP and commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools can be used to consume OData services."* - [OData Organization Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/).
+
 
 In this article you'll learn how to:
 > [!div class="checklist"]
-> 
 > * Query the metadata on a specific project
 > * Query the metadata on an organization
 > * Identify the keys, properties, and navigational properties associated with an Entity
 > * Identify the capabilities of the Analytics OData endpoint
 
-<a id="query-metadata" />
+For detailed descriptions for all OData elements, see [OData model](/odata/concepts/data-model). For information on querying the metadata, see [Construct OData queries for Analytics](../analytics/analytics-query-parts.md).
 
-## How to query the service for metadata
 
-Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire  organization in Azure DevOps](account-scoped-queries.md).
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
-### Query for metadata on a specific project
+## Entity sets and entity types
 
-You construct the service root URL for a project as shown:
+Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `Projects` is an entity set containing `Project` entities. An entity can be a member of at most one entity set.
 
-::: moniker range="azure-devops"
 
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-> ``` 
+`EntitySets` and `EntityTypes` define each of the entities in the Analytics model including properties and relationships. Entity types define the named properties and relationships of an entity. Entity types may derive by single inheritance from other entity types. The key of an entity type is formed from a subset of its primitive properties. 
 
-::: moniker-end
-
-[!INCLUDE [temp](../includes/api-versioning.md)]
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-> ```
-> 
-> [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
-
-::: moniker-end
-
-<a id="metadata-response" />
-
-## Interpret the metadata response
-
-The core components of the metadata response are EntityType and EntityContainer.
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <?xml version="1.0" encoding="UTF-8"?>
-> <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
->     <edmx:DataServices>
->         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="Microsoft.VisualStudio.Services.Analytics.Model">
->            <EntityType Name="Entity Name"/>
->         </Schema>
->         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="Default">
->            <EntityContainer Name="Container"/>
->         </Schema>
->     </edmx:DataServices>
-> </edmx:Edmx>
-> ```
-
-## EntityTypes
-
-EntityTypes define each of the Entities in the model including properties and relationships. 
+The following example shows the metadata associated with the `Project` entity type.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <EntityType Name="Project">
->    <Key>
->       <PropertyRef Name="ProjectSK"/>
->    </Key>
->    <Property Name="ProjectSK" Nullable="false" Type="Edm.Guid"/>
->    <Property Name="ProjectId" Nullable="false" Type="Edm.Guid">
->       <Annotation String="Project Id" Term="Display.DisplayName"/>
->    </Property>
->    <Property Name="ProjectName" Nullable="false" Type="Edm.String">
->       <Annotation String="Project Name" Term="Display.DisplayName"/>
->    </Property>
->    <NavigationProperty Name="Areas" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Area)"/>
->    <NavigationProperty Name="Iterations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Iteration)"/>
->    <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
+>   <Key>
+>     <PropertyRef Name="ProjectSK"/>
+>   </Key>
+>   <Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
+>   <Property Name="ProjectId" Type="Edm.Guid" Nullable="false">
+>     <Annotation Term="Display.DisplayName" String="Project Id"/>
+>   </Property>
+>   <Property Name="ProjectName" Type="Edm.String" Nullable="false">
+>     <Annotation Term="Display.DisplayName" String="Project Name"/>
+>   </Property>
+>   <Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
+>   <Property Name="ProjectVisibility" Type="Microsoft.VisualStudio.Services.Analytics.Model.ProjectVisibility">
+>     <Annotation Term="Display.DisplayName" String="Project Visibility"/>
+>   </Property>
+>   <NavigationProperty Name="Areas" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Area)"/>
+>   <NavigationProperty Name="Iterations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Iteration)"/>
+>   <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
 > </EntityType>
 > ```
 
 ### Keys
 
-Keys define the Entity properties available for use as a Navigational Property.
+`Keys` define the Entity properties available for use as a Navigational Property.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -117,9 +77,9 @@ Keys define the Entity properties available for use as a Navigational Property.
 
 ### Properties
 
-The set of Entity properties available for query. Annotations represent other details about a given property. 
+The set of `Entity properties available for query. Annotations represent other details about a given property. 
 
-Any property of Analytics that should be visible to end users is annotated with a DisplayName.
+Any property of Analytics that should be visible to end users is annotated with a `DisplayName`.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -146,14 +106,14 @@ ReferenceName is another common annotation used to define the system identifier 
 
 Querying an individual Entity is useful. Eventually, you'll probably want to filter or expand details of another Entity. To do so, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
 
-A Navigational Property with a Collection type represents a many-to-many relationship in the model.
+A `NavigationaProperty` with a collection type represents a many-to-many relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
 > ```
 
-ReferentialConstraints tie Navigational Properties to a specific key of an Entity, representing a many to one relationship in the model.
+`ReferentialConstraints` tie navigational properties to a specific key of an entity, representing a many-to-one relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -166,19 +126,24 @@ ReferentialConstraints tie Navigational Properties to a specific key of an Entit
 
 ### EntitySets
 
-EntitySets represents a collection of entities and associated Navigational Property Bindings and Annotations.
+Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `WorkItems` and `WorkItemRevisions` are `EntitySets` within the `EntityContainer` named `Container`. An entity can be a member of at most one entity set. Entity sets provide the primary entry points into the data model, and represent a collection of entities and associated Navigational property bindings and annotations.
+
+The following syntax indicates the `Projects` entity set data model. For a description of each entity set, see [Data model for Analytics](data-model-analytics-service.md).
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <EntitySet Name="Projects" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.Project">
->    <NavigationPropertyBinding Target="Teams" Path="Teams"/>
->    <Annotation String="Projects" Term="Org.OData.Display.V1.DisplayName"/>
+>   <NavigationPropertyBinding Path="Areas" Target="Areas"/>
+>   <NavigationPropertyBinding Path="Iterations" Target="Iterations"/>
+>   <NavigationPropertyBinding Path="Teams" Target="Teams"/>
+>   <Annotation Term="Org.OData.Display.V1.DisplayName" String="Projects"/>
 > </EntitySet>
 > ```
 
 ### Capabilities
 
-Capabilities and Aggregation annotations define the set of [functions](./odata-supported-features.md) understood by the Analytics OData endpoint.
+Capabilities define the set of [functions](odata-supported-features.md) understood by the Analytics OData endpoint. 
+ 
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -212,6 +177,10 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 > </Annotation>
 > ```
 > 
+### Aggregations
+
+Aggregation annotations define the set of [transformations](./odata-supported-features.md) understood by the Analytics OData endpoint. 
+
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <Annotation Term="Org.OData.Aggregation.V1.ApplySupported">
@@ -221,6 +190,17 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 >             <String>aggregate</String>
 >             <String>filter</String>
 >             <String>groupby</String>
+>             <String>compute</String>
+>             <String>expand</String>
+>          </Collection>
+>       </PropertyValue>
+>       <PropertyValue Property="CustomAggregationMethods ">
+>          <Collection>
+>            <String>ax.ApproxCountDistinct</String>
+>            <String>ax.StandardDeviation</String>
+>            <String>ax.StandardDeviationP</String>
+>            <String>ax.Variance</String>
+>            <String>ax.VarianceP</String>
 >          </Collection>
 >       </PropertyValue>
 >    </Record>
@@ -246,10 +226,20 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 
 > [!div class="nextstepaction"]
 > [Data model for Analytics](data-model-analytics-service.md)
+ 
 
 
 ## Related articles
 
 - [Data model for Analytics](data-model-analytics-service.md)
 - [Organization and project-scoped queries](account-scoped-queries.md).
+- [Data available from Analytics](../powerbi/data-available-in-analytics.md) 
+- [Query work tracking data using Analytics](analytics-recipes.md)
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
+
+
+## Related resources 
+
+- [Wiql to OData Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
+- [OData Organization Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/)
 - [OData Version 4.0. Part 3: Common Schema Definition Language (CSDL) Plus Errata 03, Entity Model Wrapper](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) 

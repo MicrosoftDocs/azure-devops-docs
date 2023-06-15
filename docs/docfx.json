@@ -1,26 +1,14 @@
 {
   "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
+      "content":
+      [
+        {
+            "files": ["breadcrumb/toc.yml"]
+        },
+        {
+          "files": ["**/**.md",
+                    "**/**.yml"],
         "exclude": [
-          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
-          "migrate/build-deployment-best-practices.md",
-          "pipelines/release/automate-terraform.md",
-          "pipelines/archive/apps/aspnet/**",
-          "pipelines/archive/apps/java/**",
-          "pipelines/archive/apps/nodejs/**",
-          "pipelines/archive/release/**",
-          "pipelines/apps/windows/universal.md",
-          "reference/api-ref/**",
-          "boards/backlogs/office/create-your-backlog-tasks-using-project.md",
-          "boards/backlogs/office/schedule-projects-using-microsoft-project.md",
-          "boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
-          "boards/backlogs/office/add-share-storyboard-shapes.md",
-          "boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
           "artifacts/nuget/bootstrap-nuget.md",
           "**/obj/**",
           "**/includes/**",
@@ -35,14 +23,6 @@
       },
       {
         "files": [
-          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
-          "migrate/build-deployment-best-practices.md",
-          "pipelines/release/automate-terraform.md",
-          "pipelines/archive/apps/aspnet/**",
-          "pipelines/archive/apps/java/**",
-          "pipelines/archive/apps/nodejs/**",
-          "pipelines/archive/release/**",
-          "pipelines/apps/windows/universal.md",
           "artifacts/nuget/bootstrap-nuget.md"
         ],
         "exclude": [
@@ -77,24 +57,25 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/AzureDevOps",
+      "breadcrumb_path": "/azure/devops/breadcrumb/toc.json", 
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
+      "archive_url": "https://docs.microsoft.com/en-us/previous-versions/azure/devops/all/",
       "ms.topic": "conceptual",
-      "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "extendBreadcrumb": true,
-      "searchScope": [
-        "Azure DevOps Services"
-      ],
       "ms.manager": "mijacobs",
       "author": "mijacobs",
       "ms.author": "mijacobs",
       "ms.date": "09/05/2018",
-      "ms.prod": "devops",
+      "ms.service": "azure-devops",
       "ms.version": "ALM",
+      "zone_pivot_group_filename": "zone-pivot-groups.json",
+      "searchScope": [
+        "Azure DevOps Services"
+      ],
       "MSHAttr.msprod": "ms.prod:ALM",
       "ms.prodfamily": "ALM",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.team-services",
@@ -125,16 +106,14 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/admin/**": "< azure-devops",
-        "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "< azure-devops",
-        "reference/witadmin/**": "< azure-devops"
+        "report/extend-analytics/**": ">= azure-devops-2019"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
         "pipelines/*.md": "sdanie",
         "pipelines/agents/**": "sdanie",
         "pipelines/apps/**": "jukullam",
+        "pipelines/architectures/**": "jukullam",
         "pipelines/archive/**": "sdanie",
         "pipelines/artifacts/**": "rabououn",
         "pipelines/build/**": "sdanie",
@@ -157,7 +136,7 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "v-maksim",
+        "repos/tfvc/**": "vijayma",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
       },
@@ -192,44 +171,288 @@
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
       },
-      "ms.technology": {
-        "pipelines/**": "devops-cicd",
-        "pipelines/agents/**": "devops-cicd-agents",
-        "pipelines/apps/**": "devops-cicd-apps",
-        "pipelines/archive/**": "devops-cicd-archive",
-        "pipelines/artifacts/**": "devops-cicd-artifacts",
-        "pipelines/build/**": "devops-cicd-build",
-        "pipelines/caching/**": "devops-cicd-caching",
-        "pipelines/ecosystems/**": "devops-cicd-ecosystems",
-        "pipelines/get-started/**": "devops-cicd-get-started",
-        "pipelines/integrations/**": "devops-cicd-integrations",
-        "pipelines/library/**": "devops-cicd-library",
-        "pipelines/licensing/**": "devops-cicd-licensing",
-        "pipelines/migrate/**": "devops-cicd-migrate",
-        "pipelines/packages/**": "devops-cicd-packages",
-        "pipelines/policies/**": "devops-cicd-policies",
-        "pipelines/process/**": "devops-cicd-process",
-        "pipelines/release/**": "devops-cicd-release",
-        "pipelines/reports/**": "devops-cicd-reports",
-        "pipelines/repos/**": "devops-cicd-repos",
-        "pipelines/security/**": "devops-cicd-security",
-        "pipelines/scripts/**": "devops-cicd-scripts",
-        "pipelines/targets/**": "devops-cicd-targets",
-        "pipelines/tasks/**": "devops-cicd-tasks",
-        "pipelines/test/**": "devops-cicd-test"
+      "ms.service": {
+        "pipelines/**": "azure-devops-pipelines",
+        "pipelines/ecosystems/**": "azure-devops"
+      },
+      "ms.subservice": {
+        "pipelines/agents/**": "azure-devops-pipelines-agents",
+        "pipelines/apps/**": "azure-devops-pipelines-apps",
+        "pipelines/artifacts/**": "azure-devops-pipelines-artifacts",
+        "pipelines/build/**": "azure-devops-pipelines-build",
+        "pipelines/ecosystems/**": "azure-devops-ecosystem",
+        "pipelines/get-started/**": "azure-devops-pipelines-get-started",
+        "pipelines/integrations/**": "azure-devops-pipelines-integrations",
+        "pipelines/library/**": "azure-devops-pipelines-library",
+        "pipelines/licensing/**": "azure-devops-pipelines-licensing",
+        "pipelines/migrate/**": "azure-devops-pipelines-migrate",
+        "pipelines/packages/**": "azure-devops-pipelines-packages",
+        "pipelines/policies/**": "azure-devops-pipelines-policies",
+        "pipelines/process/**": "azure-devops-pipelines-process",
+        "pipelines/release/**": "azure-devops-pipelines-release",
+        "pipelines/reports/**": "azure-devops-pipelines-reports",
+        "pipelines/repos/**": "azure-devops-pipelines-repos",
+        "pipelines/security/**": "azure-devops-pipelines-security",
+        "pipelines/scripts/**": "azure-devops-pipelines-scripts",
+        "pipelines/targets/**": "azure-devops-pipelines-targets",
+        "pipelines/tasks/**": "azure-devops-pipelines-tasks",
+        "pipelines/test/**": "azure-devops-pipelines-test"
+      },
+      "ms.custom": {
+        "repos/**": "UpdateFrequency3"
       },
       "recommendations": {
         "pipelines/repos/**": "true",
         "repos/tfvc/**": "true",
         "repos/get-started/**": "true",
         "repos/git/**": "true"
-      },
-      "ROBOTS": {
-        "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
-      },
+     },
       "exclude_monikers": {
         "reference/error/**/*.md": [
           "azure-devops"
+        ],
+        "boards/backlogs/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/boards/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/plans/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/queries/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/sprints/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/work-items/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/best-practices-agile-project-management.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/configure-customize.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/faqs.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "get-started/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "get-started/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "notifications/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "notifications/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "reference/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "reference/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/security/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/projects/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/work/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/work/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/feedback/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/navigation/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/wiki/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/search/**/*.md": [
+          "tfs-2017"
+        ],
+        "project/configure-or-add-a-project-portal.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/configure-or-redirect-process-guidance.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/work-across-projects-faqs.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "report/dashboards/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/tfvc/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/get-started/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "user-guide/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "user-guide/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/get-started/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "marketplace/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "marketplace/**/*.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "marketplace-extensibility/index.yml": [
+          "tfs-2017"
+        ],
+        "organizations/accounts/**/*.md": [
+          "tfs-2017"
+        ],
+        "organizations/index.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "pipelines/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "pipelines/index.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "report/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/git/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "test/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "test/**/*.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "artifacts/**/*.md": [
+          "tfs-2017"
+        ],
+        "artifacts/**/*.yml": [
+          "tfs-2017"
+        ],
+        "extend/**/*.md": [
+          "tfs-2017"
+        ],
+        "integrate/**/*.md": [
+          "tfs-2017"
+        ],
+        "service-hooks/**/*.md": [
+          "tfs-2017"
         ]
       }
     },
@@ -239,7 +462,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2022"
       }
     }
   }

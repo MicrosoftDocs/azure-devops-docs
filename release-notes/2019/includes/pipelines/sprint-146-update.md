@@ -111,14 +111,14 @@ By using the YAML snippet below, the built-in YAML templates will be configured 
 
 ```yaml
 trigger:
-- master
+- main
 ```
 
 ### Change build numbers, upload and download artifacts in forked repository builds
 
 Until now, pull request validation builds for forked repositories didn’t have permission to upload and download build artifacts or change the build number. Permissions were restricted because it was insecure to make the agent’s broader-scoped permissions available during a fork build triggered by an unknown user. With this update, agent permissions are scoped so that your pipeline can perform these operations if you need to.
 
-Below is an example of the YAML that you can use to archive build outputs in a tar.gz file into the artifact staging directory. Then, it publishes the output to Azure Pipelines to be associated with the build. For more details, see the documentation on [Archive Files task](/azure/devops/pipelines/tasks/utility/archive-files?tabs=yaml&view=azure-devops&preserve-view=true)  and [Publish Build Artifacts task](/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops&preserve-view=true).
+Below is an example of the YAML that you can use to archive build outputs in a tar.gz file into the artifact staging directory. Then, it publishes the output to Azure Pipelines to be associated with the build. For more details, see the documentation on [Archive Files task](/azure/devops/pipelines/tasks/reference/archive-files-v2?tabs=yaml&view=azure-devops&preserve-view=true)  and [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1?view=azure-devops&preserve-view=true).
 
 ```yaml
 - task: ArchiveFiles@2
@@ -135,7 +135,7 @@ Below is an example of the YAML that you can use to archive build outputs in a t
 
 ### New option in Publish Test Results task to fail build on failed tests
 
-[Publish Test Results task](/azure/devops/pipelines/tasks/test/publish-test-results) is used to publish test results to Azure Pipelines when tests are run using your choice of test runner. Until now, the task would simply publish results from a results file and would not fail the build even if the results file contained failed tests. This meant that you had to write custom steps to have the build fail on test failures.
+[Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) is used to publish test results to Azure Pipelines when tests are run using your choice of test runner. Until now, the task would simply publish results from a results file and would not fail the build even if the results file contained failed tests. This meant that you had to write custom steps to have the build fail on test failures.
 
 We have now added an option in the task to fail the build if there are any failed tests.
 

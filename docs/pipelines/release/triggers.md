@@ -7,14 +7,14 @@ ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18, contperf-fy21q1
 ms.date: 10/20/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Release triggers
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -34,13 +34,13 @@ Continuous deployment triggers allow you to create a release every time a new bu
 :::image type="content" source="media/trigger-01.png" alt-text="Configure continuous deployment triggers":::
 
 > [!NOTE]
-> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up stages triggers to deploy your app to the various stages.
+> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up triggers to deploy your app to the various stages.
 
 <a id="scheduled-triggers"></a>
 
 ## Scheduled release triggers
 
-Scheduled release trigger allow you to create new releases at specific times.
+Scheduled release triggers allow you to create new releases at specific times.
 
 Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Disabled button and specify your release schedule. You can set up multiple schedules to trigger a release.
 
@@ -60,69 +60,50 @@ If you chose to enable the pull-request triggers, a release will be created ever
 
 To use a pull request trigger, you must also enable it for specific stages. We will go through stage triggers in the next section. You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
 
-::: moniker-end
+You can also use **Build tags** to organize your workflow and tag specific runs. The following pull request trigger will create a release every time a new artifact version is available as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
 
-<a id="env-triggers"></a>
+:::image type="content" source="media/build-tags-example.png" alt-text="Screenshot showing an example of how to set up a pull request trigger with build tags":::
+
+::: moniker-end
 
 ## Stage triggers
 
 Stage triggers allow you set up specific conditions to trigger deployment to a specific stage.
 
-  > [!div class="mx-imgBorder"]
-  > ![The stage trigger conditions settings](media/trigger-02a.png)
+- **Select trigger**:
+  Set the trigger that will start the deployment to your stage automatically. Use the **Stages** dropdown to trigger a release after a successful deployment to the selected stage. Select **Manual only** to only allow manual trigger.
 
-* **Select trigger**:
-  Set the trigger that will start the deployment to this stage automatically. Select "Release" to deploy to the stage every time a new release is created. Use the "Stage" option to deploy after deployments to selected stages are successful. To allow only manual deployments, select "Manual".
+    :::image type="content" source="media/trigger-02a.png" alt-text="A screenshot showing pre-deployment triggers.":::
 
-* **Artifacts filter**:
-  Select artifact condition(s) to trigger a new deployment. A release will be deployed to this stage only if all artifact conditions are met.
+- **Artifacts filter**:
+  Enable the toggle button to trigger a new deployment based on specific artifacts. In this example, a release will be deployed when a new artifact is available from the specified branch.
 
-  > [!div class="mx-imgBorder"]
-  > ![The artifact filter trigger conditions settings](media/trigger-02b.png)
+    :::image type="content" source="media/trigger-02b.png" alt-text="A screenshot showing pre-deployment artifact filters.":::
 
-  <a name="stage-scheduled-triggers"></a>
+- **Schedule**:
+  Trigger a new deployment to your specified stage at a specific time.
 
-* **Schedule**:
-  Trigger a new deployment to this stage at a specific time.
+    :::image type="content" source="media/trigger-02.png" alt-text="A screenshot showing pre-deployment schedule settings.":::    
 
-  > [!div class="mx-imgBorder"]
-  > ![The scheduled trigger conditions settings](media/trigger-02.png)
+- **Pull-request deployment**:
+  Enable the toggle button to trigger a new release every time a new pull request is created. It's recommended to disable this feature for production environment.
 
-<a name="prtrigger"></a>
+    :::image type="content" source="media/trigger-02c.png" alt-text="A screenshot showing pull request deployment trigger.":::    
 
-* **Pull-request deployment**:
-  Enabling this will allow pull request based releases to be deployed to this stage. Keep it disabled if this is a critical or production stage.
+- **Pre-deployment approvals**:
+Select the users who can approve or reject deployments to your selected stage. By default, when this feature is enabled, all project users must approve the deployment. If a group is added to the approvers list, at least one user in the group must approve the deployment. You can also specify the *Approval policies* and *Timeout* (the maximum time for an approval to remain in pending state before it is automatically rejected).
 
-  > [!div class="mx-imgBorder"]
-  > ![The pull request trigger conditions settings](media/trigger-02c.png)
+    :::image type="content" source="media/pre-deployment-approval.png" alt-text="A screenshot showing pre-deployment approvals."::: 
 
-* **Pre-deployment approvals**:
-Select the users who can approve or reject deployments to this stage. By default, all users must approve the deployment. If a group is added, one user in the group must approve the deployment. You can also specify the timeout (the maximum time that an approval is allowed to be pending before it is automatically rejected) and approval policies.
+- **Gates**:
+Enable the toggle button to set up specific gates to evaluate before trigger deployment.
 
-  > [!div class="mx-imgBorder"]
-  > ![Pre-deployment approvals](media/pre-deployment-approval.png)
+    :::image type="content" source="media/gates.png" alt-text="A screenshot showing pre-deployment gates."::: 
 
-* **Gates**:
-Allow you to set up specific gates to evaluate before the deployment.
+- **Deployment queue settings**:
+Configure specific actions when multiple releases are queued for deployment.
 
-  > [!div class="mx-imgBorder"]
-  > ![Gates set up](media/gates.png)
-
-* **Deployment queue settings**:
-Allow you to configure actions when multiple releases are queued for deployment.
-
-  > [!div class="mx-imgBorder"]
-  > ![deployment queue settings](media/deploy-queue.png)
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]
-> **TFS 2015**: The following features are not available in TFS 2015 - continuous deployment triggers for multiple artifact sources, multiple scheduled triggers combining scheduled and continuous deployment triggers in the same pipeline, continuous deployment based on the branch or tag of a build.
-
-::: moniker-end
-
-> [!NOTE]
-> Release triggers set a number of variables based on your pipeline configuration. You can find information about your release pipelines and/or stages by accessing the values of your [release and artifacts variables](variables.md).
+    :::image type="content" source="media/deploy-queue.png" alt-text="A screenshot showing deployment queue settings."::: 
 
 
 

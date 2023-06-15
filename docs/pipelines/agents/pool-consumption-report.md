@@ -2,19 +2,20 @@
 title: Historical graph for agent pools
 description: View agent pool usage statistics
 ms.topic: conceptual
-ms.date: 03/03/2021
+ms.date: 01/25/2023
 monikerRange: 'azure-devops'
 ---
 
 # Historical graph for agent pools (Preview)
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 The pool consumption report enables you to view jobs running in your agent pools graphed with agent pool job concurrency over a span of up to 30 days. You can use this information to help decide whether your jobs aren't running because of concurrency limits. If you have many jobs queued or running jobs at the concurrency or online agents limit, you may wish to [purchase additional parallel jobs](../licensing/concurrent-jobs.md) or provision more self-hosted agents.
 
 ## Prerequisites
 
-**Historical graph for agent pools** is in preview. To enable or disable this preview feature, navigate to [Preview features](../../project/navigation/preview-features.md), find **Historical graph for agent pools**, and choose the desired setting.
-
-:::image type="content" source="media/pool-consumption-report/historical-graph-for-agent-pools-setting.png" alt-text="Historical graph for agent pools preview setting.":::
+> [!IMPORTANT]
+> You must be a member of the [Project Collection Administrators](../../organizations/security/permissions.md#collection-level-groups) group to view the pool consumption reports for agent pools in an organization, including project level reports in that organization.
 
 ## Pool consumption report
 

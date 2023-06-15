@@ -4,17 +4,16 @@ metadata:
   titleSuffix: Azure DevOps
   ms.custom: seodec18
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
-  ms.technology: devops-accounts
+  ms.subservice: azure-devops-organizations
   ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/11/2020
+  ms.date: 08/15/2022
   monikerRange: '<= azure-devops'
-    
 title: Create and configure organization FAQs
 summary: |
-  [!INCLUDE [temp](../../includes/version-all.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
   Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
   
@@ -29,7 +28,7 @@ summary: |
   
 
 sections:
-  - name: General organization
+  - name: General
     questions:
       - question: |
           Q: What users can join for free? What benefits do users get from joining Azure DevOps?
@@ -81,17 +80,17 @@ sections:
         answer: |
           A: Change these when you sign up for your organization. 
           
-          ![Change organization details](/azure/devops/media/change-details-standard1.png)
+          ![Change organization details](../../media/change-details-standard1.png)
           
           Azure DevOps uses Agile as the default [process](../../boards/work-items/guidance/choose-process.md) to organize your work. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available. For a better experience, select a location that's closest to most users in your organization. 
           
           If a new region or location opens later, you can [change your organization location or region](./change-organization-location.md). You can also select another process, like Scrum, if that works best for you.
           
-          ![Rename project, change organization location, or select another process](/azure/devops/media/change-details-standard2.png)
+          ![Rename project, change organization location, or select another process](../../media/change-details-standard2.png)
           
           If you connected your organization to Azure Active Directory but you belong to multiple directories and want to select a different directory, change your directory here:
           
-          ![Change your directory](/azure/devops/media/change-details-standard2-with-directory.png)
+          ![Change your directory](../../media/change-details-standard2-with-directory.png)
           
           <a name="create-organization-faqs"></a>
           
@@ -226,24 +225,24 @@ sections:
           A: Azure DevOps Administrators can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the Azure AD tenant that's connected to your organization. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
           
       - question: |
-          Q: Can I change my organization Owner?
+          Q: Can I change my organization owner?
         answer: |
-          A: Yes. If you are a Project Collection Administrator, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
+          A: Yes. If you are a Project Collection Administrator, you can change the organization owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
           
       - question: |
           Q: Can I change the organization name (URL), too?
         answer: |
-          A: Only the organization Owner can change the URL. If you're the organization Owner, learn how to [change the organization URL](./rename-organization.md).
+          A: Only the organization owner can change the URL. If you're the organization owner, learn how to [change the organization URL](./rename-organization.md).
           
       - question: |
-          Q: Can I reverse an organization Owner change?
+          Q: Can I reverse an organization owner change?
         answer: |
           A: Yes, if you're a Project Collection Administrator.
           
       - question: |
-          Q: How many organization Owners can I have?
+          Q: How many organization owners can I have?
         answer: |
-          A: Your organization can have only one owner. Only organization Owners can [do certain actions](#owner-differences), so make sure you keep your organization Owner updated.
+          A: Your organization can have only one owner. Only organization owners can [do certain actions](#owner-differences), so make sure you keep your organization owner updated.
           
       - question: |
           Q: Can I assign a new owner to my organization when the current owner is no longer active?
@@ -263,18 +262,18 @@ sections:
           A: No, this behavior isn't a bug and is how it has been implemented. We hope to address this behavior soon.
           
       - question: |
-          Q: What makes the organization Owner different from other organization users?
+          Q: What makes the organization owner different from other organization users?
         answer: |
-          A: The organization Owner manages payments and access for organization users. The organization Owner also manages billing for the organization through the [Azure classic portal](https://azure.microsoft.com/en-in/updates/azure-portal-updates-for-classic-portal-users/) or the [Azure portal](https://portal.azure.com). 
+          A: The organization owner can do the following tasks, which other users don't have permissions to do: 
           
-          Organization Owners also have permissions to do the following tasks:
+          - Manage billing in the [Azure portal](https://ms.portal.azure.com/#home)
+          - [Pay for users to access the organization](../billing/buy-basic-access-add-users.md)
+          - [Pay for additional organization services](../billing/try-additional-features-vs.md)
+          - [Rename the organization URL](./rename-organization.md)
+          - [Change the organization owner](./change-organization-ownership.md)
+          - [Recover a deleted organization](./recover-your-organization.md)
           
-          * Pay for users to access the organization
-          * Pay for additional organization services
-          * Rename the organization URL
-          * Change the organization Owner
-          
-          Project collection administrators can manage user access and change the organization Owner, but they can't rename the organization URL.
+          Project collection administrators (PCAs) can perform all actions done by organization owners, except for recovering a deleted organization. This is a current limitation we're working to resolve.
           
       - question: |
           Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?

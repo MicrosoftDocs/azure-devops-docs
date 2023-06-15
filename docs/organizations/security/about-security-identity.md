@@ -2,23 +2,19 @@
 title: About security, authentication, authorization, and security policies 
 titleSuffix: Azure DevOps
 description: Learn how Azure DevOps manages security through authentication, authorization, and policies 
-ms.technology: devops-security
-ms.assetid: 
-toc: show
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-security
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 4/26/2021
+ms.date: 03/23/2023
 ---
 
 # About security, authentication, and authorization 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-
-
-Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
+Azure DevOps employs many security concepts to ensure only those users who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
 
 This article builds on the information provided in [Get started with permissions, access, and security groups](../security/about-permissions.md). Administrators benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
 
@@ -31,7 +27,7 @@ This article builds on the information provided in [Get started with permissions
       - Users
       - Organization owner
       - Service accounts
-      - Service principals
+      - Service principals or managed identities
       - Job agents
       
       
@@ -64,7 +60,6 @@ This article builds on the information provided in [Get started with permissions
  
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops"
 
 ---
@@ -73,7 +68,7 @@ This article builds on the information provided in [Get started with permissions
       **Account types**
       - Users
       - Service accounts
-      - Service principals
+      - Service principals or managed identities
       - Job agents
       
       
@@ -103,36 +98,35 @@ This article builds on the information provided in [Get started with permissions
  
 ::: moniker-end
 
-
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
-
 
 Both our cloud service, Azure DevOps Services, and on-premises server, Azure DevOps Server, support software development projects, from planning through deployment. Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects.
 
 ::: moniker range="azure-devops"
-To learn more about the steps Microsoft takes to keep your projects in Azure DevOps Services safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
+For more information about the steps Microsoft takes to keep your projects in Azure DevOps Services safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
 ::: moniker-end
 
 <a id="accounts" /> 
 
 ## Accounts 
 
-While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations. These include the following account types.   
+While the main types of accounts of interest are the human user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations. These include the following account types.   
 
 
 ::: moniker range="azure-devops"
-- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Increase your permissions; find an admin](lookup-organization-owner-admin.md#find-owner). 
+- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Look up the organization owner](look-up-organization-owner.md). 
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals**: Internal Azure DevOps accounts to support internal operations. 
+- **Service principals or managed identities**: [Azure AD applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) that have been added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
-::: moniker-end
+Throughout these docs, users can refer to all identities that have been added to the Users Hub, which can include human users and service principals.
 
+::: moniker-end
 
 ::: moniker range="< azure-devops"
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
-- **Service principals**: Internal Azure DevOps accounts to support internal operations. 
+- **Service principals or managed identities**: Azure AD applications or managed identities that have been added to your organization to perform actions on behalf of a third-party application. Some service principals refer to internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
@@ -143,43 +137,42 @@ The most effective means for managing accounts is by [adding them to security gr
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
  
- 
-
 <a id="authentication" /> 
 
 ## Authentication
 
-Authentication verifies an account identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies an account identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these other systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)
 
-Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can use Microsoft accounts. For additional information, see [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can use Microsoft accounts. For more information, see [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
-For on-premises deployments, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups).
+For on-premises deployments, AD is recommended when managing a large group of users. For more information, see [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups).
 
 ### Authentication methods, integrating with other services and apps
 
-Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
+Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following authentication methods.
 
-- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens for:  
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens on behalf of yourself for:  
 	- Accessing specific resources or activities, like builds or work items
 	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication 
 	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
 
-- [OAuth](../../integrate/get-started/authentication/oauth.md) 
-to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
+- [Azure DevOps OAuth](../../integrate/get-started/authentication/oauth.md) 
+to generate tokens on behalf of users for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
 and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
 - [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys when you use Linux, macOS, 
+to generate encryption keys for yourself when you use Linux, macOS, 
 or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
+- [Service principals or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) to generate Azure AD tokens on behalf of an application or service, that typically automates some workflow that needs to access Azure DevOps resources. Most actions traditionally done by a service account and a PAT can be done using a service principal or managed identity.
 
 By default, your account or collection allows access for all authentication methods. 
 You can limit access, but you must specifically restrict access for each method. 
@@ -188,18 +181,17 @@ no app can use that method to access your account.
 Any app that previously had access gets an 
 authentication error and can't access your account.
 
-To learn more about how we store your credentials, see [Credential storage for Azure DevOps](credential-storage.md).
+For more information about how we store your credentials, see [Credential storage for Azure DevOps](credential-storage.md).
 
-To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
+For more information about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 
 <a id="authorization" /> 
 
 ## Authorization
 
-Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
+Authorization verifies that the identity that is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection isn't authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group didn't have authorization to perform that action.
 
-Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. To learn more about these authorization methods, see [Get started with permissions, access, and security groups](../security/about-permissions.md). 
-
+Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. For more information about these authorization methods, see [Get started with permissions, access, and security groups](../security/about-permissions.md). 
 
 <a id="namespaces" /> 
 
@@ -207,7 +199,7 @@ Authorization depends on the permissions assigned to the account. Permissions ar
 
 Security namespaces store data that determines the level of access that Azure DevOps accounts have to perform a specific action on a specific resource. Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. 
 
-To learn more, see [Security namespaces and permission reference](namespace-reference.md).  
+For more information, see [Security namespaces and permission reference](namespace-reference.md).  
 
 <a id="security-policies" /> 
 
@@ -215,25 +207,28 @@ To learn more, see [Security namespaces and permission reference](namespace-refe
 
 ::: moniker range="azure-devops"
 
-To secure your organization and code, you can set a number of policies. Specifically, you can enable or disable the following policies: 
+To secure your organization and code, you can set many policies. Specifically, you can enable or disable the following policies: 
 
 ### General 
 
-- **Privacy policy URL**: Specifies a URL that links to your custom document that describes how you handle both internal and external guest data privacy. To learn more, see [Add a privacy policy URL for your organization](../accounts/add-privacy-policy-url.md).  
+- **Privacy policy URL**: Specifies a URL that links to your custom document that describes how you handle both internal and external guest data privacy. For more information, see [Add a privacy policy URL for your organization](../accounts/add-privacy-policy-url.md).  
 
 ### Application connection and security policies
 
-- **Third-party application access via OAuth**: When enabled, allows third-part applications to connect using OAuth. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
-- **SSH authentication access**: When enabled, allows applications to connect using SSH authentication. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
-- **Allow public projects**: When enabled, users can create public projects which allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization). 
-- **Restrict organization creation via Azure AD tenant policy** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, restricts users from creating additional Azure DevOps organizations that would automatically be backed by the Azure AD. To learn how to enable, see [Restrict organization creation via Azure AD tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
-- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, allows you to set additional conditions on accessing the organization. Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access. This policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
+Use the Azure Active Directory (Azure AD) tenant policy to restrict creating new organizations to desired users only. This policy is turned off by default and only valid when the organization is connected to Azure Active Directory. Check [restrict organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md) for more details.
+
+The following policies determine the access you want to give users and applications to your organizations:
+- [Third-party application access via OAuth](../accounts/change-application-access-policies.md#application-connection-policies).
+- [SSH authentication access](../accounts/change-application-access-policies.md#application-connection-policies).
+- **Allow public projects**: When enabled, users can create public projects that allow nonmembers of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../projects/make-project-public.md). 
+- **Log Audit events** - Turn on the ability to track [Auditing events and streams](../audit/azure-devops-auditing.md) for your organization.
+- [Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#conditional-access-policies).
 
 ### User policies 
-- **External guest access** (*Only valid when the organization is backed by Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
-- **Allow team and project administrators to invite new users**: Only valid when the organization is backed by Azure Active Directory. When enabled, team and project administrators can add users through the **Users** page. To learn more, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
-- **Request access**: Only valid when the organization is backed by Azure Active Directory. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
-- **Invite GitHub users**: Only valid when the organization isn't backed by Azure Active Directory. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  To learn more, see [Authenticating & inviting GitHub users FAQs](faq-github-authentication.yml#github-users). 
+- **External guest access** (*Only valid when the organization is connected to Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
+- **Allow team and project administrators to invite new users**: Only valid when the organization is connected to Azure Active Directory. When enabled, team and project administrators can add users through the **Users** page. For more information, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
+- **Request access**: Only valid when the organization is connected to Azure Active Directory. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. For more information, see [Add external users to your organization](../accounts/add-external-user.md).  
+- **Invite GitHub users**: Only valid when the organization isn't connected to Azure Active Directory. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  For more information, see [Authenticating & inviting GitHub users FAQs](faq-github-authentication.yml#github-users). 
 
 <a id="project-scoped-user-group" /> 
 
@@ -241,12 +236,16 @@ To secure your organization and code, you can set a number of policies. Specific
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+[!INCLUDE [project-scoped-users-important-note](../../includes/project-scoped-users-important-note.md)]
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 - Can only access the **Overview** and **Projects** pages of **Organization Settings**.
 - Can only connect and view those projects to which they've been added to explicitly (see [Add users to a project or team](add-users-team-project.md). 
-- Can only select user and group identities that have been added explicitly to the project they are connected to. 
+- Can only select user and group identities that have been added explicitly to the project they're connected to. 
 
-To learn more about the **Limit user visibility for projects**, see [About projects, Limit user visibility for projects](../projects/about-projects.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
 ### Git repository and branch policies 
 
@@ -259,7 +258,7 @@ To learn more about the **Limit user visibility for projects**, see [About proje
 
 ::: moniker range="< azure-devops"
 
-To secure your code, you can set a number of Git repository and branch policies. To learn more, see the following articles. 
+To secure your code, you can set many Git repository and branch policies. For more information, see the following articles. 
 
 - [Configure repository settings and policies](../../repos/git/repository-settings.md)
 - [Configure branch policies](../../repos/git/branch-policies.md)
@@ -270,7 +269,7 @@ To secure your code, you can set a number of Git repository and branch policies.
 
 ## Azure Repos and Azure Pipelines security 
 
-Since repositories and build and release pipelines pose unique security challenges, additional features beyond those discussed in this article are employed. To learn more, see the following articles. 
+Since repositories and build and release pipelines pose unique security challenges, other features beyond the features discussed in this article are employed. For more information, see the following articles. 
 
 - [Securing Azure Pipelines](../../pipelines/security/overview.md)
 - [Plan how to secure your YAML pipelines](../../pipelines/security/approach.md)

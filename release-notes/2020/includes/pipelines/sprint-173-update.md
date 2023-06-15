@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 08/03/2020
 ms.topic: include
 ---
@@ -33,7 +32,7 @@ You can specify multiple repositories in one YAML file and cause a pipeline to t
 - You consume a tool or a library from a different repository. You want to run tests for your application whenever the tool or library is updated.
 - You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
-With this update, multi-repo triggers will only work for Git repositories in Azure Repos. They don't work for GitHub or BitBucket repository resources.
+With this update, multi-repo triggers will only work for Git repositories in Azure Repos. They don't work for GitHub or Bitbucket repository resources.
 
 Here is an example that shows how to define multiple repository resources in a pipeline and how to configure triggers on all of them.
 
@@ -63,7 +62,7 @@ For more information, see [Multiple repositories in your pipeline](/azure/devops
 
 ### Updates to macOS 10.14 (Mojave) image
 
-In the next few weeks, we'll update the Node.js version on the macOS 10.14 (Mojave) image from 6 to 8. If you still need to use node.js version 6, consider using the node.js tool installer task - [here](/azure/devops/pipelines/tasks/tool/node-js?view=azure-devops&preserve-view=true).
+In the next few weeks, we'll update the Node.js version on the macOS 10.14 (Mojave) image from 6 to 8. If you still need to use node.js version 6, consider using the node.js tool installer task - [here](/azure/devops/pipelines/tasks/reference/node-tool-v0?view=azure-devops&preserve-view=true).
 
 In addition to these changes, the macOS 10.14 image will be added to [the virtual environment](https://github.com/actions/virtual-environments/tree/main/images) repo and begin receiving tooling updates monthly instead of weekly.
 
