@@ -210,7 +210,8 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 
 1. Enter the **ApiKey** you generated earlier, and then enter a **Service connection name**. 
 
-1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done. You'll need to have the Service Connections Administrator role to select this option. 
+1. Select **Grant access permission to all pipelines**, and then select **Save** when you're done. To select this option, you'll need the service connection **Administrator** role. 
+
 
 #### [YAML](#tab/yaml/)
 
