@@ -88,7 +88,7 @@ After you've installed the agent on a machine, you can install any other softwar
 > that use the outdated Node 6 library. To support backward compatibility with Node that is currently reached End-of-Life,
 > we provide the self-service methods to install the designated Node runner manually.
 >
-> Please, See [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
+> For more information, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
 
 ## Azure Virtual Machine Scale Set agents
 
