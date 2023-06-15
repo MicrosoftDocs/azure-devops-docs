@@ -133,9 +133,9 @@ To keep your token more secure, use credential managers so you don't have to ent
 In Bash, enter the following code.
 
 ```bash
-MY_PAT=[YourPAT] # replace "yourPAT" with ":PatStringFromWebUI"
-B64_PAT=$(printf "%s"":$MY_PAT" | base64)
-git config --global --add http.extraHeader "Authorization: Basic ${B64_PAT}" 
+MY_PAT=yourPAT # replace "yourPAT" with "PatStringFromWebUI"
+B64_PAT=$(printf ":%s" "$MY_PAT" | base64)
+git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
 ```
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
