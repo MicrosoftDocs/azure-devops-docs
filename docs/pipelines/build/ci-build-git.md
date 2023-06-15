@@ -135,7 +135,7 @@ YAML builds are not yet available on TFS.
 
 1. Select **Save & queue** when you're done, and then select **Save** one more time.
 
-:::image type="content" source="media/ci-build-git/classic-pr-validation.png" alt-text="A screenshot showing how to enable pull request validation.":::
+:::image type="content" source="media/classic-pr-validation.png" alt-text="A screenshot showing how to enable pull request validation.":::
 
 * * *
 
@@ -155,7 +155,7 @@ YAML builds are not yet available on TFS.
   
 1. Select **Save** to create and enable the policy. Select **Save changes** at the top left of your screen to save your changes.
 
-:::image type="content" source="media/ci-build-git/add-build-policy.png" alt-text="A screenshot showing how to add a new build policy.":::
+:::image type="content" source="media/add-build-policy.png" alt-text="A screenshot showing how to add a new build policy.":::
 
 
 
