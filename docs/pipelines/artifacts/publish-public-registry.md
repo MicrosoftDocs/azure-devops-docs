@@ -19,10 +19,10 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 ## Prerequisites
 
 - An Azure DevOps organization and a project. [Create one for free](../get-started/pipelines-sign-up.md), if you don't have one already. 
+    - The **Administrator** role for service connections in your Azure DevOps project. 
 
 - A [nuget.org](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account.
 
-- The service connection **Administrator** role. 
 
 ## Create an API key
 
