@@ -167,43 +167,11 @@ YAML builds are not yet available on TFS.
 
 1. Select the **policy name** to examine the build. If the build succeeds your pull request will be merged. If the build fails the merge will be blocked.
 
-::: moniker range="azure-devops-2022"
-
-> [!IMPORTANT]
+> [!NOTE]
 > Azure Pipelines no longer supports per-pipeline retention policies. We recommend using project-level retention rules.
 
-::: moniker-end
+## Related articles
 
-::: moniker range="<=azure-devops-2020"
-
-## Use retention policies to clean up your completed builds
-
-Retention policies allow you to control and automate the cleanup of your various builds.  For shorter-lived branches like topic branches, you may want to retain less history to reduce clutter and storage costs.  If you create CI builds on multiple related branches, it will become less important to keep builds for all of your branches.  
-
-1.  Navigate to the **Pipelines** menu in Azure Pipelines or TFS.
-2.  Locate the build pipeline that you set up for your repo.
-3.  Select **Edit** at the top right of your screen.
-4.  Under the build pipeline name, Select the **Retention** tab.  Select **Add** to add a new retention policy.
-
-    ![Retention menu](media/ci-build-git/retentionpolicy.png)
-
-5.  Type **feature/*** in the **Branch specification** dropdown.  This ensures any feature branches matching the wildcard will use the policy.
-6.  Set **Days to keep** to 1 and **Minimum to keep** to 1.
-7.  Select the **Save & queue** menu and then Select **Save**.  
-
-Policies are evaluated in order, applying the first matching policy to each build. The default rule at the bottom matches all builds.  The retention policy will clean up build resources each day.  You retain at least one build at all times.  You can also choose to keep any particular build for an indefinite amount of time.
-
-::: moniker-end
-
-## Next steps
-
-In this tutorial, you learned how to manage CI for multiple branches in your Git repositories using Azure Pipelines or TFS.
-
-You learned how to:
-
-> [!div class="checklist"]
-> * Set up a CI trigger for topic branches
-> * Automatically build a change in topic branch
-> * Exclude or include tasks for builds based on the branch being built
-> * Keep code quality high by building pull requests
-> * Use retention policies to clean up completed builds
+- [Deploy from multiple branches](../release/deploy-multiple-branches.md)
+- [Deploy pull request Artifacts](../release/deploy-pull-request-builds.md)
+- [Configure retention policies](../policies/retention.md)
