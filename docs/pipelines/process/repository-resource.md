@@ -47,7 +47,7 @@ Your repository has a resource check.
 You can also set a repository to only be used on specific YAML pipelines. Restricting a repository to specific pipelines prevents an unauthorized YAML pipeline in your project from using your repository. This setting only applies to YAML pipelines.
 
 > [!IMPORTANT]
-> Access to all pipelines is turned *off* for [protected resources](../security/resources.md#protected-resources) by default. To grant access to all pipelines, enter a check in the security box next to "Grant access permission to all pipelines" for the resource. You can do so when you're creating or editing a resource. You'll need to be a repository administrator to have this option available. 
+> Access to all pipelines is turned *off* for [protected resources](../security/resources.md#protected-resources) by default. To grant access to all pipelines, enter a check in the security box next to "Grant access permission to all pipelines" for the resource. You can do so when you're creating or editing a resource. You'll need to have the repository **Administrator** role to have this option available. 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and choose your project.
 
