@@ -485,7 +485,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
-   ```yaml
+   ```yml
    apiVersion: apps/v1
    kind: Deployment
    metadata:
