@@ -3,6 +3,7 @@ title: What is Azure Test Plans? Manual, exploratory, and automated test tools.
 description: Learn about the test tools and capabilities that Azure Test Plans provides to drive quality and collaboration throughout the development process. 
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
@@ -47,7 +48,7 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 
 
 > [!NOTE]   
-> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/all/load-test/overview).
+> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing is available. Azure Load Testing is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/all/load-test/overview).
 
 
 ### Key benefits 
@@ -599,7 +600,7 @@ tcm run /execute
 - [Unit testing](/visualstudio/test/developer-testing-scenarios) 
 - [Unit test basics](/visualstudio/test/unit-test-basics)
 - [Durable Functions unit testing](/azure/azure-functions/durable/durable-functions-unit-testing)
-- [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing)
+- [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing)
  
 <!--- Removed content
 

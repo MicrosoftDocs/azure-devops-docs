@@ -5,8 +5,8 @@ description: Learn how to select and configure widgets that you add to a team da
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
@@ -259,14 +259,12 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 - [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 ::: moniker-end
 
 

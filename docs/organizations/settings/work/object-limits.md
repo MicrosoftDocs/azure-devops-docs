@@ -5,8 +5,8 @@ description: Limits placed on the number of objects that can be specified for wo
 ms.custom: "inherited-process, linked-from-support, cross-project"
 ms.service: azure-devops-boards
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
 ms.date: 07/07/2022

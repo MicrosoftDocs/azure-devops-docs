@@ -6,8 +6,8 @@ ms.service: azure-devops-boards
 ms.custom: engagement-fy23
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.topic: troubleshooting
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 01/17/2023
 ---

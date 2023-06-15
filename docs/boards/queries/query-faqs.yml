@@ -5,8 +5,8 @@ metadata:
   titleSuffix: Azure Boards
   ms.custom: boards-queries
   ms.service: azure-devops-boards
-  ms.author: kaelli
-  author: KathrynEE
+  ms.author: chcomley
+  author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
   ms.date: 04/01/2022

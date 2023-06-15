@@ -5,8 +5,8 @@ description: Learn how to track issues or impediments to more effectively execut
 ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 ms.date: 07/26/2022
 ---

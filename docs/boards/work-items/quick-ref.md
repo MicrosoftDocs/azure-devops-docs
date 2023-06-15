@@ -5,13 +5,13 @@ description: Learn about query operators, macros, and sample queries used to lis
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2023
 ---
 
-# Key concepts and work item tasks in Azure Boards and Azure DevOps
+# Key concepts and work item tasks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -25,7 +25,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 > - [Change the link type of an existing link](../backlogs/add-link.md#change-link-type)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
-> - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position)
+> - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards)
 > - [Change the color of a swimlane on a Kanban board](../boards/expedite-work.md#add-or-remove-a-swimlane)
 ::: moniker-end
 
@@ -61,9 +61,9 @@ Use this index to quickly access concepts and tasks related to work items and in
    :::column span="1":::
       - [Link types](../queries/link-type-reference.md)  
       - [Linking and traceability](../queries/link-work-items-support-traceability.md)  
-      - [Mobile browser ](../..//project/navigation/mobile-work.md)  
+      - [Mobile browser](../..//project/navigation/mobile-work.md)  
       - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
-      - [New work item widget ](../../report/dashboards/widget-catalog.md#new-work-item)  
+      - [New work item widget](../../report/dashboards/widget-catalog.md#new-work-item)  
       - [On-premises XML process model](../../reference/on-premises-xml-process-model.md)  
       - [Permissions and access](../../organizations/security/permissions-access-work-tracking.md)  
       - [Process guidance](guidance/choose-process.md)  
@@ -187,7 +187,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Manage issues or impediments](../backlogs/manage-issues-impediments.md)
       - [Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) 
-      - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position) 
+      - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards) 
       - [Move work items to a sprint](../sprints/assign-work-sprint.md)  
       - [Move work items to another project](../backlogs/move-change-type.md#move)  
       <br/>

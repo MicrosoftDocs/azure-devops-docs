@@ -5,8 +5,8 @@ description: Learn how to set permissions on work item queries and folders when 
 ms.custom: boards-queries, linked-from-support, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2023

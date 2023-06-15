@@ -3,8 +3,8 @@ title: Reporting roadmap
 titleSuffix: Azure DevOps 
 description: Learn about the reporting roadmap for Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022

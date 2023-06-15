@@ -4,7 +4,7 @@ description: Example scenarios of when you might want to retain pipeline runs fr
 ms.topic: conceptual
 ms.author: maoswald
 author: moswald
-ms.date: 06/09/2021
+ms.date: 06/14/2023
 monikerRange: ">= azure-devops-2020"
 ---
 
@@ -12,7 +12,7 @@ monikerRange: ">= azure-devops-2020"
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are some examples of tasks that you can add to your yaml pipeline that will cause a run to retain itself.
+Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are some examples of tasks that you can add to your yaml pipeline for retention.
 
 ## Prerequisites
 
@@ -20,12 +20,12 @@ By default, members of the Contributors, Build Admins, Project Admins, and Relea
 
 ## Example: Override a short project-level retention window
 
-In this example, the project is configured to delete pipeline runs after only thirty days.
+In this example, the project is configured to delete pipeline runs after only 30 days.
 
 > [!div class="mx-imgBorder"]
 > ![Example 1: project settings retention policies](media/retention/example-policies-short.png)
 
-If a pipeline in this project is important and runs should be retained for longer than thirty days, this task ensures the run will be valid for two years by [adding a new retention lease](/rest/api/azure/devops/build/leases/add).
+If a pipeline in this project is important and runs should be retained for longer than 30 days, this task ensures the run is valid for two years by [adding a new retention lease](/rest/api/azure/devops/build/leases/add).
 
 # [PowerShell](#tab/powershell)
 
@@ -97,7 +97,7 @@ If a pipeline in this project is important and runs should be retained for longe
 
 #### Question: can a pipeline be retained for _less_ than the configured project values?
 
-No, leases don't work in the reverse. If a project is configured to retain for two years, pipeline runs won't be cleaned up by the system for two years. To delete these runs earlier, manually delete them or use the equivalent REST API.
+No, leases don't work in the reverse. If a project is configured to retain for two years, pipeline runs the system won't remove runs for two years. To delete these runs earlier, manually delete them or use the equivalent REST API.
 
 ## Example: Only runs on branches named `releases/*` should be retained for a long time
 
@@ -122,7 +122,7 @@ This is similar to above, only the condition needs to change:
 
 ## Example: Updating the retention window for a multi-stage pipeline based on stage success
 
-Consider a two-stage pipeline that first runs a build and then a release. When successful, the `Build` stage will retain the run for three days, but the project administrator wants a successful `Release` stage to extend the lease to one year.
+Consider a two-stage pipeline that first runs a build and then a release. When successful, the `Build` stage retains the run for three days, but the project administrator wants a successful `Release` stage to extend the lease to one year.
 
 The `Build` stage can retain the pipeline as in the above examples, but with one addition: by saving the new lease's `Id` in an output variable, the lease can be updated later when the release stage runs.
 
@@ -132,17 +132,17 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
   name: RetainOnSuccess
   displayName: Retain on Success
   inputs:
-  failOnStderr: true
-  targetType: 'inline'
-  script: |
-    $contentType = "application/json";
-    $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-    $rawRequest = @{ daysValid = 365; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
-    $request = ConvertTo-Json @($rawRequest);
-    $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
-    $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
-    $newLeaseId = $newLease.Value[0].LeaseId
-    echo "##vso[task.setvariable variable=newLeaseId;isOutput=true]$newLeaseId";
+    failOnStderr: true
+    targetType: 'inline'
+    script: |
+      $contentType = "application/json";
+      $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
+      $rawRequest = @{ daysValid = 365; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+      $request = ConvertTo-Json @($rawRequest);
+      $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
+      $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
+      $newLeaseId = $newLease.Value[0].LeaseId
+      echo "##vso[task.setvariable variable=newLeaseId;isOutput=true]$newLeaseId";
 ```
 
 To [_update_ a retention lease](/rest/api/azure/devops/build/leases/update) requires a different REST API call.

@@ -7,20 +7,21 @@ ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 11/28/2022
 ---
 
 # Search packages across your feeds
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
 
 ## Prerequisites
 
-- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-- [Azure Artifacts feed](../../artifacts/start-using-azure-artifacts.md).
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
 
 ## Apply supported functions to package search
 

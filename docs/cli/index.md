@@ -46,7 +46,7 @@ Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boar
 For usage and help content for any command, enter the **-h** parameter, for example:
 
 ```azurecli
-$ az devops -h
+az devops -h
 ```
 
 ```output

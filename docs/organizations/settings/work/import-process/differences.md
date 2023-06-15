@@ -5,8 +5,8 @@ description: Summary of what you can and can't customize in a process template t
 ms.service: azure-devops-boards
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
@@ -27,6 +27,9 @@ Azure DevOps Services uses a different model than Team Foundation Server (TFS) f
 * In Azure DevOps Services, process is shared across multiple projects and is the scope you customize.  
  
 The structure and overall syntax used in defining process templates remains the same, with only a few minor differences existing between templates you customize for import into Azure DevOps Services and those you upload to support an on-premises TFS.  
+
+> [!NOTE]  
+> Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.
 
 ## Unsupported customizations and unreferenced plug-in files
 

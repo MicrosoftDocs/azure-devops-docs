@@ -116,7 +116,7 @@ else
 }
 ```
 
-The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewallRule.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -151,25 +151,28 @@ if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $F
 ```
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
 ```yaml
 variables:
-  AzureSubscription: '<Azure service connection>'
-  ServerName: '<Database server name>'
-  ServerFqdn: '<SQL Database FQDN>'
-  DatabaseName: '<Database name>'
-  AdminUser: '<SQL user name>'
-  AdminPassword: '<SQL user password>'
-  SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
+  AzureSubscription: '<SERVICE_CONNECTION_NAME>'
+  ResourceGroupName: '<RESOURCE_GROUP_NAME>'
+  ServerName: '<DATABASE_SERVER_NAME>'
+  ServerFqdn: '<DATABASE_FQDN>'
+  DatabaseName: '<DATABASE_NAME>'
+  AdminUser: '<DATABASE_USERNAME>'
+  AdminPassword: '<DATABASE_PASSWORD>'
+  SQLFile: '<LOCATION_OF_SQL_FILE_IN_$(Build.SourcesDirectory)>'
 
 steps:
 - task: AzurePowerShell@5
-  displayName: Azure PowerShell script: FilePath
+  displayName: 'Azure PowerShell script'
   inputs:
     azureSubscription: '$(AzureSubscription)'
+    ScriptType: filePath
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
@@ -178,12 +181,13 @@ steps:
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
-  arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+    arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@5
-  displayName: Azure PowerShell script: FilePath
+  displayName: 'Azure PowerShell script'
   inputs:
     azureSubscription: '$(AzureSubscription)'
+    ScriptType: filePath
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
@@ -198,6 +202,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
@@ -206,7 +211,10 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 - Second, use a [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
 - Third, use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
 
+:::image type="content" source="media/classic-sql.png" alt-text="A screenshot showing a classic pipeline to run SQL script.":::
+
 * * *
+
 ## Azure service connection
 
 The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.

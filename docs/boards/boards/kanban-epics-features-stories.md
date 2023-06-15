@@ -6,8 +6,8 @@ ms.custom: boards-kanban
 ms.service: azure-devops-boards
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -94,7 +94,7 @@ When you have many items to add, keep typing your task titles and press Enter. I
 
 ## Related articles
 
-If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
+If you're new to working with the Kanban board, see [Kanban overview](kanban-overview.md)
 
 For more information on working with a checklist on a Kanban board, see [Add tasks or child items as checklists](add-task-checklists.md). You can run the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. These operations include:    
 

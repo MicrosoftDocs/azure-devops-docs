@@ -3,6 +3,7 @@ title: Track stakeholder feedback
 description: Track stakeholder feedback in Azure DevOps using the Exploratory Testing browser extension when you want to test your applications.
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

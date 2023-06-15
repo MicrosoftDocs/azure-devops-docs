@@ -4,8 +4,8 @@ metadata:
   description: Answers to frequently asked questions about Azure DevOps dashboards and charts
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-analytics
-  ms.author: kaelli
-  author: KathrynEE
+  ms.author: chcomley
+  author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
@@ -37,7 +37,7 @@ sections:
           **No**. Only users who are valid project members can view dashboards. They must sign in to the web portal for a project to view a dashboard.  
 
 
-      - question: Are their restrictions on what charts or data project members can view in a dashboard? 
+      - question: Are there restrictions on what charts or data project members can view in a dashboard? 
         answer: |
           Dashboard charts and widgets contain data that is subject to their own permissions and access levels. Project members with **Basic** access or greater can view dashboard charts and reports if they have the necessary permissions, most of which are granted by default. Members granted **Stakeholder** access can't view any code-related charts or reports. 
 

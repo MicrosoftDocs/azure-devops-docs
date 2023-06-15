@@ -5,8 +5,8 @@ description: Learn how you can migrate or integrate work tracking data from othe
 ms.custom: extensions, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---

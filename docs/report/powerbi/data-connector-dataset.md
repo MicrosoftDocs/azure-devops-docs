@@ -1,11 +1,11 @@
 ---
 title: Dataset design for Analytics views
 titleSuffix: Azure DevOps
-description: Learn about the dataset that is created in Power BI for an Analytics View.
+description: Learn about the dataset that is created in Power BI for an Analytics view.
 ms.subservice: azure-devops-analytics
 ms.custom: analytics-views 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
 ms.date: 05/12/2022

@@ -5,8 +5,8 @@ description: Learn how to create a flat-list, tree, or direct links queries to l
 ms.custom: boards-queries, contperf-fy23, linked-from-support, cross-project 
 ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 12/16/2022

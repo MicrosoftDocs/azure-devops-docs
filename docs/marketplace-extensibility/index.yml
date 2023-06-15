@@ -57,6 +57,8 @@ landingContent:
         links:
           - text: Authorize access to REST APIs with OAuth 2.0
             url: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/marketplace-extensibility/toc.json
+          - text: Authorize access with service principals and managed identities
+            url: ../integrate/get-started/authentication/service-principal-managed-identity.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Authenticate access with personal access tokens
             url: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json
       - linkListType: reference

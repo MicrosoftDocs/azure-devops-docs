@@ -5,8 +5,8 @@ description: Your guide to configuring and customizing work tracking processes f
 ms.custom: inherited-process
 ms.service: azure-devops-boards
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 04/22/2019

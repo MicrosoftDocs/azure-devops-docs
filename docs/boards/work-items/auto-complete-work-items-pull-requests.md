@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to automate work item creation and state transition of work items.  
 ms.service: azure-devops-boards
 ms.custom: cross-service
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

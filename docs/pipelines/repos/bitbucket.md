@@ -107,7 +107,7 @@ target `master` and `releases/*`, you can use the following `pr` trigger.
 
 ```yaml
 pr:
-- master
+- main
 - releases/*
 ```
 
@@ -144,7 +144,7 @@ For more complex triggers that need to exclude certain branches, you must use th
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/old*
@@ -159,7 +159,7 @@ You can specify file paths to include or exclude. For example:
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
   paths:
     include:
@@ -187,7 +187,7 @@ pr:
   autoCancel: false
   branches:
     include:
-    - master
+    - main
 ```
 
 ### Opting out of PR validation

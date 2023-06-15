@@ -5,8 +5,8 @@ description: Learn how to add system-generated charts or query-based charts to a
 ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2022
 ---
@@ -234,12 +234,10 @@ Select **Add to dashboard**, and then select the team dashboard to add the Markd
 
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 - [Analyze test results](../../pipelines/test/test-analytics.md)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](velocity-guidance.md)
 ::: moniker-end

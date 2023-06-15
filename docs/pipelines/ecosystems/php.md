@@ -58,7 +58,7 @@ Use a pipeline to build a PHP web app and deploy to Azure App Service. Azure App
 
 You can use tasks to archive your files, publish a build artifact, and then use the [Azure Web App task](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) to deploy to Azure App Service. 
 
-This pipelines has two stages: Build and Deploy. In the Build stage, PHP 7.3 gets installed with composer. The app files are archived and uploaded into a package named `drop`. During the Deploy phase, the `drop` package gets deployed to Azure App Service as a web app.  
+This pipelines has two stages: Build and Deploy. In the Build stage, PHP 7.4 gets installed with composer. The app files are archived and uploaded into a package named `drop`. During the Deploy phase, the `drop` package gets deployed to Azure App Service as a web app.  
 
 ```yaml
 
@@ -81,7 +81,7 @@ stages:
 - stage: Build
   displayName: Build stage
   variables:
-    phpVersion: '7.3'
+    phpVersion: '7.4'
   jobs:
   - job: BuildJob
     pool:

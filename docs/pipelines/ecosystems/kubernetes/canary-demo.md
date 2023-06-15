@@ -16,6 +16,8 @@ A *canary* deployment strategy means deploying new versions of an application ne
 
 This step-by-step guide covers how to use the [Kubernetes manifest task's](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) canary strategy. Specifically, you'll learn how to set up canary deployments for Kubernetes, and the associated workflow to evaluate code. You then use that code to compare baseline and canary app deployments, so you can decide whether to promote or reject the canary deployment.
 
+If you're using Azure Kubernetes Service, the Azure Resource Manager service connection type is the best way to connect to a private cluster, or a cluster that has local accounts disabled.
+
 ## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
@@ -57,6 +59,11 @@ helm install --name sampleapp stable/prometheus-operator
 1. Go to **Project settings** > **Pipelines** > **Service connections** in the Azure DevOps menu.
 1. Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
 1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
+
+
+> [!NOTE]
+> If you're using Azure Kubernetes Service, the [Azure Resource Manager service connection type](../../library/service-endpoints.md#azure-resource-manager-service-connection) is the best way to connect to a private cluster, or a cluster that has local accounts disabled.
+
 
 ## Set up continuous integration
 

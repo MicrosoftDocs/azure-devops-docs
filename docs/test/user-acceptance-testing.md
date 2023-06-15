@@ -3,6 +3,7 @@ title: Assign tests for user acceptance testing
 description: Create and run user acceptance tests in Azure Test Plans. Test to verify that each of the deliverables meets your users' needs.
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

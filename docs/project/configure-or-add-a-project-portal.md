@@ -22,6 +22,6 @@ The project portal is a site associated with a team project for the purposes of 
 
 ## Related articles
 
-- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About processes and process templates](../boards/work-items/guidance/choose-process.md)
 - [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration)
 - [Discontinue SharePoint integration: TFS 2017 and earlier versions](/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration)

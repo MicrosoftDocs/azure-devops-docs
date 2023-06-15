@@ -3,7 +3,7 @@
 title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
 ms.topic: conceptual
-ms.date: 12/21/2022
+ms.date: 05/10/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -19,6 +19,8 @@ You'll use the `task.setvariable` logging command to set variables in [PowerShel
 
 > [!NOTE] 
 > Deployment jobs use a different syntax for output variables. To learn more about support for output variables in deployment jobs, see [Deployment jobs](./deployment-jobs.md#support-for-output-variables).
+
+To use a variable with a condition in a pipeline, see [Specify conditions](conditions.md). 
 
 ## About `task.setvariable`
 
@@ -235,8 +237,8 @@ First, set the output variable `myStageVal`.
 
 ```yaml
 steps:
-    - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-      name: MyOutputVar
+  - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+    name: MyOutputVar
 ```
 
 Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
@@ -264,12 +266,30 @@ stages:
 First, set the output variable `myStageVal`.
 
 ```yaml
-    steps:
-     - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
-       name: MyOutputVar
+steps:
+  - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+    name: MyOutputVar
 ```
 
 Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+    - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+      name: MyOutputVar
+- stage: B
+  dependsOn: A
+  jobs:
+  - job: B1
+    variables:
+      myStageAVar: $[stageDependencies.A.A1.outputs['MyOutputVar.myStageVal']]
+    steps:
+    - powershell: Write-Host "$(myStageAVar)"
+```
 
 ---
 
@@ -277,14 +297,24 @@ In case your value contains newlines, you can escape them and the agent will aut
 
 ```yaml
 steps:
-    - bash: |
-        escape_data() {
-          local data=$1
-          data="${data//'%'/'%AZP25'}"
-          data="${data//$'\n'/'%0A'}"
-          data="${data//$'\r'/'%0D'}"
-          echo "$data"
-        }
-        echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
-      name: MyOutputVar
+- bash: |
+    escape_data() {
+      local data=$1
+      data="${data//'%'/'%AZP25'}"
+      data="${data//$'\n'/'%0A'}"
+      data="${data//$'\r'/'%0D'}"
+      echo "$data"
+    }
+    echo "##vso[task.setvariable variable=myStageVal;isOutput=true]$(escape_data $'foo\nbar')"
+  name: MyOutputVar
 ```
+
+## FAQ
+
+### My output variable isn't rendering. What is going wrong? 
+
+There are a few reasons why your output variable may not appear. 
+
+* Output variables set with `isoutput` aren't available in the same job and instead are only available in downstream jobs. 
+* Depending on what variable syntax you use, a variable that sets an output variable's value may not be available at runtime. For example, variables with macro syntax (`$(var)`) get processed before a task runs. In contrast, variables with template syntax are processed at runtime (`$[variables.var]`). You'll usually want to use runtime syntax when setting output variables. For more information on variable syntax, see [Define variables](variables.md#understand-variable-syntax).
+* There may be extra spaces within your expression. If your variable isn't rendering, check for extra spaces surrounding `isOutput=true`.

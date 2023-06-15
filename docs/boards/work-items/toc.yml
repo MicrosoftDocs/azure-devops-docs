@@ -25,7 +25,7 @@
 - name: Link work items
   href: ../backlogs/add-link.md
   displayname: remote work, bulk modify links, pull request, build
-- name: Copy/clone
+- name: Copy or clone
   href: ../backlogs/copy-clone-work-items.md
   displayname: change type, URL, list
 - name: Work item form controls

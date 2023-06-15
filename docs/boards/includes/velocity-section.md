@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 07/09/2020
 ---
@@ -30,6 +30,4 @@ The report tracks the team's estimated backlog work&mdash;sum of Effort (Basic o
 
 ::: moniker-end 
 
-To learn more, see the following articles: 
-- [View or configure team velocity](../../report/dashboards/team-velocity.md)  
-- [Velocity metrics and usage guidance](../../report/dashboards/velocity-guidance.md)
+For more information, see [View or configure team velocity](../../report/dashboards/team-velocity.md)  

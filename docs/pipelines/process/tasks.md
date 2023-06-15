@@ -133,7 +133,7 @@ Control options are available as keys on the `task` section.
   condition: expression     # see below
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
-  timeoutInMinutes: number  # how long to wait before timing out the task
+  timeoutInMinutes: string  # how long to wait before timing out the task
 ```
 
 ::: moniker-end
@@ -147,7 +147,7 @@ Control options are available as keys on the `task` section.
   condition: expression     # see below
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
-  timeoutInMinutes: number  # how long to wait before timing out the task
+  timeoutInMinutes: string  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
 
@@ -163,7 +163,7 @@ Control options are available as keys on the `task` section.
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
   retryCountOnTaskFailure: number # Max number of retries; default is zero
-  timeoutInMinutes: number  # how long to wait before timing out the task
+  timeoutInMinutes: string  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
 
@@ -178,6 +178,9 @@ Control options are available as keys on the `task` section.
 
 The timeout period begins when the task starts running. It doesn't include the
 time the task is queued or is waiting for an agent.
+
+> [!NOTE]
+> Pipelines may have a job level timeout specified in addition to a task level timeout. If the job level timeout interval elapses before your step completes, the running job is terminated, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
 
 In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
 
@@ -241,7 +244,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 
 > [!NOTE]
 > * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
-> * The failing task is retried immediately.
+> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
 > * A warning is added to the task logs indicating that it has failed before it is retried.
@@ -283,7 +286,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 Specify the number of retries if this task fails. The default is zero. 
 
 > [!NOTE]
-> * The failing task is retried immediately.
+> * The failing task retries in seconds. The wait time between each retry increases after each failed attempt.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
 > * A warning is added to the task logs indicating that it has failed before it is retried.

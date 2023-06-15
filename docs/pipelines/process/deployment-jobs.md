@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 12/21/2022
+ms.date: 05/18/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -15,17 +15,17 @@ monikerRange: '>= azure-devops-2020'
 > - Job and stage names cannot contain keywords (example: `deployment`).
 > - Each job in a stage must have a unique name. 
 
-In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
+In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. Azure DevOps supports the *runOnce*, *rolling*, and the *canary* strategies.  
 
 Deployment jobs provide the following benefits:
 
  - **Deployment history**: You get the deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
  - **Apply deployment strategy**: You define how your application is rolled out.
 
-   > [!NOTE] 
-   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies.  
-
 A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`.
+
+> [!NOTE]
+> This article focuses on deployment with deployment jobs. To learn how to deploy to Azure with pipelines, see [Deploy to Azure overview](../overview-azure.md). 
 
 ## Schema
 
@@ -387,8 +387,8 @@ To share variables between stages, output an [artifact](../artifacts/pipeline-ar
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<deployment-job-name>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['Deploy.StepA.VariableA']]`)
-- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<deployment-job-name>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['Deploy.StepA.VariableA']]`)
+- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<job-name>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 

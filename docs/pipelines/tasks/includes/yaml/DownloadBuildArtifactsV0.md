@@ -17,7 +17,7 @@ ms.subservice: azure-devops-pipelines-tasks
     #specificBuildWithTriggering: false # Optional
     #buildVersionToDownload: 'latest' # Required when buildType == Specific. Options: latest, latestFromBranch, specific
     #allowPartiallySucceededBuilds: false # Optional
-    #branchName: 'refs/heads/master' # Required when buildType == Specific && BuildVersionToDownload == LatestFromBranch
+    #branchName: 'refs/heads/main' # Required when buildType == Specific && BuildVersionToDownload == LatestFromBranch
     #buildId: # Required when buildType == Specific && BuildVersionToDownload == Specific
     #tags: # Optional
     #downloadType: 'single' # Choose whether to download a single artifact or all artifacts of a specific build. Options: single, specific

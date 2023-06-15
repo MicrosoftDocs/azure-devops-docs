@@ -5,7 +5,7 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 12/20/2022
+ms.date: 06/07/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -106,7 +106,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Container jobs](../process/container-phases.md) |  ✅ | ❌ | ❌ | Specifies jobs to run in a container.  |
 | [Demands](../process/demands.md) | ✅ | ✅ | ✅ | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
 | [Dependencies](../process/stages.md) | ✅ | ✅ | ✅ | Specifies a requirement that must be met in order to run the next job or stage.  |
-| [Deployment groups](../release/deployment-groups/index.md) | ✅ | ❌ | ✅ | Defines a logical set of deployment target machines. | 
+| [Deployment groups](../release/deployment-groups/index.md) | ❌ | ❌ | ✅ | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)| ❌ | ❌ | ✅ | Specifies a job to release to a deployment group. | 
 | [Deployment jobs](../process/deployment-jobs.md) | ✅ | ❌ | ❌ | Defines the deployment steps. | 
 | [Environment](../process/environments.md) | ✅ | ❌ | ❌ | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|

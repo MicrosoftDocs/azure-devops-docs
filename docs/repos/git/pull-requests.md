@@ -559,7 +559,7 @@ az repos pr reviewer add --id
 To link work items to a new PR:
 
   1. On the **New pull request** page, under **Work items to link**, select **Search work items by ID or title**.
-  1. Start to enter a work item ID or title, and select the work item to link from the dropdown list that appears.
+  1. Start to enter a work item ID or title, and select the work item to link from the dropdown list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
 
 To link work items to an existing PR:
 
@@ -583,7 +583,7 @@ To link work items to your PR:
 
 2. Select the add button in the **Work Items** area. ![Add icon in PRs](media/pull-requests/pr_add_icon.png)
 
-3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove button](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between a work item to a PR. Links created in the branch or from commits stay in the work item.
@@ -600,7 +600,7 @@ To link work items to your PR:
 
 2. Select the add button in the **Work Items** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
 
-3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears. Search by title returns work items filtered by state; all work items with states having state categories **Completed** and **Removed** are excluded. These work items are also filtered by date and user, with only items created or updated in the last 30 days shown, and they should be created by, assigned to, or authorized as the current user.
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove icon](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits stay in the work item.

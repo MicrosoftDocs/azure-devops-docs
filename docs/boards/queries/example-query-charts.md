@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about useful query charts to create and display on dashboards when working in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: boards-queries, engagement-fy23 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.date: 02/14/2023
