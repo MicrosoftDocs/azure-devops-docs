@@ -3,7 +3,8 @@ title: Create a service connection and build and publish Docker images to Azure 
 description: How to create service connections and build and publish Docker images with Azure Pipelines
 ms.topic: tutorial
 ms.author: rabououn
-ms.date: 12/01/2022
+author: ramiMSFT
+ms.date: 06/14/2023
 monikerRange: 'azure-devops'
 ---
 

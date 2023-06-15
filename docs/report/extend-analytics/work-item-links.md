@@ -5,8 +5,8 @@ description: Learn how to create a query for linked work items using Analytics f
 ms.subservice: azure-devops-analytics
 ms.topic: tutorial
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/26/2022
 ---

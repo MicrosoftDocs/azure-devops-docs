@@ -8,14 +8,14 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 02/24/2023
 --- 
 
 # Troubleshoot access and permission issues
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps security and permission structure is extensive, so you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
+Due to the extensive security and permission structure of Azure DevOps, you might investigate why a user doesn't have access to a project, service, or feature that they expect. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
 
 Before using this guide, we recommend that you're familiar with the following content: 
 - [Get started with permissions, access, and security groups](about-permissions.md)
@@ -39,12 +39,12 @@ See the following most common reasons a project member can’t access a project,
 
 |**Issue**  |**Troubleshooting action**  |
 |---------|---------|
-|Their access level doesn’t support access to the service or feature.     | To discover if this is the cause, you want to [determine the user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).        |
-|Their membership within a security group doesn’t support access to a feature or they have been explicitly denied permission to a feature.   | To discover if this is the cause, [trace a permission](#trace-a-permission).         |
-|The user has been recently granted permission, however a refresh is required for their client to recognize the changes.    | Have the user [refresh or re-evaluate their permissions](#refresh-or-reevaluate-permissions).        |
+|Their access level doesn’t support access to the service or feature.     | To determine whether it's the cause, [determine the user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).        |
+|Their membership within a security group doesn’t support access to a feature or they have been explicitly denied permission to a feature.   | To determine whether it's the cause, [trace a permission](#trace-a-permission).         |
+|The user has been recently granted permission, however a refresh is required for their client to recognize the changes.    | Have the user [refresh or reevaluate their permissions](#refresh-or-reevaluate-permissions).        |
 |The user's trying to exercise a feature granted only to a team administrator for a specific team, however they haven’t been granted that role.   |To add them to the role, see [Add, remove team administrator](../settings/add-team-administrator.md).         |
 |The user hasn’t enabled a preview feature.   | Have the user open the Preview features and determine the on/off status for the specific feature. For more information, see [Manage preview features](../../project/navigation/preview-features.md).        |
-|Project member has been added to a limited scope security group, such as the Project-Scoped Users group.  | To discover if this is a cause, [look up the user’s security group memberships](#group-rules-with-lesser-permissions).        | 
+|Project member has been added to a limited scope security group, such as the Project-Scoped Users group.  | To determine whether it's the cause, [look up the user’s security group memberships](#group-rules-with-lesser-permissions).        | 
  
 ### Less common access and permission issues
 
@@ -182,9 +182,9 @@ Users get added to an Azure DevOps group. This action grants inherited access to
 
 ::: moniker range=" <= azure-devops"
 
-Within **User settings**, on the **Permissions** page, you can select **Re-evaluate permissions**. This function re-evaluates your group memberships and permissions, and then any recent changes take effect immediately.
+Within **User settings**, on the **Permissions** page, you can select **Re-evaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
 
-:::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Screenshot of Re-evaluate permissions control.":::
+:::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Screenshot of Reevaluate permissions control.":::
 
 ::: moniker-end
 
@@ -200,7 +200,7 @@ For more information about work item type rules that apply toward restricting op
 
 ## Hide organization settings from users
 
-If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility and collaboration to specific projects** preview feature. 
+If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility and collaboration to specific projects** preview feature. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker range=" azure-devops"
 
@@ -255,6 +255,8 @@ For more information, see [Use TFSSecurity to manage groups and permissions for 
 
 Group rule types get ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. 
 Users always get the best access level between all the group rules, including Visual Studio (VS) subscription. 
+
+[!INCLUDE [note-group-rules](includes/note-group-rules.md)]
 
 See the following examples, showing how subscriber detection factors into group rules.
 

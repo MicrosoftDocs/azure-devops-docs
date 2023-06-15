@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.author: ronai
 ms.reviewer: vijayma
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
-ms.custom: "mvc, seodec18"
+ms.custom: mvc, seodec18, devx-track-jenkins
 ms.date: 01/15/2019
 monikerRange: '<= azure-devops'
 ---
@@ -184,5 +184,3 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 * [Triggers](triggers.md)
 
 :::moniker-end
-
-

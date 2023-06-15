@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to expand columns and transform Analytics data in Power BI to support report generation.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbi
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/09/2022

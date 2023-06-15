@@ -4,32 +4,30 @@ titleSuffix: Azure DevOps
 description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
 ms.subservice: azure-devops-settings
 ms.custom: teams
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 08/03/2022
+ms.date: 02/28/2023
 ---
 
 # Manage and configure team tools
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-As a team administrator, you can customize your backlogs and board to best meet how your team works. If you need to have a team created, request a member of your Project Administrators group do so. It only takes a minute to add a new team.    Team settings are managed by the team administrator role. Users assigned as team administrator can configure and manage all team tools.  
+If you're a team administrator, you have the flexibility to tailor your backlogs and boards to align with your team's workflow. In case you require a new team, you can ask a Project Administrator group member to create one for you, which takes only a minute. Team administrators have the ability to set up and oversee all team tools.
 
-Team administrators should do the following tasks: 
+Team administrators perform the following tasks for team tools: 
 - [Add team members](#add-users-to-a-team)
 - [Add another team administrator](#add-an-administrator) 
 - [Configure areas and iteration paths](#configure-team-areas-and-iterations)
 - [Configure backlogs, boards, and general settings](#configure-team-backlogs)
-
-Also, consider the following optional tasks: 
 - [Configure and manage team dashboards](#add-and-manage-team-dashboards)
 - [Configure team notifications](#manage-notifications) 
 
 ## Prerequisites
 
-- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md).  
+- To perform any team configuration task, you must be a team administrator for the team to be modified, or be a member of the **Project Administrators** group. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).  
 - To add a team, you must be a member of the **Project Administrators** group. For more information, see [Add teams](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
@@ -49,7 +47,7 @@ Open your team profile to quickly access items defined for your team.
 
 ## Add users to a team
  
-Several tools, such as capacity planning, team alerts, and dashboard widgets, are team-scoped. These tools automatically reference the users that are as members of a team to support planning activities or sending alerts. 
+Tools like capacity planning, team alerts, and dashboard widgets operate within the scope of a team. They automatically access the user information of team members to facilitate planning tasks or issue alerts.
 
 To add users to a team, see [Add users to a project or specific team](../security/add-users-team-project.md).
 
@@ -69,17 +67,17 @@ When you add a team to a project, a Project Administrator should [add one or mor
 
 ## Configure team areas and iterations 
 
-Many Agile tools depend on the area and iteration paths that are configured for the team. To learn more about configuring team areas and iterations, see [About teams and Agile tools](about-teams-and-settings.md). 
+Many Agile tools rely on the team's configured area and iteration paths. For more information, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Once project administrators [add area paths](set-area-paths.md) and [iteration paths](set-iteration-paths-sprints.md) for a project, team administrators can select the area and iteration paths associated with their team. These settings affect many Agile tools available to the team. 
+After project administrators add the project's area and iteration paths using [Set area paths](set-area-paths.md) and [Set iteration paths](set-iteration-paths-sprints.md), team administrators can choose the relevant area and iteration paths for their team. These settings influence a wide range of Agile tools that the team can access.
 
 :::image type="content" source="media/manage-iterations-areas.png" alt-text="Screenshot of Iterations and areas highlighted.":::
 
 Settings include making the following associations for each team:  
 
-- **Select team Area Paths**   
+- **Select team area paths**   
 	Can select the default area path(s) associated with the team. These settings affect many Agile tools available to the team.	
-- **Select team Iteration Paths or sprints** 
+- **Select team iteration paths or sprints** 
 	Can select the default area path(s) associated with the team. These settings affect many Agile tools available to the team. 
  
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
@@ -89,11 +87,11 @@ For more information, see [Define area paths and assign to a team](set-area-path
 
 ## Configure team backlogs, boards, and general settings 
 
-Team administrators can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. Also, administrators can choose whether bugs are treated similar to user stories and requirements or as tasks. 
+As a team administrator, you have the flexibility to customize your team's workflow to suit your needs. One way to do so is by choosing which backlog levels are active for your team. For instance, a feature team might only want to display the product backlog, while a management team might prefer to show the feature and epic backlogs only. Also, you can choose how to treat bugs within your workflow, either as user stories and requirements or as tasks.
 
-Team administrators can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.   
+Another way to customize your team's workflow is by selecting non-working days for the team. By doing so, sprint planning and tracking tools can automatically take these days off into account when calculating capacity and sprint burndown.
 
-You can configure most of your team settings from the common configuration dialog. 
+Most of these team settings can be easily configured from the common configuration dialog, providing a convenient way to manage your team's workflow in one central location.
 
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
@@ -162,8 +160,9 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-Team administrators can fully customize the team's Kanban boards associated with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
-For more information on each configuration option, see the following articles: 
+Team administrators have complete control over customizing their team's Kanban boards for both the product and portfolio backlogs. To set up a Kanban board, you can define the columns and work-in-progress (WIP) limits through the common configuration dialog. For more information, see [Kanban overview](../../boards/boards/kanban-overview.md) and [Kanban quickstart](../../boards/boards/kanban-quickstart.md).
+
+For detailed information on each configuration option, you can explore the following articles:
 
 ---
 :::row:::
@@ -171,9 +170,7 @@ For more information on each configuration option, see the following articles:
       **General**
       - [Backlogs](select-backlog-navigation-levels.md)
       - [Working days](set-working-days.md)
-      - [Working with bugs](show-bugs-on-backlog.md)
-            
-            
+      - [Working with bugs](show-bugs-on-backlog.md)            
       **Cards**
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
@@ -189,7 +186,7 @@ For more information on each configuration option, see the following articles:
       - [WIP limits](../../boards/boards/wip-limits.md)    
       - [Definition of Done](../../boards/boards/definition-of-done.md)   
       - [Add swimlanes](../../boards/boards/expedite-work.md)
-      - [Card reordering](../../boards/boards/reorder-cards.md)
+      - [Card reordering](../../boards/boards/customize-cards.md#reorder-cards)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
       ::: moniker-end
       ::: moniker range="tfs-2018"
@@ -198,49 +195,43 @@ For more information on each configuration option, see the following articles:
       - [WIP limits](../../boards/boards/wip-limits.md)    
       - [Definition of Done](../../boards/boards/definition-of-done.md)  
       - [Add swimlanes](../../boards/boards/expedite-work.md)
-      - [Card reordering](../../boards/boards/reorder-cards.md)
+      - [Reorder cards](../../boards/boards/customize-cards.md#reorder-cards)
       ::: moniker-end
       **Chart**
       - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)
    :::column-end:::
 :::row-end:::
 ---
- 
-**Kanban board**
 
-:::image type="content" source="../../boards/boards/media/quickstart/intro-view.png" alt-text="Screenshot of Kanban.":::
-
-## Configure sprint Taskboards 
-
+## Configure sprint taskboards 
 
 ::: moniker range=">= azure-devops-2020" 
 
-Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards as well as addition of customized columns. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
+Similar to Kanban boards, you can customize each sprint taskboard to support information-rich color-coded cards and columns. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020" 
 
-Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
+Similar to Kanban boards, each sprint taskboard can be customized to support information-rich, color-coded cards. For more information, see [Customize sprint taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
-:::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of Taskboard selection.":::
-
+:::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of taskboard selection.":::
 
 <a id="add-and-manage-team-dashboards" /> 
 
 ## Add and manage team dashboards   
 
 ::: moniker range=">= azure-devops-2019"
-By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
+By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For more information, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-Team administrators can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
+Team administrators can add, configure, and manage permissions for team dashboards. For more information, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
 ::: moniker-end
 
-:::image type="content" source="media/edit-team-dashboard.png" alt-text="Screenshot of team dashboard.":::
+:::image type="content" source="media/manage-team-dashboards.png" alt-text="Screenshot of dashboard button surrounded by red square.":::
 
 <a id="team-description" />
 
@@ -263,7 +254,7 @@ Team settings also include the team name, description, and team profile image. T
 
 ## Manage notifications 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. Many alerts are defined for each team. For details, see [Manage team alerts](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
+Team administrators have the ability to add and edit alerts, allowing the team to receive email notifications as changes occur to work items, code reviews, source control files, and builds. Various alerts are pre-defined for each team. For more information, see [Manage team alerts](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
 
 :::image type="content" source="media/manage-notifications.png" alt-text="Screenshot of highlighted Notifications button.":::
 

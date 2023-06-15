@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Understand how area paths and iteration paths are used in Azure DevOps.
 ms.subservice: azure-devops-settings
 ms.custom: teams, linked-from-support
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022

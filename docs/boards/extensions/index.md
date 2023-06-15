@@ -5,8 +5,8 @@ titleSuffix: Azure Boards
 ms.custom: extensions, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/31/2023 
 ---

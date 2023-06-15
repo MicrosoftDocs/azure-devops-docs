@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: how-to
 ms.date: 01/17/2023 
@@ -180,7 +180,7 @@ To review the list of fields defined for an organization or collection, open **O
 	> ![Screenshot of Make a copy of a selected inherited process.](media/fields/list-fields.png) 
 
 	> [!NOTE]  
-	> If you don't see **Fields**, then you're collection uses the On-premises XML process. The Fields page isn't supported for that process.  
+	> If you don't see **Fields**, then your collection uses the On-premises XML process. The Fields page isn't supported for that process.  
 
 	For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
 

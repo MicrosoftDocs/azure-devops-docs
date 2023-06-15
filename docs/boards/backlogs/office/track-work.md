@@ -4,8 +4,8 @@ titleSuffix: Azure Boards
 description: Learn how to connect Excel to integrate and track your work in Azure Boards or Azure DevOps 
 ms.service: azure-devops-boards
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

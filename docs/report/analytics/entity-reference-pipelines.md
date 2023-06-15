@@ -3,8 +3,8 @@ title: Pipelines properties reference for Analytics
 titleSuffix: Azure DevOps
 description: Properties, enumerated types, and members metadata reference for the Analytics service for Azure Pipelines.  
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
 ms.date: 11/04/2022

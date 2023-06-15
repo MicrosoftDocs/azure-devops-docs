@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI.
 ms.subservice: azure-devops-analytics
 ms.custom: analytics-views, engagement-fy23 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 02/07/2023

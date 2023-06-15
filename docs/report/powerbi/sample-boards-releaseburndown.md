@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a release burndown Power BI report.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample, engagement-fy23
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/08/2022
@@ -23,7 +23,7 @@ Burndown charts only make sense if you plan your work for the time period of the
 
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-To learn more about burndown and burnup, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
+To learn more about burndown and burnup, see [Configure a burndown or burnup widget](../dashboards/configure-burndown-burnup-widgets.md) and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]

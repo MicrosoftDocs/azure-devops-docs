@@ -5,8 +5,8 @@ description: Learn how to customize cards on a sprint taskboard in Azure Boards 
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022

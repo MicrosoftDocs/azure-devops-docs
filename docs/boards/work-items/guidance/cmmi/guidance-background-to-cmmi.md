@@ -5,8 +5,8 @@ description: Background notes on the Capability Maturity Model Integration (CMMI
 ms.service: azure-devops-boards
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
-ms.author: kaelli 
-author: KathrynEE  
+ms.author: chcomley 
+author: chcomley  
 monikerRange: '<= azure-devops'
 ms.date: 11/03/2021 
 ---

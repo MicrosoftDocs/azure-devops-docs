@@ -3,6 +3,7 @@ title: Exploratory test in standalone mode
 description: Manual and exploratory testing - exploratory testing by using the Microsoft Test & Feedback extension in Standalone mode
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x

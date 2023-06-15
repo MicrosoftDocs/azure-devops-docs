@@ -5,8 +5,8 @@ description: Learn how to construct basic queries for Azure DevOps using OData A
 ms.subservice: azure-devops-analytics
 ms.custom: engagement-fy23
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
 ms.date: 01/19/2023

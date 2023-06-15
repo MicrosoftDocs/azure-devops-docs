@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 09/30/2022
 ---

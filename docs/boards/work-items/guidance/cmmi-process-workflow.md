@@ -6,8 +6,8 @@ description: Learn how to use the CMMI process work item types and workflow to t
 ms.service: azure-devops-boards
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/04/2023
 ---
@@ -140,7 +140,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column span="3":::
    
   Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. 
- By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-basics.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+ By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-overview.md) references the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
   :::row-end:::
@@ -297,9 +297,9 @@ The typical workflow progression for a requirement is:
 
 ### Update work status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-overview.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-<img src="../../boards/media/ALM_CC_MoveCard.png" alt="Screenshot of Web portal, Track progress on the Kanban board." />
+:::image type="content" source="../../boards/media/alm-cc-move-card.png" alt-text="Screenshot of web portal, track progress on the Kanban board.":::
 
 You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
@@ -417,7 +417,7 @@ When teams estimate work, they define tasks and estimate the hours or days to co
 
 From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
 
-![Screenshot of Select the test suite and add a test case.](media/IC793453.png)  
+![Screenshot of Select the test suite and add a test case.](media/test-plan-new-item.png)  
 
 The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).  
 

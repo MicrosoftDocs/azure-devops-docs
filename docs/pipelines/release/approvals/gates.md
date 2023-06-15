@@ -32,7 +32,7 @@ Most of the health parameters vary over time, regularly changing their status fr
 
 ## Define a gate for a stage
 
-You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#set-up-manual-intervention) for more details.
+You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#set-up-gates) for more details.
 
 The **Delay before evaluation** is a time delay at the beginning of the gate evaluation process that allows the gates to initialize, stabilize, and begin providing accurate results for the current deployment. see [Gate evaluation flows](#gate-evaluation-flow-examples) for more details.
 

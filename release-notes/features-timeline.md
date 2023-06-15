@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/26/2023
+ms.date: 5/23/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -27,6 +27,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available on Azure DevOps Services; the Server columns reflect when we expect the feature to ship in Azure DevOps Server. 
 
 ## Initiatives
+
+### GitHub Advanced Security for Azure DevOps
+
+GitHub Advanced Security (GHAS) for Azure DevOps, now in public preview, is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
+- Secret Scanning to detect credentials and other secrets that may have already been committed to your Azure Repos, as well as push protection to prevent developers from accidentally pushing new secrets.
+- Dependency Scanning to identify any known vulnerable open-source packages you may be using, and offer straightforward guidance on how to upgrade those packages to fix the vulnerabilities.
+- Code Scanning with CodeQL, a powerful static analysis engine that identifies deep application security vulnerabilities in your source code.
+ 
 ### Minimizing the risks associated with credential theft
 
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. These mechanisms are not created equal from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
@@ -63,7 +71,7 @@ We expect this work to be a major focus of our efforts for multiple quarters.
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Managed Identity and Service Principal support](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Managed Identity and Service Principal support (preview)</a></td>
          <td>General</td>
-         <td>2023 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2023 Q1</td>
          <td>N/A</td>
       </tr>
       <tr>
@@ -172,27 +180,27 @@ Note that most new features we are shipping in Boards are only available in the 
         <td>Future</td>      
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1)">Swimlane rules on Kanban board</a></td>
          <td>Boards</td>
-         <td>2023 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Work item markdown support](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
          <td>Boards</td>
-         <td>2023 Q2</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
       </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
+         <td>Boards</td>
+         <td>2023 Q3</td>
+         <td>Future</td>
+      </tr>                
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
          <td>Boards</td>
-         <td>2023 Q2</td>
-         <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements.](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
-         <td>Boards</td>
-         <td>2023 Q2</td>
+         <td>2023 Q3</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -200,13 +208,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td>2023 Q3</td>
          <td>Future</td>
-      </tr>  
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
-         <td>Boards</td>
-         <td>Future</td>
-         <td>Future</td>
-      </tr>         
+      </tr>               
     </tbody>
 </table>
 
@@ -241,19 +243,19 @@ As a first step, we recently released a new [Node 16 task runner](/azure/devops/
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16" data-raw-source="[All in-the-box tasks run on Node 16](/azure/devops/release-notes/roadmap/2022/in-the-box-tasks-on-16)">All in-the-box tasks run on Node 16</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted version is not available</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -306,19 +308,19 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-scalability" data-raw-source="[Checks scalability](/azure/devops/release-notes/roadmap/2022/checks-scalability)">Checks scalability</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/checks-sequencing" data-raw-source="[Sequencing approvals and other checks](/azure/devops/release-notes/roadmap/2022/checks-sequencing)">Sequencing approvals and other checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q3</td>
          <td>Future</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
          <td>Pipelines</td>
-         <td>2023 Q1</td>
+         <td>2023 Q4</td>
          <td>Future</td>
       </tr>
       <tr>
@@ -342,41 +344,42 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     </thead>
     <tbody>
       <tr>
-        <td rowspan="21"><strong>2023 Q1</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-colors" data-raw-source="[Swimlane colors](/azure/devops/release-notes/roadmap/2023/swimlane-colors)">Swimlane colors</a></td>
-        <td>Boards</td>
-        <td>Future</td>      
+      <tr>
+        <td rowspan="23"><strong>2023 Q2</strong></td>
+        <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (public preview)</a></td>
+        <td>Pipelines and Repos</td>
+        <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/save-comment-improvements" data-raw-source="[Save Comment Improvements](/azure/devops/release-notes/roadmap/2022/save-comment-improvements)">Save comment improvements</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1" data-raw-source="[Swimlane rules (general availability)](/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1)">Swimlane rules (general availability)</a></td>
         <td>Boards</td>
-        <td>Future</td>      
-      </tr>
+        <td>N/A</td>
+      </tr>           
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/lock-picklist-fields" data-raw-source="[Prevent picklist fields from being edited](/azure/devops/release-notes/roadmap/2023/lock-picklist-fields)">Prevent picklist fields from being edited</a></td>
-        <td>Boards</td>
-        <td>Future</td>      
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/hyperlink-field-type" data-raw-source="[Hyperlink field type for custom fields](/azure/devops/release-notes/roadmap/2023/hyperlink-field-type)">Hyperlink field type for custom fields<a></td>
-        <td>Boards</td>
-        <td>Future</td>      
-      </tr>
-       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[REST APIs to connect GitHub Repos to Azure Boards](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">REST APIs to connect GitHub Repos to Azure Boards (Preview)</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>     
+      </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/swimlane-rules" data-raw-source="[swimlane rules on kanban board](/azure/devops/release-notes/roadmap/2023/swimlane-rules)">Swimlane rules on Kanban board</a></td>
-        <td>Boards</td>
+        <td><a href="/azure/devops/report/powerbi/what-are-analytics-views" data-raw-source="[Analytics views (general availability)](/azure/devops/report/powerbi/what-are-analytics-views?view=azure-devops)">Analytics views (general availability)</td>
+        <td>Reporting</td>
         <td>Future</td>
-      </tr>   
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview" data-raw-source="[Pull request widget for multiple repos](/azure/devops/release-notes/2023/sprint-217-update#pull-request-widget-for-multiple-repos-private-preview)">Pull request widget for multiple repos (general availability)</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
+        <td>Reporting</td>
+        <td>Future</td>
+      </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
         <td>Repos</td>
         <td>Future</td>
-      </tr>
+      </tr>           
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings" data-raw-source="[In-product recommendations for secure settings](/azure/devops/release-notes/roadmap/in-product-recommendations-for-secure-settings)">In-product recommendations for secure settings</a></td>
         <td>Pipelines</td>
@@ -407,6 +410,25 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents" data-raw-source="[Removal of Node 6 and 10 from Microsoft hosted pools](/azure/devops/release-notes/roadmap/2022/no-node-6-on-hosted-agents)">Removal of Node 6 and 10 from Microsoft hosted pools</a></td>
         <td>Pipelines</td>
         <td>Future</td>
+      </tr>    
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/install-old-runner" data-raw-source="[Ability to download and install old runners on self-hosted agents](/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
+         <td>Pipelines</td>
+         <td>Future</td>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
+        <td>Pipelines</td>
+        <td>Future</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/sort-test-plans" data-raw-source="[Pause and resume manual test execution](/azure/devops/release-notes/roadmap/2022/sort-test-plans)">Sort test plans by any column</a></td>
@@ -429,33 +451,28 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/org-profile-image" data-raw-source="[Organization profile image](/azure/devops/release-notes/roadmap/2023/org-profile-image)">Organization profile image</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/support-azure-managed-identities" data-raw-source="[Support Azure Managed Identities and Service Principals (Preview)](/azure/devops/release-notes/roadmap/support-azure-managed-identities)">Support Azure Managed Identities and Service Principals (Preview)</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/dataimport-progresspage" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/2023/dataimport-progresspage)">Increased transparency into the progress of an Azure DevOps Server to Azure DevOps Services data migration</a></td>
         <td>General</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/pull-request-widget" data-raw-source="[Pull Request widget to allow for the selection of many repos](/azure/devops/release-notes/roadmap/2022/pull-request-widget)">Pull Request widget to allow for the selection of many repos</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>  
+        <td rowspan="6"><strong>2023 Q3</strong></td>
+        <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (general availability)</a></td>
+        <td>Pipelines and Repos</td>
+        <td>N/A</td>
+      </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/dashboards-last-accessed-and-modified" data-raw-source="[When a dashboard was last accessed and modified](/azure/devops/release-notes/roadmap/2023/dashboards-last-accessed-and-modified)">Dashboards, last accessed and modified</a></td>
-        <td>Reporting</td>
-        <td>Future</td>
-      </tr>  
-      <tr>
-        <td rowspan="9"><strong>2023 Q2</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -463,47 +480,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>      
+      </tr>          
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed" data-raw-source="[Option on Burnup, Burndown, and Velocity charts to included resolved as completed](/azure/devops/release-notes/roadmap/2023/charts-option-for-resolved-as-closed)">Option on Burnup, Burndown, and Velocity charts to included resolved as completed</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
         <td>Reporting</td>
         <td>Future</td>
-      </tr>    
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/secret-free-deployments" data-raw-source="[Secret-free deployments from Azure Pipelines (Preview)](/azure/devops/release-notes/roadmap/2022/secret-free-deployments)">Secret-free deployments from Azure Pipelines (Preview)</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/install-old-runner" data-raw-source="[Ability to download and install old runners on self-hosted agents](/azure/devops/release-notes/roadmap/2023/install-old-runner)">Ability to download and install old runners on self-hosted agents</a></td>
-         <td>Pipelines</td>
-         <td>Future</td>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/node-16-agent" data-raw-source="[Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)](/azure/devops/release-notes/roadmap/2022/node-16-agent)">Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
-        <td>Pipelines</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/granular-scopes" data-raw-source="[Granular scopes for Azure Active Directory OAuth](/azure/devops/release-notes/roadmap/granular-scopes)">Granular scopes for Azure Active Directory OAuth</a></td>
-        <td>General</td>
-        <td>N/A</td>
-      </tr>         
-      <tr>
-        <td rowspan="3"><strong>2023 Q3</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>   
+      </tr> 
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query" data-raw-source="[Rollup columns for query results](/azure/devops/release-notes/roadmap/2022/rollup-columns-for-query)">Rollup columns for query results</a></td>
         <td>Reporting</td>
@@ -511,12 +493,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td rowspan="12"><strong>Future</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[UI improvements GitHub Connection Experience.](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">UI improvements to GitHub Connection Experience</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
+      </tr>    
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Delivery plans improvements to filtering by parent](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>     

@@ -5,8 +5,8 @@ description: Learn how to create a branch, commit, or a pull request in Azure Bo
 ms.custom: "boards-backlogs, seodec18"
 ms.service: azure-devops-boards
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 07/26/2022

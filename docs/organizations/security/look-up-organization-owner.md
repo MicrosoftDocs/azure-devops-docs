@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: How-to guide to learn who is the owner of your organization   
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 02/7/2022

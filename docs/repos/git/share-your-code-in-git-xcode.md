@@ -60,7 +60,7 @@ If you have already created a repo for your Xcode project in Azure DevOps Servic
 
 ## Push your project
 
-1. Go to **Source Control** in Xcode and select **_Projectname_ -- master**, then **Configure...**  
+1. Go to **Source Control** in Xcode and select **_Projectname_ -- main**, then **Configure...**  
 
    ![Configure your Xcode Git project settings](media/share-your-code-in-git-xcode/xcodeconfigureproject.png)
 

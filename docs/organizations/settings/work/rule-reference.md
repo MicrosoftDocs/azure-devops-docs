@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Default rules and the rule engine  
 ms.custom: inherited-process, engagement-fy23
 ms.service: azure-devops-boards
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: conceptual
 ms.date: 01/17/2023

@@ -5,9 +5,9 @@ description: Learn how to generate a test duration trend Power BI report for a g
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.manager: mijacobs
-ms.author: kaelli
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
-author: KathrynEE
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'  
 ms.date: 01/25/2023

@@ -13,7 +13,7 @@ Deployment groups in Azure Pipelines make it easier to organize the servers you 
 A deployment group is a collection of machines with an Azure Pipelines agent on each of them.
 Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
-1. Open a SSH session to your Linux VM. You can do this using the Cloud Shell button on the menu
+1. Open an SSH session to your Linux VM. You can do this using the Cloud Shell button on the menu
    in the upper-right of the [Azure portal](https://portal.azure.com/).
 
    ![Azure portal cloud shell button](../media/cloud-shell-menu-image.png)
@@ -29,7 +29,7 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
    `sudo apt-get install -y libunwind8 libcurl3`
 
    The libraries this command installs are Prerequisites for installing the build and release agent
-   onto a Ubuntu 16.04 VM. Prerequisites for other versions of Linux can be found [here](../../agents/v2-linux.md).
+   onto an Ubuntu 16.04 VM. Prerequisites for other versions of Linux can be found [here](../../agents/linux-agent.md).
 
 1. Open the Azure Pipelines web portal, navigate to **Azure Pipelines**,
    and choose **Deployment groups**.

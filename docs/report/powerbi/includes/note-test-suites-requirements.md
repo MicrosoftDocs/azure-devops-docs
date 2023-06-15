@@ -1,7 +1,7 @@
 ---
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 06/22/2020
 ms.topic: include
 ---

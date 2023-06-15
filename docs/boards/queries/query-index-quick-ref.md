@@ -5,8 +5,8 @@ description: Learn how to use an index to query operators, macros, and sample qu
 ms.custom: boards-queriess, engagement-fy23
 ms.service: azure-devops-boards
 ms.topic: overview 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/05/2022
 ---

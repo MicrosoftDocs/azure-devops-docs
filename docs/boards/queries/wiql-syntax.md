@@ -6,8 +6,8 @@ ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.author: kaelli  
-author: KathrynEE  
+ms.author: chcomley  
+author: chcomley  
 monikerRange: '<= azure-devops'
 ms.date: 10/18/2022
 ---
@@ -276,7 +276,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
    :::column span="3":::
    
-   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Not Contains, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -285,7 +285,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
    :::column span="3":::
    
-   `Contains Words, Does Not Contain Words, Is Empty, Is Not Empty`
+   `Contains Words, Not Contains Words, Is Empty, Is Not Empty`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -293,7 +293,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    String
    :::column-end:::
    :::column span="3":::
-   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Not Contains, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
 :::row:::

@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Stakeholder access to common user tasks for Azure DevOps 
 ms.subservice: azure-devops-security
 toc: show
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022

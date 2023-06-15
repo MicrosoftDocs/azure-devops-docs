@@ -5,8 +5,8 @@ description: Track work by creating queries based on effort, story points, sched
 ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
@@ -457,7 +457,7 @@ The main tools you use to plan and track work are described here:
 - [Sprint planning](../sprints/assign-work-sprint.md)
 - [Capacity planning](../sprints/set-capacity.md)
 - [Taskboard](../sprints/task-board.md)
-- [Kanban board](../boards/kanban-basics.md)
+- [Kanban board](../boards/kanban-overview.md)
 
 For more information on using work items and queries, see: 
 - [Query editor](using-queries.md)   

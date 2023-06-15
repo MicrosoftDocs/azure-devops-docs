@@ -3,6 +3,7 @@ title: Pipeline caching
 description: Improve pipeline performance by caching files, like dependencies, between runs
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
+ms.custom: devx-track-dotnet, devx-track-js, devx-track-python
 ms.manager: adandree
 ms.date: 10/03/2022
 monikerRange: azure-devops
@@ -33,7 +34,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 Caching is added to a pipeline using the [Cache task](/azure/devops/pipelines/tasks/reference/cache-v2). This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. 
+When a cache step is encountered during a run, the task restores the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. 
 
 After all steps in the job have run and assuming a **successful** job status, a special **"Post-job: Cache"** step is automatically added and triggered for each **"restore cache"** step that wasn't skipped. This step is responsible for **saving the cache**.
 
@@ -131,7 +132,7 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-In this example, the cache task will attempt to find if the key exists in the cache. If the key doesn't exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
+In this example, the cache task attempts to find if the key exists in the cache. If the key doesn't exist in the cache, it tries to use the first restore key `yarn | $(Agent.OS)`.
 This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
 For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
 If there's a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
@@ -147,27 +148,27 @@ When a cache step is encountered during a run, the cache identified by the key i
 
 ### CI, manual, and scheduled runs
 
-| Scope | Read | Write |
-|--------|------|-------|
-| Source branch | Yes | Yes |
-| main branch | Yes | No |
+| Scope                                             | Read | Write |
+|---------------------------------------------------|------|-------|
+| Source branch                                     | Yes  | Yes   |
+| main branch (default branch)                      | Yes  | No    |
 
 ### Pull request runs
 
-| Scope | Read | Write |
-|--------|------|-------|
-| Source branch | Yes | No |
-| Target branch | Yes | No |
-| Intermediate branch (such as `refs/pull/1/merge`) | Yes | Yes |
-| main branch | Yes | No |
+| Scope                                             | Read | Write |
+|---------------------------------------------------|------|-------|
+| Source branch                                     | Yes  | No    |
+| Target branch                                     | Yes  | No    |
+| Intermediate branch (such as `refs/pull/1/merge`) | Yes  | Yes   |
+| main branch (default branch)                      | Yes  | No    |
 
 ### Pull request fork runs
 
-| Branch | Read | Write |
-|--------|------|-------|
-| Target branch | Yes | No |
-| Intermediate branch (such as `refs/pull/1/merge`) | Yes | Yes |
-| main branch | Yes | No |
+| Branch                                            | Read | Write |
+|---------------------------------------------------|------|-------|
+| Target branch                                     | Yes  | No    |
+| Intermediate branch (such as `refs/pull/1/merge`) | Yes  | Yes   |
+| main branch (default branch)                      | Yes  | No    |
 
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
@@ -279,7 +280,7 @@ steps:
       mkdir -p $(Pipeline.Workspace)/docker
       docker save -o $(Pipeline.Workspace)/docker/cache.tar $(repository):$(tag)
     displayName: Docker save
-    condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
+    condition: and(not(canceled()), not(failed()), ne(variables.CACHE_RESTORED, 'true'))
 ```
 
 - **key**: (required) - a unique identifier for the cache.
@@ -465,6 +466,10 @@ variables:
 steps:
 - script: echo "##vso[task.prependpath]$CONDA/bin"
   displayName: Add conda to PATH
+
+- bash: |
+    sudo chown -R $(whoami):$(id -ng) $(CONDA_CACHE_DIR)
+  displayName: Fix CONDA_CACHE_DIR directory permissions
 
 - task: Cache@2
   displayName: Use cached Anaconda environment

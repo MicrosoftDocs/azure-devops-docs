@@ -5,8 +5,8 @@ description: Learn about extra features, like cross-service operations, that are
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
@@ -105,7 +105,7 @@ The following Azure DevOps Marketplace extensions work with managed queries to p
 ::: moniker range=">= azure-devops-2019"
 - [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) supports viewing a flat-list query of work items as a Kanban board. The query can contain different work item types and work items defined in different projects.  
 ::: moniker-end
-- [**Query Tile PRO**](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public): Adds the **Query Tile PRO** widget to the widget catalog for dashboards. This widget provides support for all query types (not just flat list queries) and provides more options to configure calculated values on the widget.  
+- [**Query Tile PRO**](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-Query-Tile-PRO): Adds the **Query Tile PRO** widget to the widget catalog for dashboards. This widget provides support for all query types (not just flat list queries) and provides more options to configure calculated values on the widget.  
   
 - [**Wiql to OData**](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata): Adds the **Translate to OData** option to the **More commands** menu on the Query Editor and Query Results pages. You can then use this query or augment it to retrieve the work items from the Analytics service. To learn more, see [Query your work tracking data using OData Analytics](../../report/extend-analytics/wit-analytics.md).   
 

@@ -38,4 +38,4 @@ If your Git repo is in Azure Repos or TFS, you can also specify path filters to 
 
 #### Example
 
-For example, you want your build to be triggered by changes in master and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.
+For example, you want your build to be triggered by changes in `main` and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.

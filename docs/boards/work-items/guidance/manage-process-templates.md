@@ -6,8 +6,8 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/05/2023
 ---
@@ -132,7 +132,7 @@ For other Hosted XML process management tasks, see [Import and export a Hosted X
    ![Process Template Manager dialog, Select process template to work with.](media/process-template-manager.png)
 
    > [!TIP]   
-   > For a comparison of the default process templates--Agile, CMMI, and Scrum--see [Choose a process](choose-process.md).  
+   > For a comparison of the default process templates--Agile, CMMI, and Scrum--see [About processes and process templates](choose-process.md).  
    The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
 
 3. Select the process template that you want to work with and then choose from the following actions.  
@@ -199,7 +199,7 @@ Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp
 
 ## Related articles  
 
-Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
+Periodically, updates are made to the process templates to support new features. For more information, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).  
 
 - [Create a project](../../../organizations/projects/create-project.md)   
 - [Customize a process template](../../../reference/process-templates/customize-process.md)   

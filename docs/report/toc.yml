@@ -7,6 +7,9 @@
   items:
   - name: Dashboards quick reference
     href: dashboards/quick-ref.md
+  - name: Define your dashboard focus
+    href: dashboards/dashboard-focus.md
+    displayname: project, team, example
   - name: Add, rename, & delete dashboards
     href: dashboards/dashboards.md
     displayname: filter, dashboard, auto-refresh, add widget, delete widget
@@ -52,7 +55,7 @@
   - name: View/configure sprint burndown
     href: dashboards/configure-sprint-burndown.md
     displayname: sprint backlog, current, past
-  - name: Configure a Burndown or Burnup widget
+  - name: Configure a burndown or burnup widget
     href: dashboards/configure-burndown-burnup-widgets.md
     displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval
   - name: Configure Lead/Cycle time widget
@@ -66,9 +69,6 @@
   - name: Cumulative flow & lead/cycle time guidance
     href: dashboards/cumulative-flow-cycle-lead-time-guidance.md
     displayname: lead time, cycle time, work in progress, scope, scope change, work in progress, process issues,
-  - name: Velocity guidance
-    href: dashboards/velocity-guidance.md
-    displayname: team, forecast, planned, completed,
   - name: Visibility across teams & projects
     href: ../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/toc.json
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams

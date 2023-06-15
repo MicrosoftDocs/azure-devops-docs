@@ -23,7 +23,7 @@ resources:
     - repository: library
       type: git
       name: FabrikamLibrary
-      ref: ${{ variables['Build.SourceBranchName'] }}
+      ref: ${{ variables['Build.SourceBranch'] }}
 
 steps:
 - checkout: library
@@ -67,7 +67,7 @@ resources:
     - repository: templates
       type: git
       name: Templates
-      ref: ${{ variables['Build.SourceBranchName'] }}
+      ref: ${{ variables['Build.SourceBranch'] }}
 
 extends:
   template: template.yml@templates

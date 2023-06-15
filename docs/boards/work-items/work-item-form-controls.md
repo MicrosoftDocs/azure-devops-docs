@@ -6,8 +6,8 @@ ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE 
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 02/03/2023
 ---
@@ -30,7 +30,7 @@ As the following image shows, each work item form comes with several controls, f
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](./guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of these processes, see [Choose a process](./guidance/choose-process.md). 
+> For more information, see [About processes and process templates](./guidance/choose-process.md). 
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ As the following image shows, each work item form comes with several controls, f
 > [!NOTE]    
 >Depending on the process chosen when the project was created&mdash;[Agile](./guidance/agile-process.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of the three default processes, see [Choose a process](./guidance/choose-process.md). 
+> FFor more information, see [About processes and process templates](./guidance/choose-process.md). 
 
 ::: moniker-end
 

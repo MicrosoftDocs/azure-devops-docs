@@ -24,8 +24,6 @@ Classic release and artifacts variables are a convenient way to exchange and tra
 
 Variables are different from [Runtime parameters](../process/runtime-parameters.md) which are only available at template parsing time.
 
-> [!NOTE] 
-> This is a reference article that covers the classic release and artifacts variables. To understand variables in YAML pipelines, see [user-defined variables](../process/variables.md). When you migrate from a release pipeline to a YAML pipeline, the `Release.*` variables will not be populated.
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
@@ -43,9 +41,8 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
-> [!TIP]
-> You can view the [current values of all variables](#view-vars) for a release,
-and use a default variable to [run a release in debug mode](#debug-mode).
+> [!NOTE] 
+> For YAML pipelines, see [user-defined variables](../process/variables.md) and [predefined variables](../build/variables.md) for more details.
 
 ## Default variables
 
@@ -53,6 +50,9 @@ Information about the execution context is made available to running tasks throu
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
 Some of the most significant variables are described in the following tables.
 To view the full list, see [View the current values of all variables](#view-vars).
+
+> [!TIP]
+> You can view the [current values of all variables](#view-vars) for a release, and use a default variable to [run a release in debug mode](#debug-mode).
 
 ## System
 

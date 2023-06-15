@@ -5,8 +5,8 @@ description: Manage code in GitHub and link to GitHub commits, pull requests, an
 ms.custom: boards-get-started 
 ms.service: azure-devops-boards
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 02/16/2022
 ---

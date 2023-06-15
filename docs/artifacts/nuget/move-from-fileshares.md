@@ -25,12 +25,9 @@ Azure Artifacts provides a number of benefits compared to file shares:
 
 - **Well-formedness:** Azure Artifacts validates all pushed packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when moving to Azure Artifacts feeds.
 
-> [!NOTE]
-> We recommend using NuGet version 4.8.2 or later. Legacy NuGet versions 2.x are also supported.
-
 ## Authentication and authorization
 
-If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM. Moving your packages to Azure Artifacts will require a few changes:
+If you're using Active Directory-backed file shares, you and your on-premises build agents are likely authenticating automatically using Windows NTLM. Moving your packages to Azure Artifacts will require a few changes:
 
 - **Authentication:** You need to provide access to the NuGet client in order to push and restore packages.
   - **Visual Studio**: Credential acquisition happens automatically.
@@ -99,26 +96,31 @@ For each feed, select **Connect to feed** > **NuGet.exe** and copy the **Source 
 
 #### Migrate your NuGet packages
 
-Once you've set up your feeds, you can do a bulk push from each file share to its corresponding feed. To do so:
+Once you've set up your feeds, you can now set up your project to authenticate with your feed and publish your packages. Make sure you have installed the latest version of the [Azure Artifacts credential provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) before proceeding to the next steps. 
 
-1. Run the following command in an elevated PowerShell prompt window. This sets up your environment to allow you to work with nuget.exe and Azure Artifacts feeds.
+> [!NOTE]
+> We recommend using NuGet version 5.5.x or later, as it includes critical bug fixes that address cancellations and timeouts.
 
-    ```Command
-    init.ps1
+1. Ensure that your *nuget.config* file is in the same folder as your .csproj or .sln file, and then add the following snippet to your nuget.config file. Replace the placeholders with the appropriate values.
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+    </configuration>
     ```
 
-1. For each share, use the following command to push all packages in the share to your new feed:
+1. Run the following `push` command to publish all your packages to your new feed. You can pass any string to the ApiKey argument, as it serves solely as a placeholder.
 
     ```Command
-    nuget push <YOUR_PACKAGE_PATH>\*.nupkg -Source <YOUR_SOURCE_URL> -ApiKey Azure DevOps Services
+    nuget.exe push -Source <FEED_NAME> -ApiKey Az <PACKAGE_PATH>\*.nupkg
     ```
 
 > [!TIP]
 > For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
-
-#### Update your NuGet configuration
-
-Now, return to each of the *nuget.config* files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For each share, find the file share path (Example `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and replace the `value` with your new feed's source URL.
 
 #### Integrate with your builds
 
@@ -128,5 +130,4 @@ Update your builds to ensure they have the right credentials to consume and publ
 
 - [Install NuGet packages with Visual Studio](./consume.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
-- [NuGet.org upstream source](./upstream-sources.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)

@@ -5,8 +5,8 @@ description: Default permissions and access levels for tracking work in Azure Bo
 ms.custom: boards-permissions, linked-from-support, engagement-fy23
 ms.subservice: azure-devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2023
@@ -72,7 +72,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access.  
 
-You can manage permissions for individual plans. To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md).
+For more information, see [Manage Delivery Plan permissions](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 

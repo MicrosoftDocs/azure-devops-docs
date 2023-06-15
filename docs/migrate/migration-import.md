@@ -296,11 +296,14 @@ By now, you have everything ready to execute on your import. You need to schedul
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
 
 > [!NOTE] 
-> If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
+> DACPAC imports are not currently supported for SQL Server 2022. Imports from SQL Server 2022 databases must use the SQL Azure virtual machine (VM) method. If you are using SQL Server 2022, skip steps 2 to 5. Then follow the instructions provided in [Import large collections](migration-import-large-collections.md) and continue to section [determine the import type](#determine-the-import-type).
+
+> [!NOTE] 
+> The collection size limit for the DACPAC method is 150 GB. If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
 
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
-Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-key).  
+Step 4: [Generate an SAS token to access the storage account](#step-4-generate-an-sas-token).  
 Step 5: [Complete the import specification](#step-5-complete-the-import-specification). 
 
 > [!NOTE] 
@@ -485,40 +488,16 @@ After the import has finished, you can delete the blob container and accompanyin
 > [!NOTE] 
 > If your DACPAC file is larger than 10 GB, we recommend that you use AzCopy. AzCopy has multithreaded upload support for faster uploads.
 
-### Step 4: Generate an SAS key
+### Step 4: Generate an SAS token
 
-A [shared access signature (SAS) key](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The key allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
+A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
 
-The recommended way to generate an SAS key is to use [Azure Storage Explorer](https://storageexplorer.com/). With Storage Explorer, you can easily create container-level SAS keys. This is essential, because the data migration tool does *not* support account-level SAS keys. 
+SAS tokens can be [generated using the Azure Portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend:
 
-> [!NOTE] 
-> Do *not* generate an SAS key from the Azure portal. Azure portal-generated SAS keys are account scoped and don't work with the data migration tool. 
-
-After you install Storage Explorer, you can generate an SAS key by doing the following:
-
-1. Open Storage Explorer.
-1. Add an account.
-1. Select **Use a storage account name and key**, and then select **Connect**.
-
-   ![Screenshot of the Connect to Azure Storage pane.](media/migration-import/StorageExplorerAddAccount.png)
-
-1. On the **Attach External Storage** pane, enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account), and then select **Connect**.
-
-   ![Screenshot of the Attach External Storage pane for enter information to connect to the storage account.](media/migration-import/StorageExplorerConnectAccount.png)
-
-1. On the left pane, expand **Blob Containers**, right-click the container that stores your import files, and then select **Get Shared Access Signature**.
-
-   ![Screenshot of the command for selecting the container to create an SAS key.](media/migration-import/StorageExplorerGetSAS.png)
-
-1. For **Expiry time**, set the expiration date for seven days in the future.
-
-    ![Set the required properties and create the SAS key](media/migration-import/StorageExplorerCreateSAS.png) 
-
-1. Under **Permissions** for your SAS key, select the **Read** and **List** check boxes. Write and delete permissions aren't required. 
-
-    > [!NOTE]
-    > * Copy and store this SAS key to place in your import specification file in the next step.
-    > * Treat this SAS key as a secret. It provides access to your files in the storage container. 
+1. Selecting only **Read** and **List** as permissions for your SAS token. No other permissions are required.
+2. Setting an expiry time no further than seven days into the future.
+3. [Restricting IP addresses to only those used by the import process](migration-import-large-collections.md#optional-restrict-access-to-azure-devops-services-ips-only).
+4. Placing the SAS token in a secure location.
 
 ### Step 5: Complete the import specification
 

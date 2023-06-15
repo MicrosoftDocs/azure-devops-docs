@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/25/2023
+ms.date: 6/6/2023
 
 ms.topic: article
 ms.service: azure-devops
@@ -37,6 +37,33 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2023/sprint-222-update.md" data-raw-source="[6 June 2023](2023/sprint-222-update.md)"> 6 June 2023</a></td>
+    <td>GitHub Advanced Security for Azure DevOps (public preview)</td><td>General</td><td>N/A</td></tr>
+    <td>Fixed a bug that allowed users to bypass restrict global personal access token (PAT) creation</td><td>General</td><td>Future</td></tr>
+    <td>Markdown support for comments (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Improvements to YAML pipeline traceability</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Automatic tokens created for Kubernetes Service Connection</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline agents can be registered using a Service Principal</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Preview of macOS 13 Ventura for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+<tr>
+    <td rowspan="3"><a href="2023/sprint-220-update.md" data-raw-source="[20 April 2023](2023/sprint-220-update.md)"> 20 April 2023</a></td>
+    <td>Sticky "Save" and "Save and Close" button </td><td>Boards</td><td>Future</td></tr>
+    <td>Stage quick actions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Analytics Views are now generally available</td><td>Reporting</td><td>Future</td></tr>
+<tr>
+    <td rowspan="4"><a href="2023/sprint-219-update.md" data-raw-source="[31 March 2023](2023/sprint-219-update.md)"> 31 March 2023</a></td>
+    <td>Service principal and managed identity support in Azure DevOps </td><td>General</td><td>Future</td></tr>
+    <td>REST API support for connecting GitHub repositories (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Swimlane rules (private preview) </td><td>Boards</td><td>Future</td></tr>
+    <td>Pipeline Agent end of support for Debian 9, Fedora 32, macOS 10.14 and others</td><td>Pipelines</td><td>Future</td></tr>
+ <tr>
+    <td rowspan="5"><a href="2023/sprint-218-update.md" data-raw-source="[8 March 2023](2023/sprint-218-update.md)"> 8 March 2023</a></td>
+    <td>Node runner download task</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updated TFX Node runner validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Service hook for job state change</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved security when creating GitHub Enterprise Server (hosted Pipelines)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Dashboards last accessed date and modified By</td><td>Reporting</td><td>Future</td></tr>
 <tr>
     <td rowspan="5"><a href="2023/sprint-217-update.md" data-raw-source="[17 February 2023](2023/sprint-217-update.md)"> 17 February 2023</a></td>
     <td>License source column in user list export</td><td>General</td><td>Future</td></tr>
@@ -4573,7 +4600,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RC1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RTW</a></td>
+          <td>December 6, 2022</td>
+          <td>19.205.33122.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC2](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc2-release-date-october-25-2022)">2022 RC2</a></td>
+          <td>October 25, 2022</td>
+          <td>19.205.33011.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RC1](azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true#azure-devops-server-2022-rc1-release-date-august-9-2022)">2022 RC1</a></td>
           <td>August 9, 2022</td>
           <td>19.205.32728.1</td>
         </tr>

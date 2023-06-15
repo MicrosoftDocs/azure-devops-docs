@@ -4,8 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to use OData queries to create several sample Power BI reports.
 ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 12/12/2022

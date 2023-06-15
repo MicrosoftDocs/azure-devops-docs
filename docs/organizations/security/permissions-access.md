@@ -6,8 +6,8 @@ ms.custom: "permissions, engagement-fy23"
 ms.subservice: azure-devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 02/02/2023
@@ -118,7 +118,18 @@ Stakeholders for private projects have no access to **Repos**. Stakeholders for 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="azure-devops" 
+
+### Advanced Security 
+
+You can use [Advanced Security](../../repos/security/configure-github-advanced-security-features.md) to identify security vulnerabilities in your repository.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [temp](includes/advanced-security.md)]
+
 
 ## Code: Source control
 

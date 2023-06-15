@@ -3,8 +3,8 @@ title: View the OData query behind an Analytics report or widget
 titleSuffix: Azure DevOps 
 description: Learn how to view the OData query of a built-in Analytics report or widget when working from Azure DevOps. 
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 06/15/2022

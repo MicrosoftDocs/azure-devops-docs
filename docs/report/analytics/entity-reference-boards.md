@@ -3,8 +3,8 @@ title: Work tracking metadata reference for Analytics
 titleSuffix: Azure DevOps
 description: Properties, enumerated types, and members metadata reference for the Analytics service for Azure Boards.
 ms.subservice: azure-devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/07/2022
@@ -175,7 +175,7 @@ Many properties are date-based or user-based. These properties are associated wi
 |**Watermark**<br/>`Watermark` | String | A system-managed field that increments with changes made to a work item. Valid for these entity types: `WorkItemRevision` and `WorkItem`.<br/>`System.Watermark` | 
 |**Work Item Id**<br/>`WorkItemId` | Int32 | The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within an organization or project collection.<br/>`System.Id` | 
 |`WorkItemRevisionSK`  | Int32 | The Analytics unique key for the work item revision that is used by external tools to join related entities.  | 
-|**Work Item Type** <br/>`WorkItemType` | String | The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../../boards/work-items/guidance/choose-process.md).<br/>` System.WorkItemType` |
+|**Work Item Type** <br/>`WorkItemType` | String | The name of the work item type. Work item types are defined based on the process used when you created your project. For more information, see [About processes and process templates](../../boards/work-items/guidance/choose-process.md).<br/>` System.WorkItemType` |
 
 ### Navigation properties 
 
@@ -427,7 +427,7 @@ For an index of all fields defined for a project, see [Field descriptions for wo
 
 ### Custom properties 
 
-Custom fields are automatically added to the Analytics service as a custom property. `Custom_` is prepended to the property name. For example, the custom field, **Risk Opportunity** is represented in the metadata as listed below. 
+Custom fields are automatically added to the Analytics service as a custom property. `Custom_` or `Custom.` is prepended to the property name. Check your collection's metadata as described in [Construct OData queries for Analytics, URL components to query the metadata](analytics-query-parts.md#url-components-to-query-the-metadata). The following example provides the metadata syntax for the custom field, **Risk Opportunity**. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
