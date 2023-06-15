@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/26/2023
+ms.date: 5/23/2023
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -28,9 +28,9 @@ Each feature is linked to an article where you can learn more about a particular
 
 ## Initiatives
 
-### GitHub Advanced Security for Azure DevOps (currently in private preview, coming to public preview in 2023 Q2)
+### GitHub Advanced Security for Azure DevOps
 
-GitHub Advanced Security (GHAS) for Azure DevOps is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
+GitHub Advanced Security (GHAS) for Azure DevOps, now in public preview, is a suite of developer security analysis tools integrated directly into Azure DevOps to protect your Azure Repos and Pipelines. It includes:
 - Secret Scanning to detect credentials and other secrets that may have already been committed to your Azure Repos, as well as push protection to prevent developers from accidentally pushing new secrets.
 - Dependency Scanning to identify any known vulnerable open-source packages you may be using, and offer straightforward guidance on how to upgrade those packages to fix the vulnerabilities.
 - Code Scanning with CodeQL, a powerful static analysis engine that identifies deep application security vulnerabilities in your source code.
@@ -180,23 +180,23 @@ Note that most new features we are shipping in Boards are only available in the 
         <td>Future</td>      
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview)">Swimlane rules on Kanban board (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1" data-raw-source="[Swimlane rules on Kanban board](/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1)">Swimlane rules on Kanban board</a></td>
          <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Work item markdown support](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
          <td>Boards</td>
-         <td>2023 Q2</td>
-         <td>Future</td>
-      </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements.](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
-         <td>Boards</td>
-         <td>2023 Q2</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2023 Q2</td>
          <td>Future</td>
       </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Work item markdown support](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
+         <td>Boards</td>
+         <td>2023 Q3</td>
+         <td>Future</td>
+      </tr>                
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automated team work item rules](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
          <td>Boards</td>
@@ -208,7 +208,7 @@ Note that most new features we are shipping in Boards are only available in the 
          <td>Boards</td>
          <td>2023 Q3</td>
          <td>Future</td>
-      </tr>             
+      </tr>               
     </tbody>
 </table>
 
@@ -345,23 +345,18 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
     <tbody>
       <tr>
       <tr>
-        <td rowspan="24"><strong>2023 Q2</strong></td>
+        <td rowspan="23"><strong>2023 Q2</strong></td>
         <td><a href="/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview" data-raw-source="[GitHub Advanced Security for Azure DevOps (public preview)](/azure/devops/release-notes/features-timeline/#github-advanced-security-for-azure-devops-currently-in-private-preview)">GitHub Advanced Security for Azure DevOps (public preview)</a></td>
         <td>Pipelines and Repos</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview" data-raw-source="[Swimlane rules (general availability)](/azure/devops/release-notes/2023/sprint-219-update#swimlane-rules-private-preview)">Swimlane rules (general availability)</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1" data-raw-source="[Swimlane rules (general availability)](/azure/devops/release-notes/2023/sprint-221-update#azure-boards-1)">Swimlane rules (general availability)</a></td>
         <td>Boards</td>
         <td>N/A</td>
-      </tr>    
+      </tr>           
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements" data-raw-source="[Work item recycle bin improvements](/azure/devops/release-notes/roadmap/2023/recycle-bin-improvements)">Work item recycle bin improvements</a></td>
-        <td>Boards</td>
-        <td>N/A</td>
-      </tr>       
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments</a></td>
+        <td><a href="/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/2023/sprint-222-update#azure-boards-1)">Markdown editor for work item comments (preview)</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>
@@ -472,6 +467,11 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td>N/A</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item comments](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item comments (general availability)</a></td>
+        <td>Boards</td>
+        <td>Future</td>
+      </tr>
+      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields" data-raw-source="[Additional fields on page filters](/azure/devops/release-notes/roadmap/2023/page-filters-include-additional-fields)">Additional fields on page filters</a></td>
         <td>Boards</td>
         <td>Future</td>
@@ -480,12 +480,7 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-team-rules" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/work-item-team-rules)">Automated team work item rules</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>    
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Automate rules for updating work items](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
-        <td>Boards</td>
-        <td>Future</td>
-      </tr>  
+      </tr>          
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section" data-raw-source="[Chart click thru to results by section](/azure/devops/release-notes/roadmap/2023/chart-click-thru-to-results-by-section)">Chart click thru to results by section</a></td>
         <td>Reporting</td>
@@ -498,12 +493,12 @@ Customers prefer YAML pipelines over classic for builds (CI). However, for relea
       </tr>
       <tr>
         <td rowspan="12"><strong>Future</strong></td>
-        <td><a href="/azure/devops/release-notes/roadmap/improve-github-connection-experience" data-raw-source="[UI improvements GitHub Connection Experience.](/azure/devops/release-notes/roadmap/improve-github-connection-experience)">UI improvements to GitHub Connection Experience</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
         <td>Future</td>
-      </tr>
+      </tr>    
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters" data-raw-source="[Delivery plans improvements to filtering by parent](/azure/devops/release-notes/roadmap/2023/delivery-plans-parent-filters)">Delivery plans improvements to filtering by parent</a></td>
         <td>Boards</td>
         <td>Future</td>
       </tr>     

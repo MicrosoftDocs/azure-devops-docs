@@ -85,7 +85,26 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 1. Save the new variable. 
 
-Setting `System.Debug` to `true` will configure verbose logs for all runs. You can also configure verbose logs for a single run with the **Enable system diagnostics** checkbox. See For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
+Setting `System.Debug` to `true` will configure verbose logs for all runs. You can also configure verbose logs for a single run with the **Enable system diagnostics** checkbox. 
+
+You can also set `System.Debug` to `true` as a variable in a pipeline or template. 
+
+```yaml
+variables:
+  system.debug: 'true'
+```
+
+::: moniker range=">azure-devops-2022"
+
+When `System.Debug` is set to `true`, an additional variable named `Agent.Diagnostic` is set to `true`. When `Agent.Diagnostic` is `true`, the agent collects additional logs that can be used for troubleshooting network issues for self-hosted agents. For more information, see [Network diagnostics for self-hosted agents](../troubleshooting/review-logs.md#network-diagnostics-for-self-hosted-agents).
+
+> [!NOTE]
+> The `Agent.Diagnostic` variable is available with [Agent v2.200.0](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.200.0) and higher.
+
+::: moniker-end
+
+For more information, see [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md).
+
 
 ::: moniker range=">=azure-devops"
 

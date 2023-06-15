@@ -226,7 +226,7 @@ Due to the sampling size of 5 minutes, it's possible that all agents can be runn
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure Pipelines Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipelines Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./windows-agent.md#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`
@@ -249,7 +249,9 @@ You can customize the configuration of the Azure Pipelines Agent by defining env
 
 ## Customizing Virtual Machine Startup via the Custom Script Extension
 
-Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for startup scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it's created or reimaged. The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
+Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for startup scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](/azure/virtual-machines/extensions/custom-script-linux). 
+
+This extension will be executed on every virtual machine in the scaleset immediately after it's created or reimaged. The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
 
 Here's an example to create a custom script extension for Linux.
 
@@ -278,6 +280,8 @@ az vmss extension set \
 > [!IMPORTANT]
 > The scripts executed in the Custom Script Extension must return with exit code 0 in order for the VM to finish the VM creation process.
 > If the custom script extension throws an exception or returns a non-zero exit code, the Azure Pipeline extension will not be executed and the VM will not register with Azure DevOps agent pool.
+
+It might happen that your extension runs before all VM resources are provisioned, in which case you'll see an error similar to "failed installing basic prerequisites." You can fix this by adding a `sleep` command at the beginning of your script, for example, `sleep 30`.
 
 ## Lifecycle of a Scale Set Agent
 
@@ -474,7 +478,7 @@ Licensing considerations limit us from distributing Microsoft-hosted images. We'
 Create a Scale Set with a Windows Server OS and when creating the Agent Pool select the "Configure VMs to run interactive tests" option.
 
 ### How can I delete agents?
-
+`
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Select the tab labeled **Agents**.
 Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it's currently running and won't pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
 

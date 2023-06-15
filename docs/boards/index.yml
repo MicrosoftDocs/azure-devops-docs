@@ -28,7 +28,7 @@ landingContent:
             url: ./work-items/about-work-items.md
       - linkListType: concept
         links:
-          - text: Choose a process
+          - text: About default processes
             url: ./work-items/guidance/choose-process.md
           - text: Agile process workflow
             url: ./work-items/guidance/agile-process-workflow.md
@@ -70,8 +70,8 @@ landingContent:
             url: ./boards/kanban-quickstart.md
       - linkListType: tutorial
         links:
-          - text: Kanban board basics
-            url: ./boards/kanban-basics.md
+          - text: Kanban board overview
+            url: ./boards/kanban-overview.md
           - text: Add columns
             url: ./boards/add-columns.md
           - text: Customize your Kanban board

@@ -41,7 +41,7 @@ The following table indicates which preview features can be enabled per user or 
 |**Preview features**|**Per user**|**Per organization**|
 |--------------------|--------------|-----------------|
 |[Pull Request Summary - Load of large files](#pull-request-summary)  | ✔️ |   |   
-|[Analytics Views](../../report/powerbi/what-are-analytics-views.md)| ✔️ | ✔️ |  
+|[Analytics views](../../report/powerbi/what-are-analytics-views.md)| ✔️ | ✔️ |  
 |Dependency Tracker Preview Features (ignore this setting) | ✔️ | ✔️ |   
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ |   
 |[Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  |   | ✔️ |    

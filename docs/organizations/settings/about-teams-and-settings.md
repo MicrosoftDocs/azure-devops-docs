@@ -241,7 +241,7 @@ Limit access to select features by making a user a [Stakeholder](../security/get
 ## Summary 
 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
-- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
+- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-overview.md) you can use to track progress and update status  
 - The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)   

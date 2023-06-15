@@ -41,7 +41,7 @@ Use this article to learn how to:
 From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
 > [!div class="mx-imgBorder"]
-> ![Analytics Views directory](media/editable-views/directory-actions.png)
+> ![Analytics views directory](media/editable-views/directory-actions.png)
 
 [!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
@@ -61,7 +61,7 @@ Choose ![plus icon](../media/icons/blue-plus.png) **New View** to open the dialo
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, select the tab title. 
 
 > [!NOTE]   
-> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics View - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
+> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics view - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
 
 ### Name the view and choose a sharing option
 

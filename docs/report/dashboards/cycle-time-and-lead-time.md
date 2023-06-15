@@ -87,7 +87,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 2. Select **Save** when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
     :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot ofExample CFD chart, rolling 30 days.":::
-	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-basics.md#track-work) of those work items that the widgets track. 
+	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-quickstart.md#track-work-in-progress) of those work items that the widgets track. 
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 2. Select **Save** when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
     :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot  Example CFD chart, rolling 30 days, 2019 version.":::
-	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-basics.md#track-work) of those work items that the widgets track. 
+	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-quickstart.md#track-work-in-progress) of those work items that the widgets track. 
 
 ::: moniker-end
  
@@ -164,7 +164,7 @@ The standard deviation appears as a band that encompasses the moving average. St
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
 - [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  
-- [Kanban basics](../../boards/boards/kanban-basics.md)  
+- [About Kanban](../../boards/boards/kanban-overview.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes

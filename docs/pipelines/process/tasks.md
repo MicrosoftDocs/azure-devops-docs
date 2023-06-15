@@ -179,6 +179,9 @@ Control options are available as keys on the `task` section.
 The timeout period begins when the task starts running. It doesn't include the
 time the task is queued or is waiting for an agent.
 
+> [!NOTE]
+> Pipelines may have a job level timeout specified in addition to a task level timeout. If the job level timeout interval elapses before your step completes, the running job is terminated, even if the step is configured with a longer timeout interval. For more information, see [Timeouts](phases.md#timeouts).
+
 In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
 
 ```yaml

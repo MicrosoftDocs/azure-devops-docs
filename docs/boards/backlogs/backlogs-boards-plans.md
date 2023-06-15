@@ -120,7 +120,7 @@ For details about working in each type of backlog, see [Create your backlog](cre
 
 Kanban and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and you monitor the flow through the cumulative flow chart. Taskboards track tasks defined for a sprint and you monitor the flow via the sprint burndown chart. 
 
-For details about working in each type of board, see [Kanban basics](../boards/kanban-basics.md) and [taskboard](../sprints/task-board.md). 
+For details about working in each type of board, see [Kanban overview](../boards/kanban-overview.md) and [taskboard](../sprints/task-board.md). 
 
 ### Feature support across backlogs and boards
 
@@ -860,7 +860,7 @@ Now that you understand how backlogs, boards, and plans work, [get started using
 A few things to keep in mind...
 - Every team owns their own backlog. To add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md) 
 - To have work completed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../plans/portfolio-management.md)   
-- Every backlog has a corresponding [Kanban board](../boards/kanban-basics.md) you can use to track progress and update status  
+- Every backlog has a corresponding [Kanban board](../boards/kanban-overview.md) you can use to track progress and update status  
 - Each team can control how [bugs show up on their backlogs](../../organizations/settings/show-bugs-on-backlog.md)  
 - When you add child items, they're linked to their parent using parent-child links, which support hierarchical views and [tree queries](../queries/using-queries.md#tree-query)    
 

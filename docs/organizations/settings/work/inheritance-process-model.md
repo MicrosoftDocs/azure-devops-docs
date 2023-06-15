@@ -75,7 +75,7 @@ If you want to switch the process a project uses from one system process to anot
 
 Following the guidance provided in the above listed articles, you can also make additional changes, for example, from CMMI to Agile or Agile to CMMI. 
 
-Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
 ### Best practices when making changes
 

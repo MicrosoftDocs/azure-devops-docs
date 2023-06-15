@@ -10,6 +10,11 @@
       items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/sprint-222-update.md
+          - name: April 20
+          - name: May 9 
+            href: 2023/sprint-221-update.md
           - name: April 20
             href: 2023/sprint-220-update.md
           - name: March 31
@@ -216,6 +221,10 @@
         items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/boards/sprint-222-update.md
+          - name: May 9
+            href: 2023/boards/sprint-221-update.md
           - name: April 20
             href: 2023/boards/sprint-220-update.md
           - name: March 31
@@ -385,6 +394,10 @@
         items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/pipelines/sprint-222-update.md
+          - name: May 9
+            href: 2023/pipelines/sprint-221-update.md
           - name: April 20
             href: 2023/pipelines/sprint-220-update.md
           - name: March 31
@@ -623,6 +636,8 @@
         items:
         - name: "2023"
           items:
+          - name: June 6
+            href: 2023/general/sprint-222-update.md
           - name: March 31
             href: 2023/general/sprint-219-update.md
           - name: February 17
@@ -713,6 +728,8 @@
         items:
         - name: "2023"
           items:
+          - name: May 9
+            href: 2023/reporting/sprint-221-update.md
           - name: April 20
             href: 2023/reporting/sprint-220-update.md
           - name: March 8
@@ -800,11 +817,11 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: March 2023
+  - name: May 2023
     href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: February 2023
-    href: docswhatsnew/azure-devops-docs-2023-02.md
-  - name: January 2023
-    href: docswhatsnew/azure-devops-docs-2023-01.md
+  - name: April 2023
+    href: docswhatsnew/azure-devops-docs-2023-04.md
+  - name: March 2023
+    href: docswhatsnew/azure-devops-docs-2023-03.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

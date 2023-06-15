@@ -110,7 +110,7 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --bran
 If your SVN repo was using svn:ignore properties, you can convert to a **.gitignore** file using:
 ```
 cd c:\mytempdir
-git svn show-ignore > .gitignore
+git svn show-ignore --id=origin/trunk > .gitignore
 git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```

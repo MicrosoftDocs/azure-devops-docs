@@ -226,7 +226,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Create tag definition](change-project-level-permissions.md)
        - [Delete and restore work items](set-permissions-access-work-tracking.md#move-delete-permissions)  
        - [Delete field from organization](change-organization-collection-level-permissions.md)
-       - [Delivery plans](../../boards/plans/edit-delivery-plan-permissions.md)
+       - [Delivery plans](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)
        - [Move work items out of a project](set-permissions-access-work-tracking.md#move-delete-permissions)  
        - [Manage area and iteration paths](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 

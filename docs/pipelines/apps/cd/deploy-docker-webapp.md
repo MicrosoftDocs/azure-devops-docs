@@ -144,6 +144,8 @@ To complete this section successfully, you must have an [Azure Container Registr
 
 # [YAML](#tab/yaml/)
 
+In this YAML, you build and push a Docker image to a container registry and then deploy it to Azure Web App for Containers. In the Build stage, you build and push a Docker image to an Azure Container Registry with the [Docker@2 task](/azure/devops/pipelines/tasks/reference/docker-v2). The [AzureWebAppContainer@1 task](/azure/devops/pipelines/tasks/reference/azure-web-app-container-v1) deploys the image to Web App for Containers.
+
 ```yaml
 
 trigger:

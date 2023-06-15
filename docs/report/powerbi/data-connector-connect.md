@@ -17,7 +17,7 @@ ms date: 10/04/2021
 
 
 
-The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
+The Power BI Data Connector uses [Analytics views](what-are-analytics-views.md). 
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 

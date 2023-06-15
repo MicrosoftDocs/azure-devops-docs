@@ -72,7 +72,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access.  
 
-You can manage permissions for individual plans. To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md).
+For more information, see [Manage Delivery Plan permissions](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 

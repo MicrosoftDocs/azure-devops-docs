@@ -24,10 +24,10 @@ Prior to making this change, we recommend you familiarize yourself with the proc
 
 | Process | Work item types | Workflow |
 |------|---------|---------|
-|**Scrum** | ![Scrum work item types](media/scrum-to-agile/scrum-process-plan-wits.png)|![Scrum workflow](../../..//boards/work-items/guidance/media/alm_pt_scrum_wf_pbi.png)|
+|**Scrum** | ![Scrum work item types](media/scrum-to-agile/scrum-process-plan-wits.png)|![Scrum workflow](../../../boards/work-items/guidance/media/alm-pt-scrum-wf-pbi.png)|
 |**Agile** | ![Agile work item types](media/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/media/about-boards/agile-process-workflow.png)|
 
-For an overview of all processes and workflows for all work item types, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
 Reasons you might want to change your process from Scrum to Agile:
 
