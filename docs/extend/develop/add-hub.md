@@ -25,7 +25,7 @@ In this article, we'll create a new hub that displays in Azure Boards after the 
 |--- sdk    
 	|--- node_modules           
 	|--- scripts
-		|--- VSS.SDK.js       
+		|--- SDK.js       
 |--- images                        
 	|--- icon.png                           
 |--- scripts                        	// not used in this tutorial
@@ -33,15 +33,15 @@ In this article, we'll create a new hub that displays in Azure Boards after the 
 |--- vss-extension.json				// extension's manifest
 ```
 
-## Get the client SDK: `VSS.SDK.js`
+## Get the client SDK: `SDK.js`
 
-The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host, Azure DevOps Services, frame. This script also initializes, notifies that the extension loaded, or gets context about the current page. Get the Client SDK `VSS.SDK.js` file and add it to your web app. 
+The core SDK script, SDK.js, enables web extensions to communicate to the host, Azure DevOps Services, frame. This script also initializes, notifies that the extension loaded, or gets context about the current page. Get the Client SDK `SDK.js` file and add it to your web app. 
 Place it in the `home/sdk/scripts` folder.
 
 Use the 'npm install' command via the command line (requires [Node](https://nodejs.org/en/download/)) to retrieve the SDK:
 
 ```no-highlight
-npm install vss-web-extension-sdk
+npm install azure-devops-extension-sdk
 ```
 
 > [!NOTE]
@@ -60,12 +60,12 @@ Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Hello World</title>
-	<script src="sdk/scripts/VSS.SDK.js"></script>
+	<script src="sdk/scripts/SDK.js"></script>
 </head>
 <body>
-	<script type="text/javascript">VSS.init();</script>
+	<script type="text/javascript">SDK.init();</script>
 	<h1>Hello World</h1>
-	<script type="text/javascript">VSS.notifyLoadSucceeded();</script>
+	<script type="text/javascript">SDK.notifyLoadSucceeded();</script>
 </body>
 </html>
 ```

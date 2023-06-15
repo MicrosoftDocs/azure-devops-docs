@@ -44,6 +44,20 @@
   href: git/toc.yml
 - name: Team Foundation version control
   href: tfvc/toc.yml
+- name: Security
+  items:
+  - name: Configure GitHub Advanced Security
+    href: security/configure-github-advanced-security-features.md
+  - name: Permissions for GitHub Advanced Security
+    href: security/github-advanced-security-permissions.md
+  - name: Billing for GitHub Advanced Security
+    href: security/github-advanced-security-billing.md
+  - name: Secret Scanning for GitHub Advanced Security
+    href: security/github-advanced-security-secret-scanning.md
+  - name: Dependency Scanning for GitHub Advanced Security
+    href: security/github-advanced-security-dependency-scanning.md
+  - name: Code Scanning for GitHub Advanced Security
+    href: security/github-advanced-security-code-scanning.md
 - name: Integrations
   items:
   - name: Azure Repos with Slack

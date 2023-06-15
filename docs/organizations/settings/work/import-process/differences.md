@@ -28,6 +28,9 @@ Azure DevOps Services uses a different model than Team Foundation Server (TFS) f
  
 The structure and overall syntax used in defining process templates remains the same, with only a few minor differences existing between templates you customize for import into Azure DevOps Services and those you upload to support an on-premises TFS.  
 
+> [!NOTE]  
+> Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Sevice.
+
 ## Unsupported customizations and unreferenced plug-in files
 
 Any reference to the following objects in any of the XML definition files result in a validation error upon import.  

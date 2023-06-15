@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 01/25/2023
+ms.date: 06/12/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -40,14 +40,13 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
-
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
 
 ### Recent updates
 
 * The macOS 13 image is available
-* The macOS 10.15 image will be fully unsupported by 4/24/2023
+* The macOS 10.15 image is fully unsupported as of 4/24/2023
 * Ubuntu 18.04 has been retired
 * [`ubuntu-latest` images will use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
@@ -278,7 +277,10 @@ If Microsoft-hosted agents don't meet your needs, then you can deploy your own [
 
 ### How can I see what software is included in an image?
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table. 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table.
+
+> [!NOTE]
+> [!INCLUDE [include](includes/system-prefer-git-from-path.md)]
 
 ### How does Microsoft choose the software and versions to put on the image?
 
@@ -362,11 +364,10 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
   The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 10.15](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
   - [macOS 11](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xamarin)
+  - [macOS 12](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xamarin)
   
-
-  This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
+This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
   In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 

@@ -59,7 +59,7 @@ ms.date: 10/25/2022
   **Work tracking**  
      - [Area and iteration paths](set-permissions-access-work-tracking.md)  
      - [Queries and folders](../../boards/queries/set-query-permissions.md)  
-     - [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
+     - [Plan permissions](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)  
      - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
   ---
   **Reporting**

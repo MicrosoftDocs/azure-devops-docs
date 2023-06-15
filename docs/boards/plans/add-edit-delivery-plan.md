@@ -34,7 +34,7 @@ Use this article to learn how to complete these tasks:
 - To add or edit a Delivery Plan, you must be a member of the Contributors group for the project where you add the plan. 
 - To add team backlogs to a plan, you must have view permissions to those projects. 
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. 
-- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan. Or, you must be a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan. Or, you must be a member of the **Project Administrators**, **Project Collection Administrators** group, or be granted explicit permission through the plan's Security dialog. For details, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans).  
  
 ## Before you define a plan
 
@@ -217,7 +217,6 @@ You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/pla
 
 - [Review team plans](review-team-plans.md)
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
-- [Edit Delivery Plan permissions](edit-delivery-plan-permissions.md)
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)    
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  

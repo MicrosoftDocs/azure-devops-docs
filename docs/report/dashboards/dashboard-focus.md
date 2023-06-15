@@ -199,7 +199,7 @@ This sprint dashboard includes several query tiles and the following widgets:
 
 ## Release dashboard 
 
-Major software releases often have contributions from one or more teams. Release burndown and burnup charts can help product managers keep track of how work is progressing across a number of teams. Burndown charts are highly configurable. You can choose one or more teams, backlog work items or work item types, field criteria, countdown metrics, and time interval. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).   
+Major software releases often have contributions from one or more teams. Release burndown and burnup charts can help product managers keep track of how work is progressing across a number of teams. Burndown charts are highly configurable. You can choose one or more teams, backlog work items or work item types, field criteria, countdown metrics, and time interval. To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).   
 
 ### Burndown chart
 The following burndown chart shows the completion of planned work from July 1 through September 30, 2022. 

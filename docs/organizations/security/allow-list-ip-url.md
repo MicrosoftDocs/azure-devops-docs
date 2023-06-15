@@ -244,7 +244,7 @@ We recommend you open port `443` to all traffic on the following IP addresses an
 |https://*.vssps.visualstudio.com   |Authentication and sign-in related          |
 |https://*gallerycdn.vsassets.io   |Hosts Azure DevOps extensions         |
 |https://*vstmrblob.vsassets.io | Hosts Azure DevOps TCM log data        |
-|Row6 https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
+|https://cdn.vsassets.io    | Hosts Azure DevOps Content Delivery Networks (CDNs) content        |
 |https://static2.sharepointonline.com    | Hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on        |
 |https://vsrm.dev.azure.com   | Hosts releases        |
 |https://vstsagentpackage.azureedge.net      |  Required to set up self-hosted agent in machines within your network              |

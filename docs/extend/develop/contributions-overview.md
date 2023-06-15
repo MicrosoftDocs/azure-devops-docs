@@ -19,7 +19,7 @@ Extensions add new capabilities into the system by providing contributions and b
 
 For more information, see the following references:
 - [Extensibility points](../reference/targets/overview.md) 
-- [azure-devops-extension-api-package](/javascript/api/azure-devops-extension-api/?source=recommendations) 
+- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/?source=recommendations) 
 - [azure-devops-extension-sdk](/javascript/api/azure-devops-extension-sdk/)
 
 ## Contribution types

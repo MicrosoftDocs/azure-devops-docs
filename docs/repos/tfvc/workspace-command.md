@@ -159,7 +159,7 @@ c:\projects>tf workspace
 The following example opens the **Beta1** workspace that's owned by **jenh** so that you can see its properties and mappings. If you have the **AdminWorkspaces** permission, you can change the workspace properties and mappings.
 
 ```
-c:\projects> tf workspace Beta1;jenh
+c:\projects> tf workspaces Beta1;jenh
 ```
 
 ## Related articles

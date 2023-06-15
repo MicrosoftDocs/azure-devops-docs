@@ -53,7 +53,7 @@ The Burndown widget lets you display a trend of remaining work across multiple t
 
 ![Burndown Widget - Release Burndown Example](./media/burndown-ax-catalog.png)
 
-To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
+To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).  
 
 ## Burnup widget
 
@@ -63,7 +63,7 @@ The Burnup widget lets you display a trend of completed work across multiple tea
 
 ![Burnup Widget - Release Burnup Example](./media/burnup-ax-catalog.png)
 
-To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
+To learn more, see [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md).  
 
 
 ## Sprint Burndown widget 

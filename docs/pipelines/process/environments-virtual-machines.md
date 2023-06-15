@@ -88,7 +88,7 @@ jobs:
   displayName: Deploy to VM
   environment: 
    name: VMenv
-   resourcesNAme: VMenv
+   resourceName: VMenv
    resourceType: virtualMachine
   strategy:
      runOnce:
