@@ -22,6 +22,8 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 - A [nuget.org](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) account.
 
+- The service connection **Administrator** role. 
+
 ## Create an API key
 
 1. Navigate to [NuGet.org](https://www.nuget.org/users/account/LogOn?returnUrl=%2F) and sign in to your account.
@@ -46,7 +48,7 @@ Using Azure Pipelines, developers can streamline the process of publishing their
 
 1. Enter the ApiKey you generated earlier in the **ApiKey** field, and then provide a name for your service connection.
 
-1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done. You'll need to have the Service Connections Administrator role to select this option. 
+1. Check the **Grant access permission to all pipelines** checkbox, and then select **Save** when you're done. To select this option, you'll need the service connection **Administrator** role. 
 
 ## Publish packages
 

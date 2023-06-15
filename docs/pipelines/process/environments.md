@@ -31,7 +31,7 @@ When you author a YAML pipeline and refer to an environment that doesn't exist, 
 
 ## Prerequisites
 
-* You need to have **Project Administrator**
+* You need to have the **Creator** role for Environments. 
 
 <a name="creation"></a>
 
