@@ -294,7 +294,7 @@ resources:
     trigger:
     - main
     - release
-steps
+steps:
 - checkout: self
 - checkout: A
 - checkout: B
