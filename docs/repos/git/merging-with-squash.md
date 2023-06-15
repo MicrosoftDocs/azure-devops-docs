@@ -64,8 +64,8 @@ Choose **Squash changes when merging** on the **Complete pull request** dialog t
 
 The **Files** tab in a pull request detects diffs by a three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their [common merge base](https://git-scm.com/docs/git-merge-base) (i.e. the best common ancestor). The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common. You can check your branches for a multiple merge bases manually with ```git merge-base --all feature master``` command. Also there is an automatic detection for such a cases that will notify you with message "Multiple merge bases detected. The list of commits displayed might be incomplete".
 
-[!NOTE]
-In case you have lost changes during a PR review, please ensure that multiple merge bases is not the root cause.
+> [!NOTE]
+> In case you have lost changes during a PR review, please ensure that multiple merge bases is not the root cause.
 
 The following scenarios can cause multiple bases:
 
