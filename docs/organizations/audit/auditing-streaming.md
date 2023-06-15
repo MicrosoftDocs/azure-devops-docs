@@ -111,7 +111,7 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
 
 1. Create a [Log Analytics workspace](/azure/azure-monitor/learn/quick-create-workspace).
 2. Open the workspace and select **Agents**.
-3. Select the Log Analytics agent instructions drop down to open and view Workspace ID and Primary Key.
+3. Select the Log Analytics agent instructions dropdown menu to open and view the workspace ID and primary key.
 4. Make note of the workspace ID and primary key.
 
    :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
