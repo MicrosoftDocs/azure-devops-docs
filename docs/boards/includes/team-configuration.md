@@ -55,7 +55,7 @@ ms.date: 01/09/2020
    Kanban boards
    :::column-end:::
    :::column span="3":::
-   - [Kanban board](../boards/kanban-basics.md)
+   - [Kanban board](../boards/kanban-overview.md)
    - [Features board](../boards/kanban-epics-features-stories.md)
    - [Epics board](../boards/kanban-epics-features-stories.md)
    - [Cumulative flow](../../report/dashboards/cumulative-flow.md)

@@ -34,8 +34,9 @@ Make sure your machine has these prerequisites:
     * Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
     * Windows 8.1
     * Windows 10
+    * Windows 11
   * Server OS
-    * Windows Server 12 or higher
+    * Windows Server 2012 or higher
 * The agent software installs its own version of .NET so there is no .NET prerequisite.
 - [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
 * **Subversion** - If you're building from a Subversion repo, you must install the Subversion client on the machine.
@@ -206,6 +207,14 @@ After configuring the agent:
 This will run through a diagnostic suite that may help you troubleshoot the problem.
 The diagnostics feature is available starting with agent version 2.165.0.
 
+:::moniker range=">azure-devops-2022"
+
+## Network diagnostics for self-hosted agents
+
+Set the value of `Agent.Diagnostic` to `true` to collect additional logs that can be used for troubleshooting network issues for self-hosted agents. For more information, see [Network diagnostics for self-hosted agents](../troubleshooting/review-logs.md#network-diagnostics-for-self-hosted-agents)
+
+:::moniker-end
+
 ## Help on other options
 
 To learn about other options:
@@ -219,6 +228,10 @@ The help provides information on authentication alternatives and unattended conf
 [!INCLUDE [include](includes/capabilities.md)]
 
 ## FAQ
+
+### What version of Git does my agent run?
+
+[!INCLUDE [include](includes/system-prefer-git-from-path.md)]
 
 [!INCLUDE [include](includes/v3/qa-agent-version.md)]
 
@@ -242,10 +255,10 @@ The help provides information on authentication alternatives and unattended conf
 
 If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 ### How do I set different environment variables for each individual agent?
 
-Create a `.env` file under agent's root directory and put environment variables you want to set into the file as following format:
+Create a `.env` file under agent's root directory and put the environment variables you want to set into the file in the following format, and then restart the agent.
 
 ```
 MyEnv0=MyEnvValue0

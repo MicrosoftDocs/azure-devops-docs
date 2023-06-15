@@ -3,7 +3,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 03/17/2023
+ms.date: 06/07/2023
 ---
 
 <a id="discussion" />
@@ -26,14 +26,13 @@ The rich text editor tool bar displays below the text entry area. It appears whe
 
 ### Mention someone, a group, work item, or pull request 
 
-To open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request, select, :::image type="icon" source="../../media/icons/work-id.png" border="false" alt-text="pound sign ":::, :::image type="icon" source="../../media/icons/pr-id.png" border="false" alt-text="P R":::  or enter `@`, `#`, or `!`.
-
+To open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request, select :::image type="icon" source="../../media/icons/work-id.png" border="false" alt-text="pound sign"::: or :::image type="icon" source="../../media/icons/pr-id.png" border="false" alt-text="P R":::, or enter `@`, `#`, or `!`.
 
 :::image type="content" source="../media/discussion-at-mention.png" alt-text="Screenshot of Discussion section, at-mention drop-down menu.":::
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2019"
 
 Enter a name or number and the menu list filters to match your entry. Choose the entry you want to add. To bring a group into the discussion, enter `@` and the group name, such as a team or security group. 
 ### Edit or delete a comment 

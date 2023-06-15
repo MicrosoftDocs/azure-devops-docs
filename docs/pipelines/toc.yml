@@ -315,6 +315,9 @@
           href: test/codecoverage-for-pullrequests.md
 - name: Deploy apps
   items:
+    - name: Create a multistage pipeline
+      href: process/create-multistage-pipeline.md
+      displayName: multi stage, multi stage pipelines 
     - name: Deploy apps to environments
       items:
         - name: Define and target environments
@@ -433,6 +436,8 @@
       items:
         - name: Build and push to Azure Container Registry with a Docker template
           href: ecosystems/containers/acr-template.md
+        - name: Build and push to Azure Container Registry - Managed Service Identity
+          href: ecosystems/containers/publish-to-acr.md
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
@@ -503,6 +508,9 @@
     - name: Publish NuGet packages with Jenkins
       href: packages/jenkins.md
       displayName: nuget, package, publish, jenkins
+    - name: Publish NuGet packages to NuGet.org (Classic/YAML)
+      href: artifacts/publish-public-registry.md
+      displayName: publish, nuget, package
 - name: Create & use resources
   items:
     - name: About resources

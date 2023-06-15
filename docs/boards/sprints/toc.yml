@@ -53,5 +53,5 @@
   - name: View/configure sprint burndown
     href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json
     displayname: charts, in-context charts, in context
-  - name: Configure a Burndown or Burnup widget
+  - name: Configure a burndown or burnup widget
     href: ../../report/dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/boards/toc.json

@@ -1,12 +1,12 @@
 ---
 title: Create your first pipeline
-ms.custom: seodec18, devx-track-python, devx-track-azurecli, py-fresh-zinc
+ms.custom: seodec18, devx-track-azurecli, py-fresh-zinc
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 01/30/2023
+ms.date: 06/06/2023
 monikerRange: '<= azure-devops'
 ---
 
@@ -1043,7 +1043,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 * Services
   * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
-  * Git service providers such as GitHub and Bitbucket Cloud
+  * Git service providers such as Azure Repos Git, GitHub, and Bitbucket Cloud
   * Subversion
 
 ::: moniker-end

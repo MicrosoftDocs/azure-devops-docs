@@ -3,7 +3,7 @@ title: Build Java apps
 description: Automatically build Java apps with Azure Pipelines.
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
-ms.custom: freshness-fy22q2, devdivchpfy22
+ms.custom: freshness-fy22q2, devdivchpfy22, devx-track-extended-java
 ms.topic: quickstart
 ms.date: 10/03/2022
 monikerRange: '<= azure-devops'

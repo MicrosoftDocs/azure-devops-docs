@@ -25,7 +25,7 @@ Use this index to quickly access concepts and tasks related to work items and in
 > - [Change the link type of an existing link](../backlogs/add-link.md#change-link-type)
 > - [Filter the history tab](../queries/history-and-auditing.md#filter-history) 
 > - [Reassign a checklist item](../boards/add-task-checklists.md#checklist-actions) 
-> - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position)
+> - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards)
 > - [Change the color of a swimlane on a Kanban board](../boards/expedite-work.md#add-or-remove-a-swimlane)
 ::: moniker-end
 
@@ -187,7 +187,7 @@ Tasks listed below are available to users with **Contributor** permissions and *
       - [Manage issues or impediments](../backlogs/manage-issues-impediments.md)
       - [Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       - [Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) 
-      - [Move a card to a specific column position](../boards/reorder-cards.md#move-to-column-position) 
+      - [Move a card to a specific column position](../boards/customize-cards.md#reorder-cards) 
       - [Move work items to a sprint](../sprints/assign-work-sprint.md)  
       - [Move work items to another project](../backlogs/move-change-type.md#move)  
       <br/>

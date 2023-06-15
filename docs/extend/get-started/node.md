@@ -49,7 +49,7 @@ An extension is composed of a set of files that includes a required manifest fil
 3. Install the Microsoft VSS Web Extension SDK package and save it to your npm package manifest:
    
    ```
-   npm install vss-web-extension-sdk --save
+   npm install azure-devops-extension-sdk --save
    ```
 
    This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.
@@ -90,7 +90,7 @@ An extension is composed of a set of files that includes a required manifest fil
                 "addressable": true
             },
             {
-                "path": "node_modules/vss-web-extension-sdk/lib",
+                "path": "node_modules/azure-devops-extension-sdk/lib",
                 "addressable": true,
                 "packagePath": "lib"
             }
@@ -107,7 +107,7 @@ An extension is composed of a set of files that includes a required manifest fil
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <script src="lib/VSS.SDK.min.js"></script>
+        <script src="lib/SDK.min.js"></script>
         <style>
             body {
                 background-color: rgb(0, 67, 117);
@@ -117,9 +117,9 @@ An extension is composed of a set of files that includes a required manifest fil
             }
         </style>
         <script type="text/javascript">
-            VSS.init();
-            VSS.ready(function() {
-                document.getElementById("name").innerText = VSS.getWebContext().user.name;
+            SDK.init();
+            SDK.ready(function() {
+                document.getElementById("name").innerText = SDK.getUser().name;
             });
         </script>
     </head>
@@ -135,7 +135,7 @@ An extension is composed of a set of files that includes a required manifest fil
     |-- my-hub.html
     |-- node_modules
         |-- @types
-        |-- vss-web-extension-sdk
+        |-- azure-devops-extension-sdk
     |-- package.json
     |-- vss-extension.json
     ```

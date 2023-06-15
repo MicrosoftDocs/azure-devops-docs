@@ -30,6 +30,4 @@ The report tracks the team's estimated backlog work&mdash;sum of Effort (Basic o
 
 ::: moniker-end 
 
-To learn more, see the following articles: 
-- [View or configure team velocity](../../report/dashboards/team-velocity.md)  
-- [Velocity metrics and usage guidance](../../report/dashboards/velocity-guidance.md)
+For more information, see [View or configure team velocity](../../report/dashboards/team-velocity.md)  

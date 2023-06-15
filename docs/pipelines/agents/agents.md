@@ -81,6 +81,17 @@ After you've installed the agent on a machine, you can install any other softwar
 >
 > We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bug fixes.
 
+> [!NOTE]
+> The agent ships with several versions of NodeJS libraries that allow target tasks that use respective Node handlers.
+>
+> All official Azure DevOps tasks use Node 10 as a universal handler, however, customers may still use custom tasks
+> that use the outdated Node 6 library. To support backward compatibility with Node that is currently reached End-of-Life,
+> we provide the self-service methods to install the designated Node runner manually.
+>
+> For more information on manually installing the Node 6 runner, see [Node 6 support](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/noderunner.md) for more details.
+>
+> You can also use the [NodeTaskRunnerInstaller@0](/azure/devops/pipelines/tasks/reference/node-task-runner-installer-v0) task in your pipelines that require the outdated Node 6 library.
+
 ## Azure Virtual Machine Scale Set agents
 
 Azure Virtual Machine Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
@@ -512,7 +523,7 @@ You can view the version of an agent by navigating to **Agent pools** and select
 To trigger agent update programmatically you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
 
 > [!NOTE]
-> For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.
+> For servers with no internet access, manually copy the agent zip file to `%\ProgramData%\Microsoft\Azure DevOps\Agents\` to use as a local file. Create the **Agents** folder if it is not present.
 
 ## FAQ
 

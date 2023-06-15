@@ -41,7 +41,7 @@ Several sources can contribute to changes that you need to manage in your softwa
 - Development or testing takes longer than expected
 - Issues arise after deployment and ongoing operations.  
 
-While some changes are unavoidable, other changes can be avoided or their affect minimized. Many changes arise when a team is new to Agile methods and haven't yet adopted an Agile culture.
+While some changes are unavoidable, other changes can be avoided or their effect minimized. Many changes arise when a team is new to Agile methods and haven't yet adopted an Agile culture.
 
 To minimize avoidable changes, minimize the occurrence of the following.  
 - Unclear requirements and acceptance criteria  
@@ -121,7 +121,7 @@ To formally track change, you can define a change request work item type, simila
 > [!div class="mx-imgBorder"]  
 > ![Change request work item form.](media/manage-change/change-request-form.png) 
 
-This form provides rich-text fields to capture the affect of the change to the following areas: 
+This form provides rich-text fields to capture the effect of the change to the following areas: 
 - Architecture
 - User experience
 - Test
@@ -237,7 +237,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Monitor and report on progress
 
 - [Triage work items](../boards/queries/triage-work-items.md)
-- [Velocity metrics and usage guidance](../report/dashboards/velocity-guidance.md)
 - [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Burndown guidance, scope management](../report/dashboards/burndown-guidance.md)
 - [Cumulative flow, lead time, and cycle time guidance](../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)

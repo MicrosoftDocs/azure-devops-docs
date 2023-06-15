@@ -1,5 +1,6 @@
 ---
 ms.subservice: azure-devops-service-hooks
+ms.custom: devx-track-jenkins
 ms.topic: conceptual
 title: Create a service hook with Jenkins
 description: Use Jenkins with your Azure DevOps organization
