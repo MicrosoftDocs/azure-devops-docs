@@ -52,7 +52,7 @@ YAML builds are not yet available on TFS.
 
 1. Select the **Save & queue** menu and then Select **Save**.
 
-:::image type="content" source="./media/classic-ci-trigger.png" alt-text="A screenshot showing how to add a CI trigger to a classic pipeline.":::
+:::image type="content" source="./media/classic-continuous-integration-trigger.png" alt-text="A screenshot showing how to add a CI trigger to a classic pipeline.":::
 
 * * *
 
@@ -135,7 +135,7 @@ YAML builds are not yet available on TFS.
 
 1. Select **Save & queue** when you're done, and then select **Save** one more time.
 
-:::image type="content" source="media/classic-pr-validation.png" alt-text="A screenshot showing how to enable pull request validation.":::
+:::image type="content" source="media/classic-pull-request-validation.png" alt-text="A screenshot showing how to enable pull request validation.":::
 
 * * *
 
