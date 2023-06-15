@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 12/03/2020
 ms.topic: include
 ---
@@ -9,14 +8,14 @@ ms.topic: include
 > [!NOTE]
 > Azure Pipelines images are continuously updated in an effort to provide users with the best experience possible. These routine updates are predominantly aimed at addressing bugs or out of date software. They will often have no impact on your pipelines, however this is not always the case. Your pipeline may be impacted if it takes a dependency on a piece of software that has either been removed or updated on the image.
 >
-> To learn more about upcoming updates on our Windows, Linux and MacOS images, please read the following announcements:
+> To learn more about upcoming updates on our Windows, Linux and macOS images, please read the following announcements:
 >
 > - [Windows 2016](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/win/Windows2016-Readme.md)
 > - [Windows 2019](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/win/Windows2019-Readme.md)
 > - [Ubuntu 16.04](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/linux/Ubuntu1604-README.md)
 > - [Ubuntu 18.04](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/linux/Ubuntu1804-README.md)
 > - [Ubuntu 20.04](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/linux/Ubuntu2004-README.md)
-> - [MacOS 10.15](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/macos/macos-10.15-Readme.md)
+> - [macOS 10.15](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/macos/macos-10.15-Readme.md)
 >
 > To view release notes for upcoming (pre-release) and deployed changes, please subscribe to the following release notes:
 >

@@ -1,8 +1,78 @@
-- name: Manage requirements 
-  href: manage-requirements.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-- name: Manage change
-  href: manage-change.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-- name: End-to-end traceability
-  href: end-to-end-traceability.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-- name: Link work items to other objects
-  href: ../notifications/add-links-to-work-items.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+- name: Cross-service, Azure, and GitHub integration
+  href: index.yml
+- name: Get started
+  items:
+  - name: Cross-service integration overview
+    href: cross-service-overview.md
+  - name: GitHub integration
+    href: github-integration.md
+  - name: Deploy to Azure
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json
+  expanded: true
+- name: Traceability
+  items:
+  - name: End-to-end traceability
+    href: end-to-end-traceability.md
+  - name: Drive Git development
+    href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/cross-service/toc.json
+  - name: Link work items to builds and deployments
+    href: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/cross-service/toc.json
+  - name: Link work items to other objects
+    href: ../organizations/notifications/add-links-to-work-items.md?toc=/azure/devops/cross-service/toc.json
+  - name: Manage requirements
+    href: manage-requirements.md
+  - name: Manage change
+    href: manage-change.md
+- name: Work across projects and services
+  items:
+  - name: Project summary
+    href: ../organizations/projects/project-vision-status.md?toc=/azure/devops/cross-service/toc.json
+    displayname: stats, members, wiki, README, invite, share, collaborate
+  - name: Work across projects
+    href: ../project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json
+  - name: Manage projects
+    href: ../organizations/projects/about-projects.md?toc=/azure/devops/cross-service/toc.json
+  - name: Work across projects FAQs
+    href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/cross-service/toc.json
+- name: Azure Boards & GitHub
+  href: ../boards/github/toc.yml
+- name: Notifications
+  href: ../organizations/notifications/toc.yml
+- name: Microsoft Teams & Slack integration
+  items:
+  - name: Azure Boards with Slack
+    href: ../boards/integrations/boards-slack.md?toc=/azure/devops/cross-service/toc.json
+  - name: Azure Boards with Microsoft Teams
+    href: ../boards/integrations/boards-teams.md?toc=/azure/devops/cross-service/toc.json
+  - name: Azure Repos with Slack
+    href: ../repos/integrations/repos-slack.md?toc=/azure/devops/cross-service/toc.json
+  - name: Azure Repos with Microsoft Teams
+    href: ../repos/integrations/repos-teams.md?toc=/azure/devops/cross-service/toc.json
+  - name: Azure Pipelines with Slack
+    href: ../pipelines/integrations/slack.md?toc=/azure/devops/cross-service/toc.json
+  - name: Azure Pipelines with Microsoft Teams
+    href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/cross-service/toc.json
+- name: Request & track feedback
+  href: ../project/feedback/toc.yml
+- name: Enable DevSecOps with Azure and GitHub
+  href: /devops/devsecops/enable-devsecops-azure-github
+- name: REST API Reference
+  items:
+  - name: Projects
+    href: /rest/api/azure/devops/core/projects
+  - name: Get project metrics
+    href: /rest/api/azure/devops/build/metrics/get%20project%20metrics
+- name: Resources
+  items:
+  - name: Get Started
+    href: ../get-started/index.yml
+  - name: Notifications
+    href: ../organizations/notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json
+  - name: Marketplace & Extensibility
+    href: ../marketplace-extensibility/index.yml
+  - name: Settings & Usage
+    href: ../organizations/index.yml
+  - name: Azure Boards
+    href: ../boards/index.yml
+  - name: Analytics & reporting
+    href: ../report/index.yml

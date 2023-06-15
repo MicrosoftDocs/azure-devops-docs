@@ -3,19 +3,19 @@ title: Customize a sprint taskboard in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to customize cards on a sprint taskboard in Azure Boards or Azure DevOps.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
-ms.date: 09/20/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 
 # Customize cards on a sprint taskboard in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -24,7 +24,7 @@ Sprint Taskboards are similar to Kanban boards because they show work items as c
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
@@ -37,7 +37,7 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 ## Prerequisites
 
 * You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+* To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
 
 ## Taskboard customization options  
@@ -125,7 +125,7 @@ Before you configure your Taskboard, you'll want to make sure the following task
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 > [!NOTE]  
 > You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
@@ -244,7 +244,7 @@ You change the way cards appear on the Taskboard in the same way you change the 
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
@@ -268,34 +268,7 @@ You change the way cards appear on the Taskboard in the same way you change the 
 6. When done with your changes, choose **Save**.
 
 ::: moniker-end  
-
-::: moniker range="tfs-2015" 
-
-1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
-
-1. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the Settings dialog.  
-
-   ![Taskboard, open card customization dialog](media/customize/task-board-customize-open-settings.png)    
-
-2. Choose **Fields** and then a work item type to see all the settings you can modify. 
-
-3. Place a check mark in the check box for those fields you want to have appear on the board. 
-      
-	**TFS 2015.1 options:**       
-	<img src="media/customize/vso-task-board-card-customize.png" alt="taskboard, card customization dialog" />     
-	**TFS 2015 options:**        
-	<img src="media/customize/ALM_CC_TaskCardOptions.png" alt="taskboard, TFS card customization dialog" />       
-
-	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
-
-4. To add a field, choose the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus icon and enter the name of a field  you want to add.  
-
-5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.  
-
-6. When done with your changes, choose **Save**.
-
-::: moniker-end  
-
+ 
 
 <a id="fields"></a>
 
@@ -327,15 +300,9 @@ To add tags, double-click the work item to open it. And, just a reminder, you ca
 <a id="style-rule" > </a>  
 
 ## Define style rules, highlight cards  
- 
 
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight Priority 1 tasks by having the cards display as green. 
 
-::: moniker range="tfs-2015"
-
-This feature requires TFS 2015.1 or later versions.
-
-::: moniker-end
 
 ![Styling rule applied to tasks with Priority=1](media/customize/task-style-green.png)
 
@@ -393,13 +360,8 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 ::: moniker-end  
 
-::: moniker range="tfs-2015"  
 
-Requires TFS 2015.1 or later version.  
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open the Taskboard](task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 

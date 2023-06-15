@@ -2,39 +2,45 @@
 title: Pipeline outcome summary for all pipelines sample report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline outcome summary Power BI report for all pipelines in the project.  
-ms.technology: devops-analytics
-ms.reviewer: ravishan
-ms.author: kaghai
-ms.custom: powerbisample
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'     
-ms.date: 10/12/2021
+monikerRange: '>= azure-devops-2020'  
+ms.date: 12/14/2022
 ---
 
-# Pipeline outcome summary for all pipelines sample report 
+# Pipeline outcome summary for all pipelines sample reports 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-You may want to see pipeline metrics such as pass rate, number of failures, duration, and so on. for all the pipelines together, in a single report. This article shows you how to get pipeline outcome summary, for all the pipelines in a project. You can take a similar approach to get other metrics like pipeline duration and number of failures for all pipelines of the project in a single report.
+You can use the information provided in this article to query pipeline metrics--such as pass rate, number of failures, duration, and so on--for all pipelines and create a single report. Additional queries are provided to get other metrics, such as pipeline duration and number of failures for all project pipelines. 
+
+The following image illustrates the outcome summary for all pipelines defined for a project since September 2022.
+
+:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-summary-report.png" alt-text="Screenshot of All Pipelines Outcome Summary Report.":::
+
+As shown in the following image, you can select any pipeline from the **Pipeline Name** drop-down menu, and the report changes to focus on the outcome summary for the selected pipeline.
+
+:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-summary-report-select-pipeline.png" alt-text="Screenshot of report that shows the outcome summary for the selected pipeline only.":::
+
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-An example is shown in the following image.
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report1.png)
-
-As shown in the above image, you can select any pipeline from the "Pipeline Name" drop-down at top right and the report will show the outcome summary for the selected pipeline only
-
-> [!div class="mx-imgBorder"] 
-> ![Report shows the outcome summary for the selected pipeline only.](media/odatapowerbi-pipelines/allpipelines-report2.png)
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Sample queries
+
+
+You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline outcome summary reports. 
+
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ### [Power BI query](#tab/powerbi/)
 
@@ -83,13 +89,13 @@ aggregate(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
- 
-- {organization} - Your organization name
-- {project} - Your team project name
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+[!INCLUDE [temp](includes/sample-query-substitutions.md)] 
+ 
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: **2022-09-01Z** represents September 1, 2022. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
@@ -103,12 +109,13 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -116,7 +123,7 @@ The following table describes each part of the query.
    `CompletedDate ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return pipeline runs for date greater than specified date
+   Return pipeline runs for date greater than the specified date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -124,7 +131,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -132,7 +139,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start `groupby()` clause/
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -140,7 +147,7 @@ The following table describes each part of the query.
    `(Pipeline/PipelineName),`
    :::column-end:::
    :::column span="1":::
-   Group the below result by Pipeline Name
+   Group data results by pipeline name.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -148,7 +155,7 @@ The following table describes each part of the query.
    `aggregate(`
    :::column-end:::
    :::column span="1":::
-   Start aggregate. For each Pipeline:
+   Start `aggregate` clause for each pipeline.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -156,15 +163,15 @@ The following table describes each part of the query.
    `$count as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of runs as TotalCount
+   Count the total number of runs as `TotalCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `SucceededCount with sum as SucceededCount ,`
+   `SucceededCount with sum as SucceededCount`.
    :::column-end:::
    :::column span="1":::
-   Count the number of successful runs as SucceededCount
+   Count the number of successful runs as `SucceededCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -172,7 +179,7 @@ The following table describes each part of the query.
    `FailedCount with sum as FailedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the number of failed runs as FailedCount
+   Count the number of failed runs as `FailedCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -180,7 +187,7 @@ The following table describes each part of the query.
    `PartiallySucceededCount with sum as PartiallySucceededCount,`
    :::column-end:::
    :::column span="1":::
-   Count the number of partially successful runs as PartiallySucceededCount
+   Count the number of partially successful runs as `PartiallySucceededCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -188,7 +195,7 @@ The following table describes each part of the query.
    `CanceledCount with sum as CanceledCount`
    :::column-end:::
    :::column span="1":::
-   Count the number of canceled runs as CanceledCount
+   Count the number of canceled runs as `CanceledCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -196,100 +203,64 @@ The following table describes each part of the query.
    `))`
    :::column-end:::
    :::column span="1":::
-   Close aggregate() and groupby()
+   Close `aggregate()` and `groupby()` clauses.
    :::column-end:::
 :::row-end:::
 
 
-[!INCLUDE [temp](includes/query-filters-pipelines.md)]
+[!INCLUDE [temp](includes/rename-query.md)]
 
-## Power BI transforms
 
-### Expand Pipeline column
+## Expand Pipeline column in Power Query Editor
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. Here in this example, such an entity is Pipeline.
+Prior to creating the report, expand the `Pipeline` column that returns records that may contain one or more fields.  
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Pipeline**.
+1. Close the **Advanced Editor**. 
+2. From the Power Query Editor, choose the `Pipeline` column expand button, ensure that `PipelineName` is selected, and then choose **OK**.  
 
-1. Choose the expand button
+	:::image type="content" source="media/pipeline-reports/expand-pipelines-column.png" alt-text="Screenshot of Pipelines column expand menu. ":::
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/allpipelines-expand1.png)
-    
-1. Select the checkbox "(Select All Columns)" to expand
+	The table now contains the expanded entity `Pipeline.PipelineName`.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/allpipelines-expand2.png)
+	:::image type="content" source="media/pipeline-reports/pipeline-pipeline-names.png" alt-text="Screenshot of Pipeline.PipelineName column. "::: 
 
-1. The table now contains the expanded entity **Pipeline.PipelineName**
+## Change column data type
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/allpipelines-expand3.png)
-    
+From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-### Change column type
+## (Optional) Rename column fields
 
-1. Change the type of column TotalCount to **Whole Number**.
+You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
+[!INCLUDE [temp](includes/close-apply.md)]
 
-### Rename fields and query, then Close & Apply
-
-When finished, you may choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
-
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
-  
-## Create the report
+## Create the Stacked Column Chart report
 
-Power BI shows you the fields you can report on. 
+1. In Power BI, under **Visualizations**, choose the **Stacked Column Chart** report. 
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+	:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-visualizations.png" alt-text="Screenshot of visualization fields selections for all pipeline runs report. ":::
+ 
+1. Add `Pipeline.PipelineName` or the renamed column `Pipeline Name` to **Axis**. 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Fields](media/odatapowerbi-pipelines/allpipelines-fields.png)
+1. Add the following fields to **Values** in the order indicated, and right-click each field and ensure **Sum** is selected.    
+	- `SucceededCount` 
+	- `FailedCount` 
+	- `CanceledCount`  
+	- `PartiallySucceededCount`.  
 
-For a simple report, do the following steps:
+1. To add a slicer to the report, deselect the report and select **Slicer** from the **Visualizations** pane.  
+	- Add `Pipeline.PipelineName` or the renamed column `Pipeline Name` to **Field**.  
+		:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-slicer.png" alt-text="Screenshot of Visualizations pane, Slicer, Pipeline Name added. ":::
 
-1. Select Power BI Visualization **Stacked Column Chart**. 
-1. Add the field "SucceededCount" to **Values**.
-    - Right-click "SucceededCount" field and ensure **Sum** is selected.
-1. Add the field "FailedCount" to **Values**.
-	  - Right-click "FailedCount" field and ensure **Sum** is selected.
-1. Add the field "CanceledCount" to **Values**.
-	  - Right-click "CanceledCount" field and ensure **Sum** is selected.
-1. Add the field "PartiallySucceededCount " to **Values**.
-    - Right-click "PartiallySucceededCount " field and ensure **Sum** is selected.
-1. Add the field "Pipeline.PipelineName" to **Axis**. 
-1. Click somewhere outside the stacked column chart and select Power BI Visualization **Slider** to add a slicer.
-1. Add the field "Pipeline.PipelineName" to **Field**.
-1. Select the down-arrow of slicer to select the option Dropdown instead of List.
+	- To change the slicer from a list to a dropdown menu option, select the **Format your visual** paint-brush icon from the **Visualizations** pane, and select the **Dropdown** option instead of **List**.
 
-    
-Your report should look like this. 
+		:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-slicer-dropdown-option.png" alt-text="Screenshot of Visualizations pane, Slicer, settings options, Dropdown selected. ":::
 
-> [!div class="mx-imgBorder"] 
-> ![Finished sample - Pipelines Outcome Summary - Report.](media/odatapowerbi-pipelines/allpipelines-report1.png)
+The report appears as follows. 
 
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+:::image type="content" source="media/pipeline-reports/all-pipelines-outcome-summary-report.png" alt-text="Screenshot of sample All Pipelines Outcome Summary Report.":::
+ 
 
 ## Related articles
 

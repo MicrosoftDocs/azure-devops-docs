@@ -4,17 +4,17 @@ titleSuffix: Azure DevOps
 description: Learn about OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps.
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/28/2021
+ms.date: 08/03/2022
 ---
 
 # About dashboards, charts, reports, & widgets
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes.  Each team can tailor their dashboards to share information and monitor their progress.  
 
@@ -23,66 +23,188 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 
-## Key concepts
+## Supported capabilities, permissions, and access
 
-::: moniker range="azure-devops"
+Access to Azure DevOps web portal features are managed through access levels assigned to users. 
+
+### Web portal data views and reports
+
+The following features provide support for viewing Azure DevOps data through the web portal:
 
 - **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
 - **Charts** are query-based status or trend charts derived from a work item query or test results.
 - **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 - **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.  
-- **Power BI reports** allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
 
-::: moniker-end  
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="azure-devops-2020"
+### Power BI reports 
 
-- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-- **Charts** are query-based status or trend charts derived from a work item query or test results. 
-- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics. 
-- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- **Reports**
-	- **Power BI reports**: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
-	- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+The following features provide support for viewing Azure DevOps data using Power BI:
 
-> [!NOTE]  
-> OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
+- **Analytics views** provide a simplified way to specify the filter criteria for a Power BI report based on Analytics data for Azure Boards data. To learn more, see [What are Analytics views?](../powerbi/what-are-analytics-views.md).
+- **Power BI reports** allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data. For on-premises Azure DevOps environments, project collections must be configured to support the Inherited process.
 
-::: moniker-end  
-
-::: moniker range="azure-devops-2019"
-
-- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-- **Charts** are query-based status or trend charts derived from a work item query or test results. 
-- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. 
-- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- **Reports**
-	- **Power BI reports**: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
-	- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
-
-::: moniker-end  
-
-::: moniker range=">=tfs-2015 <= tfs-2018"
-
-- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-- **Charts** are query-based status or trend charts derived from a work item query or test results. 
-- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD). 
-- **Reports** correspond to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
-
-::: moniker-end  
-
-::: moniker range="tfs-2013"
-- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts that you pin to the dashboard.
-- **Charts** are query-based status or trend charts derived from a work item query or test results. 
-- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD). 
-- **Reports** correspond to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
-
+	> [!NOTE]  
+	> OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
 ::: moniker-end  
 
 
+::: moniker range="< azure-devops-2022"
 
-::: moniker range=">= tfs-2015"
+### SQL Server reports 
+
+SQL Server Reporting is the legacy reporting solution available with Azure DevOps Server 2020 and earlier versions. The following features provide support for viewing Azure DevOps data using SQL Server Reports and SQL Server Analysis Services.  
+
+::: moniker-end  
+
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
+- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
+::: moniker-end  
+ 
+::: moniker range="tfs-2018"
+- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
+- **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
+::: moniker-end   
+
+### Supported features and access level 
+
+Users granted **Stakeholder** access have limited access to select features as indicated in the following table. To learn more, see [About access levels](../../organizations/security/access-levels.md). In addition to access levels, select features require permissions to execute.  
+
+> [!NOTE]
+> Data displayed within a chart or widget is subject to permissions granted to the signed in user. To learn more, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](faqs.yml).
+
+:::row:::
+   :::column span="3":::
+      **Supported features and tasks**
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+      **Basic**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      **Dashboards** (View) 
+   :::column-end:::
+   :::column span="1":::
+       ✔️  
+   :::column-end:::
+   :::column span="1":::
+       ✔️  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Dashboards** (Create and edit)
+   :::column-end:::
+   :::column span="1":::
+        
+   :::column-end:::
+   :::column span="1":::
+       ✔️  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Charts**, **Widgets** (View)
+   :::column-end:::
+   :::column span="1":::
+       ✔️  
+   :::column-end:::
+   :::column span="1":::
+       ✔️  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Charts**, **Widgets** (Add and configure)
+   :::column-end:::
+   :::column span="1":::
+        
+   :::column-end:::
+   :::column span="1":::
+       ✔️  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **In-context reports**
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="3":::
+      **Analytic views**
+   :::column-end:::
+   :::column span="1":::
+        
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Power BI reports**
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      **SQL Server reports**
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+
+### Default permissions
+
+**Dashboards**
+
+::: moniker range="azure-devops"
+You can set [individual dashboard permissions](dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards.  
+::: moniker-end
+
+::: moniker range="< azure-devops"
+You set [dashboard permissions at the team level](dashboard-permissions.md) for team dashboards. 
+::: moniker-end
+
+[!INCLUDE [temp](../../organizations/security/includes/report.md)]
+ 
+
+::: moniker range=">= azure-devops-2019" 
+
+**Power BI Integration and Analytics views**
+
+You set [permissions](../powerbi/analytics-security.md) for the service at the project level, and for shared **Analytics views** at the object level.  
+
+[!INCLUDE [temp](../../organizations/security/includes/analytics.md)]
+
+::: moniker-end
+
 
 ## Configurable dashboards
 
@@ -102,9 +224,6 @@ Easily add and rearrange widgets on the dashboard to show recent changes made to
 <em>Select a box below to open the corresponding article.</em> 
 
 [![Add dashboard](media/gs-add-dashboard.png)](dashboards.md)[![Add widget](media/gs-add-widget.png)](add-widget-to-dashboard.md) 
-
-::: moniker-end
-
 
 <a id="monitor-progress">  </a>
 
@@ -127,7 +246,7 @@ For details, see:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Active bugs](media/gs-monitor-charts-active-bugs.png)   
 
@@ -155,19 +274,11 @@ For details, see:
   
 ![Web Team test plan is a chart that shows counts of test in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
 
- 
-
-::: moniker range=">= tfs-2015"
-
 ## Widgets 
 
 You add widgets to a dashboard to display a chart, information, or set of links. Most widgets are configurable. For a description of each supported widget for your platform and version, see the [Widget catalog](widget-catalog.md). Here are the widgets that support the indicated service. 
 
-::: moniker-end 
-
 [!INCLUDE [temp](../includes/widgets-oob.md)]
-
-::: moniker range="tfs-2015"
 
 ---
 :::row:::
@@ -201,15 +312,10 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 :::row-end:::
 ---
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
 ### Sprint chart widgets 
 
 ![Sprint capacity widget](media/widget-sprint-capacity.png)  ![Sprint burndown widget](media/widget-sprint-burndown.png)   
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -227,8 +333,6 @@ There's no chart or widget that tracks changes to sprint scope. However, you can
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-
 ### Monitor code activity, build progress and deployment status
 
 With the code tile widgets, you can monitor the activity occurring within a repository or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
@@ -237,9 +341,6 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ![Code tile widget](media/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Pull request widget](media/widget-catalog-pull-request.png)  
 ![Build history widget](media/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;&nbsp;![Deployment status widget](media/widget-deployment-status.png)  
-
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -273,10 +374,6 @@ To learn more, see the following articles:
 - [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)  
 
 ::: moniker-end
-
- 
-
-
 
 <a id="work-tracking-analytics" />
 
@@ -452,22 +549,17 @@ You can add data to support reporting requirements by [adding a custom field](..
 You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 
 ## Marketplace widgets and extensibility
 
 In addition to the widgets available in the widget catalog, you may find interesting widgets in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
 Or, you can [create your own widget using the REST API](../../extend/develop/add-dashboard-widget.md). 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ## Next steps
 
@@ -476,15 +568,14 @@ Or, you can [create your own widget using the REST API](../../extend/develop/add
 > or
 > [Review available widgets](widget-catalog.md) 
 
-::: moniker-end
-
-
 
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
+- [Best practices for "light-weight" Agile project management using Azure Boards](../../boards/best-practices-agile-project-management.md)
 - [Cross-service integration and collaboration overview](../../cross-service/cross-service-overview.md)
 
-[excel-adhoc-query-report]: ../create-status-and-trend-excel-reports.md
+[excel-adhoc-query-report]: ../admin/create-status-and-trend-excel-reports.md
 [add-a-team]: ../../organizations/settings/add-teams.md
 [team-assets]: ../../organizations/settings/manage-teams.md
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members

@@ -3,13 +3,16 @@ title: Build a data pipeline by using Azure Pipelines
 description: Learn how to use an Azure CI/CD data pipeline to ingest, process, and share data.
 ms.author: jukullam
 author: JuliaKM
-ms.technology: devops-cicd-apps
-ms.date: 10/28/2021
-ms.topic: conceptual
+ms.subservice: azure-devops-pipelines-apps
+ms.custom: devx-track-azurecli, devx-track-arm-template
+ms.date: 01/25/2023
+ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
 
 # Build a data pipeline by using Azure Data Factory, DevOps, and machine learning
+
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 Get started building a data pipeline with data ingestion, data transformation, and model training. 
 
@@ -131,9 +134,9 @@ To make commands easier to run, start by selecting a default region. After you s
     * Version: `V2`
     * Resource group: `data-pipeline-cicd-rg`
     * Location: Your closest location
-    * Clear the selection for **Enable GIT**.
+    * Clear the selection for **Enable Git**.
 
-   1. Add the Azure Data Factory extension. 
+   1. Add the [Azure Data Factory extension](/cli/azure/datafactory). 
    
         ```azurecli
        az extension add --name datafactory

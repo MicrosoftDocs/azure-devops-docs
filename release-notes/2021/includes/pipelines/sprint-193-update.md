@@ -1,7 +1,6 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 09/28/2021
 ms.topic: include
 ---
@@ -16,6 +15,6 @@ The macOS-11 image has a different set of software than macOS-10.15. If you use 
 
 ### Updated schedule for removal of Ubuntu 16.04 image on Microsoft-hosted agents
 
-In the [last release notes](https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-192-update#removal-of-ubuntu-1604-image-on-microsoft-hosted-agents), we communicated a schedule for the brownout of pipelines using Ubuntu 16.04 image and the eventual removal of this image. According to that schedule, we ran a first brownout on September 7th. Since `ubuntu-latest` image label in Azure Pipelines still pointed to `ubuntu-16.04`, the brownout unfortunately affected customers that did not explicitly set a pool in their pipeline or those that used ubuntu-latest. As a result, we had to halt that brownout. We have been working on addressing this issue since then.
+In the [last release notes](/azure/devops/release-notes/2021/sprint-192-update#removal-of-ubuntu-1604-image-on-microsoft-hosted-agents), we communicated a schedule for the brownout of pipelines using Ubuntu 16.04 image and the eventual removal of this image. According to that schedule, we ran a first brownout on September 7th. Since `ubuntu-latest` image label in Azure Pipelines still pointed to `ubuntu-16.04`, the brownout unfortunately affected customers that did not explicitly set a pool in their pipeline or those that used ubuntu-latest. As a result, we had to halt that brownout. We have been working on addressing this issue since then.
 
 The second brownout is now scheduled for October 11, 2021 4:00pm UTC – 10:00pm UTC. The removal of the image is planned for October 18th. Please note the updated schedule.

@@ -1,18 +1,19 @@
 ---
 title: Request stakeholder feedback
-description: Request stakeholder feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
+description: Request stakeholder feedback in Azure DevOps using the Exploratory Testing browser extension
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
@@ -20,7 +21,7 @@ monikerRange: '>= tfs-2017'
 
 ## Request feedback from stakeholders
 
-Request feedback from stakeholders directly from an Azure DevOps or TFS work item. 
+Request feedback from stakeholders directly from an Azure DevOps work item. 
 
 1. Open the work item form for the user story or feature for which
    you want to request feedback.
@@ -37,10 +38,13 @@ Request feedback from stakeholders directly from an Azure DevOps or TFS work ite
 
 1. Choose **Send** to generate emails to all the selected stakeholders.
 
+> [!IMPORTANT]
+> The **Request feedback** shortcut menu is unavailable in [New Boards Hub](https://aka.ms/newboardshub). However, there are alternative ways to request feedback, such as through email and chat, in addition to utilizing the [Test & Feedback extension](./voluntary-stakeholder-feedback.md).
+
 > [!NOTE]
 > Teams can request feedback from other team members, such as users having Basic access. 
 > Just add their names in the feedback request form so that a **Request feedback** email is sent to them.
-> Also see [Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
+> Also see [Can users with Basic access respond to feedback requests](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
 ## Related articles
 

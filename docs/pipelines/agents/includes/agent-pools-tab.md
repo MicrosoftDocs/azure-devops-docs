@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
@@ -13,7 +13,7 @@ ms.date: 08/07/2020
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 [!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-server-2020.md)]
 
@@ -31,14 +31,3 @@ ms.date: 08/07/2020
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-tfs-2017.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-tfs-2015.md)]
-
-::: moniker-end

@@ -1,20 +1,20 @@
 ---
-title: Learn how to manage portfolios and gain visibility across teams  
+title: Use Agile tools to use portfolios, dashboards, and delivery plans in Azure Boards   
 titleSuffix: Azure Boards
-description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards and Azure DevOps.
 ms.custom: seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2018
+ms.date: 04/01/2022
 ---
 
-# Plans (Agile at scale) 
+# Plan for Agile at scale 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your organization grows, you want your tools to scale to support your growing business needs. Azure Boards tools scale primarily by supporting the addition of teams. Each team provides configurable tools that allow teams to focus on their set of work. 
 
@@ -34,25 +34,18 @@ Enterprise project managers often have a portfolio of projects that they manage.
 To learn more, see [Manage portfolios](portfolio-management.md).
 
 
-::: moniker range=">= tfs-2017" 
-
 ## Delivery plans 
 
 Delivery plans provide visibility into features under development by several teams across several sprints. With Delivery Plans, portfolio managers can review the schedule of stories or features their teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
 To learn more, see [Review delivery plans](review-team-plans.md).
 
-::: moniker-end
-
-
-::: moniker range=">= tfs-2015" 
 ## Team dashboards
 
-Each team can construct a number of dashboards to track and monitor their progress. In addition, portfolio managers can create dashboards to monitor progress across several teams. 
+Each team can construct several dashboards to track and monitor their progress. Also, portfolio managers can create dashboards to monitor progress across several teams. 
 
-To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json). 
+To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json). 
 
-::: moniker-end
 
 
 ## Related articles

@@ -3,15 +3,15 @@ title: Build TFVC repositories
 description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.date: 04/14/2020
-monikerRange: '>= tfs-2015'
+ms.date: 01/25/2023
+monikerRange: '<= azure-devops'
 ---
 
 # Build TFVC repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -55,9 +55,6 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 > Cleaning is not relevant if you are using a [Microsoft-hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
-#### Azure Pipelines, TFS 2018, TFS 2017.2
 
 If you want to clean the repo, then select **true**, and then select one of the following options:
 
@@ -68,36 +65,6 @@ If you want to clean the repo, then select **true**, and then select one of the 
 * **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`.
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-#### TFS 2017 RTM, TFS 2015.4
-
-If you select **True** then the build pipeline performs an undo of any changes and scorches the workspace.
-
-[!INCLUDE [temp](includes/build-clean-variable.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-#### TFS 2015 RTM
-
-[//]: # (TODO: confirm this is correct for TFVC; clarify folder)
-
-Select **true** to delete the repository folder.
-
-### Label sources
-
-[!INCLUDE [include](includes/label-sources.md)]
-
-The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ## CI triggers
 
@@ -137,6 +104,9 @@ When developers try to check-in, they are prompted to build their changes.
 
 The system then creates a shelveset and builds it.
 
+> [!NOTE]
+> If you receive an error such as `The shelveset _Build_95;Build\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in`, check the [Limit job authorization scope to current project for non-release pipelines](../process/access-tokens.md#job-authorization-scope) setting and ensure it is not enabled.
+
 For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build pipeline](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 ### Option to run CI builds
@@ -173,4 +143,3 @@ Scorch is a TFVC power tool that ensures source control on the server and the lo
 
 <!-- ENDSECTION -->
 
-::: moniker-end

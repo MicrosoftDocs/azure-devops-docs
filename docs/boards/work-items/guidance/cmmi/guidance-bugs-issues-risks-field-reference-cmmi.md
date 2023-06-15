@@ -1,23 +1,28 @@
 ---
-title: Bugs, issues, & risks field reference (CMMI)
+title: Track bugs, issues, & risks in Azure Boards
 titleSuffix: Azure Boards
-description: Tracks the information with regards to bugs, issues, and risks  
-ms.technology: devops-agile
+description: Learn how to track information about to bugs, issues, and risks in Azure Boards.
+ms.service: azure-devops-boards 
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley 
 monikerRange: '<= azure-devops'
 ms.date: 01/20/2017
 ---
 
-# Bugs, issues, and risks field reference (CMMI)
+# Bugs, issues, and risks in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 The following fields track information about bugs, issues, and risks. These work item types are defined within the process template for the [CMMI process](../cmmi-process.md).  
   
-##  <a name="bugs"></a> Bug tracking fields  
- These fields are neither reported nor indexed.  
+<a id="fields" />
+<a name="bugs"></a> 
+
+## Bug tracking fields  
+
+These fields are neither reported nor indexed.  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Data type**|  
@@ -27,9 +32,12 @@ The following fields track information about bugs, issues, and risks. These work
 > |**Found in Environment**|The software setup and configuration where the bug was found.<br/>Reference name=Microsoft.VSTS.CMMI.FoundInEnvironment|String|  
 > |**Root Cause**|The cause of the error. You can specify one of the following values:<br /><br /-   **Coding Error**<br/>-   **Design Error**<br/>-   **Specification Error**<br/>-   **Communication Error**<br/>-   **Unknown**<br/><br/>To change the menu selection, see [Customize a picklist](../../../../reference/add-modify-field.md).<br/>Reference name=Microsoft.VSTS.CMMI.RootCause|String|  
 > |**How Found**|How the bug was found. For example, a bug might have been found during a customer review or through ad hoc testing.<br/>Reference name=Microsoft.VSTS.CMMI.HowFound|String|  
-  
-##  <a name="issues"></a> Issue tracking fields  
- These fields are neither reported nor indexed.  
+
+<a name="issues"></a> 
+
+## Issue tracking fields  
+
+These fields are neither reported nor indexed.  
   
 |**Field name**|**Description**|**Data type**| 
 |--------------------|---------------------|-------------------------|  
@@ -37,9 +45,12 @@ The following fields track information about bugs, issues, and risks. These work
 |**Corrective Action Actual Resolution**|What the team actually did to correct the issue.<br/>Reference name=Microsoft.VSTS.CMMI.CorrectiveActionActualResolution|HTML|  
 |**Corrective Action Plan**|The proposed corrective action on which the team has agreed.<br/>Reference name=Microsoft.VSTS.CMMI.CorrectiveActionPlan|HTML|
 |**Target Resolve Date**|The date when the issue becomes critical and starts to affect the critical path of the project plan.<br/>Reference name=Microsoft.VSTS.CMMI.TargetResolveDate|DateTime|  
-  
-##  <a name="risks"></a> Risk tracking fields  
- These fields are neither reported nor indexed.  
+
+<a name="risks"></a> 
+
+## Risk tracking fields  
+
+These fields are neither reported nor indexed.  
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  

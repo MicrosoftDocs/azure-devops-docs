@@ -2,62 +2,61 @@
 title: Pipeline test duration trend sample Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a test duration trend Power BI report for a given pipeline in the project.
-ms.prod: devops
-ms.technology: devops-analytics
-ms.reviewer: ravishan
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
 ms.manager: mijacobs
-ms.author: kaghai
-ms.custom: powerbisample
-author: KathrynEE
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops'  
-ms.date: 10/13/2021
+monikerRange: '>= azure-devops-2020'  
+ms.date: 01/25/2023
 ---
 
 # Test duration trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to create a report that shows the day wise trend of the average time taken to execute a test for a selected time range.
+Test duration trend reports, similar to the one shown in the following image, provide insight into the day-wise trend of the average time taken to execute a test for a selected time range. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+
+:::image type="content" source="media/pipeline-test-reports/test-duration-trend-line-chart-report.png" alt-text="Screenshot of Test Duration Trend Line chart report.":::
+ 
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-An example is shown in the following image.
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-duration-trend-report1.png)
-
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
 
 ## Sample queries
+
+You can use the following queries of the `TestResultsDaily` entity set to create different but similar test duration reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.  
+
+[!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
+
+Use the following queries to view the test duration trend report for a pipeline with a **Build** workflow. 
 
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
-let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
-$apply=filter("
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build' "
-        &") "
-            &"/groupby( "
-                &"(TestSK, Test/TestName, Date/Date), "
-                &"aggregate( "
-            &"ResultCount with sum as TotalCount, "
-                &"ResultDurationSeconds with sum as TotalDuration "
-            &")) "
-        &"/compute( "
-    &"TotalDuration div TotalCount as AvgDuration "
-    &") "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
-in
-    Source
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter(
+	Pipeline/PipelineName eq '{pipelineName}'
+	And Date/Date ge {startdate}
+	And Workflow eq 'Build'
+	)
+/groupby(
+	(TestSK, Test/TestName, Date/Date), 
+	aggregate(
+	  ResultCount with sum as TotalCount,
+	  ResultDurationSeconds with sum as TotalDuration
+	))
+/compute(
+	TotalDuration div TotalCount as AvgDuration
+	)
 ```
 
 #### [OData query](#tab/odata/)
@@ -72,26 +71,31 @@ $apply=filter(
 	And Workflow eq 'Build'
 	)
 /groupby(
-	(TestSK, Test/TestName, Date/Date), 
+	(TestSK, Test/TestName), 
 	aggregate(
 	ResultCount with sum as TotalCount,
 	ResultDurationSeconds with sum as TotalDuration
 	))
 /compute(
-	TotalDuration div TotalCount as AvgDuration
-	)
+TotalDuration div TotalCount as AvgDuration)
 ```
 
 ***
+ 
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
 - `{organization}` - Your organization name
 - `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
-- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents September 1, 2022. Don't enclose in quotes or brackets and use two digits for both, month and date.
+
+
+> [!TIP]  
+> Depending on the number of tests added to a pipeline, the data returned can be significant. We recommend that you use a `{startdate}` for a few days to gauge the amount of data returned and adjust accordingly.
+
 
 ### Query breakdown
 
@@ -105,12 +109,13 @@ The following table describes each part of the query.
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -118,7 +123,7 @@ The following table describes each part of the query.
    `Pipeline/PipelineName eq '{pipelineName}'`
    :::column-end:::
    :::column span="1":::
-   Return test runs for the specified pipeline
+   Return test runs for the named pipeline.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -126,7 +131,7 @@ The following table describes each part of the query.
    `And Date/Date ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return test runs on or after the specified date
+   Return test runs on or after the specified date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -134,7 +139,7 @@ The following table describes each part of the query.
    `and Workflow eq 'Build'`
    :::column-end:::
    :::column span="1":::
-   Return test runs for 'Build' workflow
+   Return test runs for a `Build` workflow.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -142,7 +147,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -150,7 +155,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +163,7 @@ The following table describes each part of the query.
    `(TestSK, Test/TestName, Date/Date),`
    :::column-end:::
    :::column span="1":::
-   Group by the test Name and date of execution of test
+   Group by test, test name, and run date.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -166,7 +171,7 @@ The following table describes each part of the query.
    `aggregate(`
    :::column-end:::
    :::column span="1":::
-   Start aggregate. For all the test runs matching the above filter criteria:
+   Start `aggregate` clause to sum different test run outcomes matching the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -174,7 +179,7 @@ The following table describes each part of the query.
    `ResultCount with sum as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of test runs as TotalCount
+   Count the total number of test runs as `TotalCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -182,7 +187,7 @@ The following table describes each part of the query.
    `ResultDurationSeconds with sum as TotalDuration`
    :::column-end:::
    :::column span="1":::
-   Sum the total duration of all the runs as TotalDuration.
+   Sum the total duration of all the runs as `TotalDuration`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -190,7 +195,7 @@ The following table describes each part of the query.
    `))`
    :::column-end:::
    :::column span="1":::
-   Close aggregate() and groupby()
+   Close `aggregate()` and `groupby()` clauses.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -198,7 +203,7 @@ The following table describes each part of the query.
    `/compute(`
    :::column-end:::
    :::column span="1":::
-   Start compute()
+   Start `compute()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -206,7 +211,7 @@ The following table describes each part of the query.
    `TotalDuration div TotalCount as AvgDuration`
    :::column-end:::
    :::column span="1":::
-   For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs.
+   For all the tests, calculate the average duration by dividing the total duration by total number of runs.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -214,101 +219,51 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close compute()
+   Close `compute()` clause.
    :::column-end:::
 :::row-end:::
 
+ 
+ 
+[!INCLUDE [temp](includes/rename-query.md)]
 
-[!INCLUDE [temp](includes/query-filters-test.md)]
+## Expand the Test and Date columns in Power BI
 
-## Power BI transforms
+Expanding a column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are Test and Date.
+1. Expand the `Test` column to show the expanded entities `TestSK` and `Test.TestName`.  
+2. Expand the `Date` column to show the expanded entity `Date.Date`.  
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Test** and **Date**.
+## Change column data type
 
-### Expand the Test and Date column
+1. From the Power Query Editor, select the `TotalCount` column; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
 
-1. Choose the expand button
+1. Select the `TotalDuration` and `AvgDuration` columns; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/test-duration-trend-expand1.png)
-    
-1. Select the checkbox "(Select All Columns)" to expand
+To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/test-duration-trend-expand2.png)
-
-1. The table now contains the expanded entity **Test.TestName**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/test-duration-trend-expand3.png)
-    
-
-### Change column type
-
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. You can change the column type as shown.
-
-1. Change the type of column **TotalCount** to **Whole Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change Total Count column type.](media/odata-powerbi-test-analytics/test-duration-changetype1.png)
-    
-1. Change the type of column **TotalDuration** and **AvgDuration** to **Decimal Number**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change Total Duration column type.](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
-
-
-### Rename fields and query, then Close & Apply
-
-When finished, you may choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/test-duration-trend-rename1.png)
-
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
-
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+[!INCLUDE [temp](includes/close-apply.md)]
+ 
   
+## Create the Line chart report
+ 
+1. In Power BI, under **Visualizations**, choose **Line chart** and drag and drop the fields onto the **Columns** area. 
+
+	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-trend-line-chart.png" alt-text="Screenshot of visualization fields selections for Test Duration Trend Line chart report. ":::
+
+1. Add `Date.Date` to the **X-axis**, right-click the field and select **Date.Date**, rather than **Date.Hierarchy**.
+
+1. Add **AvgDuration** to the **Y-axis**.
+
+Your report should look similar to the following image. 
+
+:::image type="content" source="media/pipeline-test-reports/test-duration-trend-line-chart-report.png" alt-text="Screenshot of Sample Test Duration Trend Line chart report.":::
   
-## Create the report
 
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/test-duration-trend-filed.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Line Chart**.
-1. Add the field "Date.Date" to **Axis**.
-    - Right-click "Date.Date" and select "Date.Date", rather than Date Hierarchy.
-1. Add the field "AvgDuration" to **Values**.
-1. Add Power Visualization **Slicer**.
-1. Add the field "Test.TestName" to **Field** of Slicer.
-    
-Your report should look like this. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-duration-trend-report1.png)
-
-
-## Full list of Pipelines sample reports 
-
-[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
+
+ 

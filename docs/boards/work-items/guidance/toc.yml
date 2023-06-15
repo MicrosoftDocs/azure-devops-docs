@@ -1,0 +1,91 @@
+- name: About default processes
+  displayName: Default, process, Basic, Agile, Scrum, CMMI
+  href: choose-process.md
+- name: Agile culture
+  displayName: agile transformation, ship, DevOps
+  href: ../../plans/agile-culture.md
+- name: Agile process guidance
+  href: agile-process.md
+  displayname: MSF
+- name: Agile workflow
+  displayName: discussion, map stories, track progress, kanban, taskboards
+  href: agile-process-workflow.md
+- name: Scrum process guidance
+  displayName: work item, azure boards, user stories, item types, links
+  href: scrum-process.md
+- name: Scrum workflow
+  displayName: PBI, WITs, capture comments, map PBIs
+  href: scrum-process-workflow.md
+- name: CMMI process 
+  items:
+  - name: CMMI process guidance
+    href: cmmi-process.md
+    displayname: Capability Maturity Model Integration
+  - name: CMMI workflow
+    href: cmmi-process-workflow.md
+    displayname: requirements
+  - name: CMMI background
+    displayName: Capability Maturity Model Integration, Capability Maturity Model, CMM
+    href: cmmi/guidance-background-to-cmmi.md
+  - name: CMMI process (Archived articles)
+    items:
+    - name: CMMI process-specific fields
+      items:
+      - name: Change request fields
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi
+      - name: Requirements fields
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi
+      - name: Review meeting fields
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi
+    - name: Manage projects
+      items:
+      - name: Project management process
+        displayName: Iterative development, agile software, waterfall, extreme programming, stakeholder
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management 
+      - name: Project activities
+        displayName: requirements models, storyboards, agile software
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities
+      - name: Project inception
+        displayName: methodology, prioritize, development costs, scope-driven, date-driven
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception
+      - name: Plan a project
+        displayName: scope, schedule, budget, modeling requirements, requirements
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi
+      - name: Manage change
+        displayName: change request, CMMI
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change
+      - name: Manage risk
+        displayName: SCAMPI, CMMI, risk work item, risk
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks
+      - name: Iteration activities
+        displayName: task execution, tests, builds
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities
+      - name: Plan an iteration
+        displayName: requirements, work load, burndown
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi
+      - name: Manage issues
+        displayName: SCAMPI, issues, action plan
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi
+    - name: Engineering management
+      items:
+      - name: Process overview
+        displayName: MSF, engineering section
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering
+      - name: Develop requirements
+        displayName: vision statement, scenarios
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements
+      - name: Arrange requirements into a product plan
+        displayName: customer requirements, features, decomposition
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan
+      - name: Create a solution architecture
+        displayName: domain model, candidate group
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture
+      - name: Implement development tasks
+        displayName: estimate, design review, complexity
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks
+      - name: Build a product
+        displayName: CMMI, SCAMPI
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product
+      - name: Track bugs
+        displayName: bugs, triage, unit tests
+        href: /previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs

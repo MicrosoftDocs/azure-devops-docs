@@ -1,0 +1,176 @@
+### YamlMime:FAQ
+metadata:
+  title: FAQs - Azure dashboards and charts 
+  description: Answers to frequently asked questions about Azure DevOps dashboards and charts
+  titleSuffix: Azure DevOps
+  ms.subservice: azure-devops-analytics
+  ms.author: chcomley
+  author: chcomley
+  ms.topic: faq
+  monikerRange: '<= azure-devops'
+  "recommendations": "true"
+  ms.date: 04/04/2022
+
+title: FAQs on Azure DevOps dashboards, charts, and reports 
+
+ 
+summary: | 
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]   
+
+  Find answers to frequently asked questions when using Azure DevOps dashboards, charts, and reports.  
+
+sections:
+  - name: Access and permissions 
+     
+    questions: 
+
+      - question: Who can create and view dashboards? 
+        answer: |
+          All members of an Azure DevOps project can view dashboards. Only members with **Basic** access or greater can create and edit dashboards. For details on managing dashboard permissions,  see [Set dashboard permissions](dashboard-permissions.md).  
+
+      - question: Can I restrict who can view my dashboards? 
+        answer: |
+          **Yes**. From the user interface, you can't set read permissions on a dashboard. However, using permission management command-line tools, you can set more granular permissions, such as `Read`, `Create`, and `MaterializeDashboard` permissions. To learn more, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
+
+      - question: Can I share a dashboard with a non-project member? 
+        answer: |
+          **No**. Only users who are valid project members can view dashboards. They must sign in to the web portal for a project to view a dashboard.  
+
+
+      - question: Are there restrictions on what charts or data project members can view in a dashboard? 
+        answer: |
+          Dashboard charts and widgets contain data that is subject to their own permissions and access levels. Project members with **Basic** access or greater can view dashboard charts and reports if they have the necessary permissions, most of which are granted by default. Members granted **Stakeholder** access can't view any code-related charts or reports. 
+
+          In general, if users aren't granted the following permissions, they won't be able to view the data for the corresponding chart or widget: 
+          ::: moniker range=">= azure-devops-2019"
+          - **View work items in this node** (Area Path permission): Required to view queries and work items displayed in a query or dashboard chart 
+          - **Read** (query permission): Required to view query-based charts and widgets 
+          - **View analytics** (project-level permission): Required to view Analytics data in chart widgets and built-in reports
+          - **Read** (query permission): Required to view query-based charts 
+          - **Read** (Git or TFVC repository permission): Required to view code tile charts 
+          - **View build pipeline, View builds** (build object-level permissions): Required to view build pipeline data 
+          - **View release pipeline, View releases** (release object-level permission): Required to view release pipeline data
+          - **View test runs** (project-level permission): Required to view rest run data 
+          ::: moniker-end
+          ::: moniker range="< azure-devops-2019"
+          - **View work items in this node** (Area Path permission): Required to view queries and work items displayed in a query or dashboard chart 
+          - **View work items in this node** (Area Path permission): Required to view queries and work items displayed in a query or dashboard chart 
+          - **Read** (query permission): Required to view query-based charts 
+          - **Read** (Git or TFVC repository permission): Required to view code tile charts 
+          - **View build pipeline, View builds** (build object-level permissions): Required to view build pipeline data 
+          - **View release pipeline, View releases** (release object-level permission): Required to view release pipeline data
+          - **View test runs** (project-level permission): Required to view rest run data 
+          ::: moniker-end
+
+          > [!NOTE]
+          > The ability for a project member to view query results from a query  or dashboard can be impacted by membership within another group. For example, if a project member belongs to two or more groups&mdash;and one of the groups has lesser permissions than the other&mdash;then the lesser permissions apply. For example, if the group is a member of a **Readers** group, which may have **View** permissions denied, then they wouldn’t be able to view queries with work items where they didn’t have view permissions.
+
+          For an overview of default permissions, see [Default permissions quick reference](../../organizations/security/permissions-access.md).
+
+  - name: General features 
+    questions:
+
+      - question: Can I create a private dashboard?  
+        answer: |
+          **No**. You can only create a dashboard and set permissions on the dashboard. To limit who can view the dashboard, you can use a permission management command-line tool. To learn more, see [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
+
+      - question: I added a widget but it isn't displaying any data, what's going on? 
+        answer: |
+         For Azure DevOps Server 2019 and later versions, a widget won't display data if the corresponding Azure DevOps service is disabled for a project. Check that the associated service is enabled and refresh the dashboard. To learn how, see [Turn a service on or off](copy-dashboard.md). 
+
+      - question: Can I copy a dashboard? 
+        answer: |
+          ::: moniker range=">= azure-devops-2022"
+          **Yes**. You can copy a project or team dashboard to another dashboard, project or team. To learn how, see [Copy a dashboard](copy-dashboard.md). If you copy a dashboard to a team dashboard, you must be a member of the team to edit it. Also, when you copy a dashboard with widgets that reference queries, you must choose a **Shared Queries** folder where you have permissions to contribute.
+          ::: moniker-end
+          ::: moniker range="< azure-devops-2022"
+          **No**. This feature is currently available for Azure DevOps Services only at this time. It should be available in later versions of Azure DevOps Server in the future.      
+          ::: moniker-end
+
+      - question: Can I create a dashboard template? 
+        answer: |
+          ::: moniker range="azure-devops"
+          **No**. This isn't a supported feature. However, you can create a dashboard similar to a template and then copy it to support one or more teams. To learn how, see [Copy a dashboard](copy-dashboard.md). 
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          **No**. This isn't a supported feature.      
+          ::: moniker-end
+
+      - question: Can I copy a dashboard widget? 
+        answer: |
+          **Yes**. You can copy or add a widget configured on one dashboard to another dashboard. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). 
+
+      - question: Can I copy a query chart? 
+        answer: |
+          ::: moniker range="azure-devops"
+          **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). Also, when you copy a dashboard, it copies any query charts added to the dashboard and configures them for the team you select. This essentially adds new queries and configures the charts. To learn more, see [Copy a dashboard](copy-dashboard.md). 
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget).  
+          ::: moniker-end
+
+      - question: Can I interact with a dashboard widget? 
+        answer: |
+          **Yes**. Most dashboard widgets are interactive. Click within the widget and either a new tab or the current tab will display with more details. The specifics of interaction depend on the widget. For example, here are a few ways you can interact with a dashboard widget:  
+          - **Deployment Status**:This widget provides links to the various deployments defined for a release.
+          - **Query Results**: Click a work item to open, update, and save the work item within the dashboard.   
+          - **Query Tile**: Click the query tile and the current tab opens to the query referenced by the widget. 
+          - **Release Pipeline Overview**: This widget provides links that open to the release pipelines and stages. 
+          - **Sprint overview**: Click within the widget and the current tab opens to the team backlog. 
+          - **Team Velocity**: Click on a bar within the velocity chart and a tab opens to the query containing the work item IDs for the data referenced by the bar. 
+
+  - name: Project management and work tracking data 
+    questions:
+
+      - question: Can I create a query chart from a direct links or tree query? 
+        answer: | 
+          **No**.  All query-based charts require configuration of flat-list queries. To learn more, see [Track progress with status and trend query-based charts](charts.md).   
+
+      - question: How do I view project dependencies? 
+        answer: | 
+          The best way to view work item dependencies are to use **Delivery Plans** as described in [Track dependencies](../../boards/plans/track-dependencies.md). To view dependencies in a dashboard, you can add a query results widget that lists a direct links query. 
+
+      - question: What charts or widgets support PERT or Gannt charts? 
+        answer: | 
+          Two project management tools in wide use are  Program Evaluation Review Technique (PERT) charts and Gantt charts. PERT charts provide support for calculating the amount of time it will take to realistically finish a project.  Horizontal bar charts developed by Henry Gantt provide support for visualizing project schedules. Azure DevOps doesn't provide native support for either PERT or Gantt charts. However, it does provide the following tools and extensions that support visualizing schedules and dependencies:  
+          ::: moniker range=">= azure-devops-2022"
+          - [**Delivery Plans**](../../boards/plans/review-team-plans.md): Displays the scheduled work items by sprint of selected teams against a calendar view, including support for visualizing dependencies.  
+          - [**Dependency Tracker**](../../boards/extensions/dependency-tracker.md): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. 
+          - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions that provide support for visualizing portfolio roadmaps.  
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          - [**Delivery Plans**](../../boards/extensions/delivery-plans.md): A marketplace extension that displays scheduled work items by sprint of selected teams against a calendar view.  
+          - [**Dependency Tracker**](../../boards/extensions/dependency-tracker.md)): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. 
+          - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions that provide support for visualizing portfolio roadmaps.  
+          ::: moniker-end
+
+  - name: Sprint activity
+    questions:
+      - question: How do I track changes made to a sprint?  
+        answer: | 
+          There isn't a sprint scope change chart or widget. However, you can query for work items added to a sprint or moved out of a sprint after the start of the sprint. To learn how, see the following sections provided in [Implement Scrum practices for your team, Query sprint scope changes](../../boards/sprints/scrum-overview.md#sprint-scope-change): 
+          - List work items added after the start of the sprint
+          - List work items moved out of the sprint 
+ 
+      - question: Do sprint burndown or burnup charts reference team capacity settings?  
+        answer: | 
+          **Yes**. Team days off and team member capacity are referenced in sprint burndown charts and reports. To learn more about setting team capacity, see [Determine and set sprint capacity](../../boards/sprints/set-capacity.md).  
+
+  - name: Cross-project data views 
+    questions: 
+      - question: How do I view data from several projects in one dashboard? 
+        answer: | 
+          There are a few ways to view data from several projects in a single dashboard. 
+          - **Query-based widgets**: Queries can be defined in any project that target all or select projects. Charts based on these queries can be added to any dashboard. To learn more, see [Define a work item query, Query across or within projects](../../boards/queries/using-queries.md#query-across-projects).   
+          - **Burndown and Burnup charts**: The [Burndown and Burnup charts](configure-burndown-burnup-widgets.md) can be configured for any project and team. Therefore, you can add several of these charts to a single chart and configure them to gain a view of progress across several teams and projects.
+ 
+
+additionalContent: | 
+  ## Related articles
+
+  - [Azure Boards FAQs](../../boards/faqs.yml)
+  - [Query FAQs](../../boards/queries/query-faqs.yml)
+  - [FAQs: Work in Excel connected to Azure Boards](../../boards/backlogs/office/faqs.yml)
+  - [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
+  - [Azure Boards extensions](../../boards/extensions/index.md)
+ 

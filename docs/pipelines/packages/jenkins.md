@@ -1,112 +1,132 @@
 ---
-title: Publish Packages with Jenkins & Azure Artifacts
-ms.custom: seodec18
-description: Working with feeds in Jenkins-CI
+title: Publish Artifacts with Jenkins
+ms.custom: seodec18, devx-track-jenkins
+description: How to publish Artifacts with Jenkins and Azure Pipelines
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2017'
+ms.date: 12/08/2021
+monikerRange: '<= azure-devops'
 ---
 
-# Use Jenkins to restore and publish packages
+# Publish NuGet packages with Jenkins 
 
-**Azure Artifacts | TFS 2018 | TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+With Azure Artifacts, you can leverage a variety of build and deployment automation tools such as Maven, Gradle, and Jenkins. This article will walk you through creating and publishing NuGet packages using Jenkins.
 
-Azure Artifacts works with the continuous integration tools your team already uses.
-In this [Jenkins](https://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to an Azure Artifacts feed.
-If you need help on Jenkins setup, you can learn more on [the Jenkins wiki](https://www.jenkins.io/doc/book/using/).
+## Prerequisites
 
-<a name="setup"></a>
-## Setup
+- [Install NuGet CLI](/nuget/tools/nuget-exe-cli-reference).
+- [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate your feed.
+- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
+- [Azure Artifacts feed](../../artifacts/get-started-nuget.md).
 
-This walkthrough uses Jenkins 1.635 running on Windows 10.
-The walkthrough is simple, so any recent Jenkins and Windows versions should work.
+## Jenkins Setup
 
-Ensure the following Jenkins plugins are enabled:
-* [MSBuild 1.24](https://plugins.jenkins.io/msbuild/)
-* [Git 2.4.0](https://plugins.jenkins.io/git/)
-* [Git Client 1.19.0](https://plugins.jenkins.io/git-client/)
-* [Credentials Binding plugin 1.6](https://plugins.jenkins.io/credentials-binding/)
+This walkthrough uses the latest Jenkins running on Windows 10. Ensure the following Jenkins plugins are enabled:
 
-Some of these plugins are enabled by default.
-Others you will need to install by using Jenkins's "Manage Plugins" feature.
+- [MSBuild](https://plugins.jenkins.io/msbuild/)
+- [Git](https://plugins.jenkins.io/git/)
+- [Git Client](https://plugins.jenkins.io/git-client/)
+- [Credentials Binding plugin](https://plugins.jenkins.io/credentials-binding/)
 
-### The example project
+Some of these plugins are enabled by default, others you will need to install by using the Jenkins's "Manage Plugins" feature.
 
-The sample project is a simple shared library written in C#.
-* To follow along with this walkthrough, create a new C# Class Library solution in Visual Studio 2015.
-* Name the solution "FabrikamLibrary" and uncheck the **Create directory for solution** checkbox.
-* On the FabrikamLibrary project's context menu, choose **Properties**, then choose **Assembly Information**.
-* Edit the description and company fields. Now generating a NuGet package is easier.
+### The sample project
 
-![Update assembly info to supply a description and company](media/assembly_info.png)
-* Check the new solution into a Git repo where your Jenkins server can access it later.
+We will be using a C# class library sample project for this article. 
 
+1. In Visual Studio, create a new project, and then select the C# **Class Library** template.
 
-## Add the Azure Artifacts NuGet tools to your repo
+1. Name your solution *FabrikamLibrary*.
 
-The easiest way to use the Azure Artifacts NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap) to your project.
+1. Open your solution and then right click on the project and select **Properties**.
 
-## Create a package from your project
+1. Select **Package** and then fill out the *description*, *product*, and *company* fields.
 
-*Whenever you work from a command line, run `init.cmd` first. This sets up your environment to allow you to work with nuget.exe and the Azure Artifacts NuGet service.*
+1. Select **Save** when you are done.
 
-* Change into the directory containing FabrikamLibrary.csproj.
-* Run the command `nuget spec` to create the file FabrikamLibrary.nuspec, which defines how your NuGet package builds.
-* Edit FabrikamLibrary.nuspec to remove the boilerplate tags `<licenseUrl>`, `<projectUrl>`, and `<iconUrl>`. Change the tags from `Tag1 Tag2` to `fabrikam`.
-* Ensure that you can build the package using the command `nuget pack FabrikamLibrary.csproj`. Note, you should target the .csproj (project) file, not the NuSpec file.
-* A file called FabrikamLibrary.1.0.0.0.nupkg will be produced.
+1. Check the new solution into a Git repository where your Jenkins server can access it later.
 
+:::image type="content" source="media/jenkins-package.png" alt-text="Screenshot showing how to configure the package properties for a class library project.":::
 
-## Set up a feed in Azure Artifacts and add it to your project
-* [Create a feed](../../artifacts/index.yml) in your Azure DevOps organization called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
-* Add the URL for the feed you just generated to the nuget.config in the root of your repo.
-  * Find the `<packageSources>` section of nuget.config.
-  * Just before `</packageSources>`, add a line using this template: `<add key="MyGreatFeed" value="{feed_url}" />`. Change `{feed_url}` to the URL of your feed.
-  * Commit this change to your repo.
+## Create a NuGet package
 
-![Add your feed URL to nuget.config](media/nugetconfig.png)
-* [Generate a PAT (personal access token)](/azure/devops/release-notes/index) for your user account. This PAT will allow the Jenkins job to authenticate to Azure Artifacts as you, so be sure to protect your PAT like a password.
-* Save your feed URL and PAT to a text file for use later in the walkthrough.
+1. Open a new command prompt window navigate to your project directory.
 
+1. Run the `nuget spec` command to create a nuspec file.
+
+1. Open the newly created *FabrikamLibrary.nuspec* and remove the boilerplate tags *projectUrl* and *iconUrl*. Add an author inside the *authors* tag, and then change the tags from *Tag1 Tag2* to *fabrikam*.
+
+1. **Save** your file when you are done. 
+
+1. Run the following command to create a NuGet package: `nuget pack FabrikamLibrary.csproj`.
+
+1. A NuGet package *FabrikamLibrary.1.0.0.nupkg* will be generated in the same directory as your *.csproj* file.
+
+## Connect to feed
+
+1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already. 
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../../artifacts/media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to your feed":::
+
+1. Select **NuGet.exe** under the **NuGet** header.
+
+    :::image type="content" source="../../artifacts/media/nuget-connect-feed.png" alt-text="Screenshot showing the NuGet.exe feed connection":::
+
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
+
+    1. Download the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+1. Follow the instructions in the **Project setup** to connect to your feed. 
+
+    :::image type="content" source="../../artifacts/media/project-setup.png" alt-text="Screenshot showing the project setup section":::
 
 ## Create a build pipeline in Jenkins
 
-* Ensure you have the [correct plugins installed in Jenkins](#setup).
-* This will be a Freestyle project. Call it "Fabrikam.Walkthrough".
+1. From your Jenkins dashboard, select **Create a job**.
 
-![New Jenkins build job](media/jenkins_new.png)
-* Under Source Code Management, set the build to use **Git** and select your Git repo.
-* Under Build Environment, select the **Use secret text(s) or file(s)** option.
-  * Add a new **Username and password (separated)** binding.
-  * Set the **Username Variable** to "FEEDUSER" and the **Password Variable** to "FEEDPASS". These are the environment variables Jenkins will fill in with your credentials when the build runs.
-  * Choose the **Add** button to create a new username and password credential in Jenkins.
-  * Set the **username** to "token" and the **password** to the PAT you generated earlier. Choose **Add** to save these credentials.
+1. Enter an item name, and then select **Freestyle project**. Select **OK** when you are done.
+ 
+    :::image type="content" source="./media/jenkins-freestyle.png" alt-text="Screenshot showing how to create a freestyle project in Jenkins":::
 
-![New credentials in Jenkins](media/jenkins_addcreds.png)
-  
-![Jenkins build environment](media/jenkins_build_environment.png)
-* Under Build (see screenshot below), follow these steps:
-  * Choose **Execute Windows batch command**. In the **Command** box, type `init.cmd`.
-  * Choose **Build a Visual Studio project or solution using MSBuild**. This task should point to msbuild.exe and FabrikamLibrary.sln.
-  * Choose **Execute Windows batch command** again, but this time, use this command: `.tools\VSS.NuGet\nuget pack FabrikamLibrary\FabrikamLibrary.csproj`.
+1. Select **Source Code Management**, and then select **Git**. Enter your Git repository and select the branches to build.
 
-![Jenkins build tasks](media/jenkins_build_steps.png)
-* Save this build pipeline and queue a build.
-* The build's Workspace will now contain a .nupkg just like the one you built locally earlier.
+1. Select **Build Environment**, and then select **Use secret text(s) or file(s)**.
 
+1. Select **Add**, and then select **Username and password (separated)**.
+
+1. Set the **Username Variable** to "FEEDUSER" and the **Password Variable** to "FEEDPASS". Select **Add** when you are done.
+
+    :::image type="content" source="./media/jenkins-build-environment.png" alt-text="Screenshot showing how to set up build environment in jenkins.":::
+
+1. Set the *Username* to "token" and the *Password* to the personal access token PAT you generated earlier. Select **Add** to save your credentials.
+
+    :::image type="content" source="./media/jenkins-add-credentials.png" alt-text="Screenshot showing how to add your credentials.":::
+
+1. Select **Build** > **Add build step**., and then select **Execute Windows batch command**. Enter your batch command in the command box.
+
+1. Select **Save** and then queue your build.
 
 ## Publish a package using Jenkins
 
-These are the last walkthrough steps to publish the package to a feed:
-* Edit the build pipeline in Jenkins.
-* After the last build task (which runs `nuget pack`), add a new **Execute a Windows batch command** build task.
-* In the new **Command** box, add these two lines:
-  * The first line puts credentials where NuGet can find them: `.tools\VSS.NuGet\nuget sources update -Name "MyGreatFeed" -UserName "%FEEDUSER%" -Password "%FEEDPASS%"`
-  * The second line pushes your package using the credentials saved above: `.tools\VSS.NuGet\nuget push *.nupkg -Name "MyGreatFeed" -ApiKey VSS`
+1. Select your build pipeline, and then select **Configure** to edit your build definition.
 
-![Push package](media/jenkins_push.png)
-* Queue another build. This time, the build machine will authenticate to Azure Artifacts and push the package to the feed you selected.
+1. Select **Build**, and then select **Add build step** to add a new task.
+
+1. Select **Execute a Windows batch command** and enter the following commands in the command box:
+
+    ```Command
+    .tools\VSS.NuGet\nuget sources update -Name <YOUR_FEED_NAME> -UserName "%FEEDUSER%" -Password "%FEEDPASS%"
+    .tools\VSS.NuGet\nuget push *.nupkg -Name <YOUR_FEED_NAME> -ApiKey key
+    ```
+
+1. Select **Save**, and then queue your build. Your NuGet package should be published to your Azure Artifacts feed. 
+
+## Related articles
+
+- [Publish and download pipeline Artifacts](../artifacts/pipeline-artifacts.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Restore NuGet packages in Azure Pipelines](./nuget-restore.md)

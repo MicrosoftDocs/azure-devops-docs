@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+ms.date: 02/01/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to VMware vCenter Server
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -22,19 +22,19 @@ You can automatically provision virtual machines in a VMware environment and dep
 
 ::: moniker range="azure-devops"
 
-You need to first configure how Azure Pipelines connects to vCenter. You cannot use Microsoft-hosted agents to run VMware tasks since the vSphere SDK is not installed on these machines. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+You need to first configure how Azure Pipelines connects to vCenter. You can’t use Microsoft-hosted agents to run VMware tasks since the vSphere SDK isn’t installed on these machines. You have to a setup a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-You need to first configure how Azure DevOps Server connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+You need to first configure how Azure DevOps Server connects to vCenter. You have to a setup a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-You need to first configure how TFS connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+You need to first configure how TFS connects to vCenter. You have to a setup a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
@@ -53,12 +53,12 @@ You need to first configure how TFS connects to vCenter. You have to a set up a 
      Management SDK**.
 
    * Create a directory for the vSphere Management SDK
-     such as **C:\vSphereSDK**. Do not include spaces in 
+     such as **C:\vSphereSDK**. Don’t include spaces in 
      the directory names to avoid issues with some of the
      batch and script files included in the SDK.
 
    * Unpack the vSphere Management SDK into the 
-     new folder you just created.
+     new folder you created.
 
    * Add the full path and name of the precompiled 
      VMware Java SDK file **vim25.jar** to the machine's 
@@ -73,7 +73,7 @@ You need to first configure how TFS connects to vCenter. You have to a set up a 
 3. Follow these steps to create a vCenter Server service connection in your project:
 
    * Open your Azure Pipelines or TFS project in 
-     your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
+     your web browser. Choose the **Settings** icon in the menu bar and select **Service connections**.
 
    * In the **Services** tab, choose **New service connection**, and select **VMware vCenter Server**.
 
@@ -85,13 +85,13 @@ You need to first configure how TFS connects to vCenter. You have to a set up a 
        for the service connection such as **Fabrikam vCenter**.
      - **vCenter Server URL**: Enter the URL of the 
        vCenter server, in the form `https://machine.domain.com/`.
-       Note that only **HTTPS** connections are supported.
+       Only **HTTPS** connections are supported.
      - **Username** and **Password**: Enter the credentials
        required to connect to the vCenter Server.
        Username formats such as **username**, **domain\\username**,
        **machine-name\\username**, and **.\\username** are supported.
        UPN formats such as <strong>username@domain.com</strong> and built-in system 
-       accounts such as **NT Authority\\System** are not supported.<p/>
+       accounts such as **NT Authority\\System** aren’t supported.<p/>
 
 ## Managing VM snapshots
 
@@ -152,5 +152,5 @@ To configure the **VMware Resource Deployment** task to provision a new virtual 
 
 Once you have the virtual machines set up, deploying a build to those virtual machines is no different than deploying to any other machine. For instance, you can:
 
-* Use the [PowerShell on Target Machines](../tasks/deploy/powershell-on-target-machines.md) task to run remote scripts on those machines using Windows Remote Management.
+* Use the [PowerShell on Target Machines](/azure/devops/pipelines/tasks/reference/powershell-on-target-machines-v3) task to run remote scripts on those machines using Windows Remote Management.
 * Use [Deployment groups](../release/deployment-groups/index.md) to run scripts and other tasks on those machines using build and release agent.

@@ -3,24 +3,20 @@ title: About pull requests and permissions
 titleSuffix: Azure Repos
 description: Learn about pull request guidelines, management, and considerations when working in an Azure Repos Git repository.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/11/2021
+ms.date: 11/05/2021
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # About pull requests
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Pull requests (PRs) are a way to change, review, and merge code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
-
-The following video shows the general pull request process. Some terminology and user interface elements might not apply to your Azure DevOps version.
-
-> [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
 
 This article describes pull request guidelines and management considerations. For instructions on how to create, view, review, and complete pull requests, see the following articles:
 
@@ -62,7 +58,8 @@ This article describes pull request guidelines and management considerations. Fo
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-## PR feedback
+<a name="pr-feedback"></a>
+## Quality feedback for pull requests
 
 High-quality reviews start with high-quality feedback. Here are some keys to great PR feedback:
 
@@ -91,7 +88,7 @@ Reviewers should:
 
 Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
-## Branch policies
+## Branch policies and pull requests
 
 Your team might rely on critical branches in your repo, such as the `main` branch, to always be in good shape. You can set [branch policies](branch-policies.md) to require PRs for any changes on these protected branches, and reject any changes pushed directly to the branches.
 
@@ -101,6 +98,104 @@ You can set the number of required approvals for a PR in a branch policy. You ca
 
 To reset votes whenever a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** in the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
+The following table summarizes the policies you can define to customize a branch. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md). 
+
+:::row:::
+   :::column span="2":::
+      **Policy**
+   :::column-end:::
+   :::column span="1"::: 
+      **Default**
+   :::column-end:::
+   :::column span="3"::: 
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [**Require a minimum number of reviewers**](branch-policies.md#require_reviewers)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Require approval from a specified number of reviewers on pull requests.
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+      [**Check for linked work items**](branch-policies.md#check-linked-wi)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Encourage traceability by checking for linked work items on pull requests
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="2":::
+      [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Check to see that all comments have been resolved on pull requests.
+   :::column-end:::
+:::row-end:::
+
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      [**Limit merge types**](branch-policies.md#limit-merge-types)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Control branch history by limiting the available types of merge when pull requests are completed.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="2":::
+      [**Add Build Validation policies**](branch-policies.md#build-validation)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add one or more policies to validate code by pre-merging and building pull request changes. Can also enable or disable policies.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Add Status Check policies**](branch-policies.md#require-approval-from-external-services)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add one or more policies to require other services to post successful status to complete pull requests. Can also enable or disable policies.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Automatically included reviewers**](branch-policies.md#include-code-reviewers)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add one or more policies to designate code reviewers to automatically include when pull requests change certain areas of code. Can also enable or disable policies.
+   :::column-end:::
+:::row-end:::
+
 For more information, see:
 
 - [Branch policies overview](branch-policies-overview.md)
@@ -108,11 +203,7 @@ For more information, see:
 - [Branch permissions](branch-permissions.md)
 - [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 
-## Change the default branch
-
-You can use a branch other than `main` for new changes, or change the main line of development in your repo. To change the default branch name for new repositories, see [Change the default branch](change-default-branch.md).
-
-## PR status checks
+## Define status checks to improve code quality 
 
 Pull requests and branch policies let teams enforce best practices for reviewing code and running automated builds. Many teams have further requirements and validations to do on code. To cover these needs, you can integrate PR status checks into the PR workflow. With PR status checks, external services can programmatically sign off on code changes by associating success or failure information with the PR.
 
@@ -122,50 +213,16 @@ For more information, see the following articles:
 - [Create a PR status server with Node.js](create-pr-status-server.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
-## Multiple merge bases
+<a name="multiple-merge-bases"></a>
+## Multiple merge base issue
 
-The **Files** tab in a PR detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
-
-The following scenarios can cause multiple bases:
-
-- Cross-merges between different branches
-- Active reuse of feature branches
-- Handling aftermaths of main branch reverts
-- Other non-intuitive and convoluted manipulations with reverts, cherry picks, and merges
-
-Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface might not properly detect file changes, depending on which merge base it chooses. A multiple merge base warning happens if the files affected in the PR have different versions between the merge bases.
-
-### Potential security risks of merging from multiple bases
-
-- A malicious user could abuse the UI algorithm to commit malicious changes that aren't present in the PR.
-- If changes proposed in the PR are already in the target branch, they're displayed in the **Files** tab, but they might not trigger branch policies that are mapped to folder changes.
-- Two sets of changes to the same files from multiple merge bases might not be present in the PR. That case might create treacherous logic gaps.
-
-### How to resolve the multiple merge bases issue
-
-Having multiple merge bases isn't necessarily bad, but you should double-check that everything is fine. To get rid of multiple merge bases, tie branches to a single common ancestor. Either rebase your branch on target, or merge target into main. Those actions get rid of the warning message and help you check if the actual changes are fine.
-
-One approach is to soft reset and stash your progress before rebasing or merging. You can then create a new branch or rebase an empty one, and apply your changes from a clear point. This process might require a force push to remote if your changes are already there.
-
-### How to avoid the multiple merge bases issue
-
-Here are general tips for avoiding the multiple merge base issue:
-
-- When preparing a PR, create feature branches from the latest versions of the main or release branch.
-- Avoid creating branches that don't originate directly from stable branches of your repository, unless required.
-
-### What to do if the multiple merge bases issue reappears
-
-In large repos with many active contributors, this issue can be especially inconvenient. Even if you get rid of multiple bases via merge, the situation might reappear. If someone closes a longstanding PR, that can recreate the situation. Even though build policies and tests are running, you have no means to complete the PR. Resetting and starting a new branch might help. If nothing is changed, your changes are probably clear, even if the situation repeats itself.
+In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](merging-with-squash.md#multiple-merge-bases).
 
 ## Next steps
 - [Improve code quality with branch policies](branch-policies.md)
 - [Customize and extend pull request workflows with pull request status](pull-request-status.md)
-- [Create a pull request](pull-requests.md)
-- [Provide reviewer guidance with pull request templates](pull-request-templates.md).
-- [View and open pull requests](view-pull-requests.md)
-- [Review pull requests](review-pull-requests.md)
 - [Pull request update notifications](pull-request-notifications.md)
-- [Complete a pull request](complete-pull-requests.md)
 - [Change the default branch](change-default-branch.md)
 - [Copy changes with cherry-pick](cherry-pick.md)
+- [Merge strategies and squash merge](merging-with-squash.md)
+- [Multiple merge bases](merging-with-squash.md#multiple-merge-bases)

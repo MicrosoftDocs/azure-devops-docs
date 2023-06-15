@@ -1,90 +1,82 @@
-- name: Get started 
+- name: Get started
   href: index.yml
 - name: Start using Azure DevOps
   href: ../user-guide/toc.yml
 - name: Integration overview
   items:
   - name: Cross-service integration overview
-    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
-  - name: GitHub integration 
-    href: ../cross-service/github-integration.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/get-started/toc.json
+  - name: GitHub integration
+    href: ../cross-service/github-integration.md?toc=/azure/devops/get-started/toc.json
   - name: Deploy to Azure
-    href: ../pipelines/overview-azure.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/get-started/toc.json
 - name: Web portal navigation
   items:
-  - name: Navigation 
-    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Open a service, page, or setting 
-    href: ../project/navigation/go-to-service-page.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Navigation
+    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json
+  - name: Open a service, page, or setting
+    href: ../project/navigation/go-to-service-page.md?toc=/azure/devops/get-started/toc.json
   - name: Add an artifact or team artifacts
-    href: ../project/navigation/add-artifact-team.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/navigation/add-artifact-team.md?toc=/azure/devops/get-started/toc.json
   - name: Use breadcrumbs, selectors, and directories
-    href: ../project/navigation/use-breadcrumbs-selectors.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
-  - name: Open another project or repo  
-    href: ../project/navigation/go-to-project-repo.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json   
-  - name: Set favorites 
-    href: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
-  - name: Filter basics 
-    href: ../project/navigation/filter-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Search your repo, work items, or wiki 
-    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
-  - name: Manage or enable features  
-    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/navigation/use-breadcrumbs-selectors.md?toc=/azure/devops/get-started/toc.json
+  - name: Open another project or repo
+    href: ../project/navigation/go-to-project-repo.md?toc=/azure/devops/get-started/toc.json
+  - name: Set favorites
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json
+  - name: Filter basics
+    href: ../project/navigation/filter-basics.md?toc=/azure/devops/get-started/toc.json
+  - name: Search your repo, work items, or wiki
+    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json
+  - name: Manage or enable features
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json
 - name: Search
   items:
   - name: Get started with search
-    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json
   - name: Search code
-    href: ../project/search/functional-code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/search/functional-code-search.md?toc=/azure/devops/get-started/toc.json
   - name: Search work items
-    href: ../project/search/functional-work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/search/functional-work-item-search.md?toc=/azure/devops/get-started/toc.json
 - name: Migrate & import
-  href: ../migrate/toc.yml 
+  href: ../migrate/toc.yml
 - name: Permissions & access
   items:
-  - name: "Permissions and access (Security)"
-    href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Permissions and access (Security)
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json
   - name: About access levels
-    href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-- name: Status & security 
-  items: 
-  - name: Service status  
-    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+    href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json
+- name: Status & security
+  items:
+  - name: Service status
+    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json
   - name: Data protection
-    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json
   - name: Data location
-    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json
   - name: Credential storage
-    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE
-    href: ../organizations/accounts/set-up-vs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Visual Studio Code 
+    href: ../organizations/accounts/set-up-vs.md?toc=/azure/devops/get-started/toc.json
+  - name: Visual Studio Code
     href: https://code.visualstudio.com/docs
   - name: Visual Studio for Mac
     href: /visualstudio/mac
-  - name: Eclipse
-    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
-  - name: IntelliJ IDEA
-    href: /previous-versions/azure/devops/java/download-intellij-plug-in
 - name: Resources
   items:
   - name: Settings, security, & usage
     href: ../organizations/index.yml
-  - name: Manage projects 
+  - name: Manage projects
     href: ../organizations/projects/about-projects.md
   - name: Marketplace & extensibility
     href: ../marketplace-extensibility/index.yml
-  - name: Search your Wiki
-    href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
-  - name: Code search video
-    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
 - name: DevOps Resource Center
   items:
-    - name: What is DevOps?
-      href: /devops/what-is-devops
-    - name: What is Agile?
-      href: /devops/plan/what-is-agile
-    - name: What is Git?
-      href: /devops/develop/git/what-is-git
+  - name: What is DevOps?
+    href: /devops/what-is-devops
+  - name: What is Agile?
+    href: /devops/plan/what-is-agile
+  - name: What is Git?
+    href: /devops/develop/git/what-is-git

@@ -1,4 +1,5 @@
 {
+  "build_entry_point": "docs",
   "docsets_to_publish": [
     {
       "docset_name": "azure-devops-release-notes",
@@ -23,15 +24,15 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2022"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
@@ -41,7 +42,7 @@
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-devops-docs",
-  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "enable_incremental_build": true,
@@ -52,13 +53,13 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
@@ -70,13 +71,19 @@
     {
       "path_to_root": "azure-docs",
       "url": "https://github.com/MicrosoftDocs/azure-docs-pr",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "quickstart-templates",
       "url": "https://github.com/Azure/azure-quickstart-templates",
       "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "docs/reusable-content",
+      "url": "https://github.com/MicrosoftDocs/reusable-content",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -85,11 +92,24 @@
       "Publish",
       "Pdf"
     ],
-    "master": [
+    "main": [
       "Publish",
       "Pdf"
     ]
   },
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.archive.2013.json",
+    ".openpublishing.redirection.archive.2015.json",
+    ".openpublishing.redirection.archive.2017.json",
+    "docs/legacy/.openpublishing.redirection.legacy.json",
+    "docs/organizations/.openpublishing.redirection.notifications.json",
+    "docs/pipelines/.openpublishing.redirection.pipelines.json",
+    "docs/pipelines/.openpublishing.redirection.tasks.json",
+    "docs/report/.openpublishing.redirection.report.json",
+    "docs/artifacts/.openpublishing.redirection.artifacts.json",
+    "release-notes/.openpublishing.redirection.release-notes.json"
+  ],
   "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {

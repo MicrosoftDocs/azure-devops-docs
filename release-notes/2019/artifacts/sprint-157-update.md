@@ -3,7 +3,6 @@ title: Azure Artifacts - Sprint 157 Update
 description: See the Sprint 157 feature update for Azure Artifacts, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 09/03/2019
 ---
 

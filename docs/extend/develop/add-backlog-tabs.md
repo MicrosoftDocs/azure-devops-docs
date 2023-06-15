@@ -2,7 +2,7 @@
 title: Add tabs on backlog pages | Extensions for Azure DevOps Services
 description: Learn how to create a web page in an iframe, and host it in Azure DevOps Services as a tab on the backlog pages.
 ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
@@ -12,16 +12,16 @@ ms.date: 03/21/2019
 
 # Add tabs on backlog pages
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 If you have a web page that can be hosted in an iframe, it can also be hosted in Azure DevOps Services. This webpage would be a tab on the backlog pages.
 In this example, we'll add a Hello World tab on the Product Backlog and the Iteration Backlog.
 
-![Tab location on the Azure DevOps Services Product Backlog page](../media-procedures/backlog-tab/product-backlog-tab.png)
+![Tab location on the Azure DevOps Services Product Backlog page](../media/backlog-tab/product-backlog-tab.png)
 
-![Tab location on the Azure DevOps Services Iteration Backlog page](../media-procedures/backlog-tab/iteration-backlog-tab.png)
+![Tab location on the Azure DevOps Services Iteration Backlog page](../media/backlog-tab/iteration-backlog-tab.png)
 
 ## Create your web page
 
@@ -95,7 +95,7 @@ For your files, set `addressable` to `true` unless you include other files that 
 	
 ## Example registeredObjectId
 ```javascript
-VSS.register("backlogTabObject", {
+SDK.register("backlogTabObject", {
     pageTitle: function(state) {
         return "Hello Tab";
     },
@@ -110,7 +110,7 @@ VSS.register("backlogTabObject", {
 });
 ```
 
-Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
 
 ## Next steps
 

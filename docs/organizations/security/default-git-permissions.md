@@ -4,15 +4,15 @@ titleSuffix: Azure DevOps
 description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.custom: freshness-review 
-ms.technology: devops-security
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-security
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ---
 # Default Git repository and branch permissions
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 After you've been added as a team member, you are a member of the Contributors group. This membership allows you to contribute to a Git repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned default permissions for contributing to a branch or repository.
 

@@ -3,14 +3,14 @@ title: Deploying to Azure VMs using deployment groups in Azure Pipelines
 description: DevOps CI CD - Deploy to Azure VMs using deployment groups in Azure Pipelines
 ms.topic: tutorial
 ms.date: 05/26/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to Azure VMs using deployment groups in Azure Pipelines
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 

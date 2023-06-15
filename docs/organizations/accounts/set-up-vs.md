@@ -3,7 +3,7 @@ title: Set up Visual Studio with Azure DevOps Services
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to set up and connect Visual Studio via Azure DevOps Services.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.topic: conceptual
 ms.author: chcomley
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Launch Visual Studio via Azure DevOps Services
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you first open [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
@@ -36,7 +36,7 @@ Azure DevOps Services is free for [up to five users with access to Basic feature
 Learn [what else you get with Azure DevOps Services](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use Azure DevOps Services with any IDE or code editor, like the following examples:
 
-* [Eclipse, Android Studio, or IntelliJ](/previous-versions/azure/devops/java/)
+* [Eclipse, Android Studio, or IntelliJ](/azure/devops/pipelines/ecosystems/java)
 * Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
 * [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 

@@ -1,9 +1,9 @@
-﻿---
+---
 title: Disconnect organization from Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to stop using your organization's Azure AD and sign in with a Microsoft account by disconnecting your organization from your directory
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
 ms.author: chcomley
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 ---
 # Disconnect your organization from Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 <a name="DisconnectDirectory"></a>
 
@@ -23,7 +23,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 ## Prerequisites
 
-* Before you disconnect your organization from your directory, make sure to **change the organization Owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
+* Before you disconnect your organization from your directory, make sure to **change the organization owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
 
 * Add your Microsoft account to the Project Collection Administrator group in Organization Settings and confirm that you have Global Administrator Permissions in your Azure AD for your Microsoft account. You need both because Azure AD users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
 
@@ -40,7 +40,7 @@ Learn about how to [Manage Azure administrators](/azure/active-directory/users-g
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then select **Disconnect directory**.
 

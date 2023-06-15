@@ -2,7 +2,8 @@
 title: Progress report, test plans
 description: Learn how to use the Test Plans Progress report  
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
@@ -12,7 +13,7 @@ ms.date: 09/14/2021
 
 # Progress Report
 
-[!INCLUDE [version-header](includes/version-2020-rtm.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]  
   
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 - How much testing is complete?
@@ -27,7 +28,9 @@ To track the progress of more than one test plan or test suite, use the Progress
 > - The report, always shows you the data for the test plan you last accessed. Filter selections aren't stored.  
 > - Report data corresponds to the the current test suite hierarchy in the selected test plans. Hierarchy history isn't stored.
 > - Report data is updated approximately every 15 minutes. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in the report. 
-> - Data for test plans migrated from an on-premises Azure DevOps server won't show up in this report.  
+> - Data for test plans migrated from an on-premises Azure DevOps server won't show up in this report.
+> - Percentage Data will not display the decimal values in this report.
+> - Some Outcomes are not identified on the Details section even though they contribute to the "Run%" column. Test Cases with Outcome "Blocked", "Not Applicable", and in the paused state are not reflected on the "Passed%" or "Failed%". If you have Test Cases with these Outcomes there will be a difference between the "Run%" and the "Passed%" + "Failed%" sum. The "Not Run" column only counts Test Cases that are showing as "Active" in the current Outcome. You can use the report filters to fine tune the results.   
 
 
 ## Prerequisites
@@ -42,7 +45,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project with Basic access or higher. If you haven't been added as a project member, [get added now](../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
+- [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be the **Organization owner** or a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
 - **Test Plans** must be enabled. If it is disabled, the **Test Plans>Progress Report** page won't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
 - Have the **View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).
 
@@ -83,6 +86,6 @@ Use the filter barto filter by **Test Suites**, **Configuration**, **Tester**, T
 ## Related articles
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.md#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#trackstatus)
 
 

@@ -1,11 +1,11 @@
 ---
-ms.technology: devops-code-git
-ms.prod: devops
+ms.service: azure-devops-repos
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 10/15/2021
+ms.subservice: azure-devops-repos-git
 ---
 
 ::: moniker range="tfs-2018"

@@ -3,11 +3,14 @@ title: Migrate from Jenkins to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: conceptual
+ms.custom: devx-track-jenkins
 ms.date: 08/18/2021
 monikerRange: azure-devops
 ---
 
 # Migrate from Jenkins to Azure Pipelines
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 [Jenkins](https://www.jenkins.io/), an open-source automation server, has traditionally been installed by enterprises in their own data
 centers and managed on-premises. Many providers
@@ -37,7 +40,7 @@ an Azure Pipelines YAML configuration. The two are conceptually similar,
 supporting "configuration as code" and allowing you to check your configuration
 into your version control system. Unlike Jenkins, however, Azure Pipelines
 uses the industry-standard [YAML to configure the build
-pipeline](../yaml-schema.md).
+pipeline](/azure/devops/pipelines/yaml-schema).
 
 The concepts between Jenkins and
 Azure Pipelines and the way they're configured are similar. A Jenkinsfile
@@ -88,7 +91,7 @@ jobs:
 
 ### Visual Configuration
 
-If you are not using a Jenkins declarative pipeline with a Jenkinsfile,
+If you aren't using a Jenkins declarative pipeline with a Jenkinsfile,
 and are instead using the graphical interface to define your build configuration,
 then you may be more comfortable with the
 classic editor
@@ -110,8 +113,8 @@ useful when you use many different technologies in your stack; you may want
 to build your backend using a .NET Core container and your frontend with a
 TypeScript container.
 
-For example, to run a build in an Ubuntu 14.04 ("Trusty") container, then
-run tests in an Ubuntu 16.04 ("Xenial") container:
+For example, to run a build in an Ubuntu 20.04 ("Focal") container, then
+run tests in an Ubuntu 22.04 ("Jammy") container:
 
 **Jenkinsfile**
 
@@ -122,7 +125,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'ubuntu:trusty'
+                    image 'ubuntu:focal'
                     args '-v $HOME:/build -w /build'
                 }
             }
@@ -133,7 +136,7 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'ubuntu:xenial'
+                    image 'ubuntu:jammy'
                     args '-v $HOME:/build -w /build'
                 }
             }
@@ -154,25 +157,25 @@ to enable you to run your build within a container:
 ``` yaml
 resources:
   containers:
-  - container: trusty
-    image: ubuntu:trusty
-  - container: xenial
-    image: ubuntu:xenial
+  - container: focal
+    image: ubuntu:focal
+  - container: jammy
+    image: ubuntu:jammy
 
 jobs:
 - job: build
-  container: trusty
+  container: focal
   steps:
   - script: make
 - job: test
   dependsOn: build
-  container: xenial
+  container: jammy
   steps:
   - script: make test
 ```
 
 In addition, Azure Pipelines provides a [docker
-task](../tasks/build/docker.md)
+task](/azure/devops/pipelines/tasks/reference/docker-v2)
 that allows you to run, build, or push an image.
 
 ## Agent Selection
@@ -196,7 +199,7 @@ pool:
 Additionally, you can specify a `container` and specify a docker image
 for finer grained control over how your build is run.
 
-### On-Premises Agent Selection
+### On-premises Agent Selection
 
 If you host your build agents on-premises, then you can define the
 [build agent "capabilities"](../agents/agents.md#capabilities)
@@ -269,7 +272,7 @@ continuous integration system.
 |-------------|---------|-----------------|
 | A unique numeric identifier for the current build invocation. | `BUILD_NUMBER` | `BUILD_BUILDNUMBER` |
 | A unique identifier (not necessarily numeric) for the current build invocation. | `BUILD_ID` | `BUILD_BUILDID` |
-| The URL that displays the build logs. | `BUILD_URL` |  This is not set as an environment variable in Azure Pipelines but can be derived from other variables.<sup>1</sup> |
+| The URL that displays the build logs. | `BUILD_URL` |  This isn't set as an environment variable in Azure Pipelines but can be derived from other variables.<sup>1</sup> |
 | The name of the machine that the current build is running on. | `NODE_NAME` | `AGENT_NAME` |
 | The name of this project or build definition. | `JOB_NAME` | `RELEASE_DEFINITIONNAME` |
 | A string for identification of the build; the build number is a good unique identifier. | `BUILD_TAG` | `BUILD_BUILDNUMBER` |

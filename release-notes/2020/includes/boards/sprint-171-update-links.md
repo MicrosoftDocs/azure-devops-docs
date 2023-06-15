@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 06/18/2020
 ms.topic: include
 ---

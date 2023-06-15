@@ -3,17 +3,17 @@ title: View permissions for yourself or others
 titleSuffix: Azure DevOps
 description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
 ms.assetid:  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/22/2019
----
+ms.date: 04/04/2022
+--- 
 
 # View permissions for yourself or others
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
@@ -120,10 +120,10 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="azure-devops"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
+    > ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 2. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
 
@@ -134,12 +134,12 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
+    > ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 1. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
 
@@ -150,12 +150,12 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker-end    
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
+1. Choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
+    > ![Open Organization Settings](../../media/settings/open-account-settings.png)  
 
 1. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 
@@ -215,7 +215,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Look up the organization owner or a Project Administrator](lookup-organization-owner-admin.md) 
+> [Look up a member of the Project Administrators group](look-up-project-administrators.md) 
+
 
 ## Related articles
 

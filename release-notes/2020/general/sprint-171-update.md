@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - General Sprint 171 Update
 description: See the Sprint 171 feature updates for General, including next steps.
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 06/18/2020
 ---
 

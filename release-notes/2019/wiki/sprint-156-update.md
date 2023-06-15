@@ -3,7 +3,6 @@ title: Wiki - Sprint 156 Update
 description: See the Sprint 156 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 08/12/2019
 ---
 

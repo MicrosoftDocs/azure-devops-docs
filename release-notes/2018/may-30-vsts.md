@@ -2,14 +2,13 @@
 title: Visualize release progress – VSTS Sprint 135 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 5/30/2018
 description: In the Sprint 135 Update of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity.
 ---
 
 # Visualize release progress – VSTS Sprint 135 Update
 
-In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](../2017/jul-14-team-services.md#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
+In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](/previous-versions/azure/devops/2017/jul-14-team-services#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
 
 There are a number of other features across Work, Code, Build, Release, and even a few related to authentication. Read about the new features below and head over to VSTS to try them for yourself.
 
@@ -140,7 +139,7 @@ A new [Python Script](/azure/devops/pipelines/tasks#utility) task simplifies run
 
 Miniconda is now available on Microsoft-hosted agents. The [conda](https://www.anaconda.com/distribution/) package and virtual environment manager makes it easy to install, run, and upgrade complex data science and machine learning environments like the SciPy stack, scikit-learn, CNTK, and TensorFlow. It will also install the version of Python that is needed by your pipeline.
 
-The new, built-in [Conda Environment](/azure/devops/pipelines/tasks/package/conda-environment) task also helps you create a conda environment. It activates the environment for subsequent pipeline steps, installs package dependencies, adds conda to the path, and optionally upgrades the agent to the latest version of conda.
+The new, built-in [Conda Environment](/azure/devops/pipelines/tasks/reference/conda-environment-v1) task also helps you create a conda environment. It activates the environment for subsequent pipeline steps, installs package dependencies, adds conda to the path, and optionally upgrades the agent to the latest version of conda.
 
 ### Simplify definitions with multiple agentless tasks
 

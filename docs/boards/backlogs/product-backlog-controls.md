@@ -3,19 +3,19 @@ title: Change or filter the view for your backlogs in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to switch views and enable from your product or portfolio backlogs in Azure Boards.
 ms.custom: "boards-backlogs, seodec18" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 04/28/2022
 ---
-
+ 
 
 # Use product backlog controls in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="backlog-controls">  </a>
 
@@ -23,9 +23,12 @@ Once you've defined your product backlog, you can use the following controls to 
 
 
 > [!IMPORTANT]  
-> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
+> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state won't appear in the backlog. To learn more about category workflow states, see [How to use workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
 
+::: moniker range=">= azure-devops-2019"
+For details on using each of these controls, see [Configure your backlog view](configure-your-backlog-view.md).
+::: moniker-end
 
 :::row:::
    :::column span="":::
@@ -63,7 +66,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       **Board**  
@@ -142,7 +145,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)  
       > [!NOTE]
-      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). To learn more, see [Choose a process](../work-items/guidance/choose-process.md). 
+      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -218,7 +221,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       ![Filter](../media/icons/filter-icon.png)    

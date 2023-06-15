@@ -3,17 +3,17 @@ title: Permissions and access for charts and dashboards
 titleSuffix: Azure DevOps  
 description: How to set permissions and access levels to view and configure charts and dashboards in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
-ms.topic: reference
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/27/2021
+ms.date: 04/04/2022
 ---
 
 # Default permissions and access for charts and dashboards   
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Team members and members of the Contributors group for a project can view charts and dashboards. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 
@@ -22,34 +22,18 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 For an overview of dashboard and chart features, see [Dashboards, charts, & widgets](overview.md). 
 
 
-
-::: moniker range=">= tfs-2015" 
-
 ## Dashboards, charts, reports, and widgets
 
 You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [About dashboards, charts, reports, and widgets](overview.md). You set [dashboard permissions at the team level](dashboard-permissions.md) from the team dashboard page. 
-
-::: moniker-end  
 
 ::: moniker range="azure-devops"
 Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
 ::: moniker-end    
 
-::: moniker range=">= tfs-2015"
+
 
 [!INCLUDE [temp](../../organizations/security/includes/report.md)]
 
-::: moniker-end  
-
-::: moniker range="tfs-2013" 
-
-## Dashboards and charts
-
-You can pin charts to a team dashboard **Home** page. 
-
-[!INCLUDE [temp](../../organizations/security/includes/report.md)]
-
-::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -74,7 +58,7 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 - [Work across projects](../../project/navigation/work-across-projects.md)
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md) 

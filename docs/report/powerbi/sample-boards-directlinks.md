@@ -1,36 +1,204 @@
 ---
-title: Work Items with Direct Links sample report
+title: List linked work items sample queries and reports  
 titleSuffix: Azure DevOps
 description: Learn how to generate Power BI reports based on Work Items with Direct Links.
-ms.technology: devops-analytics
-ms.author: kaelli
-ms.custom: powerbisample
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 ---
 
-# Work items with direct links sample reports
+# List linked work items sample queries and reports
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-This article shows you how to list a given set of User Stories and their linked User Stories. An example is shown in the following image. 
+This article shows you how to create a report that lists work items linked to other work items. For example, the following report shows a list of Features that are linked to User Stories with the parent-child link type.  
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Direct Links - Report](media/odatapowerbi-directlinks-report.png)
+:::image type="content" source="media/reports-boards/parent-child-links-table-report.png" alt-text="Screenshot of Parent-child links of Features and User Stories table report.":::
+
+To learn more about link types and linking work items, see [Link user stories, issues, bugs, and other work items](../../boards/backlogs/add-link.md).
+
 
 Other sample queries include listing bugs with a Duplicate link to another bug, and listing bugs that don't contain a Duplicate link to another bug.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+Several queries are provided which show how to filter linked work items. All of these queries specify the `WorkItems` entity set as they return current data.  
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
+
+### Return Features and their child User Stories 
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
+
+#### [Power BI query](#tab/powerbi/)
+
+```
+
+let
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
+        &"$filter=WorkItemType eq 'Feature' "
+            &"and State ne 'Closed' and State ne 'Removed' "
+            &"and startswith(Area/AreaPath,'{areapath}') " 
+        &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
+        &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath), "
+                &"Links( "
+                    &"$filter=LinkTypeName eq 'Child' "
+                        &"and TargetWorkItem/WorkItemType eq 'User Story'; "
+                    &"$select=LinkTypeName; "
+                    &"$expand=TargetWorkItem($select=WorkItemType,WorkItemId,Title,State) "
+                &") "
+    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+in
+    Source
+```
+
+
+#### [OData query](#tab/odata/)
+
+[!INCLUDE [temp](includes/sample-odata-query.md)]
+
+```
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
+        $filter=WorkItemType eq 'Feature'
+            and State ne 'Closed' and State ne 'Removed'
+            and startswith(Area/AreaPath,'{areapath}')
+        &$select=WorkItemId,Title,WorkItemType,State,AreaSK
+        &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),
+                Links(
+                    $filter=LinkTypeName eq 'Child'
+                        and TargetWorkItem/WorkItemType eq 'User Story';
+                    $select=LinkTypeName;
+                    $expand=TargetWorkItem($select=WorkItemType,WorkItemId,Title,State)
+                )
+```
+
+***
+
+## Substitution strings and query breakdown
+
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
+
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
+
+
+### Query breakdown
+
+The following table describes each part of the query.
+
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$filter=WorkItemType eq 'Feature'`
+   :::column-end:::
+   :::column span="1":::
+   Return User Stories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and State ne 'Closed' and State ne 'Removed'`
+   :::column-end:::
+   :::column span="1":::
+   Omit Features whose **State** is set to *Closed* or *Removed*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="1":::
+   Include only Features under a specific **Area Path** replacing `'{areapath}'`.<br>To filter by a team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$select=WorkItemId,Title,WorkItemType,State,AreaSK`
+   :::column-end:::
+   :::column span="1":::
+   Select fields to return.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath), `
+   :::column-end:::
+   :::column span="1":::
+   Specify fields to use to expand `AssignedTo`, `Iteration`, and `Area` entities.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Links(`
+   :::column-end:::
+   :::column span="1":::
+   Expand the `Links` entity.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$filter=LinkTypeName eq 'Child'`
+   :::column-end:::
+   :::column span="1":::
+   Filter linked work items to only those with *Child* link type. Other examples are *Parent*, *Child*, *Duplicate*, *Duplicate Of*, *Affects*, *Affected By*. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and TargetWorkItem/WorkItemType eq 'User Story';`
+   :::column-end:::
+   :::column span="1":::
+   Only include linked User Stories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$select=LinkTypeName;`
+   :::column-end:::
+   :::column span="1":::
+   Select the `LinkTypeName` property to return.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$expand=TargetWorkItem($select=WorkItemType, WorkItemId, Title, State)`
+   :::column-end:::
+   :::column span="1":::
+   Select the properties of the linked work item to return.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close the `Links()` clause.
+   :::column-end:::
+:::row-end:::
+ 
+### Return User Stories linked with the Related link type 
+
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
+
+
+#### [Power BI query](#tab/powerbi/)
 
 ```
 let
@@ -38,7 +206,7 @@ let
         &"$filter=WorkItemType eq 'User Story' "
             &"and State ne 'Closed' "
             &"and startswith(Area/AreaPath,'{areapath}') "
-        &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
+        &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath), "
                 &"Links( "
                     &"$filter=LinkTypeName eq 'Related' "
@@ -60,7 +228,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
         $filter=WorkItemType eq 'User Story'
             and State ne 'Closed'
             and startswith(Area/AreaPath,'{areapath}')
-        &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
+        &$select=WorkItemId,Title,WorkItemType,State,AreaSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),
                 Links(
                     $filter=LinkTypeName eq 'Related'
@@ -72,198 +240,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
-
-[!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
-
-
-### Query breakdown
-
-
-The following table describes each part of the query.
-
-:::row:::
-   :::column span="1":::
-   **Query part**
-   :::column-end:::
-   :::column span="1":::
-   **Description**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `$filter=WorkItemType eq 'User Story'`
-   :::column-end:::
-   :::column span="1":::
-   Return User Stories.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and State ne 'Closed'`
-   :::column-end:::
-   :::column span="1":::
-   Omit Closed items.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and startswith(Area/AreaPath,'{areapath}')`
-   :::column-end:::
-   :::column span="1":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
-   :::column-end:::
-   :::column span="1":::
-   Select fields to return.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath), `
-   :::column-end:::
-   :::column span="1":::
-   Expand Assigned To, Iteration, Area entities and select entity fields.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `Links(`
-   :::column-end:::
-   :::column span="1":::
-   Expand the Links entity
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `$filter=LinkTypeName eq 'Related'`
-   :::column-end:::
-   :::column span="1":::
-   Filter to only links of type 'Related'. <br>Other examples are Parent, Child, Duplicate, Duplicate Of, Affects, Affected By.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `and TargetWorkItem/WorkItemType eq 'User Story';`
-   :::column-end:::
-   :::column span="1":::
-   Only include links to User Stories.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `$select=LinkTypeName;`
-   :::column-end:::
-   :::column span="1":::
-   Select the LinkTypeName field to return.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `$expand=TargetWorkItem($select=WorkItemType, WorkItemId, Title, State)`
-   :::column-end:::
-   :::column span="1":::
-   Select the fields of the linked work item to return.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   `)`
-   :::column-end:::
-   :::column span="1":::
-   Close Links().
-   :::column-end:::
-:::row-end:::
-
-
-
-[!INCLUDE [temp](includes/query-filters-work-items.md)]
-
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
-
-### Expand the Links column
-
-1. Select the expand button on the Links column.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks.png)
-
-1. Select all the fields to flatten.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select all the fields to flatten.](media/odatapowerbi-expandlinks2.png)
-
-1. Select the expand button on the Links.TargetWorkItem column.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
-
-1. Select the fields of the Target Work Item to flatten.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select the fields of the Target Work Item to flatten.](media/odatapowerbi-expandlinks4.png)
-
-	The Table now contains flattened Link and Target Work Item field(s).
-
-    > [!div class="mx-imgBorder"] 
-    > ![The Table now contains flattened Link and Target Work Item field(s).](media/odatapowerbi-expandlinks5.png)
-
-> [!NOTE]
-> If the link represents a one-to-many or many-to-many relationship, then multiple links will
-> expand to multiple rows, one for each link. 
-> 
-> For example, if Work Item #1 is linked to Work Item's #2 and #3, then when you expand the Links record, 
-> you will have 2 rows for Work Item #1. One that represents its link to Work Item #2, and another that
-> represents its link to Work Item #3.
-
-
-[!INCLUDE [temp](includes/sample-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Direct Links - Fields](media/odatapowerbi-directlinks-fields.png)
-
-For a simple report, do the following steps:
-
-1. Select Power BI Visualization **Table**.
-1. Add columns "WorkItemID" to **Values**.
-    - Right-click  "WorkItemID" and select **Don't summarize**.
-1. Add column "Title" to **Values**.
-1. Add column "Link.TargetWorkItem.WorkItemID" to **Values**.
-    - Right-click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
-1. Add column "Link.TargetWorkItem.Title" to **Values**.
-1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then select **Apply Filter**.
-    - This action filters out any work items that don't have a link.
-
-The resulting example report is shown in the following image.
-
-> [!NOTE]
-> Note how work item 233464 is represented by two rows, one for each linked work item.
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Direct Links - Report](media/odatapowerbi-directlinks-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
-
-## Additional queries
-
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
-
-### Filter by Teams, rather than Area Path
+### Return linked User Stories filtered by Teams 
 
 The following query is the same as the one used previously in this article, except it filters by Team Name rather than Area Path. 
 
@@ -395,10 +372,64 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-## Full list of sample reports
 
-[!INCLUDE [temp](includes/sample-fulllist.md)]
+
+[!INCLUDE [temp](includes/rename-query.md)]
+
+
+## Transform data in Power Query Editor
+
+Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
+- `Links` 
+- `Links.TargetWorkItem`
+- `Area`
+- `Iteration`
+- `AssignedTo` 
+
+To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
+ 
+### (Optional) Rename fields
+
+Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. You can rename them in the data table view, or later when you create the report. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+In this example, the following fields have been renamed: 
+
+| Original field name | Rename |
+|---------------------|--------|
+| Links.TargetWorkItem.ID | Target ID |
+| LinksLinkTypeName       | Link Type |
+| Links.TargetWorkItem.State | Target State |
+| Links.TargetWorkItem.Title | Target Title | 
+
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
+## Create a table report to list linked work items 
+
+1. In Power BI, choose **Table** report under **Visualizations**. 
+
+	:::image type="content" source="media/reports-boards/parent-child-links-list-table-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Parent-Child Links list table report. ":::
+
+1. Add the following fields in the order indicated to **Columns**:
+	- **ID**, right-click and select **Don't summarize**  
+	- **State**
+	- **Title**
+	- **Target ID**, right-click and select **Don't summarize**
+	- **Link Type**
+	- **Target State**
+	- **Target Title**  
+ 
+The example report displays. 
+
+:::image type="content" source="media/reports-boards/parent-child-links-table-report.png" alt-text="Screenshot of Sample Parent-child links of Features and User Stories table report.":::
 
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
+ 
+
+ <!---
+1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then select **Apply Filter**.
+    - This action filters out any work items that don't have a link.
+ 
+--> 

@@ -1,59 +1,105 @@
 ---
 title: Project scoped feeds
 description: Understand the difference between project-scoped and organization-scoped feeds
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 08/05/2020
-monikerRange: '>= tfs-2017'
+ms.date: 10/03/2022
+monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
 # Project-scoped feeds
 
-Historically, all feeds used to be scoped to an organization. However, to enable public feeds and to become more consistent with the rest of Azure DevOps, feeds created through the new create feed web UI will now be scoped to a project. 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-New organizations will automatically have one feed scoped to the organization and all subsequent feeds created will be scoped to a project. All existing organization-scoped feeds will remain organization-scoped.
+When creating a new Azure Artifacts feed, you can choose to scope your feed to your project or your organization depending on your needs. Feeds that are created through the web interface are project-scoped by default.
 
-## Understanding the difference between an organization-scoped feed and a project-scoped feed
+## Create a new feed
 
-A project-scoped feed is scoped to a project instead of an organization. 
+::: moniker range=">= azure-devops-2019"
 
-Here are the main differences between the two feed types:
+Follow the instructions below and select the appropriate scope for your need to create a project-scoped or an organization-scoped feed.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
+
+1. Give your feed a **Name** and choose its **visibility**. Select **upstream sources** if you want to include packages from public registries.
+
+1. Select **Project** if you want to create a project-scoped feed, otherwise select **Organization**.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="A screenshot showing how to create project and organization scoped feeds.":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Navigate to **Build & Release**, and then select **Packages**.
+
+    :::image type="content" source="../media/goto-feed-hub.png" alt-text="A screenshot showing how to navigate to feeds in TFS.":::
+
+1. Select the dropdown menu, and then select **New feed**.
+
+    :::image type="content" source="../media/new-feed-button.png" alt-text="A screenshot showing how to create a new feed in TFS.":::
+
+1. Give your feed a **Name**, a **Description**, and then select who can read and contribute to your feed. Select **Include external packages** if you want to use packages from public registries.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to set up a new feed in TFS.":::
+
+::: moniker-end
+
+> [!NOTE]
+> Organization-scoped feeds cannot be converted into project-scoped feeds.
+
+## Project-scoped vs organization-scoped feeds
+
+A project-scoped feed is scoped to a project instead of an organization. Here are the main differences between the two types of feeds:
 
 1. **Visibility**:
 
-    * Project-scoped feeds will always use the visibility of the project. If a project is public, the feed is also public and if the project is private, the feed is also private. 
-    * Organization-scoped feeds will always remain private.
+    * Project-scoped feeds inherit the visibility of the project.
+    * Organization-scoped feeds are always private by default.
 
 1. **Links**:
 
     * The URL of a project-scoped feed includes the project.
-        * Project-scoped feed: `https://feeds.dev.azure.com/contoso/projectId/_apis/Packaging/Feeds`
+        * Example: `https://pkgs.dev.azure.com/<ORG_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json`
 
     * The URL of an organization-scoped feed doesn't include a project.
-        * Organization-scoped feed: `https://feeds.dev.azure.com/contoso/_apis/Packaging/Feeds`
+        * Example: `https://pkgs.dev.azure.com/<ORG_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json`
 
 1. **User interface**:
-    * All organization-scoped feeds will show up in the feed list of the Artifacts feed UI. To see a project-scoped feed in the list you have to be navigated to the project the feed is scoped to.
-
-    * All new feeds are recommended to be project-scoped. Creating a new feed through the create feed web UI will create a project-scoped feed.
+    * All organization-scoped feeds are available from the feeds' dropdown menu. To see a project-scoped feed in the list of feeds, you have to navigate to the project hosting that feed.
 
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#pipelines-permissions) for more details.
 
-## What can I do if I'm concerned about my project-scoped feed's visibility?
+## Security policies
 
-There is an option to not allow public projects in an organization. It can be set under Security policies in [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
-
-If you're concerned that your project will be turned public in the future and you want your feed remain private, you can use the organization-scoped feed that's automatically created when a new organization is created.
+if you want to add an extra layer of security to your project-scoped feed and protect your feed's visibility, you can disable the **Allow public projects** policy from the [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
 
 Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.1&preserve-view=true) to manually create a new organization-scoped feed. You will have to set the default permissions for the new feed manually either by using the [Feed Permission API](/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.1&preserve-view=true) or the Artifacts feed settings.
 
 > [!IMPORTANT]
-> Creating new organization-scoped feeds is not recommended.
+> If a user has permissions to access a specific view, and they don't have permissions to the feed, they will still be able to access and download packages through that view.  
+> If you want to completely hide your packages, you must restrict access to both the feed and the view. See [Feeds and views permissions](feed-permissions.md) for more details.
 
-> [!NOTE]
-> If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md#get-started-with-feed-views) for more information.
+## Q&A
 
-> [!IMPORTANT]
-> If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.  
-> If you want to completely hide your packages, you must restrict both feeds and views permissions. See [Feeds and views permissions](feed-permissions.md) for more information.
+#### Q: How to access a project-scoped feed in another project using Azure Pipelines?
+
+In order for a pipeline to access a project-scoped feed in a different project, it is necessary to grant the pipeline access to both the project where the feed is scoped and the feed itself.
+
+- Project setup: navigate to the project hosting the feed, select **Project settings** > **Permissions** and then add your pipeline's *project build service* to the Contributors group or any other suitable group that provides contributor access to its users.
+
+- Feed setup: Navigate to the feed you want to access, select  **Settings** > **Feed permissions** and then add your *project build service* as a **Collaborator**. Your *Project build service* identity is displayed in the following format: `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
+
+## Related articles
+
+- [Configure permissions](./feed-permissions.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
+- [Use feed views to share packages](./views.md)

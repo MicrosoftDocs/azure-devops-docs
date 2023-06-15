@@ -2,10 +2,10 @@
 title: Manage change, Agile methods
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage change when using Agile methods  
-ms.technology: devops-agile 
-ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-cross-service
+ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 03/30/2021
 ---
@@ -13,7 +13,7 @@ ms.date: 03/30/2021
 
 # Manage change 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Managing change is an aspect of managing your project plan, your requirements, and your sprints. In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change?
 
@@ -41,7 +41,7 @@ Several sources can contribute to changes that you need to manage in your softwa
 - Development or testing takes longer than expected
 - Issues arise after deployment and ongoing operations.  
 
-While some changes are unavoidable, other changes can be avoided or their affect minimized. Many changes arise when a team is new to Agile methods and haven't yet adopted an Agile culture.
+While some changes are unavoidable, other changes can be avoided or their effect minimized. Many changes arise when a team is new to Agile methods and haven't yet adopted an Agile culture.
 
 To minimize avoidable changes, minimize the occurrence of the following.  
 - Unclear requirements and acceptance criteria  
@@ -121,7 +121,7 @@ To formally track change, you can define a change request work item type, simila
 > [!div class="mx-imgBorder"]  
 > ![Change request work item form.](media/manage-change/change-request-form.png) 
 
-This form provides rich-text fields to capture the affect of the change to the following areas: 
+This form provides rich-text fields to capture the effect of the change to the following areas: 
 - Architecture
 - User experience
 - Test
@@ -231,23 +231,21 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Capability Maturity Model Integration (CMMI) process](../boards/work-items/guidance/cmmi-process.md)
 - [Acceptance criteria](../boards/backlogs/best-practices-product-backlog.md#acceptance-criteria)
 - [Definition of Done](../boards/boards/definition-of-done.md)
-- [Manage change using Change request form](../boards/work-items/guidance/cmmi/guidance-manage-change.md)  
 - [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md) 
 - [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md)
 
 #### Monitor and report on progress
 
 - [Triage work items](../boards/queries/triage-work-items.md)
-- [Velocity metrics and usage guidance](../report/dashboards/velocity-guidance.md)
 - [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Burndown guidance, scope management](../report/dashboards/burndown-guidance.md)
 - [Cumulative flow, lead time, and cycle time guidance](../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
 
 #### Notifications
 
-- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
-- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-- [Manage notifications for a team or group](../notifications/manage-team-group-global-organization-notifications.md)
+- [Default and supported notifications](../organizations/notifications/oob-built-in-notifications.md) 
+- [Manage personal notifications](../organizations/notifications/manage-your-personal-notifications.md)
+- [Manage notifications for a team or group](../organizations/notifications/manage-team-group-global-organization-notifications.md)
   
  
 #### Maintain specifications and share information 

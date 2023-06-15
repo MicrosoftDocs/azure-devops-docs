@@ -2,19 +2,20 @@
 title: Configure pipelines to support integration
 titleSuffix: Azure DevOps
 description: Learn how to configure pipelines to support integration with Azure Boards and work tracking
-ms.technology: devops-agile 
+ms.subservice: azure-devops-pipelines-integrations
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2017'
-ms.date: 08/13/2021
+ms.author: chcomley
+author: chcomley
+ms.custom: cross-service
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Configure pipelines to support work tracking
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To support integration and traceability across Azure DevOps services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, and set up automatic linking of work items to builds and releases. 
+To support integration and traceability across Azure DevOps Services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, and set up automatic linking of work items to builds and releases. 
  
 
 ## Supported pipeline and work tracking integration features 
@@ -42,7 +43,7 @@ The following table summarizes the integration points between Azure Boards and A
       Manually link work items to builds  
    :::column-end::: 
    :::column span="2":::
-      You can link from a work item to builds within the same project or other projects within the organization. For details, see [Link to work items from other objects](../../notifications/add-links-to-work-items.md).
+      You can link from a work item to builds within the same project or other projects within the organization. For details, see [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md).
    :::column-end:::
    :::column span="1":::
       All versions 
@@ -54,7 +55,7 @@ The following table summarizes the integration points between Azure Boards and A
       View builds linked to from a work item 
    :::column-end::: 
    :::column span="2":::
-      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../notifications/add-links-to-work-items.md#view-list-links).
+      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../organizations/notifications/add-links-to-work-items.md#view-list-links).
    :::column-end:::
    :::column span="1":::
       All versions 
@@ -119,7 +120,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query Work Items task, ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../tasks/utility/work-item-query.md).  
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
    :::column-end:::
    :::column span="1":::
       Azure DevOps Server 2020 and later versions 
@@ -325,7 +326,7 @@ To verify the integration is working, perform the following steps:
 
 1. Link one or more work items to a commit or pull request in Azure Repos Git repository. For details, see: 
 	-  [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)  
-	-  [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+	-  [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
 1.  Run the pipeline. 
 
@@ -368,7 +369,7 @@ If a build pipeline fails, you can automatically create a work item to track get
  
 
 > [!TIP]   
-> The option to **Create work item on failure** is only supported for Classic pipelines. To accomplish this with a YAML  pipeline, see the [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) marketplace extension. 
+> The option to **Create work item on failure** is only supported for Classic pipelines. To accomplish this with a YAML  pipeline, you can use a marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) or you can [implement it yourself using Azure CLI or REST API calls](../customize-pipeline.md#create-work-item-on-failure). 
  
 
 <a id="classic-options-integrations" /> 
@@ -395,7 +396,7 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 	:::image type="content" source="media/pipelines-integration/yaml-pipeline-more-actions-menu-options.png" alt-text="Screenshot of YAML pipeline More Actions menu options.":::
 
-1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
 
@@ -406,7 +407,7 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 1. Open pipeline **Build properties** as describe in [Build properties](#classic-build-properties).
 
-1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/classic-build-status-badge.png" alt-text="Screenshot of classic build properties, status badge section.":::
 
@@ -420,7 +421,7 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 	:::image type="content" source="media/pipelines-integration/enable-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages selected.":::
 
-1.	Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1.	Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/classic-release-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages that you can copy.":::
 	
@@ -527,7 +528,7 @@ See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact An
 - [Configure repositories to support work tracking](../../repos/git/configure-repos-work-tracking.md).  
 - [How to retrieve all work items associated with a release pipeline using Azure DevOps API](https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/)
 - [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
-- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+- [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
 - [Linking, traceability, and managing dependencies](../../boards/queries/link-work-items-support-traceability.md)
 - [Link type reference](../../boards/queries/link-type-reference.md)

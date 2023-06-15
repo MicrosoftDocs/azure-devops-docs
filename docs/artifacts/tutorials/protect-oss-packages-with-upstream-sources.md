@@ -1,18 +1,19 @@
 ---
 title: How to use upstream sources in your Azure Artifacts feed
 description: Use upstream sources in Azure Artifacts to consume packages from public registries
-ms.technology: devops-artifacts
-ms.reviewer: amullans
-ms.date: 08/24/2021
-monikerRange: '>= tfs-2017'
+ms.service: azure-devops-artifacts
+ms.date: 06/03/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Tutorial: How to use upstream sources
 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
 Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
-This tutorial will walk you though how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
+This tutorial will walk you through how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
 
 In this tutorial, you will:
 
@@ -32,7 +33,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build & Release**, and then select **Packages**.
 
@@ -48,7 +49,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 2. Select **New Feed** to create a new feed.
 
@@ -64,7 +65,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
@@ -95,7 +96,7 @@ Now that we created our feed, we need to update the config file to point to our 
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build & Release** > **Packages**, and then select **Connect to Feed**.
 
@@ -122,16 +123,135 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 1. Create a new file named *nuget.config* in the root of your project.
 
 1. Paste the XML snippet in your config file.
- 
-* * *
+
+#### [Pip](#tab/pip/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **pip** under the Python section.
+
+    :::image type="content" source="../media/project-setup-pip.png" alt-text="A screenshot showing how to connect to a feed with pip projects.":::
+
+1. Create a [virtual environment](https://go.microsoft.com/fwlink/?linkid=2103878) if you haven't done so already.
+
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv and paste the following snippet:
+
+    ```command
+    [global]
+    index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
+    ```
+
+#### [Twine](#tab/twine/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **twine** under the Python section.
+
+    :::image type="content" source="../media/project-setup-twine.png" alt-text="A screenshot showing how to connect to a feed with twine projects.":::
+
+1. Add a .pypirc file to your home directory and paste the following snippet:
+
+    ```command
+    [distutils]
+    Index-servers = FEED-NAME
+    
+    [FEED-NAME]
+    Repository = https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/upload/
+    ```
+
+> [!TIP]
+> If you already have a .pypirc file, remove the [pypi] section if your file contains credentials.
+
+#### [Maven](#tab/maven/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **Maven**.
+
+    :::image type="content" source="../media/project-setup-maven.png" alt-text="A screenshot showing how to connect to a feed with Maven projects.":::
+
+1. Add the following snippet to the `<repositories>` and `<distributionManagement>` sections in your pom.xml:
+
+    ```command
+    <repository>
+      <id>[FEED-NAME]</id>
+      <url>https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    ```
+
+1. Add a `<server>` to your settings.xml file:
+
+    ```command
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <servers>
+        <server>
+          <id>[FEED-NAME]</id>
+          <username>[ORGANIZATION-NAME]</username>
+          <password>[PERSONAL_ACCESS_TOKEN]</password>
+        </server>
+      </servers>
+    </settings>
+    ```
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag in your settings.xml file.
+
+#### [Gradle](#tab/gradle/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **Gradle**.
+
+    :::image type="content" source="../media/project-setup-gradle.png" alt-text="A screenshot showing how to connect to a feed with Gradle projects.":::
+
+1. Add the following snippet to the *repositories* and *publishing* sections in your build.gradle file:
+
+    ```command
+    maven {
+        url 'https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1'
+        name '[FEED-NAME]'
+        authentication {
+            basic(BasicAuthentication)
+        }
+    }
+    ```
+
+1. Add a `<server>` to your settings.xml file:
+
+    ```command
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <servers>
+        <server>
+          <id>[FEED-NAME]</id>
+          <username>[ORGANIZATION-NAME]</username>
+          <password>[PERSONAL_ACCESS_TOKEN]</password>
+        </server>
+      </servers>
+    </settings>
+    ```
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes. Paste your personal access token into the `<password>` tag in your settings.xml file.
+
+- - -
 
 ## Restore packages
 
 Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
 
-We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream. 
+We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream.
 
-# [npm](#tab/npm)
+# [npm](#tab/npmrestore)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
@@ -144,7 +264,7 @@ npm install --force
 
 Your feed now should contain any packages you saved from the upstream source.
 
-# [NuGet](#tab/nuget)
+# [NuGet](#tab/nugetrestore)
 
 - **Clear your local cache**:
 
@@ -160,11 +280,11 @@ Your feed now should contain any packages you saved from the upstream source.
 
 Your feed now should contain any packages you saved from the upstream source.
 
-* * *
+- - -
 
 ## Related articles
 
-- [upstream sources overview](../concepts/upstream-sources.md)
-- [Upstream behavior](../concepts/upstream-behavior.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
 - [Feed permissions](../feeds/feed-permissions.md)
 - [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)

@@ -2,16 +2,17 @@
 title: RPC failures and http.postBuffer
 titleSuffix: Azure Repos
 description: RPC failures and http.postBuffer
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.manager: jepling
 ms.topic: conceptual
 ms.date: 01/22/2019
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # RPC failures and http.postBuffer
 
-[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you see an `RPC failed` error during `git push`, such as:
 

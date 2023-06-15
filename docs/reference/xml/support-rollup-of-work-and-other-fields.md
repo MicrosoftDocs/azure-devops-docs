@@ -2,18 +2,20 @@
 title: Support rollup of work and other fields
 titleSuffix: Azure DevOps & TFS
 description: Provides summed values of select fields for all child work items of a parent.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
+ms.custom: process, archive-candidate
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/22/2019
+ms.date: 04/04/2022
 ---
 
 
 # Rollup of work and other fields
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. Because Azure DevOps Services and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
   
@@ -71,7 +73,7 @@ From the sprint backlog, the sum of all **Remaining Work** defined for all tasks
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Sprint backlog displays rollup of Remaining Work](media/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
 
@@ -96,7 +98,7 @@ From a sprint task board, there are three types of rollup:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Task board, collapsed backlog items](../../boards/sprints/media/ALM_TB_Intro.png)
 
@@ -120,17 +122,13 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 ::: moniker-end
 
-::: moniker range="<=tfs-2018"
+::: moniker range="tfs-2018"
 
-|Method|TFS 2013|TFS 2015|TFS 2017|TFS 2018| 
-|------------|----------|----------------------|  
-|Work item query charts|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-|Microsoft Excel|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
-|Microsoft Project|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-|Marketplace extensions|![Not supported](media/icon_witerror.png "Icon_WITerror")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|    
-|SQL Server Reporting Services report|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|TFS-Project Server integration|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![Not supported](media/icon_witerror.png "Icon_WITerror")|![Not supported](media/icon_witerror.png "Icon_WITerror")|  
-
+- Work item query charts
+- Microsoft Excel
+- Microsoft Project
+- Marketplace extensions
+- SQL Server Reporting Services report 
 ::: moniker-end
 
 
@@ -155,7 +153,7 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
 > [!TIP]
 > To provide support for opening work items and query results in Excel from the web portal, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Microsoft Project and rollup of work tracking data 
  
@@ -169,8 +167,6 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
 
 <a name="marketplace"></a>
 
-::: moniker range=">= tfs-2015"
-
 ## Marketplace extensions and custom controls   
 
 There are several extensions available from the [Marketplace](https://marketplace.visualstudio.com/vsts) that provide rollup. Here are a few that may support your needs: 
@@ -179,8 +175,6 @@ There are several extensions available from the [Marketplace](https://marketplac
 - [TFS Aggregator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin), supports Azure DevOps Services and TFS 
 
 Or, you can write an extension using the [REST API for work tracking](/rest/api/azure/devops/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).  
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -200,25 +194,13 @@ You can use the [Analytics Service](../../report/powerbi/what-is-analytics.md) t
   
  If you have SQL Server Analysis Services deployed, you can get rollup for backlog items from these reports. The refresh frequency for these reports is 2 hours.  
   
--   [Backlog Overview](../../report/sql-reports/backlog-overview-scrum.md)  
--   [Stories Overview](../../report/sql-reports/stories-overview-report-agile.md)   
--   [Requirements Overview](../../report/sql-reports/requirements-overview-report-cmmi.md)  
+-   [Backlog Overview](/previous-versions/azure/devops/report/sql-reports/backlog-overview-scrum)  
+-   [Stories Overview](/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile)   
+-   [Requirements Overview](/previous-versions/azure/devops/report/sql-reports/requirements-overview-report-cmmi)  
   
-If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
 ::: moniker-end  
-
-::: moniker range="<= tfs-2015"  
-
-## TFS-Project Server integration 
-
-Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](/previous-versions/azure/devops/reference/tfs-ps-sync/understand-how-updates-to-specific-fields-managed). If you need to add fields or change how fields are mapped, see [Customize the field mapping](/previous-versions/azure/devops/reference/tfs-ps-sync/customize-field-mapping-tfs-project-server).  
-  
-
-> [!IMPORTANT]
-> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server).
-
-::: moniker-end 
 
 <a name="requirements"></a>  
  

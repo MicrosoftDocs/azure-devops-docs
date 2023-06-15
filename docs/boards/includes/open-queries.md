@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 07/27/2021
 ---
@@ -14,7 +14,7 @@ ms.date: 07/27/2021
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
 > [!div class="mx-imgBorder"]  
-> ![Open Boards>Queries, vertical nav](/azure/devops/boards/queries/media/view-run-queries/open-queries-vert.png) 
+> ![Open Boards>Queries, vertical nav](../queries/media/view-run-queries/open-queries-vert.png) 
 
 If it is your first time opening **Queries**, the page opens to **Favorites**. This page lists those queries that you have indicated are a favorite.  Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
@@ -24,11 +24,11 @@ If it is your first time opening **Queries**, the page opens to **Favorites**. T
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 From your web browser, open **Boards>Queries**. 
 
-![From your web browser, open Boards>Queries](/azure/devops/boards/queries/media/view-run-queries/open-hub-page.png)  
+![From your web browser, open Boards>Queries](../queries/media/view-run-queries/open-hub-page.png)  
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Or, select one of the following options:
 - **Edit Query**: Opens the [Query Editor](../queries/using-queries.md) for the selected query.
 - **New Query**: Opens the [Query Editor](../queries/using-queries.md) with the default new query options.
 - **Open in Microsoft Excel (Flat)**: [Opens the query in Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
-- **Send to Microsoft Outlook**: [Open](/azure/devops/boards/queries/share-plans)
+- **Send to Microsoft Outlook**: [Open](../queries/share-plans.md)
 - **Cut**: Cuts the query. You can then paste the query under a different folder. 
 - **Copy**: Copies the query. You can then paste the query under the same folder or a different folder. 
 - **Delete**: [Deletes the query](../queries/organize-queries.md).  

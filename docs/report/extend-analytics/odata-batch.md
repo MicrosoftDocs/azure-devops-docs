@@ -2,10 +2,11 @@
 title: OData batch support 
 titleSuffix: Azure DevOps 
 description: Learn how to write good OData queries for Analytics for Azure DevOps.
-ms.technology: devops-analytics
-ms.reviewer: prprice
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
+ms.author: chcomley
+author: chcomley
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
@@ -13,7 +14,7 @@ ms.date: 09/30/2020
 # OData batch support
 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Batch requests are part of the OData spec. Analytics for Azure DevOps provides limited support, as a means to submit large requests. For more information about batch operations in OData, see section [11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
 

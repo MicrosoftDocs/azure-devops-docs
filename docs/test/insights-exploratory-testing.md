@@ -2,17 +2,18 @@
 title: Get insights across exploratory test sessions
 description: Manual and exploratory testing - get insights with exploratory testing across your test sessions by using the Microsoft Test & Feedback extension
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Get insights across your exploratory testing sessions
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
  
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
@@ -96,7 +97,7 @@ app from the information collected during your exploratory testing sessions.
 
 Use a query to explore the work items that users have not yet explored.
 
-1. Create a shared query in Azure DevOps or TFS that selects work items
+1. Create a shared query in Azure DevOps that selects work items
    that can be explored using the Test &amp; Feedback extension, such as
    work items in the epic category, feature category, requirement category, 
    requirement-based suites, or test cases. 

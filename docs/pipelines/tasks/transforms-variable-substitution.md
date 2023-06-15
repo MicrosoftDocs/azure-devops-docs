@@ -7,25 +7,25 @@ ms.topic: reference
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/18/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # File transforms and variable substitution reference
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureRmWebAppDeploymentV3) task
-version 3 and later and the [IIS Web App Deploy](deploy/iis-web-app-deployment-on-machine-group.md) task, allow users to configure the package based on the environment specified.
+version 3 and later and the [IIS Web App Deploy](/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-on-machine-group-v0) task, allow users to configure the package based on the environment specified.
 These tasks use **msdeploy.exe**, which supports the overriding of values in the **web.config** file with values from the **parameters.xml** file.
 However, file transforms and variable substitution are **not confined to web app files**. You can use these techniques with any XML or JSON files. 
 
 ::: moniker range="> tfs-2018"
 > [!NOTE]  
-> File transforms and variable substitution are also supported by the separate [File Transform task](utility/file-transform.md) for use in Azure Pipelines.
+> File transforms and variable substitution are also supported by the separate [File Transform task](/azure/devops/pipelines/tasks/reference/file-transform-v2) for use in Azure Pipelines.
   You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
 ::: moniker-end
 
@@ -432,7 +432,7 @@ variables:
 * A JSON object may contain an array whose values can be referenced by their index.
   For example, to substitute the first value in the **Users** array shown above,
   use the variable name `DBAccess.Users.0`. To update the value in **NewWelcomeMessage**,
-  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](utility/file-transform.md) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
+  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](/azure/devops/pipelines/tasks/reference/file-transform-v2) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
 
 * Only **String** substitution is supported for JSON variable substitution.
 

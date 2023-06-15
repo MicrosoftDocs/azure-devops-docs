@@ -2,14 +2,13 @@
 title: Bi-directional traceability between Releases and Jira issues - Sprint 154 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 07/08/2019
 description: In the **Sprint 154 Update** of Azure DevOps, we are releasing the Azure Pipelines for Jira app to the Atlassian marketplace. 
 ---
 
 # Bi-directional traceability between Releases and Jira issues  - Sprint 154 Update
 
-In the **Sprint 154 Update** of Azure DevOps, we are releasing the [Azure Pipelines for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) app to the Atlassian marketplace. The integration adds links to Jira issues as work items deployed with the releases and allows you to view deployment details directly in Jira issues.
+In the **Sprint 154 Update** of Azure DevOps, we are releasing the [Azure Pipelines for Jira](https://github.com/Microsoft/azure-pipelines-jira) app to the Atlassian marketplace. The integration adds links to Jira issues as work items deployed with the releases and allows you to view deployment details directly in Jira issues.
 
 We also made improvements to make it easier for you to search and track work items. The search box now supports instant search for work items and list of recent work items. In addition, Wiki now lets you create live documents by allowing you to create and track work items using wiki content.
 

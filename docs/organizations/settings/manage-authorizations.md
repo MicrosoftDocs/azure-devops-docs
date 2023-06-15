@@ -1,8 +1,8 @@
 ---
-ms.technology: devops-collab
 ms.topic: conceptual
 title: Authorize other services to access Azure DevOps
 description: Learn how to authorize other services to work with Azure DevOps Services.
+ms.subservice: azure-devops-security
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
 ms.author: chcomley
@@ -12,7 +12,7 @@ ms.date: 09/29/2020
 
 #  Authorize other services to access Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to give a service access to Azure DevOps. The OAuth 2.0 framework provides safe, secure access to your resources. Some of these resources include work items, source code, and build results.
 

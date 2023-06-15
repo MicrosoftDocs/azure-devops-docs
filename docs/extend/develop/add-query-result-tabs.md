@@ -2,9 +2,9 @@
 title: Add tabs on query results | Extensions for Azure DevOps
 description: Extend Azure DevOps with your own query results tab.
 ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 05/15/2018
@@ -12,14 +12,14 @@ ms.date: 05/15/2018
 
 # Add tabs on query result pages
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
 
 ![Tab location on the Azure DevOps Query Results.](media/query-results-pivot-tab.png)
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Create your web page
 
@@ -92,7 +92,7 @@ For your files, set `addressable` to `true` unless you include other files that 
 	
 ## Example
 ```javascript
-VSS.register(VSS.getContribution(), {
+SDK.register(SDK.getContributionId(), {
     pageTitle: function(state) {
         return "Hello";
     },
@@ -107,7 +107,7 @@ VSS.register(VSS.getContribution(), {
 });
 ```
 
-Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
 
 ## Next steps
 

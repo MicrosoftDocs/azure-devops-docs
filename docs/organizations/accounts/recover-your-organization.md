@@ -1,27 +1,33 @@
 ---
-title: Restore organization after it's removed, deleted
+title: Recover a deleted organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to recover your organization and data up to 90 days after being deleted, done with organization Owner permissions.
-ms.technology: devops-accounts
+description: Learn how to restore your organization and data up to 90 days after being deleted, done with organization owner permissions.
+ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/16/2020
+ms.date: 10/25/2022
 monikerRange: 'azure-devops'
 ---
 
-# Recover your deleted organization in Azure DevOps
+# Recover a deleted organization
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-After you delete your organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover your organization. After 28 days, your organization and data are permanently deleted.
+After you delete an organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover the organization. After 28 days, the organization and data are permanently deleted.
 
 ## Prerequisites
 
 * An organization deleted within the last 28 days.
-* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+* Organization owner permissions. [How do I find the organization owner?](../security/look-up-organization-owner.md). For more information about specific scenarios, see the following instructions:
+  * [When you don't have an Azure DevOps Administrator](resolve-orphaned-organization.md#when-you-dont-have-an-azure-devops-administrator)
+  * [Resolve orphaned organization when your Azure DevOps Administrator *is* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-is-a-member-of-the-target-organization)
+  * [Resolve orphaned organization when your Azure DevOps Administrator *isn't* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-isnt-a-member-of-the-target-organization)
+
+> [!NOTE]
+>  If there's no owner for the deleted organization and you're an active Project Collection Administrator (PCA) and a member of the deleted organization, you still can't access **Organization settings** to assign a new owner. If this is your scenario, [contact Support](https://developercommunity.visualstudio.com/AzureDevOps).
 
 ## Recover organization
 
@@ -31,19 +37,19 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 2. On your profile page, go to the lower *Organizations Pending Deletion* section, and then select **Restore**.
 
-   ![Restore your deleted organization](media/shared/visual-studio-profile-page.png)
+   ![Screenshot showing organizations pending deletion with highlighted Restore button.](media/shared/visual-studio-profile-page.png)
 
 3. In the resulting popup, select **Restore** to confirm.
 
    * If your organization URL is still available, you can restore it.
 
-      ![Confirm restoration of your organization](media/recover-your-organization/confirm-restore-organization.png)
+      ![Screenshot showing highlighted Restore button.](media/recover-your-organization/confirm-restore-organization.png)
 
    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
 
 4. After you restore your organization, do the following tasks:
 
-   * If billing was previously set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
+   * If billing was previously set up for your organization, [relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
    * If your organization was connected to Azure Active Directory for authenticating user access, you don't have to reconnect it.
 
 ## Related articles
@@ -52,3 +58,4 @@ After you delete your organization, it's disabled but available for 28 days. If 
 * [Create a new organization](create-organization.md)
 * [Change organization owner](change-organization-ownership.md)
 * [Change organization data region](change-organization-location.md)
+* [FAQs for configuring and customizing your organization](faq-configure-customize-organization.yml)

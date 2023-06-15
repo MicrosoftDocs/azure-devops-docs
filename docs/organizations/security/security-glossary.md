@@ -2,19 +2,19 @@
 title: Security terms and acronyms defined
 titleSuffix: Azure DevOps
 description: Key definitions for objects and items used to authenticate and manage users and groups in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: conceptual 
 ms.custom: has-adal-ref
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 01/25/2021
 ---
 
 # Security key concepts
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides definitions for select terms used to manage authentication and permissions for Azure DevOps.
  
@@ -25,11 +25,11 @@ An access control entry is an entry in an access control list (ACL) that grants 
 
 ## Access control list (ACL)
 
-An access-control list is a list of permissions attached to an Azure DevOps object, such as . An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. For a list of namespaces, ACLs, and management tools, see [Security namespace and permission reference](namespace-reference.md). 
+An access-control list is a list of permissions attached to an Azure DevOps object. An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. For a list of namespaces, ACLs, and management tools, see [Security namespace and permission reference](namespace-reference.md). 
 
 ## Access level
 
-Access levels correspond to a licensing level to provide access to certain features. Access to these features is managed by membership to an access level. To learn more, see [About access levels](access-levels.md).
+Access levels correspond to a licensing level to provide access to certain features. Access to these features is restricted to members with that access level. To learn more, see [About access levels](access-levels.md).
 
 <!---
 ## Anonymous user
@@ -46,11 +46,11 @@ Audit logs contain many changes that occur throughout an Azure DevOps organizati
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security, authentication, and authorization](about-security-identity.md).
+Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by services such as Active Directory or Azure Active Directory. To learn more, see [About security, authentication, and authorization](about-security-identity.md).
 
 ## Authorization
 
-Authorization refers to the operations performed to verify that the identity which is attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. To learn more, see [About security, authentication, and authorization](about-security-identity.md).
+Authorization refers to the operations performed to verify that the identity that is attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. To learn more, see [About security, authentication, and authorization](about-security-identity.md).
 
 ## Azure Active Directory Authentication Libraries
 
@@ -84,7 +84,7 @@ The Microsoft Authentication Library (MSAL) enables application developers to ac
 
 ## Namespace 
 
-Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask. 
+Each family of Azure DevOps resources (work items, Git repositories, etc.) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask. 
 
 For a list of Azure DevOps namespaces, see [Security namespace and permission reference](namespace-reference.md).  
 
@@ -130,7 +130,7 @@ A security model that limits actions based on membership within a role and permi
 
 ## Security group
 
-A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
+A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps supports many default security groups and the ability to create custom groups. To learn more, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
 
 ## Service account
 
@@ -138,8 +138,7 @@ An account used to monitor or manage select services, such as build or test serv
 
 ## Service principal
 
-A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
-
+A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals) and [service principal and managed identity support in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 ## Secure Sockets Layer (SSL)
 
@@ -155,7 +154,7 @@ A user account that has been granted membership to an organization in an Azure D
 
 ## Team group
 
-A security group that is defined when a team is created and automatically populated with members as they are added to the team.
+A security group that is defined when a team is created and automatically populated with members as they're added to the team.
 
 ::: moniker range="azure-devops"
 
@@ -182,7 +181,7 @@ For Azure DevOps Server, see [Use TFSSecurity to manage groups and permissions f
 
 ## Valid users
 
-Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md).
+Valid users are users that Azure DevOps recognizes as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they're automatically added to one of the valid user groups. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md).
 
 
 

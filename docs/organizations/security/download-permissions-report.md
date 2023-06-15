@@ -2,17 +2,17 @@
 title: Download permissions report for a repository
 titleSuffix: Azure DevOps Services
 description: Download json-formatted permission report for a repository.  
-ms.technology: devops-audit
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-audit
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 06/08/2021
+ms.date: 07/07/2022
 ---
 
 # Download permission report for a repository 
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
  
 To determine the effective permissions of users and groups for a repository, you can download the permissions report. Requesting the report generates an email with a link to download the report. The report lists the effective permissions for the repository you select, for each user and group specified at the time the report is generated. Inherited permissions come from a parent group which you can view from the web portal. The report is a json-formatted report that you can open using Power BI or other json reader.  
@@ -54,8 +54,11 @@ You can download the report for a select repository or for all repositories defi
 
 1. Once you receive the email from Azure DevOps Notifications, open it and choose **Download Report**. 
 
-	A report labeled **PermissionsReport_**<em>GUID</em>.json appears in your Downloads folder. 
+	A report labeled **PermissionsReport_**<em>GUID</em>.json appears in your **Downloads** folder. 
  
+	> [!IMPORTANT]
+	> Reports are automatically deleted after 28 days of the request. 
+
 
 ## Related articles  
 

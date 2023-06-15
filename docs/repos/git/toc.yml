@@ -12,21 +12,23 @@
     href: git-config.md
   - name: Clone an existing repo
     href: clone.md
-  - name: Import repo - Web
+  - name: Import repo
     href: import-git-repository.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
+  - name: Use Visual Studio with Git
+    href: ../tfvc/use-visual-studio-git.md
 - name: Connect & authenticate
   items:
   - name: Connect to a project or repo
-    href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json
   - name: Authentication
     href: auth-overview.md
   - name: Authenticate with SSH
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
-- name: Key concepts  
+- name: Key concepts
   items:
   - name: Git workflow
     href: gitworkflow.md
@@ -56,7 +58,7 @@
     items:
     - name: Repository settings and policies
       href: repository-settings.md
-    - name: Set repository permissions (Security) 
+    - name: Set repository permissions (Security)
       href: set-git-repository-permissions.md
     - name: Create a readme
       href: create-a-readme.md
@@ -70,7 +72,7 @@
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
-- name: Branches & forks 
+- name: Branches & forks
   items:
   - name: About branches & branch policies
     href: branch-policies-overview.md
@@ -90,18 +92,18 @@
       href: manage-your-branches.md
     - name: Set branch policies
       href: branch-policies.md
-    - name: Set branch permissions 
+    - name: Set branch permissions
       href: branch-permissions.md
-      displayname: security  
+      displayname: security
     - name: Delete a branch
       href: delete-branch.md
     - name: Restore a deleted branch
       href: restore-deleted-branch.md
     - name: Require branch folders
-      href: require-branch-folders.md 
+      href: require-branch-folders.md
     - name: Lock a branch
-      href: lock-branches.md 
-- name: Commits, push, fetch, pull 
+      href: lock-branches.md
+- name: Commits, push, fetch, pull
   items:
   - name: Save work with commits
     href: commits.md
@@ -123,10 +125,14 @@
     href: commit-history.md
   - name: Commit details
     href: commit-details.md
+  - name: Git index.lock file
+    href: git-index-lock.md
 - name: Pull requests
   items:
   - name: About pull requests
     href: about-pull-requests.md
+  - name: Merge strategies and squash merge
+    href: merging-with-squash.md
   - name: View and open pull requests
     href: view-pull-requests.md
   - name: Create pull requests
@@ -135,8 +141,6 @@
     href: review-pull-requests.md
   - name: Complete pull requests
     href: complete-pull-requests.md
-  - name: Squash merge pull requests 
-    href: merging-with-squash.md
   - name: Pull request notifications
     href: pull-request-notifications.md
   - name: Pull request templates
@@ -156,15 +160,15 @@
   - name: Configure repos to link to work items
     href: configure-repos-work-tracking.md
   - name: Auto complete work items with pull requests
-    href: ../../boards/work-items/auto-complete-work-items-pull-requests.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json  
+    href: ../../boards/work-items/auto-complete-work-items-pull-requests.md?toc=/azure/devops/repos/toc.json
   - name: Drive Git development from a work item
-    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json
   - name: Work item completion on commit
     href: resolution-mentions.md
   - name: Set up continuous integration
-    href: ../../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json
   - name: Define a CI build for your repo
-    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json
   - name: Create a pull request status server
     href: create-pr-status-server.md
   - name: Use Azure Functions to create custom branch policies
@@ -187,8 +191,8 @@
     href: go-get.md
 - name: Reference
   items:
-  - name: "Default Git permissions (Security)"
-    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Default Git permissions (Security)
+    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json
   - name: Download permissions report
     href: ../../organizations/security/download-permissions-report.md
   - name: Frequently asked questions
@@ -198,8 +202,8 @@
   - name: Map TFVC actions to Git
     href: mapping-my-tfvc-actions-to-git.md
   - name: RPC failures & http.postBuffer
-    href: rpc-failures-http-postbuffer.md 
     displayName: json
+    href: rpc-failures-http-postbuffer.md
   - name: SSH passphrases
     href: gcm-ssh-passphrase.md
 - name: Resources

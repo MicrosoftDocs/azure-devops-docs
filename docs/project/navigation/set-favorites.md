@@ -2,19 +2,19 @@
 title: Set personal or team favorites
 titleSuffix: Azure DevOps
 description: Quickly access views or artifacts by favoriting them in Azure DevOps
-ms.custom: Navigation
-ms.technology: devops-collab
+ms.custom: "navigation, cross-project, cross-service"
+ms.subservice: azure-devops-projects
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 03/21/2019
 ---
 
 # Tutorial: Set personal or team favorites    
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Favorite ![start icon](../../media/icons/icon-favorite-star.png) those views that you frequently access. You can favorite all sorts of Azure DevOps features and tools&mdash;such as a project, repository, build pipeline, dashboard, backlog, board, or query. You can set favorites for yourself or your team. 
 
@@ -36,7 +36,7 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 >[!div class="checklist"]  
 > - Project 
@@ -59,7 +59,7 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 * You must connect to a project through the web portal. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
 * You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
@@ -88,7 +88,7 @@ Access views that you have favorited by choosing the :::image type="icon" source
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Access views that you have favorited by choosing the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
@@ -126,7 +126,7 @@ Access views that you have favorited by choosing the :::image type="icon" source
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Favorite a project
 
@@ -209,7 +209,7 @@ You can also set a query as a personal favorite by opening the query and choosin
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Open **Work>Queries**. Next, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
 
@@ -227,7 +227,7 @@ To learn more about delivery plans, see [Review team Delivery Plans](../../board
 To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the Delivery Plan. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 To mark a delivery plan as a favorite, open the **Work>Plans** page and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the Delivery Plan.
 
@@ -245,7 +245,7 @@ From any **Repos** page, open the repository selector and choose the :::image ty
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From any **Code** page, open the repository selector and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the repository you want to favorite. 
 
@@ -267,7 +267,7 @@ Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Ch
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Open **Build and Release>Builds** and choose either **Mine** or **Definitions** page. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
 
@@ -286,7 +286,7 @@ To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 To mark a test plan as a favorite, open the **Test>Test Plans** page and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to a test plan from the menu that shows All test plans. 
 
@@ -307,7 +307,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can unfavorite an artifact from the **Projects>Favorites** page and choose the :::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon of a currently favorited artifact. 
 
@@ -323,7 +323,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ## Related articles
 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md) 
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) 
 - [Set your preferences](../../organizations/settings/set-your-preferences.md) 
 
 
@@ -352,7 +352,7 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 
 > [!div class="mx-tdCol2BreakAll"]  

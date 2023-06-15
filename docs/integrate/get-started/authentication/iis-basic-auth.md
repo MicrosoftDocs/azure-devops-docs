@@ -1,10 +1,10 @@
-﻿---
+---
 title: IIS Basic Authentication invalidates using PATs
 description: Enabling IIS Basic Authentication invalidates using Personal Access Tokens.
 ms.assetid: 173198c4-9b65-4c4a-a8f1-931b6b6c295a
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
-monikerRange: '<= azure-devops'
+monikerRange: '<= azure-devops-2020'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/30/2021
@@ -12,7 +12,7 @@ ms.date: 09/30/2021
 
 # Enabling IIS Basic Authentication invalidates using Personal Access Tokens
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned off always when using Azure DevOps Server.  Only if necessary should you enable IIS Basic Authentication. When IIS Basic Authentication is enabled on your windows machine, it prevents you from using personal access tokens (PATs) as an authentication mechanism.
 
@@ -30,7 +30,7 @@ The extra header must include a base 64 encoding of "user:PAT". See the followin
 ### Format
 
    ```
-   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:PAT"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
+   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:password"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
    ```
 
 ### Example

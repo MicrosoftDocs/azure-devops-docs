@@ -1,9 +1,9 @@
 ---
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 09/24/2020
 ---

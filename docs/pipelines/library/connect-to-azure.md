@@ -1,18 +1,18 @@
 ---
 title: Connect to Microsoft Azure
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-arm-template
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 10/15/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -77,10 +77,10 @@ or a [VM with a managed service identity](#use-msi).
 
 ## Create an Azure Resource Manager service connection with an existing service principal
 
-1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
+1. If you want to use a predefined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
    * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
-   * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
+   * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-create-service-principal-portal#option-1-upload-a-certificate)   
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.

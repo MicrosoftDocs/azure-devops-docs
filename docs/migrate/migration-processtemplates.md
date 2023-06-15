@@ -3,17 +3,17 @@ title: Validation of process templates for migration import
 titleSuffix: Azure DevOps
 description: Guidance for fixing common data migration tool process template issues.
 ms.topic: troubleshooting
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops' 
 ms.date: 04/01/2021
 ---
 
 # Validate and resolve errors related to process templates
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 As part of the migration import process, the data migration tool checks the process used by the projects in the collection. Fix any errors that get flagged.  
 
@@ -171,5 +171,5 @@ By default, Azure DevOps Services will support 64 global lists. You'll typically
 - [Differences between Azure DevOps Services and Azure DevOps Server process template customizations](../organizations/settings/work/import-process/differences.md)
 - [Configure features after Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 - [Resolve validation errors](../organizations/settings/work/import-process/resolve-errors.md)
-- [Define global lists in Azure DevOps Server](../reference/xml/define-global-lists.md)
+- [Define global lists in Azure DevOps Server](/previous-versions/azure/devops/reference/xml/define-global-lists)
 - [Process customization PowerShell scripts](https://github.com/Microsoft/process-customization-scripts)

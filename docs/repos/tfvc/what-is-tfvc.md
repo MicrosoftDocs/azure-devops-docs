@@ -1,28 +1,30 @@
 ---
 title: What is Team Foundation Version Control
 titleSuffix: Azure Repos
-description: Use Team Foundation Version Control
+description: Find out how to get started with Team Foundation Version Control (TFVC), a centralized version control system. Understand the benefits of using version control.
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 06/02/2020
-monikerRange: '>= tfs-2015'
+ms.date: 11/10/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# What is Team Foundation Version Control
+# What is Team Foundation Version Control?
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
-Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
+Version control systems consist of software that helps you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
-Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/index.yml), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
+Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/index.yml), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using TFVC. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
 
 ## Why use version control?
 
-Without version control, you're tempted to keep multiple copies of code on your computer. This is dangerous, as it's easy to change or delete a file in the wrong copy of code, potentially losing work. Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
+Without version control, you're tempted to keep multiple copies of code on your computer. This is dangerous, because it's easy to change or delete a file in the wrong copy of code, potentially losing work. Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
 
 Version control systems provide the following benefits:
 
@@ -36,9 +38,9 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 ## Team Foundation Version Control
 
-Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
+TFVC is a centralized version control system. Typically, team members have only one version of each file on their development machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Team Foundation Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
+TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Azure DevOps Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md), you can identify the exact changes that they made.
 
 
 ### Quickstarts 
@@ -51,16 +53,16 @@ Get started by creating a project, configuring your workspace, and reviewing and
 
 ### Step-by-step tutorials  
 
-Learn the basics of working in TFVC with the following tutorial which shows a day in the life of a devops developer using Visual Studio and TFVC.
+Learn the basics of working in TFVC with the following tutorial, which shows a day in the life of a DevOps developer using Visual Studio and TFVC.
 
-* [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
-* [Visual Studio: Review Code](get-code-reviewed-vs.md)
+* [Day in the life of a DevOps developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+* [Visual Studio: Review code](get-code-reviewed-vs.md)
 
 ## What do you want to do?
 
-- [Set up your dev machine and get started](set-up-team-foundation-version-control-your-dev-machine.md)    
+- [Set up your development machine and get started](set-up-team-foundation-version-control-your-dev-machine.md)    
 
-  Spend a few minutes to set up your dev machine to take advantage of all the benefits of a version-controlled codebase.
+  Spend a few minutes to set up your development machine to take advantage of all the benefits of a version-controlled codebase.
 
 - [Choose your workflow model - server or local workspaces](decide-between-using-local-server-workspace.md)
 
@@ -100,25 +102,26 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   When you need to prevent a file or folder from being checked out and altered, you can lock it.
 
-## Related sections
+## Operations available only from the tf command line  
 
-- [Build and test the app in your automated build system](../../pipelines/get-started/what-is-azure-pipelines.md)    
+The following table lists tasks for TFVC that you can perform only at a command prompt by using the `tf` command line tool.
 
-  Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
-
-- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md)     
-
-  Provides information about naming syntax, conventions, and limitations.
-
-- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)     
-
-- [Learn about TFVC permissions](../../organizations/security/permissions.md#tfvc)    
-
-We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
-
-- [Administering Team Foundation Version Control](./configure-check-out-settings.md) 
+| Task | Command | 
+|-------------------------------|-------------------|
+| Delete another user's workspace.| `workspace` with the `/delete` option | 
+| Undo another user's check-out.|  `undo`| 
+| Remove another user's lock.| `lock`|  
+| Define label scope.| `label`| 
+| Perform a baseless merge.| `merge`| 
+| Permanently destroy content.| `destroy`| 
+| Roll back the effect of one or more changesets.| `rollback`| 
 
 ## Related articles 
 
 - [What is version control?](/devops/develop/git/what-is-version-control)  
+- [Configure check-out settings](configure-check-out-settings.md) 
 - [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
+- [Build and test the app in your automated build system](../../pipelines/get-started/what-is-azure-pipelines.md)  
+- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md) 
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)     
+- [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)     

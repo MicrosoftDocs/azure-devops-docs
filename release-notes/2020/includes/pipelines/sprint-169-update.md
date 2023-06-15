@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 5/11/2020
 ms.topic: include
 ---
@@ -32,7 +31,7 @@ Learn more about service connections [here](/azure/devops/pipelines/library/serv
 
 ### Role-based access for service connections
 
-In this sprint, we have added role-based access for service connections. Previously, service connection security could only be managed through pre-defined Azure DevOps groups such as Endpoint administrators and Endpoint Creators.
+In this sprint, we have added role-based access for service connections. Previously, service connection security could only be managed through predefined Azure DevOps groups such as Endpoint administrators and Endpoint Creators.
 
 As part of this work, we have introduced the new roles of Reader, User, Creator and Administrator. You can set these roles via the service connections page in your project and these are inherited by the individual connections. And in each service connection you have the option to turn inheritance on or off and override the roles in the scope of the service connection.
 

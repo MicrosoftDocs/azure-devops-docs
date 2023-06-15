@@ -5,8 +5,8 @@ summary: Implement continuous integration and continuous delivery (CI/CD) for th
 
 metadata:
   title: Azure Pipelines documentation
+  titleSuffix: Azure DevOps 
   description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
-  ms.prod: devops 
   ms.technology: devops-cicd
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
@@ -95,7 +95,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: YAML schema
-            url: yaml-schema.md
+            url: /azure/devops/pipelines/yaml-schema/
           - text: Predefined variables
             url: ./build/variables.md
           - text: Release & artifacts variables
@@ -136,8 +136,6 @@ landingContent:
             url: ./library/connect-to-azure.md
           - text: Deploy to Azure SQL Database
             url: ./targets/azure-sqldb.md
-          - text: Deploy to Azure using VS Code
-            url: ./targets/deploy-to-azure-vscode.md
           - text: Deploy to Azure Kubernetes Service
             url: ./ecosystems/kubernetes/aks-template.md
           - text: Use secrets from Azure Key Vault
@@ -175,13 +173,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Create and manage agent pools
-            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json
           - text: Create and manage deployment groups
-            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json
           - text: Create and manage service connections
-            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json
           - text: Set build and release retention policies
-            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide

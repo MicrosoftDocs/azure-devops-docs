@@ -1,24 +1,24 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Extension Manifest Reference| Extensions for Azure DevOps
 description: How to create a manifest for your extension to Azure DevOps
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/04/2021
+ms.date: 01/06/2023
 ---
 
 # Extension manifest reference
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Every extension has a JSON manifest file that defines basic info about the extension. The file also defines how it can extend and enhance the experience. This article shows you how to create a manifest for your extension to Azure DevOps.
+Every extension has a JSON manifest file that defines basic information about the extension. The file also defines how it can extend and enhance the experience. This article shows you how to create a manifest for your extension to Azure DevOps.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
+Create a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets, where it can run. It also defines the contributions being made by your extension.
 
 See the following example of a typical manifest:
 
@@ -84,7 +84,7 @@ If your extension's ready for users on the Marketplace to try, but you're still 
 ```
 #### Mark an extension as paid preview
 
-If you intend to sell your extension on the Marketplace in the future, you should mark it as paid preview. An extension once marked free can't be marked paid later.
+If you intend to sell your extension on the Marketplace, mark it as *paid preview*. An extension marked *free* can't be changed to *paid*.
 
 ```json
 {
@@ -110,7 +110,7 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
 }            
 ```
 
-Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License, which means the publisher of the extension provides the billing and licensing mechanism for the extension, as it isn't provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end-user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in  the Marketplace. Bring-Your-Own-License (BYOL) means the publisher of the extension provides the billing and licensing mechanism for the extension, as it isn't provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end-user license agreement. Also, publishers must provide content for the pricing tab in Marketplace as follows:
 
 ```json
 {
@@ -125,7 +125,7 @@ Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an exte
 }          
 ```
 
-You also need to add a new section in your extension manifest to override paid licensing. In the future, we'll remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
+You also need to add a new section in your extension manifest to override paid licensing. In the future, we'll remove the paid licensing check and no longer require the override. For now, ensure your extension displays as expected. Each override consists of an “ID” and a “behavior.” The “ID” must match the ID of the contributions defined in the manifest.
 ```json
 "licensing": {
 
@@ -147,8 +147,8 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```
 
 > [!NOTE]
-> If you do want to target TFS, but don't wish to surface a Download option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
-> If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we'll provide you with suitable steps.
+> If you want to target TFS, but don't wish to surface a **Download** option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
+> If you're moving an extension from the previously-offered billing & licensing from Microsoft to the BYOL model, then contact us and we'll provide you with suitable steps.
 
 ### Example of more properties
 
@@ -198,7 +198,7 @@ Properties for the Customer Q & A Support section:
 
 ### Examples showing usage of Q & A support
 
-#### Example 10: Extension using custom Q & A
+#### Example: Extension using custom Q & A
 
 ```json
 {
@@ -208,7 +208,7 @@ Properties for the Customer Q & A Support section:
     } 
 }
 ```
-#### Example 11: Extension with GitHub repository but using Marketplace Q & A instead of GitHub issues
+#### Example: Extension with GitHub repository but using Marketplace Q & A instead of GitHub issues
 
 ```json
 {
@@ -217,7 +217,7 @@ Properties for the Customer Q & A Support section:
     } 
 }
 ```
-#### Example 12: Extension disabling Q & A section
+#### Example: Extension disabling Q & A section
 
 ```json
 {
@@ -239,7 +239,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 ### Changing scope of published extension
 
-The scopes of an extension can be changed after publishing. Customers who previously installed your extension (and authorized the previous set of scopes) remain on the previous version of the extension and must authorize the new scopes before you upgrade to the newest version.
+You can change the scope of a published extension. If you previously installed your extension (and authorized the previous set of scopes), you must authorize the new scopes before you can upgrade to the newest version.
 
 The **Action Required** section of the Extension settings hub shows a user that, if any, installed extensions require authorization:
 
@@ -251,7 +251,7 @@ An administrator can then review and authorize the new set of scopes:
 
 ## Installation targets
 
-As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps and TFS 2015 Update 2 and later (the version when extension were introduced in TFS).
+As the name implies, installation targets define the products and services where you can install your extension. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps.
 
 The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
 
@@ -261,17 +261,17 @@ Supported identifiers for **extensions**:
 * `Microsoft.TeamFoundation.Server`: installs into TFS
 * `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
-Supported identifiers for **integrations** (tools or services that integrate with Azure DevOps or TFS):
+Supported identifiers for **integrations**:
 
 * `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with TFS
 * `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
-For more information, see [Azure DevOps extensibility points](/previous-versions/azure/devops/extend/reference/targets/overview).
+For more information, see [Extensibility points](../reference/targets/overview.md).
 
-### Examples
+### Examples of installation targets
 
-#### Example 1: Extension that works with Azure DevOps
+#### Example: Extension that works with Azure DevOps
 ```json
 {
     "targets": [
@@ -282,7 +282,7 @@ For more information, see [Azure DevOps extensibility points](/previous-versions
 }
 ```
 
-#### Example 2: Extension that works only with Azure DevOps Services
+#### Example: Extension that works only with Azure DevOps Services
 
 ```json
 {
@@ -296,7 +296,7 @@ For more information, see [Azure DevOps extensibility points](/previous-versions
 
 Installation targets can also be used in the manifest of integrations. For example, products, apps, or tools that work with, but don't install into Azure DevOps.
 
-#### Example 3: Integration that works with Azure DevOps
+#### Example: Integration that works with Azure DevOps
 
 ```json
 {
@@ -308,7 +308,7 @@ Installation targets can also be used in the manifest of integrations. For examp
 }
 ```
 
-#### Example 4: Integration that only works with TFS
+#### Example: Integration that only works with TFS
 
 ```json
 {
@@ -333,7 +333,7 @@ The version or version range is specified via the `version` field on the install
   * `(`: minimum version exclusive
   * `)`: maximum version exclusive
 
-Version numbers for Team Foundation Server and Azure DevOps Server:
+Version numbers for Azure DevOps Server:
 
 | Release      | Releases        | Version                             |
 |--------------|-----------------|-------------------------------------|
@@ -348,7 +348,7 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
 
 ### Examples showing versions
 
-#### Example 5: Extension that works with Azure DevOps and TFS 2017 and later
+#### Example: Extension that works with Azure DevOps
 
 ```json
 {
@@ -363,8 +363,8 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
     ]
 }
 ```
-
-#### Example 6: Integration that works with TFS 2015 and later
+<!--
+#### Example: Integration that works with 2015 and later
 
 ```json
 {
@@ -377,7 +377,7 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
 }
 ```
 
-#### Example 7: Integration that works with TFS 2013 and 2015
+#### Example: Integration that works with 2013 and 2015
 
 ```json
 {
@@ -389,10 +389,10 @@ Version numbers for Team Foundation Server and Azure DevOps Server:
     ]
 }
 ```
-
+-->
 ### Shortcuts
 
-`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps and TFS 2015 Update 2 and later. 
+`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps. 
 
 ```json
 {
@@ -422,12 +422,12 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps and TFS 2017 RTM and later. 
+Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
 
 > [!TIP]
 > For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops).
 
-#### Example 8: Extension that uses version 3.0 APIs
+#### Example: Extension that uses version 3.0 APIs
 
 ```json
 {
@@ -447,7 +447,7 @@ Resolves to the following installation targets:
 1. `Microsoft.VisualStudio.Services.Cloud` 
 2. `Microsoft.TeamFoundation.Server`, version: `[15.0,)`
 
-#### Example 9: Integration that uses version 2.0 APIs
+#### Example: Integration that uses version 2.0 APIs
 
 ```json
 {
@@ -469,11 +469,11 @@ Resolves to the following installation targets:
 
 ## Demands
 
-Demands let you specify capabilities and other features required by your extension. These demands can then be used to limit where your extension can be published or installed.
+Demands let you specify capabilities and other features required by your extension. You can use these demands to limit where your extension can be published or installed.
 
-In the future, demands get used by the Visual Studio Marketplace to list the products and environments your extension is compatible with. This helps customers understand whether your extension works with their version of TFS (for example).
+Demands get used by the Visual Studio Marketplace to list the products and environments your extension is compatible with, which helps customers understand whether your extension works with their version of Azure DevOps, for example.
 
-Demands are specified in the extension manifest. For example:
+See the following example of how demands get specified in the extension manifest.
 
 ```json
 {
@@ -484,7 +484,7 @@ Demands are specified in the extension manifest. For example:
 }
 ```
 
-In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps or TFS 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
+In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
 
 ### Supported demands
 
@@ -497,10 +497,9 @@ In this example, the extension demands version 3.0 of the APIs, which means it c
 | `contribution/{id}`         | Requires a specific contribution be available        | No                  | Yes                 |
 | `contributionType/{id}`     | Requires a specific contribution type be available   | No                  | Yes                 |
 
-#### Notes
-
-* Use `environment/cloud` and `environment/onprem` only when your extension has topology-related requirements that require running in that particular environment.
-* `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection. 
+> [!NOTE]
+> * Use `environment/cloud` and `environment/onprem` only when your extension has topology-related requirements that require running in that particular environment.
+> * `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection.
 
 ## Files
 
@@ -537,7 +536,7 @@ Properties for the Files section:
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below. 
+* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **type** - The ID of the contributionType of this contribution. 
 * **description** - (Optional) A string describing what the contribution is providing.
 * **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
@@ -551,7 +550,7 @@ For more information, see the [contribution model overview](contributions-overvi
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below. 
+* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds). 
 * **name** - The friendly name of the contribution type. 
 * **description** - (Optional) A string describing in more detail what the contribution type is for.
 * **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that can be used by contributions of this type.
@@ -560,7 +559,7 @@ Property descriptions have the following properties:
 
 * **description** - (Optional) A string describing what the property is used for. 
 * **required** - (Optional) A boolean value, which if true indicates that the property is required for all contributions of this type.
-* **type** - The type of value that the property can have. This may be: string, uri, guid, boolean, integer, double, dateTime, array, or object.
+* **type** - The type of value that the property can have, which could be string, uri, guid, boolean, integer, double, dateTime, array, or object.
 
 For more information, see the [contribution model overview](contributions-overview.md).
 
@@ -571,24 +570,18 @@ For more information, see the [contribution model overview](contributions-overvi
 Contributions and contribution types are referenced by their identifiers. Contributions reference types through the `type` property, and reference other
 contributions through the `targets` property.
 
-A *full* contribution reference includes the publisher identifier, extension identifier, and contribution/type identifier, separated by
-a dot (.). For example: `ms.vss-web.hub` is the full identifier for the contribution with identifier of "hub" in the "vss-web" extension published
-by the "ms" (Microsoft) publisher.
-
-*Relative* contribution references may be used within an extension manifest for a contribution's reference to another contribution or contribution
-type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
+- A *full* contribution reference includes the publisher identifier, extension identifier, and contribution/type identifier, separated by
+a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of "hub" in the "vss-web" extension published by the "ms" (Microsoft) publisher.
+- *Relative* contribution references may be used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
 by the contribution identifier. For example, ".hub" may be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub".
 
 <a name="contributionTargets"></a>
 
 ### Targeting contributions
 
-Some contributions act as containers that can be targeted by other contributions. A Hub Group and a Menu are examples of this. Hub contributions
-can target Hub Groups. When a page is rendered, the web UI shows all Hub contributions that target the selected hub group. Hub groups target a hub group collection, which defines a set of hub groups that show up in a given navigational area (for example, project-level admin pages).
-
-Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu
-item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
-types) that target that specific menu contribution.  
+Some contributions act as containers that can be targeted by other contributions.
+- Hub contributions can target Hub Groups. When a page is rendered, the web UI shows all Hub contributions that target the selected hub group. Hub groups target a hub group collection, which defines a set of hub groups that show up in a given navigational area, for example, project-level admin pages.
+- Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these types) that target that specific menu contribution.  
 
 ### Adding a hub icon
 
@@ -618,19 +611,22 @@ The Marketplace only supports badges from the following trusted services:
 * snyk.io/
 * travis-ci.com/
 * travis-ci.org/
-* vsmarketplacebadge.apphb.com/
+* vsmarketplacebadges.dev/
 * bithound.io/
 * deepscan.io/
 * githost.io/
 * gitlab.com/
 * opencollective.co/
 
-If you want to show a badge from another service, contact vsmarketplace@microsoft.com.
+> [!NOTE]
+> Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
+
+If you want to show a badge from another service, contact *vsmarketplace@microsoft.com*.
 
 <a name="example"></a>
 
 ## Example manifest
 
-This extension contributes an action to the completed builds context menu and a hub to the Build hub group:
+The following extension contributes an action to the completed builds context menu and a hub to the Build hub group:
 
 [!code-json[](../_data/extension.json)]

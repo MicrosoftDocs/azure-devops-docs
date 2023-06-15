@@ -2,10 +2,9 @@
 title: Performance and latency with Analytics
 titleSuffix: Azure DevOps   
 description: Learn about how data is updated and time requirements associated with querying Analytics. 
-ms.technology: devops-analytics
-ms.reviewer: angurusw
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/05/2021
@@ -14,7 +13,7 @@ ms.date: 10/05/2021
 
 # Performance and latency of Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
  When you use Analytics for reporting, you should understand data latency and query performance. To get started using Analytics, see what is the [Analytics](./what-is-analytics.md).
 

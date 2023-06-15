@@ -2,17 +2,18 @@
 title: Set test retention policies
 description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
-monikerRange: '> tfs-2018'
+monikerRange: '<= azure-devops'
+ms.date: 4/04/2022
 ---
 
 # Set test retention policies
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,
@@ -23,7 +24,7 @@ for example, up to a year.
 
 ## Prerequisites
   
-- To manage project-level test-related policies, you must be a member of the [**Project Administrators** security group](../organizations/security/set-project-collection-level-permissions.md). 
+- To manage project-level test-related policies, you must be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
 - To manage build pipeline object-level test retention policies, you must have the **Edit build pipeline** permissions set to **Allow**. 
   
 <a name="manual-test-results-limits"></a> 
@@ -75,6 +76,6 @@ set the retention limits at the project level as described in [Set retention per
 ## Related articles
 
 - [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
-- [FAQs for manual testing](reference-qa.md#manageresults)
+- [FAQs for manual testing](reference-qa.yml#manageresults)
 
  

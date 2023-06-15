@@ -1,16 +1,16 @@
-- name: Web portal navigation 
+- name: Web portal navigation
   href: index.md
-- name: Open a service, page, or setting 
-  href: go-to-service-page.md   
+- name: Open a service, page, or setting
+  href: go-to-service-page.md
 - name: Add an artifact or team artifacts
-  href: add-artifact-team.md  
+  href: add-artifact-team.md
 - name: Use breadcrumbs, selectors, and directories
-  href: use-breadcrumbs-selectors.md  
-- name: Open another project or repo  
-  href: go-to-project-repo.md 
-- name: Work with favorites 
-  href: set-favorites.md  
-- name: Filter basics 
+  href: use-breadcrumbs-selectors.md
+- name: Open another project or repo
+  href: go-to-project-repo.md
+- name: Work with favorites
+  href: set-favorites.md
+- name: Filter basics
   href: filter-basics.md
 - name: Keyboard shortcuts
   href: keyboard-shortcuts.md
@@ -18,7 +18,7 @@
   href: preview-features.md
 - name: Reference
   items:
-  - name: Go mobile 
+  - name: Go mobile
     href: mobile-work.md
   - name: Glossary
     href: glossary.md

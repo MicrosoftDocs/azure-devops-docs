@@ -1,23 +1,23 @@
 ---
-title: About managed queries  
+title: Use managed queries to list work items  
 titleSuffix: Azure Boards 
-description: Track work by creating queries to list work items in Azure Boards, Azure DevOps 
-ms.custom: boards-queries, contperf-fy21q3 
-ms.technology: devops-agile
+description: Learn how to track work by creating queries to list work items in Azure Boards and Azure DevOps.
+ms.custom: boards-queries, cross-project, contperf-fy23
+ms.service: azure-devops-boards
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
-ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2021
+ms.date: 12/16/2022
 ---
 
 
-# About managed queries  
+# Track your work by using managed queries in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or  bulk update work items. In addition to managed queries, the semantic search tool provides some overlapping and different functionality worth exploring. 
+List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or  bulk update work items. Along with managed queries, the semantic search tool provides some overlapping and different functionality worth exploring. 
 
 Use managed queries to support these operations:  
 - Bulk update of work items using the web portal  
@@ -25,7 +25,7 @@ Use managed queries to support these operations:
 - Review a hierarchy of work items  
 - Share a list of work items with a team member 
   
-You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/). Changes you make in one client are reflected in other clients as all changes are stored in the work tracking data store. 
+You can create queries and query folders from the web portal or from Visual Studio Team Explorer. Changes you make in one client are reflected in other clients as all changes are stored in the work tracking data store. 
  
 ## Get started using queries
 
@@ -34,7 +34,7 @@ If you're just getting started, read [View, run, or email a work item query](vie
 - To find work items that are assigned to you, add the **@Me** macros as the value for the **Assigned To** field in one of the query clauses.  
 - All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
 - You can modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](using-queries.md).   
-- You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
+- You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can also update the fields of one or more work items and publish your changes to the database for tracking work items.  
 - You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
 
 ## Query capabilities 
@@ -85,7 +85,7 @@ Azure Boards supports three query types. The icon next to each query indicates t
       **Flat list of work items**
    :::column-end:::
    :::column span="3":::
-      - List items to perform bulk updates to fields 
+      - List items to do bulk updates to fields 
       - Triage a list of work items 
       - Create a query chart and add it to a dashboard  
       - Create a chart to get a count of items or sum a field 
@@ -98,9 +98,9 @@ Azure Boards supports three query types. The icon next to each query indicates t
       **Work items and direct links**
    :::column-end:::
    :::column span="3":::
-      - List items which are dependent on other work items
+      - List items that are dependent on other work items
       - Find items related or dependent on other work items
-      - List linked work items to perform bulk updates to fields 
+      - List linked work items to do bulk updates to fields 
       - Triage a list of linked work items  
       - List test-related linked work items 
       - Find orphaned backlog items, work items that have no parent 
@@ -144,18 +144,18 @@ For details, see:
 
 ## Query directory, query folders, and breadcrumbs 
 
-The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. 
+The **Queries** page  contains a directory-focused view that you can filter to find specific queries of interest. 
 When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
 
 ![Queries breadcrumbs](../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png)
 
-Also, you can choose a query that you've favorited from the selector menu, Or, you can choose to browse all queries which returns you to the **All Queries** page. 
+Also, you can choose a query that you've favorited from the selector menu. Or, you can choose to browse all queries that return you to the **All Queries** page. 
   
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Queries, Query selector.](../../project/navigation/media/breadcrumbs/query-bd-and-selector.png) 
 
 
-For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
+For more information, see [Query FAQs, Navigate, and Folders](query-faqs.yml).
 
 ::: moniker-end
  
@@ -183,7 +183,7 @@ To add a custom field to support your query needs, see [Customize your work trac
 
 ## Taskboard versus query list items
 
-You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the taskboard differ from the contents listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 
 ::: moniker range="< azure-devops"

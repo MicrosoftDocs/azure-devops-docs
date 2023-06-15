@@ -2,7 +2,7 @@
 title: Sign up and invite teammates
 titleSuffix: Azure DevOps   
 description: Quickstart guide to signing up and inviting others to join a team project in Azure DevOps Services 
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: quickstart
 ms.date: 03/18/2021
 monikerRange: 'azure-devops'
@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Sign up for free and invite others to collaborate on your project
 
-[!INCLUDE [acquisition-intro-devops](../../includes/acquisition-intro-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 <a name="MicrosoftAccount"></a>
 
@@ -25,7 +25,7 @@ monikerRange: 'azure-devops'
 
 ## Create a project 
 
-If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/projects/about-projects.md). 
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 

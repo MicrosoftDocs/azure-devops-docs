@@ -3,7 +3,7 @@ title: Code coverage for pull requests
 description: Continuous testing. Measuring code coverage for changes in pull requests. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: conceptual 
-ms.custom: "continuous-test, seodec18"
+ms.custom: "continuous-test, seodec18, cross-service"
 ms.author: shashban
 author: shashban
 ms.date: 10/04/2019
@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Code coverage for pull requests
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), it is essential that new code being brought into the system is well tested. This means that when developers raise pull requests, knowing whether their changes are covered by tests would help plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
 
@@ -56,11 +56,11 @@ If you would like to change the default settings of the code coverage experience
 
 The settings that can be changed are: 
 
-| Setting | Description | Default | Permissible values
-|:---:|:---:||:---:|:---:|
+| Setting | Description | Default | Permissible values |
+|:---:|:---:|:---:|:---:|
 | status | Indicates whether code coverage status check should be posted on pull requests. <br/> Turning this off will not post any coverage checks and coverage annotations will not appear in the changed files view. | on | on, off |
 | target | Target threshold value for diff coverage must be met for a successful coverage status to be posted. | 70% | Desired % number | 
-| comments | Indicates whether a comment containing coverage details for each code file should be posted in the pull request | off | on, off
+| comments | Indicates whether a comment containing coverage details for each code file should be posted in the pull request | off | on, off |
 
 Example configuration:
 

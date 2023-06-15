@@ -2,19 +2,18 @@
 title: Configure branch policies for Azure DevOps CLI 
 titleSuffix: Azure DevOps 
 description: Configure branch policies using Azure DevOps CLI  
-ms.topic: reference 
-ms.prod: devops 
-ms.technology: devops-reference
+ms.topic: how-to
+ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
-ms.author: kaelli  
-author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+ms.author: chcomley  
+author: chcomley
+monikerRange: 'azure-devops'
 ms.date: 04/30/2021
 ---
 
 # Configure Git repository policies using a configuration file
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 Branch policies help teams protect their important branches of development. Policies enforce your team's code quality and change management standards. For an overview of policy settings you can configure, see [Git repository settings and policies](../repos/git/repository-settings.md).
 

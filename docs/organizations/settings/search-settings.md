@@ -2,9 +2,9 @@
 title: Search settings, organization, project, and user
 titleSuffix: Azure DevOps 
 description: Learn how to search organization, project, and user settings in Azure DevOps.  
-ms.technology: devops-settings
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-settings
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 12/17/2020
@@ -12,7 +12,7 @@ ms.date: 12/17/2020
 
 # Search organization settings
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 The preview feature, **New Settings Search in the organization settings panel**, enables a search box for searching within **Organization Settings**. To enable this feature, see [Manage or enable preview features](../../project/navigation/preview-features.md).  
 

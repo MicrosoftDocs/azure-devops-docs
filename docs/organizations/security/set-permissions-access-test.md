@@ -2,18 +2,18 @@
 title: Set permissions and access for manual testing
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to test plans, test suites, test cases, and other test-related features.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/13/2021
----
+ms.date: 05/24/2023
+--- 
 
 # Set permissions and access for testing
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To exercise the full features of Azure Test Plans, you must be granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
 
@@ -28,7 +28,6 @@ In addition, you can grant or restrict access to various manual test features by
 	- **Manage test plans**: Modify test plan properties such as build and test settings. 
 	- **Manage test suites**: Create and delete test suites, add, and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite). 
 - **Project-level** 
-	::: moniker range=">= tfs-2017"
 	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
 	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
 	- **Create test runs**: [Run manual tests](../../test/run-manual-tests.md) 
@@ -38,17 +37,6 @@ In addition, you can grant or restrict access to various manual test features by
 	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
 	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
 	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
-	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
-	- **Create test runs**: [Run manual tests](../../test/run-manual-tests.md) 
-	- **Delete and restore work items**: [Delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
-	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
-	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
-	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
-	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
-	::: moniker-end
 - **Organization or collection-level** 
 	- **Manage test controllers**: Permission associated with a deprecated feature for TFS 2018 and later versions. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) and [Install test agents and test controllers](/visualstudio/test/lab-management/install-configure-test-agents).   
  
@@ -64,21 +52,22 @@ For more information, see the following articles:
 - [About access levels](access-levels.md)
 - [Add organization users and manage access](../accounts/add-organization-users.md)
 - [Change access levels for users or groups](change-access-levels.md)  
-- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 - To manage access-levels, you must be a member of the **Azure DevOps Server Administrators** group.  
 - To manage project or object-level test-related permissions, you must be a member of the **Project Administrators** security group. 
 - To manage collection-level permissions or manage access levels, you must be a member of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
- 
 
 For more information, see the following articles: 
 
 - [About access levels](access-levels.md)
 - [Add a server-level administrator](/azure/devops/server/admin/add-administrator) 
 - [Change access levels for users or groups](change-access-levels.md)  
-- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 ::: moniker-end
 
 <a id="license"></a>
@@ -87,30 +76,25 @@ For more information, see the following articles:
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
 
-
 <a id="manage-test-artifacts"></a>
 
 ## Manage test plans and test suites under an area path 
 
 Area path permissions let you grant or restrict access to edit or modify test plans or test suites assigned to those areas. You can restrict access to users or groups.  
 
-In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
+In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts, which are set for an area path. 
 
 [Open the **Security** page for area paths](set-permissions-access-work-tracking.md#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
-![Open Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-open-area-permissions.png)  
+:::image type="content" source="media/delete-test-plans-open-area-permissions.png" alt-text="Screenshot showing opened Area path permissions for project."::: 
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
-
-<a id="delete-test-artifacts"></a>
-
-::: moniker range=">= tfs-2017"  
+:::image type="content" source="media/manage-test-plans-test-suites-access.png" alt-text="Screenshot showing access set to Allow for test plans and suites.":::
 
 ## Set permissions to create and delete test artifacts 
 
-While test artifacts such as test plans, test suites, test cases, and so on are types of work items, the method for deleting them differs from deleting non-test work items. 
+While test artifacts such as test plans, test suites, test cases, and so on, are types of work items, the method for deleting them differs from deleting nontest work items. 
 
 > [!IMPORTANT]  
 > We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
@@ -119,9 +103,8 @@ When you delete test artifacts, the following actions occur:
 
 1.	Removes the deleted test artifact from the test case management (TCM) data store and deletes the underlying work item
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
-3.	Causes all information in the work item tracking data store and TCM data store to be deleted and cannot be reactivated nor restored. 
+3.	Causes all information in the work item tracking data store and TCM data store to be deleted and can't be reactivated or restored. 
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -129,13 +112,13 @@ You must be a member of the Project Administrators group or have the [**Delete t
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 You must be a member of the Project Administrators group or have the [**Delete test runs** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Basic+Test Plans or Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
 For more information, see [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md). 
 
-As a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+As a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. To learn how to access project-level **Security**, see [Change project-level permissions](change-project-level-permissions.md).
 
 ::: moniker-end
 
@@ -143,7 +126,7 @@ As a project admin you can grant a user, team group, or other group you've creat
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 In this example, we grant members assigned to the Team Admin group permissions to create and view test runs and manage test configurations and environments.   
 
@@ -160,7 +143,7 @@ In this example, we grant members assigned to the Team Admin group permissions t
 
 * * *
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   
 
@@ -175,14 +158,14 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 Test controllers are used to perform load testing. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests).
 
-To set permissions for managing test controllers, open **Organization** settings and choose **Security** or **Permissions**. Choose the group you want to grant permissions. To learn how to access organization or collection-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+To set permissions for managing test controllers, open **Organization** settings and choose **Security** or **Permissions**. Choose the group you want to grant permissions. To learn how to access organization or collection-level **Security**, see [Change project collection-level permissions](change-organization-collection-level-permissions.md).
 
 In this example, we grant members assigned to the Team Collection Admin group permissions to manage test controllers.  
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for Organization Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Organization Permissions Settings Page v2** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
  
 
 #### [Preview page](#tab/preview-page) 

@@ -1,110 +1,135 @@
 ---
-title: Use feed views to share your packages
-description: Use the prerelease and release views to share your packages with consumers
+title: Use feed views to share packages
+description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
-ms.date: 12/23/2020
-monikerRange: '>= tfs-2017'
+ms.date: 08/25/2022
+monikerRange: '<= azure-devops'
 ---
  
-# Use feed views to share your packages
+# Use feed views to share packages
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Feeds are containers that allow users to group packages and control who can access them by modifying the feed's permissions.
+Feed views are a way to enable users to share some packages while keeping other packages private. Views filter the feed to a subset of packages that meet a set of criteria defined by that view.
 
-A feed view on the other hand is a way to enable users to share some packages while keeping others private. Views filter the feed to a subset of packages that meet criteria defined by that view.
+By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages and all the packages saved from upstream sources. All views support NuGet, npm, Maven, Python, and Universal packages.
 
-There are three types of views: `@local`, `@Prerelease`, and `@Release`. @local is the default view that's commonly used in upstream sources. The latter two are suggested views that you can rename or delete as desired. Those views contain a subset of the feed's packages that have been promoted into that specific view. All views currently support NuGet, npm, Maven, Python, and Universal packages.
+> [!Note]
+> Publishing and restoring packages directly to/from a view is not supported in Azure Artifacts.
 
-## Get started with feed views
+## Promote packages
 
-By default, every feed has three types of views: `@local`, `@Prerelease`, and `@Release`. When you first create a feed, your default view is `@local`.
+1. Select **Artifacts**.
 
-### Promote a package to prerelease or release view 
+1. Select your feed from the dropdown menu.
 
-To promote a package-version:
+1. Select the package you wish to promote.
 
-1. Select a package from your feed
+1. Select **Promote**.
 
-1. Select **Promote**
-    > [!div class="mx-imgBorder"]
-    > ![Promote button](media/release-views-promote.png)
+    :::image type="content" source="media/promote-package.png" alt-text="A screenshot showing how to promote a package to a view.":::
 
-1. Choose a view from the dropdown menu then select **Promote**.
-    > [!div class="mx-imgBorder"]
-    > ![views dropdown menu](media/release-views-promote-choice.png)
+1. Select a view from the dropdown menu, and then select **Promote**.
+
+    :::image type="content" source="media/release-views-promote-choice.png" alt-text="Screenshot showing the promote package dialog box.":::
 
 > [!NOTE]
-> Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+> Package demotion is not supported. If you want this feature to be added to a future release, please feel free to **Suggest a feature** on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-### Promote a package using the REST API
+## Promote packages using the REST API
 
-In addition to using the user interface in Azure Artifacts, you can also promote a package to a view using the REST API. Azure Artifacts currently supports the following package types: NuGet, Python, npm, Maven, and Universal packages.
+In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API. The URI varies based on the package type:
 
-* **Promote a NuGet package**:
+Use the actual user-facing name and version of the package for the `{packageName}` and `{packageVersion}` fields, respectively. If your feed is organization-scoped, omit the `{project}` field.
 
-    Example:
-    
+The body of the request is a [JSON Patch](https://jsonpatch.com/) document adding the view to the end of the `views` array. See [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) for more information on how to interact with Azure DevOps REST API.
+
+- **NuGet**:
+
     ```Command
-    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-* **Promote an npm package**:
-
-    Example:
-    
+- **npm**:
+  
     ```Command
-    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation#jsonpatchoperation) to construct the body of your request. See [Npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-* **Promote a Python package**:
-
-    Example:
-    
+- **Python**:
+   
     ```Command
-    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
+- **Maven**:
 
-* **Promote a Universal package**:
-
-    Example:
-    
     ```Command
-    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feed}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{version}?api-version=7.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Maven  - update package version](/rest/api/azure/devops/artifactspackagetypes/maven/update-package-version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
+
+- **Universal packages**:
     
-    Keep in mind that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view. 
+    ```Command
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+    
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
 
-> [!TIP]
-> Check out the [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) to learn how to interact with Azure DevOps REST API.
+- **Example**:
 
-## Managing views
+```http
+PATCH https://pkgs.dev.azure.com/fabrikam-fiber-inc/litware/_apis/packaging/feeds/litware-tools/nuget/packages/LitWare.Common/versions/1.0.0?api-version=5.1-preview.1 HTTP/1.1
+Content-Type: application/json-patch+json
 
-You can create your own views or rename and delete existing ones in the feed settings dialog.
+{
+  "views": {
+    "op": "add",
+    "path": "/views/-",
+    "value": "Release"
+  }
+}
+```
 
-[!INCLUDE [edit-feed](../includes/edit-feed.md)]
+## Manage views
 
-In the feed settings view:
-- Select **Views**
-- Make your changes (Add view, Edit, or Delete)
-- Select **Ok**
+You can create your own views or rename and delete existing ones from your feed's settings.
 
-> [!div class="mx-imgBorder"]
-> ![Managing views](media/feed-settings-views.png)
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
+
+1. Select **Artifacts**.
+
+1. Select your feed from the dropdown menu.
+
+1. Select the gear icon :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to access your feed's settings.
+
+    :::image type="content" source="../media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings.":::
+
+1. Select **Views**.
+
+    :::image type="content" source="./media/views-settings.png" alt-text="A screenshot showing how to navigate to views.":::
+
+1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
+
+1. Select **Save** when you're done.
+
+> [!IMPORTANT]
+> For public feeds, if you change the access permissions of a certain view to **Specific people** your view will not be available as an upstream source.
 
 ## Related articles
 
-- [Understand upstream sources](../concepts/upstream-sources.md)
+- [Upstream sources overview](../concepts/upstream-sources.md)
+- [Configure permissions](./feed-permissions.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)

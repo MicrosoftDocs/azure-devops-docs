@@ -3,10 +3,10 @@ title: Manage sprint timelines while working in Scrum
 titleSuffix: Azure Boards  
 description: Learn how to add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards. 
 ms.custom: boards-sprints
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 09/20/2021
@@ -15,7 +15,7 @@ ms.date: 09/20/2021
 
 # Manage sprint timelines 
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. You define Iteration Paths, also referred to as *sprints*, to support the assignment of work items to time-box intervals. Iteration paths are a shared resource used by all teams that select them. Many teams choose a two or three week cadence. You can, however, specify shorter or longer sprint cycles. Or, you can create a release schedule that encompasses several sprints.  
 
@@ -25,13 +25,13 @@ With Scrum, teams plan and track work at regular time intervals, referred to as 
 
 ## Prerequisites
 
-* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. To learn more, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. To learn more, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 <a id="quick-start-schedule">   </a>
 
 ## Start scheduling sprints
 
-To quickly get started, you can use the default sprints. Default sprints are also referred to as iterations and were added when your project was created. Note, you must be a [member of the Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) to add sprints and schedule sprint dates. (If you created the project, you're a member.) 
+To quickly get started, you can use the default sprints. Default sprints are also referred to as iterations and were added when your project was created. Note, you must be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md) to add sprints and schedule sprint dates. If you created the project, you're a member. 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -90,7 +90,7 @@ To quickly get started, you can use the default sprints. Default sprints are als
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -161,7 +161,7 @@ For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets acce
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Selected sprints for a team](media/define-sprints/selected-team-iterations-vsts.png)
 

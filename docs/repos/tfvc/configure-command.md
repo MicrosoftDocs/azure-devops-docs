@@ -1,30 +1,33 @@
 ---
-title: Configure Command
+title: Configure command
 titleSuffix: Azure Repos
-description: Configure Command
+description: See how to use the Configure command in TFVC.
 ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 10/22/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Configure Command
+# Configure command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Enables an administrator to view and change the following configuration settings for a project in the **Source Control Settings** dialog box:
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
--   Check-out settings
+Enables an administrator to view and change the following configuration settings for a project in the Visual Studio **Source Control Settings** dialog box:
 
--   Check-in policies
+- **Check-out Settings**  
+- **Check-in Policies**  
+- **Check-in Notes**  
 
--   Check-in notes
+## Prerequisites
 
-**Required Permissions**
+To use the `configure` command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Syntax
 
 ```
 tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
@@ -36,60 +39,52 @@ tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:u
 
 |**Argument**|**Description**|
 |---|---|
-|*PathOfTeamProject*|Path of the project whose configuration settings an administrator can view, change, or both.|
-|*TeamProjectCollectionUrl*|The URL of the project collection that contains the project that you specified (for example, http://myserver:8080/tfs/DefaultCollection).|
-|*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName.*|
+|`<PathOfTeamProject>`|Path of the project whose configuration settings an administrator can view or change.|
+|`<TeamProjectCollectionUrl>`|The URL of the project collection that contains the project that you specified, for example `http://myserver:8080/tfs/DefaultCollection)`.
+|`<username>`|Provides a value to the `/login` option. You can specify a username value as either `DOMAIN\username` or `username`.|
 
 
-### Option
+### Options
 
 |**Option**|**Description**|
 |---|---|
-|**/collection**|Specifies the project collection.|
-|**/login**|Specifies the user name and password to authenticate the user with Team Foundation Server.|
+|`/collection`|Specifies the project collection.|
+|`/login`|Specifies the user name and password to authenticate the user with Azure DevOps Server.|
 
 ## Remarks
 
-You can manage the following project settings using the **configure** command:
+You can manage the following project settings by using the `configure` command:
 
--   **Check-out settings** can be used to determine whether multiple users can edit files at the same time. Also, they can be used to configure the get latest on check-out behavior.
+-   **Check-out Settings** determine whether multiple users can edit files at the same time. You can also use them to configure the get latest on check-out behavior.
 
--   **Check-in policies** provide controls that are invoked at check-in time, to make sure that defined criteria are met before a user checks in pending changes.
+-   **Check-in Policies** provide controls that are invoked at check-in time, to make sure that defined criteria are met before a user checks in pending changes.
 
--   **Check-in notes** define custom fields into which users provide information during the check-in process. Check-in notes can be either required or optional.
-
-The settings are configured in the **Source Control Settings** dialog box which appears after you run the **configure** command. When you complete your changes, click **OK** to save them to the server.
+-   **Check-in Notes** define custom fields where users provide information during the check-in process. Check-in notes can be either required or optional.
 
 For more information about these settings, see [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100)).
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
+You configure the settings in the Visual Studio **Source Control Settings** dialog box, which appears after you run the `tf configure` command. When you complete your changes, select **OK** to save them.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
+> [!NOTE]
+> Administrators can also access the **Source Control Settings** dialog box from the Visual Studio **Team Explorer** window. Select **Settings**, and then select **Source Control** under **Team Project**.
 
 ## Examples
 
-The following example displays the **Source** **Control** **Settings** dialog box in which you can examine and modify the project settings of the workspace for the c:\\projects folder.
+The following example displays the **Source Control Settings** dialog box, where you can examine and modify the project settings of the workspace for the *c:\\projects* folder.
 
 ```
 c:\projects>tf configure
 ```
 
-The following example displays the myproj project settings in the project collection at `http://myserver:8080/tfs/DefaultCollection`.
+The following example displays the `myproj` project settings in the project collection at `http://myserver:8080/tfs/DefaultCollection`.
 
 ```
 c:\projects>tf configure $/myproj / http://myserver:8080/tfs/DefaultCollection 
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Configure Check-Out Settings](configure-check-out-settings.md)
-
-#### Concepts
-
-[Managing File Types](/azure/devops/server/admin/manage-file-types)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Configure Check-Out Settings](configure-check-out-settings.md)
+- [Managing File Types](/azure/devops/server/admin/manage-file-types)

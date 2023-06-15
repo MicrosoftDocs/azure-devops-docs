@@ -1,204 +1,183 @@
 ---
-title: Deploy to IIS using WinRM
-description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines using Windows Remote Management (WinRM)
+title: Deploy to IIS servers using WinRM
+description: How to deploy web apps to IIS servers with Azure Pipelines and Windows Remote Management (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/07/2021
-monikerRange: '>= tfs-2015'
+ms.date: 04/28/2022
+monikerRange: '<= azure-devops'
 ---
 
-# Deploy your Web Deploy package to IIS servers using WinRM
+# Deploy to IIS servers with Azure Pipelines and WinRM
 
-[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+Learn how to use Azure Pipelines and WinRM to set up a continuous delivery pipeline to deploy your ASP.NET, ASP.NET Core, or Node.js web apps to one or more IIS servers.
 
-> A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md) instead of WinRM. However, deployment groups are not available in version of TFS earlier than TFS 2018.
+## Prerequisites
 
-Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
-Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Azure Pipelines.
-A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run PowerShell scripts remotely in order to deploy the Web Deploy package.
+- An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
+- [Build pipeline](#build-pipeline)
+- [Configure WinRM](#configure-winrm)
+- [Configure IIS servers](#configure-iis-servers)
 
-## Get set up
+### Build pipeline
 
-### Begin with a CI build
+Set up a build pipeline if you don't have one already.
 
-Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
+#### [.NET](#tab/net/)
 
-* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
+- [Build ASP.NET apps](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../../ecosystems/dotnet-core.md)
+#### [.NET Core](#tab/netcore/)
 
-* [Build your Node.js app with gulp](../../ecosystems/javascript.md)
+- [Build .NET Core apps](../../ecosystems/dotnet-core.md)
 
-### WinRM configuration
+#### [Node](#tab/node/)
+
+- [Build Node.js apps](../../ecosystems/javascript.md)
+
+---
+
+### Configure WinRM
 
 Windows Remote Management (WinRM) requires target servers to be:
 
-* Domain-joined or workgroup-joined
-* Able to communicate using the HTTP or HTTPS protocol
-* Addressed by using a fully qualified domain name (FQDN) or an IP address
+- Domain-joined or workgroup-joined.
+- Able to communicate using the HTTP or HTTPS protocol.
+- Addressed by using a fully qualified domain name (FQDN) or an IP address.
 
-This table shows the supported scenarios for WinRM.
+This table shows the supported scenarios for WinRM. Make sure that your IIS servers are set up in one of the following configurations. For example, do not use WinRM over HTTP to communicate with a Workgroup machine. Similarly, do not use an IP address to access the target server(s) when you use HTTP protocol. Instead, use HTTPS for both scenarios.
 
-| Joined to a | Protocol | Addressing mode |
-| --------- | -------- | --------------- |
-| Workgroup | HTTPS | FQDN |
-| Workgroup | HTTPS | IP address |
-| Domain | HTTPS | IP address |
-| Domain | HTTPS | FQDN |
-| Domain | HTTP | FQDN |
+| Joined to a | Protocol |   Addressing mode  |
+| ---------   | -------- |   ---------------  |
+| Workgroup   |   HTTPS  | FQDN or IP address |
+| Domain      |   HTTPS  | FQDN or IP address |
+| Domain      |   HTTP   |       FQDN         |
 
-Ensure that your IIS servers are set up in one of these configurations.
-For example, do not use WinRM over HTTP to communicate with a Workgroup machine.
-Similarly, do not use an IP address to access the target server(s) when you use HTTP.
-Instead, in both scenarios, use HTTPS.
-
-> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
+> [!NOTE]
+> If you need to deploy to a server that is not in the same workgroup or domain, add it to the trusted hosts in your [WinRM configuration](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
 
 Follow these steps to configure each target server.
 
-1. Enable File and Printer Sharing. You can do this by executing the
-   following command in a Command window with Administrative permissions:
+1. Enable File and Printer Sharing. Run the following command in an elevated command prompt:
 
-   `netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=yes`
+    ```cmd
+    netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=yes
+    ```
 
-1. Check your PowerShell version. You need PowerShell version
-   4.0 or above installed on every target machine. To display the current
-   PowerShell version, execute the following command in the PowerShell console:
+1. Make sure you have PowerShell v4.0 or above installed on every target machine. To display the current
+   PowerShell version, run the following command in an elevated PowerShell command prompt:
 
-   `$PSVersionTable.PSVersion`
+    ```powershell
+    $PSVersionTable.PSVersion
+    ```
 
-1. Check your .NET Framework version. You need version 4.5
-   or higher installed on every target machine. See
-   [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
+1. Make sure you have the .NET Framework v4.5 or higher installed on every target machine. See [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed) for details.
 
-1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
-   for Windows 10 and Windows Server 2016, or
-   [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https-With-Makecert/ConfigureWinRM.ps1)
-   for previous versions of Windows. Copy them to every target machine. You will use them to configure WinRM in the following steps.
-   
-1. Decide if you want to use HTTP or HTTPS to communicate
-   with the target machine(s).
+1. Download the configuration script and copy them to every target machine. You will use them to configure WinRM in the following steps.
 
-   * If you choose HTTP, execute the following in a Command
-     window with Administrative permissions:
+   - Windows 10 and Windows Server 2016: [ConfigureWinRM.ps1 win10-ser16](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
+   - Previous versions of Windows: [ConfigureWinRM.ps1](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https-With-Makecert/ConfigureWinRM.ps1)
 
-     `ConfigureWinRM.ps1 {FQDN} http`
+1. Decide if you want to use HTTP or HTTPS to communicate with the target machine(s).
 
-     > This command creates an HTTP WinRM listener and
-     opens port 5985 inbound for WinRM over HTTP.
+   - If you want to use the HTTP protocol, run the following command in an elevated command prompt to create an HTTP WinRM listener and open port 5985:
 
-   * If you choose HTTPS, you can use either a FQDN or an IP
-     address to access the target machine(s). To use a FQDN to access the target machine(s),
-     execute the following in the PowerShell console with Administrative permissions:  
+    ```command
+    ConfigureWinRM.ps1 {FQDN} http
+    ```
 
-     `ConfigureWinRM.ps1 {FQDN} https`
+   - If you want to use the HTTPS protocol, you can use either a FQDN or an IP address to access the target machine(s). To use a FQDN to access the target machine(s), run the following command in an elevated PowerShell command prompt:
 
-     To use an IP address to access the target machine(s),
-     execute the following in the PowerShell console with Administrative permissions:  
+    ```powershell
+    ConfigureWinRM.ps1 {FQDN} https
+    ```
 
-     `ConfigureWinRM.ps1 {ipaddress} https`
+     To use an IP address to access the target machine(s), run the following command in an elevated PowerShell command prompt:  
 
-     > These commands create a test certificate by using
-     **MakeCert.exe**, use the certificate to create
-     an HTTPS WinRM listener, and open port
-     5986 inbound for WinRM over HTTPS. The script also
-     increases the WinRM **MaxEnvelopeSizekb** setting.
-     By default on Windows Server this is 500 KB,
-     which can result in a "Request size exceeded the
-     configured MaxEnvelopeSize quota" error.
+    ```powershell
+    ConfigureWinRM.ps1 {ipaddress} https
+    ```
 
-### IIS configuration
+     The script is using **MakeCert.exe** to create a test certificate and use it to create an HTTPS WinRM listener and open port 5986. The script will also increase the WinRM **MaxEnvelopeSizekb** setting to prevent certain errors such as "Request size exceeded the configured MaxEnvelopeSize quota". By default, this value is set to 500 KB in Windows Server machines.
 
-If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.NET 4.6 installed on each of your IIS target servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+### Configure IIS servers
 
-If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
+#### [ASP.NET](#tab/net/)
 
-If you are deploying a Node.js application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
+- [Install IIS](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)
 
-In this example, we will deploy to the Default Web Site on each of the servers. If you need to deploy to another website, make sure you configure this as well.
+#### [ASP.NET Core](#tab/netcore/)
 
-### IIS WinRM extension
+- [Host ASP.NET Core on Windows with IIS](/aspnet/core/publishing/iis).
 
-Install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
-extension from Visual Studio Marketplace in Azure Pipelines or TFS.
+#### [Node](#tab/node/)
 
-## Define and test your CD release pipeline
+- [Hosting node.js applications in IIS on Windows](https://github.com/Azure/iisnode)
 
-Continuous deployment (CD) means starting an automated release pipeline whenever a new successful build is available. Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
+---
 
-1. Do one of the following:
+## Create a release pipeline
 
-   * If you've just completed a CI build (see above), then, in the build's
-     **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
-     This starts a new release pipeline that's automatically linked to the build pipeline.
+1. Select **Pipelines**, and then select **Releases**. Select **New pipeline**.
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop down
-     in the list of release pipelines, and choose **Create release pipeline**.
+1. Select **Empty job**.
 
-1. Choose **Start with an empty pipeline**.
+1. Select **+ Add** to add your build artifact, and then select your **Project** and **Source**. Select **Add** when you are done.
 
-1. If you created your new release pipeline from a build summary, check that the build pipeline
-   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
-   release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
+    :::image type="content" source="../media/confirm-or-add-artifact.png" alt-text="A screenshot showing how to add a build artifact.":::
 
-   ![Selecting the build artifact](../media/confirm-or-add-artifact.png)
+1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section, and then enable the **Continuous deployment trigger** and add a build branch filter to include the **main** branch.
 
-1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **main** branch.
+    :::image type="content" source="../media/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to add a continuous deployment trigger.":::
 
-   ![Checking or setting the Continuous deployment trigger](../media/confirm-or-set-cd-trigger.png)
+1. Select **Variables**, and create a variable **WebServers** with a list of IIS servers for its value; for example *machine1,machine2,machine3*.
 
-1. On the **Variables** tab of the stage in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
-
-1. Configure the following tasks in the stage:
+1. Select your stage, and add the following tasks to your pipeline:
   
-   ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
-   
-   - **Source**: Select the Web deploy package (zip file) from the artifact source.
-   
-   - **Machines**: `$(WebServers)`
-   
-   - **Admin Login**: Enter the administrator credentials for the target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
-   
-   - **Password**: Enter the administrator password for the target servers.
-   
-   - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
-   
-   ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy the package.
-   
-   - **Machines**: `$(WebServers)`
-   
-   - **Admin Login**: Enter the administrator credentials for target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
-   
-   - **Password**: Enter the administrator password for target servers.
-   
-   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
-   
+   :::image type="icon" source="../../tasks/deploy/media/windows-machine-file-copy-icon.png" border="false"::: [Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+
+   - **Source**: Select the Web deploy package path.
+
+   - **Machines**: *$(WebServers)*
+
+   - **Admin Login**: The administrator login on the target servers. For workgroup-joined computers, use the format *.\username*. For domain-joined computers, use the format *domain\username*.
+
+   - **Password**: The administrator password on the target servers.
+
+   - **Destination Folder**: The folder on the target machines to which the files will be copied.
+
+   :::image type="icon" source="../../tasks/deploy/media/iis-web-application-deployment-icon.png" border="false"::: [WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy your package.
+
+   - **Machines**: $(WebServers)
+
+   - **Admin Login**: The administrator login on the target servers. For workgroup-joined computers, use the format *.\username*. For domain-joined computers, use the format *domain\username*.
+
+   - **Password**: The administrator password on the target servers.
+
+   - **Protocol**: Select *HTTP* or *HTTPS* (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose *HTTPS*. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
+
    - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
-   
-   - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
 
-1. Edit the name of the release pipeline, click **Save**, and click **OK**. The default stage is named Stage1, which you can edit by clicking directly on the name.
+   - **Website Name**: *Default Web Site* (or the name of the website if you configured a different one earlier).
 
-You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
+1. Select **Save** when you are done and then select **OK**.
 
-[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
+## Deploy your app
 
-## FAQ
+1. Select **Pipelines** > **Releases**, and then select **Create release**.
 
-<!-- BEGINSECTION class="md-qanda" -->
+1. Check that the artifact version you want to use is selected and then select **Create**.
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../includes/qa-versions.md)]
-::: moniker-end
+1. Select the release link in the information bar message. For example: "Release **Release-1** has been queued".
 
-<!-- ENDSECTION -->
+1. Navigate to your pipeline **Logs** to see the logs and agent output.
 
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
+## Related articles
+
+- [Deploy apps to Windows VMs](./deploy-webdeploy-iis-deploygroups.md).
+- [Deploy apps to Linux VMs](./deploy-linuxvm-deploygroups.md).
+- [Deploy apps to VMware vCenter Server](../../targets/vmware.md).

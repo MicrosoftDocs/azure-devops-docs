@@ -76,4 +76,4 @@
 4. Install your extension and try it out.
    The action has been added to the context menu for queries and folders in the queries hub (work hub group).
 
-    ![action in the context menu of a query](../../media-procedures/create-action/action.png)
+    ![action in the context menu of a query](../../media/create-action/action.png)

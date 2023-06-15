@@ -1,7 +1,7 @@
 ---
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 07/09/2020
 ---
@@ -32,7 +32,7 @@ You can add them by either customizing your inherited process or modifying your 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can add them by defining additional work item types and then customizing your process configuration. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md) and [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 

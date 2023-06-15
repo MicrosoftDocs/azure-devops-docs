@@ -1,38 +1,27 @@
 ---
-title: Share information in work items and social tools 
+title: Share information in work items and social tools in Azure Boards
 titleSuffix: Azure Boards 
-description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
-ms.custom: boards-queries
-ms.technology: devops-agile
+description: Learn how to easily share information about work items, queries, and more in Azure Boards.
+ms.custom: boards-queries, engagement-fy23
+ms.service: azure-devops-boards
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/30/2020
+ms.date: 10/26/2022
 ---
 
 
+# Share information within work items and social tools in Azure Boards
 
-# Share information within work items and social tools
 
-
-[!INCLUDE [temp](../includes/version-all.md)]
-[!INCLUDE [temp](../includes/version-visual-studio.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
-::: moniker range=">= tfs-2018"
-
-Additional ways to share information include using dashboards, README files, and project Wikis. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2017"
-
-Additional ways to share information include using dashboards, and SharePoint portals. 
-
-::: moniker-end
+Other ways to share information include using dashboards, README files, and project Wikis. 
 
 Using work items, you can share information in the following ways: 
 
@@ -48,35 +37,15 @@ Using work items, you can share information in the following ways:
 
 ## Rich text fields  
 
-To convey detailed information, you can format text and insert images inline within any HTML field type. By default, the following fields are HTML fields (as well as many others not listed here for the CMMI process). 
-
-::: moniker range=">= tfs-2017"
+To convey detailed information, you can format text and insert images inline within any HTML field type. By default, the following fields are HTML fields and many others not listed here for the CMMI process. 
 
 - *Acceptance Criteria* 
 - *Description* 
 - *Steps* 
 - *System Info*
 
-::: moniker-end
 
-::: moniker range="tfs-2017"
-
-> [!NOTE]  
-> The *History* field is no longer a rich-text field. To annotate the work item history, add your content to the Description or Discussion fields. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-- *Acceptance Criteria* 
-- *Description* 
-- *History*
-- *Steps* 
-- *System Info*
-
-::: moniker-end
-
-In addition, you can add custom HTML fields to support your business processes. To learn more about each field, look it up in the [Work item field index](../work-items/guidance/work-item-field.md)
+ You can add custom HTML fields to support your business processes. To learn more about each field, look it up in the [Work item field index](../work-items/guidance/work-item-field.md)
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
@@ -92,7 +61,7 @@ The editor toolbar appears below each text box that accepts formatted text. It o
 
 You can use the :::image type="icon" source="../../media/icons/rtf-clear.png" border="false"::: clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
-For the **Discussion** section, the tool bar comes with a few extra icons&mdash;:::image type="icon" source="../../media/icons/at-mention.png" border="false"::: at-mention, :::image type="icon" source="../../media/icons/work-id.png" border="false"::: #-work-item-id, and  :::image type="icon" source="../../media/icons/pr-id.png" border="false"::: pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
+For the **Discussion** section, the tool bar comes with a few extra icons&mdash;:::image type="icon" source="../../media/icons/at-mention.png" border="false"::: at-mention, :::image type="icon" source="../../media/icons/work-id.png" border="false"::: #-work-item-id, and  :::image type="icon" source="../../media/icons/pr-id.png" border="false"::: pull-request id—to help bring others into the discussion or link to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, New Rich Text Editor toolbar](media/share-plans/discussion-rich-text-editor-toolbar.png)  
@@ -108,7 +77,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
@@ -125,13 +94,6 @@ You can copy and paste HTML text or an image from another application directly i
 
 <a id="tfs-portal-rich-text" />
 
-::: moniker range="<= tfs-2015"
-
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box.  
-
-![Rich text tool bar - web portal](media/rich-text-ui-web-portal.png)
-
-::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -140,9 +102,8 @@ The rich text formatting toolbar appears above each text box that can be formatt
 **Visual Studio 2017-2019/Team Explorer** 
 
 The work item form opens in the web portal for Visual Studio 2017. Work items aren't available from Visual Studio 2019 under the following conditions:   
-* If you are connected to a GitHub or third-party Git repository. 
-* If you are set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
- 
+* If you're connected to a GitHub or third-party Git repository. 
+* If you're set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
 
 From the work item form you can choose the font, font size, and text and background colors.
 
@@ -161,11 +122,11 @@ You can copy and paste HTML text or an image from another application directly i
 
 <a id="link-items"></a>
 
-## Link items
+## Link items to work items or objects
 
 To support traceability and add context to work items, you can link items to other work items or objects. From a links control tab, you can choose from various link types to based on the objects you want to link to. 
 
-Again, your link options will differ depending on the client you use. For specific guidance, see these resources:
+Your link options will differ depending on the client you use. For specific guidance, see these resources:
 
 - [Add link to work items](../backlogs/add-link.md)  
 - [Link items to support traceability and manage dependencies](link-work-items-support-traceability.md)  
@@ -174,9 +135,9 @@ Again, your link options will differ depending on the client you use. For specif
 <a id="attachments"></a>
 <a id="attach-files"></a>
 
-## Attachments
+## Attach files to work items
 
-You and your team can centralize reference materials by attaching files to your work items. That way they are always readily accessible when you need them. For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
+You and your team can centralize reference materials by attaching files to your work items. That way they're always readily accessible when you need them. For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
 ::: moniker range="azure-devops"
 
@@ -187,12 +148,14 @@ You can add up to 100 attachments to a work item. Attachments are limited to 60 
 
 You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. 
 
-By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
+By default, the size of work item attachments is limited to 4 MB. You can use the web service to [increase the size of files you attach up to 2 GB](/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items).
 
 ::: moniker-end 
  
-Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
-
+Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. The following file types support preview as attachments.  
+- **Image types**: jpg, jpeg, png, jif, jfif, jpx, fpx, pcd, bmp, img, eps, psd, wmf, gif, svg, webp
+- **Video types**: mp4, mov, m4v, webm
+- **Text & code types**:  sql, java, jsp, jar, asp, aspx, css, scss, sass, less, html, htm, xhtml, js, jsx, cs, csv, vb, cpp, cxx, c++, hpp, hxx, h, f#, ts, tsx, py, md, rs, rb, xml, c, php, swift, tex, json, yml, yaml, sbl, asm, d, f, for, go, m, p, pas, r, bat, sh, pl, awk, cmd, lua, sln, proj, txt, log, wiql
 
 <a id="attach-browser" />
 
@@ -217,14 +180,14 @@ You can continue viewing the attachments as a list or switch to a grid view to s
 
 ![Attachments tab, list or grid view](media/share-plans/142_attachments.gif) 
 
-You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
+You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. You can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
 > [!TIP]  
 > To get the URL of an image file you've attached, choose to preview it, right-click the image and choose the copy image address. Paste the address into a text editor and discard everything starting with **&download** to the end. 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Choose the :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: Attachment tab icon to attach a file to the work item. 
 
@@ -232,19 +195,9 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 ![Attachment controls, web portal](media/share-plans-attachment-tab-vsts.png)  
 
-You can edit, open, save, or delete an attachment by choosing an attachment and opening it's  :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
+You can edit, open, save, or delete an attachment by choosing an attachment and opening its  :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
 
 <img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" />   
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-Choose the **Attachments** tab icon to attach a file to the work item. 
-
-<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" />  
-
-Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose :::image type="icon" source="../media/icons/open-icon.png" border="false"::: the open icon to open the attachment or :::image type="icon" source="../media/icons/download-icon.png" border="false"::: download icon to save a copy.  
 
 ::: moniker-end 
 
@@ -253,7 +206,7 @@ Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attac
 
 #### [Visual Studio](#tab/visual-studio/)
 
-Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
+Choose the ![plus icon](../media/icons/add-green-icon.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
 <img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" />
 
@@ -264,19 +217,29 @@ To open the menu options to download or delete several attachments, choose one o
 
 * * *
 
+<a id="copy-url-attached-file"></a>
+
+::: moniker range="azure-devops"
+
+## Copy URL of attached file 
+
+To quickly copy the URL of an attachment, you can select **Copy attachment link** option from the attachment's :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** menu.
+
+:::image type="content" source="media/share-plans/copy-url-attachment-menu-option.png" alt-text="Screenshot of work item form, Attachments tab, Copy attachment link  attachment menu option."::: 
+::: moniker-end 
+
 <a id="storyboard" />
 
-## Storyboard 
+## Storyboard your information
 
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
-::: moniker range="> tfs-2018"
+
 > [!NOTE]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the Storyboard link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
-::: moniker-end 
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the **Storyboard** link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
 ::: moniker-end 
@@ -287,19 +250,13 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= tfs-2017"
+
 You can open Storyboarding with PowerPoint from the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions menu within a work item form. 
 
 <img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" />  
 
 To link to an existing storyboard, click the ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
-::: moniker-end 
 
-::: moniker range="<= tfs-2015"  
-From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
-
-![Storyboard links control](media/share-plans-storyboard-tfs-web-tab.png)  
-::: moniker-end 
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -308,9 +265,6 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 <img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" />
 
 * * *
-
-
-
 
 
 ## Email a work item query list
@@ -336,56 +290,25 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 
 * * *
 
+## Share data with team dashboards 
 
-
-
-::: moniker range=">= tfs-2015"
-
-## Team dashboards 
-
-You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide markdown information, query charts, and more. 
+You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide Markdown information, query charts, and more. 
 
 For details, see [Manage dashboards](../../report/dashboards/dashboards.md). 
 
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
-
-## Project wiki 
+## Share information with a project wiki 
 
 You can use your project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
 
 To learn more, see [Create a wiki for your project](../../project/wiki/wiki-create-repo.md). 
 
-::: moniker-end
-
-
-::: moniker range="<= tfs-2017"
-
-## SharePoint project portal
-
-You can use a SharePoint site to share and access documents from your project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:  
-- Share data contained in reports or dashboards  
-- Share team progress using predefined or customized SharePoint dashboards  
-- Share documents, files, images  
-- Share team knowledge and processes using the SharePoint wiki.    
-
-To learn more, see [Share information using the project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal).  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"  
-
 ## Marketplace extensions  
 
-You may find additional ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
-
-::: moniker-end
-
+You may find more ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 ## Related articles  
 
-As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
+As you can see, there are many ways to share information using work items alone. See these other tools and features to support planning, tracking, and sharing information with your team.   
 
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)

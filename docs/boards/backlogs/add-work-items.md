@@ -1,24 +1,28 @@
 ---
-title: Add stories & other work items to help manage your project
+title: Add user stories & other work items to help manage your project
 titleSuffix: Azure Boards 
 description: Add work items so you can plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Azure DevOps.  
-ms.custom: seodec18, devx-track-azurecli
-ms.technology: devops-agile
+ms.custom: devx-track-azurecli
+ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
-ms.topic: quickstart
-ms.date: 10/08/2021
+ms.topic: tutorial
+ms.date: 04/01/2022
 ---
 
 # Add and update a work item
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You add work items to plan and manage your project. Different types of work items track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. Use work items to describe the work to be done, assign work, track status, and coordinate efforts within your team.   
+You add work items to plan and manage your project. Different types of work items track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. Use work items to describe the work to be done, assign work, track status, and coordinate efforts within your team.  
 
-For other clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
+
+> [!NOTE]  
+> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or Kanban board to add new items. To learn more, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your Kanban board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
+ 
+For other clients that you can use to add and update work items, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -43,7 +47,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 > Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md),
 or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
+> For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -60,7 +64,7 @@ Create as many work items as you need of the type you need to track the work you
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
@@ -70,7 +74,7 @@ Create as many work items as you need of the type you need to track the work you
     >Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
     or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
     >
-    > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+    > For more information, see [About processes and process templates](../work-items/guidance/choose-process.md). 
 
     Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
@@ -80,25 +84,7 @@ Create as many work items as you need of the type you need to track the work you
 
     You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-    Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-1. From a web browser, connect to the project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
-
-2. From a team home page, you can choose the type of work item you want to create.  
-
-    ![Home page -  create work items](media/work-items-tfs-team-home-page.png)  
-
-    Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
-
-3. Enter a title and then save the work item. Before you change the default State, you must save it.  
-
-    ![Product backlog item work item form](media/add-work/work-items-pbi-form-caption.png)  
-
-    You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
+    Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json).
 
 ::: moniker-end
 
@@ -136,16 +122,8 @@ As work progresses, team members can update the state and reassign it as needed.
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
 > ![Update the State of a User Story](media/add-work/update-state.png)   
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-The location of the **State** field may differ depending on the work item type you're updating. 
-> [!div class="mx-imgBorder"]  
-> ![Update the State of an Issue](media/add-work/update-state-old-form.png)   
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -153,7 +131,7 @@ The following image shows the workflow states for a user story. If you want to d
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Remove or delete a work item](remove-delete-work-items.md).    
 
@@ -184,13 +162,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, changes are recorded in the History field, which you can view through the **History** tab.  
 
-::: moniker range=">= tfs-2017"
 ![View change history](media/add-work-item-history.png)  
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-![View change history](media/work-items-view-change-history.png)  
-::: moniker-end
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).  
 
@@ -203,7 +175,7 @@ There's no way to use Visual Studio 2019 to update a work item at this time.
 
 ### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 [Update work item](#update-work-item) | [Show work item details](#show-work-item) 
 
@@ -211,7 +183,7 @@ There's no way to use Visual Studio 2019 to update a work item at this time.
 
 ### Update a work item
 
-You can make updates to your work items with the [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can make updates to your work items with the [az boards work-item update](/cli/azure/boards/work-item#az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards work-item update --id
@@ -270,7 +242,7 @@ az boards work-item update --id 864  --discussion  "This work item is about 50% 
 
 ### Show details for a work item
 
-You can show the details for a work item with the [az boards work-item show](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can show the details for a work item with the [az boards work-item show](/cli/azure/boards/work-item#az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards work-item show --id
@@ -298,12 +270,9 @@ ID    Type    Title       Assigned To          State
 
 ::: moniker-end
 
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
-
-::: moniker range=">= tfs-2017"
 
 ## Follow a work item
 
@@ -314,13 +283,11 @@ When you want to track the progress of a single work item, choose the :::image t
 
 You'll only receive notifications when other project members modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md).  
 
 To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 > [!IMPORTANT]
 > To support the follow feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
@@ -335,9 +302,9 @@ To quickly add backlog items, such as user stories, requirements, or bugs, see t
 > [Kanban quickstart](../boards/kanban-quickstart.md) 
 
 
-For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json ).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you've added several work items, you can use additional features to get [notified of changes](../../organizations/notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
-For more clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
+For more clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json).

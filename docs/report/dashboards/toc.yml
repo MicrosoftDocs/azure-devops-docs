@@ -1,23 +1,22 @@
 - name: Code coverage 
-  href: ../../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/report/toc.json
 - name: Pipeline Analytics 
-  href: ../../pipelines/reports/pipelinereport.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/reports/pipelinereport.md?toc=/azure/devops/report/toc.json
   displayname: pipeline pass rate, pipeline duration, test pass rate, failed runs, failure trend, tests in the pipeline, unique failing tests, top 10 steps by duration
 - name: Test Analytics 
-  href: ../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json
   displayname: test failures, trends, pass rate, failing tests, group tests, individual tests, failure analysis 
 - name: Build and release test results    
-  href: ../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json
 - name: Tests and Requirements traceability
-  href: ../../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json
 - name: Pool consumption report
-  href: ../../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/report/toc.json
   displayname: agent usage, private self-hosted, public hosted, concurrency, historical graph, preview 
 - name: Configure a Test Results Trend widget
   href: configure-test-results-trend.md
 - name: Test Impact Analysis (TIA)
-  href: ../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: ../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json
 - name: Flaky test management and reporting
-  href: ../../pipelines/test/flaky-test-management.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-
+  href: ../../pipelines/test/flaky-test-management.md?toc=/azure/devops/report/toc.json
  

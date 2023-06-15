@@ -1,24 +1,23 @@
 ---
-title: Plan and track SAFe® projects
+title: Plan and track SAFe® projects in Azure Boards
 titleSuffix: Azure Boards
-description: How to plan and track epics, release trains, and multiple backlogs in Azure Boards to support SAFe® practices
-ms.technology: devops-agile
-ms.prod: devops
-ms.author: kaelli
-author: KathrynEE
+description: Learn how to plan and track epics, release trains, and multiple backlogs in Azure Boards to support SAFe® practices.
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 05/28/2020
+ms.date: 10/20/2021
 ---
 
 
-# Plan and track SAFe® programs and portfolios  
+# Plan and track SAFe® programs and portfolios in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Once you've configured your Agile tools to support SAFe®, trace relationships can be created from Stories all the way up to Epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
-This article walks you through some of the basic tools you'll use to plan and track your SAFe® programs and portfolios. Specifically, you'll learn how to quickly perform these tasks:
+This article walks you through some of the basic tools you'll use to plan and track your SAFe® programs and portfolios. Specifically, you'll learn how to quickly complete these tasks:
 
 >[!div class="checklist"]      
 > - Define epics, features, and stories  
@@ -32,7 +31,7 @@ This article walks you through some of the basic tools you'll use to plan and tr
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
-## Define Portfolios and Epics 
+## Define portfolios and epics 
 
 To get started, each team needs to add work items for each deliverable that supports the product vision. Each team can do that by working from their backlog and then mapping their work to create a hierarchy of work. 
 
@@ -40,31 +39,31 @@ Or, they can develop a list of work items and import them using Excel. By specif
 
 The following sections indicate how to work from Excel or through the web portal. 
 
-### Import a top-down plan using Excel  
+### Import a top-down plan by using Excel  
 
-You can import work items using Excel. As shown in the following image, Epics, Features, and User Stories are defined in a tree-list with their Value Area, Area Path and a few tags defined. The State value is New. 
+You can import work items using Excel. As shown in the following image, Epics, Features, and User Stories are defined in a tree-list with their Value Area, Area Path, and a few tags defined. The State value is New. 
 
 > [!div class="mx-imgBorder"]
 > ![Import a top-down plan using Excel.](media/safe-plan-track/excel-import-plan.png) 
 
-Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details and assigning work to team members and to sprints. 
+Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details, and assigning work to team members and to sprints. 
 
 To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 ### Document Portfolio Vision and Strategic Themes  
 
-We recommend you use the project wiki to capture and share the Portfolio Vision, Strategic Themes and other information relevant to your programs. Consider defining and sharing the following information:  
+We recommend you use the project wiki to capture and share the Portfolio Vision, Strategic Themes, and other information relevant to your programs. Consider defining and sharing the following information:  
 
 - How to use tags or custom fields to specify value streams 
 - Taxonomy terms as described in [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 - How release trains and sprints are used 
 - Key milestones and events  
-- Customer centric programs 
+- Customer-centric programs 
 
 Information can be easily shared and updated by any member of the team. 
 To learn more about using the project wiki, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 
-### Define and prioritize Epics
+### Define and prioritize the Epics portfolio backlog
 
 1. Open the Fabrikam team's Epics portfolio backlog and choose **New Work Item**. 
 	Enter the title of the Epic and choose **Add at selection**. 
@@ -72,14 +71,14 @@ To learn more about using the project wiki, see [About Wikis, READMEs, and Markd
 	> [!div class="mx-imgBorder"]
 	> ![Portfolio backlog, Add Epics](media/safe-plan-track/add-epic.png)
 
-2.	Continue adding Epics as needed by continuing to type in their titles. You can add details later. 
+2.	Continue adding epics as needed by continuing to type in their titles. You can add details later. 
 
-	When finished, you should have a list of Epics as shown: 
+	When finished, you should have a list of epics as shown: 
 
 	> [!div class="mx-imgBorder"]
 	> ![Portfolio backlog, List Epics](media/safe-plan-track/define-portfolio.png)
 
-3. As needed, you can drag and drop Epics within the list to reflect their priority. 
+3. As needed, you can drag and drop epics within the list to reflect their priority. 
 
 4. Define details. Choose each work item title to open the form. Add information to the Description, assign to an owner, add tags, and choose the Value Area. 
 
@@ -88,7 +87,7 @@ To learn more about using the project wiki, see [About Wikis, READMEs, and Markd
 	> [!div class="mx-imgBorder"]
 	> ![Define details of Epics.](media/safe-plan-track/epic-form.png)
 
-	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
+	To update several work items in bulk, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 > [!NOTE]   
 > Since an important aspect of SAFe® is to map work to business or architecture goals, you'll want to make sure to set the **Value Area**=*Architectural* for any Feature mapped to an architecture epic. Because the default choice is *Business*, you don't have to change the field for any item that supports a business epic. You can also add tags to track the investment.  
@@ -96,13 +95,13 @@ To learn more about using the project wiki, see [About Wikis, READMEs, and Markd
 > The same principles apply to Stories in progress. You can map them to Features, change the **Value Area** to *Architecture* for work that you do to support architectural epics, and add tags for tracking themes.  
 
 
-## Define Programs and Features
+## Define programs and features
 
-In a similar fashion to portfolio teams, program teams work from their Features backlog and define the features that support the Epics they are tasked with delivering. 
+In a similar fashion to portfolio teams, program teams work from their Features backlog and define the features that support the Epics they're tasked with delivering. 
 
 Each program manager defines and prioritizes their features. Here, we show the Fiber Suite team add Features. 
 
-###  Define Features
+###  Define the Features backlog
 
 1. Open the Fiber Suite team's Features backlog and choose **New Work Item**. 
 
@@ -124,7 +123,7 @@ Each program manager defines and prioritizes their features. Here, we show the F
 
 ### Map Features to Epics 
 
-In this next step you'll map each Feature to it's parent Epic. The Mapping tool quickly create parent-child links between Epics and Features. 
+In this next step, you'll map each Feature to its parent Epic. The Mapping tool quickly creates parent-child links between Epics and Features. 
 
 1. From the Features backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
@@ -136,7 +135,7 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Choose Portfolio Epics backlog](media/safe-plan-track/choose-portfolio-team.png)
 
-1. One by one, drag each Feature onto it's parent Epic. 
+1. One by one, drag each Feature onto its parent Epic. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Drag and drop feature onto epic](media/safe-plan-track/map-feature-to-epic.png)
@@ -153,7 +152,7 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 
 In a similar manner to portfolio and program teams, each Agile feature team add Stories to their backlog to support the Features assigned to them. 
 
-###  Define Stories
+###  Define the Stories backlog
 
 1. Open the App team's Stories backlog and choose **New Work Item**. 
 
@@ -176,11 +175,11 @@ In a similar manner to portfolio and program teams, each Agile feature team add 
 	> [!div class="mx-imgBorder"]
 	> ![User story work item form](media/safe-plan-track/user-story-form.png)
 
-	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
+	To update several work items in bulk, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 ### Map Stories to Features 
 
-Just as you earlier mapped each Feature to it's parent Epic, now you'll map each User Story to it's parent Feature. The Mapping tool quickly create parent-child links between Features and User Stories. 
+Just as you earlier mapped each Feature to its parent Epic, now you'll map each User Story to its parent Feature. The Mapping tool quickly creates parent-child links between Features and User Stories. 
 
 1. From the Stories backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
@@ -192,7 +191,7 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, Choose Fiber Suite team Features backlog](media/safe-plan-track/choose-fiber-suite-features.png)
 
-1. One by one, drag each User Story onto it's parent Feature. 
+1. One by one, drag each User Story onto its parent Feature. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, Drag and drop user story onto feature](media/safe-plan-track/map-story-to-feature.png)
@@ -205,13 +204,13 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)
 
 
-## View Kanban boards, update status  
+## View Kanban boards and update status  
 
 Each team's Kanban board provides a visual interactive space for the team to plan and update status. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
-For an overview of Kanban board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. To learn more, see [Customize your boards](../get-started/customize-boards.md).
+For an overview of Kanban board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. To learn more, see [Customize your boards](../configure-customize.md).
 
-### Open a Kanban Board  
+### Open a Kanban board  
 
 You open the Kanban board from any backlog by choosing the **View as Board** link. 
 
@@ -317,7 +316,7 @@ Also, you can bulk add or update work items with the following tools:
 
 - [About work items](../work-items/about-work-items.md)  
 - [About Boards and Kanban](../boards/kanban-overview.md)  
-- [About About Sprints, Scrum and project management](../sprints/scrum-overview.md)  
+- [About About Sprints, Scrum, and project management](../sprints/scrum-overview.md)  
 - [Plan and work a sprint](../sprints/assign-work-sprint.md)  
 - [Use work item templates](../backlogs/work-item-template.md)  
 - [Track your work when assigned to two or more teams](../sprints/set-capacity.md#track-capacity-per-team)

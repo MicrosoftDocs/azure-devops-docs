@@ -2,19 +2,19 @@
 title: Stakeholder access quick reference
 titleSuffix: Azure DevOps 
 description: Stakeholder access to common user tasks for Azure DevOps 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 toc: show
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 08/18/2021
----
+ms.date: 08/03/2022
+--- 
 
 # Stakeholder access quick reference
 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards, Azure Pipelines, and collaboration tools. They have no access to code repositories. 
 
@@ -44,7 +44,7 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 ## Public versus private feature access
 
-Users granted **Stakeholder** access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
+Users granted **Stakeholder** access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -73,7 +73,7 @@ Users granted **Stakeholder** access are granted different access to features de
 ## Work tracking 
 ::: moniker-end
 
-The following table summarizes the features Stakeholder access users have access to from Azure Boards. Stakeholders access users can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. To learn more, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
+The following table summarizes the features Stakeholder access users have access to from Azure Boards. Stakeholders access users can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. To learn more, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) 
 
@@ -131,7 +131,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
       **Boards** 
@@ -236,7 +236,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Create query charts
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
       **Delivery Plans** 
@@ -249,7 +249,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops-2022" 
 :::row:::
    :::column span="1":::
       **Delivery Plans** (Extension)
@@ -270,8 +270,11 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
 
 
 ::: moniker range=">= azure-devops-2019" 
+
 ## Azure Pipelines 
+
 ::: moniker-end
+
 
 ::: moniker range="azure-devops" 
 The following table summarizes the features available to **Stakeholder** access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all features listed under **Public project**.  Without this feature enabled, **Stakeholder** access users can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
@@ -332,20 +335,18 @@ Users granted **Stakeholder** access can perform the following tasks related to 
 
 - Provide feedback using the Test & Feedback extension
 - Apply a work item template to a test case  
- 
-::: moniker range=">= tfs-2018" 
+
 
 ## Dashboards, notifications, READMEs, and wikis 
 
-The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
+The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../organizations/notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
 
-::: moniker-end
 ::: moniker range="azure-devops" 
 > [!NOTE]   
 > Public project **Stakeholder** access users have full access to all dashboard and Wiki features. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018" 
+
 :::row:::
    :::column span="1":::
       **Feature area** 
@@ -357,8 +358,7 @@ The following table summarizes the features **Stakeholder** access users have to
       **Features can't use**
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="1":::
       Dashboards
@@ -372,7 +372,7 @@ The following table summarizes the features **Stakeholder** access users have to
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">=tfs-2018 < azure-devops" 
+::: moniker range="< azure-devops-2020" 
 :::row:::
    :::column span="1":::
       Dashboards
@@ -385,7 +385,6 @@ The following table summarizes the features **Stakeholder** access users have to
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= tfs-2018" 
 :::row:::
    :::column span="1":::
       Notifications
@@ -447,7 +446,6 @@ The following table summarizes the features **Stakeholder** access users have to
       - Edit project or code wikis
    :::column-end:::
 :::row-end:::
-::: moniker-end
  
 **Notes:**
 1. Requires team administrator role or addition to Project Administrators group.

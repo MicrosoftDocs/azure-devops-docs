@@ -2,11 +2,11 @@
 title: Analytics permissions and security
 titleSuffix: Azure DevOps     
 description: Learn about the required permissions necessary to access Analytics and how to handle project access denied errors.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/01/2021
 ---
@@ -14,7 +14,7 @@ ms.date: 10/01/2021
 
 # Set permissions to access Analytics and Analytics views
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all Contributors with Basic access. Users granted Stakeholder access don't have permissions to view or edit Analytics views.  
 
@@ -73,7 +73,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ### [Current page](#tab/current-page) 
   
-1. Open **Project Settings > Permissions**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+1. Open **Project Settings > Permissions**. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
   
 1. Choose the person or group that you want to modify permissions for and then change their permission assignment. 
 
@@ -111,5 +111,5 @@ Because of this scenario, the recommended approach for querying Analytics is to 
 
 ## Related articles 
 
--  [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
+-  [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)
 -  [Power BI integration overview](overview.md)

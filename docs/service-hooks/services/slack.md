@@ -1,23 +1,23 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Create a service hook with Slack
 description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
-monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Create a service hook for Azure DevOps with Slack
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps organization,
 such as completed builds, code changes, pull requests, releases, work items changes, and more.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 > [!NOTE]
-> For Azure DevOps Services and Azure DevOps 2020 and later versions, we recommend you use the following suite of apps  which offer rich features, to integrate with Slack.
+> For Azure DevOps Services, we recommend you use the following suite of apps  which offer rich features, to integrate with Slack.
 
 ### Azure Boards app for Slack
 
@@ -36,7 +36,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops"
 
 ## Create a custom app in Slack
 
@@ -58,8 +58,11 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 	![copy Web Hook](./media/slack/copy-webhook.png)
 
-## Create a service hook subscription in your organization
+::: moniker-end
 
+::: moniker range="<= azure-devops"
+
+## Create a service hook subscription in your organization
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -79,7 +82,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 3. Paste the Web Hook URL from the Slack integration that you created and select **Finish**.
 
-   <img alt="Action dialog box with the Web Hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   :::image type="content" source="./media/slack/action.png" alt-text="Action dialog box with the Web Hook URL.":::
 
 4. Now, when the event you configured occurs in your project, a notification appears in your team's Slack channel.
 
@@ -87,7 +90,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Go to your project Service Hooks page: 
 
@@ -112,8 +115,6 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
-
 ## Q & A
 
 <!-- BEGINSECTION class="m-qanda" -->
@@ -131,5 +132,4 @@ For example, if you want to see build failures and new work items in your Slack 
 create two additional subscriptions.
 
 <!-- ENDSECTION -->
-
-::: moniker-end
+ 

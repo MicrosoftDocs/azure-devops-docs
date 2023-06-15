@@ -3,11 +3,11 @@ title: Resolve Azure Boards nest, display, and reorder issues for work items
 titleSuffix: Azure Boards
 description: Learn how to resolve error messages caused by nesting and reordering issues that occur in Azure Boards.  
 ms.custom: "boards-backlogs, seodec18"  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 10/26/2021
 ---
@@ -16,7 +16,7 @@ ms.date: 10/26/2021
 
 <a id="display-hierarchy">  </a>
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
@@ -38,7 +38,7 @@ Use this article to fix the issues that occur and that display one of the follow
 
 The following image indicates the natural hierarchy for the Agile, Scrum, and Capability Maturity Model Integration (CMMI) processes. Along with these work item types, other custom work item types may be added to backlogs and boards. Also, custom backlog levels may be added. 
 
-![Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.](../../reference/media/create-hierarchy-with-different-wits.png) 
+![Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.](media/resolve/create-hierarchy-with-different-wits.png) 
 
 You break this natural hierarchy when you create same-category links between work items. 
 
@@ -108,7 +108,7 @@ From the **View options** selector, you can choose to show or hide **In Progress
 :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
 ::: moniker-end
 
@@ -157,7 +157,7 @@ For TFS 2018 and earlier versions, the Kanban board only shows the last node wit
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Product backlog and Kanban boards
 

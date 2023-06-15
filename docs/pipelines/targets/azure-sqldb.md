@@ -4,25 +4,21 @@ description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
 ms.custom: seodec18
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 04/27/2020
-monikerRange: '>= tfs-2017'
+ms.date: 04/20/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
-
-
 ## DACPAC
 
-The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
+The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes and data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -43,23 +39,23 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
+When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task.
 
 * * *
-See also [authentication information when using the Azure SQL Database Deployment task](../tasks/deploy/sql-azure-dacpac-deployment.md#arguments).
+See also [authentication information when using the Azure SQL Database Deployment task](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1).
 
 ## SQL scripts
 
-Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.
+Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here’s a simple example of a SQL script that creates an empty database.
 
 ```sql
   USE [main]
@@ -69,9 +65,9 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
   GO
 ```
 
-To run SQL scripts as part of a pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent cannot communicate with Azure SQL Database.
+To run SQL scripts as part of a pipeline, you’ll need Azure PowerShell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent can’t communicate with Azure SQL Database.
 
-The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
+The following PowerShell script creates firewall rules. You can check in this script as `SetAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -80,11 +76,11 @@ The following Powershell script creates firewall rules. You can check-in this sc
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
-  [String] [Parameter(Mandatory = $true)] $ResourceGroup,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $agentIP
+New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIp -EndIPAddress $agentIP
 ```
 
 ### Classic
@@ -95,21 +91,22 @@ param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
   [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 
 $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
-}
-function Update-AzureSQLServerFirewallRule{
-  $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
 }
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
+function Update-AzureSQLServerFirewallRule{
+  $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $FirewallRuleName -ServerName $ServerName
+}
+
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $FirewallRuleName -ErrorAction SilentlyContinue) -eq $null)
 {
   New-AzureSQLServerFirewallRule
 }
@@ -119,7 +116,7 @@ else
 }
 ```
 
-The following Powershell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -128,10 +125,10 @@ The following Powershell script removes firewall rules. You can check-in this sc
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
-  [String] [Parameter(Mandatory = $true)] $ResourceGroup,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
-Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
+Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName
 ```
 
 ### Classic
@@ -142,73 +139,82 @@ param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
   [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 
 $ErrorActionPreference = 'Stop'
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $FirewallRuleName -ErrorAction SilentlyContinue))
 {
-  Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  Remove-AzureSqlDatabaseServerFirewallRule -RuleName $FirewallRuleName -ServerName $ServerName
 }
 ```
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
 ```yaml
 variables:
-  AzureSubscription: '<Azure service connection>'
-  ServerName: '<Database server name>'
-  DatabaseName: '<Database name>'
-  AdminUser: '<SQL user name>'
-  AdminPassword: '<SQL user password>'
-  SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
+  AzureSubscription: '<SERVICE_CONNECTION_NAME>'
+  ResourceGroupName: '<RESOURCE_GROUP_NAME>'
+  ServerName: '<DATABASE_SERVER_NAME>'
+  ServerFqdn: '<DATABASE_FQDN>'
+  DatabaseName: '<DATABASE_NAME>'
+  AdminUser: '<DATABASE_USERNAME>'
+  AdminPassword: '<DATABASE_PASSWORD>'
+  SQLFile: '<LOCATION_OF_SQL_FILE_IN_$(Build.SourcesDirectory)>'
 
 steps:
-- task: AzurePowerShell@2
-  displayName: Azure PowerShell script: FilePath
+- task: AzurePowerShell@5
+  displayName: 'Azure PowerShell script'
   inputs:
     azureSubscription: '$(AzureSubscription)'
+    ScriptType: filePath
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
-- task: CmdLine@1
+- task: CmdLine@2
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
-    arguments: '-S $(ServerName) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+    arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
-- task: AzurePowerShell@2
-  displayName: Azure PowerShell script: FilePath
+- task: AzurePowerShell@5
+  displayName: 'Azure PowerShell script'
   inputs:
     azureSubscription: '$(AzureSubscription)'
+    ScriptType: filePath
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 ```
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure powershell scripts to configure firewall rules are part of the build artifact.
+
+When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
-- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-- Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
+- First, use an [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- Second, use a [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
+- Third, use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
+
+:::image type="content" source="media/classic-sql.png" alt-text="A screenshot showing a classic pipeline to run SQL script.":::
 
 * * *
+
 ## Azure service connection
 
 The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
@@ -257,9 +263,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -279,10 +285,10 @@ In your release pipeline, you can implement various checks and conditions to con
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
-## Additional SQL actions
+## More SQL actions
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
-that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need.
+that you want to perform. In these cases, you can simply use PowerShell or command-line scripts to run the commands you need.
 This section shows some of the common use cases for invoking the [SqlPackage.exe tool](/sql/tools/sqlpackage-download).
 As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
@@ -329,7 +335,7 @@ sqlpackage.exe /Action:Extract /?
 
 ### Publish
 
-Incrementally updates a database schema to match the schema of a source .dacpac file. If the database does not exist on the server, the publish operation will create it. Otherwise, an existing database will be updated.
+Incrementally updates a database schema to match the schema of a source .dacpac file. If the database doesn’t exist on the server, the publish operation will create it. Otherwise, an existing database will be updated.
 
 **Command Syntax:**
 

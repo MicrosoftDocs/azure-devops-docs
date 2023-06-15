@@ -2,18 +2,18 @@
 title: Use functional work item search options
 description: How to use Work Item Search - functional options for Work Item Search in Microsoft Azure DevOps for all projects. 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
-ms.technology: devops-collab
+ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 04/15/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Functional work item search
 
-[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Functional work item search command filters extend your ability to refine your search of work items based on assignment, work item type, specific fields, and more. This is in addition to the filter functions documented in [Get started with search](get-started-search.md). Work item search is a built-in feature available to all Azure DevOps users.
 
@@ -47,7 +47,7 @@ modal dialog, providing quick access to read and edit work items.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"  
+::: moniker range="tfs-2018"  
 
 ![Opening the work item in a modal dialogue](media/advanced-work-item-search-syntax/open-work-item-modal.png)
 
@@ -160,7 +160,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 ::: moniker-end
 
-::: moniker range=" <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
    

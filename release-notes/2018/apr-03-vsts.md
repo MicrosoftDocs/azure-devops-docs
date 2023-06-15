@@ -2,7 +2,6 @@
 title: Deployment Groups and Build completion trigger – VSTS Sprint 132 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 4/3/2018
 description: The Sprint 132 Update of Visual Studio Team Services (VSTS) brings a few key features to help you scale your build and release pipeline.
 ---
@@ -14,7 +13,7 @@ The **Sprint 132 Update** of Visual Studio Team Services (VSTS) brings a few key
 Other highlights include:
 
 - [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
-- [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
+- [Publish Markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
 
 ## What's new in VSTS
 
@@ -41,7 +40,7 @@ Other highlights include:
 
 ### Wiki
 
-- [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
+- [Publish Markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
 - [Retain special characters in Wiki page titles](#retain-special-characters-in-wiki-page-titles)
 - [Extend Wiki using REST APIs](#extend-wiki-using-rest-apis)
 
@@ -155,9 +154,9 @@ To enable retention policies, edit your feed and enter a value in the **Maximum 
 
 ## Wiki
 
-### Publish markdown files from a Git repository as a Wiki
+### Publish Markdown files from a Git repository as a Wiki
 
-Developers create documentation for "APIs", "SDKs", and "help docs explaining code" in code repositories. Readers then need to sift through code to find the right documentation. Now you can simply publish markdown files from code repositories and host them in Wiki.
+Developers create documentation for "APIs", "SDKs", and "help docs explaining code" in code repositories. Readers then need to sift through code to find the right documentation. Now you can simply publish Markdown files from code repositories and host them in Wiki.
 
 > [!div class="mx-imgBorder"]
 > ![public code as wiki action](media/132_04.png)
@@ -167,14 +166,14 @@ From within Wiki, start by clicking **Publish code as wiki**. Next, you can spec
 > [!div class="mx-imgBorder"]
 > ![publish pages dialog](media/132_05.png)
 
-Once you click on **Publish**, all the markdown files under the selected folder will be published as a wiki. This will also map the head of the branch to the wiki so that any changes you make to the Git repo will be reflected immediately.
+Once you click on **Publish**, all the Markdown files under the selected folder will be published as a wiki. This will also map the head of the branch to the wiki so that any changes you make to the Git repo will be reflected immediately.
 
 In case you have multiple versions of your product and you want to easily skim through the documentation of these versions, you can also publish new version of the documentation to the wiki using different branches.
 
 > [!div class="mx-imgBorder"]
 > ![publish new version action](media/132_06.png)
 
-Once the markdown files are published, the pages will also be searchable in the Wiki search hub.
+Once the Markdown files are published, the pages will also be searchable in the Wiki search hub.
 
 > [!div class="mx-imgBorder"]
 > ![search results for Azure CLI](media/132_13.png)
@@ -203,7 +202,7 @@ This feature was prioritized based on a suggestion.
 
 ### Extend Wiki using REST APIs
 
-Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wikis/create) and [Wiki search](/rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results) documentation for more information.
+Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wikis/create) and [Wiki search](/rest/api/azure/devops/search/wiki-search-results) documentation for more information.
 
 ## Reporting
 

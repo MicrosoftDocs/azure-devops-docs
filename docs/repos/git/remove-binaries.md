@@ -3,14 +3,15 @@ title: Remove large binaries from your Git history
 description: Learn how to remove a large binary from your Git history to manage the size of cloned repositories 
 ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
 ms.topic: article
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.date: 04/27/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Learn how to remove a large binary from your Git history to manage the size of cloned repositories
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git has gained much popularity in recent years as a distributed source code repository that lets users work with the full repository while in a disconnected state. The benefits of git are well-documented, but what happens if you need to "roll back the clock" on the primary repository? Doing so is not so intuitive and requires elevated permissions, as you might expect for something that affects every single user of the repository.
 

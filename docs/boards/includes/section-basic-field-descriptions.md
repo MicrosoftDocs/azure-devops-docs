@@ -1,9 +1,8 @@
 ---
-ms.technology: devops-agile
-ms.prod: devops
+ms.service: azure-devops-boards
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 09/21/2020
 ---

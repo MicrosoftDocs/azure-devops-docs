@@ -2,21 +2,19 @@
 title: View and configure the cumulative flow diagram (CFD) reports
 titleSuffix: Azure DevOps 
 description: Learn how to configure and view cumulative flow diagrams to improve your Kanban processes.
-ms.custom: dashboards
-ms.prod: devops  
-ms.technology: devops-analytics  
+ms.custom: dashboards 
+ms.subservice: azure-devops-analytics
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops' 
-ms.date: 09/28/2021
+ms.date: 04/04/2022
 ---
 
 # View and configure a Cumulative Flow Diagram
 
-
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -64,7 +62,7 @@ Use this article to learn how to:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. CFDs help teams monitor the count of work items as they progressively move through various workflow states. These diagrams can show the flow of epics, features, user stories, product backlog items, or requirements, depending on the process selected for your project:
 - [Agile](../../boards/work-items/guidance/agile-process.md)
@@ -102,7 +100,7 @@ The CFD shows the count of items in each Kanban column for the selected time per
 
 ::: moniker-end
 
-For the CFD to provide useful information, you'll want to update the status of work items to reflect progress as it occurs. You can quickly make these updates through your [Kanban board](../../boards/boards/kanban-basics.md). 
+For the CFD to provide useful information, you'll want to update the status of work items to reflect progress as it occurs. You can quickly make these updates through your [Kanban board](../../boards/boards/kanban-quickstart.md). 
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -156,7 +154,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
@@ -170,13 +168,6 @@ To select another team, open the project and team selector. Select a different t
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-On your web browser, open your team's product backlog. Select **Boards** > **Backlogs**. 
-
-![Boards > backlogs, TFS 2015, 2013 web portal](/azure/devops/boards/backlogs/media/backlogs-boards-plans/open-backlog-tfs-2015.png)
-
-::: moniker-end
 
 ## View the CFD in-context report   
 
@@ -235,7 +226,7 @@ The image opens to display a larger view of the CFD.
 ::: moniker-end  
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To open the CFD in-context report for your product or portfolio backlog, select the image in the upper-right corner of your **Work>Backlogs** page. 
 
@@ -271,7 +262,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the backlog level for which you want to configure and then open the common configuration dialog. Select the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.
 
@@ -350,10 +341,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md) or
-> [Kanban basics](../../boards/boards/kanban-basics.md)
-
-
+> [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 
 ## Related articles
 

@@ -12,7 +12,7 @@ Previously, when updating a work item, and a second team member was making chang
 
 ### Manage iteration and area paths from the command line
 
-You can now manage iteration and area paths from the command line by using the `az boards iteration` and `az boards area` commands. For example, you can setup and manage iteration and area paths interactively from the CLI, or automate the entire setup using a script. For more details about the commands and the syntax, see the documentation [here](/cli/azure/boards?view=azure-cli-latest&preserve-view=true).
+You can now manage iteration and area paths from the command line by using the `az boards iteration` and `az boards area` commands. For example, you can setup and manage iteration and area paths interactively from the CLI, or automate the entire setup using a script. For more details about the commands and the syntax, see the documentation [here](/cli/azure/boards).
 
 ### Work item parent column as column option
 

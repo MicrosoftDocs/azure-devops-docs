@@ -5,12 +5,12 @@ description: A reference guide that can help you to understand the file matching
 ms.topic: reference
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.date: 12/13/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # File matching patterns reference
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ## Pattern syntax
 

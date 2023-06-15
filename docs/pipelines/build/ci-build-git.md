@@ -1,18 +1,17 @@
 ---
 title: Building multiple branches
 description: Build multiple branches using Azure Pipelines or TFS
-ms.author: mlearned
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 04/02/2019
-monikerRange: '>=tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build multiple branches
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -38,7 +37,7 @@ A common workflow with Git is to create temporary branches from your main branch
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
+Unless you specify a [trigger](/azure/devops/pipelines/yaml-schema/trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
 
 ```yaml
 trigger:
@@ -86,7 +85,7 @@ Your typical development process includes developing code locally and periodical
 The main branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in Azure Pipelines or TFS so that certain tasks only execute on your main branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions.
 
 #### [YAML](#tab/yaml/)
-Edit the `azure-pipelines.yml` file in your `main` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
+Edit the `azure-pipelines.yml` file in your `main` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -103,7 +102,7 @@ YAML builds are not yet available on TFS.
 
 #### [Classic](#tab/classic/)
 1. Locate the build pipeline that services your main branch. Select **Edit**.
-2. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](../tasks/utility/publish-build-artifacts.md) task.
+2. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
 3. Select **Control Options** for the task on the bottom right hand part of your screen.
 4. Select the dropdown for **Run this task** and choose **Custom conditions**.
 
@@ -176,6 +175,15 @@ YAML builds are not yet available on TFS.
 
 Once the work is completed in the topic branch and merged to main, you can delete your topic branch.  You can then create additional feature or bug fix branches as necessary.
 
+::: moniker range="azure-devops-2022"
+
+> [!IMPORTANT]
+> Azure Pipelines no longer supports per-pipeline retention policies. We recommend using project-level retention rules.
+
+::: moniker-end
+
+::: moniker range="<=azure-devops-2020"
+
 ## Use retention policies to clean up your completed builds
 
 Retention policies allow you to control and automate the cleanup of your various builds.  For shorter-lived branches like topic branches, you may want to retain less history to reduce clutter and storage costs.  If you create CI builds on multiple related branches, it will become less important to keep builds for all of your branches.  
@@ -192,6 +200,8 @@ Retention policies allow you to control and automate the cleanup of your various
 7.  Select the **Save & queue** menu and then Select **Save**.  
 
 Policies are evaluated in order, applying the first matching policy to each build. The default rule at the bottom matches all builds.  The retention policy will clean up build resources each day.  You retain at least one build at all times.  You can also choose to keep any particular build for an indefinite amount of time.
+
+::: moniker-end
 
 ## Next steps
 

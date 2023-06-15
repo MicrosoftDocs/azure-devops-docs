@@ -2,18 +2,18 @@
 title: Remove users from AD/Azure AD security groups 
 titleSuffix: Azure DevOps
 description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD security groups  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 10/14/2019
 ---
 
-# Remove user accounts
+# Remove user accounts from Azure Active Directory or Active Directory
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When a user with access to Azure DevOps leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This automatically voids their user account and remove their ability to access or connect to Azure DevOps.
 
@@ -62,5 +62,6 @@ For information on removing users from AD or Azure AD, see one of the following 
 ## Related articles
 
 * [About permissions and inheritance](../../organizations/security/about-permissions.md)
-* [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 * [About security, authentication, and authorization](about-security-identity.md)

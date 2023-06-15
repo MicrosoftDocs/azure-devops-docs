@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Azure Pipelines app for Jira
 
-We are excited to announce the availability of the [Azure Pipeline app for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview). The integration enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. It simplifies the generation of release notes by tracking Jira issues mentioned in GitHub commits deployed with releases. 
+We are excited to announce the availability of the [Azure Pipeline app for Jira](https://github.com/Microsoft/azure-pipelines-jira). The integration enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. It simplifies the generation of release notes by tracking Jira issues mentioned in GitHub commits deployed with releases. 
 
 > [!div class="mx-imgBorder"]
 > ![Azure Pipelines app for Jira.](../../media/154_12.png "Azure Pipelines app for Jira")

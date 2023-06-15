@@ -3,33 +3,33 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 09/29/2021
+ms.date: 05/18/2023
 monikerRange: '>= azure-devops-2020'
 ---
 
 # Deployment jobs
 
-[!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 > [!IMPORTANT]
 > - Job and stage names cannot contain keywords (example: `deployment`).
 > - Each job in a stage must have a unique name. 
 
-In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
+In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. Azure DevOps supports the *runOnce*, *rolling*, and the *canary* strategies.  
 
 Deployment jobs provide the following benefits:
 
  - **Deployment history**: You get the deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
  - **Apply deployment strategy**: You define how your application is rolled out.
 
-   > [!NOTE] 
-   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies.  
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`.
 
-A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. Deployment jobs only support one checkout step. 
+> [!NOTE]
+> This article focuses on deployment with deployment jobs. To learn how to deploy to Azure with pipelines, see [Deploy to Azure overview](../overview-azure.md). 
 
 ## Schema
 
-Here is the full syntax to specify a deployment job: 
+Here's the full syntax to specify a deployment job: 
 
 ```YAML
 jobs:
@@ -66,7 +66,7 @@ environment:
     tags: string # List of tag filters.
 ```
 
-For virtual machines, you do not need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
+For virtual machines, you don't need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 ## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
@@ -85,7 +85,7 @@ Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](../yaml-schema.md#download).
+`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -127,15 +127,15 @@ strategy:
           ...
 ```
 
-If you are using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
+If you're using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
 
 ```yaml
   jobs:
-  - deployment: deploy
+  - deployment: MyDeploy
     pool:
       vmImage: 'ubuntu-latest'
-      workspace:
-        clean: all
+    workspace:
+      clean: all
     environment: staging
 ```
 
@@ -374,7 +374,7 @@ jobs:
 ```
 ## Use pipeline decorators to inject steps automatically
 
-[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be applied as part of enforcing safe deployment practices.
 
 In addition, deployment jobs can be run as a [container job](container-phases.md) along with [services side-car](service-containers.md) if defined.
 
@@ -387,8 +387,8 @@ To share variables between stages, output an [artifact](../artifacts/pipeline-ar
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['Deploy.StepA.VariableA']]`)
-- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` (for example, `$[dependencies.JobA.outputs['Deploy.StepA.VariableA']]`)
+- For **runOnce** strategy plus a resourceType: `$[dependencies.<job-name>.outputs['<job-name>_<resource-name>.<step-name>.<variable-name>']]`. (for example, `$[dependencies.JobA.outputs['Deploy_VM1.StepA.VariableA']]`)
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
@@ -543,7 +543,7 @@ Learn more about how to [set a multi-job output variable](variables.md#set-a-mul
 
 ### My pipeline is stuck with the message "Job is pending...". How can I fix this?
  
-This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
+This can happen when there's a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names don't contain keywords. If renaming doesn't fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
 
 ### Are decorators supported in deployment groups?
 

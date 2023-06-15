@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Reporting Sprint 185 Update
 description: See the Sprint 185 feature updates for Azure reporting, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 04/13/2021
 ---
 

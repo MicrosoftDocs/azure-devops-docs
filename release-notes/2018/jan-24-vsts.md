@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 1/24/2018
 ms.topic: article
-ms.technology: devops-release-notes
 ms.manager: jillfra
 description: In the Sprint 129 Update of Visual Studio Team Services (VSTS) on January 24, 2018, as we return with the work from Sprint 128 and 129, you’ll notice several enhancements that should delight members from across your team.
 hide_comments: true
@@ -152,6 +151,7 @@ This was intended to address various pain points associated with using WinRM bas
 * Assembly-based test specification or running tests with Test Plan/Test Suite
 * Single agent test execution as well as distributing tests over multiple agents
 
+
 The unified agents approach also allows admins to manage all machines being used for CI/CD in a uniform manner.
 
 > [!div class="mx-imgBorder"]
@@ -160,8 +160,8 @@ The unified agents approach also allows admins to manage all machines being used
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
 * Agents can be [configured for UI testing](/azure/devops/pipelines/agents/agents#account)
-* [Visual Studio Test Platform Installer](../2017/nov-28-vsts.md#test) allows VSTest task to run without needing Visual Studio pre-installed
-* Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](../2017/dec-11-vsts.md#enhancements-to-multi-phase-builds) for each phase
+* [Visual Studio Test Platform Installer](/previous-versions/azure/devops/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
+* Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/previous-versions/azure/devops/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
 * Automated test cases can be [run from the Test hub](/azure/devops/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task
 
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.

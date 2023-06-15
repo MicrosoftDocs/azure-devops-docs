@@ -1,16 +1,16 @@
 ### YamlMime:Landing
 
-title: Get started documentation
+title: Get started with Azure DevOps documentation 
 summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
 
 metadata:
-  title: Learn how to start using Azure DevOps
-  description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
-  ms.prod: devops 
-  ms.technology: devops-new-user
+  title: Get started with Azure DevOps documentation
+  titleSuffix: Azure DevOps  
+  description: Learn how to start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
+  ms.subservice: azure-devops-new-user
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 09/30/2019 
   manager: jillfra
 
@@ -25,15 +25,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure DevOps?
-            url: ../user-guide/what-is-azure-devops.md
+            url: ../user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json 
           - text: What is Azure Boards?
-            url: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../boards/get-started/what-is-azure-boards.md 
           - text: What is Azure Repos?
-            url: ../repos/get-started/what-is-repos.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../repos/get-started/what-is-repos.md 
           - text: What is Azure Pipelines?
-            url: ../pipelines/get-started/what-is-azure-pipelines.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../pipelines/get-started/what-is-azure-pipelines.md 
           - text: Get started as a Stakeholder
-            url: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/security/get-started-stakeholder.md 
   - title: Sign up for free
     linkLists:
       - linkListType: quickstart
@@ -49,7 +49,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Connect to a project
-            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json
   - title: Manage your project
     linkLists:
       - linkListType: quickstart
@@ -57,15 +57,17 @@ landingContent:
           - text: Manage your project
             url: ../user-guide/project-admin-tutorial.md
           - text: Add users to a team or project
-            url: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
-          - text: Add administrators
-            url: ../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json
+          - text: Add a project administrator
+            url: ../organizations/security/change-project-level-permissions.md?toc=/azure/devops/get-started/toc.json
+          - text: Add a project collection administrator
+            url: ../organizations/security/change-organization-collection-level-permissions.md?toc=/azure/devops/get-started/toc.json
       - linkListType: concept
         links:
           - text: Default permissions and access
-            url: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json
           - text: Permission lookup guide
-            url: ../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/get-started/toc.json
   - title: Plan and track work
     linkLists:
       - linkListType: quickstart
@@ -95,19 +97,19 @@ landingContent:
       - linkListType: reference
         links:
           - text: YAML Schema
-            url: ../pipelines/yaml-schema.md
+            url: /azure/devops/pipelines/yaml-schema/
   - title: Set your preferences
     linkLists:
       - linkListType: quickstart
         links:
           - text: Change profile preferences
-            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/get-started/toc.json
           - text: Manage your notifications
-            url: ../notifications/manage-your-personal-notifications.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+            url: ../organizations/notifications/manage-your-personal-notifications.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
           - text: Preview new features
-            url: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json
           - text: Set favorites
-            url: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json
   - title: Navigate
     linkLists:
       - linkListType: how-to-guide

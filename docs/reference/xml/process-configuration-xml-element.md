@@ -1,19 +1,20 @@
 ---
 title: ProcessConfiguration syntax 
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
+ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 12/15/2017  
 ---
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
 
@@ -248,7 +249,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    - Agile: Use for all work item types.   
      - **Proposed**: Indicates work items that are new, not yet committed, or not yet being worked on. 
      - **InProgress**: Indicates work items that have been committed or are actively being worked on.
-     - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-basics.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
+     - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-overview.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
      Once a workflow state transitions to a state that is associated with the **Complete** metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.<br/><br/>
    Work items in a workflow state that aren&#39;t mapped to one of the state categories don&#39;t appear on the backlog or board.
    - Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the **Resolved** state category which indicates bugs that have been resolved.<br/><br/>
@@ -631,26 +632,24 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    **For Agile tools:**
    
    - **Activity**: Used to support the capacity-by-activity feature. Specify the same field used in the WIT assigned to the Task Category.
-
-   > [!NOTE]  
-   > The values displayed by the Capacity tool reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the projects for the field assigned to `type="Activity"`.
+       > [!NOTE]  
+       > The values displayed by the Capacity tool reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the projects for the field assigned to `type="Activity"`.
 
    - **Effort**: Used to calculate the team velocity. Specify the same field used in the WIT assigned to the Requirement Category that you use to capture the estimated level of effort, story points, or size for the amount of work that a backlog item requires to implement.
 
    - **Order**: Used to define the sort order for items on the backlogs and boards. The system lists work items according to their ascending order as defined by the field for this type.
-
-   > [!NOTE]  
-   > You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the `type="Order"`.
+       > [!NOTE]  
+       > You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the `type="Order"`.
    
-   - **RemainingWork**: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.<br/><br/>
-   The value that you specify for **format** is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.<br/><br/>
-   For *TimeUnitString*, specify any text string that you want to use to reflect the time value, such as hours or days.<br/><br/>
-   For example, the following values are all valid:<br/><br/>
-   `format="{0} h"`<br/><br/>
-   `format="{0} hours"`<br/><br/>
-   `format="hours {0}"`<br/><br/>
-   `format="time {0}"`<br/><br/>
-   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).<br/><br/>
+   - **RemainingWork**: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.  
+   The value that you specify for **format** is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.  
+   For *TimeUnitString*, specify any text string that you want to use to reflect the time value, such as hours or days.  
+   For example, the following values are all valid:  
+   `format="{0} h"`  
+   `format="{0} hours"`  
+   `format="hours {0}"`  
+   `format="time {0}"`  
+   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).  
    **For the feedback request form:**<br/>
      > [!NOTE]  
      > You should not have to change the default assignments made for the following **TypeField** elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.  
@@ -662,35 +661,25 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    - **ApplicationType**: Used to capture the type of application. The types listed correspond to the allowed values specified in the WIT definition for the feedback request.     
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **TypeFieldValues**
-
    :::column-end:::
    :::column span="3":::
-   Required for the **TypeFieldValue** when `type="ApplicationType"`.
-
+   Required for the **TypeFieldValue** when `type="ApplicationType"`. 
    Specifies a collection of **TypeFieldValue** elements which are used in the feedback request form.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **TypeFieldValue**
-
    :::column-end:::
    :::column span="3":::
-   Required. Do not customize.
-
-   Specifies the name of an application type to appear on the feedback request form.
-
+   Required. Do not customize. Specifies the name of an application type to appear on the feedback request form.
    ```
    <TypeFieldValue value="ApplicationTypeName" type="TypeApp"/>
    ```
    The default assignments correspond to the allowed values specified in the type definition for the feedback request form.
-
    ```
    <TypeFieldValues>
          <TypeFieldValue value="Web application" type="WebApp" />
@@ -771,7 +760,7 @@ Non-working days are removed from calculations made by the [capacity planning to
 
 At a glance, you can differentiate WITs when viewing a query result or backlog based on the color and icon assigned to the WIT. The system applies the color defined for the work item type to the [icon specified for the WIT](#wit-icons).  
 
-<img src="../media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" />  
+![Query results showing wit color, icon, and state color](../media/add-modiy-wit-color-icon-state-color.png)
 
 The Scrum process template defines the following color assignments. Similar ones are made for the Agile and CMMI templates.
 
@@ -807,29 +796,22 @@ The Scrum process template defines the following color assignments. Similar ones
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **WorkItemColors**
-
    :::column-end:::
    :::column span="3":::
    Optional. Container element for specifying colors for work item types.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **WorkItemColor**
-
    :::column-end:::
    :::column span="3":::
    Specifies the colors used to display a WIT within the web portal. The primary color is used in list displays. The secondary color is no longer referenced, however you must specify it for the syntax to validate.  
 
    When specifying the color, always prefix the six-digit Hex color code with **FF** which denotes that the color should be fully visible. 
- 
-
    ```
    <WorkItemColor primary="HexColorCode" secondary="HexColorCode"  
       name="witName" />
@@ -873,29 +855,22 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Properties**
-
    :::column-end:::
    :::column span="3":::
    Optional. Container element for specifying default properties and behaviors.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Property**
-
    :::column-end:::
    :::column span="3":::
    Specifies the default assignment made to new teams or existing teams when updating a project with new features. Teams can choose the behavior they want through their team settings.
 
-   Valid property names are:
-
-   
+   Valid property names are:  
    - **BugsBehavior** sets the default for the [Show bugs on backlogs and  board](../../organizations/settings/show-bugs-on-backlog.md). Allowed values correspond to:<br/>   
       - **AsRequirements** &mdash; Bugs appear on backlogs and boards similar to requirements (default for Scrum process)  
       - **AsTasks** &mdash; Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)  
@@ -927,23 +902,22 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 ### Specify workflow state colors
 
 > [!NOTE]    
-><b>Feature availability: </b> To specify workflow state colors, you must upgrade to TFS 2015.2 or later version.   
-
+> **Feature availability**: To specify workflow state colors, you must upgrade to TFS 2015.2 or later version.   
 
 The color you associate with your work item states will appear across the product. This includes the following areas:  
 
 - Work item form (web portal, see [New work item experience](../process/new-work-item-experience.md))  
 - Work item form links control (web portal, see [LinksControlOptions XML elements reference](linkscontroloptions-xml-elements.md))     
-- Cards displayed on the [Kanban board](../../boards/boards/kanban-basics.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
+- Cards displayed on the [Kanban board](../../boards/boards/kanban-overview.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
 - All backlogs (add State via column options)  
 - Query results (add State via column options)
 
 Here we show how it appears in the work item form:  
 
-<img src="media/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" />  
+![Bug work item form header, State color shown](media/process-config-bug-form-header-state-colors.png)  
 
 > [!NOTE]    
->No colors are displayed in the client work item forms or within the old links control within the client form. 
+> No colors are displayed in the client work item forms or within the old links control within the client form. 
 
 **Details:**
 - You must specify the color as an eight-digit hexadecimal value, similar to that used for the color defined for a WIT    
@@ -972,11 +946,11 @@ The system applies the color defined for the work item type to the icon. Colors 
 
 For example, here you see a list view&hellip; 
 
-<img src="media/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" /> 
+![Web portal, list of work items with icons](media/processconfig-list-wi-with-icons.png)
 
 and, here the icon is shown within the work item form.
 
-<img src="media/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" />  
+![Bug work item form header, Work item type icon shown](media/process-config-bug-form-header-bug-icon.png) 
 
 
 ## Related articles

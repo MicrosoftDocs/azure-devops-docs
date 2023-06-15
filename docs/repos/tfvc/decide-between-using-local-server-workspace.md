@@ -1,115 +1,97 @@
-﻿---
-title: Decide between using a local or a server workspace
+---
+title: Decide between using a local or server TFVC workspace
 titleSuffix: Azure Repos
-description: Decide between using a local or a server workspace
+description: Decide between using a local or a server workspace in Team Foundation Version Control (TFVC), and see how to take a solution offline and bring it back online.
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/01/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Decide between using a local or a server workspace
+# Decide between using a local or server workspace
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. 
+In Team Foundation Version Control (TFVC), when you [create or edit a workspace](create-work-workspaces.md) in Visual Studio, you can specify whether its location is **Local** or **Server**. A local workspace caches the unmodified version of each of your files to enable you to edit, compare, and do other things without being connected to the server.
 
-<a name="local"></a>
+You can change the location of your workspace from server to local or from local to server whenever you need to. For more information, see [Create and work with workspaces](create-work-workspaces.md).
 
-## When should I use a local workspace?
+## Use a local workspace
 
-Use a local workspace if there is not a reliable connection between your computer and the Azure DevOps instance you are connected to, and there will be less than 100,000 items in the workspace. It may be also be preferable to you if you do not need to work as part of a team and strongly prefer working with the filesystem in a manner similar to Git.
+Use a local workspace if there isn't a reliable connection between your computer and the server you're connected to, and when there will be fewer than 100,000 items in the workspace. You might also prefer a local workspace if you don't work as part of a team, and you prefer working with the file system in a manner similar to Git.
+
+- Using local workspaces makes [check-out locks](understand-lock-types.md) unenforceable.
+
+- Pending changes of team members who use local workspaces aren't visible to other team members in [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md).
+
+- Although Visual Studio doesn't block you from running multiple instances against the same workspace, this usage isn't supported. Working this way is more likely to cause problems if you're using a local workspace.
 
 > [!IMPORTANT]
-> Using a local workspace can have performance degrade as the number of items approaches or exceeds 100,000. This is because local workspaces keep multiple copies of the same file to enable some version control actions locally due to the DevOps Server connection not being reliably available. This also means there is more room taken up on disk. 
+> Local workspaces keep multiple copies of the same file, to enable some version control actions locally if the server connection isn't available. With a local workspace, performance can degrade as the number of items approaches or exceeds 100,000. Multiple copies also take up more room on disk.
 
-## When might I need to use a server workspace?
+## Use a server workspace
 
-Use a server workspace when the specific conditions are not met for using a local workspace, or if...
+Use a server workspace when the specific conditions aren't met for using a local workspace, or if you use the **Enable get latest on check-out** option.
 
--   You want to use Visual Studio 2010 or earlier versions to work with the workspace.
+### Work in a server workspace while disconnected
 
--   You need to use the **Enable get latest on check-out** option.
-
-### Working in a server workspace while disconnected
-
-You can still work in a server workspace if temporarily disconnected from the DevOps instance by taking a solution "offline". Later when the connection is available, you can take the solution "online" to return to the connected behavior. Visual Studio will detect the disconnected condition and take the solution offline automatically, but if you wish to do so manually, these are the steps.
+You can still work in a server workspace if you're temporarily disconnected from the TFVC server by taking the solution *offline*. Later when the connection is available, you can take the solution online to return to the connected behavior. Visual Studio detects a disconnected condition and takes the solution offline automatically, but if you want to do so manually, follow these steps.
 
 > [!TIP]
-> If working offline is important to you, then you should consider using a local workspace instead of a server workspace See [Local Workspaces](decide-between-using-local-server-workspace.md#local) earlier in this topic.
+> If working offline is important to you, consider using a local workspace instead of a server workspace.
 
-### To take a solution offline
+### Take a solution offline
 
-1.  From your local working folder, open the solution that you want to work on.
+1. In Visual Studio **Source Control Explorer**, from your local working folder, open the solution you want to work on.
 
-    If the server is offline, the **Go Offline** dialog box appears.
+   If the server is offline, the **Go Offline** dialog box appears.
 
-2.  Choose **OK**
+1. Choose **OK**
 
-When saving edits to files in your solution, you may be prompted with the **Save of Read-Only File** dialog box. This is expected. Choose **Overwrite** to remove the write-protection from the file. It should only ask once per file while offline.
+When saving edits to files in your solution, you might be prompted with the **Save of Read-Only File** dialog box. This prompt is expected once per file while offline. Choose **Overwrite** to remove the write protection from the file.
 
-Visual Studio does not put the solution back online automatically, the user must do that using the following steps.
+Visual Studio doesn't put a solution back online automatically. You must do that by using the following steps.
 
-### To bring your changes online when the DevOps service is available
+### Bring your changes online when the server is available
 
-1.  In **Solution Explorer**, open the context menu for the solution or file, and then choose **Go Online**.
-    - or - 
-    In the **File** menu, under Source Control, choose **Go Online**.
+1. In **Solution Explorer**, open the context menu for the solution or file, and then choose **Go Online**. Or, in the Visual Studio **File** menu, choose **Source Control** > **Go Online**.
 
-    The **Go Online** dialog box appears and shows the changes that you made offline.
+   The **Go Online** dialog box appears and shows the changes that you made offline.
 
-2.  Check the check box for each change that you want to check in, and then choose **Go Online**.
+1. Select the check box for each change that you want to check in, and then choose **Go Online**.
 
-    The changes that you made offline are added to Team Foundation version control as pending changes.
-
+   The changes that you made offline are added to TFVC as pending changes.
 
 <a name="Admin_Settings"><a/>
 
 ## Manage project collection workspace settings for your team
 
-If you are an [administrator](../../organizations/security/permissions.md?viewFallbackFrom=vsts), you can specify which type of workspace Visual Studio creates for your team members by default: Local or Server. You can also enable asynchronous checkout for your team's server workspaces.
+If you're an [administrator](../../organizations/security/permissions.md), you can specify which type of workspace Visual Studio creates for your team members by default, local or server. You can also enable asynchronous checkout for your team's server workspaces.
 
-1.  On the menu bar, choose **Team**, **Project Collection Settings**, **Source Control**.
+1. In the Visual Studio menu bar, choose **Team** > **Project Collection Settings**> **Source Control**.
 
-    The **Source Control Settings** dialog box appears.
+   The **Source Control Settings** dialog box appears.
 
-2.  On the **Workspace Settings** tab, choose either the **Local** or **Server** option button.
+1. On the **Workspace Settings** tab, choose either the **Local** or **Server** option.
 
-3.  You can reduce the time the system takes to check out files to server workspaces by selecting **Enable asynchronous checkout in server workspaces**. If you select this option:
+1. You can reduce the time the system takes to check out files to server workspaces by selecting **Enable asynchronous checkout in server workspaces**. If you select this option:
 
-    -   The PendChange permission is no longer enforced.
+   - The **PendChange** permission is no longer enforced.
+   - Checkout locks are disabled.
 
-    -   Checkout locks are disabled
+1. Select **OK**.
 
 ## Work from the command prompt
 
--    [Workspace Command](workspace-command.md)  and [Workspaces Command](workspaces-command.md): Create and manage your workspaces from the command prompt.
+Use the TFVC utility [Workspace](workspace-command.md) and [Workspaces](workspaces-command.md) commands to create and manage workspaces from the command prompt.
 
-## Q & A
-
- 
-### Q: Someone checked out a file even though a check-out lock was applied to it. How did this happen?
-
-**A:** The use of local workspaces makes [check-out locks](understand-lock-types.md) un-enforceable. If you have [sufficient permissions](../../organizations/security/permissions.md#tfvc) you can use the [workspaces command](workspaces-command.md) to see the local workspaces being used in your project collection.
+If you have sufficient [permissions](../../organizations/security/permissions.md#tfvc), you can use the following `workspaces` command to see the local workspaces that are used in your project collection.
 
 ```
-tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
+tf workspaces /format:detailed /owner:* /collection:https://<YourServer>/<YourCollection>/
 ```
 
-### Q: Why can't I see when some members of my team of checked out a file?
-
-Pending changes of team members who use local workspaces are not visible to other team members in [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md).
-
-### Q: Is it OK to switch the location of my workspace?
-
-**A:** Yes, you can change the location of your workspace from server to local or from local to server whenever you need to. See [Create and work with workspaces](create-work-workspaces.md).
-
-### Q: Can I use the same workspace in multiple instances of Visual Studio?
-
-**A:** Although Visual Studio does not block you from running multiple instances against the same workspace, this usage is not supported. Also, working this way is more likely to cause problems if you are using a local workspace.
-
-### Q: How does a local workspace work?
-
-**A:** A local workspace caches the unmodified version of each of your files to enable you to edit, compare, and do other things without being connected to the server.

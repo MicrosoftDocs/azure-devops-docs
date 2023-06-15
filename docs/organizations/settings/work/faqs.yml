@@ -1,12 +1,12 @@
 ### YamlMime:FAQ
 metadata:
-  title: Azure Boards configuration and customization FAQs 
+  title: FAQs on configuration and customization of Azure Boards 
   description: Answers to frequently asked questions about configuring and customizing Azure Boards 
   titleSuffix: Azure Boards
-  ms.technology: devops-agile
+  ms.service: azure-devops-boards
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   ms.date: 04/12/2021
 
@@ -14,7 +14,7 @@ title: Azure Boards configuration and customization FAQs
 
  
 summary: | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]   
 
   You have many options to configure and customize an Azure Boards project. If you are new to this subject, see [Azure Boards Configuration and Customization](../../../boards/configure-customize.md). Here, you'll find answers to frequently asked questions when configuring or customizing Azure Boards. For FAQs specific to using Azure Boards or working with queries, see [Azure Boards FAQs](../../../boards/faqs.yml) and [Query FAQs](../../../boards/queries/query-faqs.yml). 
 
@@ -38,14 +38,13 @@ sections:
       - question: Who has permissions to configure Azure Boards?  
         answer: | 
 
-          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md). 
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Change project-level permissions](../../security/change-project-level-permissions.md). 
           - [Area Paths](../set-area-paths.md)
           - [Modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
           - [Iteration Paths](../set-iteration-paths-sprints.md)
           - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
-          - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
             
-          To grant permissions to an individual member or group to perform the following tasks, you must set the corresponding project-level permissions to **Allow**. See [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          To grant permissions to an individual member or group to perform the following tasks, you must set the corresponding project-level permissions to **Allow**. See [Change project-level permissions](../../security/change-project-level-permissions.md).
           ::: moniker range="azure-devops"
           - [Create tag definition](../../../boards/queries/add-tags-to-work-items.md)
           - [Delete and restore work items](../../../boards/backlogs/remove-delete-work-items.md)
@@ -79,14 +78,14 @@ sections:
           - [Delete process](manage-process.md)  
           - [Edit process](customize-process.md)   
              
-          To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          To grant a project member permissions, see [Change project-level permissions](../../security/change-project-level-permissions.md).  
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          To modify an On-premises XML process, you need to be a member of the Project Collection Administrators group to manage process templates or the Project Administrators group to exercise a [**witadmin** commmand](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
+          To modify an On-premises XML process, you need to be a member of the **Project Collection Administrators** group to manage process templates or the **Project Administrators** group to exercise a [**witadmin** commmand](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
           - [Delete field](../../../reference/add-modify-field.md)
           - [Manage process template](../../../boards/work-items/guidance/manage-process-templates.md)
-          To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
-          ::: moniker-end
+          To grant a project member permissions, see [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md).  
+          ::: moniker-end  
 
 
       - question: Is there a way to determine who changed what within a process?  
@@ -136,4 +135,3 @@ additionalContent: |
   - [Work tracking, process, and project limits](object-limits.md)   
   - [Azure Boards extensions](../../../boards/extensions/index.md)  
   - [About teams and Agile tools](../about-teams-and-settings.md)  
-

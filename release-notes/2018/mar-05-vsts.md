@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 3/5/2018
 ms.topic: article
-ms.technology: devops-release-notes
 ms.manager: jillfra
 description: In the Sprint 131 Update of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice, including Work Items hub.
 hide_comments: true
@@ -37,7 +36,7 @@ In this Update, you’ll find two new [repository settings](/azure/devops/git/co
 
 ### Focus on important work using the Work Items hub
 
-While queries, backlogs, and boards give you a number of ways to see your work, we want the work that is most important to you to be right at your fingertips. After a 6-month preview of the **Work Items** hub, it’s now available to everyone. We have iterated on the hub a lot since the start of [preview](../2017/aug-28-team-services.md#work-items-hub), and below includes a few of the changes we’ve made.
+While queries, backlogs, and boards give you a number of ways to see your work, we want the work that is most important to you to be right at your fingertips. After a 6-month preview of the **Work Items** hub, it’s now available to everyone. We have iterated on the hub a lot since the start of [preview](/previous-versions/azure/devops/2017/aug-28-team-services#work-items-hub), and below includes a few of the changes we’ve made.
 
 The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on what is important to you, as well as 3 project-centric views to get a better idea of your project’s work.
 

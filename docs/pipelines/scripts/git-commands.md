@@ -1,18 +1,18 @@
 ---
 title: Run Git commands in a script
 ms.custom: seodec18
-description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
+description: Learn how you can run a Git command in a build script for your workflow with Azure Pipelines
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.date: 12/22/2020
-monikerRange: '>= tfs-2015'
+ms.date: 02/28/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Run Git commands in a script
 
-[!INCLUDE [temp](../includes/version.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -26,7 +26,8 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 ## Enable scripts to run Git commands
 
 > [!NOTE]
-> Before you begin, be sure your account's default identity is set with:
+> Before you begin, be sure your account's default identity is set with the following code.
+> This must be done as the very first step after checking out your code.
 > ```
 > git config --global user.email "you@example.com"
 > git config --global user.name "Your Name"
@@ -52,7 +53,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
     :::image type="content" source="media/modify-repo-security.png" alt-text="Choose Security to edit your repository security. ":::
 
-1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})** (not the group **Project Collection Build Service Accounts ({your organization})**). By default, this identity can read from the repo but can’t push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
       * **Create branch:**  Allow
       * **Contribute:**  Allow
@@ -78,7 +79,7 @@ Go to the Version Control control panel tab
 
 </p>
 
-<p>If you see this page, select the repo, and then click the link:</p>
+<p>If you see this page, select the repo, and then select the link:</p>
 
 <p>
 
@@ -92,7 +93,7 @@ Go to the Version Control control panel tab
 
 </p>
 
-On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it.
+On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but can’t push any changes back to it.
 
 ![permissions](media/control-panel-version-control-project-collection-build-service.png)
 
@@ -103,27 +104,12 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 * **Read:**  Allow
 * **Create tag:**  Allow
 
-When you're done granting the permissions, make sure to click **Save changes**.
+When you're done granting the permissions, make sure to select **Save changes**.
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
-
-### Enable your pipeline to run command-line Git
-
-On the [variables tab](../build/variables.md) set this variable:
-
-| Name | Value |
-|---|---|
-| ```system.prefergit``` | ```true``` |
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
 
 ### Allow scripts to access the system token
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -137,7 +123,7 @@ steps:
   persistCredentials: true
 ```
 
-Learn more about [`checkout`](../yaml-schema.md#checkout).
+Learn more about [`checkout`](/azure/devops/pipelines/yaml-schema/steps-checkout).
 
 # [Classic](#tab/classic)
 
@@ -147,7 +133,7 @@ On the [options tab](../build/options.md), select **Allow scripts to access OAut
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
@@ -155,7 +141,7 @@ On the [options tab](../build/options.md), select **Allow scripts to access OAut
 
 ## Make sure to clean up the local repo
 
-Certain kinds of changes to the local repository are not automatically cleaned up by the build pipeline. So make sure to:
+Certain kinds of changes to the local repository aren't automatically cleaned up by the build pipeline. So make sure to:
 
 * Delete local branches you create.
 * Undo git config changes.
@@ -195,23 +181,15 @@ steps:
 
 ### List the files in your repo
 
-::: moniker range="< tfs-2018"
-Make sure to follow the above steps to [enable Git](#enable).
-::: moniker-end
-
 On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to main
 
 You want a CI build to merge to main if the build succeeds.
-
-::: moniker range="< tfs-2018"
-Make sure to follow the above steps to [enable Git](#enable).
-::: moniker-end
 
 On the [Triggers tab](../build/triggers.md), select **Continuous integration (CI)** and include the branches you want to build.
 
@@ -243,7 +221,7 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 | Task | Arguments |
 | ---- | --------- |
-| :::image type="icon" source="../tasks/utility/media/batch-script.png"::: <br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
+| :::image type="icon" source="../tasks/utility/media/batch-script.png"::: <br/>[Utility: Batch Script](/azure/devops/pipelines/tasks/reference/batch-script-v1)<br />Run merge.bat. | **Path**: `merge.bat` |
 
 ## FAQ
 
@@ -255,13 +233,13 @@ Yes
 
 ### Which tasks can I use to run Git commands?
 
-[Batch Script](../tasks/utility/batch-script.md)
+[Batch Script](/azure/devops/pipelines/tasks/reference/batch-script-v1)
 
-[Command Line](../tasks/utility/command-line.md)
+[Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
 
-[PowerShell](../tasks/utility/powershell.md)
+[PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2)
 
-[Shell Script](../tasks/utility/shell-script.md)
+[Shell Script](/azure/devops/pipelines/tasks/reference/shell-script-v2)
 
 
 ### How do I avoid triggering a CI build when the script pushes?
@@ -288,14 +266,6 @@ You can also use any of the variations below. This is supported for commits to A
 - `[skip azpipelines]` or `[azpipelines skip]`
 - `[skip azp]` or `[azp skip]`
 - `***NO_CI***`
-
-::: moniker-end
-
-::: moniker range="< tfs-2018"
-
-### How does enabling scripts to run Git commands affect how the build pipeline gets build sources?
-
-When you set ```system.prefergit``` to ```true```, the build pipeline uses command-line Git instead of LibGit2Sharp to clone or fetch the source files.
 
 ::: moniker-end
 

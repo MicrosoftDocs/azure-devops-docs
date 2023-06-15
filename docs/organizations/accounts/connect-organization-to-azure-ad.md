@@ -3,18 +3,18 @@ title: Connect organization to Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to connect your organization to your Azure Active Directory
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/22/2020
+ms.date: 05/11/2022
 monikerRange: 'azure-devops'
 ---
 
 # Connect your organization to Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to connect your Azure DevOps organization to [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). You can sign in with the same username and password that you use with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
 
@@ -22,9 +22,9 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 ## Prerequisites
 
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help connecting to Azure AD. 
-- Ensure you're a Project Collection Administrator or [Owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
-- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](./faq-azure-access.yml#q--how-can-i-convert-an-azure-ad-guest-into-a-member-).
+- Have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with connecting to Azure AD. 
+- You must be a [member of the **Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or the [**organization Owner**](../security/look-up-organization-owner.md) to make the connection.
+- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](./faq-azure-access.yml#how-can-i-convert-an-azure-ad-guest-into-a-member).
 - Inform users of the upcoming change.
    There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps they need to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 - Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
@@ -33,7 +33,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
     1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
     2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
         
-        ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+        ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
     3. Select **Users**.
         
@@ -50,7 +50,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 3. Select **Azure Active Directory**, and then select **Connect directory**.
 
    ![Select Connect directory to connect your organization to Azure AD](media/shared/select-azure-ad-connect-directory.png)
@@ -58,6 +58,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
    ![Select your Azure AD, and then Connect](media/shared/select-directory-connect.png)
+   
    If you can't find your directory, contact your Azure AD administrator and request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
@@ -112,7 +113,7 @@ When you inform your users of the completed change, include the following tasks 
     d. When the token's created, copy it, as it can't be viewed again.
 
 - [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
-- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
 
 ## Related articles
 

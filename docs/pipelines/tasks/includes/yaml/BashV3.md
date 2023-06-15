@@ -1,8 +1,7 @@
 ---
 ms.topic: include
 ms.date: 02/11/2020
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML
@@ -16,6 +15,5 @@ ms.technology: devops-cicd-tasks
     #script: '# echo Hello world' # Required when targetType == inline
     #workingDirectory: # Optional
     #failOnStderr: false # Optional
-    #noProfile: true # Optional
-    #noRc: true # Optional
+    #bashEnvValue: # Optional
 ```

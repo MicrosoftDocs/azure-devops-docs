@@ -1,16 +1,16 @@
 ---
-title: Pipelines user permissions
+title: Add users to Azure Pipelines
 ms.custom: seodec18
-description: Add users to Azure Pipelines
+description: Add users to Azure Pipelines and set permissions.
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.topic: conceptual
 ms.date: 06/03/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Add users to Azure Pipelines
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
 
@@ -35,7 +35,7 @@ You can manage security for different types of resources such as variable groups
 > [!NOTE]
 > A security best practice is to only grant permissions to required users or groups. The **Contributors** group may be too broad in a given project.  
 
-To verify the permissions for your project's contributors, make sure you are a member of the *Build Administrators group* or the *Project Administrators group*. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) for more details.
+To verify the permissions for your project's contributors, make sure you are a member of the **Build Administrators** group or the **Project Administrators** group. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) for more details.
 
 1. From within your project, select **Pipelines** > **Pipelines**. Select the **All** tab, and then select the more actions menu then **Manage security**.
 
@@ -47,7 +47,7 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Set permissions for build pipelines
 
@@ -91,7 +91,7 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
@@ -115,7 +115,7 @@ In the following example, we will configure permissions for variable groups.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="task-group" />
 
@@ -137,7 +137,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="collection-level" /> 
 
@@ -153,7 +153,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Manage permissions for service connections
 

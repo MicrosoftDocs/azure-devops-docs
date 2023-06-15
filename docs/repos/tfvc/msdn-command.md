@@ -1,20 +1,30 @@
-﻿---
-title: Use the Msdn Command to display a help topic 
+---
+title: Msdn command (Team Foundation Version Control)
 titleSuffix: Azure Repos
-description: Display a help topic from the MSDN library using the Msdn Command
+description: See how to use the tf msdn command to display a help topic from learn.microsoft.com documentation.
 ms.assetid: 6a1c9dfe-dacb-466b-a68e-efe3cd6df3e8
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/15/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
-# Msdn Command
+# Msdn command  (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Displays a help topic from the MSDN library that contains detailed information about a Team Foundation version control command.
+
+The `tf msdn` command displays documentation from learn.microsoft.com that contains detailed information about a Team Foundation Version Control (TFVC) command.
+
+
+## Prerequisites
+
+See  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf msdn commandname
@@ -26,34 +36,29 @@ tf msdn commandname
 
 | **Argument** | **Description** |
 |---|---|
-| *commandname* | Specifies a Team Foundation command for which to display a help topic. |
+| `<commandname>` | Specifies a `tf` command for which to display documentation. |
 
 ## Remarks
 
-When you need a command and are not sure which one to use, type **tf msdn** for a list of command reference topics and links to additional resources. If you use the **msdn** command without specifying a *commandname* parameter, you will see a topic that lists all commands together with usage requirements and a description.
+When you need a command and aren't sure which one to use, enter `tf msdn` to see command reference articles and links to more resources. If you use the `msdn` command without specifying a `commandname` parameter, the article [Use Team Foundation version control commands](/previous-versions/visualstudio/visual-studio-2013/cc31bk2e(v=vs.120)) opens.
 
-When you specify the *commandname* parameter, the help topic opens for that specific command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it does not find a matching command, alias, or short name, you will get an error message.
+When you specify the `commandname` parameter, the documentation for that specific command opens. If the system can't find a match for the `commandname`, it searches for aliases and short names. If it doesn't find a matching command, alias, or short name, you get an error message.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
 ## Examples
-The following example displays a help topic that lists all the version control commands, including a brief explanation of syntax.
+The following example displays an article that lists all the version control commands, including a brief explanation of syntax.
 
 ```
 c:\projects>tf msdn
 ```
 
-The following example displays a help topic about the **workspace** command.
+The following example displays an article about the `workspace` command.
 
 ```
 c:\projects>tf msdn workspace
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Help Command (Team Foundation Version Control)](help-command-team-foundation-version-control.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Help command (Team Foundation Version Control)](help-command-team-foundation-version-control.md)

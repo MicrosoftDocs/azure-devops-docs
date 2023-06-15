@@ -1,106 +1,124 @@
 ---
-title: Workspace Command
+title: TFVC workspace command
 titleSuffix: Azure Repos
-description: Workspace Command
+description: Use the Team Foundation Version Control workspace command to create, delete, view, or modify properties and mappings that are associated with a workspace.
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/10/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
+# Workspace command (Team Foundation Version Control)
 
-# Workspace Command
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Lets you create, delete, view, or modify properties and mappings associated with a workspace.
+The Team Foundation Version Control (TFVC) `workspace` command provides a way for you to create, delete, view, or modify properties and mappings that are associated with a workspace.
 
-**Required Permissions**  
-To modify or delete an existing workspace, you must be the owner or have the global **Administer workspaces** permission set to **Allow**. To create a workspace, you must have the global **Create a workspace** permission set to **Allow**. To create workspaces for other users, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+- To modify or delete an existing workspace, you must be the owner or have the global **Administer workspaces** permission set to **Allow**.
+- To create a workspace, you must have the global **Create a workspace** permission set to **Allow**.
+- To create workspaces for other users, you must have the **Administer workspaces** permission set to **Allow**.
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
-tf workspace /new [/noprompt] [/template:workspacename[;workspaceowner]]
-[/computer:computername] [/comment:("comment"|@comment file)]
-[workspacename[;workspaceowner]] [/login:username,[password]]
-[/collection:TeamProjectCollectionUrl] [/permission:(Private|PublicLimited|Public)]
+tf workspace /new [/noprompt] [/template:<workspace-name>[;<workspace-owner>]]
+[/computer:<computer-name>] [/comment:("<comment>"|@<comment-file>)]
+[<workspace-name>[;<workspace-owner>]] [/login:<username>,[<password>]]
+[/collection:<team-project-collection-url>] [/permission:(Private|PublicLimited|Public)]
 [/location:(local|server)]
 ```
 
 ```
-tf workspace /delete [/collection:TeamProjectCollectionUrl] workspacename[;workspaceowner] [/login:username,[password]]
+tf workspace /delete [/collection:<team-project-collection-url>] <workspace-name>[;<workspace-owner>] [/login:<username>,[<password>]]
 ```
 
 ```
-tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comment file)] [/newname:workspacename]
-[workspacename[;workspaceowner]] [/newowner:ownername] [/computer:computername] [/permission:(Private|PublicLimited|Public)] [/login:username,[password]]
+tf workspace [/collection:<team-project-collection-url>] [/comment: ("<comment>"|@<comment-file>)] [/newname:<workspace-name>]
+[<workspace-name>[;<workspace-owner>]] [/newowner:<owner-name>] [/computer:<computer-name>] [/permission:(Private|PublicLimited|Public)] [/login:<username>,[<password>]]
 [/location:(local|server)]
 ```
 
 ## Parameters
 
+The following sections describe arguments and options of the `workspace` command.
 
-### Argument
+### Arguments
 
-|        **Argument**        |                                                                                         **Description**                                                                                         |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      *workspacename*       |                                                 Specifies a name for the workspace which to create, edit, delete, or display information about.                                                 |
-|      *workspaceowner*      |                              Specifies a username for the workspace. This parameter is required when the workspace owner is not the person performing the command.                              |
-|       *computername*       |                                                                          Provides a value to the **/computer** option.                                                                          |
-|         *comment*          |                                                                          Provides a value to the **/comment** option.                                                                           |
-|   <em>@commentfile</em>    |                                                                 Specifies the path of a file where the comment should be read.                                                                  |
-|         *username*         |                                    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                    |
-| *TeamProjectCollectionUrl* | The URL of the project collection that contains the workspace about which you want to create, edit, delete, or display information (for example, http://myserver:8080/tfs/DefaultCollection). |
-|        *ownername*         |                                                                          Provides a value to the **/newowner** option.                                                                          |
-
-### Option
-
-|**Option**|**Description**|
+| Argument | Description |
 |---|---|
-|**/new**|Creates a new workspace.|
-|**/template**|Specifies an existing workspace to use as a template to create the new workspace. The new workspace uses the mappings of the existing workspace.|
-|**/delete**|Deletes the specified workspace.|
-|**/computer**|Specifies the name of the computer on which to create the workspace. This option is an advanced option.|
-|**/comment**|Provides a comment describing the workspace.|
-|**/newname**|Renames an existing workspace.|
-|**/noprompt**|Performs the specified workspace command without displaying a dialog box.|
-|**/collection**|Specifies the project collection.|
-|**/permission**|Specifies the options of workspace permission:</p><ul><li><p>Private: Only the owners can use, check in files to, or administer the workspace.</p></li><li><p>Public Limited: Any valid user can use the workspace. However, only the owners can check in files to or administer the workspace.</p></li><li><p>Public: Any valid user can use, check in files to, or administer the workspace.</p></li></ul>|
-|**/location**|Specifies where the workspace is created:</p><ul><li><p>local: On the client machine. This is the default.</p></li><li><p>server: On the TFS server.</p></li></ul>|
-|**/login**|Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.|
-|**/newowner**|Specifies the user name for the new owner of the workspace.|
+| `<workspace-name>` | Specifies a name for the workspace that you want to create, edit, delete, or display information about. |
+| `<workspace-owner>` | Specifies a username for the workspace. This parameter is required when the workspace owner isn't the person who's performing the command. |
+| `<computer-name>` | Provides a value to the `/computer` option. |
+| `<comment>` | Provides a value to the `/comment` option. |
+| `@<comment-file>` | Specifies the path of a file where the comment should be read. |
+| `<username>` | Provides a value to the `/login` option. You can specify this value as either `DOMAIN\<username>` or `<username>`. |
+| `<password>` | Provides a value to the `/login` option. |
+| `<team-project-collection-url>` | The URL of the project collection that contains the workspace that you want to create, edit, delete, or display information about, for example, `https://myserver:8080/tfs/DefaultCollection`. |
+| `<owner-name>` | Provides a value to the `/newowner` option. |
+
+### Options
+
+| Option | Description |
+|---|---|
+|`/new`|Creates a new workspace.|
+|`/template`|Specifies an existing workspace to use as a template for creating a new workspace. The new workspace uses the mappings of the existing workspace.|
+|`/delete`|Deletes the specified workspace.|
+|`/computer`|Specifies the name of the computer on which to create a workspace. This option is an advanced option.|
+|`/comment`|Provides a comment that describes the workspace.|
+|`/newname`|Renames an existing workspace.|
+|`/noprompt`|Performs the specified workspace command without displaying a dialog box.|
+|`/collection`|Specifies the project collection.|
+|`/permission`|Specifies the options for workspace permissions:</p><ul><li><p>`Private`: Only the owners can use, check in files to, or administer the workspace.</p></li><li><p>`Public Limited`: Any valid user can use the workspace. But only the owners can check in files to or administer the workspace.</p></li><li><p>`Public`: Any valid user can use, check in files to, or administer the workspace.</p></li></ul>|
+|`/location`|Specifies where the workspace is created:</p><ul><li><p>`local`: On the client machine. This value is the default.</p></li><li><p>`server`: On the Azure DevOps server.</p></li></ul>|
+|`/login`|Specifies the username and password to authenticate the user with Azure DevOps.|
+|`/newowner`|Specifies the username for the new owner of the workspace.|
 
 ## Remarks
 
-A [workspace](create-work-workspaces.md) is a local copy of the files and folders on the server, plus any changes that you have made locally. When you add, edit, delete, move, rename, or otherwise change any version-controlled item, your changes are isolated in your workspace where you can make and test your changes. Your [pending changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100)) are committed to the server and become available to other users outside your workspace when you perform a check-in.
+A [workspace](create-work-workspaces.md) is a local copy of the files and folders on the server, plus any changes that you have made locally. When you add, edit, delete, move, rename, or otherwise change any version-controlled item, your changes are isolated in your workspace, where you can make and test your changes. When you [check in your work to the team's codebase](check-your-work-team-codebase.md), you commit your changes to the server. They become available to other users who are outside your workspace.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information about how to use the `tf` command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
-### Creating a Workspace
+### Create a workspace
 
-Before you can add files to the version control server or check out items on the server in order to edit them, you must create a workspace or associate an existing one with the current directory. For more information, see [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md).
+Before you can add files to the version control server or check out items on the server, you must create a workspace or associate an existing one with the current directory. For more information, see [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).
 
-To make the current directory a working folder for an existing workspace on your computer, type `tf workspace` *workspacename*, where *workspacename* is the name of the existing workspace. The **Edit Workspace** dialog box appears. Click **click here to enter a new working folder**, type the server path for which you want to map the current directory in the **Source Control Folder** box, type the current directory in the **Local Folder** box, and click **OK**.
+To make the current directory a working folder for an existing workspace on your computer, follow these steps:
 
-When you create a new workspace, you can specify a *template workspace* as part of the **/new** option. When you specify a template workspace, Team Foundation creates a new workspace on the current computer, sets the owner to the current owner, and replicates the following workspace properties into the new workspace from the template workspace: mappings and comment. If no name is specified, the system uses a name based on the current computer name. When you create a workspace using a template, Team Foundation does not retrieve the files to which it maps from the server. Use the [Get Command](get-command.md) to synchronize the new workspace with the latest version on the server.
+1. Enter `tf workspace <workspace-name>`, where `<workspace-name>` is the name of the existing workspace. The **Edit Workspace** dialog box appears.
+1. Select **click here to enter a new working folder**.
+1. In the **Source Control Folder** box, enter the server path that you want to map the current directory to.
+1. In the **Local Folder** box, enter the current directory.
+1. Select **OK**.
 
-### Single Folder Mapping
+When you create a new workspace, you can specify a *template workspace* as part of the `/new` option. When you specify a template workspace, TFVC creates a new workspace on the current computer. TFVC also sets the owner to the current owner and replicates the following workspace properties into the new workspace from the template workspace: `mappings` and `comment`. If no name is specified, the system uses a name that's based on the current computer name. When you create a workspace by using a template, TFVC doesn't retrieve the files that it maps to from the server. Use the `get` command to synchronize the new workspace with the latest version on the server. For more information, see [Get command](get-command.md).
 
-You can choose to map only the immediate children of a version control folder to a local workspace. To do this, add an asterisk wild-card character in the **Source Control Folder** box in the **Add Workspace** dialog box. For example, $/folder/\*. Otherwise, by default, all the children of the version control folder are recursively mapped to the local workspace.
+### Single folder mapping
 
-Single folder mapping within a version control hierarchy is useful because it limits the number of items downloaded to the client computer. Another way to limit downloaded files is to cloak files that you do not need to have in your workspace. For more information, see [Cloak and Uncloak Folders in a Workspace](optimize-your-workspace.md). This provides faster download times and saves disk space on the client computer.
+You can choose to map only the immediate children of a version control folder to a local workspace. To do this, add an asterisk (\*) wildcard character in the **Source Control Folder** box in the **Add Workspace** dialog box, for example, `$/folder/*`. Otherwise, by default, all the children of the version control folder are recursively mapped to the local workspace.
 
-### Deleting a Workspace
+Single folder mapping within a version control hierarchy is useful because it limits the number of items that are downloaded to the client computer. Another way to limit downloaded files is to cloak files that you don't need to have in your workspace. For more information, see [Optimize your workspace](optimize-your-workspace.md). This approach provides faster download times and saves disk space on the client computer.
 
-If you delete a workspace that contains pending changes, Team Foundation cancels the pending changes as part of the delete process. Deleting a workspace does not delete the files and folders on the client computer that were in that workspace.
+### Delete a workspace
+
+If you delete a workspace that contains pending changes, TFVC cancels the pending changes as part of the delete process. Deleting a workspace doesn't delete the files and folders on the client computer that were in that workspace.
 
 > [!NOTE]
-> Commands run manually require the `/noprompt` option to bypass user acknowledgement. Be careful if using PowerShell's `Start()` method to run commands, as this option can be automatically set.
+> Commands that run manually require the `/noprompt` option to bypass user acknowledgement. Be careful if you use the PowerShell `Start()` method to run commands. The `/noprompt` option can be automatically set in PowerShell.
 
-### Editing a Workspace
+### Edit a workspace
 
-You can change the following workspace attributes:  
--   Workspace Name  
+You can change the following workspace attributes:
+
+-   Workspace name  
 -   Comment  
 -   Working folder mappings  
 
@@ -111,52 +129,43 @@ If no workspace specification is provided, the workspace for the current folder 
 The following example opens the **Add Workspace** dialog box and creates a new workspace. You can use the **Add Workspace** dialog box to edit the source control folder, owner, computer, comment, and local folders.
 
 ```
-c:\projects>tf workspace /new /collection:http://myserver:8080/tfs/DefaultCollection
+c:\projects>tf workspace /new /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example creates a new workspace called Beta1 and assigns jenh as the workspace owner. You must have the AdminWorkspaces permission to assign ownership of a new workspace to another user. For more information on security permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
+The following example creates a new workspace called **Beta1** and assigns **jenh** as the workspace owner. You must have the **AdminWorkspaces** permission to assign ownership of a new workspace to another user. For more information about security permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ```
 c:\projects>tf workspace /new Beta1;jenh
 ```
 
-The following example creates a new workspace by using the Beta1 workspace that is owned by jenh as a template.
+The following example creates a new workspace by using the **Beta1** workspace that's owned by **jenh** as a template:
 
 ```
-c:\projects>tf workspace /new /template:Beta1;jenh /collection:http://myserver:8080/tfs/DefaultCollection
+c:\projects>tf workspace /new /template:Beta1;jenh /collection:https://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example removes the Beta1 workspace from the server.
+The following example removes the **Beta1** workspace from the server:
 
 ```
 c:\projects>tf workspace /delete Beta1
 ```
 
-The following example edits properties for the current workspace.
+The following example edits properties for the current workspace:
 
 ```
 c:\projects>tf workspace
 ```
 
-The following example opens the Beta1 workspace for which user jenh is the owner so that you can see its properties and mappings. If you have the AdminWorkspaces permissions, you can change the workspace properties and mappings.
+The following example opens the **Beta1** workspace that's owned by **jenh** so that you can see its properties and mappings. If you have the **AdminWorkspaces** permission, you can change the workspace properties and mappings.
 
 ```
-c:\projects> tf workspace Beta1;jenh
+c:\projects> tf workspaces Beta1;jenh
 ```
 
-## See Also
+## Related articles
 
-### Tasks
-
-[Cloak and Uncloak Folders in a Workspace](optimize-your-workspace.md)  
-### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
-[Workspaces Command](workspaces-command.md)  
-### Concepts
-
-[Create a Workspace to Work with your Project](create-work-workspaces.md)  
-### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))   
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)
+- [Optimize your workspace](optimize-your-workspace.md)  
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)  
+- [Workspaces command](workspaces-command.md)  
+- [Create and work with workspaces](create-work-workspaces.md)  
+- [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)

@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
-ms.date: 08/18/2021
-monikerRange: '>= tfs-2018'
+ms.date: 02/28/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Run cross-platform scripts
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Pipelines, you can run your builds on macOS, Linux, and Windows machines. If you develop on cross-platform technologies such as .NET Core, Node.js and Python, these capabilities bring both benefits and challenges.
 
@@ -20,7 +20,7 @@ Below are some tips on how to handle this kind of challenge.
 
 ## Run cross-platform tools with a script step
 
-The script keyword is a shortcut for the [command line task](../tasks/utility/command-line.md). The `script` keyword runs Bash on Linux and macOS and cmd.exe on Windows.
+The script keyword is a shortcut for the [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2). The `script` keyword runs Bash on Linux and macOS and cmd.exe on Windows.
 
 Using `script` can be useful when your task just passes arguments to a cross-platform tool. For instance, calling
 `npm` with a set of arguments can be easily accomplished with a `script` step.
@@ -88,8 +88,8 @@ Most macOS and Linux agents have Bash as an available shell, and Windows agents 
 For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 ::: moniker-end
 
-For example, if you need to make a decision based on whether this is a pull
-request build:
+For example, if you need to make a decision about whether your build is triggered by a pull
+request:
 
 #### [YAML](#tab/yaml/)
 ```yaml
@@ -97,7 +97,7 @@ trigger:
     batch: true
     branches:
         include:
-        - master
+        - main
 steps:
 - bash: |
     echo "Hello world from $AGENT_NAME running on $AGENT_OS"

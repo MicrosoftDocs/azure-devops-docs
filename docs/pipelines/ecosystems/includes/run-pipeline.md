@@ -1,10 +1,10 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 02/11/2022
 ---
 
 You're now ready to save your changes and try it out! 
@@ -15,4 +15,4 @@ You're now ready to save your changes and try it out!
 
 1. In the pipeline editor, select **Run**. 
 
-When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+1. When you see the **Build #nnnnnnnn.n has been queued** message, select the number link to see your pipeline in action.

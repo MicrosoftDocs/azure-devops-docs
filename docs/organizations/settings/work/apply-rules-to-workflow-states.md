@@ -3,9 +3,9 @@ title: Restrict workflow transitions, apply rules to workflow states
 titleSuffix: Azure DevOps Services
 description: Apply rules to workflow states to restrict transitions 
 ms.custom: inherited-process
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 04/07/2021 
@@ -14,7 +14,7 @@ ms.date: 04/07/2021
 
 # Apply rules to workflow states (Inheritance process)   
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 After you add or modify your workflow states for a work item type, you may want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 
@@ -30,7 +30,7 @@ After you add or modify your workflow states for a work item type, you may want 
 - Automate closure of parent work items
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
@@ -61,7 +61,7 @@ Review this article to understand how to define rules that apply when you change
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 >[!div class="checklist"]      
 > - Understand the types of workflow rules 
@@ -94,7 +94,7 @@ The second and third groups support restricting state transitions. These two gro
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 The following table indicates the two groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
@@ -136,7 +136,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
    :::column-end:::
 :::row-end:::
 ---  
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 :::row:::  
    :::column span="4":::
       **Restrict a transition based on State**
@@ -153,7 +153,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
 :::row-end:::
 ---  
 ::: moniker-end
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 :::row:::  
    :::column span="4":::
       **Hide field or make field read-only or required based on State and user or group membership**
@@ -225,7 +225,7 @@ Workflow rules are applied when adding or modifying work items through any of th
 Prior to defining a rule based on workflow states, make sure you first define the following elements: 
 - The workflow states that you want as described in [Customize a workflow](customize-process-workflow.md)
 - If your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-field.md)
-- If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add a group and change its permissions at the organization or collection-level group](../../security/set-project-collection-level-permissions.md#collection-level). 
+- If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add or remove users or groups, manage security groups](../../security/add-remove-manage-user-group-security-group.md). 
 
 For the basics of defining rules, see [Add a custom rule](custom-rules.md). You must meet the prerequisites defined in that article.  
 
@@ -575,7 +575,7 @@ To automate State transitions of parent work items based on the State assignment
 
 ## Automate reassignment based on state change 
 
-The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../../../boards/work-items/guidance/changes-to-process-templates.md). You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
+The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been removed from the default system process. You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
 
 **When** `A work item state changes to` *Resolved* **Then** `Copy the value from `*Created By* **to** *Assigned To*.
 

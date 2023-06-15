@@ -2,17 +2,18 @@
 title: Exploratory test your web app
 description: Test tools - Exploratory test your web app in Azure DevOps from your web browser with the Microsoft Test & Feedback extension
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Install the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 
@@ -22,11 +23,40 @@ quality of your product.
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
-<a name="installext"></a>
+<a name="browser-support"></a>
 
+## Supported web browsers for the extension
+
+The Test &amp; Feedback extension is currently available for [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge (Chromium Only)](https://www.microsoft.com/edge/), and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
+
+Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
+
+| Feature | Chrome | Microsoft Edge | Firefox |
+| --- | --- | --- | --- |
+| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture screen recordings | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture page load data | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture user actions log | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture system information | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| End-to-end traceability for work items | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+
+<p />
+For more information, see <a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
+
+<a name="installext"></a>
 ## Install the extension
 
-1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
+1. Check the list of [supported browsers](#browser-support) and decide which you want to use.
 
 1. Download and install your chosen browser, if you haven't already, then open it.
 
@@ -89,16 +119,16 @@ update it automatically.
    - Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
  
    **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
+   Available to everyone. No connection to Azure DevOps is required. Take notes and screenshots with
    inline annotations to capture issues. Create bugs and export
    a session report to share findings.
  
-If you have problems connecting to Azure DevOps or TFS, you may find
+If you have problems connecting to Azure DevOps, you may find
 the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-connect-tfs.md) useful.
 
 ## Related articles
 
-*  [FAQs for manual testing](reference-qa.md#tandfext)
+*  [FAQs for manual testing](reference-qa.yml#tandfext)
 
 ## Next step
 

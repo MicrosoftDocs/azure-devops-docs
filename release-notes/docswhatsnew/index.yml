@@ -7,7 +7,7 @@ metadata:
   title: Azure DevOps documentation what's new?
   description: "Learn about new and updated content in Azure DevOps docs."
   ms.topic: landing-page
-  ms.date: 05/01/2020
+  ms.date: 01/09/2023
   author: steved0x
   ms.author: sdanie
 
@@ -16,18 +16,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: September 2021
+          - text: May 2023
             url: azure-devops-docs-whats-new.md
-          - text: August 2021
-            url: azure-devops-docs-2021-08.md
-          - text: July 2021
-            url: azure-devops-docs-2021-07.md
-          - text: June 2021
-            url: azure-devops-docs-2021-06.md
-          - text: May 2021
-            url: azure-devops-docs-2021-05.md
-          - text: April 2021
-            url: azure-devops-docs-2021-04.md
+          - text: April 2023
+            url: azure-devops-docs-2023-03.md
+          - text: March 2023
+            url: azure-devops-docs-2023-03.md
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:
@@ -43,4 +37,4 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Azure DevOps
-            url: ../features-timeline.md#released-features
+            url: ../features-timeline-released.md#released-features

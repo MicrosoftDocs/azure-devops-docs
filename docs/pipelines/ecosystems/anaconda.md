@@ -4,27 +4,21 @@ description: Set up and use Anaconda environments with Azure Pipelines, Azure De
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.reviewer: vijayma
-ms.custom: seodec18, devx-track-python
-ms.date: 09/21/2021
+ms.custom: seodec18
+ms.date: 01/24/2022
 monikerRange: azure-devops
 author: JuliaKM
 ---
 
 # Run pipelines with Anaconda environments
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to set up and use Anaconda with Python in your pipeline. Anaconda is a Python distribution for data science and machine learning.  
 
 ## Get started
 
 Follow these instructions to set up a pipeline for a sample Python app with Anaconda environment.
-
-1. The code in the following repository is a simple Python app. To get started, fork this repo to your GitHub account.
-
-    ```
-    https://github.com/MicrosoftDocs/pipelines-anaconda
-    ```
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -49,14 +43,14 @@ Follow these instructions to set up a pipeline for a sample Python app with Anac
 
 On [hosted agents](../agents/hosted.md), conda is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.
 
-# [Hosted Ubuntu 18.04](#tab/ubuntu-18-04)
+# [Ubuntu](#tab/ubuntu)
 
 ```yaml
 - bash: echo "##vso[task.prependpath]$CONDA/bin"
   displayName: Add conda to PATH
 ```
 
-# [Hosted macOS](#tab/macos)
+# [macOS](#tab/macos)
 
 Use the `macOS-latest` agent with Anaconda. 
 
@@ -70,7 +64,7 @@ Use the `macOS-latest` agent with Anaconda.
   displayName: Take ownership of conda installation
 ```
 
-# [Windows 2019](#tab/windows-2019)
+# [Windows](#tab/windows)
 
 ```yaml
 - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
@@ -85,21 +79,21 @@ Use the `macOS-latest` agent with Anaconda.
 
 The `conda create` command will create an environment with the arguments you pass it.
 
-# [Hosted Ubuntu 18.04](#tab/ubuntu-18-04)
+# [Ubuntu](#tab/ubuntu)
 
 ```yaml
 - bash: conda create --yes --quiet --name myEnvironment
   displayName: Create Anaconda environment
 ```
 
-# [Hosted macOS](#tab/macos)
+# [macOS](#tab/macos)
 
 ```yaml
 - bash: conda create --yes --quiet --name myEnvironment
   displayName: Create Anaconda environment
 ```
 
-# [Windows 2019](#tab/windows-2019)
+# [Windows](#tab/windows)
 
 ```yaml
 - script: conda create --yes --quiet --name myEnvironment
@@ -127,11 +121,17 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 > error on the next build since the environment already exists. To resolve, use the `--force`
 > argument: `conda env create --quiet --force --file environment.yml`.
 
+> [!NOTE]
+> If you are using self-hosted agents that are sharing storage, and running jobs in parallel 
+> using the same Anaconda environments, there may be clashes between those environments. 
+> To resolve, use the `--name` argument and a unique identifier as the argument value,
+> like a concatenation with the `$(Build.BuildNumber)` build variable.
+
 ### Install packages from Anaconda
 
 The following YAML installs the `scipy` package in the conda environment named `myEnvironment`.
 
-# [Hosted Ubuntu 18.04](#tab/ubuntu-18-04)
+# [Ubuntu](#tab/ubuntu)
 
 ```yaml
 - bash: |
@@ -140,7 +140,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   displayName: Install Anaconda packages
 ```
 
-# [Hosted macOS](#tab/macos)
+# [macOS](#tab/macos)
 
 ```yaml
 - bash: |
@@ -149,7 +149,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   displayName: Install Anaconda packages
 ```
 
-# [Windows 2019](#tab/windows-2019)
+# [Windows](#tab/windows)
 
 ```yaml
 - script: |
@@ -167,7 +167,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 > When you activate an Anaconda environment, it will edit `PATH` and make other changes to its current process.
 > Therefore, an Anaconda environment must be activated separately for each step.
 
-# [Hosted Ubuntu 18.04](#tab/ubuntu-18-04)
+# [Ubuntu](#tab/ubuntu)
 
 ```yaml
 - bash: |
@@ -181,7 +181,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   condition: succeededOrFailed()
 ```
 
-# [Hosted macOS](#tab/macos)
+# [macOS](#tab/macos)
 
 ```yaml
 - bash: |
@@ -195,7 +195,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   condition: succeededOrFailed()
 ```
 
-# [Windows 2019](#tab/windows-2019)
+# [Windows](#tab/windows)
 
 ```yaml
 - script: |
@@ -214,7 +214,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 ## FAQs
 
 ### Why am I getting a "Permission denied" error?
-On Hosted macOS, the agent user doesn't have ownership of the directory where Miniconda is installed.
+On Hosted macOS, the agent user does not have ownership of the directory where Miniconda is installed.
 For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
 
 ### Why does my build stop responding on a `conda create` or `conda install` step?
@@ -222,8 +222,7 @@ If you forget to pass `--yes`, conda will stop and wait for user interaction.
 
 ### Why is my script on Windows stopping after it activates the environment?
 On Windows, `activate` is a Batch script. You must use the [`call`](/windows-server/administration/windows-commands/call) command to resume running your script after activating.
-See examples of using `call` [above](#run-pipeline-steps-in-an-anaconda-environment).
+See examples of using `call` [in a pipeline](#run-pipeline-steps-in-an-anaconda-environment).
 
 ### How can I run my tests with multiple versions of Python?
 See [Build Python apps in Azure Pipelines](./python.md).
-

@@ -1,5 +1,5 @@
 ---
-title: Run any tests in parallel
+title: Run VSTest tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task. 
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.topic: conceptual 
@@ -7,19 +7,12 @@ ms.custom: "continuous-test, seodec18"
 ms.author: shashban
 author: shashban
 ms.date: 11/13/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Run tests in parallel using the Visual Studio Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
-
-::: moniker range="< tfs-2018"
-
-> [!NOTE]
-> For TFS, this topic applies to only TFS 2017 Update 1 and later.
-
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -32,9 +25,9 @@ cannot process builds quickly enough.
 Running tests in parallel is a great way to improve the efficiency of CI/CD pipelines.
 This can be done easily by employing the additional capacity offered by the cloud.
 This article discusses how you can configure the
-[Visual Studio Test task](../tasks/test/vstest.md) to run tests in parallel by using multiple agents.
+[Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests in parallel by using multiple agents.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -146,7 +139,7 @@ jobs:
     parallel: 2
 ```
 
-For more information, see [YAML schema - Job](../yaml-schema.md#job).
+For more information, see [YAML schema - Job](/azure/devops/pipelines/yaml-schema/jobs-job).
 
 ::: moniker-end
 
@@ -191,7 +184,7 @@ to validate the app functionality.
 
      > [!TIP]
      > If the test machines do not have Visual Studio installed, you can use the
-     > [Visual Studio Test Platform Installer task](../tasks/tool/vstest-platform-tool-installer.md) to
+     > [Visual Studio Test Platform Installer task](/azure/devops/pipelines/tasks/reference/visual-studio-test-platform-installer-v1) to
      > acquire the required version of the test platform.
 
 
@@ -201,7 +194,7 @@ When parallel jobs are used in a pipeline, it employs multiple machines (agents)
 Test frameworks and runners also provide the capability to run tests in parallel on a single machine,
 typically by creating multiple processes or threads that are run in parallel.
 Parallelism features can be combined in a layered fashion to achieve massively parallel testing.
-In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parallelism can be combined in the following ways:
+In the context of the [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2), parallelism can be combined in the following ways:
 
 1. **Parallelism offered by test frameworks**.
    All modern test frameworks such as MSTest v2, NUnit, xUnit, and others provide the ability to run tests in parallel.

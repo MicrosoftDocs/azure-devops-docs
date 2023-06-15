@@ -2,17 +2,17 @@
 title: Enable Kanban board badge status for a GitHub repo
 titleSuffix: Azure Boards
 description: Learn how to configure your Kanban board badge status. You can configure the badge status to appear on your GitHub repo. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/20/2021
 ---
 
 # Configure status badges for your GitHub repo 
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
  
 You can add Markdown syntax to a GitHub repo `README.md` file to display your Kanban board's status in that repo. Show the status by adding the syntax you choose from your Kanban board settings.  
 
@@ -27,7 +27,7 @@ The syntax shown works whether you've [connected your project to a GitHub.com or
 
 * Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration](index.md).  
 * You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+* You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 * To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  
 
 

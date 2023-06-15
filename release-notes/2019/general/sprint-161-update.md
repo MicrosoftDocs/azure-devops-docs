@@ -3,7 +3,6 @@ title: General - Sprint 161 Update
 description: See the Sprint 161 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 12/02/2019
 ---
 

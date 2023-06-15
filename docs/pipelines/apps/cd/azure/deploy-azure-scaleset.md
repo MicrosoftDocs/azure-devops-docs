@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 09/07/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-[!INCLUDE [version-tfs-2017-rtm](../../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -123,7 +123,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 

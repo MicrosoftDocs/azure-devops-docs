@@ -1,27 +1,27 @@
 ---
-title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
+title: Find the best tool to add or update stories, bugs, issues, and other work items
 titleSuffix: Azure Boards
-description: Learn which tool is best to add or update user stories, bugs, issues, and other work items 
+description: Learn which tool is best to add or update user stories, bugs, issues, and other work items in Azure Boards. 
 ms.custom: work-items, seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.topic: best-practice
-ms.author: kaelli
+ms.author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2019
+ms.date: 04/01/2022
 ---
 
 
-# Best tool to add, update, and link work items 
+# Best tool to add, update, and link work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Azure Boards provides you several tools&mdash;many designed to perform a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
+Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
 
 
 ## Work item form 
 
-If you want to make a single update to one work item, you can do that from within the work item form. When you want to add or update several work items at a time, then you'll want to use a backlog or query. 
+If you want to make a single update to one work item, you can make an update from within the work item form. When you want to add or update several work items at a time, then you'll want to use a backlog or query. 
 
 [Work item form controls](work-item-form-controls.md) | [Work item field index](guidance/work-item-field.md)
 
@@ -55,7 +55,7 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 	- That you've recently viewed or updated
 	- That has been recently updated, completed, or created for the project. 
 
-#### Additional supported tasks: 
+#### Other supported tasks: 
 
 - [Add a work item](view-add-work-items.md)  
 - [Restore work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)  
@@ -74,7 +74,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 
 **Best tool for**: 
 - [Implementing Kanban methods](../boards/best-practices-kanban.md)  
-- Viewing the flow of work from inception to completion  
+- Viewing the flow of work from start to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
 - Adding linked child items ([checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
@@ -89,7 +89,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - [Monitoring lead time and cycle time control charts](../..//report/dashboards/cycle-time-and-lead-time.md)  
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 - [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md)  
 - [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
 ::: moniker-end  
@@ -125,7 +125,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
 	- [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
  	- [Delete work items](../backlogs/remove-delete-work-items.md#delete)  
@@ -135,24 +135,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
 ::: moniker-end  
 
-::: moniker range="tfs-2015"  
-- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
-- [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
-- [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-- [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items) 
-- [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
-::: moniker-end  
-
-
-::: moniker range="tfs-2013"
-- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
-- [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)  
-- [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-- [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
-::: moniker-end
-
-
-## Sprints 
+## Sprint tools
 
 Sprint tools provide teams a focused view of work items they've assigned to a specific sprint. You can add tasks to work items and prioritize your sprint backlog.  
 
@@ -178,7 +161,7 @@ Queries enable you to filter work items within or across projects for the purpos
 - [Queries](../queries/view-run-query.md) | [Query operators](../queries/query-operators-variables.md) 
 
 **Best tool for**:  
-- [Listing items to perform bulk updates, assign or reassign](../backlogs/bulk-modify-work-items.md)
+- [Listing items to run bulk updates, assign, or reassign](../backlogs/bulk-modify-work-items.md)
 - Listing a [tree of parent-child related work item](../queries/linking-attachments.md#tree) or [dependent work items](../queries/linking-attachments.md#dependents)
 - [Triaging work items (review, set priority, update)](../queries/triage-work-items.md)
 - [Creating simple progress and trend charts](../../report/dashboards/charts.md)
@@ -205,7 +188,7 @@ When you want to review the schedule of stories or features your teams plan to d
 > [!NOTE]   
 > Starting with Azure DevOps Server 2019 and Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project and Storyboarding with PowerPoint.  
 
-Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform the following tasks: 
+Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to complete the following tasks: 
 - Add or update many work items and their fields
 - Add or change hierarchical links between work items. 
 
@@ -283,7 +266,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    
    - [Test Plans and Test Suites](../../test/create-a-test-plan.md)
    - [Test Cases](../../test/create-test-cases.md)
-   - [Test Cases, grid view](../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time)
+   - [Test Cases, grid view](../../test/create-test-cases.md#use-the-grid-view-to-edit-test-cases)
    - [Shared Steps, Shared Parameters](../../test/repeat-test-with-different-data.md)
    - [Delete test artifacts](../backlogs/delete-test-artifacts.md)
    
@@ -291,8 +274,8 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
    
    - [Track test status](../../test/track-test-status.md)
-   - [Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
-   - [Export test plans and test suites](../../test/reference-qa.md#testcases)
+   - [Order manual tests within suites](/previous-versions/azure/devops/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
+   - [Export test plans and test suites](../../test/reference-qa.yml#testcases)
    - [Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)
    
    :::column-end:::
@@ -325,7 +308,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    
    - [Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)
    - [Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)
-   - [Capture screen recordings of your app during testing](../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app)
+   - [Capture screen recordings of your app during testing](../../test/run-manual-tests.md)
    
    :::column-end:::
 :::row-end:::
@@ -355,7 +338,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    
    - Find a specific work item using its ID or a keyword
    - Find one or more work items across all projects in a fast, flexible manner
-   - Perform full text search across all work item fields
+   - Run full text search across all work item fields
    - Review work items assigned to a specific team member
    - Search against specific work item fields to quickly narrow down a list of work items
    - Determine what key words will support a managed search.
@@ -384,8 +367,8 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    :::column span="3":::
     
    
-   - [Request feedback](../../project/feedback/get-feedback.md)
-   - [Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+   - [Request feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
+   - [Give feedback using Microsoft Feedback Client](/previous-versions/azure/devops/project/feedback/give-feedback)
    
    :::column-end:::
 :::row-end:::
@@ -396,9 +379,9 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    :::column span="3":::
     
    
-   - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
-   - [Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)
-   - [Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+   - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+   - [Manage team and project notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
+   - [Manage organization notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md)
    
    :::column-end:::
 :::row-end:::
@@ -416,7 +399,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
 ## Marketplace extensions 
 
-A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
+Other tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
 
 See also [Azure Boards extensions developed by Microsoft](../extensions/index.md).
 

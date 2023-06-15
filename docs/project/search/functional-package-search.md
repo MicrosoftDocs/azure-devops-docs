@@ -1,60 +1,80 @@
 ---
-title: Advanced package search syntax
+title: Search packages
 titleSuffix: Azure Artifacts
-description: Advanced options for using Package Search across all your feeds in an Azure DevOps organization.
-ms.technology: devops-collab
+description: How to search for packages across all your feeds and in upstream sources in an Azure DevOps organization.
+ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2020'
-ms.date: 04/15/2021
+monikerRange: 'azure-devops'
+ms.date: 11/28/2022
 ---
-# Functional artifact or package search
 
-[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+# Search packages across your feeds
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
 
 ## Prerequisites
 
-Package Search is automatically available to users of Azure DevOps.
+- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+
+- An Azure Artifacts feed. [Create a feed](../../artifacts/get-started-nuget.md#create-a-feed), if you don't have one already.
 
 ## Apply supported functions to package search
 
-1. The Views filter only appears if a single feed is selected from Feeds filter. Use the filter to show the selector lists.
+1. Select the filter icon to show the filter panel.
 
-	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::
+	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Screenshot Showing the filter lists":::
 
-2. Select the criteria you want in the selector lists, or search across the entire organization.
+1. Select from the dropdown menus to search by feeds, views, or package types.
 
-	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Selector drop-down lists":::
+	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Screenshot showing the filter panel options":::
 
-3. By switching pivots, quickly search packages that contain the same search string.
+By default, you search within all feeds of the organization, no matter which project you're in. The **Views** filter only appears if a single feed gets selected from the **Feeds** filter. Use this filter to show packages from a specific view.
+Using the **Type** filter, you can select the type of package you want to search for (such as NuGet packages).
 
-	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for packages containing the same search string":::
+## Search using the REST API
 
-By default, you search within all feeds of the organization, no matter which project you're in. 
+You can use the Azure DevOps REST API to search for packages in a specific organization. See [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
 
-The Views filter only appears if a single feed gets selected from the Feeds filter. Use this filter to show the selector lists.
+#### Example
 
-Select :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **filter** and the function that you want to include in your search string from the list. Then, enter your criteria. 
+```Command
+POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearchresults?api-version=7.0
+```
 
-:::image type="content" source="media/shared/show-filters.png" alt-text="Show filter panel button.":::
+```Request body
+{
+  "$orderBy": null,
+  "$top": 100,
+  "$skip": 0,
+  "searchText": "react-calendar",
+  "filters": {
+    "ProtocolType": "Npm"
+  }
+}
+```
 
-Add more criteria to either narrow or broaden your search by using the operators and functions listed in :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **view options**.
+## Search in upstream sources
 
-## Search packages with REST API
+Using upstream sources, you can consume packages from public registries and Azure Artifacts feeds. See [Search upstreams](../../artifacts/how-to/search-upstream.md) to lean how to search for packages in upstream sources and save them to your feed.
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results).
+> [!NOTE]
+> Searching for packages in upstreams using the NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [What are feeds?](../../artifacts/concepts/feeds.md)
+> [What are feed views?](../../artifacts/concepts/views.md)
+> [Promote a package to a view](../../artifacts//feeds/views.md)
 
 ## Related articles
 
-* [Get started with Search](get-started-search.md)
-* [Search code](functional-code-search.md)
-* [Search work items](functional-work-item-search.md)
-* [Search FAQs](faq-search.yml)
+- [Get started with Search](get-started-search.md)
+- [Search code](functional-code-search.md)
+- [Search work items](functional-work-item-search.md)
+- [Search FAQs](faq-search.yml)

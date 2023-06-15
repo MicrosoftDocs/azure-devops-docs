@@ -1,61 +1,59 @@
-- name: About managing organizations
+- name: Organization management overview
   href: organization-management.md
-  displayName:
 - name: Plan your organizational structure
-  href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayName: projects, teams, repos, version control, scenarios, quantity, mapping, reporting, structure, data
+  href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json
 - name: Create your organization
   href: create-organization.md
+- name: Manage your organization
   displayName: new, project
+  href: ../../user-guide/manage-organization-collection.md?toc=/azure/devops/organizations/toc.json
 - name: Look up organization owner
-  href:  ../security/lookup-organization-owner-admin.md
   displayName: access, permissions, owner, project collection administrator, valid
-- name: Add and manage banners 
-  href:  ../settings/manage-banners.md
+  href: ../security/look-up-organization-owner.md
+- name: Add and manage banners
   displayName: add, update, remove, information, organization
+  href: ../settings/manage-banners.md
+- name: Manage preview features
+  displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
+  href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json
 - name: Adjust organization settings
   items:
   - name: Add privacy policy URL
-    href: add-privacy-policy-url.md
     displayName: GDPR, organization, public project, external guest, data, protection
-  - name: Use policies to manage users' PATs (for admins)
-    href: manage-pats-with-policies-for-administrators.md
-    displayName: restrict, creation, global, full, scope, maximum, lifespan, authentication
-  - name: Change time zone
-    href: change-time-zone.md
-    displayName: update, organization, user profile, settings
-  - name: Change organization region
-    href: change-organization-location.md
-    displayName: update, reassign, region, geography, location, Virtual Support Agent
-  - name: Change organization Owner
-    href: change-organization-ownership.md
+    href: add-privacy-policy-url.md
+  - name: Change organization owner
     displayName: update, reassign, Project Collection Administrator, owner
-- name: Manage your organization
-  items:
-  - name:  Manage preview features
-    href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
-  - name: Rename organization
-    href: rename-organization.md
-    displayName: owner, collection, administrator, new, name, Basic, URL, switch
+    href: change-organization-ownership.md
+  - name: Change organization region
+    displayName: update, reassign, region, geography, location, Virtual Support Agent
+    href: change-organization-location.md
+  - name: Change time zone
+    displayName: update, organization, user profile, settings
+    href: change-time-zone.md
   - name: Delete organization
-    href: delete-your-organization.md
     displayName: remove, billing, subscription, unlink, project collection administrator
+    href: delete-your-organization.md
   - name: Recover organization
-    href: recover-your-organization.md
     displayName: owner, restore, account
-  - name: Restrict organization creation
-    href: azure-ad-tenant-policy-restrict-org-creation.md
-    displayName: settings, Azure Active Directory, role, administrator, prevent
+    href: recover-your-organization.md
+  - name: Rename organization
+    displayName: owner, collection, administrator, new, name, Basic, URL, switch
+    href: rename-organization.md
   - name: Resolve orphaned organization
+    displayName: find, owner, collection, administrator, Azure Active Directory, claim ownership,
     href: resolve-orphaned-organization.md
-    displayName: find, owner, collection, administrator, Azure Active Directory, claim ownership, 
+  - name: Restrict organization creation
+    displayName: settings, Azure Active Directory, role, administrator, prevent
+    href: azure-ad-tenant-policy-restrict-org-creation.md
+  - name: Use policies to manage user PATs (for admins)
+    displayName: restrict, creation, global, full, scope, maximum, lifespan, authentication
+    href: manage-pats-with-policies-for-administrators.md
 - name: Services status
-  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayName: service, health, portal, geography, region, core, other, event, log, availability, RSS, REST APIs
+  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json
 - name: FAQs
   items:
   - name: Create and configure an organization
-    href: faq-configure-customize-organization.yml
     displayName: create, configure, delete, restore, owner, browser, region, name, location, features, project, data protection, subscription
-
+    href: faq-configure-customize-organization.yml

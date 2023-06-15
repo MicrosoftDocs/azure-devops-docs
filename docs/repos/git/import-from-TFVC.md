@@ -3,17 +3,18 @@ title: Import repositories from TFVC to Git
 titleSuffix: Azure Repos
 description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 10/11/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Import repositories from TFVC to Git
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can migrate code from an existing TFVC repository to a new Git repository within the same organization. Migrating to Git is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
+You can migrate code from an existing TFVC repository to a new Git repository within the same organization. Migrating to Git is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave differently from Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
 
 * Revising tools and processes
 * Removing binaries and executables
@@ -56,7 +57,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the repo drop-down, select **Import repository**.
 

@@ -2,18 +2,18 @@
 title: Create an Analytics view 
 titleSuffix: Azure DevOps
 description: Learn how to add a custom Analytics view for easy generation of Power BI reports for Azure DevOps.
-ms.technology: devops-analytics
-ms.reviewer: romik
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.custom: analytics-views, engagement-fy23 
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 11/08/2022
 ---
 
 # Create an Analytics view in Azure DevOps 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view.
 
@@ -32,7 +32,7 @@ Use this article to learn how to:
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
-[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](../includes/analytics-open.md)] 
 
@@ -41,7 +41,7 @@ Use this article to learn how to:
 From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
 > [!div class="mx-imgBorder"]
-> ![Analytics Views directory](media/editable-views/directory-actions.png)
+> ![Analytics views directory](media/editable-views/directory-actions.png)
 
 [!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
@@ -61,7 +61,7 @@ Choose ![plus icon](../media/icons/blue-plus.png) **New View** to open the dialo
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, select the tab title. 
 
 > [!NOTE]   
-> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics View - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
+> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics view - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
 
 ### Name the view and choose a sharing option
 
@@ -75,7 +75,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 ### Specify Work items filters
 
-Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
+Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data. For a description of each available field, see [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md).
 > [!div class="mx-imgBorder"]
 > ![Specify Work items filters.](media/editable-views/work-items-default.png)
 

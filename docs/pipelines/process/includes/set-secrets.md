@@ -1,10 +1,10 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 04/29/2022
 ---
 
 To set secrets in the web interface, follow these steps:

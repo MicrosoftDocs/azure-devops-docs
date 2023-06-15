@@ -2,9 +2,10 @@
 title: Apply a team filter to a Power BI report
 titleSuffix: Azure DevOps 
 description: Learn how to create a trend report with a team filter using an Analytics view.
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.custom: analytics-views
+ms.author: chcomley
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms date: 10/04/2021
@@ -12,7 +13,7 @@ ms date: 10/04/2021
 
 # Create a Power BI report filtered by team using a custom Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Analytics views support field criteria to filter work items based on teams. However, there's no team-specific field available to support filtering a Power BI report. While each work item is associated with a specific area path, area paths can be associated with more than one team. Because of this one-to-many association, Analytics doesn't provide a team-specific field. 
 
@@ -21,7 +22,7 @@ However, you can still filter on a team using the steps provided in this article
 > [!NOTE]  
 > In a similar manner, limitations exist in determining the board-specific column of a work item within an Analytics view. However, the guidance provided in this article won't work for board locations due to the dependency on the selected historical data in the view. 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Add the AreaSK field to your Analytics view 
 
@@ -53,7 +54,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
    
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"TeamName", "TeamSK"})
     in
         #"Select columns"
@@ -70,7 +71,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaName,AreaSK"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Areas?$select=AreaName,AreaSK"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"AreaName", "AreaSK"})
     in
         #"Select columns"
@@ -82,7 +83,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaSK&$expand=Teams($select=TeamSK)"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Areas?$select=AreaSK&$expand=Teams($select=TeamSK)"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"AreaSK", "Teams"}),
         #"Expand Teams" = Table.ExpandTableColumn(#"Select columns", "Teams", {"TeamSK"}, {"TeamSK"})
     in
@@ -95,7 +96,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 11. On the Home tab, choose **Close & Apply**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Home, Close & Apply](media/powerbi-close-apply.png)   
+	> ![Power BI Desktop, Home, Close & Apply](media/transform-data/powerbi-close-apply.png)  
 
 16. Next, choose **Refresh** to add *AreaSK* to the view.  
 

@@ -1,28 +1,31 @@
 ---
 ms.topic: include
-ms.technology: devops-collab
+ms.subservice: azure-devops-integration
 title: Azure Pipelines with Slack
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 02/13/2020
+ms.date: 3/27/2023
 ---
 
-* [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
-* [Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.](#configuration-failed-please-make-sure-that-the-organization-organization-name-exists-and-that-you-have-sufficient-permissions)
+If you are experiencing the following errors when using the Azure Pipelines App for Slack, follow the procedures in this section. 
 
-### Sorry, something went wrong. Please try again.
+### Sorry, something went wrong. Please try again
 
-The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth for the organization](../../../organizations/accounts/change-application-access-policies.md) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and set the **Third-party application access via OAuth for the organization** setting to **On**.
+The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth](../../../organizations/accounts/change-application-access-policies.md) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and turn on the **Third-party application access via OAuth for the organization**.
 
-> [!div class="mx-imgBorder"]
-> ![Enable the Third-party application access via OAuth for the organization setting](../media/troubleshooting/third-party-app-consent.png)
+:::image type="content" source="../media/troubleshooting/third-party-app-consent.png" alt-text="A screenshot showing how to enable third party access via OAuth.":::
 
-### Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.
+### Configuration failed. Please make sure that the organization exists and that you have sufficient permissions
 
-Sign out of Azure DevOps by navigating to `https://aka.ms/VsSignout` using your browser.
+Sign out of Azure DevOps by navigating to this URL: `https://aka.ms/VsSignout`.
 
-Open an **In private** or **incognito** browser window and navigate to `https://aex.dev.azure.com/me` and sign in. In the dropdown under the profile icon to the left, select the directory that contains the organization containing the pipeline for which you wish to subscribe.
+Open a private/incognito browser window and navigate to `https://aex.dev.azure.com/me` and sign in. Select the directory that contains the organization where the pipeline you want to subscribe to is located.
 
-> [!div class="mx-imgBorder"]
-> ![Select the directory that contains the organization that contains the pipeline](../media/troubleshooting/profile-page.png)
+:::image type="content" source="../media/troubleshooting/profile-page.png" alt-text="A screenshot showing how to select your pipeline directory.":::
+
+Using the **same browser**, open a new tab and go to `https://slack.com`. Log in to your workspace using the web client, and then run the `/azpipelines signout` command followed by the `/azpipelines signin`. 
+
+Select the `Sign in` button and you'll be redirected to a consent page as shown in the example below. Verify that the directory displayed next to your email address matches the one selected in the previous step. Select **Accept** to complete the sign-in process.
+
+:::image type="content" source="../media/troubleshooting/consent-page-slack.png" alt-text="A screenshot showing how to allow pipelines slack integration.":::

@@ -2,49 +2,45 @@
 title: Use the .artifactignore file
 description: Use .artifactignore to exclude files and folders when you publish Artifacts
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: reference
-ms.date: 05/04/2020
+ms.date: 01/26/2022
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
-# Use the .artifactignore file
+# Use .artifactignore
 
-The *.artifactignore* is a text file that controls what files are uploaded when you publish either a [Universal Package](../quickstarts/universal-packages.md) or a Pipeline Artifact. The syntax is similar to that of *.gitignore*.
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-*.artifactignore* is typically checked into your version control repository in the same directory from which you upload your artifacts.
+The *.artifactignore* is a text file that controls which files are uploaded when you publish a Universal Package or a Pipeline Artifact.
 
-By using *.artifactignore*, you can avoid copying files into a staging directory before publishing your artifact. This can help reduce the overall pipeline execution time.
+*.artifactignore* is typically checked into your version control repository and the syntax is similar to that of *.gitignore*.
 
-```
+Using the *.artifactignore* file can help reduce your pipeline execution time by avoiding copying files into your staging directory before publishing your artifacts.
+
+## Example
+
+In the following example, we will be ignoring all files except the ones in the *src/MyApp/bin/Release* directory.
+
+```artifactignore
 **/*
 !src/MyApp/bin/Release/**.*
 ```
 
-In the above example, we instruct the universal package task and the pipeline artifact task to ignore all files except the ones in the *src/MyApp/bin/Release* directory. To assure the proper execution, *.artifactignore* file should be checked into the root of the repository.
+> [!IMPORTANT]
+> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
 ## Syntax
 
-Refer to the [Git documentation](https://git-scm.com/docs/gitignore) for details about the *.gitignore* syntax. The *.artifactignore* follows the same syntax with some minor limitations.
+The *.artifactignore* follows the same syntax as the [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
 
-> [!IMPORTANT]
-> The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
-
-## Ignored by default
-
-To reduce the chances of publishing the *.git* folder, we automatically ignore this path. You can re-include it by adding the following line to your *.artifactignore* file:
-
-```
-!.git
-```
+> [!Note]
+> The *.gitignore* file is ignored by default if you don't have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
 
 ## Related articles
 
-- [Package graphs](../concepts/package-graph.md)
-- [Package componentization](../collaborate-with-packages.md)
+- [Publish and download pipeline artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
 - [Limits on package sizes and counts](limits.md)
+- [Package componentization](../collaborate-with-packages.md)
 
-## Next steps
-- [Get started with Azure Artifacts](../start-using-azure-artifacts.md)
-- [Configure permissions](../feeds/feed-permissions.md)
-- [Follow a package for publish alerts](../how-to/follow-package-notifications.md)

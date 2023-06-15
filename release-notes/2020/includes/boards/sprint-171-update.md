@@ -1,7 +1,6 @@
 ---
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 06/18/2020
 ms.topic: include
 ---
@@ -14,4 +13,4 @@ We continue to close the feature parity gap between hosted XML and the inherited
 
 You can also create a rule to restrict state transitions by group membership. For example, only users in the “Approvers” group can move user stories from New -&gt; Approved.
 
-If you are interested in participating in the private preview, please email&nbsp;</span><a href="mailto:dahellem@microsoft.com" style="color:rgb(0, 93, 166);">us directly</a> with your organization name.
+If you are interested in participating in the private preview, please email [us directly](mailto:dahellem@microsoft.com) with your organization name.

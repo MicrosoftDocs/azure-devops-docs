@@ -2,41 +2,44 @@
   href: scrum-overview.md
   displayname: capacity, burndown, monitor, forecast, velocity
 - name: Change sprint dates
-  href: define-sprints.md 
+  href: define-sprints.md
   displayname: get started, schedule, release
 - name: Forecast
-  displayname: velocity, sprints, iterations  
   href: forecast.md
-- name: Plan and work a sprint 
+  displayname: velocity, sprints, iterations
+- name: Plan and work a sprint
   items:
   - name: 1. Assign backlog items to a sprint
     href: assign-work-sprint.md
     displayname: multi-select, bulk modify
-  - name: 2. Add tasks 
+  - name: 2. Add tasks
     href: add-tasks.md
     displayname: unparented
-  - name: 3. Set sprint capacity 
+  - name: 3. Set sprint capacity
     href: set-capacity.md
-  - name: 4. Adjust work to fit capacity 
+  - name: 4. Adjust work to fit capacity
     href: adjust-work.md
     displayname: load balance
-  - name: 5. Share your sprint plan 
+  - name: 5. Share your sprint plan
     href: share-plan.md
     displayname: email, query
-  - name: 6. Update the Taskboard 
-    displayname: status, remaining work, scope 
+  - name: 6. Update the Taskboard
     href: task-board.md
+    displayname: status, remaining work, scope
+- name: End of sprint activities
+  href: end-sprint-activities.md
+  displayname: close sprint, remaining work, move work
 - name: Customize your sprint backlogs
   items:
   - name: Customize a Taskboard
-    displayname: cards, fields, styles, columns 
     href: customize-taskboard.md
+    displayname: cards, fields, styles, columns
   - name: Change column options
     href: ../backlogs/set-column-options.md
     displayname: persistence
   - name: Filter your sprint views
-    href: ../backlogs/filter-backlogs-boards-plans.md 
-    displayname: group, parent, tags  
+    href: ../backlogs/filter-backlogs-boards-plans.md
+    displayname: group, parent, tags
   - name: Set working days
     href: ../../organizations/settings/set-working-days.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
     displayname: team
@@ -48,7 +51,7 @@
     href: scrum-key-concepts.md
     displayname: capacity bars, scrum, scrum master, product owner, technical debt, triage, velocity
   - name: View/configure sprint burndown
-    href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-    displayname: charts, in-context charts, in context 
-  - name: Configure a Burndown or Burnup widget
-    href: ../../report/dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json
+    displayname: charts, in-context charts, in context
+  - name: Configure a burndown or burnup widget
+    href: ../../report/dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/boards/toc.json

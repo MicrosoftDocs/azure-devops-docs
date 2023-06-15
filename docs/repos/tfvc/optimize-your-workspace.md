@@ -1,128 +1,96 @@
 ---
 title: Optimize your workspace
 titleSuffix: Azure Repos
-description: Optimize your workspace
+description: Optimize your workspace to improve performance, reduce network traffic, and reduce the disk space required on your dev machine.
 ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/28/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Optimize your workspace
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Does your team have a large and complex codebase? Do you want your workspace to contain only the files you need to improve performance, reduce network traffic, and reduce the disk space required on your dev machine?
 
--   [Optimize your folder names](optimize-your-workspace.md#folder_name)
+If your team has a large and complex codebase, you can optimize your workspace to contain only the files you need. Optimizing your workspace improves performance, reduces network traffic, and reduces the disk space required on your dev machine.
 
--   [Optimize your workspace using explicit, implicit, cloaked, and non-recursive folder mappings](optimize-your-workspace.md#mappings)
-
--   [Use workspaces to isolate and manage work among different branches](optimize-your-workspace.md#isolate)
+> [!NOTE]
+> [Branching](branching-strategies-with-tfvc.md) and [suspending or shelving](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you shouldn't need to do this.
+> 
+> If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.
 
 <a name="folder_name"></a>
 
 ## Optimize your folder names
 
-If you don't yet use branches, on your server, you should put all your code in a subfolder called Main (for example: `$/TFVCTeamProject/Main/`). If you do, then you'll be ready when your team grows big enough to require branches to manage your codebase. On your dev machine, you should use a short, understandable folder path that matches your project structure such as `C:\Users\\YourName\Source\Workspaces\TFVCTeamProject\Main\SolutionName\`.
+If you don't yet use branches, put all your code in a subfolder called *Main* on your server, for example: *$/TFVCTeamProject/Main/*. You'll then be ready when your team grows big enough to require branches to manage its codebase. On your dev machine, you should use a short, understandable folder path that matches your project structure, such as *C:\\Users\\\<YourName>\\Source\\Workspaces\\TFVCTeamProject\\Main\\SolutionName*.
 
 Some more tips on effective folder names:
 
--   Keep all folder, sub-folder, and file names short to simplify your work and avoid potential long-path issues that can occur with some types of code projects.
+-   Keep all folder, subfolder, and file names short to simplify your work and avoid potential long-path issues that can occur with some types of code projects.
 
--   Avoid whitespace if you want to make command-line operations a little easier to perform.
+-   Avoid whitespace in file and folder names to make command-line operations easier to perform.
 
 <a name="mappings"></a>
 
-## Optimize your workspace using explicit, implicit, cloaked, and non-recursive folder mappings
+## Optimize your workspace
 
-If your codebase is large, you can avoid wasting time, network bandwidth, and local disk space by optimizing your workspace folder mappings.
+If your team's codebase is large, you can avoid wasting time, network bandwidth, and local disk space by optimizing your workspace folder mappings. You can use explicit, implicit, cloaked, and non-recursive folder mappings to more simply and quickly create a usable workspace.
 
-When you map a folder, make sure that you choose a folder high enough in the code tree that you get all the files you need to create a local build, but low enough that you are not getting more files than you need. You can also use some tools to more simply and quickly create a usable workspace: **explicit**, **implicit**, **cloaked**, and **non-recursive** folder mappings.
+When you map a folder to your workspace, make sure that you choose a folder high enough in the code tree that you get all the files you need to create a local build, but low enough that you aren't getting more files than you need. In the following example workspace, you could simply map *$/SiteApp/* to *c:\\code\\SiteApp\\*. A simple workspace like this would *implicitly* map all the folders in *$/SiteApp/Main/* to your workspace, including the files you need.
 
-When you look at the workspace of fictitious developer, Raisa, below, you might wonder to yourself: why didn't she simply map `$/SiteApp/` to `c:\\code\\SiteApp\\` and be done with it? A simple workspace like this would **implicitly** map all the folders she needs in `$/SiteApp/Main/`.
+The main problem with this approach is that it provides you with many files you don't need, and thus wastes time and resources. For example, if you don't develop customized build processes, you don't need *$/SiteApp/BuildProcessTemplates/*.
 
-The main problem with this approach is that it would also provide her with a lot of files she does not need, and thus waste time and resources. So Raisa creates some tailored folder mappings.
+Over time you expect your team codebase to grow, and you don't want to automatically download every new bit of code added to *$/SiteApp/Main/*. As teams working in other folders change those files, when you get the latest files from the server, you could incur long delays waiting for updates to files you don't need.
 
-![Folder mappings](media/optimize-your-workspace/IC720115.png)
+You can optimize your workspace to create more tailored folder mappings.
 
-![Second folder mapping.](media/optimize-your-workspace/IC720116.png)
+1. In Visual Studio **Source Control Explorer**, select the dropdown arrow next to **Workspaces**, and select **Workspaces**.
 
-:::row:::
-   :::column span="1":::
-   ![Step 1](media/optimize-your-workspace/IC756627.png)
-   :::column-end:::
-   :::column span="3":::
-   Raisa doesn&#39;t develop customized build processes so she doesn&#39;t need `$/SiteApp/BuildProcessTemplates`. Over time she expects the codebase to grow, and she also does not want to automatically download every new bit of code added to `$/SiteApp/Main/`. As teams working in those other folders change those files, when Raisa gets the latest files from the server, she could incur long delays waiting for updates to files she doesn&#39;t need.
+1. In the **Manage Workspaces** dialog box, select the workspace you want to optimize, and then select **Edit**.
 
-   To develop her code, Raisa needs all the code projects that comprise the FabrikamFiber solution. Rather than **explicitly** including each code project (for example, `$/SiteApp/Main/FabrikamFiber/FabrikamFiber.DAL`) she instead maps `$/SiteApp/Main/FabrikamFiber/`, and thus she **implicitly** maps all the sub-folders that contain the code projects she needs.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   ![Step 2](media/optimize-your-workspace/IC646325.png)
-   :::column-end:::
-   :::column span="3":::
-   Raisa does not need the files in `$/SiteApp/Main/FabrikamFiber/3DModels` or `$/SiteApp/Main/FabrikamFiber/Docs`, and because they are implicitly mapped by![Step 1](media/optimize-your-workspace/IC756627.png), she uses two **cloaked** mappings to exclude these folders from her workspace.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   ![Step 3](media/optimize-your-workspace/IC646326.png)
-   :::column-end:::
-   :::column span="3":::
-   Raisa and others on her team maintain and sometimes augment a set of some fundamental libraries. She needs almost all current libraries in this folder and expects to need libraries her team adds there in the future, so she maps `$/SiteApp/Main/libraries/Common`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   ![Step 4](media/optimize-your-workspace/IC646327.png)
-   :::column-end:::
-   :::column span="3":::
-   Raisa needs only a small segment of a large folder, `$/SiteApp/Main/libraries/Common/LibraryC`, so she maps it as **cloaked** and then explicitly maps just the sub-folder she needs: `$/SiteApp/Main/libraries/Common/LibraryC/Sub-Library1`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   ![Step 5](media/optimize-your-workspace/IC646328.png)
-   :::column-end:::
-   :::column span="3":::
-   Raisa needs some of the files immediately within `LibraryD`, but she does not need the large contents of its sub-folders, so she applies a **non-recursive** mapping to this folder: `$/SiteApp/Main/libraries/Specialized/LibraryD/*`.
-   :::column-end:::
-:::row-end:::
+1. In the **Edit Workspace** dialog box, edit the workspace mappings.
+
+   ![Screenshot that shows editing a workspace in the Edit Workspace dialog box.](media/optimize-your-workspace/IC720116.png)
+
+1. For example, to develop your code, you need code projects from the *DinnerNow* project. Rather than explicitly including each code project in the solution, such as *$/Fabrikam TFVC/DinnerNow/feature3*, you can map *$/Fabrikam TFVC/DinnerNow*, and thus *implicitly* map all the subfolders that contain the code projects you need. 
+
+1. You don't need the files in *$/Fabrikam TFVC/DinnerNow/feature1* or *$/Fabrikam TFVC/DinnerNow/feature2*, but because they're implicitly mapped, you can use two *cloaked* mappings to exclude these folders from your workspace.
+
+1. Your team maintains and sometimes augments a set of some fundamental libraries. You need almost all current libraries in this folder, and expect to need libraries your team adds there in the future, so you map *$/Fabrikam TFVC/Main/*.
+
+1. You need only a small segment of a large folder, *$/Fabrikam TFVC/Main/ClassLibrary*, so you map it as cloaked, and then explicitly map just the subfolder you need, *$/Fabrikam TFVC/Main/ClassLibrary1*.
+
+1. You need some of the files immediately within *ClassLibrary1*, but you don't need the contents of its subfolders, so you apply a *non-recursive* mapping to the *$/Fabrikam TFVC/Main/ClassLibrary1/* folder.
+
+You can also map folders to workspaces by right-clicking an unmapped branch or folder in **Source Control Explorer** and selecting **Advanced** > **Map to local folder**. Or, select the **Not mapped** link next to **Local folder** at the top of **Source Control Explorer**. In the **Map** dialog box, select a local folder to map to, and select the **Recursive** checkbox if you want to make the mapping recursive across subfolders.
+
+The following screenshots show the results of applying these workspace optimizations on the server tree in **Source Control Explorer** and on the local files on your computer.
+
+![Screenshots that show the effects of folder mappings.](media/optimize-your-workspace/IC720115.png)
 
 <a name="isolate"></a>
+## Use workspaces to isolate branches
 
-## Use workspaces to isolate and manage work among different branches
+If your organization uses branches to isolate risk in your codebase, you can create a separate workspace for each branch you work in. You continue your work within your small team, but you use a few workspaces to manage the work that you do in multiple branches.
 
-If your company uses [branches to isolate risk](./branching-strategies-with-tfvc.md) in your codebase, then you should create a separate workspace for each branch you work in.
-
-For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolate the risk among their many teams, they've branched their codebase. Raisa continues her work within her small team, but now she uses a few workspaces to manage the work that she now does in multiple branches.
+For example:
 
 ![Diagram showing multiple branches.](media/optimize-your-workspace/IC578257.png)
 
-:::row:::
-   :::column span="1":::
-   ![Optimize your workspace](media/optimize-your-workspace/IC756627.png)
-   :::column-end:::
-   :::column span="3":::
-   **Develop features** She modifies her default workspace to do work in the Extranet branch, where she participates in the development of the customer-facing website in this branch.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   ![Integrate and stabilize.](media/optimize-your-workspace/IC646325.png)
-   :::column-end:::
-   :::column span="3":::
-   **Integrate and stabilize** She creates two new workspaces to do work in the Test and Dev branches, where she collaborates with other developers and testers to stabilize the code during integration.
-   :::column-end:::
-:::row-end:::
+- **Develop features**: You modify your default workspace to do work in the `Extranet` branch, where you participate in the development of the customer-facing website.
 
-Raisa manages her work in three workspaces, each of which maps folders in a branch on the server with the folders on her dev machine.
+- **Integrate and stabilize**: You create two new workspaces to do work in the `Test` and `Dev` branches, where you collaborate with other developers and testers to stabilize the code during integration.
+
+You manage your work in three workspaces, each of which maps folders in a branch on the server to the folders on your dev machine.
 
 ![Diagram showing mapping branches to folders.](media/optimize-your-workspace/IC720117.png)
 
-> [!NOTE]
-> [Branching](./branching-strategies-with-tfvc.md) or [suspending (or shelving)](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you should not need to do this. If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.
+## Next steps
+
+[Select an effective branching strategy](branching-strategies-with-tfvc.md)

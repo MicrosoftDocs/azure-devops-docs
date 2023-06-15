@@ -1,24 +1,22 @@
 ---
-title: Scaled Agile Framework®
+title: Implement Scaled Agile Framework® (SAFe) in Azure Boards
 titleSuffix: Azure Boards
-description: How to implement the Scaled Agile Framework® to support epics, release trains, and multiple backlogs in Azure Boards 
-ms.technology: devops-agile
-ms.prod: devops
+description: How to implement the Scaled Agile Framework® to support epics, release trains, and multiple backlogs in Azure Boards. 
+ms.service: azure-devops-boards
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 05/28/2020
+ms.date: 10/20/2021
 ---
 
 
+# Implement Scaled Agile Framework&reg; in Azure Boards
 
-# Implement Scaled Agile Framework&reg; 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
-
-With many enterprises benefiting from individual Agile teams, greater interest grows to scale Agile practices as the organization grows. The need for enterprises to view progress of many Agile teams and across a portfolio  continues to increase. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
+Many enterprises benefit from individual Agile teams. Greater interest grows to scale Agile practices as the organization grows. The need for enterprises to view progress of many Agile teams and across a portfolio continues to increase. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
 If you're familiar with Scrum but not familiar with SAFe®, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
 
@@ -33,9 +31,9 @@ Azure Boards supports SAFe® practices through its autonomous teams, backlogs, b
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
-## The Scaled Agile Framework®
+## Scaled Agile Framework®
 
-The SAFe® addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down Epics into Features and Stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Additionally, the portfolio backlog can track deliverables that map to value streams and associated budgets.  
+The SAFe® addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific goals. This framework breaks down Epics into Features and Stories. Teams work on these items in Sprints and deliver through Program Increments (PIs) and Release Trains. Furthermore, the portfolio backlog can track deliverables that map to value streams and associated budgets.  
 
 ### SAFe® architectural overview version 5.0 
 
@@ -101,7 +99,7 @@ Large Solutions SAFe® includes support for a Solution Backlog, Solution Trains,
 [![Large Solution SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/large-solution-poster.png)](https://www.scaledagileframework.com/)   
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-You can implement large solutions in much the same way as you implement Portfolio SAFe®. However, you can also add custom work item types and custom backlogs to support additional solution requirements.       
+You can implement large solutions in much the same way as you implement Portfolio SAFe®. However, you can also add custom work item types and custom backlogs to support other solution requirements.       
 
 
 ### Full SAFe® 
@@ -176,7 +174,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Features
    :::column-end:::
    :::column span="3":::
-      [**Feature work item**](safe-concepts.md#work-items). You define a Feature using the Feature work item type. Features are a container for a number of Stories and are represented in their own portfolio backlog.  
+      [**Feature work item**](safe-concepts.md#work-items). You define a Feature using the Feature work item type. Features are a container for many Stories and are represented in their own portfolio backlog.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -200,7 +198,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Milestones
    :::column-end:::
    :::column span="3":::
-      [**Milesones and key events**](safe-concepts.md#milestones). Milestones occur at the end of each iteration. Custom fields and tags can also be used to associate work with milestones and key events.   
+      [**Milestones and key events**](safe-concepts.md#milestones). Milestones occur at the end of each iteration. Custom fields and tags can also be used to associate work with milestones and key events.   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -248,7 +246,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Program Increment (PI) Iteration Path
    :::column-end:::
    :::column span="3":::
-      [**Iteration Path**](safe-concepts.md#iterations). Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks or longer.
+      [**Iteration Path**](safe-concepts.md#iterations). Iteration Paths define a time box for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks or longer.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -304,7 +302,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Stories
    :::column-end:::
    :::column span="3":::
-      [**User Story work item**](safe-concepts.md#work-items). User Stories capture the desired functionality to be delivered and are typically sized so as to be completed with a single iteration.    
+      [**User Story work item**](safe-concepts.md#work-items). User Stories capture the functionality you want to be delivered. They're typically sized so as to be completed with a single iteration.    
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -360,12 +358,8 @@ Each of the following articles within this suite of tutorials provide details on
 - [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
 - [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
-- [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
-
-<!---
-[Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
--->
+ 
 
 ### About the authors
 
@@ -373,13 +367,13 @@ Many thanks to the following contributors for their review and feedback to the c
 
 - Phillip Eng is a Senior Architect at Microsoft, Digital Pursuit and Guidance. 
 - Hosam Kamel is a technology solution professional for Microsoft and ALM Ranger.
-- Willy-Peter Schaub is a former program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. You can follow him on Twitter at [twitter.com/wpschaub](https://twitter.com/wpschaub).  
+- Willy-Peter Schaub is a former program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. You can follow Willy-Peter on Twitter at [twitter.com/wpschaub](https://twitter.com/wpschaub).  
 
 
 The articles in this series were updated from a previous white paper developed in collaboration with the following authors:  
  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [gordonbeeming.xyz](https://gordonbeeming.xyz/) and you can follow him on Twitter at [twitter.com/gordonbeeming](https://twitter.com/gordonbeeming).  
-- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
+- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he's not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
 - Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
@@ -391,7 +385,7 @@ The articles in this series were updated from a previous white paper developed i
 
 
 <!---
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 ![SAFe® architectural overview &copy; D. Leffingwell](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
 

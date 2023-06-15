@@ -2,17 +2,18 @@
 title: Explore work items when exploratory testing
 description: Test tools - Manual and exploratory testing - explore work items from the Kanban board or by using the Microsoft Test & Feedback extension
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
+ms.custom: UpdateFrequency3
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x 
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Explore work items with the Test & Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use the Test & Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
@@ -94,13 +95,13 @@ To explore another work item, you must first dissociate the current work item fr
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 
-* [FAQs for manual testing](reference-qa.md#tandfext)
+* [FAQs for manual testing](reference-qa.yml#tandfext)
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)

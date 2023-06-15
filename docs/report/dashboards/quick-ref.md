@@ -4,17 +4,18 @@ titleSuffix: Azure DevOps
 description: An index of articles that explain dashboard, chart, report, and widget tasks for Azure Boards in Azure DevOps.
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.technology: devops-analytics
-ms.author: kaelli
-author: KathrynEE
+ms.subservice: azure-devops-analytics
+ms.author: chcomley
+author: chcomley
 ms.topic: overview
-monikerRange: '>= tfs-2015'
-ms.date: 09/28/2021
+monikerRange: '<= azure-devops'
+ms.date: 09/28/2022 
 ---
+
 
 # Dashboards, charts, and quick reference 
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
  
@@ -24,7 +25,31 @@ Use this index to quickly access information on tasks for configuring or accessi
 :::row:::
    :::column span="2":::
       **Dashboards** 
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range=">= azure-devops-2022"
+      - [Add a dashboard](dashboards.md)  
+      - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
+      - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
+      - [Add a work-tracking query chart](charts.md)  
+      - [Add a test status or progress chart](../../test/track-test-status.md)  
+      - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
+      - [Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)  
+<br/>
+      - [Copy a dashboard](copy-dashboard.md)  
+      - [Delete a dashboard](dashboards.md)  
+      - [Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)   
+      - [Edit a dashboard](dashboards.md)  
+      - [Enable auto-refresh](dashboards.md)  
+      - [Favorite a dashboard](dashboards.md)  
+      - [Filter a dashboard](dashboards.md)  
+<br/> 
+      - [Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)  
+      - [Open a dashboard](dashboards.md)  
+      - [Rename a dashboard](dashboards.md)  
+      - [Refresh a dashboard](dashboards.md)  
+      - [Set dashboard permissions](dashboard-permissions.md)  
+      - [View a dashboard](dashboards.md)  
+      ::: moniker-end
+      ::: moniker range=">= azure-devops-2019 < azure-devops-2022"
       - [Add a dashboard](dashboards.md)  
       - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
       - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
@@ -75,7 +100,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Test status or progress chart](../../test/track-test-status.md) 
       ::: moniker range=">= azure-devops-2019"
       **Analytics**  
-      - [Analytics views](../powerbi/analytics-default-views.md)  
+      - [Analytics views](../powerbi/what-are-analytics-views.md)  
       - [Analytics widgets](analytics-widgets.md)  
       - [What is Analytics?](../powerbi/what-is-analytics.md)  
       - [Enable or install Analytics](analytics-extension.md) 
@@ -84,8 +109,8 @@ Use this index to quickly access information on tasks for configuring or accessi
       ::: moniker-end
       ::: moniker range="<= azure-devops-2019"
       **SQL Reports** 
-      - [SQL Server reports](../../report/sql-reports/reporting-services-reports.md)  
-      - [Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)  
+      - [SQL Server reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
+      - [Excel work tracking reports](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)  
       ::: moniker-end
       **Widgets** 
       ::: moniker range=">= azure-devops-2019"
@@ -102,6 +127,8 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Configure a widget](add-widget-to-dashboard.md#configure)  
       - [Resize a widget](add-widget-to-dashboard.md) 
       ::: moniker-end
+      **Troubleshoot** 
+      - [FAQs: Dashboards, charts, and reports](faqs.yml)   
    :::column-end:::
 :::row-end:::
 ---
@@ -118,7 +145,7 @@ In context reports appear on the **Analytics** tab of these specific service pag
 In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**. 
 ::: moniker-end
@@ -160,6 +187,13 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 
 ## Marketplace extensions 
 
+You can find additional functionality to add to your dashboard by installing Marketplace extensions. 
+
+- [Azure Application Insights Widgets](https://marketplace.visualstudio.com/items?itemName=ms-appinsights.ApplicationInsightsWidgets)
+- [Countdown Widget](https://marketplace.visualstudio.com/items?itemName=ALM-DevOpsRangers.CountdownWidget)
+- [GitHub Stats Widget](https://marketplace.visualstudio.com/items?itemName=YodLabs.yodlabs-githubstats)
+- [Work Item Details Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)
+- [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
 - [Marketplace extension reports](https://marketplace.visualstudio.com/search?term=report&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
@@ -168,4 +202,6 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 
 ## Related articles
 
+- [About dashboards, charts, reports, & widgets](overview.md)
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Widget catalog](widget-catalog.md)  

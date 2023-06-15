@@ -1,17 +1,18 @@
 ### YamlMime:Landing
 
-title: Azure Repos Documentation
+title: Azure Repos documentation
 summary: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
 
 metadata:
-  title: Azure Repos Documentation
+  title: Azure Repos documentation
+  titleSuffix: Azure DevOps 
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
-  ms.prod: devops 
-  ms.technology: devops-code-git
+  ms.service: azure-devops-repos
   ms.topic: landing-page 
-  author: KathrynEE 
-  ms.author: kaelli 
+  author: chcomley 
+  ms.author: chcomley 
   ms.date: 03/18/2021
+  ms.subservice: azure-devops-repos-git
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -23,10 +24,8 @@ landingContent:
     linkLists:
       - linkListType: video
         links:
-          - text: Get started with Git in Azure DevOps
-            url: https://sec.ch9.ms/ch9/a282/b834a9a0-92dc-46ea-9195-abfb81b1a282/CONN17T178_high.mp4
           - text: Use Pull Requests with Azure DevOps
-            url: https://sec.ch9.ms/ch9/151a/ba7ad81b-ed67-4dfc-a9fb-4ebf323e151a/CONN17T184_high.mp4
+            url: /shows/visual-studio-toolbox/pull-requests-in-azure-devops
       - linkListType: overview
         links:
           - text: What is Azure Repos?

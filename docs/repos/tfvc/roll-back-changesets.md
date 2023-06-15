@@ -1,87 +1,93 @@
 ---
 title: Roll back changesets
 titleSuffix: Azure Repos
-description: Roll back changesets
+description: Understand how to roll back changesets by using Visual Studio with Team Foundation Version Control (TFVC).
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 11/23/2022
+monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
 # Roll back changesets
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-A [changeset](find-view-changesets.md) is a permanent part of the history of your version-controlled items and cannot be undone or removed. However, you can roll back the effects of one or more changesets.
 
-> [!TIP]
-> You can confirm the changes that result from rolling back some items match what you intend to do before you commit them to the server. See [Tips](roll-back-changesets.md#tips) for details.
+A Team Foundation Version Control (TFVC) [changeset](find-view-changesets.md) is a permanent part of the history of your version-controlled items and can't be undone or removed. However, you can roll back the effects of one or more changesets.
 
-**Required permissions**
+You can also use the `tf` command-line utility to roll back changes. For more information, see [Rollback command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md).
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+## Prerequisites
+
+You must be one of the **Contributors** for your project. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Roll back changes from a single changeset
 
 For example, a developer wants to remove the effects of a changeset:
 
-![Rollback changes from one changeset](media/roll-back-changesets/IC581279.png)
+![Diagram that shows changes from one changeset.](media/roll-back-changesets/IC581279.png)
+
 ### To roll back a changeset from the Changeset Details page
 
--   On the [Changeset Details](find-view-changesets.md) page, choose **Rollback**.
+- Select the changeset, and on the [Changeset Details](find-view-changesets.md) page of Visual Studio **Team Explorer**, choose **Rollback**.
 
 ### To roll back a changeset from the History window
 
--   In the [History](get-history-item.md) window, open the shortcut menu of a version and choose **Rollback Entire Changeset**.
+- In the Visual Studio [History](get-history-item.md) window, right-click a version and choose **Rollback Entire Changeset**.
 
 ### To roll back a changeset from Source Control Explorer
 
-1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
+1. In Visual Studio [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), right-click an item and choose **Rollback**.
 
-    > [!NOTE]
-    > The items you select determine the scope that the rollback changes.
+   > [!NOTE]
+   > The item you select determines the scope that the rollback changes.
 
-2.  In the **Rollback** dialog box, select **Rollback changes from a single changeset**.
+1. In the **Rollback** dialog box, select **Rollback changes from a single changeset**.
+
+1. Specify the changeset, and then select **Rollback**.
 
 ## Roll back changes from a range of changesets
 
 For example, a developer wants to remove the effects of some consecutive changesets:
 
-![Rollback changes from multiple changesets](media/roll-back-changesets/IC581280.png)
-### To roll back a changeset from the History window
+![Diagram showing multiple changesets.](media/roll-back-changesets/IC581280.png)
 
--   In the [History](get-history-item.md) window, select two or more consecutive versions, open their shortcut menu, and choose **Rollback**.
+### To roll back a range of changesets
 
-### To roll back a changeset from Source Control Explorer
+1. From the [History](get-history-item.md) window, select two or more consecutive versions, right-click, and choose **Rollback**.
 
-1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
+   Or, in [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), right-click an item and choose **Rollback**.
 
-    > [!NOTE]
-    > The items you select determine the scope that the rollback changes.
+   > [!NOTE]
+   > The item you select determines the scope that the rollback changes.
 
-2.  In the **Rollback** dialog box, select **Rollback changes from a range of changesets**.
+1. In the **Rollback** dialog box, select **Rollback changes from a range of changesets**.
+
+1. Specify the changeset range, and then select **Rollback**.
 
 ## Roll back to a specific version
 
 For example, a developer wants to roll back a file to an earlier version, eliminating the effect of all changesets that occurred after that version:
 
-![Rollback to a single changeset](media/roll-back-changesets/IC581281.png)
+![Diagram that shows a single changeset to roll back to.](media/roll-back-changesets/IC581281.png)
+
 ### To roll back to a specific version
 
-1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
+1. In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), right-click an item and choose **Rollback**.
 
-2.  In the **Rollback** dialog box, select **Rollback to a specific version**.
+1. In the **Rollback** dialog box, select **Rollback to a specific version**.
 
-## Work from the command prompt
+1. Specify the version details, and then select **Rollback**.
 
--    [Rollback Command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md) 
+## Next steps
 
-## Tips
+- If your change is still pending, that is you haven't checked it in, you can undo the change instead of rolling it back. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
--   If your change is still pending (you have not yet checked it in), you can undo the change instead of rolling it back. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
+- Like most changes you make to files, a rollback change is queued as a pending change. After you roll back the files, you can [view the files you're changing](develop-code-manage-pending-changes.md) and [compare the files with the latest version on the server](compare-files.md). After you confirm that the changes match what you intend to do, you can [check in](check-your-work-team-codebase.md) your changes.
 
--   ![Tip](media/roll-back-changesets/IC572374.png) Like most changes you make to files, a rollback change is queued as a pending change. After you roll back the files, you can [view the files you are changing](develop-code-manage-pending-changes.md) and [compare the content of the files with the latest version on the server](compare-files.md). After you confirm the actual changes match what you intend to do, you can [then check them in](check-your-work-team-codebase.md).
+- Rollback doesn't delete changesets or any data. If you change your mind, use rollback to revert the content of the files back to their state before the rollback.
 
--   Rollback does not delete changesets or any data. If you change your mind, use rollback to revert the content of the files back to their state before the rollback.

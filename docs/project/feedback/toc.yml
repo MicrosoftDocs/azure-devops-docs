@@ -1,28 +1,47 @@
-- name: Feedback 
+- name: About feedback
   href: index.md
 - name: Test & Feedback extension
   items:
-  - name: Request feedback 
-    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-  - name: Provide feedback 
-    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
-  - name: Voluntarily provide stakeholder feedback
-    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-  - name: Track feedback 
-    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-- name: Work tracking
+  - name: Request stakeholder feedback
+    displayName: stakeholder, feedback, request
+    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
+  - name: Provide stakeholder feedback
+    displayName: stakeholder, feedback, provide
+    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
+  - name: Get insights from tests
+    displayName: insights, exploratory
+    href: ../../test/insights-exploratory-testing.md
+  - name: Install the extension
+    displayName: extension, install
+    href: ../../test/perform-exploratory-tests.md
+  - name: Test in Connected mode
+    displayName: connected, mode
+    href: ../../test/connected-mode-exploratory-testing.md
+  - name: Test in Standalone mode
+    displayName: standalone, mode
+    href: ../../test/standalone-mode-exploratory-testing.md
+  - name: Explore work items
+    displayName: items, workitems
+    href: ../../test/explore-workitems-exploratory-testing.md
+  - name: Add to existing bugs
+    displayName: bugs, exploratory
+    href: ../../test/add-to-bugs-exploratory-testing.md
+  - name: Provide feedback without a request
+    displayName: stakeholder, feedback, voluntary
+    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
+  - name: Track stakeholder feedback requests
+    displayName: stakeholder, feedback, response, query
+    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
+- name: Microsoft Feedback client (Archived)
   items:
   - name: Request feedback
-    href: get-feedback.md  
-  - name: Provide feedback (Feedback client)
-    href: give-feedback.md
-- name: How-to-guides
-  items:
-  - name: "Set feedback permissions (Security)"
-    href: give-permissions-feedback.md
+    href: /previous-versions/azure/devops/project/feedback/get-feedback 
+  - name: Provide feedback
+    href: /previous-versions/azure/devops/project/feedback/give-feedback
+  - name: Set feedback permissions  
+    href: /previous-versions/azure/devops/project/feedback/give-permissions-feedback
+    displayName: security
   - name: Enable remote audio capture
-    href: enable-remote-audio-capture.md
+    href: /previous-versions/azure/devops/project/feedback/enable-remote-audio-capture
   - name: Change the audio device or annotation tool
-    href: change-audio-device-annotation-tool.md
-
-
+    href: /previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool

@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
@@ -11,30 +11,27 @@ ms.date: 02/12/2020
 
 If you're running an agent in a secure network behind a firewall, make sure the agent can initiate communication with the following URLs and IP addresses.
 
-#### For organizations using the `*.visualstudio.com` domain:
 
-```
-https://login.microsoftonline.com
-https://app.vssps.visualstudio.com 
-https://{organization_name}.visualstudio.com
-https://{organization_name}.vsrm.visualstudio.com
-https://{organization_name}.vstmr.visualstudio.com
-https://{organization_name}.pkgs.visualstudio.com
-https://{organization_name}.vsblob.visualstudio.com
-https://{organization_name}.vssps.visualstudio.com
-```
+| Domain URL                                           | Description                                                                            |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `https://{organization_name}.pkgs.visualstudio.com`  | Azure DevOps Packaging API for organizations using the `{organization_name}.visualstudio.com` domain|
+| `https://{organization_name}.visualstudio.com`       | For organizations using the `{organization_name}.visualstudio.com` domain              |
+| `https://{organization_name}.vsblob.visualstudio.com`| Azure DevOps Telemetry for organizations using the `{organization_name}.visualstudio.com` domain|    
+| `https://{organization_name}.vsrm.visualstudio.com`  | Release Management Services for organizations using the `{organization_name}.visualstudio.com` domain|
+| `https://{organization_name}.vssps.visualstudio.com` | Azure DevOps Platform Services for organizations using the `{organization_name}.visualstudio.com` domain|
+| `https://{organization_name}.vstmr.visualstudio.com` | Azure DevOps Test Management Services for organizations using the `{organization_name}.visualstudio.com` domain|
+| `https://*.blob.core.windows.net`                    | Azure Artifacts                                                                        |
+| `https://*.dev.azure.com`                            | For organizations using the `dev.azure.com` domain                                     |
+| `https://*.vsassets.io`                              | Azure Artifacts via CDN                                                                |
+| `https://*.vsblob.visualstudio.com`                  | Azure DevOps Telemetry for organizations using the `dev.azure.com` domain              |
+| `https://*.vssps.visualstudio.com`                   | Azure DevOps Platform Services for organizations using the `dev.azure.com` domain      |
+| `https://*.vstmr.visualstudio.com`                   | Azure DevOps Test Management Services for organizations using the `dev.azure.com` domain|
+| `https://app.vssps.visualstudio.com`                 | For organizations using the `{organization_name}.visualstudio.com` domain              |
+| `https://dev.azure.com`                              | For organizations using the `dev.azure.com` domain                                     |
+| `https://login.microsoftonline.com`                  | Azure Active Directory sign in                                                         |
+| `https://management.core.windows.net`                | Azure Management API's                                                                 |
+| `https://vstsagentpackage.azureedge.net`             | Agent package                                                                          |
 
-#### For organizations using the `dev.azure.com` domain:
-
-```
-https://dev.azure.com
-https://*.dev.azure.com
-https://login.microsoftonline.com
-https://management.core.windows.net
-https://vstsagentpackage.azureedge.net
-https://*.vsblob.visualstudio.com
-https://*.vssps.visualstudio.com
-```
 
 To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your allow-listed IPs to include the following IP addresses, based on your IP version. If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
 

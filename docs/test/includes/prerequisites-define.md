@@ -1,7 +1,7 @@
 ---
-ms.technology:  devops-test
-ms.author: kaelli
-author: KathrynEE
+ms.service: azure-devops-test-plans
+ms.author: chcomley
+author: chcomley
 ms.topic: include
 ms.date: 07/13/2021
 ---
@@ -12,7 +12,7 @@ ms.date: 07/13/2021
 - You must connect to a project. If you don't have a project yet, [create one](../../user-guide/sign-up-invite-teammates.md). 
 - You must be added to a project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 - To view test-related work items, you must have **Basic** access or higher and permissions to view work items under the corresponding Area Path. 
-- To [add test plans and test suites](../create-a-test-plan.md), [manual test cases](../create-test-cases.md), [delete test artifacts](../../boards/backlogs/delete-test-artifacts.md), and [define test configurations](../test-different-configurations.md) you must have [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
+- To [add test plans and test suites](../create-a-test-plan.md), [manual test cases](../create-test-cases.md), [delete test artifacts](../../boards/backlogs/delete-test-artifacts.md), and [define test configurations](../test-different-configurations.md) you must have [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following **Visual Studio subscriptions**:
 
 	- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
 	- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)

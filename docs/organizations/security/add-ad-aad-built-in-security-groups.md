@@ -2,18 +2,18 @@
 title: Add AD/Azure AD groups to security groups 
 titleSuffix: Azure DevOps
 description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
----
+ms.date: 03/23/2023
+--- 
 
 # Add AD/Azure AD users or groups to a built-in security group
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As described in [About security, authentication, and authorization](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, add them or associated groups to the Build Administrators or Project Administrators groups.
 
@@ -40,7 +40,9 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+
+[!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
 ::: moniker-end 
 
@@ -51,11 +53,11 @@ The method for adding a user or group to a built-in security group is the same, 
 ## Add Azure AD user or group to a built-in security group 
 
 > [!IMPORTANT]  
-> If you're adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
+> If you're adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json).
 > To manage the permissions of an Azure AD group in Azure DevOps, you must first add the Azure AD group to a built-in security group. Once you complete this task, you can then manage your Azure AD group permissions throughout Azure DevOps.
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -170,7 +172,7 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -209,10 +211,11 @@ The method for adding a user or group to a built-in security group is the same, 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Change individual permissions, grant select access to specific functions](change-individual-permissions.md)
+> [Request an increase in permission levels](request-changes-permissions.md)
 
 ## Related articles
 
 - [Get started with permissions, access, and security groups](about-permissions.md)
-- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [About security, authentication, and authorization](about-security-identity.md)

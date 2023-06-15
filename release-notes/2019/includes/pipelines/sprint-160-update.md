@@ -189,7 +189,7 @@ You can now define a set of policies and add the policy evaluation as a check on
 
 ### Markdown support in automated test error messages
 
-We now support markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
+We now support Markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported Markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Markdown support in automated test error messages.](../../media/160_03.png)

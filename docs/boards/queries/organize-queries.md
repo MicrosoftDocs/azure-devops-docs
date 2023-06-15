@@ -1,32 +1,32 @@
 ---
-title: Organize and view queries, create query folders 
+title: Manage and organize your queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
-description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
-ms.custom: boards-queries 
-ms.technology: devops-agile
+description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
+ms.custom: boards-queries, contperf-fy23 
+ms.service: azure-devops-boards
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2021
+ms.date: 02/02/2023
 ---
 
 
-# Manage and organize queries   
+# Manage and organize queries in Azure Boards and Azure DevOps  
 
-[!INCLUDE [temp](../includes/version-all.md)]
-[!INCLUDE [temp](../includes/version-visual-studio.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
+Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer.
 
 > [!NOTE]  
-> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. Also, you can perform bulk drag-and-drop of queries into query folders from Visual Studio but not from the web portal. 
 
  
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
-## Open Queries 
+## Open a query 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
@@ -69,7 +69,7 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
@@ -103,7 +103,7 @@ Specify the file name and folder location to use to save the query.
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-dialog.png" alt-text="Screenshot, Visual Studio, Save Query As dialog.":::
 
 
-To save the query as a .wiq file, choose the **File** radio button and specify the file location. 
+To save the query as a `.wiq` file, choose the **File** radio button and specify the file location. 
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-wiq-file.png" alt-text="Screenshot, Visual Studio, Save Query As a WIQ file dialog.":::
 
@@ -126,14 +126,14 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 
 ![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
 
-For shared queries, you can also choose to perform one of these tasks: 
+For shared queries, you can also choose to do one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
 - **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
 - **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
 
@@ -152,7 +152,7 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 * * * 
  
-## Add a query folder, move items into a folder 
+## Add a query folder and move items into a folder 
 
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
@@ -163,7 +163,7 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 ::: moniker range=">= azure-devops-2019"
 
-You add query folders from the **Boards>Queries>All** page.
+You add query folders from the **Boards>Queries>All** page. 
  
 1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
@@ -176,7 +176,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." />
 
-3. To move items into a folder, drag-and-drop a query onto the folder. 
+3. To move items into a folder, drag-and-drop a query onto the folder. From the web portal, you can only drag a single query from outside a folder into a folder. 
 
 	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
@@ -185,7 +185,7 @@ You add query folders from the **Boards>Queries>All** page.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You add query folders from the **Boards>Queries** page.
 
@@ -195,7 +195,7 @@ You add query folders from the **Boards>Queries** page.
 
 	![New query folder link on queries context menu](media/set-query-perm-new-folder.png)   
 
-1. To move items into a folder, drag-and-drop a query onto the folder. 
+1. To move items into a folder, drag-and-drop a query onto the folder.  From the web portal, you can only drag a single query from outside a folder into a folder. 
 
 	Optionally, you can choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 
@@ -206,36 +206,69 @@ You add query folders from the **Boards>Queries** page.
 
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!NOTE]  
+> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
-From the **Work Items** page, open the context menu for **My Queries**, **Team Queries**, or an existing query folder, and choose **New Folder**.  
+All changes you make to your query folder structure in Visual Studio appear in the web portal by refreshing your browser. 
 
-:::image type="content" source="media/organize-queries/visual-studio-new-folder.png" alt-text="Screenshot, Visual Studio, open context menu and choose New Folder.":::
 
-A **New Folder** is added under the area you selected. Select the folder to rename it. 
+1. From the **Work Items** page, open the context menu for **My Queries**, **Team Queries**, or an existing query folder, and choose **New Folder**.  
+
+	:::image type="content" source="media/organize-queries/visual-studio-new-folder.png" alt-text="Screenshot, Visual Studio, open context menu and choose New Folder.":::
+
+	A **New Folder** is added under the area you selected. Select the folder to rename it. 
+
+1. To move queries into a folder, drag-and-drop a query onto the folder.  You can select multiple queries and drag them into a folder or from one folder into another folder.   
 
 * * * 
-
+ 
 
 
 <a id="favorite-query">  </a>
 
-::: moniker range=">= tfs-2015"
 
-## Add a query to the dashboard or share it with your team 
+## Save a query as a team favorite
+
+To save a shared query as a team favorite, you must be a member of the team.
 
 To add a query to a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
-Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
-::: moniker-end
+1. To save a query as a team favorite, open :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** or :::image type="icon" source="media/22.png" border="false"::: the context menu for the query from  the **Queries** page. 
+
+1. Choose **Add to team favorites**, and then select from the teams listed. Only teams for which you are a member are listed.
+
+	:::image type="content" source="media/organize-queries/save-query-team-favorite.png" alt-text="Screenshot of Save query as a team favorite.":::
 
 
+<a id="add-query-dashboard">  </a>
+
+## Add a query tile to a dashboard  
+
+A query tile displays a count of the work items in a query. You can also quickly open the query from the dashboard. You can add a query tile to a dashboard from the **Queries** page using the following steps, or by following the steps outlined in [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+ 
+> [!NOTE]   
+> You can only add a shared query to a dashboard. And, to add or edit a widget of a team dashboard, you must be a member of the team or be [granted permissions to edit the dashboard](../../report/dashboards/dashboard-permissions.md).
+
+1. To add a query to a dashboard from the **Queries** page, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query.
+
+	:::image type="content" source="media/organize-queries/save-query-dashboard.png" alt-text="Screenshot of More actions menu, select Add to dashboard.":::
+
+1. From the **Select a dashboard** dialog, choose the dashboard you want to add the query to. 
+
+	:::image type="content" source="media/organize-queries/select-dashboard.png" alt-text="Screenshot of Select a dashboard dialog.":::
+
+1. Open the dashboard, and verify the query tile was added. You can configure the query tile to change the default color and to specify the color for the tile based on a conditional rule you specify.  
+
+	:::image type="content" source="media/organize-queries/configure-query-tile-widget.png" alt-text="Screenshot of Configure dialog for query tile widget.":::
+ 
 ## Related articles
 
 - [Query FAQs](query-faqs.yml)  
 - [Set query permissions](set-query-permissions.md)  
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-- [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) 
 

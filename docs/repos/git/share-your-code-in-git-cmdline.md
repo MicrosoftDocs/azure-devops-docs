@@ -3,16 +3,17 @@ title: Use Azure CLI to share Git code
 titleSuffix: Azure Repos
 description: Use Azure CLI to share code in Git repository.  
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.date: 10/15/2021
 ms.custom: devx-track-azurecli
 monikerRange: '>= azure-devops-2020'
+ms.date: 03/31/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Get started with Git from the command line
 
-[!INCLUDE [version-azure-devops-2020](../includes/version-azure-devops-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 

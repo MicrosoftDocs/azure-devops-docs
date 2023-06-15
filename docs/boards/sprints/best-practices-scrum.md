@@ -2,21 +2,23 @@
 title: Sprint and scrum best practices
 titleSuffix: Azure Boards 
 description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
+ms.custom: boards-sprints, engagement-fy23 
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 01/20/2023
 ---
 
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
+
 ## Sprint planning meetings 
 
 Much of sprint planning involves a negotiation between the product owner and the team to determine the focus and work to tackle in the upcoming sprint. It's useful to time-box the planning meeting, restricting it to 4 hours or less. 
@@ -107,6 +109,7 @@ Track work to address technical debt as PBIs, user stories, or bugs. To track a 
 
 
 <a id="scrum-master-role">  </a>
+
 ## Role of the Scrum Master  
 
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases.   
@@ -129,11 +132,12 @@ Good Scrum Masters have or develop excellent communication, negotiation, and con
 Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable before it grows into a major issue.  
 
 <a id="daily-scrum-meetings">  </a>
+
 ## Daily Scrum meetings
+
 Daily Scrum meetings help keep a team focused on what it needs to do the next day. Staying focused helps the team maximize their ability to meet sprint commitments. Your Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less.  
 
 Three aspects of successful Scrum meetings are:
-
 
 *	Everyone stands up. Standing up helps to keep the meetings focused and short. 
 *	They start and end on time and occur at the same time in the same location each day 
@@ -141,6 +145,10 @@ Three aspects of successful Scrum meetings are:
 	*	*What have I accomplished since the most recent Scrum?*  
 	*	*What will I accomplish before the next Scrum?*  
 	*	*What blocking issues or impediments might affect my work?*  
+
+> [!NOTE]   
+> The focus for scrum meetings is on the status of work that needs to be passed from one team member to another team member. 
+ 
 
 Team members should strive to answer their questions quickly and concisely. For example: 
 
@@ -162,7 +170,9 @@ Many teams delay discussions by using the "virtual parking lot" method. As subje
  
 
 <a id="sprint-review-meeting">  </a>
+
 ## Sprint review meetings
+
 Conduct your sprint review meetings on the last day of the sprint. Your team demonstrates each product backlog item that it completed in the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their needs more fully after seeing the demonstrations and may identify changes that they want to see.
 
 Based on this meeting, some user stories will be accepted as complete. Incomplete user stories will remain in the product backlog. New user stories will be added to the backlog. Both sets of stories will be ranked and either estimated or re-estimated in the next sprint planning meeting.  
@@ -170,12 +180,18 @@ Based on this meeting, some user stories will be accepted as complete. Incomplet
 After this meeting and the retrospective meeting, your team will plan the next sprint. Because business needs change quickly, you can take advantage of this meeting with your product owner, customers, and stakeholders to review the priorities of the product backlog again.
 
 <a id="sprint-retrospective-meeting">  </a>
+
 ## Sprint retrospective meetings
+
 Retrospectives, when conducted well and at regular intervals, support continuous improvement. 
 
 The sprint retrospective meeting typically occurs on the last day of the sprint, after the sprint review meeting. In this meeting, your team explores its execution of Scrum and what might need tweaking. 
 
 Based on discussions, your team might change one or more processes to improve its own effectiveness, productivity, quality, and satisfaction. This meeting and the resulting improvements are critical to the agile principle of self-organization. 
+
+> [!NOTE]  
+> To support your team's retrospective, consider installing the Marketplace [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) extension. This extension supports collecting feedback on your project milestones, organizing and prioritizing the feedback, and creating and tracking actionable tasks to help your team improve over time.  
+
 
 Look to address these areas during your team sprint retrospectives:  
 
@@ -191,5 +207,6 @@ Your team may need to do some work to implement an improvement. For example, a t
 
 ## Related articles
 
-*	[What is Scrum?](/devops/plan/what-is-scrum)
-*	[Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	
+- [End of sprint activities](end-sprint-activities.md) 
+- [What is Scrum?](/devops/plan/what-is-scrum)
+- [Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

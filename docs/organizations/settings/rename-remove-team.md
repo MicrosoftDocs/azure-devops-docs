@@ -2,18 +2,18 @@
 title: Rename or remove/delete a team 
 titleSuffix: Azure DevOps 
 description: Learn how to rename or remove, delete a team in Azure DevOps. 
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.author: kaelli
-author: KathrynEE
-ms.topic: quickstart
+ms.author: chcomley
+author: chcomley
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2021
+ms.date: 04/04/2022
 ---
 
 # Rename or remove a team  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your organization changes, you may need to rename or remove a team.  
 
@@ -29,8 +29,8 @@ When you remove or delete a team, all of its configuration settings get deleted.
  
 ## Prerequisites 
 
-- To rename a team, you must be a team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
-- To remove or delete a team, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
+- To rename a team, you must be a team administrator or a member of the [**Project Administrators** group](../security/(../security/change-project-level-permissions.md)
+- To remove or delete a team, you must be a member of the **Project Administrators** group. 
 
 ## Rename a team
 
@@ -79,7 +79,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="add-team-team-services" /> 
 
@@ -96,31 +96,14 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-<a id="add-team-tfs-2015" />
-
-1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
-
-	![Open project administrator page, TFS.](../../media/settings/open-admin-page-tfs2015.png)  
-
-1. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path, TFS.](media/rename-remove-team/rename-team-prev-ui.png)
-
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
- 
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 <a id="update-team" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
-You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -138,11 +121,6 @@ az devops team update --team
 - **org**: Optional. URL of organization. You can configure the default organization using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -293,7 +271,7 @@ You can delete any team except the default team. At least one team must be defin
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To delete a team, choose **Project Settings** > **Work** > **Overview** > **&hellip;** for the team you want to delete, and select the **Delete** option.   
 
@@ -309,9 +287,9 @@ You can delete any team except the default team. At least one team must be defin
 
 <a id="delete-team" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
-You can delete a team using [az devops team delete](/cli/azure/devops/team#ext-azure-devops-az-devops-team-delete).  
+You can delete a team using [az devops team delete](/cli/azure/devops/team#az-devops-team-delete).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -338,7 +316,6 @@ Are you sure you want to delete this team? (y/n): y
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
-
 
 * * *
 

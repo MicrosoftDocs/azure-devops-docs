@@ -1,21 +1,21 @@
 ---
-title: Sample work item templates showing usage
+title: View sample work item templates that show usage in Azure Boards
 titleSuffix: Azure Boards   
-description: Sample work item templates to pre-populate fields and provide guidance in work item forms 
-ms.technology: devops-agile
+description: Learn about sample work item templates you can use to pre-populate fields and provide guidance in work item forms. 
+ms.service: azure-devops-boards
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: example-scenario
-monikerRange: '>= tfs-2017'
-ms.date: 04/24/2019 
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
-# Sample work item templates  
+# View sample work item templates in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following objectives:
+Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following goals:
 
 - Create bugs for specific product areas 
 - Provide guidance to fill out the work item 
@@ -25,7 +25,7 @@ Work item templates can help save time and provide guidance to your team when de
 Review this article for examples of defining specific values of work item templates. For guidance on adding, managing, and applying work item templates, see [Use templates to add and update work items](../backlogs/work-item-template.md).
 
 > [!NOTE]  
-> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
+> Work item templates are distinct from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) or these specific articles for the process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
 <a id="area-path"> </a> 
@@ -58,7 +58,7 @@ For example, here we add the following syntax into the <strong>Repos Steps</stro
 > [!div class="mx-imgBorder"]  
 > ![Add syntax into the Repos Steps field.](media/template/repo-steps.png) 
 
-The work item form renders this as shown. 
+The work item form renders this example as shown. 
 
 > [!div class="mx-imgBorder"]  
 > ![Rendered syntax in work item form.](media/template/repo-steps-rendered.png) 
@@ -70,7 +70,7 @@ For more information about rich-text fields, see [Share information within work 
 
 <a id="add-tags"> </a> 
 
-## Add tags 
+## Add work item tags 
 
 Work item tags are useful to quickly filter backlogs, boards, or queries. You can add tags to track anything of interest, for example: Customer issue, Release, Milestone.
 
@@ -87,7 +87,7 @@ You can also use the <strong>Tags (Remove)</strong> template field to remove tag
 
 ## Define and pre-populate custom fields 
 
-You can pre-populate a custom field that has been added to the work item type. Prior to adding it to a template, you must first add it to the work item type. For inherited process models, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md). For On-premises XML process models, see [Add or modify a field to track work](../../reference/add-modify-field.md).  
+You can pre-populate a custom field that has been added to the work item type. Before adding it to a template, you must first add it to the work item type. For inherited process models, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md). For On-premises XML process models, see [Add or modify a field to track work](../../reference/add-modify-field.md).  
 
 For example, the <strong>Triage</strong> custom field can be set to `False`, indicating the bug needs to be triaged. 
 
@@ -95,24 +95,24 @@ For example, the <strong>Triage</strong> custom field can be set to `False`, ind
 > ![Set Triage custom field to False.](media/template/custom-field.png) 
 
 
-## Access additional features through extensions  
+## Access other features through extensions  
 
-An often requested feature is to be able to create a work item which automatically links to one or more work items. For example, a user story that links to 5 tasks. Work item templates don't support this capability. However, you may find a Marketplace extension will support this feature. For example, see the following extensions: 
+An often requested feature is to allow the creation of a work item that automatically links to one or more work items. For example, a user story that links to five tasks. Work item templates don't support this capability. However, you may find a Marketplace extension will support this feature. For example, see the following extensions: 
 
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Customize the work item web form 
 
 If your project uses the On-premises XML process model to customize work tracking, you can add help text, hyperlinks, or web content to a form to provide guidance. 
 
 To learn more, see the following articles: 
-- [WebLayout and Control elements](../../reference/xml/weblayout-xml-elements.md)
+- [WebLayout and Control elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements)
 - [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md)
-- [Edit a WIT definition to add web content to a work item form](../../reference/xml/edit-wit-definition-add-web-content-form.md)
+- [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form)
  
 ::: moniker-end
 

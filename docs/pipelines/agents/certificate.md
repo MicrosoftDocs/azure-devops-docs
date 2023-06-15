@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.assetid: 09E36E4D-D94B-4F5B-BE4D-9E7B4E7B68E2
 ms.reviewer: chrispat
 ms.date: 10/15/2018
-monikerRange: '>= tfs-2017 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 
 # Run the agent with a self-signed certificate
 
-[!INCLUDE [version-tfs-only-2017](../includes/version-tfs-only-2017.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 

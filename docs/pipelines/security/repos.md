@@ -3,11 +3,13 @@ title: Secure repositories
 description: Securing repos and forks
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
 ms.reviewer: vijayma
-ms.date: 05/18/2021
+ms.date: 07/13/2022
 monikerRange: '> azure-devops-2019'
 ---
 
 # Repository protection
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Source code, the pipeline's YAML file, and necessary scripts & tools are all stored in a version control repository.
 Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe. You can also [add pipeline permissions and checks to repositories](../process/repository-resource.md).  
@@ -30,16 +32,31 @@ To protect your products from contributed code, consider the following recommend
 
 ### Don't provide secrets to fork builds
 
-By default, your pipelines do not build forks.
-If you decide to build forks, secrets and protected resources are not made available to the jobs in those pipelines by default.
+By default, your pipelines are configured to build forks, but secrets and protected resources aren't made available to the jobs in those pipelines by default.
 Don't turn off this latter protection.
 
-![Screenshot of fork build protection UI](media/fork-build-protection.png)
+:::moniker range="> azure-devops-2020"
+
+:::image type="content" source="media/fork-build-protection.png" alt-text="Screenshot of fork build protection UI.":::
+
+> [!NOTE]
+> When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
+> It has more limited access to open resources than a normal access token.
+> To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
+
+:::moniker-end
+
+:::moniker range="<= azure-devops-2020"
+
+:::image type="content" source="media/fork-build-protection-2020.png" alt-text="Screenshot of fork build protection UI in Azure DevOps Server 2020 and lower.":::
 
 > [!NOTE]
 > Even if you enable fork builds to access secrets, Azure Pipelines restricts the access token used for fork builds.
 > It has more limited access to open resources than a normal access token.
 > You cannot disable this protection.
+
+:::moniker-end
+
 
 ### Consider manually triggering fork builds
 
@@ -49,8 +66,18 @@ This setting will give you an opportunity to review the code before triggering a
 ### Use Microsoft-hosted agents for fork builds
 
 Don't run builds from forks on self-hosted agents.
-By doing so, you are effectively providing a path to external organizations to run outside code on machines inside your corporate network.
-Use Microsoft-hosted agents or some form of network isolation for your self-hosted agents.
+By doing so, you're effectively providing a path to external organizations to run outside code on machines inside your corporate network.
+Use Microsoft-hosted agents whenever possible. For your self-hosted agent, use some form of network isolation and ensure agents don't persist their state between jobs.
+
+### Review code changes
+
+Before you run your pipeline on a forked pull-request, carefully review the proposed changes, and make sure you're comfortable running it.
+
+The version of the YAML pipeline you'll run is the one from the pull request. Thus, pay special attention to changes to the YAML code and to the code that runs when the pipeline runs, such as command line scripts or unit tests.
+
+### GitHub token scope limitation
+
+When you build a GitHub forked pull request, Azure Pipelines ensures the pipeline can't change any GitHub repository content. This restriction applies _only_ if you use the [Azure Pipelines GitHub app](https://github.com/marketplace/azure-pipelines) to integrate with GitHub. If you use other forms of GitHub integration, for example, the OAuth app, the restriction isn't enforced.
 
 ## User branches
 
@@ -71,3 +98,4 @@ This can apply to a public project (with a separate private repo) as well as a n
 ## Next steps
 
 Next, learn about the more protection offered by checks on [protected resources](resources.md).
+

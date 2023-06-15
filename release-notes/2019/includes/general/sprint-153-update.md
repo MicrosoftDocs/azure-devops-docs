@@ -39,4 +39,4 @@ By default, only the project collection administrators can access the audit log.
 
 You can now manage security groups and permissions from the command line by using the **az devops security permission** commands. By using the commands, you can create scripts to manage permissions and standardize the process of creating security groups. In addition, you can use the commands to run reports to view a list of security groups and corresponding permissions. 
 
-For more details, see the [command and its syntax](/cli/azure/devops/security/permission?view=azure-cli-latest&preserve-view=true) and [help](/azure/devops/cli/permissions?view=azure-devops&preserve-view=true) documentation.
+For more details, see the [command and its syntax](/cli/azure/devops/security/permission) and [help](/azure/devops/cli/permissions?view=azure-devops&preserve-view=true) documentation.

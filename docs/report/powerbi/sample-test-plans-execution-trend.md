@@ -2,28 +2,23 @@
 title: Manual test execution trend sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn about sample Power BI queries that generate an execution trend of manual tests.
-ms.technology: devops-analytics
-ms.reviewer: ravishan
+ms.subservice: azure-devops-analytics
+ms.reviewer: desalg
 ms.author: shdalv
-ms.custom: powerbisample
-author: KathrynEE
+ms.custom: powerbisample, engagement-fy23
+author: chcomley
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/13/2021
+ms.date: 01/19/2023
 ---
 
 # Manual test execution trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 
-[!INCLUDE [temp](includes/preview-note.md)]
- 
-The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
+:::image type="content" source="media/reports-test-plans/test-execution-stacked-area-trend.png" alt-text="Screenshot of Power BI Test Plan Execution stacked area trend report.":::
 
 The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.  
 
@@ -45,10 +40,11 @@ This report helps you track the team's progress with respect to planned testing 
 
 A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should go down.
 
+[!INCLUDE [temp](includes/preview-note.md)]
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
+
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
-
-[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
@@ -60,6 +56,10 @@ For the report to generate useful data, the team must carry out the following ac
 
 
 ## Sample queries
+
+You can use the following queries of the `TestPointHistorySnapshot` entity set to create different but similar test plan execution trend reports.
+
+[!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -110,15 +110,14 @@ $apply=filter(
 
 ***
 
-### Substitution strings
+## Substitution strings and query breakdown
 
-
-Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`. 
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`.
-- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20190822` for 22 August 2019.
+- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20220815` for 15 August 2022.
 
 
 ### Query breakdown
@@ -130,7 +129,7 @@ The following table describes each part of the query.
    :::column span="1":::
       **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Description**
    :::column-end:::
 :::row-end:::
@@ -139,23 +138,23 @@ The following table describes each part of the query.
    :::column span="1":::
       `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))`
    :::column-end:::
-   :::column span="2":::
-      Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}'` or `TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column span="1":::
+      Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}'` or `TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites and test configurations here.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
       `and (DateSK ge {startDate} and DateSK le {endDate})`
    :::column-end:::
-   :::column span="2":::
-      Date range of interest. You can enter the dates in **YYYYMMDD** format. 
+   :::column span="1":::
+      Date range of interest. You can enter the dates in `YYYYMMDD` format. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
       `/groupby((DateSK)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Group the data into bins of same date. It produces one set of values per day in given date range.
    :::column-end:::
 :::row-end:::
@@ -163,7 +162,7 @@ The following table describes each part of the query.
    :::column span="1":::
       `/aggregate($count as TotalCount,`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       Aggregate data across the filtered test points with having count as `TotalCount`. 
    :::column-end:::
 :::row-end:::
@@ -171,47 +170,39 @@ The following table describes each part of the query.
    :::column span="1":::
       `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as `Passed` metric. 
    :::column-end:::
 :::row-end:::
 
+[!INCLUDE [temp](includes/rename-query.md)]
+
+## Change column data type 
+
+From the Power Query Editor, select the `TotalCount` column and all other columns, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. To learn more about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+
+## (Optional) Rename column fields
+
+You can rename column fields. For example, you can rename the column `NotApplicable` to `Not Applicable`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+
+[!INCLUDE [temp](includes/close-apply.md)]
+
+
+## Create the stacked area chart report 
+
+1. In Power BI, under **Visualizations**, choose the **Stacked area chart** report. 
+	:::image type="content" source="media/reports-test-plans/test-plan-execution-trend-stacked-area-chart-visualizations.png" alt-text="Screenshot of visualization fields selections for test plan execution trend run report. ":::
  
-[!INCLUDE [temp](includes/query-filters-test.md)]
+1. Drag and drop **DateSK** onto the **X-Axis**.
 
-## Power BI transforms
-
-[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
-
-
-## Create the report
-
-Power BI shows you the fields you can report on. 
-
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-
-
-> [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Fields](media/odatapowerbi-executiontrend-fields.png)
-
-To create the report, do the following steps:
-
-1. Create a Power BI visualization **Stacked Area Chart**.
-1. Drag and drop **DateSK** in **Axis**.
-1. Drag and drop **Passed**, **Failed**, **Blocked**, **NotApplicable** and **NotExecuted** in **Values**.
+1. Drag and drop **Passed**, **Failed**, **Blocked**, **NotApplicable** and **NotExecuted** onto the **Y-Axis**.
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
-
-## Full list of sample reports for Test Plans
-
-[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+:::image type="content" source="media/reports-test-plans/test-execution-stacked-area-trend.png" alt-text="Screenshot of Power BI Sample Test Plan Execution stacked area trend report.":::
 
 ## Related articles
 
 - [Overview of sample reports using OData queries](./sample-odata-overview.md)
 - [Connect using Power BI and OData queries](./odataquery-connect.md)
-- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)
+- [Sample reports and quick reference index](../extend-analytics/quick-ref.md)
